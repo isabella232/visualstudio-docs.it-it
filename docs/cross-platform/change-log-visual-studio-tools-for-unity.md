@@ -1,7 +1,7 @@
 ---
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,40 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821341"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661949"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="4201"></a>4.2.0.1
+
+Data di rilascio: 24 luglio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Aggiunta di una nuova opzione per la creazione di qualsiasi tipo di file da Esplora progetti Unity.
+  
+  - Miglioramento della memorizzazione nella cache di diagnostica quando si usano compilazioni veloci per i progetti Unity.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione di un problema a causa del quale l'estensione del file non viene gestita da alcun editor noto.
+
+  - Correzione del supporto per estensioni personalizzate in Esplora progetti Unity.
+
+  - Correzione delle impostazioni di salvataggio all'esterno della finestra di dialogo principale.
+
+  - Rimozione della dipendenza da Microsoft.VisualStudio.MPF legacy.
 
 ## <a name="4110"></a>4.1.1.0
 

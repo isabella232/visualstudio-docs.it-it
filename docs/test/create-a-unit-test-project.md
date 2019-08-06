@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965531"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483801"
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
@@ -29,13 +29,17 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
 2. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Installato**, scegliere il linguaggio da usare per il progetto di test, quindi scegliere **Test**.
 
-3. Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Assegnare il nome al progetto e scegliere **OK**.
+3. Selezionare il modello di progetto per il framework di test che si vuole usare, ad esempio **Progetto di test MSTest** o **Progetto di test NUnit**. Assegnare un nome al progetto e quindi scegliere **OK**.
+
+   ![Modelli di progetto di test in Visual Studio 2017](media/test-project-templates.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Nella casella di ricerca nella pagina **Crea un nuovo progetto** digitare **unit test**. Selezionare il modello di progetto **Progetto unit test (.NET Framework)** e quindi fare clic su **Avanti**.
+2. Nella casella di ricerca nella pagina **Crea un nuovo progetto** digitare **unit test**. Selezionare il modello di progetto per il framework di test che si vuole usare, ad esempio **Progetto di test MSTest** o **Progetto di test NUnit**, e quindi scegliere **Avanti**.
+
+   ![Modelli di progetto di test in Visual Studio 2019](media/vs-2019/test-project-templates.png)
 
 3. Nella pagina **Configura il nuovo progetto** immettere un nome per il progetto e quindi fare clic su **Crea**.
 

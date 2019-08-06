@@ -1,6 +1,7 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, Formattazione
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -10,52 +11,56 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e995ec564d0260faac02eb3b4a0237fa9f1f89b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778352"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605996"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Opzioni, Editor di testo, JavaScript, Formattazione
-Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti**, **Opzioni** e quindi espandere **Editor di testo**, **JavaScript** e **Formattazione**.
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Finestra di dialogo Opzioni: Editor di testo \> JavaScript \> Formattazione
+
+Usare la pagina **Formattazione** della finestra di dialogo **Opzioni** per impostare le opzioni di formattazione del codice nell'editor di codice. Per accedere a questa pagina, sulla barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **JavaScript/TypeScript** > **Formattazione**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Formattazione automatica
- Queste opzioni determinano quando viene applicata la formattazione nella visualizzazione **Origine**.
+
+Queste opzioni determinano quando viene applicata la formattazione nella visualizzazione **Origine**.
 
 ### <a name="uielement-list"></a>Elenco UIElement
 
-|Opzione|Description|
+|Opzione|DESCRIZIONE|
 |------------|-----------------|
 |**Formatta riga completata dopo INVIO**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto INVIO.|
 |**Formatta istruzione completata dopo ;**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto punto e virgola.|
-|**Format opened block on {**(Formatta blocco aperto con {)|Se questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto parentesi graffa di apertura.|
+|**Format opened block on {** (Formatta blocco aperto con {)|Se questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto parentesi graffa di apertura.|
 |**Formatta blocco completato dopo }**|Quando questa opzione è selezionata, l'editor di codice formatta automaticamente la riga quando si sceglie il tasto parentesi graffa di chiusura.|
 |**Formatta dopo Incolla**|Quando questa opzione è selezionata, l'editor di codice riformatta il codice incollato nell'editor. L'editor usa le regole di formattazione correntemente definite. Se questa opzione non è selezionata, l'editor usa la formattazione originale del codice incollato.|
 
 ## <a name="new-lines"></a>Nuove righe
- Queste opzioni determinano se l'editor di codice inserisce una parentesi graffa aperta per le funzioni e i blocchi di controllo in una nuova riga.
+
+Queste opzioni determinano se l'editor di codice inserisce una parentesi graffa aperta per le funzioni e i blocchi di controllo in una nuova riga.
 
 ### <a name="uielement-list"></a>Elenco UIElement
 
-|Opzione|Description|
+|Opzione|DESCRIZIONE|
 |------------|-----------------|
 |**Inserisci parentesi graffa aperta su nuova riga per le funzioni**|Quando questa opzione è selezionata, l'editor di codice sposta la parentesi graffa aperta associata a una funzione in una nuova riga.|
 |**Inserisci parentesi graffa aperta su nuova riga per i blocchi di controllo**|Quando questa opzione è selezionata, l'editor di codice sposta in una nuova riga la parentesi graffa aperta associata a un blocco di controllo, ad esempio ai blocchi `if` e `while`.|
 
 ## <a name="spacing"></a>Spacing (Spaziatura)
- Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella visualizzazione **Origine**.
+
+Queste opzioni determinano la modalità in cui vengono inseriti gli spazi nella visualizzazione **Origine**.
 
 ### <a name="uielement-list"></a>Elenco UIElement
 
-|Opzione|Description|
+|Opzione|DESCRIZIONE|
 |------------|-----------------|
 |**Inserisci spazio dopo virgola di delimitazione**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo le virgole di delimitazione.|
 |**Inserisci spazio dopo punto e virgola nell'istruzione 'for'**|Quando questa opzione è selezionata, l'editor di codice aggiunge uno spazio dopo ogni punto e virgola nella prima riga di un ciclo `for`.|

@@ -1,6 +1,7 @@
 ---
-title: Pagine proprietà, JavaScript
+title: Pagine delle proprietà, JavaScript
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -11,19 +12,20 @@ f1_keywords:
 - javascript.project.property.debugging.machinename
 - javascript.project.property.debugging.allowlocalnetworkloopback
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969020"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605945"
 ---
-# <a name="property-pages-javascript"></a>Pagine proprietà, JavaScript
+# <a name="property-pages-javascript"></a>Pagine delle proprietà, JavaScript
+
 L'opzione **Pagine delle proprietà** permette di accedere alle impostazioni del progetto. È possibile usare le pagine visualizzate in **Pagine delle proprietà** per modificare le proprietà del progetto.
 
 Per accedere alle proprietà del progetto, selezionare un nodo di progetto in **Esplora soluzioni**. Scegliere **Proprietà** dal menu **Progetto**.
@@ -33,7 +35,8 @@ Per accedere alle proprietà del progetto, selezionare un nodo di progetto in **
 In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni seguenti.
 
 ## <a name="configuration-and-platform-page"></a>Pagina Configurazione e piattaforma
- Usare le opzioni seguenti per selezionare la configurazione e la piattaforma da visualizzare o modificare.
+
+Usare le opzioni seguenti per selezionare la configurazione e la piattaforma da visualizzare o modificare.
 
  **Configurazione**
 
@@ -44,7 +47,8 @@ In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni segue
  Specifica le impostazioni della piattaforma da visualizzare o modificare. Le impostazioni sono **Qualsiasi CPU** (impostazione predefinita per le app [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** o una piattaforma definita dall'utente. Per altre informazioni, vedere [Procedura: Impostare le configurazioni Debug e Release in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Pagina Generale
- Usare le opzioni seguenti per impostare le proprietà generali del progetto.
+
+Usare le opzioni seguenti per impostare le proprietà generali del progetto.
 
 > [!NOTE]
 > Alcune opzioni sono disponibili solo per le app UWP.
@@ -53,14 +57,15 @@ In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni segue
 
  Specifica il percorso dei file di output per la configurazione del progetto. Il percorso è relativo. Se si immette un percorso assoluto, questo viene salvato nel progetto. Il percorso predefinito è bin\Debug.
 
- Quando si usano configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Quando si fa clic su **Debug**, **Avvia debug** (o si preme F5), la compilazione viene salvata nel percorso di debug, indipendentemente dal valore specificato in **Percorso output**. Tuttavia, il comando **Compila soluzione** del menu **Compila** inserisce la compilazione nel percorso specificato. Per abilitare configurazioni di compilazione avanzate, nella barra dei menu scegliere **Strumenti**, **Opzioni**. Nella finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, selezionare **Generale** e quindi deselezionare la casella di controllo **Mostra configurazioni della build avanzate**. In questo modo, è possibile controllare manualmente tutti i valori di configurazione e specificare se compilare una versione di debug o una finale.
+ Quando si usano configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Quando si fa clic su **Debug** > **Avvia debug** (o si preme **F5**), la compilazione viene salvata nel percorso di debug, indipendentemente dal valore specificato in **Percorso output**. Tuttavia, il comando **Compila soluzione** del menu **Compila** inserisce la compilazione nel percorso specificato. Per abilitare configurazioni di compilazione avanzate, sulla barra dei menu scegliere **Strumenti** > **Opzioni**. Nella finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, selezionare **Generale** e quindi deselezionare la casella di controllo **Mostra configurazioni della build avanzate**. In questo modo, è possibile controllare manualmente tutti i valori di configurazione e specificare se compilare una versione di debug o una finale.
 
  **Lingua predefinita**
 
  Specifica la lingua predefinita per il progetto. L'opzione di lingua selezionata in **Orologio, lingua e opzioni internazionali** nel Pannello di controllo specifica la lingua preferita dell'utente. Specificando una lingua predefinita per il progetto, si garantisce che vengano usate le risorse della lingua predefinita specificate se la lingua preferita dell'utente non corrisponde alle risorse della lingua presenti nell'applicazione.
 
 ## <a name="debug-page"></a>Pagina Debug
- Usare le opzioni seguenti per impostare le proprietà per il comportamento di debug nel progetto.
+
+Usare le opzioni seguenti per impostare le proprietà per il comportamento di debug nel progetto.
 
 > [!NOTE]
 > Alcune opzioni sono disponibili solo per le app UWP.
@@ -77,7 +82,7 @@ In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni segue
 
 **Avvia applicazione**
 
-Specifica se avviare l'applicazione quando si preme F5 o si fa clic su **Debug**, **Avvia debug**. Selezionare **Sì** per avviare l'applicazione, altrimenti selezionare **No**. Se si seleziona **No**, è comunque possibile eseguire il debug dell'applicazione usando un metodo diverso per avviarla.
+Specifica se avviare l'applicazione quando si preme **F5** o si fa clic su **Debug** > **Avvia debug**. Selezionare **Sì** per avviare l'applicazione, altrimenti selezionare **No**. Se si seleziona **No**, è comunque possibile eseguire il debug dell'applicazione usando un metodo diverso per avviarla.
 
 **Tipo di debugger**
 

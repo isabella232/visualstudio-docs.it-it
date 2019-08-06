@@ -1,26 +1,24 @@
 ---
-title: Bundle di Visual Studio + GitHub | Microsoft Docs
+title: Bundle Visual Studio + GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/23/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Gestione delle sottoscrizioni nel bundle Visual Studio + GitHub
-ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Gestione delle sottoscrizioni nel bundle Visual Studio + GitHub Enterprise
+ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783629"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605395"
 ---
-# <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise
-
+# <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gestire le sottoscrizioni di Visual Studio con GitHub Enterprise
 I clienti che dispongono di contratti Enterprise (EA) con Microsoft hanno il diritto di acquistare un nuovo bundle di sottoscrizioni che riunisce le sottoscrizioni standard di Visual Studio e di GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
 
 Quando l'organizzazione acquista sottoscrizioni di Visual Studio con GitHub Enterprise, il loro provisioning e la gestione vengono suddivisi in due parti.
 
-## <a name="managing-visual-studio-subscriptions"></a>Gestione delle sottoscrizioni di Visual Studio
-
+## <a name="manage-visual-studio-subscriptions"></a>Gestire le sottoscrizioni di Visual Studio
 Quando l'organizzazione acquista sottoscrizioni di Visual Studio con GitHub Enterprise, il provisioning della porzione Visual Studio delle sottoscrizioni viene eseguito immediatamente e le sottoscrizioni sono disponibili nel portale [Subscriptions Administration](https://manage.visualstudio.com) di Visual Studio, da cui possono essere assegnate e gestite. 
 
 Per altre informazioni sulla gestione delle sottoscrizioni, consultare questi argomenti:
@@ -35,8 +33,7 @@ Per altre informazioni sulla gestione delle sottoscrizioni, consultare questi ar
 >
 > È responsabilità del cliente rimanere conforme ai requisiti di licenza per questa sottoscrizione verificando che per ogni sottoscrizione di GitHub assegnata sia presente una sottoscrizione di Visual Studio con GitHub corrispondente assegnata nel portale di gestione.
 
-## <a name="managing-github-enterprise-subscriptions"></a>Gestione delle sottoscrizioni di GitHub Enterprise
-
+## <a name="manage-github-enterprise-subscriptions"></a>Gestire le sottoscrizioni di GitHub Enterprise
 Quando vengono acquistate sottoscrizioni di GitHub Enterprise, GitHub collabora con i clienti per creare e configurare le organizzazioni che accederanno a GitHub e per identificare gli amministratori.  Gli amministratori saranno informati del loro incarico tramite notifica.  
 
 Poiché questo processo è più complesso, dopo l'acquisto delle sottoscrizioni potrebbero trascorrere diversi giorni prima della completa configurazione delle organizzazioni e degli amministratori.
@@ -44,7 +41,6 @@ Poiché questo processo è più complesso, dopo l'acquisto delle sottoscrizioni 
 GitHub è disponibile come GitHub.com basato su cloud o in versione locale come GitHub Enterprise Server.  I processi per la gestione delle due versioni variano.  GitHub offre un'ampia gamma di argomenti della Guida e di guide di amministrazione per aiutare gli utenti a gestire le sottoscrizioni di GitHub Enterprise.  Segue un elenco di collegamenti ad argomenti selezionati.  
 
 ### <a name="githubcom"></a>GitHub.com 
-
 Per altre informazioni sulla gestione di GitHub.com, consultare gli argomenti seguenti in [GitHub Help](https://help.github.com/en) (Guida di GitHub).
 - [Elenco completo degli argomenti della Guida](https://help.github.com/en)
 - [Managing membership in your organization](https://help.github.com/en/articles/managing-membership-in-your-organization) (Gestione dell'appartenenza all'interno dell'organizzazione)
@@ -56,7 +52,6 @@ Per altre informazioni sulla gestione di GitHub.com, consultare gli argomenti se
 - [Managing access to your organization's repositories](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories) (Gestione dell'accesso ai repository dell'organizzazione)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
-
 La Guida di GitHub offre una serie di guide di amministrazione per rispondere a domande e fornire suggerimenti sulla gestione dell'implementazione di GitHub Enterprise Server nell'organizzazione.
 
 - [Visualizzazione di tutte le guide di amministrazione](https://help.github.com/en/enterprise/2.16/admin)
@@ -70,7 +65,6 @@ La Guida di GitHub offre una serie di guide di amministrazione per rispondere a 
 - [Installing and configuring GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation) (Installazione e configurazione di GitHub Enterprise Server)
 
 ## <a name="support-resources"></a>Risorse di supporto
-
 - È possibile trovare risposte a domande su un'ampia gamma di argomenti relativi a GitHub in [GitHub Help](https://help.github.com/en) (Guida di GitHub).
 - Ottenere assistenza da altri utenti di GitHub nel [GitHub Community Forum](https://github.community/) (forum della Community GitHub).
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
@@ -78,5 +72,4 @@ La Guida di GitHub offre una serie di guide di amministrazione per rispondere a 
 - Ottenere [supporto tecnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Passaggi successivi
-
 Per altre informazioni sulla gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise, consultare il [portale di amministrazione delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions-administration/) di Visual Studio.

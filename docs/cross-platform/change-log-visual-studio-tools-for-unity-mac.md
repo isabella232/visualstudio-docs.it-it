@@ -10,16 +10,110 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821507"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661825"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="2200"></a>2.2.0.0
+
+Data di rilascio: 25 luglio 2019
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Valutazione:**
+
+  - Correzione dell'ispezione con tipi IntPtr.
+
+- **Debugger:**
+
+  - Correzione della gestione dei punti di intercettazione e dei punti di interruzione delle funzioni.
+
+## <a name="2130"></a>2.1.3.0
+
+Data di rilascio: 9 luglio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Debugger:**
+
+  - Aggiunta del supporto per intercettare sottoclassi di eccezioni.
+
+  - Aggiunta del supporto per il protocollo MDS 2.51.
+
+- **Integrazione:**
+
+  - Aggiunta del supporto per file con estensione asmdef.
+
+  - Passaggio alla modalità di ridenominazione quando si aggiunge un file da un modello (per simulare il comportamento dell'editor Unity).
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione della gestione dei messaggi in formato non corretto durante la comunicazione con lettori di Unity.
+
+- **Valutazione:**
+
+  - Gestione semplificata degli spazi dei nomi nelle espressioni.
+
+## <a name="2120"></a>2.1.2.0
+
+Data di rilascio: 2 luglio 2019
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Valutazione:**
+
+  - Correzione della segnalazione degli errori con espressioni non analizzabili.
+
+## <a name="2110"></a>2.1.1.0
+
+Data di rilascio: 27 giugno 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Aggiornamento dell'API MonoBehaviour alla versione 2019.1.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione delle prestazioni di Esplora progetti Unity.
+
+  - Correzione degli avvisi e degli errori per l'output quando è abilitata la compilazione leggera.
+
+  - Correzione delle prestazioni per la compilazione leggera.
+
+## <a name="2100"></a>2.1.0.0
+
+Data di rilascio: 20 giugno 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Disabilitazione della compilazione completa per i progetti Unity, a favore dell'uso di errori e avvisi IntelliSense. Indeed Unity crea una soluzione di Visual Studio con progetti di libreria di classi che rappresentano le operazioni eseguite internamente da Unity. Detto questo, il risultato della compilazione in Visual Studio non viene mai usato o acquisito da Unity perché la pipeline di compilazione è chiusa. La compilazione in Visual Studio utilizza inutilmente risorse. Se gli strumenti o la configurazione usati richiedono una configurazione completa perché ne sono dipendenti, è possibile disabilitare questa ottimizzazione: Strumenti/Opzioni/Strumenti per Unity/Disabilita la compilazione completa dei progetti.
+  
+  - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti di riferimento (usando il file manifest.json nella cartella Packages) e i pacchetti locali (incorporati nella cartella Packages).
+
+## <a name="2021"></a>2.0.2.1
+
+Data di rilascio: 30 maggio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - Aggiunta dell'icona personalizzata per le destinazioni di esecuzione di Unity.
 
 ## <a name="2020"></a>2.0.2.0
 
@@ -42,6 +136,7 @@ Data di rilascio: 2 aprile 2019
   - Correzione del filtraggio degli assembly e dell'ispezione dei frame con frame vuoti.
 
 ## <a name="2011"></a>2.0.1.1
+ 
  Data di rilascio: 26 marzo 2019
 
 ### <a name="bug-fixes"></a>Correzioni di bug
@@ -87,6 +182,7 @@ Data di rilascio: 5 marzo 2019
   - Rimozione di spazi dei nomi dai modelli.
 
 ## <a name="2003"></a>2.0.0.3
+ 
  Data di rilascio: 5 marzo 2019
 
 ### <a name="new-features"></a>Nuove funzionalità

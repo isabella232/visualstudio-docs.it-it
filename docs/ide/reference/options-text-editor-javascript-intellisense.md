@@ -1,48 +1,54 @@
 ---
 title: Opzioni, Editor di testo, JavaScript, IntelliSense
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.References
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Intellisense.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.IntelliSense.General
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778573"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605976"
 ---
-# <a name="options-text-editor-javascript-intellisense"></a>Opzioni, Editor di testo, JavaScript, IntelliSense
-Utilizzare la pagina **IntelliSense** della finestra di dialogo **Opzioni** per modificare le impostazioni relative al funzionamento di IntelliSense per JavaScript. Per accedere alla pagina **IntelliSense**, scegliere **Strumenti** > **Opzioni** sulla barra dei menu e quindi espandere **Editor di testo** > **JavaScript** > **IntelliSense.**
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Finestra di dialogo Opzioni: Editor di testo \> JavaScript \> IntelliSense
+
+Utilizzare la pagina **IntelliSense** della finestra di dialogo **Opzioni** per modificare le impostazioni relative al funzionamento di IntelliSense per JavaScript. Per accedere alla pagina **IntelliSense**, scegliere **Strumenti** > **Opzioni** sulla barra dei menu e quindi espandere **Editor di testo** > **JavaScript/TypeScript** > **IntelliSense**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 La pagina **IntelliSense** include le sezioni seguenti:
 
 ## <a name="statement-completion"></a>Completamento istruzioni
- È possibile utilizzare queste opzioni per modificare il comportamento di completamento delle istruzioni IntelliSense.
+
+È possibile utilizzare queste opzioni per modificare il comportamento di completamento delle istruzioni IntelliSense.
 
 ### <a name="uielement-list"></a>Elenco UIElement
- **Usa solo TAB o INVIO per il commit**
 
- Se si seleziona questa casella di controllo, l'editor di codice JavaScript aggiungerà istruzioni agli elementi selezionati nell'elenco di completamento solo dopo che è stato premuto **TAB** o **INVIO**. Se si deseleziona questa casella di controllo, anche altri caratteri, tra cui punti, virgole, due punti, parentesi aperte e parentesi graffe aperte ({), possono aggiungere istruzioni agli elementi selezionati.
+**Usa solo TAB o INVIO per il commit**
+
+Se si seleziona questa casella di controllo, l'editor di codice JavaScript aggiungerà istruzioni agli elementi selezionati nell'elenco di completamento solo dopo che è stato premuto **TAB** o **INVIO**. Se si deseleziona questa casella di controllo, anche altri caratteri, tra cui punti, virgole, due punti, parentesi aperte e parentesi graffe aperte ({), possono aggiungere istruzioni agli elementi selezionati.
 
 ## <a name="references"></a>Riferimenti
- È possibile utilizzare queste opzioni per specificare i tipi di file .js IntelliSense che rientrano nell'ambito per tipi di progetti JavaScript diversi. I riferimenti di IntelliSense vengono in genere utilizzati per fornire il supporto IntelliSense per oggetti globali. È inoltre possibile utilizzare questa pagina per impostare l'ordine di caricamento per gli script che devono essere caricati al runtime e per aggiungere file di estensione IntelliSense.
+
+È possibile utilizzare queste opzioni per specificare i tipi di file .js IntelliSense che rientrano nell'ambito per tipi di progetti JavaScript diversi. I riferimenti di IntelliSense vengono in genere utilizzati per fornire il supporto IntelliSense per oggetti globali. È inoltre possibile utilizzare questa pagina per impostare l'ordine di caricamento per gli script che devono essere caricati al runtime e per aggiungere file di estensione IntelliSense.
 
 ### <a name="uielement-list"></a>Elenco UIElement
- **Gruppi di riferimenti**
 
- Questa opzione specifica il tipo di gruppo di riferimenti. Sono supportati tre gruppi di riferimenti:
+**Gruppi di riferimenti**
 
- È possibile utilizzare gruppi di riferimenti predefiniti per specificare che determinati file .js IntelliSense rientrino nell'ambito per progetti JavaScript diversi. Sono disponibili quattro gruppi di riferimenti:
+Questa opzione specifica il tipo di gruppo di riferimenti. Sono supportati tre gruppi di riferimenti:
+
+È possibile utilizzare gruppi di riferimenti predefiniti per specificare che determinati file .js IntelliSense rientrino nell'ambito per progetti JavaScript diversi. Sono disponibili quattro gruppi di riferimenti:
 
 - Implicito ( *versione*Windows), per le app [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] che usano JavaScript. I file inclusi in questo gruppo rientrano nell'ambito per ogni file con estensione js aperto nell'editor di codice per le app [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] che usano JavaScript.
 

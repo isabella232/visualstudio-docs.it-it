@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b8414f50ed420d8fb4b29d4c8a21d3c8dc6cee72
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691974"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493251"
 ---
 # <a name="source-editor"></a>Editor standard
 
@@ -20,7 +20,7 @@ L'editor standard in Visual Studio per Mac consente un'esperienza ottimale di us
 
 Questo articolo presenta alcune delle funzionalità chiave dell'editor standard e illustra come è possibile usare Visual Studio per Mac nel modo più produttivo possibile.
 
-## <a name="the-source-editor-experience"></a>Esperienza di uso dell'editor standard
+## <a name="the-source-editor-experience"></a>Esperienza d'uso dell'editor standard
 
 L'efficienza di visualizzazione e di spostamento nel codice è una parte essenziale del flusso di lavoro di sviluppo. Il modo esatto in cui si desidera visualizzare e gestire il codice è una decisione personale che varia da uno sviluppatore all'altro e spesso anche tra un progetto e l'altro.
 
@@ -32,13 +32,13 @@ La riduzione del codice agevola la gestione di file di codice sorgente di grandi
 
 Per attivare la riduzione del codice, spostarsi su **Visual Studio > Preferenze > Editor di testo > Generale > Riduzione del codice**:
 
-![Opzioni di riduzione del codice](media/source-editor-image1.png)
+![Opzioni di riduzione del codice](media/source-neweditor-image1.png)
 
 Questo menu include anche l'opzione per ridurre #region e commenti per impostazione predefinita, visualizzando un hint denominato anziché il codice.
 
 Per mostrare o nascondere sezioni, usare il widget di divulgazione accanto al numero di riga:
 
-![Mostrare o nascondere sezioni nel codice](media/source-editor-image2.png)
+![Mostrare o nascondere sezioni nel codice](media/source-neweditor-image2.png)
 
 È anche possibile selezionare alternativamente se visualizzare o nascondere le riduzioni, usando la voce di menu **Visualizza > Riduzione > Toggle Fold / Toggle All Folds (Attiva riduzione / Attiva/disattiva tutte le riduzioni)** :
 
@@ -46,21 +46,19 @@ Per mostrare o nascondere sezioni, usare il widget di divulgazione accanto al nu
 
 Questa voce di menu può anche essere usata per abilitare o disabilitare la riduzione del codice.
 
-## <a name="white-space"></a>Spazio vuoto
+## <a name="word-wrap"></a>A capo automatico
 
-Può essere necessario visualizzare i caratteri invisibili nel codice sorgente. Questo è un modo per verificare visivamente che si stiano rispettando gli standard di codifica e che non si sprechi spazio. È anche utile quando si scrive in F#, dove la valutazione del codice dipende da righe con un rientro preciso.
+Il ritorno a capo automatico consente di gestire lo spazio quando si lavora su lunghe righe di codice o con spazio di visualizzazione limitato. Il ritorno a capo automatico può inoltre garantire che la visualizzazione del codice includa tutto il contenuto del file di origine anche quando si aprono riquadri che potrebbero nascondere la visualizzazione o ridurre la larghezza della visualizzazione origine. 
 
-Per impostare le opzioni per mostrare gli spazi vuoti, passare a **Visual Studio > Preferenze > Editor di testo > Marcatori e righelli**. La selezione di questa opzione consente di impostare _quando_  visualizzare i caratteri invisibili: mai, alla selezione o sempre:
+Il ritorno a capo automatico è disabilitato per impostazione predefinita, ma può essere abilitato tramite **Preferenze** in Visual Studio per Mac. 
 
-![Opzioni per mostrare i caratteri invisibili](media/source-editor-image3.png)
+Per abilitare il ritorno a capo automatico, passare a **Visual Studio > Preferenze > Editor di testo > Nuovo editor > A capo automatico**:
 
-È anche disponibile l'opzione per mostrare tabulazioni, spazi e terminazioni riga:
+![Opzioni di ritorno a capo automatico](media/source-neweditor-wordwrap1.png)
 
-![Mostrare tabulazioni e spazi](media/source-editor-image4.png)
+Se il ritorno a capo automatico è abilitato, le righe che superano la larghezza della visualizzazione dell'editor standard passano automaticamente alla riga successiva all'interno del file di origine. È anche possibile abilitare un'opzione che visualizza un glifo accanto alle righe con ritorno a capo. Ciò consente di distinguere tra le righe con ritorno a capo automatico e quelle con ritorno a capo impostato manualmente.
 
-I caratteri invisibili vengono visualizzati come punti grigi, come illustrato nell'immagine seguente:
-
-![spazi vuoti visualizzati](media/source-editor-image22.png)
+![Testo con ritorno a capo con funzionalità di ritorno a capo automatico abilitata](media/source-neweditor-wordwrap2.png)
 
 ## <a name="ruler"></a>Righello
 

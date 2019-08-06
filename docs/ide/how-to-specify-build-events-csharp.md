@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: Specificare gli eventi di compilazione (C#)'
 ms.date: 03/21/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -9,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946908"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483700"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
 
@@ -37,27 +38,27 @@ Quando un progetto viene compilato, gli eventi di pre-compilazione vengono aggiu
 
 4. Nella casella **Riga di comando eventi pre-compilazione** specificare la sintassi per l'evento di compilazione.
 
-    > [!NOTE]
-    > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.
+   > [!NOTE]
+   > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.
 
 5. Nella casella **Riga di comando eventi post-compilazione** specificare la sintassi per l'evento di compilazione.
 
-    > [!NOTE]
-    > Aggiungere un'istruzione `call` prima di tutti i comandi di post-compilazione che eseguono file con estensione *bat*. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > [!NOTE]
+   > Aggiungere un'istruzione `call` prima di tutti i comandi di post-compilazione che eseguono file con estensione *bat*. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.
 
-    > [!NOTE]
-    > Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.
+   > [!NOTE]
+   > Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione ( **...** ) per visualizzare una casella di modifica.
 
-     La sintassi dell'evento di compilazione può includere qualsiasi comando che sia valido in un prompt dei comandi o in un file con estensione *bat*. Perché vengano sicuramente eseguiti tutti i comandi successivi, il nome di un file batch deve essere preceduto da `call`.
+   La sintassi dell'evento di compilazione può includere qualsiasi comando che sia valido in un prompt dei comandi o in un file con estensione *bat*. Perché vengano sicuramente eseguiti tutti i comandi successivi, il nome di un file batch deve essere preceduto da `call`.
 
-    > [!NOTE]
-    > Se l'evento di pre-compilazione o post-compilazione non viene completato correttamente, è possibile terminare la compilazione forzando l'azione dell'evento a uscire con un codice diverso da zero (0), che indica un esito positivo.
+   > [!NOTE]
+   > Se l'evento di pre-compilazione o post-compilazione non viene completato correttamente, è possibile terminare la compilazione forzando l'azione dell'evento a uscire con un codice diverso da zero (0), che indica un esito positivo.
 
 ## <a name="example"></a>Esempio
 
-La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando *exe* chiamato da un evento di post-compilazione (il file *exe.manifest* nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:
+La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando *exe* chiamato da un evento di post-compilazione (il file *exe.manifest* nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. Per impostare la versione minima del sistema operativo, il comando modifica la sezione `<dependentOS>` del manifesto:
 
 ```xml
 <dependentOS>
@@ -83,11 +84,11 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
    class Program
    {
       /// <summary>
-      /// This function will set the minimum operating system version for a ClickOnce application.
+      /// This function sets the minimum operating system version for a ClickOnce application.
       /// </summary>
       /// <param name="args">
       /// Command Line Arguments:
-      /// 0 - Path to application manifest (.exe.manifest).
+      /// 0 - Path to application manifest (.exe.manifest)
       /// 1 - Version of OS
       ///</param>
       static void Main(string[] args)
@@ -135,7 +136,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 5. Copiare il file con estensione *exe* in una directory, ad esempio *C:\TEMP\ChangeOSVersionVB.exe*.
 
-   Richiamare quindi questo comando in un evento di post-compilazione per modificare il manifesto dell'applicazione.
+Richiamare quindi questo comando in un evento di post-compilazione per modificare il manifesto dell'applicazione.
 
 ### <a name="invoke-a-post-build-event-to-modify-the-application-manifest"></a>Richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione
 
@@ -147,31 +148,31 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 4. Pubblicare il progetto facendo clic su **Pubblica**.
 
-     Il file manifesto viene compilato e salvato in *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Per visualizzare il manifesto, fare clic con il pulsante destro del mouse sul file, scegliere **Apri con**, selezionare **Seleziona il programma da un elenco** e quindi fare clic su **Blocco note**.
+   Il file manifesto viene compilato e salvato in *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Per visualizzare il manifesto, fare clic con il pulsante destro del mouse sul file, scegliere **Apri con**, selezionare **Seleziona il programma da un elenco** e quindi fare clic su **Blocco note**.
 
-     Ricercare nel file l'elemento `<osVersionInfo>`. Ad esempio, la versione potrebbe essere:
+   Ricercare nel file l'elemento `<osVersionInfo>`. Ad esempio, la versione potrebbe essere:
 
-    ```xml
-    <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+   ```
 
 5. Tornare a **Creazione progetti**, fare clic sulla scheda **Eventi di compilazione** e quindi su **Modifica post-compilazione**.
 
-6. Nella casella **Riga di comando eventi post-compilazione** digitare il comando seguente:
+6. Nella casella **Riga di comando eventi post-compilazione** immettere il comando seguente:
 
-     `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
+   `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`
 
-     Quando si compila il progetto, questo comando imposta la versione minima del sistema operativo nel manifesto dell'applicazione su 5.1.2600.0.
+   Quando si compila il progetto, questo comando imposta la versione minima del sistema operativo nel manifesto dell'applicazione su 5.1.2600.0.
 
-     Poiché la macro `$(TargetPath)` esprime il percorso completo del file eseguibile in corso di creazione, il file `$(TargetPath)`*manifest* specificherà il manifesto dell'applicazione creato nella directory *bin*. La pubblicazione copia questo manifesto nel percorso di pubblicazione impostato in precedenza.
+   Poiché la macro `$(TargetPath)` esprime il percorso completo del file eseguibile in fase di creazione, `$(TargetPath).manifest` specifica il manifesto dell'applicazione creato nella directory *bin*. La pubblicazione copia questo manifesto nel percorso di pubblicazione impostato in precedenza.
 
 7. Pubblicare nuovamente il progetto.
 
-     Adesso la versione del manifesto dovrebbe essere:
+   Adesso la versione del manifesto dovrebbe essere:
 
-    ```xml
-    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
-    ```
+   ```xml
+   <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+   ```
 
 ## <a name="see-also"></a>Vedere anche
 

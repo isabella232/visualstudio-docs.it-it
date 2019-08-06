@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043390"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461694"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -107,7 +107,7 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
    using namespace std;
    ```
 
-   Si noti che viene visualizzato un riquadro quando si immette il codice. Questa finestra contiene suggerimenti di completamento automatico per i caratteri immessi. Fa parte di IntelliSense per C++, che specifica prompt di codifica, incluse classi o membri di interfaccia e informazioni sui parametri. È anche possibile usare frammenti di codice, cioè blocchi di codice predefiniti. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) e [Code Snippets](../ide/code-snippets.md).
+   Si noti che viene visualizzato un riquadro quando si immette il codice. Questo riquadro contiene suggerimenti di completamento automatico per i caratteri immessi. Fa parte di IntelliSense per C++, che specifica prompt di codifica, incluse classi o membri di interfaccia e informazioni sui parametri. È anche possibile usare frammenti di codice, cioè blocchi di codice predefiniti. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) e [Code Snippets](../ide/code-snippets.md).
 
    ![Il codice corretto nell'editor](../ide/media/get-started-cpp-cout-fix.png)
 

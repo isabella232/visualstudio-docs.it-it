@@ -1,18 +1,18 @@
 ---
 title: Gestire più account utente
-ms.date: 12/10/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581907"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483543"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -55,7 +55,19 @@ Alla successiva apertura di **Esplora server** verranno visualizzate le risorse 
 
 In Azure Active Directory (AAD) viene abilitato il supporto per l'autenticazione Single Sign-On per utenti finali in app Web MVC ASP.NET o per il servizio Autenticazione di Azure AD in servizi Web API. L'autenticazione di dominio è diversa dall'autenticazione dei singoli account utente. Gli utenti che hanno accesso al dominio di Active Directory possono usare i propri account AAD esistenti per connettersi alle applicazioni Web. Le applicazioni di Office 365 inoltre possono utilizzare l'autenticazione di dominio.
 
-Per visualizzare questa azione, creare un nuovo progetto **Applicazione Web ASP.NET**. Nella finestra di dialogo **Nuovo progetto ASP.NET** scegliere **Modifica autenticazione**. Autenticazione guidata viene visualizzata e consente di scegliere il tipo di autenticazione da utilizzare nell'applicazione.
+::: moniker range="vs-2017"
+
+Per vedere come funziona, creare un nuovo progetto **Applicazione Web ASP.NET Core**. Nella finestra di dialogo **Nuova applicazione Web ASP.NET Core** scegliere il modello **Applicazione Web** e quindi scegliere **Modifica autenticazione**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Per vedere come funziona, creare un nuovo progetto **Applicazione Web ASP.NET Core**. Nella pagina **Crea una nuova applicazione Web ASP.NET Core** scegliere il modello **Applicazione Web** e quindi scegliere **Modifica** in **Autenticazione**.
+
+::: moniker-end
+
+Verrà visualizzata la finestra di dialogo **Modifica autenticazione** in cui è possibile scegliere il tipo di autenticazione da usare nell'applicazione.
 
 ![Finestra di dialogo Modifica autenticazione per ASP.NET](../ide/media/vs2015_change_authentication.png)
 

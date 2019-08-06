@@ -6,20 +6,18 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: 7a3205fd29c0eb69e20fee03a2679ab227243058
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68417000"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605488"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usare la funzionalità Utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
-
 Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. 
 
 ## <a name="view-your-maximum-usage"></a>Visualizzare l'utilizzo massimo
 Per visualizzare il numero massimo di sottoscrizioni assegnate per qualsiasi livello di contratto e sottoscrizione:
-
 1. Selezionare il contratto da visualizzare nell'elenco a discesa nella parte superiore sinistra del portale. Se si dispone solo di un contratto, questo sarà già selezionato.
 2. Fare clic sulla scheda **Utilizzo massimo**.  
     > [!div class="mx-imgBorder"]
@@ -41,8 +39,7 @@ Ad esempio, nella tabella precedente, è possibile notare che il 13/12/2018 nel 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>D: Qual è la differenza tra le informazioni in Utilizzo massimo e le informazioni sulle assegnazioni disponibili nella sezione "Panoramica" sul lato sinistro del portale?
-
-R:  Le informazioni nella panoramica mostrano le assegnazioni correnti e le sottoscrizioni disponibili per ogni livello di sottoscrizione.  Queste informazioni possono essere molto diverse dal numero massimo di sottoscrizioni assegnate per il contratto in qualsiasi momento.  La funzionalità Utilizzo massimo consente di sapere quando sono stati raggiunti i livelli massimi di assegnazioni e quali sono stati tali livelli.  Si tratta di una distinzione importante, poiché la fatturazione per le sottoscrizioni durante il conteggio true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento nel corso dell'anno. 
+R:  Le informazioni nella panoramica mostrano le assegnazioni *correnti* e quelle disponibili per ogni livello di sottoscrizione.  Queste informazioni possono essere molto diverse dal numero massimo di sottoscrizioni assegnate per il contratto durante l'anno corrente o per la durata del contratto.  La funzionalità Utilizzo massimo consente di sapere quando sono stati raggiunti i livelli massimi di assegnazioni e quali sono stati tali livelli.  Si tratta di una distinzione importante, poiché la fatturazione per le sottoscrizioni durante il conteggio true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento nel corso dell'anno. 
 
 ## <a name="resources"></a>Risorse
 - [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)
@@ -50,5 +47,5 @@ R:  Le informazioni nella panoramica mostrano le assegnazioni correnti e le sott
 - [Condizioni dei contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per eventuali domande sulle assegnazioni delle sottoscrizioni o altri aspetti del portale di amministrazione, contattare https://visualstudio.microsoft.com/subscriptions/support/ per assistenza. 
-
+- Per eventuali domande sulle assegnazioni delle sottoscrizioni o altri aspetti del portale di amministrazione, contattare https://visualstudio.microsoft.com/subscriptions/support/ per assistenza. 
+- Vedere altre informazioni su cosa fare se si assegnano più sottoscrizioni di quelle acquistate, uno scenario noto come [sovrallocazione](handle-overclaimed-license.md).
