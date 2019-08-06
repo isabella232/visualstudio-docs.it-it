@@ -3,21 +3,25 @@ title: Opzioni, Editor di testo, Generale
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
-- VS.ToolsOptionsPages.Text_Editor.SQL.General
-- vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.XOML.General
-- VS.ToolsOptionsPages.Text_Editor.SQL
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
+- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
+- VS.ToolsOptionsPages.Text_Editor.SQL
+- VS.ToolsOptionsPages.Text_Editor.SQL.General
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL
+- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
@@ -29,14 +33,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 3b23edb73ee08762ae8e3efaea4f883693aaacbd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531908"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606011"
 ---
-# <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
+# <a name="options-dialog-box-text-editor--general"></a>Finestra di dialogo Opzioni: Editor di testo \> Generale
 
 Questa finestra di dialogo consente di modificare le impostazioni globali di Visual Studio Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, selezionare **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi selezionare **Generale**.
 

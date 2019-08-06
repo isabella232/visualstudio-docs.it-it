@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953296"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606086"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
@@ -27,18 +27,18 @@ ms.locfileid: "62953296"
 
 ## <a name="general-environment-options"></a>Opzioni generali dell'ambiente
 
-Molte opzioni di personalizzazione sono esposte tramite la finestra di dialogo [Opzioni ambiente](../ide/reference/environment-options-dialog-box.md). È possibile accedere a questa finestra di dialogo in due modi:
+Molte opzioni di personalizzazione sono esposte tramite la finestra di dialogo [Opzioni ambiente](../ide/reference/general-environment-options-dialog-box.md). È possibile accedere a questa finestra di dialogo in due modi:
 
 - Sulla barra dei menu scegliere **Strumenti** > **Opzioni**e, se non è già stato fatto, espandere il nodo **Ambiente**.
 
-- Premere **CTRL**+**Q**, digitare **ambiente** nella casella di ricerca e quindi scegliere **Ambiente--> Generale** nei risultati.
+- Premere **CTRL**+**Q**, digitare **ambiente** nella casella di ricerca e quindi scegliere **Ambiente > Generale** nei risultati.
 
 > [!TIP]
 > Quando viene visualizzata la finestra di dialogo Opzioni, è possibile premere **F1** per le informazioni della Guida sulle diverse impostazioni nella pagina.
 
 ## <a name="environment-color-themes"></a>Temi colore dell'ambiente
 
-Per modificare il tema colori tra chiaro, scuro e blu, digitare **ambiente** nella casella di ricerca e quindi scegliere **Ambiente--> Generale**. Nella finestra di dialogo **Opzioni** modificare l'opzione **Tema colori**.
+Per modificare il tema colori passando tra quello chiaro, quello scuro e quello blu, digitare **ambiente** nella casella di ricerca e quindi scegliere **Ambiente > Generale**. Nella finestra di dialogo **Opzioni** modificare l'opzione **Tema colori**.
 
 Per modificare le opzioni di colorazione nell'editor, digitare **ambiente** nella casella di ricerca e quindi scegliere **Ambiente --> Tipi di carattere e colori**. Vedere [How to: Modificare tipi di carattere e colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 

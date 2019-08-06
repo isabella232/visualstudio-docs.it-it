@@ -1,6 +1,7 @@
 ---
 title: Gestione delle firme di assembly e manifesti
 ms.date: 02/17/2017
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538241"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461493"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 
@@ -37,13 +38,13 @@ Per informazioni sulla firma degli assembly nei progetti Visual C++, vedere [Ass
 
 È possibile firmare gli assembly .NET e i manifesti dell'applicazione:
 
-- File eseguibili (*.exe*)
+- File eseguibili ( *.exe*)
 
-- Manifesti dell'applicazione (*.exe.manifest*)
+- Manifesti dell'applicazione ( *.exe.manifest*)
 
-- Manifesti della distribuzione (*.application*)
+- Manifesti della distribuzione ( *.application*)
 
-- Assembly di componenti condivisi (*.dll*)
+- Assembly di componenti condivisi ( *.dll*)
 
 Firmare i seguenti tipi di asset:
 
@@ -53,7 +54,7 @@ Firmare i seguenti tipi di asset:
 
 3. Assembly di interoperabilità primari, usati per l'interoperabilità COM. L'utilità TLBIMP attiva l'assegnazione di nomi sicuri quando crea un assembly di interoperabilità primario da una libreria di tipi COM.
 
-In generale è consigliabile non firmare i file eseguibili. Un componente con nome sicuro non può fare riferimento a un componente senza nome sicuro distribuito con l'applicazione. Visual Studio non firma gli eseguibili dell'applicazione, consente invece di firmare il manifesto dell'applicazione, che fa riferimento al file eseguibile con nome debole. Evitare di firmare i componenti privati dell'applicazione, perché la firma può rendere più difficile la gestione delle dipendenze.
+In generale è consigliabile non firmare i file eseguibili. Un componente con nome sicuro non può fare riferimento a un componente privo di nome sicuro distribuito con l'applicazione. Visual Studio non firma gli eseguibili dell'applicazione, consente invece di firmare il manifesto dell'applicazione, che fa riferimento al file eseguibile con nome debole. Evitare di firmare i componenti privati dell'applicazione, perché la firma può rendere più difficile la gestione delle dipendenze.
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Come firmare un assembly in Visual Studio
 

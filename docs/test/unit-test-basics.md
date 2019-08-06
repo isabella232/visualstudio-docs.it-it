@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820760"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661972"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -232,14 +232,24 @@ La barra degli strumenti di **Esplora test** consente di individuare, organizzar
 
 È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Dopo l'esecuzione di un set di test, nella parte inferiore della finestra **Esplora test** viene visualizzato il riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore. Scegliere **Apri test** dal menu di scelta rapida (da tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
 
+::: moniker range="vs-2017"
+
 Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test nel menu Impostazioni sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 
 > [!WARNING]
 > L'esecuzione di unit test dopo ogni compilazione è supportata solo in Visual Studio Enterprise.
 
-|Button|Description|
+|Button|DESCRIZIONE|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** nella barra degli strumenti di **Esplora test**.|
 
@@ -249,7 +259,7 @@ In presenza di un numero elevato di test, è possibile digitare nella casella di
 
 ![Categorie di filtri di ricerca](../test/media/ute_searchfilter.png)
 
-|Button|Description|
+|Button|DESCRIZIONE|
 |-|-|
 |![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
 

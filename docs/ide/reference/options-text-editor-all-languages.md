@@ -42,14 +42,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817854"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606055"
 ---
-# <a name="options-text-editor-all-languages"></a>Opzioni, Editor di testo, Tutti i linguaggi
+# <a name="options-dialog-box-text-editor--all-languages"></a>Finestra di dialogo Opzioni: Editor di testo \> Tutti i linguaggi
 
 Questa finestra di dialogo consente di modificare il comportamento predefinito dell'editor del codice. Queste impostazioni si applicano anche agli altri editor basati sull'editor del codice, come ad esempio la visualizzazione dell'origine della finestra di progettazione HTML. Per aprire questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella dell'**Editor di testo** espandere la sottocartella **All Languages** (Tutti i linguaggi), quindi scegliere **Generale**.
 
@@ -101,7 +101,7 @@ Deselezionare questa opzione per non visualizzare tali indicatori.
 Quando questa opzione è selezionata, accanto a ciascuna riga di codice viene visualizzato un numero di riga.
 
 > [!NOTE]
-> Tali numeri di riga non vengono aggiunti al codice né stampati,  ma vengono visualizzati solo a scopo di riferimento.
+> Tali numeri di riga non vengono aggiunti al codice né stampati, ma vengono visualizzati solo a scopo di riferimento.
 
 **Consenti apertura URL con clic singolo**
 
@@ -109,7 +109,7 @@ Quando questa opzione è selezionata, il cursore del mouse assume la forma di un
 
 **Barra di spostamento**
 
-Quando questa opzione è selezionata, nella parte superiore dell'editor di codice viene visualizzata la **barra di navigazione**,  i cui elenchi a discesa **Oggetti** e **Membri** consentono di scegliere un determinato oggetto nel codice, selezionarne i membri e passare alla dichiarazione del membro selezionato nell'editor di codice.
+Quando questa opzione è selezionata, nella parte superiore dell'editor di codice viene visualizzata la **barra di navigazione**, i cui elenchi a discesa **Oggetti** e **Membri** consentono di scegliere un determinato oggetto nel codice, selezionarne i membri e passare alla dichiarazione del membro selezionato nell'editor di codice.
 
 **Applica comandi Taglia o Copia a righe vuote in assenza di selezione**
 

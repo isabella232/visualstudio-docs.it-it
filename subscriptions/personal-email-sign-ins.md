@@ -1,25 +1,23 @@
 ---
-title: Messaggi di posta elettronica personali visualizzati In VLSC
+title: Visualizzazione di Indirizzi di posta elettronica personali in VLSC
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/23/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
-ms.openlocfilehash: acba6b5c1b5efac80590d02e3c813650962b4892
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 8418a177e793f0b4fe9a5019d2cf62fa724312ff
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250716"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605762"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
-
-Man mano che le società completano la migrazione da Volume Licensing Service Center (VLSC) al nuovo [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio, gli amministratori potrebbero notare con sorpresa che per l'indirizzo di posta elettronica di accesso di alcuni sottoscrittori sono indicati indirizzi di posta elettronica di terze parti come Hotmail, Gmail o Yahoo!.  Per altre informazioni, vedere [questo video](https://www.youtube.com/watch?v=1op-i1zEMfY&t=0s&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=6).
+Dopo che le società hanno completato la migrazione da Volume Licensing Service Center (VLSC) al nuovo [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio, gli amministratori hanno notato con sorpresa che per l'indirizzo di posta elettronica di accesso di alcuni sottoscrittori erano indicati indirizzi di terze parti, come Hotmail, Yahoo! o Gmail.  Per altre informazioni, vedere [questo video](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
 
 ## <a name="cause"></a>Causa
-
-Questa situazione si verifica a causa dei processi di accesso associati all'esperienza legacy degli abbonati a MSDN. La migrazione degli utenti da Volume License Service Center (VLSC) al nuovo portale è stata completata senza modifiche. Gli amministratori potrebbero non essere a conoscenza del fatto che gli utenti usavano account personali per accedere ai vantaggi della propria sottoscrizione. Prima delle migrazioni dei sottoscrittori di Visual Studio, completate nel 2016, erano necessarie due azioni per usare correttamente una sottoscrizione di Visual Studio:
+Questa situazione si verifica a causa dei processi di accesso associati all'esperienza legacy degli abbonati a MSDN. La migrazione degli utenti da Volume License Service Center (VLSC) al portale di amministrazione delle sottoscrizioni di Visual Studio è stata completata senza modifiche. Gli amministratori potrebbero non essere a conoscenza del fatto che gli utenti usavano account personali per accedere ai vantaggi della propria sottoscrizione. Prima delle migrazioni dei sottoscrittori di Visual Studio, completate nel 2016, erano necessarie due azioni per usare correttamente una sottoscrizione di Visual Studio:
 1. L'amministratore "assegnava" la sottoscrizione a un singolo sottoscrittore, usando l'indirizzo di posta elettronica dell'account aziendale o dell'istituto di istruzione.
 2. Il sottoscrittore "attivava" la sottoscrizione.
 
@@ -28,10 +26,12 @@ Durante il processo di attivazione del sottoscrittore: Era necessario un account
 > [!NOTE]
 > La nuova esperienza di sottoscrizione in [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) supporta i tipi di identità sia con account aziendale o dell'istituto di istruzione sia con account Microsoft.
 
-Infine, poiché per la migrazione degli amministratori vengono recuperati i dati dell'indirizzo di posta elettronica di accesso del sottoscrittore da VLSC per popolare la nuova esperienza di gestione dei sottoscrittori, gli amministratori di cui è stata eseguita la migrazione di recente potrebbero notare questi account personali passati inosservati in precedenza a causa di modifiche all'interfaccia utente che rendono più visibili queste informazioni.
+Infine, poiché per la migrazione degli amministratori sono stati recuperati i dati relativi all'indirizzo di posta elettronica di accesso del nuovo sottoscrittore da VLSC per completare la nuova esperienza di gestione dei sottoscrittori, gli amministratori di cui è stata eseguita la migrazione di recente potrebbero aver notato questi account personali, passati inosservati in precedenza, a causa delle modifiche apportate all'interfaccia utente che hanno reso più visibili queste informazioni.
 
 ## <a name="solution"></a>Soluzione
-
 Per risolvere il problema, è necessario modificare le informazioni sui sottoscrittori per aggiornare i relativi indirizzi di posta elettronica di accesso.  È possibile apportare le modifiche per singoli sottoscrittori o in blocco. Per informazioni complete, vedere [Modificare una sottoscrizione](edit-license.md).
 
-Dopo aver aggiornato gli indirizzi di posta elettronica dei Sottoscrittori, è consigliabile informarli che le informazioni di accesso sono state modificate.  L'utente riceverà anche un messaggio di posta elettronica con le informazioni aggiornate.
+##  <a name="next-steps"></a>Passaggi successivi
+- Dopo aver aggiornato gli indirizzi di posta elettronica dei sottoscrittori, è consigliabile informarli che le informazioni di accesso sono state modificate.  L'utente riceverà anche un messaggio di posta elettronica con le informazioni aggiornate.
+- Può essere utile [filtrare l'elenco dei sottoscrittori](search-license.md) nell'organizzazione per cercare gli indirizzi di posta elettronica di accesso che potrebbero dover essere modificati.  
+

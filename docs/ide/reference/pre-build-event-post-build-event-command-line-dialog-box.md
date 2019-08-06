@@ -1,6 +1,7 @@
 ---
 title: Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -28,48 +29,51 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969059"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461314"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
+
 È possibile digitare gli eventi pre-compilazione o post-compilazione per la [Pagina Eventi di compilazione, Creazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direttamente nella casella di modifica oppure selezionare le macro pre-compilazione e post-compilazione da un elenco di macro disponibili.
 
 > [!NOTE]
 > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.
 
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
- **Casella di modifica della riga di comando**
 
- Contiene gli eventi da eseguire per la pre-compilazione o la post-compilazione.
+**Casella di modifica della riga di comando**
+
+Contiene gli eventi da eseguire per la pre-compilazione o la post-compilazione.
 
 > [!NOTE]
 > Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
 
- **Macro**
+**Macro**
 
- Espande la casella di modifica per visualizzare l'elenco delle macro che è possibile inserire nella casella di modifica della riga di comando.
+Espande la casella di modifica per visualizzare un elenco di macro che è possibile inserire nella casella di modifica della riga di comando.
 
- **Tabella delle macro**
+**Tabella delle macro**
 
- Elenca le macro disponibili e il relativo valore. Per la descrizione di ogni macro, vedere la sezione Macro più avanti. È possibile selezionare una sola macro alla volta da inserire nella casella di modifica della riga di comando.
+Elenca le macro disponibili e il relativo valore. Per la descrizione di ogni macro, vedere la sezione Macro più avanti. È possibile selezionare una sola macro per volta da inserire nella casella di modifica della riga di comando.
 
- **Inserisci**
+**Inserisci**
 
- Inserisce nella casella di modifica della riga di comando la macro selezionata nella tabella delle macro.
+Inserisce nella casella di modifica della riga di comando la macro selezionata nella tabella delle macro.
 
 ### <a name="macros"></a>Macro
- È possibile usare una qualsiasi di queste macro per specificare i percorsi dei file o ottenere il nome effettivo del file di input in caso di selezioni multiple. Le macro non fanno distinzione tra maiuscole e minuscole.
 
-|Macro|Description|
+È possibile usare una qualsiasi di queste macro per specificare i percorsi dei file o ottenere il nome effettivo del file di input in caso di selezioni multiple. Le macro non fanno distinzione tra maiuscole e minuscole.
+
+|Macro|DESCRIZIONE|
 |-----------|-----------------|
 |`$(ConfigurationName)`|Nome della configurazione di progetto corrente, ad esempio "Debug".|
 |`$(OutDir)`|Percorso della directory del file di output, relativo alla directory del progetto. Viene risolto nel valore per la proprietà Directory di output. Include la barra rovesciata finale "\\".|

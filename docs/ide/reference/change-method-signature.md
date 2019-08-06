@@ -1,5 +1,6 @@
 ---
 title: Refactoring della firma di un metodo
+description: Rimuovere o modificare l'ordine dei parametri di un metodo. Fare clic con il pulsante destro del mouse sul metodo, scegliere Azioni rapide e refactoring e quindi Cambia firma.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e8332cb8fb39c47f4e46a7d306b2673ff61b9e9
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791171"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483738"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -50,7 +51,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+V**.  Si noti che i tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Cambia firma** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring > Rimuovi parametri**.
       - Selezionare **Modifica > Refactoring > Riordina parametri**.
@@ -60,7 +61,7 @@ Questo refactoring si applica a:
 
    ![Finestra di dialogo Cambia firma](media/changesignature-dialog-cs.png)
 
-   | Button | Description
+   | Button | DESCRIZIONE
    | ------ | ---
    | **Su/Giù** | Consente di spostare il parametro selezionato verso l'alto e verso il basso nell'elenco
    | **Rimuovi** | Consente di rimuovere il parametro selezionato dall'elenco

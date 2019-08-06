@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: eefcbefa8b728afa677e7bd04fd538633ae117f0
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518177"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461646"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Creare minidump per un processo di Visual Studio con tutti gli stack di chiamate
 
@@ -40,7 +40,6 @@ In alcuni casi Microsoft potrebbe chiedere un minidump di un processo di Visual 
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Ottenere gli stack di chiamate dal minidump
 
 1. Aprire il file di dump in Visual Studio.
-
 1. Passare a **Strumenti** > **Opzioni** > **Debug** > **Simboli** e assicurarsi che l'opzione **Server dei simboli Microsoft** sia selezionata in **Percorsi dei file di simboli (estensione pdb)** .
 1. Aprire la finestra di **comando**(**Visualizza** > **Altre finestre** > **Finestra di comando**)
 1. Digitare ‘~*k’. La finestra visualizza gli stack di chiamate di tutti i thread.

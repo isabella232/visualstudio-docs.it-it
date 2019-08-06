@@ -14,14 +14,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429485"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661985"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
+
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Dove si trova la funzionalità di raggruppamento per tratti in Visual Studio 2019?
+Il raggruppamento per tratti è stato spostato in una colonna. Con la gerarchia multilivello e personalizzabile in Visual Studio 2019 versione 16.2, si è ritenuto che includere i tratti come raggruppamento comportasse una complessità visiva non necessaria. Il feedback degli utenti su questo aspetto sarà molto apprezzato. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+Per il momento, è possibile fare clic con il pulsante destro del mouse sulla colonna in Esplora test e scegliere Colonne. Controllare la colonna Tratto che verrà visualizzata in Esplora test. È ora possibile filtrare questa colonna in base ai tratti a cui si è interessati.
+
+![Visualizzare la colonna Tratto](media/vs-2019/trait-column.png)
+![Filtrare la colonna Tratto](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Individuazione dei test dinamici
 

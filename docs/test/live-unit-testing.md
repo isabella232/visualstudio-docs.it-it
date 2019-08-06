@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786520"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662053"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing con Visual Studio
 
@@ -145,7 +145,7 @@ Esistono alcune differenze tra l'esecuzione automatica di Live Unit Testing e l'
 
 - Durante l'esecuzione o il debug di test dalla finestra Esplora test vengono eseguiti file binari normali, mentre con Live Unit Testing vengono eseguiti file instrumentati.
 - Live Unit Testing non crea un nuovo dominio applicazione per eseguire i test, ma esegue i test dal dominio predefinito. Quando i test vengono eseguiti dalla finestra **Esplora test**, viene invece creato un nuovo dominio applicazione.
-- Live Unit Testing esegue i test di ogni assembly di test in modo sequenziale. Se si eseguono più test dalla finestra **Esplora test** e il pulsante **Esegui test in parallelo** è selezionato, i test vengono eseguiti in parallelo.
+- Live Unit Testing esegue i test di ogni assembly di test in modo sequenziale. Nella finestra **Esplora test** è possibile scegliere un'opzione per eseguire più test in parallelo.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing e soluzioni di grandi dimensioni
 
@@ -166,7 +166,7 @@ Per selezionare i singoli progetti negli unit test, eseguire le operazioni segue
 
 **Esclusione di singoli test dalla finestra dell'editor del codice**
 
-Per includere o escludere singoli metodi di test, è possibile usare la finestra dell'editor del codice. Fare clic con il pulsante destro del mouse sulla firma del primo metodo di test nella finestra dell'editor del codice, quindi scegliere **Live Tests (Test live)** > **Include [the selected method] (Includi [metodo selezionato])**, **Live Tests (Test live)** > **Exclude [the selected method] (Escludi [metodo selezionato])** o **Live Tests (Test live)** > **Exclude All But [the selected method] (Escludi tutto tranne [metodo selezionato])**, dove "metodo selezionato" è il nome del metodo selezionato nella finestra del codice.
+Per includere o escludere singoli metodi di test, è possibile usare la finestra dell'editor del codice. Fare clic con il pulsante destro del mouse sulla firma del primo metodo di test nella finestra dell'editor del codice, quindi scegliere **Live Tests (Test live)**  > **Include [the selected method] (Includi [metodo selezionato])** , **Live Tests (Test live)**  > **Exclude [the selected method] (Escludi [metodo selezionato])** o **Live Tests (Test live)**  > **Exclude All But [the selected method] (Escludi tutto tranne [metodo selezionato])** , dove "metodo selezionato" è il nome del metodo selezionato nella finestra del codice.
 
 **Esclusione dei test a livello di codice**
 

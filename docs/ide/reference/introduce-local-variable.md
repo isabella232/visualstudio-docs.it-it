@@ -1,5 +1,6 @@
 ---
 title: Introdurre una variabile locale
+description: Generare una variabile locale per sostituire un'espressione esistente. Selezionare l'espressione, fare clic con il pulsante destro del mouse e scegliere Azioni rapide e refactoring, quindi selezionare Introduce l'elemento locale per tutte le occorrenze di 'expression'.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -7,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541038"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483689"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introdurre una variabile locale in Visual Studiio
 
@@ -43,7 +44,7 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Fare clic sul pulsante ![cacciavite](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.

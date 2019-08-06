@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785897"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662069"
 ---
 # <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
 
@@ -89,9 +89,10 @@ Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei te
 |**Dimensione pool di connessioni WebTest**|Consente di specificare il numero massimo di connessioni da stabilire tra l'agente del test di carico e il server Web. Si applica solo al modello **Pool di connessioni**.|
 
 ## <a name="change-run-setting-properties"></a>Modificare le proprietà delle impostazioni di esecuzione
- È possibile aggiungere altre impostazioni di esecuzione al test di carico con impostazioni di proprietà differenti, per poter eseguire il test di carico con condizioni diverse. Ad esempio, è possibile aggiungere una nuova impostazione test e usare una frequenza di campionamento diversa o specificare una durata dell'esecuzione più lunga. È possibile usare una sola impostazione di esecuzione test per volta ed è necessario specificare quale impostazione di esecuzione test usare contrassegnandola come attiva. Per un esempio, vedere [Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-### <a name="to-change-run-settings"></a>Per modificare le impostazioni di esecuzione
+È possibile aggiungere altre impostazioni di esecuzione al test di carico con impostazioni di proprietà differenti, per poter eseguire il test di carico con condizioni diverse. Ad esempio, è possibile aggiungere una nuova impostazione test e usare una frequenza di campionamento diversa o specificare una durata dell'esecuzione più lunga. È possibile usare una sola impostazione di esecuzione test per volta ed è necessario specificare quale impostazione di esecuzione test usare contrassegnandola come attiva. Per un esempio, vedere [Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+
+Per modificare le impostazioni di esecuzione test:
 
 1. Aprire un test di carico.
 

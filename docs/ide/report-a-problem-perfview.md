@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: baae89b7bf45a4848c571f75e37c6cc0d203d459
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 6b1f61888fa642ed544c6da7d1cf77c43b52b2d9
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518187"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461546"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>Raccogliere una traccia ETL con PerfView
 
-PerfView è uno strumento che consente di creare file ETL (log di traccia eventi) basato su [Event Tracing for Windows](/windows/desktop/ETW/event-tracing-portal), che può essere utile per la risoluzione di alcuni tipi di problemi con Visual Studio. In alcuni casi quando si segnala un problema, il team del prodotto potrebbe richiedere di eseguire PerfView per raccogliere informazioni aggiuntive.
+PerfView è uno strumento che consente di creare file ETL (log di traccia eventi) basati su [Event Tracing for Windows](/windows/desktop/ETW/event-tracing-portal) che possono essere utili per la risoluzione di alcuni tipi di problemi con Visual Studio. In alcuni casi quando si segnala un problema, il team del prodotto potrebbe richiedere di eseguire PerfView per raccogliere informazioni aggiuntive.
 
 ## <a name="install-perfview"></a>Installare PerfView
 

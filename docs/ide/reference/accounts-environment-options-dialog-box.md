@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792907"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604904"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Account, Ambiente, finestra di dialogo Opzioni
 
@@ -33,7 +33,7 @@ Quando questa opzione è selezionata, il comportamento di Visual Studio cambia s
 
 ## <a name="registered-azure-clouds"></a>Cloud di Azure registrati
 
-Questa sezione illustra le istanze cloud di Azure alle quali si ha accesso tramite uno o più account usati per eseguire l'accesso a Visual Studio. Ad esempio, potrebbe essere possibile accedere a un'istanza privata di Azure nel data center aziendale, oppure a un'istanza di cloud sovrano o governativo di Azure, ad esempio Azure Cina o Azure Governo degli Stati Uniti. L'istanza cloud di Azure globale viene visualizzata per impostazione predefinita nell'elenco e non può essere rimossa.
+Questa sezione illustra le istanze cloud di Azure alle quali si ha accesso tramite uno o più account usati per eseguire l'accesso a Visual Studio. Ad esempio, potrebbe essere possibile accedere a un'istanza privata di Azure nel data center aziendale, oppure a un'istanza di cloud sovrano o per enti pubblici di Azure, ad esempio Azure Cina 21 Vianet o Azure Governo degli Stati Uniti. L'istanza cloud di Azure globale viene visualizzata per impostazione predefinita nell'elenco e non può essere rimossa.
 
 Registrare un cloud di Azure aggiuntivo scegliendo il pulsante **Aggiungi**. Nella finestra di dialogo **Aggiungi nuovo cloud di Azure** sono elencate diverse istanze cloud note di Azure alle quali è possibile connettersi, oppure è possibile immettere l'URL di un endpoint Azure privato.
 
@@ -47,4 +47,3 @@ Dopo aver registrato un cloud di Azure aggiuntivo, è possibile scegliere a qual
 - [Accedere a Visual Studio](../signing-in-to-visual-studio.md)
 - [Usare più account utente](../work-with-multiple-user-accounts.md)
 - [Impostazioni dell'ambiente](../environment-settings.md)
-- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)

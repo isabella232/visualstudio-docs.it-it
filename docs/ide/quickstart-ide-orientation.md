@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 063024605f142cd2d836eb9322274e7b81cdd9f0
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820968"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483758"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -71,7 +71,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
    ![Cercare nei modelli di progetto nella Pagina iniziale di Visual Studio](media/start-page-search-templates.png)
 
-   Visual Studio mette a disposizione diversi tipi di modelli di progetto che consentono di iniziare a scrivere codice rapidamente. Selezionare un modello di progetto C# **App console (.NET Framework)** . In alternativa, gli sviluppatori che usano Visual Basic, C++, Javascript o altri linguaggi possono creare liberamente un progetto in uno di questi linguaggi. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
+   Visual Studio mette a disposizione diversi tipi di modelli di progetto che consentono di iniziare a scrivere codice rapidamente. Scegliere un modello di progetto **App console (.NET Core)** C#. In alternativa, gli sviluppatori che usano Visual Basic, C++, Javascript o altri linguaggi possono creare liberamente un progetto in uno di questi linguaggi. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
 
 1. Nella finestra di dialogo **Nuovo progetto** visualizzata accettare il nome di progetto predefinito e scegliere **OK**.
 
@@ -87,7 +87,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
    ![Finestra di dialogo Nuovo progetto di Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
-1. Se è stato selezionato il linguaggio C#, Visual Basic o F#, selezionare il modello **App console (.NET Framework)** e quindi scegliere **Avanti**. Se è stato selezionato un linguaggio diverso, selezionare qualsiasi modello. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
+1. Se è stato selezionato il linguaggio C#, Visual Basic o F#, selezionare il modello **App console (.NET Core)** e quindi scegliere **Avanti**. Se è stato selezionato un linguaggio diverso, selezionare qualsiasi modello. L'interfaccia utente è simile per tutti i linguaggi di programmazione.
 
 1. Nella pagina **Configura il nuovo progetto** accettare il nome e il percorso predefiniti per il progetto e scegliere **Crea**.
 

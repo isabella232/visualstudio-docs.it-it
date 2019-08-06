@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315241"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533370"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -322,7 +322,7 @@ Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovam
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>Aggiungere uno script di compilazione per il transpile di JSX
 
-Le versioni più recenti di Node.js richiedono uno script di compilazione. Anziché eseguire il transpile di JSX dalla riga di comando come illustrato nella sezione precedente, è possibile eseguire il transpile di JSX durante la compilazione da Visual Studio.
+A partire da Visual Studio 2019, è necessario uno script di compilazione. Invece di eseguire il transpile di JSX dalla riga di comando (come illustrato nella sezione precedente), è possibile eseguirlo durante la compilazione da Visual Studio.
 
 * Aprire *package.json* e aggiungere la sezione seguente dopo la sezione `dependencies`:
 
