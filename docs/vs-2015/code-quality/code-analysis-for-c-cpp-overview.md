@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698012"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740229"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Cenni preliminari sull'analisi del codice per C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Lo strumento di analisi del codice C/C++ fornisce agli sviluppatori informazioni
  È possibile che tutte le archiviazioni del codice sorgente debbano soddisfare determinati criteri, in particolare, assicurarsi che l'analisi sia stata eseguita come parte del processo di compilazione locale più recente. Per altre informazioni su come abilitare i criteri di archiviazione dell'analisi codice, vedere [Creazione e uso di criteri di archiviazione di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Integrazione di Team Build  
- È possibile usare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi del codice come parte del processo di compilazione di [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Per altre informazioni, vedere [Build the application](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) (Compilare l'applicazione).  
+ È possibile usare le funzionalità integrate del sistema di compilazione per eseguire lo strumento di analisi del codice come parte del processo di compilazione di [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Per altre informazioni, vedere [Build the application](/azure/devops/pipelines/index) (Compilare l'applicazione).  
   
 ## <a name="command-line-support"></a>Supporto per la riga di comando  
  Gli sviluppatori possono usare lo strumento di analisi come integrazione completa nell'ambiente di sviluppo, ma anche dalla riga di comando, come illustrato nell'esempio seguente:  

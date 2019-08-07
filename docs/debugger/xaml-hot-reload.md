@@ -1,8 +1,7 @@
 ---
 title: Scrivere ed eseguire il debug di XAML usando il ricaricamento a caldo di XAML
 description: Il ricaricamento a caldo di XAML o la modifica e la continuazione di XAML consente di apportare modifiche al codice XAML durante l'esecuzione delle app
-ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711218"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822150"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio
 
-Il ricaricamento a caldo di XAML di Visual Studio consente di compilare l'interfaccia utente dell'app WPF o UWP consentendo di apportare modifiche al codice XAML durante l'esecuzione dell'app. Questa funzionalità consente di compilare e testare in modo incrementale il codice XAML con il vantaggio del contesto dei dati dell'app in esecuzione, dello stato di autenticazione e di altre complessità reali che è difficile simulare in fase di progettazione.
+Il ricaricamento a caldo di XAML consente di compilare l'interfaccia utente dell'app WPF o UWP consentendo di apportare modifiche al codice XAML durante l'esecuzione dell'app. Il ricaricamento a caldo è disponibile sia in Visual Studio che in Blend per Visual Studio. Questa funzionalità consente di compilare e testare in modo incrementale il codice XAML con il vantaggio del contesto dei dati dell'app in esecuzione, dello stato di autenticazione e di altre complessità reali che è difficile simulare in fase di progettazione.
 
 Il ricaricamento a caldo di XAML è particolarmente utile in questi scenari:
 
@@ -35,7 +34,7 @@ Il ricaricamento a caldo di XAML è particolarmente utile in questi scenari:
 |App di Windows universale (UWP)|Windows 10 e versioni successive, con [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Il ricaricamento a caldo in XAML di Visual Studio è attualmente supportato solo quando si esegue l'applicazione in Visual Studio con il debugger collegato (**F5** o **Avvia debug**). Non è possibile abilitare questa esperienza utilizzando *Connetti a processo*.
+> Il ricaricamento a caldo in XAML di Visual Studio è attualmente supportato solo quando si esegue l'applicazione in Visual Studio o Blend per Visual Studio con il debugger collegato (**F5** o **avviare il debug**). Non è possibile abilitare questa esperienza utilizzando [Connetti a processo](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 ## <a name="known-limitations"></a>Limitazioni note
 
@@ -44,7 +43,7 @@ Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML.
 |Limitazione|WPF|UWP|Note|
 |-|-|-|-|
 |Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportate|Vedere errore: *Verifica evento non riuscita*|
-|Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra o nel file *app. XAML* dell'app.|Non supportato|Supportato|Esempio: aggiunta di ```SolidColorBrush``` un oggetto a un dizionario risorse da utilizzare ```StaticResource```come.</br>Nota: È possibile applicare/utilizzare risorse statiche, convertitori di stile e altri elementi scritti in un dizionario risorse durante l'utilizzo del ricaricamento a caldo di XAML. Solo la creazione della risorsa non è supportata.</br> Modifica della proprietà del ```Source``` dizionario risorse.| 
+|Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra o nel file *app. XAML* dell'app.|Non supportato|Supportato|Esempio: aggiunta di `SolidColorBrush` un oggetto a un dizionario risorse da utilizzare `StaticResource`come.</br>Nota: È possibile applicare/utilizzare risorse statiche, convertitori di stile e altri elementi scritti in un dizionario risorse durante l'utilizzo del ricaricamento a caldo di XAML. Solo la creazione della risorsa non è supportata.</br> Modifica della proprietà del `Source` dizionario risorse.|
 |Aggiunta di nuovi controlli, classi, finestre o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|Nessuna|
 |Gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|Nessuna|
 |Modifica data binding che usa l'estensione di markup {x:Bind}|N/D|Supportato in Visual Studio 2019 e versioni successive|Non supportato in Visual Studio 2017 o versioni precedenti|

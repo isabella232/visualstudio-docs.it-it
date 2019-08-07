@@ -1,5 +1,5 @@
 ---
-title: Iniziare a sviluppare estensioni di Visual Studio | Microsoft Docs
+title: Avvio dello sviluppo di estensioni di Visual Studio | Microsoft Docs
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,47 +11,47 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4a3978ba229dff5f5888a50bf67d263cc2c614e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a22e867fe043437e76ebbf61220dd2adda89c12
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331763"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822321"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Sviluppo di estensioni di Visual Studio
 
-Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario probabilmente alcune delle domande. Ne sono elencati alcune delle cause più comuni di seguito. Se le informazioni che si sta cercando non viene visualizzata, usare i pulsanti di commenti e suggerimenti (**questa pagina è stata utile?** nella parte inferiore della schermata) per richiedere che si desidera.
+Se non è mai stata scritta un'estensione di Visual Studio, è probabile che si verifichino alcune domande. Qui sono elencate alcune delle più comuni. Se non vengono visualizzate le informazioni che si stanno cercando, usare i pulsanti commenti e suggerimenti (**Questa pagina è stata utile?** nella parte inferiore della schermata) per chiedere cosa si vuole.
 
 > [!NOTE]
-> Questo articolo si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [estensione di Visual Studio per Mac](/visualstudio/mac/extending-visual-studio-mac).
+> Questo articolo si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [estensione Visual Studio per Mac](/visualstudio/mac/extending-visual-studio-mac).
 
-## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Il software necessario per lo sviluppo di estensioni di Visual Studio?
+## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>Quale software è necessario per sviluppare le estensioni di Visual Studio?
 
-È necessario installare Visual Studio SDK oltre a Visual Studio per sviluppare estensioni di Visual Studio. È possibile installare Visual Studio SDK come parte del programma di installazione regolare, oppure è possibile installarlo in un secondo momento. Per altre informazioni sull'installazione di Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Per lo sviluppo di estensioni di Visual Studio, è necessario installare Visual Studio SDK, oltre a Visual Studio. È possibile installare Visual Studio SDK come parte dell'installazione normale oppure è possibile installarlo in un secondo momento. Per ulteriori informazioni sull'installazione di Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Quali tipi di operazioni può fare con le estensioni di Visual Studio?
+## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>Quali tipi di operazioni è possibile eseguire con le estensioni di Visual Studio?
 
-Il cielo è il limite se si desidera immaginando i modi in diverse estensioni di Visual Studio. Naturalmente, la maggior parte delle estensioni avere qualcosa a che fare con la scrittura di codice, ma che non deve necessariamente essere il caso. Di seguito sono riportati alcuni esempi dei tipi di estensioni che è possibile compilare:
+Il cielo è il limite quando si tratta di immaginare diverse estensioni di Visual Studio. Naturalmente, la maggior parte delle estensioni ha qualcosa a che fare con la scrittura di codice, ma ciò non è necessario. Di seguito sono riportati alcuni esempi dei tipi di estensioni che è possibile compilare:
 
-- Supporto per lingue che non sono inclusi in Visual Studio, con la colorazione della sintassi, IntelliSense e il supporto del compilatore ed eseguire il debug
+- Supporto per lingue non incluse in Visual Studio, con colorazione della sintassi, IntelliSense e supporto del compilatore e del debug
 
-- Strumenti di produttività che estendono i principali IDE esperienza con altri modelli, le conversazioni di refactoring, nuovo codice o finestre degli strumenti
+- Strumenti di produttività che estendono l'esperienza IDE di base con modelli aggiuntivi, refactoring del codice, nuovi dialoghi o finestre degli strumenti
 
-- Finestre di progettazione specifici del dominio per scenari come il supporto di progettazione o cloud di dati
+- Finestre di progettazione specifiche del dominio per scenari come la progettazione dei dati o il supporto Cloud
 
-Per esempi di estensioni, consultare il [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Molte estensioni sono open source e il Marketplace include i collegamenti per il repository di GitHub.
+Per esempi di estensioni, vedere la [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Molte estensioni sono open source e il Marketplace include collegamenti al repository GitHub.
 
-## <a name="which-visual-studio-features-can-i-extend"></a>Le funzionalità di Visual Studio è possibile estendere?
+## <a name="which-visual-studio-features-can-i-extend"></a>Quali funzionalità di Visual Studio è possibile estendere?
 
-In teoria, è possibile estendere solo una parte di Visual Studio: menu, barre degli strumenti, comandi, windows, soluzioni, progetti, editor e così via.
+In teoria, è possibile estendere praticamente qualsiasi parte di Visual Studio: menu, barre degli strumenti, comandi, finestre, soluzioni, progetti, editor e così via.
 
-In pratica, si è constatato che le funzionalità la maggior parte degli utenti che vogliono estendere sono i comandi, menu e barre degli strumenti, windows, IntelliSense e progetti. Ecco i collegamenti alle sezioni pertinenti:
+In pratica, è stato rilevato che le funzionalità che la maggior parte degli utenti vogliono estendere sono i comandi, i menu e le barre degli strumenti, Windows, IntelliSense e i progetti. Ecco i collegamenti alle sezioni pertinenti:
 
-- [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md): aggiungere i propri elementi per Visual Studio menu e barre degli strumenti. È possibile usare tali per avviare le proprie applicazioni di supporto esterno o nuove funzionalità di Visual Studio. È inoltre possibile fornire collegamenti personalizzati per le voci di menu.
+- [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md): aggiungere elementi personalizzati ai menu e alle barre degli strumenti di Visual Studio. È possibile usarli per avviare nuove funzionalità di Visual Studio o le proprie applicazioni Helper esterne. È anche possibile specificare collegamenti personalizzati per le voci di menu.
 
-- [Estensione e personalizzazione di Windows lo strumento](../extensibility/extending-and-customizing-tool-windows.md): estendere finestre degli strumenti esistenti o creare finestre degli strumenti. Ad esempio, è possibile aggiungere nuove proprietà per il **proprietà**, oppure è possibile creare una nuova finestra degli strumenti per aggiungere ulteriori funzionalità.
+- [Estensione e personalizzazione delle finestre degli](../extensibility/extending-and-customizing-tool-windows.md)strumenti: estendere le finestre degli strumenti esistenti o creare le proprie finestre degli strumenti. Ad esempio, è possibile aggiungere nuove proprietà alle **Proprietà**oppure è possibile creare una nuova finestra degli strumenti per aggiungere ulteriori funzionalità.
 
-- [Editor e le estensioni del servizio di linguaggio](../extensibility/editor-and-language-service-extensions.md): aggiungere le proprie personalizzazioni gli elementi IntelliSense forniti per le lingue di Visual Studio o creare il supporto per nuovi linguaggi di programmazione. È possibile creare nuovi completamenti di istruzione, suggerimenti e le descrizioni comandi informazioni rapide di nuovo. Con le lampadine, è possibile aggiungere i suggerimenti di refactoring e correzioni del codice per supportare nuovi linguaggi di programmazione.
+- [Editor e Language Service Extensions](../extensibility/editor-and-language-service-extensions.md): aggiungere personalizzazioni personalizzate fornite da IntelliSense per i linguaggi di Visual Studio o creare supporto per i nuovi linguaggi di programmazione. È possibile creare nuovi completamenti di istruzioni, suggerimenti e nuove descrizioni comandi di informazioni rapide. Con le lampadine è possibile aggiungere suggerimenti per il refactoring e correzioni del codice per supportare i nuovi linguaggi di programmazione.
 
 - [Estensione dei progetti](../extensibility/extending-projects.md)
 
@@ -61,37 +61,37 @@ In pratica, si è constatato che le funzionalità la maggior parte degli utenti 
 
 - [Estensione di altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 
-- [Visual Studio Isolated Shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
+- [Visual Studio Isolated Shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="BKMK_ProjectTemplate"></a> Quali modelli di progetto forniti da VSSDK?
- I due tipi principali di estensioni sono VSPackage ed estensioni MEF. In genere, le estensioni VSPackage vengono utilizzate per le estensioni che utilizzano o estendono i comandi, finestre degli strumenti e progetti. Le estensioni MEF vengono utilizzate per estendere o personalizzare l'editor di Visual Studio.
+## <a name="BKMK_ProjectTemplate"></a>Quali modelli di progetto sono forniti da VSSDK?
+ I due tipi principali di estensioni sono VSPackage ed estensioni MEF. In generale, le estensioni VSPackage vengono usate per le estensioni che usano o estendono i comandi, le finestre degli strumenti e i progetti. Le estensioni MEF vengono usate per estendere o personalizzare l'editor di Visual Studio.
 
- Le estensioni di Visual c# e Visual Basic, VSSDK fornisce un modello di progetto VSIX vuoto che è possibile utilizzare insieme i nuovi modelli di elementi che creano comandi di menu, finestre degli strumenti e le estensioni dell'editor. È anche possibile usare questo modello per modelli di progetto di pacchetto, frammenti di codice e altri elementi per la distribuzione ad altri utenti.
+ Per le C# estensioni Visual e Visual Basic, VSSDK fornisce un modello di progetto VSIX vuoto che è possibile usare insieme ai nuovi modelli di elemento che creano comandi di menu, finestre degli strumenti ed estensioni dell'editor. È anche possibile usare questo modello per creare pacchetti di modelli di progetto, frammenti di codice e altri elementi da distribuire ad altri utenti.
 
- Per C++, la creazione guidata pacchetto VSPackage fornisce il codice per aggiungere i comandi di menu, finestre degli strumenti ed editor personalizzati.
+ Per C++, la procedura guidata VSPackage fornisce il codice per aggiungere i comandi di menu, le finestre degli strumenti e gli editor personalizzati.
 
- Il modello della Shell isolata viene utilizzato per creare un pacchetto di un'estensione in una versione di Visual Studio shell che è possibile personalizzare e distribuire il proprio. Gli argomenti seguenti illustrano come iniziare a usare ogni tipo di estensione:
+ Il modello di shell isolata viene usato per creare il pacchetto di un'estensione in una versione della shell di Visual Studio che è possibile personalizzare e distribuire in modo autonomo. Negli argomenti seguenti viene illustrato come iniziare a usare ogni tipo di estensione:
 
 - Comandi di menu: [Creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 - Finestre degli strumenti: [Creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md)
 
-- Estensioni dell'editor: [Creazione di un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Estensioni Editor: [Creazione di un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
 - Pacchetti VSPackage di base: [Creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
 - Modello di progetto VSIX: [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
-## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Come si ottiene l'estensione per l'aspetto di Visual Studio?
- Ottenere suggerimenti straordinari per progettazione dell'interfaccia utente per l'estensione nella [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
+## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Ricerca per categorie ottenere un'estensione simile a Visual Studio?
+ Suggerimenti utili per la progettazione dell'interfaccia utente per l'estensione nelle [linee guida sull'esperienza utente di Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
 
-## <a name="where-can-i-find-examples-of-vssdk-code"></a>Dove trovare esempi di VSSDK codice?
- Ogni collegamento indicato nella sezione precedente sono incluse le procedure dettagliate che illustrano come implementare le funzionalità specifiche. È anche possibile trovare open source in GitHub all'indirizzo esempi di VSSDK [esempi di Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+## <a name="where-can-i-find-examples-of-vssdk-code"></a>Dove è possibile trovare esempi di codice VSSDK?
+ Ognuno dei collegamenti elencati nella sezione precedente include procedure dettagliate in cui viene illustrato come implementare funzionalità specifiche. È anche possibile trovare esempi Open Source di VSSDK su GitHub in [Visual Studio Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="how-can-i-distribute-my-extension"></a>Come è possibile distribuire l'estensione?
- È possibile installare l'estensione in un altro computer o inviarlo ad altri utenti come file con estensione VSIX, che si installa facendovi doppio clic. È possibile trovare ulteriori informazioni sui pacchetti VSIX [spedizione di estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
+## <a name="how-can-i-distribute-my-extension"></a>Come si distribuisce l'estensione?
+ È possibile installare l'estensione in un altro computer o inviarla agli amici come file con estensione VSIX, che viene installato facendo doppio clic su di esso. Per ulteriori informazioni sui pacchetti VSIX, vedere la pagina relativa alle [estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- È anche possibile pubblicare l'estensione in Visual Studio Marketplace, che rende visibile a un numero elevato di clienti di Visual Studio. Per un esempio di creazione del pacchetto di un'estensione nel Marketplace, vedere [procedura dettagliata: Pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Per altre informazioni su cosa occorre fare per pubblicare nel Marketplace, vedere [prodotti ed estensioni per Visual Studio](/azure/devops/extend/overview?view=vsts).
+ È anche possibile pubblicare l'estensione nella Visual Studio Marketplace, rendendola visibile a un numero elevato di clienti di Visual Studio. Per un esempio di creazione di pacchetti di un'estensione per il [Marketplace, vedere Procedura dettagliata: Pubblicazione di un'estensione](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)di Visual Studio. Per altre informazioni su ciò che è necessario fare per pubblicare nel Marketplace, vedere [prodotti ed estensioni per Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Vedere anche
 
