@@ -3,24 +3,22 @@ title: Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio | Microsof
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio CAST Highlight disponibile nelle sottoscrizioni di Visual Studio selezionate
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823674"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681197"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio
-
 Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software durante la migrazione al cloud. Con CAST Highlight, i sottoscrittori di Visual Studio Enterprise possono analizzare rapidamente il codice sorgente delle applicazioni in uso per identificarne l'idoneità al cloud per la migrazione ad Azure e monitorare lo stato di avanzamento delle app durante e dopo una migrazione.
 
 I sottoscrittori di Visual Studio Enterprise possono ottenere una sottoscrizione gratuita di un mese completa di tutte le funzionalità a CAST Highlight per un massimo di cinque app per sottoscrittore.
 
 ## <a name="activation-steps"></a>Procedura di attivazione
-
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro del vantaggio CAST Highlight nella categoria "Strumenti" e fare clic su **Ottieni il codice**.
@@ -39,9 +37,6 @@ I sottoscrittori di Visual Studio Enterprise possono ottenere una sottoscrizione
    > È previsto un limite di dieci attivazioni del vantaggio CAST Highlight per organizzazione.  Se le dieci attivazioni dell'organizzazione sono già state utilizzate, non sarà possibile attivare il vantaggio CAST Highlight e si riceverà un messaggio di posta elettronica con ulteriori informazioni.
 
 0. Dopo aver inviato le informazioni, verrà visualizzata una pagina a conferma che la richiesta è stata ricevuta.
-
-    > [!div class="mx-imgBorder"]
-    > ![Pagina di ringraziamento di CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
 0. Il team CAST valuterà la richiesta e contatterà l'utente per completare la creazione dell'account.
 
@@ -78,7 +73,6 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
    > Assicurarsi di fare clic sul collegamento per l'attivazione nel messaggio di posta elettronica ricevuto.  In caso contrario, non sarà possibile accedere alla sottoscrizione di CAST Highlight. Se questo messaggio non compare nella posta in arrivo, assicurarsi di controllare le cartella della posta indesiderata.
 
 ## <a name="eligibility"></a>Idoneità
-
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Valutazione di 5 app per 30 giorni|  No.  Disponibile solo per i nuovi sottoscrittori          |
@@ -104,7 +98,6 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-
 Se non è stato ancora attivato il vantaggio di Azure offerto con la sottoscrizione, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul riquadro di Azure nella categoria Strumenti per configurare la sottoscrizione di Azure e riscattare i crediti Azure.
 
 Non dimenticare di seguire la demo, il manuale dell'utente e le esercitazioni video indicati nel messaggio di posta elettronica ricevuto.

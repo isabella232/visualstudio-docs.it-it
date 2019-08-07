@@ -1,17 +1,17 @@
 ---
 title: Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: Altre informazioni sul vantaggio LinkedIn Learning incluso come parte della sottoscrizione LinkedIn Premium inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 9715c2fb5dd8219e05a6728c7d242aef24e86081
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824804"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787754"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
 
@@ -32,46 +32,26 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 
 ### <a name="create-a-linkedin-account"></a>Creare un account di LinkedIn
 4. Se non si ha un account LinkedIn, fare clic su **Iscriviti ora**.
-   > [!div class="mx-imgBorder"]
-   > ![Iscriviti ora di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-join-now.png)
 
 5. Immettere le informazioni personali, scegliere un nome utente e una password e fare clic su **Iscriviti ora**.
-   > [!div class="mx-imgBorder"]
-   > ![Creazione dell'account LinkedIn Learning](_img/vs-linkedin/vs-linkedin-create-account.png)
 
 6. Specificare il paese e il codice di avviamento postale e quindi fare clic su **Avanti**.
-   > [!div class="mx-imgBorder"]
-   > ![Impostazione della località LinkedIn Learning](_img/vs-linkedin/vs-linkedin-set-location.png)
 
 7. Indicare quindi alcune informazioni personali per il profilo.  Indicare se si è uno studente o una studentessa e specificare la posizione, la società e il settore più recenti.
-   > [!div class="mx-imgBorder"]
-   > ![Ruolo LinkedIn Learning](_img/vs-linkedin/vs-linkedin-role.png)
 
 8. In questo passaggio si ha la possibilità di identificare le proprie aree di interesse.  Per accelerare il processo di creazione dell'account, fare clic su **Non so ancora.  Accetto suggerimenti!**  È possibile identificare le aree di interesse in un secondo momento.
-   > [!div class="mx-imgBorder"]
-   > ![Interessi LinkedIn Learning](_img/vs-linkedin/vs-linkedin-interests.png)
 
 9. Quando è stato immesso l'indirizzo di posta elettronica, è stato ricevuto un messaggio contenente un codice di conferma.  Il mittente del messaggio è "Messaggi LinkedIn".  Se il messaggio non è disponibile nella posta in arrivo, controllare le cartelle della posta indesiderata.  Immettere il codice del messaggio e fare clic su **Verifica**.
-   > [!div class="mx-imgBorder"]
-   > ![Verifica LinkedIn Learning](_img/vs-linkedin/vs-linkedin-verify.png)
 
 10. Se si vogliono importare i contatti dall'account di posta elettronica immesso in precedenza, è possibile farlo ora.  In caso contrario, fare clic su **Ignora**. Se si sceglie di ignorare questo passaggio, verrà chiesto di confermare la scelta.  Fare clic su **Sì**.
-   > [!div class="mx-imgBorder"]
-   > ![Contatti LinkedIn Learning](_img/vs-linkedin/vs-linkedin-contacts.png)
 
 11. Gli avvisi di offerte di lavoro consentono di ricevere notifiche relative a offerte di lavoro della propria area corrispondenti alle proprie caratteristiche professionali.  È possibile impostare un avviso ora o saltare questo passaggio e continuare la creazione dell'account.
-   > [!div class="mx-imgBorder"]
-   > ![Avvisi di offerte di lavoro di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-job-alerts.png)
 
 12. In base alle preferenze e a le informazioni personali fornite fino a questo punto, verrà visualizzata una selezione di collegamenti consigliati per iniziare a creare la propria rete.  È possibile scegliere di aggiungere collegamenti o ignorare questo passaggio.
 
 13. Per aggiungere una foto al profilo, fare clic su **Carica foto**.  In alternativa, è possibile ignorare questo passaggio.  È sempre possibile aggiungere una foto in un secondo momento.
-    > [!div class="mx-imgBorder"]
-    > ![Carica foto in LinkedIn Learning](_img/vs-linkedin/vs-linkedin-photo.png)
 
 14. È possibile scaricare l'app LinkedIn nel telefono per accedere alla propria rete ovunque ci si trovi.  A tale scopo, è possibile inviare un collegamento al proprio telefono o scaricare direttamente l'app da App Store o da Google Play Store.  È anche possibile fare clic su **Avanti** per ignorare questo passaggio e scaricare l'app in seguito.
-    > [!div class="mx-imgBorder"]
-    > ![Carica foto in LinkedIn Learning](_img/vs-linkedin/vs-linkedin-app.png)
 
 ### <a name="activate-your-offer"></a>Attivare l'offerta
 15. Ora che è stato effettuato l'accesso all'account LinkedIn o si è creato un nuovo account, è possibile attivare la sottoscrizione Premium e iniziare a usufruire della sottoscrizione di LinkedIn Learning.  Fare clic su **Attiva la tua offerta**.

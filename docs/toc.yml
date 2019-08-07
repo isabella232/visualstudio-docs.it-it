@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Aggiungere riferimenti usando NuGet o SDK di estensione
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Risolvere i problemi relativi ai riferimenti interrotti

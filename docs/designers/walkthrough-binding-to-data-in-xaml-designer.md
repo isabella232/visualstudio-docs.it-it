@@ -10,18 +10,16 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892847"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821552"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
-La finestra di progettazione XAML consente di impostare le proprietà di associazione dati tramite la tavola da disegno e la finestra Proprietà. Questa procedura dettagliata illustra come associare dati a un controllo. In particolare, la procedura dettagliata illustra come creare una classe di carrello semplice con una classe [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominata `ItemCount` e associare la proprietà `ItemCount` alla proprietà **Text** di un controllo [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+La finestra di progettazione XAML consente di impostare le proprietà di associazione dati tramite la tavola da disegno e la finestra Proprietà. Questa procedura dettagliata illustra come associare dati a un controllo. In particolare, la procedura dettagliata illustra come creare una classe di carrello semplice con una classe [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) denominata `ItemCount` e associare la proprietà `ItemCount` alla proprietà **Text** di un controllo [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Per creare una classe da utilizzare come origine dati
 
@@ -65,7 +63,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
    End Class
    ```
 
-   Questo codice imposta un valore 0 come numero predefinito dell'elemento usando l'oggetto [PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata).
+   Questo codice imposta un valore 0 come numero predefinito dell'elemento usando l'oggetto [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata).
 
 1. Scegliere **Compila** > **Compila soluzione** dal menu **File**.
 
@@ -73,7 +71,7 @@ La finestra di progettazione XAML consente di impostare le proprietà di associa
 
 1. In Esplora soluzioni aprire il menu di scelta rapida per **MainWindow.xaml** e scegliere **Progettazione visualizzazioni**.
 
-1. Nella casella degli strumenti scegliere un controllo [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) e aggiungerlo al modulo.
+1. Nella casella degli strumenti scegliere un controllo [Grid](xref:Windows.UI.Xaml.Controls.Grid) e aggiungerlo al modulo.
 
 1. Dopo aver selezionato il controllo `Grid` fare clic sul pulsante **Nuovo** accanto alla proprietà **DataContext** nella finestra Proprietà.
 
