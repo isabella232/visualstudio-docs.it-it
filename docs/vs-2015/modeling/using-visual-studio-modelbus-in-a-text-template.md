@@ -9,23 +9,23 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 672efc49d712d9cd800bf53a2ca8487c96d502b6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444654"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871687"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilizzo di ModelBus di Visual Studio in un modello di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se si scrivono modelli di testo che leggono un modello contenente [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fa riferimento a ModelBus, è possibile risolvere i riferimenti per accedere ai modelli di destinazione. In tal caso, è necessario adattare i modelli di testo e i riferimento linguaggi specifici di dominio (DSL):
+Se si scrivono modelli di testo che leggono un modello che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] contiene riferimenti ModelBus, potrebbe essere necessario risolvere i riferimenti per accedere ai modelli di destinazione. In tal caso, è necessario adattare i modelli di testo e i riferimento linguaggi specifici di dominio (DSL):
 
 - Il linguaggio DSL di destinazione dei riferimenti è necessario un adattatore ModelBus configurato per l'accesso dai modelli di testo. Se inoltre si accede il linguaggio DSL da altro codice, l'adapter la riconfigurazione è necessario oltre all'adattatore ModelBus standard.
 
-     Il gestore di adattatori deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager> e deve avere l'attributo `[HostSpecific(HostName)]`.
+     Il gestore dell'adapter deve ereditare da [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)) e deve avere `[HostSpecific(HostName)]`l'attributo.
 
-- Il modello deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Il modello deve ereditare da [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 > [!NOTE]
 > Se si desidera leggere i modelli di linguaggio specifico di dominio che non contengono riferimenti ModelBus, è possibile usare processori di direttive che vengono generati nei progetti DSL. Per altre informazioni, vedere [l'accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).
@@ -33,13 +33,13 @@ Se si scrivono modelli di testo che leggono un modello contenente [!INCLUDE[vspr
  Per altre informazioni sui modelli di testo, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 ## <a name="creating-a-model-bus-adapter-for-access-from-text-templates"></a>Creazione di un adattatore ModelBus per l'accesso dai modelli di testo
- Per risolvere un riferimento ModelBus in un modello di testo, il linguaggio DSL di destinazione deve avere una scheda compatibile. Eseguire i modelli di testo in un AppDomain separato dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gli editor di documenti e pertanto l'adapter deve caricare il modello anziché accedervi tramite DTE.
+ Per risolvere un riferimento ModelBus in un modello di testo, il linguaggio DSL di destinazione deve avere una scheda compatibile. I modelli di testo vengono eseguiti in un AppDomain [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] separato dagli editor del documento e pertanto l'adapter deve caricare il modello anziché accedervi tramite DTE.
 
 #### <a name="to-create-a-modelbus-adapter-that-is-compatible-with-text-templates"></a>Per creare un adattatore ModelBus è compatibile con i modelli di testo
 
 1. Se la soluzione DSL di destinazione non dispone di un **ModelBusAdapter** del progetto, crearne uno tramite la procedura guidata estensione Modelbus:
 
-    1. Scaricare e installare il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione ModelBus, se non è stato già fatto. Per altre informazioni, vedere [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Scaricare e installare l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione ModelBus, se non è già stato fatto. Per altre informazioni, vedere [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 
     2. Aprire il file di definizione del linguaggio specifico di dominio. Fare doppio clic nell'area di progettazione e quindi fare clic su **Abilita Modelbus**.
 
@@ -81,7 +81,7 @@ Se si scrivono modelli di testo che leggono un modello contenente [!INCLUDE[vspr
 
 4. Nel file AdapterManager.tt:
 
-    - Modificare la dichiarazione di adaptermanagerbase e impostarla in modo che erediti da <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+    - Modificare la dichiarazione di AdapterManagerBase in modo che erediti da [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
@@ -102,7 +102,7 @@ Se si scrivono modelli di testo che leggono un modello contenente [!INCLUDE[vspr
 ## <a name="writing-a-text-template-that-can-resolve-modelbus-references"></a>Scrittura di un modello di testo che può risolvere i riferimenti ModelBus
  In genere, si inizia con un modello che legge e genera i file da un linguaggio DSL di "origine". Questo modello Usa la direttiva generata nel progetto DSL di origine per leggere i file di modello di origine nel modo descritto nella [l'accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md). Tuttavia, il linguaggio DSL di origine contiene un riferimento ModelBus a un DSL "target". Pertanto si desidera abilitare il codice del modello risolvere i riferimenti e accedere al linguaggio DSL di destinazione. È pertanto necessario adattare il modello seguendo questa procedura:
 
-- Modificare la classe di base del modello da <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
+- Modificare la classe di base del modello in [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 - Includere `hostspecific="true"` nella direttiva del modello.
 
@@ -152,7 +152,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
  Quando viene eseguito questo modello di testo, il `SourceDsl` direttiva carica il file `Sample.source`. Il modello può accedere agli elementi del modello, a partire da `this.ModelRoot`. Il codice può usare le classi di dominio e le proprietà di tale linguaggio DSL.
 
- Inoltre, il modello può risolvere i riferimenti ModelBus. In cui i riferimenti puntano al modello di destinazione, le direttive dell'assembly lasciare che il codice usare le classi di dominio e le proprietà del DSL del modello.
+ Inoltre, il modello può risolvere i riferimenti ModelBus. Quando i riferimenti puntano al modello di destinazione, le direttive di assembly consentono al codice di usare le classi e le proprietà del dominio DSL del modello.
 
 - Se non si utilizza una direttiva che viene generata da un progetto DSL, è necessario anche includere quanto segue.
 
@@ -163,7 +163,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 - Usare `this.ModelBus` per ottenere l'accesso a ModelBus.
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Procedura dettagliata: Test di un modello di testo che utilizza ModelBus
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Procedura dettagliata: Test di un modello di testo che usa ModelBus
  In questa procedura dettagliata seguire questi passaggi:
 
 1. Creare due linguaggi specifici di dominio. Un linguaggio DSL, il *Consumer*, ha una `ModelBusReference` proprietà che possono fare riferimento all'altro linguaggio specifico di dominio, il *Provider*.
@@ -184,7 +184,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. Nel diagramma di definizione DSL, fare doppio clic su una parte vuota del diagramma che non è presente nella parte superiore e quindi fare clic su **Abilita Modelbus**.
 
-   - Se non viene visualizzata **Abilita Modelbus**, è necessario scaricare e installare l'estensione ModelBus VMSDK. Cercala su sito VMSDK: [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
+   - Se non viene visualizzata **Abilita Modelbus**, è necessario scaricare e installare l'estensione ModelBus VMSDK. Trovarlo nel sito di VMSDK: [SDK di visualizzazione e modellazione](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 3. Nel **Abilita Modelbus** finestra di dialogo **Esponi questo DSL a ModelBus**, quindi fare clic su **OK**.
 
@@ -214,11 +214,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. Nel `T4ModelBusAdapter` del progetto, aggiungere un riferimento a: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. `T4ModelBusAdapter` Nel progetto aggiungere un riferimento a: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. Aprire T4ModelBusAdapter\AdapterManager.tt:
 
-   1. Modificare la classe di base di AdapterManagerBase e impostarla su <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>. Questa parte del file è ora simile alla seguente.
+   1. Modificare la classe di base di AdapterManagerBase in [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)). Questa parte del file è ora simile alla seguente.
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -288,7 +288,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="create-a-modelbus-reference-to-another-file-in-the-solution"></a>Creare un riferimento ModelBus a un altro file nella soluzione
 
-1. Nella soluzione MBConsumer, premere CTRL+F5. Un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene aperto nel **MBConsumer\Debugging** progetto.
+1. Nella soluzione MBConsumer, premere CTRL+F5. Nel progetto **MBConsumer\Debugging** verrà [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aperta un'istanza sperimentale di.
 
 2. Aggiungere una copia di Sample.provide per il **MBConsumer\Debugging** progetto. Ciò è necessario perché un riferimento ModelBus deve fare riferimento a un file nella stessa soluzione.
 
@@ -304,13 +304,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 5. Salvare il file.
 
-    (Non chiudere ancora l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].)
+    Non chiudere ancora l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
    È stato creato un modello che contiene un riferimento ModelBus a un elemento in un altro modello.
 
 #### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>Risolvere un riferimento ModelBus in un modello di testo
 
-1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aprire un file di modello di testo di esempio. Impostarne il contenuto come indicato di seguito.
+1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire un file di modello di testo di esempio. Impostarne il contenuto come indicato di seguito.
 
     ```
     <#@ template debug="true" hostspecific="true" language="C#"
@@ -366,7 +366,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>Risolvere un riferimento ModelBus in un gestore movimenti
 
-1. Chiudere l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se è in esecuzione.
+1. Chiudere l'istanza sperimentale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]di, se è in esecuzione.
 
 2. Aggiungere un file denominato MBConsumer\Dsl\Custom.cs e impostarne il contenuto al seguente.
 
@@ -403,11 +403,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 3. Premere CTRL+F5.
 
-4. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], aprire `Debugging\Sample.consume`.
+4. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire. `Debugging\Sample.consume`
 
 5. Fare doppio clic su una forma.
 
      Se è stato impostato il MBR in quell'elemento, viene aperto il modello di cui viene fatto riferimento e si seleziona l'elemento cui si fa riferimento.
 
 ## <a name="see-also"></a>Vedere anche
- [L'integrazione di modelli tramite Modelbus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md) [generazione del codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)
+ [Integrazione di modelli tramite ModelBus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md) [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)

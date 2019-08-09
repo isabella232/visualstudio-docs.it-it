@@ -1,5 +1,5 @@
 ---
-title: Generare codice dai diagrammi classi UML | Microsoft Docs
+title: Generare codice da diagrammi classi UML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -16,225 +16,223 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa073c794e790974f7f749b9d6f2302e9ff0a230
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 23cefa3d072c2e582237152bff77a2271046053d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692508"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871823"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generare codice da diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usare il **genera codice** comando. Per impostazione predefinita, il comando genera un tipo C# per ogni tipo UML selezionato. Tale comportamento può essere modificato o esteso modificando o copiando i modelli di testo che generano il codice. È possibile specificare un comportamento differente per i tipi contenuti nei vari pacchetti del modello.  
+Per generare codice C# Visual .NET da diagrammi classi UML in Visual Studio, usare il comando **genera codice** . Per impostazione predefinita, il comando genera un tipo C# per ogni tipo UML selezionato. Tale comportamento può essere modificato o esteso modificando o copiando i modelli di testo che generano il codice. È possibile specificare un comportamento differente per i tipi contenuti nei vari pacchetti del modello.
 
- Il **genera codice** comando è particolarmente indicato per la generazione di codice dalla selezione dell'utente di elementi e per la generazione di un file per ogni classe UML o un altro elemento. Ad esempio, nella schermata seguente sono illustrati due file C# generati da due classi UML.  
+ Il comando **genera codice** è particolarmente indicato per generare codice dalla selezione degli elementi dell'utente e per generare un file per ogni classe UML o per un altro elemento. Ad esempio, nella schermata seguente sono illustrati due file C# generati da due classi UML.
 
- In alternativa, se si desidera generare il codice in cui i file generati non è una relazione 1:1 con gli elementi UML, è possibile scrivere modelli di testo che vengono richiamati con il **Trasforma tutti i modelli** comando. Per altre informazioni su tale metodo, vedere [generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md).  
+ In alternativa, se si desidera generare codice in cui i file generati non hanno una relazione 1:1 con gli elementi UML, è possibile scrivere modelli di testo che vengono richiamati con il comando **trasforma tutti i modelli** . Per altre informazioni su questo metodo, vedere [generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md).
 
- ![Diagramma ed C generato della classe UML&#35; file di classe. ](../modeling/media/oob-gencode1.png "oob_GenCode1")  
+ ![Diagramma classi UML e file di&#35; classe C generati.](../modeling/media/oob-gencode1.png "oob_GenCode1")
 
- Per altre informazioni sui diagrammi classi UML in Visual Studio, vedere gli argomenti seguenti:  
+ Per altre informazioni sui diagrammi classi UML in Visual Studio, vedere gli argomenti seguenti:
 
-- [Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)  
+- [Diagrammi delle classi UML: riferimenti](../modeling/uml-class-diagrams-reference.md)
 
-- [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagrammi delle classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)
 
-  Per le versioni di Visual Studio che supportano i diagrammi classi UML, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Per individuare le versioni di Visual Studio che supportano i diagrammi classi UML, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="using-the-generate-code-command"></a>Utilizzo del comando Genera codice  
- La procedura seguente descrive il comportamento predefinito del **genera codice** comando:  
+## <a name="using-the-generate-code-command"></a>Utilizzo del comando Genera codice
+ Nella procedura seguente viene descritto il comportamento predefinito del comando **genera codice** :
 
-#### <a name="to-generate-a-separate-file-for-each-element"></a>Per generare un file separato per ogni elemento  
+#### <a name="to-generate-a-separate-file-for-each-element"></a>Per generare un file separato per ogni elemento
 
-1. Creare un modello UML contenente classi. È possibile applicare stereotipi agli elementi del modello.  
+1. Creare un modello UML contenente classi. È possibile applicare stereotipi agli elementi del modello.
 
-    Per altre informazioni, vedere [trasformazioni della generazione di codice predefinito](#default).  
+    Per altre informazioni, vedere trasformazioni di [generazione del codice predefinite](#default).
 
-2. In un diagramma classi o nella **Esplora modelli UML**, selezionare gli elementi da cui si vuole generare il codice. È possibile effettuare una delle seguenti selezioni:  
+2. In un diagramma classi o in **Esplora modelli UML**selezionare gli elementi da cui si desidera generare il codice. È possibile effettuare una delle seguenti selezioni:
 
-   - Un set specifico di elementi.  
+   - Un set specifico di elementi.
 
-   - Un pacchetto o il modello, dal cui contenuto generare il codice.  
+   - Un pacchetto o il modello, dal cui contenuto generare il codice.
 
-   - Il diagramma, per selezionarne tutti gli elementi.  
+   - Il diagramma, per selezionarne tutti gli elementi.
 
-3. Aprire il menu di scelta rapida per un elemento selezionato e quindi scegliere **genera codice**.  
+3. Aprire il menu di scelta rapida per un elemento selezionato, quindi scegliere **genera codice**.
 
-    La prima volta che usa **genera codice** in un particolare modello, viene visualizzata una finestra di dialogo. che consente di modificare i parametri di generazione del codice del modello.  
+    La prima volta che si utilizza **genera codice** in un particolare modello, viene visualizzata una finestra di dialogo. che consente di modificare i parametri di generazione del codice del modello.
 
-    Scegli **OK** a meno che non si sa che si desidera modificare questi parametri.  
+    Scegliere **OK** , a meno che non si sia certi di voler modificare questi parametri.
 
-    Per tornare alla finestra di dialogo in un secondo momento, aprire **Esplora modelli UML**. Apri menu di scelta rapida del progetto di modellazione e quindi scegliere **Configura generazione codice**. Per altre informazioni, vedere [personalizzazione del comando genera codice](#custom).  
+    Per tornare a questa finestra di dialogo in un secondo momento, aprire **Esplora modelli UML**. Aprire il menu di scelta rapida del progetto di modellazione, quindi scegliere **Configura generazione codice**. Per ulteriori informazioni, vedere [personalizzazione del comando genera codice](#custom).
 
-   Vengono generati i file contenenti il codice C#. Nel caso predefinito, viene generato per ogni tipo un file in un progetto Libreria di classi C#. È tuttavia possibile personalizzare tale comportamento. Per altre informazioni, vedere [personalizzazione del comando genera codice](#custom).  
+   Vengono generati i file contenenti il codice C#. Nel caso predefinito, viene generato per ogni tipo un file in un progetto Libreria di classi C#. È tuttavia possibile personalizzare tale comportamento. Per ulteriori informazioni, vedere [personalizzazione del comando genera codice](#custom).
 
-   Al modello vengono applicati alcuni test di convalida per verificare che possa essere convertito in C#. Se i test hanno esito negativo, viene visualizzato un messaggio di errore e la generazione di codice non viene eseguita. Se si è creato un comando di menu di convalida, il codice non viene generato per gli elementi per i quali il comando di convalida ha esito negativo. Per altre informazioni, vedere [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md).  
+   Al modello vengono applicati alcuni test di convalida per verificare che possa essere convertito in C#. Se i test hanno esito negativo, viene visualizzato un messaggio di errore e la generazione di codice non viene eseguita. Se si è creato un comando di menu di convalida, il codice non viene generato per gli elementi per i quali il comando di convalida ha esito negativo. Per altre informazioni, vedere [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md).
 
-## <a name="default"></a> Trasformazioni della generazione di codice predefinita  
- In questa sezione riepiloga i risultati prodotti dal **genera codice** non è stato personalizzato il comando. Per altre informazioni, vedere [personalizzazione del comando genera codice](#custom).  
+## <a name="default"></a>Trasformazioni di generazione del codice predefinite
+ In questa sezione vengono riepilogati i risultati prodotti dal comando **genera codice** , a meno che il comando non venga personalizzato. Per ulteriori informazioni, vedere [personalizzazione del comando genera codice](#custom).
 
-- Per ogni tipo selezionato nel modello UML viene generato un tipo C#. Ogni tipo viene inserito in un file di codice separato nella **GeneratedCode** cartella.  
+- Per ogni tipo selezionato nel modello UML viene generato un tipo C#. Ogni tipo viene inserito in un file di codice separato sotto la cartella **GeneratedCode** .
 
-- Se il tipo UML è contenuto in un pacchetto, il tipo C# generato viene inserito in uno spazio dei nomi e il file viene generato in una cartella con lo stesso nome dello spazio dei nomi.  
+- Se il tipo UML è contenuto in un pacchetto, il tipo C# generato viene inserito in uno spazio dei nomi e il file viene generato in una cartella con lo stesso nome dello spazio dei nomi.
 
-- Per ogni elemento `Attribute` di una classe UML viene generata una proprietà C#.  
+- Per ogni elemento `Attribute` di una classe UML viene generata una proprietà C#.
 
-- Per ogni elemento `Operation` di un tipo UML viene generato un metodo C#.  
+- Per ogni elemento `Operation` di un tipo UML viene generato un metodo C#.
 
-- Per ogni associazione navigabile cui partecipa la classe viene generato un campo C#.  
+- Per ogni associazione navigabile cui partecipa la classe viene generato un campo C#.
 
-  Aggiungendo uno stereotipo a ogni tipo UML, è possibile controllare più proprietà del tipo C# generato.  
+  Aggiungendo uno stereotipo a ogni tipo UML, è possibile controllare più proprietà del tipo C# generato.
 
-|**Per creare questo tipo c#**|**Creare il tipo UML**|**Applicare lo stereotipo**|  
-|---------------------------------|----------------------------|-------------------------------|  
-|Classe|Classe|\<None > oppure<br /><br /> Classe C#|  
-|Interfaccia|Interfaccia|\<None > oppure<br /><br /> Interfaccia C#|  
-|Enumerazione|Enumerazione|\<None > oppure<br /><br /> C# enum|  
-|delegato|Classe|Delegato C#|  
-|Struct|Classe|Struct C#|  
+|**Per creare questo C# tipo**|**Estrai questo tipo UML**|**Applica questo stereotipo**|
+|---------------------------------|----------------------------|-------------------------------|
+|Classe|Classe|\<Nessuno > o<br /><br /> Classe C#|
+|Interfaccia|Interfaccia|\<Nessuno > o<br /><br /> Interfaccia C#|
+|Enumerazione|Enumerazione|\<Nessuno > o<br /><br /> C# enum|
+|delegato|Classe|Delegato C#|
+|Struct|Classe|Struct C#|
 
-#### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Per impostare uno stereotipo su un tipo o su un altro elemento  
+#### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Per impostare uno stereotipo su un tipo o su un altro elemento
 
-1. Aprire il menu di scelta rapida per l'elemento in un diagramma o in **Esplora modelli UML**, quindi scegliere **proprietà**.  
+1. Aprire il menu di scelta rapida per l'elemento in un diagramma o in **Esplora modelli UML**, quindi scegliere **Proprietà**.
 
-2. Nel **delle proprietà** finestra, scegliere la freccia a discesa nel **stereotipi** proprietà e quindi selezionare la casella di controllo relativa allo stereotipo da applicare.  
+2. Nella finestra **Proprietà** scegliere la freccia a discesa nella proprietà **stereotipi** , quindi selezionare la casella di controllo per lo stereotipo che si desidera applicare.
 
    > [!TIP]
-   > Se gli stereotipi C# non sono visualizzati, abilitare il profilo C# per il modello o per un pacchetto contenente gli elementi del modello desiderati. Selezionare il pacchetto o la radice del modello nel **Esplora modelli UML**. Quindi nel **delle proprietà** finestra, scegliere **profilo**e quindi abilitare il profilo c#.  
+   > Se gli stereotipi C# non sono visualizzati, abilitare il profilo C# per il modello o per un pacchetto contenente gli elementi del modello desiderati. Selezionare il pacchetto o la radice del modello in **Esplora modelli UML**. Quindi, nella finestra **Proprietà** scegliere **profilo**, quindi abilitare il C# profilo.
 
-3. Espandere la **stereotipi** proprietà per visualizzare le proprietà aggiuntive che è possibile impostare.  
+3. Espandere la proprietà **stereotipi** per visualizzare le proprietà aggiuntive che è possibile impostare.
 
-   Il **Description** le proprietà dei tipi, attributi, operazioni e le associazioni sono scritte `<summary>` commenti nel codice generato. Gli elementi di commento collegati ai tipi sono scritti in commenti `<remarks>`.  
+   Le proprietà **Description** di tipi, attributi, operazioni e associazioni vengono scritte `<summary>` in commenti nel codice generato. Gli elementi di commento collegati ai tipi sono scritti in commenti `<remarks>`.
 
-## <a name="varying-the-generated-code"></a>Modifica del codice generato  
- Il codice generato varia in base alle proprietà di ciascun tipo, attributo o operazione. Ad esempio, se si imposta la **Is Abstract** proprietà di una classe su true, il `abstract` (parola chiave) verranno visualizzati nella classe generata. Se si impostano i **molteplicità** di un attributo su **0..\*** , quindi la proprietà generata disporrà di un `IEnumerable<>` tipo.  
+## <a name="varying-the-generated-code"></a>Modifica del codice generato
+ Il codice generato varia in base alle proprietà di ciascun tipo, attributo o operazione. Se, ad esempio, si imposta la proprietà **abstract** di una classe su true, la `abstract` parola chiave verrà visualizzata nella classe generata. Se si imposta la **molteplicità** di un attributo su **0\*** , la proprietà generata avrà un `IEnumerable<>` tipo.
 
- Inoltre, ogni stereotipo fornisce varie proprietà aggiuntive che è possibile impostare. Questi valori vengono convertiti nelle parole chiave appropriate nel codice C#. Ad esempio, se si imposta la proprietà `Is Static` su una classe, la classe C# sarà `static`.  
+ Inoltre, ogni stereotipo fornisce varie proprietà aggiuntive che è possibile impostare. Questi valori vengono convertiti nelle parole chiave appropriate nel codice C#. Ad esempio, se si imposta la proprietà `Is Static` su una classe, la classe C# sarà `static`.
 
- Per impostare queste proprietà aggiuntive, selezionare la classe o un altro elemento nel diagramma. Nella finestra Proprietà, espandere **stereotipi**, quindi espandere lo stereotipo c#, ad esempio **classe c#** .  Per le classi, tali proprietà aggiuntive includono:  
+ Per impostare queste proprietà aggiuntive, selezionare la classe o un altro elemento nel diagramma. Nel finestra Proprietà espandere **stereotipi**, quindi espandere lo C# stereotipo, ad esempio  **C# classe**.  Per le classi, tali proprietà aggiuntive includono:
 
-- CLR Attributes  
+- CLR Attributes
 
-- Is Partial  
+- Is Partial
 
-- Is Static  
+- Is Static
 
-- Is Unsafe  
+- Is Unsafe
 
-- Package Visibility  
+- Package Visibility
 
-  Ogni attributo e operazione dispone di proprietà di stereotipo che è possibile impostare. Se non è possibile visualizzare le proprietà in un nuovo attributo, eseguire **genera codice**.  
+  Ogni attributo e operazione dispone di proprietà di stereotipo che è possibile impostare. Se non vengono visualizzate le proprietà in un nuovo attributo, eseguire **genera codice**.
 
-## <a name="custom"></a> Personalizzazione del comando genera codice  
- Il **genera codice** comando funziona mediante la trasformazione degli elementi del modello usando un set di modelli di testo. Per altre informazioni sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
+## <a name="custom"></a>Personalizzazione del comando genera codice
+ Il comando **genera codice** funziona trasformando gli elementi del modello usando un set di modelli di testo. Per ulteriori informazioni sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).
 
- I modelli vengono specificati in un set di *associazioni modelli di testo*. Consente di specificare un'associazione di modelli di testo deve essere applicato il modello, in cui deve essere inserito l'output generato e altri parametri del **genera codice** comando.  
+ I modelli vengono specificati in un set di *associazioni di modelli di testo*. Un'associazione di modello di testo specifica il modello da applicare, il punto in cui deve essere inserito l'output generato e altri parametri del comando **genera codice** .
 
- Quando si esegue innanzitutto le **genera codice** comando su un particolare modello, collega un set predefinito di associazioni a modello alla radice del modello. Questi binding si applicano a tutti gli elementi del modello.  
+ Quando si esegue per la prima volta il comando **genera codice** su un particolare modello, viene collegato un set predefinito di associazioni di modello alla radice del modello. Questi binding si applicano a tutti gli elementi del modello.
 
- Tuttavia, è possibile eseguire l'override e aggiungere, a queste associazioni predefinite, associazioni personalizzate a pacchetti, classi o altri elementi. Un'associazione si applica a tutti gli elementi contenuti nell'elemento a cui è collegata. Ad esempio, se si desidera che tutti i tipi contenuti in un particolare pacchetto vengano trasformati in base a un differente set di modelli o che vengano estratti in una diversa cartella, è possibile collegare le associazioni a modello al pacchetto.  
+ Tuttavia, è possibile eseguire l'override e aggiungere, a queste associazioni predefinite, associazioni personalizzate a pacchetti, classi o altri elementi. Un'associazione si applica a tutti gli elementi contenuti nell'elemento a cui è collegata. Ad esempio, se si desidera che tutti i tipi contenuti in un particolare pacchetto vengano trasformati in base a un differente set di modelli o che vengano estratti in una diversa cartella, è possibile collegare le associazioni a modello al pacchetto.
 
- Per controllare le associazioni del modello collegate a un elemento del modello, scegliere i puntini di sospensione **[...]**  nella **associazioni modelli di testo** proprietà nella finestra Proprietà.  
+ Per esaminare le associazioni del modello collegate a un elemento del modello, scegliere i puntini di sospensione **[...]** nella proprietà **associazioni modelli di testo** nella finestra Proprietà.
 
- Il **genera codice** comando applica i modelli a ciascun elemento del modello selezionato. Per ogni elemento, il set di modelli applicato è il set combinato dei modelli associati ai relativi contenitori, fino alla radice del modello inclusa.  
+ Il comando **genera codice** applica i modelli a ogni elemento del modello selezionato. Per ogni elemento, il set di modelli applicato è il set combinato dei modelli associati ai relativi contenitori, fino alla radice del modello inclusa.
 
- Se due binding a modello in questo set hanno lo stesso nome, il binding nel contenitore più piccolo esegue l'override del binding nel contenitore più grande. Ad esempio, la radice del modello ha un'associazione con il nome **modello di classe**. Per consentire a un modello personalizzato applicato al contenuto di un pacchetto specifico, definire il proprio associazione di modelli con il nome **modello di classe**.  
+ Se due binding a modello in questo set hanno lo stesso nome, il binding nel contenitore più piccolo esegue l'override del binding nel contenitore più grande. Ad esempio, la radice del modello ha un'associazione con il **modello di classe**Name. Per applicare un modello personalizzato al contenuto di un particolare pacchetto, definire un'associazione di modelli personalizzata con il **modello di classe**Name.
 
- È possibile applicare più modelli a un elemento del modello, nonché generare più file da ciascun elemento del modello.  
+ È possibile applicare più modelli a un elemento del modello, nonché generare più file da ciascun elemento del modello.
 
 > [!NOTE]
-> Le associazioni collegate alla radice del modello fungono da associazioni predefinite per tutti gli elementi del modello. Per visualizzare questi binding predefiniti, aprire **Esplora modelli UML**. Aprire il menu di scelta rapida del progetto di modellazione, quindi scegliere **Configura generazione codice**. In alternativa è possibile selezionare la radice del modello in Esplora modelli UML. Nella finestra Proprietà scegliere **[...]**  nella **associazioni modelli di testo** proprietà. Le associazioni non verranno visualizzati fino a quando non è stata usata la **genera codice** comando almeno una volta. Non è possibile collegare binding a modello a un diagramma.  
+> Le associazioni collegate alla radice del modello fungono da associazioni predefinite per tutti gli elementi del modello. Per visualizzare questi binding predefiniti, aprire **Esplora modelli UML**. Aprire il menu di scelta rapida del progetto di modellazione, quindi scegliere **Configura generazione codice**. In alternativa è possibile selezionare la radice del modello in Esplora modelli UML. Nella finestra Proprietà scegliere **[...]** nella proprietà **associazioni modelli di testo** . Le associazioni non verranno visualizzate finché non si usa il comando **genera codice** almeno una volta. Non è possibile collegare binding a modello a un diagramma.
 
-#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Per collegare binding a modello di testo a un pacchetto o a un altro elemento del modello  
+#### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Per collegare binding a modello di testo a un pacchetto o a un altro elemento del modello
 
-1. Nelle **Esplora modelli UML**, aprire il menu di scelta rapida per un elemento del modello e quindi scegliere **proprietà**. In genere, i binding a modello di testo vengono collegati a un pacchetto o alla radice del modello.  
+1. In **Esplora modelli UML**aprire il menu di scelta rapida per un elemento del modello, quindi scegliere **Proprietà**. In genere, i binding a modello di testo vengono collegati a un pacchetto o alla radice del modello.
 
-2. Nel **delle proprietà** finestra, fare clic sul pulsante con puntini di sospensione ( **[...]** ) nei **associazioni modelli di testo** proprietà.  
+2. Nella finestra **Proprietà** scegliere il pulsante con i puntini di sospensione ( **[...]** ) nella proprietà **associazioni modelli di testo** .
 
-    Il **associazioni modelli di testo** verrà visualizzata la finestra di dialogo.  
+    Verrà visualizzata la finestra di dialogo **Binding modello di testo** .
 
-3. Scegli **Add** per creare una nuova associazione di modelli di testo.  
+3. Scegliere **Aggiungi** per creare una nuova associazione di modelli di testo.
 
-    \- oppure -  
+    \- oppure -
 
-    Scegliere un binding esistente per modificarla.  
+    Scegliere un binding esistente per modificarla.
 
-    Ogni binding a modello definisce la modalità di applicazione di un modello specificato all'elemento del modello selezionato e agli altri elementi in questo contenuti.  
+    Ogni binding a modello definisce la modalità di applicazione di un modello specificato all'elemento del modello selezionato e agli altri elementi in questo contenuti.
 
-4. Nella finestra di dialogo, impostare le proprietà dell'associazione a modello di testo.  
+4. Nella finestra di dialogo, impostare le proprietà dell'associazione a modello di testo.
 
-   |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descrizione**                                                                                                                                                                                                                                                                                                                    |
+   |    **Proprietà**    |                                                                                                                                                                                                                                                                                                                    **Descrizione**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Nome        |                                                                                                                                                                                                                                                  Nome per l'associazione. Per eseguire l'override di un binding ereditato da un pacchetto o da un modello che lo contiene, usare lo stesso nome del binding di cui si desidera eseguire l'override.                                                                                                                                                                                                                                                  |
    |     Overwrite      |                                                                                                                                                                                                                                                                                                      Se true, il codice esistente viene sovrascritto.                                                                                                                                                                                                                                                                                                       |
-   |    Target Name     | Nome del file generato.<br /><br /> È possibile inserire le espressioni in questa stringa, ad esempio `{Name}` o `{Owner.Name}`. Ad esempio, è possibile scrivere: `{Owner.Name}_{Name}`. L'espressione viene valutata sull'elemento del modello e può usare proprietà di elementi, ma non metodi. Per trovare le proprietà possono essere usate, esaminare le proprietà dei tipi nella **Microsoft.VisualStudio.Uml.\*** . \*\*Importante:\* \* `{Name}` oppure `{Owner.Name}` può essere utilizzato solo nel **nome destinazione** proprietà. Per modificare il nome della classe generata, è necessario modificare il modello. Per altre informazioni, vedere [scrittura di un modello di testo](#writing). |
-   |    Project Path    |                                                                      Specifica il percorso del progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che conterrà i file di output della trasformazione. Usare valori tipizzati per creare un nuovo progetto. Fare clic sul pulsante con puntini di sospensione ( **[...]** ) per selezionare un progetto esistente.<br /><br /> Se non esiste alcun progetto, verrà creato un nuovo progetto Libreria di classi C#.<br /><br /> A questo scopo, è necessario digitare direttamente il progetto. È possibile includere macro di variabili di ambiente quali %ProgramFiles% o %LocalAppData%.                                                                       |
-   |  Target Directory  |                                                                                          Cartella in cui viene generato il file di destinazione. Il percorso è relativo alla cartella del progetto.<br /><br /> È possibile usare l'espressione `{PackageStructure}` per inserire un percorso che corrisponde ai nomi dei pacchetti contenitore. Il valore predefinito è `\GeneratedCode\{PackageStructure}`. È anche possibile includere variabili di ambiente quali %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` può essere utilizzato solo nelle **Directory di destinazione** proprietà.                                                                                          |
+   |    Target Name     | Nome del file generato.<br /><br /> È possibile inserire espressioni in questa stringa, ad `{Name}` esempio `{Owner.Name}`o. Ad esempio, è possibile scrivere: `{Owner.Name}_{Name}`. L'espressione viene valutata sull'elemento del modello e può usare proprietà di elementi, ma non metodi. Per trovare le proprietà che è possibile usare, esaminare le proprietà dei tipi in **Microsoft. VisualStudio. Uml.\*** . \*\*Importante:\* \* o`{Owner.Name}`può essere usato solo nella proprietà **nome di destinazione.** `{Name}` Per modificare il nome della classe generata, è necessario modificare il modello. Per ulteriori informazioni, vedere [scrittura di un modello di testo](#writing). |
+   |    Project Path    |                                                                      Specifica il percorso del progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che conterrà i file di output della trasformazione. Usare valori tipizzati per creare un nuovo progetto. Scegliere il pulsante con i puntini di sospensione ( **[...]** ) per selezionare un progetto esistente.<br /><br /> Se non esiste alcun progetto, verrà creato un nuovo progetto Libreria di classi C#.<br /><br /> A questo scopo, è necessario digitare direttamente il progetto. È possibile includere macro di variabili di ambiente quali %ProgramFiles% o %LocalAppData%.                                                                       |
+   |  Target Directory  |                                                                                          Cartella in cui viene generato il file di destinazione. Il percorso è relativo alla cartella del progetto.<br /><br /> È possibile usare l'espressione `{PackageStructure}` per inserire un percorso che corrisponde ai nomi dei pacchetti contenitore. Il valore predefinito è `\GeneratedCode\{PackageStructure}`. È anche possibile includere variabili di ambiente quali %TEMP% o %HomePath%. **Importante:** `{PackageStructure}` può essere usato solo nella proprietà della **directory di destinazione** .                                                                                          |
    | Percorso del file di modello |                                                                                                                                                           Modello che eseguirà la trasformazione.<br /><br /> È possibile usare i modelli forniti o crearne di personalizzati. I modelli forniti sono disponibili nel percorso seguente:<br /><br /> … \Programmi\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
-5. È possibile collegare a un elemento il numero di associazioni desiderato.  
+5. È possibile collegare a un elemento il numero di associazioni desiderato.
 
-## <a name="writing"></a> Scrittura di un modello di testo  
- È possibile scrivere modelli di testo personalizzati. I modelli di testo possono generare codice programma o qualsiasi altro tipo di file di testo.  
+## <a name="writing"></a>Scrittura di un modello di testo
+ È possibile scrivere modelli di testo personalizzati. I modelli di testo possono generare codice programma o qualsiasi altro tipo di file di testo.
 
- Si consiglia di iniziare modificando copie dei modelli standard. È possibile copiare i modelli dai seguenti percorsi:  
+ Si consiglia di iniziare modificando copie dei modelli standard. È possibile copiare i modelli dai seguenti percorsi:
 
- … \Programmi\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\  
+ … \Programmi\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\
 
- Per comprendere i modelli di testo, fare riferimento agli argomenti seguenti.  
+ Per comprendere i modelli di testo, fare riferimento agli argomenti seguenti.
 
-- Un modello di testo è un prototipo del file risultante e contiene sia il testo risultante che il codice programma che legge il modello. Per altre informazioni, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
+- Un modello di testo è un prototipo del file risultante e contiene sia il testo risultante che il codice programma che legge il modello. Per altre informazioni, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).
 
-- Per esplorare il modello UML nel codice programma, è necessario usare l'API UML. Per altre informazioni, vedere [esplorare il modello UML](../modeling/navigate-the-uml-model.md) e [riferimento all'API per l'estensibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Per esplorare il modello UML nel codice programma, è necessario usare l'API UML. Per altre informazioni, vedere [esplorare il modello UML](../modeling/navigate-the-uml-model.md) e informazioni [di riferimento sulle API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
-  Usare i modelli con il **genera codice** comando, è necessario includere la direttiva Modeling. Ad esempio:  
+  Per usare i modelli con il comando **genera codice** , è necessario includere la direttiva di modellazione. Ad esempio:
 
-  `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`  
+  `<#@ Modeling ElementType="Microsoft.VisualStudio.Uml.Classes.IClass" Processor="ModelingProcessor" #>`
 
-  L'attributo `ElementType` definisce il tipo di elemento UML al quale si applica il modello.  
+  L'attributo `ElementType` definisce il tipo di elemento UML al quale si applica il modello.
 
-  Nel modello, `this` appartiene a una classe temporanea che dispone delle proprietà seguenti:  
+  Nel modello, `this` appartiene a una classe temporanea che dispone delle proprietà seguenti:
 
-- `Element` corrisponde all'oggetto <xref:Microsoft.VisualStudio.Uml.Classes.IElement> a cui viene applicato il modello.  
+- `Element`= [IELEMENT](/previous-versions/dd516035(v=vs.140)) UML a cui viene applicato il modello.
 
-- `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>  
+- `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>
 
-- `Host`: <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
+- `Host`: [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
-- `ModelBus`: <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>. Per altre informazioni, vedere [integrare i modelli UML con altri modelli e strumenti](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- `ModelBus`: [ModelBus](/previous-versions/ee904639(v=vs.140)). Per altre informazioni, vedere [integrare modelli UML con altri modelli e strumenti](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- `ProfileName` corrisponde a "C#Profile".  
+- `ProfileName` corrisponde a "C#Profile".
 
-- `ServiceProvider`: <xref:System.IServiceProvider>  
+- `ServiceProvider`: <xref:System.IServiceProvider>
 
-- `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.  
+- `Session`: <xref:Microsoft.VisualStudio.TextTemplating.TextTemplatingSession>.
 
-- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Si tratta dell'archivio dell'SDK di visualizzazione e modellazione sul quale viene implementato l'oggetto UML ModelStore. Per ottenere l'oggetto UML <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml.IModelStore>, utilizzare `this.Element.GetModelStore()`.  
+- `Store`: <xref:Microsoft.VisualStudio.Modeling.Store>. Si tratta dell'archivio dell'SDK di visualizzazione e modellazione sul quale viene implementato l'oggetto UML ModelStore. Per ottenere il [IMODELSTORE](/previous-versions/ee789385(v=vs.140))UML, usare `this.Element.GetModelStore()`.
 
-  Le informazioni seguenti possono risultare utili durante la scrittura di un modello di testo. Queste informazioni sono descritto dettagliatamente [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
+  Le informazioni seguenti possono risultare utili durante la scrittura di un modello di testo. Queste informazioni sono descritte in dettaglio in [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).
 
-- È possibile impostare l'estensione del file risultante nella direttiva `Output`. Una direttiva `Output` è richiesta in ogni modello di testo.  
+- È possibile impostare l'estensione del file risultante nella direttiva `Output`. Una direttiva `Output` è richiesta in ogni modello di testo.
 
-- Ad alcuni assembly viene fatto automaticamente riferimento nel modello. Tali assembly includono, ad esempio, System.dll e Microsoft.VisualStudio.Uml.Interfaces.dll.  
+- Ad alcuni assembly viene fatto automaticamente riferimento nel modello. Tali assembly includono, ad esempio, System.dll e Microsoft.VisualStudio.Uml.Interfaces.dll.
 
-   Per utilizzare altri assembly nel codice programma generatore, è necessario utilizzare una direttiva `Assembly`. Ad esempio:  
+   Per utilizzare altri assembly nel codice programma generatore, è necessario utilizzare una direttiva `Assembly`. Ad esempio:
 
-   `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`  
+   `<#@ Assembly Name="%ProgramFiles%\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll" #>`
 
-- Alcuni spazi dei nomi quali `System` vengono importati automaticamente nel codice programma. Per altri spazi dei nomi, è possibile utilizzare la direttiva `Import` in modo analogo a un'istruzione `using`. Ad esempio:  
+- Alcuni spazi dei nomi quali `System` vengono importati automaticamente nel codice programma. Per altri spazi dei nomi, è possibile utilizzare la direttiva `Import` in modo analogo a un'istruzione `using`. Ad esempio:
 
-   `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`  
+   `<#@ Import Namespace="Microsoft.VisualStudio.Uml.Classes" #>`
 
-   `<#@ Import Namespace="Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml" #>`  
+   `<#@ Import Namespace="Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml" #>`
 
-- Usare la direttiva `Include` per fare riferimento al testo di un altro file.  
+- Usare la direttiva `Include` per fare riferimento al testo di un altro file.
 
-- Le parti del modello racchiuse tra parentesi quadre `<# ... #>` vengono eseguiti per il **genera codice** comando. Le parti del modello esterne a tali parentesi vengono copiate nel file risultante. È importante distinguere tra il codice generatore e il testo generato. Il testo generato può essere in qualsiasi linguaggio.  
+- Le parti del modello racchiuse tra parentesi quadre `<# ... #>` vengono eseguite dal comando **genera codice** . Le parti del modello esterne a tali parentesi vengono copiate nel file risultante. È importante distinguere tra il codice generatore e il testo generato. Il testo generato può essere in qualsiasi linguaggio.
 
-- Le parti `<#= Expressions #>` vengono valutate e convertite in stringhe.  
+- Le parti `<#= Expressions #>` vengono valutate e convertite in stringhe.
 
-## <a name="see-also"></a>Vedere anche  
- [Diagrammi delle classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)   
- [Diagrammi delle classi UML: Linee guida](../modeling/uml-class-diagrams-guidelines.md)   
- [Generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md)
+## <a name="see-also"></a>Vedere anche
+ [Diagrammi delle classi UML: ](../modeling/uml-class-diagrams-reference.md) Riferimenti[ai diagrammi classi UML: Linee](../modeling/uml-class-diagrams-guidelines.md) Guida [per la generazione di file da un modello UML](../modeling/generate-files-from-a-uml-model.md)
