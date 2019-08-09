@@ -13,65 +13,65 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e4c10e3a337b44a4b7c9a1cb59165736bb3e7efb
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821894"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871534"
 ---
 # <a name="n-tier-data-applications-overview"></a>Panoramica delle applicazioni dati a più livelli
-*A più livelli* le applicazioni di dati sono le applicazioni di dati che sono separate in più *livelli*. Noto anche come "applicazioni multilivello" e "applicazioni distribuite", le applicazioni a più livelli diversi in livelli discreti che vengono distribuite tra il client e server di elaborazione. Quando si sviluppano applicazioni che accedono ai dati, si deve avere una netta separazione tra i vari livelli che costituiscono l'applicazione.
+Le applicazioni dati a più *livelli* sono applicazioni dati separate in più *livelli*. Denominate anche "applicazioni distribuite" e "applicazioni multilivello", le applicazioni a più livelli sono separate dall'elaborazione in livelli discreti distribuiti tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario avere una netta separazione tra i vari livelli che costituiscono l'applicazione.
 
-Una tipica applicazione a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il modo più semplice per separare i vari livelli in un'applicazione a più livelli è possibile creare progetti discreti per ogni livello che si desidera includere nell'applicazione. Ad esempio, il livello di presentazione può essere un'applicazione Windows Forms, mentre la logica di accesso ai dati potrebbe essere una libreria di classi che si trova nel livello intermedio. Inoltre, il livello di presentazione può comunicare con la logica di accesso ai dati nel livello intermedio tramite un servizio, ad esempio un servizio. La separazione dei componenti dell'applicazione in livelli aumenta la gestibilità e la manutenibilità dell'applicazione, Ciò avviene mediante l'adozione semplificata di nuove tecnologie che possono essere applicati a un singolo livello senza la necessità di riprogettare l'intera soluzione. Inoltre, le applicazioni a più livelli in genere archiviano informazioni riservate nel livello intermedio, che mantiene isolamento dal livello di presentazione.
+Una tipica applicazione a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il modo più semplice per separare i vari livelli in un'applicazione a più livelli consiste nel creare progetti discreti per ogni livello che si desidera includere nell'applicazione. Ad esempio, il livello di presentazione potrebbe essere un Windows Forms Application, mentre la logica di accesso ai dati potrebbe essere una libreria di classi che si trova nel livello intermedio. Inoltre, il livello di presentazione potrebbe comunicare con la logica di accesso ai dati nel livello intermedio tramite un servizio, ad esempio un servizio Web. La separazione dei componenti dell'applicazione in livelli aumenta la gestibilità e la manutenibilità dell'applicazione, Questo consente di semplificare l'adozione di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. Inoltre, le applicazioni a più livelli in genere archiviano informazioni riservate nel livello intermedio, che mantiene l'isolamento dal livello di presentazione.
 
-Visual Studio contiene diverse funzionalità per aiutare gli sviluppatori di creare applicazioni a più livelli:
+Visual Studio contiene diverse funzionalità che consentono agli sviluppatori di creare applicazioni a più livelli:
 
-- Il set di dati fornisce una **DataSetProject** proprietà che consente di separare il set di dati (il livello di entità di dati) e gli oggetti TableAdapter (livello di accesso ai dati) in progetti discreti.
+- Il set di dati fornisce una proprietà del **progetto DataSet** che consente di separare il set di dati (livello entità di dati) e i TableAdapter (livello di accesso ai dati) in progetti discreti.
 
-- Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce le impostazioni per generare le classi DataContext e di dati in diversi spazi dei nomi. In questo modo la separazione logica dei livelli di entità di data e l'accesso ai dati.
+- Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) forniscono le impostazioni per generare le classi di dati e DataContext in spazi dei nomi distinti. Ciò consente la separazione logica dei livelli di accesso ai dati e di entità dati.
 
-- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di raggruppare la proprietà DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [a più livelli e le applicazioni remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di riunire DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [applicazioni a più livelli e remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Livello di presentazione
-Il *livello di presentazione* è il livello in cui gli utenti interagiscono con un'applicazione. Spesso contiene la logica dell'applicazione aggiuntivi anche. Componenti del livello presentazione tipici includono quanto segue:
+Il *livello presentazione* è il livello in cui gli utenti interagiscono con un'applicazione. Spesso contiene anche una logica dell'applicazione aggiuntiva. I componenti del livello presentazione tipici includono i seguenti:
 
-- Data binding, componenti, ad esempio la <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
+- Componenti di data binding, ad esempio <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
 
-- Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) le classi di entità per l'uso al livello presentazione.
+- Rappresentazioni di oggetti dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classi di entità da utilizzare nel livello di presentazione.
 
-Il livello di presentazione accede in genere il livello intermedio con un riferimento al servizio (ad esempio, un [servizi di Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) applicazione). Il livello di presentazione non accede direttamente al livello dati. Il livello di presentazione comunica con il livello dati tramite il componente di accesso ai dati nel livello intermedio.
+Il livello di presentazione accede in genere al livello intermedio usando un riferimento al servizio (ad esempio, un [Windows Communication Foundation servizi e WCF Data Services nell'applicazione di Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ). Il livello di presentazione non accede direttamente al livello dati. Il livello presentazione comunica con il livello dati tramite il componente di accesso ai dati nel livello intermedio.
 
 ## <a name="middle-tier"></a>Livello intermedio
-Il *livello intermedio* viene usato il livello di presentazione e i dati di livello consente di comunicare tra loro. I componenti di livello intermedio tipici includono quanto segue:
+Il livello intermedio è quello usato dal livello presentazione e dal livello dati per comunicare tra loro. I componenti di livello intermedio tipici includono i seguenti:
 
-- Logica di business, ad esempio la convalida di regole e dati business.
+- Logica di business, ad esempio regole di business e convalida dei dati.
 
-- Componenti di accesso ai dati e per la logica, come il seguente:
+- Componenti e logica di accesso ai dati, come i seguenti:
 
-  - [Gli oggetti TableAdapter](create-and-configure-tableadapters.md) e [DataAdapter e DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [Oggetti TableAdapter](create-and-configure-tableadapters.md) e [DataAdapter e](/dotnet/framework/data/adonet/dataadapters-and-datareaders)DataReaders.
 
-  - Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) le classi di entità.
+  - Rappresentazioni di oggetti dei dati, ad esempio [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classi di entità.
 
-  - Servizi di applicazione comuni, ad esempio autenticazione, autorizzazione e la personalizzazione.
+  - Servizi applicativi comuni, ad esempio autenticazione, autorizzazione e personalizzazione.
 
-La figura seguente mostra le funzionalità e le tecnologie disponibili in Visual Studio e in cui che potrebbe essere appropriato per il livello intermedio di un'applicazione a più livelli.
+Nella figura seguente sono illustrate le funzionalità e le tecnologie disponibili in Visual Studio e la posizione in cui possono rientrare nel livello intermedio di un'applicazione a più livelli.
 
-![Componenti di livello intermedio](../data-tools/media/ntiermid.png) livello intermedio
+![Livello intermedio](../data-tools/media/ntiermid.png) dei componenti di livello intermedio
 
-Il livello intermedio in genere si connette al livello dati tramite una connessione dati. Questa connessione dati viene in genere archiviata nel componente di accesso di dati.
+Il livello intermedio si connette in genere al livello dati utilizzando una connessione dati. Questa connessione dati viene in genere archiviata nel componente di accesso ai dati.
 
 ## <a name="data-tier"></a>Livello dati
-Il *livello dati* è fondamentalmente il server che archivia i dati di un'applicazione (ad esempio, un server che esegue SQL Server).
+Il *livello dati* è fondamentalmente il server in cui vengono archiviati i dati di un'applicazione, ad esempio un server che esegue SQL Server.
 
-La figura seguente mostra le funzionalità e le tecnologie disponibili in Visual Studio e in cui che potrebbe essere appropriato per il livello di dati di un'applicazione a più livelli.
+Nella figura seguente sono illustrate le funzionalità e le tecnologie disponibili in Visual Studio e la posizione in cui possono adattarsi al livello dati di un'applicazione a più livelli.
 
-![I componenti livello dati](../data-tools/media/ntierdatatier.png) livello dati
+![Livello dati componenti](../data-tools/media/ntierdatatier.png) livello dati
 
-Il livello dati non sono accessibili direttamente dal client al livello presentazione. Al contrario, il componente di accesso ai dati nel livello intermedio viene utilizzato per la comunicazione tra i livelli di dati e di presentazione.
+Non è possibile accedere al livello dati direttamente dal client nel livello di presentazione. Al contrario, il componente di accesso ai dati nel livello intermedio viene usato per la comunicazione tra i livelli di presentazione e di dati.
 
-## <a name="help-for-n-tier-development"></a>Guida per lo sviluppo a n livelli
-Gli argomenti seguenti forniscono informazioni sull'utilizzo delle applicazioni a più livelli:
+## <a name="help-for-n-tier-development"></a>Guida per lo sviluppo a più livelli
+Negli argomenti seguenti vengono fornite informazioni sull'utilizzo di applicazioni a più livelli:
 
 [Separare set di dati e TableAdapter in progetti diversi](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 

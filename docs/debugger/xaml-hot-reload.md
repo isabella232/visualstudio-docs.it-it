@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 0acacac883153990861385c96eeb3379c464f97f
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822150"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870995"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio
 
@@ -53,7 +53,7 @@ Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML.
 È possibile che si verifichino gli errori seguenti durante l'utilizzo del ricaricamento a caldo di XAML.
 
 |Messaggio di errore|Descrizione|
-|-|-|-|
+|-|-|
 |Verifica evento non riuscita|Errore indica che si sta tentando di collegare un evento a uno dei controlli, che non è supportato mentre l'applicazione è in esecuzione.|
 |La funzionalità Modifica e continuazione di XAML non ha trovato elementi da aggiornare.|Si verifica un errore durante la modifica del codice XAML che non è possibile aggiornare nell'app.</br> Questo errore può talvolta essere risolto usando l'app in esecuzione per passare a una visualizzazione in cui viene usato il codice XAML.</br> In alcuni casi, questo errore indica che non è possibile applicare la modifica specifica fino a quando non si riavvia la sessione di debug. |
 |Questa modifica non è supportata durante una sessione di debug.|Errore indica che la modifica che si sta tentando di eseguire non è supportata dal ricaricamento a caldo di XAML. Arrestare la sessione di debug, apportare la modifica e quindi riavviare la sessione di debug.|

@@ -1,5 +1,5 @@
 ---
-title: L'integrazione di modelli tramite Modelbus | Microsoft Docs
+title: Integrazione di modelli tramite ModelBus | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,17 +9,17 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84374596d706c23e835bf344d318d57c297aec60
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441011"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871803"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus fornisce un metodo per la creazione di collegamenti tra modelli e da altri strumenti in modelli. È ad esempio, è stato possibile collegare modelli di linguaggio specifico di dominio (DSL) e i modelli UML. È anche possibile creare un set integrato di DSL.
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus fornisce un metodo per la creazione di collegamenti tra i modelli e da altri strumenti ai modelli. È ad esempio, è stato possibile collegare modelli di linguaggio specifico di dominio (DSL) e i modelli UML. È anche possibile creare un set integrato di DSL.
 
  ModelBus consente di creare un riferimento univoco a un modello o a un elemento specifico all'interno di un modello. Questo riferimento può essere archiviato all'esterno del modello, ad esempio in un elemento in un altro modello. Quando, ad esempio, in un momento successivo uno strumento vuole ottenere l'accesso all'elemento, l'infrastruttura ModelBus caricherà il modello appropriato e restituirà l'elemento. Se si vuole, è possibile mostrare il modello all'utente. Se non è possibile accedere al file nel percorso precedente, ModelBus chiederà all'utente di trovarlo. Se l'utente trova il file, ModelBus correggerà tutti i riferimenti al file in questione.
 
@@ -47,7 +47,7 @@ ms.locfileid: "63441011"
 
 5. Se si vuole accedere al linguaggio specifico di dominio da un modello di testo, è necessario modificare il file AdapterManager.tt nel nuovo progetto. Ignorare questo passaggio se si vuole accedere al linguaggio specifico di dominio da altro codice, ad esempio comandi e gestori di eventi. Per altre informazioni, vedere [tramite ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
-   1. Modificare la classe di base di AdapterManagerBase e impostarla su <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+   1. Modificare la classe di base di AdapterManagerBase in [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
    2. Verso la fine del file, inserire questo attributo aggiuntivo davanti alla classe AdapterManager:
 
@@ -127,7 +127,7 @@ ms.locfileid: "63441011"
 
 4. Se si sceglie di fare riferimento a un elemento in un modello, è possibile aggiungere un elenco di tipi che possono essere selezionati dall'utente, ad esempio Company.FamilyTree.Person.
 
-5. Fare clic su **OK**, quindi fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.
+5. Fare clic su **OK**e quindi su **trasforma tutti i modelli** nella barra degli strumenti di Esplora soluzioni.
 
     > [!WARNING]
     > Se non è stato selezionata un'entità o un modello valido, il pulsante OK non avrà alcun effetto sebbene possa sembrare abilitato.
@@ -510,4 +510,4 @@ private const string INVALID_REF_FORMAT =
 - Nelle **DslPackage\source.extention.tt**, `|ModelBusAdapter|` viene aggiunto come componente MEF.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Aprire un modello da File nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md) [integrare i modelli UML con altri modelli e strumenti](../modeling/integrate-uml-models-with-other-models-and-tools.md) [come: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md) [tramite ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ [Procedura: Aprire un modello da file nel codice](../modeling/how-to-open-a-model-from-file-in-program-code.md) del programma [integrare modelli UML con altri modelli e strumenti](../modeling/integrate-uml-models-with-other-models-and-tools.md) [procedura: Aggiungere un gestore](../modeling/how-to-add-a-drag-and-drop-handler.md) di trascinamento [della selezione usando Visual Studio ModelBus in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

@@ -9,20 +9,20 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a290227b120958b5bb3407393dcff33b247b20d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408446"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872027"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Riferimento API per SDK di modellazione per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La visualizzazione e Visual Studio Modeling SDK offre la piattaforma in cui vengono compilati gli strumenti UML e i linguaggi specifici di dominio (DSL).
+Visual Studio Visualization and Modeling SDK fornisce la piattaforma in cui vengono compilati i linguaggi specifici di dominio (DSL) e gli strumenti UML.
 
 > [!NOTE]
-> Per informazioni sull'API di modellazione UML, vedere [riferimento API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Per informazioni sulla trasformazione del testo, vedere [personalizzazione di trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md).
+> Per informazioni sull'API di modellazione UML, vedere informazioni di [riferimento sulle API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Per informazioni sulla trasformazione del testo, vedere [personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md).
 
  In questa sezione contiene materiale di riferimento per gli spazi dei nomi con nomi che iniziano con "VisualStudio".
 
@@ -39,14 +39,16 @@ La visualizzazione e Visual Studio Modeling SDK offre la piattaforma in cui veng
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|Metodi di estensione per l'oggetto ModelElement che implementano l'estendibilità di linguaggio specifico di dominio.|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|Attributi di estendibilità|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|Consente di rendere le parti di un modello di sola lettura.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|L'API di Modelbus che consente di integrare modelli diversi.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|La finestra di dialogo che consente agli utenti di passare a modelli ed elementi per creare un riferimento Modelbus.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|Il servizio di selezione.|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|Framework di adattatore ModelBus per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|La finestra di dialogo di selezione che consente agli utenti di passare a modelli ed elementi per creare un riferimento Modelbus.|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|L'interfaccia tra DSL e [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Microsoft. VisualStudio. Modeling. Integration](/previous-versions/ee904412(v=vs.140))|L'API di Modelbus che consente di integrare modelli diversi.|
+|[Microsoft. VisualStudio. Modeling. Integration. Picker](/previous-versions/ee904394(v=vs.140))|La finestra di dialogo che consente agli utenti di passare a modelli ed elementi per creare un riferimento Modelbus.|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Il servizio di selezione.|
+|[Microsoft. VisualStudio. Modeling. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Framework dell'adattatore ModelBus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]per.|
+|[Microsoft. VisualStudio. Modeling. Integration. Shell. Picker](/previous-versions/ee886769(v=vs.140))|La finestra di dialogo di selezione che consente agli utenti di passare a modelli ed elementi per creare un riferimento Modelbus.|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Interfaccia tra DSLs e [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|È possibile definire comandi di menu di scelta rapida (contestuale).|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|È possibile definire vincoli di convalida.|
 
 ## <a name="see-also"></a>Vedere anche
- [Riferimento API per l'estensibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md) [personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)
+
+- [Riferimento API per l'estensibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
+- [Personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)
