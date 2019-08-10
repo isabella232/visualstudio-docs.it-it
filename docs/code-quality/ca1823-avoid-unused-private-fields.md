@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d7f521927497a50779d77c4d7bdd8520ac222f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47a2ad3b64055584551a63a2333e29286783d8cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545254"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921353"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitare campi privati non usati
 
@@ -28,25 +28,25 @@ ms.locfileid: "62545254"
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
 |Category|Microsoft.Performance|
-|Modifica importante|Non sostanziale|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Questa regola viene segnalata quando un campo privato nel codice esiste ma non viene usato da qualsiasi percorso di codice.
+Questa regola viene segnalata quando esiste un campo privato nel codice, ma non viene usato da alcun percorso di codice.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Sono stati rilevati campi privati che non sembrano essere utilizzati all'interno dell'assembly.
+Sono stati rilevati campi privati che non sembrano essere utilizzati all'interno dell'assembly.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere il campo o aggiungere codice che lo usa.
+Per correggere una violazione di questa regola, rimuovere il campo o aggiungere il codice che lo utilizza.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola in modo sicuro.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1812: Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812 Evitare classi interne prive di istanze](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Controllare i parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801 Verifica parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Rimuovi variabili locali non usate](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811: Evitare il codice privato](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)

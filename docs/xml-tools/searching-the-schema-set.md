@@ -1,5 +1,5 @@
 ---
-title: XML Schema Explorer - cercare nel set di schemi
+title: XML Schema Explorer-ricerca nel set di schemi
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 898b79e53773c09d60e32a3ef262346b0371d2af
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784572"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926808"
 ---
 # <a name="search-the-schema-set"></a>Eseguire ricerche nel set di schemi
 
-Il **XML Schema Explorer** consente di cercare lo schema impostato nei modi seguenti:
+**XML Schema Explorer** consente di eseguire ricerche nel set di schemi nei modi seguenti:
 
 - Ricerca per parole chiave.
 
@@ -25,13 +25,13 @@ Il **XML Schema Explorer** consente di cercare lo schema impostato nei modi segu
 
 ## <a name="keyword-search"></a>Ricerca per parole chiave
 
- Eseguire ricerche per parole chiave immettendo una sottostringa nel **set di schemi di ricerca** casella di testo del **XML Schema Explorer** sulla barra degli strumenti.
+Per eseguire ricerche di parole chiave, immettere una sottostringa nella casella di testo **Cerca SchemaSet** della barra degli strumenti di **XML Schema Explorer** .
 
- ![Ricerca di parole chiave in XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif)
+![Ricerca di parole chiave in XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif)
 
- Il **XML Schema Explorer** Cerca lo schema impostato per gli attributi seguenti:
+In **XML Schema Explorer** viene eseguita la ricerca del set di schemi per gli attributi seguenti:
 
-- Attributi `name` o `ref` che corrispondono alla parola chiave specificata. È possibile trovare gli elementi, attributi, tipi e così via, in base al nome.
+- Attributi `name` o `ref` che corrispondono alla parola chiave specificata. Per nome è possibile trovare elementi, attributi, tipi e così via.
 
 - Attributi `schemaLocation` delle istruzioni include.
 
@@ -39,19 +39,19 @@ Il **XML Schema Explorer** consente di cercare lo schema impostato nei modi segu
 
 ## <a name="schema-specific-search"></a>Ricerca specifica dello schema
 
- Il **XML Schema Explorer** comprende inoltre ricerche predefinite cui è possibile accedere tramite il menu di scelta rapida delle **XML Schema Explorer**. Per altre informazioni sui menu di scelta rapida disponibili, vedere [menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md). È anche possibile eseguire una ricerca specifica dello schema dalla visualizzazione iniziale; per altre informazioni, vedere la sezione "Dettagli Set di schemi" nel [visualizzazione iniziale](../xml-tools/start-view.md) argomento.
+In **XML Schema Explorer** sono inoltre incluse ricerche predefinite a cui è possibile accedere tramite il menu di scelta rapida (clic con il pulsante destro del mouse) di **XML Schema Explorer**. Per ulteriori informazioni sui menu di scelta rapida disponibili, vedere [menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md). È anche possibile eseguire una ricerca specifica dello schema dalla visualizzazione iniziale. Per ulteriori informazioni, vedere la sezione "Dettagli set di schemi" nell'argomento [visualizzazione iniziale](../xml-tools/start-view.md) .
 
-## <a name="display-and-navigate-search-results"></a>Visualizzare e passare i risultati della ricerca
+## <a name="display-and-navigate-search-results"></a>Visualizzare ed esplorare i risultati della ricerca
 
- Dopo aver terminato la ricerca, il riquadro dei risultati di riepilogo viene aggiunto alla barra degli strumenti con i risultati della ricerca. I risultati della ricerca vengono evidenziate anche nella **XML Schema Explorer** e contrassegnato dal segno di spunta sulla barra di scorrimento verticale. È possibile passare i risultati della ricerca usando il **passare al risultato della ricerca successivo** e **ricerca risultato precedente** pulsanti nel riquadro dei risultati di riepilogo del **XML Schema Explorer**barra degli strumenti; usando i tasti **F3** e **MAIUSC**+**F3**; oppure facendo clic sul segni di graduazione nella barra di scorrimento.
+Dopo aver terminato la ricerca, il riquadro dei risultati di riepilogo viene aggiunto alla barra degli strumenti con i risultati della ricerca. I risultati della ricerca sono evidenziati anche in **XML Schema Explorer** e contrassegnati con i segni di avanzamento sulla barra di scorrimento verticale. È possibile esplorare i risultati della ricerca usando i pulsanti **Vai al** risultato della ricerca successivo e **Vai ai risultati della ricerca precedente** nel riquadro dei risultati di riepilogo della barra degli strumenti di **XML Schema Explorer** . utilizzando i tasti **F3** e **MAIUSC**+**F3**oppure facendo clic sui segni di graduazione nella barra di scorrimento.
 
- È possibile aggiungere i risultati della ricerca all'area di lavoro facendo il **Aggiungi nodi evidenziati all'area di lavoro** pulsante nel riquadro dei risultati di riepilogo.
+È possibile aggiungere i risultati della ricerca all'area di lavoro facendo clic sul pulsante **Aggiungi nodi evidenziati all'area di lavoro** nel riquadro dei risultati di riepilogo.
 
- ![Risultati della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
+![Risultati della ricerca in XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif)
 
-## <a name="clear-search-results"></a>Risultati della ricerca non crittografato
+## <a name="clear-search-results"></a>Cancella risultati della ricerca
 
- Per cancellare i risultati della ricerca, fare clic sui **x** pulsante nel riquadro dei risultati di riepilogo della **XML Schema Explorer** della barra degli strumenti.
+Per cancellare i risultati della ricerca, fare clic sul pulsante **x** nel riquadro risultati riepilogo della barra degli strumenti di ricerca di **XML Schema Explorer** .
 
 ## <a name="see-also"></a>Vedere anche
 

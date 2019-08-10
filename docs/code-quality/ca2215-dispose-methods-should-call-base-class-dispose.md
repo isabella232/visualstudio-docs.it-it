@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203fc14097e0c6d2fbdaee1689deffdfe814eb63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f3c118b097dbcd9eba8a5755672bde9c11cb13a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541897"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920299"
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: I metodi Dispose devono chiamare Dispose della classe di base
 
@@ -32,26 +32,26 @@ ms.locfileid: "62541897"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> eredita da un tipo che implementa anche <xref:System.IDisposable>. Il <xref:System.IDisposable.Dispose%2A> non esegue il metodo del tipo che ereditano il <xref:System.IDisposable.Dispose%2A> metodo del tipo padre.
+Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> eredita da un tipo che implementa <xref:System.IDisposable>anche. Il <xref:System.IDisposable.Dispose%2A> metodo del tipo che eredita non chiama il <xref:System.IDisposable.Dispose%2A> metodo del tipo padre.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Se un tipo eredita da un tipo eliminabile, deve chiamare il <xref:System.IDisposable.Dispose%2A> metodo del tipo di base dall'interno del proprio <xref:System.IDisposable.Dispose%2A> (metodo). La chiamata al metodo di tipo di base Dispose assicura che vengano rilasciate tutte le risorse create tramite il tipo di base.
+Se un tipo eredita da un tipo eliminabile, deve chiamare il <xref:System.IDisposable.Dispose%2A> metodo del tipo di base dall'interno del <xref:System.IDisposable.Dispose%2A> relativo metodo. La chiamata del metodo Dispose del tipo di base garantisce che tutte le risorse create dal tipo di base vengano rilasciate.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, chiamare `base`.<xref:System.IDisposable.Dispose%2A> nel <xref:System.IDisposable.Dispose%2A> (metodo).
+Per correggere una violazione di questa regola, chiamare `base`.<xref:System.IDisposable.Dispose%2A> <xref:System.IDisposable.Dispose%2A> nel metodo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola se la chiamata a `base`.<xref:System.IDisposable.Dispose%2A> si verifica a un livello più profondo chiama rispetto ai controlli regola.
-
-## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo `TypeA` che implementa <xref:System.IDisposable>.
-
- [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola se la chiamata a `base`.<xref:System.IDisposable.Dispose%2A> si verifica a un livello di chiamata più profondo rispetto alla verifica della regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo `TypeB` che eredita dal tipo `TypeA` e chiama correttamente relativo <xref:System.IDisposable.Dispose%2A> (metodo).
+Nell'esempio seguente viene illustrato un `TypeA` tipo che <xref:System.IDisposable>implementa.
 
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
+[!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato un `TypeB` tipo che eredita dal `TypeA` tipo e chiama correttamente <xref:System.IDisposable.Dispose%2A> il relativo metodo.
+
+[!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816634"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924003"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
-Il set di regole regole estese di correttezza Microsoft Massimizza la logica e framework utilizzo gli errori segnalati dall'analisi del codice. Viene posta particolare attenzione su scenari specifici, ad esempio l'interoperabilità COM e applicazioni per dispositivi mobili. È consigliabile includere questa regola impostata se uno di questi scenari si applica al progetto o per individuare ulteriori problemi nel progetto.
+Il set di regole di correttezza estesa Microsoft ottimizza gli errori di utilizzo della logica e del framework segnalati dall'analisi del codice. L'enfasi aggiuntiva si trova in scenari specifici, ad esempio l'interoperabilità COM e le applicazioni per dispositivi mobili. È consigliabile includere questo set di regole se uno di questi scenari si applica al progetto o per trovare ulteriori problemi nel progetto.
 
- Il set di regole regole estese di correttezza Microsoft include le regole nella regola di regole base di correttezza Microsoft impostate. Le regole base di correttezza includere le regole nella regola Microsoft regole minime impostate. Per altre informazioni, vedere [set di regole regole base di correttezza per codice gestito](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Il set di regole Microsoft Extended Correctity Rules include le regole incluse nel set di regole Microsoft Basic Correctity Rules. Le regole di correttezza di base includono le regole del set di regole minime consigliate di Microsoft. Per ulteriori informazioni, vedere set di regole di [correttezza di base per codice gestito](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [set di regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- Nella tabella seguente vengono descritte tutte le regole nel set di regole regole estese di correttezza Microsoft.
+Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Extended Correctity Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Il set di regole regole estese di correttezza Microsoft Massimizza la logica e f
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare i LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare I LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797511"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922782"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Specificare le impostazioni locali per i tipi di dati
 
@@ -27,25 +27,25 @@ ms.locfileid: "62797511"
 |-|-|
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
-|Category|Microsoft.Globalization|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. globalizzazione|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo o costruttore ha creato uno o più <xref:System.Data.DataTable?displayProperty=fullName> oppure <xref:System.Data.DataSet?displayProperty=fullName> istanze e non imposta in modo esplicito le proprietà delle impostazioni locali (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> o <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+Un metodo o un costruttore ha creato una <xref:System.Data.DataTable?displayProperty=fullName> o <xref:System.Data.DataSet?displayProperty=fullName> più istanze di o e non ha impostato in modo esplicito<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> la <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>proprietà delle impostazioni locali (o).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Le impostazioni locali determinano elementi di presentazione specifiche delle impostazioni cultura per i dati, ad esempio la formattazione usata per i valori numerici, simboli di valuta e criterio di ordinamento. Quando si crea una <xref:System.Data.DataTable> o <xref:System.Data.DataSet>, è necessario impostare in modo esplicito le impostazioni locali. Per impostazione predefinita, le impostazioni locali per questi tipi sono le impostazioni cultura correnti. Per i dati vengono archiviati in un database o file e vengono condivise globalmente, in genere il locale deve essere impostato per la lingua inglese (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Quando i dati vengono condivisi tra le impostazioni cultura, usando le impostazioni locali predefinite può causare il contenuto del <xref:System.Data.DataTable> o <xref:System.Data.DataSet> la presentazione o interpretati erroneamente.
+Le impostazioni locali determinano elementi di presentazione specifici delle impostazioni cultura per i dati, ad esempio la formattazione utilizzata per valori numerici, simboli di valuta e ordinamento. Quando si crea un <xref:System.Data.DataTable> o <xref:System.Data.DataSet>, è necessario impostare le impostazioni locali in modo esplicito. Per impostazione predefinita, le impostazioni locali per questi tipi sono le impostazioni cultura correnti. Per i dati archiviati in un database o in un file e condivisi a livello globale, le impostazioni locali devono essere in genere impostate sulla lingua inglese (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Quando i dati vengono condivisi tra le diverse impostazioni cultura, l'utilizzo delle impostazioni locali predefinite può <xref:System.Data.DataTable> causare <xref:System.Data.DataSet> la presentazione o l'interpretazione non corretta del contenuto dell'oggetto o.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, impostare in modo esplicito le impostazioni locali per il <xref:System.Data.DataTable> o <xref:System.Data.DataSet>.
+Per correggere una violazione di questa regola, impostare in modo esplicito le impostazioni locali <xref:System.Data.DataTable> per <xref:System.Data.DataSet>o.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola quando la libreria o l'applicazione è per un numero limitato di utenti locale, i dati non sono condivisa o l'impostazione predefinita restituisce il comportamento desiderato in tutti gli scenari supportati.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola quando la libreria o l'applicazione è destinata a un gruppo di destinatari locale limitato, i dati non vengono condivisi o l'impostazione predefinita produce il comportamento desiderato in tutti gli scenari supportati.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente crea due <xref:System.Data.DataTable> istanze.
+Nell'esempio seguente vengono create <xref:System.Data.DataTable> due istanze.
 
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+[!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
 ## <a name="see-also"></a>Vedere anche
 

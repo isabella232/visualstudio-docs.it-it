@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3dc26964a62c952b9c8d18c710e6163bf8ab08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2c7e7efe348526661b9de74b3631e6795608b99
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796917"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921339"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferire matrici di matrici rispetto a matrici multidimensionali
 
@@ -34,19 +34,19 @@ ms.locfileid: "62796917"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un membro viene dichiarato come una matrice multidimensionale.
+Un membro viene dichiarato come matrice multidimensionale.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una matrice di matrici è una matrice i cui elementi sono costituiti da matrici. Poiché le matrici che costituiscono gli elementi possono presentare dimensioni diverse, la quantità di spazio inutilizzato sarà inferiore per alcuni insiemi di dati.
+Una matrice di matrici è una matrice i cui elementi sono costituiti da matrici. Poiché le matrici che costituiscono gli elementi possono presentare dimensioni diverse, la quantità di spazio inutilizzato sarà inferiore per alcuni insiemi di dati.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare la matrice multidimensionale in una matrice di matrici.
+Per correggere una violazione di questa regola, modificare la matrice multidimensionale in una matrice di matrici.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Eliminare un avviso da questa regola se la matrice multidimensionale non spreco di spazio.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Eliminare un avviso da questa regola se la matrice multidimensionale non spreca spazio.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra le dichiarazioni per matrici e matrici multidimensionali.
+Nell'esempio seguente vengono illustrate le dichiarazioni per matrici frastagliate e multidimensionali.
 
- [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
- [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]
+[!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
+[!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

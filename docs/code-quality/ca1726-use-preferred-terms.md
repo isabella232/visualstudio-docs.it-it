@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797158"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921580"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Usare termini preferiti
 
@@ -27,15 +27,15 @@ ms.locfileid: "62797158"
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Category|Microsoft.Naming|
-|Modifica importante|Rilievo - quando viene attivato su assembly<br /><br /> Non sostanziale - Quando viene attivato su parametri di tipo|
+|Modifica importante|Interruzioni durante l'attivazione degli assembly<br /><br /> Senza interruzioni-quando viene attivato sui parametri di tipo|
 
 ## <a name="cause"></a>Causa
 
-Il nome di un identificatore visibile esternamente include un termine per il quale esiste un termine alternativo preferito. In alternativa, il nome include il termine contrassegni o Flag.
+Il nome di un identificatore visibile esternamente include un termine per il quale esiste un termine alternativo preferito. In alternativa, il nome include il termine flag o flag.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola analizza un identificatore in token. Ogni singolo token e ogni combinazione di token duale contigui viene confrontato con termini che vengono compilati nella regola e nella sezione dei dizionari personalizzati obsoleto. La tabella seguente illustra le condizioni che vengono compilate nella regola e le alternative preferite.
+Questa regola analizza un identificatore in token. Ogni singolo token e ogni combinazione di token doppi contigui viene confrontato con i termini incorporati nella regola e nella sezione deprecata di qualsiasi dizionario personalizzato. La tabella seguente illustra i termini incorporati nella regola e le alternative preferite.
 
 |Termine obsoleto|Termine preferito|
 |-------------------|--------------------|
@@ -47,7 +47,7 @@ Questa regola analizza un identificatore in token. Ogni singolo token e ogni com
 |`Didnt`|`DidNot`|
 |`Doesnt`|`DoesNot`|
 |`Dont`|`DoNot`|
-|`Flag` o `Flags`|Non vi è alcun termine sostitutivo. Non usare.|
+|`Flag` o `Flags`|Non esiste alcun termine di sostituzione. Non usare.|
 |`Hadnt`|`HadNot`|
 |`Hasnt`|`HasNot`|
 |`Havent`|`HaveNot`|
@@ -65,10 +65,10 @@ Questa regola analizza un identificatore in token. Ogni singolo token e ogni com
 |`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, sostituire il termine con il termine alternativo preferito.
+Per correggere una violazione di questa regola, sostituire il termine con il termine alternativo preferito.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Eliminare un avviso da questa regola solo se il nome dell'identificatore è intenzionale e riguarda in modo specifico per il termine originale anziché il termine preferito.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Eliminare un avviso da questa regola solo se il nome dell'identificatore è intenzionale e si riferisce in modo specifico al termine originale anziché al termine preferito.
 
 ## <a name="related-rules"></a>Regole correlate
- [Avvisi di denominazione](../code-quality/naming-warnings.md)
+[Avvisi di denominazione](../code-quality/naming-warnings.md)

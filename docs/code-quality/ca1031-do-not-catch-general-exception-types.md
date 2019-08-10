@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7b1610d07e5e38632056df237d284b40b6f101c6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744691"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922901"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Non rilevare tipi di eccezione generali
 
@@ -32,29 +32,29 @@ ms.locfileid: "66744691"
 |TypeName|DoNotCatchGeneralExceptionTypes|
 |CheckId|CA1031|
 |Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un'eccezione, ad esempio <xref:System.Exception?displayProperty=fullName> o <xref:System.SystemException?displayProperty=fullName> si trova in un `catch` istruzione o una clausola catch generale, ad esempio `catch()` viene usato.
+Un' <xref:System.Exception?displayProperty=fullName> eccezione generale <xref:System.SystemException?displayProperty=fullName> ,ad`catch` esempio o, viene rilevata in un'istruzione oppure vieneutilizzataunaclausolacatchgenerale,adesempio.`catch()`
 
 ## <a name="rule-description"></a>Descrizione della regola
- Le eccezioni generali non devono essere rilevate.
+Le eccezioni generali non devono essere rilevate.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rilevare un'eccezione più specifica oppure generare nuovamente l'eccezione generale come ultima istruzione nel `catch` blocco.
+Per correggere una violazione di questa regola, rilevare un'eccezione più specifica o rigenerare l'eccezione generale come ultima istruzione nel `catch` blocco.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola. Il rilevamento di tipi di eccezione generali problemi in fase di esecuzione da parte dell'utente della libreria possono essere nascosti e può rendere più difficile il debug.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola. Il rilevamento dei tipi di eccezione generali può nascondere problemi di run-time dall'utente della libreria e rendere più difficile il debug.
 
 > [!NOTE]
-> A partire da .NET Framework 4, common language runtime (CLR) non trasmette più eccezioni stato danneggiato che si verificano nel sistema operativo e codice gestito, ad esempio le violazioni di accesso nel [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], per essere gestito dal codice gestito. Se si desidera che da compilare un'applicazione in .NET Framework 4 o versioni successive e manutenzione la gestione delle eccezioni stato danneggiato, è possibile applicare il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> al metodo che gestisce l'eccezione di stato danneggiato.
+> A partire da .NET Framework 4, il Common Language Runtime (CLR) non recapita più le eccezioni di stato danneggiate che si verificano nel sistema operativo e il codice gestito, ad [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]esempio le violazioni di accesso in, per essere gestite dal codice gestito. Se si desidera compilare un'applicazione in .NET Framework 4 o versioni successive e gestire le eccezioni di stato danneggiate, è possibile applicare l' <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attributo al metodo che gestisce l'eccezione di stato danneggiato.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente mostra un tipo che viola la regola e un tipo che implementa correttamente il `catch` blocco.
+Nell'esempio seguente viene illustrato un tipo che viola la regola e un tipo che implementa correttamente il `catch` blocco.
 
- [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
- [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
- [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
+[!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
+[!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
+[!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2200: Eseguire il rethrow per conservare i dettagli dello stack](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
+[CA2200 Rigenerazione per mantenere i dettagli dello stack](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)

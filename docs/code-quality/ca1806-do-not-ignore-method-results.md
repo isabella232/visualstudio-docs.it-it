@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e68fb6b4c40c165a09ae2631a2ad0a64bf52fbc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797050"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921547"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Non ignorare i risultati dei metodi
 
@@ -34,66 +34,66 @@ ms.locfileid: "62797050"
 
 ## <a name="cause"></a>Causa
 
-Esistono diversi motivi possibili per questo avviso:
+Questo avviso può essere dovuto a diversi motivi:
 
-- Un nuovo oggetto viene creato ma mai usato.
+- Viene creato un nuovo oggetto che non viene mai usato.
 
-- Viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai usata.
+- Un metodo che crea e restituisce una nuova stringa viene chiamato e la nuova stringa non viene mai usata.
 
-- Un metodo COM o P/Invoke che restituisce un codice di errore o HRESULT che non viene mai usato. Descrizione della regola
+- Metodo COM o P/Invoke che restituisce un codice HRESULT o un codice di errore che non viene mai usato. Descrizione della regola
 
-La creazione di oggetti non necessari e la garbage collection associata dell'oggetto inutilizzato influiscono negativamente sulle prestazioni.
+La creazione di oggetti non necessari e il Garbage Collection associato dell'oggetto inutilizzato diminuiscono le prestazioni.
 
-Le stringhe sono modificabili e metodi, ad esempio String. ToUpper restituisce una nuova istanza di una stringa invece di modificare l'istanza della stringa nel metodo chiamante.
+Le stringhe non sono modificabili e i metodi, ad esempio String. ToUpper, restituiscono una nuova istanza di una stringa anziché modificare l'istanza della stringa nel metodo chiamante.
 
-Ignorando HRESULT o codice di errore può causare un comportamento imprevisto in condizioni di errore o alle condizioni di risorse insufficienti.
+Ignorando HRESULT o il codice di errore può verificarsi un comportamento imprevisto in condizioni di errore o in condizioni di risorse insufficienti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Se il metodo crea una nuova istanza dell'oggetto B che non viene mai usato, passare l'istanza come argomento a un altro metodo oppure assegnare l'istanza a una variabile. Se la creazione dell'oggetto non è necessaria, rimuoverla- o -
+Se il metodo A crea una nuova istanza dell'oggetto B che non viene mai utilizzata, passare l'istanza come argomento a un altro metodo o assegnare l'istanza a una variabile. Se la creazione dell'oggetto non è necessaria, rimuoverla.-o-
 
- Se il metodo chiama il metodo B, ma non usa la nuova istanza di stringa restituita dal metodo B. Passare l'istanza come argomento a un altro metodo, assegnare l'istanza a una variabile. Oppure rimuovere la chiamata se non è necessaria.
+Se il metodo A chiama il metodo B, ma non usa la nuova istanza di stringa restituita dal metodo B. Passare l'istanza come argomento a un altro metodo, assegnare l'istanza a una variabile. Oppure rimuovere la chiamata se non è necessaria.
 
  -oppure-
 
- Se il metodo chiama il metodo B, ma non usa il valore HRESULT o codice di errore che il metodo restituisce. Usare il risultato in un'istruzione condizionale, assegnare il risultato a una variabile oppure passarlo come argomento a un altro metodo.
+Se il metodo A chiama il metodo B, ma non usa HRESULT o codice di errore restituito dal metodo. Usare il risultato in un'istruzione condizionale, assegnare il risultato a una variabile oppure passarlo come argomento a un altro metodo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola, a meno che l'atto di creare l'oggetto viene usato per scopi.
-
-## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrata una classe che ignora il risultato della chiamata String. Trim.
-
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non eliminare un avviso da questa regola, a meno che l'operazione di creazione dell'oggetto non riservi alcuno scopo.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente consente di correggere la violazione precedente assegnando il risultato di String. Trim nella variabile di che cui è stato chiamato.
+Nell'esempio seguente viene illustrata una classe che ignora il risultato della chiamata a String. Trim.
 
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
+[!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che non usa un oggetto creato.
+Nell'esempio seguente viene corretta la violazione precedente assegnando il risultato di String. Trim alla variabile su cui è stato chiamato.
+
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
+[!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato un metodo che non utilizza un oggetto che crea.
 
 > [!NOTE]
 > Questa violazione non può essere riprodotta in Visual Basic.
 
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente consente di correggere la violazione precedente rimuovendo la creazione di un oggetto non necessaria.
+Nell'esempio seguente viene corretta la violazione precedente rimuovendo la creazione non necessaria di un oggetto.
 
- [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
+[!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
+[!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
 
 <!-- Examples don't exist for the below... -->
 <!--
 ## Example
- The following example shows a method that ignores the error code that the native method GetShortPathName returns.
+The following example shows a method that ignores the error code that the native method GetShortPathName returns.
 
 ## Example
- The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.
+The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.
 -->

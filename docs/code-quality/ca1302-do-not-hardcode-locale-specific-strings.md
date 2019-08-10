@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546531"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922719"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Non impostare come hardcoded le stringhe delle impostazioni locali
 
@@ -30,28 +30,28 @@ ms.locfileid: "62546531"
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
-|Category|Microsoft.Globalization|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. globalizzazione|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo utilizza un valore letterale stringa che rappresenta una parte del percorso di determinate cartelle di sistema.
+Un metodo usa un valore letterale stringa che rappresenta parte del percorso di alcune cartelle di sistema.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumerazione contiene i membri che fanno riferimento a cartelle di sistema speciali. I percorsi di queste cartelle possono avere valori diversi nei sistemi operativi diversi, l'utente può modificare alcune delle posizioni e i percorsi sono localizzati. Un esempio di una cartella speciale è la cartella di sistema, ovvero "C:\WINDOWS\system32" nella [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] ma "C:\Winnt\System32." su [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. Il <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> metodo restituisce i percorsi che sono associati le <xref:System.Environment.SpecialFolder> enumerazione. I percorsi restituiti da <xref:System.Environment.GetFolderPath%2A> sono localizzati e appropriati per il computer in uso.
+L' <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumerazione contiene membri che fanno riferimento a cartelle di sistema speciali. I percorsi di queste cartelle possono avere valori diversi in sistemi operativi diversi, l'utente può modificare alcuni percorsi e i percorsi sono localizzati. Un esempio di cartella speciale è la cartella di sistema, ovvero "C:\Windows\System32" in [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] , ma "C:\Winnt\System32" in. [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)] Il <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> metodo restituisce le posizioni associate <xref:System.Environment.SpecialFolder> all'enumerazione. I percorsi restituiti da <xref:System.Environment.GetFolderPath%2A> sono localizzati e appropriati per il computer attualmente in esecuzione.
 
- Questa regola suddivide in token i percorsi delle cartelle che vengono recuperati utilizzando la <xref:System.Environment.GetFolderPath%2A> metodo in livelli di directory separate. Ogni valore letterale stringa viene confrontato con i token. Se viene trovata una corrispondenza, si presuppone che il metodo sta creando una stringa che rappresenta il percorso di sistema che è associato il token. Per la portabilità e la verifica della localizzabilità, usare il <xref:System.Environment.GetFolderPath%2A> metodo per recuperare i percorsi delle cartelle di sistema speciale invece di usare valori letterali stringa.
+Questa regola suddivide in token i percorsi di cartella recuperati usando il <xref:System.Environment.GetFolderPath%2A> metodo in livelli di directory distinti. Ogni valore letterale stringa viene confrontato con i token. Se viene trovata una corrispondenza, si presuppone che il metodo stia compilando una stringa che fa riferimento al percorso di sistema associato al token. Per la portabilità e la localizzabilità, <xref:System.Environment.GetFolderPath%2A> utilizzare il metodo per recuperare i percorsi delle cartelle di sistema speciali anziché utilizzare valori letterali stringa.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, recuperare il percorso utilizzando la <xref:System.Environment.GetFolderPath%2A> (metodo).
+Per correggere una violazione di questa regola, recuperare il percorso usando il <xref:System.Environment.GetFolderPath%2A> metodo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola se il valore letterale stringa non viene utilizzata per fare riferimento a uno dei percorsi di sistema che è associato il <xref:System.Environment.SpecialFolder> enumerazione.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola se il valore letterale stringa non viene usato per fare riferimento a uno dei percorsi di sistema associati <xref:System.Environment.SpecialFolder> all'enumerazione.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente compila il percorso della cartella dati applicazioni comuni che genera tre avvisi da questa regola. Successivamente, l'esempio recupera il percorso utilizzando la <xref:System.Environment.GetFolderPath%2A> (metodo).
+Nell'esempio seguente viene compilato il percorso della cartella Common Application Data, che genera tre avvisi da questa regola. Successivamente, l'esempio recupera il percorso usando il <xref:System.Environment.GetFolderPath%2A> metodo.
 
- [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
+[!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
+[!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1303: Non passare valori letterali come parametri localizzati](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+[CA1303: Non passare valori letterali come parametri localizzati](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

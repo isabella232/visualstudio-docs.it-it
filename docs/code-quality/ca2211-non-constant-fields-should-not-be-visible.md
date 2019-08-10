@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77909627385a7aa2e41f87c23ec41dc8ac0e1a5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806775"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920351"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: I campi non costanti non devono essere visibili
 
@@ -34,19 +34,19 @@ ms.locfileid: "62806775"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un campo statico pubblico o protetto non costante né è di sola lettura.
+Un campo statico pubblico o protetto non è costante né è di sola lettura.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I campi statici che non sono costanti né in sola lettura non sono thread-safe. Accesso a tale campo deve essere controllato attentamente e richiede tecniche di programmazione avanzate per la sincronizzazione dell'accesso all'oggetto classe. Poiché si tratta di competenze difficili per individuare e database master e un oggetto di questo tipo di test presenta difficoltà, i campi statici sono più adatta per archiviare i dati che non cambiano. Questa regola vale per le librerie. le applicazioni non devono esporre tutti i campi.
+I campi statici che non sono costanti né in sola lettura non sono thread-safe. L'accesso a tale campo deve essere controllato attentamente e richiede tecniche di programmazione avanzate per la sincronizzazione dell'accesso all'oggetto classe. Poiché si tratta di competenze difficili da apprendere e da padroneggiare, il test di tale oggetto pone le proprie difficoltà, i campi statici vengono usati per archiviare i dati che non cambiano. Questa regola si applica alle librerie; le applicazioni non devono esporre alcun campo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, impostare il campo statico costante o di sola lettura. Se questo non è possibile, riprogettare il tipo per usare un meccanismo alternativo, ad esempio una proprietà di thread-safe che gestisce l'accesso thread-safe per il campo sottostante. Tenere presente che problemi quali la contesa dei blocchi e i deadlock possono influire sulle prestazioni e comportamento della libreria.
+Per correggere una violazione di questa regola, rendere costante il campo statico o di sola lettura. Se ciò non è possibile, riprogettare il tipo in modo da usare un meccanismo alternativo, ad esempio una proprietà thread-safe che gestisce l'accesso thread-safe al campo sottostante. Tenere presente che problemi quali i conflitti di blocco e i deadlock potrebbero influire sulle prestazioni e sul comportamento della libreria.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola se si sviluppa un'applicazione e pertanto avere controllo completo sull'accesso per il tipo che contiene il campo statico. Progettazione di librerie dovrebbero eliminare un avviso da questa regola. utilizzo di campi statici non costante può rendere usando la libreria difficile per gli sviluppatori di usare correttamente.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola se si sta sviluppando un'applicazione e pertanto si ha il controllo completo sull'accesso al tipo che contiene il campo statico. Le finestre di progettazione della libreria non devono eliminare un avviso da questa regola. l'uso di campi statici non costanti può rendere difficile l'uso della libreria per gli sviluppatori.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo che viola la regola.
+Nell'esempio seguente viene illustrato un tipo che viola questa regola.
 
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
- [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

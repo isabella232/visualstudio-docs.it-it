@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare una. File Vsct | Microsoft Docs'
+title: 'Procedura: Creare un oggetto. File vsct | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,26 +10,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3155ff69db461e652b11ff6e8ec6d405000244f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328751"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924176"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: Creare un file con estensione vsct
 
-Esistono diversi modi per creare una configurazione di tabella comandi di Visual Studio basate su XML (*vsct*) file.
+Esistono diversi modi per creare un file di configurazione tabella comandi di Visual Studio (con*estensione vsct*) basato su XML.
 
-- È possibile creare un nuovo VSPackage nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modello di pacchetto.
+- È possibile creare un nuovo VSPackage nel modello [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di pacchetto.
 
-- È possibile usare il compilatore di configurazione di tabella comandi basati su XML, *Vsct.exe*per generare un file da un oggetto esistente *CTC* file.
+- Per generare un file da un file con *estensione CTC* esistente, è possibile utilizzare il compilatore di configurazione della tabella dei comandi basato su XML, *vsct. exe*.
 
-- È possibile usare *Vsct.exe* per generare un *con estensione vsct* file da un oggetto esistente *CTO* file.
+- È possibile utilizzare *vsct. exe* per generare un file con estensione *vsct* da un file *CTO* esistente.
 
-- È possibile creare manualmente una nuova *vsct* file.
+- È possibile creare manualmente un nuovo file con *estensione vsct* .
 
-  Questo articolo illustra come creare manualmente una nuova *vsct* file.
+  Questo articolo illustra come creare manualmente un nuovo file con *estensione vsct* .
 
 ### <a name="to-manually-create-a-new-vsct-file"></a>Per creare manualmente un nuovo file con estensione vsct
 
@@ -37,81 +37,81 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
 2. Nel **File** dal menu **New**, quindi fare clic su **File**.
 
-3. Nel **modelli** riquadro, fare clic su **File XML** e quindi fare clic su **Open**.
+3. Nel riquadro **modelli** fare clic su **file XML** e quindi su **Apri**.
 
-4. Nel **View** menu, fare clic su **proprietà** per visualizzare le proprietà del file XML.
+4. Scegliere **Proprietà** dal menu **Visualizza** per visualizzare le proprietà del file XML.
 
-5. Nel **delle proprietà** finestra, fare clic sul **Sfoglia** pulsante il **schemi** proprietà.
+5. Nella finestra **Proprietà** fare clic sul pulsante **Sfoglia** nella proprietà **schemi** .
 
-6. Nell'elenco degli schemi XSD, selezionare la *vsct.xsd* dello schema. Se non è nell'elenco, fare clic su **Add** e quindi individuare il file in un'unità locale. Fare clic su **OK** al termine.
+6. Nell'elenco degli schemi XSD selezionare lo schema *vsct. xsd* . Se non è presente nell'elenco, fare clic su **Aggiungi** e quindi individuare il file in un'unità locale. Al termine, fare clic su **OK** .
 
-7. Nel file XML, digitare *< CommandTable* e quindi premere **scheda**. Chiudere il tag digitando *>* .
+7. Nel file XML digitare *< CommandTable* , quindi premere **Tab**. Chiudere il tag digitando *>* .
 
-    Questa azione viene creata una semplice *vsct* file.
+    Questa azione crea un file con *estensione vsct* di base.
 
-8. Inserire gli elementi del file XML che si desidera aggiungere, in base al [riferimenti allo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md). Per altre informazioni, vedere [creare i file con estensione vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
+8. Inserire gli elementi del file XML che si desidera aggiungere, in base al [riferimento XML Schema vsct](../../extensibility/vsct-xml-schema-reference.md). Per ulteriori informazioni, vedere la pagina relativa ai [file Author. vsct](../../extensibility/internals/authoring-dot-vsct-files.md).
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare un File con estensione vsct da un file CTC esistente
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedura: Creare un file con estensione vsct da un file CTC esistente
 
-È possibile creare un XML basato *vsct* file da una tabella esistente di comando *CTC* file di origine. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (VSCT).
+È possibile creare un file con *estensione vsct* basato su XML da un file di origine *CTC* esistente della tabella dei comandi. In questo modo, si può sfruttare il nuovo formato basato su XML del compilatore della tabella comandi di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (VSCT).
 
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Per creare un file con estensione vsct da un file CTC
 
 1. Ottenere una copia del linguaggio Perl.
 
-2. Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, in genere all'interno di  *\<percorso di installazione di Visual Studio SDK > \visualstudiointegration\tools\bin.* cartella.
+2. Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, che in genere si trova nel  *\<percorso di installazione di Visual Studio SDK > cartella \VisualStudioIntegration\Tools\bin* .
 
-3. Ottenere una copia del *CTC* file di origine che si desidera convertire.
+3. Ottenere una copia del file di origine con *estensione CTC* che si desidera convertire.
 
 4. Inserire i file nella stessa directory.
 
-5. Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra prompt dei comandi, passare alla directory.
+5. Nella finestra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] del prompt dei comandi passare alla directory.
 
-6. Tipo
+6. Type
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
    ```
 
-    in cui *Pkgcmd* è il nome del *CTC* file e *Pkgcmd* è il nome del *vsct* file che si desidera creare.
+    dove *PkgCmd. CTC* è il nome del file con *estensione CTC* e *PkgCmd. vsct* è il nome del file con *estensione vsct* che si vuole creare.
 
-    Questa azione crea un nuovo *vsct* file di origine di tabella comandi XML. È possibile compilare il file usando *Vsct.exe*, il compilatore VSCT, come si procederebbe per un *con estensione vsct* file.
+    Questa azione crea un nuovo file di origine della tabella di comandi XML *. vsct* . È possibile compilare il file usando *vsct. exe*, il compilatore vsct, come qualsiasi altro file con *estensione vsct* .
 
    > [!NOTE]
-   > È possibile migliorare la leggibilità del *vsct* file riformattando i commenti XML.
+   > È possibile migliorare la leggibilità del file con *estensione vsct* riformattando i commenti XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
 ## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procedura: Creare un file con estensione vsct da un file CTO esistente
 
-È possibile creare un XML basato *vsct* file da un file binario esistente *CTO* file. Questa operazione consente di sfruttare il nuovo formato di compilatore della tabella comandi. Questo processo funziona anche se il *CTO* file è stato compilato da un *CTC* file. È possibile modificare e compilare il *vsct* file in un altro file CTO.
+È possibile creare un file con estensione *vsct* basato su XML da un file *CTO* binario esistente. Questa operazione consente di sfruttare il nuovo formato di compilatore della tabella comandi. Questo processo funziona anche se il file *CTO* è stato compilato da un file *CTC* . È possibile modificare e compilare il file con estensione *vsct* in un altro file CTO.
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Per creare un file con estensione vsct da un file CTO
 
-1. Ottenere copie dei *CTO* file e il corrispondente *ctsym* file.
+1. Ottenere copie del file *CTO* e del corrispondente file *ctsym* .
 
-2. Inserire i file nella stessa directory di *vsct.exe* compilatore.
+2. Inserire i file nella stessa directory del compilatore *vsct. exe* .
 
-3. Al prompt dei comandi di Visual Studio, passare alla directory che contiene il *CTO* e *ctsym* file.
+3. Al prompt dei comandi di Visual Studio passare alla directory che contiene i file con *estensione CTO* e *ctsym* .
 
-4. Tipo
+4. Type
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
     ```
 
-     in cui \<ctofilename\> è il nome del *CTO* file \<vsctfilename\> è il nome del *vsct* file che si desidera creare e \<symfilename\> è il nome del *ctsym* file.
+     dove \<ctofilename\> \<\> \< è il nome del file CTO, vsctfilename è il nome del file con estensione vsct che si vuole creare e symfilename è il nome di\> il file con *estensione ctsym* .
 
-     Questo processo crea una nuova *vsct* file del compilatore della tabella comandi XML. È possibile modificare e compilare il file con *vsct.exe*, il compilatore vsct, come si procederebbe per un *con estensione vsct* file.
+     Questo processo crea un nuovo file del compilatore della tabella comandi XML *. vsct* . È possibile modificare e compilare il file con *vsct. exe*, il compilatore vsct, come qualsiasi altro file con *estensione vsct* .
 
 ## <a name="compile-the-code"></a>Compilare il codice
- Aggiungendo semplicemente una *vsct* file a un progetto non viene spostato da compilare. È necessario includerlo nel processo di compilazione.
+ La semplice aggiunta di un file con *estensione vsct* a un progetto non ne comporta la compilazione. È necessario incorporarlo nel processo di compilazione.
 
-### <a name="to-add-a-vsct-file-to-project-compilation"></a>Per aggiungere un file con estensione vsct per la compilazione del progetto
+### <a name="to-add-a-vsct-file-to-project-compilation"></a>Per aggiungere un file con estensione vsct alla compilazione del progetto
 
-1. Aprire il file di progetto nell'editor. Se il progetto viene caricato, è necessario prima scaricarlo.
+1. Aprire il file di progetto nell'editor. Se il progetto viene caricato, è necessario scaricarlo per primo.
 
 2. Aggiungere un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) che contiene un `VSCTCompile` elemento, come illustrato nell'esempio seguente.
 
@@ -124,9 +124,9 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
     ```
 
-     Il `ResourceName` elemento deve essere impostato sempre su `Menus.ctmenu`.
+     L' `ResourceName` elemento deve essere sempre impostato su `Menus.ctmenu`.
 
-3. Se il progetto contiene un *resx* Aggiungi un' `EmbeddedResource` elemento contenente un `MergeWithCTO` elemento, come illustrato nell'esempio seguente:
+3. Se il progetto contiene un file con *estensione resx* , aggiungere `EmbeddedResource` un elemento che contiene `MergeWithCTO` un elemento, come illustrato nell'esempio seguente:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -136,9 +136,9 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
     ```
 
-     Questo markup deve essere inseriti i `ItemGroup` elemento che contiene risorse incorporate.
+     Questo markup deve entrare nell' `ItemGroup` elemento che contiene risorse incorporate.
 
-4. Aprire il file del pacchetto, in genere denominato  *\<NomeProgetto\>Package.cs* oppure  *\<ProjectName\>Package.vb*, nell'editor.
+4. Aprire il file del pacchetto, in genere denominato  *\<\>NomeProgetto Package.cs* o  *\<NomeProgetto\>Package. vb*, nell'editor.
 
 5. Aggiungere un `ProvideMenuResource` attributo alla classe del pacchetto, come illustrato nell'esempio seguente.
 
@@ -146,9 +146,9 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
     [ProvideMenuResource("Menus.ctmenu", 1)]
     ```
 
-     Il primo valore del parametro deve corrispondere al valore della `ResourceName` attributo è definito nel file di progetto.
+     Il primo valore del parametro deve corrispondere al valore dell' `ResourceName` attributo definito nel file di progetto.
 
 ## <a name="see-also"></a>Vedere anche
-- [File con estensione vsct autore](../../extensibility/internals/authoring-dot-vsct-files.md)
-- [File di Visual Studio comando table (vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [Riferimento allo schema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)
+- [Crea file con estensione vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
+- [File della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Riferimento XML Schema VSCT](../../extensibility/vsct-xml-schema-reference.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e823a58d7a2be45c43305320bd32175de7a3fad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545394"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921325"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: I campi dei tipi di valore devono essere portabili
 
@@ -27,17 +27,17 @@ ms.locfileid: "62545394"
 |-|-|
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
-|Category|Microsoft.Portability|
-|Modifica importante|Rilievo - se il campo può essere visualizzato all'esterno dell'assembly.<br /><br /> Non sostanziale - Se il campo non è visibile all'esterno dell'assembly.|
+|Category|Microsoft. portabilità|
+|Modifica importante|Interruzioni: se il campo può essere visualizzato all'esterno dell'assembly.<br /><br /> Senza interruzioni: se il campo non è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
- Questa regola verifica che le strutture che vengono dichiarate con layout esplicito vengano allineate correttamente quando il marshalling nel codice non gestito nei sistemi operativi a 64 bit. IA-64 non consente gli accessi alla memoria non allineata e il processo verrà arrestato se questa violazione non viene risolto.
+Questa regola consente di verificare che le strutture dichiarate con layout esplicito vengano allineate correttamente quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 64 bit. IA-64 non consente accessi di memoria non allineati e il processo si arresterà in modo anomalo se questa violazione non è corretta.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Strutture con layout esplicito che contiene campi non allineati causano arresti anomali nei sistemi operativi a 64 bit.
+Le strutture con layout esplicito che contiene campi non allineati provocano arresti anomali nei sistemi operativi a 64 bit.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Tutti i campi che sono inferiori a 8 byte devono disporre di offset che siano un multiplo della dimensione e i campi che sono a 8 byte o superiori devono avere gli offset sono un multiplo di 8. Un'altra soluzione consiste nell'usare `LayoutKind.Sequential` invece di `LayoutKind.Explicit`se ragionevole.
+Per tutti i campi di dimensioni inferiori a 8 byte devono essere presenti offset che sono un multiplo delle dimensioni e i campi di 8 byte o più piccoli devono contenere offset che sono un multiplo di 8. Un'altra soluzione consiste nell' `LayoutKind.Sequential` usare al `LayoutKind.Explicit`posto di, se ragionevole.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Questo avviso deve essere eliminato solo se si verifica in errore.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Questo avviso deve essere eliminato solo se si verifica un errore.

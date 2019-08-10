@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00accdbdb08e4267bbca2b7e5fab8002f539f1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c528266c54bbb2f3f0d9420461d700a46b09bd5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546479"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922276"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Usare StringComparison ordinale
 
@@ -27,23 +27,23 @@ ms.locfileid: "62546479"
 |-|-|
 |TypeName|UseOrdinalStringComparison|
 |CheckId|CA1309|
-|Category|Microsoft.Globalization|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. globalizzazione|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un'operazione di confronto di stringhe linguistico non viene impostata la <xref:System.StringComparison> parametro a **ordinale** o **OrdinalIgnoreCase**.
+Un'operazione di confronto tra stringhe non linguistiche non imposta il <xref:System.StringComparison> parametro su **ordinal** o **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Molte operazioni stringa, soprattutto il <xref:System.String.Compare%2A?displayProperty=fullName> e <xref:System.String.Equals%2A?displayProperty=fullName> metodi forniscono ora un overload che accetta un <xref:System.StringComparison?displayProperty=fullName> come parametro un valore di enumerazione.
+Molte operazioni sulle stringhe, soprattutto i <xref:System.String.Compare%2A?displayProperty=fullName> metodi e <xref:System.String.Equals%2A?displayProperty=fullName> , forniscono ora un overload che accetta un <xref:System.StringComparison?displayProperty=fullName> valore di enumerazione come parametro.
 
- Quando si specifica **StringComparison. Ordinal** oppure **StringComparison. OrdinalIgnoreCase**, nel confronto tra stringhe non è linguistico. Le funzionalità specifiche del linguaggio naturale, ovvero vengono ignorate quando vengono prese decisioni di confronto. Ignorando le funzionalità del linguaggio naturale, significa che le decisioni sono basate su confronti di byte semplici e non su maiuscole e minuscole o tabelle di equivalenza parametrizzate dalle impostazioni cultura. Di conseguenza, impostando in modo esplicito il parametro sul **StringComparison. Ordinal** oppure **StringComparison. OrdinalIgnoreCase**, codice spesso snellire, aumenta la correttezza e diventa più affidabile.
+Quando si specifica **StringComparison. Ordinal** o **StringComparison. OrdinalIgnoreCase**, il confronto tra stringhe non è linguistico. In altre parole, le funzionalità specifiche del linguaggio naturale vengono ignorate quando vengono prese decisioni di confronto. Se si ignorano le funzionalità del linguaggio naturale, le decisioni sono basate su confronti di byte semplici e non sulle tabelle di maiuscole e minuscole o di equivalenza parametrizzate dalle impostazioni cultura. Di conseguenza, impostando in modo esplicito il parametro su **StringComparison. Ordinal** o **StringComparison. OrdinalIgnoreCase**, il codice ottiene spesso una velocità, aumenta la correttezza e diventa più affidabile.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il metodo di confronto di stringhe a un overload che accetta il <xref:System.StringComparison?displayProperty=fullName> enumerazione come parametro, quindi specificare il **ordinale** oppure **OrdinalIgnoreCase**. Ad esempio, modificare `String.Compare(str1, str2)` in `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Per correggere una violazione di questa regola, modificare il metodo di confronto tra stringhe in un overload che <xref:System.StringComparison?displayProperty=fullName> accetta l'enumerazione come parametro e specificare **ordinal** o **OrdinalIgnoreCase**. Ad esempio, modificare `String.Compare(str1, str2)` in `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola quando la libreria o l'applicazione è destinata a un numero limitato di utenti locale o quando la semantica delle impostazioni cultura correnti deve essere utilizzata.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola quando la libreria o l'applicazione è destinata a un gruppo di destinatari locale limitato oppure quando è necessario usare la semantica delle impostazioni cultura correnti.
 
 ## <a name="see-also"></a>Vedere anche
 

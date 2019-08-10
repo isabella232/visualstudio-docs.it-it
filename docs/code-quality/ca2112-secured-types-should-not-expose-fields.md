@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d46c9fe1b97b5bdfb081150a44aa69363eced53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43ef4165823f59045dda8c05b5679fdd3b795114
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808228"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921087"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: I tipi protetti non devono esporre campi
 
@@ -31,33 +31,33 @@ ms.locfileid: "62808228"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico o protetto contiene campi pubblici e protetta da un [richieste di collegamento](/dotnet/framework/misc/link-demands).
+Un tipo pubblico o protetto contiene campi pubblici ed è protetto da [richieste di collegamento](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Se il codice ha accesso a un'istanza di un tipo protetta da una richiesta di collegamento, non è necessario che il codice soddisfi la richiesta di collegamento per accedere ai campi del tipo.
+Se il codice ha accesso a un'istanza di un tipo protetta da una richiesta di collegamento, non è necessario che il codice soddisfi la richiesta di collegamento per accedere ai campi del tipo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, contrassegnare i campi non pubblici e aggiungere i metodi che restituiscono i dati del campo o proprietà pubbliche. Controlli di sicurezza LinkDemand su tipi di proteggono l'accesso a proprietà e metodi del tipo. Sicurezza dall'accesso di codice, tuttavia, non si applica ai campi.
+Per correggere una violazione di questa regola, rendere i campi non pubblici e aggiungere proprietà o metodi pubblici che restituiscono i dati del campo. I controlli di sicurezza LinkDemand sui tipi proteggono l'accesso alle proprietà e ai metodi del tipo. Tuttavia, la sicurezza dall'accesso di codice non si applica ai campi.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Per problemi di sicurezza sia per una progettazione ottimale, è necessario correggere le violazioni, rendendo non pubblici campi pubblici. È possibile eliminare un avviso da questa regola se il campo non contiene informazioni che devono rimanere protette e non fare affidamento sul contenuto del campo.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Per motivi di sicurezza e per una progettazione corretta, è consigliabile correggere le violazioni rendendo i campi pubblici non pubblici. È possibile eliminare un avviso da questa regola se il campo non contiene informazioni che devono rimanere protette e non si basano sul contenuto del campo.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente è costituito da una libreria di tipi (`SecuredTypeWithFields`) con i campi non protetti, un tipo (`Distributor`) consente di creare istanze del tipo di libreria e passate erroneamente istanze di tipi di autorizzazioni insufficienti per crearli e il codice dell'applicazione può leggere i campi di un'istanza anche se non dispone dell'autorizzazione che protegge il tipo.
+L'esempio seguente è costituito da un tipo di`SecuredTypeWithFields`libreria () con campi non protetti, un tipo`Distributor`() in grado di creare istanze del tipo di libreria e le istanze passate erroneamente ai tipi non dispongono dell'autorizzazione per crearle e del codice dell'applicazione che consente di leggere i campi di un'istanza anche se non dispone dell'autorizzazione che protegge il tipo.
 
- Il codice di libreria seguente viola la regola.
+Il codice della libreria seguente viola la regola.
 
- [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]
+[!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]
 
 ## <a name="example-1"></a>Esempio 1
- L'applicazione non è possibile creare un'istanza a causa la richiesta di collegamento che consente di proteggere il tipo protetto. La classe seguente consente all'applicazione ottenere un'istanza del tipo protetto.
+L'applicazione non è in grado di creare un'istanza di a causa della richiesta di collegamento che protegge il tipo protetto. La classe seguente consente all'applicazione di ottenere un'istanza del tipo protetto.
 
- [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]
+[!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]
 
 ## <a name="example-2"></a>Esempio 2
- L'applicazione riportata di seguito viene illustrato come fare, senza l'autorizzazione per accedere ai metodi del tipo protetta, accessibile dal codice relativi campi.
+Nell'applicazione seguente viene illustrato come, senza l'autorizzazione ad accedere ai metodi di un tipo protetto, il codice può accedere ai relativi campi.
 
- [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]
+[!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]
 
 Questo esempio produce il seguente output:
 

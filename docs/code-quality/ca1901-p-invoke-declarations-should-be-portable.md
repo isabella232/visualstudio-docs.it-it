@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545459"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921308"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Le dichiarazioni P/Invoke devono essere portabili
 
@@ -27,27 +27,27 @@ ms.locfileid: "62545459"
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Category|Microsoft.Portability|
-|Modifica importante|Rilievo - se i P/Invoke è visibile all'esterno dell'assembly. Non importante: se i P/Invoke non è visibile all'esterno dell'assembly.|
+|Category|Microsoft. portabilità|
+|Modifica importante|Interruzioni: se il P/Invoke è visibile all'esterno dell'assembly. Senza interruzioni: se il P/Invoke non è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
- Questa regola restituisce le dimensioni di ogni parametro e il valore restituito di P/Invoke e verifica che la dimensione, durante il marshalling nel codice non gestito nelle piattaforme a 32 e 64 bit, sia corretta. La violazione di questa regola più comune consiste nel passare un numero intero a dimensione fissa in cui è necessaria una variabile dipendente dalla piattaforma, della dimensione del puntatore.
+Questa regola valuta la dimensione di ciascun parametro e il valore restituito di P/Invoke e verifica che le relative dimensioni, quando viene eseguito il marshalling a codice non gestito su piattaforme a 32 e 64 bit, siano corrette. La violazione più comune di questa regola consiste nel passare un valore integer a dimensione fissa in cui è richiesta una variabile di tipo puntatore dipendente dalla piattaforma.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Uno dei seguenti scenari viola questa regola si verifica:
+Uno degli scenari seguenti viola questa regola:
 
-- Il valore restituito o parametro è tipizzato come un intero di dimensioni fisse quando deve essere digitato come un `IntPtr`.
+- Il valore restituito o il parametro viene tipizzato come intero a dimensione fissa quando deve essere digitato `IntPtr`come.
 
-- Il valore restituito o parametro è tipizzato come un `IntPtr` quando deve essere digitato come intero a dimensione fissa.
+- Il valore restituito o il parametro viene tipizzato `IntPtr` come un oggetto quando deve essere digitato come Integer a dimensione fissa.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- È possibile correggere questa violazione utilizzando `IntPtr` oppure `UIntPtr` per rappresentare gli handle anziché `Int32` o `UInt32`.
+È possibile correggere questa violazione `IntPtr` utilizzando o `UIntPtr` `Int32` per rappresentare gli handle anziché o `UInt32`.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non si deve eliminare l'avviso.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non visualizzare questo avviso.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra una violazione della regola.
+Nell'esempio seguente viene illustrata una violazione di questa regola.
 
 ```csharp
 internal class NativeMethods
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
- In questo esempio, il `nIconIndex` parametro viene dichiarato come un `IntPtr`, ovvero larghezza su una piattaforma a 32 bit e 8 byte in una piattaforma a 64 bit di 4 byte. Nella dichiarazione di non gestita che segue, è possibile osservare che `nIconIndex` è un intero senza segno a 4 byte in tutte le piattaforme.
+In questo esempio, il `nIconIndex` parametro viene dichiarato come un `IntPtr`, che ha una larghezza di 4 byte in una piattaforma a 32 bit e 8 byte in una piattaforma a 64 bit. Nella dichiarazione non gestita riportata di seguito è possibile vedere che `nIconIndex` si tratta di un Unsigned Integer a 4 byte in tutte le piattaforme.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Esempio
- Per correggere la violazione, modificare la dichiarazione per il seguente:
+Per correggere la violazione, modificare la dichiarazione nel modo seguente:
 
 ```csharp
 internal class NativeMethods{
@@ -77,4 +77,4 @@ internal class NativeMethods{
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Portability Warnings](../code-quality/portability-warnings.md)
+[Portability Warnings](../code-quality/portability-warnings.md)
