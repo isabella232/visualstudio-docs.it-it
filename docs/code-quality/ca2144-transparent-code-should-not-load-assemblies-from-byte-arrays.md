@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971c7e794c5b782c2ba71be868fc2f9e7747fdb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ff77d02ef9778112f5229e8104e9a1c1a1cde87
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542278"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920431"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Il codice Transparent non deve caricare assembly da matrici di byte
 
@@ -27,7 +27,7 @@ ms.locfileid: "62542278"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo trasparente carica un assembly da una matrice di byte usando uno dei metodi seguenti:
+Un metodo trasparente carica un assembly da una matrice di byte utilizzando uno dei metodi seguenti:
 
 - <xref:System.Reflection.Assembly.Load%2A>
 
@@ -36,15 +36,15 @@ ms.locfileid: "62542278"
 - <xref:System.Reflection.Assembly.Load%2A>
 
 ## <a name="rule-description"></a>Descrizione della regola
- La revisione di sicurezza per il codice trasparente non è accurata come la revisione di sicurezza per il codice critico, perché il primo non può eseguire azioni sensibili per la sicurezza. Assembly caricati da una matrice di byte potrebbero non essere notati nel codice trasparente e quella matrice di byte potrebbe contenere codice critico o ancora più importante codice critico per la sicurezza, che deve essere controllato. Pertanto, il codice transparent non deve caricare assembly da una matrice di byte.
+La revisione di sicurezza per il codice trasparente non è accurata come la revisione di sicurezza per il codice critico, perché il primo non può eseguire azioni sensibili per la sicurezza. Assembly caricati da una matrice di byte potrebbero non essere notati nel codice trasparente e quella matrice di byte potrebbe contenere codice critico o ancora più importante codice critico per la sicurezza, che deve essere controllato. Pertanto, il codice Transparent non deve caricare assembly da una matrice di byte.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, contrassegnare il metodo in cui viene caricato l'assembly con il <xref:System.Security.SecurityCriticalAttribute> o il <xref:System.Security.SecuritySafeCriticalAttribute> attributo.
+Per correggere una violazione di questa regola, contrassegnare il metodo che carica l'assembly con l' <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecuritySafeCriticalAttribute> attributo o.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- La regola viene attivata nel codice seguente perché un metodo trasparente carica un assembly da una matrice di byte.
+La regola viene attivata sul codice seguente perché un metodo trasparente carica un assembly da una matrice di byte.
 
- [!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]
+[!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]

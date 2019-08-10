@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c019e98e7f1311b6521dff563cb8e7bb0a2356e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02e69a97468675cd6f7530793581c15717465d6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62544018"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921053"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Impostare come sealed i metodi che soddisfano interfacce private
 
@@ -35,17 +35,17 @@ ms.locfileid: "62544018"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico ereditabile fornisce un'implementazione di metodo sottoponibile a override di un `internal` (`Friend` in Visual Basic) dell'interfaccia.
+Un tipo pubblico ereditabile fornisce un'implementazione di metodo sottoponibile `internal` a`Friend` override di un'interfaccia (in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I metodi di interfaccia avere accessibilità pubblica, non può essere modificato dal tipo di implementazione. Un'interfaccia interna consente di creare un contratto che non può essere implementato all'esterno dell'assembly che definisce l'interfaccia. Un tipo pubblico che implementa un metodo di un'interfaccia interna usando le `virtual` (`Overridable` in Visual Basic) modificatore consente al metodo da sottoporre a override da un tipo derivato è all'esterno dell'assembly. Se un secondo tipo nell'assembly di definizione viene chiamato il metodo e prevede un contratto solo interni, comportamento può essere compromessi quando, invece, viene eseguito il metodo sottoposto a override nell'assembly esterno. In questo modo viene creata una vulnerabilità di sicurezza.
+I metodi di interfaccia hanno accessibilità pubblica, che non possono essere modificati dal tipo di implementazione. Un'interfaccia interna crea un contratto che non deve essere implementato all'esterno dell'assembly che definisce l'interfaccia. Un tipo pubblico che implementa un metodo di un'interfaccia interna usando il `virtual` modificatore (`Overridable` in Visual Basic) consente di eseguire l'override del metodo da un tipo derivato esterno all'assembly. Se un secondo tipo nell'assembly di definizione chiama il metodo e prevede un contratto solo interno, il comportamento potrebbe essere compromesso quando, invece, viene eseguito il metodo sottoposto a override nell'assembly esterno. Ciò consente di creare una vulnerabilità di sicurezza.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, impedire il metodo da sottoporre a override all'esterno dell'assembly usando uno dei seguenti:
+Per correggere una violazione di questa regola, impedire che il metodo venga sottoposto a override all'esterno dell'assembly utilizzando uno dei seguenti elementi:
 
-- Impostare il tipo dichiarante `sealed` (`NotInheritable` in Visual Basic).
+- Creare il tipo `sealed` dichiarante`NotInheritable` (in Visual Basic).
 
-- Modificare l'accessibilità per il tipo dichiarante `internal` (`Friend` in Visual Basic).
+- Modificare l'accessibilità del tipo `internal` dichiarante in (`Friend` in Visual Basic).
 
 - Rimuovere tutti i costruttori pubblici dal tipo dichiarante.
 
@@ -53,22 +53,22 @@ ms.locfileid: "62544018"
 
 - Implementare il metodo in modo esplicito.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola se, dopo un attento esame, nessun problema di sicurezza che potrebbero essere sfruttabile se viene eseguito l'override di metodo all'esterno dell'assembly.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola se, dopo un'attenta revisione, non esistono problemi di sicurezza che potrebbero essere sfruttabili se il metodo viene sottoposto a override all'esterno dell'assembly.
 
 ## <a name="example-1"></a>Esempio 1
- Nell'esempio seguente viene illustrato un tipo, `BaseImplementation`, che violano questa regola.
+Nell'esempio seguente viene illustrato un tipo `BaseImplementation`,, che viola questa regola.
 
- [!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
- [!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
- [!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
+[!code-cpp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_1.cpp)]
+[!code-csharp[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_1.cs)]
+[!code-vb[FxCop.Security.SealMethods1#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_1.vb)]
 
 ## <a name="example-2"></a>Esempio 2
- Nell'esempio seguente sfrutta l'implementazione del metodo virtuale dell'esempio precedente.
+Nell'esempio seguente viene sfruttata l'implementazione del metodo virtuale dell'esempio precedente.
 
- [!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
- [!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
- [!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
+[!code-cpp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CPP/ca2119-seal-methods-that-satisfy-private-interfaces_2.cpp)]
+[!code-csharp[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/CSharp/ca2119-seal-methods-that-satisfy-private-interfaces_2.cs)]
+[!code-vb[FxCop.Security.SealMethods2#1](../code-quality/codesnippet/VisualBasic/ca2119-seal-methods-that-satisfy-private-interfaces_2.vb)]
 
 ## <a name="see-also"></a>Vedere anche
 

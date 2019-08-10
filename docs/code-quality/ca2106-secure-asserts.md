@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545700"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921078"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Asserzioni protette
 
@@ -31,16 +31,16 @@ ms.locfileid: "62545700"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo asserisce un'autorizzazione e non esegue alcuna verifica di sicurezza sul chiamante.
+Un metodo dichiara un'autorizzazione e non esegue alcun controllo di sicurezza sul chiamante.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando si asserisce un'autorizzazione di sicurezza senza eseguire alcun controllo di sicurezza, nel codice potrebbero restare punti deboli nella sicurezza. Uno stack di sicurezza si interrompe quando viene dichiarata un'autorizzazione di sicurezza. Se si asserisce un'autorizzazione senza eseguire alcun controllo sul chiamante, il chiamante indirettamente potrebbe eseguire codice con le autorizzazioni. Asserzioni senza controlli di sicurezza sono consentiti se si conosce che l'asserzione non può essere usata in modo dannoso. Un'asserzione non crea problemi se il codice chiamato sia innocuo o se gli utenti non è possibile passare informazioni arbitrarie al codice che si chiama.
+Quando si asserisce un'autorizzazione di sicurezza senza eseguire alcun controllo di sicurezza, nel codice potrebbero restare punti deboli nella sicurezza. Un percorso dello stack di sicurezza si interrompe quando viene dichiarata un'autorizzazione di sicurezza. Se si dichiara un'autorizzazione senza eseguire controlli sul chiamante, il chiamante potrebbe eseguire indirettamente il codice utilizzando le autorizzazioni. Le asserzioni senza controlli di sicurezza sono consentite se si è certi che l'asserzione non può essere usata in modo dannoso. Un'asserzione è innocua se il codice chiamato è innocuo o se gli utenti non possono passare informazioni arbitrarie al codice chiamato.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere una richiesta di sicurezza per il metodo o nel relativo tipo dichiarante.
+Per correggere una violazione di questa regola, aggiungere una richiesta di sicurezza al metodo o al relativo tipo dichiarante.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Eliminare un avviso da questa regola solo dopo un'attenta revisione della sicurezza.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Eliminare un avviso da questa regola solo dopo un'attenta revisione della sicurezza.
 
 ## <a name="see-also"></a>Vedere anche
 

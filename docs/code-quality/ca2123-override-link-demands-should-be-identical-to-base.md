@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52959279bca5aa0f86722050f6118f64997a901d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545050"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920818"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Le richieste di collegamento negli override devono essere identiche a quelle nei metodi di base
 
@@ -31,23 +31,23 @@ ms.locfileid: "62545050"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo pubblico o protetto in un tipo pubblico esegue l'override di un metodo o implementa un'interfaccia e non hanno gli stessi [richieste di collegamento](/dotnet/framework/misc/link-demands) dell'interfaccia o un metodo virtuale.
+Un metodo pubblico o protetto in un tipo pubblico esegue l'override di un metodo o implementa un'interfaccia e non ha le stesse [richieste di collegamento](/dotnet/framework/misc/link-demands) dell'interfaccia o del metodo virtuale.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola associa un metodo al relativo metodo di base che può essere un'interfaccia o un metodo virtuale in un altro tipo, quindi confronta le richieste di collegamento in ognuno. Se il metodo o il metodo di base dispone di una richiesta di collegamento e l'altra non avviene, viene segnalata una violazione.
+Questa regola associa un metodo al relativo metodo di base che può essere un'interfaccia o un metodo virtuale in un altro tipo, quindi confronta le richieste di collegamento in ognuno. Una violazione viene segnalata se il metodo o il metodo di base dispone di una richiesta di collegamento e l'altro no.
 
- Se questa regola viene violata, un chiamante dannoso può ignorare la richiesta di collegamento chiamando semplicemente il metodo non sicuro.
+Se questa regola viene violata, un chiamante malintenzionato può ignorare la richiesta di collegamento semplicemente chiamando il metodo non protetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, applicare la stessa richiesta di collegamento per il metodo di override o implementazione. Se questo non è possibile, contrassegnare il metodo con una richiesta completa oppure rimuovere completamente l'attributo.
+Per correggere una violazione di questa regola, applicare la stessa richiesta di collegamento al metodo o all'implementazione di override. Se questa operazione non è possibile, contrassegnare il metodo con una richiesta completa oppure rimuovere completamente l'attributo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra vari le violazioni di questa regola.
+Nell'esempio seguente vengono illustrate varie violazioni di questa regola.
 
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
+[!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
 ## <a name="see-also"></a>Vedere anche
 

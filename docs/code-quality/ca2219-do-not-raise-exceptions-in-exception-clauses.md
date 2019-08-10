@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a644cf3dc934676a14f1c5c59a6582fcd45ae7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f8e949e21530654882cba99a7d9fedad8b5b59b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806654"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920261"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Non generare eccezioni in clausole di eccezione
 
@@ -28,26 +28,26 @@ ms.locfileid: "62806654"
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
 |Category|Microsoft.Usage|
-|Modifica importante|Non importante, di rilievo|
+|Modifica importante|Senza interruzioni, interruzioni|
 
 ## <a name="cause"></a>Causa
- Viene generata un'eccezione da un `finally`, filtro o una clausola fault.
+Viene generata un'eccezione da una `finally`clausola, Filter o fault.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Se in una clausola di eccezione viene generata un'eccezione, aumenta notevolmente la difficoltà del debug.
+Quando un'eccezione viene generata in una clausola di eccezione, aumenta significativamente la difficoltà del debug.
 
- Quando viene generata un'eccezione un `finally` o clausola fault, la nuova eccezione nasconde l'eccezione attiva, se presente. Ciò rende difficile da rilevare ed eseguire il debug dell'errore originale.
+Quando viene generata un'eccezione in una `finally` clausola o fault, la nuova eccezione nasconde l'eccezione attiva, se presente. In questo modo è difficile rilevare ed eseguire il debug dell'errore originale.
 
- Quando viene generata un'eccezione in una clausola di filtro, il runtime in modo invisibile intercetta l'eccezione e fa sì che il filtro restituisce false. Non è possibile indicare la differenza tra la restituzione di false e un'eccezione da parte di un filtro. Questo rende difficile rilevare e il debug degli errori nella logica del filtro.
+Quando viene generata un'eccezione in una clausola di filtro, il runtime rileva automaticamente l'eccezione e fa in modo che il filtro restituisca false. Non esiste alcun modo per distinguere la differenza tra il filtro e la valutazione di false e un'eccezione generata da un filtro. Ciò rende difficile rilevare ed eseguire il debug degli errori nella logica del filtro.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere la violazione di questa regola, non generare in modo esplicito un'eccezione da un `finally`, filtro o una clausola fault.
+Per correggere questa violazione di questa regola, non generare in modo esplicito un'eccezione da `finally`una clausola, un filtro o un errore.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non eliminare un avviso per questa regola. Non esistono scenari in cui un'eccezione generata in una clausola di eccezione fornisce un vantaggio per l'esecuzione del codice.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non eliminare un avviso per questa regola. Non esistono scenari in cui un'eccezione generata in una clausola di eccezione fornisce un vantaggio al codice in esecuzione.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1065: Non generare eccezioni in posizioni impreviste](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+[CA1065: Non generare eccezioni in posizioni non previste](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Avvisi di progettazione](../code-quality/design-warnings.md)
+[Avvisi di progettazione](../code-quality/design-warnings.md)

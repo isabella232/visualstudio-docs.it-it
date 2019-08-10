@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 037f629a205c7af24509b8ca2e409683d1f085ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546362"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922142"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: I P/Invoke non devono essere visibili
 
@@ -30,23 +30,23 @@ ms.locfileid: "62546362"
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|Category|Microsoft.Interoperability|
+|Category|Microsoft. interoperabilità|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo pubblico o protetto in un tipo pubblico presenta i <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attributo (implementato anche dal `Declare` parola chiave in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Un metodo pubblico o protetto in un tipo pubblico dispone dell' <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attributo, anch ' esso implementato `Declare` dalla parola [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]chiave in.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I metodi contrassegnati con il <xref:System.Runtime.InteropServices.DllImportAttribute> attributo (o i metodi che vengono definiti usando il `Declare` parola chiave in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) usare Platform Invocation Services per accedere al codice non gestito. Questi metodi non devono essere esposti. Mantenendo i metodi privati o interni, è assicurarsi che la libreria non può essere utilizzata da una violazione di sicurezza consentendo ai chiamanti di accedere alle API non gestite che non è stato possibile chiamare in caso contrario.
+I metodi contrassegnati con l' <xref:System.Runtime.InteropServices.DllImportAttribute> attributo (o i metodi definiti tramite la parola chiave in) utilizzano i `Declare` servizi di chiamata della [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]piattaforma per accedere al codice non gestito. Questi metodi non devono essere esposti. Mantenendo questi metodi privati o interni, assicurarsi che la libreria non possa essere usata per violare la sicurezza consentendo ai chiamanti di accedere alle API non gestite che non possono chiamare in altro modo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il livello di accesso del metodo.
+Per correggere una violazione di questa regola, modificare il livello di accesso del metodo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente dichiara un metodo che violano questa regola.
+Nell'esempio seguente viene dichiarato un metodo che viola questa regola.
 
- [!code-vb[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/VisualBasic/ca1401-p-invokes-should-not-be-visible_1.vb)]
- [!code-csharp[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/CSharp/ca1401-p-invokes-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/VisualBasic/ca1401-p-invokes-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Interoperability.DllImports#1](../code-quality/codesnippet/CSharp/ca1401-p-invokes-should-not-be-visible_1.cs)]

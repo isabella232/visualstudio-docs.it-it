@@ -1,5 +1,5 @@
 ---
-title: Oggetto VSTextView | Microsoft Docs
+title: Oggetto oggetto VsTextView | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eddd5640b2f8f073f791f6bdb4dc006f8fab0e36
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5d3983dcefd515a43d573166c9bd772fd23bf0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322821"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924147"
 ---
-# <a name="vstextview-object"></a>Oggetto VSTextView
-La visualizzazione di testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In pratica, la visualizzazione è fare riferimento alla maggior parte degli utenti dell'editor. Poiché la vista è separata dal buffer da vari livelli di testo (ritorno a capo automatico, il testo della struttura e così via), la vista non è garantita a essere una rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione di testo, vedere [accesso theText visualizzazione tramite l'API legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+# <a name="vstextview-object"></a>Oggetto oggetto VsTextView
+La visualizzazione di testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In pratica, la visualizzazione è la maggior parte degli utenti che fanno riferimento all'editor. Poiché la vista è separata dal buffer da vari livelli di testo (ritorno a capo automatico, testo della struttura e così via), la vista non è garantita come rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione di testo, vedere [accesso a TheText View con l'API legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md).
 
- Nella tabella seguente mostra le interfacce nel <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> oggetto.
+ Nella tabella seguente vengono illustrate le interfacce <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> dell'oggetto.
 
 |Interfaccia|Descrizione|
 |---------------|-----------------|
@@ -31,13 +31,13 @@ La visualizzazione di testo è una finestra che consente agli utenti di visualiz
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|Interfaccia OLE standard.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite>|Interfaccia OLE standard.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Interfaccia OLE standard.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Consente la creazione delle azioni composte (vale a dire, azioni che vengono raggruppate in un'unità di annullamento/ripristino singolo).|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Fornisce i metodi di base per la gestione e l'accesso a vista. `IVsTextView` non è thread-safe.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Consente la creazione di azioni composte, ovvero azioni raggruppate in una singola unità di annullamento/ripristino.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|Fornisce i metodi di base per la gestione e l'accesso alla vista. `IVsTextView`non è thread-safe.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Crea e gestisce un riquadro della finestra.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Interagisce con livelli di testo.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Esegue operazioni per la vista da un thread diverso.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Interagisce con i livelli di testo.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Esegue operazioni sulla vista da un thread diverso.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Modifica di figure](https://www.microsoft.com/download/details.aspx?id=55984)
-- [Oggetto VSTextBuffer](../extensibility/vstextbuffer-object.md)
-- [Accesso alla visualizzazione theText usando l'API legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+- [Modifica figure](https://www.microsoft.com/download/details.aspx?id=55984)
+- [Oggetto oggetto VsTextBuffer](../extensibility/vstextbuffer-object.md)
+- [Accesso alla vista theText tramite l'API legacy](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

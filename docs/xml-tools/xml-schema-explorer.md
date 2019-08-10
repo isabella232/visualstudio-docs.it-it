@@ -8,45 +8,45 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07c5ba8d28a053b83481cf24e3bc1e450c28844e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 717a5d85a9d3a3251739b62728be572bee1487f6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807984"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926774"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
-Il **XML Schema Explorer** è integrato con Microsoft Visual Studio e l'editor XML per consentire di lavorare con schemi XML Schema definition language (XSD). Quando si apre un file di XML Schema, il **del Set di schemi** verrà visualizzato nel nodo il **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file che vengono fatto riferimento tramite un `include` oppure `import` istruzione, vengono visualizzati anche nella **XML Schema Explorer**.
+**XML Schema Explorer** è integrato con Microsoft Visual Studio e l'editor XML per consentire l'utilizzo di schemi XSD (XML Schema Definition Language). Quando si apre un file di XML Schema, il nodo del **set di schemi** viene visualizzato in **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file a cui viene fatto riferimento tramite `include` un' `import` istruzione o, vengono visualizzati anche in **XML Schema Explorer**.
 
- Il **XML Schema Explorer** consente di eseguire le operazioni seguenti:
+**XML Schema Explorer** consente di eseguire le operazioni seguenti:
 
 - Ottenere una rapida panoramica del set di schemi.
 
 - Esplorare e spostarsi all'interno dell'albero.
 
-- Eseguire ricerche per parola chiave e specifiche dello schema. Per altre informazioni, vedere [ricerche nel set di schemi](../xml-tools/searching-the-schema-set.md).
+- Eseguire ricerche per parola chiave e specifiche dello schema. Per ulteriori informazioni, vedere [la pagina relativa alla ricerca del set di schemi](../xml-tools/searching-the-schema-set.md).
 
-- Aggiungere i risultati della ricerca alla visualizzazione grafico o visualizzazione modello di contenuto
+- Aggiungere i risultati della ricerca alla visualizzazione grafico o al modello di contenuto
 
-- Ordinare l'albero in base a nome, tipo o ordine dei documenti. Per altre informazioni, vedere [ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
+- Ordinare l'albero in base a nome, tipo o ordine dei documenti. Per ulteriori informazioni, vedere [ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
-- Aprire l'editor XML e passare ai percorsi del codice nel file XSD. Per altre informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
+- Aprire l'editor XML e passare a percorsi di codice nel file XSD. Per ulteriori informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
 
 - Generare codice XML di esempio per gli elementi globali.
 
-Il **XML Schema Explorer** fornisce una visualizzazione gerarchica del set di schemi tramite una visualizzazione albero. Il **XML Schema Explorer** fornisce inoltre ricerca, filtro, navigazione e l'ordinamento. Per l'accesso di **XML Schema Explorer**, effettuare una delle operazioni seguenti:
+**XML Schema Explorer** fornisce una visualizzazione gerarchica del set di schemi tramite una visualizzazione struttura ad albero. **XML Schema Explorer** fornisce inoltre funzionalità di ricerca, filtro, navigazione e ordinamento. Per accedere a **XML Schema Explorer**, eseguire una delle operazioni seguenti:
 
-- Se si usa la [visualizzazione iniziale](../xml-tools/start-view.md), fare clic sui **XML Schema Explorer** collegamento.
+- Nella [visualizzazione iniziale](../xml-tools/start-view.md)fare clic sul collegamento **XML Schema Explorer** .
 
-- Se si usa il [visualizzazione grafico](../xml-tools/graph-view.md) o nella [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) e dispone di nodi nell'area di lavoro, usare il menu di scelta rapida per selezionare il **XML Schema Explorer**.
+- Se si è nella [visualizzazione grafico](../xml-tools/graph-view.md) o nella [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) e sono presenti nodi nell'area di lavoro, utilizzare il menu di scelta rapida (clic con il pulsante destro del mouse) per selezionare **XML Schema Explorer**.
 
-- È anche possibile selezionare i **XML Schema Explorer** dalle **visualizzazione** menu.
+- È inoltre possibile selezionare **XML Schema Explorer** dal menu **Visualizza** .
 
-- È possibile accedere la **XML Schema Explorer** da un *vb* file con un valore letterale XML di Visual Basic associato un *XSD* file. Per visualizzare lo schema impostati nella **XML Schema Explorer**, fare doppio clic su un nodo XML in un valore letterale XML o un'importazione di spazi dei nomi XML e selezionare il **Mostra in Schema Explorer** comando. Per altre informazioni, vedere [valori letterali di integrazione di XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- È possibile accedere a **XML Schema Explorer** da un file con *estensione VB* che dispone di un Visual Basic valore letterale XML associato a un file *xsd* . Per visualizzare il set di schemi in **XML Schema Explorer**, fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o su un'importazione di spazi dei nomi XML e selezionare il comando **Mostra in Esplora schema** . Per ulteriori informazioni, vedere [integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Visualizzazione albero
- Il **XML Schema Explorer** schema consente di visualizzare precompilati imposta le informazioni in una struttura ad albero. La struttura ad albero è organizzata come segue:
+In **XML Schema Explorer** vengono visualizzate le informazioni sul set di schemi precompilate in una struttura ad albero. La struttura ad albero è organizzata come segue:
 
 - Al livello principale è presente il nodo del set di schemi.
 
@@ -61,9 +61,9 @@ Di seguito viene riportato un esempio di struttura ad albero:
 ![XML Schema Explorer](../xml-tools/media/xmlschemaexplorer.gif)
 
 ## <a name="selection-and-activation"></a>Selezione e attivazione
- Per evidenziare e selezionare un nodo, fare clic una volta in Schema Explorer.
+Per evidenziare e selezionare un nodo, fare clic una volta in Schema Explorer.
 
- Per attivare un nodo, fare doppio clic oppure premere **invio** quando si seleziona il nodo.
+Per attivare un nodo, fare doppio clic su di esso oppure premere **invio** quando si seleziona il nodo.
 
 - L'attivazione di un nodo consente di aprire il file in cui questo nodo è definito (se non è già aperto) e di selezionare il nodo nel file.
 
@@ -71,13 +71,13 @@ Di seguito viene riportato un esempio di struttura ad albero:
 
 - L'attivazione di un nodo set di schemi o spazio dei nomi non esegue alcuna operazione.
 
-## <a name="drag-and-drop-nodes"></a>Trascinare e rilasciare nodi
- È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.
+## <a name="drag-and-drop-nodes"></a>Trascinare i nodi
+È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è la [visualizzazione iniziale](../xml-tools/start-view.md), il trascinamento di un nodo nella visualizzazione consente di aprire la [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è la visualizzazione [modello di contenuto](../xml-tools/content-model-view.md) o la visualizzazione grafico, la visualizzazione non verrà modificata quando si rilascia un nodo.
 
- Eliminazione di file sulla visualizzazione aggiungerà tutti i nodi globali nel file per il [dell'area di lavoro di progettazione XSD](../xml-tools/xml-schema-designer-workspace.md). Il rilascio degli spazi dei nomi sulla visualizzazione aggiungerà tutti i nodi globali contenuti nello spazio dei nomi all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
+Se si eliminano i file nella vista, tutti i nodi globali del file vengono aggiunti all' [area di lavoro di progettazione XSD](../xml-tools/xml-schema-designer-workspace.md). Il rilascio degli spazi dei nomi sulla visualizzazione aggiungerà tutti i nodi globali contenuti nello spazio dei nomi all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
 
  Non è possibile trascinare e rilasciare nodi locali o importazioni.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Procedura: Aggiunta di nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

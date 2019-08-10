@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806628"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920235"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: I finalizzatori devono essere protetti
 
@@ -31,19 +31,19 @@ ms.locfileid: "62806628"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico implementa un finalizzatore che non specifica della famiglia di accesso (protetto).
+Un tipo pubblico implementa un finalizzatore che non specifica l'accesso alla famiglia (protetto).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori c#, Visual Basic e Visual C++.
+I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori C#, Visual Basic e visivi C++ .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, impostare il finalizzatore per essere accessibile tramite la famiglia.
+Per correggere una violazione di questa regola, modificare il finalizzatore in modo che sia accessibile per la famiglia.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Questa regola non può essere violata in qualsiasi linguaggio .NET ad alto livello. può essere violata se si sta scrivendo Microsoft Intermediate Language.
+Questa regola non può essere violata in alcun linguaggio .NET di alto livello. può essere violato se si sta scrivendo Microsoft Intermediate Language.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

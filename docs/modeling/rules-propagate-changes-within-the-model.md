@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b4d315bdcae0f48db655a5878e82937478904fd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437411"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926418"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
-È possibile creare una regola di archivio per propagare una modifica da un elemento a un altro in Visualization and Modeling SDK (VMSDK). Quando viene apportata una modifica a qualsiasi elemento nella finestra di Store, le regole vengono pianificate da eseguire, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio aggiungendo un elemento o l'eliminazione. È possibile collegare regole a tipi specifici di elementi, forme o i diagrammi. Molte funzionalità incorporate sono definite da regole: ad esempio, le regole di assicurano che un diagramma viene aggiornato quando viene modificato il modello. È possibile personalizzare il linguaggio specifico di dominio tramite l'aggiunta di regole personalizzate.
+È possibile creare una regola di archiviazione per propagare una modifica da un elemento a un altro nell'SDK di visualizzazione e modellazione (VMSDK). Quando si verifica una modifica a qualsiasi elemento nell'archivio, le regole vengono pianificate per l'esecuzione, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio l'aggiunta o l'eliminazione di un elemento. È possibile alleghi regole a tipi specifici di elementi, forme o diagrammi. Molte funzionalità predefinite sono definite da regole: ad esempio, le regole assicurano che un diagramma venga aggiornato quando il modello viene modificato. È possibile personalizzare il linguaggio specifico di dominio aggiungendo regole personalizzate.
 
- Le regole di Store sono particolarmente utili per la propagazione delle modifiche all'interno dell'archivio, vale a dire, le modifiche a elementi del modello, relazioni, forme o connettori e il dominio delle proprietà. Le regole non vengono eseguiti quando l'utente richiama i comandi di annullamento o ripristino. Al contrario, il gestore delle transazioni consente di assicurarsi che il contenuto dell'archivio viene ripristinato allo stato corretto. Se si desidera propagare le modifiche alle risorse all'esterno dell'archivio, usare gli eventi Store. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+ Le regole di archiviazione sono particolarmente utili per la propagazione delle modifiche all'interno dell'archivio, ovvero modifiche a elementi del modello, relazioni, forme o connettori e alle relative proprietà del dominio. Quando l'utente richiama i comandi Annulla o Ripeti, le regole non vengono eseguite. Il gestore delle transazioni verifica invece che il contenuto dell'archivio venga ripristinato nello stato corretto. Se si desidera propagare le modifiche alle risorse all'esterno dello Store, utilizzare gli eventi di archiviazione. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Si supponga, ad esempio, che si desidera specificare che ogni volta che l'utente (o il codice) crea un nuovo elemento di tipo ExampleDomainClass, viene creato un ulteriore elemento di un altro tipo in un'altra parte del modello. È possibile scrivere un AddRule e associarlo a ExampleDomainClass. Scrivere codice nella regola per creare l'elemento aggiuntiva.
+ Si supponga, ad esempio, di voler specificare che ogni volta che l'utente (o il codice) crea un nuovo elemento di tipo ExampleDomainClass, viene creato un elemento aggiuntivo di un altro tipo in un'altra parte del modello. È possibile scrivere un AddRule e associarlo a ExampleDomainClass. Scrivere il codice nella regola per creare l'elemento aggiuntivo.
 
 ```csharp
 using System;
@@ -68,21 +68,21 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
-> Il codice di una regola deve modificare lo stato solo degli elementi all'interno di Store; vale a dire, la regola deve modificare solo gli elementi del modello, relazioni, forme, connettori, diagrammi o le relative proprietà. Se si desidera propagare le modifiche alle risorse all'esterno dell'archivio, definire gli eventi Store. Per altre informazioni, vedere [gestori propagare le modifiche apportate di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> Il codice di una regola deve modificare lo stato solo degli elementi all'interno dell'archivio; ovvero la regola deve modificare solo gli elementi del modello, le relazioni, le forme, i connettori, i diagrammi o le relative proprietà. Se si desidera propagare le modifiche alle risorse all'esterno dell'archivio, definire gli eventi dell'archivio. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 ### <a name="to-define-a-rule"></a>Per definire una regola
 
-1. Definire la regola come preceduto da una classe di `RuleOn` attributo. L'attributo associa la regola con le classi di dominio, relazioni o gli elementi del diagramma. La regola verrà applicata a tutte le istanze di questa classe, che può essere astratta.
+1. Definire la regola come una classe preceduta dall' `RuleOn` attributo. L'attributo associa la regola a una delle classi di dominio, relazioni o elementi del diagramma. La regola verrà applicata a ogni istanza di questa classe, che può essere astratta.
 
-2. Registrare la regola, aggiungerla al set restituito da `GetCustomDomainModelTypes()` della classe di modello di dominio.
+2. Registrare la regola aggiungendola al set restituito da `GetCustomDomainModelTypes()` nella classe del modello di dominio.
 
-3. Derivare la classe di regola da una delle classi astratte regola e scrivere il codice del metodo di esecuzione.
+3. Derivare la classe Rule da una delle classi di regole astratte e scrivere il codice del metodo di esecuzione.
 
-   Le sezioni seguenti descrivono questi passaggi in maggiore dettaglio.
+   Le sezioni seguenti descrivono questi passaggi in modo più dettagliato.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Per definire una regola in una classe di dominio
 
-- In un file di codice personalizzato, definire una classe e prefisso di <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> attributo:
+- In un file di codice personalizzato definire una classe e anteporre l' <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> attributo:
 
     ```csharp
     [RuleOn(typeof(ExampleElement),
@@ -92,19 +92,19 @@ namespace ExampleNamespace
 
     ```
 
-- Il tipo di oggetto nel primo parametro può essere una classe di dominio, relazione di dominio, la forma, connettore o diagramma. In genere, viene applicato le regole per le relazioni e le classi di dominio.
+- Il tipo di oggetto nel primo parametro può essere una classe di dominio, una relazione di dominio, una forma, un connettore o un diagramma. In genere, le regole vengono applicate alle relazioni e alle classi di dominio.
 
-     Il `FireTime` è in genere `TopLevelCommit`. Ciò garantisce che la regola viene eseguita solo dopo aver apportate tutte le modifiche principali della transazione. Le alternative sono Inline, che viene eseguita la regola subito dopo la modifica. e LocalCommit, che esegue la regola alla fine della transazione corrente (che potrebbe non essere più esterna). È anche possibile impostare la priorità di una regola per influire sul relativo ordine nella coda, ma questo è un metodo affidabile per ottenere il risultato desiderato.
+     È in genere `TopLevelCommit`. `FireTime` In questo modo si garantisce che la regola venga eseguita solo dopo che sono state apportate tutte le modifiche primarie della transazione. Le alternative sono inline, che esegue la regola subito dopo la modifica. e LocalCommit, che esegue la regola alla fine della transazione corrente (che potrebbe non essere quella più esterna). È anche possibile impostare la priorità di una regola in modo da influire sull'ordinamento nella coda, ma si tratta di un metodo non affidabile per ottenere il risultato richiesto.
 
 - È possibile specificare una classe astratta come tipo di oggetto.
 
-- La regola si applica a tutte le istanze della classe dell'oggetto.
+- La regola si applica a tutte le istanze della classe Subject.
 
-- Il valore predefinito per `FireTime` è TimeToFire.TopLevelCommit. In questo modo la regola deve essere eseguito quando viene eseguito il commit della transazione più esterna. In alternativa, è TimeToFire.Inline. In questo modo la regola deve essere eseguito subito dopo l'evento di attivazione.
+- Il valore predefinito per `FireTime` è TimeToFire. TopLevelCommit. In questo modo la regola viene eseguita quando viene eseguito il commit della transazione più esterna. Un'alternativa è TimeToFire. inline. In questo modo la regola viene eseguita subito dopo l'evento di attivazione.
 
 ### <a name="to-register-the-rule"></a>Per registrare la regola
 
-- Aggiungere la classe di regola per l'elenco dei tipi restituiti da `GetCustomDomainModelTypes` nel modello di dominio:
+- Aggiungere la classe Rule all'elenco di tipi restituiti da `GetCustomDomainModelTypes` nel modello di dominio:
 
     ```csharp
     public partial class ExampleDomainModel
@@ -120,51 +120,51 @@ namespace ExampleNamespace
 
     ```
 
-- Se non è certi del nome della classe del modello di dominio, Cerca all'interno del file **Dsl\GeneratedCode\DomainModel.cs**
+- Se non si è certi del nome della classe del modello di dominio, cercare nel file **Dsl\GeneratedCode\DomainModel.cs**
 
-- Scrivere il codice in un file di codice personalizzato nel progetto DSL.
+- Scrivere questo codice in un file di codice personalizzato nel progetto DSL.
 
 ### <a name="to-write-the-code-of-the-rule"></a>Per scrivere il codice della regola
 
-- Derivare la classe di regola da una delle classi base seguenti:
+- Derivare la classe Rule da una delle classi base seguenti:
 
   | Classe base | Trigger |
   |-|-|
-  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Questa procedura guidata consente di rilevare relazioni nuove, oltre a nuovi elementi. |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Il valore di una proprietà di dominio viene modificato. L'argomento del metodo fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando l'elemento predefinito `AbsoluteBounds` le modifiche alle proprietà, se la forma viene spostata.<br /><br /> In molti casi, risulta più semplice eseguire l'override `OnValueChanged` o `OnValueChanging` nel gestore della proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguito alla fine della transazione. Per altre informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Questa regola non viene generata quando viene creato o eliminato un collegamento. Invece di scrivere un' `AddRule` e un `DeleteRule` della relazione di dominio. |
-  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Attivato quando un elemento o un collegamento sta per essere eliminato. La proprietà ModelElement.IsDeleting vale fino alla fine della transazione. |
-  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Eseguito quando un elemento o un collegamento è stato eliminato. La regola viene eseguita dopo che sono state eseguite tutte le altre regole, tra cui DeletingRules. ModelElement.IsDeleting è false e ModelElement.IsDeleted è true. Per consentire una successiva operazione di annullamento, l'elemento non viene effettivamente rimosso dalla memoria, ma viene rimosso dal Store.ElementDirectory. |
-  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un elemento viene spostato da un archivio di partizione a altra.<br /><br /> Si noti che questo non è correlato alla posizione di una forma grafica. |
-  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Questa regola si applica solo alle relazioni di dominio. Viene attivato se si assegna in modo esplicito un elemento del modello a un'estremità di un collegamento. |
-  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Attivazione eseguita quando l'ordine dei collegamenti verso o da un elemento viene modificato utilizzando i metodi MoveBefore o MoveToIndex su un collegamento. |
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Usare questa funzionalità per rilevare nuove relazioni, oltre ai nuovi elementi. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Viene modificato un valore della proprietà di dominio. L'argomento Method fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando la `AbsoluteBounds` proprietà incorporata viene modificata, se la forma viene spostata.<br /><br /> In molti casi, è più pratico eseguire l'override `OnValueChanged` di `OnValueChanging` o nel gestore della proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguita alla fine della transazione. Per altre informazioni, vedere [gestori delle modifiche dei valori delle proprietà del dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Questa regola non viene attivata quando viene creato o eliminato un collegamento. Scrivere invece un `AddRule` e un `DeleteRule` per la relazione di dominio. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Attivato quando un elemento o un collegamento sta per essere eliminato. La proprietà ModelElement. IsTrue è true fino alla fine della transazione. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Eseguita quando un elemento o un collegamento è stato eliminato. La regola viene eseguita dopo l'esecuzione di tutte le altre regole, incluso DeletingRules. ModelElement. IsTrue è false e ModelElement. l'eliminazione è true. Per consentire un'operazione di annullamento successiva, l'elemento non viene effettivamente rimosso dalla memoria, ma viene rimosso da Store. ElementDirectory. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Un elemento viene spostato da una partizione di archivio a un'altra.<br /><br /> (Si noti che questo non è correlato alla posizione grafica di una forma). |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Questa regola si applica solo alle relazioni di dominio. Viene attivato se si assegna in modo esplicito un elemento del modello a una delle estremità di un collegamento. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Attivato quando l'ordinamento dei collegamenti a o da un elemento viene modificato usando i metodi MoveBefore o MoveToIndex su un collegamento. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Eseguito quando viene creata una transazione. |
-  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Eseguito quando la transazione sta per essere eseguito il commit. |
-  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Eseguito quando la transazione sta per essere eseguito il rollback. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Eseguita quando sta per essere eseguito il commit della transazione. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Eseguito quando si sta per eseguire il rollback della transazione. |
 
-- Ogni classe dispone di un metodo che si esegue l'override. Tipo `override` nella classe per individuarlo. Il parametro di questo metodo identifica l'elemento che viene modificato.
+- Ogni classe dispone di un metodo di cui è stato eseguito l'override. Digitare `override` la classe per individuarla. Il parametro di questo metodo identifica l'elemento da modificare.
 
-  Si noti che i punti seguenti sulle regole:
+  Si notino le seguenti considerazioni sulle regole:
 
-1. Il set di modifiche in una transazione può attivare molte regole. In genere, le regole vengono eseguite quando viene eseguito il commit della transazione più esterna. Vengono eseguiti in un ordine non specificato.
+1. Il set di modifiche in una transazione potrebbe attivare numerose regole. In genere, le regole vengono eseguite quando viene eseguito il commit della transazione più esterna. Vengono eseguite in un ordine non specificato.
 
 2. Una regola viene sempre eseguita all'interno di una transazione. Pertanto, non è necessario creare una nuova transazione per apportare modifiche.
 
-3. Le regole non vengono eseguite quando viene eseguito il rollback di una transazione, o quando vengono eseguite le operazioni di annullamento o ripristino. Queste operazioni Reimposta tutto il contenuto della finestra di Store allo stato precedente. Pertanto, se la regola viene modificato lo stato di qualsiasi elemento all'esterno di Store, potrebbe non tenere synchronism con il Store del contenuto. Per aggiornare lo stato di fuori di Store, è preferibile utilizzare gli eventi. Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+3. Le regole non vengono eseguite quando viene eseguito il rollback di una transazione o quando vengono eseguite le operazioni di annullamento o ripristino. Queste operazioni ripristinano lo stato precedente di tutto il contenuto dell'archivio. Pertanto, se la regola modifica lo stato di qualsiasi elemento all'esterno dell'archivio, potrebbe non mantenersi sincronizzato con il contenuto dell'archivio. Per aggiornare lo stato all'esterno dell'archivio, è preferibile usare gli eventi. Per ulteriori informazioni, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-4. Alcune regole vengono eseguiti quando un modello viene caricato dal file. Per determinare se il caricamento o salvataggio è in corso, usare `store.TransactionManager.CurrentTransaction.IsSerializing`.
+4. Alcune regole vengono eseguite quando un modello viene caricato da un file. Per determinare se è in corso il caricamento o il salvataggio `store.TransactionManager.CurrentTransaction.IsSerializing`, utilizzare.
 
-5. Se il codice della regola crea ulteriori regola viene attivata, essi verranno aggiunti alla fine dell'elenco di generazione dell'evento e verrà eseguiti prima del completamento della transazione. DeletedRules vengono eseguiti dopo tutte le altre regole. Una regola può eseguire più volte in una transazione, una volta per ogni modifica.
+5. Se il codice della regola crea più trigger di regola, verranno aggiunti alla fine dell'elenco di attivazione e verranno eseguiti prima del completamento della transazione. DeletedRules vengono eseguiti dopo tutte le altre regole. Una regola può essere eseguita molte volte in una transazione, una volta per ogni modifica.
 
-6. Per passare informazioni da e verso le regole, è possibile archiviare le informazioni nel `TransactionContext`. Si tratta semplicemente un dizionario che viene mantenuto durante la transazione. Viene eliminato al termine della transazione. Gli argomenti dell'evento in ogni regola forniscono l'accesso a esso. Tenere presente che le regole non vengono eseguite in un ordine prevedibile.
+6. Per passare informazioni a e da regole, è possibile archiviare le `TransactionContext`informazioni in. Si tratta semplicemente di un dizionario mantenuto durante la transazione. Viene eliminato al termine della transazione. Gli argomenti dell'evento in ogni regola forniscono l'accesso. Tenere presente che le regole non vengono eseguite in un ordine prevedibile.
 
-7. Usare le regole dopo aver considerato altre alternative. Se si desidera aggiornare una proprietà quando viene modificato un valore, si consideri ad esempio usando una proprietà calcolata. Se si desidera vincolare le dimensioni o il percorso di una forma, utilizzare un `BoundsRule`. Se si desidera rispondere a una modifica nel valore della proprietà, aggiungere un `OnValueChanged` gestore alla proprietà. Per altre informazioni, vedere [procedura: rispondere a e la propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).
+7. Usare le regole dopo aver valutato le altre alternative. Se, ad esempio, si desidera aggiornare una proprietà quando un valore viene modificato, è consigliabile utilizzare una proprietà calcolata. Se si desidera vincolare la dimensione o la posizione di una forma, utilizzare `BoundsRule`un oggetto. Se si desidera rispondere a una modifica in un valore di proprietà, aggiungere un `OnValueChanged` gestore alla proprietà. Per ulteriori informazioni, vedere [risposta a e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md).
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente aggiorna una proprietà quando viene creata un'istanza di una relazione di dominio per collegare due elementi. La regola verrà attivata non solo quando l'utente crea un collegamento in un diagramma, ma anche se il codice del programma crea un collegamento.
+ Nell'esempio seguente viene aggiornata una proprietà quando viene creata un'istanza di una relazione di dominio per collegare due elementi. La regola verrà attivata non solo quando l'utente crea un collegamento in un diagramma, ma anche se il codice programma crea un collegamento.
 
- Per testare questo esempio, creare un linguaggio DSL utilizzando il modello di soluzione flusso attività, inserire il codice seguente in un file nel progetto Dsl. Compilare ed eseguire la soluzione e aprire il file di esempio nel progetto di debug. Creare un collegamento commento tra una forma di commento e un elemento del flusso. Report sull'elemento più recente è stata connessa a viene modificato il testo del commento.
+ Per testare questo esempio, creare un linguaggio DSL usando il modello di soluzione flusso attività e inserire il codice seguente in un file nel progetto DSL. Compilare ed eseguire la soluzione e aprire il file di esempio nel progetto di debug. Disegnare un collegamento commento tra una forma commento e un elemento Flow. Il testo del commento cambia in modo da creare un report sull'elemento più recente a cui si è connessi.
 
- In pratica, si scriverebbe in genere un DeleteRule per ogni AddRule.
+ In pratica, in genere si scrive un DeleteRule per ogni AddRule.
 
 ```csharp
 using System;

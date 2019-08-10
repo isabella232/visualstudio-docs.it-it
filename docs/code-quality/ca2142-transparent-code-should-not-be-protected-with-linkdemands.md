@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b05228ef22dee20506b728164d22976feb662ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545016"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920504"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Il codice Transparent non deve essere protetto con LinkDemand
 
@@ -27,20 +27,20 @@ ms.locfileid: "62545016"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Richiede un metodo trasparente un <xref:System.Security.Permissions.SecurityAction> o un'altra richiesta di sicurezza.
+Un metodo trasparente richiede una <xref:System.Security.Permissions.SecurityAction> o altre richieste di sicurezza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola funziona su metodi trasparenti che richiedono a LinkDemands l'accesso. Il codice trasparente per la sicurezza non deve essere responsabile della verifica della sicurezza di un'operazione, pertanto non deve richiedere autorizzazioni. Poiché i metodi transparent avrebbero dovuto essere indipendente dalla sicurezza, essi devono prendere le decisioni relative alla sicurezza. Inoltre, il codice SafeCritical, quale prendere decisioni di protezione, non deve basarsi sul codice trasparente per apportate in precedenza questa decisione.
+Questa regola viene attivata su metodi Transparent che richiedono l'accesso a I LinkDemand. Il codice trasparente per la sicurezza non deve essere responsabile della verifica della sicurezza di un'operazione, pertanto non deve richiedere autorizzazioni. Poiché i metodi Transparent sono considerati indipendenti dalla sicurezza, non devono prendere decisioni di sicurezza. Inoltre, il codice critico sicuro, che consente di prendere decisioni di sicurezza, non deve basarsi sul codice Transparent per avere preso in precedenza tale decisione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere la richiesta di collegamento sul metodo trasparente o contrassegnare il metodo con <xref:System.Security.SecuritySafeCriticalAttribute> attributo se è in corso sicurezza controlli, ad esempio richieste di sicurezza.
+Per correggere una violazione di questa regola, rimuovere la richiesta di collegamento sul metodo trasparente oppure contrassegnare il metodo <xref:System.Security.SecuritySafeCriticalAttribute> con l'attributo se esegue controlli di sicurezza, ad esempio le richieste di sicurezza.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, la regola viene attivata sul metodo perché il metodo è trasparente e contrassegnato con un LinkDemand <xref:System.Security.PermissionSet> che contiene un <xref:System.Security.Permissions.SecurityAction>.
+Nell'esempio seguente la regola viene attivata sul metodo perché il metodo è trasparente ed è contrassegnato con un LinkDemand <xref:System.Security.PermissionSet> che contiene un oggetto. <xref:System.Security.Permissions.SecurityAction>
 
- [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
 
- Non escludere un avviso da questa regola.
+Non escludere un avviso da questa regola.

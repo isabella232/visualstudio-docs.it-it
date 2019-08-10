@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783330"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918559"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: Creare un documento XML in base a uno schema XSD
 
-Il **genera XML di esempio** funzionalità genera un file XML di esempio basato su file di Schema XSD (XML).
+La funzionalità **genera XML di esempio** genera un file XML di esempio basato sul file XML Schema (XSD).
 
- È possibile usare questa opzione per gli scenari seguenti:
+È possibile usare questa opzione per gli scenari seguenti:
 
 - Per comprendere l'uso di diversi costrutti nello schema.
 
 - Per confermare che lo schema funziona come previsto.
 
-Il **genera XML di esempio** funzionalità è disponibile solo per gli elementi globali e richiede un set di schemi XML valido.
+La funzionalità **genera XML di esempio** è disponibile solo sugli elementi globali e richiede un set di XML schema valido.
 
 Questa funzionalità genera di norma documenti XML validi. Tuttavia, se lo schema contiene uno o più degli elementi seguenti, l'esempio potrebbe non essere valido:
 
@@ -41,11 +41,11 @@ Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enu
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Per generare un documento di istanza XML basato sul file XSD
 
-1. Seguire i passaggi in [come: Creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Attenersi alla procedura descritta [in procedura: Creazione e modifica di un file](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)di schema XSD.
 
-2. Nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), fare doppio clic su di `PurchaseOrder` elemento globale. Selezionare **genera XML di esempio**.
+2. In [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)fare clic con il pulsante destro `PurchaseOrder` del mouse sull'elemento globale. Selezionare **genera XML di esempio**.
 
-     Quando si seleziona questa opzione, PurchaseOrder. *xml* file con il contenuto XML di esempio seguente verrà generato e aperto nell'editor XML:
+     Quando si seleziona questa opzione, PurchaseOrder. il file *XML* con il contenuto XML di esempio seguente verrà generato e aperto nell'editor XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

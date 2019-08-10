@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402926"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925640"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services
-Oggetto *riferimento del servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Usare la **Aggiungi riferimento al servizio** finestra di dialogo per la ricerca [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, in locale, in una rete locale o su Internet.
+Un *riferimento al servizio* consente a un progetto di accedere a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]uno o più. Utilizzare la finestra di dialogo **Aggiungi riferimento al servizio** per cercare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, localmente, in una rete locale o su Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -30,65 +30,65 @@ Oggetto *riferimento del servizio* consente a un progetto di accedere a uno o pi
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Per aggiungere un riferimento a un servizio esterno
 
-1. Nelle **Esplora soluzioni**, fare doppio clic il nome del progetto a cui si desidera aggiungere il servizio e quindi fare clic su **Aggiungi riferimento al servizio**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del progetto a cui si desidera aggiungere il servizio, quindi fare clic su **Aggiungi riferimento al servizio**.
 
-     Il **Aggiungi riferimento al servizio** verrà visualizzata la finestra di dialogo.
+     Verrà visualizzata la finestra di dialogo **Aggiungi riferimento al servizio** .
 
-2. Nel **indirizzi** casella, immettere l'URL per il servizio e quindi fare clic su **Vai** per cercare il servizio. Se il servizio implementa protezione nome e la password dell'utente, potrebbero essere richieste un nome utente e password.
+2. Nella casella **Indirizzo** immettere l'URL per il servizio, quindi fare clic su **Vai** per cercare il servizio. Se il servizio implementa la sicurezza del nome utente e della password, è possibile che venga richiesto di specificare un nome utente e una password.
 
     > [!NOTE]
     > Si consiglia di fare riferimento solo a servizi provenienti da un'origine attendibile. L'aggiunta di riferimenti da un'origine non attendibile può compromettere la sicurezza.
 
-     È anche possibile selezionare l'URL dal **indirizzo** elenco, che archivia gli URL precedenti 15 in corrispondenza del quale sono stati trovati i metadati di servizio valido.
+     È anche possibile selezionare l'URL nell'elenco **indirizzi** , che archivia i 15 URL precedenti in cui sono stati trovati i metadati del servizio validi.
 
-     Consente di visualizzare un indicatore di stato quando viene eseguita la ricerca. È possibile arrestare la ricerca in qualsiasi momento facendo **arrestare**.
+     Quando viene eseguita la ricerca, viene visualizzato un indicatore di stato. È possibile arrestare la ricerca in qualsiasi momento facendo clicsu Interrompi.
 
-3. Nel **Services** elenco, quindi espandere il nodo per il servizio che si desidera usare e selezionare un set di entità.
+3. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
 
-4. Nel **Namespace** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
+4. Nella casella **spazio dei nomi** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
 
 5. Fare clic su **OK** per aggiungere il riferimento al progetto.
 
-     Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio viene aggiunto per il *app. config* file.
+     Viene generato un client del servizio (proxy) e i metadati che descrivono il servizio vengono aggiunti al file *app. config* .
 
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Per aggiungere un riferimento a un servizio nella soluzione corrente
 
-1. Nelle **Esplora soluzioni**, fare doppio clic il nome del progetto a cui si desidera aggiungere il servizio e quindi fare clic su **Aggiungi riferimento al servizio**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del progetto a cui si desidera aggiungere il servizio, quindi fare clic su **Aggiungi riferimento al servizio**.
 
-    Il **Aggiungi riferimento al servizio** verrà visualizzata la finestra di dialogo.
+    Verrà visualizzata la finestra di dialogo **Aggiungi riferimento al servizio** .
 
 2. Fare clic su **individua**.
 
-    Tutti i servizi (entrambi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunte per il **Services** elenco.
+    Tutti i servizi ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **dei servizi** .
 
-3. Nel **Services** elenco, quindi espandere il nodo per il servizio che si desidera usare e selezionare un set di entità.
+3. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
 
-4. Nel **Namespace** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
+4. Nella casella **spazio dei nomi** immettere lo spazio dei nomi che si desidera utilizzare per il riferimento.
 
 5. Fare clic su **OK** per aggiungere il riferimento al progetto.
 
-    Genera un client del servizio (proxy) e i metadati che descrivono il servizio viene aggiunto per il *app. config* file.
+    Un client del servizio (proxy) genera e i metadati che descrivono il servizio vengono aggiunti al file *app. config* .
 
 ## <a name="update-a-service-reference"></a>Aggiornare un riferimento al servizio
- Entity Data Model per un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] volte le modifiche apportate. In questo caso, è necessario aggiornare il riferimento al servizio.
+Il Entity Data Model per un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] oggetto a volte cambia. Quando si verifica questo problema, è necessario aggiornare il riferimento al servizio.
 
 ### <a name="to-update-a-service-reference"></a>Per aggiornare un riferimento al servizio
 
-- Nelle **Esplora soluzioni**, fare riferimento al servizio e quindi fare clic su **Aggiorna riferimento al servizio**.
+- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul riferimento al servizio, quindi scegliere **Aggiorna riferimento al servizio**.
 
-     Consente di visualizzare una finestra di dialogo di avanzamento viene aggiornato il riferimento dalla posizione originale, mentre il client del servizio viene rigenerato per riflettere le modifiche nei metadati.
+     Viene visualizzata una finestra di dialogo dello stato di avanzamento quando il riferimento viene aggiornato dal percorso originale e il client del servizio viene rigenerato in modo da riflettere le modifiche apportate ai metadati.
 
 ## <a name="remove-a-service-reference"></a>Rimuovere un riferimento al servizio
- Se un riferimento al servizio non è più in uso, è possibile rimuoverlo dalla soluzione.
+Se un riferimento al servizio non viene più usato, è possibile rimuoverlo dalla soluzione.
 
 ### <a name="to-remove-a-service-reference"></a>Per rimuovere un riferimento al servizio
 
-- Nelle **Esplora soluzioni**, fare riferimento al servizio e quindi fare clic su **eliminare**.
+- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul riferimento al servizio e scegliere **Elimina**.
 
-     Il client del servizio verrà rimosso dalla soluzione e i metadati che descrivono il servizio verranno rimosso dal *app. config* file.
+     Il client del servizio verrà rimosso dalla soluzione e i metadati che descrivono il servizio verranno rimossi dal file *app. config* .
 
     > [!NOTE]
-    > Qualsiasi codice che fa riferimento il servizio deve essere rimossi manualmente.
+    > Il codice che fa riferimento al riferimento al servizio deve essere rimosso manualmente.
 
 ## <a name="see-also"></a>Vedere anche
 

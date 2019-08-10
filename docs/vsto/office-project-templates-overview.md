@@ -1,5 +1,5 @@
 ---
-title: Cenni preliminari sui modelli di progetto di Office
+title: Panoramica sui modelli di progetto di Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,30 +30,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438769"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926593"
 ---
-# <a name="office-project-templates-overview"></a>Cenni preliminari sui modelli di progetto di Office
+# <a name="office-project-templates-overview"></a>Panoramica sui modelli di progetto di Office
   Gli strumenti di sviluppo di applicazioni per Microsoft Office in Visual Studio includono modelli di progetto per la creazione dei seguenti tipi di soluzioni Office:
 
 - [Personalizzazioni a livello di documento](#DocLevel)
 
 - [Componenti aggiuntivi VSTO](#AppLevel)
 
-  Per un confronto dettagliato di questi tipi di soluzioni Office, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+  Per un confronto dettagliato di questi tipi di soluzioni Office, vedere [Cenni preliminari &#40;sullo sviluppo&#41;di soluzioni Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
 
   I modelli di progetto di Office sono disponibili nella finestra di dialogo **Nuovo progetto** nel nodo **Office** dei nodi relativi ai linguaggi **Visual C#** e **Visual Basic** . Ogni modello genera un progetto con la configurazione appropriata per l'applicazione di destinazione, inclusi i riferimenti all'assembly e le impostazioni di debug.
 
-  Ciascun progetto fornisce i file e il codice per la creazione di un tipo specifico di soluzione. Il codice generato per ogni progetto include i gestori degli eventi di avvio e di arresto. È possibile aggiungere codice a questi gestori eventi per inizializzare la soluzione al momento del caricamento ed eseguirne la pulizia quando viene scaricata. Per altre informazioni, vedere [progetti di Office in ambiente di Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) e [eventi nei progetti di Office](../vsto/events-in-office-projects.md).
+  Ciascun progetto fornisce i file e il codice per la creazione di un tipo specifico di soluzione. Il codice generato per ogni progetto include i gestori degli eventi di avvio e di arresto. È possibile aggiungere codice a questi gestori eventi per inizializzare la soluzione al momento del caricamento ed eseguirne la pulizia quando viene scaricata. Per altre informazioni, vedere [progetti di Office nell'ambiente](../vsto/office-projects-in-the-visual-studio-environment.md) e negli [eventi di Visual Studio nei progetti di Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
 > Gli strumenti di sviluppo di applicazioni per Office sono inclusi in alcune edizioni di Visual Studio. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-## <a name="DocLevel"></a> Personalizzazioni a livello di documento
+## <a name="DocLevel"></a>Personalizzazioni a livello di documento
  Il nodo **Office** nella finestra di dialogo **Nuovo progetto** fornisce i modelli di progetto riportati di seguito per cominciare a creare personalizzazioni a livello di documento per Word ed Excel.
 
 - **Documento VSTO di Word 2013 e 2016**
@@ -77,19 +77,19 @@ ms.locfileid: "63438769"
   I modelli di progetto relativi al modello di Word e al modello di Excel si comportano in modo identico ai modelli di progetto relativi al documento di Word e alla cartella di lavoro di Excel. Tuttavia, i modelli di progetto relativi al modello di Word e al modello di Excel semplificano la creazione, da parte dell'utente, di nuove copie del documento o della cartella di lavoro locale del modello personalizzato nella soluzione. Le funzionalità nella soluzione sono disponibili dal nuovo documento che l'utente crea dal modello.
 
 > [!NOTE]
-> Non è possibile usare come componenti aggiuntivi VSTO globali i modelli di Word che fanno riferimento a estensioni di codice gestito. L'assembly non viene chiamato se il modello viene caricato dalla directory di avvio di Word. Per altre informazioni, vedere [limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)](#Limitations)
+> Non è possibile usare come componenti aggiuntivi VSTO globali i modelli di Word che fanno riferimento a estensioni di codice gestito. L'assembly non viene chiamato se il modello viene caricato dalla directory di avvio di Word. Per ulteriori informazioni, vedere [limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)](#Limitations).
 
  Per informazioni introduttive su questi tipi di progetto, vedere i seguenti argomenti:
 
-- [Programmazione delle personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
+- [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 
 - [Soluzioni Word](../vsto/word-solutions.md)
 
 - [Soluzioni Excel](../vsto/excel-solutions.md)
 
-- [Procedura dettagliata: Creare una personalizzazione a livello di documento per Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Procedura dettagliata: Creare la prima personalizzazione a livello di documento per Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
-- [Procedura dettagliata: Creare una personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Procedura dettagliata: Creazione della prima personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
 ## <a name="AppLevel"></a> Componenti aggiuntivi VSTO
  Il nodo **Office/SharePoint** nella finestra di dialogo **Nuovo progetto** fornisce i modelli di progetto seguenti, con i quali è possibile cominciare a creare componenti aggiuntivi VSTO.
@@ -126,24 +126,24 @@ ms.locfileid: "63438769"
 
   Per altre informazioni sulle attività iniziali relative a questi tipi di progetti, vedere gli argomenti seguenti:
 
-- [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 
-- [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
+- [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
 
-- [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
+- [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [Procedura dettagliata: Creare il primo aggiuntivo VSTO per Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
-- [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
+- [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
-- [Procedura dettagliata: Creare il primo aggiuntivo VSTO per Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
+- [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 
-- [Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
+- [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
 
-## <a name="document-vs-template-solutions"></a>Documentare e soluzioni di modelli
+## <a name="document-vs-template-solutions"></a>Confronto tra Document e soluzioni template
  Quando si progetta una soluzione per un documento di Word o una cartella di lavoro di Excel, è necessario determinare il modo migliore per rendere tale documento disponibile agli utenti.
 
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
  In alcune situazioni, può essere conveniente distribuire una copia del documento a ciascun utente. In questo caso, creare la soluzione usando un progetto documento di Excel o Word.
 
@@ -157,19 +157,19 @@ ms.locfileid: "63438769"
 |I documenti possono essere aperti e modificati dagli utenti, a meno che non siano in sola lettura. Tutte le modifiche salvate vengono mantenute nell'originale.|Gli utenti possono aprire un modello e salvarne una copia locale per creare un nuovo documento. L'originale può essere modificato solo da utenti che dispongono di speciali autorizzazioni.|
 |All'apertura del documento viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.Open> .|All'apertura del modello viene generato l'evento <xref:Microsoft.Office.Tools.Word.Document.New> .|
 
-## <a name="Limitations"></a> Limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)
+## <a name="Limitations"></a>Limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)
  I documenti, le cartelle di lavoro e i modelli potrebbero non funzionare correttamente come modelli globali o come componenti aggiuntivi VSTO di Excel (file xla).
 
 ## <a name="word-templates"></a>Modelli di Word
  Se un modello di Microsoft Office Word usa estensioni di codice gestito, l'assembly del progetto non viene chiamato se il modello è associato come modello globale o se viene caricato dalla directory di avvio di Word. Inoltre il documento non riconosce il formato di un modello che fa parte di una soluzione Office.
 
 ## <a name="excel-add-ins-xla-files"></a>Componenti aggiuntivi di Excel (file xla)
- Nessun progetto di Office per la creazione di un componente aggiuntivo VSTO per Excel (*xla* file). È possibile salvare una cartella di lavoro come file xla, anche se questa operazione non è supportata né consigliata. Se si salva una cartella di lavoro di estensioni di codice gestito come un **il componente aggiuntivo di Microsoft Office Excel (\*xla)** file, è possibile selezionarlo nel **Add-Ins** finestra di dialogo da applicare a un'altra cartella di lavoro. In alcuni casi, il codice verrà eseguito nella cartella di lavoro di destinazione dopo che il componente aggiuntivo VSTO viene applicato, ma tale uso della soluzione Office non è supportato.
+ Non è disponibile alcun progetto di Office per la creazione di un componente aggiuntivo VSTO di Excel (file*xla* ). È possibile salvare una cartella di lavoro come file xla, anche se questa operazione non è supportata né consigliata. Se si salva una cartella di lavoro che dispone di estensioni di codice gestito come file di **componente\*aggiuntivo Microsoft Office Excel (xla)** , è possibile selezionarlo nella finestra di dialogo **componenti** aggiuntivi per applicarla a un'altra cartella di lavoro. In alcuni casi, il codice verrà eseguito nella cartella di lavoro di destinazione dopo l'applicazione del componente aggiuntivo VSTO, ma tale uso della soluzione Office non è supportato.
 
 ## <a name="see-also"></a>Vedere anche
-- [Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+- [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
-- [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Procedura: Creazione di progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Introduzione alla programmazione delle personalizzazioni a livello di documento per Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 - [Introduzione alla programmazione delle personalizzazioni a livello di documento per Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
-- [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

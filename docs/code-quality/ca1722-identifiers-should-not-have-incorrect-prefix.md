@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5daf51cd8bef4910a327b8e261f15332ad6522da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545984"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921619"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Gli identificatori non devono contenere il prefisso non corretto
 
@@ -31,20 +31,20 @@ ms.locfileid: "62545984"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un identificatore ha un prefisso non corretto.
+Un identificatore ha un prefisso errato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per convenzione, solo determinati elementi di programmazione presentano nomi che iniziano con un prefisso specifico.
+Per convenzione, solo determinati elementi di programmazione presentano nomi che iniziano con un prefisso specifico.
 
- I nomi di tipo non è un prefisso specifico e non devono essere preceduti da "C". Questa regola segnala le violazioni per i nomi dei tipi, ad esempio 'CMyClass' e non segnalare le violazioni per i nomi dei tipi, ad esempio "Cache".
+I nomi dei tipi non hanno un prefisso specifico e non devono essere preceduti da un prefisso ' c'. Questa regola segnala le violazioni dei nomi dei tipi, ad esempio ' CMyClass ', e non segnala violazioni per i nomi dei tipi come ' cache '.
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. Questa coerenza consente di ridurre la curva di apprendimento che ha richiesto per le nuove librerie di software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. Questa coerenza riduce la curva di apprendimento necessaria per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente che dispone di competenze per lo sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Rimuovere il prefisso dall'identificatore.
+Rimuovere il prefisso dall'identificatore.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1715: Gli identificatori devono contenere il prefisso corretto](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715 Gli identificatori devono avere il prefisso corretto](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

@@ -8,17 +8,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560051"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919562"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
-Il set di regole regole base di correttezza è incentrato sulla presenza di errori logici e gli errori più comuni nell'utilizzo di API del framework. Le regole base di correttezza includono le regole nel set di regole regole minime. Per altre informazioni, vedere [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) è necessario includere questo set di regole per espandere l'elenco degli avvisi segnalati dalle regole minime consigliate.
+Il set di regole di base di correttezza è incentrato sugli errori logici e sugli errori comuni nell'utilizzo delle API del Framework. Le regole di correttezza di base includono le regole nel set di regole minime consigliate. Per ulteriori informazioni, vedere [set di regole consigliate gestite per il codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) è necessario includere questo set di regole per espandersi nell'elenco degli avvisi segnalati dal report sulle regole minime consigliate.
 
- Nella tabella seguente vengono descritte tutte le regole nel set di regole regole base di correttezza Microsoft.
+Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Basic Correctity Rules.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -62,7 +62,7 @@ Il set di regole regole base di correttezza è incentrato sulla presenza di erro
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare i LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare I LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

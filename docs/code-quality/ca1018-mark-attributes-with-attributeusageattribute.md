@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779337"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923064"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Contrassegnare gli attributi con AttributeUsageAttribute
 
@@ -34,29 +34,29 @@ ms.locfileid: "62779337"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Il <xref:System.AttributeUsageAttribute?displayProperty=fullName> attributo non è presente nell'attributo personalizzato.
+L' <xref:System.AttributeUsageAttribute?displayProperty=fullName> attributo non è presente nell'attributo personalizzato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando si definisce un attributo personalizzato, contrassegnarlo tramite <xref:System.AttributeUsageAttribute> per indicare la posizione nel codice sorgente può essere applicato l'attributo personalizzato. Il significato e l'utilizzo previsto di un attributo ne determinano le posizioni valide nel codice. Ad esempio, si potrebbe definire un attributo che identifica la persona responsabile della manutenzione e miglioramento di ogni tipo in una libreria, e che responsabilità viene sempre assegnata a livello di tipo. In questo caso, i compilatori devono abilitare l'attributo su classi, enumerazioni e le interfacce, ma non consigliabile abilitarlo in metodi, eventi o proprietà. Le procedure e i criteri dell'organizzazione indicano se l'attributo deve essere abilitato su assembly.
+Quando si definisce un attributo personalizzato, contrassegnarlo utilizzando <xref:System.AttributeUsageAttribute> per indicare la posizione del codice sorgente a cui è possibile applicare l'attributo personalizzato. Il significato e l'utilizzo previsto di un attributo ne determinano le posizioni valide nel codice. È possibile, ad esempio, definire un attributo che identifichi la persona responsabile della gestione e del miglioramento di ogni tipo in una libreria e che la responsabilità venga sempre assegnata a livello di tipo. In questo caso, i compilatori devono abilitare l'attributo su classi, enumerazioni e interfacce, ma non devono abilitarlo su metodi, eventi o proprietà. I criteri e le procedure aziendali stabiliscono se l'attributo deve essere abilitato negli assembly.
 
- Il <xref:System.AttributeTargets?displayProperty=fullName> enumerazione definisce le destinazioni che è possibile specificare per un attributo personalizzato. Se si omette <xref:System.AttributeUsageAttribute>, l'attributo personalizzato sarà valido per tutte le destinazioni, come definito per il `All` pari a <xref:System.AttributeTargets> enumerazione.
+L' <xref:System.AttributeTargets?displayProperty=fullName> enumerazione definisce le destinazioni che è possibile specificare per un attributo personalizzato. Se si omette <xref:System.AttributeUsageAttribute>, l'attributo personalizzato sarà valido per tutte le destinazioni, come definito `All` dal valore di <xref:System.AttributeTargets> Enumeration.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, specificare le destinazioni per l'attributo utilizzando <xref:System.AttributeUsageAttribute>. Vedere l'esempio seguente.
+Per correggere una violazione di questa regola, specificare le destinazioni per l'attributo <xref:System.AttributeUsageAttribute>tramite. Vedere l'esempio seguente.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È necessario correggere una violazione di questa regola invece di escludere il messaggio. Anche se l'attributo eredita <xref:System.AttributeUsageAttribute>, l'attributo deve essere presente per semplificare la manutenzione del codice.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È necessario correggere una violazione di questa regola anziché escludere il messaggio. Anche se l'attributo eredita <xref:System.AttributeUsageAttribute>, l'attributo deve essere presente per semplificare la manutenzione del codice.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente definisce due attributi. `BadCodeMaintainerAttribute` in modo non corretto vengono omessi il <xref:System.AttributeUsageAttribute> istruzione e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo che è descritti in precedenza in questa sezione. Si noti che la proprietà `DeveloperName` è richiesto dalla regola di progettazione [CA1019: Definire le funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) ed è incluso per motivi di completezza.
+Nell'esempio seguente vengono definiti due attributi. `BadCodeMaintainerAttribute`omette erroneamente l' <xref:System.AttributeUsageAttribute> istruzione e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo descritto in precedenza in questa sezione. Si noti che la `DeveloperName` proprietà è richiesta dalla regola [di progettazione CA1019: Definire le funzioni di accesso per](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) gli argomenti dell'attributo ed è incluso per completezza.
 
- [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
- [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
+[!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
+[!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1019: Definire le funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+[CA1019 Definire le funzioni di accesso per gli argomenti dell'attributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813: Evitare attributi unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Evitare gli attributi non sealed](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Vedere anche
 

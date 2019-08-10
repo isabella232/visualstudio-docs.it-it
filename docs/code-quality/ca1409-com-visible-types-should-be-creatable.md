@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546401"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921887"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: I tipi visibili a COM devono essere creabili
 
@@ -27,27 +27,27 @@ ms.locfileid: "62546401"
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
-|Category|Microsoft.Interoperability|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. interoperabilità|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo di riferimento contrassegnato specificatamente come visibile al modello COM (Component Object) contiene un costruttore con parametri pubblico ma non contiene un costruttore predefinito pubblico (senza parametri).
+Un tipo di riferimento che è contrassegnato in modo specifico come visibile a Component Object Model (COM) contiene un costruttore con parametri pubblico, ma non contiene un costruttore pubblico predefinito (senza parametri).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un tipo senza un costruttore predefinito pubblico non è possibile creare per i client COM. Tuttavia, il tipo comunque accessibili da parte dei client COM se è disponibile un altro mezzo per creare il tipo e passarlo al client (ad esempio, tramite il valore restituito di una chiamata al metodo).
+Non è possibile creare un tipo senza un costruttore predefinito pubblico da parte dei client COM. Tuttavia, il tipo è ancora accessibile ai client COM se è disponibile un altro metodo per creare il tipo e passarlo al client, ad esempio tramite il valore restituito di una chiamata al metodo.
 
- La regola ignora sempre i tipi derivati da <xref:System.Delegate?displayProperty=fullName>.
+La regola ignora i tipi derivati da <xref:System.Delegate?displayProperty=fullName>.
 
- Per impostazione predefinita, sono visibili a COM seguente: assembly, i tipi pubblici, i membri di istanza pubblici nei tipi pubblici e tutti i membri dei tipi di valore pubblico.
+Per impostazione predefinita, i seguenti elementi sono visibili a COM: assembly, tipi pubblici, membri di istanze pubbliche nei tipi pubblici e tutti i membri dei tipi di valore pubblici.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere un costruttore predefinito pubblico o rimuovere il <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> dal tipo.
+Per correggere una violazione di questa regola, aggiungere un costruttore predefinito pubblico o rimuovere <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> dal tipo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola se sono disponibili altri modi per creare e passare l'oggetto per il client COM.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola se vengono fornite altre modalità per creare e passare l'oggetto al client COM.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1017: Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017 Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
 

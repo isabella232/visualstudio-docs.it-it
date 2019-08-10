@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc6db6dff5ee4c4e4d387399dbf79277046d6c02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b3c3fe41332d488d180ddafbedfe29da1a3855e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797454"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921784"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Non usare i timer che impediscono le modifiche allo stato di potenza
 
@@ -31,13 +31,13 @@ ms.locfileid: "62797454"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un timer ha un intervallo impostato su si verificano più di una volta al secondo.
+Un timer ha un intervallo impostato in modo che venga eseguito più di una volta al secondo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Non eseguire il polling più spesso di una volta al secondo o utilizzare i timer che si verificano più frequentemente una volta al secondo. Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi.
+Non eseguire il polling più spesso di una volta al secondo o usare i timer che si verificano più frequentemente di una volta al secondo. Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Impostare gli intervalli di timer in presenti meno di una volta al secondo.
+Impostare gli intervalli del timer in modo che si verifichino meno di una volta al secondo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Questa regola deve essere eliminata solo se è richiesta l'attivazione di più di una volta al secondo il timer e le considerazioni sulla mobilità può essere ignorati.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Questa regola deve essere eliminata solo se è richiesto l'attivazione del timer più di una volta al secondo e le considerazioni sulla mobilità possono essere ignorate in modo sicuro.

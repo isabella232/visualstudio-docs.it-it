@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 274b01a67974db08d9ec016a18ec115bcfac2452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3868061a01572d0b1adadec6619f88269d353dff
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788568"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922442"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Convalidare gli argomenti di metodi pubblici
 
@@ -35,28 +35,28 @@ ms.locfileid: "62788568"
 
 ## <a name="cause"></a>Causa
 
-Un metodo visibile esternamente dereferenziato in uno dei relativi argomenti di riferimento senza verificare se è specificata nell'argomento `null` (`Nothing` in Visual Basic).
+Un metodo visibile esternamente consente di dereferenziare uno degli argomenti di riferimento senza verificare se tale argomento `null` è`Nothing` (in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Tutti gli argomenti di riferimento che vengono passati a metodi visibili esternamente devono essere confrontati con `null`. Se appropriato, generare una <xref:System.ArgumentNullException> quando l'argomento è `null`.
+Tutti gli argomenti di riferimento passati a metodi visibili esternamente devono essere controllati `null`. Se appropriato, generare un' <xref:System.ArgumentNullException> eccezione quando l'argomento `null`è.
 
-Se un metodo può essere chiamato da un assembly sconosciuto perché è dichiarato come pubblico o protetto, è necessario convalidare tutti i parametri del metodo. Se il metodo è progettato per essere chiamato solo da assembly noti, è necessario rendere il metodo interno e applicare il <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attributo all'assembly che contiene il metodo.
+Se un metodo può essere chiamato da un assembly sconosciuto perché è dichiarato pubblico o protetto, è necessario convalidare tutti i parametri del metodo. Se il metodo è progettato per essere chiamato solo da assembly noti, è necessario rendere il metodo interno e applicare l' <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attributo all'assembly che contiene il metodo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, convalidare ogni argomento di riferimento su `null`.
+Per correggere una violazione di questa regola, convalidare ogni argomento `null`di riferimento rispetto a.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Se si è certi che il parametro dereferenziato sia stato convalidato da un'altra chiamata al metodo della funzione, è possibile eliminare un avviso da questa regola.
+È possibile eliminare un avviso da questa regola se si è certi che il parametro dereferenziato è stato convalidato da un'altra chiamata al metodo nella funzione.
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente illustra un metodo che viola la regola e un metodo che soddisfa la regola.
+Nell'esempio seguente viene illustrato un metodo che viola la regola e un metodo che soddisfa la regola.
 
- ```csharp
- using System;
+```csharp
+using System;
 
 namespace DesignLibrary
 {
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>Esempio
 
-I costruttori di copia che consentono di popolare i campi o proprietà che sono oggetti di riferimento possono anche violare la regola di CA1062. La violazione si verifica perché l'oggetto copiato che viene passato al costruttore di copia potrebbe essere `null` (`Nothing` in Visual Basic). Per correggere la violazione, usare un metodo statico (Shared in Visual Basic) per verificare che l'oggetto copiato non è null.
+I costruttori di copia che popolano i campi o le proprietà che sono oggetti di riferimento possono violare anche la regola CA1062. La violazione si verifica perché l'oggetto copiato passato al costruttore di copia potrebbe essere `null` (`Nothing` in Visual Basic). Per risolvere la violazione, usare un metodo statico (Shared in Visual Basic) per verificare che l'oggetto copiato non sia null.
 
-Nell'esempio seguente `Person` esempio di classe, il `other` oggetto passato per il `Person` costruttore di copia potrebbe essere `null`.
+Nell'esempio di `Person` classe seguente, l' `other` oggetto passato al costruttore di `Person` copia potrebbe essere `null`.
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>Esempio
 
-Di seguito rivisti `Person` esempio, il `other` oggetto passato al costruttore di copia viene dapprima controllata dei valori null nel `PassThroughNonNull` (metodo).
+Nell' `Person` esempio riportato di seguito, l' `other` oggetto passato al costruttore di copia viene prima `PassThroughNonNull` verificato il valore null nel metodo.
 
 ```csharp
 public class Person

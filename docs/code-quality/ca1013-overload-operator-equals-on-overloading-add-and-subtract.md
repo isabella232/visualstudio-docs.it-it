@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a3790f57882071bddc90ef78a0ac74dd565514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c82e7303ea4016974be04c3d8745cb2011017f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779583"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923171"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione
 
@@ -35,15 +35,15 @@ ms.locfileid: "62779583"
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
 |Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un membro pubblico o protetto implementa gli operatori di addizione o sottrazione senza implementare l'operatore di uguaglianza.
+Un membro pubblico o protetto implementa gli operatori di addizione o sottrazione senza implementare l'operatore di uguaglianza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando le istanze di un tipo possono essere combinate usando operazioni quali l'addizione e sottrazione, è quasi sempre necessario definire l'uguaglianza per restituire `true` per due istanze che presentano gli stessi valori che lo costituiscono.
+Quando le istanze di un tipo possono essere combinate usando operazioni quali l'addizione e la sottrazione, è necessario definire quasi sempre `true` l'uguaglianza per restituire per due istanze con gli stessi valori costitutivi.
 
- È possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione causerà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo di Object. Equals nell'implementazione. Vedere l'esempio seguente.
+Non è possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione provocherà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo Object. Equals nell'implementazione. Vedere l'esempio seguente.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -60,20 +60,20 @@ return left.Equals(right);
 ```
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare l'operatore di uguaglianza, in modo che sia matematicamente coerenza con gli operatori di addizione e sottrazione.
+Per correggere una violazione di questa regola, implementare l'operatore di uguaglianza in modo che sia matematicamente coerente con gli operatori di addizione e sottrazione.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola quando l'implementazione predefinita dell'operatore di uguaglianza fornisce il comportamento corretto per il tipo.
-
-## <a name="example"></a>Esempio
- L'esempio seguente definisce un tipo (`BadAddableType`) che violano questa regola. Questo tipo deve implementare l'operatore di uguaglianza affinché due istanze in cui gli stessi valori di campo di test `true` per verificarne l'uguaglianza. Il tipo `GoodAddableType` Mostra l'implementazione corretta. Si noti che questo tipo implementa l'operatore di disuguaglianza anche che esegue l'override <xref:System.Object.Equals%2A> per soddisfare le altre regole. Un'implementazione completa è necessario implementare anche <xref:System.Object.GetHashCode%2A>.
-
- [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola quando l'implementazione predefinita dell'operatore di uguaglianza fornisce il comportamento corretto per il tipo.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente testa l'uguaglianza con istanze dei tipi definiti in precedenza in questo argomento per illustrare il comportamento predefinito e il comportamento corretto per l'operatore di uguaglianza.
+Nell'esempio seguente viene definito un tipo`BadAddableType`() che viola questa regola. Questo tipo deve implementare l'operatore di uguaglianza per far verificare `true` l'uguaglianza di due istanze con lo stesso valore di campo. Il tipo `GoodAddableType` Mostra l'implementazione corretta. Si noti che questo tipo implementa anche l'operatore di disuguaglianza e <xref:System.Object.Equals%2A> le sostituzioni per soddisfare altre regole. Verrà inoltre implementata <xref:System.Object.GetHashCode%2A>un'implementazione completa di.
 
- [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
+[!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
+
+## <a name="example"></a>Esempio
+Nell'esempio seguente viene verificata l'uguaglianza utilizzando istanze dei tipi definiti in precedenza in questo argomento per illustrare il comportamento predefinito e corretto per l'operatore di uguaglianza.
+
+[!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
 
 Questo esempio produce il seguente output:
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faa225178a50be080f92a728998e914025c17168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f13ac29028472384cfadbf9c397e578f6509670
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788660"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922419"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Non nascondere i metodi di una classe base
 
@@ -31,18 +31,18 @@ ms.locfileid: "62788660"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo derivato viene dichiarato un metodo con lo stesso nome e con lo stesso numero di parametri come uno dei relativi metodi di base; uno o più dei parametri sono un tipo di base del parametro corrispondente del metodo base; e tutti i parametri rimanenti sono tipi che sono identici ai parametri corrispondenti nel metodo di base.
+Un tipo derivato dichiara un metodo con lo stesso nome e con lo stesso numero di parametri di uno dei relativi metodi di base; uno o più parametri è un tipo di base del parametro corrispondente nel metodo di base. e gli eventuali parametri rimanenti hanno tipi identici ai parametri corrispondenti nel metodo di base.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un metodo in un tipo di base è nascosto da un metodo denominato in modo identico in un tipo derivato durante la firma di parametro del metodo derivato differisce solo per i tipi che presentano una derivazione più debole rispetto ai tipi corrispondenti nella firma del parametro del metodo di base.
+Un metodo in un tipo di base è nascosto da un metodo con nome identico in un tipo derivato quando la firma del parametro del metodo derivato differisce solo per i tipi che sono derivati in modo più debole rispetto ai tipi corrispondenti nella firma del parametro del metodo di base.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere o rinominare il metodo o modificare la firma di parametro in modo che il metodo non nasconde il metodo di base.
+Per correggere una violazione di questa regola, rimuovere o rinominare il metodo oppure modificare la firma del parametro in modo che il metodo non nasconda il metodo di base.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che viola la regola.
+Nell'esempio seguente viene illustrato un metodo che viola la regola.
 
- [!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]
+[!code-csharp[FxCop.Design.HideBaseMethod#1](../code-quality/codesnippet/CSharp/ca1061-do-not-hide-base-class-methods_1.cs)]

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f9304fcd86a9b36a729b1436fe16471b449ac0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778723"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922637"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento
 
@@ -31,25 +31,25 @@ ms.locfileid: "62778723"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo di riferimento pubblica pubblica o annidata esegue l'overload dell'operatore di uguaglianza.
+Un tipo di riferimento pubblico o nidificato viene sovraccaricato dall'operatore di uguaglianza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per i tipi di riferimento, l'implementazione predefinita dell'operatore di uguaglianza è quasi sempre corretta. Per impostazione predefinita, i due riferimenti sono uguali solo se puntano allo stesso oggetto.
+Per i tipi di riferimento, l'implementazione predefinita dell'operatore di uguaglianza è quasi sempre corretta. Per impostazione predefinita, i due riferimenti sono uguali solo se puntano allo stesso oggetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere l'implementazione dell'operatore di uguaglianza.
+Per correggere una violazione di questa regola, rimuovere l'implementazione dell'operatore di uguaglianza.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola quando il tipo di riferimento si comporta come un tipo di valore predefinito. Se è significativo per eseguire operazioni di addizione o sottrazione nelle istanze del tipo, è probabilmente corretta implementare l'operatore di uguaglianza e sopprimere la violazione.
-
-## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato il comportamento predefinito quando si confrontano due riferimenti.
-
- [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+È possibile eliminare un avviso da questa regola quando il tipo di riferimento si comporta come un tipo di valore predefinito. Se è significativo eseguire l'addizione o la sottrazione per le istanze del tipo, probabilmente è corretto implementare l'operatore di uguaglianza ed eliminare la violazione.
 
 ## <a name="example"></a>Esempio
+Nell'esempio seguente viene illustrato il comportamento predefinito durante il confronto di due riferimenti.
 
-La seguente applicazione confronta alcuni riferimenti.
+[!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+
+## <a name="example"></a>Esempio
+
+Nell'applicazione seguente vengono confrontati alcuni riferimenti.
 
 [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]
 
@@ -64,7 +64,7 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1013: Overload di operatore equals all'overload degli operatori di addizione e sottrazione](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013 Operatore di overload uguale a in overload di Add e Subtract](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Vedere anche
 

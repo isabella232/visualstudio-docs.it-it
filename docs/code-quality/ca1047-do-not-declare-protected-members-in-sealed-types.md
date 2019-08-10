@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ab7cf2c5a4f17966ed5b4da30657e05a4683738
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778785"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922639"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Non dichiarare membri protected nei tipi sealed
 
@@ -31,24 +31,24 @@ ms.locfileid: "62778785"
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
 |Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- È un tipo pubblico `sealed` (`NotInheritable` in Visual basic) e dichiara un membro protetto o un tipo annidato protetto. Questa regola segnala le violazioni per <xref:System.Object.Finalize%2A> metodi, che devono seguire questo modello.
+Un tipo pubblico è `sealed` (`NotInheritable` in Visual Basic) e dichiara un membro protetto o un tipo annidato protetto. Questa regola non segnala le violazioni dei <xref:System.Object.Finalize%2A> metodi, che devono seguire questo modello.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I tipi dichiarano membri protetti in modo che i tipi che ereditano possano accedere al membro o eseguirne l'override. Per definizione, è possibile ereditare da un tipo sealed, ovvero metodi protetti su tipi sealed non può essere chiamato.
+I tipi dichiarano membri protetti in modo che i tipi che ereditano possano accedere al membro o eseguirne l'override. Per definizione, non è possibile ereditare da un tipo sealed, il che significa che non è possibile chiamare metodi protetti su tipi sealed.
 
- Il compilatore c# genera un avviso per questo errore.
+Il C# compilatore genera un avviso per l'errore.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, impostare il livello di accesso del membro privato o rendere ereditabile il tipo.
+Per correggere una violazione di questa regola, impostare il livello di accesso del membro su privato o rendere il tipo ereditabile.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola. Lasciare il tipo nello stato corrente può causare problemi di manutenzione e non offre alcun vantaggio.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola. Lasciare il tipo nello stato corrente può causare problemi di manutenzione e non fornisce alcun vantaggio.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo che viola la regola.
+Nell'esempio seguente viene illustrato un tipo che viola questa regola.
 
- [!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
- [!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]
+[!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
+[!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]
