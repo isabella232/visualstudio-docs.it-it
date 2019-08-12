@@ -1,26 +1,44 @@
 ---
 title: Vantaggio Microsoft Azure | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Azure incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823740"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681666"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
-
-## <a name="overview"></a>Panoramica
-
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il [credito Azure mensile](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure costituisce la sandbox personale per lo sviluppo e il test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
 
-## <a name="eligibility"></a>Idoneità
+## <a name="activation-steps"></a>Procedura di attivazione
+1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
+2. Individuare il riquadro Azure nella sezione Strumenti della pagina Vantaggi e fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
+   > [!div class="mx-imgBorder"]
+   > ![Riquadro Azure](_img/vs-azure/vs-azure-tile.png)
+
+3. Se non si ha una sottoscrizione di Azure esistente, verrà chiesto di compilare le informazioni necessarie per creare la sottoscrizione di Azure. Selezionare la casella di controllo per accettare termini e condizioni e fare clic su **Iscriviti**:
+   > [!div class="mx-imgBorder"]
+   > ![Registrazione di Azure](_img/vs-azure/vs-azure-sign-up-cropped.png) Se si ha una sottoscrizione di Azure esistente, fare clic sulla casella di controllo per accettare il contratto e fare clic su **Iscriviti**.
+
+4. Quando l'account è pronto, è possibile scegliere un piano di supporto di Azure (venduto separatamente) o iniziare la sottoscrizione di Azure.
+   > [!div class="mx-imgBorder"]
+   > ![Preparazione di Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+
+5. Il centro di avvio rapido del dashboard di Azure viene caricato.  
+   > [!div class="mx-imgBorder"]
+   > ![Dashboard di Azure](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+
+6. Creare un segnalibro per il [portale di Azure](https://portal.azure.com) per facilitare l'accesso in futuro.
+
+
+## <a name="eligibility"></a>Idoneità
 |                 Livello di sottoscrizione/Programma                 |           Vantaggio           |                         Rinnovabile?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     Credito mensile pari a 150 dollari USA     |                             Sì                             ||
@@ -46,30 +64,7 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
-## <a name="activation-steps"></a>Procedura di attivazione
-
-1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-
-2. Individuare il riquadro Azure nella sezione Strumenti della pagina Vantaggi e fare clic sul collegamento **Attiva** nella parte inferiore del riquadro del vantaggio.
-   > [!div class="mx-imgBorder"]
-   > ![Riquadro Azure](_img/vs-azure/vs-azure-tile.png)
-
-3. Compilare le informazioni richieste per creare la sottoscrizione di Azure, selezionare la casella di controllo per accettare termini e condizioni e fare clic su **Iscriviti**:
-   > [!div class="mx-imgBorder"]
-   > ![Registrazione di Azure](_img/vs-azure/vs-azure-sign-up-cropped.png)
-
-4. Quando l'account è pronto, è possibile scegliere un piano di supporto di Azure (venduto separatamente) o iniziare la sottoscrizione di Azure.
-   > [!div class="mx-imgBorder"]
-   > ![Preparazione di Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
-
-5. Verrà caricato il dashboard di Azure. La prima volta che lo si usa, viene offerta la possibilità di seguire una panoramica.  La panoramica è costituita da una serie di descrizioni che indicano come eseguire una serie di attività e come trovare informazioni pertinenti.  Al termine della panoramica, o se la si chiude, viene visualizzato il dashboard di Azure.
-
-6. Creare un segnalibro per il [portale di Azure](https://portal.azure.com) per facilitare l'accesso in futuro.
-   > [!div class="mx-imgBorder"]
-   > ![Dashboard di Azure](_img/vs-azure/vs-azure-dashboard-cropped.png)
-
-## <a name="faq"></a>Domande frequenti
-
+## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>D: Come si invia una richiesta di supporto tecnico dal portale di Azure?
 R:  L'invio di una richiesta di supporto dal portale di Azure è un processo in tre fasi.
 1. Attivare il vantaggio di supporto tecnico e ottenere l'ID di accesso dell'ID di contratto.
@@ -79,7 +74,6 @@ R:  L'invio di una richiesta di supporto dal portale di Azure è un processo in 
 Vedere la documentazione del [supporto tecnico](vs-tech-support.md) per informazioni dettagliate.
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>D: Si riceve un messaggio che informa che l'accesso ad Azure terminerà a breve.  Che cosa si può fare per continuare a usare Azure?
-
 R:  Questo messaggio di posta elettronica viene inviato a coloro che usano il vantaggio Azure associato alla sottoscrizione di Visual Studio quando la sottoscrizione è scaduta o è stata rimossa.  Per continuare a usare Azure, sono disponibili diverse opzioni:
 
 **Azione consigliata:**
@@ -105,9 +99,14 @@ Se si preferisce interrompere la sottoscrizione di Azure di Visual Studio, è po
 Se si ritiene di aver ricevuto questo messaggio di posta elettronica per errore, contattare l'[assistenza clienti di Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
 ## <a name="support-resources"></a>Risorse di supporto
-
 - Serve aiuto con Azure?  Vedere queste risorse:
   - Supporto tecnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Documentazione di Azure](/azure/)
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Passaggi successivi
+Per altre informazioni sugli strumenti e i servizi Microsoft, consultare la documentazione di:
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [IDE di Visual Studio](/visualstudio/)

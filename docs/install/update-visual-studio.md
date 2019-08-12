@@ -2,7 +2,7 @@
 title: Aggiornare Visual Studio
 titleSuffix: ''
 description: Informazioni sulla procedura dettagliata di aggiornamento di Visual Studio alla versione più recente.
-ms.date: 07/11/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250563"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681505"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 
@@ -180,7 +180,7 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
 1. Aprire il programma di installazione.
 
-     ![Aprire il programma di installazione di Visual Studio](media/vs2019-visual-studio-installer.png "Aprire il programma di installazione di Visual Studio")
+     ![Aprire il programma di installazione di Visual Studio da Windows](media/vs-2019/vs-installer-windows-start.png "Aprire il programma di installazione di Visual Studio")
 
    Prima di continuare, potrebbe essere necessario aggiornare il programma di installazione. In questo caso, seguire i prompt.
 
@@ -188,15 +188,17 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
    Se ad esempio è stato precedentemente installato Visual&nbsp;Studio Community&nbsp;2019 ed è disponibile un aggiornamento, nel programma di installazione verrà visualizzato un messaggio **Aggiornamento disponibile**.
 
-     ![Selezionare l'edizione di Visual Studio 2019 che si vuole aggiornare](media/vs2019-update-visual-studio-community-rc.png "Selezionare l'edizione di Visual Studio 2019 che si vuole aggiornare")
+     ![Selezionare l'edizione di Visual Studio 2019 che si vuole aggiornare](media/vs-2019/vs-installer-update-visual-studio-community.png "Selezionare l'edizione di Visual Studio 2019 che si vuole aggiornare")
 
 1. Scegliere **Aggiorna** per installare gli aggiornamenti.
 
-    ![Selezionare il pulsante Aggiorna per installare gli aggiornamenti](media/vs2019-choose-update-visual-studio-community-rc.png "Selezionare il pulsante Aggiorna per installare gli aggiornamenti")
+    ![Selezionare il pulsante Aggiorna per installare gli aggiornamenti](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "Selezionare il pulsante Aggiorna per installare gli aggiornamenti")
 
-1. Dopo aver completato l'aggiornamento scegliere **Avvia** per avviare Visual Studio.
+1. Al termine dell'aggiornamento, potrebbe essere richiesto di riavviare il computer. In tal caso, eseguire questa operazione e quindi avviare Visual Studio come si fa normalmente.
 
-    ![Selezionare il pulsante Avvia per avviare Visual Studio](media/vs2019-choose-launch-visual-studio-community-rc.png "Selezionare il pulsante Avvia per avviare Visual Studio")
+   Se non viene richiesto di riavviare il computer, scegliere **Avvia** per avviare Visual Studio dal programma di installazione.
+
+    ![Selezionare il pulsante Avvia per avviare Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "Selezionare il pulsante Avvia per avviare Visual Studio")
 
 ## <a name="use-the-ide"></a>Usare l'IDE
 
@@ -206,7 +208,7 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
 1. Dal menu **Start** di Windows scegliere **Visual Studio 2019**.
 
-    ![Aprire Visual Studio 2019](media/vs2019-visual-studio-rc.png "Aprire Visual Studio 2019 da Windows")
+    ![Aprire Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "Aprire Visual Studio 2019 da Windows")
 
 1. Sotto **Inizia** scegliere un'opzione qualsiasi per aprire l'IDE.
 
@@ -214,15 +216,15 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 
     Viene aperto Visual Studio. Nell'IDE viene visualizzato un messaggio **Aggiornamento Visual Studio 2019**.
 
-    ![Messaggio "Aggiornamento Visual Studio 2019" nell'IDE](media/vs2019-update-visual-studio-ide-message.png "Messaggio \"Aggiornamento Visual Studio 2019\" nell'IDE")
+    ![Messaggio "Aggiornamento Visual Studio 2019" nell'IDE](media/vs-2019/update-visual-studio-ide-message.png "Messaggio \"Aggiornamento Visual Studio 2019\" nell'IDE")
 
 1. Nel messaggio **Aggiornamento Visual Studio 2019** scegliere **Visualizza dettagli**.
 
-   ![Scegliere il pulsante Visualizza dettagli nel messaggio Aggiornamento Visual Studio 2019 dell'IDE](media/vs2019-update-visual-studio-ide-view-details.png "Scegliere il pulsante Visualizza dettagli nel messaggio Aggiornamento Visual Studio 2019")
+   ![Scegliere il pulsante Visualizza dettagli nel messaggio Aggiornamento Visual Studio 2019 dell'IDE](media/vs-2019/update-visual-studio-ide-view-details.png "Scegliere il pulsante Visualizza dettagli nel messaggio Aggiornamento Visual Studio 2019")
 
 1. Nella finestra di dialogo **Aggiornamento scaricato e pronto per l'installazione** scegliere **Aggiorna**.
 
-     ![Scegliere il pulsante Aggiorna nella finestra di dialogo "Aggiornamento scaricato e pronto per l'installazione"](media/vs2019-update-visual-studio-community-rc-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo \"Aggiornamento scaricato e pronto per l'installazione\"")
+     ![Scegliere il pulsante Aggiorna nella finestra di dialogo "Aggiornamento scaricato e pronto per l'installazione"](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo \"Aggiornamento scaricato e pronto per l'installazione\"")
 
    Visual Studio viene aggiornato, chiuso e quindi riaperto.
 
@@ -235,9 +237,9 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
     > [!NOTE]
     > È anche possibile usare la casella di ricerca nell'IDE per controllare se sono disponibili aggiornamenti. Premere **CTRL**+**Q**, digitare "controlla aggiornamenti" e quindi scegliere il risultato di ricerca corrispondente.
 
-1. Nella finestra di dialogo **Aggiornamento scaricato e pronto per l'installazione** scegliere **Aggiorna**.
+1. Nella finestra di dialogo **Aggiornamento disponibile** scegliere **Aggiorna**.
 
-     ![Scegliere il pulsante Aggiorna nella finestra di dialogo "Aggiornamento scaricato e pronto per l'installazione"](media/vs2019-update-visual-studio-community-rc-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo \"Aggiornamento scaricato e pronto per l'installazione\"")
+     ![Scegliere il pulsante Aggiorna nella finestra di dialogo "Aggiornamento scaricato e pronto per l'installazione"](media/vs-2019/update-visual-studio-community-from-ide.png "Scegliere il pulsante Aggiorna nella finestra di dialogo \"Aggiornamento scaricato e pronto per l'installazione\"")
 
    Visual Studio viene aggiornato, chiuso e quindi riaperto.
 
@@ -256,7 +258,7 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
       > [!TIP]
       > Un aggiornamento per un'edizione di Visual Studio 2019 è cumulativo, quindi scegliere sempre di installare quello con il numero di versione più recente.
 
-1. Nella finestra di dialogo **Aggiornamento scaricato e pronto per l'installazione** scegliere **Aggiorna**.
+1. Nella finestra di dialogo **Aggiornamento disponibile** scegliere **Aggiorna**.
 
    Visual Studio viene aggiornato, chiuso e quindi riaperto.
 
@@ -290,6 +292,6 @@ Ecco come:
 * [Installare versioni di Visual Studio side-by-side](install-visual-studio-versions-side-by-side.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md)
-* [Aggiornare Visual Studio per Mac](/visualstudio/mac/update)
+* [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Modificare Visual Studio](modify-visual-studio.md)
 * [Disinstallare Visual Studio](uninstall-visual-studio.md)
