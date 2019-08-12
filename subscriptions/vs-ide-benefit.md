@@ -3,17 +3,17 @@ title: Vantaggio IDE di Visual Studio nella sottoscrizione di Visual Studio | Mi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824649"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787874"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>Uso del vantaggio di Visual Studio 2019
+# <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
 
 I sottoscrittori di Visual Studio hanno accesso all'ambiente IDE di Visual Studio.  La versione specifica dipende dal livello della sottoscrizione.  Il vantaggio viene visualizzato sotto forma di riquadro nella categoria Strumenti della pagina [Vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) del portale sottoscrittori.
 
@@ -34,7 +34,7 @@ Per scaricare l'ambiente IDE:
 5. Fare clic sul pulsante di download blu.
    > [!div class="mx-imgBorder"]
    > ![Dettagli del download di Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Per eseguire subito l'installazione, fare clic su **Esegui**.
+6. Fare clic sul pacchetto di installazione scaricato.  Se viene richiesto di eseguire subito l'installazione, fare clic su **Esegui**.
 7. Nella finestra di dialogo Controllo dell'account utente fare clic su **Sì**.
 8. Fare clic su **Continua** per accettare le condizioni di licenza.
 9. Quando viene avviato il programma di installazione, scegliere i carichi di lavoro, i singoli componenti e i Language Pack scegliendoli nelle schede corrispondenti.
@@ -43,9 +43,9 @@ Per scaricare l'ambiente IDE:
 
 10. Fare clic su **Installa**.
 
-11. Dopo il completamento dell'installazione, è possibile scegliere se modificarla o se avviare Visual Studio.  Fare clic su **Avvia** per iniziare.
+11. Dopo il completamento dell'installazione, è possibile scegliere se modificarla o se avviare Visual Studio.  Fare clic su **Avvia** per iniziare.  Se sono installate più versioni, verranno elencate.
     > [!div class="mx-imgBorder"]
-    > ![Avviare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Avviare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. Accedere con l'account associato alla sottoscrizione di Visual Studio.
 
@@ -53,12 +53,9 @@ Per scaricare l'ambiente IDE:
 
 14. Viene aperto Visual Studio. È tutto pronto per iniziare a usare Visual Studio.
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![Iniziare a usare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>Idoneità
 
@@ -81,3 +78,9 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
   - Supporto tecnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Documentazione](/visualstudio/)
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+
+## <a name="next-steps"></a>Passaggi successivi
+Una volta installato Visual Studio, non dimenticare di attivare questi altri importanti vantaggi:
+- [Azure DevOps](vs-azure-devops.md)
+- [Crediti Azure](vs-azure.md)
+- [Account per sviluppatore di Windows](vs-windows-dev.md)

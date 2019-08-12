@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461401"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712211"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Strumenti di test di Visual Studio
 
@@ -28,7 +28,13 @@ Gli strumenti di test di Visual Studio consentono allo sviluppatore e al team di
 
 La finestra **Esplora test** consente agli sviluppatori di creare, gestire ed eseguire unit test. È possibile utilizzare il framework per unit test di Microsoft o uno tra i diversi framework di terze parti o open source.
 
+::: moniker range="vs-2017"
 ![Esplora test di Visual Studio](media/devtest-testexplorer.png)
+::: moniker-end
+
+::: moniker range="vs-2019"
+![Esplora test di Visual Studio 16.2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
 
 * [Introduzione agli unit test](unit-test-your-code.md)
 * [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md)
