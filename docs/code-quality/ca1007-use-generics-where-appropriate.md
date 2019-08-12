@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ffb18316b5f009a0f2854c8a158e528f15c92326
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744771"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923199"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Usare generics dove appropriato
 
@@ -34,37 +34,37 @@ ms.locfileid: "66744771"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo visibile esternamente contiene un parametro di riferimento di tipo <xref:System.Object?displayProperty=fullName>, e l'assembly che contiene è destinato a .NET Framework 2.0.
+Un metodo visibile esternamente contiene un parametro di riferimento di <xref:System.Object?displayProperty=fullName>tipo e l'assembly contenitore ha come destinazione .NET Framework 2,0.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un parametro di riferimento è un parametro che viene modificato tramite il `ref` (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) (parola chiave). Il tipo di argomento fornito per un parametro di riferimento deve corrispondere esattamente al tipo di parametro di riferimento. Per usare un tipo derivato dal tipo di parametro di riferimento, è necessario prima di tutto eseguire il cast al tipo e assegnato a una variabile del tipo di parametro di riferimento. Uso di un metodo generico consente tutti i tipi, soggetti a vincoli, deve essere passato al metodo senza prima eseguire il cast di tipo al tipo di parametro di riferimento.
+Un parametro di riferimento è un parametro modificato tramite la `ref` parola chiave (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Il tipo di argomento fornito per un parametro di riferimento deve corrispondere esattamente al tipo di parametro di riferimento. Per usare un tipo derivato dal tipo di parametro Reference, è necessario prima eseguire il cast del tipo e assegnarlo a una variabile del tipo di parametro Reference. L'uso di un metodo generico consente di passare al metodo tutti i tipi, soggetti a vincoli, senza prima eseguire il cast del tipo al tipo di parametro di riferimento.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, impostare il metodo generico e sostituire il <xref:System.Object> parametro utilizzando un parametro di tipo.
+Per correggere una violazione di questa regola, rendere generico il metodo e sostituire il <xref:System.Object> parametro usando un parametro di tipo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra una routine di scambio per utilizzo generico che viene implementata sotto forma di metodi e non generici. Si noti come in modo efficiente le stringhe vengono scambiate tramite il metodo generico rispetto al metodo non generico.
+Nell'esempio seguente viene illustrata una routine di scambio di utilizzo generico implementata come metodi non generici e generici. Si noti il modo in cui le stringhe vengono scambiate usando il metodo generico rispetto al metodo non generico.
 
- [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
- [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
+[!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
+[!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1005: Evitare un numero eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+[CA1005 Evitare parametri eccessivi nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: Le raccolte devono implementare l'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010 Le raccolte devono implementare un'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000 Non dichiarare membri statici su tipi generici](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
- [CA1002: Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)
+[CA1002 Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
- [CA1006: Non annidare tipi generici nelle firme dei membri](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+[CA1006 Non annidare tipi generici nelle firme membro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: I metodi generici devono fornire parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004 I metodi generici devono fornire il parametro di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
- [CA1003: Usare istanze di gestori eventi generici](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003: Usare istanze di gestori eventi generici](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Generics](/dotnet/csharp/programming-guide/generics/index)
+[Generics](/dotnet/csharp/programming-guide/generics/index)

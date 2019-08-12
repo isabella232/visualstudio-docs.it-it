@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2374e3c1aa79414bfa39ea97abeec7e8e44d2c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b292c58e666c11130fb25f67c234bfd2282fe463
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797381"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922267"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: I punti di ingresso P/Invoke devono esistere
 
@@ -27,25 +27,25 @@ ms.locfileid: "62797381"
 |-|-|
 |TypeName|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
-|Category|Microsoft.Interoperability|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. interoperabilità|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo pubblico o protetto è contrassegnato con il <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Non è possibile individuare la libreria non gestita né associare il metodo a una funzione nella libreria. Se la regola non è possibile trovare il nome del metodo esattamente come viene specificato, la ricerca di ANSI o versioni a caratteri wide del metodo aggiungendo il nome del metodo con "A" o "W". Se viene trovata alcuna corrispondenza, la regola tenta di individuare una funzione usando il formato del nome stdcall (_MyMethod@12, dove 12 rappresenta la lunghezza degli argomenti). Se viene trovata alcuna corrispondenza e il nome del metodo inizia con '#', viene cercata la funzione come un riferimento ordinale anziché un riferimento al nome.
+Un metodo pubblico o protetto è contrassegnato con <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Non è possibile individuare la libreria non gestita né associare il metodo a una funzione nella libreria. Se la regola non riesce a trovare il nome del metodo esattamente come è specificato, Cerca le versioni ANSI o a caratteri wide del metodo eseguendo il suffisso del nome del metodo con "A" o "W". Se non viene trovata alcuna corrispondenza, la regola tenta di individuare una funzione utilizzando il formato del nome stdcall_MyMethod@12(, dove 12 rappresenta la lunghezza degli argomenti). Se non viene trovata alcuna corrispondenza e il nome del metodo inizia con ' #', la regola cerca la funzione come riferimento ordinale anziché come riferimento a un nome.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Nessun controllo in fase di compilazione è disponibile per assicurarsi che i metodi contrassegnati con <xref:System.Runtime.InteropServices.DllImportAttribute> si trovano in cui viene fatto riferimento DLL non gestita. Se nessuna funzione con il nome specificato si trova nella raccolta o gli argomenti al metodo non corrispondono agli argomenti della funzione, common language runtime genera un'eccezione.
+Non è disponibile alcun controllo in fase di compilazione per assicurarsi che i metodi contrassegnati con <xref:System.Runtime.InteropServices.DllImportAttribute> si trovino nella dll non gestita a cui si fa riferimento. Se nella libreria non è presente alcuna funzione con il nome specificato o se gli argomenti del metodo non corrispondono agli argomenti della funzione, il Common Language Runtime genera un'eccezione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, correggere il metodo che presenta il <xref:System.Runtime.InteropServices.DllImportAttribute> attributo. Assicurarsi che la libreria non gestita esista e sia nella stessa directory dell'assembly che contiene il metodo. Se la raccolta è presente e un riferimento corretto, verificare che il nome del metodo, il tipo restituito e la firma dell'argomento corrispondere alla funzione di libreria.
+Per correggere una violazione di questa regola, correggere il metodo con l' <xref:System.Runtime.InteropServices.DllImportAttribute> attributo. Verificare che la libreria non gestita esista e si trovi nella stessa directory dell'assembly che contiene il metodo. Se la libreria è presente e viene fatto riferimento correttamente, verificare che il nome del metodo, il tipo restituito e la firma dell'argomento corrispondano alla funzione della libreria.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola quando la libreria non gestita è nella stessa directory dell'assembly gestito che vi fa riferimento. Potrebbe essere possibile eliminare un avviso da questa regola nel caso in cui la libreria non gestita non è possibile individuare.
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
+Non eliminare un avviso da questa regola quando la libreria non gestita si trova nella stessa directory dell'assembly gestito che vi fa riferimento. Potrebbe essere possibile eliminare un avviso da questa regola nel caso in cui non sia possibile trovare la libreria non gestita.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo che viola la regola. Nessuna funzione denominata `DoSomethingUnmanaged` si verifica nel Kernel32. dll.
+Nell'esempio seguente viene illustrato un tipo che viola la regola. Nessuna funzione denominata `DoSomethingUnmanaged` viene eseguita in Kernel32. dll.
 
- [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]
+[!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>
