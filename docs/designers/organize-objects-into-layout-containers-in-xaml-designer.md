@@ -6,24 +6,22 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893584"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821930"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 
 Questo articolo descrive i pannelli di layout e i controlli della finestra di progettazione XAML.
 
-Si supponga di voler impostare la posizione degli oggetti, quali immagini, pulsanti e video, in una pagina. È probabile che si preferisca organizzarli in righe e colonne, su un'unica riga disposti orizzontalmente o verticalmente o impostare per ognuno una posizione fissa.
+Si supponga di voler impostare la posizione degli oggetti, come immagini, pulsanti e video, in una pagina. È probabile che si preferisca organizzarli in righe e colonne, su un'unica riga disposti orizzontalmente o verticalmente o impostare per ognuno una posizione fissa.
 
 Dopo aver dedicato tempo all'organizzazione degli oggetti nella pagina, è possibile passare alla scelta di un pannello di layout. Inizialmente in tutte le pagine è presente un pannello di layout in quanto viene usato per aggiungervi gli oggetti. Il pannello di layout predefinito è di tipo **Grid**, ma è possibile modificarlo.
 
-I pannelli di layout non vengono però usati unicamente per organizzare gli oggetti in una pagina, ma anche per progettare tenendo conto di risoluzioni e dimensioni dello schermo diverse. Quando gli utenti eseguono l'app, tutti gli elementi presenti in un pannello di layout vengono ridimensionati in base all'area dello schermo del dispositivo. Se si preferisce che gli elementi non vengano ridimensionati, è ovviamente possibile disattivare questo comportamento per una parte o per l'intero layout, usando a tale scopo le proprietà height e width.
+I pannelli di layout non vengono però usati unicamente per organizzare gli oggetti in una pagina, ma anche per progettare tenendo conto di risoluzioni e dimensioni dello schermo diverse. Quando gli utenti eseguono l'app, tutti gli elementi presenti in un pannello di layout vengono ridimensionati in base all'area dello schermo del dispositivo. Ovviamente, se si preferisce che gli elementi non vengano ridimensionati, è possibile disattivare questo comportamento per una parte o per l'intero layout, usando a tale scopo le proprietà height e width.
 
 ## <a name="layout-panels"></a>Pannelli di layout
 
@@ -41,9 +39,9 @@ Consente di disporre gli oggetti in righe e colonne.
 
 Consente di disporre gli oggetti in aree della griglia uguali o uniformi. Questo pannello è molto utile per definire la disposizione di un elenco di immagini.
 
-![Pannello di layout di tipo UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
-
 (Disponibile solo per i progetti WPF)
+
+![Pannello di layout di tipo UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
 ### <a name="canvas"></a>Canvas
 
@@ -83,13 +81,13 @@ I seguenti controlli di layout sono quelli più diffusi, ma ne esistono altri. T
 
 ### <a name="border"></a>Bordo
 
-Consente di creare un bordo, uno sfondo o entrambi intorno a un oggetto. È possibile aggiungere un solo oggetto a un controllo **Border**. Per applicare un bordo o uno sfondo a più oggetti, aggiungere a **Border** il pannello di layout, quindi aggiungere gli oggetti al pannello o al controllo.
+Consente di creare un bordo, uno sfondo o entrambi intorno a un oggetto. È possibile aggiungere un solo oggetto a un controllo **Border**. Per applicare un bordo o uno sfondo a più oggetti, aggiungere a **Border** un pannello di layout, quindi aggiungere gli oggetti al pannello o al controllo.
 
 ![Controllo di layout di bordo](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 
 ### <a name="popup"></a>Popup
 
-Consente di visualizzare informazioni o opzioni destinate agli utenti in una finestra. È possibile aggiungere un solo oggetto a un controllo **Popup**. Per impostazione predefinita, un controllo **Popup** contiene un pannello di layout **Grid**, ma è possibile modificare questa impostazione.
+Consente di visualizzare informazioni o opzioni destinate agli utenti in una finestra. È possibile aggiungere un solo oggetto a un controllo **Popup**. Per impostazione predefinita, un controllo **Popup** contiene un pannello di layout **Grid**, ma è possibile cambiare questa impostazione.
 
 ### <a name="scrollviewer"></a>ScrollViewer
 

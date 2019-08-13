@@ -1,5 +1,6 @@
 ---
-title: Modificare lo stile degli oggetti in Blend
+title: Modificare lo stile degli oggetti
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845309"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821967"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Modificare lo stile degli oggetti in Blend
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificare lo stile degli oggetti in Blend per Visual Studio
 
 Il modo più semplice per personalizzare un oggetto consiste nell'impostare le proprietà nel riquadro **Proprietà**.
 
@@ -84,11 +85,11 @@ Fare clic con il pulsante destro del mouse su un oggetto nella finestra [Oggetti
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Ripristinare lo stile o il modello predefinito di un controllo
 
-Selezionare il controllo e nella finestra [Proprietà](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window) individuare la proprietà **Stile** o **Modello**. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
+Selezionare il controllo e nella finestra **Proprietà**** individuare la proprietà **Stile** o **Modello**. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Stati di visualizzazione: modificare l'aspetto di un controllo in base al relativo stato
+## <a name="visual-states"></a>Stati di visualizzazione
 
-L'aspetto visivo dei controlli può essere diverso in base alle interazioni dell'utente. Ad esempio, è possibile impostare un pulsante in modo che diventi verde quando un utente lo seleziona oppure fare in modo che venga eseguita un'animazione. Per abbreviare o prolungare l'intervallo tra gli stati visivi, si possono usare le transizioni.
+Gli stati di visualizzazione consentono di cambiare l'aspetto di un controllo in base al relativo stato. L'aspetto visivo dei controlli può essere diverso in base alle interazioni dell'utente. Ad esempio, è possibile impostare un pulsante in modo che diventi verde quando un utente lo seleziona oppure fare in modo che venga eseguita un'animazione. Per abbreviare o prolungare l'intervallo tra gli stati di visualizzazione, è possibile usare le transizioni.
 
 ![Stato di passaggio del mouse](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 

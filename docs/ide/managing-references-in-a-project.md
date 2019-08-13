@@ -1,6 +1,6 @@
 ---
 title: Gestire i riferimenti in un progetto
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747043"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787629"
 ---
 # <a name="manage-references-in-a-project"></a>Gestire i riferimenti in un progetto
 
@@ -45,6 +45,8 @@ Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul no
 - componenti COM
 
 - Altri assembly o librerie di classi dei progetti contenuti nella stessa soluzione
+
+- Progetti condivisi
 
 - servizi Web XML
 
@@ -109,16 +111,20 @@ Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di de
 
 ## <a name="project-to-project-references"></a>Riferimenti da progetto a progetto
 
-I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile crearli tramite la scheda **Progetto** . Visual Studio può trovare un assembly se viene specificato un percorso al progetto.
+I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile aggiungere riferimenti a progetti tramite la scheda **Progetto** della finestra di dialogo Gestione riferimenti. Visual Studio può trovare un assembly se viene specificato un percorso al progetto.
 
 In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory *bin*, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: "Avviso: impossibile copiare la dipendenza 'file' del progetto 'progetto' nella directory di esecuzione perché sovrascriverebbe il riferimento 'file'.". Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.
 
+## <a name="shared-project-references"></a>Riferimento a progetti condivisi
+
+A differenza della maggior parte degli altri tipi di progetto, un *progetto condiviso* non include un output binario. Al contrario, il codice viene compilato in ogni progetto che vi fa riferimento. I [progetti condivisi](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) consentono di scrivere codice comune a cui fa riferimento una serie di progetti di applicazioni diversi. Il codice viene compilato come parte di ogni progetto di riferimento e può includere direttive del compilatore per incorporare funzionalità specifiche della piattaforma nella codebase condivisa. Aggiungere un riferimento a un progetto condiviso nella scheda **Progetti condivisi** della finestra di dialogo Gestione riferimenti.
+
 ## <a name="file-references"></a>Riferimenti a file
 
-I riferimenti a file sono riferimenti diretti ad assembly esterni al contesto di un progetto di Visual Studio. È possibile crearli usando la scheda **Sfoglia** di **Gestione riferimenti**. Usare un riferimento a file quando si ha solo un assembly o un componente e non il progetto che lo crea come output.
+I riferimenti a file sono riferimenti diretti ad assembly esterni al contesto di un progetto di Visual Studio. È possibile crearli usando la scheda **Sfoglia** della finestra di dialogo Gestione riferimenti. Usare un riferimento a file quando si ha solo un assembly o un componente e non il progetto che lo crea come output.
 
 ## <a name="see-also"></a>Vedere anche
 

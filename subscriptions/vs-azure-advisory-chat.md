@@ -1,24 +1,22 @@
 ---
 title: Vantaggio Azure Advisory Chat nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio di Azure Advisory Chat incluso nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250833"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681711"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
-
 Assistenza per iniziare a usare Azure in tempo reale. Include consulenze per i servizi PaaS di Azure.  Il vantaggio Azure Advisory Chat è disponibile in Visual Studio Enterprise Standard e nelle sottoscrizioni cloud annuali.
 
 ## <a name="activation-steps"></a>Procedura di attivazione
-
 L'uso di Azure Advisory Chat è semplice.
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Individuare il riquadro Azure Advisory Chat nella sezione Supporto e fare clic su **Avvia chat**.
@@ -34,7 +32,6 @@ L'uso di Azure Advisory Chat è semplice.
     > ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Idoneità
-
 |                                                      Livello di sottoscrizione                                                      |     Canali      |    Vantaggio    | Rinnovabile? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Un anno    |    Sì     |
@@ -57,3 +54,6 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ## <a name="support-resources"></a>Risorse di supporto
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Passaggi successivi
+Molte sottoscrizioni di Visual Studio includono crediti Azure.  Se non sono ancora stati attivati i propri crediti, vedere il [ vantaggio Azure](vs-azure.md). 

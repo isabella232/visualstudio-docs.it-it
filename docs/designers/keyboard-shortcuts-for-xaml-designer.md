@@ -1,19 +1,17 @@
 ---
 title: Tasti di scelta rapida per la finestra di progettazione XAML
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896759"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821786"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tasti di scelta rapida per la finestra di progettazione XAML
 
@@ -31,7 +29,7 @@ Questa tabella elenca i tasti di scelta rapida disponibili per lavorare con gli 
 |Selezionare un singolo elemento|Premere **Tab** per selezionare gli elementi nell'ordine in cui vengono visualizzati nel documento. È anche possibile selezionare gli elementi usando i tasti di direzione.|
 |Selezionare più elementi|Tenere premuto **Maiusc** e selezionare gli elementi uno per uno|
 |Selezionare più elementi non adiacenti|Tenere premuto **Ctrl** e selezionare il primo e l'ultimo elemento|
-|Spostare gli elementi selezionati|Premere i tasti di direzione (è possibile tenere premuto **Maiusc** per aumentare la distanza di spostamento per ogni pressione).|
+|Spostare gli elementi selezionati|Premere i tasti di direzione (è possibile tenere premuto **MAIUSC** per aumentare la distanza di spostamento per ogni pressione).|
 |Ruotare un elemento con incrementi di 15 gradi|Tenere premuto **Maiusc** e ruotare l'elemento|
 |Selezionare tutti gli elementi|Premere **Ctrl**+**A**|
 |Annullare la selezione di tutti gli elementi|Premere **Ctrl**+**Maiusc**+**A**|

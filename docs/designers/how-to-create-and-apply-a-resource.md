@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 21de3480ff3ac2d6733aacff6bcf714f910e7022
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263400"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821890"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 
-Stili e modelli per gli elementi nella finestra di progettazione XAML vengono archiviati in entità riutilizzabili dette risorse. Gli stili consentono di impostare le proprietà degli elementi e riutilizzare tali impostazioni per conferire un aspetto uniforme a più elementi. Un oggetto [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definisce l'aspetto di un controllo e può anche essere applicato come risorsa. Per altre informazioni, vedere [Avvio rapido: Applicazione di stili ai controlli](http://go.microsoft.com/fwlink/?LinkID=248239) e [Avvio rapido: Modelli di controllo](http://go.microsoft.com/fwlink/?LinkID=247982).
+Stili e modelli per gli elementi nella finestra di progettazione XAML vengono archiviati in entità riutilizzabili dette risorse. Gli stili consentono di impostare le proprietà degli elementi e riutilizzare tali impostazioni per conferire un aspetto uniforme a più elementi. Un oggetto [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) definisce l'aspetto di un controllo e può anche essere applicato come risorsa. Per altre informazioni, vedere [Stili XAML](/windows/uwp/design/controls-and-patterns/xaml-styles) e [Modelli di controllo](/windows/uwp/design/controls-and-patterns/control-templates).
 
-Quando si crea una nuova risorsa da una proprietà, una classe [Style](/uwp/api/Windows.UI.Xaml.Style) o un oggetto `ControlTemplate` esistente, la finestra di dialogo **Crea risorsa** consente di definire la risorsa a livello di applicazione, di documento o di elemento. Questi livelli determinano le posizioni in cui è possibile usare la risorsa. Se, ad esempio, si definisce la risorsa a livello di elemento, questa può essere applicata solo all'elemento in cui è stata creata. È anche possibile scegliere di archiviare la risorsa in un [dizionario risorse](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references), ovvero un file separato che è possibile riutilizzare in un altro progetto.
+Quando si crea una nuova risorsa da una proprietà, una classe [Style](xref:Windows.UI.Xaml.Style) o un oggetto [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) esistente, la finestra di dialogo **Crea risorsa** consente di definire la risorsa a livello di applicazione, di documento o di elemento. Questi livelli determinano le posizioni in cui è possibile usare la risorsa. Se, ad esempio, si definisce la risorsa a livello di elemento, questa può essere applicata solo all'elemento in cui è stata creata. È anche possibile scegliere di archiviare la risorsa in un [dizionario risorse](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references), ovvero un file separato che è possibile riutilizzare in un altro progetto.
 
 ## <a name="create-a-new-resource"></a>Creare una nuova risorsa
 
@@ -63,7 +63,7 @@ Quando si crea una nuova risorsa da una proprietà, una classe [Style](/uwp/api/
      > [!NOTE]
      > **Modifica modello** applica i modelli di controllo. L'opzione **Edit Additional Templates** (Modifica modelli aggiuntivi) consente di applicare altri tipi di modelli.
 
-     Le risorse possono essere applicate ovunque siano compatibili. Ad esempio, una risorsa pennello può essere applicata alla proprietà **Foreground** di un controllo <xref:Windows.UI.Xaml.Controls.TextBox>.
+     Le risorse possono essere applicate ovunque siano compatibili. Ad esempio, una risorsa pennello può essere applicata alla proprietà **Foreground** di un controllo [TextBox](xref:Windows.UI.Xaml.Controls.TextBox).
 
 ## <a name="edit-a-resource"></a>Modificare una risorsa
 
