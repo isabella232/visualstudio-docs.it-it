@@ -122,9 +122,9 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Questo valore restituito converte il valore di `pUpgradeRequired` in TRUE, come equivalente a `VSPUVF_PROJECT_SAFEREPAIR`, descritto più avanti in questo argomento.  
   
-2. [https://login.microsoftonline.com/consumers/](`VS_S_PROJECT_UNSAFEREPAIRREQUIRED`). Questo valore restituito converte il valore di `pUpgradeRequired` in TRUE, come equivalente a `VSPUVF_PROJECT_UNSAFEREPAIR`, descritto più avanti in questo argomento.  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Questo valore restituito converte il valore di `pUpgradeRequired` in TRUE, come equivalente a `VSPUVF_PROJECT_UNSAFEREPAIR`, descritto più avanti in questo argomento.  
   
-3. [https://login.microsoftonline.com/common/](`VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`). Questo valore restituito converte il valore di `pUpgradeRequired` in TRUE, come equivalente a `VSPUVF_PROJECT_ONEWAYUPGRADE`, descritto più avanti in questo argomento.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Questo valore restituito converte il valore di `pUpgradeRequired` in TRUE, come equivalente a `VSPUVF_PROJECT_ONEWAYUPGRADE`, descritto più avanti in questo argomento.  
   
    Le nuove implementazioni in `IVsProjectUpgradeViaFactory4` e `IVsProjectFlavorUpgradeViaFactory2` consentono di specificare il tipo di migrazione in modo più preciso.  
   

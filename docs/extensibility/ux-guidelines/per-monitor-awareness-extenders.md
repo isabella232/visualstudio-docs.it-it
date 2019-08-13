@@ -1,74 +1,80 @@
 ---
-title: Supporto per il riconoscimento di Monitor per estensioni di Visual Studio
+title: Supporto per la sensibilizzazione per monitor per Extender di Visual Studio
 titleSuffix: ''
-description: Scopri il nuovo supporto di extender per ogni monitoraggio-riconoscimento disponibile in Visual Studio 2019.
+description: Informazioni sul nuovo supporto Extender per il riconoscimento per monitoraggio disponibile in Visual Studio 2019.
 ms.date: 04/10/2019
 helpviewer_keywords:
 - Visual Studio, PMA, per-monitor-awareness, extenders, Windows Forms
 - Per-Monitor Awareness support for extenders
-ms.assetid: ''
 author: rub8n
 ms.author: rurios
 manager: anthc
-ms.prod: visual-studio-windows
 monikerRange: vs-2019
-ms.technology: vs-ide-general
-ms.topic: reference
-ms.workload:
-- multiple
-ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.topic: conceptual
+dev_langs:
+- CSharp
+- CPP
+ms.openlocfilehash: 2686248a087650f6170b72c8ef9b3a77e2ba275c
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793651"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957344"
 ---
-# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Supporto per il riconoscimento di Monitor per estensioni di Visual Studio
-Versioni precedenti a Visual Studio 2019 era relativo contesto di riconoscimento DPI imposta sistema compatibile con, piuttosto che per ogni monitoraggio compatibili con DPI (PMA). Esecuzione della consapevolezza del sistema ha restituito un oggetto visivo con funzionalità ridotto verifichi (i tipi di carattere, ad esempio sfocati o le icone) ogni volta che Visual Studio doveva eseguire il rendering su monitor con fattori di scala diversa o remoto in computer con configurazioni diverse, ad esempio (diverse Windows scalabilità).
+# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Supporto per la sensibilizzazione per monitor per Extender di Visual Studio
 
-Il contesto del riconoscimento DPI di Visual Studio 2019 viene impostato come PMA, quando l'ambiente supporta, consentendo di Visual Studio per eseguire il rendering in base alla configurazione dello schermo in cui è ospitato invece di una configurazione definita singolo sistema. In definitiva, traducendo in un'interfaccia utente sempre precisi per superfici che supporta la modalità PMA.
+Nelle versioni precedenti a Visual Studio 2019 il contesto di riconoscimento DPI è stato impostato su System Aware, anziché per il monitor DPI Aware (PMA). L'esecuzione nella consapevolezza del sistema ha comportato un'esperienza visiva degradata (ad esempio, i tipi di carattere o le icone sfocate) quando Visual Studio doveva eseguire il rendering tra monitoraggi con fattori di scala diversi o in computer con configurazioni di visualizzazione diverse (ad esempio, diversi Ridimensionamento di Windows).
 
-Vedere la [sviluppo di applicazioni Desktop DPI elevato in Windows](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) per altre informazioni sulle condizioni e lo scenario lo trattate in questo documento.
+Il contesto di riconoscimento DPI di Visual Studio 2019 è impostato come PMA, quando l'ambiente lo supporta, consentendo a Visual Studio di eseguire il rendering in base alla configurazione dello schermo in cui è ospitato anziché una singola configurazione definita dal sistema. Infine, la conversione in un'interfaccia utente sempre nitida per aree di superficie che supportano la modalità PMA.
+
+Per ulteriori informazioni sui termini e sullo scenario generale trattati in questo documento, vedere la documentazione relativa [allo sviluppo di applicazioni desktop con DPI elevato in Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) .
 
 ## <a name="quickstart"></a>Guida rapida
-- Verificare che Visual Studio è in esecuzione in modalità PMA (vedere **abilitazione PMA**)
 
-- Convalidare il funzionamento di estensione correttamente in un set di scenari comuni (vedere **test di estensioni per i problemi PMA**)
+- Verificare che Visual Studio sia in esecuzione in modalità PMA (vedere Abilitazione di **PMA**)
 
-- Se si rilevano problemi, è possibile utilizzare le strategie e i suggerimenti illustrati in questo documento per diagnosticare e risolvere tali problemi. È necessario anche aggiungere i nuovi [Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) pacchetto NuGet al progetto per accedere alle API necessari.
+- Verificare che l'estensione funzioni correttamente in un set di scenari comuni (vedere **test delle estensioni per i problemi PMA**)
 
-## <a name="enabling-pma"></a>Abilitazione PMA
+- Se si riscontrano problemi, è possibile usare le strategie e le raccomandazioni descritte in questo documento per diagnosticare e risolvere tali problemi. Sarà anche necessario aggiungere il nuovo pacchetto NuGet [Microsoft. VisualStudio. DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) al progetto per accedere alle API richieste.
+
+## <a name="enable-pma"></a>Abilita PMA
+
 Per abilitare PMA in Visual Studio, è necessario soddisfare i requisiti seguenti:
-1) Windows 10 April 2018 Update (v1803, RS4) o versione successiva
-2) Versione RTM di .NET framework 4.8 o versione successiva
-3) Visual Studio 2019 con il ["Ottimizzare il rendering per le schermate con densità di pixel diversa"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) opzione abilitata
 
-Una volta soddisfatti questi requisiti, Visual Studio verrà abilitata automaticamente la modalità PMA nell'intero processo.
+- Aggiornamento di Windows 10 aprile 2018 (v1803, RS4) o versione successiva
+- .NET Framework 4,8 RTM o versione successiva
+- Visual Studio 2019 con l'opzione ["Ottimizza rendering per schermate con densità di pixel diverse"](../../ide/reference/general-environment-options-dialog-box.md) abilitata
+
+Una volta soddisfatti questi requisiti, Visual Studio Abilita automaticamente la modalità PMA nel processo.
 
 > [!NOTE]
-> Contenuto di Windows Forms in Visual Studio (ad esempio proprietà Browser) supporterà PMA solo quando si dispone di Visual Studio 2019 Update #1.
+> Windows Forms contenuto di Visual Studio (ad esempio il Visualizzatore proprietà) supporta PMA solo se si dispone di Visual Studio 2019 versione 16,1 o successiva.
 
-## <a name="testing-your-extensions-for-pma-issues"></a>Le estensioni per i problemi PMA di test
+## <a name="test-your-extensions-for-pma-issues"></a>Testare le estensioni per i problemi PMA
 
-Visual Studio supporta ufficialmente di framework WPF, Windows Forms, Win32 e dell'interfaccia utente HTML/JS. Quando Visual Studio viene inserita la modalità PMA, ogni stack di interfaccia utente si comporta in modo diverso. Pertanto, indipendentemente dal framework dell'interfaccia utente, è consigliabile che passi del test viene eseguita per garantire che sia conforme con la modalità PMA tutti dell'interfaccia utente.
+Visual Studio supporta ufficialmente i Framework dell'interfaccia utente WPF, Windows Forms, Win32 e HTML/JS. Quando Visual Studio viene inserito in modalità PMA, ogni stack dell'interfaccia utente si comporta in modo diverso. Di conseguenza, indipendentemente dal framework dell'interfaccia utente, è consigliabile eseguire un test superato per assicurarsi che tutte le interfacce utente siano conformi alla modalità PMA.
 
-È consigliabile che convalidare gli scenari comuni seguenti:
+Si consiglia di convalidare gli scenari comuni seguenti:
 
-1. Modifica il fattore di scala di un ambiente solo monitor, mentre l'applicazione è in esecuzione *
-    - Questo scenario consente di verificare che risponda dell'interfaccia utente per la modifica del valore DPI Windows dinamica
+- Modifica del fattore di scala di un singolo ambiente di monitoraggio durante l'esecuzione dell'applicazione.
 
-2. Ancoraggio/il disinserimento un computer portatile in cui è impostato un monitoraggio collegato al database primario e il monitoraggio collegato è un fattore di scala diversa rispetto a sul computer portatile mentre l'applicazione è in esecuzione.
-    - Questo scenario consente di verificare che risponda dell'interfaccia utente alla visualizzazione della modifica del valore DPI, nonché la gestione consente di visualizzare in modo dinamico l'aggiunta o la rimozione
+  Questo scenario consente di verificare che l'interfaccia utente stia rispondendo alla modifica DPI dinamica di Windows.
 
-3. La presenza di più monitor grazie a fattori di scala diversa e lo spostamento dell'applicazione tra di essi.
-    - Questo scenario consente di verificare che risponda alla modifica del valore DPI di visualizzazione dell'interfaccia utente
+- Ancoraggio/disancoraggio di un computer portatile in cui un monitor collegato è impostato sul database primario e il monitoraggio collegato presenta un fattore di scala diverso rispetto al portatile mentre l'applicazione è in esecuzione.
+
+  Questo scenario consente di verificare che l'interfaccia utente stia rispondendo alla modifica del valore DPI visualizzato, oltre che alla gestione delle visualizzazioni aggiunte o rimosse dinamicamente.
+
+- Presenza di più monitoraggi con diversi fattori di scala e spostando l'applicazione tra di essi.
+
+  Questo scenario consente di verificare che l'interfaccia utente stia rispondendo alla modifica dello schermo DPI
     
-4. .NET Remoting in un computer quando il computer locale e remoto dispone di fattori di scala diversa per il monitoraggio principale.
-    - Questo scenario consente di verificare che risponda dell'interfaccia utente per la modifica del valore DPI Windows dinamica
+- Comunicazione remota in un computer quando i computer locali e remoti hanno fattori di scala diversi per il monitor primario.
 
-È un buon test preliminare per indica se l'interfaccia utente potrebbe avere problemi se il codice Usa il *Microsoft.VisualStudio.Utilities.Dpi.DpiHelper*, *Microsoft.VisualStudio.PlatformUI.DpiHelper*, oppure *VsUI::CDpiHelper* classi. Queste classi DpiHelper precedenti supportano solo ai valori DPI del sistema e non sempre funziona correttamente quando il processo è PMA.
+  Questo scenario consente di verificare che l'interfaccia utente stia rispondendo alla modifica DPI dinamica di Windows.
 
-Uso tipico di questi DpiHelpers avrà un aspetto simile:
+Un valido test preliminare per determinare se l'interfaccia utente potrebbe avere problemi se il codice usa le classi *Microsoft. VisualStudio. Utilities. dpi. DpiHelper*, *Microsoft. VisualStudio. PlatformUI. DpiHelper*o *incorporati vsui:: CDpiHelper* . Queste classi DpiHelper precedenti supportano solo la consapevolezza DPI del sistema e non funzioneranno sempre correttamente quando il processo è PMA.
+
+L'utilizzo tipico di questi DpiHelpers sarà simile al seguente:
 
 ```cs
 Point screenTopRight = logicalBounds.TopRight.LogicalToDeviceUnits();
@@ -83,81 +89,86 @@ POINT screenIntTopRight = new POINT
 IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 ```
 
-Nell'esempio precedente, un rettangolo che rappresenta i limiti logici di una finestra viene convertito in unità di dispositivo in modo che può essere passato al metodo nativo MonitorFromPoint che si aspetta di coordinate del dispositivo per poter restituendo un puntatore di monitoraggio accurate.
+Nell'esempio precedente, un rettangolo che rappresenta i limiti logici di una finestra viene convertito in unità di dispositivo in modo che possa essere passato al metodo nativo MonitorFromPoint che prevede le coordinate del dispositivo per restituire un puntatore di monitoraggio accurato.
 
 ### <a name="classes-of-issues"></a>Classi di problemi
-Quando è abilitata la modalità PMA per Visual Studio, l'interfaccia utente è stato possibile replicare i problemi in vari modi più comuni. La maggior parte, se non tutti, questi problemi possono verificarsi in uno dei framework dell'interfaccia utente supportate di Visual Studio. Inoltre, questi problemi possono verificarsi anche quando è ospitata in modalità mista DPI ridimensionamento scenari una parte dell'interfaccia utente (il Windows si intende [documentazione](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) per altre informazioni). 
+Quando è abilitata la modalità PMA per Visual Studio, l'interfaccia utente può replicare i problemi in diversi modi. La maggior parte, se non tutti, di questi problemi può verificarsi in qualsiasi framework dell'interfaccia utente supportato da Visual Studio. Inoltre, questi problemi possono verificarsi anche quando una parte dell'interfaccia utente viene ospitata in scenari di scalabilità DPI in modalità mista. per ulteriori informazioni, vedere la [documentazione](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) di Windows. 
 
-#### <a name="win32-window-creation"></a>Creazione della finestra Win32
-Durante la creazione di windows con CreateWindow() o CreateWindowEx(), un modello comune consiste nel creare la finestra in corrispondenza delle coordinate (0,0) (l'angolo superiore sinistro dello schermo principale), quindi spostarlo nella posizione finale. Tuttavia, tale operazione può causare la finestra attivare un valore DPI modificato messaggio o un evento, che quindi possibile riattivare altri eventi o messaggi dell'interfaccia utente e alla fine causare comportamenti indesiderati o per il rendering.
+#### <a name="win32-window-creation"></a>Creazione finestra Win32
+Quando si crea Windows con CreateWindow () o CreateWindowEx (), un modello comune consiste nel creare la finestra in corrispondenza delle coordinate (0,0), ovvero l'angolo superiore sinistro dello schermo principale, quindi spostarlo nella posizione finale. Questa operazione può tuttavia comportare l'attivazione di un messaggio o un evento di modifica DPI da parte della finestra, che può riattivare altri messaggi o eventi dell'interfaccia utente e, infine, causare il rendering o il comportamento indesiderato.
 
-#### <a name="wpf-element-placement"></a>Posizionamento degli elementi WPF
-Quando lo spostamento di elementi WPF utilizzando il vecchio Microsoft.VisualStudio.Utilities.Dpi.DpiHelper, alto a sinistra le coordinate potrebbero non essere calcolate correttamente ogni volta che si trovano gli elementi in un valore DPI non primario.
+#### <a name="wpf-element-placement"></a>Posizionamento elementi WPF
+Quando si trascinano elementi WPF utilizzando il vecchio Microsoft. VisualStudio. Utilities. dpi. DpiHelper, le coordinate top-left potrebbero non essere calcolate correttamente ogni volta che gli elementi si trovano in un valore DPI non primario.
 
-#### <a name="serialization-of-ui-element-sizes-or-positions"></a>Serializzazione delle dimensioni degli elementi dell'interfaccia utente o le posizioni
-Quando le dimensioni dell'interfaccia utente o la posizione (se salvato come unità di dispositivo) viene ripristinato in un contesto DPI diverso rispetto a ciò che si trovava al, verrà posizionato e ridimensionato in modo non corretto. Ciò accade perché l'unità di dispositivo con una relazione DPI inerente.
+#### <a name="serialization-of-ui-element-sizes-or-positions"></a>Serializzazione di dimensioni o posizioni degli elementi dell'interfaccia utente
+Quando le dimensioni o la posizione dell'interfaccia utente (se salvate come unità dispositivo) vengono ripristinate in un contesto DPI diverso rispetto a quello in cui è stato archiviato, verranno posizionate e ridimensionate in modo errato. Questo problema si verifica perché le unità del dispositivo hanno una relazione DPI intrinseca.
 
 #### <a name="incorrect-scaling"></a>Ridimensionamento non corretto
-Elementi dell'interfaccia utente creati nel valore DPI primario verranno ridimensionati in modo corretto, tuttavia quando si sposta in una visualizzazione con un valore DPI diverso, non modificare la scala e il relativo contenuto in questo modo, finisce per essere troppo grande o troppo piccolo.
+Gli elementi dell'interfaccia utente creati sul valore DPI primario vengono ridimensionati correttamente, tuttavia, se spostati in una visualizzazione con un valore DPI diverso, non vengono ridimensionati e il relativo contenuto è troppo grande o troppo piccolo.
 
-#### <a name="incorrect-bounding"></a>Rettangolo di selezione non corretto
-Analogamente, il problema della scalabilità, elementi dell'interfaccia utente consente di calcolare i limiti in modo corretto sul quel contesto DPI primario, tuttavia quando spostato in un valore DPI non primari, essi non calcolare i nuovi limiti correttamente. Di conseguenza, la finestra del contenuto finisce per avere sia troppo piccolo o troppo grande rispetto all'interfaccia utente di hosting, con conseguente ritaglio o uno spazio vuoto.
+#### <a name="incorrect-bounding"></a>Delimitazione non corretta
+Analogamente al problema di scalabilità, gli elementi dell'interfaccia utente calcolano correttamente i limiti nel contesto DPI primario. Tuttavia, quando vengono spostati in un valore DPI non primario, i nuovi limiti non vengono calcolati correttamente. Di conseguenza, la finestra del contenuto è troppo piccola o troppo grande rispetto all'interfaccia utente host, che comporta spazio vuoto o ritaglio.
 
-#### <a name="drag--drop"></a>Trascinamento della selezione
-Ogni volta che all'interno di scenari DPI in modalità mista (ad esempio, diversi elementi dell'interfaccia utente per il rendering in modalità di compatibilità DPI diverse), trascinare e rilasciare le coordinate potrebbero modo errate, causando la destinazione finale posizione finisce non corretto.
+#### <a name="drag--drop"></a>Trascina & rilasciare
+Ogni volta che negli scenari con valori DPI in modalità mista (ad esempio, il rendering di elementi dell'interfaccia utente differenti in modalità di riconoscimento DPI diverse), le coordinate di trascinamento e rilascio potrebbero essere calcolate in modo errato e la posizione finale finale non è corretta.
 
-#### <a name="out-of-process-ui"></a>Interfaccia utente di out-of-process
-Parte dell'interfaccia utente viene creato out-of-process e se il processo esterno creazione in una modalità di compatibilità DPI diversi rispetto a Visual Studio, questo può causare i problemi di rendering precedente.
+#### <a name="out-of-process-ui"></a>Interfaccia utente out-of-process
+Una parte dell'interfaccia utente viene creata out-of-process e se il processo esterno di creazione si trova in una modalità di riconoscimento DPI diversa da Visual Studio, è possibile che si verifichino i problemi di rendering precedenti.
 
-#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Controlli Windows Form, immagini o layout viene eseguito il rendering in modo non corretto
-Non tutto il contenuto di Windows Form supporta la modalità PMA. Di conseguenza, si può vedere il rendering di problema di layout non corretto o la scalabilità. In questo caso una possibile soluzione consiste in modo esplicito il rendering del contenuto di Windows Form in DpiAwarenessContext "Sistema compatibile con" (si intende [forzare un controllo in un determinato DpiAwarenessContext](#forcing-a-control-into-a-specific-dpiawarenesscontext)).
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Rendering di controlli, immagini o layout Windows Forms non corretti
+Non tutti i contenuti del Windows Forms supportano la modalità PMA. Di conseguenza, è possibile che venga visualizzato un problema di rendering con layout non corretti o con scalabilità. Una possibile soluzione in questo caso consiste nel eseguire il rendering esplicito di Windows Forms contenuto in DpiAwarenessContext "System Aware" (fare riferimento a [forzare un controllo in un DpiAwarenessContext specifico](#force-a-control-into-a-specific-dpiawarenesscontext)).
 
-#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Controlli Windows Form o windows non visualizzati
-Una delle cause principali per risolvere questo problema è sviluppatori tentando di assegnare un nuovo elemento di un controllo o finestra con una DpiAwarenessContext a una finestra con una diversa DpiAwarenessContext.
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Controlli Windows Forms o Windows non visualizzati
+Una delle cause principali di questo problema è rappresentata dagli sviluppatori che tentano di riassociare un controllo o una finestra con un DpiAwarenessContext a una finestra con un DpiAwarenessContext diverso.
 
-Le figure seguenti illustrano l'oggetto corrente **predefinito** restrizioni di sistema operativo Windows nel padre di windows:
+Le immagini seguenti mostrano le restrizioni correnti del sistema operativo Windows in finestre padre:
 
-![Screenshot del comportamento corretto genitorialità](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+![Screenshot del comportamento corretto dell'elemento padre](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> È possibile modificare questo comportamento impostando il comportamento di Hosting di Thread (si intende [DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> È possibile modificare questo comportamento impostando il comportamento di hosting del thread (vedere l' [enumerazione Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
-Di conseguenza, se si imposta la relazione padre-figlio tra le modalità non supportate, viene restituito un errore e il controllo o la finestra non vengono visualizzata come previsto.
+Di conseguenza, se si imposta la relazione padre-figlio tra modalità non supportate, l'operazione avrà esito negativo e non sarà possibile eseguire il rendering del controllo o della finestra come previsto.
 
-### <a name="diagnosing-issues"></a>Diagnosi dei problemi
-Esistono molti fattori da considerare quando si identificano i problemi di PMA: 
+### <a name="diagnose-issues"></a>Diagnosticare i problemi
 
-1. Esegue l'interfaccia utente o l'API di aspettarsi logico o valori di dispositivo.
-    - UI di WPF e le API in genere usano valori logici (ma non sempre)
-    - Interfaccia utente di Win32 e le API in genere utilizzano i valori di dispositivo
+Esistono molti fattori da considerare quando si identificano i problemi relativi a PMA: 
 
-2. I valori di provenienza?
-    - Se riceve i valori da altre API o l'interfaccia utente, è il passaggio di dispositivo o valori logici.
-    - Se la ricezione di valori da più origini, tutti usare/prevede gli stessi tipi di valori o le conversioni necessarie essere combinati e associati?
+- L'interfaccia utente o l'API prevede valori logici o del dispositivo?
+    - Le API e l'interfaccia utente WPF usano in genere valori logici (ma non sempre)
+    - L'interfaccia utente Win32 e le API usano in genere i valori del dispositivo
 
-3. Sono costanti dell'interfaccia utente in uso e il formato si trovano?
+- Da dove provengono i valori?
+    - Se si ricevono valori da un'altra interfaccia utente o da un'altra API, sta passando i valori logici o del dispositivo.
+    - Se si ricevono valori da più origini, è necessario che tutti usino/prevedano gli stessi tipi di valori o che le conversioni debbano essere combinate e confrontate?
 
-4. È il thread nel contesto di DPI corretto per i valori vengono ricevuti?
-    - Le modifiche per consentire l'hosting DPI misto in genere opportuno inserire i percorsi del codice nel contesto corretto, tuttavia, lavorare all'esterno del flusso di messaggi principale ciclo o l'evento potrebbe eseguire nel contesto errato DPI.
+- Le costanti dell'interfaccia utente sono in uso e il formato in cui si trovano?
 
-5. I valori superano i limiti del contesto DPI?
-    - Operazione di trascinamento è una situazione comune in cui coordinate possono superare i contesti DPI. Finestra tenta di fare la cosa giusta, ma in alcuni casi, l'host dell'interfaccia utente potrebbe essere necessario eseguire operazioni di conversione per assicurarsi che i limiti del contesto corrispondente.
+- Il thread è nel contesto DPI corretto per i valori che riceve?
+
+  Le modifiche per abilitare l'hosting con DPI misto dovrebbero in genere inserire i percorsi del codice nel contesto corretto. Tuttavia, il lavoro eseguito all'esterno del ciclo di messaggi principale o del flusso di eventi potrebbe essere eseguito nel contesto DPI errato.
+
+- I valori sono i limiti del contesto tra DPI?
+
+  Il trascinamento della selezione & è una situazione comune in cui le coordinate possono superare i contesti DPI. La finestra tenta di eseguire l'operazione corretta, ma in alcuni casi è possibile che l'interfaccia utente host debba eseguire operazioni di conversione per garantire la corrispondenza dei limiti del contesto.
 
 ### <a name="pma-nuget-package"></a>Pacchetto NuGet PMA
-Le nuove librerie DpiAwarness sono reperibile nella [Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) pacchetto NuGet.
+Le nuove librerie DpiAwarness sono disponibili nel pacchetto NuGet [Microsoft. VisualStudio. DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) .
 
 ### <a name="recommended-tools"></a>Strumenti consigliati
-Gli strumenti seguenti consentono di eseguire il debug di problemi correlati alla PMA in alcuni degli stack dei diversi dell'interfaccia utente supportato da Visual Studio.
+Gli strumenti seguenti consentono di eseguire il debug di problemi correlati a PMA in alcuni dei diversi stack dell'interfaccia utente supportati da Visual Studio.
 
-#### <a name="snoop"></a>Fare ricerche
-Fare ricerche è uno strumento di debug di XAML con alcune funzionalità aggiuntive che non ha gli strumenti XAML di Visual Studio integrati. Inoltre, fare ricerche non deve eseguire attivamente il debug di Visual Studio per essere in grado di visualizzare e modificare la UI WPF. I due modi principali fare ricerche può risultare utile per la diagnosi dei problemi PMA è per la convalida delle coordinate di posizionamento logico o limiti di dimensioni e per la convalida dell'interfaccia utente ha il valore DPI a destra.
+#### <a name="snoop"></a>Snoop
+Snoop è uno strumento di debug XAML che presenta alcune funzionalità aggiuntive che non sono disponibili negli strumenti XAML predefiniti di Visual Studio. Inoltre, Snoop non deve eseguire attivamente il debug di Visual Studio per poter visualizzare e modificare l'interfaccia utente WPF. I due modi principali di Snoop possono essere utili per la diagnosi dei problemi PMA per la convalida delle coordinate di posizionamento logiche o dei limiti di dimensione e per la convalida dell'interfaccia utente con il valore DPI corretto.
  
-#### <a name="visual-studio-xaml-tools"></a>Strumenti di Visual Studio XAML
-Come fare ricerche, gli strumenti XAML in Visual Studio consente di diagnosticare problemi PMA. Dopo aver trovato una probabile causa del problema, è possibile impostare punti di interruzione e usare la finestra struttura ad albero visuale in tempo reale, nonché le finestre di debug, per controllare i limiti dell'interfaccia utente e DPI corrente.
+#### <a name="visual-studio-xaml-tools"></a>Strumenti XAML di Visual Studio
+Come Snoop, gli strumenti XAML in Visual Studio consentono di diagnosticare i problemi PMA. Una volta individuato un colpevole probabile, è possibile impostare punti di interruzione e utilizzare la finestra albero elementi visivi attivi e le finestre di debug per controllare i limiti dell'interfaccia utente e il valore DPI corrente.
 
-## <a name="strategies-for-fixing-pma-issues"></a>Strategie per la risoluzione dei problemi di PMA
-### <a name="replacing-dpihelper-calls"></a>La sostituzione di chiamate DpiHelper
-Nella maggior parte dei casi, risoluzione dei problemi dell'interfaccia utente in modalità PMA riduce alla sostituzione di chiamate nel codice gestito per il vecchio *Microsoft.VisualStudio.Utilities.Dpi.DpiHelper* e *Microsoft.VisualStudio.PlatformUI.DpiHelper*le classi, con le chiamate al nuovo *Microsoft.VisualStudio.Utilities.DpiAwareness* classe helper. 
+## <a name="strategies-for-fixing-pma-issues"></a>Strategie per la correzione dei problemi PMA
+
+### <a name="replace-dpihelper-calls"></a>Sostituisci chiamate DpiHelper
+
+Nella maggior parte dei casi, la correzione dei problemi dell'interfaccia utente in modalità PMA si riduce alla sostituzione delle chiamate nel codice gestito alle classi *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* e *Microsoft. VisualStudio. PlatformUI. DpiHelper* precedenti, con chiamate al nuovo  *Classe helper Microsoft. VisualStudio. Utilities. DpiAwareness* . 
 
 ```cs
 // Remove this kind of use:
@@ -167,7 +178,7 @@ Point deviceTopLeft = new Point(window.Left, window.Top).LogicalToDeviceUnits();
 Point deviceTopLeft = window.LogicalToDevicePoint(new Point(window.Left, window.Top));
 ```
 
-Per il codice nativo, esso comporterà sostituendo le chiamate per il vecchio *VsUI::CDpiHelper* con le chiamate alla nuova classe *VsUI::CDpiAwareness* classe. 
+Per il codice nativo, comporterà la sostituzione delle chiamate alla classe *incorporati vsui:: CDpiHelper* precedente con le chiamate alla nuova classe *incorporati vsui:: CDpiAwareness* . 
 
 ```cpp
 // Remove this kind of use:
@@ -181,28 +192,26 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsX(m_hwnd, &cx);
 VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 ```
 
-Le nuove classi DpiAwareness e CDpiAwareness offrono la stessa unità gli helper di conversione come le classi DpiHelper ma che non richiedono un parametro di input aggiuntivo: l'elemento dell'interfaccia utente da utilizzare come riferimento per l'operazione di conversione. È importante notare che gli helper di ridimensionamento immagine non sono presenti dei nuovi helper DpiAwareness/CDpiAwareness e, se necessario, il [ImageService](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog?view=vs-2019) invece deve essere utilizzato.
+Le nuove classi DpiAwareness e CDpiAwareness offrono gli stessi helper di conversione unità delle classi DpiHelper ma richiedono un parametro di input aggiuntivo, ovvero l'elemento dell'interfaccia utente da usare come riferimento per l'operazione di conversione. È importante notare che gli helper di ridimensionamento delle immagini non esistono nei nuovi Helper DpiAwareness/CDpiAwareness e, se necessario, è consigliabile usare il [ImageService](../image-service-and-catalog.md) .
 
-La classe DpiAwareness gestita offre gli helper per gli oggetti visivi WPF, controlli Windows Form e Win32 HWND e HMONITORs (entrambi in formato IntPtrs), mentre il CDpiAwareness classe offerte HWND e HMONITOR helper nativi.
+La classe DpiAwareness gestita offre helper per oggetti visivi WPF, controlli Windows Forms e HWND Win32 e HMONITORs (entrambi nel formato IntPtrs), mentre la classe CDpiAwareness nativa offre Helper HWND e HMONITOR.
 
-### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>Finestre di dialogo Windows Form, windows o i controlli visualizzati nella finestra di DpiAwarenessContext errato
-Anche dopo un elemento padre ha esito positivo di windows con diversi DpiAwarenessContexts (a causa di comportamento predefinito di Windows), gli utenti possono comunque visualizzare problemi di scala di windows con diverse scalabilità DpiAwarenessContexts in modo diverso. Di conseguenza, gli utenti possono visualizzare testo allineamento/sfocati immagine o problemi nell'interfaccia utente.
+### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>Windows Forms finestre di dialogo, finestre o controlli visualizzati nel DpiAwarenessContext errato
+Anche dopo aver completato l'elemento padre di Windows con DpiAwarenessContexts diversi (a causa del comportamento predefinito di Windows), è possibile che gli utenti visualizzino ancora problemi di scalabilità come Windows con scalabilità DpiAwarenessContexts diversa. Di conseguenza, gli utenti possono visualizzare problemi di allineamento/sfocatura o immagini nell'interfaccia utente.
 
 La soluzione consiste nell'impostare l'ambito DpiAwarenessContext corretto per tutte le finestre e i controlli nell'applicazione.
 
-### <a name="top-level-mixed-mode-tlmm-dialogs"></a>Finestre di dialogo di primo livello in modalità mista (TLMM)
-Durante la creazione di finestre di primo livello, ad esempio le finestre di dialogo modale, è importante per assicurarsi che il thread nello stato appropriato prima della finestra (e il relativo handle) viene creato. I thread possono essere inserite nella consapevolezza di sistema da utilizzando l'helper CDpiScope nativo o gestito l'helper DpiAwareness.EnterDpiScope in. (TLMM deve in genere usato in finestre di dialogo non WPF e windows.)
+### <a name="top-level-mixed-mode-tlmm-dialogs"></a>Finestre di dialogo in modalità mista di primo livello (TLMM)
+Quando si creano finestre di primo livello, come le finestre di dialogo modali, è importante assicurarsi che il thread si trovi nello stato corretto prima della creazione della finestra (e del relativo handle). Il thread può essere inserito nella consapevolezza del sistema usando l'helper CDpiScope in native o DpiAwareness. EnterDpiScope helper in Managed. (TLMM deve essere in genere usato in finestre di dialogo/finestre non WPF).
 
-### <a name="child-level-mixed-mode-clmm"></a>Livello figlio in modalità mista (CLMM)
-Per impostazione predefinita, le finestre figlio venga visualizzato il DPI consapevolezza contesto del thread corrente se creata senza un elemento padre o contesto di riconoscimento DPI dell'elemento padre quando viene creato con un elemento padre. Per creare un elemento figlio con un contesto di riconoscimento DPI diverso da quello del padre, il thread può essere memorizzato nel contesto del riconoscimento DPI desiderato. L'elemento figlio può quindi essere creata senza un padre e manualmente associare di nuovo alla finestra padre.
+### <a name="child-level-mixed-mode-clmm"></a>Modalità mista a livello di figlio (CLMM)
+Per impostazione predefinita, le finestre figlio ricevono il contesto di riconoscimento DPI del thread corrente se viene creato senza un elemento padre o il contesto di riconoscimento DPI dell'elemento padre quando viene creato con un elemento padre. Per creare un elemento figlio con un contesto di compatibilità DPI diverso rispetto al relativo padre, il thread può essere inserito nel contesto di riconoscimento DPI desiderato. Il figlio può quindi essere creato senza un elemento padre e associato manualmente alla finestra padre.
 
-#### <a name="clmm-issues"></a>Problemi CLMM
-La maggior parte delle operazioni di calcolo dell'interfaccia utente che avviene come parte della messaggistica principale catena di ciclo o un evento deve essere già in esecuzione nel contesto corretto riconoscimento DPI. Tuttavia, se coordinate o dimensioni calcoli vengono eseguiti all'esterno di questi flussi di lavoro principale (ad esempio durante un'attività di tempo di inattività o disattivare il thread dell'interfaccia utente, il contesto di riconoscimento DPI corrente potrebbe essere errato causando misplacement dell'interfaccia utente o di ridimensionamento erroneamente problemi. Inserire il thread in stato corretto per l'interfaccia utente di lavoro a livello generale corregge il problema.
+#### <a name="clmm-issues"></a>Problemi di CLMM
+La maggior parte delle operazioni di calcolo dell'interfaccia utente eseguite come parte del ciclo di messaggistica principale o della catena di eventi dovrebbe essere già in esecuzione nel contesto di compatibilità con DPI destro. Tuttavia, se i calcoli di coordinate o di ridimensionamento vengono eseguiti al di fuori di questi flussi di lavoro principali, ad esempio durante un'attività del tempo di inattività o il thread dell'interfaccia utente, il contesto di consapevolezza DPI corrente potrebbe non essere corretto, causando problemi di ridimensionamento dell'interfaccia utente o di dimensioni errate. L'inserimento del thread nello stato corretto per il lavoro dell'interfaccia utente in genere corregge il problema.
  
-#### <a name="opting-out-of-clmm"></a>Rifiuto esplicito CLMM
-Se viene eseguita la migrazione di una finestra degli strumenti non WPF per supportare pienamente PMA, è necessario rifiutare esplicitamente CLMM. A tale scopo, deve essere implementata una nuova interfaccia: IVsDpiAware.
-
-C#:
+#### <a name="opt-out-of-clmm"></a>Rifiutare esplicitamente CLMM
+Se viene eseguita la migrazione di una finestra degli strumenti non WPF per supportare completamente PMA, sarà necessario rifiutare esplicitamente CLMM. A tale scopo, è necessario implementare una nuova interfaccia: IVsDpiAware.
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -212,8 +221,6 @@ public interface IVsDpiAeware
     uint Mode {get;}
 }
 ```
- 
-C++:
 
 ```cpp
 IVsDpiAware : public IUnknown
@@ -223,9 +230,9 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-Per i linguaggi gestiti, il modo migliore per implementare questa interfaccia è nella stessa classe che deriva da *Microsoft.VisualStudio.Shell.ToolWindowPane*. Per C++, il modo migliore per implementare questa interfaccia è nella stessa classe che implementa *IVsWindowPane* da vsshell.h.
+Per i linguaggi gestiti, il posto migliore per implementare questa interfaccia si trova nella stessa classe che deriva da *Microsoft. VisualStudio. Shell. ToolWindowPane*. Per C++, la posizione migliore in cui implementare questa interfaccia si trova nella stessa classe che implementa *IVsWindowPane* da vsshell. h.
 
-Il valore restituito dalla proprietà modalità sull'interfaccia è un __VSDPIMODE (e cast a un uint in gestito):
+Il valore restituito dalla proprietà Mode sull'interfaccia è un __VSDPIMODE (ed eseguito il cast a uint in Managed):
 
 ```cs
 enum __VSDPIMODE
@@ -236,17 +243,16 @@ enum __VSDPIMODE
 }
 ```
 
-- Significa che la finestra degli strumenti deve gestire 96 DPI, gestirà Windows ridimensionarlo per tutte le altre DPI. Risultante sul contenuto viene leggermente sfocato.
-- Indica di sistema che della finestra degli strumenti deve gestire il valore DPI per il database primario la visualizzazione di valori DPI. Qualsiasi visualizzazione con un valore DPI corrisponda avrà un aspetto precisi, ma se il valore DPI diverso o cambiano durante la sessione, Windows consente di gestire il ridimensionamento e sarà leggermente sfocato.
-- PerMonitor significa che la finestra degli strumenti deve gestire tutti i DPI su tutti gli schermi e ogni volta che viene modificato il valore DPI.
+- Se non si è a conoscenza della finestra degli strumenti è necessario gestire 96 DPI, Windows gestirà il ridimensionamento per tutti gli altri dpi. Il contenuto risulta leggermente sfocato.
+- Sistema significa che la finestra degli strumenti deve gestire il valore DPI per il DPI di visualizzazione principale. Qualsiasi visualizzazione con un valore DPI corrispondente avrà un aspetto nitido, ma se il DPI è diverso o cambia durante la sessione, Windows gestirà la scalabilità e sarà leggermente sfocata.
+- PerMonitor significa che la finestra degli strumenti deve gestire tutti i dpi in tutte le visualizzazioni e ogni volta che viene modificato il valore DPI.
 
 > [!NOTE]
-> Visual Studio supporta solo PerMonitorV2 consapevolezza, in modo che il valore di enumerazione PerMonitor converte il valore di Windows di DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
+> Visual Studio supporta solo PerMonitorV2 Awareness, quindi il PerMonitor enum value viene convertito nel valore di Windows DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
 
-#### <a name="forcing-a-control-into-a-specific-dpiawarenesscontext"></a>Utilizzo forzato di un controllo in un determinato DpiAwarenessContext
-Interfaccia utente legacy che non viene aggiornata per supportare la modalità PMA, potrebbero essere necessari modifiche di lieve entità recarsi a lavoro mentre Visual Studio è in esecuzione in modalità PMA. Una correzione di questo tipo consiste nel verificare che l'interfaccia utente in cui viene creato il DpiAwarenessContext a destra. Per forzare l'interfaccia utente in un particolare DpiAwarenessContext, è possibile accedere a un ambito DPI con il codice seguente:
+#### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>Forzare un controllo in un DpiAwarenessContext specifico
 
-C#:
+L'interfaccia utente legacy che non è in fase di aggiornamento per supportare la modalità PMA può comunque richiedere modifiche minime per funzionare mentre Visual Studio è in esecuzione in modalità PMA. Una di queste correzioni prevede che l'interfaccia utente venga creata nel DpiAwarenessContext corretto. Per forzare l'interfaccia utente in un particolare DpiAwarenessContext, è possibile immettere un ambito DPI con il codice seguente:
 
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
@@ -255,8 +261,6 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
     form.ShowDialog();
 }
 ```
-
-C++:
 
 ```cpp
 void MyClass::ShowDialog()
@@ -267,13 +271,14 @@ void MyClass::ShowDialog()
 ```
 
 > [!NOTE]
-> Forzando il DpiAwarenessContext funziona solo su interfaccia utente WPF e finestre di dialogo di livello principale WPF. Una volta la creazione di WPF UI che deve essere ospitato all'interno di finestre degli strumenti o finestre di progettazione, non appena il contenuto viene inserito nell'albero di WPF UI, verranno convertiti in DpiAwarenessContext processo corrente.
+> La forzatura di DpiAwarenessContext funziona solo su interfaccia utente non WPF e finestre di dialogo WPF di primo livello. Quando si crea un'interfaccia utente WPF che deve essere ospitata all'interno di finestre degli strumenti o finestre di progettazione, non appena il contenuto viene inserito nell'albero dell'interfaccia utente WPF, viene convertito nel processo DpiAwarenessContext corrente.
 
 ## <a name="known-issues"></a>Problemi noti
+
 ### <a name="windows-forms"></a>Windows Form
 
-Per ottimizzare i nuovi scenari in modalità mista, Windows Form modificato come la creazione di controlli e windows ogni volta che l'elemento padre non è stato impostato in modo esplicito. In precedenza, i controlli senza un/padre espliciti usati un interno "parcheggio finestra" come elemento padre temporaneo per il controllo o la finestra viene creato. 
+Per ottimizzare i nuovi scenari in modalità mista, Windows Forms modificato il modo in cui crea i controlli e le finestre ogni volta che l'elemento padre non è stato impostato in modo esplicito. In precedenza, i controlli senza un elemento padre esplicito usavano una "finestra di parcheggio" interna come elemento padre temporaneo per il controllo o la finestra da creare. 
 
-Prima di .NET 4.8, si è verificato un singolo "di parcheggio finestra" che ottiene relativo DpiAwarenessContext dal contesto del riconoscimento DPI thread corrente al momento della creazione della finestra. Tutti i controlli privi eredita le stesse DpiAwarenessContext come finestra di parcheggio quando l'handle del controllo viene creato e sarebbe possibile associare di nuovo al padre finale/previsto dallo sviluppatore dell'applicazione. Ciò potrebbe causare errori basato su intervallo se la "finestra di parcheggio" era un DpiAwarenessContext superiore rispetto alla finestra padre finale.
+Prima di .NET 4,8, era presente una singola "finestra di parcheggio" che ottiene la DpiAwarenessContext dal contesto di consapevolezza dei DPI del thread corrente al momento della creazione della finestra. Qualsiasi controllo senza padre eredita lo stesso DpiAwarenessContext della finestra di parcheggio quando viene creato l'handle del controllo e viene associato al padre finale/previsto dallo sviluppatore di applicazioni. Ciò provocherebbe errori basati sulla temporizzazione se la "finestra di parcheggio" aveva un valore di DpiAwarenessContext superiore rispetto alla finestra padre finale.
 
-A partire da .NET 4.8, è ora presente una "parcheggio finestra" per ogni DpiAwarenessContext che è stato rilevato. La principale differenza è che il DpiAwarenessContext utilizzato per il controllo viene memorizzato nella cache quando viene creato il controllo, non quando viene creato l'handle. Ciò significa che il comportamento complessivo di fine è lo stesso, ma è possibile attivare ciò che consente di costituire un problema di basati su intervallo in un problema di coerenza. Offre inoltre lo sviluppatore dell'applicazione più comportamento deterministico per la scrittura del codice dell'interfaccia utente e ambito in modo corretto.
+A partire da .NET 4,8, è ora disponibile una "finestra di parcheggio" per ogni DpiAwarenessContext rilevata. L'altra differenza principale è che il DpiAwarenessContext usato per il controllo viene memorizzato nella cache quando viene creato il controllo, non quando viene creato l'handle. Ciò significa che il comportamento finale complessivo è lo stesso, ma può trasformare ciò che è stato usato per un problema basato sulla temporizzazione in un problema coerente. Fornisce inoltre allo sviluppatore di applicazioni un comportamento più deterministico per la scrittura del codice dell'interfaccia utente e l'ambito corretto.
