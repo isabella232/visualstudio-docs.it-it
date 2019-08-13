@@ -222,7 +222,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 I frammenti seguenti sono spesso utili nei metodi OnStatus:
 
-- [https://login.microsoftonline.com/common/](`this.CurrentSelection`). La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
+- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
 - `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.
 

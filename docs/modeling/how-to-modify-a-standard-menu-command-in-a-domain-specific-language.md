@@ -129,7 +129,7 @@ Se il codice apporta modifiche all'archivio, ad esempio creando, eliminando o ag
 
 I frammenti seguenti sono spesso utili in questi metodi:
 
-- [https://login.microsoftonline.com/common/](`this.CurrentSelection`). La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
+- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
 - `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.
 
