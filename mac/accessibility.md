@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824453"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787636"
 ---
 # <a name="accessibility"></a>Accessibilità
 
@@ -57,7 +57,7 @@ L'impostazione di **Accesso completo tramite tastiera** su **Tutti i controlli**
 
 Per abilitare o disabilitare VoiceOver, premere **&#8984;+F5**
 
-I comandi di VoiceOver sono riportati in questa guida come **VO+*tasto***, dove **VO** si riferisce al modificatore impostato nell'applicazione **Utility VoiceOver**. Il modificatore predefinito è **CTRL+ALT**. Ad esempio, a seconda del modificatore di VoiceOver, **VO+M** indica **CTRL+ALT+M**. Per brevità, i tasti cursore sanno denominati **SINISTRA**, **DESTRA** e così via.
+I comandi di VoiceOver sono riportati in questa guida come **VO+_tasto_** , dove **VO** si riferisce al modificatore impostato nell'applicazione **Utility VoiceOver**. Il modificatore predefinito è **CTRL+ALT**. Ad esempio, a seconda del modificatore di VoiceOver, **VO+M** indica **CTRL+ALT+M**. Per brevità, i tasti cursore sanno denominati **SINISTRA**, **DESTRA** e così via.
 
 Per spostarsi all'interno dell'interfaccia utente di Visual Studio per Mac, usare le combinazioni di tasti seguenti:
 
