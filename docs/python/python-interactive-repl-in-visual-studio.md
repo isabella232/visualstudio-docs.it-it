@@ -10,22 +10,22 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896896"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822385"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
-In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per ogni ambiente Python, che costituisce un miglioramento rispetto alla funzionalità REPL disponibile con *python.exe* dalla riga di comando. La finestra **interattiva** (che si apre con i comandi di menu **Visualizza** > **Altre finestre** > **&lt;Ambiente&gt; interattivo**) consente di immettere codice Python arbitrario e visualizzare risultati immediati. Questo modo di generare codice consente di imparare e sperimentare con API e librerie e sviluppare in modo interattivo codice funzionante da includere nei propri progetti.
+In Visual Studio è disponibile una finestra REPL (Read-Evaluate-Print Loop) per ogni ambiente Python, che costituisce un miglioramento rispetto alla funzionalità REPL disponibile con *python.exe* dalla riga di comando. La finestra **interattiva** (che si apre con i comandi di menu **Visualizza** > **Altre finestre** >  **&lt;Ambiente&gt; interattivo**) consente di immettere codice Python arbitrario e visualizzare risultati immediati. Questo modo di generare codice consente di imparare e sperimentare con API e librerie e sviluppare in modo interattivo codice funzionante da includere nei propri progetti.
 
 ![Finestra interattiva di Python](media/interactive-window.png)
 
 In Visual Studio sono disponibili numerose modalità REPL tra cui scegliere:
 
-| REPL | Description | Modifica | Debug | Immagini |
+| REPL | DESCRIZIONE | Modifica | Debug | Immagini |
 | --- | --- | --- | --- | --- |
 | Standard | REPL predefinito, comunica direttamente con Python | Modifica standard (su più righe e così via). | Sì, tramite `$attach` | No |
 | Debug | REPL predefinito, comunica con il processo Python di cui è in corso il debug | Modifica standard | Solo debug | No |
@@ -40,7 +40,7 @@ Per una procedura dettagliata con esempi, incluse le interazioni con l'editor co
 
 È possibile aprire la finestra **interattiva** per un ambiente in diversi modi.
 
-Passare prima alla finestra Ambienti Python (**Visualizza** > **Altre finestre** > **Ambienti Python** oppure premere **CTRL**+**K** > **CTRL**+**`**) e selezionare il comando o il pulsante **Apri finestra interattiva** per l'ambiente desiderato.
+Passare prima alla finestra Ambienti Python (**Visualizza** > **Altre finestre** > **Ambienti Python** oppure premere **CTRL**+**K** > **CTRL**+ **`** ) e selezionare il comando o il pulsante **Apri finestra interattiva** per l'ambiente desiderato.
 
 ![Collegamento Finestra interattiva nella finestra Ambienti Python](media/interactive-window-opening.png)
 
@@ -62,18 +62,18 @@ In seguito, nella parte inferiore del menu **Visualizza** > **Altre finestre** �
 
 ## <a name="use-the-interactive-window"></a>Usare la finestra Interattiva
 
-Dopo aver aperto la finestra **interattiva**, è possibile iniziare a immettere codice riga per riga al prompt dei comandi di **\>\>\>**. La finestra **interattiva** esegue ogni riga non appena viene immessa, incluse le operazioni di importazione di moduli, definizione di variabili e così via:
+Dopo aver aperto la finestra **interattiva**, è possibile iniziare a immettere codice riga per riga al prompt dei comandi di **\>\>\>** . La finestra **interattiva** esegue ogni riga non appena viene immessa, incluse le operazioni di importazione di moduli, definizione di variabili e così via:
 
 ![Finestra interattiva di Python](media/interactive-window.png)
 
-L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per creare un'istruzione completa, ad esempio quando un'istruzione `for` termina con i due punti, come illustrato in precedenza. In questi casi, il prompt della riga diventa **...**, per indicare che è necessario immettere altre righe per il blocco, come illustrato nella quarta e nella quinta riga della figura precedente. Quando si preme **INVIO** in una riga vuota, la finestra **interattiva** chiude il blocco e lo esegue nell'interprete.
+L'eccezione si verifica quando sono necessarie righe di codice aggiuntivo per creare un'istruzione completa, ad esempio quando un'istruzione `for` termina con i due punti, come illustrato in precedenza. In questi casi, il prompt della riga diventa **...** , per indicare che è necessario immettere altre righe per il blocco, come illustrato nella quarta e nella quinta riga della figura precedente. Quando si preme **INVIO** in una riga vuota, la finestra **interattiva** chiude il blocco e lo esegue nell'interprete.
 
 > [!Tip]
 > La finestra **interattiva** costituisce un miglioramento rispetto all'esperienza REPL di Python dalla riga di comando in quanto imposta automaticamente un rientro per le istruzioni che appartengono a un ambito circostante. La relativa cronologia (richiamata con la freccia su) visualizza inoltre elementi su più righe, mentre la riga di comando REPL visualizza solo singole righe.
 
 <a name="meta-commands"></a> La finestra **interattiva** supporta anche diversi metacomandi. Tutti i metacomandi iniziano con `$` ed è possibile digitare `$help` per ottenere un elenco dei metacomandi oppure `$help <command>` per ottenere i dettagli relativi all'utilizzo di un comando specifico.
 
-| Metacomando | Description |
+| Metacomando | DESCRIZIONE |
 | --- | --- |
 | `$$` | Inserisce un commento ed è quindi utile per aggiungere commenti al codice durante la sessione. |
 | `$attach` | Collega il debugger di Visual Studio al processo della finestra REPL per abilitare il debug. |
@@ -111,7 +111,11 @@ Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-Quando si usa un file di codice come un'area dei file temporanei, spesso si ha un piccolo blocco di codice che si vuole inviare in una sola volta. Per raggruppare il codice, contrassegnare il codice come una *cella codice* aggiungendo un commento che inizia con `#%%` all'inizio della cella, che termina quella precedente. Le celle di codice possono essere compresse ed espanse e l'uso di **CTRL**+**INVIO** all'interno di una cella di codice invia l'intera cella alla finestra **interattiva** e passa alla successiva.
+## <a name="work-with-code-cells"></a>Usare le celle di codice
+
+Le celle di codice possono essere usate nell'analisi dei dati e sono supportate da un'ampia gamma di editor di testo.
+
+Ad esempio, quando si usa un file di codice come un'area dei file temporanei, spesso si ha un piccolo blocco di codice che si vuole inviare in una sola volta. Per raggruppare il codice, contrassegnare il codice come una *cella codice* aggiungendo un commento che inizia con `#%%` all'inizio della cella, che termina quella precedente. Le celle di codice possono essere compresse ed espanse e l'uso di **CTRL**+**INVIO** all'interno di una cella di codice invia l'intera cella alla finestra **interattiva** e passa alla successiva.
 
 Visual Studio rileva anche le celle di codice a partire da commenti come `# In[1]:`, che è il formato visualizzato quando si esporta un blocco appunti Jupyter come file Python. Questo rilevamento semplifica l'esecuzione di un notebook da [Azure Notebooks](https://notebooks.azure.com/) scaricandolo come file Python, aprendolo in Visual Studio e usando **CTRL**+**INVIO** per eseguire ogni cella.
 

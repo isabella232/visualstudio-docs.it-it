@@ -3,15 +3,15 @@ title: Disponibilità dei prodotti per i download di software nelle sottoscrizio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni sulla disponibilità dei prodotti nei download di software per le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315392"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681689"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilità dei prodotti per i download di software nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.
@@ -38,4 +38,5 @@ Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'a
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Alcuni download di software potrebbero richiedere un codice Product Key per l'installazione e l'attivazione.  Per informazioni dettagliate su come ottenere e gestire i codici Product Key, vedere l'articolo relativo ai codici Product Key. 
+- Alcuni download di software potrebbero richiedere un codice Product Key per l'installazione e l'attivazione.  Per informazioni dettagliate su come ottenere e gestire i codici Product Key, vedere l'articolo [Uso di codici Product Key in sottoscrizioni di Visual Studio](product-keys.md). 
+- [Download di titoli software nelle sottoscrizioni di Visual Studio](download-software.md)

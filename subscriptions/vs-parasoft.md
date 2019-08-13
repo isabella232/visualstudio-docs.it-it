@@ -1,17 +1,17 @@
 ---
 title: Vantaggio Parasoft Virtualize/SOAtest Professional Desktop | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: Informazioni su come attivare la sottoscrizione Parasoft Virtualize/SOA Test Professional inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824648"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787724"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Vantaggio Parasoft Virtualize/SOAtest Professional Desktop nelle sottoscrizioni di Visual Studio
 
@@ -27,7 +27,10 @@ ms.locfileid: "67824648"
 
 3. Verrà effettuato il reindirizzamento al sito Web Parasoft, in cui si creerà l'account.  È sufficiente specificare le informazioni di contatto e fare clic su **Submit** (Invia).
    > [!div class="mx-imgBorder"]
-   > ![Creazione dell'account per il vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Creazione dell'account per il vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > La tabella nella pagina mostra i prezzi per un intero anno, oltre a uno sconto di Visual Studio. Questi prezzi saranno applicabili DOPO aver usato la sottoscrizione di sei mesi.  
 
 4. Dopo che l'account è stato creato, viene visualizzata la notifica dell'invio di un messaggio di posta elettronica con le istruzioni per il download.  Se questo messaggio non compare nella posta in arrivo, ricordarsi di controllare la cartella Posta indesiderata.
 
@@ -56,14 +59,12 @@ ms.locfileid: "67824648"
 14. Specificare dove creare il collegamento dell'applicazione installata e fare clic su **Avanti**.
 
 15. Per alcuni test funzionali all'interno di siti HTTPS è necessario il certificato della CA radice Web SOAtest.  Scegliere se installare il certificato della CA radice e fare clic su **Avanti**.
-    > [!div class="mx-imgBorder"]
-    > ![Certificato CA radice del vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft consiglia vivamente di scegliere di installare il certificato.
 
 16. Scegliere se creare un'icona sul desktop e l'icona di avvio rapido durante l'installazione e fare clic su **Avanti**.
 
 17. Confermare le opzioni selezionate e quindi fare clic su **Installa** per iniziare l'installazione del software.
-    > [!div class="mx-imgBorder"]
-    > ![Vantaggio Parasoft pronto per l'installazione](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. Al termine dell'installazione, fare clic su **Fine**. A questo punto è tutto pronto per iniziare a usare il vantaggio Parasoft Virtualize/SOAtest Professional Desktop.
 
@@ -89,3 +90,6 @@ ms.locfileid: "67824648"
   - Centro Risorse Parasoft:  https://www.parasoft.com/resources/
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Passaggi successivi
+Sfruttare i vantaggi della sandbox di sviluppo attivando i [crediti di Azure](vs-azure.md). 

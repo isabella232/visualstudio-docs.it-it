@@ -1,5 +1,6 @@
 ---
-title: Tasti di modifica strumento Selezione diretta in Blend
+title: Tasti di modifica dello strumento Selezione diretta
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820395"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821817"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Tasti di modifica strumento Selezione diretta in Blend
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Selezione diretta in Blend per Visual Studio
+
 Nella tabella seguente sono elencati i tasti di scelta rapida che puoi usare per modificare la forma di un tracciato esistente con lo strumento **Selezione diretta**![strumento Selezione diretta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Per aggiungere o rimuovere punti in un tracciato esistente oppure per unire due tracciati esistenti, puoi usare lo strumento **Penna**.
 
 |Per|Eseguire questa operazione|Puntatore|
@@ -33,7 +35,6 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che puoi usare per
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Tasti di scelta rapida e tasti di modifica](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Tasti di modifica della tavola da disegno](../designers/artboard-modifier-keys-in-blend.md)
 - [Tasti di modifica strumento Penna](../designers/pen-tool-modifier-keys-in-blend.md)
 - [Disegnare forme e tracciati](../designers/draw-shapes-and-paths.md)

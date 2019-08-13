@@ -1,7 +1,7 @@
 ---
 title: Eseguire unit test ed eseguirne il debug con Esplora test
 description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare l'esecuzione automatica dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco dei test, creare playlist, eseguire il debug dei test e usare tasti di scelta rapida per i test.
-ms.date: 11/04/2016
+ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -10,35 +10,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493305"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711384"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
-Usare **Esplora test** per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare **Esplora test** per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test.
+Usare Esplora test per eseguire unit test da Visual Studio o da progetti di unit test di terze parti. È anche possibile usare Esplora test per raggruppare i test in categorie, filtrare l'elenco dei test e creare, salvare ed eseguire playlist di test. È possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test.
 
-Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Tuttavia, **Esplora test** può eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
+Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Esplora test può tuttavia eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
 **Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
+
 Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
 
-![Esplora test](../test/media/ute_failedpassednotrunsummary.png)
 
+::: moniker range="vs-2017"
+![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Esplora test](../test/media/vs-2019/test-explorer-16-2.png)
+::: moniker-end
+
+::: moniker range="vs-2017"
 Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi predefiniti **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile modificare la modalità con cui Esplora test raggruppa i test.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risultati in un raggruppamento predefinito di **Progetto**, **Spazio dei nomi** e **Classe**. È possibile cambiare il modo in cui Esplora test raggruppa i test.
+::: moniker-end
 
 È possibile eseguire molte delle operazioni di ricerca, organizzazione ed esecuzione dei test dalla barra degli strumenti di **Esplora test**.
 
+::: moniker range="vs-2017"
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
 ### <a name="run-tests"></a>Esegui test
 
+::: moniker range="vs-2017"
 È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
@@ -50,15 +68,31 @@ Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i ri
 - Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
+::: moniker-end
+::: moniker range=">=vs-2019"
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
+
+- Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
+
+- Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui** e quindi scegliere il gruppo dal menu.
+
+- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.
+
+- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test nel menu Impostazioni sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
-
+::: moniker range="vs-2017"
 |Button|DESCRIZIONE|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
 > [!NOTE]
 > Per eseguire unit test dopo ogni compilazione è necessario Visual Studio 2017 Enterprise o Visual Studio 2019. In Visual Studio 2019 la funzionalità è inclusa nelle versioni Community, Professional ed Enterprise.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Per eseguire gli unit test dopo ogni compilazione locale, aprire l'icona Impostazioni sulla barra degli strumenti di Esplora test e selezionare **Esegui test dopo compilazione**.
+::: moniker-end
 
 ## <a name="view-test-results"></a>Visualizzare i risultati dei test
 
@@ -68,7 +102,12 @@ Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i ri
 
 Per visualizzare i dettagli di un singolo test, selezionare il test.
 
+::: moniker range="vs-2017"
 ![Dettagli sull'esecuzione dei test](../test/media/ute_testdetails.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Dettagli sull'esecuzione dei test](../test/media/vs-2019/test-explorer-detail.png)
+::: moniker-end
 
 Il riquadro dei dettagli del test mostra le informazioni seguenti:
 
@@ -94,18 +133,41 @@ Esplora test consente di raggruppare i test in categorie predefinite. La maggior
 
 ### <a name="group-tests-in-the-test-list"></a>Raggruppare i test nell'elenco di test
 
+::: moniker range="vs-2017"
 Per modificare la modalità di organizzazione dei test, scegliere la freccia rivolta verso il basso accanto al pulsante **Raggruppamento** ![Pulsante Raggruppamento di Esplora test](../test/media/ute_groupby_btn.png) e selezionare un nuovo criterio di raggruppamento.
 
 ![Raggruppare i test per categoria in Esplora test](../test/media/ute_groupbycategory.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento predefinito della gerarchia è **Progetto**, **Spazio dei nomi** e quindi **Classe**. Per cambiare il modo in cui sono organizzati i test, scegliere il pulsante **Raggruppa per** ![Pulsante Raggruppa per di Esplora test](../test/media/ute_groupby_btn.png) e selezionare un nuovo criterio di raggruppamento.
+
+![Raggruppare i test per categoria in Esplora test](../test/media/vs-2019/test-explorer-groupby-162.png)
+
+È possibile definire i propri livelli della gerarchia e raggruppare in base a **Stato** e quindi a **Classe**, ad esempio, selezionando le opzioni di Raggruppa per nell'ordine preferito.
+
+![Raggruppamento per stato e quindi per classe](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
+::: moniker range="vs-2017"
 |Gruppo|DESCRIZIONE|
 |-|-----------------|
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Gruppo|DESCRIZIONE|
+|-|-----------------|
+|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
+|**Stato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**, **Non eseguiti**|
+|**Framework di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
+|**Spazio dei nomi**|Raggruppa i test in base allo spazio dei nomi contenitore.|
+|**Progetto**|Raggruppa i test in base al progetto contenitore.|
+|**Classe**|Raggruppa i test in base alla classe contenitore.|
+::: moniker-end
 
 ### <a name="group-by-traits"></a>Raggruppare per tratti
 
@@ -122,13 +184,66 @@ Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore 
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attributo TestCategory consente di specificare una categoria senza un valore. Una categoria definita dall'attributo TestCategory può anche essere la categoria di un attributo TestProperty.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|L'attributo TestProperty consente di definire una coppia categoria/valore di un tratto.|
 
+
 **Tratti nel framework di unit test Microsoft per C++**
 
  Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-microsoft-test-framework-for-cpp.md).
 
-### <a name="search-and-filter-the-test-list"></a>Eseguire ricerche e applicare filtri nell'elenco dei test
+## <a name="create-custom-playlists"></a>Creare playlist personalizzate
 
-È possibile usare i filtri di Esplora Test per limitare i metodi di test nei progetti che vengono visualizzati ed eseguiti.
+::: moniker range="vs-2017"
+È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
+
+![Scegliere una playlist](../test/media/ute_playlist.png)
+
+**Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** > **Nuova playlist** dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
+
+**Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** dal menu di scelta rapida e quindi scegliere la playlist a cui aggiungere i test.
+
+**Per aprire una playlist**, scegliere **Test** > **Playlist** dal menu di Visual Studio e quindi scegliere una voce dell'elenco di playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
+
+Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+::: moniker-end
+::: moniker range=">=vs-2019"
+È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in una nuova scheda di Esplora test. È possibile aggiungere un test a più di una playlist.
+
+**Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** > **Nuova playlist** dal menu di scelta rapida.
+
+![Creare una playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
+
+La playlist si apre in una nuova scheda di Esplora test. È possibile usare questa playlist una volta e quindi eliminarla oppure fare clic sul pulsante **Salva** sulla barra degli strumenti della finestra della playlist, quindi selezionare un nome e un percorso in cui salvarla.
+
+![La playlist si apre in una nuova scheda di Esplora test](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
+
+**Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi a playlist** > **Nuova playlist**. 
+
+**Per aprire una playlist**, scegliere l'icona della playlist sulla barra degli strumenti di Visual Studio, quindi scegliere un file di playlist salvato in precedenza dal menu.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+### <a name="test-explorer-columns"></a>Colonne di Esplora test
+
+I [gruppi](#test-explorer-groups) sono disponibili anche come colonne in Esplora test, insieme a Tratti, Analisi dello stack, Messaggio di errore e Nome completo. La maggior parte delle colonne non è visibile per impostazione predefinita ed è possibile personalizzare quali colonne visualizzare e l'ordine in cui sono disposte.
+
+![Raggruppamento per stato e quindi per classe](../test/media/vs-2019/test-explorer-columns-16-2.png)
+
+### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrare, ordinare e ridisporre le colonne di test
+
+Le colonne possono essere filtrate, ordinate e ridisposte. 
+* Per filtrare in base a tratti specifici, fare clic sull'icona del filtro nella parte superiore della colonna Tratti.
+
+  ![Filtro delle colonne](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
+
+* Per cambiare l'ordine delle colonne, fare clic su un'intestazione di colonna e trascinarla a sinistra o a destra.
+
+* Per ordinare una colonna, fare clic su un'intestazione di colonna. Non tutte le colonne possono essere ordinate.
+
+  ![Ordinamento delle colonne](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
+::: moniker-end
+
+## <a name="search-and-filter-the-test-list"></a>Eseguire ricerche e applicare filtri nell'elenco dei test
+
+È anche possibile usare i filtri di ricerca di Esplora Test per limitare i metodi di test nei progetti che vengono visualizzati ed eseguiti.
 
 Quando si digita una stringa nella casella di ricerca **Esplora test** e si preme **INVIO**, l'elenco dei test viene filtrato per visualizzare solo i test i cui nomi completi contengono la stringa.
 
@@ -140,7 +255,12 @@ Per filtrare in base a un criterio diverso:
 
 3. Immettere il valore di filtro tra virgolette.
 
+::: moniker range="vs-2017"
 ![Filtrare i test in Esplora test](../test/media/ute_filtertestlist.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Filtrare i test in Esplora test](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 > [!NOTE]
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
@@ -157,25 +277,11 @@ Per filtrare in base a un criterio diverso:
 
 Per escludere un subset dei risultati di un filtro, usare la sintassi seguente:
 
-```cpp
+```
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
 Ad esempio, `FullName:"MyClass" - FullName:"PerfTest"` restituisce tutti i test che includono "MyClass" nel nome, ad eccezione dei test che includono anche "PerfTest" nel nome.
-
-## <a name="create-custom-playlists"></a>Creare playlist personalizzate
-
-È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
-
-![Scegliere una playlist](../test/media/ute_playlist.png)
-
-**Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** > **Nuova playlist** dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
-
-**Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** dal menu di scelta rapida e quindi scegliere la playlist a cui aggiungere i test.
-
-**Per aprire una playlist**, scegliere **Test** > **Playlist** dal menu di Visual Studio e quindi scegliere nell'elenco delle playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
-
-Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Eseguire il debug e l'analisi di unit test
 
@@ -192,7 +298,7 @@ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsi
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnosticare i problemi di prestazioni dei metodi di test
 
-Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora test e quindi scegliere **Profilo** dal menu di scelta rapida. Vedere [Esplora prestazioni](../profiling/performance-explorer.md).
+Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, selezionare il metodo in Esplora test e quindi scegliere **Esegui profilatura del test selezionato** dal menu di scelta rapida. Vedere [Esplora prestazioni](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizzare il code coverage di unit test
 
@@ -200,6 +306,7 @@ Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, sel
 
 Per eseguire il code coverage per i metodi di test in una soluzione:
 
+::: moniker range="vs-2017"
 1. Scegliere **Test** dalla barra dei menu in alto e quindi scegliere **Analizza code coverage**.
 
 2. Scegliere uno dei comandi seguenti dal sottomenu:
@@ -207,6 +314,10 @@ Per eseguire il code coverage per i metodi di test in una soluzione:
     - **Test selezionati** esegue i metodi di test selezionati in Esplora test.
 
     - **Tutti i test** esegue tutti i metodi di test nella soluzione.
+::: moniker-end
+::: moniker range=">=vs-2019"
+* Fare clic con il pulsante destro del mouse in Esplora test e scegliere **Analizza code coverage per i test selezionati**
+::: moniker-end
 
 La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 

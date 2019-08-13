@@ -3,7 +3,7 @@ title: Modificare Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate su come modificare Visual Studio.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 06/25/2019
+ms.date: 07/31/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365413"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681379"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificare Visual Studio aggiungendo o rimuovendo carichi di lavoro e componenti
 
@@ -43,7 +43,7 @@ Ecco come fare.
 
 ## <a name="modify-workloads"></a>Modificare i carichi di lavoro
 
- I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
+ I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
 
 >[!IMPORTANT]
 >Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -86,7 +86,7 @@ Ecco come fare.
 
      Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
 
-     ![Aprire il programma di installazione di Visual Studio](media/vs2019-visual-studio-installer.png "Aprire il programma di installazione di Visual Studio")
+     ![Aprire il programma di installazione di Visual Studio da Windows](media/vs-2019/vs-installer-windows-start.png "Aprire il programma di installazione di Visual Studio")
 
      > [!NOTE]
      > È anche possibile trovare il programma di installazione di Visual Studio nella posizione seguente:
@@ -97,7 +97,7 @@ Ecco come fare.
 
 1. Nel programma di installazione cercare l'edizione di Visual Studio installata e quindi scegliere **Modifica**.
 
-     ![Aggiornare o modificare Visual Studio](media/vs-2019/vs-installer-modify.png "Aggiornare o modificare Visual Studio 2017")
+     ![Aggiornare o modificare Visual Studio](media/vs-2019/vs-installer-modify.png "Aggiornare o modificare Visual Studio 2019")
 
 1. Nella scheda **Carichi di lavoro** selezionare o deselezionare i carichi di lavoro da installare o disinstallare.
 

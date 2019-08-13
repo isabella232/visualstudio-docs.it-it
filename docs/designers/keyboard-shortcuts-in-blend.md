@@ -1,5 +1,6 @@
 ---
-title: Tasti di scelta rapida in Blend
+title: Scelte rapide da tastiera
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844325"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821747"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>Tasti di scelta rapida in Blend
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Scelte rapide da tastiera in Blend per Visual Studio
 
 ## <a name="project-shortcuts"></a>Tasti di scelta rapida per i progetti
 
@@ -72,10 +73,10 @@ ms.locfileid: "62844325"
 |Ridimensionare automaticamente l'altezza|**Ctrl**+**Maiusc**+**6**|
 |Raggruppare oggetti in un pannello di layout|**CTRL**+**G**|
 |Separare oggetti|**Ctrl**+**Maiusc**+**G**|
-|Portare in primo piano l'oggetto selezionato|**Ctrl**+**Maiusc**+**]**|
-|Portare avanti|**Ctrl**+**]**|
-|Portare in secondo piano l'oggetto selezionato|**Ctrl**+**Maiusc**+**[**|
-|Portare indietro|**Ctrl**+**[**|
+|Portare in primo piano l'oggetto selezionato|**Ctrl**+**Maiusc**+ **]**|
+|Portare avanti|**Ctrl**+ **]**|
+|Portare in secondo piano l'oggetto selezionato|**Ctrl**+**Maiusc**+ **[**|
+|Portare indietro|**Ctrl**+ **[**|
 |Creare un controllo utente dagli oggetti selezionati (WPF)|**F8**|
 |Vincolare le proporzioni degli oggetti|Tenere premuto **Maiusc** e trascinare l'oggetto|
 |Ruotare un oggetto in incrementi di 15-gradi|Tenere premuto **Maiusc** e ruotare l'oggetto|
@@ -95,8 +96,8 @@ ms.locfileid: "62844325"
 |Operazione da eseguire|Eseguire questa operazione|
 |----------------|-------------|
 |Spostarsi tra le visualizzazioni **Progettazione**, **Codice** e **Doppia visualizzazione**|**F11**|
-|Ingrandire la tavola da disegno|**Ctrl**+**segno di uguale** (**=**)|
-|Ridurre la visualizzazione della tavola da disegno|**Ctrl**+**segno meno** (**-**)|
+|Ingrandire la tavola da disegno|**Ctrl**+**segno di uguale** ( **=** )|
+|Ridurre la visualizzazione della tavola da disegno|**Ctrl**+**segno meno** ( **-** )|
 |Eseguire uno zoom avanti o indietro della tavola da disegno|Ruotare la rotellina del mouse|
 |Spostare la tavola da disegno verso sinistra o destra|**Maiusc** e ruotare la rotellina del mouse|
 |Spostare la tavola da disegno verso l'alto o il basso|**Ctrl** e ruotare la rotellina del mouse|

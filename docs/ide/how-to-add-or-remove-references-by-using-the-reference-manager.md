@@ -1,6 +1,6 @@
 ---
 title: Aggiungere riferimenti in Gestione riferimenti
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -21,30 +21,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825482"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787884"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
-È possibile usare la finestra di dialogo **Gestione riferimenti** per aggiungere e gestire riferimenti a componenti sviluppati da esperti indipendenti, da Microsoft o da altre società. Se si sviluppa un’app Universal Windows, il progetto fa riferimento automaticamente a tutte le DLL SDK Windows corrette. Se si sviluppa un'applicazione .NET, il progetto fa automaticamente riferimento a *mscorlib.dll*. Alcune API .NET vengono esposte nei componenti che è necessario aggiungere manualmente. I riferimenti ai componenti COM o ai componenti personalizzati devono essere aggiunti manualmente.
+È possibile usare la finestra di dialogo Gestione riferimenti per aggiungere e gestire riferimenti a componenti sviluppati da sviluppatori, da Microsoft o da altre società. Se si sviluppa un’app Universal Windows, il progetto fa riferimento automaticamente a tutte le DLL SDK Windows corrette. Se si sviluppa un'applicazione .NET, il progetto fa automaticamente riferimento a *mscorlib.dll*. Alcune API .NET vengono esposte nei componenti che è necessario aggiungere manualmente. I riferimenti ai componenti COM o ai componenti personalizzati devono essere aggiunti manualmente.
 
 ## <a name="reference-manager-dialog-box"></a>Finestra di dialogo Gestione riferimenti
 
-Sul lato sinistro della finestra di dialogo **Gestione riferimenti** sono disponibili categorie diverse a seconda del tipo di progetto:
+Sul lato sinistro della finestra di dialogo Gestione riferimenti sono disponibili categorie diverse a seconda del tipo di progetto:
 
-- **Assembly** con i sottogruppi **Framework** ed **Estensioni**.
+- **Assembly** con i sottogruppi **Framework** ed **Estensioni**
 
-- Nella scheda **COM** sono elencati tutti i componenti COM a cui è possibile fare riferimento.
+- Elenchi **COM** di tutti i componenti COM a cui è possibile fare riferimento
 
-- **Soluzione** con il sottogruppo **Progetti**.
+- **Progetti**
 
-- **Windows** con il sottogruppo di **base** e il sottogruppo **Estensioni**. È possibile esplorare i riferimenti in Windows SDK o negli SDK di estensione tramite il **visualizzatore oggetti**.
+- **Progetti condivisi**
 
-- **Sfoglia** con il sottogruppo **Recente**.
+- **Windows** con i sottogruppi **Core** ed **Estensioni**. È possibile esplorare i riferimenti in Windows SDK o negli SDK di estensione tramite il **visualizzatore oggetti**.
+
+- **Sfoglia** con il sottogruppo **Recenti**
 
 ## <a name="add-a-reference"></a>Aggiungere un riferimento
 
@@ -62,7 +64,7 @@ Quando si aggiunge manualmente un riferimento a qualsiasi spazio dei nomi EnvDTE
 
 Tutti i progetti desktop contengono un riferimento implicito a **mscorlib**. I progetti Visual Basic contengono un riferimento implicito a <xref:Microsoft.VisualBasic>. Tutti i progetti contengono un riferimento implicito a **System.Core**, anche se è stato rimosso dall'elenco di riferimenti.
 
-Se un tipo di progetto non supporta gli assembly, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti**.
+Se un tipo di progetto non supporta gli assembly, la scheda non verrà visualizzata nella finestra di dialogo Gestione riferimenti.
 
 La scheda **Assembly** è costituita da due sottoschede:
 
@@ -142,6 +144,10 @@ Un progetto può fare riferimento a un altro progetto destinato a una versione d
 > [!NOTE]
 > Un progetto destinato a .NET Framework 4 non è compatibile con un progetto destinato a .NET Framework 4 Client Profile.
 
+## <a name="shared-projects-tab"></a>Scheda Progetti condivisi
+
+Aggiungere un riferimento a un progetto condiviso nella scheda **Progetti condivisi** della finestra di dialogo Gestione riferimenti. I [progetti condivisi](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) consentono di scrivere codice comune a cui fa riferimento una serie di progetti di applicazioni diversi.
+
 ## <a name="universal-windows-tab"></a>Scheda Windows universale
 
 La scheda **Windows universale** contiene tutti gli SDK specifici per le piattaforme in cui vengono eseguiti i sistemi operativi Windows.
@@ -155,28 +161,28 @@ I progetti di app di Windows universale hanno un riferimento all'SDK di Windows 
 
 In **Estensioni** sono elencati gli SDK che estendono la piattaforma Windows di destinazione.
 
-Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda **Estensioni** gli SDK che si applicano al progetto da cui è stata aperta la finestra di dialogo **Gestione riferimenti** sono elencati come voci singole. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve eseguire nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto.
+Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda **Estensioni** gli SDK che si applicano al progetto da cui è stata aperta la finestra di dialogo Gestione riferimenti sono elencati come voci singole. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve eseguire nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto.
 
 Per informazioni su come visualizzare l'SDK nella scheda **Estensioni**, vedere [Creazione di un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Se un progetto fa riferimento a un SDK che dipende da un altro SDK, Visual Studio userà il secondo SDK solo se si aggiunge manualmente un riferimento a quest'ultimo. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo **Gestione riferimenti** consente di identificare le dipendenze dell'SDK indicando tutte le dipendenze nel riquadro dei dettagli.
+> Se un progetto fa riferimento a un SDK che dipende da un altro SDK, Visual Studio userà il secondo SDK solo se si aggiunge manualmente un riferimento a quest'ultimo. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo Gestione riferimenti consente di identificare le dipendenze dell'SDK indicandole tutte nel riquadro dei dettagli.
 
-Se un tipo di progetto non supporta le estensioni, la scheda non viene visualizzata nella finestra di dialogo **Gestione riferimenti**.
+Se un tipo di progetto non supporta le estensioni, la scheda non viene visualizzata nella finestra di dialogo Gestione riferimenti.
 
 ## <a name="com-tab"></a>Scheda COM
 
 Nella scheda **COM** sono elencati tutti i componenti COM a cui è possibile fare riferimento. Se si desidera aggiungere un riferimento a una DLL COM registrata che contiene un manifesto interno, annullare prima di tutto la registrazione della DLL. In caso contrario, Visual Studio aggiunge il riferimento all'assembly come controllo ActiveX e non come DLL nativa.
 
-Se un tipo di progetto non supporta il modello COM, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti**.
+Se un tipo di progetto non supporta il modello COM, la scheda non viene visualizzata nella finestra di dialogo Gestione riferimenti.
 
-## <a name="browse-button"></a>Pulsante Sfoglia
+## <a name="browse"></a>Browse
 
 È possibile usare il pulsante **Sfoglia** per passare a un componente nel file system.
 
 Un progetto può fare riferimento a un componente destinato a una versione del framework diversa. È ad esempio possibile creare un'applicazione destinata a .NET Framework 4.7 che fa riferimento a un assembly destinato a .NET Framework 4. Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di destinazione](../ide/visual-studio-multi-targeting-overview.md).
 
-Evitare di aggiungere riferimenti a file negli output di un altro progetto all'interno della stessa soluzione, poiché questo potrebbe causare errori di compilazione. Usare invece la scheda **Soluzione** della finestra di dialogo **Gestione riferimenti** per creare riferimenti da progetto a progetto. Si facilita così lo sviluppo in team, consentendo una migliore gestione delle librerie di classi create nei progetti. Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md).
+Evitare di aggiungere riferimenti a file negli output di un altro progetto all'interno della stessa soluzione, poiché questo potrebbe causare errori di compilazione. Usare invece la scheda **Soluzione** della finestra di dialogo Gestione riferimenti per creare riferimenti da progetto a progetto. Si facilita così lo sviluppo in team, consentendo una migliore gestione delle librerie di classi create nei progetti. Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md).
 
 Non è possibile individuare un SDK e aggiungerlo al progetto. È possibile solo individuare un file, ad esempio un assembly o un file con estensione *winmd*, e aggiungerlo al progetto.
 
@@ -201,7 +207,7 @@ Le schede **Assembly**, **COM**, **Windows** e **Sfoglia** supportano tutte una 
 
 ## <a name="search"></a>Cerca
 
-La barra di ricerca della finestra di dialogo **Gestione riferimenti** viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, verranno restituiti risultati solo se la soluzione è costituita da un nome di progetto contenente il termine "sistema".
+La barra di ricerca della finestra di dialogo Gestione riferimenti viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, verranno restituiti risultati solo se la soluzione è costituita da un nome di progetto contenente il termine "sistema".
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431980"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681130"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 
@@ -41,6 +41,8 @@ Per profilare un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/include
 
  **vsperfaspnetcmd**  *websiteUrl*
 
+ Un esempio di *websiteUrl* ospitato su server locale potrebbe essere *http://localhost/MySite/default.aspx* . Un esempio di sito esterno è *http://www.contoso.com* . Per altre informazioni, vedere gli URL di esempio nella sezione [Per profilare un sito Web senza aprire un progetto in Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Per raccogliere dati di intervallo dettagliati tramite il metodo di strumentazione
 
 Usare la riga di comando seguente per raccogliere dati di intervallo dettagliati da un'applicazione Web di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata dinamicamente:
@@ -61,14 +63,14 @@ L'opzione **/Memory** consente di raccogliere dati sull'allocazione di oggetti n
 
  È inoltre possibile usare l'opzione **/Trace** per includere informazioni di intervallo dettagliate con i dati di memoria .NET:
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Per raccogliere dati di interazione tra livelli
 
 > [!WARNING]
 > I dati di profilatura dell'interazione tra livelli possono essere raccolti usando qualsiasi edizione di Visual Studio, ma possono essere visualizzati solo in Visual Studio Enterprise.
 >
-> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione (**/trace**).
+> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione ( **/trace**).
 
 Per raccogliere dati di interazione tra livelli con dati di campionamento:
 
@@ -80,7 +82,7 @@ Per raccogliere dati di interazione tra livelli con dati di strumentazione:
 
 Per raccogliere dati di interazione tra livelli con dati di memoria .NET:
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Usare l'opzione /NoWait
 
@@ -88,7 +90,7 @@ Per impostazione predefinita, il prompt dei comandi non restituisce il controllo
 
 Per iniziare la profilatura:
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 Per terminare la profilatura:
 
@@ -98,7 +100,7 @@ Per terminare la profilatura:
 
 È possibile aggiungere una qualsiasi delle opzioni seguenti ai comandi elencati in precedenza in questa sezione, ad eccezione del comando **vsperfaspnetcmd /shutdown**.
 
-|Opzione|Description|
+|Opzione|DESCRIZIONE|
 |------------|-----------------|
 |**/Output:** `VspFile`|Per impostazione predefinita, il file dei dati di profilatura (con estensione *vsp*) viene creato nella directory corrente con il nome file **PerformanceReport.vsp**. Usare l'opzione /output per specificare un percorso o un nome file diverso o entrambi.|
 |**/PackSymbols:Off**|Per impostazione predefinita, VsPerfASPNETCmd incorpora simboli (nomi di funzione e di parametro e così via) nel file con estensione *vsp*. L'incorporamento di simboli può aumentare notevolmente le dimensioni del file di dati di profilatura. Se quando si analizzano i dati si ha accesso ai file con estensione *pdb* contenenti i simboli, usare l'opzione /packsymbols:off per disabilitare l'incorporamento dei simboli.|
