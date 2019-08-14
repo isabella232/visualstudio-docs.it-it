@@ -50,7 +50,7 @@ ms.locfileid: "67824289"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [https://login.microsoftonline.com/consumers/]([!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]).
+- [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 - Accesso a un'istanza in esecuzione di Microsoft SQL Server o Microsoft SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
 
