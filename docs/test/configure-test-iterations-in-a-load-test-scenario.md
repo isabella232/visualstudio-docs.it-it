@@ -10,12 +10,12 @@ ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cce1da2d3cb20ca7f577c806d0506ffc0b947903
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783807"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918280"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurare le iterazioni di test in uno scenario di test di carico
 
@@ -32,18 +32,18 @@ La proprietà **Numero massimo di iterazioni test** controlla il numero massimo 
 > [!NOTE]
 > Per un elenco completo delle proprietà degli scenari di test di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
- Per una combinazione di test sequenziale, un'iterazione è un passaggio in tutti i test nella combinazione. Per tutte le altre combinazioni di test, ogni esecuzione del test rappresenta un'iterazione. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+Per una combinazione di test sequenziale, un'iterazione è un passaggio in tutti i test nella combinazione. Per tutte le altre combinazioni di test, ogni esecuzione del test rappresenta un'iterazione. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Se il test di carico è basato sulla durata e tale durata scade prima del completamento del conteggio delle iterazioni, il test si arresterà. Se il test è basato sull'iterazione e le iterazioni di test vengono soddisfatte prima di quelle dello scenario, il test si arresterà. La durata viene configurata usando la proprietà **Durata esecuzione** nella finestra **Proprietà** associata a un'impostazione di esecuzione in un test di carico.
+Se il test di carico è basato sulla durata e tale durata scade prima del completamento del conteggio delle iterazioni, il test si arresterà. Se il test è basato sull'iterazione e le iterazioni di test vengono soddisfatte prima di quelle dello scenario, il test si arresterà. La durata viene configurata usando la proprietà **Durata esecuzione** nella finestra **Proprietà** associata a un'impostazione di esecuzione in un test di carico.
 
- Quando viene soddisfatto il conteggio delle iterazioni dello scenario, l'esecuzione dello scenario verrà arrestata ma qualsiasi altro scenario attivo continuerà a essere eseguito.
+Quando viene soddisfatto il conteggio delle iterazioni dello scenario, l'esecuzione dello scenario verrà arrestata ma qualsiasi altro scenario attivo continuerà a essere eseguito.
 
 > [!NOTE]
 > Una proprietà correlata è la proprietà **Univoco** in un'origine dati del test Web, che comporta lo spostamento sequenziale nei dati, riga per riga, ma una sola volta per ogni record. Per altre informazioni, vedere [Aggiungere un'origine dati a un test prestazioni Web](../test/add-a-data-source-to-a-web-performance-test.md).
 
- La proprietà **Numero massimo di iterazioni test** è utile in diverse situazioni. Alcuni tester che si occupano di test di carico preferiscono eseguire test basati sulle iterazioni, mentre altri preferiscono i test basati sulla durata.
+La proprietà **Numero massimo di iterazioni test** è utile in diverse situazioni. Alcuni tester che si occupano di test di carico preferiscono eseguire test basati sulle iterazioni, mentre altri preferiscono i test basati sulla durata.
 
- ![Specifica delle iterazioni di test in uno scenario](../test/media/loadtest_prop.png)
+![Specifica delle iterazioni di test in uno scenario](../test/media/loadtest_prop.png)
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Per specificare il numero massimo di iterazioni di test
 

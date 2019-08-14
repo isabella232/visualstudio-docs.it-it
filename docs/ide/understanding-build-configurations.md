@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 453e27df58e8a12baa3821def6c66fc1391401d3
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416955"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918709"
 ---
 # <a name="understand-build-configurations"></a>Informazioni sulle configurazioni della build
 
@@ -59,18 +59,18 @@ Ogni voce nella casella **Contesti progetto** di una configurazione per la soluz
 La configurazione per la soluzione attiva fornisce anche il contesto all'IDE. Se, ad esempio, si sta lavorando a un progetto e nella configurazione per la soluzione attiva viene specificata la compilazione per un dispositivo mobile, nella **Casella degli strumenti** verranno visualizzati solo gli elementi del progetto che possono essere usati in un progetto per un dispositivo mobile.
 
 ## <a name="project-configurations"></a>Configurazioni di progetto
- La piattaforma e la configurazione correlate a un progetto vengono usate congiuntamente per specificare le proprietà da usare durante le compilazione. A un progetto può essere associato un set di definizioni di proprietà diverso per ogni combinazione di configurazione e piattaforma. Per modificare le proprietà di un progetto, è possibile usare le pagine delle proprietà. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Proprietà**.
+La piattaforma e la configurazione correlate a un progetto vengono usate congiuntamente per specificare le proprietà da usare durante le compilazione. A un progetto può essere associato un set di definizioni di proprietà diverso per ogni combinazione di configurazione e piattaforma. Per modificare le proprietà di un progetto, è possibile usare le pagine delle proprietà. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Proprietà**.
 
- Per ogni configurazione di progetto, possono essere definite le proprietà dipendenti dalla configurazione in base alle esigenze. Per una determinata compilazione, ad esempio, è possibile impostare gli elementi del progetto che verranno inclusi, i file di output che verranno creati, la posizione in cui saranno collocati e il modo in cui verranno ottimizzati.
+Per ogni configurazione di progetto, possono essere definite le proprietà dipendenti dalla configurazione in base alle esigenze. Per una determinata compilazione, ad esempio, è possibile impostare gli elementi del progetto che verranno inclusi, i file di output che verranno creati, la posizione in cui saranno collocati e il modo in cui verranno ottimizzati.
 
- Le configurazioni di progetto possono variare notevolmente. Nelle proprietà di una configurazione di progetto può ad esempio essere specificata l'ottimizzazione del file di output, in modo che il file binario che ne risulta occupi uno spazio minimo, mentre un altro progetto può essere ottimizzato in modo che l'esecuzione avvenga alla velocità massima possibile.
+Le configurazioni di progetto possono variare notevolmente. Nelle proprietà di una configurazione di progetto può ad esempio essere specificata l'ottimizzazione del file di output, in modo che il file binario che ne risulta occupi uno spazio minimo, mentre un altro progetto può essere ottimizzato in modo che l'esecuzione avvenga alla velocità massima possibile.
 
- Le configurazioni di progetto non vengono archiviate per utente bensì per soluzione, in modo che possano essere condivise.
+Le configurazioni di progetto non vengono archiviate per utente bensì per soluzione, in modo che possano essere condivise.
 
- Nonostante le dipendenze dei progetti siano indipendenti dalla configurazione, verranno compilati solo i progetti specificati nella configurazione di soluzione attiva.
+Nonostante le dipendenze dei progetti siano indipendenti dalla configurazione, verranno compilati solo i progetti specificati nella configurazione di soluzione attiva.
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Modalità di assegnazione delle configurazioni di progetto in Visual Studio
- Quando si definisce una nuova configurazione di soluzione e non la si copia da una già esistente, in Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di progetto predefinite. I criteri vengono valutati nell'ordine indicato.
+Quando si definisce una nuova configurazione di soluzione e non la si copia da una già esistente, in Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di progetto predefinite. I criteri vengono valutati nell'ordine indicato.
 
 1. Se il nome di configurazione ( *\<nome configurazione> \<nome piattaforma>* ) di un progetto corrisponde esattamente al nome della nuova configurazione per la soluzione, viene assegnata la configurazione specifica. I nomi delle configurazioni non rispettano la distinzione tra maiuscole e minuscole.
 
@@ -79,9 +79,9 @@ La configurazione per la soluzione attiva fornisce anche il contesto all'IDE. Se
 3. Se non esiste alcuna corrispondenza, viene assegnata la prima configurazione elencata nel progetto.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Modalità di assegnazione delle configurazioni per le soluzioni in Visual Studio
- Quando si crea una configurazione per il progetto (in **Gestione configurazione** scegliere **Nuovo** nel menu a discesa nella colonna **Configurazione** del progetto) e si seleziona la casella di controllo **Crea nuove configurazioni soluzione**, in Visual Studio viene cercata una configurazione con lo stesso nome per compilare il progetto per ogni piattaforma supportata. In alcuni casi, le configurazioni di soluzione esistenti vengono rinominate o ne vengono definite di nuove.
+Quando si crea una configurazione per il progetto (in **Gestione configurazione** scegliere **Nuovo** nel menu a discesa nella colonna **Configurazione** del progetto) e si seleziona la casella di controllo **Crea nuove configurazioni soluzione**, in Visual Studio viene cercata una configurazione con lo stesso nome per compilare il progetto per ogni piattaforma supportata. In alcuni casi, le configurazioni di soluzione esistenti vengono rinominate o ne vengono definite di nuove.
 
- In Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di soluzione.
+In Visual Studio vengono usati i criteri seguenti per assegnare configurazioni di soluzione.
 
 - Se in una configurazione di progetto non è specificata una piattaforma oppure ne è specificata una sola, viene trovata o aggiunta una configurazione per la soluzione il cui nome corrisponde a quello della nuova configurazione di progetto. Il nome predefinito di tale configurazione di soluzione non include un nome di piattaforma e pertanto assume il formato *\<nome configurazione di progetto>* .
 

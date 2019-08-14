@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e2c83b74c2649681251ffa51f1366c0ce96d677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84a8ad1784ce33d30ce1023f0554feeb340b5703
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788811"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923641"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 
@@ -72,7 +72,7 @@ statusText.WaitForControlCondition(IsStatusDone);
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
 
- Tutti i metodi precedenti sono metodi di istanza di UITestControl. Questo metodo è un metodo statico Questo metodo attende inoltre che il predicato specificato sia `true`, ma può essere usato per un'operazione di attesa complessa (ad esempio, una condizione OR) su più controlli. Ad esempio, è possibile attendere finché il testo dello stato non è **Succeeded** o finché non viene visualizzato un messaggio di errore, come mostrato nel codice seguente:
+Tutti i metodi precedenti sono metodi di istanza di UITestControl. Questo metodo è un metodo statico Questo metodo attende inoltre che il predicato specificato sia `true`, ma può essere usato per un'operazione di attesa complessa (ad esempio, una condizione OR) su più controlli. Ad esempio, è possibile attendere finché il testo dello stato non è **Succeeded** o finché non viene visualizzato un messaggio di errore, come mostrato nel codice seguente:
 
 ```csharp
 
@@ -88,19 +88,19 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
 ```
 
- Tutti questi metodi presentano il seguente comportamento:
+Tutti questi metodi presentano il seguente comportamento:
 
- I metodi restituiscono true se l'attesa ha esito positivo e false se l'attesa non è riuscita.
+I metodi restituiscono true se l'attesa ha esito positivo e false se l'attesa non è riuscita.
 
- Il timeout implicito per l'operazione di attesa viene specificato dalla proprietà <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A>. Il valore predefinito di questa proprietà è 60000 millisecondi (un minuto).
+Il timeout implicito per l'operazione di attesa viene specificato dalla proprietà <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyTimeout%2A>. Il valore predefinito di questa proprietà è 60000 millisecondi (un minuto).
 
- I metodi hanno un overload per accettare il timeout esplicito in millisecondi. Tuttavia, quando l'operazione di attesa restituisce una ricerca implicita del controllo o quando l'applicazione è occupata, il tempo di attesa effettivo potrebbe essere superiore al timeout specificato.
+I metodi hanno un overload per accettare il timeout esplicito in millisecondi. Tuttavia, quando l'operazione di attesa restituisce una ricerca implicita del controllo o quando l'applicazione è occupata, il tempo di attesa effettivo potrebbe essere superiore al timeout specificato.
 
- Le funzioni precedenti sono avanzate e flessibili e dovrebbero soddisfare quasi tutte le condizioni. Tuttavia, nel caso in cui questi metodi non soddisfino le proprie esigenze e sia necessario inserire <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> o <xref:System.Threading.Thread.Sleep%2A> nel codice, è consigliabile usare l'API Playback.Wait() invece di Thread.Sleep() per questi motivi:
+Le funzioni precedenti sono avanzate e flessibili e dovrebbero soddisfare quasi tutte le condizioni. Tuttavia, nel caso in cui questi metodi non soddisfino le proprie esigenze e sia necessario inserire <xref:Microsoft.VisualStudio.TestTools.UITesting.Playback.Wait%2A> o <xref:System.Threading.Thread.Sleep%2A> nel codice, è consigliabile usare l'API Playback.Wait() invece di Thread.Sleep() per questi motivi:
 
- È possibile usare la proprietà <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> per modificare la durata della sospensione. Per impostazione predefinita, questa variabile è 1, ma è possibile aumentarla o diminuirla per modificare il tempo di attesa in tutto il codice. Ad esempio, se si sta eseguendo un test su una rete lenta o si sta verificando un altro caso di prestazioni ridotte, è possibile impostare questa variabile in una posizione (o anche nel file di configurazione) su 1,5 per aggiungere il 50% in più di attesa in tutte le posizioni.
+È possibile usare la proprietà <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A> per modificare la durata della sospensione. Per impostazione predefinita, questa variabile è 1, ma è possibile aumentarla o diminuirla per modificare il tempo di attesa in tutto il codice. Ad esempio, se si sta eseguendo un test su una rete lenta o si sta verificando un altro caso di prestazioni ridotte, è possibile impostare questa variabile in una posizione (o anche nel file di configurazione) su 1,5 per aggiungere il 50% in più di attesa in tutte le posizioni.
 
- Playback.Wait() chiama internamente Thread.Sleep() (dopo il calcolo precedente) in blocchi più piccoli in un ciclo for-loop mentre cerca l'operazione di annullamento/interruzione dell'utente. In altre parole, Playback.Wait() consente di annullare la riproduzione prima della fine dell'attesa, mentre la sospensione potrebbe non generare un'eccezione.
+Playback.Wait() chiama internamente Thread.Sleep() (dopo il calcolo precedente) in blocchi più piccoli in un ciclo for-loop mentre cerca l'operazione di annullamento/interruzione dell'utente. In altre parole, Playback.Wait() consente di annullare la riproduzione prima della fine dell'attesa, mentre la sospensione potrebbe non generare un'eccezione.
 
 > [!TIP]
 > L'Editor di test codificati dell'interfaccia utente consente di modificare facilmente i test. Con l'Editor di test codificati dell'interfaccia utente è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).

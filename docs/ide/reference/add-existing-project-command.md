@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792572"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926289"
 ---
 # <a name="add-existing-project-command"></a>Comando Aggiungi progetto esistente
 Aggiunge un progetto esistente alla soluzione corrente.
@@ -30,17 +30,18 @@ File.AddExistingProject filename
 ```
 
 ## <a name="arguments"></a>Argomenti
- `filename` Facoltativo. Percorso completo e nome del progetto comprensivo di estensione da aggiungere alla soluzione.
+`filename`\
+facoltativo. Percorso completo e nome del progetto comprensivo di estensione da aggiungere alla soluzione.
 
- Se l'argomento `filename` include spazi, deve essere racchiuso tra virgolette.
+Se l'argomento `filename` include spazi, deve essere racchiuso tra virgolette.
 
- Se non viene specificato un nome file, il comando aprirà la finestra di dialogo in cui l'utente potrà selezionare un progetto.
+Se non viene specificato un nome file, il comando aprirà la finestra di dialogo in cui l'utente potrà selezionare un progetto.
 
 ## <a name="remarks"></a>Osservazioni
- Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
+Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene aggiunto il progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] TestProject1 alla soluzione corrente.
+In questo esempio viene aggiunto il progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] TestProject1 alla soluzione corrente.
 
 ```cmd
 >File.AddExistingProject "c:\visual studio projects\TestProject1.vbproj"

@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7cb81f191b2fd14b21a2724feab496ad05c1eef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990660"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918050"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Specificare i tipi di rete virtuale in uno scenario di test di carico
 
@@ -86,16 +86,16 @@ L'emulazione di rete reale può essere utilizzata dai tester e dagli sviluppator
 
 ## <a name="about-the-mix-control"></a>Informazioni sul controllo combinazione
 
- Con il controllo combinazione è possibile regolare la percentuale di carico distribuita tra test, tipi di browser o tipi di rete in uno scenario di test di carico. Per regolare i valori percentuali, spostare i dispositivi di scorrimento. Con la regolazione della combinazione di tipi di rete viene specificata la probabilità che un utente virtuale esegua un profilo di rete specifico in uno scenario di test di carico.
+Con il controllo combinazione è possibile regolare la percentuale di carico distribuita tra test, tipi di browser o tipi di rete in uno scenario di test di carico. Per regolare i valori percentuali, spostare i dispositivi di scorrimento. Con la regolazione della combinazione di tipi di rete viene specificata la probabilità che un utente virtuale esegua un profilo di rete specifico in uno scenario di test di carico.
 
- Quando si sposta un dispositivo di scorrimento, i valori in percentuale di tutti gli elementi disponibili variano. Se gli elementi sono più di due, la quantità aggiunta o rimossa viene distribuita in modo uniforme tra gli altri elementi. È possibile eseguire l'override di questo comportamento. Se si seleziona la casella di controllo nella colonna del blocco per un particolare elemento, il valore percentuale specificato per tale elemento verrà bloccato. Quindi, quando si sposta un dispositivo di scorrimento, il quantità aggiunta o rimossa viene applicata solo agli eventuali elementi non bloccati rimanenti.
+Quando si sposta un dispositivo di scorrimento, i valori in percentuale di tutti gli elementi disponibili variano. Se gli elementi sono più di due, la quantità aggiunta o rimossa viene distribuita in modo uniforme tra gli altri elementi. È possibile eseguire l'override di questo comportamento. Se si seleziona la casella di controllo nella colonna del blocco per un particolare elemento, il valore percentuale specificato per tale elemento verrà bloccato. Quindi, quando si sposta un dispositivo di scorrimento, il quantità aggiunta o rimossa viene applicata solo agli eventuali elementi non bloccati rimanenti.
 
- Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori percentuali tra tutti gli elementi. In presenza di tre elementi, ad esempio, se si sceglie **Distribuisci** le percentuali verranno impostate su 34, 33 e 33.
+Il pulsante **Distribuisci** viene usato per allocare uniformemente i valori percentuali tra tutti gli elementi. In presenza di tre elementi, ad esempio, se si sceglie **Distribuisci** le percentuali verranno impostate su 34, 33 e 33.
 
 > [!WARNING]
 > Il pulsante **Distribuisci** esegue l'override degli eventuali elementi bloccati.
 
- È anche possibile digitare direttamente i valori percentuali nella colonna **%** anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
+È anche possibile digitare direttamente i valori percentuali nella colonna **%** anziché usare i dispositivi di scorrimento. Se si immette direttamente un valore in percentuale, gli altri elementi non verranno regolati automaticamente.
 
 > [!NOTE]
 > I dispositivi di scorrimento sono disabilitati se il totale non è pari al 100% o se i valori immessi nella colonna **%** sono decimali.

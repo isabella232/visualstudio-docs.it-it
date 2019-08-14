@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046852"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919469"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -46,7 +46,7 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 ## <a name="navigate-within-your-code"></a>Spostamento all'interno del codice
 
- È possibile utilizzare varie tecniche per trovare e spostarsi in punti specifici del codice più rapidamente.
+È possibile utilizzare varie tecniche per trovare e spostarsi in punti specifici del codice più rapidamente.
 
 - **Inserimento di un segnalibro per le righe di codice**. È possibile utilizzare i segnalibri per passare rapidamente alle righe di codice specifiche in un file.
 

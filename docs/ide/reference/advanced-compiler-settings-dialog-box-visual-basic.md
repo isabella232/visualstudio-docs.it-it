@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461472"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919354"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)
 
@@ -38,7 +38,7 @@ Per specificare le proprietà di configurazione avanzate della build del progett
 
 ## <a name="optimizations"></a>Ottimizzazioni
 
- Le opzioni seguenti specificano le ottimizzazioni che in alcuni casi consentono di ridurre le dimensioni di un file di programma, velocizzare l'esecuzione di un programma o accelerare il processo di compilazione.
+Le opzioni seguenti specificano le ottimizzazioni che in alcuni casi consentono di ridurre le dimensioni di un file di programma, velocizzare l'esecuzione di un programma o accelerare il processo di compilazione.
 
 **Rimuovi controllo dell'overflow di Integer**
 
@@ -52,11 +52,11 @@ Per impostazione predefinita, questa casella di controllo è deselezionata per d
 
  **Indirizzo di base DLL**
 
- In questa casella di testo viene visualizzato l'indirizzo di base DLL predefinito in formato esadecimale. Nei progetti Libreria di classi e Libreria di controlli è possibile usare questa casella di testo per specificare l'indirizzo di base da usare quando viene creata la DLL.
+In questa casella di testo viene visualizzato l'indirizzo di base DLL predefinito in formato esadecimale. Nei progetti Libreria di classi e Libreria di controlli è possibile usare questa casella di testo per specificare l'indirizzo di base da usare quando viene creata la DLL.
 
  **Genera informazioni di debug**
 
- Selezionare **Nessuna**, **Completa** o **pdb-only** (solo PDB) dall'elenco. **Nessuna** specifica che non saranno generate informazioni di debug. **Completa** specifica che verranno generate informazioni di debug complete e **pdb-only** (solo PDB) specifica che dovrebbero essere generate solo informazioni di debug PDB. Il valore predefinito per questa opzione è **Completo**.
+Selezionare **Nessuna**, **Completa** o **pdb-only** (solo PDB) dall'elenco. **Nessuna** specifica che non saranno generate informazioni di debug. **Completa** specifica che verranno generate informazioni di debug complete e **pdb-only** (solo PDB) specifica che dovrebbero essere generate solo informazioni di debug PDB. Il valore predefinito per questa opzione è **Completo**.
 
 ## <a name="compilation-constants"></a>Costanti di compilazione
 
@@ -64,15 +64,15 @@ Le costanti di compilazione condizionale producono un effetto simile all'uso di 
 
  **Definisci costante DEBUG**
 
- Per impostazione predefinita, questa casella di controllo è selezionata e specifica che deve essere impostata una costante DEBUG.
+Per impostazione predefinita, questa casella di controllo è selezionata e specifica che deve essere impostata una costante DEBUG.
 
  **Definisci costante TRACE**
 
- Per impostazione predefinita, questa casella di controllo è selezionata e specifica che deve essere impostata una costante TRACE.
+Per impostazione predefinita, questa casella di controllo è selezionata e specifica che deve essere impostata una costante TRACE.
 
  **Costanti personalizzate**
 
- Immettere le costanti personalizzate per l'applicazione in questa casella di testo. Le voci devono essere delimitate da virgole usando questa forma: **Nome1="Valore1",Nome2="Valore2",Nome3="Valore3"** .
+Immettere le costanti personalizzate per l'applicazione in questa casella di testo. Le voci devono essere delimitate da virgole usando questa forma: **Nome1="Valore1",Nome2="Valore2",Nome3="Valore3"** .
 
 ## <a name="other-settings"></a>Altre impostazioni
 

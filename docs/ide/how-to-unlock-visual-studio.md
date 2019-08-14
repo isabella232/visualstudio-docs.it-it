@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549201"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926297"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedura: Sbloccare Visual Studio
 
@@ -50,11 +50,11 @@ Per sbloccare Visual Studio usando una sottoscrizione di Visual Studio o un'orga
 
 ### <a name="update-stale-licenses"></a>Aggiornare le licenze non aggiornate
 
- È possibile che sia stato visualizzato il messaggio seguente, che indica che la licenza sta per diventare obsoleta in Visual Studio. Il messaggio è "La licenza è diventata obsoleta e deve essere aggiornata."
+È possibile che sia stato visualizzato il messaggio seguente, che indica che la licenza sta per diventare obsoleta in Visual Studio. Il messaggio è "La licenza è diventata obsoleta e deve essere aggiornata."
 
- ![Messaggio di licenza non aggiornata di Visual Studio](../ide/media/vs2017_stale-license.png)
+![Messaggio di licenza non aggiornata di Visual Studio](../ide/media/vs2017_stale-license.png)
 
- Questo messaggio indica che, anche se è possibile che l'abbonamento sia ancora valido, il token della licenza usato da Visual Studio per mantenere aggiornata la sottoscrizione non è stato aggiornato ed è diventato obsoleto per uno dei motivi seguenti:
+Questo messaggio indica che, anche se è possibile che l'abbonamento sia ancora valido, il token della licenza usato da Visual Studio per mantenere aggiornata la sottoscrizione non è stato aggiornato ed è diventato obsoleto per uno dei motivi seguenti:
 
 - Visual Studio non è stato usato o non è stata disponibile alcuna connessione a Internet per un lungo periodo di tempo.
 - È stata effettuata la disconnessione da Visual Studio.
@@ -68,7 +68,7 @@ Se non si immettono di nuovo le credenziali, il token inizia a diventare obsolet
 
 ### <a name="update-expired-licenses"></a>Aggiornare le licenze scadute
 
- Se l'abbonamento è completamente scaduto e non si hanno più i diritti di accesso a Visual Studio, è necessario rinnovare l'abbonamento o aggiungere un altro account con abbonamento. Per visualizzare altre informazioni sulla licenza in uso, passare a **File** > **Impostazioni account** e quindi verificare le informazioni sulla licenza nella parte destra della finestra di dialogo. Se si ha un altro abbonamento associato a un account diverso, aggiungere l'account all'elenco **Tutti gli account** sul lato sinistro della finestra di dialogo selezionando il collegamento **Aggiungi un account**.
+Se l'abbonamento è completamente scaduto e non si hanno più i diritti di accesso a Visual Studio, è necessario rinnovare l'abbonamento o aggiungere un altro account con abbonamento. Per visualizzare altre informazioni sulla licenza in uso, passare a **File** > **Impostazioni account** e quindi verificare le informazioni sulla licenza nella parte destra della finestra di dialogo. Se si ha un altro abbonamento associato a un account diverso, aggiungere l'account all'elenco **Tutti gli account** sul lato sinistro della finestra di dialogo selezionando il collegamento **Aggiungi un account**.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950648"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926018"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 
@@ -31,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `URL`
+`URL`
 
- Obbligatorio. URL (Uniform Resource Locator) per il sito Web.
+Obbligatorio. URL (Uniform Resource Locator) per il sito Web.
 
 ## <a name="switches"></a>Opzioni
- /new
+/new
 
- Facoltativo. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
+facoltativo. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
 
- /ext
+/ext
 
- Facoltativo. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
+facoltativo. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
 
 ## <a name="remarks"></a>Osservazioni
- L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.
+L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra la home page di Microsoft Docs in un Web browser all'esterno dell'IDE. Se è già aperta un'istanza del Web browser, viene usata; in caso contrario, viene avviata una nuova istanza.
+L'esempio seguente illustra la home page di Microsoft Docs in un Web browser all'esterno dell'IDE. Se è già aperta un'istanza del Web browser, viene usata; in caso contrario, viene avviata una nuova istanza.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext

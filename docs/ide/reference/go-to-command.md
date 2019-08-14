@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789831"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919223"
 ---
 # <a name="go-to-command"></a>Comando Vai a
 Sposta il cursore sulla riga specificata.
@@ -30,16 +30,15 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `linenumber`
-
- Facoltativo. Valore integer che rappresenta il numero della riga a cui passare.
+`linenumber`\
+facoltativo. Valore integer che rappresenta il numero della riga a cui passare.
 
 ## <a name="remarks"></a>Osservazioni
- La numerazione delle righe inizia da uno. Se il valore di `linenumber` è minore di uno, viene visualizzata la prima riga. Se il valore di `linenumber` è maggiore del numero dell'ultima riga, viene visualizzata l'ultima riga.
+La numerazione delle righe inizia da uno. Se il valore di `linenumber` è minore di uno, viene visualizzata la prima riga. Se il valore di `linenumber` è maggiore del numero dell'ultima riga, viene visualizzata l'ultima riga.
 
- Se non viene specificato alcun un valore per `linenumber`, viene visualizzata la finestra di dialogo **Vai alla riga**.
+Se non viene specificato alcun un valore per `linenumber`, viene visualizzata la finestra di dialogo **Vai alla riga**.
 
- L'alias per questo comando è GoToLn.
+L'alias per questo comando è GoToLn.
 
 ## <a name="example"></a>Esempio
 

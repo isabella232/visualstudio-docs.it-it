@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002515"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918401"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
@@ -85,16 +85,16 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 ## <a name="qa"></a>Domande e risposte
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>D: È possibile eseguire più test contemporaneamente?
- **R:** Sì, usare il menu di scelta rapida in **Esplora soluzioni**.
+**R:** Sì, usare il menu di scelta rapida in **Esplora soluzioni**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>D: È necessario aggiungere un'origine dati prima o dopo avere generato un test codificato?
- **R:** È più semplice aggiungere un'[origine dati](../test/add-a-data-source-to-a-web-performance-test.md) prima di generare il test codificato, perché il codice verrà generato automaticamente.
+**R:** È più semplice aggiungere un'[origine dati](../test/add-a-data-source-to-a-web-performance-test.md) prima di generare il test codificato, perché il codice verrà generato automaticamente.
 
- Quando si esegue un test codificato con un 'origine dati, può venire visualizzato il messaggio di errore seguente:
+Quando si esegue un test codificato con un 'origine dati, può venire visualizzato il messaggio di errore seguente:
 
- **Impossibile eseguire il test \<Nome test> sull'agente \<Nome computer>: Riferimento oggetto non impostato a un'istanza di un oggetto.**
+**Impossibile eseguire il test \<Nome test> sull'agente \<Nome computer>: Riferimento oggetto non impostato a un'istanza di un oggetto.**
 
- Questo errore può verificarsi perché per la classe di test è definito un oggetto DataSourceAttribute senza un oggetto DataBindingAttribute corrispondente. Per risolvere questo errore, aggiungere un oggetto DataBindingAttribute appropriato, eliminarlo oppure impostarlo come commento nel codice.
+Questo errore può verificarsi perché per la classe di test è definito un oggetto DataSourceAttribute senza un oggetto DataBindingAttribute corrispondente. Per risolvere questo errore, aggiungere un oggetto DataBindingAttribute appropriato, eliminarlo oppure impostarlo come commento nel codice.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>D: È necessario aggiungere regole di convalida e di estrazione prima o dopo avere generato un test codificato?
- **R:** È più semplice aggiungere regole di convalida e regole di estrazione prima di generare il test codificato. È tuttavia consigliabile usare [test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md) ai fini della convalida.
+**R:** È più semplice aggiungere regole di convalida e regole di estrazione prima di generare il test codificato. È tuttavia consigliabile usare [test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md) ai fini della convalida.

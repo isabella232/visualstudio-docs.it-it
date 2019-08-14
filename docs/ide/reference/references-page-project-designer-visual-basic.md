@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746387"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926139"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 
@@ -46,41 +46,41 @@ Fare clic su questo pulsante per accedere alla finestra di dialogo **Percorsi ri
 
  **Riferimenti**
 
- Questo elenco visualizza tutti i riferimenti del progetto, utilizzati o inutilizzati.
+Questo elenco visualizza tutti i riferimenti del progetto, utilizzati o inutilizzati.
 
  **Aggiungi**
 
- Fare clic su questo pulsante per aggiungere un riferimento o un riferimento Web all'elenco **Riferimenti**.
+Fare clic su questo pulsante per aggiungere un riferimento o un riferimento Web all'elenco **Riferimenti**.
 
- Scegliere **Riferimento** per aggiungere un riferimento al progetto tramite la finestra di dialogo Aggiungi riferimento.
+Scegliere **Riferimento** per aggiungere un riferimento al progetto tramite la finestra di dialogo Aggiungi riferimento.
 
- Scegliere **Riferimento Web** per aggiungere un riferimento Web al progetto tramite la finestra di dialogo **Aggiungi riferimento Web**.
+Scegliere **Riferimento Web** per aggiungere un riferimento Web al progetto tramite la finestra di dialogo **Aggiungi riferimento Web**.
 
  **Rimuovi**
 
- Selezionare uno o più riferimenti nell'elenco **Riferimenti**, quindi fare clic su questo pulsante per eliminarli.
+Selezionare uno o più riferimenti nell'elenco **Riferimenti**, quindi fare clic su questo pulsante per eliminarli.
 
  **Aggiorna riferimento Web**
 
- Selezionare un riferimento Web nell'elenco **Riferimenti** e fare clic su questo pulsante per aggiornarlo.
+Selezionare un riferimento Web nell'elenco **Riferimenti** e fare clic su questo pulsante per aggiornarlo.
 
  **Spazi dei nomi importati**
 
- È possibile digitare il proprio spazio dei nomi in questa casella e fare clic su **Aggiungi importazione utente** per aggiungerlo all'elenco degli spazi dei nomi.
+È possibile digitare il proprio spazio dei nomi in questa casella e fare clic su **Aggiungi importazione utente** per aggiungerlo all'elenco degli spazi dei nomi.
 
- È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato *alias*=*spazio dei nomi*. Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+È possibile creare alias per gli spazi dei nomi importati dall'utente. A tale scopo, immettere l'alias e lo spazio dei nomi nel formato *alias*=*spazio dei nomi*. Questa operazione è utile se si usano spazi dei nomi lunghi, ad esempio `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Aggiungi importazione utente**
 
- Fare clic su questo pulsante per aggiungere lo spazio specificato nella casella **Spazi dei nomi importati** all'elenco degli spazi dei nomi importati. Il pulsante è attivo solo se lo spazio dei nomi specificato non è presente nell'elenco.
+Fare clic su questo pulsante per aggiungere lo spazio specificato nella casella **Spazi dei nomi importati** all'elenco degli spazi dei nomi importati. Il pulsante è attivo solo se lo spazio dei nomi specificato non è presente nell'elenco.
 
  **Elenco Spazi dei nomi**
 
- Questo elenco visualizza tutti gli spazi dei nomi disponibili. Le caselle di controllo per gli spazi dei nomi inclusi nel progetto sono selezionate.
+Questo elenco visualizza tutti gli spazi dei nomi disponibili. Le caselle di controllo per gli spazi dei nomi inclusi nel progetto sono selezionate.
 
  **Aggiorna importazione utente**
 
- Selezionare uno spazio dei nomi specificato dall'utente nell'elenco degli spazi dei nomi, digitare il nome come cui si vuole sostituirlo nella casella **Spazi dei nomi importati** e quindi fare clic su questo pulsante per impostare il nuovo spazio dei nomi. Il pulsante è attivo solo se lo spazio dei nomi selezionato è tra quelli aggiunti all'elenco mediante il pulsante **Aggiungi importazione utente**. È possibile aggiungere:
+Selezionare uno spazio dei nomi specificato dall'utente nell'elenco degli spazi dei nomi, digitare il nome come cui si vuole sostituirlo nella casella **Spazi dei nomi importati** e quindi fare clic su questo pulsante per impostare il nuovo spazio dei nomi. Il pulsante è attivo solo se lo spazio dei nomi selezionato è tra quelli aggiunti all'elenco mediante il pulsante **Aggiungi importazione utente**. È possibile aggiungere:
 
 - Classi o spazi dei nomi, ad esempio <xref:System.Math?displayProperty=fullName>.
 

@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788894"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926620"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gestire i risultati dei test di carico nel repository dei risultati del test di carico
 
@@ -33,13 +33,13 @@ Visual Studio Enterprise fornisce insiemi di contatori denominati che raccolgono
 
 ## <a name="sql-server-versions"></a>Versioni di SQL Server
 
- Per usare i test di carico, è possibile utilizzare SQL Server Express LocalDB, che viene installato con Visual Studio. È il server di database predefinito per i test di carico (inclusa l'integrazione di Microsoft Excel). SQL Server Express LocalDB è una modalità di esecuzione di SQL Server Express destinata agli sviluppatori di programmi. L'installazione di SQL Server Express LocalDB comporta la copia di un set minimo di file necessari ad avviare il motore di database di SQL Server.
+Per usare i test di carico, è possibile utilizzare SQL Server Express LocalDB, che viene installato con Visual Studio. È il server di database predefinito per i test di carico (inclusa l'integrazione di Microsoft Excel). SQL Server Express LocalDB è una modalità di esecuzione di SQL Server Express destinata agli sviluppatori di programmi. L'installazione di SQL Server Express LocalDB comporta la copia di un set minimo di file necessari ad avviare il motore di database di SQL Server.
 
- Se il team prevede un uso intensivo del database o i progetti diventano troppo grandi per SQL Server Express LocalDB, considerare la possibilità di eseguire l'aggiornamento a SQL Express o alla versione completa di SQL Server per aumentare il potenziale di scalabilità. Se si esegue l'aggiornamento di SQL Server, i file LDF e MDF di SQL Server Express LocalDB vengono archiviati nella cartella del profilo utente. Questi file possono essere utilizzati per importare il database del test di carico in SQL Server Express o SQL Server.
+Se il team prevede un uso intensivo del database o i progetti diventano troppo grandi per SQL Server Express LocalDB, considerare la possibilità di eseguire l'aggiornamento a SQL Express o alla versione completa di SQL Server per aumentare il potenziale di scalabilità. Se si esegue l'aggiornamento di SQL Server, i file LDF e MDF di SQL Server Express LocalDB vengono archiviati nella cartella del profilo utente. Questi file possono essere utilizzati per importare il database del test di carico in SQL Server Express o SQL Server.
 
 ## <a name="load-test-results-store-considerations"></a>Considerazioni sull'archivio dei risultati del test di carico
 
- Quando è installato Visual Studio Enterprise, l'archivio dei risultati dei test di carico viene configurato per l'uso di un'istanza di SQL Express installata nel computer. SQL Express è limitato all'utilizzo di un massimo di 4 GB di spazio su disco. Se si prevede di eseguire molti test di carico in un lungo periodo di tempo, è consigliabile considerare la possibilità di configurare l'archivio dei risultati del test di carico in modo che venga utilizzata un'istanza del prodotto SQL Server completo, se disponibile.
+Quando è installato Visual Studio Enterprise, l'archivio dei risultati dei test di carico viene configurato per l'uso di un'istanza di SQL Express installata nel computer. SQL Express è limitato all'utilizzo di un massimo di 4 GB di spazio su disco. Se si prevede di eseguire molti test di carico in un lungo periodo di tempo, è consigliabile considerare la possibilità di configurare l'archivio dei risultati del test di carico in modo che venga utilizzata un'istanza del prodotto SQL Server completo, se disponibile.
 
 ## <a name="load-test-analyzer-tasks"></a>Attività dell'Analizzatore test di carico
 
@@ -52,9 +52,9 @@ Visual Studio Enterprise fornisce insiemi di contatori denominati che raccolgono
 
 ## <a name="related-tasks"></a>Attività correlate
 
- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- È possibile visualizzare i risultati di un test di carico in esecuzione e di un test di carico completato tramite l'**analizzatore test di carico**.
+È possibile visualizzare i risultati di un test di carico in esecuzione e di un test di carico completato tramite l'**analizzatore test di carico**.
 
 ## <a name="see-also"></a>Vedere anche
 

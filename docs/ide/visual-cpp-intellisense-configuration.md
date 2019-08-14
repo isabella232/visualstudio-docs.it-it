@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461593"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925851"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
 
@@ -38,7 +38,7 @@ Se le compilazioni vengono eseguite all'esterno dell'IDE di Visual Studio e ries
 
 ![Directory di inclusione di VC++](media/vcpp-intellisense-include-paths.png)
 
- Per visualizzare i valori correnti per compilare macro come **VC_IncludePath**, selezionare la riga Directory di inclusione e fare clic sull'elenco a discesa a destra. Scegliere quindi **\<Modifica>** e fare clic sul pulsante **Macro**.
+Per visualizzare i valori correnti per compilare macro come **VC_IncludePath**, selezionare la riga Directory di inclusione e fare clic sull'elenco a discesa a destra. Scegliere quindi **\<Modifica>** e fare clic sul pulsante **Macro**.
 
 ### <a name="makefile-projects"></a>progetti Makefile
 
@@ -79,18 +79,18 @@ Per verificare se il compilatore di IntelliSense usa opzioni del compilatore cor
 La finestra di output mostrerà ora le righe di comando passate al compilatore di IntelliSense. Ecco un esempio di output:
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 Queste informazioni possono aiutare a identificare perché IntelliSense fornisce informazioni non accurate. Ad esempio, se la directory di inclusione del progetto contiene **$(MyVariable)\Include**e il log di diagnostica mostra **/I\Include** come percorso di inclusione, significa che **$(MyVariable)** non è stato valutato ed è stato rimosso dal percorso di inclusione finale.
@@ -110,10 +110,10 @@ Una compilazione di IntelliSense non genera i file binari, ma può comunque non 
 Il messaggio di errore può indicare di abilitare la traccia in fase di progettazione:
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 Se si imposta la variabile di ambiente TRACEDESIGNTIME su true e si riavvia Visual Studio, verrà visualizzato un file di log nella directory %TEMP%, che può aiutare a diagnosticare l'errore di compilazione.

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662053"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923756"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing con Visual Studio
 
@@ -151,7 +151,7 @@ Esistono alcune differenze tra l'esecuzione automatica di Live Unit Testing e l'
 
 Se la soluzione include 10 o più progetti, quando si avvia Live Unit Testing e non sono presenti dati permanenti oppure quando si seleziona l'opzione **Test** > **Live Unit Testing** > **Reset Clean** (Reimposta e pulisci) dal menu di primo livello di Visual Studio, Visual Studio visualizza la finestra di dialogo seguente per informare l'utente che l'esecuzione dinamica di un numero elevato di test in progetti di grandi dimensioni può influire negativamente sulle prestazioni. Se si seleziona **OK**, Live Unit Testing esegue tutti i test della soluzione. Se si seleziona **Annulla**, è possibile selezionare i test da eseguire. Per informazioni su come eseguire questa operazione vedere la sezione seguente, [Includere ed escludere progetti e metodi di test](#include-and-exclude-test-projects-and-test-methods).
 
- ![Finestra di dialogo di Live Unit Testing per progetti di grandi dimensioni](media/lut-large-project.png)
+![Finestra di dialogo di Live Unit Testing per progetti di grandi dimensioni](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>Includere ed escludere progetti e metodi di test
 

@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745823"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926519"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: Creare un editor del corpo HTTP personalizzato per l'editor test prestazioni Web
 
@@ -117,9 +117,9 @@ Viene creata un'istanza dell'oggetto MessageEditorControl <xref:System.Windows.F
 private MessageEditorControl messageEditorControl
 ```
 
- L'istanza dell'oggetto messageEditorControl è ospitata all'interno della finestra di dialogo del plug-in creata dal metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Inoltre, l'oggetto <xref:System.Windows.Forms.RichTextBox> di messageEditorControl viene popolato con il contenuto in <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Tuttavia, la creazione del plug-in non può aver luogo a meno che <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> non restituisca `true`. Nel caso di questo editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> restituisce `true` se <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> in <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiene "xml".
+L'istanza dell'oggetto messageEditorControl è ospitata all'interno della finestra di dialogo del plug-in creata dal metodo <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Inoltre, l'oggetto <xref:System.Windows.Forms.RichTextBox> di messageEditorControl viene popolato con il contenuto in <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. Tuttavia, la creazione del plug-in non può aver luogo a meno che <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> non restituisca `true`. Nel caso di questo editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> restituisce `true` se <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> in <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiene "xml".
 
- Quando viene completata la modifica del corpo della stringa e l'utente fa clic su **OK** nella finestra di dialogo del plug-in, viene chiamato <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> per ottenere il testo modificato come stringa e aggiornare il **Corpo stringa** nella richiesta nell'Editor test prestazioni Web.
+Quando viene completata la modifica del corpo della stringa e l'utente fa clic su **OK** nella finestra di dialogo del plug-in, viene chiamato <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> per ottenere il testo modificato come stringa e aggiornare il **Corpo stringa** nella richiesta nell'Editor test prestazioni Web.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Creare una classe e implementare l'interfaccia IStringHttpBodyEditorPlugin
 

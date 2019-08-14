@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c80c768e153ae9469fe43785480bbe6bb1edeaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777463"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926316"
 ---
 # <a name="blocking-time-profile-report"></a>Rapporto profili del tempo di blocco
 I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli stack di chiamate specifici di ogni categoria di blocco, ad esempio "I/O" o "Sincronizzazione". Il rapporto Precedenza elenca i processi che precedevano il processo corrente con il numero di istanze di precedenza. Per compilare il rapporto profili di blocco, lo strumento raccoglie chiamate API di blocco e le accumula in un albero degli stack di chiamate. I dati visualizzati in questi rapporti variano in base all'intervallo di tempo corrente, ai thread nascosti e ai seguenti due filtri che possono essere applicati:
@@ -31,7 +31,7 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
 ## <a name="blocking-time-report-columns"></a>Colonne del rapporto del tempo di blocco
  Nella tabella seguente sono riportate le colonne per ogni rapporto del tempo di blocco.
 
-|Nome colonna|Description|
+|Nome colonna|DESCRIZIONE|
 |-----------------|-----------------|
 |**Name**|Nome della funzione per ogni livello dello stack di chiamate.|
 |**Istanze**|Numero di istanze della chiamata di blocco per il periodo di tempo visibile.|
@@ -41,7 +41,7 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
 |**Dettagli**|Nome completo della funzione. Include il conteggio delle righe, se disponibile.|
 
 ### <a name="synchronization"></a>Sincronizzazione
- Il rapporto Sincronizzazione specifica le chiamate responsabili dei segmenti di blocco nel tempo di sincronizzazione e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di sincronizzazione](../profiling/synchronization-time.md)
+ Il rapporto Sincronizzazione specifica le chiamate responsabili dei segmenti di blocco nel tempo di sincronizzazione e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Periodo di sincronizzazione](../profiling/synchronization-time.md).
 
 ### <a name="sleep"></a>Sleep
  Il rapporto Sospensione specifica le chiamate responsabili del tempo di blocco attribuito al tempo trascorso in modalità di sospensione e i tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di sospensione](../profiling/sleep-time.md).

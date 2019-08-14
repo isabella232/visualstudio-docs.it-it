@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570094"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919507"
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -31,7 +31,7 @@ Visual Studio offre diversi modi per spostarsi all'interno del codice nell'edito
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Comandi Posizione precedente e Posizione successiva
 
-È possibile usare i pulsanti **Posizione precedente** (**CTRL**+**-**) e **Posizione successiva** (**CTRL**+**MAIUSC**+**-**) della barra degli strumenti per spostare il punto di inserimento nelle posizioni precedenti o tornare a una posizione più recente da una posizione precedente. Questi pulsanti conservano le ultime 20 posizioni del punto di inserimento. Questi comandi sono disponibili anche nel menu **Visualizza**, in **Posizione precedente** e **Posizione successiva**.
+È possibile usare i pulsanti **Posizione precedente** (**CTRL**+ **-** ) e **Posizione successiva** (**CTRL**+**MAIUSC**+ **-** ) della barra degli strumenti per spostare il punto di inserimento nelle posizioni precedenti o tornare a una posizione più recente da una posizione precedente. Questi pulsanti conservano le ultime 20 posizioni del punto di inserimento. Questi comandi sono disponibili anche nel menu **Visualizza**, in **Posizione precedente** e **Posizione successiva**.
 
 ![Pulsanti di spostamento per spostarsi avanti e indietro](../ide/media/vs2017_nav_buttons.png)
 
@@ -39,7 +39,7 @@ Visual Studio offre diversi modi per spostarsi all'interno del codice nell'edito
 
 Per spostarsi all'interno di una codebase, è anche possibile usare la **barra di spostamento**, ovvero le caselle a discesa nella parte superiore della finestra del codice e scegliere un tipo o un membro per accedervi direttamente. La barra di spostamento viene visualizzata quando si modifica il codice in una codebase Visual Basic, C# o C++. In una classe parziale i membri definiti all'esterno del file di codice corrente potrebbero essere disabilitati (visualizzati in grigio).
 
- ![Barra di spostamento per il codice](../ide/media/vside_navigation_bar.png)
+![Barra di spostamento per il codice](../ide/media/vside_navigation_bar.png)
 
 È possibile spostarsi tra le caselle a discesa come segue:
 
@@ -78,7 +78,7 @@ Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifi
 
 - **Vai alla riga** (**CTRL**+**G**): consente di passare al numero di riga specificato nel documento attivo.
 
-- **Vai a tutti** (**CTRL**+**T** o **CTRL**+**,**): consente di passare alla riga, al tipo, al file, al membro o al simbolo specificato.
+- **Vai a tutti** (**CTRL**+**T** o **CTRL**+ **,** ): consente di passare alla riga, al tipo, al file, al membro o al simbolo specificato.
 
 - **Vai al file** (**CTRL**+**1**, **CTRL**+**F**): consente di passare al file specificato nella soluzione.
 

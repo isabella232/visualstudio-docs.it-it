@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950432"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926020"
 ---
 # <a name="start-command"></a>Comando Avvia
 Inizia il debug del progetto di avvio.
@@ -30,15 +30,15 @@ Debug.Start [address]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `address`
+`address`
 
- Facoltativo. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
+facoltativo. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
 
 ## <a name="remarks"></a>Osservazioni
- Il comando **Avvia**, quando eseguito, esegue un'operazione RunToCursor sull'indirizzo specificato.
+Il comando **Avvia**, quando eseguito, esegue un'operazione RunToCursor sull'indirizzo specificato.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene avviato il debugger e le eccezioni vengono ignorate.
+In questo esempio viene avviato il debugger e le eccezioni vengono ignorate.
 
 ```cmd
 >Debug.Start

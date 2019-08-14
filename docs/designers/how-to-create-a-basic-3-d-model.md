@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894185"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924501"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Procedura: Creazione di un modello 3D di base
 
@@ -30,13 +30,13 @@ Questo articolo illustra come usare l'editor dei modelli per creare un modello 3
 - Utilizzo del comando **Triangolazione**
 
 ## <a name="create-a-basic-3d-model"></a>Creazione di un modello 3D di base
- È possibile usare l'editor dei modelli per creare e modificare modelli e scene 3D per il gioco o l'applicazione. Nei passaggi seguenti viene illustrato come usare l'editor dei modelli per creare un modello 3D semplificato di una casa. Un modello semplificato può essere utilizzato come alternativa temporanea agli asset grafici finali ancora in fase di creazione, come mesh per il rilevamento dei conflitti o come modello a basso livello di dettaglio da utilizzare quando l'oggetto da esso rappresentato è troppo distante per beneficiare di un rendering più dettagliato.
+È possibile usare l'editor dei modelli per creare e modificare modelli e scene 3D per il gioco o l'applicazione. Nei passaggi seguenti viene illustrato come usare l'editor dei modelli per creare un modello 3D semplificato di una casa. Un modello semplificato può essere utilizzato come alternativa temporanea agli asset grafici finali ancora in fase di creazione, come mesh per il rilevamento dei conflitti o come modello a basso livello di dettaglio da utilizzare quando l'oggetto da esso rappresentato è troppo distante per beneficiare di un rendering più dettagliato.
 
- Al termine, il modello dovrebbe risultare simile al seguente:
+Al termine, il modello dovrebbe risultare simile al seguente:
 
- ![Modello completato della casa semplificata](../designers/media/gfx_model_demo_house_final.png)
+![Modello completato della casa semplificata](../designers/media/gfx_model_demo_house_final.png)
 
- Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
+Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Per creare un modello 3D semplificato di una casa
 

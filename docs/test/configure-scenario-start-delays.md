@@ -8,12 +8,12 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83e3086aa8181156a9d35a906a9d3a7e60575cd2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963793"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918452"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurare ritardi di avvio di uno scenario nei test di carico
 
@@ -32,9 +32,9 @@ Un altro esempio è costituito da uno scenario eseguito solo a una determinata o
 > [!NOTE]
 > Per un elenco completo delle proprietà degli scenari di test di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
- La proprietà **Ritarda ora di inizio** può ad esempio essere utile quando è necessario che uno scenario inizi a produrre elementi usati da un altro scenario. È possibile ritardare il secondo scenario per consentire al primo di popolare i dati.
+La proprietà **Ritarda ora di inizio** può ad esempio essere utile quando è necessario che uno scenario inizi a produrre elementi usati da un altro scenario. È possibile ritardare il secondo scenario per consentire al primo di popolare i dati.
 
- Un altro esempio è costituito da uno scenario eseguito solo a una determinata ora del giorno. È pertanto possibile ritardare l'avvio dello scenario per simulare questa situazione.
+Un altro esempio è costituito da uno scenario eseguito solo a una determinata ora del giorno. È pertanto possibile ritardare l'avvio dello scenario per simulare questa situazione.
 
 > [!NOTE]
 > Per un elenco completo delle proprietà delle impostazioni esecuzione test con le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
@@ -62,7 +62,7 @@ Un altro esempio è costituito da uno scenario eseguito solo a una determinata o
 
 La proprietà **Disabilita durante riscaldamento** viene impostata usando la finestra **Proprietà**. Le proprietà degli scenari dei test di carico vengono modificate tramite l'Editor test di carico.
 
- La proprietà **Disabilita durante riscaldamento** viene usata per indicare se eseguire o meno lo scenario durante il periodo di riscaldamento specificato nella proprietà **Ritarda ora di inizio**. Per altre informazioni, consultare la procedura precedente, [Specificare il ritardo dell'ora di inizio di uno scenario](#specify-the-delay-start-time-of-a-scenario).
+La proprietà **Disabilita durante riscaldamento** viene usata per indicare se eseguire o meno lo scenario durante il periodo di riscaldamento specificato nella proprietà **Ritarda ora di inizio**. Per altre informazioni, consultare la procedura precedente, [Specificare il ritardo dell'ora di inizio di uno scenario](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
 > Per un elenco completo delle proprietà delle impostazioni esecuzione test con le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).

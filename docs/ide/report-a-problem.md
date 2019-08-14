@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309803"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925989"
 ---
 # <a name="overview-report-a-problem"></a>Panoramica: Segnalare un problema
 
@@ -110,7 +110,7 @@ Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovan
 
 È consigliabile usare la ricerca per assicurarsi che il problema che si sta per segnalare non sia già stato segnalato. Nel caso esista un elemento che corrisponde al problema, seguire e votare il ticket del problema.
 
- Inviare tutte le informazioni possibili per aiutare i team a riprodurre la propria esperienza.  Queste informazioni includono la procedura necessaria per riprodurre il problema, frammenti di codice, screenshot, registrazioni per la riproduzione del problema, file di log e altri elementi.  Vedere [come segnalare un problema in Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
+Inviare tutte le informazioni possibili per aiutare i team a riprodurre la propria esperienza.  Queste informazioni includono la procedura necessaria per riprodurre il problema, frammenti di codice, screenshot, registrazioni per la riproduzione del problema, file di log e altri elementi.  Vedere [come segnalare un problema in Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Come viene definita la priorità del feedback?
 

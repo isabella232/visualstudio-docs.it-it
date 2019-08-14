@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990043"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918952"
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -35,31 +35,31 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `path`
+`path`
 
- Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È necessario specificare un percorso completo se il file specificato non si trova in una delle directory incluse nella variabile di ambiente PATH.
+Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È necessario specificare un percorso completo se il file specificato non si trova in una delle directory incluse nella variabile di ambiente PATH.
 
- `args`
+`args`
 
- Facoltativo. Argomenti da passare al programma richiamato.
+facoltativo. Argomenti da passare al programma richiamato.
 
 ## <a name="switches"></a>Opzioni
- /commandwindow [oppure] /command [oppure] /c [oppure] /cmd
+/commandwindow [oppure] /command [oppure] /c [oppure] /cmd
 
- Facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
+facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
 
- /dir:`folder` [oppure] /d: `folder`
+/dir:`folder` [oppure] /d: `folder`
 
- Facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
+facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
 
- /outputwindow [oppure] /output [oppure] /out [oppure] /o
+/outputwindow [oppure] /output [oppure] /out [oppure] /o
 
- Facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
+facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
 
 ## <a name="remarks"></a>Osservazioni
- Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.
+Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.
 
- È possibile usare l'alias predefinito `Shell` invece di `Tools.Shell`.
+È possibile usare l'alias predefinito `Shell` invece di `Tools.Shell`.
 
 > [!CAUTION]
 > Se l'argomento `path` include sia il percorso della directory sia il nome del file, è consigliabile racchiudere l'intero percorso tra virgolette doppie adiacenti ("""), come nell'esempio seguente:
@@ -68,7 +68,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
- Ogni gruppo di tre virgolette doppie (""") viene interpretato dal processore `Shell` come un'unica virgoletta doppia. Nell'esempio precedente, pertanto, al comando `Shell` viene passata la stringa di percorso seguente:
+Ogni gruppo di tre virgolette doppie (""") viene interpretato dal processore `Shell` come un'unica virgoletta doppia. Nell'esempio precedente, pertanto, al comando `Shell` viene passata la stringa di percorso seguente:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
@@ -78,7 +78,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > Se la stringa di percorso non viene racchiusa tra virgolette doppie adiacenti ("""), Windows userà solo la porzione di stringa che precede il primo spazio. Se ad esempio la stringa di percorso usata nell'esempio precedente non fosse racchiusa tra virgolette in modo corretto, Windows cercherebbe un file denominato "Program" nella directory radice C:\. Qualora un file eseguibile C:\Program.exe fosse disponibile, anche se si trattasse di un file installato tramite una manomissione non autorizzata, Windows tenterebbe di eseguire quel programma anziché il programma desiderato "C:\Programmi\NomeFile.exe".
 
 ## <a name="example"></a>Esempio
- Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartella `Text`. L'output di xcopy.exe viene visualizzato nella **finestra di comando** e nella **finestra di output**.
+Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartella `Text`. L'output di xcopy.exe viene visualizzato nella **finestra di comando** e nella **finestra di output**.
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt

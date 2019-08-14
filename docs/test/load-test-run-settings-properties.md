@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662069"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923667"
 ---
 # <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
 
@@ -45,7 +45,7 @@ Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei te
 |**Frequenza di salvataggio del log per i test completati**|Specifica la frequenza con la quale viene scritto il log di test. Il numero indica che nel log di test verrà salvato un test ogni numero di test corrispondente al numero immesso. Immettendo, ad esempio, il valore dieci, nel test di log vengono salvati il decimo, il ventesimo, il trentesimo test e così via. Se il valore viene impostato su 0, non verrà salvato alcun log di test.|
 |**Salva log su test non superati**|Valore booleano che determina se vengono salvati i log di test in caso di esito negativo di un test in un test di carico. Il valore predefinito è `True`.<br /><br /> Per altre informazioni, vedere [Procedura: Specificare se i test non superati vengono salvati in log di test](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- Per altre informazioni, vedere [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md).
+Per altre informazioni, vedere [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md).
 
 ## <a name="results-properties"></a>Proprietà dei risultati
 
@@ -70,7 +70,7 @@ Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei te
 |**Iterazioni test**|Specifica il numero totale di test singoli da eseguire prima che il test di carico sia completato. Questa proprietà si applica solo quando la proprietà "usa iterazioni test" è `True`.|
 |**Utilizza iterazioni test**|Se la proprietà "Utilizza iterazioni test" è `True`, il test di carico viene eseguito finché il numero di test singoli completati nell'ambito del test di carico non raggiunge il valore specificato dalla proprietà "Iterazioni test". In questo caso, le impostazioni basate sul tempo, ossia "Durata riscaldamento", "Durata esecuzione" e "Durata raffreddamento", verranno ignorate. Se "Utilizza iterazioni test" è `False`, verranno applicate tutte le impostazioni basate sul tempo e la proprietà "Iterazioni test" verrà ignorata.|
 
- Per altre informazioni, vedere [Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Per altre informazioni, vedere [Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Proprietà dell'intervallo
 
