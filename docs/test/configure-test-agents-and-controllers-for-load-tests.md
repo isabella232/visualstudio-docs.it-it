@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461625"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918362"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Panoramica di agenti di test e test controller per i test di carico
 
@@ -69,17 +69,17 @@ Il controller di test fornisce un'architettura generale per l'esecuzione di test
 
 L'agente di test viene eseguito come servizio in attesa delle richieste del controller di test per avviare un nuovo test. Quando l'agente di test riceve una richiesta, il relativo servizio avvia un processo su cui eseguire i test. Ogni agente di test esegue lo stesso test di carico.
 
- Agli agenti di test viene assegnato un peso dall'amministratore e il carico viene distribuito in base al peso di un agente di test. Ad esempio, se l'agente di test 1 ha un peso pari a 30 e l'agente di test 2 ha un peso di 70 e il carico è impostato su 1000 utenti, l'agente di test 1 simula 300 utenti virtuali mentre l'agente di test 2 ne simula 700. Vedere [Gestire i test controller e gli agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Agli agenti di test viene assegnato un peso dall'amministratore e il carico viene distribuito in base al peso di un agente di test. Ad esempio, se l'agente di test 1 ha un peso pari a 30 e l'agente di test 2 ha un peso di 70 e il carico è impostato su 1000 utenti, l'agente di test 1 simula 300 utenti virtuali mentre l'agente di test 2 ne simula 700. Vedere [Gestire i test controller e gli agenti di test con Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- L'agente di test accetta come input un set di test e un set di parametri di simulazione. Un concetto essenziale riguarda l'indipendenza dei test dal computer in cui vengono eseguiti.
+L'agente di test accetta come input un set di test e un set di parametri di simulazione. Un concetto essenziale riguarda l'indipendenza dei test dal computer in cui vengono eseguiti.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Punti di connessione tra test controller e agenti di test
 
 La figura seguente mostra i punti di connessione tra il controller di test, l'agente di test e il client. Sono inoltre illustrate le porte che vengono usate per le connessioni in ingresso e in uscita e le restrizioni di sicurezza applicate a tali porte.
 
- ![Porte e sicurezza del controller e dell'agente di test](./media/test-controller-agent-firewall.png)
+![Porte e sicurezza del controller e dell'agente di test](./media/test-controller-agent-firewall.png)
 
- Per altre informazioni, vedere [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Per altre informazioni, vedere [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Informazioni sull'installazione di test controller e agenti di test
 

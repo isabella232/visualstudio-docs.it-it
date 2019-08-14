@@ -26,27 +26,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461836"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926231"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
 
 È possibile usare le proprietà file per indicare le operazioni che il sistema di progetto dovrà eseguire sui file. Ad esempio, è possibile impostare le proprietà file per indicare se un file deve essere aggiunto al pacchetto come file di risorse.
 
- È possibile selezionare qualunque file in Esplora soluzioni ed esaminare, quindi, le relative proprietà nella finestra Proprietà. I file JavaScript hanno quattro proprietà: **Copia nella directory di output**, **Azione pacchetto**, **Nome file** e **Percorso file**.
+È possibile selezionare qualunque file in Esplora soluzioni ed esaminare, quindi, le relative proprietà nella finestra Proprietà. I file JavaScript hanno quattro proprietà: **Copia nella directory di output**, **Azione pacchetto**, **Nome file** e **Percorso file**.
 
 ## <a name="file-properties"></a>Proprietà file
- In questa sezione vengono descritte le proprietà comuni ai file JavaScript.
+In questa sezione vengono descritte le proprietà comuni ai file JavaScript.
 
 ### <a name="copy-to-output-directory-property"></a>Proprietà Copia nella directory di output
- Questa proprietà specifica le condizioni in cui il file di origine selezionato verrà copiato nella directory di output. Selezionare **Non copiare** se il file non deve mai essere copiato nella directory di output. Selezionare **Copia sempre** se il file deve essere copiato sempre nella directory di output. Selezionare **Copia se più recente** se il file deve essere copiato solo quando è più recente di un file esistente con lo stesso nome nella directory di output.
+Questa proprietà specifica le condizioni in cui il file di origine selezionato verrà copiato nella directory di output. Selezionare **Non copiare** se il file non deve mai essere copiato nella directory di output. Selezionare **Copia sempre** se il file deve essere copiato sempre nella directory di output. Selezionare **Copia se più recente** se il file deve essere copiato solo quando è più recente di un file esistente con lo stesso nome nella directory di output.
 
 ### <a name="package-action"></a>Azione pacchetto
- La proprietà **Azione pacchetto** indica ciò che realizza Visual Studio con un file quando viene eseguita una compilazione. **Azione pacchetto** può avere diversi valori:
+La proprietà **Azione pacchetto** indica ciò che realizza Visual Studio con un file quando viene eseguita una compilazione. **Azione pacchetto** può avere diversi valori:
 
 - **Nessuno** - Il file non è incluso nel manifesto del pacchetto. Un esempio è un file di testo che contiene la documentazione, ad esempio un file Leggimi.
 
@@ -59,40 +59,40 @@ ms.locfileid: "68461836"
 Il valore predefinito per **Azione pacchetto** dipende dall'estensione del file aggiunta alla soluzione.
 
 ### <a name="file-name-property"></a>Proprietà nome file
- Visualizza il nome del file come un valore di sola lettura. Per rinominarlo, fare clic con il pulsante destro del mouse sul file in Esplora soluzioni e scegliere **Rinomina**.
+Visualizza il nome del file come un valore di sola lettura. Per rinominarlo, fare clic con il pulsante destro del mouse sul file in Esplora soluzioni e scegliere **Rinomina**.
 
 ### <a name="full-path-property"></a>Proprietà Percorso completo
- Visualizza il percorso completo del file come valore di sola lettura. Per modificare il percorso del file, è possibile trascinare il file in Esplora soluzioni.
+Visualizza il percorso completo del file come valore di sola lettura. Per modificare il percorso del file, è possibile trascinare il file in Esplora soluzioni.
 
 ## <a name="reference-file-properties"></a>Proprietà File di riferimento
- In questa sezione vengono descritte le proprietà comuni ai file cui fa riferimento un'app UWP sviluppata con JavaScript. Quando si seleziona un riferimento come un file con estensione .winmd, un riferimento SDK, un riferimento da progetto a progetto o un riferimento ad assembly in Esplora soluzioni, le altre proprietà possono essere visualizzate nella finestra Proprietà, in base al tipo di file.
+In questa sezione vengono descritte le proprietà comuni ai file cui fa riferimento un'app UWP sviluppata con JavaScript. Quando si seleziona un riferimento come un file con estensione .winmd, un riferimento SDK, un riferimento da progetto a progetto o un riferimento ad assembly in Esplora soluzioni, le altre proprietà possono essere visualizzate nella finestra Proprietà, in base al tipo di file.
 
 ### <a name="culture"></a>Impostazioni cultura
- Visualizza la lingua associata al riferimento.
+Visualizza la lingua associata al riferimento.
 
 ### <a name="file-type"></a>Tipo di file
- Visualizza il tipo di file del riferimento.
+Visualizza il tipo di file del riferimento.
 
 ### <a name="file-version"></a>Versione file
- Visualizza la versione file del riferimento.
+Visualizza la versione file del riferimento.
 
 ### <a name="identity"></a>identità
- Visualizza l'identità del riferimento utilizzato nel progetto, archiviato nel file di progetto.
+Visualizza l'identità del riferimento utilizzato nel progetto, archiviato nel file di progetto.
 
 ### <a name="package"></a>Pacchetto
- Visualizza il nome del manifesto di pacchetto associato al riferimento.
+Visualizza il nome del manifesto di pacchetto associato al riferimento.
 
 ### <a name="resolved-path"></a>Percorso risolto
- Visualizza il percorso del riferimento utilizzato nel progetto.
+Visualizza il percorso del riferimento utilizzato nel progetto.
 
 ### <a name="sdk-path"></a>Percorso SDK
- Visualizza il percorso al file SDK cui viene fatto riferimento.
+Visualizza il percorso al file SDK cui viene fatto riferimento.
 
 ### <a name="uri"></a>URI
- Visualizza l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.
+Visualizza l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.
 
 ### <a name="version"></a>Versione
- Visualizza la versione del riferimento.
+Visualizza la versione del riferimento.
 
 ## <a name="see-also"></a>Vedere anche
 

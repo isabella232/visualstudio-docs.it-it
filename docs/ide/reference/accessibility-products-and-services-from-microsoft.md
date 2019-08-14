@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793084"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926278"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Prodotti e servizi Microsoft per l'accessibilità
 
@@ -46,19 +46,19 @@ Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i
 
 ## <a name="windows"></a> Funzionalità di accessibilità di Windows
 
- Il sistema operativo Windows ha molte funzionalità di accessibilità integrate, che sono utili per gli utenti con difficoltà di digitazione o uso del mouse, affetti da cecità o ipovisione o affetti da sordità o problemi di udito. Le funzionalità vengono installate durante l'installazione. Per altre informazioni su queste funzionalità, vedere la Guida in Windows e il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+Il sistema operativo Windows ha molte funzionalità di accessibilità integrate, che sono utili per gli utenti con difficoltà di digitazione o uso del mouse, affetti da cecità o ipovisione o affetti da sordità o problemi di udito. Le funzionalità vengono installate durante l'installazione. Per altre informazioni su queste funzionalità, vedere la Guida in Windows e il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="free-step-by-step-tutorials"></a>Esercitazioni dettagliate gratuite
 
- Microsoft offre una serie di esercitazioni che illustrano procedure dettagliate per la configurazione delle opzioni e delle impostazioni di accessibilità del computer. Queste informazioni vengono visualizzate in un formato affiancato in modo che sia possibile imparare a usare il mouse, la tastiera o una combinazione dei due.
+Microsoft offre una serie di esercitazioni che illustrano procedure dettagliate per la configurazione delle opzioni e delle impostazioni di accessibilità del computer. Queste informazioni vengono visualizzate in un formato affiancato in modo che sia possibile imparare a usare il mouse, la tastiera o una combinazione dei due.
 
- Per esercitazioni dettagliate sui prodotti Microsoft, vedere il sito Web di [accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+Per esercitazioni dettagliate sui prodotti Microsoft, vedere il sito Web di [accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Prodotti Assistive Technology per Windows
 
- Sono disponibili diversi prodotti Assistive Technology per facilitare l'uso dei computer da parte degli utenti con disabilità. Per cercare un catalogo di prodotti assistive technology eseguibili in Windows, visitare il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
+Sono disponibili diversi prodotti Assistive Technology per facilitare l'uso dei computer da parte degli utenti con disabilità. Per cercare un catalogo di prodotti assistive technology eseguibili in Windows, visitare il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
- Se si usa la Assistive Technology, assicurarsi di contattare il fornitore prima di aggiornare il software o l'hardware per verificare la presenza di possibili problemi di compatibilità.
+Se si usa la Assistive Technology, assicurarsi di contattare il fornitore prima di aggiornare il software o l'hardware per verificare la presenza di possibili problemi di compatibilità.
 
 ## <a name="altfortmats"></a> Documentazione in formati alternativi
 

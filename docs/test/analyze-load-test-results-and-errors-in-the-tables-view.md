@@ -21,12 +21,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ab2fe1f01aceb7b86d52f26d904a99f762f4329
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823041"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926476"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -50,7 +50,7 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
 
 Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle esecuzioni di test di carico.
 
-|Nome tabella|Description|
+|Nome tabella|DESCRIZIONE|
 |-|-|
 |Errori|Visualizza un elenco di errori generati durante l'esecuzione del test di carico. Per altre informazioni, vedere la [Tabella degli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in questo argomento e [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Pages|Visualizza un elenco di pagine visitate durante l'esecuzione di un test di carico. Alcuni dati di questa tabella sono disponibili solo al termine di un test di carico. Per altre informazioni, vedere [Procedura: Visualizzare il tempo di risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
@@ -64,15 +64,15 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
 ## <a name="collect-percentile-data"></a>Raccogliere i dati percentili
 
- Alcune tabelle di test di carico possono contenere colonne aggiuntive, che includono i dati percentili e i tempi di risposta suddivisi in gruppi in base all'emulazione della rete. Per impostazione predefinita, questi dati non vengono raccolti. I dai percentili sono disponibili solo quando si salvano i risultati in un database e non quando si esegue il salvataggio in locale. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md). Inoltre, per raccogliere questi dati, nell'**editor test di carico**, sotto il nodo **Impostazioni di esecuzione**, selezionare il nodo dell'impostazione di esecuzione specifico da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **StatisticsOnly** o **AllIndividualDetails**. Per altre informazioni, vedere [Procedura: Visualizzare il tempo di risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Alcune tabelle di test di carico possono contenere colonne aggiuntive, che includono i dati percentili e i tempi di risposta suddivisi in gruppi in base all'emulazione della rete. Per impostazione predefinita, questi dati non vengono raccolti. I dai percentili sono disponibili solo quando si salvano i risultati in un database e non quando si esegue il salvataggio in locale. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md). Inoltre, per raccogliere questi dati, nell'**editor test di carico**, sotto il nodo **Impostazioni di esecuzione**, selezionare il nodo dell'impostazione di esecuzione specifico da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **StatisticsOnly** o **AllIndividualDetails**. Per altre informazioni, vedere [Procedura: Visualizzare il tempo di risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Tabella Richieste
 
- Nella tabella **Richieste** vengono visualizzati i dettagli relativi alle singole richieste emesse durante un test di carico, tra cui tutte le richieste HTTP e le richieste dipendenti, ad esempio immagini. Le richieste sono elencate in base a test e scenario, perché una richiesta può essere inclusa in diversi test e scenari.
+Nella tabella **Richieste** vengono visualizzati i dettagli relativi alle singole richieste emesse durante un test di carico, tra cui tutte le richieste HTTP e le richieste dipendenti, ad esempio immagini. Le richieste sono elencate in base a test e scenario, perché una richiesta può essere inclusa in diversi test e scenari.
 
- Nella tabella seguente sono elencate le colonne della tabella **Richieste**:
+Nella tabella seguente sono elencate le colonne della tabella **Richieste**:
 
-|Colonna|Description|Visibile per impostazione predefinita|
+|Colonna|DESCRIZIONE|Visibile per impostazione predefinita|
 |-|-|-|
 |**Richiesta**|URL della richiesta, ad esempio *home.html* o *orange-arrow.gif*.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
@@ -90,11 +90,11 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
 ## <a name="the-tests-table"></a>Tabella Test
 
- Nella tabella **Test** vengono visualizzati i dettagli relativi ai singoli test durante un test di carico. I test sono elencati in base a test e scenario, perché un test può essere incluso in diversi scenari.
+Nella tabella **Test** vengono visualizzati i dettagli relativi ai singoli test durante un test di carico. I test sono elencati in base a test e scenario, perché un test può essere incluso in diversi scenari.
 
- Nella tabella seguente sono elencate le colonne della tabella **Test**.
+Nella tabella seguente sono elencate le colonne della tabella **Test**.
 
-|Colonna|Description|Visibile per impostazione predefinita|
+|Colonna|DESCRIZIONE|Visibile per impostazione predefinita|
 |-|-|-|
 |**Test**|Nome del test.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
@@ -111,14 +111,14 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
 ## <a name="the-transactions-table"></a>Tabella Transazioni
 
- Nella tabella **Transazioni** viene visualizzato un elenco delle transazioni effettuate durante l'esecuzione di un test di carico. Le transazioni si riferiscono alle transazioni definite in un test delle prestazioni Web o ai timer definiti in uno unit test. Non si riferiscono alle transazioni di database.
+Nella tabella **Transazioni** viene visualizzato un elenco delle transazioni effettuate durante l'esecuzione di un test di carico. Le transazioni si riferiscono alle transazioni definite in un test delle prestazioni Web o ai timer definiti in uno unit test. Non si riferiscono alle transazioni di database.
 
- Nella tabella seguente sono elencate le colonne della tabella **Transazioni**.
+Nella tabella seguente sono elencate le colonne della tabella **Transazioni**.
 
 > [!NOTE]
 > Per visualizzare tutte le colonne, è necessario abilitare la proprietà Intervallo archiviazione dettagli associata all'impostazione esecuzione test attiva. Per altre informazioni, vedere [Procedura: Specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Colonna|Description|Visibile senza i dettagli dell'intervallo|
+|Colonna|DESCRIZIONE|Visibile senza i dettagli dell'intervallo|
 |-|-|-|
 |**Transazione**|Nome della transazione.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
@@ -131,27 +131,27 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 |**Tempo di risposta minimo**|Non sono inclusi i tempi di interazione utente.|No|
 |**Tempo di risposta massimo**|Non sono inclusi i tempi di interazione utente.|No|
 |**Mediana tempo di risposta**|Non sono inclusi i tempi di interazione utente.|No|
-|**Tempo di risposta 90%**|Il novantesimo valore percentile per Tempo transazione. Non sono inclusi i tempi di interazione utente. **Nota:**  È un valore diverso da quello usato in Visual Studio Team System 2008 Test Load Agent, che era **Tempo transazione 90%**.|No|
-|**Tempo di risposta 95%**|Il novantacinquesimo valore percentile per Tempo transazione. Non sono inclusi i tempi di interazione utente. **Nota:**  È un valore diverso da quello usato in Visual Studio Team System 2008 Test Load Agent, che era **Tempo transazione 95%**.|No|
+|**Tempo di risposta 90%**|Il novantesimo valore percentile per Tempo transazione. Non sono inclusi i tempi di interazione utente. **Nota:**  È un valore diverso da quello usato in Visual Studio Team System 2008 Test Load Agent, che era **Tempo transazione 90%** .|No|
+|**Tempo di risposta 95%**|Il novantacinquesimo valore percentile per Tempo transazione. Non sono inclusi i tempi di interazione utente. **Nota:**  È un valore diverso da quello usato in Visual Studio Team System 2008 Test Load Agent, che era **Tempo transazione 95%** .|No|
 |**Tempo di risposta 99%**|Il novantanovesimo valore percentile per Tempo transazione. Non sono inclusi i tempi di interazione utente.|No|
 |**Deviazione standard tempo di risposta**|Non sono inclusi i tempi di interazione utente.|No|
 
 ## <a name="the-errors-table"></a>Tabella degli errori
 
- Quando si esegue un test di carico, è possibile analizzare gli errori che si verificano. L'analisi degli errori e la modifica dei test rappresentano una parte importante del processo di test di carico. Se si verificano errori, sulla barra di stato del test di carico viene visualizzato il collegamento ipertestuale **errori** che ne specifica il numero. Per visualizzare la tabella degli errori, scegliere il collegamento ipertestuale.
+Quando si esegue un test di carico, è possibile analizzare gli errori che si verificano. L'analisi degli errori e la modifica dei test rappresentano una parte importante del processo di test di carico. Se si verificano errori, sulla barra di stato del test di carico viene visualizzato il collegamento ipertestuale **errori** che ne specifica il numero. Per visualizzare la tabella degli errori, scegliere il collegamento ipertestuale.
 
- Nella tabella degli errori sono raggruppati gli errori, in base al tipo e al sottotipo, che si sono verificati durante un test di carico. Nella tabella è anche presente una riga **totale** che specifica il totale di tutti gli errori che si sono verificati.
+Nella tabella degli errori sono raggruppati gli errori, in base al tipo e al sottotipo, che si sono verificati durante un test di carico. Nella tabella è anche presente una riga **totale** che specifica il totale di tutti gli errori che si sono verificati.
 
- La tabella degli errori contiene le seguenti colonne:
+La tabella degli errori contiene le seguenti colonne:
 
-|Colonna|Description|Visibile per impostazione predefinita|
+|Colonna|DESCRIZIONE|Visibile per impostazione predefinita|
 |-|-|-|
 |Tipo|Il tipo di errore, ad esempio HttpError.|Sì|
 |Sottotipo|Il sottotipo di errore, ad esempio LoadTestException.|Sì|
 |Conteggio|Il numero di errori di questo tipo che si sono verificati durante il test di carico. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile fare clic su qualsiasi collegamento ipertestuale per visualizzare un elenco dei singoli errori.|Sì|
 |Ultimo messaggio|Messaggio in cui viene descritto l'errore, ad esempio 404 - NotFound.|Sì|
 
- Per altre informazioni, vedere [Uso delle tabelle di test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Per altre informazioni, vedere [Uso delle tabelle di test di carico](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ### <a name="drill-down-to-the-error-list"></a>Drill-down nell'elenco degli errori
 
@@ -162,7 +162,7 @@ Nella tabella degli errori sono raggruppati gli errori per tipo e sottotipo. Per
 
 La tabella **Errori test di carico** contiene le seguenti colonne:
 
-|Colonna|Description|
+|Colonna|DESCRIZIONE|
 |-|-|
 |**Ora**|L'ora durante il test di carico in cui si è verificato l'errore.|
 |**Agente**|Il nome del computer agente in cui si è verificato l'errore. Questo è importante quando si eseguono test di carico usando controller di test e agenti di test. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|

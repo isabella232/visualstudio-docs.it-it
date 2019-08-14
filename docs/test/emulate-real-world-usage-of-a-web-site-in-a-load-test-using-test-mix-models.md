@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 167dc55e5df18033a9bf16e8aa66e37db9fc6fea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461575"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918346"
 ---
 # <a name="test-mix-models-overview"></a>Panoramica dei modelli di combinazione di test
 
@@ -52,7 +52,7 @@ Per ogni test della combinazione, è possibile specificare una percentuale che d
 Se si utilizza questa impostazione, l'avvio del test successivo si basa sulle percentuali assegnate. Non viene considerato il numero di utenti virtuali che stanno eseguendo attualmente ciascun test.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Percentuale basata sugli utenti virtuali
- Questo modello di combinazione di test determina la percentuale di utenti virtuali che eseguiranno un determinato test. Se si utilizza questo modello di combinazione di test, l'avvio del successivo test si basa non solo sulle percentuali assegnate ma anche sulla percentuale di utenti virtuali che stanno eseguendo attualmente un determinato test. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde il più possibile alla distribuzione assegnata.
+Questo modello di combinazione di test determina la percentuale di utenti virtuali che eseguiranno un determinato test. Se si utilizza questo modello di combinazione di test, l'avvio del successivo test si basa non solo sulle percentuali assegnate ma anche sulla percentuale di utenti virtuali che stanno eseguendo attualmente un determinato test. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde il più possibile alla distribuzione assegnata.
 
 ### <a name="PacingTestMix"></a> Combinazione di test di velocità
 
@@ -69,7 +69,7 @@ Se si utilizza il modello di combinazione di test di velocità, il motore di run
 L'impostazione **Tempo interazione utente tra due iterazioni test** non viene applicata quando si usa una combinazione di test di velocità.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Applicare la distribuzione al ritardo velocità
- È possibile impostare il valore della proprietà **Applica distribuzione a ritardo velocità** in uno scenario di test di carico su True o False:
+È possibile impostare il valore della proprietà **Applica distribuzione a ritardo velocità** in uno scenario di test di carico su True o False:
 
 - **True**: lo scenario applica ritardi di distribuzione statistici tipici specificati dal valore nella colonna **Test per utente all'ora** nella finestra di dialogo **Modifica combinazione di test**. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
@@ -82,13 +82,13 @@ L'impostazione **Tempo interazione utente tra due iterazioni test** non viene ap
   Per altre informazioni, vedere [Procedura: Applicare la distribuzione al ritardo velocità quando si usa un modello di combinazione di test basato sulla velocità dell'utente](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ### <a name="SequentialOrder"></a> Ordine sequenziale
- La selezione dell'opzione In base a ordine sequenziale dei test consente a ogni utente virtuale di eseguire tutti i test nello scenario nell'ordine di definizione dei test.
+La selezione dell'opzione In base a ordine sequenziale dei test consente a ogni utente virtuale di eseguire tutti i test nello scenario nell'ordine di definizione dei test.
 
 ## <a name="test-iterations-property"></a>Proprietà Iterazioni test
- Nelle proprietà Impostazioni di esecuzione è possibile specificare un valore per la proprietà Iterazioni test. Questo valore è il numero di iterazioni del test da eseguire in un test di carico. Dopo avere avviato il numero specificato di iterazioni di test, non verranno avviate altre iterazioni di test nonostante le impostazioni dei profili di carico. Dopo avere completato il numero specificato di iterazioni di test, il test di carico viene terminato. Per altre informazioni, vedere [Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Nelle proprietà Impostazioni di esecuzione è possibile specificare un valore per la proprietà Iterazioni test. Questo valore è il numero di iterazioni del test da eseguire in un test di carico. Dopo avere avviato il numero specificato di iterazioni di test, non verranno avviate altre iterazioni di test nonostante le impostazioni dei profili di carico. Dopo avere completato il numero specificato di iterazioni di test, il test di carico viene terminato. Per altre informazioni, vedere [Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Test di inizializzazione e terminazione
- È possibile selezionare i test da eseguire all'inizio e alla fine della sessione di test di carico di ciascun utente virtuale. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+È possibile selezionare i test da eseguire all'inizio e alla fine della sessione di test di carico di ciascun utente virtuale. Per altre informazioni, vedere [Modifica di modelli di combinazione di test per specificare la probabilità che un utente virtuale esegua un test](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
 - **Test di inizializzazione**. Questo test viene eseguito da ciascun utente virtuale prima dell'esecuzione dei test nella combinazione di test.
 

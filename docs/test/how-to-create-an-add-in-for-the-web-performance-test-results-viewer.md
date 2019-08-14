@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747238"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918196"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
 
@@ -43,9 +43,9 @@ Creare o aprire una soluzione non di produzione con la quale sperimentare che co
 
 Un componente aggiuntivo è una DLL compilata che viene eseguita nell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio. La compilazione garantisce la protezione della proprietà intellettuale e consente il miglioramento delle prestazioni. Sebbene sia possibile creare manualmente componenti aggiuntivi, l'uso della **Creazione guidata componente aggiuntivo** rende l'operazione molto più semplice. La Creazione guidata componente aggiuntivo consente di generare un componente aggiuntivo di base completamente funzionale che può essere eseguito immediatamente dopo la creazione. Al termine della generazione del programma di base con la **Creazione guidata componente aggiuntivo**, è possibile aggiungere codice a tale programma e personalizzarlo.
 
- La **Creazione guidata componente aggiuntivo** consente di specificare un nome visualizzato e una descrizione per il componente aggiuntivo. Entrambi saranno visualizzati nella finestra di dialogo **Gestione componenti aggiuntivi**. Facoltativamente, è possibile scegliere di generare automaticamente nella procedura guidata il codice che aggiunge al menu **Strumenti** un comando per l'apertura del componente aggiuntivo. È anche possibile scegliere di visualizzare una finestra **Informazioni su** personalizzata per il componente aggiuntivo. Al termine della procedura guidata, si disporrà di un nuovo progetto con una sola classe tramite la quale viene implementato il componente aggiuntivo. Tale classe viene denominata Connect.
+La **Creazione guidata componente aggiuntivo** consente di specificare un nome visualizzato e una descrizione per il componente aggiuntivo. Entrambi saranno visualizzati nella finestra di dialogo **Gestione componenti aggiuntivi**. Facoltativamente, è possibile scegliere di generare automaticamente nella procedura guidata il codice che aggiunge al menu **Strumenti** un comando per l'apertura del componente aggiuntivo. È anche possibile scegliere di visualizzare una finestra **Informazioni su** personalizzata per il componente aggiuntivo. Al termine della procedura guidata, si disporrà di un nuovo progetto con una sola classe tramite la quale viene implementato il componente aggiuntivo. Tale classe viene denominata Connect.
 
- Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo articolo.
+Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo articolo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Per creare un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
 
@@ -326,9 +326,9 @@ Per migliorare la sicurezza e impedire l'attivazione automatica di componenti ag
 
 In questa pagina di opzioni è anche possibile specificare le cartelle in cui Visual Studio ricerca i file di registrazione con estensione *AddIn*. Limitando i percorsi in cui è possibile leggere i file di registrazione *ADDIN* si migliora la sicurezza, evitando l'uso non intenzionale di file *ADDIN* dannosi.
 
- **Impostazioni di sicurezza dei componenti aggiuntivi**
+**Impostazioni di sicurezza dei componenti aggiuntivi**
 
- Le impostazioni disponibili nella pagina delle opzioni relative alla sicurezza dei componenti aggiuntivi sono le seguenti:
+Le impostazioni disponibili nella pagina delle opzioni relative alla sicurezza dei componenti aggiuntivi sono le seguenti:
 
 - **Consenti caricamento componenti aggiuntivi.** Selezionato per impostazione predefinita. Quando selezionata, questa opzione consente il caricamento di componenti aggiuntivi in Visual Studio. In caso contrario, non è possibile caricare componenti aggiuntivi in Visual Studio.
 

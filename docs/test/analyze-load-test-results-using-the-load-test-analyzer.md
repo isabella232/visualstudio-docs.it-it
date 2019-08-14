@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3cd641a6361a8cf555e722ccd6c42414f5bdbe7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822801"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926436"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico tramite l'Analizzatore test di carico
 
@@ -37,11 +37,11 @@ Analizzare i risultati del test di carico nei modi seguenti:
 
 ## <a name="differences-between-analyzing-a-running-and-a-completed-load-test"></a>Differenze tra l'analisi di un test di carico in esecuzione e l'analisi di un test di carico completato
 
- Quando si esegue un test di carico, l'**Analizzatore test di carico** viene visualizzato in una scheda separata, insieme al nome del test di carico e all'ora in cui il test ha avuto inizio (ad esempio, **LoadTest1 [12:40 PM]**). Quando un test di carico è in esecuzione, in memoria viene mantenuto un insieme ridotto di dati dei contatori delle prestazioni che è possibile monitorare. Dopo il completamento di un test di carico, è possibile analizzare l'intero insieme di dati dal database. Esistono alcune differenze nei dati che vengono visualizzati durante o dopo l'esecuzione di un test di carico. Ad esempio, il 90% e il 95% dei dati relativi al tempo di risposta non viene calcolato finché il test di carico non è stato completato. Vi sono inoltre alcune differenze nelle funzionalità degli strumenti, disponibili per l'analisi dei dati.
+Quando si esegue un test di carico, l'**Analizzatore test di carico** viene visualizzato in una scheda separata, insieme al nome del test di carico e all'ora in cui il test ha avuto inizio (ad esempio, **LoadTest1 [12:40 PM]** ). Quando un test di carico è in esecuzione, in memoria viene mantenuto un insieme ridotto di dati dei contatori delle prestazioni che è possibile monitorare. Dopo il completamento di un test di carico, è possibile analizzare l'intero insieme di dati dal database. Esistono alcune differenze nei dati che vengono visualizzati durante o dopo l'esecuzione di un test di carico. Ad esempio, il 90% e il 95% dei dati relativi al tempo di risposta non viene calcolato finché il test di carico non è stato completato. Vi sono inoltre alcune differenze nelle funzionalità degli strumenti, disponibili per l'analisi dei dati.
 
- Quando si esegue il test di carico, sono disponibili due visualizzazioni: la visualizzazione **Grafici** e la visualizzazione **Tabelle**. La visualizzazione **Grafici** consente all'utente di rappresentare in un grafico i contatori delle prestazioni raccolti. La visualizzazione **Tabelle** offre informazioni su ogni test, pagina, transazione e richiesta raccolti. È possibile anche ottenere una tabella in cui sono elencati gli errori.
+Quando si esegue il test di carico, sono disponibili due visualizzazioni: la visualizzazione **Grafici** e la visualizzazione **Tabelle**. La visualizzazione **Grafici** consente all'utente di rappresentare in un grafico i contatori delle prestazioni raccolti. La visualizzazione **Tabelle** offre informazioni su ogni test, pagina, transazione e richiesta raccolti. È possibile anche ottenere una tabella in cui sono elencati gli errori.
 
- Per impostazione predefinita, quando l'esecuzione dei test di carico è stata completata, viene mostrata la visualizzazione **Riepilogo**. È possibile passare tra le visualizzazioni **Riepilogo**, **Grafici**, **Tabelle** e **Dettagli** tramite la barra degli strumenti. L'**Analizzatore test di carico** può essere ancorato o lasciato mobile usando le consuete tecniche di manipolazione delle finestre di Visual Studio. Quando si analizzano esecuzioni di test completate, è possibile avere più istanze di **Analizzatore test di carico** aperte simultaneamente per confrontare le diverse esecuzioni di test.
+Per impostazione predefinita, quando l'esecuzione dei test di carico è stata completata, viene mostrata la visualizzazione **Riepilogo**. È possibile passare tra le visualizzazioni **Riepilogo**, **Grafici**, **Tabelle** e **Dettagli** tramite la barra degli strumenti. L'**Analizzatore test di carico** può essere ancorato o lasciato mobile usando le consuete tecniche di manipolazione delle finestre di Visual Studio. Quando si analizzano esecuzioni di test completate, è possibile avere più istanze di **Analizzatore test di carico** aperte simultaneamente per confrontare le diverse esecuzioni di test.
 
 ## <a name="tasks"></a>Attività
 

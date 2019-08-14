@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823424"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918617"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisi dell'attività utente virtuale del test di carico nella visualizzazione Dettagli dell'Analizzatore test di carico
 
@@ -31,19 +31,19 @@ La visualizzazione **Dettagli** consente di visualizzare il **Grafico attività 
 > [!NOTE]
 > Prima di eseguire il test di carico per il quale si intende usare il **grafico dei dettagli relativi all'attività utente virtuale**, è necessario verificare che la proprietà **Intervallo archiviazione dettagli** sia impostata su **AllIndividualDetails** tramite l'Editor test di carico.
 
- **Riquadro Legenda dettagli**
+**Riquadro Legenda dettagli**
 
- ![Riquadro della legenda dei dettagli](../test/media/ltest_detailslegend.png)
+![Riquadro della legenda dei dettagli](../test/media/ltest_detailslegend.png)
 
- Il riquadro Legenda dettagli è visibile nel **Grafico attività utente virtuale**. Il riquadro Legenda dettagli consente di filtrare test, pagine e transazioni in base a diversi criteri. È ad esempio possibile rimuovere determinati test dalla visualizzazione, rimuovere tutti i test superati o rimuovere i test non superati a causa di errori specifici. È anche possibile rimuovere tutti i test che non dispongono di un log.
+Il riquadro Legenda dettagli è visibile nel **Grafico attività utente virtuale**. Il riquadro Legenda dettagli consente di filtrare test, pagine e transazioni in base a diversi criteri. È ad esempio possibile rimuovere determinati test dalla visualizzazione, rimuovere tutti i test superati o rimuovere i test non superati a causa di errori specifici. È anche possibile rimuovere tutti i test che non dispongono di un log.
 
- È possibile evidenziare i test non superati, in modo che vengano visualizzati in rosso. È inoltre possibile evidenziare i test che dispongono di log. Tali test verranno visualizzati in verde.
+È possibile evidenziare i test non superati, in modo che vengano visualizzati in rosso. È inoltre possibile evidenziare i test che dispongono di log. Tali test verranno visualizzati in verde.
 
- **Riquadro Risultati filtro**
+**Riquadro Risultati filtro**
 
- ![Riquadro dei risultati del filtro](../test/media/ltest_filterresults.png)
+![Riquadro dei risultati del filtro](../test/media/ltest_filterresults.png)
 
- Il riquadro Risultati filtro è visibile nel **Grafico attività utente virtuale**. Il pannello Risultati filtro può essere usato per filtrare in base ai seguenti criteri:
+Il riquadro Risultati filtro è visibile nel **Grafico attività utente virtuale**. Il pannello Risultati filtro può essere usato per filtrare in base ai seguenti criteri:
 
 - **Mostra solo risultati con log** Vengono visualizzati solo i risultati dei test a cui è associato un log.
 

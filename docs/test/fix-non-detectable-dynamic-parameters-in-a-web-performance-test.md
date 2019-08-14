@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004075"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918486"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 
@@ -251,7 +251,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>D: È possibile eseguire nuovamente il rilevamento dei parametri dinamici se l'applicazione Web viene modificata?
 
- **R:** Sì, usare la procedura seguente:
+**R:** Sì, usare la procedura seguente:
 
 1. Sulla barra degli strumenti scegliere il pulsante **Promuovi parametri dinamici a parametri di test Web**.
 
@@ -265,4 +265,4 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>D: È necessario configurare Visual Studio per rilevare i parametri dinamici?
 
- **R:** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Se tuttavia le opzioni di Visual Studio sono configurate in modo da non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.
+**R:** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Se tuttavia le opzioni di Visual Studio sono configurate in modo da non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.

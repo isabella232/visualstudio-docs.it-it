@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946856"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926176"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
 Visualizza le righe del codice sorgente specificate.
@@ -32,28 +32,28 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Opzioni
- /Count:`number`
+/Count:`number`
 
- Facoltativo. Specifica il numero di righe da visualizzare.
+facoltativo. Specifica il numero di righe da visualizzare.
 
- /Current
+/Current
 
- Facoltativo. Visualizza la riga corrente.
+facoltativo. Visualizza la riga corrente.
 
- /File:`filename`
+/File:`filename`
 
- Facoltativo. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
+facoltativo. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
 
- /Line:`number`
+/Line:`number`
 
- Facoltativo. Visualizza un numero di riga specifico.
+facoltativo. Visualizza un numero di riga specifico.
 
- /ShowLineNumbers:`yes|no`
+/ShowLineNumbers:`yes|no`
 
- Facoltativo. Specifica se visualizzare i numeri di riga.
+facoltativo. Specifica se visualizzare i numeri di riga.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene elencato il codice sorgente dalla riga 4 del file Form1.vb, con i numeri di riga visibili.
+In questo esempio viene elencato il codice sorgente dalla riga 4 del file Form1.vb, con i numeri di riga visibili.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

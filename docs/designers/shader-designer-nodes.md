@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 775d447b3e513e15eeafb1bfd90c54e3ffa70770
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844229"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925746"
 ---
 # <a name="shader-designer-nodes"></a>Nodi della finestra di progettazione shader
 Gli articoli di questa sezione della documentazione contengono informazioni sui diversi nodi di progettazione shader che possono essere usati per creare vari effetti grafici.
 
 ## <a name="nodes-and-node-types"></a>Nodi e tipi di nodo
- La finestra di progettazione shader rappresenta gli effetti visivi sotto forma di grafo. Questi grafi sono costituiti da nodi scelti specificamente e connessi in modo preciso per ottenere l'effetto voluto. Ogni nodo rappresenta un'informazione o una funzione matematica, mentre le connessioni tra di essi rappresentano il modo in cui le informazioni attraversano il grafico per produrre il risultato. La finestra di progettazione shader offre sei diversi tipi di nodi (filtri, nodi di trama, parametri, costanti, nodi di utilità e nodi di matematica) e ogni tipo di nodo include numerosi nodi singoli. Negli altri articoli di questa sezione vengono descritti questi nodi e tipi di nodi. Per altre informazioni, vedere i collegamenti alla fine di questo documento.
+La finestra di progettazione shader rappresenta gli effetti visivi sotto forma di grafo. Questi grafi sono costituiti da nodi scelti specificamente e connessi in modo preciso per ottenere l'effetto voluto. Ogni nodo rappresenta un'informazione o una funzione matematica, mentre le connessioni tra di essi rappresentano il modo in cui le informazioni attraversano il grafico per produrre il risultato. La finestra di progettazione shader offre sei diversi tipi di nodi (filtri, nodi di trama, parametri, costanti, nodi di utilità e nodi di matematica) e ogni tipo di nodo include numerosi nodi singoli. Negli altri articoli di questa sezione vengono descritti questi nodi e tipi di nodi. Per altre informazioni, vedere i collegamenti alla fine di questo documento.
 
 ## <a name="node-structure"></a>Struttura del nodo
- Tutti i nodi sono costituiti da una combinazione di elementi comuni. Ogni nodo possiede almeno un terminale di output sul lato destro (ad eccezione del nodo di colore finale, che rappresenta l'output dello shader). I nodi che rappresentano calcoli o campionatori di trame possiedono terminali di input sul lato sinistro ma i nodi che rappresentano informazioni non hanno terminali di input. I terminali di output sono connessi ai terminali di input per trasmettere le informazioni da un nodo a un altro.
+Tutti i nodi sono costituiti da una combinazione di elementi comuni. Ogni nodo possiede almeno un terminale di output sul lato destro (ad eccezione del nodo di colore finale, che rappresenta l'output dello shader). I nodi che rappresentano calcoli o campionatori di trame possiedono terminali di input sul lato sinistro ma i nodi che rappresentano informazioni non hanno terminali di input. I terminali di output sono connessi ai terminali di input per trasmettere le informazioni da un nodo a un altro.
 
 ### <a name="promotion-of-inputs"></a>Promozione degli input
- Poiché la finestra di progettazione shader deve alla fine generare codice sorgente HLSL in modo da poter usare l'effetto in un gioco o in un'app, i nodi di progettazione shader sono soggetti alle regole di promozione tipo usate da HLSL. Poiché l'hardware grafico opera principalmente su valori a virgola mobile, la promozione tipo tra tipi diversi, ad esempio da `int` a `float` o da `float` a `double`, non è comune. In alternativa, poiché l'hardware grafico usa la stessa operazione su più informazioni contemporaneamente, può verificarsi un tipo diverso di promozione in cui il più breve di un determinato numero di input viene allungato fino a corrispondere alla dimensione dell'input più lungo. Le modalità dell'allungamento dipendono dal tipo di input e anche dall'operazione in sé:
+Poiché la finestra di progettazione shader deve alla fine generare codice sorgente HLSL in modo da poter usare l'effetto in un gioco o in un'app, i nodi di progettazione shader sono soggetti alle regole di promozione tipo usate da HLSL. Poiché l'hardware grafico opera principalmente su valori a virgola mobile, la promozione tipo tra tipi diversi, ad esempio da `int` a `float` o da `float` a `double`, non è comune. In alternativa, poiché l'hardware grafico usa la stessa operazione su più informazioni contemporaneamente, può verificarsi un tipo diverso di promozione in cui il più breve di un determinato numero di input viene allungato fino a corrispondere alla dimensione dell'input più lungo. Le modalità dell'allungamento dipendono dal tipo di input e anche dall'operazione in sé:
 
 - **Se il tipo più piccolo è un valore scalare:**
 
@@ -41,7 +41,7 @@ Gli articoli di questa sezione della documentazione contengono informazioni sui 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|DESCRIZIONE|
 |-----------|-----------------|
 |[Nodi costanti](../designers/constant-nodes.md)|Vengono descritti i nodi che è possibile usare per rappresentare i valori letterali e le informazioni di stato vertex interpolate nei calcoli dello shader. Poiché lo stato vertex è interpolato e quindi diverso per ogni pixel, a ogni istanza di pixel shader viene assegnata una versione diversa della costante.|
 |[Nodi Parameter](../designers/parameter-nodes.md)|Descrive i nodi che è possibile usare per rappresentare posizione della fotocamera, proprietà del materiale, parametri di illuminazione, ora e altre informazioni sullo stato dell'app nei calcoli dello shader.|

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431227"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926452"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni
 
@@ -68,7 +68,7 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 | Servizi Citrix/terminal | La registrazione delle azioni in un server terminal non è consigliabile. Il registratore non supporta l'esecuzione di più istanze nello stesso momento. |
 | PowerBuilder | Parzialmente supportato.<br /><br /> Il supporto di accessibilità di ambito è abilitato per i controlli di PowerBuilder. |
 
- Per altre informazioni sulla creazione di estensioni per supportare altre piattaforme, vedere [Abilitare test codificati dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md) ed [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
+Per altre informazioni sulla creazione di estensioni per supportare altre piattaforme, vedere [Abilitare test codificati dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md) ed [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8d4c23934ddb6a838344eb6252f6002a5ecf10d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934562"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926095"
 ---
 # <a name="set-current-process"></a>Imposta processo corrente
 Imposta il processo specificato come processo attivo nel debugger.
@@ -28,12 +28,12 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>Argomenti
- `index`
+`index`
 
- Obbligatorio. L'indice del processo.
+Obbligatorio. L'indice del processo.
 
 ## <a name="remarks"></a>Osservazioni
- Sebbene sia possibile connettersi a più processi durante il debug, nel debugger è attivo un solo processo alla volta. Per impostare il processo attivo, è possibile usare il comando `SetCurrentProcess`.
+Sebbene sia possibile connettersi a più processi durante il debug, nel debugger è attivo un solo processo alla volta. Per impostare il processo attivo, è possibile usare il comando `SetCurrentProcess`.
 
 ## <a name="example"></a>Esempio
 

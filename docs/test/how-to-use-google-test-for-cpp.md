@@ -8,16 +8,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 8e918878048eec7dae04b6d9269f664b9e99c567
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 73f62e8b74864af0292a9cc3ab1eb325d679d2ea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226327"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926758"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Come usare Google Test per C++ in Visual Studio
 
-In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'IDE di Visual Studio come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++**. Per verificare che sia installato nel computer, aprire il programma di installazione di Visual Studio e trovare Google Test nell'elenco dei componenti del carico di lavoro:
+In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'IDE di Visual Studio come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Per verificare che sia installato nel computer, aprire il programma di installazione di Visual Studio e trovare Google Test nell'elenco dei componenti del carico di lavoro:
 
 ![Installare Google Test](media/cpp-google-component.png)
 
@@ -38,7 +38,7 @@ In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Aggiungere un progetto Google Test in Visual Studio 2017
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Aggiungi** > **Nuovo progetto**.
-2. Nel riquadro sinistro scegliere **Visual C++**>**Test** e quindi scegliere **Google Test Project** (Progetto Google Test ) nel riquadro centrale.
+2. Nel riquadro sinistro scegliere **Visual C++** >**Test** e quindi scegliere **Google Test Project** (Progetto Google Test ) nel riquadro centrale.
 3. Specificare un nome per il progetto di test e fare clic su **OK**.
 
 ![Nuovo progetto Google Test](media/cpp-gtest-new-project.png)
@@ -49,13 +49,13 @@ In Visual Studio 2017 e nelle versioni successive Google Test è integrato nell'
 
 Nella finestra di dialogo **Configurazione progetto di test** visualizzata è possibile scegliere il progetto che si vuole testare. Quando si sceglie un progetto, Visual Studio aggiunge un riferimento al progetto selezionato. Se non si sceglie alcun progetto, è necessario aggiungere manualmente i riferimenti al progetto o ai progetti che si vuole testare. Per la scelta di un collegamento statico o dinamico ai file binari di Google Test, tenere presente le stesse considerazioni che si applicano a qualsiasi programma C++. Per altre informazioni, vedere [DLL in Visual C++](/cpp/build/dlls-in-visual-cpp).
 
- ![Configurare il progetto Google Test](media/cpp-gtest-config.png)
+![Configurare il progetto Google Test](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>Impostare opzioni aggiuntive
 
 Dal menu principale scegliere **Strumenti** > **Opzioni** > **Test Adapter for Google Test** per impostare opzioni aggiuntive. Per altre informazioni su queste impostazioni, vedere la documentazione di Google Test.
 
- ![Impostazioni del progetto Google Test](media/cpp-gtest-settings.png)
+![Impostazioni del progetto Google Test](media/cpp-gtest-settings.png)
 
 ## <a name="add-include-directives"></a>Aggiungere direttive include
 

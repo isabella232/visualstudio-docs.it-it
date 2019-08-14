@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714808"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924454"
 ---
 # <a name="wpf-overview"></a>Panoramica di WPF
 
@@ -239,7 +239,7 @@ L'esempio seguente descrive come associare un oggetto <xref:System.Windows.Contr
 
 Nel markup seguente l'oggetto <xref:System.Windows.Controls.TextBox> viene associato a un'istanza di un oggetto `Person` personalizzato.
 
- ```xaml
+```xaml
  <Window
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -249,7 +249,7 @@ Nel markup seguente l'oggetto <xref:System.Windows.Controls.TextBox> viene assoc
    <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
 
  </Window>
- ```
+```
 
 [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)]
 [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]
@@ -597,7 +597,7 @@ In alternativa all'associazione diretta delle risorse a un determinato ambito, Ã
 </ResourceDictionary>
 ```
 
- L'esempio seguente illustra come fare riferimento al dizionario risorse definito nell'esempio precedente per consentirne la condivisione in un'applicazione.
+L'esempio seguente illustra come fare riferimento al dizionario risorse definito nell'esempio precedente per consentirne la condivisione in un'applicazione.
 
 ```xaml
 <Application

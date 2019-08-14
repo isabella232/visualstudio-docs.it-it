@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 3c31617def66499e29c4c2fc3e2a1804e7446d9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "66744997"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926256"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 
@@ -26,41 +26,41 @@ Contiene lo strumento di analisi del codice che è possibile scegliere di esegui
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
- Abilita l'analisi del codice\
- Abilita o disabilita l'analisi del codice per il progetto.
+Abilita l'analisi del codice\
+Abilita o disabilita l'analisi del codice per il progetto.
 
- Regole di progettazione\
- Abilita o disabilita le regole di progettazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di progettazione\
+Abilita o disabilita le regole di progettazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di globalizzazione\
- Abilita o disabilita le regole di globalizzazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di globalizzazione\
+Abilita o disabilita le regole di globalizzazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di interoperabilità\
- Abilita o disabilita le regole di interoperabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di interoperabilità\
+Abilita o disabilita le regole di interoperabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di manutenibilità\
- Abilita o disabilita le regole di manutenibilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di manutenibilità\
+Abilita o disabilita le regole di manutenibilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di mobilità\
- Abilita o disabilita le regole di mobilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di mobilità\
+Abilita o disabilita le regole di mobilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di denominazione\
- Abilita o disabilita le regole di denominazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di denominazione\
+Abilita o disabilita le regole di denominazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di prestazioni\
- Abilita o disabilita le regole per le prestazioni. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di prestazioni\
+Abilita o disabilita le regole per le prestazioni. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di portabilità\
- Abilita o disabilita le regole di portabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di portabilità\
+Abilita o disabilita le regole di portabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di affidabilità\
- Abilita o disabilita le regole di affidabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di affidabilità\
+Abilita o disabilita le regole di affidabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di sicurezza\
- Abilita o disabilita le regole di sicurezza. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di sicurezza\
+Abilita o disabilita le regole di sicurezza. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Regole di utilizzo\
- Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+Regole di utilizzo\
+Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
 ## <a name="see-also"></a>Vedere anche
 

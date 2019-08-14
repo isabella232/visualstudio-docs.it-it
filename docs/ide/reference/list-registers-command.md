@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1a2361534f167a0b88b3f1b5b38c005915243d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422965"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919106"
 ---
 # <a name="list-registers-command"></a>Comando Elenca registri
 Consente di visualizzare il valore dei registri selezionati e di modificare l'elenco dei registri da visualizzare.
@@ -33,33 +33,33 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Opzioni
- /Display [{`register`&#124;`registerGroup`}...]
+/Display [{`register`&#124;`registerGroup`}...]
 
- Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Ad esempio:
+Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Ad esempio:
 
- `Debug.ListRegisters /Display eax`
+`Debug.ListRegisters /Display eax`
 
- equivale a
+equivale a
 
- `Debug.ListRegisters eax`
+`Debug.ListRegisters eax`
 
- /List
+/List
 
- Consente di visualizzare tutti i gruppi di registri nell'elenco.
+Consente di visualizzare tutti i gruppi di registri nell'elenco.
 
- /Watch [{`register`&#124;`registerGroup`}...]
+/Watch [{`register`&#124;`registerGroup`}...]
 
- Aggiunge uno o più valori `register` o `registerGroup` all'elenco.
+Aggiunge uno o più valori `register` o `registerGroup` all'elenco.
 
- /Unwatch [{`register`&#124;`registerGroup`}...]
+/Unwatch [{`register`&#124;`registerGroup`}...]
 
- Rimuove uno o più valori `register` o `registerGroup` dall'elenco.
+Rimuove uno o più valori `register` o `registerGroup` dall'elenco.
 
 ## <a name="remarks"></a>Osservazioni
- L'alias `r` può essere usato al posto di `Debug.ListRegisters`.
+L'alias `r` può essere usato al posto di `Debug.ListRegisters`.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene usato l'alias di `Debug.ListRegisters` `r` per visualizzare i valori del gruppo di registri `Flags`.
+In questo esempio viene usato l'alias di `Debug.ListRegisters` `r` per visualizzare i valori del gruppo di registri `Flags`.
 
 ```cmd
 r /Display Flags

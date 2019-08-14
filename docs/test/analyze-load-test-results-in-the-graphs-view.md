@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432028"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926473"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -38,7 +38,7 @@ Vengono forniti molti grafici incorporati. È possibile usare i grafici incorpor
 
 Nella tabella seguente sono riportati i grafici incorporati disponibili per l'analisi dei risultati dei test di carico.
 
-|Nome grafico|Description|
+|Nome grafico|DESCRIZIONE|
 |-|-|
 |Indicatori chiave|Contatori che descrivono gli aspetti di base delle prestazioni del test, ad esempio carico utente, velocità effettiva e tempo di risposta.|
 |Tempo di risposta per test|Dati relativi alla quantità di tempo richiesta per l'esecuzione dei test.|
@@ -47,20 +47,20 @@ Nella tabella seguente sono riportati i grafici incorporati disponibili per l'an
 |Controller e agente|Informazioni sui computer in cui vengono eseguiti i test di carico, ovvero i dati relativi a utilizzo della memoria, processore, disco fisico e processi.<br /><br /> Per impostazione predefinita, vengono raccolti solo i contatori per i MB disponibili e il tempo processore.|
 |Tempo di risposta per transazione|Tempo di risposta medio per le transazioni che si verificano durante il test di carico.|
 
- Sul grafico è possibile visualizzare diversi contatori sia durante il runtime che dopo l'esecuzione di un test.
+Sul grafico è possibile visualizzare diversi contatori sia durante il runtime che dopo l'esecuzione di un test.
 
 > [!NOTE]
 > Solo i contatori di prestazioni relativi ai tempi di risposta possono essere aggiunti in un grafico dei tempi di risposta generato automaticamente.
 
- Le informazioni del contatore vengono visualizzate sia nel grafico che nella legenda sotto il grafico. Inoltre, è possibile ingrandire un'area del grafico. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+Le informazioni del contatore vengono visualizzate sia nel grafico che nella legenda sotto il grafico. Inoltre, è possibile ingrandire un'area del grafico. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contatori visualizzati nei grafici
 
- Nei grafici vengono visualizzati *contatori*. che fanno riferimento ai dati raccolti durante un test di carico, ad esempio test al secondo o tempo medio test. Per altre informazioni sui contatori, vedere [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Nei grafici vengono visualizzati *contatori*. che fanno riferimento ai dati raccolti durante un test di carico, ad esempio test al secondo o tempo medio test. Per altre informazioni sui contatori, vedere [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- La legenda per i contatori visualizzati nei grafici mostra diverse colonne di dati utili sull'esecuzione del test di carico. Per disattivare la visualizzazione dei dati nel grafico, deselezionare la casella di controllo nella riga della legenda.
+La legenda per i contatori visualizzati nei grafici mostra diverse colonne di dati utili sull'esecuzione del test di carico. Per disattivare la visualizzazione dei dati nel grafico, deselezionare la casella di controllo nella riga della legenda.
 
- Nella legenda sono presenti le seguenti colonne:
+Nella legenda sono presenti le seguenti colonne:
 
 |Counter|Nome del contatore|
 |-|-|
@@ -87,11 +87,11 @@ Nella tabella seguente sono riportati i grafici incorporati disponibili per l'an
 
 ## <a name="related-tasks"></a>Attività correlate
 
- [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
+[Procedura: Accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)
 
- [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Vedere anche
 

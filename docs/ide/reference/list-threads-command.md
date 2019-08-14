@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c66eab323f42ba3aa5392fed657e3afd3a6e5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946830"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919085"
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
 Visualizza un elenco dei thread del programma corrente.
@@ -31,12 +31,12 @@ Debug.ListThreads [index]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `index`
+`index`
 
- Facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
+facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
 
 ## <a name="remarks"></a>Osservazioni
- Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.
+Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.
 
 ## <a name="example"></a>Esempio
 
