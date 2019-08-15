@@ -2,24 +2,22 @@
 title: Numeri di build e date di rilascio di Visual Studio
 titleSuffix: ''
 description: Elenco aggiornato delle versioni rilasciate e dei numeri di build per Visual Studio, in ordine di data.
-keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/06/2019
+ms.date: 08/14/2019
 ms.topic: reference
-helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f07b8c0fc5317f6646868ad61ba61e42754a79c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9da89a2964dc5c4f33d4a0619a1b93c901054d3b
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870717"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024544"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -31,6 +29,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.2 | Versione | 13 agosto 2019 | 16.2.29209.62 |
+| 16.3.0 | Preview 2 | 13 agosto 2019 | 16.3.29209.152 |
+| 16.0.7 | Versione | 13 agosto 2019 | 16.0.28803.571 |
 | 16.2.1 | Versione | 6 agosto 2019 | 16.2.29201.188 |
 | 16.2.0 | Versione | 24 luglio 2019 | 16.2.29123.88 |
 | 16.3.0 | Preview 1 | 24 luglio 2019 | 16.3.29123.89 |
@@ -89,6 +90,8 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.15 | Versione | 13 agosto 2019 | 15.9.28307.812 |
+| 15.0.26 | Versione | 13 agosto 2019 | 15.0.26228.96 |
 | 15.9.14 | Versione | 09 luglio 2019 | 15.9.28307.770 |
 | 15.0.25 | Versione | 09 luglio 2019 | 15.0.26228.92 |
 | 15.9.13 | Versione | 11 giugno 2019 | 15.9.28307.718 |
