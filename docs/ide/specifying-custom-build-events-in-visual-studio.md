@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416730"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918901"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Specificare gli eventi di compilazione personalizzati in Visual Studio
 
 Se si specifica un evento di compilazione personalizzato, sarà possibile eseguire automaticamente i comandi prima dell'avvio o dopo il completamento di una compilazione. Ad esempio, è possibile eseguire un file con estensione *.bat* prima dell'avvio di una compilazione o copiare nuovi file in una cartella dopo il completamento della compilazione. Gli eventi di compilazione vengono eseguiti solo se la compilazione raggiunge correttamente i punti corrispondenti nel processo di compilazione.
 
- Per informazioni specifiche sul linguaggio di programmazione in uso, vedere gli argomenti seguenti:
+Per informazioni specifiche sul linguaggio di programmazione in uso, vedere gli argomenti seguenti:
 
 - Visual Basic: [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
@@ -34,7 +34,7 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
 
 Gli eventi di compilazione seguono la stessa sintassi dei comandi DOS, ma è possibile usare macro per creare con maggiore facilità gli eventi di compilazione. Per un elenco delle macro disponibili, vedere [Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
- Per ottenere risultati ottimali, seguire questi suggerimenti di formattazione:
+Per ottenere risultati ottimali, seguire questi suggerimenti di formattazione:
 
 - Aggiungere un'`call`istruzione prima di tutti gli eventi di compilazione che eseguono file con estensione *.bat*.
 

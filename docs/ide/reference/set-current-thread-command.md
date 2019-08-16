@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ede32645c9fc761c476e9f4d45ddf11a7577a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ea652f04295871f9437d80555254caecab87a48
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934623"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926059"
 ---
 # <a name="set-current-thread-command"></a>Comando Imposta thread corrente
 Imposta il thread specificato come thread corrente.
@@ -30,9 +30,9 @@ Debug.SetCurrentThread index
 ```
 
 ## <a name="arguments"></a>Argomenti
- `index`
+`index`
 
- Obbligatorio. Seleziona un thread in base al relativo indice.
+Obbligatorio. Seleziona un thread in base al relativo indice.
 
 ## <a name="example"></a>Esempio
 

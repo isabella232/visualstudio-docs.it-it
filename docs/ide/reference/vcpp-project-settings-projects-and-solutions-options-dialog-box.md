@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461566"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918894"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Impostazioni progetto di VC++, Progetti e soluzioni, finestra di dialogo Opzioni
 
@@ -49,11 +49,11 @@ Questa finestra di dialogo consente di definire le impostazioni di compilazione 
 
  **Sì**
 
- Elenca le variabili di ambiente presenti nel file di log di compilazione. Questa opzione specifica se attivare o meno l'eco di tutte le variabili di ambiente durante la compilazione di progetti C++ nel file di log di compilazione.
+Elenca le variabili di ambiente presenti nel file di log di compilazione. Questa opzione specifica se attivare o meno l'eco di tutte le variabili di ambiente durante la compilazione di progetti C++ nel file di log di compilazione.
 
  **No**
 
- Esclude le variabili di ambiente dal file di log di compilazione.
+Esclude le variabili di ambiente dal file di log di compilazione.
 
 ## <a name="build-timing"></a>Durata compilazione
 
@@ -63,7 +63,7 @@ Questa finestra di dialogo consente di definire le impostazioni di compilazione 
 
  **No**
 
- Disattiva la registrazione della durata della compilazione.
+Disattiva la registrazione della durata della compilazione.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Numero massimo di compilazioni C++ simultanee
 
