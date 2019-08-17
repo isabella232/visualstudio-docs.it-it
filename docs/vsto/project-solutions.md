@@ -1,6 +1,6 @@
 ---
-title: Soluzioni Project
-ms.date: 02/02/2017
+title: Soluzioni di progetto
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,42 +17,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5fe9f47fca2b83e0095c67e59c2db54a4a04159
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2158918aa6c2487719043abd797eb9d5e8f3f2e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447051"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551391"
 ---
-# <a name="project-solutions"></a>Soluzioni Project
+# <a name="project-solutions"></a>Soluzioni di progetto
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] fornisce modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office Project. È possibile usare i componenti aggiuntivi VSTO per automatizzare Project, estenderne le funzionalità o personalizzarne l'interfaccia utente.
 
- Per altre informazioni sui componenti aggiuntivi VSTO, vedere [iniziare a usare programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md) e [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md). Se ha familiarità con la programmazione con Microsoft Office, vedere [iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).
+ Per altre informazioni sui componenti aggiuntivi VSTO, vedere [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md) e [architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md). Se non si ha familiarità con la programmazione con Microsoft Office, vedere [Introduzione &#40;allo sviluppo per&#41;Office in Visual Studio](../vsto/getting-started-office-development-in-visual-studio.md).
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
-> [!NOTE]
-> Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="automate-project-by-using-the-project-object-model"></a>Automatizzare project con il modello oggetto di progetto
+## <a name="automate-project-by-using-the-project-object-model"></a>Automatizzare il progetto usando il modello a oggetti di Project
  Il modello a oggetti di Project espone diversi tipi che è possibile usare per automatizzare Project. Questi tipi consentono di scrivere codice per eseguire attività comuni, ad esempio la creazione e la modifica di attività in un progetto a livello di codice.
 
- Per accedere al modello di oggetto di progetto da un componente aggiuntivo VSTO, usare il `Application` campo il `ThisAddIn` classe nel progetto. Il `Application` restituisce un `Microsoft.Office.Interop.MsProject.Application` oggetto che rappresenta l'istanza corrente del progetto. Per altre informazioni, vedere [programma VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
+ Per accedere al modello a oggetti di Project da un componente aggiuntivo VSTO, usare `Application` il campo `ThisAddIn` della classe nel progetto. Il `Application` campo restituisce un `Microsoft.Office.Interop.MsProject.Application` oggetto che rappresenta l'istanza corrente di Project. Per altre informazioni, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
- Quando si effettuano chiamate nel modello a oggetti di Project, si usano i tipi forniti nell'assembly di interoperabilità primario per Project. L'assembly di interoperabilità primario agisce da ponte tra il codice gestito nel componente aggiuntivo VSTO e il modello a oggetti COM in Project. Tutti i tipi dell'assembly di interoperabilità primario di Project sono definiti nello spazio dei nomi `Microsoft.Office.Interop.MSProject`. Per altre informazioni sugli assembly di interoperabilità primari, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
+ Quando si effettuano chiamate nel modello a oggetti di Project, si usano i tipi forniti nell'assembly di interoperabilità primario per Project. L'assembly di interoperabilità primario agisce da ponte tra il codice gestito nel componente aggiuntivo VSTO e il modello a oggetti COM in Project. Tutti i tipi dell'assembly di interoperabilità primario di Project sono definiti nello spazio dei nomi `Microsoft.Office.Interop.MSProject`. Per altre informazioni sugli assembly di interoperabilità primari, vedere [Cenni &#40;preliminari&#41; sullo sviluppo di soluzioni Office](../vsto/office-solutions-development-overview-vsto.md) e assembly di interoperabilità [primari di Office](../vsto/office-primary-interop-assemblies.md).
 
-## <a name="use-the-project-object-model-documentation"></a>Uso della documentazione del modello oggetto progetto
- Per informazioni complete sul modello a oggetti di Project, vedere la documentazione di riferimento del modello a oggetti VBA di Project. Nel riferimento del modello a oggetti VBA è illustrato il modello a oggetti di Project esposto al codice Visual Basic Applications (VBA). Per altre informazioni, vedere [riferimento del modello oggetto Project 2010](http://go.microsoft.com/fwlink/?LinkId=199771).
+## <a name="use-the-project-object-model-documentation"></a>Usare la documentazione del modello a oggetti di Project
+ Per informazioni complete sul modello a oggetti di Project, vedere la documentazione di riferimento del modello a oggetti VBA di Project. Nel riferimento del modello a oggetti VBA è illustrato il modello a oggetti di Project esposto al codice Visual Basic Applications (VBA). Per altre informazioni, vedere [riferimento del modello a oggetti di Project 2010](http://go.microsoft.com/fwlink/?LinkId=199771).
 
- Tutti gli oggetti e i membri nel riferimento del modello a oggetti VBA corrispondono a tipi e membri nell'assembly di interoperabilità primario (PIA) di Project. Ad esempio, l'oggetto calendario nel riferimento del modello a oggetti VBA corrisponde alla `Microsoft.Office.Interop.MSProject.Calendar` tipo nell'assembly di interoperabilità primario di Project. Anche se il riferimento del modello a oggetti VBA fornisca esempi di codice per la maggior parte delle proprietà, metodi ed eventi, è necessario convertire il codice VBA in questo riferimento a Visual Basic o Visual c# se si vuole usarli in un progetto di componente aggiuntivo VSTO per Project creati usando Visual Studio.
+ Tutti gli oggetti e i membri nel riferimento del modello a oggetti VBA corrispondono a tipi e membri nell'assembly di interoperabilità primario (PIA) di Project. Ad esempio, l'oggetto Calendar nel riferimento del modello a oggetti VBA corrisponde al `Microsoft.Office.Interop.MSProject.Calendar` tipo nell'assembly di interoperabilità primario del progetto. Sebbene il riferimento del modello a oggetti VBA fornisca esempi di codice per la maggior parte delle proprietà, dei metodi e degli eventi, è necessario convertire il codice VBA C# in questo riferimento a Visual Basic o a Visual se si vuole usarli in un progetto di componente aggiuntivo VSTO di Project creato da con Visual Studio.
 
 > [!NOTE]
 > Attualmente non è prevista la documentazione di riferimento per l'assembly di interoperabilità primario di Project.
 
-### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Tipi di infrastruttura nell'assembly di interoperabilità primario di project
+### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Tipi di infrastruttura nell'assembly di interoperabilità primario di Project
  Quando si scrive un codice che usa l'assembly di interoperabilità primario di Project, si può notare che molti tipi non sono descritti nel riferimento di VBA. Questi tipi aggiuntivi, che consentono di convertire in codice gestito gli oggetti del modello a oggetti basato su COM di Project, non possono essere usati direttamente nel codice.
 
- Per altre informazioni, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](http://go.microsoft.com/fwlink/?LinkId=189592).
+ Per ulteriori informazioni, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](http://go.microsoft.com/fwlink/?LinkId=189592).
 
 ## <a name="customize-the-user-interface-of-project"></a>Personalizzare l'interfaccia utente del progetto
  È possibile personalizzare l'interfaccia utente di Project nei modi seguenti.
@@ -61,16 +60,16 @@ ms.locfileid: "63447051"
 |----------|--------------------------|
 |Aggiungere schede personalizzate alla barra multifunzione in Project|[Panoramica della barra multifunzione](../vsto/ribbon-overview.md)|
 
- Per altre informazioni sulla personalizzazione dell'interfaccia utente del progetto e altre applicazioni Microsoft Office, vedere [personalizzazione dell'interfaccia utente Office](../vsto/office-ui-customization.md).
+ Per ulteriori informazioni sulla personalizzazione dell'interfaccia utente di Project e di altre applicazioni di Microsoft Office, vedere [personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: Creare il primo aggiuntivo VSTO per project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
-- [Introduzione a programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)
-- [Panoramica dello sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
+- [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
+- [Panoramica &#40;dello sviluppo di soluzioni Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Programmazione di componenti aggiuntivi VSTO](../vsto/programming-vsto-add-ins.md)
-- [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
+- [Procedura: Creazione di progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
+- [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
 - [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
 - [Project 2010 e Project Server 2010 nello sviluppo per Office](http://go.microsoft.com/fwlink/?LinkId=199016)

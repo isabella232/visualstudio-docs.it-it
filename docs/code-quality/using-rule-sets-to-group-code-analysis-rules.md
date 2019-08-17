@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae627e08faed01ab0efc8e64373ff86ed5c877e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825084"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548021"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare set di regole per raggruppare regole di analisi codice
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare set di regole per raggruppare le regole di analisi del codice
 
-Quando si configura l'analisi del codice in Visual Studio, è possibile scegliere da un elenco di incorporati *set di regole*. Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole che è progettato per analizzare il codice per le API disponibili pubblicamente. È inoltre possibile applicare un set di regole che include tutte le regole disponibili.
+Quando si configura l'analisi del codice in Visual Studio, è possibile scegliere da un elenco di *set di regole*predefiniti. Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole progettato per analizzare il codice per le API disponibili pubblicamente. È anche possibile applicare un set di regole che includa tutte le regole disponibili.
 
-È possibile personalizzare una set di regole mediante l'aggiunta o eliminazione di regole o modificando i livelli di gravità regola vengono visualizzati come avvisi o errori nel **elenco errori**. Set di regole personalizzate può soddisfare un'esigenza per l'ambiente di sviluppo specifiche. Quando si personalizza un set di regole, l'editor set di regole fornisce ricerca e gli strumenti per semplificare il processo di filtraggio.
+È possibile personalizzare un set di regole aggiungendo o eliminando regole o modificando i livelli di gravità delle regole in modo che vengano visualizzati come avvisi o errori nel **Elenco errori**. I set di regole personalizzati possono soddisfare la necessità di un ambiente di sviluppo specifico. Quando si personalizza un set di regole, l'editor dei set di regole fornisce strumenti di ricerca e filtro che consentono di semplificare il processo.
 
-Sono disponibili per i set di regole [analisi statica del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md), [analisi del codice C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), e [analizzatori di Roslyn](analyzer-rule-sets.md).
+I set di regole sono disponibili per l' [analisi del codice gestito](analyzer-rule-sets.md), l' [analisi legacy del codice gestito](how-to-configure-code-analysis-for-a-managed-code-project.md)e [ C++ l'analisi del codice](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-## <a name="rule-set-format"></a>Formato di set di regole
+## <a name="rule-set-format"></a>Formato set di regole
 
-Viene specificato un set di regole in formato XML in un *ruleSet* file. Le regole, costituiti da un ID e un *azione*, sono raggruppati per ID analizzatore e dello spazio dei nomi nel file.
+Un set di regole viene specificato in formato XML in un file con *estensione ruleset* . Le regole, che sono costituite da un ID e da un' *azione*, sono raggruppate in base all'ID analizzatore e allo spazio dei nomi nel file.
 
-Il contenuto di un *ruleSet* file avrà un aspetto simile a questo file XML:
+Il contenuto di un file con *estensione ruleset* è simile al codice XML seguente:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,11 +54,11 @@ Il contenuto di un *ruleSet* file avrà un aspetto simile a questo file XML:
 ```
 
 > [!TIP]
-> È più facile [modifica un set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md) nel grafico **Editor Set di regole** rispetto a mano.
+> È più semplice [modificare un set di regole](../code-quality/working-in-the-code-analysis-rule-set-editor.md) nell'editor del **set di regole** grafico anziché manualmente.
 
-## <a name="specify-a-rule-set-for-a-project"></a>Specificare una set di regole per un progetto
+## <a name="specify-a-rule-set-for-a-project"></a>Specificare un set di regole per un progetto
 
-La regola impostata per un progetto viene specificato per il **CodeAnalysisRuleSet** proprietà nel file di progetto Visual Studio. Ad esempio:
+Il set di regole per un progetto viene specificato dalla proprietà **CodeAnalysisRuleSet** nel file di progetto di Visual Studio. Ad esempio:
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

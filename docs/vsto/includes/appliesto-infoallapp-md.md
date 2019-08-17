@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: be721c8b9fec4609a8380bcbdd2ff39cc7d2174a
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67261353"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "69551725"
 ---
-  **Si applica a:** Le informazioni contenute in questo argomento si applicano a VSTO aggiungere\-nei progetti per InfoPath. Per altre informazioni, vedere [funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Si applica a:** Le informazioni contenute in questo argomento sono valide per\-i progetti di componenti aggiuntivi VSTO per InfoPath. Per ulteriori informazioni, vedere [funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../../vsto/features-available-by-office-application-and-project-type.md).

@@ -1,6 +1,6 @@
 ---
-title: Creazione di soluzioni Office
-ms.date: 02/02/2017
+title: Compilazione di soluzioni Office
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,20 +26,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e103b07b82d587ac00e2ff53e9ed7ea344267a85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440332"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551850"
 ---
-# <a name="build-office-solutions"></a>Creazione di soluzioni Office
-  I processi di compilazione e debug dei progetti di Office sono in genere analoghi agli stessi processi per altri tipi di progetti in Visual Studio, ad esempio per Windows Form. Gli argomenti di questa sezione illustrano le differenze esistenti. Per informazioni generali su come creare applicazioni, vedere [compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+# <a name="build-office-solutions"></a>Compilazione di soluzioni Office
+  I processi di compilazione e debug dei progetti di Office sono in genere analoghi agli stessi processi per altri tipi di progetti in Visual Studio, ad esempio per Windows Form. Gli argomenti di questa sezione illustrano le differenze esistenti. Per informazioni generali su come compilare applicazioni, vedere [compilazione e compilazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-> [!NOTE]
-> Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="project-output-for-office-projects"></a>Output del progetto per progetti di Office
+## <a name="project-output-for-office-projects"></a>Output del progetto per i progetti di Office
  Il percorso di output per i progetti di Office è *nomeprogetto*\bin\release o *nomeprogetto*\bin\debug. Non è possibile eseguire la compilazione in una directory di distribuzione.
 
 ### <a name="document-level-projects"></a>Progetti a livello di documento
@@ -49,27 +48,27 @@ ms.locfileid: "63440332"
 
 - L'assembly del progetto e tutti gli assembly di riferimento la cui proprietà **Copia localmente** è impostata su **true**.
 
-- Il manifesto dell'applicazione, che ha l'estensione *manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+- Il manifesto dell'applicazione, che ha l'estensione del nome file *. manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
-- Il manifesto di distribuzione, che ha l'estensione *VSTO*. Per altre informazioni, vedere [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Il manifesto della distribuzione, che ha l'estensione del nome file *. VSTO*. Per ulteriori informazioni, vedere [la pagina relativa ai manifesti di distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).
 
-- Un database di programma (*PDB*) file.
+- Un file di database di programma (*PDB*).
 
 > [!NOTE]
-> Se si compila una soluzione a livello di documento in un percorso remoto anziché nel computer locale, aggiungere il percorso completo all'elenco di percorsi attendibili nel Centro protezione dell'applicazione. Per altre informazioni, vedere la sezione intitolata Concessione dell'attendibilità ai documenti [soluzioni Office Secure](../vsto/securing-office-solutions.md).
+> Se si compila una soluzione a livello di documento in un percorso remoto anziché nel computer locale, aggiungere il percorso completo all'elenco di percorsi attendibili nel Centro protezione dell'applicazione. Per ulteriori informazioni, vedere la sezione concessione dell'attendibilità ai documenti in [soluzioni Office protette](../vsto/securing-office-solutions.md).
 
 ### <a name="application-level-projects"></a>Progetti a livello di applicazione
  Quando si compila un progetto di componente aggiuntivo VSTO, nell'output del progetto vengono inclusi gli elementi seguenti:
 
 - L'assembly del progetto e tutti gli assembly di riferimento la cui proprietà **Copia localmente** è impostata su **true**.
 
-- Il manifesto dell'applicazione, che ha l'estensione *manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
+- Il manifesto dell'applicazione, che ha l'estensione del nome file *. manifest*. Per altre informazioni, vedere [manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md).
 
-- Il manifesto di distribuzione, che ha l'estensione *VSTO*. Per altre informazioni, vedere [manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Il manifesto della distribuzione, che ha l'estensione del nome file *. VSTO*. Per ulteriori informazioni, vedere [la pagina relativa ai manifesti di distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).
 
-- Un database di programma (*PDB*) file per l'assembly del progetto.
+- Un file di database di programma (*PDB*) per l'assembly del progetto.
 
-  Il processo di compilazione per i progetti di componente aggiuntivo VSTO crea inoltre un set di voci del Registro di sistema nel computer di sviluppo, necessario per il caricamento del componente aggiuntivo VSTO. Per altre informazioni, vedere [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+  Il processo di compilazione per i progetti di componente aggiuntivo VSTO crea inoltre un set di voci del Registro di sistema nel computer di sviluppo, necessario per il caricamento del componente aggiuntivo VSTO. Per altre informazioni, vedere [voci del registro di sistema per i componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
   Se si compila un progetto di componente aggiuntivo VSTO per Outlook che contiene aree del modulo, il processo di generazione aggiunge al Registro di sistema le informazioni aggiuntive seguenti:
 
@@ -87,17 +86,17 @@ ms.locfileid: "63440332"
 
  I progetti di Office usano i certificati per verificare il server di pubblicazione. Visual Studio crea automaticamente un certificato temporaneo per identificare le soluzioni Office e configura il computer di sviluppo in modo da considerare attendibile il certificato temporaneo.
 
- Per altre informazioni, vedere [soluzioni Office Secure](../vsto/securing-office-solutions.md).
+ Per altre informazioni, vedere [proteggere le soluzioni Office](../vsto/securing-office-solutions.md).
 
 ### <a name="network-projects"></a>Progetti di rete
- Se il percorso dell'assembly o del documento si trova in una condivisione di rete, l'aggiornamento dei criteri di sicurezza locali (livello utente) non è sufficiente per consentire l'esecuzione della soluzione. Un amministratore dovrà infatti concedere agli assembly e ai documenti in una condivisione di rete l'attendibilità totale a livello di computer prima che la soluzione possa essere eseguita. Per altre informazioni su come impostare criteri di sicurezza, vedere [soluzioni Office Secure](../vsto/securing-office-solutions.md).
+ Se il percorso dell'assembly o del documento si trova in una condivisione di rete, l'aggiornamento dei criteri di sicurezza locali (livello utente) non è sufficiente per consentire l'esecuzione della soluzione. Un amministratore dovrà infatti concedere agli assembly e ai documenti in una condivisione di rete l'attendibilità totale a livello di computer prima che la soluzione possa essere eseguita. Per altre informazioni su come impostare i criteri di sicurezza, vedere [proteggere le soluzioni Office](../vsto/securing-office-solutions.md).
 
- Per i progetti a livello di documento, è necessario aggiungere anche il percorso completo del documento all'elenco delle cartelle attendibili di Office. Per altre informazioni, vedere [concedere l'attendibilità a documenti](../vsto/granting-trust-to-documents.md).
+ Per i progetti a livello di documento, è necessario aggiungere anche il percorso completo del documento all'elenco delle cartelle attendibili di Office. Per ulteriori informazioni, vedere [Grant trust to Documents](../vsto/granting-trust-to-documents.md).
 
-## <a name="change-the-platform-target"></a>Modificare la piattaforma di destinazione
+## <a name="change-the-platform-target"></a>Modificare la destinazione della piattaforma
  Per impostazione predefinita, la piattaforma di destinazione per i progetti di Office è **Qualsiasi CPU**. In genere, non è consigliabile modificare questa impostazione. Le soluzioni Office compilate con l'impostazione della destinazione della piattaforma impostata su **Qualsiasi CPU** vengono eseguite nelle versioni a 32 bit e a 64 bit di Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
- È consigliabile impostare la destinazione della piattaforma su x64 solo se si crea una soluzione che verrà eseguita esclusivamente nelle versioni a 64 bit di Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]e se la soluzione chiama API native a 64 bit. Per altre informazioni su come modificare l'impostazione della destinazione della piattaforma, vedere [come: Configurare progetti per piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).
+ È consigliabile impostare la destinazione della piattaforma su x64 solo se si crea una soluzione che verrà eseguita esclusivamente nelle versioni a 64 bit di Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] o [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]e se la soluzione chiama API native a 64 bit. Per ulteriori informazioni sulla modifica dell'impostazione di destinazione della piattaforma [, vedere Procedura: Configurare i progetti per le](../ide/how-to-configure-projects-to-target-platforms.md)piattaforme di destinazione.
 
  Se si imposta la destinazione della piattaforma su x64, la soluzione non verrà eseguita nelle versioni a 32 bit di Windows o di Office. Per la destinazione della piattaforma x64 è necessario che la soluzione venga eseguita in un processo a 64 bit.
 
@@ -108,7 +107,7 @@ ms.locfileid: "63440332"
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Eseguire il debug di progetti di Office](../vsto/debugging-office-projects.md)|Descrive i problemi relativi al debug dei progetti di Office.|
-|[Procedura dettagliata: Creare una personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Illustra come creare una personalizzazione di base a livello di documento per Excel.|
-|[Procedura: Riabilitare un VSTO Add-in è stato disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Descrive come riabilitare un componente aggiuntivo in VSTO che è stato disabilitato hardware o software.|
-|[Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)|Fornisce i collegamenti a informazioni sulla creazione di soluzioni Office e sul ruolo degli assembly all'interno della soluzione.|
+|[Debug di progetti di Office](../vsto/debugging-office-projects.md)|Descrive i problemi relativi al debug dei progetti di Office.|
+|[Procedura dettagliata: Creazione della prima personalizzazione a livello di documento per Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Illustra come creare una personalizzazione di base a livello di documento per Excel.|
+|[Procedura: Abilitare di nuovo un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Viene descritto come riabilitare un componente aggiuntivo VSTO che è stato disabilitato a livello hardware o soft.|
+|[Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)|Fornisce i collegamenti a informazioni sulla creazione di soluzioni Office e sul ruolo degli assembly all'interno della soluzione.|

@@ -1,6 +1,6 @@
 ---
 title: Riferimenti alle API non gestite (sviluppo per Office in Visual Studio)
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 238ed42d48903d2d0ef26384245cff80785a8ebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00db78359154dbda600fb4b58103bc04e89d16b2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978237"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551319"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Riferimenti alle API non gestite (sviluppo per Office in Visual Studio)
 
-A partire da Microsoft Office system 2007, utilizzano le applicazioni di Office il [interfaccia IManagedAddin](../vsto/imanagedaddin-interface.md) interfaccia da chiamare in un componente aggiuntivo VSTO caricatore incluso con il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Questo componente viene usato per consentire gestiti caricamento componenti aggiuntivi VSTO. Implementando questa interfaccia, è possibile creare il proprio componente di caricamento di componenti aggiuntivi VSTO.
+A partire dal sistema di Microsoft Office 2007, le applicazioni di Office usano l'interfaccia dell' [interfaccia IManagedAddin](../vsto/imanagedaddin-interface.md) per chiamare un componente del caricatore di componenti aggiuntivi VSTO incluso [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]in. Questo componente viene usato per consentire il caricamento di componenti aggiuntivi VSTO gestiti. Implementando questa interfaccia, è possibile creare il proprio componente di caricamento di componenti aggiuntivi VSTO.
 
-> [!NOTE]
-> Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-[IManagedAddin (interfaccia)](../vsto/imanagedaddin-interface.md)
+[Interfaccia IManagedAddin](../vsto/imanagedaddin-interface.md)
 
 Un'interfaccia COM che è possibile implementare per caricare e scaricare componenti aggiuntivi VSTO gestiti nelle applicazioni di Office.

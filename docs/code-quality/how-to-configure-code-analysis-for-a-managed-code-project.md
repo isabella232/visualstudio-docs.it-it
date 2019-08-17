@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715053"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551045"
 ---
-# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Procedura: Configurare l'analisi statica del codice per il codice gestito
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedura: Configurare l'analisi legacy per il codice gestito
 
-In Visual Studio, è possibile scegliere da un elenco di analisi del codice [set di regole](../code-quality/rule-set-reference.md) da applicare a un progetto di codice gestito. Per impostazione predefinita, il **Microsoft regole minime** set di regole è selezionato, ma è possibile applicare una regola diversa se si desidera impostare. Set di regole possono essere applicati a uno o più progetti in una soluzione.
+In Visual Studio è possibile scegliere da un elenco di [set di regole](../code-quality/rule-set-reference.md) di analisi codice da applicare a un progetto di codice gestito. Per impostazione predefinita, il **Microsoft regole minime** set di regole è selezionato, ma è possibile applicare una regola diversa se si desidera impostare. Set di regole possono essere applicati a uno o più progetti in una soluzione.
 
-Per informazioni su come configurare una set di regole per le applicazioni web ASP.NET, vedere [come: Configura analisi codice per un'applicazione web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
+Per informazioni su come configurare un set di regole per le applicazioni Web ASP.NET, [vedere Procedura: Configurare l'analisi del codice per un'applicazione](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)Web ASP.NET.
 
 > [!NOTE]
-> Questo articolo si applica alle analisi statica del codice e non al [analizzatori di Roslyn](use-roslyn-analyzers.md), che non vengono eseguiti l'analisi del codice dopo la compilazione.
+> Questo articolo si applica all'analisi legacy e non agli analizzatori di [codice basati su .NET Compiler Platform](use-roslyn-analyzers.md), che non eseguono l'analisi del codice dopo la compilazione.
 
-## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurare una set di regole per un progetto .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurare un set di regole per un progetto di .NET Framework
 
 1. Aprire il **analisi del codice** scheda nelle pagine delle proprietà del progetto. È possibile eseguire questa operazione in uno dei modi seguenti:
 
@@ -77,4 +77,4 @@ Per impostazione predefinita, tutti i progetti gestiti di una soluzione vengono 
 ## <a name="see-also"></a>Vedere anche
 
 - [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)
-- [Procedura: Configura analisi codice per un'applicazione web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [Procedura: Configurare l'analisi del codice per un'applicazione Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

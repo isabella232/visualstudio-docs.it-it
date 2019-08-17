@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037255"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551124"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Domande frequenti su FxCop e gli analizzatori FxCop
 
@@ -31,7 +31,7 @@ Gli analizzatori FxCop sono basati su .NET Compiler Platform ("Roslyn"). Essi ve
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Il comando Esegui analisi codice esegue gli analizzatori FxCop?
 
-No. Quando si seleziona **Analizza** > **Esegui analisi codice**, viene eseguita l'analisi statica del codice o FxCop legacy. **Esegui analisi codice** non ha effetto sugli analizzatori basati su Roslyn, inclusi gli analizzatori FxCop basati su Roslyn.
+No. Quando si seleziona **analizza** > **Esegui analisi codice**, viene eseguita l'analisi legacy. **Esegui analisi codice** non ha effetto sugli analizzatori basati su Roslyn, inclusi gli analizzatori FxCop basati su Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>La proprietà del progetto msbuild RunCodeAnalysis esegue gli analizzatori?
 
@@ -43,15 +43,15 @@ Per eseguire gli analizzatori FxCop, per prima cosa [installare il pacchetto NuG
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Viene visualizzato l'avviso CA0507 anche dopo aver installato il pacchetto NuGet degli analizzatori FxCop
 
-Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso CA0507 **""Esegui analisi codice" è stato deprecato e sostituito da analizzatori FxCop, che vengono eseguiti durante la compilazione"**, potrebbe essere necessario impostare la proprietà msbuild **RunCodeAnalysis** nel file di progetto su **false**. In caso contrario, verrà eseguita l'analisi del codice statico dopo ogni compilazione.
+Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso CA0507 **""Esegui analisi codice" è stato deprecato e sostituito da analizzatori FxCop, che vengono eseguiti durante la compilazione"** , potrebbe essere necessario impostare la proprietà msbuild **RunCodeAnalysis** nel file di progetto su **false**. In caso contrario, l'analisi legacy verrà eseguita dopo ogni compilazione.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
 
-## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quali regole sono state convertite per gli analizzatori FxCop?
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quali regole sono state trasferite agli analizzatori FxCop?
 
-Per informazioni sulle regole di analisi statica del codice sono state convertite per [analizzatori FxCop](install-fxcop-analyzers.md), vedere [lo stato della porta regola Fxcop](fxcop-rule-port-status.md).
+Per informazioni sulle regole di analisi legacy che sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md), vedere stato della [porta della regola FxCop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: Non visualizzare gli avvisi dell'analisi codice
+title: Non visualizzare gli avvisi di analisi codice
 ms.date: 12/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,34 +14,34 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 60fcb13c978d614d40964bd8d6da21e8cf41f00f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821572"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551071"
 ---
-# <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi dell'analisi codice
+# <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi di analisi codice
 
-Spesso è utile indicare che un messaggio di avviso non è applicabile. Ciò indica ai membri del team che è stato esaminato il codice e che l'avviso può essere eliminato. Eliminazione (ISS) viene utilizzato in origine la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo per eliminare un avviso. L'attributo può essere posizionato vicino al segmento di codice che ha generato l'avviso. È possibile aggiungere il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> dell'attributo del file di origine digitando, oppure è possibile usare il menu di scelta rapida in un avviso nel **elenco errori** per aggiungerlo automaticamente.
+Spesso è utile indicare che un avviso non è applicabile. Ciò indica ai membri del team che il codice è stato esaminato e che l'avviso può essere eliminato. L'eliminazione nell'origine (ISS) usa l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo per non visualizzare un avviso. L'attributo può essere inserito vicino al segmento di codice che ha generato l'avviso. È possibile aggiungere l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo al file di origine digitando l'attributo oppure è possibile utilizzare il menu di scelta rapida di un avviso nel **Elenco errori** per aggiungerlo automaticamente.
 
-Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo è un attributo di tipo condizionale, che è incluso nei metadati dell'assembly del codice gestito, solo se il simbolo di compilazione CODE_ANALYSIS è definito in fase di compilazione.
+L' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo è un attributo condizionale, incluso nei metadati il dell'assembly del codice gestito, solo se il simbolo di compilazione CODE_ANALYSIS viene definito in fase di compilazione.
 
-In C++/CLI, utilizzare le macro CA\_SUPPRESS\_messaggio o autorità di certificazione\_GLOBAL\_SUPPRESS_MESSAGE nel file di intestazione per aggiungere l'attributo.
-
-> [!NOTE]
-> Non utilizzare le eliminazioni nell'origine nelle build di rilascio, per evitare che i metadati di eliminazione nell'origine di spedizione accidentalmente. Inoltre, a causa del costo di elaborazione di eliminazione nell'origine, è possono peggiorare le prestazioni dell'applicazione.
+Per C++aggiungere l'attributo, in/CLI\_usare\_le macro CA non\_visualizzare messaggi o SUPPRESS_MESSAGE globali CA\_nel file di intestazione.
 
 > [!NOTE]
-> Se si esegue la migrazione di un progetto di Visual Studio 2017 o Visual Studio 2019, possono incontrare improvvisamente con un numero elevato di avvisi dell'analisi codice. Questi avvisi provengono [analizzatori di Roslyn](roslyn-analyzers-overview.md). Se non si è pronti per risolvere gli avvisi, è possibile eliminare tutti gli elementi scegliendo **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi**.
+> Non è consigliabile usare le eliminazioni in origine nelle build di rilascio, per impedire che vengano inviati accidentalmente i metadati di eliminazione nell'origine. Inoltre, a causa del costo di elaborazione dell'eliminazione nell'origine, le prestazioni dell'applicazione possono risultare ridotte.
+
+> [!NOTE]
+> Se si esegue la migrazione di un progetto a Visual Studio 2017 o a Visual Studio 2019, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile eliminarli tutti scegliendo **analizza** > **Esegui analisi codice ed elimina problemi attivi**.
 >
-> ![Esegui analisi del codice ed eliminare i problemi in Visual Studio](media/suppress-active-issues.png)
+> ![Eseguire l'analisi del codice ed escludere i problemi in Visual Studio](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attributo)
 
-Quando si sceglie **Suppress** dal menu di scelta rapida di un avviso di analisi del codice nelle **elenco errori**, un <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo viene aggiunto nel codice o di eliminazione globale del progetto file.
+Quando si sceglie **Elimina** dal menu di scelta rapida o facendo clic con il pulsante destro del mouse suun avviso di <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> analisi del codice nella elenco errori, viene aggiunto un attributo nel codice o nel file di eliminazione globale del progetto.
 
-Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo presenta il formato seguente:
+Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> formato dell'attributo è il seguente:
 
 ```vb
 <Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>
@@ -57,15 +57,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Le proprietà dell'attributo includono:
 
-- **Categoria** -la categoria in cui è definita la regola. Per altre informazioni sulle categorie di regole di analisi del codice, vedere [gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Category** : la categoria in cui è definita la regola. Per ulteriori informazioni sulle categorie di regole di analisi del codice, vedere [avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).
 
-- **CheckId** -l'identificatore della regola. Il supporto include sia un nome breve e a lungo per l'identificatore della regola. Il nome breve è CAXXXX; il nome lungo è CAXXXX:FriendlyTypeName.
+- **CheckId** : identificatore della regola. Il supporto include un nome breve e lungo per l'identificatore della regola. Il nome breve è CAXXXX; il nome lungo è CAXXXX: FriendlyTypeName.
 
-- **Giustificazione** -il testo che consente di documentare il motivo dell'eliminazione del messaggio.
+- **Giustificazione** : testo utilizzato per documentare il motivo dell'eliminazione del messaggio.
 
-- **MessageId** -identificatore univoco di un problema per ogni messaggio.
+- **MessageID** : identificatore univoco di un problema per ogni messaggio.
 
-- **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. È supportato [ambiti](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) includono quanto segue:
+- **Ambito** : destinazione in cui viene eliminato l'avviso. Se la destinazione non è specificata, viene impostata sulla destinazione dell'attributo. Gli [ambiti](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) supportati sono i seguenti:
 
   - `module`
 
@@ -75,33 +75,33 @@ Le proprietà dell'attributo includono:
 
   - `member`
 
-  - `namespace` -L'ambito deve eliminare gli avvisi per lo spazio dei nomi stesso. Non elimina gli avvisi per i tipi nello spazio dei nomi.
+  - `namespace`-Questo ambito evita gli avvisi rispetto allo spazio dei nomi stesso. Non elimina gli avvisi rispetto ai tipi all'interno dello spazio dei nomi.
 
-  - `namespaceanddescendants` -(Novità di Visual Studio 2019) questo ambito Elimina gli avvisi in uno spazio dei nomi e tutti i simboli relativi discendenti. Il `namespaceanddescendants` valore è valido solo per gli analizzatori di Roslyn e viene ignorato dall'analisi statica binario, in base al FxCop.
+  - `namespaceanddescendants`-(Nuovo per Visual Studio 2019) questo ambito evita gli avvisi in uno spazio dei nomi e tutti i relativi simboli discendenti. Il `namespaceanddescendants` valore viene ignorato dall'analisi legacy.
 
-- **Destinazione** : un identificatore che consente di specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome di elemento completo.
+- **Target** : identificatore utilizzato per specificare la destinazione in cui l'avviso viene eliminato. Deve contenere un nome di elemento completo.
 
-## <a name="suppressmessage-usage"></a>Utilizzo SuppressMessage
+## <a name="suppressmessage-usage"></a>Utilizzo di SuppressMessage
 
-Avvisi dell'analisi codice vengono soppressi a livello di a cui il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene applicato l'attributo. Ad esempio, l'attributo può essere applicato all'assembly, modulo, tipo, membro o a livello di parametro. Lo scopo di questo è uno stretto accoppiamento le informazioni di eliminazione per il codice in cui si verifica la violazione.
+Gli avvisi di analisi del codice vengono eliminati a livello del quale <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene applicato l'attributo. Ad esempio, l'attributo può essere applicato a livello di assembly, modulo, tipo, membro o parametro. Lo scopo è quello di associare strettamente le informazioni di eliminazione al codice in cui si verifica la violazione.
 
-Il formato generale dell'eliminazione include la categoria della regola e un identificatore di regola, che contiene una rappresentazione leggibile facoltativa del nome della regola. Ad esempio:
+Il tipo di eliminazione generale include la categoria Rule e un identificatore della regola, che contiene una rappresentazione facoltativa leggibile del nome della regola. Ad esempio:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-Se esistono motivi di prestazioni strict per ridurre al minimo i metadati di eliminazione nell'origine, è possibile omettere il nome della regola. La categoria della regola e il relativo ID regola insieme costituiscono un identificatore di regola sufficientemente univoco. Ad esempio:
+Se sono presenti motivi di prestazioni rigorosi per ridurre al minimo i metadati di eliminazione in origine, il nome della regola può essere omesso. La categoria Rule e l'ID della regola costituiscono insieme un identificatore di regola sufficientemente univoco. Ad esempio:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
-Per ragioni di manutenibilità, omettendo il nome della regola non è consigliabile.
+Per motivi di gestibilità, non è consigliabile omettere il nome della regola.
 
-## <a name="suppress-selective-violations-within-a-method-body"></a>Non visualizzare le violazioni selettive all'interno di un corpo del metodo
+## <a name="suppress-selective-violations-within-a-method-body"></a>Non visualizzare le violazioni selettive all'interno del corpo di un metodo
 
-Eliminazione degli attributi possono essere applicati a un metodo, ma non possono essere incorporati all'interno di un corpo del metodo. Ciò significa che tutte le violazioni di una particolare regola vengono soppressi se si aggiunge il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> al metodo.
+Gli attributi di eliminazione possono essere applicati a un metodo, ma non possono essere incorporati all'interno di un corpo del metodo. Ciò significa che tutte le violazioni di una determinata regola vengono eliminate se si aggiunge l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo al metodo.
 
-In alcuni casi, si potrebbe voler eliminare una particolare istanza della violazione, ad esempio, in modo che codice futuro non è automaticamente esente dalla regola di analisi codice. Alcune regole di analisi del codice consentono di eseguire questa operazione usando il `MessageId` proprietà del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo. In generale, le regole di legacy per le violazioni in proposito un simbolo specifico (una variabile locale o un parametro) di `MessageId` proprietà. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) è riportato un esempio di tale regola. Tuttavia, non rispettano le regole precedenti per le violazioni sul codice eseguibile (non-symbol) il `MessageId` proprietà. Inoltre, gli analizzatori .NET Compiler Platform ("Roslyn") non rispettano la `MessageId` proprietà.
+In alcuni casi, potrebbe essere necessario eliminare una particolare istanza della violazione, ad esempio in modo che il codice futuro non venga esentato automaticamente dalla regola di analisi del codice. Alcune regole di analisi del codice consentono di eseguire questa operazione utilizzando `MessageId` la proprietà <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> dell'attributo. In generale, le regole legacy per le violazioni su un particolare simbolo (una variabile locale o un parametro) `MessageId` rispettano la proprietà. [CA1500: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) è un esempio di tale regola. Tuttavia, le regole legacy per le violazioni sul codice eseguibile (non simbolo) non rispettano `MessageId` la proprietà. Inoltre, gli analizzatori .NET Compiler Platform ("Roslyn") non rispettano `MessageId` la proprietà.
 
-Per eliminare una violazione di un simbolo specifico di una regola, specificare il nome del simbolo per il `MessageId` proprietà del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo. L'esempio seguente mostra il codice con due violazioni della [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;uno per il `name` variabile e uno per il `age` variabile. Solo la violazione per il `age` simbolo viene eliminato.
+Per eliminare una particolare violazione di un simbolo di una regola, specificare il nome del `MessageId` simbolo per la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> proprietà dell'attributo. Nell'esempio seguente viene illustrato il codice con due violazioni di CA1500 [: VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;uno per `name` la variabile e uno per `age` la variabile. Viene evitata solo la `age` violazione del simbolo.
 
 ```vb
 Public Class Animal
@@ -138,37 +138,37 @@ public class Animal
 
 ## <a name="generated-code"></a>Codice generato
 
-I compilatori di codice gestito e alcuni strumenti di terze parti generano codice per facilitare lo sviluppo rapido di codice. Il codice generato dal compilatore che viene visualizzato nel file di origine in genere è contrassegnato con il `GeneratedCodeAttribute` attributo.
+I compilatori di codice gestito e alcuni strumenti di terze parti generano codice per facilitare lo sviluppo rapido di codice. Il codice generato dal compilatore che viene visualizzato nei file di origine è in `GeneratedCodeAttribute` genere contrassegnato con l'attributo.
 
-È possibile scegliere se eliminare gli avvisi dell'analisi codice e gli errori per il codice generato. Per informazioni su come eliminare questi avvisi ed errori, vedere [come: Non visualizzare avvisi per il codice generato](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+È possibile scegliere se escludere gli avvisi e gli errori di analisi codice per il codice generato. Per informazioni sull'eliminazione di tali avvisi ed errori, vedere [How to: Non visualizzare avvisi per il](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)codice generato.
 
 > [!NOTE]
-> Analisi del codice ignora `GeneratedCodeAttribute` quando viene applicata a un intero assembly o un singolo parametro.
+> L'analisi del codice `GeneratedCodeAttribute` Ignora quando viene applicata a un intero assembly o a un singolo parametro.
 
-## <a name="global-level-suppressions"></a>Eliminazioni a livello globale
+## <a name="global-level-suppressions"></a>Eliminazione a livello globale
 
-Lo strumento di analisi codice gestito viene esaminato `SuppressMessage` gli attributi applicati a livello di assembly, modulo, tipo, membro o parametro. Viene inoltre generato violazioni contro le risorse e gli spazi dei nomi. Tali violazioni deve essere applicati a livello globale e sono con ambiti e di destinazione. Ad esempio, il messaggio seguente elimina una violazione dello spazio dei nomi:
+Lo strumento di analisi del codice gestito `SuppressMessage` esamina gli attributi applicati a livello di assembly, modulo, tipo, membro o parametro. Genera inoltre le violazioni rispetto a risorse e spazi dei nomi. Queste violazioni devono essere applicate a livello globale e sono definite a livello di ambito e di destinazione. Il messaggio seguente, ad esempio, disattiva una violazione dello spazio dei nomi:
 
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Quando si elimina un avviso con `namespace` ambito, viene eliminato l'avviso per lo spazio dei nomi stesso. Non elimina l'avviso in base a tipi nello spazio dei nomi.
+> Quando si elimina un avviso con `namespace` ambito, l'avviso viene eliminato rispetto allo spazio dei nomi stesso. Non elimina l'avviso rispetto ai tipi all'interno dello spazio dei nomi.
 
-Qualsiasi eliminazione può essere espresse specificando un ambito esplicito. È necessario in tempo reale di queste eliminazioni a livello globale. È possibile specificare l'eliminazione a livello di membro tramite la decorazione di un tipo.
+Qualsiasi eliminazione può essere espressa specificando un ambito esplicito. Queste evitazioni devono risiedere a livello globale. Non è possibile specificare l'eliminazione a livello di membro decorando un tipo.
 
-Eliminazioni a livello globale sono l'unico modo per eliminare i messaggi che fanno riferimento al codice generato dal compilatore che non esegue il mapping a un'origine utente specificato in modo esplicito. Ad esempio, il codice seguente elimina una violazione in base a un costruttore emesso dal compilatore:
+Le evitazioni a livello globale sono l'unico modo per non visualizzare i messaggi che fanno riferimento a codice generato dal compilatore che non esegue il mapping a un'origine utente fornita in modo esplicito. Il codice seguente, ad esempio, evita la violazione di un costruttore emesso dal compilatore:
 
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target` contiene sempre il nome dell'elemento completo.
+> `Target`contiene sempre il nome completo dell'elemento.
 
-## <a name="global-suppression-file"></a>File eliminazione globale
+## <a name="global-suppression-file"></a>File di eliminazione globale
 
-Il file di eliminazione globale conserva le eliminazioni a livello globale o le eliminazioni che non si specificano una destinazione. Ad esempio, in questo file vengono archiviate le eliminazioni a livello di assembly violazioni. Inoltre, alcune eliminazioni ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per un modello code-behind. Viene creato e aggiunto al progetto la prima volta che si seleziona un file di eliminazione globale i **nel File di eliminazione di progetto** opzione del **Suppress** comando il **elenco errori**finestra.
+Il file di eliminazione globale mantiene le eliminazioni che sono eliminazioni a livello globale o eliminazioni che non specificano alcuna destinazione. Ad esempio, le evitazioni per le violazioni a livello di assembly vengono archiviate in questo file. Inoltre, alcune ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per il code-behind di un form. Un file di eliminazione globale viene creato e aggiunto al progetto la prima volta che si seleziona l'opzione **nel file di eliminazione** del progetto del comando di eliminazione nella finestra di **Elenco errori** .
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
-- [Usare gli analizzatori di Roslyn](../code-quality/use-roslyn-analyzers.md)
+- [Usare gli analizzatori di codice](../code-quality/use-roslyn-analyzers.md)
