@@ -1,5 +1,5 @@
 ---
-title: Abilitare o disabilitare l'analisi codice
+title: Abilitare o disabilitare l'analisi del codice
 ms.date: 10/25/2018
 ms.topic: conceptual
 author: gewarren
@@ -7,31 +7,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec0a8a3f04830115d343fcef611cfbd338163395
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816243"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551043"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Procedura: Abilitare e disabilitare l'analisi automatica del codice per il codice gestito
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Procedura: Abilitare e disabilitare l'analisi automatica del codice gestito
 
-È possibile configurare l'analisi del codice (statico) da eseguire dopo ogni compilazione di un progetto di codice gestito. È possibile impostare le proprietà di analisi per ogni configurazione di compilazione codice diverso, ad esempio, eseguire il debug e release.
+È possibile configurare l'analisi del codice (statica) per l'esecuzione dopo ogni compilazione di un progetto di codice gestito. È possibile impostare diverse proprietà di analisi del codice per ogni configurazione della build, ad esempio debug e release.
 
-Questo articolo riguarda analisi del codice solo come statico e l'analisi codice non in tempo reale usando [analizzatori di codice Roslyn](roslyn-analyzers-overview.md).
+Questo articolo è valido solo per l'analisi legacy e non per l'analisi del codice in tempo reale usando gli analizzatori di [codice](roslyn-analyzers-overview.md).
 
-## <a name="to-enable-or-disable-automatic-code-analysis"></a>Per abilitare o disabilitare l'analisi del codice automatica
+## <a name="to-enable-or-disable-automatic-code-analysis"></a>Per abilitare o disabilitare l'analisi automatica del codice
 
-1. Nelle **Esplora soluzioni**, fare clic sul progetto e quindi scegliere **proprietà**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
-1. Nella finestra di dialogo proprietà del progetto, scegliere il **analisi del codice** scheda.
+1. Nella finestra di dialogo Proprietà del progetto scegliere la scheda **analisi codice** .
 
    > [!TIP]
-   > Tipi di progetto più recente, ad esempio le applicazioni .NET Core e .NET Standard non sono un **analisi del codice** scheda. Analisi statica del codice non sono disponibile per questi tipi di progetto, ma è comunque possibile ottenere usando analisi di codice in tempo reale [analizzatori di codice Roslyn](roslyn-analyzers-overview.md). Per eliminare gli avvisi generati dall'analisi del codice Roslyn, vedere la nota alla fine di questo articolo.
+   > I nuovi tipi di progetto, ad esempio le applicazioni .NET Core e .NET Standard, non dispongono di una scheda **analisi codice** . L'analisi legacy non è disponibile per questi tipi di progetto, ma è possibile ottenere l'analisi del codice in tempo reale usando [analizzatori di codice basati su .NET Compiler Platform](roslyn-analyzers-overview.md). Per escludere gli avvisi dagli analizzatori del codice, vedere la nota alla fine di questo articolo.
 
-1. Specificare il tipo di compilazione nella **Configuration** e la piattaforma di destinazione **piattaforma**.
+1. Specificare il tipo di compilazione nella **configurazione** e nella piattaforma didestinazione.
 
-1. Per abilitare o disabilitare l'analisi automatica del codice, selezionare o deselezionare i **Abilita analisi codice su compilazione** casella di controllo.
+1. Per abilitare o disabilitare l'analisi automatica del codice, selezionare o deselezionare la casella di controllo **Abilita analisi codice su compilazione** .
 
 > [!NOTE]
-> Il **Abilita analisi codice su compilazione** casella di controllo influisce solo sulle analisi statica del codice. Non influisce sul [analizzatori del codice Roslyn](roslyn-analyzers-overview.md), che viene eseguito sempre in fase di compilazione se sono stati installati come pacchetto NuGet. Se si desidera cancellare gli errori dell'analizzatore dal **elenco errori**, è possibile eliminare tutte le violazioni correnti scegliendo **Analizza** > **Esegui analisi del codice e non visualizzare attivo Problemi** nella barra dei menu. Per altre informazioni, vedere [escludere le violazioni](use-roslyn-analyzers.md#suppress-violations).
+> La casella **di controllo Abilita analisi codice su compilazione** ha effetto solo sull'analisi legacy. Non influisce sull'analizzatore di [codice basato su .NET Compiler Platform](roslyn-analyzers-overview.md), che viene sempre eseguito in fase di compilazione se è stato installato come pacchetto NuGet. Se si desidera cancellare gli errori dell'analizzatore dalla **Elenco errori**, è possibile eliminare tutte le violazioni correnti scegliendo **analizza** > **Esegui analisi codice ed elimina problemi attivi** sulla barra dei menu. Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione delle violazioni](use-roslyn-analyzers.md#suppress-violations).

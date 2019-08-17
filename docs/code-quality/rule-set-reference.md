@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825364"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550825"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 
-Quando si configurano analisi statica del codice per i progetti di codice gestito in Visual Studio, è possibile scegliere da un elenco di incorporati *set di regole*. È possibile usare uno di questi set di regole incorporate oppure è possibile [personalizzare un set di regole](../code-quality/how-to-create-a-custom-rule-set.md) in base alle esigenze di progetto.
+Quando si configura l'analisi legacy per i progetti di codice gestito in Visual Studio, è possibile scegliere da un elenco di *set di regole*predefiniti. È possibile usare uno di questi set di regole incorporate oppure è possibile [personalizzare un set di regole](../code-quality/how-to-create-a-custom-rule-set.md) in base alle esigenze di progetto.
 
 In questa sezione vengono illustrate le regole incorporate set e le regole (o gli avvisi) che contengono.
 
 > [!NOTE]
-> I set di regole in questa sezione riguardano le analisi statica del codice. Per informazioni sui set di regole disponibili per i pacchetti di Analizzatore Roslyn, vedere [usare set di regole con gli analizzatori di Roslyn](analyzer-rule-sets.md).
+> I set di regole in questa sezione riguardano l'analisi legacy. Per informazioni sui set di regole disponibili per i pacchetti dell'analizzatore di codice, vedere [usare i set di regole con gli analizzatori di codice](analyzer-rule-sets.md).
 
 - [Set di regole Tutte le regole](all-rules-rule-set.md)
 - [Set di regole base di correttezza per codice gestito](basic-correctness-rules-rule-set-for-managed-code.md)

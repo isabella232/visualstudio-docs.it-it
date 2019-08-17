@@ -1,6 +1,6 @@
 ---
 title: Soluzioni PowerPoint
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926423"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551466"
 ---
 # <a name="powerpoint-solutions"></a>Soluzioni PowerPoint
   Visual Studio fornisce modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office PowerPoint. È possibile usare i componenti aggiuntivi VSTO per automatizzare PowerPoint, estenderne le funzionalità o personalizzarne l'interfaccia utente.
@@ -31,8 +31,7 @@ ms.locfileid: "68926423"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> Vuoi sviluppare soluzioni che estendono l'esperienza di Office su [più piattaforme](https://dev.office.com/add-in-availability)? Vedere il nuovo [modello di componenti](https://dev.office.com/docs/add-ins/overview/office-add-ins)aggiuntivi per Office. I componenti aggiuntivi di Office hanno un footprint ridotto rispetto alle soluzioni e ai componenti aggiuntivi VSTO e possono essere compilati con quasi tutte le tecnologie di programmazione Web, ad esempio HTML5, JavaScript, CSS3 e XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![collegamento al video](../vsto/media/playvideo.gif "collegamento al video") Per una dimostrazione video correlata, [vedere Ricerca per categorie: Creazione di un componente aggiuntivo per Microsoft PowerPoint ](http://go.microsoft.com/fwlink/?LinkId=132767).
 

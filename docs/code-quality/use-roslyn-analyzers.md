@@ -1,5 +1,5 @@
 ---
-title: Gravità della regola dell'analizzatore ed estinzione
+title: Gravità e eliminazione delle regole dell'analizzatore
 ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,96 +11,96 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821522"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69548044"
 ---
-# <a name="use-roslyn-analyzers"></a>Usare gli analizzatori di Roslyn
+# <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
-Le regole dell'analizzatore di .NET compiler Platform ("Roslyn"), oppure *diagnostica*, analizzare il codice c# o Visual Basic mentre si digita. Ogni dato diagnostico ha uno stato di gravità e la soppressione predefinito che può essere sovrascritto per il progetto. Questo articolo illustra l'impostazione regola livello di gravità, usando i set di regole e le violazioni di disattivazione.
+Gli analizzatori di codice .NET Compiler Platform ("Roslyn") C# analizzano il codice o Visual Basic durante la digitazione. Ogni *diagnostica* o regola ha uno stato di gravità e di eliminazione predefinito che può essere sovrascritto per il progetto. In questo articolo viene illustrata l'impostazione della gravità della regola, l'utilizzo di set di regole e l'eliminazione di violazioni.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analizzatori in Esplora soluzioni
 
-È possibile eseguire gran parte della personalizzazione di dati diagnostici analyzer dal **Esplora soluzioni**. Se si [installare gli analizzatori](../code-quality/install-roslyn-analyzers.md) come pacchetto NuGet, un **analizzatori** nodo viene visualizzato sotto il **riferimenti** o **dipendenze** nodo  **Esplora soluzioni**. Se si espande **analizzatori**e quindi espandere uno degli assembly dell'analizzatore, noterete che tutti i dati diagnostici nell'assembly.
+È possibile eseguire gran parte della personalizzazione di diagnostica analizzatore da **Esplora soluzioni**. Se si [installano](../code-quality/install-roslyn-analyzers.md) gli analizzatori come pacchetto NuGet, un nodo analizzatori viene visualizzato nel nodo **riferimenti** o **dipendenze** in **Esplora soluzioni**. Se si espande **analizzatori**e si espande uno degli assembly dell'analizzatore, vengono visualizzati tutti i dati diagnostici nell'assembly.
 
-![Nodo di analizzatori in Esplora soluzioni](media/analyzers-expanded-in-solution-explorer.png)
+![Nodo analizzatori in Esplora soluzioni](media/analyzers-expanded-in-solution-explorer.png)
 
-È possibile visualizzare le proprietà di una diagnostica, inclusi nella relativa descrizione e il livello di gravità predefinito, il **proprietà** finestra. Per visualizzare le proprietà, pulsante destro del mouse sulla regola e selezionare **delle proprietà**, oppure selezionare la regola e quindi premere **Alt**+**invio**.
+È possibile visualizzare le proprietà di una diagnostica, incluse la descrizione e la gravità predefinita, nella finestra **Proprietà** . Per visualizzare le proprietà, fare clic con il pulsante destro del mouse sulla regola e scegliere **Proprietà**oppure selezionare la regola e quindi premere **ALT**+**invio**.
 
-![Proprietà diagnostica nella finestra proprietà](media/analyzer-diagnostic-properties.png)
+![Proprietà di diagnostica in Finestra Proprietà](media/analyzer-diagnostic-properties.png)
 
-Per visualizzare la documentazione online per la diagnostica, fare clic su diagnostica e selezionare **Visualizza la Guida**.
+Per visualizzare la documentazione online per una diagnostica, fare clic con il pulsante destro del mouse sulla diagnostica e selezionare **Visualizza Guida**.
 
-Le icone accanto a ogni dato diagnostico nelle **Esplora soluzioni** corrispondono alle icone visualizzate nell'insieme quando si aprono il collegamento nell'editor di regole:
+Le icone accanto a ogni diagnostica in **Esplora soluzioni** corrispondono alle icone visualizzate nel set di regole quando lo si apre nell'Editor:
 
-- la "i" in un cerchio indica una [severity](#rule-severity) di **Info**
-- il "!" in un triangolo indica una [severity](#rule-severity) di **avviso**
-- la "x" in un cerchio indica una [severity](#rule-severity) di **errore**
-- la "i" in un cerchio su uno sfondo di colore chiaro indica una [gravità](#rule-severity) di **nascosti**
-- la freccia verso il basso in un cerchio indica che la diagnostica viene eliminata
+- la "i" in un cerchio indica una [gravità](#rule-severity) delle **informazioni**
+- "!" in un triangolo indica una [gravità](#rule-severity) dell' **avviso**
+- la "x" in un cerchio indica una [gravità](#rule-severity) dell' **errore**
+- la "i" in un cerchio su uno sfondo chiaro indica una [gravità](#rule-severity) **nascosta**
+- la freccia rivolta verso il basso in un cerchio indica che la diagnostica è stata evitata
 
 ![Icone di diagnostica in Esplora soluzioni](media/diagnostics-icons-solution-explorer.png)
 
 ## <a name="rule-sets"></a>Set di regole
 
-Oggetto [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) è un file XML che archivia lo stato della gravità ed eliminazione per la diagnostica singoli.
+Un [set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) è un file XML che archivia lo stato di gravità ed eliminazione per la diagnostica individuale.
 
 > [!NOTE]
-> Set di regole possono includere le regole di analisi statica del codice (binario) e gli analizzatori di Roslyn.
+> I set di regole possono includere regole di analisi legacy e analizzatori di codice.
 
-Per modificare la regola attiva impostata nell'editor set di regole, fare clic sui **riferimenti** > **analizzatori** nodo **Esplora soluzioni** e selezionare **Aprire i Set di regole attivo**. Se questa è la prima volta che si modifica il set di regole, Visual Studio crea una copia della regola predefinita di file del set, assegna  *\<NomeProgetto > estensione ruleset*e lo aggiunge al progetto. Questa regola personalizzata anche imposta diventa attiva set di regole per il progetto.
+Per modificare il set di regole attivo nell'Editor set di regole, fare clic con il pulsante destro del mouse sul nodo**analizzatori** **riferimenti** > in **Esplora soluzioni** e selezionare **Apri set di regole attivo**. Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, ne  *\<assegna il nome NomeProgetto >. RuleSet*e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
 
-Per modificare la regola attiva impostata per un progetto, passare al **analisi del codice** scheda delle proprietà di un progetto. Selezionare il set di regole da nell'elenco sotto **eseguire questo set di regole**. Per aprire il set di regole, selezionare **aprire**.
+Per modificare il set di regole attive per un progetto, passare alla scheda **analisi codice** delle proprietà di un progetto. Selezionare il set di regole nell'elenco in **Esegui questo set di regole**. Per aprire il set di regole, selezionare **Apri**.
 
 > [!NOTE]
-> I progetti .NET core e .NET Standard non supportano i comandi di menu per il set di regole **Esplora soluzioni**, ad esempio **Apri Set di regole attivo**. Per specificare una diverso set di regole per un progetto .NET Core o .NET Standard, manualmente [aggiungere i **CodeAnalysisRuleSet** proprietà](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno di set di regole in Visual Studio interfaccia utente dell'editor set di regole.
+> I progetti .NET Core e .NET Standard non supportano i comandi di menu per i set di regole in **Esplora soluzioni**, ad esempio **aprire il set di regole attive**. Per specificare un set di regole non predefinite per un progetto .NET Core o .NET Standard, [aggiungere manualmente la proprietà **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno del set di regole nell'interfaccia utente dell'editor set di regole di Visual Studio.
 
 ## <a name="rule-severity"></a>Gravità della regola
 
-È possibile configurare il livello di gravità delle regole di Analizzatore, oppure *diagnostics*, se si [installare gli analizzatori](../code-quality/install-roslyn-analyzers.md) come pacchetto NuGet. Nella tabella seguente mostra le opzioni di gravità per la diagnostica:
+Se si [installano gli analizzatori](../code-quality/install-roslyn-analyzers.md) come pacchetto NuGet, è possibile configurare la gravità delle regole dell'analizzatore o della *diagnostica*. Nella tabella seguente vengono illustrate le opzioni di gravità per la diagnostica:
 
 |Gravità|Comportamento in fase di compilazione|Comportamento dell'editor|
 |-|-|-|
-|Error|Violazioni vengono visualizzati come *errori* nel **elenco errori** nella riga di comando dell'output di compilazione e causare compilazioni esito negativo.|Codice all'origine del problema è sottolineato con una linea rossa ondulata e contrassegnata da una piccola casella rossa nella barra di scorrimento.|
-|Avviso|Violazioni vengono visualizzati come *gli avvisi* nel **elenco errori** e nella riga di comando dell'output di compilazione, ma non causano compilazioni esito negativo.|Codice all'origine del problema è sottolineato con una linea verde ondulata e contrassegnata da una piccola casella verde nella barra di scorrimento.|
-|Info|Violazioni vengono visualizzati come *messaggi* nel **elenco errori**e non ricorrere affatto nell'output di compilazione da riga di comando.|Codice all'origine del problema è sottolineato con un grigio Ondulato e contrassegnato da una piccola casella grigia nella barra di scorrimento.|
-|Hidden|Non visibile all'utente.|Non visibile all'utente. La diagnostica viene segnalata al motore di diagnostica di IDE, tuttavia.|
-|nessuno|Eliminato completamente.|Eliminato completamente.|
+|Error|Le violazioni vengono visualizzate come *errori* nel **Elenco errori** e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.|Il codice che offende è sottolineato con un ondulato rosso e contrassegnato da una piccola casella rossa nella barra di scorrimento.|
+|Avviso|Le violazioni vengono visualizzate come *avvisi* nell' **Elenco errori** e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni.|Il codice danneggiato è sottolineato con una ondulazione verde e contrassegnata da una piccola casella verde nella barra di scorrimento.|
+|Info|Le violazioni vengono visualizzate come *messaggi* nell' **Elenco errori**e non nell'output di compilazione da riga di comando.|Il codice che causa il danneggiamento è sottolineato con uno ondulato grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento.|
+|Hidden|Non visibile all'utente.|Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE.|
+|nessuno|Eliminati completamente.|Eliminati completamente.|
 
-Inoltre, è possibile "Reimposta" gravità della regola impostandolo su **predefinito**. Ogni dato diagnostico con gravità predefiniti che possono essere visualizzate nei **proprietà** finestra.
+Inoltre, è possibile "reimpostare" la gravità di una regola impostando il **valore predefinito**. Ogni diagnostica presenta una gravità predefinita che può essere visualizzata nella finestra **Proprietà** .
 
-Lo screenshot seguente mostra tre diverse violazioni di diagnostica nell'editor di codice, con tre diversi livelli di gravità. Si noti che il colore dell'ondulata, come pure la piccola casella nella barra di scorrimento a destra.
+Lo screenshot seguente mostra tre diverse violazioni di diagnostica nell'editor di codice, con tre livelli di gravità diversi. Si noti il colore dello ondulato, nonché la piccola casella nella barra di scorrimento a destra.
 
-![Violazione di errore, avviso e informazioni nell'editor del codice](media/diagnostics-severity-colors.png)
+![Violazione di errori, avvisi e informazioni nell'editor di codice](media/diagnostics-severity-colors.png)
 
-Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono nel **elenco errori**:
+Lo screenshot seguente mostra le stesse tre violazioni visualizzate nel **Elenco errori**:
 
-![Violazione di errore, avviso e informazioni nell'elenco errori](media/diagnostics-severities-in-error-list.png)
+![Violazione di errori, avvisi e informazioni in Elenco errori](media/diagnostics-severities-in-error-list.png)
 
-È possibile modificare la gravità di una regola dal **Esplora soluzioni**, o all'interno di  *\<projectname > estensione ruleset* file che viene aggiunto alla soluzione dopo aver modificato la gravità di una regola in  **Esplora soluzioni**.
+È possibile modificare la gravità di una regola da **Esplora soluzioni**o all'interno del  *\<file NomeProgetto >. RuleSet* aggiunto alla soluzione dopo aver modificato la gravità di una regola in **Esplora soluzioni**.
 
 ![File del set di regole in Esplora soluzioni](media/ruleset-in-solution-explorer.png)
 
-### <a name="set-rule-severity-from-solution-explorer"></a>Impostare la gravità di regola da Esplora soluzioni
+### <a name="set-rule-severity-from-solution-explorer"></a>Imposta gravità regola da Esplora soluzioni
 
-1. Nelle **Esplora soluzioni**, espandere **riferimenti** > **analizzatori** (**dipendenze**  >  **Analizzatori** per i progetti .NET Core).
+1. In **Esplora soluzioni**, espandere**analizzatori** di **riferimenti** > (**analizzatori** **dipendenze** > per i progetti .NET Core).
 
-1. Espandere l'assembly che contiene la regola che si desidera impostare la gravità per.
+1. Espandere l'assembly che contiene la regola per la quale si desidera impostare la gravità.
 
-1. Pulsante destro del mouse sulla regola e selezionare **imposta gravità Set di regole**. Nel menu a comparsa, selezionare una delle opzioni di gravità.
+1. Fare clic con il pulsante destro del mouse sulla regola e selezionare **imposta gravità set di regole**. Nel menu a comparsa selezionare una delle opzioni di gravità.
 
-   La gravità della regola viene salvata nel file di set di regole attivo.
+   Il livello di gravità per la regola viene salvato nel file del set di regole attivo.
 
-### <a name="set-rule-severity-in-the-rule-set-file"></a>Impostare la gravità regola nel file di set di regole
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Imposta gravità regola nel file del set di regole
 
-1. Aprire il [set di regole](analyzer-rule-sets.md) file facendo doppio clic su esso in **Esplora soluzioni**, selezionando **Apri Set di regole attivo** nel menu di scelta rapida del **analizzatori** nodo, o selezionando **aperta** sul **analisi del codice** pagina delle proprietà per il progetto.
+1. Aprire il file del [set di regole](analyzer-rule-sets.md) facendo doppio clic su di esso in **Esplora soluzioni**, selezionando **Apri set di regole attivo** dal menu di scelta rapida del nodo **analizzatori** oppure selezionando **Apri** nella pagina delle proprietà **analisi codice** per progetto.
 
-1. Passare alla regola espandendo relativo assembly che lo contiene.
+1. Passare alla regola espandendo l'assembly contenitore.
 
-1. Nel **azione** colonna, selezionare il valore per aprire un elenco a discesa e selezionare il livello di gravità desiderato dall'elenco.
+1. Nella colonna **azione** selezionare il valore per aprire un elenco a discesa e selezionare la gravità desiderata nell'elenco.
 
    ![File del set di regole aperto nell'editor](media/ruleset-file-in-editor.png)
 
@@ -108,71 +108,71 @@ Lo screenshot seguente mostra le violazioni di tre stesso così come appaiono ne
 
 Esistono diversi modi per eliminare le violazioni delle regole:
 
-- Dal **Analyze** menu
+- Dal menu **analizza**
 
-  Selezionare **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi** nella barra dei menu per eliminare tutte le violazioni correnti. Ciò è talvolta detta "base".
+  Selezionare **analizza** > **Esegui analisi codice ed evitare i problemi attivi** nella barra dei menu per disattivare tutte le violazioni correnti. Questa operazione viene a volte definita "baselining".
 
 - Da **Esplora soluzioni**
 
-  Per eliminare una violazione **Esplora soluzioni**, impostare la gravità della regola **None**.
+  Per eliminare una violazione in **Esplora soluzioni**, impostare la gravità della regola su **None**.
 
-- Dal **editor set di regole**
+- Dall' **Editor set di regole**
 
-  Per eliminare una violazione da editor set di regole, deselezionare la casella accanto al relativo nome o impostare **azione** al **None**.
+  Per eliminare una violazione dall'editor del set di regole, deselezionare la casella accanto al nome o impostare l' **azione** su **nessuno**.
 
-- Dal **editor di codice**
+- Dall' **editor di codice**
 
-  Per eliminare una violazione dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+ **.** Per aprire la **azioni rapide** menu. Selezionare **sopprimere CAXXXX** > **nell'origine/nel File di eliminazione**.
+  Per evitare una violazione dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **CTRL**+ **.** per aprire il menu **azioni rapide** . Selezionare **Elimina CAXXXX** > **nel file di origine/eliminazione**.
 
-  ![Non visualizzare diagnostica dal menu Azioni rapide](media/suppress-diagnostic-from-editor.png)
+  ![Disattiva diagnostica dal menu azioni rapide](media/suppress-diagnostic-from-editor.png)
 
-- Dal **elenco errori**
+- Dal **Elenco errori**
 
-  È possibile eliminare uno o molti dati diagnostici dalle **elenco errori** quelle che si desidera eliminare, selezionando e facendo clic e **Suppress** > **Source/In In File di eliminazione**.
+  È possibile disattivare uno o più dati diagnostici dal **Elenco errori** selezionando quelli da escludere, quindi facendo clic con il pulsante destro del mouse e selezionando **Elimina** > **in origine/in file di eliminazione**.
 
-  - Se si eliminano **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del C# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
+  - Se si omette **in origine**, viene visualizzata la finestra di dialogo **Anteprima modifiche** che mostra un' C# anteprima della [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic direttiva di [avviso #Disable](/dotnet/visual-basic/language-reference/directives/directives) aggiunta al codice sorgente.
 
-    ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
+    ![Anteprima dell'aggiunta di #pragma avviso nel file di codice](media/pragma-warning-preview.png)
 
-  - Se si seleziona **File di eliminazione**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo che viene aggiunto al file le ulteriori eliminazioni globali.
+  - Se si seleziona **in file di eliminazione**, viene visualizzata la finestra di dialogo **Anteprima modifiche** con un' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> anteprima dell'attributo aggiunto al file di eliminazione globale.
 
-    ![Anteprima di aggiunta attributo SuppressMessage per file di eliminazione](media/preview-changes-in-suppression-file.png)
+    ![Anteprima dell'aggiunta dell'attributo SuppressMessage al file di eliminazione](media/preview-changes-in-suppression-file.png)
 
-  Nel **Anteprima modifiche** finestra di dialogo, seleziona **applica**.
+  Nella finestra di dialogo **Anteprima modifiche** selezionare **applica**.
 
   > [!NOTE]
-  > Se non viene visualizzato il **Suppress** opzione di menu nel **Esplora soluzioni**, la violazione probabilmente proviene dalla compilazione e l'analisi non in tempo reale. Il **elenco errori** Visualizza diagnostica o regola violazioni, sia da analisi di codice in tempo reale e di compilazione. Poiché i dati di diagnostica di compilazione può essere non aggiornato, ad esempio, se è stato modificato il codice per correggere la violazione ma non sono state ricreate, Impossibile eliminare questi dati diagnostici dal **elenco errori**. Diagnostica di analisi in tempo reale o IntelliSense, sono sempre aggiornata con le origini corrente che possono essere eliminata dal **elenco errori**. Per escludere *compilare* diagnostica dalla selezione, passare il **elenco errori** filtro di origine dal **compilazione + IntelliSense** a **solo Intellisense**. Selezionare quindi i dati di diagnostica che si desidera eliminare e procedere come descritto in precedenza.
+  > Se non viene visualizzata l'opzione di menu non **visualizzare** in **Esplora soluzioni**, è probabile che la violazione provenga da compilazione e non da analisi in tempo reale. Il **Elenco errori** Visualizza la diagnostica, o le violazioni delle regole, dall'analisi del codice in tempo reale e dalla compilazione. Poiché la diagnostica di compilazione può essere obsoleta, ad esempio se è stato modificato il codice per correggere la violazione ma non è stata ricompilata, non è possibile eliminare questi dati diagnostici dal **Elenco errori**. I dati di diagnostica da analisi in tempo reale o IntelliSense sono sempre aggiornati con le origini correnti e possono essere eliminati dal **Elenco errori**. Per escludere la diagnostica di *compilazione* dalla selezione, impostare il filtro di origine **Elenco errori** da **compilazione e IntelliSense** **solo in IntelliSense**. Selezionare quindi la diagnostica che si vuole escludere e procedere come descritto in precedenza.
   >
-  > ![Filtro origine dell'elenco errori in Visual Studio](media/error-list-filter.png)
+  > ![Filtro di origine Elenco errori in Visual Studio](media/error-list-filter.png)
 
-## <a name="command-line-usage"></a>Utilizzo della riga di comando
+## <a name="command-line-usage"></a>Uso della riga di comando
 
-Quando si compila il progetto nella riga di comando, le violazioni delle regole vengono visualizzati nell'output di compilazione se vengono soddisfatte le condizioni seguenti:
+Quando si compila il progetto dalla riga di comando, le violazioni delle regole vengono visualizzate nell'output di compilazione se vengono soddisfatte le condizioni seguenti:
 
-- Gli analizzatori vengono installati come pacchetto Nuget e non come estensione VSIX.
+- Gli analizzatori vengono installati come pacchetto NuGet e non come estensione VSIX.
 
-- Uno o più regole vengono violate nel codice del progetto.
+- Una o più regole sono violate nel codice del progetto.
 
-- Il [gravità](#rule-severity) di una regola ha violata è impostato su **avviso**, nel qual caso le violazioni non provocare l'errore, di compilazione oppure **errore**, nel qual caso le violazioni provocare l'errore di compilazione.
+- Il livello di [gravità](#rule-severity) di una regola violata è impostato su **warning**, nel qual caso le violazioni non causano errori di compilazione o **errore**, nel qual caso le violazioni causano errori di compilazione.
 
-Il livello di dettaglio dell'output di compilazione non interessa sia le violazioni delle regole sono visualizzate. Nonostante **quiet** livello di dettaglio, le violazioni delle regole visualizzate nell'output della compilazione.
+Il livello di dettaglio dell'output di compilazione non influisce sull'eventuale visualizzazione delle violazioni delle regole. Anche con il livello di dettaglio **silenzioso** , le violazioni delle regole vengono visualizzate nell'output di compilazione.
 
 > [!TIP]
-> Se si è abituati all'esecuzione di analisi statica del codice dalla riga di comando, specificando *FxCopCmd.exe* o tramite msbuild con i **RunCodeAnalysis** flag, ecco come farlo con analizzatori di Roslyn.
+> Se si è abituati a eseguire l'analisi legacy dalla riga di comando, con *FxCopCmd. exe* o tramite MSBuild con il flag **RunCodeAnalysis** , di seguito viene illustrato come eseguire questa operazione con gli analizzatori di codice.
 
-Per visualizzare le violazioni di Analizzatore nella riga di comando quando si compila il progetto usando msbuild, eseguire un comando simile al seguente:
+Per visualizzare le violazioni dell'analizzatore dalla riga di comando quando si compila il progetto usando MSBuild, eseguire un comando simile al seguente:
 
 ```cmd
 msbuild myproject.csproj /target:rebuild /verbosity:minimal
 ```
 
-L'immagine seguente mostra l'output di compilazione da riga di comando di compilazione di un progetto che contiene una violazione della regola dell'analizzatore:
+Nell'immagine seguente viene illustrato l'output di compilazione da riga di comando della compilazione di un progetto che contiene una violazione della regola dell'analizzatore:
 
 ![Output MSBuild con violazione della regola](media/command-line-build-analyzers.png)
 
 ## <a name="dependent-projects"></a>Progetti dipendenti
 
-In un progetto .NET Core, se si aggiunge un riferimento a un progetto con gli analizzatori di NuGet, tali analizzatori vengono automaticamente aggiunti al progetto dipendente troppo. Per disabilitare questo comportamento, ad esempio se il progetto dipendente è un progetto di unit test, contrassegnare il pacchetto NuGet come privata nel *file con estensione csproj* oppure *vbproj* file del progetto di riferimento, impostare il **PrivateAssets** attributo:
+In un progetto .NET Core, se si aggiunge un riferimento a un progetto che include analizzatori NuGet, questi analizzatori vengono aggiunti automaticamente al progetto dipendente. Per disabilitare questo comportamento, ad esempio se il progetto dipendente è un progetto di unit test, contrassegnare il pacchetto NuGet come privato nel file con *estensione csproj* o *VBPROJ* del progetto a cui si fa riferimento impostando l'attributo **PrivateAssets** :
 
 ```xml
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
@@ -180,7 +180,7 @@ In un progetto .NET Core, se si aggiunge un riferimento a un progetto con gli an
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica degli analizzatori di Roslyn in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Inviare un bug di Analizzatore Roslyn](https://github.com/dotnet/roslyn-analyzers/issues)
+- [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
+- [Inviare un bug dell'analizzatore del codice](https://github.com/dotnet/roslyn-analyzers/issues)
 - [Usare set di regole](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Non visualizzare gli avvisi dell'analisi codice](../code-quality/in-source-suppression-overview.md)
+- [Non visualizzare gli avvisi di analisi codice](../code-quality/in-source-suppression-overview.md)

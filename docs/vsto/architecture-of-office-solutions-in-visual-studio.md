@@ -1,7 +1,7 @@
 ---
 title: Architettura delle soluzioni Office in Visual Studio
 titleSuffix: ''
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 187548a8510b3075c476a1309d1897eb60a647c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939924"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551871"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architettura delle soluzioni Office in Visual Studio
   Negli argomenti di questa sezione vengono fornite informazioni sulle soluzioni create tramite gli strumenti di sviluppo di Office in Visual Studio.
 
-> [!NOTE]
-> Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -38,32 +37,32 @@ Viene descritto il funzionamento delle personalizzazioni a livello di documento 
 
 Vengono descritti i componenti aggiuntivi VSTO e come vengono caricati dalle applicazioni.
 
-[Visual Studio Tools per Office Runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+[Panoramica di Strumenti di Visual Studio per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 
 Vengono descritte le diverse versioni del runtime che viene usato per le soluzioni Office.
 
-[Voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
+[Voci del registro di sistema per i componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
 
-Descrive le chiavi del Registro di sistema necessarie nei computer dell'utente finale di individuare e caricare componenti aggiuntivi VSTO.
+Descrive le chiavi del registro di sistema necessarie nei computer degli utenti finali per individuare e caricare i componenti aggiuntivi VSTO.
 
-[Cenni preliminari sulle proprietà personalizzate dei documenti](../vsto/custom-document-properties-overview.md)
+[Cenni preliminari sulle proprietà personalizzate del documento](../vsto/custom-document-properties-overview.md)
 
 Viene spiegato il funzionano delle proprietà personalizzate dei documenti nelle personalizzazioni a livello di documento.
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-[Panoramica dello sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Panoramica &#40;dello sviluppo di soluzioni Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 Viene fornita un'introduzione all'utilizzo di Microsoft Office come piattaforma per lo sviluppo di soluzioni di business.
 
-[Iniziare a usare &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Introduzione &#40;allo sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Vengono forniti i collegamenti alle informazioni sulla configurazione di un computer di sviluppo per creare soluzioni Office, su come iniziare a creare soluzioni e su cosa è cambiato rispetto alle versioni precedenti degli strumenti di sviluppo di Office in Visual Studio.
 
-[Progettare e creare soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
+[Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 
 Vengono forniti i collegamenti alle informazioni sulla creazione di soluzioni Office.
 
-[Riferimento generale &#40;sviluppo per Office in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Guida di &#40;riferimento generale sviluppo per Office in Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
 Vengono forniti i collegamenti alle informazioni sugli elementi dell'interfaccia utente nei progetti di Office, sulle applicazioni e sui manifesti di distribuzione per progetti di Office e sulle API nel [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].

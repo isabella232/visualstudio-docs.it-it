@@ -10,17 +10,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3231efbac4f4c101632e281fd54718e688bb885
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: a44465b5f3daf89e915a5f6f5e7abe6c856598e5
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195137"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546918"
 ---
 # <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi codice per il codice gestito in Visual Studio
 
-Visual Studio è possibile eseguire analisi del codice del codice gestito in due modi: con [analizzatori binari](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), noto anche come FxCop analisi statica di assembly gestiti e con le altre modern [analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md). Gli analizzatori di Roslyn, che analizzano il codice in tempo reale durante la digitazione, sostituiscono FxCop analisi statica, che analizza solo il codice dopo una compilazione.  
+Visual Studio è in grado di eseguire l'analisi codice del codice gestito in due modi: con l' [analisi legacy](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), nota anche come analisi statica FxCop degli assembly gestiti e con gli analizzatori di [codice](../code-quality/roslyn-analyzers-overview.md)più moderni basati su .NET Compiler Platform. Gli analizzatori di codice basati su .NET Compiler Platform, che analizzano il codice in tempo reale durante la digitazione, sostituiscono l'analisi del codice statica FxCop legacy, che analizza solo il codice compilato.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica degli analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md)
+- [Panoramica degli analizzatori basati su .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)

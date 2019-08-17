@@ -1,6 +1,6 @@
 ---
-title: 'Procedura: A livello di codice Invia messaggio di posta elettronica'
-ms.date: 02/02/2017
+title: 'Procedura: Inviare messaggi di posta elettronica a livello di codice'
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72d033add2ba8320b14eebd5af700ab225d34410
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961888"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551762"
 ---
-# <a name="how-to-programmatically-send-email"></a>Procedura: A livello di codice Invia messaggio di posta elettronica
-  In questo esempio invia un messaggio di posta elettronica per i contatti con il nome di dominio **example.com** nei relativi indirizzi di posta elettronica.
+# <a name="how-to-programmatically-send-email"></a>Procedura: Inviare messaggi di posta elettronica a livello di codice
+  Questo esempio Invia un messaggio di posta elettronica ai contatti che hanno il nome di dominio **example.com** nei rispettivi indirizzi di posta elettronica.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="example"></a>Esempio
  [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]
@@ -33,13 +35,13 @@ ms.locfileid: "62961888"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
-- I contatti con il nome di dominio **example.com** nei relativi indirizzi di posta elettronica.
+- Contatti con il nome di dominio **example.com** nei rispettivi indirizzi di posta elettronica.
 
 ## <a name="robust-programming"></a>Programmazione efficiente
  Non rimuovere il codice di filtro che cerca il nome di dominio **example.com**. Se si rimuove il filtro, la soluzione invierà messaggi di posta elettronica a tutti i contatti.
 
 ## <a name="see-also"></a>Vedere anche
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
-- [Procedura: A livello di codice crea un elemento di posta elettronica](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [Procedura: Accedere a livello di codice ai contatti di Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [Procedura: A livello di programmazione eseguire azioni quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [Procedura: Creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md)
+- [Procedura: Accedere ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [Procedura: Eseguire azioni a livello di codice quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
