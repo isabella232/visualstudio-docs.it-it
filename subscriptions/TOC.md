@@ -1,7 +1,7 @@
 # [Sottoscrizioni di Visual Studio](index.md)
 ## [Novità](whats-new-in-subscriptions.md)
 ## Sottoscrizioni
-### Acquisto di sottoscrizioni
+### Acquistare sottoscrizioni
 #### [Retail](https://visualstudio.microsoft.com/vs/pricing) (Vendita)
 #### Cloud 
 ##### [Panoramica](vscloud-overview.md)
@@ -10,9 +10,9 @@
 #### [Visual Studio con GitHub Enterprise](access-github.md)
 #### Microsoft Partner Network
 ##### [Sottoscrizioni per i partner](program-mpn.md)
-##### [Gestione delle sottoscrizioni per MPN](manage-mpn-subscriptions.md)
+##### [Gestire le sottoscrizioni per MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
-### Accesso 
+### Accedi 
 #### [Attivare le sottoscrizioni al dettaglio](activate-store-subscriptions.md)
 #### [Accedere con account Microsoft](sign-in-msa.md)
 #### [Accedere con l'account aziendale o dell'istituto di istruzione](sign-in-work.md)
@@ -21,7 +21,7 @@
 #### [Problemi di accesso](sign-in-issues.md)
 #### [Anonimizzazioni dei dati dei sottoscrittori](anonymization.md)
 ### [Panoramica del portale delle sottoscrizioni](using-the-subscriber-portal.md)
-### [Gestione delle sottoscrizioni](manage-vs-subscriptions.md)
+### [Gestire le sottoscrizioni](manage-vs-subscriptions.md)
 ### Vantaggi
 #### Strumenti
 ##### [Credito Azure](vs-azure.md)
