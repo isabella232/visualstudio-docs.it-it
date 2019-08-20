@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975895"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585074"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 
-Il set di regole delle linee guida di progettazione estesa Microsoft consente di espandere le regole di progettazione di base delle linee guida per ottimizzare i problemi di usabilità e facilità di gestione che vengono segnalati. Extra attenzione è rivolta alle linee guida sulla denominazione. È consigliabile includere questa regola impostata se il progetto contiene codice di libreria o se si desidera applicare gli standard ottimali per la scrittura di codice che è facile da gestire.
+Il set di regole delle linee guida per la progettazione estesa Microsoft espande le regole delle linee guida di progettazione di base per massimizzare i problemi di usabilità e gestibilità segnalati. Le linee guida per la denominazione hanno un'enfasi aggiuntiva. È consigliabile includere questo set di regole se il progetto include il codice della libreria o se si desidera applicare gli standard più elevati per la scrittura di codice facile da gestire.
 
-Le regole delle linee guida di progettazione estesa includono tutte le regole Microsoft base delle linee guida di progettazione del disegno. Le regole base delle linee guida di progettazione includono tutte le regole Microsoft minime. Per altre informazioni, vedere [set di regole regole base delle linee guida di progettazione per codice gestito](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) e [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Le regole delle linee guida di progettazione estese includono tutte le regole del set di regole di [base della Guida di progettazione](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , che include le regole nel set di regole consigliate [gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
-Nella tabella seguente vengono descritte tutte le regole nel set di regole regole estese progettazione Microsoft delle linee guida.
+Nella tabella seguente vengono descritte tutte le regole del set di regole delle linee guida di progettazione estese Microsoft.
 
-|Regola|Descrizione|
+|Regola|DESCRIZIONE|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Dichiarare correttamente i gestori eventi|
@@ -65,7 +65,7 @@ Nella tabella seguente vengono descritte tutte le regole nel set di regole regol
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare i LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare I LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711384"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918175"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -169,7 +169,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 |**Classe**|Raggruppa i test in base alla classe contenitore.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Raggruppare per tratti
+### <a name="traits"></a>Tratti
 
 Una tratto è in genere una coppia nome/valore di una categoria, ma può anche essere una singola categoria. I tratti possono essere assegnati ai metodi identificati come metodi di test dal framework di unit test. Un framework di unit test può definire le categorie dei tratti. È possibile aggiungere valori alle categorie dei tratti per definire coppie nome/valore personalizzate per le categorie. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.
 
@@ -187,7 +187,7 @@ Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore 
 
 **Tratti nel framework di unit test Microsoft per C++**
 
- Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-microsoft-test-framework-for-cpp.md).
+Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ## <a name="create-custom-playlists"></a>Creare playlist personalizzate
 
@@ -215,7 +215,7 @@ La playlist si apre in una nuova scheda di Esplora test. È possibile usare ques
 
 ![La playlist si apre in una nuova scheda di Esplora test](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi a playlist** > **Nuova playlist**. 
+**Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi a playlist** > **Nuova playlist**.
 
 **Per aprire una playlist**, scegliere l'icona della playlist sulla barra degli strumenti di Visual Studio, quindi scegliere un file di playlist salvato in precedenza dal menu.
 ::: moniker-end
@@ -229,7 +229,7 @@ I [gruppi](#test-explorer-groups) sono disponibili anche come colonne in Esplora
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrare, ordinare e ridisporre le colonne di test
 
-Le colonne possono essere filtrate, ordinate e ridisposte. 
+Le colonne possono essere filtrate, ordinate e ridisposte.
 * Per filtrare in base a tratti specifici, fare clic sull'icona del filtro nella parte superiore della colonna Tratti.
 
   ![Filtro delle colonne](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, sel
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analizzare il code coverage di unit test
 
-È possibile determinare la quantità di codice del prodotto sottoposta effettivamente a test dagli unit test usando lo strumento per il code coverage di Visual Studio. È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione.
+È possibile determinare la quantità di codice del prodotto sottoposta effettivamente a test dagli unit test usando lo strumento per il code coverage di Visual Studio disponibile nell'edizione Visual Studio Enterprise. È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione.
 
 Per eseguire il code coverage per i metodi di test in una soluzione:
 
@@ -331,6 +331,8 @@ I test possono essere eseguiti da **Esplora test** facendo clic nell'editor di c
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **CTRL**+**T**|
 |TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
+|TestExplorer.RunAllTests|**CTRL**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**CTRL**+**R**, **L**|
 
 > [!NOTE]
 > Non è possibile eseguire un test in una classe astratta, poiché i test vengono solo definiti nelle classi astratte ma non ne viene creata l'istanza. Per eseguire i test nelle classi astratte, creare una classe che deriva dalla classe astratta.

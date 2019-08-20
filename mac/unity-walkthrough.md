@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla creazione di giochi con Unity in Visual Studio per Mac
+title: Introduzione alla creazione di giochi con Unity
 description: Introduzione all'uso di Unity e Visual Studio per Mac
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,14 @@ ms.date: 05/20/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: 8f14d21468336dba220a76ad8978f136d50f96f1
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: dd69156b1397ba6232d9143f54b0de1ef4506ecc
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836160"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68873455"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introduzione alla creazione di giochi con Unity in Visual Studio per Mac 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introduzione alla creazione di giochi con Unity in Visual Studio per Mac
 
 Unity è un motore per giochi che consente di sviluppare giochi in C#. Questa procedura dettagliata illustra come iniziare a sviluppare giochi con Unity ed eseguirne il debug con Visual Studio per Mac e l'estensione Visual Studio for Mac Tools for Unity in parallelo con l'ambiente Unity.
 
@@ -156,7 +156,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
         public float Speed = 50;
         private Transform _playerTransform;
         private Transform _myTransform;
-        
+
         void Start()
         {
             var player = GameObject.FindGameObjectWithTag("Player");

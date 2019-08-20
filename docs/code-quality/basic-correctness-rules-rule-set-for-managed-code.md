@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919562"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585004"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
-Il set di regole di base di correttezza è incentrato sugli errori logici e sugli errori comuni nell'utilizzo delle API del Framework. Le regole di correttezza di base includono le regole nel set di regole minime consigliate. Per ulteriori informazioni, vedere [set di regole consigliate gestite per il codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) è necessario includere questo set di regole per espandersi nell'elenco degli avvisi segnalati dal report sulle regole minime consigliate.
+
+Il set di regole di base di correttezza è incentrato sugli errori logici e sugli errori comuni nell'utilizzo delle API del Framework. Le regole di correttezza di base includono le regole del set di regole [consigliate gestite](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Basic Correctity Rules.
 

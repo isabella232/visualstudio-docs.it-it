@@ -14,12 +14,12 @@ ms.topic: conceptual
 dev_langs:
 - CSharp
 - CPP
-ms.openlocfilehash: 2686248a087650f6170b72c8ef9b3a77e2ba275c
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
+ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957344"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585377"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Supporto per la sensibilizzazione per monitor per Extender di Visual Studio
 
@@ -29,7 +29,7 @@ Il contesto di riconoscimento DPI di Visual Studio 2019 è impostato come PMA, q
 
 Per ulteriori informazioni sui termini e sullo scenario generale trattati in questo documento, vedere la documentazione relativa [allo sviluppo di applicazioni desktop con DPI elevato in Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) .
 
-## <a name="quickstart"></a>Guida rapida
+## <a name="quickstart"></a>Guida introduttiva
 
 - Verificare che Visual Studio sia in esecuzione in modalità PMA (vedere Abilitazione di **PMA**)
 
@@ -215,7 +215,7 @@ Se viene eseguita la migrazione di una finestra degli strumenti non WPF per supp
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
-public interface IVsDpiAeware
+public interface IVsDpiAware
 {
     [ComAliasName("Microsoft.VisualStudio.Shell.Interop.VSDPIMode")]
     uint Mode {get;}

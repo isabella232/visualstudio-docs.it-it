@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821411"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918048"
 ---
 # <a name="installation"></a>Installazione
 
@@ -37,14 +37,14 @@ Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2
 
 ## <a name="prepare-your-local-machine"></a>Preparare il computer locale
 
-Prima di eseguire il training di modelli di apprendimento nel computer locale, assicurarsi di aver installato i prerequisiti appropriati. Questi includono anche le librerie e i driver più recenti per la GPU NVIDIA, se presente. È anche necessario verificare di aver installato Python e le librerie Python, tra cui NumPy e SciPy, e i framework di apprendimento avanzato appropriati, come Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer, che si prevede di usare nel progetto.
+Prima di eseguire il training di modelli di apprendimento nel computer locale, assicurarsi di aver installato i prerequisiti appropriati. Questi includono anche le librerie e i driver più recenti per la GPU NVIDIA, se presente. Verificare anche di aver installato Python e le librerie Python, tra cui NumPy e SciPy, e i framework di apprendimento avanzato appropriati, come Microsoft Cognitive Toolkit (CNTK), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer, che si prevede di usare nel progetto.
 
 > [!NOTE]
 > Le introduzioni ai software nelle sottosezioni riportate di seguito sono state estratte dalle relative home page.
 
 ### <a name="nvidia-gpu-driver"></a>Driver della GPU NVIDIA
 
-I framework dell'apprendimento profondo sfruttano la GPU NVIDIA per consentire alle macchine di apprendere con una velocità, precisione e scalabilità tipiche della vera e propria intelligenza artificiale. Se il computer ha schede GPU NVIDIA, visitare [questo sito](http://www.nvidia.com/Download/index.aspx) o aggiornare il sistema operativo per installare il driver più recente.
+I framework dell'apprendimento profondo sfruttano la GPU NVIDIA per consentire alle macchine di apprendere con una velocità, precisione e scalabilità tipiche della vera e propria intelligenza artificiale. Se il computer ha schede GPU NVIDIA, vedere [Download dei driver NVIDIA](http://www.nvidia.com/Download/index.aspx) oppure provare a eseguire un aggiornamento del sistema operativo per installare il driver più recente.
 
 ### <a name="cuda"></a>CUDA
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > Al momento CNTK non supporta macOS.
 
-Per installare il pacchetto di Python CNTK, vedere [How to install CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine) (Come installare CNTK)
+Per installare il pacchetto di Python CNTK, vedere [Come installare CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) è un framework di apprendimento profondo basato su Python che ottimizza la flessibilità. Offre API di differenziazione automatica basate sull'**approccio define-by-run**, ovvero sui grafici di calcolo dinamico, nonché su API di alto livello orientate agli oggetti per sfruttare e addestrare le reti neurali.
+[Chainer](https://chainer.org/) è un framework di apprendimento profondo basato su Python che ottimizza la flessibilità. Fornisce API di differenziazione automatica basate sull'approccio define-by-run (noto anche come grafici di calcolo dinamici), nonché sulle API di alto livello orientate agli oggetti per la creazione e il training di reti neurali.
 
 Per abilitare il supporto CUDA, installare [CuPy](https://github.com/cupy/cupy):
 

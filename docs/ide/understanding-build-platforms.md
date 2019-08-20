@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416937"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925836"
 ---
 # <a name="understand-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 
@@ -30,9 +30,11 @@ ms.locfileid: "68416937"
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
- [Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md) Descrive come configurare un progetto per una determinata piattaforma di destinazione.
+[Procedura: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md)\
+Viene illustrato come configurare un progetto per una determinata piattaforma di destinazione.
 
- [Procedura: Configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Descrive come configurare un progetto per più piattaforme di destinazione.
+[Procedura: Configurare progetti per più piattaforme di destinazione](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Viene illustrato come configurare un progetto per più piattaforme di destinazione.
 
 ## <a name="see-also"></a>Vedere anche
 

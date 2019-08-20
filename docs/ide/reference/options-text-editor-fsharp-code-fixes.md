@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778541"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870750"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>Opzioni, Editor di testo, F#, Correzioni del codice
+# <a name="options-text-editor--f--code-fixes"></a>Opzioni: Editor di testo > F# > Correzioni del codice
 
-Usare la pagina delle opzioni **Correzioni del codice** per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **F#** > **Correzioni del codice**.
+Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **F#**  > **Correzioni del codice**.
 
 ## <a name="code-fixes"></a>Correzioni del codice
 
 - **Semplifica nomi (rimuovi qualificatori non necessari)**
 
-   Se questa casella di controllo è selezionata, i nomi completi vengono semplificati quando non sono necessarie elementi di qualificazione, come per un membro di uno spazio dei nomi usato di frequente.
+  Se questa casella di controllo è selezionata, i nomi completi vengono semplificati quando non sono necessarie elementi di qualificazione, come per un membro di uno spazio dei nomi usato di frequente.
 
 - **Inserisci sempre le istruzioni OPEN al primo livello**
 
-   Se questa casella di controllo è selezionata e si digita un'istruzione OPEN nel codice, viene posizionata al primo livello.
+  Se questa casella di controllo è selezionata e si digita un'istruzione `open` nel codice, viene posizionata al primo livello.
 
 - **Rimuovi istruzioni OPEN inutilizzate**
 
-   Se questa casella di controllo è selezionata, vengono rimosse le istruzioni OPEN inutilizzate nel file corrente.
+  Se questa casella di controllo è selezionata, i documenti vengono analizzati per le istruzioni `open` inutilizzate e viene visualizzata una lampadina [Azione rapida](../quick-actions.md) con un'azione per rimuovere tutte le istruzioni `open` inutilizzate.
 
 - **Analyze and suggest fixes for unused values** (Analizza e suggerisci correzioni per i valori inutilizzati)
 
-   Se questa casella di controllo è selezionata, lo strumento riconosce un valore che non viene usato nel codice. Quindi, al passaggio del mouse sul valore inutilizzato, vengono consigliati i modi in cui è possibile usare il valore.
+  Se questa casella di controllo è selezionata, lo strumento riconosce un valore che non viene usato nel codice. Quindi, al passaggio del mouse sul valore inutilizzato, vengono consigliati i modi in cui è possibile usare il valore.
 
 ## <a name="see-also"></a>Vedere anche
 

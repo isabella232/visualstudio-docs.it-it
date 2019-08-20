@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 74732249f5a82974f3df66df4b95357cdcf71c79
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826289"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925804"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -150,25 +150,19 @@ I tre file con estensione P12 in questa cartella contengono ognuno un certificat
   * Certificato radice: **Microsoft Root Certificate Authority**
     * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
 
-**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema.
+**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema. Questi certificati vengono archiviati in file con estensione cer anziché p12.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.p12** contiene:
-  * Certificato intermedio: **Microsoft Code Signing PCA 2011**
-    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+* **ManifestSignCertificates.cer** contiene:
   * Certificato radice: **Microsoft Root Certificate Authority 2011**
     * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
-* **ManifestCounterSignCertificates.p12** contiene:
-  * Certificato intermedio: **Microsoft Time-Stamp PCA 2010**
-    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+* **ManifestCounterSignCertificates.cer** contiene:
   * Certificato radice: **Microsoft Root Certificate Authority 2010**
     * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
-* **Vs_installer_opc. SignCertificates.p12** contiene:
-  * Certificato intermedio: **Microsoft Code Signing PCA**
-    * Obbligatorio per tutti i sistemi. Si noti che i sistemi in tutti gli aggiornamenti sono stati applicati da Windows Update potrebbero non disporre di questo certificato.
+* **Vs_installer_opc.SignCertificates.cer** contiene:
   * Certificato radice: **Microsoft Root Certificate Authority**
     * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
 

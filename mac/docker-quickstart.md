@@ -1,15 +1,15 @@
 ---
-title: Introduzione a Docker in Visual Studio per Mac
+title: Introduzione a Docker
 description: Informazioni su come aggiungere Docker ai progetti in Visual Studio per Mac
 author: asb3993
 ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: b539de8159c1f53543b195f90610017bf2cee873
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: b456b3d285c167f97570c39d9eb6fd1abfc27e45
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691692"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872227"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Introduzione a Docker in Visual Studio per Mac
 
@@ -73,7 +73,7 @@ Selezionare il progetto `docker-compose` come progetto di avvio e avviare il deb
 
 > [!TIP]
 > Quando si esegue per la prima volta Docker Desktop dopo averlo installato, è possibile che venga visualizzato l'errore seguente durante il tentativo di eseguire il debug: `Cannot start service dockerdemo: Mounts denied`
-> 
+>
 > Aggiunge `/usr/local/share/dotnet/sdk/NuGetFallbackFolder` alla scheda Condivisione file in Docker Desktop:
 >
 > ![Aggiunta della cartella NuGetFallbackFolder alla condivisione di file](media/docker-quickstart-5.png)

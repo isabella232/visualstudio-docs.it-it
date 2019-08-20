@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744973"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869766"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
@@ -49,7 +49,7 @@ Visualizza il nome dell'assembly .NET che include lo spazio dei nomi per ogni co
 
 **Directory**
 
-Visualizza il percorso dell'assembly .NET. Gli assembly si trovano, per impostazione predefinita, nella cartella Global Assembly Cache. Per altre informazioni sulla cartella Global Assembly Cache, vedere [Utilizzo di assembly e della Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Visualizza il percorso dell'assembly .NET. Gli assembly si trovano, per impostazione predefinita, nella cartella Global Assembly Cache. Per altre informazioni sulla cartella Global Assembly Cache, vedere [Usare gli assembly e la Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
@@ -77,7 +77,7 @@ L'aggiunta di un controllo personalizzato o di <xref:System.Windows.Controls.Use
 
 - Non si aggiorna correttamente quando la configurazione della soluzione viene modificata da Debug a Release o da Release a Debug. Questo accade perché il riferimento non è un riferimento al progetto, ma è destinato all'assembly sul disco. Se il controllo fa parte della soluzione corrente, quando si passa da Debug a Release il progetto continua a fare riferimento alla versione Debug del controllo.
 
-Inoltre, se al controllo personalizzato vengono applicati i metadati della fase di progettazione e tali metadati specificano che `false` è impostato su <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute>, il controllo non viene visualizzato nella casella degli strumenti.
+Inoltre se al controllo personalizzato vengono applicati i metadati della fase di progettazione e tali metadati specificano che [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) è impostato su `false`, il controllo non viene visualizzato nella casella degli strumenti.
 
 È possibile fare riferimento ai controlli direttamente in XAML eseguendo il mapping dello spazio dei nomi e dell'assembly per il controllo.
 

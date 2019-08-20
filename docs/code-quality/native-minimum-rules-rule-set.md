@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77a0878ff3e359a4cca5c52a2ea8118273bbf2a2
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820661"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585256"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
-Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali delle applicazioni. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.
+
+Le regole minime native Microsoft si concentrano sui problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali dell'applicazione.
+
+Includere questo set di regole in tutti i set di regole personalizzati creati per i progetti nativi.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -68,7 +71,7 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C6518](../code-quality/c6518.md)|Dimensioni scrivibili su buffer non scrivibile|
 |[C6522](../code-quality/c6522.md)|Tipo stringa dimensioni non valida|
 |[C6525](../code-quality/c6525.md)|Percorso irraggiungibile stringa dimensioni non valida|
-|[C6527](../code-quality/c6527.md)|Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void|
+|[C6527](../code-quality/c6527.md)|Annotazione non valida: Non è possibile usare la proprietà' NeedsRelease ' su valori di tipo void|
 |[C6530](../code-quality/c6530.md)|Stile stringa formato non riconosciuto|
 |[C6540](../code-quality/c6540.md)|L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec|
 |[C6551](../code-quality/c6551.md)|Specifica di dimensione non valida: espressione non analizzabile|
@@ -89,18 +92,18 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C28182](../code-quality/c28182.md)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
 |[C28202](../code-quality/c28202.md)|Riferimento non valido a membro non statico|
 |[C28203](../code-quality/c28203.md)|Riferimento ambiguo al membro di classe.|
-|[C28205](../code-quality/c28205.md)|\_Esito positivo\_ oppure \_sul\_errore\_ usato in un contesto non valido|
+|[C28205](../code-quality/c28205.md)|\_\_ Esito \_positivoonegativo\_utilizzato in un contesto non valido\_|
 |[C28206](../code-quality/c28206.md)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](../code-quality/c28207.md)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28210](../code-quality/c28210.md)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](../code-quality/c28211.md)|Previsto nome contesto statico per SAL_context|
 |[C28212](../code-quality/c28212.md)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](../code-quality/c28213.md)|Il \_utilizzo\_decl\_annotazioni\_ annotazione deve essere utilizzata per fare riferimento, senza alcuna modifica, una dichiarazione precedente.|
+|[C28213](../code-quality/c28213.md)|L' \_annotazioneuse\_ \_\_decl Annotations deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
 |[C28214](../code-quality/c28214.md)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](../code-quality/c28215.md)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
 |[C28217](../code-quality/c28217.md)|Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file|
-|[C28218](../code-quality/c28218.md)|Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file|
+|[C28218](../code-quality/c28218.md)|Per il parametro della funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file|
 |[C28219](../code-quality/c28219.md)|Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione|
 |[C28220](../code-quality/c28220.md)|Espressione integer prevista per l'annotazione del parametro nell'annotazione|
 |[C28221](../code-quality/c28221.md)|Prevista espressione di tipo String per il parametro nell'annotazione|
@@ -137,7 +140,7 @@ Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici
 |[C28267](../code-quality/c28267.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](../code-quality/c28272.md)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](../code-quality/c28273.md)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](../code-quality/c28275.md)|Il parametro \_Macro\_valore\_ è null|
+|[C28275](../code-quality/c28275.md)|Il parametro per \_il\_valore\_ della macro è null|
 |[C28279](../code-quality/c28279.md)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](../code-quality/c28280.md)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](../code-quality/c28282.md)|Le stringhe di formato devono essere nelle precondizioni|

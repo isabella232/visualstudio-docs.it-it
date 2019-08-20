@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf5a994d173a11a8515e166c3b0bc3044bdc587
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1f51489b888a0b85b53856e413eb4704d24161b6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402890"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925728"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 
@@ -68,7 +68,7 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 
   Per comprendere le funzionalità di connessione di rete dell'emulatore, essere considerato come, simile a una connessione Wi-Fi dal telefono Android alla stessa rete. Se un'applicazione in esecuzione sul telefono può accedere a una risorsa di rete tramite la connessione Wi-Fi, un'applicazione in esecuzione nell'emulatore può inoltre accedere la stessa risorsa di rete.
 
-  Per altre informazioni sui requisiti di sistema, vedere [Requisiti di sistema per Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+  Per altre informazioni sui requisiti di sistema, vedere [Requisiti di sistema per Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 
   Per informazioni sulla risoluzione dei problemi di rete, vedere [Risoluzione dei problemi di Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
