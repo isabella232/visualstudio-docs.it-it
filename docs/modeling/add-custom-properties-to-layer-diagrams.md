@@ -9,45 +9,45 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3ef03b3833f30c1376bd3b2787f4ca773c992ef
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960437"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870676"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi delle dipendenze
 
-Quando si scrive codice delle estensioni per diagrammi delle dipendenze, è possibile archiviare i valori con qualsiasi elemento in un diagramma di dipendenza. I valori saranno permanenti quando il diagramma viene salvato e riaperto. È inoltre possibile impostare queste proprietà vengono visualizzate nel **proprietà** finestra in modo che gli utenti possono vedere e modificarli. Ad esempio, è possibile consentire agli utenti di specificare un'espressione regolare per ogni livello e scrivere il codice di convalida per verificare che i nomi delle classi in ogni livello siano conformi al modello specificato dall'utente.
+Quando si scrive il codice di estensione per i diagrammi di dipendenza, è possibile archiviare i valori con qualsiasi elemento in un diagramma delle dipendenze. I valori saranno permanenti quando il diagramma viene salvato e riaperto. È anche possibile fare in modo che queste proprietà vengano visualizzate nella finestra **Proprietà** in modo che gli utenti possano visualizzarle e modificarle. Ad esempio, è possibile consentire agli utenti di specificare un'espressione regolare per ogni livello e scrivere il codice di convalida per verificare che i nomi delle classi in ogni livello siano conformi al modello specificato dall'utente.
 
 ## <a name="non-visible-properties"></a>Proprietà non visibili
 
-Se si desidera semplicemente il codice associ i valori a qualsiasi elemento in un diagramma delle dipendenze, non devi definire un componente MEF. Esiste un dizionario denominato `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvate come parte del diagramma delle dipendenze.
+Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma delle dipendenze, non è necessario definire un componente MEF. In [ILayerElement](/previous-versions/ff644511(v=vs.140)) è presente un dizionario denominato `Properties`. Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvati come parte del diagramma delle dipendenze.
 
 ## <a name="editable-properties"></a>Proprietà modificabili
 
 **Preparazione iniziale**
 
 > [!IMPORTANT]
-> Per visualizzare le proprietà, apportare le modifiche seguenti in ogni computer in cui si desidera visualizzare le proprietà del livello:
+> Per visualizzare le proprietà, apportare le modifiche seguenti in ogni computer in cui si desidera che le proprietà del livello siano visibili:
 >
-> 1. Eseguire blocco note scegliendo **Esegui come amministratore**. Aprire *%ProgramFiles%\Microsoft Visual Studio [versione] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
-> 2. All'interno di **contenuto** elemento, aggiungere:
+> 1. Eseguire il blocco note usando **Esegui come amministratore**. Aprire *%ProgramFiles%\Microsoft Visual Studio [Version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 2. All'interno dell'elemento **Content** aggiungere:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Sotto il **strumenti di Visual Studio** sezione del menu start dell'applicazione di Visual Studio, aprire **prompt dei comandi sviluppatore**. Immettere:
+> 3. Nella sezione **strumenti di Visual Studio** del menu Start dell'applicazione di Visual Studio aprire **prompt dei comandi per gli sviluppatori**. Immettere:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
 > 4. Riavviare Visual Studio.
 
-**Assicurarsi che il codice è in un progetto VSIX**
+**Verificare che il codice si trovi in un progetto VSIX**
 
-Se la proprietà fa parte di un progetto di convalida, un movimento o un comando, non occorre aggiungere alcuna operazione. Il codice per la proprietà personalizzata deve essere specificato in un progetto Extensibility di Visual Studio definito come componente MEF. Per altre informazioni, vedere [aggiungere comandi e movimenti ai diagrammi delle dipendenze](../modeling/add-commands-and-gestures-to-layer-diagrams.md) oppure [aggiungere la convalida architettura personalizzati a diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Se la proprietà fa parte di un comando, di un movimento o di un progetto di convalida, non è necessario aggiungere alcun elemento. Il codice per la proprietà personalizzata deve essere specificato in un progetto Extensibility di Visual Studio definito come componente MEF. Per altre informazioni, vedere [aggiungere comandi e movimenti a diagrammi di dipendenza](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [aggiungere la convalida dell'architettura personalizzata ai diagrammi](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)delle dipendenze.
 
 **Definire la proprietà personalizzata**
 
@@ -61,7 +61,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-È possibile definire le proprietà in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> o nelle relative classi derivate che includono:
+È possibile definire le proprietà in [ILayerElement](/previous-versions/ff644511(v=vs.140)) o in una delle classi derivate, incluse le seguenti:
 
 - `ILayerModel` - il modello
 
