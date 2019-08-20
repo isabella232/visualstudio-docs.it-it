@@ -2,7 +2,7 @@
 title: App Hello World con WPF in C#
 description: Creare una semplice app Windows Desktop .NET in C# con Visual Studio usando il framework di interfaccia utente Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 03/28/2019
+ms.date: 08/09/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886a17b4b702802faa06f28ab1df485b56de9636
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 8803bf6992608a496d560b68b71545d764803760
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043545"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924366"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: Creare una semplice applicazione con C\#
 
@@ -42,7 +42,7 @@ Quando si apre per la prima volta, Visual Studio richiede di eseguire l'accesso.
 
 Dopo aver avviato Visual Studio, saranno visualizzati le finestre degli strumenti, i menu, le barre degli strumenti e l'area della finestra principale. Le finestre degli strumenti sono ancorate ai lati sinistro e destro della finestra dell'applicazione, con **Avvio veloce**, la barra dei menu e la barra degli strumenti standard nella parte superiore. Al centro della finestra dell'applicazione si trova **Pagina iniziale**. Quando si carica una soluzione o un progetto, gli editor e le finestre di progettazione vengono visualizzati nello spazio in cui si trova la **pagina iniziale** . Quando si sviluppa un'applicazione, per la maggior parte del tempo si usa quest'area centrale.
 
-![Visual Studio 2017 IDE con impostazioni generali applicate](../media/exploreide-idewithgeneralsettings.png)
+![Visual Studio 2017 IDE con impostazioni generali applicate](../media/exploreide-idewithgeneralsettings.png "Screenshot dell'IDE di Visual Studio 2017 con le impostazioni generali applicate")
 
 ::: moniker-end
 
@@ -60,20 +60,11 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
 1. Creare un nuovo progetto. Nella barra dei menu selezionare **File** > **Nuovo** > **Progetto**.
 
-     ![Nella barra dei menu scegliere File, Nuovo, Progetto](../media/exploreide-filenewproject.png)
+     ![Nella barra dei menu scegliere file, Nuovo, Progetto](../media/exploreide-filenewproject.png "Screenshot della barra dei menu in cui è possibile scegliere File, Nuovo, Progetto")
 
 1. Nella finestra di dialogo **Nuovo progetto** selezionare la categoria **Installati** > **Visual C#**  > **Windows Desktop** e quindi selezionare il modello **App WPF (.NET Framework)** . Assegnare al progetto il nome **HelloWPFApp** e scegliere **OK**.
 
-     ![Modello App WPF nella finestra di dialogo Nuovo progetto di Visual Studio](media/exploreide-newprojectcsharp.png)
-
-Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
-
-![Esplora soluzioni con i file HelloWPFApp caricati](../media/exploreide-hellowpfappfiles.png)
-
-> [!NOTE]
-> Per altre informazioni su XAML (eXtensible Application Markup Language), vedere la [panoramica di XAML per WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
-
-Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **Proprietà** (disponibile nel menu **Visualizzazione** ) è possibile visualizzare e modificare le opzioni per elementi di progetto, controlli e altri elementi in un'applicazione.
+     ![Modello di app WPF nella finestra Nuovo progetto di Visual Studio](media/exploreide-newprojectcsharp.png "Screenshot del modello di app WPF nella finestra di dialogo Nuovo progetto")
 
 ::: moniker-end
 
@@ -83,38 +74,42 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **
 
 1. Nella finestra iniziale scegliere **Crea nuovo progetto**.
 
-   ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/start-window-create-new-project.png)
+   ![Visualizzare la finestra 'Crea un nuovo progetto'](../../get-started/media/vs-2019/start-window-create-new-project.png "Screenshot della finestra 'Crea un nuovo progetto'")
 
-2. Nella schermata **Crea un nuovo progetto** cercare "WPF", scegliere **App WPF (.NET Framework)** e quindi scegliere **Avanti**.
+1. Nella schermata **Crea un nuovo progetto** cercare "WPF", scegliere **App WPF (.NET Framework)** e quindi scegliere **Avanti**.
 
-   ![Modello App WPF nella finestra di dialogo "Crea nuovo progetto"](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
+   ![Modello di app WPF nella finestra di dialogo 'Crea un nuovo progetto'](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "Screenshot del modello di app WPF nella finestra di dialogo 'Crea un nuovo progetto'")
 
-3. Nella schermata successiva assegnare al progetto il nome **HelloWPFApp** e scegliere **Crea**.
+1. Nella schermata successiva assegnare al progetto il nome **HelloWPFApp** e scegliere **Crea**.
 
-   ![Nella finestra "Configura il nuovo progetto" assegnare al progetto il nome "HelloWPFApp"](./media/vs-2019/exploreide-nameproject.png)
+   ![Assegnare al progetto il nome 'HelloWPFApp'](./media/vs-2019/exploreide-nameproject.png "Screenshot della finestra in cui si assegna un nome al progetto")
 
-Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML. In **Esplora soluzioni**vengono visualizzati gli elementi indicati di seguito.
+::: moniker-end
 
-![Esplora soluzioni con i file HelloWPFApp caricati](../media/vs-2019/exploreide-hellowpfappfiles.png)
+Visual Studio crea il progetto e la soluzione HelloWPFApp e in **Esplora soluzioni** vengono visualizzati i vari file. **WPF Designer** include una doppia visualizzazione con una visualizzazione Progettazione e una visualizzazione XAML di *MainWindow.xaml*. È possibile far scorrere la barra di divisione in modo da mostrare più o meno elementi in ciascuna visualizzazione. È possibile scegliere di visualizzare solo la visualizzazione degli elementi visivi o solo la visualizzazione XAML.
+
+![Progetto e soluzione WPF nell'IDE](media/exploreide-wpfproject-cs.png "Screenshot del progetto e della soluzione WPF nell'IDE")
 
 > [!NOTE]
 > Per altre informazioni su XAML (eXtensible Application Markup Language), vedere la [panoramica di XAML per WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
-Dopo aver creato il progetto, sarà possibile personalizzarlo. A tale scopo, scegliere **Finestra Proprietà** dal menu **Visualizza**. È quindi possibile visualizzare e modificare le opzioni per elementi di progetto, controlli e altri elementi in un'applicazione.
+Dopo aver creato il progetto, sarà possibile personalizzarlo. A tale scopo, scegliere **Finestra Proprietà** dal menu **Visualizza** o premere **F4**. È quindi possibile visualizzare e modificare le opzioni per elementi di progetto, controlli e altri elementi in un'applicazione.
 
-::: moniker-end
+   ![Finestra Proprietà](../media/exploreide-hellowpfappfiles.png "Screenshot della finestra Proprietà con i nomi delle app di file WPF")   
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
 Assegnare a MainWindow un nome più specifico.
 
-1. In **Esplora soluzioni**selezionare *MainWindow.xaml*. Verrà visualizzata la finestra **Proprietà**, altrimenti scegliere il menu **Visualizzazione** e l'elemento **Finestra Proprietà**.
+1. In **Esplora soluzioni**selezionare *MainWindow.xaml*. Verrà visualizzata la finestra **Proprietà**, altrimenti scegliere il menu **Visualizzazione** e l'elemento **Finestra Proprietà**. In alternativa, premere **F4**.
 
 1. Cambiare la proprietà **Nome file** in `Greetings.xaml`.
 
-     ![Finestra Proprietà con il nome file evidenziato](../media/exploreide-filenameinpropertieswindow.png)
+     ![Finestra Proprietà con il nome file evidenziato](../media/exploreide-filenameinpropertieswindow.png "Screenshot della finestra Proprietà con il nome file evidenziato")
 
      **Esplora soluzioni** indica che il nome del file è ora *Greetings.xaml* e che il nome del file di codice annidato è ora *Greetings.xaml.cs*. Questo file di codice è annidato sotto il nodo del file con estensione *xaml*, a indicare che sono strettamente correlati tra loro.
+
+     ![Finestra Proprietà e Esplora soluzioni finestra con il nome file Greetings](../media/exploreide-greetingsfilename.png "Screenshot del finestra Proprietà e della finestra Esplora soluzioni con il nome file Greetings")     
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
 
@@ -124,31 +119,37 @@ Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:Sys
 
 1. Premere **CTRL**+**Q** per attivare la casella di ricerca e digitare **Casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
-2. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
+1. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
-     ![Casella degli strumenti con il controllo TextBlock evidenziato](../media/exploreide-textblocktoolbox.png)
+     ![Casella degli strumenti con il controllo TextBlock evidenziato](../media/exploreide-textblocktoolbox.png "Screenshot della finestra casella degli strumenti con il controllo TextBlock evidenziato")
 
-3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra.
+1. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra.
 
-La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
+    La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
-![Controllo TextBlock nel modulo di messaggi di apertura](../media/exploreide-greetingswithtextblockonly.png)
+    ![Controllo TextBlock nel form Greetings](../media/exploreide-greetingswithtextblockonly.png "Screenshot del controllo TextBlock nel form Greetings")
 
-Il markup XAML sarà simile all'esempio seguente:
+   Il markup XAML sarà simile all'esempio seguente:
 
-```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-```
+    ```xaml
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="387,60,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+    </Grid>
+    ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Personalizzare il testo nel blocco di testo
 
-1. Nella visualizzazione XAML individuare il markup di TextBlock e modificare l'attributo Text:
+1. Nella visualizzazione XAML individuare il markup di **TextBlock** e modificare l'attributo **Text** da `TextBox` a `Select a message option and then choose the Display button.`
+
+   Il markup XAML sarà simile all'esempio seguente:
 
    ```xaml
-   Text="Select a message option and then choose the Display button."
+   <Grid>
+       <TextBlock HorizontalAlignment="Left" Margin="387,60,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+   </Grid>
    ```
 
-2. Se necessario, riallineare al centro il controllo TextBlock e salvare le modifiche premendo CTRL+S o usando la voce di menu **File**.
+1. Se si vuole, riallineare al centro il controllo TextBlock e quindi salvare le modifiche premendo **CTRL+S** o usando la voce di menu **File**.
 
 Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/wpf/controls/radiobutton) al form.
 
@@ -156,19 +157,19 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 1. Nella **casella degli strumenti** cercare il controllo **RadioButton**.
 
-     ![Finestra Casella degli strumenti con il controllo RadioButton selezionato](../media/exploreide-radiobuttontoolbox.png)
+     ![Finestra casella degli strumenti con il controllo RadioButton selezionato](../media/exploreide-radiobuttontoolbox.png "Screenshot della finestra casella degli strumenti con il controllo RadioButton selezionato")
 
-2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock.
+1. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock.
 
-     La finestra dovrebbe risultare simile alla seguente:
+   La finestra dovrebbe risultare simile alla seguente:
 
-     ![Modulo di messaggi di apertura con TextBlock e due pulsanti di opzione](../media/exploreide-greetingswithradiobuttons.png)
+   ![Form Greetings con TextBlock e due pulsanti di opzione](../media/exploreide-greetingswithradiobuttons.png "Screenshot del form Greetings con TextBlock e due pulsanti di opzione")
 
-3. Nella finestra **Proprietà** per il controllo RadioButton sinistro modificare la proprietà **Nome** (la proprietà nella parte superiore della finestra **Proprietà** ) in `HelloButton`.
+1. Nella finestra **Proprietà** per il controllo RadioButton sinistro modificare la proprietà **Nome** (la proprietà nella parte superiore della finestra **Proprietà** ) in `HelloButton`.
 
-     ![Finestra delle proprietà di RadioButton](../media/exploreide-buttonproperties.png)
+    ![Finestra Proprietà RadioButton](../media/exploreide-buttonproperties.png "Screenshot della finestra Proprietà RadioButton")
 
-4. Nella finestra **Proprietà** per il controllo RadioButton destro modificare la proprietà **Nome** in `GoodbyeButton`, quindi salvare le modifiche.
+1. Nella finestra **Proprietà** per il controllo RadioButton destro modificare la proprietà **Nome** in `GoodbyeButton`, quindi salvare le modifiche.
 
 È ora possibile aggiungere il testo visualizzato per ogni controllo RadioButton. Nella procedura seguente verrà aggiornata la proprietà **Contenuto** per un controllo RadioButton.
 
@@ -176,17 +177,35 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 1. Nell'area di progettazione aprire il menu di scelta rapida di HelloButton facendo clic con il pulsante destro del mouse su HelloButton, quindi scegliere **Modifica testo** e immettere `Hello`.
 
-2. Aprire il menu di scelta rapida per GoodbyeButton facendo clic con il pulsante destro del mouse su GoodbyeButton, quindi scegliere **Modifica testo** e immettere `Goodbye`.
+1. Aprire il menu di scelta rapida per GoodbyeButton facendo clic con il pulsante destro del mouse su GoodbyeButton, quindi scegliere **Modifica testo** e immettere `Goodbye`.
+
+   Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Impostare un pulsante di opzione che deve essere selezionato per impostazione predefinita
 
 In questo passaggio il pulsante di opzione HelloButton viene impostato in modo che sia selezionato per impostazione predefinita, così che uno dei due pulsanti di opzione sia sempre selezionato.
 
-Nella visualizzazione XAML individuare il markup per HelloButton e aggiungere un attributo **IsChecked**:
+1. Nella visualizzazione XAML individuare il markup per HelloButton.
 
-```xaml
-IsChecked="True"
-```
+1. Aggiungere un attributo **IsChecked** e impostarlo su **True**. In particolare, aggiungere `IsChecked="True"`.
+
+   Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" IsChecked="True" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 L'elemento finale dell'interfaccia utente da aggiungere è un controllo [Button](/dotnet/framework/wpf/controls/button).
 
@@ -194,13 +213,22 @@ L'elemento finale dell'interfaccia utente da aggiungere è un controllo [Button]
 
 1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione.
 
-2. Nella visualizzazione XAML modificare il valore di **Contenuto** per il controllo Button da `Content="Button"` a `Content="Display"`, e salvare le modifiche.
-
-     Il markup deve essere simile all'esempio seguente: `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`
+1. Nella visualizzazione XAML modificare il valore di **Contenuto** per il controllo Button da `Content="Button"` a `Content="Display"`, e salvare le modifiche.
 
      La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
-     ![Form di messaggi di apertura con etichette del controllo](media/exploreide-greetingswithcontrollabels-cs.png)
+     ![Form Greetings con etichette di controllo](media/exploreide-greetingswithcontrollabels-cs.png "Screenshot del form Greetings con etichette di controllo")
+
+   Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
+
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" IsChecked="True" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+        <Button Content="Display" HorizontalAlignment="Left" Margin="377,270,0,0" VerticalAlignment="Top" Width="75"/>
+   </Grid>
+   ```
 
 ### <a name="add-code-to-the-display-button"></a>Aggiungere codice al pulsante Visualizza
 
@@ -217,7 +245,7 @@ Quando l'applicazione è in esecuzione, si apre una finestra di messaggio se si 
     }
     ```
 
-2. Immettere il codice seguente:
+1. Immettere il codice seguente:
 
     ```csharp
     if (HelloButton.IsChecked == true)
@@ -230,7 +258,7 @@ Quando l'applicazione è in esecuzione, si apre una finestra di messaggio se si 
     }
     ```
 
-3. Salvare l'applicazione.
+1. Salvare l'applicazione.
 
 ## <a name="debug-and-test-the-application"></a>Eseguire il debug e il test dell'applicazione
 
@@ -246,9 +274,9 @@ In questo passaggio verrà identificato l'errore generato in precedenza modifica
 
    Si apre la finestra **Modalità interruzione**. La finestra **Output** indica che si è verificata un'eccezione IOException: Impossibile individuare la risorsa 'mainwindow.xaml'.
 
-   ![Screenshot del messaggio IOException](../media/exploreide-ioexception.png)
+   ![Messaggio IOException](../media/exploreide-ioexception.png "Screenshot del messaggio IOException")
 
-2. Arrestare il debugger scegliendo **Debug** > **Termina debug**.
+1. Arrestare il debugger scegliendo **Debug** > **Termina debug**.
 
 Il file *MainWindow.xaml* è stato rinominato come *Greetings.xaml* all'inizio di questa esercitazione, ma il codice fa ancora riferimento a *MainWindow.xaml* come URI di avvio per l'applicazione. Di conseguenza il progetto non può essere avviato.
 
@@ -256,7 +284,7 @@ Il file *MainWindow.xaml* è stato rinominato come *Greetings.xaml* all'inizio d
 
 1. In **Esplora soluzioni** aprire il file *App.xaml*.
 
-2. Modificare `StartupUri="MainWindow.xaml"` in `StartupUri="Greetings.xaml"`, quindi salvare le modifiche.
+1. Modificare `StartupUri="MainWindow.xaml"` in `StartupUri="Greetings.xaml"`, quindi salvare le modifiche.
 
 Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra **Greetings** dell'applicazione. Chiudere la finestra dell'applicazione per arrestare il debug.
 
@@ -268,35 +296,35 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 
 1. Aprire *Greetings.xaml.cs* e selezionare la riga seguente: `MessageBox.Show("Hello.")`
 
-2. Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.
+1. Aggiungere un punto di interruzione dal menu selezionando **Debug**, quindi **Imposta/Rimuovi punto di interruzione**.
 
      Accanto alla riga di codice nel margine di estrema sinistra della finestra dell'editor verrà visualizzato un cerchio rosso.
 
-3. Selezionare la riga seguente: `MessageBox.Show("Goodbye.")`.
+1. Selezionare la riga seguente: `MessageBox.Show("Goodbye.")`.
 
-4. Premere **F9** per aggiungere un punto di interruzione e poi premere **F5** per avviare il debug.
+1. Premere **F9** per aggiungere un punto di interruzione e poi premere **F5** per avviare il debug.
 
-5. Nella finestra **Greetings** scegliere il pulsante di opzione **Hello** , quindi il pulsante **Visualizza** .
+1. Nella finestra **Greetings** scegliere il pulsante di opzione **Hello** , quindi il pulsante **Visualizza** .
 
     La riga `MessageBox.Show("Hello.")` viene evidenziata in giallo. Nella parte inferiore dell'IDE, le finestre Auto, Variabili locali ed Espressioni di controllo sono ancorate insieme sul lato sinistro e le finestre Stack di chiamate, Punti di interruzione, Impostazioni eccezione, Comando, Controllo immediato e Output sono ancorate insieme sul lato destro.
 
-    ![Screenshot del punto di interruzione nel debugger](media/exploreide-debugbreakpoint.png)
+    ![Punto di interruzione nel debugger](media/exploreide-debugbreakpoint.png "Screenshot del punto di interruzione nel debugger")
 
-6. Nella barra dei menu scegliere **Debug** > **Esci da istruzione/routine**.
+1. Nella barra dei menu scegliere **Debug** > **Esci da istruzione/routine**.
 
      L'applicazione riprende l'esecuzione e verrà visualizzata una finestra di messaggio con la parola "Hello".
 
-7. Scegliere il pulsante **OK** per chiudere la finestra di messaggio.
+1. Scegliere il pulsante **OK** per chiudere la finestra di messaggio.
 
-8. Nella finestra **Greetings** scegliere il pulsante di opzione **Goodbye** , quindi il pulsante **Visualizza** .
+1. Nella finestra **Greetings** scegliere il pulsante di opzione **Goodbye** , quindi il pulsante **Visualizza** .
 
      La riga `MessageBox.Show("Goodbye.")` viene evidenziata in giallo.
 
-9. Scegliere **F5** per proseguire con il debug. Quando verrà visualizzata la finestra del messaggio, scegliere il pulsante **OK** per chiuderla.
+1. Scegliere **F5** per proseguire con il debug. Quando verrà visualizzata la finestra del messaggio, scegliere il pulsante **OK** per chiuderla.
 
-10. Chiudere la finestra dell'applicazione per arrestare il debug.
+1. Chiudere la finestra dell'applicazione per arrestare il debug.
 
-11. Nella barra dei menu scegliere **Debug** > **Disabilita tutti i punti di interruzione**.
+1. Nella barra dei menu scegliere **Debug** > **Disabilita tutti i punti di interruzione**.
 
 ### <a name="build-a-release-version-of-the-application"></a>Compilare una versione di rilascio dell'applicazione
 
@@ -304,11 +332,18 @@ Dopo aver verificato che tutto funzioni, è possibile preparare una build di ril
 
 1. Nel menu principale selezionare **Compila** > **Pulisci soluzione** per eliminare i file intermedi e di output creati durante le compilazioni precedenti. Questa operazione non è necessaria, ma elimina l'output di compilazione di debug.
 
-2. Modificare la configurazione della build per HelloWPFApp da **Debug** a **Rilascio** usando il controllo a discesa sulla barra degli strumenti (al momento è selezionato "Debug").
+1. Modificare la configurazione della build per HelloWPFApp da **Debug** a **Rilascio** usando il controllo a discesa sulla barra degli strumenti (al momento è selezionato "Debug").
 
-3. Compilare la soluzione scegliendo **Compila** > **Compila soluzione**.
+1. Compilare la soluzione scegliendo **Compila** > **Compila soluzione**.
 
 L'esercitazione è stata completata. È possibile trovare il file con estensione *exe* compilato nella directory del progetto e della soluzione ( *…\HelloWPFApp\HelloWPFApp\bin\Release*).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+L'esercitazione è stata completata. Per altre informazioni, continuare con le esercitazioni seguenti.
+
+> [!div class="nextstepaction"]
+> [Continuare con altre esercitazioni su WPF](/dotnet/framework/wpf/getting-started/wpf-walkthroughs/)
 
 ## <a name="see-also"></a>Vedere anche
 

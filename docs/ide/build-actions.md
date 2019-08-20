@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061a3cce8d1d29b57c02de4506a809994bf12910
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
+ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416507"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68981103"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
@@ -30,13 +30,29 @@ Per impostare l'azione di compilazione per un file, aprire le proprietà del fil
 
 ## <a name="build-action-values"></a>Valori dell'azione di compilazione
 
-Le azioni di compilazione per i file di progetto di C# e Visual Basic includono:
+Alcune delle azioni di compilazione più comuni per i file di progetto di C# e Visual Basic includono:
 
-* **None**: il file non fa parte della compilazione in alcun modo. Questo valore può essere usato per i file di documentazione come i file leggimi, ad esempio.
-* **Compile**: il file viene passato al compilatore come file di origine.
-* **Content**: un file contrassegnato come **Content** può essere recuperato come flusso chiamando <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Per i progetti ASP.NET, questi file vengono inclusi come parte del sito quando questo viene distribuito.
-* **Embedded Resource**: il file viene passato al compilatore come una risorsa da incorporare nell'assembly. È possibile chiamare <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> per leggere il file dall'assembly.
-* **AdditionalFiles**: un file di testo non di origine che viene passato al compilatore C# o Visual Basic come input. Questa azione di compilazione viene usata principalmente per specificare input per [analizzatori](../code-quality/roslyn-analyzers-overview.md) cui viene fatto riferimento in un progetto per verificare la qualità del codice. Per altre informazioni, vedere [Use additional files](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md) (Usare file aggiuntivi).
+|Azione di compilazione | Tipi di progetto | DESCRIZIONE |
+|-|-|
+| **AdditionalFiles** | C#, Visual Basic | Un file di testo non di origine che viene passato al compilatore C# o Visual Basic come input. Questa azione di compilazione viene usata principalmente per specificare input per [analizzatori](../code-quality/roslyn-analyzers-overview.md) cui viene fatto riferimento in un progetto per verificare la qualità del codice. Per altre informazioni, vedere [Use additional files](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md) (Usare file aggiuntivi).|
+| **ApplicationDefinition** | WPF | File che definisce l'applicazione. Quando si crea un progetto per la prima volta, si tratta del file *App.xaml*. |
+| **CodeAnalysisDictionary** | .NET | Dizionario di parole personalizzato, usato dall'analisi codice per il controllo ortografico. Vedere [How to: Personalizzare il dizionario di analisi del codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **Compile** | qualsiasi | Il file viene passato al compilatore come file di origine.|
+| **Contenuto** | .NET | Un file contrassegnato come **Content** può essere recuperato come flusso chiamando <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Per i progetti ASP.NET, questi file vengono inclusi come parte del sito quando questo viene distribuito.|
+| **DesignData** | WPF | Usato per i file ViewModel XAML, per consentire la visualizzazione dei controlli utente in fase di progettazione, con tipi fittizi e dati di esempio. |
+| **DesignDataWithDesignTimeCreateable** | WPF | Come **DesignData**, ma con tipi effettivi.  |
+| **Embedded Resource** | .NET | Il file viene passato al compilatore come una risorsa da incorporare nell'assembly. È possibile chiamare <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> per leggere il file dall'assembly.|
+| **EntityDeploy** | .NET | Per Entity Framework (EF) file con estensione EDMX che specificano la distribuzione di artefatti EF. |
+| **Fakes** | .NET | Usato per il framework di test di Microsoft Fakes. Vedere [Isolare codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
+| **None** | qualsiasi | Il file non fa parte della compilazione in alcun modo. Questo valore può essere usato per i file di documentazione come i file leggimi, ad esempio.|
+| **Page** | WPF | Compilare un file XAML in un file binario con estensione BAML per un caricamento più rapido in fase di esecuzione. |
+| **Risorsa** | WPF | Specifica di incorporare il file in un file di risorse del manifesto dell'assembly con estensione *.g.resources*. |
+| **Shadow** | .NET | Usato per un file con estensione accessor contenente un elenco di nomi file di assembly compilati, uno per riga. Per ogni assembly nell'elenco, generare classi pubbliche con i nomi `ClassName_Accessor` che sono esattamente come gli originali, ma con metodi pubblici anziché metodi privati. Usato per il testing unità. |
+| **Schermata iniziale** | WPF | Specifica un file di immagine da visualizzare in fase di esecuzione all'avvio dell'app. |
+| **XamlAppDef** | Windows Workflow Foundation | Indica alla compilazione di compilare un file XAML del flusso di lavoro in un assembly con un flusso di lavoro incorporato. |
+
+> [!NOTE]
+> È possibile definire azioni di compilazione aggiuntive per tipi di progetto specifici, pertanto l'elenco di azioni di compilazione dipende dal tipo di progetto e potrebbero venire visualizzati valori che non sono presenti in questo elenco.
 
 ## <a name="see-also"></a>Vedere anche
 
