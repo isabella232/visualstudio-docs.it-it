@@ -1,7 +1,7 @@
 ---
 title: Creare un'installazione di rete
 description: Informazioni sulla creazione di un punto di installazione di rete per la distribuzione di Visual Studio in un'organizzazione.
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365339"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870779"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -85,6 +85,8 @@ Per informazioni dettagliate, vedere [Automatizzare l'installazione di Visual St
 ## <a name="copy-the-layout-to-a-network-share"></a>Copiare il layout in una condivisione di rete
 
 Inserire il layout in una condivisione di rete affinché possa essere eseguito anche da altri computer.
+
+L'esempio seguente usa [xcopy](/windows-server/administration/windows-commands/xcopy/). È anche possibile usare [robocopy](/windows-server/administration/windows-commands/robocopy/), se lo si preferisce.  
 
 ::: moniker range="vs-2017"
 

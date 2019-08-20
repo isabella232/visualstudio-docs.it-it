@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824697"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926652"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
 
@@ -158,7 +158,7 @@ Se non si vuole avviare e arrestare separatamente l'applicazione, il browser o i
 
 ## <a name="validate-the-properties-of-ui-controls"></a>Convalidare le proprietà dei controlli dell'interfaccia utente
 
-Si può usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere un controllo dell'interfaccia utente a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> per il test o per generare codice per un metodo di convalida che usa un'asserzione per un controllo dell'interfaccia utente.
+Si può usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere un controllo dell'interfaccia utente a [UIMap](/previous-versions/dd580454(v=vs.140)) per il test o per generare codice per un metodo di convalida che usa un'asserzione per un controllo dell'interfaccia utente.
 
 Per generare asserzioni per i controlli dell'interfaccia utente, scegliere lo strumento **Aggiungi asserzioni** nel **Generatore di test codificati dell'interfaccia utente** e trascinarlo sul controllo dell'applicazione sottoposta a test da verificare. Quando il controllo risulta delimitato da una casella, rilasciare il mouse. Il codice della classe di controllo viene creato immediatamente nel file *UIMap.Designer.cs*.
 
@@ -402,10 +402,10 @@ Per ottenere e impostare valori di proprietà specifiche del controllo dell'inte
 
 Con i controlli derivanti da <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, ad esempio [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) o [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), è possibile ottenere o impostare direttamente i valori delle proprietà. Il codice seguente illustra alcuni esempi:
 
- ```csharp
- int i = myHtmlList.ItemCount;
- myWinCheckBox.Checked = true;
- ```
+```csharp
+int i = myHtmlList.ItemCount;
+myWinCheckBox.Checked = true;
+```
 
 ### <a name="to-get-properties-from-ui-test-controls"></a>Per ottenere proprietà dai controlli di test dell'interfaccia utente
 
@@ -455,7 +455,6 @@ I test codificati dell'interfaccia utente vengono spesso usati per automatizzare
 
 - [Registrare e riprodurre test manuali](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Creare un test codificato dell'interfaccia utente per testare un'app UWP](test-uwp-app-with-coded-ui-test.md)

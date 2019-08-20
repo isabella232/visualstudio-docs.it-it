@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cc7bbf08ac2d020ac058eaa75791e5b733ceab04
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445746"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926397"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Panoramica del multitargeting di MSBuild
 Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualunque delle tante versioni di .NET Framework e in una qualunque delle tante piattaforme di sistema. Ad esempio, è possibile compilare un'applicazione da eseguire in .NET Framework 2.0 in una piattaforma a 32 bit e compilare la stessa applicazione da eseguire in .NET Framework 4.5 in una piattaforma a 64 bit.
@@ -40,7 +40,7 @@ Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualun
  Un set di strumenti comprende strumenti, attività e destinazioni usati per creare l'applicazione. Un set di strumenti include compilatori come *csc.exe* e *vbc.exe*, il file comune con estensione targets (*microsoft.common.targets*) e il file delle attività comuni (*microsoft.common.tasks*). Il Set di strumenti 4.5 può essere usato per definire le destinazioni di .NET Framework versioni 2.0, 3.0, 3.5, 4 e 4.5. Tuttavia, il Set di strumenti 2.0 consente soltanto di scegliere come destinazione .NET Framework versione 2.0. Per altre informazioni, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assembly di riferimento
- Gli assembly di riferimento specificati nel set di strumenti aiutano a progettare e sviluppare un'applicazione. Questi assembly di riferimento non solo consentono una specifica compilazione delle destinazioni, ma limitano anche i componenti e le funzionalità dell'IDE di Visual Studio a quelli compatibili con la destinazione. Per altre informazioni, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md)
+ Gli assembly di riferimento specificati nel set di strumenti aiutano a progettare e sviluppare un'applicazione. Questi assembly di riferimento non solo consentono una specifica compilazione delle destinazioni, ma limitano anche i componenti e le funzionalità dell'IDE di Visual Studio a quelli compatibili con la destinazione. Per altre informazioni, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="configure-targets-and-tasks"></a>Configurare destinazioni e attività
  È possibile configurare le destinazioni e le attività di MSBuild per l'esecuzione out-of-process con MSBuild, in modo che si possano scegliere come destinazione contesti notevolmente diversi da quello corrente.  Ad esempio, è possibile scegliere come destinazione un'applicazione .NET Framework 2.0 a 32 bit mentre nel computer di sviluppo è in esecuzione .NET Framework 4.5 su una piattaforma a 64 bit. Per altre informazioni, vedere [Configurazione di destinazioni e attività](../msbuild/configuring-targets-and-tasks.md).

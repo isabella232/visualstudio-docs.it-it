@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547946"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585142"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Set di regole per pacchetti dell'analizzatore
 
 I set di regole predefiniti sono inclusi con alcuni pacchetti dell'analizzatore NuGet. Ad esempio, i set di regole inclusi nel pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer (a partire dalla versione 2.6.2) abilitano o disabilitano le regole in base alla categoria, ad esempio sicurezza, denominazione o prestazioni. L'uso di set di regole consente di visualizzare rapidamente solo le violazioni delle regole relative a una particolare categoria di regole.
 
-Se si esegue la migrazione da un'analisi "FxCop" legacy a un'analisi del codice basata su .NET Compiler Platform, questi set di regole consentono di continuare a usare le stesse configurazioni delle regole usate in precedenza.
+Se si esegue la migrazione da un'analisi "FxCop" legacy a un'analisi del codice basata su .NET Compiler Platform, questi set di regole consentono di continuare a usare configurazioni di regole simili a [quelle usate in precedenza](rule-set-reference.md).
 
 ## <a name="use-analyzer-package-rule-sets"></a>Usare set di regole del pacchetto dell'analizzatore
 
@@ -58,7 +58,7 @@ I set di regole dell'analizzatore predefiniti includono tre set di regole che in
 
 Sono inoltre disponibili due set di regole per ogni categoria di regole nel pacchetto, ad esempio prestazioni o sicurezza. Un set di regole Abilita tutte le regole per la categoria e un set di regole rispetta la gravità predefinita e le impostazioni di abilitazione per ogni regola nella categoria.
 
-Il pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer include set di regole per le categorie seguenti, che corrispondono ai set di regole disponibili per l'analisi legacy:
+Il pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer include set di regole per le categorie seguenti:
 
 - progettazione
 - documentazione

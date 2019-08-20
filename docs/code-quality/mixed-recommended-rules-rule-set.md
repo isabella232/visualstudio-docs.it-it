@@ -7,16 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a4df209e45205e8098503494b61c385e1b07d3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825390"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585325"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Set di regole consigliate miste
 
-Regole consigliate miste Microsoft orientate ai problemi più critici e comuni nei progetti C++ che supportano Common Language Runtime, incluse potenziali lacune nella protezione, arresti anomali delle applicazioni e altri errori importanti per la logica e progettazione. È necessario includere questo set di regole nel set di regole personalizzati creati per i progetti C++ che supportano Common Language Runtime.
+Le regole consigliate di Microsoft sono incentrate sui problemi più comuni e C++ critici nei progetti che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza, arresti anomali dell'applicazione e altri errori di logica e progettazione importanti. Questo set di regole include tutte le regole nel set di regole di [regole minime miste](mixed-minimum-rules-rule-set.md) .
+
+Includere questo set di regole in tutti i set di regole personalizzati creati C++ per i progetti che supportano Common Language Runtime.
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -36,24 +38,24 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[C6201](../code-quality/c6201.md)|L'indice supera il limite massimo del buffer di stack|
 |[C6214](../code-quality/c6214.md)|Cast di HRESULT a BOOL non valido|
 |[C6215](../code-quality/c6215.md)|Cast di BOOL a HRESULT non valido|
-|[C6216](../code-quality/c6216.md)|Cast inserito dal compilatore non valido a BOOL a HRESULT|
+|[C6216](../code-quality/c6216.md)|Cast compilato dal compilatore BOOL a HRESULT non valido|
 |[C6217](../code-quality/c6217.md)|Test HRESULT non valido con NOT|
-|[C6220](../code-quality/c6220.md)|Confronto HRESULT non valido a -1|
-|[C6226](../code-quality/c6226.md)|Assegnazione HRESULT non valido per -1|
-|[C6230](../code-quality/c6230.md)|Uso HRESULT non valido come valore booleano|
-|[C6235](../code-quality/c6235.md)|Costante non Zero con Logical- o|
-|[C6236](../code-quality/c6236.md)|Logica- o con costante Non Zero|
-|[C6237](../code-quality/c6237.md)|Zero con Logical- And senza effetti collaterali|
+|[C6220](../code-quality/c6220.md)|Confronto HRESULT non valido a-1|
+|[C6226](../code-quality/c6226.md)|Assegnazione HRESULT non valida a-1|
+|[C6230](../code-quality/c6230.md)|Utilizzo HRESULT non valido come valore booleano|
+|[C6235](../code-quality/c6235.md)|Costante diversa da zero con Logical-OR|
+|[C6236](../code-quality/c6236.md)|Logical-OR con costante diversa da zero|
+|[C6237](../code-quality/c6237.md)|Zero con and logico perde effetti collaterali|
 |[C6242](../code-quality/c6242.md)|Rimozione locale forzata|
-|[C6248](../code-quality/c6248.md)|Creazione di DACL Null|
+|[C6248](../code-quality/c6248.md)|Creazione di DACL null|
 |[C6250](../code-quality/c6250.md)|Descrittori di indirizzo non rilasciati|
-|[C6255](../code-quality/c6255.md)|Uso di allocazione non|
-|[C6258](../code-quality/c6258.md)|Usando terminare Thread|
-|[C6259](../code-quality/c6259.md)|Dead Code In bit per bit- o limitate commutatore|
-|[C6260](../code-quality/c6260.md)|Uso dell'aritmetica Byte|
-|[C6262](../code-quality/c6262.md)|Uso Stack eccessivo|
-|[C6263](../code-quality/c6263.md)|Uso di allocazione In ciclo|
-|[C6268](../code-quality/c6268.md)|Parentesi mancanti In Cast|
+|[C6255](../code-quality/c6255.md)|Uso non protetto di alloca|
+|[C6258](../code-quality/c6258.md)|Utilizzo del thread di terminazione|
+|[C6259](../code-quality/c6259.md)|Codice inattivo nell'opzione con OR bit per bit limitato|
+|[C6260](../code-quality/c6260.md)|Utilizzo aritmetico dei byte|
+|[C6262](../code-quality/c6262.md)|Utilizzo eccessivo dello stack|
+|[C6263](../code-quality/c6263.md)|Utilizzo di alloca in loop|
+|[C6268](../code-quality/c6268.md)|Parentesi mancanti nel cast|
 |[C6269](../code-quality/c6269.md)|Dereferenziazione del puntatore ignorata|
 |[C6270](../code-quality/c6270.md)|Argomento Float mancante per formattare la funzione|
 |[C6271](../code-quality/c6271.md)|Argomento aggiuntivo per formattare la funzione|
@@ -62,46 +64,46 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[C6274](../code-quality/c6274.md)|Argomento non Character per formattare la funzione|
 |[C6276](../code-quality/c6276.md)|Cast stringa non valido|
 |[C6277](../code-quality/c6277.md)|Chiamata CreateProcess non valida|
-|[C6278](../code-quality/c6278.md)|Array-New Scalar-Delete non corrispondenti|
-|[C6279](../code-quality/c6279.md)|Array-New Scalar-Delete non corrispondenti|
-|[C6280](../code-quality/c6280.md)|Mancata corrispondenza di allocazione / deallocazione di memoria|
+|[C6278](../code-quality/c6278.md)|Array-New Scalar-Delete non corrispondente|
+|[C6279](../code-quality/c6279.md)|Scalar-new Array-Delete non corrispondente|
+|[C6280](../code-quality/c6280.md)|Allocazione di memoria-deallocazione non corrispondente|
 |[C6281](../code-quality/c6281.md)|Precedenza relazione bit per bit|
-|[C6282](../code-quality/c6282.md)|L'assegnazione sostituisce il Test|
-|[C6283](../code-quality/c6283.md)|Primitivi Array-New Scalar-Delete non corrispondenti|
+|[C6282](../code-quality/c6282.md)|L'assegnazione sostituisce il test|
+|[C6283](../code-quality/c6283.md)|Array primitivo-nuovo scalare-eliminazione non corrispondente|
 |[C6284](../code-quality/c6284.md)|Argomento di oggetto non valido per formattare la funzione|
-|[C6285](../code-quality/c6285.md)|Logica- o costanti|
-|[C6286](../code-quality/c6286.md)|Diverso da Zero logiche- o perdita di effetti collaterali|
+|[C6285](../code-quality/c6285.md)|Logical-OR di costanti|
+|[C6286](../code-quality/c6286.md)|Effetti collaterali logici diversi da zero|
 |[C6287](../code-quality/c6287.md)|Test ridondante|
-|[C6288](../code-quality/c6288.md)|Inclusione reciproca su logiche- e False|
-|[C6289](../code-quality/c6289.md)|L'esclusione reciproca con logica- o è True|
+|[C6288](../code-quality/c6288.md)|Inclusione reciproca su Logical-and è false|
+|[C6289](../code-quality/c6289.md)|Esclusione reciproca su OR logico true|
 |[C6290](../code-quality/c6290.md)|Precedenza Logical-Not Bitwise-And|
 |[C6291](../code-quality/c6291.md)|Precedenza Logical-Not Bitwise-Or|
-|[C6292](../code-quality/c6292.md)|Conteggi cicli dal massimo fino|
-|[C6293](../code-quality/c6293.md)|Conteggi cicli dal minimo|
-|[C6294](../code-quality/c6294.md)|Corpo ciclo mai eseguito|
+|[C6292](../code-quality/c6292.md)|Conteggi cicli fino al massimo|
+|[C6293](../code-quality/c6293.md)|Conteggio cicli inattivo dal minimo|
+|[C6294](../code-quality/c6294.md)|Corpo del ciclo mai eseguito|
 |[C6295](../code-quality/c6295.md)|Ciclo infinito|
-|[C6296](../code-quality/c6296.md)|Ciclo eseguito solo una volta|
-|[C6297](../code-quality/c6297.md)|Risultato dello Shift a eseguire il Cast a dimensioni maggiori|
-|[C6299](../code-quality/c6299.md)|Campo di bit a confronto booleano|
+|[C6296](../code-quality/c6296.md)|Ciclo eseguito una sola volta|
+|[C6297](../code-quality/c6297.md)|Risultato del cast di spostamento a dimensioni maggiori|
+|[C6299](../code-quality/c6299.md)|Confronto tra bit e Boolean|
 |[C6302](../code-quality/c6302.md)|Argomento stringa di caratteri non valido per formattare la funzione|
 |[C6303](../code-quality/c6303.md)|Argomento stringa di caratteri wide non valido per formattare la funzione|
 |[C6305](../code-quality/c6305.md)|Uso dimensione e conteggio non corrispondente|
 |[C6306](../code-quality/c6306.md)|Chiamata di funzione dell'argomento variabile non corretto|
-|[C6308](../code-quality/c6308.md)|Riallocazione perdita|
+|[C6308](../code-quality/c6308.md)|Perdita di realloc|
 |[C6310](../code-quality/c6310.md)|Costante filtro eccezioni non valida|
-|[C6312](../code-quality/c6312.md)|Eccezione continuazione ciclo esecuzione|
-|[C6314](../code-quality/c6314.md)|OR bit per bit- o sulla precedenza|
-|[C6317](../code-quality/c6317.md)|Complemento non NOT|
-|[C6318](../code-quality/c6318.md)|Eccezione continuazione ricerca|
+|[C6312](../code-quality/c6312.md)|Ciclo di esecuzione dell'eccezione continua|
+|[C6314](../code-quality/c6314.md)|Precedenza or bit per bit|
+|[C6317](../code-quality/c6317.md)|Non complemento|
+|[C6318](../code-quality/c6318.md)|Continua ricerca eccezione|
 |[C6319](../code-quality/c6319.md)|Ignorato da virgola|
-|[C6324](../code-quality/c6324.md)|Copia stringa invece di confronto di stringhe|
+|[C6324](../code-quality/c6324.md)|Copia della stringa anziché confronto tra stringhe|
 |[C6328](../code-quality/c6328.md)|Tipo argomento potenzialmente non corrispondente|
-|[C6331](../code-quality/c6331.md)|Flag non validi VirtualFree|
+|[C6331](../code-quality/c6331.md)|Flag VirtualFree non validi|
 |[C6332](../code-quality/c6332.md)|Parametro VirtualFree non valido|
-|[C6333](../code-quality/c6333.md)|Dimensioni VirtualFree non valido|
-|[C6335](../code-quality/c6335.md)|Handle processo perdita|
-|[C6381](../code-quality/c6381.md)|Informazioni arresto mancanti|
-|[C6383](../code-quality/c6383.md)|Numero di elementi Byte-sovraccarico del Buffer di conteggio|
+|[C6333](../code-quality/c6333.md)|Dimensioni VirtualFree non valide|
+|[C6335](../code-quality/c6335.md)|Handle di processo perdita|
+|[C6381](../code-quality/c6381.md)|Informazioni di chiusura mancanti|
+|[C6383](../code-quality/c6383.md)|Numero di byte del buffer di conteggio elementi|
 |[C6384](../code-quality/c6384.md)|Divisione dimensioni puntatore|
 |[C6385](../code-quality/c6385.md)|Overrun di lettura|
 |[C6386](../code-quality/c6386.md)|Overrun di scrittura|
@@ -125,7 +127,7 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[C6518](../code-quality/c6518.md)|Dimensioni scrivibili su buffer non scrivibile|
 |[C6522](../code-quality/c6522.md)|Tipo stringa dimensioni non valida|
 |[C6525](../code-quality/c6525.md)|Percorso irraggiungibile stringa dimensioni non valida|
-|[C6527](../code-quality/c6527.md)|Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void|
+|[C6527](../code-quality/c6527.md)|Annotazione non valida: Non è possibile usare la proprietà' NeedsRelease ' su valori di tipo void|
 |[C6530](../code-quality/c6530.md)|Stile stringa formato non riconosciuto|
 |[C6540](../code-quality/c6540.md)|L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec|
 |[C6551](../code-quality/c6551.md)|Specifica di dimensione non valida: espressione non analizzabile|
@@ -136,50 +138,50 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[C6704](../code-quality/c6704.md)|Errore imprevisto dell'espressione dell'annotazione|
 |[C6705](../code-quality/c6705.md)|Numero previsto di argomenti per l'annotazione non corrispondente al numero effettivo di argomenti per l'annotazione|
 |[C6706](../code-quality/c6706.md)|Errore di annotazione imprevisto per l'annotazione|
-|[C6995](../code-quality/c6995.md)|Impossibile salvare il file di Log XML|
-|[C26100](../code-quality/c26100.md)|Condizione di competizione|
-|[C26101](../code-quality/c26101.md)|Impossibile utilizzare correttamente l'operazione con interlock|
-|[C26110](../code-quality/c26110.md)|Chiamante non riesce a mantenere il blocco|
-|[C26111](../code-quality/c26111.md)|Chiamante non riesce a rilasciare il blocco|
-|[C26112](../code-quality/c26112.md)|Chiamante non può utilizzare alcun blocco|
-|[C26115](../code-quality/c26115.md)|Impossibile rilasciare il blocco|
+|[C6995](../code-quality/c6995.md)|Non è stato possibile salvare il file di log XML|
+|[C26100](../code-quality/c26100.md)|Race condition|
+|[C26101](../code-quality/c26101.md)|Impossibile utilizzare correttamente l'operazione Interlocked|
+|[C26110](../code-quality/c26110.md)|Il chiamante non riesce a mantenere il blocco|
+|[C26111](../code-quality/c26111.md)|Il chiamante non riesce a rilasciare il blocco|
+|[C26112](../code-quality/c26112.md)|Il chiamante non può mantenere alcun blocco|
+|[C26115](../code-quality/c26115.md)|Errore di rilascio del blocco|
 |[C26116](../code-quality/c26116.md)|Impossibile acquisire o mantenere il blocco|
-|[C26117](../code-quality/c26117.md)|Rilascio di un blocco|
+|[C26117](../code-quality/c26117.md)|Rilascio del blocco non mantenuto|
 |[C26140](../code-quality/c26140.md)|Errore di annotazione di concorrenza SAL|
-|[C28020](../code-quality/c28020.md)|L'espressione non è true per questa chiamata|
+|[C28020](../code-quality/c28020.md)|L'espressione non è true in questa chiamata|
 |[C28021](../code-quality/c28021.md)|Il parametro annotato deve essere un puntatore|
-|[C28022](../code-quality/c28022.md)|Classi di funzioni in questa funzione non corrispondono alle classi di funzioni nel typedef utilizzato per definirla.|
-|[C28023](../code-quality/c28023.md)|La funzione assegnata o passata deve avere una \_funzione\_classe\_ annotazione per almeno una delle classi|
-|[C28024](../code-quality/c28024.md)|Il puntatore a funzione assegnato è annotato con la classe di funzione, che non è contenuta nell'elenco delle classi di funzioni.|
+|[C28022](../code-quality/c28022.md)|Le classi di funzioni in questa funzione non corrispondono alle classi di funzioni nel typedef utilizzato per definirlo.|
+|[C28023](../code-quality/c28023.md)|La funzione assegnata o passata deve avere un' \_annotazione di classe\_ di funzione\_per almeno una delle classi|
+|[C28024](../code-quality/c28024.md)|Il puntatore a funzione assegnato è annotato con la classe Function, che non è contenuta nell'elenco delle classi di funzioni.|
 |[C28039](../code-quality/c28039.md)|Il tipo di parametro effettivo deve corrispondere esattamente al tipo|
-|[C28112](../code-quality/c28112.md)|Una variabile è accessibile mediante una funzione Interlocked deve essere eseguita sempre mediante una funzione Interlocked.|
-|[C28113](../code-quality/c28113.md)|L'accesso a una variabile locale tramite una funzione Interlocked|
-|[C28125](../code-quality/c28125.md)|La funzione deve essere chiamata dall'interno di un blocco try / except block|
-|[C28137](../code-quality/c28137.md)|L'argomento della variabile deve essere una costante (letterale)|
+|[C28112](../code-quality/c28112.md)|Una variabile A cui si accede tramite una funzione Interlocked deve essere sempre accessibile tramite una funzione Interlocked.|
+|[C28113](../code-quality/c28113.md)|Accesso a una variabile locale tramite una funzione Interlocked|
+|[C28125](../code-quality/c28125.md)|La funzione deve essere chiamata dall'interno di un blocco try/except|
+|[C28137](../code-quality/c28137.md)|L'argomento della variabile deve invece essere una costante (valore letterale)|
 |[C28138](../code-quality/c28138.md)|L'argomento della costante deve essere variabile|
-|[C28159](../code-quality/c28159.md)|È consigliabile usare invece un'altra funzione.|
+|[C28159](../code-quality/c28159.md)|Prendere in considerazione l'uso di un'altra funzione.|
 |[C28160](../code-quality/c28160.md)|Error (annotazione)|
-|[C28163](../code-quality/c28163.md)|La funzione non dovrebbe mai essere chiamata dall'interno di un blocco try / except block|
+|[C28163](../code-quality/c28163.md)|La funzione non deve mai essere chiamata dall'interno di un blocco try/except|
 |[C28164](../code-quality/c28164.md)|L'argomento viene passato a una funzione che prevede un puntatore a un oggetto (non un puntatore a un puntatore)|
 |[C28182](../code-quality/c28182.md)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
-|[C28183](../code-quality/c28183.md)|L'argomento può essere un valore e una copia del valore trovato nel puntatore|
-|[C28193](../code-quality/c28193.md)|La variabile contiene un valore che deve essere esaminato|
-|[C28196](../code-quality/c28196.md)|Non viene soddisfatto il requisito. (L'espressione non restituisce true.)|
+|[C28183](../code-quality/c28183.md)|L'argomento può essere un valore e è una copia del valore trovato nel puntatore|
+|[C28193](../code-quality/c28193.md)|La variabile include un valore che deve essere esaminato|
+|[C28196](../code-quality/c28196.md)|Il requisito non è soddisfatto. (L'espressione non restituisce true).|
 |[C28202](../code-quality/c28202.md)|Riferimento non valido a membro non statico|
 |[C28203](../code-quality/c28203.md)|Riferimento ambiguo al membro di classe.|
-|[C28205](../code-quality/c28205.md)|\_Esito positivo\_ oppure \_sul\_errore\_ usato in un contesto non valido|
+|[C28205](../code-quality/c28205.md)|\_\_ Esito \_positivoonegativo\_utilizzato in un contesto non valido\_|
 |[C28206](../code-quality/c28206.md)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](../code-quality/c28207.md)|L'operando sinistro è uno struct. Utilizzare '.'|
-|[C28209](../code-quality/c28209.md)|La dichiarazione del simbolo dispone di una dichiarazione in conflitto|
+|[C28209](../code-quality/c28209.md)|La dichiarazione per il simbolo presenta una dichiarazione in conflitto|
 |[C28210](../code-quality/c28210.md)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](../code-quality/c28211.md)|Previsto nome contesto statico per SAL_context|
 |[C28212](../code-quality/c28212.md)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](../code-quality/c28213.md)|Il \_utilizzo\_decl\_annotazioni\_ annotazione deve essere utilizzata per fare riferimento, senza alcuna modifica, una dichiarazione precedente.|
+|[C28213](../code-quality/c28213.md)|L' \_annotazioneuse\_ \_\_decl Annotations deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
 |[C28214](../code-quality/c28214.md)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](../code-quality/c28215.md)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
 |[C28217](../code-quality/c28217.md)|Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file|
-|[C28218](../code-quality/c28218.md)|Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file|
+|[C28218](../code-quality/c28218.md)|Per il parametro della funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file|
 |[C28219](../code-quality/c28219.md)|Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione|
 |[C28220](../code-quality/c28220.md)|Espressione integer prevista per l'annotazione del parametro nell'annotazione|
 |[C28221](../code-quality/c28221.md)|Prevista espressione di tipo String per il parametro nell'annotazione|
@@ -204,7 +206,7 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[C28240](../code-quality/c28240.md)|L'annotazione nel parametro presenta param2 ma nessun param1|
 |[C28241](../code-quality/c28241.md)|Annotazione per la funzione nel parametro non riconosciuta|
 |[C28243](../code-quality/c28243.md)|L'annotazione per la funzione nel parametro richiede più dereferenziazioni di quante ne siano consentite dal tipo annotato effettivo|
-|[C28244](../code-quality/c28244.md)|L'annotazione per la funzione dispone di un'annotazione esterna/parametro non analizzabile|
+|[C28244](../code-quality/c28244.md)|L'annotazione per la funzione ha un parametro/annotazione esterna non analizzabile|
 |[C28245](../code-quality/c28245.md)|L'annotazione per la funzione annota 'this' in una funzione non membro|
 |[C28246](../code-quality/c28246.md)|Nell'annotazione per la funzione, il parametro non corrisponde al tipo del parametro|
 |[C28250](../code-quality/c28250.md)|Annotazione incoerente per la funzione: errore dell'istanza precedente.|
@@ -217,7 +219,7 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[C28267](../code-quality/c28267.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](../code-quality/c28272.md)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](../code-quality/c28273.md)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](../code-quality/c28275.md)|Il parametro \_Macro\_valore\_ è null|
+|[C28275](../code-quality/c28275.md)|Il parametro per \_il\_valore\_ della macro è null|
 |[C28279](../code-quality/c28279.md)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](../code-quality/c28280.md)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](../code-quality/c28282.md)|Le stringhe di formato devono essere nelle precondizioni|
@@ -234,8 +236,8 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[C28303](../code-quality/c28303.md)|Operatore \_Deref\_ ambiguo trovato nell'annotazione.|
 |[C28304](../code-quality/c28304.md)|Operatore \_Notref\_ non correttamente posizionato applicato al token.|
 |[C28305](../code-quality/c28305.md)|È stato individuato un errore durante l'analisi di un token.|
-|[C28306](../code-quality/c28306.md)|L'annotazione su parametro è obsoleta|
-|[C28307](../code-quality/c28307.md)|L'annotazione su parametro è obsoleta|
+|[C28306](../code-quality/c28306.md)|L'annotazione sul parametro è obsoleti|
+|[C28307](../code-quality/c28307.md)|L'annotazione sul parametro è obsoleti|
 |[C28350](../code-quality/c28350.md)|L'annotazione descrive una situazione non applicabile in modo condizionale.|
 |[C28351](../code-quality/c28351.md)|L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
@@ -278,7 +280,7 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|I metodi Transparent devono contenere solo IL verificabile|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|I metodi Transparent non devono chiamare i metodi con l'attributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Il codice Transparent non deve far riferimento a elementi SecurityCritical|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare i LinkDemand|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|I metodi Transparent non devono soddisfare I LinkDemand|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|

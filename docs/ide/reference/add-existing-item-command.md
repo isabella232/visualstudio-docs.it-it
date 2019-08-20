@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8ab2ce6e9f1260172bf0ffbf0aede9138a5115f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91e84a817b7b68f56c053d11d69facf753c6efc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792623"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919377"
 ---
 # <a name="add-existing-item-command"></a>Comando Aggiungi elemento esistente
 Aggiunge un file esistente alla soluzione corrente e lo apre.
@@ -30,22 +30,24 @@ File.AddExistingItem filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `filename` Obbligatorio. Percorso completo e nome del file con estensione dell'elemento da aggiungere alla soluzione corrente. Se il percorso o il nome del file contiene spazi, racchiudere l'intero percorso tra virgolette.
+`filename`\
+Obbligatorio. Percorso completo e nome del file con estensione dell'elemento da aggiungere alla soluzione corrente. Se il percorso o il nome del file contiene spazi, racchiudere l'intero percorso tra virgolette.
 
 ## <a name="switches"></a>Opzioni
- /e: `editorname` Facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+/e: `editorname`\
+facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
- La sintassi dell'argomento `editorname` usa i nomi degli editor così come visualizzati nella **finestra di dialogo Apri con**, racchiusi tra virgolette. Ad esempio, per aprire un foglio di stile nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
+La sintassi dell'argomento `editorname` usa i nomi degli editor così come visualizzati nella **finestra di dialogo Apri con**, racchiusi tra virgolette. Ad esempio, per aprire un foglio di stile nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Osservazioni
- Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
+Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 
 ## <a name="example"></a>Esempio
- In questo esempio viene aggiunto il file Form1.frm alla soluzione corrente.
+In questo esempio viene aggiunto il file Form1.frm alla soluzione corrente.
 
 ```cmd
 >File.AddExistingItem "C:\public\solution files\Form1.frm"

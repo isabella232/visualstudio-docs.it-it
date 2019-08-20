@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791844"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926331"
 ---
 # <a name="alias-command"></a>Comando Alias
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.
@@ -36,36 +36,40 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Argomenti
- `aliasname` Facoltativo. Nome del nuovo alias. Se per `aliasname` non viene specificato alcun valore, verrà visualizzato un elenco degli alias correnti e le relative definizioni.
+`aliasname`\
+facoltativo. Nome del nuovo alias. Se per `aliasname` non viene specificato alcun valore, verrà visualizzato un elenco degli alias correnti e le relative definizioni.
 
- `aliasstring` Facoltativo. Nome del comando completo o alias esistente e i parametri da creare come alias. Se per `aliasstring` non viene specificato alcun valore, verranno visualizzati il nome di alias e la stringa di alias per l'alias specificato.
+`aliasstring`\
+facoltativo. Nome del comando completo o alias esistente e i parametri da creare come alias. Se per `aliasstring` non viene specificato alcun valore, verranno visualizzati il nome di alias e la stringa di alias per l'alias specificato.
 
 ## <a name="switches"></a>Opzioni
- /delete o /del o /d Facoltativo. Elimina l'alias specificato rimuovendolo dal completamento automatico.
+/delete o /del o /d\
+facoltativo. Elimina l'alias specificato rimuovendolo dal completamento automatico.
 
- /reimpostare Facoltativo. Ripristina le impostazioni originali dell'elenco di alias predefiniti, ovvero ripristina tutti gli alias predefiniti e rimuove tutti gli alias definiti dall'utente.
+/reset\
+facoltativo. Ripristina le impostazioni originali dell'elenco di alias predefiniti, ovvero ripristina tutti gli alias predefiniti e rimuove tutti gli alias definiti dall'utente.
 
 ## <a name="remarks"></a>Osservazioni
- Poiché rappresentano i comandi, gli alias devono essere posizionati all'inizio della riga di comando.
+Poiché rappresentano i comandi, gli alias devono essere posizionati all'inizio della riga di comando.
 
- Quando si esegue questo comando, le opzioni devono essere incluse subito dopo il comando, non dopo gli alias. In caso contrario, l'opzione verrà considerata parte della stringa di alias.
+Quando si esegue questo comando, le opzioni devono essere incluse subito dopo il comando, non dopo gli alias. In caso contrario, l'opzione verrà considerata parte della stringa di alias.
 
- L'opzione `/reset` chiede una conferma prima del ripristino degli alias. Non esiste una forma breve di `/reset`.
+L'opzione `/reset` chiede una conferma prima del ripristino degli alias. Non esiste una forma breve di `/reset`.
 
 ## <a name="examples"></a>Esempi
- In questo esempio viene creato un nuovo alias, `upper`, per il comando completo Edit.MakeUpperCase.
+In questo esempio viene creato un nuovo alias, `upper`, per il comando completo Edit.MakeUpperCase.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
- In questo esempio l'alias `upper` viene eliminato.
+In questo esempio l'alias `upper` viene eliminato.
 
 ```cmd
 >Tools.alias /delete upper
 ```
 
- In questo esempio viene visualizzato un elenco di tutti gli alias correnti e le relative definizioni.
+In questo esempio viene visualizzato un elenco di tutti gli alias correnti e le relative definizioni.
 
 ```cmd
 >Tools.Alias

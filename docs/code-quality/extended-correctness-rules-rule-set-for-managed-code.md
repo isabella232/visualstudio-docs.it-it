@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924003"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585119"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
+
 Il set di regole di correttezza estesa Microsoft ottimizza gli errori di utilizzo della logica e del framework segnalati dall'analisi del codice. L'enfasi aggiuntiva si trova in scenari specifici, ad esempio l'interoperabilità COM e le applicazioni per dispositivi mobili. È consigliabile includere questo set di regole se uno di questi scenari si applica al progetto o per trovare ulteriori problemi nel progetto.
 
-Il set di regole Microsoft Extended Correctity Rules include le regole incluse nel set di regole Microsoft Basic Correctity Rules. Le regole di correttezza di base includono le regole del set di regole minime consigliate di Microsoft. Per ulteriori informazioni, vedere set di regole di [correttezza di base per codice gestito](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [set di regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Il set di regole Microsoft Extended Correctity Rules include le regole del set di regole [base](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) di correttezza, che contiene le regole del set di regole [consigliate gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Extended Correctity Rules.
 

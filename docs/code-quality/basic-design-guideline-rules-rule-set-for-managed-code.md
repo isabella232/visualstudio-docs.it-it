@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919533"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585092"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
+
 È possibile utilizzare il set di regole delle linee guida di progettazione di base Microsoft per concentrarsi sulla semplificazione della comprensione e dell'utilizzo del codice. È necessario includere questo set di regole se il progetto include codice della libreria o se si desidera applicare procedure consigliate per il codice di facile manutenzione.
 
-Le regole delle linee guida di progettazione di base includono tutte le regole del set di regole raccomandati minime Microsoft. Per un elenco delle regole minime, vedere [set di regole consigliate gestite per il codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+Le regole delle linee guida di progettazione di base includono tutte le regole del set di regole [consigliate gestite](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Basic Design Guideline Rules.
 
-|Regola|DESCRIZIONE|
+|Regola|Descrizione|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Dichiarare correttamente i gestori eventi|

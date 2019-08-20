@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483543"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870866"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -33,7 +33,7 @@ Accedere a Visual Studio con un account Microsoft o un account aziendale. Il nom
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accedere all'account Azure in Esplora server
 
-Premere **CTRL**+**ALT**+**S** per aprire **Esplora server**. Espandere il nodo **Azure**. Si noti che contiene le risorse disponibili nell'account Azure associato all'account usato per accedere a Visual Studio. È simile alla figura riportata di seguito:
+Per aprire Esplora server, scegliere **Visualizza** > **Esplora server** (o, se si usano le [impostazioni di ambiente](../ide/environment-settings.md) "Generale", premere **CTRL**+**ALT**+**S**). Espandere il nodo **Azure**. Si noti che contiene le risorse disponibili nell'account Azure associato all'account usato per accedere a Visual Studio. È simile alla figura riportata di seguito:
 
 ![Nodo Azure espanso in Esplora server](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

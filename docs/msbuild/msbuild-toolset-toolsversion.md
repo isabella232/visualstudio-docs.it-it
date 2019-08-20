@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747389"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926377"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 
@@ -60,7 +60,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- È possibile modificare il valore di `MSBuildToolsPath` definendo un set di strumenti personalizzato. Per altre informazioni, vedere [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)
+ È possibile modificare il valore di `MSBuildToolsPath` definendo un set di strumenti personalizzato. Per altre informazioni, vedere [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md).
 
  Quando si compila una soluzione dalla riga di comando e si specifica un attributo `ToolsVersion` per *msbuild.exe*, tutti i progetti e le dipendenze tra progetti vengono compilati secondo tale attributo `ToolsVersion`, anche se ogni progetto della soluzione contiene un attributo `ToolsVersion` specifico. Per definire il valore `ToolsVersion` in base al progetto, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
@@ -106,7 +106,7 @@ In alternativa, è possibile determinare il set di strumenti a livello di codice
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> restituisce il percorso di un file, che in genere si trova nella cartella degli strumenti gestiti.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> restituisce il percorso degli strumenti di compilazione.
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) restituisce il percorso degli strumenti di compilazione.
 
 ### <a name="sub-toolsets"></a>Subset di strumenti
 

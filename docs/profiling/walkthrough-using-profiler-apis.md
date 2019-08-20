@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428124"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870285"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 
@@ -37,7 +37,7 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
  Per il codice nativo, le API del profiler di Visual Studio si trovano in *VSPerf.dll*. Il file di intestazione *VSPerf.h* e la libreria di importazione *VSPerf.lib* si trovano nella directory *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Per le app a 64 bit, la cartella è *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
- Per il codice gestito, le API del profiler si trovano in *Microsoft.VisualStudio.Profiler.dll*. Questa DLL è disponibile nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Per le app a 64 bit, la cartella è *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.Profiler>.
+ Per il codice gestito, le API del profiler si trovano in *Microsoft.VisualStudio.Profiler.dll*. Questa DLL è disponibile nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Per le app a 64 bit, la cartella è *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Per altre informazioni, vedere [Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Questa procedura dettagliata presuppone che l'ambiente di sviluppo scelto sia configurato per supportare il debug e il campionamento. Gli argomenti seguenti offrono una panoramica di questi prerequisiti:
@@ -170,7 +170,7 @@ DataCollection.CurrentId);
 
 ## <a name="see-also"></a>Vedere anche
 
-- <xref:Microsoft.VisualStudio.Profiler>
+- [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Riferimenti per le API del profiler di Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Introduzione](../profiling/getting-started-with-performance-tools.md)
 - [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
