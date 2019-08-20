@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604874"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551062"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola FxCop
 
-Se in precedenza è stata usata l'analisi statica del codice in una versione precedente di Visual Studio, è possibile chiedersi quali di queste regole sono disponibili nell'implementazione corrente come [analizzatori FxCop](install-fxcop-analyzers.md). In questa pagina sono elencate le regole che vengono trasferite, nonché quelle che non sono state trasferite e se sono presenti piani per trasferirle.
+Se in precedenza è stata usata l'analisi statica del codice in Visual Studio, è possibile chiedersi quali di queste regole sono disponibili nell'implementazione corrente come [analizzatori FxCop](install-fxcop-analyzers.md). In questa pagina sono elencate le regole che vengono trasferite, nonché quelle che non sono state trasferite e se sono presenti piani per trasferirle.
 
 ## <a name="ported-rules"></a>Regole trasferite
 
@@ -208,7 +208,7 @@ Il set di regole che non sono state trasferite agli [analizzatori FxCop](install
 
 ### <a name="rules-that-may-be-ported"></a>Regole che possono essere trasferite
 
-Le seguenti regole di analisi del codice statico FxCop non sono state ancora implementate come analizzatori, ma possono comunque essere. Questo problema può essere dovuto a un motivo tecnico di blocco o semplicemente alla priorità più bassa. Per ulteriori informazioni sullo stato di portabilità di ogni regola, fare clic sul collegamento nella colonna **problema di rilevamento** .
+Le seguenti regole di analisi legacy di FxCop non sono state ancora implementate come analizzatori, ma possono comunque essere. Questo problema può essere dovuto a un motivo tecnico di blocco o semplicemente alla priorità più bassa. Per ulteriori informazioni sullo stato di portabilità di ogni regola, fare clic sul collegamento nella colonna **problema di rilevamento** .
 
 ID regola | Problema di rilevamento
 --- | ---
@@ -271,7 +271,7 @@ ID regola | Problema di rilevamento
 
 ### <a name="deprecated-rules"></a>Regole deprecate
 
-Le seguenti regole di analisi del codice statico FxCop sono deprecate e non verranno implementate come analizzatori. Per ulteriori informazioni, è possibile eseguire la ricerca in base all'ID regola, ad esempio CA1009, nella [pagina Roslyn-Analyzers GitHub issues](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Le seguenti regole di analisi legacy FxCop sono deprecate e non verranno implementate come analizzatori. Per ulteriori informazioni, è possibile eseguire la ricerca in base all'ID regola, ad esempio CA1009, nella [pagina Roslyn-Analyzers GitHub issues](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)
