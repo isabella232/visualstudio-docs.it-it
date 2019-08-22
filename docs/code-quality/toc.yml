@@ -162,31 +162,31 @@
           items:
             - name: Panoramica
               href: rule-set-reference.md
-            - name: Set di regole Tutte le regole
+            - name: Tutte le regole
               href: all-rules-rule-set.md
-            - name: Set di regole base di correttezza per codice gestito
+            - name: Regole di correttezza di base
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Set di regole Regole base delle linee guida di progettazione per codice gestito
+            - name: Regole delle linee guida di progettazione di base
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Set di regole estese di correttezza per codice gestito
+            - name: Regole di correttezza estese
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Set di regole Regole estese delle linee guida di progettazione per codice gestito
+            - name: Regole delle linee guida di progettazione estese
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Set di regole delle Regole di globalizzazione per codice gestito
+            - name: Regole di globalizzazione
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Set di regole minime gestite per codice gestito
+            - name: Regole minime gestite
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Set di regole consigliate gestite per codice gestito
+            - name: Regole consigliate gestite
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Set di regole minime miste
+            - name: Regole minime miste
               href: mixed-minimum-rules-rule-set.md
-            - name: Set di regole consigliate miste
+            - name: Regole consigliate miste
               href: mixed-recommended-rules-rule-set.md
-            - name: Set di regole minime native
+            - name: Regole minime native
               href: native-minimum-rules-rule-set.md
-            - name: Set di regole consigliate native
+            - name: Regole consigliate native
               href: native-recommended-rules-rule-set.md
-            - name: Set di regole di sicurezza per codice gestito
+            - name: Regole di sicurezza
               href: security-rules-rule-set-for-managed-code.md
         - name: Non visualizzare gli avvisi
           href: in-source-suppression-overview.md

@@ -350,8 +350,6 @@
                     - name: Panoramica
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: Aggiungere controlli null per tutti i parametri
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Modificare la firma di un metodo
                       href: ide/reference/change-method-signature.md
                     - name: Conversione di tipi anonimi in classe
@@ -414,6 +412,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Assegnazioni, variabili e parametri di valori non usati'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Wrapping e allineamento delle catene di chiamate
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Impostare il ritorno a capo automatico, il rientro e l''allineamento dei parametri'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Procedura dettagliata: Generare codice dall''utilizzo'
