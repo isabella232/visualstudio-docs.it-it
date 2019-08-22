@@ -1,5 +1,5 @@
 ---
-title: 'CA2311: Non deserializzare senza aver prima impostato NetDataContractSerializer.Binder'
+title: 'CA2311: Non eseguire la deserializzazione senza aver prima impostato NetDataContractSerializer.Binder'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,14 +13,14 @@ ms.workload:
 f1_keywords:
 - CA2311
 - DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder
-ms.openlocfilehash: aec95d4bbd2d9bc498f9688c5601591d480d7f3b
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 2ec13d78e364940fa9c210cf0792e810c8f0f341
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135439"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891173"
 ---
-# <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311: Non deserializzare senza aver prima impostato NetDataContractSerializer.Binder
+# <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311: Non eseguire la deserializzazione senza aver prima impostato NetDataContractSerializer.Binder
 
 |||
 |-|-|
@@ -31,31 +31,31 @@ ms.locfileid: "65135439"
 
 ## <a name="cause"></a>Causa
 
-Oggetto <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> metodo di deserializzazione è stato chiamato o cui viene fatto riferimento senza il <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> set di proprietà.
+È <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> stato chiamato o fatto riferimento A un metodo di deserializzazione senza il set di <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> proprietà.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Questa regola individua <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> deserializzazione chiamate ai metodi o i riferimenti, quando si <xref:System.Runtime.Serialization.NetDataContractSerializer> non ha relativo <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> impostato. Se si vuole impedire qualsiasi deserializzazione con <xref:System.Runtime.Serialization.NetDataContractSerializer> indipendentemente i <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> proprietà, disabilitare questa regola e [CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)e abilitare la regola [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md).
+Questa regola trova <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> le chiamate al metodo di deserializzazione o <xref:System.Runtime.Serialization.NetDataContractSerializer> i riferimenti, <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> quando non dispone del relativo set. Se <xref:System.Runtime.Serialization.NetDataContractSerializer> si desidera impedire la <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> deserializzazione con indipendentemente dalla proprietà, disabilitare questa regola e [CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)e abilitare la regola [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Se possibile, usare invece un serializzatore protetto e **non consente un utente malintenzionato di specificare un tipo arbitrario da deserializzare**. Alcuni serializzatori più sicure includono:
+- Se possibile, usare invece un serializzatore protetto e **non consentire a un utente malintenzionato di specificare un tipo arbitrario da**deserializzare. Alcuni serializzatori più sicuri includono:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Non utilizzare mai <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Se è necessario utilizzare un resolver di tipi, limitare tipi deserializzati da un elenco previsto.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Non usare <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>mai. Se è necessario usare un resolver di tipi, limitare i tipi deserializzati a un elenco previsto.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET - usare TypeNameHandling.None. Se è necessario usare un altro valore per TypeNameHandling, limitare tipi deserializzati a un elenco con un ISerializationBinder personalizzato previsto.
+  - Newtonsoft Json.NET-usare TypeNameHandling. None. Se è necessario usare un altro valore per TypeNameHandling, limitare i tipi deserializzati a un elenco previsto con un ISerializationBinder personalizzato.
   - Buffer del protocollo
-- Rendere la prova di manomissione i dati serializzati. Dopo la serializzazione, firmare crittograficamente i dati serializzati. Prima della deserializzazione, la convalida della firma crittografica. Proteggere la chiave di crittografia dal scoperte e progettazione per le rotazioni delle chiavi.
-- Limitare i tipi deserializzati. Implementare una classe personalizzata <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Prima della deserializzazione con <xref:System.Runtime.Serialization.NetDataContractSerializer>, impostare il <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> proprietà a un'istanza di personalizzata <xref:System.Runtime.Serialization.SerializationBinder>. In sottoposto a override <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metodo, se il tipo è imprevisto, generare un'eccezione.
+- Eseguire la prova di manomissione dei dati serializzati. Dopo la serializzazione, la firma crittografica dei dati serializzati. Prima della deserializzazione, convalidare la firma crittografica. Proteggere la chiave crittografica da divulgare e progettare per le rotazioni delle chiavi.
+- Limitare i tipi deserializzati. Implementare un oggetto <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>personalizzato. Prima di eseguire la deserializzazione <xref:System.Runtime.Serialization.NetDataContractSerializer>con <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> , impostare la proprietà su un'istanza <xref:System.Runtime.Serialization.SerializationBinder>di personalizzata. Nel metodo sottoposto <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> a override, se il tipo è imprevisto, generare un'eccezione per arrestare la deserializzazione.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 
@@ -262,6 +262,6 @@ End Class
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA2310: Non utilizzare il deserializzatore non sicuro NetDataContractSerializer](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
+[CA2310: Non usare un deserializzatore non sicuro NetDataContractSerializer](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
 
-[CA2312: NetDataContractSerializer.Binder prima che sia impostata la deserializzazione](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)
+[CA2312: Assicurarsi che NetDataContractSerializer. Binder sia impostato prima della deserializzazione](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)
