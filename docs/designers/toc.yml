@@ -95,7 +95,7 @@
   items:
     - name: Panoramica di Progettazione Windows Form
       href: windows-forms-designer-overview.md
-    - name: Guida introduttiva a Progettazione Windows Form
+    - name: Introduzione a Progettazione Windows Form
       href: walkthrough-windows-forms-designer.md
     - name: Disporre i controlli >>
       href: /dotnet/framework/winforms/controls/arranging-controls-on-windows-forms
@@ -107,7 +107,7 @@
       href: disable-dpi-awareness.md
     - name: Riferimenti
       items:
-        - name: API System.Windows.Forms
+        - name: API System.Windows.Forms >>
           href: /dotnet/api/system.windows.forms
     - name: Esercitazioni
       items:
