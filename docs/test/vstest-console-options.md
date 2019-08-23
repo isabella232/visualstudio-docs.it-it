@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147ec9096be430d0bc81be65fdf68f927c0f3dac
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 34b38ca89e33fd1f3ab8d309c6f55822bf8b7107
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661947"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551827"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opzioni della riga di comando di VSTest.Console.exe
 
@@ -41,7 +41,7 @@ Nella tabella seguente vengono illustrate tutte le opzioni di *VSTest.Console.ex
 |**/UseVsixExtensions**|Questa opzione consente al processo *vstest.console.exe* di usare o ignorare le eventuali estensioni VSIX installate nell'esecuzione dei test.<br />Questa opzione è stata deprecata. È possibile che a partire dalla prossima versione principale di Visual Studio questa opzione venga rimossa. Passare all'uso delle estensioni rese disponibili come pacchetto NuGet.<br />Esempio: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*percorso*]**|Impone al processo *vstest.console.exe* l'uso di adattatori di test personalizzati in un percorso specificato (se disponibili) nell'esecuzione dei test.<br />Esempio: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo di piattaforma*]**|Architettura della piattaforma di destinazione da usare per l'esecuzione del test.<br />I valori validi sono x86, x64 e ARM.|
-|**/Framework: [*versione framework*]**|Versione .NET di destinazione da usare per l'esecuzione dei test.<br />I valori validi sono Framework35, Framework40, Framework45 e FrameworkUap10.<br />Se il framework di destinazione è specificato come **Framework35**, i test vengono eseguiti in "modalità di compatibilità" CLR 4.0.<br />Esempio: `/Framework:framework40`|
+|**/Framework: [*versione framework*]**|Versione .NET di destinazione da usare per l'esecuzione dei test.<br />Esempi di valori sono `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10`, `.NETCoreApp,Version=v1.1`.<br />Se il framework di destinazione è specificato come **Framework35**, i test vengono eseguiti in "modalità di compatibilità" CLR 4.0.<br />Esempio: `/Framework:framework40`|
 |**/TestCaseFilter:[*espressione*]**|Esegue test corrispondenti all'espressione specificata.<br /><Expression\> è nel formato <property\>=<value\>[\|<Expression\>].<br />Esempio: `/TestCaseFilter:"Priority=1"`<br />Esempio: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Non è possibile usare l'opzione della riga di comando **/TestCaseFilter** con l'opzione della riga di comando **/Tests**. <br />Per informazioni sulla creazione e sull'uso delle espressioni, vedere il [filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Visualizza informazioni sull'utilizzo.|
 |**/Logger:[*uri/nome descrittivo*]**|Specifica un logger per i risultati dei test.<br />Esempio: per registrare i risultati in un file di Risultati test di Visual Studio (TRX), usare **/Logger:trx**.<br />Esempio: per pubblicare i risultati dei test in Team Foundation Server, usare TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<nome build\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=\<Il valore predefinito è "Any CPU">]**<br />**[;Flavor=\<Il valore predefinito è "Debug">]**<br />**[;RunTitle=<titolo\>]**|

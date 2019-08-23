@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Configurare progetti per le piattaforme di destinazione'
-ms.date: 11/04/2016
+ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416828"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634915"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: Configurare progetti per le piattaforme di destinazione
 
@@ -64,9 +64,60 @@ L'esecuzione di questa attività varia in base al linguaggio di programmazione u
 
 - Per i progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vedere [/clr (Compilazione Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
+## <a name="manually-editing-the-project-file"></a>Modifica manuale del file di progetto
+
+In alcuni casi è necessario modificare manualmente il file di progetto per applicare una configurazione personalizzata. Un esempio è la presenza di condizioni che non possono essere specificate nell'IDE, ad esempio un riferimento diverso per due piattaforme differenti, come nell'esempio seguente.
+
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Esempio: Riferimento ad assembly e DLL x86 e x64
+
+Potrebbe essere disponibile un assembly o una DLL .NET con entrambe le versioni x86 e x64. Per configurare il progetto in modo da usare questi riferimenti, aggiungere prima di tutto il riferimento, quindi aprire il file di progetto e modificarlo per aggiungere un `ItemGroup` con una condizione che fa riferimento sia alla configurazione che alla piattaforma di destinazione.  Si supponga, ad esempio, che il file binario a cui si fa riferimento sia ClassLibrary1 e che ci siano percorsi diversi per le configurazioni di debug e di versione, nonché per le versioni x86 e x64.  Usare quindi quattro elementi `ItemGroup` con tutte le combinazioni di impostazioni, come indicato di seguito:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x64\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Debug\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\x86\Release\netstandard2.0\ClassLibrary1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
+```
+
+::: moniker range="vs-2017"
+> [!NOTE]
+> In Visual Studio 2017 è necessario scaricare il progetto prima di poter modificare il file di progetto. Per scaricare il progetto, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Scarica progetto**. Al termine, salvare le modifiche e ricaricare il progetto facendo clic con il pulsante destro del mouse sul nodo del progetto e scegliendo **Ricarica progetto**.
+::: moniker-end
+
+Per altre informazioni sul file di progetto, vedere [Informazioni di riferimento sullo schema del file di progetto di MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md)
 - [/platform (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
 - [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps)
 - [Supporto a 64 bit per l'IDE di Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
+- [Informazioni sul file di progetto](/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file)

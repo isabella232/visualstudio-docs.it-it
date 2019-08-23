@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c291eb614a69d88116c6af228304e19a6295bba2
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: d9f47c54a530f58ea562fd942c1ef795bad37331
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662039"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490635"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test usando un file con estensione *runsettings*
 
@@ -26,11 +26,25 @@ I file di impostazioni esecuzione test possono essere usati per configurare i te
 
 ### <a name="ide"></a>IDE
 
+::: moniker range="vs-2017"
+
 Per specificare un file di impostazioni esecuzione test, selezionare **Test** > **Impostazioni test** > **Seleziona file di impostazioni test** e quindi selezionare il file con estensione *runsettings*.
 
-![Selezionare il menu di file di impostazioni test in Visual Studio](media/select-test-settings-file.png)
+![Selezionare il menu di file di impostazioni test in Visual Studio 2017](media/select-test-settings-file.png)
 
-Il file viene visualizzato nel menu **Impostazioni test** e può essere selezionato o deselezionato. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si seleziona **Analizza code coverage**.
+Il file viene visualizzato nel menu Impostazioni test e può essere selezionato o deselezionato. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si seleziona **Analizza code coverage**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Per specificare un file di impostazioni esecuzione test nell'IDE, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Individuare e selezionare il file con estensione *runsettings*.
+
+![Selezionare il menu di file di impostazioni test in Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+
+Il file viene visualizzato nel menu Impostazioni test in Esplora test e può essere selezionato o deselezionato. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si seleziona **Analizza code coverage**.
+
+::: moniker-end
 
 ### <a name="command-line"></a>Riga di comando
 
@@ -73,9 +87,19 @@ Per personalizzare i test usando un file con estensione *runsettings*, seguire q
    > [!TIP]
    > Il nome del file non è rilevante, purché si usi l'estensione *runsettings*.
 
-1. Sostituire il contenuto del file con il codice XML dell'esempio riportato di seguito e personalizzarlo in base alle esigenze.
+2. Sostituire il contenuto del file con il codice XML dell'esempio riportato di seguito e personalizzarlo in base alle esigenze.
 
-1. Nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test**. Selezionare il file con estensione *runsettings* creato e quindi selezionare **OK**.
+::: moniker range="vs-2017"
+
+3. Nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test**. Selezionare il file con estensione *runsettings* creato e quindi selezionare **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Per selezionare il file di impostazioni esecuzione test, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Selezionare il file con estensione *runsettings* creato e quindi selezionare **OK**.
+
+::: moniker-end
 
    > [!TIP]
    > È possibile creare più file con estensione *runsettings* nella soluzione e selezionarne uno come file di impostazioni test attivo in base alle esigenze.
@@ -94,7 +118,7 @@ Il codice XML seguente rappresenta il contenuto di un tipico file con estensione
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
+    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -260,7 +284,7 @@ Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi 
 |-|-|-|
 |**ForcedLegacyMode**|False|In Visual Studio 2012, l'adapter MSTest è stato ottimizzato per essere più veloce e più scalabile. Un comportamento, ad esempio l'ordine in cui vengono eseguiti i test, potrebbe non essere esattamente come quello nelle versioni precedenti di Visual Studio. Impostare questo valore su **true** per usare l'adattatore di test precedente.<br /><br />Lo si può usare, ad esempio, nel caso in cui sia presente un file *app.config* specificato per uno unit test.<br /><br />È consigliabile provare a effettuare il refactoring dei test per consentire l'uso dell'adattatore più recente.|
 |**IgnoreTestImpact**|False|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](https://msdn.microsoft.com/library/dd286589).|
-|**SettingsFile**||È possibile specificare un file di impostazioni test da usare con l'adattatore MSTest. È inoltre possibile specificare un file di impostazioni test selezionando **Test** > **Impostazioni test** > **Seleziona file di impostazioni test**.<br /><br />Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
+|**SettingsFile**||È possibile specificare un file di impostazioni test da usare con l'adattatore MSTest. È anche possibile specificare un file di impostazioni test [dal menu delle impostazioni](#ide).<br /><br />Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|False|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Anche qualsiasi processo avviato come parte del test verrà interrotto. Per fare in modo che l'executor di test rimanga attivo, impostare questa configurazione su **true**. Lo si può usare, ad esempio, per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|
 |**DeploymentEnabled**|true|Se si imposta il valore su **false**, gli elementi della distribuzione specificati nel metodo di test non vengono copiati nella directory di distribuzione.|
 |**CaptureTraceOutput**|true|È possibile scrivere nella traccia di debug dal metodo di test usando <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|

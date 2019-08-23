@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965551"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490621"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
 
@@ -30,18 +30,38 @@ Per personalizzare il code coverage, seguire questa procedura:
 
 1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento** dal menu di scelta rapida della soluzione e selezionare **File XML**. Salvare il file con un nome come *CodeCoverage.runsettings*.
 
-1. Aggiungere il contenuto riportato nel file di esempio alla fine di questo articolo, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.
+2. Aggiungere il contenuto riportato nel file di esempio alla fine di questo articolo, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.
 
-1. Per selezionare il file di impostazioni esecuzione test, nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando o in un flusso di lavoro di compilazione, vedere [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Per selezionare il file di impostazioni esecuzione test, nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando o in un flusso di lavoro di compilazione, vedere [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Per selezionare il file di impostazioni esecuzione test, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando o in un flusso di lavoro di compilazione, vedere [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
 
    Quando si seleziona **Analizza code coverage** le informazioni di configurazione vengono lette dal file di impostazioni esecuzione test.
 
    > [!TIP]
    > I risultati del code coverage precedente e la colorazione del codice non vengono nascosti automaticamente quando si eseguono i test o si aggiorna il codice.
 
+::: moniker range="vs-2017"
+
 Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test** > **Impostazioni test**.
 
 ![Menu Impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Impostazioni** in **Esplora test**.
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Specificare i percorsi di ricerca dei simboli
 
@@ -89,7 +109,7 @@ Se l'elemento **Include** è vuoto, l'elaborazione del code coverage include tut
 
 Includere ed escludere i nodi che usano le espressioni regolari. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Le espressioni regolari non equivalgono ai caratteri jolly. In particolare:
 
-- **.\\** * corrisponde a una stringa composta da caratteri qualsiasi
+- **.\*** corrisponde a una stringa composta da qualsiasi carattere
 
 - **\\.** corrisponde a un punto "."
 

@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti su Esplora test
-ms.date: 11/07/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,16 +14,16 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661985"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551865"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
-
 ::: moniker range=">=vs-2019"
+
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Dove si trova la funzionalità di raggruppamento per tratti in Visual Studio 2019?
 Il raggruppamento per tratti è stato spostato in una colonna. Con la gerarchia multilivello e personalizzabile in Visual Studio 2019 versione 16.2, si è ritenuto che includere i tratti come raggruppamento comportasse una complessità visiva non necessaria. Il feedback degli utenti su questo aspetto sarà molto apprezzato. https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
@@ -31,38 +31,43 @@ Per il momento, è possibile fare clic con il pulsante destro del mouse sulla co
 
 ![Visualizzare la colonna Tratto](media/vs-2019/trait-column.png)
 ![Filtrare la colonna Tratto](media/vs-2019/trait-column-filter.png)
-
 ::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Individuazione dei test dinamici
 
 **Esplora Test non individua i test definiti in modo dinamico. Ad esempio, teorie, adattatori personalizzati, tratti personalizzati, #ifdefs e così via. Come è possibile individuare questi test?**
 
+::: moniker range=">=vs-2019"
+Compilare il progetto per eseguire l'individuazione basata su assembly.
+::: moniker-end
+::: moniker range="vs-2017"
 Compilare il progetto e verificare che l'individuazione basata su assembly sia attivata in **Strumenti** > **Opzioni** > **Test**.
-
+::: moniker-end
 L'[individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824) è l'individuazione dei test in base all'origine. Questa funzionalità non consente di individuare test che usano teorie, adattatori personalizzati, tratti personalizzati, istruzioni `#ifdef` e così via, perché sono definiti in fase di esecuzione. Per l'individuazione accurata di questi test è necessaria una compilazione. In Visual Studio 2017 versione 15.6 e versioni successive l'individuazione basata su assembly (agente di individuazione tradizionale) viene eseguita solo dopo le compilazioni. Questa impostazione significa che l'individuazione dei test in tempo reale consente di individuare il maggior numero possibile di test durante la modifica e che l'individuazione basata su assembly consente la visualizzazione dei test definiti in modo dinamico dopo una compilazione. L'individuazione dei test in tempo reale migliora la velocità di risposta, consentendo tuttavia di ottenere risultati precisi e completi dopo una compilazione.
 
 ## <a name="test-explorer--plus-symbol"></a>'+' (segno più) di Esplora test
 
 **Cosa significa il simbolo '+' (più) visualizzato nella prima riga di Esplora test?**
 
-Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo una compilazione a condizione che sia attivata l'individuazione basata su assembly. Il simbolo viene visualizzato se nel progetto vengono rilevati test definiti in modo dinamico.
+Il simbolo '+' (più) indica che possono essere individuati ulteriori test dopo una compilazione quando viene eseguita l'individuazione basata su assembly. Il simbolo viene visualizzato se nel progetto vengono rilevati test definiti in modo dinamico.
 
 ![Riga di riepilogo con segno più](media/testex-plussymbol.png)
 
+::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Individuazione basata su assembly
 
 **L'individuazione basata su assembly non funziona più per un progetto. Come è possibile riattivarla?**
 
-Passare a **Strumenti** > **Opzioni** > **Test** e selezionare la casella **Individua anche i test di assembly compilati dopo le compilazioni.**
+Passare a **Strumenti** > **Opzioni** > **Test** e selezionare la casella di controllo **Individua anche i test di assembly compilati dopo le compilazioni**.
 
 ![Opzione basata su assembly](media/testex-toolsoptions.png)
+::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Individuazione dei test in tempo reale
 
 **I test vengono ora visualizzati in Esplora test durante la digitazione senza dover compilare il progetto. Cosa è cambiato?**
 
-Questa funzionalità è denominata [individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizzatore Roslyn per trovare i test e popolare Esplora test in tempo reale, senza che sia necessario compilare il progetto. Per altre informazioni sul comportamento dell'individuazione dei test per i test definiti in modo dinamico, ad esempio teorie o tratti personalizzati, vedere la domanda 1.
+Questa funzionalità è denominata [individuazione dei test in tempo reale](https://go.microsoft.com/fwlink/?linkid=862824). Usa un analizzatore Roslyn per trovare i test e popolare Esplora test in tempo reale, senza che sia necessario compilare il progetto. Per altre informazioni sul comportamento dell'individuazione dei test per i test definiti in modo dinamico, ad esempio teorie o tratti personalizzati, vedere [Individuazione dei test dinamici](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilità dell'individuazione dei test in tempo reale
 
@@ -92,7 +97,7 @@ Nella visualizzazione gerarchia i test sono disposti in ordine alfabetico anzich
 
 ## <a name="test-explorer-hierarchy-view"></a>Visualizzazione gerarchia in Esplora test
 
-**Nella visualizzazione gerarchia, accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe vengono visualizzate icone per i test superati, non superati, ignorati e non eseguiti. Cosa significano queste icone?**
+**Nella visualizzazione gerarchia, accanto ai raggruppamenti dei nodi padre vengono visualizzate icone per i test superati, non superati, ignorati e non eseguiti. Cosa significano queste icone?**
 
 Le icone accanto ai raggruppamenti Progetto, Spazio dei nomi e Classe indicano lo stato dei test all'interno di tale raggruppamento. Fare riferimento alla tabella riportata di seguito.
 
@@ -110,6 +115,7 @@ Il filtro per il percorso file nella casella di ricerca **Esplora test** è stat
 
 In Visual Studio 2019, verranno rimosse alcune API di finestra di test in precedenza contrassegnate come pubbliche, ma mai documentate ufficialmente. Sono state contrassegnate come "deprecate" in Visual Studio 2017 per avvisare tempestivamente chi gestisce le estensioni. In base a quanto osservato, sono pochissime le estensioni che hanno rilevato queste API e hanno dipendenze dalle stesse. Sono incluse `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se questa modifica interessa l'estensione in uso, segnalare un bug in [Developer Community](https://developercommunity.visualstudio.com).
 
+::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Riferimento NuGet all'adattatore di test
 
 **In Visual Studio 2017 versione 15.8 i test vengono individuati, ma non eseguiti.**
@@ -124,6 +130,7 @@ Invece di usare le estensioni dell'adattatore di test, i progetti devono usare i
 > Se si usa l'adattatore di test NUnit 2 e non si può eseguire la migrazione a NUnit 3, è possibile disattivare questo nuovo comportamento di individuazione in Visual Studio versione 15.8 in **Strumenti** > **Opzioni** > **Test**.
 
 ![Comportamento dell'adattatore nelle opzioni degli strumenti di Esplora test](media/testex-adapterbehavior.png)
+::: moniker-end
 
 ## <a name="uwp-testcontainer-was-not-found"></a>Oggetto TestContainer UWP non trovato
 

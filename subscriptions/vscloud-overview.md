@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: 5844ac1e22346e8001f0a682848b36fdb6b3f8a5
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606105"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490696"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -71,7 +71,7 @@ Se sono state acquistate più sottoscrizioni, procedere al [portale di amministr
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="for-new-customers"></a>Per i nuovi clienti:
-#### <a name="q--i-was-considering-the-annual-cloud-subscription-and-now-i-cant-find-it-what-should-i-do"></a>D:  Si stava valutando la possibilità di acquistare la sottoscrizione cloud annuale, ma sembra non essere più disponibile.  Cosa devo fare?
+#### <a name="q--i-was-considering-the-annual-cloud-subscription-and-now-i-cant-find-it-what-should-i-do"></a>D:  Si stava valutando la possibilità di acquistare la sottoscrizione cloud annuale, ma sembra non essere più disponibile.  Come devo procedere?
 R: Visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per altre opzioni di acquisto.
 
 #### <a name="q-what-purchasing-options-are-available-to-me"></a>D: Quali opzioni di acquisto sono disponibili?
@@ -86,10 +86,10 @@ R:  Si riceveranno i diritti di licenza perpetua per l'IDE di Visual Studio incl
 R:  Questa modifica non ha alcun effetto sui sottoscrittori esistenti.
 
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>D:  Queste modifiche richiedono azioni da parte dell'utente?
-R:   No.  Le sottoscrizioni rimarranno invariate e sarà possibile gestirle nel modo consueto.
+R:  No.  Le sottoscrizioni rimarranno invariate e sarà possibile gestirle nel modo consueto.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>D: Come si può aumentare il numero di sottoscrizioni per i clienti?
-R: È possibile acquistare sottoscrizioni annuali aggiuntive in qualsiasi momento.  Le sottoscrizioni annuali acquistate vengono addebitate immediatamente per un intero anno e sono valide per un intero anno. 
+R: Le sottoscrizioni annuali acquistate nel corso di un dato mese vengono addebitate immediatamente per un intero anno e sono valide per un intero anno. Per questo motivo, è possibile modificare il numero di licenze solo nel mese corrente di acquisto (e saranno valide per un anno e verranno addebitate per un anno). Non è più possibile aumentare il numero delle sottoscrizioni al di fuori del mese di acquisto.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>D: Come si può ridurre il numero di sottoscrizioni per i clienti?
 R: L'amministratore può sempre ridurre il numero di sottoscrizioni visitando https://manage.visualstudio.com e seguendo le istruzioni disponibili in questo articolo. Il sistema *non* genererà un credito ripartito. Per ottenere un rimborso è necessario contattare il team di fatturazione di Azure.

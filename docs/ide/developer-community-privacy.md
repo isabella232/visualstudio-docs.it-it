@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
+ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823362"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69634859"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -54,21 +54,19 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
 - File di log attività in memoria di Visual Studio
 
-- File PerfWatson, se la raccolta Watson è abilitata, della cartella *VSFeedbackPerfWatsonData*
+- File PerfWatson, se la raccolta Watson è abilitata
 
-- File di log di LiveShare, se presenti, della cartella *VSFeedbackVSRTCLogs*
+- File di log LiveShare, se esistenti
 
-- File di log di Xamarin, se presenti, da *%LOCALAPPDATA%\Xamarin\Logs*
+- File di log Xamarin, se esistenti
 
-- File di log di NuGet, se presenti, da *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- File di log NuGet, se esistenti
 
-- File di log del debugger Web, se presenti:
+- File di log del debugger Web, se esistenti
 
-  - *%TEMP%\vscode-chrome-debug.txt*
+- Log di Service Hub e log degli errori MEF, se esistenti
 
-  - *%TEMP%\vscode-node-debug2.txt*
-
-  - *%TEMP%\vscode-edge-debug.txt*
+- Log Python, se esistenti
 
 - Uno screenshot, se si sceglie di includerlo
 
