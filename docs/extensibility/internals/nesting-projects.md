@@ -1,5 +1,5 @@
 ---
-title: Annidamento dei progetti | Microsoft Docs
+title: Annidamento di progetti | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,27 +13,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 209d3ca013e72ff709d0bd581dd460205d8e347d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326694"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976699"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
-Gli sviluppatori di applicazioni aziendali che usano il pacchetto di Visual Studio possono raggruppano tipi simili di progetti nell'insieme [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando *progetto annidamento*. Ad esempio, il progetto di modello dell'organizzazione Usa i progetti annidati per i progetti di gruppo in categorie. Progetti di facciata business, i progetti di interfaccia utente Web e così via vengono raggruppati insieme in una categoria.
+Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto vs possono raggruppare in modo pratico tipi simili [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di progetti in utilizzando l'annidamento del *progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.
 
- In questo scenario non è alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, anche se lo sviluppatore può fornire a livello di programmazione i limiti. Questo tipo di raggruppamento può inoltre essere creato ricorsiva, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere nidificati sotto l'elemento figlio per diventare un sottoprogetto del figlio, che è un sottoprogetto del padre.
+ In questo scenario non esiste alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, sebbene lo sviluppatore possa fornire i limiti a livello di codice. Questo tipo di raggruppamento può anche essere reso ricorsivo, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere annidati sotto l'elemento figlio per diventare un sottoprogetto del figlio, che è un sottoprogetto dell'elemento padre.
 
- Annidamento di progetto non è una parte intrinseca di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È necessario scrivere il codice per abilitare la nidificazione e un sottoprogetto annidamento all'interno dei progetti figlio. Il progetto padre è un pacchetto VSPackage speciali o tipo di progetto creato e registrato con un proprio GUID che include il codice necessario per implementare la nidificazione di progetto.
+ L'annidamento del progetto non è una parte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]intrinseca di. È necessario scrivere il codice per abilitare l'annidamento e la nidificazione del sottoprogetto nei progetti figlio. Il progetto padre è un VSPackage speciale o un tipo di progetto, creato e registrato con il proprio GUID che include il codice necessario per implementare l'annidamento del progetto.
 
- Nell'esempio c# Example.Nested Project, è possibile trovare un esempio di progetti annidati.
+ È possibile trovare un esempio su come annidare i [progetti in procedura: Implementare progetti](../../extensibility/internals/how-to-implement-nested-projects.md)annidati.
 
 ## <a name="nested-projects-example"></a>Esempio di progetti annidati
- ![Esplora i progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") esempio i progetti annidati
+ ![Soluzione di progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Esempio di progetti annidati
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md)
 - [Considerazioni per lo scaricamento e il ricaricamento di progetti annidati](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Supporto di procedure guidate per i progetti annidati](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registrazione di modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md)
