@@ -1,6 +1,6 @@
 ---
 title: Nozioni fondamentali sugli unit test
-ms.date: 06/06/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e5529ae777fe1cee69e669ce20fb919eceb5ef
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925814"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490735"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -40,7 +40,12 @@ Per un'introduzione agli unit test che mostra direttamente la creazione di codic
 
 In questo articolo si usa come esempio lo sviluppo di un'applicazione fittizia denominata `MyBank`. Per seguire le spiegazioni disponibili in questo argomento non è necessario il codice effettivo. I metodi di test vengono scritti in C# e vengono presentati tramite il framework di testing unità Microsoft per codice gestito. I concetti sono tuttavia facilmente trasferibili in altri linguaggi e framework.
 
+::: moniker range="vs-2017"
 ![Soluzione MyBank](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Soluzione MyBank 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 Il primo tentativo di progettazione per l'applicazione `MyBank` include un componente conti che rappresenta un singolo conto e le rispettive transazioni con la banca e un componente database che rappresenta la funzionalità per l'aggregazione e la gestione dei singoli conti.
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -84,18 +89,28 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
 1. Nella finestra dell'editor del codice fare clic con il pulsante destro del mouse e scegliere [**Crea unit test**](create-unit-tests-menu.md) dal menu di scelta rapida.
 
+   ::: moniker range="vs-2017"
    ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
 
    > [!NOTE]
    > Il comando di menu **Crea unit test** è disponibile solo per il codice gestito destinato a .NET Framework (ma non a .NET Core).
 
 2. Fare clic su **OK** per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
 
-    ![Finestra di dialogo Crea unit test in Visual Studio](../test/media/create-unit-tests.png)
+   ![Finestra di dialogo Crea unit test in Visual Studio](../test/media/create-unit-tests.png)
 
 3. Gli stub di unit test vengono creati in un nuovo progetto di unit test per tutti i metodi nella classe.
 
-    ![Vengono creati gli unit test](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![Vengono creati gli unit test](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Vengono creati gli unit test](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. Passare quindi alle informazioni seguenti per apprendere come [aggiungere codice ai metodi di unit test](#write-your-tests) per rendere significativo lo unit test ed eventuali unit test aggiuntivi che è possibile aggiungere per testare accuratamente il codice.
 
@@ -218,9 +233,14 @@ public void My_Test ()
 
 Quando si compila il progetto di test, i test vengono visualizzati in **Esplora test**. Se **Esplora test** non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
 
+::: moniker range="vs-2017"
 ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Esplora unit test](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-Durante l'esecuzione, la scrittura e la nuova esecuzione di test, la visualizzazione predefinita di **Esplora test** mostra i risultati in gruppi di **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile scegliere un'intestazione di gruppo per aprire la visualizzazione che mostra tutti i test disponibili nel gruppo.
+Quando si eseguono, si scrivono e si rieseguono i test, **Esplora test** può visualizzare i risultati nei gruppi **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile scegliere diverse opzioni di raggruppamento nella barra degli strumenti.
 
 È anche possibile filtrare i test in qualsiasi visualizzazione in base alla corrispondenza con il testo nella casella di ricerca a livello globale oppure tramite la selezione di uno dei filtri predefiniti. È possibile eseguire qualsiasi selezione di test in qualsiasi momento. I risultati di un'esecuzione dei test sono visualizzati immediatamente nella barra relativa alle operazioni riuscite/non riuscite nella parte superiore della finestra di Esplora test. I dettagli relativi al risultato di un metodo di test vengono visualizzati quando si seleziona il test.
 
@@ -228,9 +248,14 @@ Durante l'esecuzione, la scrittura e la nuova esecuzione di test, la visualizzaz
 
 La barra degli strumenti di **Esplora test** consente di individuare, organizzare ed eseguire i test a cui si è interessati.
 
+::: moniker range="vs-2017"
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Dopo l'esecuzione di un set di test, nella parte inferiore della finestra **Esplora test** viene visualizzato il riepilogo dell'esecuzione dei test. Selezionare un test per visualizzarne i dettagli nel riquadro inferiore. Scegliere **Apri test** dal menu di scelta rapida (da tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
+È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Selezionare un test per visualizzarne i dettagli nel riquadro dei dettagli del test. Scegliere **Apri test** dal menu di scelta rapida (da tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
 
 ::: moniker range="vs-2017"
 
@@ -246,18 +271,33 @@ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsi
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 
-> [!WARNING]
-> L'esecuzione di unit test dopo ogni compilazione è supportata solo in Visual Studio Enterprise.
+::: moniker range="vs-2017"
 
 |Button|DESCRIZIONE|
 |-|-|
-|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** nella barra degli strumenti di **Esplora test**.|
+|![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
+
+> [!NOTE]
+> Per eseguire unit test dopo ogni compilazione è necessario Visual Studio 2017 Enterprise o Visual Studio 2019. In Visual Studio 2019 la funzionalità è disponibile nell'edizione Community e Professional, oltre all'edizione Enterprise.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Per eseguire gli unit test dopo ogni compilazione locale, aprire l'icona Impostazioni sulla barra degli strumenti di Esplora test e selezionare **Esegui test dopo compilazione**.
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrare e raggruppare l'elenco dei test
 
-In presenza di un numero elevato di test, è possibile digitare nella casella di testo di **Esplora test** per filtrare l'elenco in base alla stringa specificata. È possibile limitare ulteriormente i risultati scegliendo uno dei filtri disponibili nell'elenco.
+Quando è presente un numero elevato di test, è possibile digitare nella casella di ricerca di **Esplora test** per filtrare l'elenco in base alla stringa specificata. È possibile limitare ulteriormente i risultati scegliendo uno dei filtri disponibili nell'elenco.
 
+::: moniker range="vs-2017"
 ![Categorie di filtri di ricerca](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Categorie di filtri di ricerca](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |Button|DESCRIZIONE|
 |-|-|
@@ -282,9 +322,14 @@ Altre informazioni dettagliate sul [debug di unit test](../debugger/debugger-fea
 
 **D: Se si usa lo sviluppo basato su test, come è possibile generare codice dai test?**
 
-**R:** Usare IntelliSense per generare classi e metodi nel codice del progetto. Scrivere un'istruzione in un metodo di test che chiama la classe o il metodo da generare, quindi aprire il menu di IntelliSense sotto la chiamata. Se la chiamata è per un costruttore della nuova classe, scegliere **Genera nuovo tipo** dal menu, quindi eseguire la procedura guidata per inserire la classe nel progetto di codice. Se la chiamata è per un metodo, scegliere **Genera nuovo metodo** dal menu di IntelliSense.
+**R:** Usare Azioni rapide per generare classi e metodi nel codice del progetto. Scrivere un'istruzione in un metodo di test che chiama la classe o il metodo da generare, quindi aprire la lampadina visualizzata sotto l'errore. Se la chiamata è per un costruttore della nuova classe, scegliere **Genera tipo** dal menu, quindi eseguire la procedura guidata per inserire la classe nel progetto di codice. Se la chiamata è per un metodo, scegliere **Genera metodo** dal menu di IntelliSense.
 
-![Menu IntelliSense Genera stub di metodo](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![Genera stub metodo - Menu Azione rapida](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Genera stub metodo - Menu Azione rapida](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
 **D: È possibile creare unit test che accettano più set di dati come input per eseguire il test?**
 
@@ -320,7 +365,7 @@ Altre informazioni sugli [unit test basati sui dati](../test/how-to-create-a-dat
 
 **D: È possibile visualizzare la quantità di codice testata dagli unit test?**
 
-**R:** Sì. È possibile determinare la quantità di codice sottoposta effettivamente a test dagli unit test usando lo strumento per il code coverage di Visual Studio. Sono supportati i linguaggi nativi e gestiti e tutti i framework di unit test che possono essere eseguiti dal framework di unit test.
+**R:** Sì. È possibile determinare la quantità di codice sottoposta effettivamente a test dagli unit test usando lo strumento per il code coverage di Visual Studio in Visual Studio Enterprise. Sono supportati i linguaggi nativi e gestiti e tutti i framework di unit test che possono essere eseguiti dal framework di unit test.
 
 È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione. La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 

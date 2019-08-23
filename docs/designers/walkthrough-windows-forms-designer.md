@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e54a0957cb6b63c95c1cd914f7fc3eb72e581ac3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981647"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585353"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procedura dettagliata: Introduzione a Progettazione Windows Form
 
@@ -309,8 +309,10 @@ Per usare il controllo DemoCalculator in un'applicazione, è necessario inserirl
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Questo articolo ha illustrato come costruire l'interfaccia utente per una semplice calcolatrice. Per continuare, è possibile estendere la relativa funzionalità implementando la logica della calcolatrice. In alternativa, continuare con un'altra esercitazione in cui [si crea un visualizzatore di immagini con Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
+Questo articolo ha illustrato come costruire l'interfaccia utente per una semplice calcolatrice. Per continuare, è possibile estenderne la funzionalità implementando la logica della calcolatrice e quindi [pubblicare l'app usando ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). In alternativa, continuare con un'altra esercitazione in cui [si crea un visualizzatore di immagini con Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Controlli Windows Form](/dotnet/framework/winforms/controls/)
 - [Accessibilità per i controlli Windows Form](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
+- [Pubblicare con ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

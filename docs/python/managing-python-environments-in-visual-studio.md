@@ -1,7 +1,7 @@
 ---
 title: Gestire gli ambienti e gli interpreti Python
 description: Usare la finestra Ambienti Python per gestire ambienti globali, virtuali e Conda, installare pacchetti e interpreti Python e assegnare gli ambienti ai progetti di Visual Studio.
-ms.date: 03/18/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1826981f29ebfc29e7e5d28aa32fbff8c74ea5a
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536759"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585385"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -35,8 +35,15 @@ Se non si ha familiarità con Python in Visual Studio, vedere gli articoli segue
 - [Usare Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
 - [Come installare il supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md)
 
+::: moniker range="vs-2017"
 > [!Note]
 > Non è possibile gestire ambienti per il codice Python aperto solo come cartella tramite il comando **File** > **Apri** > **Cartella**. In alternativa, [creare un progetto Python da codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md) per sfruttare le funzionalità dell'ambiente di Visual Studio.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> È possibile gestire ambienti per il codice Python aperto come cartella tramite il comando **File** > **Apri** > **Cartella**. La barra degli strumenti di Python consente di spostarsi tra tutti gli ambienti rilevati e anche di aggiungere un nuovo ambiente. Le informazioni sull'ambiente sono archiviate nel file PythonSettings.json nella cartella Workspace.vs.
+::: moniker-end
 
 ## <a name="the-python-environments-window"></a>Finestra Ambienti Python
 
@@ -150,7 +157,7 @@ Un ambiente Conda è un ambiente creato usando lo strumento `conda` o con la ges
 
 1. Configurare i campi seguenti:
 
-    | Campo | Description |
+    | Campo | DESCRIZIONE |
     | --- | --- |
     | Progetto | Progetto in cui creare l'ambiente (in presenza di più progetti nella stessa soluzione di Visual Studio). |
     | nome | Nome per l'ambiente Conda. |
@@ -208,7 +215,7 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
 1. Immettere un nome per l'ambiente nel campo **Descrizione**.
 
-1. Immettere o selezionare (tramite **...**) il percorso dell'interprete nel campo **Percorso di prefisso**.
+1. Immettere o selezionare (tramite **...** ) il percorso dell'interprete nel campo **Percorso di prefisso**.
 
 1. Se Visual Studio rileva un interprete Python nel percorso specificato, ad esempio il percorso illustrato di seguito per un ambiente Conda, viene abilitato il comando **Rilevamento automatico**. Selezionando **Rilevamento automatico** vengono compilati i restanti campi. È anche possibile compilare manualmente questi campi.
 
@@ -232,7 +239,7 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
     ![Opzione di ambiente personalizzato nella finestra di dialogo Aggiungi ambiente](media/environments/environments-custom-2-2019.png)
 
-1. Negli appositi campi nella finestra di dialogo, immettere o selezionare (tramite **...**) il percorso dell'interprete in **Percorso di prefisso**. Viene così compilata la maggior parte degli altri campi. Dopo aver esaminato questi valori e aver apportato le eventuali modifiche necessarie, selezionare **Aggiungi**. 
+1. Negli appositi campi nella finestra di dialogo, immettere o selezionare (tramite **...** ) il percorso dell'interprete in **Percorso di prefisso**. Viene così compilata la maggior parte degli altri campi. Dopo aver esaminato questi valori e aver apportato le eventuali modifiche necessarie, selezionare **Aggiungi**. 
 
     ![Campi per specificare i dettagli per un'opzione di ambiente personalizzato nella finestra di dialogo Aggiungi ambiente](media/environments/environments-custom-3-2019.png)
 
@@ -255,7 +262,7 @@ Per correggere un ambiente che si vuole mantenere, provare prima a usare il proc
 Per correggere un ambiente che non dispone di un'opzione di riparazione o per rimuovere un ambiente non valido, usare la procedura seguente per modificare direttamente il Registro di sistema. Visual Studio aggiorna automaticamente la finestra **Ambienti Python** dopo aver apportato le modifiche al Registro di sistema.
 
 1. Eseguire *regedit.exe*.
-1. Passare a **HKEY_LOCAL_MACHINE\SOFTWARE\Python** per gli interpreti 32 bit o a **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** per gli interpreti a 64 bit. Per IronPython, cercare invece **IronPython**.
+1. Passare a **HKEY_LOCAL_MACHINE\SOFTWARE\Python**. Per IronPython, cercare invece **IronPython**.
 1. Espandere il nodo che corrisponde alla distribuzione, ad esempio **Python Core** per CPython o **ContinuumAnalytics** per Anaconda. Per IronPython, espandere il nodo del numero di versione.
 1. Controllare i valori nel nodo **InstallPath**:
 

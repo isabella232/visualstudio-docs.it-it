@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160058"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551438"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
 
@@ -105,6 +105,8 @@ Consente di impostare il file con estensione *ico* che si vuole usare come icona
 
 Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
+Per informazioni sulla creazione di un'icona, vedere [Editor di immagini per le icone](/cpp/windows/image-editor-for-icons).
+
 **Manifest**
 
 Consente di selezionare un'opzione di generazione del manifesto quando l'applicazione viene eseguita in Windows Vista sotto Controllo dell'account utente. Questa opzione può avere i valori seguenti:
@@ -120,3 +122,5 @@ Consente di selezionare un'opzione di generazione del manifesto quando l'applica
 Selezionare questo pulsante di opzione se si specifica un file di risorse per il progetto. Se si seleziona questa opzione, le opzioni **Icona** e **Manifesto** vengono disabilitate.
 
 Immettere un nome di percorso o usare il pulsante Sfoglia ( **...** ) per aggiungere un file di risorse Win32 al progetto.
+
+Per altre informazioni, vedere [Creare i file di risorse per le app .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

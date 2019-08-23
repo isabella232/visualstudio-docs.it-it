@@ -12,16 +12,16 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177802"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490594"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
-Questa procedura dettagliata descrive come creare e configurare un'impostazione test in cui vengono usati un controller di test e agenti di test per distribuire i test a diversi computer usando Visual Studio. Viene inoltre descritto come aggiungere adattatori dati e diagnostici all'impostazione di test.
+Questo articolo descrive come creare e configurare un'impostazione di test che usa un controller di test e un agente di test per distribuire i test a diversi computer usando Visual Studio. Viene inoltre descritto come aggiungere adattatori dati e diagnostici all'impostazione di test.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -49,10 +49,7 @@ Questa procedura dettagliata descrive come creare e configurare un'impostazione 
 
      È quindi possibile modificare e salvare i valori delle impostazioni di test.
 
-    > [!NOTE]
-    > Ogni impostazione test creata viene elencata tra le opzioni disponibili per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
-
-5. In **Nome** digitare il nome per le impostazioni di test.
+5. In **Nome** digitare il nome per le impostazioni test.
 
 6. In **Descrizione** digitare **Impostazioni test distribuito**.
 
@@ -98,7 +95,17 @@ Questa procedura dettagliata descrive come creare e configurare un'impostazione 
 
 7. Scegliere **Chiudi**.
 
-8. Scegliere **Seleziona impostazioni test** attive dal menu Test e quindi scegliere **TestSettingDistributedTestWalkthrough.testsettings**.
+::: moniker range="vs-2017"
+
+8. Scegliere **Seleziona file di impostazioni test** dal menu Test e quindi scegliere *TestSettingDistributedTestWalkthrough.testsettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. In **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
+
+::: moniker-end
 
 9. Eseguire il test nel modo abituale.
 

@@ -8,14 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f947d8a4994c8a515a707f34a07065358194e09
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950217"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490680"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: Creare un'impostazione di test per un test di carico distribuito
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedura: Creare un file di impostazioni test per un test di carico distribuito
 
 Configurare le *impostazioni test* per i test di carico per consentirne la distribuzione tra più computer con agenti di test e test controller. È anche possibile configurare le impostazioni test per l'uso degli *adattatori dati di diagnostica* che specificano i tipi di dati da raccogliere o il funzionamento dei computer di test quando si eseguono i test di carico da Visual Studio.
 
@@ -39,9 +39,7 @@ Il controller di test disporrà di agenti che possono essere usati per ogni ruol
 
 Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella soluzione per i test di carico che si intende eseguire da Visual Studio.
 
-## <a name="create-a-test-setting-for-a-distributed-load-test"></a>Creare un'impostazione di test per un test di carico distribuito
-
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Per aggiungere impostazioni test per un test di carico distribuito
+## <a name="create-a-test-settings-file"></a>Creare un file di impostazioni test
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi** e quindi **Nuovo elemento**.
 
@@ -55,15 +53,9 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Il nuovo file delle impostazioni test viene visualizzato in **Esplora soluzioni** nella cartella **Elementi di soluzione**.
 
-    > [!NOTE]
-    > L'elenco di impostazioni test visualizzato in Visual Studio Enterprise deriva dall'elenco dei file di impostazioni test nella cartella **Elementi di soluzione**. I file delle impostazioni test nella cartella **Elementi di soluzione** vengono ad esempio visualizzati quando si sceglie l'opzione **Seleziona impostazioni test attive** dal menu **Test**. Questo significa che se un file di impostazioni test viene spostato in un'altra posizione nella gerarchia della soluzione, non sarà più possibile utilizzarlo come un'impostazione di test nell'IDE (Integrated Development Environment) di Visual Studio.
-
 5. Viene visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
 
      È quindi possibile modificare e salvare i valori delle impostazioni di test.
-
-    > [!NOTE]
-    > Ogni impostazione test creata viene elencata tra le opzioni disponibili per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
 
 6. In **Nome** digitare il nome per le impostazioni test.
 
@@ -154,9 +146,9 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Viene visualizzata la pagina **Script di installazione e pulizia**.
 
-    1. Digitare il percorso del file di script in **Script di installazione** oppure fare clic sui puntini di sospensione (**…**) per individuare lo script.
+    1. Digitare il percorso del file di script in **Script di installazione** oppure fare clic sui puntini di sospensione ( **…** ) per individuare lo script.
 
-    2. Digitare il percorso del file di script in **Script di pulizia** oppure fare clic sui puntini di sospensione (**…**) per individuare lo script.
+    2. Digitare il percorso del file di script in **Script di pulizia** oppure fare clic sui puntini di sospensione ( **…** ) per individuare lo script.
 
 24. Per eseguire i test usando un host diverso, scegliere **Host**.
 
@@ -182,14 +174,11 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 28. Per salvare le impostazioni test, scegliere **Salva con nome**. Digitare il nome di file desiderato in **Nome oggetto**.
 
-    > [!NOTE]
-    > Se è necessario modificare le impostazioni test, scegliere **Modifica impostazioni test** dal menu **Test**, quindi selezionare le impostazioni test create.
-
-### <a name="to-remove-a-test-settings-from-your-solution"></a>Per rimuovere impostazioni di test dalla soluzione
+## <a name="remove-a-test-settings-file-from-your-solution"></a>Rimuovere un file di impostazioni test dalla soluzione
 
 Nella cartella **Elementi di soluzione** in **Esplora soluzioni** fare clic con il pulsante destro del mouse sulle impostazioni test da rimuovere, quindi scegliere **Rimuovi**.
 
-Il file delle impostazioni di test verrà rimosso dalla soluzione. Questa modifica si riflette nell'elenco delle opzioni per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
+Il file delle impostazioni di test verrà rimosso dalla soluzione.
 
 ## <a name="see-also"></a>Vedere anche
 
