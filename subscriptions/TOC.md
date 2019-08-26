@@ -22,6 +22,7 @@
 #### [Anonimizzazioni dei dati dei sottoscrittori](anonymization.md)
 ### [Panoramica del portale delle sottoscrizioni](using-the-subscriber-portal.md)
 ### [Gestire le sottoscrizioni](manage-vs-subscriptions.md)
+### [Contattare l'amministratore delle sottoscrizioni](contact-my-admin.md)
 ### Vantaggi
 #### Strumenti
 ##### [Credito Azure](vs-azure.md)
@@ -58,17 +59,22 @@
 #### [Trovare e richiedere chiavi](find-keys.md)
 #### [Dimostrazioni Internet](internet-demos.md)
 ## Amministratori
-### [Responsabilità degli amministratori](admin-responsibilities.md)
+### Responsabilità degli amministratori
+#### [Responsabilità degli amministratori](admin-responsibilities.md)
 #### [Inventario pre-produzione](admin-inventory.md)
 #### [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)
 #### [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
-### Onboarding dell'organizzazione
-#### [Migrazione dei clienti Open e Open License](open-migration.md)
+### Accesso al portale di amministrazione
+#### [Contratti multilicenza](volume-license.md)
 #### [MPSA](mpsa.md)
 #### [Sottoscrizioni cloud](cloud-admin.md)
-#### [Video di onboarding](https://youtu.be/plSu6fpi7UI)
+#### [Gestione dei partner per i clienti](open-migration.md)
+#### [Esercitazione video: Accedere al portale di amministrazione](https://youtu.be/plSu6fpi7UI)
 ### Uso del portale di amministrazione
+#### [Amministratori avanzati e amministratori](admin-roles.md)
+#### [Impostare le preferenze per i contratti](admin-prefs.md)
 #### [Panoramica](using-admin-portal.md)
+#### [Esercitazione video: Usare il portale di amministrazione](https://www.youtube.com/watch?v=XG-E-IDjA-w&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=3&t=0s)
 #### Assegnare sottoscrizioni
 ##### [Aggiungere utenti singoli](assign-license.md)
 ##### [Aggiungere più utenti](assign-license-bulk.md)
@@ -81,7 +87,7 @@
 #### [Sottoscrizioni scadute](handle-expired-license.md)
 #### [Sottoscrittori che usano alias](aliasing.md)
 #### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
-### [Gestione di Visual Studio con GitHub Enterprise](assign-github.md)
+#### [Gestione di Visual Studio con GitHub Enterprise](assign-github.md)
 ## Risorse
 ### [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)
 ### [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing)
