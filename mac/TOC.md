@@ -31,6 +31,7 @@
 # Editor standard
 ## [Funzionalità dell'editor](source-editor.md)
 ## [Refactoring](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Commenti](comments.md)
 ## [Comportamento dell'editor](editor-behavior.md)
 ## [Commenti dell'attività](task-comments.md)
