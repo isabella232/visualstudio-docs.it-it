@@ -171,7 +171,7 @@ Questa procedura richiede vue-cli 3.0, che attualmente è in versione beta.
 
 Un problema sconosciuto di vue-cli 3.0 può impedire l'automatizzazione del processo di compilazione. Ogni volta che si tenta di aggiornare la cartella wwwroot, è necessario eseguire il comando `npm run build` nella cartella client-app.
 
-In alternativa, è possibile compilare il progetto vue-cli 3.0 come un evento di pre-compilazione usando le proprietà del progetto ASP.NET. Fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà** e includere i comandi seguenti nella casella di testo  **	Riga di comando eventi pre-compilazione** della scheda **Compilazione**.
+In alternativa, è possibile compilare il progetto vue-cli 3.0 come un evento di pre-compilazione usando le proprietà del progetto ASP.NET. Fare clic con il pulsante destro del mouse sul progetto, scegliere **Proprietà** e includere i comandi seguenti nella casella di testo **Riga di comando eventi pre-compilazione** della scheda **Compilazione**.
 
 ``` cmd
 cd ./client-app
