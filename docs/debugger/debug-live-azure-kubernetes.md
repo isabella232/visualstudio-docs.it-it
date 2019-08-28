@@ -52,7 +52,7 @@ In questa esercitazione si eseguono le attività seguenti:
 1. Aprire il progetto di cui si vuole eseguire il debug di snapshot.
 
     > [!IMPORTANT]
-    > Per eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* pubblicata nel servizio Kubernetes di Azure.
+    > Per eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* pubblicata nel servizio Azure Kubernetes.
 
 1. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare la risorsa del servizio Azure Kubernetes in cui è distribuita l'app Web e un account di archiviazione di Azure, quindi fare clic su **Collega**. Snapshot Debugger supporta anche il [servizio app Azure](debug-live-azure-applications.md) e le [macchine virtuali di Azure & i set di scalabilità di macchine virtuali](debug-live-azure-virtual-machines.md).
 
