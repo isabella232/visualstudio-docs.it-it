@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548044"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060440"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -62,13 +62,26 @@ Per modificare il set di regole attive per un progetto, passare alla scheda **an
 
 Se si [installano gli analizzatori](../code-quality/install-roslyn-analyzers.md) come pacchetto NuGet, è possibile configurare la gravità delle regole dell'analizzatore o della *diagnostica*. Nella tabella seguente vengono illustrate le opzioni di gravità per la diagnostica:
 
+
+::: moniker range="vs-2019"
 |Gravità|Comportamento in fase di compilazione|Comportamento dell'editor|
+|-|-|-|
+|Error|Le violazioni vengono visualizzate come *errori* nel **Elenco errori** e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.|Il codice che offende è sottolineato con un ondulato rosso e contrassegnato da una piccola casella rossa nella barra di scorrimento.|
+|Avviso|Le violazioni vengono visualizzate come *avvisi* nell' **Elenco errori** e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni.|Il codice danneggiato è sottolineato con una ondulazione verde e contrassegnata da una piccola casella verde nella barra di scorrimento.|
+|Suggerimento|Le violazioni vengono visualizzate come *messaggi* nell' **Elenco errori**e non nell'output di compilazione da riga di comando.|Il codice che causa il danneggiamento è sottolineato con uno ondulato grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento.|
+|Silenzioso|Non visibile all'utente.|Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE.|
+|nessuno|Eliminati completamente.|Eliminati completamente.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
+|severity|Comportamento in fase di compilazione|Comportamento dell'editor|
 |-|-|-|
 |Error|Le violazioni vengono visualizzate come *errori* nel **Elenco errori** e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.|Il codice che offende è sottolineato con un ondulato rosso e contrassegnato da una piccola casella rossa nella barra di scorrimento.|
 |Avviso|Le violazioni vengono visualizzate come *avvisi* nell' **Elenco errori** e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni.|Il codice danneggiato è sottolineato con una ondulazione verde e contrassegnata da una piccola casella verde nella barra di scorrimento.|
 |Info|Le violazioni vengono visualizzate come *messaggi* nell' **Elenco errori**e non nell'output di compilazione da riga di comando.|Il codice che causa il danneggiamento è sottolineato con uno ondulato grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento.|
 |Hidden|Non visibile all'utente.|Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE.|
 |nessuno|Eliminati completamente.|Eliminati completamente.|
+::: moniker-end
 
 Inoltre, è possibile "reimpostare" la gravità di una regola impostando il **valore predefinito**. Ogni diagnostica presenta una gravità predefinita che può essere visualizzata nella finestra **Proprietà** .
 
