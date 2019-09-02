@@ -1,20 +1,20 @@
 ---
-title: Gestione degli ordini Open e Open License | Microsoft Docs
+title: Partner che gestiscono le sottoscrizioni di Visual Studio per i clienti | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: Informazioni sulla gestione degli ordini per le sottoscrizioni tramite i programmi Open e Open License.
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Informazioni su come i partner gestiscono le sottoscrizioni di Visual Studio per i clienti.
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605835"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000907"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>Gestione dei contratti Open e Open License per i nuovi ordini
-Per gestire le sottoscrizioni nel [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio, partner e clienti devono completare alcuni passaggi. Il processo sarà il seguente:
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partner che gestiscono le sottoscrizioni per conto dei clienti
+Per gestire le sottoscrizioni nel [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio, i partner devono seguire alcuni passaggi. Il processo sarà il seguente:
 - I partner inseriranno un nuovo ordine per conto di un cliente, immettendo l'indirizzo di posta elettronica aziendale del cliente.
 - Il cliente riceverà una notifica con l'invito ad assegnare gli amministratori e ad accedere alle proprie sottoscrizioni nel [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).
 - Perché possano gestire le sottoscrizioni per conto dei clienti, i partner devono eseguire la registrazione nel portale di amministrazione. Di seguito sono elencati i vari modi per ottenere l'accesso (simile al processo add-open).
@@ -39,8 +39,9 @@ Questo scenario si applica ai nuovi partner che effettuano nuovi ordini Open Lic
 > [!NOTE]
 > Il cliente riceverà un messaggio di posta elettronica di notifica per informarlo che un partner è stato aggiunto a Open License. Il cliente potrà scegliere di rimuovere l'accesso del partner.
 
+
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Nuovi partner che visitano direttamente il portale di amministrazione delle sottoscrizioni di Visual Studio
-Questo scenario si applica ai nuovi partner, che hanno già effettuato nuovi ordini Open License, ma che non si sono registrati in [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passano direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).  A tale scopo, seguire questa procedura:
+Questo scenario si applica ai nuovi partner, che hanno già effettuato nuovi ordini Open License, ma che non si sono registrati in [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e passano direttamente al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com).  Attenersi ai passaggi riportati di seguito.
 - Visitare https://manage.visualstudio.com.
 - Viene visualizzato un errore di utente non riconosciuto.
 - Selezionare l'opzione di registrazione per **partner OLP** e immettere il numero di autorizzazione, il numero di licenza e l'indirizzo di posta elettronica del cliente usato nell'ordine, selezionare la casella di controllo e quindi fare clic su **Invia**.
@@ -55,4 +56,4 @@ Questo scenario si applica ai nuovi partner, che hanno già effettuato nuovi ord
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Visitare il [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio per gestire le sottoscrizioni.
-- Richiesta di assistenza Contattare il [supporto per l'amministrazione e le sottoscrizioni](https://visualstudio.microsoft.com/support/support-overview-vs) di Visual Studio
+- Per ulteriori informazioni, vedere Contattare il [supporto per l'amministrazione e le sottoscrizioni](https://visualstudio.microsoft.com/support/support-overview-vs) di Visual Studio

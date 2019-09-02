@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328790"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026477"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
@@ -95,7 +95,7 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * (Facoltativo) Includere nello script di installazione le istruzioni per [applicare un codice Product Key per contratti multilicenza](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019), in modo che gli utenti non debbano attivare il software separatamente.
 
-* (Facoltativo) Aggiornare il layout di rete per [controllare il momento in cui gli aggiornamenti del prodotto vengono messi a disposizione degli utenti finali e la loro provenienza](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* (Facoltativo) Aggiornare il layout di rete per [controllare quando gli aggiornamenti del prodotto vengono messi a disposizione degli utenti finali e la loro provenienza](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
 
 * (Facoltativo) Impostare i criteri del registro di sistema che influiscono sulla distribuzione di Visual Studio, ad esempio dove sono installati alcuni pacchetti condivisi con altre versioni o istanze, [dove vengono memorizzati i pacchetti nella cache](set-defaults-for-enterprise-deployments.md?view=vs-2019) o [se i pacchetti vengono memorizzati nella cache](disable-or-move-the-package-cache.md?view=vs-2019).
 
@@ -134,7 +134,7 @@ Sono stati resi disponibili diversi strumenti che consentono di [rilevare e gest
 
 * (Facoltativo) Includere nello script di installazione le istruzioni per [applicare un codice Product Key per contratti multilicenza](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017), in modo che gli utenti non debbano attivare il software separatamente.
 
-* (Facoltativo) Aggiornare il layout di rete per [controllare il momento in cui gli aggiornamenti del prodotto vengono messi a disposizione degli utenti finali e la loro provenienza](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* (Facoltativo) Aggiornare il layout di rete per [controllare quando gli aggiornamenti del prodotto vengono messi a disposizione degli utenti finali e la loro provenienza](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
 
 * (Facoltativo) Impostare i criteri del registro di sistema che influiscono sulla distribuzione di Visual Studio, ad esempio dove sono installati alcuni pacchetti condivisi con altre versioni o istanze, [dove vengono memorizzati i pacchetti nella cache](set-defaults-for-enterprise-deployments.md?view=vs-2019) o [se i pacchetti vengono memorizzati nella cache](disable-or-move-the-package-cache.md?view=vs-2017).
 

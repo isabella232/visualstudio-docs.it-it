@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416451"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976770"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -36,7 +36,12 @@ La funzionalità di code coverage è disponibile solo in Visual Studio Enterpris
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Per analizzare il code coverage su unit test in Esplora test
 
+::: moniker range="vs-2017"
 1. Scegliere **Analizza code coverage** dal menu **Test**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. In **Esplora test** selezionare **Analizza code coverage** dal menu **Esegui**.
+::: moniker-end
 
 2. Per vedere quali righe sono state eseguite, scegliere ![icona Mostra colorazione code coverage](../test/media/codecoverage-showcoloringicon.png) **Mostra colorazione code coverage**.
 

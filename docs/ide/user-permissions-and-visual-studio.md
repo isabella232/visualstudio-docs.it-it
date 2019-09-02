@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 97ecddfa317eb522a8ce29a53482df5581912dad
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66747613"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891237"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
@@ -40,7 +40,8 @@ Un account utente normale consente di possibile eseguire quasi tutte le funzioni
 ||Eseguire il debug nell'area di sicurezza per applicazioni browser XAML (XBAP).|[Host WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Usare l'emulatore per eseguire il debug di progetti del servizio cloud per Microsoft Azure.|[Debug di un servizio cloud in Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Configurare un firewall per il debug remoto.|[Debug remoto](../debugger/remote-debugging.md)|
-|Strumenti per le prestazioni|Profilatura di un'applicazione.|[Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)|
+|Strumenti per le prestazioni|Connessione a un'applicazione con privilegi elevati.|[Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)|
+||Usare il profiler GPU.|[Profilatura GPU](../profiling/gpu-usage.md)|
 |Distribuzione|Distribuire un'applicazione Web a Internet Information Services (IIS) in un computer locale.|[Distribuire un'app Web ASP.NET con Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Eseguire Visual Studio come amministratore

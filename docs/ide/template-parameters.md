@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950350"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891256"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -47,7 +47,7 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 La tabella seguente elenca i parametri di modello riservati che possono essere usati da qualsiasi modello:
 
-|Parametro|Description|
+|Parametro|DESCRIZIONE|
 |---------------|-----------------|
 |clrversion|Versione corrente di Common Language Runtime (CLR).|
 |ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio `ext_safeprojectname`.|
@@ -57,7 +57,8 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |projectname|Nome specificato dall'utente quando è stato creato il progetto.|
 |registeredorganization|Valore della chiave del Registro di sistema da HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Spazio dei nomi radice del progetto corrente. Questo parametro è valido solo per i modelli di elemento.|
-|safeitemname|Uguale a `itemname` ma con tutti i caratteri non sicuri e gli spazi rimossi.|
+|safeitemname|Uguale a `itemname` ma con tutti i caratteri e gli spazi non sicuri sostituiti da caratteri di sottolineatura.|
+|safeitemrootname|Uguale a `safeitemname`.|
 |safeprojectname|Nome specificato dall'utente quando è stato creato il progetto con tutti i caratteri non sicuri e gli spazi rimossi.|
 |time|L'ora corrente nel formato GG/MM/AAAA 00:00:00.|
 |SpecificSolutionName|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `SpecificSolutionName` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `SpecificSolutionName` è vuoto.|
