@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918175"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891327"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -96,7 +96,7 @@ Per eseguire gli unit test dopo ogni compilazione locale, aprire l'icona Imposta
 
 ## <a name="view-test-results"></a>Visualizzare i risultati dei test
 
-Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. Il riquadro dei dettagli nella parte inferiore della finestra Esplora Test mostra un riepilogo dell'esecuzione dei test.
+Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. Il riquadro dei dettagli nella parte inferiore o laterale della finestra Esplora test mostra un riepilogo dell'esecuzione dei test.
 
 ### <a name="view-test-details"></a>Visualizzare i dettagli dei test
 
@@ -181,7 +181,7 @@ Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore 
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attributo TestCategory consente di specificare una categoria senza un valore. Una categoria definita dall'attributo TestCategory può anche essere la categoria di un attributo TestProperty.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attributo TestCategory consente di specificare una categoria senza un valore.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|L'attributo TestProperty consente di definire una coppia categoria/valore di un tratto.|
 
 
@@ -215,7 +215,7 @@ La playlist si apre in una nuova scheda di Esplora test. È possibile usare ques
 
 ![La playlist si apre in una nuova scheda di Esplora test](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi a playlist** > **Nuova playlist**.
+**Per creare una playlist**, scegliere uno o più test in Esplora Test. Fare clic con il pulsante destro del mouse e scegliere **Aggiungi a playlist** > **Nuova playlist**.
 
 **Per aprire una playlist**, scegliere l'icona della playlist sulla barra degli strumenti di Visual Studio, quindi scegliere un file di playlist salvato in precedenza dal menu.
 ::: moniker-end
@@ -236,7 +236,7 @@ Le colonne possono essere filtrate, ordinate e ridisposte.
 
 * Per cambiare l'ordine delle colonne, fare clic su un'intestazione di colonna e trascinarla a sinistra o a destra.
 
-* Per ordinare una colonna, fare clic su un'intestazione di colonna. Non tutte le colonne possono essere ordinate.
+* Per ordinare una colonna, fare clic su un'intestazione di colonna. Non tutte le colonne possono essere ordinate. È anche possibile ordinare in base a una colonna secondaria tenendo premuto il tasto **MAIUSC** e facendo clic su un'intestazione di colonna aggiuntiva.
 
   ![Ordinamento delle colonne](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Per filtrare in base a un criterio diverso:
 
 2. Scegliere un nuovo criterio.
 
-3. Immettere il valore di filtro tra virgolette.
+3. Immettere il valore di filtro tra virgolette. Se si vuole cercare una corrispondenza esatta per la stringa anziché una corrispondenza di contenimento, usare il segno di uguale (=) invece dei due punti (:).
 
 ::: moniker range="vs-2017"
 ![Filtrare i test in Esplora test](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Per filtrare in base a un criterio diverso:
 > [!NOTE]
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
 
+::: moniker range="vs-2017"
 |Qualificatore|DESCRIZIONE|
 |-|-----------------|
 |**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
 |**Messaggio di errore**|Cerca le corrispondenze nei messaggi di errore definiti dall'utente restituiti da asserzioni non riuscite.|
 |**Percorso file**|Cerca le corrispondenze nel nome file completo dei file di origine test.|
-|**Nome completo**|Cerca le corrispondenze nel nome file completo di spazi dei nomi, classi e metodi di test.|
+|**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
 |**Output**|Cerca nei messaggi di errore definiti dall'utente che vengono scritti in stdout (standard output) o stderr (stderr). La sintassi per specificare i messaggi di output è definita dal framework di unit test.|
 |**Risultato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Qualificatore|DESCRIZIONE|
+|-|-----------------|
+|**Stato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
+|**Tratti**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
+|**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
+|**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
+|**Framework di destinazione**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
+|**Spazio dei nomi**|Cerca le corrispondenze negli spazi dei nomi di test.|
+|**Classe**|Cerca le corrispondenze nei nomi delle classi di test.|
+::: moniker-end
 
 Per escludere un subset dei risultati di un filtro, usare la sintassi seguente:
 

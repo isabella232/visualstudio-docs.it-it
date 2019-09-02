@@ -3,7 +3,7 @@ title: Modificare Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate su come modificare Visual Studio.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 07/31/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ad5b8a0c261ed967710480b0abd3a2b9d34f01ce
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
+ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681379"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70026481"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificare Visual Studio aggiungendo o rimuovendo carichi di lavoro e componenti
 
@@ -41,15 +41,17 @@ Oltre ad aver semplificato la personalizzazione di Visual Studio in base alle at
 
 Ecco come fare.
 
-## <a name="modify-workloads"></a>Modificare i carichi di lavoro
-
- I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
-
 >[!IMPORTANT]
 >Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
->[!TIP]
-> La procedura seguente presuppone una connessione a Internet. Per altre informazioni su come modificare un'[installazione offline](create-an-offline-installation-of-visual-studio.md) di Visual Studio creata in precedenza, vedere la pagina [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md).
+## <a name="modify-workloads"></a>Modificare i carichi di lavoro
+
+ I [carichi di lavoro](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
+
+>[!NOTE]
+> La procedura seguente presuppone una connessione a Internet.
+>
+> Per altre informazioni su come modificare un'[installazione offline](create-an-offline-installation-of-visual-studio.md) di Visual Studio creata in precedenza, vedere sia la pagina [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md) che la pagina [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md).
 
 ::: moniker range="vs-2017"
 
@@ -59,7 +61,7 @@ Ecco come fare.
 
      ![Programma di installazione di Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Individuare il programma di installazione di Microsoft Visual Studio")
 
-     >[!NOTE]
+     >[!TIP]
      >In alcuni computer il programma di installazione di Visual Studio potrebbe trovarsi sotto la lettera **"M"** come **Microsoft Visual Studio: programma di installazione**.<br/><br/> In alternativa, è possibile trovare il programma di installazione di Visual Studio nel percorso seguente: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 1. Fare clic o toccare per avviare il programma di installazione e selezionare **Modifica**.
@@ -117,12 +119,14 @@ Ecco come fare.
 
 ## <a name="modify-individual-components"></a>Modificare i singoli componenti
 
-Se si preferisce non installare carichi di lavoro per personalizzare l'installazione di Visual Studio, scegliere la scheda **Singoli componenti** dal programma di installazione di Visual Studio, selezionare i componenti da installare e seguire le istruzioni visualizzate.
+Se si preferisce non installare [carichi di lavoro](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) per personalizzare l'installazione di Visual Studio, scegliere la scheda **Singoli componenti** dal programma di installazione di Visual Studio, selezionare i componenti da installare e quindi seguire le istruzioni visualizzate.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
+* [Altre informazioni sui carichi di lavoro di Visual Studio](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
+* [Elenco degli ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Aggiornare Visual Studio](update-visual-studio.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md)

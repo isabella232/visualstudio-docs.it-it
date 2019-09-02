@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461594"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976708"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Firmare manifesti di applicazione e distribuzione
 
@@ -47,7 +47,7 @@ Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare u
      Viene visualizzata la finestra di dialogo **Seleziona un certificato** con il contenuto dell'archivio certificati di Windows.
 
     > [!TIP]
-    > Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. È possibile fare clic su **Certificati** per visualizzare altre informazioni della Guida.
+    > Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. Fare clic su **Certificati** per visualizzare altre informazioni della Guida.
 
 3. Selezionare il certificato che si vuole usare per firmare i manifesti.
 
@@ -66,9 +66,12 @@ Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare u
     > [!NOTE]
     > Questa opzione supporta solo file con estensione *pfx*. Se il file di chiave o il certificato sono in un altro formato, archiviarlo nell'archivio certificati di Windows e selezionare il certificato come illustrato nella procedura precedente. Nei requisiti del certificato selezionato deve essere inclusa la firma del codice.
 
-     Viene visualizzata la finestra di dialogo **Immettere la password per aprire il file**. Se il file *pfx* è già archiviato nell'archivio dei certificati di Windows oppure non è protetto da password, non verrà richiesto di digitare una password.
+     Viene visualizzata la finestra di dialogo **Immettere la password per aprire il file**. Se il file *pfx* è già archiviato nell'archivio dei certificati di Windows oppure non è protetto da password, non viene richiesto di immettere una password.
 
-4. Immettere la password per accedere al file di chiave e premere **INVIO**.
+4. Immettere la password per accedere al file di chiave e quindi premere **INVIO**.
+
+> [!NOTE]
+> Il file *pfx* non può includere informazioni di concatenamento dei certificati. In caso contrario, si verificherà l'errore di importazione seguente: **Impossibile trovare il certificato e la chiave privata per la decrittografia**.
 
 ## <a name="sign-using-a-test-certificate"></a>Firmare con un certificato di prova
 

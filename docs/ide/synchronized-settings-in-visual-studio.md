@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824805"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976729"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -71,7 +71,7 @@ Se attualmente sono presenti installazioni side-by-side di Visual Studio e si vu
 
 1. Eseguire l'aggiornamento a Visual Studio 2017 versione 15.3 o successiva.
 
-2. Usare l'**Importazione/Esportazione impostazioni** per esportare tutte le impostazioni esistenti in un percorso esterno alla cartella *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Usare l'**Importazione/Esportazione guidata delle impostazioni** per esportare tutte le impostazioni esistenti in un percorso esterno alla cartella *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
 3. Aprire il **Prompt dei comandi per gli sviluppatori per VS 2017** ed eseguire `devenv /resetuserdata`.
 
@@ -84,6 +84,10 @@ Se attualmente sono presenti installazioni side-by-side di Visual Studio e si vu
 Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non vengono condivise tra diverse installazioni side-by-side di Visual Studio. Il file *CurrentSettings.vssettings* in *%userprofile%\Documenti\Visual Studio 2019\Settings* si trova in una cartella specifica dell'installazione simile a *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Reimpostare le impostazioni sincronizzate
+
+Per reimpostare le impostazioni predefinite per tutte le impostazioni, accedere a Visual Studio e quindi selezionare **Strumenti** > **Importa/Esporta impostazioni** per aprire l'**Importazione/Esportazione guidata delle impostazioni**. Selezionare **Reimposta tutte le impostazioni** e quindi seguire i passaggi rimanenti della procedura guidata.
 
 ## <a name="see-also"></a>Vedere anche
 

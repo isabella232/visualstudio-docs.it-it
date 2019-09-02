@@ -1,8 +1,10 @@
 ---
 title: Prodotti e servizi Microsoft per l'accessibilità
 description: Informazioni sui prodotti e servizi Microsoft che rendono sistemi operativi, programmi e applicazioni più accessibili a tutti gli utenti, comprese le persone con disabilità.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -19,30 +21,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 87416903b469293d292bfa4414d425c31d0c9154
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926278"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060385"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Prodotti e servizi Microsoft per l'accessibilità
 
-> [!TIP]
-> Per altre informazioni sugli aggiornamenti di accessibilità recenti a Visual Studio, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Questa pagina include informazioni sulle funzionalità, i prodotti e i servizi che rendono più accessibile Microsoft Windows per utenti con disabilità.
 
-Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Gli argomenti seguenti forniscono informazioni sulle funzionalità, i prodotti e i servizi che rendono più accessibile Microsoft Windows per utenti con disabilità:
-
-- [Funzionalità di accessibilità di Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
-
-- [Documentazione in formati alternativi](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
-
-- [Servizio clienti per persone con problemi di udito](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
-
-- [Altre informazioni](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
-
-> [!NOTE]
-> Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, usare la scheda informativa inclusa nel pacchetto software o visitare il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.
+> [!IMPORTANT]
+> Le informazioni contenute in questa pagina potrebbero essere applicabili solo agli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, visitare il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa pagina sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue.
 
 ## <a name="windows"></a> Funzionalità di accessibilità di Windows
 
@@ -66,9 +57,8 @@ In caso di difficoltà di lettura o di uso del materiale stampato, è possibile 
 
 Le pubblicazioni Microsoft possono inoltre essere richieste a Learning Ally. Learning Ally distribuisce i documenti ai membri idonei registrati nel servizio di distribuzione. Per informazioni sulla disponibilità di libri e documentazione dei prodotti Microsoft in Microsoft Press, contattare:
 
-|Learning Ally|
-| - |
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Sito Web di Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
+> Learning Ally<br />
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Sito Web di Learning Ally: [http://www.learningally.org](http://www.learningally.org/)
 
 Poiché gli indirizzi Web possono cambiare, è possibile che il sito o i siti Web menzionati in questo documento non risultino disponibili.
 
@@ -86,7 +76,15 @@ Il Servizio supporto tecnico Microsoft è soggetto a prezzi, termini e condizion
 
 Per altre informazioni sui vantaggi offerti dai computer con assistive technology agli utenti con disabilità, vedere il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431).
 
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Per altre informazioni sugli aggiornamenti di accessibilità recenti a Visual Studio, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+
+::: moniker-end
+
 ## <a name="see-also"></a>Vedere anche
 
 * [Risorse per la progettazione di applicazioni accessibili](../../ide/reference/resources-for-designing-accessible-applications.md)
 * [Funzionalità di accessibilità di Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility)

@@ -1,8 +1,10 @@
 ---
 title: Funzionalità di accessibilità di Visual Studio
 description: Altre informazioni sulle funzionalità di accessibilità e utilità che consentono di rendere più accessibile sia il sistema operativo Windows sia il gruppo sviluppatore Visual Studio a tutti gli utenti, anche agli utenti disabili.
-ms.date: 08/22/2017
+ms.date: 08/23/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
@@ -12,17 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793157"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060380"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
-
-> [!TIP]
-> Per altre informazioni sugli aggiornamenti di accessibilità recenti, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disponibili le seguenti funzionalità che rendono Visual Studio più accessibile per gli utenti con disabilità:
 
@@ -39,9 +38,6 @@ Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disp
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility).
 
-> [!IMPORTANT]
-> Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato al di fuori degli Stati Uniti, è possibile usare la scheda informativa complementare acclusa al pacchetto software oppure visitare la pagina [Contattaci del Supporto Tecnico Microsoft](http://support.microsoft.com/ContactUs) e fare clic sul collegamento **Individua le sedi Microsoft in tutto il mondo** nella parte inferiore della pagina. Questa pagina fornisce un elenco di numeri di telefono e di indirizzi dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.
-
 Per altre informazioni, vedere i seguenti argomenti:
 
 - [Procedura: Impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
@@ -53,6 +49,16 @@ Per altre informazioni, vedere i seguenti argomenti:
 - [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 
 - [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+
+> [!IMPORTANT]
+> Le informazioni contenute in questa pagina potrebbero essere applicabili solo agli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, visitare il sito Web [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa pagina sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili anche in altre lingue.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Per altre informazioni sugli aggiornamenti di accessibilità recenti, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017 (versione 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 

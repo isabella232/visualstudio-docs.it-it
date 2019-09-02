@@ -1,18 +1,18 @@
 ---
 title: Personalizzazione dell'analisi code coverage
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490621"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976769"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
 
@@ -34,26 +34,26 @@ Per personalizzare il code coverage, seguire questa procedura:
 
 ::: moniker range="vs-2017"
 
-3. Per selezionare il file di impostazioni esecuzione test, nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando o in un flusso di lavoro di compilazione, vedere [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Per selezionare il file di impostazioni esecuzione test, nel menu **Test** scegliere **Impostazioni test** > **Seleziona file di impostazioni test**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Per selezionare il file di impostazioni esecuzione test, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando o in un flusso di lavoro di compilazione, vedere [Configurare unit test usando un file *con estensione runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Per selezionare il file di impostazioni esecuzione test, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
    Quando si seleziona **Analizza code coverage** le informazioni di configurazione vengono lette dal file di impostazioni esecuzione test.
 
    > [!TIP]
-   > I risultati del code coverage precedente e la colorazione del codice non vengono nascosti automaticamente quando si eseguono i test o si aggiorna il codice.
+   > Gli eventuali risultati del code coverage precedente e la colorazione del codice non vengono nascosti automaticamente quando si eseguono i test o si aggiorna il codice.
 
 ::: moniker range="vs-2017"
 
 Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Test** > **Impostazioni test**.
 
-![Menu Impostazioni test con file di impostazioni personalizzato](../test/media/codecoverage-settingsfile.png)
+![Menu Impostazioni test con file di impostazioni personalizzato in Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Per attivare e disattivare le impostazioni personalizzate, deselezionare o selez
 
 ### <a name="specify-symbol-search-paths"></a>Specificare i percorsi di ricerca dei simboli
 
-Il code coverage richiede file di simboli (file *PDB*) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi invece è consigliabile includere assembly a cui si fa riferimento nell'analisi del code coverage. In questi casi i file *PDB* non possono essere adiacenti ai binari, ma è possibile specificare il percorso di ricerca dei simboli nel file *RUNSETTINGS*.
+Il code coverage richiede file di simboli (file *PDB*) per gli assembly. Per gli assembly compilati dalla soluzione, i file di simboli sono solitamente presenti accanto ai file binari e il code coverage viene eseguito automaticamente. In alcuni casi è consigliabile includere gli assembly a cui si fa riferimento nell'analisi del code coverage. In questi casi i file *PDB* non possono essere adiacenti ai binari, ma è possibile specificare il percorso di ricerca dei simboli nel file *RUNSETTINGS*.
 
 ```xml
 <SymbolSearchPaths>
@@ -101,13 +101,11 @@ In alternativa, è possibile specificare gli assembly che devono essere inclusi.
 </ModulePaths>
 ```
 
-Se l'elemento **Include** è vuoto, l'elaborazione del code coverage include tutti gli assembly caricati e per cui è possibile trovare file *PDB*. Il code coverage non include gli elementi che corrispondono a una clausola in un elenco **Exclude**.
-
-**Include** viene elaborato prima di **Exclude**.
+Se l'elemento **Include** è vuoto, l'elaborazione del code coverage include tutti gli assembly caricati e per cui è possibile trovare file *PDB*. Il code coverage non include gli elementi che corrispondono a una clausola in un elenco **Exclude**. **Include** viene elaborato prima di **Exclude**.
 
 ### <a name="regular-expressions"></a>Espressioni regolari
 
-Includere ed escludere i nodi che usano le espressioni regolari. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Le espressioni regolari non equivalgono ai caratteri jolly. In particolare:
+I nodi Includi ed Escludi usano espressioni regolari, che non sono uguali ai caratteri jolly. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Di seguito sono riportati alcuni esempi:
 
 - **.\*** corrisponde a una stringa composta da qualsiasi carattere
 
@@ -153,7 +151,10 @@ Ad esempio:
 
 - **Source**: corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti.
 
-- **Attribute**: corrisponde agli elementi ai quali è allegato un particolare attributo. Specificare il nome completo dell'attributo e includere "Attribute" alla fine del nome.
+- **Attribute**: corrisponde agli elementi ai quali è allegato un particolare attributo. Specificare il nome completo dell'attributo, ad esempio `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
+
+  > [!TIP]
+  > Se si esclude l'attributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, il codice che usa funzionalità del linguaggio come `async`, `await`, `yield return` e le proprietà implementate automaticamente viene escluso dall'analisi code coverage. Per escludere il codice effettivamente generato, escludere solo l'attributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>.
 
 - **Function**: corrisponde a procedure, funzioni o metodi in base al nome completo. Per corrispondere a un nome di funzione, l'espressione regolare deve corrispondere al nome completo della funzione, inclusi spazio dei nomi, nome della classe, nome del metodo ed elenco di parametri. Ad esempio:
 
@@ -243,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 
