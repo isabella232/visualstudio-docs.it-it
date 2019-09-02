@@ -45,7 +45,6 @@
 ##### [Sottoscrizione di MSDN Magazine](vs-msdn.md)
 ##### [Pluralsight](vs-pluralsight.md)
 #### Supporto 
-##### [Azure Advisory Chat](vs-azure-advisory-chat.md)
 ##### [Community di Azure](vs-azure-community.md)
 ##### [Supporto Concierge](vs-concierge-chat.md)
 ##### [Supporto tecnico](vs-tech-support.md)

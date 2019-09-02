@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445146"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180076"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 
@@ -51,7 +51,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
   Vedere:
 
-- [Video: Debug visivo con integrazione del debugger della mappa codici (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: Debug visivo con l'integrazione del debugger con la mappa codici (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Eseguire il mapping dello stack di chiamate](#MapStack)
 
@@ -79,7 +79,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 1. Avviare il debug. (Tastiera: **F5**)
 
-2. Dopo che l'app passa alla modalità di interruzione o si esegue una funzione, scegli **mappa codice**. (Tastiera: **CTRL** + **MAIUSC** + **`**)
+2. Dopo che l'app passa alla modalità di interruzione o si esegue una funzione, scegli **mappa codice**. (Tastiera: **CTRL** + **MAIUSC**) +  **`**
 
      ![Scegliere la mappa del codice per avviare il mapping dello stack di chiamate](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -156,7 +156,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
    La modifica della mappa non influenza sul codice in alcun modo. È possibile rinominare, spostare o rimuovere qualsiasi elemento nella mappa.
 
-- **Che cosa significa questo messaggio: "Il diagramma potrebbe essere basato su una versione precedente del codice?"**
+- **Cosa significa questo messaggio: "Il diagramma può essere basato su una versione precedente del codice"?**
 
    È possibile che il codice sia stato modificato dopo l'ultimo aggiornamento della mappa. Ad esempio, nel codice potrebbe non essere più disponibile una chiamata alla mappa. Chiudere il messaggio, quindi provare a ricompilare la soluzione prima di aggiornare di nuovo la mappa.
 
@@ -178,7 +178,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 - **Come si interrompono la mappa di aggiungere automaticamente nuovi stack di chiamate?**
 
-   Scegli ![pulsante &#45; Mostra stack di chiamate nella mappa del codice automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl** + **MAIUSC** + **`**.
+   Scegli ![pulsante &#45; Mostra stack di chiamate nella mappa del codice automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl** + **MAIUSC** +  **`** .
 
    La mappa continuerà a evidenziare gli stack di chiamate esistenti sulla mappa durante il debug.
 
