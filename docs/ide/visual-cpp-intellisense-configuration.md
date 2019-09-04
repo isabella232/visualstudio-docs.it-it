@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925851"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154909"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
 
@@ -48,7 +48,7 @@ Per i progetti Makefile basati sul modello di progetto NMake, scegliere **NMake*
 
 ### <a name="open-folder-projects"></a>Progetti Apri cartella
 
-Per i progetti CMake, assicurarsi che i percorsi #include siano specificati correttamente per tutte le configurazioni in CMakelists.txt. Altri tipi di progetto possono richiedere un file CppProperties.json. Per altre informazioni, vedere [Configurare IntelliSense con CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Assicurarsi che i percorsi siano corretti per ogni configurazione definita nel file.
+Per i progetti CMake, assicurarsi che i percorsi #include siano specificati correttamente per tutte le configurazioni in CMakelists.txt. Altri tipi di progetto possono richiedere un file CppProperties.json. Per altre informazioni, vedere [Configurare IntelliSense con CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-code-navigation-with-cpppropertiesjson). Assicurarsi che i percorsi siano corretti per ogni configurazione definita nel file.
 
 Se il file CppProperties.json contiene un errore di sintassi, IntelliSense nei file interessati non sarà corretto. Visual Studio visualizzerà l'errore nella finestra di output.
 

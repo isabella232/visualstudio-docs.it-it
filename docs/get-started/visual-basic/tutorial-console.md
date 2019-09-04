@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 899c47154a3d55811579ff01786096f35272593a
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972489"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180426"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: Introduzione a Visual Basic in Visual Studio
 
@@ -33,7 +33,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra "Crea un nuovo progetto" ](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Quindi scegliere **Visual Basic** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
 

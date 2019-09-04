@@ -3,14 +3,14 @@ title: Impostazione di un repository Git
 description: Uso di Git e Subversion in Visual Studio per Mac.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 02/15/2018
+ms.date: 02/15/2019
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 4fbee486a2e0263621f501b511d62abddbda8059
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692399"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107896"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -81,7 +81,7 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
     ![Menu Controllo della versione](media/version-control-git10.png)
 
-10. Dopo aver iniziato ad apportare modifiche aggiuntive, selezionare  **Esegui push delle modifiche**  per eseguire il push delle modifiche nel repository  **remoto** . Ciò consentirà a tutti gli utenti appropriati di visualizzarlo in github.com:
+10. Dopo aver iniziato ad apportare modifiche aggiuntive, selezionare **Push Changes** (Esegui push delle modifiche) per eseguire il push delle modifiche nel repository **remoto**. Ciò consentirà a tutti gli utenti appropriati di visualizzarlo in github.com:
 
     ![Eseguire il push delle modifiche nel repository remoto](media/version-control-git11.png)
 

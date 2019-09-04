@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: af781f5735a3539d8b0e2d098bb9252bc60193fc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033135"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180263"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Creare un'applicazione Vue.js tramite Node.js Tools for Visual Studio
 
@@ -37,7 +37,7 @@ Lo sviluppo di applicazioni Vue.js in Visual Studio è supportato dalle nuove fu
     > Questo articolo richiede funzionalità disponibili solo a partire da Visual Studio 2017 versione 15.8.
 
     ::: moniker range=">=vs-2019"
-    Se non è già installata una versione richiesta, installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    Se non è già installata una versione richiesta, installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
     ::: moniker-end
     ::: moniker range="vs-2017"
     Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  per installarlo gratuitamente.

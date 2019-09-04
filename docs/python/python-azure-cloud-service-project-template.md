@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81dbe6189557f38daa23983a100c295654299a5d
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785138"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154865"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Progetti servizio cloud di Azure per Python
 
@@ -24,7 +24,7 @@ Visual Studio include modelli per iniziare rapidamente a creare servizi cloud di
 
 Un [servizio cloud](https://docs.microsoft.com/azure/cloud-services/) è costituito da un numero qualsiasi di *ruoli di lavoro* e *ruoli Web*, ognuno dei quali esegue un'attività distinta dal punto di vista concettuale, ma che può essere replicata separatamente in macchine virtuali a seconda delle esigenze di ridimensionamento. I ruoli Web offrono funzionalità di hosting per applicazioni Web front-end. Per quel che riguarda Python, per scrivere tale applicazione, supportata dal [modello Progetto Web](python-web-application-project-templates.md), è possibile usare qualsiasi framework Web che supporta WSGI. I ruoli di lavoro sono destinati a processi a esecuzione prolungata che non interagiscono direttamente con gli utenti. In genere usano i pacchetti all'interno del pacchetto "azure", che viene installato con [`pip install azure`](https://pypi.org/project/azure).
 
-Questo articolo contiene informazioni dettagliate sul modello di progetto e su altre opzioni di supporto in Visual Studio 2017 e versioni successive (le versioni precedenti sono simili, ma presentano alcune differenze). Per altre informazioni sull'uso di Azure da Python, visitare il [Centro per sviluppatori Python di Azure](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
+Questo articolo contiene informazioni dettagliate sul modello di progetto e su altre opzioni di supporto in Visual Studio 2017 e versioni successive (le versioni precedenti sono simili, ma presentano alcune differenze). Per altre informazioni sull'uso di Azure da Python, visitare il [Centro per sviluppatori Python di Azure](https://docs.microsoft.com/azure/python/).
 
 ## <a name="create-a-project"></a>Creare un progetto
 

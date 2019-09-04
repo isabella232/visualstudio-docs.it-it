@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 000d5f3cccdfda10ef90f5c752ec49ba29681435
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4995c6b95ba12eb776130b17dab1911c47988871
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953467"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180337"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Node.js
 
@@ -29,7 +29,7 @@ In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) d
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se Visual Studio 2019 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)  per installarlo gratuitamente.
+    Se Visual Studio 2019 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads)  per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Se Visual Studio 2017 non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  per installarlo gratuitamente.

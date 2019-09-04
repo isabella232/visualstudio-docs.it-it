@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435051"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180459"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
 
@@ -29,7 +29,7 @@ In questa introduzione all'ambiente di sviluppo integrato (IDE) di Visual Studio
 Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 ::: moniker-end
 ::: moniker range="vs-2019"
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 ::: moniker-end
 
 ## <a name="create-a-project"></a>Creare un progetto
@@ -41,12 +41,12 @@ Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal
 
 1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
-1. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **Universale di Windows**. Nel riquadro centrale scegliere **App vuota (Windows universale)**. Assegnare al progetto il nome *HelloWorld* e scegliere **OK**.
+1. Nel riquadro a sinistra della finestra di dialogo **Nuovo progetto** espandere **Visual C#** e scegliere **Universale di Windows**. Nel riquadro centrale scegliere **App vuota (Windows universale)** . Assegnare al progetto il nome *HelloWorld* e scegliere **OK**.
 
    ![Modello di progetto universale di Windows nella finestra di dialogo Nuovo progetto dell'IDE di Visual Studio](media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Se non viene visualizzato il modello di progetto **App vuota (Windows universale)**, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**.<br><br>![Fare clic sul collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** e scegliere **Modifica**.<br><br>![Carico di lavoro Sviluppo di app per la piattaforma UWP (Universal Windows Platform) nel programma di installazione di Visual Studio](media/uwp-dev-workload.png)
+   > Se non viene visualizzato il modello di progetto **App vuota (Windows universale)** , fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**.<br><br>![Fare clic sul collegamento Apri il programma di installazione di Visual Studio dalla finestra di dialogo Nuovo progetto](../../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** e scegliere **Modifica**.<br><br>![Carico di lavoro Sviluppo di app per la piattaforma UWP (Universal Windows Platform) nel programma di installazione di Visual Studio](media/uwp-dev-workload.png)
 
 1. Nella finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)** accettare le impostazioni predefinite per **Versione di destinazione** e **Versione minima**.
 

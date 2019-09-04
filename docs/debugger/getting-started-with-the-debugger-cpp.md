@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcd4d4458de757cae5c20391f57c0708edbfd4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 070cbcc79a79aea16e37f17ea775ce7838b41d59
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679750"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70179814"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C++ tramite Visual Studio
 
@@ -37,31 +37,31 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ::: moniker range=">=vs-2019"
 
-È necessario che siano installati Visual Studio 2019 e il carico di lavoro **Sviluppo di applicazioni desktop con C++**.
+È necessario che siano installati Visual Studio 2019 e il carico di lavoro **Sviluppo di applicazioni desktop con C++** .
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-È necessario che siano installati Visual Studio 2017 e il carico di lavoro **Sviluppo di applicazioni desktop con C++**.
+È necessario che siano installati Visual Studio 2017 e il carico di lavoro **Sviluppo di applicazioni desktop con C++** .
 
 ::: moniker-end
 
-Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)  per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina  [Download di Visual Studio](https://visualstudio.microsoft.com/downloads)  per installarlo gratuitamente.
 
-Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, che apre il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
 
 ## <a name="create-a-project"></a>Creare un progetto
 
 1. Aprire Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **c++**, scegliere **Modelli** e quindi scegliere **Create new Console App project** (Crea nuovo progetto app console). Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **c++** , scegliere **Modelli** e quindi scegliere **Create new Console App project** (Crea nuovo progetto app console). Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** in **Visual C++** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **Applicazione console di Windows**. Digitare quindi un nome come **MyDbgApp** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, aprendo così il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+    Se il modello di progetto **Applicazione console di Windows** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità**, aprendo così il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
 
     Visual Studio crea il progetto.
 

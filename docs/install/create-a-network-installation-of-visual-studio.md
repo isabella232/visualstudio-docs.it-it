@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870779"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180298"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -249,7 +249,7 @@ Man mano che diventano disponibili nuovi aggiornamenti di prodotto, è possibile
 ::: moniker range="vs-2019"
 
 > [!NOTE]
-> I programmi di bootstrap di Visual Studio disponibili in [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) scaricano e installano la versione più recente di Visual Studio disponibile ogni volta che vengono eseguiti.
+> I programmi di bootstrap di Visual Studio disponibili in [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) scaricano e installano la versione più recente di Visual Studio disponibile ogni volta che vengono eseguiti.
 >
 > Pertanto se si scarica un *programma di bootstrap* di Visual Studio oggi e lo si esegue tra sei mesi, viene installata la versione di Visual Studio disponibile al momento dell'esecuzione del programma di bootstrap.
 >

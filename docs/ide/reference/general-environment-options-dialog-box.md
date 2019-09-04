@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605451"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180279"
 ---
 # <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: Ambiente \> Generale
 
@@ -62,7 +62,7 @@ Specifica se Visual Studio imposta automaticamente la regolazione dell'esperienz
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 include l'impostazione **Consenti a Windows di provare a risolvere i problemi delle app in modo da non essere sfocate**. L'impostazione di questa opzione su **Attivato** è consigliata se Visual Studio viene visualizzato sfocato sullo schermo. Prendere in considerazione l'aggiornamento a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), che include una nitidezza di visualizzazione notevolmente migliorata, essendo un'applicazione con sensibilità ai valori DPI per monitor.
+> Windows 10 include l'impostazione **Consenti a Windows di provare a risolvere i problemi delle app in modo da non essere sfocate**. L'impostazione di questa opzione su **Attivato** è consigliata se Visual Studio viene visualizzato sfocato sullo schermo. Prendere in considerazione l'aggiornamento a [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), che include una nitidezza di visualizzazione notevolmente migliorata, essendo un'applicazione con sensibilità ai valori DPI per monitor.
 
 ::: moniker-end
 

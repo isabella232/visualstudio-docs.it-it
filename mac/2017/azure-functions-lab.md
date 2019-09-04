@@ -4,15 +4,14 @@ description: Uso delle funzioni di Azure in Visual Studio per Mac.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a2dd0f797d362edf5d75f798ff4578cc3c2b50c
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934251"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108015"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione a Funzioni di Azure
 
@@ -131,7 +130,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Nuovo metodo run con l'inizializzazione del metodo evidenziata](media/azure-functions-lab-image14.png)
 
-1. Il primo parametro è contrassegnato con l'attributo **HttpTrigger**, che indica che il metodo viene chiamato da una richiesta HTTP. L'attributo specifica anche il livello di autorizzazione del metodo, nonché i verbi supportati (in questo caso solo **"GET"**). È anche possibile definire una **Route** che sostituisce il percorso del metodo e consente di estrarre automaticamente variabili dal percorso. Dato che in questo caso l'impostazione **Route** è null, il percorso di questo metodo assume l'impostazione predefinita **/api/Add**.
+1. Il primo parametro è contrassegnato con l'attributo **HttpTrigger**, che indica che il metodo viene chiamato da una richiesta HTTP. L'attributo specifica anche il livello di autorizzazione del metodo, nonché i verbi supportati (in questo caso solo **"GET"** ). È anche possibile definire una **Route** che sostituisce il percorso del metodo e consente di estrarre automaticamente variabili dal percorso. Dato che in questo caso l'impostazione **Route** è null, il percorso di questo metodo assume l'impostazione predefinita **/api/Add**.
 
     ![Nuovo metodo run con il parametro evidenziato](media/azure-functions-lab-image15.png)
 
@@ -226,7 +225,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. Alla fine del primo binding (dopo la riga **"name": "req"**) aggiungere le proprietà seguenti. Non dimenticare di includere una virgola nella riga precedente. Questa proprietà sostituisce la radice predefinita e ora estrae i parametri **int** dal percorso e li inserisce nei parametri del metodo denominati **x** e **y**.
+1. Alla fine del primo binding (dopo la riga **"name": "req"** ) aggiungere le proprietà seguenti. Non dimenticare di includere una virgola nella riga precedente. Questa proprietà sostituisce la radice predefinita e ora estrae i parametri **int** dal percorso e li inserisce nei parametri del metodo denominati **x** e **y**.
 
     ```json
     "direction": "in",
@@ -243,7 +242,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
     }
     ```
 
-1. Aggiornare anche la proprietà **entryPoint** nella parte inferiore del file in modo che usi un metodo chiamato **"Add2"**, come indicato di seguito. Lo scopo è dimostrare che il percorso **api/Adder...** può eseguire il mapping a un metodo appropriato con qualsiasi nome (in questo caso **Add2**).
+1. Aggiornare anche la proprietà **entryPoint** nella parte inferiore del file in modo che usi un metodo chiamato **"Add2"** , come indicato di seguito. Lo scopo è dimostrare che il percorso **api/Adder...** può eseguire il mapping a un metodo appropriato con qualsiasi nome (in questo caso **Add2**).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -299,7 +298,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![URL per le funzioni Http](media/azure-functions-lab-image31.png)
 
-1. Tornare alla finestra del browser e passare a **http://localhost:7071/api/Adder/3/5**.
+1. Tornare alla finestra del browser e passare a **http://localhost:7071/api/Adder/3/5** .
 
 1. Ora il metodo funziona di nuovo ed estrae parametri dal percorso, quindi produce una somma.
 
@@ -348,7 +347,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-1. Nella scheda del browser, passare a **http://localhost:7071/api/Process/4/6**. Questa operazione inserisce un altro messaggio nella coda, che a sua volta aggiungerà un'altra riga alla tabella in un secondo momento.
+1. Nella scheda del browser, passare a **http://localhost:7071/api/Process/4/6** . Questa operazione inserisce un altro messaggio nella coda, che a sua volta aggiungerà un'altra riga alla tabella in un secondo momento.
 
 1. Tornare a **Terminal** e verificare la richiesta in ingresso per **4 + 6**.
 
@@ -381,11 +380,11 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 
 1. Premere **F5** per compilare ed eseguire il progetto.
 
-1. Nella scheda del browser, aggiornare l'URL in **http://localhost:7071/api/Process/4/6**. Dato che la riga della tabella per questo record esiste, viene restituita immediatamente e senza errori. Poiché non esiste alcun output HTTP, è possibile visualizzare l'output nel Terminale.
+1. Nella scheda del browser, aggiornare l'URL in **http://localhost:7071/api/Process/4/6** . Dato che la riga della tabella per questo record esiste, viene restituita immediatamente e senza errori. Poiché non esiste alcun output HTTP, è possibile visualizzare l'output nel Terminale.
 
     ![Output nel Terminale indicante che la riga della tabella esiste già](media/azure-functions-lab-image33.png)
 
-1. Aggiornare l'URL in modo da riflettere una combinazione non ancora sottoposta a test, ad esempio **http://localhost:7071/api/Process/5/7**. Si noti il messaggio nel Terminale, indicante che la riga della tabella non è stata trovata (come previsto).
+1. Aggiornare l'URL in modo da riflettere una combinazione non ancora sottoposta a test, ad esempio **http://localhost:7071/api/Process/5/7** . Si noti il messaggio nel Terminale, indicante che la riga della tabella non è stata trovata (come previsto).
 
     ![Output nel Terminale che visualizza il nuovo processo](media/azure-functions-lab-image34.png)
 
