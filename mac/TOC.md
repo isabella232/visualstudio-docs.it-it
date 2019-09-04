@@ -57,7 +57,6 @@
 
 # Controllo della versione
 ## [Panoramica](version-control.md)
-## [Controllo della versione di Team Foundation](tf-version-control.md)
 ## [Impostazione di un repository Git](set-up-git-repository.md)
 ## [Uso di Git](working-with-git.md)
 ## [Impostazione di un repository Subversion](set-up-subversion-repository.md)
@@ -100,6 +99,7 @@
 ## [Registri ed eccezioni](troubleshooting.md)
 ## [Analisi utilizzo software di Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Segnalare un problema](report-a-problem.md)
+## [Risoluzione dei problemi: Visual Studio per Mac supporta il controllo della versione di Team Foundation?](tf-version-control.md)
 ## [Risoluzione dei problemi: Non è possibile visualizzare tutti i modelli](troubleshooting-no-templates.md)
 ## [Risoluzione dei problemi: Errori durante il recupero di informazioni sugli aggiornamenti](updater-troubleshooting.md)
 

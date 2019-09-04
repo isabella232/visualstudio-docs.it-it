@@ -8,12 +8,12 @@ metadata:
   description: Informazioni su come usare Visual Studio per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per tutte le piattaforme e i dispositivi.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
+  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493707"
+  ms.lasthandoff: 09/03/2019
+  ms.locfileid: "70222670"
 highlightedContent:
   items:
   - title: Installazione e configurazione
@@ -29,7 +29,7 @@ highlightedContent:
     itemType: learn
     url: /learn/
 conceptualContent:
-  title: Attività iniziali
+  title: Introduzione
   items:
   - title: Informazioni su come usare Visual Studio
     links:
@@ -48,7 +48,7 @@ conceptualContent:
     - text: Eseguire il debug del codice
       itemType: tutorial
       url: debugger/debugger-feature-tour.md
-    - text: Testare il codice
+    - text: Eseguire test del codice
       itemType: tutorial
       url: test/getting-started-with-unit-testing.md
     - text: Accedere ai dati in locale o nel cloud
@@ -92,7 +92,7 @@ conceptualContent:
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
 tools:
-  title: Languages
+  title: Linguaggi
   items:
   - title: C++
     imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
@@ -134,8 +134,8 @@ additionalContent:
     - title: Test
       summary: Eseguire i test per i progetti.
       url: test/improve-code-quality.md
-    - title: Distribuire
-      summary: Condividere le app tramite Distribuzione Web, InstallShield, Integrazione continua e altre funzionalità.
+    - title: Distribuzione
+      summary: Condividere app e codice tramite Distribuzione Web, InstallShield, NuGet, Integrazione continua e altre funzionalità.
       url: deployment/index.md
     - title: Controllo della versione
       summary: Condividere il codice usando tecnologie di controllo della versione, ad esempio Git e TFVC.
@@ -176,7 +176,7 @@ additionalContent:
         url: python/data-science-and-analytical-applications-workload.md
       - text: Sviluppo per Office/SharePoint
         url: https://developer.microsoft.com/office/docs
-    - title: Windows
+    - title: WINDOWS
       links:
       - text: Sviluppo per desktop .NET
         url: /dotnet/framework/develop-client-apps
@@ -192,7 +192,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: Sviluppo di app per dispositivi mobili con JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (Solo Visual Studio 2017 e 2015)
       - text: Sviluppo di app per dispositivi mobili con C++
         url: /visualstudio/cross-platform/
       - text: Sviluppo di giochi con C++
