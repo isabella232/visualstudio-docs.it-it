@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345725"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222739"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -48,7 +48,7 @@ La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di
 |Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]". Per altre informazioni, vedere [Gruppi Capture e criteri di sostituzione](#capture-groups-and-replacement-patterns). |
 |Invalidare una corrispondenza|(?!abc)|`real(?!ity)` trova "real" in "realty" e "really", ma non in "reality". Trova anche il secondo "real" (ma non il primo "real") in "realityreal".|
 |Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri. Per altre informazioni, vedere [Gruppo di caratteri negativi](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` trova "bef" in "before", "beh" in "behind" e "bel" in "below", ma non "beneath".|
-|Trovare la corrispondenza con l'espressione prima o dopo il simbolo|&#124;|`(sponge\|mud) bath` trova "sponge bath" e "mud bath".|
+|Trovare la corrispondenza con l'espressione prima o dopo il simbolo|&#124;|`(sponge|mud) bath` trova "sponge bath" e "mud bath".|
 |[Far precedere dai caratteri di escape il carattere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) che segue la barra rovesciata| \\ |`\^` trova il carattere ^.|
 |Specificare il numero di occorrenze del gruppo o del carattere precedente. Per altre informazioni, vedere [Trova la corrispondenza esatta n volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, dove 'n' è il numero di occorrenze|`x(ab){2}x` trova "xababx" e `x(ab){2,3}x` trova "xababx" e "xabababx" ma non "xababababx".|
 |[Trovare la corrispondenza con un testo in una categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Per altre informazioni sulle classi di caratteri Unicode, vedere [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, dove "X" è il numero Unicode.|`\p{Lu}` trova "T" e "D" in "Thomas Doe".|

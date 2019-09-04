@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ee1a568e30a4898c767533a4f592e2301a097a
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: b6fc0ab18fea11b2dd4478538a095762fee75d35
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681505"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180376"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 
@@ -166,7 +166,7 @@ Se si sceglie di ignorare una notifica, questa non viene più visualizzata da Vi
 
 È consigliabile eseguire l'aggiornamento alla [versione più recente](/visualstudio/releases/2019/release-notes/) di Visual Studio 2019, in modo da avere sempre a disposizione le funzionalità, le correzioni e i miglioramenti più recenti.
 
-Se Visual Studio 2019 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
+Se Visual Studio 2019 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 > [!IMPORTANT]
 > Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).

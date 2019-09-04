@@ -4,15 +4,14 @@ description: Uso di un file editorconfig per consentire stili di scrittura codic
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998696"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108118"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Creazione e modifica di un file EditorConfig personalizzato
 
@@ -123,7 +122,7 @@ csharp_new_line_before_open_brace = none
 
 Se si imposta `root` su `true`, il file viene contrassegnato come file di livello più alto della codebase e qualsiasi altro file `.editorconfig` di livello superiore nel progetto viene ignorato, come spiegato nella sezione [Eseguire l'override delle impostazioni di EditorConfig](#override-editorconfig-settings).
 
-Ogni sezione, identificata da parentesi quadre (**[ ]**), specifica le informazioni sui tipi di file interessati dalle proprietà che seguono.
+Ogni sezione, identificata da parentesi quadre ( **[ ]** ), specifica le informazioni sui tipi di file interessati dalle proprietà che seguono.
 
 Nell'esempio precedente, alcune impostazioni vengono applicate a tutti i file del progetto e altre vengono aggiunte solo ai file C#. Gli screenshot riportati di seguito illustrano la situazione prima e dopo l'applicazione delle impostazioni di `.editorconfig`:
 

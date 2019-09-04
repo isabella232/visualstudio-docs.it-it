@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 070de03f56f6d9d10a9e6a41516ffcb67837e90e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680302"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180188"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice Visual Basic tramite Visual Studio
 
@@ -55,7 +55,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -72,7 +72,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual Basic** scegliere **Windows Desktop**, quindi scegliere **App console (.NET Framework)** nel riquadro centrale. Digitare quindi un nome come **get-started-debugging** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **App console (.NET Framework)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**. Si aprirà il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
+    Se il modello di progetto **App console (.NET Framework)** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** . Si aprirà il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
     Visual Studio crea il progetto.
 

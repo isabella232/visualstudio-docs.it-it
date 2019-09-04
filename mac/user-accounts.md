@@ -1,16 +1,17 @@
 ---
 title: Account utente
 description: Informazioni sull'accesso a Visual Studio per Mac e sull'abilitazione delle sottoscrizioni in Visual Studio per Mac
+ms.topic: overview
 author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: d262257c48e26928633b9325da1650e1e58e74d3
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: a956b272c633b357e448cae93c8d759bcede3c54
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692246"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108124"
 ---
 # <a name="user-accounts"></a>Account utente
 
