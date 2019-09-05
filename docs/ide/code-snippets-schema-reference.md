@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 8db5921b7f4ce4722389ca10765f079db10bf04a
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924072"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222684"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -121,7 +121,7 @@ Sono disponibili tre attributi per l'elemento Code:
    |`SQL`|Identifica un frammento di codice SQL.|
    |`HTML`|Identifica un frammento di codice HTML.|
 
-- L'attributo **Kind** -  _(facoltativo)_ specifica il tipo di codice contenuto nel frammento e la posizione in cui un frammento di codice deve essere inserito per la relativa compilazione. Il valore può essere uno dei seguenti:
+- L'attributo **Kind** - _facoltativo_ specifica il tipo di codice contenuto nel frammento. Il valore può essere uno dei seguenti:
 
    |Value|DESCRIZIONE|
    |-----|-----------|

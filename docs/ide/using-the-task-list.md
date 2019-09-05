@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ffbe1b7f293bc525aa03a536c0fa4fa55ce3e82a
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821576"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154850"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 
@@ -32,7 +32,7 @@ Usare **Elenco attività** per tenere traccia dei commenti di codice che usano t
 
 Quando è aperta, la finestra **Elenco attività** viene visualizzata nella parte inferiore della finestra dell'applicazione.
 
-Per aprire **Elenco attività**, selezionare **Visualizza** > **Elenco attività** o premere **CTRL**+**\\**,**T**.
+Per aprire **Elenco attività**, selezionare **Visualizza** > **Elenco attività** o premere **CTRL**+ **\\** ,**T**.
 
 ![Finestra Elenco attività](../ide/media/vs2015_task_list.png)
 
@@ -64,6 +64,9 @@ Nella finestra **Elenco attività** viene inoltre visualizzato un commento nel c
 
 Poiché `TODO` è un token predefinito, questo commento viene visualizzato nell'elenco come attività `TODO`.
 
+> [!NOTE]
+> I token predefiniti sono disponibili solo per i linguaggi C/C++, C# e VB. Per altri linguaggi, vedere la sezione **Token personalizzati**.
+
 ### <a name="custom-tokens"></a>Token personalizzati
 
 Per impostazione predefinita, Visual Studio include i token seguenti: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Per i token non viene fatta distinzione tra maiuscole e minuscole. È inoltre possibile creare token personalizzati.
@@ -91,7 +94,7 @@ Per creare un token personalizzato:
 
 Per impostazione predefinita, i commenti TODO C++ vengono visualizzati nella finestra **Elenco attività**.
 
-Per disattivare i commenti TODO C++, dal menu **Strumenti** scegliere **Opzioni** > **Editor di testo** > **C/C++** > **Visualizza** > **Enumera attività di commento** e impostare il valore su **false**.
+Per disattivare i commenti TODO C++, dal menu **Strumenti** scegliere **Opzioni** > **Editor di testo** > **C/C++**  > **Visualizza** > **Enumera attività di commento** e impostare il valore su **false**.
 
 ## <a name="shortcuts"></a>Collegamenti
 

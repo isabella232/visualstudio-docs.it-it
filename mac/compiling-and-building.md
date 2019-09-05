@@ -1,26 +1,42 @@
 ---
 title: Compilazione e creazione di build
 description: Questo articolo descrive come creare e compilare progetti e soluzioni in Visual Studio per Mac
+ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 08/29/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 0165594b4c2d77005c2a9ef921cce457f6f2d0f6
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 666027835699763dd42139b0b3b20e55fe250892
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693129"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222719"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilazione e creazione di build in Visual Studio per Mac
 
-Visual Studio per Mac consente di compilare applicazioni e creare assembly durante lo sviluppo del progetto. È importante compilare il codice e creare build già nelle prime fasi e spesso, per consentire l'identificazione di tipi non corrispondenti e di altri errori in fase di compilazione.
+Visual Studio per Mac consente di compilare applicazioni e creare assembly durante lo sviluppo del progetto. È importante compilare spesso il codice per consentire di identificare rapidamente tipi non corrispondenti, sintassi errata, parole chiave non digitate correttamente e altri errori in fase di compilazione. Con la compilazione e successivamente il debug, è anche possibile individuare e correggere errori di run-time, ad esempio errori di logica, I/O e divisione per zero.
+
+Una compilazione riuscita conferma che la sintassi del codice sorgente è corretta e che tutti i riferimenti statici a librerie, assembly e altri componenti possono essere risolti. Il processo di compilazione genera un eseguibile dell'applicazione. Questo eseguibile può quindi essere testato tramite debug e diversi tipi di test manuali e automatizzati per convalidare la qualità del codice. Dopo aver testato completamente l'applicazione, è possibile compilare una versione finale da distribuire ai clienti.
+
+Nel Mac è possibile usare uno dei metodi seguenti per compilare l'applicazione: Visual Studio per Mac, gli strumenti da riga di comando di MSBuild o Azure Pipelines.
+
+| Metodo di compilazione | Vantaggi |
+| --- |--- | --- |
+| Visual Studio per Mac |- Creazione immediata di build e test in un debugger.<br />- Esecuzione di compilazioni multiprocessore per progetti C#.<br />- Personalizzazione di vari aspetti del sistema di compilazione. |
+| Riga di comando MSBuild| - Compilazione di progetti senza l'installazione di Visual Studio per Mac.<br />- Esecuzione di compilazioni multiprocessore per tutti i tipi di progetto.<br />- Personalizzazione della maggior parte delle aree del sistema di compilazione.|
+| Azure Pipelines | - Automazione della compilazione come parte di un processo di integrazione continua/recapito continuo.<br />- Implementazione di test automatizzati con ogni compilazione.<br />- Uso di risorse di codice praticamente illimitate per i processi di compilazione.<br />- Modifica del flusso di lavoro di compilazione e creazione di attività di compilazione per eseguire attività personalizzate specifiche.|
+
+La documentazione di questa sezione approfondisce i dettagli del processo di compilazione basato su IDE. Per altre informazioni sulla compilazione di applicazioni tramite la riga di comando, vedere [MSBuild](/visualstudio/msbuild/msbuild). Per informazioni dettagliate sulla compilazione di applicazioni con Azure Pipelines, vedere [Azure Pipelines](/azure/devops/pipelines).
+
+
+> [!NOTE]
+> Questo argomento si applica a Visual Studio per Mac. Per Visual Studio in Windows, vedere [Compilare e creare in Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).
+
 
 ## <a name="building-from-the-ide"></a>Compilazione nell'IDE
 
-Visual Studio per Mac consente di creare ed eseguire build immediatamente, mantenendo al contempo il controllo della funzionalità di creazione della build. Il sistema di creazione di build di Visual Studio per Mac è MSBuild.
-
-Tutti i progetti e tutte le soluzioni create nell'interfaccia IDE hanno una configurazione di compilazione predefinita, che definisce il contesto per le build. Queste configurazioni possono essere modificate. In alternativa, è possibile creare configurazioni personalizzate. La creazione e la modifica di queste configurazioni aggiorna automaticamente il file di progetto, che viene quindi usato da MSBuild per la compilazione.
+Visual Studio per Mac consente di creare ed eseguire compilazioni immediatamente, mantenendo al contempo il controllo della funzionalità di compilazione. Quando si crea un progetto, Visual Studio per Mac definisce una configurazione di compilazione predefinita che imposta il contesto per le compilazioni. È possibile modificare le configurazioni di compilazione predefinite e crearne di personalizzate. La creazione e la modifica di queste configurazioni aggiorna automaticamente il file di progetto, che viene quindi usato da MSBuild per la compilazione.
 
 Per altre informazioni su come compilare progetti e soluzioni nell'IDE, vedere la guida [Compilazione e pulizia di progetti e soluzioni](building-and-cleaning-projects-and-solutions.md).
 
@@ -38,16 +54,6 @@ Visual Studio per Mac consente anche di eseguire le operazioni seguenti:
 
     ![Aggiungere comandi personalizzati](media/compiling-and-building-image6.png)
 
-## <a name="building-from-command-line"></a>Compilazione dalla riga di comando
-
-È possibile usare il motore di compilazione MSBuild per compilare applicazioni tramite la riga di comando.
-
-Per altre informazioni sull'uso di MSBuild, vedere il contenuto in [MSBuild](/visualstudio/msbuild/msbuild).
-
-## <a name="building-from-azure-pipelines"></a>Compilazione da Azure Pipelines
-
-* [Build your Xamarin App](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts) (Compilare l'app Xamarin)
-* [Continuous Integration with Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/) (Integrazione continua con Xamarin)
 
 ## <a name="see-also"></a>Vedere anche
 

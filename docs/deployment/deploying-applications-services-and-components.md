@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533355"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222616"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -96,6 +96,13 @@ Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Mi
 - **Desktop di Windows**: a partire da Visual Studio 2017 versione 15.4, è possibile eseguire la distribuzione in Microsoft Store tramite Desktop Bridge. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere [Creare il pacchetto di un'app desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Desktop Bridge](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Distribuire pacchetti .NET in NuGet.org
+
+Per distribuire il codice in bundle in "pacchetti" contenenti codice compilato (come DLL) insieme ad altri contenuti necessari nei progetti che usano questi pacchetti, è possibile usare Visual Studio per creare il pacchetto NuGet e uno strumento dell'interfaccia della riga di comando per eseguire il comando di distribuzione finale.
+
+- [Creare e pubblicare un pacchetto .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Creare e pubblicare un pacchetto .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Eseguire la distribuzione in un dispositivo (piattaforma UWP)
 

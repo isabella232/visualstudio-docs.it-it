@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976207"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180007"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
 Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere a un elenco di indirizzi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio e dei servizi di Azure.
 
-* **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere a un elenco di indirizzi consentiti in modo da poter accedere a tutti i componenti e ai carichi di lavoro necessari.
+* **[Installare Visual Studio](#install-visual-studio)** : queste tabelle includono gli URL di dominio da aggiungere a un elenco di indirizzi consentiti in modo da poter accedere a tutti i componenti e ai carichi di lavoro necessari.
 
-* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere a un elenco di indirizzi consentiti e le porte e i protocolli da aprire in modo da avere accesso a tutte le funzionalità e a tutti i servizi necessari.
+* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)** : questa tabella include gli URL di dominio da aggiungere a un elenco di indirizzi consentiti e le porte e i protocolli da aprire in modo da avere accesso a tutte le funzionalità e a tutti i servizi necessari.
 
 > [!NOTE]
 > Questo articolo è stato scritto per Visual Studio in Windows, ma alcune informazioni sono applicabili anche all'[installazione di Visual Studio per Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) dietro un firewall o un server proxy.
@@ -83,7 +83,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere a un elenco di indirizzi consentiti e le porte e i protocolli che è possibile aprire.
 
-| Servizio o scenario | Endpoint DNS | Protocollo | Porta | Description |
+| Servizio o scenario | Endpoint DNS | Protocollo | Porta | DESCRIZIONE |
 | - | - | - | - | - |
 | URL<br>risoluzione | go.microsoft.com<br><br>aka.ms | | | Usato per abbreviare gli URL, risolti quindi in URL più lunghi |
 | Pagina iniziale | vsstartpage.blob.core.windows.net | | 443 | Usato per visualizzare le Novità per gli sviluppatori nella pagina iniziale (solo Visual Studio 2017) |
@@ -122,7 +122,7 @@ Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quan
 | Analisi di flusso di Azure <br><br>HDInsight | Management.azure.com | https | 443 | Usato per visualizzare, inviare, eseguire e gestire i processi ASA <br><br> Usato per esplorare i cluster HDI e inviare, diagnosticare ed eseguire il debug di processi HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Usato per compilare, inviare, visualizzare, diagnosticare ed eseguire il debug di processi; usato per visualizzare file ADLS; usato per caricare e scaricare file |
 | Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org e \*.nodejs.org sono necessari solo per alcuni scenari di attività di compilazione, ad esempio Programma di installazione strumento NuGet e Programma di installazione strumento Node, o se si prevede di usare upstream pubblici con i feed. Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Usato per la connessione con Azure DevOps Services |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Usato per la connessione con Azure DevOps Services |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Risoluzione dei problemi correlati alla rete
