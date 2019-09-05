@@ -1,8 +1,10 @@
 ---
 title: Risorse per la progettazione di applicazioni accessibili
 description: Informazioni su come creare applicazioni accessibili semplici da usare da parte di persone affette da disabilità.
-ms.date: 11/04/2016
+ms.date: 08/27/2019
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,16 +16,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811781"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107842"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
 
-Usare i collegamenti seguenti per trovare informazioni sulle tecnologie che supportano la progettazione per l'accessibilità, nonché suggerimenti ed esempi per lo sviluppo di applicazioni Windows e siti Web accessibili. Informazioni generali sull'accessibilità sono disponibili online all'indirizzo [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Altre informazioni sulle tecnologie che supportano la progettazione di applicazioni accessibili. Sono anche disponibili suggerimenti e collegamenti alle esercitazioni che illustrano come sviluppare app e siti Web di Windows accessibili.
+
+>[!NOTE]
+>Per altre informazioni sullo sviluppo di prodotti accessibili a tutti gli utenti, vedere [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Tecnologie
 
@@ -53,4 +58,5 @@ Usare i collegamenti seguenti per trovare informazioni sulle tecnologie che supp
 
 ## <a name="see-also"></a>Vedere anche
 
-[Funzionalità di accessibilità di Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Funzionalità di accessibilità di Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility/)
