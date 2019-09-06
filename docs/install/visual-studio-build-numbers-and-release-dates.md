@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/20/2019
+ms.date: 09/04/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9d67ce7365a60bd744e0237d95b41f9dea2c641
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: e498e5667a7467c1621b10549cb1f67e6583a05b
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891310"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383737"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,6 +29,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Preview 3 | 4 settembre 2019 | 16.3.29230.61 |
 | 16.2.3 | Versione | 20 agosto 2019 | 16.2.29215.179 |
 | 16.2.2 | Versione | 13 agosto 2019 | 16.2.29209.62 |
 | 16.3.0 | Preview 2 | 13 agosto 2019 | 16.3.29209.152 |
@@ -186,7 +187,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.5.1 | Versione | 7 dicembre 2017 | 15.0.27130.2003 |
 | 15.6.0 Preview 1 | Anteprima | 7 dicembre 2017 | 15.6.27205.0 |
 | 15.0.7 | Versione | 6 dicembre 2017 | 15.0.26228.18 |
-| 15.5 | Versione | 4 dicembre 2017 | 15.0.27130.0 |
+| 15.5.0 | Versione | 4 dicembre 2017 | 15.0.27130.0 |
 | 15.5.0 Preview 5 | Anteprima | 30 novembre 2017 | 15.0.27128.1 |
 | 15.4.5 | Versione | 27 novembre 2017 | 15.0.27004.2010 |
 | 15.5.0 Preview 4 | Anteprima | 14 novembre 2017 | 15.0.27110.0 |
@@ -198,7 +199,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.5.0 Preview 2 | Anteprima | 23 ottobre 2017 | 15.0.27019.1 |
 | 15.4.1 | Versione | 19 ottobre 2017 | 15.0.27004.2005 |
 | 15.5 Preview 1 | Anteprima | 11 ottobre 2017 | 15.0.27009.1 |
-| 15.4 | Versione | 9 ottobre 2017 | 15.0.27004.2002 |
+| 15.4.0 | Versione | 9 ottobre 2017 | 15.0.27004.2002 |
 | 15.4 Preview 6 | Anteprima | 9 ottobre 2017| 15.0.27004.20002 |
 | 15.4 Preview 5 | Anteprima | 6 ottobre 2017 | 15.0.27004.2000 |
 | 15.4 Preview 4 | Anteprima | 2 ottobre 2017 | 15.0.26929.2 |
@@ -214,7 +215,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.3.1 Preview 1 | Anteprima | 18 agosto 2017 | 15.0.26730.08 |
 | 15.3.1  | Versione | 18 agosto 2017 | 15.0.26730.08 |
 | 15.4 Preview 1 | Anteprima | 24 agosto 2017 | 15.0.26823.1 |
-| 15.3 | Versione | 14 agosto 2017 | 15.0.26730.3 |
+| 15.3.0 | Versione | 14 agosto 2017 | 15.0.26730.3 |
 | 15.3 Preview 7.1 | Anteprima | 11 agosto 2017 | 15.0.26730.3 |
 | 15.3 Preview 7 | Anteprima | 1 agosto 2017 | 15.0.26730.0 |
 | 15.3 Preview 6 | Anteprima | 26 luglio 2017 | 15.0.26724.1 |
@@ -232,14 +233,14 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.2.1  | Versione | 12 maggio 2017 | 15.0.26430.6 |
 | 15.3 Preview 1.1 | Anteprima | 11 maggio 2017 | 15.0.26510.0 |
 | 15.3 Preview 1 | Anteprima | 10 maggio 2017 | 15.0.26507.0 |
-| 15.2 | Versione | 10 maggio 2017 | 15.0.26430.4 |
+| 15.2.0 | Versione | 10 maggio 2017 | 15.0.26430.4 |
 | 15.2 Preview 4 | Anteprima | 3 maggio 2017 | 15.0.26430.1 |
 | 15.2 Preview 3 | Anteprima | 26 aprile 2017 | 15.0.26424.2 |
 | 15.2 Preview 2 | Anteprima | 20 aprile 2017 | 15.0.26419.1 |
 | 15.2 Preview 1 | Anteprima | 17 aprile 2017 | 15.0.26412.1 |
 | 15.1.2  | Versione | 17 aprile 2017 | 15.0.26403.7 |
 | 15.1.1 | Versione | 10 aprile 2017 | 15.0.26403.3 |
-| 15.1 | Versione | 5 aprile 2017 | 15.0.26403.0 |
+| 15.1.0 | Versione | 5 aprile 2017 | 15.0.26403.0 |
 | 15.0.3  | Versione | 31 marzo 2017 | 15.0.26228.12 |
 | 15.0.2 | Versione | 28 marzo 2017 | 15.0.26228.10 |
 | 15.1 Preview 3 | Anteprima | 27 marzo 2017 | 15.0.26323.1 |

@@ -6,17 +6,17 @@ ms.technology: vs-azure
 ms.author: ghogen
 ms.topic: include
 ms.date: 03/05/2019
-ms.openlocfilehash: d01cba0f947752e9f1e277d6f23e74efa39d47fd
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: 81c2f7ae366efa70c3608e112dabcbfceb4087e4
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253653"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "70311975"
 ---
-1. Nella finestra iniziale di Visual Studio scegliere **Crea un nuovo progetto**.
-1. Scegliere **Applicazione Web ASP.NET Core** e quindi scegliere **Avanti**.
-1. Assegnare un nome alla nuova applicazione (o accettare quello predefinito), quindi scegliere **Crea**.
-1. Scegliere **Applicazione Web**.
-1. Scegliere se si vuole il supporto SSL tramite la casella di controllo **Configura per HTTPS**.
-1. Spuntare la casella di controllo **Abilita Supporto Docker**.
-1. Selezionare il tipo di contenitore appropriato (Windows o Linux) e fare clic su **Crea**.
+1. Nella finestra di avvio di Visual Studio selezionare **Crea un nuovo progetto**.
+1. Selezionare **ASP.NET Core applicazione Web**e quindi fare clic su **Avanti**.
+1. Immettere un nome per la nuova applicazione (o usare il nome predefinito) e quindi selezionare **Crea**.
+1. Selezionare **Applicazione Web**.
+1. Scegliere se si desidera il supporto SSL selezionando o deselezionando la casella di controllo **Configura per HTTPS** .
+1. Selezionare la casella di controllo **Abilita supporto Docker** .
+1. Selezionare il tipo di contenitore desiderato (Windows o Linux), quindi selezionare **Crea**.
