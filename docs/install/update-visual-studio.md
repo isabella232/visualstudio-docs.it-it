@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fc0ab18fea11b2dd4478538a095762fee75d35
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 22b48cdb80f34a4bbf57626b9ffe6e4d753e5a55
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180376"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293686"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 
@@ -30,7 +30,7 @@ ms.locfileid: "70180376"
 
 È consigliabile eseguire l'aggiornamento alla [versione più recente](/visualstudio/releasenotes/vs2017-relnotes/) di Visual Studio 2017, in modo da avere sempre a disposizione le funzionalità, le correzioni e i miglioramenti più recenti.
 
-Se invece si vuole provare la versione più recente, è consigliabile scaricare e installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
+Se invece si vuole provare la versione più recente, è consigliabile scaricare e installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads).
 
 > [!IMPORTANT]
 > Per installare, aggiornare o modificare Visual Studio, è necessario accedere con un account con autorizzazioni amministrative. Per altre informazioni, vedere [Autorizzazioni utente e Visual Studio](../ide/user-permissions-and-visual-studio.md).

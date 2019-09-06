@@ -1,5 +1,5 @@
 ---
-title: Installare Visual Studio
+title: Installazione di Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate sull'installazione di Visual Studio.
 ms.date: 04/16/2019
@@ -20,14 +20,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263733"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293711"
 ---
-# <a name="install-visual-studio"></a>Installare Visual Studio
+# <a name="install-visual-studio"></a>Installazione di Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -112,7 +112,7 @@ Scaricare quindi il file del programma di avvio automatico di Visual Studio. A t
 ::: moniker range="vs-2019"
 
  > [!div class="button"]
- > [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+ > [Download di Visual Studio](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 

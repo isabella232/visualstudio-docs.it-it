@@ -15,19 +15,19 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 2c9526a0cbf33278bbc3cab8120bb20ab0f5377a
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918779"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293727"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
 **Contenuto aggiornato per la [versione 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
->[Scarica Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+>[Scarica Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 Visual Studio 2019 include gli strumenti e i servizi migliori del settore per qualsiasi sviluppatore, app e piattaforma. Sia per gli utenti che usano Visual Studio per la prima volta che per quelli di lunga data, c'è molto da scoprire nella nuova versione.
 
@@ -190,7 +190,7 @@ Per altre informazioni, vedere la pagina [Eseguire il debug di app di Azure ASP.
 
    ![Screenshot che mostra il rendering del codice JavaScript in un browser](media/vs-2019/edge-chromium-breakpoint.png)
 
-## <a name="whats-next"></a>Argomenti successivi
+## <a name="whats-next"></a>Passaggi successivi
 
 Visual Studio 2019 viene aggiornato spesso con nuove funzionalità in grado di migliorare ulteriormente l'esperienza di sviluppo. Per altre informazioni sulle innovazioni più recenti, consultare il [blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/). Per saperne di più sulle funzionalità rilasciate finora in anteprima, vedere le [note sulla versione di anteprima](/visualstudio/releases/2019/release-notes-preview/).
 

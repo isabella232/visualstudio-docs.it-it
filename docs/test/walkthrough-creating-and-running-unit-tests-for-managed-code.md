@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926794"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383715"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -163,7 +163,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 3. Denominare il progetto **BankTests**.
 
-4. Scegliere **Crea**.
+4. Fare clic su **Create**(Crea).
 
    Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Rieseguire il test, riscrivere e rianalizzare
 
-Si supponga che sia presente un bug nel metodo sottoposto a test e che il metodo `Debit` non generi una <xref:System.ArgumentOutOfRangeException> né tantomeno restituisca il messaggio corretto con l'eccezione. Attualmente, il metodo di test non gestisce questa situazione. Se il valore `debitAmount` è valido, ovvero è minore del saldo ma maggiore di zero, non sarà intercettata alcuna eccezione e quindi non verrà mai attivata l'asserzione. Tuttavia il metodo supera il test. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
+Si supponga che sia presente un bug nel metodo sottoposto a test e che il metodo `Debit` non generi una <xref:System.ArgumentOutOfRangeException> né tantomeno restituisca il messaggio corretto con l'eccezione. Attualmente, il metodo di test non gestisce questa situazione. Se il `debitAmount` valore è valido, ovvero minore del saldo e maggiore di zero, non viene rilevata alcuna eccezione, pertanto l'asserzione non viene mai attivata. Tuttavia il metodo supera il test. Questo non è il risultato desiderato, perché si vuole che il metodo di test abbia esito negativo se non viene generata alcuna eccezione.
 
 È presente un bug nel metodo di test. Per risolvere il problema, aggiungere un'asserzione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> alla fine del metodo di test per gestire il caso in cui non viene generata alcuna eccezione.
 

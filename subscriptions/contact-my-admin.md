@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
-ms.openlocfilehash: cc6ce20d97531cca7c6b08d82ba949fb19e6bddc
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000971"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293531"
 ---
 # <a name="get-assistance-from-your-subscriptions-adminstrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
 Se la sottoscrizione di Visual Studio viene fornita dall'azienda o dall'istituto di istruzione di appartenenza, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni.  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
@@ -27,6 +27,9 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
 4. Immettere il messaggio per l'amministratore.
 5. Se si vuole ricevere una copia del messaggio inviato all'amministratore, fare clic sulla casella di controllo **Send me a copy** (Invia una copia). 
 6. Infine, fare clic su **Send** (Invia).
+
+> [!NOTE]
+> **Amministratori con privilegi elevati:**  Per impostare l'indirizzo di posta elettronica a cui vengono inviate le richieste "Contatta l'amministratore", specificare l'indirizzo nelle [Preferenze dell'accordo](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Risorse
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

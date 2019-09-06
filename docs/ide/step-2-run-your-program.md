@@ -1,61 +1,72 @@
 ---
 title: 'Passaggio 2: Eseguire il programma'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 08/30/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f6d64d515ac7fab454b123686e671d9bcd1d2d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 18db6e663284e7d4550f22f5f3f774925bd52dab
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918922"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293593"
 ---
 # <a name="step-2-run-your-program"></a>Passaggio 2: Eseguire il programma
-Quando è stata creata una nuova soluzione, si è effettivamente compilato un programma che è possibile eseguire. Il programma non fa ancora molto: visualizza semplicemente una finestra vuota con **Form1** nella barra del titolo. È tuttavia possibile eseguirlo, come illustrato di seguito.
 
-![Collegamento a video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) o [Esercitazione 1: Creare un visualizzatore immagini in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+Quando si crea un progetto di applicazione Windows Forms, si compila effettivamente un programma che esegue. In questa esercitazione l'app *PictureViewer* non ha ancora&mdash;molto tempo, anche se sarà. Per il momento, tuttavia, viene visualizzata solo una finestra vuota che mostra **Form1** nella barra del titolo.
 
-## <a name="to-run-your-program"></a>Per eseguire il programma
+Di seguito viene illustrato come eseguire il programma. 
 
-1. Utilizzare uno dei metodi seguenti per eseguire il programma.
+1. Scegliere uno dei metodi seguenti:
 
     - Premere **F5**.
 
     - Sulla barra dei menu scegliere **Debug** > **Avvia debug**.
 
-    - Sulla barra degli strumenti scegliere il pulsante **Avvia debug** visualizzato di seguito.
+    - Sulla barra degli strumenti scegliere il pulsante **Avvia debug** , che viene visualizzato come segue:
 
-         ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)
-Pulsante della barra degli strumenti **Avvia debug**
+      ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)<br>
+      ***Avvia debug*** *pulsante della barra degli strumenti*
 
-2. In Visual Studio viene eseguito il programma e visualizzata una finestra denominata **Form1**. Nel diagramma seguente è illustrato il programma appena compilato. Il programma viene eseguito e presto vi si aggiungeranno elementi.
+1. In Visual Studio viene eseguito il programma e visualizzata una finestra denominata **Form1**. Lo screenshot seguente mostra il programma appena compilato. Il programma è in esecuzione e si aggiungerà a breve.
 
-     ![Programma per applicazioni Windows Form in esecuzione](../ide/media/express_firstrun.png)
-Programma per applicazioni **Windows Forms** in esecuzione
+     ![Programma applicativo Windows Form in esecuzione](../ide/media/express_firstrun.png)<br>
+***Windows Forms*** *programma applicativo, in esecuzione*
 
-3. Tornare all'ambiente di sviluppo integrato (IDE) di Visual Studio e osservare la nuova barra degli strumenti. I pulsanti aggiuntivi vengono visualizzati sulla barra degli strumenti quando si esegue un programma. Questi pulsanti consentono di eseguire operazioni quali l'arresto e l'avvio del programma e agevolano il rilevamento di eventuali errori (bug). Per questo esempio, l'utilizzo è limitato solo all'avvio e all'arresto del programma.
+1. Tornare all'Integrated Development Environment di Visual Studio (IDE), quindi osservare la nuova barra degli strumenti. I pulsanti aggiuntivi vengono visualizzati sulla barra degli strumenti quando si esegue un programma. Questi pulsanti consentono di eseguire operazioni quali l'arresto e l'avvio del programma e agevolano il rilevamento di eventuali errori (bug). Per questo esempio viene usato per avviare e arrestare il programma.
 
-     ![Barra degli strumenti Debug](../ide/media/express_debugtoolbar.png)
-Barra degli strumenti **Debug**
+     ![Barra degli strumenti debug](../ide/media/express_debugtoolbar.png)<br>
+***Debug*** in *barra degli strumenti*
 
-4. Utilizzare uno dei metodi seguenti per arrestare il programma.
+1. Per arrestare il programma, usare uno dei metodi seguenti:
 
     - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
 
     - Sulla barra dei menu scegliere **Debug** > **Termina debug**.
 
+    - Utilizzare la tastiera e premere **MAIUSC**+**F5**.
+
     - Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
 
     > [!NOTE]
-    > Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata debug perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
+    > Quando si esegue il programma dall'interno dell'IDE, questo viene chiamato debug perché in genere si esegue questa operazione per individuare e correggere i bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
-## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
+## <a name="next-steps"></a>Passaggi successivi
 
-- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
+* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md).
+* Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md).
+
+## <a name="see-also"></a>Vedere anche
+
+* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: Creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
