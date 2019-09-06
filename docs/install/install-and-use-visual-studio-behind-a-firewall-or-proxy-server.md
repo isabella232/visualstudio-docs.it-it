@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180007"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293517"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -35,7 +35,7 @@ Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un 
 > [!NOTE]
 > Questo articolo è stato scritto per Visual Studio in Windows, ma alcune informazioni sono applicabili anche all'[installazione di Visual Studio per Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) dietro un firewall o un server proxy.
 
-## <a name="install-visual-studio"></a>Installare Visual Studio
+## <a name="install-visual-studio"></a>Installazione di Visual Studio
 
 ### <a name="urls-to-add-to-an-allow-list"></a>URL da aggiungere a un elenco di indirizzi consentiti
 
@@ -43,7 +43,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 #### <a name="microsoft-domains"></a>Domini Microsoft
 
-| Dominio | Scopo |
+| Domain | Scopo |
 | - | - |
 | go.microsoft.com | Risoluzione degli URL di installazione |
 | aka.ms | Risoluzione degli URL di installazione |
@@ -63,7 +63,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 #### <a name="non-microsoft-domains"></a>Domini non Microsoft
 
-| Dominio | Installa questi carichi di lavoro |
+| Domain | Installa questi carichi di lavoro |
 | - | - |
 | archive.apache.org | Sviluppo di app per dispositivi mobili con JavaScript (Cordova) |
 | cocos2d-x.org | Sviluppo di giochi con C++ (Cocos) |
@@ -83,7 +83,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere a un elenco di indirizzi consentiti e le porte e i protocolli che è possibile aprire.
 
-| Servizio o scenario | Endpoint DNS | Protocollo | Porta | DESCRIZIONE |
+| Servizio o scenario | Endpoint DNS | Protocol | Port | Descrizione |
 | - | - | - | - | - |
 | URL<br>risoluzione | go.microsoft.com<br><br>aka.ms | | | Usato per abbreviare gli URL, risolti quindi in URL più lunghi |
 | Pagina iniziale | vsstartpage.blob.core.windows.net | | 443 | Usato per visualizzare le Novità per gli sviluppatori nella pagina iniziale (solo Visual Studio 2017) |
@@ -116,9 +116,9 @@ Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quan
 | Funzioni di Azure <br>Controllo degli aggiornamenti <br>per CLI | functionscdn.azureedge.net | https | 443 | Usato per controllare la disponibilità di versioni aggiornate dell'interfaccia della riga di comando di Funzioni di Azure. Se disabilitato, verrà usata una copia dell'interfaccia della riga di comando memorizzata nella cache (o la copia inclusa nel componente Funzioni di Azure) |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | Viene usato HTTP per il download di Gradle durante la compilazione; Viene usato HTTPS per includere i plug-in Cordova nei progetti |
 | Cloud Explorer | 1. &#60;endpoint clustere&#62; <br>Service Fabric <br>2. &#60;endpoint di gestione&#62;<br>Cloud Exp generale <br>3. &#60;endpoint grafico&#62;<br>Cloud Exp generale<br>4. &#60;endpoint account di archiviazione&#62;<br>Nodi di archiviazione <br>5. &#60;URL portale di Azure&#62;<br>Cloud Exp generale <br>6. &#60;endpoint insieme di credenziale delle chiavi&#62; <br>Nodi VM di Azure Resource Manager<br>7. &#60;IndirizzoIPpubblicoCluster&#62;<br>Debug remoto di Service Fabric e tracce ETW | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dynamic | 1. Esempio: test12.eastus.cloudapp.com<br>2. Recupera le sottoscrizioni e recupera/gestisce le risorse di Azure<br>3. Recupera le sottoscrizioni di Azure Stack<br>4. Gestisce le risorse di archiviazione (esempio: mystorageaccount.blob.core.windows.net)<br>5. Opzione del menu scelta rapida "Apri nel portale" (apre una risorsa nel portale di Azure)<br>6. Crea e usa gli insiemi di credenziali delle chiavi per il debug di macchine virtuali (esempio: myvault.vault.azure.net) <br><br>7. Alloca in modo dinamico un blocco di porte in base al numero di nodi nel cluster e alle porte disponibili. <br><br>Un blocco di porte tenterà di ottenere tre volte il numero di nodi con almeno 10 porte.<br><br>Per le tracce di streaming, viene effettuato un tentativo di ottenere il blocco di porte a partire da 810. Se un blocco qualsiasi di porte è già in uso, viene effettuato un tentativo di ottenere il blocco successivo e così via. (Se il servizio di bilanciamento del carico è vuoto, molto probabilmente vengono usate le porte a partire da 810) <br><br>In modo analogo per il debug, vengono riservati quattro set di blocchi di porte: <br>- connectorPort: 30398, <br>- forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>- fileUploadPort: 32398<br> |
-| Servizi cloud | 1. RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;servizio cloud utente&#62;.cloudapp.net <br> &#60;macchina virtuale utente&#62;.&#60;regione&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Macchina virtuale da Desktop remoto a Servizi cloud <br><br> 2.  Componente account di archiviazione della configurazione di diagnostica privata <br><br> 3.  portale di Azure <br><br> 4. Esplora server - Archiviazione di Azure &#42; account di archiviazione denominato dal cliente  <br><br> 5.  Collegamenti per aprire il portale &#47; Scaricare il certificato di sottoscrizione &#47; File di impostazioni di pubblicazione <br><br>6. a) Porta locale del connettore per il debug remoto per il servizio cloud e la macchina virtuale<br> 6. b) Porta pubblica del connettore per il debug remoto per il servizio cloud e la macchina virtuale <br> 6. c) Porta locale del server di inoltro per il debug remoto per il servizio cloud e la macchina virtuale <br> 6. d) Porta pubblica del server di inoltro per il debug remoto per il servizio cloud e la macchina virtuale  <br> 6. e) Porta locale del caricatore di file per il debug remoto per il servizio cloud e la macchina virtuale <br> 6. f) Porta pubblica del caricatore di file per il debug remoto per il servizio cloud e la macchina virtuale |
+| Servizi cloud | 1. RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;servizio cloud utente&#62;.cloudapp.net <br> &#60;macchina virtuale utente&#62;.&#60;regione&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Macchina virtuale da Desktop remoto a Servizi cloud <br><br> 2.  Componente account di archiviazione della configurazione di diagnostica privata <br><br> 3.  Portale di Azure <br><br> 4. Esplora server - Archiviazione di Azure &#42; account di archiviazione denominato dal cliente  <br><br> 5.  Collegamenti per aprire il portale &#47; Scaricare il certificato di sottoscrizione &#47; File di impostazioni di pubblicazione <br><br>6. a) Porta locale del connettore per il debug remoto per il servizio cloud e la macchina virtuale<br> 6. b) Porta pubblica del connettore per il debug remoto per il servizio cloud e la macchina virtuale <br> 6. c) Porta locale del server di inoltro per il debug remoto per il servizio cloud e la macchina virtuale <br> 6. d) Porta pubblica del server di inoltro per il debug remoto per il servizio cloud e la macchina virtuale  <br> 6. e) Porta locale del caricatore di file per il debug remoto per il servizio cloud e la macchina virtuale <br> 6. f) Porta pubblica del caricatore di file per il debug remoto per il servizio cloud e la macchina virtuale |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Documentazione <br><br> 2. Funzionalità Crea cluster <br><br>3. &#42; è il nome dell'insieme di credenziali delle chiavi di Azure (esempio:-test11220180112110108.vault.azure.net)  <br><br>  4. &#42; è dinamico (esempio: vsspsextprodch1su1.vsspsext.visualstudio.com) |
-| Snapshot <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dipendente dalla versione di Visual Studio) | 1. File di query con estensione json per le dimensioni dello SKU del servizio app <br>2. Varie chiamate di Azure RM <br>3. Chiamata di riscaldamento del sito tramite  <br>4. Endpoint Kudu del servizio app di destinazione del cliente <br>5. Versione dell'estensione del sito query pubblicata in nuget.org <br>6. Canale di debug remoto |
+| Snapshot <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon (. exe) | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dipendente dalla versione di Visual Studio) | 1. File di query con estensione json per le dimensioni dello SKU del servizio app <br>2. Varie chiamate di Azure RM <br>3. Chiamata di riscaldamento del sito tramite  <br>4. Endpoint Kudu del servizio app di destinazione del cliente <br>5. Versione dell'estensione del sito query pubblicata in nuget.org <br>6. Canale di debug remoto |
 | Analisi di flusso di Azure <br><br>HDInsight | Management.azure.com | https | 443 | Usato per visualizzare, inviare, eseguire e gestire i processi ASA <br><br> Usato per esplorare i cluster HDI e inviare, diagnosticare ed eseguire il debug di processi HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Usato per compilare, inviare, visualizzare, diagnosticare ed eseguire il debug di processi; usato per visualizzare file ADLS; usato per caricare e scaricare file |
 | Servizio di creazione di pacchetti | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | \*.npmjs.org, \*.nuget.org e \*.nodejs.org sono necessari solo per alcuni scenari di attività di compilazione, ad esempio Programma di installazione strumento NuGet e Programma di installazione strumento Node, o se si prevede di usare upstream pubblici con i feed. Gli altri tre domini sono necessari per la funzionalità core del servizio Creazione pacchetto. |

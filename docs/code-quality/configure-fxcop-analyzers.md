@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551149"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293453"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurare gli analizzatori FxCop
 
@@ -22,10 +22,10 @@ Gli [analizzatori FxCop](install-fxcop-analyzers.md) sono costituiti dalle regol
 
 - Con un [set di regole](#fxcop-analyzer-rule-sets), che consente di abilitare o disabilitare la regola e impostare la gravità per le singole violazioni delle regole.
 
-- A partire dalla versione 2.6.3 del pacchetto NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , tramite un [file con estensione EditorConfig](#editorconfig-file). Le [Opzioni](fxcop-analyzer-options.md) configurabili consentono di perfezionare le parti della codebase da analizzare.
+- A partire dalla versione 2.6.3 del pacchetto NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , tramite un [file con estensione EditorConfig](#editorconfig-file). Le [Opzioni configurabili](fxcop-analyzer-options.md) consentono di perfezionare le parti della codebase da analizzare.
 
 > [!TIP]
-> Per informazioni sulle differenze tra analisi legacy e analizzatori FxCop, vedere [domande frequenti](fxcop-analyzers-faq.md)sugli analizzatori di FxCop.
+> Per informazioni sulle differenze tra analisi legacy e analizzatori FxCop, vedere [domande frequenti sugli analizzatori di FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>Set di regole dell'analizzatore FxCop
 
@@ -46,7 +46,10 @@ Per altre informazioni, vedere [set di regole per gli analizzatori di codice](an
 
 ## <a name="editorconfig-file"></a>File EditorConfig
 
-È possibile configurare le regole dell'analizzatore aggiungendo coppie chiave-valore a un file con [estensione EditorConfig](https://editorconfig.org) . Un file di configurazione può essere [specifico di un progetto](#per-project-configuration) oppure può essere [condiviso](#shared-configuration) tra due o più progetti.
+È possibile configurare le regole dell'analizzatore FxCop aggiungendo coppie chiave-valore a un file con [estensione EditorConfig](https://editorconfig.org) . Un file di configurazione può essere [specifico di un progetto](#per-project-configuration) oppure può essere [condiviso](#shared-configuration) tra due o più progetti.
+
+> [!NOTE]
+> Non è possibile configurare le regole FxCop legacy usando un file con estensione EditorConfig.
 
 ### <a name="per-project-configuration"></a>Configurazione per progetto
 
@@ -61,7 +64,7 @@ Attualmente non è disponibile alcun supporto gerarchico per i file con estensio
 
 ### <a name="shared-configuration"></a>Configurazione condivisa
 
-È possibile condividere un file con estensione EditorConfig per la configurazione dell'analizzatore tra due o più progetti, ma sono necessari alcuni passaggi aggiuntivi.
+È possibile condividere un file con estensione EditorConfig per la configurazione dell'analizzatore FxCop tra due o più progetti, ma sono necessari alcuni passaggi aggiuntivi.
 
 1. Salvare il file con *estensione EditorConfig* in un percorso comune.
 
@@ -90,7 +93,7 @@ Attualmente non è disponibile alcun supporto gerarchico per i file con estensio
 4. Ricaricare il progetto.
 
 > [!NOTE]
-> Non è possibile configurare le regole FxCop legacy usando un file con estensione EditorConfig.
+> Il percorso condiviso arbitrario del file EditorConfig descritto di seguito si applica solo alla configurazione degli analizzatori FxCop. Per altre impostazioni, ad esempio il rientro e lo stile del codice, il file EditorConfig deve sempre essere inserito nella cartella del progetto o in una cartella padre.
 
 ## <a name="option-scopes"></a>Ambiti delle opzioni
 

@@ -1,28 +1,28 @@
 ---
 title: 'Passaggio 1: Creare un progetto di Windows Forms Application'
-ms.date: 06/01/2019
+ms.date: 08/30/2019
+ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.topic: conceptual
-ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: dc2b21edcae4cd825ade551b92f98853da8f2516
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501064"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293673"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: Creare un progetto di Windows Forms Application
 
 Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella creazione di un progetto di Windows Forms Application.
-
- > [!TIP]
- > ![Collegamento a video](../data-tools/media/playvideo.gif)Per una versione video di questo argomento, vedere [Esercitazione 1: Creare un visualizzatore di immagini in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) o [Esercitazione 1: Creare un visualizzatore immagini in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ::: moniker range="vs-2017"
 
@@ -32,9 +32,9 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella 
 
      ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>***Finestra di dialogo*** *Nuovo progetto*
 
-2. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
+2. Sul lato sinistro della finestra di dialogo **nuovo progetto** scegliere **Visual C#**  o **Visual Basic**, quindi scegliere **desktop di Windows**.
 
-3. Nell'elenco dei modelli scegliere **App Windows Forms (.NET Framework)** . Assegnare il nome *PictureViewer* al nuovo form, quindi scegliere il pulsante **OK**.
+3. Nell'elenco dei modelli di progetto scegliere **Windows Forms app (.NET Framework)** . Assegnare il nome *PictureViewer* al nuovo form, quindi scegliere il pulsante **OK**.
 
     >[!NOTE]
     >Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
@@ -49,14 +49,14 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella 
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Quindi scegliere **Visual Basic** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
 
-   Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App Windows Forms (.NET Core)** e quindi scegliere **Avanti**.
+   Dopo aver applicato il filtro del **tipo di progetto** , scegliere il modello **App Windows Forms (.NET Framework)** per C# o Visual Basic, quindi scegliere **Avanti**.
 
-   ![Scegliere il modello Visual Basic per l'app Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Scegliere il C# modello per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Se il modello **App Windows Forms (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
    > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -76,42 +76,49 @@ Visual Studio crea una soluzione per il programma. Una soluzione funge da conten
 
 1. L'ambiente di sviluppo include tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
 
-     Se manca una di queste finestre, ripristinare il layout di finestra predefinito, scegliendo **Finestra** > **Reimposta layout finestra** sulla barra dei menu. È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà** o **Esplora soluzioni**. Se sono aperte altre finestre, chiuderle scegliendo il pulsante **Chiudi** (x) negli angoli in alto a destra.
+     Se una di queste finestre non è presente, è possibile ripristinare il layout predefinito della finestra. Sulla barra dei menu scegliere **finestra** > **Reimposta layout finestra**.
+
+     È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà** o **Esplora soluzioni**.
+
+     Se sono aperte altre finestre, chiuderle scegliendo il pulsante **Chiudi** (x) negli angoli in alto a destra.
 
     ::: moniker range="vs-2017"
 
-    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]** . In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.
+    * **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]** . In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.
 
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
 
-    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**.
+    * **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**.
 
     ::: moniker-end
 
-    - **Finestra Esplora soluzioni** In questa finestra è possibile visualizzare tutti gli elementi della soluzione e spostarsi tra di essi. Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con l'estensione *CS* in Visual C# e *VB* in Visual Basic), viene visualizzato il file stesso o la relativa finestra di progettazione. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per i moduli di Visual Studio, la finestra di progettazione è denominata **Progettazione Windows Form**.
+    * **Finestra Esplora soluzioni** In questa finestra è possibile visualizzare tutti gli elementi della soluzione e spostarsi tra di essi.
 
-    - **Finestra Proprietà** In questa finestra è possibile modificare le proprietà degli elementi scelti nelle altre finestre. Ad esempio, se si sceglie Form1, è possibile modificarne il titolo impostando la proprietà **Text** e il colore di sfondo impostando la proprietà **Backcolor**.
+       Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con *. cs* in C# e *. vb* in Visual Basic), viene visualizzato il file di codice o una finestra di progettazione per il file di codice. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per i moduli di Visual Studio, la finestra di progettazione è denominata **Progettazione Windows Form**.
 
-    > [!NOTE]
-    > Nella riga superiore in **Esplora soluzioni** è riportata la dicitura **Soluzione "PictureViewer" (1 progetto)** per indicare che è stata creata una soluzione in Visual Studio. Una soluzione può contenere più progetti, ma per ora verranno utilizzate soluzioni che contengono un solo progetto.
+    * **Finestra Proprietà** In questa finestra è possibile modificare le proprietà degli elementi scelti nelle altre finestre. Ad esempio, se si sceglie Form1, è possibile modificarne il titolo impostando la proprietà **Text** e il colore di sfondo impostando la proprietà **Backcolor**.
+
+      > [!NOTE]
+      > Nella riga superiore in **Esplora soluzioni** è riportata la dicitura **Soluzione "PictureViewer" (1 progetto)** per indicare che è stata creata una soluzione in Visual Studio. Una soluzione può contenere più progetti, ma per ora verranno utilizzate soluzioni che contengono un solo progetto.
 
 1. Sulla barra dei menu scegliere **File** > **Salva tutto**.
 
-     In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, come illustrato nella figura seguente.
+     In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, mostrata nell'immagine seguente.
 
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br/>
-     *Pulsante della barra degli strumenti **Salva tutto***
+     ***Salva tutto*** *pulsante della barra degli strumenti*
 
      In Visual Studio il nome della cartella e il nome del progetto vengono compilati automaticamente. Il progetto viene quindi salvato nella cartella dei progetti.
 
-## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
+## <a name="next-steps"></a>Passaggi successivi
 
-- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).
+* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).
 
-- Per tornare all'argomento introduttivo, vedere [Esercitazione 1: Creare un visualizzatore di immagini](../ide/tutorial-1-create-a-picture-viewer.md).
+* Per tornare all'argomento introduttivo, vedere [Esercitazione 1: Creare un visualizzatore di immagini](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creazione di un nuovo Windows Form](/dotnet/framework/winforms/creating-a-new-windows-form/)
+* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: Creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
