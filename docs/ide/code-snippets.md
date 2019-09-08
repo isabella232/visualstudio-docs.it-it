@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975243"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766260"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -31,7 +31,7 @@ I frammenti di codice sono piccoli blocchi di codice riutilizzabili che possono 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Frammenti di codice (Visual Studio per Mac)](/visualstudio/mac/snippets).
 
-Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti installati disponibili per un linguaggio, aprire **Gestione frammenti di codice** dal menu **Strumenti** in Visual Studio e scegliere il linguaggio nel menu a discesa in alto.
+Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti di codice installati disponibili per una lingua, aprire **Gestione frammenti di codice** dal menu **strumenti** (oppure premere **CTRL**+**K**, **CTRL**+**B**) e scegliere la lingua dalla finestra di menu a discesa nella parte superiore.
 
 ![Finestra di dialogo Gestione frammenti di codice](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ I frammenti di codice sono accessibili nei modi generali seguenti:
 
 - Dal menu di scelta rapida nell'editor del codice scegliere **Frammento** > **Inserisci frammento di codice**
 
-- Dalla tastiera premere **CTRL**+**K**+**X**
+- Dalla tastiera premere **CTRL**+**K**,**CTRL**+**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Frammenti di espansione e frammenti Racchiudi tra
 
@@ -60,7 +60,7 @@ finally
 }
 ```
 
-Per inserire questo frammento di codice, scegliere **Inserisci frammento di codice** dal menu di scelta rapida della finestra del codice, quindi scegliere **Visual C#**, digitare `tryf` e infine premere **TAB**. In alternativa, è possibile digitare `tryf` e premere **TAB** due volte.
+Per inserire questo frammento di codice, scegliere **Inserisci frammento di codice** dal menu di scelta rapida della finestra del codice, quindi scegliere **Visual C#** , digitare `tryf` e infine premere **TAB**. In alternativa, è possibile digitare `tryf` e premere **TAB** due volte.
 
 Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio `return FALSE;`) e quindi si sceglie **Racchiudi tra** > **if**, il frammento viene espanso intorno alla riga:
 
