@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891256"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766117"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -47,7 +47,7 @@ I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 La tabella seguente elenca i parametri di modello riservati che possono essere usati da qualsiasi modello:
 
-|Parametro|DESCRIZIONE|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |clrversion|Versione corrente di Common Language Runtime (CLR).|
 |ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio `ext_safeprojectname`.|
@@ -61,11 +61,11 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |safeitemrootname|Uguale a `safeitemname`.|
 |safeprojectname|Nome specificato dall'utente quando è stato creato il progetto con tutti i caratteri non sicuri e gli spazi rimossi.|
 |time|L'ora corrente nel formato GG/MM/AAAA 00:00:00.|
-|SpecificSolutionName|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `SpecificSolutionName` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `SpecificSolutionName` è vuoto.|
+|specifiedSolutionName|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `specifiedSolutionName` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `specifiedSolutionName` è vuoto.|
 |userdomain|Dominio dell'utente corrente.|
-|nomeutente|Nome dell'utente corrente.|
+|userName|Nome dell'utente corrente.|
 |webnamespace|Nome del sito Web corrente. Questo parametro viene usato nel modello di modulo Web per garantire che i nomi delle classi siano univoci. Se il sito Web si trova nella directory radice del server Web, questo parametro di modello viene risolto nella directory radice del server Web.|
-|anno|L'anno corrente nel formato AAAA.|
+|year|L'anno corrente nel formato AAAA.|
 
 > [!NOTE]
 > I parametri di modello fanno distinzione tra maiuscole e minuscole.
