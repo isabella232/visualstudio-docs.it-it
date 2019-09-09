@@ -1,5 +1,5 @@
 ---
-title: Migrazione di estensibilità di progettazione XAML
+title: Migrazione finestra di progettazione XAML estensibilità
 ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
@@ -9,45 +9,45 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890320"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024552"
 ---
-# <a name="xaml-designer-extensibility-migration"></a>Migrazione di estensibilità di progettazione XAML
+# <a name="xaml-designer-extensibility-migration"></a>Migrazione di estendibilità della finestra di progettazione XAML
 
-In Visual Studio 2019, la finestra di progettazione XAML supporta due architetture diverse: l'architettura di isolamento della finestra di progettazione e l'architettura più recente di isolamento della superficie. Questa transizione di architettura è necessario per supportare il runtime di destinazione che non possono essere ospitato in un processo di .NET Framework. Lo spostamento dell'architettura di isolamento della superficie introduce importanti modifiche al modello di estendibilità di terze parti. Questo articolo illustra le modifiche che sono disponibili nel canale di anteprima di Visual Studio 2019 16,2.
+In Visual Studio 2019, la finestra di progettazione XAML supporta due architetture diverse: l'architettura di isolamento della finestra di progettazione e l'architettura di isolamento della superficie più recente. Questa transizione di architettura è necessaria per supportare i runtime di destinazione che non possono essere ospitati in un processo di .NET Framework. Il passaggio all'architettura di isolamento della superficie introduce modifiche di rilievo al modello di estendibilità di terze parti. Questo articolo descrive queste modifiche, disponibili in Visual Studio 2019 a partire dalla versione 16,3.
 
-**Isolamento della finestra di progettazione** viene usato dalla finestra di progettazione WPF per i progetti destinati a .NET Framework e supporta *. Design. dll* estensioni. Il codice utente, le librerie di controlli e le estensioni di terze parti vengono caricate in un processo esterno (*XDesProc.exe*) con il codice effettivo della finestra di progettazione e i pannelli della finestra di progettazione.
+L' **isolamento della finestra di progettazione** viene utilizzato dalla finestra di progettazione WPF per i progetti destinati a .NET Framework e supporta le estensioni *. Design. dll* . Il codice utente, le librerie di controlli e le estensioni di terze parti vengono caricati in un processo esterno (*XDesProc. exe*) insieme al codice della finestra di progettazione e ai pannelli della finestra di progettazione effettivi.
 
-**Isolamento della superficie di attacco** viene usato dalla finestra di progettazione UWP. Viene inoltre utilizzato dalla finestra di progettazione WPF per i progetti destinati a .NET Core. Nel livello di isolamento della superficie, librerie di codice e il controllo utente unica vengono caricate in un processo separato, mentre la finestra di progettazione e i pannelli vengono caricati nel processo di Visual Studio (*DevEnv.exe*). Il runtime usato per l'esecuzione di librerie di codice e il controllo utente è diverso da quella utilizzata da .NET Framework per la progettazione effettivo e il codice di estendibilità di terze parti.
+L' **isolamento della superficie** viene usato da UWP designer. Viene usato anche da WPF Designer per i progetti destinati a .NET Core. Nell'isolamento della superficie, solo il codice utente e le librerie di controlli vengono caricati in un processo separato, mentre la finestra di progettazione e i relativi pannelli vengono caricati nel processo di Visual Studio (*devenv. exe*). Il runtime utilizzato per l'esecuzione di codice utente e librerie di controlli è diverso da quello utilizzato dal .NET Framework per la finestra di progettazione effettiva e il codice di estendibilità di terze parti.
 
-![migrazione dall'architettura di estendibilità](media/xaml-designer-extensibility-migration-architecture.png)
+![estendibilità-migrazione-architettura](media/xaml-designer-extensibility-migration-architecture.png)
 
-A causa di questa transizione, architettura delle estensioni di terze parti non sono più vengono caricate nello stesso processo come le librerie di controlli di terze parti. Le estensioni non è più possano hanno dipendenze dirette su librerie di controlli o accedere direttamente agli oggetti di runtime. Le estensioni che sono stati precedentemente scritti per l'architettura di isolamento della finestra di progettazione utilizzando il *Microsoft.Windows.Extensibility.dll* API devono essere migrato a un nuovo approccio per lavorare con l'architettura di isolamento della superficie. In pratica, un'estensione esistente dovrà essere compilato con nuovi assembly di API di estendibilità. I tipi di accesso al controllo di runtime tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) o istanze di runtime devono essere sostituite o rimosso poiché le librerie di controlli vengono ora caricate in un altro processo.
+A causa di questa transizione di architettura, le estensioni di terze parti non vengono più caricate nello stesso processo delle librerie di controlli di terze parti. Le estensioni non possono più avere dipendenze dirette da librerie di controlli o accedere direttamente agli oggetti runtime. Le estensioni scritte in precedenza per l'architettura di isolamento della finestra di progettazione tramite l'API *Microsoft. Windows. Extensibility. dll* devono essere migrate a un nuovo approccio per lavorare con l'architettura di isolamento della superficie. In pratica, è necessario compilare un'estensione esistente a fronte di nuovi assembly dell'API di estendibilità. L'accesso ai tipi di controllo di runtime tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) o istanze di runtime deve essere sostituito o rimosso perché le librerie di controlli sono ora caricate in un processo diverso.
 
-## <a name="new-extensibility-api-assemblies"></a>Nuovi assembly di API di estendibilità
+## <a name="new-extensibility-api-assemblies"></a>Nuovi assembly dell'API di estendibilità
 
-I nuovi assembly di API di estendibilità sono simili agli assembly di API di estendibilità esistente ma seguono uno schema di denominazione diversi per distinguerle. Analogamente, dello spazio dei nomi sono stati modificati per riflettere i nuovi nomi di assembly.
+I nuovi assembly dell'API di estensibilità sono simili agli assembly dell'API di estendibilità esistenti, ma seguono uno schema di denominazione diverso per distinguerli. Analogamente, i nomi degli spazi dei nomi sono stati modificati in modo da riflettere i nuovi nomi degli assembly.
 
-| Finestra di progettazione isolamento assembly API            | Assembly di isolamento della superficie API                       |
+| Assembly dell'API di isolamento della finestra di progettazione            | Assembly dell'API di isolamento della superficie                       |
 |:------------------------------------------ |:---------------------------------------------------- |
 | Microsoft.Windows.Design.Extensibility.dll | Microsoft.VisualStudio.DesignTools.Extensibility.dll |
 | Microsoft.Windows.Design.Interaction.dll   | Microsoft.VisualStudio.DesignTools.Interaction.dll   |
 
-## <a name="new-file-extension-and-discovery"></a>Individuazione e nuova estensione di file
+## <a name="new-file-extension-and-discovery"></a>Nuova estensione di file e individuazione
 
-Invece di usare il *. Design. dll* estensione nuova superficie estensioni verranno individuate tramite il *. designtools.dll* estensione di file. *. Design. dll* e *. designtools.dll* estensioni possono trovarsi nella stessa *progettazione* sottocartella.
+Anziché utilizzare l'estensione di file *. Design. dll* , le nuove estensioni di superficie verranno individuate utilizzando l'estensione di file *. DesignTools. dll* . le estensioni *. Design. dll* e *. DesignTools. dll* possono esistere nella stessa sottocartella di *progettazione* .
 
-Mentre le librerie di controlli di terze parti compilate per il runtime di destinazione effettiva (.NET Core o UWP), il *. designtools.dll* estensione deve sempre essere compilata come assembly .NET Framework.
+Mentre le librerie di controllo di terze parti vengono compilate per il runtime di destinazione effettivo (.NET Core o UWP), l'estensione *. DesignTools. dll* deve essere sempre compilata come assembly .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Separare le tabelle degli attributi da tipi di runtime
+## <a name="decouple-attribute-tables-from-runtime-types"></a>Separare le tabelle degli attributi dai tipi di runtime
 
-Non consente il modello di estendibilità della superficie di isolamento per le estensioni a dipendono le librerie di controlli effettivi e di conseguenza, le estensioni non possono fare riferimento ai tipi dalla libreria di controllo. Ad esempio, *MyLibrary.designtools.dll* non deve avere una dipendenza *MyLibrary. dll*.
+Il modello di estendibilità dell'isolamento della superficie non consente alle estensioni di dipendere da librerie di controlli effettive e, pertanto, le estensioni non possono fare riferimento ai tipi dalla libreria di controlli. Ad esempio, *MyLibrary. DesignTools. dll* non deve avere una dipendenza da *MyLibrary. dll*.
 
-Queste dipendenze sono state più comuni durante la registrazione dei metadati per i tipi tramite le tabelle degli attributi. I tipi di codice di estensione che fa riferimento alle libreria di controlli direttamente tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) oppure [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) viene sostituito con le nuove API con i nomi dei tipi basati su stringa:
+Tali dipendenze erano più comuni durante la registrazione dei metadati per i tipi tramite le tabelle degli attributi. Il codice di estensione che fa riferimento ai tipi di libreria di controlli direttamente tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) o [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) viene sostituito nelle nuove API usando nomi di tipo basati su stringa:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -94,7 +94,7 @@ End Class
 
 ## <a name="feature-providers-and-model-api"></a>Provider di funzionalità e API del modello
 
-Provider di funzionalità vengono implementati nell'assembly delle estensioni e caricati nel processo di Visual Studio. `FeatureAttribute` continueranno a fare riferimento ai tipi di provider di funzionalità usando direttamente [typeof](/dotnet/csharp/language-reference/keywords/typeof).
+I provider di funzionalità sono implementati in assembly di estensione e caricati nel processo di Visual Studio. `FeatureAttribute`continuerà a fare riferimento ai tipi di provider di funzionalità direttamente usando [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
 Attualmente sono supportati i provider di funzionalità seguenti:
 
@@ -104,9 +104,9 @@ Attualmente sono supportati i provider di funzionalità seguenti:
 * `ParentAdapter`
 * `PlacementAdapter`
 
-Poiché i provider di funzionalità vengono ora caricati in un processo diverso da librerie di codice e il controllo di runtime effettivo, non sono più in grado di accedere direttamente agli oggetti di runtime. Al contrario, tutte le interazioni di questo tipo devono essere convertite per utilizzare le API basate su modello corrispondente. L'API del modello è stato aggiornato e l'accesso a <xref:System.Type> oppure <xref:System.Object> può essere non è più disponibile o è stato sostituito con `TypeIdentifier` e `TypeDefinition`.
+Poiché i provider di funzionalità sono ora caricati in un processo diverso dalle librerie di controlli e dal codice runtime effettivi, non sono più in grado di accedere direttamente agli oggetti runtime. Al contrario, tutte queste interazioni devono essere convertite in modo da utilizzare le API basate su modello corrispondenti. L'API del modello è stata aggiornata e l'accesso <xref:System.Type> a <xref:System.Object> o non è più disponibile o è stato sostituito con `TypeIdentifier` e `TypeDefinition`.
 
-`TypeIdentifier` rappresenta una stringa senza un nome di assembly che identifica un tipo. Oggetto `TypeIdenfifier` può essere risolta in un `TypeDefinition` per richiedere informazioni aggiuntive sul tipo. `TypeDefinition` non è memorizzabile nella cache le istanze nel codice dell'estensione.
+`TypeIdentifier`rappresenta una stringa senza il nome di un assembly che identifica un tipo. Un `TypeIdenfifier` oggetto può essere risolto in `TypeDefinition` un oggetto per eseguire una query su informazioni aggiuntive sul tipo. `TypeDefinition`le istanze non possono essere memorizzate nella cache nel codice di estensione.
 
 ```csharp
 TypeDefinition type = ModelFactory.ResolveType(
@@ -128,13 +128,13 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-API è stato rimosso dal set di API di estendibilità di superficie isolamento:
+API rimosse dal set di API di estendibilità dell'isolamento della superficie:
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
 
-Le API che usano `TypeIdentifier` invece di <xref:System.Type>:
+API che usano `TypeIdentifier` invece di <xref:System.Type>:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
@@ -150,12 +150,12 @@ Le API che usano `TypeIdentifier` invece di <xref:System.Type>:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-Le API che usano `TypeIdentifier` invece di <xref:System.Type> e non supporterà più argomenti del costruttore:
+Le API che `TypeIdentifier` usano invece <xref:System.Type> di e non supportano più gli argomenti del costruttore:
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-Le API che usano `TypeDefinition` invece di <xref:System.Type>:
+API che usano `TypeDefinition` invece di <xref:System.Type>:
 
 * `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
@@ -173,7 +173,7 @@ Le API che usano `TypeDefinition` invece di <xref:System.Type>:
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
 
-Le API che usano `ModelItem` invece di <xref:System.Object>:
+API che usano `ModelItem` invece di <xref:System.Object>:
 
 * `ModelItemCollection.Insert(int index, object value)`
 * `ModelItemCollection.Remove(object value)`
@@ -182,7 +182,12 @@ Le API che usano `ModelItem` invece di <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Noto come tipi primitivi `Int32`, `String`, o `Thickness` può essere passato all'API del modello come istanze di .NET Framework e verrà convertito in oggetto corrispondente nel processo di runtime di destinazione. Ad esempio:
+Inoltre, `ModelItem` le API `SetValue` come supporteranno solo istanze di tipi primitivi o tipi .NET Framework predefiniti che possono essere convertiti per il runtime di destinazione. Attualmente sono supportati i tipi seguenti:
+
+* Tipi di `Boolean`.NET Framework primitivi: `Char`, `DateTime` `Byte`, `Double`, `Enum`,, ,`Int16` ,,`Int32` ,`SByte` ,, `Guid` `Int64` `Nullable` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* `Brush`Tipi di .NET Framework WPF noti (e tipi derivati): `CornerRadius`, `Duration` `Color`, `CompositeTransform`, `EasingMode`, `EllipseGeometry`, `FontFamily` `EasingFunctionBase`, `GeneralTransform`, `Geometry` ,,, , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
+
+Ad esempio:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -212,10 +217,10 @@ Public Class MyControlDefaultInitializer
 End Class
 ```
 
-Sono disponibili in altri esempi di codice le [finestra di progettazione di xaml-esempi di estendibilità](https://github.com/microsoft/xaml-designer-extensibility-samples) repository.
+Altri esempi di codice sono disponibili nel repository [XAML-Designer-Extensibility-Samples](https://github.com/microsoft/xaml-designer-extensibility-samples) .
 
-## <a name="limited-support-for-designdll-extensions"></a>Supporto limitato per. Design. dll estensioni
+## <a name="limited-support-for-designdll-extensions"></a>Supporto limitato per le estensioni. Design. dll
 
-Eventuale *. designtools.dll* estensione individuata per una libreria di controlli, viene caricata prima e individuazione per *. Design. dll* estensioni viene ignorata.
+Se viene individuata un'estensione *. DesignTools. dll* per una libreria di controlli, viene caricata per prima e l'individuazione delle estensioni *. Design. dll* viene ignorata.
 
-Se nessun *. designtools.dll* sono presenti estensioni, ma un *. Design. dll* estensione viene trovata, il servizio di linguaggio XAML tenta di caricare l'assembly per estrarre le informazioni della tabella di attributi per il supporto editor di base e gli scenari di controllo della proprietà. Questo meccanismo è limitato nell'ambito. Non consente il caricamento delle estensioni di isolamento della finestra di progettazione per l'esecuzione di provider di funzionalità, ma potrebbe offrire il supporto di base per le librerie di controlli WPF esistenti.
+Se non sono presenti estensioni *. DesignTools. dll* , ma viene trovata un'estensione *. Design. dll* , il servizio di linguaggio XAML tenta di caricare l'assembly per estrarre le informazioni della tabella degli attributi per supportare scenari di base di editor e di controllo proprietà. Questo meccanismo è limitato nell'ambito. Non consente il caricamento delle estensioni di isolamento della finestra di progettazione per eseguire i provider di funzionalità, ma potrebbe fornire supporto di base per le librerie di controlli WPF esistenti.

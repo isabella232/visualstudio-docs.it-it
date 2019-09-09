@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 354d1d2fe99fa55bba7f8a00bf3e9f760ff1dbaf
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a0545503b80e2f256593012e06cdf7ccd8b3b5b1
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842180"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547638"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041: Specificare una proprietà ObsoleteAttribute.Message
 
@@ -32,39 +32,39 @@ ms.locfileid: "65842180"
 |TypeName|ProvideObsoleteAttributeMessage|
 |CheckId|CA1041|
 |Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un tipo o membro è contrassegnato utilizzando un <xref:System.ObsoleteAttribute?displayProperty=fullName> attributo che non è relativo <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> proprietà specificata.
+Un tipo o un membro è contrassegnato con un <xref:System.ObsoleteAttribute?displayProperty=fullName> attributo che non ha la relativa <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> proprietà specificata.
 
-Per impostazione predefinita, questa regola cerca solo a tipi e membri visibili esternamente, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo i tipi e i membri visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-<xref:System.ObsoleteAttribute> Consente di contrassegnare i membri e tipi di libreria obsoleto. Consumer della libreria è consigliabile evitare l'uso di qualsiasi tipo o membro che è contrassegnato come obsoleto. Si tratta in quanto potrebbero non essere supportata e verranno infine rimosse dalle versioni successive della libreria. Quando un tipo o il membro contrassegnato utilizzando <xref:System.ObsoleteAttribute> viene compilato, la <xref:System.ObsoleteAttribute.Message%2A> proprietà dell'attributo viene visualizzata. In questo modo vengono fornite le informazioni utente sul tipo o sul membro obsoleto. Queste informazioni includono in genere il tempo di tipo obsoleto o membro sarà supportato per le finestre di progettazione di libreria e la sostituzione preferita da usare.
+<xref:System.ObsoleteAttribute>viene utilizzato per contrassegnare i tipi e i membri della libreria deprecata. I consumer della libreria devono evitare l'uso di qualsiasi tipo o membro contrassegnato come obsoleto. Questo perché potrebbe non essere supportato e verrà rimosso da versioni successive della libreria. Quando un tipo o un membro contrassegnato mediante <xref:System.ObsoleteAttribute> viene compilato, viene <xref:System.ObsoleteAttribute.Message%2A> visualizzata la proprietà dell'attributo. In questo modo vengono fornite le informazioni utente sul tipo o sul membro obsoleto. Queste informazioni includono generalmente per quanto tempo il tipo o il membro obsoleto sarà supportato dalle finestre di progettazione della libreria e dalla sostituzione preferita da usare.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, aggiungere il `message` parametro per il <xref:System.ObsoleteAttribute> costruttore.
+Per correggere una violazione di questa regola, aggiungere il `message` parametro <xref:System.ObsoleteAttribute> al costruttore.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non escludere un avviso da questa regola poiché il <xref:System.ObsoleteAttribute.Message%2A> proprietà fornisce informazioni essenziali di tipo o membro obsoleto.
+Non eliminare un avviso da questa regola perché la <xref:System.ObsoleteAttribute.Message%2A> proprietà fornisce informazioni critiche sul tipo o sul membro obsoleto.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca1041.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente mostra un membro obsoleto che ha dichiarato in modo corretto <xref:System.ObsoleteAttribute>.
+Nell'esempio seguente viene illustrato un membro obsoleto con una dichiarata <xref:System.ObsoleteAttribute>correttamente.
 
 [!code-cpp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CPP/ca1041-provide-obsoleteattribute-message_1.cpp)]
 [!code-csharp[FxCop.Design.ObsoleteAttributeOnMember#1](../code-quality/codesnippet/CSharp/ca1041-provide-obsoleteattribute-message_1.cs)]

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db2961022a6d3a168812b5b85552e21dcd3f9da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842504"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547926"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Le enumerazioni devono avere valore zero
 
@@ -32,41 +32,41 @@ ms.locfileid: "65842504"
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |Category|Microsoft.Design|
-|Modifica importante|Non sostanziale - Quando viene richiesto di aggiungere un **None** in un'enumerazione di flag di non valore. Rilievo - quando viene richiesto di rinominare o rimuovere eventuali valori di enumerazione.|
+|Modifica importante|Senza interruzioni: quando viene richiesto di aggiungere un valore **None** a un'enumerazione non flag. Suddivisione: quando viene richiesto di rinominare o rimuovere i valori di enumerazione.|
 
 ## <a name="cause"></a>Causa
 
-Un'enumerazione senza un applicato <xref:System.FlagsAttribute?displayProperty=fullName> non definisce un membro che ha un valore pari a zero. O, un'enumerazione con un applicato <xref:System.FlagsAttribute> definisce un membro che ha un valore pari a zero, ma non il relativo nome è 'Nessuno'. In alternativa, l'enumerazione definisce più membri con valore zero.
+Un'enumerazione senza applicato <xref:System.FlagsAttribute?displayProperty=fullName> non definisce un membro con un valore pari a zero. In alternativa, un'enumerazione con applicato <xref:System.FlagsAttribute> definisce un membro che ha un valore pari a zero, ma il cui nome non è' none '. In alternativa, l'enumerazione definisce più membri con valore zero.
 
-Per impostazione predefinita, questa regola solo esamina le enumerazioni visibile esternamente, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo le enumerazioni visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Il valore predefinito di un'enumerazione non inizializzata, come altri tipi di valore, è zero. Un'enumerazione senza attributi flag definisce un membro con il valore pari a zero, in modo che il valore predefinito è un valore valido dell'enumerazione. Se appropriato, denominare il membro 'None'. In caso contrario, assegna zero per i membri usati più di frequente. Per impostazione predefinita, se il valore del primo membro di enumerazione non è impostato nella dichiarazione, il relativo valore è zero.
+Il valore predefinito di un'enumerazione non inizializzata, analogamente ad altri tipi di valore, è zero. Un'enumerazione non con attributi di flag deve definire un membro con valore zero, in modo che il valore predefinito sia un valore valido dell'enumerazione. Se appropriato, denominare il membro ' none '. In caso contrario, assegnare zero al membro usato più di frequente. Per impostazione predefinita, se il valore del primo membro di enumerazione non è impostato nella dichiarazione, il valore è zero.
 
-Se un'enumerazione contenente il <xref:System.FlagsAttribute> applicato definisce un membro con valore zero, il relativo nome deve essere 'None' per indicare che è stato impostato alcun valore nell'enumerazione. Utilizzando un membro con valore zero per altri scopi sono contrario all'utilizzo del <xref:System.FlagsAttribute> in quanto l'operatore AND e OR operatori bit per bit sono inutili con il membro. Ciò implica che solo un membro deve essere assegnato il valore zero. Se si verificano più membri con valore zero in un'enumerazione flags con attributi, `Enum.ToString()` restituisce risultati non corretti per i membri che non sono uguali a zero.
+Se un'enumerazione con l'oggetto <xref:System.FlagsAttribute> applicato definisce un membro con valore zero, il nome deve essere ' none ' per indicare che non è stato impostato alcun valore nell'enumerazione. L'uso di un membro a valore zero per qualsiasi altro scopo è contrario all'uso di <xref:System.FlagsAttribute> in quanto gli operatori and e OR bit per bit sono inutili con il membro. Questo implica che a un solo membro deve essere assegnato il valore zero. Se più membri con valore zero si verificano in un'enumerazione con attributi flag, `Enum.ToString()` restituisce risultati non corretti per i membri che non sono zero.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola per le enumerazioni senza attributi flag, definire un membro con il valore pari a 0. si tratta di una modifica non sostanziale. Per le enumerazioni flags con attributi che definiscono un membro con valore zero, nome di questo membro 'None' ed eliminare eventuali altri membri che hanno un valore pari a 0. si tratta di una modifica sostanziale.
+Per correggere una violazione di questa regola per le enumerazioni non con attributi di flag, definire un membro con valore pari a zero; si tratta di una modifica senza interruzioni. Per le enumerazioni con attributi di flag che definiscono un membro con valore zero, denominare il membro ' none ' ed eliminare tutti gli altri membri che hanno un valore pari a zero; si tratta di una modifica di rilievo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non escludere un avviso da questa regola, ad eccezione delle enumerazioni flags attributi fornite in precedenza.
+Non eliminare un avviso da questa regola, ad eccezione delle enumerazioni con attributi di flag precedentemente spedite.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca1008.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente mostra due enumerazioni che soddisfano la regola e un'enumerazione, `BadTraceOptions`, che viola la regola.
+Nell'esempio seguente vengono illustrate due enumerazioni che soddisfano la regola e `BadTraceOptions`un'enumerazione,, che viola la regola.
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -74,10 +74,10 @@ L'esempio seguente mostra due enumerazioni che soddisfano la regola e un'enumera
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712: Prefisso nei valori di enumerazione con il nome di tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028: Archivio di enum deve essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA2217 Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1700 Non denominare i valori enum ' Reserved '](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712 Non anteporre i valori enum al nome del tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028: L'archiviazione enum deve essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 - [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vedere anche

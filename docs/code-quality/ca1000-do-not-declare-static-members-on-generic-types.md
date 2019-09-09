@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f354c8bff7348c6017034acc3449329b2382fe82
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f10433330642ee06dd7f705cdd8e35333cd8a79d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842541"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547918"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Non dichiarare membri statici su tipi generici
 
@@ -35,13 +35,13 @@ ms.locfileid: "65842541"
 
 ## <a name="cause"></a>Causa
 
-Un tipo generico contiene un' `static` (`Shared` in Visual Basic) membri.
+Un tipo generico contiene un `static` membro`Shared` (in Visual Basic).
 
-Per impostazione predefinita, questa regola cerca solo tipi visibili esternamente, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo i tipi visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando un `static` membro di un tipo generico viene chiamato, l'argomento tipo deve essere specificato per il tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. La sintassi per specificare l'argomento di tipo in questi due casi è diversa e può generare confusione, come illustrano le chiamate seguenti:
+Quando viene `static` chiamato un membro di un tipo generico, è necessario specificare l'argomento di tipo per il tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. La sintassi per specificare l'argomento di tipo in questi due casi è diversa e facile da confondere, come illustrato nelle chiamate seguenti:
 
 ```vb
 ' Shared method in a generic type.
@@ -59,35 +59,35 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
-In generale, entrambe le dichiarazioni precedenti devono essere evitati in modo che l'argomento di tipo non deve essere specificato quando viene chiamato il membro. Ciò comporta una sintassi per chiamare i membri nei generics che non confonderla con la sintassi per non generics. Per altre informazioni, vedere [CA1004: I metodi generici devono fornire parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
+In genere, è consigliabile evitare entrambe le dichiarazioni precedenti in modo che l'argomento di tipo non debba essere specificato quando viene chiamato il membro. In questo modo si ottiene una sintassi per chiamare i membri dei generics che non sono diversi dalla sintassi per i tipi non generici. Per ulteriori informazioni, vedere [CA1004: I metodi generici devono fornire](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)il parametro di tipo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, rimuovere il membro statico o modificarlo in un membro di istanza.
+Per correggere una violazione di questa regola, rimuovere il membro statico o impostarlo come membro di istanza.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non escludere un avviso da questa regola. Che fornisce una sintassi facile da comprendere e usare generics riduce il tempo necessario all'apprendimento e aumenta la frequenza di adozione di nuove librerie.
+Non escludere un avviso da questa regola. Fornire generics in una sintassi facile da comprendere e utilizzare riduce il tempo necessario per apprendere e aumentare la velocità di adozione delle nuove librerie.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca1000.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1005: Evitare un numero eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010: Le raccolte devono implementare l'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1002: Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006: Non annidare tipi generici nelle firme dei membri](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004: I metodi generici devono fornire parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1005 Evitare parametri eccessivi nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010 Le raccolte devono implementare un'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1002 Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006 Non annidare tipi generici nelle firme membro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004 I metodi generici devono fornire il parametro di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 - [CA1003: Usare istanze di gestori eventi generici](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA1007: Utilizzare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1007: Usare i generics laddove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841643"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547134"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: I nomi dei parametri devono corrispondere alla dichiarazione di base
 
@@ -32,9 +32,9 @@ ms.locfileid: "65841643"
 
 ## <a name="cause"></a>Causa
 
-Il nome di un parametro in un override del metodo non corrisponde il nome del parametro nella dichiarazione di base del metodo o il nome del parametro nella dichiarazione dell'interfaccia del metodo.
+Il nome di un parametro in un override del metodo non corrisponde al nome del parametro nella dichiarazione di base del metodo o al nome del parametro nella dichiarazione di interfaccia del metodo.
 
-Per impostazione predefinita, questa regola cerca solo a metodi visibili esternamente, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo i metodi visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -42,18 +42,18 @@ Una denominazione coerente dei parametri in una gerarchia di override aumenta la
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, rinominare il parametro in corrispondenza di dichiarazione di base. La correzione è una modifica di rilievo per i metodi visibili a COM.
+Per correggere una violazione di questa regola, rinominare il parametro in modo che corrisponda alla dichiarazione di base. La correzione è una modifica di rilievo per i metodi visibili a COM.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non escludere un avviso da questa regola, ad eccezione di metodi visibili a COM in librerie fornite in precedenza.
+Non eliminare un avviso da questa regola, ad eccezione dei metodi visibili a COM nelle librerie che sono state precedentemente spedite.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).
