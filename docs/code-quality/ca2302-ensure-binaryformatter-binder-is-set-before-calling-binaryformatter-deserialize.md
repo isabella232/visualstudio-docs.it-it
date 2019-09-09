@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2302
 - EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
-ms.openlocfilehash: c833a60d98cbfd7eea3e3b673c7e60c6047a4ae9
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 1d7c87921a226b8918bfaa79fda6de85d710baa4
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083889"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891208"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Assicurarsi che BinaryFormatter.Binder sia impostato prima di chiamare BinaryFormatter.Deserialize
 
@@ -31,32 +31,32 @@ ms.locfileid: "65083889"
 
 ## <a name="cause"></a>Causa
 
-Oggetto <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> metodo di deserializzazione è stato chiamato o cui si fa riferimento e il <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> proprietà può essere null.
+È <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> stato chiamato o fatto riferimento a un metodo di deserializzazione e la <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> proprietà può essere null.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Questa regola individua <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> metodo di deserializzazione chiama o fa riferimento quando la <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> potrebbe essere null. Se si vuole impedire qualsiasi deserializzazione con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> indipendentemente i <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> proprietà, disabilitare questa regola e [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)e abilitare la regola [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
+Questa regola trova <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> le chiamate al metodo di deserializzazione o <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> i riferimenti quando potrebbe essere null. Se si desidera <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> impedire la <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> deserializzazione con indipendentemente dalla proprietà, disabilitare questa regola e [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)e abilitare la regola [ca2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Se possibile, usare invece un serializzatore protetto e **non consente un utente malintenzionato di specificare un tipo arbitrario da deserializzare**. Alcuni serializzatori più sicure includono:
+- Se possibile, usare invece un serializzatore protetto e **non consentire a un utente malintenzionato di specificare un tipo arbitrario da deserializzare**. Alcuni serializzatori più sicuri includono:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Non utilizzare mai <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Se è necessario utilizzare un resolver di tipi, limitare tipi deserializzati da un elenco previsto.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Non usare <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>mai. Se è necessario usare un resolver di tipi, limitare i tipi deserializzati a un elenco previsto.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET - usare TypeNameHandling.None. Se è necessario usare un altro valore per TypeNameHandling, limitare tipi deserializzati a un elenco con un ISerializationBinder personalizzato previsto.
+  - Newtonsoft Json.NET-usare TypeNameHandling. None. Se è necessario usare un altro valore per TypeNameHandling, limitare i tipi deserializzati a un elenco previsto con un ISerializationBinder personalizzato.
   - Buffer del protocollo
-- Rendere la prova di manomissione i dati serializzati. Dopo la serializzazione, firmare crittograficamente i dati serializzati. Prima della deserializzazione, la convalida della firma crittografica. Proteggere la chiave di crittografia dal scoperte e progettazione per le rotazioni delle chiavi.
-- Limitare i tipi deserializzati. Implementare una classe personalizzata <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Prima della deserializzazione con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, impostare il <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> proprietà a un'istanza di personalizzata <xref:System.Runtime.Serialization.SerializationBinder>. In sottoposto a override <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metodo, se il tipo è imprevisto, generare un'eccezione.
-  - Assicurarsi che tutti i percorsi del codice dispongano di <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> set di proprietà.
+- Eseguire la prova di manomissione dei dati serializzati. Dopo la serializzazione, la firma crittografica dei dati serializzati. Prima della deserializzazione, convalidare la firma crittografica. Proteggere la chiave crittografica da divulgare e progettare per le rotazioni delle chiavi.
+- Limitare i tipi deserializzati. Implementare un oggetto <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>personalizzato. Prima di eseguire la deserializzazione <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> , impostare la proprietà su un'istanza <xref:System.Runtime.Serialization.SerializationBinder>di personalizzata. Nel metodo sottoposto <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> a override, se il tipo è imprevisto, generare un'eccezione per arrestare la deserializzazione.
+  - Verificare che la proprietà sia impostata per <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> tutti i percorsi del codice.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 
@@ -231,6 +231,6 @@ End Class
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA2300: Non utilizzare il deserializzatore non sicuro BinaryFormatter](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
+[CA2300: Non usare il deserializzatore non sicuro BinaryFormatter](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
 
-[CA2301: Non chiamare BinaryFormatter senza aver prima impostato BinaryFormatter. Binder](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)
+[CA2301: Non chiamare BinaryFormatter. Deserialize senza prima impostare BinaryFormatter. Binder](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)

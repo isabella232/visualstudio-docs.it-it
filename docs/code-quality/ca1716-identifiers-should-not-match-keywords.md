@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bbb39cadb6a092f71ebd7b3907f34fcc2782ce
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9a51ac9509cf891c05166d46e4b72b862c0dc723
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842046"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547075"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Gli identificatori non devono corrispondere a parole chiave
 
@@ -32,36 +32,36 @@ ms.locfileid: "65842046"
 
 ## <a name="cause"></a>Causa
 
-Il nome di uno spazio dei nomi, tipo, o virtuale o membro di interfaccia corrisponde a una parola chiave riservata in un linguaggio di programmazione.
+Il nome di uno spazio dei nomi, un tipo o un membro virtuale o di interfaccia corrisponde a una parola chiave riservata in un linguaggio di programmazione.
 
-Per impostazione predefinita, questa regola cerca solo a spazi dei nomi visibile esternamente, i tipi e membri, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo gli spazi dei nomi, i tipi e i membri visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Gli identificatori per spazi dei nomi, tipi e virtuali e i membri di interfaccia non devono corrispondere a parole chiave definite da linguaggi destinati a common language runtime. A seconda del linguaggio utilizzato e la parola chiave, le ambiguità e gli errori del compilatore possono rendere difficile da usare la libreria.
+Gli identificatori per gli spazi dei nomi, i tipi e i membri virtuali e di interfaccia non devono corrispondere a parole chiave definite da linguaggi che hanno come destinazione il Common Language Runtime. A seconda del linguaggio usato e della parola chiave, gli errori del compilatore e le ambiguità possono rendere la libreria difficile da usare.
 
-Questa regola consente di controllare con parole chiave nelle seguenti lingue:
+Questa regola consente di controllare le parole chiave nelle seguenti lingue:
 
 - Visual Basic
 - C#
 - C++/CLI
 
-Confronto tra maiuscole e minuscole viene usato per le parole chiave Visual Basic e confronto tra maiuscole e minuscole viene usato per le altre lingue.
+Il confronto senza distinzione tra maiuscole e minuscole viene usato per Visual Basic parole chiave e il confronto con distinzione tra maiuscole e minuscole viene usato per gli altri linguaggi
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Selezionare un nome che non compare nell'elenco di parole chiave.
+Selezionare un nome che non sia presente nell'elenco delle parole chiave.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se vi siate convinti che l'identificatore non confondere gli utenti dell'API e che la libreria sia utilizzabile in tutte le lingue disponibili in .NET.
+È possibile eliminare un avviso da questa regola se si è certi che l'identificatore non confonderà gli utenti dell'API e che la libreria sia utilizzabile in tutte le lingue disponibili in .NET.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca1716.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).

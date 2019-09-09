@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a412161d9f91830486378d4e8228386cfd3fb7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: d71200c6c7fbb61e7994119fde5e75f7623fa669
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841907"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547200"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Le enumerazioni con Flags devono avere nomi plurali
 
@@ -32,40 +32,40 @@ ms.locfileid: "65841907"
 
 ## <a name="cause"></a>Causa
 
-È un'enumerazione di <xref:System.FlagsAttribute?displayProperty=fullName> e il nome non può finire in'.
+Un'enumerazione ha e <xref:System.FlagsAttribute?displayProperty=fullName> il nome non termina con ' s'.
 
-Per impostazione predefinita, questa regola solo esamina le enumerazioni visibile esternamente, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo le enumerazioni visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Tipi contrassegnati con <xref:System.FlagsAttribute> avere nomi plurali perché l'attributo indica che è possibile specificare più valori. Ad esempio, un'enumerazione che definisce i giorni della settimana potrebbe essere destinata all'uso in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione deve avere il <xref:System.FlagsAttribute> e potrebbe essere denominata "Days". Un'enumerazione simile che consenta solo un singolo giorno specificare non include l'attributo e può essere chiamato 'Day'.
+I tipi contrassegnati con <xref:System.FlagsAttribute> hanno nomi plurali perché l'attributo indica che è possibile specificare più di un valore. Ad esempio, un'enumerazione che definisce i giorni della settimana può essere usata in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione deve avere <xref:System.FlagsAttribute> e potrebbe essere chiamata ' Days '. Un'enumerazione simile che consente di specificare solo un singolo giorno non avrà l'attributo e potrebbe essere chiamata ' Day '.
 
-Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Cambiare il nome dell'enumerazione di una parola plurale oppure rimuovere il <xref:System.FlagsAttribute> attributo se non è possibile specificare più valori di enumerazione.
+Rendere il nome dell'enumerazione una parola plurale oppure rimuovere l' <xref:System.FlagsAttribute> attributo se non devono essere specificati contemporaneamente più valori di enumerazione.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare una violazione, se il nome è una parola plurale, ma non termina del '. Ad esempio, se l'enumerazione di più giorni che è stato descritto in precedenza erano denominata "DaysOfTheWeek", questa violerebbe la logica della regola, ma non lo scopo. Tali violazioni devono essere eliminate.
+È possibile evitare una violazione se il nome è una parola plurale ma non termina con ' s'. Se, ad esempio, l'enumerazione di più giorni descritta in precedenza era denominata ' DaysOfTheWeek ', ciò violerebbe la logica della regola, ma non l'intento. Tali violazioni devono essere evitate.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca1714.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (denominazione). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Regole correlate
 
 - [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217 Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:System.FlagsAttribute?displayProperty=fullName>
-- [Progettazione di enum](/dotnet/standard/design-guidelines/enum)
+- [Progettazione enum](/dotnet/standard/design-guidelines/enum)

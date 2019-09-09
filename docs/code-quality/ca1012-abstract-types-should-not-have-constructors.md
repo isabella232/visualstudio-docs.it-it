@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f4023c993a153a64070bfb5e975a6d0f326b65d3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: d8cc63e95792d64fc82dc3ad4af022dc5e9c292b
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842455"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547823"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: I tipi astratti non devono includere costruttori
 
@@ -30,44 +30,44 @@ ms.locfileid: "65842455"
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
 |Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un tipo è astratto e ha un costruttore.
+Un tipo è astratto e contiene un costruttore.
 
-Per impostazione predefinita, questa regola cerca solo tipi visibili esternamente, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo i tipi visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-I costruttori sui tipi astratti possono essere chiamati solo da tipi derivati. Poiché i costruttori pubblici creano istanze di un tipo e non è possibile creare istanze di un tipo astratto, un tipo astratto che ha un costruttore pubblico è progettato in modo non corretto.
+I costruttori sui tipi astratti possono essere chiamati solo da tipi derivati. Poiché i costruttori pubblici creano istanze di un tipo e non è possibile creare istanze di un tipo astratto, un tipo astratto con un costruttore pubblico non è progettato correttamente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, rendere il costruttore protetto o non dichiarare il tipo come astratto.
+Per correggere una violazione di questa regola, rendere il costruttore protetto o non dichiarare il tipo come abstract.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non escludere un avviso da questa regola. Tipo astratto è un costruttore pubblico.
+Non escludere un avviso da questa regola. Il tipo astratto ha un costruttore pubblico.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca1012.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (progettazione). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Esempio
 
-Il frammento di codice seguente contiene un tipo astratto che violano questa regola.
+Il frammento di codice seguente contiene un tipo astratto che viola questa regola.
 
 [!code-vb[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_1.vb)]
 [!code-csharp[FxCop.Design.AbstractTypeBad#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_1.cs)]
 
-Il frammento di codice seguente consente di correggere la violazione di precedente modificando l'accessibilità del costruttore da `public` a `protected`.
+Il seguente frammento di codice corregge la violazione precedente modificando l'accessibilità del `public` costruttore `protected`da a.
 
 [!code-csharp[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/CSharp/ca1012-abstract-types-should-not-have-constructors_2.cs)]
 [!code-vb[FxCop.Design.AbstractTypeGood#1](../code-quality/codesnippet/VisualBasic/ca1012-abstract-types-should-not-have-constructors_2.vb)]

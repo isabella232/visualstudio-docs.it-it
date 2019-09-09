@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5f3bd1dfe66451ceff0b3af334a75aafb2e0b1
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: fafa4782762e18f1ced8c7f929720e995986ac7a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841630"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546874"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231: Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals
 
@@ -36,15 +36,15 @@ ms.locfileid: "65841630"
 
 ## <a name="cause"></a>Causa
 
-Esegue l'override di un tipo di valore <xref:System.Object.Equals%2A?displayProperty=fullName> ma non implementa l'operatore di uguaglianza.
+Un tipo di valore <xref:System.Object.Equals%2A?displayProperty=fullName> esegue l'override di, ma non implementa l'operatore di uguaglianza.
 
-Per impostazione predefinita, questa regola cerca solo tipi visibili esternamente, ma si tratta [configurabile](#configurability).
+Per impostazione predefinita, questa regola esamina solo i tipi visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-La maggior parte dei linguaggi di programmazione, vi è Nessuna implementazione predefinita dell'operatore di uguaglianza (= =) per i tipi di valore. Se il linguaggio di programmazione supporta l'overload dell'operatore, è consigliabile implementare l'operatore di uguaglianza. Deve essere identico a quello del relativo comportamento <xref:System.Object.Equals%2A>.
+Nella maggior parte dei linguaggi di programmazione non esiste alcuna implementazione predefinita dell'operatore di uguaglianza (= =) per i tipi di valore. Se il linguaggio di programmazione supporta gli overload degli operatori, è consigliabile implementare l'operatore di uguaglianza. Il comportamento deve essere identico a quello <xref:System.Object.Equals%2A>di.
 
-È possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione causerà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo di Object. Equals nell'implementazione. Ad esempio:
+Non è possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione provocherà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo Object. Equals nell'implementazione. Ad esempio:
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -64,33 +64,33 @@ return left.Equals(right);
 
 Per correggere una violazione di questa regola, implementare l'operatore di uguaglianza.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola. Tuttavia, è consigliabile fornire l'operatore di uguaglianza se possibile.
+È possibile eliminare un avviso da questa regola in modo sicuro; Tuttavia, se possibile, è consigliabile fornire l'operatore di uguaglianza.
 
 ## <a name="configurability"></a>Configurabilità
 
-Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
+Se questa regola viene eseguita da [analizzatori FxCop](install-fxcop-analyzers.md) (e non con analisi legacy), è possibile configurare le parti della codebase su cui eseguire questa regola, in base all'accessibilità. Ad esempio, per specificare che la regola deve essere eseguita solo sulla superficie dell'API non pubblica, aggiungere la coppia chiave-valore seguente a un file con estensione EditorConfig nel progetto:
 
 ```ini
 dotnet_code_quality.ca2231.api_surface = private, internal
 ```
 
-È possibile configurare questa opzione per questa regola, per tutte le regole o per tutte le regole in questa categoria (utilizzo). Per altre informazioni, vedere [analizzatori FxCop configurare](configure-fxcop-analyzers.md).
+È possibile configurare questa opzione solo per questa regola, per tutte le regole o per tutte le regole in questa categoria (utilizzo). Per altre informazioni, vedere [configurare gli analizzatori FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente definisce un tipo che viola questa regola:
+Nell'esempio seguente viene definito un tipo che viola la regola:
 
 [!code-csharp[FxCop.Usage.EqualsGetHashCode#1](../code-quality/codesnippet/CSharp/ca2231-overload-operator-equals-on-overriding-valuetype-equals_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1046: Non eseguire l'overload dell'operatore di uguaglianza sui tipi di riferimento](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
-- [CA2225: Overload degli operatori hanno alternative con nome](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
-- [CA2226: Gli operatori devono avere overload simmetrici](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-- [CA2224: Override di equals all'overload dell'operatore è uguale a](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Eseguire l'override di GetHashCode all'override di Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA1046: Non eseguire l'overload dell'operatore uguale ai tipi di riferimento](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA2225: Gli overload degli operatori hanno alternative denominate](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+- [CA2226: Gli operatori devono avere Overload simmetrici](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+- [CA2224: Esegue l'override di Equals in un operatore di overload uguale a](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: Eseguire l'override di GetHashCode sull'override di Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
 ## <a name="see-also"></a>Vedere anche
 
