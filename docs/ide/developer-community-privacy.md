@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
-ms.translationtype: HT
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634859"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864672"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -68,8 +68,14 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
 - Log Python, se esistenti
 
-- Uno screenshot, se si sceglie di includerlo
+- Windows Forms log, se esistono
 
+> [!NOTE]
+> I file di log vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report sul problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" (vedere la schermata inclusa in questa nota). I log raccolti vengono archiviati nella cartella% Temp% e vengono puliti regolarmente e dopo ogni caricamento. Se non si desidera includere un log nel report del problema, eliminare il file dalla cartella% Temp% prima di inviare il report.  
+  > ![Segnala un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
+
+- Uno screenshot, se si sceglie di includerlo
+  
 - Registrazione dei dati, se si sceglie di includere una registrazione, che comprende:
 
   - Passi per riprodurre il problema

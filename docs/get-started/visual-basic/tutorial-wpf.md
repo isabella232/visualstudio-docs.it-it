@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7e9269c5de8d95ef66b1633da024c8a46c42758
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180405"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864706"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Esercitazione: Creare un'applicazione semplice con Visual Basic
 
@@ -100,29 +100,23 @@ Dopo aver creato il progetto, sarà possibile personalizzarlo. Nella finestra **
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Cambiare il nome di MainWindow.xaml
 
-Assegnare a MainWindow un nome più specifico.
-
-1. In **Esplora soluzioni**selezionare *MainWindow.xaml*. Verrà visualizzata la finestra **Proprietà**, altrimenti scegliere il menu **Visualizzazione** e l'elemento **Finestra Proprietà**.
-
-1. Cambiare la proprietà **Nome file** in `Greetings.xaml`.
-
-     ![Finestra Proprietà con il nome file evidenziato](../media/exploreide-filenameinpropertieswindow.png)
-
-     **Esplora soluzioni** indica che il nome del file è ora *Greetings.xaml* e che il nome del file di codice annidato è ora *Greetings.xaml.vb*. Questo file di codice è annidato sotto il nodo del file con estensione *xaml*, a indicare che sono strettamente correlati tra loro.
+Assegnare a MainWindow un nome più specifico. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MainWindow. XAML* e scegliere **Rinomina**. Rinominare il file in *Greetings. XAML*.
 
 ## <a name="design-the-user-interface-ui"></a>Progettare l'interfaccia utente
+
+Se la finestra di progettazione non è aperta, selezionare *Greetings. XAML* in **Esplora soluzioni**e premere **MAIUSC**+**F7** per aprire la finestra di progettazione.
 
 Verranno aggiunti tre tipi di controlli all'applicazione: un controllo <xref:System.Windows.Controls.TextBlock>, due controlli <xref:System.Windows.Controls.RadioButton> e un controllo <xref:System.Windows.Controls.Button>.
 
 ### <a name="add-a-textblock-control"></a>Aggiungere un controllo TextBlock
 
-1. Premere **CTRL**+**Q** per attivare la casella di ricerca e digitare **Casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
+1. Premere **CTRL**+**Q** per attivare la casella di ricerca e digitare **casella degli strumenti**. Scegliere **Visualizza > Casella degli strumenti** dall'elenco dei risultati.
 
 2. Nella **casella degli strumenti** espandere il nodo **Controlli WPF comuni** per visualizzare il controllo TextBlock.
 
      ![Casella degli strumenti con il controllo TextBlock evidenziato](../media/exploreide-textblocktoolbox.png)
 
-3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra.
+3. Aggiungere un controllo TextBlock all'area di progettazione scegliendo l'elemento **TextBlock** e trascinandolo nell'area di progettazione nella finestra. Centrare il controllo nella parte superiore della finestra. In Visual Studio 2019 e versioni successive è possibile usare le linee guida rosse per centrare il controllo.
 
 La finestra dovrebbe essere simile a quella illustrata nella figura di seguito.
 
@@ -152,7 +146,7 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
      ![Finestra Casella degli strumenti con il controllo RadioButton selezionato](../media/exploreide-radiobuttontoolbox.png)
 
-2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock.
+2. Aggiungere due controlli RadioButton all'area di progettazione scegliendo l'elemento **RadioButton** e trascinandolo nell'area di progettazione nella finestra. Selezionare i pulsanti e usare i tasti di direzione per spostare i pulsanti in modo che vengano visualizzati affiancati sotto il controllo TextBlock. Usare le linee guida rosse per allineare i controlli.
 
      La finestra dovrebbe risultare simile alla seguente:
 
@@ -168,9 +162,15 @@ Verranno successivamente aggiunti due controlli [RadioButton](/dotnet/framework/
 
 ### <a name="add-display-text-for-each-radio-button"></a>Aggiungere testo visualizzato per ogni pulsante di opzione
 
-1. Nell'area di progettazione aprire il menu di scelta rapida di HelloButton facendo clic con il pulsante destro del mouse su HelloButton, quindi scegliere **Modifica testo** e immettere `Hello`.
+Aggiornare l' **attributo content** per `HelloButton` e `GoodbyeButton` a `"Hello"` e `"Goodbye"` in XAML. Il markup XAML dovrebbe avere un aspetto simile all'esempio seguente:
 
-2. Aprire il menu di scelta rapida per GoodbyeButton facendo clic con il pulsante destro del mouse su GoodbyeButton, quindi scegliere **Modifica testo** e immettere `Goodbye`.
+   ```xaml
+   <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="252,47,0,0" TextWrapping="Wrap" Text="Select a message option and then choose the Display button." VerticalAlignment="Top"/>
+        <RadioButton x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="297,161,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="GoodbyeButton" Content="Goodbye" HorizontalAlignment="Left" Margin="488,161,0,0" VerticalAlignment="Top"/>
+   </Grid>
+   ```
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>Impostare un pulsante di opzione che deve essere selezionato per impostazione predefinita
 
@@ -186,7 +186,7 @@ L'elemento finale dell'interfaccia utente da aggiungere è un controllo [Button]
 
 ### <a name="add-the-button-control"></a>Aggiungere il controllo del pulsante
 
-1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione.
+1. Nella **casella degli strumenti** cercare il controllo **Button** e aggiungerlo all'area di progettazione sotto i controlli RadioButton trascinandolo nel modulo nella visualizzazione Progettazione. Se si usa Visual Studio 2019 o versione successiva, una linea rossa consente di centrare il controllo.
 
 2. Nella visualizzazione XAML modificare il valore di **Contenuto** per il controllo Button da `Content="Button"` a `Content="Display"`, e salvare le modifiche.
 
@@ -205,7 +205,7 @@ Quando l'applicazione è in esecuzione, si apre una finestra di messaggio se si 
      Viene visualizzato il file *Greetings.xaml.vb* con il cursore nell'evento `Button_Click`.
 
     ```vb
-    Private Sub Button_Click_1(sender As Object, e As RoutedEventArgs)
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
 
     End Sub
     ```
@@ -248,7 +248,16 @@ Il file *MainWindow.xaml* è stato rinominato come *Greetings.xaml* all'inizio d
 
 2. Modificare `StartupUri="MainWindow.xaml"` in `StartupUri="Greetings.xaml"`, quindi salvare le modifiche.
 
-Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra **Greetings** dell'applicazione. Chiudere la finestra dell'applicazione per arrestare il debug.
+Avviare nuovamente il debugger premendo **F5**. Viene visualizzata la finestra **Greetings** dell'applicazione.
+
+::: moniker range="vs-2017"
+![Screenshot dell'app in esecuzione](media/exploreide-wpf-running-app.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Screenshot dell'app in esecuzione](media/vs-2019/exploreide-wpf-running-app.png)
+::: moniker-end
+
+ Chiudere la finestra dell'applicazione per arrestare il debug.
 
 ### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
 
@@ -287,6 +296,12 @@ Aggiungendo alcuni punti di interruzione, è possibile testare il codice durante
 10. Chiudere la finestra dell'applicazione per arrestare il debug.
 
 11. Nella barra dei menu scegliere **Debug** > **Disabilita tutti i punti di interruzione**.
+
+### <a name="view-a-representation-of-the-ui-elements"></a>Visualizzazione di una rappresentazione degli elementi dell'interfaccia utente
+
+Nell'app in esecuzione verrà visualizzato un widget visualizzato nella parte superiore della finestra. Si tratta di un helper di runtime che consente di accedere rapidamente ad alcune utili funzionalità di debug. Fare clic sul primo pulsante, **passare a albero elementi visivi attivi**. Verrà visualizzata una finestra con un albero che contiene tutti gli elementi visivi della pagina. Espandere i nodi per trovare i pulsanti aggiunti.
+
+![Screenshot della finestra albero elementi visivi attivi](media/vs-2019/exploreide-live-visual-tree.png)
 
 ### <a name="build-a-release-version-of-the-application"></a>Compilare una versione di rilascio dell'applicazione
 
