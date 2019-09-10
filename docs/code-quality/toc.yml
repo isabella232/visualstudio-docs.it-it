@@ -692,6 +692,8 @@
                   href: ca3011-review-code-for-dll-injection-vulnerabilities.md
                 - name: 'CA3012: Esaminare il codice per verificare la presenza di vulnerabilità di tipo regex injection'
                   href: ca3012-review-code-for-regex-injection-vulnerabilities.md
+                - name: 'CA3061: Non aggiungere lo schema in base all''URL'
+                  href: ca3061.md
                 - name: 'CA3075: Elaborazione DTD non protetta'
                   href: ca3075-insecure-dtd-processing.md
                 - name: 'CA3076: Esecuzione di script XSLT non protetta'
@@ -702,12 +704,30 @@
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
                 - name: 'CA5361: Non disabilitare l''uso della crittografia avanzata in Schannel'
                   href: ca5361.md
+                - name: 'CA5363: Non disabilitare la convalida delle richieste'
+                  href: ca5363.md
                 - name: 'CA5364: Non usare protocolli di sicurezza deprecati'
                   href: ca5364.md
+                - name: 'CA5369: Usa XmlReader per la deserializzazione'
+                  href: ca5369.md
+                - name: 'CA5370: Usare XmlReader per la convalida del lettore'
+                  href: ca5370.md
+                - name: 'CA5371: Usa XmlReader per la lettura dello schema'
+                  href: ca5371.md
+                - name: 'CA5372: Usa XmlReader per XPathDocument'
+                  href: ca5372.md
+                - name: 'CA5373: Non usare la funzione di derivazione di chiave obsoleta'
+                  href: ca5373.md
                 - name: 'CA5378: Non disabilitare ServicePointManagerSecurityProtocols'
                   href: ca5378.md
+                - name: 'CA5380: Non aggiungere certificati all''archivio radice'
+                  href: ca5380.md
+                - name: 'CA5381: Assicurarsi che i certificati non vengano aggiunti all''archivio radice'
+                  href: ca5381.md
                 - name: 'CA5386: Evitare di impostare il valore SecurityProtocolType come hardcoded'
                   href: ca5386.md
+                - name: 'CA5389: Non aggiungere il percorso dell''elemento di archiviazione al percorso del file system di destinazione'
+                  href: ca5389.md
                 - name: 'CA5397: Non usare valori SslProtocols deprecati'
                   href: ca5397.md
                 - name: 'CA5398: Evitare valori SslProtocols hardcoded'
