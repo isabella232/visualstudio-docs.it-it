@@ -116,9 +116,9 @@
             - name: Panoramica
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: 'Passaggio 1: Creare un progetto di Windows Forms Application'
+            - name: 'Passaggio 1: Creare un progetto di app Windows Forms'
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: 'Passaggio 2: Eseguire il programma'
+            - name: 'Passaggio 2: Eseguire l''app'
               href: ../ide/step-2-run-your-program.md
             - name: 'Passaggio 3: Impostare le proprietà del modulo'
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: 'Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi'
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: 'Passaggio 11: Eseguire il programma e provare altre funzionalità'
+            - name: 'Passaggio 11: Eseguire l''app e provare altre funzionalità'
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Esercitazione 2: Creare un quiz matematico a tempo (C#)'
           items:
