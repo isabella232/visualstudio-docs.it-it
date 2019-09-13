@@ -1,5 +1,5 @@
 ---
-title: 'Passaggio 2: Eseguire il programma'
+title: "Passaggio 2: Eseguire l'app visualizzatore immagini"
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12ae2a50b114c34f72f4e25ec52db40fc77943d3
-ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
+ms.openlocfilehash: a6c7e90f8113f5fa03da907db5dbb8f374a564e7
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808795"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887928"
 ---
-# <a name="step-2-run-your-pictureviewer-app"></a>Passaggio 2: Eseguire l'app PictureViewer
+# <a name="step-2-run-your-picture-viewer-app"></a>Passaggio 2: Eseguire l'app visualizzatore immagini
 
-Quando si crea un progetto di applicazione Windows Forms, si compila effettivamente un programma che esegue. In questa esercitazione l'app *PictureViewer* non ha ancora&mdash;molto tempo, anche se sarà. Per il momento, tuttavia, viene visualizzata solo una finestra vuota che mostra **Form1** nella barra del titolo.
+Quando si crea un progetto di app Windows Forms, si compila effettivamente un programma che esegue. In questa esercitazione, l'app visualizzatore immagini non fa ancora&mdash;molto, anche se sarà. Per il momento, viene visualizzata una finestra vuota che mostra **Form1** nella barra del titolo.
 
-Di seguito viene illustrato come eseguire il programma. 
+Ecco come eseguire l'app. 
 
 1. Scegliere uno dei metodi seguenti:
 
@@ -37,17 +37,17 @@ Di seguito viene illustrato come eseguire il programma.
       ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)<br>
       ***Avvia debug*** *pulsante della barra degli strumenti*
 
-1. In Visual Studio viene eseguito il programma e visualizzata una finestra denominata **Form1**. Lo screenshot seguente mostra il programma appena compilato. Il programma è in esecuzione e si aggiungerà a breve.
+1. Visual Studio esegue l'app e viene visualizzata una finestra denominata **Form1** . Lo screenshot seguente mostra l'app appena compilata. L'app è in esecuzione e a breve verrà aggiunta.
 
-     ![Programma applicativo Windows Form in esecuzione](../ide/media/express_firstrun.png)<br>
-***Windows Forms*** *programma applicativo, in esecuzione*
+     ![App Windows Forms in esecuzione](../ide/media/express_firstrun.png)<br>
+***App Windows Forms***, *in esecuzione*
 
-1. Tornare all'Integrated Development Environment di Visual Studio (IDE), quindi osservare la nuova barra degli strumenti. I pulsanti aggiuntivi vengono visualizzati sulla barra degli strumenti quando si esegue un programma. Questi pulsanti consentono di eseguire operazioni quali l'arresto e l'avvio del programma e agevolano il rilevamento di eventuali errori (bug). Per questo esempio viene usato per avviare e arrestare il programma.
+1. Tornare all'Integrated Development Environment di Visual Studio (IDE), quindi osservare la nuova barra degli strumenti. Quando si esegue un'applicazione, vengono visualizzati pulsanti aggiuntivi sulla barra degli strumenti. Questi pulsanti consentono di eseguire operazioni quali l'arresto e l'avvio dell'applicazione e consentono di rilevare eventuali errori (bug). Per questo esempio viene usato per avviare e arrestare l'app.
 
      ![Barra degli strumenti debug](../ide/media/express_debugtoolbar.png)<br>
 ***Debug*** in *barra degli strumenti*
 
-1. Per arrestare il programma, usare uno dei metodi seguenti:
+1. Per arrestare l'app, usare uno dei metodi seguenti:
 
     - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
 
@@ -58,13 +58,13 @@ Di seguito viene illustrato come eseguire il programma.
     - Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
 
     > [!NOTE]
-    > Quando si esegue il programma dall'interno dell'IDE, questo viene chiamato debug perché in genere si esegue questa operazione per individuare e correggere i bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
+    > Quando si esegue l'app dall'interno dell'IDE, viene chiamato debug perché in genere si esegue questa operazione per individuare e correggere i bug (errori) nell'applicazione. Anche se questa app è di piccole dimensioni e non esegue alcuna operazione, è ancora un vero e proprio programma. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
+* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 3: Impostare le proprietà](../ide/step-3-set-your-form-properties.md)** del form.
 
-* Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md).
+* Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto](../ide/step-1-create-a-windows-forms-application-project.md)di app Windows Forms.
 
 ## <a name="see-also"></a>Vedere anche
 

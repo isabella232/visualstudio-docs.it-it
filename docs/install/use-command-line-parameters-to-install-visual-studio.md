@@ -2,7 +2,7 @@
 title: Usare i parametri della riga di comando per installare Visual Studio
 titleSuffix: ''
 description: Informazioni su come usare i parametri della riga di comando per controllare o personalizzare l'installazione di Visual Studio.
-ms.date: 03/30/2019
+ms.date: 09/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951326"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913241"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usare i parametri della riga di comando per installare Visual Studio
 
@@ -32,7 +32,7 @@ Quando si installa Visual Studio da un prompt dei comandi, è possibile usare di
 - Automatizzare il processo di installazione.
 - Creare una cache (layout) dei file di installazione per riutilizzarli in seguito.
 
-Insieme alle opzioni della riga di comando viene usato il programma di bootstrap dell'installazione, ovvero un file di dimensioni ridotte (circa 1 MB) che avvia il processo di download. Il programma di avvio automatico è il primo eseguibile che viene avviato quando si esegue il download dal sito di Visual Studio. Usare i collegamenti seguenti per accedere direttamente al programma di bootstrap della versione più recente per l'edizione del prodotto da installare:
+Le opzioni della riga di comando vengono utilizzate insieme al programma di avvio automatico dell'installazione, ovvero il file piccolo (1 MB) che avvia il processo di download. Il programma di avvio automatico è il primo eseguibile che viene avviato quando si esegue il download dal sito di Visual Studio. Usare i collegamenti seguenti per accedere direttamente al programma di bootstrap della versione più recente per l'edizione del prodotto da installare:
 
 ::: moniker range="vs-2017"
 
@@ -56,7 +56,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 
 > Sintassi: `vs_enterprise.exe [command] <options>...`
 
-(Sostituire `vs_enterprise.exe` con l'edizione del prodotto da installare.
+Sostituire `vs_enterprise.exe` nel modo appropriato per l'edizione del prodotto che si sta installando. In alternativa, è possibile usare `vs_installer.exe`.
 
 >[!TIP]
 > Per altri esempi di utilizzo della riga di comando per l'installazione di Visual Studio, vedere la pagina [Esempi di parametri della riga di comando](command-line-parameter-examples.md).
@@ -112,7 +112,7 @@ Insieme alle opzioni della riga di comando viene usato il programma di bootstrap
 | **Opzioni di installazione avanzate** | **Descrizione** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Facoltativa**: ID del canale per l'istanza da installare. È obbligatorio per il comando di installazione e viene ignorato per gli altri comandi se è specificata l'opzione `--installPath`. |
-| `--channelUri <uri>` | **Facoltativa**: URI del manifesto del canale. Se non si desiderano aggiornamenti, `--channelUri` può puntare a un file inesistente, ad esempio, --channelUri C:\nonesiste.chman. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
+| `--channelUri <uri>` | **Facoltativa**: URI del manifesto del canale. Se gli aggiornamenti non sono desiderati, può puntare a un file inesistente, `--channelUri` ad esempio--URI C:\doesntExist.cHmAn. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
 | `--installChannelUri <uri>` | **Facoltativa**: URI del manifesto del canale da usare per l'installazione. L'URI specificato da `--channelUri` (che deve essere specificato quando si specifica `--installChannelUri`) viene usato per rilevare gli aggiornamenti. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
 | `--installCatalogUri <uri>` | **Facoltativa**: URI del manifesto del catalogo da usare per l'installazione. Se specificato, il gestore del canale prova a scaricare il manifesto del catalogo da questo URI prima di usare l'URI nel manifesto del canale di installazione. Questo parametro viene usato per supportare l'installazione offline, in cui verrà creata la cache di layout con il catalogo dei prodotti già scaricato. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
 | `--productId <id>` | **Facoltativa**: ID del prodotto per l'istanza che verrà installata. Prepopolata nelle condizioni di normale installazione. |
@@ -154,14 +154,7 @@ Per un elenco degli ID di componenti e carichi di lavoro ordinati per prodotto V
 
 A seconda del risultato dell'operazione, la variabile di ambiente `%ERRORLEVEL%` viene impostata su uno dei valori seguenti:
 
-| **Valore** | **Risultato** |
-| --------- | ---------- |
-| 0 | L'operazione è riuscita |
-| 1602 | L'operazione è stata annullata |
-| 3010 | L'operazione è riuscita, ma è necessario riavviare per poter usare l'installazione |
-| 5004 | L'operazione è stata annullata |
-| 5007 | L'operazione è stata bloccata. Il computer non soddisfa i requisiti |
-| Altro | Si è verificata una condizione di errore. Per altre informazioni, vedere i log |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 Durante ogni operazione nella directory `%TEMP%` vengono generati diversi file di log che indicano lo stato di avanzamento dell'installazione. Ordinare la cartella per data e cercare i file che iniziano con `dd_bootstrapper`, `dd_client` e `dd_setup` per individuare quelli che si riferiscono rispettivamente al programma di avvio automatico, all'app del programma di installazione e al motore di installazione.
 

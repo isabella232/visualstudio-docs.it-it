@@ -11,14 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
-ms.translationtype: HT
+ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976770"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913200"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -28,33 +26,51 @@ L'analisi di code coverage può essere applicata sia al codice gestito (CLI) che
 
 Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando Esplora test. Nella tabella dei risultati viene illustrata la percentuale di codice che è stata eseguita per ogni assembly, classe e metodo. Inoltre, nell'editor standard viene visualizzato il codice testato.
 
+::: moniker range="vs-2017"
+
 ![Risultati del code coverage con colorazione](../test/media/codecoverage1.png)
+
+::: moniker-end
 
 ## <a name="requirements"></a>Requisiti
 
 La funzionalità di code coverage è disponibile solo in Visual Studio Enterprise Edition.
 
-## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Per analizzare il code coverage su unit test in Esplora test
+## <a name="analyze-code-coverage"></a>Analizzare il code coverage
 
 ::: moniker range="vs-2017"
+
 1. Scegliere **Analizza code coverage** dal menu **Test**.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-1. In **Esplora test** selezionare **Analizza code coverage** dal menu **Esegui**.
+
+1. In **Esplora test**selezionare **Analizza code coverage per tutti i test** dal menu **Esegui** .
+
+   ![Menu di code coverage analizza in Visual Studio 2019](../test/media/vs-2019/analyze-code-coverage.png)
+
+   Se **Esplora test** non è aperto, aprirlo selezionando **test** > **Esplora test**di **Windows** > oppure premere **CTRL**+**E**,**T**.
+
 ::: moniker-end
 
-2. Per vedere quali righe sono state eseguite, scegliere ![icona Mostra colorazione code coverage](../test/media/codecoverage-showcoloringicon.png) **Mostra colorazione code coverage**.
+2. Al termine dell'esecuzione dei test, per vedere quali righe sono state eseguite, ![scegliere Mostra icona](../test/media/codecoverage-showcoloringicon.png) colorazione code coverage **Mostra colorazione code coverage** nella finestra **Risultati code** coverage. Per impostazione predefinita, il codice coperto da test viene evidenziato in blu chiaro.
 
-   Per modificare i colori o per usare il grassetto, scegliere **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Mostra impostazioni per: Editor di testo**. In **Elementi visualizzati** regolare gli elementi di code coverage.
+   > [!TIP]
+   > Per modificare i colori o per usare il grassetto, **scegliere Strumenti** > **Opzioni** > **ambiente** > **tipi di carattere e colori** > **Mostra impostazioni per: Editor di testo**. In **elementi visualizzati**, modificare le impostazioni per gli elementi "code coverage", ad esempio l' **area non interessata dal code coverage**.
+   >
+   > ![Tipi di carattere e colori di code coverage](media/vs-2019/coverage-fonts-and-colors.png)
 
 3. Se i risultati mostrano un code coverage basso, esaminare quali parti del codice non vengono analizzate e scrivere altri test per includerle nel code coverage. I team di sviluppo in genere mirano a coprire l'80% del code coverage. In alcune situazioni, un code coverage basso è accettabile. Ad esempio, un code coverage basso è accettabile quando il codice viene generato da un modello standard.
 
 > [!TIP]
-> - Assicurarsi che l'ottimizzazione del compilatore sia disattivata
-> - Se si sta usando codice non gestito (nativo), usare una compilazione di debug
-> - Assicurarsi che vengano generati file con estensione pdb (simbolo) per ogni assembly
+> - Disattiva ottimizzazione del compilatore
+> - Se si utilizza codice non gestito (nativo), utilizzare una compilazione di debug
+> - Genera file con estensione pdb (simbolo) per ogni assembly
 
-Se non si ottengono i risultati previsti, vedere [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md). Ricordarsi di eseguire nuovamente il code coverage dopo aver aggiornato il codice. I risultati di code coverage e la colorazione del codice non vengono aggiornati automaticamente dopo aver modificato il codice o quando si eseguono i test.
+Se non si ottengono i risultati previsti, vedere [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md).
+
+Ricordarsi di eseguire nuovamente il code coverage dopo aver aggiornato il codice. I risultati di code coverage e la colorazione del codice non vengono aggiornati automaticamente dopo aver modificato il codice o quando si eseguono i test.
 
 ## <a name="report-in-blocks-or-lines"></a>Report in blocchi o righe
 
@@ -284,7 +300,7 @@ Per eseguire un test dalla riga di comando, usare *vstest.console.exe*. Il code 
 
 Per altre informazioni, vedere [Opzioni della riga di comando di VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Risolvere i problemi
+## <a name="troubleshoot"></a>Risolvere problemi
 
 Se non vengono visualizzati i risultati del code coverage, vedere l'articolo [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md).
 

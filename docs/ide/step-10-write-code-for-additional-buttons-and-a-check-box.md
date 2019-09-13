@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281c98ca52b6dd18ee726e3191d47d6755fd8326
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 9763026a4ef1c219bcb9f5b5270ac5d3b48e2e14
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293614"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887872"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi
 
@@ -30,7 +30,7 @@ Ora si è pronti per completare gli altri quattro metodi. È possibile copiare e
 Con questo codice si aggiungono funzionalità ai pulsanti aggiunti in precedenza. Senza questo codice i pulsanti non eseguono alcuna operazione. I pulsanti utilizzano il codice nei relativi eventi <xref:System.Windows.Forms.Control.Click> (la casella di controllo utilizza l'evento <xref:System.Windows.Forms.CheckBox.CheckedChanged>) per eseguire operazioni diverse quando si attivano i controlli. Ad esempio, l' `clearButton_Click` evento ( `ClearButton_Click`o), che si attiva quando si sceglie il pulsante **Cancella immagine** , cancella l'immagine corrente impostando la relativa proprietà **Image** su **null** (o, **Nothing**). Ogni evento nel codice include commenti che spiegano l'azione eseguita dal codice.
 
 > [!TIP]
-> Procedura consigliata: commentare sempre il codice. I commenti contengono informazioni destinate a una persona ed è consigliabile aggiungerli per rendere comprensibile il codice. Tutto ciò che si trova su una riga di commento viene ignorato dal programma. In C#si commenta una riga digitando due barre all'inizio (//) e in Visual Basic si commenta una riga iniziando con una virgoletta singola (').
+> Procedura consigliata: commentare sempre il codice. I commenti contengono informazioni destinate a una persona ed è consigliabile aggiungerli per rendere comprensibile il codice. Tutto ciò che si trova su una riga di commento viene ignorato dall'app. In C#si commenta una riga digitando due barre all'inizio (//) e in Visual Basic si commenta una riga iniziando con una virgoletta singola (').
 
 ## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Come scrivere codice per pulsanti aggiuntivi e una casella di controllo
 
@@ -44,7 +44,7 @@ Aggiungere il codice seguente al file di codice **Form1** (*Form1.cs* o *Form1.v
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 11: Eseguire il programma e provare altre funzionalità](../ide/step-11-run-your-program-and-try-other-features.md).
+* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 11: Eseguire l'app e provare altre funzionalità](../ide/step-11-run-your-program-and-try-other-features.md).**
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md).
 

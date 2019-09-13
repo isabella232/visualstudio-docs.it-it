@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293571"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913168"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Passaggio 5: Aggiungere controlli al modulo
 
@@ -85,7 +85,7 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 6: Assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md).
+* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 6: Denominare i](../ide/step-6-name-your-button-controls.md)controlli**Button.
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 

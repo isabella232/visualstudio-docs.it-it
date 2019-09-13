@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a0bc67968b7248494a087f06037f72152b53300
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 3595705030e2e969f99455700ab70f36bf22274a
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293625"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887993"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel
 
@@ -93,7 +93,7 @@ In questo passaggio si aggiunge un controllo <xref:System.Windows.Forms.TableLay
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 5: Aggiungere controlli al modulo](../ide/step-5-add-controls-to-your-form.md).
+* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 5: Aggiungere i controlli al form](../ide/step-5-add-controls-to-your-form.md).**
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1506f4303cf5344c4035642cfdd3e42c98396b02
-ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
+ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808781"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913275"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un visualizzatore di immagini
 
@@ -43,7 +43,7 @@ Questa esercitazione illustra le attività seguenti:
 
 * Scrivere metodi per la gestione eventi.
 
-Al termine, il programma dovrebbe essere simile all'immagine seguente:
+Al termine, l'app dovrebbe avere un aspetto simile all'immagine seguente:
 
 ![App visualizzatore immagini creata in questa esercitazione](../ide/media/express_pictureviewerdone.png)
 
@@ -51,17 +51,17 @@ Al termine, il programma dovrebbe essere simile all'immagine seguente:
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md)|Iniziare creando un progetto di applicazione Windows Forms.|
-|[Passaggio 2: Eseguire l'app](../ide/step-2-run-your-program.md)|Eseguire il programma applicativo Windows Forms creato nel passaggio precedente.|
+|[Passaggio 1: Creare un progetto di app Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Per iniziare, creare un progetto di app Windows Forms.|
+|[Passaggio 2: Eseguire l'app visualizzatore immagini](../ide/step-2-run-your-program.md)|Eseguire il progetto di app Windows Forms creato nel passaggio precedente.|
 |[Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md)|Modificare l'aspetto del form usando la finestra **Proprietà**.|
 |[Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Aggiungere un oggetto `TableLayoutPanel` al form.|
 |[Passaggio 5: Aggiungere controlli al modulo](../ide/step-5-add-controls-to-your-form.md)|Aggiungere controlli, ad esempio un controllo `PictureBox` e un controllo `CheckBox`, al form. Aggiungere pulsanti al form.|
 |[Passaggio 6: Assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md)|Rinominare i pulsanti con nomi più significativi.|
 |[Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo](../ide/step-7-add-dialog-components-to-your-form.md)|Aggiungere un componente `OpenFileDialog` e un componente `ColorDialog` al modulo.|
-|[Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Creare codice utilizzando lo strumento IntelliSense.|
+|[Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Scrivere codice utilizzando lo strumento IntelliSense.|
 |[Passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md)|Esaminare e testare il codice. Aggiungere commenti in base alle necessità.|
 |[Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Scrivere codice per far funzionare altri pulsanti e una casella di controllo utilizzando IntelliSense.|
-|[Passaggio 11: Eseguire il programma e provare altre funzionalità](../ide/step-11-run-your-program-and-try-other-features.md)|Eseguire il programma e impostare il colore di sfondo. Provare altre funzionalità, ad esempio la modifica di colori, tipi di carattere e bordi.|
+|[Passaggio 11: Eseguire l'app e provare altre funzionalità](../ide/step-11-run-your-program-and-try-other-features.md)|Eseguire l'app e impostare il colore di sfondo. Provare altre funzionalità, ad esempio la modifica di colori, tipi di carattere e bordi.|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

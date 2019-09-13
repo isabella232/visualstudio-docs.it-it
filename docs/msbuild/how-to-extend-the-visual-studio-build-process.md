@@ -14,26 +14,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba701d123e739bc2dfa24ff798aef5338c51f532
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946095"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913173"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: Estendere il processo di compilazione di Visual Studio
 Il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è definito da una serie di file di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con estensione *targets* che vengono importati nel file di progetto. Uno di questi file importati, *Microsoft.Common.targets*, può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo argomento illustra due metodi che è possibile usare per estendere il processo di compilazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
 
-- Override di specifiche destinazioni predefinite in *Microsoft.Common.targets*.
+- Override di destinazioni predefinite specifiche definite nelle destinazioni comuni (*Microsoft. Common. targets* o i file che importa).
 
-- Override delle proprietà "DependsOn" definite in *Microsoft.Common.targets*.
+- Override delle proprietà "DependsOn" definite nelle destinazioni comuni.
 
 ## <a name="override-predefined-targets"></a>Eseguire l'override di destinazioni predefinite
-Il file *Microsoft.Common.targets* contiene un insieme di destinazioni predefinite vuote che vengono chiamate prima e dopo alcune delle destinazioni più importanti nel processo di compilazione. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ad esempio, chiama la destinazione `BeforeBuild` prima della destinazione `CoreBuild` principale e la destinazione `AfterBuild` dopo la destinazione `CoreBuild`. Per impostazione predefinita, le destinazioni vuote in *Microsoft.Common.targets* non eseguono alcuna operazione, ma è possibile eseguire l'override del comportamento predefinito specificando le destinazioni desiderate in un file di progetto che importa *Microsoft.Common.targets*. Se si esegue l'override delle destinazioni predefinite, è possibile usare le attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per avere un controllo maggiore sul processo di compilazione.
+Le destinazioni comuni contengono un set di destinazioni vuote predefinite che vengono chiamate prima e dopo alcune delle destinazioni principali nel processo di compilazione. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ad esempio, chiama la destinazione `BeforeBuild` prima della destinazione `CoreBuild` principale e la destinazione `AfterBuild` dopo la destinazione `CoreBuild`. Per impostazione predefinita, le destinazioni vuote nelle destinazioni comuni non eseguono alcuna operazione, ma è possibile eseguire l'override del comportamento predefinito definendo le destinazioni desiderate in un file di progetto che importa le destinazioni comuni. Se si esegue l'override delle destinazioni predefinite, è possibile usare le attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per avere un controllo maggiore sul processo di compilazione.
+
+> [!NOTE]
+> I progetti in stile SDK hanno un'importazione implicita di destinazioni *dopo l'ultima riga del file di progetto*. Ciò significa che non è possibile eseguire l'override delle destinazioni predefinite a meno che non si specifichino manualmente le importazioni, come descritto in [procedura: Usare gli SDK](how-to-use-project-sdk.md)di progetto MSBuild.
 
 #### <a name="to-override-a-predefined-target"></a>Per eseguire l'override di una destinazione predefinita
 
-1. In *Microsoft.Common.targets* identificare una destinazione predefinita di cui si vuole eseguire l'override. Nella tabella seguente è riportato l'elenco completo delle destinazioni di cui è possibile eseguire l'override in totale sicurezza.
+1. Identificare una destinazione predefinita nelle destinazioni comuni di cui si vuole eseguire l'override. Nella tabella seguente è riportato l'elenco completo delle destinazioni di cui è possibile eseguire l'override in totale sicurezza.
 
 2. Definire le destinazioni alla fine del file di progetto, immediatamente prima del tag `</Project>`. Ad esempio:
 
@@ -51,9 +54,9 @@ Il file *Microsoft.Common.targets* contiene un insieme di destinazioni predefini
 
 3. Compilare il file di progetto.
 
-Nella tabella seguente sono indicate tutte le destinazioni in *Microsoft.Common.targets* di cui è possibile eseguire l'override in totale sicurezza.
+La tabella seguente mostra tutte le destinazioni nelle destinazioni comuni di cui è possibile eseguire l'override in modo sicuro.
 
-|Nome di destinazione|Description|
+|Nome di destinazione|Descrizione|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il completamento della compilazione principale. La maggior parte delle personalizzazioni avviene in una di queste due destinazioni.|
 |`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:**  le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto, consentendo di aggiungere facilmente eventi di pre e post-compilazione nel file di progetto.|
@@ -66,7 +69,7 @@ Nella tabella seguente sono indicate tutte le destinazioni in *Microsoft.Common.
 ## <a name="override-dependson-properties"></a>Eseguire l'override delle proprietà DependsOn
 L'override delle destinazioni predefinite costituisce uno dei modi più semplici per estendere il processo di compilazione. Tuttavia, poiché [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] valuta la definizione delle destinazioni in modo sequenziale, non è possibile evitare che un altro progetto in cui viene importato il progetto in questione esegua l'override delle destinazioni di cui è già stato eseguito l'override. Di conseguenza, ad esempio, l'ultima destinazione `AfterBuild` definita nel file di progetto, al termine dell'importazione di tutti gli altri progetti, sarà quella usata durante la compilazione.
 
-Per evitare override indesiderati di destinazioni, è possibile eseguire l'override delle proprietà DependsOn usate negli attributi `DependsOnTargets` del file *Microsoft.Common.targets*. Nella destinazione `Build`, ad esempio, il valore dell'attributo `DependsOnTargets` è `"$(BuildDependsOn)"`. Tenere presente quanto segue:
+È possibile proteggere gli override imprevisti delle destinazioni eseguendo l'override delle proprietà DependsOn utilizzate negli attributi nelle `DependsOnTargets` destinazioni comuni. Nella destinazione `Build`, ad esempio, il valore dell'attributo `DependsOnTargets` è `"$(BuildDependsOn)"`. Tenere presente quanto segue:
 
 ```xml
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -107,7 +110,7 @@ I progetti che importano i file di progetto possono eseguire l'override di quest
 
 #### <a name="to-override-a-dependson-property"></a>Per eseguire l'override di una proprietà DependsOn
 
-1. In *Microsoft.Common.targets* identificare una proprietà DependsOn predefinita di cui si vuole eseguire l'override. Nella tabella che segue è riportato un elenco delle proprietà DependsOn comunemente sottoposte a override.
+1. Identificare una proprietà DependsOn predefinita nelle destinazioni comuni di cui si vuole eseguire l'override. Nella tabella che segue è riportato un elenco delle proprietà DependsOn comunemente sottoposte a override.
 
 2. Definire un'altra istanza della proprietà o delle proprietà alla fine del file di progetto. Nella nuova proprietà includere la proprietà originale, ad esempio `$(BuildDependsOn)`.
 
@@ -117,7 +120,7 @@ I progetti che importano i file di progetto possono eseguire l'override di quest
 
 ### <a name="commonly-overridden-dependson-properties"></a>Proprietà DependsOn comunemente sottoposte a override
 
-|Nome della proprietà|Description|
+|Nome proprietà|DESCRIZIONE|
 |-------------------|-----------------|
 |`BuildDependsOn`|Proprietà di cui eseguire l'override se si vuole inserire destinazioni personalizzate prima o dopo l'intero processo di compilazione.|
 |`CleanDependsOn`|Proprietà di cui eseguire l'override se si vuole pulire l'output del processo di compilazione personalizzato.|

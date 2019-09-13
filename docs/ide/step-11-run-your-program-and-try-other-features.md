@@ -1,6 +1,6 @@
 ---
-title: 'Passaggio 11: Eseguire il programma e provare altre funzionalità'
-ms.date: 08/30/2019
+title: "Passaggio 11: Eseguire l'app visualizzatore immagini e provare altre funzionalità"
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5486aa4d2effa3feb03b31bace7a9cfc86fd9925
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293599"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913122"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Passaggio 11: Eseguire il programma e provare altre funzionalità
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Passaggio 11: Eseguire l'app visualizzatore immagini e provare altre funzionalità
 
-Il programma è stato completato ed è pronto per l'esecuzione. È possibile eseguire il programma e impostare il colore di sfondo di <xref:System.Windows.Forms.PictureBox>. Per continuare a esercitarsi, provare a migliorare il programma modificando il colore del form, personalizzando i pulsanti e la casella di controllo e modificando le proprietà del form.
+L'app visualizzatore immagini è stata completata e pronta per l'esecuzione. È possibile eseguire l'app e impostare il colore di sfondo dell' <xref:System.Windows.Forms.PictureBox>oggetto. Per ulteriori informazioni, provare a migliorare l'applicazione modificando il colore del form, personalizzando i pulsanti e la casella di controllo e modificando le proprietà del form.
 
-## <a name="how-to-run-your-program-and-set-the-background-color"></a>Come eseguire il programma e impostare il colore di sfondo
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>Come eseguire l'app e impostare il colore di sfondo
 
 1. Premere **F5** oppure scegliere **Debug** > **Avvia debug** sulla barra dei menu.
 
@@ -38,7 +38,7 @@ Il programma è stato completato ed è pronto per l'esecuzione. È possibile ese
     > [!NOTE]
     > È possibile caricare un'immagine da Internet incollando il relativo URL nella finestra di dialogo **Apri file**. Tentare di trovare un'immagine con uno sfondo trasparente, in modo da visualizzare il colore di sfondo scelto.
 
-1. Scegliere il pulsante **Cancella immagine** per assicurarsi che l'immagine venga cancellata. Uscire quindi dal programma scegliendo il pulsante **Chiudi**.
+1. Scegliere il pulsante **Cancella immagine** per assicurarsi che l'immagine venga cancellata. Uscire quindi dall'app scegliendo il pulsante **Chiudi** .
 
 ## <a name="try-other-features"></a>Provare altre funzionalità
 
@@ -48,7 +48,7 @@ Il programma è stato completato ed è pronto per l'esecuzione. È possibile ese
 
 * Modificare le proprietà **FormBorderStyle** e **ControlBox** del form.
 
-* Usare le proprietà **AcceptButton** e **CancelButton** del modulo, affinché i pulsanti vengano scelti automaticamente quando l'utente preme **INVIO** o **ESC**. Configurare il programma in modo da aprire la finestra di dialogo **Apri file** quando l'utente preme **INVIO** e chiuderla quando l'utente preme **ESC**.
+* Usare le proprietà **AcceptButton** e **CancelButton** del modulo, affinché i pulsanti vengano scelti automaticamente quando l'utente preme **INVIO** o **ESC**. Fare in modo che l'app apra la finestra di dialogo **Apri file** quando l'utente sceglie **invio** e chiude la casella quando l'utente sceglie **ESC**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

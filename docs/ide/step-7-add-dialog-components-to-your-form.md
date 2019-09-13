@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58721610a493283ff0bed8fca9cf6e6f6d668c4d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 402d24ae90c6a7523398b21bfc77eb1b30bdf04f
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293472"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887881"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo
 
-Per consentire al programma di aprire i file di immagine e scegliere un colore di sfondo, in questo passaggio si aggiungono un componente<xref:System.Windows.Forms.OpenFileDialog> e un componente <xref:System.Windows.Forms.ColorDialog> al modulo.
+Per consentire all'app di aprire i file di immagine e scegliere un colore di sfondo, in questo passaggio si <xref:System.Windows.Forms.OpenFileDialog> aggiunge un componente <xref:System.Windows.Forms.ColorDialog> e un componente al form.
 
 Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella degli strumenti** per aggiungere un componente al modulo e si impostano le relative proprietà usando la finestra **Proprietà**. A differenza di un controllo, tuttavia, l'aggiunta di un componente al form non aggiunge un elemento visibile da parte dell'utente sul form. Vengono invece forniti determinati comportamenti che è possibile attivare tramite codice. L'apertura della finestra di dialogo **Apri file** viene eseguita da un componente.
 
@@ -54,7 +54,7 @@ Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella d
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 8: Scrivere il codice per il gestore](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** dell'evento del pulsante Mostra immagine.
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md).
 
