@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2f2ff06cc920568b8c344fef42d01408d3134fd8
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: ce451ecdeb6d196e6520acffb9a6c76add36f5bf
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739310"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913253"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
 
@@ -29,9 +29,9 @@ ms.locfileid: "70739310"
 
 Questa Guida alla risoluzione dei problemi include istruzioni dettagliate per risolvere la maggior parte dei problemi di installazione.
 
-## <a name="troubleshoot-an-online-installation"></a>Risolvere i problemi relativi a un'installazione online
+## <a name="online-installations"></a>Installazioni online
 
-La procedura seguente è ottimizzata per un'installazione online tipica. Per un problema relativo a un'installazione offline, vedere [Come risolvere i problemi di un'installazione offline](#troubleshoot-an-offline-installation).
+La procedura seguente è ottimizzata per un'installazione online tipica. Per un problema relativo a un'installazione offline, vedere [Come risolvere i problemi di un'installazione offline](#offline-installations).
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Passaggio 1: Verificare se il problema è noto
 
@@ -82,7 +82,7 @@ In alcune situazioni, ad esempio quando sono presenti file danneggiati, può ess
 
 ::: moniker range="vs-2017"
 
-1. Raccogliere i log di installazione. Per altre informazioni, vedere [Come ottenere i log di installazione di Visual Studio](#get-installation-logs).
+1. Raccogliere i log di installazione. Per altre informazioni, vedere [Come ottenere i log di installazione di Visual Studio](#installation-logs).
 2. Aprire il programma di installazione di Visual Studio e quindi fare clic su **Segnala un problema** per aprire Visual Studio Feedback Tool.
 ![È possibile usare il pulsante Commenti e suggerimenti per aprire lo strumento di feedback](media/report-a-problem.png)
 3. Specificare un titolo per la segnalazione del problema e fornire i relativi dettagli. Fare clic su **Avanti** per accedere alla sezione **Allegati** e quindi allegare il file di log generato. In genere, il file è disponibile in `%TEMP%\vslogs.zip`.
@@ -92,7 +92,7 @@ In alcune situazioni, ad esempio quando sono presenti file danneggiati, può ess
 
 ::: moniker range="vs-2019"
 
-1. Raccogliere i log di installazione. Per altre informazioni, vedere [Come ottenere i log di installazione di Visual Studio](#get-installation-logs).
+1. Raccogliere i log di installazione. Per altre informazioni, vedere [Come ottenere i log di installazione di Visual Studio](#installation-logs).
 2. Aprire il programma di installazione di Visual Studio e quindi fare clic su **Segnala un problema** per aprire Visual Studio Feedback Tool.
 ![È possibile usare il pulsante Commenti e suggerimenti per aprire lo strumento di feedback](media/vs-2019/vs-installer-report-problem.png)
 3. Specificare un titolo per la segnalazione del problema e fornire i relativi dettagli. Fare clic su **Avanti** per accedere alla sezione **Allegati** e quindi allegare il file di log generato. In genere, il file è disponibile in `%TEMP%\vslogs.zip`.
@@ -112,7 +112,7 @@ Come ultima risorsa, è possibile [rimuovere Visual Studio](remove-visual-studio
 
 Se le procedure indicate sopra non consentono di installare o aggiornare correttamente Visual Studio, è possibile contattare il supporto tecnico tramite l'opzione di supporto [**Chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese) per ottenere ulteriore assistenza.
 
-## <a name="troubleshoot-an-offline-installation"></a>Risolvere i problemi relativi a un'installazione offline
+## <a name="offline-installations"></a>Installazioni offline
 
 Ecco una tabella dei problemi noti e di alcune soluzioni alternative che possono essere utili quando si esegue l'installazione da un layout locale.
 
@@ -121,7 +121,7 @@ Ecco una tabella dei problemi noti e di alcune soluzioni alternative che possono
 | Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo da consentire l'accesso in lettura ad altri utenti *prima* di condividere l'installazione offline. |
 | Non è possibile installare nuovi carichi di lavoro, componenti o lingue.  | `--layout`  | Assicurarsi che sia disponibile l'accesso a Internet se si esegue l'installazione da un layout parziale e si selezionano carichi di lavoro, componenti o lingue non scaricati precedentemente nel layout parziale. |
 
-## <a name="get-installation-logs"></a>Ottenere i log di installazione
+## <a name="installation-logs"></a>Log di installazione
 
 I log di installazione sono necessari per risolvere la maggior parte dei problemi di installazione. Quando si invia un problema mediante l'opzione [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio.md) del programma di installazione di Visual Studio, questi log vengono automaticamente inclusi nel report.
 
@@ -137,7 +137,7 @@ Per raccogliere i log:
 > [!NOTE]
 > Lo strumento deve essere eseguito usando lo stesso account utente con cui è stata eseguita l'installazione che ha avuto esito negativo. Se si esegue lo strumento da un account utente diverso, impostare l'opzione `–user:<name>` in modo da specificare l'account utente con cui è stata eseguita l'installazione che ha avuto esito negativo. Per altre informazioni sull'utilizzo e sulle opzioni disponibili, eseguire `Collect.exe -?` da un prompt dei comandi amministrativo.
 
-## <a name="get-live-help"></a>Ottenere supporto in tempo reale
+## <a name="live-help"></a>Guida in tempo reale
 
 Se le soluzioni fornite in questa Guida alla risoluzione dei problemi non consentono di installare o aggiornare correttamente Visual Studio, è possibile usare l'opzione di supporto [**Chat attiva**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in lingua inglese) per ottenere ulteriore assistenza.
 

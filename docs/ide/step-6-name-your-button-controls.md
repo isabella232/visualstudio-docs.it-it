@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794244bcdb814f78338a119d27ec0b0299023e59
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293497"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887969"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 
@@ -71,14 +71,14 @@ Scheda ***Form1.cs*** *con C# codice*
    > [!IMPORTANT]
    > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-   Si sta esaminando il codice `showButton_Click()` chiamato (in alternativa `ShowButton_Click()`,). È stato aggiunto dall'IDE nel codice del form quando si è aperto il file di codice per il pulsante **showButton** . In fase di progettazione, quando si apre il file di codice per un controllo in un form, il codice, se non esiste già, viene generato per il controllo. Questo codice, noto come *metodo*, viene eseguito quando si esegue il programma e si sceglie il controllo, in questo caso il pulsante **Visualizza immagine** .
+   Si sta esaminando il codice `showButton_Click()` chiamato (in alternativa `ShowButton_Click()`,). È stato aggiunto dall'IDE nel codice del form quando si è aperto il file di codice per il pulsante **showButton** . In fase di progettazione, quando si apre il file di codice per un controllo in un form, il codice, se non esiste già, viene generato per il controllo. Questo codice, noto come *Metodo*, viene eseguito quando si esegue l'app e si sceglie il controllo, in questo caso il pulsante **Visualizza immagine** .
 
 1. Scegliere di nuovo la scheda **Progettazione Windows Form** (**Form1.cs [Progettazione]** ), quindi aprire il file di codice per il pulsante **Cancella immagine** per creare un metodo nel codice del modulo. Ripetere questa operazione per i restanti due pulsanti. L'IDE aggiunge ogni volta un nuovo metodo al file del codice del form.
 
 1. Per aggiungere un altro metodo, aprire il file di codice per il controllo **CheckBox** in **Progettazione Windows Form**, in modo che l'IDE aggiunga un metodo `checkBox1_CheckedChanged()`. Tale metodo viene chiamato ogni volta che l'utente seleziona o deseleziona la casella di controllo.
 
    > [!TIP]
-   > Quando si crea un programma, si passa spesso dall'editor di codice a **Progettazione Windows Form** e viceversa. L'IDE facilita lo spostamento nel progetto. Usare **Esplora soluzioni** per aprire **Progettazione Windows Form** facendo doppio clic su *Form1.cs* in C# o *Form1. vb* in Visual Basic oppure sulla barra dei menu scegliere **Visualizza** > **finestra di progettazione**.
+   > Quando si lavora in un'app, si passa spesso dall'editor di codice a **Progettazione Windows Form**. L'IDE facilita lo spostamento nel progetto. Usare **Esplora soluzioni** per aprire **Progettazione Windows Form** facendo doppio clic su *Form1.cs* in C# o *Form1. vb* in Visual Basic oppure sulla barra dei menu scegliere **Visualizza** > **finestra di progettazione**.
 
     Di seguito viene mostrato il nuovo codice visualizzato nell'editor di codice.
 
@@ -86,7 +86,7 @@ Scheda ***Form1.cs*** *con C# codice*
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
-    I cinque metodi aggiunti sono denominati *gestori di eventi*, perché vengono chiamati dal programma ogni volta che si verifica un evento, ad esempio, quando un utente sceglie un pulsante o seleziona una casella.
+    I cinque metodi aggiunti sono denominati *gestori di eventi*, perché l'applicazione li chiama ogni volta che viene eseguito un evento, ad esempio un utente che sceglie un pulsante o seleziona una casella.
 
     Quando si visualizza il codice per un controllo nell'IDE in fase di progettazione, in Visual Studio viene aggiunto un metodo del gestore eventi per il controllo, se non è presente. Ad esempio, quando si fa doppio clic su un pulsante, l'IDE aggiunge un gestore dell'evento per il relativo evento <xref:System.Windows.Forms.Control.Click>, che viene chiamato ogni volta che l'utente fa clic sul pulsante. Quando si fa doppio clic su una casella di controllo, l'IDE aggiunge un gestore dell'evento per il relativo evento <xref:System.Windows.Forms.CheckBox.CheckedChanged>, che viene chiamato ogni volta che l'utente seleziona o deseleziona la casella.
 
@@ -100,7 +100,7 @@ Scheda ***Form1.cs*** *con C# codice*
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo](../ide/step-7-add-dialog-components-to-your-form.md).
+* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 7: Aggiungere componenti della finestra di dialogo](../ide/step-7-add-dialog-components-to-your-form.md)al form.**
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere controlli al modulo](../ide/step-5-add-controls-to-your-form.md).
 

@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab10700e984f50089a3e66b6b89f449d963fd208
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293547"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887964"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
 
 In questo passaggio si fa in modo che il pulsante **Mostra immagine** funzioni come segue:
 
-- Quando un utente sceglie il pulsante, il programma visualizza una finestra di dialogo <xref:System.Windows.Forms.OpenFileDialog>.
+- Quando un utente sceglie tale pulsante, l'app apre una <xref:System.Windows.Forms.OpenFileDialog> casella.
 
-- Se l'utente apre un file di immagine, tale immagine viene visualizzata nel controllo <xref:System.Windows.Forms.PictureBox>.
+- Se un utente apre un file di immagine, l'app mostra tale immagine in <xref:System.Windows.Forms.PictureBox>.
 
 Nell'IDE è disponibile uno strumento potente denominato IntelliSense che agevola la scrittura del codice. Durante la digitazione del codice, l'IDE apre una casella con i completamenti suggeriti per le parole parziali immesse.
 
@@ -69,7 +69,7 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
  1. Quando si usa un metodo in un controllo o un componente, ovvero si effettua una *chiamata a un metodo*, è necessario aggiungere le parentesi. Immettere quindi le parentesi di apertura e chiusura immediatamente dopo la "g" di `ShowDialog`: `()` Viene visualizzato "openFileDialog1.ShowDialog()".
 
     > [!NOTE]
-    > I metodi sono una parte importante di qualsiasi programma e in questa esercitazione ne sono stati illustrate diverse modalità di utilizzo. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare eseguire operazioni al programma, come quello che si sta compilando, denominato metodo `showButton_Click()`, che apre una finestra di dialogo e un'immagine quando l'utente sceglie un pulsante.
+    > I metodi sono una parte importante di qualsiasi app e in questa esercitazione sono stati illustrati diversi modi per usare i metodi. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare in modo che l'app esegua operazioni, come quella che si sta compilando adesso, denominata `showButton_Click()` metodo, che apre una finestra di dialogo e un'immagine quando un utente sceglie un pulsante.
 
  1. Per C#, aggiungere uno spazio, quindi aggiungere due segni di uguale (`==`). Per Visual Basic, aggiungere uno spazio e quindi usare un solo segno di uguale (`=`). (C# e Visual Basic utilizzano operatori di uguaglianza diversi).
 
@@ -102,7 +102,7 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md).
+* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md).**
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo](../ide/step-7-add-dialog-components-to-your-form.md).
 
