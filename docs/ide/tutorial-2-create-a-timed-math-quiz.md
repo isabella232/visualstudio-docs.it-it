@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293692"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987869"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: Creare un quiz matematico a tempo
 
@@ -31,7 +31,7 @@ In questa esercitazione si compila un quiz dove l'esecutore deve rispondere a qu
 
 - Eseguire operazioni aritmetiche di base nel codice.
 
-Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numeri diversi:
+Al termine, il quiz sarà simile allo screenshot seguente, ad eccezione dei numeri diversi:
 
 ![Quiz matematico con quattro problemi](../ide/media/express_finishedquiz.png)
 
@@ -40,11 +40,11 @@ Al termine, il quiz sarà simile all'immagine riportata di seguito, ma con numer
 Per scaricare una versione completa del quiz, vedere [Complete Math Quiz tutorial sample](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Esercitazione di esempio completa per un quiz matematico).
 
 > [!NOTE]
-> In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.
+> Questa esercitazione illustra sia C# Visual Basic, quindi concentrarsi sulle informazioni specifiche del linguaggio di programmazione che si sta usando.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|DESCRIZIONE|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Passaggio 1: Creare un progetto e aggiungere etichette al modulo](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Iniziare creando il progetto, modificando le proprietà e aggiungendo controlli `Label`.|
 |[Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md)|Creare un problema di addizione e utilizzare la classe `Random` per generare numeri casuali.|

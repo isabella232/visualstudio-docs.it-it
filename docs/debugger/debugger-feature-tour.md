@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679756"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987782"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
@@ -116,6 +116,16 @@ Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'
 
 Per arrestare il debugger e tornare nell'editor del codice premere il pulsante di arresto rosso ![Termina debug](../debugger/media/dbg-tour-stop-debugging.png "Termina debug") anziché **Riavvia**.
 
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Modificare il codice e continuare il debugC#(, VB C++,, XAML)
+
+Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice nel corso di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic sul codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5**, **F10**o **F11** per continuare il debug.
+
+![Debug di modifica e continuazione](../debugger/media/dbg-tips-edit-and-continue.gif "EDITANDCONTINUE")
+
+Per ulteriori informazioni sull'utilizzo della funzionalità e sulle limitazioni delle funzionalità, vedere [modifica e continuazione](../debugger/edit-and-continue.md).
+
+Per modificare il codice XAML durante una sessione di debug, vedere [scrivere ed eseguire il debug di codice XAML in esecuzione con il ricaricamento a caldo di XAML](xaml-hot-reload.md).
+
 ## <a name="inspect-variables-with-data-tips"></a>Esaminare le variabili con i suggerimenti dati
 
 Dopo aver acquisito una conoscenza generale si può iniziare a esaminare lo stato dell'app (variabili) con il debugger. Le funzionalità che consentono di esaminare le variabili sono tra le più utili del debugger e sono disponibili diversi modi per eseguire questa operazione. Quando si prova a eseguire il debug di un problema, spesso si tenta di determinare se le variabili includono i valori previsti in un particolare stato dell'app.
@@ -173,7 +183,7 @@ La finestra **Stack di chiamate** visualizza l'ordine in cui vengono chiamati me
 
 È possibile fare doppio clic su una riga di codice per visualizzare il codice sorgente e modificare anche l'ambito corrente controllato dal debugger. Ciò non determina l'avanzamento del debugger.
 
-È anche possibile usare i menu di scelta rapida nella finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specifiche, riavviare l'app usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Vedere [How to: Esaminare lo stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+È anche possibile usare i menu di scelta rapida nella finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specifiche, riavviare l'app usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Vedere [Procedura: Esaminare lo stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Esaminare un'eccezione
 

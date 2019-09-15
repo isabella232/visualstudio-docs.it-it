@@ -1,28 +1,33 @@
 ---
 title: 'Passaggio 1: Creare un progetto e aggiungere etichette al modulo'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501140"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987958"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
 
 I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del progetto e nell'aggiunta di etichette, di un pulsante e di altri controlli a un modulo. Si impostano inoltre le proprietà di ogni controllo che si desidera aggiungere. Il progetto conterrà il modulo, i controlli e, più avanti nell'esercitazione, il codice. Il pulsante avvia il quiz, le etichette mostrano i problemi del quiz e gli altri controlli mostrano le risposte e il tempo rimanente per completarlo.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. 
+> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Per scaricare una versione completa del codice, vedere l' [esempio di esercitazione completa per i quiz matematici](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-project-for-a-form"></a>Per creare un progetto da un modulo
 
@@ -102,7 +107,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 7. Scegliere il segno più ( **+** ) accanto alla proprietà **Font** e quindi modificare il valore della proprietà **Size** su **15,75**.
 
-     È possibile modificare diverse proprietà del tipo di carattere, come illustrato di seguito.
+     È possibile modificare diverse proprietà del tipo di carattere, come illustrato nella schermata seguente.
 
      ![Finestra Proprietà con la dimensione del carattere](../ide/media/express_setfontsize.png)
 
@@ -150,7 +155,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 16. Modificare il valore della proprietà **(Name)** per il controllo NumericUpDown in **sum**.
 
-     È stata creata la prima riga, come illustrato di seguito.
+     È stata creata la prima riga, come illustrato nella figura seguente.
 
      ![Prima riga del quiz matematico](../ide/media/express_firstrow.png)
 
@@ -200,7 +205,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 7. Impostare il valore della proprietà **TabIndex** per il controllo somma NumericUpDown su **2**, per il controllo differenza su **3**, per il controllo prodotto su **4** e per il controllo quoziente su **5**.
 
-     Il modulo avrà ora il seguente aspetto.
+     Il form dovrebbe essere simile allo screenshot seguente.
 
      ![Form iniziale del quiz matematico](../ide/media/express_formlaidout.png)
 
@@ -208,6 +213,6 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 2: Creare un problema](../ide/step-2-create-a-random-addition-problem.md)** di addizione casuale.
 
 - Per tornare all'argomento introduttivo, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
