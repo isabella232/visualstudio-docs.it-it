@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 516f3d87efd61189a3890f7e83064a96adad7e2d
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 03634b5a2bd1417e75f843fd9026712313f1923d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195227"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987635"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
 
@@ -54,7 +54,7 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 **Abilita i filtri dei punti di interruzione**: Consente di applicare filtri ai punti di interruzione in modo che abbiano effetto solo su determinati processi, thread o computer.
 
-**Usa il nuovo Helper eccezioni**: Abilita il supporto di eccezioni che sostituisce le informazioni sulle eccezioni. (Helper eccezioni è supportato a partire da Visual Studio 2017)
+**Usa il nuovo Helper eccezioni**: Abilita l'helper eccezioni che sostituisce la finestra informazioni sulle eccezioni. (L'helper eccezioni è supportato a partire da Visual Studio 2017)
 
 > [!NOTE]
 > Per codice gestito, questa opzione è stata chiamata precedentemente **Abilita informazioni sulle eccezioni** .
@@ -101,7 +101,7 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 **Abilita il debug JavaScript per ASP.NET (Chrome, Microsoft Edge e Internet Explorer)** : Consente al debugger di script per le app ASP.NET. Al primo utilizzo in Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome che è stato installato. Disabilitare questa opzione per ripristinare il comportamento legacy.
 
-**Abilita strumenti di sviluppo Edge per app JavaScript per la piattaforma UWP (sperimentale)** : Abilita strumenti di sviluppo per le app UWP JavaScript in Microsoft Edge.
+**Abilita strumenti di sviluppo Edge per app JavaScript per la piattaforma UWP (sperimentale)** : Abilita gli strumenti di sviluppo per app UWP JavaScript in Microsoft Edge.
 
 **Abilita il debugger JavaScript legacy di Chrome per ASP.NET**: Consente al debugger di script JavaScript di Chrome legacy per le app ASP.NET. Al primo utilizzo in Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome che è stato installato.
 
@@ -136,7 +136,7 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 
 - **Mostra gli strumenti di runtime nell'applicazione**: Viene illustrato il **albero elementi visivi attivi** comandi in una barra degli strumenti nella finestra principale dell'applicazione XAML in fase di debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.
 
-- **Abilitare la ricarica Hot XAML**: Consente di usare la funzionalità di ricarica hot XAML con il codice XAML quando l'app è in esecuzione. (Questa funzionalità è stato precedentemente chiamata "XAML modifica e continuazione")
+- **Abilita ricaricamento attivo XAML**: Consente di usare la funzionalità di ricaricamento a caldo di XAML con codice XAML quando l'app è in esecuzione. Questa funzionalità era in precedenza denominata "modifica e continuazione XAML".
 
 **Abilita strumenti di diagnostica durante il debug**: Durante il debug viene visualizzata la finestra **Strumenti di diagnostica**.
 
@@ -155,14 +155,14 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 **Chiudi automaticamente la console quando viene arrestato il debug**: Indica a Visual Studio per chiudere la console alla fine di una sessione di debug.
 
 ::: moniker range=">= vs-2019" 
-**Abilita valutazione delle espressioni veloce (solo gestito)** : Consente al debugger di tentare una valutazione più rapida simulando l'esecuzione di semplici proprietà e metodi.
+**Abilita valutazione dell'espressione rapida (solo gestito)** : Consente al debugger di provare più velocemente la valutazione simulando l'esecuzione di semplici metodi e proprietà.
 ::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>Opzioni disponibili nelle versioni precedenti di Visual Studio
 
 Se si usa una versione precedente di Visual Studio, alcune opzioni aggiuntive potrebbero essere presenti.
 
-**Abilita Informazioni sulle eccezioni**: Per codice gestito, Abilita informazioni sulle eccezioni. A partire da Visual Studio 2017, l'Helper eccezioni sostituito informazioni sulle eccezioni.
+**Abilita Informazioni sulle eccezioni**: Per codice gestito, Abilita informazioni sulle eccezioni. A partire da Visual Studio 2017, l'helper eccezioni ha sostituito le informazioni sulle eccezioni.
 
 **Rimuovi stack di chiamate su eccezioni non gestite**: La finestra **Stack di chiamate** esegue il rollback dello stack di chiamate al punto precedente l'eccezione non gestita.
 

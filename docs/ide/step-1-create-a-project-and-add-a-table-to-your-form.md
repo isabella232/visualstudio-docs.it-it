@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: 3b57164938f8256743f314d1c302a24547f6074d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501150"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987803"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -122,9 +122,9 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    > [!NOTE]
    > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL**+**Z** oppure scegliere **Modifica** > **Annulla** sulla barra dei menu.
 
-    Ora il form è strutturato e deve apparire come l'immagine seguente.
+    Ora il form è strutturato Dovrebbe essere simile all'immagine seguente.
 
-    ![Form iniziale del gioco di abbinamenti](../ide/media/express_tut4step1.png)<br/>   Form iniziale del gioco di abbinamenti
+    ![Form iniziale del gioco di abbinamenti](../ide/media/express_tut4step1.png)<br/>*Form iniziale del gioco di abbinamenti*
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 

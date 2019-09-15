@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681584"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936898"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -23,6 +23,13 @@ Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di 
 > Non tutte le sottoscrizioni a un determinato livello sono idonee per ricevere il supporto per eventi imprevisti. Le sottoscrizioni acquisite tramite FTE, NFR, MPN, MCT e altri programmi non ricevono il supporto per eventi imprevisti. Se la sottoscrizione non è idonea per la ricezione del supporto tecnico, il riquadro relativo non verrà visualizzato nei vantaggi disponibili.
 
 **Per inviare una richiesta di supporto tramite il vantaggio, è necessario prima attivarlo.  Seguire i passaggi nella sezione successiva per completare l'attivazione.**
+
+## <a name="supported-products"></a>Prodotti supportati 
+Strumenti di sviluppo come l'IDE di Visual Studio e la Azure DevOps Server riceveranno il supporto principale ed esteso tramite le sottoscrizioni di Visual Studio.
+
+I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati dalle sottoscrizioni di Visual Studio sono idonei solo per il supporto mainstream. Questi prodotti sono concessi in licenza solo per gli ambienti di sviluppo per la progettazione, lo sviluppo, il test e la dimostrazione delle applicazioni. Questi prodotti non sono concessi in licenza per gli ambienti di produzione.
+
+Descrizioni del livello di prodotto: espandere i **piani di supporto non disponibili** se non è possibile usare il piano di supporto per il supporto per il prodotto specificato (codice: 8). Non è possibile usare il contratto di supporto per la versione del prodotto selezionata.
 
 ## <a name="how-to-activate-the-benefit"></a>Come attivare il vantaggio
 1. Passare a https://my.visualstudio.com/Benefits, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat to activate** (Chatta per attivare).
@@ -102,13 +109,13 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 
 ## <a name="eligibility"></a>Idoneità
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Sì|
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Yes|
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 ||
 
 <sup>1</sup> *Include: Imagine Premium, BizSpark. Non include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*

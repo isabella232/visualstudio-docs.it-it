@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni sull'anonimizzazione dei dati dei sottoscrittori quando viene perso l'accesso alle sottoscrizioni.
-ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: d15fce8d5e1a64066a42cea69b770f55c9607f06
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377966"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936919"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimizzazione dei dati del sottoscrittore di Visual Studio
 Quando si verifica un evento che blocca l'uso di un sottoscrittore di una sottoscrizione, ad esempio la scadenza di una sottoscrizione o l'eliminazione dell'account di accesso di un sottoscrittore, le informazioni personali dell'utente, ad esempio il nome e l'account di accesso, vengono criptate per renderle inutilizzabili.  Questa operazione viene eseguita per proteggere le informazioni personali del sottoscrittore.
@@ -36,5 +36,10 @@ R:  No.  L'anonimizzazione è la risposta a un evento che causa la perdita dell'
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>D:  Se l'utente è l'amministratore delle sottoscrizioni dell'organizzazione  Se le informazioni di un sottoscrittore vengono rese anonime, è possibile riassegnare la sottoscrizione a un altro utente?
 R:  Sì. A condizione che la sottoscrizione non sia scaduta, è possibile riassegnarla a un altro sottoscrittore.
 
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>D: Come è possibile impedire a anonimato dei causato dall'eliminazione di un indirizzo di posta elettronica di accesso?
+R:  Esistono due modi per evitare il problema:
+- Distribuire un solo sistema di gestione delle identità, MSA o AAD, ma non entrambi.  
+- Associare le identità AAD e MSA tramite il tenant. 
+
 ## <a name="next-steps"></a>Passaggi successivi
-Scoprire come impedire l'anonimizzazione [collegando le identità MSA e AAD](/azure/active-directory/b2b/add-users-administrator).
+Informazioni su come impedire anonimato dei [associando le identità di MSA e AAD](/azure/active-directory/b2b/add-users-administrator).

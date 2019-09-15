@@ -1,7 +1,12 @@
 ---
 title: 'Passaggio 2: Creare un problema di addizione casuale'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,18 +16,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: d1eee0c161de486740b7576b184f869bffd7fb98
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416885"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987709"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: Creare un problema di addizione casuale
+
 Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di matematica basati su numeri casuali. Viene inoltre creato un metodo denominato `StartTheQuiz()` che completa i problemi e avvia il timer del conto alla rovescia. Più avanti nell'esercitazione si aggiungeranno problemi di sottrazione, moltiplicazione e divisione.
 
 > [!NOTE]
-> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. 
+> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Per scaricare una versione completa del codice, vedere l' [esempio di esercitazione completa per i quiz matematici](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Per creare un problema di addizione casuale
 
@@ -36,6 +44,9 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Al modulo è stato aggiunto un oggetto Random denominato **randomizer**.
 
@@ -60,7 +71,8 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
      Si noti che quando si immette il punto (.) dopo `randomizer` nel codice, viene aperta una finestra di IntelliSense che mostra tutti i metodi dell'oggetto Random che è possibile chiamare. Ad esempio, in IntelliSense è elencato il metodo `Next()`, come indicato di seguito.
 
-     ![Metodo Next](../ide/media/express_randomwhite.png) Metodo Next
+     ![Metodo Next](../ide/media/express_randomwhite.png)<br/>
+*Metodo Next*
 
      Quando si inserisce un punto dopo un oggetto, IntelliSense mostra un elenco dei membri dell'oggetto, ad esempio proprietà, metodi ed eventi.
 
@@ -87,14 +99,15 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
 8. Salvare il codice, eseguirlo e scegliere il pulsante **Avvio**.
 
-     Viene visualizzato un problema di addizione casuale, come illustrato nella figura seguente.
+     Viene visualizzato un problema di addizione casuale, come illustrato nella schermata seguente.
 
-     ![Problema di addizione casuale](../ide/media/express_additionproblem.png) Problema di addizione casuale
+     ![Problema con addizione casuale](../ide/media/express_additionproblem.png)<br/>
+*Problema con addizione casuale*
 
      Nel passaggio successivo dell'esercitazione, verrà aggiunta la somma.
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Aggiungere un timer per il conto alla rovescia](../ide/step-3-add-a-countdown-timer.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 3: Aggiungere un timer](../ide/step-3-add-a-countdown-timer.md)** per il conto alla rovescia.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto e aggiungere etichette al modulo](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

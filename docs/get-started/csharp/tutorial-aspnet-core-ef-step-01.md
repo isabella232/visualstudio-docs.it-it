@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6668648668ab71e033d1341d71ecf5c7c2a47554
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261718"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977457"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Esercitazione: Creare la prima app ASP.NET Core con Entity Framework con Visual Studio 2019
 
@@ -58,7 +58,7 @@ Al termine del download, fare clic su **Esegui** per avviare il programma di ins
 
 ![Visual Studio 2019 - Scegliere i carichi di lavoro](media/vs-2019/vs2019-choose-workloads.png)
 
-## <a name="install"></a>Installazione di
+## <a name="install"></a>Installazione
 
 Fare clic su **Installa** e lasciare che il programma di installazione scarichi e installi Visual Studio.
 
@@ -88,7 +88,7 @@ Si noti che per la maggior parte dei modelli di progetto è anche possibile sceg
 - Account aziendali o dell'istituto di istruzione. Questa opzione usa Active Directory, Azure AD o Office 365 per l'autenticazione.
 - Autenticazione Windows. Adatta per le applicazioni Intranet.
 
-Selezionare il modello di applicazione Web standard con Nessuna autenticazione e fare clic su **OK**.
+Selezionare il modello applicazione Web standard senza autenticazione, quindi fare clic su **Crea**.
 
 ![Visual Studio 2019 - Scegliere le opzioni per il progetto ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

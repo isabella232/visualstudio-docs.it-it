@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887964"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987935"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
 
@@ -42,6 +42,9 @@ IntelliSense tenta di determinare cosa si desidera eseguire successivamente e pa
 1. Digitare `i` nella riga vuota tra le due parentesi graffe `{ }`. In Visual Basic digitare nella riga vuota tra `Private Sub...` e `End Sub`. Viene visualizzata una finestra di **IntelliSense** , come illustrato nella figura seguente.
 
     ![IntelliSense con codice Visual C&#35;](../ide/media/express_ifintellisense.png)
+
+    > [!NOTE]
+    > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase". 
 
 1. La finestra di **IntelliSense** deve evidenziare la `if`parola. In caso contrario, immettere una `f` minuscola per visualizzarla. Si noti che viene visualizzata una casella *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. Anche in Visual Basic la descrizione comando dichiara che si tratta di un frammento, ma con una formulazione leggermente diversa. Poiché si vuole usare il frammento di codice, premere **TAB** per inserire `if` nel codice. Premere quindi di nuovo **TAB** per usare il frammento di codice `if`. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare con il tasto BACKSPACE su `i` e digitare di nuovo. La finestra di **IntelliSense** verrà riaperta.
 

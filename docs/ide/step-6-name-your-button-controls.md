@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887969"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987909"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 
@@ -52,7 +52,7 @@ Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button
 Scheda ***Form1.cs*** *con C# codice*
 
     > [!NOTE]
-    > In alternativa, è possibile che la scheda Form1.cs visualizzi **showButton** come **showButton** .
+    > Il Form1.cs della scheda Form1. vb potrebbe invece visualizzare **showButton** come **showButton** .
 
 1. Concentrare l'attenzione su questa parte del codice.
 
@@ -85,6 +85,9 @@ Scheda ***Form1.cs*** *con C# codice*
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase". 
 
     I cinque metodi aggiunti sono denominati *gestori di eventi*, perché l'applicazione li chiama ogni volta che viene eseguito un evento, ad esempio un utente che sceglie un pulsante o seleziona una casella.
 
