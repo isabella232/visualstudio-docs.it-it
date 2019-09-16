@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: Applicare modifiche in modalità di interruzione con Modifica e Continua
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: Scrivere ed eseguire il debug di codice XAML in esecuzione
-          href: xaml-hot-reload.md
+        - name: Ricaricamento rapido XAML
+          items:
+            - name: Scrivere ed eseguire il debug di codice XAML in esecuzione
+              href: xaml-hot-reload.md
+            - name: Risoluzione dei problemi relativi al ricaricamento rapido XAML
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'Modifica e continuazione non supportate per F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Visualizzare i dati del debugger
