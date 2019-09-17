@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987656"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012610"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio
 
@@ -38,7 +38,7 @@ Il ricaricamento a caldo di XAML è particolarmente utile in questi scenari:
 
 La figura seguente illustra l'uso della struttura ad albero visuale attiva per aprire il codice sorgente e quindi il ricaricamento a caldo di XAML per modificare il testo del pulsante e il colore del pulsante.
 
-![Ricaricamento a caldo di XAML](../debugger/media/xaml-hot-reload-using.gif)
+![Ricaricamento rapido XAML](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
 > Il ricaricamento a caldo in XAML di Visual Studio è attualmente supportato solo quando si esegue l'applicazione in Visual Studio o Blend per Visual Studio con il debugger collegato (**F5** o **avviare il debug**). Non è possibile abilitare questa esperienza utilizzando [Connetti a processo](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) a meno che non si [imposti manualmente una variabile di ambiente](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
@@ -66,4 +66,5 @@ Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Risoluzione dei problemi relativi](xaml-hot-reload-troubleshooting.md)al ricaricamento[a caldo di XAML per Novell. Forms](/xamarin/xamarin-forms/xaml/hot-reload) 
+* [Risoluzione dei problemi relativi al ricaricamento a caldo di XAML](xaml-hot-reload-troubleshooting.md)
+* [Ricaricamento a caldo di XAML per Novell. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
