@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377927"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095305"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
@@ -21,8 +21,8 @@ Per usare il portale, è necessario accedere con l'identità associata alla sott
 
 Il portale è organizzato in sei pagine.  Ogni pagina consente di accedere a diversi prodotti o servizi inclusi nella sottoscrizione.  Le sei pagine sono Vantaggi, Download, Codici Product Key, Abbonamenti, Supporto e Marketplace.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Gli strumenti e i servizi inclusi nella sottoscrizione vengono visualizzati come "riquadri" nella pagina Vantaggi.  Non tutti i vantaggi sono inclusi in tutte le sottoscrizioni. I riquadri sono raggruppati in tre categorie:  Strumenti, Sviluppo professionale e Supporto.  Se si usa Visual Studio Dev Essentials, si noterà anche una categoria intitolata Contenuti che può contenere una selezione di vantaggi dalle altre tre categorie.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+Gli strumenti e i servizi inclusi nella sottoscrizione vengono visualizzati come "riquadri" nella pagina Vantaggi.  Non tutti i vantaggi sono inclusi in tutte le sottoscrizioni. I riquadri sono raggruppati in tre categorie:  Strumenti, Sviluppo professionale e Supporto.  
 
 ### <a name="tools"></a>Strumenti
 Nella categoria Strumenti sono disponibili gli strumenti di sviluppo principali, ad esempio l'IDE di Visual Studio, Azure DevOps e gli strumenti forniti dai partner.  Si noteranno anche servizi come Azure e Visual Studio App Center.
@@ -33,15 +33,15 @@ Questa categoria include vantaggi, come training online da Microsoft e dai partn
 ### <a name="support"></a>Supporto
 Per qualsiasi domanda su Azure  richiedere assistenza alla community di Azure tramite i forum o sfruttare Azure Advisory Chat (anteprima).  È disponibile il servizio Concierge Chat per agevolare la ricerca di documentazione tecnica e informazioni sui prodotti, nonché per assistenza per le domande correlate alle sottoscrizioni.  Alcune sottoscrizioni includono anche servizi di supporto tecnico basati sulle richieste per la risoluzione dei problemi relativi a una vasta gamma di prodotti Microsoft in esecuzione in ambienti di sviluppo e test.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 A seconda della sottoscrizione o del programma disponibile, è possibile accedere a download di software che includono aggiornamenti e patch, una raccolta completa di prodotti correnti, nonché versioni precedenti, in modo da poter testare le app in un'ampia gamma di scenari.
 
 Per semplificare le operazioni per i sottoscrittori che hanno più sottoscrizioni associate a un singolo account, quando si visita la pagina Download, verranno visualizzati i download disponibili per la sottoscrizione di più alto livello.  In questo modo, è possibile visualizzare tutti i download, indipendentemente dalla sottoscrizione in uso.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[Codici Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[Codici Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 Visitare la pagina Codici Product Key per ottenere i codici per installare e attivare i prodotti, nonché per controllare i codici già usati.  È anche possibile esportare un elenco di tutti i codici a scopo di archivio.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Abbonamenti](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[Abbonamenti](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 La pagina Abbonamenti consente di visualizzare le sottoscrizioni di cui si è proprietari, di spostarsi tra le sottoscrizioni, rinnovarle e attivare nuove sottoscrizioni. È anche possibile associare le sottoscrizioni a cui si accede tramite l'account Microsoft a un account alternativo già associato a una versione esistente dell'IDE di Visual Studio, ad Azure DevOps o alle risorse di Azure.
 
 ## <a name="support"></a>Supporto

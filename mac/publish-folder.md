@@ -2,31 +2,31 @@
 title: Pubblicare in una cartella
 ms.date: 04/02/2019
 helpviewer_keywords:
-- deployment, website
+- deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: e22176d2188df92f0956f88c912d48cb9c954dd9
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
-ms.translationtype: HT
+ms.openlocfilehash: 165cfc38b8289946e0966083785defd18ca87d77
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222772"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095411"
 ---
-# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare un'app Web in una cartella usando Visual Studio per Mac
+# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare in una cartella usando Visual Studio per Mac
 
-È possibile usare lo strumento Pubblica per la pubblicazione di app ASP.NET Core in una cartella.
+È possibile usare lo strumento di pubblicazione per pubblicare la console di .NET Core o ASP.NET Core le app in una cartella.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con ASP.NET Core abilitato.
-- Un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con .NET Core abilitato.
+- Una console di .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Pubblicare in una cartella
 
-Con Visual Studio per Mac è possibile pubblicare i progetti ASP.NET Core in una cartella con lo strumento Pubblica. Dopo la pubblicazione in una cartella è possibile trasferire i file nel server Web per spostarli in un ambiente diverso. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
+Con Visual Studio per Mac è possibile pubblicare i progetti .NET Core in una cartella usando lo strumento di pubblicazione. Dopo la pubblicazione in una cartella è possibile trasferire i file in un altro ambiente. Per eseguire la pubblicazione in una cartella attenersi alla procedura seguente.
 
  1. Nel riquadro della soluzione fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 

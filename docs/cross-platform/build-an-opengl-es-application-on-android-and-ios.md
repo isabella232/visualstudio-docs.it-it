@@ -1,7 +1,7 @@
 ---
 title: Compilare un'applicazione OpenGL ES in Android e iOS | Microsoft Docs
 ms.custom: ''
-ms.date: 05/16/2019
+ms.date: 09/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923877"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079268"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Compilare un'applicazione OpenGL ES in Android e iOS
 
@@ -25,17 +25,21 @@ ms.locfileid: "68923877"
 
 ## <a name="requirements"></a>Requisiti
 
-Prima di creare un'app OpenGL ES per iOS e Android, verificare che tutti i requisiti di sistema siano soddisfatti. Se non è già stato fatto, installare il carico di lavoro Sviluppo di applicazioni per dispositivi mobili con C++ nel programma di installazione di Visual Studio. Per sviluppare per iOS, includere gli strumenti di sviluppo per app iOS in C++ facoltativi. Per sviluppare per Android, installare gli strumenti di sviluppo per app Android in C++ e gli strumenti di terze parti richiesti: Android NDK, Apache Ant, l'emulatore Android di Google e Intel Hardware Accelerated Execution Manager. Configurare poi Intel HAXM e l'emulatore Android per l'esecuzione nel sistema. Per altre informazioni e istruzioni dettagliate, vedere [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Per compilare e testare l'app iOS, è necessario un computer Mac, configurato in base alle istruzioni di installazione. Per altre informazioni sulla configurazione per lo sviluppo di iOS, vedere [Installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+Prima di creare un'app OpenGL ES per iOS e Android, verificare che tutti i requisiti di sistema siano soddisfatti. Se non è già stato fatto, installare il carico di lavoro Sviluppo di applicazioni per dispositivi mobili con C++ nel programma di installazione di Visual Studio. Per sviluppare per iOS, includere gli strumenti di sviluppo per app iOS in C++ facoltativi. Per sviluppare per Android, installare gli strumenti di sviluppo per app Android in C++ e gli strumenti di terze parti richiesti: Android NDK, Apache Ant e Google emulatore Android. Per migliorare le prestazioni dell'emulatore sulle piattaforme Intel, è consigliabile installare anche Intel Hardware Accelerated Execution Manager (HAXM). Configurare poi Intel HAXM e l'emulatore Android per l'esecuzione nel sistema. Per altre informazioni e istruzioni dettagliate, vedere [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
+
+Per compilare e testare l'app iOS, è necessario un computer Mac, configurato in base alle istruzioni di installazione. Per altre informazioni sulla configurazione per lo sviluppo di iOS, vedere [Installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Creare un nuovo progetto di applicazione OpenGLES
 
-In questa esercitazione verrà creato un nuovo progetto di applicazione OpenGL ES, quindi verrà compilata ed eseguita l'app predefinita in Visual Studio Emulator per Android. Quindi, l'app per iOS verrà compilata ed eseguita in un dispositivo iOS.
+In questa esercitazione viene innanzitutto creato un nuovo progetto di applicazione OpenGL ES. quindi, compila ed Esegui l'app predefinita in Visual Studio Emulator for Android. Quindi, l'app per iOS verrà compilata ed eseguita in un dispositivo iOS.
 
-1. In Visual Studio scegliere **File** > **Nuovo** > **Progetto**.
+::: moniker range="vs-2017"
 
-1. Nella finestra di dialogo **Nuovo progetto** in **Modelli**scegliere **Visual C++**  > **Multipiattaforma**, quindi scegliere il modello **Applicazione OpenGLES (Android, iOS)** .
+1. In Visual Studio scegliere **file** > **nuovo** > **progetto**.
 
-1. Assegnare all'app un nome come `MyOpenGLESApp`e fare clic su **OK**.
+1. Nella finestra di dialogo **nuovo progetto** , in **modelli**, scegliere **Visual C++**  > **multipiattaforma**, quindi scegliere il modello **applicazione OpenGLES (Android, iOS)** .
+
+1. Assegnare all'app un nome come *MyOpenGLESApp*, quindi scegliere **OK**.
 
    ![Nuovo progetto applicazione OpenGLES](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
@@ -43,7 +47,23 @@ In questa esercitazione verrà creato un nuovo progetto di applicazione OpenGL E
 
    ![MyOpenGLESApp in Esplora soluzioni](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
-   La nuova soluzione di applicazione OpenGL ES include tre progetti di libreria e due progetti di applicazione. La cartella Librerie include un progetto di codice condiviso e due progetti specifici per la piattaforma che fanno riferimento al codice condiviso:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. In Visual Studio scegliere **file** > **nuovo** > **progetto**.
+
+1. Nella finestra di dialogo **Crea un nuovo progetto** selezionare il modello **applicazione OpenGLES (Android, iOS)** , quindi fare clic su **Avanti**.
+
+1. Nella finestra di dialogo **Configura nuovo progetto** immettere un nome, ad esempio *MyOpenGLESApp* , in **nome progetto**, quindi scegliere **Crea**.
+
+   Visual Studio crea la nuova soluzione e apre Esplora soluzioni.
+
+   ![MyOpenGLESApp in Esplora soluzioni](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+
+::: moniker-end
+
+La nuova soluzione di applicazione OpenGL ES include tre progetti di libreria e due progetti di applicazione. La cartella Librerie include un progetto di codice condiviso e due progetti specifici per la piattaforma che fanno riferimento al codice condiviso:
 
 - `MyOpenGLESApp.Android.NativeActivity`, che contiene i riferimenti e il codice glue che implementa l'app come NativeActivity in Android. I punti di ingresso dal codice glue vengono implementati in *main.cpp*, che include il codice condiviso comune in `MyOpenGLESApp.Shared`. Le intestazioni precompilate sono in *pch.h*. Questo progetto di app NativeActivity viene compilato in un file di libreria condivisa (con estensione *so*), selezionato dal progetto `MyOpenGLESApp.Android.Packaging`.
 

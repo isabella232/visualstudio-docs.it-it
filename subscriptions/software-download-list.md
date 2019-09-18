@@ -6,16 +6,16 @@ manager: lank
 ms.date: 12/28/2017
 ms.topic: conceptual
 description: Elenco di download del software inclusi nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 7d6f533189bded975618e7dd65230a23d42b90f5
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: aba0af561559142c186d9bfa5728bd00b6f4d1dc
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377906"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095272"
 ---
 # <a name="what-software-is-available-for-download"></a>Software disponibile per il download
 
-L'[elenco di download del software](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) disponibili dipende dalla sottoscrizione in uso.  Se è disponibile più di una sottoscrizione associata allo stesso indirizzo di accesso, verranno visualizzati i download inclusi nella sottoscrizione di livello più alto, indipendentemente dalla sottoscrizione visualizzata.  Ad esempio, se sono disponibili una sottoscrizione standard di Visual Studio Enterprise e l'appartenenza al programma Visual Studio Dev Essentials, verrà visualizzato l'elenco completo dei download disponibili con la sottoscrizione Enterprise.  Per visualizzare l'elenco delle sottoscrizioni, visitare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
+L'[elenco di download del software](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) disponibili dipende dalla sottoscrizione in uso.  Se è disponibile più di una sottoscrizione associata allo stesso indirizzo di accesso, verranno visualizzati i download inclusi nella sottoscrizione di livello più alto, indipendentemente dalla sottoscrizione visualizzata.  Ad esempio, se si dispone di una sottoscrizione di Visual Studio Enterprise standard e di una sottoscrizione di Visual Studio Professional, viene visualizzato l'elenco completo dei download disponibili con la sottoscrizione Enterprise.  Per visualizzare l'elenco delle sottoscrizioni, visitare [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
 
 Se è già disponibile una sottoscrizione di Visual Studio:
 1. Passare a [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)

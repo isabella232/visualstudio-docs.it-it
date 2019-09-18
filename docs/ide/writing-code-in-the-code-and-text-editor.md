@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531662"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095279"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -39,7 +39,7 @@ I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in 
 |Corrispondenza parentesi graffe|Quando il punto di inserimento viene inserito in una parentesi graffa di apertura in un file di codice, il punto e la parentesi graffa di chiusura vengono evidenziati. Questa funzionalità consente di ottenere un feedback immediato sulle parentesi graffe inserite non correttamente o mancanti. È possibile attivare o disattivare la corrispondenza tra parentesi graffe con l'impostazione **Evidenzia delimitatore automatico** (**Strumenti** > **Opzioni** > **Editor di testo**). È possibile modificare il colore di evidenziazione nell'impostazione **Tipi di carattere e colori** (**Strumenti** > **Opzioni** > **Ambiente**). Cercare **Corrispondenza parentesi (evidenziate)** o **Corrispondenza parentesi (rettangolo)** .|
 |Visualizzatore di struttura|Per facilitare l'individuazione delle coppie di parentesi graffe di apertura e chiusura corrispondenti nel file di codice, vengono visualizzate linee tratteggiate che connettono le parentesi corrispondenti. In questo modo è possibile individuare più rapidamente il codice nella codebase. È possibile attivare o disattivare queste linee nell'opzione **Mostra guide per strutture** nella sezione **Visualizza** della pagina **Strumenti** > **Opzioni** > **Editor di testo** > **Generale**.|
 |Numeri di riga|I numeri di riga possono essere visualizzati nel margine sinistro della finestra del codice. Non vengono visualizzati per impostazione predefinita. È possibile attivare questa opzione nelle impostazioni **Tutti i linguaggi dell'Editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**). È possibile visualizzare i numeri di riga per i singoli linguaggi di programmazione cambiando le impostazioni per i linguaggi (**Strumenti** > **Opzioni** > **Editor di testo** >  **\<linguaggio>** ). Per stampare i numeri di riga, è necessario selezionare **Includi numeri di riga** nella finestra di dialogo **Stampa**.|
-|Rilevamento modifiche|Il colore del margine sinistro consente di tenere traccia delle modifiche apportate al file. Le modifiche apportate dall'apertura del file ma non ancora salvate vengono contrassegnate con una barra gialla nel margine sinistro (noto come margine di selezione). Dopo aver salvato le modifiche, ma prima di chiudere il file, la barra diventa verde. Se si annulla una modifica dopo aver salvato il file, la barra diventa arancione. Per attivare e disattivare questa funzionalità, modificare l'opzione **Revisioni** nelle impostazioni **Editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo**).|
+|Change Tracking|Il colore del margine sinistro consente di tenere traccia delle modifiche apportate al file. Le modifiche apportate dall'apertura del file ma non ancora salvate vengono contrassegnate con una barra gialla nel margine sinistro (noto come margine di selezione). Dopo aver salvato le modifiche, ma prima di chiudere il file, la barra diventa verde. Se si annulla una modifica dopo aver salvato il file, la barra diventa arancione. Per attivare e disattivare questa funzionalità, modificare l'opzione **Revisioni** nelle impostazioni **Editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo**).|
 |Selezione di codice e testo|È possibile selezionare il testo con la modalità standard a flusso continuo oppure con la modalità riquadro, in cui non viene selezionato un set di righe, ma una porzione rettangolare di testo. Per effettuare una selezione in modalità riquadro, premere **ALT** mentre si trascina il mouse sulla selezione oppure premere **ALT**+**MAIUSC**+ **\<tasto di direzione>** . La selezione include tutti i caratteri nel rettangolo definiti dal primo e dall'ultimo carattere nella selezione. Tutto ciò che viene digitato o incollato nell'area selezionata viene inserito nello stesso punto di ogni riga.|
 |Zoom|È possibile ingrandire o ridurre qualsiasi finestra del codice tenendo premuto il tasto **CTRL** e muovendo la rotellina del mouse (oppure **CTRL**+**MAIUSC**+ **.** per ingrandire e **CTRL**+**MAIUSC**+ **,** per ridurre). Per impostare una specifica percentuale di zoom, è anche possibile usare la casella **Zoom** nell'angolo in basso a sinistra della finestra del codice. La funzionalità di zoom non funziona nelle finestre degli strumenti.|
 |Spazio virtuale|Per impostazione predefinita, le righe nell'editor di Visual Studio terminano dopo l'ultimo carattere, quindi il tasto **freccia DESTRA** alla fine della riga sposta il cursore all'inizio della riga successiva. In altri editor, una riga non termina dopo l'ultimo carattere ed è possibile posizionare il cursore in qualsiasi punto della riga. È possibile abilitare lo spazio virtuale nell'editor nelle impostazioni **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**. È possibile abilitare **Spazio virtuale** o **A capo automatico**, ma non entrambi.|
@@ -90,6 +90,6 @@ Per le opzioni dell'editor specifiche per JavaScript, vedere le [opzioni dell'ed
 
 - [Editor standard (Visual Studio per Mac)](/visualstudio/mac/source-editor)
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
-- [Introduzione a C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Introduzione a C++ in Visual Studio](/cpp/get-started/tutorial-console-cpp)
 - [Introduzione a C# e ad ASP.NET Core in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 - [Introduzione a Python in Visual Studio](../ide/quickstart-python.md)

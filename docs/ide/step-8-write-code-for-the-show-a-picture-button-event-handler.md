@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987935"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062861"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
 
@@ -44,7 +44,7 @@ IntelliSense tenta di determinare cosa si desidera eseguire successivamente e pa
     ![IntelliSense con codice Visual C&#35;](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
-    > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase". 
+    > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase".
 
 1. La finestra di **IntelliSense** deve evidenziare la `if`parola. In caso contrario, immettere una `f` minuscola per visualizzarla. Si noti che viene visualizzata una casella *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. Anche in Visual Basic la descrizione comando dichiara che si tratta di un frammento, ma con una formulazione leggermente diversa. Poiché si vuole usare il frammento di codice, premere **TAB** per inserire `if` nel codice. Premere quindi di nuovo **TAB** per usare il frammento di codice `if`. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare con il tasto BACKSPACE su `i` e digitare di nuovo. La finestra di **IntelliSense** verrà riaperta.
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926548"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079589"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
@@ -56,6 +56,8 @@ Spiegazione&mdash;Il motore di code coverage richiede che ogni assembly abbia un
 Il file con estensione *pdb* deve essere generato dalla stessa compilazione dei file con estensione *dll* o *exe*.
 
 Risoluzione&mdash;Verificare che le impostazioni di compilazione generino il file con estensione *pdb*. Se i file con estensione *pdb* non vengono aggiornati quando viene compilato il progetto, aprire le proprietà del progetto, selezionare la pagina **Compila**, scegliere **Avanzate** e controllare **Informazioni di debug**.
+
+Per C++ i progetti, verificare che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che il**debug** > del **linker** > **genera informazioni di debug** sia impostato su **genera informazioni di debug ottimizzate per la condivisione e la pubblicazione (/debug: Full)** .
 
 Se i file con estensione *pdb* e *dll* o *exe* sono in posizioni diverse, copiare il file con estensione *pdb* nella stessa directory. È inoltre possibile configurare il motore di code coverage per cercare i file con estensione *pdb* in un'altra posizione. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 

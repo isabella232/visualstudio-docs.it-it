@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dab237eeb99f4d4d67652dba583bf9851b6d6175
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180459"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095376"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
 
@@ -178,3 +178,8 @@ L'esercitazione è stata completata. Ci auguriamo che l'articolo sia stato utile
 
 > [!div class="nextstepaction"]
 > [Create a user interface](/windows/uwp/design/basics/xaml-basics-ui) (Creare un'interfaccia utente)
+
+## <a name="see-also"></a>Vedere anche
+
+- [Panoramica di UWP](/windows/uwp/get-started/universal-application-platform-guide)
+- [Ottenere gli esempi di app UWP](/windows/uwp/get-started/get-uwp-app-samples)
