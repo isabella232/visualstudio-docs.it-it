@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/10/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 79d16498b146a09f22d542423d4b691a2573e80d
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: f489d453e75031ddb9bd26e59cd4af182301c159
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888002"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062380"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,6 +29,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Version**| **Canale** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Preview 4 | 16 settembre 2019 | 16.3.29311.281 |
 | 16.2.5 | Versione | 10 settembre 2019 | 16.2.29306.81 |
 | 16.0.8 | Versione | 10 settembre 2019 | 16.0.28803.584 |
 | 16.2.4 | Versione | 5 settembre 2019 | 16.2.29230.47 |
