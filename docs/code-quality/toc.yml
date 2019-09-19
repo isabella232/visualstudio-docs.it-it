@@ -332,8 +332,17 @@
                   href: ca1064-exceptions-should-be-public.md
                 - name: 'CA1065: Non generare eccezioni in posizioni non previste'
                   href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
+                - name: 'CA1068: I parametri CancellationToken devono essere indicati per ultimi'
+                  href: ca1068.md
                 - name: 'CA2210: Gli assembly devono avere nomi sicuri validi'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
+            - name: Avvisi della documentazione
+              items:
+                - name: Panoramica
+                  displayName: documentation warnings
+                  href: documentation-warnings.md
+                - name: 'CA1200: Evitare l''uso di tag cref con un prefisso'
+                  href: ca1200.md
             - name: Avvisi di globalizzazione
               items:
                 - name: Panoramica
@@ -514,6 +523,8 @@
                   href: ca1823-avoid-unused-private-fields.md
                 - name: 'CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute'
                   href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                - name: 'CA1825: Evitare allocazioni di matrici di lunghezza zero'
+                  href: ca1825.md
             - name: Avvisi di portabilità
               items:
                 - name: Panoramica
@@ -1030,7 +1041,7 @@
           href: c26812.md
         - name: C26814
           href: c26814.md
-    - name: Avvisi C/C++
+    - name: avvisi C/C++
       items:
         - name: Panoramica
           displayName: C++ warnings
