@@ -17,19 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033033"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128300"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU
-È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare la scheda **Utilizzo CPU** della finestra Strumenti di diagnostica per ottenere i dati relativi alle prestazioni per l'applicazione. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
+
+È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare la scheda **Utilizzo CPU** della finestra Strumenti di diagnostica per ottenere i dati relativi alle prestazioni per l'applicazione.
 
 Durante le pause del debug, lo strumento **Utilizzo CPU** raccoglie informazioni sulle funzioni in esecuzione nell'applicazione. Vengono indicate le funzioni che stavano eseguendo un'operazione e un grafico della sequenza temporale consente di concentrarsi su segmenti specifici della sessione di campionamento.
 
 L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se **Utilizzo CPU** non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. L'hub diagnostica offre molte altre opzioni per la registrazione e l'analisi di questo tipo di dati.
+
+> [!Important]
+> Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
 In questo articolo viene illustrata l'analisi dell'utilizzo della CPU nel normale flusso di lavoro di debug. È anche possibile analizzare l'utilizzo della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [Raccogliere dati di profilatura senza il debug](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 

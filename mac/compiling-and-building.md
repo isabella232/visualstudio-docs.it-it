@@ -4,14 +4,14 @@ description: Questo articolo descrive come creare e compilare progetti e soluzio
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 08/29/2018
+ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 666027835699763dd42139b0b3b20e55fe250892
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222719"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128415"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilazione e creazione di build in Visual Studio per Mac
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 65d6dbd67debc4673173af29e0c92aa57b58c865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: cbaaa53fe737761fdd938b7861c371e8e5619acc
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703879"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128167"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Guida introduttiva: Analizzare i dati d'uso della CPU in Visual Studio (ASP.NET)
 
@@ -31,7 +31,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 1. In Visual Studio scegliere **File** > **Nuovo progetto**.
 
-1. In **Visual C#** scegliere **Web**, quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET (.NET Framework)**.
+1. In **Visual C#** scegliere **Web**, quindi nel riquadro centrale scegliere **Applicazione Web ASP.NET (.NET Framework)** .
 
     Se il modello di progetto **Applicazione Web ASP.NET** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
 
@@ -228,5 +228,5 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Profilatura in Visual Studio](../profiling/index.md)
+- [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

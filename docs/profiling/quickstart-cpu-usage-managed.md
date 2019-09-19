@@ -1,5 +1,5 @@
 ---
-title: Analizzare i dati d'uso della CPU (codice gestito)
+title: Analizzare i dati di utilizzoC#della CPU (, Visual Basic)
 description: Misurare le prestazioni delle app in C# e Visual Basic con lo strumento di diagnostica Utilizzo CPU
 ms.custom: mvc
 ms.date: 08/06/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05dbbf5bc6e13b36e5918a880d0a767968a78f30
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 7d13a97c3fb228cb72040313c98b70e14fc44099
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703862"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128191"
 ---
-# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Guida introduttiva: Analizzare i dati d'uso della CPU in Visual Studio (codice gestito)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Guida introduttiva: Analizzare i dati di utilizzo della CPU inC#Visual Studio (, Visual Basic)
 
 Visual Studio dispone di molte funzionalità avanzate per l'analisi dei problemi di prestazioni nell'applicazione. Questo argomento consente di apprendere in modo rapido come usare alcune funzionalità di base. In questo caso si esamina lo strumento che identifica eventuali colli di bottiglia delle prestazioni dovuti a un uso intensivo della CPU. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
 
@@ -31,7 +31,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 1. In Visual Studio scegliere **File** > **Nuovo progetto**.
 
-2. In **Visual C#** o **Visual Basic** scegliere **Desktop di Windows** e quindi nel riquadro al centro scegliere **App console (.NET Framework)**.
+2. In **Visual C#** o **Visual Basic** scegliere **Desktop di Windows** e quindi nel riquadro al centro scegliere **App console (.NET Framework)** .
 
     Se non viene visualizzato il modello di progetto **Applicazione console**, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
@@ -237,5 +237,5 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Profilatura in Visual Studio](../profiling/index.md)
+- [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

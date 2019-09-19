@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830699"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128228"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
@@ -121,7 +121,7 @@ Molti tipi di app non sono particolarmente interessanti per gli sviluppatori di 
 
  ![Collegamenti al report snapshot in un riquadro snapshot](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Collegamenti al report snapshot in un riquadro snapshot")
 
-Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito**. Il collegamento dimensione ordina il rapporto in base alla colonna **Dimensione inclusiva (byte)**. Il collegamento Oggetti ordina il rapporto in base alla colonna **Conteggio**. È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
+Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito**. Il collegamento dimensione ordina il rapporto in base alla colonna **Dimensione inclusiva (byte)** . Il collegamento Oggetti ordina il rapporto in base alla colonna **Conteggio**. È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Albero Heap gestito (report dettagli dello snapshot)
  Nell'albero **Heap gestito** sono elencati i tipi di oggetti contenuti in memoria. Espandere un nome di tipo per visualizzare le dieci istanze più grandi del tipo, ordinate in base alla dimensione. Selezionare un tipo o un'istanza per visualizzare gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
@@ -164,7 +164,7 @@ Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot 
 
 Un report differenze degli snapshot mostra le differenze tra uno snapshot principale e lo snapshot precedente. Per aprire un report delle differenze, selezionare uno dei collegamenti differenza in un riquadro snapshot.
 
-Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito** nel report. Il collegamento dimensione ordina il report in base alla colonna **Differenza dimensioni inclusive (byte)**. Il collegamento oggetti ordina il rapporto in base alla colonna **Diff. conteggio**. È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
+Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito** nel report. Il collegamento dimensione ordina il report in base alla colonna **Differenza dimensioni inclusive (byte)** . Il collegamento oggetti ordina il rapporto in base alla colonna **Diff. conteggio**. È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
 
  ![Collegamenti al report delle differenze in un riquadro snapshot](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Collegamenti al report delle differenze in un riquadro snapshot")
 
@@ -201,7 +201,7 @@ L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** 
 
 ![Tipi a cui si fa riferimento in un report delle differenze](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report delle differenze")
 
-Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)**, **Dimensione inclusiva (byte)** e **Modulo**.
+Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)** , **Dimensione inclusiva (byte)** e **Modulo**.
 
 |||
 |-|-|
@@ -216,7 +216,7 @@ Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapsho
 
 ## <a name="see-also"></a>Vedere anche
 - [Memoria JavaScript](../profiling/javascript-memory.md)
-- [Profilatura in Visual Studio](../profiling/index.md)
+- [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnostica dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio)

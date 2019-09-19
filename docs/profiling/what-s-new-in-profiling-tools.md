@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0512c6e95f0a26184593f7af5ba08c31c33a3299
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999228"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128332"
 ---
-# <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Novità negli strumenti di profilatura di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-in-profiling-tools-in-includevs_dev15miscincludesvs_dev15_mdmd"></a>Novità negli strumenti di profilatura di [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Gli strumenti di diagnostica includono nuove visualizzazioni che consentono di identificare i problemi da risolvere nell'app. Gli strumenti di diagnostica ora includono il supporto per le app ASP.NET.
 
@@ -36,5 +36,5 @@ Lo strumento Utilizzo CPU dispone di [nuove visualizzazioni](../profiling/Beginn
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Eseguire la profilatura in Visual Studio](../profiling/index.md)
+- [Eseguire la profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

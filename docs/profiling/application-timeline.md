@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777594"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128283"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -64,9 +64,9 @@ I passaggi principali sono indicati di seguito.
 
 Dopo aver raccolto i dati di profilatura, è possibile utilizzare la procedura indicata di seguito per avviare l'analisi:
 
-1. Visualizzare le informazioni nei grafici **Utilizzo thread interfaccia utente** e **Velocità effettiva elementi visivi (FPS)**, quindi usare le barre di navigazione della sequenza temporale per selezionare un intervallo di tempo da analizzare.
+1. Visualizzare le informazioni nei grafici **Utilizzo thread interfaccia utente** e **Velocità effettiva elementi visivi (FPS)** , quindi usare le barre di navigazione della sequenza temporale per selezionare un intervallo di tempo da analizzare.
 
-2. Usando le informazioni contenute nel grafico **Utilizzo thread interfaccia utente** o **Velocità effettiva elementi visivi (FPS)**, esaminare i dettagli nella visualizzazione **Dettagli sequenza temporale** per individuare le possibili cause di qualsiasi mancanza apparente di velocità di risposta.
+2. Usando le informazioni contenute nel grafico **Utilizzo thread interfaccia utente** o **Velocità effettiva elementi visivi (FPS)** , esaminare i dettagli nella visualizzazione **Dettagli sequenza temporale** per individuare le possibili cause di qualsiasi mancanza apparente di velocità di risposta.
 
 ### <a name="BKMK_Report_scenarios_categories_and_events"></a> Creare report su scenari, categorie ed eventi
 
@@ -126,5 +126,5 @@ Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, fil
 - [WPF team blog: New UI performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (Blog del team WPF: Nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Ottimizzazione delle prestazioni di applicazioni WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
-- [Profilatura in Visual Studio](../profiling/index.md)
+- [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

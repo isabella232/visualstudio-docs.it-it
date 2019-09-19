@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222616"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128151"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
-Mediante la distribuzione, un'applicazione, un servizio o un componente viene distribuito per l'installazione in altri computer, dispositivi o server, oppure nel cloud. Il metodo appropriato viene scelto in Visual Studio per il tipo di distribuzione necessaria. Molti tipi di app supportano altri strumenti di distribuzione, ad esempio la distribuzione da riga di comando o NuGet, che non vengono descritti in questa sede.
+Mediante la distribuzione, un'applicazione, un servizio o un componente viene distribuito per l'installazione in altri computer, dispositivi o server, oppure nel cloud. Il metodo appropriato viene scelto in Visual Studio per il tipo di distribuzione necessaria. Molti tipi di app supportano altri strumenti di distribuzione, ad esempio la distribuzione da riga di comando, che non sono descritti qui.
 
 Per istruzioni dettagliate per la distribuzione, vedere le guide introduttive e le esercitazioni. Per una panoramica delle opzioni di distribuzione, vedere [Quali sono le opzioni di pubblicazione più adatte?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -44,7 +44,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
-- **Desktop di Windows** È possibile pubblicare un'applicazione desktop di Windows in una cartella tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [Distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Per C++/CLR, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) oppure per C/C++, vedere [Distribuire un'app nativa tramite un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Desktop di Windows** È possibile pubblicare un'applicazione desktop di Windows in una cartella tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [Distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Per C++/CLI, vedere [distribuire un'app nativa con ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere [distribuire un'app nativa usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Pubblicare in Azure
 
@@ -83,7 +83,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
     È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per altre informazioni, vedere [Deploying ASP.NET web applications and services](http://www.asp.net/aspnet/overview/deployment) (Distribuzione di applicazioni e servizi Web ASP.NET).
 
-- **Desktop di Windows**: è possibile pubblicare un'applicazione desktop di Windows in un server Web o in una condivisione file di rete tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [Distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Per C++/CLR, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) oppure per C/C++, vedere [Distribuire un'app nativa tramite un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Desktop di Windows**: è possibile pubblicare un'applicazione desktop di Windows in un server Web o in una condivisione file di rete tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [Distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Per C++/CLI, vedere [distribuire un'app nativa con ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere [distribuire un'app nativa usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Pubblicare in Microsoft Store
 
@@ -93,9 +93,9 @@ Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Mi
 
     ![Creare un pacchetto dell'applicazione](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Desktop di Windows**: a partire da Visual Studio 2017 versione 15.4, è possibile eseguire la distribuzione in Microsoft Store tramite Desktop Bridge. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere [Creare il pacchetto di un'app desktop per Microsoft Store (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Desktop di Windows**: È possibile eseguire la distribuzione nel Microsoft Store a partire da Visual Studio 2017 versione 15,4. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere creare [un pacchetto di un'app desktop per Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
-    ![Desktop Bridge](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Creare un pacchetto di un'app desktop](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-net-packages-to-nugetorg"></a>Distribuire pacchetti .NET in NuGet.org
 

@@ -3,22 +3,20 @@ title: Personalizzazione del sistema di compilazione
 description: Questo articolo è una breve introduzione al sistema di compilazione MSBuild usato da Visual Studio per Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/14/2017
+ms.date: 09/19/2019
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 0c511c448136210038f1034321a2828e5153add1
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693027"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128386"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 
-MSBuild è un motore di compilazione, sviluppato da Microsoft, che consente la compilazione di applicazioni, principalmente di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. L'implementazione xbuild, tuttavia, è stata eliminata gradualmente a favore dell'uso di MSBuild in tutti i sistemi operativi.
+Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Il motore, noto anche come MSBuild, è stato sviluppato da Microsoft e consente la creazione di applicazioni .NET. Anche il framework Mono ha una propria implementazione di Microsoft Build Engine, denominata **xbuild**. Al momento, tuttavia, xbuild è stato eliminato a favore dell'utilizzo di MSBuild in tutti i sistemi operativi.
 
-**MSBuild** viene usato principalmente come sistema di compilazione per i progetti in Visual Studio per Mac.
-
-Il funzionamento di MSBuild si basa su un set di input, ad esempio file di origine, che vengono trasformati in output, ad esempio file eseguibili, tramite la chiamata a strumenti quali il compilatore.
+**MSBuild** viene usato come sistema di compilazione per i progetti in Visual Studio per Mac e funziona prendendo un set di input, ad esempio i file di origine, e li trasforma in output, ad esempio i file eseguibili. tramite la chiamata a strumenti quali il compilatore.
 
 ## <a name="msbuild-file"></a>File di MSBuild
 

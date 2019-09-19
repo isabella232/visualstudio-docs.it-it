@@ -3,31 +3,47 @@ title: Azioni di compilazione
 description: Questo articolo descrive le varie azioni di compilazione che possono essere usate per i progetti C#
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 54e341b4e5961623f41963bb90c2e5d60b110cf4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691203"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128442"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
-Tutti i file di un progetto Visual Studio per Mac possiedono un'azione di compilazione, che controlla cosa accade al file durante una compilazione. Questo comportamento può essere impostato facendo clic con il pulsante destro del mouse sul file e scegliendo **Azione di compilazione**, come illustrato di seguito:
+Tutti i file di un progetto Visual Studio per Mac possiedono un'azione di compilazione, L'azione di compilazione controlla cosa accade al file durante una compilazione. 
+
+>[!NOTE]
+>Questo argomento si applica a Visual Studio per Mac. Per Visual Studio in Windows, vedere [azioni di compilazione](/visualstudio/ide/build-actions).
+
+## <a name="set-a-build-action"></a>Impostare un'azione di compilazione
+
+Per impostare un'azione di compilazione per un file in Visual Studio per Mac, è possibile fare clic con il pulsante destro del mouse su qualsiasi file e passare all' **azione di compilazione**, come illustrato di seguito:
 
 ![Selezione dell'azione di compilazione da Esplora soluzioni](media/projects-and-solutions-image1.png)
 
-Ecco alcune azioni di compilazione comuni per progetti C#:
+Le azioni di compilazione per questo file verranno visualizzate nel menu a comparsa. 
 
-* **Nessuna**: il file non fa parte della compilazione in alcun modo, è incluso nel progetto solo per facilitarne l'accesso dall'IDE.
-* **Compilazione**: il file verrà passato al compilatore C# come file di origine.
-* **EmbeddedResource**: il file verrà passato al compilatore C# come una risorsa da incorporare nell'assembly. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), sarà quindi possibile usare lo spazio dei nomi `System.Reflection` per leggere il file dall'assembly.
-* **Contenuto**: per i progetti ASP.NET, questi file vengono inclusi come parte del sito quando questo viene distribuito. Per i progetti Xamarin.iOS e Xamarin.Mac, sono inclusi nel bundle dell'app.
+## <a name="build-action-values"></a>Valori dell'azione di compilazione
 
-È possibile selezionare più file in Esplora soluzioni. Ciò consente di impostare l'azione di compilazione per più file in una sola volta.
+Di seguito sono riportate alcune delle azioni di compilazione comuni per i progetti che è possibile compilare in Visual Studio per Mac:
 
-Sono anche disponibili azioni di compilazione per progetti specifici. Per i progetti Xamarin.iOS esiste l'azione di compilazione **BundleResource**, che aggiunge il file al bundle dell'app. Per informazioni sulle azioni di compilazione specifiche per Xamarin.Android, vedere la guida al [processo di compilazione](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
+|Azione di compilazione | Tipi di progetto | Descrizione |
+|--|--|--|
+| **Compile** | qualsiasi | Il file viene passato al C# compilatore come file di origine.|
+| **Contenuto** | .NET, Novell | Per i progetti ASP.NET, questi file vengono inclusi come parte del sito quando questo viene distribuito. Per i progetti Xamarin.iOS e Xamarin.Mac, sono inclusi nel bundle dell'app.|
+| **Embedded Resource** | .NET | Il file viene passato al C# compilatore come risorsa da incorporare nell'assembly. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), sarà quindi possibile usare lo spazio dei nomi `System.Reflection` per leggere il file dall'assembly.|
+| **None** | qualsiasi | Il file non fa parte della compilazione in alcun modo ed è incluso nel progetto per facilitarne l'accesso dall'IDE. Questo valore può essere usato per i file di documentazione come i file leggimi, ad esempio.|
+
+> [!NOTE]
+> È possibile definire azioni di compilazione aggiuntive per tipi di progetto specifici, pertanto l'elenco di azioni di compilazione dipende dal tipo di progetto e potrebbero venire visualizzati valori che non sono presenti in questo elenco.  
+
+Per i progetti Xamarin.iOS esiste l'azione di compilazione **BundleResource**, che aggiunge il file al bundle dell'app. Per informazioni sulle azioni di compilazione specifiche per Xamarin.Android, vedere la guida al [processo di compilazione](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
+
+È anche possibile selezionare più di un file in Esplora soluzioni, consentendo di impostare l'azione di compilazione su molti file contemporaneamente.
 
 ## <a name="see-also"></a>Vedere anche
 
