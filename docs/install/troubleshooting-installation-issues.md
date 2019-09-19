@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi di installazione o di aggiornamento
 description: Non sempre tutto funziona correttamente. Se l'installazione o l'aggiornamento di Visual Studio ha esito negativo, questa pagina può risultare utile.
-ms.date: 03/30/2019
+ms.date: 09/13/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce451ecdeb6d196e6520acffb9a6c76add36f5bf
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913253"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062818"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
 
@@ -114,12 +114,14 @@ Se le procedure indicate sopra non consentono di installare o aggiornare corrett
 
 ## <a name="offline-installations"></a>Installazioni offline
 
-Ecco una tabella dei problemi noti e di alcune soluzioni alternative che possono essere utili quando si esegue l'installazione da un layout locale.
+Ecco una tabella dei problemi noti e delle soluzioni alternative che potrebbero essere utili quando si crea un' [installazione offline](create-an-offline-installation-of-visual-studio.md) e quindi si esegue l'installazione da un layout locale.
 
 | Problema       | Elemento                   | Soluzione |
 | ----------- | ---------------------- | -------- |
 | Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo da consentire l'accesso in lettura ad altri utenti *prima* di condividere l'installazione offline. |
 | Non è possibile installare nuovi carichi di lavoro, componenti o lingue.  | `--layout`  | Assicurarsi che sia disponibile l'accesso a Internet se si esegue l'installazione da un layout parziale e si selezionano carichi di lavoro, componenti o lingue non scaricati precedentemente nel layout parziale. |
+
+Per altre informazioni su come risolvere i problemi relativi all' [installazione di rete](create-a-network-installation-of-visual-studio.md), vedere [risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="installation-logs"></a>Log di installazione
 

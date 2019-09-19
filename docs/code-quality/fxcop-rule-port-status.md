@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551062"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062409"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola FxCop
 
@@ -69,7 +69,7 @@ ID regola | Titolo
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Non generare eccezioni in posizioni non previste
 CA1066 | Il {0} tipo deve implementare\<IEquatable T > perché esegue l'override di Equals
 CA1067 | Eseguire l'override di Object. Equals (Object)\<quando si implementa IEquatable T >
-CA1068 | I parametri CancellationToken devono essere gli ultimi
+[CA1068](ca1068.md) | I parametri CancellationToken devono essere gli ultimi
 CA1200 | Evitare l'uso di tag cref con un prefisso
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Non passare valori letterali come parametri localizzati
 [CA1304](ca1304-specify-cultureinfo.md) | Specificare CultureInfo
@@ -193,7 +193,7 @@ CA5369 | Utilizzare XmlReader per la deserializzazione
 CA5370 | Utilizzare XmlReader per la convalida del lettore
 CA5371 | Utilizzare XmlReader per la lettura dello schema
 CA5372 | Usare XmlReader per XPathDocument
-CA5373 | Non usare la funzione di derivazione della chiave obsoleta
+CA5373 | Non usare la funzione di derivazione di chiave obsoleta
 CA5374 | Non utilizzare XslTransform
 CA5375 | Non usare la firma di accesso condiviso dell'account
 CA5376 | Usare SharedAccessProtocol HttpsOnly
@@ -271,7 +271,7 @@ ID regola | Problema di rilevamento
 
 ### <a name="deprecated-rules"></a>Regole deprecate
 
-Le seguenti regole di analisi legacy FxCop sono deprecate e non verranno implementate come analizzatori. Per ulteriori informazioni, è possibile eseguire la ricerca in base all'ID regola, ad esempio CA1009, nella [pagina Roslyn-Analyzers GitHub issues](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+Le seguenti regole di analisi legacy FxCop sono deprecate e non verranno implementate come analizzatori. Per ulteriori informazioni, è possibile eseguire la ricerca in base all'ID regola, ad esempio **CA1009**, nella [pagina Roslyn-Analyzers GitHub issues](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

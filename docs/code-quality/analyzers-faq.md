@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929769"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062173"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 
@@ -24,15 +24,15 @@ Questa pagina contiene le risposte ad alcune domande frequenti sull'analisi del 
 
 **D**: È consigliabile usare l'analisi del codice o EditorConfig per controllare lo stile del codice?
 
-**R**: L'analisi del codice e i file con estensione EditorConfig funzionano in mano. Quando si definiscono gli stili [di codice in un file con estensione EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o nella pagina [Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) , si configurano effettivamente gli analizzatori di codice incorporati in Visual Studio. I file EditorConfig possono essere usati anche per configurare alcuni pacchetti di NuGet Analyzer, ad esempio gli [analizzatori FxCop](configure-fxcop-analyzers.md).
+**R**: L'analisi del codice e i file EditorConfig funzionano in mano. Quando si definiscono gli stili [di codice in un file EditorConfig](../ide/editorconfig-code-style-settings-reference.md) o nella pagina [Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) , si configurano effettivamente gli analizzatori di codice incorporati in Visual Studio. I file EditorConfig possono essere usati anche per configurare alcuni pacchetti di NuGet Analyzer, ad esempio gli [analizzatori FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig rispetto ai set di regole
 
-**D**: È necessario configurare gli analizzatori utilizzando un set di regole o un file con estensione EditorConfig?
+**D**: È necessario configurare gli analizzatori utilizzando un set di regole o un file EditorConfig?
 
-**R**: I set di regole e i file con estensione EditorConfig si escludono a vicenda per configurare gli analizzatori. Possono coesistere. I [set](analyzer-rule-sets.md) di regole consentono di abilitare e disabilitare le regole e di impostarne la gravità. I file EditorConfig offrono altri modi per configurare le regole. Per gli analizzatori FxCop, i file con estensione EditorConfig consentono [di definire i tipi di codice da analizzare](fxcop-analyzer-options.md). Per gli analizzatori incorporati in Visual Studio, i file con estensione EditorConfig consentono di [definire gli stili di codice preferiti](../ide/editorconfig-code-style-settings-reference.md) per una codebase.
+**R**: I set di regole e i file EditorConfig possono coesistere e possono essere usati entrambi per configurare gli analizzatori. I [set](analyzer-rule-sets.md) di regole consentono di abilitare e disabilitare le regole e di impostarne la gravità. I file EditorConfig offrono altri modi per configurare le regole. Per gli analizzatori FxCop, i file EditorConfig consentono [di definire i tipi di codice da analizzare](fxcop-analyzer-options.md). Per gli analizzatori di tipo codice incorporati in Visual Studio, i file EditorConfig consentono di [definire gli stili di codice preferiti](../ide/editorconfig-code-style-settings-reference.md) per una codebase.
 
-Oltre ai set di regole e ai file con estensione EditorConfig, alcuni analizzatori sono configurati tramite l'uso di file di testo contrassegnati C# come [file aggiuntivi](../ide/build-actions.md#build-action-values) per i compilatori e VB.
+Oltre ai set di regole e ai file EditorConfig, alcuni analizzatori sono configurati tramite l'uso di file di testo contrassegnati come C# [file aggiuntivi](../ide/build-actions.md#build-action-values) per i compilatori e VB.
 
 > [!NOTE]
 > Non è possibile usare i file EditorConfig per configurare l'analisi legacy, mentre i set di regole possono.

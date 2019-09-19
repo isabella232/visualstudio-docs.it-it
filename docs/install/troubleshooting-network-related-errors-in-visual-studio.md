@@ -17,14 +17,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 27364bd028d9fb493da354d3bff7f11efe5f459d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825714"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062781"
 ---
-# <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio
 
 Esistono soluzioni per la maggiore parte degli errori tipici correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
 

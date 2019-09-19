@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f9c0f4913c80e1cf2f2fee24dbed5ad910ca75
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887791"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079362"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Firmare manifesti di applicazione e distribuzione
 
@@ -71,7 +71,7 @@ Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare u
 4. Immettere la password per accedere al file di chiave e quindi premere **INVIO**.
 
 > [!NOTE]
-> Il file *pfx* non può includere informazioni di concatenamento dei certificati. In caso contrario, si verificherà l'errore di importazione seguente: **Impossibile trovare il certificato e la chiave privata per la decrittografia**. Per rimuovere le informazioni di concatenamento dei certificati, è possibile usare *certmgr. msc* e [disabilitare l'opzione](/previous-versions/aa730868(v=vs.80)?redirectedfrom=MSDN#rsvssign_topic3) per **includere tutti i certificati** quando si esporta il file *. pfx.
+> Il file *pfx* non può includere informazioni di concatenamento dei certificati. In caso contrario, si verificherà l'errore di importazione seguente: **Impossibile trovare il certificato e la chiave privata per la decrittografia**. Per rimuovere le informazioni di concatenamento dei certificati, è possibile usare *certmgr. msc* e [disabilitare l'opzione](/previous-versions/aa730868(v=vs.80)) per **includere tutti i certificati** quando si esporta il file *. pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Firmare con un certificato di prova
 

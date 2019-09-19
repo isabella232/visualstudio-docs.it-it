@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 4d57852a356b2399a358f1636495e96a3dcec44f
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913122"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095328"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Passaggio 11: Eseguire l'app visualizzatore immagini e provare altre funzionalità
 
@@ -63,4 +63,4 @@ Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 10: Sc
 
 * [Altre C# esercitazioni](/visualstudio/get-started/csharp/)
 * [Altre esercitazioni Visual Basic](/visualstudio/get-started/visual-basic/)
-* [C++Tutorial](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [C++Tutorial](/cpp/get-started/tutorial-console-cpp)

@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/18/2019
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377861"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095399"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 
 
 > [!NOTE]
-> Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Se ad esempio una sottoscrizione di Visual Studio Professional e una sottoscrizione di Visual Studio Test Professional sono associate allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione di livello Professional, anche se si stanno visualizzando i vantaggi di Dev Essentials.
+> Solo i download inclusi con la sottoscrizione vengono visualizzati automaticamente nella pagina [Download](https://my.visualstudio.com/downloads/featured).  Se si possiede più di una sottoscrizione o appartenenza al programma, i download visualizzati saranno riferiti alla **sottoscrizione più elevata** di cui si è titolari, anche se si sta visualizzando una sottoscrizione diversa.  Ad esempio, se si dispone di una sottoscrizione di Visual Studio Enterprise e di una sottoscrizione di Visual Studio Professional associata allo stesso ID di accesso, i download visualizzati saranno quelli inclusi nella sottoscrizione dell'organizzazione, anche se attualmente si sta visualizzando vantaggi dell'abbonamento professionale.
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Come trovare i download nel portale sottoscrittore?
 Quando si visita la pagina [Download](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) è possibile osservare i download popolari organizzati in gruppi per tipo di prodotto.  È possibile selezionare uno dei download popolari visualizzati o cercare qualsiasi prodotto tramite la barra di ricerca nella parte superiore della pagina.

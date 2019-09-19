@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db84490c5e3067012ec37643996bd3c0a4874abc
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012598"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062856"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 
@@ -64,7 +64,7 @@ Scheda ***Form1.cs*** *con C# codice*
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,11 +83,11 @@ Scheda ***Form1.cs*** *con C# codice*
     Di seguito viene mostrato il nuovo codice visualizzato nell'editor di codice.
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
     > [!NOTE]
-    > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase". 
+    > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase".
 
     I cinque metodi aggiunti sono denominati *gestori di eventi*, perché l'applicazione li chiama ogni volta che viene eseguito un evento, ad esempio un utente che sceglie un pulsante o seleziona una casella.
 

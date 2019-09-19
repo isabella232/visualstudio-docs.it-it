@@ -1,20 +1,20 @@
 ---
 title: Eseguire il debug di app in un contenitore Docker locale | Microsoft Docs
 description: Informazioni su come modificare un'app in esecuzione in un contenitore Docker locale, aggiornare il contenitore tramite modifica e aggiornamento, quindi impostare i punti di interruzione di debug.
+ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
-ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d7a7fa83fe0976ee1e08c6c614a11f783178a285
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312253"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062178"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Eseguire il debug di app in un contenitore Docker locale
 
@@ -48,14 +48,14 @@ I contenitori Docker sono disponibili per i progetti .NET Framework e .NET Core.
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-[! INCLUDERE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
+[!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
 ### <a name="edit-your-code-and-refresh"></a>Modificare il codice e aggiornare
 
 Per eseguire rapidamente l'iterazione delle modifiche, è possibile avviare l'applicazione in un contenitore. Quindi, continuare a apportare le modifiche, visualizzandole come si farebbe con IIS Express.
 
-1. Impostare la **configurazione della soluzione** di cui eseguire il **debug**. Premere quindi CTRL + F5 per compilare l'immagine Docker ed eseguirla localmente.
+1. Impostare la **configurazione della soluzione** di cui eseguire il **debug**. Premere quindi **CTRL**+**F5** per compilare l'immagine Docker ed eseguirla localmente.
 
     Quando l'immagine del contenitore viene compilata e in esecuzione in un contenitore Docker, Visual Studio avvia l'app Web nel browser predefinito.
 
