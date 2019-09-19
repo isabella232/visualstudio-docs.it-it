@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: Creare un''applicazione console'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python: Creare un''app Web'
       href: ide/quickstart-python.md
     - name: 'Node.js: Creare un''app Web'
@@ -767,7 +767,7 @@
           href: ide/reference/add-new-item-command.md
         - name: Comando Alias
           href: ide/reference/alias-command.md
-        - name: Comando Valuta istruzione
+        - name: Valuta istruzione (comando)
           href: ide/reference/evaluate-statement-command.md
         - name: Comando Trova
           href: ide/reference/find-command.md
@@ -799,7 +799,7 @@
           href: ide/reference/open-file-command.md
         - name: Apri progetto (comando)
           href: ide/reference/open-project-command.md
-        - name: Comando Print
+        - name: Stampa (comando)
           href: ide/reference/print-command.md
         - name: Comando Controllo immediato
           href: ide/reference/quick-watch-command.md
@@ -840,7 +840,7 @@
           href: ide/reference/code-snippet-picker.md
         - name: Finestra di comando
           href: ide/reference/command-window.md
-        - name: Finestra di dialogo Converti
+        - name: Converti (finestra di dialogo)
           href: ide/reference/convert-dialog-box.md
         - name: Finestra Elenco errori
           href: ide/reference/error-list-window.md
