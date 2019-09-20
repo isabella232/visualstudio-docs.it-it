@@ -37,6 +37,6 @@
     - name: Unit test
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Distribuire il progetto
-      href: ../../deployment/index.md
+      href: ../../deployment/index.yml
     - name: Accedere ai dati
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
