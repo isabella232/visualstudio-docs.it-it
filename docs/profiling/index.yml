@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Misurare le prestazioni delle app in Visual Studio
+summary: Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizzo della memoria e della CPU e altri problemi a livello di applicazione. Con questi strumenti è possibile accumulare dati sulle prestazioni durante l'esecuzione dell'applicazione.
+metadata:
+  title: Misurare le prestazioni in Visual Studio
+  description: Informazioni su come usare Visual Studio per misurare le prestazioni con gli strumenti di profilatura.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130620"
+landingContent:
+- title: Informazioni sulla profilatura
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Presentazione degli strumenti di profilatura
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: Modi per eseguire gli strumenti di profilatura
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: Introduzione
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Analizzare l'utilizzo della CPU (C#, Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: Analizzare l'utilizzo della CPU (C++)
+      url: quickstart-cpu-usage-native.md
+    - text: Analizzare l'utilizzo della CPU (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: Introduzione all'analisi dell'utilizzo della CPU
+      url: beginners-guide-to-performance-profiling.md
+    - text: Introduzione alla misurazione dell'utilizzo della memoria
+      url: beginners-guide-to-performance-profiling.md
+- title: Altri strumenti per le prestazioni
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: PerfTips
+      url: perftips.md
+    - text: Analizzare l'uso di risorse (XAML)
+      url: application-timeline.md
+    - text: Analizzare l'utilizzo della GPU (Direct3D)
+      url: gpu-usage.md
+    - text: Analizzare l'uso della rete (piattaforma UWP)
+      url: network-usage.md
+    - text: Analizzare il consumo di energia (piattaforma UWP)
+      url: analyze-energy-use-in-store-apps.md
+    - text: Esplora prestazioni (legacy)
+      url: performance-explorer.md
