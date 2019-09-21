@@ -1,20 +1,20 @@
 ---
-title: Bundle Visual Studio + GitHub Enterprise | Microsoft Docs
+title: Offerta Visual Studio + GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
-description: Gestione delle sottoscrizioni nel bundle Visual Studio + GitHub Enterprise
-ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+description: Gestione delle sottoscrizioni nell'offerta Visual Studio + GitHub Enterprise
+ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605395"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150136"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gestire le sottoscrizioni di Visual Studio con GitHub Enterprise
-I clienti che dispongono di contratti Enterprise (EA) con Microsoft hanno il diritto di acquistare un nuovo bundle di sottoscrizioni che riunisce le sottoscrizioni standard di Visual Studio e di GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
+I clienti con contratto Enterprise Agreement (EA) con Microsoft sono idonei per acquistare una nuova offerta di sottoscrizione che riunisce le sottoscrizioni di Visual Studio standard e GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
 
 Quando l'organizzazione acquista sottoscrizioni di Visual Studio con GitHub Enterprise, il loro provisioning e la gestione vengono suddivisi in due parti.
 

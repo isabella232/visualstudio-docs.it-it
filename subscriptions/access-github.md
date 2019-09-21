@@ -1,21 +1,21 @@
 ---
-title: Bundle di Visual Studio + GitHub | Microsoft Docs
+title: Offerta di Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: Informazioni sul nuovo bundle di Visual Studio + GitHub
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+description: Scopri la nuova offerta di Visual Studio + GitHub
+ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377644"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150084"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introduzione alle sottoscrizioni di Visual Studio con GitHub Enterprise  
 
-I clienti che dispongono di contratti Enterprise (EA) con Microsoft hanno il diritto di acquistare un nuovo bundle di sottoscrizioni che riunisce le sottoscrizioni standard di Visual Studio e di GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
+I clienti con contratto Enterprise Agreement (EA) con Microsoft sono idonei per acquistare una nuova offerta di sottoscrizione che riunisce le sottoscrizioni di Visual Studio standard e GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
 
 - Con GitHub e Visual Studio è possibile innovare su larga scala importando in modo sicuro codice open source, una community e le procedure consigliate nell'ambiente di sviluppo integrato e nei flussi di lavoro.
 - Usare i migliori strumenti e servizi di sviluppo per sviluppatori con il set più completo di risorse per creare, distribuire e gestire applicazioni eccezionali. 
@@ -28,7 +28,7 @@ Se l'organizzazione sta adottando un nuovo contratto Enterprise o rinnovando un 
 - Visual Studio Enterprise con GitHub Enterprise
 - Visual Studio Professional con GitHub Enterprise
 
-Se l'organizzazione dispone di un contratto Enterprise che non è prossimo al rinnovo, è possibile acquistare lo SKU "step-up" per aggiungere GitHub Enterprise alle sottoscrizioni di Visual Studio Enterprise o di Visual Studio Professional esistenti.  Quando si rinnova il contratto, sarà quindi possibile acquistare il bundle.
+Se l'organizzazione dispone di un contratto Enterprise che non è prossimo al rinnovo, è possibile acquistare lo SKU "step-up" per aggiungere GitHub Enterprise alle sottoscrizioni di Visual Studio Enterprise o di Visual Studio Professional esistenti. Quando il contratto viene rinnovato, è possibile acquistare l'offerta.
 
 Gli SKU esistenti per Visual Studio Enterprise, Visual Studio Professional e GitHub Enterprise continueranno a essere disponibili separatamente. 
 
@@ -40,7 +40,7 @@ Le sottoscrizioni di Visual Studio + GitHub Enterprise vengono assegnate in due 
 1. La sottoscrizione di Visual Studio (Enterprise o Professional)
 2. La sottoscrizione di GitHub Enterprise
 
-Le sottoscrizioni acquistate dall'organizzazione sono assegnate dagli amministratori.  Le assegnazioni delle sottoscrizioni di Visual Studio e GitHub Enterprise avvengano separatamente.  
+Le sottoscrizioni acquistate dall'organizzazione sono assegnate dagli amministratori. Le assegnazioni delle sottoscrizioni di Visual Studio e GitHub Enterprise avvengano separatamente.  
 
 L'utente a cui è stata assegnata una sottoscrizione di Visual Studio + GitHub viene informato, tramite messaggio di posta elettronica, che l'amministratore della sottoscrizione di Visual Studio gli ha assegnato una sottoscrizione.  A questo punto, potrà visualizzarla in https://my.visualstudio.com/subscriptions.  
 

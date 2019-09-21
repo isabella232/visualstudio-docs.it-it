@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione delle classi, gerarchia delle chiamate, visualizzatore oggetti e finestra di definizione del codice
-ms.date: 05/18/2018
-ms.topic: conceptual
+ms.date: 09/19/2019
+ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747704"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150132"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 
@@ -68,18 +68,17 @@ Il pulsante **Visualizzazione classi - Impostazioni** sulla barra degli strument
 |||
 |-|-|
 |**Mostra tipi base**|Vengono visualizzati i tipi di base.|
-|**Mostra tipi derivati**|Vengono visualizzati i tipi derivati.|
+|**Mostra riferimenti al progetto**|Vengono visualizzati i riferimenti al progetto.|
 |**Mostra tipi e membri nascosti**|Tipi e membri nascosti (non destinati ai client) vengono visualizzati in grigio chiaro.|
 |**Mostra membri pubblici**|I membri pubblici vengono visualizzati.|
 |**Mostra membri protetti**|I membri protetti vengono visualizzati.|
 |**Mostra membri privati**|I membri privati vengono visualizzati.|
 |**Mostra altri membri**|Altri tipi di membri vengono visualizzati, tra cui i membri interni (o Friend in Visual Basic).|
 |**Mostra membri ereditati**|I membri ereditati vengono visualizzati.|
-|**Show Extension Methods** (Mostra metodi di estensione)|I metodi di estensione vengono visualizzati.|
 
 ### <a name="class-view-shortcut-menu"></a>Menu di scelta rapida di Visualizzazione classi
 
-Il menu di scelta rapida in **Visualizzazione classi** può contenere i seguenti comandi, a seconda del tipo di progetto selezionato:
+Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualizzazione classi** può contenere i comandi seguenti, a seconda del tipo di progetto selezionato:
 
 |||
 |-|-|
@@ -157,7 +156,6 @@ Con il pulsante **Visualizzatore oggetti - Impostazioni** sulla barra degli stru
 |**Visualizza spazio dei nomi**|Consente di visualizzare gli spazi dei nomi anziché i contenitori fisici nel riquadro sinistro. Gli spazi dei nomi archiviati in più contenitori fisici vengono uniti.|
 |**Visualizza contenitori**|Consente di visualizzare i contenitori fisici anziché gli spazi dei nomi nel riquadro sinistro. **Visualizza spazio dei nomi** e **Visualizza contenitori** sono impostazioni che si escludono a vicenda.|
 |**Mostra tipi base**|Visualizza tipi di base.|
-|**Mostra tipi derivati**|Visualizza tipi derivati.|
 |**Mostra tipi e membri nascosti**|Visualizza tipi e membri nascosti (non destinati ai client) in grigio chiaro.|
 |**Mostra membri pubblici**|Visualizza membri pubblici.|
 |**Mostra membri protetti**|Visualizza membri protetti.|
@@ -168,7 +166,7 @@ Con il pulsante **Visualizzatore oggetti - Impostazioni** sulla barra degli stru
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandi del menu di scelta rapida di Visualizzatore oggetti
 
-Il menu di scelta rapida nel **Visualizzatore oggetti** può contenere i comandi seguenti, a seconda del tipo di elemento selezionato:
+Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualizzatore oggetti** può contenere i comandi seguenti, a seconda del tipo di elemento selezionato:
 
 |||
 |-|-|
@@ -197,7 +195,7 @@ Anche se questa finestra è di sola lettura, è possibile impostarvi punti di in
 
 ### <a name="code-definition-shortcut-menu"></a>Menu di scelta rapida di Definizione codice
 
-Il menu di scelta rapida nella finestra **Definizione codice** può contenere i comandi seguenti:
+Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestra **definizione codice** può contenere i comandi seguenti:
 
 |||
 |-|-|
