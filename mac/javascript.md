@@ -6,18 +6,18 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 13aa6e595deb83344d40dff396c7e106bdcbc67e
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 7ffe24d26af91d7d6733ec1540c2f2d810425e1e
+ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108036"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175403"
 ---
 # <a name="javascript-and-typescript-support"></a>Supporto per JavaScript e TypeScript
 
 Visual Studio per Mac offre supporto per JavaScript e TypeScript con evidenziazione della sintassi, formattazione del codice e IntelliSense.
 
-![Supporto per l'editor Typescript](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
+![Supporto per l'editor Typescript](/media/tsjseditor-2019.gif)
 
 Per altre informazioni sulla scrittura di JavaScript, vedere le guide sulla [scrittura di codice JavaScript](/scripting/javascript/writing-javascript-code).
 
@@ -35,13 +35,13 @@ Nella finestra di dialogo **Nuovo file** selezionare **Web > Empty JS file** (Fi
 
 Visual Studio per Mac usa [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) per rendere disponibile IntelliSense che offre il completamento intelligente del codice, informazioni sui parametri ed elenchi membri durante la scrittura di codice.
 
-JavaScript Intellisense in Visual Studio per Mac può essere basato sull'inferenza del tipo, su JSDoc o sulla dichiarazione TypeScript.
+IntelliSense JavaScript in Visual Studio per Mac può essere basato sulle dichiarazioni di inferenza del tipo, JSDoc o TypeScript.
 
 - **Inferenza del tipo**: il tipo di un oggetto viene dedotto dal contesto del codice circostante. Per altre informazioni, vedere la sezione relativa a Visual Studio in [IntelliSense basato sull'inferenza del tipo](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference).
 - **JSDoc**: a volte l'inferenza del tipo non offre le informazioni sul tipo corrette. In questi casi, le informazioni sul tipo possono essere fornite in modo esplicito dalle annotazioni [JSDoc](https://jsdoc.app/about-getting-started.html). Per altre informazioni, vedere la sezione relativa a Visual Studio in [IntelliSense basato su JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc)
 - **File di dichiarazione TypeScript**: per specificare i valori per JavaScript IntelliSense vengono usati file `.d.ts`. I tipi dichiarati in questo file possono essere usati come tipi nei commenti JSDoc. Per altre informazioni, vedere la sezione relativa a Visual Studio su [IntelliSense basato su file dichiarazione TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files)
 
-    ![aggiunta di un file di definizione typescript](media/javascript-image3.png)
+    ![aggiunta di un file di definizione typescript](media/javascript-type-intellisense-2019.gif)
 
 ## <a name="see-also"></a>Vedere anche
 
