@@ -1,7 +1,7 @@
 ---
 title: Registro modifiche (Visual Studio Tools per Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,84 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
-ms.translationtype: HT
+ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661825"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185971"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="2330"></a>2.3.3.0
+
+Rilasciata il 23 settembre 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - È stato aggiunto un nuovo silenziatore per IDE0060, per impedire che l'IDE visualizzi una correzione rapida per rimuovere i parametri non usati.
+    - `USP0005`per `IDE0060`: I messaggi Unity vengono richiamati dal runtime di Unity.
+
+## <a name="2320"></a>2.3.2.0
+
+Rilasciata il 16 settembre 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+  - È stata approfondita la comprensione di Visual Studio per i progetti Unity con l'aggiunta di una nuova diagnostica specifica di Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non visualizzerà una correzione rapida per modificare una variabile di controllo `readonly` in modo da impedire la modifica della variabile nell'editor di Unity.
+    - `UNT0001`: i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare l'elaborazione non necessaria da parte del runtime di Unity.
+    - `UNT0002`: il confronto dei tag con l'uguaglianza delle stringhe è più lento del metodo CompareTag incorporato.
+    - `UNT0003`: è preferibile utilizzare la forma generica di GetComponent per l'indipendenza dai tipi.
+    - `UNT0004`: il messaggio di aggiornamento dipende dalla frequenza dei fotogrammi e dovrebbe usare Time.deltaTime anziché Time.fixedDeltaTime.
+    - `UNT0005`: il messaggio FixedUpdate non dipende dalla frequenza dei fotogrammi e dovrebbe usare Time.fixedDeltaTime anziché Time.deltaTime.
+    - `UNT0006`: È stata rilevata una firma del metodo non corretta per questo messaggio Unity.
+    - `UNT0007`: Unity esegue l'override dell'operatore di confronto Null per gli oggetti Unity, il che non è compatibile con la coalescenza Null.
+    - `UNT0008`: Unity esegue l'override dell'operatore di confronto Null per gli oggetti Unity, il che non è compatibile con la propagazione Null.
+    - `UNT0009`: quando si applica l'attributo InitializeOnLoad a una classe, è necessario fornire un costruttore statico. L'attributo InitializeOnLoad garantisce che verrà chiamato all'avvio dell'editor.
+    - `UNT0010`: i MonoBehaviour vanno creati solo usando AddComponent(). un MonoBehaviour è un componente e deve essere associato a un GameObject.
+    - `UNT0011`: gli ScriptableObject vanno creati solo usando CreateInstance(). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
+    - `USP0001`per `IDE0029`: Gli oggetti Unity non devono usare la coalescenza null.
+    - `USP0002`per `IDE0031`: Gli oggetti Unity non devono usare la propagazione Null.
+    - `USP0003`per `IDE0051`: I messaggi Unity vengono richiamati dal runtime di Unity.
+    - `USP0004`per `IDE0044`: I campi con un attributo SerializeField non devono essere resi di sola lettura.
+
+## <a name="2310"></a>2.3.1.0
+
+rilasciata il 4 settembre 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Valutazione:**
+
+  - Aggiunta del supporto per la visualizzazione dei `List<object>` `List'1[[System.Object, <corlib...>]]`tipi migliore, ovvero anziché.
+
+  - Aggiunta del supporto per l'accesso ai membri del `p->data->member`puntatore, ad esempio.
+
+  - Aggiunto il supporto per le conversioni implicite negli inizializzatori di matrice `new byte [] {1,2,3,4}`, ad esempio.
+
+  - Aggiunta del supporto per l'editor esadecimale quando si esaminano le matrici di byte e le stringhe.
+
+## <a name="2300"></a>2.3.0.0
+
+rilasciata il 13 agosto 2019
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Valutazione:**
+
+  - Correzione dei problemi di esecuzione delle eccezioni.
+
+  - Correzione della valutazione di pseudo-identificatori (ad esempio $exception).
+
+  - Impedisci arresto anomalo quando si dereferenziano indirizzi non validi.  
+
+  - Correzione del problema relativo agli AppDomain scaricati.
 
 ## <a name="2200"></a>2.2.0.0
 
@@ -103,7 +171,7 @@ Data di rilascio: 20 giugno 2019
 
   - Disabilitazione della compilazione completa per i progetti Unity, a favore dell'uso di errori e avvisi IntelliSense. Indeed Unity crea una soluzione di Visual Studio con progetti di libreria di classi che rappresentano le operazioni eseguite internamente da Unity. Detto questo, il risultato della compilazione in Visual Studio non viene mai usato o acquisito da Unity perché la pipeline di compilazione è chiusa. La compilazione in Visual Studio utilizza inutilmente risorse. Se gli strumenti o la configurazione usati richiedono una configurazione completa perché ne sono dipendenti, è possibile disabilitare questa ottimizzazione: Strumenti/Opzioni/Strumenti per Unity/Disabilita la compilazione completa dei progetti.
   
-  - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti di riferimento (usando il file manifest.json nella cartella Packages) e i pacchetti locali (incorporati nella cartella Packages).
+  - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti a cui viene fatto riferimento (usando il file manifest.json nella cartella `Packages`) e i pacchetti locali (incorporati nella cartella `Packages`).
 
 ## <a name="2021"></a>2.0.2.1
 
@@ -164,6 +232,12 @@ Data di rilascio: 20 marzo 2019
 - **Project Generation:**
 
   - Mantenere le proprietà esterne durante l'elaborazione del file di soluzione.
+  
+- **Valutazione:**
+
+  - Aggiunta del supporto per nomi completi di alias (solo lo spazio dei nomi globale per il momento). L'analizzatore di espressioni accetta quindi ora i tipi nel formato global::namespace.type.
+
+  - Aggiunta del supporto per il formato `pointer[index]`, semanticamente identico al formato `*(pointer+index)` per la dereferenziazione del puntatore.
 
 ## <a name="2004"></a>2.0.0.4
 
@@ -173,7 +247,7 @@ Data di rilascio: 5 marzo 2019
 
 - **Integrazione:**
 
-  - Aggiornamento dell'API ScriptableObject.
+  - Aggiornamento dell' `ScriptableObject` API.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -189,7 +263,7 @@ Data di rilascio: 5 marzo 2019
 
 - **Project Generation:**
 
-  - I campi pubblici e serializzati non causeranno più avvisi. Sono stati soppressi automaticamente gli avvisi del compilatore CS0649 e IDE0051 nei progetti di Unity che creavano questi messaggi.
+  - I campi pubblici e serializzati non causeranno più avvisi. Sono stati eliminati automaticamente gli `CS0649` avvisi del compilatore e `IDE0051` nei progetti Unity che hanno creato questi messaggi.
 
 - **Integrazione:**
 

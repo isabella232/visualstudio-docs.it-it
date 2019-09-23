@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: bdd835effaa691660d6462787bef590c2b985e49
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 06a1c5b637ca2ed9306162ee1960c60d103e5843
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70312054"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185977"
 ---
 # <a name="docker-compose-build-properties"></a>Proprietà di compilazione Docker Compose
 
@@ -19,7 +19,7 @@ Oltre alle proprietà che controllano singoli progetti Docker, descritti in [str
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Come impostare le proprietà di MSBuild
 
-Per impostare il valore di una proprietà, modificare il file di progetto. Per Docker Compose proprietà, questo è il file di progetto con estensione dcproj, salvo diversa indicazione nella tabella nella sezione successiva. Si supponga, ad esempio, di voler specificare di avviare il browser all'avvio del debug. È possibile impostare la `DockerLaunchAction` proprietà nel file di progetto con estensione dcproj, come indicato di seguito.
+Per impostare il valore di una proprietà, modificare il file di progetto. Per Docker Compose proprietà, questo file di progetto è quello con estensione dcproj, salvo diversa indicazione nella tabella nella sezione successiva. Si supponga, ad esempio, di voler specificare di avviare il browser all'avvio del debug. È possibile impostare la `DockerLaunchAction` proprietà nel file di progetto con estensione dcproj, come indicato di seguito.
 
 ```xml
 <PropertyGroup>
@@ -29,19 +29,24 @@ Per impostare il valore di una proprietà, modificare il file di progetto. Per D
 
 È possibile aggiungere l'impostazione della proprietà a un `PropertyGroup` elemento esistente o, se non ne esiste uno, creare `PropertyGroup` un nuovo elemento.
 
-
 ## <a name="docker-compose-msbuild-properties"></a>Proprietà di Docker Compose MSBuild
 
 Nella tabella seguente vengono illustrate le proprietà MSBuild disponibili per i progetti Docker Compose.
 
-| Nome proprietà | Location | Descrizione | Valore predefinito  |
+| Nome della proprietà | Percorso | Descrizione | Valore predefinito  |
 |---------------|----------|-------------|----------------|
-|DockerComposeProjectPath|csproj o vbproj|Percorso relativo del file del progetto Docker-compose (dcproj). Viene usato durante la pubblicazione del progetto di servizio per trovare le impostazioni di compilazione dell'immagine associate archiviate nel file Docker-compose. yml.|-|
-|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire in F5 o CTRL + F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient|Nessuna|
+|DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose build` comando. Ad esempio, `--parallel --pull`. |
+|DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose down` comando. Ad esempio, `--timeout 500`.|-|  
+|DockerComposeProjectPath|csproj o vbproj|Percorso relativo del file del progetto Docker-compose (dcproj). Impostare questa proprietà quando si pubblica il progetto di servizio per trovare le impostazioni di compilazione dell'immagine associate archiviate nel file Docker-compose. yml.|-|
+|DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose up` comando. Ad esempio, `--timeout 500`.|-|
+|DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire in F5 o CTRL + F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient|nessuno|
 |DockerLaunchBrowser| dcproj | Indica se avviare il browser. Viene ignorato se viene specificato DockerLaunchAction. | False |
-|DockerServiceName| dcproj|Se vengono specificati DockerLaunchAction o DockerLaunchBrowser, DockerServiceName è il nome del servizio che deve essere avviato.  Viene usato per determinare quale dei potenziali progetti a cui può fare riferimento un file Docker-compose verrà avviato.|-|
+|DockerServiceName| dcproj|Se vengono specificati DockerLaunchAction o DockerLaunchBrowser, DockerServiceName è il nome del servizio che deve essere avviato.  Usare questa proprietà per determinare il numero potenzialmente elevato di progetti a cui può fare riferimento un file Docker-compose.|-|
 |DockerServiceUrl| dcproj | URL da utilizzare all'avvio del browser.  I token di sostituzione validi sono "{ServiceIPAddress}", "{ServicePort}" e "{Scheme}".  Ad esempio: {Scheme}://{ServiceIPAddress}: {ServicePort}|-|
 |DockerTargetOS| dcproj | Sistema operativo di destinazione usato durante la compilazione dell'immagine docker.|-|
+
+> [!NOTE]
+> DockerComposeBuildArguments, DockerComposeDownArguments e DockerComposeUpArguments sono una novità di Visual Studio 2019 versione 16,3 Preview 3.
 
 ## <a name="docker-compose-file-labels"></a>Etichette file Docker Compose
 
@@ -58,10 +63,10 @@ Utilizzare le virgolette doppie intorno ai valori, come nell'esempio precedente,
 
 |Nome etichetta|Descrizione|
 |----------|-----------|
-|com. Microsoft. VisualStudio. debuggingee. Arguments|Argomenti passati al programma all'avvio del debug. Per le app .NET Core, si tratta in genere di un set di percorsi di ricerca aggiuntivi per i pacchetti NuGet seguiti dal percorso dell'assembly di output del progetto.|
+|com. Microsoft. VisualStudio. debuggingee. Arguments|Argomenti passati al programma all'avvio del debug. Per le app .NET Core, questi argomenti sono in genere percorsi di ricerca aggiuntivi per i pacchetti NuGet seguiti dal percorso dell'assembly di output del progetto.|
 |com. Microsoft. VisualStudio. debuggingee. killprogram|Questo comando viene usato per arrestare il programma sottoposto a debug in esecuzione all'interno del contenitore, se necessario.|
-|com. Microsoft. VisualStudio. debuggingee. Program|Programma avviato all'avvio del debug. Per le app .NET Core, si tratta in genere di **DotNet**.|
-|com. Microsoft. VisualStudio. debuggingee. WorkingDirectory|Directory utilizzata come directory iniziale all'avvio del debug. Si tratta in genere di */app* per i contenitori Linux o *C:\app* per i contenitori di Windows.|
+|com. Microsoft. VisualStudio. debuggingee. Program|Programma avviato all'avvio del debug. Per le app .NET Core questa impostazione è in genere **DotNet**.|
+|com. Microsoft. VisualStudio. debuggingee. WorkingDirectory|Directory utilizzata come directory iniziale all'avvio del debug. Questa impostazione è in genere */app* per i contenitori Linux o *C:\app* per i contenitori di Windows.|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

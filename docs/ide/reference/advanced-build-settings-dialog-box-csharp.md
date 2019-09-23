@@ -1,6 +1,6 @@
 ---
 title: Finestra di dialogo Impostazioni di compilazione avanzate (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461888"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186795"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Finestra di dialogo Impostazioni di compilazione avanzate (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Finestra di dialogo Impostazioni di compilazioneC#avanzate ()
 
-Per specificare le proprietà di configurazione avanzate della build del progetto, usare la finestra di dialogo **Impostazioni di compilazione avanzate** di **Progettazione progetti**. Questa finestra di dialogo è applicabile solo ai progetti [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
+Per specificare le proprietà di configurazione avanzate della build del progetto, usare la finestra di dialogo **Impostazioni di compilazione avanzate** di **Progettazione progetti**. Questa finestra di dialogo si C# applica solo ai progetti.
 
 ## <a name="general"></a>Generale
 
@@ -30,19 +30,19 @@ Le opzioni seguenti consentono di configurare le impostazioni avanzate generali.
 
 **Versione linguaggio**
 
-Specifica la versione del linguaggio da usare. Il set di funzionalità varia a seconda della versione. Questa opzione può quindi essere usata per forzare il compilatore ad attivare solo un sottoinsieme delle funzionalità implementate oppure solo le funzionalità compatibili con uno standard esistente. Le opzioni di questa impostazione sono le seguenti:
+::: moniker range=">=vs-2019"
 
-- **default**
+Collegamenti a [/langversion (C# opzioni del compilatore)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), che fornisce informazioni sul modo in cui viene scelta una versione della lingua predefinita basata sul Framework di destinazione di un progetto.
 
-   Fa riferimento alla versione corrente.
+::: moniker-end
 
-- **ISO-1** e **ISO-2**
+::: moniker range="vs-2017"
 
-   Fa rispettivamente riferimento alle funzionalità standard ISO-1 e ISO-2.
+Specifica la versione del linguaggio da usare. Il set di funzionalità varia a seconda della versione. Questa opzione può quindi essere usata per forzare il compilatore ad attivare solo un sottoinsieme delle funzionalità implementate oppure solo le funzionalità compatibili con uno standard esistente.
 
-- **C# [numero versione]**
+Il valore predefinito è C# 7,0.
 
-   Fa riferimento a una versione specifica di C#. Per altre informazioni, vedere [/langversion (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Segnalazione errori interni del compilatore**
 

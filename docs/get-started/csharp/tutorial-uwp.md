@@ -3,7 +3,7 @@ title: Creare un'app per la piattaforma UWP (Universal Windows Platform) con Vis
 description: Creare un'app UWP in Visual Studio con XAML e C#
 titleSuffix: ''
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 930512d762a05a91ab233566b76c6591ab2ea6d4
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095376"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186850"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: Creare una prima applicazione con la piattaforma UWP in Visual Studio con XAML e C&#35;
 
@@ -62,6 +62,10 @@ Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal
 
    > [!NOTE]
    > Se il modello di progetto **App vuota (Windows universale)** non viene visualizzato, fare clic sul collegamento **Installa altri strumenti e funzionalità**.<br><br>![Fare clic sul collegamento Installa altri strumenti e funzionalità](media/vs-2019/uwp-not-finding.png)<br><br>Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** e scegliere **Modifica**.<br><br>![Carico di lavoro Sviluppo di app per la piattaforma UWP (Universal Windows Platform) nel programma di installazione di Visual Studio](media/uwp-dev-workload.png)
+
+1. Assegnare al progetto un nome, _HelloWorld_e scegliere **Crea**.
+
+   ![Configurare la schermata del progetto](media/vs-2019/uwp-configure-your-project.png)
 
 1. Nella finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)** accettare le impostazioni predefinite per **Versione di destinazione** e **Versione minima**.
 
@@ -154,13 +158,15 @@ Il codice usa alcune API Windows per creare un oggetto di sintesi vocale e asseg
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 
+
+::: moniker range="vs-2017"
 A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello World" per verificarne l'aspetto e l'audio. Ecco come fare.
 
 1. Usare il pulsante di riproduzione (include il testo **Computer locale**) per avviare l'applicazione nel computer locale.
 
    ![Fare clic su Computer locale per avviare ed eseguire il debug dell'app UWP](media/uwp-start-or-debug.png)
 
-   In alternativa, è possibile scegliere **Debug** > **Avvia debug** dalla barra dei menu o premere F5 per avviare l'app.
+   In alternativa, è possibile scegliere **debug** > **Avvia debug** dalla barra dei menu o premere F5 per avviare l'app.
 
 1. Visualizzare l'app, che viene visualizzata subito dopo una schermata iniziale. L'app dovrebbe avere un aspetto simile al seguente:
 
@@ -171,6 +177,28 @@ A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello Wo
    Il dispositivo Windows 10 pronuncerà le parole "Hello, World!"
 
 1. Per chiudere l'app, fare clic sul pulsante **Arresta debug** sulla barra degli strumenti. In alternativa, scegliere **Debug** > **Arresta debug** dalla barra degli strumenti oppure premere MAIUSC+F5.
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello World" per verificarne l'aspetto e l'audio. Ecco come fare.
+
+1. Usare il pulsante di riproduzione (include il testo **Computer locale**) per avviare l'applicazione nel computer locale.
+
+   ![Fare clic su Computer locale per avviare ed eseguire il debug dell'app UWP](media/uwp-start-or-debug.png)
+
+   In alternativa, è possibile scegliere **debug** > **Avvia debug** dalla barra dei menu o premere F5 per avviare l'app.
+
+1. Visualizzare l'app, che viene visualizzata subito dopo una schermata iniziale. L'app dovrebbe avere un aspetto simile al seguente:
+
+   ![App UWP "Hello World"](media/vs-2019/uwp-hello-world-app.png)
+
+1. Fare clic sul pulsante **Hello World**.
+
+   Il dispositivo Windows 10 pronuncerà le parole "Hello, World!"
+
+1. Per chiudere l'app, fare clic sul pulsante **Arresta debug** sulla barra degli strumenti. In alternativa, scegliere **Debug** > **Arresta debug** dalla barra degli strumenti oppure premere MAIUSC+F5.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Passaggi successivi
 
