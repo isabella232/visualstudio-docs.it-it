@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 71ec5cf14f4cd336b8f92c15b4f0859c7a613354
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811997"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186819"
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -25,7 +25,17 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 
 - Applicare una correzione del codice per la violazione di una regola dell'[analizzatore del codice](../code-quality/roslyn-analyzers-overview.md)
 
+::: moniker range=">=vs-2019"
+
+- [Elimina](../code-quality/use-roslyn-analyzers.md#suppress-violations) la violazione di una regola dell'analizzatore del codice o ne [Configura](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) la gravità
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 - [Eliminare](../code-quality/use-roslyn-analyzers.md#suppress-violations) la violazione di una regola dell'analizzatore del codice
+
+::: moniker-end
 
 - Effettuare un refactoring (ad esempio [impostare come inline una variabile temporanea](../ide/reference/inline-temporary-variable.md))
 
@@ -34,7 +44,7 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Refactoring (Visual Studio per Mac)](/visualstudio/mac/refactoring).
 
-Le azioni rapide possono essere applicate usando le icone a forma di lampadina ![icona lampadina](media/light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/screwdriver-icon.png) oppure premendo **CTRL**+**.** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
+Le azioni rapide possono essere applicate usando le icone a forma di lampadina ![icona lampadina](media/light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/screwdriver-icon.png) oppure premendo **CTRL**+ **.** quando il cursore si trova su una riga di codice per la quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
 
 È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio compariranno in base a tali regole.
 
@@ -52,7 +62,7 @@ Se è disponibile una correzione, le lampadine compaiono:
 
 - Nel margine sinistro dell'editor quando si sposta il punto di inserimento (cursore) sulla riga di codice applicabile
 
-È anche possibile premere **CTRL**+**.** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
+È anche possibile premere **CTRL**+ **.** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
 
 Per vedere le potenziali correzioni, selezionare la freccia GIÙ accanto alla lampadina o il collegamento **Mostra correzioni potenziali**. Viene visualizzato un elenco delle azioni rapide disponibili.
 
@@ -62,6 +72,6 @@ Per vedere le potenziali correzioni, selezionare la freccia GIÙ accanto alla la
 
 - [Generazione di codice in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Azioni rapide comuni](../ide/common-quick-actions.md)
-- [Stili di codice e azioni rapide](../ide/code-styles-and-quick-actions.md)
+- [Stili di codice e azioni rapide](../ide/code-styles-and-code-cleanup.md)
 - [Codice di scrittura e refactoring (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Refactoring (Visual Studio per Mac)](/visualstudio/mac/refactoring)

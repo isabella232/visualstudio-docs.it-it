@@ -1,6 +1,6 @@
 ---
-title: Set di regole dell'analizzatore
-ms.date: 04/22/2019
+title: Set di regole dell'analizzatore FxCop
+ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,22 +10,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585142"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185947"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Set di regole per pacchetti dell'analizzatore
 
 I set di regole predefiniti sono inclusi con alcuni pacchetti dell'analizzatore NuGet. Ad esempio, i set di regole inclusi nel pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer (a partire dalla versione 2.6.2) abilitano o disabilitano le regole in base alla categoria, ad esempio sicurezza, denominazione o prestazioni. L'uso di set di regole consente di visualizzare rapidamente solo le violazioni delle regole relative a una particolare categoria di regole.
 
+Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche. I set di regole consentono di abilitare o disabilitare le regole e impostare la gravità per le singole violazioni delle regole. Il pacchetto NuGet dell'analizzatore FxCop include set di regole predefiniti per le categorie di regole seguenti:
+
+- progettazione
+- documentazione
+- manutenibilità
+- denominazione
+- prestazioni
+- affidabilità
+- sicurity
+- utilizzo
+
 Se si esegue la migrazione da un'analisi "FxCop" legacy a un'analisi del codice basata su .NET Compiler Platform, questi set di regole consentono di continuare a usare configurazioni di regole simili a [quelle usate in precedenza](rule-set-reference.md).
 
 ## <a name="use-analyzer-package-rule-sets"></a>Usare set di regole del pacchetto dell'analizzatore
 
-Dopo aver [installato un pacchetto di analizzatore NuGet](install-roslyn-analyzers.md), individuare il set di regole predefinito nella relativa directory RuleSets. Ad esempio, se si fa riferimento al `Microsoft.CodeAnalysis.FxCopAnalyzers` pacchetto dell'analizzatore, è possibile trovare la directory *RuleSets* in *% USERPROFILE\\%.\\\<nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers Version \rulesets\>* . Da qui, copiare uno o più RuleSet e incollarli nella directory che contiene il progetto di Visual Studio o direttamente in **Esplora soluzioni**.
+Dopo aver [installato un pacchetto di analizzatore NuGet](install-roslyn-analyzers.md), individuare il set di regole predefinito nella relativa directory *RuleSets* . Ad esempio, se si fa riferimento al `Microsoft.CodeAnalysis.FxCopAnalyzers` pacchetto dell'analizzatore, è possibile trovare la directory *RuleSets* in *% USERPROFILE\\%.\\\<nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers Version \rulesets\>* . Da qui, copiare uno o più RuleSet e incollarli nella directory che contiene il progetto di Visual Studio o direttamente in **Esplora soluzioni**.
 
 È anche possibile [personalizzare un set di regole predefinito](how-to-create-a-custom-rule-set.md) per le proprie preferenze. Ad esempio, è possibile modificare la gravità di una o più regole in modo che le violazioni vengano visualizzate come errori o avvisi nell' **Elenco errori**.
 
@@ -74,5 +85,5 @@ Il pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/pac
 - [Domande frequenti sugli analizzatori](analyzers-faq.md)
 - [Panoramica degli analizzatori .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Installare gli analizzatori](install-roslyn-analyzers.md)
-- [Usare gli analizzatori](use-roslyn-analyzers.md)
+- [Configurare gli analizzatori](use-roslyn-analyzers.md)
 - [Usare set di regole per raggruppare le regole di analisi del codice](using-rule-sets-to-group-code-analysis-rules.md)
