@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/16/2019
+ms.date: 09/23/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f489d453e75031ddb9bd26e59cd4af182301c159
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 84e4fba6e55cc7fd4cdfbbd28303aac4cf912bff
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062380"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186407"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,10 @@ ms.locfileid: "71062380"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.0 | Preview 1 | 23 settembre 2019 | 16.4.29319.158 |
+| 16.3.0 | Versione | 23 settembre 2019 | 16.3.29318.209 |
 | 16.3.0 | Preview 4 | 16 settembre 2019 | 16.3.29311.281 |
 | 16.2.5 | Versione | 10 settembre 2019 | 16.2.29306.81 |
 | 16.0.8 | Versione | 10 settembre 2019 | 16.0.28803.584 |
@@ -94,7 +96,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.16 | Versione | 10 settembre 2019 | 15.9.28307.858 |
 | 15.0.27 | Versione | 10 settembre 2019 | 15.0.26228.98 |
@@ -173,7 +175,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.11 | Versione | 13 marzo 2018 | 15.0.26228.29 |
 | 15.6.1 | Versione | 8 marzo 2018 | 15.6.27428.2002 |
 | 15.6.1 Preview 1 | Anteprima | 8 marzo 2018 | 15.6.27428.2002 |
-| 15.6.0 | Versione | 5 marzo 2018 | 15.6.27428.1 |
+| 15.6.0 | Versione | March 5, 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 7 | Anteprima | 2 marzo 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 6 | Anteprima | 23 febbraio 2018 | 15.6.27421.1 |
 | 15.0.10 | Versione | 21 febbraio 2018 | 15.0.26228.28 |
