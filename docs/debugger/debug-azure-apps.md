@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug di servizi di Azure | Microsoft Docs
+title: Eseguire il debug dei servizi di Azure | Microsoft Docs
 ms.date: 09/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 940097c58d6c18e3be5f6659d764007b16cd4859
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563360"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211273"
 ---
-# <a name="debug-azure-services-in-visual-studio"></a>Eseguire il debug di servizi di Azure in Visual Studio
+# <a name="debug-azure-services-in-visual-studio"></a>Eseguire il debug dei servizi di Azure in Visual Studio
 
-È possibile usare Visual Studio per eseguire il debug di servizi di Azure in diversi scenari:
+È possibile usare Visual Studio per eseguire il debug dei servizi di Azure in scenari diversi:
 
-- Per eseguire il debug di un'app di produzione ospitata in servizio App di Azure, vedere [Debug live App ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-applications.md).
+- Per eseguire il debug di un'app di produzione ospitata nel servizio app Azure, vedere [eseguire il debug di app ASP.NET Live usando il snapshot debugger](../debugger/debug-live-azure-applications.md).
 
-- Per eseguire il debug di un'app di produzione ospitata in una macchina virtuale di Azure o un set di scalabilità di macchine virtuali di Azure, vedere [usando il Debugger di Snapshot di set di scalabilità di macchine virtuali di Azure e Debug in tempo reale le macchine virtuali di Azure ASP.NET](../debugger/debug-live-azure-virtual-machines.md).
+- Per eseguire Snapshot Debugger il debug di un'app di produzione ospitata in una macchina virtuale di Azure o in un set di scalabilità di macchine virtuali di Azure, vedere [eseguire il debug di macchine virtuali ASP.NET di Azure e set di scalabilità](../debugger/debug-live-azure-virtual-machines.md)di macchine virtuali
 
-- Per eseguire il debug di un'app di produzione ospitata in Azure Kubernetes Service, vedere [Debug live di servizi di Kubernetes Azure ASP.NET usando il Debugger di Snapshot](../debugger/debug-live-azure-kubernetes.md).
+- Per eseguire il debug di un'app di produzione ospitata nel servizio Azure Kubernetes, vedere [eseguire il debug dei servizi di Azure Kubernetes ASP.NET usando il snapshot debugger](../debugger/debug-live-azure-kubernetes.md).
 
-- Eseguire il debug di un'app di produzione con Application Insights e ospitate nel servizio App di Azure o Service Fabric, vedere [snapshot di Debug per le eccezioni nelle app .NET](/azure/application-insights/app-insights-snapshot-debugger).
+- Per eseguire il debug di un'app di produzione usando Application Insights e ospitata nel servizio app Azure o Service Fabric, vedere [snapshot di debug per le eccezioni nelle app .NET](/azure/application-insights/app-insights-snapshot-debugger).
 
-- Eseguire il debug remoto ASP.NET in IIS (servizio App di Azure o una macchina virtuale di Azure), vedere [Remote Debugging ASP.NET on Azure](remote-debugging-azure.md).
+- Per eseguire il debug remoto di ASP.NET in IIS (app Azure servizio o una macchina virtuale di Azure), vedere [Remote Debugging ASP.NET in Azure](remote-debugging-azure.md).
 
-- Eseguire il debug remoto ASP.NET in Azure Service Fabric, vedere [il Debug di un'applicazione di Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Per eseguire il debug remoto di ASP.NET in Azure Service Fabric, vedere [eseguire il debug di un'applicazione Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)

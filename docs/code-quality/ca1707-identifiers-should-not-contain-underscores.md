@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbd6d3999525808180f69652290807d327b6814
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797356"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234276"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Gli identificatori non devono contenere caratteri di sottolineatura
 
@@ -28,27 +28,27 @@ ms.locfileid: "62797356"
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
 |Category|Microsoft.Naming|
-|Modifica importante|Interrompere l'esecuzione, quando generati sugli assembly<br /><br /> Non sostanziale - Quando generato nei parametri di tipo|
+|Modifica|Suddivisione in caso di generazione di assembly<br /><br /> Senza interruzioni: quando viene generato un parametro di tipo|
 
 ## <a name="cause"></a>Causa
 
-Il nome di un identificatore contiene il carattere di sottolineatura (\_) caratteri.
+Il nome di un identificatore contiene il carattere di sottolineatura (\_).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Per convenzione, i nomi degli identificatori non contengono il carattere di sottolineatura (\_) caratteri. La regola controlla gli spazi dei nomi, tipi, membri e parametri.
+Per convenzione, i nomi degli identificatori non contengono il carattere\_di sottolineatura (). La regola controlla gli spazi dei nomi, i tipi, i membri e i parametri.
 
-Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
 Rimuovere tutti i caratteri di sottolineatura dal nome.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non escludere un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

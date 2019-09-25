@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f78ea4f44c48d2740df58def03a6335bce6637a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545932"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234341"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 
@@ -28,7 +28,7 @@ ms.locfileid: "62545932"
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Category|Microsoft.Naming|
-|Modifica importante|Rilievo-when generato su assembly.<br /><br /> Non sostanziale - Quando viene attivato su parametri di tipo.|
+|Modifica|Interruzioni durante l'attivazione degli assembly.<br /><br /> Senza interruzioni: quando viene attivato sui parametri di tipo.|
 
 ## <a name="cause"></a>Causa
 
@@ -36,17 +36,17 @@ Il nome di un identificatore contiene più parole, fra cui almeno una che sembra
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Il nome dell'identificatore è suddiviso in parole che si basano le maiuscole e minuscole. Ogni combinazione di due parole contigui viene controllata dalla libreria del correttore ortografico Microsoft. Se è riconosciuta, l'identificatore genera una violazione della regola. Sono esempi di parole composte che causano una violazione "CheckSum" e "MultiPart", che devono essere digitati "Checksum" e "Multipart", rispettivamente. A causa di uso comune precedente, numerose eccezioni sono incorporate nella regola, e sono contrassegnate molte parole singole, ad esempio "Toolbar" e "Filename", che devono essere digitati due parole di distinte (in questo caso, "ToolBar" e "FileName").
+Il nome dell'identificatore viene suddiviso in parole basate sulla combinazione di maiuscole e minuscole. Ogni combinazione di due parole contigue viene controllata dalla libreria del correttore ortografico Microsoft. Se viene riconosciuta, l'identificatore produce una violazione della regola. Esempi di parole composte che causano una violazione sono "CheckSum" e "MultiPart", che devono essere considerati come "checksum" e "multipart", rispettivamente. A causa dell'utilizzo comune precedente, vengono compilate diverse eccezioni nella regola e vengono contrassegnate diverse parole, ad esempio "barra degli strumenti" e "nomefile", che devono essere racchiuse tra due parole distinte, in questo caso "barra degli strumenti" e "nomefile".
 
-Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Modificare il nome in modo che viene maiuscole e minuscole.
+Modificare il nome in modo che sia inserito correttamente nel caso.
 
 ## <a name="language"></a>Linguaggio
 
-Il correttore ortografico attualmente verifica solo a dizionari le impostazioni cultura basate su inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto, aggiungendo il **CodeAnalysisCulture** elemento.
+Il controllo ortografico attualmente controlla solo i dizionari delle impostazioni cultura in lingua inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto aggiungendo l'elemento **CodeAnalysisCulture** .
 
 Ad esempio:
 
@@ -57,17 +57,17 @@ Ad esempio:
 ```
 
 > [!IMPORTANT]
-> Se si imposta le impostazioni cultura su un valore qualsiasi diverso da una cultura basata su inglese, questa regola di analisi del codice viene disabilitata automaticamente.
+> Se si impostano le impostazioni cultura su un valore diverso da una lingua inglese, questa regola di analisi del codice viene disabilitata automaticamente.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se entrambe le parti della parola composta sono riconosciute dal dizionario ortografici e l'intento consiste nell'usare due parole.
+È possibile eliminare un avviso da questa regola se entrambe le parti della parola composta sono riconosciute dal dizionario ortografico e l'intento è usare due parole.
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701 Le parole composte della stringa di risorsa devono essere configurate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Vedere anche
 

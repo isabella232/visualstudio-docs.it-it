@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a7214ce37aa48d69b9261d686960fa0a4c308c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caaae787d5e4801f3fc3b8d881b386595fb2eca4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546349"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234682"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Contrassegnare le interfacce ComSource come IDispatch
 
@@ -30,22 +30,22 @@ ms.locfileid: "62546349"
 |-|-|
 |TypeName|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
-|Category|Microsoft.Interoperability|
-|Modifica importante|Interruzione|
+|Category|Microsoft. interoperabilità|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un tipo è contrassegnato con il <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attributo e almeno un'interfaccia specificata non è contrassegnato con il <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attributo impostato sul `InterfaceIsDispatch` valore.
+Un tipo è contrassegnato con l' <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attributo e almeno un'interfaccia specificata non è contrassegnata con l' <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attributo impostato `InterfaceIsDispatch` sul valore.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> Consente di identificare le interfacce eventi che una classe espone ai client modello COM (Component Object). Queste interfacce devono essere esposti come `InterfaceIsIDispatch` per consentire ai client COM Visual Basic 6 ricevere le notifiche degli eventi. Per impostazione predefinita, se un'interfaccia non è contrassegnata con il <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attributo, viene esposta come un'interfaccia duale.
+<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>viene usato per identificare le interfacce di eventi esposte da una classe per Component Object Model client (COM). Queste interfacce devono essere esposte come `InterfaceIsIDispatch` per consentire a Visual Basic 6 client COM di ricevere notifiche degli eventi. Per impostazione predefinita, se un'interfaccia non è contrassegnata <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> con l'attributo, viene esposta come interfaccia duale.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, aggiungere o modificare la <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> dell'attributo in modo che il relativo valore è impostato su InterfaceIsIDispatch per tutte le interfacce che vengono specificate con la <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attributo.
+Per correggere una violazione di questa regola, aggiungere o modificare l' <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attributo in modo che il relativo valore sia impostato su InterfaceIsIDispatch per tutte le interfacce specificate con <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> l'attributo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non escludere un avviso da questa regola.
 
@@ -58,7 +58,7 @@ Nell'esempio seguente viene illustrata una classe in cui una delle interfacce vi
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1408: Non utilizzare AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408: Non usare AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Vedere anche
 

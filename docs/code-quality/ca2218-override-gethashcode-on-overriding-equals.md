@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dbd8580f5aaeb88c08d35b50258510cb1a85ba2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8699e3434dc9c4cf9d3eccc37916c20ff7f34015
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920297"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231193"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Eseguire l'override di GetHashCode all'override di Equals
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920297"
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
 |Category|Microsoft.Usage|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un tipo pubblico esegue <xref:System.Object.Equals%2A?displayProperty=fullName> l'override, ma <xref:System.Object.GetHashCode%2A?displayProperty=fullName>non esegue l'override.

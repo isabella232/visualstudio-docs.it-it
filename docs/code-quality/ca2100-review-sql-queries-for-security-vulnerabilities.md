@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744803"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233056"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL
 
@@ -33,23 +33,23 @@ ms.locfileid: "66744803"
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
 |Category|Microsoft.Security|
-|Modifica importante|Non sostanziale|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Imposta un metodo di <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> proprietà usando una stringa che viene creata da un argomento di stringa al metodo.
+Un metodo imposta la <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> proprietà utilizzando una stringa compilata da un argomento stringa nel metodo.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL, In un attacco SQL injection, un utente malintenzionato fornisce un input che modifica la progettazione di una query nel tentativo di danneggiare o accesso non autorizzato al database sottostante. Tecniche tipiche includono l'inserimento di una virgoletta singola o un apostrofo, ovvero il delimitatore di stringa letterale SQL; due trattini, che indica un commento SQL; e un punto e virgola, che indica che un nuovo comando segue. Se l'input dell'utente deve essere parte della query, usare uno dei seguenti, elencate in ordine di efficienza, per ridurre il rischio di attacco.
+La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL, In un attacco SQL injection, un utente malintenzionato fornisce un input che modifica la progettazione di una query in un tentativo di danneggiare o ottenere accesso non autorizzato al database sottostante. Le tecniche tipiche includono l'inserimento di una virgoletta singola o di un apostrofo, ovvero il delimitatore di stringa letterale SQL; due trattini, che indica un commento SQL; e un punto e virgola, che indica che segue un nuovo comando. Se l'input dell'utente deve far parte della query, usare uno dei seguenti elementi, elencati in ordine di efficacia, per ridurre il rischio di attacco.
 
-- Usare una stored procedure.
+- Usare un stored procedure.
 
 - Usare una stringa di comando con parametri.
 
-- Convalidare l'input dell'utente per tipo sia il contenuto prima di compilare la stringa di comando.
+- Convalidare l'input dell'utente per il tipo e il contenuto prima di compilare la stringa di comando.
 
-I seguenti tipi di .NET implementano il <xref:System.Data.IDbCommand.CommandText%2A> proprietà o fornire costruttori che impostare la proprietà con un argomento di tipo stringa.
+I tipi .NET seguenti implementano <xref:System.Data.IDbCommand.CommandText%2A> la proprietà o forniscono costruttori che impostano la proprietà tramite un argomento di stringa.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> e <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -59,16 +59,16 @@ I seguenti tipi di .NET implementano il <xref:System.Data.IDbCommand.CommandText
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> e <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
-Si noti che questa regola viene violata quando viene utilizzato il metodo ToString di un tipo esplicito o implicito per costruire la stringa di query. Di seguito è riportato un esempio.
+Si noti che questa regola viene violata quando il metodo ToString di un tipo viene usato in modo esplicito o implicito per costruire la stringa di query. Di seguito è riportato un esempio.
 
 ```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-La regola viene violata perché un utente malintenzionato può sostituire il metodo ToString ().
+La regola viene violata perché un utente malintenzionato può eseguire l'override del metodo ToString ().
 
-Inoltre, la regola viene violata quando ToString viene utilizzato in modo implicito.
+La regola viene violata anche quando si usa il metodo ToString in modo implicito.
 
 ```csharp
 int x = 10;
@@ -77,15 +77,15 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, usare una query con parametri.
+Per correggere una violazione di questa regola, utilizzare una query con parametri.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se il testo del comando non contiene alcun input utente.
+È possibile eliminare un avviso da questa regola se il testo del comando non contiene alcun input dell'utente.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo, `UnsafeQuery`, che viola la regola e un metodo, `SaferQuery`, che soddisfa la regola con una stringa di comando con parametri.
+Nell'esempio seguente viene illustrato un metodo `UnsafeQuery`,, che viola la regola e un metodo, `SaferQuery`, che soddisfa la regola utilizzando una stringa di comando con parametri.
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

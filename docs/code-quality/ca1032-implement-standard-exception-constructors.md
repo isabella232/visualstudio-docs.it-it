@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547667"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236056"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementare costruttori di eccezioni standard
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547667"
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
 |Category|Microsoft.Design|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -44,7 +44,7 @@ I tipi di eccezione devono implementare i tre costruttori seguenti:
 
 - public NewException (stringa, eccezione)
 
-Inoltre, se si esegue l'analisi FxCop legacy invece degli analizzatori [FxCop basati su .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md), anche l'assenza di un quarto costruttore genera una violazione:
+Inoltre, se si esegue l'analisi FxCop legacy invece degli [analizzatori FxCop basati su .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md), anche l'assenza di un quarto costruttore genera una violazione:
 
 - NewException protected o private (SerializationInfo, StreamingContext)
 

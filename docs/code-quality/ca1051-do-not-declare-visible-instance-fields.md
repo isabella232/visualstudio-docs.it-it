@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 296e8cb4753d487573957de1108a8cb27778ef4c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766062"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235797"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Non dichiarare campi di istanza visibili
 
@@ -28,7 +28,7 @@ ms.locfileid: "70766062"
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 

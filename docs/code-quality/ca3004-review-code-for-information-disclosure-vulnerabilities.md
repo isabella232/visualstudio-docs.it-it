@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4965c9df3c2256511b8e44de8d388a9155d0d8f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841597"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237383"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Esaminare il codice per verificare la presenza di vulnerabilità di tipo diffusione di informazioni
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841597"
 |TypeName|ReviewCodeForInformationDisclosureVulnerabilities|
 |CheckId|CA3004|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Messaggio di un'eccezione, analisi dello stack o rappresentazione di stringa raggiunge l'output web.
+Il messaggio, la traccia dello stack o la rappresentazione di stringa di un'eccezione raggiunge l'output Web.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Diffusione di informazioni sulle eccezioni offre informazioni dettagliate degli elementi interni dell'applicazione, che consentono agli utenti malintenzionati individuare altre vulnerabilità di sfruttare gli utenti malintenzionati.
+La divulgazione delle informazioni sulle eccezioni consente agli utenti malintenzionati di comprendere le caratteristiche interne dell'applicazione, che possono aiutare gli utenti malintenzionati a trovare altre vulnerabilità da sfruttare.
 
-Questa regola tenta di individuare un messaggio di eccezione, analisi dello stack o rappresentazione di stringa in fase di output in una risposta HTTP.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly rileva un'eccezione e quindi lo si passa a un altro assembly che genera l'eccezione, questa regola non genera un avviso.
+Questa regola tenta di trovare un messaggio di eccezione, una traccia dello stack o una rappresentazione di stringa che viene restituita a una risposta HTTP.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly rileva un'eccezione e la passa a un altro assembly che restituisce l'eccezione, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Non restituire le informazioni sull'eccezione per le risposte HTTP. In alternativa, fornire un messaggio di errore generico. Visualizzare [pagina di gestione degli errori dell'OWASP](https://www.owasp.org/index.php/Error_Handling) per altro materiale sussidiario.
+Non restituire informazioni sulle eccezioni alle risposte HTTP. Fornire invece un messaggio di errore generico. Per ulteriori informazioni, vedere [la pagina relativa alla gestione degli errori di OWASP](https://www.owasp.org/index.php/Error_Handling) .
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Se si conosce l'output web entro il limite di attendibilità dell'applicazione e mai esposta esternamente, è possibile eliminare l'avviso. Si tratta di una rara. Prendere in considerazione che il limite di attendibilità dell'applicazione e i flussi di dati possono cambiare nel tempo.
+Se si è certi che l'output Web si trovi all'interno del limite di attendibilità dell'applicazione e non viene mai esposto all'esterno, è possibile ignorare questo avviso. Si tratta di una situazione rara. Si prenda in considerazione che i flussi di dati e i limiti di attendibilità dell'applicazione possono cambiare nel tempo.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

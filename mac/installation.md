@@ -3,16 +3,16 @@ title: Installare Visual Studio 2019 per Mac
 description: Istruzioni su come installare Visual Studio 2019 per Mac e i componenti aggiuntivi necessari per lo sviluppo multipiattaforma.
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 2086532f0602b4a2509358cbb6d57178a9a1a0d4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691455"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211453"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installare Visual Studio 2019 per Mac
 
@@ -44,7 +44,7 @@ Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
 5. Verrà visualizzato un avviso che chiede di accettare le condizioni di licenza e l'informativa sulla privacy. Seguire i collegamenti per leggerle e quindi premere **Continua** se si accettano:
 
-    [![Seguire i collegamenti per la privacy e le condizioni, quindi continuare se si accettano](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Seguire i collegamenti per la privacy e le condizioni, quindi continuare se si accettano](media/install-privacy.png)](media/install-privacy.png#lightbox)
 
 6. Verrà visualizzato l'elenco dei carichi di lavoro disponibili. Selezionare i componenti da usare:
 
@@ -52,18 +52,29 @@ Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
    Se non si desidera installare tutte le piattaforme, usare la guida seguente per decidere quali piattaforme installare:
 
-   * **App con Xamarin**:
-      - Xamarin.Forms - Selezionare le piattaforme **Android** e **iOS**.
-      - Solo iOS - Selezionare la piattaforma **iOS** (si noti che sarà necessario installare [**Xcode**](https://developer.apple.com/xcode/)).
-      - Solo Android - Selezionare la piattaforma **Android** (si noti che è necessario selezionare anche le dipendenze rilevanti).
-      - Solo Mac - Selezionare la piattaforma **macOS** (si noti che sarà necessario installare [**Xcode**](https://developer.apple.com/xcode/)).
-      - App Xamarin completamente multipiattaforma - Selezionare le piattaforme **Android**, **iOS** e **macOS**.
-   * **Applicazioni .NET Core** - Selezionare la piattaforma **.NET Core**.
-   * **Applicazioni Web ASP.NET Core** - Selezionare la piattaforma **.NET Core**.
-   * **Sviluppo di giochi Unity multipiattaforma** - Non è necessario installare alcuna piattaforma aggiuntiva oltre a Visual Studio per Mac. Fare riferimento alla [guida all'installazione di Unity](/visualstudio/mac/setup-vsmac-tools-unity) per altre informazioni sull'installazione dell'estensione di Unity.
+
+|Tipo di app  |destinazione  |Selection  |Note  |
+|---------|---------|---------|---------|
+|**App che usano Novell**| Xamarin.Forms|Selezionare le piattaforme **Android** e **iOS** |È necessario installare [ **Xcode**](https://developer.apple.com/xcode/) |
+||solo iOS|Selezionare la piattaforma **iOS**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
+||Solo Android|Seleziona piattaforma **Android**|Si noti che è necessario selezionare anche le dipendenze rilevanti|
+||Solo Mac|Seleziona piattaforma **MacOS (Cocoa)**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
+|**Applicazioni .NET Core**|         |Selezionare piattaforma **.NET Core** .|         |
+|**Applicazioni Web ASP.NET Core**|         |Selezionare piattaforma **.NET Core** .|         |
+|**Funzioni di Azure**|         |Selezionare piattaforma **.NET Core** .|         |
+|**Sviluppo di Giochi Unity multipiattaforma**|         |Non è necessario installare altre piattaforme oltre Visual Studio per Mac.| Fare riferimento alla [guida all'installazione di Unity](/visualstudio/mac/setup-vsmac-tools-unity) per altre informazioni sull'installazione dell'estensione di Unity.|
+
 
 7. Dopo aver effettuato le selezioni, premere il pulsante **Installa**.
-8. Il programma di installazione visualizzerà lo stato di avanzamento del download e dell'installazione di Visual Studio per Mac e dei carichi di lavoro selezionati. Potrebbe essere richiesto di immettere la password per concedere i privilegi necessari per l'installazione.
+8. Il programma di installazione visualizzerà lo stato di avanzamento del download e dell'installazione di Visual Studio per Mac e dei carichi di lavoro selezionati. Verrà richiesto di immettere la password per concedere i privilegi necessari per l'installazione:
+
+    [![Scegliere le funzionalità facoltative per i carichi di lavoro da installare](media/installation-progress.png)](media/installation-progress.png#lightbox)
+
+9. Una volta installato, Visual Studio per Mac chiederà di personalizzare l'installazione effettuando l'accesso e selezionando i tasti di scelta rapida che si vuole usare:
+
+    [![Accedere all'IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
+
+    [![Scegliere i tasti di scelta rapida da usare](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
 Se si riscontrano problemi di rete durante l'installazione in un ambiente aziendale, rivedere le istruzioni per l'[installazione di Visual Studio per Mac protetto da un firewall o un proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
@@ -78,7 +89,7 @@ Per installare Visual Studio per Mac protetto da un firewall, determinati endpoi
 
 Configurare la rete per consentire l'accesso alle posizioni seguenti:
 
-- [Endpoint di Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Endpoint di Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

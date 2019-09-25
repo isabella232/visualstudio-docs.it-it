@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797320"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234548"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitare codice non gestibile
 
@@ -28,7 +28,7 @@ ms.locfileid: "62797320"
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
 |Category|Microsoft.Maintainability|
-|Modifica importante|Non sostanziale|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -36,19 +36,19 @@ Un tipo o metodo presenta un valore di indice di gestibilità basso.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-L'indice di manutenibilità viene calcolato usando le metriche seguenti: righe di codice, il volume del programma e complessità ciclomatica. Il volume del programma è una misura della difficoltà di comprensione di un tipo o metodo che si basa sul numero di operatori e operandi nel codice. Complessità ciclomatica è una misura della complessità strutturale del tipo o metodo. Altre informazioni sulla metrica del codice in [misurare la complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md).
+L'indice di gestibilità viene calcolato usando le metriche seguenti: righe di codice, volume del programma e complessità ciclomatica. Il volume del programma è una misura della difficoltà di comprensione di un tipo o di un metodo basato sul numero di operatori e operandi nel codice. La complessità ciclomatica è una misura della complessità strutturale del tipo o del metodo. È possibile ottenere altre informazioni sulle metriche del codice in base alla [complessità delle misure e alla gestibilità del codice gestito](../code-quality/code-metrics-values.md).
 
-Un indice di manutenibilità basso indica che un tipo o metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione.
+Un indice a bassa gestibilità indica che un tipo o un metodo è probabilmente difficile da gestire ed è un buon candidato per la riprogettazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere questa violazione, riprogettare il tipo o metodo e tentare di suddividerlo in più mirati e limitati di tipi o metodi.
+Per correggere la violazione, riprogettare il tipo o il metodo e provare a suddividerlo in tipi o metodi più piccoli e più specifici.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare questo avviso quando il tipo o metodo non può essere suddivisi o viene considerato accettabile, nonostante le grandi dimensioni.
+È possibile evitare questo avviso quando il tipo o il metodo non può essere suddiviso o considerato gestibile nonostante le sue dimensioni elevate.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md)
+- [Avvisi di gestibilità](../code-quality/maintainability-warnings.md)
 - [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)

@@ -3,14 +3,14 @@ title: Accesso a Visual Studio per Mac
 description: Come accedere a Visual Studio per Mac
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
-ms.translationtype: HT
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957405"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213670"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Accesso a Visual Studio per Mac
 
@@ -29,17 +29,17 @@ Se si decide di non eseguire immediatamente l'accesso, sarà possibile usare una
 > [!TIP]
 > Assicurarsi di essere connessi a Internet prima di accedere a Visual Studio per Mac. > Le sottoscrizioni possono essere attivate esclusivamente online. Se non si è connessi, scegliere "Lo farò più tardi " e accedere tramite il menu quando si è connessi.
 
-Per accedere a Visual Studio per Mac, seguire questa procedura:
+Per accedere a Visual Studio per Mac al primo avvio, seguire questa procedura:
 
 1. Nella finestra di accesso fare clic sul pulsante **Accedi con Microsoft**:
 
-    ![Finestra di dialogo Account in Visual Studio per Mac](media/signing-in-image12.png)
+    ![Finestra di dialogo Account in Visual Studio per Mac](media/ide-tour-2019-start-signin.png)
 
 2. Inserire le proprie credenziali Microsoft:
 
     ![Finestra di dialogo delle credenziali Microsoft](media/signing-in-image13.png)
 
-3. Dopo aver effettuato l'accesso, viene visualizzata la finestra iniziale di Visual Studio 2019 per Mac. Da qui è possibile aprire un progetto esistente o crearne uno nuovo:
+4. Dopo aver eseguito l'accesso, verrà visualizzata un'opzione per selezionare i tasti di scelta rapida. Selezionare l'opzione che si desidera utilizzare e **continuare**. Verrà quindi visualizzata la finestra di avvio di Visual Studio 2019 per Mac. Da qui è possibile aprire un progetto esistente o crearne uno nuovo:
 
     ![Accesso eseguito correttamente](media/signing-in-image14.png)
 

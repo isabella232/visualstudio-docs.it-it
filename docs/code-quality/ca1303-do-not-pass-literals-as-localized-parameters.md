@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc32db1aea9c5514a7548bc889b65463de3de3d5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2700dc2ade7ba901f15f67045e3170e2bbb40ff8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714693"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235121"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Non passare valori letterali come parametri localizzati
 
@@ -32,38 +32,38 @@ ms.locfileid: "66714693"
 |-|-|
 |TypeName|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
-|Category|Microsoft.Globalization|
-|Modifica importante|Non importante|
+|Category|Microsoft. globalizzazione|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un metodo passa una stringa letterale come parametro a un costruttore .NET o un metodo e tale stringa deve essere localizzabile.
+Un metodo passa un valore letterale stringa come parametro a un costruttore o a un metodo .NET e tale stringa deve essere localizzabile.
 
-Questo avviso viene generato quando una valore letterale stringa viene passata come valore per un parametro o una proprietà e uno o più delle seguenti condizioni sono true:
+Questo avviso viene generato quando una stringa letterale viene passata come valore a un parametro o a una proprietà e uno o più dei seguenti casi è true:
 
-- Il <xref:System.ComponentModel.LocalizableAttribute> attributi del parametro o della proprietà sono impostato su true.
+- L' <xref:System.ComponentModel.LocalizableAttribute> attributo del parametro o della proprietà è impostato su true.
 
-- Il nome di parametro o una proprietà contiene "Text", "Messaggio" o "Caption".
+- Il nome del parametro o della proprietà contiene "Text", "message" o "Caption".
 
-- Il nome del parametro di stringa che viene passato a un metodo Console. Write o console. WriteLine è "value" o "format".
+- Il nome del parametro stringa passato a un metodo Console. Write o console. WriteLine può essere "value" o "Format".
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Valori letterali stringa incorporati nel codice sorgente sono difficili da localizzare.
+I valori letterali stringa incorporati nel codice sorgente sono difficili da localizzare.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, sostituire il valore letterale stringa con una stringa recuperata tramite un'istanza di <xref:System.Resources.ResourceManager> classe.
+Per correggere una violazione di questa regola, sostituire il valore letterale stringa con una stringa recuperata tramite un' <xref:System.Resources.ResourceManager> istanza della classe.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se la libreria di codice non verrà localizzata o se la stringa non viene esposto all'utente finale o a uno sviluppatore che usa la libreria di codice.
+È possibile eliminare un avviso da questa regola se la libreria di codice non viene localizzata o se la stringa non è esposta all'utente finale o a uno sviluppatore che usa la libreria di codice.
 
-Gli utenti possono eliminare le segnalazioni con i metodi che non deve essere passato stringhe localizzate rinominando il parametro o una proprietà o contrassegnando tali elementi come condizionale.
+Gli utenti possono eliminare il rumore da metodi che non devono essere passati a stringhe localizzate rinominando il parametro o la proprietà o contrassegnando questi elementi come condizionale.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo che genera un'eccezione se uno dei due argomenti sono comprese nell'intervallo. Per il primo argomento, il costruttore di eccezione viene passato una stringa letterale che viola questa regola. Per il secondo argomento, il costruttore correttamente viene passato una stringa recuperata tramite una <xref:System.Resources.ResourceManager>.
+Nell'esempio seguente viene illustrato un metodo che genera un'eccezione quando uno dei due argomenti non è compreso nell'intervallo. Per il primo argomento, al costruttore di eccezione viene passata una stringa letterale che viola questa regola. Per il secondo argomento, al costruttore viene passata correttamente una stringa recuperata tramite <xref:System.Resources.ResourceManager>.
 
 [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
 [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
@@ -71,4 +71,4 @@ Nell'esempio seguente viene illustrato un metodo che genera un'eccezione se uno 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Risorse nelle App desktop](/dotnet/framework/resources/index)
+- [Risorse nelle applicazioni desktop](/dotnet/framework/resources/index)

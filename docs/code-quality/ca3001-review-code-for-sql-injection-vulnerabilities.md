@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841452"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238112"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: Esaminare il codice per verificare la presenza di vulnerabilità di tipo SQL injection
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841452"
 |TypeName|ReviewCodeForSqlInjectionsVulnerabilities|
 |CheckId|CA3001|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Input della richiesta HTTP potenzialmente non attendibili raggiunge il testo del comando SQL.
+Un input di richiesta HTTP potenzialmente non attendibile raggiunge il testo di un comando SQL.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando si lavora con input non attendibile e i comandi SQL, tenere presenti gli attacchi SQL injection. Un attacco SQL injection può eseguire comandi SQL dannosi, compromettere la sicurezza e l'integrità dell'applicazione. Tecniche tipiche includono l'uso di una virgoletta singola o un apostrofo per delimitare le stringhe letterali, due trattini per un commento e un punto e virgola per la fine di un'istruzione. Per altre informazioni, vedere [attacchi SQL Injection](/sql/relational-databases/security/sql-injection).
+Quando si utilizzano comandi SQL e input non attendibili, tenere presenti gli attacchi SQL injection. Un attacco SQL injection può eseguire comandi SQL dannosi, compromettendo la sicurezza e l'integrità dell'applicazione. Le tecniche tipiche includono l'uso di una virgoletta singola o di un apostrofo per la delimitazione di stringhe letterali, due trattini per un commento e un punto e virgola per la fine di un'istruzione. Per altre informazioni, vedere [SQL injection](/sql/relational-databases/security/sql-injection).
 
-Questa regola cerca di trovare input dalle richieste HTTP raggiunge il testo del comando SQL.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che esegue il comando SQL, questa regola non genera un avviso.
+Questa regola tenta di trovare l'input dalle richieste HTTP che raggiungono il testo di un comando SQL.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly legge l'input della richiesta HTTP e lo passa a un altro assembly che esegue il comando SQL, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Usare i comandi SQL con parametri o stored procedure con parametri che contiene l'input non attendibile.
+Utilizzare comandi SQL con parametri o stored procedure con parametri contenenti l'input non attendibile.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se si sa che l'input viene sempre convalidata su un set di caratteri sicuro noto.
+È possibile eliminare un avviso da questa regola se si è certi che l'input viene sempre convalidato rispetto a un set di caratteri sicuro noto.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 
@@ -165,7 +165,7 @@ Namespace VulnerableWebApp
 End Namespace
 ```
 
-### <a name="stored-procedure-solution"></a>Soluzione di stored procedure
+### <a name="stored-procedure-solution"></a>Soluzione stored procedure
 
 ```csharp
 using System;

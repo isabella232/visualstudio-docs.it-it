@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841428"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237288"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Esaminare il codice per verificare la presenza di vulnerabilità di tipo process command injection
 
@@ -24,34 +24,34 @@ ms.locfileid: "65841428"
 |TypeName|ReviewCodeForProcessCommandInjectionVulnerabilities|
 |CheckId|CA3006|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Input della richiesta HTTP potenzialmente non attendibili raggiunge un comando di elaborazione.
+Un input di richiesta HTTP potenzialmente non attendibile raggiunge un comando di elaborazione.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando si lavora con input non attendibile, tenere conto di attacchi intrusivi nel codice di comando. Un attacco injection comando può eseguire comandi dannosi nel sistema operativo sottostante, compromettere la sicurezza e l'integrità del server.
+Quando si lavora con un input non attendibile, tenere presente gli attacchi di inserimento dei comandi. Un attacco injection comando può eseguire comandi dannosi sul sistema operativo sottostante, compromettendo la sicurezza e l'integrità del server.
 
-Questa regola cerca di trovare input dalle richieste HTTP raggiungere un comando di elaborazione.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che avvia un processo, questa regola non genera un avviso.
+Questa regola tenta di trovare l'input da richieste HTTP che raggiungono un comando di elaborazione.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly legge l'input della richiesta HTTP e lo passa a un altro assembly che avvia un processo, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Evitare se possibile, vengono avviati i processi in base all'input utente.
-- Convalidare l'input in base a un set di caratteri e la lunghezza attendibili noto.
+- Se possibile, evitare di avviare i processi in base all'input dell'utente.
+- Convalidare l'input rispetto a un set di caratteri sicuro e di lunghezza noti.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Se si conosce l'input è stato convalidato o caratteri di escape per essere sicuri, è possibile eliminare questo avviso.
+Se si sa che l'input è stato convalidato o è stato preceduto da un carattere di escape sicuro, è possibile che l'avviso non venga eliminato.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

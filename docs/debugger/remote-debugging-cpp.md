@@ -1,5 +1,5 @@
 ---
-title: Eseguire il Debug remoto un progetto Visual C++ | Microsoft Docs
+title: Eseguire il debug remoto C++ di un progetto Visual | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,49 +17,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903515"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211105"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un progetto Visual C++ in Visual Studio di debug remoto
-Per eseguire il debug di un'applicazione di Visual Studio in un altro computer, installare ed eseguire remote tools sul computer in cui si distribuirà l'app, configurare il progetto per connettersi al computer remoto da Visual Studio e quindi distribuire ed eseguire l'app.
+# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Debug remoto di un C++ progetto Visual Studio in Visual Studio
+Per eseguire il debug di un'applicazione di Visual Studio in un computer diverso, installare ed eseguire Remote Tools nel computer in cui verrà distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi distribuire ed eseguire l'app.
 
 ![Componenti del debugger remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
-Per informazioni sulle app di Windows universali (UWP) di debug remoto, vedere [eseguire il Debug di un pacchetto dell'App installato](debug-installed-app-package.md).
+Per informazioni sul debug remoto di app di Windows universale (UWP), vedere [eseguire il debug di un pacchetto dell'app installato](debug-installed-app-package.md).
 
 ## <a name="requirements"></a>Requisiti
 
-Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) e le versioni di Windows Server a partire da Windows Server 2008 Service Pack 2. Per un elenco completo dei requisiti, vedere [requisiti](../debugger/remote-debugging.md#requirements_msvsmon).
+Il debugger remoto è supportato in Windows 7 e versioni successive (non telefono) e versioni di Windows Server a partire da Windows Server 2008 Service Pack 2. Per un elenco completo dei requisiti, vedere [requisiti](../debugger/remote-debugging.md#requirements_msvsmon).
 
 > [!NOTE]
-> Non è supportato tra due computer connessi tramite un proxy di debug. Debug tramite una latenza elevata o una connessione di larghezza di banda ridotta, ad esempio Internet, accesso remoto o la rete Internet tra paesi non è consigliabile e può avere esito negativo o essere inaccettabile.
+> Il debug tra due computer connessi tramite un proxy non è supportato. Non è consigliabile eseguire il debug su una connessione a larghezza di banda elevata o a bassa latenza, ad esempio Internet remoto, o su Internet tra paesi, e potrebbe avere esito negativo o essere inaccettabile.
 
 ## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare Remote Tools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
-> In alcuni scenari, può essere più efficiente per eseguire il debugger remoto da una condivisione file. Per altre informazioni, vedere [eseguire il debugger remoto da una condivisione file](../debugger/remote-debugging.md#fileshare_msvsmon).
+> In alcuni scenari, può essere più efficiente eseguire il debugger remoto da una condivisione file. Per altre informazioni, vedere [eseguire il debugger remoto da una condivisione file](../debugger/remote-debugging.md#fileshare_msvsmon).
 
 ## <a name="BKMK_setup"></a> Configurare il debugger remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> Se è necessario aggiungere le autorizzazioni per altri utenti, modificare la modalità di autenticazione o il numero di porta per il debugger remoto, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#configure_msvsmon).
+> Se è necessario aggiungere autorizzazioni per utenti aggiuntivi, modificare la modalità di autenticazione o il numero di porta per il debugger remoto, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
 ## <a name="remote_cplusplus"></a> Eseguire il debug remoto di un progetto Visual C++
- Nella procedura seguente, il nome e percorso del progetto sono C:\remotetemp\MyMfc e il nome del computer remoto viene **MJO DL**.
+ Nella procedura seguente il nome e il percorso del progetto sono C:\remotetemp\MyMfc e il nome del computer remoto è **mjo-DL**.
 
 1. Creare un'applicazione MFC denominata **mymfc.**
 
 2. Impostare un punto di interruzione in un punto dell'applicazione che sia facilmente raggiungibile, ad esempio in **MainFrm.cpp**, all'inizio di `CMainFrame::OnCreate`.
 
-3. In Esplora soluzioni fare doppio clic sul progetto e scegliere **proprietà**. Aprire la scheda **Debug**.
+3. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà**. Aprire la scheda **Debug**.
 
 4. Impostare **Debugger da avviare** su **Debugger Windows remoto**.
 
@@ -77,9 +77,9 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) 
    |Directory di distribuzione|C:\remotetemp|
    |File aggiuntivi da distribuire|C:\data\mymfcdata.txt|
 
-    Se si distribuiscono file aggiuntivi (facoltativi), la cartella deve essere presente in entrambi i computer.
+    Se si distribuiscono file aggiuntivi (facoltativo), la cartella deve essere presente in entrambi i computer.
 
-6. In Esplora soluzioni fare doppio clic la soluzione e scegliere **Configuration Manager**.
+6. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Configuration Manager**.
 
 7. Per la configurazione **Debug**, selezionare la casella di controllo **Distribuisci**.
 
@@ -91,23 +91,23 @@ Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) 
 
 10. Se richiesto, immettere le credenziali di rete per la connessione al computer remoto.
 
-     Le credenziali necessarie sono specifiche di configurazione della sicurezza della rete. Ad esempio, in un computer di dominio, si potrebbe scegliere un certificato di sicurezza o immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio <strong>MJO-DL\name@something.com</strong>, con password non corretta.
+     Le credenziali necessarie sono specifiche per la configurazione di sicurezza della rete. Ad esempio, in un computer di dominio, è possibile scegliere un certificato di sicurezza oppure immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido <strong>MJO-DL\name@something.com</strong>, ad esempio, insieme alla password corretta.
 
 11. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.
 
     > [!TIP]
     > In alternativa, è possibile distribuire i file come passaggio separato. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **mymfc**, quindi scegliere **Distribuisci**.
 
-    Se si dispone di file non di codice che sono richieste dall'applicazione, è possibile specificarli nella **i file aggiuntivi da distribuire** nel **Debugger Windows remoto** pagina.
+    Se sono presenti file non di codice necessari per l'applicazione, è possibile specificarli in **file aggiuntivi da distribuire** nella pagina del **debugger Windows remoto** .
 
-    In alternativa, è possibile includere i file nel progetto e impostare il **contenuti** proprietà **Sì** nel **proprietà** pagina per ogni file. Questi file vengono copiati il **Directory di distribuzione** specificato per il **Debugger Windows remoto** pagina. È inoltre possibile modificare il **tipo di elemento** al **copia File** e specificare proprietà aggiuntive sono se sono necessari i file da copiare in una sottocartella della **Directory di distribuzione**.
+    In alternativa, è possibile includere i file nel progetto e impostare la proprietà **Content** su **Sì** nella pagina delle **proprietà** per ogni file. Questi file vengono copiati nella **directory di distribuzione** specificata nella pagina **debugger Windows remoto** . È anche possibile modificare il **tipo di elemento** in **copy file** e specificare proprietà aggiuntive se è necessario copiare i file in una sottocartella della **directory di distribuzione**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Assegnazioni delle porte del debugger remoto](../debugger/remote-debugger-port-assignments.md)

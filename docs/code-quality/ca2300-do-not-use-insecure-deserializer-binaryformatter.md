@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2300
 - DoNotUseInsecureDeserializerBinaryFormatter
-ms.openlocfilehash: 8a2bc2929b53843749d939f16057a11c0e944e33
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 4ca4990308ceab21e2c6e256770ff37a3ca9a6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891216"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237950"
 ---
 # <a name="ca2300-do-not-use-insecure-deserializer-binaryformatter"></a>CA2300: Non usare il deserializzatore non sicuro BinaryFormatter
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891216"
 |TypeName|DoNotUseInsecureDeserializerBinaryFormatter|
 |CheckId|CA2300|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -41,13 +41,13 @@ Questa regola trova <xref:System.Runtime.Serialization.Formatters.Binary.BinaryF
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Se possibile, usare invece un serializzatore protetto e **non consentire a un utente malintenzionato di specificare un tipo arbitrario da**deserializzare. Alcuni serializzatori più sicuri includono:
+- Se possibile, usare invece un serializzatore protetto e **non consentire a un utente malintenzionato di specificare un tipo arbitrario da deserializzare**. Alcuni serializzatori più sicuri includono:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Non usare <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>mai. Se è necessario usare un resolver di tipi, limitare i tipi deserializzati a un elenco previsto.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET-usare TypeNameHandling. None. Se è necessario usare un altro valore per TypeNameHandling, limitare i tipi deserializzati a un elenco previsto con un ISerializationBinder personalizzato.
-  - Buffer del protocollo
+  - Buffer di protocollo
 - Eseguire la prova di manomissione dei dati serializzati. Dopo la serializzazione, la firma crittografica dei dati serializzati. Prima della deserializzazione, convalidare la firma crittografica. Proteggere la chiave crittografica da divulgare e progettare per le rotazioni delle chiavi.
 - Limitare i tipi deserializzati. Implementare un oggetto <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>personalizzato. Prima di eseguire la deserializzazione <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> , impostare la proprietà su un'istanza <xref:System.Runtime.Serialization.SerializationBinder>di personalizzata. Nel metodo sottoposto <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> a override, se il tipo è imprevisto, generare un'eccezione per arrestare la deserializzazione.
   - Se si limitano i tipi deserializzati, potrebbe essere necessario disabilitare questa regola e abilitare le regole [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) e [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md). Le regole [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) e [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) consentono di garantire che <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> la proprietà sia sempre impostata prima della deserializzazione.

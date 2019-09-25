@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 383011e53b14ec2cc7dd7474cd050f05295a2a73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 6bcf32401abdeae499097bc5187d11154e7dfc6e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841476"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237411"
 ---
 # <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XSS
 
@@ -24,39 +24,39 @@ ms.locfileid: "65841476"
 |TypeName|ReviewCodeForXssVulnerabilities|
 |CheckId|CA3002|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Input della richiesta HTTP potenzialmente non attendibili raggiunge output HTML non elaborato.
+Un input di richiesta HTTP potenzialmente non attendibile raggiunge l'output HTML non elaborato.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando si lavora con input non attendibile dalle richieste web, tenere conto di attacchi di cross-site scripting (XSS). Un attacco XSS inserisce l'input non attendibile in HTML non elaborato di output, che gli consente di eseguire gli script dannosi o da utenti malintenzionati di modificare il contenuto della pagina web. Inserimento di una tecnica tipica `<script>` gli elementi con codice dannoso nell'input. Per altre informazioni, vedere [XSS dell'OWASP](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
+Quando si utilizza un input non attendibile da richieste Web, tenere presente gli attacchi XSS (cross-site scripting). Un attacco XSS inserisce input non attendibile nell'output HTML non elaborato, consentendo all'autore dell'attacco di eseguire script dannosi o modificare il contenuto nella pagina Web. Una tecnica tipica prevede `<script>` l'inserimento di elementi con codice dannoso nell'input. Per ulteriori informazioni, vedere [XSS di OWASP](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
 
-Questa regola cerca di trovare input dalle richieste HTTP raggiungere l'output HTML non elaborato.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che genera un HTML non elaborati, questa regola non genera un avviso.
+Questa regola tenta di trovare l'input da richieste HTTP che raggiungono l'output HTML non elaborato.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly legge l'input della richiesta HTTP e lo passa a un altro assembly che restituisce codice HTML non elaborato, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Invece l'output HTML non elaborato, usare un metodo o proprietà che prima codifica in HTML input.
-- Codifica HTML, i dati non attendibili prima l'output HTML non elaborato.
+- Anziché inserire codice HTML non elaborato, usare un metodo o una proprietà che prima codifica in HTML l'input.
+- Codificare in HTML i dati non attendibili prima dell'output HTML non elaborato.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 È possibile eliminare un avviso da questa regola se:
-- Sai che l'input viene convalidato rispetto a un set noto sicuro di caratteri che non contengono HTML.
-- Sai che i dati sono codificati in HTML in modo non rilevato da questa regola.
+- Si sa che l'input viene convalidato in base a un set di caratteri Safe noto che non contiene codice HTML.
+- Si sa che i dati sono codificati in HTML in modo che non vengano rilevati da questa regola.
 
 > [!NOTE]
-> Questa regola potrebbe segnalare dei falsi positivi per alcuni metodi o proprietà di tale codifica HTML relativo input.
+> Questa regola può segnalare falsi positivi per alcuni metodi o proprietà che codificano l'input in HTML.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4196cb91e1b866453de54347b8a67edd3dc2dc96
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921887"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234759"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: I tipi visibili a COM devono essere creabili
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921887"
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
 |Category|Microsoft. interoperabilità|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un tipo di riferimento che è contrassegnato in modo specifico come visibile a Component Object Model (COM) contiene un costruttore con parametri pubblico, ma non contiene un costruttore pubblico predefinito (senza parametri).

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920650"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232283"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: I metodi devono mantenere trasparenza consistente durante l'override dei metodi base
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920650"
 |TypeName|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
 |Category|Microsoft.Security|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Questa regola viene attivata quando un metodo contrassegnato con <xref:System.Security.SecurityCriticalAttribute> l'oggetto esegue l'override di un metodo trasparente o <xref:System.Security.SecuritySafeCriticalAttribute>contrassegnato con. La regola viene attivata anche quando un metodo trasparente o contrassegnato con l'oggetto <xref:System.Security.SecuritySafeCriticalAttribute> esegue l'override di un metodo contrassegnato con <xref:System.Security.SecurityCriticalAttribute>un oggetto.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546284"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234356"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Le parole composte di una stringa di risorsa devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 
@@ -28,43 +28,43 @@ ms.locfileid: "62546284"
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
 |Category|Microsoft.Naming|
-|Modifica importante|Non sostanziale|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Una stringa di risorsa contiene una parola composta non sembra essere digitati correttamente.
+Una stringa di risorsa contiene una parola composta che non sembra essere inclusa correttamente nel caso.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Ogni parola nella stringa di risorsa è suddivisa in token basati sulle maiuscole e minuscole. Ogni combinazione di due token contigui viene controllata in base alla libreria del correttore ortografico Microsoft. Se riconosciuta, la parola produce una violazione della regola. Sono esempi di parole composte che causano una violazione "CheckSum" e "MultiPart", che devono essere digitati "Checksum" e "Multipart", rispettivamente. A causa di uso comune precedente, molte eccezioni vengono compilate nella regola e sono contrassegnate molte parole singole, ad esempio "Toolbar" e "Filename", che deve essere digitati due parole distinte. In questo esempio verranno contrassegnate "ToolBar" e "FileName".
+Ogni parola nella stringa di risorsa viene suddivisa in token basati sulla combinazione di maiuscole e minuscole. Ogni combinazione di due token contigui viene controllata in base alla libreria del correttore ortografico Microsoft. Se riconosciuta, la parola produce una violazione della regola. Esempi di parole composte che causano una violazione sono "CheckSum" e "MultiPart", che devono essere considerati come "checksum" e "multipart", rispettivamente. A causa dell'utilizzo comune precedente, vengono compilate diverse eccezioni nella regola e vengono contrassegnate diverse parole, ad esempio "barra degli strumenti" e "nomefile", che devono essere racchiuse tra due parole distinte. In questo esempio, la barra degli strumenti e il nome del file verranno contrassegnati.
 
-Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Modificare la parola in modo che viene maiuscole e minuscole.
+Modificare la parola in modo che sia configurata correttamente.
 
-## <a name="change-the-dictionary-language"></a>Modificare la lingua di dizionario
+## <a name="change-the-dictionary-language"></a>Modificare la lingua del dizionario
 
-Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico. Se si desidera modificare la lingua del correttore ortografico, è possibile farlo mediante l'aggiunta di uno dei seguenti attributi per il *AssemblyInfo.cs* oppure *AssemblyInfo* file:
+Per impostazione predefinita, viene utilizzata la versione inglese (en) del correttore ortografico. Se si desidera modificare la lingua del correttore ortografico, è possibile aggiungere uno degli attributi seguenti al file *AssemblyInfo.cs* o *AssemblyInfo. vb* :
 
-- Usare <xref:System.Reflection.AssemblyCultureAttribute> specificare le impostazioni cultura, se le risorse si trovano in un assembly satellite.
-- Uso <xref:System.Resources.NeutralResourcesLanguageAttribute> per specificare il *delle impostazioni cultura neutre* dell'assembly se le risorse sono nello stesso assembly del codice.
+- Usare <xref:System.Reflection.AssemblyCultureAttribute> per specificare le impostazioni cultura se le risorse si trovano in un assembly satellite.
+- Usare <xref:System.Resources.NeutralResourcesLanguageAttribute> per specificare le *impostazioni cultura non associate ad alcun paese* dell'assembly se le risorse si trovano nello stesso assembly del codice.
 
 > [!IMPORTANT]
-> Se si imposta le impostazioni cultura su un valore qualsiasi diverso da una cultura basata su inglese, questa regola di analisi del codice viene disabilitata automaticamente.
+> Se si impostano le impostazioni cultura su un valore diverso da una lingua inglese, questa regola di analisi del codice viene disabilitata automaticamente.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se entrambe le parti della parola composta sono riconosciute dal dizionario ortografici e l'intento consiste nell'usare due parole.
+È possibile eliminare un avviso da questa regola se entrambe le parti della parola composta sono riconosciute dal dizionario ortografico e l'intento è usare due parole.
 
-È anche possibile aggiungere le parole composte in un dizionario personalizzato per il correttore ortografico. Parole del dizionario personalizzato non causano le violazioni. Per altre informazioni, vedere [Procedura: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+È anche possibile aggiungere parole composte a un dizionario personalizzato per il correttore ortografico. Le parole nel dizionario personalizzato non causano alcuna violazione. Per altre informazioni, vedere [Procedura: Personalizzare il dizionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)di analisi del codice.
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1702: Le parole composte devono essere digitate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702 Le parole composte devono essere configurate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Vedere anche
 

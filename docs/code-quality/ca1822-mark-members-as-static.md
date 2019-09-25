@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921379"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233418"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Contrassegna i membri come statici
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921379"
 |TypeName|MarkMethodsAsStatic|
 |CheckId|CA1822|
 |Category|Microsoft.Performance|
-|Modifica importante|Senza interruzioni: se il membro non è visibile all'esterno dell'assembly, indipendentemente dalla modifica apportata. Senza interruzioni: se si modifica semplicemente il membro in un membro di istanza `this` con la parola chiave.<br /><br /> Suddivisione: se si modifica il membro da un membro di istanza a un membro statico ed è visibile all'esterno dell'assembly.|
+|Modifica|Senza interruzioni: se il membro non è visibile all'esterno dell'assembly, indipendentemente dalla modifica apportata. Senza interruzioni: se si modifica semplicemente il membro in un membro di istanza con `this` la parola chiave.<br /><br /> Suddivisione: se si modifica il membro da un membro di istanza a un membro statico ed è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
 Un membro che non accede ai dati dell'istanza non è contrassegnato come static (Shared [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in).

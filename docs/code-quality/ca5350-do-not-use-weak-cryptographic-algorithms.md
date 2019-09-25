@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ccdb9120a1964f5c55e2d533406eedf01a88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4aecd052e86a4c0366a1a43cb985ad50ab8862d8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540846"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236955"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Non usare algoritmi di crittografia vulnerabili
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540846"
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
 |Category|Microsoft.Cryptography|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 > [!NOTE]
 > Ultimo aggiornamento di questo avviso: novembre 2015.
@@ -47,11 +47,11 @@ Usare opzioni di crittografia più avanzate:
 
 - Per le funzioni hash SHA1 o RIPEMD160, usare quelle nella famiglia [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (ad esempio <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Escludere un avviso da questa regola quando il livello di protezione necessario per i dati non richiede una garanzia di sicurezza.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 Al momento della stesura di questo articolo, l'esempio di pseudocodice seguente illustra il modello rilevato da questa regola.
 

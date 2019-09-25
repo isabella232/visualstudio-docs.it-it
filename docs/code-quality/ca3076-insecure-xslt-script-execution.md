@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c6c5df0109a8cff3cefcc308ea27077ef0fbe03
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541090"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237082"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Esecuzione di script XSLT non protetta
 
@@ -21,31 +21,31 @@ ms.locfileid: "62541090"
 |TypeName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Se si esegue Extensible Stylesheets Language Transformations (XSLT) in applicazioni .NET in modo non protetto, il processore può risolvere i riferimenti URI non attendibili che potrebbero divulgare informazioni riservate a utenti malintenzionati causando attacchi Denial of Service e XSS. Per altre informazioni, vedere [Considerations(.NET Guide) sicurezza XSLT](/dotnet/standard/data/xml/xslt-security-considerations).
+Se si esegue Extensible Stylesheets Language Transformations (XSLT) in applicazioni .NET in modo non protetto, il processore può risolvere i riferimenti URI non attendibili che potrebbero divulgare informazioni riservate a utenti malintenzionati causando attacchi Denial of Service e XSS. Per ulteriori informazioni, vedere la pagina relativa alle [considerazioni sulla sicurezza XSLT (guida. NET)](/dotnet/standard/data/xml/xslt-security-considerations).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-**XSLT** è uno standard W3C (World Wide Web Consortium) per la trasformazione dei dati XML. XSLT è in genere utilizzato per scrivere i fogli di stile per trasformare i dati XML in altri formati, ad esempio HTML, testo di lunghezza fissa, testo delimitato da virgole o un altro formato XML. Sebbene non sia consentito per impostazione predefinita, è possibile scegliere di abilitarlo per un progetto.
+**XSLT** è uno standard W3C (World Wide Web Consortium) per la trasformazione dei dati XML. XSLT viene in genere usato per scrivere i fogli di stile per trasformare i dati XML in altri formati, ad esempio HTML, testo a lunghezza fissa, testo delimitato da virgole o formato XML diverso. Sebbene non sia consentito per impostazione predefinita, è possibile scegliere di abilitarlo per un progetto.
 
-Per assicurarsi che non si espone una superficie di attacco, questa regola viene attivata ogni volta che il XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> istanze di combinazione non protetta di riceve <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, che consente l'elaborazione di uno script dannoso.
+Per assicurarsi che non si stia esponendo una superficie di attacco, questa regola viene attivata ogni volta che XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> riceve istanze di combinazione non sicure <xref:System.Xml.XmlResolver>di e, che consente l'elaborazione di <xref:System.Xml.Xsl.XsltSettings> script dannosi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Sostituire l'argomento XsltSettings non protetto con XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> o con un'istanza che ha disabilitato l'esecuzione di script e funzioni di documento.
+- Sostituire l'argomento XsltSettings non protetto con XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> o con un'istanza di che ha disabilitato l'esecuzione di script e funzioni di documento.
 
 - Sostituire l'argomento <xref:System.Xml.XmlResolver> con Null o con un'istanza di <xref:System.Xml.XmlSecureResolver> .
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 A meno che non si abbia la certezza che l'input provenga da un'origine attendibile, non escludere una regola da questo avviso.
 
 ## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
 
-### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Violazione che usa XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Violazione che usa XsltSettings. TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -66,7 +66,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution-that-uses-xsltsettingsdefault"></a>Soluzione che usa XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Soluzione che usa XsltSettings. default
 
 ```csharp
 using System.Xml;
@@ -87,7 +87,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Violazione&mdash;documentare l'esecuzione di script e funzioni non disabilitata
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Funzione&mdash;del documento di violazione ed esecuzione di script non disabilitata
 
 ```csharp
 using System.Xml;
@@ -112,7 +112,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Soluzione&mdash;disabilitare l'esecuzione di script e funzioni di documento
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Soluzione&mdash;disabilitare la funzione di documento e l'esecuzione di script
 
 ```csharp
 using System.Xml;
@@ -141,4 +141,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Considerazioni sulla sicurezza XSLT (Guida per .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [Considerazioni sulla sicurezza XSLT (guida. NET)](/dotnet/standard/data/xml/xslt-security-considerations)

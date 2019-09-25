@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921769"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234155"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921769"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Category|Microsoft.Naming|
-|Modifica importante|Quando vengono generati gli assembly, gli spazi dei nomi, i tipi, i membri e i parametri.<br /><br /> Senza interruzioni: quando viene attivato su parametri di tipo generico.|
+|Modifica|Quando vengono generati gli assembly, gli spazi dei nomi, i tipi, i membri e i parametri.<br /><br /> Senza interruzioni: quando viene attivato su parametri di tipo generico.|
 
 ## <a name="cause"></a>Causa
 

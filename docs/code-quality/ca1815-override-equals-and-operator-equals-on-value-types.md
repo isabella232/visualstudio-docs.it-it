@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f56e406d00de1891647c4211d21336f9d1a266
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 413119f7cdf473f3038ae212ac812d1987641bb1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547056"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233537"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Eseguire l'override di Equals e dell'operatore "uguale a" sui tipi di valore
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547056"
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|
 |CheckId|CA1815|
 |Category|Microsoft.Performance|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 

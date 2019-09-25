@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546020"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233848"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: I nomi dei tipi non devono corrispondere gli spazi dei nomi
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: I nomi dei tipi non devono corrispondere agli spazi dei nomi
 
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un nome di tipo corrisponde a un nome di riferimento dello spazio dei nomi contenente uno o più tipi visibili esternamente. Il confronto di nome è tra maiuscole e minuscole.
+Un nome di tipo corrisponde a un nome di spazio dei nomi a cui si fa riferimento con uno o più tipi visibili esternamente. Per il confronto dei nomi non viene fatta distinzione tra maiuscole e minuscole.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-I nomi dei tipi creati dall'utente non deve corrispondere i nomi degli spazi dei nomi di riferimento che hanno tipi visibili esternamente. Violazione di questa regola, è possibile ridurre l'utilizzabilità della libreria.
+I nomi dei tipi creati dall'utente non devono corrispondere ai nomi degli spazi dei nomi a cui si fa riferimento con tipi visibili esternamente. La violazione di questa regola può ridurre l'usabilità della libreria.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Rinominare il tipo in modo che non corrisponde il nome di uno spazio dei nomi di cui viene fatto riferimento con tipi visibili esternamente.
+Rinominare il tipo in modo che non corrisponda al nome di uno spazio dei nomi a cui si fa riferimento con tipi visibili esternamente.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Per i nuovi sviluppi, nessun noti verificarsi gli scenari in cui è necessario eliminare un avviso da questa regola. Prima di eliminare l'avviso, considerare attentamente come gli utenti della libreria potrebbero essere confusi dal nome corrispondente. Per le librerie, potrebbe essere necessario eliminare un avviso da questa regola.
+Per il nuovo sviluppo, non si verificano scenari noti in cui è necessario eliminare un avviso da questa regola. Prima di disattivare l'avviso, valutare attentamente il modo in cui gli utenti della libreria potrebbero essere confusi con il nome corrispondente. Per le librerie di spedizione, potrebbe essere necessario eliminare un avviso da questa regola.

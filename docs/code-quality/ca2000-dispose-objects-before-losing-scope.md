@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 732b3d683802c50042ee40fee1549a9d247e2470
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7a498a01741b86c16a52f790489dc8ce62aad06c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65804982"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233238"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminare gli oggetti prima che siano esterni all'ambito
 
@@ -32,74 +32,74 @@ ms.locfileid: "65804982"
 |TypeName|DisposeObjectsBeforeLosingScope|
 |CheckId|CA2000|
 |Category|Microsoft.Reliability|
-|Modifica importante|Non sostanziale|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un oggetto locale di un <xref:System.IDisposable> tipo viene creato, ma l'oggetto non viene eliminato prima di tutti i riferimenti all'oggetto siano esterni all'ambito.
+Viene creato un oggetto locale <xref:System.IDisposable> di un tipo, ma l'oggetto non viene eliminato prima che tutti i riferimenti all'oggetto siano fuori dall'ambito.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Se un oggetto eliminabile non viene eliminato in modo esplicito prima che tutti i relativi riferimenti siano esterni all'ambito, l'oggetto verrà eliminato in un momento indeterminato quando il garbage collector viene eseguito il finalizzatore dell'oggetto. Poiché potrebbe verificarsi un evento eccezionale che impedisca il finalizzatore dell'oggetto di esecuzione, l'oggetto deve essere eliminato in modo esplicito invece.
+Se un oggetto Disposable non viene eliminato in modo esplicito prima che tutti i relativi riferimenti siano fuori dall'ambito, l'oggetto verrà eliminato in un momento indeterminato quando il Garbage Collector esegue il finalizzatore dell'oggetto. Poiché è possibile che si verifichi un evento eccezionale che impedisce l'esecuzione del finalizzatore dell'oggetto, l'oggetto deve essere eliminato in modo esplicito.
 
 ### <a name="special-cases"></a>Casi speciali
 
-Anche se non viene eliminato l'oggetto, la regola CA2000 non viene generato per gli oggetti locali dei tipi seguenti:
+La regola CA2000 non viene attivata per gli oggetti locali dei seguenti tipi anche se l'oggetto non è stato eliminato:
 
 - <xref:System.IO.Stream?displayProperty=nameWithType>
 - <xref:System.IO.TextReader?displayProperty=nameWithType>
 - <xref:System.IO.TextWriter?displayProperty=nameWithType>
 - <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
 
-Passaggio di un oggetto di uno di questi tipi per un costruttore e quindi assegnarlo a un campo indica un *dispose trasferimento della proprietà* per il tipo costruito. Vale a dire, il tipo costruito ora è responsabile dell'eliminazione dell'oggetto. Se il codice passa un oggetto di uno di questi tipi per un costruttore, non violazione della regola CA2000 si verifica anche se l'oggetto non viene eliminato prima di tutti i relativi riferimenti siano esterni all'ambito.
+Il passaggio di un oggetto di uno di questi tipi a un costruttore e quindi l'assegnazione a un campo indica un *trasferimento di proprietà Dispose* al tipo appena costruito. Ovvero il tipo appena costruito è ora responsabile dell'eliminazione dell'oggetto. Se il codice passa un oggetto di uno di questi tipi a un costruttore, nessuna violazione della regola CA2000 si verifica anche se l'oggetto non viene eliminato prima che tutti i relativi riferimenti siano fuori dall'ambito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, chiamare <xref:System.IDisposable.Dispose%2A> nell'oggetto prima che tutti i relativi riferimenti siano esterni all'ambito.
+Per correggere una violazione di questa regola, chiamare <xref:System.IDisposable.Dispose%2A> sull'oggetto prima che tutti i relativi riferimenti siano fuori dall'ambito.
 
-È possibile usare la [ `using` istruzione](/dotnet/csharp/language-reference/keywords/using-statement) ([ `Using` ](/dotnet/visual-basic/language-reference/statements/using-statement) in Visual Basic) per eseguire il wrapping di oggetti che implementano <xref:System.IDisposable>. Gli oggetti che vengono eseguito il wrapping in questo modo vengono eliminati automaticamente alla fine del `using` blocco. Tuttavia, nelle situazioni seguenti non deve o non può essere gestite con un `using` istruzione:
+È possibile usare l' [ `using` istruzione](/dotnet/csharp/language-reference/keywords/using-statement) ([`Using`](/dotnet/visual-basic/language-reference/statements/using-statement) in Visual Basic) per eseguire il wrapping degli <xref:System.IDisposable>oggetti che implementano. Gli oggetti di cui viene eseguito il wrapper in questo modo vengono eliminati automaticamente alla fine del `using` blocco. Tuttavia, le situazioni seguenti non devono o non possono essere gestite con `using` un'istruzione:
 
-- Per restituire un oggetto eliminabile, deve costruito l'oggetto un `try/finally` bloccare all'esterno di un `using` blocco.
+- Per restituire un oggetto eliminabile, l'oggetto deve essere costruito `try/finally` in un blocco all' `using` esterno di un blocco.
 
-- Non si inizializza i membri di un oggetto disposable nel costruttore di una `using` istruzione.
+- Non inizializzare i membri di un oggetto eliminabile nel costruttore di `using` un'istruzione.
 
-- Quando i costruttori che sono protetti da un solo gestore di eccezioni sono annidati nel [parte di acquisizione di un `using` istruzione](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), un errore nel costruttore esterno può comportare l'oggetto creato dal costruttore nidificato mai in fase di chiusura. Nell'esempio seguente, un errore dei <xref:System.IO.StreamReader> costruttore può comportare il <xref:System.IO.FileStream> mai in fase di chiusura dell'oggetto. CA2000 flag in questo caso una violazione della regola.
+- Quando i costruttori protetti da un solo gestore di eccezioni sono annidati nella [parte di acquisizione di un' `using` istruzione](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), un errore nel costruttore esterno può comportare che l'oggetto creato dal Costruttore annidato non venga mai chiuso. Nell'esempio seguente un errore nel <xref:System.IO.StreamReader> costruttore può causare la chiusura dell' <xref:System.IO.FileStream> oggetto. CA2000 contrassegna una violazione della regola in questo caso.
 
    ```csharp
    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
    { ... }
    ```
 
-- Oggetti dinamici devono usare un oggetto shadow per implementare il modello dispose di <xref:System.IDisposable> oggetti.
+- Gli oggetti dinamici devono usare un oggetto Shadow per implementare il modello Dispose degli <xref:System.IDisposable> oggetti.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non eliminare un avviso da questa regola, a meno che:
+Non eliminare un avviso da questa regola a meno che non sia:
 
-- È stato chiamato un metodo sull'oggetto che chiama `Dispose`, ad esempio <xref:System.IO.Stream.Close%2A>
-- Il metodo che ha generato l'avviso restituisce un <xref:System.IDisposable> oggetto che esegue il wrapping dell'oggetto
-- Il metodo di allocazione non dispone della proprietà dispose; vale a dire, la responsabilità di eliminare l'oggetto viene trasferita a un altro oggetto o un wrapper che ha creato nel metodo e restituito al chiamante
+- È stato chiamato un metodo sull'oggetto che chiama `Dispose`, ad esempio<xref:System.IO.Stream.Close%2A>
+- Il metodo che ha generato l'avviso restituisce <xref:System.IDisposable> un oggetto che esegue il wrapping dell'oggetto
+- Il metodo di allocazione non dispone della proprietà Dispose; ovvero, la responsabilità di eliminare l'oggetto viene trasferita a un altro oggetto o wrapper creato nel metodo e restituito al chiamante.
 
 ## <a name="related-rules"></a>Regole correlate
 
 - [CA2213: I campi eliminabili devono essere eliminati](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
-- [CA2202: Non eliminare oggetti più volte](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+- [CA2202 Non eliminare oggetti più volte](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Esempio
 
-Se si implementa un metodo che restituisce un oggetto disposable, usare un blocco try/finally senza un blocco catch per assicurarsi che l'oggetto viene eliminato. Usando un blocco try/finally, è consentire eccezioni a essere generata in corrispondenza del punto di errore e assicurarsi che l'oggetto viene eliminato.
+Se si sta implementando un metodo che restituisce un oggetto Disposable, usare un blocco try/finally senza un blocco catch per assicurarsi che l'oggetto venga eliminato. Utilizzando un blocco try/finally, si consente la generazione di eccezioni in corrispondenza del punto di errore e assicurarsi che l'oggetto venga eliminato.
 
-Nel metodo OpenPort1, la chiamata per aprire l'oggetto SerialPort ISerializable o la chiamata a SomeMethod può avere esito negativo. Viene generato un avviso di CA2000 su questa implementazione.
+Nel metodo OpenPort1 la chiamata per aprire l'oggetto ISerializable SerialPort o la chiamata a SomeMethod può avere esito negativo. In questa implementazione viene generato un avviso CA2000.
 
-Nel metodo OpenPort2, due oggetti SerialPort sono dichiarate e impostare questa proprietà su null:
+Nel metodo OpenPort2 due oggetti SerialPort sono dichiarati e impostati su null:
 
-- `tempPort`, che viene usato per verificare che le operazioni di metodo hanno esito positivo.
+- `tempPort`, usato per verificare che le operazioni del metodo abbiano esito positivo.
 
-- `port`, che viene usato per il valore restituito del metodo.
+- `port`, usato per il valore restituito del metodo.
 
-Il `tempPort` viene costruito e aperto in un `try` necessari blocchi e qualsiasi altro lavoro viene eseguito nello stesso `try` blocco. Alla fine del `try` blocco, la porta aperta viene assegnato al `port` oggetti che verranno restituiti e la `tempPort` è impostata su `null`.
+Viene costruito e aperto in un `try` blocco e tutte le altre operazioni necessarie vengono eseguite nello stesso `try` blocco. `tempPort` Alla fine del `try` blocco, la porta aperta viene assegnata `port` all'oggetto che verrà restituito e l' `tempPort` oggetto è impostato su `null`.
 
-Il `finally` blocco controlla il valore di `tempPort`. Se non è null, non è riuscita un'operazione nel metodo, e `tempPort` sia chiuso per assicurarsi che tutte le risorse vengano rilasciate. Se le operazioni del metodo ha esito positivo oppure sarà null se non è riuscita un'operazione, l'oggetto porta restituita conterrà l'oggetto SerialPort aperto.
+Il `finally` blocco verifica il valore di `tempPort`. Se non è null, un'operazione nel metodo ha esito negativo e `tempPort` viene chiusa per assicurarsi che tutte le risorse vengano rilasciate. L'oggetto della porta restituita conterrà l'oggetto SerialPort aperto se le operazioni del metodo hanno avuto esito positivo o se un'operazione non è riuscita.
 
 ```csharp
 public SerialPort OpenPort1(string portName)
@@ -172,11 +172,11 @@ End Function
 
 ## <a name="example"></a>Esempio
 
-Per impostazione predefinita, il compilatore Visual Basic ha tutti gli operatori aritmetici di controllo dell'overflow. Pertanto, qualsiasi operazione aritmetica di Visual Basic generi un <xref:System.OverflowException>. Questo potrebbe causare violazioni impreviste nelle regole, ad esempio CA2000. Ad esempio, la funzione seguente CreateReader1 produrrà una violazione di CA2000 perché il compilatore Visual Basic sta generando un'istruzione per l'aggiunta che potrebbe generare un'eccezione che impedirebbe la StreamReader non in fase di eliminazione di controllo dell'overflow.
+Per impostazione predefinita, il compilatore Visual Basic dispone di tutti gli operatori aritmetici che controllano l'overflow. Pertanto, qualsiasi operazione aritmetica Visual Basic potrebbe generare <xref:System.OverflowException>un'. Questo potrebbe causare violazioni impreviste in regole come CA2000. La funzione CreateReader1 seguente, ad esempio, genererà una violazione CA2000 perché il compilatore Visual Basic emette un'istruzione di controllo dell'overflow per l'aggiunta che potrebbe generare un'eccezione che provocherebbe la mancata eliminazione di StreamReader.
 
-Per risolvere questo problema, è possibile disabilitare l'emissione dei controlli dell'overflow dal compilatore Visual Basic nel progetto oppure è possibile modificare il codice della funzione CreateReader2 seguenti.
+Per risolvere questo problema, è possibile disabilitare la creazione di controlli di overflow da parte del compilatore Visual Basic nel progetto oppure modificare il codice come nella funzione CreateReader2 seguente.
 
-Per disabilitare l'emissione dei controlli dell'overflow, fare clic sul nome del progetto in Esplora soluzioni e quindi fare clic su **proprietà**. Fare clic su **Compile**, fare clic su **opzioni di compilazione avanzate**, quindi selezionare **Rimuovi controllo dell'overflow integer**.
+Per disabilitare la creazione dei controlli di overflow, fare clic con il pulsante destro del mouse sul nome del progetto in Esplora soluzioni e quindi scegliere **Proprietà**. Fare clic su **Compila**, fare clic su **Opzioni di compilazione avanzate**, quindi selezionare **Rimuovi controlli di overflow di Integer**.
 
 [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 

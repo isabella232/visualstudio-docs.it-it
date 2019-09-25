@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 415b8c95dda3fca084fcb103dfa5e4f39e1a73da
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ef7b72eade7ea8e4486d5c317c06026bb4d0b95f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922533"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235736"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: I tipi delle risorse native devono essere disposable
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922533"
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
 |Category|Microsoft.Design|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 

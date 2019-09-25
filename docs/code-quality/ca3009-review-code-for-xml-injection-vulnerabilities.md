@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841061"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237249"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XML injection
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841061"
 |TypeName|ReviewCodeForXmlInjectionVulnerabilities|
 |CheckId|CA3009|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Input della richiesta HTTP potenzialmente non attendibili raggiunge output XML non elaborato.
+Un input di richiesta HTTP potenzialmente non attendibile raggiunge l'output XML non elaborato.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando si lavora con input non attendibile, tenere conto di attacchi intrusivi nel codice XML. Un utente malintenzionato può usare intrusione XML per inserire caratteri speciali in un documento XML, rendendo il documento non valido XML. In alternativa, un utente malintenzionato può inserire da utenti malintenzionati nodi XML preferito.
+Quando si lavora con un input non attendibile, tenere presente gli attacchi intrusivi in XML. Un utente malintenzionato può usare il linguaggio XML injection per inserire caratteri speciali in un documento XML, rendendo il documento XML non valido. In alternativa, è possibile che un utente malintenzionato inserisca i nodi XML di propria scelta.
 
-Questa regola cerca di trovare input dalle richieste HTTP raggiungere una scrittura XML non elaborata.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che scrive codice XML non elaborato, questa regola non genera un avviso.
+Questa regola tenta di trovare l'input da richieste HTTP che raggiungono una scrittura XML non elaborata.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly legge l'input della richiesta HTTP e lo passa a un altro assembly che scrive codice XML non elaborato, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Non scrivere codice XML non elaborato. Usare invece i metodi o proprietà che la codifica XML di input.
+Non scrivere codice XML non elaborato. Usare invece metodi o proprietà che codificano l'input in formato XML.
 
-In alternativa, la codifica XML di input prima della scrittura XML non elaborato.
+O, input di codifica XML prima di scrivere codice XML non elaborato.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non eliminare gli avvisi da questa regola.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

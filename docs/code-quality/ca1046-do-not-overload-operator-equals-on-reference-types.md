@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 23358d104c891ff9e230f0daad0f5e6ca57b46c2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922637"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235771"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922637"
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un tipo di riferimento pubblico o nidificato viene sovraccaricato dall'operatore di uguaglianza.

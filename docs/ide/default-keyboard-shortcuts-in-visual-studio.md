@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766037"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238210"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -120,7 +120,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Debug.Restart|**CTRL+MAIUSC+F5**|
 |Debug.RunToCursor|**CTRL+F10**|
 |Debug.SetNextStatement|**CTRL+MAIUSC+F10**|
-|Debug.ShowCallStackonCodeMap|**CTRL+MAIUSC+`**|
+|Debug.ShowCallStackonCodeMap|**CTRL+MAIUSC+'**|
 |Debug.ShowNextStatement|**ALT+NUM** *|
 |Debug.Start|**F5**|
 |Debug.StartWindowsPhoneApplicationAnalysis|**ALT+F1**|
@@ -165,7 +165,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.Copy|**CTRL+C**<br /><br /> oppure<br /><br /> **CTRL+INS**|
 |Edit.Cut|**CTRL+X**<br /><br /> oppure<br /><br /> **MAIUSC+CANC**|
 |Edit.CycleClipboardRing|**CTRL+MAIUSC+V**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+INS**|
-|Edit.Delete|**Elimina**|
+|Edit.Delete|**Eliminazione**|
 |Edit.Duplicate|**CTRL+D**|
 |Edit.Find|**CTRL+F**|
 |Edit.FindAllReferences|**Maiusc+F12**|
@@ -469,7 +469,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Edit.Delete|**CTRL+CANC**|
 |Edit.ExpandCollapseBaseTypeList|**MAIUSC+ALT+B**|
 |Edit.NavigateToLollipop|**MAIUSC+ALT+L**|
-|Edit.RemovefromDiagram|**Elimina**|
+|Edit.RemovefromDiagram|**Eliminazione**|
 |View.ViewCode|**INVIO**|
 
 ## <a name="coded-ui-test-editor"></a>Editor test codificati dell'interfaccia utente
@@ -529,14 +529,14 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|**I**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|**O**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|**CTRL+MAIUSC+K**<br /><br /> oppure<br /><br /> **CTRL+E, C**|
-|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Elimina**|
+|ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Eliminazione**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
 ## <a name="graphics-diagnostics"></a>Diagnostica grafica
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|Nessuna|
+|Debug.Graphics.CaptureFrame|nessuno|
 |Graphics.MovePixelSelectionDown|**MAIUSC+ALT+Freccia GIÙ**|
 |Graphics.MovePixelSelectionLeft|**MAIUSC+ALT+Freccia SINISTRA**|
 |Graphics.MovePixelSelectionRight|**MAIUSC+ALT+Freccia DESTRA**|
@@ -596,7 +596,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |Edit.EditCell|**F2**|
-|Edit.Remove|**Elimina**|
+|Edit.Remove|**Eliminazione**|
 |Edit.RemoveRow|**CTRL+CANC**|
 |Edit.SelectionCancel|**ESC**|
 |Resources.Audio|**CTRL+4**|
@@ -751,7 +751,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
-|Edit.Delete|**Elimina**|
+|Edit.Delete|**Eliminazione**|
 |File.Rename|**F2**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNavigation|**ALT+HOME**|
 |TeamFoundationContextMenus.Commands.GoToTeamExplorerNextSectionContent|**ALT+Freccia GIÙ**|
@@ -794,7 +794,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.CollapseCurrentRegion | **CTRL+M, CTRL+S** |
 | Edit.CollapseTag | **CTRL+M, CTRL+T** |
 | Edit.CollapseToDefinitions | **CTRL+M, CTRL+O** (lettera "O") |
-| Edit.ContractSelection | **MAIUSC+ALT+-** (solo non C++) |
+| Edit.ContractSelection | **MAIUSC+ALT+-** |
 | Edit.CommentSelection | **CTRL+K, CTRL+C** |
 | Edit.CompleteWord | **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA** |
 | Edit.CopyParameterTip | **CTRL+MAIUSC+ALT+C** |
@@ -803,11 +803,11 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.DeleteHorizontalWhiteSpace | **CTRL+K, CTRL+\\** |
 | Edit.DocumentEnd | **CTRL+FINE** |
 | Edit.DocumentEndExtend | **CTRL+MAIUSC+FINE** |
-| Edit.DocumentStart | **CTRL+Home** |
+| Edit.DocumentStart | **CTRL+HOME** |
 | Edit.DocumentStartExtend | **CTRL+MAIUSC+HOME** |
 | Edit.ExpandAllOutlining | **CTRL+M, CTRL+X** |
 | Edit.ExpandCurrentRegion | **CTRL+M, CTRL+E** |
-| Edit.ExpandSelection | **MAIUSC+ALT+=** (solo non C++) |
+| Edit.ExpandSelection | **MAIUSC+ALT+=** |
 | Edit.ExpandSelectiontoContainingBlock | **MAIUSC+ALT+]** |
 | Edit.FormatDocument | **CTRL+K, CTRL+D** |
 | Edit.FormatSelection | **CTRL+K, CTRL+F** |
@@ -1010,7 +1010,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |-------------| - |
 |Edit.NewString|**Inserisci**|
 
-## <a name="view-designer"></a>Progettazione viste
+## <a name="view-designer"></a>Progettazione visualizzazioni
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1155,7 +1155,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |GraphView.LefttoRight|**ALT+Freccia DESTRA**|
 |GraphView.RighttoLeft|**ALT+Freccia SINISTRA**|
 |GraphView.ToptoBottom|**ALT+Freccia GIÙ**|
-|OtherContextMenus.GraphView.RemovefromWorkspace|**Elimina**|
+|OtherContextMenus.GraphView.RemovefromWorkspace|**Eliminazione**|
 |XsdDesigner.ShowContentModelView|**CTRL+2**|
 |XsdDesigner.ShowGraphView|**CTRL+3**|
 |XsdDesigner.ShowStartView|**CTRL+1**|

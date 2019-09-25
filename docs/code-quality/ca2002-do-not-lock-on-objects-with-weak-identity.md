@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545267"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233171"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Non bloccare oggetti con identità debole
 
@@ -30,21 +30,21 @@ ms.locfileid: "62545267"
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
 |Category|Microsoft.Reliability|
-|Modifica importante|Non sostanziale|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un thread tenta di acquisire un blocco su un oggetto con identità debole.
+Un thread tenta di acquisire un blocco su un oggetto con un'identità vulnerabile.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
 Un oggetto presenta un'identità debole quando è possibile accedere ad esso direttamente attraverso i confini dei domini applicazione. Un thread che tenta di acquisire un blocco su un oggetto con identità debole può essere bloccato da un secondo thread in un altro dominio applicazione con un blocco sullo stesso oggetto.
 
-I seguenti tipi presentano un'identità debole e sono contrassegnati dalla regola:
+I tipi seguenti hanno un'identità debole e sono contrassegnati dalla regola:
 
 - <xref:System.String>
 
-- Le matrici di tipi valore, inclusi [i tipi integrali](/dotnet/csharp/language-reference/keywords/integral-types-table), [tipi a virgola mobile](/dotnet/csharp/language-reference/keywords/floating-point-types-table), e <xref:System.Boolean>.
+- Matrici di tipi valore, inclusi i [tipi integrali](/dotnet/csharp/language-reference/keywords/integral-types-table), i [tipi a virgola mobile](/dotnet/csharp/language-reference/keywords/floating-point-types-table)e <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -62,9 +62,9 @@ I seguenti tipi presentano un'identità debole e sono contrassegnati dalla regol
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, usare un oggetto da un tipo che non è presente nell'elenco nella sezione Descrizione.
+Per correggere una violazione di questa regola, utilizzare un oggetto di un tipo non presente nell'elenco della sezione Descrizione.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non escludere un avviso da questa regola.
 
@@ -74,7 +74,7 @@ Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente illustra alcuni blocchi di oggetti che violano la regola.
+Nell'esempio seguente vengono illustrati alcuni blocchi di oggetti che violano la regola.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
@@ -83,5 +83,5 @@ L'esempio seguente illustra alcuni blocchi di oggetti che violano la regola.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [blocco di istruzione (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [Istruzione lock (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [Istruzione SyncLock (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

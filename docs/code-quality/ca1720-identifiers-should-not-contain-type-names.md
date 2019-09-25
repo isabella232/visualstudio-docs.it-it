@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547106"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233891"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547106"
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
@@ -67,7 +67,7 @@ Ogni token discreto nel nome del parametro o del membro viene verificato rispett
 Inoltre, i nomi di un parametro vengono controllati in base ai nomi dei tipi di dati indipendenti dal linguaggio seguenti senza distinzione tra maiuscole e minuscole:
 
 - Object
-- Obj
+- obj
 - Booleano
 - Char
 - Stringa
@@ -89,7 +89,7 @@ Inoltre, i nomi di un parametro vengono controllati in base ai nomi dei tipi di 
 - Single
 - Double
 - Decimale
-- Guid
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

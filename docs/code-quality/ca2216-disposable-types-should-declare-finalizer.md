@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541871"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231259"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: I tipi eliminabili devono dichiarare un finalizzatore
 
@@ -28,15 +28,15 @@ ms.locfileid: "62541871"
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
 |Category|Microsoft.Usage|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName>e include campi che suggeriscono l'utilizzo delle risorse non gestite, non implementa un finalizzatore, come descritto dalla <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName>e contiene campi che suggeriscono l'uso di risorse non gestite, non implementa un finalizzatore come descritto da. <xref:System.Object.Finalize%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Una violazione di questa regola viene segnalata se il tipo disposable contiene i campi dei tipi seguenti:
+Una violazione di questa regola viene segnalata se il tipo Disposable contiene campi dei tipi seguenti:
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -46,25 +46,25 @@ Una violazione di questa regola viene segnalata se il tipo disposable contiene i
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il <xref:System.IDisposable.Dispose%2A> (metodo).
+Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il <xref:System.IDisposable.Dispose%2A> metodo.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se il tipo non implementa <xref:System.IDisposable> allo scopo di rilasciare le risorse non gestite.
+È possibile eliminare un avviso da questa regola se il tipo non implementa <xref:System.IDisposable> al fine di rilasciare le risorse non gestite.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un tipo che viola la regola.
+Nell'esempio seguente viene illustrato un tipo che viola questa regola.
 
 [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA2115: Chiamare GC. KeepAlive durante l'utilizzo di risorse native](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115 Chiamare GC. KeepAlive quando si utilizzano risorse native](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
 [CA1816: Chiamare GC. SuppressFinalize correttamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
-[CA1049: I tipi proprietari di risorse native devono essere disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: I tipi che possiedono risorse native devono essere Disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Vedere anche
 

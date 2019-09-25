@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 85d168e97f422a3965096a334cb2a448406604f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921589"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233846"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Non eseguire il cast inutilmente
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921589"
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
 |Category|Microsoft.Performance|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un metodo esegue cast duplicati su uno degli argomenti o variabili locali.

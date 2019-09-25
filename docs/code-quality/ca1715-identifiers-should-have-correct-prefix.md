@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547187"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234070"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Gli identificatori devono contenere il prefisso corretto
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547187"
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzioni quando vengono attivate sulle interfacce.<br /><br /> Senza interruzioni, quando viene generato su parametri di tipo generico.|
+|Modifica|Interruzioni quando vengono attivate sulle interfacce.<br /><br /> Senza interruzioni, quando viene generato su parametri di tipo generico.|
 
 ## <a name="cause"></a>Causa
 

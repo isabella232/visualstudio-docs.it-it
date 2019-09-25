@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: aaf16ccd187681be7406fdadbde620a167a40c96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235019"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Specificare le impostazioni locali per i tipi di dati
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922782"
 |TypeName|SetLocaleForDataTypes|
 |CheckId|CA1306|
 |Category|Microsoft. globalizzazione|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un metodo o un costruttore ha creato una <xref:System.Data.DataTable?displayProperty=fullName> o <xref:System.Data.DataSet?displayProperty=fullName> più istanze di o e non ha impostato in modo esplicito<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> la <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>proprietà delle impostazioni locali (o).

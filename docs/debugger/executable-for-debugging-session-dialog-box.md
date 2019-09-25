@@ -1,5 +1,5 @@
 ---
-title: Eseguibile per la finestra di dialogo di sessione di debug | Microsoft Docs
+title: Finestra di dialogo eseguibile per la sessione di debug | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,24 +20,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41b93ae19afd54b6e22458d1ba12029d5bb93cf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14d4ac95aae860e0750af66aec6adb2969434f11
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849956"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211059"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>finestra di dialogo Eseguibile per la sessione di debug
 
-Questa finestra di dialogo viene visualizzata quando si tenta di eseguire il debug di una DLL per la quale non è stato specificato alcun eseguibile. Visual Studio non è possibile avviare direttamente una DLL. Al contrario, Visual Studio avvia l'eseguibile specificato. È possibile eseguire il debug di DLL quando viene chiamata dall'eseguibile.
+Questa finestra di dialogo viene visualizzata quando si tenta di eseguire il debug di una DLL per la quale non è stato specificato alcun eseguibile. Visual Studio non è in grado di avviare direttamente una DLL. Visual Studio avvia invece il file eseguibile specificato. È possibile eseguire il debug della DLL quando viene chiamata dall'eseguibile.
 
- **Nome del file eseguibile** immettere il nome del percorso di un file eseguibile che chiama la DLL si esegue il debug.
+ **Nome file eseguibile** Immettere il nome del percorso di un eseguibile che chiama la DLL di cui si esegue il debug.
 
- **Accedere all'URL in cui può essere il progetto (solo ATL Server)** se si esegue il debug di una DLL di ATL Server, immettere l'URL dove si trova il progetto.
+ **URL a cui è possibile accedere al progetto (solo ATL Server)** Se si sta eseguendo il debug di una DLL di ATL Server, immettere l'URL in cui è possibile trovare il progetto.
 
- Una volta immesse, queste impostazioni vengono archiviate in pagine delle proprietà, il progetto in modo non sarà necessario immetterle nuovamente per le sessioni di debug successive. Se occorre modificare queste impostazioni, aprire le Pagine delle proprietà e modificare i valori. Per ulteriori informazioni sulla specifica di un eseguibile per la sessione di debug, vedere [Debug delle DLL](../debugger/how-to-debug-from-a-dll-project.md).
+ Una volta immesse, queste impostazioni vengono archiviate nelle pagine delle proprietà del progetto, pertanto non sarà necessario immetterle di nuovo per le sessioni di debug successive. Se occorre modificare queste impostazioni, aprire le Pagine delle proprietà e modificare i valori. Per ulteriori informazioni sulla specifica di un eseguibile per la sessione di debug, vedere [Debug delle DLL](../debugger/how-to-debug-from-a-dll-project.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

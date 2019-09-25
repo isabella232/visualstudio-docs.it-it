@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3e9c56bb02995d9b99b57bb2799ab69b51a42d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0a83d0afffc50c7697fad98c4dc49e31770d63d4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921571"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233745"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Rimuovere variabili locali non usate
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921571"
 |TypeName|RemoveUnusedLocals|
 |CheckId|CA1804|
 |Category|Microsoft.Performance|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un metodo dichiara una variabile locale, ma non usa la variabile, tranne possibilmente come destinatario di un'istruzione di assegnazione. Per l'analisi da parte di questa regola, l'assembly testato deve essere compilato con le informazioni di debug e il file di database di programma (con estensione pdb) associato deve essere disponibile.

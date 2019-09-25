@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d77ecc255f03e38e39a9321d9c7a9e5568e94a4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88464effce80b6957dc8945ad17f5a39b4f449c8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546336"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234513"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Evitare ereditarietà eccessiva
 
@@ -31,7 +31,7 @@ ms.locfileid: "62546336"
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
 |Category|Microsoft.Maintainability|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
@@ -39,15 +39,15 @@ Un tipo si trova oltre il quarto livello di annidamento nella gerarchia di eredi
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Le gerarchie di tipi eccessivamente annidate possono comportare difficoltà di comprensione e gestione. Questa regola consente di limitare analysis alle gerarchie nello stesso modulo.
+Le gerarchie di tipi eccessivamente annidate possono comportare difficoltà di comprensione e gestione. Questa regola limita l'analisi alle gerarchie nello stesso modulo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, derivare il tipo da un tipo di base che è meno approfondito nella gerarchia di ereditarietà o eliminare alcuni dei tipi di base intermedi.
+Per correggere una violazione di questa regola, derivare il tipo da un tipo di base più basso nella gerarchia di ereditarietà o eliminare alcuni tipi di base intermedi.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola. Tuttavia, il codice potrebbe essere più difficile da gestire. Si noti che, a seconda della visibilità dei tipi di base, la risoluzione delle violazioni di questa regola potrebbe creare le modifiche di rilievo. Ad esempio, la rimozione dei tipi di base pubblici è una modifica sostanziale.
+È possibile eliminare un avviso da questa regola in modo sicuro. Tuttavia, il codice potrebbe essere più difficile da gestire. Si noti che, a seconda della visibilità dei tipi di base, la risoluzione delle violazioni di questa regola potrebbe creare modifiche di rilievo. La rimozione dei tipi di base pubblici, ad esempio, costituisce una modifica sostanziale.
 
 ## <a name="example"></a>Esempio
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df19d31abe88c6d12bafc933ba740badb832eb16
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4495dcbe951edd3e7eaa3b6ff0d2432bc0a7751
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921078"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232882"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106: Asserzioni protette
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921078"
 |TypeName|SecureAsserts|
 |CheckId|CA2106|
 |Category|Microsoft.Security|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un metodo dichiara un'autorizzazione e non esegue alcun controllo di sicurezza sul chiamante.

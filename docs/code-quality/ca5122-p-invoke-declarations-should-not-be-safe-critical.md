@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ebba23b26e0967bc29a79e719e02d834a29f1b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7922681307b576f8da523cdd08fb808fb36b3d8c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919847"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236994"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 Le dichiarazioni P/Invoke non devono essere SafeCritical
 
@@ -22,7 +22,7 @@ ms.locfileid: "68919847"
 |TypeName|PInvokesShouldNotBeSafeCriticalFxCopRule|
 |CheckId|CA5122|
 |Category|Microsoft.Security|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Una dichiarazione P/Invoke è stata contrassegnata con <xref:System.Security.SecuritySafeCriticalAttribute>:

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922517"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235468"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: I membri non devono esporre tipi concreti specifici
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922517"
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un membro visibile esternamente è un determinato tipo concreto o espone determinati tipi concreti tramite uno dei relativi parametri o valori restituiti. Attualmente questa regola segnala l'esposizione dei tipi concreti seguenti:
@@ -42,7 +42,7 @@ Nella tabella seguente sono elencati i tipi concreti di destinazione e le sostit
 
 |Tipo concreto|Sostituzione|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|[https://login.microsoftonline.com/consumers/](<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>).<br /><br /> L'utilizzo dell'interfaccia separa il membro da un'implementazione specifica di un'origine dati XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> L'utilizzo dell'interfaccia separa il membro da un'implementazione specifica di un'origine dati XML.|
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola, modificare il tipo concreto nell'interfaccia consigliata.

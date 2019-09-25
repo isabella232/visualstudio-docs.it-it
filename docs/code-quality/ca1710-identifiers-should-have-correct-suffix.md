@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547320"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234162"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Gli identificatori devono contenere il suffisso corretto
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547320"
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
@@ -49,12 +49,12 @@ Nella tabella seguente sono elencati i tipi di base e le interfacce con suffissi
 |<xref:System.Attribute?displayProperty=fullName>|Attributo|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Eccezione|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Raccolta|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dizionario|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Raccolta|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Raccolta o coda|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Raccolta o stack|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Raccolta|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dizionario|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Raccolta o DataTable|

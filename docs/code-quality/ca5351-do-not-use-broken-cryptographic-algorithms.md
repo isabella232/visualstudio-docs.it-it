@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540859"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236942"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: non usare algoritmi di crittografia interrotti
 
@@ -22,7 +22,7 @@ ms.locfileid: "62540859"
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |Category|Microsoft.Cryptography|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 > [!NOTE]
 > Ultimo aggiornamento di questo avviso: novembre 2015.
@@ -35,7 +35,7 @@ Gli algoritmi di crittografia elencati di seguito sono soggetti ad attacchi crit
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Gli algoritmi di crittografia interrotti non sono considerati sicuri e il loro uso non è consigliato. L'algoritmo hash MD5 è soggetto ad attacchi di collisione noti, anche se la vulnerabilità specifica varia a seconda del contesto d'uso.  Gli algoritmi hash usati per garantire l'integrità dei dati (ad esempio, firma del file o un certificato digitale) sono particolarmente vulnerabili.  In questo contesto gli autori di attacchi possono generare due serie di dati separati, in modo tale che i dati validi possano essere sostituiti da dati dannosi senza modificare il valore hash o invalidare una firma digitale associata.
+Gli algoritmi di crittografia interrotti non sono considerati sicuri e il loro uso non è consigliato. L'algoritmo hash MD5 è soggetto ad attacchi di collisione noti, anche se la vulnerabilità specifica varia a seconda del contesto d'uso.  Gli algoritmi di hash usati per garantire l'integrità dei dati (ad esempio, la firma del file o il certificato digitale) sono particolarmente vulnerabili.  In questo contesto gli autori di attacchi possono generare due serie di dati separati, in modo tale che i dati validi possano essere sostituiti da dati dannosi senza modificare il valore hash o invalidare una firma digitale associata.
 
 Per gli algoritmi di crittografia:
 
@@ -49,17 +49,17 @@ Questa regola viene attivata quando trova nel codice sorgente una delle funzioni
 
 Usare opzioni di crittografia più avanzate:
 
-- Per MD5, usare gli hash di [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) famiglia (ad esempio <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Per MD5, usare gli hash della famiglia [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (ad esempio <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256>,,).
 
 - Per DES e RC2, usare la crittografia <xref:System.Security.Cryptography.Aes> .
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non eliminare un avviso da questa regola, a meno che questa non venga esaminata da un esperto di crittografia.
 
 ## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
 
-Gli esempi di pseudo-codice seguente viene illustrato il modello rilevato da questa regola e le possibili alternative.
+Gli esempi di pseudo codice seguenti illustrano il modello rilevato da questa regola e le possibili alternative.
 
 ### <a name="md5-hashing-violation"></a>Violazione di hash MD5
 

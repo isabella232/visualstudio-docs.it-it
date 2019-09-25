@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545538"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232809"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Controllare la sicurezza dichiarativa sui tipi di valori
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545538"
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un tipo valore pubblico o protetto è protetto da un [dati e modellazione](/dotnet/framework/data/index) oppure [linking](/dotnet/framework/misc/link-demands).
+Un tipo di valore pubblico o protetto è protetto da una richiesta di [dati e di modellazione](/dotnet/framework/data/index) o [collegamento](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-I tipi di valore sono allocati e inizializzati dai relativi costruttori predefiniti prima di eseguire altri costruttori. Se un tipo di valore è protetto da Demand o LinkDemand, e il chiamante non dispone di autorizzazioni per il controllo di sicurezza, un costruttore diverso da quello predefinito avrà esito negativo e verrà generata un'eccezione di sicurezza. Il tipo di valore non viene deallocato; rimarrà nello stato impostato dal costruttore predefinito. Non presupporre che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
+I tipi di valore vengono allocati e inizializzati dai relativi costruttori predefiniti prima dell'esecuzione di altri costruttori. Se un tipo di valore è protetto da una richiesta o da LinkDemand e il chiamante non dispone di autorizzazioni che soddisfano il controllo di sicurezza, qualsiasi costruttore diverso da quello predefinito avrà esito negativo e verrà generata un'eccezione di sicurezza. Il tipo di valore non è deallocato; viene lasciato nello stato impostato dal costruttore predefinito. Non presupporre che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-È possibile correggere una violazione di questa regola a meno che non si rimuove il controllo di sicurezza dal tipo e controlli di sicurezza a livello di metodo di utilizzo al suo posto. Correzione della violazione in questo modo non impedisce ai chiamanti con autorizzazioni non adeguate dal recupero delle istanze del tipo di valore. È necessario assicurarsi che un'istanza del tipo di valore, nello stato predefinito, non espone informazioni riservate e non può essere utilizzata in modo dannoso.
+Non è possibile correggere una violazione di questa regola a meno che non si rimuova il controllo di sicurezza dal tipo e si usino i controlli di sicurezza a livello di metodo al suo posto. La correzione della violazione in questo modo non impedisce ai chiamanti con autorizzazioni non adeguate di ottenere istanze del tipo di valore. È necessario assicurarsi che un'istanza del tipo di valore, nello stato predefinito, non esponga informazioni riservate e non possa essere utilizzata in modo dannoso.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Se un chiamante qualsiasi possibile ottenere le istanze del tipo di valore nello stato predefinito senza causare una minaccia alla sicurezza, è possibile eliminare un avviso da questa regola.
+È possibile eliminare un avviso da questa regola se un chiamante può ottenere istanze del tipo di valore nello stato predefinito senza rappresentare una minaccia per la sicurezza.
 
 ## <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente mostra una libreria che contiene un tipo di valore che viola la regola. Il `StructureManager` tipo presuppone che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
+Nell'esempio seguente viene illustrata una libreria contenente un tipo di valore che viola questa regola. Il `StructureManager` tipo presuppone che un chiamante che passa un'istanza del tipo di valore disponga dell'autorizzazione per creare o accedere all'istanza.
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>Esempio 2
 
-L'applicazione seguente illustra punti deboli della libreria.
+Nell'applicazione seguente viene illustrata la debolezza della libreria.
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 

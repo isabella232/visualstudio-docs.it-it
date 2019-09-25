@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6850cee67a0dfed4b386eef5ed7cb021d3c76a4d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920822"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232516"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Non esporre in modo indiretto metodi con richieste di collegamento
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920822"
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un membro pubblico o protetto presenta [richieste di collegamento](/dotnet/framework/misc/link-demands) e viene chiamato da un membro che non esegue alcun controllo di sicurezza.
@@ -37,7 +37,7 @@ Un membro pubblico o protetto presenta [richieste di collegamento](/dotnet/frame
 Una richiesta di collegamento controlla esclusivamente le autorizzazioni del chiamante immediato. Se un membro `X` non esegue richieste di sicurezza dei chiamanti e chiama il codice protetto da una richiesta di collegamento, un chiamante senza l'autorizzazione necessaria può `X` utilizzare per accedere al membro protetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Aggiungere i dati di sicurezza [e](/dotnet/framework/data/index) la modellazione o la richiesta di collegamento al membro in modo che non fornisca più l'accesso non sicuro al membro protetto da richiesta di collegamento.
+Aggiungere i dati di sicurezza [e la modellazione](/dotnet/framework/data/index) o la richiesta di collegamento al membro in modo che non fornisca più l'accesso non sicuro al membro protetto da richiesta di collegamento.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non conceda ai chiamanti l'accesso a operazioni o risorse che possono essere utilizzate in modo distruttivo.

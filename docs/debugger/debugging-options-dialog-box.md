@@ -1,5 +1,5 @@
 ---
-title: Il debug, finestra di dialogo Opzioni | Microsoft Docs
+title: Debug, finestra di dialogo Opzioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fc11269713770bbc1950d8f15626936ddd2174f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851657"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211134"
 ---
 # <a name="debugging-options-dialog-box"></a>Debug, finestra di dialogo Opzioni
 Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal menu **Strumenti** sono contenute le pagine elencate di seguito, che consentono di specificare le impostazioni del debugger.
@@ -41,6 +41,6 @@ Nella cartella **Debug** della finestra di dialogo **Opzioni** accessibile dal m
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Riferimenti dell'interfaccia utente di debug](../debugger/debugging-user-interface-reference.md)

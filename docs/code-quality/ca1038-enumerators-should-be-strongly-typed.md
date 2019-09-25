@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dae77bf7783edc165305f9b3ba60969d4f126a8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 56c2281f76b9064427d1d651523b9cda441eb029
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922898"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236008"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Gli enumeratori devono essere fortemente tipizzati
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922898"
 |TypeName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un tipo pubblico o protetto implementa <xref:System.Collections.IEnumerator?displayProperty=fullName> ma non fornisce una versione fortemente tipizzata <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> della proprietà. I tipi derivati dai seguenti tipi sono esenti da questa regola:

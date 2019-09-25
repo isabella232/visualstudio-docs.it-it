@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ebfa5e9b90951acf59c8214941b93adae76d06e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 886cc66f820d201b8ab7f29fee00eebce07fc176
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177381"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238107"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Contrassegnare tutti i campi non serializzabili
 
@@ -31,7 +31,7 @@ ms.locfileid: "66177381"
 |TypeName|MarkAllNonSerializableFields|
 |CheckId|CA2235|
 |Category|Microsoft.Usage|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -39,29 +39,29 @@ Un campo di istanza di un tipo non serializzabile viene dichiarato in un tipo se
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Un tipo serializzabile è quello contrassegnato con il <xref:System.SerializableAttribute?displayProperty=fullName> attributo. Quando viene serializzato il tipo, una <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> eccezione viene generata se il tipo contiene un campo di istanza di un tipo che non è serializzabile *e* non implementa il <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaccia.
+Un tipo serializzabile è un tipo contrassegnato con l' <xref:System.SerializableAttribute?displayProperty=fullName> attributo. Quando il tipo viene serializzato, viene <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> generata un'eccezione se il tipo contiene un campo di istanza di un tipo che non è serializzabile *e* non <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> implementa l'interfaccia.
 
 > [!TIP]
-> CA2235 non viene generato, ad esempio i campi di tipi che implementano <xref:System.Runtime.Serialization.ISerializable> perché forniscono la propria logica di serializzazione.
+> CA2235 non viene attivato per i campi di istanza dei tipi <xref:System.Runtime.Serialization.ISerializable> che implementano perché forniscono una propria logica di serializzazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, si applicano le <xref:System.NonSerializedAttribute?displayProperty=fullName> attributo sul campo che non è serializzabile.
+Per correggere una violazione di questa regola, applicare l' <xref:System.NonSerializedAttribute?displayProperty=fullName> attributo al campo non serializzabile.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Eliminare solo un avviso da questa regola se un <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> tipo viene dichiarato che consente alle istanze del campo da serializzare e deserializzare.
+Eliminare un avviso da questa regola solo se viene <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> dichiarato un tipo che consente la serializzazione e la deserializzazione delle istanze del campo.
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente mostra due tipi: uno che viola la regola e uno che soddisfa la regola.
+Nell'esempio seguente vengono illustrati due tipi: uno che viola la regola e uno che soddisfa la regola.
 
 [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)]
 [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]
 
 ## <a name="remarks"></a>Note
 
-Regola CA2235 non analizza i tipi che implementano il <xref:System.Runtime.Serialization.ISerializable> interface (a meno che non sono contrassegnati anche con il <xref:System.SerializableAttribute> attributo). Infatti [regola CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md) già consiglia contrassegnare i tipi che implementano le <xref:System.Runtime.Serialization.ISerializable> interfacciarsi con il <xref:System.SerializableAttribute> attributo.
+La regola CA2235 non analizza i tipi che implementano l' <xref:System.Runtime.Serialization.ISerializable> interfaccia (a meno che non siano contrassegnati anche con l' <xref:System.SerializableAttribute> attributo). Questo perché la [regola CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md) consiglia già di contrassegnare i tipi che <xref:System.Runtime.Serialization.ISerializable> implementano l' <xref:System.SerializableAttribute> interfaccia con l'attributo.
 
 ## <a name="related-rules"></a>Regole correlate
 
@@ -70,5 +70,5 @@ Regola CA2235 non analizza i tipi che implementano il <xref:System.Runtime.Seria
 - [CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 - [CA2238: Implementare correttamente i metodi di serializzazione](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 - [CA2239: Fornire metodi di deserializzazione per i campi facoltativi](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
-- [CA2240: Implementare ISerializable in modo corretto](../code-quality/ca2240-implement-iserializable-correctly.md)
-- [CA2120: Proteggere i costruttori di serializzazione](../code-quality/ca2120-secure-serialization-constructors.md)
+- [CA2240 Implementare ISerializable in modo corretto](../code-quality/ca2240-implement-iserializable-correctly.md)
+- [CA2120: Costruttori di serializzazione protetti](../code-quality/ca2120-secure-serialization-constructors.md)

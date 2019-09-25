@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416787"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238177"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: Modificare la directory di output della compilazione
 
@@ -43,6 +43,15 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
    Digitare il percorso per generare l'output (assoluto o relativo alla directory di progetto radice), oppure scegliere **Sfoglia** per passare alla relativa cartella.
 
    ![Proprietà Percorso di output per un progetto Visual Studio C#](media/output-path.png)
+   
+   > [!NOTE]
+   > In alcuni progetti, per impostazione predefinita, il Framework e il runtime vengono inclusi nel percorso di compilazione. Per modificare questa operazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **modifica file di progetto**e aggiungere quanto segue:
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > Se l'output non viene generato nel percorso specificato, assicurarsi di compilare la configurazione corrispondente, ad esempio **Debug** o **Rilascio**, selezionandola nella barra dei menu di Visual Studio.

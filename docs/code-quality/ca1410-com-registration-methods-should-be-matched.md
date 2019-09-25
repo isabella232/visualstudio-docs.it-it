@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a424e3c884d47b7deb848b418fbf0f3344d6c379
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714728"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234740"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: I metodi di registrazione COM devono corrispondere
 
@@ -30,22 +30,22 @@ ms.locfileid: "66714728"
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
-|Category|Microsoft.Interoperability|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. interoperabilità|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un tipo dichiara un metodo contrassegnato con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attributo ma non dichiara un metodo contrassegnato con il <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attributo, o viceversa.
+Un tipo dichiara un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attributo, ma non dichiara un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attributo o viceversa.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Per i client modello COM (Component Object) creare un tipo .NET, il tipo deve prima essere registrato. Se è disponibile, un metodo contrassegnato con il <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attributo viene chiamato durante il processo di registrazione per l'esecuzione di codice specificato dall'utente. Un metodo corrispondente che è contrassegnato con il <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> attributo viene chiamato durante il processo di annullamento della registrazione per invertire le operazioni del metodo di registrazione.
+Per i client Component Object Model (COM) per la creazione di un tipo .NET, il tipo deve essere prima registrato. Se disponibile, un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attributo viene chiamato durante il processo di registrazione per eseguire il codice specificato dall'utente. Un metodo corrispondente contrassegnato con l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> attributo viene chiamato durante il processo di annullamento della registrazione per invertire le operazioni del metodo di registrazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, aggiungere il metodo di annullamento della registrazione o di registrazione corrispondente.
+Per correggere una violazione di questa regola, aggiungere il metodo di registrazione o annullamento della registrazione corrispondente.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non escludere un avviso da questa regola.
 
@@ -58,7 +58,7 @@ Nell'esempio seguente viene illustrato un tipo che viola la regola. Il codice co
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1411: Metodi di registrazione COM non devono essere visibili](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411: I metodi di registrazione COM non devono essere visibili](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Vedere anche
 

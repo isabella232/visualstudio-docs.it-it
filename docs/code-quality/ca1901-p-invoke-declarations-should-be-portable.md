@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921308"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233300"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Le dichiarazioni P/Invoke devono essere portabili
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921308"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Category|Microsoft. portabilità|
-|Modifica importante|Interruzioni: se il P/Invoke è visibile all'esterno dell'assembly. Senza interruzioni: se il P/Invoke non è visibile all'esterno dell'assembly.|
+|Modifica|Interruzioni: se il P/Invoke è visibile all'esterno dell'assembly. Senza interruzioni: se il P/Invoke non è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
 Questa regola valuta la dimensione di ciascun parametro e il valore restituito di P/Invoke e verifica che le relative dimensioni, quando viene eseguito il marshalling a codice non gestito su piattaforme a 32 e 64 bit, siano corrette. La violazione più comune di questa regola consiste nel passare un valore integer a dimensione fissa in cui è richiesta una variabile di tipo puntatore dipendente dalla piattaforma.

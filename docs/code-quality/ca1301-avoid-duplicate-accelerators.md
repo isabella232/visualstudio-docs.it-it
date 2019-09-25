@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922268"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235169"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitare tasti di scelta rapida duplicati
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922268"
 |TypeName|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
 |Category|Microsoft. globalizzazione|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un tipo estende <xref:System.Windows.Forms.Control?displayProperty=fullName> e contiene due o più controlli di primo livello con chiavi di accesso identiche archiviate in un file di risorse.

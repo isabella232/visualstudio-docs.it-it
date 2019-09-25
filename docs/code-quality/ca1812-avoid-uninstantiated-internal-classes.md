@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f924e9530a7ee43ec2222366141c3af6be2efc29
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744706"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233604"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitare classi interne prive di istanze
 
@@ -28,17 +28,17 @@ ms.locfileid: "66744706"
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
 |Category|Microsoft.Performance|
-|Modifica importante|Non sostanziale|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un tipo interno (a livello di assembly) non viene mai creata un'istanza.
+Non viene mai creata un'istanza di un tipo interno (a livello di assembly).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola cerca di individuare una chiamata a uno dei costruttori del tipo e segnala una violazione, se viene trovata alcuna chiamata.
+Questa regola tenta di individuare una chiamata a uno dei costruttori del tipo e segnala una violazione se non viene trovata alcuna chiamata.
 
-I tipi seguenti non vengono analizzati da questa regola:
+I tipi seguenti non vengono esaminati da questa regola:
 
 - Tipi valore
 
@@ -48,29 +48,29 @@ I tipi seguenti non vengono analizzati da questa regola:
 
 - Delegati
 
-- Tipi di matrice emesso dal compilatore
+- Tipi di matrici emesse dal compilatore
 
-- I tipi che non può essere inizializzata e che solo definiscono [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) metodi.
+- Tipi di cui non è possibile creare un'istanza e [`static`](/dotnet/csharp/language-reference/keywords/static) che definiscono solo i metodi ([ `Shared` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)).
 
-Se si applica il <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> all'assembly che si sta analizzando, questa regola non contrassegna i tipi che sono contrassegnati come [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) perché può essere un campo utilizzato da un assembly friend.
+Se si applica l' <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> oggetto all'assembly analizzato, questa regola non contrassegnerà i tipi contrassegnati come [`internal`](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` in Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) perché un campo può essere utilizzato da un assembly Friend.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere codice che lo usa. Se il tipo contiene solo `static` metodi, aggiungere uno dei seguenti per il tipo per impedire al compilatore di creazione di un costruttore di istanza pubblici predefinito:
+Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere il codice che lo utilizza. Se il tipo contiene solo `static` metodi, aggiungere uno degli elementi seguenti al tipo per impedire al compilatore di emettere un costruttore di istanza pubblica predefinito:
 
-- Il `static` modificatore per C# tipi destinati a .NET Framework 2.0 o versione successiva.
+- Modificatore `static` per C# i tipi che hanno come destinazione .NET Framework 2,0 o versione successiva.
 
-- Un costruttore privato per i tipi destinate a .NET Framework versioni 1.0 e 1.1.
+- Un costruttore privato per i tipi destinati a .NET Framework versioni 1,0 e 1,1.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola. Si consiglia di eliminare l'avviso nelle situazioni seguenti:
+È possibile eliminare un avviso da questa regola in modo sicuro. Si consiglia di non visualizzare più questo avviso nelle situazioni seguenti:
 
-- La classe viene creata tramite i metodi di reflection con associazione tardiva, ad esempio <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- La classe viene creata tramite metodi di reflection ad associazione tardiva <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>, ad esempio.
 
-- La classe viene creata automaticamente dal runtime o ASP.NET. Alcuni esempi di classi create automaticamente sono quelli che implementano <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La classe viene creata automaticamente dalla fase di esecuzione o ASP.NET. Alcuni esempi di classi create automaticamente sono quelli che <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> implementano <xref:System.Web.IHttpHandler?displayProperty=fullName>o.
 
-- La classe viene passata come parametro di tipo con un [ `new` vincolo](/dotnet/csharp/language-reference/keywords/new-constraint). Nell'esempio seguente viene contrassegnato dalla regola CA1812:
+- La classe viene passata come parametro di tipo con un [ `new` vincolo](/dotnet/csharp/language-reference/keywords/new-constraint). L'esempio seguente verrà contrassegnato da Rule CA1812:
 
     ```csharp
     internal class MyClass
@@ -93,6 +93,6 @@ Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere c
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1811: Evitare il codice privato](../code-quality/ca1811-avoid-uncalled-private-code.md)
-- [CA1801: Controllare i parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)
-- [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801 Verifica parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: Rimuovi variabili locali non usate](../code-quality/ca1804-remove-unused-locals.md)

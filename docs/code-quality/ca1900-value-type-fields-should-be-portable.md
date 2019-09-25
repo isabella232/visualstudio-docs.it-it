@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4bef51c547d4a1614137e0691343bef635aed50d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921325"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233283"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: I campi dei tipi di valore devono essere portabili
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921325"
 |TypeName|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |Category|Microsoft. portabilità|
-|Modifica importante|Interruzioni: se il campo può essere visualizzato all'esterno dell'assembly.<br /><br /> Senza interruzioni: se il campo non è visibile all'esterno dell'assembly.|
+|Modifica|Interruzioni: se il campo può essere visualizzato all'esterno dell'assembly.<br /><br /> Senza interruzioni: se il campo non è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
 Questa regola consente di verificare che le strutture dichiarate con layout esplicito vengano allineate correttamente quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 64 bit. IA-64 non consente accessi di memoria non allineati e il processo si arresterà in modo anomalo se questa violazione non è corretta.

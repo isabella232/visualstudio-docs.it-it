@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a09d06a521c4751e3aea78b72b99a8126f4e7ff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f4c5f9c001505a76f19f2d675d552124c611f3d5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923256"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236622"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: I metodi generici devono specificare parametri di tipo
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923256"
 |TypeName|GenericMethodsShouldProvideTypeParameter|
 |CheckId|CA1004|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 La firma del parametro di un metodo generico visibile esternamente non contiene tipi che corrispondono a tutti i parametri di tipo del metodo.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10db644fe4cf65a7336ef8bd50dcf62e072e1c46
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0ed38a713f9e9a2ab95ad7e1062c6d5d9ab541d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922963"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236100"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: I metodi di interfaccia devono essere richiamabili dai tipi figlio
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922963"
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
 |Category|Microsoft.Design|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un tipo visibile esternamente non sealed fornisce un'implementazione di metodo esplicita di un'interfaccia pubblica e non fornisce un metodo visibile esternamente alternativo con lo stesso nome.

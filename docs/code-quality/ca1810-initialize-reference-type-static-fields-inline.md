@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8838de46c6b14f698194f343aebec30402452970
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5e6f65c8b8c570f8df142c36f85388b68b66d3b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921533"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233662"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inizializzare i campi statici del tipo di riferimento inline
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921533"
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
 |Category|Microsoft.Performance|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un tipo riferimento dichiara un costruttore statico esplicito.
