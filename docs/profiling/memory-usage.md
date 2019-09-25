@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad4716b2408afb04242a8a71da3a96474dc42b99
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704467"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254607"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Misurare l'utilizzo della memoria in Visual Studio
 
@@ -29,7 +29,7 @@ Anche se è possibile raccogliere snapshot di memoria in qualsiasi momento nello
 È inoltre possibile usare lo strumento di memoria all'esterno del debugger. Vedere [Uso della memoria senza debug](../profiling/memory-usage-without-debugging2.md). È possibile usare gli strumenti di profilatura senza il debugger collegato con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
 > [!NOTE]
-> **Supporto allocatore personalizzato.** Il profiler della memoria nativo raccoglie dati relativi a eventi [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) di allocazione generati in fase di esecuzione.  Gli allocatori in CRT e Windows SDK sono stati annotati a livello di origine in modo che sia possibile acquisirne i dati di allocazione.  Nella scrittura degli allocatori, fare in modo che qualsiasi funzione che restituisce un puntatore alla memoria heap appena allocata possa essere decorata con [__declspec](/cpp/cpp/declspec)(allocator), come illustrato in questo esempio per myMalloc:
+> **Supporto per allocatori personalizzati** Il profiler della memoria nativa funziona raccogliendo i dati degli eventi [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) di allocazione generati in fase di esecuzione.  Gli allocatori in CRT e Windows SDK sono stati annotati a livello di origine in modo che sia possibile acquisirne i dati di allocazione. Nella scrittura degli allocatori, fare in modo che qualsiasi funzione che restituisce un puntatore alla memoria heap appena allocata possa essere decorata con [__declspec](/cpp/cpp/declspec)(allocator), come illustrato in questo esempio per myMalloc:
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
@@ -104,7 +104,7 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 - Per visualizzare i dettagli della differenza tra lo snapshot corrente e quello precedente, scegliere il collegamento di modifica a sinistra della freccia (![Aumento nell'utilizzo della memoria](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento nell'utilizzo della memoria")). Una freccia rossa indica un aumento nell'utilizzo della memoria, mentre una freccia verde indica una riduzione.
 
 > [!TIP]
-> Per identificare i problemi di memoria più rapidamente, i report diff vengono ordinati in base ai tipi di oggetto che sono aumentati maggiormente in termini di numero (fare clic sul collegamento di modifica nella colonna **Oggetti (diff)**) o di dimensioni complessive dell'heap (fare clic sul collegamento di modifica nella colonna **Dimensioni heap (diff)**).
+> Per identificare i problemi di memoria più rapidamente, i report diff vengono ordinati in base ai tipi di oggetto che sono aumentati maggiormente in termini di numero (fare clic sul collegamento di modifica nella colonna **Oggetti (diff)** ) o di dimensioni complessive dell'heap (fare clic sul collegamento di modifica nella colonna **Dimensioni heap (diff)** ).
 
 - Per visualizzare i dettagli relativi solo allo snapshot selezionato, fare clic sul collegamento non di modifica.
 
@@ -156,7 +156,7 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
    ![Scegliere uno snapshot dall'elenco Confronta con](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
-Il report di modifica aggiunge colonne (contrassegnate con **(Diff)**) al report di base che mostra la differenza tra il valore di snapshot di base e lo snapshot di confronto. Ecco un esempio di come potrebbe apparire un report delle differenze di visualizzazione del tipo nativo:
+Il report di modifica aggiunge colonne (contrassegnate con **(Diff)** ) al report di base che mostra la differenza tra il valore di snapshot di base e lo snapshot di confronto. Ecco un esempio di come potrebbe apparire un report delle differenze di visualizzazione del tipo nativo:
 
 ![Visualizzazione delle differenze dei tipi nativi](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 

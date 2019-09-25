@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9333f2fb1bff0fdb8a3f0dac8004f66156b8863d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c288764cf9182bc34233d312546f7915eed5975
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870827"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252172"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Riferimento allo schema di estensione VSIX 2,0
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è regolato da uno schema. La versione 2,0 di questo schema supporta l'aggiunta di tipi e attributi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore del manifesto ignora gli elementi e gli attributi XML che non sono in grado di comprendere.
@@ -133,7 +133,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 
     Quando si esprime la versione per le versioni di Visual Studio 2017, la versione secondaria deve sempre essere **0**. Ad esempio, Visual Studio 2017 versione 15.3.26730.0 dovrebbe essere espresso come [15.0.26730.0, 16). Questa operazione è necessaria solo per i numeri di versione di Visual Studio 2017 e versioni successive.
 
-  - `AnyAttribute*`-L' `<InstallationTarget>` elemento consente un set aperto di attributi esposto in fase di esecuzione come dizionario di coppie nome-valore.
+  - `AnyAttribute*`-L' `<InstallationTarget>` elemento consente un set aperto di attributi esposto in fase di esecuzione come dizionario delle coppie nome/valore.
 
 ### <a name="dependencies-element"></a>Elemento dipendenze
  Questo elemento contiene un elenco di dipendenze dichiarate da questo pacchetto. Se vengono specificate dipendenze, è necessario che i pacchetti ( `Id`identificati da) siano stati installati in precedenza.
@@ -187,7 +187,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 
   - `TargetVersion`: intervallo di versioni a cui si applica l'asset specificato. Usato per la distribuzione di più versioni di asset a versioni diverse di Visual Studio. Per avere effetto, è necessario Visual Studio 2017,3 o versione successiva.
 
-  - `AnyAttribute*`: Set di attributi aperto esposto in fase di esecuzione come dizionario di coppie nome-valore.
+  - `AnyAttribute*`: Set di attributi aperto esposto in fase di esecuzione come dizionario delle coppie nome/valore.
 
     `<AnyElement>*`-Qualsiasi contenuto strutturato è consentito tra `<Asset>` un tag di inizio e di fine. Tutti gli elementi vengono esposti come un elenco di oggetti XmlElement. Le estensioni VSIX possono definire metadati specifici dei tipi strutturati nel file manifesto ed enumerarli in fase di esecuzione.
 

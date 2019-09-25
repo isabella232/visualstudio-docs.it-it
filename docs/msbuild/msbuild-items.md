@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7000e8a95dbe115e5afe853c9dd55a797d23ec3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842305"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251705"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere rappresentano file. I file sono specificati nell'attributo `Include`. Gli elementi sono raggruppati in tipi di elemento in base ai nomi degli elementi. I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione.
@@ -179,7 +179,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
  A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi [ItemGroup](../msbuild/itemgroup-element-msbuild.md) che possono contenere elementi Item. Gli attributi in questa sezione sono validi quando vengono specificati per un elemento in un `ItemGroup` che si trova in una `Target`.
 
 ### <a name="BKMK_RemoveAttribute"></a> Rimuovere un attributo
- L'attributo `Remove` rimuove elementi (file) specifici dal tipo di elemento. Questo attributo è stato introdotto in .NET Framework 3.5, ma era supportato solo all'interno di destinazioni fino a MSBuild 15.0.
+ L'attributo `Remove` rimuove elementi (file) specifici dal tipo di elemento. Questo attributo è stato introdotto nel .NET Framework 3,5 (solo all'interno delle destinazioni). Le destinazioni interne ed esterne sono supportate a partire da MSBuild 15,0.
 
  L'esempio seguente rimuove tutti i file con estensione *config* dal tipo di elemento Compile.
 

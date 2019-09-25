@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
-ms.translationtype: HT
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957424"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251698"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -184,7 +184,7 @@ Le convenzioni di denominazione devono essere ordinate dalla convenzione più sp
 
 ::: moniker range=">=vs-2019"
 
-A partire da Visual Studio 2019 versione 16.2, l'ordine in base al quale sono definite le regole di denominazione in un file EditorConfig non è rilevante. Visual Studio ordina infatti automaticamente le regole di denominazione in base alla definizione delle regole stesse. L'[estensione EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) può analizzare un file EditorConfig e segnalare i casi in cui l'ordinamento delle regole nel file è diverso da quello che verrà usato dal compilatore in fase di esecuzione.
+A partire da Visual Studio 2019 versione 16.2, l'ordine in base al quale sono definite le regole di denominazione in un file EditorConfig non è rilevante. Visual Studio ordina infatti automaticamente le regole di denominazione in base alla definizione delle regole stesse. L' [estensione del servizio di linguaggio EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) può analizzare un file EditorConfig e segnalare i casi in cui l'ordinamento delle regole nel file è diverso da quello che verrà utilizzato dal compilatore in fase di esecuzione.
 
 Se si usa una versione precedente di Visual Studio, le convenzioni di denominazione devono essere ordinate dalla più specifica alla meno specifica nel file EditorConfig. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata. Se tuttavia sono presenti più *proprietà* della regola con lo stesso nome, la proprietà con tale nome individuata più di recente ha la precedenza. Per altre informazioni, vedere [Gerarchia e precedenza dei file](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
