@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546108"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234486"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitare un numero eccessivo di accoppiamenti tra classi
 
@@ -28,25 +28,25 @@ ms.locfileid: "62546108"
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
 |Category|Microsoft.Maintainability|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un tipo o metodo è associata a molti altri tipi.
+Un tipo o un metodo è abbinato a molti altri tipi.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
 Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo.
 
-Tipi e metodi che hanno un livello elevato di accoppiamenti di classi possono essere difficili da gestire. È buona norma disporre di tipi e metodi che mostrano uno stile bassi di controllo libero ed elevata coesione.
+I tipi e i metodi con un elevato grado di accoppiamento della classe possono essere difficili da gestire. È consigliabile disporre di tipi e metodi che presentano un accoppiamento basso e una coesione elevata.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere questa violazione, provare a riprogettare il tipo o metodo in modo da ridurre il numero di tipi a cui è associato.
+Per correggere la violazione, provare a riprogettare il tipo o il metodo per ridurre il numero di tipi a cui è associato.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Escludere questo avviso quando il tipo o metodo è considerato accettabile, nonostante il numero elevato di dipendenze da altri tipi.
+Escludere questo avviso quando il tipo o il metodo è considerato gestibile nonostante il numero elevato di dipendenze da altri tipi.
 
 ## <a name="see-also"></a>Vedere anche
 

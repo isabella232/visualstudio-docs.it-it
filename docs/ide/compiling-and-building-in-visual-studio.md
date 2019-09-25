@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8528b9e6ad302319f1fb1ebb010c7f55b93932
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416587"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211252"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 
@@ -25,7 +25,7 @@ Quando si compila il codice sorgente, il motore di compilazione crea assembly e 
 
 Compilando spesso il codice è possibile identificare rapidamente gli errori in fase di compilazione, ad esempio sintassi non corretta, parole chiave con errori di digitazione e tipi non corrispondenti. È inoltre possibile rilevare e risolvere gli errori di runtime, ad esempio errori logici e semantici, compilando ed eseguendo le versioni di debug del codice.
 
-Una compilazione riuscita conferma che la sintassi del codice sorgente dell'applicazione è corretta e che tutti i riferimenti statici a librerie, assembly e altri componenti possono essere risolti. Il risultato è un file eseguibile dell'applicazione che può essere testato per il funzionamento corretto sia in un [ambiente di debug](../debugger/index.md), sia mediante vari test manuali e automatici per la [convalida della qualità del codice](../test/improve-code-quality.md). Dopo aver testato completamente l'applicazione è possibile compilare una versione di rilascio da distribuire ai clienti. Per un'introduzione a questo processo, vedere [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md).
+Una compilazione riuscita conferma che la sintassi del codice sorgente dell'applicazione è corretta e che tutti i riferimenti statici a librerie, assembly e altri componenti possono essere risolti. Il risultato è un file eseguibile dell'applicazione che può essere testato per il funzionamento corretto sia in un [ambiente di debug](../debugger/index.yml), sia mediante vari test manuali e automatici per la [convalida della qualità del codice](../test/improve-code-quality.md). Dopo aver testato completamente l'applicazione è possibile compilare una versione di rilascio da distribuire ai clienti. Per un'introduzione a questo processo, vedere [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md).
 
 Per compilare un'applicazione è possibile usare uno di questi metodi: IDE di Visual Studio, strumenti da riga di comando MSBuild e Azure Pipelines:
 

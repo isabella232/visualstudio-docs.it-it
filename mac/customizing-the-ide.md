@@ -1,21 +1,21 @@
 ---
 title: Personalizzazione dell'IDE
-description: È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. Questo argomento esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
+description: È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. In questo articolo vengono illustrati i diversi modi in cui Visual Studio per Mac possibile adattarsi alle proprie esigenze.
 author: alanjclark
 ms.author: alcl
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: ff0c7a2970a9ecfdfb9de08f487ad7dfbe768249
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: fa1e2924e810f9e37f28d5becdfd8d46243b76fe
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691845"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213744"
 ---
 # <a name="customizing-the-ide"></a>Personalizzazione dell'IDE
 
-È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. Questo articolo esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
+Visual Studio per Mac possono essere personalizzate, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare le proprie esigenze di efficienza e estetica. Questo articolo esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
 
 ## <a name="dark-theme"></a>Tema scuro
 
@@ -58,17 +58,21 @@ Queste informazioni vengono usate per popolare le intestazioni standard dei file
 
 ![Opzioni per le intestazioni standard](media/customizing-the-ide-image8a.png)
 
-I campi **Nome** e **Posta elettronica** vengono usati in tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono popolati, Visual Studio per Mac chiede di farlo quando si tenta di usare il controllo della versione.
+I campi **Nome** e **Posta elettronica** vengono usati in tutti i commit eseguiti tramite il controllo della versione in Visual Studio per Mac. Se questi campi non sono stati popolati, Visual Studio per Mac chiederà di eseguire questa operazione quando si tenta di usare il controllo della versione.
 
 ## <a name="key-bindings"></a>Tasti di scelta rapida
 
-I tasti di scelta rapida consentono di adattare l'ambiente di sviluppo in modo da rendere più efficienti gli spostamenti all'interno di Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (in Windows), ReSharper, Visual Studio Code e Xcode.
+Le combinazioni di tasti o i tasti di scelta rapida consentono di adattare l'ambiente di sviluppo in modo che sia possibile spostarsi più efficacemente in Visual Studio per Mac. Sono disponibili tasti di scelta rapida familiari presenti nelle interfacce IDE più diffuse, ad esempio Visual Studio (in Windows), ReSharper, Visual Studio Code e Xcode.
 
 Per impostare tasti di scelta rapida, passare a **Visual Studio > Preferenze > Ambiente > Tasti di scelta rapida**, come illustrato nell'immagine seguente:
 
 ![Impostare tasti di scelta rapida](media/customizing-the-ide-image10a.png)
 
 Da qui è possibile cercare combinazioni di tasti di scelta rapida, visualizzare tasti di scelta rapida in conflitto, aggiungere nuovi tasti di scelta rapida e modificare quelli esistenti.
+
+Queste associazioni possono essere impostate anche durante la configurazione iniziale di Visual Studio per Mac, tramite la schermata di **selezione della tastiera** :
+
+![Impostare le combinazioni di tasti, prima esecuzione](media/ide-tour-2019-keyboard-shortcut.png)
 
 ## <a name="workspace-layout"></a>Layout area di lavoro
 
@@ -108,7 +112,7 @@ Lo stato dei riquadri aperti è rappresentato da un *layout*. È possibile passa
 
 C'è sempre un layout attivo e qualsiasi modifica eseguita in un layout, ad esempio l'aggiunta o il riposizionamento di un riquadro, modifica solo il layout attivo. Quando si esce da Visual Studio per Mac, le modifiche apportate non vengono salvate.
 
-È tuttavia possibile creare un nuovo layout tramite la voce di menu **Vista > Salva Layout**. Il layout corrente verrà aggiunto al menu e sarà possibile selezionarlo in qualsiasi momento:
+È tuttavia possibile creare un nuovo layout tramite la voce di menu **Vista > Salva Layout**. Questo comando consente di aggiungere il layout corrente al menu in modo che sia possibile selezionarlo in qualsiasi momento:
 
 ![Salva layout corrente](media/customizing-the-ide-image6a.png)
 
@@ -116,7 +120,7 @@ C'è sempre un layout attivo e qualsiasi modifica eseguita in un layout, ad esem
 
 Visual Studio per Mac consente di affiancare diversi editor di testo aperti o di visualizzare un editor in una finestra mobile scollegata.
 
-È possibile abilitare la modalità a due colonne tramite la voce di menu Vista selezionando **Vista > Colonne editor > Due colonne** o trascinando una scheda dell'editor su uno dei bordi dell'area dell'editor:
+È possibile abilitare la modalità a due colonne tramite la voce di menu Visualizza selezionando **visualizza > colonne dell'editor > 2 colonne**oppure trascinando una scheda dell'editor su uno dei bordi dell'area dell'Editor:
 
 ![Modalità due colonne affiancate](media/customizing-the-ide-sbs.png)
 

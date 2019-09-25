@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d92194a5aa2b46a0cb65a1525bc01d9de67b86
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547364"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235489"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: I tipi non devono estendere tipi di base specifici
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547364"
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 

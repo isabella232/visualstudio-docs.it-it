@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2302
 - EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
-ms.openlocfilehash: 1d7c87921a226b8918bfaa79fda6de85d710baa4
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 90e17211bc30dc65ce78b738dc692d5dbb7aaa69
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891208"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237740"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Assicurarsi che BinaryFormatter.Binder sia impostato prima di chiamare BinaryFormatter.Deserialize
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891208"
 |TypeName|EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize|
 |CheckId|CA2302|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -47,7 +47,7 @@ Questa regola trova <xref:System.Runtime.Serialization.Formatters.Binary.BinaryF
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Non usare <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>mai. Se è necessario usare un resolver di tipi, limitare i tipi deserializzati a un elenco previsto.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET-usare TypeNameHandling. None. Se è necessario usare un altro valore per TypeNameHandling, limitare i tipi deserializzati a un elenco previsto con un ISerializationBinder personalizzato.
-  - Buffer del protocollo
+  - Buffer di protocollo
 - Eseguire la prova di manomissione dei dati serializzati. Dopo la serializzazione, la firma crittografica dei dati serializzati. Prima della deserializzazione, convalidare la firma crittografica. Proteggere la chiave crittografica da divulgare e progettare per le rotazioni delle chiavi.
 - Limitare i tipi deserializzati. Implementare un oggetto <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>personalizzato. Prima di eseguire la deserializzazione <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> , impostare la proprietà su un'istanza <xref:System.Runtime.Serialization.SerializationBinder>di personalizzata. Nel metodo sottoposto <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> a override, se il tipo è imprevisto, generare un'eccezione per arrestare la deserializzazione.
   - Verificare che la proprietà sia impostata per <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> tutti i percorsi del codice.

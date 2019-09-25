@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ce7870077cb859a25de70c726c78cad1d50270e5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920417"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231938"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: I tipi devono essere Critical almeno come le interfacce e i tipi base relativi
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920417"
 |TypeName|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
 |Category|Microsoft.Security|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un tipo trasparente viene derivato da <xref:System.Security.SecuritySafeCriticalAttribute> un tipo contrassegnato con <xref:System.Security.SecurityCriticalAttribute>o oppure un tipo <xref:System.Security.SecuritySafeCriticalAttribute> contrassegnato con l'attributo viene derivato da un tipo contrassegnato con l' <xref:System.Security.SecurityCriticalAttribute> attributo di.

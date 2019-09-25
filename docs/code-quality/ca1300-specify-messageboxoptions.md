@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd269b099095326a260da7613bf3c2c402e864be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 746475e60bbe72c4ebfc51f13d0b2d4d0552ff62
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797694"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235199"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: Specificare MessageBoxOptions
 
@@ -30,8 +30,8 @@ ms.locfileid: "62797694"
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
-|Category|Microsoft.Globalization|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. globalizzazione|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -39,19 +39,19 @@ Un metodo chiama un overload del <xref:System.Windows.Forms.MessageBox.Show%2A?d
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Per visualizzare una finestra di messaggio in modo corretto per le lingue che utilizzano un ordine di lettura da destra a sinistra, passare il [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) e [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) campi per il <xref:System.Windows.Forms.MessageBox.Show%2A> metodo. Esaminare il <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> proprietà del controllo che lo contiene per determinare se utilizzare un ordine di lettura da destra a sinistra.
+Per visualizzare correttamente una finestra di messaggio per le <xref:System.Windows.Forms.MessageBox.Show%2A> impostazioni cultura che utilizzano un ordine di lettura da destra a sinistra, passare i campi [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) e [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) al metodo. Esaminare la <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> proprietà del controllo che lo contiene per determinare se utilizzare un ordine di lettura da destra a sinistra.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
 Per correggere una violazione di questa regola, chiamare un overload del <xref:System.Windows.Forms.MessageBox.Show%2A> metodo che accetta un <xref:System.Windows.Forms.MessageBoxOptions> argomento.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola quando la libreria di codice non verrà localizzata per una lingua che usa un ordine di lettura da destra a sinistra.
+È possibile eliminare un avviso da questa regola quando la libreria di codice non verrà localizzata per le impostazioni cultura che utilizzano un ordine di lettura da destra a sinistra.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo che visualizza una finestra di messaggio con le opzioni appropriate per l'ordine di lettura delle impostazioni cultura. Un file di risorse che non è visibile, è necessario per compilare l'esempio. Seguire i commenti nell'esempio per compilare l'esempio senza un file di risorse e per testare la funzione right-to-left.
+Nell'esempio seguente viene illustrato un metodo che visualizza una finestra di messaggio con opzioni appropriate per l'ordine di lettura delle impostazioni cultura. Per compilare l'esempio, è necessario un file di risorse, che non è visualizzato. Seguire i commenti nell'esempio per compilare l'esempio senza un file di risorse e per testare la funzionalità da destra a sinistra.
 
 [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
 [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d83da42a029d746899bfaccf5d62f8856a040611
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 536e676a1b2527c466aae741ca7117be507bfb9a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921111"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232749"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La sicurezza del metodo deve essere un superset del tipo
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921111"
 |TypeName|MethodSecurityShouldBeASupersetOfType|
 |CheckId|CA2114|
 |Category|Microsoft.Security|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un tipo dispone di sicurezza dichiarativa e uno dei relativi metodi dispone di sicurezza dichiarativa per la stessa azione di sicurezza e l'azione di sicurezza non è [richiesta di collegamento](/dotnet/framework/misc/link-demands)e le autorizzazioni controllate dal tipo non sono un subset delle autorizzazioni controllate dal metodo.

@@ -1,5 +1,5 @@
 ---
-title: 'CA2305: Non utilizzare il deserializzatore non sicuro LosFormatter'
+title: 'CA2305: Non usare il deserializzatore non sicuro LosFormatter'
 ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
@@ -13,41 +13,41 @@ ms.workload:
 f1_keywords:
 - CA2305
 - DoNotUseInsecureDeserializerLosFormatter
-ms.openlocfilehash: 4e589bbea53dd6a73a6e6e4fc44b6cb397d6dcbd
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 145d45d79f1dda27d5c69f0c481277572d3eeaa2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135459"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237733"
 ---
-# <a name="ca2305-do-not-use-insecure-deserializer-losformatter"></a>CA2305: Non utilizzare il deserializzatore non sicuro LosFormatter
+# <a name="ca2305-do-not-use-insecure-deserializer-losformatter"></a>CA2305: Non usare il deserializzatore non sicuro LosFormatter
 
 |||
 |-|-|
 |TypeName|DoNotUseInsecureDeserializerLosFormatter|
 |CheckId|CA2305|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Oggetto <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> metodo di deserializzazione è stato chiamato o cui si fa riferimento.
+È <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> stato chiamato o fatto riferimento A un metodo di deserializzazione.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Questa regola individua <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> riferimenti o chiamate al metodo di deserializzazione.
+Questa regola trova <xref:System.Web.UI.LosFormatter?displayProperty=nameWithType> le chiamate al metodo di deserializzazione o i riferimenti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
 [!INCLUDE[insecure-deserializers-fixes-for-always-insecure-deserializers](includes/insecure-deserializers-fixes-for-always-insecure-deserializers-md.md)]
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 [!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798819"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211374"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -90,7 +90,7 @@ Eventuali avvisi nuovi o aggiornati vengono visualizzati nella scheda **Elenco e
 
 ## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Usare Azioni rapide per correggere o effettuare il refactoring del codice
 
-Le [Azioni rapide](../ide/quick-actions.md), disponibili dall'icona a forma di lampadina o di cacciavite, consentono di eseguire il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e scegliere **Azioni rapide e refactoring**. Oppure, quando il cursore si trova sulla riga con la linea ondulata colorata premere **CTRL**+**.** oppure selezionare l'icona a forma di lampadina, di lampadina di errore o di cacciavite nel margine. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
+Le [Azioni rapide](../ide/quick-actions.md), disponibili dall'icona a forma di lampadina o di cacciavite, consentono di eseguire il refactoring del codice inline. Consentono di risolvere con la massima semplicità gli avvisi più comuni in modo rapido ed efficace nel codice C#, C++ e Visual Basic. Per accedere a questa nuova funzionalità, fare clic con il pulsante destro del mouse sulla linea ondulata sotto un avviso e scegliere **Azioni rapide e refactoring**. Oppure, quando il cursore si trova sulla riga con la linea ondulata colorata premere **CTRL**+ **.** oppure selezionare l'icona a forma di lampadina, di lampadina di errore o di cacciavite nel margine. Verrà visualizzato un elenco di possibili correzioni o refactoring che è possibile applicare alla riga di codice.
 
 ![Anteprima di lampadina di Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -98,7 +98,19 @@ Le Azioni rapide possono essere usate in tutti i casi in cui gli analizzatori di
 
 ![Testo Azioni rapide non disponibili in questo punto](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Con l'esperienza si apprenderà a usare rapidamente i tasti di direzione e **CTRL**+**.** per controllare se sono disponibili opportunità per eseguire facilmente il refactoring e per pulire il codice.
+Con l'esperienza si apprenderà a usare rapidamente i tasti di direzione e **CTRL**+ **.** per controllare se sono disponibili opportunità per eseguire facilmente il refactoring e per pulire il codice.
+
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>Eseguire la pulizia del codice
+
+Visual Studio fornisce la [Formattazione su richiesta del file C# di codice](code-styles-and-code-cleanup.md#apply-code-styles), incluse le preferenze di stile del codice, tramite il pulsante **pulizia codice** nella parte inferiore dell'editor.
+
+![Pulsante Pulizia del codice in Visual Studio 2019](media/execute-code-cleanup.png)
+
+Oltre a formattare il file per spazi, rientri e cetera, la **pulizia del codice** applica anche un set di convenzioni di stile di codice definito dall'utente. Le preferenze per ogni stile del codice vengono lette dal [file EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), se ce n'è uno per il progetto, o dalle [impostazioni di stile del codice](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) nella finestra di dialogo **Opzioni**.
+
+::: moniker-end
 
 ## <a name="debug-your-running-code"></a>Eseguire il debug del codice in esecuzione
 
@@ -106,7 +118,7 @@ Dopo aver compilato correttamente il codice e aver eseguito qualche attività di
 
 ![Finestre automatiche e di stack di chiamate di Visual Studio](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Per arrestare l'app, premere **MAIUSC**+**F5** o fare clic sul pulsante **Arresta**. In alternativa, è possibile chiudere semplicemente la finestra principale dell'app o la finestra di dialogo della riga di comando.
+Per arrestare l'app, premere **MAIUSC**+**F5** o fare clic sul pulsante **Arresta**. In alternativa, è possibile chiudere semplicemente la finestra principale dell'app (o la finestra di dialogo della riga di comando).
 
 Se il codice è stato eseguito senza errori ed esattamente come previsto, complimenti! In caso di blocco, arresto anomalo o risultati imprevisti, è necessario individuare l'origine dei problemi e correggere i bug.
 
@@ -157,5 +169,5 @@ Per altre informazioni sugli unit test in Visual Studio e su come usarli per cre
 ## <a name="see-also"></a>Vedere anche
 
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
-- [Altre informazioni sull'uso del debugger](../debugger/index.md)
+- [Altre informazioni sull'uso del debugger](../debugger/index.yml)
 - [Generare e correggere il codice](../ide/code-generation-in-visual-studio.md)

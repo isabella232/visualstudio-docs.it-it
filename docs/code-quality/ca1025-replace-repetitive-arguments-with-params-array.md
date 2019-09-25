@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5014bfe809cb5d56a22e971833128d1f48d77319
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f65d64dd4e881c41b17cd7cb9dc072a6fe800766
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922974"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236138"
 ---
 # <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922974"
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
 |Category|Microsoft.Design|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un metodo pubblico o protetto in un tipo pubblico ha più di tre parametri e gli ultimi tre parametri sono dello stesso tipo.

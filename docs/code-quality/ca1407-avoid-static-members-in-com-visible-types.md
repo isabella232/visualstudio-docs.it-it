@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631be1a93318cd24af4251fefbc710294fa52bf7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 57450f80a8c630e2186de8804f8bb88974564e46
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922006"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234887"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evitare i membri statici nei tipi visibili a COM
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922006"
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
 |Category|Microsoft. interoperabilità|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un tipo contrassegnato in modo specifico come visibile a Component Object Model (com) contiene un `public``static` metodo.

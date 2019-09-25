@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 723549865a39b390d411ffe83ee1fefad7ecb82d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564743"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211286"
 ---
 # <a name="com-debugging-tools"></a>Strumenti di debug COM
 
@@ -44,7 +44,7 @@ Per la verifica delle applicazioni, sono disponibili anche gli esempi ActiveX MF
 
 - [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Strumenti di debug COM](../debugger/com-debugging-tools.md)
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
-- [Esempio OCLIENT: Applicazione contenitore di modifica visiva](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Esempio SUPERPAD: Viene illustrato un Server di modifica visiva testi con CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Esempio OCLIENT: Viene illustrata un'applicazione contenitore di modifica visiva](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
+- [Esempio SUPERPAD: Viene illustrato un server di modifica visiva che modifica il testo utilizzando CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

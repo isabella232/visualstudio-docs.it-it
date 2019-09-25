@@ -1,5 +1,5 @@
 ---
-title: Regola di analisi codice CA2153 per le eccezioni stato danneggiato
+title: CA2153 della regola di analisi codice per le eccezioni di stato danneggiato
 ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
@@ -7,49 +7,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36442ad0792ef712acd322d17688d8ceb21444cb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542157"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231886"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Evitare la gestione delle eccezioni stato danneggiato
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Evitare di gestire le eccezioni di stato danneggiate
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-[Danneggiato (CSE) le eccezioni di stato](https://msdn.microsoft.com/magazine/dd419661.aspx) indicano che la memoria del processo sono presenti danni. Se si prova a intercettare tali eccezioni, invece di lasciare che il processo venga arrestato in modo anomalo, può portare a vulnerabilità di sicurezza nel caso in cui un utente malintenzionato riesca a inserire un exploit nell'area della memoria danneggiata.
+Le [eccezioni di stato danneggiate (CSES)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicano che nel processo è presente un danneggiamento della memoria. Se si prova a intercettare tali eccezioni, invece di lasciare che il processo venga arrestato in modo anomalo, può portare a vulnerabilità di sicurezza nel caso in cui un utente malintenzionato riesca a inserire un exploit nell'area della memoria danneggiata.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-CSE indica che lo stato di un processo è stato danneggiato e non è stato recuperato dal sistema. Nello scenario di stato danneggiato, un gestore generale recupera l'eccezione solo se si contrassegna il metodo con il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> attributo. Per impostazione predefinita, il [Common Language Runtime (CLR)](/dotnet/standard/clr) non richiama i gestori catch per le eccezioni CSE.
+CSE indica che lo stato di un processo è stato danneggiato e non è stato recuperato dal sistema. Nello scenario di stato danneggiato, un gestore generale rileva l'eccezione solo se si contrassegna il metodo con l' <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> attributo. Per impostazione predefinita, [Common Language Runtime (CLR)](/dotnet/standard/clr) non richiama i gestori catch per CSES.
 
-La più sicura consiste nel consentire al processo di arresto anomalo del sistema senza rilevare questi tipi di eccezioni. Anche la registrazione del codice, è possibile consentire agli utenti malintenzionati di sfruttare i bug al danneggiamento della memoria.
+L'opzione più sicura è consentire l'arresto anomalo del processo senza intercettare questi tipi di eccezioni. Anche il codice di registrazione può consentire agli utenti malintenzionati di sfruttare bug di danneggiamento della memoria.
 
-Questo avviso viene attivato quando le eccezioni CSE con un gestore generale che recupera tutte le eccezioni, ad esempio, `catch (System.Exception e)` o `catch` senza alcun parametro di eccezione.
+Questo avviso viene attivato quando si intercettano CSES con un gestore generale che intercetta tutte le eccezioni, `catch (System.Exception e)` ad `catch` esempio, o senza il parametro Exception.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per risolvere questo problema, effettuare una delle operazioni seguenti:
+Per risolvere il problema, eseguire una delle operazioni seguenti:
 
 - Rimuovere l'attributo <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Viene ripristinato il comportamento di runtime predefinito che prevede che le eccezioni CSE non vengano passate ai gestori catch.
 
-- Rimuovere il gestore catch generale nella preferenza dei gestori che recuperano tipi di eccezione specifici. Ad esempio estensioni CSE, presupponendo che il codice del gestore possa gestirle in modo sicuro (raro).
+- Rimuovere il gestore catch generale nella preferenza dei gestori che recuperano tipi di eccezione specifici. Questo può includere CSEs, supponendo che il codice del gestore sia in grado di gestirle in modo sicuro (rare).
 
-- Generare di nuovo l'estensione lato client nel gestore catch che passa l'eccezione al chiamante e deve comportare l'arresto del processo in esecuzione.
+- Rigenerare l'estensione lato client nel gestore catch, che passa l'eccezione al chiamante e dovrebbe causare l'interruzione del processo in esecuzione.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non escludere un avviso da questa regola.
 
-## <a name="pseudo-code-example"></a>Esempio di pseudocodice
+## <a name="pseudo-code-example"></a>Esempio di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 
@@ -73,7 +73,7 @@ void TestMethod1()
 
 ### <a name="solution-1---remove-the-attribute"></a>Soluzione 1: rimuovere l'attributo
 
-Rimozione di <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attributo assicura che le eccezioni stato danneggiato non vengono gestite tramite il metodo.
+La rimozione <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> dell'attributo garantisce che le eccezioni di stato danneggiate non vengano gestite dal metodo.
 
 ```csharp
 void TestMethod1()
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2---catch-specific-exceptions"></a>Soluzione 2: rilevare eccezioni specifiche
+### <a name="solution-2---catch-specific-exceptions"></a>Soluzione 2: intercettare eccezioni specifiche
 
 Rimuovere il gestore catch generale e recuperare solo tipi specifici di eccezioni.
 
@@ -111,9 +111,9 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3---rethrow"></a>Soluzione 3: rethrow
+### <a name="solution-3---rethrow"></a>Soluzione 3-rigenerazione
 
-Rigenera l'eccezione.
+Generare nuovamente l'eccezione.
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]

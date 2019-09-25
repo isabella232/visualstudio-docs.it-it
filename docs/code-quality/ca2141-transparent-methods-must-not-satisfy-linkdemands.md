@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24723559988974c51798c3e099ff8c1d86a15db9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0365d82917b8cfbaf291d557a6ac2d95c220562a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920512"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232124"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141:I metodi Transparent non devono soddisfare i LinkDemand
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920512"
 |TypeName|TransparentMethodsMustNotSatisfyLinkDemands|
 |CheckId|CA2141|
 |Category|Microsoft.Security|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un metodo trasparente per la sicurezza chiama un metodo in un assembly che non è contrassegnato <xref:System.Security.AllowPartiallyTrustedCallersAttribute> con l'attributo (APTCA) oppure un metodo trasparente per la sicurezza <xref:System.Security.Permissions.SecurityAction> soddisfa un oggetto `.LinkDemand` per un tipo o un metodo.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb6d28e15870907034479e698ba8e7464f4f5159
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545189"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232728"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Chiamare GC.KeepAlive durante l'uso di risorse native
 
@@ -28,38 +28,38 @@ ms.locfileid: "62545189"
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
 |CheckId|CA2115|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un metodo dichiarato in un tipo con un finalizzatore fa riferimento a un <xref:System.IntPtr?displayProperty=fullName> oppure <xref:System.UIntPtr?displayProperty=fullName> campo, ma non chiama <xref:System.GC.KeepAlive%2A?displayProperty=fullName>.
+Un metodo dichiarato in un tipo con un finalizzatore fa riferimento <xref:System.IntPtr?displayProperty=fullName> a <xref:System.UIntPtr?displayProperty=fullName> un campo o, ma non <xref:System.GC.KeepAlive%2A?displayProperty=fullName>chiama.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Operazione di Garbage collection completa un oggetto se non sono presenti più riferimenti a esso nel codice gestito. I riferimenti agli oggetti non gestiti non impediscono operazioni di garbage collection. Questa regola rileva gli errori che possono verificarsi qualora una risorsa non gestita venga completata mentre è ancora usata da codice non gestito.
+Garbage Collection finalizza un oggetto se non sono presenti altri riferimenti al codice gestito. I riferimenti non gestiti agli oggetti non impediscono la Garbage Collection. Questa regola rileva gli errori che possono verificarsi qualora una risorsa non gestita venga completata mentre è ancora usata da codice non gestito.
 
-Questa regola presuppone che <xref:System.IntPtr> e <xref:System.UIntPtr> campi archiviano i puntatori alle risorse non gestite. Poiché lo scopo di un finalizzatore è liberare le risorse non gestite, la regola presuppone che il finalizzatore consente di liberare la risorsa non gestita a cui punta i campi di puntatore. Questa regola presuppone inoltre che il metodo fa riferimento il campo del puntatore per passare la risorsa non gestita nel codice non gestito.
+Questa regola presuppone che <xref:System.IntPtr> e <xref:System.UIntPtr> i campi memorizzino i puntatori alle risorse non gestite. Poiché lo scopo di un finalizzatore è liberare le risorse non gestite, la regola presuppone che il finalizzatore libererà la risorsa non gestita a cui puntano i campi del puntatore. Questa regola presuppone inoltre che il metodo faccia riferimento al campo puntatore per passare la risorsa non gestita al codice non gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, aggiungere una chiamata a <xref:System.GC.KeepAlive%2A> al metodo, passando l'istanza corrente (`this` in c# e C++) come argomento. Posizionare la chiamata dopo l'ultima riga di codice in cui l'oggetto deve essere protetto da operazioni di garbage collection. Immediatamente dopo la chiamata a <xref:System.GC.KeepAlive%2A>, l'oggetto viene considerato pronto per l'operazione di garbage collection anche in questo caso presupponendo che non sono presenti riferimenti gestiti ad esso.
+Per correggere una violazione di questa regola, aggiungere una chiamata al <xref:System.GC.KeepAlive%2A> metodo, passando l'istanza corrente (`this` in C# e C++) come argomento. Posizionare la chiamata dopo l'ultima riga di codice in cui l'oggetto deve essere protetto da Garbage Collection. Immediatamente dopo la chiamata a <xref:System.GC.KeepAlive%2A>, l'oggetto viene nuovamente considerato pronto per Garbage Collection presumendo che non vi siano riferimenti gestiti.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Questa regola consente di alcuni presupposti che possono provocare falsi positivi. È possibile eliminare un avviso da questa regola in modo sicuro se:
+Questa regola fa alcune ipotesi che possono causare falsi positivi. È possibile eliminare in modo sicuro un avviso da questa regola se:
 
-- Il finalizzatore non liberare il contenuto del <xref:System.IntPtr> o <xref:System.UIntPtr> campo fa riferimento il metodo.
+- Il finalizzatore non libera il contenuto del <xref:System.IntPtr> campo o <xref:System.UIntPtr> a cui fa riferimento il metodo.
 
-- Il metodo non ha superato il <xref:System.IntPtr> o <xref:System.UIntPtr> campo al codice non gestito.
+- Il metodo non passa il <xref:System.IntPtr> campo o <xref:System.UIntPtr> al codice non gestito.
 
-Esaminare attentamente gli altri messaggi prima di escluderli. Questa regola rileva gli errori che sono difficili da riprodurre ed eseguire il debug.
+Esaminare attentamente altri messaggi prima di escluderli. Questa regola rileva gli errori difficili da riprodurre ed eseguire il debug.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio riportato di seguito `BadMethod` non include una chiamata a `GC.KeepAlive` e pertanto viola la regola. `GoodMethod` contiene il codice corretto.
+Nell'esempio `BadMethod` seguente non include una chiamata a `GC.KeepAlive` e pertanto viola la regola. `GoodMethod`contiene il codice corretto.
 
 > [!NOTE]
-> Questo esempio è pseudo-codice. Anche se il codice compilato ed eseguito, l'avviso non viene generato perché una risorsa non gestita non viene creata o liberata.
+> Questo esempio è pseudo-codice. Sebbene il codice venga compilato ed eseguito, l'avviso non viene generato perché una risorsa non gestita non viene creata o liberata.
 
 [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../code-quality/codesnippet/CSharp/ca2115-call-gc-keepalive-when-using-native-resources_1.cs)]
 

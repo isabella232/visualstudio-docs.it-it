@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c05c0b17bc9866edd7c07874be14578ed4cf884
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cfa705654a5cc4122e5ee554fe050722d7883970
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922555"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235474"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Spostare P/Invoke nella classe NativeMethods
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922555"
 |TypeName|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
@@ -80,7 +80,7 @@ Nell'esempio seguente viene illustrato un metodo **Interaction. Beep** che esegu
 
 ## <a name="safenativemethods-example"></a>Esempio di SafeNativeMethods
 
-### <a name="description"></a>DESCRIZIONE
+### <a name="description"></a>Descrizione
 I metodi P/Invoke che possono essere esposti in modo sicuro a qualsiasi applicazione e che non hanno effetti collaterali devono essere inseriti in una classe denominata **SafeNativeMethods**. Non è necessario richiedere le autorizzazioni e non è necessario prestare molta attenzione al punto in cui vengono chiamate.
 
 Nell'esempio seguente viene illustrata una proprietà **Environment. TickCount** che esegue il wrapping della funzione **GetTickCount** da Kernel32. dll.

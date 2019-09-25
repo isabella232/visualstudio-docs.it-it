@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872341"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211478"
 ---
 # <a name="xamarin-mobile-app-development"></a>Sviluppo di app per dispositivi mobili Xamarin
 
 Grazie a un eccellente supporto per [Xamarin](/xamarin) è possibile sviluppare straordinarie app native per Android, macOS, iOS, tvOS e watchOS. Le applicazioni Xamarin.Forms multipiattaforma consentono di condividere il codice dell'interfaccia utente basato su XAML tra Android, iOS e macOS senza limitare l'accesso alle funzionalità native.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+Il ricaricamento a caldo di XAML per Novell. Forms è integrato in Visual Studio per Mac nella versione 8,3 e successive. Con questa funzionalità le modifiche abilitate vengono immediatamente riflesse nell'app in esecuzione ogni volta che si salva il file.
+
+È possibile abilitare il ricaricamento a caldo di XAML selezionando la casella di controllo **Abilita ricaricamento a caldo di Novell** in **Visual Studio > preferenze > Progetti > ricaricamento a caldo di Novell**.
+
+Per ulteriori informazioni sul ricaricamento a caldo, vedere la guida relativa al [ricaricamento a caldo di XAML per Novell. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) nella documentazione di.
 
 ## <a name="android"></a>Android
 

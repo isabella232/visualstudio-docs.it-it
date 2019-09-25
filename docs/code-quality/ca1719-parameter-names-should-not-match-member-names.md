@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b3e34bec0e199e1eb0b49a88517e9551b9b13cd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2aa55993758df24346b78eb4d9ad022014d9d81c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921633"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233980"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: I nomi dei parametri non devono corrispondere ai nomi dei membri
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921633"
 |TypeName|ParameterNamesShouldNotMatchMemberNames|
 |CheckId|CA1719|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Il nome di un membro visibile esternamente corrisponde, in un confronto senza distinzione tra maiuscole e minuscole, il nome di uno dei relativi parametri.

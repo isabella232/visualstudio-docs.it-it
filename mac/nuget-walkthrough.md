@@ -3,15 +3,15 @@ title: Inserimento di un pacchetto NuGet nel progetto
 description: Questo documento illustra come includere un pacchetto NuGet in un progetto usando Visual Studio per Mac. Illustra in modo dettagliato come trovare e scaricare un pacchetto e offre un'introduzione alle funzionalità di integrazione dell'IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/17/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079531"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213695"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installare e gestire i pacchetti NuGet in Visual Studio per Mac
 
@@ -23,17 +23,17 @@ Per un'introduzione all'uso di NuGet in Visual Studio per Mac, [vedere Guida int
 
 ## <a name="find-and-install-a-package"></a>Trovare e installare un pacchetto
 
-1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **dipendenze** (cartella**pacchetti** se si usa un progetto Novell) nel **riquadro della soluzione** e selezionare **Aggiungi pacchetti**.
+1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **dipendenze** (cartella**pacchetti** se si usa un progetto Novell) nel **riquadro della soluzione** e selezionare **Gestisci pacchetti NuGet...** .
 
-    ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-PackagesMenu.png)
+    ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-packages-menu.png)
 
-2. Verrà visualizzata la finestra **Aggiungi pacchetti**. Verificare che l'elenco a discesa di origine nell'angolo superiore sinistro della finestra di dialogo sia impostato `nuget.org`su.
+2. Verrà avviata la finestra **Gestisci pacchetti NuGet** . Verificare che l'elenco a discesa di origine nell'angolo superiore sinistro della finestra di dialogo sia impostato `nuget.org`su.
 
-    ![Elenco di pacchetti NuGet](media/nuget-walkthrough-AddPackages1.png)
+    ![Elenco di pacchetti NuGet](media/nuget-walkthrough-add-packages1.png)
 
 3. Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio `EntityFramework`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante **Aggiungi pacchetto** per avviare l'installazione.
 
-    ![Aggiungere un pacchetto NuGet di Azure](media/nuget-walkthrough-AddPackages2.png)
+    ![Aggiungere il pacchetto NuGet EntityFramework](media/nuget-walkthrough-add-packages2.png)
 
 4. Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzione cambierà a seconda del tipo di progetto che si sta modificando:
 
@@ -43,7 +43,7 @@ Per un'introduzione all'uso di NuGet in Visual Studio per Mac, [vedere Guida int
     
     **Progetti .NET Core**
 
-    Il nodo **dipendenze > NuGet** Visualizza ogni pacchetto NuGet scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
+    * Il nodo **dipendenze > NuGet** Visualizza ogni pacchetto NuGet scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
 
 ## <a name="using-nuget-packages"></a>Uso di pacchetti NuGet
 
@@ -59,11 +59,11 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Aggiornamento di pacchetti
 
-Gli aggiornamenti dei pacchetti possono essere eseguiti contemporaneamente, facendo clic con il pulsante destro del mouse sul nodo **dipendenze** (o sul nodo **pacchetti** per i progetti Novell) o singolarmente in ogni componente.
+Gli aggiornamenti dei pacchetti possono essere eseguiti contemporaneamente, facendo clic con il pulsante destro del mouse sul nodo **dipendenze** (nodo**pacchetti** per progetti Novell) o singolarmente in ogni pacchetto. Quando è disponibile una nuova versione di un pacchetto NuGet, viene visualizzata ![un'icona di aggiornamento con il cerchio.](media/nuget-walkthrough-update-icon.png)
 
-Fare clic con il pulsante destro del mouse su **dipendenze** per accedere al menu contestuale:
+Fare clic con il pulsante destro del mouse su **dipendenze** per accedere al menu di scelta rapida e scegliere **Aggiorna** per aggiornare tutti i pacchetti:
 
-![Menu Pacchetti](media/nuget-walkthrough-PackagesMenu.png)
+![Menu Pacchetti](media/nuget-walkthrough-packages-menu-update.png)
 
 * **Gestisci pacchetti NuGet** : apre la finestra per aggiungere altri pacchetti al progetto.
 * **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.

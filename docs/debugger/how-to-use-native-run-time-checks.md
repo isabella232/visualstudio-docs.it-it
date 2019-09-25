@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846970"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211035"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: Usare i controlli di runtime nativi
 In Visual C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-checks) nativi per rilevare errori di runtime comuni, ad esempio:
@@ -57,9 +57,9 @@ In Visual C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-chec
 
 - Perdita di dati a causa dell'assegnazione a una variabile di lunghezza inferiore.
 
-  Se si usa l'opzione **/RTC** con una build ottimizzata (**/O**), verrà restituito un errore del compilatore. Se si usa un pragma `runtime_checks` in una build ottimizzata, il pragma non avrà effetto.
+  Se si usa l'opzione **/RTC** con una build ottimizzata ( **/O**), verrà restituito un errore del compilatore. Se si usa un pragma `runtime_checks` in una build ottimizzata, il pragma non avrà effetto.
 
-  Durante il debug di un programma in cui sono attivi i controlli runtime, l'azione predefinita quando si verifica un errore di runtime è l'arresto del programma e il passaggio al debugger. Tale comportamento predefinito può essere modificato per qualsiasi controllo runtime. Per altre informazioni, vedere [la gestione delle eccezioni con il Debugger](../debugger/managing-exceptions-with-the-debugger.md).
+  Durante il debug di un programma in cui sono attivi i controlli runtime, l'azione predefinita quando si verifica un errore di runtime è l'arresto del programma e il passaggio al debugger. Tale comportamento predefinito può essere modificato per qualsiasi controllo runtime. Per ulteriori informazioni, vedere [gestione delle eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).
 
   Nelle procedure riportate di seguito viene descritto come attivare i controlli runtime nativi in una build di debug e come modificare il comportamento di tali controlli.
 
@@ -78,7 +78,7 @@ In Visual C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-chec
 - Usare il pragma `runtime_checks` .
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [Controllo degli errori di runtime](/cpp/c-runtime-library/run-time-error-checking)

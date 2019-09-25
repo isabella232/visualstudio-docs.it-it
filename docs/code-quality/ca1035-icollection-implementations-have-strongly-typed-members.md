@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a20feb514b87f2906fd4db32dfb38d3d9b661999
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8d9e74daa464a55a543b5eb8c189c9ddf1295301
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922823"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236030"
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Le implementazioni di ICollection hanno membri fortemente tipizzati
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922823"
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|
 |CheckId|CA1035|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un tipo pubblico o protetto implementa <xref:System.Collections.ICollection?displayProperty=fullName> ma non fornisce un metodo fortemente tipizzato per <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. La versione fortemente tipizzata <xref:System.Collections.ICollection.CopyTo%2A> di deve accettare due parametri e non può <xref:System.Array?displayProperty=fullName> avere un oggetto o <xref:System.Object?displayProperty=fullName> una matrice di come primo parametro.

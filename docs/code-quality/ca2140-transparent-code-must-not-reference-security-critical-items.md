@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4462bb8ef65fdf593ab0bf64813c19af5d390d97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f02938aed7456762f1ef51da716b6b96bdf437
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545029"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232154"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Il codice Transparent non deve far riferimento a elementi SecurityCritical
 
@@ -30,49 +30,49 @@ ms.locfileid: "62545029"
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
 |CheckId|CA2140|
 |Category|Microsoft.Security|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un metodo trasparente:
+Metodo trasparente:
 
-- gestisce un tipo di eccezione di sicurezza critico per la protezione
+- gestisce un tipo di eccezione di sicurezza critico per la sicurezza
 
-- ha un parametro contrassegnato come un tipo SecurityCritical
+- dispone di un parametro contrassegnato come tipo critico di sicurezza
 
-- ha un parametro generico con vincoli SecurityCritical
+- dispone di un parametro generico con vincoli critical per la sicurezza
 
-- dispone di una variabile locale di un tipo SecurityCritical
+- dispone di una variabile locale di un tipo critico per la sicurezza
 
-- fa riferimento a un tipo contrassegnato come sicurezza critico
+- fa riferimento a un tipo contrassegnato come critico per la sicurezza
 
-- chiama un metodo contrassegnato come sicurezza critico
+- chiama un metodo contrassegnato come critico per la sicurezza
 
-- fa riferimento a un campo contrassegnato come sicurezza critico
+- fa riferimento a un campo contrassegnato come critico per la sicurezza
 
-- Restituisce un tipo contrassegnato come sicurezza critico
+- Restituisce un tipo contrassegnato come critico per la sicurezza
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Un elemento di codice contrassegnato con il <xref:System.Security.SecurityCriticalAttribute> attributo sia critico per la sicurezza. Un metodo trasparente non può usare un elemento critico per la sicurezza. Se un tipo trasparente tenta di usare un tipo SecurityCritical una <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , o <xref:System.FieldAccessException> viene generato.
+Un elemento di codice contrassegnato con l'attributo <xref:System.Security.SecurityCriticalAttribute> è critico per la sicurezza. Un metodo trasparente non può usare un elemento critico per la sicurezza. Se un tipo trasparente tenta di utilizzare un tipo critico per la <xref:System.TypeAccessException>sicurezza <xref:System.MethodAccessException> , viene <xref:System.FieldAccessException> generato un oggetto, o.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, eseguire una delle operazioni seguenti:
+Per correggere una violazione di questa regola, effettuare una delle operazioni seguenti:
 
-- Contrassegnare l'elemento di codice che usa il codice SecurityCritical con il <xref:System.Security.SecurityCriticalAttribute> attributo
+- Contrassegnare l'elemento di codice che utilizza il codice critico per <xref:System.Security.SecurityCriticalAttribute> la sicurezza con l'attributo
 
      \- oppure -
 
-- Rimuovere il <xref:System.Security.SecurityCriticalAttribute> attributo dagli elementi di codice che sono contrassegnati come SecurityCritical e contrassegnarli invece con il <xref:System.Security.SecuritySafeCriticalAttribute> o <xref:System.Security.SecurityTransparentAttribute> attributo.
+- Rimuovere l' <xref:System.Security.SecurityCriticalAttribute> attributo dagli elementi di codice contrassegnati come SecurityCritical e contrassegnarli invece con l' <xref:System.Security.SecuritySafeCriticalAttribute> attributo o <xref:System.Security.SecurityTransparentAttribute> .
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
 
-Negli esempi seguenti, un metodo trasparente tenta di fare riferimento a una raccolta generica di sicurezza critiche, un campo di sicurezza critiche e un metodo SecurityCritical.
+Negli esempi seguenti un metodo trasparente tenta di fare riferimento a una raccolta generica di sicurezza critica, un campo critico per la sicurezza e un metodo critico per la sicurezza.
 
 [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 

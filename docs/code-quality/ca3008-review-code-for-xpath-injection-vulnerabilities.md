@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1d001dc306bbb225c4ecc1c0f17bf46619e2d0a7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841533"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237258"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XPath injection
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841533"
 |TypeName|ReviewCodeForXPathInjectionVulnerabilities|
 |CheckId|CA3008|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Input della richiesta HTTP potenzialmente non attendibili raggiunge una query XPath.
+Un input di richiesta HTTP potenzialmente non attendibile raggiunge una query XPath.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando si lavora con input non attendibile, tenere conto di attacchi intrusivi nel codice di XPath. Costruzione delle query XPath utilizzando l'input non attendibile potrebbe consentire un attacco da utenti malintenzionati di modificare la query per restituire un risultato non intenzionale e possibilmente divulgare il contenuto del XML sottoposti a query.
+Quando si lavora con un input non attendibile, tenere presenti gli attacchi XPath injection. La costruzione di query XPath tramite input non attendibile può consentire a un utente malintenzionato di manipolare in modo dannoso la query per restituire un risultato imprevisto ed eventualmente divulgare il contenuto dell'XML sottoposto a query.
 
-Questa regola cerca di trovare input dalle richieste HTTP raggiunge un'espressione XPath.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che esegue una query XPath, questa regola non genera un avviso.
+Questa regola tenta di trovare l'input da richieste HTTP che raggiungono un'espressione XPath.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly legge l'input della richiesta HTTP e lo passa a un altro assembly che esegue una query XPath, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Alcuni approcci per la correzione di vulnerabilità di tipo injection XPath includono:
+Di seguito sono riportati alcuni approcci per la correzione delle vulnerabilità di inserimento XPath:
 
-- Non costruire le query XPath dall'input dell'utente.
-- Verificare che l'input contiene solo un set di caratteri attendibili.
-- Eseguire l'escape di virgolette.
+- Non creare query XPath dall'input dell'utente.
+- Verificare che l'input contenga solo un set di caratteri sicuro.
+- Virgolette di escape.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Se si sa di che aver convalidato l'input per essere sicuri, è possibile eliminare l'avviso.
+Se si è certi che l'input sia stato convalidato per la sicurezza, è possibile eliminarlo.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

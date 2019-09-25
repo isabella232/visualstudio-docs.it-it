@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 869ff99243349ae01c63da0a7d9e6544761cbd39
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8127c68cfe7eb541b8adea8affad99027e0c1fe7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922506"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235757"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Dichiarare i tipi negli spazi dei nomi
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922506"
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un tipo pubblico o protetto viene definito al di fuori dell'ambito di uno spazio dei nomi denominato.

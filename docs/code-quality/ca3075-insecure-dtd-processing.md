@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42efb51dfe9c447538fe8f01bdd37c73bf993d8f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541117"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237114"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 
@@ -22,7 +22,7 @@ ms.locfileid: "62541117"
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -30,48 +30,48 @@ Se si usano istanze di <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non 
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-La *definizione DTD (Document Type Definition)* rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori potenziale [divulgazione](/dotnet/framework/wcf/feature-details/information-disclosure) minacce o [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) attacchi. Questa regola viene attivata quando:
+La *definizione DTD (Document Type Definition)* rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori sulle potenziali minacce per la [divulgazione di informazioni](/dotnet/framework/wcf/feature-details/information-disclosure) o attacchi [Denial of Service (DOS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Questa regola viene attivata quando:
 
 - DtdProcessing viene abilitato nell'istanza di <xref:System.Xml.XmlReader> , che risolve le entità XML esterne con <xref:System.Xml.XmlUrlResolver>.
 
 - La proprietà <xref:System.Xml.XmlNode.InnerXml%2A> nel codice XML è impostata.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> viene impostata su Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>la proprietà è impostata su Parse.
 
-- Non attendibile l'input viene elaborato utilizzando <xref:System.Xml.XmlResolver> invece di <xref:System.Xml.XmlSecureResolver>.
+- L'input non attendibile viene elaborato <xref:System.Xml.XmlResolver> con <xref:System.Xml.XmlSecureResolver>anziché con.
 
-- Il <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> metodo viene richiamato con un <xref:System.Xml.XmlReaderSettings> istanza o senza alcuna istanza.
+- Il <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> metodo viene richiamato con un'istanza <xref:System.Xml.XmlReaderSettings> non protetta o senza alcuna istanza.
 
-- <xref:System.Xml.XmlReader> viene creato con le impostazioni predefinite non protette o valori.
+- <xref:System.Xml.XmlReader>viene creato con impostazioni o valori predefiniti non sicuri.
 
-In ognuno di questi casi, il risultato è lo stesso: i contenuti da entrambi le condivisioni file di sistema o rete dal computer in cui viene elaborato il codice XML è esposta a un utente malintenzionato o l'elaborazione della DTD può essere usato come vettore di attacchi DoS.
+In ognuno di questi casi, il risultato è lo stesso: il contenuto del file system o delle condivisioni di rete del computer in cui viene elaborato il codice XML verrà esposto all'autore dell'attacco oppure l'elaborazione della DTD può essere usata come vettore DoS.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Rilevare ed elaborare tutte le eccezioni XmlTextReader correttamente per evitare la divulgazione di informazioni di percorso.
+- Rilevare ed elaborare correttamente tutte le eccezioni XmlTextReader per evitare la divulgazione di informazioni sul percorso.
 
-- Usare il <xref:System.Xml.XmlSecureResolver> per limitare le risorse che può accedere XmlTextReader.
+- <xref:System.Xml.XmlSecureResolver> Usare per limitare le risorse a cui XmlTextReader può accedere.
 
 - Non consentire all'oggetto <xref:System.Xml.XmlReader> di aprire risorse esterne impostando la proprietà <xref:System.Xml.XmlResolver> su **Null**.
 
-- Verificare che il <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> proprietà viene assegnato da un'origine attendibile.
+- Verificare che la <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> proprietà sia assegnata da un'origine attendibile.
 
-**.NET 3.5 e versioni precedenti**
+**.NET 3,5 e versioni precedenti**
 
-- Disabilitare l'elaborazione DTD se usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> proprietà **true**.
+- Disabilitare l'elaborazione DTD se si gestiscono origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> proprietà su **true**.
 
 - La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale.
 
 **.NET 4 e versioni successive**
 
-- Evitare di abilitare DtdProcessing se usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> proprietà **Prohibit** oppure **ignora**.
+- Evitare di abilitare DtdProcessing se si usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> proprietà su **Impedisci** o **Ignora**.
 
 - Assicurarsi che il metodo Load() accetti un'istanza di XmlReader ovunque venga usato InnerXml.
 
 > [!NOTE]
 > Questa regola potrebbe segnalare dei falsi positivi in alcune istanze valide di XmlSecureResolver.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 A meno che non si abbia la certezza che l'input provenga da un'origine attendibile, non escludere una regola da questo avviso.
 

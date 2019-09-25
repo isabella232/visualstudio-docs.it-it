@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2312
 - EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing
-ms.openlocfilehash: 38495a3c8d5a2efb5e5e96785cecbd6d50e9cd00
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 03d3e6c4f5e7a3cf4da9f998b75260df522e019f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891117"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237707"
 ---
 # <a name="ca2312-ensure-netdatacontractserializerbinder-is-set-before-deserializing"></a>CA2312: Assicurarsi di impostare NetDataContractSerializer.Binder prima della deserializzazione
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891117"
 |TypeName|EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing|
 |CheckId|CA2312|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
@@ -41,13 +41,13 @@ Questa regola trova <xref:System.Runtime.Serialization.NetDataContractSerializer
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Se possibile, usare invece un serializzatore protetto e **non consentire a un utente malintenzionato di specificare un tipo arbitrario da**deserializzare. Alcuni serializzatori più sicuri includono:
+- Se possibile, usare invece un serializzatore protetto e **non consentire a un utente malintenzionato di specificare un tipo arbitrario da deserializzare**. Alcuni serializzatori più sicuri includono:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Non usare <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>mai. Se è necessario usare un resolver di tipi, limitare i tipi deserializzati a un elenco previsto.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
   - Newtonsoft Json.NET-usare TypeNameHandling. None. Se è necessario usare un altro valore per TypeNameHandling, limitare i tipi deserializzati a un elenco previsto con un ISerializationBinder personalizzato.
-  - Buffer del protocollo
+  - Buffer di protocollo
 - Eseguire la prova di manomissione dei dati serializzati. Dopo la serializzazione, la firma crittografica dei dati serializzati. Prima della deserializzazione, convalidare la firma crittografica. Proteggere la chiave crittografica da divulgare e progettare per le rotazioni delle chiavi.
 - Limitare i tipi deserializzati. Implementare un oggetto <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>personalizzato. Prima di eseguire la deserializzazione <xref:System.Runtime.Serialization.NetDataContractSerializer>con <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> , impostare la proprietà su un'istanza <xref:System.Runtime.Serialization.SerializationBinder>di personalizzata. Nel metodo sottoposto <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> a override, se il tipo è imprevisto, generare un'eccezione per arrestare la deserializzazione.
   - Verificare che la proprietà sia impostata per <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> tutti i percorsi del codice.

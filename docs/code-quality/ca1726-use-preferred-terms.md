@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3f359f7aa24ada0edf2c98a7d527ed715df85086
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921580"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233913"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Usare termini preferiti
 
@@ -27,7 +27,7 @@ ms.locfileid: "68921580"
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzioni durante l'attivazione degli assembly<br /><br /> Senza interruzioni-quando viene attivato sui parametri di tipo|
+|Modifica|Interruzioni durante l'attivazione degli assembly<br /><br /> Senza interruzioni-quando viene attivato sui parametri di tipo|
 
 ## <a name="cause"></a>Causa
 

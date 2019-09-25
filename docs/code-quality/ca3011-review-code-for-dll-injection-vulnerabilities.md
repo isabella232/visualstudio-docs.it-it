@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9fbb4b8b11b0fce7d3e7530eef80af19b35b73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a459be8c8ab028581c850f5b5770a95cb70e3510
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841022"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237199"
 ---
 # <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Esaminare il codice per verificare la presenza di vulnerabilità di tipo DLL injection
 
@@ -24,33 +24,33 @@ ms.locfileid: "65841022"
 |TypeName|ReviewCodeForDllInjectionVulnerabilities|
 |CheckId|CA3011|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Richiesta HTTP potenzialmente non attendibile input raggiunge un metodo che carica un assembly.
+Un input di richiesta HTTP potenzialmente non attendibile raggiunge un metodo che carica un assembly.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando si lavora con input non attendibile, essere consci del caricamento di codice non attendibile. Se l'applicazione web viene caricato codice non attendibile, un utente malintenzionato potrebbe essere in grado di inserire le DLL dannose il processo ed eseguire codice dannoso.
+Quando si utilizza un input non attendibile, tenere presente il caricamento di codice non attendibile. Se l'applicazione Web carica codice non attendibile, un utente malintenzionato potrebbe essere in grado di inserire dll dannose nel processo ed eseguire codice dannoso.
 
-Questa regola tenta di individuare l'input da una richiesta HTTP che raggiunge un metodo che carica un assembly.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che carica un assembly, questa regola non genera un avviso.
+Questa regola tenta di trovare l'input da una richiesta HTTP che raggiunge un metodo che carica un assembly.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly legge l'input della richiesta HTTP e lo passa a un altro assembly che carica un assembly, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Non caricare le DLL non attendibili dall'input dell'utente.
+Non caricare dll non attendibili dall'input dell'utente.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
 Non eliminare gli avvisi da questa regola.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

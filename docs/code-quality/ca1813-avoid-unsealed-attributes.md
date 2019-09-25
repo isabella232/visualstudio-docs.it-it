@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714743"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233588"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitare attributi unsealed
 
@@ -31,23 +31,23 @@ ms.locfileid: "66714743"
 |TypeName|AvoidUnsealedAttributes|
 |CheckId|CA1813|
 |Category|Microsoft.Performance|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un tipo pubblico eredita da <xref:System.Attribute?displayProperty=fullName>, non è astratta e non è bloccato (`NotInheritable` in Visual Basic).
+Un tipo pubblico eredita da <xref:System.Attribute?displayProperty=fullName>, non è astratto e non è sealed (`NotInheritable` in Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-.NET fornisce metodi per recuperare gli attributi personalizzati. Per impostazione predefinita, questi metodi eseguono ricerche nella gerarchia di ereditarietà dell'attributo. Ad esempio, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> Cerca il tipo di attributo specificato o qualsiasi tipo di attributo che estende il tipo di attributo specificato. Utilizzo di attributi sealed Elimina la ricerca nella gerarchia di ereditarietà e può migliorare le prestazioni.
+.NET fornisce metodi per il recupero di attributi personalizzati. Per impostazione predefinita, questi metodi eseguono ricerche nella gerarchia di ereditarietà dell'attributo. Ad esempio, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> Cerca il tipo di attributo specificato o qualsiasi tipo di attributo che estende il tipo di attributo specificato. La chiusura dell'attributo elimina la ricerca attraverso la gerarchia di ereditarietà e può migliorare le prestazioni.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, rendere sealed il tipo di attributo o renderla astratta.
+Per correggere una violazione di questa regola, bloccare il tipo di attributo o renderlo astratto.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola. Escludere solo se si sta definendo una gerarchia dell'attributo e non è possibile bloccare l'attributo o renderla astratta.
+È possibile eliminare un avviso da questa regola in modo sicuro. Elimina solo se si definisce una gerarchia dell'attributo e non è possibile bloccare l'attributo o renderlo astratto.
 
 ## <a name="example"></a>Esempio
 
@@ -58,8 +58,8 @@ Nell'esempio seguente viene illustrato un attributo personalizzato che soddisfa 
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1019: Definire le funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
-- [CA1018: Contrassegnare gli attributi con AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019 Definire le funzioni di accesso per gli argomenti dell'attributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018 Contrassegnare gli attributi con AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
 

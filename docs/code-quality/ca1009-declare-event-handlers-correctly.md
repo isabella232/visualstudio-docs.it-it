@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923562"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236482"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Dichiarare correttamente i gestori eventi
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923562"
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
 |Category|Microsoft.Design|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 Un delegato che gestisce un evento pubblico o protetto non ha la firma, il tipo restituito o i nomi di parametro corretti.

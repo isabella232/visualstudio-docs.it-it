@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547926"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236497"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Le enumerazioni devono avere valore zero
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547926"
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |Category|Microsoft.Design|
-|Modifica importante|Senza interruzioni: quando viene richiesto di aggiungere un valore **None** a un'enumerazione non flag. Suddivisione: quando viene richiesto di rinominare o rimuovere i valori di enumerazione.|
+|Modifica|Senza interruzioni: quando viene richiesto di aggiungere un valore **None** a un'enumerazione non flag. Suddivisione: quando viene richiesto di rinominare o rimuovere i valori di enumerazione.|
 
 ## <a name="cause"></a>Causa
 

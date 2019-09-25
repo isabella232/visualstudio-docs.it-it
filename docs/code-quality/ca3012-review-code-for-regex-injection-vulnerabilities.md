@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841044"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237184"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Esaminare il codice per verificare la presenza di vulnerabilità di tipo regex injection
 
@@ -24,38 +24,38 @@ ms.locfileid: "65841044"
 |TypeName|ReviewCodeForRegexInjectionVulnerabilities|
 |CheckId|CA3012|
 |Category|Microsoft.Security|
-|Modifica importante|Non importante|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Input della richiesta HTTP potenzialmente non attendibili raggiunge un'espressione regolare.
+Un input di richiesta HTTP potenzialmente non attendibile raggiunge un'espressione regolare.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando si lavora con input non attendibile, tenere conto di attacchi intrusivi nel codice di espressione regolare. Un utente malintenzionato può utilizzare l'inserimento di espressione regolare da utenti malintenzionati di modificare un'espressione regolare, per rendere l'espressione regolare corrisponde a risultati imprevisti o eseguire l'espressione regolare di utilizzo eccessivo della CPU causando un attacco Denial of Service.
+Quando si lavora con un input non attendibile, tenere presente gli attacchi di attacchi Regex. Un utente malintenzionato può utilizzare l'inserimento Regex per modificare in modo dannoso un'espressione regolare, per fare in modo che l'espressione regolare corrisponda a risultati imprevisti oppure per fare in modo che la regex utilizzi una CPU eccessiva con conseguente attacco Denial of Service.
 
-Questa regola cerca di trovare input dalle richieste HTTP raggiunge un'espressione regolare.
-
-> [!NOTE]
-> Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che crea un'espressione regolare, questa regola non genera un avviso.
+Questa regola tenta di trovare l'input da richieste HTTP che raggiungono un'espressione regolare.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
+> Questa regola non è in grado di rilevare i dati tra gli assembly. Se, ad esempio, un assembly legge l'input della richiesta HTTP e lo passa a un altro assembly che crea un'espressione regolare, questa regola non genera un avviso.
+
+> [!NOTE]
+> Esiste un limite configurabile per il livello di profondità con cui questa regola analizzerà il flusso di dati tra le chiamate al metodo. Per informazioni su come configurare il limite in un file EditorConfig, vedere la pagina relativa alla [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Di seguito sono riportate alcune soluzioni di prevenzione contro attacchi di injection di espressione regolare:
+Alcune attenuazioni rispetto ai Injection Regex includono:
 
-- Usare sempre un [corrispondere timeout](/dotnet/standard/base-types/best-practices#use-time-out-values) quando si usano le espressioni regolari.
-- Evitare di usare espressioni regolari in base all'input utente.
-- Caratteri speciali di escape dall'input dell'utente chiamando <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> o un altro metodo.
-- Consenti caratteri solo non speciali dall'input dell'utente.
+- Usare sempre un [timeout di corrispondenza](/dotnet/standard/base-types/best-practices#use-time-out-values) quando si usano le espressioni regolari.
+- Evitare di usare espressioni regolari basate sull'input dell'utente.
+- Consente di evitare l'escape di caratteri speciali <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> dall'input dell'utente chiamando o un altro metodo.
+- Consente solo caratteri non speciali dall'input dell'utente.
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Se si conosce si usa un' [corrispondere timeout](/dotnet/standard/base-types/best-practices#use-time-out-values) e l'input dell'utente è libero di caratteri speciali, che è possibile eliminare l'avviso.
+Se si è certi che si sta usando un [timeout di corrispondenza](/dotnet/standard/base-types/best-practices#use-time-out-values) e l'input dell'utente è privo di caratteri speciali, è possibile evitare di visualizzare questo avviso.
 
-## <a name="pseudo-code-examples"></a>Esempi di pseudocodice
+## <a name="pseudo-code-examples"></a>Esempi di pseudo-codice
 
 ### <a name="violation"></a>Violazione
 

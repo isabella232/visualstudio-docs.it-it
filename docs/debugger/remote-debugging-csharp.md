@@ -1,5 +1,5 @@
 ---
-title: Eseguire il Debug remoto un C# o un progetto di Visual Basic | Microsoft Docs
+title: Eseguire il debug C# remoto di un progetto o VB | Microsoft Docs
 ms.custom:
 - remotedebugging"=
 - seodec18
@@ -19,51 +19,51 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408540"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211122"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto di un progetto c# o Visual Basic in Visual Studio
-Per eseguire il debug di un'applicazione di Visual Studio che è stata distribuita in un altro computer, installare ed eseguire remote tools sul computer in cui è distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto di C# un progetto di o Visual Basic in Visual Studio
+Per eseguire il debug di un'applicazione di Visual Studio distribuita in un computer diverso, installare ed eseguire Remote Tools nel computer in cui è stata distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
 
 ![Componenti del debugger remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
-Per informazioni sulle app di Windows universali (UWP) di debug remoto, vedere [eseguire il Debug di un pacchetto dell'App installato](debug-installed-app-package.md).
+Per informazioni sul debug remoto di app di Windows universale (UWP), vedere [eseguire il debug di un pacchetto dell'app installato](debug-installed-app-package.md).
 
 ## <a name="requirements"></a>Requisiti
 
-Il debugger remoto è supportato in Windows 7 e versioni successive (non phone) e le versioni di Windows Server a partire da Windows Server 2008 Service Pack 2. Per un elenco completo dei requisiti, vedere [requisiti](../debugger/remote-debugging.md#requirements_msvsmon).
+Il debugger remoto è supportato in Windows 7 e versioni successive (non telefono) e versioni di Windows Server a partire da Windows Server 2008 Service Pack 2. Per un elenco completo dei requisiti, vedere [requisiti](../debugger/remote-debugging.md#requirements_msvsmon).
 
 > [!NOTE]
-> Non è supportato tra due computer connessi tramite un proxy di debug. Debug tramite una latenza elevata o una connessione di larghezza di banda ridotta, ad esempio Internet, accesso remoto o la rete Internet tra paesi non è consigliabile e può avere esito negativo o essere inaccettabile.
+> Il debug tra due computer connessi tramite un proxy non è supportato. Non è consigliabile eseguire il debug su una connessione a larghezza di banda elevata o a bassa latenza, ad esempio Internet remoto, o su Internet tra paesi, e potrebbe avere esito negativo o essere inaccettabile.
 
 ## <a name="download-and-install-the-remote-tools"></a>Scaricare e installare Remote Tools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
 > [!TIP]
-> In alcuni scenari, può essere più efficiente per eseguire il debugger remoto da una condivisione file. Per altre informazioni, vedere [eseguire il debugger remoto da una condivisione file](../debugger/remote-debugging.md#fileshare_msvsmon).
+> In alcuni scenari, può essere più efficiente eseguire il debugger remoto da una condivisione file. Per altre informazioni, vedere [eseguire il debugger remoto da una condivisione file](../debugger/remote-debugging.md#fileshare_msvsmon).
 
 ## <a name="BKMK_setup"></a> Configurare il debugger remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> Se è necessario aggiungere le autorizzazioni per altri utenti, modificare la modalità di autenticazione o il numero di porta per il debugger remoto, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#configure_msvsmon).
+> Se è necessario aggiungere autorizzazioni per utenti aggiuntivi, modificare la modalità di autenticazione o il numero di porta per il debugger remoto, vedere [configurare il debugger remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_csharp"></a> Eseguire il debug remoto del progetto
-Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic in un computer remoto, ma può comunque eseguirne il debug in modalità remota come illustrato di seguito. La procedura seguente presuppone che si desidera eseguire il debug in un computer denominato **MJO DL**, come mostrato nell'illustrazione seguente.
+## <a name="remote_csharp"></a>Eseguire il debug remoto del progetto
+Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic in un computer remoto, ma può comunque eseguirne il debug in modalità remota come illustrato di seguito. Nella procedura seguente si presuppone che si desideri eseguirne il debug in un computer denominato **mjo-DL**, come illustrato nella figura seguente.
 
 1. Creare un progetto WPF denominato **MyWpf**.
 
 2. Impostare un punto di interruzione facilmente raggiungibile nel codice.
 
-    Ad esempio, è possibile impostare un punto di interruzione in un gestore pulsanti. A tale scopo, aprire MainWindow. XAML e aggiungere un pulsante dalla casella degli strumenti, quindi fare doppio clic sul pulsante per aprire il gestore.
+    Ad esempio, è possibile impostare un punto di interruzione in un gestore pulsanti. A tale scopo, Aprire MainWindow. XAML e aggiungere un controllo Button dalla casella degli strumenti, quindi fare doppio clic sul pulsante per aprirlo.
 
-3. In Esplora soluzioni fare clic sul progetto e scegliere **proprietà**.
+3. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà**.
 
 4. Nella pagina **Proprietà** scegliere la scheda **Debug**.
 
@@ -71,11 +71,11 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 
 5. Verificare che la casella di testo **Directory di lavoro** sia vuota.
 
-6. Scegli **Usa computer remoto**e il tipo **yourmachinename:port** nella casella di testo. (Il numero di porta viene visualizzato nella finestra del debugger remoto. Il numero della porta incrementa 2 in ogni versione di Visual Studio).
+6. Scegliere **Usa computer remoto**e digitare **nomecomputer: Port** nella casella di testo. Il numero di porta viene visualizzato nella finestra del debugger remoto. Il numero di porta incrementa 2 in ogni versione di Visual Studio.
 
     In questo esempio, usare:
     ::: moniker range=">=vs-2019"
-    **MJO-DL:4024** 2019 di Visual Studio
+    **Mjo-DL: 4024** in Visual Studio 2019
     ::: moniker-end
     ::: moniker range="vs-2017"
     **MJO-DL:4022** on Visual Studio 2017
@@ -90,11 +90,11 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 10. Copiare il file eseguibile appena compilato dal computer di Visual Studio alla nuova cartella nel computer remoto.
 
     > [!CAUTION]
-    > Non apportare modifiche al codice o ricompilazione (o è necessario ripetere questo passaggio). Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
+    > Non apportare modifiche al codice o alla ricompilazione (oppure è necessario ripetere questo passaggio). Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
 
-    È possibile copiare manualmente il progetto, usare Xcopy, Robocopy, Powershell o altre opzioni.
+    È possibile copiare il progetto manualmente, utilizzare XCOPY, Robocopy, PowerShell o altre opzioni.
 
-11. Assicurarsi che il debugger remoto è in esecuzione nel computer di destinazione (in caso contrario, cercare **Remote Debugger** nel **avviare** menu). Finestra del debugger remoto appare come segue.
+11. Verificare che il debugger remoto sia in esecuzione nel computer di destinazione. in caso contrario, cercare **debugger remoto** nel menu **Start** . La finestra del debugger remoto ha un aspetto simile al seguente.
 
      ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")
 
@@ -102,22 +102,22 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 
 13. Se richiesto, immettere le credenziali di rete per la connessione al computer remoto.
 
-     Le credenziali necessarie variano a seconda della configurazione di sicurezza della rete. In un computer di dominio, ad esempio, è possibile immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio <strong>MJO-DL\name@something.com</strong>, con password non corretta.
+     Le credenziali necessarie variano a seconda della configurazione di sicurezza della rete. Ad esempio, in un computer di dominio è possibile immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido <strong>MJO-DL\name@something.com</strong>, ad esempio, insieme alla password corretta.
 
      La finestra principale dell'applicazione WPF apparirà aperta nel computer remoto.
 
-14. Se necessario, intervenire per raggiungere il punto di interruzione. Il punto di interruzione dovrebbe essere attivo. In caso contrario, non sono stati caricati i simboli per l'applicazione. Riprova e se il problema persiste, ottenere informazioni sul caricamento dei simboli e come risolvere i problemi di averli [file dei simboli e Visual Studio le impostazioni dei simboli](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/).
+14. Se necessario, intervenire per raggiungere il punto di interruzione. Il punto di interruzione dovrebbe essere attivo. In caso contrario, non sono stati caricati i simboli per l'applicazione. Riprovare e, se non funziona, ottenere informazioni sul caricamento dei simboli e su come risolverli in informazioni sui [file di simboli e le impostazioni dei simboli di Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/).
 
 15. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.
 
-    Se si dispone di tutti i file non di codice che devono essere utilizzate dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (in **Esplora soluzioni** fare clic su **Aggiungi > Nuova cartella**). Aggiungere i file alla cartella (in **Esplora soluzioni** fare clic su **Aggiungi > Elemento esistente**, quindi selezionare i file). Nella pagina **Proprietà** di ogni file impostare **Copia nella directory di output** su **Copia sempre**.
+    Se sono presenti file non di codice che devono essere usati dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (in **Esplora soluzioni** fare clic su **Aggiungi > Nuova cartella**). Aggiungere i file alla cartella (in **Esplora soluzioni** fare clic su **Aggiungi > Elemento esistente**, quindi selezionare i file). Nella pagina **Proprietà** di ogni file impostare **Copia nella directory di output** su **Copia sempre**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurare il debug con simboli remoti
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Assegnazioni delle porte del debugger remoto](../debugger/remote-debugger-port-assignments.md)

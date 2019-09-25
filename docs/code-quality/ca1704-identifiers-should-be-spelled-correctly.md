@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbfc8081f980b7b9e978da782f1627a88a716a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa04ca237134c1947b5c58b921f87f32a1ecfb16
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809408"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234299"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Gli identificatori devono essere digitati correttamente
 
@@ -28,29 +28,29 @@ ms.locfileid: "62809408"
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
 |CheckId|CA1704|
 |Category|Microsoft.Naming|
-|Modifica importante|Interruzione|
+|Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Il nome di un identificatore contiene una o più parole che non sono riconosciute dalla libreria del correttore ortografico Microsoft. Questa regola non verificare i costruttori o membri denominati speciali, ad esempio get e set di funzioni di accesso a proprietà.
+Il nome di un identificatore contiene una o più parole che non sono riconosciute dalla libreria del correttore ortografico Microsoft. Questa regola non controlla i costruttori o i membri con nome speciale, ad esempio le funzioni di accesso get e set Property.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola analizza l'identificatore per i token e controlla l'ortografia di ogni token. Algoritmo di analisi esegue le trasformazioni seguenti:
+Questa regola analizza l'identificatore in token e controlla l'ortografia di ogni token. L'algoritmo di analisi esegue le trasformazioni seguenti:
 
-- Lettere maiuscole avviare un nuovo token. Ad esempio, MyNameIsJoe suddivide in token "My", "Name", "Is", "Joe".
+- Le lettere maiuscole avviano un nuovo token. Ad esempio, MyNameIsJoe suddivide in token a "My", "Name", "is", "Joe".
 
-- Per più lettere maiuscole, l'ultima lettera maiuscola avvia un nuovo token. Ad esempio, GUIEditor suddivide in token di "Interfaccia utente grafica", "Editor".
+- Per più lettere maiuscole, l'ultima lettera maiuscola avvia un nuovo token. Ad esempio, GUIEditor suddivide in token in "GUI", "Editor".
 
-- Vengono rimossi iniziali e finali apostrofi. Ad esempio, 'sender' suddivide in token "mittente".
+- Gli apostrofi iniziali e finali vengono rimossi. Ad esempio, "sender" suddivide in token in "sender".
 
-- Caratteri di sottolineatura indicano la fine di un token e vengono rimossi. Ad esempio Hello_world suddivide in token di "Hello", "world".
+- I caratteri di sottolineatura indicano la fine di un token e vengono rimossi. Ad esempio, hello_world suddivide in token su "Hello", "World".
 
-- Le e commerciali incorporate vengono rimossi. Ad esempio, per & mat viene scomposto nel token "format".
+- Le e commerciali incorporate vengono rimosse. Ad esempio, per & Mat suddivide in token in "Format".
 
 ## <a name="language"></a>Linguaggio
 
-Il correttore ortografico attualmente verifica solo a dizionari le impostazioni cultura basate su inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto, aggiungendo il **CodeAnalysisCulture** elemento.
+Il controllo ortografico attualmente controlla solo i dizionari delle impostazioni cultura in lingua inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto aggiungendo l'elemento **CodeAnalysisCulture** .
 
 Ad esempio:
 
@@ -61,25 +61,25 @@ Ad esempio:
 ```
 
 > [!IMPORTANT]
-> Se si imposta le impostazioni cultura su un valore qualsiasi diverso da una cultura basata su inglese, questa regola di analisi del codice viene disabilitata automaticamente.
+> Se si impostano le impostazioni cultura su un valore diverso da una lingua inglese, questa regola di analisi del codice viene disabilitata automaticamente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, correggere l'ortografia del termine o aggiungere la parola al dizionario personalizzato.
+Per correggere una violazione di questa regola, correggere l'ortografia della parola o aggiungere la parola a un dizionario personalizzato.
 
-### <a name="to-add-words-to-a-custom-dictionary"></a>Per aggiungere termini al dizionario personalizzato
+### <a name="to-add-words-to-a-custom-dictionary"></a>Per aggiungere parole a un dizionario personalizzato
 
-Denominare il file XML di dizionario personalizzato *DizionarioPersonale*. Inserire il dizionario nella directory di installazione dello strumento, nella directory del progetto o nella directory che è associata allo strumento sotto il profilo dell'utente (*%USERPROFILE%\Application dati\\...* ). Per informazioni su come aggiungere il dizionario personalizzato a un progetto in Visual Studio, vedere [come: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Denominare il file XML del dizionario personalizzato *CustomDictionary. XML*. Inserire il dizionario nella directory di installazione dello strumento, nella directory del progetto o nella directory associata allo strumento sotto il profilo dell'utente ( *%USERPROFILE%\Application\\data...* ). Per informazioni su come aggiungere il dizionario personalizzato a un progetto in Visual Studio, vedere [procedura: Personalizzare il dizionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)di analisi del codice.
 
-- Aggiungere le parole che non dovrebbero provocare una violazione in un percorso Dictionary/parole/Recognized.
+- Aggiungere parole che non devono causare una violazione nel percorso dizionario/parole/riconoscimento.
 
-- Aggiungere le parole che devono causare una violazione in un percorso dizionario/parole/non riconosciuto.
+- Aggiungere parole che dovrebbero provocare una violazione sotto il percorso dizionario/parole/non riconosciuto.
 
-- Aggiungere le parole che devono essere contrassegnate come obsoleta in un percorso dizionario/parole/deprecate. Vedere l'argomento di regola correlata [CA1726: Utilizzare termini Preferiti](../code-quality/ca1726-use-preferred-terms.md) per altre informazioni.
+- Aggiungere parole che devono essere contrassegnate come obsolete sotto il percorso dizionario/parole/deprecato. Vedere l'argomento [relativo alle regole correlate CA1726: Per ulteriori informazioni](../code-quality/ca1726-use-preferred-terms.md) , utilizzare i termini preferiti.
 
-- Aggiungere le eccezioni alle regole di maiuscole e minuscole degli acronimi al percorso di dizionario/acronimi/CasingExceptions.
+- Aggiungere le eccezioni alle regole di maiuscole e minuscole dell'acronimo al percorso Dictionary/Acronims/CasingExceptions.
 
-Di seguito è riportato un esempio della struttura di un file del dizionario personalizzato:
+Di seguito è riportato un esempio della struttura di un file di dizionario personalizzato:
 
 ```xml
 <Dictionary>
@@ -104,19 +104,19 @@ Di seguito è riportato un esempio della struttura di un file del dizionario per
 </Dictionary>
 ```
 
-## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
+## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Eliminare un avviso da questa regola solo se la parola è intenzionalmente con errori di ortografia e la parola si applica a un set limitato di libreria. Correttamente ortografia consente di ridurre la curva di apprendimento necessario per le nuove librerie software.
+Eliminare un avviso da questa regola solo se la parola è intenzionalmente digitata in modo errato e la parola viene applicata a un set limitato di librerie. Le parole con ortografia corretta riducono la curva di apprendimento necessaria per le nuove librerie software.
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA2204: Valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
-- [CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA2204: I valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1703 Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 - [CA1707: Gli identificatori non devono contenere caratteri di sottolineatura](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1726: Utilizzare termini preferiti](../code-quality/ca1726-use-preferred-terms.md)
+- [CA1726: Usa termini preferiti](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+- [Procedura: Personalizzare il dizionario di analisi del codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

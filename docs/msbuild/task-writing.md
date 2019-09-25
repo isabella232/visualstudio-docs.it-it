@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440000"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238201"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività sono contenute nelle destinazioni. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è inclusa una raccolta di attività tipiche ed è anche possibile creare le proprie attività. Per altre informazioni sulla raccolta di attività inclusa in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere il [riferimento alle attività](../msbuild/msbuild-task-reference.md).
@@ -141,10 +141,35 @@ public string RequiredProperty { get; set; }
 
  L'attributo `[Required]` è definito da <xref:Microsoft.Build.Framework.RequiredAttribute> nello spazio dei nomi <xref:Microsoft.Build.Framework>.
 
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Come [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] richiama un'attività
+
+Quando si richiama un'attività, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] innanzitutto crea un'istanza della classe di attività, quindi chiama i metodi di impostazione delle proprietà dell'oggetto per i parametri di attività impostati nell'elemento attività nel file di progetto. Se l'elemento Task non specifica un parametro o se l'espressione specificata nell'elemento restituisce una stringa vuota, il metodo di impostazione della proprietà non viene chiamato.
+
+Ad esempio, nel progetto
+
+```xml
+<Project>
+ <Target Name="InvokeCustomTask">
+  <CustomTask Input1=""
+              Input2="$(PropertyThatIsNotDefined)"
+              Input3="value3" />
+ </Target>
+</Project>
+```
+
+viene chiamato solo l' `Input3` impostazione per.
+
+Un'attività non deve dipendere da un ordine relativo della chiamata al setter di proprietà del parametro.
+
+### <a name="task-parameter-types"></a>Tipi di parametro dell'attività
+
+Gestisce [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in modo nativo le proprietà di `string`tipo `bool`, `ITaskItem` e `ITaskItem[]`. Se un'attività accetta un parametro di un tipo diverso, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A> richiama per eseguire la conversione `string` da (con tutti i riferimenti a proprietà e elementi espansi) al tipo di destinazione. Se la conversione non riesce per un parametro di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] input, genera un errore e non chiama il `Execute()` metodo dell'attività.
+
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Description
- La seguente classe di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. L'attività restituisce `true`, che indica che ha avuto esito positivo.
+### <a name="description"></a>Descrizione
+
+La seguente classe di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. L'attività restituisce `true`, che indica che ha avuto esito positivo.
 
 ### <a name="code"></a>Codice
 
@@ -167,8 +192,9 @@ namespace SimpleTask1
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Description
- La seguente classe di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rappresenta un'attività che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. L'attività restituisce `true`, che indica che ha avuto esito positivo.
+### <a name="description"></a>Descrizione
+
+La seguente classe di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rappresenta un'attività che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. L'attività restituisce `true`, che indica che ha avuto esito positivo.
 
 ### <a name="code"></a>Codice
 
@@ -202,16 +228,19 @@ namespace SimpleTask2
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Description
- Questa classe di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. Ha una proprietà stringa obbligatoria e genera un evento che viene visualizzato da tutti i logger registrati.
+### <a name="description"></a>Descrizione
+
+Questa classe di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. Ha una proprietà stringa obbligatoria e genera un evento che viene visualizzato da tutti i logger registrati.
 
 ### <a name="code"></a>Codice
- [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
+
+[!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Description
- L'esempio seguente illustra un file di progetto che richiama l'attività dell'esempio precedente, SimpleTask3.
+### <a name="description"></a>Descrizione
+
+L'esempio seguente illustra un file di progetto che richiama l'attività dell'esempio precedente, SimpleTask3.
 
 ### <a name="code"></a>Codice
 
@@ -227,4 +256,5 @@ namespace SimpleTask2
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)

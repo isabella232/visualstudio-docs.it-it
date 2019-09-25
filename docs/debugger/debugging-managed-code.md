@@ -1,6 +1,6 @@
 ---
-title: Debug del codice gestito | Microsoft Docs
-ms.date: 11/04/2016
+title: Debug di codice gestito | Microsoft Docs
+ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851879"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211206"
 ---
-# <a name="debugging-managed-code"></a>Debug del codice gestito
+# <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug di codice gestitoC#(, Visual Basic F#, C++,/CLI)
 
-In questa sezione vengono descritti alcuni problemi di debug comuni e vengono illustrate varie tecniche per le applicazioni gestite, ovvero scritte in linguaggi compatibili con Common Language Runtime, ad esempio Visual Basic, C# e C++. Le tecniche descritte sono di livello avanzato. [Presentazione del debugger](../debugger/debugger-feature-tour.md).
+Questa sezione descrive i problemi e le tecniche comuni di debug per le applicazioni gestite o le applicazioni scritte in linguaggi destinati ai Common Language Runtime, ad C#esempio Visual Basic C++, e/cli. Le tecniche descritte sono di livello avanzato. [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="in-this-section"></a>In questa sezione
 
@@ -47,7 +47,7 @@ Vengono forniti codici di esempio per consentire il debug del metodo `OnStart` d
 [Debug in modalità mista](../debugger/debugging-mixed-mode-applications.md)\
 Viene descritto il debug di applicazioni in modalità mista, ovvero qualsiasi applicazione nella quale vengono combinati codice nativo e codice gestito.
 
-[Errore: Eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Errore: Non è possibile eseguire il debug perché nel sistema è abilitato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Viene descritto un messaggio di errore visualizzato se si tenta di eseguire il debug del codice gestito in un sistema [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] o Windows NT avviato in modalità debug.
 
 [Debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md)\
@@ -81,7 +81,7 @@ Vengono presentati le tecniche di debug e i problemi più comuni riscontrabili d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Eseguire il debug i controlli personalizzati di Windows Form in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Procedura dettagliata: Debug di controlli Windows Forms personalizzati in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fe8d4fbd4def14bfb8a24f4f211a121c809930
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c33f4b0b55728d659c34e0ffc8723f555a6d074d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922245"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234921"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizzare le stringhe in lettere maiuscole
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922245"
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
 |Category|Microsoft. globalizzazione|
-|Modifica importante|Senza interruzioni|
+|Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un'operazione normalizza una stringa in minuscolo.

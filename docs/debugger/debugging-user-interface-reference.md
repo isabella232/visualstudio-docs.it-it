@@ -1,5 +1,5 @@
 ---
-title: Riferimento all'interfaccia utente di debug | Microsoft Docs
+title: Informazioni di riferimento sull'interfaccia utente di debug | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d459e1c6611fa1b20e05ba2d5bd24e23750109d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28757580b7f45e3d63cba1782f17283ad01f26c6
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852176"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211063"
 ---
 # <a name="debugging-user-interface-reference"></a>Riferimenti dell'interfaccia utente di debug
 Quando si esegue il debug di un'applicazione è possibile che vengano visualizzate le finestre di dialogo elencate di seguito.
@@ -43,6 +43,6 @@ Quando si esegue il debug di un'applicazione è possibile che vengano visualizza
 - [Finestre di dialogo di errore e di avviso per il debug](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug in Visual Studio](../debugger/index.md)
+- [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Finestra di comando](../ide/reference/command-window.md)
