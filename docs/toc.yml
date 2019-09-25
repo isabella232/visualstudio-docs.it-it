@@ -1,4 +1,4 @@
-- name: Documentazione di Visual Studio
+- name: Documentazione dell'IDE di Visual Studio
   href: ide/index.yml
   pdf_name: Visual Studio documentation
 - name: Panoramica
