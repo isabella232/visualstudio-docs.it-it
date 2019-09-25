@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926710"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254386"
 ---
 # <a name="custom-task-panes"></a>Riquadri attività personalizzati
   I riquadri attività sono pannelli dell'interfaccia utente in genere ancorati a un lato di una finestra in un'applicazione di Microsoft Office. I riquadri attività personalizzati consentono di creare un riquadro attività basato sulle proprie esigenze specifiche e offrono agli utenti un'interfaccia utente nota per accedere alle funzionalità della soluzione. L'interfaccia può, ad esempio, contenere controlli che consentono di eseguire codice per la modifica dei documenti o per la visualizzazione dei dati di un'origine dati.
@@ -59,7 +59,7 @@ ms.locfileid: "68926710"
    Per altre informazioni, vedere [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 ### <a name="create-the-user-interface"></a>Creare l'interfaccia utente
- Tutti i riquadri attività personalizzati creati tramite gli strumenti di sviluppo di Office in Visual Studio contengono un oggetto <xref:System.Windows.Forms.UserControl>. Tale controllo utente fornisce l'interfaccia utente del riquadro attività personalizzato È possibile creare il controllo utente in fase di progettazione o in fase di esecuzione. Se viene creato in fase di progettazione, è possibile usare Progettazione Windows Form per costruire l'interfaccia utente del riquadro attività.
+ Tutti i riquadri attività personalizzati creati tramite gli strumenti di sviluppo di Office in Visual Studio contengono un oggetto <xref:System.Windows.Forms.UserControl>. Tale controllo utente fornisce l'interfaccia utente del riquadro attività personalizzato e può essere creato in fase di progettazione o di esecuzione. Se viene creato in fase di progettazione, è possibile usare Progettazione Windows Form per costruire l'interfaccia utente del riquadro attività.
 
 ### <a name="instantiate-the-custom-task-pane"></a>Creare un'istanza del riquadro attività personalizzato
  Dopo aver creato un controllo utente contenente l'interfaccia utente del riquadro attività personalizzato, è necessario creare un'istanza di un oggetto <xref:Microsoft.Office.Tools.CustomTaskPane>. A questo scopo, passare il controllo utente all'oggetto <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> nel componente aggiuntivo VSTO chiamando uno dei metodi <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>. Tale raccolta viene esposta come campo `CustomTaskPanes` della classe `ThisAddIn`. Per usare l'esempio di codice seguente è necessario eseguirlo dalla classe `ThisAddIn`.

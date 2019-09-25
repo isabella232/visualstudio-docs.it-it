@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac31e0fe12d703e11d286b629e7e690f641f4e3
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
-ms.translationtype: HT
+ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981103"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254432"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
@@ -32,7 +32,7 @@ Per impostare l'azione di compilazione per un file, aprire le proprietà del fil
 
 Alcune delle azioni di compilazione più comuni per i file di progetto di C# e Visual Basic includono:
 
-|Azione di compilazione | Tipi di progetto | DESCRIZIONE |
+|Azione di compilazione | Tipi di progetto | Descrizione |
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Un file di testo non di origine che viene passato al compilatore C# o Visual Basic come input. Questa azione di compilazione viene usata principalmente per specificare input per [analizzatori](../code-quality/roslyn-analyzers-overview.md) cui viene fatto riferimento in un progetto per verificare la qualità del codice. Per altre informazioni, vedere [Use additional files](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md) (Usare file aggiuntivi).|
 | **ApplicationDefinition** | WPF | File che definisce l'applicazione. Quando si crea un progetto per la prima volta, si tratta del file *App.xaml*. |
@@ -45,8 +45,8 @@ Alcune delle azioni di compilazione più comuni per i file di progetto di C# e V
 | **EntityDeploy** | .NET | Per Entity Framework (EF) file con estensione EDMX che specificano la distribuzione di artefatti EF. |
 | **Fakes** | .NET | Usato per il framework di test di Microsoft Fakes. Vedere [Isolare codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
 | **None** | qualsiasi | Il file non fa parte della compilazione in alcun modo. Questo valore può essere usato per i file di documentazione come i file leggimi, ad esempio.|
-| **Page** | WPF | Compilare un file XAML in un file binario con estensione BAML per un caricamento più rapido in fase di esecuzione. |
-| **Risorsa** | WPF | Specifica di incorporare il file in un file di risorse del manifesto dell'assembly con estensione *.g.resources*. |
+| **Page** | WPF | Compilare un file XAML in un file con estensione BAML binario per un caricamento più rapido in fase di esecuzione. |
+| **Risorse** | WPF | Specifica di incorporare il file in un file di risorse del manifesto dell'assembly con estensione *.g.resources*. |
 | **Shadow** | .NET | Usato per un file con estensione accessor contenente un elenco di nomi file di assembly compilati, uno per riga. Per ogni assembly nell'elenco, generare classi pubbliche con i nomi `ClassName_Accessor` che sono esattamente come gli originali, ma con metodi pubblici anziché metodi privati. Usato per il testing unità. |
 | **Schermata iniziale** | WPF | Specifica un file di immagine da visualizzare in fase di esecuzione all'avvio dell'app. |
 | **XamlAppDef** | Windows Workflow Foundation | Indica alla compilazione di compilare un file XAML del flusso di lavoro in un assembly con un flusso di lavoro incorporato. |

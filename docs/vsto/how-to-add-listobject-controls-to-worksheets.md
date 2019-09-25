@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere controlli ListObject a fogli di lavoro'
+title: 'Procedura: Aggiungere controlli ListObject a fogli di foglio'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f6ca2544f64433746f6aa57c9456fee11459db
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826709"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254697"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedura: Aggiungere controlli ListObject a fogli di lavoro
-  È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedura: Aggiungere controlli ListObject a fogli di foglio
+  È possibile aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- È anche possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli in fase di esecuzione nei progetti di componente aggiuntivo VSTO.
+ È anche possibile aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> in fase di esecuzione nei progetti di componente aggiuntivo VSTO.
 
  Questo argomento descrive le attività seguenti:
 
@@ -35,10 +35,10 @@ ms.locfileid: "62826709"
 
 - [Aggiungere controlli ListObject in fase di esecuzione in un progetto di componente aggiuntivo VSTO](#runtimeaddin)
 
-  Per altre informazioni sulle <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [controllo ListObject](../vsto/listobject-control.md).
+  Per ulteriori informazioni sui <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [controllo ListObject](../vsto/listobject-control.md).
 
-## <a name="designtime"></a> Aggiungere controlli ListObject in fase di progettazione
- Esistono diversi modi per aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: Da Excel, Visual Studio **casella degli strumenti**e dal **Zdroje dat** finestra.
+## <a name="designtime"></a>Aggiungere controlli ListObject in fase di progettazione
+ Sono disponibili diversi modi per aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: Da Excel, dalla **casella degli strumenti**di Visual Studio e dalla finestra **origini dati** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -60,14 +60,14 @@ ms.locfileid: "62826709"
 
 #### <a name="to-use-the-data-sources-window"></a>Per usare la finestra Origini dati
 
-1. Aprire la finestra **Origini dati** e creare un'origine dati per il progetto. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).
+1. Aprire la finestra **Origini dati** e creare un'origine dati per il progetto. Per altre informazioni, vedere [aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
 2. Trascinare una tabella dalla finestra **Origini dati** al foglio di lavoro.
 
-     Un controllo con associazione ai dati <xref:Microsoft.Office.Tools.Excel.ListObject> viene aggiunto al foglio di lavoro. Per altre informazioni, vedere [Data binding e Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms).
+     Un controllo con associazione ai dati <xref:Microsoft.Office.Tools.Excel.ListObject> viene aggiunto al foglio di lavoro. Per ulteriori informazioni, vedere [Data Binding e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a> Aggiungere controlli ListObject in fase di esecuzione in un progetto a livello di documento
- È possibile aggiungere il <xref:Microsoft.Office.Tools.Excel.ListObject> controllo in modo dinamico in fase di esecuzione. e creare in questo modo i controlli host in risposta a eventi. Gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
+## <a name="runtimedoclevel"></a>Aggiungere controlli ListObject in fase di esecuzione in un progetto a livello di documento
+ È possibile aggiungere il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> in modo dinamico in fase di esecuzione e creare in questo modo i controlli host in risposta a eventi. Gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Per aggiungere un controllo ListObject a un foglio di lavoro a livello di codice
 
@@ -76,8 +76,8 @@ ms.locfileid: "62826709"
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="runtimeaddin"></a> Aggiungere controlli ListObject in fase di esecuzione in un progetto di componente aggiuntivo VSTO
- È possibile aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> a livello di codice a qualsiasi foglio di lavoro aperto in un progetto di componente aggiuntivo VSTO. Gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro viene salvato e chiuso. Per altre informazioni, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+## <a name="runtimeaddin"></a>Aggiungere controlli ListObject in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+ È possibile aggiungere un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> a livello di codice a qualsiasi foglio di lavoro aperto in un progetto di componente aggiuntivo VSTO. Gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro viene salvato e chiuso. Per altre informazioni, vedere [estensione di documenti di Word e di cartelle di lavoro di Excel in componenti aggiuntivi VSTO](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)in fase di esecuzione.
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Per aggiungere un controllo ListObject a un foglio di lavoro a livello di codice
 
@@ -87,11 +87,11 @@ ms.locfileid: "62826709"
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Estendere i documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [ListObject (controllo)](../vsto/listobject-control.md)
-- [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
-- [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)
-- [Procedura: Ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)
-- [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
+- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
+- [Procedura: Ridimensiona controlli ListObject](../vsto/how-to-resize-listobject-controls.md)
+- [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

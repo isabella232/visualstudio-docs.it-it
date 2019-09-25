@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154922"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254373"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Passaggio 6: Usare il modello Progetto Web Django di sondaggi
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-Come si può notare, un modello Poll include una descrizione nel campo `text` e una data di pubblicazione in `pub_date`. Questi campi sono gli unici esistenti per il modello Poll nel database. Il campo `total_votes` viene calcolato in fase di esecuzione.
+Come si può notare, un modello Poll include una descrizione nel campo `text` e una data di pubblicazione in `pub_date`. Questi campi sono gli unici esistenti per il polling nel database. il `total_votes` campo viene calcolato in fase di esecuzione.
 
-Un modello Choice è correlato a un modello Poll tramite il campo `poll`, contiene una descrizione in `text` e conserva un conteggio per l'opzione specifica in `votes`. Il campo `votes_percentage` viene calcolato in fase di esecuzione e non è presente nel database.
+Un modello Choice è correlato a un modello Poll tramite il campo `poll`, contiene una descrizione in `text` e conserva un conteggio per l'opzione specifica in `votes`. Il `votes_percentage` campo viene calcolato in fase di esecuzione e non viene trovato nel database.
 
 L'elenco completo di tipi di campo è `CharField` (testo limitato) `TextField` (testo illimitato), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Ogni campo accetta alcuni attributi, ad esempio `max_length`. L'attributo `blank=True` indica che il campo è facoltativo. `null=true` indica che un valore è facoltativo. C'è anche un attributo `choices` che limita i valori a quelli inclusi in una matrice di tuple valore dati/valore visualizzato. Vedere [Model field reference](https://docs.djangoproject.com/en/2.0/ref/models/fields/) (Informazioni di riferimento sui campi dei modelli) nella documentazione di Django.
 
@@ -192,7 +192,7 @@ In generale, grazie alla funzionalità di migrazione di Django non è mai necess
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Domanda: Cosa accade se si dimentica di eseguire il comando di migrazione dopo aver apportato modifiche ai modelli?
 
-Risposta: Se i modelli non corrispondono al contenuto nel database, in Django si verifica un errore in fase di esecuzione con le eccezioni appropriate. Se, ad esempio, si dimentica di eseguire la migrazione della modifica del modello illustrata nella sezione precedente, viene visualizzato l'errore **no such column: app_poll.author** (impossibile trovare la colonna app_poll.author):
+Risposta: Se i modelli non corrispondono a quelli presenti nel database, Django non riesce in fase di esecuzione con le eccezioni appropriate. Se, ad esempio, si dimentica di eseguire la migrazione della modifica del modello illustrata nella sezione precedente, viene visualizzato l'errore **no such column: app_poll.author** (impossibile trovare la colonna app_poll.author):
 
 ![Errore visualizzato quando non è stata eseguita la migrazione di una modifica del modello](media/django/step06-exception-when-forgetting-to-migrate.png).
 

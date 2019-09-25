@@ -1,5 +1,5 @@
 ---
-title: Finestra di progettazione del flusso di lavoro, ActivityDesigner Persist
+title: ActivityDesigner Progettazione flussi di lavoro-mantenuti
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,30 +10,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7be70d18b1fc8ff12e2d1fb177b41775954334ed
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004130"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254842"
 ---
 # <a name="persist-activity-designer"></a>ActivityDesigner Persist
 
-Il **Persist** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Persist> attività.
+L'ActivityDesigner **rese** viene utilizzato per creare e configurare un' <xref:System.Activities.Statements.Persist> attività.
 
 ## <a name="the-persist-activity"></a>Attività Persist
 
-L'attività <xref:System.Activities.Statements.Persist> salva un flusso di lavoro su disco, se possibile. Non è possibile eseguire l'attività <xref:System.Activities.Statements.Persist> in un'area non permanente come, ad esempio, all'interno di un'attività <xref:System.Activities.Statements.TransactionScope>. Se si usa un'attività <xref:System.Activities.Statements.Persist> in un ambito non permanente, viene generata un'eccezione in fase di esecuzione.
+L'attività <xref:System.Activities.Statements.Persist> salva un flusso di lavoro su disco, se possibile. Non è possibile eseguire l'attività <xref:System.Activities.Statements.Persist> in un'area non permanente come, ad esempio, all'interno di un'attività <xref:System.Activities.Statements.TransactionScope>. Se si utilizza un' <xref:System.Activities.Statements.Persist> attività in un ambito non di persistenza, viene generata un'eccezione in fase di esecuzione.
 
 ### <a name="using-the-persist-activity-designer"></a>Utilizzo dell'ActivityDesigner Persist
 
-Il **Persist** ActivityDesigner è reperibile nella **Runtime** categoria del **della casella degli strumenti**, accessibile facendo clic la **casella degli strumenti** scheda (in alternativa, selezionare **casella degli strumenti** dalle **visualizzazione** menu o CTRL + ALT + X.)
+L'ActivityDesigner di **salvataggio** è disponibile nella categoria **Runtime** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** . in alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere CTRL + ALT + X.
 
-Il **Persist** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Ciò consente di creare un <xref:System.Activities.Statements.Persist> attività con un valore predefinito **DisplayName** Persist. Il <xref:System.Activities.Activity.DisplayName%2A> possono essere modificati nell'intestazione del **Persist** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà.
+È possibile trascinare l'ActivityDesigner di **salvataggio** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro quando vengono in genere posizionate le attività, <xref:System.Activities.Statements.Sequence>ad esempio all'interno di un oggetto. Verrà creata un' <xref:System.Activities.Statements.Persist> attività con un valore **DisplayName** predefinito di permanente. Il <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner di **mantenimento** o nella casella **DisplayName** della griglia delle proprietà.
 
 ### <a name="the-persist-properties"></a>Proprietà di Persist
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Persist> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione del flusso di lavoro.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Persist> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate in Progettazione flussi di lavoro area.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|
