@@ -41,6 +41,7 @@
 ##### [WhiteSource Bolt](vs-whitesource.md)
 ##### [Account sviluppatore per Windows](vs-windows-dev.md)
 #### Sviluppo professionale
+##### [CODE Magazine](vs-code-magazine.md)
 ##### [DataCamp](vs-datacamp.md)
 ##### [LinkedIn Learning](vs-linkedin-learning.md)
 ##### [Sottoscrizione di MSDN Magazine](vs-msdn.md)

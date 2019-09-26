@@ -17,12 +17,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf77f2796a224d6fad81c4a1485ba82f8822cfcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53bd95875cf990afee6d356744961d3637f16842
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557418"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253773"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -36,12 +36,12 @@ Dotfuscator viene eseguito sugli assembly compilati senza richiedere altre attiv
 
 La **protezione della proprietà intellettuale** è importante.
 Il codice dell'applicazione contiene dettagli di progettazione e implementazione che possono essere considerati proprietà intellettuale.
-Tuttavia, le applicazioni basate su .NET Framework [contengono metadati significativi e codice intermedio di alto livello][assemblies] e possono quindi essere decompilate con facilità tramite uno dei numerosi strumenti automatizzati disponibili gratuitamente.
+Tuttavia, le applicazioni basate su .NET Framework [contengono metadati significativi e codice intermedio di alto livello][assemblies] ed è quindi possibile eseguirne il reverse engineering con facilità tramite uno dei numerosi strumenti automatizzati disponibili gratuitamente.
 Causando l'interruzione della decompilazione, è possibile impedire la divulgazione non autorizzata di dati di proprietà intellettuale ed evitare di mostrare che il codice contiene segreti commerciali.
-Dotfuscator può [offuscare][obfuscation] gli assembly .NET per ostacolare la decompilazione, mantenendo invariato il comportamento dell'applicazione originale.
+Dotfuscator può [offuscare][obfuscation] gli assembly .NET per impedire il reverse engineering, mantenendo invariato il comportamento dell'applicazione originale.
 
 È inoltre importante **proteggere l'integrità dell'applicazione**.
-Oltre alla decompilazione, l'applicazione può essere soggetta ad attacchi di pirateria o comunque ad azioni che ne alterano il comportamento in fase di esecuzione o ne modificano i dati.
+Oltre al reverse engineering, l'applicazione può essere soggetta ad attacchi di pirateria o comunque ad azioni che ne alterano il comportamento in fase di esecuzione o ne modificano i dati.
 Dotfuscator può consentire all'applicazione di [rilevare e gestire usi non autorizzati][checks], incluse eventuali manomissioni, operazioni di debug di terze parti e dispositivi rooted.
 
 Per altre informazioni su come Dotfuscator è integrabile in un ciclo di sviluppo software sicuro, vedere la [pagina SDL App Protection][sdl-protection] (Protezione delle app nel ciclo di sviluppo software) di PreEmptive Solutions.
@@ -54,17 +54,17 @@ Microsoft Visual Studio include una copia gratuita per uso personale di ***PreEm
 Dotfuscator Community offre un'ampia gamma di servizi di [protezione avanzata del software][software-protection] per sviluppatori, architetti e tester.
 Esempi delle funzionalità di [offuscamento .NET][obfuscation] e di altre funzionalità di [protezione delle applicazioni][app-protection] incluse in Dotfuscator Community comprendono:
 
-* *[Ridenominazione][renaming]* degli identificatori per rendere più difficile la decompilazione degli assembly compilati.
+* *[Ridenominazione][renaming]* degli identificatori per rendere più difficile il reverse engineering degli assembly compilati.
 * *[Anti-manomissione][tamper]* per rilevare l'esecuzione di applicazioni manomesse e terminare o gestire sessioni che hanno subito manomissioni.
 * *[Anti-debug][debug]* per rilevare il collegamento di un debugger a un'applicazione in esecuzione e terminare o gestire le sessioni sottoposte a debug.
 * *[Anti-dispositivi rooted][root]* per rilevare se l'applicazione è in uso in un dispositivo Android rooted e terminare o gestire le sessioni in tali dispositivi.
 * *[Comportamenti di scadenza delle applicazioni][shelflife]* che codificano una data di "fine vita" e terminano le sessioni delle applicazioni scadute.
 
-Per informazioni dettagliate su queste funzionalità, incluso il modo in cui possono essere integrate nella strategia di protezione della propria applicazione, vedere la [pagina Capabilities][capabilities] (Funzionalità).
+Per informazioni dettagliate su queste funzionalità, incluso il modo in cui possono essere integrate nella strategia di protezione della propria applicazione, vedere la [pagina Funzionalità][capabilities].
 
 Dotfuscator Community offre funzionalità predefinite per la protezione di base,
-ma altre misure di protezione delle applicazioni sono disponibili per gli utenti registrati di Dotfuscator Community e per gli utenti di ***PreEmptive Protection - Dotfuscator Professional***, la soluzione [offuscamento .NET][net-obfuscator] leader del settore.
-Per informazioni su come migliorare Dotfuscator, vedere la [pagina Upgrades][upgrades] (Aggiornamenti).
+ma altre misure di protezione delle applicazioni sono disponibili per gli utenti registrati di Dotfuscator Community e per gli utenti di ***PreEmptive Protection - Dotfuscator Professional***, la soluzione di [offuscamento .NET][net-obfuscator] leader del settore.
+Per informazioni su come migliorare Dotfuscator, vedere la [pagina Aggiornamenti][upgrades].
 
 ## <a name="getting-started"></a>Per iniziare
 
@@ -72,8 +72,8 @@ Per informazioni su come migliorare Dotfuscator, vedere la [pagina Upgrades][upg
 
 Per iniziare a usare Dotfuscator Community da Visual Studio, digitare `dotfuscator` nella **casella di ricerca** (CTRL+Q).
 
-* Se Dotfuscator Community è già installato, nella **casella di ricerca** verrà visualizzata l'opzione per avviare Dotfuscator Community sotto l'intestazione *Menu*. Per informazioni dettagliate, vedere la [pagina introduttiva della Guida dell'utente completa di Dotfuscator Community][get-started].
-* Se Dotfuscator Community non è ancora installato, nella **casella di ricerca** verrà visualizzata invece la voce **Installa PreEmptive Protection - Dotfuscator** sotto l'intestazione *Singoli componenti*. Per informazioni dettagliate, vedere la [pagina Installation][install] (Installazione).
+* Se Dotfuscator Community è già installato, nella **casella di ricerca** verrà visualizzata l'opzione per avviare Dotfuscator Community sotto l'intestazione *Menu*. Per informazioni dettagliate, vedere la [pagina introduttiva della guida dell'utente completa di Dotfuscator Community][get-started].
+* Se Dotfuscator Community non è ancora installato, nella **casella di ricerca** verrà visualizzata invece la voce **Installa PreEmptive Protection - Dotfuscator** sotto l'intestazione *Singoli componenti*. Per informazioni dettagliate, vedere la [pagina Installazione][install].
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Per iniziare a usare Dotfuscator Community da Visual Studio, digitare `dotfuscat
 Per iniziare a usare Dotfuscator Community da Visual Studio, digitare `dotfuscator` nella barra di ricerca **Avvio veloce** (CTRL+Q).
 
 * Se Dotfuscator Community è già installato, in **Avvio veloce** verrà visualizzata l'opzione *Menu* per avviare l'interfaccia utente di Dotfuscator Community. Per informazioni dettagliate, vedere la [pagina introduttiva della guida dell'utente completa di Dotfuscator Community][get-started].
-* Se Dotfuscator Community non è ancora installato, in **Avvio veloce** verrà visualizzata l'opzione *Installa* appropriata. Per informazioni dettagliate, vedere la [pagina Installation][install] (Installazione).
+* Se Dotfuscator Community non è ancora installato, in **Avvio veloce** verrà visualizzata l'opzione *Installa* appropriata. Per informazioni dettagliate, vedere la [pagina Installazione][install].
 
 ::: moniker-end
 
