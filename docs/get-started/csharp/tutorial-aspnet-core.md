@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b719c78bd4800121e36346a095c2a4141b7e2de3
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186720"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252465"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: Introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -170,7 +170,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
     È possibile inserire il contenuto statico del sito &mdash;ad esempio CSS, immagini e librerie JavaScript&mdash; direttamente nei percorsi desiderati.
 
- 1. Il progetto contiene anche file di configurazione che gestiscono l'app Web in fase di esecuzione. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione è archiviata in *appsettings.json*. È possibile eseguire comunque l'override di queste impostazioni con *appsettings.Development.json*. Per visualizzare il file **appsettings.Development.json**, espandere il file **appsettings.json**.
+ 1. Il progetto contiene anche i file di configurazione che gestiscono l'app Web in fase di esecuzione. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione è archiviata in *appsettings.json*. È possibile eseguire comunque l'override di queste impostazioni con *appsettings.Development.json*. Per visualizzare il file **appsettings.Development.json**, espandere il file **appsettings.json**.
 
      ![File di configurazione in Esplora soluzioni in Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -273,7 +273,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
     È possibile inserire il contenuto statico del sito &mdash;ad esempio CSS, immagini e librerie JavaScript&mdash; direttamente nei percorsi desiderati.
 
- 1. Il progetto contiene anche file di configurazione che gestiscono l'app Web in fase di esecuzione. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione è archiviata in *appsettings.json*. È possibile eseguire comunque l'override di queste impostazioni con *appsettings.Development.json*. Per visualizzare il file **appsettings.Development.json**, espandere il file **appsettings.json**.
+ 1. Il progetto contiene anche i file di configurazione che gestiscono l'app Web in fase di esecuzione. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione è archiviata in *appsettings.json*. È possibile eseguire comunque l'override di queste impostazioni con *appsettings.Development.json*. Per visualizzare il file **appsettings.Development.json**, espandere il file **appsettings.json**.
 
      ![File di configurazione in Esplora soluzioni in Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -304,7 +304,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
 1. A questo punto, è possibile apportare una modifica al codice. Scegliere **privacy.cshtml.cs**. Eliminare poi le direttive `using` all'inizio del file usando il metodo veloce seguente:
 
-   Scegliere una qualsiasi delle direttive `using` disattivate e una lampadina [Azioni rapide](../../ide/quick-actions.md) verrà visualizzata sotto il punto di inserimento o nel margine sinistro. Scegliere la lampadina, quindi passare il mouse su **Rimuovi using non necessari**. 
+   Scegliere una qualsiasi delle direttive `using` disattivate e una lampadina [Azioni rapide](../../ide/quick-actions.md) verrà visualizzata sotto il punto di inserimento o nel margine sinistro. Scegliere la lampadina, quindi passare il mouse su **Rimuovi using non necessari**.
 
    ![Rimuovere le using non necessarie nel file Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 

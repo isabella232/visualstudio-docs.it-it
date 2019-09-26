@@ -14,14 +14,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ddbb19c73660dcb77fc8166522946b0b3461e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c7fdda6234f1e98117cdb1bf047762ed9d4621a
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006762"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255739"
 ---
-# <a name="access-the-ribbon-at-runtime"></a>Accedere alla barra multifunzione in fase di esecuzione
+# <a name="access-the-ribbon-at-run-time"></a>Accedere alla barra multifunzione in fase di esecuzione
   È possibile scrivere codice per mostrare, nascondere o modificare la barra multifunzione e consentire agli utenti di eseguire il codice dai controlli in un riquadro attività personalizzato, un riquadro azioni o un'area del modulo di Outlook.
 
  È possibile accedere alla barra multifunzione mediante la classe `Globals`. Per progetti Outlook è possibile accedere alla barra multifunzione che viene visualizzata in una finestra di esplorazione o di controllo di Outlook specifica.
@@ -31,7 +31,7 @@ ms.locfileid: "63006762"
 ## <a name="access-the-ribbon-by-using-the-globals-class"></a>Accedere alla barra multifunzione usando la classe Globals
  È possibile usare la classe `Globals` per accedere alla barra multifunzione in un progetto a livello di documento o un progetto di componente aggiuntivo VSTO da qualsiasi posizione nel progetto.
 
- Per altre informazioni sul `Globals` classe, vedere [globale accedere agli oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Per ulteriori informazioni sulla `Globals` classe, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).
 
  Il seguente esempio usa la classe `Globals` per accedere a una barra multifunzione personalizzata denominata `Ribbon1` e impostare il testo visualizzato in una casella combinata nella barra multifunzione su `Hello World`.
 
@@ -39,15 +39,15 @@ ms.locfileid: "63006762"
  [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]
 
 ## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Accedere a una raccolta di barre multifunzione visualizzate in una finestra di controllo di Outlook specifica
- È possibile accedere a una raccolta di barre multifunzione visualizzate in Outlook *Inspectors*. Un controllo rappresenta una finestra che viene aperta in Outlook quando gli utenti eseguono determinate attività, ad esempio la creazione di messaggi di posta elettronica. Per accedere alla barra multifunzione di una finestra di controllo, chiamare la proprietà `Ribbons` della classe `Globals` e passare un oggetto <xref:Microsoft.Office.Interop.Outlook.Inspector> che rappresenta il controllo.
+ È possibile accedere a una raccolta di barre multifunzione visualizzate nei *controlli*di Outlook. Un controllo rappresenta una finestra che viene aperta in Outlook quando gli utenti eseguono determinate attività, ad esempio la creazione di messaggi di posta elettronica. Per accedere alla barra multifunzione di una finestra di controllo, chiamare la proprietà `Ribbons` della classe `Globals` e passare un oggetto <xref:Microsoft.Office.Interop.Outlook.Inspector> che rappresenta il controllo.
 
  Il seguente esempio ottiene una raccolta della barra multifunzione del controllo attualmente attivo. In questo esempio quindi si accede a una barra multifunzione denominata `Ribbon1` e imposta il testo visualizzato su una casella combinata nella barra multifunzione su `Hello World`.
 
  [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)]
  [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]
 
-## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Accedere a una raccolta di barre multifunzione visualizzate per una specifica finestra di esplorazione Outlook
- È possibile accedere a una raccolta di barre multifunzione visualizzate in un Outlook *Explorer*. Una finestra di esplorazione è l'interfaccia utente dell'applicazione principale per un'istanza di Outlook. Per accedere alla barra multifunzione di una finestra di esplorazione, chiamare la proprietà `Ribbons` della classe `Globals` e passare un oggetto <xref:Microsoft.Office.Interop.Outlook.Explorer> che rappresenta la finestra di esplorazione.
+## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Accedere a una raccolta di barre multifunzione visualizzate per una specifica finestra di esplorazione di Outlook
+ È possibile accedere a una raccolta di barre multifunzione visualizzate in una finestra di *esplorazione*di Outlook. Una finestra di esplorazione è l'interfaccia utente dell'applicazione principale per un'istanza di Outlook. Per accedere alla barra multifunzione di una finestra di esplorazione, chiamare la proprietà `Ribbons` della classe `Globals` e passare un oggetto <xref:Microsoft.Office.Interop.Outlook.Explorer> che rappresenta la finestra di esplorazione.
 
  Il seguente esempio ottiene una raccolta della barra multifunzione della finestra di esplorazione attualmente attiva. In questo esempio quindi si accede a una barra multifunzione denominata `Ribbon1` e imposta il testo visualizzato su una casella combinata nella barra multifunzione su `Hello World`.
 

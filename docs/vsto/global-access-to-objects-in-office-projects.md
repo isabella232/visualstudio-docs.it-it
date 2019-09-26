@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427949"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253439"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Accesso globale a oggetti nei progetti di Office
   Quando si crea un progetto di Office, Visual Studio genera automaticamente una classe denominata `Globals` nel progetto. È possibile usare la classe `Globals` per accedere ai diversi elementi del progetto in fase di esecuzione da qualsiasi codice del progetto.
@@ -49,7 +49,7 @@ ms.locfileid: "63427949"
 
 - La classe `ThisDocument` in un progetto modello o documento di Word. È possibile accedere a questo oggetto stato usando la proprietà `Globals.ThisDocument` .
 
-- Il `ThisAddIn` classe in un progetto di componente aggiuntivo VSTO. È possibile accedere a questo oggetto stato usando la proprietà `Globals.ThisAddIn` .
+- `ThisAddIn` Classe in un progetto di componente aggiuntivo VSTO. È possibile accedere a questo oggetto stato usando la proprietà `Globals.ThisAddIn` .
 
 - Tutte le barre multifunzione del progetto che sono state personalizzate usando la finestra di progettazione della barra multifunzione. È possibile accedere alle barre multifunzione usando la proprietà `Globals.Ribbons` . Per altre informazioni, vedere [accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md).
 
@@ -71,16 +71,16 @@ ms.locfileid: "63427949"
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
 ## <a name="initialize-the-globals-class"></a>Inizializzare la classe Globals
- Il codice che tenta di usare il `Globals` classe prima che il documento o un componente aggiuntivo VSTO viene inizializzato potrebbe generare un'eccezione in fase di esecuzione. Ad esempio, l'utilizzo di `Globals` per la dichiarazione di una variabile a livello di classe potrebbe avere esito negativo perché la classe `Globals` potrebbe non essere inizializzata con i riferimenti a tutti gli elementi host prima della creazione di un'istanza dell'oggetto dichiarato.
+ Il codice che tenta di usare `Globals` la classe prima che il documento o il componente aggiuntivo VSTO venga inizializzato potrebbe generare un'eccezione in fase di esecuzione. Ad esempio, l'utilizzo di `Globals` per la dichiarazione di una variabile a livello di classe potrebbe avere esito negativo perché la classe `Globals` potrebbe non essere inizializzata con i riferimenti a tutti gli elementi host prima della creazione di un'istanza dell'oggetto dichiarato.
 
 > [!NOTE]
-> La classe `Globals` non viene mai inizializzata in fase di progettazione, ma vengono create istanze di controllo nella finestra di progettazione. Ciò significa che se si crea un controllo utente che usa una proprietà del `Globals` classe dall'interno una classe del controllo utente, è necessario controllare se la proprietà restituisce **null** prima di provare a usare l'oggetto restituito.
+> La classe `Globals` non viene mai inizializzata in fase di progettazione, ma vengono create istanze di controllo nella finestra di progettazione. Ciò significa che se si crea un controllo utente che usa una proprietà della `Globals` classe all'interno di una classe del controllo utente, è necessario verificare se la proprietà restituisce **null** prima di provare a usare l'oggetto restituito.
 
 ## <a name="see-also"></a>Vedere anche
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)
-- [Cenni preliminari sui controlli host e gli elementi host](../vsto/host-items-and-host-controls-overview.md)
+- [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Elemento host Document](../vsto/document-host-item.md)
 - [Elemento host Workbook](../vsto/workbook-host-item.md)
 - [Elemento host Worksheet](../vsto/worksheet-host-item.md)
-- [Scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
+- [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)

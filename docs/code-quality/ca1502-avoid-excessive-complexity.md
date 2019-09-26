@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: db4f767aa2ecb31bca3a5530e1b4bbf5ce15729d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234553"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253295"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitare complessità eccessiva
 
@@ -56,7 +56,7 @@ Per correggere una violazione di questa regola, effettuare il refactoring del me
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se la complessità non può essere facilmente ridotta e il metodo è facile da comprendere, testare e gestire. In particolare, un metodo che contiene un'istruzione `switch` Large`Select` ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in) è un candidato per l'esclusione. Il rischio di destabilizzare la base di codice in ritardo nel ciclo di sviluppo o di introdurre una modifica imprevista del comportamento in fase di esecuzione nel codice fornito in precedenza potrebbe superare i vantaggi della gestibilità del refactoring del codice.
+È possibile eliminare un avviso da questa regola se la complessità non può essere facilmente ridotta e il metodo è facile da comprendere, testare e gestire. In particolare, un metodo che contiene un'istruzione `switch` Large`Select` ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in) è un candidato per l'esclusione. Il rischio di destabilizzare la codebase in ritardo nel ciclo di sviluppo o di introdurre una modifica imprevista del comportamento in fase di esecuzione nel codice fornito in precedenza potrebbe superare i vantaggi della gestibilità del refactoring del codice.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Modalità di calcolo della complessità ciclomatica
 

@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook
+title: Visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 40ff277ff5102c436a6815af3b542894c8061e56
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328352"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255597"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procedura dettagliata: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook
-  Questa procedura dettagliata viene illustrato come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica che viene creato o aperto. Gli utenti possono visualizzare o nascondere il riquadro attività personalizzato usando un pulsante nella barra multifunzione di ogni messaggio di posta elettronica.
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procedura dettagliata: Visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook
+  In questa procedura dettagliata viene illustrato come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica creato o aperto. Gli utenti possono visualizzare o nascondere il riquadro attività personalizzato usando un pulsante nella barra multifunzione di ogni messaggio di posta elettronica.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- Per visualizzare un riquadro attività personalizzato con più finestre di esplorazione o di controllo, è necessario creare un'istanza del riquadro attività personalizzato per ogni finestra aperta. Per altre informazioni sul comportamento dei riquadri attività personalizzati nelle finestre Outlook, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
+ Per visualizzare un riquadro attività personalizzato con più finestre di esplorazione o di controllo, è necessario creare un'istanza del riquadro attività personalizzato per ogni finestra aperta. Per ulteriori informazioni sul comportamento dei riquadri attività personalizzati nelle finestre di Outlook, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
 > [!NOTE]
 > Questa procedura dettagliata presenta il codice del componente aggiuntivo VSTO in sezioni di piccole dimensioni per semplificare la descrizione della logica su cui si basa il codice.
@@ -39,7 +39,7 @@ ms.locfileid: "67328352"
 
 - Creazione di un'interfaccia utente della barra multifunzione personalizzata.
 
-- Visualizzare l'interfaccia utente della barra multifunzione personalizzata con messaggi di posta elettronica.
+- Visualizzazione dell'interfaccia utente della barra multifunzione personalizzata con messaggi di posta elettronica.
 
 - Creazione di una classe per la gestione delle finestre di controllo e dei riquadri attività personalizzati.
 
@@ -57,14 +57,14 @@ ms.locfileid: "67328352"
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o Microsoft Outlook 2010.
 
-  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare i riquadri attività in Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130309).
+  ![collegamento al video](../vsto/media/playvideo.gif "collegamento al video") Per una dimostrazione video correlata, [vedere Ricerca per categorie: Usare i riquadri attività in Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130309).
 
 ## <a name="create-the-project"></a>Creare il progetto
  I riquadri attività personalizzati vengono implementati nei componenti aggiuntivi VSTO. Iniziare creando un progetto di componente aggiuntivo VSTO per Outlook.
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto di **componente aggiuntivo di Outlook** denominato **OutlookMailItemTaskPane**. Usare il modello di progetto per il **componente aggiuntivo di Outlook** . Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto di **componente aggiuntivo di Outlook** denominato **OutlookMailItemTaskPane**. Usare il modello di progetto per il **componente aggiuntivo di Outlook** . Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file di codice *ThisAddIn.cs* o *ThisAddIn.vb* e aggiunge il progetto **OutlookMailItemTaskPane** a **Esplora soluzioni**.
 
@@ -84,7 +84,7 @@ ms.locfileid: "67328352"
 4. Nella scheda **Controlli comuni** della **casella degli strumenti**trascinare un controllo **TextBox** nel controllo utente.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Progettare l'interfaccia utente della barra multifunzione
- Uno degli obiettivi di questo componente aggiuntivo VSTO è per concedere agli utenti un modo per nascondere o visualizzare il riquadro attività personalizzato dalla barra multifunzione di ogni messaggio di posta elettronica. Per fornire l'interfaccia utente, creare un'interfaccia utente della barra multifunzione personalizzata che visualizza un interruttore che gli utenti possono selezionare per visualizzare o nascondere il riquadro attività personalizzato.
+ Uno degli obiettivi di questo componente aggiuntivo VSTO è fornire agli utenti un modo per nascondere o visualizzare il riquadro attività personalizzato dalla barra multifunzione di ogni messaggio di posta elettronica. Per fornire l'interfaccia utente, creare un'interfaccia utente della barra multifunzione personalizzata che visualizza un interruttore che gli utenti possono selezionare per visualizzare o nascondere il riquadro attività personalizzato.
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>Per creare un'interfaccia utente della barra multifunzione personalizzata
 
@@ -106,17 +106,17 @@ ms.locfileid: "67328352"
 
 8. Nella finestra **Proprietà** impostare la proprietà **Label** su **Mostra riquadro attività**.
 
-## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Visualizzare l'interfaccia utente della barra multifunzione personalizzata con messaggi di posta elettronica
+## <a name="display-the-custom-ribbon-user-interface-with-email-messages"></a>Visualizzare l'interfaccia utente personalizzata della barra multifunzione con messaggi di posta elettronica
  Il riquadro attività personalizzato creato in questa procedura dettagliata è progettato per essere visualizzato solo nelle finestre di controllo che contengono i messaggi di posta elettronica. Quindi, impostare le proprietà per visualizzare l'interfaccia utente della barra multifunzione personalizzata solo con queste finestre.
 
-### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>Per visualizzare l'interfaccia utente della barra multifunzione personalizzata con messaggi di posta elettronica
+### <a name="to-display-the-custom-ribbon-ui-with-email-messages"></a>Per visualizzare l'interfaccia utente della barra multifunzione personalizzata con i messaggi di posta elettronica
 
 1. Nella finestra di progettazione della barra multifunzione fare clic sulla barra multifunzione **ManageTaskPaneRibbon** .
 
 2. Nella finestra **Proprietà** fare clic su sull'elenco a discesa accanto a **RibbonType**, quindi selezionare **Microsoft.Outlook.Mail.Compose** e **Microsoft.Outlook.Mail.Read**.
 
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Creare una classe per gestire le finestre di controllo e i riquadri attività personalizzati
- Esistono diversi casi in cui il componente aggiuntivo VSTO deve identificare riquadro attività personalizzato associato a un messaggio di posta elettronica specifico. ad esempio:
+ Esistono diversi casi in cui il componente aggiuntivo VSTO deve identificare il riquadro attività personalizzato associato a un messaggio di posta elettronica specifico. ad esempio:
 
 - Quando l'utente chiude un messaggio di posta elettronica. In questo caso, il componente aggiuntivo VSTO deve rimuovere il riquadro attività personalizzato corrispondente per assicurare che le risorse usate dal componente aggiuntivo VSTO vengano pulite correttamente.
 
@@ -124,7 +124,7 @@ ms.locfileid: "67328352"
 
 - Quando l'utente fa clic sull'interruttore nella barra multifunzione. In questo caso, il componente aggiuntivo VSTO deve nascondere o visualizzare il riquadro attività corrispondente.
 
-  Per abilitare il componente aggiuntivo VSTO tenere traccia del riquadro attività personalizzato associato a ogni messaggio di posta elettronica aperto, creare una classe personalizzata che esegue il wrapping di coppie <xref:Microsoft.Office.Interop.Outlook.Inspector> e <xref:Microsoft.Office.Tools.CustomTaskPane> oggetti. Questa classe crea un nuovo oggetto di riquadro attività personalizzato per ogni messaggio di posta elettronica, ed elimina il riquadro attività personalizzato quando il messaggio di posta elettronica corrispondente viene chiuso.
+  Per consentire al componente aggiuntivo VSTO di tenere traccia del riquadro attività personalizzato associato a ogni messaggio di posta elettronica aperto, creare una classe personalizzata che esegue il wrapping di coppie <xref:Microsoft.Office.Interop.Outlook.Inspector> di <xref:Microsoft.Office.Tools.CustomTaskPane> oggetti e. Questa classe crea un nuovo oggetto riquadro attività personalizzato per ogni messaggio di posta elettronica ed Elimina il riquadro attività personalizzato quando il messaggio di posta elettronica corrispondente viene chiuso.
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Per creare una classe per gestire le finestre di controllo e i riquadri attività personalizzati
 
@@ -150,7 +150,7 @@ ms.locfileid: "67328352"
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. Aggiungere il metodo seguente dopo il codice aggiunto nel passaggio precedente. Questo metodo è un gestore eventi per il <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> eventi del <xref:Microsoft.Office.Interop.Outlook.Inspector> oggetto che contiene il messaggio di posta elettronica corrente. Il gestore eventi libera risorse quando il messaggio di posta elettronica viene chiuso. Il gestore eventi rimuove anche il riquadro attività personalizzato corrente dalla raccolta `CustomTaskPanes` . Ciò consente di impedire più istanze del riquadro attività personalizzato quando viene aperto il messaggio di posta elettronica successivo.
+6. Aggiungere il metodo seguente dopo il codice aggiunto nel passaggio precedente. Questo metodo è un gestore eventi per l' <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> evento <xref:Microsoft.Office.Interop.Outlook.Inspector> dell'oggetto che contiene il messaggio di posta elettronica corrente. Il gestore eventi libera risorse quando il messaggio di posta elettronica viene chiuso. Il gestore eventi rimuove anche il riquadro attività personalizzato corrente dalla raccolta `CustomTaskPanes` . Ciò consente di evitare più istanze del riquadro attività personalizzato quando viene aperto il messaggio di posta elettronica successivo.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -161,7 +161,7 @@ ms.locfileid: "67328352"
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Inizializzare e pulire le risorse usate dal componente aggiuntivo
- Aggiungere il codice alla classe `ThisAddIn` per inizializzare il componente aggiuntivo VSTO quando viene caricato e per pulire le risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Inizializzare il componente aggiuntivo VSTO configurando un gestore eventi per il <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> eventi e passando tutti i messaggi di posta elettronica esistenti a questo gestore eventi. Quando il componente aggiuntivo VSTO viene scaricato, rimuovere il gestore eventi e pulire gli oggetti usati dal componente aggiuntivo VSTO.
+ Aggiungere il codice alla classe `ThisAddIn` per inizializzare il componente aggiuntivo VSTO quando viene caricato e per pulire le risorse usate dal componente aggiuntivo VSTO quando viene scaricato. Inizializzare il componente aggiuntivo VSTO configurando un gestore eventi per l' <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento e passando tutti i messaggi di posta elettronica esistenti a questo gestore eventi. Quando il componente aggiuntivo VSTO viene scaricato, rimuovere il gestore eventi e pulire gli oggetti usati dal componente aggiuntivo VSTO.
 
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Per inizializzare e pulire le risorse usate dal componente aggiuntivo VSTO
 
@@ -176,7 +176,7 @@ ms.locfileid: "67328352"
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]
 
-3. Sostituire il metodo `ThisAddIn_Startup` con il codice seguente. Questo codice collega un gestore eventi all'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> e passa tutti gli oggetti <xref:Microsoft.Office.Interop.Outlook.Inspector> esistenti al gestore eventi. Se l'utente carica il componente aggiuntivo VSTO quando Outlook è già in esecuzione, il componente aggiuntivo VSTO Usa queste informazioni per creare riquadri attività personalizzati per tutti i messaggi di posta elettronica che sono già aperti.
+3. Sostituire il metodo `ThisAddIn_Startup` con il codice seguente. Questo codice collega un gestore eventi all'evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> e passa tutti gli oggetti <xref:Microsoft.Office.Interop.Outlook.Inspector> esistenti al gestore eventi. Se l'utente carica il componente aggiuntivo VSTO dopo che Outlook è già in esecuzione, il componente aggiuntivo VSTO usa queste informazioni per creare riquadri attività personalizzati per tutti i messaggi di posta elettronica già aperti.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]
@@ -186,7 +186,7 @@ ms.locfileid: "67328352"
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. Aggiungere il gestore eventi <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> seguente alla classe `ThisAddIn` . Se una nuova <xref:Microsoft.Office.Interop.Outlook.Inspector> contiene un messaggio di posta elettronica, il metodo crea un'istanza di un nuovo `InspectorWrapper` oggetto per gestire la relazione tra il messaggio di posta elettronica e il riquadro attività corrispondente.
+5. Aggiungere il gestore eventi <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> seguente alla classe `ThisAddIn` . Se un nuovo <xref:Microsoft.Office.Interop.Outlook.Inspector> contiene un messaggio di posta elettronica, il metodo crea un'istanza di `InspectorWrapper` un nuovo oggetto per gestire la relazione tra il messaggio di posta elettronica e il riquadro attività corrispondente.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
@@ -222,18 +222,18 @@ ms.locfileid: "67328352"
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
 
-## <a name="test-the-project"></a>Il progetto di test
- Quando si avvia il debug del progetto, viene aperto Outlook e viene caricato il componente aggiuntivo VSTO. Il componente aggiuntivo VSTO Visualizza un'istanza univoca del riquadro attività personalizzato con ogni messaggio di posta elettronica che viene aperto. Creazione di molti messaggi di posta elettronica nuovi per testare il codice.
+## <a name="test-the-project"></a>Testare il progetto
+ Quando si avvia il debug del progetto, viene aperto Outlook e viene caricato il componente aggiuntivo VSTO. Il componente aggiuntivo VSTO Visualizza un'istanza univoca del riquadro attività personalizzato con ogni messaggio di posta elettronica aperto. Creare diversi nuovi messaggi di posta elettronica per testare il codice.
 
 ### <a name="to-test-the-vsto-add-in"></a>Per testare il componente aggiuntivo VSTO
 
 1. Premere **F5**.
 
-2. In Outlook fare clic su **New** per creare un nuovo messaggio di posta elettronica.
+2. In Outlook fare clic su **nuovo** per creare un nuovo messaggio di posta elettronica.
 
-3. Sulla barra multifunzione del messaggio di posta elettronica, fare clic sul **Add-Ins** scheda e quindi scegliere il **Mostra riquadro attività** pulsante.
+3. Sulla barra multifunzione del messaggio di posta elettronica fare clic sulla scheda **componenti** aggiuntivi, quindi fare clic sul pulsante **Mostra riquadro attività** .
 
-    Verificare che un riquadro attività con il titolo **il riquadro attività** viene visualizzato il messaggio di posta elettronica.
+    Verificare che un riquadro attività con il titolo **My task pane** sia visualizzato con il messaggio di posta elettronica.
 
 4. Nella casella di testo del riquadro attività digitare **First task pane** .
 
@@ -245,28 +245,28 @@ ms.locfileid: "67328352"
 
     Verificare che il riquadro attività si apra e che la casella di testo contenga ancora la stringa **First task pane**.
 
-7. In Outlook fare clic su **New** per creare un secondo messaggio di posta elettronica.
+7. In Outlook fare clic su **nuovo** per creare un secondo messaggio di posta elettronica.
 
-8. Sulla barra multifunzione del messaggio di posta elettronica, fare clic sul **Add-Ins** scheda e quindi scegliere il **Mostra riquadro attività** pulsante.
+8. Sulla barra multifunzione del messaggio di posta elettronica fare clic sulla scheda **componenti** aggiuntivi, quindi fare clic sul pulsante **Mostra riquadro attività** .
 
-    Verificare che un riquadro attività con il titolo **il riquadro attività** viene visualizzato con il messaggio di posta elettronica e la casella di testo in questo riquadro attività è vuota.
+    Verificare che un riquadro attività con il titolo **My task pane** sia visualizzato con il messaggio di posta elettronica e che la casella di testo in questo riquadro attività sia vuota.
 
 9. Nella casella di testo del riquadro attività digitare **Second task pane** .
 
-10. Modificare lo stato attivo per il primo messaggio di posta elettronica.
+10. Spostare lo stato attivo sul primo messaggio di posta elettronica.
 
-     Verificare che il riquadro attività associato a questo messaggio di posta elettronica visualizzi ancora **primo riquadro attività** nella casella di testo.
+     Verificare che il riquadro attività associato a questo messaggio di posta elettronica visualizzi ancora **First task pane** nella casella di testo.
 
-    Il componente aggiuntivo VSTO gestisce anche scenari più avanzati che è possibile provare. Ad esempio, è possibile testare il comportamento quando si visualizzano messaggi di posta elettronica usando il **elemento successivo** e **elemento precedente** pulsanti. È anche possibile testare il comportamento quando si scarica il componente aggiuntivo VSTO, aprire diversi messaggi di posta elettronica e quindi ricarica il componente aggiuntivo VSTO.
+    Il componente aggiuntivo VSTO gestisce anche scenari più avanzati che è possibile provare. Ad esempio, è possibile testare il comportamento quando si visualizzano i messaggi di posta elettronica usando i pulsanti **elemento successivo** ed **elemento precedente** . È anche possibile testare il comportamento quando si Scarica il componente aggiuntivo VSTO, si aprono più messaggi di posta elettronica e quindi si ricarica il componente aggiuntivo VSTO.
 
 ## <a name="next-steps"></a>Passaggi successivi
  Per altre informazioni su come creare i riquadri attività personalizzati, vedere gli argomenti seguenti:
 
-- Creare un riquadro attività personalizzato in un componente aggiuntivo VSTO per un'altra applicazione. Per altre informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
+- Creare un riquadro attività personalizzato in un componente aggiuntivo VSTO per un'applicazione diversa. Per ulteriori informazioni sulle applicazioni che supportano i riquadri attività personalizzati, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
-- Automatizzare un'applicazione di Microsoft Office usando un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).
+- Automatizzare un'applicazione di Microsoft Office usando un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Automatizzare un'applicazione da un riquadro](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)attività personalizzato.
 
-- Creare un pulsante della barra multifunzione in Excel da usare per visualizzare o nascondere un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
+- Creare un pulsante della barra multifunzione in Excel da usare per visualizzare o nascondere un riquadro attività personalizzato. Per altre informazioni, vedere [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)della barra multifunzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Riquadri attività personalizzati](../vsto/custom-task-panes.md)
@@ -274,5 +274,5 @@ ms.locfileid: "67328352"
 - [Procedura dettagliata: Automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [Procedura dettagliata: Sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
-- [Cenni preliminari sul modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
+- [Panoramica del modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)

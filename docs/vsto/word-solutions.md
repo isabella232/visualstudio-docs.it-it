@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c8837c1c95dc5f032a10773645f93a46ec29662
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 3cef71cc5f6c4e25d04e6045be7059d81c06b484
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551217"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254932"
 ---
 # <a name="word-solutions"></a>soluzioni Word
   Visual Studio fornisce modelli di progetto che è possibile usare per creare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per Microsoft Office Word. È possibile usare queste soluzioni per automatizzare Word, estenderne le funzionalità e personalizzarne l'interfaccia utente. Per altre informazioni sulle differenze tra le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO, vedere [Cenni preliminari &#40;sullo&#41;sviluppo di soluzioni Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
@@ -65,7 +65,7 @@ ms.locfileid: "69551217"
 ### <a name="word-customization-programming-model"></a>Modello di programmazione per la personalizzazione di Word
  Quando si crea un progetto a livello di documento per Word, Visual Studio genera una classe denominata `ThisDocument`, che costituisce il fondamento della soluzione. Questa classe rappresenta il documento associato alla soluzione e fornisce un punto di partenza per la scrittura del codice.
 
- Per altre informazioni sulla classe `ThisDocument` e su altre funzionalità che è possibile usare in un progetto a livello di documento, vedere programmare le personalizzazioni a [livello di documento](../vsto/programming-document-level-customizations.md).
+ Per altre informazioni sulla classe `ThisDocument` e su altre funzionalità che è possibile usare in un progetto a livello di documento, vedere [programmare le personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md).
 
 ## <a name="applevel"></a>Sviluppare componenti aggiuntivi VSTO per Word
  Un componente aggiuntivo VSTO per Microsoft Office Word è costituito da un assembly caricato da Word. L'assembly in genere estende Word personalizzando l'interfaccia utente e automatizzando Word. A differenza di una personalizzazione a livello di documento, associata a un documento specifico, la funzionalità implementata in un componente aggiuntivo VSTO non è limitata a un singolo documento.
@@ -107,7 +107,7 @@ ms.locfileid: "69551217"
 
 ### <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|DESCRIZIONE|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)|Fornisce una panoramica dei tipi principali forniti dal modello a oggetti di Word.|
 |[Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)|Fornisce informazioni sugli oggetti estesi (forniti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) che è possibile usare nelle soluzioni Word.|

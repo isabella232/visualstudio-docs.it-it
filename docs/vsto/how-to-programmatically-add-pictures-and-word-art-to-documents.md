@@ -1,5 +1,5 @@
 ---
-title: Aggiungere immagini e WordArt ai documenti a livello di codice
+title: Aggiungere immagini e Word Art ai documenti a livello di codice
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63b1a72a5b332f27b6bd38d25c16ff3a5981b4fa
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177760"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253814"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: A livello di codice aggiungere le immagini e WordArt ai documenti
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedura: Aggiungere a livello di codice immagini e Word Art ai documenti
   È possibile aggiungere immagini e oggetti disegno ai documenti in fase di progettazione o in fase di esecuzione. WordArt consente di aggiungere testo decorativo ai documenti di Microsoft Office Word. Questi effetti di testo speciali sono oggetti disegno che è possibile personalizzare e inserire nel documento.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "66177760"
 
 1. Posizionare il cursore nel punto in cui si vuole inserire l'immagine nel documento.
 
-2. Scegliere il **Inserisci** della barra multifunzione.
+2. Fare clic sulla scheda **Inserisci** della barra multifunzione.
 
-3. Nel **illustrazioni** gruppo, fare clic su **immagine**.
+3. Nel gruppo **illustrazioni** fare clic su **immagine**.
 
-4. Nel **Inserisci immagine** passare all'immagine da inserire nella finestra di dialogo e fare clic su **Inserisci**.
+4. Nella finestra di dialogo **Inserisci immagine** passare all'immagine che si desidera inserire, quindi fare clic su **Inserisci**.
 
      L'immagine verrà aggiunta al documento in corrispondenza della posizione corrente del cursore.
 
-## <a name="add-a-picture-at-runtime"></a>Aggiungere un'immagine in fase di esecuzione
+## <a name="add-a-picture-at-run-time"></a>Aggiungere un'immagine in fase di esecuzione
  È possibile inserire un'immagine in un documento in corrispondenza della posizione corrente del cursore.
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>Per aggiungere un'immagine in corrispondenza della posizione del cursore
@@ -53,22 +53,22 @@ ms.locfileid: "66177760"
      [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
      [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
 
-## <a name="add-wordart-at-design-time"></a>Aggiungere un oggetto WordArt in fase di progettazione
+## <a name="add-wordart-at-design-time"></a>Aggiungi WordArt in fase di progettazione
  Se si sviluppa una personalizzazione a livello di documento, è possibile aggiungere un oggetto WordArt al documento in fase di progettazione.
 
 ### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>Per aggiungere un oggetto WordArt a un documento di Word in fase di progettazione
 
 1. Posizionare il cursore nel punto in cui si vuole inserire l'oggetto WordArt nel documento.
 
-2. Scegliere il **Inserisci** della barra multifunzione.
+2. Fare clic sulla scheda **Inserisci** della barra multifunzione.
 
-3. Nel **testo** gruppo, fare clic su **WordArt**e quindi selezionare uno stile WordArt.
+3. Nel gruppo **testo** fare clic su **WordArt**, quindi selezionare uno stile WordArt.
 
-4. Aggiungere il testo che si desidera visualizzare nel documento per il **Modifica testo WordArt** finestra di dialogo e fare clic su **OK**.
+4. Aggiungere il testo che si desidera visualizzare nel documento alla finestra di dialogo **modifica testo WordArt** e fare clic su **OK**.
 
      Il testo verrà aggiunto al documento con lo stile WordArt selezionato applicato.
 
-## <a name="add-wordart-at-runtime"></a>Aggiungere un oggetto WordArt in fase di esecuzione
+## <a name="add-wordart-at-run-time"></a>Aggiungi WordArt in fase di esecuzione
  È possibile inserire un oggetto WordArt in un documento in corrispondenza della posizione corrente del cursore. La procedura è diversa per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Per aggiungere un oggetto WordArt in corrispondenza della posizione del cursore in una personalizzazione a livello di documento
@@ -100,8 +100,8 @@ ms.locfileid: "66177760"
 - Un'immagine denominata *SamplePicture. jpg* deve esistere nell'unità C.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: A livello di codice aprire documenti esistenti](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Procedura: A livello di programmazione inserire testo nei documenti di Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Procedura: A livello di programmazione ripristinare le selezioni dopo le ricerche](../vsto/how-to-programmatically-restore-selections-after-searches.md)
-- [Procedura: Salvare i documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)
+- [Procedura: Aprire documenti esistenti a livello di codice](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Procedura: Inserire testo in documenti di Word a livello di codice](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Procedura: Ripristinare le selezioni dopo le ricerche a livello di codice](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Procedura: Salvare documenti a livello di codice](../vsto/how-to-programmatically-save-documents.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

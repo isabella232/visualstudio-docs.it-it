@@ -1,5 +1,5 @@
 ---
-title: Variante di dimensioni di trama di metà trimestre | Microsoft Docs
+title: Variante delle dimensioni della trama a metà trimestre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 620300d1727adc41d5655bd33dde87ad592bba1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895625"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252980"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
 Riduce le dimensioni della trama per trame che non sono destinazioni di rendering.

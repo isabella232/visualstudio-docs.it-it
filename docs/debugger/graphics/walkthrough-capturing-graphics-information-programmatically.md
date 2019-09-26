@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 187328e4ef4d1de0c865120400f84e65385160fc
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848530"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252899"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice
 La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente di acquisire a livello di codice informazioni grafiche da un'app Direct3D.
@@ -37,7 +37,7 @@ Questa sezione illustra l'esecuzione delle attività seguenti:
 - Acquisizione di informazioni grafiche
 
 > [!NOTE]
-> Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per Visual Studio per [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per fornire funzionalità di acquisizione.
+> Le implementazioni precedenti di acquisizione a livello di codice si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basavano su Remote Tools per Visual Studio per per fornire funzionalità di acquisizione.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparazione dell'app per usare l'acquisizione a livello di codice
 Per usare l'acquisizione a livello di codice nell'app, deve includere le intestazioni necessarie. Queste intestazioni fanno parte di Windows 10 SDK.
@@ -54,7 +54,7 @@ Per usare l'acquisizione a livello di codice nell'app, deve includere le intesta
     ```
 
     > [!IMPORTANT]
-    > Non includere il file di intestazione vsgcapture.h, che supporta l'acquisizione a livello di codice in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app Windows 10. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo l'intestazione d3d11_2.h è inclusa, il compilatore genera un avviso. Se viene inclusa vsgcapture. h prima d3d11_2.h, l'app non verrà avviato.
+    > Non includere il file di intestazione vsgcapture.h, che supporta l'acquisizione a livello di codice in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app Windows 10. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo l'inclusione dell'intestazione d3d11_2. h, il compilatore genera un avviso. Se vsgcapture. h è incluso prima di d3d11_2. h, l'app non verrà avviata.
 
     > [!NOTE]
     > Se nel computer è installata la versione di DirectX SDK del giugno 2010 e il percorso di inclusione del progetto contiene `%DXSDK_DIR%includex86`, spostarlo alla fine del percorso di inclusione. Eseguire la stessa operazione per il percorso della libreria.
@@ -63,7 +63,7 @@ Per usare l'acquisizione a livello di codice nell'app, deve includere le intesta
 Prima di poter acquisire informazioni grafiche da DirectX 11.2, è necessario ottenere l'interfaccia di debug DXGI.
 
 > [!IMPORTANT]
-> Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app nella diagnostica della grafica (ALT+F5 in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) o sotto la [strumento di acquisizione da riga di comando](command-line-capture-tool.md).
+> Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app in diagnostica grafica [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)](ALT + F5 in) o nello [strumento di acquisizione da riga di comando](command-line-capture-tool.md).
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Per ottenere l'interfaccia IDXGraphicsAnalysis
 
@@ -74,7 +74,7 @@ Prima di poter acquisire informazioni grafiche da DirectX 11.2, è necessario ot
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  Assicurarsi di controllare la `HRESULT` restituito da [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) per assicurarsi di ottenere un'interfaccia valida prima di usarla:
+  Assicurarsi di controllare l'oggetto `HRESULT` restituito da [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) per assicurarsi di ottenere un'interfaccia valida prima di usarla:
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -107,12 +107,12 @@ Ora che si dispone di un'interfaccia `IDXGraphicsAnalysis` valida, è possibile 
     ...
     ```
 
-- Dopo la chiamata a `EndCapture`, rilasciare l'oggetto graphics.
+- Dopo la chiamata a `EndCapture`, rilasciare l'oggetto Graphics.
 
 ## <a name="next-steps"></a>Passaggi successivi
 In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche a livello di codice. Come passaggio successivo, prendere in considerare questa opzione:
 
-- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di diagnostica grafica. Visualizzare [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
+- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di diagnostica grafica. Vedere [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: Acquisizione di informazioni grafiche](walkthrough-capturing-graphics-information.md)

@@ -1,5 +1,5 @@
 ---
-title: Aggiungere controlli al documento in fase di esecuzione nel componente aggiuntivo VSTO
+title: Aggiungere controlli al documento in fase di esecuzione in un componente aggiuntivo VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328395"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254167"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO
-  È possibile aggiungere controlli a qualsiasi documento di Microsoft Office Word aperto usando un componente aggiuntivo VSTO. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti di aggiungere un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.
+# <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO
+  È possibile aggiungere controlli a qualsiasi documento Microsoft Office Word aperto usando un componente aggiuntivo VSTO. In questa procedura dettagliata viene illustrato come utilizzare la barra multifunzione per consentire <xref:Microsoft.Office.Tools.Word.Controls.Button> agli utenti <xref:Microsoft.Office.Tools.Word.RichTextContentControl> di aggiungere un oggetto o a un documento.
 
- **Si applica a:** Le informazioni contenute in questo argomento si applicano ai progetti di componente aggiuntivo VSTO per Word 2010. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).
+ **Si applica a:** Le informazioni contenute in questo argomento sono valide per i progetti di componente aggiuntivo VSTO per Word 2010. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
  Questa procedura dettagliata illustra le attività seguenti:
 
@@ -33,7 +33,7 @@ ms.locfileid: "67328395"
 
 - Creazione di un'interfaccia utente per l'aggiunta di controlli al documento.
 
-- Aggiunta di controlli al documento in fase di esecuzione.
+- Aggiunta di controlli ai documenti in fase di esecuzione.
 
 - Rimozione di controlli dal documento.
 
@@ -46,12 +46,12 @@ ms.locfileid: "67328395"
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-## <a name="create-a-new-word-add-in-project"></a>Creare un nuovo progetto di componente aggiuntivo di Word
+## <a name="create-a-new-word-add-in-project"></a>Creare un nuovo progetto di componente aggiuntivo per Word
  Creare innanzitutto un progetto di componente aggiuntivo VSTO per Word.
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>Per creare un nuovo progetto di componente aggiuntivo VSTO per Word.
 
-1. Creare un progetto di componente aggiuntivo VSTO per Word con il nome **WordDynamicControls**. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto di componente aggiuntivo VSTO per Word con il nome **WordDynamicControls**. Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
 
 2. Aggiungere un riferimento all'assembly **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** . Tale riferimento è necessario per aggiungere un controllo Windows Form a livello di codice al documento più avanti in questa procedura dettagliata.
 
@@ -78,14 +78,14 @@ ms.locfileid: "67328395"
 
 8. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-   | Proprietà | Valore |
+   | Proprietà | Value |
    |-----------|-----------------------|
    | **Name** | **addButtonCheckBox** |
    | **Etichetta** | **Pulsante Aggiungi** |
 
 9. Aggiungere una seconda casella di controllo a **group1**e quindi modificare le proprietà seguenti.
 
-   | Proprietà | Valore |
+   | Proprietà | Value |
    |-----------|---------------------------|
    | **Name** | **addRichTextCheckBox** |
    | **Etichetta** | **Add Rich Text Control** |
@@ -101,13 +101,13 @@ ms.locfileid: "67328395"
     Più avanti in questa procedura dettagliata si aggiungerà codice a questi gestori eventi per aggiungere e rimuovere i controlli nel documento attivo.
 
 ## <a name="add-and-remove-controls-on-the-active-document"></a>Aggiungere e rimuovere controlli nel documento attivo
- Nel codice del componente aggiuntivo VSTO è necessario convertire il documento attivo in un <xref:Microsoft.Office.Tools.Word.Document>*elemento host* prima di poter aggiungere un controllo. Nelle soluzioni Office si possono aggiungere controlli gestiti solo agli elementi host, che agiscono da contenitori per i controlli. Nei progetti di componente aggiuntivo VSTO, è possano creare elementi host in fase di esecuzione usando il `GetVstoObject` (metodo).
+ Nel codice del componente aggiuntivo VSTO è necessario convertire il documento attivo in un <xref:Microsoft.Office.Tools.Word.Document>*elemento host* prima di poter aggiungere un controllo. Nelle soluzioni Office si possono aggiungere controlli gestiti solo agli elementi host, che agiscono da contenitori per i controlli. Nei progetti di componente aggiuntivo VSTO è possibile creare elementi host in fase di esecuzione usando il `GetVstoObject` metodo.
 
  Aggiungere metodi alla classe `ThisAddIn` che possono essere chiamati per aggiungere o rimuovere un oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> o <xref:Microsoft.Office.Tools.Word.RichTextContentControl> nel documento attivo. Più avanti in questa procedura dettagliata si chiameranno tali metodi dai gestori eventi <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> delle caselle di controllo sulla barra multifunzione.
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>Per aggiungere e rimuovere controlli nel documento attivo
 
-1. Nelle **Esplora soluzioni**, fare doppio clic su *ThisAddIn.cs* oppure *ThisAddIn. vb* per aprire il file nell'Editor del codice.
+1. In **Esplora soluzioni**fare doppio clic su *ThisAddIn.cs* o *ThisAddIn. vb* per aprire il file nell'editor di codice.
 
 2. Aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice dichiara gli oggetti <xref:Microsoft.Office.Tools.Word.Controls.Button> e <xref:Microsoft.Office.Tools.Word.RichTextContentControl> che rappresentano i controlli che verranno aggiunti al documento.
 
@@ -129,7 +129,7 @@ ms.locfileid: "67328395"
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>Per rimuovere il controllo Button quando il documento viene salvato
 
-1. Nel *ThisAddIn.cs* oppure *ThisAddIn. vb* file di codice, aggiungere il metodo seguente al `ThisAddIn` classe. Questo metodo è un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Se al documento salvato è associato un elemento host <xref:Microsoft.Office.Tools.Word.Document> , il gestore eventi ottiene l'elemento host e rimuove il controllo <xref:Microsoft.Office.Tools.Word.Controls.Button> , se esistente.
+1. Nel file di codice *ThisAddIn.cs* o *ThisAddIn. vb* aggiungere il `ThisAddIn` metodo seguente alla classe. Questo metodo è un gestore eventi per l'evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> . Se al documento salvato è associato un elemento host <xref:Microsoft.Office.Tools.Word.Document> , il gestore eventi ottiene l'elemento host e rimuove il controllo <xref:Microsoft.Office.Tools.Word.Controls.Button> , se esistente.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]
@@ -138,12 +138,12 @@ ms.locfileid: "67328395"
 
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#5)]
 
-## <a name="add-and-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Aggiungere e rimuovere controlli quando l'utente sceglie le caselle di controllo della barra multifunzione
- Modificare infine la <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> gestori delle caselle di controllo aggiunto alla barra multifunzione per aggiungere o rimuovere controlli nel documento.
+## <a name="add-and-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Aggiungere e rimuovere controlli quando l'utente fa clic sulle caselle di controllo sulla barra multifunzione
+ Infine, modificare i <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> gestori eventi delle caselle di controllo aggiunte alla barra multifunzione per aggiungere o rimuovere controlli nel documento.
 
-### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Per aggiungere o rimuovere controlli quando l'utente fa clic le caselle di controllo della barra multifunzione
+### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Per aggiungere o rimuovere controlli quando l'utente fa clic sulle caselle di controllo sulla barra multifunzione
 
-1. Nel *MyRibbon.cs* oppure *MyRibbon. vb* file di codice, sostituire il generato `addButtonCheckBox_Click` e `addRichTextCheckBox_Click` gestori di eventi con il codice seguente. Questo codice ridefinisce i gestori eventi per chiamare i metodi `ToggleButtonOnDocument` e `ToggleRichTextControlOnDocument` che sono stati aggiunti alla classe `ThisAddIn` più indietro in questa procedura dettagliata.
+1. Nel file di codice *MyRibbon.cs* o *Ribbon. vb* sostituire i gestori eventi e `addButtonCheckBox_Click` `addRichTextCheckBox_Click` generati con il codice seguente. Questo codice ridefinisce i gestori eventi per chiamare i metodi `ToggleButtonOnDocument` e `ToggleRichTextControlOnDocument` che sono stati aggiunti alla classe `ThisAddIn` più indietro in questa procedura dettagliata.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]
@@ -155,7 +155,7 @@ ms.locfileid: "67328395"
 
 1. Premere **F5** per eseguire il progetto.
 
-2. Nel documento attivo, premere **invio** più volte per aggiungere nuovi svuotare i paragrafi del documento.
+2. Nel documento attivo premere **invio** più volte per aggiungere nuovi paragrafi vuoti al documento.
 
 3. Selezionare il primo paragrafo.
 
@@ -178,14 +178,14 @@ ms.locfileid: "67328395"
 ## <a name="next-steps"></a>Passaggi successivi
  Per altre informazioni sui controlli nei componenti aggiuntivi VSTO, vedere questi argomenti:
 
-- Per un esempio che illustra come aggiungere molti altri tipi di controlli a un documento in fase di esecuzione e ricreare i controlli quando il documento viene riaperto, vedere il Word componente aggiuntivo controlli di esempio dinamici all'indirizzo [esempi di sviluppo per Office e procedure dettagliate](../vsto/office-development-samples-and-walkthroughs.md).
+- Per un esempio in cui viene illustrato come aggiungere molti altri tipi di controlli a un documento in fase di esecuzione e ricreare i controlli quando il documento viene riaperto, vedere l'esempio relativo ai controlli dinamici del componente aggiuntivo per Word in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
 
-- Per una procedura dettagliata che illustra come aggiungere controlli a un foglio di lavoro usando un componente aggiuntivo VSTO per Excel, vedere [procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
+- Per una procedura dettagliata che illustra come aggiungere controlli a un foglio di lavoro usando un componente aggiuntivo VSTO per Excel, vedere [procedura dettagliata: Aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)di componente aggiuntivo VSTO.
 
 ## <a name="see-also"></a>Vedere anche
 - [Soluzioni Word](../vsto/word-solutions.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Rendere persistenti i controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
-- [Procedura: Aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Mantieni controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
+- [Procedura: Aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [Estendere i documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

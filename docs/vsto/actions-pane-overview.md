@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926676"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255692"
 ---
 # <a name="actions-pane-overview"></a>Panoramica del riquadro azioni
   Un riquadro azioni è un riquadro attività personalizzabile di **azioni documento** associato a una specifica Microsoft Office documento di Word o Microsoft Office cartella di lavoro di Excel. Il riquadro azioni è ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività incorporati, ad esempio il riquadro attività **origine XML** in Excel o il riquadro attività **stili e formattazione** in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.
@@ -40,7 +40,7 @@ ms.locfileid: "68926676"
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- Il riquadro azioni diventa visibile in fase di esecuzione non appena si aggiunge un controllo in modo esplicito. Dopo che il riquadro azioni viene visualizzato, è possibile aggiungere o rimuovere dinamicamente controlli in risposta alle azioni dell'utente. In genere, è necessario aggiungere il codice per visualizzare il riquadro azioni nel gestore eventi `Startup` di `ThisDocument` o `ThisWorkbook` in modo che il riquadro azioni sia visibile quando l'utente apre per la prima volta il documento. Potrebbe tuttavia essere necessario visualizzare il riquadro azioni solo in risposta all'azione di un utente nel documento. Ad esempio, è possibile aggiungere il codice all'evento `Click` di un controllo nel documento.
+ Il riquadro azioni diventa visibile in fase di esecuzione non appena vi si aggiunge in modo esplicito un controllo. Dopo che il riquadro azioni viene visualizzato, è possibile aggiungere o rimuovere dinamicamente controlli in risposta alle azioni dell'utente. In genere, è necessario aggiungere il codice per visualizzare il riquadro azioni nel gestore eventi `Startup` di `ThisDocument` o `ThisWorkbook` in modo che il riquadro azioni sia visibile quando l'utente apre per la prima volta il documento. Potrebbe tuttavia essere necessario visualizzare il riquadro azioni solo in risposta all'azione di un utente nel documento. Ad esempio, è possibile aggiungere il codice all'evento `Click` di un controllo nel documento.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Aggiungere più controlli al riquadro azioni
  Quando si aggiungono più controlli al riquadro azioni, è necessario raggruppare i controlli in un controllo utente e quindi aggiungere il controllo utente alla <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà. Questo processo include i due passaggi seguenti:
@@ -114,7 +114,7 @@ ms.locfileid: "68926676"
 |FromLeft|Sovrapposizione dal lato sinistro del riquadro azioni.|
 |FromRight|Sovrapposizione dal lato destro del riquadro azioni.|
 |FromTop|Sovrapposizione dall'alto del riquadro azioni.|
-|Nessuna|Nessun ordine di sovrapposizione definito. L'ordine è controllato dallo sviluppatore.|
+|nessuno|Nessun ordine di sovrapposizione definito. L'ordine è controllato dallo sviluppatore.|
 
  Il codice seguente imposta la proprietà <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> per ordinare i controlli utente dall'alto del riquadro azioni.
 
@@ -122,7 +122,7 @@ ms.locfileid: "68926676"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>Ancoraggi (controlli)
- Se l'utente ridimensiona il riquadro azioni in fase di esecuzione, i controlli possono essere ridimensionati con il riquadro azioni. È possibile usare la proprietà <xref:System.Windows.Forms.Control.Anchor%2A> di un controllo Windows Form per ancorare i controlli al riquadro azioni. È anche possibile ancorare i controlli Windows Form nel controllo utente allo stesso modo. Per altre informazioni, vedere [Procedura: Ancoraggio di controlli in](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)Windows Forms.
+ Se l'utente ridimensiona il riquadro azioni in fase di esecuzione, i controlli possono essere ridimensionati insieme al riquadro azioni. È possibile usare la proprietà <xref:System.Windows.Forms.Control.Anchor%2A> di un controllo Windows Form per ancorare i controlli al riquadro azioni. È anche possibile ancorare i controlli Windows Form nel controllo utente allo stesso modo. Per altre informazioni, vedere [Procedura: Ancoraggio di controlli in](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)Windows Forms.
 
 ## <a name="resize-the-actions-pane"></a>Ridimensionare il riquadro azioni
  Non è possibile modificare direttamente le dimensioni di un oggetto <xref:Microsoft.Office.Tools.ActionsPane> perché <xref:Microsoft.Office.Tools.ActionsPane> è incorporato nel riquadro attività. È tuttavia modificare a livello di codice la larghezza del riquadro attività impostando la proprietà <xref:Microsoft.Office.Core.CommandBar.Width%2A> dell'oggetto <xref:Microsoft.Office.Core.CommandBar> che rappresenta il riquadro attività. È possibile modificare l'altezza del riquadro attività se è ancorato in orizzontale o se è mobile.

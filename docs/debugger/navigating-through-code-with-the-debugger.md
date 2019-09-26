@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70222649"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Esplorare il codice con il debugger di Visual Studio
@@ -108,7 +108,7 @@ I punti di interruzione in Visual Studio forniscono un'ampia gamma di funzionali
 
    Finestra di ![dialogo nuovo] punto di interruzione della funzione (../debugger/media/dbg_execution_newbreakpoint.png "Nuovo") punto di interruzione della funzione
 
-1. Selezionare **OK**.
+1. Scegliere **OK**.
 
 Se la funzione è in overload o in più di uno spazio dei nomi, è possibile scegliere quella desiderata nella finestra punti di **interruzione** .
 

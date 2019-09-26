@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676726"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253047"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usare Visual Studio Tools per Unity
 
@@ -194,14 +194,14 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
    ![Impostare il framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
-3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Dal momento che le DLL vengono collegate al runtime, devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
+3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Poiché le dll sono collegate in fase di esecuzione, le dll devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
 
    - Modificare le impostazioni di compilazione del progetto di DLL in modo da includere un'attività di post-compilazione che copi la DLL di output e i file PDB dalla cartella di output alla cartella **Assets** (Asset) del progetto Unity.
 
    - Modificare le impostazioni di compilazione del progetto di DLL in modo da impostare come cartella di output la cartella **Assets** (Asset) del progetto Unity. La DLL e i file PDB verranno entrambi inseriti nella cartella **Assets** (Asset).
 
    I file PDB sono necessari per il debug perché contengono i simboli di debug della DLL e consentono di eseguire il mapping del codice della DLL al formato del relativo codice sorgente. Se si specifica come destinazione il runtime legacy, Visual Studio Tools per Unity userà le informazioni della DLL e dei file PDB per creare un file DLL.MDB, che corrisponde al formato dei simboli di debug usato dal motore di scripting legacy di Unity. Se si specifica come destinazione il nuovo runtime e si usa PDB portatile, Visual Studio Tools per Unity non tenterà di eseguire alcuna conversione dei simboli, poiché il nuovo runtime di Unity è in grado di usare in modo nativo i file PDB portatili.
-   
+
    Altre informazioni sulla generazione dei PDB sono disponibili [qui](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Se si specifica come destinazione il nuovo runtime, assicurarsi che "Informazioni di debug" sia impostato su "Portatile" per generare correttamente il file PDB portatile. Se si specifica come destinazione il runtime legacy, è necessario usare "Completo".
 
 4. Eseguire il debug del codice. È ora possibile eseguire il debug del codice sorgente della DLL con il codice sorgente del progetto Unity e usare tutte le funzionalità di debug a cui si è abituati, ad esempio punti di interruzione ed esecuzione del codice un'istruzione alla volta.

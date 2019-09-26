@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864672"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273402"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -70,10 +70,6 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
 - Windows Forms log, se esistono
 
-> [!NOTE]
-> I file di log vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report sul problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" (vedere la schermata inclusa in questa nota). I log raccolti vengono archiviati nella cartella% Temp% e vengono puliti regolarmente e dopo ogni caricamento. Se non si desidera includere un log nel report del problema, eliminare il file dalla cartella% Temp% prima di inviare il report.  
-  > ![Segnala un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
-
 - Uno screenshot, se si sceglie di includerlo
   
 - Registrazione dei dati, se si sceglie di includere una registrazione, che comprende:
@@ -84,8 +80,10 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 
   - File dump
 
-  > [!NOTE]
-  > È possibile eliminare i dati di registrazione che non si vogliono inviare prima di inviare la segnalazione.
+> [!NOTE]
+> I file di log, le schermate e i dati di registrazione vengono inviati a Microsoft solo quando si fornisce l'autorizzazione inviando il report sul problema con cui sono inclusi. È possibile visualizzare i file inclusi nel passaggio "Riepilogo" della finestra "segnala un problema" (vedere la schermata inclusa in questa nota). I log e i file raccolti vengono archiviati nella cartella% Temp% e vengono puliti regolarmente e dopo ogni caricamento. Se non si desidera includere un log nel report del problema, eliminare il file dalla cartella% Temp% prima di inviare il report.  
+  > ![Segnala un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
+ 
 
 ## <a name="see-also"></a>Vedere anche
 
