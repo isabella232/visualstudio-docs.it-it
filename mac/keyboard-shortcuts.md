@@ -5,16 +5,16 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211316"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273328"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Tasti di scelta rapida predefiniti in Visual Studio per Mac
 
-Per informazioni sull'accessibilità dalla tastiera, vedere [Procedura: Usare la navigazione tramite tastiera](~/accessibility.md#how-to-use-keyboard-navigation).
+Per informazioni sull'accessibilità dalla tastiera, vedere [Procedura: Usare la navigazione tramite tastiera](~/accessibility-keyboard.md).
 
 Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la scelta rapida da tastiera appropriata. Questo documento elenca i tasti di scelta rapida predefiniti per lo schema di associazione chiave **Visual Studio per Mac** . Per altre informazioni su come modificare lo schema dei tasti di scelta rapida, vedere [Personalizzazione dell'IDE](~/customizing-the-ide.md#key-bindings). È anche possibile personalizzare i tasti di scelta rapida per un comando usando la voce di menu **Visual Studio per Mac** > **Preferenze** e scegliendo **Ambiente**  >  **Tasti di scelta rapida** nella finestra **Preferenze**.
 

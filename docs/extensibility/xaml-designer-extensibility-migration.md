@@ -9,12 +9,12 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
-ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
+ms.openlocfilehash: 9f5085c7a655f186c3c8a4a6eecada8b440650cd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69024552"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273213"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migrazione di estendibilità della finestra di progettazione XAML
 
@@ -26,7 +26,7 @@ L' **isolamento della superficie** viene usato da UWP designer. Viene usato anch
 
 ![estendibilità-migrazione-architettura](media/xaml-designer-extensibility-migration-architecture.png)
 
-A causa di questa transizione di architettura, le estensioni di terze parti non vengono più caricate nello stesso processo delle librerie di controlli di terze parti. Le estensioni non possono più avere dipendenze dirette da librerie di controlli o accedere direttamente agli oggetti runtime. Le estensioni scritte in precedenza per l'architettura di isolamento della finestra di progettazione tramite l'API *Microsoft. Windows. Extensibility. dll* devono essere migrate a un nuovo approccio per lavorare con l'architettura di isolamento della superficie. In pratica, è necessario compilare un'estensione esistente a fronte di nuovi assembly dell'API di estendibilità. L'accesso ai tipi di controllo di runtime tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) o istanze di runtime deve essere sostituito o rimosso perché le librerie di controlli sono ora caricate in un processo diverso.
+A causa di questa transizione di architettura, le estensioni di terze parti non vengono più caricate nello stesso processo delle librerie di controlli di terze parti. Le estensioni non possono più avere dipendenze dirette da librerie di controlli o accedere direttamente agli oggetti runtime. Le estensioni scritte in precedenza per l'architettura di isolamento della finestra di progettazione tramite l'API *Microsoft. Windows. Extensibility. dll* devono essere migrate a un nuovo approccio per lavorare con l'architettura di isolamento della superficie. In pratica, è necessario compilare un'estensione esistente a fronte di nuovi assembly dell'API di estendibilità. L'accesso ai tipi di controllo della fase di esecuzione tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) o istanze di run-time deve essere sostituito o rimosso perché le librerie di controlli sono ora caricate in un processo diverso.
 
 ## <a name="new-extensibility-api-assemblies"></a>Nuovi assembly dell'API di estendibilità
 
@@ -43,7 +43,7 @@ Anziché utilizzare l'estensione di file *. Design. dll* , le nuove estensioni d
 
 Mentre le librerie di controllo di terze parti vengono compilate per il runtime di destinazione effettivo (.NET Core o UWP), l'estensione *. DesignTools. dll* deve essere sempre compilata come assembly .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Separare le tabelle degli attributi dai tipi di runtime
+## <a name="decouple-attribute-tables-from-run-time-types"></a>Separare le tabelle degli attributi dai tipi di runtime
 
 Il modello di estendibilità dell'isolamento della superficie non consente alle estensioni di dipendere da librerie di controlli effettive e, pertanto, le estensioni non possono fare riferimento ai tipi dalla libreria di controlli. Ad esempio, *MyLibrary. DesignTools. dll* non deve avere una dipendenza da *MyLibrary. dll*.
 
@@ -103,8 +103,9 @@ Attualmente sono supportati i provider di funzionalità seguenti:
 * `ContextMenuProvider`
 * `ParentAdapter`
 * `PlacementAdapter`
+* `DesignModeValueProvider`è supportato con la limitazione che `TranslatePropertyValue` verrà chiamata tramite `InvalidateProperty` o quando viene modificata nella finestra di progettazione. Non verrà chiamato quando viene modificato nel codice di run-time.
 
-Poiché i provider di funzionalità sono ora caricati in un processo diverso dalle librerie di controlli e dal codice runtime effettivi, non sono più in grado di accedere direttamente agli oggetti runtime. Al contrario, tutte queste interazioni devono essere convertite in modo da utilizzare le API basate su modello corrispondenti. L'API del modello è stata aggiornata e l'accesso <xref:System.Type> a <xref:System.Object> o non è più disponibile o è stato sostituito con `TypeIdentifier` e `TypeDefinition`.
+Poiché i provider di funzionalità sono ora caricati in un processo diverso dal codice di runtime effettivo e dalle librerie di controlli, non sono più in grado di accedere direttamente agli oggetti runtime. Al contrario, tutte queste interazioni devono essere convertite in modo da utilizzare le API basate su modello corrispondenti. L'API del modello è stata aggiornata e l'accesso <xref:System.Type> a <xref:System.Object> o non è più disponibile o è stato sostituito con `TypeIdentifier` e `TypeDefinition`.
 
 `TypeIdentifier`rappresenta una stringa senza il nome di un assembly che identifica un tipo. Un `TypeIdenfifier` oggetto può essere risolto in `TypeDefinition` un oggetto per eseguire una query su informazioni aggiuntive sul tipo. `TypeDefinition`le istanze non possono essere memorizzate nella cache nel codice di estensione.
 
@@ -133,12 +134,15 @@ API rimosse dal set di API di estendibilità dell'isolamento della superficie:
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
+* `AssemblyReferences.GetTypes(Type baseType)`
 
 API che usano `TypeIdentifier` invece di <xref:System.Type>:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
 * `ModelFactory.CreateStaticMemberItem(EditingContext context, Type type, string memberName)`
+* `ModelFactory.ResolveType(EditingContext context, Type)`modificato in`MetadataFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
+* `ModelService.ResolveType(TypeIdentifier typeIdentifier)`modificato in`MetadataService.ResolveType(TypeIdentifier typeIdentifier)`
 * `ViewItem.ItemType`
 * `ModelEvent.EventType`
 * `ModelEvent.IsEventOfType(Type type)`
@@ -157,7 +161,6 @@ Le API che `TypeIdentifier` usano invece <xref:System.Type> di e non supportano 
 
 API che usano `TypeDefinition` invece di <xref:System.Type>:
 
-* `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
 * `ValueTranslationService.HasValueTranslation(Type itemType, PropertyIdentifier identifier)`
 * `ValueTranslationService.TranslatePropertyValue(Type itemType, ModelItem item, PropertyIdentifier identifier, object value)`
@@ -172,15 +175,12 @@ API che usano `TypeDefinition` invece di <xref:System.Type>:
 * `FeatureManager.GetCustomAttributes(Type type, Type attributeType)`
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
+* `PropertyEntry.PropertyType`
 
-API che usano `ModelItem` invece di <xref:System.Object>:
+API che usano `AssemblyIdentifier` invece di `<xref:System.Reflection.AssemblyName?displayProperty=fullName>`:
 
-* `ModelItemCollection.Insert(int index, object value)`
-* `ModelItemCollection.Remove(object value)`
-* `ModelItemDictionary.Add(object key, object value)`
-* `ModelItemDictionary.ContainsKey(object key)`
-* `ModelItemDictionary.Remove(object key)`
-* `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
+* `AssemblyReferences.ReferencedAssemblies`
+* `AssemblyReferences.LocalAssemblyName`modificato in`AssemblyReferences.LocalAssemblyIdentifier`
 
 Inoltre, `ModelItem` le API `SetValue` come supporteranno solo istanze di tipi primitivi o tipi .NET Framework predefiniti che possono essere convertiti per il runtime di destinazione. Attualmente sono supportati i tipi seguenti:
 

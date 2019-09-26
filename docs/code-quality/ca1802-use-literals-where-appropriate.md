@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be913ab1f66e82038afce776bc326e5f91c7f2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233798"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253370"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Utilizza valori letterali dove appropriato
 
@@ -43,7 +43,7 @@ Per impostazione predefinita, questa regola esamina solo i campi visibili estern
 
 Il valore di un `static readonly` campo viene calcolato in fase di esecuzione quando viene chiamato il costruttore statico per il tipo dichiarante. Se il `static readonly` campo viene inizializzato quando viene dichiarato e un costruttore statico non è dichiarato in modo esplicito, il compilatore genera un costruttore statico per inizializzare il campo.
 
-Il valore di un `const` campo viene calcolato in fase di compilazione e archiviato nei metadati, che aumenta le prestazioni di runtime quando viene confrontato `static readonly` con un campo.
+Il valore di un `const` campo viene calcolato in fase di compilazione e archiviato nei metadati, che aumenta le prestazioni in fase di esecuzione quando viene confrontato `static readonly` con un campo.
 
 Poiché il valore assegnato al campo di destinazione è calcolabile in fase di compilazione, modificare la dichiarazione in `const` un campo in modo che il valore venga calcolato in fase di compilazione anziché in fase di esecuzione.
 

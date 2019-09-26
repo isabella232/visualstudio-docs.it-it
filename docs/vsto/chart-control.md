@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440321"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255297"
 ---
 # <a name="chart-control"></a>Controllo Chart
   Il controllo <xref:Microsoft.Office.Tools.Excel.Chart> è un oggetto grafico che espone eventi. Quando si aggiunge un grafico a un foglio di lavoro, Visual Studio crea un oggetto <xref:Microsoft.Office.Tools.Excel.Chart> su cui è possibile programmare direttamente senza dover passare attraverso il modello a oggetti di Microsoft Office Excel.
@@ -29,9 +29,9 @@ ms.locfileid: "63440321"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>Creare il controllo
- È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione o in fase di esecuzione in un progetto a livello di documento.
+ È possibile aggiungere controlli <xref:Microsoft.Office.Tools.Excel.Chart> a un foglio di lavoro di Microsoft Office Excel in fase di progettazione oppure in fase di esecuzione in un progetto a livello di documento.
 
- È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli a un foglio di lavoro in fase di esecuzione in un componente aggiuntivo VSTO. Per altre informazioni, vedere [Procedura: Aggiungere controlli Chart a fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md).
+ È possibile aggiungere controlli <xref:Microsoft.Office.Tools.Excel.Chart> a un foglio di lavoro in fase di esecuzione in un componente aggiuntivo VSTO. Per altre informazioni, vedere [Procedura: Aggiungere controlli Chart a fogli di](../vsto/how-to-add-chart-controls-to-worksheets.md)foglio.
 
 > [!NOTE]
 > Gli oggetti grafico creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro viene chiuso. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -73,11 +73,11 @@ ms.locfileid: "63440321"
 - <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedure dettagliate ed esempi di sviluppo office](../vsto/office-development-samples-and-walkthroughs.md)
-- [Estendere i documenti di Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Procedure dettagliate e esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
-- [Procedura: Aggiungere controlli Chart a fogli di lavoro](../vsto/how-to-add-chart-controls-to-worksheets.md)
-- [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
+- [Procedura: Aggiungere controlli Chart a fogli di foglio](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420943"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255637"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Migliorare le prestazioni di un componente aggiuntivo VSTO
   È possibile offrire agli utenti un'esperienza migliore ottimizzando i componenti aggiuntivi VSTO creati per le applicazioni di Office per poterli avviare rapidamente, interromperli o usarli per aprire gli elementi ed eseguire altre attività. Se il componente aggiuntivo VSTO è per Outlook, è anche possibile ridurre la probabilità che il componente aggiuntivo VSTO venga disabilitato a causa delle prestazioni ridotte. È possibile incrementare le prestazioni del componente aggiuntivo VSTO implementando le strategie seguenti:
@@ -24,11 +24,11 @@ ms.locfileid: "63420943"
 
 - [Pubblicare soluzioni Office usando Windows Installer](#Publish).
 
-- [Disabilitare la reflection della barra multifunzione](#Bypass).
+- [Ignora Reflection della barra multifunzione](#Bypass).
 
 - [Eseguire operazioni complesse in un thread di esecuzione separato](#Perform).
 
-  Per altre informazioni su come ottimizzare un componente aggiuntivo VSTO per Outlook, vedere [criteri delle prestazioni per mantenere i componenti aggiuntivi VSTO abilitati](http://go.microsoft.com/fwlink/?LinkID=266503).
+  Per altre informazioni su come ottimizzare un componente aggiuntivo VSTO di Outlook, vedere [criteri delle prestazioni per la conservazione dei componenti aggiuntivi VSTO abilitati](http://go.microsoft.com/fwlink/?LinkID=266503).
 
 ## <a name="Load"></a> Caricare componenti aggiuntivi VSTO su richiesta
  È possibile configurare un componente aggiuntivo VSTO da caricare solo nelle circostanze seguenti:
@@ -37,7 +37,7 @@ ms.locfileid: "63420943"
 
 - La prima volta che l'utente interagisce con il componente aggiuntivo VSTO dopo l'avvio dell'applicazione in un qualsiasi momento successivo.
 
-  Ad esempio, il componente aggiuntivo VSTO potrebbe popolare un foglio di lavoro con i dati quando l'utente sceglie un pulsante personalizzato con etichetta **Ottieni dati personali**. L'applicazione deve caricare il componente aggiuntivo VSTO almeno una volta in modo che il **Ottieni dati personali** pulsante può essere visualizzato nella barra multifunzione. Tuttavia, il componente aggiuntivo VSTO non viene caricato nuovamente quando l'utente avvia l'applicazione al successivo. Il componente aggiuntivo VSTO viene caricato solo quando l'utente seleziona il pulsante **Ottieni dati personali** .
+  Ad esempio, il componente aggiuntivo VSTO potrebbe popolare un foglio di lavoro con i dati quando l'utente sceglie un pulsante personalizzato con etichetta **Ottieni dati personali**. L'applicazione deve caricare il componente aggiuntivo VSTO almeno una volta in modo che sia possibile visualizzare il pulsante **Ottieni dati personali** nella barra multifunzione. Tuttavia, il componente aggiuntivo VSTO non viene caricato di nuovo quando l'utente avvia l'applicazione la volta successiva. Il componente aggiuntivo VSTO viene caricato solo quando l'utente seleziona il pulsante **Ottieni dati personali** .
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>Per configurare una soluzione ClickOnce per caricare componenti aggiuntivi VSTO su richiesta
 
@@ -51,13 +51,13 @@ ms.locfileid: "63420943"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Per configurare una soluzione Windows Installer per caricare componenti aggiuntivi VSTO su richiesta
 
-1. Nel Registro di sistema, impostare il `LoadBehavior` immissione del **_radice_\Software\Microsoft\Office\\_ApplicationName_\Addins\\  _ID componente aggiuntivo_** chiave **0x10**.
+1. Nel registro di sistema impostare la `LoadBehavior` voce della chiave **_root_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_Add-in ID_** su **0x10**.
 
-     Per altre informazioni, vedere [voci del Registro di sistema per componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
+     Per altre informazioni, vedere [voci del registro di sistema per i componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Per configurare una soluzione per caricare componenti aggiuntivi VSTO su richiesta durante il debug della soluzione
 
-1. Creare uno script che consente di impostare il `LoadBehavior` immissione del **_radice_\Software\Microsoft\Office\\_ApplicationName_\Addins\\  _ID componente aggiuntivo_** chiave **0x10**.
+1. Creare uno script che imposta la `LoadBehavior` voce della chiave **_radice_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_ID componente_** aggiuntivo su **0x10**.
 
      Nel codice seguente viene illustrato un esempio di questo script.
 
@@ -79,12 +79,12 @@ ms.locfileid: "63420943"
 
     ```
 
-     Per informazioni su come creare l'evento di post-compilazione in un C# progetto, vedere [procedura: Specificare eventi di compilazione &#40;C&#35;&#41;](../ide/how-to-specify-build-events-csharp.md).
+     Per informazioni su come creare un evento di post-compilazione in C# un progetto, [vedere Procedura: Specificare gli eventi &#40;di&#35;&#41;](../ide/how-to-specify-build-events-csharp.md)compilazione C.
 
-     Per informazioni su come creare un evento di post-compilazione in un progetto Visual Basic, vedere [come: Specificare eventi di compilazione &#40;Visual Basic&#41;](../ide/how-to-specify-build-events-visual-basic.md).
+     Per informazioni su come creare un evento di post-compilazione in un progetto di Visual Basic, [vedere Procedura: Specificare gli eventi &#40;di&#41;](../ide/how-to-specify-build-events-visual-basic.md)compilazione Visual Basic.
 
-## <a name="Publish"></a> Pubblicare soluzioni Office usando Windows Installer
- Se si pubblica la soluzione tramite Windows Installer, Visual Studio 2010 Tools per Office runtime consente di ignorare i passaggi seguenti quando il componente aggiuntivo VSTO viene caricato.
+## <a name="Publish"></a>Pubblicare soluzioni Office usando Windows Installer
+ Se si pubblica la soluzione usando Windows Installer, Visual Studio 2010 Tools per Office runtime ignora i passaggi seguenti quando viene caricato il componente aggiuntivo VSTO.
 
 - Convalida dello schema manifesto.
 
@@ -95,26 +95,26 @@ ms.locfileid: "63420943"
   > [!NOTE]
   > Questo approccio non è necessario se si distribuisce il componente aggiuntivo VSTO in una posizione sicura nei computer degli utenti.
 
-  Per altre informazioni, vedere [distribuire una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
+  Per altre informazioni, vedere [distribuire una soluzione Office usando Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
-## <a name="Bypass"></a> Disabilitare la reflection della barra multifunzione
- Se si compila una soluzione usando [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], assicurarsi che gli utenti hanno installato la versione più recente di Visual Studio 2010 Tools per Office runtime quando si distribuisce la soluzione. Le versioni precedenti di quel runtime effettuavano la reflection negli assembly della soluzione per individuare le personalizzazioni della barra multifunzione. Questo processo può rallentare il caricamento del componente aggiuntivo VSTO.
+## <a name="Bypass"></a>Ignora Reflection della barra multifunzione
+ Se si compila una soluzione usando [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], assicurarsi che gli utenti abbiano installato la versione più recente di Visual Studio 2010 Tools per Office Runtime quando si distribuisce la soluzione. Le versioni precedenti del runtime di VSTO si riflettono negli assembly della soluzione per individuare le personalizzazioni della barra multifunzione. Questo processo può rallentare il caricamento del componente aggiuntivo VSTO.
 
- In alternativa, è possibile impedire qualsiasi versione di Visual Studio 2010 Tools per Office runtime di usare la reflection per identificare le personalizzazioni della barra multifunzione. Per seguire questa strategia, eseguire l'override di `CreateRibbonExtensibility` metodo e restituito in modo esplicito gli oggetti della barra multifunzione. Se il componente aggiuntivo VSTO non contiene tutte le personalizzazioni della barra multifunzione, restituire `null` all'interno del metodo.
+ In alternativa, è possibile impedire a qualsiasi versione di Visual Studio 2010 Tools per Office Runtime di usare la reflection per identificare le personalizzazioni della barra multifunzione. Per seguire questa strategia, eseguire l' `CreateRibbonExtensibility` override del metodo e restituire in modo esplicito gli oggetti della barra multifunzione. Se il componente aggiuntivo VSTO non contiene personalizzazioni della barra multifunzione, `null` restituire all'interno del metodo.
 
- L'esempio seguente restituisce un oggetto della barra multifunzione in base al valore di un campo.
+ Nell'esempio seguente viene restituito un oggetto Ribbon basato sul valore di un campo.
 
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
 
-## <a name="Perform"></a> Eseguire operazioni complesse in un thread di esecuzione separato
- Si consiglia di eseguire le attività che richiedono tempo (ad esempio le attività a esecuzione prolungata, le connessioni di database o altri tipi di chiamate di rete) in un thread separato. Per altre informazioni, vedere [supporto del Threading in Office](../vsto/threading-support-in-office.md).
+## <a name="Perform"></a>Eseguire operazioni dispendiose in un thread di esecuzione separato
+ Si consiglia di eseguire le attività che richiedono tempo (ad esempio le attività a esecuzione prolungata, le connessioni di database o altri tipi di chiamate di rete) in un thread separato. Per ulteriori informazioni, vedere [supporto del threading in Office](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
 > Tutto il codice che effettua chiamate nel modello a oggetti di Office deve essere eseguito nel thread principale.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Componenti aggiuntivi VSTO di caricamento su richiesta](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
+- [Caricamento su richiesta di componenti aggiuntivi VSTO](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
 - [Caricamento ritardato di CLR nei componenti aggiuntivi di Office](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
-- [Creare componenti aggiuntivi VSTO per Office tramite Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)
+- [Creare componenti aggiuntivi VSTO per Office con Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551722"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Distribuire una soluzione Office usando Windows Installer
@@ -333,7 +333,7 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
 
 7. Ripetere la procedura per creare i seguenti valori:
 
-|Tipo di valore<br /><br />|Nome<br /><br />|
+|Tipo di valore<br /><br />|nome<br /><br />|
 |--------------|--------|
 |Valore stringa<br /><br />|**FriendlyName**<br /><br />|
 |Valore DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -476,7 +476,7 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
 16. Sostituire **Your Solution ID** con l'ID soluzione copiato negli Appunti.
 
    > [!IMPORTANT]
-   > Testare il programma di installazione per verificare che l'applicazione console eseguita da questa azione personalizzata possa accedere ai documenti nella directory [INSTALLDIR]. Alcune directory nel computer dell'utente potrebbero richiedere l'accesso amministrativo, ad esempio la directory programmi. Se si distribuisce la soluzione in una directory che richiede l'accesso amministrativo, è necessario aprire la finestra di dialogo **Proprietà** del file *Setup. exe* , scegliere la scheda **compatibilità** , quindi selezionare il **Esegui programma come** casella di controllo amministratore prima di distribuire il programma di installazione. Se non si vuole che gli utenti eseguano il programma di installazione con autorizzazioni amministrative, impostare la proprietà [INSTALLDIR] su una directory a cui l'utente probabilmente può accedere già, ad esempio la directory Documents. Per ulteriori informazioni, vedere la sezione [specificare dove si desidera installare la soluzione nel computer dell'utente](#Location) di questo argomento.
+   > Testare il programma di installazione per verificare che l'applicazione console eseguita da questa azione personalizzata possa accedere ai documenti nella directory [INSTALLDIR]. Alcune directory nel computer dell'utente potrebbero richiedere l'accesso amministrativo, ad esempio la directory programmi. Se si distribuisce la soluzione in una directory che richiede l'accesso amministrativo, è necessario aprire la finestra di dialogo **Proprietà** del file *Setup. exe* , scegliere la scheda **compatibilità** , quindi selezionare il **Esegui programma come** casella di controllo amministratore prima di distribuire il programma di installazione. Se non si vuole che gli utenti eseguano il programma di installazione con autorizzazioni amministrative, impostare la proprietà [INSTALLDIR] su una directory a cui l'utente probabilmente può accedere già, ad esempio la directory **Documents** . Per ulteriori informazioni, vedere la sezione [specificare dove si desidera installare la soluzione nel computer dell'utente](#Location) di questo argomento.
 
 ## <a name="Build"></a>Build the setup project
 

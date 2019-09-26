@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260642"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253426"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
 
 Un progetto di servizio cloud di Azure in Visual Studio include tre file di configurazione: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg`:
 
-- `ServiceDefinition.csdef` viene distribuito in Azure per descrivere i requisiti del servizio cloud e i relativi ruoli e per fornire le impostazioni applicabili a tutte le istanze. Queste impostazioni possono essere lette in fase di esecuzione tramite l'API di runtime dell'hosting di servizi di Azure. Questo file può essere aggiornato in Azure solo quando il servizio cloud viene arrestato.
+- `ServiceDefinition.csdef` viene distribuito in Azure per descrivere i requisiti del servizio cloud e i relativi ruoli e per fornire le impostazioni applicabili a tutte le istanze. Le impostazioni possono essere lette in fase di esecuzione usando l'API di runtime dell'hosting del servizio di Azure. Questo file può essere aggiornato in Azure solo quando il servizio cloud viene arrestato.
 - `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg` forniscono i valori per le impostazioni del file di definizione e specificano il numero di istanze da eseguire per ogni ruolo. Il file "Local" contiene i valori usati nel debug locale, mentre il file "Cloud" viene distribuito in Azure come `ServiceConfiguration.cscfg` e fornisce le impostazioni per l'ambiente server. Questo file può essere aggiornato mentre il servizio cloud è in esecuzione in Azure.
 
 Le impostazioni di configurazione vengono gestite e modificate in Visual Studio attraverso le pagine delle proprietà relative al ruolo applicabile (fare clic con il pulsante destro del mouse sul ruolo e scegliere **Proprietà** oppure fare doppio clic sul ruolo). L'ambito delle modifiche può essere delimitato da qualsiasi configurazione scelta nell'elenco a discesa **Configurazione servizio**. Le proprietà dei ruoli Web e di lavoro sono simili, tranne per gli aspetti descritti nelle sezioni seguenti.
@@ -55,7 +55,7 @@ Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il p
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
-Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](http://go.microsoft.com/fwlink?LinkID=171026), in particolare il metodo [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](http://go.microsoft.com/fwlink?LinkID=171026), in particolare il metodo [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurazione di una stringa di connessione per un account di archiviazione
 

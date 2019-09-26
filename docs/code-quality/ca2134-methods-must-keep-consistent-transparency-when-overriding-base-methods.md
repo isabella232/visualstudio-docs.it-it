@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71232283"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253307"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: I metodi devono mantenere trasparenza consistente durante l'override dei metodi base
 
@@ -40,7 +40,7 @@ Le regole di trasparenza vengono applicate quando il codice viene compilato tram
 Per correggere una violazione di questa regola, modificare la trasparenza del metodo che esegue l'override di un metodo virtuale o implementando un'interfaccia in modo che corrisponda alla trasparenza del metodo virtuale o dell'interfaccia.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
-Non eliminare gli avvisi da questa regola. Le violazioni di questa regola comporteranno un runtime <xref:System.TypeLoadException> per gli assembly che usano la trasparenza di livello 2.
+Non eliminare gli avvisi da questa regola. Le violazioni di questa regola hanno <xref:System.TypeLoadException> come risultato un runtime per gli assembly che usano la trasparenza di livello 2.
 
 ## <a name="examples"></a>Esempi
 

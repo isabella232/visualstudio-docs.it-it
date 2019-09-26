@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36442ad0792ef712acd322d17688d8ceb21444cb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0179a9609907adc07dc6d8a085eb9a2a0c38c065
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231886"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253231"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Evitare di gestire le eccezioni di stato danneggiate
 
@@ -39,7 +39,7 @@ Questo avviso viene attivato quando si intercettano CSES con un gestore generale
 
 Per risolvere il problema, eseguire una delle operazioni seguenti:
 
-- Rimuovere l'attributo <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Viene ripristinato il comportamento di runtime predefinito che prevede che le eccezioni CSE non vengano passate ai gestori catch.
+- Rimuovere l'attributo <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Viene ripristinato il comportamento predefinito in fase di esecuzione in cui CSEs non vengono passati ai gestori catch.
 
 - Rimuovere il gestore catch generale nella preferenza dei gestori che recuperano tipi di eccezione specifici. Questo può includere CSEs, supponendo che il codice del gestore sia in grado di gestirle in modo sicuro (rare).
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551124"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253154"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Domande frequenti su FxCop e gli analizzatori FxCop
 
@@ -43,7 +43,7 @@ Per eseguire gli analizzatori FxCop, per prima cosa [installare il pacchetto NuG
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Viene visualizzato l'avviso CA0507 anche dopo aver installato il pacchetto NuGet degli analizzatori FxCop
 
-Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso CA0507 **""Esegui analisi codice" è stato deprecato e sostituito da analizzatori FxCop, che vengono eseguiti durante la compilazione"** , potrebbe essere necessario impostare la proprietà msbuild **RunCodeAnalysis** nel file di progetto su **false**. In caso contrario, l'analisi legacy verrà eseguita dopo ogni compilazione.
+Se sono stati installati analizzatori FxCop ma si continua a ricevere l'avviso CA0507 **"" Esegui analisi codice "è stato deprecato a favore degli analizzatori FxCop, che vengono eseguiti durante la compilazione"** , potrebbe essere necessario impostare la proprietà MSBuild **RunCodeAnalysis** nel [progetto file](../ide/solutions-and-projects-in-visual-studio.md#project-file) su **false**. In caso contrario, l'analisi legacy verrà eseguita dopo ogni compilazione.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -51,7 +51,7 @@ Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso C
 
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quali regole sono state trasferite agli analizzatori FxCop?
 
-Per informazioni sulle regole di analisi legacy che sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md), vedere stato della [porta della regola FxCop](fxcop-rule-port-status.md).
+Per informazioni sulle regole di analisi legacy che sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md), vedere [stato della porta della regola FxCop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Vedere anche
 

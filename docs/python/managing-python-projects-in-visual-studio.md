@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536337"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254207"
 ---
 # <a name="python-projects-in-visual-studio"></a>Progetti Python in Visual Studio
 
@@ -77,7 +77,7 @@ In Visual Studio sono disponibili diverse opzioni per configurare un progetto Py
 
 La tabella seguente riepiloga i modelli disponibili in Visual Studio 2017 e versioni successive (non tutti i modelli sono disponibili in tutte le versioni precedenti):
 
-| Modello | Description |
+| Modello | Descrizione |
 | --- | --- |
 | [**Da codice Python esistente**](#create-project-from-existing-files) | Crea un progetto di Visual Studio da codice Python esistente in una struttura di cartelle.  |
 | **Applicazione Python** | Struttura di progetto di base per una nuova applicazione Python che contiene un solo file di origine vuoto. Per impostazione predefinita, il progetto viene eseguito nell'interprete della console dell'ambiente globale predefinito, che è possibile modificare [assegnando un altro ambiente](selecting-a-python-environment-for-a-project.md). |
@@ -143,7 +143,7 @@ I riferimenti alle estensioni indicano in genere le dipendenze tra progetti e ve
 
 Un riferimento a un file con estensione *pyd* consente di abilitare la funzionalità IntelliSense per il modulo generato. Visual Studio carica il file con estensione *pyd* nell'interprete Python e ne esamina tipi e funzioni. Prova inoltre ad analizzare le stringhe di documento relative alle funzioni per offrire il supporto per la firma.
 
-Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non influisce sul comportamento del runtime, anche se alcuni completamenti saranno disponibili solo al termine dell'analisi.
+Se in qualsiasi momento il modulo di estensione viene aggiornato sul disco, Visual Studio analizza nuovamente il modulo in background. Questa azione non ha alcun effetto sul comportamento in fase di esecuzione, ma alcuni completamenti non sono disponibili fino al completamento dell'analisi.
 
 Potrebbe anche essere necessario aggiungere un [percorso di ricerca](search-paths.md) per la cartella che contiene il modulo.
 
@@ -167,5 +167,8 @@ from System.Windows.Forms import *
 ### <a name="webpi-projects"></a>Progetti WebPI
 
 È possibile aggiungere riferimenti alle voci di prodotto WebPI per la distribuzione nei servizi cloud di Microsoft Azure in cui è possibile installare componenti aggiuntivi tramite il feed WebPI. Per impostazione predefinita, il feed visualizzato è specifico di Python e include Django, CPython e altri componenti di base. È inoltre possibile selezionare un feed personalizzato, come illustrato di seguito. Durante la pubblicazione in Microsoft Azure, un'attività di installazione installerà tutti i prodotti di riferimento.
+
+> [!IMPORTANT]
+> I progetti WebPI non sono disponibili in Visual Studio 2017 o Visual Studio 2019.
 
 ![Riferimenti WebPI](media/projects-webPI-components.png)

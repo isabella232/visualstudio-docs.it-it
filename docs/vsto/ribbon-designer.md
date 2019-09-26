@@ -26,19 +26,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f417c077d2280b951f0d101d79876c01cb33789d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447005"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256049"
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
-  La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede personalizzate, gruppi e controlli alla barra multifunzione di un'applicazione Microsoft Office.
+  La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede, gruppi e controlli personalizzati alla barra multifunzione di un'applicazione Microsoft Office.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
- Per aprire la finestra di progettazione della barra multifunzione, aggiungere un **sulla barra multifunzione (finestra di progettazione visiva)** elemento al progetto. È quindi possibile usare gli strumenti di progettazione per le attività seguenti:
+ Per aprire la finestra di progettazione della barra multifunzione, aggiungere un elemento **barra multifunzione (finestra di progettazione visiva)** al progetto. È quindi possibile utilizzare gli strumenti di progettazione per le seguenti attività:
 
 - [Progettare il layout della barra multifunzione](#DesigningRibbonLayout)
 
@@ -47,44 +47,44 @@ ms.locfileid: "63447005"
 - [Aggiungere controlli alla visualizzazione Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
-> Esistono alcune attività che è possibile eseguire utilizzando la finestra di progettazione della barra multifunzione. Per altre informazioni su queste attività e come è possibile eseguire queste attività, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).
+> È possibile eseguire alcune attività usando la finestra di progettazione della barra multifunzione. Per altre informazioni su queste attività e su come è possibile realizzarle, vedere [Cenni preliminari sulla barra multifunzione](../vsto/ribbon-overview.md).
 
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare la finestra di progettazione della barra multifunzione per personalizzare la barra multifunzione in Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
+ ![collegamento al video](../vsto/media/playvideo.gif "collegamento al video") Per una dimostrazione video correlata, [vedere Ricerca per categorie: Usare la finestra di progettazione della barra multifunzione per personalizzare la barra multifunzione in Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 
 ## <a name="add-a-ribbon-visual-designer-item-to-a-project"></a>Aggiungere un elemento barra multifunzione (finestra di progettazione visiva) a un progetto
- Per usare la finestra di progettazione della barra multifunzione, aggiungere una nuova **sulla barra multifunzione (finestra di progettazione visiva)** elemento al progetto. Per altre informazioni, vedere [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).
+ Per usare la finestra di progettazione della barra multifunzione, aggiungere un nuovo elemento della **barra multifunzione (finestra di progettazione visiva)** al progetto. Per altre informazioni, vedere [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
- Quando si aggiunge un nuovo **sulla barra multifunzione (finestra di progettazione visiva)** item, Visual Studio aggiunge automaticamente i file seguenti al progetto:
+ Quando si aggiunge un nuovo elemento della **barra multifunzione (finestra di progettazione visiva)** , Visual Studio aggiunge automaticamente i file seguenti al progetto:
 
-- Un file di codice della barra multifunzione. Questo file contiene il nome specificato per il **sulla barra multifunzione (finestra di progettazione visiva)** degli elementi nella **Aggiungi nuovo elemento** nella finestra di dialogo. Aggiungere il codice per gestire gli eventi della barra multifunzione a questo file.
+- Un file di codice della barra multifunzione. Il nome di questo file è specificato per l'elemento **barra multifunzione (finestra di progettazione visiva)** nella finestra di dialogo **Aggiungi nuovo elemento** . Aggiungere il codice per gestire gli eventi della barra multifunzione in questo file.
 
-- Un file di codice di progettazione della barra multifunzione. Questo file contiene il codice generato dalla finestra di progettazione della barra multifunzione e non deve essere modificato direttamente.
+- File di codice della finestra di progettazione della barra multifunzione. Questo file contiene il codice generato dalla finestra di progettazione della barra multifunzione e non deve essere modificato direttamente.
 
 - Un file di risorse. Questo file contiene i valori delle proprietà di ogni controllo sulla barra multifunzione.
 
-  Se si dispone già di un **sulla barra multifunzione (finestra di progettazione visiva)** elemento da un altro progetto, è possibile riutilizzarlo nel progetto corrente usando la **Aggiungi elemento esistente** nella finestra di dialogo.
+  Se si dispone già di un elemento **barra multifunzione (finestra di progettazione visiva)** da un altro progetto, è possibile riutilizzarlo nel progetto corrente utilizzando la finestra di dialogo **Aggiungi elemento esistente** .
 
-## <a name="DesigningRibbonLayout"></a> Progettare una barra multifunzione
- Esistono tre modi per aprire la finestra di progettazione della barra multifunzione:
+## <a name="DesigningRibbonLayout"></a>Progettare una barra multifunzione
+ Sono disponibili tre modi per aprire la finestra di progettazione della barra multifunzione:
 
-- Nelle **Esplora soluzioni**, fare doppio clic sul file di codice della barra multifunzione.
+- In **Esplora soluzioni**fare doppio clic sul file di codice della barra multifunzione.
 
-- Nelle **Esplora soluzioni**, fare clic sul file di codice della barra multifunzione e quindi fare clic su **Progettazione viste**.
+- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file di codice della barra multifunzione, quindi scegliere **Visualizza finestra di progettazione**.
 
-- Nella **Esplora soluzioni**, selezionare il file di codice della barra multifunzione e quindi fare clic su **progettazione** sul **visualizzazione** menu.
+- In **Esplora soluzioni**selezionare il file di codice della barra multifunzione, quindi scegliere **finestra di progettazione** dal menu **Visualizza** .
 
-  La finestra di progettazione della barra multifunzione contiene una scheda predefinita e un gruppo. È possibile rimuovere la scheda predefinita e il gruppo dalla finestra di progettazione della barra multifunzione. Per rimuovere il gruppo predefinito, fare doppio clic su **Group1**, quindi fare clic su **eliminare**. Per rimuovere la scheda predefinita, fare doppio clic su un'area vuota dell'area di progettazione e quindi fare clic su **Rimuovi scheda della barra multifunzione**.
+  La finestra di progettazione della barra multifunzione contiene una scheda e un gruppo predefiniti. È possibile rimuovere la scheda e il gruppo predefiniti dalla finestra di progettazione della barra multifunzione. Per rimuovere il gruppo predefinito, fare clic con il pulsante destro del mouse su **Group1**e quindi scegliere **Elimina**. Per rimuovere la scheda predefinita, fare clic con il pulsante destro del mouse su un'area vuota dell'area di progettazione, quindi scegliere **Rimuovi scheda della barra multifunzione**.
 
-  È anche possibile aggiungere schede personalizzate, gruppi e controlli alla finestra di progettazione della barra multifunzione. È possibile trovare questi controlli nel **casella degli strumenti**, nella **controlli della barra multifunzione di Office** gruppo. Esistono tre modi per aggiungere i controlli di **controlli della barra multifunzione di Office** gruppo alla finestra di progettazione della barra multifunzione:
+  È anche possibile aggiungere schede, gruppi e controlli personalizzati alla finestra di progettazione della barra multifunzione. È possibile trovare questi controlli nella **casella degli strumenti**, nel gruppo **controlli della barra multifunzione di Office** . Sono disponibili tre modi per aggiungere controlli dal gruppo di **controlli della barra multifunzione di Office** alla finestra di progettazione della barra multifunzione:
 
 - Trascinare un controllo in un'area appropriata della finestra di progettazione della barra multifunzione.
 
-- Fare clic su un controllo e quindi fare clic su un'area appropriata nella finestra di progettazione della barra multifunzione.
+- Fare clic su un controllo, quindi fare clic su un'area appropriata nella finestra di progettazione della barra multifunzione.
 
-- Selezionare un'area appropriata nella finestra di progettazione e quindi fare doppio clic su un controllo nel **casella degli strumenti**.
+- Selezionare un'area appropriata nella finestra di progettazione, quindi fare doppio clic su un controllo nella **casella degli strumenti**.
 
-### <a name="ribbon-design-workflow"></a>Flusso di lavoro di progettazione della barra multifunzione
- Seguire questi passaggi di base per progettare il layout della barra multifunzione:
+### <a name="ribbon-design-workflow"></a>Flusso di lavoro progettazione della barra multifunzione
+ Per progettare il layout della barra multifunzione, seguire questa procedura di base:
 
 1. [Aggiungere una scheda personalizzata alla barra multifunzione](#AddTabToRibbon).
 
@@ -92,120 +92,120 @@ ms.locfileid: "63447005"
 
 3. [Aggiungere controlli ai gruppi](#AddControlsToGroups).
 
-   I controlli possono essere eliminati solo nei gruppi. è possibile trascinare un controllo direttamente a una scheda o alla barra multifunzione. I gruppi possono essere rilasciati solo nelle schede; è possibile trascinare un gruppo direttamente a una barra multifunzione.
+   I controlli possono essere eliminati solo nei gruppi; non è possibile trascinare un controllo direttamente in una scheda o nella barra multifunzione. I gruppi possono essere eliminati solo nelle schede; non è possibile trascinare un gruppo direttamente in una barra multifunzione.
 
-   Disporre i controlli trascinandoli nelle posizioni corrette. È possibile impostare le proprietà di un controllo usando il **proprietà** finestra.
+   Disporre i controlli trascinandoli nelle posizioni corrette. È possibile impostare le proprietà di un controllo utilizzando la finestra **Proprietà** .
 
-   È possibile trascinare i controlli da una scheda a altra nella barra multifunzione. Se si desidera spostare un controllo a un'altra scheda, è necessario usare il **Taglia** comando per rimuovere il controllo da una scheda e quindi incollare il controllo in un'altra scheda. Se si taglia il controllo e incollare il codice, il gestore eventi smette di funzionare. È possibile riconnettersi al gestore eventi di **proprietà** finestra. Per altre informazioni, vedere [finestra proprietà](../ide/reference/properties-window.md).
+   Non è possibile trascinare i controlli da una scheda a un'altra sulla barra multifunzione. Se si desidera spostare un controllo in un'altra scheda, è necessario utilizzare il comando **taglia** per rimuovere il controllo da una scheda, quindi incollare il controllo in un'altra scheda. Se il controllo viene tagliato e incollato, il gestore dell'evento smette di funzionare. È possibile riconnettere il gestore eventi nella finestra **Proprietà** . Per ulteriori informazioni, vedere [finestra Proprietà](../ide/reference/properties-window.md).
 
-### <a name="AddTabToRibbon"></a> Aggiungere schede personalizzate alla barra multifunzione
- Esistono tre modi per aggiungere una scheda personalizzata alla barra multifunzione:
+### <a name="AddTabToRibbon"></a>Aggiungere schede personalizzate alla barra multifunzione
+ Sono disponibili tre modi per aggiungere una scheda personalizzata alla barra multifunzione:
 
-- Aggiungere una scheda dal **casella degli strumenti**.
+- Aggiungere una scheda dalla **casella degli strumenti**.
 
-- Fare doppio clic su finestra di progettazione della barra multifunzione e quindi fare clic su **Aggiungi scheda della barra multifunzione**.
+- Fare clic con il pulsante destro del mouse sulla finestra di progettazione Ribbon, quindi scegliere **Aggiungi scheda della barra multifunzione**
 
-- Aprire il **Editor della raccolta Tab**, quindi fare clic su **Add**.
+- Aprire l' **Editor della raccolta di schede**e quindi fare clic su **Aggiungi**.
 
-   Per aprire la **Editor della raccolta Tab**, nel **delle proprietà** finestra, seleziona il **schede** proprietà e quindi fare clic sul pulsante con puntini di sospensione ![ASP.NET per dispositivi mobili Finestra di progettazione ellisse](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer").
+   Per aprire l' **Editor della raccolta di schede**, nella finestra **Proprietà** selezionare la proprietà **Tabs** , quindi fare clic sul pulsante con i puntini di sospensione ![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer ellisse").
 
   Dopo aver aggiunto una scheda, è possibile aggiungere gruppi che contengano i controlli.
 
-#### <a name="remove-custom-tabs-from-the-ribbon"></a>Rimuovere le schede personalizzate dalla barra multifunzione
- Esistono tre modi per rimuovere una scheda personalizzata dalla barra multifunzione:
+#### <a name="remove-custom-tabs-from-the-ribbon"></a>Rimuovi schede personalizzate dalla barra multifunzione
+ Sono disponibili tre modi per rimuovere una scheda personalizzata dalla barra multifunzione:
 
-- Pulsante destro del mouse nella finestra di progettazione e quindi fare clic su **Rimuovi scheda della barra multifunzione**.
+- Fare clic con il pulsante destro del mouse sulla finestra di progettazione, quindi scegliere **Rimuovi scheda barra multifunzione**.
 
-- Nel **comandi** riquadro della **delle proprietà** finestra, fare clic su **Rimuovi scheda della barra multifunzione**.
+- Nel riquadro **comandi** della finestra **Proprietà** fare clic su **Rimuovi scheda della barra multifunzione**.
 
-- Aprire il **Editor della raccolta Tab**, selezionare la scheda e quindi fare clic su **rimuovere**.
+- Aprire l' **Editor della raccolta di schede**, selezionare la scheda e quindi fare clic su **Rimuovi**.
 
-#### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Modificare la posizione di una scheda della barra multifunzione
- È possibile modificare l'ordine delle schede personalizzate in una barra multifunzione. È anche possibile posizionare le schede personalizzate prima o dopo una scheda incorporata nella barra multifunzione. Per altre informazioni, vedere [Procedura: Modificare la posizione di una scheda della barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
+#### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Modificare la posizione di una scheda sulla barra multifunzione
+ È possibile modificare l'ordine delle schede personalizzate su una barra multifunzione. È anche possibile posizionare le schede personalizzate prima o dopo una scheda incorporata nella barra multifunzione. Per altre informazioni, vedere [Procedura: Modificare la posizione di una scheda nella barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
 
-#### <a name="customize-built-in-tabs-on-the-ribbon"></a>Personalizzare le schede incorporate nella barra multifunzione
- Una scheda incorporata rappresenta una scheda già presente sulla barra multifunzione di un'applicazione Microsoft Office. Ad esempio, il **dati** scheda è una scheda incorporata in Excel.
+#### <a name="customize-built-in-tabs-on-the-ribbon"></a>Personalizzare le schede predefinite sulla barra multifunzione
+ Una scheda incorporata è una scheda già presente sulla barra multifunzione di un'applicazione Microsoft Office. Ad esempio, la scheda **dati** è una scheda incorporata in Excel.
 
- È possibile aggiungere gruppi e controlli in una scheda incorporata, Per impostazione predefinita, un gruppo personalizzato viene visualizzato come ultimo gruppo in una scheda incorporata, anche se è possibile spostarlo prima o dopo un gruppo incorporato nella scheda.
+ È possibile aggiungere gruppi e controlli in una scheda incorporata, Per impostazione predefinita, un gruppo personalizzato viene visualizzato come ultimo gruppo in una scheda incorporata, ma è possibile spostarlo prima o dopo qualsiasi gruppo incorporato nella scheda.
 
- Non è possibile rimuovere gruppi incorporati.
+ Non è possibile rimuovere i gruppi incorporati.
 
- Per informazioni dettagliate su come personalizzare una scheda incorporata, vedere [come: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md).
+ Per informazioni dettagliate su come personalizzare una scheda incorporata, vedere [procedura: Personalizzare una scheda](../vsto/how-to-customize-a-built-in-tab.md)incorporata.
 
-### <a name="AddGroupsToTab"></a> Aggiungere gruppi in una scheda
- I gruppi organizzano in modo logico i controlli della barra multifunzione. Aggiungere gruppi a schede. Aggiungere tutti gli altri controlli al gruppo.
+### <a name="AddGroupsToTab"></a>Aggiungere gruppi a una scheda
+ I gruppi organizzano in modo logico i controlli sulla barra multifunzione. Aggiungere gruppi alle tabulazioni. Aggiungere tutti gli altri controlli al gruppo.
 
-### <a name="AddControlsToGroups"></a> Aggiungere controlli ai gruppi
- Aggiungere uno o più controlli a un gruppo. La tabella seguente descrive ogni controllo.
+### <a name="AddControlsToGroups"></a>Aggiungere controlli ai gruppi
+ Aggiungere uno o più controlli a un gruppo. Nella tabella seguente viene descritto ogni controllo.
 
 |Control|Descrizione|
 |-------------|-----------------|
-|**Box**|Un contenitore che organizza i controlli in un gruppo. È possibile aggiungere qualsiasi controllo a una casella, ad eccezione di un separatore, un gruppo o una scheda. Una casella può essere orizzontale o verticale.|
-|**Pulsante**|Un pulsante che avvia un'azione. È possibile aggiungere un pulsante a un gruppo, un gruppo di pulsanti, un elenco di riepilogo a discesa, una raccolta, un menu o un pulsante di menu combinato.|
-|**ButtonGroup**|Un gruppo che contiene uno o più pulsanti, interruttori, menu, pulsanti di menu combinato e raccolte. È possibile aggiungere un gruppo di pulsanti a un gruppo o un menu.|
-|**CheckBox**|Una casella selezionata o deselezionata per attivare o disattivare un'opzione.|
-|**ComboBox**|Una casella di modifica è associata una casella di elenco. Gli utenti possono digitare o selezionare le proprie preferenze. Viene visualizzata la selezione corrente. Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> proprietà da aggiungere e rimuovere elementi in fase di esecuzione prima o dopo la barra multifunzione viene caricata nell'applicazione Office.|
-|**DropDown**|Un elenco di elementi che l'utente può selezionare. L'utente non è possibile digitare un nuovo elemento in un elenco a discesa.<br /><br /> Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> proprietà per aggiungere elementi all'elenco. È possibile aggiungere e rimuovere elementi in fase di esecuzione.<br /><br /> Usare il <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> proprietà da aggiungere pulsanti all'elenco. Tuttavia, non è possibile aggiungere e rimuovere pulsanti in fase di esecuzione dopo che è stata caricata nell'applicazione Office.|
-|**EditBox**|Una casella in cui l'utente può digitare testo.|
-|**Gallery**|Un menu di scelta che presenta una matrice o griglia di scelte visive selezionabili dagli utenti. È possibile controllare il layout delle selezioni nel menu di scelta. Usare la <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> e il <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> le proprietà per specificare il numero di righe e colonne che verranno visualizzati gli elementi e i pulsanti della raccolta.|
-|**Etichetta**|Testo che è possibile usare per identificare i controlli della barra multifunzione.|
-|**Menu**|Un elenco di riepilogo a discesa che può contenere uno dei seguenti controlli:<br /><br /> -Pulsante<br />: Casella di controllo<br />-Raccolta<br />-   Menu<br />-Pulsante di menu combinato<br />-Pulsante Mostra/Nascondi<br />-Separatore<br /><br /> Per aggiungere un controllo a un menu nella finestra di progettazione della barra multifunzione, fare clic sulla freccia in giù nel menu di scelta per esporre l'area di progettazione menu. È quindi possibile trascinare i controlli della barra multifunzione dal **casella degli strumenti** nel menu. Per disporre i controlli, trascinarli nelle posizioni desiderate.<br /><br /> Per aggiungere controlli per la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> dopo che è stata caricata nell'applicazione Office, è necessario impostare il <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> proprietà **true** prima del caricamento della barra multifunzione. Per informazioni su come eseguire questa operazione, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
-|**Separatore**|Barra sottile utilizzata per separare gli elementi in un elenco. Quando aggiunta a un gruppo, la barra è verticale. Quando aggiunta a un menu di scelta, la barra è orizzontale.|
-|**SplitButton**|Pulsante associato un menu. Un pulsante di menu combinato può contenere i controlli seguenti:<br /><br /> -Pulsante<br />: Casella di controllo<br />-Raccolta<br />-   Menu<br />-Pulsante di menu combinato<br />-Pulsante Mostra/Nascondi<br />-Separatore<br /><br /> Analogamente al menu, pulsante di menu combinato ha la propria area di progettazione. Tuttavia, a differenza di un menu, è possibile aggiornare solo gli elementi in un pulsante di menu combinato prima del caricamento della barra multifunzione nell'applicazione Office. Per informazioni su come aggiornare gli elementi in un pulsante di menu combinato, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
-|**ToggleButton**|Un pulsante che appare premuto o meno.|
+|**Box**|Contenitore che organizza i controlli in un gruppo. È possibile aggiungere qualsiasi controllo a una casella, eccetto un separatore, un gruppo o una scheda. Una casella può essere orizzontale o verticale.|
+|**Pulsante**|Pulsante che avvia un'azione. È possibile aggiungere un pulsante a un gruppo, un gruppo di pulsanti, un elenco a discesa, una raccolta, un menu o un pulsante di menu combinato.|
+|**ButtonGroup**|Gruppo che contiene uno o più pulsanti, pulsanti di menu, pulsanti di menu combinato e raccolte. È possibile aggiungere un gruppo di pulsanti a un gruppo o a un menu.|
+|**CheckBox**|Casella selezionata o deselezionata per attivare o disattivare un'opzione.|
+|**ComboBox**|Casella di modifica con una casella di riepilogo collegata. Gli utenti possono digitare o selezionare la scelta. Nella casella viene visualizzata la selezione corrente. Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> proprietà per aggiungere e rimuovere elementi in fase di esecuzione prima o dopo il caricamento della barra multifunzione nell'applicazione di Office.|
+|**DropDown**|Elenco di elementi che l'utente può selezionare. L'utente non può digitare un nuovo elemento in un elenco a discesa.<br /><br /> Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> proprietà per aggiungere elementi all'elenco. È possibile aggiungere e rimuovere elementi in fase di esecuzione.<br /><br /> Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> proprietà per aggiungere pulsanti all'elenco. Tuttavia, non è possibile aggiungere e rimuovere pulsanti in fase di esecuzione dopo che la barra multifunzione è stata caricata nell'applicazione di Office.|
+|**EditBox**|Casella in cui l'utente può digitare il testo.|
+|**Gallery**|Menu che presenta una matrice o una griglia di scelte visive da cui gli utenti possono selezionare. È possibile controllare il layout delle selezioni nel menu. Utilizzare le <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> proprietà e per specificare il numero di righe e colonne in cui vengono visualizzati gli elementi e i pulsanti della raccolta.|
+|**Etichetta**|Testo che è possibile utilizzare per identificare i controlli sulla barra multifunzione.|
+|**Menu**|Elenco a discesa che può contenere uno dei seguenti controlli:<br /><br /> -Pulsante<br />-Casella di controllo<br />-Raccolta<br />-Menu<br />-Pulsante Split<br />-Interruttore<br />-Separatore<br /><br /> Per aggiungere un controllo a un menu nella finestra di progettazione della barra multifunzione, fare clic sulla freccia rivolta verso il basso nel menu per esporre l'area di progettazione dei menu. È quindi possibile trascinare i controlli della barra multifunzione dalla **casella degli strumenti** nel menu. Per disporre i controlli, trascinarli nelle posizioni desiderate.<br /><br /> Per aggiungere controlli al <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> dopo che la barra multifunzione è stata caricata nell'applicazione di Office, è necessario impostare la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> proprietà su **true** prima di caricare la barra multifunzione. Per informazioni su come eseguire questa operazione, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
+|**Separatore**|Barra sottile utilizzata per separare gli elementi in un elenco. Quando viene aggiunto a un gruppo, la barra è verticale. Quando viene aggiunto a un menu, la barra è orizzontale.|
+|**SplitButton**|Un pulsante con un menu collegato. Un pulsante di suddivisione può contenere uno dei seguenti controlli:<br /><br /> -Pulsante<br />-Casella di controllo<br />-Raccolta<br />-Menu<br />-Pulsante Split<br />-Interruttore<br />-Separatore<br /><br /> Come il menu, il pulsante di menu combinato ha una propria area di progettazione. Tuttavia, a differenza di un menu, è possibile aggiornare gli elementi solo in un pulsante di menu combinato prima che la barra multifunzione venga caricata nell'applicazione di Office. Per informazioni su come aggiornare gli elementi in un pulsante di suddivisione, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).|
+|**ToggleButton**|Pulsante visualizzato premuto o non premuto.|
 
-## <a name="HandleEventsSetProperties"></a> Gestire gli eventi e impostazione delle proprietà
- La finestra di progettazione della barra multifunzione consente di impostare le proprietà del controllo in fase di progettazione utilizzando il **proprietà** finestra. Inoltre, la barra multifunzione espone un modello a oggetti fortemente tipizzati che è possibile usare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione.
+## <a name="HandleEventsSetProperties"></a>Gestire gli eventi e impostare le proprietà
+ La finestra di progettazione della barra multifunzione consente di impostare le proprietà del controllo in fase di progettazione utilizzando la finestra **Proprietà** . Inoltre, la barra multifunzione espone un modello a oggetti fortemente tipizzato che è possibile utilizzare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione.
 
- È possibile fare doppio clic su qualsiasi controllo nella finestra di progettazione per aprire un gestore eventi per l'evento del controllo predefinito. È possibile creare gestori eventi per tutti gli altri eventi di controllo usando il **proprietà** finestra.
+ È possibile fare doppio clic su un controllo nella finestra di progettazione per aprire un gestore eventi per l'evento predefinito del controllo. È possibile creare gestori di eventi per tutti gli altri eventi del controllo utilizzando la finestra **Proprietà** .
 
- Proprietà ed eventi della barra multifunzione si trovano nel <xref:Microsoft.Office.Tools.Ribbon> dello spazio dei nomi. Il **della barra multifunzione (finestra di progettazione visiva)** elemento aggiunge automaticamente un riferimento a questo assembly nel progetto e inserisce appropriato **usando** oppure **importazioni** all'inizio l'istruzione del file di codice della barra multifunzione.
+ Gli eventi e le <xref:Microsoft.Office.Tools.Ribbon> proprietà della barra multifunzione si trovano nello spazio dei nomi. L'elemento **barra multifunzione (finestra di progettazione visiva)** aggiunge automaticamente un riferimento a questo assembly nel progetto e inserisce l'istruzione **using** o **Imports** appropriata all'inizio del file di codice della barra multifunzione.
 
- Per informazioni sulla gestione degli eventi della barra multifunzione e impostare le proprietà dei controlli barra multifunzione in fase di esecuzione, vedere [Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md).
+ Per informazioni sulla gestione degli eventi della barra multifunzione e sull'impostazione delle proprietà dei controlli della barra multifunzione in fase di esecuzione, vedere la [Panoramica del modello a oggetti](../vsto/ribbon-object-model-overview.md)
 
-## <a name="CustomizingMicrosoftOfficeButton"></a> Personalizzare la visualizzazione Backstage
- È possibile usare la finestra di progettazione della barra multifunzione per aggiungere controlli al menu visualizzato quando si sceglie la **File** scheda. Questo menu è detto visualizzazione Backstage.
+## <a name="CustomizingMicrosoftOfficeButton"></a>Personalizzare la visualizzazione Backstage
+ È possibile utilizzare la finestra di progettazione della barra multifunzione per aggiungere controlli al menu visualizzato quando si fa clic sulla scheda **file** . Questo menu è denominato visualizzazione Backstage.
 
- È possibile posizionare i controlli prima o dopo i controlli incorporati tramite la finestra di progettazione della barra multifunzione. Un controllo incorporato è un controllo già disponibile nella visualizzazione Backstage. Se si desidera posizionare controlli prima o dopo i controlli incorporati, è necessario usare XML della barra multifunzione. Per altre informazioni sulle **sulla barra multifunzione (XML)**, vedere [XML della barra multifunzione](../vsto/ribbon-xml.md). Per altre informazioni sulla personalizzazione della visualizzazione Backstage, vedere [Introduzione alla visualizzazione Backstage di Office 2010 per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizzare la visualizzazione Backstage di Office 2010 per gli sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Non è possibile posizionare i controlli prima o dopo i controlli incorporati tramite la finestra di progettazione della barra multifunzione. Un controllo incorporato è un controllo già visualizzato nella visualizzazione Backstage. Se si desidera posizionare i controlli prima o dopo i controlli incorporati, è necessario utilizzare la barra multifunzione XML. Per ulteriori informazioni sulla **barra multifunzione (XML)** , vedere [Ribbon XML](../vsto/ribbon-xml.md). Per ulteriori informazioni sulla personalizzazione della visualizzazione Backstage, vedere [Introduzione alla visualizzazione Backstage di office 2010 per gli sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizzare la visualizzazione Backstage di Office 2010 per gli sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182188).
 
  [!INCLUDE[appliesto_ribbon_2010](../vsto/includes/appliesto-ribbon-2010-md.md)]
 
- Per informazioni su come aggiungere controlli alla visualizzazione Backstage, vedere [come: Aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
+ Per informazioni su come aggiungere controlli alla visualizzazione Backstage, vedere [procedura: Aggiungere controlli alla visualizzazione](../vsto/how-to-add-controls-to-the-backstage-view.md)backstage.
 
-## <a name="Accessibility"></a> Accessibilità nella finestra di progettazione della barra multifunzione
+## <a name="Accessibility"></a>Accessibilità nella finestra di progettazione della barra multifunzione
  È possibile utilizzare i tasti di scelta rapida per spostare i controlli nella finestra di progettazione della barra multifunzione. Alcuni tasti di scelta rapida si applicano a tutti i controlli e alcuni si applicano solo ai controlli che dispongono di menu.
 
- I tasti di scelta rapida che si applicano a tutti i controlli vengono visualizzati nella tabella seguente.
+ Nella tabella seguente sono illustrati i tasti di scelta rapida che si applicano a tutti i controlli.
 
 |Operazione|Tasto di scelta rapida|
 |------------|-----------------------|
-|Spostare un controllo prima che il controllo precedente nell'elenco.|**CTRL**+**backup**<br /><br /> **CTRL**+**sinistra**|
-|Spostare un controllo dopo il controllo successivo nell'elenco.|**CTRL**+**verso il basso**<br /><br /> **CTRL**+**destra**|
-|Spostare la selezione da un controllo a un'altra nello stesso gruppo. Per un pannello a discesa, spostare tra il controllo padre e i controlli nel Pannello di riepilogo a discesa.|**Su**<br /><br /> **Giù**|
-|Eseguire l'iterazione in avanti con tutti i controlli.|**TAB**|
-|Eseguire l'iterazione di tutti i controlli in ordine ascendente.|**MAIUSC**+**TAB**|
-|Eliminare il controllo selezionato o un set di controlli.|**Eliminazione**|
+|Spostare un controllo prima del controllo precedente nell'elenco.|**CTRL**su+<br /><br /> CTRL+a**sinistra**|
+|Spostare un controllo dopo il controllo successivo nell'elenco.|**CTRL**giù+<br /><br /> CTRL+a**destra**|
+|Spostare la selezione da un controllo a un altro nello stesso gruppo. Per un pannello a discesa, spostarsi tra il controllo padre e i controlli nel pannello a discesa.|**Su**<br /><br /> **Giù**|
+|Eseguire l'iterazione in tutti i controlli.|**TAB**|
+|Eseguire l'iterazione fino al contrario di tutti i controlli.|**MAIUSC**+**TAB**|
+|Elimina il controllo o il set di controlli selezionato.|**Eliminazione**|
 |Copiare i controlli selezionati.|**Ctrl**+**C**|
-|Taglio dei controlli selezionati.|**Ctrl**+**X**|
+|Taglia i controlli selezionati.|**Ctrl**+**X**|
 |Incollare i controlli dagli Appunti.|**Ctrl**+**V**|
-|Selezionare il **casella degli strumenti**.|**CTRL**+**Alt**+**X**|
+|Selezionare la **casella degli strumenti**.|**CTRL**+**ALT** X+|
 |Selezionare il componente padre.|**ESC**|
 
- I tasti di scelta rapida che si applicano solo al Menu Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, e <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> vengono visualizzati nella tabella seguente.
+ I tasti di scelta rapida che si applicano solo al <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>menu Microsoft Office <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> , e sono illustrati nella tabella seguente.
 
 |Operazione|Tasto di scelta rapida|
 |------------|-----------------------|
-|Selezionare il controllo padre se il pannello di riepilogo a discesa è aperto ed è presente un controllo selezionato nel Pannello di riepilogo a discesa.|**A sinistra**|
-|Chiudere il pannello di riepilogo a discesa se il pannello di riepilogo a discesa è aperto e viene selezionato il controllo padre.|**A sinistra**|
-|Aprire il pannello di riepilogo a discesa.|**A destra**|
-|Se il pannello di riepilogo a discesa è aperto, selezionare il primo controllo nel Pannello di riepilogo a discesa.|**A destra**|
-|Chiude un pannello di riepilogo a discesa.|**ESC**|
+|Selezionare il controllo padre se il pannello a discesa è aperto ed è selezionato un controllo nel pannello a discesa.|**A sinistra**|
+|Chiudere il pannello a discesa se il pannello a discesa è aperto e il controllo padre è selezionato.|**A sinistra**|
+|Aprire il pannello a discesa.|**A destra**|
+|Selezionare il primo controllo nel pannello a discesa se il pannello a discesa è aperto.|**A destra**|
+|Chiudere un pannello a discesa.|**ESC**|
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Procedura: Esportare una barra multifunzione dalla finestra di progettazione Ribbon alla barra multifunzione XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
 - [Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159912"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273366"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creazione di un database e aggiunta di tabelle in Visual Studio
 
@@ -68,6 +68,9 @@ Per completare questa procedura dettagliata, saranno necessari i carichi di lavo
 
 - In alternativa, è possibile selezionare **Visualizza** > **Esplora server**, se tale finestra non è già aperta. Aprire il Finestra Proprietà espandendo il nodo **connessioni dati** , facendo clic con il pulsante destro del mouse su *SampleDatabase. MDF*e quindi scegliendo **proprietà**.
 
+  > [!TIP]
+  > Se non è possibile espandere il nodo Connessioni dati o la connessione SampleDatabase. mdf non è inclusa nell'elenco, selezionare il pulsante **Connetti al database** nella barra degli strumenti Esplora server. Nella finestra di dialogo **Aggiungi connessione** verificare che **Microsoft SQL Server file di database** sia selezionato in **origine dati**, quindi individuare e selezionare il file SampleDatabase. MDF. Completare l'aggiunta della connessione selezionando **OK**.
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Creare tabelle e chiavi utilizzando Progettazione tabelle
 
 In questa sezione verranno create due tabelle, una chiave primaria in ogni tabella e alcune righe di dati di esempio. Verrà inoltre creata una chiave esterna per specificare il modo in cui i record di una tabella corrispondono ai record dell'altra tabella.
@@ -75,6 +78,8 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 ### <a name="create-the-customers-table"></a>Creare la tabella Customers
 
 1. In **Esplora server**espandere il nodo **connessioni dati** , quindi espandere il nodo **SampleDatabase. MDF** .
+
+   Se non è possibile espandere il nodo Connessioni dati o la connessione SampleDatabase. mdf non è inclusa nell'elenco, selezionare il pulsante **Connetti al database** nella barra degli strumenti Esplora server. Nella finestra di dialogo **Aggiungi connessione** verificare che **Microsoft SQL Server file di database** sia selezionato in **origine dati**, quindi individuare e selezionare il file SampleDatabase. MDF. Completare l'aggiunta della connessione selezionando **OK**.
 
 2. Fare clic con il pulsante destro del mouse su **tabelle** e scegliere **Aggiungi nuova tabella**.
 

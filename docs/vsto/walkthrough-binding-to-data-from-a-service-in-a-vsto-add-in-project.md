@@ -14,21 +14,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740115"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254048"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procedura dettagliata: Eseguire l'associazione ai dati di un servizio in un progetto di componente aggiuntivo VSTO
   È possibile associare dati ai controlli host nei progetti di componente aggiuntivo VSTO. Questa procedura dettagliata illustra come aggiungere controlli a un documento di Microsoft Office Word, associare i controlli ai dati recuperati dal servizio per la gestione del contenuto MSDN e rispondere agli eventi in fase di esecuzione.
 
- **Si applica a:** Le informazioni contenute in questo argomento sono valide per i progetti a livello di applicazione per Word 2010. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).
+ **Si applica a:** Le informazioni contenute in questo argomento sono valide per i progetti a livello di applicazione per Word 2010. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
 
  Questa procedura dettagliata illustra le attività seguenti:
 
-- Aggiunta di <xref:Microsoft.Office.Tools.Word.RichTextContentControl> un controllo a un documento in fase di esecuzione.
+- Aggiunta di un controllo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento in fase di esecuzione.
 
 - Associazione del <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controllo ai dati da un servizio Web.
 
@@ -73,7 +73,7 @@ ms.locfileid: "68740115"
 
 6. Nella finestra di dialogo della procedura guidata **Aggiungi riferimento** fare clic su **Fine**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Aggiungere un controllo contenuto ed eseguire l'associazione ai dati in fase di esecuzione
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Aggiungere un controllo contenuto e associarlo ai dati in fase di esecuzione
  Nei progetti di componente aggiuntivo VSTO è possibile aggiungere e associare i controlli in fase di esecuzione. Per questa procedura dettagliata, configurare il controllo contenuto in modo che recuperi i dati dal servizio Web quando un utente fa clic all'interno del controllo.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Per aggiungere un controllo contenuto ed eseguire l'associazione a dati

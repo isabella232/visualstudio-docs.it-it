@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551701"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253744"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -37,7 +37,7 @@ Questo argomento descrive i seguenti aspetti dell'uso degli assembly di interope
 
 - [Elenco completo di assembly di interoperabilità primari per applicazioni di Microsoft Office](#pialist)
 
-Per altre informazioni sugli assembly di interoperabilità primari, vedere assembly di interoperabilità [primari](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+Per altre informazioni sugli assembly di interoperabilità primari, vedere [assembly di interoperabilità primari](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 <a name="separateassemblies"></a>
 
@@ -66,7 +66,7 @@ A partire da Visual Studio 2017, queste copie degli assembly di interoperabilit�
 - (o *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools per Office\PIA\* in sistemi operativi a 64 bit)
 
 > [!NOTE]
-> Per le versioni precedenti di Visual Studio, questi assembly di interoperabilità primari vengono installati nella cartella Strumenti di Visual Studio per Office\PIA nella cartella *% ProgramFiles% per la versione di Visual Studio.  
+> Per le versioni precedenti di Visual Studio, questi assembly di interoperabilità primari vengono installati nella cartella Strumenti di Visual Studio per Office\PIA nella cartella *% ProgramFiles% per la versione di Visual Studio.
 > Ad esempio: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Strumenti di Visual Studio per Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assembly di interoperabilità primari nel Global Assembly Cache
@@ -121,7 +121,7 @@ Nella tabella seguente sono elencati gli assembly di interoperabilità primari [
 
 ### <a name="binding-redirect-assemblies"></a>Assembly di reindirizzamento di associazione
 
-Quando si installano e registrano gli assembly di interoperabilità primari di Office nella Global Assembly Cache (tramite Office o installando il pacchetto ridistribuibile per gli assembly di interoperabilità primari), gli assembly di reindirizzamento delle associazioni sono anche installati solo nella Global Assembly Cache. Questi assembly consentono di verificare che la versione corretta degli assembly di interoperabilità primari venga caricata in fase di esecuzione.
+Quando si installano e registrano gli assembly di interoperabilità primari di Office nella Global Assembly Cache (tramite Office o installando il pacchetto ridistribuibile per gli assembly di interoperabilità primari), gli assembly di reindirizzamento delle associazioni sono anche installati solo nella Global Assembly Cache. Questi assembly consentono di verificare che in fase di esecuzione venga caricata la versione corretta degli assembly di interoperabilità primari.
 
 Quando ad esempio una soluzione che fa riferimento a un assembly di interoperabilità primario di [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] viene eseguita in un computer in cui è installata la versione [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dello stesso assembly, l'assembly di reindirizzamento delle associazioni indica al runtime di [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] i caricare la versione [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] dell'assembly di interoperabilità primario.
 

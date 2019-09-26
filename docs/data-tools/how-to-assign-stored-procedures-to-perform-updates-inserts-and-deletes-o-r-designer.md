@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 58dfb1016097429eeab10c3b50262adc7015e818
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3dfb55425934f00de41af7997ed1ed4b5a9bcf42
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260797"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252992"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)
 
-È possibile aggiungere stored procedure a **Object Relational Designer** ed eseguirle come metodi <xref:System.Data.Linq.DataContext> tipici. Possono inoltre essere utilizzati per sostituire il valore predefinito LINQ al comportamento di runtime SQL che esegue i comandi di inserimento, aggiornamento ed eliminazione durante il salvataggio delle modifiche dalle classi di entità in un database (ad esempio, quando si chiama il <xref:System.Data.Linq.DataContext.SubmitChanges%2A> (metodo)).
+È possibile aggiungere stored procedure a **Object Relational Designer** ed eseguirle come metodi <xref:System.Data.Linq.DataContext> tipici. Possono inoltre essere utilizzati per eseguire l'override del comportamento predefinito del LINQ to SQL Runtime che esegue inserimenti, aggiornamenti ed eliminazioni quando le modifiche vengono salvate dalle classi di entità in un database, ad esempio <xref:System.Data.Linq.DataContext.SubmitChanges%2A> quando si chiama il metodo.
 
 > [!NOTE]
-> Se le stored procedure restituiscono valori che devono essere inviati al client, ad esempio valori calcolati nelle stesse stored procedure, creare parametri di output all'interno di esse. Se non è possibile usare parametri di output, è preferibile scrivere l'implementazione di un metodo parziale anziché basarsi sugli override generati da Progettazione relazionale oggetti. I membri con mapping ai valori generati dal database devono essere impostati su valori appropriati dopo il completamento delle operazioni INSERT o UPDATE. Per altre informazioni, vedere [responsabilità di sviluppatore nell'override del comportamento predefinito](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
+> Se le stored procedure restituiscono valori che devono essere inviati al client, ad esempio valori calcolati nelle stesse stored procedure, creare parametri di output all'interno di esse. Se non è possibile usare parametri di output, è preferibile scrivere l'implementazione di un metodo parziale anziché basarsi sugli override generati da Progettazione relazionale oggetti. I membri con mapping ai valori generati dal database devono essere impostati su valori appropriati dopo il completamento delle operazioni INSERT o UPDATE. Per altre informazioni, vedere [responsabilità dello sviluppatore nell'override del comportamento predefinito](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
-> LINQ to SQL gestisce i valori generati dal database automaticamente per identity (incremento automatico), rowguidcol (GUID generato dal database) e colonne di tipo timestamp. I valori degli altri tipi di colonne sono costituiti da valori null non previsti. Per restituire i valori generati dal database, è necessario impostare manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> al **true** e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> a uno dei seguenti: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), o [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> LINQ to SQL gestisce automaticamente i valori generati dal database per le colonne Identity (incremento automatico), ROWGUIDCOL (GUID generato dal database) e timestamp. I valori degli altri tipi di colonne sono costituiti da valori null non previsti. Per restituire i valori generati dal database, è necessario impostare <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> manualmente su **true** e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> su uno degli elementi seguenti: [AutoSync. always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)o [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Configurare il comportamento di aggiornamento di una classe di entità
 
-Per impostazione predefinita, la logica per aggiornare un database (inserimenti, aggiornamenti ed eliminazioni) con le modifiche apportate ai dati nelle query LINQ alle classi di entità SQL avviene tramite il runtime LINQ to SQL. Nel runtime vengono creati comandi INSERT, UPDATE, and DELETE predefiniti basati sullo schema della tabella (informazioni sulla colonna e sulla chiave primaria). Quando non si vuole usare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento assegnando stored procedure specifiche per l'esecuzione dei comandi di inserimento, aggiornamento ed eliminazione necessari per modificare i dati nella tabella. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Infine, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure.
+Per impostazione predefinita, la logica per aggiornare un database (inserimenti, aggiornamenti ed eliminazioni) con le modifiche apportate ai dati nelle classi di entità LINQ to SQL viene fornita dal runtime di LINQ to SQL. Nel runtime vengono creati comandi INSERT, UPDATE, and DELETE predefiniti basati sullo schema della tabella (informazioni sulla colonna e sulla chiave primaria). Quando non si vuole usare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento assegnando stored procedure specifiche per l'esecuzione dei comandi di inserimento, aggiornamento ed eliminazione necessari per modificare i dati nella tabella. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Infine, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -51,7 +51,7 @@ Per impostazione predefinita, la logica per aggiornare un database (inserimenti,
 
 8. Selezionare la stored procedure desiderata nell'elenco **Personalizza**.
 
-9. Controllare l'elenco di **Argomenti metodo** e **Proprietà classe** per verificare che venga eseguito il mapping degli **Argomenti metodo** alle **Proprietà classe** appropriate. Eseguire il mapping degli argomenti di metodo originali (`Original_<ArgumentName>`) alle proprietà originali (`<PropertyName> (Original)`) per il `Update` e `Delete` comandi.
+9. Controllare l'elenco di **Argomenti metodo** e **Proprietà classe** per verificare che venga eseguito il mapping degli **Argomenti metodo** alle **Proprietà classe** appropriate. Eseguire il mapping degli argomenti del`Original_<ArgumentName>`metodo originali () alle proprietà`<PropertyName> (Original)`originali () `Update` per `Delete` i comandi e.
 
     > [!NOTE]
     > Per impostazione predefinita, viene eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se non vi è più corrispondenza tra i nomi modificati nella tabella e nella classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente a cui eseguire il mapping nel caso in cui la finestra di progettazione non sia in grado di determinare il mapping corretto.
@@ -59,7 +59,7 @@ Per impostazione predefinita, la logica per aggiornare un database (inserimenti,
 10. Fare clic su **OK** o **Applica**.
 
     > [!NOTE]
-    > È possibile continuare a configurare il comportamento per ogni combinazione classe e il comportamento, purché si fa clic su **applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, una finestra di dialogo di avviso viene visualizzato e offre la possibilità di applicare le modifiche.
+    > È possibile continuare a configurare il comportamento per ogni combinazione di classe e comportamento, purché si faccia clic su **applica** dopo avere apportato ogni modifica. Se si modifica la classe o il comportamento prima di fare clic su **applica**, viene visualizzata una finestra di dialogo di avviso che offre la possibilità di applicare le modifiche.
 
 Per ripristinare l'uso della logica di runtime predefinita per gli aggiornamenti, fare clic sui puntini di sospensione accanto al comando **Insert**, **Update** o **Delete** nella finestra **Proprietà** e quindi selezionare **Usa fase di esecuzione** nella finestra di dialogo **Configura comportamento**.
 
@@ -68,4 +68,4 @@ Per ripristinare l'uso della logica di runtime predefinita per gli aggiornamenti
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metodi DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
-- [Inserire, aggiornare ed eliminare operazioni (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)
+- [Operazioni di inserimento, aggiornamento ed eliminazione (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69976699"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
-Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto vs possono raggruppare in modo pratico tipi simili [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di progetti in utilizzando l'annidamento del *progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.
+Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto vs possono raggruppare in modo pratico tipi simili [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di progetti in utilizzando l' *annidamento del progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.
 
  In questo scenario non esiste alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, sebbene lo sviluppatore possa fornire i limiti a livello di codice. Questo tipo di raggruppamento può anche essere reso ricorsivo, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere annidati sotto l'elemento figlio per diventare un sottoprogetto del figlio, che è un sottoprogetto dell'elemento padre.
 

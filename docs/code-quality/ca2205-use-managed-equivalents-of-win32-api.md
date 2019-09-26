@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6481bbcca68c7471e4f25c7629e3b55fa407d175
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: ad26dcbbbef5a34796ca0aa134653c3c9df5d763
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231711"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253264"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Usare equivalenti gestiti dell'API Win32
 
@@ -39,7 +39,7 @@ Viene definito un metodo di platform invoke e in .NET esiste un metodo con la fu
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Un metodo di Platform Invoke viene usato per chiamare una funzione dll non gestita e viene definito usando l' <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attributo o la `Declare` parola chiave in Visual Basic. Un metodo di platform invoke definito in modo non corretto può causare eccezioni di runtime a causa di problemi quali una funzione senza nome, un mapping errato di tipi di dati di parametri e valori restituiti e specifiche di campo non corrette, ad esempio la convenzione di chiamata e il carattere set. Se disponibile, è più semplice e meno soggetta a errori chiamare il metodo gestito equivalente rispetto alla definizione e alla chiamata diretta del metodo non gestito. La chiamata a un metodo di platform invoke può anche causare problemi di sicurezza aggiuntivi che devono essere risolti.
+Un metodo di Platform Invoke viene usato per chiamare una funzione dll non gestita e viene definito usando l' <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attributo o la `Declare` parola chiave in Visual Basic. Un metodo di platform invoke definito in modo non corretto può causare eccezioni in fase di esecuzione a causa di problemi quali una funzione senza nome, il mapping errato di tipi di dati di parametri e valori restituiti e specifiche di campo non corrette, ad esempio la convenzione di chiamata e il carattere set. Se disponibile, è più semplice e meno soggetta a errori chiamare il metodo gestito equivalente rispetto alla definizione e alla chiamata diretta del metodo non gestito. La chiamata a un metodo di platform invoke può anche causare problemi di sicurezza aggiuntivi che devono essere risolti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

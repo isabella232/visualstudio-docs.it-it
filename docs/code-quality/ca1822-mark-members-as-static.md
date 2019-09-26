@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7ebbbbe01f1dd23dfc560e019133dacd3517b388
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233418"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253456"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Contrassegna i membri come statici
 
@@ -34,7 +34,7 @@ ms.locfileid: "71233418"
 Un membro che non accede ai dati dell'istanza non è contrassegnato come static (Shared [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in).
 
 ## <a name="rule-description"></a>Descrizione della regola
-I membri che non accedono ai dati di istanza o non chiamano metodi di istanza possono essere contrassegnati come static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Tramite il compilatore verranno quindi inviati siti di chiamata non virtuali a tali membri. La creazione di siti di chiamata non virtuali impedisce la verifica in fase di esecuzione per ogni chiamata che verifica che il puntatore all'oggetto corrente sia diverso da null. Questo può ottenere un miglioramento delle prestazioni misurabile per il codice sensibile alle prestazioni. In alcuni casi, l'errore di accesso all'istanza dell'oggetto corrente rappresenta un problema di correttezza.
+I membri che non accedono ai dati di istanza o non chiamano metodi di istanza possono essere contrassegnati come static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Tramite il compilatore verranno quindi inviati siti di chiamata non virtuali a tali membri. La creazione di siti di chiamata non virtuali impedirà un controllo in fase di esecuzione per ogni chiamata che verifica che il puntatore all'oggetto corrente sia diverso da null. Questo può ottenere un miglioramento delle prestazioni misurabile per il codice sensibile alle prestazioni. In alcuni casi, l'errore di accesso all'istanza dell'oggetto corrente rappresenta un problema di correttezza.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Contrassegnare il membro come statico (o condiviso [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in) o usare ' This '/' me ' nel corpo del metodo, se appropriato.

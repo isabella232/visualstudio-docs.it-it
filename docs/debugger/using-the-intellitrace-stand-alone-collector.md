@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 5fe671b10a701bb355a476ff9bc577bb4cdca71b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680628"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252525"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Uso dell'agente di raccolta autonomo IntelliTraceC#(, Visual Basic)
 
@@ -315,7 +315,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
   - È possibile ridurre il tempo di avvio disabilitando gli eventi non rilevanti per l'app. Ad esempio, disabilitare gli eventi di Windows Workflow nelle app che non lo usano.
 
-  - È possibile migliorare le prestazioni di avvio e di runtime disabilitando gli eventi del Registro di sistema per le app che accedono al Registro di sistema ma non visualizzano i problemi con le relative impostazioni.
+  - È possibile migliorare le prestazioni di avvio e di runtime disabilitando gli eventi del registro di sistema per le app che accedono al registro di sistema, ma non mostrano problemi con le impostazioni del registro di sistema.
 
 - Esaminare i moduli nel piano di raccolta per il quale IntelliTrace raccoglie i dati. Modificare il piano di raccolta per includere solo i moduli desiderati:
 

@@ -17,34 +17,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939334"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255152"
 ---
 # <a name="bookmark-control"></a>Bookmark (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è un segnalibro con un nome univoco che espone gli eventi e può essere associato ai dati. Può essere usato come segnaposto per contrassegnare un elemento o una posizione in un documento di Microsoft Office Word. Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è una combinazione degli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> e <xref:Microsoft.Office.Interop.Word.Range> .
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Nei progetti a livello di documento, è possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> controlli al documento in fase di progettazione o in fase di esecuzione. Nei progetti di componente aggiuntivo VSTO, è possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> controlli a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli segnalibro ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
+ Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Word.Bookmark> al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Word.Bookmark> a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli Bookmark ai documenti](../vsto/how-to-add-bookmark-controls-to-word-documents.md)di Word.
 
 ## <a name="bind-data-to-the-control"></a>Associare dati al controllo
  Un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> supporta un data binding semplice. Il segnalibro deve essere associato a un'origine dati usando la proprietà <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> . La proprietà di data binding predefinita del segnalibro è <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> .
 
- Se i dati in set di dati associato vengono aggiornati, il <xref:Microsoft.Office.Tools.Word.Bookmark> controllo Mostra le modifiche.
+ Se i dati nel set di dati associato vengono aggiornati, <xref:Microsoft.Office.Tools.Word.Bookmark> il controllo Visualizza le modifiche.
 
- Nei progetti a livello di documento è anche possibile associare i dati ai segnalibri usando la finestra **Origini dati** . Per altre informazioni, vedere [Procedura: Popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md).
+ Nei progetti a livello di documento è anche possibile associare i dati ai segnalibri usando la finestra **Origini dati** . Per altre informazioni, vedere [Procedura: Compilare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Formattazione
- La formattazione applicabile a <xref:Microsoft.Office.Interop.Word.Bookmark> può essere applicata anche a un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> . Questo tipo di formattazione include i tipi di carattere, rientri, spaziatura, numerazione e stili.
+ La formattazione applicabile a <xref:Microsoft.Office.Interop.Word.Bookmark> può essere applicata anche a un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> . Questa formattazione include tipi di carattere, rientri, spaziatura, numerazione e stili.
 
-## <a name="assign-text-to-the-bookmark"></a>Assegna un testo al segnalibro
+## <a name="assign-text-to-the-bookmark"></a>Assegna testo al segnalibro
  Un'altra differenza tra un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> e un controllo <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> riguarda il comportamento tenuto quando viene assegnato un testo al segnalibro. Se si assegna un testo a un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>di lunghezza zero, il testo viene aggiunto alla destra del segnalibro e il segnalibro resta di lunghezza zero. Tuttavia, se si assegna un testo a un controllo <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>di lunghezza zero, il testo viene inserito nel segnalibro e la lunghezza del segnalibro aumenta per il numero totale di caratteri inseriti.
 
- Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> ha anche la proprietà <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> , Questa proprietà è diversa dal <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> proprietà che è disponibile nel <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> proprietà di un <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> (controllo), o il <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> proprietà di un <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> oggetto.
+ Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> ha anche la proprietà <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> , Questa <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> proprietà è diversa dalla proprietà disponibile <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> nella proprietà di <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> un <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> controllo o dalla proprietà di un <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> oggetto.
 
 |Proprietà Text|Descrizione|
 |-------------------|-----------------|
@@ -55,7 +55,7 @@ ms.locfileid: "62939334"
  Nei progetti a livello di documento, quando si trascina un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> dalla **casella degli strumenti** al documento, Visual Studio genera automaticamente un nome per il controllo, che può essere modificato nella finestra **Proprietà** .
 
 ## <a name="overlapping-controls"></a>Sovrapposizione di controlli
- I controlli Bookmark possono sovrapporsi tra loro. Lo stesso testo può essere condiviso da più di un segnalibro. Quando si assegna il nuovo testo a uno dei segnalibri sovrapposti, contiene solo il nuovo testo e i segnalibri non si sovrappongono più. L'altro segnalibro conterrà solo il testo che non è stato condiviso tra i segnalibri precedentemente sovrapposti.
+ I controlli Bookmark possono sovrapporsi. Lo stesso testo può essere condiviso da più di un segnalibro. Quando si assegna un nuovo testo a uno dei segnalibri sovrapposti, questo contiene solo il nuovo testo e i segnalibri non sono più sovrapposti. L'altro segnalibro ora contiene solo il testo non condiviso tra i segnalibri sovrapposti originali.
 
  La tabella seguente mostra in che modo la frase "This is sample text." è condiviso da due segnalibri sovrapposti:
 
@@ -65,7 +65,7 @@ ms.locfileid: "62939334"
 |Segnalibro1|This is sample|
 |Segnalibro2|sample text.|
 
- Se si assegna il nuovo testo "This is replacement." al segnalibro1, i segnalibri non si sovrappongano e segnalibro2 visualizzerà solo il testo che non è stato originariamente parte di segnalibro1.
+ Se si assegna il nuovo testo "This is replacement." per Segnalibro1, i segnalibri non si sovrappongono e Bookmark2 mantiene solo il testo che non era originariamente parte di Segnalibro1.
 
 |Segnalibro|Testo|
 |--------------|----------|
@@ -73,9 +73,9 @@ ms.locfileid: "62939334"
 |Segnalibro1|This is replacement|
 |Segnalibro2|text.|
 
-Se si modifica il testo di un segnalibro che contiene un altro segnalibro, il segnalibro interno non viene eliminato. Tuttavia, il segnalibro interno diventa un segnalibro vuoto e sposta alla fine del segnalibro esterno.
+Se si modifica il testo di un segnalibro che contiene un altro segnalibro, il segnalibro interno non viene eliminato. Tuttavia, il segnalibro interno diventa un segnalibro vuoto e viene spostato alla fine del segnalibro esterno.
 
-La tabella seguente mostra in che modo la frase "This is sample text." è condiviso da un segnalibro all'interno di un altro segnalibro:
+La tabella seguente mostra in che modo la frase "This is sample text." è condiviso da un segnalibro contenuto in un altro segnalibro:
 
 |Segnalibro|Testo|
 |--------------|----------|
@@ -87,7 +87,7 @@ La tabella seguente mostra in che modo la frase "This is sample text." è condiv
 
 |Segnalibro|Testo|
 |--------------|----------|
-|Due segnalibri separati|[è sostituzione].{}|
+|Due segnalibri separati|[si tratta di una sostituzione.]{}|
 |Segnalibro1|This is replacement.|
 |Segnalibro2|*\<empty>*|
 
@@ -111,8 +111,8 @@ Gli eventi seguenti sono disponibili per il controllo <xref:Microsoft.Office.Too
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Automazione di Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
-- [Procedura: Aggiungere controlli segnalibro ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Procedura dettagliata: Creare i menu di scelta rapida per segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
+- [Procedura: Aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Procedura dettagliata: Creare menu di scelta rapida per i segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
