@@ -7,19 +7,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918362"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301701"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Panoramica di agenti di test e test controller per i test di carico
 
 Visual Studio è in grado di generare un carico simulato per l'app usando macchine virtuali o fisiche. Questi computer devono essere configurati in modo da avere un solo controller di test e uno o più agenti di test. È possibile usare il controller di test e gli agenti di test per generare un carico maggiore rispetto a quello che può essere generato da un singolo computer.
 
 > [!NOTE]
-> È anche possibile usare il test di carico basato su cloud per specificare le macchine virtuali che generano il caricamento di molti utenti che accedono al sito Web contemporaneamente. Altre informazioni sui test di carico basati su cloud sono disponibili nell'articolo relativo all'[esecuzione di test di carico con Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> È anche possibile usare il test di carico basato su cloud per specificare le macchine virtuali che generano il caricamento di molti utenti che accedono al sito Web contemporaneamente. Tuttavia, l'uso del programma di installazione dell'agente di test controller/test nelle macchine virtuali ospitate nel cloud non è supportato. Altre informazioni sui test di carico basati su cloud sono disponibili nell'articolo relativo all'[esecuzione di test di carico con Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -37,7 +37,7 @@ Questa architettura offre i vantaggi seguenti:
 
 - La possibilità di scalare in orizzontale la generazione del carico aggiungendo altri agenti di test a un controller di test.
 
-- La flessibilità di installare il software del client, del controller di test e degli agenti di test nello stesso computer o in computer diversi. Ad esempio:
+- La flessibilità di installare il software del client, del controller di test e degli agenti di test nello stesso computer o in computer diversi. Esempio:
 
    **Configurazione locale:**
 

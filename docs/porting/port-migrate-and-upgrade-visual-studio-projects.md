@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f2a49ae76d69f30691366f9b32cef2a6170284f8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 0cf6686cfde6c588c59e3dcec4065332df4daa01
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688063"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301653"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio
 
@@ -47,7 +47,7 @@ Se non viene visualizzato un progetto o non viene elencato un tipo di file che d
 
 | Tipo di progetto | Supporto |
 | --- | --- |
-| Progetti .NET Core (xproj) | I progetti creati con Visual Studio 2015 usano strumenti di anteprima che includono un file di progetto xproj. Quando si apre un file xproj con Visual Studio 2017, viene chiesto di eseguire la migrazione del file nel formato con estensione csproj. Viene anche eseguito un backup del file xproj. Questo formato csproj per i progetti .NET Core non è supportato in Visual Studio 2015 e versioni precedenti.  Il formato xproj non è supportato in Visual Studio 2017 tranne che per la migrazione a csproj. Per altre informazioni, vedere [Migrazione di progetti .NET Core nel formato di file con estensione csproj](/dotnet/core/migration/#visual-studio-2017).|
+| Progetti .NET Core (xproj) | I progetti creati con Visual Studio 2015 usano strumenti di anteprima che includono un file di progetto xproj.<br/><br/>Visual Studio 2017: Il formato xproj non è supportato per la migrazione al formato csproj. Quando si apre un file xproj, viene richiesto di eseguire la migrazione del file nel formato csproj in stile SDK. Viene eseguito un backup del file xproj. I progetti csproj di tipo SDK non sono supportati in Visual Studio 2015 e versioni precedenti. <br/><br/>Visual Studio 2019: Nella versione 16,3 e successive non è possibile caricare o migrare progetti xproj. Per altre informazioni, vedere [Migrazione di progetti .NET Core nel formato di file con estensione csproj](/dotnet/core/migration/#visual-studio-2017).|
 | Applicazione Web ASP.NET e applicazione Web ASP.NET Core con Application Insights abilitato | Per ogni utente di Visual Studio, le informazioni sulle risorse sono memorizzate nel Registro di sistema per ogni istanza utente. Queste informazioni vengono usate quando l'utente non ha un progetto aperto e vuole eseguire una ricerca nei dati di Azure Application Insights. Visual Studio 2015 usa un percorso del Registro di sistema diverso da quello di Visual Studio 2017 e non è in conflitto.<br/><br/>Quando un utente crea un'applicazione Web ASP.NET o un'applicazione Web ASP.NET Core, la risorsa viene archiviata nel file SUO. L'utente può aprire il progetto in Visual Studio 2015 o 2017 e le informazioni sulle risorse vengono usate per entrambi purché Visual Studio supporti i progetti e le soluzioni in uso in entrambe le versioni. Gli utenti devono eseguire l'autenticazione una sola volta in ogni prodotto. Ad esempio, se un progetto viene creato con Visual Studio 2015 e aperto in Visual Studio 2017, l'utente deve eseguire l'autenticazione in Visual Studio 2017. |
 | Windows Form o Webform in C#/Visual Basic | È possibile aprire il progetto in Visual Studio 2017 e Visual Studio 2015. |
 | Progetti di unit test del database (csproj, vbproj) | I progetti di unit test meno recenti vengono caricati in Visual Studio 2017, ma usano la versione GAC delle dipendenze. Per aggiornare il progetto di unit test in modo da usare le dipendenze più recenti, fare clic con il pulsante destro sul progetto in Esplora soluzioni e selezionare **Converti nel progetto di unit test di SQL Server...** . |
