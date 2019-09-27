@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987745"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322539"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 Gli strumenti **Struttura ad albero visuale attiva** ed **Esplora proprietà attive** offrono un punto di vista in tempo reale sul codice XAML. Questi strumenti offrono una visualizzazione albero degli elementi dell'interfaccia utente dell'applicazione XAML in esecuzione e mostrano le proprietà di runtime di qualsiasi elemento dell'interfaccia utente selezionato.
@@ -81,7 +81,10 @@ Aprire quindi la finestra **Struttura ad albero visuale attiva** (**Debug > Fine
 
 Tornare alla finestra dell'applicazione e aggiungere altri elementi. Nella finestra **Albero elementi visivi attivi** dovrebbero venire visualizzati altri elementi casella di riepilogo.
 
-Esaminare ora le proprietà di uno degli elementi casella di riepilogo. Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo **Contenuto** è "Item1" e il campo **Sfondo** è **#FFFFFFE0** (giallo chiaro). Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. In **Esplora proprietà attive** il campo **Contenuto** dovrebbe essere "Item2" e il campo **Sfondo** **#FFD3D3D3** (grigio chiaro).
+Esaminare ora le proprietà di uno degli elementi casella di riepilogo. Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo del **contenuto** è "Item1" e il campo del**colore** di **sfondo** > è **#FFFFFFE0**. Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe indicare che il campo **contenuto** è "Item2" e che il campo del**colore** di **sfondo** > è **#FFD3D3D3**.
+
+> [!NOTE]
+> Un bordo giallo intorno a una proprietà in **Esplora proprietà attive** significa che il valore della proprietà viene impostato tramite un'associazione, ad `Color = {BindingExpression}`esempio. Un bordo verde indica che il valore viene impostato utilizzando una risorsa, ad esempio `Color = {StaticResource MyBrush}`.
 
 La struttura effettiva del codice XAML include numerosi elementi a cui probabilmente non si è direttamente interessati e se non si conosce bene il codice potrebbe risultare difficile esplorare l'albero per trovare ciò che si sta cercando. Lo strumento **Struttura ad albero visuale attiva** offre alcuni modi per usare l'interfaccia utente dell'applicazione per individuare l'elemento che si vuole esaminare.
 

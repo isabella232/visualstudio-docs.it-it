@@ -5,43 +5,43 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
-ms.openlocfilehash: e7de368dd26bf2724a7bc060dade46422817da1e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 7135dd05c687e3caed3ee64618ff71c093f4cd63
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213759"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322590"
 ---
 # <a name="launchsettingsjson"></a>launchSettings. JSON
 
-Quando si sviluppano progetti di ASP.NET Core, è possibile configurare la modalità di avvio del progetto in scenari di sviluppo personalizzando il `launchSettings.json` contenuto del file. In Visual Studio per Mac, è possibile aggiornare questo file usando l'interfaccia utente delle opzioni del progetto o modificando `launchSettings.json` direttamente il file. Si tratta dello stesso file di configurazione che può essere usato quando si esegue Visual Studio in Windows o dalla riga di comando `dotnet`usando. Questo file viene archiviato nel progetto `Properties` nella cartella.
+Quando si sviluppano progetti di ASP.NET Core, è possibile configurare la modalità di avvio del progetto in scenari di sviluppo personalizzando il contenuto del file launchSettings. JSON. In Visual Studio per Mac, è possibile aggiornare questo file usando l'interfaccia utente delle opzioni del progetto o modificando direttamente il file. Si tratta dello stesso file di configurazione che è possibile usare quando si esegue Visual Studio in Windows o dalla riga di comando `dotnet`tramite. Questo file viene archiviato nel progetto nella cartella Proprietà.
 
-Per informazioni più dettagliate, è possibile passare a [usare più ambienti in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/environments). In questo documento verrà illustrato come aggiornare il file in Visual Studio per Mac.
+Per informazioni più dettagliate, vedere [usare più ambienti in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/environments). Questo articolo illustra come aggiornare il file in Visual Studio per Mac.
 
-## <a name="updating-start-configuration-using-visual-studio-for-mac"></a>Aggiornamento della configurazione di avvio tramite Visual Studio per Mac
+## <a name="update-the-start-configuration-by-using-visual-studio-for-mac"></a>Aggiornare la configurazione di avvio usando Visual Studio per Mac
 
-È possibile modificare direttamente il `launchSettings.json` in Visual Studio per Mac oppure è possibile usare le opzioni del progetto per modificarlo. Per ottenere le opzioni del progetto, fare clic con il pulsante destro del mouse sul progetto e scegliere Opzioni. Vedere l'immagine seguente.
+È possibile modificare direttamente il file launchSettings. JSON in Visual Studio per Mac oppure è possibile usare le opzioni del progetto per modificarlo. Per ottenere le opzioni del progetto, fare clic con il pulsante destro del mouse sul progetto e scegliere **Opzioni**.
 
-![opzioni del menu di scelta rapida del progetto selezionate](media/vsmac-ctx-proj-options.png)
+![Menu di scelta rapida del progetto con "Options" selezionato](media/vsmac-ctx-proj-options.png)
 
-Quando si accede a questa finestra di dialogo, fare clic su Esegui > Configurazioni > predefinita.
+Selezionare **Esegui** > configurazionipredefinite > .
 
-![configurazioni di esecuzione predefinite](media/vsmac-run-config-default.png)
+!["Run", "Configurations" e "default" nelle opzioni del progetto](media/vsmac-run-config-default.png)
 
-Ci sono principalmente due cose che verranno configurate qui.
+Principalmente, verranno configurati due elementi:
 
- - Variabili di ambiente impostate all'avvio
- - URL iniziale per il progetto
+ - Variabili di ambiente
+ - URL app per il progetto
 
 ## <a name="configure-environment-variables"></a>Configurare le variabili di ambiente
 
-È possibile utilizzare la griglia per specificare i valori per le variabili di ambiente. Queste variabili di ambiente verranno impostate quando si avvia l'applicazione all'interno Visual Studio per Mac. Quando si sviluppano applicazioni di ASP.NET Core, è necessario essere a `ASPNETCORE_ENVIRONMENT` conoscenza della variabile di ambiente speciale. Per altre informazioni, vedere [usare più ambienti in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/environments).
+È possibile utilizzare la griglia per specificare i valori per le variabili di ambiente. Queste variabili di ambiente verranno impostate quando si avvia l'applicazione in Visual Studio per Mac. Quando si sviluppano applicazioni ASP.NET Core, è necessario essere a conoscenza della variabile `ASPNETCORE_ENVIRONMENT` di ambiente speciale. Per altre informazioni, vedere [usare più ambienti in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/environments).
 
 
-## <a name="configure-start-url"></a>Configura URL iniziale
+## <a name="configure-the-start-url"></a>Configurare l'URL iniziale
 
-Per configurare l'URL con cui verrà avviata l'applicazione, passare alla scheda ASP.NET Core.
+Per configurare l'URL con cui verrà avviata l'applicazione, passare alla scheda **ASP.NET Core** .
 
-![URL iniziale delle opzioni proj](media/vsmac-run-config-default-aspnetcore.png)
+![URL applicazione nelle opzioni del progetto](media/vsmac-run-config-default-aspnetcore.png)
 
-Qui è possibile specificare gli URL su cui l'applicazione resterà in ascolto quando viene avviata.
+Qui è possibile specificare l'URL su cui l'applicazione resterà in ascolto quando viene avviata.
