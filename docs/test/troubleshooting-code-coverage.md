@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079589"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342484"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
@@ -29,6 +29,7 @@ Per altre informazioni, vedere [Usare la funzionalità code coverage per determi
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Cause possibili per la restituzione di nessun risultato o di risultati obsoleti
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>L'edizione di Visual Studio in uso è corretta?
+
 È necessario Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Nessun test è stato eseguito
@@ -43,7 +44,7 @@ Risoluzione: in Esplora test scegliere **Esegui tutto** per verificare che i tes
 
 Quando si modificano e si rieseguono i test, i risultati di un code coverage precedente possono rimanere visibili, inclusa la colorazione del codice dell'esecuzione precedente.
 
-1. Eseguire Analizza code coverage.
+1. Eseguire **Analizza code coverage**.
 
 2. Verificare che sia stato selezionato il set di risultati più recente nella finestra **Risultati code coverage**.
 

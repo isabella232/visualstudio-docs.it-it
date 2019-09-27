@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150119"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342366"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
 
@@ -40,7 +40,7 @@ Per personalizzare il code coverage, seguire questa procedura:
 
 ::: moniker range=">=vs-2019"
 
-3. Per selezionare il file di impostazioni esecuzione test, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Per selezionare il file di impostazioni esecuzione test, scegliere **Seleziona file di impostazioni**dal menu **test** . Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Per attivare e disattivare le impostazioni personalizzate, deselezionare o selez
 
 ::: moniker range=">=vs-2019"
 
-Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **Impostazioni** in **Esplora test**.
+Per attivare e disattivare le impostazioni personalizzate, deselezionare o selezionare il file nel menu **test** .
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ La tabella seguente illustra i diversi modi in cui è possibile trovare una corr
 | ModulePath | Corrisponde agli assembly specificati in base al nome dell'assembly o al percorso del file. |
 | CompanyName | Corrisponde agli assembly in base all'attributo **Company** . |
 | PublicKeyToken | Corrisponde agli assembly firmati dal token di chiave pubblica. |
-| Origine | Corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti. |
+| Source | Corrisponde agli elementi in base al nome del percorso del file di origine in cui sono definiti. |
 | Attributo | Corrisponde a elementi con l'attributo specificato. Specificare il nome completo dell'attributo, ad esempio `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se si esclude l'attributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, il codice che usa funzionalità del linguaggio come `async`, `await`, `yield return` e le proprietà implementate automaticamente viene escluso dall'analisi code coverage. Per escludere il codice effettivamente generato, escludere solo l'attributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
 | Funzione | Corrisponde a procedure, funzioni o metodi in base al nome completo, incluso l'elenco di parametri. È inoltre possibile far corrispondere parte del nome utilizzando un' [espressione regolare](#regular-expressions).<br/><br/>Esempi:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
@@ -270,7 +270,7 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
-            
+
             <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
             <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->

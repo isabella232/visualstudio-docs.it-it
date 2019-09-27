@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6a709a59e85f65cf2e0caa0551610dd496bedda5
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253744"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342498"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -61,13 +61,13 @@ Queste copie degli assembly di interoperabilità primari contribuiscono a evitar
 
 A partire da Visual Studio 2017, queste copie degli assembly di interoperabilità primari vengono installate nei percorsi condivisi seguenti nel computer di sviluppo:
 
-- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools per Office\PIA\*
+- `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
-- (o *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools per Office\PIA\* in sistemi operativi a 64 bit)
+- (o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` nei sistemi operativi a 64 bit)
 
 > [!NOTE]
-> Per le versioni precedenti di Visual Studio, questi assembly di interoperabilità primari vengono installati nella cartella Strumenti di Visual Studio per Office\PIA nella cartella *% ProgramFiles% per la versione di Visual Studio.
-> Ad esempio: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Strumenti di Visual Studio per Office\PIA\*
+> Per le versioni precedenti di Visual Studio, questi assembly di interoperabilità primari vengono installati nella cartella Strumenti di Visual Studio per Office\PIA nella cartella `%ProgramFiles%` per la versione di Visual Studio.
+> Ad esempio: `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assembly di interoperabilità primari nel Global Assembly Cache
 
@@ -86,7 +86,7 @@ Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly
 Se sono stati installati e registrati gli assembly di interoperabilità primari nella Global Assembly Cache, queste versioni appariranno nella scheda **COM** della finestra di dialogo **Gestione riferimenti** . Evitare di aggiungere riferimenti a queste versioni degli assembly, perché possono verificarsi alcuni problemi di sviluppo durante il loro uso. Ad esempio, se sono state registrate versioni differenti degli assembly di interoperabilità primari nella Global Assembly Cache, il progetto verrà automaticamente associato all'ultima versione registrata dell'assembly, anche se è stata specificata una versione differente nella scheda **COM** della finestra di dialogo **Gestione riferimenti** .
 
 > [!NOTE]
-> Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, i riferimenti agli assembly *Office. dll* e *Microsoft. Vbe. Interop. dll* vengono aggiunti automaticamente quando si aggiunge un riferimento agli assembly di Word, Excel, Outlook, Microsoft Forms o Graph.
+> Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, i riferimenti agli assembly `Office.dll` e `Microsoft.Vbe.Interop.dll` vengono aggiunti automaticamente quando si aggiunge un riferimento agli assembly di Word, Excel, Outlook, Microsoft Forms o Graph.
 
 <a name="pialist"></a>
 

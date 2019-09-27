@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 799d3f23a6b4e269c08bc889461596178e71b4c8
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251824"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342496"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test usando un file con estensione *runsettings*
 
@@ -38,11 +38,11 @@ Il file viene visualizzato nel menu Impostazioni test e può essere selezionato 
 
 ::: moniker range=">=vs-2019"
 
-Per specificare un file di impostazioni esecuzione test nell'IDE, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Individuare e selezionare il file con estensione *runsettings*.
+Per specificare un file di impostazioni esecuzione test nell'IDE, selezionare **Test** > **selezionare file di impostazioni**. Individuare e selezionare il file con estensione *runsettings*.
 
-![Selezionare il menu di file di impostazioni test in Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+![Selezionare il menu di file di impostazioni test in Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-Il file viene visualizzato nel menu Impostazioni test in Esplora test e può essere selezionato o deselezionato. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si seleziona **Analizza code coverage**.
+Il file viene visualizzato nel menu test ed è possibile selezionarlo o deselezionarlo. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si seleziona **Analizza code coverage**.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Per personalizzare i test usando un file con estensione *runsettings*, seguire q
 
 ::: moniker range=">=vs-2019"
 
-3. Per selezionare il file di impostazioni esecuzione test, in **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Selezionare il file con estensione *runsettings* creato e quindi selezionare **OK**.
+3. Per selezionare il file di impostazioni esecuzione test, scegliere **Test** > **Seleziona file di impostazioni**. Selezionare il file con estensione *runsettings* creato e quindi selezionare **OK**.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ Il codice XML seguente rappresenta il contenuto di un tipico file con estensione
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -157,7 +157,7 @@ Il codice XML seguente rappresenta il contenuto di un tipico file con estensione
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
+          <!-- Change to "false" to only add video attachments to failed tests -->
           <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
         </Configuration>
       </DataCollector>
@@ -207,12 +207,12 @@ Le sezioni che seguono descrivono in dettaglio gli elementi di un file con esten
 
 L'elemento **RunConfiguration** può includere gli elementi seguenti:
 
-|Nodo|Impostazione predefinita|Valori|
+|Node|Impostazione predefinita|Valori|
 |-|-|-|
 |**ResultsDirectory**||Directory in cui vengono inseriti i risultati del test.|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10` per le origini .NET Core, `FrameworkUap10` per le origini basate sulla piattaforma UWP, `Framework45` per .NET Framework 4.5 e versioni successive, `Framework40` per .NET Framework 4.0 e `Framework35` per .NET Framework 3.5.<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.<br /><br />Se si omette l'elemento `TargetFrameworkVersion` dal file con estensione *runsettings*, la piattaforma determina automaticamente la versione del framework sulla base dei file binari compilati.|
 |**TargetPlatform**|x86|x86, x64|
-|**TreatTestAdapterErrorsAsWarnings**|False|false, true|
+|**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Uno o più percorsi della directory in cui si trovano i TestAdapter|
 |**MaxCpuCount**|1|Questa impostazione determina il livello di esecuzione parallela dei test durante l'esecuzione di unit test, in base ai core disponibili nel computer. Il motore di esecuzione dei test viene avviato come processo distinto in ogni core disponibile e assegna a ogni core un contenitore con test da eseguire. Un contenitore può essere un assembly, una DLL o un artefatto pertinente. Il contenitore di test è l'unità di pianificazione. In ogni contenitore, i test vengono eseguiti in base al framework di test. Se sono presenti molti contenitori, non appena termina l'esecuzione dei test in un contenitore, i processi vengono assegnati al successivo contenitore disponibile.<br /><br />MaxCpuCount può essere:<br /><br />n, dove 1 < = n < = numero di core: vengono avviati fino a n processi<br /><br />n, dove n = qualsiasi altro valore: il numero massimo di processi avviati può corrispondere al numero di core disponibili|
 |**TestSessionTimeout**||Consente agli utenti di terminare una sessione di test allo scadere di un timeout specificato. L'impostazione di un timeout assicura un consumo ottimale delle risorse e consente di vincolare le sessioni di test a un periodo di tempo stabilito. L'impostazione è disponibile in **Visual Studio 2017 versione 15.5** e versioni successive.|
@@ -284,18 +284,18 @@ Per usare i parametri di esecuzione dei test, aggiungere un campo <xref:Microsof
 
 Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi di test con l'attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> .
 
-|Configurazione|Impostazione predefinita|Valori|
+|Configurazione|Predefinito|Valori|
 |-|-|-|
-|**ForcedLegacyMode**|False|In Visual Studio 2012, l'adapter MSTest è stato ottimizzato per essere più veloce e più scalabile. Un comportamento, ad esempio l'ordine in cui vengono eseguiti i test, potrebbe non essere esattamente come quello nelle versioni precedenti di Visual Studio. Impostare questo valore su **true** per usare l'adattatore di test precedente.<br /><br />Lo si può usare, ad esempio, nel caso in cui sia presente un file *app.config* specificato per uno unit test.<br /><br />È consigliabile provare a effettuare il refactoring dei test per consentire l'uso dell'adattatore più recente.|
-|**IgnoreTestImpact**|False|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](https://msdn.microsoft.com/library/dd286589).|
+|**ForcedLegacyMode**|false|In Visual Studio 2012, l'adapter MSTest è stato ottimizzato per essere più veloce e più scalabile. Un comportamento, ad esempio l'ordine in cui vengono eseguiti i test, potrebbe non essere esattamente come quello nelle versioni precedenti di Visual Studio. Impostare questo valore su **true** per usare l'adattatore di test precedente.<br /><br />Lo si può usare, ad esempio, nel caso in cui sia presente un file *app.config* specificato per uno unit test.<br /><br />È consigliabile provare a effettuare il refactoring dei test per consentire l'uso dell'adattatore più recente.|
+|**IgnoreTestImpact**|false|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](https://msdn.microsoft.com/library/dd286589).|
 |**SettingsFile**||È possibile specificare un file di impostazioni test da usare con l'adattatore MSTest. È anche possibile specificare un file di impostazioni test [dal menu delle impostazioni](#ide).<br /><br />Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
-|**KeepExecutorAliveAfterLegacyRun**|False|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Anche qualsiasi processo avviato come parte del test verrà interrotto. Per fare in modo che l'executor di test rimanga attivo, impostare questa configurazione su **true**. Lo si può usare, ad esempio, per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|
+|**KeepExecutorAliveAfterLegacyRun**|false|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Anche qualsiasi processo avviato come parte del test verrà interrotto. Per fare in modo che l'executor di test rimanga attivo, impostare questa configurazione su **true**. Lo si può usare, ad esempio, per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|
 |**DeploymentEnabled**|true|Se si imposta il valore su **false**, gli elementi della distribuzione specificati nel metodo di test non vengono copiati nella directory di distribuzione.|
 |**CaptureTraceOutput**|true|È possibile scrivere nella traccia di debug dal metodo di test usando <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Per mantenere la directory di distribuzione dopo un'esecuzione di test, impostare questo valore su **false**.|
-|**MapInconclusiveToFailed**|False|Se un test viene completato senza risultati, ne viene eseguito il mapping allo stato Ignorato in **Esplora test**. Se si vuole che i test senza risultati vengano visualizzati come non superati, impostare il valore su **true**.|
-|**InProcMode**|False|Per fare in modo che i test vengano eseguiti nello stesso processo dell'adattatore MSTest, impostare questo valore su **true**. Questa impostazione fornisce un lieve miglioramento delle prestazioni. Ma se un test termina con un'eccezione, i test rimanenti non vengono eseguiti.|
-|**AssemblyResolution**|False|È possibile specificare i percorsi di assembly aggiuntivi durante la ricerca e l'esecuzione di unit test. Ad esempio, è possibile usare questi percorsi per gli assembly di dipendenza che non si trovano nella stessa directory dell'assembly di test. Per specificare un percorso, usare un elemento **Directory Path**. I percorsi possono includere variabili di ambiente.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**MapInconclusiveToFailed**|false|Se un test viene completato senza risultati, ne viene eseguito il mapping allo stato Ignorato in **Esplora test**. Se si vuole che i test senza risultati vengano visualizzati come non superati, impostare il valore su **true**.|
+|**InProcMode**|false|Per fare in modo che i test vengano eseguiti nello stesso processo dell'adattatore MSTest, impostare questo valore su **true**. Questa impostazione fornisce un lieve miglioramento delle prestazioni. Ma se un test termina con un'eccezione, i test rimanenti non vengono eseguiti.|
+|**AssemblyResolution**|false|È possibile specificare i percorsi di assembly aggiuntivi durante la ricerca e l'esecuzione di unit test. Ad esempio, è possibile usare questi percorsi per gli assembly di dipendenza che non si trovano nella stessa directory dell'assembly di test. Per specificare un percorso, usare un elemento **Directory Path**. I percorsi possono includere variabili di ambiente.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="see-also"></a>Vedere anche
 
