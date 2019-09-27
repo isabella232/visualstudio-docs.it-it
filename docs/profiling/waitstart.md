@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6307dcad45b7e2c8164aa892c4598d577e4ea464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a409a4fe4ffe843df536e3c9e17a3a5a3b6560db
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998959"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322488"
 ---
 # <a name="waitstart"></a>WaitStart
 Con l'opzione WaitStart, il sottocomando Start di *VSPerfCmd.exe* restituisce il controllo solo quando il profiler è stato inizializzato o dopo il numero di secondi specificato. Per impostazione predefinita, il comando Start restituisce il controllo immediatamente. Se il sottocomando Start restituisce il controllo senza inizializzare il profiler, viene restituito un errore. Se non viene specificato il numero di secondi, il comando Start attende per un periodo di tempo illimitato.
@@ -23,7 +23,7 @@ Con l'opzione WaitStart, il sottocomando Start di *VSPerfCmd.exe* restituisce il
 ## <a name="syntax"></a>Sintassi
 
 ```cmd
-VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
+VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 ```
 
 #### <a name="parameters"></a>Parametri
@@ -34,7 +34,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
 
  **Output:** `filename` Specifica il nome del file di output.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 ## <a name="example"></a>Esempio
  In questo esempio di file batch, il comando Start attenderà per 5 secondi l'inizializzazione del profiler.
