@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787648"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342371"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -46,9 +46,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
    > Se l'account non è idoneo per le nuove offerte, nel messaggio di posta elettronica viene spiegato che si è verificato un problema durante la creazione dell'account in quanto non idoneo.  Il messaggio contiene anche informazioni utili per contattare il team di supporto Pluralsight, che può rispondere a eventuali domande relative all'account.
    
 
-6. Una volta che l'account è stato creato correttamente, il messaggio di posta elettronica ricevuto conterrà il nome utente e richiederà di creare una password.  Specificare una password, immetterla nuovamente per confermarla e fare clic su **Log in to Pluralsight** (Accedi a Pluralsight).
-   > [!div class="mx-imgBorder"]
-   > ![Messaggio di benvenuto dei vantaggi Pluralsight](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
+6. Al termine della creazione dell'account, il messaggio di posta elettronica ricevuto conterrà il nome utente e chiederà di creare una password.  Specificare una password, immetterla nuovamente per confermarla e fare clic su **Log in to Pluralsight** (Accedi a Pluralsight).
 
 7. Immettere il nome utente specificato nel messaggio di benvenuto e la password appena creata e fare clic su **Accedi**.
 

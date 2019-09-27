@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490594"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342339"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
@@ -97,13 +97,13 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 ::: moniker range="vs-2017"
 
-8. Scegliere **Seleziona file di impostazioni test** dal menu Test e quindi scegliere *TestSettingDistributedTestWalkthrough.testsettings*.
+8. Nel menu **test** selezionare **impostazioni test** > **Seleziona file di impostazioni test** , quindi scegliere il file *TestSettingDistributedTestWalkthrough. testsettings* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. In **Esplora test** selezionare la freccia sul pulsante **Impostazioni** e quindi selezionare **Seleziona file di impostazioni**. Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
+8. Scegliere **Seleziona file di impostazioni**dal menu **test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 

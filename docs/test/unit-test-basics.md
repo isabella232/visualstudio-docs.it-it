@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891348"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342440"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -26,7 +26,7 @@ Gli unit test offrono i risultati migliori in relazione alla qualità del codice
 
 Esplora test può eseguire anche framework per unit test di terze parti e open source che hanno implementato le interfacce dei componenti aggiuntivi di Esplora test. È possibile aggiungere molti di questi framework tramite Gestione estensioni di Visual Studio e la Visual Studio Gallery. Per altre informazioni, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Attività iniziali
 
 Per un'introduzione agli unit test che mostra direttamente la creazione di codice, vedere uno degli argomenti seguenti:
 
@@ -273,7 +273,7 @@ Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsi
 
 ::: moniker range="vs-2017"
 
-|Button|DESCRIZIONE|
+|Button|Descrizione|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
@@ -299,7 +299,7 @@ Quando è presente un numero elevato di test, è possibile digitare nella casell
 ![Categorie di filtri di ricerca](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
 ::: moniker-end
 
-|Button|DESCRIZIONE|
+|Button|Descrizione|
 |-|-|
 |![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
 
@@ -369,7 +369,7 @@ Altre informazioni sugli [unit test basati sui dati](../test/how-to-create-a-dat
 
 È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione. La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 
-Per eseguire il code coverage per i metodi di test in una soluzione, scegliere **Test** dal menu di Visual Studio e quindi scegliere **Analizza code coverage**.
+Per eseguire code coverage per i metodi di test in una soluzione, scegliere **test** > **per analizzare il code coverage per tutti i test**.
 
 I risultati del code coverage vengono visualizzati nella finestra **Risultati code coverage**.
 

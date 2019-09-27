@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891327"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342457"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -83,7 +83,7 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 ::: moniker range="vs-2017"
-|Button|DESCRIZIONE|
+|Button|Descrizione|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
@@ -151,7 +151,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
 ::: moniker range="vs-2017"
-|Gruppo|DESCRIZIONE|
+|Group|Descrizione|
 |-|-----------------|
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
@@ -159,7 +159,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Gruppo|DESCRIZIONE|
+|Group|Descrizione|
 |-|-----------------|
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
 |**Stato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**, **Non eseguiti**|
@@ -177,7 +177,7 @@ Una tratto è in genere una coppia nome/valore di una categoria, ma può anche e
 
 Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:
 
-|Tratto|DESCRIZIONE|
+|Tratto|Descrizione|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
@@ -266,7 +266,7 @@ Per filtrare in base a un criterio diverso:
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
 
 ::: moniker range="vs-2017"
-|Qualificatore|DESCRIZIONE|
+|Qualificatore|Descrizione|
 |-|-----------------|
 |**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
@@ -277,7 +277,7 @@ Per filtrare in base a un criterio diverso:
 |**Risultato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Qualificatore|DESCRIZIONE|
+|Qualificatore|Descrizione|
 |-|-----------------|
 |**Stato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
@@ -320,6 +320,7 @@ Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, sel
 Per eseguire il code coverage per i metodi di test in una soluzione:
 
 ::: moniker range="vs-2017"
+
 1. Scegliere **Test** dalla barra dei menu in alto e quindi scegliere **Analizza code coverage**.
 
 2. Scegliere uno dei comandi seguenti dal sottomenu:
@@ -327,9 +328,13 @@ Per eseguire il code coverage per i metodi di test in una soluzione:
     - **Test selezionati** esegue i metodi di test selezionati in Esplora test.
 
     - **Tutti i test** esegue tutti i metodi di test nella soluzione.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-* Fare clic con il pulsante destro del mouse in Esplora test e scegliere **Analizza code coverage per i test selezionati**
+
+* Fare clic con il pulsante destro del mouse su Esplora test e scegliere **Analizza code coverage per i test selezionati**
+
 ::: moniker-end
 
 La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
@@ -338,7 +343,7 @@ Per altre informazioni, vedere [Usare la funzionalità code coverage per determi
 
 ## <a name="test-shortcuts"></a>Tasti di scelta rapida per i test
 
-I test possono essere eseguiti da **Esplora test** facendo clic nell'editor di codice in un test e selezionando **Esegui il test**, oppure usando i [tasti di scelta rapida di Esplora test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) predefiniti in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono i test o ne eseguono il debug in base a dove si trova il cursore del mouse nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
+I test possono essere eseguiti da Esplora test facendo clic con il pulsante destro del mouse nell'editor di codice in un test e selezionando **Esegui test** oppure usando i collegamenti predefiniti di [Esplora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) test in Visual Studio. Alcune combinazioni di tasti sono basate sul contesto. Ciò significa che eseguono i test o ne eseguono il debug in base a dove si trova il cursore del mouse nell'editor di codice. Se il cursore si trova all'interno di un metodo di test, il metodo di test viene eseguito. Se il cursore si trova a livello di classe, vengono eseguiti tutti i test presenti nella classe. Lo stesso si verifica per il livello dello spazio dei nomi.
 
 |Comandi frequenti| Tasti di scelta rapida|
 |-|------------------------|

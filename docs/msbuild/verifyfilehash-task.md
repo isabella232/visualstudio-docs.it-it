@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faf7738019680085020b9650094931d5860bc29b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2e7330e750d0f636979f52eacf398ca7d496c523
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577362"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342416"
 ---
 # <a name="verifyfilehash-task"></a>Attività VerifyFileHash
 
@@ -32,11 +32,10 @@ Questa attività è stata aggiunta nella versione 15.8. È tuttavia necessaria u
 
  Nella tabella che segue vengono descritti i parametri dell'attività `VerifyFileHash` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`File`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br />File per i quali generare un hash e da convalidare.|
 |`Hash`|Parametro `String` obbligatorio.<br /><br />Hash file previsto.|
-|`Items`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />Input `Files` con metadati aggiuntivi impostato sul l'hash del file.|
 |`Algorithm`|Parametro `String` facoltativo.<br /><br />Algoritmo. Valori consentiti: `SHA256`, `SHA384`, `SHA512`. Valore predefinito = `SHA256`.|
 |`HashEncoding`|Parametro `String` facoltativo.<br /><br />Codifica da usare per gli hash generati. Il valore predefinito è `hex`. Valori consentiti = `hex`, `base64`.|
 

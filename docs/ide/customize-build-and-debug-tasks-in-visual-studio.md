@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
-ms.translationtype: HT
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291033"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342405"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
 
@@ -256,6 +256,9 @@ Questa sezione descrive alcune delle proprietà che è possibile specificare in 
    ![Pulsante Avvia personalizzato](media/customize-start-button.png)
 
    Quando si sceglie **F5**, il debugger viene avviato e si interrompe in corrispondenza di qualsiasi punto di interruzione già impostato. Tutte le finestre di debug già note sono disponibili e funzionanti.
+
+   > [!IMPORTANT]
+   > Per altri dettagli sulle attività di compilazione e debug personalizzate C++ nei progetti di cartelle aperte, vedere [supporto delle C++ cartelle aperte per i sistemi di compilazione in Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Specificare gli argomenti per il debug
 

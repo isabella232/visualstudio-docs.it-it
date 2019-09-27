@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913200"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342425"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -46,11 +46,11 @@ La funzionalità di code coverage è disponibile solo in Visual Studio Enterpris
 
 ::: moniker range=">=vs-2019"
 
-1. In **Esplora test**selezionare **Analizza code coverage per tutti i test** dal menu **Esegui** .
+1. Scegliere **Analizza code coverage per tutti i test**dal menu **test** .
 
    ![Menu di code coverage analizza in Visual Studio 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
-   Se **Esplora test** non è aperto, aprirlo selezionando **test** > **Esplora test**di **Windows** > oppure premere **CTRL**+**E**,**T**.
+   È anche possibile eseguire code coverage dalla finestra degli strumenti di Esplora test.
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ Potrebbe essere necessario escludere specifici elementi nel codice dai risultati
 > [!TIP]
 > L'esclusione di una classe non esclude le relative classi derivate.
 
-Ad esempio:
+Esempio:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
