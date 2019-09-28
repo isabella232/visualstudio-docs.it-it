@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: HT
+ms.openlocfilehash: ca7df1c087e35fd188461382e4f44de6ab703964
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846230"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481962"
 ---
 # <a name="special-characters-to-escape"></a>Caratteri speciali di escape
 I caratteri speciali devono essere preceduto da un carattere di escape solo se hanno un significato speciale nel contesto in cui vengono usati. Ad esempio, l'asterisco (*) è un carattere speciale solo negli attributi "Include" ed "Exclude" di una definizione di elemento o in una chiamata a <xref:Microsoft.Build.Tasks.CreateItem>. In tutti gli altri casi, l'asterisco viene considerato come un asterisco letterale. Nonostante non sia necessario usare il carattere di escape davanti agli asterischi in ogni parte dei file di progetto, l'operazione non causa problemi.
@@ -30,7 +30,7 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
 
  Di seguito è riportato l'elenco completo dei caratteri speciali di escape:
 
-|Carattere|Description|
+|Carattere|Descrizione|
 |---------------|-----------------|
 |%|Segno di percentuale, usato per fare riferimento a metadati.|
 |$|Segno di dollaro, usato per fare riferimento alle proprietà.|
@@ -40,6 +40,9 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
 |;|Punto e virgola, separatore di elenco.|
 |?|Punto interrogativo, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|
 |*|Asterisco, un carattere jolly usato nel descrivere le specifiche di un file nella sezione Include/Exclude di un elemento.|
+
+> [!NOTE]
+> In alcuni scenari potrebbe essere necessario usare caratteri di escape per virgolette doppie ("), ad esempio quando si usa all'interno di un'attività `Exec`.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Usare caratteri di escape speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
