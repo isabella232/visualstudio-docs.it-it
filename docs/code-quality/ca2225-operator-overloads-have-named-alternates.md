@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231079"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481766"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Gli overload degli operatori hanno alternative con nome
 
@@ -38,17 +38,21 @@ Per impostazione predefinita, questa regola esamina solo i tipi visibili esterna
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-L'overload degli operatori consente di usare i simboli per rappresentare i calcoli per un tipo. Ad esempio, un tipo che sovraccarica il segno più (+) per l'aggiunta in genere avrà un membro alternativo denominato "Add". Il membro alternativo denominato fornisce l'accesso alla stessa funzionalità dell'operatore e viene fornito per gli sviluppatori che programmano in linguaggi che non supportano gli operatori di overload.
+L'overload degli operatori consente di usare i simboli per rappresentare i calcoli per un tipo. Ad esempio, un tipo che sovraccarica il simbolo più `+` per l'aggiunta in genere avrà un membro alternativo denominato `Add`. Il membro alternativo denominato fornisce l'accesso alla stessa funzionalità dell'operatore. Viene fornito per gli sviluppatori che programmano in linguaggi che non supportano gli operatori di overload.
 
-Questa regola esamina gli operatori elencati nella tabella seguente.
+Questa regola esamina:
 
-|C#|Visual Basic|C++|Nome alternativo|
-|---------|------------------|-----------|--------------------|
+- Operatori di cast impliciti ed espliciti in un tipo verificando la presenza di metodi denominati `To<typename>` e `From<typename>`.
+
+- Gli operatori elencati nella tabella seguente:
+
+|C#|Visual Basic|C++|Nome metodo alternativo|
+|-|-|-|-|
 |+ (binario)|+|+ (binario)|Aggiunta|
 |+=|+=|+=|Aggiunta|
 |&|e|&|BitwiseAnd|
 |&=|E =|&=|BitwiseAnd|
-|&#124;|Or|&#124;|BitwiseOr|
+|&#124;|Oppure|&#124;|BitwiseOr|
 |&#124;=|Or=|&#124;=|BitwiseOr|
 |--|N/D|--|Operatore di conversione|
 |/|/|/|Dividi|
@@ -56,14 +60,14 @@ Questa regola esamina gli operatori elencati nella tabella seguente.
 |==|=|==|Equals|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
-|>|>|>|Compare|
-|>=|>=|>=|Compare|
+|>|>|>|CompareTo o compare|
+|>=|>=|>=|CompareTo o compare|
 |++|N/D|++|Operatore di incremento|
-|<>|!=|Equals|
+|!=|<>|!=|Equals|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
-|<|<|<|Compare|
-|<=|<=|\<=|Compare|
+|<|<|<|CompareTo o compare|
+|<=|<=|\<=|CompareTo o compare|
 |&&|N/D|&&|LogicalAnd|
 |&#124;&#124;|N/D|&#124;&#124;|Operatore logico|
 |!|N/D|!|LogicalNot|
@@ -79,17 +83,16 @@ Questa regola esamina gli operatori elencati nella tabella seguente.
 |true|IsTrue|N/D|IsTrue (proprietà)|
 |-(unario)|N/D|-|Negare|
 |+ (unario)|N/D|+|Più|
-|False|IsFalse|False|IsTrue (proprietà)|
+|false|IsFalse|False|IsTrue (proprietà)|
 
-Non è possibile eseguire l'overload di N/A = = nella lingua selezionata.
+\* N/r indica che non è possibile eseguire l'overload dell'operatore nella lingua selezionata.
 
-La regola controlla anche gli operatori cast impliciti ed espliciti in`SomeType`un tipo () controllando `ToSomeType` la `FromSomeType`presenza di metodi denominati e.
-
-In C#, quando un operatore binario viene sottoposto a overload, anche l'eventuale operatore di assegnazione corrispondente viene sottoposto a overload implicito.
+> [!NOTE]
+> In C#, quando un operatore binario viene sottoposto a overload, anche l'eventuale operatore di assegnazione corrispondente viene sottoposto a overload implicito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, implementare il metodo alternativo per l'operatore; denominarlo utilizzando il nome alternativo consigliato.
+Per correggere una violazione di questa regola, implementare il metodo alternativo per l'operatore. Denominarlo utilizzando il nome alternativo consigliato.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
