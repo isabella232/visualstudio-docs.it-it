@@ -85,7 +85,7 @@ Fare clic con il pulsante destro del mouse su un oggetto nella finestra [Oggetti
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Ripristinare lo stile o il modello predefinito di un controllo
 
-Selezionare il controllo e nella finestra **Proprietà**** individuare la proprietà **Stile** o **Modello**. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
+Selezionare il controllo e nella finestra **Proprietà** ** individuare la proprietà **Stile** o **Modello**. Scegliere **Opzioni avanzate** e quindi **Reimposta** dal menu di scelta rapida.
 
 ## <a name="visual-states"></a>Stati di visualizzazione
 
