@@ -1,7 +1,7 @@
 ---
 title: Creare un'installazione di rete
 description: Informazioni sulla creazione di un punto di installazione di rete per la distribuzione di Visual Studio in un'organizzazione.
-ms.date: 08/06/2019
+ms.date: 10/01/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1d18d3a3de423cc63569911bbe49477b5e6f5f26
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 178bd693c514e42fb77c0addce3fa6c00d1bef4f
+ms.sourcegitcommit: a2f1f27aa33d807b39292d65a49d8db4653491ba
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180298"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71709061"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -39,29 +39,31 @@ Il file eseguibile di installazione&mdash;o, per essere più specifici, il file 
 
 ::: moniker range="vs-2017"
 
-|Edizione | Download|
+|Edizione | Scarica|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+| Visual Studio Build Tools   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
 
-Altri programmi di bootstrap supportati includono [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) e [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+Altri programmi di avvio automatico supportati includono [vs_feedbackclient. exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_TeamExplorer. exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller. exe](https://aka.ms/vs/15/release/vs_testcontroller.exe)e [vs_testprofessional. exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-|Edizione | Download|
+|Edizione | Scarica|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
-Altri programmi di bootstrap supportati includono [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe), [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) e [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
+Altri programmi di avvio automatico supportati includono [vs_TeamExplorer. exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/16/release/vs_testagent.exe)e [vs_testcontroller. exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
 
 ## <a name="create-an-offline-installation-folder"></a>Creare una cartella di installazione offline
 
-Per completare questo passaggio è necessario avere una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare uno dei comandi degli esempi seguenti.
+Per completare questo passaggio è necessario avere una connessione Internet. Per creare un'installazione offline con tutte le lingue e tutte le funzionalità, usare un comando simile a uno degli esempi seguenti.
 
    > [!IMPORTANT]
    > Un layout di Visual Studio completo richiede almeno 35 GB di spazio su disco e, pertanto, può essere necessario molto tempo per scaricarlo. Vedere la sezione [Personalizzare del layout di rete](#customize-the-network-layout) per informazioni su come creare un layout contenente solo i componenti che si vogliono installare.
@@ -71,11 +73,11 @@ Per completare questo passaggio è necessario avere una connessione Internet. Pe
 
 - Per Visual Studio Enterprise, eseguire:
 
-  ```vs_enterprise.exe --layout c:\vsoffline```
+  ```vs_enterprise.exe --layout c:\VSLayout```
 
 - Per For Visual Studio Professional, eseguire:
 
-  ```vs_professional.exe --layout c:\vsoffline```
+  ```vs_professional.exe --layout c:\VSLayout```
 
 ## <a name="modify-the-responsejson-file"></a>Modificare il file response.json
 
@@ -93,7 +95,7 @@ L'esempio seguente usa [xcopy](/windows-server/administration/windows-commands/x
 Esempio:
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2017
+xcopy /e c:\VSLayout \\server\products\VS2017
 ```
 
 ::: moniker-end
@@ -101,7 +103,7 @@ xcopy /e c:\vsoffline \\server\products\VS2017
 ::: moniker range="vs-2019"
 
 ```cmd
-xcopy /e c:\vsoffline \\server\products\VS2019
+xcopy /e c:\VSLayout \\server\products\VS2019
 ```
 
 ::: moniker-end
@@ -123,37 +125,37 @@ Gli esempi seguenti illustrano come creare un layout parziale personalizzato.
 * Per scaricare tutti i carichi di lavoro e tutti i componenti per una sola lingua, eseguire:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US
     ```
 
 * Per scaricare tutti i carichi di lavoro e tutti i componenti per più lingue, eseguire:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --lang en-US de-DE ja-JP
     ```
 
 * Per scaricare un solo carico di lavoro per tutte le lingue, eseguire:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
     ```
 
 * Per scaricare due carichi di lavoro e un solo componente facoltativo per tre lingue, eseguire:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
 * Per scaricare due carichi di lavoro e tutti i relativi componenti consigliati:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * Per scaricare due carichi di lavoro e tutti i relativi componenti consigliati e facoltativi, eseguire:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
+    vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -205,7 +207,7 @@ Gli amministratori possono distribuire Visual Studio nelle workstation client ne
 * Gli amministratori possono effettuare l'installazione in modalità automatica eseguendo il comando seguente:
 
     ```cmd
-    \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
+    \\server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
 
 > [!IMPORTANT]

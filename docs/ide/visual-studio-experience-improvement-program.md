@@ -8,18 +8,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582008"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693006"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
 Analisi utilizzo software di Visual Studio è stato pensato per aiutare Microsoft a migliorare nel tempo Visual Studio. Il programma [raccoglie informazioni su errori](../ide/diagnostic-data-collection.md), hardware del computer e modalità d'uso di Visual Studio senza interrompere le attività dell'utente al computer. I dati raccolti consentono a Microsoft di identificare le funzionalità da migliorare. Questo documento illustra come acconsentire o rifiutare esplicitamente di partecipare al programma.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
+> [!NOTE]
+> Le impostazioni di consenso esplicito per la telemetria VSCEIP non si applicano a "segnala un problema" in Visual Studio. Quando si segnala un problema, i log vengono raccolti e inviati a Microsoft solo quando si fornisce l'autorizzazione facendo clic su "Invia". Se si è interessati a gestire i log prima di inviare a "segnala un problema", vedere la pagina relativa alla [privacy dei dati di feedback](./developer-community-privacy.md) per ulteriori dettagli.
 
 ## <a name="opt-in-or-out"></a>Acconsentire o rifiutare
 
@@ -70,7 +72,7 @@ Per altre informazioni sui dati raccolti, elaborati o trasmessi da Analisi utili
 ## <a name="see-also"></a>Vedere anche
 
 * [Diagnostic information collected by Visual Studio](diagnostic-data-collection.md) (Informazioni di diagnostica raccolte da Visual Studio)
-* [Comunicazioni con Microsoft](../ide/talk-to-us.md)
+* [Opzioni commenti e suggerimenti su Visual Studio](../ide/feedback-options.md)
 * [Come segnalare un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Community di sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
 * [Informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement)
