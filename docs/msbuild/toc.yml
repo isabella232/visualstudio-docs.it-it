@@ -84,11 +84,11 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Usare caratteri XML riservati nei file di progetto
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Concetti avanzati
+    - name: Concetti avanzati relativi
       items:
         - name: Concetti avanzati relativi a MSBuild
           href: msbuild-advanced-concepts.md
-        - name: Invio in batch
+        - name: Batch
           items:
             - name: Batch MSBuild
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: Trasformazioni di MSBuild
           href: msbuild-transforms.md
-        - name: Integrazione di Visual Studio
+        - name: Integrazione con Visual Studio
           items:
             - name: Integrazione di Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrazione di estensioni di .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Creazione di più progetti in parallelo
+        - name: Compilazione di più progetti in parallelo
           items:
             - name: Compilazione di più progetti in parallelo con MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -236,7 +236,7 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When (MSBuild)
               href: when-element-msbuild.md
-        - name: Informazioni di riferimento sulle attività
+        - name: Riferimenti alle attività
           items:
             - name: Informazioni di riferimento sulle attività MSBuild - Panoramica
               href: msbuild-task-reference.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: Classe di base ToolTaskExtension
               href: tooltaskextension-base-class.md
+            - name: Diagnosi degli errori delle attività
+              href: diagnosing-task-failures.md
             - name: Attività AL (Assembly Linker)
               href: al-assembly-linker-task.md
             - name: Attività AspNetCompiler
