@@ -6,6 +6,8 @@
       href: what-is-debugging.md
     - name: Tecniche e strumenti di debug CRT
       href: write-better-code-with-visual-studio.md
+    - name: Trovare l'attività di debug
+      href: find-your-debugging-task.md
 - name: Guide rapide introduttive
   items:
     - name: Presentazione del debugger
@@ -236,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Viste personalizzate (gestite)
               items:
-                - name: Creare viste personalizzate di oggetti gestiti
+                - name: Creare viste personalizzate di oggetti
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Indicare al debugger gli elementi da visualizzare
                   href: using-the-debuggerdisplay-attribute.md
@@ -352,9 +354,9 @@
               href: how-to-use-the-gpu-threads-window.md
         - name: Eseguire il debug di più processi
           href: debug-multiple-processes.md
-        - name: 'Procedura dettagliata: Eseguire il debug con la finestra Thread'
+        - name: Eseguire il debug con la finestra Thread
           href: how-to-use-the-threads-window.md
-        - name: 'Procedura dettagliata: Debug di un''applicazione parallela'
+        - name: Debug di un'applicazione parallela
           href: walkthrough-debugging-a-parallel-application.md
         - name: Passare a un altro thread durante il debug
           href: how-to-switch-to-another-thread-while-debugging.md
