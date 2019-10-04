@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253834"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831838"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
 
@@ -89,7 +89,7 @@ In questo esempio è riportata una riga di comando per l'applicazione della lice
 
 Se `StorePID.exe` applica correttamente il codice Product Key, restituisce un `%ERRORLEVEL%` pari a 0. Se si verificano errori, verrà restituito uno dei codici seguenti, a seconda della condizione di errore:
 
-| Error                     | Codice |
+| Errore                     | Codice |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -100,7 +100,7 @@ Se `StorePID.exe` applica correttamente il codice Product Key, restituisce un `%
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Quando si esegue un'istanza virtuale di Visual Studio, assicurarsi di virtualizzare anche la cartella AppData locale e il registro di sistema. Per risolvere i problemi relativi alle istanze virtuali, eseguire *c:\Programmi (x86) \Microsoft Visual\> Studio \ < versione \Common7\IDE\DDConfigCA.exe*.  
+> Quando si esegue un'istanza virtuale di Visual Studio, assicurarsi di virtualizzare anche la cartella AppData locale e il registro di sistema. Per risolvere i problemi relativi alle istanze virtuali, eseguire `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`.  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
