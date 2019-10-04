@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410999"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962908"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/task-element-msbuild.md) all'assembly che contiene l'implementazione dell'attività.
@@ -39,12 +39,15 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
     Condition="'String A'=='String B'" />
 ```
 
+> [!NOTE]
+> A differenza di proprietà ed elementi, verrà usato il *primo* elemento `UsingTask` che si applica a un `TaskName`; per eseguire l'override delle attività è necessario definire un nuovo `UsingTask` *prima* di quello esistente.
+
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`AssemblyName`|Sono obbligatori sia l'attributo `AssemblyName` che l'attributo `AssemblyFile`.<br /><br /> Nome dell'assembly da caricare. L'attributo `AssemblyName` accetta assembly con nome sicuro, anche se non è obbligatorio un nome sicuro. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.Load%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyFile`.|
 |`AssemblyFile`|È obbligatorio l'attributo `AssemblyName` o l'attributo `AssemblyFile`.<br /><br /> Percorso del file dell'assembly. Questo attributo accetta percorsi completi o percorsi relativi. I percorsi relativi sono relativi alla directory del file di progetto o file di destinazioni in cui viene dichiarato l'elemento `UsingTask`. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.LoadFrom%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyName`.|
@@ -54,18 +57,18 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Il set di parametri visualizzati nell'attività generata dall'elemento `TaskFactory` specificato.|
 |[Task](../msbuild/task-element-msbuild.md)|I dati che vengono passati all'elemento `TaskFactory` per generare un'istanza dell'attività.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | Description |
+| Elemento | Descrizione |
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  È possibile fare riferimento alle variabili di ambiente, alle proprietà della riga di comando, alle proprietà a livello di progetto e agli elementi a livello di progetto negli elementi `UsingTask` inclusi nel file di progetto sia direttamente che tramite un file di progetto importato. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 > [!NOTE]

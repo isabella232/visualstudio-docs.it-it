@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: HT
+ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177335"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962970"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -83,7 +83,7 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per i ruoli eseg
 5. Per visualizzare la finestra di dialogo **Configurazione di diagnostica**, selezionare **Configura**. Ad eccezione di **Generale** e **Directory log**, ogni scheda rappresenta un'origine di dati di diagnostica che è possibile raccogliere. La scheda predefinita **Generale** offre le opzioni di raccolta di dati di diagnostica seguenti: **Solo errori**, **Tutte le informazioni** e **Piano personalizzato**. L'opzione predefinita, **Solo errori**, richiede la quantità minima di spazio di archiviazione, perché non trasferisce messaggi di avviso o di traccia. L'opzione **Tutte le informazioni** trasferisce la quantità più elevata di informazioni e usa la quantità maggiore di spazio di archiviazione, quindi è l'opzione più costosa.
 
    > [!NOTE]
-   > La dimensione minima supportata per "Quota disco in MB" è 4 GB. Se tuttavia si raccolgono i dump di memoria, aumentare questo valore, ad esempio a 10 GB.
+   > La dimensione minima supportata per "quota disco in MB" è 50 MB e la dimensione predefinita è 4 GB. Se tuttavia si raccolgono i dump di memoria, aumentare questo valore, ad esempio a 10 GB.
    >
 
     ![Abilitare la diagnostica e la configurazione di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
