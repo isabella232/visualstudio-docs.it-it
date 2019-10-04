@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 791182255448db01a1c43796da72bedeec9f2f96
-ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175445"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962919"
 ---
 # <a name="create-razor-web-apps"></a>Creare app Web Razor
 
@@ -26,7 +26,7 @@ Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evide
 1. Nella schermata iniziale selezionare **nuovo** per creare un nuovo progetto:
 
    ![Nuovo progetto di Visual Studio per Mac](media/razor-new.png)
-1. Nella finestra di dialogo **nuovo progetto** passare all'**applicazione Web** **app** >  **.NET Core** > e selezionare **Avanti**:
+1. Nella finestra di dialogo **nuovo progetto** passare a **.NET Core** > **app** > **applicazione Web** e selezionare **Avanti**:
 
    ![Modello di progetto Razor](media/razor-new-project1.png)
 1. Selezionare il Framework di destinazione di .NET Core (si consiglia la versione 2,2 o successiva) e quindi fare clic su **Avanti**. Scegliere un nome per il progetto e aggiungere il supporto Git, se necessario. Selezionare **Crea** per creare il progetto.
@@ -36,7 +36,7 @@ Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evide
    Visual Studio per Mac apre il progetto nella finestra di layout del codice.
 1. Eseguire il progetto senza eseguire il debug usando **comando + opzione + F5**.
 
-   Visual Studio avvia [gheppio](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), apre un browser a `https://localhost:5001`e visualizza la prima app Web Razor.
+   Visual Studio avvia [gheppio](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), apre un browser per `https://localhost:5001` e visualizza la prima app Web Razor.
 
    ![App Web Razor in Safari](media/razor-webapp.png)
 
@@ -47,8 +47,8 @@ Le app Web Razor includono i componenti seguenti.
 ### <a name="pages-folder"></a>Cartella Pages
 
 Questa cartella contiene le pagine Web di un progetto, insieme al code-behind per ogni:
-* Un file con estensione *cshtml* per il markup HTML e la sintassi Razor.
-* Un file con estensione *cshtml.cs* per il code-behind C# per la gestione degli eventi della pagina.
+   - Un file *@no__t 1. cshtml* per il markup HTML e il sintassi Razor.
+   - Un file *@no__t 1.cshtml.cs* per il code C# -behind per la gestione degli eventi di pagina.
 
 I nomi dei file di supporto iniziano con un carattere di sottolineatura. Ad esempio, il file _Layout.cshtml configura gli elementi dell'interfaccia utente comuni a tutte le pagine. Questo file consente di impostare il menu di navigazione nella parte superiore della pagina e le informazioni sul copyright nella parte inferiore della pagina. Per altre informazioni, vedere [Layout in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
 

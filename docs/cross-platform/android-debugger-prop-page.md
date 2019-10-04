@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 789f7a1c-38b4-41d0-809b-14f4d96c8116
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.AndroidDebugger.DebuggerType
@@ -15,16 +15,16 @@ f1_keywords:
 - VC.Project.AndroidDebugger.LaunchActivity
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9a4d7baa970008c2de7a3bc28966f7edbad68b21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0a052223fe7acac87acf15c5c5091c774451e4e4
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819503"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950623"
 ---
 # <a name="android-debugger-properties"></a>Proprietà del debugger Android
 
-Proprietà | Description | Scelte
+Proprietà | Descrizione | Scelte
 --- | ---| ---
 Tipo di debugger | Specifica quale tipo di codice sottoporre al debug. | **Solo nativo**<br>**Solo Java**<br>
 Destinazione di debug | Specifica l'emulatore o il dispositivo da usare per il debug. Se non ci sono emulatori in esecuzione, usare il gestore di dispositivi virtuali Android AVD Manager per avviare un dispositivo.

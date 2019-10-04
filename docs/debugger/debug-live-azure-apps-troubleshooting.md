@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211247"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962937"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
-Se la procedura descritta in questo articolo non risolve il problema, cercare il problema nella community degli [sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo **Guida** > **Invia commenti e suggerimenti** > **segnala un problema** in Visual Studio.
+Se i passaggi descritti in questo articolo non **consentono**di risolvere il problema, cercare il problema nella [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo?  > **inviare commenti e suggerimenti** > **segnala un problema** in Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Connetti Snapshot Debugger" rileva un errore del codice di stato HTTP
 
@@ -34,7 +34,7 @@ Questo errore indica che la chiamata REST eseguita da Visual Studio in Azure usa
 
 Seguire questa procedura:
 
-* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **debug** > **Connetti snapshot debugger...** Risorsa di Azure**selezionare esistente**o in Cloud Explorer.  >  > 
+* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **Debug** > **Connetti snapshot debugger...**  >  la**risorsa di Azure** > **selezionare esistente**o in Cloud Explorer.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
 ### <a name="403-forbidden"></a>(403) non consentito
@@ -54,7 +54,8 @@ Questo errore indica che il sito Web non è stato trovato nel server.
 Seguire questa procedura:
 
 * Verificare di disporre di un sito Web distribuito e in esecuzione nella risorsa del servizio app a cui si sta eseguendo la connessione.
-* Verificare che il sito sia disponibile in https://\<Resource\>. azurewebsites.NET
+* Verificare che il sito sia disponibile in https://@no__t -0resource\>.azurewebsites.net
+* Verificare che l'applicazione Web personalizzata in esecuzione correttamente non restituisca un codice di stato 404 quando si accede a https://@no__t -0resource\>.azurewebsites.net
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
 ### <a name="406-not-acceptable"></a>(406) non accettabile
@@ -63,7 +64,7 @@ Questo errore indica che il server non è in grado di rispondere al tipo imposta
 
 Seguire questa procedura:
 
-* Verificare che il sito sia disponibile in https://\<Resource\>. azurewebsites.NET
+* Verificare che il sito sia disponibile in https://@no__t -0resource\>.azurewebsites.net
 * Verificare che non sia stata eseguita la migrazione del sito alle nuove istanze. Snapshot Debugger usa la nozione di ARRAffinity per il routing delle richieste a istanze specifiche che possono generare questo errore in modo intermittente.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
@@ -156,11 +157,11 @@ Seguire questa procedura:
 
 Visual Studio 2019 richiede una versione più recente dell'estensione del sito Snapshot Debugger nel servizio app Azure.  Questa versione non è compatibile con la versione precedente dell'estensione del sito di Snapshot Debugger usata da Visual Studio 2017.  Se si tenta di aggiungere il Snapshot Debugger in Visual Studio 2019 a un servizio di app Azure che è stato precedentemente sottoposto a debug dal Snapshot Debugger in Visual Studio 2017, verrà visualizzato l'errore seguente:
 
-![Estensione del sito snapshot debugger incompatibile Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Estensione del sito snapshot debugger incompatibile Visual Studio 2019")
+![Estensione del sito snapshot debugger incompatibile Visual studio 2019]non(../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "compatibile snapshot debugger estensione del sito Visual Studio 2019")
 
 Viceversa, se si usa Visual Studio 2017 per alporre il Snapshot Debugger a un servizio di app Azure che è stato precedentemente sottoposto a debug dal Snapshot Debugger in Visual Studio 2019, verrà visualizzato l'errore seguente:
 
-![Estensione del sito snapshot debugger incompatibile Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Estensione del sito snapshot debugger incompatibile Visual Studio 2017")
+![Estensione del sito snapshot debugger incompatibile Visual studio 2017]non(../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "compatibile snapshot debugger estensione del sito Visual Studio 2017")
 
 Per risolvere questo problema, eliminare le impostazioni dell'app seguenti nel portale di Azure e collegare nuovamente Snapshot Debugger:
 
@@ -180,7 +181,7 @@ I log dell'agente sono disponibili nelle posizioni seguenti:
   - Passare al sito di Kudu del servizio app (ovvero, servizioapp.**scm**.azurewebsites.net) e passare alla console di debug.
   - I log degli agenti vengono archiviati nella directory seguente:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - Macchina virtuale/set di scalabilità di macchine virtuali:
-  - Accedere alla macchina virtuale. i log degli agenti vengono archiviati come segue:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<version > \SnapshotDebuggerAgent_ *. txt
+  - Accedere alla macchina virtuale. i log degli agenti vengono archiviati come segue:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics @ no__t-0Version > \SnapshotDebuggerAgent_ *. txt
 - Servizio Azure Kubernetes
   - Passare alla directory seguente: /tmp/diag/AgentLogs/*
 
@@ -189,7 +190,7 @@ I log dell'agente sono disponibili nelle posizioni seguenti:
 I log di strumentazione sono disponibili nelle posizioni seguenti:
 
 - Servizi app:
-  - La registrazione degli errori viene inviata automaticamente a D:\Home\LogFiles\eventlog.XML, gli eventi `<Provider Name="Instrumentation Engine" />` sono contrassegnati con o "punti di interruzione di produzione"
+  - La registrazione degli errori viene inviata automaticamente a D:\Home\LogFiles\eventlog.xml, gli eventi sono contrassegnati con `<Provider Name="Instrumentation Engine" />` o "punti di interruzione di produzione"
 - Macchina virtuale/set di scalabilità di macchine virtuali:
   - Accedere alla macchina virtuale e aprire il Visualizzatore eventi.
   - Aprire la vista seguente: *Log di Windows > applicazione*.

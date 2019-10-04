@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490696"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962955"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -25,7 +25,7 @@ ms.locfileid: "69490696"
 Per fatturare gli acquisti, è necessaria una [sottoscrizione di Azure](https://azure.microsoft.com/pricing/purchase-options/). È possibile [iscriversi](https://portal.azure.com) prima o durante il primo acquisto in Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Chi può acquistare sottoscrizioni cloud di Visual Studio?
-Chiunque disponga dell'accesso come [proprietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [amministratore del servizio o coamministratore](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) nella sottoscrizione di Azure può acquistare sottoscrizioni cloud.
+Chiunque disponga dell'accesso come [proprietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [amministratore del servizio o coamministratore](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) nella sottoscrizione di Azure può acquistare sottoscrizioni cloud.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Come acquistare sottoscrizioni cloud
 
