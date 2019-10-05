@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180260"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975165"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -58,7 +58,7 @@ Per iniziare si crea un nuovo file e si aggiunge codice al file.
 
 ::: moniker-end
 
-2. Nel menu **File** sulla barra dei menu scegliere **Nuovo** > **File**.
+2. Dal menu **file** nella barra dei menu scegliere **nuovo** > **file**oppure premere **CTRL**+**N**.
 
 3. Nella finestra di dialogo **Nuovo file**, nella categoria **Generale**, scegliere **Classe di Visual C#** e quindi scegliere **Apri**.
 
@@ -80,7 +80,7 @@ Visual Studio offre *frammenti di codice* utili che è possibile usare per gener
 
    La firma del metodo `static void Main()` viene aggiunta al file. Il metodo [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) è il punto di ingresso per le applicazioni C#.
 
-I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. Per vedere i frammenti di codice disponibili per il proprio linguaggio scegliere **Modifica** > **IntelliSense** > **Inserisci frammento** e quindi scegliere la cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
+I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per la lingua scegliendo **modifica** > **IntelliSense** > **Inserisci frammento** o premendo **ctrl**+**K**, **CTRL**+**X**e quindi scegliendo cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
 
 ![Elenco di frammenti di codice per C#](../media/tutorial-code-snippet-list.png)
 

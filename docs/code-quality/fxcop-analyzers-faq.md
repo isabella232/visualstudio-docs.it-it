@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 3dc304d8d6bf844fb9c23f0e92efc5250da91e4d
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253154"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975131"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Domande frequenti su FxCop e gli analizzatori FxCop
 
@@ -24,10 +24,10 @@ La comprensione delle differenze tra FxCop legacy e gli analizzatori FxCop può 
 
 FxCop legacy esegue l'analisi post-compilazione in un assembly compilato. Viene eseguito come un eseguibile separato di nome **FxCopCmd.exe**. FxCopCmd.exe carica l'assembly compilato, esegue l'analisi del codice e quindi genera un report dei risultati (o *utilità di diagnostica*).
 
-Gli analizzatori FxCop sono basati su .NET Compiler Platform ("Roslyn"). Essi vengono [installati come pacchetto NuGet](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) al quale fa riferimento il progetto o soluzione. Gli analizzatori FxCop eseguono un'analisi basata sul codice sorgente durante l'esecuzione del compilatore. Gli analizzatori FxCop sono ospitati all'interno del processo di compilazione, **csc.exe** o **vbc.exe**, ed eseguono l'analisi quando viene compilato il progetto. I risultati degli analizzatori vengono indicati insieme ai risultati del compilatore.
+Gli analizzatori FxCop sono basati su .NET Compiler Platform ("Roslyn"). Essi vengono [installati come pacchetto NuGet](install-fxcop-analyzers.md#nuget-package) al quale fa riferimento il progetto o soluzione. Gli analizzatori FxCop eseguono un'analisi basata sul codice sorgente durante l'esecuzione del compilatore. Gli analizzatori FxCop sono ospitati all'interno del processo di compilazione, **csc.exe** o **vbc.exe**, ed eseguono l'analisi quando viene compilato il progetto. I risultati degli analizzatori vengono indicati insieme ai risultati del compilatore.
 
 > [!NOTE]
-> È anche possibile [installare gli analizzatori FxCop come estensione di Visual Studio](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix). In questo caso, gli analizzatori vengono eseguiti durante la digitazione nell'editor di codice, ma non vengono eseguiti in fase di compilazione. Se si vogliono eseguire gli analizzatori FxCop nell'ambito dell'integrazione continua, installarli come pacchetto NuGet.
+> È anche possibile [installare gli analizzatori FxCop come estensione di Visual Studio](install-fxcop-analyzers.md#vsix). In questo caso, gli analizzatori vengono eseguiti durante la digitazione nell'editor di codice, ma non vengono eseguiti in fase di compilazione. Se si vogliono eseguire gli analizzatori FxCop nell'ambito dell'integrazione continua, installarli come pacchetto NuGet.
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>Il comando Esegui analisi codice esegue gli analizzatori FxCop?
 
