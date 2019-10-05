@@ -1,5 +1,5 @@
 ---
-title: Criteri analisi codice personalizzati check-in per il codice gestito
+title: Criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55294f7418de085cb4ceccd4063a4b2b55cbc6c4
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260832"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975029"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito
 
@@ -110,10 +110,18 @@ Specificare una regola di criteri di archiviazione del progetto imposta come il 
 
 4. Se necessario, selezionare le opzioni appropriate nel **Configuration** e **piattaforma** Elenca.
 
-5. Per eseguire l'analisi del codice ogni volta che il progetto di codice viene compilato utilizzando la configurazione specificata, selezionare la **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** casella di controllo.
+::: moniker range="vs-2017"
 
-6. Per ignorare i codice nei componenti da altre società, selezionare la **non visualizzare i risultati dal codice generato** casella di controllo.
+5. Per eseguire l'analisi del codice ogni volta che il progetto di codice viene compilato usando la configurazione specificata, selezionare **Abilita analisi codice durante la compilazione**.
 
-7. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >** .
+::: moniker-end
 
-8. Specificare la versione locale del file del set di regole di criteri di archiviazione.
+::: moniker range=">=vs-2019"
+
+5. Per eseguire l'analisi del codice ogni volta che il progetto di codice viene compilato usando la configurazione specificata, selezionare **Esegui in compilazione** nella sezione **analizzatori binari** .
+
+::: moniker-end
+
+6. Nell'elenco **Esegui questo set di regole** fare clic su **\<Browse >** .
+
+8. Consente di selezionare la versione locale del file del set di regole dei criteri di archiviazione.

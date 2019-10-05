@@ -9,33 +9,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5cb0fa5985cbc923713330289d7f83ed1fd954e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: fec188ba61a7e4d3f27caad03f0a5d32b6758a32
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551100"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974998"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installare gli analizzatori FxCop in Visual Studio
 
 Microsoft ha creato un set di analizzatori, denominato [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), che contiene le regole "FxCop" più importanti dell'analisi legacy. Questi analizzatori controllano il codice per i problemi di sicurezza, prestazioni e progettazione, tra gli altri.
 
-È possibile installare questi analizzatori FxCop come pacchetto NuGet o come estensione VSIX in Visual Studio. Per informazioni sui vantaggi e gli svantaggi di ognuno di essi [, vedere confronto tra pacchetti NuGet e Estensione](roslyn-analyzers-overview.md#nuget-package-versus-vsix-extension)VSIX.
+È possibile installare questi analizzatori FxCop come pacchetto NuGet o come estensione VSIX in Visual Studio. Per informazioni sui vantaggi e gli svantaggi di ognuno di essi, vedere [NuGet package VS. Estensione VSIX @ no__t-0.
 
-## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>Per installare gli analizzatori FxCop come pacchetto NuGet
+## <a name="nuget-package"></a>Pacchetto NuGet
 
-1. [Determinare la versione del pacchetto](#fxcopanalyzers-package-versions) dell'analizzatore da installare, in base alla versione di Visual Studio.
+È possibile installare il pacchetto NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) direttamente dalla pagina delle proprietà di analisi del codice del progetto:
 
-2. Installare il pacchetto in Visual Studio, usando la [console di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) o l' [interfaccia utente di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **Proprietà**, quindi selezionare la scheda **analisi codice** .
 
-   > [!NOTE]
-   > La pagina nuget.org per ogni pacchetto dell'analizzatore Mostra il comando da incollare nella **console di gestione pacchetti**. È anche disponibile un pulsante utile per copiare il testo negli Appunti.
-   >
-   > ![Pagina NuGet.org che Visualizza il comando console di gestione pacchetti](media/nuget-package-manager-command.png)
+   ![Installare il pacchetto degli analizzatori FxCop dalla pagina delle proprietà in Visual Studio](media/install-fxcop-properties-page.png)
 
-   Gli assembly dell'analizzatore sono installati e vengono visualizzati in **Esplora soluzioni** in **riferimenti** > **analizzatori**.
+2. Selezionare **Installa**.
+
+   Visual Studio installa la versione più recente del pacchetto Microsoft. codeanalyzers. FxCopAnalyzers. Gli assembly vengono visualizzati in **Esplora soluzioni** in **riferimenti** > **analizzatori**.
 
    ![Nodo analizzatori in Esplora soluzioni](media/solution-explorer-analyzers-node.png)
+
+### <a name="custom-installation"></a>Installazione personalizzata
+
+Per l'installazione personalizzata, ad esempio per specificare una versione diversa del pacchetto, selezionare il pulsante con i puntini di sospensione (...) nella pagina delle proprietà di analisi del codice del progetto. Questo pulsante apre Gestione pacchetti NuGet con "Microsoft. CodeAnalysis. FxCopAnalyzers" come stringa di ricerca.
+
+![Installare il pacchetto degli analizzatori FxCop personalizzati dalla pagina delle proprietà in Visual Studio](media/install-fxcop-properties-page-ellipsis.png)
+
+> [!TIP]
+> Determinare la [versione del pacchetto dell'analizzatore](#fxcopanalyzers-package-versions) da installare, in base alla versione di Visual Studio. È anche possibile installare il pacchetto dall' [interfaccia utente di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
 ### <a name="fxcopanalyzers-package-versions"></a>Versioni del pacchetto FxCopAnalyzers
 
@@ -43,7 +51,7 @@ Usare le linee guida seguenti per determinare la versione del pacchetto di anali
 
 | Versione di Visual Studio | Versione del pacchetto dell'analizzatore FxCop |
 | - | - |
-| Visual Studio 2019 (tutte le versioni)<br />Visual Studio 2017 versione 15,8 e successive | [2.9.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.3) |
+| Visual Studio 2019 (tutte le versioni)<br />Visual Studio 2017 versione 15,8 e successive | [latest](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 versione 15,5 a 15,7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
 | Visual Studio 2017 versione 15,3 a 15,4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
 | Visual Studio 2017 versione 15,0 a 15,2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
@@ -51,7 +59,7 @@ Usare le linee guida seguenti per determinare la versione del pacchetto di anali
 | Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
 | Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
-## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Per installare gli analizzatori FxCop come VSIX
+## <a name="vsix"></a>VSIX
 
 ::: moniker range="vs-2017"
 
@@ -126,5 +134,5 @@ Se si vuole verificare se l'estensione è installata, selezionare **estensioni**
 ## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
-- [Usare gli analizzatori di codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
+- [Usare gli analizzatori del codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
 - [Eseguire la migrazione dall'analisi legacy agli analizzatori di codice](../code-quality/fxcop-analyzers.yml)

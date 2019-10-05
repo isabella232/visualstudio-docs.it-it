@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 284f33d9d7af885958ed13101e1449edc5c8f2be
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a09c44962b2737407a3ce7274ccb9c9664908dcf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551094"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974948"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installare gli analizzatori di codice .NET Compiler Platform
 
@@ -26,7 +26,7 @@ Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Ro
 
 1. Trovare il pacchetto dell'analizzatore che si vuole installare in www.nuget.org.
 
-   È possibile, ad esempio, [installare gli analizzatori FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) per verificare la presenza di problemi di sicurezza e prestazioni, tra gli altri. In alternativa, installare [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) per cercare problemi di stile nella codebase.
+   È possibile, ad esempio, [installare gli analizzatori FxCop Microsoft](install-fxcop-analyzers.md#nuget-package) per verificare la presenza di problemi di sicurezza e prestazioni, tra gli altri. In alternativa, installare [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) per cercare problemi di stile nella codebase.
 
 2. Installare il pacchetto in Visual Studio, usando la [console di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) o l' [interfaccia utente di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
@@ -61,7 +61,7 @@ Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Ro
 
 2. Espandere **online** nel riquadro sinistro e quindi selezionare **Visual Studio Marketplace**.
 
-3. Nella casella di ricerca digitare il nome dell'estensione dell'analizzatore che si desidera installare. È possibile, ad esempio, [installare gli analizzatori FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) per verificare la presenza di problemi di sicurezza e prestazioni, tra gli altri.
+3. Nella casella di ricerca digitare il nome dell'estensione dell'analizzatore che si desidera installare. È possibile, ad esempio, [installare gli analizzatori FxCop Microsoft](install-fxcop-analyzers.md#vsix) per verificare la presenza di problemi di sicurezza e prestazioni, tra gli altri.
 
 4. Selezionare **download**.
 
@@ -94,7 +94,7 @@ Se si vuole verificare se l'estensione è installata, selezionare **estensioni**
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Usare gli analizzatori di codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Usare gli analizzatori del codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Vedere anche
 

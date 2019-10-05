@@ -10,31 +10,31 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e306d19dcf10e929bfb6432e6b6eb585996657f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 4eac88d56399b7f8552962afa50b52c8431232b9
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550857"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974931"
 ---
 # <a name="overview-of-code-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi codice per il codice gestito in Visual Studio
 
-Visual Studio è in grado di eseguire l'analisi codice del codice gestito in due modi: con l' [analisi legacy](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), nota anche come analisi statica FxCop degli assembly gestiti e con gli analizzatori di [codice](../code-quality/roslyn-analyzers-overview.md)più moderni basati su .NET Compiler Platform. In questo argomento viene illustrata l'analisi legacy. Per altre informazioni sull'analisi del codice basata su .NET Compiler Platform, vedere [Cenni preliminari sugli analizzatori basati su .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio è in grado di eseguire l'analisi codice del codice gestito in due modi: con l' [analisi legacy](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md), nota anche come analisi statica FxCop degli assembly gestiti e con gli [analizzatori di codice](../code-quality/roslyn-analyzers-overview.md)più moderni basati su .NET Compiler Platform. In questo argomento viene illustrata l'analisi legacy. Per altre informazioni sull'analisi del codice basata su .NET Compiler Platform, vedere [Cenni preliminari sugli analizzatori basati su .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md).
 
 L'analisi del codice per il codice gestito analizza gli assembly gestiti e fornisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle [linee guida di progettazione di .NET](/dotnet/standard/design-guidelines/).
 
 Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come messaggi di avviso. I messaggi di avviso identificano eventuali problemi di programmazione e progettazione e, se possibile, forniscono informazioni su come risolverli.
 
 > [!NOTE]
-> L'analisi legacy (analisi statica del codice) non è supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET standard come parte di MSBuild, verrà visualizzato un errore simile **all'errore: CA0055 : Impossibile identificare la piattaforma per \<il file con estensione**dll >. Per analizzare il codice nei progetti .NET Core o .NET Standard, usare invece gli analizzatori di [codice](../code-quality/roslyn-analyzers-overview.md) .
+> L'analisi legacy (analisi statica del codice) non è supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di MSBuild, verrà visualizzato un errore simile a **error: CA0055 : Impossibile identificare la piattaforma per @no__t -0your. dll >** . Per analizzare il codice nei progetti .NET Core o .NET Standard, usare invece gli [analizzatori di codice](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integrazione con IDE (Integrated Development Environment)
 
 È possibile eseguire l'analisi del codice nel progetto manualmente o automaticamente.
 
-Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare **Abilita analisi codice su compilazione** nella pagina delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Abilitare e disabilitare l'analisi codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare l'opzione nella pagina delle proprietà **analisi codice** del progetto. Per altre informazioni, vedere [Procedura: Abilitare e disabilitare l'analisi codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **analizza** > **esecuzione** > analisi codice**Esegui analisi \<codice su progetto >** .
+Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **analizza** > **esegui analisi codice** > **Esegui analisi codice su \<project >** .
 
 ## <a name="rule-sets"></a>Set di regole
 
@@ -56,8 +56,21 @@ Public class MyClass
 
 Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione degli avvisi](../code-quality/in-source-suppression-overview.md).
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
-> Se si esegue la migrazione di un progetto a Visual Studio 2017 o a Visual Studio 2019, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi e si desidera produrre immediatamente una produttività, è possibile basare lo stato di analisi del progetto. Dal menu **analizza** selezionare **Esegui analisi codice ed evita problemi attivi**.
+> Se si esegue la migrazione di un progetto a Visual Studio 2017, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile eliminarli tutti scegliendo **analizza** > **Esegui analisi codice ed elimina problemi attivi**.
+>
+> ![Eseguire l'analisi del codice ed escludere i problemi in Visual Studio](media/suppress-active-issues.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> Se si esegue la migrazione di un progetto a Visual Studio 2019, è possibile che si facciano improvvisamente molti avvisi di analisi del codice. Se non si è pronti per correggere gli avvisi, è possibile eliminarli tutti scegliendo **analizza** > **Compila ed elimina problemi attivi**.
+
+::: moniker-end
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Eseguire l'analisi del codice come parte dei criteri di archiviazione
 

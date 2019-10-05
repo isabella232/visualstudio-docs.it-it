@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185947"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974702"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Set di regole per pacchetti dell'analizzatore
 
@@ -36,7 +36,7 @@ Se si esegue la migrazione da un'analisi "FxCop" legacy a un'analisi del codice 
 
 ## <a name="use-analyzer-package-rule-sets"></a>Usare set di regole del pacchetto dell'analizzatore
 
-Dopo aver [installato un pacchetto di analizzatore NuGet](install-roslyn-analyzers.md), individuare il set di regole predefinito nella relativa directory *RuleSets* . Ad esempio, se si fa riferimento al `Microsoft.CodeAnalysis.FxCopAnalyzers` pacchetto dell'analizzatore, è possibile trovare la directory *RuleSets* in *% USERPROFILE\\%.\\\<nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers Version \rulesets\>* . Da qui, copiare uno o più RuleSet e incollarli nella directory che contiene il progetto di Visual Studio o direttamente in **Esplora soluzioni**.
+Dopo aver [installato un pacchetto di analizzatore NuGet](install-roslyn-analyzers.md), individuare il set di regole predefinito nella relativa directory *RuleSets* . Se, ad esempio, si fa riferimento al pacchetto di `Microsoft.CodeAnalysis.FxCopAnalyzers` Analyzer, è possibile trovare la directory *RuleSets* in *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-4 @ no__t-5version @ no__t-6\rulesets*. Da qui, copiare uno o più RuleSet e incollarli nella directory che contiene il progetto di Visual Studio o direttamente in **Esplora soluzioni**.
 
 È anche possibile [personalizzare un set di regole predefinito](how-to-create-a-custom-rule-set.md) per le proprie preferenze. Ad esempio, è possibile modificare la gravità di una o più regole in modo che le violazioni vengano visualizzate come errori o avvisi nell' **Elenco errori**.
 
@@ -46,7 +46,7 @@ Il processo di impostazione del set di regole attivo è leggermente diverso a se
 
 ### <a name="net-core"></a>.NET Core
 
-Per impostare una regola come set di regole attivo per l'analisi nei progetti .NET Core o .NET Standard, aggiungere manualmente la proprietà **CodeAnalysisRuleSet** al file di progetto. Il frammento di codice seguente, ad `HelloWorld.ruleset` esempio, imposta come set di regole attive.
+Per impostare una regola come set di regole attivo per l'analisi nei progetti .NET Core o .NET Standard, aggiungere manualmente la proprietà **CodeAnalysisRuleSet** al file di progetto. Il frammento di codice seguente, ad esempio, imposta `HelloWorld.ruleset` come set di regole attive.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,11 +57,29 @@ Per impostare una regola come set di regole attivo per l'analisi nei progetti .N
 
 ### <a name="net-framework"></a>.NET Framework
 
-Per impostare una regola per impostare il set di regole attive per l'analisi nei progetti .NET Framework, fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Proprietà**. Nelle pagine delle proprietà del progetto selezionare la scheda **analisi codice** . In **Esegui questo set di regole**selezionare **Sfoglia**, quindi selezionare il set di regole desiderato copiato nella directory del progetto. A questo punto, vengono visualizzate solo le violazioni delle regole per le regole abilitate nel set di regole selezionato.
+Per impostare una regola come set di regole attivo per l'analisi nei progetti .NET Framework:
+
+- Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Proprietà**.
+
+- Nelle pagine delle proprietà del progetto selezionare la scheda **analisi codice** .
+
+::: moniker range="vs-2017"
+
+- In **Esegui questo set di regole**selezionare **Sfoglia**, quindi selezionare il set di regole desiderato copiato nella directory del progetto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- In **regole attive**selezionare **Sfoglia**, quindi selezionare il set di regole desiderato copiato nella directory del progetto.
+
+::: moniker-end
+
+   A questo punto, vengono visualizzate solo le violazioni delle regole per le regole abilitate nel set di regole selezionato.
 
 ## <a name="available-rule-sets"></a>Set di regole disponibili
 
-I set di regole dell'analizzatore predefiniti includono tre set di regole che interessano tutte&mdash;le regole del pacchetto che li abilitano tutti, uno che li Disabilita e uno che rispetta le impostazioni di gravità e abilitazione predefinite di ogni regola:
+I set di regole dell'analizzatore predefiniti includono tre RuleSet che interessano tutte le regole del pacchetto @ no__t-0one che le abilitano tutti, una che li Disabilita tutti e uno che rispetta le impostazioni di gravità e abilitazione predefinite di ogni regola:
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset

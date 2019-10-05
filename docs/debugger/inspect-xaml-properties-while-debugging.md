@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: e1d26886eecf09ff8195b7a38338fa62e7f1d0bf
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322539"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974956"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 Gli strumenti **Struttura ad albero visuale attiva** ed **Esplora proprietà attive** offrono un punto di vista in tempo reale sul codice XAML. Questi strumenti offrono una visualizzazione albero degli elementi dell'interfaccia utente dell'applicazione XAML in esecuzione e mostrano le proprietà di runtime di qualsiasi elemento dell'interfaccia utente selezionato.
@@ -71,20 +71,22 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 Compilare il progetto e avviare il debug. La build deve essere configurata per il debug, non per il rilascio. Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
-Quando la finestra viene visualizzata, fare clic sul pulsante **Aggiungi elemento** un paio di volte. Viene visualizzato un output simile al seguente:
+Quando viene visualizzata la finestra, la barra degli strumenti in-app verrà visualizzata nell'applicazione in esecuzione. 
 
 ![Finestra principale dell'app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-app")
 
-Aprire quindi la finestra **Struttura ad albero visuale attiva** (**Debug > Finestre > Struttura ad albero visuale attiva** o cercarla sul lato sinistro dell'IDE). Rilasciare la finestra dalla posizione di ancoraggio in modo da poterla visualizzare affiancata alla finestra delle **proprietà attive**. Nella finestra **Struttura ad albero visuale attiva** espandere il nodo **ContentPresenter**. Tale nodo dovrebbe contenere i nodi per il pulsante e la casella di riepilogo. Espandere la casella di riepilogo, listBox, (e quindi **ScrollContentPresenter** e **ItemsPresenter**) per individuare i relativi elementi. La finestra dovrebbe essere simile alla seguente:
+A questo punto fare clic sul pulsante **Aggiungi elemento** alcune volte per aggiungere nuovi elementi all'elenco.
 
-![ListBoxItem nell'albero elementi visivi attivi](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
+Aprire quindi la finestra **struttura ad albero visuale** attiva facendo clic sul pulsante a sinistra della barra degli strumenti in-app (oppure eseguendo il **Debug > Windows > albero elementi visivi attivi**). Una volta aperto, trascinarlo dalla posizione di ancoraggio per poter esaminare questa finestra e la finestra **proprietà attive** affiancata. Nella finestra **Struttura ad albero visuale attiva** espandere il nodo **ContentPresenter**. Tale nodo dovrebbe contenere i nodi per il pulsante e la casella di riepilogo. Espandere la casella di riepilogo, listBox, (e quindi **ScrollContentPresenter** e **ItemsPresenter**) per individuare i relativi elementi. La finestra dovrebbe essere simile alla seguente:
+
+![ListBoxItem nell'albero degli elementi visivi attivi](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")
 
 Tornare alla finestra dell'applicazione e aggiungere altri elementi. Nella finestra **Albero elementi visivi attivi** dovrebbero venire visualizzati altri elementi casella di riepilogo.
 
-Esaminare ora le proprietà di uno degli elementi casella di riepilogo. Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo del **contenuto** è "Item1" e il campo del**colore** di **sfondo** > è **#FFFFFFE0**. Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe indicare che il campo **contenuto** è "Item2" e che il campo del**colore** di **sfondo** > è **#FFD3D3D3**.
+Esaminare ora le proprietà di uno degli elementi casella di riepilogo. Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo **contenuto** è "Item1" e il campo**colore**  >  in **background**è **#FFFFFFE0**. Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe indicare che il campo del **contenuto** è "Item2" e che il campo del**colore**  >  in **background**è **#FFD3D3D3**.
 
 > [!NOTE]
-> Un bordo giallo intorno a una proprietà in **Esplora proprietà attive** significa che il valore della proprietà viene impostato tramite un'associazione, ad `Color = {BindingExpression}`esempio. Un bordo verde indica che il valore viene impostato utilizzando una risorsa, ad esempio `Color = {StaticResource MyBrush}`.
+> Un bordo giallo intorno a una proprietà in **Esplora proprietà attive** significa che il valore della proprietà viene impostato tramite un'associazione, ad esempio `Color = {BindingExpression}`. Un bordo verde indica che il valore viene impostato utilizzando una risorsa, ad esempio `Color = {StaticResource MyBrush}`.
 
 La struttura effettiva del codice XAML include numerosi elementi a cui probabilmente non si è direttamente interessati e se non si conosce bene il codice potrebbe risultare difficile esplorare l'albero per trovare ciò che si sta cercando. Lo strumento **Struttura ad albero visuale attiva** offre alcuni modi per usare l'interfaccia utente dell'applicazione per individuare l'elemento che si vuole esaminare.
 

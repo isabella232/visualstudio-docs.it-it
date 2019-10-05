@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d4a9bfca972f9c57688b19bd872b31ee5997f76
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: af237fbc3ce7bcf098cd47065ed18d1dfd7f20a2
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550772"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975001"
 ---
 # <a name="overview-of-net-compiler-platform-code-analyzers"></a>Panoramica degli analizzatori di codice .NET Compiler Platform
 
@@ -36,7 +36,7 @@ Analogamente alle violazioni delle regole di analisi legacy, le violazioni dell'
 
 ![Linee ondulate nell'editor del codice](media/diagnostics-severity-colors.png)
 
-Gli analizzatori del codice basati su .NET Compiler Platform analizzano il codice in fase di compilazione, come l'analisi legacy se abilitata, ma anche in tempo reale durante la digitazione. Se si abilita l'[analisi della soluzione completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), gli analizzatori del codice offrono anche l'analisi in fase di progettazione dei file di codice che non sono aperti nell'editor.
+Gli analizzatori del codice basati su .NET Compiler Platform analizzano il codice in fase di compilazione, come l'analisi legacy se abilitata, ma anche in tempo reale durante la digitazione. Se si abilita l'[analisi della soluzione completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#toggle-full-solution-analysis), gli analizzatori del codice offrono anche l'analisi in fase di progettazione dei file di codice che non sono aperti nell'editor.
 
 > [!TIP]
 > Gli errori e gli avvisi in fase di compilazione degli analizzatori del codice vengono visualizzati solo se gli analizzatori sono installati come pacchetto NuGet.
@@ -47,7 +47,7 @@ Gli analizzatori del codice basati su .NET Compiler Platform non solo segnalano 
 > Le opzioni dell'interfaccia utente seguenti si applicano solo all'analisi legacy:
 >
 > - Opzione di menu **Analisi** > **Esegui analisi del codice**.
-> - Caselle di controllo **Abilita analisi codice su compilazione** e **Non visualizzare i risultati del codice generato** nella scheda **Analisi del codice** delle pagine delle proprietà di un progetto.
+> - Le caselle di controllo **Esegui su compilazione** e non **visualizzare i risultati dalle caselle di codice generate** nella scheda **analisi codice** delle pagine delle proprietà di un progetto.
 
 Per distinguere le violazioni degli analizzatori del codice dall'analisi legacy nella finestra Elenco errori, vedere la colonna **Strumento**. Se il valore di Strumento corrisponde a uno degli assembly nell'analizzatore in **Esplora soluzioni**, ad esempio **Microsoft.CodeQuality.Analyzers**, la violazione proviene da un analizzatore del codice. In caso contrario, la violazione proviene dall'analisi legacy.
 
@@ -64,7 +64,7 @@ Per distinguere le violazioni degli analizzatori del codice dall'analisi legacy 
 
 Gli analizzatori .NET Compiler Platform possono essere installati in base al progetto tramite un pacchetto NuGet oppure a livello di Visual Studio come estensione di Visual Studio. Esistono alcune differenze di comportamento fondamentali tra questi due metodi di [installazione degli analizzatori](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Ambito
+### <a name="scope"></a>`Scope`
 
 Se si installano gli analizzatori come estensione di Visual Studio, si applicano a livello di soluzione a tutte le istanze di Visual Studio. Se si installano gli analizzatori come pacchetto NuGet (metodo preferito), si applicano solo al progetto in cui è stato installato il pacchetto NuGet. Negli ambienti di team gli analizzatori installati come pacchetti NuGet sono inclusi nell'ambito per *tutti gli sviluppatori* che lavorano sul progetto.
 
@@ -80,7 +80,7 @@ Nello screenshot seguente viene illustrato l'output di compilazione da riga di c
 
 Non è possibile impostare la gravità delle regole provenienti da analizzatori installati come estensione di Visual Studio. Per configurare la [gravità della regola](../code-quality/use-roslyn-analyzers.md#rule-severity) installare gli analizzatori come pacchetto NuGet.
 
-## <a name="categories"></a>Categories
+## <a name="categories"></a>Categorie
 
 Di seguito sono illustrati i diversi tipi di analizzatori che risultano utili per analizzare il codice:
 

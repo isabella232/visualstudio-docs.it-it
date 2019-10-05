@@ -13,21 +13,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 86aa308369ef93792126c7f8da5f59f94ef0c02a
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551045"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975107"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedura: Configurare l'analisi legacy per il codice gestito
 
 In Visual Studio è possibile scegliere da un elenco di [set di regole](../code-quality/rule-set-reference.md) di analisi codice da applicare a un progetto di codice gestito. Per impostazione predefinita, il **Microsoft regole minime** set di regole è selezionato, ma è possibile applicare una regola diversa se si desidera impostare. Set di regole possono essere applicati a uno o più progetti in una soluzione.
 
-Per informazioni su come configurare un set di regole per le applicazioni Web ASP.NET, [vedere Procedura: Configurare l'analisi del codice per un'applicazione](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)Web ASP.NET.
-
 > [!NOTE]
-> Questo articolo si applica all'analisi legacy e non agli analizzatori di [codice basati su .NET Compiler Platform](use-roslyn-analyzers.md), che non eseguono l'analisi del codice dopo la compilazione.
+> Questo articolo si applica all'analisi legacy e non agli [analizzatori di codice basati su .NET Compiler Platform](use-roslyn-analyzers.md).
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurare un set di regole per un progetto di .NET Framework
 
@@ -37,20 +35,40 @@ Per informazioni su come configurare un set di regole per le applicazioni Web AS
 
    - Fare clic sul progetto in **Esplora soluzioni** e selezionare **delle proprietà**e quindi selezionare il **analisi del codice** scheda.
 
-1. Nel **Configuration** e **piattaforma** elenchi, selezionare la piattaforma di destinazione e configurazione di compilazione.
+2. Nel **Configuration** e **piattaforma** elenchi, selezionare la piattaforma di destinazione e configurazione di compilazione.
 
-1. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato con la configurazione selezionata, selezionare la **Abilita analisi codice su compilazione** casella di controllo. È anche possibile eseguire manualmente l'analisi del codice selezionando **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<NomeProgetto >** .
+::: moniker range="vs-2017"
 
-1. Per impostazione predefinita, l'analisi del codice non segnala gli avvisi del codice generato automaticamente da strumenti esterni. Per visualizzare gli avvisi del codice generato, deselezionare il **non visualizzare i risultati dal codice generato** casella di controllo.
+3. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato usando la configurazione selezionata, selezionare **Abilita analisi codice durante la compilazione**. È anche possibile eseguire manualmente l'analisi del codice selezionando **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<NomeProgetto >** .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato usando la configurazione selezionata, selezionare **Esegui in compilazione** nella sezione **analizzatori binari** . È anche possibile eseguire manualmente l'analisi del codice selezionando **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<NomeProgetto >** .
+
+::: moniker-end
+
+4. Per visualizzare gli avvisi del codice generato, deselezionare il **non visualizzare i risultati dal codice generato** casella di controllo.
 
     > [!NOTE]
-    > Questa opzione non elimina errori di analisi del codice e gli avvisi del codice generato quando gli errori e gli avvisi vengono visualizzati nei moduli e nei modelli. È possibile visualizzare e gestire il codice sorgente per un form o un modello, senza che venga sovrascritto.
+    > Questa opzione non elimina errori di analisi del codice e gli avvisi del codice generato quando gli errori e gli avvisi vengono visualizzati nei moduli e nei modelli. È possibile visualizzare e gestire il codice sorgente per un modulo o un modello e non verrà sovrascritto.
 
-1. Nel **eseguire questo set di regole** elenco, effettuare una delle operazioni seguenti:
+::: moniker range="vs-2017"
+
+5. Nel **eseguire questo set di regole** elenco, effettuare una delle operazioni seguenti:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Nell'elenco **regole attive** effettuare una delle operazioni seguenti:
+
+::: moniker-end
 
     - Selezionare il set di regole che si desidera utilizzare.
 
-    - Selezionare  **\<Sfoglia >** per trovare una regola personalizzata esistente impostato che non è presente nell'elenco.
+    - Selezionare **\<Browse >** per trovare un set di regole personalizzato esistente non presente nell'elenco.
 
     - Definire un [set di regole personalizzate](../code-quality/how-to-create-a-custom-rule-set.md).
 
@@ -77,4 +95,3 @@ Per impostazione predefinita, tutti i progetti gestiti di una soluzione vengono 
 ## <a name="see-also"></a>Vedere anche
 
 - [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)
-- [Procedura: Configurare l'analisi del codice per un'applicazione Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

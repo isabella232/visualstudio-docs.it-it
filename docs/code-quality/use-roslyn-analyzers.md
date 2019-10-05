@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1845647dc1848a7fcd99ef59c29eb163bece979d
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 3222509ccc5ec20cd1433d215ca3d69609af6bcb
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186027"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975015"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -62,12 +62,12 @@ Nella tabella seguente vengono illustrate le diverse opzioni di gravità:
 
 | Gravità (Esplora soluzioni) | Gravità (file EditorConfig) | Comportamento in fase di compilazione | Comportamento dell'editor |
 |-|-|-|
-| Error | `error` | Le violazioni vengono visualizzate come *errori* nel elenco errori e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.| Il codice che offende è sottolineato con un ondulato rosso e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
+| Errore | `error` | Le violazioni vengono visualizzate come *errori* nel elenco errori e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.| Il codice che offende è sottolineato con un ondulato rosso e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
 | Avviso | `warning` | Le violazioni vengono visualizzate come *avvisi* nell'elenco errori e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni. | Il codice danneggiato è sottolineato con una ondulazione verde e contrassegnata da una piccola casella verde nella barra di scorrimento. |
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con uno ondulato grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Hidden | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
 | nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
-| Impostazione predefinita | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
+| Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 La schermata seguente dell'editor del codice mostra tre violazioni diverse con livelli di gravità diversi. Si noti il colore del zigzag e il piccolo quadrato colorato nella barra di scorrimento a destra.
 
@@ -93,7 +93,7 @@ L'impostazione della gravità di una regola in un file EditorConfig ha la preced
 
 1. Se non si dispone già di un file EditorConfig per il progetto, [aggiungerne uno](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Aggiungere una voce per ogni regola che si desidera configurare con l'estensione di file corrispondente. Ad esempio, per impostare il livello di gravità per [CA1822](ca1822-mark-members-as-static.md) su `error` per C# i file, la voce è simile alla seguente:
+2. Aggiungere una voce per ogni regola che si desidera configurare con l'estensione di file corrispondente. Ad esempio, per impostare il livello di gravità per [CA1822](ca1822-mark-members-as-static.md) su @no__t- C# 1 per i file, la voce è simile alla seguente:
 
    ```ini
    [*.cs]
@@ -101,15 +101,15 @@ L'impostazione della gravità di una regola in un file EditorConfig ha la preced
    ```
 
 > [!NOTE]
-> Per gli analizzatori in stile codice IDE, è anche possibile configurarli in un file EditorConfig usando una sintassi diversa, ad `dotnet_style_qualification_for_field = false:suggestion`esempio. Tuttavia, se si imposta una gravità usando la `dotnet_diagnostic` sintassi, avrà la precedenza. Per altre informazioni, vedere [convenzioni di lingua per EditorConfig](../ide/editorconfig-language-conventions.md).
+> Per gli analizzatori in stile codice IDE, è anche possibile configurarli in un file EditorConfig usando una sintassi diversa, ad esempio `dotnet_style_qualification_for_field = false:suggestion`. Tuttavia, se si imposta una gravità usando la sintassi `dotnet_diagnostic`, avrà la precedenza. Per altre informazioni, vedere [convenzioni di lingua per EditorConfig](../ide/editorconfig-language-conventions.md).
 
 #### <a name="automatically-configure-rule-severity"></a>Configura automaticamente gravità regola
 
 Visual Studio offre un modo pratico per configurare la gravità di una regola dal menu della lampadina delle [azioni rapide](../ide/quick-actions.md) .
 
-1. Dopo che si è verificata una violazione, passare il puntatore del mouse sulla violazione zigzag nell'editor e aprire il menu lampadina. In alternativa, posizionare il cursore sulla riga e premere **CTRL**+ **.** (punto).
+1. Dopo che si è verificata una violazione, passare il puntatore del mouse sulla violazione zigzag nell'editor e aprire il menu lampadina. In alternativa, posizionare il cursore sulla riga e premere **Ctrl**+ **.** (punto).
 
-2. Dal menu lampadina selezionare **Configura o Elimina problemi** > **Configura \<ID regola > gravità**.
+2. Dal menu lampadina selezionare **Configura o disattiva problemi** > **Configura ID \<RULE > gravità**.
 
    ![Configurare la gravità della regola dal menu a bulbo chiaro in Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ Visual Studio offre un modo pratico per configurare la gravità di una regola da
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Imposta gravità regola da Esplora soluzioni
 
-1. In **Esplora soluzioni**, espandere**analizzatori** di **riferimenti** > (o**analizzatori** di **dipendenze** > per i progetti .NET Core).
+1. In **Esplora soluzioni**espandere **riferimenti** > **analizzatori** (o **dipendenze** > **analizzatori** per i progetti .NET Core).
 
 1. Espandere l'assembly che contiene la regola per la quale si desidera impostare la gravità.
 
@@ -138,9 +138,9 @@ Visual Studio offre un modo pratico per configurare la gravità di una regola da
 
 ![File del set di regole in Esplora soluzioni](media/ruleset-in-solution-explorer.png)
 
-1. Aprire il file [del set di regole](analyzer-rule-sets.md) attivo facendo doppio clic su di esso in **Esplora soluzioni**, selezionando **Apri set di regole attivo** dal menu di scelta rapida del nodo**analizzatori** **riferimenti** > oppure selezionando **Apri** in pagina delle proprietà di **analisi del codice** per il progetto.
+1. Aprire il file del [set di regole](analyzer-rule-sets.md) attivo facendo doppio clic su di esso in **Esplora soluzioni**, selezionando **Apri set di regole attivo** dal menu di scelta rapida del nodo **riferimenti** > **analizzatori** o selezionando **Apri** nelPagina delle proprietà di analisi del codice per il progetto.
 
-   Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, ne  *\<assegna il nome NomeProgetto >. RuleSet*e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
+   Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, lo denomina *\<projectname >. RuleSet*e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
 
    > [!NOTE]
    > I progetti .NET Core e .NET Standard non supportano i comandi di menu per i set di regole in **Esplora soluzioni**, ad esempio **aprire il set di regole attive**. Per specificare un set di regole non predefinite per un progetto .NET Core o .NET Standard, [aggiungere manualmente la proprietà **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno del set di regole nell'interfaccia utente dell'editor set di regole di Visual Studio.
@@ -159,13 +159,21 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 - In un **file EditorConfig**
 
-  Impostare la gravità su `none`, ad `dotnet_diagnostic.CA1822.severity = none`esempio.
-
-::: moniker-end
+  Impostare la gravità su `none`, ad esempio `dotnet_diagnostic.CA1822.severity = none`.
 
 - Dal menu **analizza**
 
-  Selezionare **analizza** > **Esegui analisi codice ed evitare i problemi attivi** nella barra dei menu per disattivare tutte le violazioni correnti. Questa operazione viene a volte definita "baselining".
+  Selezionare **analizza** > **Compila ed evita i problemi attivi** nella barra dei menu per disattivare tutte le violazioni correnti. Questa operazione viene a volte definita "baselining".
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- Dal menu **analizza**
+
+  Selezionare **analizza** > **eseguire l'analisi del codice ed evitare i problemi attivi** nella barra dei menu per disattivare tutte le violazioni correnti. Questa operazione viene a volte definita "baselining".
+
+::: moniker-end
 
 - Da **Esplora soluzioni**
 
@@ -177,19 +185,19 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 - Dall' **editor di codice**
 
-  Posizionare il cursore nella riga di codice con la violazione e premere **CTRL**+**punto (.)** per aprire il menu **azioni rapide** . Selezionare **Elimina CAXXXX** > **nel file di origine/eliminazione**.
+  Posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+**punto (.)** per aprire il menu **azioni rapide** . Selezionare non **visualizzare CAXXXX** > **nel file di origine/eliminazione**.
 
   ![Disattiva diagnostica dal menu azioni rapide](media/suppress-diagnostic-from-editor.png)
 
 - Dal **Elenco errori**
 
-  Selezionare le regole da escludere, quindi fare clic con il pulsante destro del mouse e selezionare **Elimina** > **in origine/in file di eliminazione**.
+  Selezionare le regole che si desidera disattivare, quindi fare clic con il pulsante destro del mouse e selezionare **elimina** > **nel file di origine/in eliminazione**.
 
   - Se si omette **in origine**, viene visualizzata la finestra di dialogo **Anteprima modifiche** che mostra un' C# anteprima della [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic direttiva di [avviso #Disable](/dotnet/visual-basic/language-reference/directives/directives) aggiunta al codice sorgente.
 
     ![Anteprima dell'aggiunta di #pragma avviso nel file di codice](media/pragma-warning-preview.png)
 
-  - Se si seleziona **in file di eliminazione**, viene visualizzata la finestra di dialogo **Anteprima modifiche** con un' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> anteprima dell'attributo aggiunto al file di eliminazione globale.
+  - Se si seleziona **in file di eliminazione**, viene visualizzata la finestra di dialogo **Anteprima modifiche** con un'anteprima dell'attributo <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> aggiunto al file di eliminazione globale.
 
     ![Anteprima dell'aggiunta dell'attributo SuppressMessage al file di eliminazione](media/preview-changes-in-suppression-file.png)
 
