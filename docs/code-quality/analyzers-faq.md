@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062173"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999981"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 
@@ -55,7 +55,32 @@ Gli [analizzatori StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers
 
 **D**: Qual è la differenza tra analisi legacy e analisi del codice basata su .NET Compiler Platform?
 
-**R: l'** analisi del codice basata su .NET Compiler Platform analizza il codice sorgente in tempo reale e durante la compilazione, mentre analisi legacy analizza i file binari al termine della compilazione. Per altre informazioni, vedere Domande frequenti [su analisi basata su .NET Compiler Platform e analisi legacy](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) e [analizzatori FxCop](fxcop-analyzers-faq.md).
+**R: l'** analisi del codice basata su .NET Compiler Platform analizza il codice sorgente in tempo reale e durante la compilazione, mentre analisi legacy analizza i file binari al termine della compilazione. Per altre informazioni, vedere Domande frequenti [su analisi basata su .NET Compiler Platform e analisi legacy](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) e [analizzatori FxCop](fxcop-analyzers-faq.md).
+
+## <a name="treat-warnings-as-errors"></a>Considera gli avvisi come errori
+
+**D**: Il progetto usa l'opzione di compilazione per considerare gli avvisi come errori. Dopo la migrazione dall'analisi legacy all'analisi del codice sorgente, tutti gli avvisi di analisi del codice sono ora visualizzati come errori. Come è possibile evitare questo?
+
+**R**: Per impedire che gli avvisi di analisi del codice vengano considerati come errori, attenersi alla procedura seguente:
+
+  1. Creare un file con estensione Props con il contenuto seguente:
+
+     ```xml
+     <Project>
+        <PropertyGroup>
+           <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        </PropertyGroup>
+     </Project>
+     ```
+
+  2. Aggiungere una riga al file di progetto con estensione csproj o vbproj per importare il file con estensione Props creato nel passaggio precedente. Questa riga deve essere posizionata prima di tutte le righe che importano i file di FxCop Analyzer. props. Ad esempio, se il file. props è denominato CodeAnalysis. props:
+
+     ```xml
+     ...
+     <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     ...
+     ```
 
 ## <a name="see-also"></a>Vedere anche
 

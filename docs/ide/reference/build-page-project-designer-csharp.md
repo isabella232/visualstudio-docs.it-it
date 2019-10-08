@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461463"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000216"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 
@@ -104,17 +104,14 @@ Blocca la capacità del compilatore di generare uno o più avvisi. Separare più
 
 Le impostazioni riportate di seguito sono usate per specificare quali avvisi considerare come errori. Selezionare una delle opzioni seguenti per indicare in quali condizioni restituire un errore se la compilazione rileva un avviso. Per altre informazioni, vedere [/warnaserror (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**None**
+**None** : non considera gli avvisi come errori.
 
-Non considera gli avvisi come errori.
+**All** : considera tutti gli avvisi come errori.
 
-**Avvisi specifici**
+**Avvisi specifici** : considera gli avvisi specificati come errori. Separare più numeri di avvisi tramite virgola o punto e virgola.
 
-Considera gli avvisi specificati come errori. Separare più numeri di avvisi tramite virgola o punto e virgola.
-
-**All**
-
-Considera tutti gli avvisi come errori.
+> [!TIP]
+> Se non si vuole che gli avvisi di analisi del codice vengano considerati come errori, vedere [domande frequenti sull'analisi del codice](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="output"></a>Output
 
