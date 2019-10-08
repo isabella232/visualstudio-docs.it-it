@@ -1,6 +1,6 @@
 ---
 title: Azioni rapide comuni
-description: Azioni rapide più utilizzate per C# e Visual Basic, tra cui correzione di parole chiave o simboli digitati non correttamente, risoluzione dei conflitti di merge, rimozione delle importazioni necessarie, generazione di tipi, introduzione di variabili locali e così via.
+description: Azioni rapide più diffuse C# per e Visual Basic inclusa la correzione di parole chiave o simboli non digitati, la risoluzione di conflitti di merge, la rimozione delle importazioni necessarie, la generazione di tipi, l'introduzione di variabili locali
 ms.date: 03/28/2018
 ms.topic: reference
 author: gewarren
@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551451"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000151"
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -30,7 +30,7 @@ Le Azioni rapide in questa sezione consentono di correggere gli errori nel codic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu Lampadina come ***"Modifica '* parola errata *' in '* parola corretta**'. Ad esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu lampadina come **"modifica" \<misspelled word > "in" \<correct word > ""** . Esempio:
 
 ```csharp
 // Before
@@ -58,9 +58,9 @@ Function MyFunction as Integer
 End Function
 ```
 
-| ID errore | Linguaggi applicabili | Versione supportata |
-| ------- | -------------------- | ---------------- |
-| CS0103, BC30002 | C# e Visual Basic | Visual Studio 2015 Update 2 |
+| ID errore | Linguaggi applicabili |
+| - | - |
+| CS0103, BC30002 | C# e Visual Basic |
 
 ### <a name="resolve-git-merge-conflict"></a>Risolvere i conflitti di unione Git
 
@@ -90,7 +90,7 @@ private void MyMethod()
 
 | ID errore | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| CS8300, BC37284 | C# e Visual Basic | Visual Studio 2017 versione 15.3 |
+| CS8300, BC37284 | C# e Visual Basic | Visual Studio 2017 versione 15,3 e successive |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Azioni per la rimozione di codice non necessario
 
@@ -99,8 +99,8 @@ private void MyMethod()
 L'azione rapida **Rimuovi istruzioni using non necessarie/Rimuovi istruzioni Imports non necessarie** consente di rimuovere eventuali istruzioni `using` e `Import` inutilizzate dal file corrente. Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
 
 | Linguaggi applicabili | Versione supportata |
-| -------------------- | ---------------- |
-| C# e Visual Basic | Visual Studio 2015 RTW |
+| - | - |
+| C# e Visual Basic | Visual Studio 2015 e versioni successive |
 
 ### <a name="remove-unnecessary-cast"></a>Rimuovere un cast non necessario
 
@@ -128,7 +128,7 @@ Dim number as Integer = 3
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0004 | C# e Visual Basic | Visual Studio 2015 RTW |
+| IDE0004 | C# e Visual Basic | Visual Studio 2015 e versioni successive |
 
 ### <a name="remove-unused-variables"></a>Rimuovere variabili non usate
 
@@ -155,7 +155,7 @@ public MyMethod()
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| CS0219, BC42024 | C# e Visual Basic | Visual Studio 2017 versione 15.3 |
+| CS0219, BC42024 | C# e Visual Basic | Visual Studio 2017 versione 15,3 e successive |
 
 ### <a name="remove-type-from-default-value-expression"></a>Rimuovere il tipo dall'espressione con valore predefinito
 
@@ -173,7 +173,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0034 | C# 7.1+ | Visual Studio 2017 versione 15.3 |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 versione 15,3 e successive |
 
 ## <a name="actions-that-add-missing-code"></a>Azioni per l'aggiunta di codice mancante
 
@@ -210,9 +210,9 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-| ID di diagnostica | Linguaggi applicabili | Versione supportata |
-| ------- | -------------------- | ---------------- |
-| CS0103, BC30451 | C# e Visual Basic| Visual Studio 2015 Update 2 |
+| ID di diagnostica | Linguaggi applicabili |
+| - | - |
+| CS0103, BC30451 | C# e Visual Basic|
 
 ### <a name="add-missing-casesdefault-caseboth"></a>Aggiungere elementi case mancanti, un'istruzione case predefinita o entrambi
 
@@ -281,7 +281,7 @@ End Select
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0010 | C# e Visual Basic| Visual Studio 2017 versione 15.3 |
+| IDE0010 | C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
 
 ### <a name="add-null-checks-for-parameters"></a>Aggiungere controlli null per i parametri
 
@@ -315,7 +315,7 @@ class MyClass
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# e Visual Basic| Visual Studio 2017 versione 15.3 |
+| C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
 
 ### <a name="add-argument-name"></a>Aggiungi il nome di argomento
 
@@ -331,7 +331,7 @@ var date = new DateTime(year: 1997, month: 7, day: 8);
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# e Visual Basic| Visual Studio 2017 versione 15.3 |
+| C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
 
 ### <a name="add-braces"></a>Aggiungi parentesi graffe
 
@@ -353,7 +353,7 @@ if (true)
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0011 | C# | Visual Studio 2017 RTW |
+| IDE0011 | C# | Visual Studio 2017 e versioni successive |
 
 ### <a name="add-and-order-modifiers"></a>Aggiungi i modificatori e Ordina i modificatori
 
@@ -387,8 +387,8 @@ private static int thisFieldIsPublic;
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0036 | C# e Visual Basic| Visual Studio 2017 versione 15.5 |
-| IDE0040 | C# e Visual Basic| Visual Studio 2017 versione 15.5 |
+| IDE0036 | C# e Visual Basic| Visual Studio 2017 versione 15,5 e successive |
+| IDE0040 | C# e Visual Basic| Visual Studio 2017 versione 15,5 e successive |
 
 ## <a name="code-transformations"></a>Trasformazioni del codice
 
@@ -445,7 +445,7 @@ End Select
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# e Visual Basic| Visual Studio 2017 versione 15.3 |
+| C# e Visual Basic| Visual Studio 2017 versione 15,3 e successive |
 
 ### <a name="convert-to-interpolated-string"></a>Convertire in una stringa interpolata
 
@@ -477,7 +477,7 @@ Dim s As String = $"My string with {num} in the middle"
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# 6.0+ e Visual Basic 14+ | Visual Studio 2017 RTW |
+| C# 6.0+ e Visual Basic 14+ | Visual Studio 2017 e versioni successive |
 
 ### <a name="use-object-initializers"></a>Usare gli inizializzatori di oggetto
 
@@ -507,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0017 | C# e Visual Basic | Visual Studio 2017 RTW |
+| IDE0017 | C# e Visual Basic | Visual Studio 2017 e versioni successive |
 
 ### <a name="use-collection-initializers"></a>Usare gli inizializzatori di insieme
 
@@ -541,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0028 | C# e Visual Basic | Visual Studio 2017 RTW |
+| IDE0028 | C# e Visual Basic | Visual Studio 2017 e versioni successive |
 
 ### <a name="convert-auto-property-to-full-property"></a>Convertire una proprietà automatica in proprietà completa
 
@@ -582,7 +582,7 @@ End Property
 
 | Linguaggi applicabili | Versione supportata |
 | -------------------- | ---------------- |
-| C# e Visual Basic | Visual Studio 2017 versione 15.5 |
+| C# e Visual Basic | Visual Studio 2017 versione 15,5 e successive |
 
 ### <a name="convert-block-body-to-expression-bodied-member"></a>Convertire il corpo di blocco in membro con corpo di espressione
 
@@ -635,7 +635,7 @@ class MyClass4
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 e versioni successive |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Convertire una funzione anonima in funzione locale
 
@@ -662,7 +662,7 @@ int fibonacci(int n)
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0041 | C# 7.0+ | Visual Studio 2017 versione 15.5 |
+| IDE0041 | C# 7.0+ | Visual Studio 2017 versione 15,5 e successive |
 
 Questa azione rapida suggerisce l'uso di [criteri di ricerca](/dotnet/csharp/pattern-matching) anziché del modello di codifica ```ReferenceEquals```, ove possibile.
 
@@ -686,7 +686,7 @@ if (value is null)
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0039 | C# 7.0+ | Visual Studio 2017 versione 15.5 |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 versione 15. e versioni successive |
 
 ### <a name="introduce-pattern-matching"></a>Introdurre criteri di ricerca
 
@@ -728,8 +728,8 @@ if (o is string s)
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
-| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 e versioni successive |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 e versioni successive |
 
 ### <a name="change-base-for-numeric-literals"></a>Modificare la base per i valori letterali numerici
 
@@ -757,7 +757,7 @@ Dim countdown As Integer = &H200000
 
 | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15.3 |
+| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15,3 e successive |
 
 ### <a name="insert-digit-separators-into-literals"></a>Inserire separatori di cifre in valori letterali
 
@@ -785,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 
 | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15.3 |
+| C# 7.0+ e Visual Basic 14+ | Visual Studio 2017 versione 15,3 e successive |
 
 ### <a name="use-explicit-tuple-names"></a>Usare nomi di tupla espliciti
 
@@ -817,7 +817,7 @@ Dim name = customer.name
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0033 | C# 7.0+ e Visual Basic 15+ | Visual Studio 2017 RTW |
+| IDE0033 | C# 7.0+ e Visual Basic 15+ | Visual Studio 2017 e versioni successive |
 
 ### <a name="use-inferred-names"></a>Usare nomi dedotti
 
@@ -845,8 +845,8 @@ var tuple = (age, name);
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0037 | C# | Visual Studio 2017 versione 15.5 |
-| IDE0037 | C# 7.1+ | Visual Studio 2017 versione 15.5 |
+| IDE0037 | C# | Visual Studio 2017 versione 15,5 e successive |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 versione 15,5 e successive |
 
 ### <a name="deconstruct-tuple-declaration"></a>Decostruisci la dichiarazione di variabile
 
@@ -872,7 +872,7 @@ Console.WriteLine($"{x} {y}");
 
 | ID di diagnostica | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| IDE0042 | C# 7.0+ | Visual Studio 2017 versione 15.5 |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 versione 15,5 e successive |
 
 ### <a name="make-method-synchronous"></a>Rendere sincrono un metodo
 
@@ -908,9 +908,9 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-| ID errore | Linguaggi applicabili | Versione supportata |
-| ------- | -------------------- | ---------------- |
-| CS1998, BC42356 | C# e Visual Basic | Visual Studio 2015 Update 2 |
+| ID errore | Linguaggi applicabili |
+| ------- | -------------------- |
+| CS1998, BC42356 | C# e Visual Basic |
 
 ### <a name="make-method-asynchronous"></a>Rendere asincrono un metodo
 
@@ -948,7 +948,7 @@ End Function
 
 | ID errore | Linguaggi applicabili | Versione supportata |
 | ------- | -------------------- | ---------------- |
-| CS4032, BC37057 | C# e Visual Basic | Visual Studio 2017 |
+| CS4032, BC37057 | C# e Visual Basic | Visual Studio 2017 e versioni successive |
 
 ## <a name="see-also"></a>Vedere anche
 

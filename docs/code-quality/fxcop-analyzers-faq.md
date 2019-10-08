@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3dc304d8d6bf844fb9c23f0e92efc5250da91e4d
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 277155bdab713ec12daa380fc2721a31b5d932a2
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975131"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000126"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Domande frequenti su FxCop e gli analizzatori FxCop
 
@@ -52,6 +52,10 @@ Se sono stati installati analizzatori FxCop ma si continua a ricevere l'avviso C
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quali regole sono state trasferite agli analizzatori FxCop?
 
 Per informazioni sulle regole di analisi legacy che sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md), vedere [stato della porta della regola FxCop](fxcop-rule-port-status.md).
+
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>Gli avvisi di analisi del codice vengono considerati errori
+
+Se il progetto usa l'opzione di compilazione per considerare gli avvisi come errori, gli avvisi di FxCop Analyzer possono apparire come errori. Per evitare che gli avvisi di analisi del codice vengano considerati errori, attenersi alla procedura descritta in [domande frequenti sull'analisi del codice](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="see-also"></a>Vedere anche
 

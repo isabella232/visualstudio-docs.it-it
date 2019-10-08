@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251698"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000153"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -48,7 +48,7 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - interfaccia
 - enum
 - proprietà
-- metodo
+- method
 - campo
 - event
 - delegato
@@ -155,7 +155,7 @@ I valori consentiti per questa proprietà sono:
 > [!NOTE]
 > Nell'ambito dello stile di denominazione è necessario specificare uno stile per le lettere maiuscole e minuscole. In caso contrario, lo stile di denominazione potrebbe essere ignorato.
 
-## <a name="severity"></a>Gravità
+## <a name="severity"></a>severity
 
 Per descrivere la gravità di una violazione della regola di denominazione, specificare una proprietà nel formato seguente:
 
@@ -163,7 +163,7 @@ Per descrivere la gravità di una violazione della regola di denominazione, spec
 
 Nella tabella seguente sono riportati i valori consentiti per la gravità, con il relativo significato:
 
-Gravità | Effetto
+severity | Effetto
 ------------ | -------------
 none | La regola viene eliminata completamente.
 refactoring o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
@@ -226,7 +226,7 @@ Ora si modifica la gravità della violazione, che diventa `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la violazione del nome, si visualizzano una linea verde ondulata e un avviso nell'**Elenco errori**:
+Se si chiude e si riapre il file di codice, anziché visualizzare il suggerimento sotto la violazione del nome, viene visualizzato un zigzag verde e un avviso nel Elenco errori:
 
 ![Avviso della regola di denominazione](media/editorconfig-naming-rule-warning.png)
 
