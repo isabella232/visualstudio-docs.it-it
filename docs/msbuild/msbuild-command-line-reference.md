@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96d242a8c7af44f47db3ebad5e6af03389a6fc0
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 7a23a82afcc484cbbe71bf167ecd0884f399e656
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107358"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252657"
 ---
 # <a name="msbuild-command-line-reference"></a>Riferimenti alla riga di comando di MSBuild
 Quando si usa *MSBuild.exe* per compilare un file di progetto o di soluzione, si possono includere varie opzioni per specificare diversi aspetti del processo.
@@ -37,13 +37,13 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ## <a name="arguments"></a>Argomenti
 
-|Argomento|DESCRIZIONE|
+|Argomento|Descrizione|
 |--------------|-----------------|
 |`ProjectFile`|Compila le destinazioni nel file di progetto specificato. Se non si specifica un file di progetto, in MSBuild viene eseguita una ricerca nella directory di lavoro corrente di un nome file la cui estensione termina in *proj* e viene usato il file in questione. È inoltre possibile specificare un file di soluzione di Visual Studio per questo argomento.|
 
 ## <a name="switches"></a>Opzioni
 
-|Opzione|Forma breve|DESCRIZIONE|
+|Opzione|Forma breve|Descrizione|
 |------------|----------------|-----------------|
 |-help|/? o -h|Visualizza le informazioni sull'utilizzo. Il comando seguente è un esempio:<br /><br /> `msbuild.exe -?`|
 |-detailedsummary|-ds|Mostra informazioni dettagliate alla fine del log di compilazione sulle configurazioni che sono state compilate e su come sono state pianificate nei nodi.|
@@ -64,9 +64,9 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ### <a name="switches-for-loggers"></a>Opzioni per logger
 
-|Opzione|Forma breve|DESCRIZIONE|
+|Opzione|Forma breve|Descrizione|
 |------------|----------------|-----------------|
-|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Passa i parametri specificati al logger di console tramite cui le informazioni sulla compilazione vengono visualizzate nella finestra della console. È possibile specificare i parametri riportati di seguito:<br /><br /> -   **PerformanceSummary**. Visualizza il tempo necessario per attività, destinazioni e progetti.<br />-   **Summary**. Mostra il riepilogo di avvisi ed errori alla fine.<br />-   **NoSummary**. Non mostra il riepilogo di avvisi ed errori alla fine.<br />-   **ErrorsOnly**. Mostra solo gli errori.<br />-   **WarningsOnly**. Mostra solo gli avvisi.<br />-   **NoItemAndPropertyList**. Non mostra l'elenco degli elementi e delle proprietà che verrebbero visualizzati all'inizio di ogni compilazione del progetto se il livello di dettaglio fosse stato impostato su `diagnostic`.<br />-   **ShowCommandLine**. Mostra i messaggi `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. Mostra il timestamp come prefisso di ogni messaggio.<br />-   **ShowEventId**. Mostra l'ID evento per ogni evento avviato, completato e per ogni messaggio.<br />-   **ForceNoAlign**. Non allinea il testo alla dimensione del buffer della console.<br />-   **DisableConsoleColor**. Usa i colori predefiniti della console per tutti i messaggi di registrazione.<br />-   **DisableMPLogging**. Disabilita lo stile di registrazione del multiprocessore dell'output quando è in esecuzione in modalità non multiprocessore.<br />-   **EnableMPLogging**. Abilita lo stile di registrazione del multiprocessore anche quando è in esecuzione in modalità non multiprocessore. Questo stile di registrazione è attivato per impostazione predefinita.<br />-   **Verbosity**. Esegue l'override dell'impostazione **-verbosity** per questo logger.<br /><br /> Usare un punto e virgola o una virgola per separare più parametri, come illustrato nell'esempio seguente:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
+|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Passa i parametri specificati al logger di console tramite cui le informazioni sulla compilazione vengono visualizzate nella finestra della console. È possibile specificare i parametri riportati di seguito:<br /><br /> -   **PerformanceSummary**. Visualizza il tempo necessario per attività, destinazioni e progetti.<br />-   **Summary**. Mostra il riepilogo di avvisi ed errori alla fine.<br />-   **NoSummary**. Non mostra il riepilogo di avvisi ed errori alla fine.<br />-   **ErrorsOnly**. Mostra solo gli errori.<br />-   **WarningsOnly**. Mostra solo gli avvisi.<br />-   **NoItemAndPropertyList**. Non mostra l'elenco degli elementi e delle proprietà che verrebbero visualizzati all'inizio di ogni compilazione del progetto se il livello di dettaglio fosse stato impostato su `diagnostic`.<br />-   **ShowCommandLine**. Mostra i messaggi `TaskCommandLineEvent`.<br />-   **ShowTimestamp**. Mostra il timestamp come prefisso di ogni messaggio.<br />-   **ShowEventId**. Mostra l'ID evento per ogni evento avviato, completato e per ogni messaggio.<br />-   **ForceNoAlign**. Non allinea il testo alla dimensione del buffer della console.<br />-   **DisableConsoleColor**. Usa i colori predefiniti della console per tutti i messaggi di registrazione.<br />-   **DisableMPLogging**. Disabilita lo stile di registrazione del multiprocessore dell'output quando è in esecuzione in modalità non multiprocessore.<br />-   **EnableMPLogging**. Abilita lo stile di registrazione del multiprocessore anche quando è in esecuzione in modalità non multiprocessore. Questo stile di registrazione è attivato per impostazione predefinita.<br />-   **Verbosity**. Esegue l'override dell'impostazione **-verbosity** per questo logger.<br /><br /> Usare un punto e virgola per separare più parametri, come illustrato nell'esempio seguente:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
 |-distributedFileLogger|-dfl|Registra l'output di compilazione di ogni nodo MSBuild nel relativo file. Il percorso iniziale per questi file è la directory attuale. Per impostazione predefinita, i file vengono denominati *MSBuild\<NodeId>.log*. È possibile usare l'opzione **-fileLoggerParameters** per specificare la posizione dei file e altri parametri per fileLogger.<br /><br /> Se un file di log viene denominato usando l'opzione **-fileLoggerParameters**, nel logger distribuito questo nome verrà usato come modello e l'ID nodo verrà aggiunto a questo nome durante la creazione di un file di log per ogni nodo.|
 |-distributedlogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|Registra gli eventi di MSBuild, associando un'istanza di logger diversa a ogni nodo. Per specificare più logger, specificare ciascun logger separatamente.<br /><br /> Usare la sintassi del logger per specificare un logger. Per la sintassi del logger, vedere l'opzione **-logger** di seguito.<br /><br /> Negli esempi seguenti viene illustrato l'utilizzo di questa opzione:<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
 |-fileLogger<br /><br /> *[number]*|-fl[`number`]|Registra l'output di compilazione in un singolo file nella directory corrente. Se non si specifica `number`, il file di output viene denominato *msbuild.log*. Se si specifica `number`, il file di output viene denominato *msbuild\<n>.log*, dove \<n> è `number`. `Number` può essere una cifra compresa tra 1 e 9.<br /><br /> È possibile usare l'opzione **-fileLoggerParameters** per specificare la posizione dei file e altri parametri per fileLogger.|
