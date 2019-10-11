@@ -1,6 +1,6 @@
 ---
-title: Set di regole dell'analizzatore FxCop
-ms.date: 09/23/2019
+title: Set di regole e file EditorConfig di FxCop Analyzer
+ms.date: 10/08/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
@@ -10,41 +10,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974702"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172776"
 ---
-# <a name="rule-sets-for-analyzer-packages"></a>Set di regole per pacchetti dell'analizzatore
+# <a name="enable-a-category-of-rules"></a>Abilitare una categoria di regole
 
-I set di regole predefiniti sono inclusi con alcuni pacchetti dell'analizzatore NuGet. Ad esempio, i set di regole inclusi nel pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer (a partire dalla versione 2.6.2) abilitano o disabilitano le regole in base alla categoria, ad esempio sicurezza, denominazione o prestazioni. L'uso di set di regole consente di visualizzare rapidamente solo le violazioni delle regole relative a una particolare categoria di regole.
+I pacchetti dell'analizzatore possono includere file di [set](using-rule-sets-to-group-code-analysis-rules.md) di regole e [EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) predefiniti che consentono di abilitare in modo semplice e rapido una categoria di regole, ad esempio regole di sicurezza o di progettazione. Il pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer include entrambi i set di regole (a partire dalla versione 2.6.2) e i file EditorConfig (a partire dalla versione 2.9.5). Abilitando una categoria specifica di regole, è possibile identificare i problemi di destinazione e le condizioni specifiche.
 
-Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche. I set di regole consentono di abilitare o disabilitare le regole e impostare la gravità per le singole violazioni delle regole. Il pacchetto NuGet dell'analizzatore FxCop include set di regole predefiniti per le categorie di regole seguenti:
+> [!NOTE]
+> L'abilitazione delle regole dell'analizzatore e l'impostazione della loro gravità usando un file EditorConfig sono supportate a partire da Visual Studio 2019 versione 16,3.
 
-- progettazione
-- documentazione
-- manutenibilità
-- denominazione
-- prestazioni
-- affidabilità
-- sicurity
-- utilizzo
+Il pacchetto NuGet dell'analizzatore FxCop include set di regole e file EditorConfig predefiniti per le categorie di regole seguenti:
 
-Se si esegue la migrazione da un'analisi "FxCop" legacy a un'analisi del codice basata su .NET Compiler Platform, questi set di regole consentono di continuare a usare configurazioni di regole simili a [quelle usate in precedenza](rule-set-reference.md).
+- Tutte le regole
+- Flusso di dati
+- Progettazione
+- Documentazione
+- Globalizzazione
+- Interoperabilità
+- Manutenibilità
+- Denominazione
+- Prestazioni
+- Portata da FxCop
+- Affidabilità
+- Security
+- Utilizzo
 
-## <a name="use-analyzer-package-rule-sets"></a>Usare set di regole del pacchetto dell'analizzatore
+Ognuna di queste categorie di regole ha un file EditorConfig o set di regole per:
 
-Dopo aver [installato un pacchetto di analizzatore NuGet](install-roslyn-analyzers.md), individuare il set di regole predefinito nella relativa directory *RuleSets* . Se, ad esempio, si fa riferimento al pacchetto di `Microsoft.CodeAnalysis.FxCopAnalyzers` Analyzer, è possibile trovare la directory *RuleSets* in *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-4 @ no__t-5version @ no__t-6\rulesets*. Da qui, copiare uno o più RuleSet e incollarli nella directory che contiene il progetto di Visual Studio o direttamente in **Esplora soluzioni**.
+- abilitare tutte le regole nella categoria (e disabilitare tutte le altre regole)
+- Usa l'impostazione di abilitazione e gravità predefinite di ogni regola (e Disabilita tutte le altre regole)
+
+> [!TIP]
+> La categoria "tutte le regole" include un file EditorConfig o set di regole aggiuntivo per disabilitare tutte le regole. Utilizzare questo file per eliminare rapidamente eventuali avvisi o errori dell'analizzatore in un progetto.
+
+> [!TIP]
+> Se si esegue la migrazione da un'analisi "FxCop" legacy a un'analisi del codice basata su .NET Compiler Platform, i file EditorConfig e set di regole consentono di continuare a usare configurazioni di regole simili a [quelle usate in precedenza](rule-set-reference.md).
+
+## <a name="predefined-editorconfig-files"></a>File EditorConfig predefiniti
+
+I file EditorConfig predefiniti per il pacchetto Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer si trovano in *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig* directory. Ad esempio, il file EditorConfig per abilitare tutte le regole di sicurezza si trova in *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__ t-5. EditorConfig*.
+
+Copiare il file con estensione EditorConfig scelto nella directory radice del progetto.
+
+## <a name="predefined-rule-sets"></a>Set di regole predefiniti
+
+I file del set di regole predefiniti per il pacchetto Microsoft. CodeAnalysis. FxCopAnalyzers Analyzer si trovano in *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets* Directory. Ad esempio, il file del set di regole per abilitare tutte le regole di sicurezza si trova in *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\rulesets\SecurityRulesEnabled.RuleSet*.
+
+Copiare uno o più set di regole e incollarli nella directory che contiene il progetto di Visual Studio o direttamente in **Esplora soluzioni**.
 
 È anche possibile [personalizzare un set di regole predefinito](how-to-create-a-custom-rule-set.md) per le proprie preferenze. Ad esempio, è possibile modificare la gravità di una o più regole in modo che le violazioni vengano visualizzate come errori o avvisi nell' **Elenco errori**.
 
-## <a name="set-the-active-rule-set"></a>Imposta il set di regole attive
+### <a name="set-the-active-rule-set"></a>Imposta il set di regole attive
 
 Il processo di impostazione del set di regole attivo è leggermente diverso a seconda che si disponga di un progetto .NET Core/.NET standard o di un progetto .NET Framework.
 
-### <a name="net-core"></a>.NET Core
+#### <a name="net-core"></a>.NET Core
 
 Per impostare una regola come set di regole attivo per l'analisi nei progetti .NET Core o .NET Standard, aggiungere manualmente la proprietà **CodeAnalysisRuleSet** al file di progetto. Il frammento di codice seguente, ad esempio, imposta `HelloWorld.ruleset` come set di regole attive.
 
@@ -55,7 +80,7 @@ Per impostare una regola come set di regole attivo per l'analisi nei progetti .N
 </PropertyGroup>
 ```
 
-### <a name="net-framework"></a>.NET Framework
+#### <a name="net-framework"></a>.NET Framework
 
 Per impostare una regola come set di regole attivo per l'analisi nei progetti .NET Framework:
 
@@ -76,27 +101,6 @@ Per impostare una regola come set di regole attivo per l'analisi nei progetti .N
 ::: moniker-end
 
    A questo punto, vengono visualizzate solo le violazioni delle regole per le regole abilitate nel set di regole selezionato.
-
-## <a name="available-rule-sets"></a>Set di regole disponibili
-
-I set di regole dell'analizzatore predefiniti includono tre RuleSet che interessano tutte le regole del pacchetto @ no__t-0one che le abilitano tutti, una che li Disabilita tutti e uno che rispetta le impostazioni di gravità e abilitazione predefinite di ogni regola:
-
-- AllRulesEnabled.ruleset
-- AllRulesDisabled.ruleset
-- AllRulesDefault.ruleset
-
-Sono inoltre disponibili due set di regole per ogni categoria di regole nel pacchetto, ad esempio prestazioni o sicurezza. Un set di regole Abilita tutte le regole per la categoria e un set di regole rispetta la gravità predefinita e le impostazioni di abilitazione per ogni regola nella categoria.
-
-Il pacchetto [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer include set di regole per le categorie seguenti:
-
-- progettazione
-- documentazione
-- manutenibilità
-- denominazione
-- prestazioni
-- affidabilità
-- sicurity
-- utilizzo
 
 ## <a name="see-also"></a>Vedere anche
 

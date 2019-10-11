@@ -2,7 +2,7 @@
 title: Usare i parametri della riga di comando per installare Visual Studio
 titleSuffix: ''
 description: Informazioni su come usare i parametri della riga di comando per controllare o personalizzare l'installazione di Visual Studio.
-ms.date: 09/11/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913241"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018798"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usare i parametri della riga di comando per installare Visual Studio
 
@@ -32,23 +32,30 @@ Quando si installa Visual Studio da un prompt dei comandi, è possibile usare di
 - Automatizzare il processo di installazione.
 - Creare una cache (layout) dei file di installazione per riutilizzarli in seguito.
 
-Le opzioni della riga di comando vengono utilizzate insieme al programma di avvio automatico dell'installazione, ovvero il file piccolo (1 MB) che avvia il processo di download. Il programma di avvio automatico è il primo eseguibile che viene avviato quando si esegue il download dal sito di Visual Studio. Usare i collegamenti seguenti per accedere direttamente al programma di bootstrap della versione più recente per l'edizione del prodotto da installare:
+Le opzioni della riga di comando vengono utilizzate insieme al programma di avvio automatico dell'installazione, ovvero il file piccolo (1 MB) che avvia il processo di download. Il programma di avvio automatico è il primo eseguibile che viene avviato quando si esegue il download dal sito di Visual Studio.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [**versioni precedenti di Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Usare i collegamenti seguenti per accedere direttamente al programma di bootstrap della versione più recente per l'edizione del prodotto da installare:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+Il file del programma di avvio automatico deve corrispondere o essere simile a uno dei seguenti:
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
 
 ## <a name="command-line-parameters"></a>Parametri della riga di comando
 
@@ -112,7 +119,7 @@ Sostituire `vs_enterprise.exe` nel modo appropriato per l'edizione del prodotto 
 | **Opzioni di installazione avanzate** | **Descrizione** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Facoltativa**: ID del canale per l'istanza da installare. È obbligatorio per il comando di installazione e viene ignorato per gli altri comandi se è specificata l'opzione `--installPath`. |
-| `--channelUri <uri>` | **Facoltativa**: URI del manifesto del canale. Se gli aggiornamenti non sono desiderati, può puntare a un file inesistente, `--channelUri` ad esempio--URI C:\doesntExist.cHmAn. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
+| `--channelUri <uri>` | **Facoltativa**: URI del manifesto del canale. Se gli aggiornamenti non sono desiderati, `--channelUri` può puntare a un file inesistente, ad esempio--URI C:\doesntExist.chman. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
 | `--installChannelUri <uri>` | **Facoltativa**: URI del manifesto del canale da usare per l'installazione. L'URI specificato da `--channelUri` (che deve essere specificato quando si specifica `--installChannelUri`) viene usato per rilevare gli aggiornamenti. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
 | `--installCatalogUri <uri>` | **Facoltativa**: URI del manifesto del catalogo da usare per l'installazione. Se specificato, il gestore del canale prova a scaricare il manifesto del catalogo da questo URI prima di usare l'URI nel manifesto del canale di installazione. Questo parametro viene usato per supportare l'installazione offline, in cui verrà creata la cache di layout con il catalogo dei prodotti già scaricato. Può essere usato per il comando di installazione e viene ignorato per gli altri comandi. |
 | `--productId <id>` | **Facoltativa**: ID del prodotto per l'istanza che verrà installata. Prepopolata nelle condizioni di normale installazione. |

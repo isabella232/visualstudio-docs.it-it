@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817524"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018773"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Trovare l'attività di debug in Visual Studio
 
@@ -34,7 +34,10 @@ Provare un punto di interruzione condizionale per controllare dove e quando un p
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Sospendere il codice solo quando cambia la proprietà o il valore di un oggetto specifico
 
-Per C++, impostare un punto di [interruzione dei dati](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). Per le app che usano .NET Core 3, è anche possibile impostare un punto di [interruzione dei dati](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+Per C++, impostare un punto di [interruzione dei dati](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). 
+::: moniker range=">= vs-2019"
+Per le app che usano .NET Core 3, è anche possibile impostare un punto di [interruzione dei dati](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+::: moniker-end
 
 In caso contrario C# , F# solo per e è possibile [tenere traccia di un ID oggetto con un punto di interruzione condizionale](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 

@@ -29,15 +29,15 @@ f1_keywords:
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e57a10b9bd36b07a2d4993626604f2a00558ca
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 976a66901ae60bd6edc053d5acbb516aa87c1a7c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919571"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72015999"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'appropriata disciplina di blocco e utilizzare le annotazioni SAL.
@@ -48,7 +48,7 @@ Sfortunatamente, queste regole di blocco in apparenza semplici sono sorprendente
 
 Le annotazioni di concorrenza SAL sono progettate per specificare gli effetti collaterali del blocco, la responsabilità del blocco, la tutela di dati, la gerarchia d'ordine e altri comportamenti previsti del blocco. Creando regole implicite esplicite, le annotazioni di concorrenza SAL forniscono un metodo coerente per documentare come il codice utilizza le regole di blocco. Le annotazioni di concorrenza migliorano anche la capacità degli strumenti di analisi del codice di trovare race condition, deadlock, operazioni di sincronizzazione non corrispondenti e altri difficili errori di concorrenza.
 
-## <a name="general-guidelines"></a>Linee guida generali
+## <a name="general-guidelines"></a>Indicazioni generali
 Utilizzando le annotazioni è possibile indicare i contratti impliciti nelle definizioni di funzione tra le implementazioni (chiamati) e i client (chiamanti) ed esprimere invarianti e altre proprietà del programma che possono migliorare ulteriormente l'analisi.
 
 SAL supporta molti tipi diversi di primitive di blocco, come ad esempio le sezioni critiche, i mutex, gli spinlock e altri oggetti risorsa. Molte annotazioni di concorrenza accettano un'espressione di blocco come parametro. Per convenzione, un blocco è indicato dall'espressione di percorso dell'oggetto blocco sottostante.
@@ -64,7 +64,7 @@ Alcune regole sulla proprietà dei thread da tenere in considerazione:
 ## <a name="locking-annotations"></a>Annotazioni di blocco
 Nella tabella seguente sono elencate le annotazioni di blocco.
 
-|Annotazione|DESCRIZIONE|
+|Annotazione|Descrizione|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|
 |`_Acquires_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|
@@ -106,16 +106,16 @@ Nella tabella seguente sono elencate le annotazioni per l'accesso ai dati condiv
 |`_Write_guarded_by_(expr)`|Annota una variabile e indica se la variabile è modificata, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|
 
 ## <a name="smart-lock-and-raii-annotations"></a>Annotazioni Smart Lock e RAII
-I blocchi intelligenti in genere avvolgono i blocchi nativi e ne gestiscono la durata. La tabella seguente elenca le annotazioni che possono essere usate con i blocchi intelligenti e i modelli di `move` codifica RAII con il supporto per la semantica.
+I blocchi intelligenti in genere avvolgono i blocchi nativi e ne gestiscono la durata. Nella tabella seguente sono elencate le annotazioni che è possibile usare con i blocchi intelligenti e i modelli di codifica RAII con supporto per la semantica `move`.
 
 |Annotazione|Descrizione|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Indica all'analizzatore di presumere che sia stato acquisito uno Smart Lock. Questa annotazione prevede un tipo di blocco di riferimento come parametro.|
 |`_Analysis_assume_smart_lock_released_`|Indica all'analizzatore di presumere che sia stato rilasciato uno Smart Lock. Questa annotazione prevede un tipo di blocco di riferimento come parametro.|
-|`_Moves_lock_(target, source)`|Descrive `move constructor` `source` l' operazione`target`che trasferisce lo stato di blocco dall'oggetto a. Viene considerato un oggetto appena costruito, quindi qualsiasi stato precedente viene perso e sostituito con lo `source` stato. `target` Viene `source` inoltre reimpostato sullo stato Clean senza conteggi dei blocchi o destinazioni di aliasing, ma gli alias che vi fanno riferimento rimangono invariati.|
-|`_Replaces_lock_(target, source)`|Descrive `move assignment operator` la semantica in cui viene rilasciato il blocco di destinazione prima di trasferire lo stato dall'origine. Questo può essere considerato come una combinazione di `_Moves_lock_(target, source)` preceduta da un. `_Releases_lock_(target)`|
-|`_Swaps_locks_(left, right)`|Descrive il comportamento `swap` standard che presuppone che gli `left` oggetti `right` e scambino il proprio stato. Lo stato scambiato include il conteggio dei blocchi e la destinazione di alias, se presenti. Gli alias che puntano agli `left` oggetti `right` e rimangono invariati.|
-|`_Detaches_lock_(detached, lock)`|Descrive uno scenario in cui un tipo di wrapper di blocco consente la dissociazione con la relativa risorsa contenuta. Questo approccio è simile al `std::unique_ptr` funzionamento con il puntatore interno: consente ai programmatori di estrarre il puntatore e lasciare il contenitore del puntatore intelligente in uno stato pulito. Una logica simile è supportata `std::unique_lock` da e può essere implementata nei wrapper di blocco personalizzati. Il blocco scollegato mantiene il proprio stato (se presente, il numero di blocchi e la destinazione di aliasing), mentre il wrapper viene reimpostato in modo da contenere zero blocchi e nessuna destinazione di alias, mantenendo i propri alias. Non viene eseguita alcuna operazione sui conteggi dei blocchi (rilascio e acquisizione). Questa annotazione si comporta esattamente `_Moves_lock_` come ad eccezione del fatto che l'argomento `return` scollegato `this`deve essere anziché.|
+|`_Moves_lock_(target, source)`|Viene descritta l'operazione `move constructor` che trasferisce lo stato di blocco dall'oggetto `source` al `target`. Il `target` viene considerato un oggetto appena costruito, quindi qualsiasi stato precedente viene perso e sostituito con lo stato `source`. Anche `source` viene reimpostato su uno stato pulito senza conteggi dei blocchi o destinazione di aliasing, ma gli alias che vi fanno riferimento rimangono invariati.|
+|`_Replaces_lock_(target, source)`|Viene descritta la semantica `move assignment operator` in cui viene rilasciato il blocco di destinazione prima di trasferire lo stato dall'origine. Questo può essere considerato come una combinazione di `_Moves_lock_(target, source)` preceduta da un `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Descrive il comportamento standard `swap` che presuppone che gli oggetti `left` e `right` scambino il proprio stato. Lo stato scambiato include il conteggio dei blocchi e la destinazione di alias, se presenti. Gli alias che puntano agli oggetti `left` e `right` rimangono invariati.|
+|`_Detaches_lock_(detached, lock)`|Descrive uno scenario in cui un tipo di wrapper di blocco consente la dissociazione con la relativa risorsa contenuta. Questo approccio è simile a quello che `std::unique_ptr` funziona con il puntatore interno: consente ai programmatori di estrarre il puntatore e lasciare il relativo contenitore del puntatore intelligente in uno stato pulito. Una logica simile è supportata da `std::unique_lock` e può essere implementata nei wrapper di blocco personalizzati. Il blocco scollegato mantiene il proprio stato (se presente, il numero di blocchi e la destinazione di aliasing), mentre il wrapper viene reimpostato in modo da contenere zero blocchi e nessuna destinazione di alias, mantenendo i propri alias. Non viene eseguita alcuna operazione sui conteggi dei blocchi (rilascio e acquisizione). Questa annotazione si comporta esattamente come `_Moves_lock_`, tranne per il fatto che l'argomento scollegato deve essere `return` anziché `this`.|
 
 ## <a name="see-also"></a>Vedere anche
 

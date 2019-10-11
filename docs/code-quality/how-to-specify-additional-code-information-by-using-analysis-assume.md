@@ -1,5 +1,5 @@
 ---
-title: Usare analysis_assume per suggerimenti dell'analisi codice
+title: Usare _Analysis_assume per gli hint di analisi del codice
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,32 +9,32 @@ helpviewer_keywords:
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3c80f0780dcd577356de69944dcc76cca7133c
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132114"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018727"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedura: Specificare informazioni aggiuntive sul codice usando _Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Procedura: Specificare informazioni aggiuntive sul codice usando _Analysis_assume
 
-È possibile fornire suggerimenti per lo strumento di analisi codice per codice C/C++ che guida il processo di analisi e ridurre gli avvisi. Per fornire informazioni aggiuntive, usare la funzione seguente:
+È possibile fornire suggerimenti allo strumento di analisi del codice per CC++ /code che consente il processo di analisi e la riduzione degli avvisi. Per fornire informazioni aggiuntive, utilizzare la funzione seguente:
 
 `_Analysis_assume(`  `expr`  `)`
 
-`expr` -qualsiasi espressione che si presuppone restituisca true.
+`expr`: qualsiasi espressione che si presuppone restituisca true.
 
-Lo strumento di analisi di codice si presuppone che la condizione rappresentata dall'espressione sia true nel punto in cui la funzione viene visualizzata e rimanga true finché non viene modificata espressione, ad esempio, mediante l'assegnazione alla variabile.
+Lo strumento di analisi del codice presuppone che la condizione rappresentata dall'espressione sia true nel punto in cui viene visualizzata la funzione e rimanga true fino a quando l'espressione non viene modificata, ad esempio per assegnazione a una variabile.
 
 > [!NOTE]
-> `_Analysis_assume` non influisce sull'ottimizzazione del codice. Lo strumento di analisi codice, di fuori `_Analysis_assume` viene definito come no-op.
+> `_Analysis_assume` non influisca sull'ottimizzazione del codice. Al di fuori dello strumento di analisi del codice, `_Analysis_assume` è definito come no-op.
 
 ## <a name="example"></a>Esempio
 
-Il codice seguente usa `_Analysis_assume` per risolvere l'avviso di analisi del codice [C6388](../code-quality/c6388.md):
+Il codice seguente usa `_Analysis_assume` per correggere l'avviso di analisi del codice [C6388](../code-quality/c6388.md):
 
 ```cpp
 #include<windows.h>

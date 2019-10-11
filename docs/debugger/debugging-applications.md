@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9848b666df985ddc7c2c4d0cf56f9ae4cafcb347
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962892"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018795"
 ---
 # <a name="debugging-applications"></a>Debug di applicazioni
 Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. Diversi tipi di applicazioni e linguaggi richiedono impostazioni e tecniche diverse e presentano problemi diversi che devono essere sottoposti a debug.
@@ -34,6 +34,6 @@ Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. 
 |[Diagnostica della grafica (debug della grafica DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Viene descritto come eseguire il debug della grafica DirectX.|
 |[Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Viene descritto come eseguire il debug di applicazioni ASP.NET.|
 |[Debug del codice Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Viene descritto come eseguire il debug del codice Python|
-|[Eseguire il debug di applicazioni JavaScript e TypeScript](/javascript/debug-nodejs)|Viene descritto come eseguire il debug di applicazioni JavaScript, TypeScript e node. js|
+|[Eseguire il debug di applicazioni JavaScript e TypeScript](../javascript/debug-nodejs.md)|Viene descritto come eseguire il debug di applicazioni JavaScript, TypeScript e node. js|
 |[Eseguire il debug di applicazioni Web](../debugger/debugging-web-applications.md)|Viene descritto come eseguire il debug di script e applicazioni Web.|
 |[Eseguire il debug di servizi WCF](../debugger/debugging-wcf-services.md)|Viene descritto come eseguire il debug di servizi Windows Communication Foundation|

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: MT
+ms.openlocfilehash: 493db26aed1a4e5f41acdd054dba266577159809
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919891"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018493"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Cenni preliminari sull'analisi del codice per C/C++
 
@@ -50,7 +50,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>supporto #pragma
 
-È possibile utilizzare la `#pragma` direttiva per considerare gli avvisi come errori, abilitare o disabilitare gli avvisi ed eliminare gli avvisi per le singole righe di codice. Per altre informazioni, vedere [Direttive pragma e parola chiave __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+È possibile utilizzare la direttiva `#pragma` per considerare gli avvisi come errori. abilitare o disabilitare gli avvisi ed eliminare gli avvisi per le singole righe di codice. Per altre informazioni, vedere [Direttive pragma e parola chiave __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Supporto delle annotazioni
 
@@ -66,8 +66,8 @@ Le annotazioni rendono più precisa l'analisi del codice, in quanto offrono info
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Avvio rapido: Analisi del codice per C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Procedura dettagliata: Analizza C/C++ codice per i difetti](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Avvio rapido: Analisi del codice per CC++/](quick-start-code-analysis-for-c-cpp.md)
+- [Procedura dettagliata: Analizza C/C++ codice per i difetti @ no__t-1
 - [Avvisi dell'analisi codice per C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Usare gli strumenti di verifica delle Linee guida di base di C++](using-the-cpp-core-guidelines-checkers.md)
 - [C++Riferimento di controllo delle linee guida di base](code-analysis-for-cpp-corecheck.md)
