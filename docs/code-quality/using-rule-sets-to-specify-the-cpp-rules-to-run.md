@@ -2,23 +2,25 @@
 title: Utilizzo di set di regole per specificare le regole C++ da eseguire
 ms.date: 04/28/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.rulesets.native
 author: mikeblome
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 061b52a683992bdc2fe5792ab05e00f788434a0f
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018218"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163093"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usare set di regole per specificare C++ le regole da eseguire
 
 In Visual Studio è possibile creare e modificare un set di *regole* personalizzate per soddisfare specifiche esigenze di progetto associate all'analisi del codice. I set di regole predefiniti vengono archiviati in `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 versione 15,7 e successive** È possibile creare set di regole personalizzati utilizzando qualsiasi editor di testo e applicarli nelle compilazioni della riga di comando indipendentemente dal sistema di compilazione in uso. Per altre informazioni, vedere [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 versione 15.7 e successive:** È possibile creare set di regole personalizzati utilizzando qualsiasi editor di testo e applicarli nelle compilazioni della riga di comando indipendentemente dal sistema di compilazione in uso. Per altre informazioni, vedere [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
 Per creare un set C++ di regole personalizzate in Visual Studio, è necessarioC++ aprire un progetto C/progetto nell'IDE di Visual Studio. Si apre quindi un set di regole standard nell'editor del set di regole e quindi si aggiungono o rimuovono regole specifiche e, facoltativamente, si modifica l'azione che si verifica quando l'analisi del codice determina che una regola è stata violata.
 
@@ -26,7 +28,7 @@ Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome fil
 
 ## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Per creare una regola personalizzata da un singolo set di regole esistente
 
-1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto, quindi scegliere **Proprietà**.
+1. Nel Esplora soluzioni aprire il menu di scelta rapida per il progetto, quindi scegliere **Proprietà**.
 
 2. Nella scheda **Proprietà** scegliere **analisi codice**.
 
@@ -36,7 +38,7 @@ Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome fil
 
      \- oppure -
 
-   - Scegliere **\<Browse >** per specificare un set di regole esistente non presente nell'elenco.
+   - Scegliere **\<Browse... >** per specificare un set di regole esistente non presente nell'elenco.
 
 4. Scegliere **Apri** per visualizzare le regole nell'Editor set di regole.
 
@@ -50,9 +52,11 @@ Per creare un nuovo set di regole personalizzate, salvarlo con un nuovo nome fil
 
 - Per modificare l'azione eseguita quando una regola viene violata in un'analisi del codice, scegliere il campo **azione** per la regola, quindi scegliere uno dei valori seguenti:
 
-     **Warn** : genera un avviso.
+     **Avviso** : genera un avviso.
 
      **Errore** : genera un errore.
+     
+     **Info** : genera un messaggio.
 
      **None** : Disabilita la regola. Questa azione equivale a rimuovere la regola dal set di regole.
 
