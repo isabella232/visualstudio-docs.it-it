@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfa0ccd63d0433d367b0e7278693608bb83d685
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5ba9e8dda927edca08565b088cbde90d63443908
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234276"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252579"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Gli identificatori non devono contenere caratteri di sottolineatura
 
@@ -36,7 +36,7 @@ Il nome di un identificatore contiene il carattere di sottolineatura (\_).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Per convenzione, i nomi degli identificatori non contengono il carattere\_di sottolineatura (). La regola controlla gli spazi dei nomi, i tipi, i membri e i parametri.
+Per convenzione, i nomi degli identificatori non contengono il carattere di sottolineatura (\_). La regola controlla gli spazi dei nomi, i tipi, i membri e i parametri.
 
 Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
@@ -46,9 +46,9 @@ Rimuovere tutti i caratteri di sottolineatura dal nome.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non escludere un avviso da questa regola.
+Non escludere gli avvisi per il codice di produzione. Tuttavia, è possibile evitare di visualizzare questo avviso per il codice di test. È possibile eliminare gli avvisi da questa regola impostando la [gravità](use-roslyn-analyzers.md#rule-severity) su **None**. 
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: La combinazione di maiuscole e minuscole degli identificatori deve essere corretta @ no__t-0
+- [CA1708: Gli identificatori devono differire più del caso @ no__t-0
