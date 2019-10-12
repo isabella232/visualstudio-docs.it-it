@@ -3,28 +3,21 @@ title: Domande frequenti su Live Unit Testing
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing FAQ
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
-ms.translationtype: HT
+ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662014"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262286"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Domande frequenti su Live Unit Testing
 
-## <a name="latest-features"></a>Funzionalità più recenti
-
-**Le funzionalità di Live Unit Testing vengono migliorate regolarmente. Come è possibile reperire informazioni sulle funzionalità e i miglioramenti più recenti?**
-
-Per informazioni sulle nuove funzionalità e i miglioramenti apportati a Live Unit Testing, vedere [Novità di Live Unit Testing](live-unit-testing-whats-new.md).
-
-## <a name="supported-frameworks-and-versions"></a>Framework e versioni supportati
+## <a name="supported-frameworks"></a>Framework supportati
 
 **Quali framework di test sono supportati da Live Unit Testing e quali sono le versioni minime supportate?**
 
@@ -36,21 +29,21 @@ Live Unit Testing è compatibile con i tre framework di testing unità elencati 
 |NUnit |NUnit3TestAdapter versione 3.7.0 |NUnit versione 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Se si hanno progetti di test basati su MSTest meno recenti che fanno riferimento a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` e non si vuole passare ai pacchetti NuGet MSTest più recenti, eseguire l'aggiornamento a Visual Studio 2017 versione 15.4 o successiva.
+Se sono presenti progetti di test basati su MSTest precedenti che fanno riferimento a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` e non si vuole passare ai pacchetti NuGet di MSTest più recenti, eseguire l'aggiornamento a Visual Studio 2019 o Visual Studio 2017.
 
-In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui viene fatto riferimento nei progetti della soluzione. È possibile ripristinare i pacchetti compilando in modo esplicito la soluzione (selezionare **Compila**, **Ricompila soluzione** dal menu di primo livello di Visual Studio) oppure facendo clic con il pulsante destro del mouse sulla soluzione e selezionando **Ripristina pacchetti NuGet** prima di abilitare Living Unit Testing.
+In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui viene fatto riferimento nei progetti della soluzione. È possibile ripristinare i pacchetti eseguendo una compilazione esplicita della soluzione (selezionare **compila** > **Ricompila soluzione** dal menu di primo livello di Visual Studio) o facendo clic con il pulsante destro del mouse sulla soluzione e selezionando **Ripristina pacchetti NuGet** . prima di abilitare Living unit testing.
 
 ## <a name="net-core-support"></a>Supporto di .NET Core
 
 **Live Unit Testing è compatibile con .NET Core?**
 
-Sì. Live Unit Testing funziona con .NET Core e .NET Framework. Il supporto di .NET Core è stato aggiunto in Visual Studio 2017 versione 15.3. Eseguire l'aggiornamento a questa versione di Visual Studio o a una versione successiva se si vuole il supporto di Live Unit Testing per .NET Core.
+Sì. Live Unit Testing funziona con .NET Core e .NET Framework.
 
 ## <a name="configuration"></a>Configurazione
 
 **Perché Live Unit Testing non funziona quando viene attivato?**
 
-Quando è selezionato il menu a discesa Live Unit Testing, la finestra **Output** indica in genere il motivo per cui Live Unit Testing non funziona. È possibile che Live Unit Testing non funzioni per uno dei motivi seguenti:
+La finestra di output (quando è selezionato l'elenco a discesa Live Unit Testing) indica il motivo per cui Live Unit Testing non funziona. È possibile che Live Unit Testing non funzioni per uno dei motivi seguenti:
 
 - Se i pacchetti NuGet usati come riferimento nei progetti della soluzione non sono stati ripristinati, Live Unit Testing non funzionerà. Per risolvere il problema, eseguire una compilazione esplicita della soluzione o il ripristino dei pacchetti NuGet della soluzione prima di attivare Live Unit Testing.
 
@@ -92,7 +85,7 @@ Ad esempio, potrebbe essere presente una destinazione che produce pacchetti NuGe
 </Target>
 ```
 
-## <a name="error-messages-with-ltoutputpathgt-or-ltoutdirgt"></a>Messaggi di errore con &lt;OutputPath&gt; o &lt;OutDir&gt;
+## <a name="error-messages-with-outputpath-or-outdir"></a>Messaggi di errore con \<OutputPath > o \<OutDir >
 
 **Perché quando Live Unit Testing prova a compilare la soluzione viene visualizzato l'errore "...sembra impostato in modo incondizionato su `<OutputPath>` o `<OutDir>`. In Live Unit Testing non verranno eseguiti test dall'assembly di output"?**
 
@@ -123,13 +116,13 @@ In tal modo verrà garantita la presenza di `<OutputPath>` nella cartella `<Base
 
 Non eseguire l'override di `<OutDir>` direttamente nel processo di compilazione, ma eseguire l'override `<OutputPath>` per rilasciare gli artefatti di compilazione in un percorso specifico.
 
-## <a name="set-the-location-of-build-artifacts"></a>Impostare il percorso degli artefatti di compilazione
+## <a name="build-artifact-location"></a>Percorso artefatto di compilazione
 
 **Si vogliono impostare gli artefatti di una compilazione di Live Unit Testing in modo che vengano rilasciati in un percorso specifico invece di quello predefinito nella cartella *vs*. Come si può modificare questa impostazione?**
 
 Impostare la variabile di ambiente a livello di utente `LiveUnitTesting_BuildRoot` sul percorso in cui si vuole che vengano rilasciati gli artefatti di compilazione di Live Unit Testing. 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>Differenze tra l'esecuzione di test in Esplora test e in Live Unit Testing
+## <a name="test-explorer-versus-live-unit-testing"></a>Esplora test rispetto a Live Unit Testing
 
 **Quali sono le differenze tra l'esecuzione di test dalla finestra Esplora test e l'esecuzione di test in Live Unit Testing?**
 
@@ -139,11 +132,11 @@ Esistono numerose differenze:
 
 - Live Unit Testing non crea un nuovo dominio applicazione per eseguire i test, ma i test vengono eseguiti dalla finestra **Esplora test** per creare un nuovo dominio applicazione.
 
-- Live Unit Testing esegue i test in ogni assembly di test in modo sequenziale, ma nella finestra **Esplora test** è possibile scegliere di eseguire più test in parallelo.
+- Live Unit Testing esegue i test di ogni assembly di test in modo sequenziale. In **Esplora test**è possibile scegliere di eseguire più test in parallelo.
 
 - Per l'individuazione e l'esecuzione di test in Live Unit Testing viene usata la versione 2 di `TestPlatform`, mentre nella finestra **Esplora test** viene usata la versione 1. Nella maggior parte dei casi non si dovrebbero notare differenze.
 
-- Per impostazione predefinita, **Esplora test** esegue attualmente i test in un apartment a thread singolo, mentre Live Unit Testing esegue i test in un apartment a thread multipli. Per eseguire test MSTest nell'apartment a thread singolo in Live Unit Testing, decorare il metodo di test o la classe contenitore con l'attributo `<STATestMethod>` o `<STATestClass>` reperibili nel pacchetto NuGet `MSTest.STAExtensions 1.0.3-beta`. Per NUnit e xUnit decorare il metodo di test rispettivamente con l'attributo `<RequiresThread(ApartmentState.STA)>` e con l'attributo `<STAFact>`.
+- **Esplora test** esegue i test in un Apartment a thread singolo (sta) per impostazione predefinita, mentre Live unit testing esegue i test in un Apartment a thread multipli (MTA). Per eseguire test MSTest nell'apartment a thread singolo in Live Unit Testing, decorare il metodo di test o la classe contenitore con l'attributo `<STATestMethod>` o `<STATestClass>` reperibili nel pacchetto NuGet `MSTest.STAExtensions 1.0.3-beta`. Per NUnit e xUnit decorare il metodo di test rispettivamente con l'attributo `<RequiresThread(ApartmentState.STA)>` e con l'attributo `<STAFact>`.
 
 ## <a name="exclude-tests"></a>Escludere i test
 
@@ -174,6 +167,8 @@ public class Class1
 }
 ```
 
+::: moniker range="vs-2017"
+
 ## <a name="win32-pe-headers"></a>Intestazioni PE di Win32
 
 **Perché le intestazioni PE di Win32 sono diverse negli assembly instrumentati compilati da Live Unit Testing?**
@@ -190,27 +185,15 @@ Per le versioni precedenti di Visual Studio 2017, esiste un bug noto che potrebb
 
 I test che si basano su questi valori potrebbero non riuscire quando vengono eseguiti da Live Unit Testing.
 
+::: moniker-end
+
 ## <a name="continuous-builds"></a>Compilazioni continue
 
 **Perché Live Unit Testing continua a compilare la soluzione ogni volta anche se non si apportano modifiche?**
 
-La soluzione può essere compilata anche se non si apportano modifiche quando il processo di compilazione della soluzione genera codice sorgente che fa parte della soluzione stessa e non sono stati specificati input e output appropriati per i file di destinazione della compilazione. È necessario specificare un elenco di input e di output per le destinazioni in modo che MSBuild possa eseguire i controlli di aggiornamento appropriati e stabilire se è necessaria una nuova compilazione.
+La soluzione può essere compilata anche se non vengono apportate modifiche se il processo di compilazione genera codice sorgente che fa parte della soluzione stessa e se i file di destinazione della compilazione non dispongono di input e output appropriati specificati. È necessario specificare un elenco di input e di output per le destinazioni in modo che MSBuild possa eseguire i controlli di aggiornamento appropriati e stabilire se è necessaria una nuova compilazione.
 
-Live Unit Testing avvia una compilazione ogni volta che rileva una modifica nei file di origine. Dal momento che la compilazione della soluzione genera file di origine, Live Unit Testing entrerà in un ciclo di compilazione infinito. Se però la verifica degli input e degli output della destinazione viene eseguita quando Live Unit Testing avvia la seconda compilazione (dopo il rilevamento dei file di origine appena generati dalla compilazione precedente) il ciclo di compilazione viene interrotto, perché la verifica degli input e degli output indica che non ci sono stati altri aggiornamenti.  
-
-## <a name="new-process-coverage"></a>Code coverage di nuovo processo
-
-**Perché Live Unit Testing non acquisisce le informazioni di code coverage da un nuovo processo creato da un test?**
-
-Si tratta di un problema noto e dovrebbe essere risolto in una versione successiva.
-
-## <a name="including-or-excluding-tests-doesnt-work"></a>L'inclusione o l'esclusione di test non funziona
-
-**Perché non succede nulla dopo che sono stati inclusi o esclusi test dal set di test attivi?**
-
-Questo problema è stato risolto e non sussiste in Visual Studio 2017 versione 15.3 e versioni successive.
-
-Per le versioni precedenti di Visual Studio 2017, si tratta di un problema noto. Per ovviare al problema, è necessario apportare una modifica in un file qualsiasi dopo aver incluso o escluso i test.
+Live Unit Testing avvia una compilazione ogni volta che rileva una modifica nei file di origine. Poiché la compilazione della soluzione genera file di origine, Live Unit Testing entra in un ciclo di compilazione infinito. Se, tuttavia, gli input e gli output della destinazione vengono controllati quando Live Unit Testing avvia la seconda compilazione (dopo aver rilevato i file di origine appena generati dalla compilazione precedente), si interrompe il ciclo di compilazione perché i controlli di input e output indicano che tutti gli elementi sono aggiornati.
 
 ## <a name="editor-icons"></a>Icone dell'editor
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28cae5e548a35e0166e1d8ed451450264241f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820792"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018439"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Esempio di progetto C++ per l'analisi del codice
 
@@ -36,7 +36,7 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 2. Nell'elenco ad albero **Tipo progetto** espandere **Altri linguaggi** se Visual C++ non è il linguaggio predefinito in Visual Studio.
 
-3. Espandere **Visual C++**, quindi fare clic su **Generale**.
+3. Espandere **Visual C++** , quindi fare clic su **Generale**.
 
 4. In **Modelli** fare clic su **Progetto vuoto**.
 
@@ -54,13 +54,13 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 3. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.
 
-4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)**.
+4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)** .
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Aggiungere l'intestazione e il file di origine al progetto CodeDefects
 
 1. In Esplora soluzioni espandere **CodeDefects**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di intestazione (.h)**.
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di intestazione (.h)** .
 
 3. Nella casella **Nome** digitare **Bug.h** e quindi fare clic su **Aggiungi**.
 
@@ -88,7 +88,7 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.
 
-6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di C++ (.cpp)**.
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di C++ (.cpp)** .
 
 7. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.
 
@@ -168,13 +168,13 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 6. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.
 
-7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)**.
+7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)** .
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Aggiungere il file di intestazione e il file di origine per il progetto Annotations
 
 1. In Esplora soluzioni espandere **Annotations**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di intestazione (.h)**.
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di intestazione (.h)** .
 
 3. Nella casella di testo **Nome** digitare **annotations.h** e quindi fare clic su **Aggiungi**.
 
@@ -197,7 +197,7 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.
 
-6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di C++ (.cpp)**.
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di C++ (.cpp)** .
 
 7. Nella casella di testo **Nome** digitare **annotations.cpp** e quindi fare clic su **Aggiungi**.
 

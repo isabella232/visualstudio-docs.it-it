@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
 - Live Unit Testing What's New
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 6a96089de8f9998c12cbc2e12765d128b1d2195b
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823759"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262279"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Novità di Live Unit Testing per Visual Studio 2017
 

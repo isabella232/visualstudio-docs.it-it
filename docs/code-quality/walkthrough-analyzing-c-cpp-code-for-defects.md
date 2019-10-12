@@ -9,123 +9,123 @@ helpviewer_keywords:
 - code analysis tool, walkthroughs
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820337"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018348"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura dettagliata: Analisi del codice C/C++ per l'identificazione degli errori
 
-Questa procedura dettagliata illustra come analizzare il codice C/C++ per i potenziali difetti di codice usando lo strumento di analisi codice per il codice C/C++.
+Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenziali difetti del codice usando lo strumento di analisi del codiceC++ per C/code.
 
-- Esegui analisi del codice nel codice nativo.
-- Analizzare gli avvisi degli errori di codice.
-- Considera avviso come errore.
-- Annotare il codice sorgente per migliorare l'analisi degli errori del codice.
+- Eseguire l'analisi del codice sul codice nativo.
+- Analizza gli avvisi di errore del codice.
+- Considera l'avviso come un errore.
+- Annotare il codice sorgente per migliorare l'analisi del difetto del codice.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Una copia del [esempio dimostrativo](../code-quality/demo-sample.md).
-- Conoscenza di base di C/C++.
+- Una copia dell' [esempio di demo](../code-quality/demo-sample.md).
+- Conoscenza di base di CC++/.
 
-### <a name="to-run-code-defect-analysis-on-native-code"></a>Per eseguire analisi degli errori del codice nel codice nativo
+### <a name="to-run-code-defect-analysis-on-native-code"></a>Per eseguire l'analisi del difetto del codice sul codice nativo
 
-1. Aprire la soluzione Demo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+1. Aprire la soluzione demo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-     La soluzione Demo ora Popola **Esplora soluzioni**.
+     La soluzione Demo ora popola **Esplora soluzioni**.
 
 2. Nel menu **Compila** fare clic su **Ricompila soluzione**.
 
-     La soluzione venga compilata senza errori o avvisi.
+     La soluzione viene compilata senza errori o avvisi.
 
-3. Nelle **Esplora soluzioni**, selezionare il progetto CodeDefects.
+3. In **Esplora soluzioni**selezionare il progetto codedifettos.
 
 4. Scegliere **Proprietà** dal menu **Progetto**.
 
-     Il **pagine delle proprietà CodeDefects** verrà visualizzata la finestra di dialogo.
+     Verrà visualizzata la finestra di dialogo **pagine delle proprietà Codedifettos** .
 
-5. Fare clic su **analisi del codice**.
+5. Fare clic su **analisi codice**.
 
-6. Scegliere il **Attiva analisi codice per C/C++ in fase di compilazione** casella di controllo.
+6. Fare clic sulla casella di controllo **Abilita analisiC++ codice per la compilazione C/on** .
 
-7. Ricompilare il progetto CodeDefects.
+7. Ricompilare il progetto codedifettos.
 
-     Avvisi dell'analisi codice vengono visualizzati nei **elenco errori**.
+     Gli avvisi di analisi del codice vengono visualizzati nel **Elenco errori**.
 
-### <a name="to-analyze-code-defect-warnings"></a>Per analizzare gli avvisi degli errori di codice
+### <a name="to-analyze-code-defect-warnings"></a>Per analizzare gli avvisi di errore del codice
 
-1. Nel **View** menu, fare clic su **elenco errori**.
+1. Scegliere **Elenco errori**dal menu **Visualizza** .
 
-     In base al profilo di sviluppo scelto nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], potrebbe essere necessario puntare a **Other Windows** sul **vista** menu e quindi fare clic su **elenco errori**.
+     A seconda del profilo dello sviluppatore scelto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], potrebbe essere necessario puntare ad **altre finestre** dal menu **Visualizza** , quindi fare clic su **Elenco errori**.
 
-2. Nel **elenco errori**, fare doppio clic sull'avviso seguente:
+2. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6230: Cast implicito tra tipi integer semanticamente diversi: utilizzo di HRESULT in un contesto booleano.
+     avviso C6230: Cast implicito tra tipi semanticamente diversi: utilizzo di HRESULT in un contesto booleano.
 
-     L'editor di codice viene visualizzata la riga che ha causato l'avviso nella funzione `bool ProcessDomain()`. Questo avviso indica che un valore HRESULT è in uso in un'istruzione 'if' in cui è previsto un risultato booleano.
+     Nell'editor di codice viene visualizzata la riga che ha provocato l'avviso nella funzione `bool ProcessDomain()`. Questo avviso indica che è in uso un HRESULT in un'istruzione ' If ' in cui è previsto un risultato booleano.
 
-3. Risolvere il problema utilizzando la macro SUCCEEDED. Il codice dovrebbe essere simile al seguente:
+3. Correggere questo avviso utilizzando la macro SUCCEEDed. Il codice dovrebbe essere simile al codice seguente:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
    ```
 
-4. Nel **elenco errori**, fare doppio clic sull'avviso seguente:
+4. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6282: Operatore errato: assegnazione di costante in contesto di test. È stato = = previsto?
+     avviso C6282: Operatore errato: assegnazione alla costante nel contesto di test. Is = = designato?
 
-5. Risolvere il problema eseguendo il test per verificarne l'uguaglianza. Il codice dovrebbe essere simile al codice seguente:
+5. Correggere questo avviso verificando l'uguaglianza. Il codice dovrebbe essere simile al codice seguente:
 
    ```cpp
    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
    ```
 
-### <a name="to-treat-warning-as-an-error"></a>Interpreta un avviso come errore
+### <a name="to-treat-warning-as-an-error"></a>Per considerare l'avviso come un errore
 
-1. Nel file bug. cpp, aggiungere il codice seguente `#pragma` istruzione all'inizio del file da considerare l'avviso C6001 come errore:
+1. Nel file bug. cpp aggiungere l'istruzione `#pragma` seguente all'inizio del file per considerare il C6001 di avviso come errore:
 
    ```cpp
    #pragma warning (error: 6001)
    ```
 
-2. Ricompilare il progetto CodeDefects.
+2. Ricompilare il progetto codedifettos.
 
-     Nel **elenco errori**, C6001 viene ora visualizzato come un errore.
+     Nel **Elenco errori**, C6001 viene visualizzato come un errore.
 
-3. Correggere gli errori C6001 due rimanenti nel **elenco errori** inizializzando `i` e `j` su 0.
+3. Correggere i due errori C6001 rimanenti nella **Elenco errori** inizializzando `i` e `j` su 0.
 
-4. Ricompilare il progetto CodeDefects.
+4. Ricompilare il progetto codedifettos.
 
-     Il progetto viene compilato senza eventuali avvisi o errori.
+     Il progetto viene compilato senza avvisi o errori.
 
-### <a name="to-correct-the-source-code-annotation-warnings-in-annotationc"></a>Per correggere gli avvisi di annotazione di codice sorgente nella Annotation
+### <a name="to-correct-the-source-code-annotation-warnings-in-annotationc"></a>Per correggere gli avvisi di annotazione del codice sorgente nell'annotazione. c
 
-1. In Esplora soluzioni selezionare il progetto di annotazioni.
+1. In Esplora soluzioni selezionare il progetto annotazioni.
 
 2. Scegliere **Proprietà** dal menu **Progetto**.
 
-     Il **pagine delle proprietà di annotazioni** verrà visualizzata la finestra di dialogo.
+     Verrà visualizzata la finestra di dialogo **pagine delle proprietà delle annotazioni** .
 
-3. Fare clic su **analisi del codice**.
+3. Fare clic su **analisi codice**.
 
-4. Selezionare il **Attiva analisi codice per C/C++ in fase di compilazione** casella di controllo.
+4. Selezionare la casella di controllo **Abilita analisi codiceC++ per la compilazione C/on** .
 
-5. Ricompilare il progetto di annotazioni.
+5. Ricompilare il progetto delle annotazioni.
 
-6. Nel **elenco errori**, fare doppio clic sull'avviso seguente:
+6. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6011: Deferenziazione del puntatore NULL 'newNode'.
+     avviso C6011: Dereferenziazione del puntatore NULL ' newNode '.
 
-     Questo avviso indica un errore dal chiamante per controllare il valore restituito. In questo caso, una chiamata a **AllocateNode** potrebbe restituire un valore NULL (vedere il file di intestazione Annotations. h per la dichiarazione di funzione per AllocateNode).
+     Questo avviso indica un errore del chiamante per verificare il valore restituito. In questo caso, una chiamata a **AllocateNode** potrebbe restituire un valore null (vedere il file di intestazione Annotations. h per la dichiarazione di funzione per AllocateNode).
 
-7. Aprire il file Annotations.
+7. Aprire il file Annotations. cpp.
 
-8. Per risolvere questo problema, utilizzare un'istruzione 'if' per testare il valore restituito. Il codice dovrebbe essere simile al seguente:
+8. Per correggere il problema, utilizzare un'istruzione ' If ' per testare il valore restituito. Il codice dovrebbe essere simile al codice seguente:
 
    ```cpp
    if (NULL != newNode)
@@ -136,13 +136,13 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
    }
    ```
 
-9. Ricompilare il progetto di annotazioni.
+9. Ricompilare il progetto delle annotazioni.
 
-     Il progetto viene compilato senza eventuali avvisi o errori.
+     Il progetto viene compilato senza avvisi o errori.
 
 ### <a name="to-use-source-code-annotation"></a>Per utilizzare l'annotazione del codice sorgente
 
-1. Annotare i parametri formali e valore restituito di funzione `AddTail` utilizzando le condizioni di Pre e Post, come illustrato in questo esempio:
+1. Annotare i parametri formali e il valore restituito della funzione `AddTail` usando le condizioni pre e post, come illustrato nell'esempio seguente:
 
    ```cpp
    [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
@@ -152,15 +152,15 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
    )
    ```
 
-2. Ricompilare il progetto di annotazioni.
+2. Ricompilare il progetto delle annotazioni.
 
-3. Nel **elenco errori**, fare doppio clic sull'avviso seguente:
+3. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6011: Deferenziazione del puntatore NULL 'node'.
+     avviso C6011: Dereferenziazione del puntatore NULL ' node '.
 
-     Questo avviso indica che il nodo passato alla funzione potrebbe essere null e indica il numero di riga in cui è stato generato l'avviso.
+     Questo avviso indica che il nodo passato nella funzione potrebbe essere null e indica il numero di riga in cui è stato generato l'avviso.
 
-4. Per risolvere questo problema, utilizzare un'istruzione 'if' per testare il valore restituito. Il codice dovrebbe essere simile al seguente:
+4. Per correggere il problema, utilizzare un'istruzione ' If ' per testare il valore restituito. Il codice dovrebbe essere simile al codice seguente:
 
    ```cpp
    . . .
@@ -172,11 +172,10 @@ Questa procedura dettagliata illustra come analizzare il codice C/C++ per i pote
    }
    ```
 
-5. Ricompilare il progetto di annotazioni.
+5. Ricompilare il progetto delle annotazioni.
 
-     Il progetto viene compilato senza eventuali avvisi o errori.
+     Il progetto viene compilato senza avvisi o errori.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura dettagliata: Analisi del codice gestito per i difetti del codice](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[analisi del codice per C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Procedura dettagliata: Analisi del codice gestito per i difetti del codice @ no__t-0 @ no__t-1[analisi del codiceC++ per C/](../code-quality/code-analysis-for-c-cpp-overview.md)

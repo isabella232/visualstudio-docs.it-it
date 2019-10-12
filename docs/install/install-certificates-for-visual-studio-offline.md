@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c7139234ab9f36842e92ead9e43f8d0a0a71a00e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551203"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018822"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -89,9 +89,9 @@ Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambient
    In alternativa, creare un file batch che usa certutil.exe, disponibile in Windows, con i comandi seguenti:
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -197,7 +197,7 @@ Un modo per eseguire questa verifica nel sistema di installazione corrisponde al
 
 Se i nomi dei certificati non sono presenti nelle colonne **Rilasciato a**, è necessario installare i certificati.  Se un certificato intermedio è presente solo nell'archivio dei certificati intermedi **Utente corrente**, è disponibile solo per l'utente connesso. Potrebbe essere necessario installarlo per altri utenti.
 
-## <a name="install-visual-studio"></a>Installare Visual Studio
+## <a name="install-visual-studio"></a>Installazione di Visual Studio
 
 Dopo aver installato i certificati, la distribuzione di Visual Studio può procedere seguendo le istruzioni dalla sezione [Distribuzione da un'installazione di rete](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) della pagina "Creare un'installazione di rete di Visual Studio".
 

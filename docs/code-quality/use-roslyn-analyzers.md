@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50eadf9c26eaca4c5495dfbc55a1b266aecdb90
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000008"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172811"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -138,7 +138,7 @@ Visual Studio offre un modo pratico per configurare la gravità di una regola da
 
 ![File del set di regole in Esplora soluzioni](media/ruleset-in-solution-explorer.png)
 
-1. Aprire il file del [set di regole](analyzer-rule-sets.md) attivo facendo doppio clic su di esso in **Esplora soluzioni**, selezionando **Apri set di regole attivo** dal menu di scelta rapida del nodo **riferimenti** > **analizzatori** o selezionando **Apri** nelPagina delle proprietà di analisi del codice per il progetto.
+1. Aprire il file del set di regole attivo facendo doppio clic su di esso in **Esplora soluzioni**, selezionando **Apri set di regole attivo** dal menu di scelta rapida del nodo **riferimenti** > **analizzatori** o selezionando **Apri** sul **codice.** Pagina delle proprietà analisi per il progetto.
 
    Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, lo denomina *\<projectname >. RuleSet*e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
 

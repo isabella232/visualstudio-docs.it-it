@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7619b040343720198e190f551741f565e62fa145
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 62dd64dfe4e801f91731b1ed569e3a809156d0d1
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186393"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172796"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurare gli analizzatori FxCop
 
 Il [pacchetto degli analizzatori FxCop](install-fxcop-analyzers.md) è costituito dalle regole "FxCop" più importanti dell'analisi legacy convertite in analizzatori di codice basati su .NET Compiler Platform. Per alcune regole FxCop, è possibile ridefinire le parti della codebase a cui devono essere applicate tramite [Opzioni configurabili](fxcop-analyzer-options.md). Ogni opzione viene specificata aggiungendo una coppia chiave-valore a un file [EditorConfig](https://editorconfig.org) . Un file di configurazione può essere [specifico di un progetto](#per-project-configuration) oppure può essere [condiviso](#shared-configuration) tra due o più progetti.
 
 > [!TIP]
-> È possibile aggiungere un file con estensione EditorConfig al progetto facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliendo **Aggiungi** > **nuovo elemento**. Nella finestra **Aggiungi nuovo elemento** immettere **EditorConfig** nella casella di ricerca. Selezionare il modello **file EditorConfig (impostazione predefinita)** e scegliere **Aggiungi**.
+> Aggiungere un file con estensione EditorConfig al progetto facendo clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e selezionando **Aggiungi** > **nuovo elemento**. Nella finestra **Aggiungi nuovo elemento** immettere **EditorConfig** nella casella di ricerca. Selezionare il modello **file EditorConfig (impostazione predefinita)** e scegliere **Aggiungi**.
 >
 > ![Aggiungere il file EditorConfig al progetto in Visual Studio](media/add-editorconfig-file.png)
 
 ::: moniker range=">=vs-2019"
 
-Per informazioni sulla configurazione della gravità di una regola, ad esempio se si tratta di un errore o di un avviso, vedere [impostare la gravità della regola in un file EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). In alternativa, è possibile scegliere uno dei [set](analyzer-rule-sets.md) di regole predefiniti per abilitare o disabilitare rapidamente una categoria di regole.
+Per informazioni sulla configurazione della gravità di una regola, ad esempio se si tratta di un errore o di un avviso, vedere [impostare la gravità della regola in un file EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file). In alternativa, è possibile scegliere uno dei [file EditorConfig o dei set](analyzer-rule-sets.md) di regole predefiniti per abilitare o disabilitare rapidamente una categoria di regole.
 
 ::: moniker-end
 

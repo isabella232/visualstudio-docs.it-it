@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a5272d74e1987cd7838932182e7e59c9c53f21
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: e5b754f32edb86d10b4dd722ea7c6486f8179af6
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923940"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018740"
 ---
 # <a name="intrinsic-functions"></a>Funzioni intrinseche
 Un'espressione in SAL può essere un'espressione C/C++ a condizione che sia un'espressione che non produca effetti collaterali, ad esempio ++, -- e le chiamate di funzione hanno effetti collaterali in questo contesto.  Tuttavia, SAL fornisce alcuni oggetti di tipo funzione e alcuni simboli riservati che possono essere utilizzati nelle espressioni SAL. Questi vengono definiti *funzioni intrinseche*.
@@ -28,23 +28,23 @@ Un'espressione in SAL può essere un'espressione C/C++ a condizione che sia un'e
 ## <a name="general-purpose"></a>per utilizzo generico
 Le seguenti annotazioni di funzioni intrinseche forniscono l'utilità generale per SAL.
 
-|Annotazione|DESCRIZIONE|
+|Annotazione|Descrizione|
 |----------------|-----------------|
 |`_Curr_`|Sinonimo dell'oggetto attualmente annotato.  Quando viene utilizzata l'annotazione `_At_`, `_Curr_` è identica al primo parametro di `_At_`.  In caso contrario, è il parametro o l'intera funzione/valore restituito con cui l'annotazione è lessicalmente associata.|
 |`_Inexpressible_(expr)`|Esprime una situazione in cui la dimensione di un buffer è troppo complessa per essere rappresentata con un'espressione di annotazione, ad esempio quando viene calcolata esaminando un set di dati di input e successivamente contando i membri selezionati.|
-|`_Nullterm_length_(param)`|`param`numero di elementi nel buffer fino a che non include un carattere di terminazione null. Può essere applicato a qualsiasi buffer di tipo non di aggregazione, non void.|
+|`_Nullterm_length_(param)`|`param` è il numero di elementi nel buffer fino a includere un carattere di terminazione null. Può essere applicato a qualsiasi buffer di tipo non di aggregazione, non void.|
 |`_Old_(expr)`|Una volta valutato nella precondizione, `_Old_` restituisce il valore di input `expr`.  Una volta valutato nella post condizione, restituisce il valore `expr` come sarebbe stato valutato nella precondizione.|
-|`_Param_(n)`|Il `n`parametro per una funzione, il conteggio da 1 a `n`e `n` è una costante integrale letterale. Se il parametro è denominato, questa annotazione è identica all'accesso al parametro in base al nome. **Nota:** `n` può riferirsi ai parametri posizionali definiti da puntini di sospensione oppure può essere usato nei prototipi di funzione in cui i nomi non vengono usati.|
-|`return`|È possibile utilizzareC++ la parola `return` chiave C/reserved in un'espressione SAL per indicare il valore restituito di una funzione.  Il valore è disponibile solo nello stato di post; è un errore di sintassi utilizzarlo in uno stato di pre.|
+|`_Param_(n)`|Il parametro `n`A a una funzione, che conta da 1 a `n` e `n` è una costante integrale letterale. Se il parametro è denominato, questa annotazione è identica all'accesso al parametro in base al nome. **Nota:**  `n` può riferirsi ai parametri posizionali definiti dai puntini di sospensione oppure può essere usato nei prototipi di funzione in cui non vengono usati i nomi.|
+|`return`|È possibile usareC++ la parola chiave C/reserved `return` in un'espressione SAL per indicare il valore restituito di una funzione.  Il valore è disponibile solo nello stato di post; è un errore di sintassi utilizzarlo in uno stato di pre.|
 
 ## <a name="string-specific"></a>Specifica della stringa
 Le seguenti annotazioni di funzioni intrinseche abilitano la modifica delle stringhe. Tutte e quattro queste funzioni presentano lo stesso scopo: restituire il numero di elementi del tipo trovati prima di un terminatore null. Le differenze sono i tipi di dati negli elementi a cui fanno riferimento. Si noti che se si desidera specificare la lunghezza del buffer con terminazione null che non è composto da caratteri, utilizzare l'annotazione di `_Nullterm_length_(param)` dalla sezione precedente.
 
 |Annotazione|Descrizione|
 |----------------|-----------------|
-|`_String_length_(param)`|`param`numero di elementi nella stringa che non include un carattere di terminazione null. Questa annotazione è riservata ai tipi di stringa di caratteri.|
-|`strlen(param)`|`param`numero di elementi nella stringa che non include un carattere di terminazione null. Questa annotazione è riservata per l'utilizzo su matrici di caratteri ed è simile alla funzione di runtime C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
-|`wcslen(param)`|`param`numero di elementi nella stringa fino a un carattere di terminazione null, ma non incluso. Questa annotazione è riservata per l'uso su matrici di caratteri wide ed è simile alla funzione di runtime C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`_String_length_(param)`|`param` è il numero di elementi nella stringa che non include un carattere di terminazione null. Questa annotazione è riservata ai tipi di stringa di caratteri.|
+|`strlen(param)`|`param` è il numero di elementi nella stringa che non include un carattere di terminazione null. Questa annotazione è riservata per l'utilizzo su matrici di caratteri ed è simile alla funzione di runtime C [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
+|`wcslen(param)`|`param` è il numero di elementi nella stringa fino a un carattere di terminazione null, ma non incluso. Questa annotazione è riservata per l'uso su matrici di caratteri wide ed è simile alla funzione di runtime C [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|
 
 ## <a name="see-also"></a>Vedere anche
 

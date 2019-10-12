@@ -1,7 +1,7 @@
 ---
 title: Creare un'installazione di rete
 description: Informazioni sulla creazione di un punto di installazione di rete per la distribuzione di Visual Studio in un'organizzazione.
-ms.date: 10/01/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c6de85e6f2c5849567751b3232668ec2940cff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950700"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018885"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -33,23 +33,27 @@ Tale operazione è stata effettuata per consentire alle workstation client di po
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Scaricare il programma di bootstrap di Visual Studio
 
-Scaricare l'edizione di Visual Studio desiderata. Assicurarsi di fare clic su **Salva** e quindi su **Apri cartella**.
-
-Il file eseguibile di installazione&mdash;o, per essere più specifici, il file di un programma di bootstrap&mdash;, deve corrispondere a uno dei seguenti.
+Scaricare un file del programma di avvio automatico per l'edizione di Visual Studio desiderata. Assicurarsi di scegliere **Salva**, quindi scegliere **Apri cartella**.
 
 ::: moniker range="vs-2017"
 
-|Edizione | Scarica|
-|-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-| Visual Studio Build Tools   | [**vs_buildtools. exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
-Altri programmi di avvio automatico supportati includono [vs_feedbackclient. exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_TeamExplorer. exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller. exe](https://aka.ms/vs/15/release/vs_testcontroller.exe)e [vs_testprofessional. exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+Il file eseguibile di installazione @ no__t-0or è più specifico, il file del programma di avvio automatico @ no__t-1should corrisponde a uno dei seguenti.
+
+| Edizione | Nomefile |
+|-------------|-----------------------|
+|Visual Studio Enterprise | **vs_enterprise.exe** |
+|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Build Tools   | **vs_buildtools. exe** |
+
+Altri programmi di avvio automatico supportati includono **vs_feedbackclient. exe**, **vs_TeamExplorer. exe**, **vs_testagent. exe**, **vs_testcontroller. exe**e **vs_testprofessional. exe**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Il file eseguibile di installazione&mdash;o, per essere più specifici, il file di un programma di bootstrap&mdash;, deve corrispondere a uno dei seguenti.
 
 |Edizione | Scarica|
 |-------------|-----------------------|

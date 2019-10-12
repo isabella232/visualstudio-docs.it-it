@@ -1,7 +1,7 @@
 ---
 title: Aggiornare un'installazione di rete
 description: Informazioni su come aggiornare un'installazione di Visual Studio basata su rete tramite il comando --layout
-ms.date: 03/30/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971368"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018819"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -42,7 +42,7 @@ Se si seleziona un layout parziale al momento della creazione del layout di rete
 
 ::: moniker-end
 
-Se si inserisce un layout in una condivisione file, aggiornare una copia privata del layout (ad esempio \vsoffline) e, al termine del download di tutto il contenuto aggiornato, copiarlo nella condivisione file (ad esempio\\server\products\VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
+Se si ospita un layout in una condivisione file, è necessario aggiornare una copia privata del layout (ad esempio, c:\VSLayout) e quindi, dopo aver scaricato tutto il contenuto aggiornato, copiarlo nella condivisione file (ad esempio, \\server \ Products \ VS). In caso contrario, se un utente esegue l'installazione durante l'aggiornamento del layout, è probabile che non sia in grado di ottenere tutto il contenuto del layout perché non è ancora stato interamente aggiornato.
 
 Ora si prendono in esame alcuni esempi di creazione e aggiornamento di un layout:
 

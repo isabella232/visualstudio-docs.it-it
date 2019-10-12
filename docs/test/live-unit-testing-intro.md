@@ -1,46 +1,42 @@
 ---
-title: Introduzione a Live Unit Testing
+title: Introduzione Live Unit Testing
 description: Informazioni sui vantaggi di Live Unit Testing e su come usarlo quando si esegue il testing unità dei progetti.
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
-author: rpetrusha
-ms.author: ronpet
+author: gewarren
+ms.author: gewarren
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 87242c99fe2692b799ff6a5d965249ad5d944cf9
+ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786081"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262310"
 ---
-# <a name="live-unit-testing-introduction"></a>Introduzione a Live Unit Testing
+# <a name="live-unit-testing-overview"></a>Panoramica di Live Unit Testing
 
-Live Unit Testing è una tecnologia introdotta in Visual Studio 2017. Esegue automaticamente gli unit test in tempo reale mentre si apportano modifiche al codice.
+Live Unit Testing esegue gli unit test automaticamente e in tempo reale quando si apportano modifiche al codice. In questo modo è possibile effettuare il refactoring e modificare il codice con maggiore fiducia. Live Unit Testing esegue automaticamente tutti i test interessati quando si modifica il codice per assicurarsi che le modifiche non introducano regressioni.
 
-Live Unit Testing:
+Live Unit Testing indica se gli unit test coprono adeguatamente il codice. Rappresenta graficamente code coverage in tempo reale. È possibile visualizzare immediatamente il numero di test che coprono ogni riga di codice e le linee non coperte da alcun unit test.
 
-- Consente di eseguire il refactoring e di modificare il codice in modo più sicuro. Live Unit Testing esegue automaticamente tutti i test pertinenti quando si modifica il codice per garantire che le modifiche non interrompano i test.
-
-- Indica se gli unit test coprono il codice in modo adeguato e visualizza il codice non coperto dai test. Live Unit Testing illustra graficamente il code coverage in tempo reale, in modo da visualizzare a colpo d'occhio sia il numero di test che coprono ogni riga di codice sia le righe non coperte da alcun test.
-
-Se si ha una soluzione che include uno o più progetti di unit test, è possibile abilitare Live Unit Testing selezionando **Test** > **Live Unit Testing** > **Avvia** dal menu di primo livello di Visual Studio.
+Se si dispone di una soluzione che include uno o più progetti di unit test, è possibile abilitare Live Unit Testing selezionando **test** > **Live unit testing** > **iniziare** dalla barra dei menu di primo livello in Visual Studio.
 
 > [!NOTE]
 > Live Unit Testing è disponibile solo in Visual Studio Enterprise Edition.
 
 Per altre informazioni su Live Unit Testing:
 
-- Vedere l'esercitazione introduttiva, [Introduzione a Live Unit Testing](live-unit-testing-start.md).
+- Prova un'esercitazione introduttiva: [Inizia a usare Live unit testing](live-unit-testing-start.md).
 
-- Leggere la documentazione dettagliata in [Usare Live Unit Testing in Visual Studio Enterprise Edition](live-unit-testing.md).
+- Leggere la documentazione dettagliata: [Usare Live unit testing con Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Leggere le [Domande frequenti su Live Unit Testing](live-unit-testing-faq.md) per informazioni sulle novità, nonché per suggerimenti e tecniche.
+- Leggi le [domande frequenti su Live unit testing](live-unit-testing-faq.md) per scoprire le novità di Live unit testing, oltre a suggerimenti e tecniche.
 
-- Guardare il video di Channel 9 per una panoramica di Live Unit Testing e delle relative funzionalità. </p>
+- Guardare il video di Channel 9 per una panoramica di Live Unit Testing e delle relative funzionalità.</p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 

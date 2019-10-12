@@ -10,28 +10,28 @@ f1_keywords:
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c7adb310db9eece1d8d4a2881057cc1acde1062
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 37bee4665040b8792cdc0fa521fc75cbfe9ae1de
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923809"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018354"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Specificare dove e quando applicare un'annotazione
-Quando un'annotazione è condizionale, potrebbe essere necessario specificare altre annotazioni per l'analizzatore.  Se, ad esempio, una funzione dispone di una variabile che può essere sincrona o asincrona, la funzione si comporta come segue: Nel caso sincrono viene sempre eseguito correttamente, ma nel caso asincrono viene segnalato un errore se non riesce immediatamente. Quando la funzione viene chiamata in modo sincrono, il controllo del valore del risultato non fornisce alcun valore all'analizzatore del codice perché non sarebbe stato restituito.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, potrebbe verificarsi un errore grave. In questo esempio viene illustrata una situazione in cui è possibile `_When_` utilizzare l'annotazione, descritta più avanti in questo articolo, per abilitare il controllo.
+Quando un'annotazione è condizionale, potrebbe essere necessario specificare altre annotazioni per l'analizzatore.  Se, ad esempio, una funzione dispone di una variabile che può essere sincrona o asincrona, la funzione si comporta come segue: Nel caso sincrono viene sempre eseguito correttamente, ma nel caso asincrono viene segnalato un errore se non riesce immediatamente. Quando la funzione viene chiamata in modo sincrono, il controllo del valore del risultato non fornisce alcun valore all'analizzatore del codice perché non sarebbe stato restituito.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, potrebbe verificarsi un errore grave. In questo esempio viene illustrata una situazione in cui è possibile utilizzare l'annotazione `_When_`, descritta più avanti in questo articolo, per abilitare il controllo.
 
 ## <a name="structural-annotations"></a>Annotazioni strutturali
 Per controllare quando e dove si applicano le annotazioni, utilizzare le seguenti annotazioni strutturali.
 
-|Annotazione|DESCRIZIONE|
+|Annotazione|Descrizione|
 |----------------|-----------------|
-|`_At_(expr, anno-list)`|`expr`espressione che restituisce un lvalue. Le annotazioni `anno-list` in vengono applicate all'oggetto denominato da. `expr` Per ogni annotazione `expr` in `anno-list`, viene interpretato nella pre-condizione se l'annotazione viene interpretata nella pre-condizione e in post-condizione se l'annotazione viene interpretata in post-condizione.|
-|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr`espressione che restituisce un lvalue. Le annotazioni `anno-list` in vengono applicate all'oggetto denominato da. `expr` Per ogni annotazione `expr` in `anno-list`, viene interpretato nella pre-condizione se l'annotazione viene interpretata nella precondizione e in post-condizione se l'annotazione viene interpretata in post-condizione.<br /><br /> `iter`nome di una variabile che ha come ambito l'annotazione (inclusa `anno-list`). `iter`ha un tipo `long`implicito. Le variabili denominate in modo identico in qualsiasi ambito di inclusione sono nascoste dalla valutazione.<br /><br /> `elem-count`espressione che restituisce un valore integer.|
-|`_Group_(anno-list)`|Le annotazioni `anno-list` in sono tutte considerate con qualsiasi qualificatore applicabile all'annotazione di gruppo applicata a ogni annotazione.|
-|`_When_(expr, anno-list)`|`expr`espressione che può essere convertita in `bool`. Quando è diverso da zero (`true`), le annotazioni specificate in `anno-list` sono considerate applicabili.<br /><br /> Per impostazione predefinita, per ogni annotazione in `anno-list`, `expr` viene interpretato come utilizzando i valori di input se l'annotazione è una precondizione e come se si utilizzasse i valori di output se l'annotazione è una post-condizione. Per eseguire l'override dell'impostazione predefinita, è `_Old_` possibile utilizzare la funzione intrinseca quando si valuta una post-condizione per indicare che devono essere utilizzati i valori di input. **Nota:**  Le annotazioni diverse possono essere abilitate come conseguenza `_When_` dell'utilizzo di se viene utilizzato un valore `*pLength`modificabile, ad esempio, perché il `expr` risultato valutato di in precondizione può differire dal risultato valutato in post-condizione.|
+|`_At_(expr, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretata in una condizione preliminare se l'annotazione viene interpretata in una condizione preliminare e in una condizione successiva se l'annotazione viene interpretata in una condizione post-condizione.|
+|`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretata in una condizione preliminare se l'annotazione viene interpretata nella precondizione e in una successiva condizione se l'annotazione viene interpretata in una condizione post-condizione.<br /><br /> `iter` è il nome di una variabile con ambito di annotazione (incluso `anno-list`). `iter` ha un tipo implicito `long`. Le variabili denominate in modo identico in qualsiasi ambito di inclusione sono nascoste dalla valutazione.<br /><br /> `elem-count` è un'espressione che restituisce un Integer.|
+|`_Group_(anno-list)`|Le annotazioni in `anno-list` sono tutte considerate con qualsiasi qualificatore applicabile all'annotazione di gruppo applicata a ogni annotazione.|
+|`_When_(expr, anno-list)`|`expr` è un'espressione che può essere convertita in `bool`. Quando è diverso da zero (`true`), le annotazioni specificate in `anno-list` sono considerate applicabili.<br /><br /> Per impostazione predefinita, per ogni annotazione in `anno-list` `expr` viene interpretato come utilizzando i valori di input se l'annotazione è una precondizione e come se si utilizzasse i valori di output se l'annotazione è una post-condizione. Per eseguire l'override dell'impostazione predefinita, è possibile usare la funzione intrinseca `_Old_` quando si valuta una post-condizione per indicare che devono essere usati i valori di input. **Nota:**  È possibile che vengano abilitate annotazioni diverse come conseguenza dell'utilizzo di `_When_` se è necessario un valore modificabile, ad esempio `*pLength`, perché il risultato valutato di `expr` nella precondizione potrebbe differire dal risultato valutato in post-condizione.|
 
 ## <a name="see-also"></a>Vedere anche
 

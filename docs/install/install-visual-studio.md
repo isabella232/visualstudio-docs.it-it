@@ -2,7 +2,7 @@
 title: Installazione di Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate sull'installazione di Visual Studio.
-ms.date: 04/16/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095364"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018857"
 ---
 # <a name="install-visual-studio"></a>Installazione di Visual Studio
 
@@ -82,7 +82,7 @@ Prima di iniziare l'installazione di Visual Studio:
 
 1. Riavviare il computer. Il riavvio evita che eventuali installazioni o aggiornamenti in sospeso impediscano l'installazione di Visual Studio.
 
-1. Liberare spazio. Rimuovere le applicazioni e i file non necessari da %SystemDrive% eseguendo, ad esempio, l'app Pulitura disco. 
+1. Liberare spazio. Rimuovere le applicazioni e i file non necessari da %SystemDrive% eseguendo, ad esempio, l'app Pulitura disco.
 
 ::: moniker-end
 
@@ -100,16 +100,17 @@ Per domande sull'esecuzione di Visual Studio 2019 side by side con versioni prec
 
 ## <a name="step-2---download-visual-studio"></a>Passaggio 2: Scaricare Visual Studio
 
-Scaricare quindi il file del programma di avvio automatico di Visual Studio. A tale scopo, fare clic sul pulsante seguente, scegliere l'edizione di Visual Studio da scaricare, scegliere **Salva** e quindi scegliere **Apri cartella**.
+Scaricare quindi il file del programma di avvio automatico di Visual Studio.
 
 ::: moniker range="vs-2017"
 
- > [!div class="button"]
- > [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+A tale scopo, fare clic sul pulsante seguente, scegliere l'edizione di Visual Studio da scaricare, scegliere **Salva** e quindi scegliere **Apri cartella**.
 
  > [!div class="button"]
  > [Download di Visual Studio](https://visualstudio.microsoft.com/downloads)
@@ -250,7 +251,7 @@ Per altre informazioni, vedere la pagina [Selezionare i percorsi di installazion
 
 1. Nella casella di ricerca immettere il tipo di app da creare per visualizzare un elenco dei modelli disponibili. L'elenco dei modelli dipende dai carichi di lavoro che sono stati scelti durante l'installazione. Per visualizzare modelli diversi, è possibile scegliere carichi di lavoro differenti.
 
-   È anche possibile filtrare la ricerca in base a un linguaggio di programmazione specifico usando l'elenco a discesa **Linguaggio** e applicare filtri usando gli elenchi **Piattaforma** e **Tipo di progetto**. 
+   È anche possibile filtrare la ricerca in base a un linguaggio di programmazione specifico usando l'elenco a discesa **Linguaggio** e applicare filtri usando gli elenchi **Piattaforma** e **Tipo di progetto**.
 
 1. Il nuovo progetto verrà aperto in Visual Studio e sarà possibile iniziare a scrivere codice.
 
