@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0216d778278f02f7fc63630f4ff6ce90c755e3c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 025e388185651e6b2effb0f53345f2e145e101b3
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118652"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289603"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Passaggio 7: Mantenere le coppie visibili
 Il gioco funziona finché il giocatore sceglierà coppie di icone che non corrispondono. Si consideri però cosa dovrebbe accadere quando il giocatore sceglie una coppia esatta. Anziché far scomparire le icone attivando il timer, tramite il metodo <xref:System.Windows.Forms.Timer.Start>, il gioco deve reimpostarsi in modo da non tenere più traccia delle etichette tramite le variabili di riferimento `firstClicked` e `secondClicked`, senza reimpostare i colori delle due etichette scelte.
@@ -29,6 +29,9 @@ Il gioco funziona finché il giocatore sceglierà coppie di icone che non corris
 
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
      [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]
+
+       > [!IMPORTANT]
+       > Use the programming language control at the top right of this page to view either the C# code snippet or the Visual Basic code snippet.<br><br>![Programming language control for Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      La prima riga dell'istruzione `if` appena aggiunta controlla se l'icona nella prima etichetta scelta dal giocatore è uguale all'icona nella seconda etichetta. Se le icone sono identiche, il programma esegue le tre istruzioni racchiuse tra parentesi graffe in C# o le tre istruzioni all'interno dell'istruzione `if` in Visual Basic. Le prime due istruzioni reimpostano le variabili di riferimento `firstClicked` e `secondClicked` in modo che non tengano più traccia delle etichette. È possibile riconoscere le due istruzioni dal gestore dell'evento <xref:System.Windows.Forms.Timer.Tick> del timer. La terza istruzione è un'istruzione `return` che indica al programma di ignorare e non eseguire le istruzioni restanti nel metodo.
 
@@ -58,7 +61,7 @@ Il gioco funziona finché il giocatore sceglierà coppie di icone che non corris
 
 2. Salvare ed eseguire il programma, quindi iniziare a scegliere icone nel form. Se si sceglie una coppia che non corrisponde, l'evento Tick del timer si attiva ed entrambe le icone scompaiono. Se si sceglie una coppia esatta, la nuova istruzione `if` viene eseguita e l'istruzione return fa sì che il metodo ignori il codice di avvio del timer, in modo che le icone restino visibili, come mostrato nell'immagine seguente.
 
-     ![Gioco creato in questa esercitazione](../ide/media/express_finishedgame.png)
+     ![Gioco creato in questa esercitazione](../ide/media/express_finishedgame.png)<br/>
 **Gioco di abbinamenti** con coppie di icone visibili
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione

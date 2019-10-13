@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5958c089998d35dea4324c59f85c368adf900c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118990"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289631"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
@@ -27,7 +27,7 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
 
 1. Nella casella degli strumenti in **Progettazione Windows Form** scegliere **Timer** (nella categoria **Componenti**) e quindi premere **INVIO** oppure fare doppio clic sul timer per aggiungere un controllo timer al modulo. L'icona del timer, denominata **Timer1**, verrà visualizzata nella parte inferiore del form, come illustrato nell'immagine seguente.
 
-     ![Timer](../ide/media/express_timer.png)
+     ![Timer](../ide/media/express_timer.png)<br/>
 **Timer**
 
     > [!NOTE]
@@ -39,6 +39,9 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
 
      [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+
+      > [!IMPORTANT]
+      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio ![Programming per docs. Microsoft. com @ no__t-1
 
      Il gestore dell'evento Tick effettua tre operazioni: in primo luogo verifica che il timer non sia in esecuzione chiamando il metodo <xref:System.Windows.Forms.Timer.Stop>. In seconda istanza, utilizza le due variabili di riferimento, `firstClicked` e `secondClicked`, per rendere nuovamente invisibili le due etichette scelte dal giocatore. Infine, reimposta le variabili di riferimento `firstClicked` e `secondClicked` su `null` in Visual C# e su `Nothing` in Visual Basic. Questo passaggio è importante, poiché è così che il programma si reimposta. Ora non sta tenendo traccia di alcun controllo <xref:System.Windows.Forms.Label> ed è nuovamente pronto per la scelta di un'etichetta da parte del giocatore.
 
