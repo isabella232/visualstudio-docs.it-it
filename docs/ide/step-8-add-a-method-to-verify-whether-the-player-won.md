@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b58cb236f1da88c20e0e96878a7cd5c60052f44f
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: eed7a2796f08e85441c174e882c00fa406cb2379
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118630"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289667"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto
 È stato creato un gioco divertente, ma serve un elemento aggiuntivo per completare l'opera. Il gioco deve terminare quando il giocatore vince, pertanto è necessario aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.
@@ -30,6 +30,9 @@ ms.locfileid: "71118630"
      [!code-csharp[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]
 
+      > [!IMPORTANT]
+      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio ![Programming per docs. Microsoft. com @ no__t-1     
+
      Il metodo usa un altro ciclo `foreach` in Visual C# o un ciclo `For Each` in Visual Basic per scorrere ogni etichetta in <xref:System.Windows.Forms.TableLayoutPanel>. Utilizza l'operatore di uguaglianza (`==` in Visual C# e `=` in Visual Basic) per controllare il colore dell'icona di ogni etichetta e verificare se corrisponde allo sfondo. Se i colori corrispondono, l'icona resta invisibile e il giocatore non ha accoppiato tutte le icone rimanenti. In tal caso, il programma utilizza un'istruzione `return` per ignorare la parte restante del metodo. Se il ciclo scorre tutte le etichette senza eseguire l'istruzione `return`, significa che tutte le icone nel form sono state accoppiate. Il programma visualizza un oggetto MessageBox con un messaggio di congratulazioni all'utente, quindi chiama il metodo `Close()` del form per terminare il gioco.
 
 2. Fare quindi in modo che il gestore dell'evento <xref:System.Windows.Forms.Control.Click> dell'etichetta chiami il nuovo metodo `CheckForWinner()`. Accertarsi che il programma verifichi se il giocatore ha vinto immediatamente dopo aver visualizzato la seconda icona scelta dal giocatore. Cercare la riga in cui si è impostato il colore della seconda icona scelta, quindi chiamare il metodo `CheckForWinner()` subito dopo, come illustrato nel codice seguente.
@@ -39,8 +42,8 @@ ms.locfileid: "71118630"
 
 3. Salvare ed eseguire il programma. Giocare e accoppiare tutte le icone. Quando si vince, il programma visualizza un oggetto **MessageBox** con un messaggio di congratulazioni, come illustrato nell'immagine che segue, quindi chiude il riquadro.
 
-     ![Gioco di abbinamenti con MessageBox](../ide/media/express_tut4step8.png)
-**Gioco di abbinamenti** con **MessageBox**
+     gioco ![Matching con MessageBox @ no__t-1<br/>
+**Gioco di abbinamenti** con oggetto **MessageBox**
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 

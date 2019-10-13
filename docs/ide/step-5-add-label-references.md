@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a076c4475b9e65d59aec08eac1774728b42cd77c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdcecbdac0a866bd5c6a15a78d8c0ba2a33051a
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118970"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289673"
 ---
 # <a name="step-5-add-label-references"></a>Passaggio 5: Aggiungere riferimenti alle etichette
 Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al momento il programma mostra tutte le etichette scelte dal giocatore, ma è possibile modificare questa impostazione. Una volta scelta la prima etichetta, il programma dovrebbe visualizzarne l'icona. Una volta scelta la seconda etichetta, il programma dovrebbe visualizzare entrambe le icone per un istante, quindi renderle nuovamente invisibili. Il programma terrà ora traccia del controllo Label scelto per primo e di quello scelto per secondo usando *variabili di riferimento*.
@@ -29,6 +29,9 @@ Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al mo
 
      [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
+
+     > [!IMPORTANT]
+     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio ![Programming per docs. Microsoft. com @ no__t-1
 
      Queste variabili di riferimento sono simili alle istruzioni utilizzate in precedenza per aggiungere oggetti (ad esempio oggetti <xref:System.Windows.Forms.Timer>, <xref:System.Collections.Generic.List%601> e <xref:System.Random>) al form. Queste istruzioni, tuttavia, non comportano la visualizzazione di due controlli Label aggiuntivi nel modulo, perché in nessuna delle due istruzioni è usata la parola chiave `new`. Senza la parola chiave `new` non viene creato alcun oggetto. Per questo motivo `firstClicked` e `secondClicked` sono definiti variabili di riferimento: tengono semplicemente traccia di (o fanno riferimento a) oggetti Label.
 
@@ -43,7 +46,7 @@ Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al mo
 
 4. Scegliere il controllo etichetta successivo. Non accadrà nulla. Il programma sta già tenendo traccia della prima etichetta scelta dal giocatore, pertanto `firstClicked` non è uguale a `null` in Visual C# o `Nothing` in Visual Basic. Quando l'istruzione `if` controlla `firstClicked` per stabilire se sia uguale a `null` o `Nothing`, rileva che non lo è e non esegue le istruzioni contenute nell'istruzione `if`. Per cui soltanto la prima icona scelta diventa nera, mentre le altre icone sono invisibili, come mostrato nell'immagine seguente.
 
-     ![Gioco di abbinamenti con un'icona visualizzata](../ide/media/express_tut4step5.png)
+     ![Gioco di abbinamenti con un'icona visualizzata](../ide/media/express_tut4step5.png)<br/>
 **Gioco di abbinamenti** con un'icona visualizzata
 
      Questa situazione verrà corretta nel passaggio successivo dell'esercitazione aggiungendo un controllo **Timer**.

@@ -1,7 +1,7 @@
 ---
 title: Creare un'installazione di rete
 description: Informazioni sulla creazione di un punto di installazione di rete per la distribuzione di Visual Studio in un'organizzazione.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 521b29f87db6379a011a0b46dfd1405b374ab9ba
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018885"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289649"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -39,7 +39,7 @@ Scaricare un file del programma di avvio automatico per l'edizione di Visual Stu
 
 Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
-Il file eseguibile di installazione @ no__t-0or è più specifico, il file del programma di avvio automatico @ no__t-1should corrisponde a uno dei seguenti.
+Il file eseguibile di installazione @ no__t-0or è più specifico, il file del programma di avvio automatico @ no__t-1should corrisponde o è simile a uno dei seguenti.
 
 | Edizione | Nomefile |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Altri programmi di avvio automatico supportati includono **vs_feedbackclient. ex
 
 ::: moniker range="vs-2019"
 
-Il file eseguibile di installazione&mdash;o, per essere più specifici, il file di un programma di bootstrap&mdash;, deve corrispondere a uno dei seguenti.
+Il file eseguibile di installazione @ no__t-0or è più specifico, un file del programma di avvio automatico @ no__t-1should corrisponde o è simile a uno dei seguenti.
 
 |Edizione | Scarica|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ Il file eseguibile di installazione&mdash;o, per essere più specifici, il file 
 Altri programmi di avvio automatico supportati includono [vs_TeamExplorer. exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/16/release/vs_testagent.exe)e [vs_testcontroller. exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
+
+>[!TIP]
+>Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificarne la versione, ecco come. In Windows aprire Esplora file, fare clic con il pulsante destro del mouse sul file del programma di avvio automatico, scegliere **Proprietà**, scegliere la scheda **Dettagli** , quindi visualizzare il numero di **versione del prodotto** . Per abbinare tale numero a una versione di Visual Studio, vedere la pagina relativa ai [numeri di build e alle date di rilascio di Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ## <a name="create-an-offline-installation-folder"></a>Creare una cartella di installazione offline
 

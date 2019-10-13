@@ -2,7 +2,7 @@
 title: Usare i parametri della riga di comando per installare Visual Studio
 titleSuffix: ''
 description: Informazioni su come usare i parametri della riga di comando per controllare o personalizzare l'installazione di Visual Studio.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 0043cabf5a134d5891b66f5dbd2ae77360d206fb
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018798"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289574"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usare i parametri della riga di comando per installare Visual Studio
 
@@ -56,6 +56,9 @@ Il file del programma di avvio automatico deve corrispondere o essere simile a u
 * vs_enterprise.exe
 * vs_professional.exe
 * vs_community.exe
+
+>[!TIP]
+>Se in precedenza è stato scaricato un file del programma di avvio automatico e si vuole verificarne la versione, ecco come. In Windows aprire Esplora file, fare clic con il pulsante destro del mouse sul file del programma di avvio automatico, scegliere **Proprietà**, scegliere la scheda **Dettagli** , quindi visualizzare il numero di **versione del prodotto** . Per abbinare tale numero a una versione di Visual Studio, vedere la pagina relativa ai [numeri di build e alle date di rilascio di Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ## <a name="command-line-parameters"></a>Parametri della riga di comando
 
