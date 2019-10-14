@@ -1,10 +1,10 @@
 - name: Strumenti di test di Visual Studio
   href: improve-code-quality.md
-- name: Unit test
+- name: Testing unità
   items:
     - name: Panoramica degli strumenti di unit test
       href: unit-test-your-code.md
-    - name: Introduzione
+    - name: Attività iniziali
       href: getting-started-with-unit-testing.md
     - name: Nozioni di base sugli unit test
       href: unit-test-basics.md
@@ -18,7 +18,7 @@
           href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: Panoramica
           href: intellitest-manual/introduction.md
-        - name: Per iniziare
+        - name: Introduzione
           href: intellitest-manual/getting-started.md
         - name: Indice delle sezioni
           href: intellitest-manual/index.md
@@ -120,13 +120,13 @@
     - name: Introduzione
       displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
-    - name: Novità di Live Unit Testing
+    - name: Novità
       href: live-unit-testing-whats-new.md
-    - name: Introduzione a Live Unit Testing
+    - name: Attività iniziali
       href: live-unit-testing-start.md
-    - name: Usare Live Unit Testing nell'edizione Enterprise
+    - name: Configurazione e uso
       href: live-unit-testing.md
-    - name: Domande frequenti su Live Unit Testing
+    - name: Domande frequenti
       href: live-unit-testing-faq.md
 - name: Test di carico e delle prestazioni Web
   items:
@@ -244,7 +244,7 @@
           href: how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md
         - name: Periodi di timeout
           href: how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md
-        - name: Risolvere i problemi
+        - name: Risolvere problemi
           href: troubleshoot-test-controllers-and-test-agents.md
     - name: Personalizzare i test di carico
       items:
@@ -292,7 +292,7 @@
           href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
         - name: Registrazioni schermate e voce
           href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
-    - name: Risultati dei test
+    - name: Risultati del test
       items:
         - name: Analizzare i risultati
           href: analyze-load-test-results-using-the-load-test-analyzer.md
