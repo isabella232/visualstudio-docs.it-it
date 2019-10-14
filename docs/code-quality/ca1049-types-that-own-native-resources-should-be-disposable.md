@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef7b72eade7ea8e4486d5c317c06026bb4d0b95f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235736"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306112"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: I tipi delle risorse native devono essere disposable
 
@@ -35,32 +35,32 @@ ms.locfileid: "71235736"
 
 ## <a name="cause"></a>Causa
 
-Un tipo fa riferimento <xref:System.IntPtr?displayProperty=fullName> a un campo <xref:System.UIntPtr?displayProperty=fullName> , a un campo <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> o a un campo, ma <xref:System.IDisposable?displayProperty=fullName>non implementa.
+Un tipo fa riferimento a un campo <xref:System.IntPtr?displayProperty=fullName>, a un campo <xref:System.UIntPtr?displayProperty=fullName> o a un campo <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>, ma non implementa <xref:System.IDisposable?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola presuppone che <xref:System.IntPtr>i <xref:System.UIntPtr>campi, <xref:System.Runtime.InteropServices.HandleRef> e memorizzino i puntatori alle risorse non gestite. I tipi che allocano risorse non gestite devono <xref:System.IDisposable> implementare per consentire ai chiamanti di rilasciare le risorse su richiesta e abbreviare la durata degli oggetti che contengono le risorse.
+Questa regola presuppone che i campi <xref:System.IntPtr>, <xref:System.UIntPtr> e <xref:System.Runtime.InteropServices.HandleRef> memorizzino i puntatori alle risorse non gestite. I tipi che allocano risorse non gestite devono implementare <xref:System.IDisposable> per consentire ai chiamanti di rilasciare le risorse su richiesta e ridurre la durata degli oggetti che contengono le risorse.
 
-Il modello di progettazione consigliato per pulire le risorse non gestite consiste nel fornire sia un metodo implicito che un mezzo esplicito per liberare tali risorse <xref:System.Object.Finalize%2A?displayProperty=fullName> usando rispettivamente il <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo e il metodo. Il Garbage Collector chiama il <xref:System.Object.Finalize%2A> metodo di un oggetto in un determinato momento indeterminato dopo che l'oggetto non è più raggiungibile. Dopo <xref:System.Object.Finalize%2A> la chiamata a, è necessario un Garbage Collection aggiuntivo per liberare l'oggetto. Il <xref:System.IDisposable.Dispose%2A> metodo consente al chiamante di rilasciare in modo esplicito le risorse su richiesta, prima che le risorse vengano rilasciate se lasciate al Garbage Collector. Dopo la pulizia delle risorse non gestite, <xref:System.IDisposable.Dispose%2A> è necessario chiamare il <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> metodo per informare il Garbage Collector che <xref:System.Object.Finalize%2A> non è più necessario chiamare. in questo modo si elimina la necessità di Garbage Collection aggiuntivi e si abbrevia il durata dell'oggetto.
+Il modello di progettazione consigliato per pulire le risorse non gestite consiste nel fornire sia un metodo implicito che un mezzo esplicito per liberare tali risorse usando rispettivamente il metodo <xref:System.Object.Finalize%2A?displayProperty=fullName> e il metodo <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>. Il Garbage Collector chiama il metodo <xref:System.Object.Finalize%2A> di un oggetto in un momento indeterminato dopo che l'oggetto è stato determinato che non è più raggiungibile. Dopo la chiamata a <xref:System.Object.Finalize%2A>, per liberare l'oggetto è necessaria una Garbage Collection aggiuntiva. Il metodo <xref:System.IDisposable.Dispose%2A> consente al chiamante di rilasciare in modo esplicito le risorse su richiesta, prima che vengano rilasciate le risorse se lasciate al Garbage Collector. Dopo la pulizia delle risorse non gestite, <xref:System.IDisposable.Dispose%2A> deve chiamare il metodo <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> per consentire al Garbage Collector di tenere presente che non è più necessario chiamare <xref:System.Object.Finalize%2A>; in questo modo si elimina la necessità di Garbage Collection aggiuntivi e si abbrevia la durata dell'oggetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola, implementare <xref:System.IDisposable>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
-È possibile eliminare un avviso da questa regola se il tipo non fa riferimento a una risorsa non gestita. In caso contrario, non eliminare un avviso da questa regola perché la mancata implementazione <xref:System.IDisposable> può comportare che le risorse non gestite diventino non disponibili o sottoutilizzate.
+È possibile eliminare un avviso da questa regola se il tipo non fa riferimento a una risorsa non gestita. In caso contrario, non eliminare un avviso da questa regola perché la mancata implementazione di <xref:System.IDisposable> può causare l'indisponibilità o il sottoutilizzo delle risorse non gestite.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato un tipo che <xref:System.IDisposable> implementa per pulire una risorsa non gestita.
+Nell'esempio seguente viene illustrato un tipo che implementa <xref:System.IDisposable> per pulire una risorsa non gestita.
 
 [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA2115 Chiamare GC. KeepAlive quando si utilizzano risorse native](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Chiamare GC. KeepAlive quando si utilizzano risorse native @ no__t-0
 
-[CA1816: Chiamare GC. SuppressFinalize correttamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Chiamare GC. SuppressFinalize correttamente @ no__t-0
 
-[CA2216 I tipi Disposable devono dichiarare Finalizer](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: I tipi Disposable devono dichiarare Finalizer @ no__t-0
 
 [CA1001: I tipi proprietari di campi eliminabili devono essere eliminabili](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 

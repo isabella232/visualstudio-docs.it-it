@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: be864812cc7355f80700bd3e270178c9626d4180
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231306"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305905"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Le proprietà di raccolte devono essere in sola lettura
 
@@ -40,9 +40,9 @@ Una proprietà visibile esternamente, scrivibile è di un tipo che implementa <x
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Una proprietà di raccolta scrivibile consente a un utente di sostituire la raccolta con una raccolta completamente diversa. Una proprietà di sola lettura interrompe la sostituzione della raccolta, ma consente comunque l'impostazione dei singoli membri. Se la sostituzione della raccolta è un obiettivo, il modello di progettazione preferito consiste nell'includere un metodo per rimuovere tutti gli elementi dalla raccolta e un metodo per ripopolare la raccolta. Per un <xref:System.Collections.ArrayList.Clear%2A> esempio <xref:System.Collections.ArrayList.AddRange%2A> di questo modello <xref:System.Collections.ArrayList?displayProperty=fullName> , vedere i metodi e della classe.
+Una proprietà di raccolta scrivibile consente a un utente di sostituire la raccolta con una raccolta completamente diversa. Una proprietà di sola lettura interrompe la sostituzione della raccolta, ma consente comunque l'impostazione dei singoli membri. Se la sostituzione della raccolta è un obiettivo, il modello di progettazione preferito consiste nell'includere un metodo per rimuovere tutti gli elementi dalla raccolta e un metodo per ripopolare la raccolta. Per un esempio di questo modello, vedere i metodi <xref:System.Collections.ArrayList.Clear%2A> e <xref:System.Collections.ArrayList.AddRange%2A> della classe <xref:System.Collections.ArrayList?displayProperty=fullName>.
 
-Sia la serializzazione binaria che quella XML supportano le proprietà di sola lettura che sono raccolte. La <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe presenta requisiti specifici per i tipi che <xref:System.Collections.ICollection> implementano e <xref:System.Collections.IEnumerable?displayProperty=fullName> per essere serializzabili.
+Sia la serializzazione binaria che quella XML supportano le proprietà di sola lettura che sono raccolte. La classe <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> presenta requisiti specifici per i tipi che implementano <xref:System.Collections.ICollection> e <xref:System.Collections.IEnumerable?displayProperty=fullName> per essere serializzabili.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -56,7 +56,7 @@ In caso contrario, non eliminare gli avvisi da questa regola.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un tipo con una proprietà di raccolta scrivibile e viene illustrato come la raccolta può essere sostituita direttamente. Inoltre, Mostra la modalità preferita per sostituire una proprietà di raccolta di sola lettura usando `Clear` i `AddRange` metodi e.
+Nell'esempio seguente viene illustrato un tipo con una proprietà di raccolta scrivibile e viene illustrato come la raccolta può essere sostituita direttamente. Viene inoltre illustrato il modo migliore per sostituire una proprietà di raccolta di sola lettura utilizzando i metodi `Clear` e `AddRange`.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ Nell'esempio seguente viene illustrato un tipo con una proprietà di raccolta sc
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1819 Le proprietà non devono restituire matrici](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819: Le proprietà non devono restituire matrici @ no__t-0

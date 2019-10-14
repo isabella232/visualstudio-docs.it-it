@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585004"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305470"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 
@@ -40,7 +40,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|I metodi di registrazione COM devono corrispondere|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|
+|[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|I campi dei tipi di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|
@@ -89,10 +89,10 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Non passare valori letterali come parametri localizzati|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizzare le stringhe in lettere maiuscole|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|Non ignorare i risultati dei metodi|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Chiamare GC.SuppressFinalize correttamente|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Le proprietà non devono restituire matrici|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Testare le stringhe vuote usando la lunghezza di stringa|
+|[CA1806](../code-quality/ca1806.md)|Non ignorare i risultati dei metodi|
+|[CA1816](../code-quality/ca1816.md)|Chiamare GC.SuppressFinalize correttamente|
+|[CA1819](../code-quality/ca1819.md)|Le proprietà non devono restituire matrici|
+|[CA1820](../code-quality/ca1820.md)|Testare le stringhe vuote usando la lunghezza di stringa|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Usare solo API della versione di .NET Framework di destinazione|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Rimuovere le chiamate a GC.KeepAlive|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Usare SafeHandle per incapsulare le risorse native|

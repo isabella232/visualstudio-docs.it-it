@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5e49049d05a285889c54906534200acadaf2397e
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186566"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306214"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio
 
@@ -49,11 +49,12 @@ Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML.
 
 |Limitazione|WPF|UWP|Note|
 |-|-|-|-|
-|Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportato|Vedere errore: *Verifica dell'esito negativo dell'evento*. Si noti che in WPF è possibile fare riferimento a un gestore eventi esistente. Nelle app UWP, il riferimento a un gestore eventi esistente non è supportato.|
-|Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra o nel file *app. XAML* dell'app.|Supportato a partire da Visual Studio 2019 Update 2|Supportato|Esempio: aggiunta di `SolidColorBrush` un oggetto a un dizionario risorse da utilizzare `StaticResource`come.</br>Nota: È possibile applicare/utilizzare risorse statiche, convertitori di stile e altri elementi scritti in un dizionario risorse durante l'utilizzo del ricaricamento a caldo di XAML. Solo la creazione della risorsa non è supportata.</br> Modifica della proprietà del `Source` dizionario risorse.|
+|Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportate|Vedere errore: *Verifica dell'esito negativo dell'evento*. Si noti che in WPF è possibile fare riferimento a un gestore eventi esistente. Nelle app UWP, il riferimento a un gestore eventi esistente non è supportato.|
+|Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra o nel file *app. XAML* dell'app.|Supportato a partire da Visual Studio 2019 Update 2|Supportato|Esempio: aggiunta di un `SolidColorBrush` in un dizionario risorse da usare come `StaticResource`.</br>Nota: È possibile applicare/utilizzare risorse statiche, convertitori di stile e altri elementi scritti in un dizionario risorse durante l'utilizzo del ricaricamento a caldo di XAML. Solo la creazione della risorsa non è supportata.</br> Modifica della proprietà `Source` del dizionario risorse.|
 |Aggiunta di nuovi controlli, classi, finestre o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|nessuno|
 |Gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|nessuno|
 |Modifica data binding che usa l'estensione di markup {x:Bind}|N/D|Supportato a partire da Visual Studio 2019|Questa operazione richiede Windows 10 versione 1809 (Build 10.0.17763). Non supportato in Visual Studio 2017 o versioni precedenti.|
+|La modifica delle direttive x:Uid non è supportata|N/D|Non supportato|nessuno|
 
 ## <a name="error-messages"></a>Messaggi di errore
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 2602ad4c8f6ea3b5ca8d2b6f57c4148964b17a6c
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585325"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305589"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Set di regole consigliate miste
 
@@ -151,7 +151,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28020](../code-quality/c28020.md)|L'espressione non è true in questa chiamata|
 |[C28021](../code-quality/c28021.md)|Il parametro annotato deve essere un puntatore|
 |[C28022](../code-quality/c28022.md)|Le classi di funzioni in questa funzione non corrispondono alle classi di funzioni nel typedef utilizzato per definirlo.|
-|[C28023](../code-quality/c28023.md)|La funzione assegnata o passata deve avere un' \_annotazione di classe\_ di funzione\_per almeno una delle classi|
+|[C28023](../code-quality/c28023.md)|La funzione assegnata o passata deve avere un'annotazione \_Function @ no__t-1Class @ no__t-2 per almeno una delle classi|
 |[C28024](../code-quality/c28024.md)|Il puntatore a funzione assegnato è annotato con la classe Function, che non è contenuta nell'elenco delle classi di funzioni.|
 |[C28039](../code-quality/c28039.md)|Il tipo di parametro effettivo deve corrispondere esattamente al tipo|
 |[C28112](../code-quality/c28112.md)|Una variabile A cui si accede tramite una funzione Interlocked deve essere sempre accessibile tramite una funzione Interlocked.|
@@ -169,14 +169,14 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28196](../code-quality/c28196.md)|Il requisito non è soddisfatto. (L'espressione non restituisce true).|
 |[C28202](../code-quality/c28202.md)|Riferimento non valido a membro non statico|
 |[C28203](../code-quality/c28203.md)|Riferimento ambiguo al membro di classe.|
-|[C28205](../code-quality/c28205.md)|\_\_ Esito \_positivoonegativo\_utilizzato in un contesto non valido\_|
+|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 o \_On @ no__t-3failure @ no__t-4 usato in un contesto non valido|
 |[C28206](../code-quality/c28206.md)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](../code-quality/c28207.md)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28209](../code-quality/c28209.md)|La dichiarazione per il simbolo presenta una dichiarazione in conflitto|
 |[C28210](../code-quality/c28210.md)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](../code-quality/c28211.md)|Previsto nome contesto statico per SAL_context|
 |[C28212](../code-quality/c28212.md)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](../code-quality/c28213.md)|L' \_annotazioneuse\_ \_\_decl Annotations deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
+|[C28213](../code-quality/c28213.md)|L'annotazione \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
 |[C28214](../code-quality/c28214.md)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](../code-quality/c28215.md)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
@@ -219,7 +219,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28267](../code-quality/c28267.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](../code-quality/c28272.md)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](../code-quality/c28273.md)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](../code-quality/c28275.md)|Il parametro per \_il\_valore\_ della macro è null|
+|[C28275](../code-quality/c28275.md)|Il parametro per \_Macro @ no__t-1value @ no__t-2 è null|
 |[C28279](../code-quality/c28279.md)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](../code-quality/c28280.md)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](../code-quality/c28282.md)|Le stringhe di formato devono essere nelle precondizioni|
@@ -257,7 +257,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|I metodi di registrazione COM devono corrispondere|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|
+|[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|I campi dei tipi di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|
