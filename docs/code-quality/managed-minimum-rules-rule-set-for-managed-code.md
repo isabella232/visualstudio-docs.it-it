@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 183923a764cc3462e799c8f67677aa564c5fe59d
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: bc3d0376e0f3af186802fa566e1618ae7ed89a78
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585123"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305610"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Set di regole minime gestite per codice gestito
 
 Le regole minime gestite sono incentrate sui problemi più critici del codice, inclusi i potenziali problemi di sicurezza, gli arresti anomali dell'applicazione e altri importanti errori di logica e progettazione. Includere questo set di regole in tutti i set di regole personalizzati creati per i progetti.
 
-|Regola|DESCRIZIONE|
+|Regola|Descrizione|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|
+|[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|I campi eliminabili devono essere eliminati|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Overload Operator equivale a override`ValueType.Equals`|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Operatore di overload uguale a in sostituzione `ValueType.Equals`|

@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 4d2f123301eb2dd4df662891f2a9248b0cac7173
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585119"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305858"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
 
 Il set di regole di correttezza estesa Microsoft ottimizza gli errori di utilizzo della logica e del framework segnalati dall'analisi del codice. L'enfasi aggiuntiva si trova in scenari specifici, ad esempio l'interoperabilità COM e le applicazioni per dispositivi mobili. È consigliabile includere questo set di regole se uno di questi scenari si applica al progetto o per trovare ulteriori problemi nel progetto.
 
-Il set di regole Microsoft Extended Correctity Rules include le regole del set di regole [base](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) di correttezza, che contiene le regole del set di regole [consigliate gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
+Il set di regole Microsoft Extended Correctity Rules include le regole del set di regole [base di correttezza](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) , che contiene le regole del set di regole [consigliate gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Nella tabella seguente vengono descritte tutte le regole del set di regole Microsoft Extended Correctity Rules.
 
@@ -42,7 +42,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|I metodi di registrazione COM devono corrispondere|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|
+|[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|I campi dei tipi di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|
@@ -91,10 +91,10 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Non passare valori letterali come parametri localizzati|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizzare le stringhe in lettere maiuscole|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|Non ignorare i risultati dei metodi|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Chiamare GC.SuppressFinalize correttamente|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Le proprietà non devono restituire matrici|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Testare le stringhe vuote usando la lunghezza di stringa|
+|[CA1806](../code-quality/ca1806.md)|Non ignorare i risultati dei metodi|
+|[CA1816](../code-quality/ca1816.md)|Chiamare GC.SuppressFinalize correttamente|
+|[CA1819](../code-quality/ca1819.md)|Le proprietà non devono restituire matrici|
+|[CA1820](../code-quality/ca1820.md)|Testare le stringhe vuote usando la lunghezza di stringa|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Usare solo API della versione di .NET Framework di destinazione|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Rimuovere le chiamate a GC.KeepAlive|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Usare SafeHandle per incapsulare le risorse native|
@@ -132,7 +132,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA1414](../code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md)|Contrassegnare gli argomenti P/Invoke booleani con MarshalAs|
 |[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Non impostare la priorità del processo su Inattivo|
 |[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Non usare i timer che impediscono le modifiche allo stato di potenza|
-|[CA1824](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md)|Contrassegnare gli assembly con NeutralResourcesLanguageAttribute|
+|[CA1824](../code-quality/ca1824.md)|Contrassegnare gli assembly con NeutralResourcesLanguageAttribute|
 |[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Evitare le chiamate a metodi problematici|
 |[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Non considerare i fiber come i thread|
 |[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|Gli assembly di livello 2 non devono contenere LinkDemand|

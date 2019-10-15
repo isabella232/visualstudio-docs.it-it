@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3ac52bdb17aeb7d04e434d2b02ff9a905eab49a2
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231259"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305923"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: I tipi eliminabili devono dichiarare un finalizzatore
 
@@ -32,7 +32,7 @@ ms.locfileid: "71231259"
 
 ## <a name="cause"></a>Causa
 
-Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName>e contiene campi che suggeriscono l'uso di risorse non gestite, non implementa un finalizzatore come descritto da. <xref:System.Object.Finalize%2A?displayProperty=fullName>
+Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> e con campi che suggeriscono l'uso di risorse non gestite, non implementa un finalizzatore come descritto da <xref:System.Object.Finalize%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -46,11 +46,11 @@ Una violazione di questa regola viene segnalata se il tipo Disposable contiene c
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il <xref:System.IDisposable.Dispose%2A> metodo.
+Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il metodo <xref:System.IDisposable.Dispose%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola se il tipo non implementa <xref:System.IDisposable> al fine di rilasciare le risorse non gestite.
+È possibile eliminare un avviso da questa regola se il tipo non implementa <xref:System.IDisposable> allo scopo di rilasciare le risorse non gestite.
 
 ## <a name="example"></a>Esempio
 
@@ -60,11 +60,11 @@ Nell'esempio seguente viene illustrato un tipo che viola questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA2115 Chiamare GC. KeepAlive quando si utilizzano risorse native](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: Chiamare GC. KeepAlive quando si utilizzano risorse native @ no__t-0
 
-[CA1816: Chiamare GC. SuppressFinalize correttamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+[CA1816: Chiamare GC. SuppressFinalize correttamente @ no__t-0
 
-[CA1049: I tipi che possiedono risorse native devono essere Disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: I tipi che possiedono risorse native devono essere Disposable @ no__t-0
 
 ## <a name="see-also"></a>Vedere anche
 

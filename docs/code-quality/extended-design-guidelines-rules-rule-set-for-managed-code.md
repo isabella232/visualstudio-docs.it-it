@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 3ad443a149b1c3a49c4bbbc260a4121d0a721aed
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585074"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305832"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 
 Il set di regole delle linee guida per la progettazione estesa Microsoft espande le regole delle linee guida di progettazione di base per massimizzare i problemi di usabilità e gestibilità segnalati. Le linee guida per la denominazione hanno un'enfasi aggiuntiva. È consigliabile includere questo set di regole se il progetto include il codice della libreria o se si desidera applicare gli standard più elevati per la scrittura di codice facile da gestire.
 
-Le regole delle linee guida di progettazione estese includono tutte le regole del set di regole di [base della Guida di progettazione](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , che include le regole nel set di regole consigliate [gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
+Le regole delle linee guida di progettazione estese includono tutte le regole del set di regole di [base della Guida di progettazione](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , che include le regole nel set di regole [consigliate gestite](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 Nella tabella seguente vengono descritte tutte le regole del set di regole delle linee guida di progettazione estese Microsoft.
 
-|Regola|DESCRIZIONE|
+|Regola|Descrizione|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Dichiarare correttamente i gestori eventi|
@@ -42,7 +42,7 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole delle
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|I metodi di registrazione COM devono corrispondere|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Rimuovere i finalizzatori vuoti|
+|[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|I campi dei tipi di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Le dichiarazioni P/Invoke devono essere portabili|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Non bloccare oggetti con identità debole|
@@ -138,19 +138,19 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole delle
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|Evitare complessità eccessiva|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Gli identificatori non devono corrispondere a parole chiave|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|Controllare i parametri non usati|
-|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|Rimuovere variabili locali non usate|
-|[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|Evitare un numero eccessivo di variabili locali|
-|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|Inizializzare i campi statici del tipo di riferimento inline|
-|[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|Evitare il codice privato non chiamato|
-|[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|Evitare classi interne prive di istanze|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|Evitare attributi unsealed|
-|[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Preferire matrici di matrici rispetto a matrici multidimensionali|
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Eseguire l'override di Equals e dell'operatore "uguale a" sui tipi di valore|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Le proprietà non devono restituire matrici|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Testare le stringhe vuote usando la lunghezza di stringa|
-|[CA1822](../code-quality/ca1822-mark-members-as-static.md)|Contrassegna i membri come statici|
-|[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|Evitare campi privati non usati|
+|[CA1801](../code-quality/ca1801.md)|Controllare i parametri non usati|
+|[CA1804](../code-quality/ca1804.md)|Rimuovere variabili locali non usate|
+|[CA1809](../code-quality/ca1809.md)|Evitare un numero eccessivo di variabili locali|
+|[CA1810](../code-quality/ca1810.md)|Inizializzare i campi statici del tipo di riferimento inline|
+|[CA1811](../code-quality/ca1811.md)|Evitare il codice privato non chiamato|
+|[CA1812](../code-quality/ca1812.md)|Evitare classi interne prive di istanze|
+|[CA1813](../code-quality/ca1813.md)|Evitare attributi unsealed|
+|[CA1814](../code-quality/ca1814.md)|Preferire matrici di matrici rispetto a matrici multidimensionali|
+|[CA1815](../code-quality/ca1815.md)|Eseguire l'override di Equals e dell'operatore "uguale a" sui tipi di valore|
+|[CA1819](../code-quality/ca1819.md)|Le proprietà non devono restituire matrici|
+|[CA1820](../code-quality/ca1820.md)|Testare le stringhe vuote usando la lunghezza di stringa|
+|[CA1822](../code-quality/ca1822.md)|Contrassegna i membri come statici|
+|[CA1823](../code-quality/ca1823.md)|Evitare campi privati non usati|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Non generare tipi di eccezione riservati|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Usare equivalenti gestiti dell'API Win32|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Creare istanze di eccezioni di argomento correttamente|

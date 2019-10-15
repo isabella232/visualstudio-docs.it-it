@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263727"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306245"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aggiornamento di un'applicazione esistente per MSBuild 15
 
@@ -65,7 +65,7 @@ Se non è possibile usare pacchetti NuGet, è possibile fare riferimento agli as
 
 #### <a name="binding-redirects"></a>Reindirizzamenti di binding
 
-Facendo automaticamente riferimento al pacchetto Microsoft.Build.Locator, è possibile garantire che l'applicazione usi i reindirizzamenti di associazione richiesti di tutte le versioni degli assembly di MSBuild alla versione `15.1.0.0`.
+Fare riferimento al pacchetto Microsoft. Build. Locator per assicurarsi che l'applicazione usi automaticamente i reindirizzamenti di binding richiesti alla versione 15.1.0.0. I reindirizzamenti di binding a questa versione supportano sia MSBuild 15 che MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Garantire l'eliminazione dell'output
 
