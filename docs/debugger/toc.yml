@@ -44,8 +44,6 @@
       items:
         - name: Usare i punti di interruzione
           href: using-breakpoints.md
-        - name: Usare i punti di analisi
-          href: using-tracepoints.md
         - name: Risoluzione dei problemi dei punti di interruzione
           href: troubleshooting-breakpoints.md
     - name: Ispezione dei dati
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'Modifica e continuazione non supportate per F#'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: Registrare nella finestra di output
+      href: using-tracepoints.md
     - name: Visualizzare i dati del debugger
       items:
         - name: Moduli
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Viste personalizzate (gestite)
               items:
-                - name: Creare viste personalizzate di oggetti
+                - name: Creare viste personalizzate di oggetti gestiti
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Indicare al debugger gli elementi da visualizzare
                   href: using-the-debuggerdisplay-attribute.md
