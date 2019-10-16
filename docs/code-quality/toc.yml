@@ -336,7 +336,7 @@
                 - name: 'CA1068: I parametri CancellationToken devono essere indicati per ultimi'
                   href: ca1068.md
                 - name: 'CA2210: Gli assembly devono avere nomi sicuri validi'
-                  href: ca2210-assemblies-should-have-valid-strong-names.md
+                  href: ca2210.md
             - name: Avvisi della documentazione
               items:
                 - name: Panoramica
@@ -763,85 +763,85 @@
                 - name: 'CA1816: Chiamare GC.SuppressFinalize correttamente'
                   href: ca1816.md
                 - name: 'CA2200: Eseguire il rethrow per mantenere i dettagli dello stack'
-                  href: ca2200-rethrow-to-preserve-stack-details.md
+                  href: ca2200.md
                 - name: 'CA2201: Non generare tipi di eccezione riservati'
-                  href: ca2201-do-not-raise-reserved-exception-types.md
+                  href: ca2201.md
                 - name: 'CA2202: Non eliminare gli oggetti più volte'
-                  href: ca2202-do-not-dispose-objects-multiple-times.md
+                  href: ca2202.md
                 - name: 'CA2204: I valori letterali devono essere digitati correttamente'
-                  href: ca2204-literals-should-be-spelled-correctly.md
+                  href: ca2204.md
                 - name: 'CA2205: Usare equivalenti gestiti dell''API Win32'
-                  href: ca2205-use-managed-equivalents-of-win32-api.md
+                  href: ca2205.md
                 - name: 'CA2207: Inizializzare i campi statici dei tipi di valore inline'
-                  href: ca2207-initialize-value-type-static-fields-inline.md
+                  href: ca2207.md
                 - name: 'CA2208: Creare istanze di eccezioni di argomento correttamente'
-                  href: ca2208-instantiate-argument-exceptions-correctly.md
+                  href: ca2208.md
                 - name: 'CA2211: I campi non costanti non devono essere visibili'
-                  href: ca2211-non-constant-fields-should-not-be-visible.md
+                  href: ca2211.md
                 - name: 'CA2212: Non contrassegnare componenti serviti con WebMethod'
-                  href: ca2212-do-not-mark-serviced-components-with-webmethod.md
+                  href: ca2212.md
                 - name: 'CA2213: I campi eliminabili devono essere eliminati'
-                  href: ca2213-disposable-fields-should-be-disposed.md
+                  href: ca2213.md
                 - name: 'CA2214: Non chiamare metodi sottoponibili a override nei costruttori'
-                  href: ca2214-do-not-call-overridable-methods-in-constructors.md
+                  href: ca2214.md
                 - name: 'CA2215: I metodi Dispose devono chiamare Dispose della classe di base'
-                  href: ca2215-dispose-methods-should-call-base-class-dispose.md
+                  href: ca2215.md
                 - name: 'CA2216: I tipi eliminabili devono dichiarare un finalizzatore'
-                  href: ca2216-disposable-types-should-declare-finalizer.md
+                  href: ca2216.md
                 - name: 'CA2217: Non contrassegnare le enumerazioni con FlagsAttribute'
-                  href: ca2217-do-not-mark-enums-with-flagsattribute.md
+                  href: ca2217.md
                 - name: 'CA2218: Eseguire l''override di GetHashCode all''override di Equals'
-                  href: ca2218-override-gethashcode-on-overriding-equals.md
+                  href: ca2218.md
                 - name: 'CA2219: Non generare eccezioni in clausole di eccezione'
-                  href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
+                  href: ca2219.md
                 - name: 'CA2220: I finalizzatori devono chiamare il finalizzatore della classe di base'
-                  href: ca2220-finalizers-should-call-base-class-finalizer.md
+                  href: ca2220.md
                 - name: 'CA2221: I finalizzatori devono essere protetti'
-                  href: ca2221-finalizers-should-be-protected.md
+                  href: ca2221.md
                 - name: 'CA2222: Non diminuire la visibilità di membri ereditati'
-                  href: ca2222-do-not-decrease-inherited-member-visibility.md
+                  href: ca2222.md
                 - name: 'CA2223: La differenza tra membri non deve limitarsi al tipo restituito'
-                  href: ca2223-members-should-differ-by-more-than-return-type.md
+                  href: ca2223.md
                 - name: 'CA2224: Eseguire l''override di Equals all''overload dell''operatore "uguale a"'
-                  href: ca2224-override-equals-on-overloading-operator-equals.md
+                  href: ca2224.md
                 - name: 'CA2225: Gli overload degli operatori hanno alternative con nome'
-                  href: ca2225-operator-overloads-have-named-alternates.md
+                  href: ca2225.md
                 - name: 'CA2226: Gli operatori devono avere overload simmetrici'
-                  href: ca2226-operators-should-have-symmetrical-overloads.md
+                  href: ca2226.md
                 - name: 'CA2227: Le proprietà di raccolte devono essere in sola lettura'
-                  href: ca2227-collection-properties-should-be-read-only.md
+                  href: ca2227.md
                 - name: 'CA2228: Non specificare formati di risorse non rilasciati'
-                  href: ca2228-do-not-ship-unreleased-resource-formats.md
+                  href: ca2228.md
                 - name: 'CA2229: Implementare costruttori di serializzazione'
-                  href: ca2229-implement-serialization-constructors.md
+                  href: ca2229.md
                 - name: 'CA2230: Usare params per argomenti variabili'
-                  href: ca2230-use-params-for-variable-arguments.md
+                  href: ca2230.md
                 - name: 'CA2231: Eseguire l''overload dell''operatore "uguale a" all''override di ValueType.Equals'
-                  href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
+                  href: ca2231.md
                 - name: 'CA2232: Contrassegnare i punti di ingresso del Windows Form con STAThread'
-                  href: ca2232-mark-windows-forms-entry-points-with-stathread.md
+                  href: ca2232.md
                 - name: 'CA2233: Evitare l''overflow delle operazioni'
-                  href: ca2233-operations-should-not-overflow.md
+                  href: ca2233.md
                 - name: 'CA2234: Passare oggetti System.Uri invece di stringhe'
-                  href: ca2234-pass-system-uri-objects-instead-of-strings.md
+                  href: ca2234.md
                 - name: 'CA2235: Contrassegnare tutti i campi non serializzabili'
-                  href: ca2235-mark-all-non-serializable-fields.md
+                  href: ca2235.md
                 - name: 'CA2236: Chiamare metodi della classe di base su tipi ISerializable'
-                  href: ca2236-call-base-class-methods-on-iserializable-types.md
+                  href: ca2236.md
                 - name: 'CA2237: Contrassegnare i tipi ISerializable con SerializableAttribute'
-                  href: ca2237-mark-iserializable-types-with-serializableattribute.md
+                  href: ca2237.md
                 - name: 'CA2238: Implementare correttamente i metodi di serializzazione'
-                  href: ca2238-implement-serialization-methods-correctly.md
+                  href: ca2238.md
                 - name: 'CA2239: Specificare metodi di deserializzazione per i campi facoltativi'
-                  href: ca2239-provide-deserialization-methods-for-optional-fields.md
+                  href: ca2239.md
                 - name: 'CA2240: Implementare ISerializable in modo corretto'
-                  href: ca2240-implement-iserializable-correctly.md
+                  href: ca2240.md
                 - name: 'CA2241: Specificare argomenti corretti ai metodi di formattazione'
-                  href: ca2241-provide-correct-arguments-to-formatting-methods.md
+                  href: ca2241.md
                 - name: 'CA2242: Testare i valori NaN in modo corretto'
-                  href: ca2242-test-for-nan-correctly.md
+                  href: ca2242.md
                 - name: 'CA2243: I valori letterali stringa di attributo devono essere analizzati correttamente'
-                  href: ca2243-attribute-string-literals-should-parse-correctly.md
+                  href: ca2243.md
             - name: Sospensione funzionalità automatica
               href: automatic-feature-suspension.md
 - name: Analizzare il codice C/C++

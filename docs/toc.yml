@@ -170,8 +170,8 @@
   items:
     - name: Sviluppo
       items:
-        - name: 'Indice: Usare l''IDE per scrivere codice'
-          href: ide/index-writing-code.md
+        - name: Introduzione
+          href: ide/index-writing-code.yml
         - name: Spostarsi all'interno dell'IDE
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: Soluzioni e progetti
@@ -1137,7 +1137,7 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Sicurezza
+    - name: Security
       items:
         - name: Sviluppare applicazioni sicure
           href: ide/securing-applications.md
