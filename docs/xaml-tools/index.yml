@@ -1,0 +1,55 @@
+### YamlMime:Landing
+title: Documentazione degli strumenti XAML
+summary: Visual Studio offre diversi strumenti che consentono di creare app basate su XAML. Gli strumenti includono l'editor e la finestra di progettazione XAML e le funzionalità di debug.
+metadata:
+  title: Documentazione degli strumenti XAML
+  description: Esplorare diverse pagine utili per imparare a usare gli strumenti XAML in Visual Studio.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-designers
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/10/2019
+  ms.openlocfilehash: fe889d55ac2b2a6eab99b8d6abdc5193c981725d
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450608"
+landingContent:
+- title: Informazioni su XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Panoramica di XAML
+      url: xaml-overview.md
+- title: Usare la finestra di progettazione XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Progettare XAML in Visual Studio e Blend
+      url: designing-xaml-in-visual-studio.md
+    - text: Informazioni sulla finestra di progettazione XAML
+      url: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+- title: Eseguire il debug di XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Scrivere ed eseguire il debug di codice XAML in esecuzione
+      url: xaml-hot-reload.md
+    - text: Debug XAML in Blend
+      url: debug-xaml-in-blend.md
+    - text: Eseguire il debug di app WPF
+      url: ../debugger/debugging-wpf.md?toc=/visualstudio/debugger/toc.json&bc=/visualstudio/debugger/breadcrumb/toc.json
+    - text: Eseguire il debug di app UWP
+      url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+- title: Sviluppare app WPF
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Panoramica di WPF
+      url: ../designers/introduction-to-wpf.md
+  - linkListType: get-started
+    links:
+    - text: Introduzione a WPF in Visual Studio
+      url: ../designers/getting-started-with-wpf.md
