@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 402ce13b55921045f8e06d99bbe6b1e3918e457a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234759"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440284"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: I tipi visibili a COM devono essere creabili
 
@@ -41,13 +41,13 @@ La regola ignora i tipi derivati da <xref:System.Delegate?displayProperty=fullNa
 Per impostazione predefinita, i seguenti elementi sono visibili a COM: assembly, tipi pubblici, membri di istanze pubbliche nei tipi pubblici e tutti i membri dei tipi di valore pubblici.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Per correggere una violazione di questa regola, aggiungere un costruttore predefinito pubblico o rimuovere <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> dal tipo.
+Per correggere una violazione di questa regola, aggiungere un costruttore predefinito pubblico o rimuovere il <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> dal tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 È possibile eliminare un avviso da questa regola se vengono fornite altre modalità per creare e passare l'oggetto al client COM.
 
 ## <a name="related-rules"></a>Regole correlate
-[CA1017 Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
 

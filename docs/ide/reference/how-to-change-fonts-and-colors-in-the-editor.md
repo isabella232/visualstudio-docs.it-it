@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: ee1fced0b04ae058f05dc46e4414b76b0f506213
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605409"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380992"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedura: Modificare i tipi di carattere e i colori per l'editor in Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedura: modificare i tipi di carattere e i colori per l'editor in Visual Studio
 
 Nell'editor del codice è possibile modificare il tipo di carattere predefinito, le dimensioni del carattere e i colori di sfondo e primo piano di diversi **elementi visualizzati** di tipo testo. Quando si modificano le impostazioni del carattere, tenere presenti le informazioni seguenti:
 
@@ -33,9 +33,7 @@ Nell'editor del codice è possibile modificare il tipo di carattere predefinito,
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Modificare il tipo di carattere, le dimensioni e i colori predefiniti
 
-1. Selezionare **Opzioni** dal menu **Strumenti** e nella cartella **Ambiente** selezionare **Tipi di carattere e colori**.
-
-     Verrà visualizzata la [finestra di dialogo Opzioni, Ambiente, Tipi di carattere e colori](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+1. Scegliere **Opzioni** dal menu **Strumenti**. In **ambiente**selezionare [tipi di carattere e colori](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 2. In **Mostra impostazioni per** selezionare **Editor di testo**.
 

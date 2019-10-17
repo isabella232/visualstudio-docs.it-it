@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75f214809d5bfab660b1d559e21d3de3c5ea75fa
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 417e03f5d682ad448372d74fa8c9a5c31b798ccc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233867"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438925"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: I nomi dei parametri devono corrispondere alla dichiarazione di base
 
@@ -27,7 +27,7 @@ ms.locfileid: "71233867"
 |-|-|
 |TypeName|ParameterNamesShouldMatchBaseDeclaration|
 |CheckId|CA1725|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa

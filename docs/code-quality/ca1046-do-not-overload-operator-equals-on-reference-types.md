@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23358d104c891ff9e230f0daad0f5e6ca57b46c2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 31fd841117e3036cfb9068523914abd2d5f7797a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235771"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449174"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235771"
 |-|-|
 |TypeName|DoNotOverrideOperatorEqualsOnReferenceTypes|
 |CheckId|CA1046|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -64,7 +64,7 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1013 Operatore di overload uguale a in overload di Add e Subtract](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013: Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Vedere anche
 

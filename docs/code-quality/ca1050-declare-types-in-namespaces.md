@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8127c68cfe7eb541b8adea8affad99027e0c1fe7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4d7b132a2840afcc581dda8d341f0193c27f0ef2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235757"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449195"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Dichiarare i tipi negli spazi dei nomi
 
@@ -30,7 +30,7 @@ ms.locfileid: "71235757"
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -52,7 +52,7 @@ Nell'esempio seguente viene illustrata una libreria con un tipo dichiarato in mo
 [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
 
 ## <a name="example"></a>Esempio
-Nell'applicazione seguente viene utilizzata la libreria definita in precedenza. Si noti che il tipo dichiarato all'esterno di uno spazio dei nomi viene creato `Test` quando il nome non è qualificato da uno spazio dei nomi. Si noti inoltre che per accedere `Test` al tipo `Goodspace`in, il nome dello spazio dei nomi è obbligatorio.
+Nell'applicazione seguente viene utilizzata la libreria definita in precedenza. Si noti che il tipo dichiarato all'esterno di uno spazio dei nomi viene creato quando il nome `Test` non è qualificato da uno spazio dei nomi. Si noti inoltre che per accedere al tipo `Test` in `Goodspace`, il nome dello spazio dei nomi è obbligatorio.
 
 [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
 [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

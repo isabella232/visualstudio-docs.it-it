@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b6256f2c6ae54467eb21cc17d50119b3c67a9f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 727acfa5497f2d7f0d09349ff2f5f6648c9d1ca6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235186"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444406"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Non impostare come hardcoded le stringhe delle impostazioni locali
 
@@ -37,18 +37,18 @@ ms.locfileid: "71235186"
 Un metodo usa un valore letterale stringa che rappresenta parte del percorso di alcune cartelle di sistema.
 
 ## <a name="rule-description"></a>Descrizione della regola
-L' <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumerazione contiene membri che fanno riferimento a cartelle di sistema speciali. I percorsi di queste cartelle possono avere valori diversi in sistemi operativi diversi, l'utente può modificare alcuni percorsi e i percorsi sono localizzati. Un esempio di cartella speciale è la cartella di sistema, ovvero "C:\Windows\System32" in [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] , ma "C:\Winnt\System32" in. [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)] Il <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> metodo restituisce le posizioni associate <xref:System.Environment.SpecialFolder> all'enumerazione. I percorsi restituiti da <xref:System.Environment.GetFolderPath%2A> sono localizzati e appropriati per il computer attualmente in esecuzione.
+L'enumerazione <xref:System.Environment.SpecialFolder?displayProperty=fullName> contiene membri che fanno riferimento a cartelle di sistema speciali. I percorsi di queste cartelle possono avere valori diversi in sistemi operativi diversi, l'utente può modificare alcuni percorsi e i percorsi sono localizzati. Un esempio di cartella speciale è la cartella di sistema, ovvero "C:\WINDOWS\system32" in [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], ma "C:\WINNT\system32" su [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. Il metodo <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> restituisce i percorsi associati all'enumerazione <xref:System.Environment.SpecialFolder>. I percorsi restituiti da <xref:System.Environment.GetFolderPath%2A> sono localizzati e appropriati per il computer attualmente in esecuzione.
 
-Questa regola suddivide in token i percorsi di cartella recuperati usando il <xref:System.Environment.GetFolderPath%2A> metodo in livelli di directory distinti. Ogni valore letterale stringa viene confrontato con i token. Se viene trovata una corrispondenza, si presuppone che il metodo stia compilando una stringa che fa riferimento al percorso di sistema associato al token. Per la portabilità e la localizzabilità, <xref:System.Environment.GetFolderPath%2A> utilizzare il metodo per recuperare i percorsi delle cartelle di sistema speciali anziché utilizzare valori letterali stringa.
+Questa regola suddivide in token i percorsi di cartella recuperati usando il metodo <xref:System.Environment.GetFolderPath%2A> in livelli di directory distinti. Ogni valore letterale stringa viene confrontato con i token. Se viene trovata una corrispondenza, si presuppone che il metodo stia compilando una stringa che fa riferimento al percorso di sistema associato al token. Per la portabilità e la localizzabilità, utilizzare il metodo <xref:System.Environment.GetFolderPath%2A> per recuperare i percorsi delle cartelle di sistema speciali anziché utilizzare valori letterali stringa.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Per correggere una violazione di questa regola, recuperare il percorso usando il <xref:System.Environment.GetFolderPath%2A> metodo.
+Per correggere una violazione di questa regola, recuperare il percorso usando il metodo <xref:System.Environment.GetFolderPath%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
-È possibile eliminare un avviso da questa regola se il valore letterale stringa non viene usato per fare riferimento a uno dei percorsi di sistema associati <xref:System.Environment.SpecialFolder> all'enumerazione.
+È possibile eliminare un avviso da questa regola se il valore letterale stringa non viene usato per fare riferimento a uno dei percorsi di sistema associati all'enumerazione <xref:System.Environment.SpecialFolder>.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene compilato il percorso della cartella Common Application Data, che genera tre avvisi da questa regola. Successivamente, l'esempio recupera il percorso usando il <xref:System.Environment.GetFolderPath%2A> metodo.
+Nell'esempio seguente viene compilato il percorso della cartella Common Application Data, che genera tre avvisi da questa regola. Successivamente, l'esempio recupera il percorso usando il metodo <xref:System.Environment.GetFolderPath%2A>.
 
 [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
 [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]

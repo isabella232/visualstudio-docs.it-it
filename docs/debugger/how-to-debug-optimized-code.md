@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Debug di codice ottimizzato | Microsoft Docs'
+title: 'Procedura: eseguire il debug di codice ottimizzato | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387750"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430670"
 ---
-# <a name="how-to-debug-optimized-code"></a>Procedura: Eseguire il debug di codice ottimizzato
+# <a name="how-to-debug-optimized-code"></a>Procedura: eseguire il debug di codice ottimizzato
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
@@ -52,7 +52,7 @@ ms.locfileid: "63387750"
 
   Le variabili globali e di tipo statico vengono visualizzate sempre correttamente, analogamente al layout delle strutture. Se si dispone di un puntatore a una struttura e il valore di questo puntatore è corretto, tutte le variabili membro della struttura conterranno il valore corretto.
 
-  A causa di queste limitazioni, è opportuno eseguire il debug usando, se possibile, una versione del programma non ottimizzata. Per impostazione predefinita l'ottimizzazione è disattivata nella configurazione Debug di un programma Visual C++ e attivata nella configurazione Release.
+  A causa di queste limitazioni, è opportuno eseguire il debug usando, se possibile, una versione del programma non ottimizzata. Per impostazione predefinita, l'ottimizzazione è disattivata nella configurazione di C++ debug di un programma e attivata nella configurazione di rilascio.
 
   Può tuttavia accadere che un bug venga individuato solo nella versione ottimizzata di un programma. In tal caso è necessario effettuare il debug del codice ottimizzato.
 
@@ -66,7 +66,7 @@ ms.locfileid: "63387750"
 
 4. Nella finestra di dialogo **Pagine delle proprietà** verificare che sia selezionata la voce `Debug` nell'elenco a discesa **Configurazione**.
 
-5. Nella struttura di cartelle visualizzata a sinistra selezionare la cartella **C/C++**.
+5. Nella struttura di cartelle visualizzata a sinistra selezionare la cartella **C/C++** .
 
 6. Nella cartella **C++** selezionare `Optimization`.
 
@@ -74,7 +74,7 @@ ms.locfileid: "63387750"
 
 8. Se si è scelto l'opzione `Custom` per `Optimization`, a questo punto è possibile impostare le opzioni per le altre proprietà presenti nell'elenco.
 
-9. Selezionare le proprietà di configurazione, C/C++, il nodo della riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` per il **opzioni aggiuntive** casella di testo.
+9. Selezionare il nodo Proprietà di configurazione,C++C/, riga di comando della pagina delle proprietà del progetto e aggiungere `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` alla casella di testo **Opzioni aggiuntive** .
 
     > [!WARNING]
     > `/Zo` richiede Visual Studio 2013 Update 3 o una versione successiva.

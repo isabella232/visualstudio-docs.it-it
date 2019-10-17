@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2b07c987bdaa2d037c8c6dc95a37d5e77069dea5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236178"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449344"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021: Evitare parametri out
 
@@ -27,20 +27,20 @@ ms.locfileid: "71236178"
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
-Un metodo pubblico o protetto in un tipo pubblico ha un `out` parametro.
+Un metodo pubblico o protetto in un tipo pubblico dispone di un parametro `out`.
 
 ## <a name="rule-description"></a>Descrizione della regola
-Il passaggio di tipi per riferimento `out` ( `ref`tramite o) richiede l'utilizzo di puntatori, la comprensione della differenza tra tipi di valore e tipi di riferimento e la gestione di metodi con più valori restituiti. Inoltre, la differenza tra `out` i `ref` parametri e non è ampiamente riconosciuta.
+Il passaggio di tipi per riferimento (con `out` o `ref`) richiede l'utilizzo di puntatori, la comprensione della differenza tra tipi di valore e tipi di riferimento e la gestione di metodi con più valori restituiti. Inoltre, la differenza tra i parametri `out` e `ref` non è ampiamente riconosciuta.
 
 Quando un tipo di riferimento viene passato "per riferimento", il metodo intende utilizzare il parametro per restituire un'istanza diversa dell'oggetto. Il passaggio di un tipo di riferimento per riferimento è noto anche come utilizzo di un puntatore doppio, puntatore a un puntatore o doppio riferimento indiretto. Utilizzando la convenzione di chiamata predefinita, che viene passata "per valore", un parametro che accetta un tipo di riferimento riceve già un puntatore all'oggetto. Il puntatore, non l'oggetto a cui fa riferimento, viene passato per valore. Passa per valore significa che il metodo non può modificare il puntatore in modo che punti a una nuova istanza del tipo di riferimento. Tuttavia, può modificare il contenuto dell'oggetto a cui punta. Per la maggior parte delle applicazioni questo è sufficiente e produce il comportamento desiderato.
 
-Se un metodo deve restituire un'istanza diversa, usare il valore restituito del metodo per eseguire questa operazione. Vedere la <xref:System.String?displayProperty=fullName> classe per un'ampia gamma di metodi che operano sulle stringhe e restituiscono una nuova istanza di una stringa. Quando si utilizza questo modello, il chiamante deve decidere se l'oggetto originale viene conservato.
+Se un metodo deve restituire un'istanza diversa, usare il valore restituito del metodo per eseguire questa operazione. Vedere la classe <xref:System.String?displayProperty=fullName> per un'ampia gamma di metodi che operano sulle stringhe e restituiscono una nuova istanza di una stringa. Quando si utilizza questo modello, il chiamante deve decidere se l'oggetto originale viene conservato.
 
-Sebbene i valori restituiti siano comuni e utilizzati molto spesso, l'applicazione `out` corretta `ref` di parametri e richiede competenze di progettazione e codifica intermedie. Gli architetti di librerie che progettano per i destinatari generali non dovrebbero prevedere agli `out` utenti `ref` di usare i parametri o.
+Sebbene i valori restituiti siano comuni e utilizzati molto frequentemente, l'applicazione corretta dei parametri `out` e `ref` richiede competenze di progettazione e codifica intermedie. Gli architetti di librerie che progettano per i destinatari generali non dovrebbero aspettarsi che gli utenti lavorino con i parametri `out` o `ref`.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola causata da un tipo di valore, fare in modo che il metodo restituisca l'oggetto come valore restituito. Se il metodo deve restituire più valori, riprogettarlo per restituire una singola istanza di un oggetto che include i valori.
@@ -51,17 +51,17 @@ Per correggere una violazione di questa regola causata da un tipo riferimento, a
 È possibile eliminare un avviso da questa regola in modo sicuro. Tuttavia, questo progetto potrebbe causare problemi di usabilità.
 
 ## <a name="example"></a>Esempio
-La libreria seguente mostra due implementazioni di una classe che genera risposte ai commenti di un utente. La prima implementazione (`BadRefAndOut`) forza l'utente della libreria a gestire tre valori restituiti. La seconda implementazione (`RedesignedRefAndOut`) semplifica l'esperienza utente restituendo un'istanza di una classe contenitore (`ReplyData`) che gestisce i dati come una singola unità.
+La libreria seguente mostra due implementazioni di una classe che genera risposte ai commenti di un utente. La prima implementazione (`BadRefAndOut`) impone l'utente della libreria per la gestione di tre valori restituiti. La seconda implementazione (`RedesignedRefAndOut`) semplifica l'esperienza utente restituendo un'istanza di una classe contenitore (`ReplyData`) che gestisce i dati come una singola unità.
 
 [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]
 
 ## <a name="example"></a>Esempio
-Nell'applicazione seguente viene illustrata l'esperienza dell'utente. La chiamata alla libreria riprogettata (`UseTheSimplifiedClass` metodo) è più semplice e le informazioni restituite dal metodo sono facilmente gestibili. L'output dei due metodi è identico.
+Nell'applicazione seguente viene illustrata l'esperienza dell'utente. La chiamata alla libreria riprogettata (metodo `UseTheSimplifiedClass`) è più semplice e le informazioni restituite dal metodo sono facilmente gestibili. L'output dei due metodi è identico.
 
 [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]
 
 ## <a name="example"></a>Esempio
-Nella libreria di esempio seguente viene illustrata la modalità `ref` di utilizzo dei parametri per i tipi di riferimento e viene illustrato un modo migliore per implementare questa funzionalità.
+Nella libreria di esempio seguente viene illustrato come vengono utilizzati i parametri `ref` per i tipi di riferimento e viene illustrato un modo migliore per implementare questa funzionalità.
 
 [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]
 
@@ -86,7 +86,7 @@ Passing by return value:
 ## <a name="try-pattern-methods"></a>Metodi pattern try
 
 ### <a name="description"></a>Descrizione
-I metodi che implementano il <xref:System.Int32.TryParse%2A?displayProperty=fullName>modello **try\<some >** , ad esempio, non generano questa violazione. Nell'esempio seguente viene illustrata una struttura (tipo di valore) <xref:System.Int32.TryParse%2A?displayProperty=fullName> che implementa il metodo.
+I metodi che implementano il modello di **> try @ no__t-1Something** , ad esempio <xref:System.Int32.TryParse%2A?displayProperty=fullName>, non generano questa violazione. Nell'esempio seguente viene illustrata una struttura (tipo di valore) che implementa il metodo <xref:System.Int32.TryParse%2A?displayProperty=fullName>.
 
 ### <a name="code"></a>Codice
 [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]

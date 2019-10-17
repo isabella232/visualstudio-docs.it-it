@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc3fbeac6d01b718af2022a09bddb92e9c7c2c6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3f7e8b0021fc3c318389aa3d6d3f53391b71351f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234563"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443974"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: I nomi delle variabili non devono corrispondere ai nomi dei campi
 
@@ -30,7 +30,7 @@ ms.locfileid: "71234563"
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Category|Microsoft.Maintainability|
+|Category|Microsoft. gestibilità|
 |Modifica|Quando viene attivato in un parametro con lo stesso nome di un campo:<br /><br /> -Senza interruzioni: se il campo e il metodo che dichiara il parametro non possono essere visualizzati all'esterno dell'assembly, indipendentemente dalla modifica apportata.<br />-Overstarting: se si modifica il nome del campo e può essere visualizzato al di fuori dell'assembly.<br />-Overstarting: se si modifica il nome del parametro e il metodo che lo dichiara può essere visualizzato all'esterno dell'assembly.<br /><br /> Quando viene generato in una variabile locale con lo stesso nome di un campo:<br /><br /> -Senza interruzioni: se non è possibile visualizzare il campo all'esterno dell'assembly, indipendentemente dalla modifica apportata.<br />-Senza interruzioni: se si modifica il nome della variabile locale e non si modifica il nome del campo.<br />-Overstarting: se si modifica il nome del campo e questo può essere visualizzato al di fuori dell'assembly.|
 
 ## <a name="cause"></a>Causa
@@ -39,7 +39,7 @@ Un metodo di istanza dichiara un parametro o una variabile locale il cui nome co
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando il nome di un campo di istanza corrisponde a un parametro o a un nome di variabile locale, al campo dell'istanza `this` viene`Me` eseguito [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]l'accesso tramite la parola chiave (in) all'interno del corpo del metodo. Quando si gestisce il codice, è facile dimenticare questa differenza e si presuppone che la variabile Parameter/local faccia riferimento al campo instance, che genera errori. Questo vale soprattutto per i corpi di metodo di lunga durata.
+Quando il nome di un campo di istanza corrisponde a un parametro o a un nome di variabile locale, all'interno del corpo del metodo viene eseguito l'accesso al campo di istanza tramite la parola chiave `this` (`Me` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Quando si gestisce il codice, è facile dimenticare questa differenza e si presuppone che la variabile Parameter/local faccia riferimento al campo instance, che genera errori. Questo vale soprattutto per i corpi di metodo di lunga durata.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

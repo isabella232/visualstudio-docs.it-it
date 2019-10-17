@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 686929471ee8b6b5d1896f61bcbcd97a59135462
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2075918672452e222ba4becae915712ba20ff0d0
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234372"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440022"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Non impostare la priorità del processo su Inattivo
 
@@ -27,17 +27,17 @@ ms.locfileid: "71234372"
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Category|Microsoft.Mobility|
+|Category|Microsoft. Mobility|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
-Questa regola si verifica quando i processi sono `ProcessPriorityClass.Idle`impostati su.
+Questa regola si verifica quando i processi sono impostati su `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Descrizione della regola
-Non impostare la priorità del processo su Inattivo. I processi che `System.Diagnostics.ProcessPriorityClass.Idle` occupano la CPU quando sarebbero altrimenti inattivi e bloccano quindi la modalità standby.
+Non impostare la priorità del processo su Inattivo. I processi con `System.Diagnostics.ProcessPriorityClass.Idle` occupano la CPU quando altrimenti sarebbero inattivi e bloccano quindi la modalità standby.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Impostare i processi `ProcessPriorityClass.BelowNormal`su.
+Impostare i processi su `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 Questa regola deve essere eliminata solo quando è richiesta la priorità del processo inattivo e le considerazioni sulla mobilità possono essere ignorate in modo sicuro.

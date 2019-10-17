@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e352eea1b7fcf82cb948315affeae6e30690a4aa
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e3b3d979910883f6be9f542ec581ecbda0f91deb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234968"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444367"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Specificare StringComparison
 
@@ -31,15 +31,15 @@ ms.locfileid: "71234968"
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
-Un'operazione di confronto tra stringhe usa un overload del metodo che non <xref:System.StringComparison> imposta un parametro.
+Un'operazione di confronto tra stringhe usa un overload del metodo che non imposta un parametro <xref:System.StringComparison>.
 
 ## <a name="rule-description"></a>Descrizione della regola
-Molte operazioni di stringa, più importanti <xref:System.String.Compare%2A> dei <xref:System.String.Equals%2A> metodi e, forniscono un overload che accetta <xref:System.StringComparison> un valore di enumerazione come parametro.
+Molte operazioni di stringa, più importanti i metodi <xref:System.String.Compare%2A> e <xref:System.String.Equals%2A>, forniscono un overload che accetta un valore di enumerazione <xref:System.StringComparison> come parametro.
 
-Ogni volta che è presente un overload <xref:System.StringComparison> che accetta un parametro, deve essere usato anziché un overload che non accetta questo parametro. Impostando in modo esplicito questo parametro, il codice viene spesso reso più chiaro e facile da gestire.
+Quando esiste un overload che accetta un parametro <xref:System.StringComparison>, deve essere usato al posto di un overload che non accetta questo parametro. Impostando in modo esplicito questo parametro, il codice viene spesso reso più chiaro e facile da gestire.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Per correggere una violazione di questa regola, modificare i metodi di confronto tra stringhe in overload che accettano <xref:System.StringComparison> l'enumerazione come parametro. Ad esempio: modificare `String.Compare(str1, str2)` in `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Per correggere una violazione di questa regola, modificare i metodi di confronto tra stringhe in overload che accettano l'enumerazione <xref:System.StringComparison> come parametro. Ad esempio: sostituire `String.Compare(str1, str2)` con `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 È possibile eliminare un avviso da questa regola quando la libreria o l'applicazione è destinata a un gruppo di destinatari locale limitato e pertanto non verrà localizzata.
@@ -47,4 +47,4 @@ Per correggere una violazione di questa regola, modificare i metodi di confronto
 ## <a name="see-also"></a>Vedere anche
 
 - [Avvisi di globalizzazione](../code-quality/globalization-warnings.md)
-- [CA1309: USA StringComparison ordinale](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+- [CA1309: Usare StringComparison ordinale](../code-quality/ca1309-use-ordinal-stringcomparison.md)

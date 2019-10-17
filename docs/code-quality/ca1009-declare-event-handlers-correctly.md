@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a7a91388c6f75043c92a053da3f5a8fb22ae82b9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236482"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446875"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Dichiarare correttamente i gestori eventi
 
@@ -31,7 +31,7 @@ ms.locfileid: "71236482"
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -40,7 +40,7 @@ Un delegato che gestisce un evento pubblico o protetto non ha la firma, il tipo 
 ## <a name="rule-description"></a>Descrizione della regola
 I metodi di gestione eventi accettano due parametri. Il primo è di tipo <xref:System.Object?displayProperty=fullName> ed è denominato ' sender '. Corrisponde all'oggetto che ha generato l'evento. Il secondo parametro è di tipo <xref:System.EventArgs?displayProperty=fullName> ed è denominato ' è. Questi sono i dati associati all'evento. Se, ad esempio, l'evento viene generato ogni volta che un file viene aperto, i dati dell'evento contengono in genere il nome del file.
 
-I metodi del gestore eventi non devono restituire un valore. Nel linguaggio C# di programmazione, questo è indicato dal tipo `void`restituito. Un gestore eventi può richiamare più metodi in più oggetti. Se i metodi possono restituire un valore, si verificheranno più valori restituiti per ogni evento e sarà disponibile solo il valore dell'ultimo metodo richiamato.
+I metodi del gestore eventi non devono restituire un valore. Nel linguaggio C# di programmazione, questo è indicato dal tipo restituito `void`. Un gestore eventi può richiamare più metodi in più oggetti. Se i metodi possono restituire un valore, si verificheranno più valori restituiti per ogni evento e sarà disponibile solo il valore dell'ultimo metodo richiamato.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola, correggere la firma, il tipo restituito o i nomi dei parametri del delegato. Per informazioni dettagliate, vedere l'esempio seguente.
@@ -49,14 +49,14 @@ Per correggere una violazione di questa regola, correggere la firma, il tipo res
 Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato un delegato adatto per la gestione di eventi. I metodi che possono essere richiamati da questo gestore eventi sono conformi alla firma specificata nelle linee guida di progettazione. `AlarmEventHandler`nome del tipo del delegato. `AlarmEventArgs`deriva dalla classe di base per i dati dell'evento <xref:System.EventArgs>, e include i dati degli eventi di avviso.
+Nell'esempio seguente viene illustrato un delegato adatto per la gestione di eventi. I metodi che possono essere richiamati da questo gestore eventi sono conformi alla firma specificata nelle linee guida di progettazione. `AlarmEventHandler` è il nome del tipo del delegato. `AlarmEventArgs` deriva dalla classe di base per i dati dell'evento, <xref:System.EventArgs> e include i dati degli eventi di avviso.
 
 [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
 [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
 [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA2109 Esaminare i gestori eventi visibili](../code-quality/ca2109-review-visible-event-handlers.md)
+[CA2109: Controllare i gestori di eventi visibili](../code-quality/ca2109.md)
 
 ## <a name="see-also"></a>Vedere anche
 

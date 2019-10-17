@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79585cd9cae31f46a9506085c9c8faf5b5844d44
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 865ed4feb0e95d7fbe1f2d7894a1c6bb3bcb8c6f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234084"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439245"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Le enumerazioni con Flags devono avere nomi plurali
 
@@ -27,24 +27,24 @@ ms.locfileid: "71234084"
 |-|-|
 |TypeName|FlagsEnumsShouldHavePluralNames|
 |CheckId|CA1714|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un'enumerazione ha e <xref:System.FlagsAttribute?displayProperty=fullName> il nome non termina con ' s'.
+Un'enumerazione ha <xref:System.FlagsAttribute?displayProperty=fullName> e il nome non termina con ' s'.
 
 Per impostazione predefinita, questa regola esamina solo le enumerazioni visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-I tipi contrassegnati con <xref:System.FlagsAttribute> hanno nomi plurali perché l'attributo indica che è possibile specificare più di un valore. Ad esempio, un'enumerazione che definisce i giorni della settimana può essere usata in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione deve avere <xref:System.FlagsAttribute> e potrebbe essere chiamata ' Days '. Un'enumerazione simile che consente di specificare solo un singolo giorno non avrà l'attributo e potrebbe essere chiamata ' Day '.
+I tipi contrassegnati con <xref:System.FlagsAttribute> hanno nomi plurali perché l'attributo indica che è possibile specificare più di un valore. Ad esempio, un'enumerazione che definisce i giorni della settimana può essere usata in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione deve avere il <xref:System.FlagsAttribute> e potrebbe essere denominata ' Days '. Un'enumerazione simile che consente di specificare solo un singolo giorno non avrà l'attributo e potrebbe essere chiamata ' Day '.
 
 Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Rendere il nome dell'enumerazione una parola plurale oppure rimuovere l' <xref:System.FlagsAttribute> attributo se non devono essere specificati contemporaneamente più valori di enumerazione.
+Rendere il nome dell'enumerazione una parola plurale oppure rimuovere l'attributo <xref:System.FlagsAttribute> se non devono essere specificati contemporaneamente più valori di enumerazione.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -63,7 +63,7 @@ dotnet_code_quality.ca1714.api_surface = private, internal
 ## <a name="related-rules"></a>Regole correlate
 
 - [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217 Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Vedere anche
 

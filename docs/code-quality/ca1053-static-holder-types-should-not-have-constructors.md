@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44bdb8c12b48a983b88e6a035fc1522856b306be
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f63a5017b5bd3b552882a11d9796af2530dd5634
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235578"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449120"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: I tipi di segnaposto statici non devono avere costruttori predefiniti
+# <a name="ca1053-static-holder-types-should-not-have-default-constructors"></a>CA1053: i tipi di segnaposto statici non devono avere costruttori predefiniti
 
 |||
 |-|-|
 |TypeName|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 > [!NOTE]
-> La regola CA1053 è combinata [in CA1052: I tipi di segnaposto statici](ca1052-static-holder-types-should-be-sealed.md) devono essere sealed negli [analizzatori FxCop](fxcop-analyzers.yml).
+> La regola CA1053 è combinata in [CA1052: i tipi di segnaposto statici devono essere sealed](ca1052-static-holder-types-should-be-sealed.md) negli [analizzatori FxCop](fxcop-analyzers.yml).
 
 ## <a name="cause"></a>Causa
 

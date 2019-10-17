@@ -1,5 +1,5 @@
 ---
-title: "CA1028: Le risorse di archiviazione dell'enumerazione devono essere Int32"
+title: "CA1028: L'archivio di enum deve essere Int32"
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,35 +17,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a934a6e35296927eea64465ff8e7007219bec5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0ece210d20a675cf2f55b5b619a1c1b526638582
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236089"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449237"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: Le risorse di archiviazione dell'enumerazione devono essere Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: L'archivio di enum deve essere Int32
 
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Il tipo sottostante di un'enumerazione non <xref:System.Int32?displayProperty=fullName>è.
+Il tipo sottostante di un'enumerazione non è <xref:System.Int32?displayProperty=fullName>.
 
 Per impostazione predefinita, questa regola esamina solo le enumerazioni pubbliche, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Per impostazione predefinita, <xref:System.Int32?displayProperty=fullName> il tipo di dati viene utilizzato per archiviare il valore costante. Anche se è possibile modificare questo tipo sottostante, non è necessario o consigliato per la maggior parte degli scenari. Non è possibile ottenere un miglioramento significativo delle prestazioni utilizzando un tipo <xref:System.Int32>di dati inferiore a. Se non è possibile utilizzare il tipo di dati predefinito, è necessario utilizzare uno dei tipi integrali conformi a CLS (Common Language System <xref:System.Byte>) <xref:System.Int16>, <xref:System.Int32>,, <xref:System.Int64> o per assicurarsi che tutti i valori dell'enumerazione possano essere rappresentati in Linguaggi di programmazione conformi a CLS.
+Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Per impostazione predefinita, viene usato il tipo di dati <xref:System.Int32?displayProperty=fullName> per archiviare il valore costante. Anche se è possibile modificare questo tipo sottostante, non è necessario o consigliato per la maggior parte degli scenari. Non è possibile ottenere un miglioramento significativo delle prestazioni utilizzando un tipo di dati inferiore a <xref:System.Int32>. Se non è possibile utilizzare il tipo di dati predefinito, è necessario utilizzare uno dei tipi integrali conformi a CLS (Common Language System), <xref:System.Byte>, <xref:System.Int16>, <xref:System.Int32> o <xref:System.Int64> per assicurarsi che tutti i valori dell'enumerazione possano essere rappresentati nella programmazione conforme a CLS Lingue.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, a meno che non esistano problemi di dimensione <xref:System.Int32>o compatibilità, usare. Per le situazioni <xref:System.Int32> in cui non è sufficiente conservare i valori, usare <xref:System.Int64>. Se la compatibilità con le versioni precedenti richiede un tipo <xref:System.Byte> di <xref:System.Int16>dati più piccolo, utilizzare o.
+Per correggere una violazione di questa regola, a meno che non esistano problemi di dimensione o compatibilità, usare <xref:System.Int32>. Per le situazioni in cui <xref:System.Int32> non è sufficiente per mantenere i valori, usare <xref:System.Int64>. Se la compatibilità con le versioni precedenti richiede un tipo di dati più piccolo, utilizzare <xref:System.Byte> o <xref:System.Int16>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -70,18 +70,18 @@ Nell'esempio seguente vengono illustrate due enumerazioni che non utilizzano il 
 
 ## <a name="example-of-how-to-fix"></a>Esempio di correzione
 
-Nell'esempio seguente viene corretta la violazione precedente modificando il tipo di dati <xref:System.Int32>sottostante in.
+Nell'esempio seguente viene corretta la violazione precedente modificando il tipo di dati sottostante in <xref:System.Int32>.
 
 [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
 [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1008 Le enumerazioni devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1008: Gli enum devono avere valore zero](../code-quality/ca1008-enums-should-have-zero-value.md)
 - [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217 Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700 Non denominare i valori enum ' Reserved '](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712 Non anteporre i valori enum al nome del tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217.md)
+- [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Non usare nomi di tipo come prefisso nei valori di enumerazione](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Vedere anche
 

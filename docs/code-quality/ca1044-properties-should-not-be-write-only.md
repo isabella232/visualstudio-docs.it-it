@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fb424627d88ede6c0677b8c45de4aab487ae498
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6a3eb46adbf0eabc18adb423209c09b6e1a63c18
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235812"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449206"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Le proprietà non devono essere in sola scrittura
 
@@ -30,7 +30,7 @@ ms.locfileid: "71235812"
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -63,7 +63,7 @@ dotnet_code_quality.ca1044.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio `BadClassWithWriteOnlyProperty` seguente è un tipo con una proprietà di sola scrittura. `GoodClassWithReadWriteProperty`contiene il codice corretto.
+Nell'esempio seguente `BadClassWithWriteOnlyProperty` è un tipo con una proprietà di sola scrittura. `GoodClassWithReadWriteProperty` contiene il codice corretto.
 
 [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)]
 [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]

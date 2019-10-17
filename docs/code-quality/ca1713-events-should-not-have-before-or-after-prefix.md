@@ -1,5 +1,5 @@
 ---
-title: 'CA1713: Non usare il prefisso Before o After negli eventi'
+title: 'CA1713: Non utilizzare il prefisso Before o After negli eventi'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 834c0f73a1fdc26f06c62e1c6e3a2d19372a244d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 10935907423f97cf50645512fdea2a91a10c6447
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234107"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443950"
 ---
-# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Non usare il prefisso Before o After negli eventi
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Non utilizzare il prefisso Before o After negli eventi
 
 |||
 |-|-|
 |TypeName|EventsShouldNotHaveBeforeOrAfterPrefix|
 |CheckId|CA1713|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa

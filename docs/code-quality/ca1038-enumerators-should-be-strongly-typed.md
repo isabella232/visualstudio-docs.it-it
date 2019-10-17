@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56c2281f76b9064427d1d651523b9cda441eb029
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 22d3ebbbce2a2495e32e55dca85f9db35b09a06d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236008"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449243"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Gli enumeratori devono essere fortemente tipizzati
 
@@ -27,11 +27,11 @@ ms.locfileid: "71236008"
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|
 |CheckId|CA1038|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
-Un tipo pubblico o protetto implementa <xref:System.Collections.IEnumerator?displayProperty=fullName> ma non fornisce una versione fortemente tipizzata <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> della proprietà. I tipi derivati dai seguenti tipi sono esenti da questa regola:
+Un tipo pubblico o protetto implementa <xref:System.Collections.IEnumerator?displayProperty=fullName> ma non fornisce una versione fortemente tipizzata della proprietà <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName>. I tipi derivati dai seguenti tipi sono esenti da questa regola:
 
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
@@ -40,10 +40,10 @@ Un tipo pubblico o protetto implementa <xref:System.Collections.IEnumerator?disp
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrizione della regola
-Questa regola richiede <xref:System.Collections.IEnumerator> che le implementazioni forniscano anche una versione fortemente tipizzata <xref:System.Collections.IEnumerator.Current%2A> della proprietà, in modo che gli utenti non debbano eseguire il cast del valore restituito al tipo sicuro quando usano la funzionalità fornita dall'interfaccia. Questa regola presuppone che il tipo che implementa <xref:System.Collections.IEnumerator> contenga una raccolta di istanze di un tipo maggiore di <xref:System.Object>.
+Questa regola richiede che le implementazioni di <xref:System.Collections.IEnumerator> forniscano anche una versione fortemente tipizzata della proprietà <xref:System.Collections.IEnumerator.Current%2A>, in modo che gli utenti non debbano eseguire il cast del valore restituito al tipo sicuro quando usano la funzionalità fornita dall'interfaccia. Questa regola presuppone che il tipo che implementa <xref:System.Collections.IEnumerator> contenga una raccolta di istanze di un tipo più forte di <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Per correggere una violazione di questa regola, implementare in modo esplicito la proprietà dell'interfaccia ( `IEnumerator.Current`dichiararla come). Aggiungere una versione fortemente tipizzata pubblica della proprietà, dichiarata come e fare in `Current`modo che restituisca un oggetto fortemente tipizzato.
+Per correggere una violazione di questa regola, implementare in modo esplicito la proprietà dell'interfaccia (dichiararla come `IEnumerator.Current`). Aggiungere una versione fortemente tipizzata pubblica della proprietà, dichiarata come `Current` e fare in modo che restituisca un oggetto fortemente tipizzato.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 Eliminare un avviso da questa regola quando si implementa un enumeratore basato su oggetti da usare con una raccolta basata su oggetti, ad esempio un albero binario. I tipi che estendono la nuova raccolta definiranno l'enumeratore fortemente tipizzato ed esporrà la proprietà fortemente tipizzata.

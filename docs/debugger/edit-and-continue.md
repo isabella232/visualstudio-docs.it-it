@@ -21,23 +21,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008dde8239c2b4b70220159275b12066b8cf70bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f11a170878e3efefc123ad7d61d0889f5bd95c12
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851067"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435734"
 ---
-# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modificare il codice e continuare a debug in Visual Studio (c#, VB, C++)
-Modifica e continuazione è una funzionalità che consente di ridurre i tempi necessari per il debug poiché permette di apportare modifiche al codice sorgente mentre il programma è in modalità di interruzione. Quando si riprende l'esecuzione del programma scegliendo un comando quale **continuazione** oppure **passaggio**, modifica e continuazione automaticamente applica le modifiche al codice con alcune limitazioni. In questo modo è possibile modificare il codice durante una sessione di debug anziché dover terminare la sessione corrente, ricompilare l'intero programma e riavviare la sessione di debug.
+# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modificare il codice e continuare a eseguire il debugC#in Visual Studio C++(, VB,)
+Modifica e continuazione è una funzionalità che consente di ridurre i tempi necessari per il debug poiché permette di apportare modifiche al codice sorgente mentre il programma è in modalità di interruzione. Quando si riprende l'esecuzione del programma scegliendo un comando di esecuzione, ad esempio **continua** o **passaggio**, modifica e continuazione applica automaticamente le modifiche del codice con alcune limitazioni. In questo modo è possibile modificare il codice durante una sessione di debug anziché dover terminare la sessione corrente, ricompilare l'intero programma e riavviare la sessione di debug.
 
  Questa sezione presenta i seguenti argomenti:
 
  [Procedura: Abilitare e disabilitare Modifica e continuazione](../debugger/how-to-enable-and-disable-edit-and-continue.md)
 
- [Procedura: Arrestare le modifiche al codice](../debugger/how-to-stop-code-changes.md)
+ [Procedura: Interrompere le modifiche al codice](../debugger/how-to-stop-code-changes.md)
 
- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+ [Modifica e continuazioneC++()](../debugger/edit-and-continue-visual-cpp.md)
 
  [Modifica e continuazione (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 

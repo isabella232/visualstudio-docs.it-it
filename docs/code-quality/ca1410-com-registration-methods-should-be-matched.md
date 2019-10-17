@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c7c7c20ece08bc5167887727e423a3f7cdf7ee19
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234740"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440199"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: I metodi di registrazione COM devono corrispondere
 
@@ -35,11 +35,11 @@ ms.locfileid: "71234740"
 
 ## <a name="cause"></a>Causa
 
-Un tipo dichiara un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attributo, ma non dichiara un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attributo o viceversa.
+Un tipo dichiara un metodo contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>, ma non dichiara un metodo contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> o viceversa.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Per i client Component Object Model (COM) per la creazione di un tipo .NET, il tipo deve essere prima registrato. Se disponibile, un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attributo viene chiamato durante il processo di registrazione per eseguire il codice specificato dall'utente. Un metodo corrispondente contrassegnato con l' <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> attributo viene chiamato durante il processo di annullamento della registrazione per invertire le operazioni del metodo di registrazione.
+Per i client Component Object Model (COM) per la creazione di un tipo .NET, il tipo deve essere prima registrato. Se è disponibile, durante il processo di registrazione viene chiamato un metodo contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> per eseguire il codice specificato dall'utente. Un metodo corrispondente contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> viene chiamato durante il processo di annullamento della registrazione per invertire le operazioni del metodo di registrazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

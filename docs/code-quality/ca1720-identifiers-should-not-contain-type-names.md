@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 64fd1aee2a778c72a81f82a0d435ce37d408c9a5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233891"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443795"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 
@@ -27,14 +27,14 @@ ms.locfileid: "71233891"
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
 Il nome di un parametro in un membro contiene un nome di tipo di dati.
 
--oppure-
+oppure
 
 Il nome di un membro contiene un nome di tipo di dati specifico del linguaggio.
 
@@ -42,7 +42,7 @@ Per impostazione predefinita, questa regola esamina solo i membri visibili ester
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-I nomi di parametri e membri sono più utilizzati per comunicare il significato rispetto alla descrizione del tipo, che dovrebbe essere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario usare un nome di tipo di dati, usare un nome indipendente dal linguaggio anziché un nome specifico della lingua. Ad esempio, anziché il C# nome `int`del tipo, utilizzare il nome del tipo di `Int32`dati indipendente dal linguaggio.
+I nomi di parametri e membri sono più utilizzati per comunicare il significato rispetto alla descrizione del tipo, che dovrebbe essere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario usare un nome di tipo di dati, usare un nome indipendente dal linguaggio anziché un nome specifico della lingua. Ad esempio, anziché il C# nome del tipo `int`, utilizzare il nome del tipo di dati indipendente dal linguaggio `Int32`.
 
 Ogni token discreto nel nome del parametro o del membro viene verificato rispetto ai nomi dei tipi di dati specifici del linguaggio seguenti in modo non sensibile alla distinzione tra maiuscole e minuscole:
 
@@ -66,8 +66,8 @@ Ogni token discreto nel nome del parametro o del membro viene verificato rispett
 
 Inoltre, i nomi di un parametro vengono controllati in base ai nomi dei tipi di dati indipendenti dal linguaggio seguenti senza distinzione tra maiuscole e minuscole:
 
-- Object
-- obj
+- Oggetto
+- Obj
 - Booleano
 - Char
 - Stringa
@@ -117,7 +117,7 @@ dotnet_code_quality.ca1720.api_surface = private, internal
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 - [CA1707: Gli identificatori non devono contenere caratteri di sottolineatura](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719 I nomi dei parametri non devono corrispondere ai nomi dei membri](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1719: I nomi dei parametri non devono corrispondere ai nomi dei membri](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

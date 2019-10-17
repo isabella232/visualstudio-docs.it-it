@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e784627f0c9c6aa865d53db49d6ea43c4e49d0eb
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305784"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449053"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola FxCop
 
@@ -67,10 +67,10 @@ ID regola | Titolo
 [CA1063](ca1063-implement-idisposable-correctly.md) | Implementare IDisposable correttamente
 [CA1064](ca1064-exceptions-should-be-public.md) | Le eccezioni devono essere pubbliche
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Non generare eccezioni in posizioni non previste
-CA1066 | Il tipo {0} deve implementare IEquatable @ no__t-1T > perché esegue l'override di Equals
+Ca1066 | Il tipo {0} deve implementare IEquatable @ no__t-1T > perché esegue l'override di Equals
 CA1067 | Eseguire l'override di Object. Equals (Object) quando si implementa IEquatable @ no__t-0T >
 [CA1068](ca1068.md) | I parametri CancellationToken devono essere indicati per ultimi
-CA1200 | Evitare l'uso di tag cref con un prefisso
+Ca1200 | Evitare l'uso di tag cref con un prefisso
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Non passare valori letterali come parametri localizzati
 [CA1304](ca1304-specify-cultureinfo.md) | Specificare CultureInfo
 [CA1305](ca1305-specify-iformatprovider.md) | Specificare IFormatProvider
@@ -82,9 +82,9 @@ CA1200 | Evitare l'uso di tag cref con un prefisso
 [CA1502](ca1502-avoid-excessive-complexity.md) | Evitare complessità eccessiva
 [CA1505](ca1505-avoid-unmaintainable-code.md) | Evitare codice non gestibile
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | Evitare un numero eccessivo di accoppiamenti tra classi
-[CA1507](ca1507.md) | Usare NameOf per esprimere i nomi dei simboli
-CA1508 | Evitare codice condizionale non attivo
-CA1509 | Voce non valida nel file di specifica della regola della metrica del codice
+[Ca1507](ca1507.md) | Usare NameOf per esprimere i nomi dei simboli
+Ca1508 | Evitare codice condizionale non attivo
+Ca1509 | Voce non valida nel file di specifica della regola della metrica del codice
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | Gli identificatori non devono contenere caratteri di sottolineatura
 [CA1708](ca1708-identifiers-should-differ-by-more-than-case.md) | Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole
 [CA1710](ca1710-identifiers-should-have-correct-suffix.md) | Gli identificatori devono contenere il suffisso corretto
@@ -113,43 +113,43 @@ CA1509 | Voce non valida nel file di specifica della regola della metrica del co
 [CA1822](ca1822.md) | Contrassegna i membri come statici
 [CA1823](ca1823.md) | Evitare campi privati non usati
 [CA1824](ca1824.md) | Contrassegnare gli assembly con NeutralResourcesLanguageAttribute
-CA1825 | Evitare allocazioni di matrici di lunghezza zero.
-CA1826 | Non usare metodi enumerabili sulle raccolte indicizzabili. Usare invece direttamente la raccolta
-[CA2000](ca2000-dispose-objects-before-losing-scope.md) | Eliminare gli oggetti prima che siano esterni all'ambito
-[CA2002](ca2002-do-not-lock-on-objects-with-weak-identity.md) | Non bloccare oggetti con identità debole
-[CA2007](ca2007-do-not-directly-await-task.md) | Prendere in considerazione la chiamata a ConfigureAwait sull'attività attesa
-CA2008 | Non creare attività senza passare un oggetto TaskScheduler
-CA2009 | Non chiamare ToImmutableCollection su un valore non modificabile
+Ca1825 | Evitare allocazioni di matrici di lunghezza zero.
+Ca1826 | Non usare metodi enumerabili sulle raccolte indicizzabili. Usare invece direttamente la raccolta
+[CA2000](ca2000.md) | Eliminare gli oggetti prima che siano esterni all'ambito
+[CA2002](ca2002.md) | Non bloccare oggetti con identità debole
+[Ca2007](ca2007.md) | Prendere in considerazione la chiamata a ConfigureAwait sull'attività attesa
+Ca2008 | Non creare attività senza passare un oggetto TaskScheduler
+Ca2009 | Non chiamare ToImmutableCollection su un valore non modificabile
 CA2010 | Utilizzare sempre il valore restituito dai metodi contrassegnati con PreserveSigAttribute
-[CA2100](ca2100-review-sql-queries-for-security-vulnerabilities.md) | Controllare la vulnerabilità della sicurezza nelle query SQL
-[CA2101](ca2101-specify-marshaling-for-p-invoke-string-arguments.md) | Specificare il marshalling per gli argomenti di stringa P/Invoke
-[CA2119](ca2119-seal-methods-that-satisfy-private-interfaces.md) | Impostare come sealed i metodi che soddisfano interfacce private
-[CA2153](ca2153-avoid-handling-corrupted-state-exceptions.md) | Non intercettare le eccezioni di stato danneggiate
-[CA2200](ca2200-rethrow-to-preserve-stack-details.md) | Rethrow per conservare i dettagli dello stack.
-[CA2201](ca2201-do-not-raise-reserved-exception-types.md) | Non generare tipi di eccezione riservati
-[CA2207](ca2207-initialize-value-type-static-fields-inline.md) | Inizializzare i campi statici dei tipi di valore inline
-[CA2208](ca2208-instantiate-argument-exceptions-correctly.md) | Creare istanze di eccezioni di argomento correttamente
-[CA2211](ca2211-non-constant-fields-should-not-be-visible.md) | I campi non costanti non devono essere visibili
-[CA2213](ca2213-disposable-fields-should-be-disposed.md) | I campi eliminabili devono essere eliminati
-[CA2214](ca2214-do-not-call-overridable-methods-in-constructors.md) | Non chiamare metodi sottoponibili a override nei costruttori
-[CA2216](ca2216-disposable-types-should-declare-finalizer.md) | I tipi eliminabili devono dichiarare un finalizzatore
-[CA2217](ca2217-do-not-mark-enums-with-flagsattribute.md) | Non contrassegnare le enumerazioni con FlagsAttribute
-[CA2218](ca2218-override-gethashcode-on-overriding-equals.md) | Eseguire l'override di GetHashCode all'override di Equals
-[CA2219](ca2219-do-not-raise-exceptions-in-exception-clauses.md) | Non generare eccezioni nelle clausole finally
-[CA2224](ca2224-override-equals-on-overloading-operator-equals.md) | Esegue l'override di Equals in un operatore di overload uguale a
-[CA2225](ca2225-operator-overloads-have-named-alternates.md) | Gli overload degli operatori hanno alternative con nome
-[CA2226](ca2226-operators-should-have-symmetrical-overloads.md) | Gli operatori devono avere overload simmetrici
-[CA2227](ca2227-collection-properties-should-be-read-only.md) | Le proprietà di raccolte devono essere in sola lettura
-[CA2229](ca2229-implement-serialization-constructors.md) | Implementare costruttori di serializzazione
-[CA2231](ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | L'operatore di overload è uguale al tipo di valore uguale a
-[CA2234](ca2234-pass-system-uri-objects-instead-of-strings.md) | Passa oggetti URI di sistema anziché stringhe
-[CA2235](ca2235-mark-all-non-serializable-fields.md) | Contrassegnare tutti i campi non serializzabili
-[CA2237](ca2237-mark-iserializable-types-with-serializableattribute.md) | Contrassegnare i tipi ISerializable con Serializable
-[CA2241](ca2241-provide-correct-arguments-to-formatting-methods.md) | Specificare argomenti corretti ai metodi di formattazione
-[CA2242](ca2242-test-for-nan-correctly.md) | Testare i valori NaN in modo corretto
-[CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | I valori letterali stringa di attributo devono essere analizzati correttamente
+[CA2100](ca2100.md) | Controllare la vulnerabilità della sicurezza nelle query SQL
+[CA2101](ca2101.md) | Specificare il marshalling per gli argomenti di stringa P/Invoke
+[CA2119](ca2119.md) | Impostare come sealed i metodi che soddisfano interfacce private
+[CA2153](ca2153.md) | Non intercettare le eccezioni di stato danneggiate
+[CA2200](ca2200.md) | Rethrow per conservare i dettagli dello stack.
+[CA2201](ca2201.md) | Non generare tipi di eccezione riservati
+[CA2207](ca2207.md) | Inizializzare i campi statici dei tipi di valore inline
+[CA2208](ca2208.md) | Creare istanze di eccezioni di argomento correttamente
+[CA2211](ca2211.md) | I campi non costanti non devono essere visibili
+[CA2213](ca2213.md) | I campi eliminabili devono essere eliminati
+[CA2214](ca2214.md) | Non chiamare metodi sottoponibili a override nei costruttori
+[CA2216](ca2216.md) | I tipi eliminabili devono dichiarare un finalizzatore
+[CA2217](ca2217.md) | Non contrassegnare le enumerazioni con FlagsAttribute
+[CA2218](ca2218.md) | Eseguire l'override di GetHashCode all'override di Equals
+[CA2219](ca2219.md) | Non generare eccezioni nelle clausole finally
+[CA2224](ca2224.md) | Esegue l'override di Equals in un operatore di overload uguale a
+[CA2225](ca2225.md) | Gli overload degli operatori hanno alternative con nome
+[CA2226](ca2226.md) | Gli operatori devono avere overload simmetrici
+[CA2227](ca2227.md) | Le proprietà di raccolte devono essere in sola lettura
+[CA2229](ca2229.md) | Implementare costruttori di serializzazione
+[CA2231](ca2231.md) | L'operatore di overload è uguale al tipo di valore uguale a
+[CA2234](ca2234.md) | Passa oggetti URI di sistema anziché stringhe
+[CA2235](ca2235.md) | Contrassegnare tutti i campi non serializzabili
+[CA2237](ca2237.md) | Contrassegnare i tipi ISerializable con Serializable
+[CA2241](ca2241.md) | Specificare argomenti corretti ai metodi di formattazione
+[CA2242](ca2242.md) | Testare i valori NaN in modo corretto
+[CA2243](ca2243.md) | I valori letterali stringa di attributo devono essere analizzati correttamente
 CA2244 | Non duplicare le inizializzazioni di elementi indicizzati
-[CA2300](ca2300.md) | Non usare il deserializzatore non sicuro BinaryFormatter
+[Ca2300](ca2300.md) | Non usare il deserializzatore non sicuro BinaryFormatter
 [CA2301](ca2301.md) | Non chiamare BinaryFormatter.Deserialize senza aver prima impostato BinaryFormatter.Binder
 [CA2302](ca2302.md) | Assicurarsi che BinaryFormatter.Binder sia impostato prima di chiamare BinaryFormatter.Deserialize
 [CA2305](ca2305.md) | Non usare il deserializzatore non sicuro LosFormatter
@@ -161,8 +161,8 @@ CA2244 | Non duplicare le inizializzazioni di elementi indicizzati
 [CA2322](ca2322.md) | Verificare che l'oggetto JavaScriptSerializer non sia inizializzato con SimpleTypeResolver prima di eseguire la deserializzazione
 [CA3001](ca3001.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo SQL injection
 [CA3002](ca3002.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo XSS
-[CA3003](ca3003.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection
-[CA3004](ca3004.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo diffusione di informazioni
+[Ca3003](ca3003.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection
+[Ca3004](ca3004.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo diffusione di informazioni
 [CA3005](ca3005.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo LDAP injection
 [CA3006](ca3006.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo process command injection
 [CA3007](ca3007.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo reindirizzamento aperto
@@ -172,12 +172,12 @@ CA2244 | Non duplicare le inizializzazioni di elementi indicizzati
 [CA3011](ca3011.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo DLL injection
 [CA3012](ca3012.md) | Esaminare il codice per verificare la presenza di vulnerabilità di tipo regex injection
 CA3061 | Non aggiungere lo schema in base all'URL
-[CA3075](ca3075-insecure-dtd-processing.md) | Elaborazione DTD non sicura nel codice XML
-[CA3076](ca3076-insecure-xslt-script-execution.md) | Elaborazione di script XSLT non protetta.
-[CA3077](ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md) | Elaborazione non sicura in progettazione API, XmlDocument e XmlTextReader
-[CA3147](ca3147-mark-verb-handlers-with-validateantiforgerytoken.md) | Contrassegnare i gestori dei verbi con il token antifalsificazione Validate
-[CA5350](ca5350-do-not-use-weak-cryptographic-algorithms.md) | Non usare algoritmi di crittografia vulnerabili
-[CA5351](ca5351-do-not-use-broken-cryptographic-algorithms.md) | Non usare algoritmi di crittografia interrotti
+[CA3075](ca3075.md) | Elaborazione DTD non sicura nel codice XML
+[CA3076](ca3076.md) | Elaborazione di script XSLT non protetta.
+[CA3077](ca3077.md) | Elaborazione non sicura in progettazione API, XmlDocument e XmlTextReader
+[CA3147](ca3147.md) | Contrassegnare i gestori dei verbi con il token antifalsificazione Validate
+[CA5350](ca5350.md) | Non usare algoritmi di crittografia vulnerabili
+[CA5351:](ca5351.md) | Non usare algoritmi di crittografia interrotti
 CA5358 | Non usare modalità di crittografia non sicure
 CA5359 | Non disabilitare la convalida del certificato
 CA5360 | Non chiamare metodi pericolosi nella deserializzazione
@@ -200,11 +200,11 @@ CA5376 | Usare SharedAccessProtocol HttpsOnly
 CA5377 | Usare i criteri di accesso a livello di contenitore
 CA5378 | Non disabilitare ServicePointManagerSecurityProtocols
 CA5379 | Non usare l'algoritmo della funzione di derivazione della chiave debole
-CA9999 | Versione analizzatore non corrispondente
+Ca9999 | Versione analizzatore non corrispondente
 
 ## <a name="unported-rules"></a>Regole non portate
 
-Il set di regole che non sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md) è costituito da regole che ancora [non sono ancora state trasferite](#rules-that-may-be-ported) e da quelle deprecate e [non verranno trasferite](#deprecated-rules).
+Il set di regole che non sono state trasferite agli [analizzatori FxCop](install-fxcop-analyzers.md) è costituito da regole che ancora non sono ancora state [trasferite](#rules-that-may-be-ported)e da quelle deprecate e [non verranno trasferite](#deprecated-rules).
 
 ### <a name="rules-that-may-be-ported"></a>Regole che possono essere trasferite
 
@@ -254,20 +254,20 @@ ID regola | Problema di rilevamento
 [CA1726](ca1726-use-preferred-terms.md) | [https://github.com/dotnet/roslyn-analyzers/issues/458](https://github.com/dotnet/roslyn-analyzers/issues/458)
 [CA1804](ca1804.md) | [https://github.com/dotnet/roslyn-analyzers/issues/461](https://github.com/dotnet/roslyn-analyzers/issues/461)
 [CA1811](ca1811.md) | [https://github.com/dotnet/roslyn-analyzers/issues/464](https://github.com/dotnet/roslyn-analyzers/issues/464)
-[CA1900](ca1900-value-type-fields-should-be-portable.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
-[CA2001](ca2001-avoid-calling-problematic-methods.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
-[CA2004](ca2004-remove-calls-to-gc-keepalive.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
-[CA2006](ca2006-use-safehandle-to-encapsulate-native-resources.md) | [https://github.com/dotnet/roslyn-analyzers/issues/480](https://github.com/dotnet/roslyn-analyzers/issues/480)
-[CA2109](ca2109-review-visible-event-handlers.md) | [https://github.com/dotnet/roslyn-analyzers/issues/488](https://github.com/dotnet/roslyn-analyzers/issues/488)
-[CA2204](ca2204-literals-should-be-spelled-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
-[CA2205](ca2205-use-managed-equivalents-of-win32-api.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
-[CA2212](ca2212-do-not-mark-serviced-components-with-webmethod.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
-[CA2215](ca2215-dispose-methods-should-call-base-class-dispose.md) | [https://github.com/dotnet/roslyn-analyzers/issues/535](https://github.com/dotnet/roslyn-analyzers/issues/535)
-[CA2232](ca2232-mark-windows-forms-entry-points-with-stathread.md) | [https://github.com/dotnet/roslyn-analyzers/issues/545](https://github.com/dotnet/roslyn-analyzers/issues/545)
-[CA2236](ca2236-call-base-class-methods-on-iserializable-types.md) | [https://github.com/dotnet/roslyn-analyzers/issues/548](https://github.com/dotnet/roslyn-analyzers/issues/548)
-[CA2238](ca2238-implement-serialization-methods-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/549](https://github.com/dotnet/roslyn-analyzers/issues/549)
-[CA2239](ca2239-provide-deserialization-methods-for-optional-fields.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
-[CA2240](ca2240-implement-iserializable-correctly.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
+[CA1900](ca1900.md) | [https://github.com/dotnet/roslyn-analyzers/issues/474](https://github.com/dotnet/roslyn-analyzers/issues/474)
+[CA2001](ca2001.md) | [https://github.com/dotnet/roslyn-analyzers/issues/477](https://github.com/dotnet/roslyn-analyzers/issues/477)
+[CA2004](ca2004.md) | [https://github.com/dotnet/roslyn-analyzers/issues/479](https://github.com/dotnet/roslyn-analyzers/issues/479)
+[CA2006](ca2006.md) | [https://github.com/dotnet/roslyn-analyzers/issues/480](https://github.com/dotnet/roslyn-analyzers/issues/480)
+[CA2109](ca2109.md) | [https://github.com/dotnet/roslyn-analyzers/issues/488](https://github.com/dotnet/roslyn-analyzers/issues/488)
+[CA2204](ca2204.md) | [https://github.com/dotnet/roslyn-analyzers/issues/529](https://github.com/dotnet/roslyn-analyzers/issues/529)
+[CA2205](ca2205.md) | [https://github.com/dotnet/roslyn-analyzers/issues/530](https://github.com/dotnet/roslyn-analyzers/issues/530)
+[CA2212](ca2212.md) | [https://github.com/dotnet/roslyn-analyzers/issues/534](https://github.com/dotnet/roslyn-analyzers/issues/534)
+[CA2215](ca2215.md) | [https://github.com/dotnet/roslyn-analyzers/issues/535](https://github.com/dotnet/roslyn-analyzers/issues/535)
+[CA2232](ca2232.md) | [https://github.com/dotnet/roslyn-analyzers/issues/545](https://github.com/dotnet/roslyn-analyzers/issues/545)
+[CA2236](ca2236.md) | [https://github.com/dotnet/roslyn-analyzers/issues/548](https://github.com/dotnet/roslyn-analyzers/issues/548)
+[CA2238](ca2238.md) | [https://github.com/dotnet/roslyn-analyzers/issues/549](https://github.com/dotnet/roslyn-analyzers/issues/549)
+[CA2239](ca2239.md) | [https://github.com/dotnet/roslyn-analyzers/issues/550](https://github.com/dotnet/roslyn-analyzers/issues/550)
+[CA2240](ca2240.md) | [https://github.com/dotnet/roslyn-analyzers/issues/551](https://github.com/dotnet/roslyn-analyzers/issues/551)
 
 ### <a name="deprecated-rules"></a>Regole deprecate
 
@@ -290,59 +290,59 @@ Le seguenti regole di analisi legacy FxCop sono deprecate e non verranno impleme
 - [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
 - [CA1800](ca1800.md)
 - [CA1809](ca1809.md)
-- [CA1901](ca1901-p-invoke-declarations-should-be-portable.md)
-- [CA1903](ca1903-use-only-api-from-targeted-framework.md)
-- [CA2003](ca2003-do-not-treat-fibers-as-threads.md)
-- [CA2102](ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)
-- [CA2103](ca2103-review-imperative-security.md)
-- [CA2104](ca2104-do-not-declare-read-only-mutable-reference-types.md)
-- [CA2105](ca2105-array-fields-should-not-be-read-only.md)
-- [CA2106](ca2106-secure-asserts.md)
-- [CA2107](ca2107-review-deny-and-permit-only-usage.md)
-- [CA2108](ca2108-review-declarative-security-on-value-types.md)
-- [CA2111](ca2111-pointers-should-not-be-visible.md)
-- [CA2112](ca2112-secured-types-should-not-expose-fields.md)
-- [CA2114](ca2114-method-security-should-be-a-superset-of-type.md)
-- [CA2115](ca2115-call-gc-keepalive-when-using-native-resources.md)
-- [CA2116](ca2116-aptca-methods-should-only-call-aptca-methods.md)
-- [CA2117](ca2117-aptca-types-should-only-extend-aptca-base-types.md)
-- [CA2118](ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)
-- [CA2120](ca2120-secure-serialization-constructors.md)
-- [CA2121](ca2121-static-constructors-should-be-private.md)
-- [CA2122](ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
-- [CA2123](ca2123-override-link-demands-should-be-identical-to-base.md)
-- [CA2124](ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)
-- [CA2126](ca2126-type-link-demands-require-inheritance-demands.md)
-- [CA2130](ca2130-security-critical-constants-should-be-transparent.md)
-- [CA2131](ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)
-- [CA2132](ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)
-- [CA2133](ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)
-- [CA2134](ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)
-- [CA2135](ca2135-level-2-assemblies-should-not-contain-linkdemands.md)
-- [CA2136](ca2136-members-should-not-have-conflicting-transparency-annotations.md)
-- [CA2137](ca2137-transparent-methods-must-contain-only-verifiable-il.md)
-- [CA2138](ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)
-- [CA2139](ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)
-- [CA2140](ca2140-transparent-code-must-not-reference-security-critical-items.md)
-- [CA2141](ca2141-transparent-methods-must-not-satisfy-linkdemands.md)
-- [CA2142](ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)
-- [CA2143](ca2143-transparent-methods-should-not-use-security-demands.md)
-- [CA2144](ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)
-- [CA2145](ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)
-- [CA2146](ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)
-- [CA2147](ca2147-transparent-methods-may-not-use-security-asserts.md)
-- [CA2149](ca2149-transparent-methods-must-not-call-into-native-code.md)
-- [CA2151](ca2151-fields-with-critical-types-should-be-security-critical.md)
-- [CA2202](ca2202-do-not-dispose-objects-multiple-times.md)
-- [CA2210](ca2210-assemblies-should-have-valid-strong-names.md)
-- [CA2220](ca2220-finalizers-should-call-base-class-finalizer.md)
-- [CA2221](ca2221-finalizers-should-be-protected.md)
-- [CA2222](ca2222-do-not-decrease-inherited-member-visibility.md) ([giustificazione](https://github.com/dotnet/roslyn-analyzers/issues/1378))
-- [CA2223](ca2223-members-should-differ-by-more-than-return-type.md)
-- [CA2228](ca2228-do-not-ship-unreleased-resource-formats.md)
-- [CA2230](ca2230-use-params-for-variable-arguments.md)
-- [CA2233](ca2233-operations-should-not-overflow.md)
-- [CA5122](ca5122-p-invoke-declarations-should-not-be-safe-critical.md)
+- [CA1901](ca1901.md)
+- [CA1903](ca1903.md)
+- [CA2003](ca2003.md)
+- [CA2102](ca2102.md)
+- [CA2103](ca2103.md)
+- [CA2104](ca2104.md)
+- [CA2105](ca2105.md)
+- [CA2106](ca2106.md)
+- [CA2107](ca2107.md)
+- [CA2108](ca2108.md)
+- [CA2111](ca2111.md)
+- [CA2112](ca2112.md)
+- [CA2114](ca2114.md)
+- [CA2115](ca2115.md)
+- [CA2116](ca2116.md)
+- [CA2117](ca2117.md)
+- [CA2118](ca2118.md)
+- [CA2120](ca2120.md)
+- [CA2121](ca2121.md)
+- [CA2122](ca2122.md)
+- [CA2123](ca2123.md)
+- [CA2124](ca2124.md)
+- [CA2126](ca2126.md)
+- [CA2130](ca2130.md)
+- [CA2131](ca2131.md)
+- [CA2132](ca2132.md)
+- [CA2133](ca2133.md)
+- [CA2134](ca2134.md)
+- [CA2135](ca2135.md)
+- [CA2136](ca2136.md)
+- [CA2137](ca2137.md)
+- [CA2138](ca2138.md)
+- [CA2139](ca2139.md)
+- [CA2140](ca2140.md)
+- [CA2141](ca2141.md)
+- [CA2142](ca2142.md)
+- [CA2143](ca2143.md)
+- [CA2144](ca2144.md)
+- [CA2145](ca2145.md)
+- [CA2146](ca2146.md)
+- [CA2147](ca2147.md)
+- [CA2149](ca2149.md)
+- [CA2151](ca2151.md)
+- [CA2202](ca2202.md)
+- [CA2210](ca2210.md)
+- [CA2220](ca2220.md)
+- [CA2221](ca2221.md)
+- [CA2222](ca2222.md) ([giustificazione](https://github.com/dotnet/roslyn-analyzers/issues/1378))
+- [CA2223](ca2223.md)
+- [CA2228](ca2228.md)
+- [CA2230](ca2230.md)
+- [CA2233](ca2233.md)
+- [CA5122](ca5122.md)
 
 ## <a name="see-also"></a>Vedere anche
 

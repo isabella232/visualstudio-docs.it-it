@@ -15,12 +15,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b754f32edb86d10b4dd722ea7c6486f8179af6
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018740"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445713"
 ---
 # <a name="intrinsic-functions"></a>Funzioni intrinseche
 Un'espressione in SAL può essere un'espressione C/C++ a condizione che sia un'espressione che non produca effetti collaterali, ad esempio ++, -- e le chiamate di funzione hanno effetti collaterali in questo contesto.  Tuttavia, SAL fornisce alcuni oggetti di tipo funzione e alcuni simboli riservati che possono essere utilizzati nelle espressioni SAL. Questi vengono definiti *funzioni intrinseche*.

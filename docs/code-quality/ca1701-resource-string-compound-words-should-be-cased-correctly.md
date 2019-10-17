@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c5d7aa3c29ca8ba82f6c50b070c5210cf10d1884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234356"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443924"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Le parole composte di una stringa di risorsa devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234356"
 |-|-|
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -58,13 +58,13 @@ Per impostazione predefinita, viene utilizzata la versione inglese (en) del corr
 
 È possibile eliminare un avviso da questa regola se entrambe le parti della parola composta sono riconosciute dal dizionario ortografico e l'intento è usare due parole.
 
-È anche possibile aggiungere parole composte a un dizionario personalizzato per il correttore ortografico. Le parole nel dizionario personalizzato non causano alcuna violazione. Per altre informazioni, vedere [Procedura: Personalizzare il dizionario](../code-quality/how-to-customize-the-code-analysis-dictionary.md)di analisi del codice.
+È anche possibile aggiungere parole composte a un dizionario personalizzato per il correttore ortografico. Le parole nel dizionario personalizzato non causano alcuna violazione. Per altre informazioni, vedere [procedura: personalizzare il dizionario di analisi del codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1702 Le parole composte devono essere configurate correttamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Vedere anche
 

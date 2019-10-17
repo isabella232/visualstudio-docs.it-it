@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a73a615c08b538f4580a8d40765dcd7603722aa1
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236056"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446714"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementare costruttori di eccezioni standard
 
@@ -27,12 +27,12 @@ ms.locfileid: "71236056"
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-Un tipo estende <xref:System.Exception?displayProperty=fullName> , ma non dichiara tutti i costruttori richiesti.
+Un tipo estende <xref:System.Exception?displayProperty=fullName> ma non dichiara tutti i costruttori richiesti.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -48,9 +48,9 @@ Inoltre, se si esegue l'analisi FxCop legacy invece degli [analizzatori FxCop ba
 
 - NewException protected o private (SerializationInfo, StreamingContext)
 
-Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Il costruttore con la firma `NewException(string, Exception)` , ad esempio, viene utilizzato per creare eccezioni causate da altre eccezioni. Senza questo costruttore non è possibile creare e generare un'istanza dell'eccezione personalizzata che contiene un'eccezione interna (annidata), ovvero il codice gestito che deve essere eseguita in una situazione di questo tipo.
+Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Il costruttore con la firma `NewException(string, Exception)`, ad esempio, viene utilizzato per creare eccezioni causate da altre eccezioni. Senza questo costruttore non è possibile creare e generare un'istanza dell'eccezione personalizzata che contiene un'eccezione interna (annidata), ovvero il codice gestito che deve essere eseguita in una situazione di questo tipo.
 
-I primi tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto in classi non sealed e privato in classi sealed. Per ulteriori informazioni, vedere [CA2229: Implementare i costruttori](../code-quality/ca2229-implement-serialization-constructors.md)di serializzazione.
+I primi tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto in classi non sealed e privato in classi sealed. Per altre informazioni, vedere [CA2229: implementare costruttori di serializzazione](../code-quality/ca2229.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -58,7 +58,7 @@ Per correggere una violazione di questa regola, aggiungere i costruttori mancant
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-È possibile eliminare un avviso da questa regola quando la violazione è causata dall'uso di un livello di accesso diverso per i costruttori pubblici. Inoltre, è possibile disattivare l'avviso per il `NewException(SerializationInfo, StreamingContext)` costruttore se si sta creando una libreria di classi portabile (PCL).
+È possibile eliminare un avviso da questa regola quando la violazione è causata dall'uso di un livello di accesso diverso per i costruttori pubblici. Inoltre, è possibile disattivare l'avviso per il costruttore `NewException(SerializationInfo, StreamingContext)` se si compila una libreria di classi portabile (PCL).
 
 ## <a name="example"></a>Esempio
 
@@ -68,4 +68,4 @@ Nell'esempio seguente è contenuto un tipo di eccezione che viola questa regola 
 
 ## <a name="see-also"></a>Vedere anche
 
-[CA2229: Implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: Implementare costruttori di serializzazione](../code-quality/ca2229.md)

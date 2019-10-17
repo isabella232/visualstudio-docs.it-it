@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381322"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procedura dettagliata: Eseguire l'associazione ai dati di un servizio in un progetto di componente aggiuntivo VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procedura dettagliata: associazione ai dati di un servizio in un progetto di componente aggiuntivo VSTO
   È possibile associare dati ai controlli host nei progetti di componente aggiuntivo VSTO. Questa procedura dettagliata illustra come aggiungere controlli a un documento di Microsoft Office Word, associare i controlli ai dati recuperati dal servizio per la gestione del contenuto MSDN e rispondere agli eventi in fase di esecuzione.
 
- **Si applica a:** Le informazioni contenute in questo argomento sono valide per i progetti a livello di applicazione per Word 2010. Per altre informazioni, vedere [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).
+ **Si applica a:** le informazioni contenute in questo argomento sono valide per i progetti a livello di applicazione per Word 2010. Per altre informazioni, vedere [Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).
 
  Questa procedura dettagliata illustra le attività seguenti:
 
 - Aggiunta di un controllo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento in fase di esecuzione.
 
-- Associazione del <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controllo ai dati da un servizio Web.
+- Associazione del controllo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ai dati da un servizio Web.
 
 - Risposta all'evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> di un controllo <xref:Microsoft.Office.Tools.Word.RichTextContentControl> .
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "71254048"
 
 1. Creare un progetto di componente aggiuntivo VSTO di Word denominato **MTPS Content Service**usando Visual Basic o C#.
 
-     Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio apre il file `ThisAddIn.vb` o `ThisAddIn.cs` e aggiunge il progetto a **Esplora soluzioni**.
 
@@ -65,7 +65,7 @@ ms.locfileid: "71254048"
 
 3. Nel campo **Indirizzo** digitare l'URL seguente:
 
-     **http:\//Services.msdn.Microsoft.com/contentservices/contentservice.asmx**
+   `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
 4. Fare clic su **Vai**.
 

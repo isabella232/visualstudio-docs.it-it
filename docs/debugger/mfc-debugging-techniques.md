@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693036"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435651"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-Utilizzo della macro TRACE gestisce in modo appropriato sia char\* wchar_t e\* parametri. Negli esempi seguenti viene illustrato l'utilizzo della macro TRACE, insieme ai diversi tipi di parametri di stringa.
+La macro TRACE gestisce in modo appropriato sia i parametri char @ no__t-0 che wchar_t @ no__t-1. Negli esempi seguenti viene illustrato l'utilizzo della macro TRACE, insieme ai diversi tipi di parametri di stringa.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -185,7 +185,7 @@ Per poter utilizzare le utilità di diagnostica della memoria è necessario atti
     #endif
     ```
 
-    Si noti che le istruzioni di controllo della memoria sono racchiuse **#ifdef DEBUG / #endif** blocca in modo che vengano compilate solo nelle versioni di Debug del programma.
+    Si noti che le istruzioni per il controllo della memoria sono racchiuse tra #ifdef blocchi _ **debug/#endif** in modo che vengano compilate solo nelle versioni di debug del programma.
 
     Determinata l'esistenza di una perdita di memoria, sarà possibile usare un'altra funzione membro, [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) , che consentirà di individuare la perdita.
 
@@ -227,7 +227,7 @@ I blocchi non di oggetti includono matrici e strutture allocate con `new`. In qu
 [In questo argomento](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Taking_object_dumps"></a> Creazione di dump di oggetti
-In un programma MFC, è possibile usare [CMemoryState:: DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) per eseguire il dump una descrizione di tutti gli oggetti nell'heap non deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.
+In un programma MFC, è possibile usare [CMemoryState::D umpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) per eseguire il dump di una descrizione di tutti gli oggetti nell'heap che non sono stati deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.
 
 > [!NOTE]
 > Prima di poter utilizzare il dump di oggetti MFC, è necessario [abilitare la traccia di diagnostica](#BKMK_Enabling_memory_diagnostics).
@@ -413,16 +413,16 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Riduzione delle dimensioni di una build di debug di MFC
 Le informazioni di debug di un'applicazione MFC di grandi dimensioni possono richiedere notevole spazio su disco. Per ridurre le dimensioni, è possibile usare una di queste procedure:
 
-1. Ricompilare le librerie MFC usando il [/Z7, /Zi, /ZI (formato informazioni di Debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) opzione, anziché **/Z7**. Queste opzioni compilano un singolo file di database di programma (PDB) che contiene informazioni di debug per l'intera libreria, riducendo la ridondanza e risparmiando spazio.
+1. Ricompilare le librerie MFC usando l'opzione [/Z7,/Zi,/Zi (formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) invece di **/Z7**. Queste opzioni compilano un singolo file di database di programma (PDB) che contiene informazioni di debug per l'intera libreria, riducendo la ridondanza e risparmiando spazio.
 
-2. Ricompilare le librerie MFC senza informazioni di debug (nessun [/Z7, /Zi, /ZI (formato informazioni di Debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) opzione). In questo caso la mancanza delle informazioni di debug impedirà di utilizzare la maggior parte delle utilità del debugger nel codice delle librerie MFC, ma dal momento che le librerie MFC sono già state sottoposte a un debug completo, questo non dovrebbe rappresentare un problema.
+2. Ricompilare le librerie MFC senza informazioni di debug (nessuna opzione [/Z7,/Zi,/Zi (formato informazioni di debug)](/cpp/build/reference/z7-zi-zi-debug-information-format) ). In questo caso la mancanza delle informazioni di debug impedirà di utilizzare la maggior parte delle utilità del debugger nel codice delle librerie MFC, ma dal momento che le librerie MFC sono già state sottoposte a un debug completo, questo non dovrebbe rappresentare un problema.
 
 3. Compilare l'applicazione con informazioni di debug solo per i moduli selezionati, come descritto di seguito.
 
     [In questo argomento](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Compilazione di un'app MFC con informazioni di debug per i moduli selezionati
-La compilazione di moduli selezionati con le librerie di debug MFC consente di eseguire i moduli un'istruzione alla volta e di utilizzare altre utilità di debug. In questa procedura vengono utilizzate sia la modalità debug che la modalità rilascio del makefile Visual C++. Per completarla, è necessario eseguire le modifiche descritte nei passaggi seguenti (nonché un'operazione di ricompilazione totale quando è richiesta una compilazione di rilascio completa).
+La compilazione di moduli selezionati con le librerie di debug MFC consente di eseguire i moduli un'istruzione alla volta e di utilizzare altre utilità di debug. Questa procedura usa entrambe le configurazioni di debug e di rilascio del progetto, in modo da rendere necessarie le modifiche descritte nei passaggi seguenti (e creare anche una "Ricompila tutto" quando è richiesta una compilazione di rilascio completa).
 
 1. Selezionare il progetto in Esplora soluzioni.
 
@@ -438,7 +438,7 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    4. Scegliere **Release** dall'elenco **Copia impostazioni da**.
 
-   5. Fare clic su **OK** per chiudere la **nuova configurazione progetto** nella finestra di dialogo.
+   5. Fare clic su **OK** per chiudere la finestra di dialogo **nuova configurazione progetto** .
 
    6. Chiudere la finestra di dialogo **Gestione configurazione** .
 
@@ -481,4 +481,4 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
    [In questo argomento](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Vedere anche
-[Debug di Visual C++](../debugger/debugging-native-code.md)
+[Debug del codice nativo](../debugger/debugging-native-code.md)

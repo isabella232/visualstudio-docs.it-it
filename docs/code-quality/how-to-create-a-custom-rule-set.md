@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975093"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448992"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -51,7 +51,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 4. Selezionare **Apri** per visualizzare le regole nell'Editor set di regole.
 
 > [!NOTE]
-> Se si dispone di un progetto .NET Core o .NET Standard, il processo è leggermente diverso perché non è disponibile alcuna scheda delle proprietà di **analisi del codice** . Seguire i passaggi per [copiare un set di regole predefinito nel progetto e impostarlo come set di regole attivo](analyzer-rule-sets.md). Dopo aver copiato su un set di regole, è possibile [modificarlo nell'editor del set di regole di Visual Studio](working-in-the-code-analysis-rule-set-editor.md) aprendolo dal **Esplora soluzioni**.
+> Se si dispone di un progetto .NET Core o .NET Standard, il processo è leggermente diverso perché non è disponibile alcuna scheda delle proprietà di **analisi del codice** . attenersi alla procedura per [copiare un set di regole predefinito nel progetto e impostarlo come set di regole attivo](analyzer-rule-sets.md). Dopo aver copiato su un set di regole, è possibile [modificarlo nell'editor del set di regole di Visual Studio](working-in-the-code-analysis-rule-set-editor.md) aprendolo dal **Esplora soluzioni**.
 
 ## <a name="create-a-new-rule-set"></a>Creare un nuovo set di regole
 
@@ -111,7 +111,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 - Se la stessa regola è elencata due o più volte in un set di regole con lo *stesso* livello di gravità, è possibile che venga visualizzato il seguente avviso nel **Elenco errori**:
 
-   **CA0063: Non è stato possibile caricare il file del set di regole ' \[your]. RuleSet ' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
+   **CA0063: non è stato possibile caricare il file del set di regole ' \[your]. RuleSet ' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
 
 - Se il set di regole include un set di regole figlio utilizzando un tag di **inclusione** e i set di regole figlio e padre entrambi elencano la stessa regola ma con livelli di gravità diversi, la gravità nel set di regole padre avrà la precedenza. Esempio:
 
@@ -147,5 +147,5 @@ Ora che si dispone di un set di regole, il passaggio successivo consiste nel per
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Configurare l'analisi del codice per un progetto di codice gestito @ no__t-0
+- [Procedura: Configurare l'analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)

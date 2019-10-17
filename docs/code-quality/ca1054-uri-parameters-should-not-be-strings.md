@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 49788b900eb8aed9fac6e4da4844377bae67efbf
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 79ab405e6019dd93fdb9ffa89b5274f6f3d679e8
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235562"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446571"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: I parametri URI non devono essere stringhe
 
@@ -31,22 +31,22 @@ ms.locfileid: "71235562"
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un tipo dichiara un metodo con un parametro di stringa il cui nome contiene "URI", "URI", "urn", "urn", "URL" o "URL" e il tipo non dichiara un overload corrispondente che accetta un <xref:System.Uri?displayProperty=fullName> parametro.
+Un tipo dichiara un metodo con un parametro di stringa il cui nome contiene "URI", "URI", "urn", "urn", "URL" o "URL" e il tipo non dichiara un overload corrispondente che accetta un parametro <xref:System.Uri?displayProperty=fullName>.
 
 Per impostazione predefinita, questa regola esamina solo i tipi visibili esternamente, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola suddivide il nome del parametro in token in base alla convenzione dell'involucro Camel e controlla se ogni token è uguale a "URI", "URI", "urn", "urn", "URL" o "URL". Se esiste una corrispondenza, la regola presuppone che il parametro rappresenti un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. Se un metodo accetta una rappresentazione di stringa di un URI, è necessario fornire un overload corrispondente che accetta un'istanza della <xref:System.Uri> classe, che fornisce questi servizi in modo sicuro e sicuro.
+Questa regola suddivide il nome del parametro in token in base alla convenzione dell'involucro Camel e controlla se ogni token è uguale a "URI", "URI", "urn", "urn", "URL" o "URL". Se esiste una corrispondenza, la regola presuppone che il parametro rappresenti un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. Se un metodo accetta una rappresentazione di stringa di un URI, è necessario fornire un overload corrispondente che accetta un'istanza della classe <xref:System.Uri>, che fornisce questi servizi in modo sicuro e sicuro.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, modificare il parametro in un <xref:System.Uri> tipo. si tratta di una modifica di rilievo. In alternativa, fornire un overload del metodo che accetta un <xref:System.Uri> parametro; si tratta di una modifica senza interruzioni.
+Per correggere una violazione di questa regola, impostare il parametro su un tipo <xref:System.Uri>; si tratta di una modifica di rilievo. In alternativa, fornire un overload del metodo che accetta un parametro <xref:System.Uri>; si tratta di una modifica senza interruzioni.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1054.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un tipo `ErrorProne`,, che viola la regola e un tipo, `SaferWay`, che soddisfa la regola.
+Nell'esempio seguente viene illustrato un tipo, `ErrorProne`, che viola questa regola e un tipo, `SaferWay`, che soddisfa la regola.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -74,5 +74,5 @@ Nell'esempio seguente viene illustrato un tipo `ErrorProne`,, che viola la regol
 
 - [CA1056: Le proprietà URI non devono essere stringhe](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 - [CA1055: I valori restituiti URI non devono essere stringhe](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234: Passare oggetti System. URI anziché stringhe](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Gli overload URI di stringa chiamano gli overload System. Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA2234: Passare oggetti System.Uri invece di stringhe](../code-quality/ca2234.md)
+- [CA1057: Gli overload URI dei valori di stringa chiamano gli overload System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

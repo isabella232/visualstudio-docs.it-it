@@ -1,5 +1,5 @@
 ---
-title: 'CA1008: Le enumerazioni devono avere valore zero'
+title: 'CA1008: Gli enum devono avere valore zero'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f981d7ec12d49acc0e3d33ded5b27e855d9f0923
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236497"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441689"
 ---
-# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Le enumerazioni devono avere valore zero
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Gli enum devono avere valore zero
 
 |||
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni: quando viene richiesto di aggiungere un valore **None** a un'enumerazione non flag. Suddivisione: quando viene richiesto di rinominare o rimuovere i valori di enumerazione.|
 
 ## <a name="cause"></a>Causa
@@ -44,7 +44,7 @@ Per impostazione predefinita, questa regola esamina solo le enumerazioni visibil
 
 Il valore predefinito di un'enumerazione non inizializzata, analogamente ad altri tipi di valore, è zero. Un'enumerazione non con attributi di flag deve definire un membro con valore zero, in modo che il valore predefinito sia un valore valido dell'enumerazione. Se appropriato, denominare il membro ' none '. In caso contrario, assegnare zero al membro usato più di frequente. Per impostazione predefinita, se il valore del primo membro di enumerazione non è impostato nella dichiarazione, il valore è zero.
 
-Se un'enumerazione con l'oggetto <xref:System.FlagsAttribute> applicato definisce un membro con valore zero, il nome deve essere ' none ' per indicare che non è stato impostato alcun valore nell'enumerazione. L'uso di un membro a valore zero per qualsiasi altro scopo è contrario all'uso di <xref:System.FlagsAttribute> in quanto gli operatori and e OR bit per bit sono inutili con il membro. Questo implica che a un solo membro deve essere assegnato il valore zero. Se più membri con valore zero si verificano in un'enumerazione con attributi flag, `Enum.ToString()` restituisce risultati non corretti per i membri che non sono zero.
+Se un'enumerazione con <xref:System.FlagsAttribute> applicata definisce un membro con valore zero, il nome deve essere ' none ' per indicare che non è stato impostato alcun valore nell'enumerazione. L'utilizzo di un membro a valore zero per qualsiasi altro scopo è contrario all'utilizzo di <xref:System.FlagsAttribute> in quanto gli operatori AND e OR bit per bit sono inutili con il membro. Questo implica che a un solo membro deve essere assegnato il valore zero. Se più membri con valore zero si verificano in un'enumerazione con attributi flag, `Enum.ToString()` restituisce risultati non corretti per i membri che non sono zero.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -66,7 +66,7 @@ dotnet_code_quality.ca1008.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente vengono illustrate due enumerazioni che soddisfano la regola e `BadTraceOptions`un'enumerazione,, che viola la regola.
+Nell'esempio seguente vengono illustrate due enumerazioni che soddisfano la regola e un'enumerazione, `BadTraceOptions`, che viola la regola.
 
 [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
 [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
@@ -74,10 +74,10 @@ Nell'esempio seguente vengono illustrate due enumerazioni che soddisfano la rego
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA2217 Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700 Non denominare i valori enum ' Reserved '](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712 Non anteporre i valori enum al nome del tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
-- [CA1028: L'archiviazione enum deve essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+- [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217.md)
+- [CA1700: Non denominare 'Reserved' i valori di enumerazione](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712: Non usare nomi di tipo come prefisso nei valori di enumerazione](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1028: L'archivio di enum deve essere Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 - [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vedere anche

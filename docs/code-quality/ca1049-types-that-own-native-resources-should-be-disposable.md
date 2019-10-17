@@ -1,5 +1,5 @@
 ---
-title: 'CA1049: I tipi delle risorse native devono essere disposable'
+title: 'CA1049: I tipi delle risorse native devono essere Disposable'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: c685e0d12ebb8f76d61687dd138e90c51a9cc8f5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306112"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440832"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: I tipi delle risorse native devono essere disposable
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: I tipi delle risorse native devono essere Disposable
 
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -56,13 +56,13 @@ Nell'esempio seguente viene illustrato un tipo che implementa <xref:System.IDisp
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA2115: Chiamare GC. KeepAlive quando si utilizzano risorse native @ no__t-0
+[CA2115: Chiamare GC.KeepAlive durante l'uso di risorse native](../code-quality/ca2115.md)
 
-[CA1816: Chiamare GC. SuppressFinalize correttamente @ no__t-0
+[CA1816: Chiamare GC.SuppressFinalize correttamente](../code-quality/ca1816.md)
 
-[CA2216: I tipi Disposable devono dichiarare Finalizer @ no__t-0
+[CA2216: I tipi Disposable devono dichiarare un finalizzatore](../code-quality/ca2216.md)
 
-[CA1001: I tipi proprietari di campi eliminabili devono essere eliminabili](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Vedere anche
 

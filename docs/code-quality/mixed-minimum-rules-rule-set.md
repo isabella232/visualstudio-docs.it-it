@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305539"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445669"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 
@@ -71,7 +71,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C6518](../code-quality/c6518.md)|Dimensioni scrivibili su buffer non scrivibile|
 |[C6522](../code-quality/c6522.md)|Tipo stringa dimensioni non valida|
 |[C6525](../code-quality/c6525.md)|Percorso irraggiungibile stringa dimensioni non valida|
-|[C6527](../code-quality/c6527.md)|Annotazione non valida: Non è possibile usare la proprietà' NeedsRelease ' su valori di tipo void|
+|[C6527](../code-quality/c6527.md)|Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void|
 |[C6530](../code-quality/c6530.md)|Stile stringa formato non riconosciuto|
 |[C6540](../code-quality/c6540.md)|L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec|
 |[C6551](../code-quality/c6551.md)|Specifica di dimensione non valida: espressione non analizzabile|
@@ -155,5 +155,5 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28351](../code-quality/c28351.md)|L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
 |[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|I campi eliminabili devono essere eliminati|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals|
+|[CA2213](../code-quality/ca2213.md)|I campi eliminabili devono essere eliminati|
+|[CA2231](../code-quality/ca2231.md)|Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals|

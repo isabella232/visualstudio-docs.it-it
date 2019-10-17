@@ -1,5 +1,5 @@
 ---
-title: 'CA1024: Usare proprietà dove appropriato'
+title: 'CA1024: Utilizzare proprietà dove appropriato'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2ba4a7a16675bf6da0aa465a515b73c907aa80ac
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236149"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449302"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usare proprietà dove appropriato
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Utilizzare proprietà dove appropriato
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -85,7 +85,7 @@ dotnet_code_quality.ca1024.api_surface = private, internal
 
 Uno dei motivi per cui i programmatori evitano di utilizzare una proprietà è perché non desiderano che il debugger lo espanda. Ad esempio, la proprietà può implicare l'allocazione di un oggetto di grandi dimensioni o la chiamata di un P/Invoke, ma potrebbe non avere effetti collaterali osservabili.
 
-È possibile impedire al debugger di espandere l'espansione automatica delle proprietà <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>applicando. Nell'esempio seguente viene illustrato l'applicazione di questo attributo a una proprietà dell'istanza.
+È possibile impedire al debugger di espandere l'espansione automatica delle proprietà applicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Nell'esempio seguente viene illustrato l'applicazione di questo attributo a una proprietà dell'istanza.
 
 ```vb
 Imports System

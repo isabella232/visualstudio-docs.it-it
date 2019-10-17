@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533317"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431461"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Debug della preparazione: Progetti Console (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione al debug: progetti consoleC#( C++,, Visual Basic F#,)
 
-Preparare il debug di un progetto console è simile alla preparazione per il debug di un progetto Windows, con alcune considerazioni aggiuntive, ad esempio l'impostazione degli argomenti della riga di comando e la modalità di sospensione dell'app per il debug. Per ulteriori informazioni, vedere [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md)e [preparazione al debug: Applicazioni Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
+Preparare il debug di un progetto console è simile alla preparazione per il debug di un progetto Windows, con alcune considerazioni aggiuntive, ad esempio l'impostazione degli argomenti della riga di comando e la modalità di sospensione dell'app per il debug. Per altre informazioni, vedere [Windows Forms Application](../debugger/debugging-preparation-windows-forms-applications.md), e [preparazione al debug:  Applicazioni Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
 
 - C#, Visual Basic e F# applicazione console
 
@@ -49,7 +49,7 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 
 - Impostare un punto di interruzione nel codice e avviare l'applicazione.
 
-- Avviare l'applicazione con **F10** (**debug** > **istruzione/** routine) o **F11** (eseguire il**debug** > di**istruzioni**), quindi esplorare il codice usando altre opzioni, ad esempio **Esegui fino a fare clic su**.
+- Avviare l'applicazione con **F10** (**debug** > **Esegui istruzione**/routine) o **F11** (**debug** > **Esegui istruzione**), quindi esplorare il codice usando altre opzioni, ad esempio **Esegui fino a fare clic su**.
 
 - Nell'editor di codice fare clic con il pulsante destro del mouse su una riga e scegliere **Esegui fino al cursore**.
 
@@ -60,7 +60,7 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 ## <a name="see-also"></a>Vedere anche
 - [Debug del codice nativo](../debugger/debugging-native-code.md)
 - [Debug di codice gestito](../debugger/debugging-managed-code.md)
-- [Tipi di progetto Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Preparare il debug C++ di progetti](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Tipi di progetto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

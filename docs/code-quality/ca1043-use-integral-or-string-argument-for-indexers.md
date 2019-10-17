@@ -1,5 +1,5 @@
 ---
-title: 'CA1043: Usare un argomento di tipo stringa o integrale per gli indicizzatori'
+title: 'CA1043: Utilizzare argomento di tipo stringa o integrale per gli indicizzatori'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,31 +18,31 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 298c92263903c3799f1e7e184a554f896366566c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 10424344abc52d4911b7caf60e02b03e6ed6e96f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235838"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446632"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Usare un argomento di tipo stringa o integrale per gli indicizzatori
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Utilizzare argomento di tipo stringa o integrale per gli indicizzatori
 
 |||
 |-|-|
 |TypeName|UseIntegralOrStringArgumentForIndexers|
 |CheckId|CA1043|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
 
-Un tipo contiene un indicizzatore che usa un tipo di indice diverso <xref:System.Int32?displayProperty=fullName>da <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName>, o <xref:System.String?displayProperty=fullName>.
+Un tipo contiene un indicizzatore che usa un tipo di indice diverso da <xref:System.Int32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.Object?displayProperty=fullName> o <xref:System.String?displayProperty=fullName>.
 
 Per impostazione predefinita, questa regola esamina solo i tipi pubblici e protetti, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Gli indicizzatori, ovvero le proprietà indicizzate, devono utilizzare tipi Integer o stringa per l'indice. Questi tipi vengono in genere utilizzati per l'indicizzazione di strutture di dati e aumentano l'usabilità della libreria. L' <xref:System.Object> uso del tipo deve essere limitato ai casi in cui non è possibile specificare il tipo di stringa o Integer specifico in fase di progettazione. Se la progettazione richiede altri tipi per l'indice, riconsiderare se il tipo rappresenta un archivio dati logico. Se non rappresenta un archivio dati logico, utilizzare un metodo.
+Gli indicizzatori, ovvero le proprietà indicizzate, devono utilizzare tipi Integer o stringa per l'indice. Questi tipi vengono in genere utilizzati per l'indicizzazione di strutture di dati e aumentano l'usabilità della libreria. L'uso del tipo <xref:System.Object> deve essere limitato ai casi in cui non è possibile specificare il tipo di stringa o Integer specifico in fase di progettazione. Se la progettazione richiede altri tipi per l'indice, riconsiderare se il tipo rappresenta un archivio dati logico. Se non rappresenta un archivio dati logico, utilizzare un metodo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1043.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un indicizzatore che utilizza <xref:System.Int32> un indice.
+Nell'esempio seguente viene illustrato un indicizzatore che utilizza un indice <xref:System.Int32>.
 
 [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
 [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
@@ -73,4 +73,4 @@ Nell'esempio seguente viene illustrato un indicizzatore che utilizza <xref:Syste
 ## <a name="related-rules"></a>Regole correlate
 
 - [CA1023: Gli indicizzatori non devono essere multidimensionali](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
-- [CA1024: Usare le proprietà laddove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Usare proprietà dove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)

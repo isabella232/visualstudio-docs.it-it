@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203f7f287ebb5b71ecad6e6ad4a861d63e5cf08
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8110533573aaeb9b8c32d224cc03d6ca238e0e8e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234224"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439854"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234224"
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -38,7 +38,7 @@ Per impostazione predefinita, questa regola esamina solo i tipi, i membri e gli 
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Gli identificatori per spazi dei nomi, tipi, membri e parametri non possono differire solo in base a maiuscole e minuscole poiché ai linguaggi destinati a Common Language Runtime non è richiesta la distinzione tra maiuscole e minuscole. Ad esempio, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] è un linguaggio molto diffuso senza distinzione tra maiuscole e minuscole.
+Gli identificatori per spazi dei nomi, tipi, membri e parametri non possono differire solo in base a maiuscole e minuscole poiché ai linguaggi destinati a Common Language Runtime non è richiesta la distinzione tra maiuscole e minuscole. Ad esempio, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] è un linguaggio ampiamente usato senza distinzione tra maiuscole e minuscole.
 
 Questa regola viene attivata solo sui membri visibili pubblicamente.
 
@@ -68,4 +68,4 @@ Nell'esempio seguente viene illustrata una violazione di questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

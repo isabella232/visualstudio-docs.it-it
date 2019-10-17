@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5e07f1e9ce83f36e6ecfbae148c84d18f40ff1
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015945"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448636"
 ---
 # <a name="best-practices-and-examples-sal"></a>Suggerimenti ed esempi (SAL)
 Ecco alcuni modi per sfruttare al meglio il linguaggio di annotazione del codice sorgente (SAL) ed evitare alcuni problemi comuni.
@@ -245,4 +245,4 @@ In questo esempio `_Out_opt_` indica che il puntatore potrebbe essere NULL come 
 [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)  
 [Annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md)  
 [Specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-[Funzioni intrinseche](../code-quality/intrinsic-functions.md)  
+[Funzioni intrinseche](../code-quality/intrinsic-functions.md)

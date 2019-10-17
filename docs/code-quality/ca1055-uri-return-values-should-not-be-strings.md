@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0a03f68ed15e790ea8a43a9ae2b476dd2f6f5d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 41099f0803d6432736e051a1a6ef61c7a6e85160
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235540"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446593"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: I valori restituiti URI non devono essere stringhe
 
@@ -31,7 +31,7 @@ ms.locfileid: "71235540"
 |-|-|
 |TypeName|UriReturnValuesShouldNotBeStrings|
 |CheckId|CA1055|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -42,11 +42,11 @@ Per impostazione predefinita, questa regola esamina solo i metodi pubblici, ma �
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola suddivide il nome del metodo in token in base alla convenzione di combinazione di maiuscole e minuscole Pascal e controlla se ogni token è uguale a "URI", "URI", "urn", "urn", "URL" o "URL". Se esiste una corrispondenza, la regola presuppone che il metodo restituisca un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. La <xref:System.Uri?displayProperty=fullName> classe fornisce questi servizi in modo sicuro e protetto.
+Questa regola suddivide il nome del metodo in token in base alla convenzione di combinazione di maiuscole e minuscole Pascal e controlla se ogni token è uguale a "URI", "URI", "urn", "urn", "URL" o "URL". Se esiste una corrispondenza, la regola presuppone che il metodo restituisca un URI (Uniform Resource Identifier). Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. La classe <xref:System.Uri?displayProperty=fullName> fornisce questi servizi in modo sicuro e protetto.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, modificare il tipo restituito in un <xref:System.Uri>oggetto.
+Per correggere una violazione di questa regola, modificare il tipo restituito in un <xref:System.Uri>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -64,7 +64,7 @@ dotnet_code_quality.ca1055.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un tipo `ErrorProne`,, che viola la regola e un tipo, `SaferWay`, che soddisfa la regola.
+Nell'esempio seguente viene illustrato un tipo, `ErrorProne`, che viola questa regola e un tipo, `SaferWay`, che soddisfa la regola.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1055-uri-return-values-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1055-uri-return-values-should-not-be-strings_1.vb)]
@@ -74,5 +74,5 @@ Nell'esempio seguente viene illustrato un tipo `ErrorProne`,, che viola la regol
 
 - [CA1056: Le proprietà URI non devono essere stringhe](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 - [CA1054: I parametri URI non devono essere stringhe](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-- [CA2234: Passare oggetti System. URI anziché stringhe](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Gli overload URI di stringa chiamano gli overload System. Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA2234: Passare oggetti System.Uri invece di stringhe](../code-quality/ca2234.md)
+- [CA1057: Gli overload URI dei valori di stringa chiamano gli overload System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

@@ -1,5 +1,5 @@
 ---
-title: Esaminare i dati usando finestre del debugger | Microsoft Docs
+title: Esaminare i dati utilizzando le finestre del debugger | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
@@ -9,23 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e14f1864452edd00237164e14af74330e3c209f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: c3d7303c1212a8042cb51abcfa363d59e41e67cc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033013"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431754"
 ---
-# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Esaminare i dati usando finestre del debugger in Visual Studio
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Esaminare i dati usando le finestre del debugger in Visual Studio
 
 È possibile aprire la maggior parte delle finestre del debugger durante il debug del programma. Per visualizzare un elenco delle finestre del debugger, impostare un punto di interruzione e avviare il debug. Quando si raggiunge il punto di interruzione e l'esecuzione si arresta, fare clic su **Debug > Finestre**.
 
-||||
+|Window|Tasto di scelta rapida|Vedere l'argomento|
 |-|-|-|
-|**Finestra**|**Tasto di scelta rapida**|**Argomento da consultare**|
 |Punti di interruzione|CTRL+ALT+B|[Usare i punti di interruzione](../debugger/using-breakpoints.md)|
 |Impostazioni eccezioni|CTRL+ALT+E|[Gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md)|
-|Output|CTRL+ALT+O|[Finestra di output](../ide/reference/output-window.md)|
+|Output|CTRL+ALT+O|[Output (finestra)](../ide/reference/output-window.md)|
 |Espressioni di controllo|CTRL+ALT+W, (1, 2, 3, 4)|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
 |Controllo immediato|MAIUSC+F9|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
 |Auto|CTRL+ALT+V, A|[Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)|
@@ -39,10 +38,10 @@ ms.locfileid: "67033013"
 |Thread GPU|-|[Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Attività|CTRL+MAIUSC+D, K|[Uso della finestra Attività](../debugger/using-the-tasks-window.md)|
 |Debug interattivo di Python|MAIUSC+ALT+I|[Finestra REPL interattiva per Python](../python/python-interactive-repl-in-visual-studio.md)|
-|Console JavaScript|CTRL+ALT+V, C|[Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|Console JavaScript|CTRL+ALT+V, C|[Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM Explorer|CTRL+ALT+V, D|[Eseguire il debug del layout usando DOM Explorer](/visualstudio/debugger/quickstart-debug-html-and-css)|
-|Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|
-|Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md)|
+|Albero elementi visivi attivi|-|[Analizzare le proprietà XAML durante il debug](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
+|Esplora proprietà attive|-|[Analizzare le proprietà XAML durante il debug](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Processi|CTRL+ALT+Z|[Debug di thread e processi](../debugger/debug-threads-and-processes.md)|
 |Memoria|CTRL+ALT+M, (1, 2, 3, 4)|[Finestra Memoria](../debugger/memory-windows.md)|
 |Disassembly|CTRL+ALT+D|[Procedura: Usare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|

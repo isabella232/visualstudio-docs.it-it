@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 93233f4c4fe7d718b128d569ae2fa55858f2453b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235241"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440591"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni non previste
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235241"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -66,13 +66,13 @@ Le proprietà sono essenzialmente campi intelligenti. Pertanto, devono comportar
 
 Le eccezioni seguenti possono essere generate da un metodo Get della proprietà:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>e tutti i derivati <xref:System.ObjectDisposedException?displayProperty=fullName>(incluso)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
 
-- <xref:System.ArgumentException?displayProperty=fullName>(solo da Get indicizzato)
+- <xref:System.ArgumentException?displayProperty=fullName> (solo da Get indicizzato)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(solo da Get indicizzato)
+- <xref:System.Collections.Generic.KeyNotFoundException> (solo da Get indicizzato)
 
 ### <a name="event-accessor-methods"></a>Metodi della funzione di accesso agli eventi
 
@@ -80,11 +80,11 @@ Le funzioni di accesso agli eventi devono essere semplici operazioni che non gen
 
 Le eccezioni seguenti possono essere generate da una funzione di accesso eventi:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>e tutti i derivati <xref:System.ObjectDisposedException?displayProperty=fullName>(incluso)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e tutti i derivati (incluso <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>e tutti i derivati
+- <xref:System.NotSupportedException?displayProperty=fullName> e tutti i derivati
 
-- <xref:System.ArgumentException>e derivati
+- <xref:System.ArgumentException> e derivati
 
 ### <a name="equals-methods"></a>Metodi Equals
 
@@ -94,7 +94,7 @@ I seguenti metodi **Equals** non devono generare eccezioni:
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Un metodo **Equals** deve restituire `true` o `false` invece di generare un'eccezione. Se, ad esempio, vengono passati due tipi non corrispondenti, il metodo deve restituire `false` solo anziché generare un' <xref:System.ArgumentException>eccezione.
+Un metodo **Equals** deve restituire `true` o `false` anziché generare un'eccezione. Se, ad esempio, viene passato un valore uguale a due tipi non corrispondenti, deve restituire solo `false` anziché generare un <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Metodi GetHashCode
 
@@ -106,7 +106,7 @@ I metodi **GetHashCode** seguenti non devono in genere generare eccezioni:
 
 **GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere gli elementi nella tabella hash.
 
-Le versioni di **GetHashCode** che accettano un argomento possono generare un' <xref:System.ArgumentException>eccezione. Tuttavia, **Object. GetHashCode** non deve mai generare un'eccezione.
+Le versioni di **GetHashCode** che accettano un argomento possono generare un <xref:System.ArgumentException>. Tuttavia, **Object. GetHashCode** non deve mai generare un'eccezione.
 
 ### <a name="tostring-methods"></a>Metodi ToString
 
@@ -122,13 +122,13 @@ La generazione di un'eccezione da parte di un finalizzatore causa un errore velo
 
 ### <a name="dispose-methods"></a>Metodi Dispose
 
-Un <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> metodo non deve generare un'eccezione. Dispose viene spesso chiamato come parte della logica di pulizia in `finally` una clausola. Pertanto, la generazione esplicita di un'eccezione da Dispose impone all'utente di aggiungere la `finally` gestione delle eccezioni all'interno della clausola.
+Un metodo <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> non deve generare un'eccezione. Dispose viene spesso chiamato come parte della logica di pulizia in una clausola `finally`. Pertanto, la generazione esplicita di un'eccezione da Dispose impone all'utente di aggiungere la gestione delle eccezioni all'interno della clausola `finally`.
 
 Il percorso del codice **Dispose (false)** non deve mai generare eccezioni perché il metodo Dispose viene quasi sempre chiamato da un finalizzatore.
 
 ### <a name="equality-operators--"></a>Operatori di uguaglianza (= =,! =)
 
-Analogamente ai metodi Equals, gli operatori di `true` uguaglianza `false`devono restituire o e non devono generare eccezioni.
+Analogamente ai metodi Equals, gli operatori di uguaglianza devono restituire `true` o `false` e non devono generare eccezioni.
 
 ### <a name="implicit-cast-operators"></a>Operatori cast impliciti
 
@@ -146,7 +146,7 @@ Se la violazione è stata causata da una dichiarazione di eccezione anziché da 
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA2219 Non generare eccezioni in clausole di eccezione](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: Non generare eccezioni in clausole di eccezione](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>Vedere anche
 

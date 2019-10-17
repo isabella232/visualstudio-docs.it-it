@@ -11,39 +11,39 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 738bb1bcf14d5b3459f325fe13eb3c4b0119e562
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816357"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448960"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare i criteri di archiviazione standard di analisi codice
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
-È possibile richiedere che l'analisi del codice deve essere eseguito in tutti i progetti di codice in un progetto Azure DevOps usando i criteri di controllo dell'analisi codice. Richiedere l'analisi del codice, è possibile migliorare la qualità del codice che viene archiviata nella codebase.
+È possibile richiedere l'esecuzione dell'analisi del codice in tutti i progetti di codice in un progetto DevOps di Azure usando i criteri di archiviazione dell'analisi del codice. La richiesta di analisi del codice può migliorare la qualità del codice archiviato nella codebase.
 
 > [!NOTE]
 > Questa funzionalità è disponibile solo se si usa Team Foundation Server.
 
-Criteri di controllo dell'analisi del codice vengono impostati nelle impostazioni del progetto e si applicano a ogni progetto di codice. Esecuzioni dell'analisi del codice sono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si abilita un criterio di controllo dell'analisi codice, file in un progetto di codice che devono essere archiviati devono essere compilati termine dell'ultima modifica e analisi del codice eseguito che contiene, come minimo, le regole nelle impostazioni del progetto devono essere eseguite nel computer in cui la modifica s sono state apportate.
+I criteri di archiviazione dell'analisi del codice vengono impostati nelle impostazioni del progetto e si applicano a ogni progetto di codice. Le esecuzioni dell'analisi del codice sono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Le esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si Abilita un criterio di archiviazione dell'analisi del codice, i file in un progetto di codice da archiviare devono essere compilati dopo l'ultima modifica e un'esecuzione dell'analisi del codice che contiene almeno le regole nelle impostazioni del progetto devono essere eseguite nel computer in cui la modifica sono state effettuate.
 
-- Per codice gestito, si impostano i criteri di archiviazione specificando una *set di regole* che contiene un sottoinsieme di regole di analisi codice.
+- Per il codice gestito, è possibile impostare i criteri di archiviazione specificando un *set* di regole contenente un subset delle regole di analisi del codice.
 
-- Per codice C/C++, in Visual Studio 2017 versione 15.6 e versioni precedenti, i criteri di controllo richiedono che vengano eseguite tutte le regole di analisi codice. È possibile aggiungere le direttive del preprocessore per disabilitare regole specifiche per singoli progetti di codice nel progetto Azure DevOps. Nella versione 15.7 e successive, è possibile utilizzare **/analyze: ruleset** per specificare le regole da eseguire. Per altre informazioni, vedere [usando i set di regole per specificare le regole C++ da eseguire](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- Per C/C++ code, in Visual Studio 2017 versione 15,6 e precedenti, i criteri di archiviazione richiedono l'esecuzione di tutte le regole di analisi del codice. È possibile aggiungere direttive del pre-processore per disabilitare regole specifiche per i singoli progetti di codice nel progetto DevOps di Azure. In 15,7 e versioni successive è possibile usare **/analyze: RuleSet** per specificare le regole da eseguire. Per ulteriori informazioni, vedere [utilizzo di set di regole per C++ specificare le regole da eseguire](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
 
-Dopo aver specificato un criterio di controllo per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi codice per progetti di codice alle impostazioni dei criteri del progetto DevOps di Azure.
+Dopo aver specificato i criteri di archiviazione per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi del codice per i progetti di codice nelle impostazioni dei criteri del progetto DevOps di Azure.
 
-## <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor Criteri di archiviazione
+## <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor dei criteri di archiviazione
 
-1. In Team Explorer, fare clic sul nome del progetto, scegliere **impostazioni del progetto**, quindi fare clic su **controllo del codice sorgente**.
+1. In Team Explorer fare clic con il pulsante destro del mouse sul nome del progetto, scegliere **Impostazioni progetto**, quindi fare clic su **controllo del codice sorgente**.
 
-1. Nel **controllo del codice sorgente** finestra di dialogo, seleziona la **dei criteri di archiviazione** scheda.
+1. Nella finestra di dialogo **controllo del codice sorgente** selezionare la scheda **criteri di archiviazione** .
 
-1. Eseguire una delle operazioni seguenti:
+1. Effettuare una delle operazioni riportate di seguito:
 
-    - Fare clic su **Add** per creare un nuovo criterio di controllo.
+    - Fare clic su **Aggiungi** per creare nuovi criteri di archiviazione.
 
-    - Fare doppio clic su esistente **analisi del codice** degli elementi nella **tipo di criterio** elenco per modificare i criteri.
+    - Fare doppio clic sull'elemento di **analisi del codice** esistente nell'elenco tipo di **criteri** per modificare il criterio.
 
 ## <a name="to-set-policy-options"></a>Per impostare le opzioni dei criteri
 
@@ -51,22 +51,22 @@ Selezionare o deselezionare le opzioni seguenti:
 
 |Opzione|Descrizione|
 |------------|-----------------|
-|**Consenti archiviazione dei soli file che fanno parte della soluzione corrente.**|Analisi del codice può eseguire solo sui file specificati nel file di configurazione soluzione e progetto. Questo criterio garantisce che tutto il codice che fa parte di una soluzione verrà analizzato.|
-|**Applicare analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ deve essere compilato con la /ANALYZE opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|
-|**Applicare l'analisi del codice per il codice gestito**|Richiede che tutti i progetti gestiti Esegui analisi del codice e compilare prima che possano essere archiviati.|
+|**Applicare l'archiviazione per contenere solo i file che fanno parte della soluzione corrente.**|L'analisi del codice può essere eseguita solo su file specificati nei file di configurazione della soluzione e del progetto. Questo criterio garantisce che tutto il codice che fa parte di una soluzione venga analizzato.|
+|**Applicare l'analisiC++ C/codice (/Analyze)**|Richiede che tutti i progetti C++ C o siano compilati con l'opzione del compilatore/analyze per eseguire l'analisi del codice prima di poterli archiviare.|
+|**Imponi analisi codice per codice gestito**|Richiede che tutti i progetti gestiti eseguano l'analisi del codice e vengano compilati prima di poterli archiviare.|
 
 ## <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestite
 
-Dal **eseguire questo set di regole** elencare, usare uno dei metodi seguenti:
+Dall'elenco **Esegui questo set di regole** , usare uno dei metodi seguenti:
 
 - Selezionare un set di regole standard Microsoft.
 
-- Selezionare una regola personalizzata impostata facendo  **\<seleziona Set di regole dal controllo del codice sorgente... >** . Quindi, digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:
+- Selezionare un set di regole personalizzate facendo clic sul **set di regole \<Selezionare dal controllo del codice sorgente... >** . Digitare quindi il percorso del controllo della versione del set di regole nel browser del controllo del codice sorgente. La sintassi di un percorso di controllo della versione è la seguente:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
-Per altre informazioni su come creare ed implementare una regola di criteri di archiviazione personalizzati, vedere [criteri di controllo implementare personalizzati per codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Per ulteriori informazioni su come creare e implementare un set di regole dei criteri di archiviazione personalizzato, vedere [implementare criteri di archiviazione personalizzati per il codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare e usare criteri di controllo dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Creare e usare criteri di archiviazione dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

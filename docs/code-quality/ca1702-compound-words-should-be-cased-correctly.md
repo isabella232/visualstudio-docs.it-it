@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: ea3285bfd5769a2bd37363d5a9eb6179b9cef563
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234341"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439908"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234341"
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzioni durante l'attivazione degli assembly.<br /><br /> Senza interruzioni: quando viene attivato sui parametri di tipo.|
 
 ## <a name="cause"></a>Causa
@@ -44,11 +44,11 @@ Le convenzioni di denominazione forniscono un aspetto comune per le librerie des
 
 Modificare il nome in modo che sia inserito correttamente nel caso.
 
-## <a name="language"></a>Linguaggio
+## <a name="language"></a>Language
 
 Il controllo ortografico attualmente controlla solo i dizionari delle impostazioni cultura in lingua inglese. È possibile modificare le impostazioni cultura del progetto nel file di progetto aggiungendo l'elemento **CodeAnalysisCulture** .
 
-Ad esempio:
+Esempio:
 
 ```xml
 <Project ...>
@@ -65,9 +65,9 @@ Ad esempio:
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1701 Le parole composte della stringa di risorsa devono essere configurate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709 Gli identificatori devono essere configurati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708 Gli identificatori devono differire più di case](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701: Le parole composte di una stringa di risorsa devono essere digitate correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Vedere anche
 

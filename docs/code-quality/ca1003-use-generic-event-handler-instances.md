@@ -1,5 +1,5 @@
 ---
-title: 'CA1003: Usare istanze di gestori eventi generici'
+title: 'Ca1003: Utilizzare istanze di gestori eventi generici'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c654da177e4a9cf820887cf74977a4c3da5a57b6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 42e40acfc8034f27c8b9131b6d5c8f8bb2f95dcb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236650"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441727"
 ---
-# <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Usare istanze di gestori eventi generici
+# <a name="ca1003-use-generic-event-handler-instances"></a>Ca1003: Utilizzare istanze di gestori eventi generici
 
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
 |CheckId|CA1003|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -41,13 +41,13 @@ Per impostazione predefinita, questa regola esamina solo i tipi visibili esterna
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Prima di .NET, per passare informazioni personalizzate al gestore eventi, era necessario dichiarare un nuovo delegato che specificava una classe derivata dalla <xref:System.EventArgs?displayProperty=fullName> classe. In .NET, il delegato <xref:System.EventHandler%601?displayProperty=fullName> generico consente di usare tutte le classi derivate da <xref:System.EventArgs> in combinazione con il gestore eventi.
+Prima di .NET, per passare informazioni personalizzate al gestore eventi, era necessario dichiarare un nuovo delegato che specificava una classe derivata dalla classe <xref:System.EventArgs?displayProperty=fullName>. In .NET, il delegato generico <xref:System.EventHandler%601?displayProperty=fullName> consente di usare tutte le classi derivate da <xref:System.EventArgs> insieme al gestore dell'evento.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, rimuovere il delegato e sostituirne l'utilizzo usando il <xref:System.EventHandler%601?displayProperty=fullName> delegato.
+Per correggere una violazione di questa regola, rimuovere il delegato e sostituirne l'utilizzo usando il delegato <xref:System.EventHandler%601?displayProperty=fullName>.
 
-Se il delegato viene generato automaticamente dal compilatore Visual Basic, modificare la sintassi della dichiarazione di evento in modo da usare <xref:System.EventHandler%601?displayProperty=fullName> il delegato.
+Se il delegato viene generato automaticamente dal compilatore Visual Basic, modificare la sintassi della dichiarazione di evento in modo da usare il delegato <xref:System.EventHandler%601?displayProperty=fullName>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -70,19 +70,19 @@ Nell'esempio seguente viene illustrato un delegato che viola la regola. Nell'ese
 [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
 [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
-Il frammento di codice seguente rimuove la dichiarazione del delegato dall'esempio precedente, che soddisfa la regola. Sostituisce l'uso nei `ClassThatRaisesEvent` metodi e `ClassThatHandlesEvent` usando il <xref:System.EventHandler%601?displayProperty=fullName> delegato.
+Il frammento di codice seguente rimuove la dichiarazione del delegato dall'esempio precedente, che soddisfa la regola. Sostituisce l'uso nei metodi `ClassThatRaisesEvent` e `ClassThatHandlesEvent` usando il delegato <xref:System.EventHandler%601?displayProperty=fullName>.
 
 [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1005 Evitare parametri eccessivi nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010 Le raccolte devono implementare un'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1000 Non dichiarare membri statici su tipi generici](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
-- [CA1002 Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006 Non annidare tipi generici nelle firme membro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004 I metodi generici devono fornire il parametro di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1007: Usare i generics laddove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005: Evitare un uso eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010: Le raccolte devono implementare un'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+- [CA1002: Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006: Non annidare tipi generici nelle firme dei membri](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004: I metodi generici devono specificare parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1007: Usare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Vedere anche
 

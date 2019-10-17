@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 719f5ffe3cd3fd7a897aeaff270a1e32661ae590
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233912"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438934"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: I nomi delle proprietà non devono corrispondere ai metodi get
 
@@ -30,7 +30,7 @@ ms.locfileid: "71233912"
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -75,4 +75,4 @@ L'esempio seguente contiene un metodo e una proprietà che violano questa regola
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1024: Usare le proprietà laddove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Usare proprietà dove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)
