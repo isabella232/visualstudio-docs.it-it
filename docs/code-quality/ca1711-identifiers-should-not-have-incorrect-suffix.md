@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1a2ae438091c55c9e0e6b14350ca2527907ab33c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234136"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443916"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Gli identificatori non devono contenere un suffisso non corretto
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234136"
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -61,9 +61,9 @@ Inoltre, **non** usare i suffissi seguenti:
 
 - `Enum`
 
-- `Impl`(usare `Core` invece)
+- `Impl` (usare invece `Core`)
 
-- `Ex`o un suffisso simile per distinguerlo da una versione precedente dello stesso tipo
+- `Ex` o un suffisso simile per distinguerlo da una versione precedente dello stesso tipo
 
 Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
@@ -87,7 +87,7 @@ dotnet_code_quality.ca1711.api_surface = private, internal
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1710 Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Vedere anche
 

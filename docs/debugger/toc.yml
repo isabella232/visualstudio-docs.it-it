@@ -91,7 +91,7 @@
         - name: Visualizzare la memoria per le variabili
           href: memory-windows.md
         - name: Analizzare le proprietà XAML durante il debug
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: Stack di chiamate
       items:
         - name: Visualizzare lo stack di chiamate
@@ -108,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Arrestare le modifiche al codice
           href: how-to-stop-code-changes.md
-        - name: Modifica e continuazione (Visual C++)
+        - name: Modifica e continuazione (C++)
           items:
-            - name: Modifica e continuazione per Visual C++
+            - name: Modifica e continuazione per C++
               href: edit-and-continue-visual-cpp.md
             - name: Modifiche al codice supportate (C++)
               href: supported-code-changes-cpp.md
@@ -131,9 +131,9 @@
         - name: Ricaricamento rapido XAML
           items:
             - name: Scrivere ed eseguire il debug di codice XAML in esecuzione
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Risoluzione dei problemi relativi al ricaricamento rapido XAML
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'Modifica e continuazione non supportate per F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Registrare nella finestra di output
@@ -202,7 +202,7 @@
                   items:
                     - name: Impostazioni di progetto per una configurazione di debug C++
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: Abilitare le funzionalità di debug in Visual C++ (-D_DEBUG)
+                    - name: Abilitare le funzionalità di debug in C++ (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Impostazioni di pagine delle proprietà per progetti Web
                   href: property-pages-settings-for-web-projects.md
@@ -234,7 +234,7 @@
               items:
                 - name: Creare viste personalizzate di oggetti di C++
                   href: create-custom-views-of-native-objects.md
-                - name: Compatibilità del visualizzatore personalizzato di Visual C++
+                - name: Compatibilità del visualizzatore personalizzato di C++
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Viste personalizzate (gestite)
               items:
@@ -435,7 +435,7 @@
             - name: Eseguire il debug di un pacchetto dell'app installato
               href: debug-installed-app-package.md
             - name: Debug XAML in Blend
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML e CSS
               items:
                 - name: Eseguire il debug di HTML e CSS
@@ -500,7 +500,7 @@
           items:
             - name: Eseguire il debug di codice nativo
               href: debugging-native-code.md
-            - name: 'Debug della preparazione: Tipi di progetto Visual C++'
+            - name: 'Debug della preparazione: Tipi di progetto C++'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: Eseguire il debug di codice ottimizzato
               href: how-to-debug-optimized-code.md
