@@ -1,5 +1,5 @@
 ---
-title: 'CA1047: Non dichiarare membri protected nei tipi sealed'
+title: 'CA1047: Non dichiarare membri protetti nei tipi sealed'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,24 +17,24 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3114ea004c425567ae479343e0449d2cbc3aa669
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b55da06cdaee07e0d5c30dc6c5220ef2d50f8d0b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235696"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449098"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Non dichiarare membri protected nei tipi sealed
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Non dichiarare membri protetti nei tipi sealed
 
 |||
 |-|-|
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
-Un tipo pubblico è `sealed` (`NotInheritable` in Visual Basic) e dichiara un membro protetto o un tipo annidato protetto. Questa regola non segnala le violazioni dei <xref:System.Object.Finalize%2A> metodi, che devono seguire questo modello.
+Un tipo pubblico è `sealed` (`NotInheritable` in Visual Basic) e dichiara un membro protetto o un tipo annidato protetto. Questa regola non segnala le violazioni per i metodi <xref:System.Object.Finalize%2A>, che devono seguire questo modello.
 
 ## <a name="rule-description"></a>Descrizione della regola
 I tipi dichiarano membri protetti in modo che i tipi che ereditano possano accedere al membro o eseguirne l'override. Per definizione, non è possibile ereditare da un tipo sealed, il che significa che non è possibile chiamare metodi protetti su tipi sealed.

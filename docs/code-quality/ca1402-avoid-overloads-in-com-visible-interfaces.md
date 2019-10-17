@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fdbb6012fb1252c90014ba91caf8ad7dacf901c2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1617ad2d5132f22da3c25565e6310977b286eaef
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234857"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444334"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Evitare gli overload nelle interfacce visibili a COM
 
@@ -56,7 +56,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
 Visual Basic 6 client COM non possono implementare metodi di interfaccia usando un carattere di sottolineatura nel nome.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Per correggere una violazione di questa regola, rinominare i metodi di overload in modo che i nomi siano univoci. In alternativa, rendere invisibile l'interfaccia a com modificando l'accessibilità `internal` in`Friend` ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]in) o applicando <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> l'attributo impostato `false`su.
+Per correggere una violazione di questa regola, rinominare i metodi di overload in modo che i nomi siano univoci. In alternativa, rendere invisibile l'interfaccia a COM modificando l'accessibilità in `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) o applicando l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> impostato su `false`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 Non escludere un avviso da questa regola.
@@ -72,7 +72,7 @@ Nell'esempio seguente viene illustrata un'interfaccia che viola la regola e un'i
 
 [CA1407: Evitare i membri statici nei tipi visibili a COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
-[CA1017 Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
 

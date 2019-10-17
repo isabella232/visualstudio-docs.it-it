@@ -10,7 +10,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - project templates, debugging
-- Visual C++ projects, debugging
+- C++ projects, debugging
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc3a8339fffab762c2b6d7a649d3bae8efa76c8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925495"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431420"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Debug della preparazione: Tipi di progetto Visual C++
+# <a name="debugging-preparation-c-project-types"></a>Preparazione al debug C++ : tipi di progetto
 In questa sezione viene descritto come eseguire il debug dei tipi di progetto di base creati mediante i modelli di progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
 
  Si noti che i tipi di progetto che creano dll come output sono stati raggruppati in [progetti di dll di debug](../debugger/debugging-dll-projects.md) a causa delle funzionalità comuni condivise.
@@ -47,13 +47,13 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Proprietà &#124; di configurazione CC++ &#124; /nodo di ottimizzazione
 
-|Nome proprietà|Impostazione|
+|Nome proprietà|Impostazioni|
 |-------------------|-------------|
 |**Optimization**|Impostare su **Disabilitato (/0d).** L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra **Disassembly** è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nelle finestre del codice sorgente. È possibile che altre funzionalità, ad esempio il debug passo a passo, non funzionino come previsto.|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Nodo di &#124; &#124; debug del linker delle proprietà di configurazione
 
-|Nome proprietà|Impostazione|
+|Nome proprietà|Impostazioni|
 |-------------------|-------------|
 |**Genera informazioni di debug**|Si consiglia di impostare questa opzione sempre su **Sì (/DEBUG)** per creare i simboli di debug e i file necessari per il debug. Quando l'applicazione passa alla fase di produzione, è possibile disattivare questa opzione.|
 
@@ -97,7 +97,7 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
    [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applicazioni Windows Forms (.NET)
- Il modello **Windows Forms Application (.NET)** consente di creare un'applicazione Windows Forms in [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [Procedura: Creare un progetto Applicazione Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ Il modello **Windows Forms Application (.NET)** consente di creare un'applicazione Windows Forms in [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Per altre informazioni, vedere [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è simile a quello delle applicazioni Windows Form gestite.
 

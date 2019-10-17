@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 875e0b4052cdc7287b264899620d4e083ac6b153
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234070"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443869"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Gli identificatori devono contenere il prefisso corretto
 
@@ -31,14 +31,14 @@ ms.locfileid: "71234070"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzioni quando vengono attivate sulle interfacce.<br /><br /> Senza interruzioni, quando viene generato su parametri di tipo generico.|
 
 ## <a name="cause"></a>Causa
 
 Il nome di un'interfaccia non inizia con una "I" maiuscola.
 
--oppure-
+oppure
 
 Il nome di un [parametro di tipo generico](/dotnet/csharp/programming-guide/generics/generic-type-parameters) su un tipo o su un metodo non inizia con un carattere ' t'maiuscolo.
 
@@ -71,7 +71,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Questa regola non `Collection<T>`viene mai attivata per un parametro `T`di tipo denominato, ad esempio.
+> Questa regola non viene mai attivata per un parametro di tipo denominato `T`, ad esempio `Collection<T>`.
 
 ### <a name="api-surface"></a>Superficie API
 
@@ -121,4 +121,4 @@ Il seguente frammento di codice corregge la violazione precedente anteponendo il
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1722: Gli identificatori non devono contenere un prefisso errato](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722: Gli identificatori non devono contenere il prefisso non corretto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

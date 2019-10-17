@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7143b1e5550d7dbc24b3364b9a3a1e855d52e632
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234319"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443903"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Le stringhe di risorsa devono essere digitate correttamente
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234319"
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -36,11 +36,11 @@ Una stringa di risorsa contiene una o più parole che non sono riconosciute dall
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Questa regola analizza la stringa di risorsa in parole (parole composte suddivisione in token) e controlla l'ortografia di ogni parola/token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Questa regola analizza la stringa di risorsa in parole (parole composte suddivisione in token) e controlla l'ortografia di ogni parola/token. Per informazioni sull'algoritmo di analisi, vedere [CA1704: gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, usare parole complete che sono state digitate correttamente o aggiungere parole a un dizionario personalizzato. Per informazioni sull'uso dei dizionari personalizzati, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Per correggere una violazione di questa regola, usare parole complete che sono state digitate correttamente o aggiungere parole a un dizionario personalizzato. Per informazioni sull'uso dei dizionari personalizzati, vedere [CA1704: gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="change-the-dictionary-language"></a>Modificare la lingua del dizionario
 
@@ -58,6 +58,6 @@ Non escludere un avviso da questa regola. Le parole con ortografia corretta cons
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA1701 Le parole composte della stringa di risorsa devono essere configurate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1701: Le parole composte di una stringa di risorsa devono essere digitate correttamente con distinzione tra maiuscole e minuscole](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
 - [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: I valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA2204: I valori letterali devono essere digitati in modo corretto](../code-quality/ca2204.md)

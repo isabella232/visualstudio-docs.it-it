@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Modificare il codice in Visual Studio
+summary: Informazioni sulla modifica di attività, ad esempio l'apertura di un progetto, l'uso delle funzionalità dell'editor di codice e la gestione di stili di codice coerenti.
+metadata:
+  title: Funzionalità dell'editor del codice
+  description: Informazioni sulle funzionalità di modifica del codice in Visual Studio.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 275ac40ff1c2edf70a8388b09e50fc3d496e8050
+  ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72391463"
+landingContent:
+- title: Aprire o creare un progetto
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Creare un nuovo progetto
+      url: create-new-project.md
+    - text: Aprire un progetto da un repository
+      url: ../get-started/tutorial-open-project-from-repo.md
+  - linkListType: how-to-guide
+    links:
+    - text: Usare Visual Studio senza progetti o soluzioni
+      url: develop-code-in-visual-studio-without-projects-or-solutions.md
+- title: Usare le funzionalità di modifica
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Usare l'editor del codice
+      url: writing-code-in-the-code-and-text-editor.md
+    - text: Spostarsi all'interno del codice
+      url: navigating-code.md
+    - text: Generare e correggere il codice
+      url: code-generation-in-visual-studio.md
+    - text: Usare IntelliSense per il completamento del codice
+      url: using-intellisense.md
+    - text: Gestisci preferenze stile codice
+      url: code-styles-and-code-cleanup.md
+    - text: Analisi codice
+      url: ../code-quality/roslyn-analyzers-overview.md
+- title: Introduzione ai linguaggi di programmazione
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Introduzione a C# e ad ASP.NET Core in Visual Studio
+      url: tutorial-csharp-aspnet-core.md
+    - text: Creare un'app console C++ in Visual Studio
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Introduzione a Python in Visual Studio
+      url: quickstart-python.md
+    - text: Creare un'app console con Visual Basic
+      url: quickstart-visual-basic-console.md
+    - text: Creare un'app Web con Node.js
+      url: quickstart-nodejs.md

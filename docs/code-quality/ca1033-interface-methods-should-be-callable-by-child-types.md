@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ed38a713f9e9a2ab95ad7e1062c6d5d9ab541d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: bc9cd160afa9b882ebb979b6000d2ab277143abe
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236100"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449263"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: I metodi di interfaccia devono essere richiamabili dai tipi figlio
 
@@ -27,7 +27,7 @@ ms.locfileid: "71236100"
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -45,7 +45,7 @@ Per correggere una violazione di questa regola, implementare un nuovo metodo che
 È possibile eliminare un avviso da questa regola se viene fornito un metodo visibile esternamente con la stessa funzionalità ma con un nome diverso rispetto al metodo implementato in modo esplicito.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato un tipo `ViolatingBase`,, che viola la regola e un tipo, `FixedBase`, che mostra una correzione per la violazione.
+Nell'esempio seguente viene illustrato un tipo, `ViolatingBase`, che viola la regola e un tipo, `FixedBase`, che mostra una correzione per la violazione.
 
 [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 

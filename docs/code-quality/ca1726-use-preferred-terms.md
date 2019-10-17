@@ -1,5 +1,5 @@
 ---
-title: 'CA1726: Usare termini preferiti'
+title: 'CA1726: Utilizzare termini preferiti'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f359f7aa24ada0edf2c98a7d527ed715df85086
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e9842e52607af0d7ec886660a14450ea89c23459
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233913"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438919"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: Usare termini preferiti
+# <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizzare termini preferiti
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzioni durante l'attivazione degli assembly<br /><br /> Senza interruzioni-quando viene attivato sui parametri di tipo|
 
 ## <a name="cause"></a>Causa

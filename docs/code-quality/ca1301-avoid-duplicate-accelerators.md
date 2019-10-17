@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1970eefee70fa14179c77566f23f213f09026646
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235169"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444389"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitare tasti di scelta rapida duplicati
 
@@ -46,7 +46,7 @@ Per correggere una violazione di questa regola, definire chiavi di accesso univo
 Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato un form minimo contenente due controlli con chiavi di accesso identiche. Le chiavi vengono archiviate in un file di risorse, che non viene visualizzato. Tuttavia, i relativi valori vengono visualizzati nelle `checkBox.Text` righe impostate come commento. Il comportamento degli acceleratori duplicati può essere esaminato scambiando le `checkBox.Text` righe con le relative controparti commentate. Tuttavia, in questo caso, l'esempio non genererà un avviso dalla regola.
+Nell'esempio seguente viene illustrato un form minimo contenente due controlli con chiavi di accesso identiche. Le chiavi vengono archiviate in un file di risorse, che non viene visualizzato. Tuttavia, i relativi valori vengono visualizzati nelle righe impostate come commento `checkBox.Text`. Il comportamento degli acceleratori duplicati può essere esaminato scambiando le righe `checkBox.Text` con le relative controparti commentate. Tuttavia, in questo caso, l'esempio non genererà un avviso dalla regola.
 
 [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 

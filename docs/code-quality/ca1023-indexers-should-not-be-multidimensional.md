@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f788ded21ef5dd9c84d218cedb55ec8dcf7eff2d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 9b9488d3f28567e3e39f86355b353f6d1d9d84d9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236172"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441429"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Gli indicizzatori non devono essere multidimensionali
 
@@ -31,7 +31,7 @@ ms.locfileid: "71236172"
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -47,13 +47,13 @@ Per correggere una violazione di questa regola, modificare la progettazione in m
 Eliminare un avviso da questa regola solo dopo aver valutato attentamente la necessità dell'indicizzatore non standard.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato un tipo `DayOfWeek03`,, con un indicizzatore multidimensionale che viola la regola. L'indicizzatore può essere considerato come un tipo di conversione e pertanto viene esposto in modo più appropriato come metodo. Il tipo viene riprogettato in `RedesignedDayOfWeek03` per soddisfare la regola.
+Nell'esempio seguente viene illustrato un tipo, `DayOfWeek03`, con un indicizzatore multidimensionale che viola la regola. L'indicizzatore può essere considerato come un tipo di conversione e pertanto viene esposto in modo più appropriato come metodo. Il tipo viene riprogettato in `RedesignedDayOfWeek03` per soddisfare la regola.
 
 [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
 [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
 [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA1043: USA argomento di stringa o integrale per gli indicizzatori](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+[CA1043: Usare argomento di tipo stringa o integrale per gli indicizzatori](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
-[CA1024: Usare le proprietà laddove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)
+[CA1024: Usare proprietà dove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)

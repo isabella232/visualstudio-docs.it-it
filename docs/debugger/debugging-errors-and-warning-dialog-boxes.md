@@ -1,5 +1,5 @@
 ---
-title: Debug degli errori e le finestre di dialogo di avviso | Microsoft Docs
+title: Errori di debug e finestre di dialogo di avviso | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852220"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431672"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 Di seguito sono riportate le finestre di errore e di avviso che possono essere visualizzate quando si effettua il debug di un'applicazione.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
  [Asserzione non riuscita (finestra di dialogo)](../debugger/assertion-failed-dialog-box.md)
 
  [Finestra di dialogo Impossibile modificare il valore](../debugger/cannot-change-value-dialog-box.md)
 
  [Impossibile visualizzare il codice sorgente o il disassembly](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Servizi di memoria insufficiente del debugger](../debugger/error-debugger-services-no-memory.md)
+ [Memoria insufficiente per i servizi debugger](../debugger/error-debugger-services-no-memory.md)
 
  [Finestra di dialogo Eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -56,10 +56,10 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
 
  [Impossibile connettersi al computer](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [Errore: Impossibile eseguire il debug perché nel sistema è abilitato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [Errore: impossibile eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Debug di Script e applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debug di script e applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Errori del debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
 
  [Risoluzione dei problemi relativi all'impostazione del debug SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Domande frequenti sul debug di Visual C++](../debugger/debugging-native-code-faqs.md)
+ [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
 
  [Sicurezza del debugger](../debugger/debugger-security.md)

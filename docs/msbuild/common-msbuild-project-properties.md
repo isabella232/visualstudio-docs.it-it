@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 38da720b63c8f5ba6d2ceb89fe8b414c6700cbcd
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745892"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381354"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 Nella tabella seguente sono elencate le proprietà usate di frequente definite nei file di progetto di Visual Studio o incluse nei file con estensione *targets* compresi con MSBuild.
@@ -32,7 +32,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 
 ## <a name="list-of-common-properties-and-parameters"></a>Elenco delle proprietà e dei parametri comuni
 
-| Nome della proprietà o del parametro | Description |
+| Nome della proprietà o del parametro | Descrizione |
 |------------------------------------| - |
 | AdditionalLibPaths | Specifica le cartelle aggiuntive nelle quali i compilatori devono cercare gli assembly di riferimento. |
 | AddModules | Fa sì che il compilatore renda disponibili per il progetto in compilazione tutte le informazioni sui tipi presenti nei file specificati. Questa proprietà è equivalente all'opzione del compilatore `/addModules`. |
@@ -67,7 +67,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | ExcludeDeploymentUrl | L'[attività GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)aggiunge un tag deploymentProvider al manifesto della distribuzione se il file di progetto contiene uno degli elementi seguenti:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Se si utilizza ExcludeDeploymentUrl, tuttavia, è possibile evitare che il tag deploymentProvider venga aggiunto al manifesto di distribuzione anche se viene specificato uno degli URL riportati sopra. A tale scopo, aggiungere la proprietà seguente al file di progetto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Nota:**  ExcludeDeploymentUrl non viene esposta nell'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e può essere impostata solo modificando manualmente il file di progetto. L'impostazione di questa proprietà non ha effetto sulla pubblicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; ciò significa che il tag deploymentProvider viene aggiunto all'URL specificato da PublishUrl. |
 | FileAlignment | Specifica, in byte, il punto in cui allineare le sezioni del file di output. I valori validi sono 512, 1024, 2048, 4096, 8192. Questa proprietà è equivalente all'opzione del compilatore `/filealignment`. |
 | FrameworkPathOverride | Specifica il percorso dei file *mscorlib.dll* e *microsoft.visualbasic.dll*. Questo parametro è equivalente all'opzione `/sdkpath` del compilatore *vbc.exe*. |
-| GenerateDocumentation | (Solo Visual Basic) Parametro booleano che indica se la documentazione è generata dalla compilazione. Se è `true`, le informazioni relative alla documentazione vengono generate dalla compilazione e inserite in un file con estensione *xml* con il nome dell'eseguibile o della libreria creata dalla compilazione. |
+| GenerateDocumentation | (C#, Visual Basic) Parametro booleano che indica se la documentazione è generata dalla compilazione. Se è `true`, le informazioni relative alla documentazione vengono generate dalla compilazione e inserite in un file con estensione *xml* con il nome dell'eseguibile o della libreria creata dalla compilazione. |
 | GenerateSerializationAssemblies | Indica se gli assembly di serializzazione XML devono essere generati da *SGen.exe*, che può essere impostato su attivato, automatico o disattivato. Questa proprietà viene utilizzata solo per gli assembly la cui destinazione è .NET Framework. Per generare assembly di serializzazione XML per gli assembly di .NET Standard o .NET Core, fare riferimento al pacchetto NuGet *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | Percorso di output intermedio completo derivato da `BaseIntermediateOutputPath`, se non viene specificato alcun percorso. Ad esempio *\obj\debug\\* . |
 | KeyContainerName | Nome del contenitore di chiavi con nome sicuro. |

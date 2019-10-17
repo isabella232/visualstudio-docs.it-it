@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 88464effce80b6957dc8945ad17f5a39b4f449c8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: fceabd5487b28d4cf16b5cc0d61cd81de2aeb23a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234513"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444165"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Evitare ereditarietà eccessiva
 
@@ -30,7 +30,7 @@ ms.locfileid: "71234513"
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
-|Category|Microsoft.Maintainability|
+|Category|Microsoft. gestibilità|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa

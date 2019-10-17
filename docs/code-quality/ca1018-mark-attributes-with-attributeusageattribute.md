@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 133ee073398817c037af95e2009c5acc98e1e5a2
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 041555ed8036c145963f00295365fb204f1879dd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306127"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446761"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Contrassegnare gli attributi con AttributeUsageAttribute
 
@@ -30,7 +30,7 @@ ms.locfileid: "72306127"
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -48,15 +48,15 @@ Per correggere una violazione di questa regola, specificare le destinazioni per 
 È necessario correggere una violazione di questa regola anziché escludere il messaggio. Anche se l'attributo eredita <xref:System.AttributeUsageAttribute>, l'attributo deve essere presente per semplificare la manutenzione del codice.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente vengono definiti due attributi. `BadCodeMaintainerAttribute` omette erroneamente l'istruzione <xref:System.AttributeUsageAttribute> e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo descritto in precedenza in questa sezione. Si noti che la proprietà `DeveloperName` è richiesta dalla regola di progettazione [CA1019: Definire le funzioni di accesso per gli argomenti di attributo @ no__t-0 ed è incluso per completezza.
+Nell'esempio seguente vengono definiti due attributi. `BadCodeMaintainerAttribute` omette erroneamente l'istruzione <xref:System.AttributeUsageAttribute> e `GoodCodeMaintainerAttribute` implementa correttamente l'attributo descritto in precedenza in questa sezione. Si noti che la proprietà `DeveloperName` è richiesta dalle funzioni di accesso della regola di progettazione [CA1019: define per gli argomenti dell'attributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) ed è inclusa per completezza.
 
 [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
 [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA1019: Definire le funzioni di accesso per gli argomenti dell'attributo @ no__t-0
+[CA1019: Definire le funzioni di accesso per gli argomenti degli attributi](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
-[CA1813: Evitare gli attributi non sealed @ no__t-0
+[CA1813: Evitare attributi non sealed](../code-quality/ca1813.md)
 
 ## <a name="see-also"></a>Vedere anche
 

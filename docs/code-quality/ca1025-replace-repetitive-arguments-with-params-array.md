@@ -1,5 +1,5 @@
 ---
-title: 'CA1025: Sostituire gli argomenti ripetitivi con una matrice di parametri'
+title: 'Ca1025: Sostituire gli argomenti ripetitivi con una matrice di parametri'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,27 +14,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65d64dd4e881c41b17cd7cb9dc072a6fe800766
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a6b6c45a8a56cab3927355fc4f03c541bcffc1cf
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236138"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446679"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>Ca1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
 
 |||
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 Un metodo pubblico o protetto in un tipo pubblico ha più di tre parametri e gli ultimi tre parametri sono dello stesso tipo.
 
 ## <a name="rule-description"></a>Descrizione della regola
-Usare una matrice di parametri anziché gli argomenti ripetuti quando il numero esatto di argomenti è sconosciuto e gli argomenti della variabile sono dello stesso tipo oppure possono essere passati come lo stesso tipo. Ad esempio, il <xref:System.Console.WriteLine%2A> metodo fornisce un overload di utilizzo generico che usa una matrice di parametri per accettare un numero <xref:System.Object> qualsiasi di argomenti.
+Usare una matrice di parametri anziché gli argomenti ripetuti quando il numero esatto di argomenti è sconosciuto e gli argomenti della variabile sono dello stesso tipo oppure possono essere passati come lo stesso tipo. Ad esempio, il metodo <xref:System.Console.WriteLine%2A> fornisce un overload di utilizzo generico che usa una matrice di parametri per accettare un numero qualsiasi di argomenti <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola, sostituire gli argomenti ripetuti con una matrice di parametri.

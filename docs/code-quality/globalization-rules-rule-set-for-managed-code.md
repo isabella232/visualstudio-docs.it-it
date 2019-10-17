@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 905f3323f4ede33ba8a7e1547bed7a81c43be96d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69584985"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449040"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Set di regole delle Regole di globalizzazione per codice gestito
 
 Usare il set di regole di globalizzazione Microsoft per concentrarsi sui problemi che potrebbero impedire che i dati nell'applicazione vengano visualizzati correttamente in lingue, impostazioni locali e impostazioni cultura diverse. È necessario includere questo set di regole se l'applicazione è localizzata, globalizzata o entrambe.
 
-|Regola|DESCRIZIONE|
+|Regola|Descrizione|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Specificare MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitare tasti di scelta rapida duplicati|
@@ -31,4 +31,4 @@ Usare il set di regole di globalizzazione Microsoft per concentrarsi sui problem
 |[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|Specificare StringComparison|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizzare le stringhe in lettere maiuscole|
 |[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Usare StringComparison ordinale|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|
+|[CA2101](../code-quality/ca2101.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|

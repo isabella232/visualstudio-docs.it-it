@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b39e16b2a94a22582b9f369e647676541fa4220d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234752"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440181"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: I metodi di registrazione COM non devono essere visibili
 
@@ -35,10 +35,10 @@ ms.locfileid: "71234752"
 
 ## <a name="cause"></a>Causa
 
-Un metodo contrassegnato con l' <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attributo o è visibile esternamente.
+Un metodo contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> è visibile esternamente.
 
 ## <a name="rule-description"></a>Descrizione della regola
-Quando un assembly viene registrato con Component Object Model (COM), le voci vengono aggiunte al registro di sistema per ogni tipo visibile a COM nell'assembly. I metodi contrassegnati con gli <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> attributi e <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> vengono chiamati rispettivamente durante i processi di registrazione e annullamento della registrazione per eseguire codice utente specifico per la registrazione e l'annullamento della registrazione di questi tipi. Questo codice non deve essere chiamato al di fuori di questi processi.
+Quando un assembly viene registrato con Component Object Model (COM), le voci vengono aggiunte al registro di sistema per ogni tipo visibile a COM nell'assembly. I metodi contrassegnati con gli attributi <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> e <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> vengono chiamati rispettivamente durante i processi di registrazione e annullamento della registrazione per eseguire codice utente specifico per la registrazione e l'annullamento della registrazione di questi tipi. Questo codice non deve essere chiamato al di fuori di questi processi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola, modificare l'accessibilità del metodo in `private` o `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
@@ -53,7 +53,7 @@ Nell'esempio seguente vengono illustrati due metodi che violano la regola.
 [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA1410 I metodi di registrazione COM devono corrispondere](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410: I metodi di registrazione COM devono corrispondere](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Vedere anche
 

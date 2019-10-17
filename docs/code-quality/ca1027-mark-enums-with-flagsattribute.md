@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8375d2096417948b19a228d8a4f02accac7c0b5f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 9fc9dde4aeb3363e542e475c253b292047f5c1c2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236118"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441370"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Contrassegnare le enumerazioni con FlagsAttribute
 
@@ -27,18 +27,18 @@ ms.locfileid: "71236118"
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
 
-I valori di un'enumerazione sono potenze di due o sono combinazioni di altri valori definiti nell'enumerazione e l' <xref:System.FlagsAttribute?displayProperty=fullName> attributo non è presente. Per ridurre i falsi positivi, questa regola non segnala una violazione per le enumerazioni con valori contigui.
+I valori di un'enumerazione sono potenze di due o sono combinazioni di altri valori definiti nell'enumerazione e l'attributo <xref:System.FlagsAttribute?displayProperty=fullName> non è presente. Per ridurre i falsi positivi, questa regola non segnala una violazione per le enumerazioni con valori contigui.
 
 Per impostazione predefinita, questa regola esamina solo le enumerazioni pubbliche, ma è [configurabile](#configurability).
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Applicare <xref:System.FlagsAttribute> a un'enumerazione quando le costanti denominate possono essere combinate in modo significativo. Si consideri, ad esempio, un'enumerazione dei giorni della settimana in un'applicazione che tiene traccia delle risorse del giorno disponibili. Se la disponibilità di ogni risorsa è codificata usando l'enumerazione <xref:System.FlagsAttribute> presente, è possibile rappresentare qualsiasi combinazione di giorni. Senza l'attributo, è possibile rappresentare solo un giorno della settimana.
+Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Applicare <xref:System.FlagsAttribute> a un'enumerazione quando le costanti denominate possono essere combinate in modo significativo. Si consideri, ad esempio, un'enumerazione dei giorni della settimana in un'applicazione che tiene traccia delle risorse del giorno disponibili. Se la disponibilità di ogni risorsa è codificata usando l'enumerazione con <xref:System.FlagsAttribute> presente, è possibile rappresentare qualsiasi combinazione di giorni. Senza l'attributo, è possibile rappresentare solo un giorno della settimana.
 
 Per i campi che archiviano enumerazioni combinabili, i singoli valori di enumerazione vengono considerati come gruppi di bit nel campo. Pertanto, tali campi vengono talvolta definiti campi di *bit*. Per combinare i valori di enumerazione per l'archiviazione in un campo di bit, usare gli operatori condizionali booleani. Per testare un campo di bit per determinare se è presente un valore di enumerazione specifico, usare gli operatori logici booleani. Affinché un campo di bit memorizzi e recuperi correttamente i valori di enumerazione combinati, ogni valore definito nell'enumerazione deve essere una potenza di due. A meno che non sia così, gli operatori logici booleani non saranno in grado di estrarre i singoli valori di enumerazione archiviati nel campo.
 
@@ -62,13 +62,13 @@ dotnet_code_quality.ca1027.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente, `DaysEnumNeedsFlags` è un'enumerazione che soddisfa i requisiti per l'utilizzo <xref:System.FlagsAttribute> di ma non lo è. L' `ColorEnumShouldNotHaveFlag` enumerazione non contiene valori che sono potenze di due, ma specifica <xref:System.FlagsAttribute>in modo errato. Questo viola la regola [CA2217: Non contrassegnare le enumerazioni con](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)FlagsAttribute.
+Nell'esempio seguente `DaysEnumNeedsFlags` è un'enumerazione che soddisfa i requisiti per l'uso di <xref:System.FlagsAttribute>, ma non lo è. L'enumerazione `ColorEnumShouldNotHaveFlag` non contiene valori che sono potenze di due, ma specifica erroneamente <xref:System.FlagsAttribute>. Questo viola la regola [CA2217: non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217.md).
 
 [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA2217 Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Vedere anche
 

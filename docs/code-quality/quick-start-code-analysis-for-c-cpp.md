@@ -1,5 +1,5 @@
 ---
-title: 'Avvio rapido: Analisi codice per C/C++'
+title: 'Guida introduttiva: Analisi del codice per C/C++'
 description: Eseguire l'analisi statica C++ sul codice in Visual Studio per rilevare i problemi e i difetti di codifica comuni.
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163014"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445639"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>Avvio rapido: Analisi codice per C/C++
+# <a name="quickstart-code-analysis-for-cc"></a>Guida introduttiva: Analisi codice per C/C++
 
 È possibile migliorare la qualità dell'applicazione eseguendo regolarmente l'analisi del codice C o C++. Ciò consente di individuare i problemi comuni, le violazioni delle buone norme di programmazione o i difetti che sono difficili da individuare tramite test. Gli avvisi di analisi del codice sono diversi rispetto agli errori e agli avvisi del compilatore in quanto durante l'analisi del codice vengono cercati modelli di codice specifici che risultano validi ma che potrebbero causare problemi a te o ad altre persone che usano il codice.
 
@@ -28,7 +28,7 @@ ms.locfileid: "72163014"
 
 2. Facoltativamente, negli elenchi **configurazione** e **piattaforma** scegliere la configurazione di compilazione e la piattaforma di destinazione.
 
-3. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato con la configurazione selezionata, selezionare la **Abilita analisi codice su compilazione** casella di controllo. È anche possibile eseguire manualmente l'analisi del codice aprendo il menu **analizza** e quindi scegliendo **Esegui analisi codice su** *NomeProgetto* o **Esegui analisi codice su file**.
+3. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato usando la configurazione selezionata, selezionare la casella di controllo **Abilita analisi codice su compilazione** . È anche possibile eseguire manualmente l'analisi del codice aprendo il menu **analizza** e quindi scegliendo **Esegui analisi codice su** *NomeProgetto* o **Esegui analisi codice su file**.
 
 4. Scegliere il [set di regole](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) che si desidera utilizzare o creare un [set di regole personalizzato](../code-quality/how-to-create-a-custom-rule-set.md). Se si usa LLVM/Clang-CL, vedere [uso di Clang-tidy in Visual Studio](../code-quality/clang-tidy.md) per configurare le opzioni di analisi di Clang-tidy.
 
@@ -103,9 +103,9 @@ Per eliminare un avviso:
 
 Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.
 
-- **Per filtrare gli avvisi per titolo o ID avviso**: Immettere la parola chiave nella casella di ricerca.
+- **Per filtrare gli avvisi per titolo o ID avviso**: immettere la parola chiave nella casella di ricerca.
 
-- **Per filtrare gli avvisi in base alla gravità**: Per impostazione predefinita, ai messaggi di analisi del codice viene assegnata una gravità di **avviso**. È possibile assegnare la gravità di uno o più messaggi come **errore** in un set di regole personalizzato. Nella colonna **gravità** del **Elenco errori**scegliere la freccia a discesa e quindi l'icona del filtro. Scegliere **avviso** o **errore** per visualizzare solo i messaggi a cui è assegnata la rispettiva gravità. Scegliere **Seleziona tutto** per visualizzare tutti i messaggi.
+- **Per filtrare gli avvisi in base alla gravità**: per impostazione predefinita, ai messaggi di analisi del codice viene assegnata una gravità di **avviso**. È possibile assegnare la gravità di uno o più messaggi come **errore** in un set di regole personalizzato. Nella colonna **gravità** del **Elenco errori**scegliere la freccia a discesa e quindi l'icona del filtro. Scegliere **avviso** o **errore** per visualizzare solo i messaggi a cui è assegnata la rispettiva gravità. Scegliere **Seleziona tutto** per visualizzare tutti i messaggi.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Impostare le proprietà di analisi codice per progetti C/C++'
+title: 'Procedura: impostare le proprietà di analisi del codice per progetti C/C++'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163039"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448911"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: Impostare le proprietà di analisi codice per progetti C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: impostare le proprietà di analisi del codice per progetti C/C++
 
 È possibile configurare le regole utilizzate dallo strumento di analisi del codice per analizzare il codice in ogni configurazione del progetto. Inoltre, è possibile indirizzare l'analisi del codice in modo da non visualizzare gli avvisi dal codice generato e aggiunto al progetto da uno strumento di terze parti.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb41f2ad4548933d10137e7f72cae59643d33043
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 39fa5860e8ae1d1d06a3fbce64110ce665d5d477
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233886"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443483"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Gli identificatori non devono contenere il prefisso non corretto
 
@@ -27,7 +27,7 @@ ms.locfileid: "71233886"
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |CheckId|CA1722|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -47,4 +47,4 @@ Rimuovere il prefisso dall'identificatore.
 Non escludere un avviso da questa regola.
 
 ## <a name="related-rules"></a>Regole correlate
-[CA1715 Gli identificatori devono avere il prefisso corretto](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715: Gli identificatori devono contenere il prefisso corretto](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

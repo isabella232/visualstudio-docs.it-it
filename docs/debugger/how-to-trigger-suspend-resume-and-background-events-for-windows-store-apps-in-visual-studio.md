@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925466"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450408"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare eventi di sospensione, ripresa e background durante il debug di app UWP in Visual Studio
 
@@ -28,7 +28,7 @@ Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) contro
 
 Viene inoltre descritto come eseguire il debug di **attività in background**. Le attività in background consentono di eseguire determinate operazioni in un processo in background, anche quando l'app non è in esecuzione. Puoi utilizzare il debugger per attivare la modalità di debug dell'app, quindi avviare l'attività in background ed eseguire il debug, senza avviare l'interfaccia utente.
 
-Per ulteriori informazioni sulla gestione della durata del processo e sulle attività in background, vedere [avvio, ripresa e](/windows/uwp/launch-resume/index)multitasking.
+Per ulteriori informazioni sulla gestione della durata del processo e sulle attività in background, vedere [avvio, ripresa e multitasking](/windows/uwp/launch-resume/index).
 
 ## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Attivare gli eventi di Process Lifetime Management
  Windows può sospendere l'app quando l'utente passa da un dispositivo all'altra o quando Windows entra in uno stato di basso consumo. Puoi rispondere all'evento `Suspending` per salvare i dati utente e dell'app rilevanti in un archivio permanente e per liberare risorse. Quando un'app viene riattivata dallo stato **Sospeso** , passa allo stato **In esecuzione** e continua dal punto in cui si trovava al momento della sospensione. Puoi rispondere all'evento `Resuming` per ripristinare o aggiornare lo stato dell'app e recuperare le risorse.
@@ -75,13 +75,13 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
      Per C++ i progetti, espandere **proprietà di configurazione** , quindi scegliere **debug**.
 
-3. Eseguire una delle operazioni seguenti:
+3. Effettuare una delle operazioni riportate di seguito:
 
     - Per i progetti Visual C# e Visual Basic, scegli **Non eseguire il codice utente, ma eseguine il debug all'avvio**.
 
          ![Proprietà&#35;&#47;dell'applicazione di avvio del debug C VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Per i C++ progetti visivi, scegliere **No** dall'elenco **Avvia applicazione** .
+    - Per C++ i progetti, scegliere **No** dall'elenco **Avvia applicazione** .
 
          ![Proprietà&#43;&#43;&#47;di debug dell'applicazione di avvio C VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

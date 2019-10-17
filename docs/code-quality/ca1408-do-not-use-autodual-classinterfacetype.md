@@ -1,5 +1,5 @@
 ---
-title: 'CA1408: Non usare AutoDual ClassInterfaceType'
+title: 'CA1408: Non utilizzare AutoDual ClassInterfaceType'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b26d92ca63a94cac7e293a688b1c7b3331586877
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 142d011ff73fbaf03af62164f962470f8feb3246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234784"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440395"
 ---
-# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Non usare AutoDual ClassInterfaceType
+# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Non utilizzare AutoDual ClassInterfaceType
 
 |||
 |-|-|
@@ -34,15 +34,15 @@ ms.locfileid: "71234784"
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
-Un tipo visibile Component Object Model (com) è contrassegnato con l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo impostato `AutoDual` sul valore di <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+Un tipo visibile Component Object Model (COM) è contrassegnato con l'attributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> impostato sul valore `AutoDual` di <xref:System.Runtime.InteropServices.ClassInterfaceType>.
 
 ## <a name="rule-description"></a>Descrizione della regola
-I tipi che utilizzano un'interfaccia duale consentono l'associazione dei client a uno specifico layout di interfaccia. Eventuali modifiche apportate in una versione futura al layout del tipo o ai tipi base interromperanno l'associazione dei client COM all'interfaccia. Per impostazione predefinita, se <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> l'attributo non è specificato, viene utilizzata un'interfaccia di solo dispatch.
+I tipi che utilizzano un'interfaccia duale consentono l'associazione dei client a uno specifico layout di interfaccia. Eventuali modifiche apportate in una versione futura al layout del tipo o ai tipi base interromperanno l'associazione dei client COM all'interfaccia. Per impostazione predefinita, se non si specifica l'attributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>, viene utilizzata un'interfaccia di solo invio.
 
 A meno che non sia contrassegnato diversamente, tutti i tipi non generici pubblici sono visibili a COM; tutti i tipi non pubblici e generici sono invisibili a COM.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Per correggere una violazione di questa regola, modificare il valore dell' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributo con il `None` valore di <xref:System.Runtime.InteropServices.ClassInterfaceType> e definire in modo esplicito l'interfaccia.
+Per correggere una violazione di questa regola, modificare il valore dell'attributo <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> sul valore `None` di <xref:System.Runtime.InteropServices.ClassInterfaceType> e definire in modo esplicito l'interfaccia.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 Non eliminare un avviso da questa regola a meno che non si sia certi che il layout del tipo e dei relativi tipi di base non verrà modificato in una versione futura.
@@ -54,7 +54,7 @@ Nell'esempio seguente viene illustrata una classe che viola la regola e una nuov
 [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA1403: I tipi di layout automatici non devono essere visibili a COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+[CA1403: I tipi layout automatici non devono essere visibili a COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
 [CA1412: Contrassegnare le interfacce ComSource come IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 

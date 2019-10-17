@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 140037b025db88230762bc0d540d933cec7a5119
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 85a8d2d9efe83f62bd0bd40021ffe0e752cf4666
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236316"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441609"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Contrassegnare gli assembly con AssemblyVersionAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "71236316"
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -54,7 +54,7 @@ L'identità di un assembly è costituita dalle seguenti informazioni:
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, aggiungere un numero di versione all'assembly usando l' <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> attributo.
+Per correggere una violazione di questa regola, aggiungere un numero di versione all'assembly usando l'attributo <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -62,7 +62,7 @@ Non eliminare un avviso da questa regola per gli assembly utilizzati da terze pa
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un assembly a cui <xref:System.Reflection.AssemblyVersionAttribute> è applicato l'attributo.
+Nell'esempio seguente viene illustrato un assembly a cui è applicato l'attributo <xref:System.Reflection.AssemblyVersionAttribute>.
 
 [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
 [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
@@ -71,4 +71,4 @@ Nell'esempio seguente viene illustrato un assembly a cui <xref:System.Reflection
 ## <a name="see-also"></a>Vedere anche
 
 - [Controllo delle versioni degli assembly](/dotnet/framework/app-domains/assembly-versioning)
-- [Procedura: Creazione di un criterio editore](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)
+- [Procedura: creare criteri editore](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

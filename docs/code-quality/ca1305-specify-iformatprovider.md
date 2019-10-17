@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5a759b6eefe92b4168684b098b4025f589893b4b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235040"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444422"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Specificare IFormatProvider
 
@@ -34,9 +34,9 @@ ms.locfileid: "71235040"
 
 ## <a name="cause"></a>Causa
 
-Un metodo o un costruttore chiama uno o più membri con overload che accettano un <xref:System.IFormatProvider?displayProperty=fullName> parametro e il metodo o il costruttore non chiama l'overload che accetta il <xref:System.IFormatProvider> parametro.
+Un metodo o un costruttore chiama uno o più membri con overload che accettano un parametro <xref:System.IFormatProvider?displayProperty=fullName> e il metodo o il costruttore non chiama l'overload che accetta il parametro <xref:System.IFormatProvider>.
 
-Questa regola ignora le chiamate ai metodi .NET documentati come ignorando il <xref:System.IFormatProvider> parametro. La regola ignora inoltre i metodi seguenti:
+Questa regola ignora le chiamate ai metodi .NET documentati come ignorando il parametro <xref:System.IFormatProvider>. La regola ignora inoltre i metodi seguenti:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Questa regola ignora le chiamate ai metodi .NET documentati come ignorando il <x
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> oggetto <xref:System.IFormatProvider> o non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, i membri .NET scelgono le impostazioni cultura predefinite e la formattazione in base a presupposti che potrebbero non essere corretti per il codice. Per assicurarsi che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
+Quando non viene fornito un oggetto <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> o <xref:System.IFormatProvider>, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, i membri .NET scelgono le impostazioni cultura predefinite e la formattazione in base a presupposti che potrebbero non essere corretti per il codice. Per assicurarsi che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
 
 - Se il valore verrà visualizzato all'utente, utilizzare le impostazioni cultura correnti. Vedere <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
@@ -56,7 +56,7 @@ Anche se il comportamento predefinito del membro in overload è adatto alle prop
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, usare l'overload che accetta un <xref:System.IFormatProvider> argomento. In alternativa, usare una [ C# stringa interpolata](/dotnet/csharp/tutorials/string-interpolation) e passarla <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> al metodo.
+Per correggere una violazione di questa regola, usare l'overload che accetta un argomento <xref:System.IFormatProvider>. In alternativa, usare una [ C# stringa interpolata](/dotnet/csharp/tutorials/string-interpolation) e passarla al metodo <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -64,7 +64,7 @@ Per correggere una violazione di questa regola, usare l'overload che accetta un 
 
 ## <a name="example"></a>Esempio
 
-Nel codice seguente la stringa viola `example1` la regola CA1305. La `example2` stringa soddisfa la regola CA1305 passando <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, che implementa <xref:System.IFormatProvider>, a <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. La `example3` stringa soddisfa la regola CA1305 passando una stringa interpolata a <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
+Nel codice seguente la stringa `example1` viola la regola CA1305. La stringa `example2` soddisfa la regola CA1305 passando <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, che implementa <xref:System.IFormatProvider>, per <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. La stringa `example3` soddisfa la regola CA1305 passando una stringa interpolata a <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
 
 ```csharp
 string name = "Georgette";

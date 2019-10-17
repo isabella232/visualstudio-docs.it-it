@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3a39f1b89cd8a0e0bbf27742688bcaec3da6f912
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289618"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381087"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Creare un'installazione offline di Visual Studio
 
@@ -37,7 +37,7 @@ Visual Studio 2019 è stato progettato per funzionare correttamente in un'ampia 
 
 ::: moniker-end
 
-Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza di banda disponibile limitata. In questi casi, è possibile usare la nuova funzionalità "Scarica tutto, quindi installa" per scaricare i file prima di installarli oppure è possibile usare la riga di comando per creare una cache locale dei file.
+Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza di banda disponibile limitata. In questi casi è possibile usare la nuova funzionalità "Scarica tutto, quindi installa" per scaricare i file prima di installare oppure è possibile usare la riga di comando per creare una cache locale dei file.
 
 > [!NOTE]
 > Gli amministratori dell'organizzazione che vogliono distribuire Visual Studio in una rete di workstation client protette da Internet tramite firewall possono vedere le pagine [Creare un'installazione di rete di Visual Studio](../install/create-a-network-installation-of-visual-studio.md) e [Installare i certificati necessari per l'installazione offline di Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
@@ -46,7 +46,7 @@ Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza 
 
 ::: moniker range="vs-2017"
 
-[**Novità della versione 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): dopo aver scaricato il programma di installazione Web, selezionare la nuova opzione **Scarica tutto, quindi installa** nel programma di installazione di Visual Studio. Continuare quindi con l'installazione.
+[**Novità della versione 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): dopo il download del programma di installazione Web, selezionare la nuova opzione **Scarica tutto, quindi installa** dal programma di installazione di Visual Studio. Continuare quindi con l'installazione.
 
    ![Opzione "Scarica tutto, quindi installa"](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Ad esempio, la connessione Internet potrebbe essere inaffidabile o la larghezza 
 
 ::: moniker range="vs-2019"
 
-dopo aver scaricato il programma di installazione Web, selezionare la nuova opzione **Scarica tutto, quindi installa** nel programma di installazione di Visual Studio. Continuare quindi con l'installazione.
+Dopo aver scaricato il programma di installazione Web, selezionare la nuova opzione **Scarica tutto, quindi installa** dal programma di installazione di Visual Studio. Continuare quindi con l'installazione.
 
    ![Opzione "Scarica tutto, quindi installa"](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -163,6 +163,12 @@ Se si vuole installare una lingua diversa dall'inglese, sostituire `en-US` con i
 > [!TIP]
 > Quando si esegue l'installazione da una cache locale, vengono usate le versioni locali di ogni file. Se, tuttavia, durante l'installazione si selezionano componenti non contenuti nella cache, il programma di installazione tenterà di scaricarli da Internet.
 
+::: moniker range="vs-2019"
+
+> Per le installazioni e gli aggiornamenti con 16,1 e versioni successive, se si riceve un errore con "Impossibile trovare un prodotto corrispondente ai parametri seguenti" nei sistemi offline, usare l'opzione--noweb con 16.3.5 o versioni successive.
+
+::: moniker-end
+
 Per assicurarsi che vengano installati solo i file scaricati in precedenza, usare le stesse opzioni della riga di comando usate per creare la cache di layout. Ad esempio, se è stata creata una cache di layout con il comando seguente:
 
 ```cmd
@@ -180,7 +186,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 
 ### <a name="list-of-language-locales"></a>Elenco delle impostazioni locali delle lingue
 
-| **Impostazioni locali** | **Lingua** |
+| **Impostazioni locali** | **Linguaggio** |
 | ----------------------- | --------------- |
 | cs-CZ | Ceco |
 | de-DE | Tedesco |

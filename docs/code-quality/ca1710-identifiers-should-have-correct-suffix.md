@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d52b9dd3eaf6312ece4939d3bdf1b64574bc21da
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234162"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439836"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Gli identificatori devono contenere il suffisso corretto
 
@@ -27,7 +27,7 @@ ms.locfileid: "71234162"
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -63,11 +63,11 @@ Nella tabella seguente sono elencati i tipi di base e le interfacce con suffissi
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condizione|
 |Delegato del gestore eventi.|EventHandler|
 
-I tipi che <xref:System.Collections.ICollection> implementano e sono un tipo generalizzato di struttura di dati, ad esempio un dizionario, uno stack o una coda, sono nomi consentiti che forniscono informazioni significative sull'utilizzo previsto del tipo.
+I tipi che implementano <xref:System.Collections.ICollection> e sono un tipo generalizzato di struttura di dati, ad esempio un dizionario, uno stack o una coda, sono nomi consentiti che forniscono informazioni significative sull'utilizzo previsto del tipo.
 
-I tipi che <xref:System.Collections.ICollection> implementano e sono una raccolta di elementi specifici hanno nomi che terminano con la parola ' raccolta '. Ad esempio, una raccolta di <xref:System.Collections.Queue> oggetti avrà il nome ' QueueCollection '. Il suffisso ' Collection ' indica che i membri della raccolta possono essere enumerati tramite l' `foreach` istruzione (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+I tipi che implementano <xref:System.Collections.ICollection> e sono una raccolta di elementi specifici hanno nomi che terminano con la parola ' Collection '. Ad esempio, una raccolta di oggetti <xref:System.Collections.Queue> avrebbe il nome ' QueueCollection '. Il suffisso ' Collection ' indica che i membri della raccolta possono essere enumerati usando l'istruzione `foreach` (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-I tipi che <xref:System.Collections.IDictionary> implementano hanno nomi che terminano con la parola ' Dictionary ' anche se il <xref:System.Collections.IEnumerable> tipo <xref:System.Collections.ICollection>implementa anche o. Le convenzioni di denominazione dei suffissi "Collection" e "Dictionary" consentono agli utenti di distinguere tra i due modelli di enumerazione seguenti.
+I tipi che implementano <xref:System.Collections.IDictionary> hanno nomi che terminano con la parola ' Dictionary ' anche se il tipo implementa anche <xref:System.Collections.IEnumerable> o <xref:System.Collections.ICollection>. Le convenzioni di denominazione dei suffissi "Collection" e "Dictionary" consentono agli utenti di distinguere tra i due modelli di enumerazione seguenti.
 
 I tipi con il suffisso ' Collection ' seguono questo modello di enumerazione.
 
@@ -81,7 +81,7 @@ I tipi con il suffisso ' Dictionary ' seguono questo modello di enumerazione.
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
-Un <xref:System.Data.DataSet> oggetto è costituito da una <xref:System.Data.DataTable> raccolta di oggetti costituiti da raccolte <xref:System.Data.DataColumn?displayProperty=fullName> di <xref:System.Data.DataRow?displayProperty=fullName> oggetti e, tra gli altri. Queste raccolte implementano <xref:System.Collections.ICollection> tramite la <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> classe di base.
+Un oggetto <xref:System.Data.DataSet> è costituito da una raccolta di oggetti <xref:System.Data.DataTable>, che sono costituiti da raccolte di oggetti <xref:System.Data.DataColumn?displayProperty=fullName> e <xref:System.Data.DataRow?displayProperty=fullName>, tra gli altri. Queste raccolte implementano <xref:System.Collections.ICollection> tramite la classe di base <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -89,7 +89,7 @@ Rinominare il tipo in modo da consentirne il suffisso con il termine corretto.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Se il tipo è una struttura di dati generalizzata che può essere estesa o che conterrà un set arbitrario di elementi diversi, è possibile evitare l'eliminazione di un avviso per l'utilizzo del suffisso ' Collection '. In questo caso, può essere utile un nome che fornisce informazioni significative sull'implementazione, sulle prestazioni o su altre caratteristiche della struttura dei dati, ad esempio BinaryTree. Nei casi in cui il tipo rappresenta una raccolta di un tipo specifico (ad esempio, StringCollection), non eliminare un avviso da questa regola perché il suffisso indica che il tipo può essere enumerato usando un' `foreach` istruzione.
+Se il tipo è una struttura di dati generalizzata che può essere estesa o che conterrà un set arbitrario di elementi diversi, è possibile evitare l'eliminazione di un avviso per l'utilizzo del suffisso ' Collection '. In questo caso, può essere utile un nome che fornisce informazioni significative sull'implementazione, sulle prestazioni o su altre caratteristiche della struttura dei dati, ad esempio BinaryTree. Nei casi in cui il tipo rappresenta una raccolta di un tipo specifico (ad esempio, StringCollection), non eliminare un avviso da questa regola perché il suffisso indica che il tipo può essere enumerato usando un'istruzione `foreach`.
 
 Per gli altri suffissi, non eliminare un avviso da questa regola. Il suffisso consente all'utilizzo previsto di essere evidente dal nome del tipo.
 
@@ -105,7 +105,7 @@ dotnet_code_quality.ca1710.api_surface = private, internal
 
 ## <a name="related-rules"></a>Regole correlate
 
-[CA1711 Gli identificatori non devono contenere un suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: Gli identificatori non devono contenere un suffisso non corretto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Vedere anche
 

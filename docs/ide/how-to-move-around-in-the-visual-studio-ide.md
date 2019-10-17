@@ -17,19 +17,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8764ccc5a662a40559b6b7ab4f19cdff0e2d555e
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547681"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381336"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: Spostarsi all'interno dell'IDE di Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: Spostarsi nell'IDE di Visual Studio
 
 L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'utente di passare da una finestra a un'altra e da un file a un altro in modi differenti, in base a preferenze o requisiti di progetto. È possibile scorrere tra file aperti nell'editor oppure scorrere tra tutte le finestre degli strumenti attive nell'IDE. È anche possibile passare direttamente a qualsiasi file aperto nell'editor, indipendentemente dall'ordine di accesso. Queste funzionalità consentono di aumentare la produttività, quando si utilizza l'IDE.
 
 > [!NOTE]
-> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti in questo articolo, a seconda dell'edizione o delle impostazioni attive. Questo articolo è stato scritto considerando le impostazioni **Generali**. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++**, scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
+> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti in questo articolo, a seconda dell'edizione o delle impostazioni attive. Questo articolo è stato scritto considerando le impostazioni **Generali**. Per modificare le impostazioni, ad esempio per implementare le impostazioni **Generali** o **Visual C++** , scegliere **Strumenti** > **Importa/Esporta impostazioni** e quindi scegliere **Reimposta tutte le impostazioni**.
 
 ## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
@@ -43,9 +43,9 @@ I comandi Posizione precedente e Posizione successiva consentono di scorrere tra
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Per spostarsi tra i file aperti in ordine di utilizzo
 
-- Per attivare i documenti aperti, a partire da quello che è stato toccato per ultimo, premere **CTRL**+**-**.
+- Per attivare i documenti aperti nell'ordine in cui sono stati modificati più di recente, premere **Ctrl**+ **-** (trattino).
 
-- Per attivare i documenti aperti in ordine inverso, premere **CTRL**+**MAIUSC**+**-**.
+- Per attivare i documenti aperti in ordine inverso, premere **Ctrl**+**MAIUSC**+ **-** (trattino).
 
     > [!NOTE]
     > **Posizione precedente** e **Posizione successiva** sono disponibili anche nel menu **Visualizza**.

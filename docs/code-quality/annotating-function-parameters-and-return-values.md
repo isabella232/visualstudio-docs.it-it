@@ -1,6 +1,6 @@
 ---
 title: Annotazione di parametri di funzione e valori restituiti
-ms.date: 07/11/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1001b37509432a7ae95a565d90d972d2043fdeab
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016002"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442404"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo descrive gli usi tipici delle annotazioni per i parametri di funzione semplici, ovvero scalari e puntatori a strutture e classi, e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di utilizzo comuni per le annotazioni. Per altre annotazioni correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md).
@@ -200,34 +200,6 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
      `_Inout_updates_bytes_(s)`
 
      Puntatore a una matrice, che viene letta e scritta nella funzione.  È di dimensioni `s` elementi ed è valido in pre-stato e post-stato.
-
-     La variante `_bytes_` indica la dimensione in byte anziché gli elementi. Utilizzare questo solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, le stringhe `char` utilizzeranno la variante `_bytes_` solo se una funzione simile che usa `wchar_t`.
-
-- `_Inout_updates_z_(s)`
-
-     Puntatore a una matrice con terminazione null e con dimensioni note. Gli elementi fino al carattere di terminazione null, che deve essere presente, devono essere validi sia nello stato precedente che in quello post-stato.  Il valore nel post-stato si presume essere diverso dal valore nello stato precedente; include la posizione del carattere di terminazione null. Se le dimensioni sono note in byte, ridimensionare `s` in base alle dimensioni dell'elemento.
-
-- `_Out_writes_to_(s,c)`
-
-     `_Out_writes_bytes_to_(s,c)`
-
-     `_Out_writes_all_(s)`
-
-     `_Out_writes_bytes_all_(s)`
-
-     Puntatore a una matrice di elementi `s`.  Gli elementi non devono essere validi in pre-stato.  In post-stato, gli elementi fino al @no__t elemento 0-esimo devono essere validi.  Se le dimensioni sono note in byte, ridimensionare `s` e `c` in base alle dimensioni dell'elemento o usare la variante `_bytes_`, definita come segue:
-
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     In altre parole, ogni elemento presente nel buffer fino a `s` nello stato precedente è valido nel post-stato.  Esempio:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
-
-- `_Inout_updates_to_(s,c)`
-
-     `_Inout_updates_bytes_to_(s,c)`
-
-     Puntatore a una matrice, che viene letta e scritta dalla funzione.  È di dimensioni `s` elementi, ognuno dei quali deve essere valido nello stato precedente e gli elementi `c` devono essere validi in post-stato.
 
      La variante `_bytes_` indica la dimensione in byte anziché gli elementi. Utilizzare questo solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, le stringhe `char` utilizzeranno la variante `_bytes_` solo se una funzione simile che usa `wchar_t`.
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bda8fc80992a2246c30e28582eb93b4624ab81c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: f49624e4e39bb0b3c1a0c1be7f32e797536d30eb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236686"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431797"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: I tipi proprietari di campi Disposable devono essere Disposable
 
@@ -30,17 +30,17 @@ ms.locfileid: "71236686"
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni: se il tipo non è visibile all'esterno dell'assembly.<br /><br /> Interruzioni: se il tipo è visibile all'esterno dell'assembly.|
 
 ## <a name="cause"></a>Causa
-Una classe dichiara e implementa un campo di istanza che è un <xref:System.IDisposable?displayProperty=fullName> tipo e la classe non implementa. <xref:System.IDisposable>
+Una classe dichiara e implementa un campo di istanza che è un tipo <xref:System.IDisposable?displayProperty=fullName> e la classe non implementa <xref:System.IDisposable>.
 
 ## <a name="rule-description"></a>Descrizione della regola
-Una classe implementa l' <xref:System.IDisposable> interfaccia per eliminare le risorse non gestite di sua proprietà. Un campo di istanza che è <xref:System.IDisposable> un tipo indica che il campo è proprietario di una risorsa non gestita. Una classe che dichiara un <xref:System.IDisposable> campo possiede indirettamente una risorsa non gestita e deve implementare l' <xref:System.IDisposable> interfaccia. Se la classe non possiede direttamente le risorse non gestite, non deve implementare un finalizzatore.
+Una classe implementa l'interfaccia <xref:System.IDisposable> per eliminare le risorse non gestite di sua proprietà. Un campo di istanza che è un tipo <xref:System.IDisposable> indica che il campo è proprietario di una risorsa non gestita. Una classe che dichiara un campo <xref:System.IDisposable> possiede indirettamente una risorsa non gestita e deve implementare l'interfaccia <xref:System.IDisposable>. Se la classe non possiede direttamente le risorse non gestite, non deve implementare un finalizzatore.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
-Per correggere una violazione di questa regola, implementare <xref:System.IDisposable> e <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> dal metodo chiamare il <xref:System.IDisposable.Dispose%2A> metodo del campo.
+Per correggere una violazione di questa regola, implementare <xref:System.IDisposable> e dal metodo <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chiamare il metodo <xref:System.IDisposable.Dispose%2A> del campo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 Non escludere un avviso da questa regola.
@@ -52,10 +52,10 @@ Nell'esempio seguente viene illustrata una classe che viola la regola e una clas
 [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
-[CA2213: I campi eliminabili devono essere eliminati](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+[CA2213: I campi Disposable devono essere eliminati](../code-quality/ca2213.md)
 
-[CA2216 I tipi Disposable devono dichiarare Finalizer](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+[CA2216: I tipi Disposable devono dichiarare un finalizzatore](../code-quality/ca2216.md)
 
-[CA2215: I metodi Dispose devono chiamare Dispose della classe base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+[CA2215: I metodi Dispose devono chiamare il metodo Dispose della classe base](../code-quality/ca2215.md)
 
-[CA1049: I tipi che possiedono risorse native devono essere Disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: I tipi delle risorse native devono essere Disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

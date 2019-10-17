@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8bec913e5352c0028859f03ebda7c5f112db654f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235489"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446552"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: I tipi non devono estendere tipi di base specifici
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235489"
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -47,7 +47,7 @@ Per impostazione predefinita, questa regola esamina solo i tipi visibili esterna
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-<xref:System.Exception?displayProperty=fullName> Le<xref:System> eccezioni devono derivare da o da una delle relative sottoclassi nello spazio dei nomi.
+Le eccezioni devono derivare da <xref:System.Exception?displayProperty=fullName> o una delle relative sottoclassi nello spazio dei nomi <xref:System>.
 
 Non creare una sottoclasse di <xref:System.Xml.XmlDocument> se si desidera creare una vista XML di un modello a oggetti sottostante o di un'origine dati.
 
@@ -85,7 +85,7 @@ Per correggere una violazione di questa regola, derivare il tipo da un diverso t
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
-Non eliminare un avviso da questa regola per violazioni relative <xref:System.ApplicationException>a. È possibile eliminare un avviso da questa regola per le violazioni relative <xref:System.Xml.XmlDocument>a. Se il codice è stato rilasciato in precedenza, è possibile evitare l'eliminazione di un avviso relativo a una raccolta non generica.
+Non eliminare un avviso da questa regola per violazioni circa <xref:System.ApplicationException>. È possibile eliminare un avviso da questa regola per eventuali violazioni circa <xref:System.Xml.XmlDocument>. Se il codice è stato rilasciato in precedenza, è possibile evitare l'eliminazione di un avviso relativo a una raccolta non generica.
 
 ## <a name="configurability"></a>Configurabilità
 

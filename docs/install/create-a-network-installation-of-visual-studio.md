@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 521b29f87db6379a011a0b46dfd1405b374ab9ba
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289649"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381081"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -55,7 +55,7 @@ Altri programmi di avvio automatico supportati includono **vs_feedbackclient. ex
 
 Il file eseguibile di installazione @ no__t-0or è più specifico, un file del programma di avvio automatico @ no__t-1should corrisponde o è simile a uno dei seguenti.
 
-|Edizione | Scarica|
+|Edizione | Download|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
@@ -226,6 +226,13 @@ Gli amministratori possono distribuire Visual Studio nelle workstation client ne
 > Questa opzione è particolarmente utile se l'amministratore aziendale vuole eseguire altre azioni sull'installazione completa (ad esempio, [applicare un codice Product Key a un'installazione eseguita correttamente](automatically-apply-product-keys-when-deploying-visual-studio.md)) tuttavia occorre attendere il termine dell’installazione per gestire il corice di ritorno da tale installazione.
 >
 > Se non si usa `--wait`, il processo `vs_enterprise.exe` verrà terminato prima del completamento dell'installazione e non verrà restituito un codice di uscita esatto che rappresenti lo stato dell'operazione di installazione.
+>
+
+::: moniker range="vs-2019"
+
+> Per le installazioni offline, se viene visualizzato un messaggio di errore che indica che non è possibile trovare un progetto corrispondente ai parametri seguenti, assicurarsi di usare l'opzione--noweb con la versione 16.3.5 o una versione successiva.
+
+::: moniker-end
 
 Quando si installa da un layout, viene acquisito il contenuto che viene installato dal layout. Se tuttavia si seleziona un componente non presente nel layout, il componente viene acquisito da Internet.  Se si desidera impedire che l’installazione di Visual Studio scarichi i contenuti mancanti nel layout, utilizzare l’opzione `--noWeb`. Se viene usato `--noWeb` ma nel layout non è presente almeno uno dei contenuti selezionati per l'installazione, il programma di installazione ha esito negativo.
 

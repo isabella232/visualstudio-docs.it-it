@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 387eb464959fba522e31f9586998335cb306d844
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c615015fac5e8e9b60425679e116b8c7680ea637
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236320"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441651"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Contrassegnare gli assembly con CLSCompliantAttribute
 
@@ -31,11 +31,11 @@ ms.locfileid: "71236320"
 |-|-|
 |TypeName|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
-A un assembly non è applicato <xref:System.CLSCompliantAttribute?displayProperty=fullName> l'attributo.
+A un assembly non è applicato l'attributo <xref:System.CLSCompliantAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
 In Common Language Specification (CLS) vengono definite limitazioni di denominazione, tipi di dati e regole che gli assembly devono rispettare per poter essere utilizzati tra diversi linguaggi di programmazione. Una progettazione efficace impone che tutti gli assembly indichino in modo esplicito la conformità a CLS con <xref:System.CLSCompliantAttribute>. Se l'attributo non è presente in un assembly, l'assembly non è conforme.
@@ -49,7 +49,7 @@ Per correggere una violazione di questa regola, aggiungere l'attributo all'assem
 Non escludere un avviso da questa regola. Se non si desidera che l'assembly sia conforme, applicare l'attributo e impostarne il valore su `false`.
 
 ## <a name="example"></a>Esempio
-Nell'esempio seguente viene illustrato un assembly a cui <xref:System.CLSCompliantAttribute?displayProperty=fullName> è applicato l'attributo che lo dichiara conforme a CLS.
+Nell'esempio seguente viene illustrato un assembly a cui è applicato l'attributo <xref:System.CLSCompliantAttribute?displayProperty=fullName> che lo dichiara conforme a CLS.
 
 [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
 [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]

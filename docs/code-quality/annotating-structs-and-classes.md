@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015972"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446288"
 ---
 # <a name="annotating-structs-and-classes"></a>Annotazioni di struct e classi
 
@@ -45,7 +45,7 @@ ms.locfileid: "72015972"
 
      Campo con una dimensione scrivibile in elementi (o byte) come specificato da `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Campo con una dimensione scrivibile in elementi (o byte) come specificato da `size` e `count` degli elementi (byte) che sono leggibili.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 296e8cb4753d487573957de1108a8cb27778ef4c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 69fb85c396da1acde40cd9bc46150ca5f1386c17
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235797"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449136"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Non dichiarare campi di istanza visibili
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235797"
 |-|-|
 |TypeName|DoNotDeclareVisibleInstanceFields|
 |CheckId|CA1051|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -38,11 +38,11 @@ Per impostazione predefinita, questa regola esamina solo i tipi visibili esterna
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-L'utilizzo principale di un campo deve essere come dettaglio di implementazione. I campi devono `private` essere `internal` o e devono essere esposti usando le proprietà. Per accedere a una proprietà è facile accedere a un campo e il codice nelle funzioni di accesso di una proprietà può cambiare quando le funzionalità del tipo vengono espanse senza introdurre modifiche di rilievo.
+L'utilizzo principale di un campo deve essere come dettaglio di implementazione. I campi devono essere `private` o `internal` e devono essere esposti usando le proprietà. Per accedere a una proprietà è facile accedere a un campo e il codice nelle funzioni di accesso di una proprietà può cambiare quando le funzionalità del tipo vengono espanse senza introdurre modifiche di rilievo.
 
-Le proprietà che restituiscono il valore di un campo privato o interno sono ottimizzate per essere eseguite in modo analogo all'accesso a un campo. il miglioramento delle prestazioni derivante dall'utilizzo di campi visibili esternamente anziché di proprietà è minimo. *Visibile esternamente* si riferisce ai `protected internal` livelli`Public`di `Protected` `public` `protected`accessibilità `Protected Friend` , e (, e in Visual Basic).
+Le proprietà che restituiscono il valore di un campo privato o interno sono ottimizzate per essere eseguite in modo analogo all'accesso a un campo. il miglioramento delle prestazioni derivante dall'utilizzo di campi visibili esternamente anziché di proprietà è minimo. *Visibile esternamente* si riferisce ai livelli di accessibilità `public`, `protected` e `protected internal` (`Public`, `Protected` e `Protected Friend` in Visual Basic).
 
-Inoltre, i campi pubblici non possono essere protetti tramite [richieste di collegamento](/dotnet/framework/misc/link-demands). Per ulteriori informazioni, vedere [CA2112: I tipi protetti non devono esporre](../code-quality/ca2112-secured-types-should-not-expose-fields.md)i campi. (Le richieste di collegamento non sono applicabili alle app .NET Core).
+Inoltre, i campi pubblici non possono essere protetti tramite [richieste di collegamento](/dotnet/framework/misc/link-demands). Per altre informazioni, vedere [CA2112: i tipi protetti non devono esporre i campi](../code-quality/ca2112.md). (Le richieste di collegamento non sono applicabili alle app .NET Core).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -69,13 +69,13 @@ dotnet_code_quality.ca1051.api_surface = private, internal
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un tipo`BadPublicInstanceFields`() che viola questa regola. `GoodPublicInstanceFields`Mostra il codice corretto.
+Nell'esempio seguente viene illustrato un tipo (`BadPublicInstanceFields`) che viola questa regola. `GoodPublicInstanceFields` Visualizza il codice corretto.
 
 [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>Regole correlate
 
-- [CA2112 I tipi protetti non devono esporre campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+- [CA2112: I tipi protetti non devono esporre campi](../code-quality/ca2112.md)
 
 ## <a name="see-also"></a>Vedere anche
 

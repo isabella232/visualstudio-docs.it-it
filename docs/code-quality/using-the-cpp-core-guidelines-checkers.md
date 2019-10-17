@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 57c8d6daf75987bfb5c6a6642b89f198693a5dce
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018410"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445647"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Usare i controlli delle Linee guida di base di C++
 
@@ -55,11 +55,11 @@ int main()
 
 Questo esempio illustra alcuni degli avvisi che possono essere trovati C++ dalle regole di controllo principali:
 
-- C26494 è il tipo di regola. 5: Inizializzare sempre un oggetto.
+- C26494 è il tipo di regola. 5: Inizializza sempre un oggetto.
 
-- C26485 è associato alle regole. 3: Nessun decadimento da matrice a puntatore.
+- C26485 è associato alle regole. 3: nessun decadimento da matrice a puntatore.
 
-- C26481 è associato alle regole. 1: Non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.
+- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.
 
 Se i C++ set di regole di analisi del codice di base del controllo vengono installati e abilitati quando si compila il codice, i primi due avvisi vengono restituiti, ma il terzo viene eliminato. Ecco l'output di compilazione del codice di esempio:
 

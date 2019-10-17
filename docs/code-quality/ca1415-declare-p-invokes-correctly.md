@@ -1,5 +1,5 @@
 ---
-title: 'CA1415: Dichiarare correttamente i P/Invoke'
+title: 'CA1415: Dichiarare correttamente P-Invoke'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8ee4c74fa57811a7f5484dba4b2c3fa27a74437f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234622"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443979"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Dichiarare correttamente i P/Invoke
 
@@ -34,7 +34,7 @@ ms.locfileid: "71234622"
 Un metodo di platform invoke è dichiarato in modo errato.
 
 ## <a name="rule-description"></a>Descrizione della regola
-Un metodo di Platform invoke accede a codice non gestito e viene definito tramite la `Declare` parola chiave in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o. <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> Attualmente questa regola cerca Platform Invoke dichiarazioni di metodo destinate a funzioni Win32 che hanno un puntatore a un parametro di struttura sovrapposta e il parametro gestito corrispondente non è un puntatore a <xref:System.Threading.NativeOverlapped?displayProperty=fullName> una struttura.
+Un metodo di platform invoke accede a codice non gestito e viene definito utilizzando la parola chiave `Declare` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Attualmente questa regola cerca platform invoke dichiarazioni di metodo destinate a funzioni Win32 che hanno un puntatore a un parametro di struttura SOVRAPPOSTa e il parametro gestito corrispondente non è un puntatore a una struttura <xref:System.Threading.NativeOverlapped?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola, dichiarare correttamente il metodo platform invoke.

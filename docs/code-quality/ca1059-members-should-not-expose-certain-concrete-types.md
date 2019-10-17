@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 06b7d6f9f3a04f518beeb49af1985185255f2e46
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235468"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440798"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: I membri non devono esporre tipi concreti specifici
 
@@ -27,7 +27,7 @@ ms.locfileid: "71235468"
 |-|-|
 |TypeName|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -42,7 +42,7 @@ Nella tabella seguente sono elencati i tipi concreti di destinazione e le sostit
 
 |Tipo concreto|Sostituzione|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> L'utilizzo dell'interfaccia separa il membro da un'implementazione specifica di un'origine dati XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName><br /><br /> L'utilizzo dell'interfaccia separa il membro da un'implementazione specifica di un'origine dati XML.|
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 Per correggere una violazione di questa regola, modificare il tipo concreto nell'interfaccia consigliata.
@@ -51,4 +51,4 @@ Per correggere una violazione di questa regola, modificare il tipo concreto nell
 È possibile eliminare un messaggio da questa regola in modo sicuro se è necessaria la funzionalità specifica fornita dal tipo concreto.
 
 ## <a name="related-rules"></a>Regole correlate
-[CA1011 Provare a passare tipi di base come parametri](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+[CA1011: Considerare il passaggio di tipi di base come parametri](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

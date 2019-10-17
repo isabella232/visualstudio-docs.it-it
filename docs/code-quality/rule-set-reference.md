@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da0d70af989d759df94eb2d22606ad90373936ad
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585246"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448841"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 
@@ -23,9 +23,9 @@ Quando si configura l'analisi legacy per i progetti di codice gestito in Visual 
 > [!NOTE]
 > I set di regole in questa sezione riguardano l'analisi legacy. Per informazioni sui set di regole disponibili per i pacchetti dell'analizzatore di codice, vedere [usare i set di regole con gli analizzatori di codice](analyzer-rule-sets.md).
 
-È possibile usare uno di questi set di regole incorporate oppure è possibile [personalizzare un set di regole](../code-quality/how-to-create-a-custom-rule-set.md) in base alle esigenze di progetto. Se si includono più set di regole che contengono la stessa regola in un set di regole personalizzato, tale regola viene visualizzata una sola volta nel set di regole personalizzate.
+È possibile usare uno di questi set di regole predefiniti oppure [personalizzare un set di regole](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare i requisiti del progetto. Se si includono più set di regole che contengono la stessa regola in un set di regole personalizzato, tale regola viene visualizzata una sola volta nel set di regole personalizzate.
 
-In questa sezione vengono illustrate le regole incorporate set e le regole (o gli avvisi) che contengono.
+Negli argomenti di questa sezione vengono descritti i set di regole predefiniti e le regole o gli avvisi in essi contenuti.
 
 | Set di regole | Regole incluse |
 | - | - |

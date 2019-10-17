@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2700dc2ade7ba901f15f67045e3170e2bbb40ff8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 443fec0c9f20148d775a734137941cd7c78da889
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235121"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444403"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Non passare valori letterali come parametri localizzati
 
@@ -41,7 +41,7 @@ Un metodo passa un valore letterale stringa come parametro a un costruttore o a 
 
 Questo avviso viene generato quando una stringa letterale viene passata come valore a un parametro o a una proprietà e uno o più dei seguenti casi è true:
 
-- L' <xref:System.ComponentModel.LocalizableAttribute> attributo del parametro o della proprietà è impostato su true.
+- L'attributo <xref:System.ComponentModel.LocalizableAttribute> del parametro o della proprietà è impostato su true.
 
 - Il nome del parametro o della proprietà contiene "Text", "message" o "Caption".
 
@@ -53,7 +53,7 @@ I valori letterali stringa incorporati nel codice sorgente sono difficili da loc
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, sostituire il valore letterale stringa con una stringa recuperata tramite un' <xref:System.Resources.ResourceManager> istanza della classe.
+Per correggere una violazione di questa regola, sostituire il valore letterale stringa con una stringa recuperata tramite un'istanza della classe <xref:System.Resources.ResourceManager>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando escludere gli avvisi
 
@@ -63,7 +63,7 @@ Gli utenti possono eliminare il rumore da metodi che non devono essere passati a
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente viene illustrato un metodo che genera un'eccezione quando uno dei due argomenti non è compreso nell'intervallo. Per il primo argomento, al costruttore di eccezione viene passata una stringa letterale che viola questa regola. Per il secondo argomento, al costruttore viene passata correttamente una stringa recuperata tramite <xref:System.Resources.ResourceManager>.
+Nell'esempio seguente viene illustrato un metodo che genera un'eccezione quando uno dei due argomenti non è compreso nell'intervallo. Per il primo argomento, al costruttore di eccezione viene passata una stringa letterale che viola questa regola. Per il secondo argomento, al costruttore viene passata correttamente una stringa recuperata tramite un <xref:System.Resources.ResourceManager>.
 
 [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
 [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]
