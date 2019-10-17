@@ -28,9 +28,6 @@
         - name: Distribuzione
           tocHref: /visualstudio/deployment/
           topicHref: /visualstudio/deployment/deploying-applications-services-and-components
-        - name: Finestre di progettazione
-          tocHref: /visualstudio/designers/
-          topicHref: /visualstudio/designers/designing-user-interfaces
         - name: Estendibilità
           tocHref: /visualstudio/extensibility/
           topicHref: /visualstudio/extensibility/index
@@ -85,6 +82,9 @@
         - name: Progettazione flussi di lavoro
           tocHref: /visualstudio/workflow-designer/
           topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
+        - name: Strumenti XAML
+          tocHref: /visualstudio/xaml-tools/
+          topicHref: /visualstudio/xaml-tools/
         - name: Strumenti XML
           tocHref: /visualstudio/xml-tools/
           topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio

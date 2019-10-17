@@ -1,90 +1,58 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Visual Studio | JavaScript e TypeScript
+### YamlMime:Landing
+title: Esercitazioni di Visual Studio | JavaScript e TypeScript
+summary: Creare app JavaScript e TypeScript con Visual Studio
 metadata:
-  title: Sviluppo per JavaScript e TypeScript con Visual Studio | Microsoft Docs
-  meta.description: Tutorials and conceptual articles about developing JavaScript and TypeScript apps with Visual Studio.
-  author: mikejo5000
-  manager: jillfra
-  ms.prod: visual-studio-windows
-  ms.technology: vs-javascript
+  title: JavaScript e TypeScript in Visual Studio
+  description: Informazioni su come usare Visual Studio per creare app JavaScript e TypeScript.
   ms.topic: landing-page
-  ms.date: 01/15/2019
+  author: mikejo5000
   ms.author: mikejo
-  dev_langs:
-    - JavaScript
-    - TypeScript
-sections:
-  - title: Introduzione a Visual Studio
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Installare Visual Studio
-          - href: ../javascript/quickstart-ide-orientation-js.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Presentazione dell'IDE di Visual Studio
-  - title: Esercitazioni
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-nodejs.md
-            html: <p>Creare un'app Web con Node.js ed Express</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_nodejs.svg'
-          - href: tutorial-nodejs-with-react-and-jsx.md
-            html: <p>Creare un'app Web con Node.js e React</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_React.svg'
-          - href: quickstart-vuejs-with-nodejs.md
-            html: <p>Creare un'app Web con Node.js e Vue.js</p>
-            image:
-              src: ../javascript/media/logo-vuejs.png
-          - href: publish-nodejs-app-azure.md
-            html: <p>Pubblicare un'app Node.js nel Servizio app Linux</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_linux-color.svg'
-  - title: Sviluppare applicazioni
-    items:
-      - type: paragraph
-        text: Informazioni su come usare Visual Studio per le attività di sviluppo.
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: write-and-edit-code.md
-            html: <p>Scrivere e modificare il codice</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: nodejs-interactive-repl.md
-            html: <p>Usare il ciclo Read-Eval-Print interattivo Node.js</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-          - href: npm-package-management.md
-            html: <p>Gestire pacchetti npm</p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_npm.svg'
-          - href: debug-nodejs.md
-            html: <p>Eseguire il debug del codice</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-          - href: develop-javascript-code-without-solutions-projects.md
-            html: <p>Sviluppare codice senza progetti o soluzioni</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-          - href: unit-testing-javascript-with-visual-studio.md
-            html: <p>Scrivere ed eseguire unit test</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_unit-testing.svg'
+  manager: jillfra
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 1bdf2530d8e6513f57b515680410b9111cec87c6
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72517110"
+landingContent:
+- title: Introduzione
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: JavaScript e TypeScript in Visual Studio
+      url: javascript-in-vs-2019.md
+  - linkListType: how-to-guide
+    links:
+    - text: Installare Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Avviare una presentazione guidata
+      url: quickstart-ide-orientation-js.md
+- title: Creare app JavaScript e TypeScript
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Creare un'app Web con Node.js ed Express
+      url: tutorial-nodejs.md
+    - text: Creare un'app Web con Node.js e React
+      url: tutorial-nodejs-with-react-and-jsx.md
+    - text: Creare un'app Web con Node.js e Vue.js
+      url: quickstart-vuejs-with-nodejs.md
+- title: Informazioni su Visual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Scrivere e modificare il codice
+      url: write-and-edit-code.md
+    - text: Gestire pacchetti npm
+      url: npm-package-management.md
+    - text: Usare il ciclo Read-Eval-Print interattivo Node.js
+      url: nodejs-interactive-repl.md
+    - text: Eseguire il debug del codice
+      url: debug-nodejs.md
+    - text: Sviluppare codice senza progetti o soluzioni
+      url: develop-javascript-code-without-solutions-projects.md
+    - text: Scrivere ed eseguire unit test
+      url: unit-testing-javascript-with-visual-studio.md
