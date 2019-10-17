@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Analisi codice in Visual Studio
+summary: Visual Studio offre diversi strumenti per analizzare e migliorare la qualità del codice.
+metadata:
+  title: Analizzatori del codice
+  description: Informazioni su come facilitare l'analisi della qualità del codice con Visual Studio.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450588"
+landingContent:
+- title: Analizzare il codice C e C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analizzare il codice C e C++
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: Avvisi di analisi del codice C++
+      url: code-analysis-for-c-cpp-warnings.md
+- title: Analizzare la qualità del codice gestito
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analisi dell'origine
+      url: roslyn-analyzers-overview.md
+    - text: Analisi legacy
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: Domande frequenti
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Installare gli analizzatori FXCop
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Avvisi dell'analisi del codice gestito
+      url: code-analysis-for-managed-code-warnings.md
+- title: Analizzare lo stile del codice gestito
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Analizzare lo stile del codice
+      url: ../ide/create-portable-custom-editor-options.md
+- title: Valutare la complessità del codice gestito
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Metrica del codice
+      url: code-metrics-values.md
