@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine"
+title: "Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine"
 ms.date: 08/30/2019
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
@@ -13,20 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2a81aa5328167d049a6031015c1c569b2c5e0d
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: b7afdae8e98dba33184889fe314725e634e3bfa7
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118895"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314061"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine
 
 In questo passaggio si fa in modo che il pulsante **Mostra immagine** funzioni come segue:
 
-- Quando un utente sceglie tale pulsante, l'app apre una <xref:System.Windows.Forms.OpenFileDialog> casella.
+- Quando un utente sceglie tale pulsante, l'app apre una finestra di <xref:System.Windows.Forms.OpenFileDialog>.
 
-- Se un utente apre un file di immagine, l'app mostra tale immagine in <xref:System.Windows.Forms.PictureBox>.
+- Se un utente apre un file di immagine, l'app mostra tale immagine nel <xref:System.Windows.Forms.PictureBox>.
 
 Nell'IDE è disponibile uno strumento potente denominato IntelliSense che agevola la scrittura del codice. Durante la digitazione del codice, l'IDE apre una casella con i completamenti suggeriti per le parole parziali immesse.
 
@@ -34,16 +34,16 @@ IntelliSense tenta di determinare cosa si desidera eseguire successivamente e pa
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Per scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
 
-1. Passare a **Progettazione Windows Form** e fare doppio clic sul pulsante **Mostra immagine**. L'IDE passa immediatamente alla finestra di progettazione del codice e sposta il cursore in modo che `showButton_Click()` si trovi all'interno `ShowButton_Click()`del metodo (in alternativa,) aggiunto in precedenza.
+1. Passare a **Progettazione Windows Form** e fare doppio clic sul pulsante **Mostra immagine**. L'IDE passa immediatamente alla finestra di progettazione del codice e sposta il cursore in modo che si trovi all'interno del metodo `showButton_Click()` (in alternativa, `ShowButton_Click()`) aggiunto in precedenza.
 
-1. Digitare `i` nella riga vuota tra le due parentesi graffe `{ }`. In Visual Basic digitare nella riga vuota tra `Private Sub...` e `End Sub`. Viene visualizzata una finestra di **IntelliSense** , come illustrato nella figura seguente.
+1. Digitare `i` nella riga vuota tra le due parentesi graffe `{ }`. (In Visual Basic, digitare sulla riga vuota tra `Private Sub...` e `End Sub`.) Viene visualizzata una finestra di **IntelliSense** , come illustrato nella figura seguente.
 
     ![IntelliSense con codice Visual C&#35;](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
     > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase".
 
-1. La finestra di **IntelliSense** deve evidenziare la `if`parola. In caso contrario, immettere una `f` minuscola per visualizzarla. Si noti che viene visualizzata una casella *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. Anche in Visual Basic la descrizione comando dichiara che si tratta di un frammento, ma con una formulazione leggermente diversa. Poiché si vuole usare il frammento di codice, premere **TAB** per inserire `if` nel codice. Premere quindi di nuovo **TAB** per usare il frammento di codice `if`. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare con il tasto BACKSPACE su `i` e digitare di nuovo. La finestra di **IntelliSense** verrà riaperta.
+1. La finestra di **IntelliSense** deve evidenziare la parola `if`. In caso contrario, immettere una `f` minuscola, che verrà. Si noti che viene visualizzata una casella *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. (In Visual Basic, la descrizione comando indica anche che si tratta di un frammento, ma con una formulazione leggermente diversa). Si vuole usare questo frammento di codice, quindi scegliere il tasto **Tab** per inserire `if` nel codice. Premere quindi di nuovo **TAB** per usare il frammento di codice `if`. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare con il tasto BACKSPACE su `i` e digitare di nuovo. La finestra di **IntelliSense** verrà riaperta.
 
     ![Codice Visual C&#35;](../ide/media/express_highlighttrue.png)
 
@@ -57,7 +57,7 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
 
      Per altre informazioni su `OpenFileDialog`, vedere [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>).
 
- 1. Digitare un punto (`.`). Poiché è stato digitato un punto subito dopo **openFileDialog1**, viene visualizzata una finestra di **IntelliSense** contenente tutte le proprietà e i metodi del componente **OpenFileDialog**. Si tratta delle stesse proprietà visualizzate nel finestra **Proprietà** quando si sceglie l'oggetto in **Progettazione Windows Form**. È inoltre possibile scegliere metodi che indicano al componente di eseguire operazioni (ad esempio, aprire una finestra di dialogo).
+ 1. Digitare un punto (`.`) (molti programmatori chiamano questo punto). Poiché è stato digitato un punto subito dopo **OpenFileDialog1**, viene visualizzata una finestra di **IntelliSense** , compilata con tutte le proprietà e i metodi del componente **OpenFileDialog** . Si tratta delle stesse proprietà visualizzate nel finestra **Proprietà** quando si sceglie l'oggetto in **Progettazione Windows Form**. È inoltre possibile scegliere metodi che indicano al componente di eseguire operazioni (ad esempio, aprire una finestra di dialogo).
 
     > [!NOTE]
     > Nella finestra di **IntelliSense** possono essere visualizzati sia proprietà che metodi. Per determinare gli elementi visualizzati, osservare l'icona a sinistra di ogni elemento nella finestra **IntelliSense**. Viene visualizzata un'immagine di un blocco accanto a ogni metodo e un'immagine di una chiave (o di una chiave fissa) accanto a ogni proprietà. È anche visualizzata un'icona a forma di saetta accanto a ogni evento. <br><br>Ecco le icone visualizzate:<br><br>![Icona del metodo](../ide/media/express_iconmethod.png)<br>![Icona della proprietà](../ide/media/express_iconproperty.png)<br>![Icona dell'evento](../ide/media/express_iconevent.png)
@@ -69,7 +69,7 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
  1. Quando si usa un metodo in un controllo o un componente, ovvero si effettua una *chiamata a un metodo*, è necessario aggiungere le parentesi. Immettere quindi le parentesi di apertura e chiusura immediatamente dopo la "g" di `ShowDialog`: `()` Viene visualizzato "openFileDialog1.ShowDialog()".
 
     > [!NOTE]
-    > I metodi sono una parte importante di qualsiasi app e in questa esercitazione sono stati illustrati diversi modi per usare i metodi. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare in modo che l'app esegua operazioni, come quella che si sta compilando adesso, denominata `showButton_Click()` metodo, che apre una finestra di dialogo e un'immagine quando un utente sceglie un pulsante.
+    > I metodi sono una parte importante di qualsiasi app e in questa esercitazione sono stati illustrati diversi modi per usare i metodi. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare in modo che l'app esegua operazioni, come quella che si sta compilando adesso, denominata metodo `showButton_Click()`, che apre una finestra di dialogo e un'immagine quando un utente sceglie un pulsante.
 
  1. Per C#, aggiungere uno spazio, quindi aggiungere due segni di uguale (`==`). Per Visual Basic, aggiungere uno spazio e quindi usare un solo segno di uguale (`=`). (C# e Visual Basic utilizzano operatori di uguaglianza diversi).
 
@@ -93,8 +93,7 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
 
  1. Aggiungere ora l'ultima riga di codice. È possibile digitarlo (o copiarlo e incollarlo), ma è consigliabile utilizzare IntelliSense per aggiungerlo. Più si ha dimestichezza con IntelliSense, più rapidamente si scriverà il codice. Il metodo `showButton_Click()` finale dovrebbe essere simile al codice seguente.
 
-    > [!IMPORTANT]
-    > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+    [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
     [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
 
@@ -102,11 +101,11 @@ Viene quindi usato IntelliSense per immettere altro codice per aprire una finest
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md).**
+* Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 9: esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md)** .
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo](../ide/step-7-add-dialog-components-to-your-form.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
-* [Esercitazione 3: Creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
+* [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

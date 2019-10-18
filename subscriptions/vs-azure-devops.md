@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: 00a60415af16f31362b359944c8007fb3d21351f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681628"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314164"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
@@ -24,15 +24,14 @@ Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottos
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato, FTE  | Azure Boards e Repos (Basic), Azure Test Plans, Azure Artifacts<sup>2</sup>, Azure Pipelines (self-hosted)       |  Sì          |
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail,                                        | Azure Boards e Repos (Basic), Azure Artifacts<sup>2</sup>                                                            |  Sì          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Sì          |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Sì          |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato  | Repository Azure Boards & (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Yes          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail,                                        | Azure Boards e Repos (Basic)                                                            |  Yes          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Yes          |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Yes          |
 ||
 
-<sup>1</sup>  *Include:  Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP),Microsoft Partner Network (Enterprise), BizSpark, MCT Software & Services Developer. Non include: MCT Software & Services, Imagine.*
+<sup>1</sup>  *include: not for Resale (NFR), most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT software & Services Developer, ETP. Esclude: MCT software & Services, Imagine.*
 
-<sup>2</sup>*Include gratuitamente 2 GB*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.

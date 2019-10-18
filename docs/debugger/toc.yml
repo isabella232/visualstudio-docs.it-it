@@ -239,7 +239,7 @@
             - name: Viste personalizzate (gestite)
               items:
                 - name: Creare viste personalizzate di oggetti gestiti
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: Indicare al debugger gli elementi da visualizzare
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Indicare al debugger il tipo da visualizzare

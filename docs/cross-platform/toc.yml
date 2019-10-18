@@ -3,8 +3,6 @@
 - name: Strumenti di Visual Studio per Xamarin
   displayName: .NET Mobile Developer Tools (Android & iOS)
   href: /xamarin/
-- name: Strumenti di Visual Studio per Apache Cordova
-  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools per Unity
   items:
     - name: Visual Studio Tools per Unity

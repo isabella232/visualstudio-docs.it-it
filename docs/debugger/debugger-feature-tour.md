@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987782"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349741"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
-Questo argomento presenta gli strumenti debugger disponibili in Visual Studio. Nel contesto di Visual Studio il *debug di un'app* implica in genere l'esecuzione dell'applicazione con il debugger collegato, ovvero in modalità debugger. Durante il debug, il debugger offre diversi modi per vedere le operazioni eseguite dal codice durante l'esecuzione. È possibile eseguire il codice istruzione dopo istruzione ed esaminare i valori archiviati nelle variabili, impostare espressioni di controllo nelle variabili per rilevare le modifiche dei valori, esaminare il percorso di esecuzione del codice e così via. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo argomento.
+Questo argomento presenta gli strumenti debugger disponibili in Visual Studio. Nel contesto di Visual Studio il *debug di un'app* implica in genere l'esecuzione dell'applicazione con il debugger collegato, ovvero in modalità debugger. Durante il debug, il debugger offre diversi modi per vedere le operazioni eseguite dal codice durante l'esecuzione. È possibile eseguire il codice un'istruzione alla volta ed esaminare i valori archiviati nelle variabili. è possibile impostare gli orologi sulle variabili per vedere quando cambiano i valori, è possibile esaminare il percorso di esecuzione del codice, et al. Se è la prima volta che si tenta di eseguire il debug del codice, è consigliabile leggere il [debug per principianti assoluti prima di passare a](../debugger/debugging-absolute-beginners.md) questo argomento.
 
 Le funzionalità qui descritte sono applicabili a C#, C++, Visual Basic, JavaScript e ad altri linguaggi supportati da Visual Studio (se non diversamente specificato).
 
@@ -47,7 +47,7 @@ Per avviare l'app con il debugger collegato, premere **F11** (**Debug > Esegui i
 
 La freccia gialla rappresenta l'istruzione in corrispondenza della quale il debugger si è interrotto e il punto in cui anche l'esecuzione dell'app viene sospesa (l'istruzione non è ancora stata eseguita).
 
-F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. Per avanzare più rapidamente nel codice, vengono illustrate anche altre opzioni. Per impostazione predefinita, il debugger ignora il codice non utente (per informazioni dettagliate, vedere [Just My Code](../debugger/just-my-code.md)).
+F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. (Per spostarsi più rapidamente tramite codice, vengono mostrate anche altre opzioni). Per impostazione predefinita, il debugger ignora il codice non utente (se si desiderano maggiori dettagli, vedere [Just My Code](../debugger/just-my-code.md)).
 
 >[!NOTE]
 > Nel codice gestito verrà visualizzata una finestra di dialogo in cui si chiede all'utente se vuole ricevere una notifica quando vengono eseguite automaticamente istruzioni di proprietà e operatori (comportamento predefinito). Per modificare l'impostazione in un secondo momento, disabilitare l'impostazione **Esegui istruzione/routine di proprietà e operatori** nel menu **Strumenti > Opzioni** in **Debug**.
@@ -120,7 +120,7 @@ Per arrestare il debugger e tornare nell'editor del codice premere il pulsante d
 
 Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice nel corso di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic sul codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5**, **F10**o **F11** per continuare il debug.
 
-![Debug di modifica e continuazione](../debugger/media/dbg-tips-edit-and-continue.gif "EDITANDCONTINUE")
+![Modificare e continuare il debug](../debugger/media/dbg-tips-edit-and-continue.gif "EDITANDCONTINUE")
 
 Per ulteriori informazioni sull'utilizzo della funzionalità e sulle limitazioni delle funzionalità, vedere [modifica e continuazione](../debugger/edit-and-continue.md).
 
@@ -183,7 +183,7 @@ La finestra **Stack di chiamate** visualizza l'ordine in cui vengono chiamati me
 
 È possibile fare doppio clic su una riga di codice per visualizzare il codice sorgente e modificare anche l'ambito corrente controllato dal debugger. Ciò non determina l'avanzamento del debugger.
 
-È anche possibile usare i menu di scelta rapida nella finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specifiche, riavviare l'app usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Vedere [How to: Esaminare lo stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
+È anche possibile usare i menu di scelta rapida nella finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire punti di interruzione in funzioni specifiche, riavviare l'app usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Vedere [Procedura: Esaminare lo stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Esaminare un'eccezione
 
@@ -202,6 +202,14 @@ L'Helper eccezioni è un'ottima funzionalità che può facilitare il debug degli
 
 Espandere il nodo **Impostazioni eccezioni** per vedere altre opzioni relative alla gestione di questo tipo di eccezione, ma non apportare alcuna modifica per questa presentazione.
 
+## <a name="configure-debugging"></a>Configurare il debug
+
+È possibile configurare il progetto per la compilazione come [configurazione di debug o di rilascio](../debugger/how-to-set-debug-and-release-configurations.md), per configurare le proprietà del progetto per il debug o per configurare [le impostazioni generali](../debugger/how-to-specify-debugger-settings.md) per il debug. Inoltre, è possibile configurare il debugger in modo da visualizzare informazioni personalizzate utilizzando funzionalità come l'attributo [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) o, per CC++/, il [Framework NatVis](create-custom-views-of-native-objects.md).
+
+Le proprietà di debug sono specifiche per ogni tipo di progetto. Ad esempio, è possibile specificare un argomento da passare all'applicazione all'avvio. È possibile accedere alle proprietà specifiche del progetto facendo clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e selezionando **Proprietà**. Le proprietà di debug vengono in genere visualizzate nella scheda **Compila** o **debug** , a seconda del tipo di progetto specifico.
+
+Proprietà progetto ![Proprietà](../debugger/media/dbg-tour-project-properties.png "progetto")
+
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Debug di app ASP.NET attive nel servizio app di Azure
 
 **Snapshot Debugger** crea uno snapshot delle app in produzione quando viene eseguito il codice a cui si è interessati. Per indicare al debugger di creare uno snapshot, impostare punti di ancoraggio e punti di registrazione nel codice. Il debugger consente di vedere esattamente cosa non ha funzionato, senza alcun impatto sul traffico dell'applicazione di produzione. Snapshot Debugger può essere utile per ridurre notevolmente il tempo necessario per risolvere i problemi che si verificano negli ambienti di produzione.
@@ -218,7 +226,7 @@ La **funzionalità per tornare indietro di IntelliTrace** crea automaticamente u
 
 È possibile esplorare e visualizzare gli snapshot tramite i pulsanti **Vai indietro** e **Vai avanti** sulla barra degli strumenti di Debug. Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**.
 
-![Pulsanti Passo indietro e Passo avanti](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Passo indietro e Passo avanti")
+![Pulsanti Passaggio precedente e Passaggio successivo](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti Passaggio precedente e Passaggio successivo")
 
 Per altre informazioni, vedere la pagina [Visualizzare lo stato precedente dell'applicazione con IntelliTrace](../debugger/view-historical-application-state.md).
 

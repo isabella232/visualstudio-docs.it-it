@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22bc479ccd29a9eaf76e50f630061699856502ea
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306227"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72313956"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 
@@ -31,12 +31,12 @@ Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button
 
 ## <a name="to-name-your-button-controls"></a>Per assegnare un nome ai pulsanti
 
-1. Nel form scegliere il pulsante **Chiudi** . Se sono ancora selezionati tutti i pulsanti, premere **ESC** per annullare la selezione. Scorrere nella finestra **Proprietà** fino a quando non viene visualizzata la proprietà **(Name)** . La proprietà **(Name)** è disponibile nella parte iniziale quando le proprietà sono ordinate alfabeticamente. Modificare il nome in **CloseButton**, come illustrato nello screenshot seguente.
+1. Nel form scegliere il pulsante **Chiudi** . Se sono ancora selezionati tutti i pulsanti, premere **ESC** per annullare la selezione. Scorrere nella finestra **Proprietà** fino a quando non viene visualizzata la proprietà **(Name)** . La proprietà **(Name)** è vicina alla parte superiore quando le proprietà sono alfabetiche. Modificare il nome in **CloseButton**, come illustrato nello screenshot seguente.
 
     ![Finestra Proprietà con il nome closeButton](../ide/media/express_setnameproperty.png)<br>Finestra ***Proprietà*** *con* *nome* CloseButton
 
     > [!NOTE]
-    > Provare a modificare il nome del pulsante in **Chiudi pulsante**, con uno spazio tra le parole "close" e "button". Quando si esegue questa operazione, l'IDE Visualizza un messaggio di errore: "Valore di proprietà non valido". Gli spazi (e alcuni altri caratteri) non sono consentiti nei nomi dei controlli.
+    > Provare a modificare il nome del pulsante in **Chiudi pulsante**, con uno spazio tra le parole "close" e "button". Quando si esegue questa operazione, l'IDE Visualizza un messaggio di errore: "valore della proprietà non valido". Gli spazi (e alcuni altri caratteri) non sono consentiti nei nomi dei controlli.
 
 1. Rinominare gli altri tre pulsanti **backgroundButton**, **clearButton**e **showButton**.
 È possibile verificare i nomi facendo clic sull'elenco a discesa del selettore dei controlli nella finestra **Proprietà** . Vengono visualizzati i nuovi nomi dei pulsanti.
@@ -65,7 +65,7 @@ Scheda ***Form1.cs*** *con C# codice*
     End Sub
     ```
 
-   [!INCLUDE [devlang-control](./includes/devlang-control.md)]
+   [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
    Si sta esaminando il codice denominato `showButton_Click()` (in alternativa, `ShowButton_Click()`). È stato aggiunto dall'IDE nel codice del form quando si è aperto il file di codice per il pulsante **showButton** . In fase di progettazione, quando si apre il file di codice per un controllo in un form, il codice, se non esiste già, viene generato per il controllo. Questo codice, noto come *Metodo*, viene eseguito quando si esegue l'app e si sceglie il controllo, in questo caso il pulsante **Visualizza immagine** .
 
@@ -74,7 +74,7 @@ Scheda ***Form1.cs*** *con C# codice*
 1. Per aggiungere un altro metodo, aprire il file di codice per il controllo **CheckBox** in **Progettazione Windows Form**, in modo che l'IDE aggiunga un metodo `checkBox1_CheckedChanged()`. Tale metodo viene chiamato ogni volta che l'utente seleziona o deseleziona la casella di controllo.
 
    > [!TIP]
-   > Quando si lavora in un'app, si passa spesso dall'editor di codice a **Progettazione Windows Form**. L'IDE facilita lo spostamento nel progetto. Usare **Esplora soluzioni** per aprire **Progettazione Windows Form** facendo doppio clic su *Form1.cs* in C# o *Form1. vb* in Visual Basic oppure sulla barra dei menu scegliere **Visualizza** > **Designer**.
+   > Quando si lavora in un'app, si passa spesso dall'editor di codice a **Progettazione Windows Form**. L'IDE facilita lo spostamento nel progetto. Usare **Esplora soluzioni** per aprire **Progettazione Windows Form** facendo doppio clic su *Form1.cs* in C# o *Form1. vb* in Visual Basic oppure sulla barra dei menu scegliere **Visualizza** **finestra di progettazione** > .
 
     Di seguito viene mostrato il nuovo codice visualizzato nell'editor di codice.
 
@@ -93,17 +93,17 @@ Scheda ***Form1.cs*** *con C# codice*
 
     I nomi sono importanti quando si compilano programmi e i metodi (inclusi i gestori di eventi) possono avere qualsiasi nome si desideri. Quando si aggiunge un gestore dell'evento con l'IDE, viene creato un nome basato sul nome del controllo e sull'evento gestito.
 
-    Ad esempio, l'evento click per un pulsante denominato **showButton** viene chiamato metodo del gestore dell'evento `showButton_Click()` (in alternativa, `ShowButton_Click()`). Inoltre, vengono generalmente aggiunte parentesi di apertura e chiusura `()` dopo il nome del metodo, per indicare che si tratta di metodi.
+    Ad esempio, l'evento click per un pulsante denominato **showButton** viene chiamato metodo del gestore dell'evento `showButton_Click()` (in alternativa `ShowButton_Click()`). Inoltre, vengono generalmente aggiunte parentesi di apertura e chiusura `()` dopo il nome del metodo, per indicare che si tratta di metodi.
 
     Se si decide di modificare il nome di una variabile di codice, fare clic con il pulsante destro del mouse sulla variabile nel codice e quindi scegliere **Refactoring** > **Rinomina**. Tutte le istanze della variabile nel codice vengono rinominate. Per altre informazioni, vedere [refactoring di ridenominazione](../ide/reference/rename.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per andare al passaggio successivo dell'esercitazione, vedere ** @ no__t-1Step 7: Aggiungere i componenti della finestra di dialogo al form @ no__t-0 @ no__t-1.
+* Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 7: aggiungere componenti della finestra di dialogo al form](../ide/step-7-add-dialog-components-to-your-form.md)** .
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere controlli al modulo](../ide/step-5-add-controls-to-your-form.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione 2: Creare un quiz matematico a tempo @ no__t-0
-* [Esercitazione 3: Creare un gioco di abbinamenti @ no__t-0
+* [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
