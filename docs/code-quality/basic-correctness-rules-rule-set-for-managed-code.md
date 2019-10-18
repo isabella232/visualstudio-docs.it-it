@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf26a04f5db5ed3e3f2710a5421dece6cf6cc0c7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8f48b2d60feb9743529de8ed80b80365ffb815d1
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450357"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72534594"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Set di regole base di correttezza per codice gestito
 
@@ -23,23 +23,23 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 
 |Regola|Descrizione|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Dichiarare correttamente i gestori eventi|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Contrassegnare gli assembly con AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|I metodi di interfaccia devono essere richiamabili dai tipi figlio|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|I tipi delle risorse native devono essere disposable|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Spostare P/Invoke nella classe NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Non nascondere i metodi di una classe base|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Implementare IDisposable correttamente|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Non generare eccezioni in posizioni non previste|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitare tasti di scelta rapida duplicati|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|I punti di ingresso P/Invoke devono esistere|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|I P/Invoke non devono essere visibili|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|I tipi layout automatici non devono essere visibili a COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Chiamare GetLastError immediatamente dopo P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|I metodi di registrazione COM devono corrispondere|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|I tipi proprietari di campi Disposable devono essere Disposable|
+|[CA1009](../code-quality/ca1009.md)|Dichiarare correttamente i gestori eventi|
+|[CA1016](../code-quality/ca1016.md)|Contrassegnare gli assembly con AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|I metodi di interfaccia devono essere richiamabili dai tipi figlio|
+|[CA1049](../code-quality/ca1049.md)|I tipi delle risorse native devono essere disposable|
+|[CA1060](../code-quality/ca1060.md)|Spostare P/Invoke nella classe NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Non nascondere i metodi di una classe base|
+|[CA1063](../code-quality/ca1063.md)|Implementare IDisposable correttamente|
+|[CA1065](../code-quality/ca1065.md)|Non generare eccezioni in posizioni non previste|
+|[CA1301](../code-quality/ca1301.md)|Evitare tasti di scelta rapida duplicati|
+|[CA1400](../code-quality/ca1400.md)|I punti di ingresso P/Invoke devono esistere|
+|[CA1401](../code-quality/ca1401.md)|I P/Invoke non devono essere visibili|
+|[CA1403](../code-quality/ca1403.md)|I tipi layout automatici non devono essere visibili a COM|
+|[CA1404](../code-quality/ca1404.md)|Chiamare GetLastError immediatamente dopo P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
+|[CA1410](../code-quality/ca1410.md)|I metodi di registrazione COM devono corrispondere|
+|[CA1415](../code-quality/ca1415.md)|Dichiarare correttamente i P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA1900](../code-quality/ca1900.md)|I campi dei tipi di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901.md)|Le dichiarazioni P/Invoke devono essere portabili|
@@ -85,10 +85,10 @@ Nella tabella seguente vengono descritte tutte le regole del set di regole Micro
 |[CA2240](../code-quality/ca2240.md)|Implementare ISerializable in modo corretto|
 |[CA2241](../code-quality/ca2241.md)|Specificare argomenti corretti ai metodi di formattazione|
 |[CA2242](../code-quality/ca2242.md)|Testare i valori NaN in modo corretto|
-|[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Le enumerazioni devono avere valore zero|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Non passare valori letterali come parametri localizzati|
-|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizzare le stringhe in lettere maiuscole|
+|[CA1008](../code-quality/ca1008.md)|Le enumerazioni devono avere valore zero|
+|[CA1013](../code-quality/ca1013.md)|Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione|
+|[CA1303](../code-quality/ca1303.md)|Non passare valori letterali come parametri localizzati|
+|[CA1308](../code-quality/ca1308.md)|Normalizzare le stringhe in lettere maiuscole|
 |[CA1806](../code-quality/ca1806.md)|Non ignorare i risultati dei metodi|
 |[CA1816](../code-quality/ca1816.md)|Chiamare GC.SuppressFinalize correttamente|
 |[CA1819](../code-quality/ca1819.md)|Le proprietà non devono restituire matrici|

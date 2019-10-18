@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381081"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516329"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -39,7 +39,7 @@ Scaricare un file del programma di avvio automatico per l'edizione di Visual Stu
 
 Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
-Il file eseguibile di installazione @ no__t-0or è più specifico, il file del programma di avvio automatico @ no__t-1should corrisponde o è simile a uno dei seguenti.
+Il file eseguibile di installazione &mdash;or più specifico, il file del programma di avvio automatico &mdash;should corrispondere o essere simile a uno dei seguenti.
 
 | Edizione | Nomefile |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Altri programmi di avvio automatico supportati includono **vs_feedbackclient. ex
 
 ::: moniker range="vs-2019"
 
-Il file eseguibile di installazione @ no__t-0or è più specifico, un file del programma di avvio automatico @ no__t-1should corrisponde o è simile a uno dei seguenti.
+Il file eseguibile di installazione &mdash;or più specifico, un file del programma di avvio automatico &mdash;should corrispondere o essere simile a uno dei seguenti.
 
 |Edizione | Download|
 |-------------|-----------------------|
@@ -229,9 +229,9 @@ Gli amministratori possono distribuire Visual Studio nelle workstation client ne
 >
 
 ::: moniker range="vs-2019"
-
-> Per le installazioni offline, se viene visualizzato un messaggio di errore che indica che non è possibile trovare un progetto corrispondente ai parametri seguenti, assicurarsi di usare l'opzione--noweb con la versione 16.3.5 o una versione successiva.
-
+> [!IMPORTANT]
+> Per le installazioni offline, se viene visualizzato un messaggio di errore che indica che non è possibile trovare un prodotto corrispondente ai parametri seguenti, assicurarsi di usare l'opzione `--noweb` con la versione 16.3.5 o successiva.
+>
 ::: moniker-end
 
 Quando si installa da un layout, viene acquisito il contenuto che viene installato dal layout. Se tuttavia si seleziona un componente non presente nel layout, il componente viene acquisito da Internet.  Se si desidera impedire che l’installazione di Visual Studio scarichi i contenuti mancanti nel layout, utilizzare l’opzione `--noWeb`. Se viene usato `--noWeb` ma nel layout non è presente almeno uno dei contenuti selezionati per l'installazione, il programma di installazione ha esito negativo.

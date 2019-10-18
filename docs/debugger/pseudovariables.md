@@ -1,5 +1,5 @@
 ---
-title: Le pseudo variabili | Microsoft Docs
+title: Pseudo variabili riportate | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b6856517a680809ccc802c02dc880b6349eadc5
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903646"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535953"
 ---
-# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo variabili nel debugger di Visual Studio
+# <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo variabili riportate nel debugger di Visual Studio
 Le pseudo variabili sono termini usati per visualizzare determinate informazioni in una finestra delle variabili o nella finestra di dialogo **Controllo immediato**. È possibile immettere una pseudo variabile in modo analogo all'immissione di una variabile normale. Tuttavia, le pseudo variabili non sono variabili e non corrispondono a nomi di variabili presenti nel programma.
 
 ## <a name="example"></a>Esempio
@@ -32,7 +32,7 @@ Le pseudo variabili sono termini usati per visualizzare determinate informazioni
 
 `$handles`
 
- Nel codice nativo, è possibile usare le pseudo variabili riportate nella tabella seguente:
+ Nel codice nativo, è possibile usare il pseudo variabili riportate illustrato nella tabella seguente:
 
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
@@ -43,29 +43,29 @@ Le pseudo variabili sono termini usati per visualizzare determinate informazioni
 |`$env`|Visualizza il blocco di ambiente nel visualizzatore stringhe.|
 |`$cmdline`|Visualizza la stringa della riga di comando che ha avviato il programma.|
 |`$pid`|Visualizza l'ID del processo.|
-|`$` *registername*<br /><br /> oppure<br /><br /> `@` *registername*|Visualizza i contenuti del registro *registername*.<br /><br /> In genere, è possibile visualizzare il contenuto del registro immettendone semplicemente il nome. È necessario usare questa sintassi unicamente quando il nome del registro esegue l'overload di un nome di variabile. Se il nome del registro è uguale a un nome di variabile nell'ambito corrente, il debugger lo interpreta come nome di variabile. In questo caso, è opportuno usare `$`*registername* o `@`*registername*.|
+|`$` *registername*<br /><br /> Oppure<br /><br /> `@` *registername*|Visualizza i contenuti del registro *registername*.<br /><br /> In genere, è possibile visualizzare il contenuto del registro immettendone semplicemente il nome. È necessario usare questa sintassi unicamente quando il nome del registro esegue l'overload di un nome di variabile. Se il nome del registro è uguale a un nome di variabile nell'ambito corrente, il debugger lo interpreta come nome di variabile. In questo caso, è opportuno usare `$`*registername* o `@`*registername*.|
 |`$clk`|Consente di visualizzare il tempo in cicli di orologio.|
 |`$user`|Consente di visualizzare una struttura con le informazioni sull'account in cui viene eseguita l'applicazione. Per motivi di sicurezza non vengono visualizzate informazioni sulla password.|
-|`$exceptionstack`|Visualizza la traccia dello stack dell'eccezione corrente di Windows Runtime. `$ exceptionstack` funziona solo nelle App UWP. `$ exceptionstack` non è supportata per le eccezioni C++ e SEH|
-|`$returnvalue`|Visualizza il valore restituito di un metodo .NET Framework.|
+|`$exceptionstack`|Visualizza la traccia dello stack dell'eccezione corrente di Windows Runtime. `$ exceptionstack` funziona solo nelle app UWP. `$ exceptionstack` non è supportata per C++ le eccezioni SEH e|
+|`$returnvalue`|Visualizza il valore restituito di un metodo .NET.|
 
- In C# è possibile usare le pseudo variabili riportate nella tabella seguente:
+ In C# è possibile usare il pseudo variabili riportate illustrato nella tabella seguente:
 
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
-|`$exception`|Visualizza informazioni sull'ultima eccezione. Se non si è verificata alcuna eccezione, la valutazione di `$exception` produce un messaggio di errore.<br /><br /> Quando le informazioni sulle eccezioni è disabilitata, `$exception` viene automaticamente aggiunto per il **variabili locali** finestra quando viene generata un'eccezione.|
+|`$exception`|Visualizza informazioni sull'ultima eccezione. Se non si è verificata alcuna eccezione, la valutazione di `$exception` produce un messaggio di errore.<br /><br /> Quando la finestra informazioni sulle eccezioni è disabilitata, `$exception` viene aggiunto automaticamente alla finestra **variabili locali** quando si verifica un'eccezione.|
 |`$user`|Consente di visualizzare una struttura con le informazioni sull'account in cui viene eseguita l'applicazione. Per motivi di sicurezza non vengono visualizzate informazioni sulla password.|
-|`$returnvalue`|Visualizza il valore restituito di un metodo .NET Framework.|
+|`$returnvalue`|Visualizza il valore restituito di un metodo .NET.|
 
  In Visual Basic, è possibile usare le pseudo variabili riportate nella tabella seguente:
 
 |Pseudo variabile|Funzione|
 |--------------------|--------------|
 |`$exception`|Visualizza informazioni sull'ultima eccezione. Se non si è verificata alcuna eccezione, la valutazione di `$exception` produce un messaggio di errore.|
-|`$delete` o `$$delete`|Elimina una variabile implicita creata nella finestra **Immediata**. La sintassi è `$delete,` *variabile* oppure`$delete,` *variabile*`.`|
-|`$objectids` o `$listobjectids`|Visualizza tutti gli ID oggetto attivi come figli dell'espressione specificata. La sintassi è `$objectid,` *espressione* oppure`$listobjectids,` *espressione*`.`|
+|`$delete` o `$$delete`|Elimina una variabile implicita creata nella finestra **Immediata**. La sintassi *è `$delete,` variabile* o `$delete,` *variabile* `.`|
+|`$objectids` o `$listobjectids`|Visualizza tutti gli ID oggetto attivi come figli dell'espressione specificata. La sintassi *è `$objectid,` espressione* o *espressione* `$listobjectids,` `.`|
 |`$` *N* `#`|Visualizza l'oggetto con ID dell'oggetto uguale a *N*.|
-|`$dynamic`|Visualizza il nodo **Visualizzazione dinamica** speciale per un oggetto che implementa `IDynamicMetaObjectProvider`. Interfaccia. La sintassi è `$dynamic,` *object*. Questa funzionalità si applica solo al codice che usa .NET Framework versione 4.|
+|`$dynamic`|Visualizza il nodo **Visualizzazione dinamica** speciale per un oggetto che implementa `IDynamicMetaObjectProvider`. Interfaccia. La sintassi è `$dynamic,` *object*. Questa funzionalità si applica solo al codice che usa .NET Framework versione 4 o successiva.|
 
 ## <a name="see-also"></a>Vedere anche
 - [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)

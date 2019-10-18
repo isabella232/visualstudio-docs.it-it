@@ -1,6 +1,6 @@
 ---
 title: 'Esercitazione 3: Creare un gioco di abbinamenti'
-ms.date: 11/04/2016
+ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
 ms.technology: vs-ide-general
@@ -9,20 +9,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fafd46561b6a3628989b675b14c493b60da6fe
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 5161f81aaf3edf654a5979f6226449bc52604167
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118704"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516588"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 
-In questa esercitazione si compila un gioco delle coppie, in cui il giocatore deve riuscire ad accoppiare icone nascoste. Vengono illustrate le seguenti procedure:
+In questa esercitazione si compila un gioco delle coppie, in cui il giocatore deve riuscire ad accoppiare icone nascoste.
+
+> [!NOTE]
+> Questa esercitazione illustra sia C# Visual Basic, quindi concentrarsi sulle informazioni specifiche del linguaggio di programmazione che si sta usando.
+
+Questa esercitazione illustra le attività seguenti:
 
 - Archiviare oggetti, ad esempio icone, in un oggetto <xref:System.Collections.Generic.List%601>.
 
-- Utilizzare un ciclo `foreach` in Visual C# o un ciclo `For Each` in Visual Basic per scorrere gli elementi di un elenco.
+- Usare un ciclo di `foreach` C# in o un ciclo di `For Each` in Visual Basic per scorrere gli elementi di un elenco.
 
 - Tenere traccia dello stato di un form utilizzando variabili di riferimento.
 
@@ -30,20 +35,11 @@ In questa esercitazione si compila un gioco delle coppie, in cui il giocatore de
 
 - Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.
 
-Al termine di questa esercitazione, il programma sarà simile all'immagine che segue:
+Al termine, l'app dovrebbe avere un aspetto simile all'immagine seguente:
 
 ![Gioco che si creerà in questa esercitazione](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>Collegamenti dell'esercitazione
-
-Per scaricare una versione completa dell'esempio, vedere [Complete Matching Game tutorial sample](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba) (Esercitazione di esempio completa per il gioco di abbinamenti).
-
-> [!NOTE]
-> In questa esercitazione sono trattati sia Visual C# sia Visual Basic; concentrarsi sulle informazioni specifiche del linguaggio di programmazione in uso.
-
-In caso di blocchi improvvisi o dubbi a livello di programmazione, provare a pubblicare una domanda in uno dei forum MSDN. Vedere il [forum di Visual Basic](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral) e il [forum di Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral). Sono inoltre disponibili utilissime risorse di formazione video gratuite. Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti). Per altre informazioni sulla programmazione in Visual C#, vedere [C# Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners) (Nozioni fondamentali di C#: sviluppo per principianti assoluti).
-
-## <a name="related-topics"></a>Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|
@@ -56,3 +52,15 @@ In caso di blocchi improvvisi o dubbi a livello di programmazione, provare a pub
 |[Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md)|Mantenere le coppie di icone visibili se viene selezionata una coppia corrispondente.|
 |[Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.|
 |[Passaggio 9: Provare altre funzionalità](../ide/step-9-try-other-features.md)|Provare altre funzionalità, ad esempio modificare le icone e i colori oppure aggiungere una griglia e i suoni. Provare a ingrandire la lavagna e a regolare il timer.|
+
+Sono disponibili anche eccezionali risorse di formazione video gratuite. Per altre informazioni sulla programmazione in C#, vedere [ C# nozioni fondamentali: sviluppo per principianti assoluti](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Per altre informazioni sulla programmazione in Visual Basic, vedere [Visual Basic Fundamentals: Development for Absolute Beginners](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners) (Nozioni fondamentali di Visual Basic: sviluppo per principianti assoluti).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere una tabella al form](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)** .
+
+## <a name="see-also"></a>Vedere anche
+
+* [Altre C# esercitazioni](/visualstudio/get-started/csharp/)
+* [Esercitazioni Visual Basic](/visualstudio/get-started/visual-basic/)
+* [C++esercitazioni](/cpp/get-started/tutorial-console-cpp)

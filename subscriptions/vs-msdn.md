@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: MSDN Magazine verrà ritirato
-ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: de9d81369d1a616b2511ec553d41a077b2edb359
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891248"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516843"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>Il vantaggio MSDN Magazine nelle sottoscrizioni di Visual Studio è stato ritirato
 
@@ -29,8 +29,8 @@ Ecco un estratto dell'annuncio su msdn.microsoft.com:
     Subscribers of MSDN Magazine who have paid for their subscriptions will receive a pro-rated refund, based on time remaining on their subscription. The refund checks will be mailed out to those subscribers after the November issue has published."
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q-how-does-the-refund-process-work"></a>D: Come funziona il processo di rimborso?
-R: I rimborsi verranno spediti all'indirizzo che risulta negli archivi per la sottoscrizione. Per altre domande sui rimborsi, contattare **1105 Media**.  Le informazioni di contatto complete per 1105 Media sono disponibili nel [post di blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) su msdn.microsoft.com.  
+### <a name="q-how-does-the-refund-process-work"></a>D: come funziona il processo di rimborso?
+R: i rimborsi verranno inviati all'indirizzo del file per la sottoscrizione. Per altre domande sui rimborsi, contattare **1105 Media**.  Le informazioni di contatto complete per 1105 Media sono disponibili nel [post di blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) su msdn.microsoft.com.  
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
@@ -38,6 +38,7 @@ R: I rimborsi verranno spediti all'indirizzo che risulta negli archivi per la so
 
 ## <a name="next-steps"></a>Passaggi successivi
 Esplorare altre opportunità di sviluppo professionale nella propria sottoscrizione:
+- [CODE Magazine](vs-code-magazine.md)
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 - [DataCamp](vs-datacamp.md)

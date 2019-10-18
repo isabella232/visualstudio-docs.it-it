@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435716"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536040"
 ---
 # <a name="general-debugging-options"></a>Opzioni generali di debug
 
@@ -99,7 +99,7 @@ Nelle condizioni 2 e 3 l'eccezione viene talvolta intercettata dal codice gestit
 
 **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)** : Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato mentre il debugger è collegato. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code"). Per altre informazioni, vedere [debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md).
 
-**Abilita il debug JavaScript per ASP.NET (Chrome, Edge e IE)** : Abilita il debugger di script per le app ASP.NET. Al primo uso di Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome installate. Disabilitare questa opzione per ripristinare il comportamento legacy.
+**Abilita il debug JavaScript per ASP.NET (Chrome, Microsoft Edge e IE)** : Abilita il debugger di script per le app ASP.NET. Al primo uso di Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome installate. Disabilitare questa opzione per ripristinare il comportamento legacy.
 
 **Abilita strumenti di sviluppo Edge per le app UWP JavaScript (sperimentale)** : Abilita gli strumenti di sviluppo per le app JavaScript UWP in Microsoft Edge.
 
@@ -117,7 +117,7 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 
 **Usa modalità di compatibilità gestita**: sostituisce il motore di debug predefinito con una versione legacy per abilitare questi scenari:
 
-- Si usa un linguaggio .NET Framework diverso da, C#Visual Basic o F# che fornisce il proprio analizzatore di espressioni (incluso C++/CLI).
+- Si usa un linguaggio .NET diverso da, C#Visual Basic o F# che fornisce il proprio analizzatore di espressioni (incluso C++/CLI).
 
 - Si desidera abilitare modifica e continuazione per C++ i progetti durante il debug in modalità mista.
 

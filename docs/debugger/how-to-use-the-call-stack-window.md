@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814339"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535984"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Visualizzare lo stack di chiamate e utilizzare la finestra stack di chiamate nel debugger
 
@@ -96,11 +96,11 @@ Il codice non utente è un codice non visualizzato quando [Just My Code](../debu
 
 In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice per lo stack di chiamate durante il debug.
 
-- Nella finestra **Stack di chiamate** aprire il menu di scelta rapida. Scegliere **Mostra stack di chiamate nella mappa codice** (**CTRL** + **MAIUSC** +  **`** ).
+- Nella finestra **Stack di chiamate** aprire il menu di scelta rapida. Scegliere **Mostra stack di chiamate nella mappa codice** (**Ctrl**  + **MAIUSC**  +  **`** ).
 
     Per altre informazioni, vedere [eseguire il mapping dei metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Mostra stack di chiamate nella mappa del codice](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
+![Mostra stack di chiamate nella mappa codici](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Visualizzare il codice disassembly per una funzione nello stack di chiamate (C#, C++, Visual Basic,) F#
 
@@ -108,11 +108,11 @@ In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice pe
 
 ## <a name="change-the-optional-information-displayed"></a>Modificare le informazioni facoltative visualizzate
 
-- Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e impostare o deselezionare **Mostra \<** _le informazioni desiderate_ **>** .
+- Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e impostare o deselezionare **Mostra \<** _le informazioni che si desidera_  **>** .
 
 ## <a name="bkmk_symbols"></a>Caricare i simboli per un moduloC#( C++,, Visual Basic F#,)
 
-Nella finestra **Stack di chiamate** è possibile caricare i simboli di debug per un codice che non ne dispone. Questi simboli possono essere simboli di sistema o .NET Framework scaricati dai server dei simboli pubblici Microsoft o simboli contenuti in un percorso nel computer del quale si esegue il debug.
+Nella finestra **Stack di chiamate** è possibile caricare i simboli di debug per un codice che non ne dispone. Questi simboli possono essere simboli di sistema o .NET scaricati dai server dei simboli pubblici Microsoft o simboli in un percorso di simboli nel computer in cui si esegue il debug.
 
 Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
