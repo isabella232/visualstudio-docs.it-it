@@ -1,35 +1,31 @@
 ---
-title: Log del contenitore, variabili di ambiente, accesso & filesystem
+title: Log del contenitore Docker, variabili di ambiente e accesso al file System
 description: Viene descritto come migliorare la capacità di eseguire il debug e la diagnosi delle app basate su contenitori in Visual Studio usando una finestra degli strumenti per vedere cosa accade all'interno dei contenitori che ospitano l'app.
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 05/06/2019
+ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 3fb9a52f990a2e492c63a6e71a7cc2063110c816
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312169"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535543"
 ---
-# <a name="how-to-view-and-diagnose-containers-in-visual-studio"></a>Come visualizzare e diagnosticare i contenitori in Visual Studio
+# <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Come visualizzare e diagnosticare contenitori e immagini in Visual Studio
 
 È possibile visualizzare gli elementi in corso all'interno dei contenitori che ospitano l'app usando la finestra **contenitori** . Se si è abituati a usare il prompt dei comandi per eseguire comandi di Docker per visualizzare e diagnosticare ciò che accade nei contenitori, questa finestra offre un modo più pratico per monitorare i contenitori senza uscire dall'IDE di Visual Studio.
 
-> [!NOTE]
-> La finestra contenitori è attualmente disponibile come estensione di anteprima che è possibile [scaricare](https://aka.ms/vscontainerspreview) per Visual Studio 2019.
-
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- Installare [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
-- Installare l' [estensione della finestra contenitori](https://aka.ms/vscontainerspreview)
+- [Visual studio 2019 versione 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) o successiva o se si usa una versione precedente di visual studio 2019, installare l'estensione della [finestra contenitori](https://aka.ms/vscontainerspreview).
 
 ## <a name="view-information-about-your-containers"></a>Visualizzare le informazioni sui contenitori
 
-La finestra **contenitori** viene visualizzata automaticamente quando si avvia un progetto .NET in contenitori. Per visualizzare i contenitori in Visual Studio in qualsiasi momento, usare **CTRL**+**Q** per attivare la casella di ricerca di Visual Studio e `Containers` digitare e scegliere il primo elemento. È anche possibile aprire la finestra **contenitori** dal menu principale. Usare il percorso dei menu per **visualizzare** > **altri** > **contenitori**di Windows.  
+La finestra **contenitori** viene visualizzata automaticamente quando si avvia un progetto .NET in contenitori. Per visualizzare i contenitori in Visual Studio in qualsiasi momento, usare **Ctrl** +**Q** per attivare la casella di ricerca di visual studio e digitare `Containers` e scegliere il primo elemento. È anche possibile aprire la finestra **contenitori** dal menu principale. Utilizzare la **visualizzazione** percorso menu  > **altri** **contenitori** >  Windows.  
 
 ![Screenshot della scheda ambiente nella finestra contenitori](media/view-and-diagnose-containers/container-window.png)
 
@@ -42,7 +38,7 @@ Sul lato sinistro viene visualizzato l'elenco dei contenitori nel computer local
 
 La scheda **Environment (ambiente** ) Visualizza le variabili di ambiente nel contenitore. Per il contenitore dell'app, è possibile impostare queste variabili in molti modi, ad esempio in Dockerfile, in un file con estensione ENV oppure usando l'opzione-e quando si avvia un contenitore con un comando di Docker.
 
-![Screenshot della scheda ambiente nella finestra contenitori](media/view-and-diagnose-containers/container-environment-vars.png)
+![Screenshot della scheda ambiente nella finestra contenitori](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Tutte le modifiche apportate alle variabili di ambiente non vengono riflesse in tempo reale. Inoltre, le variabili di ambiente in questa scheda sono le variabili di ambiente di sistema nel contenitore e non riflettono le variabili di ambiente utente locali per l'app.
@@ -51,20 +47,20 @@ La scheda **Environment (ambiente** ) Visualizza le variabili di ambiente nel co
 
 Nella scheda **porte** è possibile controllare i mapping delle porte attivi per il contenitore.
 
-![Screenshot della scheda porte nella finestra contenitori](media/view-and-diagnose-containers/container-ports.png)
+![Screenshot della scheda porte nella finestra contenitori](media/view-and-diagnose-containers/containers-ports.png)
 
 Le porte note sono collegate, quindi se è disponibile contenuto su una porta, è possibile fare clic sul collegamento per aprire il browser.
 
 ## <a name="view-logs"></a>Visualizzare i log
 
-La scheda **logs** Mostra i risultati del `docker logs` comando. Per impostazione predefinita, la scheda Visualizza i flussi stdout e stderr in un contenitore, ma è possibile configurare l'output. Per informazioni dettagliate, vedere la pagina relativa alla [registrazione di Docker](https://docs.docker.com/config/containers/logging/).  Per impostazione predefinita, la scheda **logs** trasmette i log, ma è possibile disabilitarla scegliendo il pulsante **Interrompi** nella scheda.
+La scheda **logs** Mostra i risultati del comando `docker logs`. Per impostazione predefinita, la scheda Visualizza i flussi stdout e stderr in un contenitore, ma è possibile configurare l'output. Per informazioni dettagliate, vedere la pagina relativa alla [registrazione di Docker](https://docs.docker.com/config/containers/logging/).  Per impostazione predefinita, la scheda **logs** trasmette i log, ma è possibile disabilitarla scegliendo il pulsante **Interrompi** nella scheda.
 
-![Screenshot della scheda log nella finestra contenitori](media/view-and-diagnose-containers/containers-logs.jpg)
+![Screenshot della scheda log nella finestra contenitori](media/view-and-diagnose-containers/containers-logs.png)
 
 Per cancellare i log, usare il pulsante **Cancella** nella scheda **logs** .  Per ottenere tutti i log, usare il pulsante **Aggiorna** .
 
 > [!NOTE]
-> Visual Studio reindirizza automaticamente stdout e stderr alla finestra di **output** , quindi i contenitori avviati da Visual Studio, ovvero i contenitori nella sezione contenitori della **soluzione** , non visualizzeranno i log in questa scheda. usare invece la finestra **output** .
+> Visual Studio reindirizza automaticamente stdout e stderr alla finestra di **output** quando si esegue senza eseguire il debug con i contenitori di Windows, quindi i contenitori di Windows avviati da Visual Studio con **CTRL** +**F5** non visualizzeranno i log in Questa scheda; usare invece la finestra **output** .
 
 ## <a name="view-the-filesystem"></a>Visualizzare il file System
 
@@ -81,6 +77,32 @@ Usando la scheda **file** è possibile visualizzare i log delle applicazioni, ad
 ## <a name="start-stop-and-remove-containers"></a>Avviare, arrestare e rimuovere contenitori
 
 Per impostazione predefinita, la finestra **contenitori** Mostra tutti i contenitori nel computer gestito da Docker. È possibile utilizzare i pulsanti della barra degli strumenti per avviare, arrestare o rimuovere (eliminare) un contenitore che non si desidera più.  Questo elenco viene aggiornato dinamicamente durante la creazione o la rimozione di contenitori.
+
+## <a name="open-a-terminal-window-in-a-running-container"></a>Aprire una finestra del terminale in un contenitore in esecuzione
+
+È possibile aprire una finestra del terminale (prompt dei comandi o la shell interattiva) nel contenitore usando il pulsante **Apri finestra terminale** nella finestra del **contenitore** .
+
+![Screenshot della finestra Apri terminale nella finestra contenitori](media/view-and-diagnose-containers/containers-open-terminal-window.png)
+
+Per i contenitori di Windows, viene visualizzato il prompt dei comandi di Windows. Per i contenitori Linux, apre una finestra usando la shell bash.
+
+![Screenshot della finestra bash](media/view-and-diagnose-containers/container-bash-window.png)
+
+In genere, la finestra del terminale si apre all'esterno di Visual Studio come finestra separata. Se si vuole che un ambiente della riga di comando sia integrato nell'IDE di Visual Studio come finestra degli strumenti ancorabile, è possibile installare il [terminale Whack Whack](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal).
+
+## <a name="attach-the-debugger-to-a-process"></a>Connetti il debugger a un processo
+
+È possibile aggiungere il debugger a un processo in esecuzione nel contenitore usando il pulsante **Connetti a processo** sulla barra degli strumenti della finestra contenitori. Quando si usa questo pulsante, viene visualizzata la finestra **di dialogo Connetti a processo** che mostra i processi disponibili in esecuzione nel contenitore.  
+
+![Screenshot della finestra di dialogo Connetti a processo](media/view-and-diagnose-containers/containers-attach-to-process.jpg)
+
+È possibile connettersi ai processi gestiti nel contenitore. Per cercare un processo in un altro contenitore, usare il pulsante **trova** e selezionare un altro contenitore nella finestra di dialogo **Seleziona contenitore Docker** .
+
+## <a name="viewing-images"></a>Visualizzazione di immagini
+
+È anche possibile visualizzare le immagini nel computer locale usando la scheda **Immagini** nella finestra **contenitori** . Le immagini estratte da repository esterni vengono raggruppate in un oggetto TreeView. Selezionare un'immagine per esaminare i dettagli per l'immagine.
+
+Per rimuovere un'immagine, fare clic con il pulsante destro del mouse sull'immagine nella visualizzazione albero e scegliere **Rimuovi**oppure selezionare l'immagine e utilizzare il pulsante **Rimuovi** sulla barra degli strumenti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

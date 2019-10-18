@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94de629026cfa1b78429aaf2209b81eead7da4f
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211206"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536055"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug di codice gestitoC#(, Visual Basic F#, C++,/CLI)
 
 Questa sezione descrive i problemi e le tecniche comuni di debug per le applicazioni gestite o le applicazioni scritte in linguaggi destinati ai Common Language Runtime, ad C#esempio Visual Basic C++, e/cli. Le tecniche descritte sono di livello avanzato. [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 [Messaggi diagnostici nella finestra di output](../debugger/diagnostic-messages-in-the-output-window.md)\
 Vengono descritte le classi <xref:System.Diagnostics.Debug> e <xref:System.Diagnostics.Trace>, con le quali è possibile scrivere messaggi di runtime nella finestra di **Output**. Queste classi includono metodi di output che supportano l'output di informazioni senza interruzione dell'esecuzione e l'output di informazioni con interruzione dell'esecuzione se non viene rispettata una condizione specificata.
@@ -47,7 +47,7 @@ Vengono forniti codici di esempio per consentire il debug del metodo `OnStart` d
 [Debug in modalità mista](../debugger/debugging-mixed-mode-applications.md)\
 Viene descritto il debug di applicazioni in modalità mista, ovvero qualsiasi applicazione nella quale vengono combinati codice nativo e codice gestito.
 
-[Errore: Non è possibile eseguire il debug perché nel sistema è abilitato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Errore: impossibile eseguire il debug perché nel sistema è attivato un debugger del kernel](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Viene descritto un messaggio di errore visualizzato se si tenta di eseguire il debug del codice gestito in un sistema [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] o Windows NT avviato in modalità debug.
 
 [Debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md)\
@@ -74,14 +74,14 @@ Viene descritta un'opzione del linker che aggiunge <xref:System.Diagnostics.Debu
 Vengono fornite considerazioni per il debug di applicazioni di servizio Windows, quali: impostazione, connessione al processo, debug del codice nel metodo `OnStart` del servizio e il codice nel metodo Main, impostazione di punti di interruzione e utilizzo di Services Control Manager per avviare, interrompere, arrestare e continuare il servizio.
 
 [Debug e profilatura](/dotnet/framework/debug-trace-profile/index)\
-Viene discusso il debug di applicazioni .NET Framework e i requisiti di configurazione.
+Viene descritto il debug di applicazioni .NET e i requisiti di configurazione.
 
 [Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 Vengono presentati le tecniche di debug e i problemi più comuni riscontrabili durante il debug di script e applicazioni Web.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Debug di controlli Windows Forms personalizzati in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Procedura dettagliata: debug di controlli di Windows Forms personalizzati in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

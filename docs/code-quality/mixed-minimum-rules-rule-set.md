@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d941022427cbfa8d16efe98f716feceff980583
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e3c0b45fe73624a7506fbfdb52204201d286a73e
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445669"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535763"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 
@@ -86,13 +86,13 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28182](../code-quality/c28182.md)|Deferenziazione del puntatore NULL. Il puntatore contiene lo stesso valore NULL contenuto in un altro puntatore.|
 |[C28202](../code-quality/c28202.md)|Riferimento non valido a membro non statico|
 |[C28203](../code-quality/c28203.md)|Riferimento ambiguo al membro di classe.|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 o \_On @ no__t-3failure @ no__t-4 usato in un contesto non valido|
+|[C28205](../code-quality/c28205.md)|\_Success \_ o \_On \_failure \_ utilizzati in un contesto non valido|
 |[C28206](../code-quality/c28206.md)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](../code-quality/c28207.md)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28210](../code-quality/c28210.md)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](../code-quality/c28211.md)|Previsto nome contesto statico per SAL_context|
 |[C28212](../code-quality/c28212.md)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](../code-quality/c28213.md)|L'annotazione \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
+|[C28213](../code-quality/c28213.md)|È necessario utilizzare l'annotazione \_Use \_decl \_annotations \_ per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
 |[C28214](../code-quality/c28214.md)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](../code-quality/c28215.md)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
@@ -134,7 +134,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28267](../code-quality/c28267.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](../code-quality/c28272.md)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](../code-quality/c28273.md)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](../code-quality/c28275.md)|Il parametro per \_Macro @ no__t-1value @ no__t-2 è null|
+|[C28275](../code-quality/c28275.md)|Il parametro per \_Macro \_value \_ è null|
 |[C28279](../code-quality/c28279.md)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](../code-quality/c28280.md)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](../code-quality/c28282.md)|Le stringhe di formato devono essere nelle precondizioni|
@@ -153,7 +153,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28305](../code-quality/c28305.md)|È stato individuato un errore durante l'analisi di un token.|
 |[C28350](../code-quality/c28350.md)|L'annotazione descrive una situazione non applicabile in modo condizionale.|
 |[C28351](../code-quality/c28351.md)|L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
+|[CA1001](../code-quality/ca1001.md)|I tipi proprietari di campi Disposable devono essere Disposable|
 |[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA2213](../code-quality/ca2213.md)|I campi eliminabili devono essere eliminati|
 |[CA2231](../code-quality/ca2231.md)|Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals|

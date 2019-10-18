@@ -1,5 +1,5 @@
 ---
-title: 'Passaggio 1: Creare un progetto di app Windows Forms'
+title: 'Passaggio 1: creare un progetto di app Windows Forms'
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119011"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516705"
 ---
-# <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: Creare un progetto di app Windows Forms
+# <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: creare un progetto di app Windows Forms
 
 Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel creare un progetto di app Windows Forms.
 
@@ -44,13 +44,13 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
 
    Dopo aver applicato il filtro del **tipo di progetto** , scegliere il modello **App Windows Forms (.NET Framework)** per C# o Visual Basic, quindi scegliere **Avanti**.
 
-   ![Scegliere il C# modello per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Scegliere il modello C# o Visual Basic per l'app Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , è possibile installarlo dalla finestra **Crea un nuovo progetto** . Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
@@ -73,7 +73,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
 
 1. L'ambiente di sviluppo include tre finestre: una finestra principale, **Esplora soluzioni** e **Proprietà**.
 
-     Se una di queste finestre non è presente, è possibile ripristinare il layout predefinito della finestra. Sulla barra dei menu scegliere **finestra** > **Reimposta layout finestra**.
+     Se una di queste finestre non è presente, è possibile ripristinare il layout predefinito della finestra. Nella barra dei menu scegliere **finestra**  > **Reimposta layout finestra**.
 
      È inoltre possibile visualizzare le finestre tramite i comandi di menu. Sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà** o **Esplora soluzioni**.
 
@@ -105,17 +105,17 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
      In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, mostrata nell'immagine seguente.
 
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br/>
-     ***Salva tutto*** *pulsante della barra degli strumenti*
+     *Pulsante della barra degli strumenti* ***Salva tutto***
 
      In Visual Studio il nome della cartella e il nome del progetto vengono compilati automaticamente. Il progetto viene quindi salvato nella cartella dei progetti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 2: Eseguire l'app](../ide/step-2-run-your-program.md).**
+* Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 2: eseguire l'app](../ide/step-2-run-your-program.md)** .
 
 * Per tornare all'argomento introduttivo, vedere [Esercitazione 1: Creare un visualizzatore di immagini](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
-* [Esercitazione 3: Creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
+* [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

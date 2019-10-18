@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381087"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516888"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Creare un'installazione offline di Visual Studio
 
@@ -79,7 +79,7 @@ Per completare questo passaggio è necessario avere una connessione Internet.
 
 Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
-Il file eseguibile di installazione @ no__t-0or è più specifico, il file del programma di avvio automatico @ no__t-1should corrisponde o è simile a uno dei seguenti.
+Il file eseguibile di installazione &mdash;or più specifico, il file del programma di avvio automatico &mdash;should corrispondere o essere simile a uno dei seguenti.
 
 | Edizione | Nomefile |
 |-------------|-----------------------|
@@ -164,9 +164,9 @@ Se si vuole installare una lingua diversa dall'inglese, sostituire `en-US` con i
 > Quando si esegue l'installazione da una cache locale, vengono usate le versioni locali di ogni file. Se, tuttavia, durante l'installazione si selezionano componenti non contenuti nella cache, il programma di installazione tenterà di scaricarli da Internet.
 
 ::: moniker range="vs-2019"
-
-> Per le installazioni e gli aggiornamenti con 16,1 e versioni successive, se si riceve un errore con "Impossibile trovare un prodotto corrispondente ai parametri seguenti" nei sistemi offline, usare l'opzione--noweb con 16.3.5 o versioni successive.
-
+> [!IMPORTANT]
+> Per le installazioni offline, se viene visualizzato un messaggio di errore che indica che non è possibile trovare un prodotto corrispondente ai parametri seguenti, assicurarsi di usare l'opzione `--noweb` con la versione 16.3.5 o successiva.
+>
 ::: moniker-end
 
 Per assicurarsi che vengano installati solo i file scaricati in precedenza, usare le stesse opzioni della riga di comando usate per creare la cache di layout. Ad esempio, se è stata creata una cache di layout con il comando seguente:

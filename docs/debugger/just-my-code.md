@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug con Just My Code il codice utente | Microsoft Docs
+title: Eseguire il debug del codice utente con Just My Code | Microsoft Docs
 ms.date: 02/13/2019
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -8,116 +8,116 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1d474b388dd8f116eb53febb8a472d4c5b8150
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905784"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535992"
 ---
-# <a name="debug-only-user-code-with-just-my-code"></a>Eseguire il debug con Just My Code solo il codice utente
+# <a name="debug-only-user-code-with-just-my-code"></a>Esegui il debug solo del codice utente con Just My Code
 
-*Just My Code* è una funzionalità di debug di Visual Studio automaticamente passaggi chiamate al sistema, framework e altro codice non utente. Nel **Stack di chiamate** finestra, Just My Code comprime tali chiamate nel **[codice esterno]** frame.
+*Just My Code* è una funzionalità di debug di Visual Studio che esegue automaticamente le chiamate a sistemi, Framework e altro codice non utente. Nella finestra **stack di chiamate** Just My Code comprime tali chiamate in frame **[codice esterno]** .
 
-Just My Code funziona in modo diverso nei progetti .NET Framework, C++ e JavaScript.
+Just My Code funziona in modo diverso nei C++progetti .NET, e JavaScript.
 
 ## <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Abilitare o disabilitare Just My Code
 
 Per la maggior parte dei linguaggi di programmazione, Just My Code è abilitato per impostazione predefinita.
 
-- Per abilitare o disabilitare Just My Code in Visual Studio, sotto **degli strumenti** > **opzioni** (o **Debug** > **opzioni**) > **Debugging** > **generali**, selezionare o deselezionare **Abilita Just My Code**.
+- Per abilitare o disabilitare Just My Code in Visual Studio, in **strumenti**  > **Opzioni** (o**Opzioni** **debug**  > ) > **debug**  > **generale**, selezionare o deselezionare **Abilita Just My Code**.
 
-![Abilitare Just My Code nella finestra di dialogo Opzioni](../debugger/media/dbg_justmycode_options.png "Abilita Just My Code")
+![Abilita Just My Code nella finestra di dialogo Opzioni](../debugger/media/dbg_justmycode_options.png "Abilita Just My Code")
 
 > [!NOTE]
-> **Abilitare Just My Code** è un'impostazione globale che si applica a tutti i progetti di Visual Studio in tutte le lingue.
+> **Enable Just My Code** è un'impostazione globale che si applica a tutti i progetti di Visual Studio in tutte le lingue.
 
 ## <a name="just-my-code-debugging"></a>debug Just My Code
 
-Durante una sessione di debug, il **moduli** Mostra finestra che il debugger viene considerato My Code (codice utente), moduli di codice insieme ai relativi simboli caricamento dello stato. Per altre informazioni, vedere [acquisire maggiore familiarità con la modalità con cui il debugger si connette all'app](../debugger/debugger-tips-and-tricks.md#modules_window).
+Durante una sessione di debug, nella finestra **moduli** vengono visualizzati i moduli di codice che il debugger sta trattando come codice utente (codice utente), insieme al relativo stato di caricamento dei simboli. Per altre informazioni, vedere [acquisire familiarità con la modalità di connessione del debugger all'app](../debugger/debugger-tips-and-tricks.md#modules_window).
 
-![Il codice utente nella finestra di moduli](../debugger/media/dbg_justmycode_module.png "codice utente nella finestra moduli")
+![Codice utente nella finestra moduli](../debugger/media/dbg_justmycode_module.png "Codice utente nella finestra moduli")
 
-Nel **Stack di chiamate** oppure **attività** finestra, Just My Code consente di comprimere il codice non utente in un frame di grigio codice annotato con etichettato `[External Code]`.
+Nella finestra **stack di chiamate** o **attività** Just My Code comprime il codice non utente in un frame di codice con annotazioni in grigio con etichetta `[External Code]`.
 
-![Frame di codice esterno nella finestra Stack di chiamate](../debugger/media/dbg_justmycode_externalcode.png "frame di codice esterno")
+![Frame di codice esterno nella finestra stack di chiamate](../debugger/media/dbg_justmycode_externalcode.png "Cornice codice esterno")
 
 >[!TIP]
->Per aprire la **moduli**, **Stack di chiamate**, **le attività**, o la maggior parte delle altre finestre di debug, è necessario essere in una sessione di debug. Durante il debug, sotto **Debug** > **Windows**, selezionare windows che si desidera aprire.
+>Per aprire i **moduli**, lo **stack di chiamate**, le **attività**o la maggior parte delle altre finestre di debug, è necessario essere in una sessione di debug. Durante il debug, in **debug**  > **Windows**Selezionare le finestre che si desidera aprire.
 
-<a name="BKMK_Override_call_stack_filtering"></a> Per visualizzare il codice in un compressa **[codice esterno]** frame, fare doppio clic nella **Stack di chiamate** oppure **attività** finestra e selezionare **Mostra codice esterno**dal menu di scelta rapida. Sostituire le righe di codice esterni espanso il **[codice esterno**] frame.
+<a name="BKMK_Override_call_stack_filtering"></a>Per visualizzare il codice in un frame compresso **[codice esterno]** , fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** o **attività** e scegliere **Mostra codice esterno** dal menu di scelta rapida. Le righe di codice esterno espanse sostituiscono il frame **[codice esterno**].
 
-![Mostra codice esterno nella finestra Stack di chiamate](../debugger/media/dbg_justmycode_showexternalcode.png "Mostra codice esterno")
+![Mostra codice esterno nella finestra stack di chiamate](../debugger/media/dbg_justmycode_showexternalcode.png "Mostra codice esterno")
 
 > [!NOTE]
-> **Mostra codice esterno** è un profiler utente corrente, l'impostazione che si applica a tutti i progetti in tutti i linguaggi aperti dall'utente.
+> **Mostra codice esterno** è un'impostazione del profiler utente corrente che si applica a tutti i progetti in tutte le lingue aperte dall'utente.
 
-Fare doppio clic su una riga di codice esterno espanso nel **Stack di chiamate** finestra evidenzia la riga del codice chiamante in verde nel codice sorgente. Per le DLL o altri moduli non trovato o caricato, un simbolo o un'origine non trovato potrebbe aperta la pagina.
+Facendo doppio clic su una riga di codice esterna espansa nella finestra **stack di chiamate** viene evidenziata la riga del codice chiamante in verde nel codice sorgente. Per le dll o altri moduli non trovati o caricati, è possibile che venga visualizzata una pagina di simboli o di origine non trovata.
 
-## <a name="BKMK__NET_Framework_Just_My_Code"></a> Just My Code in .NET Framework
+## <a name="BKMK__NET_Framework_Just_My_Code"></a>Just My Code .NET
 
-Nei progetti .NET Framework, Just My Code Usa simboli (*PDB*) i file e ottimizzazioni del programma per classificare il codice utente e non utente. Il debugger di .NET Framework considera i file binari ottimizzati e non caricati *PDB* file di codice non utente.
+Nei progetti .NET Just My Code utilizza i file di simboli (con*estensione PDB*) e le ottimizzazioni del programma per classificare il codice utente e non utente. Il debugger .NET considera i file binari ottimizzati e i file con *estensione PDB* non caricati come codice non utente.
 
-Tre attributi del compilatore influiscono anche su ciò che il debugger .NET considera come codice utente:
+Tre attributi del compilatore influiscono anche sul codice utente considerato dal debugger .NET:
 
-- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indica al debugger che il codice di che cui è applicato non è codice utente.
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> indica al debugger che il codice a cui è applicato non è il codice utente.
 - <xref:System.Diagnostics.DebuggerHiddenAttribute> nasconde il codice al debugger, anche se Just My Code è disattivato.
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute> indica al debugger di eseguire il codice che viene applicato, anziché eseguire tutto il codice.
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> indica al debugger di eseguire il codice a cui viene applicato, anziché eseguire un'istruzione nel codice.
 
-Il debugger di .NET Framework considera tutto l'altro codice codice utente.
+Il debugger .NET considera il codice utente in tutto il codice.
 
-Durante il debug di .NET Framework
+Durante il debug di .NET:
 
-- **Eseguire il debug** > **Esegui istruzione** (o **F11**) nel codice non utente esegue le istruzioni di codice alla riga successiva del codice utente.
-- **Eseguire il debug** > **Esci** (o **MAIUSC**+**F11**) in codice non utente in esecuzione alla riga successiva del codice utente.
+- **Eseguire il Debug**  > **Esegui istruzione** (o **F11**) nei passaggi del codice non utente sul codice alla riga successiva del codice utente.
+- **Debug**  > **Esci da istruzione/uscita** (o **Sposta** +**F11**) nel codice non utente viene eseguito alla riga successiva del codice utente.
 
-Se non è presente codice utente più, il debug continua finché non termina, raggiunge un altro punto di interruzione o viene generato un errore.
+Se non c'è altro codice utente, il debug continua fino a quando non termina, raggiunge un altro punto di interruzione o genera un errore.
 
-<a name="BKMK_NET_Breakpoint_behavior"></a> Se il debugger si interrompe nel codice non utente (ad esempio, si utilizza **Debug** > **Interrompi tutto** e pause nel codice non utente), il **Nessuna origine** verrà visualizzata la finestra. È quindi possibile usare una **Debug** > **passaggio** comando per passare alla riga successiva del codice utente.
+<a name="BKMK_NET_Breakpoint_behavior"></a>Se il debugger si interrompe nel codice non utente, ad esempio se si usa **Debug**  > **Interrompi tutto** e si sospende nel codice non utente, la finestra **Nessuna origine** viene visualizzata. È quindi possibile usare un comando **Debug**  > **Step** per passare alla riga successiva del codice utente.
 
-Se si verifica un'eccezione non gestita nel codice non utente, il debugger si interrompe alla riga di codice utente in cui è stato generato l'eccezione.
+Se si verifica un'eccezione non gestita nel codice non utente, il debugger si interrompe in corrispondenza della riga del codice utente in cui è stata generata l'eccezione.
 
-Se eccezioni first-chance sono abilitate per l'eccezione, la riga di codice utente chiamante viene evidenziata in verde nel codice sorgente. Il **Stack di chiamate** finestra vengono visualizzati i frame annotato con etichettato **[codice esterno]**.
+Se per l'eccezione sono abilitate le eccezioni first-chance, la riga del codice utente chiamante viene evidenziata in verde nel codice sorgente. Nella finestra **stack di chiamate** viene visualizzato il frame con annotazioni con etichetta **[codice esterno]** .
 
 ## <a name="BKMK_C___Just_My_Code"></a> Just My Code in C++
 
-A partire da Visual Studio 2017 versione 15.8, Just My Code per il codice è inoltre supportata l'esecuzione di istruzioni. Questa funzionalità richiede anche l'uso del [/JMC (solo il debug del codice)](/cpp/build/reference/jmc) opzione del compilatore. L'opzione è abilitata per impostazione predefinita in C++ progetti. Per la **Stack di chiamate** finestra e stack di chiamate supporto in Just My Code, il commutatore /JMC non è necessario.
+A partire da Visual Studio 2017 versione 15,8, è supportato anche Just My Code per l'esecuzione del codice. Questa funzionalità richiede anche l'uso dell'opzione del compilatore [/JMC (Just My Code debug)](/cpp/build/reference/jmc) . Per impostazione predefinita, l'opzione è C++ abilitata nei progetti. Per la finestra **stack di chiamate** e il supporto dello stack di chiamate in Just My Code, l'opzione/JMC non è obbligatoria.
 
-<a name="BKMK_CPP_User_and_non_user_code"></a> Per essere classificato come codice utente, il file PDB per il file binario che contiene il codice utente deve essere caricato dal debugger (usare il **moduli** finestra per selezionare questa opzione).
+<a name="BKMK_CPP_User_and_non_user_code"></a>Per essere classificato come codice utente, il PDB per il file binario che contiene il codice utente deve essere caricato dal debugger (usare la finestra **moduli** per verificare questa impostazione).
 
-Per il comportamento dello stack di chiamate, ad esempio nel **Stack di chiamate** Just My Code nella finestra C++ vengono considerate solo le funzioni *codice non utente*:
+Per il comportamento dello stack di chiamate, ad esempio nella finestra **stack** di chiamate C++ , Just My Code in considera solo queste funzioni come *codice non utente*:
 
 - Funzioni con informazioni di origine rimosse nei propri file di simboli.
 - Funzioni i cui file di simboli indicano che non esiste alcun file di origine corrispondente allo stack frame.
-- Funzioni specificate nei  *\*con estensione natjmc* i file nei *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
+- Funzioni specificate nei file *\* natjmc* nella cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
 
-Per il comportamento di avanzamento nell'esecuzione di codice, Just My Code in C++ prende in considerazione solo le funzioni *codice non utente*:
+Per il comportamento dell'esecuzione del codice C++ , Just My Code in considera solo queste funzioni come *codice non utente*:
 
-- Funzioni per il quale il file PDB corrispondente non è stato caricato nel debugger.
-- Funzioni specificate nei  *\*con estensione natjmc* i file nei *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
+- Funzioni per le quali il file PDB corrispondente non è stato caricato nel debugger.
+- Funzioni specificate nei file *\* natjmc* nella cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
 
 > [!NOTE]
-> Per il supporto di avanzamento nell'esecuzione di codice in Just My Code, C++ codice deve essere compilato con i compilatori MSVC in Visual Studio 15.8 Preview 3 o versione successiva, e deve essere abilitata l'opzione del compilatore /JMC (è abilitata per impostazione predefinita). Per altre informazioni, vedere [Personalizza C++ stack di chiamate e comportamento dell'esecuzione di codice](#BKMK_CPP_Customize_call_stack_behavior)) e ciò [post di blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Per il codice compilato usando un compilatore precedente, *con estensione natstepfilter* file sono l'unico modo per personalizzare l'esecuzione di istruzioni, il codice indipendente dalla Just My Code. Visualizzare [Personalizza C++ comportamento di debug passo a passo](#BKMK_CPP_Customize_stepping_behavior).
+> Per il supporto dell'esecuzione del codice C++ in Just My Code, il codice deve essere compilato usando i compilatori MSVC in Visual Studio 15,8 Preview 3 o versioni successive e l'opzione del compilatore/JMC deve essere abilitata (è abilitata per impostazione predefinita). Per altri dettagli, vedere [personalizzare C++ lo stack di chiamate e il comportamento dell'esecuzione del codice](#BKMK_CPP_Customize_call_stack_behavior)) e questo [post di Blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Per il codice compilato usando un compilatore precedente, i file con *estensione natstepfilter* sono l'unico modo per personalizzare l'esecuzione del codice, che è indipendente da Just My Code. Vedere [personalizzare C++ il comportamento di esecuzione](#BKMK_CPP_Customize_stepping_behavior).
 
-<a name="BKMK_CPP_Stepping_behavior"></a> Durante il debug in C++:
+<a name="BKMK_CPP_Stepping_behavior"></a>Durante C++ il debug:
 
-- **Eseguire il debug** > **Esegui istruzione** (o **F11**) nel codice non utente esegue le istruzioni di codice alla riga successiva del codice utente.
-- **Eseguire il debug** > **Esci** (o **MAIUSC**+**F11**) in codice non utente in esecuzione alla riga successiva del codice utente.
+- **Eseguire il Debug**  > **Esegui istruzione** (o **F11**) nei passaggi del codice non utente sul codice alla riga successiva del codice utente.
+- **Debug**  > **Esci da istruzione/uscita** (o **Sposta** +**F11**) nel codice non utente viene eseguito alla riga successiva del codice utente.
 
-Se non è presente codice utente più, il debug continua finché non termina, raggiunge un altro punto di interruzione o viene generato un errore.
+Se non c'è altro codice utente, il debug continua fino a quando non termina, raggiunge un altro punto di interruzione o genera un errore.
 
-Se il debugger si interrompe nel codice non utente (ad esempio, si utilizza **Debug** > **Interrompi tutto** e sospendere le risorse in codice non utente), l'esecuzione continua del codice non utente.
+Se il debugger si interrompe nel codice non utente, ad esempio se si utilizza il **Debug**  > **Interrompi tutto** e si sospende nel codice non utente, l'esecuzione continua nel codice non utente.
 
-Se il debugger raggiunge un'eccezione, si ferma sull'eccezione, se è in codice utente o non utente. **Non gestite dall'utente** le opzioni presenti nella **impostazioni eccezioni** vengono ignorati nella finestra di dialogo.
+Se il debugger rileva un'eccezione, si interrompe sull'eccezione, che si trovi nel codice utente o non utente. Le opzioni non **gestite dall'utente** nella finestra di dialogo **Impostazioni eccezioni** vengono ignorate.
 
-### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizzare C++ stack di chiamate e comportamento dell'esecuzione del codice
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a>Personalizzare C++ lo stack di chiamate e il comportamento dell'esecuzione del codice
 
-Per i progetti C++, è possibile specificare i moduli, i file di origine e le funzioni di **Stack di chiamate** trattata come codice non utente nella finestra specificandoli nei  *\*con estensione natjmc* file. Questa personalizzazione può essere applicata anche al codice l'esecuzione di istruzioni se si usa il compilatore più recente (vedere [ C++ Just My Code](#BKMK_CPP_User_and_non_user_code)).
+Per C++ i progetti, è possibile specificare i moduli, i file di origine e le funzioni che la finestra **stack di chiamate** considera come codice non utente specificando tali moduli nei file *\*. natjmc* . Questa personalizzazione si applica anche all'esecuzione del codice se si usa il compilatore più recente (vedere [ C++ Just My Code](#BKMK_CPP_User_and_non_user_code)).
 
 - Per specificare il codice non utente per tutti gli utenti del computer che esegue Visual Studio, aggiungere il file con estensione *natjmc* alla cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*.
-- Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natjmc* del file per il *documenti %USERPROFILE%\My\\< versione di Visual Studio\>\Visualizers* cartella.
+- Per specificare il codice non utente per un singolo utente, aggiungere il file con *estensione natjmc* alla cartella *%USERPROFILE%\My documents \\ < Visual Studio Version \> \visualizers* .
 
-Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
+Un file con *estensione natjmc* è un file XML con la sintassi seguente:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -143,8 +143,8 @@ Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile usare i caratteri jolly di Windows `?` (zero o un carattere) e `*` (zero o più caratteri). Ad esempio,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli nella cartella *\3rdParty\UtilLibs* di qualsiasi unità come codice esterno.|
-|`Company`|Facoltativo. Nome della società che pubblica il modulo che viene incorporato nel file eseguibile. È possibile utilizzare questo attributo per evitare ambiguità tra i moduli.|
+|`Name`|Obbligatorio. Percorso completo del modulo o dei moduli. È possibile usare i caratteri jolly di Windows `?` (zero o un carattere) e `*` (zero o più caratteri). Di seguito è riportato un esempio:<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al debugger di considerare tutti i moduli nella cartella *\3rdParty\UtilLibs* di qualsiasi unità come codice esterno.|
+|`Company`|Parametro facoltativo. Nome della società che pubblica il modulo che viene incorporato nel file eseguibile. È possibile utilizzare questo attributo per evitare ambiguità tra i moduli.|
 
  **Attributi dell'elemento file**
 
@@ -157,17 +157,17 @@ Oggetto *con estensione natjmc* file è un file XML con questa sintassi:
 |Attributo|Descrizione|
 |---------------|-----------------|
 |`Name`|Obbligatorio. Nome completo della funzione da considerare come codice esterno.|
-|`Module`|Facoltativo. Nome o percorso completo del modulo che contiene la funzione. È possibile utilizzare questo attributo per evitare ambiguità tra funzioni con lo stesso nome.|
+|`Module`|Parametro facoltativo. Nome o percorso completo del modulo che contiene la funzione. È possibile utilizzare questo attributo per evitare ambiguità tra funzioni con lo stesso nome.|
 |`ExceptionImplementation`|Se impostato su `true`, lo stack di chiamate mostra la funzione che ha generato l'eccezione anziché questa funzione.|
 
-### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizzare C++ comportamento dell'esecuzione indipendente dalle impostazioni di Just My Code
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a>Personalizzare C++ il comportamento dell'esecuzione di un'istruzione indipendente dalle impostazioni Just My Code
 
-Nei progetti C++, è possibile specificare le funzioni per eseguire failover elencandoli come codice non utente nei  *\*con estensione natstepfilter* file. Funzioni elencate nelle  *\*con estensione natstepfilter* file non sono interdipendenti impostazioni Just My Code.
+Nei C++ progetti è possibile specificare le funzioni per eseguire un'istruzione/routine elencando tali funzioni come codice non utente nei file *\*. natstepfilter* . Le funzioni elencate nei file *\* natstepfilter* non dipendono dalle impostazioni Just My Code.
 
-- Per specificare il codice non utente per tutti gli utenti di Visual Studio locali, aggiungere il *con estensione natstepfilter* del file per il *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* cartella.
-- Per specificare il codice non utente per un singolo utente, aggiungere il *con estensione natstepfilter* del file per il *documenti %USERPROFILE%\My\\< versione di Visual Studio\>\Visualizers* cartella.
+- Per specificare il codice non utente per tutti gli utenti locali di Visual Studio, aggiungere il file con *estensione natstepfilter* alla cartella *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* .
+- Per specificare il codice non utente per un singolo utente, aggiungere il file con *estensione natstepfilter* alla cartella *%USERPROFILE%\My documents \\ < Visual Studio Version \> \visualizers* .
 
-Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:
+Un file con *estensione natstepfilter* è un file XML con la sintassi seguente:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -188,9 +188,9 @@ Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:
 |Elemento|Descrizione|
 |-------------|-----------------|
 |`Function`|Obbligatorio. Specifica una o più funzioni come funzioni non utente.|
-|`Name`|Obbligatorio. Espressione regolare formattata in base a ECMA-262 che specifica il nome completo della funzione da mettere in corrispondenza. Ad esempio:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al debugger che tutti i metodi in `MyNS::MyClass` devono essere considerati codice non utente. La corrispondenza prevede la distinzione tra maiuscole e minuscole.|
-|`Module`|Facoltativo. Espressione regolare formattata in base a ECMA-262 che specifica il percorso completo del modulo che contiene la funzione. La corrispondenza non fa distinzione tra maiuscole e minuscole.|
-|`Action`|Obbligatorio. Uno dei valori seguenti (viene effettuata la distinzione tra maiuscole e minuscole):<br /><br /> `NoStepInto`  -indica al debugger di ignorare la funzione.<br /> `StepInto`  -indica al debugger di eseguire l'istruzione della funzione, eseguendo l'override di qualsiasi altro `NoStepInto` per la funzione corrispondente.|
+|`Name`|Obbligatorio. Espressione regolare formattata in base a ECMA-262 che specifica il nome completo della funzione da mettere in corrispondenza. Esempio:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al debugger che tutti i metodi in `MyNS::MyClass` devono essere considerati codice non utente. La corrispondenza prevede la distinzione tra maiuscole e minuscole.|
+|`Module`|Parametro facoltativo. Espressione regolare formattata in base a ECMA-262 che specifica il percorso completo del modulo che contiene la funzione. La corrispondenza non fa distinzione tra maiuscole e minuscole.|
+|`Action`|Obbligatorio. Uno dei valori seguenti (viene effettuata la distinzione tra maiuscole e minuscole):<br /><br /> `NoStepInto`: indica al debugger di eseguire un'istruzione/routine della funzione.<br /> `StepInto`: indica al debugger di eseguire un'istruzione nella funzione, eseguendo l'override di qualsiasi altra `NoStepInto` per la funzione corrispondente.|
 
 ## <a name="BKMK_JavaScript_Just_My_Code"></a> Just My Code in JavaScript
 
@@ -199,57 +199,57 @@ Oggetto *con estensione natstepfilter* file è un file XML con questa sintassi:
 |||
 |-|-|
 |**MyCode**|Codice utente che si possiede e si controlla.|
-|**LibraryCode**|Codice non utente da librerie utilizzate regolarmente e l'app si basa su a funzionare correttamente (ad esempio WinJS o jQuery).|
-|**UnrelatedCode**|Codice non utente nelle app che non si è proprietari e l'app non si basa sul corretto funzionamento. Ad esempio, un SDK che consente di visualizzare annunci pubblicitari potrebbe essere UnrelatedCode. Nei progetti UWP, qualsiasi codice che viene caricato in un'app da un URI HTTP o HTTPS viene anche considerato UnrelatedCode.|
+|**LibraryCode**|Codice non utente dalle librerie usate regolarmente e l'app si basa su per funzionare correttamente (ad esempio, WinJS o jQuery).|
+|**UnrelatedCode**|Codice non utente nell'app di cui non si è proprietari e che l'app non si basa sul funzionamento corretto. Ad esempio, un SDK pubblicitario che Visualizza annunci potrebbe essere UnrelatedCode. Nei progetti UWP, anche il codice caricato nell'app da un URI HTTP o HTTPS viene considerato UnrelatedCode.|
 
-Il debugger JavaScript classifica codice come utente o non utente in questo ordine:
+Il debugger JavaScript classifica il codice come utente o non utente nell'ordine seguente:
 
-1. Le classificazioni predefinite.
-   - Script eseguito passando una stringa alla fornita dall'host `eval` funzione viene **MyCode**.
-   - Script eseguito passando una stringa per il `Function` costruttore viene **LibraryCode**.
-   - Lo script in un riferimento a framework, ad esempio WinJS o Azure SDK, è **LibraryCode**.
-   - Script eseguito passando una stringa per il `setTimeout`, `setImmediate`, o `setInterval` funzioni viene **UnrelatedCode**.
+1. Classificazioni predefinite.
+   - Lo script eseguito passando una stringa alla funzione `eval` fornita dall'host è **Decode**.
+   - Lo script eseguito passando una stringa al costruttore `Function` è **LibraryCode**.
+   - Lo script in un riferimento di Framework, ad esempio WinJS o Azure SDK, è **LibraryCode**.
+   - Lo script eseguito passando una stringa alle funzioni `setTimeout`, `setImmediate` o `setInterval` è **UnrelatedCode**.
 
-2. Le classificazioni specificate per tutti i progetti JavaScript di Visual Studio il *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* file.
+2. Classificazioni specificate per tutti i progetti JavaScript di Visual Studio nel file *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.WWA.JSON* .
 
-3. Le classificazioni nel *mycode.json* file del progetto corrente.
+3. Classificazioni nel file *Decode. JSON* del progetto corrente.
 
 Ogni passaggio di classificazione esegue l'override dei passaggi precedenti.
 
 Tutto il resto del codice viene classificato come **MyCode**.
 
-È possibile modificare le classificazioni predefinite e classificare file specifici e gli URL come codice utente o non utente, aggiungendo un *. JSON* file denominato *mycode.json* nella cartella radice di un progetto di JavaScript. Visualizzare [personalizzare Just My Code in JavaScript](#BKMK_JS_Customize_Just_My_Code).
+È possibile modificare le classificazioni predefinite e classificare URL e file specifici come codice utente o non utente, aggiungendo un file con *estensione JSON* denominato *Decode. JSON* alla cartella radice di un progetto JavaScript. Vedere [personalizzare Just My Code JavaScript](#BKMK_JS_Customize_Just_My_Code).
 
-<a name="BKMK_JS_Stepping_behavior"></a> Durante il debug di JavaScript:
+<a name="BKMK_JS_Stepping_behavior"></a>Durante il debug di JavaScript:
 
-- Se il codice non utente, una funzione **Debug** > **Esegui istruzione** (o **F11**) si comporta come **Debug**  >  **Esegui istruzione/routine** (o **F10**).
-- Se un'esecuzione inizia nel non utente (**LibraryCode** oppure **UnrelatedCode**) codice, l'esecuzione temporanea si comporta come se Just My Code non è abilitata. Quando si esegue nuovamente codice utente, Just My Code per il debug è abilitato nuovamente.
-- Quando un utente codice passaggio comporta l'uscita dal contesto di esecuzione corrente, il debugger si arresta alla riga di codice utente eseguita successiva. Se ad esempio un callback viene eseguito nel codice **LibraryCode**, il debugger continua finché la riga di codice utente successiva non viene eseguita.
-- **Esci da istruzione /** (o **MAIUSC**+**F11**) si interrompe nella riga successiva del codice utente.
+- Se una funzione è di codice non utente, **il debug**  > **Esegui istruzione** (o **F11**) si comporta come **debug**  > **Esegui istruzione** /routine (o **F10**).
+- Se un passaggio inizia con il codice non utente (**LibraryCode** o **UnrelatedCode**), l'esecuzione temporanea si comporta come se Just My Code non fosse abilitata. Quando si torna al codice utente, Just My Code esecuzione di istruzioni viene riabilitata.
+- Quando un passaggio del codice utente determina l'uscita dal contesto di esecuzione corrente, il debugger si arresta alla successiva riga del codice utente eseguito. Se ad esempio un callback viene eseguito nel codice **LibraryCode**, il debugger continua finché la riga di codice utente successiva non viene eseguita.
+- **Esci da istruzione/uscita** (o **MAIUSC** +**F11**) si interrompe alla riga successiva del codice utente.
 
-Se non è presente codice utente più, il debug continua finché non termina, raggiunge un altro punto di interruzione o viene generato un errore.
+Se non c'è altro codice utente, il debug continua fino a quando non termina, raggiunge un altro punto di interruzione o genera un errore.
 
-Punti di interruzione impostati nel codice vengono sempre raggiunti, ma il codice viene classificato.
+I punti di interruzione impostati nel codice vengono sempre raggiunti, ma il codice è classificato.
 
-- Se il `debugger` parola chiave viene visualizzata **LibraryCode**, il debugger si interrompe sempre.
-- Se il `debugger` parola chiave viene visualizzata **UnrelatedCode**, il debugger non si arresta.
+- Se la parola chiave `debugger` viene eseguita in **LibraryCode**, il debugger interrompe sempre l'esecuzione.
+- Se la parola chiave `debugger` viene eseguita in **UnrelatedCode**, il debugger non si arresta.
 
-<a name="BKMK_JS_Exception_behavior"></a> Se si verifica un'eccezione non gestita nel **MyCode** oppure **LibraryCode** codice, il debugger si interrompe sempre.
+<a name="BKMK_JS_Exception_behavior"></a>Se si verifica un'eccezione non gestita nel **codice Decode** o **LibraryCode** , il debugger interrompe sempre l'esecuzione.
 
-Se si verifica un'eccezione non gestita nel **UnrelatedCode**, e **MyCode** oppure **LibraryCode** è nello stack di chiamate, il debugger si interrompe.
+Se si verifica un'eccezione non gestita in **UnrelatedCode**e il **codice** o **LibraryCode** è nello stack di chiamate, il debugger si interrompe.
 
-Se le eccezioni first-chance sono abilitate per l'eccezione e l'eccezione si verifica nelle **LibraryCode** oppure **UnrelatedCode**:
+Se le eccezioni first-chance sono abilitate per l'eccezione e l'eccezione si verifica in **LibraryCode** o **UnrelatedCode**:
 
 - Se l'eccezione è gestita, il debugger non si interrompe.
 - Se l'eccezione non è gestita, il debugger si interrompe.
 
-### <a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizzare Just My Code in JavaScript
+### <a name="BKMK_JS_Customize_Just_My_Code"></a>Personalizzare Just My Code JavaScript
 
-Per classificare il codice utente e non utente per un singolo progetto di JavaScript, è possibile aggiungere un *. JSON* file denominato *mycode.json* nella cartella radice del progetto.
+Per categorizzare il codice utente e non utente per un singolo progetto JavaScript, è possibile aggiungere un file con *estensione JSON* denominato *Decode. JSON* alla cartella radice del progetto.
 
-In questo file specifiche di eseguire l'override le classificazioni predefinite e il *mycode.default.wwa.json* file. Il *mycode.json* file non è necessario elencare tutte le coppie chiave-valore. Il **MyCode**, **librerie**, e **Unrelated** i valori possono essere matrici vuote.
+Le specifiche in questo file sostituiscono le classificazioni predefinite e il file *Decode. default. WWA. JSON* . Non è necessario che il file *Decode. JSON* elenchi tutte le coppie chiave-valore. Il **codice**, le **librerie**e i valori non **correlati** possono essere matrici vuote.
 
-*MyCode.JSON* file utilizzano questa sintassi:
+I file *Decode. JSON* usano questa sintassi:
 
 ```json
 {
@@ -301,4 +301,4 @@ Le coppie chiave-valore **MyCode**, **Libraries** e **Unrelated** specificano gl
 |**Libraries**|Matrice di URL o di file classificati come **LibraryCode**.|
 |**Unrelated**|Matrice di URL o di file classificati come **UnrelatedCode**.|
 
-La stringa URL o del file può contenere uno o più `*` caratteri, che corrispondono a zero o più caratteri. `*` equivale all'espressione regolare `.*`.
+La stringa dell'URL o del file può contenere uno o più caratteri `*`, che corrispondono a zero o più caratteri. `*` corrisponde al `.*` di espressioni regolari.

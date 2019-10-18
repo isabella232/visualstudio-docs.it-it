@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce642ee57112561ba687b7ebe962150ce4e268e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1940680af30928b46dbb73616569d0db318dac18
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446539"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535735"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Set di regole consigliate miste
 
@@ -151,7 +151,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28020](../code-quality/c28020.md)|L'espressione non è true in questa chiamata|
 |[C28021](../code-quality/c28021.md)|Il parametro annotato deve essere un puntatore|
 |[C28022](../code-quality/c28022.md)|Le classi di funzioni in questa funzione non corrispondono alle classi di funzioni nel typedef utilizzato per definirlo.|
-|[C28023](../code-quality/c28023.md)|La funzione assegnata o passata deve avere un'annotazione \_Function @ no__t-1Class @ no__t-2 per almeno una delle classi|
+|[C28023](../code-quality/c28023.md)|La funzione assegnata o passata deve avere un \_Function \_class \_ annotazione per almeno una delle classi|
 |[C28024](../code-quality/c28024.md)|Il puntatore a funzione assegnato è annotato con la classe Function, che non è contenuta nell'elenco delle classi di funzioni.|
 |[C28039](../code-quality/c28039.md)|Il tipo di parametro effettivo deve corrispondere esattamente al tipo|
 |[C28112](../code-quality/c28112.md)|Una variabile A cui si accede tramite una funzione Interlocked deve essere sempre accessibile tramite una funzione Interlocked.|
@@ -169,14 +169,14 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28196](../code-quality/c28196.md)|Il requisito non è soddisfatto. (L'espressione non restituisce true).|
 |[C28202](../code-quality/c28202.md)|Riferimento non valido a membro non statico|
 |[C28203](../code-quality/c28203.md)|Riferimento ambiguo al membro di classe.|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 o \_On @ no__t-3failure @ no__t-4 usato in un contesto non valido|
+|[C28205](../code-quality/c28205.md)|\_Success \_ o \_On \_failure \_ utilizzati in un contesto non valido|
 |[C28206](../code-quality/c28206.md)|L'operando sinistro punta a uno struct. Utilizzare '->'|
 |[C28207](../code-quality/c28207.md)|L'operando sinistro è uno struct. Utilizzare '.'|
 |[C28209](../code-quality/c28209.md)|La dichiarazione per il simbolo presenta una dichiarazione in conflitto|
 |[C28210](../code-quality/c28210.md)|Impossibile definire le annotazioni per il contesto __On_failure in un precontesto esplicito|
 |[C28211](../code-quality/c28211.md)|Previsto nome contesto statico per SAL_context|
 |[C28212](../code-quality/c28212.md)|Prevista espressione del puntatore per l'annotazione|
-|[C28213](../code-quality/c28213.md)|L'annotazione \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 deve essere utilizzata per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
+|[C28213](../code-quality/c28213.md)|È necessario utilizzare l'annotazione \_Use \_decl \_annotations \_ per fare riferimento, senza alcuna modifica, a una dichiarazione precedente.|
 |[C28214](../code-quality/c28214.md)|I nomi di parametro di attributo devono essere p1...p9|
 |[C28215](../code-quality/c28215.md)|Impossibile applicare typefix a un parametro che già dispone di un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.|
@@ -219,7 +219,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28267](../code-quality/c28267.md)|Errore di sintassi dell'annotazione rilevato nella funzione per l'annotazione.|
 |[C28272](../code-quality/c28272.md)|L'annotazione per la funzione, parametro, durante l'analisi non è coerente con la dichiarazione della funzione|
 |[C28273](../code-quality/c28273.md)|Per la funzione, le informazioni non sono coerenti con la dichiarazione della funzione|
-|[C28275](../code-quality/c28275.md)|Il parametro per \_Macro @ no__t-1value @ no__t-2 è null|
+|[C28275](../code-quality/c28275.md)|Il parametro per \_Macro \_value \_ è null|
 |[C28279](../code-quality/c28279.md)|Per il simbolo è stato trovato un 'begin' senza il corrispondente 'end'|
 |[C28280](../code-quality/c28280.md)|Per il simbolo, è stato trovato un 'end' senza un 'begin' corrispondente|
 |[C28282](../code-quality/c28282.md)|Le stringhe di formato devono essere nelle precondizioni|
@@ -240,23 +240,23 @@ Includere questo set di regole in tutti i set di regole personalizzati creati C+
 |[C28307](../code-quality/c28307.md)|L'annotazione sul parametro è obsoleti|
 |[C28350](../code-quality/c28350.md)|L'annotazione descrive una situazione non applicabile in modo condizionale.|
 |[C28351](../code-quality/c28351.md)|L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|I tipi proprietari di campi Disposable devono essere Disposable|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Dichiarare correttamente i gestori eventi|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|Contrassegnare gli assembly con AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|I metodi di interfaccia devono essere richiamabili dai tipi figlio|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|I tipi delle risorse native devono essere disposable|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Spostare P/Invoke nella classe NativeMethods|
-|[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Non nascondere i metodi di una classe base|
-|[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|Implementare IDisposable correttamente|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|Non generare eccezioni in posizioni non previste|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitare tasti di scelta rapida duplicati|
-|[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|I punti di ingresso P/Invoke devono esistere|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|I P/Invoke non devono essere visibili|
-|[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|I tipi layout automatici non devono essere visibili a COM|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Chiamare GetLastError immediatamente dopo P/Invoke|
-|[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
-|[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|I metodi di registrazione COM devono corrispondere|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Dichiarare correttamente i P/Invoke|
+|[CA1001](../code-quality/ca1001.md)|I tipi proprietari di campi Disposable devono essere Disposable|
+|[CA1009](../code-quality/ca1009.md)|Dichiarare correttamente i gestori eventi|
+|[CA1016](../code-quality/ca1016.md)|Contrassegnare gli assembly con AssemblyVersionAttribute|
+|[CA1033](../code-quality/ca1033.md)|I metodi di interfaccia devono essere richiamabili dai tipi figlio|
+|[CA1049](../code-quality/ca1049.md)|I tipi delle risorse native devono essere disposable|
+|[CA1060](../code-quality/ca1060.md)|Spostare P/Invoke nella classe NativeMethods|
+|[CA1061](../code-quality/ca1061.md)|Non nascondere i metodi di una classe base|
+|[CA1063](../code-quality/ca1063.md)|Implementare IDisposable correttamente|
+|[CA1065](../code-quality/ca1065.md)|Non generare eccezioni in posizioni non previste|
+|[CA1301](../code-quality/ca1301.md)|Evitare tasti di scelta rapida duplicati|
+|[CA1400](../code-quality/ca1400.md)|I punti di ingresso P/Invoke devono esistere|
+|[CA1401](../code-quality/ca1401.md)|I P/Invoke non devono essere visibili|
+|[CA1403](../code-quality/ca1403.md)|I tipi layout automatici non devono essere visibili a COM|
+|[CA1404](../code-quality/ca1404.md)|Chiamare GetLastError immediatamente dopo P/Invoke|
+|[CA1405](../code-quality/ca1405.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
+|[CA1410](../code-quality/ca1410.md)|I metodi di registrazione COM devono corrispondere|
+|[CA1415](../code-quality/ca1415.md)|Dichiarare correttamente i P/Invoke|
 |[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
 |[CA1900](../code-quality/ca1900.md)|I campi dei tipi di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901.md)|Le dichiarazioni P/Invoke devono essere portabili|
