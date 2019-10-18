@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 197a52894a8c0ed3c2c38b9036a521a558c1005d
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118774"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314112"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: Aggiungere un timer per il conto alla rovescia
 
@@ -26,7 +26,7 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
 > [!NOTE]
 > Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base.
-> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Per scaricare una versione completa del codice, vedere l' [esempio di esercitazione completa per i quiz matematici](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Per aggiungere un timer per il conto alla rovescia
@@ -36,8 +36,7 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
-   > [!IMPORTANT]
-   > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      A questo punto è necessario un metodo che conti effettivamente i secondi, ad esempio un timer, e generi un evento dopo il periodo di tempo specificato.
 
@@ -115,6 +114,6 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 4: Aggiungere il metodo](../ide/step-4-add-the-checktheanswer-parens-method.md)** metodo CheckTheAnswer ().
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 4: aggiungere il metodo metodo CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).

@@ -1,5 +1,5 @@
 ---
-title: "Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown"
+title: 'Passaggio 5: aggiungere gestori di eventi Enter per i controlli NumericUpDown'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8edebff5af7affebf166ea07ca7aa813037c13c2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118742"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314126"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown
 
@@ -26,7 +26,7 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori dell'event
 
 > [!NOTE]
 > Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base.
-> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Per scaricare una versione completa del codice, vedere l' [esempio di esercitazione completa per i quiz matematici](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>Per verificare il comportamento predefinito
@@ -62,10 +62,9 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori dell'event
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     > [!IMPORTANT]
-     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-     Sebbene il codice possa sembrare complesso, è facile da capire se lo si analizza passaggio per passaggio. Innanzitutto, osservare l'inizio del metodo: `object sender` in C# o `sender As System.Object` in Visual Basic. Questo parametro fa riferimento all'oggetto di cui viene generato l'evento, noto come mittente. In questo caso l'oggetto mittente è il controllo NumericUpDown. Pertanto, nella prima riga del metodo si specifica che il mittente non è un oggetto generico, ma è in maniera specifica un controllo NumericUpDown. Tenere presente che ogni controllo NumericUpDown è un oggetto, ma non tutti gli oggetti sono controlli NumericUpDown. Il controllo NumericUpDown è denominato **answerBox** in questo metodo, poiché verrà usato per tutti i controlli NumericUpDown nel form, non solo dal controllo NumericUpDown della somma. Poiché si dichiara la variabile answerBox in questo metodo, il relativo ambito è applicabile solo a questo metodo. In altre parole, è possibile utilizzare la variabile solo all'interno del metodo.
+     Sebbene il codice possa sembrare complesso, è facile da capire se lo si analizza passaggio per passaggio. Innanzitutto, osservare l'inizio del metodo: `object sender` in C# o `sender As System.Object` in Visual Basic. Questo parametro fa riferimento all'oggetto di cui viene generato l'evento, noto come mittente. In questo caso l'oggetto mittente è il controllo NumericUpDown. Pertanto, nella prima riga del metodo si specifica che il mittente non è un oggetto generico, ma è in maniera specifica un controllo NumericUpDown. Ogni controllo NumericUpDown è un oggetto, ma non tutti gli oggetti sono un controllo NumericUpDown. Il controllo NumericUpDown è denominato **answerBox** in questo metodo, perché verrà usato per tutti i controlli NumericUpDown nel form, non solo per il controllo NumericUpDown Sum. Poiché si dichiara la variabile answerBox in questo metodo, il relativo ambito è applicabile solo a questo metodo. In altre parole, è possibile utilizzare la variabile solo all'interno del metodo.
 
      La riga successiva verifica se answerBox è stato convertito (cast) correttamente da un oggetto in un controllo NumericUpDown. Se la conversione ha esito negativo, la variabile avrebbe un valore pari a `null` (C#) o `Nothing` (Visual Basic). La terza riga ottiene la lunghezza della risposta visualizzata nel controllo NumericUpDown, mentre la quarta riga seleziona il valore corrente nel controllo in base a tale lunghezza. A questo punto, quando l'esecutore del quiz sceglie il controllo, Visual Studio genera l'evento che determina la selezione della risposta corrente. Non appena l'esecutore del quiz inizia a immettere un'altra risposta, la risposta precedente viene cancellata e sostituita con la nuova.
 
@@ -81,6 +80,6 @@ Nella quinta parte di questa esercitazione si aggiungeranno i gestori dell'event
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 6: Aggiungere un problema](../ide/step-6-add-a-subtraction-problem.md)** di sottrazione.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 6: aggiungere un problema di sottrazione](../ide/step-6-add-a-subtraction-problem.md)** .
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 4: Aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

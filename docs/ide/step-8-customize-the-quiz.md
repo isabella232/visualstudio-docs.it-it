@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 402817ace34f12fb7659b7251cbe755d036ebc4b
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: cee7b855256f352c9ac9ed39994191f4a9e6d946
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118642"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314217"
 ---
 # <a name="step-8-customize-the-quiz"></a>Passaggio 8: Personalizzare il quiz
 
@@ -26,7 +26,7 @@ Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per person
 
 > [!NOTE]
 > Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base.
-> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Per scaricare una versione completa del codice, vedere l' [esempio di esercitazione completa per i quiz matematici](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-customize-the-quiz"></a>Per personalizzare il quiz
@@ -41,8 +41,7 @@ Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per person
   timeLabel.BackColor = Color.Red
   ```
 
-  > [!IMPORTANT]
-  > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+  [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
   Reimpostare il colore quando il quiz è terminato.
 
@@ -50,6 +49,6 @@ Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per person
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per passare all'esercitazione successiva, vedere  **[l'esercitazione 3: Creare un gioco](../ide/tutorial-3-create-a-matching-game.md)** di abbinamenti.
+- Per passare all'esercitazione successiva, vedere **[esercitazione 3: creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md)** .
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md).

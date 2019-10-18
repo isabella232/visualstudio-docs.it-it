@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: edaadc6c551a6f138f505dec8fe45c9df570dfd6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 07eff5daf319f854b5393d80ed4d41a0b0262b96
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823314"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72313907"
 ---
 # <a name="known-issues-for-containers"></a>Problemi noti dei contenitori
 
@@ -40,7 +40,7 @@ I problemi noti seguenti si verificano quando si installa Visual Studio Build To
 * Passare `--norestart` sulla riga di comando. Alla data di redazione di questo articolo, qualsiasi tentativo di riavviare un contenitore di Windows dall'interno del contenitore restituisce `ERROR_TOO_MANY_OPEN_FILES` all'host.
 * Se si basa l'immagine direttamente su microsoft/windowsservercore, .NET Framework potrebbe non essere installato correttamente e non viene segnalato nessun errore di installazione. Il codice gestito potrebbe non essere eseguito dopo il completamento dell'installazione. Basare invece l'immagine su [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o versione successiva. Ad esempio, durante la compilazione con MSBuild potrebbe essere visualizzato un errore simile al seguente:
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): errore MSB6003: non è stato possibile eseguire il file eseguibile "csc.exe" dell'attività. Impossibile caricare il file o l'assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' o una delle relative dipendenze. Impossibile trovare il file specificato.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5): errore MSB6003: non è stato possibile eseguire l'eseguibile dell'attività specificato "csc.exe". Impossibile caricare il file o l'assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' o una delle relative dipendenze. Impossibile trovare il file specificato.
 
 ::: moniker range="vs-2017"
 
@@ -53,7 +53,7 @@ I problemi noti seguenti si verificano quando si installa Visual Studio Build To
 Potrebbero verificarsi i seguenti problemi noti quando si usa un contenitore di Build Tools. Per scoprire se questi problemi sono stati corretti o se sono presenti altri problemi noti, visitare https://developercommunity.visualstudio.com.
 
 * IntelliTrace potrebbe non funzionare in [alcuni scenari](https://github.com/Microsoft/vstest/issues/940) all'interno di un contenitore.
-* Nelle versioni precedenti di Docker per Windows, le dimensioni dell'immagine del contenitore predefinite sono solo di 20 GB e non saranno abbastanza per Build Tools. Seguire le [istruzioni per modificare le dimensioni dell'immagine](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#image-size) specificando minimo 127 GB.
+* Nelle versioni precedenti di Docker per Windows, le dimensioni dell'immagine del contenitore predefinite sono solo di 20 GB e non saranno abbastanza per Build Tools. Seguire le [istruzioni per modificare le dimensioni dell'immagine](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) specificando minimo 127 GB.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

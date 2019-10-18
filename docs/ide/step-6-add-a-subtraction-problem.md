@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47932e8a647cb9a5ae555de09778fcd67da397e2
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
-ms.translationtype: MT
+ms.openlocfilehash: 8acc67aa82bb0d7cf81cf6794bfdbb4e0c912ebe
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118734"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314238"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Passaggio 6: Aggiungere un problema di sottrazione
 Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazione e si apprenderà come eseguire le attività seguenti:
@@ -33,7 +33,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
 > [!NOTE]
 > Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base.
-> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Per una panoramica dell'esercitazione, vedere [Esercitazione 2: creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Per scaricare una versione completa del codice, vedere l' [esempio di esercitazione completa per i quiz matematici](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-subtraction-problem"></a>Per aggiungere un problema di sottrazione
@@ -43,8 +43,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
 
-     > [!IMPORTANT]
-     > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>![Controllo del linguaggio di programmazione per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      I nomi delle nuove variabili Integer, **minuendo** e **sottraendo**, non sono termini di programmazione. Si tratta dei nomi tradizionali in aritmetica per il numero che si sta sottraendo (il sottraendo) e il numero da cui si sottrae (il minuendo). La differenza è il minuendo meno il sottraendo. È possibile utilizzare altri nomi, perché il programma non richiede nomi specifici per variabili, controlli, componenti o metodi. È necessario attenersi alle regole, ad esempio i nomi non devono iniziare con una cifra, ma è in genere possibile utilizzare nomi quali x1, x2, x3 e x4. Tuttavia, i nomi generici rendono il codice difficile da leggere e complicano il rilevamento dei problemi. Per mantenere univoci e significativi i nomi delle variabili, più avanti in questa esercitazione si useranno i nomi tradizionali per la moltiplicazione (moltiplicando × moltiplicatore = prodotto) e di divisione (dividendo ÷ divisore = quoziente).
 
@@ -62,13 +61,13 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
      È possibile chiamare in più modi il metodo `Next()` della classe Random, a cui in precedenza in questa esercitazione è stato assegnato il nome "randomizer". I metodi che è possibile chiamare in più modi sono denominati metodi di overload ed è possibile utilizzare IntelliSense per esplorarli. Esaminare nuovamente la descrizione comando della finestra di IntelliSense per il metodo `Next()`.
 
-     ![Descrizione comando della finestra di IntelliSense](../ide/media/express_overloads.png)<br/>
-***IntelliSense*** *Descrizione comando finestra*
+     Descrizione comando finestra ![IntelliSense ](../ide/media/express_overloads.png)<br/>
+*Descrizione comando della finestra* di IntelliSense
 
      La dicitura **(+ 2 overload(s))** della descrizione comando indica che è possibile chiamare il metodo `Next()` in altri due modi. Gli overload contengono numeri o tipi di argomenti diversi, pertanto funzionano in modo leggermente diverso l'uno dall'altro. Ad esempio, un metodo potrebbe accettare un singolo argomento Integer, mentre uno degli overload potrebbe accettare un Integer e una stringa. Scegliere l'overload corretto in base all'operazione da eseguire. Quando si aggiunge codice al metodo `StartTheQuiz()`, nella finestra di IntelliSense vengono visualizzate altre informazioni non appena si immette `randomizer.Next(`. Per scorrere gli overload, usare i tasti **freccia SU** e **freccia GIÙ**, come illustrato nella figura seguente:
 
      ![Overload per il metodo Next&#40;&#41; in IntelliSense](../ide/media/express_nextoverload.png)<br/>
-*Overload per* ***Avanti ()*** *metodo in* ***IntelliSense***
+*Overload per* il metodo ***Next ()*** *in* ***IntelliSense***
 
      In questo caso, si desidera scegliere l'ultimo overload, perché consente di specificare i valori minimo e massimo.
 
@@ -93,6 +92,6 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 7: Aggiungere problemi](../ide/step-7-add-multiplication-and-division-problems.md)** di moltiplicazione e divisione.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 7: aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md)** .
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere gestori dell'evento Enter per i controlli NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

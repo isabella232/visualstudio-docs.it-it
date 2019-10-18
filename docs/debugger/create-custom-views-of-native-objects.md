@@ -1,6 +1,6 @@
 ---
 title: Creare viste personalizzate di oggetti di C++
-description: Usare il framework Natvis per personalizzare il modo che Visual Studio visualizza i tipi nativi nel debugger
+description: Usare il Framework natvis per personalizzare il modo in cui Visual Studio Visualizza i tipi nativi nel debugger
 ms.date: 10/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -13,38 +13,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8ef28b453ba6c754c337c5d42581bd658be5f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb2f9d9319a943182c8256256ca6ea7334c532d1
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564416"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349481"
 ---
-# <a name="create-custom-views-of-c-objects-in-the-debugger"></a>Creare viste personalizzate di C++ oggetti nel debugger
+# <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creare visualizzazioni personalizzate di C++ oggetti nel debugger usando il Framework natvis
 
-Visual Studio *Natvis* framework consente di personalizzare la modalità di visualizzazione tipi nativi nelle finestre delle variabili del debugger, ad esempio le **variabili locali** e **Watch** windows e in **DataTips**. Visualizzazioni di Natvis consentono di rendere i tipi creati più evidente durante il debug.
+Il Framework *natvis* di Visual Studio Personalizza la modalità di visualizzazione dei tipi nativi nelle finestre delle variabili del debugger, ad esempio le finestre variabili **locali** e **espressioni di controllo** e nei **suggerimenti**dati. Le visualizzazioni di natvis consentono di rendere più visibili i tipi creati durante il debug.
 
-Natvis sostituisce il *autoexp. dat* file nelle versioni precedenti di Visual Studio con la sintassi XML, funzionalità di diagnostica migliorate, controllo delle versioni e più file di supporto.
+Natvis sostituisce il file *autoexp. dat* nelle versioni precedenti di Visual Studio con sintassi XML, migliore diagnostica, controllo delle versioni e supporto di più file.
 
-## <a name="BKMK_Why_create_visualizations_"></a>Visualizzazioni di Natvis
+## <a name="BKMK_Why_create_visualizations_"></a>Visualizzazioni di natvis
 
-Utilizzare il framework Natvis per creare regole di visualizzazione per i tipi che si crea, in modo che gli sviluppatori possano vederli più facilmente durante il debug.
+Usare il Framework natvis per creare regole di visualizzazione per i tipi creati, in modo che gli sviluppatori possano visualizzarli più facilmente durante il debug.
 
-Ad esempio, la figura seguente mostra una variabile di tipo [TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) in una finestra del debugger senza applicata alcuna visualizzazione personalizzata.
+Nell'illustrazione seguente, ad esempio, viene mostrata una variabile di tipo [Windows:: UI:: XAML:: Controls:: TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) in una finestra del debugger senza alcuna visualizzazione personalizzata applicata.
 
-![Visualizzazione predefinita di TextBox](../debugger/media/dbg_natvis_textbox_default.png "visualizzazione predefinita di TextBox")
+![](../debugger/media/dbg_natvis_textbox_default.png "Visualizzazione") predefinita casella di testo visualizzazione predefinita casella di testo
 
-La riga evidenziata mostra la proprietà `Text` della classe `TextBox` . La complessa gerarchia delle classi rende difficile trovare questa proprietà. Il debugger non riesce a interpretare il tipo di stringa personalizzato, è possibile visualizzare la stringa contenuta nella casella di testo.
+La riga evidenziata mostra la proprietà `Text` della classe `TextBox` . La gerarchia di classi complesse rende difficile trovare questa proprietà. Il debugger non è in grado di interpretare il tipo di stringa personalizzato, pertanto non è possibile visualizzare la stringa contenuta nella casella di testo.
 
-Lo stesso `TextBox` sembra molto più semplice nella finestra delle variabili quando vengono applicate le regole di Natvis visualizzatore personalizzato. I membri importanti della classe di compaiono insieme e il debugger Mostra il valore di stringa sottostante del tipo di stringa personalizzato.
+Lo stesso `TextBox` sembra molto più semplice nella finestra delle variabili quando vengono applicate le regole del visualizzatore personalizzato natvis. I membri importanti della classe vengono visualizzati insieme e il debugger Mostra il valore stringa sottostante del tipo di stringa personalizzato.
 
-![Dati TextBox con uso del visualizzatore](../debugger/media/dbg_natvis_textbox_visualizer.png "dati TextBox con uso del Visualizzatore")
+![Dati TextBox usando](../debugger/media/dbg_natvis_textbox_visualizer.png "i dati TextBox") del visualizzatore tramite il Visualizzatore
 
-## <a name="BKMK_Using_Natvis_files"></a>Usare file natvis in progetti C++
+## <a name="BKMK_Using_Natvis_files"></a>Usare i file con estensione C++ natvis nei progetti
 
-Usa Natvis *natvis* file per specificare regole di visualizzazione. Oggetto *natvis* file è un file XML con un *natvis* estensione. Lo schema di Natvis è definito in *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*.
+Natvis usa i file *natvis* per specificare le regole di visualizzazione. Un file con estensione *natvis* è un file XML con estensione *natvis* . Lo schema natvis è definito in *%VSInstallDir%\Xml\Schemas\natvis.xsd*.
 
-La struttura di base di un *natvis* file è uno o più `Type` gli elementi che rappresentano le voci di visualizzazione. Il nome completo della ognuno `Type` viene specificato nell'elemento relativo `Name` attributo.
+La struttura di base di un file con *estensione natvis* è costituita da uno o più elementi `Type` che rappresentano le voci di visualizzazione. Il nome completo di ogni elemento `Type` viene specificato nell'attributo `Name`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -61,84 +61,84 @@ La struttura di base di un *natvis* file è uno o più `Type` gli elementi che r
 </AutoVisualizer>
 ```
 
-Visual Studio fornisce alcuni *natvis* file con il *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers* cartella. Questi file sono regole di visualizzazione per molti tipi comuni e possono essere usati come esempio per scrivere visualizzazioni per nuovi tipi.
+Visual Studio fornisce alcuni file *natvis* nella cartella *%VSInstallDir%\Common7\Packages\Debugger\Visualizers* . Questi file contengono regole di visualizzazione per molti tipi comuni e possono fungere da esempi per la scrittura di visualizzazioni per nuovi tipi.
 
-### <a name="add-a-natvis-file-to-a-c-project"></a>Aggiungere un file natvis a un progetto C++
+### <a name="add-a-natvis-file-to-a-c-project"></a>Aggiungere un file con estensione natvis a C++ un progetto
 
-È possibile aggiungere un *natvis* file a qualsiasi progetto C++.
+È possibile aggiungere un file con *estensione natvis* a C++ qualsiasi progetto.
 
-**Per aggiungere una nuova *natvis* file:**
+**Per aggiungere un nuovo file con *estensione natvis* :**
 
-1. Selezionare il nodo del progetto C++ in **Esplora soluzioni**e selezionare **Project** > **Aggiungi nuovo elemento**, o il progetto e scegliere **Add**   >  **Nuovo elemento**.
+1. Selezionare il C++ nodo del progetto in **Esplora soluzioni**e selezionare **progetto**  > **Aggiungi nuovo elemento**oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi**  > **nuovo elemento**.
 
-1. Nel **Aggiungi nuovo elemento** finestra di dialogo, seleziona **Visual C++** > **utilità** > **file di visualizzazione Debugger (. natvis)**.
+1. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Visual C++**   > **Utility**  > **file di visualizzazione debugger (. natvis)** .
 
-1. Denominare il file e selezionare **Add**.
+1. Assegnare un nome al file e selezionare **Aggiungi**.
 
-   Il nuovo file viene aggiunto a **Esplora soluzioni**e viene aperto nel riquadro di documento di Visual Studio.
+   Il nuovo file verrà aggiunto al **Esplora soluzioni**e verrà aperto nel riquadro del documento di Visual Studio.
 
-Il debugger di Visual Studio carica *natvis* i file nei progetti C++ automaticamente e per impostazione predefinita, include anche nel *PDB* file quando si compila il progetto. Se si esegue il debug dell'app predefinito, il debugger carica le *natvis* del file dal *PDB* file, anche se non è presente il progetto aperto. Se non si vuole la *natvis* file incluso nel *PDB*, è possibile escluderlo dall'incorporato *PDB* file.
+Il debugger di Visual Studio carica automaticamente i file C++ con *estensione natvis* nei progetti e, per impostazione predefinita, li include nel file con *estensione PDB* quando il progetto viene compilato. Se si esegue il debug dell'app compilata, il debugger carica il file con *estensione natvis* dal file con *estensione PDB* anche se il progetto non è aperto. Se non si desidera che il file con *estensione natvis* sia incluso nel file *PDB*, è possibile escluderlo dal file *PDB* compilato.
 
-**Per escludere un *natvis* del file da un *PDB*:**
+**Per escludere un file con estensione *natvis* da un file *PDB*:**
 
-1. Selezionare il *natvis* del file in **Esplora soluzioni**e selezionare il **proprietà** icona, o il file e scegliere **proprietà**.
+1. Selezionare il file con *estensione natvis* in **Esplora soluzioni**, quindi selezionare l'icona **proprietà** oppure fare clic con il pulsante destro del mouse sul file e scegliere **Proprietà**.
 
-1. Elenco a discesa sulla freccia accanto a **escluso dalla compilazione** e selezionare **Yes**, quindi selezionare **OK**.
-
->[!NOTE]
->Per il debug di progetti eseguibili, usare gli elementi di soluzione per aggiungere uno qualsiasi *natvis* i file che non sono presenti il *PDB*, dal momento che non è disponibile alcun progetto C++.
+1. A discesa della freccia accanto a **escluso da compila** , selezionare **Sì**e quindi fare clic su **OK**.
 
 >[!NOTE]
->Natvis regole caricate da un *PDB* si applicano solo ai tipi nei moduli che la *PDB* fa riferimento a. Ad esempio, se *Module1.pdb* ha una voce di Natvis per un tipo denominato `Test`, si applica solo al `Test` classe *Module1.dll*. Se un altro modulo definisce anche una classe denominata `Test`, il *Module1.pdb* la voce Natvis non si applica a esso.
+>Per il debug di progetti eseguibili, usare gli elementi della soluzione per aggiungere eventuali file con *estensione natvis* che non si trovano nel file *PDB*, poiché non è disponibile alcun C++ progetto.
 
-### <a name="BKMK_natvis_location"></a> Percorsi dei file Natvis
+>[!NOTE]
+>Le regole natvis caricate da un file *PDB* si applicano solo ai tipi nei moduli a cui fa riferimento il file *PDB* . Ad esempio, se *Module1. pdb* contiene una voce natvis per un tipo denominato `Test`, si applica solo alla classe `Test` in *Module1. dll*. Se un altro modulo definisce anche una classe denominata `Test`, la voce natvis di *Module1. pdb* non si applica a tale classe.
 
-È possibile aggiungere *natvis* file alla directory dell'utente o in una directory di sistema, se si vuole che vengano applicati a più progetti.
+### <a name="BKMK_natvis_location"></a>Percorsi file natvis
 
-Il *natvis* i file vengono valutati nell'ordine seguente:
+È possibile aggiungere i file *natvis* alla directory utente o a una directory di sistema, se si desidera che vengano applicati a più progetti.
 
-1. Eventuali *natvis* dei file incorporati in un *PDB* debug, a meno che non esiste un file con lo stesso nome del progetto caricato.
+I file con *estensione natvis* vengono valutati nell'ordine seguente:
 
-2. Eventuali *natvis* i file che si trovano in un progetto C++ caricato o una soluzione di primo livello. Questo gruppo include caricati tutti i progetti di C++, incluse le librerie di classi, ma non per i progetti in altri linguaggi.
+1. Tutti i file con *estensione natvis* incorporati in un file *PDB* di cui si esegue il debug, a meno che non esista un file con lo stesso nome nel progetto caricato.
+
+2. Tutti i file con *estensione natvis* che si trovano C++ in un progetto caricato o in una soluzione di primo livello. Questo gruppo include tutti i C++ progetti caricati, incluse le librerie di classi, ma non i progetti in altre lingue.
 
 ::: moniker range="vs-2017"
 
-3. La directory Natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*).
+3. La directory natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2017 \ Visualizers*).
 
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 
-3. La directory Natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*).
+3. La directory natvis specifica dell'utente (ad esempio, *%USERPROFILE%\Documents\Visual Studio 2019 \ Visualizers*).
 
 ::: moniker-end
 
-4. La directory Natvis a livello di sistema (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Questa directory contiene il *natvis* file che vengono installati con Visual Studio. Se si dispone delle autorizzazioni di amministratore, è possibile aggiungere file a questa directory.
+4. La directory Natvis a livello di sistema ( *%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*). Questa directory contiene i file *natvis* installati con Visual Studio. Se si dispone di autorizzazioni di amministratore, è possibile aggiungere file a questa directory.
 
 ## <a name="modify-natvis-files-while-debugging"></a>Modificare i file natvis durante il debug
 
-È possibile modificare un *natvis* file nell'IDE durante il debug di un progetto. Aprire il file nella stessa istanza di debug con Visual Studio, modificarlo e salvarlo. Non appena il file viene salvato, la **Watch** e **variabili locali** windows vengono aggiornati per riflettere la modifica.
+È possibile modificare un file *natvis* nell'IDE durante il debug del progetto. Aprire il file nella stessa istanza di Visual Studio con cui si esegue il debug, modificarlo e salvarlo. Non appena il file viene salvato, le finestre **espressioni di controllo** e **variabili locali** vengono aggiornate in modo da riflettere la modifica.
 
-È anche possibile aggiungere o eliminare *natvis* file in una soluzione che sta eseguendo il debug e Visual Studio aggiunge o rimuove le visualizzazioni pertinenti.
+È anche possibile aggiungere o eliminare file con *estensione natvis* in una soluzione di cui si sta eseguendo il debug e Visual Studio aggiunge o rimuove le visualizzazioni pertinenti.
 
-Non è possibile aggiornare *natvis* dei file incorporati nelle *PDB* file durante il debug.
+Non è possibile aggiornare i file con *estensione natvis* incorporati nei file *PDB* durante il debug.
 
-Se si modifica il *natvis* file all'esterno di Visual Studio, le modifiche non diventano effettive automaticamente. Per aggiornare le finestre del debugger, è possibile riesaminare il **natvisreload** comando le **Watch** finestra. Quindi le modifiche diventano effettive senza riavviare la sessione di debug.
+Se si modifica il file con *estensione natvis* all'esterno di Visual Studio, le modifiche non vengono applicate automaticamente. Per aggiornare le finestre del debugger, è possibile rivalutare il comando **. natvisreload** nella finestra **espressioni di controllo** . Quindi, le modifiche diventano effettive senza riavviare la sessione di debug.
 
-Usare anche il **natvisreload** comando per aggiornare il *natvis* file da una versione più recente. Ad esempio, il *natvis* file può essere verificato nel controllo del codice sorgente e si desidera visualizzare le modifiche recenti apportate da altri utenti.
+Usare anche il comando **. natvisreload** per aggiornare il file con *estensione natvis* a una versione più recente. Il file con *estensione natvis* , ad esempio, può essere archiviato nel controllo del codice sorgente e si desidera rilevare le modifiche recenti apportate da altri utenti.
 
 ## <a name="BKMK_Expressions_and_formatting"></a> Espressioni e formattazione
-Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elementi di dati da visualizzare. Oltre ai miglioramenti e alle limitazioni delle espressioni C++ nel debugger, che sono descritte nel [operatore di contesto (C++)](../debugger/context-operator-cpp.md), tenere presente quanto segue:
+Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elementi di dati da visualizzare. Oltre ai miglioramenti e alle limitazioni delle C++ espressioni nel debugger, descritti in operatore di [contesto (C++)](../debugger/context-operator-cpp.md), tenere presente quanto segue:
 
-- Le espressioni di Natvis vengono valutate nel contesto dell'oggetto da visualizzare, non nello stack frame corrente. Ad esempio, `x` in un Natvis espressione fa riferimento a un campo denominato **x** nell'oggetto visualizzato, non a una variabile locale denominata **x** nella funzione corrente. È possibile accedere alle variabili locali nelle espressioni Natvis, anche se è possibile accedere a variabili globali.
+- Le espressioni di Natvis vengono valutate nel contesto dell'oggetto da visualizzare, non nello stack frame corrente. @No__t_0 in un'espressione natvis, ad esempio, fa riferimento al campo denominato **x** nell'oggetto visualizzato, non a una variabile locale denominata **x** nella funzione corrente. Non è possibile accedere alle variabili locali nelle espressioni natvis, anche se è possibile accedere alle variabili globali.
 
-- Le espressioni Natvis non consentono la valutazione di funzioni o effetti collaterali. Chiamate di funzioni e operatori di assegnazione vengono ignorati. Dal momento che le [funzioni intrinseche del debugger](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) non hanno effetti collaterali, possono essere chiamate liberamente da qualsiasi espressione Natvis, anche se non sono consentite altre chiamate di funzione.
+- Le espressioni natvis non consentono la valutazione di funzioni o effetti collaterali. Le chiamate di funzione e gli operatori di assegnazione vengono ignorati. Dal momento che le [funzioni intrinseche del debugger](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) non hanno effetti collaterali, possono essere chiamate liberamente da qualsiasi espressione Natvis, anche se non sono consentite altre chiamate di funzione.
 
-- Per controllare la modalità di visualizzazione di un'espressione, è possibile usare uno qualsiasi degli identificatori di formato descritto nella [Format specifiers in C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Identificatori di formato vengono ignorati quando la voce viene usata internamente da Natvis, ad esempio la `Size` espressione in un [espansione di ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
+- Per controllare la modalità di visualizzazione di un'espressione, è possibile usare uno qualsiasi degli identificatori di formato descritti in [identificatori di formato in C++ ](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Gli identificatori di formato vengono ignorati quando la voce viene utilizzata internamente da natvis, ad esempio l'espressione `Size` in un' [espansione ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
 
 ## <a name="natvis-views"></a>Visualizzazioni di Natvis
 
-È possibile definire diverse visualizzazioni di Natvis per visualizzare i tipi in modi diversi. Ad esempio, ecco una visualizzazione dei `std::vector` che definisce una visualizzazione semplificata denominata `simple`. Il `DisplayString` e il `ArrayItems` elementi visualizzati nella vista predefinita e il `simple` visualizzazione, mentre il `[size]` e `[capacity]` gli elementi non vengono visualizzate nella `simple` visualizzazione.
+È possibile definire viste natvis diverse per visualizzare i tipi in modi diversi. Ecco, ad esempio, una visualizzazione di `std::vector` che definisce una visualizzazione semplificata denominata `simple`. Gli elementi `DisplayString` e `ArrayItems` vengono visualizzati nella visualizzazione predefinita e nella visualizzazione `simple`, mentre gli elementi `[size]` e `[capacity]` non vengono visualizzati nella visualizzazione `simple`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -154,19 +154,19 @@ Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elemen
 </Type>
 ```
 
-Nel **Watch** finestra, utilizzare il **, visualizzazione** identificatore per specificare una visualizzazione alternativa di formato. Viene visualizzata la vista semplice come **vec,view(simple)**:
+Nella finestra **espressioni di controllo** usare l'identificatore di formato di **visualizzazione** per specificare una visualizzazione alternativa. La visualizzazione semplice viene visualizzata come **VEC, View (Simple)** :
 
-![Finestra Espressioni di controllo con visualizzazione semplice](../debugger/media/watch-simpleview.png "finestra Espressioni di controllo con visualizzazione semplice")
+![Finestra espressioni di controllo con visualizzazione semplice](../debugger/media/watch-simpleview.png "finestra espressioni di controllo con visualizzazione semplice")
 
-## <a name="BKMK_Diagnosing_Natvis_errors"></a> Errori di Natvis
+## <a name="BKMK_Diagnosing_Natvis_errors"></a>Errori natvis
 
-Quando il debugger rileva errori in una voce di visualizzazione, li ignora. Visualizza il tipo nel relativo formato non elaborato o seleziona un'altra visualizzazione appropriata. È possibile usare la diagnostica di Natvis per capire il motivo per cui il debugger ignorata una voce di visualizzazione e per visualizzare la sintassi sottostante e gli errori di analisi.
+Quando il debugger rileva errori in una voce di visualizzazione, li ignora. Visualizza il tipo nel formato non elaborato o seleziona un'altra visualizzazione appropriata. È possibile usare la diagnostica natvis per comprendere il motivo per cui il debugger ha ignorato una voce di visualizzazione e per visualizzare la sintassi sottostante e gli errori di analisi.
 
-**Per attivare la diagnostica di Natvis:**
+**Per attivare la diagnostica natvis:**
 
-- Sotto **degli strumenti** > **opzioni** (o **Debug** > **opzioni**) > **debug**  >  **Finestra di output**, impostare **messaggi di diagnostica Natvis (C++ solo)** al **errore**, **avviso** , oppure **Verbose**, quindi selezionare **OK**.
+- In **strumenti**  > **Opzioni** (o**Opzioni** **debug**  > ) > **debug**  > **finestra di output**, impostare **i messaggi di diagnosticaC++ natvis (solo)** su **errore**, **avviso** , o **verbose**, quindi selezionare **OK**.
 
-Gli errori vengono visualizzati nei **Output** finestra.
+Gli errori vengono visualizzati nella finestra **output** .
 
 ## <a name="BKMK_Syntax_reference"></a> Riferimento per la sintassi di Natvis
 
@@ -181,11 +181,11 @@ L'elemento `AutoVisualizer` è il nodo radice del file *NATVIS* e contiene l'att
 </AutoVisualizer>
 ```
 
-Il `AutoVisualizer` elemento può avere [tipo](#BKMK_Type), [HResult](#BKMK_HResult), [elemento UIVisualizer](#BKMK_UIVisualizer), e [CustomVisualizer](#BKMK_CustomVisualizer) elementi figlio.
+L'elemento `AutoVisualizer` può includere elementi figlio [Type](#BKMK_Type), [HRESULT](#BKMK_HResult), [UIVisualizer](#BKMK_UIVisualizer)e [CustomVisualizer](#BKMK_CustomVisualizer) .
 
 ### <a name="BKMK_Type"></a> Elemento Type
 
-Base `Type` simile in questo esempio:
+Un `Type` di base ha un aspetto simile a questo esempio:
 
 ```xml
 <Type Name="[fully qualified type name]">
@@ -196,18 +196,18 @@ Base `Type` simile in questo esempio:
 </Type>
 ```
 
- Il `Type` elemento specifica:
+ L'elemento `Type` specifica:
 
-1. Il tipo di visualizzazione deve essere utilizzato per (i `Name` attributo).
+1. Tipo di visualizzazione da usare per l'attributo `Name`.
 
 2. A quale valore di un oggetto di tale tipo deve essere simile (elemento `DisplayString` ).
 
-3. I membri del tipo di aspetto quando l'utente espande il tipo in una finestra delle variabili (le `Expand` nodo).
+3. Quali sono i membri del tipo quando l'utente espande il tipo in una finestra delle variabili (nodo `Expand`).
 
 #### <a name="templated-classes"></a>Classi basate su modelli
-Il `Name` attributo del `Type` elemento accetta un asterisco `*` come un carattere jolly che può essere usato per i nomi delle classi basate su modelli.
+L'attributo `Name` dell'elemento `Type` accetta un asterisco `*` come carattere jolly che può essere usato per i nomi di classi basate su modelli.
 
-Nell'esempio seguente viene utilizzata la stessa visualizzazione se l'oggetto è un `CAtlArray<int>` o un `CAtlArray<float>`. Se è presente una voce di visualizzazione specifici per un `CAtlArray<float>`, ha la precedenza su quella generica.
+Nell'esempio seguente viene usata la stessa visualizzazione se l'oggetto è un `CAtlArray<int>` o `CAtlArray<float>`. Se è presente una voce di visualizzazione specifica per un `CAtlArray<float>`, avrà la precedenza rispetto a quella generica.
 
 ```xml
 <Type Name="ATL::CAtlArray&lt;*&gt;">
@@ -215,15 +215,15 @@ Nell'esempio seguente viene utilizzata la stessa visualizzazione se l'oggetto è
 </Type>
 ```
 
-È possibile fare riferimento a parametri del modello nella voce di visualizzazione usando le macro $T1, $T2 e così via. Per esempi di queste macro, vedere i file *NATVIS* forniti con Visual Studio.
+È possibile fare riferimento ai parametri di modello nella voce di visualizzazione usando le macro $T 1, $T 2 e così via. Per esempi di queste macro, vedere i file *NATVIS* forniti con Visual Studio.
 
 #### <a name="BKMK_Visualizer_type_matching"></a> Corrispondenza del tipo di visualizzatore
-Se non è stato possibile convalidare una voce di visualizzazione, viene usata la successiva visualizzazione disponibile.
+Se non è possibile convalidare una voce di visualizzazione, verrà usata la successiva visualizzazione disponibile.
 
 #### <a name="inheritable-attribute"></a>Attributo Inheritable
-L'opzione facoltativa `Inheritable` attributo specifica se una visualizzazione si applica solo a un tipo di base o a un tipo di base e tutti i tipi derivati. Il valore predefinito di `Inheritable` è `true`.
+L'attributo facoltativo `Inheritable` specifica se una visualizzazione si applica solo a un tipo di base o a un tipo di base e a tutti i tipi derivati. Il valore predefinito di `Inheritable` è `true`.
 
-Nell'esempio seguente, la visualizzazione si applica solo al `BaseClass` tipo:
+Nell'esempio seguente la visualizzazione si applica solo al tipo di `BaseClass`:
 
 ```xml
 <Type Name="Namespace::BaseClass" Inheritable="false">
@@ -233,9 +233,9 @@ Nell'esempio seguente, la visualizzazione si applica solo al `BaseClass` tipo:
 
 #### <a name="priority-attribute"></a>Attributo Priority
 
-L'opzione facoltativa `Priority` attributo specifica l'ordine in cui si desidera usare le definizioni alternative, se una definizione non può essere analizzata. I possibili valori della `Priority` sono: `Low`, `MediumLow`,`Medium`, `MediumHigh`, e `High`. Il valore predefinito è `Medium`. Il `Priority` attributo consente di distinguere solo tra le priorità all'interno della stessa *natvis* file.
+L'attributo facoltativo `Priority` specifica l'ordine in cui utilizzare le definizioni alternative, se l'analisi di una definizione ha esito negativo. I valori possibili di `Priority` sono: `Low`, `MediumLow`, `Medium`, `MediumHigh` e `High`. Il valore predefinito è `Medium`. L'attributo `Priority` distingue solo tra le priorità incluse nello stesso file con *estensione natvis* .
 
-Nell'esempio seguente analizza innanzitutto la voce che corrisponde a STL 2015. Se il problema persiste analizzare, Usa la voce alternativa per la versione 2013 di STL:
+Nell'esempio seguente viene prima di tutto analizzata la voce che corrisponde a 2015 STL. Se l'analisi non riesce, usa la voce alternativa per la versione 2013 di STL:
 
 ```xml
 <!-- VC 2013 -->
@@ -256,7 +256,7 @@ Nell'esempio seguente analizza innanzitutto la voce che corrisponde a STL 2015. 
 ```
 
 ### <a name="optional-attribute"></a>Attributo Optional
-È possibile inserire un `Optional` attributi su qualsiasi nodo. Se una sottoespressione all'interno di un nodo facoltativo non viene analizzata, il debugger ignora tale nodo, ma si applica il resto del `Type` regole. Nel tipo seguente `[State]` non è facoltativo, mentre `[Exception]` lo è.  Se `MyNamespace::MyClass` dispone di un campo denominato _`M_exceptionHolder`, entrambi i `[State]` nodo e il `[Exception]` sono visualizzati, ma se è non `_M_exceptionHolder` campo, solo il `[State]` nodo viene visualizzato.
+È possibile inserire un attributo `Optional` su qualsiasi nodo. Se una sottoespressione all'interno di un nodo facoltativo non viene analizzata, il debugger ignora tale nodo, ma applica le altre regole di `Type`. Nel tipo seguente `[State]` non è facoltativo, mentre `[Exception]` lo è.  Se `MyNamespace::MyClass` dispone di un campo denominato _ `M_exceptionHolder`, verranno visualizzati sia il nodo `[State]` che il nodo `[Exception]`, ma se non è presente alcun campo `_M_exceptionHolder`, viene visualizzato solo il nodo `[State]`.
 
 ```xml
 <Type Name="MyNamespace::MyClass">
@@ -269,9 +269,9 @@ Nell'esempio seguente analizza innanzitutto la voce che corrisponde a STL 2015. 
 
 ### <a name="BKMK_Condition_attribute"></a> Attributo Condition
 
-L'opzione facoltativa `Condition` attributo è disponibile per molti elementi di visualizzazione e consente di specificare quando utilizzare una regola di visualizzazione. Se l'espressione all'interno dell'attributo condition si risolve in `false`, non si applica la regola di visualizzazione. Se viene restituito `true`, o non è presente alcun `Condition` attributo, la visualizzazione si applica. È possibile usare questo attributo per la logica if-else nelle voci di visualizzazione.
+L'attributo `Condition` facoltativo è disponibile per molti elementi di visualizzazione e specifica quando usare una regola di visualizzazione. Se l'espressione all'interno dell'attributo Condition viene risolta in `false`, la regola di visualizzazione non è applicabile. Se restituisce `true` o non esiste alcun attributo `Condition`, viene applicata la visualizzazione. È possibile usare questo attributo per la logica if-else nelle voci di visualizzazione.
 
-Ad esempio, la visualizzazione seguente presenta due `DisplayString` elementi per un tipo di puntatore intelligente. Quando la `_Myptr` membro è vuoto, la condizione del primo `DisplayString` elemento si risolve in `true`, pertanto tale form è visualizzata. Quando la `_Myptr` membro non vuoto, la condizione viene valutata `false`, mentre la seconda `DisplayString` Visualizza elemento.
+La visualizzazione seguente, ad esempio, include due elementi `DisplayString` per un tipo di puntatore intelligente. Quando il membro `_Myptr` è vuoto, la condizione del primo elemento `DisplayString` viene risolta in `true`, in modo da visualizzare il form. Quando il membro `_Myptr` non è vuoto, la condizione restituisce `false` e viene visualizzato il secondo elemento `DisplayString`.
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -285,7 +285,7 @@ Ad esempio, la visualizzazione seguente presenta due `DisplayString` elementi pe
 
 ### <a name="includeview-and-excludeview-attributes"></a>Attributi IncludeView e ExcludeView
 
-Il `IncludeView` e `ExcludeView` attributi specificano gli elementi da visualizzare o non visualizzare nelle visualizzazioni specifiche. Ad esempio, nella seguente Natvis specifica del `std::vector`, il `simple` vista non viene visualizzato il `[size]` e `[capacity]` elementi.
+Gli attributi `IncludeView` e `ExcludeView` specificano gli elementi da visualizzare o non devono essere visualizzati in visualizzazioni specifiche. Nella specifica natvis seguente di `std::vector`, ad esempio, nella visualizzazione `simple` non vengono visualizzati gli elementi `[size]` e `[capacity]`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -301,14 +301,14 @@ Il `IncludeView` e `ExcludeView` attributi specificano gli elementi da visualizz
 </Type>
 ```
 
-È possibile usare la `IncludeView` e `ExcludeView` attributi sui tipi e sui singoli membri.
+È possibile utilizzare gli attributi `IncludeView` e `ExcludeView` sui tipi e sui singoli membri.
 
 ### <a name="BKMK_Versioning"></a> Elemento Version
-Il `Version` elemento definisce l'ambito di una voce di visualizzazione per un modulo specifico e una versione. Il `Version` elemento consente di evitare conflitti di nomi, riduce mancate corrispondenze indesiderate e consente di visualizzazioni diverse per le versioni di tipo diverso.
+L'elemento `Version` l'ambito di una voce di visualizzazione per un modulo e una versione specifici. L'elemento `Version` consente di evitare conflitti di nomi, ridurre le mancate corrispondenze involontarie e consente visualizzazioni diverse per diverse versioni del tipo.
 
-Se un file di intestazione comune usato da moduli diversi definisce un tipo, la visualizzazione con versione viene visualizzato solo quando il tipo è nella versione del modulo specificato.
+Se un file di intestazione comune usato da moduli diversi definisce un tipo, la visualizzazione con versione viene visualizzata solo quando il tipo è nella versione del modulo specificata.
 
-Nell'esempio seguente, la visualizzazione è valida solo per i `DirectUI::Border` trovare il tipo nel `Windows.UI.Xaml.dll` dalla versione 1.0 alla 1.5 del file.
+Nell'esempio seguente la visualizzazione è applicabile solo per il tipo di `DirectUI::Border` trovato nella `Windows.UI.Xaml.dll` dalla versione 1,0 alla 1,5.
 
 ```xml
 <Type Name="DirectUI::Border">
@@ -320,8 +320,8 @@ Nell'esempio seguente, la visualizzazione è valida solo per i `DirectUI::Border
 </Type>
 ```
 
-### <a name="BKMK_DisplayString"></a> Elemento DisplayString
-Il `DisplayString` elemento specifica una stringa da visualizzare come valore di una variabile. Accetta stringhe arbitrarie combinate con espressioni. Tutto ciò che è racchiuso tra parentesi graffe viene interpretato come un'espressione. Ad esempio, quanto segue `DisplayString` voce:
+### <a name="BKMK_DisplayString"></a>Elemento DisplayString
+L'elemento `DisplayString` specifica una stringa da visualizzare come valore di una variabile. Accetta stringhe arbitrarie combinate con espressioni. Tutto ciò che è racchiuso tra parentesi graffe viene interpretato come un'espressione. Ad esempio, la voce di `DisplayString` seguente:
 
 ```xml
 <Type Name="CPoint">
@@ -329,18 +329,18 @@ Il `DisplayString` elemento specifica una stringa da visualizzare come valore di
 </Type>
 ```
 
-Indica che le variabili di tipo `CPoint` visualizzato come in questa illustrazione:
+Indica che le variabili di tipo `CPoint` visualizzate come illustrato nella figura seguente:
 
- ![Usare un elemento DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "usare un elemento DisplayString")
+ ![Utilizzare un elemento DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "utilizzare un elemento DisplayString")
 
-Nel `DisplayString` espressione `x` e `y`, che sono membri di `CPoint`, sono racchiusi tra parentesi graffe, pertanto i relativi valori vengono valutati. Nell'esempio viene inoltre illustrato come è possibile una parentesi graffa usando doppie parentesi graffe ( `{{` o `}}` ).
+Nell'espressione `DisplayString` `x` e `y`, che sono membri di `CPoint`, sono racchiusi tra parentesi graffe, pertanto i relativi valori vengono valutati. Nell'esempio viene inoltre illustrato come sfuggire a una parentesi graffa con parentesi graffe doppie (`{{` o `}}`).
 
 > [!NOTE]
-> L'elemento `DisplayString` è l'unico elemento che accetta stringhe arbitrarie e la sintassi con parentesi graffe. Tutti gli altri elementi di visualizzazioni accettano solo espressioni può valutare il debugger.
+> L'elemento `DisplayString` è l'unico elemento che accetta stringhe arbitrarie e la sintassi con parentesi graffe. Tutti gli altri elementi di visualizzazione accettano solo le espressioni che possono essere valutate dal debugger.
 
-### <a name="BKMK_StringView"></a> Elemento StringView
+### <a name="BKMK_StringView"></a>Elemento StringView
 
-Il `StringView` elemento definisce un valore che il debugger può inviare al Visualizzatore di testo incorporato. Si consideri ad esempio la visualizzazione seguente per il `ATL::CStringT` tipo:
+L'elemento `StringView` definisce un valore che il debugger può inviare al visualizzatore di testo incorporato. Ad esempio, data la seguente visualizzazione per il tipo di `ATL::CStringT`:
 
 ```xml
 <Type Name="ATL::CStringT&lt;wchar_t,*&gt;">
@@ -348,11 +348,11 @@ Il `StringView` elemento definisce un valore che il debugger può inviare al Vis
 </Type>
 ```
 
-Il `CStringT` oggetto venga visualizzato in una finestra delle variabili simile all'esempio:
+L'oggetto `CStringT` viene visualizzato in una finestra delle variabili come nell'esempio seguente:
 
-![Elemento CStringT DisplayString](../debugger/media/dbg_natvis_displaystring_cstringt.png "elemento CStringT DisplayString")
+Elemento CStringT DisplayString ![elemento](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT") DisplayString
 
-Aggiunta di un `StringView` elemento indica al debugger può visualizzare il valore come una visualizzazione di testo.
+L'aggiunta di un elemento `StringView` indica al debugger che è possibile visualizzare il valore come visualizzazione di testo.
 
 ```xml
 <Type Name="ATL::CStringT&lt;wchar_t,*&gt;">
@@ -361,23 +361,23 @@ Aggiunta di un `StringView` elemento indica al debugger può visualizzare il val
 </Type>
 ```
 
-Durante il debug, è possibile selezionare l'icona della lente di ingrandimento accanto alla variabile e quindi selezionare **Visualizzatore di testo** per visualizzare la stringa che **m_pszData** punta a.
+Durante il debug, è possibile selezionare l'icona della lente di ingrandimento accanto alla variabile, quindi selezionare **Visualizzatore di testo** per visualizzare la stringa a cui punta **m_pszData** .
 
- ![Dati CStringT con Visualizzatore StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "dati CStringT con Visualizzatore StringView")
+ ![Dati CStringT con](../debugger/media/dbg_natvis_stringview_cstringt.png "i dati CStringT") del Visualizzatore StringView con il Visualizzatore StringView
 
-L'espressione `{m_pszData,su}` include un identificatore di formato C++ **unità di streaming**, per visualizzare il valore come stringa Unicode. Per altre informazioni, vedere [Format specifiers in C++](../debugger/format-specifiers-in-cpp.md).
+L'espressione `{m_pszData,su}` include un C++ identificatore di formato **su**per visualizzare il valore come stringa Unicode. Per ulteriori informazioni, vedere [identificatori di formato C++in ](../debugger/format-specifiers-in-cpp.md).
 
-### <a name="BKMK_Expand"></a> Espandere l'elemento
+### <a name="BKMK_Expand"></a>Espandi elemento
 
-L'opzione facoltativa `Expand` nodo consente di personalizzare gli elementi figlio di un tipo visualizzato quando si espande il tipo in una finestra delle variabili. Il `Expand` nodo accetta un elenco di nodi figlio che definiscono gli elementi figlio.
+Il nodo `Expand` facoltativo Personalizza gli elementi figlio di un tipo visualizzato quando si espande il tipo in una finestra delle variabili. Il nodo `Expand` accetta un elenco di nodi figlio che definiscono gli elementi figlio.
 
-- Se un `Expand` nodo non è specificato in una voce di visualizzazione, gli elementi figlio usano le regole di espansione predefinite.
+- Se un nodo `Expand` non è specificato in una voce di visualizzazione, gli elementi figlio utilizzano le regole di espansione predefinite.
 
-- Se un `Expand` nodo viene specificato senza nodi figlio sotto di esso, il tipo non è espandibile nelle finestre del debugger.
+- Se un nodo `Expand` viene specificato senza nodi figlio, il tipo non è espandibile nelle finestre del debugger.
 
 #### <a name="BKMK_Item_expansion"></a> Espansione di Item
 
- Il `Item` elemento più comuni e di base in un `Expand` nodo. `Item` definisce un singolo elemento figlio. Ad esempio, un `CRect` classe con campi `top`, `left`, `right`, e `bottom` ha la seguente voce di visualizzazione:
+ L'elemento `Item` è l'elemento più semplice e comune in un nodo `Expand`. `Item` definisce un singolo elemento figlio. Ad esempio, una classe `CRect` con i campi `top`, `left`, `right` e `bottom` presenta la seguente voce di visualizzazione:
 
 ```xml
 <Type Name="CRect">
@@ -389,16 +389,16 @@ L'opzione facoltativa `Expand` nodo consente di personalizzare gli elementi figl
 </Type>
 ```
 
-Nella finestra del debugger, il `CRect` tipo è simile a questo esempio:
+Nella finestra del debugger, il tipo di `CRect` è simile a questo esempio:
 
-![CRect con espansione dell'elemento Item](../debugger/media/dbg_natvis_expand_item_crect1.png "CRect con espansione dell'elemento Item")
+![CRect con espansione elemento]elemento(../debugger/media/dbg_natvis_expand_item_crect1.png "CRect con espansione elemento") elemento
 
-Il debugger valuta le espressioni specificate nel `Width` e `Height` gli elementi che mostra i valori nel **valore** colonna della finestra delle variabili.
+Il debugger valuta le espressioni specificate negli elementi `Width` e `Height` e Mostra i valori nella colonna **valore** della finestra delle variabili.
 
-Il debugger crea automaticamente il **[visualizzazione non elaborata]** nodo per ogni espansione personalizzata. Lo screenshot precedente consente di visualizzare il **[visualizzazione non elaborata]** nodo è espanso per mostrare come la visualizzazione non elaborata predefinito dell'oggetto è diverso dalla relativa visualizzazione Natvis. L'espansione predefinita crea un sottoalbero per la classe di base ed elenca tutti i membri dati della classe di base come elementi figlio.
+Il debugger crea automaticamente il nodo **[visualizzazione non elaborata]** per ogni espansione personalizzata. La schermata precedente Mostra il nodo **[RAW View]** espanso per mostrare come la visualizzazione non elaborata predefinita dell'oggetto è diversa dalla relativa visualizzazione natvis. L'espansione predefinita crea un sottoalbero per la classe base ed elenca tutti i membri dati della classe base come elementi figlio.
 
 > [!NOTE]
-> Se l'espressione dell'elemento item punta a un tipo complesso, il **elemento** stesso nodo è espandibile.
+> Se l'espressione dell'elemento Item punta a un tipo complesso, il nodo dell' **elemento** stesso è espandibile.
 
 #### <a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion
 Usare il nodo `ArrayItems` per consentire al debugger di Visual Studio di interpretare il tipo come una matrice e visualizzarne i singoli elementi. La visualizzazione per `std::vector` costituisce un ottimo esempio:
@@ -419,19 +419,19 @@ Usare il nodo `ArrayItems` per consentire al debugger di Visual Studio di interp
 
 Un elemento `std::vector` visualizza i singoli elementi quando viene espanso nella finestra delle variabili:
 
-![std:: Vector con espansione ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std:: Vector con espansione ArrayItems")
+![std:: Vector con l'espansione ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std:: Vector con espansione ArrayItems")
 
-Il `ArrayItems` nodo deve avere:
+Il nodo `ArrayItems` deve avere:
 
 - Un'espressione `Size` (che deve restituire un numero intero) per consentire al debugger di riconoscere la lunghezza della matrice.
-- Oggetto `ValuePointer` espressione che punta al primo elemento (che deve essere un puntatore di un tipo di elemento non `void*`).
+- Espressione `ValuePointer` che punta al primo elemento (che deve essere un puntatore di un tipo di elemento che non è `void*`).
 
-Il valore predefinito del limite inferiore della matrice è 0. Per sostituire il valore, usare un `LowerBound` elemento. Il *natvis* file forniti con Visual Studio sono esempi.
+Il valore predefinito del limite inferiore della matrice è 0. Per eseguire l'override del valore, usare un elemento `LowerBound`. Di seguito sono riportati alcuni esempi di file con *estensione natvis* forniti con Visual Studio.
 
 >[!NOTE]
->È possibile usare la `[]` operatore, ad esempio `vector[i]`, con qualsiasi visualizzazione matrice unidimensionale che usa `ArrayItems`, anche se il tipo stesso (ad esempio `CATLArray`) non supporta questo operatore.
+>È possibile usare l'operatore `[]`, ad esempio `vector[i]`, con qualsiasi visualizzazione di matrice unidimensionale che usa `ArrayItems`, anche se il tipo stesso (ad esempio `CATLArray`) non consente questo operatore.
 
-È anche possibile specificare matrici multidimensionali. In tal caso, il debugger richiede leggermente più informazioni per visualizzare correttamente gli elementi figlio:
+È anche possibile specificare matrici multidimensionali. In tal caso, per visualizzare correttamente gli elementi figlio, il debugger necessita di un numero leggermente maggiore di informazioni:
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">
@@ -448,17 +448,17 @@ Il valore predefinito del limite inferiore della matrice è 0. Per sostituire il
 </Type>
 ```
 
-- `Direction` Specifica se la matrice è nell'ordine di riga o colonna ordinata.
+- `Direction` specifica se la matrice è in ordine di riga, principale o di colonna.
 - `Rank` specifica l'ordine di priorità della matrice.
-- L'elemento `Size` accetta il parametro `$i` implicito che sostituisce con l'indice delle dimensioni per individuare la lunghezza della matrice in quella dimensione. Nell'esempio precedente, l'espressione `_M_extent.M_base[0]` deve fornire la lunghezza della dimensione 0, `_M_extent._M_base[1]` il 1 ° e così via.
+- L'elemento `Size` accetta il parametro `$i` implicito che sostituisce con l'indice delle dimensioni per individuare la lunghezza della matrice in quella dimensione. Nell'esempio precedente, l'espressione `_M_extent.M_base[0]` deve fornire la lunghezza della dimensione 0A, `_M_extent._M_base[1]` il primo e così via.
 
-Ecco come un oggetto bidimensionale `Concurrency::array` oggetto esegue la ricerca nella finestra del debugger:
+Ecco il modo in cui un oggetto `Concurrency::array` bidimensionale Cerca nella finestra del debugger:
 
-![Matrice bidimensionale con espansione ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "matrice bidimensionale con espansione ArrayItems")
+![Matrice bidimensionale con ArrayItems di espansione](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "bidimensionale con espansione ArrayItems")
 
 #### <a name="BKMK_IndexListItems_expansion"></a> Espansione di IndexListItems
 
-È possibile usare `ArrayItems` espansione solo se gli elementi della matrice vengono disposti in modo contiguo nella memoria. Il debugger ottiene l'elemento successivo semplicemente incrementando il relativo puntatore. Se è necessario modificare l'indice per il nodo di valore, usare `IndexListItems` nodi. Ecco una visualizzazione con un `IndexListItems` nodo:
+È possibile utilizzare `ArrayItems` espansione solo se gli elementi della matrice sono disposti in modo contiguo nella memoria. Il debugger raggiunge l'elemento successivo semplicemente incrementando il relativo puntatore. Se è necessario modificare l'indice nel nodo valore, utilizzare `IndexListItems` nodi. Ecco una visualizzazione con un nodo `IndexListItems`:
 
 ```xml
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">
@@ -473,14 +473,14 @@ Ecco come un oggetto bidimensionale `Concurrency::array` oggetto esegue la ricer
 </Type>
 ```
 
-L'unica differenza tra `ArrayItems` e `IndexListItems` è la `ValueNode`, che prevede l'espressione completa del<sup>th</sup> elemento con l'oggetto implicito `$i` parametro.
+L'unica differenza tra `ArrayItems` e `IndexListItems` è la `ValueNode`, che prevede l'espressione completa per l'elemento i<sup>th</sup> con il parametro di `$i` implicito.
 
 >[!NOTE]
->È possibile usare la `[]` operatore, ad esempio `vector[i]`, con qualsiasi visualizzazione matrice unidimensionale che usa `IndexListItems`, anche se il tipo stesso (ad esempio `CATLArray`) non supporta questo operatore.
+>È possibile usare l'operatore `[]`, ad esempio `vector[i]`, con qualsiasi visualizzazione di matrice unidimensionale che usa `IndexListItems`, anche se il tipo stesso (ad esempio `CATLArray`) non consente questo operatore.
 
 #### <a name="BKMK_LinkedListItems_expansion"></a> Espansione di LinkedListItems
 
-Se il tipo visualizzato rappresenta un elenco collegato, il debugger può visualizzarne i figli tramite un nodo `LinkedListItems` . La visualizzazione seguente per il `CAtlList` digitare Usa `LinkedListItems`:
+Se il tipo visualizzato rappresenta un elenco collegato, il debugger può visualizzarne i figli tramite un nodo `LinkedListItems` . La visualizzazione seguente per il tipo di `CAtlList` utilizza `LinkedListItems`:
 
 ```xml
 <Type Name="ATL::CAtlList&lt;*,*&gt;">
@@ -499,14 +499,14 @@ Se il tipo visualizzato rappresenta un elenco collegato, il debugger può visual
 
 L'elemento `Size` si riferisce alla lunghezza dell'elenco. `HeadPointer` punta al primo elemento, `NextPointer` fa riferimento all'elemento successivo e `ValueNode` fa riferimento al valore dell'elemento.
 
-Il debugger valuterà la `NextPointer` e `ValueNode` espressioni nel contesto del `LinkedListItems` nodo elemento, non il tipo di elenco padre. Nell'esempio precedente, `CAtlList` ha un `CNode` classe (trovato nel `atlcoll.h`) che rappresenta un nodo dell'elenco collegato. `m_pNext` e `m_element` sono campi di questa `CNode` (classe), non del `CAtlList` classe.
+Il debugger valuta le espressioni `NextPointer` e `ValueNode` nel contesto dell'elemento `LinkedListItems` node, non del tipo di elenco padre. Nell'esempio precedente, `CAtlList` dispone di una classe `CNode` (presente in `atlcoll.h`) che rappresenta un nodo dell'elenco collegato. `m_pNext` e `m_element` sono campi di tale classe `CNode`, non della classe `CAtlList`.
 
-`ValueNode` può essere lasciato vuoto oppure usare `this` per fare riferimento al `LinkedListItems` stesso nodo.
+`ValueNode` possono essere lasciati vuoti o usare `this` per fare riferimento al nodo `LinkedListItems` stesso.
 
 #### <a name="customlistitems-expansion"></a>Espansione CustomListItems
-L'espansione `CustomListItems` consente di scrivere una logica personalizzata per attraversare una struttura dei dati, ad esempio una tabella hash. Usare `CustomListItems` rientrano nel modello per visualizzare strutture di dati che è possono usare le espressioni C++ per tutto il necessario per valutare, ma non abbastanza `ArrayItems`, `IndexListItems`, o `LinkedListItems`.
+L'espansione `CustomListItems` consente di scrivere una logica personalizzata per attraversare una struttura dei dati, ad esempio una tabella hash. Usare `CustomListItems` per visualizzare le strutture dei dati in grado C++ di usare espressioni per tutti gli elementi necessari per la valutazione, ma non è sufficiente adattare lo stamp per `ArrayItems`, `IndexListItems` o `LinkedListItems`.
 
-Il Visualizzatore seguente per `CAtlMap` è un ottimo esempio in cui `CustomListItems` appropriato.
+Il Visualizzatore seguente per `CAtlMap` è un ottimo esempio in cui `CustomListItems` è appropriato.
 
 ```xml
 <Type Name="ATL::CAtlMap&lt;*,*,*,*&gt;">
@@ -537,7 +537,7 @@ Il Visualizzatore seguente per `CAtlMap` è un ottimo esempio in cui `CustomList
 </Type>
 ```
 
-È possibile usare `Exec` per eseguire il codice all'interno di un `CustomListItems` espansione, usando le variabili e gli oggetti definiti nell'espansione. È possibile usare gli operatori logici, operatori aritmetici e gli operatori di assegnazione con `Exec`. Non è possibile usare `Exec` per valutare le funzioni.
+È possibile usare `Exec` per eseguire codice all'interno di un'espansione `CustomListItems`, usando le variabili e gli oggetti definiti nell'espansione. È possibile utilizzare gli operatori logici, gli operatori aritmetici e gli operatori di assegnazione con `Exec`. Non è possibile usare `Exec` per valutare le funzioni.
 
 `CustomListItems` supporta le funzioni intrinseche seguenti:
 
@@ -556,7 +556,7 @@ Il Visualizzatore seguente per `CAtlMap` è un ottimo esempio in cui `CustomList
 - `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> Espansione di TreeItems
- Se il tipo visualizzato rappresenta un albero, il debugger può esaminare l'albero e visualizzarne i figli tramite un nodo `TreeItems` . Di seguito è illustrata la visualizzazione per il `std::map` il tipo usando un `TreeItems` nodo:
+ Se il tipo visualizzato rappresenta un albero, il debugger può esaminare l'albero e visualizzarne i figli tramite un nodo `TreeItems` . Di seguito è illustrata la visualizzazione per il tipo di `std::map` usando un nodo `TreeItems`:
 
 ```xml
 <Type Name="std::map&lt;*&gt;">
@@ -575,16 +575,16 @@ Il Visualizzatore seguente per `CAtlMap` è un ottimo esempio in cui `CustomList
 </Type>
 ```
 
-La sintassi è simile al `LinkedListItems` nodo. `LeftPointer`, `RightPointer`, e `ValueNode` vengono valutate nel contesto della classe di nodo dell'albero. `ValueNode` può essere lasciato vuoto o usare `this` per fare riferimento al `TreeItems` stesso nodo.
+La sintassi è simile al nodo `LinkedListItems`. `LeftPointer`, `RightPointer` e `ValueNode` vengono valutati nel contesto della classe del nodo della struttura ad albero. `ValueNode` possono essere lasciati vuoti o usare `this` per fare riferimento al nodo `TreeItems` stesso.
 
 #### <a name="BKMK_ExpandedItem_expansion"></a> Espansione di ExpandedItem
- Il `ExpandedItem` elemento genera una visualizzazione figlio aggregata visualizzando le proprietà dei membri di classi o dati di base come se fossero figli del tipo visualizzato. Il debugger valuta l'espressione specificata e aggiunge i nodi figlio del risultato all'elenco figlio del tipo visualizzato.
+ L'elemento `ExpandedItem` genera una visualizzazione figlio aggregata visualizzando le proprietà delle classi base o dei membri dati come se fossero figli del tipo visualizzato. Il debugger valuta l'espressione specificata e accoda i nodi figlio del risultato all'elenco figlio del tipo visualizzato.
 
-Ad esempio, il tipo di puntatore intelligente `auto_ptr<vector<int>>` generalmente vengono visualizzati come:
+Ad esempio, il tipo di puntatore intelligente `auto_ptr<vector<int>>` in genere viene visualizzato come:
 
- ![automatico&#95;ptr&#60;vector&#60;int&#62; &#62; espansione predefinita](../debugger/media/dbg_natvis_expand_expandeditem_default.png "espansione predefinita")
+ (../debugger/media/dbg_natvis_expand_expandeditem_default.png "espansione") predefinita dell'espansione predefinita del ![vettore&#60;di&#62; &#62; tipo auto PTR&#60;&#95;]
 
- Per visualizzare i valori del vettore, è necessario eseguire il drill-down di due livelli nella finestra delle variabili, che attraversa il `_Myptr` membro. Aggiungendo un elemento `ExpandedItem`, è possibile eliminare la variabile `_Myptr` dalla gerarchia e visualizzare direttamente gli elementi del vettore:
+ Per visualizzare i valori del vettore, è necessario eseguire il drill-down di due livelli nella finestra delle variabili, passando il membro `_Myptr`. Aggiungendo un elemento `ExpandedItem`, è possibile eliminare la variabile `_Myptr` dalla gerarchia e visualizzare direttamente gli elementi del vettore:
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -595,9 +595,9 @@ Ad esempio, il tipo di puntatore intelligente `auto_ptr<vector<int>>` generalmen
 </Type>
 ```
 
- ![automatico&#95;ptr&#60;vector&#60;int&#62; &#62; espansione di ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "espansione di ExpandedItem")
+ ![espansione&#95;auto&#60;PTR&#60;vector&#62; &#62; int ExpandedItem Expansion](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "ExpandedItem")
 
-Nell'esempio seguente mostra come aggregare proprietà dalla classe di base in una classe derivata. Si supponga che la classe `CPanel` derivi da `CFrameworkElement`. Anziché ripetere le proprietà che provengono dalla base `CFrameworkElement` (classe), il `ExpandedItem` visualizzazione nodo aggiunge tali proprietà all'elenco figlio del `CPanel` classe.
+Nell'esempio seguente viene illustrato come aggregare proprietà dalla classe base in una classe derivata. Si supponga che la classe `CPanel` derivi da `CFrameworkElement`. Invece di ripetere le proprietà che provengono dalla classe `CFrameworkElement` di base, la visualizzazione del nodo `ExpandedItem` Accoda tali proprietà all'elenco figlio della classe `CPanel`.
 
 ```xml
 <Type Name="CPanel">
@@ -609,10 +609,10 @@ Nell'esempio seguente mostra come aggregare proprietà dalla classe di base in u
 </Type>
 ```
 
-In questo caso è necessario l'identificatore di formato **nd** che disattiva la corrispondenza della visualizzazione per la classe derivata. In caso contrario, l'espressione `*(CFrameworkElement*)this` provocherebbe il `CPanel` visualizzazione verrà applicato anche in questo caso, perché le regole di corrispondenza di tipo di visualizzazione predefinita considerarlo come quello più appropriato. Usare la **nd** per indicare al debugger di usare la visualizzazione della classe di base, o l'espansione predefinita se la classe di base non dispone di alcuna visualizzazione identificatore di formato.
+In questo caso è necessario l'identificatore di formato **nd** che disattiva la corrispondenza della visualizzazione per la classe derivata. In caso contrario, l'espressione `*(CFrameworkElement*)this` provocherebbe nuovamente l'applicazione della visualizzazione `CPanel`, perché le regole di corrispondenza del tipo di visualizzazione predefinite lo considerano quello più appropriato. Usare l'identificatore di formato **ND** per indicare al debugger di usare la visualizzazione della classe base o l'espansione predefinita se la classe base non ha alcuna visualizzazione.
 
 #### <a name="BKMK_Synthetic_Item_expansion"></a> Espansione di elementi Synthetic
- Il nodo `ExpandedItem` esegue la funzione opposta rispetto all'elemento `Synthetic`, che fornisce una visualizzazione dei dati più semplice eliminando le gerarchie. Consente di creare un elemento figlio artificiale che non è un risultato di un'espressione. L'elemento artificiale può avere elementi figlio propri. Nell'esempio seguente nella visualizzazione del tipo `Concurrency::array` viene usato un nodo `Synthetic` per mostrare un messaggio di diagnostica all'utente:
+ Il nodo `ExpandedItem` esegue la funzione opposta rispetto all'elemento `Synthetic`, che fornisce una visualizzazione dei dati più semplice eliminando le gerarchie. Consente di creare un elemento figlio artificiale che non è il risultato di un'espressione. L'elemento Artificial può avere elementi figlio propri. Nell'esempio seguente nella visualizzazione del tipo `Concurrency::array` viene usato un nodo `Synthetic` per mostrare un messaggio di diagnostica all'utente:
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">
@@ -631,10 +631,10 @@ In questo caso è necessario l'identificatore di formato **nd** che disattiva la
 </Type>
 ```
 
- ![Concurrency:: array con espansione dell'elemento Synthetic](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: array con espansione dell'elemento Synthetic")
+ ![Concurrency:: array con espansione dell'elemento sintetico](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: array con espansione di elementi sintetici")
 
-### <a name="BKMK_HResult"></a> Elemento HResult
- Il `HResult` elemento consente di personalizzare le informazioni visualizzate per un **HRESULT** nelle finestre del debugger. L'elemento `HRValue` deve contenere il valore a 32 bit di **HRESULT** da personalizzare. Il `HRDescription` elemento contiene le informazioni da visualizzare nella finestra del debugger.
+### <a name="BKMK_HResult"></a>HResult (elemento)
+ L'elemento `HResult` consente di personalizzare le informazioni visualizzate per un **HRESULT** nelle finestre del debugger. L'elemento `HRValue` deve contenere il valore a 32 bit di **HRESULT** da personalizzare. L'elemento `HRDescription` contiene le informazioni da visualizzare nella finestra del debugger.
 
 ```xml
 
@@ -644,8 +644,8 @@ In questo caso è necessario l'identificatore di formato **nd** che disattiva la
 </HResult>
 ```
 
-### <a name="BKMK_UIVisualizer"></a> Elemento UIVisualizer
-Un elemento `UIVisualizer` consente di registrare un plug-in del visualizzatore grafico con il debugger. Un visualizzatore grafico consente di creare una finestra di dialogo o un'altra interfaccia che viene illustrata una variabile o un oggetto in modo coerente con il tipo di dati. Il visualizzatore plug-in deve essere creato come un [VSPackage](../extensibility/internals/vspackages.md)e deve esporre un servizio di cui è possibile utilizzare il debugger. Il *natvis* file contiene informazioni di registrazione per il plug-in, ad esempio il nome, il GUID del servizio esposto e i tipi che è possibile visualizzare.
+### <a name="BKMK_UIVisualizer"></a>Elemento UIVisualizer
+Un elemento `UIVisualizer` consente di registrare un plug-in del visualizzatore grafico con il debugger. Un visualizzatore grafico crea una finestra di dialogo o un'altra interfaccia che mostra una variabile o un oggetto in modo coerente con il relativo tipo di dati. Il plug-in del visualizzatore deve essere creato come [VSPackage](../extensibility/internals/vspackages.md)e deve esporre un servizio che può essere utilizzato dal debugger. Il file *. natvis* contiene le informazioni di registrazione per il plug-in, ad esempio il nome, il GUID del servizio esposto e i tipi che è in grado di visualizzare.
 
 Il seguente è un esempio di elemento UIVisualizer:
 
@@ -661,13 +661,13 @@ Il seguente è un esempio di elemento UIVisualizer:
 </AutoVisualizer>
 ```
 
-- Oggetto `ServiceId`  -  `Id` coppia attributo identifica un `UIVisualizer`. Il `ServiceId` è il GUID del servizio del Visualizzatore espone pacchetto. `Id` è un identificatore univoco che distingue i visualizzatori, se un servizio fornisce più di uno. Nell'esempio precedente, lo stesso servizio Visualizzatore fornisce due visualizzatori.
+- Una coppia `ServiceId`  -  `Id` attributo identifica un `UIVisualizer`. Il `ServiceId` è il GUID del servizio esposto dal pacchetto del visualizzatore. `Id` è un identificatore univoco che distingue i visualizzatori, se un servizio ne fornisce più di uno. Nell'esempio precedente, lo stesso servizio del visualizzatore fornisce due visualizzatori.
 
-- Il `MenuName` attributo definisce un nome di Visualizzatore per visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Ad esempio:
+- L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Esempio:
 
-  ![Menu di scelta rapida UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "menu di scelta rapida UIVisualizer")
+  Menu di ![scelta rapida]del menu UIVisualizer UIVisualizer menu di(../debugger/media/dbg_natvis_vectorvisualizer.png "scelta rapida")
 
-Ogni tipo definito nel *natvis* file deve elencare esplicitamente qualsiasi visualizzatori dell'interfaccia utente possono visualizzarlo. Il debugger abbina i riferimenti del Visualizzatore nelle voci dei tipi con i visualizzatori registrati. Ad esempio, seguente tipo di voce per `std::vector` riferimenti di `UIVisualizer` nell'esempio precedente.
+Ogni tipo definito nel file *natvis* deve elencare in modo esplicito tutti i visualizzatori dell'interfaccia utente in grado di visualizzarli. Il debugger corrisponde ai riferimenti del visualizzatore nelle voci di tipo con i visualizzatori registrati. Ad esempio, la voce di tipo seguente per `std::vector` fa riferimento al `UIVisualizer` nell'esempio precedente.
 
 ```xml
 <Type Name="std::vector&lt;int,*&gt;">
@@ -675,11 +675,11 @@ Ogni tipo definito nel *natvis* file deve elencare esplicitamente qualsiasi visu
 </Type>
 ```
 
- È possibile vedere un esempio di un `UIVisualizer` nella [espressioni di controllo immagine](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017) estensione utilizzata per visualizzare le bitmap in memoria.
+ È possibile vedere un esempio di `UIVisualizer` nell'estensione [Image Watch](https://marketplace.visualstudio.com/items?itemName=VisualCPPTeam.ImageWatch2017) utilizzata per visualizzare le bitmap in memoria.
 
 ### <a name="BKMK_CustomVisualizer"></a>Elemento CustomVisualizer
- `CustomVisualizer` è un punto di estendibilità che specifica un'estensione VSIX che è scrivere per controllare visualizzazioni in Visual Studio code. Per altre informazioni sulla scrittura di estensioni VSIX, vedere la [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+ `CustomVisualizer` è un punto di estendibilità che specifica un'estensione VSIX che è possibile scrivere per controllare le visualizzazioni in Visual Studio Code. Per ulteriori informazioni sulla scrittura di estensioni VSIX, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-È molto maggiore impegno per scrivere un visualizzatore personalizzato rispetto a una definizione Natvis XML, ma è possibile attribuire vincoli su ciò che Natvis o non supporta. I visualizzatori personalizzati hanno accesso al set completo di estendibilità del debugger API, che possono eseguire query e modificare il processo oggetto del debug o comunicare con altre parti di Visual Studio.
+È molto più lavoro scrivere un visualizzatore personalizzato rispetto a una definizione natvis XML, ma non sono disponibili vincoli sui vincoli che natvis o non supporta. I visualizzatori personalizzati hanno accesso al set completo di API di estendibilità del debugger, che possono eseguire query e modificare il processo del debug o comunicare con altre parti di Visual Studio.
 
- È possibile usare la `Condition`, `IncludeView`, e `ExcludeView` gli attributi `CustomVisualizer` elementi.
+ È possibile utilizzare gli attributi `Condition`, `IncludeView` e `ExcludeView` negli elementi `CustomVisualizer`.

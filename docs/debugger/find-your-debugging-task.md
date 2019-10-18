@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018773"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349702"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Trovare l'attività di debug in Visual Studio
 
@@ -65,6 +65,12 @@ Per sospendere ed eseguire il debug del codice durante l'analisi del flusso di e
 
 A tale scopo, è possibile [impostare un punto di interruzione dalla finestra Disassembly](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
+## <a name="execute-code"></a>Esegui codice
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Informazioni sui comandi per eseguire un'istruzione alla volta nel codice durante il debug
+
+Per altre informazioni, vedere [spostarsi nel codice con il debugger](navigating-through-code-with-the-debugger.md).
+
 ## <a name="inspect-data"></a>Esaminare i dati
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Controllare il valore delle variabili durante l'esecuzione dell'app
@@ -79,19 +85,7 @@ Impostare un'espressione di controllo sulla variabile. Per altre informazioni, v
 
 Aprire il [Visualizzatore di stringhe](view-strings-visualizer.md) predefinito durante il debug.
 
-## <a name="additional-tasks"></a>Attività aggiuntive
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Informazioni sui comandi per eseguire un'istruzione alla volta nel codice durante il debug
-
-Per altre informazioni, vedere [spostarsi nel codice con il debugger](navigating-through-code-with-the-debugger.md).
-
-### <a name="edit-code-during-a-debugging-session"></a>Modificare il codice durante una sessione di debug
-
-Usare [modifica e continuazione](edit-and-continue.md). Per XAML, usare il [ricaricamento a caldo di XAML](xaml-hot-reload.md).
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Invia messaggi alla finestra di output senza modificare il codice
-
-Impostare un punto di analisi. Per altre informazioni, vedere [uso di punti](using-tracepoints.md).
+## <a name="configure-debugging"></a>Configurare il debug
 
 ### <a name="customize-information-shown-in-the-debugger"></a>Personalizzare le informazioni visualizzate nel debugger
 
@@ -102,6 +96,16 @@ Per Native C++, usare il [Framework NatVis](create-custom-views-of-native-object
 ### <a name="configure-debugger-settings"></a>Configurare le impostazioni del debugger
 
 Per configurare le opzioni del debugger e le impostazioni del progetto del debugger, vedere [Impostazioni e preparazione del debugger](debugger-settings-and-preparation.md).
+
+## <a name="additional-tasks"></a>Attività aggiuntive
+
+### <a name="edit-code-during-a-debugging-session"></a>Modificare il codice durante una sessione di debug
+
+Usare [modifica e continuazione](edit-and-continue.md). Per XAML, usare il [ricaricamento a caldo di XAML](xaml-hot-reload.md).
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Invia messaggi alla finestra di output senza modificare il codice
+
+Impostare un punto di analisi. Per altre informazioni, vedere [uso di punti](using-tracepoints.md).
 
 ### <a name="debug-on-remote-machines"></a>Eseguire il debug su computer remoti
 
