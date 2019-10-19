@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug di JavaScript con la console | Microsoft Docs
+title: Eseguire il debug di JavaScript usando la console | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 521092c26ba585381aa094f6b1b348365300bc10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589061"
 ---
-# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Eseguire il debug di JavaScript con la console in Visual Studio
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Eseguire il debug di JavaScript usando la console in Visual Studio
 
-È possibile usare la finestra JavaScript Console per interagire con ed eseguire il debug di App UWP compilate utilizzando JavaScript. Queste funzionalità sono supportate per le app UWP e le app create con Visual Studio Tools per Apache Cordova. Per informazioni di riferimento sui comandi della console, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md).
+È possibile usare la finestra console JavaScript per interagire con le app UWP compilate con JavaScript ed eseguirne il debug. Queste funzionalità sono supportate per le app e le app UWP create con Strumenti di Visual Studio per Apache Cordova. Per informazioni di riferimento sui comandi della console, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
 La finestra Console JavaScript ti permette di:
 
@@ -39,28 +39,28 @@ La finestra Console JavaScript ti permette di:
 
 - Visualizzare errori ed eccezioni JavaScript, oltre alle eccezioni relative a Document Object Model (DOM) e Windows Runtime.
 
-- Eseguire altre attività, come cancellare lo schermo. Per un elenco completo di comandi, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md) .
+- Eseguire altre attività, come cancellare lo schermo. Per un elenco completo di comandi, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) .
 
 > [!TIP]
 > Se la finestra Console JavaScript è chiusa, scegliere **Debug**> **Finestre** > **Console JavaScript** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.
 
-Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e impostando punti di interruzione, debug JavaScript vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [eseguire il Debug di App in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedere [aggiornare un'app (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità di debug JavaScript, ad esempio l'uso del DOM Explorer e l'impostazione dei punti di interruzione, vedere [Guida introduttiva: eseguire il debug di app HTML e CSS](../debugger/quickstart-debug-html-and-css.md) ed [eseguire il debug in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InteractiveConsole"></a> Debug mediante la finestra Console JavaScript
 La procedura seguente consente di creare un'app `FlipView` e mostra come eseguire il debug interattivo di un errore di codifica JavaScript.
 
 > [!NOTE]
-> In questo caso l'app di esempio è un'app UWP. Tuttavia, le funzioni della console descritte in questo articolo si applicano anche alle app create con Visual Studio Tools per Apache Cordova.
+> L'app di esempio è un'app UWP. Tuttavia, le funzioni della console descritte in questo articolo si applicano anche alle app create con Visual Studio Tools per Apache Cordova.
 
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Per eseguire il debug di codice JavaScript nell'app FlipView
 
 1. Creare una nuova soluzione in Visual Studio scegliendo **File** > **Nuovo progetto**.
 
-2. Scegli **JavaScript** > **Windows Universal**, quindi scegliere **App WinJS**.
+2. Scegliere **JavaScript**  > **universale di Windows**e quindi scegliere **app WinJS**.
 
 3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.
 
-4. Nell'elemento BODY di index. HTML, sostituire il codice HTML esistente con il seguente codice:
+4. Nell'elemento BODY di index. html sostituire il codice HTML esistente con il codice seguente:
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -136,19 +136,19 @@ La procedura seguente consente di creare un'app `FlipView` e mostra come eseguir
     })();
     ```
 
-7. Se una destinazione di debug non è già selezionata, scegliere **computer locale** dall'elenco a discesa elenco accanto al **dispositivo** pulsante il **Debug** sulla barra degli strumenti:
+7. Se una destinazione di debug non è già selezionata, scegliere **computer locale** dall'elenco a discesa accanto al pulsante **dispositivo** sulla barra degli strumenti **debug** :
 
-    ![Elenco di destinazioni di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Selezionare l'elenco destinazione di debug](../debugger/media/js_select_target.png "JS_Select_Target")
 
 8. Premi F5 per avviare il debugger.
 
     L'app viene eseguita, ma mancano le immagini. Gli errori APPHOST della finestra Console JavaScript indicano che mancano le immagini.
 
-9. Con il `FlipView` app in esecuzione, tipo `Data.items` nella finestra di input richiesta della console (accanto al ">>" simbolo) e premere INVIO.
+9. Con l'app `FlipView` in esecuzione, digitare `Data.items` nella richiesta di input della finestra della console (accanto al simbolo "> >") e premere INVIO.
 
     Nella finestra della console apparirà un visualizzatore per l'oggetto `items` . Questo indica che è stata creata un'istanza dell'oggetto `items` , che è disponibile nel contesto dello script corrente. Nella finestra della console è possibile fare clic sui nodi di un oggetto per visualizzare i valori delle proprietà (o usare i tasti di direzione). Come si può vedere nella figura, se si fa clic sull'oggetto `items._data` , i riferimenti relativi all'origine delle immagini non sono corretti, come previsto. Le immagini predefinite (logo.png) sono ancora presenti nell'oggetto e vi sono immagini mancanti frammiste alle immagini previste.
 
-    ![Finestra della JavaScript Console](../debugger/media/js_console_window.png "JS_Console_Window")
+    ![Finestra console JavaScript](../debugger/media/js_console_window.png "JS_Console_Window")
 
     Noterai anche che nell'oggetto `items._data` sono presenti molti più elementi del previsto.
 
@@ -184,7 +184,7 @@ La procedura seguente consente di creare un'app `FlipView` e mostra come eseguir
 
 15. Digitare `Data.items.length = 3` al prompt, quindi premere INVIO. Verranno così rimossi gli elementi estranei dai dati.
 
-16. Verifica di nuovo l'app e si noterà che le immagini corrette sono nella corretta `FlipView` pagine.
+16. Controllare di nuovo l'app. si noterà che le immagini corrette si trovano nelle pagine `FlipView` corrette.
 
 17. In DOM Explorer, è possibile visualizzare l'elemento DIV aggiornato e spostarsi nel sottoalbero per individuare gli elementi IMG previsti.
 
@@ -201,13 +201,13 @@ Quando un programma è in modalità di interruzione, è possibile usare la fines
 
 1. Nel file default.html dell'app `FlipView` precedentemente creato, aprire il menu di scelta rapida per la funzione `updateImages()` e quindi scegliere **Punto di interruzione** > **Inserisci punto di interruzione**.
 
-2. Scegliere **computer locale** nell'elenco a discesa elenco accanto al **Avvia debug** pulsante il **Debug** sulla barra degli strumenti.
+2. Scegliere **computer locale** nell'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **debug** .
 
 3. Scegliere **Debug** > **Avvia debug**o premere F5.
 
     Quando l'esecuzione raggiunge la funzione `updateImages()` , l'app passa alla modalità di interruzione e la riga corrente dell'esecuzione del programma viene evidenziata in giallo.
 
-    ![Usa la modalità di interruzione con la JavaScript Console](../debugger/media/js_breakmode.png "JS_BreakMode")
+    ![Uso della modalità di pausa con la console JavaScript](../debugger/media/js_breakmode.png "JS_BreakMode")
 
     Puoi modificare i valori delle variabili in modo che abbiano immediatamente effetto sullo stato del programma senza terminare la sessione di debug corrente.
 
@@ -217,7 +217,7 @@ Quando un programma è in modalità di interruzione, è possibile usare la fines
 
     La figura seguente mostra la finestra della console in questa fase.
 
-    ![Finestra della Console JavaScript con un visualizzatore](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
+    ![Finestra console JavaScript che mostra un visualizzatore](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
 
 6. Copia una riga della funzione dalla finestra di output alla richiesta di input e modifica il valore di indice in 3:
 
@@ -245,16 +245,16 @@ La finestra Console JavaScript consente di interagire con un singolo contesto di
 
 La figura seguente mostra l'elenco Destinazione nella finestra Console JavaScript.
 
-![Selezione nella finestra della console JavaScript di destinazione](../debugger/media/js_console_target.png "JS_Console_Target")
+![Selezione della destinazione nella finestra della console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
 Puoi anche cambiare il contesto di esecuzione usando il comando `cd` , ma devi ricordare il nome dell'altro contesto di esecuzione e il riferimento che usi deve essere incluso nell'ambito. L'elenco **Destinazione** offre un accesso migliore ad altri contesti di esecuzione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di app in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
-- [Comandi della console JavaScript](../debugger/javascript-console-commands.md)
+- [Comandi della console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Debug di un controllo WebView](../debugger/debug-a-webview-control.md)
 - [Supporto tecnico e accessibilità](https://visualstudio.microsoft.com/vs/support/)

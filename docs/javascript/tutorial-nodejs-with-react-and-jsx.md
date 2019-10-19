@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533370"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589157"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -55,7 +55,7 @@ JSX è un'estensione della sintassi JavaScript in genere usata con React per des
 
 webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Può anche trasformare o creare pacchetti di altri asset e risorse. Viene spesso usato per specificare un compilatore, ad esempio Babel o TypeScript, per convertire tramite transpile il codice JSX o TypeScript in codice JavaScript semplice.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -412,7 +412,9 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
 
     ![Associa a processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Se DOM Explorer e la console JavaScript Console si aprono in Visual Studio, il debugger è stato associato correttamente. Questi strumenti di debug sono simili ai Chrome Developer Tools e agli Strumenti F12 per Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Operazione non valida nello stato corrente." Usare Gestione attività per chiudere tutte le istanze di Chrome prima di avviare Chrome in modalità di debug. Se sono in esecuzione estensione di Chrome, la modalità di debug complete potrebbe essere impedita.

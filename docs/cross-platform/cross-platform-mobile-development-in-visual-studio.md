@@ -1,7 +1,7 @@
 ---
 title: Sviluppo di app per dispositivi mobili multipiattaforma in Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 05/24/2018
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: eea38f8109069f6d6526b2ccb920565f09b98043
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 5e82828296234b13e36b7d3eabf071071ebb708d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535666"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589022"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -42,9 +42,9 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 ### <a name="AndroidHTML"></a> Creare un'unica base di codice per Android, iOS e Windows
 
- È possibile compilare app native per Windows, iOS e Android tramite C# o F# (Visual Basic non è attualmente supportato).  Per iniziare, installare Visual Studio 2017 e selezionare l'opzione **Sviluppo di applicazioni per dispositivi mobili con .NET** nel programma di installazione.
+ È possibile compilare app native per Android, iOS e Windows usando C# o F# (Visual Basic non è attualmente supportata).  Per iniziare, installare Visual Studio e selezionare l'opzione **sviluppo di applicazioni per dispositivi mobili con .NET** nel programma di installazione.
 
- Se Visual Studio 2017 è già installato, eseguire di nuovo il **programma di installazione di Visual Studio** e selezionare la stessa opzione **Sviluppo di applicazioni per dispositivi mobili con .NET** per Xamarin (come sopra).
+ Se Visual Studio è già installato, eseguire di nuovo il **programma di installazione di Visual Studio** e selezionare l'opzione per **lo sviluppo di app per dispositivi mobili con .NET** per Novell (come sopra).
 
  Una volta terminata l'installazione, i modelli di progetti verranno visualizzati nella finestra di dialogo **Nuovo progetto**. Il modo più semplice per trovare i modelli Xamarin è eseguire una ricerca con la parola "Xamarin".
 
@@ -116,12 +116,13 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 <a name="CPP"></a>
 
-## <a name="build-an-app-for-android-and-windows-c"></a>Compilare un'app per Android e Windows (C++)
- ![Usare C&#43; &#43; per compilare per Android, iOS e Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+## <a name="build-an-app-for-android-ios-and-windows-c"></a>Compilare un'app per Android, iOS e Windows (C++)
 
- Installare prima Visual Studio 2017 e il carico di lavoro **Sviluppo di applicazioni per dispositivi mobili con C++** . Quindi, è possibile compilare un'applicazione NativeActivity per Android o un'app per Windows. I modelli C++ per iOS non sono ancora disponibili. Se si vuole, è possibile includere Android e Windows nella stessa soluzione e quindi condividere il codice tra le piattaforme usando una libreria condivisa statica o dinamica multipiattaforma.
+![Usare C&#43; &#43; per compilare per Android, iOS e Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
- Se si vuole compilare un'app per Android che richiede manipolazioni grafiche avanzate, ad esempio un videogioco, è possibile usare C++ a tale scopo. Iniziare con il progetto **Applicazione NativeActivity (Android)** . Questo progetto contiene il supporto completo per la toolchain Clang.
+ Installare innanzitutto Visual Studio e lo **sviluppo di applicazioni per C++ dispositivi mobili con carico di** lavoro. Quindi, è possibile creare un'applicazione di attività nativa per Android o un'app destinata a Windows o iOS. È possibile fare riferimento a Android, iOS e Windows nella stessa soluzione, se lo si desidera, quindi condividere il codice tra di essi usando una libreria condivisa statica o dinamica multipiattaforma.
+
+ Se si vuole compilare un'app per Android che richiede manipolazioni grafiche avanzate, ad esempio un videogioco, è possibile usare C++ a tale scopo. Iniziare con il progetto di **applicazione di attività nativa (Android)** . Questo progetto contiene il supporto completo per la toolchain Clang.
 
  ![Modello di progetto di attività Native](../cross-platform/media/cross-plat_cpp_native.png "Modello di progetto di attività nativa")
 
@@ -129,23 +130,22 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  È anche possibile creare un'app destinata all'intera gamma di dispositivi Windows 10 usando C++ e un modello di progetto per un'app della piattaforma UWP (Universal Windows Platform). Per altre informazioni, vedere la sezione precedente [Sviluppare per dispositivi Windows 10](#WindowsHTML) in questo argomento.
 
- È possibile condividere il codice C++ tra Android e Windows creando una libreria condivisa statica o dinamica.
+ È possibile condividere C++ il codice tra Android, iOS e Windows creando una libreria condivisa statica o dinamica.
 
  ![Librerie condivise statiche e dinamiche](../cross-platform/media/cross_plat_cpp_libraries.png "Librerie statiche e dinamiche condivise")
 
- È possibile usare tale libreria in un progetto Windows o Android, come quelli descritti in precedenza in questa sezione. È anche possibile usarla in un'app compilata con Xamarin, Java o qualsiasi linguaggio che consenta di richiamare le funzioni in una DLL non gestita.
+ È possibile utilizzare tale libreria in un progetto Windows, iOS o Android, come quelli descritti in precedenza in questa sezione. È anche possibile usarla in un'app compilata con Xamarin, Java o qualsiasi linguaggio che consenta di richiamare le funzioni in una DLL non gestita.
 
  Quando si scrive il codice in queste librerie, è possibile usare IntelliSense per esplorare le API native delle piattaforme Android e Windows. Questi progetti di libreria sono completamente integrati con il debugger di Visual Studio in modo da poter impostare punti di interruzione, eseguire il codice seguendo un'istruzione alla volta nonché individuare e risolvere i problemi mediante tutte le funzionalità avanzate del debugger.
 
 |**Altre informazioni**|
 |--------------------|
-|[Scaricare Visual Studio.](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Installare gli strumenti Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma.](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)|
-|[Altre informazioni sull'uso di C++ per interagire con più piattaforme.](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Installare gli strumenti necessari, quindi creare un'applicazione NativeActivity per Android](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
+|[Scarica Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Installare lo sviluppo di app per dispositivi mobili multipiattaforma conC++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Altre informazioni sull'uso C++ di per la destinazione di più piattaforme](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[Installare gli elementi necessari, quindi creare un'applicazione di attività nativa per Android](create-an-android-native-activity-app.md)|
 |[Informazioni sulla condivisione del codice C++ con le app Android e Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Esempi di Sviluppo di app per dispositivi mobili multipiattaforma per C++](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
-|[Altri esempi di Sviluppo di app per dispositivi mobili multipiattaforma per C++](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
+|[Esempi di sviluppo di app per dispositivi mobili multipiattaforma perC++](cross-platform-mobile-development-examples.md)|
 
 <a name="Unity"></a>
 

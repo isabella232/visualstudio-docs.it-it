@@ -12,12 +12,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 020577cfe692d5d306a555e763d08807ab191074
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 33ac236c9f9dd91bc0eef34e7ff9f3aa658cb4be
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450940"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589128"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Risoluzione dei problemi relativi al ricaricamento rapido XAML
 
@@ -46,6 +46,9 @@ Se queste opzioni sono selezionate, passare a albero elementi visivi attivi (**D
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Verificare di usare Avvia debug anziché Connetti a processo
 
 Il ricaricamento a caldo di XAML richiede che la variabile di ambiente `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` sia impostata su 1 al momento dell'avvio dell'applicazione. Visual Studio imposta questa impostazione automaticamente come parte del comando **debug** > **Avvia debug** (o **F5**). Se invece si vuole usare il ricaricamento a caldo di XAML con il comando **Debug** > **Connetti a processo** , impostare la variabile di ambiente manualmente.
+
+> [!NOTE]
+> Per impostare una variabile di ambiente, usare il pulsante Start per cercare "variabile di ambiente" e scegliere **modifica le variabili di ambiente di sistema**. Nella finestra di dialogo visualizzata scegliere variabili di **ambiente**, quindi aggiungerla come variabile utente e impostare il valore su `1`. Per eseguire la pulizia, rimuovere la variabile al termine del debug.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Verificare che le proprietà di MSBuild siano corrette
 

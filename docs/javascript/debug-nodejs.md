@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263041"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589142"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
 È possibile eseguire il debug di codice JavaScript e TypeScript con Visual Studio. È possibile impostare e raggiungere punti di interruzione, collegare il debugger, esaminare variabili, visualizzare lo stack di chiamate e usare altre funzionalità di debug.
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
+> Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente. A seconda del tipo di sviluppo di app che si sta eseguendo, può essere necessario installare il **carico di lavoro Sviluppo Node.js** con Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Eseguire il debug di script lato server
 
@@ -90,7 +90,9 @@ Per il collegamento del debugger da Visual Studio e l'accesso a punti di interru
 
     ![Associa a processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Se DOM Explorer e la console JavaScript Console si aprono in Visual Studio, il debugger è stato associato correttamente. Questi strumenti di debug sono simili ai Chrome Developer Tools e agli Strumenti F12 per Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Operazione non valida nello stato corrente", usare Gestione attività per chiudere tutte le istanze di Chrome prima di avviare Chrome in modalità di debug. Se sono in esecuzione estensione di Chrome, la modalità di debug complete potrebbe essere impedita.
@@ -145,11 +147,11 @@ Se si aggiunge al progetto un file *tsconfig.json*, Visual Studio considera la d
 
 #### <a name="compiler-options-for-tsconfigjson"></a>Opzioni del compilatore per tsconfig.json
 
-* **inlineSourceMap**: crea un file unico con mapping di origine invece di creare un mapping di origine separato per ogni file di origine.
-* **inlineSources**: include l'origine e i mapping di origine in un unico file; richiede l'impostazione di *inlineSourceMap* o di *sourceMap*.
-* **mapRoot**: specifica il percorso in cui il debugger trova il file del mapping di origine (con estensione *map*) in alternativa al percorso predefinito. Usare questo flag se i file di runtime con estensione *map* devono trovarsi in una posizione diversa rispetto ai file con estensione *js*. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file con estensione *map*.
-* **sourceMap**: genera un file con estensione *map* corrispondente.
-* **sourceRoot**: specifica il percorso in cui il debugger trova i file TypeScript in alternativa ai percorsi predefiniti. Usare questo flag se le origini di runtime devono trovarsi in un percorso diverso rispetto a quello usato per la fase di progettazione. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file di origine.
+* **inlineSourceMap**: creare un singolo file con mapping di origine anziché creare una mappa di origine separata per ogni file di origine.
+* **inlineSources**: creare l'origine insieme alle mappe di origine all'interno di un singolo file. richiede l'impostazione di *inlineSourceMap* o *sourceMap* .
+* **MAPROOT**: specifica il percorso in cui il debugger deve trovare i file della mappa di origine (con*estensione map*) anziché il percorso predefinito. Usare questo flag se i file di runtime con estensione *map* devono trovarsi in una posizione diversa rispetto ai file con estensione *js*. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file con estensione *map*.
+* **sourceMap**: genera un file con *estensione map* corrispondente.
+* **sourceRoot**: specifica il percorso in cui il debugger deve trovare i file typescript anziché i percorsi di origine. Usare questo flag se le origini di runtime devono trovarsi in un percorso diverso rispetto a quello usato per la fase di progettazione. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file di origine.
 
 Per altri dettagli sulle opzioni del compilatore, vedere la pagina [Opzioni del compilatore](https://www.typescriptlang.org/docs/handbook/compiler-options.html) nel manuale di TypeScript.
 
@@ -159,9 +161,9 @@ Per altri dettagli sulle opzioni del compilatore, vedere la pagina [Opzioni del 
 
 Sono disponibili le impostazioni del progetto seguenti.
 
-* **Genera mapping di origine** (equivalente a **sourceMap** in *tsconfig.json*): genera il file con estensione *map* corrispondente.
-* **Specifica la directory radice dei mapping di origine** (equivalente a **mapRoot** in *tsconfig.json*): specifica il percorso in cui il debugger trova i file di mapping in alternativa ai percorsi predefiniti. Usare questo flag se i file di runtime con estensione *map* devono trovarsi in un percorso diverso rispetto ai file con estensione js. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file di mapping.
-* **Specifica la directory radice dei file TypeScript** (equivalente a **sourceRoot** in *tsconfig.json*): specifica il percorso in cui il debugger trova i file TypeScript in alternativa ai percorsi predefiniti. Usare questo flag se i file di origine di runtime devono trovarsi in un percorso diverso rispetto a quello usato per la fase di progettazione. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file di origine.
+* **Genera mapping di origine** (equivalente **a sourceMap** in *tsconfig. JSON*): genera il file *. map* corrispondente.
+* **Specificare la directory radice dei mapping di origine** (equivalente a **MAPROOT** in *tsconfig. JSON*): specifica il percorso in cui il debugger deve trovare i file della mappa invece dei percorsi generati. Usare questo flag se i file di runtime con estensione *map* devono trovarsi in un percorso diverso rispetto ai file con estensione js. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file di mapping.
+* **Specificare la directory radice dei file typescript** (equivalente a **sourceRoot** in *tsconfig. JSON*): specifica il percorso in cui il debugger deve trovare i file typescript invece dei percorsi di origine. Usare questo flag se i file di origine di runtime devono trovarsi in un percorso diverso rispetto a quello usato per la fase di progettazione. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file di origine.
 
 ## <a name="debug-javascript-in-dynamic-files-using-razor-aspnet"></a>Debug di JavaScript in file dinamici tramite Razor (ASP.NET)
 
@@ -169,8 +171,8 @@ Visual Studio supporta il debug solo per Internet Explorer e Chrome. I punti di 
 
 Il debug dei file generati dinamicamente non è automatico. Non è possibile raggiungere automaticamente i punti di interruzione nei file generati con la sintassi Razor (con estensioni cshtml, vbhtml). È possibile usare due approcci per il debug di questo tipo di file:
 
-* **Posizionare l'istruzione `debugger;` dove si vuole inserire l'interruzione**: in questo modo lo script dinamico arresta l'esecuzione e avvia immediatamente il debug durante la creazione.
-* **Caricare la pagina e aprire il documento dinamico in Visual Studio**: per il funzionamento di questo metodo è necessario aprire il file dinamico durante il debug, impostare il punto di interruzione e aggiornare la pagina. Per trovare il file usare uno dei seguenti metodi, a seconda che si usi Chrome o Internet Explorer:
+* **Inserire l'istruzione `debugger;` in cui si desidera interrompere**l'esecuzione. in questo modo lo script dinamico interrompe l'esecuzione e avvia il debug immediatamente durante la creazione.
+* **Caricare la pagina e aprire il documento dinamico in Visual Studio**: è necessario aprire il file dinamico durante il debug, impostare il punto di interruzione e aggiornare la pagina per il funzionamento di questo metodo. Per trovare il file usare uno dei seguenti metodi, a seconda che si usi Chrome o Internet Explorer:
 
    Per Chrome, andare a **Esplora soluzioni > Documenti script > NomePagina**.
 
