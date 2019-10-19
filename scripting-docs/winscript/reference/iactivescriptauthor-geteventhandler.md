@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler | Microsoft Docs
+title: 'IActiveScriptAuthor:: GetEventHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bba60df6485ddaac0363a3416739efd7be69389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c69b32f0040ea6d52e0712b8e1813cc5a0b40c58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935633"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576221"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Restituisce lo scriptlet che ha gli attributi specificati.  
+Restituisce l'oggetto scriptlet con gli attributi specificati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,19 +41,19 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Parametri  
  `pdisp`  
- [in] Il `IDispatch` oggetto che corrisponde alla `NamedItem` al quale è associato lo scriptlet.  
+ in Oggetto `IDispatch` che corrisponde al `NamedItem` a cui è associato il scriptlet.  
   
  `pszItem`  
- [in] L'indirizzo del buffer dell'identificatore del nome completo di scriptlet nell'host di primo livello.  
+ in Indirizzo del buffer dell'identificatore di primo livello del nome completo scriptlet nell'host.  
   
  `pszSubItem`  
- [in] L'indirizzo del buffer dell'identificatore del nome completo di scriptlet nell'host del secondo livello. Impostare su NULL se il nome ha un solo livello.  
+ in Indirizzo del buffer dell'identificatore di secondo livello del nome completo scriptlet nell'host. Impostare su NULL se il nome dispone di un solo livello.  
   
  `pszEvent`  
- [in] L'indirizzo di un buffer che contiene il nome dell'evento. Lo scriptlet è un gestore eventi per questo evento.  
+ in Indirizzo di un buffer che contiene il nome dell'evento. Scriptlet è un gestore eventi per questo evento.  
   
  `ppse`  
- [out] L'indirizzo di una variabile che riceve un puntatore al `IScriptEntry` interfaccia dello scriptlet che ha gli attributi specificati.  
+ out Indirizzo di una variabile che riceve un puntatore all'interfaccia `IScriptEntry` di scriptlet con gli attributi specificati.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -65,5 +65,5 @@ HRESULT GetEventHandler(
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
  [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::GetDefaultApplication | Microsoft Docs
+title: 'IProcessDebugManager:: GetDefaultApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fec84a60863b426f2f65c26e2375262b109d635
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3532177c32e0d7eb0b7a67a445845cee753d316
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953972"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576802"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
-Restituisce un oggetto di applicazione predefinito per il processo corrente.  
+Restituisce un oggetto applicazione predefinito per il processo corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetDefaultApplication(
   
 #### <a name="parameters"></a>Parametri  
  `ppda`  
- [out] L'oggetto di applicazione di debug per questa applicazione.  
+ out Oggetto applicazione di debug per l'applicazione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,9 +47,9 @@ HRESULT GetDefaultApplication(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo crea un nuovo oggetto di applicazione di debug e lo aggiunge all'esecuzione elenco di applicazioni, se necessario.  
+ Questo metodo crea un nuovo oggetto applicazione di debug e lo aggiunge all'elenco di applicazioni in esecuzione, se necessario.  
   
- Motori di linguaggio devono usare l'applicazione specificata dal `GetDefaultApplication` metodo se sono in esecuzione in un host che non fornisce un'applicazione.  
+ I motori di linguaggio devono usare l'applicazione specificata dal metodo `GetDefaultApplication` se sono in esecuzione in un host che non fornisce un'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

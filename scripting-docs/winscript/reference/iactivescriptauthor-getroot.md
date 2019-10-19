@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetRoot | Microsoft Docs
+title: 'IActiveScriptAuthor:: GetRoot | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cdb3246ccae2eabb34696162f67e82a60374550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca2aab154d56cd98c3c2acede61f86f725ce9c1b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955107"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576180"
 ---
 # <a name="iactivescriptauthorgetroot"></a>IActiveScriptAuthor::GetRoot
-Restituisce il `IScriptNode` radice dell'albero di script dell'autore.  
+Restituisce la radice `IScriptNode` della struttura ad albero di script dell'autore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetRoot(
   
 #### <a name="parameters"></a>Parametri  
  `ppsp`  
- [out] L'indirizzo di una variabile che riceve un puntatore al `IScriptNode` interfaccia del nodo radice.  
+ out Indirizzo di una variabile che riceve un puntatore all'interfaccia `IScriptNode` del nodo radice.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -49,5 +49,5 @@ HRESULT GetRoot(
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
  [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)

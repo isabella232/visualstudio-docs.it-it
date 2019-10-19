@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetThread | Microsoft Docs
+title: 'IDebugStackFrame:: GetThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6926347c67895b3860964a559898691dd3e61e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51cb000ef20877f4f3f6536cc9a01ae44c2810c8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935060"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576731"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
-Restituisce il thread associato a questo frame dello stack.  
+Restituisce il thread associato a questo stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Parametri  
  `ppat`  
- [out] Il thread associato a questo frame dello stack.  
+ out Thread associato a questo stack frame.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT GetThread(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il thread associato a questo frame dello stack.  
+ Questo metodo restituisce il thread associato a questo stack frame.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar | Microsoft Docs
+title: 'IActiveScriptAuthor:: IsCommitChar | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a0b630f872e49b7fbbabf4f354755f900fb4b5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f442bdc22f569cac6d706d739b2cfb37e07398b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955069"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576346"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-Restituisce un valore che indica se un carattere specificato deve attivare un commit di completamento istruzione dall'applicazione.  
+Restituisce un valore che indica se un determinato carattere deve attivare un commit di completamento di istruzioni da parte dell'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT IsCommitChar(
   
 #### <a name="parameters"></a>Parametri  
  `ch`  
- [in] Carattere da testare.  
+ in Carattere da testare.  
   
  `pfcommit`  
- [out] `True` se il carattere è un commit carattere; in caso contrario, `False`.  
+ [out] `True` se il carattere è un carattere di commit; in caso contrario, `False`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

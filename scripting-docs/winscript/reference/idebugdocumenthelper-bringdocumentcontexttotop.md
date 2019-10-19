@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentContextToTop | Microsoft Docs
+title: 'IDebugDocumentHelper:: BringDocumentContextToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41452331d03fdca53c8c7048a24adfd349c128ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b55844c260f693ab5d89ecd564ed6b6ecd32d6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783095"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577015"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
-Offre un contesto di questo documento verso l'alto nell'interfaccia utente del debugger.  
+Porta un contesto di questo documento nella parte superiore dell'interfaccia utente del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parametri  
  `pddc`  
- Contesto di documento per portare in primo piano nell'interfaccia utente del debugger.  
+ Contesto del documento da portare nella parte superiore dell'interfaccia utente del debugger.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT BringDocumentContextToTop(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo offre un contesto di questo documento verso l'alto nell'interfaccia utente del debugger.  
+ Questo metodo consente di portare un contesto di questo documento nella parte superiore dell'interfaccia utente del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

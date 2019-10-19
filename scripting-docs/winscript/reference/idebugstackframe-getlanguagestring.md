@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString | Microsoft Docs
+title: 'IDebugStackFrame:: GetLanguageString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab0c0ab317754305ca2440748dd680e31750d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83abb038cd8bc018d84cd0c5ddd2a413f8a02248
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934657"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576764"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Restituisce una descrizione breve o lungo testuale della lingua.  
+Restituisce una descrizione testuale breve o lungo della lingua.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>Parametri  
  `fLong`  
- [in] Flag, dove `TRUE` restituisce una descrizione lunga e `FALSE` restituisce una breve descrizione.  
+ in Flag, dove `TRUE` restituisce una descrizione estesa e `FALSE` restituisce una breve descrizione.  
   
  `pbstrLanguage`  
- [out] La descrizione del linguaggio.  
+ out Descrizione della lingua.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,7 +51,7 @@ HRESULT GetLanguageString(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- In genere, se `fLong` è `FALSE`, questo metodo fornisce solo il nome del linguaggio associato al frame dello stack. Quando `fLong` è `TRUE`, questo metodo può fornire una descrizione completa del prodotto.  
+ In genere, se `fLong` è `FALSE`, questo metodo fornisce solo il nome della lingua associata al stack frame. Quando `fLong` viene `TRUE`, questo metodo può fornire una descrizione completa del prodotto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

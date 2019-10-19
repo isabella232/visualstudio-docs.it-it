@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460eb832b94a1826d2d8f990b76a2afe90f992c8
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314092"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576284"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: Creare un problema di addizione casuale
 
@@ -73,7 +73,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
      Quando si inserisce un punto dopo un oggetto, IntelliSense mostra un elenco dei membri dell'oggetto, ad esempio proprietà, metodi ed eventi.
 
     > [!NOTE]
-    > Quando si utilizza il metodo `Next()` con l'oggetto `Random`, ad esempio quando si chiama `randomizer.Next(50)`, si ottiene un numero casuale minore di 50 (compreso tra 0 e 49). In questo esempio, è stato chiamato `randomizer.Next(51)`. Viene utilizzato 51 e non 50 di modo che la somma dei due numeri casuali corrisponda a una risposta compresa tra 0 e 100. Se si passa 50 al metodo `Next()`, viene scelto un numero compreso tra 0 e 49, pertanto la risposta più alta possibile è 98, non 100. Dopo l'esecuzione delle prime due istruzioni nel metodo, ciascuna delle due variabili Integer, **addend1** e **addend2**, contiene un numero casuale compreso tra 0 e 50. In questa schermata è riportato il codice Visual C#, ma IntelliSense funziona in modo analogo per Visual Basic.
+    > Quando si utilizza il metodo `Next()` con l'oggetto `Random`, ad esempio quando si chiama `randomizer.Next(50)`, si ottiene un numero casuale minore di 50 (compreso tra 0 e 49). In questo esempio, è stato chiamato `randomizer.Next(51)`. Viene utilizzato 51 e non 50 di modo che la somma dei due numeri casuali corrisponda a una risposta compresa tra 0 e 100. Se si passa 50 al metodo `Next()`, viene scelto un numero compreso tra 0 e 49, pertanto la risposta più alta possibile è 98, non 100. Dopo l'esecuzione delle prime due istruzioni nel metodo, ciascuna delle due variabili Integer, **addend1** e **addend2**, contiene un numero casuale compreso tra 0 e 50. Questa schermata mostra C# il codice, ma IntelliSense funziona allo stesso modo per Visual Basic.
 
      Esaminare attentamente queste istruzioni.
 

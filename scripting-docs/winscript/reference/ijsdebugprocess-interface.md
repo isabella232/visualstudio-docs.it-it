@@ -1,5 +1,5 @@
 ---
-title: Interfaccia IJsDebugProcess | Microsoft Docs
+title: Interfaccia metodo ijsdebugprocess | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 411679a03daf27046fdcede7ff48e76212bbd2fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9200515b2c975fb1fa5b2acda7c261cb684d85b4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557946"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577339"
 ---
 # <a name="ijsdebugprocess-interface"></a>Interfaccia IJsDebugProcess
-Fornisce le routine per controllare e analizzare il processo di destinazione.  
+Fornisce le routine per controllare e controllare il processo di destinazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -27,18 +27,18 @@ Fornisce le routine per controllare e analizzare il processo di destinazione.
 IJsDebugProcess : public IUnknown;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 ### <a name="public-methods"></a>Metodi pubblici  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |----------|-----------------|  
 |[IJsDebugProcess::CreateBreakPoint Method](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|Imposta il punto di interruzione nella posizione del documento specificata.|  
-|[Metodo IJsDebugProcess::CreateStackWalker](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Metodo factory per chiamate nello stack.|  
-|[Metodo IJsDebugProcess::PerformAsyncBreak](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Inserisce il motore di script in modalità di interruzione facendo in modo che in modo da interrompere successiva istruzione di script.|  
+|[Metodo IJsDebugProcess::CreateStackWalker](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|Metodo Factory per stack Walker.|  
+|[Metodo IJsDebugProcess::PerformAsyncBreak](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|Inserisce il modulo di gestione di script in modalità di interruzioni, causando interruzioni nella successiva istruzione di script.|  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)
