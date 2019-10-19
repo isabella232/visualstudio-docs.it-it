@@ -14,15 +14,15 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007139"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576578"
 ---
 # <a name="invalid-character-javascript"></a>Carattere non valido (JavaScript)
-Composto da un identificatore con un carattere o caratteri, non è riconosciuto come valido per il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilatore. I caratteri validi usano le regole seguenti:  
+È stato creato un identificatore usando un carattere (o caratteri) non riconosciuto come valido dal compilatore [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. I caratteri validi utilizzano le regole seguenti:  
   
 - Il primo carattere deve essere una lettera ASCII (maiuscola o minuscola) o un carattere di sottolineatura (_).  
   
@@ -32,9 +32,9 @@ Composto da un identificatore con un carattere o caratteri, non è riconosciuto 
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Evitare l'utilizzo di caratteri che non sono in parte il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definizione del linguaggio.  
+- Evitare l'utilizzo di caratteri che non fanno parte della definizione del linguaggio [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
- [Variabili](../../javascript/variables-javascript.md)   
- [Caratteri speciali](../../javascript/advanced/special-characters-javascript.md)   
+ [Variabili](../../javascript/variables-javascript.md)    
+ [Caratteri speciali](../../javascript/advanced/special-characters-javascript.md)    
  [Tipi di dati](../../javascript/data-types-javascript.md)

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02827ebd5617485f180f4a16652b1cc841c41f4
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 342a27571c9ad7b6ed1586fc762b2952ba86c3db
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314227"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575153"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Passaggio 7: Aggiungere problemi di moltiplicazione e divisione
 
@@ -48,7 +48,7 @@ Nella settima parte di questa esercitazione si aggiungeranno i problemi di molti
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     Non è possibile immettere con facilità il segno di moltiplicazione (×) e di divisione (÷) tramite la tastiera. Visual C# e Visual Basic, quindi, accettano l'asterisco (*) per la moltiplicazione e la barra (/) per la divisione.
+     Non è possibile immettere facilmente il segno di moltiplicazione (×) e il segno di divisione (÷) usando la C# tastiera, quindi e Visual Basic accettano un asterisco (*) per la moltiplicazione e una barra (/) per la divisione.
 
 4. Modificare l'ultima parte del gestore dell'evento <xref:System.Windows.Forms.Timer.Tick> del timer in modo che inserisca la risposta corretta allo scadere del tempo.
 

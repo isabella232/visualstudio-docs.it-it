@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1757678f20a01221ae46e1535d3190cd463d724
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830462"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571706"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Enumerazione JsDebugReadMemoryFlags
 Flag per specificare il comportamento durante la lettura della memoria.  
@@ -31,17 +31,17 @@ Flag per specificare il comportamento durante la lettura della memoria.
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 ### <a name="values"></a>Valori  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Indica che il chiamante desidera che l'operazione di lettura abbia esito positivo se solo parte della memoria di lettura ha esito positivo. Se è impostato, verrà generato un errore E_JsDEBUG_INVALID_MEMORY_ADDRESS solo se "Indirizzo" non è valido. Se questo flag è cancellato, verrà generato un errore E_JsDEBUG_INVALID_MEMORY_ADDRESS se qualsiasi parte della memoria richiesta è illeggibile.|  
+|`JsDebugAllowPartialRead`|Indica che il chiamante desidera che l'operazione di lettura abbia esito positivo se solo una parte della memoria letta è riuscita. Se questa impostazione è impostata, verrà generato un errore E_JsDEBUG_INVALID_MEMORY_ADDRESS solo se ' Address ' non è valido. Se questo flag è chiaro, viene generato un errore E_JsDEBUG_INVALID_MEMORY_ADDRESS se una parte della memoria richiesta è illeggibile.|  
 |`None`|Indica che il chiamante desidera il comportamento predefinito per ReadMemory.|  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

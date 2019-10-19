@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Microsoft Docs
+title: 'IActiveScriptStats:: getstat | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 096f1cf5b9bf8b5533bd5c36d33f014c747ff9aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992007"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574342"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
-Restituisce una delle statistiche script standard.  
+Restituisce una delle statistiche standard dello script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,28 +39,28 @@ HRESULT GetStat(
   
 #### <a name="parameters"></a>Parametri  
  `stid`  
- [in] Specifica quale statistica da restituire. Il valore deve essere:  
+ in Specifica quale statistica restituire. Deve essere il valore:  
   
 |Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|Restituisce il numero di istruzioni eseguite perché lo script avviato o le statistiche sono state reimpostate.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Restituisce il numero di istruzioni eseguite dopo l'avvio dello script o la reimpostazione delle statistiche.|  
   
  `pluHi`  
- [out] 32 bit alti di un intero senza segno a 64 bit che rappresenta la statistica.  
+ out 32 bit alti di un Unsigned Integer a 64 bit che rappresentano la statistica.  
   
  `pluLo`  
- [out] 32 bit bassi di un intero senza segno a 64 bit che rappresenta la statistica.  
+ out Bit 32 bassi di un Unsigned Integer a 64 bit che rappresentano la statistica.  
   
 ## <a name="return-value"></a>Valore restituito  
- Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati ai valori nella tabella seguente.  
+ Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati ai valori indicati nella tabella seguente.  
   
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce una delle statistiche script standard.  
+ Questo metodo restituisce una delle statistiche standard dello script.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
+ @No__t_1 [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)  
  [Interfaccia IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)

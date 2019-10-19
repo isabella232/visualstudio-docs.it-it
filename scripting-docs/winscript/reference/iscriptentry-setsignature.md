@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetSignature | Microsoft Docs
+title: 'IScriptEntry:: sesignature | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42740a0e6261317443b8c9cc23559a2f92f66540
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e381e642462fe56e661de9da0d8974dc7bf18b18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787189"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575346"
 ---
 # <a name="iscriptentrysetsignature"></a>IScriptEntry::SetSignature
-Set di informazioni sul tipo per un `IScriptEntry` oggetto funzione.  
+Imposta le informazioni sul tipo per un oggetto funzione `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT SetSignature(
   
 #### <a name="parameters"></a>Parametri  
  `pti`  
- [in] Le informazioni sul tipo.  
+ in Informazioni sul tipo.  
   
  `iMethod`  
- [in] L'indice di metodo nel `ITypeInfo` oggetto.  
+ in Indice del metodo nell'oggetto `ITypeInfo`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,7 +51,7 @@ HRESULT SetSignature(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Impostare le informazioni sul tipo utilizzando `IScriptEntry::SetSignature` oppure [IScriptNode::CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Informazioni sul tipo può essere generati anche tramite il movimento in base alla relativa rappresentazione in funzione interna.  
+ Per impostare le informazioni sul tipo, utilizzare `IScriptEntry::SetSignature` o [IScriptNode:: CreateChildHandler](../../winscript/reference/iscriptnode-createchildhandler.md). Le informazioni sul tipo possono anche essere generate dalla voce basata sulla rappresentazione della funzione interna.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

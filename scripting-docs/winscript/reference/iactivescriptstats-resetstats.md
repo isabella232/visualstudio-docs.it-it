@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::ResetStats | Microsoft Docs
+title: 'IActiveScriptStats:: ResetStats | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbd18719cde85b12e9ec5de3b19dbf8e81bd8575
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2767bb1e2cce3a11661ebaca37e66d33f95beb2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992000"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577973"
 ---
 # <a name="iactivescriptstatsresetstats"></a>IActiveScriptStats::ResetStats
 Reimposta le statistiche per questo script.  

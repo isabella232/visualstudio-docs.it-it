@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::PrepareProfilerStop | Microsoft Docs
+title: IActiveScriptProfilerControl2::P repareProfilerStop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11a32f36ec6eddcc06faa77e093f19e8df503fa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24d4d73e0263882ad028ea66d3fac5e24f3af9ba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968763"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571439"
 ---
 # <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
-Notifica al profiler che si desidera interrompere la profilatura su tutti i motori di scripting applicabili. Con questo metodo, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si arresta la profilatura.  
+Notifica al profiler che si intende arrestare la profilatura su tutti i motori di scripting applicabili. Utilizzando questo metodo, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si arresta la profilatura.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -30,21 +30,21 @@ HRESULT PrepareProfilerStop();
 ```  
   
 #### <a name="parameters"></a>Parametri  
- Il metodo non accetta alcun parametro.  
+ Il metodo non accetta parametri.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un HRESULT. I valori possibili sono i seguenti:  
+ Restituisce un valore HRESULT. I valori possibili sono i seguenti:  
   
 |Valore restituito|Significato|  
 |------------------|-------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_FAIL`|Profilatura non è stato possibile avviare.|  
-|`S_FALSE`|Profilatura è stata arrestata quando uno script non è stato in esecuzione.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilatura non è abilitata.|  
+|`E_FAIL`|Non è stato possibile avviare la profilatura.|  
+|`S_FALSE`|La profilatura è stata interrotta quando uno script non è in esecuzione.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|La profilatura non è abilitata.|  
   
 ## <a name="remarks"></a>Note  
- La chiamata a `IActiveScriptProfilerControl2::PrepareProfilerStop` assicura che vengano inviati gli eventi per le funzioni nello stack di chiamate. Questo metodo deve essere chiamato prima di arrestare la profilatura su qualsiasi motore di scripting che si trova nella scheda corrente. Il metodo può essere chiamato per qualsiasi motore di scripting.  
+ La chiamata di `IActiveScriptProfilerControl2::PrepareProfilerStop` garantisce che vengano inviati gli eventi per le funzioni nello stack di chiamate. Questo metodo deve essere chiamato prima di arrestare la profilatura in un motore di script che si trova nella scheda corrente. Il metodo può essere chiamato per qualsiasi motore di scripting.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
+ @No__t_1 [IActiveScriptProfilerControl2:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)  
  [Interfaccia IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

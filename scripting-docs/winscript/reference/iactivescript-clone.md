@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbaad29cb31af26a0f26a1c679a900192fc77041
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935705"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575790"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
-Clona il motore di script corrente (meno qualsiasi stato corrente dell'esecuzione), restituendo un motore di script caricato che non dispone di alcun sito nel thread corrente. Le proprietà di questo nuovo motore di scripting sono identiche alle proprietà del che motore di script originale sarebbe se si sono stati eseguito la transizione allo stato inizializzato.  
+Clona il motore di scripting corrente (meno qualsiasi stato di esecuzione corrente), restituendo un motore di script caricato senza sito nel thread corrente. Le proprietà di questo nuovo motore di scripting saranno identiche a quelle del motore di script originale in se è stato eseguito il passaggio allo stato inizializzato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parametri  
  `ppscript`  
- [out] Indirizzo di una variabile che riceve un puntatore per il [IActiveScript](../../winscript/reference/iactivescript.md) interfaccia del motore di scripting clonato. L'host deve creare un sito e si chiama il [IActiveScript:: Setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md) metodo sul nuovo motore di scripting affinché questa risulti in stato non inizializzato e, di conseguenza, utilizzabile.  
+ out Indirizzo di una variabile che riceve un puntatore all'interfaccia [IActiveScript](../../winscript/reference/iactivescript.md) del motore di scripting clonato. L'host deve creare un sito e chiamare il metodo [IActiveScript:: SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) sul nuovo motore di scripting prima che si trovi nello stato Initialized e quindi utilizzabile.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -47,14 +47,14 @@ HRESULT Clone(
 |`S_OK`|Operazione completata.|  
 |`E_NOTIMPL`|Questo metodo non è supportato.|  
 |`E_POINTER`|È stato specificato un puntatore non valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato).|  
+|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting non è ancora stato caricato o inizializzato).|  
   
 ## <a name="remarks"></a>Note  
- Il `IActiveScript::Clone` metodo è un'ottimizzazione dei `IPersist*::Save`, `CoCreateInstance`, e `IPersist*::Load`, in modo che lo stato del motore di script nuovo deve essere lo stesso come se lo stato del motore di script originale sono stato salvato e caricato in un nuovo motore di scripting. Gli elementi denominati vengono duplicati nel motore di scripting clonato, ma sono dimenticati di puntatori a oggetti specifici per ogni elemento e possono essere ottenuti con la [iactivescriptsite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) (metodo). In questo modo un modello a oggetti identici con punti di ingresso per ogni thread (un modello di apartment) da utilizzare.  
+ Il metodo `IActiveScript::Clone` è un'ottimizzazione di `IPersist*::Save`, `CoCreateInstance` e `IPersist*::Load`, quindi lo stato del nuovo motore di scripting deve essere identico a quello in cui lo stato del motore di script originale veniva salvato e caricato in un nuovo motore di script. Gli elementi denominati vengono duplicati nel motore di script clonato, ma i puntatori a oggetti specifici per ogni elemento vengono dimenticati e vengono ottenuti con il metodo [IActiveScriptSite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) . In questo modo, è possibile usare un modello a oggetti identico con punti di ingresso per thread (un modello di Apartment).  
   
- Questo metodo viene utilizzato per gli host server multithreading che è possono eseguire più istanze dello stesso script. Può restituire il motore di scripting `E_NOTIMPL`, nel qual caso l'host può ottenere lo stesso risultato per duplicare lo stato permanente e la creazione di una nuova istanza del motore di script con un `IPersist*` interfaccia.  
+ Questo metodo viene utilizzato per gli host server multithreading in cui è possibile eseguire più istanze dello stesso script. Il motore di scripting può restituire `E_NOTIMPL`, nel qual caso l'host può ottenere lo stesso risultato duplicando lo stato persistente e creando una nuova istanza del motore di script con un'interfaccia `IPersist*`.  
   
- Questo metodo può essere chiamato dal thread non di base senza causando un callout non in base agli oggetti di host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaccia.  
+ Questo metodo può essere chiamato da thread non di base senza comportare un callout non di base per ospitare oggetti o per l'interfaccia [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

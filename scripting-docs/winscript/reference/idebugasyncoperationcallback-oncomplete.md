@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
+title: 'IDebugAsyncOperationCallBack:: OnComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15ae57d64d2b1e7be867c20e9683e4aaa415974
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821872"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573236"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
-Segnala che il risultato è disponibile da un'operazione di debug asincrono.  
+Segnala che un risultato è disponibile da un'operazione di debug asincrona.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,8 +44,8 @@ HRESULT onComplete();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo segnala che il risultato è disponibile un `IDebugAsyncOperation` oggetto. L'evento viene generato nel thread del debugger.  
+ Questo metodo segnala che un risultato è disponibile da un oggetto `IDebugAsyncOperation`. L'evento viene generato nel thread del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+ [Interfaccia IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)    
  [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)

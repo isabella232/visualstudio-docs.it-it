@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955360"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572642"
 ---
-# <a name="breakpointstate-enumeration"></a>Enumerazione BREAKPOINT_STATE
+# <a name="breakpoint_state-enumeration"></a>Enumerazione BREAKPOINT_STATE
 Indica lo stato di un punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -37,13 +37,13 @@ typedef enum tagBREAKPOINT_STATE {
 } BREAKPOINT_STATE;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 |Member|Descrizione|  
 |------------|-----------------|  
-|BREAKPOINT_DELETED|Il punto di interruzione non esiste più, ma esistono ancora riferimenti a sé stesso.|  
-|BREAKPOINT_DISABLED|Il punto di interruzione è presente ma è disabilitato.|  
-|BREAKPOINT_ENABLED|Il punto di interruzione esista e sia abilitato.|  
+|BREAKPOINT_DELETED|Il punto di interruzione non esiste più, ma vi sono ancora riferimenti.|  
+|BREAKPOINT_DISABLED|Il punto di interruzione esiste ma è disabilitato.|  
+|BREAKPOINT_ENABLED|Il punto di interruzione esiste ed è abilitato.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e strutture del debugger di script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

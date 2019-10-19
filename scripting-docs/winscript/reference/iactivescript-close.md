@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Microsoft Docs
+title: 'IActiveScript:: Close | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f858de42ef2948d218aac6c3194cc6af544da5e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935679"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575787"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Fa sì che il motore di scripting abbandonare tutti gli script attualmente caricato, perdono il proprio stato e rilasciare eventuali puntatori a interfaccia che dispone ad altri oggetti, quindi immettere uno stato chiuso. Sink di evento, il testo script eseguito immediatamente e le chiamate alle macro che sono già in corso vengono completati prima i cambiamenti di stato (usare [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) per annullare un thread in esecuzione di script). Questo metodo deve essere chiamato dall'host di creazione prima del rilascio dell'interfaccia per evitare problemi relativi ai riferimenti circolari.  
+Fa in modo che il motore di script abbandoni tutti gli script attualmente caricati, perda il proprio stato e rilasci tutti i puntatori di interfaccia che contiene ad altri oggetti, entrando quindi in uno stato chiuso. I sink di evento, il testo dello script immediatamente eseguito e le chiamate di macro già in corso vengono completati prima che lo stato venga modificato (usare [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) per annullare un thread di script in esecuzione). Questo metodo deve essere chiamato dall'host di creazione prima che l'interfaccia venga rilasciata per evitare problemi di riferimento circolare.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,8 +39,8 @@ HRESULT Close(void);
 |Value|Significato|  
 |-----------|-------------|  
 |`S_OK`|Operazione completata.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di script era già in stato di chiusura).|  
-|`OLESCRIPT_S_PENDING`|Il metodo è stato accodato correttamente, ma lo stato non è stato modificato ancora. Quando i cambiamenti di stato, il sito viene richiamata nel [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) (metodo).|  
+|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting era già nello stato Closed).|  
+|`OLESCRIPT_S_PENDING`|Il metodo è stato accodato correttamente, ma lo stato non è ancora stato modificato. Quando lo stato viene modificato, il sito deve essere richiamato nel metodo [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
 |`S_FALSE`|Il metodo ha avuto esito positivo, ma lo script è già stato chiuso.|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException::CanHandleException | Microsoft Docs
+title: 'ICanHandleException:: CanHandleException | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 406787d5ee6811b80f9e6831e5a67cab8367e7d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c536d35dcb9f0faca8b033ecd39aec520a2e260a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991391"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575713"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
-Determina se il chiamante del motore di script può gestire un'eccezione specificata.  
+Determina se il chiamante del modulo di gestione di script è in grado di gestire un'eccezione specificata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT CanHandleException(
   
 #### <a name="parameters"></a>Parametri  
  `pExcepInfo`  
- [in] Puntatore a un `EXCEPINFO` struttura che contiene le informazioni che verranno segnalate se non viene trovato alcun gestore di eccezioni.  
+ in Puntatore a una struttura `EXCEPINFO` contenente le informazioni che verranno segnalate se non viene trovato alcun gestore di eccezioni.  
   
  `pvar`  
- [in] Un valore associato all'eccezione, ad esempio il valore generato da un `throw` istruzione. Questo parametro può essere `NULL`.  
+ in Valore associato all'eccezione, ad esempio il valore generato da un'istruzione `throw`. Questo parametro può essere `NULL`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -49,11 +49,11 @@ HRESULT CanHandleException(
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il chiamante può gestire l'eccezione|  
-|`E_FAIL`|Il chiamante non è possibile gestire l'eccezione.|  
+|`E_FAIL`|Il chiamante non è in grado di gestire l'eccezione.|  
   
 ## <a name="remarks"></a>Note  
- Se una chiamata a `IDispatchEx::InvokeEx`, o un metodo simile, genera un'eccezione, il motore di script controlla per dei chiamanti nella catena di chiamante dello script che supporta il `ICanHandleException` l'interfaccia e indica che è possibile gestire l'eccezione. Se nessun chiamante può gestire l'eccezione, il motore di script si interrompe.  
+ Se una chiamata a `IDispatchEx::InvokeEx` o a un metodo simile genera un'eccezione, il motore di script verifica la presenza di un chiamante nella catena di chiamante dello script che supporta l'interfaccia `ICanHandleException` e indica che è in grado di gestire l'eccezione. Se nessun chiamante è in grado di gestire l'eccezione, il motore di script si arresta.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)   
+ [Interfaccia ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)    
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

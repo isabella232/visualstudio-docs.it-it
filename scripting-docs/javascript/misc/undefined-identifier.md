@@ -14,26 +14,26 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b55b6d695cded9b7effac664dfca6ca9904e9d84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005914"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572550"
 ---
 # <a name="undefined-identifier"></a>Identificatore non definito
-Si è provato a usare un identificatore che il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] non riconosciuto dal compilatore. Quando si usa, viene restituito il valore non definito:  
+Si è provato a usare un identificatore non riconosciuto dal compilatore [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Il valore non definito viene restituito quando si usa:  
   
-- una variabile che non esiste,  
+- variabile inesistente.  
   
-- una variabile che è stata dichiarata, ma non ha mai eseguita un valore assegnato a esso,  
+- una variabile dichiarata, ma a cui non è mai stato assegnato un valore,  
   
-- proprietà dell'oggetto che non esiste.  
+- Proprietà dell'oggetto che non esiste.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Dichiarare la variabile con un **var** istruzione (come in `var` x;).  
+- Dichiarare la variabile con un'istruzione **var** (come in `var` x;).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Variabili](../../javascript/variables-javascript.md)   
+ [Variabili](../../javascript/variables-javascript.md)    
  [Ambito delle variabili](../../javascript/advanced/variable-scope-javascript.md)

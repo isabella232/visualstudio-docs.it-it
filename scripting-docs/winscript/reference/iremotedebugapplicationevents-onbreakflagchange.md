@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnBreakFlagChange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb19b6cfc423a1305276441305ef854c70f2d896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e9a29b6dcc5cd6864ce4edffe9e5f96b64ba9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943796"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561715"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
-Gestisce un evento quando cambiano i flag di interruzione.  
+Gestisce un evento quando i flag di interruzioni cambiano.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>Parametri  
  `abf`  
- [in] I flag di interruzione corrente per l'applicazione.  
+ in Flag di interruzioni correnti per l'applicazione.  
   
  `prdatSteppingThread`  
- [in] Il thread attualmente in esecuzione.  
+ in Thread attualmente in esecuzione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,8 +51,8 @@ HRESULT OnBreakFlagChange(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo gestisce l'evento quando cambia il flag di interruzione.  
+ Questo metodo gestisce l'evento quando cambia il flag di interruzioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IRemoteDebugApplicationEvents Interface](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
+ [Interfaccia IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)    
  [Enumerazione APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)

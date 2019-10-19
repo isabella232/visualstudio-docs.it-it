@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979110"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574308"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>Interfaccia IDebugPropertyEnumType_All
-Il `IDebugPropertyEnumType` interfacce sono definite in modo che ognuno di loro IID può essere passato come filtro per `IDebugProperty::EnumMembers` durante la richiesta l'enumeratore appropriato.  
+# <a name="idebugpropertyenumtype_all-interface"></a>Interfaccia IDebugPropertyEnumType_All
+Le interfacce `IDebugPropertyEnumType` sono definite in modo che ogni IID possa essere passato come filtro per `IDebugProperty::EnumMembers` durante la richiesta dell'enumeratore appropriato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,7 +39,7 @@ IDebugPropertyEnumType_All : IUnknown
 |------------|-----------------|  
 |[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Restituisce una stringa di testo che descrive il nome|  
   
- Le interfacce seguenti ereditano da `IDebugPropertyEnumType_All`, e non dispone di alcun metodi aggiuntivi.  
+ Le interfacce seguenti ereditano da `IDebugPropertyEnumType_All` e non hanno metodi aggiuntivi.  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   

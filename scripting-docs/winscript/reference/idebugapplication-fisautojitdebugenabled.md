@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft Docs
+title: 'IDebugApplication:: FIsAutoJitDebugEnabled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf97a4d3985dd3dd32e582c689fde0ecd6f52e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990870"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574996"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Determina se un debugger di just-in-time (JIT) è registrato in auto-debug dumb host.  
+Determina se un debugger JIT (just-in-Time) è registrato per gli host Dumb con debug automatico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,10 +37,10 @@ BOOL FIsAutoJitDebugEnabled();
  Questo metodo non accetta parametri.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se il metodo ha esito positivo e un debugger JIT è registrato in auto-debug dumb host, il metodo restituisce `TRUE`. In caso contrario, restituirà `FALSE`.  
+ Se il metodo ha esito positivo e viene registrato un debugger JIT per gli host Dumb con debug automatico, il metodo restituisce `TRUE`. In caso contrario restituirà `FALSE`.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo determina se un debugger JIT è registrato per auto-debug dumb host.  
+ Questo metodo determina se un debugger JIT è registrato per gli host Dumb con debug automatico.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

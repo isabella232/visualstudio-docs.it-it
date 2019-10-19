@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreateSimpleConnectionPoint | Microsoft Docs
+title: 'IDebugHelper:: CreateSimpleConnectionPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f909a63f0f7ba70fca3c5e30e32a2d64c0147e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06324b0d10eb6d0d69b6426276d5df7f382d2abe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979175"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562464"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
-Restituisce un'interfaccia di eventi che esegue il wrapping di un determinato `IDispatch` oggetto.  
+Restituisce un'interfaccia evento che esegue il wrapping di un oggetto `IDispatch` specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT CreateSimpleConnectionPoint(
   
 #### <a name="parameters"></a>Parametri  
  `pdisp`  
- [in] Il `IDispatch` oggetto per eseguire il wrapping.  
+ in Oggetto `IDispatch` di cui eseguire il wrapping.  
   
  `ppscp`  
- [out] L'interfaccia di eventi che esegue il wrapping `pdisp`.  
+ out Interfaccia evento che esegue il wrapping `pdisp`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,8 +51,8 @@ HRESULT CreateSimpleConnectionPoint(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Restituisce un'interfaccia di eventi che esegue il wrapping di determinata `IDispatch` (vedere [interfaccia ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
+ Restituisce un'interfaccia evento che esegue il wrapping del `IDispatch` specificato (vedere l' [interfaccia ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
+ [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)    
  [Interfaccia ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

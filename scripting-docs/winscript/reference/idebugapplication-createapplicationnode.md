@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateApplicationNode | Microsoft Docs
+title: 'IDebugApplication:: CreateApplicationNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02a15a67d8f8b6171e9f5893c7f8cd15f79776b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e94a561ca78781167843124a86febb3ef13da2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991025"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573166"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
-Crea un nuovo nodo dell'applicazione associata a un provider di documento specifico.  
+Crea un nuovo nodo applicazione associato a un provider di documenti specifico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT CreateApplicationNode(
   
 #### <a name="parameters"></a>Parametri  
  `ppdanNew`  
- [out] Il nodo dell'applicazione associato al provider di documento.  
+ out Nodo dell'applicazione associato al provider del documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT CreateApplicationNode(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Il nuovo nodo dell'applicazione non è visibile fino a quando non è collegato a un nodo padre.  
+ Il nuovo nodo applicazione non è visibile finché non viene collegato a un nodo padre.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

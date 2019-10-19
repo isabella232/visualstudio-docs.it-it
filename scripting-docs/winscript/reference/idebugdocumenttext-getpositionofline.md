@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfLine | Microsoft Docs
+title: 'IDebugDocumentText:: GetPositionOfLine | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cfcfc771c49abbf837f4db898936e478cda2194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adf4add99ac41440e6f4daa491b72166e97b5ba5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970848"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572110"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
-Restituisce la posizione di carattere corrispondente al primo carattere di una riga.  
+Restituisce la posizione del carattere corrispondente al primo carattere di una riga.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT GetPositionOfLine(
   
 #### <a name="parameters"></a>Parametri  
  `cLineNumber`  
- [in] Il numero di riga.  
+ in Numero di riga.  
   
  `pcCharacterPosition`  
- [out] Posizione del carattere all'interno del documento dell'inizio della riga `cLineNumber`.  
+ out Posizione del carattere all'interno del documento dell'inizio della riga `cLineNumber`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

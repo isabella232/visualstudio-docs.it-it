@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::RemoveNamedItem | Microsoft Docs
+title: 'IActiveScriptAuthor:: RemoveNamedItem | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 052704b9a1bef8c50c457e51438f0204813c2efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cade532d2ca276237981855cafe12804307d0bb6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955146"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572850"
 ---
 # <a name="iactivescriptauthorremovenameditem"></a>IActiveScriptAuthor::RemoveNamedItem
-Rimuove un `NamedItem` oggetto dallo spazio dei nomi dello script del motore di creazione.  
+Rimuove un oggetto `NamedItem` dallo spazio dei nomi del motore di creazione degli script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT RemoveNamedItem(
   
 #### <a name="parameters"></a>Parametri  
  `pszName`  
- [in] L'indirizzo del buffer che identifica il `NamedItem` oggetto da rimuovere.  
+ in Indirizzo del buffer che identifica l'oggetto `NamedItem` da rimuovere.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -45,11 +45,11 @@ HRESULT RemoveNamedItem(
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`S_FALSE`|Il `NamedItem` oggetto non è presente nello spazio dei nomi dello script del motore di creazione.|  
+|`S_FALSE`|L'oggetto `NamedItem` non è presente nello spazio dei nomi del motore di creazione degli script.|  
   
 ## <a name="remarks"></a>Note  
- [IActiveScript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) consente di inserire il `NamedItem` oggetto nello script dello spazio dei nomi del motore di creazione.  
+ [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) viene usato per inserire l'oggetto `NamedItem` nello spazio dei nomi del motore di creazione dello script.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

@@ -13,21 +13,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4d3fe5ff90fc0d116814771308fa599052dba9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954993"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576907"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Oggetto che implementa questa interfaccia viene passato per il [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) metodo ogni volta che il motore di scripting rileva un errore non gestito. L'host chiama metodi su questo oggetto per ottenere informazioni sull'errore che si è verificato.  
+Un oggetto che implementa questa interfaccia viene passato al metodo [IActiveScriptSite:: OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) ogni volta che il motore di script rileva un errore non gestito. L'host chiama quindi i metodi su questo oggetto per ottenere informazioni sull'errore che si è verificato.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Recupera le informazioni sull'errore.|  
+|[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Recupera informazioni su un errore.|  
 |[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Recupera la posizione nel codice sorgente in cui si è verificato un errore.|  
 |[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Recupera la riga nel file di origine in cui si è verificato un errore.|  
   

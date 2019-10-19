@@ -14,19 +14,19 @@ ms.assetid: abebe518-07d7-42cd-af50-00bfda17da08
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fff0639659f7470b5f4baa69e4038b3544036c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 128eda12f555b4811b814801066bbb3effc4e374
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007466"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576567"
 ---
 # <a name="illegal-assignment-javascript"></a>Assegnazione non valida (JavaScript)
-Si è provato ad assegnare un valore in un identificatore di sola lettura. È possibile assegnare un valore in un identificatore di sola lettura. Ad esempio, host definiti gli oggetti e gli oggetti COM esterna.  
+Si è provato a assegnare un valore a un identificatore di sola lettura. Non è possibile assegnare un valore a un identificatore di sola lettura. Ad esempio, gli oggetti definiti dall'host e gli oggetti COM esterni.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Non assegnare valori a identificatori di sola lettura.  
+- Non assegnare valori agli identificatori di sola lettura.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Operatore di assegnazione (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

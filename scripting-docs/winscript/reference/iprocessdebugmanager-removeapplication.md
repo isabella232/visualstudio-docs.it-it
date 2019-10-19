@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::RemoveApplication | Microsoft Docs
+title: 'IProcessDebugManager:: RemoveApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c357fa5587d4fc5bf8c1752e20e7e0aa9df9835
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d079d9089dbc47ac272388c680fa585a3532eea8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944786"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576543"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
-Rimuove l'esecuzione di un'applicazione elenco di applicazioni.  
+Rimuove un'applicazione dall'elenco di applicazioni in esecuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parametri  
  `dwAppCookie`  
- [in] Il cookie fornito da `IProcessDebugManager::AddApplication` quando l'applicazione è stato aggiunto all'elenco di applicazioni.  
+ in Il cookie fornito da `IProcessDebugManager::AddApplication` quando l'applicazione è stata aggiunta all'elenco di applicazioni.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,8 +47,8 @@ HRESULT RemoveApplication(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo rimuove l'esecuzione di un'applicazione elenco di applicazioni.  
+ Questo metodo rimuove un'applicazione dall'elenco di applicazioni in esecuzione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
+ @No__t_1 [IProcessDebugManager:: AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)  
  [Interfaccia IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

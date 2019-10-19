@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetSyncDebugOperation | Microsoft Docs
+title: 'IDebugAsyncOperation:: GetSyncDebugOperation | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1226187aceba84b2086723f2d2c76c5c76f73d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d732b732681216c0e9eecec7f448bf263376d8c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821837"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573279"
 ---
 # <a name="idebugasyncoperationgetsyncdebugoperation"></a>IDebugAsyncOperation::GetSyncDebugOperation
-Restituisce l'operazione di debug sincrono associato all'oggetto.  
+Restituisce l'operazione di debug sincrona associata a questo oggetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetSyncDebugOperation(
   
 #### <a name="parameters"></a>Parametri  
  `ppsdo`  
- [out] L'operazione di debug sincrono associato all'oggetto.  
+ out Operazione di debug sincrona associata a questo oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT GetSyncDebugOperation(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce l'operazione di debug sincrono associato all'oggetto.  
+ Questo metodo restituisce l'operazione di debug sincrona associata a questo oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)

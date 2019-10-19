@@ -1,5 +1,5 @@
 ---
-title: Visualizza il tipo personalizzato usando DebuggerTypeProxy | Microsoft Docs
+title: Visualizzare il tipo personalizzato usando DebuggerTypeProxy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 091619353adacaeb9c6996653ac64a0bcd84bb5c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568961"
 ---
-# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicare al debugger il tipo per cui viene illustrato l'utilizzo dell'attributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicare al debugger quale tipo visualizzare usando l'attributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> specifica un proxy, o stand-in, per un tipo e modifica il modo in cui il tipo viene visualizzato nelle finestre del debugger. Quando viene visualizzata una variabile che dispone di proxy, questo sostituisce il tipo originale nella **visualizzazione**. Nella finestra delle variabili del debugger vengono visualizzati soltanto i membri pubblici del tipo proxy. I membri privati non vengono visualizzati.
 
@@ -35,7 +35,7 @@ Questo attributo può essere applicato a:
 - Assembly
 
 > [!NOTE]
-> Per il codice nativo, questo attributo è supportato solo in C++codice /CLI.
+> Per il codice nativo, questo attributo è supportato solo C++nel codice/CLI.
 
 Una classe proxy del tipo deve disporre di un costruttore che accetta un argomento del tipo sostituito dal proxy. Il debugger crea una nuova istanza della classe proxy del tipo ogni volta che è necessario visualizzare una variabile del tipo di destinazione. Ciò può incidere sulle prestazioni. Di conseguenza, è opportuno eseguire solo gli interventi strettamente necessari nel costruttore.
 
@@ -43,11 +43,11 @@ Per ridurre gli effetti negativi sulle prestazioni, l'analizzatore di espression
 
 È opportuno che il proxy del tipo sia una classe annidata privata all'interno della classe di destinazione dell'attributo. In questo modo l'attributo può accedere facilmente ai membri interni.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> può essere ereditato, pertanto se viene specificato un proxy del tipo in una classe di base verrà applicata a tutte le classi derivate, a meno che tali classi derivate specificano i propri proxy del tipo.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> possibile ereditare, pertanto se un proxy di tipo viene specificato in una classe di base, verrà applicato a tutte le classi derivate, a meno che tali classi derivate non specifichino il proprio proxy di tipo.
 
 Se <xref:System.Diagnostics.DebuggerTypeProxyAttribute> viene utilizzato a livello di assembly, il parametro `Target` specifica il tipo che verrà sostituito dal proxy.
 
-Per un esempio di come usare questo attributo con <xref:System.Diagnostics.DebuggerDisplayAttribute> e <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, vedere[usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
+Per un esempio di come usare questo attributo insieme a <xref:System.Diagnostics.DebuggerDisplayAttribute> e <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, vedere[uso dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
 
 ## <a name="using-generics-with-debuggertypeproxy"></a>Utilizzo di generics con DebuggerTypeProxy
 
@@ -59,7 +59,7 @@ La sintassi per un tipo aperto è simile alla seguente:
 
 Se si utilizza un tipo generico come destinazione in `DebuggerTypeProxy`, è necessario adottare questa sintassi. Il meccanismo di `DebuggerTypeProxy` deduce automaticamente i parametri di tipo.
 
-Per altre informazioni sui tipi aperti e chiusi in c#, vedere la [specifiche del linguaggio c#](/dotnet/csharp/language-reference/language-specification), sezione 20.5.2 relativa nella e tipi chiusi.
+Per ulteriori informazioni sui tipi aperti e chiusi in C# , vedere la sezione relativa alla [ C# specifica del linguaggio](/dotnet/csharp/language-reference/language-specification), 20.5.2 i tipi Open e Closed.
 
 In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è possibile eseguire la stessa operazione in questo linguaggio, ma è necessario utilizzare una rappresentazione del nome del tipo aperto in formato stringa.
 
@@ -68,5 +68,5 @@ In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è 
 ## <a name="see-also"></a>Vedere anche
 
 - [Uso dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Creare viste personalizzate di oggetti .managed](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)
 - [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

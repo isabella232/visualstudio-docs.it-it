@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::InsertText | Microsoft Docs
+title: 'IDebugDocumentTextAuthor:: InsertText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 678e2429e98f268d65f9c29704e2e9d5a1a8538c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad927f417c44b471a3fcee96695a1109d33ed17e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970900"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572069"
 ---
 # <a name="idebugdocumenttextauthorinserttext"></a>IDebugDocumentTextAuthor::InsertText
-Inserisce il nuovo testo nel documento.  
+Inserisce nuovo testo nel documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ HRESULT InsertText(
   
 #### <a name="parameters"></a>Parametri  
  `cCharacterPosition`  
- [in] Posizione in cui inserire il testo.  
+ in Posizione in cui inserire il testo.  
   
  `cNumToInsert`  
- [in] Numero di caratteri da inserire.  
+ in Numero di caratteri da inserire.  
   
  `pcharText[]`  
- [in] Un buffer contenente i caratteri da inserire.  
+ in Buffer contenente i caratteri da inserire.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -55,8 +55,8 @@ HRESULT InsertText(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo consente di inserire nuovo testo nel documento.  
+ Questo metodo inserisce nuovo testo nel documento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+ [Interfaccia IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)    
  [IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)

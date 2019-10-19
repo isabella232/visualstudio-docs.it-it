@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f58e969f96d05828a4b3a5e640ede364abca10
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
-ms.translationtype: MT
+ms.openlocfilehash: 1364ce26b4a6f54f99267ce3e1288160f75ca148
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289631"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562528"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
@@ -41,9 +41,9 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
      [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
 
       > [!IMPORTANT]
-      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio ![Programming per docs. Microsoft. com @ no__t-1
+      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo della lingua ![Programming per Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
 
-     Il gestore dell'evento Tick effettua tre operazioni: in primo luogo verifica che il timer non sia in esecuzione chiamando il metodo <xref:System.Windows.Forms.Timer.Stop>. In seconda istanza, utilizza le due variabili di riferimento, `firstClicked` e `secondClicked`, per rendere nuovamente invisibili le due etichette scelte dal giocatore. Infine, reimposta le variabili di riferimento `firstClicked` e `secondClicked` su `null` in Visual C# e su `Nothing` in Visual Basic. Questo passaggio è importante, poiché è così che il programma si reimposta. Ora non sta tenendo traccia di alcun controllo <xref:System.Windows.Forms.Label> ed è nuovamente pronto per la scelta di un'etichetta da parte del giocatore.
+     Il gestore eventi Tick effettua tre operazioni: in primo luogo verifica che il timer non sia in esecuzione chiamando il metodo <xref:System.Windows.Forms.Timer.Stop>. In seconda istanza, utilizza le due variabili di riferimento, `firstClicked` e `secondClicked`, per rendere nuovamente invisibili le due etichette scelte dal giocatore. Infine, Reimposta le variabili di riferimento `firstClicked` e `secondClicked` per `null` in C# e `Nothing` in Visual Basic. Questo passaggio è importante, poiché è così che il programma si reimposta. Ora non sta tenendo traccia di alcun controllo <xref:System.Windows.Forms.Label> ed è nuovamente pronto per la scelta di un'etichetta da parte del giocatore.
 
     > [!NOTE]
     > Un oggetto Timer ha un metodo `Start()` che avvia il timer e un metodo `Stop()` che lo arresta. Impostando la proprietà **Enabled** del timer su **True** nella finestra **Proprietà**, il timer inizia a contare tick non appena il programma viene avviato. Se però si lascia questa proprietà impostata su **False**, il timer inizia a contare tick solo quando viene chiamato il metodo `Start()`. Di norma, un timer genera l'evento Tick ripetutamente tramite la proprietà **Interval** per stabilire quanti millisecondi attendere tra un ciclo e l'altro. Quando il metodo `Stop()` del timer viene chiamato nell'evento Tick, il timer passa in modalità *evento unico*: quando viene chiamato il metodo `Start()`, il timer attende l'intervallo specificato, genera un unico evento Tick e quindi si arresta.
@@ -63,6 +63,6 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md).
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere riferimenti alle etichette](../ide/step-5-add-label-references.md).

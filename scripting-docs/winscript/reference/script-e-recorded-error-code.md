@@ -1,5 +1,5 @@
 ---
-title: Errore Script_e_recorded | Microsoft Docs
+title: Codice errore SCRIPT_E_RECORDED | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e652f845fd039549ee8e32e9d87e668b3ca759c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb882d8230672f61789c504b5157ade196b63e43
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840304"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574435"
 ---
-# <a name="scripterecorded-error-code"></a>Codice di errore SCRIPT_E_RECORDED
-Un errore è stato passato tra il motore di script e l'host. L'host deve passare il codice di errore al chiamante.  
+# <a name="script_e_recorded-error-code"></a>Codice di errore SCRIPT_E_RECORDED
+È stato passato un errore tra il modulo di gestione di script e l'host. L'host deve passare il codice di errore al chiamante.  
   
 ## <a name="syntax"></a>Sintassi  
   

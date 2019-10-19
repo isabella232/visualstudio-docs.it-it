@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName | Microsoft Docs
+title: 'IDebugDocumentHost:: GetPathName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09e36411cdd378e78ac3bc59df5330eb8ecb47b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33ebcde4cf1db28e199f13fae720374bd1b64763
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008748"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569288"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
-Restituisce il nome di file e percorso completo del file di origine del documento.  
+Restituisce il percorso completo e il nome file del file di origine del documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrLongName`  
- [out] Stringa contenente il nome lungo.  
+ out Stringa che contiene il nome lungo.  
   
  `pfIsOriginalFile`  
- [out] Un flag che è true se `pbstrLongName` fa riferimento il file originale per il documento, false in caso contrario.  
+ out Flag che è true se `pbstrLongName` fa riferimento al file originale per il documento; in caso contrario, false.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -49,10 +49,10 @@ HRESULT GetPathName(
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_FAIL`|Nessun file di origine può essere creato o può essere determinato.|  
+|`E_FAIL`|Non è possibile creare o determinare alcun file di origine.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il nome di file e percorso completo del file di origine del documento.  
+ Questo metodo restituisce il percorso completo e il nome file del file di origine del documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

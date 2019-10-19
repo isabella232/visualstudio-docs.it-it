@@ -1,5 +1,5 @@
 ---
-title: istruzione ' return' esterna (funzione) | Microsoft Docs
+title: istruzione ' Return ' esterna alla funzione | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,34 +14,34 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a90af6de8e2c238e3660111b19d13c1eaf628c9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006406"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573695"
 ---
 # <a name="return-statement-outside-of-function"></a>Istruzione 'return' esterna alla funzione
-È stato usato un `return` istruzione nell'ambito globale del codice. Il `return` istruzione deve essere visualizzato solo all'interno del corpo di una funzione.  
+È stata usata un'istruzione `return` nell'ambito globale del codice. L'istruzione `return` deve essere presente solo all'interno del corpo di una funzione.  
   
- Richiamo di una funzione con il `()` operatore è un'espressione. Tutte le espressioni hanno valori. il `return` istruzione viene utilizzata per specificare il valore restituito da una funzione. Il formato generale è:  
+ La chiamata di una funzione con l'operatore `()` è un'espressione. Tutte le espressioni hanno valori; l'istruzione `return` viene utilizzata per specificare il valore restituito da una funzione. Il modulo generale è:  
   
 ```js
   
 return [ expression ];  
 ```  
   
- Quando la `return` istruzione viene eseguita, *espressione* viene valutata e restituita come valore della funzione. Se nessuna espressione **indefinito** viene restituito.  
+ Quando viene eseguita l'istruzione `return`, l' *espressione* viene valutata e restituita come valore della funzione. Se non è presente alcuna espressione, viene restituito **undefined** .  
   
- Esecuzione della funzione si interrompe quando il `return` istruzione viene eseguita, anche se sono presenti altre istruzioni rimanenti ancora nel corpo della funzione. L'eccezione a questa regola è se il **restituire** istruzione si trova all'interno di un **provare** blocco, ed è presente un corrispondente **infine** blocco, il codice nel  **infine** blocco verrà eseguite prima che la funzione restituisce.  
+ L'esecuzione della funzione si interrompe quando viene eseguita l'istruzione `return`, anche se sono ancora presenti altre istruzioni nel corpo della funzione. L'eccezione a questa regola è rappresentata dal caso in cui l'istruzione **return** si verifica all'interno di un blocco **try** ed è presente un blocco **finally** corrispondente, il codice nel blocco **finally** verrà eseguito prima che la funzione restituisca.  
   
- Se una funzione restituisce perché raggiunge la fine del corpo della funzione senza l'esecuzione di un `return` istruzione, il valore restituito è il **indefinito** valore (in questo caso il risultato di funzione non può essere utilizzato come parte di un'espressione più ampia ).  
+ Se una funzione restituisce perché raggiunge la fine del corpo della funzione senza eseguire un'istruzione `return`, il valore restituito è il valore non **definito** (ciò significa che il risultato della funzione non può essere usato come parte di un'espressione più grande).  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Rimuovere il `return` istruzione dal corpo principale del codice (ambito globale).  
+- Rimuovere l'istruzione `return` dal corpo principale del codice (ambito globale).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Istruzione return](../../javascript/reference/return-statement-javascript.md)   
- [Oggetto funzione](../../javascript/reference/function-object-javascript.md)   
+ @No__t_1 [oggetto funzione](../../javascript/reference/function-object-javascript.md)  
  [Proprietà caller (Function)](../../javascript/reference/caller-property-function-javascript.md)

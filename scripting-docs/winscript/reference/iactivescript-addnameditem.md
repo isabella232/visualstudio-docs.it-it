@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddNamedItem | Microsoft Docs
+title: 'IActiveScript:: AddNamedItem | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db0a97c01d948a0c26850ebd1c3f47c6e3900614
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a343e38b944ca36da221da39832046c19b332230
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935797"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575818"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
-Aggiunge il nome di un elemento di livello radice per lo spazio dei nomi del motore di script. Un elemento di livello radice è un oggetto con proprietà e metodi, un'origine evento o tutti e tre.  
+Aggiunge il nome di un elemento di livello radice allo spazio dei nomi del motore di script. Un elemento a livello di radice è un oggetto con proprietà e metodi, un'origine evento o tutti e tre.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,19 +38,19 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>Parametri  
  `pstrName`  
- [in] Indirizzo di un buffer che contiene il nome dell'elemento visualizzato dallo script. Il nome deve essere univoca e persistente.  
+ in Indirizzo di un buffer che contiene il nome dell'elemento visualizzato dallo script. Il nome deve essere univoco e permanente.  
   
  `dwFlags`  
- [in] Flag associato a un elemento. Può essere una combinazione dei valori seguenti:  
+ in Flag associati a un elemento. Può essere una combinazione di questi valori:  
   
 |Value|Significato|  
 |-----------|-------------|  
-|SCRIPTITEM_CODEONLY|Indica che l'elemento denominato rappresenta un oggetto di solo codice, e che l'host non ha `IUnknown` da associare a questo oggetto di solo codice. L'host ha solo un nome per questo oggetto. Nei linguaggi orientate a oggetti, ad esempio C++, questo flag creerà una classe. Non tutti i linguaggi supportano questo flag.|  
-|SCRIPTITEM_GLOBALMEMBERS|Indica che l'elemento è una raccolta di proprietà globali e i metodi associati allo script. In genere, un motore di script ignora il nome dell'oggetto (diverso da quello allo scopo di utilizzarlo come un cookie per la [iactivescriptsite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) metodo, o per la risoluzione dell'ambito esplicito) ed esporre i relativi membri come globale le variabili e metodi. In questo modo l'host estendere la libreria (funzioni di runtime e così via) disponibile per lo script. Si è lasciato al motore di script per gestire con il nome è in conflitto (ad esempio, quando due elementi SCRIPTITEM_GLOBALMEMBERS dispongono di metodi con lo stesso nome), anche se non deve essere restituito un errore a causa di questa situazione.|  
-|SCRIPTITEM_ISPERSISTENT|Indica che l'elemento deve essere salvato se il motore di scripting viene salvato. Analogamente, l'impostazione di questo flag indica che una transizione allo stato inizializzato deve mantenere le informazioni di nome e il tipo dell'elemento (il motore di scripting deve, tuttavia, rilasciare tutti i puntatori alle interfacce per l'oggetto effettivo).|  
-|SCRIPTITEM_ISSOURCE|Indica che l'elemento genera eventi che possa includere lo script. Gli oggetti figlio (proprietà dell'oggetto che sono di per sé oggetti) possono anche l'origine degli eventi per lo script. Questo non è ricorsivo, ma fornisce un comodo meccanismo per il caso comune, ad esempio, di creazione di un contenitore e tutti i relativi membri controlli.|  
-|SCRIPTITEM_ISVISIBLE|Indica che il nome dell'elemento è disponibile nello spazio dei nomi dello script, che consente l'accesso per la proprietà, metodi ed eventi dell'elemento. Per convenzione le proprietà dell'elemento includono elementi figlio dell'elemento; Pertanto, tutte le proprietà dell'oggetto figlio e i metodi (e i relativi elementi figlio, in modo ricorsivo) saranno accessibili.|  
-|SCRIPTITEM_NOCODE|Indica che l'elemento è semplicemente un nome da aggiungere allo spazio dei nomi dello script e non deve essere considerato un elemento per il quale codice deve essere associato. Ad esempio, se questo flag non impostato, VBScript verrà creato un modulo separato per l'elemento denominato e C++ potrebbe creare una classe wrapper separato per l'elemento denominato.|  
+|SCRIPTITEM_CODEONLY|Indica che l'elemento denominato rappresenta un oggetto di solo codice e che l'host non dispone di `IUnknown` da associare a questo oggetto di solo codice. L'host ha solo un nome per questo oggetto. Nei linguaggi orientati a oggetti C++, ad esempio, questo flag crea una classe. Non tutti i linguaggi supportano questo flag.|  
+|SCRIPTITEM_GLOBALMEMBERS|Indica che l'elemento è una raccolta di proprietà globali e metodi associati allo script. In genere, un motore di script ignora il nome dell'oggetto (ad eccezione di per usarlo come cookie per il metodo [IActiveScriptSite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) o per la risoluzione dell'ambito esplicito) ed espone i membri come variabili e metodi globali. In questo modo l'host può estendere la libreria (funzioni di run-time e così via) disponibile per lo script. Viene lasciata al motore di scripting per gestire i conflitti di nomi, ad esempio quando due elementi SCRIPTITEM_GLOBALMEMBERS hanno metodi con lo stesso nome, sebbene non venga restituito un errore a causa di questa situazione.|  
+|SCRIPTITEM_ISPERSISTENT|Indica che l'elemento deve essere salvato se il motore di scripting viene salvato. Analogamente, l'impostazione di questo flag indica che una transizione allo stato inizializzato deve conservare le informazioni sul tipo e sul nome dell'elemento. il motore di scripting, tuttavia, deve rilasciare tutti i puntatori alle interfacce dell'oggetto effettivo.|  
+|SCRIPTITEM_ISSOURCE|Indica che l'elemento genera eventi che lo script può affondare. Gli oggetti figlio (proprietà dell'oggetto che sono oggetti stessi) possono inoltre generare eventi nello script. Questo non è ricorsivo, ma fornisce un meccanismo pratico per il caso comune, ad esempio, per la creazione di un contenitore e di tutti i relativi controlli membro.|  
+|SCRIPTITEM_ISVISIBLE|Indica che il nome dell'elemento è disponibile nello spazio dei nomi dello script, consentendo l'accesso alle proprietà, ai metodi e agli eventi dell'elemento. Per convenzione, le proprietà dell'elemento includono gli elementi figlio dell'elemento; Pertanto, tutti i metodi e le proprietà degli oggetti figlio (e i relativi elementi figlio in modo ricorsivo) saranno accessibili.|  
+|SCRIPTITEM_NOCODE|Indica che l'elemento è semplicemente un nome aggiunto allo spazio dei nomi dello script e non deve essere considerato come un elemento per cui il codice deve essere associato. Se, ad esempio, non si imposta questo flag, VBScript creerà un modulo separato per l'elemento denominato e C++ potrebbe creare una classe wrapper separata per l'elemento specificato.|  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -58,9 +58,9 @@ HRESULT AddNamedItem(
 |Valore restituito|Significato|  
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
-|`E_INVALIDARG`|Un argomento non valido.|  
+|`E_INVALIDARG`|Argomento non valido.|  
 |`E_POINTER`|È stato specificato un puntatore non valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato).|  
+|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting non è ancora stato caricato o inizializzato).|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

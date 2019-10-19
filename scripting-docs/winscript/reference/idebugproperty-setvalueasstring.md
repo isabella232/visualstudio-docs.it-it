@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::SetValueAsString | Microsoft Docs
+title: 'IDebugProperty:: SetValueAsString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75761c77281583336efd1f9b6466f7f2fd0cc291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67e12652056442d9ac162be7af3a0d9e2b61b82c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979084"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574933"
 ---
 # <a name="idebugpropertysetvalueasstring"></a>IDebugProperty::SetValueAsString
 Imposta il valore di una proprietà da una stringa specificata.  
@@ -38,13 +38,13 @@ HRESULT SetValueAsString (
   
 #### <a name="parameters"></a>Parametri  
  `pszValue`  
- [in] Il valore da impostare.  
+ in Valore da impostare.  
   
  `nRadix`  
- [in] Radice da utilizzare nell'interpretare le informazioni numeriche.  
+ in Radice da usare per interpretare le informazioni numeriche.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore valido `HRESULT`, in genere `S_OK`.  
+ Restituisce un `HRESULT` valido, in genere `S_OK`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6a05c5e73d26a8daa9e46c317422d85d1c40be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10dd6366e2d0783ec2e9d6bdadc001e9f999901e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840161"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575675"
 ---
 # <a name="scriptstate-enumeration"></a>Enumerazione SCRIPTSTATE
-Specifica lo stato di un motore di scripting. Questa enumerazione viene utilizzata per la [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) , e [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metodi.  
+Specifica lo stato di un motore di script. Questa enumerazione viene utilizzata dai metodi [IActiveScript:: GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript:: SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) e [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,11 +44,11 @@ typedef enum tagSCRIPTSTATE {
   
 |||  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|Lo script è stato appena creato, ma non è ancora stato inizializzato con un `IPersist*` interfaccia e [IActiveScript:: Setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
-|SCRIPTSTATE_INITIALIZED|Script è stato inizializzato, ma non è in esecuzione (la connessione ad altri oggetti o eventi di sink) o l'esecuzione di qualsiasi codice. È possibile eseguire query codice per l'esecuzione chiamando il [iactivescriptparse:: Parsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md) (metodo).|  
-|SCRIPTSTATE_STARTED|Lo script può eseguire il codice, ma non è ancora sink gli eventi di oggetti aggiunti per il [IActiveScript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) (metodo).|  
-|SCRIPTSTATE_CONNECTED|Lo script è caricato e connesso agli eventi di sink.|  
-|SCRIPTSTATE_DISCONNECTED|Lo script viene caricato e ha uno stato di esecuzione, ma è temporaneamente disconnesso dagli eventi di sink.|  
+|SCRIPTSTATE_UNINITIALIZED|Lo script è stato appena creato, ma non è ancora stato inizializzato usando un'interfaccia `IPersist*` e [IActiveScript:: SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
+|SCRIPTSTATE_INITIALIZED|Lo script è stato inizializzato, ma non è in esecuzione (connessione ad altri oggetti o eventi di sink) o in esecuzione di qualsiasi codice. È possibile eseguire query sul codice per l'esecuzione chiamando il metodo [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md) .|  
+|SCRIPTSTATE_STARTED|Lo script può eseguire codice, ma non sta ancora affondando gli eventi degli oggetti aggiunti dal metodo [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .|  
+|SCRIPTSTATE_CONNECTED|Lo script viene caricato e connesso per gli eventi di sink.|  
+|SCRIPTSTATE_DISCONNECTED|Lo script viene caricato e ha uno stato di esecuzione in fase di esecuzione, ma è temporaneamente disconnesso dagli eventi sink.|  
 |SCRIPTSTATE_CLOSED|Lo script è stato chiuso. Il motore di scripting non funziona più e restituisce gli errori per la maggior parte dei metodi.|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Microsoft Docs
+title: 'IScriptEntry:: GetRange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a6e1b1600c93aa05bbe9669fb57a23a8c9344a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787737"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575426"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
 Restituisce la posizione iniziale e la lunghezza di una voce.  
@@ -38,18 +38,18 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Parametri  
  `pichMin`  
- [out] Per `IScriptEntry` oggetti che specificano un blocco di script, restituisce 0.  
+ out Per `IScriptEntry` oggetti che specificano un blocco di script, restituisce 0.  
   
- Per `IScriptEntry` oggetti che specificano un oggetto funzione, restituisce la posizione di inizio della funzione nel blocco di script corrente.  
+ Per `IScriptEntry` oggetti che specificano un oggetto funzione, restituisce la posizione iniziale della funzione nel blocco di script corrente.  
   
- Per `IScriptScriptlet` gli oggetti, restituisce 0.  
+ Per `IScriptScriptlet` oggetti, restituisce 0.  
   
  `pcch`  
- [out] Per `IScriptEntry` oggetti che specificano un blocco di script, restituisce la lunghezza del testo.  
+ out Per `IScriptEntry` oggetti che specificano un blocco di script, restituisce la lunghezza del testo.  
   
- Per `IScriptEntry` oggetti che specificano un oggetto funzione, restituisce la lunghezza della definizione di funzione.  
+ Per `IScriptEntry` oggetti che specificano un oggetto funzione, restituisce la lunghezza della definizione della funzione.  
   
- Per `IScriptScriptlet` gli oggetti, restituisce la lunghezza della voce.  
+ Per `IScriptScriptlet` oggetti, restituisce la lunghezza della voce.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

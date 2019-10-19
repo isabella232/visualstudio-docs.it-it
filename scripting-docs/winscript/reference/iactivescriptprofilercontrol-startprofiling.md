@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Microsoft Docs
+title: 'IActiveScriptProfilerControl:: StartProfiling | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 780886e4ca21abbe11580992244cee0d6a28b134
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993137"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571575"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Avvia la profilatura sul motore di scripting. Il motore di script crea un'istanza dell'oggetto profiler effettuando una chiamata a [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
+Avvia la profilatura sul motore di scripting. Il motore di scripting crea un'istanza dell'oggetto Profiler effettuando una chiamata a [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,21 +36,21 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Parametri  
  `clsidProfilerObject`  
- [in] Identificatore (CLSID) dell'oggetto del profiler per creare la classe.  
+ in Identificatore di classe (CLSID) dell'oggetto Profiler da creare.  
   
  `dwEventMask`  
- [in] Maschera di bit a 4 byte che specifica i tipi di eventi. I bit sono definiti in [enumerazione PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ in Maschera di bit a 4 byte che specifica i tipi di eventi. I bit sono definiti nell' [enumerazione PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
- [in] Un valore a 4 byte che viene passato all'oggetto del profiler.  
+ in Valore a 4 byte passato all'oggetto Profiler.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un HRESULT. I valori possibili sono i seguenti:  
+ Restituisce un valore HRESULT. I valori possibili sono i seguenti:  
   
 |Valore restituito|Significato|  
 |------------------|-------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`ACTIVPROF_E_PROFILER_PRESENT`|Profilatura è già abilitata.|  
+|`ACTIVPROF_E_PROFILER_PRESENT`|La profilatura è già abilitata.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

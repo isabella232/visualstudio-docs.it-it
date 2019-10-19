@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetContextOfPosition | Microsoft Docs
+title: 'IDebugDocumentText:: GetContextOfPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df63362c422289652d45ed4bbc80f117e17fb73c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6a35a85a6e4761e1bd0db67caafd0913e7e28a3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008717"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572148"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
-Crea un oggetto di contesto di documento corrispondente all'intervallo di posizione del carattere specificato.  
+Crea un oggetto contesto del documento corrispondente all'intervallo di posizioni del carattere specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ HRESULT GetContextOfPosition(
   
 #### <a name="parameters"></a>Parametri  
  `cCharacterPosition`  
- [in] Posizione iniziale dell'intervallo di caratteri della posizione.  
+ in Posizione iniziale dell'intervallo di posizioni dei caratteri.  
   
  `cNumChars`  
- [in] Numero di caratteri nell'intervallo.  
+ in Numero di caratteri nell'intervallo.  
   
  `ppsc`  
- [out] L'oggetto di contesto di documento corrispondente all'intervallo di posizione del carattere specificato.  
+ out Oggetto contesto del documento corrispondente all'intervallo di posizioni del carattere specificato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -55,7 +55,7 @@ HRESULT GetContextOfPosition(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo crea un oggetto di contesto di documento corrispondente all'intervallo di posizione del carattere specificato.  
+ Questo metodo crea un oggetto contesto del documento corrispondente all'intervallo di posizioni del carattere specificato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

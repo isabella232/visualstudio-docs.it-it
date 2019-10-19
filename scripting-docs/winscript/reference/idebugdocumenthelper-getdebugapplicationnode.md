@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetDebugApplicationNode | Microsoft Docs
+title: 'IDebugDocumentHelper:: GetDebugApplicationNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10740c3489b617b1685ad222cac7c158e0196c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b0fc05b73ffd9880b1dec366cabd4b3cc316b80
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783084"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576958"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
-Restituisce il nodo di debug dell'applicazione corrispondente a questo documento.  
+Restituisce il nodo dell'applicazione di debug corrispondente a questo documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetDebugApplicationNode(
   
 #### <a name="parameters"></a>Parametri  
  `ppdan`  
- [out] Il nodo debug dell'applicazione corrispondente a questo documento.  
+ out Nodo dell'applicazione di debug corrispondente a questo documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT GetDebugApplicationNode(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Restituisce il nodo di debug dell'applicazione corrispondente a questo documento.  
+ Restituisce il nodo dell'applicazione di debug corrispondente a questo documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

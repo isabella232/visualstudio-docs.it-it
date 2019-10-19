@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugproperty:: GetMembers | Microsoft Docs'
+title: 'Metodo metodo ijsdebugproperty:: GetMembers | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be31a0f02869ea740809fb68dbddf48843b2f3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3e700e51dea6723238437bf1fed741698097ae2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793669"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574055"
 ---
 # <a name="ijsdebugpropertygetmembers-method"></a>Metodo IJsDebugProperty::GetMembers
 Ottiene i membri di questo oggetto.  
@@ -36,15 +36,15 @@ HRESULT GetMembers(
   
 #### <a name="parameters"></a>Parametri  
  `members`  
- [in] Flag per specificare che cosa è incluso nelle informazioni del membro.  
+ in Flag per specificare gli elementi inclusi nelle informazioni sui membri.  
   
  `ppEnum`  
- [out] I membri dell'oggetto.  
+ out Membri dell'oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugProperty](../../winscript/reference/ijsdebugproperty-interface.md)

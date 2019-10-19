@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
+title: IDispatchEx::D eleteMemberByDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36eeeb4c28286bb5712be3908b47a5145e460597
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000947"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576644"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
-Elimina un membro da DISPID.  
+Elimina un membro in base al DISPID.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>Parametri  
  `id`  
- Identificatore del membro. Viene utilizzato `GetDispID` o `GetNextDispID` per ottenere l'ID dispatch.  
+ Identificatore del membro. USA `GetDispID` o `GetNextDispID` per ottenere l'identificatore di invio.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -45,12 +45,12 @@ HRESULT DeleteMemberByDispID(
 |||  
 |-|-|  
 |`S_OK`|Operazione completata.|  
-|`S_FALSE`|Membro esiste ma non può essere eliminato.|  
+|`S_FALSE`|Il membro esiste ma non può essere eliminato.|  
   
 ## <a name="remarks"></a>Note  
- Se il membro viene eliminato, deve rimanere valido per il DISPID `GetNextDispID`.  
+ Se il membro viene eliminato, il DISPID deve rimanere valido per `GetNextDispID`.  
   
- Se un membro con un nome specificato viene eliminato e ricreato in un secondo momento un membro con lo stesso nome, il DISPID deve essere lo stesso. (Se i nomi dei membri che differiscono solo per i casi sono "uguali" è dipendente dall'oggetto.)  
+ Se un membro con un nome specificato viene eliminato e successivamente viene ricreato un membro con lo stesso nome, il DISPID deve essere lo stesso. (Indipendentemente dal fatto che i nomi dei membri che differiscono solo per le maiuscole e minuscole siano "uguali" sono dipendenti dall'oggetto)  
   
 ## <a name="example"></a>Esempio  
   
@@ -65,6 +65,6 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)    
+ @No__t_1 [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetSubItemName | Microsoft Docs
+title: 'IScriptScriptlet:: GetSubItemName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c48517b7f9f5fab3250b8cff68ad288525145b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b36f6dd98534b8122a6814f1fd154eca7882251a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786797"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571925"
 ---
 # <a name="iscriptscriptletgetsubitemname"></a>IScriptScriptlet::GetSubItemName
-Restituisce l'ultimo identificatore in specificare il nome completo dell'host dell'oggetto di scriptlet.  
+Restituisce l'ultimo identificatore nel nome completo dell'host oggetto di un scriptlet.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,9 +37,9 @@ HRESULT GetSubItemName(
   
 #### <a name="parameters"></a>Parametri  
  `pbstr`  
- [out] Se l'host completo del nome di scriptlet ha più di un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore a livello di secondo.  
+ out Se il nome completo dell'host scriptlet ha più di un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore al secondo livello.  
   
- Se l'host completo del nome di scriptlet include un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore al primo livello.  
+ Se il nome completo dell'host scriptlet è di un livello, `pbstr` restituisce l'indirizzo del buffer dell'identificatore al primo livello.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

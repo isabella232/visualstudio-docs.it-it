@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorString | Microsoft Docs
+title: 'IActiveScriptWinRTErrorDebug:: GetRestrictedErrorString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 154909183e044267053a04ebc489de6dddd55788
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 498d929fb06eea1d6717bfdecb09107bbdaafd98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425870"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577898"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorstring"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorString
-Restituisce il Runtime di Windows limitato stringa di errore, se disponibile.  
+Restituisce la stringa di errore Windows Runtime limitata, se disponibile.  
   
 > [!IMPORTANT]
-> [Interfaccia IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
+> L' [interfaccia IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) viene implementata da PDM v 11.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT GetRestrictedErrorString([out] BSTR * errorString);
   
 #### <a name="parameters"></a>Parametri  
  `errorString`  
- [out] La stringa di errore con restrizioni.  
+ out Stringa di errore limitata.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

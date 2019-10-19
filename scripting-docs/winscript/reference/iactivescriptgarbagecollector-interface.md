@@ -11,21 +11,21 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b53a53c03a7b76050c8d4264048f0549f5142183
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e495f89f97ba645bb6131176fa15f1d2aa55c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009437"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573577"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>Interfaccia IActiveScriptGarbageCollector
-Fornisce un metodo per avviare l'operazione di garbage collection. Questa interfaccia deve essere implementata dai motori di Script ActiveX che ripulire le proprie risorse.  
+Fornisce un metodo per avviare Garbage Collection. Questa interfaccia deve essere implementata dai motori di script attivi che desiderano pulire le proprie risorse.  
   
 ## <a name="methods"></a>Metodi  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Avvia l'operazione di garbage collection.|  
+|[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)|Avvia Garbage Collection.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce Script ActiveX](../../winscript/reference/active-script-interfaces.md)

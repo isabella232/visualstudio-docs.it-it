@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75369df719b0cd140ce621e916215eb18cf30a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c58ff83c43a1418e6fb7bd8945afa181af60c68a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787619"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573608"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
 Aggiunge un'istanza figlio di `IScriptEntry`.  
@@ -40,26 +40,26 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>Parametri  
  `isn`  
- [in] L'indice dell'elemento figlio del padre.  
+ in Indice dell'elemento figlio nell'elemento padre.  
   
  `dwCookie`  
- [in] Un valore definito dall'applicazione usato per associare la voce figlio con l'oggetto host.  
+ in Valore definito dall'applicazione utilizzato per associare la voce figlio all'oggetto host.  
   
  `pszDelimiter`  
- [in] L'indirizzo del delimitatore end-di--blocco di script. Per l'analisi, l'host utilizza in genere un delimitatore (ad esempio due virgolette singole), per rilevare la fine del blocco di script.  
+ in Indirizzo del delimitatore di blocco di fine dello script. Per l'analisi, l'host usa in genere un delimitatore, ad esempio due virgolette singole, per rilevare la fine del blocco di script.  
   
- Il delimitatore consente allo script di creazione motore per garantire la pre-elaborazione. Ad esempio, il motore potrebbe sostituire una virgoletta singola con due virgolette singole da usare come delimitatore. Il motore determina come viene utilizzato il delimitatore.  
+ Il delimitatore consente al motore di creazione di script di fornire la pre-elaborazione. Ad esempio, il motore potrebbe sostituire una virgoletta singola con due virgolette singole da utilizzare come delimitatore. Il motore determina il modo in cui viene utilizzato il delimitatore.  
   
- Se un delimitatore non contrassegna la fine del blocco di script, impostato su NULL.  
+ Impostare su NULL se un delimitatore non contrassegna la fine del blocco di script.  
   
  `ppse`  
- [out] L'indirizzo di una variabile che riceve un puntatore al `IScriptEntry` interfaccia dell'istanza figlio.  
+ out Indirizzo di una variabile che riceve un puntatore all'interfaccia `IScriptEntry` dell'istanza figlio.  
   
- Per la `IScriptNode` gli oggetti che rappresentano una pagina Web, questo parametro restituisce un `IScriptEntry` istanza che specifica un blocco di script.  
+ Per `IScriptNode` oggetti che rappresentano una pagina Web, questo parametro restituisce un'istanza di `IScriptEntry` che specifica un blocco di script.  
   
- Per la `IScriptEntry` gli oggetti che rappresentano un blocco di script, questo parametro restituisce un `IScriptEntry` istanza che specifica un oggetto funzione.  
+ Per `IScriptEntry` oggetti che rappresentano un blocco di script, questo parametro restituisce un'istanza di `IScriptEntry` che specifica un oggetto funzione.  
   
- Per `IScriptEntry` gli oggetti che rappresentano una funzione dell'oggetto, questo metodo ha esito negativo.  
+ Per `IScriptEntry` oggetti che rappresentano un oggetto funzione, questo metodo ha esito negativo.  
   
  Per `IScriptScriptlet` oggetti, questo metodo ha esito negativo.  
   
@@ -71,8 +71,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Il `IScriptNode` interfaccia rappresenta una pagina Web o dei relativi elementi. Il `IScriptEntry` interfaccia (che deriva da `IScriptNode`) rappresenta un blocco di script o un oggetto funzione. Il `IScriptScriptlet` interfaccia (che deriva da `IScriptEntry`) rappresenta un gestore eventi.  
+ L'interfaccia `IScriptNode` rappresenta una pagina Web o i relativi elementi. L'interfaccia `IScriptEntry` (derivata da `IScriptNode`) rappresenta un blocco di script o un oggetto funzione. L'interfaccia `IScriptScriptlet` (derivata da `IScriptEntry`) rappresenta un gestore eventi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)   
+ [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)    
  [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

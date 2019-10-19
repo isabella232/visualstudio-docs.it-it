@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onReplaceText | Microsoft Docs
+title: 'IDebugDocumentTextEvents:: onReplaceText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b65496f3bf64dfaf1a4fc1f1180dd6715277cd59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d037d45f1232ec8e70f7602df33532624fd0aa3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946700"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575998"
 ---
 # <a name="idebugdocumenttexteventsonreplacetext"></a>IDebugDocumentTextEvents::onReplaceText
 Indica che il testo è stato sostituito.  
@@ -38,10 +38,10 @@ HRESULT onReplaceText(
   
 #### <a name="parameters"></a>Parametri  
  `cCharacterPosition`  
- [in] Posizione del carattere del primo carattere è stato sostituito.  
+ in Posizione del carattere del primo carattere sostituito.  
   
  `cNumToReplace`  
- [in] Il numero di caratteri sostituiti.  
+ in Numero di caratteri sostituiti.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

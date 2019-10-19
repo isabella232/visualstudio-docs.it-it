@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Skip | Microsoft Docs
+title: 'IEnumDebugApplicationNodes:: Skip | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97880e6a40efefa5f3643b474ba5d731f8dc3630
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def20df8ee38763856fb33d6410788c934f541a5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951482"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573032"
 ---
 # <a name="ienumdebugapplicationnodesskip"></a>IEnumDebugApplicationNodes::Skip
-Ignora un determinato numero di segmenti in una sequenza di enumerazione.  
+Ignora un numero specificato di segmenti in una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametri  
  `celt`  
- [in] Numero di segmenti nella sequenza di enumerazione da ignorare.  
+ in Numero di segmenti nella sequenza di enumerazione da ignorare.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT Skip(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo ignora un determinato numero di segmenti in una sequenza di enumerazione.  
+ Questo metodo ignora un numero specificato di segmenti in una sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

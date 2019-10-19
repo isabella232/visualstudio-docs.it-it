@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b68c777652ec411addfb64643ec0c8db67c29a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992781"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571241"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-Il `IActiveScriptProperty` interfaccia viene utilizzata per ottenere e impostare le proprietà di configurazione.  
+L'interfaccia `IActiveScriptProperty` viene utilizzata per ottenere e impostare le proprietà di configurazione.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   

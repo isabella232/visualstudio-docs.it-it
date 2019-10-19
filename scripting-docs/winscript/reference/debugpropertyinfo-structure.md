@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 793c83b467460f0744abffe3f161f7510f56257a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955263"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575073"
 ---
 # <a name="debugpropertyinfo-structure"></a>Struttura DebugPropertyInfo
-Descrive un oggetto di natura gerarchica con nome, tipo e valore. Viene usato per descrivere le proprietà di debug di variabili locali, parametri, controllare variabili ed espressioni e registra.  
+Descrive un oggetto di una natura gerarchica con nome, tipo e valore. Viene usato per descrivere le proprietà di debug di variabili locali, parametri, espressioni di controllo e espressioni e registri.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,18 +41,18 @@ typedef struct DebugPropertyInfo{
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  dwValidFields  
- Tipo di dati enumerato consente di specificare quali campi vengono inizializzati.  
+ Tipo di dati enumerato utilizzato per specificare i campi che vengono inizializzati.  
   
  bstrName  
- Il nome della proprietà all'interno di un contesto.  
+ Nome della proprietà all'interno di un contesto.  
   
  bstrType  
  Tipo di proprietà, come stringa formattata.  
   
  bstrValue  
- Il valore della proprietà come stringa formattata.  
+ Valore della proprietà, come stringa formattata.  
   
  bstrFullName  
  Nome completo della proprietà.  
@@ -61,9 +61,9 @@ typedef struct DebugPropertyInfo{
  Enumerazione che specifica i flag per gli attributi della proprietà di debug.  
   
  pDebugProp  
- Il `IDebugProperty` descritto dalle informazioni in questo `DebugPropertyInfo` struttura.  
+ @No__t_0 descritta dalle informazioni contenute in questa struttura di `DebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)    
+ @No__t_1 [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

@@ -14,21 +14,21 @@ ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39a1d803229dd614d0022ca14eb79b39f27f88b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006444"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575641"
 ---
 # <a name="syntax-error-javascript"></a>Errore di sintassi (JavaScript)
-È stata creata un'istruzione che viola uno o più delle regole grammaticali del [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+È stata creata un'istruzione che viola una o più regole grammaticali della [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Controllare la sintassi del programma per il numero di riga indicato.  
+- Controllare la sintassi del programma sul numero di riga indicato.  
   
-- Cercare un indirizzamento errato dei parentesi o parentesi graffe.  
+- Cercare le parentesi o le parentesi graffe non reindirizzate.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto Error](../../javascript/reference/error-object-javascript.md)

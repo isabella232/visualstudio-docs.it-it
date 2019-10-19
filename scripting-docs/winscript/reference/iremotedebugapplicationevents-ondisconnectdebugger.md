@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnDisconnectDebugger | Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnDisconnectDebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d99ef6b4bcbafc78fd3e6ebcdc2c4129c3653a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53e26da46fcdca0db0c8a652a091e95cd83789cd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934571"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575592"
 ---
 # <a name="iremotedebugapplicationeventsondisconnectdebugger"></a>IRemoteDebugApplicationEvents::OnDisconnectDebugger
-Debugger gestisce l'evento di disconnessione.  
+Gestisce un evento di disconnessione del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,7 +44,7 @@ HRESULT OnDisconnectDebugger();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo gestisce il debugger di evento di disconnessione.  
+ Questo metodo gestisce l'evento di disconnessione del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

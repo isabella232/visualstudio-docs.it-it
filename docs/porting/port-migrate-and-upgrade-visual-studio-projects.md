@@ -1,7 +1,7 @@
 ---
 title: Portabilità, migrazione e aggiornamento dei progetti
-description: Un riferimento per il supporto in Visual Studio 2017 per i progetti creati nelle versioni precedenti di Visual Studio e modalità con cui Visual Studio determina la necessità di eseguire la migrazione di un progetto.
-ms.date: 04/16/2019
+description: Riferimento per il supporto di progetti creati in versioni correnti e precedenti di Visual Studio.
+ms.date: 10/17/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,18 +19,18 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 97eaada072a4ff0038ae7b57810b0d3318df1035
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
-ms.translationtype: HT
+ms.openlocfilehash: 7a348693dcae89c7d27b12f80dd4e21534a7bdec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314172"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574139"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio
 
 ::: moniker range="vs-2017"
 
-Ogni nuova versione di Visual Studio in genere supporta la maggior parte dei tipi di progetti, file e altre risorse supportati in precedenza. Per lavorare con questi elementi [come si è sempre fatto](../ide/solutions-and-projects-in-visual-studio.md), purché non si dipenda da funzionalità più recenti, Visual Studio generalmente tenta di mantenere la compatibilità con le versioni precedenti ad esempio, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. Vedere le [note sulla versione](/visualstudio/releasenotes/vs2017-relnotes/) per le funzionalità specifiche di ogni versione.
+Ogni versione di Visual Studio in genere supporta la maggior parte dei tipi di progetti, file e altre risorse precedenti. È possibile usarli [come sempre](../ide/solutions-and-projects-in-visual-studio.md)e, a condizione che non si dipenda da funzionalità più recenti, Visual Studio prova a mantenere la compatibilità con le versioni precedenti, ad esempio visual studio 2015, Visual Studio 2013 e visual Studio 2012. Vedere le [note sulla versione](/visualstudio/releasenotes/vs2017-relnotes/) per le funzionalità specifiche di ogni versione.
 
 Varia periodicamente anche il supporto per alcuni tipi di progetto. È possibile che una versione più recente di Visual Studio non supporti più alcuni progetti o richieda l'aggiornamento di un progetto e di conseguenza non sia più compatibile con le versioni precedenti. Per visualizzare lo stato corrente sui problemi di migrazione, consultare il [sito Visual Studio Developer Community](https://developercommunity.visualstudio.com).
 
@@ -72,7 +72,7 @@ Se non viene visualizzato un progetto o non viene elencato un tipo di file che d
 | Strumenti di Visual Studio per Apache Cordova | Questi progetti possono essere aperti in Visual Studio 2017, ma non sono compatibili con le versioni precedenti. All'apertura di un progetto da Visual Studio 2015, viene richiesto di consentire le modifiche del progetto. In questo modo è possibile aggiornare il progetto in modo da usare set di strumenti anziché un file `taco.json` per gestire il controllo delle versioni della libreria Cordova, delle piattaforme, dei plug-in, nonché delle relative dipendenze nodo/npm. Per altre informazioni, vedere la [guida alla migrazione](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015). |
 | Distribuzione Web (wdproj) | Il supporto per i progetti di distribuzione Web è stato rimosso in Visual Studio 2012 con l'aggiunta del supporto del profilo di pubblicazione. Dato che non esiste alcun equivalente in Visual Studio 2017, non è disponibile un percorso di migrazione automatica per tali progetti. È invece necessario aprire il file wdproj in un editor di testo e copiare e incollare eventuali personalizzazioni nel file pubxml (profilo di pubblicazione), come descritto in [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | È possibile aprire il progetto in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012 |
-| Windows Presentation Foundation | È possibile aprire il progetto in Visual Studio 2013, Visual Studio 2012 e Visual Studio 2010 SP1. |
+| Windows Presentation Foundation | È possibile aprire il progetto in Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 e Visual Studio 2010 SP1. |
 | App di Windows Store/Phone | I progetti per Windows Store 8.1 e 8.0, Windows Phone 8.1 e 8.0 non sono supportati in Visual Studio 2017. Per gestire queste app, continuare a usare Visual Studio 2015. Per gestire i progetti di Windows Phone 7.x, usare Visual Studio 2012. |
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>In che modo Visual Studio decide di eseguire la migrazione di un progetto
@@ -112,11 +112,11 @@ Vedere gli articoli seguenti per ulteriori informazioni:
 
 ::: moniker range="vs-2019"
 
-Ogni nuova versione di Visual Studio in genere supporta la maggior parte dei tipi di progetti, file e altre risorse supportati in precedenza. Per consentire di lavorare con questi elementi [come si è sempre fatto](../ide/solutions-and-projects-in-visual-studio.md), purché non si dipenda da funzionalità più recenti, Visual Studio tenta in genere di mantenere la compatibilità con le versioni precedenti, ad esempio Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. Vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/) per le funzionalità specifiche di ogni versione.
+Ogni nuova versione di Visual Studio in genere supporta la maggior parte dei tipi di progetti, file e altre risorse supportati in precedenza. È possibile usarli [come sempre](../ide/solutions-and-projects-in-visual-studio.md)e, a condizione che non si dipenda da funzionalità più recenti, Visual Studio prova a mantenere la compatibilità con le versioni precedenti, ad esempio visual studio 2017, visual studio 2015, Visual Studio 2013 e Visual Studio 2012. Vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/) per le funzionalità specifiche di ogni versione.
 
-Varia periodicamente anche il supporto per alcuni tipi di progetto. È possibile che una versione più recente di Visual Studio non supporti più alcuni progetti o richieda l'aggiornamento di un progetto e di conseguenza non sia più compatibile con le versioni precedenti. Per visualizzare lo stato corrente sui problemi di migrazione, fare riferimento al [sito Visual Studio Developer Community](https://developercommunity.visualstudio.com).
+Il supporto per alcuni tipi di progetto cambia nel tempo. È possibile che una versione più recente di Visual Studio non supporti più alcuni progetti o richieda l'aggiornamento di un progetto e di conseguenza non sia più compatibile con le versioni precedenti. Per visualizzare lo stato corrente sui problemi di migrazione, fare riferimento al [sito Visual Studio Developer Community](https://developercommunity.visualstudio.com).
 
-Questo articolo offre informazioni dettagliate relative ai tipi di progetto di cui Visual Studio 2019 può eseguire la migrazione. Offre anche informazioni dettagliate sui tipi di progetto deprecati in Visual Studio 2019, attualmente o in un futuro prossimo. L'articolo esclude i tipi di progetto che non sono più supportati in Visual Studio 2019 e di cui non è quindi possibile eseguire la migrazione. L'articolo esclude anche i tipi di progetto supportati che non evidenziano problemi di migrazione. L'elenco è disponibile in [Selezione della piattaforma e compatibilità](/visualstudio/releases/2019/compatibility).
+Questo articolo offre informazioni dettagliate relative ai tipi di progetto di cui Visual Studio 2019 può eseguire la migrazione. Sono incluse anche informazioni sui tipi di progetto deprecati in Visual Studio 2019 o che saranno presto deprecati. L'articolo esclude i tipi di progetto che non sono più supportati in Visual Studio 2019 e di cui non è quindi possibile eseguire la migrazione. L'articolo esclude anche i tipi di progetto supportati che non evidenziano problemi di migrazione. L'elenco è disponibile in [Selezione della piattaforma e compatibilità](/visualstudio/releases/2019/compatibility).
 
 > [!IMPORTANT]
 > Alcuni tipi di progetto richiedono l'installazione di carichi di lavoro specifici tramite il programma di installazione di Visual Studio. Se non è installato il carico di lavoro, Visual Studio non segnala un tipo di progetto sconosciuto o incompatibile. In tal caso, controllare le opzioni di installazione e riprovare. Vedere l'articolo [Selezione della piattaforma e compatibilità](/visualstudio/releases/2019/compatibility) per informazioni dettagliate sul supporto dei progetti in Visual Studio 2019.
@@ -162,7 +162,7 @@ Se non viene visualizzato un progetto o non viene elencato un tipo di file che d
 | Strumenti di Visual Studio per Apache Cordova | In Visual Studio 2019 è stato rimosso il supporto per Apache Cordova. Poiché non esiste alcun equivalente in Visual Studio 2019, non è disponibile un percorso di migrazione automatica per questo tipo di progetti.<br/><br/>È possibile usare gli strumenti Cordova per l'estensione Visual Studio Code (che supporta la versione più recente di Cordova) o continuare a usare Visual Studio 2017. |
 | Distribuzione Web (wdproj) | Il supporto per i progetti di distribuzione Web è stato rimosso in Visual Studio 2012 con l'aggiunta del supporto del profilo di pubblicazione. Poiché non esiste alcun equivalente in Visual Studio 2019, non è disponibile un percorso di migrazione automatica per questo tipo di progetti. È invece necessario aprire il file wdproj in un editor di testo e copiare e incollare eventuali personalizzazioni nel file pubxml (profilo di pubblicazione), come descritto in [StackOverflow](https://stackoverflow.com/a/12061065/1203388). |
 | Windows Communication Foundation, Windows Workflow Foundation | È possibile aprire il progetto in Visual Studio 2019, Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 e Visual Studio 2012. |
-| Windows Presentation Foundation | È possibile aprire il progetto in Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 e Visual Studio 2010 SP1. |
+| Windows Presentation Foundation | È possibile aprire questo progetto in Visual Studio 2019, Visual Studio 2017, Visual Studio 2013, Visual Studio 2012 e Visual Studio 2010 SP1. |
 | App di Windows Phone | In Visual Studio 2019 i progetti per Windows Phone non sono supportati. <br/><br/>Per gestire le app di Windows Phone 8.x, usare Visual Studio 2015. Per gestire i progetti di Windows Phone 7.x, usare Visual Studio 2012. |
 | App di Windows Store | In Visual Studio 2019 i progetti UWP (Universal Windows Projects) JavaScript non sono supportati. Per gestire questi progetti, usare Visual Studio 2017. <br/><br/>I Windows 10 SDK precedenti a Windows 10 Fall Creators Update (build 16299) sono stati rimossi dal programma di installazione di Visual Studio 2019. È possibile scaricare gli SDK meno recenti manualmente o ridestinare i progetti per usare gli SDK più recenti.<br/><br/>I progetti Windows universali che usano project.json non sono supportati. È consigliabile aggiornare questi progetti per l'uso di riferimenti a pacchetti. In alternativa, aggiungere un riferimento a Microsoft.NET.Test.Sdk versione 16.0.0.0 nel file project.json.<br/><br/>In Visual Studio 2019 i progetti per Windows Store 8.1 e 8.0 non sono supportati. Per gestire queste app, continuare a usare Visual Studio 2015. |
 | Xamarin | L'estensione Xamarin Live Player per Visual Studio e Visual Studio per Mac è stata rimossa. Questa rimozione comporta la rimozione della schermata di associazione e delle integrazioni. Usare invece il visualizzatore anteprima Xamarin.Forms incorporato.<br/><br/>L'emulatore di Visual Studio per Android è stato rimosso dal programma di installazione di Visual Studio. Usare il nuovo supporto per Hyper-V nell'emulatore di Google Android. |

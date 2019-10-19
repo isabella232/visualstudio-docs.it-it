@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536040"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569074"
 ---
 # <a name="general-debugging-options"></a>Opzioni generali di debug
 
@@ -95,7 +95,7 @@ Nelle condizioni 2 e 3 l'eccezione viene talvolta intercettata dal codice gestit
 
 **Reindirizza tutto il testo della finestra di output nella finestra di controllo immediato**: Invia tutti i messaggi del debugger che normalmente verrebbero visualizzati nella finestra di **output** nella finestra di **controllo immediato** .
 
-**Mostra struttura non elaborata degli oggetti nelle finestre delle variabili**: Disattiva tutte le personalizzazioni delle visualizzazioni struttura degli oggetti. Per ulteriori informazioni sulle personalizzazioni delle visualizzazioni, vedere [creare visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-dot-managed-objects.md).
+**Mostra struttura non elaborata degli oggetti nelle finestre delle variabili**: Disattiva tutte le personalizzazioni delle visualizzazioni struttura degli oggetti. Per altre informazioni sulle personalizzazioni delle visualizzazioni, vedere [creare visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md).
 
 **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)** : Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato mentre il debugger è collegato. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code"). Per altre informazioni, vedere [debug e ottimizzazione JIT](../debugger/jit-optimization-and-debugging.md).
 

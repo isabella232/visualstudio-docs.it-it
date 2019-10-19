@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptTextAttributes | Microsoft Docs
+title: 'IActiveScriptAuthor:: GetScriptTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75e0d5edf7cf2f83e814036cec56a1b19a89813e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f89c7b654cc2ac7248598ee6498a3a290d17e2ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955120"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72563144"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
 Restituisce gli attributi di testo per un blocco di script.  
@@ -41,25 +41,25 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parametri  
  `pszCode`  
- [in, size_is (`cch`)] il testo del blocco di script. Questa stringa non deve essere con terminazione null.  
+ [in, size_is (`cch`)] Testo del blocco di script. Questa stringa non deve essere con terminazione null.  
   
  `cch`  
- [in] La dimensione utilizzata per la `pszCode` e `pattr` parametri.  
+ in Dimensioni utilizzate per i parametri `pszCode` e `pattr`.  
   
  `pszDelimiter`  
- [in] L'indirizzo del delimitatore end-di-script. Quando si `pszCode` viene analizzata da un flusso di testo, l'host utilizza in genere un delimitatore (ad esempio due virgolette singole), per rilevare la fine dello scriptlet. Impostare questo parametro su NULL se non è disponibile alcun delimitatore per identificare la fine del blocco di script.  
+ in Indirizzo del delimitatore di fine dello script. Quando `pszCode` viene analizzato da un flusso di testo, l'host usa in genere un delimitatore, ad esempio due virgolette singole, per rilevare la fine del Scriptlet. Impostare questo parametro su NULL se non è presente alcun delimitatore per identificare la fine del blocco di script.  
   
  `dwFlags`  
- [in] I flag sono associati gli attributi di testo del blocco di script. Può essere una combinazione dei valori seguenti:  
+ in Flag associati agli attributi di testo del blocco di script. Può essere una combinazione dei valori seguenti:  
   
 |Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Identificare gli identificatori che includono l'attributo SOURCETEXT_ATTR_IDENTIFIER e identificare gli operatori di punti che dispongono dell'attributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Identificare gli identificatori con l'attributo SOURCETEXT_ATTR_IDENTIFIER e identificare gli operatori punto con l'attributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Identificare l'oggetto corrente con l'attributo SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Identificare testo contenuto e il commento della stringa che contiene l'attributo SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Identificare il contenuto della stringa e il testo del commento con l'attributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out, size_is (`cch`)] le informazioni sul colore per il codice del blocco di script.  
+ [in, out, size_is (`cch`)] Informazioni sul colore per il codice del blocco di script.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -71,5 +71,5 @@ HRESULT GetScriptTextAttributes(
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

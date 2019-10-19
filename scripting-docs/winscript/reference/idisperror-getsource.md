@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetSource | Microsoft Docs
+title: 'IDispError:: GetSource | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 07c87585a92415f0b910210a56efa47e6f91417b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446889"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573098"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
-Restituisce l'identificatore a livello di codice dipendente dalla lingua per la classe o un'applicazione che ha generato l'errore.  
+Restituisce l'identificatore programmatico dipendente dalla lingua per la classe o l'applicazione che ha generato l'errore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetSource(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrSource`  
- [out] Stringa che contiene un identificatore a livello di codice, nel formato `progname.objectname`.  
+ out Stringa che contiene un identificatore a livello di codice, nel formato `progname.objectname`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT GetSource(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene utilizzato per determinare la classe o l'applicazione in cui si è verificata l'eccezione. L'identificatore a livello di codice può essere restituito nel linguaggio specificato dall'identificatore delle impostazioni locali (LCID) fornito al momento della chiamata.  
+ Questo metodo viene utilizzato per determinare la classe o l'applicazione in cui si è verificata l'eccezione. L'identificatore a livello di codice può essere restituito nella lingua specificata dall'identificatore delle impostazioni locali (LCID) fornito al momento della chiamata.  
   
 > [!NOTE]
 > Questo metodo non è implementato.  

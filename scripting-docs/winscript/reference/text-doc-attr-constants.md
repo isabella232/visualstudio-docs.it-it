@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d22b178d85d304f19e52727ef2c67d77f16da1b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3604c06b6cb36cc4ff7ef6c76348b5ece53bed61
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840083"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572993"
 ---
-# <a name="textdocattr-constants"></a>Costanti TEXT_DOC_ATTR
+# <a name="text_doc_attr-constants"></a>Costanti TEXT_DOC_ATTR
 Descrivono gli attributi del documento.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -38,7 +38,7 @@ typedef DWORD TEXT_DOC_ATTR;
 |Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
 |TEXT_DOC_ATTR_READONLY|0x00000001|Il documento è di sola lettura.|  
-|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Il documento è il file primario di questa struttura documento.|  
+|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Il documento è il file primario di questo albero del documento.|  
 |TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Il documento è un ruolo di lavoro.|  
 |TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Il documento è un file di script.|  
   

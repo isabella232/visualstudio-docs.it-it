@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveStackFrameSniffer | Microsoft Docs
+title: 'IDebugApplication:: RemoveStackFrameSniffer | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1462ff1382f3ccb844ccc98c6e6eec676a86c669
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 605daf51214ba5af9d6010b28be9569453ca7962
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990778"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571121"
 ---
 # <a name="idebugapplicationremovestackframesniffer"></a>IDebugApplication::RemoveStackFrameSniffer
-Rimuove un provider di enumeratore di stack frame da questa applicazione.  
+Rimuove un provider di enumeratori stack frame da questa applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT RemoveStackFrameSniffer(
   
 #### <a name="parameters"></a>Parametri  
  `dwCookie`  
- [in] Il cookie restituito dal `AddStackFrameSniffer` metodo quando è stato aggiunto il provider di enumeratore frame dello stack.  
+ in Cookie restituito dal metodo `AddStackFrameSniffer` quando è stato aggiunto il provider dell'enumeratore stack frame.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,9 +47,9 @@ HRESULT RemoveStackFrameSniffer(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Il `RemoveStackFrameSniffer` metodo rimuove un provider di enumeratore di stack frame da questa applicazione.  
+ Il metodo `RemoveStackFrameSniffer` rimuove un provider di enumeratori stack frame da questa applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
- [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 [IDebugApplication:: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)  
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
  [Interfaccia IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Non è possibile assegnare a 'this' | Microsoft Docs
+title: Non è possibile assegnare a' This ' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,30 +14,30 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a4ba5d852a7d131a88930dd66931c026074549b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73baa77cc63e3a43ac30e70f66081bbc7ade3020
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946589"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572355"
 ---
 # <a name="cannot-assign-to-this"></a>Assegnazione a 'this' non consentita
-Si è provato ad assegnare un valore per **ciò**. **Ciò** è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] parola chiave che fa riferimento a:
+Si è provato a assegnare un valore a **questo**. **si tratta di** una parola chiave [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] che fa riferimento a una delle seguenti operazioni:
 
-- l'oggetto attualmente in esecuzione un metodo,
+- oggetto che attualmente esegue un metodo.
 
-- l'oggetto globale, se nessun metodo corrente (o il metodo non appartiene a qualsiasi altro oggetto).
+- oggetto globale se non esiste alcun metodo corrente (oppure il metodo non appartiene ad altri oggetti).
 
-Un metodo è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funzione che viene richiamato tramite un oggetto. All'interno di un metodo, il **ciò** è un riferimento all'oggetto è stato richiamato il metodo tramite la parola chiave (che sembra essere l'oggetto creato tramite la chiamata al costruttore di classe con il **nuovi** operatore).
+Un metodo è una funzione [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] richiamata tramite un oggetto. All'interno di un metodo, la parola chiave **this** è un riferimento all'oggetto da cui è stato richiamato il metodo (che è l'oggetto creato richiamando il costruttore della classe con l'operatore **New** ).
 
-All'interno di un metodo, è possibile usare **ciò** per fare riferimento all'oggetto corrente, ma è possibile assegnare un nuovo valore per **ciò**.
+All'interno di un metodo, è **possibile usarlo** per fare riferimento all'oggetto corrente, ma non è possibile assegnare un nuovo valore a **questo**.
 
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
 
-- Non tentare di assegnare ai **ciò**. Per accedere a una proprietà o metodo di un oggetto istanza, usare l'operatore punto (ad esempio, **circle.radius**).
+- Non tentare di assegnare a **questo**. Per accedere a una proprietà o a un metodo di un oggetto di cui è stata creata un'istanza, usare l'operatore punto (ad esempio **Circle. RADIUS**).
 
   > [!NOTE]
-  > È possibile assegnare il nome variabile creata dall'utente **ciò**; è un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] parola riservata.
+  > Non è possibile assegnare un nome a una **variabile creata**dall'utente. si tratta di una parola [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] riservata.
 
 ## <a name="see-also"></a>Vedere anche
 

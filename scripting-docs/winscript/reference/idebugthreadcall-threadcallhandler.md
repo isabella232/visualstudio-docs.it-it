@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCall::ThreadCallHandler | Microsoft Docs
+title: 'IDebugThreadCall:: ThreadCallHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1802cdcdabe2ae462960378d0e869838cdaa6e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58e7d3facbd5a59bf7b81e3257c6daea7874141a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000914"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576652"
 ---
 # <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
 Gestisce le chiamate per eseguire codice in un altro thread.  
@@ -39,13 +39,13 @@ HRESULT ThreadCallHandler(
   
 #### <a name="parameters"></a>Parametri  
  `dwParam1`  
- [in] Il primo parametro.  
+ in Primo parametro.  
   
  `dwParam2`  
- [in] Il secondo parametro.  
+ in Secondo parametro.  
   
  `dwParam3`  
- [in] Il terzo parametro.  
+ in Terzo parametro.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -55,9 +55,9 @@ HRESULT ThreadCallHandler(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo gestisce le chiamate a eseguire il codice nel thread del debugger.  
+ Questo metodo gestisce le chiamate per eseguire il codice nel thread del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)   
- [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
+ [Interfaccia IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)    
+ @No__t_1 [IDebugApplication:: SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)  
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

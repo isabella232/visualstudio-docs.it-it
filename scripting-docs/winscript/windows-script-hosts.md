@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8468f578ee44487acd2575e81e01d65969110437
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840044"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568821"
 ---
 # <a name="windows-script-hosts"></a>Windows Script Host
 Durante l'implementazione di Microsoft Windows Script host, è possibile tranquillamente presupporre che un motore di scripting chiami solo l'interfaccia [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) nel contesto del thread di base fino a quando l'host esegue le operazioni seguenti:  
@@ -37,7 +37,7 @@ Durante l'implementazione di Microsoft Windows Script host, è possibile tranqui
   
   Queste regole sono seguite automaticamente da tutti gli host a thread singolo. Il modello con restrizioni descritto in precedenza è intenzionalmente debole per consentire a un host di interrompere uno script bloccato chiamando [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) da un altro thread (avviato da un gestore di CTRL+INTERR o simili) o per duplicare uno script in un nuovo thread tramite [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
-## <a name="remarks"></a>Osservazioni  
+## <a name="remarks"></a>Note  
  Nessuna di queste restrizioni si applica a un host che sceglie di implementare un'interfaccia a thread libero [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) e un modello dell'oggetto a thread libero. Un host simile può usare l'interfaccia [IActiveScript](../winscript/reference/iactivescript.md) da qualsiasi thread, senza alcuna restrizione.  
   
 ## <a name="see-also"></a>Vedere anche  

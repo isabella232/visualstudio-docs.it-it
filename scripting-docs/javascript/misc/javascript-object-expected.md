@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b9b6b17ac0e0aeeeeae99c39954bfd6b283fe2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007435"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573796"
 ---
 # <a name="javascript-object-expected"></a>Previsto oggetto JavaScript
-Si è provato a passare un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto da una funzione predefinita che prevede un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto. Funzioni predefinite diverse richiedono gli oggetti definiti in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (anziché gli oggetti definiti dall'host o un componente esterno come un controllo).  
+Si è tentato di passare un oggetto non [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] a una funzione predefinita che prevede un oggetto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Diverse funzioni predefinite richiedono oggetti definiti in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], anziché oggetti definiti dall'host o un componente esterno come un controllo.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Verificare che l'oggetto a cui che si sta passando come parametro è di tipo corretto.  
+- Verificare che l'oggetto passato come parametro sia del tipo corretto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetti e matrici](../../javascript/objects-and-arrays-javascript.md)   

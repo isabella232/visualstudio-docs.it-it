@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::NotifyChanged | Microsoft Docs
+title: 'IDebugDocumentTextExternalAuthor:: NotifyChanged | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1290de76f8bec5018ad83eb4499c3d92cbf9eba9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad02db80bd24a8a5ba96abaa61e85be9d69e553e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978536"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575947"
 ---
 # <a name="idebugdocumenttextexternalauthornotifychanged"></a>IDebugDocumentTextExternalAuthor::NotifyChanged
-Notifica all'host che l'origine del documento è stato modificato.  
+Notifica all'host che l'origine del documento è stata modificata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,7 +44,7 @@ HRESULT NotifyChanged();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato da un editor esterno dopo che un documento di debugger basate su file viene modificato e salvato per notificare all'host che l'origine del documento è stato modificato. L'host viene quindi aggiornato il documento dal file di origine.  
+ Questo metodo viene chiamato da un editor esterno dopo la modifica e il salvataggio di un documento del debugger basato su file per notificare all'host che l'origine del documento è stata modificata. L'host Aggiorna quindi il documento dal file di origine.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

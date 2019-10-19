@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugframe:: Getdocumentpositionwithname | Microsoft Docs'
+title: 'Metodo metodo ijsdebugframe:: GetDocumentPositionWithName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d3b909f3a3ebc672bf6d0a014b519de685b1677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b818ca4dc1ec4402973026668972507861c86f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558152"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575114"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>Metodo IJsDebugFrame::GetDocumentPositionWithName
-Restituisce la posizione corrente dello stack frame all'interno del documento a livello di utente.  
+Restituisce la posizione corrente di questo stack frame all'interno del documento a livello di utente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>Parametri  
  `pDocumentName`  
- [out] Per gli script statici, un URL al documento. Per gli script dinamici, viene restituito un nome che contiene il tipo di script (ad esempio, codice eval, codice di funzione e così via).  
+ out Per gli script statici, un URL da documentare. Per gli script dinamici, viene restituito un nome contenente il tipo di script, ad esempio il codice eval, il codice della funzione e così via.  
   
  `pLine`  
  [out] posizione della riga in base 1 all'interno del documento.  
@@ -48,7 +48,7 @@ HRESULT GetDocumentPositionWithName(
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

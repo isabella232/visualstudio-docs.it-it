@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDocumentAttr | Microsoft Docs
+title: 'IDebugDocumentHelper:: SetDocumentAttr | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c19e5b2091bf9dd30359f30e27019fa778b675
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2210557a1ca2b23d19d151d6fe6f3b5d25e7082
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948967"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574616"
 ---
 # <a name="idebugdocumenthelpersetdocumentattr"></a>IDebugDocumentHelper::SetDocumentAttr
 Imposta gli attributi per questo documento.  
@@ -37,7 +37,7 @@ HRESULT SetDocumentAttr(
   
 #### <a name="parameters"></a>Parametri  
  `pszAttributes`  
- [in] Gli attributi da applicare al documento.  
+ in Attributi da applicare al documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -50,5 +50,5 @@ HRESULT SetDocumentAttr(
  Questo metodo imposta gli attributi per questo documento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
  [Costanti TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

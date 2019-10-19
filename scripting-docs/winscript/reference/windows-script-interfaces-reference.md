@@ -1,5 +1,5 @@
 ---
-title: Riferimento di interfacce di Script di Windows | Microsoft Docs
+title: Informazioni di riferimento sulle interfacce Windows script | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3ccdac409b68c993fa59f164a5785ef7d22b022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a6b6c1f774cf6977186bc88a9dff5beb0f785ef
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840096"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572958"
 ---
 # <a name="windows-script-interfaces-reference"></a>Riferimenti interfacce Windows Script
-Le sezioni seguenti illustrano le interfacce Windows Script.  
+Le sezioni seguenti comprendono le interfacce Windows script.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Interfacce Script ActiveX](../../winscript/reference/active-script-interfaces.md)  
   
  [Interfacce metodo Script ActiveX](../../winscript/reference/active-script-authoring-interfaces.md)  

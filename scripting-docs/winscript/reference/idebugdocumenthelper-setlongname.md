@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetLongName | Microsoft Docs
+title: 'IDebugDocumentHelper:: selongname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10542b5e792f01c50d57bc3a7481d6b8c01090d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 312e60b7024cc2b93e0087c86fe78738c74df8c1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949006"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570033"
 ---
 # <a name="idebugdocumenthelpersetlongname"></a>IDebugDocumentHelper::SetLongName
 Imposta il nome lungo del documento.  
@@ -37,7 +37,7 @@ HRESULT SetLongName(
   
 #### <a name="parameters"></a>Parametri  
  `pszLongName`  
- [in] Stringa con terminazione null contenente il nome lungo del documento.  
+ in Stringa con terminazione null che contiene il nome lungo del documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT SetLongName(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo imposta un nuovo nome lungo del documento.  
+ Questo metodo imposta un nuovo nome lungo per il documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

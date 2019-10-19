@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06af2c509339d9499f66e1f267c54c69951e225
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b06b8c1f9282c42599c798030440c30450ef6dd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977812"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574010"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>Interfaccia IJsDebugStackWalker
-Rappresenta un percorso chiamate dello stack per un thread specificato.  
+Rappresenta un camminatore dello stack per un thread specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -27,19 +27,19 @@ Rappresenta un percorso chiamate dello stack per un thread specificato.
 IJsDebugStackWalker : public IUnknown;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 ### <a name="public-methods"></a>Metodi pubblici  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |----------|-----------------|  
 |[Metodo IJsDebugStackWalker::GetNext](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Ottiene il frame successivo.|  
   
 ## <a name="remarks"></a>Note  
- Pedoni stack possono essere creati solo quando la destinazione è stato arrestato e non sono valida una volta ripreso anche in questo caso il processo di destinazione.  
+ I Walkers dello stack possono essere creati solo quando la destinazione viene arrestata e non sono validi una volta che il processo di destinazione è stato nuovamente riavviato.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

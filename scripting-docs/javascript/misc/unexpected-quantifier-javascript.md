@@ -14,39 +14,39 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2070ec6ad01eb62c6be9b6b9acfc91cba7bc863d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005891"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572531"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Quantificatore imprevisto (JavaScript)
-Quando si crea un criterio di ricerca di espressioni regolari, è creato un elemento di modello con un fattore di ripetizioni non valido. Ad esempio, il criterio  
+Quando si compone il criterio di ricerca di espressioni regolari, è stato creato un elemento pattern con un fattore di ripetizione non valido. Ad esempio, il modello  
   
 ```js
 /^+/  
 ```  
   
- non è valido perché l'elemento ^ (inizio dell'input) non può avere un fattore di ripetizione. Nella tabella seguente elenca gli elementi che non possono avere i fattori di ripetizione.  
+ non è valido perché l'elemento ^ (inizio dell'input) non può avere un fattore di ripetizione. Nella tabella seguente sono elencati gli elementi che non possono avere fattori di ripetizione.  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
 |^|Inizio dell'input|  
-|$|Konec vstupu|  
+|$|Fine dell'input|  
 |\b|Confine di parola|  
-|\B|Non costituisce un confine|  
+|\B|Confine non alfanumerico|  
 |*|Zero o più ripetizioni|  
-|+|Uno o più ripetizioni|  
-|?|Uno o zero ripetizioni|  
-|{n}|n ripetizioni|  
-|{n,}|n o altre ripetizioni|  
-|{n,m}|Da n a m ripetizioni, inclusive|  
+|+|Una o più ripetizioni|  
+|?|Nessuna o una ripetizione|  
+|n|n ripetizioni|  
+|{n,}|n o più ripetizioni|  
+|{n, m}|Da n a m ripetizioni incluse|  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Verificare che l'elemento di modello di ricerca contiene solo i fattori di ripetizioni legali.  
+- Verificare che l'elemento del criterio di ricerca contenga solo fattori di ripetizione legali.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto di espressione regolare](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintassi di espressione regolare (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ @No__t_1 [oggetto Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Sintassi delle espressioni regolari (JavaScript)](https://msdn.microsoft.com/library/1400241x)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents Interface | Microsoft Docs
+title: Interfaccia IDebugApplicationNodeEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,26 +13,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7412e258c7f67f44bde6f69b593a1eecb1d84e07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2f72290e331a51f1b33746b22a6526c9bfbac7b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822275"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574722"
 ---
 # <a name="idebugapplicationnodeevents-interface"></a>Interfaccia IDebugApplicationNodeEvents
 Specifica l'interfaccia evento per l'interfaccia `IDebugApplicationNode`.  
   
- Oltre ai metodi ereditati da `IUnknown`, il `IDebugApplicationNodeEvents` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, l'interfaccia `IDebugApplicationNodeEvents` espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|Gestisce l'evento quando un nodo figlio viene aggiunto a un oggetto nodo dell'applicazione di debug.|  
-|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|Gestisce l'evento quando un nodo figlio viene rimosso da un oggetto nodo dell'applicazione di debug.|  
-|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|Gestisce un evento per indicare che l'oggetto nodo dell'applicazione di debug è stato scollegato da un nodo padre.|  
-|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Gestisce un evento per indicare che l'oggetto nodo dell'applicazione di debug è stato collegato a un nodo padre.|  
+|[IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)|Gestisce l'evento quando viene aggiunto un nodo figlio a un oggetto del nodo dell'applicazione di debug.|  
+|[IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)|Gestisce l'evento quando un nodo figlio viene rimosso da un oggetto del nodo dell'applicazione di debug.|  
+|[IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)|Gestisce un evento che indica che l'oggetto del nodo dell'applicazione di debug è stato scollegato da un nodo padre.|  
+|[IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)|Gestisce un evento che indica che l'oggetto del nodo dell'applicazione di debug è stato associato a un nodo padre.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

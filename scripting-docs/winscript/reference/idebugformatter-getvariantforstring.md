@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetVariantForString | Microsoft Docs
+title: 'IDebugFormatter:: GetVariantForString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea6cd1f77481282700de492e2857046044a04e2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc230caa861444b10b463e5786d5f8cb93ec32f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979289"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571524"
 ---
 # <a name="idebugformattergetvariantforstring"></a>IDebugFormatter::GetVariantForString
 Restituisce una variante che contiene la stringa specificata.  
@@ -38,10 +38,10 @@ HRESULT GetVariantForString(
   
 #### <a name="parameters"></a>Parametri  
  `pwstrValue`  
- [in] Stringa da memorizzare in un VARIANT.  
+ in Stringa da archiviare in una variante.  
   
  `pvar`  
- [out] VARIANT contenente `pwstrValue`.  
+ out VARIANT contenente `pwstrValue`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
