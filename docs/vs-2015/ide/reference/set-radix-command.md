@@ -11,40 +11,36 @@ helpviewer_keywords:
 - Debug.SetRadix command
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bee6368931dc47b78186ec870039ab292960fa77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 050cbe6e639f4177694d9af3ecbc0b768065b7d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163311"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665411"
 ---
 # <a name="set-radix-command"></a>Comando Imposta radice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Imposta o restituisce la base numerica usata per visualizzare i valori integer.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-Debug.SetRadix [10 | 16 | hex | dec]  
-```  
-  
-## <a name="arguments"></a>Argomenti  
- `10` o `16` o `hex` o `dec`  
- facoltativo. Indica un valore decimale (10 o dec) o esadecimale (16 o hex). Se un argomento viene omesso, viene restituito il valore della radice corrente.  
-  
-## <a name="example"></a>Esempio  
- Nell'esempio che segue, l'ambiente viene impostato per la visualizzazione dei valori integer in formato esadecimale.  
-  
-```  
->Debug.SetRadix hex  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
- [Command Window](../../ide/reference/command-window.md)  (Finestra di comando)  
- [Find/Command Box](../../ide/find-command-box.md)  (Casella Trova/Comando)  
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Imposta o restituisce la base numerica usata per visualizzare i valori integer.
+
+## <a name="syntax"></a>Sintassi
+
+```
+Debug.SetRadix [10 | 16 | hex | dec]
+```
+
+## <a name="arguments"></a>Argomenti
+ `10` o `16` o `hex` o `dec` facoltativo. Indica un valore decimale (10 o dec) o esadecimale (16 o hex). Se un argomento viene omesso, viene restituito il valore della radice corrente.
+
+## <a name="example"></a>Esempio
+ Nell'esempio che segue, l'ambiente viene impostato per la visualizzazione dei valori integer in formato esadecimale.
+
+```
+>Debug.SetRadix hex
+```
+
+## <a name="see-also"></a>Vedere anche
+ [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md) [finestra](../../ide/reference/command-window.md) di comando [Trova/comando riquadro](../../ide/find-command-box.md) di [Visual Studio alias di comando](../../ide/reference/visual-studio-command-aliases.md)

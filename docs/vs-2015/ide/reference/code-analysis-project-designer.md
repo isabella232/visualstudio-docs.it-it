@@ -11,59 +11,45 @@ helpviewer_keywords:
 - Project Designer, Code Analysis page
 ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62419936"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660861"
 ---
 # <a name="code-analysis-project-designer"></a>Analisi del codice, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice. Lo strumento restituisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.  
-  
-## <a name="uielement-list"></a>Elenco UIElement  
- Abilita l'analisi del codice  
- Abilita o disabilita l'analisi del codice per il progetto.  
-  
- Regole di progettazione  
- Abilita o disabilita le regole di progettazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di globalizzazione  
- Abilita o disabilita le regole di globalizzazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di interoperabilità  
- Abilita o disabilita le regole di interoperabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di manutenibilità  
- Abilita o disabilita le regole di manutenibilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di mobilità  
- Abilita o disabilita le regole di mobilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di denominazione  
- Abilita o disabilita le regole di denominazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di prestazioni  
- Abilita o disabilita le regole per le prestazioni. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di portabilità  
- Abilita o disabilita le regole di portabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di affidabilità  
- Abilita o disabilita le regole di affidabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di sicurezza  
- Abilita o disabilita le regole di sicurezza. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
- Regole di utilizzo  
- Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Avvisi dell'analisi del codice gestito](../../code-quality/code-analysis-for-managed-code-warnings.md)   
- [Panoramica dell'analisi codice gestito](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [Procedura dettagliata: analisi del codice gestito per l'identificazione di errori del codice](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+Contiene lo strumento di analisi del codice che è possibile scegliere di eseguire nel codice. Lo strumento restituisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.
+
+## <a name="uielement-list"></a>Elenco UIElement
+ Abilitare l'analisi codice consente di abilitare o disabilitare l'analisi del codice per il progetto.
+
+ Le regole di progettazione abilitano o disabilitano le regole di progettazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di globalizzazione abilitano o disabilitano le regole di globalizzazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di interoperabilità abilitano o disabilitano le regole di interoperabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di gestibilità abilitano o disabilitano le regole di gestibilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di mobilità abilitano o disabilitano le regole di mobilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di denominazione abilitano o disabilitano le regole di denominazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole per le prestazioni abilitano o disabilitano le regole relative alle prestazioni. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di portabilità abilitano o disabilitano le regole di portabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di affidabilità abilitano o disabilitano le regole di affidabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di sicurezza abilitano o disabilitano le regole di sicurezza. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+ Le regole di utilizzo abilitano o disabilitano le regole di utilizzo. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
+
+## <a name="see-also"></a>Vedere anche
+ [Analisi del codice per gli avvisi del codice](../../code-quality/code-analysis-for-managed-code-warnings.md) gestito [analisi codice per la panoramica del codice gestito](../../code-quality/code-analysis-for-managed-code-overview.md) [procedura dettagliata: analisi del codice gestito per i difetti del codice](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
