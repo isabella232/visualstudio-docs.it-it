@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugdatatarget:: GetThreadContext | Microsoft Docs'
+title: 'Metodo metodo ijsdebugdatatarget:: GetThreadContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7904ef81eb900c6466069267101f30d89e362a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da5722553b448605129adcf32cfaa52e2dc76352
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582833"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577650"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>Metodo IJsDebugDataTarget::GetThreadContext
-Recupera il contesto del thread specificato.  
+Recupera il contesto per il thread specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,21 +38,21 @@ HRESULT GetThreadContext(
   
 #### <a name="parameters"></a>Parametri  
  `threadId`  
- [in] Thread in esecuzione nel processo di destinazione.  
+ in Thread in esecuzione nel processo di destinazione.  
   
  `contextFlags`  
- [in] Specifica i flag di contesto. Si tratta dello stesso il campo ContextFlags di CONTEXT (per altre informazioni, vedere Winnt. h, cercare CONTEXT_ALL).  
+ in Specifica i flag di contesto. Corrisponde al campo ContextFlags del contesto. per ulteriori informazioni, vedere winnt. h, cercare CONTEXT_ALL.  
   
  `contextSize`  
- [in] Le dimensioni del buffer specificata da pContext.  
+ in Dimensioni del buffer specificato da pContext.  
   
  `pContext`  
- [out] Riceve la struttura del CONTEXT specifica della piattaforma nel buffer specificato da pContext.  
+ out Riceve la struttura del contesto specifica della piattaforma nel buffer specificato da pContext.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

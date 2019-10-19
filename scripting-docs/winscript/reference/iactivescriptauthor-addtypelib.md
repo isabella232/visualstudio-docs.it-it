@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddTypeLib | Microsoft Docs
+title: 'IActiveScriptAuthor:: AddTypeLib | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5967438c620a89df98c74c8824809b8fdaf739a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd96732a905d3fc0732ccfeaf2b65ada82957f4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935484"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577220"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
-Aggiunge una libreria dei tipi dello spazio dei nomi per lo script.  
+Aggiunge una libreria dei tipi allo spazio dei nomi per lo script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,16 +40,16 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parametri  
  `rguidTypeLib`  
- [in] Il CLSID (identificatore di classe) della libreria dei tipi da aggiungere.  
+ in Identificatore di classe (CLSID) della libreria dei tipi da aggiungere.  
   
  `dwMajor`  
- [in] Il numero di versione principale.  
+ in Numero di versione principale.  
   
  `dwMinor`  
- [in] Il numero di versione secondario.  
+ in Numero della versione secondaria.  
   
  `dwFlags`  
- [in] Non utilizzato.  
+ in Non utilizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -59,9 +59,9 @@ HRESULT AddTypeLib(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo chiama `LoadTypeLib` per caricare la libreria dei tipi. Al termine dell'operazione, questo metodo chiama `IActiveScriptAuthor::AddNamedItem` per aggiungere le informazioni sul tipo.  
+ Questo metodo chiama `LoadTypeLib` per caricare la libreria dei tipi. Al termine dell'operazione, questo metodo chiama `IActiveScriptAuthor::AddNamedItem` per aggiungere informazioni sul tipo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
+ @No__t_1 [IActiveScriptAuthor:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)  
  [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

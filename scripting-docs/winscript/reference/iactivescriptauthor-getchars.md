@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetChars | Microsoft Docs
+title: 'IActiveScriptAuthor:: GetChars | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ce2b46d65c2ce92111bc4b6f44f66ce9dc4ce5f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935373"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576248"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
-Restituisce il set di caratteri di completamento per un contesto di richiesta di completamento.  
+Restituisce il set di caratteri di completamento per un contesto di completamento richiesto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,19 +38,19 @@ HRESULT GetChars(
   
 #### <a name="parameters"></a>Parametri  
  `fRequestedList`  
- [in] Il contesto di richiesta di completamento.  
+ in Contesto di completamento richiesto.  
   
 |Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
-|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Richiede l'enumerazione di sinistra.|  
+|SCRIPT_CMPL_ENUM_TRIGGER|0x0001|Richiede l'enumerazione del lato sinistro.|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|Richiede il contesto di completamento del membro.|  
 |SCRIPT_CMPL_PARAM_TRIGGER|0x0003|Richiede l'elenco di parametri.|  
-|SCRIPT_CMPL_COMMIT|0x0004|Completamento delle richieste dell'elenco di parametri.|  
+|SCRIPT_CMPL_COMMIT|0x0004|Richiede il completamento dell'elenco dei parametri.|  
   
  `pbstrChars`  
- [out] I caratteri che corrispondono al contesto di richiesta di completamento.  
+ out Caratteri che corrispondono al contesto di completamento richiesto.  
   
-|`fRequestedList` Parametro|Caratteri restituiti|  
+|parametro `fRequestedList`|Caratteri restituiti|  
 |--------------------------------|-------------------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|"."|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|"="|  

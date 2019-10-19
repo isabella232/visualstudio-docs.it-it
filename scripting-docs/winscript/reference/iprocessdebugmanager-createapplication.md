@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateApplication | Microsoft Docs
+title: 'IProcessDebugManager:: CreateApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d7f2246b327393a810170f5b133f2885186c3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5be4c67168a43ec405a6d4ed857b9772fdddd1e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944801"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577103"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
-Crea un nuovo oggetto di applicazione di debug per questa applicazione.  
+Crea un nuovo oggetto applicazione di debug per questa applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT CreateApplication(
   
 #### <a name="parameters"></a>Parametri  
  `ppda`  
- [out] L'oggetto di applicazione di debug per questa applicazione.  
+ out Oggetto applicazione di debug per l'applicazione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,8 +47,8 @@ HRESULT CreateApplication(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- L'oggetto creato da questo metodo non ha un nome e non viene aggiunto all'esecuzione elenco delle applicazioni. Usare il `IProcessDebugManager::AddApplication` per aggiungere l'applicazione di debug per l'elenco di applicazioni.  
+ L'oggetto creato da questo metodo non ha alcun nome e non viene aggiunto all'elenco di applicazioni in esecuzione. Usare il `IProcessDebugManager::AddApplication` per aggiungere l'applicazione di debug all'elenco di applicazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   
+ [Interfaccia IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)    
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

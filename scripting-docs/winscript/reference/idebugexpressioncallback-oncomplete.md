@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionCallBack::onComplete | Microsoft Docs
+title: 'IDebugExpressionCallBack:: OnComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bcadc8c9d4fe8c1991db19483673a36bf5c0b90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fd142cc7ecbcd984be1943da05fa782260b10f8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946303"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576418"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
 Indica che la valutazione dell'espressione è stata completata.  
@@ -44,8 +44,8 @@ HRESULT onComplete();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato una volta completata la valutazione dell'espressione. Il `IDebugExpression::GetResultAsString` metodo può essere chiamato dall'interno di questo gestore eventi.  
+ Questo metodo viene chiamato quando la valutazione dell'espressione è completa. Il metodo `IDebugExpression::GetResultAsString` può essere chiamato dall'interno di questo gestore eventi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugExpressionCallBack Interface](../../winscript/reference/idebugexpressioncallback-interface.md)   
+ [Interfaccia IDebugExpressionCallBack](../../winscript/reference/idebugexpressioncallback-interface.md)    
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

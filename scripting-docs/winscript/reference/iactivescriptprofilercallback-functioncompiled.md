@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::FunctionCompiled | Microsoft Docs
+title: 'IActiveScriptProfilerCallback:: FunctionCompiled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a039f7a682babebdccad276adce55e69bb8e0bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a17ce7548a6524df6911cdf952393020472b88ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993319"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576466"
 ---
 # <a name="iactivescriptprofilercallbackfunctioncompiled"></a>IActiveScriptProfilerCallback::FunctionCompiled
-Notifica al profiler che la creazione di script del motore ha rilevato una funzione quando la compilazione di uno script.  
+Notifica all'oggetto profiler che il motore di script ha rilevato una funzione durante la compilazione di uno script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,25 +38,25 @@ HRESULT FunctionCompiled(
   
 #### <a name="parameters"></a>Parametri  
  `functionId`  
- [in] ID univoco della funzione. Questo ID viene assegnato dal motore di script.  
+ in ID univoco della funzione. Questo ID viene assegnato dal motore di scripting.  
   
  `scriptId`  
- [in] ID univoco dello script che fa parte della funzione.  
+ in ID univoco dello script di cui fa parte la funzione.  
   
  `pwszFunctionName`  
- [in] Il nome della funzione, o null per una funzione anonima.  
+ in Nome della funzione o null per una funzione anonima.  
   
  `pwszFunctionNameHint`  
- [in] Nome della funzione, o null se il motore di scripting non deduce qualsiasi nome dedotto.  
+ in Nome dedotto della funzione o null se il motore di script non deduce alcun nome.  
   
  `pIDebugDocumentContext`  
- [in] Se disponibile, il puntatore a un `IUnknown` interfaccia che il profiler deve eseguire una query per un [interfaccia IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) puntatore. In caso contrario, Null.  
+ in Se disponibile, il puntatore a un'interfaccia `IUnknown` cui il profiler deve eseguire una query per un puntatore di [interfaccia IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) . In caso contrario, Null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Il valore restituito di questo metodo viene ignorato dal motore di script.  
+ Il valore restituito di questo metodo viene ignorato dal motore di scripting.  
   
 ## <a name="remarks"></a>Note  
- Il motore di scripting può offrire il contesto del documento solo se supportato dall'host.  
+ Il motore di scripting può fornire il contesto del documento solo se è supportato dall'host.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

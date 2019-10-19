@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDescriptionString | Microsoft Docs
+title: 'IDebugStackFrame:: GetDescriptionString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f870c6dbc654f8465d201c53443228153ce4a68b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb29574d240a02073721046cec65bdf483b3eb0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934605"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576740"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-Restituisce una descrizione breve o lungo testuale del frame dello stack.  
+Restituisce una descrizione testuale breve o lungo del stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>Parametri  
  `fLong`  
- [in] Flag, dove `TRUE` restituisce una descrizione lunga e `FALSE` restituisce una breve descrizione.  
+ in Flag, dove `TRUE` restituisce una descrizione estesa e `FALSE` restituisce una breve descrizione.  
   
  `pbstrDescription`  
- [out] La descrizione del frame dello stack.  
+ out Descrizione della stack frame.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,7 +51,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- In genere, se `fLong` è `FALSE`, questo metodo fornisce solo il nome della funzione associato al frame dello stack. Quando `fLong` è `TRUE`, questo metodo può anche fornire i parametri della funzione e altre informazioni rilevanti.  
+ In genere, se `fLong` è `FALSE`, questo metodo fornisce solo il nome della funzione associata al stack frame. Quando `fLong` è `TRUE`, questo metodo può anche fornire i parametri della funzione e altre informazioni rilevanti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

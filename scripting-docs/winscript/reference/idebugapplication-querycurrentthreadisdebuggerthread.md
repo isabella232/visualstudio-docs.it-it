@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::QueryCurrentThreadIsDebuggerThread | Microsoft Docs
+title: 'IDebugApplication:: QueryCurrentThreadIsDebuggerThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ed53bcdb5e0d613a757c0c60f4791b0c59e3476
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f70cde752506919d90bf963d010ebfc7abf5e88
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990808"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577207"
 ---
 # <a name="idebugapplicationquerycurrentthreadisdebuggerthread"></a>IDebugApplication::QueryCurrentThreadIsDebuggerThread
-Determina se il thread corrente in esecuzione il thread del debugger.  
+Determina se il thread in esecuzione corrente è il thread del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,11 +41,11 @@ HRESULT QueryCurrentThreadIsDebuggerThread();
   
 |Value|Descrizione|  
 |-----------|-----------------|  
-|`S_OK`|Il metodo ha avuto esito positivo e il thread di esecuzione corrente è il thread del debugger.|  
-|`S_FALSE`|Il thread di esecuzione corrente non è il thread del debugger.|  
+|`S_OK`|Il metodo ha avuto esito positivo e il thread attualmente in esecuzione è il thread del debugger.|  
+|`S_FALSE`|Il thread attualmente in esecuzione non è il thread del debugger.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo determina se il thread di esecuzione corrente è il thread del debugger.  
+ Questo metodo determina se il thread in esecuzione corrente è il thread del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

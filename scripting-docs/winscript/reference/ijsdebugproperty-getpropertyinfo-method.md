@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugproperty:: GetPropertyInfo | Microsoft Docs'
+title: 'Metodo metodo ijsdebugproperty:: GetPropertyInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0769bf137845655c3fe0bf87bf0a57c6c6cbc09e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf56189c42ef5c696441426191a6850d03ade416
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977771"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577322"
 ---
 # <a name="ijsdebugpropertygetpropertyinfo-method"></a>Metodo IJsDebugProperty::GetPropertyInfo
-Ottiene le informazioni di questo oggetto.  
+Ottiene informazioni per questo oggetto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,15 +36,15 @@ HRESULT GetPropertyInfo(
   
 #### <a name="parameters"></a>Parametri  
  `nRadix`  
- [in] Radice da utilizzare.  
+ in Radice da usare.  
   
  `pPropertyInfo`  
- [out] Informazioni sull'oggetto.  
+ out Informazioni sull'oggetto.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugProperty](../../winscript/reference/ijsdebugproperty-interface.md)

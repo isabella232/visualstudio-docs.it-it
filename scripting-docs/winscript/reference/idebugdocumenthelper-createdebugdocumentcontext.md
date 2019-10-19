@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft Docs
+title: 'IDebugDocumentHelper:: CreateDebugDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2dddfc76f2bbc3e629b2d48febb6b582a3a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a039b5c4de410e67dc2dfb2859e1f4cc8b1739
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783171"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576995"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
-Crea un nuovo contesto di documento di debug.  
+Crea un nuovo contesto del documento di debug.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Parametri  
  `iCharPos`  
- [in] Posizione di inizio del contenuto del documento di debug.  
+ in Percorso dell'inizio del contenuto del documento di debug.  
   
  `cChars`  
- [in] Numero di caratteri nel contesto.  
+ in Numero di caratteri nel contesto.  
   
  `ppddc`  
- [out] Il nuovo contesto di documento di debug.  
+ out Nuovo contesto del documento di debug.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -55,7 +55,7 @@ HRESULT CreateDebugDocumentContext(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo consente all'host creare un nuovo contesto di documento di debug.  
+ Questo metodo consente all'host di creare un nuovo contesto del documento di debug.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
