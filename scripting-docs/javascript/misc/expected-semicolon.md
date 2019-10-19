@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d9a36a36c3783048cdb7afb6c06da09bd21456
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433721"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576456"
 ---
 # <a name="expected-"></a>Previsto ';'
-Si è tentato di inserire più di un'istruzione su una riga non è necessario separarli con punti e virgola. Un punto e virgola viene usato per terminare le istruzioni. Sebbene sia possibile inserire molte istruzioni in una singola riga, ognuno di essi deve essere delimitato dal successivo con un punto e virgola.  
+Si è provato a inserire più istruzioni su una riga, ma non sono state separate da punti e virgola. I punti e virgola vengono utilizzati per terminare le istruzioni. Sebbene sia possibile inserire più istruzioni su una sola riga, ciascuna di esse deve essere delimitata dalla successiva con un punto e virgola.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Contrassegnare la fine di ogni istruzione SELECT con un punto e virgola.  
+- Contrassegnare la fine di ogni istruzione con un punto e virgola.  
   
-- Assicurarsi che le chiamate di funzione usano le parentesi in modo corretto.  
+- Assicurarsi che le chiamate di funzione usino le parentesi correttamente.  
   
-- Assicurarsi che non omesso di un punto e virgola all'interno dell'intestazione di una **per** ciclo.  
+- Assicurarsi di non aver dimenticato i punti e virgola all'interno dell'intestazione di un ciclo **for** .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scrittura di codice JavaScript](../../javascript/writing-javascript-code.md)
