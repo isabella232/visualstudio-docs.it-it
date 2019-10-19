@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::SetNextStatement | Microsoft Docs
+title: 'ISetNextStatement:: SetNextStatement | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f4add20384684b24a630a0799c50a9aaae58034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8b940e603deb0aa9715e89b49eb1afdd28832ac
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786295"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571915"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
-Questo metodo aggiorna il contesto del codice successivo che è possibile eseguire l'interprete di script.  
+Questo metodo aggiorna il contesto di codice successivo che può essere eseguito dall'interprete di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,10 +36,10 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parametri  
  `pStackFrame`  
- [in] Puntatore a un oggetto stack frame.  
+ in Puntatore a un oggetto stack frame.  
   
  `pCodeContext`  
- [in] Puntatore a un oggetto di contesto del codice.  
+ in Puntatore a un oggetto contesto del codice.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
