@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsenumdebugproperty:: GetCount | Microsoft Docs'
+title: 'Metodo metodo ijsenumdebugproperty:: GetCount | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb465bf4763e1e211d27990ac7740f8d21ec5368
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa78234b071d7579b7640465efdb4f8b0aac1bbd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977694"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573994"
 ---
 # <a name="ijsenumdebugpropertygetcount-method"></a>Metodo IJsEnumDebugProperty::GetCount
 Ottiene il numero di proprietà dell'oggetto.  
@@ -35,12 +35,12 @@ HRESULT GetCount(
   
 #### <a name="parameters"></a>Parametri  
  `pCount`  
- [out] Il numero di proprietà.  
+ out Numero di proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsEnumDebugProperty](../../winscript/reference/ijsenumdebugproperty-interface.md)

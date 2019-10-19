@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetDisplayString | Microsoft Docs
+title: 'IPerPropertyBrowsing2:: GetDisplayString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6f63db8d9c032b8e880f05d4d21e50fd56c74e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc702ad15d1aba04bf991c04b585728afde4fb41
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944866"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571460"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
-Ottiene una stringa da visualizzare i tipi che non sono intrinsecamente visualizzabili il testo restituito è un nome che descrive la proprietà e può essere visualizzata nell'interfaccia utente del chiamante.  
+Ottiene una stringa per visualizzare i tipi che non sono intrinsecamente visualizzabili il testo restituito è un nome che descrive la proprietà e può essere visualizzato nell'interfaccia utente del chiamante.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,16 +38,16 @@ HRESULT GetDisplayString(
   
 #### <a name="parameters"></a>Parametri  
  `dispid`  
- [in] ID dispatch della proprietà il cui nome visualizzato è richiesta.  
+ in Identificatore di invio della proprietà il cui nome visualizzato è richiesto.  
   
  `pBstr`  
- [out] Puntatore per il `BSTR` contenente il nome visualizzato per la proprietà identificata da `dispID`.  
+ out Puntatore al `BSTR` contenente il nome visualizzato per la proprietà identificata da `dispID`.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore valido `HRESULT`, in genere `S_OK`.  
+ Restituisce un `HRESULT` valido, in genere `S_OK`.  
   
 ## <a name="remarks"></a>Note  
- La stringa restituita non è un valore consentito della proprietà. È semplicemente una visualizzazione di stringa della proprietà.  
+ La stringa restituita non è un valore valido della proprietà. Si tratta semplicemente di una visualizzazione di stringa della proprietà.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

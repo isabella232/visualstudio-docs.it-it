@@ -1,5 +1,5 @@
 ---
-title: IDispError::QueryErrorInfo | Microsoft Docs
+title: 'IDispError:: QueryErrorInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 828497eac8bb2751baeca8b1fe19b5aeb5aae6a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ccfcb020faf25fbe1723a384ff08aefcf55b56d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446812"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573082"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
 Recupera un determinato tipo di informazioni sull'errore.  
@@ -38,10 +38,10 @@ HRESULT QueryErrorInfo(
   
 #### <a name="parameters"></a>Parametri  
  `guidErrorType`  
- [in] Tipo di errore specificando GUID.  
+ in GUID che specifica il tipo di errore.  
   
  `ppde`  
- [out] Specifica l'oggetto IDispError.  
+ out Specifica l'oggetto IDispError.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,7 +51,7 @@ HRESULT QueryErrorInfo(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Il `QueryErrorInfo` metodo recupera un determinato tipo di informazioni sull'errore.  
+ Il metodo `QueryErrorInfo` recupera un determinato tipo di informazioni sull'errore.  
   
 > [!NOTE]
 > Questo metodo non è implementato.  

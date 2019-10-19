@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Close | Microsoft Docs
+title: 'IDebugApplicationNode:: Close | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c634fd154c2470b1a154e5d1c9e97419a2e2e2b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 928dc94a5d700b2cad6a7acfb59a409240be7dc3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990520"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574834"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
-Fa sì che questa applicazione per rilasciare tutti i riferimenti e passare a uno stato inattivo.  
+Fa in modo che l'applicazione rilasci tutti i riferimenti e entri in uno stato inattivo.  
   
 ## <a name="syntax"></a>Sintassi  
   

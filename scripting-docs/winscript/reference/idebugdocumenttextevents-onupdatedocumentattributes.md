@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onUpdateDocumentAttributes | Microsoft Docs
+title: 'IDebugDocumentTextEvents:: onUpdateDocumentAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef8791a68086c02b7e1cc8d0a603deba63943af4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c256d2cc6d826a72eb369cda0ad1e5f108e909bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946677"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576039"
 ---
 # <a name="idebugdocumenttexteventsonupdatedocumentattributes"></a>IDebugDocumentTextEvents::onUpdateDocumentAttributes
-Indica che gli attributi del documento modificato.  
+Indica che gli attributi del documento sono stati modificati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT onUpdateDocumentAttributes(
   
 #### <a name="parameters"></a>Parametri  
  `textdocattr`  
- [in] Attributi del nuovo documento.  
+ in Nuovi attributi del documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -50,5 +50,5 @@ HRESULT onUpdateDocumentAttributes(
  Questo metodo indica che gli attributi del documento sono stati modificati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+ [Interfaccia IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)    
  [Costanti TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

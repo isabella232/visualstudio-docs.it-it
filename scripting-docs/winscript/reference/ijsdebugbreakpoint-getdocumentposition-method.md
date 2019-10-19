@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugbreakpoint:: Getdocumentposition | Microsoft Docs'
+title: 'Metodo metodo ijsdebugbreakpoint:: GetDocumentPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146eb26c887cd24d1eb7af858535fcecac62b41d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f3bc5aff0b7079e20e2bcd49189153d2ec20d9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583145"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577699"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>Metodo IJsDebugBreakPoint::GetDocumentPosition
-Restituisce la posizione dell'istruzione in cui è stata associata al punto di interruzione.  
+Restituisce la posizione dell'istruzione a cui è stato associato il punto di interruzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>Parametri  
  `pDocumentId`  
- [out] ID univoco per un documento di origine (puntatore a IDebugDocumentText).  
+ out ID univoco per un documento di origine (puntatore a IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] L'offset carattere in base zero dall'inizio dello script.  
+ out Offset carattere in base zero dall'inizio dello script.  
   
  `pStatementCharCount`  
- [out] La lunghezza dell'istruzione corrente, che inizia a * pCharacterOffset, in caratteri.  
+ out Lunghezza dell'istruzione corrente, che inizia da * pCharacterOffset, in caratteri.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

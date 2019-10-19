@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::InProgressAbort | Microsoft Docs
+title: 'IDebugSyncOperation:: InProgressAbort | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a794ea70d6d2fe937afb311e6961d53f22bd7ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40974c738c071e52648297ac90a0ab89d9681435
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004840"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576662"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
 Annulla un'operazione in corso in un altro thread.  
@@ -42,13 +42,13 @@ HRESULT InProgressAbort();
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_NOTIMPL`|L'operazione non può essere annullata.|  
+|`E_NOTIMPL`|Non è possibile annullare l'operazione.|  
 |`E_ABORT`|Non è stato possibile completare l'operazione.|  
   
 ## <a name="remarks"></a>Note  
- Il gestore di eseguire il Debug di processi chiama questo metodo dall'interno del thread debugger per annullare un'operazione che è in corso in un altro thread.  
+ Gestione debug processo chiama questo metodo dall'interno del thread del debugger per annullare un'operazione in corso in un altro thread.  
   
- Se il `InProgressAbort` metodo non è possibile completare l'operazione, viene restituito `E_ABORT` appena possibile. Questo metodo può restituire `E_NOTIMPL` se l'operazione non può essere annullata.  
+ Se il metodo `InProgressAbort` non è in grado di completare l'operazione, restituisce `E_ABORT` il prima possibile. Questo metodo può restituire `E_NOTIMPL` se l'operazione non può essere annullata.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

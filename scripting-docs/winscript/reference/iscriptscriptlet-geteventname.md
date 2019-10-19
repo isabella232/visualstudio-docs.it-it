@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetEventName | Microsoft Docs
+title: 'IScriptScriptlet:: GetEventName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56566c85aed88faadf740392ad3ec06aa848431e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc56514800ad8388badf6e13a7fa6761b816969d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786757"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561514"
 ---
 # <a name="iscriptscriptletgeteventname"></a>IScriptScriptlet::GetEventName
-Restituisce il nome dell'evento associato allo scriptlet.  
+Restituisce il nome dell'evento associato a scriptlet.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetEventName(
   
 #### <a name="parameters"></a>Parametri  
  `pbstr`  
- [out] Un buffer che contiene il nome dell'evento che è associato il `IScriptScriptlet` oggetto.  
+ out Buffer contenente il nome dell'evento associato all'oggetto `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

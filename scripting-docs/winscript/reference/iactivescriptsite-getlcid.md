@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetLCID | Microsoft Docs
+title: 'IActiveScriptSite:: GetLcid | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6ebcfec9764aae98f7d74ac98e0c88ecec7c4da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913ca23ac687fdd080a778afb1dcba2e4dcdd6b8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992772"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570733"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-Recupera l'identificatore delle impostazioni locali associato all'interfaccia utente dell'host. Il motore di script utilizza l'identificatore per verificare che le stringhe di errore e altri elementi dell'interfaccia utente generati dal motore vengano visualizzati nella lingua appropriata.  
+Recupera l'identificatore delle impostazioni locali associato all'interfaccia utente dell'host. Il motore di scripting usa l'identificatore per garantire che le stringhe di errore e altri elementi dell'interfaccia utente generati dal motore vengano visualizzati nella lingua appropriata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>Parametri  
  `plcid`  
- [out] Indirizzo di una variabile che riceve l'identificatore delle impostazioni locali per gli elementi dell'interfaccia utente visualizzato dal motore di script.  
+ out Indirizzo di una variabile che riceve l'identificatore delle impostazioni locali per gli elementi dell'interfaccia utente visualizzati dal motore di scripting.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -45,11 +45,11 @@ HRESULT GetLCID(
 |Valore restituito|Significato|  
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
-|`E_NOTIMPL`|Questo metodo non è implementato. Usare le impostazioni locali definiti dal sistema.|  
+|`E_NOTIMPL`|Questo metodo non è implementato. Utilizzare le impostazioni locali definite dal sistema.|  
 |`E_POINTER`|È stato specificato un puntatore non valido.|  
   
 ## <a name="remarks"></a>Note  
- Se questo metodo restituisce `E_NOTIMPL`, usare l'identificatore delle impostazioni locali definiti dal sistema.  
+ Se questo metodo restituisce `E_NOTIMPL`, è necessario utilizzare l'identificatore delle impostazioni locali definito dal sistema.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

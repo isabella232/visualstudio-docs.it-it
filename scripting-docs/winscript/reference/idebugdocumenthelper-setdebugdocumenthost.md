@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: Setdebugdocumenthost | Microsoft Docs'
+title: 'IDebugDocumentHelper:: SetDebugDocumentHost | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b32d14f3a7d65bee7bdb587a35dfe05bb06f5e1e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948993"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574650"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-Imposta il `IDebugDocumentHost` per questo documento.  
+Imposta la `IDebugDocumentHost` per questo documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>Parametri  
  `pddh`  
- [in] L'host di documenti di debug.  
+ in Host del documento di debug.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,8 +47,8 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Il `IDebugDocumentHost` interfaccia viene utilizzata per la colorazione della sintassi smart host, il recupero posticipato testo e la restituzione di oggetti di controllo per appena creata contesti del documento.  
+ L'interfaccia `IDebugDocumentHost` viene utilizzata per la colorazione della sintassi per smart host, per il recupero di testo posticipato e per la restituzione di oggetti di controllo per contesti di documento appena creati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
  [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

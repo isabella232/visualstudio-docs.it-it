@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugframe:: GetStackRange | Microsoft Docs'
+title: 'Metodo metodo ijsdebugframe:: GetStackRange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52dd6114d3ec462f91f8bce5e76f73c5487746ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ac3cbee9d16296632477f4128ec36370ab0d4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558216"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574047"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>Metodo IJsDebugFrame::GetStackRange
-Restituisce l'intervallo di indirizzi assoluti dello stack frame JavaScript logico.  
+Restituisce l'intervallo di indirizzi assoluto della stack frame JavaScript logica.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,18 +36,18 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>Parametri  
  `pStart`  
- [out] Bottom la maggior parte dei puntatori agli stack del frame.  
+ out Più basso puntatore dello stack del frame.  
   
  `pEnd`  
- [out] Primi la maggior parte delle puntatore di impilatore del frame.  
+ out Più alto puntatore all'impilatore del frame.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- Questo metodo è utile per riunire tracce dello stack con interfoliazione raccolte da più runtime. Inizio, fine dello stack puntatori possono includere più frame dello stack di computer fisico (per i frame di runtime JavaScript interpretati). Start > Fine man mano che aumenta lo stack dall'alto in basso indirizzo.  
+ Questo metodo è utile per riunire tracce dello stack Interleaved raccolte da più Runtime. I puntatori di stack iniziale, finale possono includere più stack frame del computer fisico (per i frame di runtime JavaScript interpretati). inizia > end Man mano che lo stack cresce dall'indirizzo alto a quello basso.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

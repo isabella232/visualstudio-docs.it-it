@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition | Microsoft Docs
+title: 'IActiveScriptError:: GetSourcePosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4446235a9584bc45fad84b6f92ecc02592e554f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76ed307f988a3e5bf77ff978c466eda6e5dfee18
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009624"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576890"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-Recupera la posizione nel codice sorgente in cui un errore durante il motore di script era in esecuzione uno script.  
+Recupera il percorso nel codice sorgente in cui si è verificato un errore durante l'esecuzione di uno script da parte del motore di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,16 +39,16 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>Parametri  
  `pdwSourceContext`  
- [out] Indirizzo di una variabile che riceve un cookie che identifica il contesto. L'interpretazione di questo parametro dipende dall'applicazione host.  
+ out Indirizzo di una variabile che riceve un cookie che identifica il contesto. L'interpretazione di questo parametro dipende dall'applicazione host.  
   
  `pulLineNumber`  
- [out] Indirizzo di una variabile che riceve il numero di riga nel file di origine in cui si è verificato l'errore.  
+ out Indirizzo di una variabile che riceve il numero di riga nel file di origine in cui si è verificato l'errore.  
   
  `pichCharPosition`  
- [out] Indirizzo di una variabile che riceve la posizione del carattere nella riga in cui si è verificato l'errore.  
+ out Indirizzo di una variabile che riceve la posizione del carattere nella riga in cui si è verificato l'errore.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce `S_OK` caso di esito positivo o `E_FAIL` se il percorso non è stato recuperato.  
+ Restituisce `S_OK` se ha esito positivo oppure `E_FAIL` se il percorso non è stato recuperato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

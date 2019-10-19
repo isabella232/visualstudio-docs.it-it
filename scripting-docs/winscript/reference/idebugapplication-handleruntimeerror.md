@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError | Microsoft Docs
+title: 'IDebugApplication:: HandleRuntimeError | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2fd4ba2b811cd6c4e38c10a0c68c5808f2c0870a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412430"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574326"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-Fa sì che il thread corrente bloccare e invia una notifica dell'errore per l'IDE di debug.  
+Determina il blocco del thread corrente e invia una notifica dell'errore all'IDE del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,19 +41,19 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>Parametri  
  `pErrorDebug`  
- [in] Errore verificatosi.  
+ in Errore che si è verificato.  
   
  `pScriptSite`  
- [in] Il sito dello script del thread.  
+ in Sito di script del thread.  
   
  `pbra`  
- [out] Azione da intraprendere quando il debugger consente di riprendere l'applicazione.  
+ out Azione da intraprendere quando il debugger riprende l'applicazione.  
   
  `perra`  
- [out] Azione da intraprendere quando il debugger consente di riprendere l'applicazione se si è verificato un errore.  
+ out Azione da intraprendere quando il debugger riprende l'applicazione se si verifica un errore.  
   
  `pfCallOnScriptError`  
- [out] Flag che è `TRUE` se il motore deve chiamare il `IActiveScriptSite::OnScriptError` (metodo).  
+ out Flag che è `TRUE` se il motore deve chiamare il metodo `IActiveScriptSite::OnScriptError`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -63,14 +63,14 @@ HRESULT HandleRuntimeError(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Un motore del linguaggio chiama questo metodo nel contesto di un thread che comporta un errore di run-time. Questo metodo fa sì che il thread corrente bloccare e invia una notifica di errore da inviare al debugger di IDE. Quando l'IDE di debug viene ripresa l'applicazione, questo metodo restituisce con l'azione da intraprendere.  
+ Un motore di linguaggio chiama questo metodo nel contesto di un thread che genera un errore di run-time. Questo metodo fa in modo che il thread corrente si blocchi e invii una notifica di errore da inviare all'IDE del debugger. Quando l'IDE del debugger riprende l'applicazione, questo metodo restituisce con l'azione da intraprendere.  
   
 > [!NOTE]
-> Mentre nell'errore in fase di esecuzione, il motore del linguaggio può essere chiamato dal thread di eseguire tali attività come enumerare gli stack frame o valutare le espressioni.  
+> Durante l'errore di run-time, il motore del linguaggio può essere chiamato dal thread per eseguire attività quali l'enumerazione di stack frame o la valutazione delle espressioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
- [Interfaccia IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)   
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
- [Enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ [Interfaccia IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)    
+ @No__t_1 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)  
+ @No__t_1 [enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [Enumerazione ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

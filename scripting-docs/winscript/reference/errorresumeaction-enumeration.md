@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d92b4b2e00b25a509d29511008876d781c8a577a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad9b8598cb027c96f6fb6fad6f3d343e6058cfdb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955174"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575855"
 ---
 # <a name="errorresumeaction-enumeration"></a>Enumerazione ERRORRESUMEACTION
 Descrive come proseguire a seguito di un errore di runtime.  
@@ -37,13 +37,13 @@ typedef enum tagERRORRESUMEACTION {
 } ERRORRESUMEACTION;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 |Member|Descrizione|  
 |------------|-----------------|  
 |ERRORRESUMEACTION_ReexecuteErrorStatement|Esegue nuovamente l'istruzione che ha generato l'errore.|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Consente il motore del linguaggio di gestire l'errore.|  
-|ERRORRESUMEACTION_SkipErrorStatement|Riprende l'esecuzione di codice che segue l'istruzione che ha generato l'errore.|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Consente al motore di linguaggio di gestire l'errore.|  
+|ERRORRESUMEACTION_SkipErrorStatement|Riprende l'esecuzione nel codice dopo l'istruzione che ha generato l'errore.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e strutture del debugger di script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

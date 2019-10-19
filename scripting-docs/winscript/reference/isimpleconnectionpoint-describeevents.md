@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents | Microsoft Docs
+title: ISimpleConnectionPoint::D escribeEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b5824f945ad25f177fc169b58157377bf53bcce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5000689d588fe3f63ec5408893187bba8d13d63
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786419"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571816"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-Restituisce il DISPID e il nome per ogni evento in un intervallo specificato di eventi.  
+Restituisce il DISPID e il nome per ogni evento in un intervallo di eventi specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,19 +41,19 @@ HRESULT DescribeEvents(
   
 #### <a name="parameters"></a>Parametri  
  `iEvent`  
- [in] Indice del primo evento da recuperare.  
+ in Indice del primo evento da recuperare.  
   
  `cEvents`  
- [in] Numero di eventi da recuperare.  
+ in Numero di eventi da recuperare.  
   
  `prgid`  
- [out] Matrice di DISPID di valori di evento.  
+ out Matrice di valori DISPID dell'evento.  
   
  `prgbstr`  
- [out] Matrice di nomi di eventi.  
+ out Matrice di nomi di evento.  
   
  `pcEventsFetched`  
- [out] Il numero effettivo di eventi recuperati.  
+ out Numero effettivo di eventi recuperati.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -61,11 +61,11 @@ HRESULT DescribeEvents(
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`S_FALSE`|Sono stati richiesti più eventi rispetto a quelle disponibili. Non disponibile sono rappresentati con DISPID_NULL e BSTR null.|  
-|`E_INVALIDARG`|Nessun elemento è stato possibile recuperare.|  
+|`S_FALSE`|Sono stati richiesti più eventi di quelli disponibili. Gli eventi non disponibili sono rappresentati con DISPID_NULL e un BSTR NULL.|  
+|`E_INVALIDARG`|Non è stato possibile recuperare gli elementi.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il DISPID e il nome per ogni evento in un intervallo specificato di eventi.  
+ Questo metodo restituisce il DISPID e il nome per ogni evento in un intervallo di eventi specificato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

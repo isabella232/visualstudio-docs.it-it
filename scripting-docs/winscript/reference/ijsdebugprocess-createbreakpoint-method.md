@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugprocess:: CreateBreakpoint | Microsoft Docs'
+title: 'Metodo metodo ijsdebugprocess:: CreateBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b398b93c2e7b5ad43abd35d385407b39c0c980f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0a4d595a11dc54829c467a0aace9601042fa08
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557972"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575100"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>Metodo IJsDebugProcess::CreateBreakPoint
 Imposta il punto di interruzione nella posizione del documento specificata.  
@@ -39,24 +39,24 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>Parametri  
  `documentId`  
- [in] Puntatore a IDebugDocumentText.  
+ in Puntatore a IDebugDocumentText.  
   
  `characterOffset`  
- [in] Offset carattere dall'inizio del file.  
+ in Offset carattere dall'inizio del file.  
   
  `characterCount`  
- [in] Lunghezza del testo del documento all'interno del quale deve essere inserito il punto di interruzione.  
+ in Lunghezza del testo del documento all'interno del quale deve essere inserito il punto di interruzione.  
   
  `isEnabled`  
- [in] Specifica se il punto di interruzione è abilitato.  
+ in Specifica se il punto di interruzione è abilitato.  
   
  `ppDebugBreakPoint`  
- [out] Oggetto che rappresenta il punto di interruzione che è stato creato.  
+ out Oggetto che rappresenta il punto di interruzione creato.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

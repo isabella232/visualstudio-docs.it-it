@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib | Microsoft Docs
+title: 'IActiveScript:: AddTypeLib | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 254a5133d42689020eaaae290a1016de4b848100
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955091"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575804"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-Aggiunge una libreria dei tipi per lo spazio dei nomi per lo script. Ciò è simile al `#include` direttiva in C/C++. Consente un set di elementi predefiniti, ad esempio le definizioni di classe, `typedefs`e da aggiungere all'ambiente di runtime disponibile per lo script di costanti denominate.  
+Aggiunge una libreria dei tipi allo spazio dei nomi per lo script. Questa operazione è simile alla direttiva `#include` in C/C++. Consente l'aggiunta di un set di elementi predefiniti come definizioni di classe, `typedefs` e costanti denominate all'ambiente di runtime disponibile per lo script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,20 +40,20 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parametri  
  `guidTypeLib`  
- [in] CLSID della libreria dei tipi da aggiungere.  
+ in CLSID della libreria dei tipi da aggiungere.  
   
  `dwMaj`  
- [in] Numero di versione principale.  
+ in Numero di versione principale.  
   
  `dwMin`  
- [in] Numero di versione secondario.  
+ in Numero di versione secondario.  
   
  `dwFlags`  
- [in] Flag di opzione. Può essere il seguente:  
+ in Flag di opzione. Può essere il seguente:  
   
 |Value|Significato|  
 |-----------|-------------|  
-|SCRIPTTYPELIB_ISCONTROL|La libreria dei tipi descrive un controllo ActiveX utilizzato dall'host.|  
+|SCRIPTTYPELIB_ISCONTROL|La libreria dei tipi descrive un controllo ActiveX usato dall'host.|  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -61,9 +61,9 @@ HRESULT AddTypeLib(
 |Valore restituito|Significato|  
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
-|`E_INVALIDARG`|Un argomento non valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato).|  
-|`TYPE_E_CANTLOADLIBRARY`|Non è stato possibile caricare la libreria dei tipi specificata.|  
+|`E_INVALIDARG`|Argomento non valido.|  
+|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting non è ancora stato caricato o inizializzato).|  
+|`TYPE_E_CANTLOADLIBRARY`|Impossibile caricare la libreria dei tipi specificata.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::CallableWaitForHandles | Microsoft Docs
+title: 'IDebugApplication110:: CallableWaitForHandles | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22af0e9dcf548bbd2f0f8c179b4889d5294eb284
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446386"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575083"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
-Attende che uno degli handle specificati per ricevere il segnale consentendo chiamata tra thread di essere pubblicata in questo thread. Questo metodo deve essere chiamato dal thread del debugger.  
+Attende che uno qualsiasi degli handle specificati venga segnalato mentre consente di inviare chiamate cross-thread a questo thread. Questo metodo deve essere chiamato dal thread del debugger.  
   
 > [!IMPORTANT]
-> [Interfaccia IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
+> L' [interfaccia IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) viene implementata da PDM v 11.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,10 +34,10 @@ HRESULT CallableWaitForHandles([in] DWORD handleCount, [in, size_is(handleCount)
   
 #### <a name="parameters"></a>Parametri  
  `handleCount`  
- Il numero di handle da attendere.  
+ Numero di handle da attendere.  
   
  `pHandles`  
- Il set di handle da attendere.  
+ Set di handle da attendere.  
   
  `pIndex`  
  Quando il valore HRESULT è S_OK, l'indice in `pHandles` per l'handle segnalato.  

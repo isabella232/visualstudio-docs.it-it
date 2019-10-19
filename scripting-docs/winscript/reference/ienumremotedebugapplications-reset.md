@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Reset | Microsoft Docs
+title: 'IEnumRemoteDebugApplications:: Reset | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cf00fa40f00e511f56763e6a497ea477bf686d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 664bac2b89c9d22b2c5a2d60e50e033746ec1f4f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962275"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575189"
 ---
 # <a name="ienumremotedebugapplicationsreset"></a>IEnumRemoteDebugApplications::Reset
-Reimposta una sequenza di enumerazione all'inizio.  
+Reimposta l'inizio di una sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,7 +44,7 @@ HRESULT Reset();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo reimposta una sequenza di enumerazione all'inizio.  
+ Questo metodo reimposta l'inizio di una sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebug:: OpenVirtualProcess | Microsoft Docs'
+title: 'Metodo IJsDebug:: OpenVirtualProcess | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3de39beb28a68ec3b8e0d76b17a7e914a464ecfe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583594"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577751"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>Metodo IJsDebug::OpenVirtualProcess
-Metodo factory utilizzato per creare un nuovo oggetto processo virtuale.  
+Metodo Factory utilizzato per creare un nuovo oggetto processo virtuale.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,16 +38,16 @@ HRESULT OpenVirtualProcess(
   
 #### <a name="parameters"></a>Parametri  
  `processId`  
- [in] Id del processo per connettere il debugger.  
+ in ID del processo a cui connettersi il debugger.  
   
  `runtimeJsBaseAddress`  
- [in] L'indirizzo di base in corrispondenza del quale il runtime di JavaScript è caricato nel processo di destinazione.  
+ in Indirizzo di base in cui il runtime JavaScript è stato caricato nel processo di destinazione.  
   
  `pDataTarget`  
- [in] Interfaccia fornita per eseguire query sullo stato del processo del debugger.  
+ in Interfaccia fornita dal debugger per eseguire una query per lo stato del processo.  
   
  `ppProcess`  
- [out] Nuovo oggetto processo di debug  
+ out Nuovo oggetto processo di debug  
   
 ## <a name="return-value"></a>Valore restituito  
   
@@ -55,7 +55,7 @@ HRESULT OpenVirtualProcess(
  Restituisce E_JsDEBUG_MISMATCHED_RUNTIME se Jscript9diag e Jscript9 non corrispondono.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebug](../../winscript/reference/ijsdebug-interface.md)

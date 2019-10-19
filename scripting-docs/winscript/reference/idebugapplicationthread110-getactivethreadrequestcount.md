@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::GetActiveThreadRequestCount | Microsoft Docs
+title: 'IDebugApplicationThread110:: GetActiveThreadRequestCount | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7f038c1d0958701a14899825a2adb0a11cf604d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440563"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574483"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
-Restituisce il numero di richieste di thread da thread del PDM cambio meccanismi che sono in corso. In genere, questo numero è 0 o 1. Tuttavia, il numero può essere maggiore se una chiamata di thread inizia l'elaborazione, ma attiva una chiamata sincrona all'esterno di thread, o in caso contrario, sospende il thread e consente le chiamate in ingresso da elaborare nuovamente (ad esempio, attivando un [ Interfaccia IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md) evento, che viene eseguita sul thread del debugger).  
+Restituisce il numero di richieste di thread dai meccanismi di cambio thread del PDM attualmente in fase di elaborazione. Questo numero è in genere 0 o 1. Tuttavia, il numero può essere maggiore se una chiamata al thread avvia l'elaborazione, ma attiva una chiamata sincrona fuori dal thread, oppure sospende il thread e consente di elaborare di nuovo le chiamate in ingresso, ad esempio attivando un [IRemoteDebugApplicationEvents ](../../winscript/reference/iremotedebugapplicationevents-interface.md)Evento di interfaccia, che viene emesso nel thread del debugger.  
   
 > [!IMPORTANT]
-> [Interfaccia IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
+> L' [interfaccia IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) viene implementata da PDM v 11.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -34,7 +34,7 @@ HRESULT GetActiveThreadRequestCount([out, annotation("_Out_")] UINT * puiThreadR
   
 #### <a name="parameters"></a>Parametri  
  `puiThreadRequests`  
- [out] Il numero di richieste di thread.  
+ out Numero di richieste di thread.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md)

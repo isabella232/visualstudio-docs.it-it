@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs
+title: 'IActiveScriptSiteDebugEx:: OnCanNotJITScriptErrorDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c643478da37b5a66c22b201ef8f8248df02e4ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7358d2b372f0801b8c45816e1fc36018b37799b2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992348"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572186"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Informa l'host su un errore in fase di esecuzione di script durante il processo di Debug di gestione non trova un debugger di script Just In Time.  
+Informa l'host sull'errore di run-time di uno script quando Gestione debug processo non trova un debugger di script just-in-time.  
   
- Per implementare un debugger nell'host, si consiglia di gestire [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Basato su un'azione dell'utente, l'host può collegare il debugger e tornare, o restituire l'avvio del debugger nel OnScriptErrorDebug `pfEnterDebugger` parametro. È anche necessario implementare questa interfaccia per ricevere le notifiche relative all'errore di runtime, anche se non sono presenti alcun debugger esterno che può essere interpretato dal gestore di eseguire il Debug del processo.  
+ Per implementare un debugger nell'host, è necessario gestire [IActiveScriptSiteDebug:: OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). In base a un'azione dell'utente, l'host può alleghiare il debugger e restituire o restituire l'avvio del debugger nel parametro di `pfEnterDebugger` OnScriptErrorDebug. È inoltre necessario implementare questa interfaccia per ottenere la notifica relativa all'errore di run-time anche se non sono presenti debugger esterni che possono essere interpretati dalla gestione del debug dei processi.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,10 +40,10 @@ HRESULT OnCanNotJITScriptErrorDebug(
   
 #### <a name="parameters"></a>Parametri  
  `pErrorDebug`  
- [in] Errore in fase di esecuzione che si è verificato.  
+ in Errore di run-time che si è verificato.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- [out] Se si desidera chiamare [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) se l'utente decide di continuare senza debug.  
+ out Indica se chiamare [IActiveScriptSiteDebug:: OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) se l'utente decide di continuare senza eseguire il debug.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -53,7 +53,7 @@ HRESULT OnCanNotJITScriptErrorDebug(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- È anche consigliabile implementare questa interfaccia per ricevere una notifica.  
+ È inoltre necessario implementare questa interfaccia per ricevere una notifica.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)

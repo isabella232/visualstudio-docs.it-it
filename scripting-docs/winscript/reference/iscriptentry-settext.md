@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetText | Microsoft Docs
+title: 'IScriptEntry:: SetText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17e716a7ad52cc5aeca18d02122edb9c457b14e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b39dcbd2b61e7236403948eaa91a76e0afee45
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787632"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573635"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
-Imposta il testo che corrisponde a un `IScriptEntry` blocco di script o codice sorgente che è contenuto in un `IScriptScriptlet` gestore dell'evento.  
+Imposta il testo che corrisponde a un blocco di script `IScriptEntry` o al codice sorgente contenuto in un gestore dell'evento `IScriptScriptlet`.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT SetText(
   
 #### <a name="parameters"></a>Parametri  
  `psz`  
- [in] Il testo del `IScriptEntry` blocco di script o del codice sorgente del `IScriptScriptlet` gestore dell'evento.  
+ in Testo del blocco di script `IScriptEntry` o codice sorgente del gestore dell'evento `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

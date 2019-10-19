@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetDeferredText | Microsoft Docs
+title: 'IDebugDocumentHost:: GetDeferredText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 273b4eb52b7263d34c347dff3a00479945b809df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446578"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569431"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
-Restituisce un intervallo di caratteri che sono state aggiunte mediante la `IDebugDocumentHelper::AddDeferredText` metodo, in modo che il documento originale.  
+Restituisce un intervallo di caratteri aggiunti utilizzando il metodo `IDebugDocumentHelper::AddDeferredText`, nel documento host originale.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,19 +41,19 @@ HRESULT GetDeferredText(
   
 #### <a name="parameters"></a>Parametri  
  `dwTextStartCookie`  
- [in] Cookie definito dall'host che rappresenta la posizione iniziale del testo.  
+ in Cookie definito dall'host che rappresenta la posizione iniziale del testo.  
   
  `pcharText`  
- [in, out] Un buffer di testo di carattere. Questo metodo non restituisce caratteri se questo parametro è `NULL`.  
+ [in, out] Buffer di testo di tipo carattere. Se questo parametro è `NULL`, questo metodo non restituisce caratteri.  
   
  `pstaTextAttr`  
- [in, out] Un buffer di attributi del carattere. Questo metodo non restituisce attributi se questo parametro è `NULL`.  
+ [in, out] Buffer dell'attributo character. Questo metodo non restituisce attributi se il parametro è `NULL`.  
   
  `pcNumChars`  
  [in, out] Indica il numero effettivo di caratteri/attributi restituiti. Questo parametro deve essere impostato su zero prima di chiamare questo metodo.  
   
  `cMaxChars`  
- [in] Il numero massimo di caratteri da restituire.  
+ in Numero massimo di caratteri da restituire.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -64,12 +64,12 @@ HRESULT GetDeferredText(
 |`E_NOTIMPL`|Il metodo non è implementato.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo può restituire `E_NOTIMPL`, se l'host non chiama `IDebugDocumentHelper::AddDeferredText`.  
+ Questo metodo può restituire `E_NOTIMPL` se l'host non chiama `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
-> Questo metodo restituisce il testo dal documento originale. L'host non tenere traccia di modifiche o altre modifiche al documento.  
+> Questo metodo restituisce il testo dal documento originale. L'host non tiene traccia delle modifiche o di altre modifiche apportate al documento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)    
+ @No__t_1 [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)  
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

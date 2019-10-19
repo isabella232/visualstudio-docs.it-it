@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition | Microsoft Docs
+title: 'IActiveScriptSiteDebug32:: GetDocumentContextFromPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992520"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574852"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-Utilizzato dal motore del linguaggio per delegare `IDebugCodeContext::GetSourceContext`.  
+Utilizzato dal motore di linguaggio per delegare `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -33,16 +33,16 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Parametri  
  `dwSourceContext`  
- [in] Il contenuto di origine alla stregua `ParseScriptText` o `AddScriptlet`.  
+ in Contenuto di origine fornito per `ParseScriptText` o `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Offset rispetto all'inizio del blocco di script o scriptlet carattere.  
+ in Offset carattere relativo all'inizio del blocco di script o di scriptlet.  
   
  `uNumChars`  
- [in] Numero di caratteri in questo contesto.  
+ in Numero di caratteri in questo contesto.  
   
  `ppsc`  
- [out] Il contesto del documento corrispondenti a questo intervallo di posizione del carattere.  
+ out Contesto del documento corrispondente a questo intervallo di posizioni dei caratteri.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -52,7 +52,7 @@ HRESULT GetDocumentContextFromPosition(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Motori di linguaggio usano questo metodo per delegare `IDebugCodeContext::GetSourceContext`.  
+ I motori di linguaggio utilizzano questo metodo per delegare `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)

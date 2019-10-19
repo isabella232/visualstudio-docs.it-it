@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthost:: Getscripttextattributes | Microsoft Docs'
+title: 'IDebugDocumentHost:: GetScriptTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b18f4f49fa157b78e4f1fd6c7766e929890a6c6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939234"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569208"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 Restituisce gli attributi di testo per un blocco di testo del documento.  
@@ -41,25 +41,25 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parametri  
  `pstrCode`  
- [in] Il testo di blocco di script. Questa stringa non dovrà essere con terminazione null.  
+ in Testo del blocco di script. Questa stringa non deve essere terminata con null.  
   
  `uNumCodeChars`  
- [in] Il numero di caratteri del testo di blocco di script.  
+ in Numero di caratteri nel testo del blocco di script.  
   
  `pstrDelimiter`  
- [in] Indirizzo del delimitatore end-di--blocco di script. Quando si `pstrCode` viene analizzata da un flusso di testo, l'host utilizza un delimitatore, in genere, ad esempio due virgolette ("), per rilevare la fine del blocco di script. Questo parametro specifica il delimitatore utilizzato dall'host, consentendo il motore di scripting fornire alcuni condizionale pre-elaborazioni primitive (ad esempio, sostituire una virgoletta singola ['] con due virgolette singole per l'utilizzo come un delimitatore). Esattamente come (e se) viene utilizzato il motore scripting queste informazioni dipendono dal motore di script. Impostare questo parametro su NULL se l'host non utilizzava un delimitatore per contrassegnare la fine del blocco di script.  
+ in Indirizzo del delimitatore di blocco di fine dello script. Quando `pstrCode` viene analizzato da un flusso di testo, l'host usa in genere un delimitatore, ad esempio due virgolette singole (''), per rilevare la fine del blocco di script. Questo parametro specifica il delimitatore utilizzato dall'host, consentendo al motore di scripting di fornire una pre-elaborazione condizionale (ad esempio, sostituendo una virgoletta singola ['] con due virgolette singole da utilizzare come delimitatore). Il modo in cui (e se) il motore di scripting utilizza queste informazioni dipende dal motore di scripting. Impostare questo parametro su NULL se l'host non ha usato un delimitatore per contrassegnare la fine del blocco di script.  
   
  `dwFlags`  
- [in] Flag associato al blocco di script. Può essere una combinazione dei valori seguenti:  
+ in Flag associati al blocco di script. Può essere una combinazione di questi valori:  
   
 |Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Indica che gli identificatori e operatori punto devono essere identificati con i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP, rispettivamente.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Indica che gli identificatori e gli operatori punto devono essere identificati rispettivamente con i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Indica che l'identificatore per l'oggetto corrente deve essere identificato con il flag SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Indica che deve essere identificato testo della stringa di contenuto e il commento con il flag SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Indica che il contenuto della stringa e il testo del commento devono essere identificati con il flag SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out] Buffer che deve contenere gli attributi restituiti.  
+ [in, out] Buffer contenente gli attributi restituiti.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -67,11 +67,11 @@ HRESULT GetScriptTextAttributes(
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_NOTIMPL`|L'host Usa solo gli attributi predefiniti.|  
+|`E_NOTIMPL`|L'host utilizza solo attributi predefiniti.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce gli attributi di testo per un blocco di testo del documento arbitrario. È accettabile per gli host da restituire `E_NOTIMPL`, nel qual caso vengono utilizzati gli attributi predefiniti.  
+ Questo metodo restituisce gli attributi di testo per un blocco arbitrario di testo del documento. È accettabile che gli host restituiscano `E_NOTIMPL`, nel qual caso vengono usati gli attributi predefiniti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   
+ [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)    
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

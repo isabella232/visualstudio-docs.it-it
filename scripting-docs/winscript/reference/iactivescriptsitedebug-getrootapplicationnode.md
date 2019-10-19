@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetRootApplicationNode | Microsoft Docs
+title: 'IActiveScriptSiteDebug:: GetRootApplicationNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18e603289931115bcaac4d6bb7707b7886f506d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b19ed10178d03be0b96393ad08f1eab88ce40329
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992482"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570055"
 ---
 # <a name="iactivescriptsitedebuggetrootapplicationnode"></a>IActiveScriptSiteDebug::GetRootApplicationNode
-Ottiene il nodo dell'applicazione nella quale script devono essere aggiunti i documenti.  
+Ottiene il nodo dell'applicazione in cui devono essere aggiunti i documenti di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetRootApplicationNode(
   
 #### <a name="parameters"></a>Parametri  
  `ppdanRoot`  
- [out] Il nodo dell'applicazione di debug che contiene i documenti di script. Può essere `NULL`.  
+ out Nodo dell'applicazione di debug che include documenti di script. Può essere `NULL`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT GetRootApplicationNode(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il nodo dell'applicazione in cui devono essere aggiunti i documenti di script. Il metodo può restituire `NULL` per `ppdanRoot` se documenti di script devono essere di livello superiore.  
+ Questo metodo restituisce il nodo dell'applicazione in cui devono essere aggiunti i documenti di script. Il metodo può restituire `NULL` per `ppdanRoot` se i documenti di script devono essere di primo livello.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)

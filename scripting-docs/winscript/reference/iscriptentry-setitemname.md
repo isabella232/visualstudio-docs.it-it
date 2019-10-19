@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetItemName | Microsoft Docs
+title: 'IScriptEntry:: SetItemName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ba226704f5b064c86b52c1b349650d509b2b549
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787658"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575361"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
-Imposta il nome dell'elemento che identifica un `IScriptEntry` oggetto.  
+Imposta il nome dell'elemento che identifica un oggetto `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT SetItemName(
   
 #### <a name="parameters"></a>Parametri  
  `psz`  
- [in] L'indirizzo di un buffer che contiene il nome dell'elemento. Il nome dell'elemento viene usato dall'host per identificare la voce.  
+ in Indirizzo di un buffer che contiene il nome dell'elemento. Il nome dell'elemento viene utilizzato dall'host per identificare la voce.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -45,13 +45,13 @@ HRESULT SetItemName(
 |Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_FAIL`|Il metodo non è riuscita.|  
+|`E_FAIL`|Il metodo non è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Per la `IScriptEntry` oggetti, questo metodo restituisce `S_OK`.  
+ Per `IScriptEntry` oggetti, questo metodo restituisce `S_OK`.  
   
- Per la `IScriptScriptlet` oggetti (che derivano dal `IScriptEntry`), questo metodo restituisce `E_FAIL`. Per la `IScriptScriptlet` oggetti, il nome dell'elemento è l'impostazione [IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) e non può essere modificato.  
+ Per gli oggetti `IScriptScriptlet` (che derivano da `IScriptEntry`), questo metodo restituisce `E_FAIL`. Per `IScriptScriptlet` oggetti, il nome dell'elemento viene impostato da [IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) e non può essere modificato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+ [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)    
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840239"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574397"
 ---
 # <a name="scriptgctype-enumeration"></a>Enumerazione SCRIPTGCTYPE
-Il tipo di garbage collection da eseguire. Utilizzato nel [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) (metodo).  
+Tipo di Garbage Collection da eseguire. Utilizzato nel metodo [IActiveScriptGarbageCollector:: CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|È normale procedura di garbage collection. Il valore integer è 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Tale operazione completa di garbage collection. Il valore intero è 1.|  
+|SCRIPTGCTYPE_NORMAL|Eseguire Garbage Collection normali. Il valore integer è 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Eseguire Garbage Collection completi. Il valore integer è 1.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e codici di errore dello script ActiveX](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

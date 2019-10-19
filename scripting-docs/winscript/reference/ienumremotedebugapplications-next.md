@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplications::Next | Microsoft Docs
+title: 'IEnumRemoteDebugApplications:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b14874891e739fc95b877e41e76559a1ab0060a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a9ebcbbd786ba8545e19b9833d26e5e385738c4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963237"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575207"
 ---
 # <a name="ienumremotedebugapplicationsnext"></a>IEnumRemoteDebugApplications::Next
-Il `Next` metodo recupera un determinato numero di segmenti nella sequenza di enumerazione.  
+Il metodo `Next` recupera un numero specificato di segmenti nella sequenza di enumerazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametri  
  `celt`  
- [in] Il numero di segmenti da recuperare.  
+ in Numero di segmenti da recuperare.  
   
  `ppda`  
- [out] Restituisce una matrice di `IRemoteDebugApplication` interfacce che rappresenta i segmenti in corso il recupero.  
+ out Restituisce una matrice di interfacce di `IRemoteDebugApplication` che rappresenta i segmenti da recuperare.  
   
  `pceltFetched`  
- [out] Il numero effettivo di segmenti recuperate dall'enumeratore.  
+ out Numero effettivo di segmenti recuperati dall'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -55,7 +55,7 @@ HRESULT Next(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo recupera un determinato numero di segmenti nella sequenza di enumerazione.  
+ Questo metodo recupera un numero specificato di segmenti nella sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)

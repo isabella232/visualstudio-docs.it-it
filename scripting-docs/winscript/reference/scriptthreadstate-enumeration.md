@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc4ef840310c27ccbadce2ed4f632514b555ef98
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840187"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575647"
 ---
 # <a name="scriptthreadstate-enumeration"></a>Enumerazione SCRIPTTHREADSTATE
-Specifica lo stato di un thread in un motore di scripting. Questa enumerazione viene utilizzata per la [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) (metodo).  
+Specifica lo stato di un thread in un motore di scripting. Questa enumerazione viene utilizzata dal metodo [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,8 +40,8 @@ typedef enum tagSCRIPTTHREADSTATE {
   
 |||  
 |-|-|  
-|SCRIPTTHREADSTATE_NOTINSCRIPT|Thread specificato è attualmente non un evento tramite script, il testo dello script eseguito immediatamente l'elaborazione, di manutenzione o esecuzione di una macro di script.|  
-|SCRIPTTHREADSTATE_RUNNING|Thread specificato è attivamente un evento tramite script, il testo dello script eseguito immediatamente l'elaborazione, di manutenzione o esecuzione di una macro di script.|  
+|SCRIPTTHREADSTATE_NOTINSCRIPT|Il thread specificato non sta attualmente servendo un evento con script, elaborando il testo dello script immediatamente eseguito o eseguendo una macro di script.|  
+|SCRIPTTHREADSTATE_RUNNING|Il thread specificato gestisce attivamente un evento con script, elaborando il testo dello script immediatamente eseguito o eseguendo una macro di script.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e codici di errore dello script ActiveX](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

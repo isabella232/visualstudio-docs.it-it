@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionExit | Microsoft Docs
+title: 'IActiveScriptProfilerCallback:: OnFunctionExit | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c84b64a12b1a6b61399f70b7209c86dd8d2a9a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87801b7873e43498031264ff4719fb47eca99f40
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993332"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571673"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
-Notifica al profiler di oggetto che il motore di scripting finito l'esecuzione di una funzione chiamata che non è una chiamata nel modello DOM (Document Object).  
+Notifica all'oggetto del profiler che il motore di script ha terminato l'esecuzione di una chiamata di funzione che non è una chiamata nel Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionExit(
   
 #### <a name="parameters"></a>Parametri  
  `scriptId`  
- [in] ID univoco dello script che fa parte della funzione. Questo ID viene assegnato dal motore di script.  
+ in ID univoco dello script di cui fa parte la funzione. Questo ID viene assegnato dal motore di scripting.  
   
  `functionId`  
- [in] ID univoco della funzione. Questo ID viene assegnato dal motore di script.  
+ in ID univoco della funzione. Questo ID viene assegnato dal motore di scripting.  
   
 ## <a name="return-value"></a>Valore restituito  
- Il valore restituito di questo metodo viene ignorato dal motore di script.  
+ Il valore restituito di questo metodo viene ignorato dal motore di scripting.  
   
 ## <a name="remarks"></a>Note  
- Per le chiamate di DOM, chiama il motore di scripting [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) invece di `IActiveScriptProfilerCallback::OnFunctionExit`. Si tratta causa dell'elevato numero di metodi univoci e proprietà nel DOM.  
+ Per le chiamate DOM, il motore di scripting chiama [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) anziché `IActiveScriptProfilerCallback::OnFunctionExit`. Questo è dovuto all'elevato numero di proprietà e metodi univoci nel DOM.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
+ @No__t_1 [IActiveScriptProfilerCallback:: OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)  
  [Interfaccia IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

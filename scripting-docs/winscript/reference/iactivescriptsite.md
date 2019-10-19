@@ -13,29 +13,29 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b2a749eb3553044bda5816639498a0682e37e0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992561"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570092"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
-Implementato dall'host per creare un sito per il motore di Script di Windows. In genere, questo sito sarà associato al contenitore di tutti gli oggetti che sono visibili allo script (ad esempio, i controlli ActiveX). In genere, questo contenitore corrisponderà al documento o pagina che viene visualizzato. Microsoft Internet Explorer, ad esempio, sarebbe creare tali un contenitore per ogni pagina HTML viene visualizzata. Ogni ActiveX controllo (o un altro oggetto di automazione) nella pagina e il motore di scripting, sarebbe enumerabile all'interno del contenitore.  
+Implementato dall'host per creare un sito per il modulo di gestione di Windows script. In genere, il sito verrà associato al contenitore di tutti gli oggetti visibili allo script, ad esempio i controlli ActiveX. In genere, questo contenitore corrisponderà al documento o alla pagina visualizzata. Microsoft Internet Explorer, ad esempio, creerebbe un contenitore di questo tipo per ogni pagina HTML visualizzata. Ogni controllo ActiveX (o un altro oggetto di automazione) nella pagina e il motore di scripting stesso sarebbero enumerabili all'interno di questo contenitore.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |||  
 |-|-|  
 |Metodo|Descrizione|  
-|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Recupera l'identificatore delle impostazioni locali usato dall'host per la visualizzazione di elementi dell'interfaccia utente.|  
-|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Ottiene informazioni su un elemento che è stato aggiunto a un motore tramite una chiamata per il [IActiveScript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) (metodo).|  
+|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|Recupera l'identificatore delle impostazioni locali utilizzato dall'host per visualizzare gli elementi dell'interfaccia utente.|  
+|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|Ottiene informazioni su un elemento aggiunto a un motore tramite una chiamata al metodo [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .|  
 |[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|Recupera una stringa definita dall'host che identifica in modo univoco la versione corrente del documento dal punto di vista dell'host.|  
-|[IActiveScriptSite::OnScriptTerminate](../../winscript/reference/iactivescriptsite-onscriptterminate.md)|Chiamato al termine dell'esecuzione dello script.|  
-|[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)|Comunica all'host che il motore di script è stato modificato gli stati.|  
-|[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)|Comunica all'host che si è verificato un errore di esecuzione mentre il motore è stato eseguito lo script.|  
-|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|Comunica all'host che il motore di scripting è iniziata l'esecuzione del codice di script.|  
-|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|Comunica all'host che il motore di script ha restituito dall'esecuzione di codice di script.|  
+|[IActiveScriptSite::OnScriptTerminate](../../winscript/reference/iactivescriptsite-onscriptterminate.md)|Chiamato quando l'esecuzione dello script è stata completata.|  
+|[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)|Informa l'host che lo stato del motore di scripting è stato modificato.|  
+|[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)|Informa l'host che si è verificato un errore di esecuzione durante l'esecuzione dello script da parte del motore.|  
+|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|Informa l'host che il motore di script ha iniziato l'esecuzione del codice di script.|  
+|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|Informa l'host che il motore di scripting ha restituito l'esecuzione del codice di script.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce Script ActiveX](../../winscript/reference/active-script-interfaces.md)

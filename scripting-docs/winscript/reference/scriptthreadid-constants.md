@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf1b23b191bda29b00bf29f482332301897f9f37
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840202"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575662"
 ---
 # <a name="scriptthreadid-constants"></a>Costanti SCRIPTTHREADID
-Consente di specificare il tipo di thread.  
+Utilizzato per specificare il tipo di thread.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,15 +37,15 @@ typedef DWORD SCRIPTTHREADID;
   
 |Costante|Value|Significato|  
 |--------------|-----------|-------------|  
-|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Il thread attualmente in esecuzione.|  
-|SCRIPTTHREADID_BASE|0xFFFFFFFE|Thread di base; vale a dire, il thread in cui la creazione di script del motore è stata creata un'istanza.|  
+|SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Thread attualmente in esecuzione.|  
+|SCRIPTTHREADID_BASE|0xFFFFFFFE|Thread di base; ovvero il thread in cui è stata creata un'istanza del motore di script.|  
 |SCRIPTTHREADID_ALL|0xFFFFFFFF|Tutti i thread.|  
   
 ## <a name="remarks"></a>Note  
- Il `SCRIPTTHREADID` tipo viene utilizzato da `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`, e `IActiveScript::InterruptScriptThread`, ma le costanti possono essere utilizzate solo da `IActiveScript::GetScriptThreadState` e `IActiveScript::InterruptScriptThread`.  
+ Il tipo di `SCRIPTTHREADID` viene utilizzato da `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` e `IActiveScript::InterruptScriptThread`, ma le costanti possono essere utilizzate solo da `IActiveScript::GetScriptThreadState` e `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
- [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
- [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
+ @No__t_1 [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)  
+ @No__t_1 [IActiveScript:: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)  
+ @No__t_1 [IActiveScript:: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)  
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

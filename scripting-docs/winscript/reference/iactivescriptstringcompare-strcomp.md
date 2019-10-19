@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Microsoft Docs
+title: 'IActiveScriptStringCompare:: StrComp | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66cccb4281e19aebb25b3b4cde06705b500f53a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 233c427b634306527b0b0d496397e82f889560e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991426"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577943"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
-Definisce il metodo di confronto di stringhe per il motore di scripting.  
+Definisce il metodo di confronto tra stringhe per il motore di scripting.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -48,7 +48,7 @@ HRESULT StrComp(
  Seconda stringa.  
   
  `iRet`  
- Il risultato del confronto. 0 se `bszStr1` e `bszStr2`sono identici, -1 se `bszStr1`  <  `bszStr2`; 1 se `bszStr1`  >  `bszStr2`.  
+ Risultato del confronto. 0 se `bszStr1` e `bszStr2`are identico; -1 se `bszStr1`  <  `bszStr2`; 1 se `bszStr1`  >  `bszStr2`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -57,13 +57,13 @@ HRESULT StrComp(
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
 |`E_INVALIDARG`|Un argomento non è valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato).|  
+|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting non è ancora stato caricato o inizializzato).|  
   
 ## <a name="remarks"></a>Note  
  Questo metodo viene chiamato ogni volta che viene eseguito un confronto tra stringhe.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come eseguire l'overload di funzione di confronto di stringa. L'overload è consentito quando si usa [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) impostare SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ Nell'esempio seguente viene illustrato come eseguire l'overload della funzione di confronto di stringhe. L'overload è consentito quando si usa [IActiveScriptProperty:: SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) per impostare SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

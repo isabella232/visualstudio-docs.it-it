@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebugOutput | Microsoft Docs
+title: 'IApplicationDebugger:: onDebugOutput | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbb7fb9f69af2f0977434a29015d79e8cf9178
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991084"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577854"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
 Gestisce un evento di output di debug.  
@@ -37,7 +37,7 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>Parametri  
  `pstr`  
- [in] Stringa da visualizzare nel debugger.  
+ in Stringa da visualizzare nel debugger.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -49,8 +49,8 @@ HRESULT onDebugOutput(
 ## <a name="remarks"></a>Note  
  Il debugger visualizza in genere `pstr` in una finestra di output.  
   
- Questo metodo viene chiamato quando `IDebugApplication::DebugOutput` viene chiamato.  
+ Questo metodo viene chiamato quando viene chiamato `IDebugApplication::DebugOutput`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
+ [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)    
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

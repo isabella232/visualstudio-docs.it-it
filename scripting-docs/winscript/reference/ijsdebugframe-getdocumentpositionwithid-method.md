@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugframe:: Getdocumentpositionwithid | Microsoft Docs'
+title: 'Metodo metodo ijsdebugframe:: GetDocumentPositionWithId | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741fe323e787c57f5f05a25461eae87c98dba70f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f35f6fb84db95950fe83d571c9f5e5e7db9de1e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558138"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573856"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>Metodo IJsDebugFrame::GetDocumentPositionWithId
-Restituisce la posizione corrente dello stack frame all'interno del documento a livello di utente.  
+Restituisce la posizione corrente di questo stack frame all'interno del documento a livello di utente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>Parametri  
  `pDocumentId`  
- [out] ID univoco per un documento di origine (puntatore a IDebugDocumentText).  
+ out ID univoco per un documento di origine (puntatore a IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] L'offset carattere in base zero dall'inizio dello script.  
+ out Offset carattere in base zero dall'inizio dello script.  
   
  `pStatementCharCount`  
- [out] La lunghezza dell'istruzione corrente, che inizia a * pCharacterOffset, in caratteri.  
+ out Lunghezza dell'istruzione corrente, che inizia da * pCharacterOffset, in caratteri.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

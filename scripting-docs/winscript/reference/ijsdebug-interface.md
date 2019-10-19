@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20d755250960ad2f5b22cc7b645ad24b91c4875f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46a09c4bbf5ce97441f9e60c8832854356ad48d4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583646"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577756"
 ---
 # <a name="ijsdebug-interface"></a>Interfaccia IJsDebug
 Punto di ingresso per il debug di JavaScript.  
@@ -27,16 +27,16 @@ Punto di ingresso per il debug di JavaScript.
 IJsDebug : public IUnknown;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 ### <a name="public-methods"></a>Metodi pubblici  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |----------|-----------------|  
-|[Metodo IJsDebug::OpenVirtualProcess](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Metodo factory utilizzato per creare un nuovo oggetto processo virtuale.|  
+|[Metodo IJsDebug::OpenVirtualProcess](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Metodo Factory utilizzato per creare un nuovo oggetto processo virtuale.|  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti sulle interfacce Windows Script](../../winscript/reference/windows-script-interfaces-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: La lunghezza della matrice deve essere assegnata un numero positivo finito | Microsoft Docs
+title: Alla lunghezza della matrice deve essere assegnato un numero positivo finito | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,19 +14,19 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39f2720efbcd8defffb9d0c77047a50e57939e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cff9c8c42199e106cca5f6f2808866e46a26afe2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818048"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576071"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Alla lunghezza della matrice deve essere assegnato un numero positivo finito
-Quando si impostano i **lunghezza** proprietà di un oggetto esistente **matrice** oggetto, è specificata una lunghezza della matrice non è un numero positivo o zero. Questo errore si verifica quando si assegna un valore per il **lunghezza** proprietà di un `Array` oggetto che è negativo o non è un numero (`NaN`). Si noti che [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] converte automaticamente i numeri frazionari in interi.  
+Quando si imposta la proprietà **length** di un oggetto **Array** esistente, è stata specificata una lunghezza della matrice che non è un numero positivo o zero. Questo errore si verifica quando si assegna un valore alla proprietà **length** di un oggetto `Array` negativo o non numerico (`NaN`). Si noti che [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] converte automaticamente i numeri frazionari in interi interi.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Assegnare un numero intero positivo per la proprietà length. Non vi è alcun limite massimo per le dimensioni di una matrice, diverso dal valore massimo numero intero (circa 4 miliardi). L'esempio seguente illustra il modo corretto per impostare il **lunghezza** proprietà di un **matrice** oggetto.  
+- Assegnare un numero intero positivo alla proprietà Length. Non esiste un limite massimo per la dimensione di una matrice, ad eccezione del valore intero massimo (approssimativamente 4 miliardi). Nell'esempio seguente viene illustrato il modo corretto per impostare la proprietà **length** di un oggetto **Array** .  
   
     ```JavaScript  
     var my_array = new Array();  

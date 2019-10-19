@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fddae48178ec6c56ce647f5c4f3a1bff3d81a980
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 910e08ec6d9982354eb71b50d5e916917808f140
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955194"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576544"
 ---
 # <a name="debugstackframedescriptor-structure"></a>Struttura DebugStackFrameDescriptor
 Enumera gli stack frame e unisce l'output da più enumeratori sullo stesso thread.  
@@ -39,24 +39,24 @@ typedef struct tagDebugStackFrameDescriptor {
 } DebugStackFrameDescriptor;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  `pdsf`  
- L'oggetto stack frame.  
+ Oggetto stack frame.  
   
  `dwMin`  
- Rappresentazione dipende dal computer dell'intervallo di indirizzi fisici associati a questo frame dello stack inferiore.  
+ Rappresentazione dipendente dal computer dell'intervallo inferiore di indirizzi fisici associato a questo stack frame.  
   
  `dwLim`  
- Rappresentazione dipende dal computer dell'intervallo di indirizzi fisici associati a questo stack frame superiore.  
+ Rappresentazione dipendente dal computer dell'intervallo superiore di indirizzi fisici associato a questo stack frame.  
   
  `fFinal`  
- Flag che indica che il frame viene elaborato.  
+ Flag che indica che è in corso l'elaborazione del frame.  
   
  `punkFinal`  
- Se questo parametro non è `NULL`, dell'enumeratore corrente unione deve essere interrotta e deve essere avviato uno nuovo. L'oggetto indica come avviare la nuova enumerazione.  
+ Se questo parametro non è `NULL`, il merge dell'enumeratore corrente dovrebbe arrestarsi e ne verrà avviato uno nuovo. L'oggetto indica come avviare la nuova enumerazione.  
   
 ## <a name="remarks"></a>Note  
- Il gestore di debug di processi Usa questa struttura per ordinare gli stack frame da più motori di script. Per convenzione, gli stack di aumento delle dimensioni verso il basso. Di conseguenza, nelle architetture in cui gli stack di aumentare, gli indirizzi devono essere complementari a coppie.  
+ Gestione debug processo utilizza questa struttura per ordinare gli stack frame da più motori di script. Per convenzione, la crescita degli stack è inattiva. Di conseguenza, nelle architetture in cui gli stack crescono, gli indirizzi devono essere complementari a due.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e strutture del debugger di script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

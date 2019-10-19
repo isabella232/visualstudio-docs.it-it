@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState | Microsoft Docs
+title: 'IActiveScript:: GetScriptThreadState | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38f6ef4b0acdf6e3b746316bef8abe9a3f0f8225
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935609"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72578000"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-Recupera lo stato corrente di un thread dello script.  
+Recupera lo stato corrente di un thread di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,15 +38,15 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>Parametri  
  `stidThread`  
- [in] Identificatore del thread per il quale si desidera lo stato, o uno degli identificatori di thread speciali seguenti:  
+ in Identificatore del thread per il quale si desidera lo stato o uno dei seguenti identificatori di thread speciali:  
   
 |Value|Significato|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|Thread di base; vale a dire, il thread in cui la creazione di script del motore è stata creata un'istanza.|  
-|SCRIPTTHREADID_CURRENT|Il thread attualmente in esecuzione.|  
+|SCRIPTTHREADID_BASE|Thread di base; ovvero il thread in cui è stata creata un'istanza del motore di script.|  
+|SCRIPTTHREADID_CURRENT|Thread attualmente in esecuzione.|  
   
  `pstsState`  
- [out] Indirizzo di una variabile che riceve lo stato del thread indicato. Lo stato è indicato da uno dei valori di costante denominati definiti per il [enumerazione SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md) enumerazione. Se questo parametro identifica il thread corrente, lo stato può cambiare in qualsiasi momento.  
+ out Indirizzo di una variabile che riceve lo stato del thread indicato. Lo stato è indicato da uno dei valori costanti denominati definiti dall'enumerazione [SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md) . Se questo parametro non identifica il thread corrente, lo stato potrebbe cambiare in qualsiasi momento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -55,10 +55,10 @@ HRESULT GetScriptThreadState(
 |------------------|-------------|  
 |`S_OK`|Operazione completata.|  
 |`E_POINTER`|È stato specificato un puntatore non valido.|  
-|`E_UNEXPECTED`|La chiamata non era previsto (ad esempio, il motore di scripting non è ancora caricato o inizializzato).|  
+|`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting non è ancora stato caricato o inizializzato).|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo può essere chiamato dal thread non di base senza causando un callout non in base agli oggetti di host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaccia.  
+ Questo metodo può essere chiamato da thread non di base senza comportare un callout non di base per ospitare oggetti o per l'interfaccia [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

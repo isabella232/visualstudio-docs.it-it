@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975775"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572278"
 ---
 # <a name="active-script-debugging-overview"></a>Panoramica di debug script ActiveX
 Le interfacce di debug di script ActiveX consentono un debug indipendente dal linguaggio e dall'host e supportano un'ampia gamma di ambienti di sviluppo.  

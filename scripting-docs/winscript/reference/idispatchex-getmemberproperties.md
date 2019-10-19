@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Microsoft Docs
+title: 'IDispatchEx:: GetMemberProperties | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000805"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574093"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
-Recupera le proprietà del membro.  
+Recupera le proprietà di un membro.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,7 +39,7 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>Parametri  
  `id`  
- Identifica il membro. Viene utilizzato `GetDispID` o `GetNextDispID` per ottenere l'ID dispatch.  
+ Identifica il membro. USA `GetDispID` o `GetNextDispID` per ottenere l'identificatore di invio.  
   
  `grfdexFetch`  
  Determina le proprietà da recuperare. Può trattarsi di una combinazione dei valori elencati in `pgrfdex` e/o una combinazione dei valori seguenti:  
@@ -56,18 +56,18 @@ HRESULT GetMemberProperties(
   
 |Value|Significato|  
 |-----------|-------------|  
-|fdexPropCanGet|Il membro può essere ottenuto mediante DISPATCH_PROPERTYGET.|  
-|fdexPropCannotGet|Il membro non può essere ottenuto utilizzando DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|Il membro può essere impostato utilizzando DISPATCH_PROPERTYGET.|  
-|fdexPropCannotPut|Il membro non può essere impostato utilizzando DISPATCH_PROPERTYGET.|  
-|fdexPropCanPutRef|Il membro può essere impostato utilizzando DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|Il membro non può essere impostato utilizzando DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|Il membro è privo di effetti collaterali. Ad esempio, un debugger è stato in modo sicuro get/set/chiamata di questo membro senza modificare lo stato dello script in fase di debug.|  
-|fdexPropDynamicType|Il membro è dinamico e può cambiare nel corso della durata dell'oggetto.|  
-|fdexPropCanCall|Il membro può essere chiamato come un metodo usando DISPATCH_METHOD.|  
-|fdexPropCannotCall|Il membro non può essere chiamato come un metodo usando DISPATCH_METHOD.|  
-|fdexPropCanConstruct|Il membro può essere chiamato come un costruttore che utilizza DISPATCH_CONSTRUCT.|  
-|fdexPropCannotConstruct|Il membro non può essere chiamato come un costruttore che utilizza DISPATCH_CONSTRUCT.|  
+|fdexPropCanGet|Il membro può essere ottenuto utilizzando DISPATCH_PROPERTYGET.|  
+|fdexPropCannotGet|Impossibile ottenere il membro utilizzando DISPATCH_PROPERTYGET.|  
+|fdexPropCanPut|Il membro può essere impostato tramite DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|Il membro non può essere impostato con DISPATCH_PROPERTYPUT.|  
+|fdexPropCanPutRef|Il membro può essere impostato tramite DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCannotPutRef|Il membro non può essere impostato con DISPATCH_PROPERTYPUTREF.|  
+|fdexPropNoSideEffects|Il membro non ha effetti collaterali. Un debugger, ad esempio, può ottenere, impostare o chiamare in modo sicuro questo membro senza modificare lo stato dello script di cui è in corso il debug.|  
+|fdexPropDynamicType|Il membro è dinamico e può essere modificato nel corso della durata dell'oggetto.|  
+|fdexPropCanCall|Il membro può essere chiamato come metodo usando DISPATCH_METHOD.|  
+|fdexPropCannotCall|Il membro non può essere chiamato come metodo usando DISPATCH_METHOD.|  
+|fdexPropCanConstruct|Il membro può essere chiamato come Costruttore usando DISPATCH_CONSTRUCT.|  
+|fdexPropCannotConstruct|Il membro non può essere chiamato come costruttore utilizzando DISPATCH_CONSTRUCT.|  
 |fdexPropCanSourceEvents|Il membro può generare eventi.|  
 |fdexPropCannotSourceEvents|Il membro non può generare eventi.|  
   
@@ -77,7 +77,7 @@ HRESULT GetMemberProperties(
 |||  
 |-|-|  
 |`S_OK`|Operazione completata.|  
-|`DISP_E_UNKNOWNNAME`|Il nome non è stato definito.|  
+|`DISP_E_UNKNOWNNAME`|Il nome non è noto.|  
   
 ## <a name="example"></a>Esempio  
   
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)    
+ @No__t_1 [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

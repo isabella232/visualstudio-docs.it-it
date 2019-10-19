@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::RemoveApplication | Microsoft Docs
+title: 'IMachineDebugManager:: RemoveApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ee70097ab87406d6ad39b244bdec61a72aea836
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87951e55a7cfcfef1a366f79c380948c7651ed12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977552"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573932"
 ---
 # <a name="imachinedebugmanagerremoveapplication"></a>IMachineDebugManager::RemoveApplication
-Rimuove l'esecuzione di un'applicazione elenco di applicazioni.  
+Rimuove un'applicazione dall'elenco di applicazioni in esecuzione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parametri  
  `dwAppCookie`  
- [in] Il cookie specificato quando l'applicazione è stata aggiunta all'elenco di applicazioni.  
+ in Cookie fornito quando l'applicazione è stata aggiunta all'elenco di applicazioni.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,9 +47,9 @@ HRESULT RemoveApplication(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo viene chiamato dal gestore di debug processo ogni volta che `IProcessDebugManager::RemoveApplication` viene chiamato.  
+ Questo metodo viene chiamato dalla gestione del debug del processo ogni volta che viene chiamato `IProcessDebugManager::RemoveApplication`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   
- [IMachineDebugManager Interface](../../winscript/reference/imachinedebugmanager-interface.md)   
+ @No__t_1 [IMachineDebugManager:: AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)  
+ [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)    
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

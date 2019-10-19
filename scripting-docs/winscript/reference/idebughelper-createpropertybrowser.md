@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
+title: 'IDebugHelper:: CreatePropertyBrowser | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fc1e4365deea4a3981d9cf457a2c0af37edcd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99aa03470b49d02ee9f0ac1548bd1f8e27d0ab34
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979253"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562494"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Restituisce un visualizzatore di proprietà che esegue il wrapping di una variante.  
+Restituisce un visualizzatore proprietà che esegue il wrapping di una variante.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -40,16 +40,16 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Parametri  
  `pvar`  
- [in] Variante di radice da esplorare.  
+ in Variante radice da esplorare.  
   
  `bstrName`  
- [in] Nome da assegnare la radice.  
+ in Nome da assegnare alla radice.  
   
  `pdat`  
- [in] Il thread su cui si desidera richiedere proprietà. Se questo parametro è NULL, non viene eseguito alcun tipo di marshalling.  
+ in Thread su cui richiedere le proprietà. Se questo parametro è NULL, non viene eseguito alcun marshalling.  
   
  `ppdob`  
- [out] Il Visualizzatore proprietà.  
+ out Browser delle proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -59,9 +59,9 @@ HRESULT CreatePropertyBrowser(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce un visualizzatore di proprietà che esegue il wrapping di una variante.  
+ Questo metodo restituisce un visualizzatore proprietà che esegue il wrapping di una variante.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
- [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
+ @No__t_1 [IDebugHelper:: CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)  
+ [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)    
  [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

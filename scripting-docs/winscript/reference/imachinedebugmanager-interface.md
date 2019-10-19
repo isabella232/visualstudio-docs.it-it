@@ -13,25 +13,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d491b03ba04d346e3a14a08d5e2b6b9d34c7d97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977643"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573925"
 ---
 # <a name="imachinedebugmanager-interface"></a>Interfaccia IMachineDebugManager
-L'interfaccia primaria per la gestione Debug del computer. Questa interfaccia è simile al `IMachineDebugManagerCookie` interfaccia.  
+Interfaccia principale per la gestione del debug del computer. Questa interfaccia è simile all'interfaccia `IMachineDebugManagerCookie`.  
   
- Oltre ai metodi ereditati da `IUnknown`, il `IMachineDebugManager` interfaccia espone i metodi seguenti.  
+ Oltre ai metodi ereditati da `IUnknown`, l'interfaccia `IMachineDebugManager` espone i metodi seguenti.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Aggiunge un'applicazione in esecuzione l'elenco delle applicazioni.|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Rimuove l'esecuzione di un'applicazione elenco di applicazioni.|  
-|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Restituisce un enumeratore dell'elenco corrente delle applicazioni in esecuzione.|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Aggiunge un'applicazione all'elenco di applicazioni in esecuzione.|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Rimuove un'applicazione dall'elenco di applicazioni in esecuzione.|  
+|[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Restituisce un enumeratore dell'elenco corrente di applicazioni in esecuzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)

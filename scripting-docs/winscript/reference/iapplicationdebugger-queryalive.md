@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::QueryAlive | Microsoft Docs
+title: 'IApplicationDebugger:: QueryAlive | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b4c455305116863a4a8ad16ff21cd7554a36239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 867d00a4ef42aa8759496540edc1937fc6f2a0a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991184"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577818"
 ---
 # <a name="iapplicationdebuggerqueryalive"></a>IApplicationDebugger::QueryAlive
 Indica se il debugger è reattivo.  
@@ -46,7 +46,7 @@ HRESULT QueryAlive();
 ## <a name="remarks"></a>Note  
  Questo metodo indica se il debugger è reattivo. Le implementazioni di questo metodo devono sempre restituire `S_OK`.  
   
- Se il processo del debugger viene interrotto in modo imprevisto, COM restituisce un errore dal proxy di marshalling per le chiamate a questo metodo.  
+ Se il processo del debugger si interrompe in modo imprevisto, COM restituisce un errore dal proxy di marshalling per le chiamate a questo metodo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)

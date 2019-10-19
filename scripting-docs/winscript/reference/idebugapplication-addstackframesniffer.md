@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
+title: 'IDebugApplication:: AddStackFrameSniffer | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16fb941a91482c548284dc3d4317a472fd9be641
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a461c24b6f62f1e0ece88915e097faf0c59f15e7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991058"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575026"
 ---
 # <a name="idebugapplicationaddstackframesniffer"></a>IDebugApplication::AddStackFrameSniffer
-Aggiunge un provider di enumeratore frame dello stack per questa applicazione.  
+Aggiunge un provider di enumeratori stack frame a questa applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT AddStackFrameSniffer(
   
 #### <a name="parameters"></a>Parametri  
  `pdsfs`  
- [in] Il provider di enumeratore frame dello stack per aggiungere a questa applicazione.  
+ in Provider di enumeratori stack frame da aggiungere all'applicazione.  
   
  `pdwCookie`  
- [out] Un cookie utilizzato per rimuovere questo provider di enumeratore stack frame dall'applicazione.  
+ out Cookie utilizzato per rimuovere questo provider dell'enumeratore stack frame dall'applicazione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,9 +51,9 @@ HRESULT AddStackFrameSniffer(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Sebbene motori di linguaggio chiamano in genere questo metodo per esporre i rispettivi stack frame per il debugger, è possibile che altre entità per esporre gli stack frame.  
+ Sebbene i motori di linguaggio chiamino in genere questo metodo per esporre gli stack frame al debugger, è possibile che altre entità espongano gli stack frame.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
- [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ @No__t_1 [IDebugApplication:: RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)  
  [Interfaccia IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

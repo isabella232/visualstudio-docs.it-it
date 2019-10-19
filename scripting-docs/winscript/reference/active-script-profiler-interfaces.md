@@ -1,5 +1,5 @@
 ---
-title: Interfacce di Profiler di Script ActiveX | Microsoft Docs
+title: Interfacce del profiler di script ActiveX | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,19 +11,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9395c392051e184bf61bea65e7ef7ac3c3fe2c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422239"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572674"
 ---
 # <a name="active-script-profiler-interfaces"></a>Interfacce del profiler dello script ActiveX
 Le interfacce attive del profiler dello script consentono di ricevere gli eventi di profilatura dal motore di [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
  Il file di intestazione activprof.h fornisce le interfacce elencate in questa sezione.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  Le interfacce seguenti consentono la profilatura:  
   
 - [Interfaccia IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
@@ -47,7 +47,7 @@ Le interfacce attive del profiler dello script consentono di ricevere gli eventi
 - [Costanti, enumerazioni e strutture del profiler di script ActiveX](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
-> Le interfacce attive del profiler dello script sono state rilasciate inizialmente con Internet Explorer 8. Le interfacce `IActiveScriptProfilerControl2` e `IActiveScriptProfilerCallback2` sono state rilasciate inizialmente con Internet Explorer 9. Il [interfaccia IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [interfaccia IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), e [interfaccia IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) interfacce erano rilasciate inizialmente con Internet Explorer 10. Il [interfaccia IActiveScriptProfilerControl5](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) fu rilasciato con Internet Explorer 11.  
+> Le interfacce attive del profiler dello script sono state rilasciate inizialmente con Internet Explorer 8. Le interfacce `IActiveScriptProfilerControl2` e `IActiveScriptProfilerCallback2` sono state rilasciate inizialmente con Internet Explorer 9. L'interfaccia [IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), l' [interfaccia IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md)e le interfacce di [interfaccia metodo iactivescriptprofilerheapenum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) sono state rilasciate per la prima volta con Internet Explorer 10. L' [interfaccia IActiveScriptProfilerControl5](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) è stata rilasciata per la prima volta con Internet Explorer 11.  
 >   
 > In Internet Explorer 8 e Internet Explorer 9, queste interfacce vengono utilizzate solo nel linguaggio di [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] per supportare la profilatura dello script.  
   

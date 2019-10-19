@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugprocess:: Createstackwalker | Microsoft Docs'
+title: 'Metodo metodo ijsdebugprocess:: CreateStackWalker | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb084b665467ae023bb885ee0de221f0409a0160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70f5d4885abba3d891526723d3ca1f174549c348
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557733"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573834"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>Metodo IJsDebugProcess::CreateStackWalker
-Metodo factory per chiamate nello stack.  
+Metodo Factory per stack Walker.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -36,18 +36,18 @@ HRESULT CreateStackWalker(
   
 #### <a name="parameters"></a>Parametri  
  `threadId`  
- [in] ID del thread.  
+ in ID del thread.  
   
  `ppStackWalker`  
- [out] Il nuovo oggetto percorso chiamate dello stack.  
+ out Nuovo oggetto Walker dello stack.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- Restituisce E_JsDEBUG_UNKNOWN_THREAD se il thread non ha JavaScript su di esso. Questo metodo può essere chiamato solo durante il processo di destinazione è stato arrestato.  
+ Restituisce E_JsDEBUG_UNKNOWN_THREAD se il thread non dispone di JavaScript. Questo metodo può essere chiamato solo durante l'arresto del processo di destinazione.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

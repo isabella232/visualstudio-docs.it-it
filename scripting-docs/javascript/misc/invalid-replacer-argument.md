@@ -1,5 +1,5 @@
 ---
-title: Argomento replacer non valido | Microsoft Docs
+title: Argomento sostitutivo non valido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007314"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573801"
 ---
 # <a name="invalid-replacer-argument"></a>Argomento Replacer non valido
-È stato eseguito un tentativo di richiamare `JSON.stringify` con un argomento non valido. Il `replacer` argomento deve essere una funzione o una matrice.  
+È stato effettuato un tentativo di richiamare `JSON.stringify` con un argomento non valido. L'argomento `replacer` deve essere una funzione o una matrice.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Modifica il `replacer` argomento per una funzione o una matrice.  
+- Modificare l'argomento `replacer` in una funzione o in una matrice.  
   
 ## <a name="example"></a>Esempio  
- Il codice in questo esempio provoca un errore di runtime perché `memberfilter` è un oggetto anziché una funzione o una matrice.  
+ Il codice in questo esempio causa un errore di runtime perché `memberfilter` è un oggetto anziché una funzione o una matrice.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto JSON](../../javascript/reference/json-object-javascript.md)   
- [Funzione JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)   
+ @No__t_1 [oggetto JSON](../../javascript/reference/json-object-javascript.md)  
+ [Funzione JSON. parse](../../javascript/reference/json-parse-function-javascript.md)    
  [Errori di runtime JavaScript](../../javascript/reference/javascript-run-time-errors.md)

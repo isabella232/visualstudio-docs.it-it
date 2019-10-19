@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft Docs
+title: IActiveScriptAuthorProcedure::P arseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c513b105a483d0f80510dff9c91fa2c3f09e0523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11a34843f30274ec78f1652c5ed5cd4dbcf2884a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955159"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572822"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Analizza una routine di codice, aggiunge il testo della stored procedure codice allo script del motore di creazione e crea un `IScriptEntry` oggetto corrispondente alla routine del codice.  
+Analizza una routine di codice, aggiunge il testo della procedura di codice al motore di creazione degli script e crea un `IScriptEntry` oggetto che corrisponde alla routine di codice.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,28 +44,28 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parametri  
  `pszCode`  
- [in] Il testo dello script da analizzare.  
+ in Testo dello script da analizzare.  
   
  `pszFormalParams`  
- [in] L'indirizzo dei nomi di parametro formali per la procedura. I nomi dei parametri devono essere separati dai delimitatori appropriati per lo script del motore di creazione. I nomi non devono essere racchiusi tra parentesi.  
+ in Indirizzo dei nomi dei parametri formali per la procedura. I nomi dei parametri devono essere separati dai delimitatori appropriati per il motore di creazione degli script. I nomi non devono essere racchiusi tra parentesi.  
   
  `pszProcedureName`  
- [in] L'indirizzo del nome procedura deve essere analizzato.  
+ in Indirizzo del nome della stored procedure da analizzare.  
   
  `pszItemName`  
- [in] L'indirizzo del buffer che contiene il nome dell'elemento è associato il `IScriptEntry` oggetto.  
+ in Indirizzo del buffer che contiene il nome dell'elemento associato all'oggetto `IScriptEntry`.  
   
  `pszDelimiter`  
- [in] L'indirizzo del delimitatore end-di--blocco di script. Quando si `pszCode` viene analizzata da un flusso di testo, l'host utilizza in genere un delimitatore (ad esempio due virgolette singole), per rilevare la fine del blocco di script. Impostare questo parametro su NULL se non è disponibile alcun delimitatore per contrassegnare la fine del blocco di script.  
+ in Indirizzo del delimitatore di blocco di fine dello script. Quando `pszCode` viene analizzato da un flusso di testo, l'host usa in genere un delimitatore, ad esempio due virgolette singole, per rilevare la fine del blocco di script. Impostare questo parametro su NULL se non è presente alcun delimitatore per contrassegnare la fine del blocco di script.  
   
  `dwCookie`  
- [in] Un valore definito dall'applicazione che viene associato al nuovo `IScriptEntry` oggetto.  
+ in Valore definito dall'applicazione associato al nuovo oggetto `IScriptEntry`.  
   
  `dwFlags`  
- [in] Non utilizzato.  
+ in Non utilizzato.  
   
  `pdispFor`  
- [in] Non utilizzato.  
+ in Non utilizzato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -75,7 +75,7 @@ HRESULT ParseProcedureText(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Corrente [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore può neimplementuje metodu questo metodo.  
+ Il motore di [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] corrente non implementa questo metodo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IActiveScriptAuthorProcedure](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate | Microsoft Docs
+title: 'IActiveScriptSite:: OnScriptTerminate | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 664f974b26a2cae0d1e16d37dc3bc66e95993d6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a715b39b07df4183d4ec542a1dd82b4229d1f41e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992647"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570211"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
-Comunica all'host che lo script è stata completata l'esecuzione.  
+Informa l'host che l'esecuzione dello script è stata completata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,16 +38,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>Parametri  
  `pvarResult`  
- [in] Indirizzo di una variabile che contiene il risultato dello script, o `NULL` se lo script ha prodotto alcun risultato.  
+ in Indirizzo di una variabile che contiene il risultato dello script o `NULL` se lo script non ha prodotto alcun risultato.  
   
  `pexcepinfo`  
- [in] Indirizzo di un `EXCEPINFO` struttura che contiene le informazioni sull'eccezione generate quando lo script è terminata, o `NULL` se è stata generata alcuna eccezione.  
+ in Indirizzo di una struttura di `EXCEPINFO` contenente le informazioni sulle eccezioni generate al termine dello script oppure `NULL` se non è stata generata alcuna eccezione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se l'esito è positivo, restituisce `S_OK`.  
   
 ## <a name="remarks"></a>Note  
- Il motore di script chiama questo metodo prima della chiamata ai [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) metodo, con il set di flag SCRIPTSTATE_INITIALIZED, viene completata. Questo metodo può essere utilizzato per restituire lo stato di completamento e i risultati per l'host. Si noti che molti linguaggi di script, che si basano sugli eventi di sink dall'host, vita intervalli definiti dall'host. In questo caso, questo metodo non può mai essere chiamato.  
+ Il motore di scripting chiama questo metodo prima della chiamata al metodo [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) , con il flag SCRIPTSTATE_INITIALIZED impostato, viene completato. Questo metodo può essere utilizzato per restituire lo stato di completamento e i risultati all'host. Si noti che molti linguaggi di script, basati su eventi di sink dall'host, hanno intervalli di vita definiti dall'host. In questo caso, questo metodo non può mai essere chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs
+title: 'IApplicationDebuggerUI:: BringDocumentToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8a88b44f609113670259492eb82491b16004d29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b51e7b588750fc72e61840c4748c006eea732c22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991120"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577801"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
-Visualizza la finestra che contiene il documento di debug specificato all'inizio nel debugger di interfaccia utente.  
+Consente di portare la finestra contenente il documento di debug specificato nella parte superiore dell'interfaccia utente del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT BringDocumentToTop(
   
 #### <a name="parameters"></a>Parametri  
  `pddt`  
- [in] Eseguire il debug di documento per portare in primo piano nell'interfaccia utente del debugger.  
+ in Eseguire il debug del documento per portarlo nella parte superiore dell'interfaccia utente del debugger.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -48,7 +48,7 @@ HRESULT BringDocumentToTop(
 |`E_INVALIDARG`|Il documento non è noto.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo offre la finestra che contiene il documento di debug specificato all'inizio nel debugger di interfaccia utente.  
+ Questo metodo consente di portare la finestra contenente il documento di debug specificato nella parte superiore dell'interfaccia utente del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)

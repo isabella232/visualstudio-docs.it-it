@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugstackwalker:: GetNext | Microsoft Docs'
+title: 'Metodo IJsDebugStackWalker:: GetNext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8931a01f3afe05f791f4d89da60a9354868215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa667402b46a3404c31dfe26307a5893c68ffcc0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977874"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574022"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>Metodo IJsDebugStackWalker::GetNext
 Ottiene il frame successivo.  
@@ -35,15 +35,15 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Parametri  
  `ppFrame`  
- [out] Oggetto che rappresenta il frame dello stack.  
+ out Oggetto che rappresenta il stack frame.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- Restituisce E_JsDEBUG_OUTSIDE_OF_VM quando non sono più stack frame da enumerare  
+ Restituisce E_JsDEBUG_OUTSIDE_OF_VM quando non sono presenti altri stack frame da enumerare  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugStackWalker](../../winscript/reference/ijsdebugstackwalker-interface.md)

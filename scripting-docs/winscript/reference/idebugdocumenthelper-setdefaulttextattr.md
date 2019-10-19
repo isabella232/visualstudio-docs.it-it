@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr | Microsoft Docs
+title: 'IDebugDocumentHelper:: SetDefaultTextAttr | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea63f028497f1eb90803f59423f608d0a42960cf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948954"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574642"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
-Imposta gli attributi predefiniti da utilizzare per il testo che non sia in un blocco di script.  
+Imposta gli attributi predefiniti da utilizzare per il testo che non si trova in un blocco di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT SetDefaultTextAttr(
   
 #### <a name="parameters"></a>Parametri  
  `staTextAttr`  
- Gli attributi di testo di origine predefinita.  
+ Attributi predefiniti del testo di origine.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,8 +47,8 @@ HRESULT SetDefaultTextAttr(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- A meno che non vengono modificati gli attributi predefiniti da questo metodo, gli attributi predefiniti per il testo all'esterno di un blocco di script è SOURCETEXT_ATTR_NONSOURCE. L'interfaccia utente può usare queste informazioni per contrassegnare il testo all'esterno di blocchi di script in sola lettura.  
+ A meno che non vengano modificati gli attributi predefiniti da questo metodo, gli attributi predefiniti per il testo all'esterno di un blocco di script sono SOURCETEXT_ATTR_NONSOURCE. L'interfaccia utente può utilizzare queste informazioni per contrassegnare il testo all'esterno dei blocchi di script come di sola lettura.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

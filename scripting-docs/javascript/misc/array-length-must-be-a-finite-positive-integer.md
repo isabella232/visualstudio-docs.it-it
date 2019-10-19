@@ -1,5 +1,5 @@
 ---
-title: La lunghezza della matrice deve essere un valore integer positivo finito | Microsoft Docs
+title: La lunghezza della matrice deve essere un numero intero positivo finito | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,32 +14,32 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69494f1485a97ff4f2c98cf2493e5d0bc5b8aa9f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818124"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576085"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>La lunghezza della matrice deve essere pari a un numero intero positivo finito
-Si chiama il **matrice** costruttore con un argomento che non è un numero intero (numeri interi sono costituite da zero e il set di numeri interi positivi).  
+Si sta chiamando il costruttore di **matrice** con un argomento che non è un numero intero (i numeri interi sono costituiti da zero e dal set di numeri interi positivi).  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Utilizzare numeri interi positivi solo quando si crea un nuovo `Array` oggetto. Se si desidera creare una matrice con un singolo elemento che non è un integer, eseguire questa operazione in un processo in due passaggi. Prima di tutto creare una matrice con un elemento, quindi inserire il valore nel primo elemento (array[0]). Di seguito è riportato un esempio che genera l'errore.  
+- Usare numeri interi positivi solo quando si crea un nuovo oggetto `Array`. Se si vuole creare una matrice con un singolo elemento che non è un numero intero, eseguirla in un processo in due passaggi. Creare prima di tutto una matrice con un elemento, quindi inserire il valore nel primo elemento (array [0]). Di seguito è riportato un esempio che genera questo errore.  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  
     ```  
   
-     Nell'esempio seguente viene illustrato il modo corretto per specificare una matrice con un solo elemento numerico.  
+     Nell'esempio seguente viene illustrato il modo corretto per specificare una matrice con un singolo elemento numerico.  
   
     ```JavaScript  
     var piArray = new Array(1);  
     piArray [0] = 3.14159;  
     ```  
   
-     Non vi è alcun limite massimo per le dimensioni di una matrice, diverso dal valore massimo numero intero (circa 4 miliardi).  
+     Non esiste un limite massimo per la dimensione di una matrice, ad eccezione del valore intero massimo (approssimativamente 4 miliardi).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso delle matrici](../../javascript/advanced/using-arrays-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Metodo ijsdebugframe:: Evaluate | Microsoft Docs'
+title: 'Metodo metodo ijsdebugframe:: Evaluate | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b328d6071ae9dc96b8e7f62bad6d4417aa1730f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6227b97c1fd5fae32db3e13ef72751726c36b043
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558190"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573489"
 ---
 # <a name="ijsdebugframeevaluate-method"></a>Metodo IJsDebugFrame::Evaluate
-Valutare un'espressione nel contesto di questo frame dello stack.  
+Valutare un'espressione nel contesto di questo stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,21 +37,21 @@ HRESULT Evaluate(
   
 #### <a name="parameters"></a>Parametri  
  `pExpressionText`  
- [in] L'espressione da valutare.  
+ in Espressione da valutare.  
   
  `ppDebugProperty`  
- [out] Oggetto che rappresenta il Visualizzatore proprietà.  
+ out Oggetto che rappresenta il Visualizzatore proprietà.  
   
  `pError`  
- [out] Il messaggio di errore, se si verifica un errore.  
+ out Messaggio di errore, se si verifica un errore.  
   
 ## <a name="return-value"></a>Valore restituito  
   
 ## <a name="remarks"></a>Note  
- Restituisce quanto segue: S_OK: Esito positivo della valutazione, * ppDebugProperty contiene il risultato della valutazione. S_FALSE: La valutazione genera un errore o l'operazione di valutazione non è supportato, \*pError contiene il messaggio di errore.  
+ Restituisce quanto segue: S_OK: la valutazione ha esito positivo, * ppDebugProperty contiene il risultato della valutazione. S_FALSE: la valutazione genera un errore (oppure l'operazione di valutazione non è supportata), \*pError contiene il messaggio di errore.  
   
 ## <a name="requirements"></a>Requisiti  
- **Intestazione:** jscript9diag.h  
+ **Intestazione:** jscript9diag. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleBreakPoint | Microsoft Docs
+title: 'IDebugApplication:: HandleBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30937817424e88f80cfa6afa8c874adfd2b2687b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412384"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574968"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-Fa sì che il thread corrente bloccare e invia una notifica del punto di interruzione per il debug dell'IDE.  
+Fa in modo che il thread corrente si blocchi e invii una notifica del punto di interruzione all'IDE del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT HandleBreakPoint(
   
 #### <a name="parameters"></a>Parametri  
  `br`  
- [in] Il motivo dell'interruzione.  
+ in Motivo dell'interruzioni.  
   
  `pbra`  
- [out] Azione da intraprendere quando il debugger consente di riprendere l'applicazione.  
+ out Azione da intraprendere quando il debugger riprende l'applicazione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -51,15 +51,15 @@ HRESULT HandleBreakPoint(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Un motore del linguaggio chiama questo metodo nel contesto di un thread che raggiunge un punto di interruzione. Questo metodo blocca il thread corrente e invia una notifica di punto di interruzione per il debug dell'IDE. Quando il debugger consente di riprendere l'applicazione, il `pbra` parametro specifica l'azione da intraprendere.  
+ Un motore di linguaggio chiama questo metodo nel contesto di un thread che raggiunge un punto di interruzione. Questo metodo blocca il thread corrente e invia una notifica del punto di interruzione all'IDE del debugger. Quando il debugger riprende l'applicazione, il `pbra` parametro specifica l'azione da intraprendere.  
   
 > [!NOTE]
-> Il motore del linguaggio può essere chiamato dal thread per eseguire le attività, ad esempio enumerare stack frame o valutano espressioni durante il punto di interruzione.  
+> Il modulo di gestione del linguaggio può essere chiamato dal thread per eseguire attività quali l'enumerazione di stack frame o la valutazione di espressioni durante il punto di interruzione.  
   
- Questo metodo determina `IApplicationDebugger::onHandleBreakPoint` da chiamare.  
+ Questo metodo fa sì che `IApplicationDebugger::onHandleBreakPoint` venga chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   
- [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
- [Enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)   
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ @No__t_1 [IApplicationDebugger:: onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)  
+ @No__t_1 [enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)  
  [Enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)

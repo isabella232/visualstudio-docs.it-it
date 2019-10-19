@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CauseBreak | Microsoft Docs
+title: 'IRemoteDebugApplication:: CauseBreak | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce0ebe3b32b11bdd79884504233b3f4e09a035f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8107d7f8450df759b53175505c8d7fc2b6bde641
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944334"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571490"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
-Fa sì che l'applicazione accede al debugger il prima possibile.  
+Fa in modo che l'applicazione si interrompa nel debugger con la prima opportunità.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,7 +44,7 @@ HRESULT CauseBreak();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Chiamare questo metodo non determina un'applicazione interrompere immediatamente. Se l'applicazione non è in esecuzione il codice di script, potrebbe trascorrere molto tempo prima che l'applicazione in realtà si interrompe.  
+ La chiamata a questo metodo non comporta l'interruzioni immediate di un'applicazione. Se l'applicazione non sta eseguendo il codice script, può trascorrere molto tempo prima che l'applicazione venga effettivamente interrotta.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

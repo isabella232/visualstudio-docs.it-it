@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString | Microsoft Docs
+title: 'IActiveScriptSite:: GetDocVersionString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ecc592b6b7fcae5f516a3c1dd111c027e67b6dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992729"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571126"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-Recupera una stringa definita dall'host che identifica in modo univoco la versione del documento corrente. Se il documento correlato è stato modificato all'esterno dell'ambito dello Script di Windows (come nel caso di una pagina HTML in fase di modifica con il blocco note), il motore di scripting possibile salvare questo oltre allo stato persistente, la volta successiva che viene caricato lo script di ricompilazione forzata.  
+Recupera una stringa definita dall'host che identifica in modo univoco la versione del documento corrente. Se il documento correlato è stato modificato al di fuori dell'ambito di Windows script (come nel caso di una pagina HTML modificata con blocco note), il motore di scripting può salvare questo insieme allo stato permanente, forzando una ricompilazione alla successiva caricamento dello script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,13 +37,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>Parametri  
  `pstrVersionString`  
- [out] Indirizzo della stringa di versione documento definito dall'host.  
+ out Indirizzo della stringa di versione del documento definito dall'host.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce `S_OK` caso di esito positivo o `E_NOTIMPL` se questo metodo non è supportato.  
+ Restituisce `S_OK` se ha esito positivo oppure `E_NOTIMPL` se questo metodo non è supportato.  
   
 ## <a name="remarks"></a>Note  
- Se `E_NOTIMPL` viene restituito, il motore di scripting deve presupporre che lo script sia sincronizzato con il documento.  
+ Se viene restituito `E_NOTIMPL`, il motore di scripting deve presupporre che lo script sia sincronizzato con il documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

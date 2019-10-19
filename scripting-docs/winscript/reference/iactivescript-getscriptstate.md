@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState | Microsoft Docs
+title: 'IActiveScript:: GetScriptState | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f9f3bedee9af9ae3cb145108d801f252267d5d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d266e713879aafe1c5ca271d46b3030f3275460f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935748"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575732"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-Recupera lo stato corrente del motore di script. Questo metodo può essere chiamato dal thread non di base senza causando un callout non in base agli oggetti di host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaccia.  
+Recupera lo stato corrente del motore di script. Questo metodo può essere chiamato da thread non di base senza comportare un callout non di base per ospitare oggetti o per l'interfaccia [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,10 +37,10 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>Parametri  
  `pss`  
- [out] Indirizzo di una variabile che riceve un valore definito nel [enumerazione SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) enumerazione. Il valore indica lo stato corrente del motore di scripting associato al thread chiama.  
+ out Indirizzo di una variabile che riceve un valore definito nell'enumerazione [SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) . Il valore indica lo stato corrente del motore di scripting associato al thread chiamante.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce `S_OK` caso di esito positivo o `E_POINTER` se è stato specificato un puntatore non valido.  
+ Restituisce `S_OK` se ha esito positivo oppure `E_POINTER` se è stato specificato un puntatore non valido.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetShortName | Microsoft Docs
+title: 'IDebugDocumentHelper:: seshortname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84cab7872272b08e12c532e6c07b4afb741a53c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40716b65c863106b6964a65efcf47dcdcdd6bfc5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963546"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569943"
 ---
 # <a name="idebugdocumenthelpersetshortname"></a>IDebugDocumentHelper::SetShortName
 Imposta il nome breve per il documento.  
@@ -37,7 +37,7 @@ HRESULT SetShortName(
   
 #### <a name="parameters"></a>Parametri  
  `pszShortName`  
- [in] Stringa con terminazione null contenente il nome breve del documento.  
+ in Stringa con terminazione null che contiene il nome breve del documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  

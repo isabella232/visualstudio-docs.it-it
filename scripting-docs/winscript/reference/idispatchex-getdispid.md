@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetDispID | Microsoft Docs
+title: 'IDispatchEx:: GetDispID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95ab1d72e5b2f608c51ac6e56be1986df8945ec2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57f0faf6004e2219600f0dbd63749a7e65ca438c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000859"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576607"
 ---
 # <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
-Associa un nome singolo membro al DISPID corrispondente, che può quindi essere utilizzato nelle chiamate successive a `IDispatchEx::InvokeEx`.  
+Esegue il mapping di un nome di singolo membro al DISPID corrispondente, che può quindi essere utilizzato nelle chiamate successive a `IDispatchEx::InvokeEx`.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,20 +39,20 @@ HRESULT GetDispID(
   
 #### <a name="parameters"></a>Parametri  
  `bstrName`  
- Passato nel nome, per eseguire il mapping.  
+ Passato nome da mappare.  
   
  `grfdex`  
- Determina le opzioni per ottenere l'identificatore di membro. Può trattarsi di una combinazione dei valori seguenti:  
+ Determina le opzioni per ottenere l'identificatore del membro. Può trattarsi di una combinazione dei valori seguenti:  
   
 |Value|Significato|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Richieste che si eseguire la ricerca del nome in modo distinzione maiuscole/minuscole. Può essere ignorata dall'oggetto che non supporta la ricerca tra maiuscole e minuscole.|  
-|fdexNameEnsure|Richiede che il membro creato se non esiste già. Il nuovo membro deve essere creato con il valore `VT_EMPTY`.|  
-|fdexNameImplicit|Indica che il chiamante è la ricerca di oggetti per un membro di un determinato nome quando l'oggetto di base non viene specificato in modo esplicito.|  
-|fdexNameCaseInsensitive|Richieste che si eseguire la ricerca del nome in modo tra maiuscole e minuscole. Può essere ignorata dall'oggetto che non supporta la ricerca tra maiuscole e minuscole.|  
+|fdexNameCaseSensitive|Richiede che la ricerca del nome venga eseguita con distinzione tra maiuscole e minuscole. Può essere ignorato dall'oggetto che non supporta la ricerca con distinzione tra maiuscole e minuscole.|  
+|fdexNameEnsure|Richiede che il membro venga creato se non esiste già. Il nuovo membro deve essere creato con il valore `VT_EMPTY`.|  
+|fdexNameImplicit|Indica che il chiamante esegue la ricerca di oggetti per un membro di un nome specifico quando l'oggetto di base non è specificato in modo esplicito.|  
+|fdexNameCaseInsensitive|Richiede che la ricerca del nome venga eseguita senza distinzione tra maiuscole e minuscole. Può essere ignorato da un oggetto che non supporta la ricerca senza distinzione tra maiuscole e minuscole.|  
   
  `pid`  
- Puntatore alla posizione allocata dal chiamante per ricevere il risultato DISPID. Se si verifica un errore, `pid` contiene DISPID_UNKNOWN.  
+ Puntatore al percorso allocato dal chiamante per ricevere il risultato del DISPID. Se si verifica un errore, `pid` contiene DISPID_UNKNOWN.  
   
 ## <a name="return-value"></a>Valore restituito  
  Restituisce uno dei valori seguenti:  
@@ -61,14 +61,14 @@ HRESULT GetDispID(
 |-|-|  
 |`S_OK`|Operazione completata.|  
 |`E_OUTOFMEMORY`|Memoria insufficiente.|  
-|`DISP_E_UNKNOWNNAME`|Il nome non è stato definito.|  
+|`DISP_E_UNKNOWNNAME`|Il nome non è noto.|  
   
 ## <a name="remarks"></a>Note  
- `GetDispID` può essere usato al posto di `GetIDsOfNames` per ottenere il DISPID per un determinato membro.  
+ è possibile utilizzare `GetDispID` anziché `GetIDsOfNames` per ottenere il DISPID per un determinato membro.  
   
- Poiché `IDispatchEx` consente l'aggiunta e l'eliminazione di membri, il set di DISPID non rimanere costante per la durata di un oggetto.  
+ Poiché `IDispatchEx` consente l'aggiunta e l'eliminazione di membri, il set di DISPID non rimane costante per la durata di un oggetto.  
   
- Inutilizzata `riid` parametro in `IDispatch::GetIDsOfNames` è stata rimossa.  
+ Il parametro `riid` non usato in `IDispatch::GetIDsOfNames` è stato rimosso.  
   
 ## <a name="example"></a>Esempio  
   

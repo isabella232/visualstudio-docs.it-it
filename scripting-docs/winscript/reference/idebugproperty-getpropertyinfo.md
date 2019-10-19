@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetPropertyInfo | Microsoft Docs
+title: 'IDebugProperty:: GetPropertyInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51cf7fae597d95b0d9098d6b2dc6950c2d06bfa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0698e09cd9643322a237a81d971248577fd97e0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979149"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562332"
 ---
 # <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
 Ottiene il valore di un `IDebugProperty` che descrive un metodo o una proprietà indicizzata.  
@@ -39,18 +39,18 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>Parametri  
  `dwFields`  
- [in] Specifica la `DBGPROP_INFO_FLAGS` costanti che determinano i campi da compilare `DebugPropertyInfo` struttura.  
+ in Specifica le costanti `DBGPROP_INFO_FLAGS` che determinano i campi da compilare nella struttura di `DebugPropertyInfo`.  
   
  `nRadix`  
- [in] Radice da utilizzare nella formattazione qualsiasi informazioni numeriche.  
+ in Radice da usare per la formattazione di qualsiasi informazione numerica.  
   
  `pPropertyInfo`  
- [out] Restituisce il `DebugPropertyInfo` struttura che descrive la proprietà.  
+ out Restituisce la struttura di `DebugPropertyInfo` che descrive la proprietà.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore valido `HRESULT`, in genere `S_OK`.  
+ Restituisce un `HRESULT` valido, in genere `S_OK`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)    
+ @No__t_1 [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
  [Struttura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

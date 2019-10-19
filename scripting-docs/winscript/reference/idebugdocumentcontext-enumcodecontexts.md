@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::EnumCodeContexts | Microsoft Docs
+title: 'IDebugDocumentContext:: EnumCodeContexts | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ecf8b7d1ea292d0e1464825314cc92e1e903db3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 790fd55493bfb24b32400bc73ae8a1799a279625
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974423"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573487"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
-Enumera i contesti di codice associati a questo contesto di documento.  
+Enumera i contesti di codice associati a questo contesto del documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT EnumCodeContexts(
   
 #### <a name="parameters"></a>Parametri  
  `ppescc`  
- [out] I contesti di codice associati a questo contesto di documento.  
+ out Contesti di codice associati a questo contesto del documento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT EnumCodeContexts(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Un documento è in genere associato al contesto di un solo codice, a meno che il documento è un file di inclusione o di un modello.  
+ Un documento è in genere associato a un solo contesto di codice, a meno che il documento non sia un file di inclusione o un modello.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md)

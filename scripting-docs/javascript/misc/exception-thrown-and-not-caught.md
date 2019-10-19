@@ -14,25 +14,25 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a9e4f51d5daf7a9e1b1153acbbe8b76b539b72
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946329"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572864"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Eccezione generata e non rilevata
-È incluso un `throw` istruzione nel codice, ma non è stato racchiuso all'interno di un **provare** blocco, o è stato associato alcun **catch** blocco per l'errore intercettato. Le eccezioni generate dall'interno la **provare** bloccato tramite il **throw** istruzione e rilevata di fuori il **provare** blocco con un **catch** istruzione.  
+È stata inclusa un'istruzione `throw` nel codice, ma non è stata inclusa in un blocco **try** oppure non è disponibile alcun blocco **catch** associato per intercettare l'errore. Le eccezioni vengono generate all'interno del blocco **try** utilizzando l'istruzione **throw** e rilevate all'esterno del blocco **try** con un'istruzione **catch** .  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Racchiudere il codice che può generare un'eccezione in un **provare** block e assicurarsi che ci sia un corrispondente **catch** blocco.  
+- Racchiudere il codice che può generare un'eccezione in un blocco **try** e verificare che sia presente un blocco **catch** corrispondente.  
   
-- Assicurarsi che l'istruzione catch si aspetta che la forma corretta dell'eccezione.  
+- Verificare che l'istruzione catch preveda il formato corretto dell'eccezione.  
   
-- Se viene nuovamente generata l'eccezione, assicurarsi che sia presente un'altra istruzione catch corrispondente.  
+- Se l'eccezione viene generata nuovamente, verificare che sia presente un'altra istruzione catch corrispondente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto Error](../../javascript/reference/error-object-javascript.md)   
- [Throw (istruzione)](../../javascript/reference/throw-statement-javascript.md)   
+ @No__t_1 [oggetto errore](../../javascript/reference/error-object-javascript.md)  
+ [istruzione throw](../../javascript/reference/throw-statement-javascript.md)    
  [Istruzione try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

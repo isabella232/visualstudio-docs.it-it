@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthelper:: Definescriptblock | Microsoft Docs'
+title: IDebugDocumentHelper::D efineScriptBlock | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a320e4e43a983ace4decbaa68de0b1a7df7d457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a2418b18e80ac86b672b3847f24ef9084ed1252
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783024"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576985"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-Indica all'helper che un determinato intervallo di caratteri è un blocco di script che viene gestito dal motore di script specificato.  
+Indica all'helper che un intervallo di caratteri specifico è un blocco di script gestito dal motore di script specificato.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,19 +41,19 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>Parametri  
  `ulCharOffset`  
- [in] Posizione di inizio del blocco di script.  
+ in Posizione dell'inizio del blocco di script.  
   
  `cChars`  
- [in] Numero di caratteri nel blocco di script.  
+ in Numero di caratteri nel blocco di script.  
   
  `pas`  
- [in] Il motore di script di questo blocco di script.  
+ in Motore di script per questo blocco di script.  
   
  `fScriptlet`  
- [in] Flag che indica se il blocco di script è scriptlet.  
+ in Flag che indica se il blocco di script è un scriptlet.  
   
  `pdwSourceContext`  
- [out] Il contesto di origine per il blocco di script.  
+ out Contesto di origine per il blocco di script.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -63,13 +63,13 @@ HRESULT DefineScriptBlock(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Uno smart host può utilizzare questo metodo quando i documenti contengono blocchi di script incorporati. Un motore del linguaggio può utilizzare questo metodo quando il codice contiene script incorporati per le altre lingue.  
+ Uno smart host può utilizzare questo metodo quando i documenti contengono blocchi di script incorporati. Un motore di linguaggio può utilizzare questo metodo quando il codice contiene script incorporati per altri linguaggi.  
   
- Il motore di script è responsabile di tutte le sintassi colorazione e il codice contesto ricerche nel blocco di script.  
+ Il modulo di gestione di script è responsabile di tutta la colorazione della sintassi e delle ricerche del contesto del codice nel blocco di script.  
   
- Il `DefineScriptBlock` deve essere chiamato dopo il testo è stato aggiunto (ad esempio, usando il `IDebugDocumentHelper::AddDBCSText` (metodo)) ma prima lo script di blocco è stato analizzato (ad esempio, usando il `IActiveScriptParse ::ParseScriptText` (metodo)).  
+ Il metodo di `DefineScriptBlock` deve essere chiamato dopo l'aggiunta del testo (ad esempio, usando il metodo `IDebugDocumentHelper::AddDBCSText`) ma prima che il blocco di script sia stato analizzato (ad esempio, usando il metodo `IActiveScriptParse ::ParseScriptText`).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ @No__t_1 [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)  
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

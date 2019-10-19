@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild | Microsoft Docs
+title: 'IScriptNode:: GetChild | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78b5c84c6ed9b3de9593f0d6ff02df93a0e9ba77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27ddde527be1ea4148e4166581ab2cb1a71d15f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787130"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573559"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
 Restituisce l'elemento figlio in corrispondenza dell'indice specificato nel nodo.  
@@ -38,12 +38,12 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>Parametri  
  `isn`  
- [in] L'indice dell'elemento figlio del padre.  
+ in Indice dell'elemento figlio nell'elemento padre.  
   
  `ppsn`  
- [out] L'indirizzo di una variabile che riceve un puntatore al `IScriptNode` interfaccia dell'istanza figlio.  
+ out Indirizzo di una variabile che riceve un puntatore all'interfaccia `IScriptNode` dell'istanza figlio.  
   
- Per `IScriptNode` gli oggetti che rappresentano una pagina Web, questo parametro restituisce un oggetto che contiene un blocco di script.  
+ Per `IScriptNode` oggetti che rappresentano una pagina Web, questo parametro restituisce un oggetto che contiene un blocco di script.  
   
  Per `IScriptEntry` oggetti che specificano un blocco di script, questo parametro restituisce un oggetto che specifica una funzione.  
   
@@ -55,7 +55,7 @@ HRESULT GetChild(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Per la `IScriptEntry` oggetti che specificano un oggetto funzione e per `IScriptScriptlet` oggetti, questo metodo ha esito negativo perché non sono presenti voci figlio.  
+ Per `IScriptEntry` oggetti che specificano un oggetto funzione e per `IScriptScriptlet` oggetti, questo metodo ha esito negativo perché non sono presenti voci figlio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)

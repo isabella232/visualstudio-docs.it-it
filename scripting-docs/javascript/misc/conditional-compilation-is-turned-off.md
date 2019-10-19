@@ -14,15 +14,15 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56621d6f7fcc195a4ece7654adeafd1096c37e8b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946576"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572935"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Compilazione condizionale disattivata
-Si è provato a usare una variabile di compilazione condizionale senza prima compilazione condizionale di attivazione in. Attivare la compilazione condizionale indica il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilatore a interpretare gli indicatori che iniziano con come variabili di compilazione condizionale. È possibile anteporre al codice con l'istruzione condizionale:  
+Si è provato a usare una variabile di compilazione condizionale senza prima attivare la compilazione condizionale. L'attivazione della compilazione condizionale indica al compilatore [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] di interpretare gli identificatori che iniziano con @ come variabili di compilazione condizionale. A tale scopo, iniziare il codice condizionale con l'istruzione:  
   
 ```js
 /*@cc_on @*/  
@@ -37,8 +37,8 @@ Si è provato a usare una variabile di compilazione condizionale senza prima com
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Compilazione condizionale](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variabili di compilazione condizionale](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on Istruzione](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if Istruzione](../../javascript/reference/at-if-statement-javascript.md)   
+ @No__t_1 di [compilazione condizionale](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Variabili di compilazione condizionale](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
+ [istruzione @cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)    
+ [istruzione @if](../../javascript/reference/at-if-statement-javascript.md)    
  [Istruzione @set](../../javascript/reference/at-set-statement-javascript.md)

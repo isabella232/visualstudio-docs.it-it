@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete | Microsoft Docs
+title: 'IDebugApplication:: StepOutComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f8ecfb835199afa0a60f3fde3c8fbdc8812240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f50d7e8a8936e52f4177450e7d163c4cfeaa55df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990620"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571033"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-Notifica il gestore di debug di processi che un motore di lingua nella modalità passo a passo sta per essere restituita al relativo chiamante.  
+Notifica alla gestione del debug del processo che un motore di linguaggio in modalità a singolo passaggio sta per tornare al chiamante.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -44,7 +44,7 @@ HRESULT StepOutComplete();
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Motori di linguaggio chiamano questo metodo in modalità solo passaggio prima di restituire al chiamante. Il gestore di debug di processi Usa questa opportunità per notificare a tutti gli altri motori di script che interrompano il prima possibile. Questa tecnica è il passaggio tra più linguaggi come vengono implementate le modalità.  
+ I motori di linguaggio chiamano questo metodo in modalità a singolo passaggio poco prima di tornare al chiamante. Il gestore del debug del processo usa questa opportunità per notificare a tutti gli altri motori di script che devono interrompere la prima opportunità. Questa tecnica è il modo in cui vengono implementate le modalità passaggio tra linguaggi diversi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetDebugger | Microsoft Docs
+title: 'IRemoteDebugApplication:: getdebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba28af068bae6baa3031dde346fa0157e8e1ce6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 031e4390941d9b8b025c704ebfcec20224aa1c79
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944265"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573825"
 ---
 # <a name="iremotedebugapplicationgetdebugger"></a>IRemoteDebugApplication::GetDebugger
-Restituisce il debugger corrente è connesso all'applicazione.  
+Restituisce il debugger corrente connesso all'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetDebugger(
   
 #### <a name="parameters"></a>Parametri  
  `pad`  
- [out] Il debugger corrente è connesso all'applicazione.  
+ out Debugger corrente connesso all'applicazione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,8 +47,8 @@ HRESULT GetDebugger(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il debugger corrente è connesso all'applicazione.  
+ Questo metodo restituisce il debugger corrente connesso all'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
+ @No__t_1 [IRemoteDebugApplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)  
  [Interfaccia IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

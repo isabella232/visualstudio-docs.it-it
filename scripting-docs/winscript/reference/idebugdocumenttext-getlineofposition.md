@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Microsoft Docs
+title: 'IDebugDocumentText:: GetLineOfPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8ce32e46c42ee864a88e169a79539efb8b05633
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970874"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572121"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Restituisce il numero di riga e, facoltativamente, l'offset carattere nella riga che corrisponde alla posizione del carattere specificata.  
+Restituisce il numero di riga e, facoltativamente, l'offset di caratteri all'interno della riga corrispondente alla posizione del carattere specificata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,13 +39,13 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>Parametri  
  `cCharacterPosition`  
- [in] Posizione iniziale dell'intervallo di caratteri della posizione.  
+ in Posizione iniziale dell'intervallo di posizioni dei caratteri.  
   
  `pcLineNumber`  
- [out] Il numero di riga dell'intervallo.  
+ out Numero di riga dell'intervallo.  
   
  `pcCharacterOffsetInLine`  
- [in, out] L'offset carattere dell'intervallo all'interno di riga `pcLineNumber`. Se questo parametro è `NULL`, il metodo non restituisce un valore.  
+ [in, out] Offset carattere dell'intervallo all'interno del `pcLineNumber` di riga. Se questo parametro è `NULL`, il metodo non restituisce alcun valore.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -55,7 +55,7 @@ HRESULT GetLineOfPosition(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il numero di riga e, facoltativamente, l'offset carattere nella riga che corrisponde alla posizione del carattere specificata.  
+ Questo metodo restituisce il numero di riga e, facoltativamente, l'offset di caratteri all'interno della riga corrispondente alla posizione del carattere specificata.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

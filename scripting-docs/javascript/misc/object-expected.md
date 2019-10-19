@@ -14,12 +14,12 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1611596d844d43ef72663154dc48791830dfe29f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006366"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573731"
 ---
 # <a name="object-expected"></a>Previsto oggetto
 Si è tentato di richiamare un metodo o una proprietà in un oggetto di tipo diverso da `Object` oppure è stato passato un argomento di tipo diverso da `Object` quando era obbligatorio un `Object`.  
@@ -47,5 +47,5 @@ Si è tentato di richiamare un metodo o una proprietà in un oggetto di tipo div
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto Object](../../javascript/reference/object-object-javascript.md)   
+ @No__t_1 [oggetto oggetto](../../javascript/reference/object-object-javascript.md)  
  [Oggetti e matrici](../../javascript/objects-and-arrays-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext | Microsoft Docs
+title: 'IDebugStackFrame:: GetCodeContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadb440017969f3ea4c824c681c726645a5757b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b640238b9c1212f477c6a26a9cc251678758f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934708"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574283"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-Restituisce il contesto codice corrente associato al frame dello stack.  
+Restituisce il contesto di codice corrente associato all'stack frame.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetCodeContext(
   
 #### <a name="parameters"></a>Parametri  
  `ppcc`  
- [out] Contesto del codice associato al frame dello stack.  
+ out Contesto di codice associato all'stack frame.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT GetCodeContext(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il contesto codice corrente associato al frame dello stack.  
+ Questo metodo restituisce il contesto di codice corrente associato all'stack frame.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

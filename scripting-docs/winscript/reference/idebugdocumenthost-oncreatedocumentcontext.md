@@ -1,5 +1,5 @@
 ---
-title: 'Idebugdocumenthost:: Oncreatedocumentcontext | Microsoft Docs'
+title: 'IDebugDocumentHost:: OnCreateDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdfa64f66288cba47dec7c498db15238e55f954
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971095"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569118"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Notifica all'host che un nuovo contesto del documento viene creato e consente all'host facoltativamente restituire un controllo sconosciuto per il nuovo contesto.  
+Notifica all'host che viene creato un nuovo contesto del documento e consente all'host di restituire facoltativamente un controllo sconosciuto per il nuovo contesto.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT OnCreateDocumentContext(
   
 #### <a name="parameters"></a>Parametri  
  `ppunkOuter`  
- [out] Un oggetto che controlla il nuovo contesto.  
+ out Oggetto che controlla il nuovo contesto.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -48,7 +48,7 @@ HRESULT OnCreateDocumentContext(
 |`E_NOTIMPL`|L'host non fornisce un oggetto di controllo.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo consente all'host aggiungere nuove funzionalità per i contesti di documento fornito dall'helper. Questo metodo può restituire **E_NOTIMPL** o un oggetto esterno null, nel qual caso il chiamante è responsabile della creazione del contesto.  
+ Questo metodo consente all'host di aggiungere nuove funzionalità ai contesti di documento forniti dall'helper. Questo metodo può restituire **E_NOTIMPL** o un oggetto esterno null, nel qual caso il chiamante è responsabile della creazione del contesto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

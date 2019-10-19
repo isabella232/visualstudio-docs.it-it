@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::GetParent | Microsoft Docs
+title: 'IDebugApplicationNode:: GetParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: daefe6883c4248f6122c1056f416b6399be4ae7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c887e61652da8780012d98354f028f3e5cb005c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822474"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574765"
 ---
 # <a name="idebugapplicationnodegetparent"></a>IDebugApplicationNode::GetParent
-Restituisce il nodo padre del nodo dell'applicazione.  
+Restituisce il nodo padre di questo nodo dell'applicazione.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,7 +37,7 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Parametri  
  `pprddp`  
- [out] Nodo dell'applicazione padre del nodo dell'applicazione.  
+ out Nodo applicazione padre del nodo applicazione.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -47,7 +47,7 @@ HRESULT GetParent(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il nodo padre del nodo dell'applicazione.  
+ Questo metodo restituisce il nodo padre di questo nodo dell'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

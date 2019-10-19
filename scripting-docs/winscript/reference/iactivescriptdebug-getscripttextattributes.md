@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptTextAttributes | Microsoft Docs
+title: 'IActiveScriptDebug:: GetScriptTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faec7cf65bed39a038c5ab7cc09d9908063a2c63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57bd466965f6431a1418df1aa56cf6a7bbbc78cc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009545"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576926"
 ---
 # <a name="iactivescriptdebuggetscripttextattributes"></a>IActiveScriptDebug::GetScriptTextAttributes
-Restituisce gli attributi di testo per un blocco di testo dello script arbitrario.  
+Restituisce gli attributi di testo per un blocco arbitrario di testo di script.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -41,25 +41,25 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>Parametri  
  `pstrCode`  
- [in] Il testo di blocco di script. Questa stringa non deve essere con terminata null.  
+ in Testo del blocco di script. Questa stringa non deve essere con terminazione null.  
   
  `uNumCodeChars`  
- [in] Il numero di caratteri del testo di blocco di script.  
+ in Numero di caratteri nel testo del blocco di script.  
   
  `pstrDelimiter`  
- [in] Indirizzo del delimitatore end-di--blocco di script. Quando si `pstrCode` viene analizzata da un flusso di testo, l'host utilizza un delimitatore, in genere, ad esempio due virgolette ("), per rilevare la fine del blocco di script. Questo parametro specifica il delimitatore utilizzato dall'host, consentendo il motore di scripting fornire alcuni condizionale pre-elaborazioni primitive (ad esempio, sostituire una virgoletta singola ['] con due virgolette singole per l'utilizzo come un delimitatore). Esattamente come (e se) viene utilizzato il motore scripting queste informazioni dipendono dal motore di script. Impostare questo parametro su NULL se l'host non utilizzava un delimitatore per contrassegnare la fine del blocco di script.  
+ in Indirizzo del delimitatore di blocco di fine dello script. Quando `pstrCode` viene analizzato da un flusso di testo, l'host usa in genere un delimitatore, ad esempio due virgolette singole (''), per rilevare la fine del blocco di script. Questo parametro specifica il delimitatore utilizzato dall'host, consentendo al motore di scripting di fornire una pre-elaborazione condizionale (ad esempio, sostituendo una virgoletta singola ['] con due virgolette singole da utilizzare come delimitatore). Il modo in cui (e se) il motore di scripting utilizza queste informazioni dipende dal motore di scripting. Impostare questo parametro su NULL se l'host non ha usato un delimitatore per contrassegnare la fine del blocco di script.  
   
  `dwFlags`  
- [in] Flag associato al blocco di script. Può essere una combinazione dei valori seguenti:  
+ in Flag associati al blocco di script. Può essere una combinazione di questi valori:  
   
 |Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Indica che gli identificatori e operatori punto devono essere identificati con i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP, rispettivamente.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Indica che gli identificatori e gli operatori punto devono essere identificati rispettivamente con i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Indica che l'identificatore per l'oggetto corrente deve essere identificato con il flag SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Indica che deve essere identificato testo della stringa di contenuto e il commento con il flag SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Indica che il contenuto della stringa e il testo del commento devono essere identificati con il flag SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out] Buffer che deve contenere gli attributi restituiti.  
+ [in, out] Buffer contenente gli attributi restituiti.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -69,13 +69,13 @@ HRESULT GetScriptTextAttributes(
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- Uno smart host che implementa `IDebugDocumentText` interfaccia è possibile usare questo metodo per delegare le chiamate al `IDebugDocumentText::GetText` (metodo).  
+ Uno smart host che implementa `IDebugDocumentText` interfaccia può utilizzare questo metodo per delegare le chiamate al metodo `IDebugDocumentText::GetText`.  
   
- Questo metodo per blocchi di script. il `GetScriptletTextAttributes` metodo è destinato agli Scriptlet.  
+ Questo metodo per i blocchi di script; il metodo `GetScriptletTextAttributes` è per gli scriptlet.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
- [Interfaccia IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
+ [Interfaccia IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)    
+ @No__t_1 [IActiveScriptDebug:: GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)  
+ [Interfaccia IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)    
+ @No__t_1 [IDebugDocumentText:: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)  
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

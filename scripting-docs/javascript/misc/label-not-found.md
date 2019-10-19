@@ -1,5 +1,5 @@
 ---
-title: Impossibile trovare l'etichetta | Microsoft Docs
+title: Etichetta non trovata | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,24 +14,24 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4acfb93808a588ed7efb4e256627f816e26a0137
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007373"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573776"
 ---
 # <a name="label-not-found"></a>Impossibile trovare l'etichetta
-Si è fatto un riferimento a un'etichetta che non esiste. Le etichette può essere usato per contrassegnare i blocchi di codice, ma in un ambito specificato, deve essere univoche.  
+È stato creato un riferimento a un'etichetta che non esiste. Le etichette possono essere utilizzate per contrassegnare i blocchi di codice, ma in un ambito specificato devono essere univoci.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Verificare che sia che digitato il nome dell'etichetta.  
+- Verificare che il nome dell'etichetta non sia stato digitato in modo errato.  
   
-- Verificare che tutti i riferimenti alle etichette vengono apportate alle etichette che sono state definite nell'ambito corrente (che include le definizioni di inoltrare).  
+- Assicurarsi che tutti i riferimenti alle etichette siano stati definiti nell'ambito corrente (incluse le definizioni in base).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)   
- [Istruzione switch](../../javascript/reference/switch-statement-javascript.md)   
+ [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)    
+ [istruzione switch](../../javascript/reference/switch-statement-javascript.md)    
  [Istruzione break](../../javascript/reference/break-statement-javascript.md)   
  [Istruzione continue](../../javascript/reference/continue-statement-javascript.md)

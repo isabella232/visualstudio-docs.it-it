@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0862e6fc670be6cd3d3ca9fbf67f453aa0772a90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de6efbc20843fcaa73965334c18cf0e5c2a0abab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009771"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572669"
 ---
 # <a name="appbreakflags-enumeration"></a>Enumerazione APPBREAKFLAGS
 Indicano lo stato corrente del debug delle applicazioni e dei thread.  
@@ -33,23 +33,23 @@ Indicano lo stato corrente del debug delle applicazioni e dei thread.
 enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEBUGGER_HALT= 0x00000002,APPBREAKFLAG_STEP= 0x00010000,APPBREAKFLAG_NESTED= 0x00020000,APPBREAKFLAG_STEPTYPE_SOURCE= 0x00000000,APPBREAKFLAG_STEPTYPE_BYTECODE= 0x00100000,APPBREAKFLAG_STEPTYPE_MACHINE= 0x00200000,APPBREAKFLAG_STEPTYPE_MASK= 0x00F00000,APPBREAKFLAG_IN_BREAKPOINT= 0x80000000};  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 |Member|Value|Descrizione|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Motore del linguaggio deve interrompere immediatamente in tutti i thread con BREAKREASON_DEBUGGER_BLOCK.|  
-|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Motore del linguaggio deve interrompere immediatamente con BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|Motore del linguaggio deve interrompere immediatamente nel thread di esecuzione di istruzioni con BREAKREASON_STEP.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Il motore di linguaggio deve interrompersi immediatamente su tutti i thread con BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Il motore di linguaggio deve interrompersi immediatamente con BREAKREASON_DEBUGGER_HALT.|  
+|APPBREAKFLAG_STEP|0x00010000|Il motore di linguaggio dovrebbe interrompere immediatamente il thread di esecuzione con BREAKREASON_STEP.|  
 |APPBREAKFLAG_NESTED|0x00020000|L'applicazione è in esecuzione annidata in un punto di interruzione.|  
-|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Il debugger è l'esecuzione di istruzioni a livello di origine.|  
-|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Il debugger è l'esecuzione di istruzioni a livello di codice byte.|  
-|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Il debugger è l'esecuzione di istruzioni a livello di computer.|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maschera per la separazione di tipi di passaggi.|  
-|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|Un punto di interruzione è in corso.|  
+|APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Il debugger sta eseguendo un'istruzione a livello di origine.|  
+|APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Il debugger esegue l'istruzione a livello di codice byte.|  
+|APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|Il debugger sta eseguendo un'istruzione a livello di computer.|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|Maschera per scomporre i tipi di passaggio.|  
+|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|È in corso un punto di interruzione.|  
   
 ## <a name="remarks"></a>Note  
- Alcuni flag di specificare che i motori di linguaggio devono interrompersi alla successiva opportunità, mentre altri flag di specificare la modalità di debug passo a passo del debugger.  
+ Alcuni flag specificano che i motori di linguaggio dovrebbero interrompersi alla successiva opportunità, mentre altri flag specificano la modalità di esecuzione del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Strutture, enumerazioni e costanti del Debugger dello Script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
+ [Costanti, enumerazioni e strutture del debugger di script activex](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
  [Enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

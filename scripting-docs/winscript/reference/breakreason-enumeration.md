@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f656bdf4e3bc85a014ff8d3011708799aa44bcd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955408"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572629"
 ---
 # <a name="breakreason-enumeration"></a>Enumerazione BREAKREASON
 Indica la causa dell'interruzione.  
@@ -42,18 +42,18 @@ typedef enum tagBREAKREASON {
 } BREAKREASON;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 |Member|Descrizione|  
 |------------|-----------------|  
-|BREAKREASON_STEP|Il motore del linguaggio è nella modalità di debug passo a passo.|  
-|BREAKREASON_BREAKPOINT|Il motore del linguaggio ha rilevato un punto di interruzione esplicito.|  
-|BREAKREASON_DEBUGGER_BLOCK|Il motore del linguaggio ha rilevato un blocco di debugger su un altro thread.|  
-|BREAKREASON_HOST_INITIATED|L'host ha richiesto un'interruzione.|  
-|BREAKREASON_LANGUAGE_INITIATED|Il motore del linguaggio ha richiesto un'interruzione.|  
-|BREAKREASON_DEBUGGER_HALT|L'IDE di debug ha richiesto un'interruzione.|  
-|BREAKREASON_ERROR|Un errore di esecuzione ha causato l'interruzione.|  
-|BREAKREASON_JIT|Causati da Avvio debug JIT.|  
+|BREAKREASON_STEP|Il modulo di gestione del linguaggio è in modalità di esecuzione.|  
+|BREAKREASON_BREAKPOINT|Il motore di linguaggio ha rilevato un punto di interruzione esplicito.|  
+|BREAKREASON_DEBUGGER_BLOCK|Il modulo di gestione del linguaggio ha rilevato un blocco del debugger in un altro thread.|  
+|BREAKREASON_HOST_INITIATED|L'host ha richiesto un'interruzioni.|  
+|BREAKREASON_LANGUAGE_INITIATED|Il modulo di gestione del linguaggio ha richiesto un'interruzioni.|  
+|BREAKREASON_DEBUGGER_HALT|L'IDE del debugger ha richiesto un'interruzione.|  
+|BREAKREASON_ERROR|L'errore è stato causato da un errore di esecuzione.|  
+|BREAKREASON_JIT|Causato dall'avvio del debug JIT.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Costanti, enumerazioni e strutture del debugger di script ActiveX](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHelpInfo | Microsoft Docs
+title: 'IDispError:: GetHelpInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84e57e97bb781ad3ea0be1ac6766fd94f6f5c30
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446905"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573128"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Restituisce il percorso del file della Guida e l'ID del contesto dell'argomento che spiega l'errore, se possibile.  
+Restituisce il percorso del file della guida e l'ID del contesto dell'argomento che spiega l'errore, se possibile.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,10 +38,10 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrFileName`  
- [out] Stringa contenente il percorso completo del file della Guida. Se è presente alcun file della Guida in linea oppure si verifica un errore, il valore restituito è NULL.  
+ out Stringa contenente il percorso completo del file della guida. Se non è presente alcun file della guida o si verifica un errore, il valore restituito è NULL.  
   
  `pdwContext`  
- [out] L'ID del contesto della Guida per l'errore. Se è presente alcun file della Guida (se `pbstrFileName` è NULL), questo parametro non ha alcun significato.  
+ out ID del contesto della Guida per l'errore. Se non è presente alcun file della guida (se `pbstrFileName` è NULL), questo parametro non ha alcun significato.  
   
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
@@ -50,11 +50,11 @@ HRESULT GetHelpInfo(
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_FAIL`|Si è verificato un errore specifico del provider.|  
-|`E_INVALIDARG`|`pbstrFileName` o `pdwContext` era NULL.|  
-|`E_OUTOFMEMORY`|Il provider non è riuscito ad allocare memoria sufficiente nella quale restituire il percorso del file della Guida.|  
+|`E_INVALIDARG`|`pbstrFileName` o `pdwContext` è NULL.|  
+|`E_OUTOFMEMORY`|Il provider non è in grado di allocare memoria sufficiente per restituire il percorso del file della guida.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il percorso del file della Guida e l'ID del contesto dell'argomento che spiega l'errore, se possibile.  
+ Questo metodo restituisce il percorso del file della guida e l'ID del contesto dell'argomento che spiega l'errore, se possibile.  
   
 > [!NOTE]
 > Questo metodo non è implementato.  
