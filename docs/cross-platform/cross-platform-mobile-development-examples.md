@@ -1,7 +1,7 @@
 ---
 title: Esempi di sviluppo di app per dispositivi mobili multipiattaforma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 31619757684811fb5090e6edb05c464be59fa4dd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819419"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589009"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Esempi di sviluppo di app per dispositivi mobili multipiattaforma
-Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma generano esempi completi che è possibile usare per acquisire dimestichezza. Inoltre, in Windows Dev Center sono disponibili molte applicazioni di esempio che è possibile scaricare e provare in Visual Studio.
+
+Molti dei modelli installati dallo sviluppo per **dispositivi mobili con C++**  carico di lavoro generano esempi completi che è possibile usare per imparare da. Inoltre, in Windows Dev Center sono disponibili molte applicazioni di esempio che è possibile scaricare e provare in Visual Studio.
 
 - [Esempio di applicazione Android hello-jni](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
 
@@ -36,7 +37,7 @@ Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobi
 
 - [Esempio di libreria Android TwoLibs](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
 
-   Questo esempio è una porta dell'esempio TwoLibs di Android NDK. Usa una libreria condivisa caricata in modo dinamico e una libreria nativa C++ Android statica, che implementa un metodo chiamato da un'app Java Native Interface. Questo esempio è un buon punto di partenza per gli sviluppatori per comprendere come usare le librerie condivise statiche/dinamiche per compilare un'applicazione Android JNI end-to-end con Visual Studio 2015.
+   Questo esempio è una porta dell'esempio TwoLibs di Android NDK. Usa una libreria condivisa caricata in modo dinamico e una libreria nativa C++ Android statica, che implementa un metodo chiamato da un'app Java Native Interface. Questo esempio è un valido punto di partenza per gli sviluppatori per comprendere come usare le librerie condivise statiche/dinamiche per compilare un'applicazione JNI Android end-to-end con Visual Studio.
 
 - [Esempio di applicazione Android TeaPot](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
 
@@ -48,7 +49,7 @@ Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobi
 
 - [Esempio di libreria Android test-libstdcpp](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)
 
-   Questo esempio è una porta dell'esempio test-libstdc++ di Android NDK, destinato in particolare all'uso con Visual Studio 2015. Questo esempio è un buon punto di partenza per gli sviluppatori per comprendere come usare la libreria Standard.
+   Questo esempio è una porta dell'esempio test-libstdc + + di Android NDK, in particolare per l'uso con Visual Studio. Questo esempio è un buon punto di partenza per gli sviluppatori per comprendere come usare la libreria Standard.
 
   Per aprire uno degli esempi in Visual Studio, scaricare il file ZIP e aprire la pagina **Proprietà** del file scaricato in Esplora risorse. Scegliere il pulsante **Sblocca** , quindi **OK**. Estrarre il contenuto del file ZIP nel percorso desiderato, quindi aprire la cartella C++ nell'esempio estratto e aprire il file della soluzione.
 

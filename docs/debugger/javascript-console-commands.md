@@ -1,7 +1,7 @@
 ---
-title: Comandi della JavaScript Console | Microsoft Docs
+title: Comandi della console JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 03/28/2019
+ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -10,33 +10,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fead28e60116acb7b2ae311d98e5475c5da3ec35
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905674"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588974"
 ---
-# <a name="javascript-console-commands-in-visual-studio"></a>Comandi della JavaScript Console in Visual Studio
+# <a name="javascript-console-commands-in-visual-studio"></a>Comandi della console JavaScript in Visual Studio
 
-::: moniker range=">=vs-2019"
-È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Le informazioni contenute in questo argomento si applicano alle App Node. js creata con Visual Studio con il **sviluppo Node. js** installato il carico di lavoro.
-::: moniker-end
-::: moniker range="vs-2017"
-È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Guida introduttiva: Eseguire il debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Le informazioni contenute in questo argomento si applicano all'app Node. js, UWP, App e le app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/).
-::: moniker-end
+È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Guida introduttiva: debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017). Le informazioni contenute in questo argomento sono valide per l'app node. js, le app UWP e le app create con Strumenti di Visual Studio per Apache Cordova.
 
 Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.
 
 > [!NOTE]
 > Se la finestra non è disponibile durante una sessione di debug, assicurarsi che il tipo di debugger sia impostato su **Script** nelle proprietà di debug per il progetto.
 
-Per informazioni sull'uso della console negli strumenti di sviluppo di Microsoft Edge, vedi [in questo argomento](/microsoft-edge/devtools-guide).
+Per informazioni sull'uso della console in Microsoft Edge Developer Tools, vedere [questo argomento](/microsoft-edge/devtools-guide).
 
 ## <a name="console-object-commands"></a>Comandi dell'oggetto console
+
 Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è possibile usare nella finestra della console JavaScript o per inviare messaggi alla console dal codice. Questo oggetto fornisce numerosi formati in modo che sia possibile distinguere i messaggi informativi dai messaggi di errore, se lo si desidera.
 
 È possibile usare il formato del comando più lungo `window.console.[command]` se è necessario evitare possibili confusioni con gli oggetti locali denominati console.
@@ -58,9 +55,9 @@ Questa tabella mostra la sintassi per i comandi dell'oggetto `console` che è po
 |`groupEnd()`|Termina il gruppo corrente.<br /><br /> Requisiti:<br /><br /> Visual Studio 2013|Vedere l'esempio per il comando `group` .|
 |`info(message)`|Invia `message` alla finestra della console. Il messaggio è preceduto da un simbolo di informazioni.|`console.info("info message");`<br /><br /> Per altri esempi, vedere [Formatting console.log output](#ConsoleLog) più avanti in questo argomento.|
 |`log(message)`|Invia `message` alla finestra della console.<br /><br /> Se si passa un oggetto, questo comando lo invia alla finestra della console e lo visualizza in un visualizzatore oggetti. È possibile usare il visualizzatore per controllare le proprietà nella finestra della console.|`console.log("logging message");`|
-|`msIsIndependentlyComposed(element)`|Usato nelle app Web. Non è supportato nelle App UWP scritte in JavaScript.|Non supportato.|
-|`profile(reportName)`|Usato nelle app Web. Non è supportato nelle App UWP scritte in JavaScript.|Non supportato.|
-|`profileEnd()`|Usato nelle app Web. Non è supportato nelle App UWP scritte in JavaScript.|Non supportato.|
+|`msIsIndependentlyComposed(element)`|Usato nelle app Web. Non supportato nelle app UWP che usano JavaScript.|Non supportato.|
+|`profile(reportName)`|Usato nelle app Web. Non supportato nelle app UWP che usano JavaScript.|Non supportato.|
+|`profileEnd()`|Usato nelle app Web. Non supportato nelle app UWP che usano JavaScript.|Non supportato.|
 |`select(element)`|Seleziona l'elemento HTML `element` specificato in [DOM Explorer](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|
 |`time (name)`|Avvia un timer identificato dal parametro facoltativo `name` . Se usato con `console.timeEnd`, calcola il tempo che intercorre tra `time` e `timeEnd`e invia il risultato (misurato in ms) alla console usando la stringa `name` come prefisso. Usato per abilitare la strumentazione del codice dell'app per la misurazione delle prestazioni.|`console.time("app start");  app.start();  console.timeEnd("app start");`|
 |`timeEnd(name)`|Arresta un timer identificato dal parametro facoltativo `name` . Vedere il comando della console `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|
@@ -130,5 +127,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Avvio rapido: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

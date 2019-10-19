@@ -1,7 +1,7 @@
 ---
-title: Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma | Microsoft Docs
+title: Sviluppo di app per dispositivi mobili C++ multipiattaforma con | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,97 +12,97 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1439e50eba4a0000a1bf78b3f24c74fb164c1faf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818139"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589049"
 ---
-# <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ per sviluppo app per dispositivi mobili multipiattaforma
-È possibile compilare app C++ native per dispositivi iOS, Android e Windows e condividere il codice comune nelle librerie create per iOS, Android e Windows usando Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma. Si tratta di un'opzione disponibile in Visual Studio 2015 che consente di installare gli SDK e gli strumenti necessari per lo sviluppo multipiattaforma di librerie condivise e app native. Quando è installata, è possibile usare Visual C++ per creare codice che viene eseguito su dispositivi e piattaforme iOS e Android, oltre a Windows, Windows Phone e Xbox.
+# <a name="cross-platform-mobile-development-with-c"></a>Sviluppo di app per dispositivi mobili multipiattaforma conC++
 
- La scrittura di codice per piattaforme multiple può essere frustrante. I linguaggi e gli strumenti di sviluppo primari per iOS, Android e Windows sono diversi a seconda della piattaforma. Comunque, tutte le piattaforme supportano la scrittura di codice in C++. Questo è il denominatore comune che si può usare per consentire il riutilizzo del codice di base su piattaforme diverse. Il codice nativo scritto in C++ può essere più efficiente e meno incline alla decompilazione. Il riutilizzo del codice può assicurare un risparmio di tempo e impegno durante la creazione di app per piattaforme multiple.
+È possibile compilare app C++ native per dispositivi iOS, Android e Windows usando gli strumenti multipiattaforma disponibili in Visual Studio. **Sviluppo per dispositivi C++ mobili con** è un carico di lavoro disponibile nel programma di installazione di Visual Studio. Installa gli SDK e gli strumenti necessari per lo sviluppo multipiattaforma di librerie condivise e app native. Quando è installato, è possibile usare C++ per creare codice che viene eseguito su dispositivi e piattaforme iOS e Android, Windows, Windows Store e Xbox.
 
- Lo sviluppo con Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma presenta molti vantaggi:
+La scrittura di codice per più piattaforme è spesso frustrante. I linguaggi e gli strumenti di sviluppo primari per iOS, Android e Windows sono diversi a seconda della piattaforma. Comunque, tutte le piattaforme supportano la scrittura di codice in C++. Si tratta del denominatore comune che può consentire il riutilizzo del codice di base su più piattaforme. Il codice nativo scritto in C++ può essere più efficiente e meno incline alla decompilazione. Il riutilizzo del codice può assicurare un risparmio di tempo e impegno durante la creazione di app per piattaforme multiple.
 
-1. **Installazione semplice.** Il programma di installazione di Visual Studio acquisisce e installa gli strumenti e gli SDK di terze parti necessari per compilare app o librerie per Android e iOS. La configurazione e l'installazione sono semplici e per lo più automatiche.
+Lo sviluppo C++ con per lo sviluppo di app per dispositivi mobili multipiattaforma presenta diversi vantaggi:
 
-2. **Ambiente di compilazione potente e familiare.** Creare creare facilmente progetti e soluzioni multipiattaforma condivisibili con i modelli di Visual Studio. Gestire le proprietà per tutti i progetti usando un'unica interfaccia comune. Modificare tutto il codice nell'editor di Visual Studio e sfruttare la tecnologia IntelliSense multipiattaforma incorporata per il completamento del codice e l'evidenziazione degli errori.
+- **Installazione semplice.** Il programma di installazione di Visual Studio acquisisce e installa gli strumenti e gli SDK di terze parti necessari per compilare app o librerie per Android e iOS. Configurazione e configurazione sono semplici e prevalentemente automatiche.
 
-3. **Esperienza di debug unificata.** Usare gli strumenti di debug di altissimo livello disponibili in Visual Studio per osservare ed eseguire il codice C++ su tutte le piattaforme, tra cui dispositivi ed emulatori Android, simulatori e dispositivi iOS e dispositivi ed emulatori Windows o Windows Phone.
+- **Ambiente di compilazione potente e familiare.** Creare creare facilmente progetti e soluzioni multipiattaforma condivisibili con i modelli di Visual Studio. Gestire le proprietà per tutti i progetti usando un'unica interfaccia comune. Modificare tutto il codice nell'editor di Visual Studio e sfruttare la tecnologia IntelliSense multipiattaforma incorporata per il completamento del codice e l'evidenziazione degli errori.
+
+- **Esperienza di debug unificata.** USA gli strumenti di debug di qualità elevata in Visual Studio per guardare ed esaminare C++ il codice in tutte le piattaforme: dispositivi e emulatori Android, simulatori e dispositivi iOS e dispositivi ed emulatori Windows o Windows Store.
 
 ## <a name="get-the-tools"></a>Ottenere gli strumenti
- Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma è un'opzione installabile inclusa in Visual Studio 2015. Per i prerequisiti e le istruzioni di installazione, vedere [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md) (Installare Visual C++ per sviluppo app per dispositivi mobili multipiattaforma). Per compilare il codice per iOS, è necessario anche un computer Mac e un account Apple iOS Developer Per altre informazioni, vedere [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md) (Installare e configurare strumenti per compilare con iOS).
+
+Lo sviluppo di C++ applicazioni per dispositivi mobili con è un carico di lavoro installabile incluso in Visual Studio. Per i prerequisiti e le istruzioni di installazione, vedere [installare lo sviluppo di app per C++dispositivi mobili multipiattaforma con ](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Per compilare il codice per iOS, è necessario anche un computer Mac e un account Apple iOS Developer Per altre informazioni, vedere [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md) (Installare e configurare strumenti per compilare con iOS).
 
 ## <a name="come-up-to-speed"></a>Diventare operativi
- Se si proviene dallo sviluppo per Android o iOS, sono disponibili ottimi materiali per iniziare. Visual Studio è un ambiente di sviluppo espressivo e potente. Per informazioni su come usarlo, vedere la [Guida introduttiva per sviluppatori Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) o la [Guida introduttiva per sviluppatori iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Questi argomenti presentano Visual Studio e illustrano i concetti necessari per sviluppare app multipiattaforma per Windows e Windows Phone. Per iniziare a scrivere la prima app multipiattaforma per iOS e Android, vedere [Compilare un'applicazione OpenGL ES in Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
- Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma include diversi modelli utili per iniziare a lavorare alle app:
+Se si proviene dallo sviluppo per Android o iOS, sono disponibili ottimi materiali per iniziare. Visual Studio è un ambiente di sviluppo espressivo e potente. Per informazioni su come usarlo, vedere la [Guida introduttiva per sviluppatori Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) o la [Guida introduttiva per sviluppatori iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Questi articoli presentano Visual Studio e i concetti necessari per sviluppare app multipiattaforma per Windows e Windows Store. Per iniziare a scrivere la prima app multipiattaforma per iOS e Android, vedere [creare un'applicazione OpenGL ES in Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
+
+Lo sviluppo per dispositivi C++ mobili con carico di lavoro include diversi modelli utili per iniziare a usare le app:
 
 - Applicazione OpenGLES 2 (Android, iOS, piattaforma UWP)
 
-     Creare una soluzione che include un set di progetti per compilare un'app Android NativeActivity, un'app iOS e un'app di Windows universale, insieme a una libreria di codice C++ condivisa. Queste app usano librerie specifiche della piattaforma create mediante il codice C++ OpenGL ES comune per disegnare lo stesso cubo rotante in ogni app. Quando si installa Visual Studio per usare questo modello, è necessario includere l'opzione Strumenti per lo sviluppo di app di Windows universale.
+  Creare una soluzione che include un set di progetti per compilare un'app Android NativeActivity, un'app iOS e un'app di Windows universale, insieme a una libreria di codice C++ condivisa. Queste app usano librerie specifiche della piattaforma create mediante il codice C++ OpenGL ES comune per disegnare lo stesso cubo rotante in ogni app. Per usare questo modello, includere il carico di lavoro **sviluppo della piattaforma Windows universale** quando si installa Visual Studio.
 
 - Applicazione NativeActivity (Android)
 
-     Crea un'app C++ OpenGL completa come progetto Android NativeActivity.
+  Crea un'app C++ OpenGL completa come progetto Android NativeActivity.
 
 - Applicazione OpenGLES (Android, iOS)
 
-     Creare una soluzione con un set di progetti per compilare un'app Android NativeActivity e un'app per iOS. Queste app usano librerie specifiche della piattaforma create mediante il codice C++ OpenGL ES comune per disegnare lo stesso cubo rotante in ogni app.
+  Creare una soluzione con un set di progetti per compilare un'app Android NativeActivity e un'app per iOS. Queste app usano librerie specifiche della piattaforma create mediante il codice C++ OpenGL ES comune per disegnare lo stesso cubo rotante in ogni app.
 
 - Libreria condivisa (Android, iOS)
 
-     Crea una soluzione con progetti per creare un file di libreria dinamica Android (con estensione so) e un file di libreria statica iOS (con estensione a) mediante il codice C++ comune in un progetto condiviso.
+  Crea una soluzione con progetti per creare un file di libreria dinamica Android (con estensione so) e un file di libreria statica iOS (con estensione a) mediante il codice C++ comune in un progetto condiviso.
 
 - Applicazione di base (Android, Ant)
 
-     Crea un progetto di app Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Ant.
+  Crea un progetto di app Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Ant.
 
 - Applicazione di base (Android, Gradle)
 
-     Crea un progetto di app Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Gradle.
+  Crea un progetto di app Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Gradle.
 
 - Libreria di base (Android, Ant)
 
-     Crea un progetto di libreria Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Ant.
+  Crea un progetto di libreria Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Ant.
 
 - Libreria di base (Android, Gradle)
 
-     Crea un progetto di libreria Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Gradle.
+  Crea un progetto di libreria Android "Hello, World" che usa solo il codice sorgente Java e il sistema di compilazione Gradle.
 
 - Libreria condivisa dinamica (Android)
 
-     Crea un file di libreria dinamica Android (con estensione so) usando il codice C++.
+  Crea un file di libreria dinamica Android (con estensione so) usando il codice C++.
 
 - Applicazione OpenGLES 2 (iOS)
 
-     Crea una soluzione con un set di progetti per la compilazione di un'app iOS OpenGL ES 2. L'app usa una libreria di codice C++ OpenGL ES per disegnare il cubo rotante in un'app iOS. Questa app può essere un buon punto di partenza per ottenere informazioni su come importare le librerie C++ nell'app iOS.
+  Crea una soluzione con un set di progetti per la compilazione di un'app iOS OpenGL ES 2. L'app usa una libreria di codice C++ OpenGL ES per disegnare il cubo rotante in un'app iOS. Questa app può essere un buon punto di partenza per ottenere informazioni su come importare le librerie C++ nell'app iOS.
 
 - Libreria statica (Android)
 
-     Crea un progetto per compilare una libreria statica per Android. In un'app per Android è possibile collegare solo una libreria dinamica, ma un numero qualsiasi di librerie statiche.
+  Crea un progetto per compilare una libreria statica per Android. In un'app per Android è possibile collegare solo una libreria dinamica, ma un numero qualsiasi di librerie statiche.
 
 - Libreria statica (iOS)
 
-     Crea un progetto per compilare una libreria statica per iOS.
+  Crea un progetto per compilare una libreria statica per iOS.
 
 - Progetto makefile (Android)
 
-     Crea un wrapper di progetto per i propri progetti makefile Android.
+  Crea un wrapper di progetto per i propri progetti makefile Android.
 
 ## <a name="try-out-sample-code"></a>Provare il codice di esempio
- Scaricare esempi che illustrano come creare librerie di codice condiviso che è possibile usare in applicazioni iOS, Android e Windows e come creare app NativeActivity per Android. Per un'introduzione, vedere [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md).
 
-## <a name="in-this-section"></a>Contenuto della sezione
+Scaricare esempi che illustrano come creare librerie di codice condiviso che è possibile usare nelle app Windows, Android e iOS. Vedere quindi gli esempi di come creare app complete per le attività native per Android. Per un'introduzione, vedere [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md).
 
-1. [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+## <a name="see-also"></a>Vedere anche
 
-2. [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md) (Installare e configurare strumenti per compilare con iOS)
-
-3. [Creare un'app NativeActivity di Android](../cross-platform/create-an-android-native-activity-app.md)
-
-4. [Compilare un'applicazione OpenGL ES in Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)
-
-5. [Esempi di sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/cross-platform-mobile-development-examples.md)
+[Installare lo sviluppo di app per dispositivi C++ mobili multipiattaforma con](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md) \
+[Installare e configurare gli strumenti per la compilazione con iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md) \
+[Creare un'app per Android Native activity](../cross-platform/create-an-android-native-activity-app.md) \
+[Compilare un'applicazione OpenGL ES in Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md) \
+[Esempi di sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/cross-platform-mobile-development-examples.md)
