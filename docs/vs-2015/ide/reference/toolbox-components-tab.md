@@ -8,70 +8,53 @@ helpviewer_keywords:
 - Toolbox, Components tab
 ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 98955b3f9428126775ca6a58f19a12de416833c0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ce18767d95b3ac539737d78acbd2259dcda0a036
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689498"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661575"
 ---
 # <a name="toolbox-components-tab"></a>Casella degli strumenti, Scheda Componenti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Consente di visualizzare i componenti che è possibile aggiungere alle finestre di progettazione di [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Oltre ai componenti [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclusi in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ad esempio i componenti <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, in questa scheda è possibile aggiungere componenti personalizzati o di terze parti. Per altre informazioni, vedere [Procedura: modificare le schede della Casella degli strumenti](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
-  
- Per visualizzare questa scheda, scegliere **Casella degli strumenti** dal menu **Visualizza**. Nella **Casella degli strumenti** selezionare la scheda **Componenti**.  
-  
- **BackgroundWorker**  
- Crea un'istanza del componente `System.ComponentModel.BackgroundWorker` che può eseguire un'operazione su un thread separato dedicato.  
-  
- **DirectoryEntry**  
- Crea un'istanza del componente <xref:System.DirectoryServices.DirectoryEntry> che incapsula un nodo o un oggetto nella gerarchia di Active Directory e può essere usata per interagire con i provider del servizio Active Directory.  
-  
- **DirectorySearcher**  
- Crea un'istanza del componente <xref:System.DirectoryServices.DirectorySearcher> che è possibile usare per eseguire query in Active Directory.  
-  
- **ErrorProvider**  
- Crea un'istanza del componente `System.Windows.Forms.ErrorProvider` che indica all'utente finale che a un controllo in un form è associato un errore.  
-  
- **EventLog**  
- Crea un'istanza del componente <xref:System.Diagnostics.EventLog> che consente di interagire con i log di sistema e i log eventi personalizzati, ad esempio scrivendo eventi e leggendo dati. Per altre informazioni, vedere [Introduzione al componente EventLog](https://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
-  
- **FileSystemWatcher**  
- Crea un'istanza del componente <xref:System.IO.FileSystemWatcher> che consente di monitorare le modifiche apportate a una directory o a un file a cui si ha accesso. Per altre informazioni, vedere [Procedura: configurare istanze del componente FileSystemWatcher](https://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).  
-  
- **HelpProvider**  
- Crea un'istanza del componente `System.Windows.Forms.HelpProvider` che offre informazioni della Guida, anche in finestre popup.  
-  
- **ImageList**  
- Crea un'istanza del componente `System.Windows.Forms.ImageList` che rende disponibili metodi per la gestione di una raccolta di oggetti `System.Drawing.Image`.  
-  
- **MessageQueue**  
- Crea un'istanza del componente <xref:System.Messaging.MessageQueue> che consente di interagire con le code di messaggi, leggendo e scrivendo messaggi nelle code, elaborando transazioni ed eseguendo attività di amministrazione delle code. Per altre informazioni, vedere [Utilizzo dei componenti di messaggistica](https://msdn.microsoft.com/922dbac7-26f0-4e39-b666-ccfc184793d7).  
-  
- **PerformanceCounter**  
- Crea un'istanza del componente <xref:System.Diagnostics.PerformanceCounter> che consente di interagire con i contatori delle prestazioni di Windows, creando nuove categorie e istanze, leggendo valori dai contatori ed eseguendo calcoli sui dati dei contatori stessi. Per altre informazioni, vedere [Monitoraggio dei valori limite delle prestazioni](https://msdn.microsoft.com/b8b44a55-31d0-4b45-9517-8c1b1e4fdc91).  
-  
- **Processo**  
- Crea un'istanza del componente <xref:System.Diagnostics.Process> che consente di arrestare e avviare i processi del sistema, nonché di manipolare i dati associati a questi. Per altre informazioni, vedere [Monitoraggio e gestione di processi Windows](https://msdn.microsoft.com/a86bd4c1-b92c-49a0-8f32-61d67837b45e).  
-  
- **SerialPort**  
- Crea un'istanza del componente `System.IO.Ports.SerialPort` che rende disponibili le funzioni di I/O sincrono e basato su eventi, l'accesso agli stati di blocco e interruzione, l'accesso alle proprietà del driver seriale.  
-  
- **ServiceController**  
- Crea un'istanza del componente <xref:System.ServiceProcess.ServiceController> che consente di manipolare i servizi esistenti, avviandoli e arrestandoli e inviando loro dei comandi. Per altre informazioni, vedere [Monitoraggio di servizi Windows](https://msdn.microsoft.com/4542ee3f-e052-4cb9-8726-58e9420de222).  
-  
- **Timer**  
- Crea un'istanza del componente <xref:System.Windows.Forms.Timer> che consente di aggiungere funzionalità basate sull'ora alle applicazioni basate su Windows. Per altre informazioni, vedere [Componente Timer](https://msdn.microsoft.com/library/6700e534-6382-43d5-98ed-14205435fff7).  
-  
+Consente di visualizzare i componenti che è possibile aggiungere alle finestre di progettazione di [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] e [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Oltre ai componenti [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclusi in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ad esempio i componenti <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, in questa scheda è possibile aggiungere componenti personalizzati o di terze parti. Per altre informazioni, vedere [Procedura: modificare le schede della Casella degli strumenti](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
+
+ Per visualizzare questa scheda, scegliere **Casella degli strumenti** dal menu **Visualizza**. Nella **Casella degli strumenti** selezionare la scheda **Componenti**.
+
+ **BackgroundWorker** Crea un'istanza del componente `System.ComponentModel.BackgroundWorker` in grado di eseguire un'operazione su un thread separato dedicato.
+
+ **DirectoryEntry** Crea un'istanza del componente <xref:System.DirectoryServices.DirectoryEntry> che incapsula un nodo o un oggetto nella gerarchia di Active Directory e che può essere utilizzata per interagire con Active Directory provider di servizi.
+
+ **DirectorySearcher** Crea un'istanza del componente <xref:System.DirectoryServices.DirectorySearcher> che è possibile utilizzare per eseguire query sulla Active Directory.
+
+ **ErrorProvider** Crea un'istanza del componente `System.Windows.Forms.ErrorProvider`, che indica all'utente finale che a un controllo di un form è associato un errore.
+
+ **Registro eventi** Consente di creare un'istanza di <xref:System.Diagnostics.EventLog> Component che è possibile utilizzare per interagire con i registri eventi di sistema e personalizzati, inclusa la scrittura di eventi in un log e la lettura dei dati del log. Per altre informazioni, vedere [Introduzione al componente EventLog](https://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805).
+
+ **FileSystemWatcher** Crea un'istanza del componente <xref:System.IO.FileSystemWatcher> che è possibile utilizzare per monitorare le modifiche apportate a una directory o a un file a cui si ha accesso. Per altre informazioni, vedere [Procedura: configurare istanze del componente FileSystemWatcher](https://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50).
+
+ **HelpProvider** Crea un'istanza del componente `System.Windows.Forms.HelpProvider` che fornisce la Guida popup o la Guida in linea per i controlli.
+
+ **ImageList** Crea un'istanza del componente `System.Windows.Forms.ImageList` che fornisce i metodi per gestire una raccolta di oggetti `System.Drawing.Image`.
+
+ **MessageQueue** Consente di creare un'istanza del componente <xref:System.Messaging.MessageQueue> che è possibile utilizzare per interagire con le code di messaggi, inclusa la lettura e la scrittura di messaggi nelle code, l'elaborazione delle transazioni e l'esecuzione di attività di amministrazione delle code. Per altre informazioni, vedere [Utilizzo dei componenti di messaggistica](https://msdn.microsoft.com/922dbac7-26f0-4e39-b666-ccfc184793d7).
+
+ **PerformanceCounter** Crea un'istanza del componente <xref:System.Diagnostics.PerformanceCounter> che è possibile utilizzare per interagire con i contatori delle prestazioni di Windows, tra cui la creazione di nuove categorie e istanze, la lettura di valori dai contatori e l'esecuzione di calcoli sui dati del contatore. Per altre informazioni, vedere [Monitoraggio dei valori limite delle prestazioni](https://msdn.microsoft.com/b8b44a55-31d0-4b45-9517-8c1b1e4fdc91).
+
+ **Processo** di Crea un'istanza del componente <xref:System.Diagnostics.Process> che è possibile utilizzare per arrestare, avviare e modificare i dati associati ai processi nel sistema. Per altre informazioni, vedere [Monitoraggio e gestione di processi Windows](https://msdn.microsoft.com/a86bd4c1-b92c-49a0-8f32-61d67837b45e).
+
+ **SerialPort** Crea un'istanza del componente `System.IO.Ports.SerialPort` che fornisce l'I/O sincrono e basato su eventi, l'accesso agli Stati di blocco e di interruzioni e l'accesso alle proprietà del driver seriale.
+
+ **ServiceController** Consente di creare un'istanza del componente <xref:System.ServiceProcess.ServiceController> che è possibile utilizzare per modificare i servizi esistenti, inclusi l'avvio e l'arresto dei servizi e l'invio di comandi. Per altre informazioni, vedere [Monitoraggio di servizi Windows](https://msdn.microsoft.com/4542ee3f-e052-4cb9-8726-58e9420de222).
+
+ **Timer** di Consente di creare un'istanza di <xref:System.Windows.Forms.Timer> Component che è possibile utilizzare per aggiungere funzionalità basate sul tempo alle applicazioni basate su Windows. Per altre informazioni, vedere [Componente Timer](https://msdn.microsoft.com/library/6700e534-6382-43d5-98ed-14205435fff7).
+
 > [!NOTE]
-> È disponibile anche un componente <xref:System.Timers.Timer> basato su sistema che è possibile aggiungere alla **Casella degli strumenti**. Il componente <xref:System.Timers.Timer> è ottimizzato per le applicazioni server mentre il componente <xref:System.Windows.Forms.Timer> di Windows Forms è più adatto all'uso con Windows Forms.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Programmazione con i componenti](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
- [Procedure dettagliate sulla programmazione dei componenti](https://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913)   
- [Casella degli strumenti](../../ide/reference/toolbox.md)   
- [Finestra di dialogo Scegli elementi della Casella degli strumenti (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
+> È disponibile anche un componente <xref:System.Timers.Timer> basato su sistema che è possibile aggiungere alla **Casella degli strumenti**. Il componente <xref:System.Timers.Timer> è ottimizzato per le applicazioni server mentre il componente <xref:System.Windows.Forms.Timer> di Windows Forms è più adatto all'uso con Windows Forms.
+
+## <a name="see-also"></a>Vedere anche
+ [Programmazione con componenti](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3) [componente procedure dettagliate](https://msdn.microsoft.com/library/373cacf7-479e-4b05-991c-5cb18824e913) della [casella degli strumenti](../../ide/reference/toolbox.md) [finestra di dialogo Scegli elementi della casella degli strumenti (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)

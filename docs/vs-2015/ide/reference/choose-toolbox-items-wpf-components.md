@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 ms.assetid: 6ce1d178-88c0-4295-8915-59fdeedabb11
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3f17ac56038c5f6c1d4de026546410ece438e375
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869925"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660920"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

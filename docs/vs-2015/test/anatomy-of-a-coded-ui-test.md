@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1af269201649f9372d9c0b2d5b273ddd358fe1e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871716"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660703"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
  Lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> viene incluso per un'interfaccia utente di Windows (UI). Per l'interfaccia utente di una pagina Web, lo spazio dei nomi sarebbe <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>, mentre per un'interfaccia utente di Windows Presentation Foundation, sarebbe <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.
 
 #### <a name="UIMapClass"></a> Classe UIMap
- La sezione successiva del file è la classe [UIMap](/previous-versions/dd580454(v=vs.140)) .
+ La sezione successiva del file è la classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ```
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]
@@ -79,7 +79,7 @@ public void VerifyTotal()
 public void CleanUp()
 ```
 
- Questa parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)) include anche il codice generato per ogni proprietà richiesta dai metodi.
+ Questa parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)) include anche il codice generato per ogni proprietà necessaria ai metodi.
 
 ```
 public virtual LaunchCalculatorParams LaunchCalculatorParams
@@ -190,9 +190,9 @@ public class AddItemsParams
  Per impostazione predefinita, questo file contiene una classe `UIMap` parziale senza metodi o proprietà.
 
 #### <a name="uimap-class"></a>Classe UIMap
- Qui è possibile creare codice personalizzato per estendere la funzionalità della classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Il codice creato in questo file non verrà rigenerato dal **Generatore di test codificati dell'interfaccia utente** ogni volta che un test viene modificato.
+ In questa classe è possibile creare il codice personalizzato per estendere la funzionalità della classe [UIMap](/previous-versions/dd580454(v=vs.140)). Il codice creato in questo file non verrà rigenerato dal **Generatore di test codificati dell'interfaccia utente** ogni volta che un test viene modificato.
 
- Tutte le parti di [UIMap](/previous-versions/dd580454(v=vs.140)) possono usare i metodi e le proprietà di qualsiasi altra parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)) .
+ Tutte le parti di [UIMap](/previous-versions/dd580454(v=vs.140)) possono usare i metodi e le proprietà di qualsiasi altra parte della classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ### <a name="CodedUITestCS"></a> CodedUITest1.cs
  Questo file viene generato dal **Generatore di test codificati dell'interfaccia utente**, ma non viene ricreato ogni volta che il test viene modificato, di conseguenza il codice presente in questo file è modificabile. Il nome del file viene generato dal nome specificato per il test quando è stato creato.
@@ -205,7 +205,7 @@ public class AddItemsParams
 public class CodedUITest1
 ```
 
- [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) viene applicato automaticamente alla classe, consentendo al Framework di test di riconoscerlo come estensione di test. Si noti inoltre che non si tratta di una classe parziale. Tutto il codice della classe è contenuto in questo file.
+ [CodedUITestAttribute](/previous-versions/visualstudio/visual-studio-2013/ff430233(v=vs.120)) viene automaticamente applicato alla classe. In questo modo il framework di test può riconoscerlo come estensione di test. Si noti inoltre che non si tratta di una classe parziale. Tutto il codice della classe è contenuto in questo file.
 
 ##### <a name="CodedUITestProperties"></a> Proprietà di CodedUITest1
  La classe contiene due proprietà predefinite che si trovano nella parte inferiore del file. Non devono essere modificate.

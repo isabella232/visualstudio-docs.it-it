@@ -11,15 +11,15 @@ helpviewer_keywords:
 - permissions
 ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b7ffc3a6b3fe5ad5952ecfde6091cbe7e656f305
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703997"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672680"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Per motivi di sicurezza è necessario, quando possibile, eseguire Visual Studio 
 ## <a name="running-visual-studio-as-an-administrator"></a>Esecuzione di Visual Studio come amministratore
  È possibile avviare Visual Studio con autorizzazioni amministrative ogni volta che si avvia l'IDE oppure modificare il collegamento dell'applicazione in modo che venga eseguita sempre con autorizzazioni amministrative. Per altre informazioni, vedere la Guida di Windows.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Per eseguire Visual Studio con autorizzazioni amministrative in [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] o [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblue_server_2includeswinblue-server-2-mdmd"></a>Per eseguire Visual Studio con autorizzazioni amministrative in [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] o [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
 1. Nella schermata **iniziale** digitare **Visual Studio**. Verrà visualizzata la versione o le versioni di Visual Studio installate.
 
@@ -62,7 +62,7 @@ Per motivi di sicurezza è necessario, quando possibile, eseguire Visual Studio 
 
      All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Per eseguire Visual Studio con autorizzazioni amministrative in [!INCLUDE[win7](../includes/win7-md.md)] o [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
+#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08_r2includeswinsvr08-r2-mdmd"></a>Per eseguire Visual Studio con autorizzazioni amministrative in [!INCLUDE[win7](../includes/win7-md.md)] o [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
 1. Dal menu **Start** scegliere **Tutti i programmi**.
 
