@@ -2,17 +2,17 @@
 title: Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824488"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665328"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
@@ -27,11 +27,11 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 - Se non è presente alcun file *App.config* nel progetto di test:
 
    1. Determinare quale processo *QTAgent\*.exe* viene avviato quando si esegue il test. Un modo per farlo è osservare la scheda **Dettagli** in **Gestione attività** di Windows.
-   
+
    2. Aprire il file con estensione *config* corrispondente dalla cartella *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE*. Ad esempio, se il processo eseguito è *QTAgent_40.exe* aprire *QTAgent_40.exe.config*.
 
    2. Modificare il valore di **EqtTraceLevel** e impostarlo sul livello di log desiderato.
-   
+
       ```xml
       <!-- You must use integral values for "value".
            Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
@@ -58,7 +58,7 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
    Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
    ```
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Passaggio 2: Eseguire il test codificato dell'interfaccia utente e visualizzare il log
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Passaggio 2: eseguire il test codificato dell'interfaccia utente e visualizzare il log
 
 Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file *QTAgent\*.exe.config*, viene visualizzato un collegamento di output nei risultati di **Esplora test**. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su **verbose**.
 

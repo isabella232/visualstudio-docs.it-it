@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ToggleBreakPoint command
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18473fbd8ee0f7c4b415880da61c86de0bae6fc5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: d72ec4717a7669fd5b4d489b8324f2e0b25c57c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925978"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644698"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Imposta/Rimuovi punto di interruzione
 Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file.
@@ -30,10 +30,10 @@ Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nell
 Debug.ToggleBreakpoint [text]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 `text`\
-facoltativo. Se il testo viene specificato, la riga viene contrassegnata come punto di interruzione con nome. In caso contrario, la riga viene contrassegnata come punto di interruzione senza nome, analogamente a quanto accade quando si preme F9.
+Parametro facoltativo. Se il testo viene specificato, la riga viene contrassegnata come punto di interruzione con nome. In caso contrario, la riga viene contrassegnata come punto di interruzione senza nome, analogamente a quanto accade quando si preme F9.
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente il punto di interruzione corrente viene impostato/rimosso.
@@ -47,4 +47,4 @@ Nell'esempio seguente il punto di interruzione corrente viene impostato/rimosso.
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

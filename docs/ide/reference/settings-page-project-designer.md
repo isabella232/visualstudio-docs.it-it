@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Settings page in Project Designer
 - Project Designer, Settings page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 11f6f787d3799813aa526395a7137fd68e5c573d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989971"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645256"
 ---
 # <a name="settings-page-project-designer"></a>Pagina Impostazioni, Creazione progetti
 
@@ -65,7 +65,7 @@ Per altre informazioni sulle classi helper delle impostazioni, vedere [Gestire l
 
 La **griglia Impostazioni** consente di configurare le impostazioni dell'applicazione. La griglia include le colonne seguenti:
 
-**Name**
+**Nome**
 
 Immettere il nome dell'impostazione dell'applicazione in questo campo.
 

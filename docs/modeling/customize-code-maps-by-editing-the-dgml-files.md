@@ -15,28 +15,28 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7d871a6aa8cff6e06f02e61407d2c9e59e03cd65
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441627"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654044"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 
-Per personalizzare una mappa del codice, è possibile modificare il file Directed Graph Markup Language (dgml). È ad esempio possibile modificare elementi per specificare stili personalizzati, assegnare proprietà e categorie a collegamenti e elementi di codice o collegare documenti o URL a elementi di codice o a collegamenti.  Per altre informazioni sugli elementi DGML, vedere [riferimento DGML Directed Graph Markup Language ()](../modeling/directed-graph-markup-language-dgml-reference.md).
+Per personalizzare una mappa codice, è possibile modificare il file con estensione dgml (Directed Graph Markup Language). È ad esempio possibile modificare elementi per specificare stili personalizzati, assegnare proprietà e categorie a collegamenti e elementi di codice o collegare documenti o URL a elementi di codice o a collegamenti. Per ulteriori informazioni sugli elementi DGML, vedere Guida di [riferimento a DGML (Directed Graph Markup Language)](../modeling/directed-graph-markup-language-dgml-reference.md).
 
-Modificare il file con estensione dgml della mappa di codice in un editor di testo o XML. Se la mappa fa parte della soluzione di Visual Studio, selezionarla nel **Esplora soluzioni**, aprire il menu di scelta rapida e scegliere **Apri con**, **Editor XML (testo)**.
+Modificare il file con estensione dgml della mappa di codice in un editor di testo o XML. Se la mappa fa parte della soluzione di Visual Studio, selezionarla in **Esplora soluzioni**, aprire il menu di scelta rapida e scegliere **Apri con**, **editor XML (testo)** .
 
 > [!NOTE]
-> Per creare mappe codici, è necessario disporre di Visual Studio Enterprise edition. Quando si modifica una mappa di codice in Visual Studio, viene eseguita la rimozione di tutti gli attributi e gli elementi DGML inutilizzati che vengono eliminati quando si salva il file con estensione dgml. Vengono anche creati automaticamente elementi di codice quando si aggiungono manualmente nuovi collegamenti. Quando si salva il file con estensione dgml, tutti gli attributi aggiunti a un elemento si ridispongono in ordine alfabetico.
+> Per creare mappe del codice, è necessario disporre di Visual Studio Enterprise Edition. Quando si modifica una mappa di codice in Visual Studio, viene eseguita la rimozione di tutti gli attributi e gli elementi DGML inutilizzati che vengono eliminati quando si salva il file con estensione dgml. Vengono anche creati automaticamente elementi di codice quando si aggiungono manualmente nuovi collegamenti. Quando si salva il file con estensione dgml, tutti gli attributi aggiunti a un elemento si ridispongono in ordine alfabetico.
 
-## <a name="OrganizeNodes"></a> Raggruppare elementi di codice
+## <a name="OrganizeNodes"></a>Elementi di codice del gruppo
  È possibile aggiungere nuovi gruppi o convertire i nodi esistenti in un gruppo.
 
 1. Aprire il file con estensione dgml in un editor di testo o XML.
@@ -47,7 +47,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Per aggiungere un nuovo gruppo, individuare la sezione `<Nodes>`. Aggiungere un nuovo elemento `<Node/>`.
 
-3. Nell'elemento `<Node/>` aggiungere un attributo `Group` per specificare se il gruppo viene visualizzato espanso o compresso. Ad esempio:
+3. Nell'elemento `<Node/>` aggiungere un attributo `Group` per specificare se il gruppo viene visualizzato espanso o compresso. Esempio:
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
    - Un attributo `Category` che specifica una relazione `Contains` tra l'elemento di codice di gruppo e il relativo elemento figlio
 
-     Ad esempio:
+     Esempio:
 
    ```xml
    <Links>
@@ -75,10 +75,10 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
    </Links>
    ```
 
-    Per altre informazioni sul `Category` dell'attributo, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories).
+    Per altre informazioni sull'attributo `Category`, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories).
 
-## <a name="ChangeGraphStyle"></a> Modificare lo stile della mappa
- È possibile modificare il colore di sfondo e del bordo della mappa modificando il file con estensione dgml della mappa. Per modificare lo stile degli elementi di codice e collegamenti, vedere [modificare lo stile degli elementi di codice e collegamenti](#Highlight).
+## <a name="ChangeGraphStyle"></a>Modificare lo stile della mappa
+ È possibile modificare il colore di sfondo e del bordo della mappa modificando il file con estensione dgml della mappa. Per modificare lo stile degli elementi di codice e dei collegamenti, vedere [modificare lo stile degli elementi di codice e dei collegamenti](#Highlight).
 
 1. Aprire il file con estensione dgml in un editor di testo o XML.
 
@@ -96,7 +96,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     Stroke="StrokeValue"
     ```
 
-     Ad esempio:
+     Esempio:
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -105,7 +105,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     </DirectedGraph>
     ```
 
-## <a name="Highlight"></a> Modificare lo stile degli elementi di codice e collegamenti
+## <a name="Highlight"></a>Modificare lo stile degli elementi di codice e dei collegamenti
 
 ### <a name="CreateCustomStyles"></a>
  È possibile applicare stili personalizzati agli elementi di codice seguenti:
@@ -201,7 +201,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     Shape="ShapeFilePathLocation"
     ```
 
-     Ad esempio:
+     Esempio:
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     Ad esempio:
+     Esempio:
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Nell'elemento `<Style/>` aggiungere un elemento `<Condition/>` contenente un attributo `Expression` per specificare un'espressione che restituisca un valore booleano.
 
-    Ad esempio:
+    Esempio:
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
     Questa espressione utilizza la notazione BNF (Backus-Naur Form) seguente:
 
-    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
+    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" \<Expression > ")" &#124; \<MemberBindings &#124; &#124; > \<Literal > 1Number >
 
-    \<BinaryExpression >:: = \<espressione > \<operatore > \<espressione >
+    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
 
-    \<UnaryExpression >:: = "!" \<Expression> &#124; "+" \<Expression> &#124; "-" \<Expression>
+    \<UnaryExpression >:: = "!"  \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression >
 
-    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator >:: = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "o" &#124; "e" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings> ::= \<MemberBindings> &#124; \<MemberBinding> "." \<MemberBinding >
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "."  \<MemberBinding >
 
-    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
+    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
 
-    \<MethodCall >:: = \<identificatore > "(" \<MethodArgs > "")""
+    \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
 
-    \<PropertyGet >:: = identificatore
+    Identificatore \<PropertyGet >:: =
 
-    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
+    \<MethodArgs >:: = \<Expression > &#124; \<Expression > "," &#124; \<MethodArgs > \<empty >
 
-    \<Identifier> ::= [^. ]*
+    \<Identifier >:: = [^. ]*
 
-    \<Valore letterale >:: = valore letterale stringa singola o tra virgolette doppie
+    \<Literal >:: = valore letterale stringa con virgolette singole o doppie
 
-    \<Numero >:: = stringa di cifre con virgola decimale facoltativa
+    \<Number >:: = stringa di cifre con separatore decimale facoltativo
 
-    È possibile specificare più `<Condition/>` elementi, che devono essere tutti true per applicare lo stile.
+    È possibile specificare più elementi `<Condition/>`, che devono essere tutti true per applicare lo stile.
 
 3. Sulla riga successiva dopo l'elemento `<Condition/>`, aggiungere uno o più elementi `<Setter/>` per specificare un attributo `Property` e un attributo fisso `Value` o un attributo `Expression` calcolato da applicare alla mappa, agli elementi di codice o ai collegamenti che soddisfano la condizione.
 
-    Ad esempio:
+    Esempio:
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -373,9 +373,9 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
  In questo esempio:
 
-1. Se `Coverage` è > 80, quindi impostare il `Background` proprietà verde.
+1. Se `Coverage` è > 80, impostare la proprietà `Background` su verde.
 
-2. Se invece `Coverage` è > 50, quindi impostare il `Background` proprietà di una sfumatura di arancione in base al valore del `Coverage` proprietà.
+2. In caso contrario, se `Coverage` è > 50, impostare la proprietà `Background` su una sfumatura di arancione in base al valore della proprietà `Coverage`.
 
 3. Diversamente impostare la proprietà `Background` su una sfumatura di rosso in base al valore della proprietà `Coverage`.
 
@@ -435,14 +435,14 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 </DirectedGraph>
 ```
 
-## <a name="AssignProperties"></a> Assegnare proprietà a elementi di codice e collegamenti
+## <a name="AssignProperties"></a>Assegnare proprietà a elementi di codice e collegamenti
  È possibile organizzare elementi di codice e collegamenti mediante l'assegnazione di proprietà. Ad esempio, è possibile selezionare elementi di codice con proprietà specifiche in modo che sia possibile raggrupparli, modificarne lo stile o nasconderli.
 
 #### <a name="to-assign-a-property-to-a-code-element"></a>Per assegnare una proprietà a un elemento di codice
 
 1. Aprire il file con estensione dgml in un editor di testo o XML.
 
-2. Individuare l'elemento `<Node/>` per tale elemento di codice. Specificare il nome della proprietà e il relativo valore. Ad esempio:
+2. Individuare l'elemento `<Node/>` per tale elemento di codice. Specificare il nome della proprietà e il relativo valore. Esempio:
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.
 
-3. Nell'elemento `<Node/>` specificare il nome della proprietà e il relativo valore. Ad esempio:
+3. Nell'elemento `<Node/>` specificare il nome della proprietà e il relativo valore. Esempio:
 
     ```xml
     <Links>
@@ -480,7 +480,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
     </Properties>
     ```
 
-## <a name="AssignCategories"></a> Assegnare categorie a elementi di codice e collegamenti
+## <a name="AssignCategories"></a>Assegnare categorie a elementi di codice e collegamenti
  Nelle sezioni seguenti viene illustrato come è possibile organizzare elementi di codice mediante l'assegnazione di categorie e come è possibile creare categorie gerarchiche che consentono di organizzare elementi di codice e aggiungere attributi alle categorie figlio tramite l'ereditarietà.
 
 #### <a name="to-assign-a-category-to-a-code-element"></a>Per assegnare una categoria a un elemento di codice
@@ -489,7 +489,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 - Individuare l'elemento `<Node/>` per l'elemento di codice desiderato.
 
-- Nell'elemento `<Node/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:
+- Nell'elemento `<Node/>` aggiungere un attributo `Category` per specificare il nome della categoria. Esempio:
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.
 
-3. Nell'elemento `<Link/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:
+3. Nell'elemento `<Link/>` aggiungere un attributo `Category` per specificare il nome della categoria. Esempio:
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 2. Aggiungere un elemento `<Category/>` per la categoria padre, quindi aggiungere l'attributo `BasedOn` all'elemento `<Category/>` della categoria figlio.
 
-     Ad esempio:
+     Esempio:
 
     ```xml
     <Nodes>
@@ -551,7 +551,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
      In questo esempio lo sfondo di `MyFirstNode` è verde perché il relativo attributo `Category` eredita l'attributo `Background` di `MyParentCategory`.
 
-## <a name="AddReferences"></a> Collegare documenti o URL a elementi di codice e collegamenti
+## <a name="AddReferences"></a>Collegare documenti o URL a elementi di codice e collegamenti
  È possibile collegare documenti o URL a un elemento di codice oppure a collegamenti modificando il file con estensione dgml della mappa e aggiungendo un attributo `Reference` all'elemento `<Node/>` per un elemento di codice oppure all'elemento `<Link/>` per un collegamento. È quindi possibile aprire e visualizzare il contenuto dall'elemento di codice o dal collegamento. L'attributo `Reference` specifica il percorso di tale contenuto. Il percorso può essere assoluto oppure relativo alla posizione del file con estensione dgml.
 
 > [!CAUTION]
@@ -561,11 +561,11 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
 - Per descrivere le modifiche apportate a una classe, è possibile collegare l'URL di un elemento di codice di lavoro, un documento o un altro file con estensione dgml all'elemento di codice relativo a una classe.
 
-- È possibile collegare un diagramma delle dipendenze per un elemento di codice di gruppo che rappresenta un livello nell'architettura logica del software.
+- È possibile collegare un diagramma delle dipendenze a un elemento di codice di gruppo che rappresenta un livello nell'architettura logica del software.
 
 - Per visualizzare altre informazioni su un componente che espone un'interfaccia, è possibile collegare un diagramma dei componenti all'elemento di codice relativo a tale interfaccia.
 
-- Collegare un elemento di codice a un elemento di lavoro di Team Foundation Server o bug o ad altre informazioni che sono correlati all'elemento di codice.
+- Collegare un elemento di codice a un Team Foundation Server elemento di lavoro o a un bug o ad altre informazioni correlate all'elemento di codice.
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Per collegare un documento o un URL a un elemento di codice
 
@@ -582,7 +582,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
      > [!NOTE]
      > È possibile specificare un solo attributo `Reference` per elemento.
 
-     Ad esempio:
+     Esempio:
 
    ```xml
    <Nodes>
@@ -603,11 +603,11 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 
       2. Impostare l'attributo `Id` sul nome dell'attributo del nuovo riferimento.
 
-      3. Aggiungere il `IsReference` dell'attributo e impostarlo `True` affinché il riferimento venga visualizzato dell'elemento di codice **Vai a riferimento** menu di scelta rapida.
+      3. Aggiungere l'attributo `IsReference` e impostarlo su `True` per fare in modo che il riferimento venga visualizzato nel menu di scelta rapida **Vai a riferimento** dell'elemento di codice.
 
-      4. Usare la `Label` attributo per specificare il testo visualizzato dell'elemento di codice **Vai a riferimento** menu di scelta rapida.
+      4. Usare l'attributo `Label` per specificare il testo visualizzato nel menu di scelta rapida **Vai a riferimento** dell'elemento di codice.
 
-      Ad esempio:
+      Esempio:
 
    ```xml
    <Nodes>
@@ -619,7 +619,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
    </Properties>
    ```
 
-    Sulla mappa il nome dell'elemento di codice viene visualizzato sottolineato. Quando si apre il menu di scelta rapida per l'elemento di codice o il collegamento, si noterà una **Vai a riferimento** menu di scelta rapida che contiene gli elementi di codice collegati da scegliere.
+    Sulla mappa il nome dell'elemento di codice viene visualizzato sottolineato. Quando si apre il menu di scelta rapida per l'elemento di codice o il collegamento, viene visualizzato il menu di scelta rapida **Vai a riferimento** che contiene gli elementi di codice collegati da scegliere.
 
 4. Utilizzare l'attributo `ReferenceTemplate` per specificare una stringa comune, ad esempio un URL, utilizzata da più riferimenti anziché ripetere tale stringa nel riferimento.
 
@@ -636,7 +636,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
    </Properties>
    ```
 
-5. Per visualizzare l'elemento o gli elementi di codice cui si fa riferimento, aprire il menu di scelta rapida per l'elemento di codice o il collegamento. Scegli **Vai a riferimento** e quindi l'elemento di codice.
+5. Per visualizzare l'elemento o gli elementi di codice cui si fa riferimento, aprire il menu di scelta rapida per l'elemento di codice o il collegamento. Scegliere **Vai a riferimento** , quindi l'elemento di codice.
 
 ## <a name="see-also"></a>Vedere anche
 

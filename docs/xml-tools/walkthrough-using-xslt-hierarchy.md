@@ -1,18 +1,18 @@
 ---
-title: 'Procedura dettagliata: Uso della gerarchia XSLT'
+title: 'Procedura dettagliata: utilizzo della gerarchia XSLT'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808159"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604435"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Procedura dettagliata: Usare gerarchia XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Procedura dettagliata: usare la gerarchia XSLT
 
 Lo strumento di gerarchia XSLT semplifica molte attività di sviluppo XML. Un foglio di stile XSLT spesso usa istruzioni `includes` e `imports`. La compilazione viene avviata dal foglio di stile principale, ma quando viene visualizzato un errore come risultato della compilazione di un foglio di stile XSLT, è possibile che l'errore provenga da un'origine diversa dal foglio di stile principale. È possibile che la correzione dell'errore o la modifica del foglio di stile richieda accesso ai fogli di stile inclusi o importati. Scorrendo il foglio di stile nel debugger è possibile che vengano visualizzati i fogli di stile inclusi e importati ed è necessario aggiungere un punto di interruzione in una determinata posizione di uno o più fogli di stile inclusi.
 
@@ -20,9 +20,9 @@ Un altro scenario in cui può essere utile lo strumento di gerarchia XSLT è l'i
 
 Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del debug in un foglio di stile a cui si fa riferimento.
 
-## <a name="to-debug-in-a-referenced-style-sheet"></a>Per eseguire il debug in un foglio di stile di riferimento
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Per eseguire il debug in un foglio di stile a cui si fa riferimento
 
-1. Aprire un documento XML in Visual Studio. Questo esempio Usa il documento seguente:
+1. Aprire un documento XML in Visual Studio. Questo esempio usa il documento seguente:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -46,7 +46,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </COLLECTION>
     ```
 
-1. Aggiungere il codice seguente *xslinclude. xsl*:
+1. Aggiungere il seguente *xslinclude. xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -69,7 +69,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </xsl:stylesheet>
     ```
 
-3. Aggiungere il codice seguente *xslinclude. xsl* file:
+3. Aggiungere il file *xslinclude. xsl* seguente:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </xsl:stylesheet>
     ```
 
-4. Aggiungere un punto di interruzione dell'istruzione `<xsl:include href="xslincludefile.xsl" />`.
+4. Aggiungere un punto di interruzione in corrispondenza dell'istruzione `<xsl:include href="xslincludefile.xsl" />`.
 
 5. Avviare il debug.
 
-6. Quando il debugger si arresta in corrispondenza l'istruzione `<xsl:include href="xslincludefile.xsl" />`, premere la **Esegui istruzione** pulsante. Il debug può proseguire nel foglio di stile di riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
+6. Quando il debugger si arresta in corrispondenza del `<xsl:include href="xslincludefile.xsl" />` di istruzioni, fare clic sul pulsante **Esegui** istruzione. Il debug può essere continuato nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
 
 ## <a name="see-also"></a>Vedere anche
 

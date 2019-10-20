@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342425"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659796"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -54,10 +54,10 @@ La funzionalità di code coverage è disponibile solo in Visual Studio Enterpris
 
 ::: moniker-end
 
-2. Al termine dell'esecuzione dei test, per vedere quali righe sono state eseguite, ![scegliere Mostra icona](../test/media/codecoverage-showcoloringicon.png) colorazione code coverage **Mostra colorazione code coverage** nella finestra **Risultati code** coverage. Per impostazione predefinita, il codice coperto da test viene evidenziato in blu chiaro.
+2. Al termine dell'esecuzione dei test, per vedere quali righe sono state eseguite, scegliere ![Show icona colorazione code coverage ](../test/media/codecoverage-showcoloringicon.png) **Mostra colorazione code coverage** nella finestra **Risultati code coverage** . Per impostazione predefinita, il codice coperto da test viene evidenziato in blu chiaro.
 
    > [!TIP]
-   > Per modificare i colori o per usare il grassetto, **scegliere Strumenti** > **Opzioni** > **ambiente** > **tipi di carattere e colori** > **Mostra impostazioni per: Editor di testo**. In **elementi visualizzati**, modificare le impostazioni per gli elementi "code coverage", ad esempio l' **area non interessata dal code coverage**.
+   > Per modificare i colori o per usare il grassetto, scegliere **strumenti**  > **opzioni**  > **ambiente**  > **tipi di carattere e colori**  > **Mostra impostazioni per: editor di testo**. In **elementi visualizzati**, modificare le impostazioni per gli elementi "code coverage", ad esempio l' **area non interessata dal code coverage**.
    >
    > ![Tipi di carattere e colori di code coverage](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -300,7 +300,7 @@ Per eseguire un test dalla riga di comando, usare *vstest.console.exe*. Il code 
 
 Per altre informazioni, vedere [Opzioni della riga di comando di VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Risolvere problemi
+## <a name="troubleshoot"></a>Risolvere i problemi
 
 Se non vengono visualizzati i risultati del code coverage, vedere l'articolo [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md).
 

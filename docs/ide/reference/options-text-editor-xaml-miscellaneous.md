@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969241"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666628"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opzioni, Editor di testo, XAML, Varie
 
@@ -47,7 +47,7 @@ Usare questa impostazione per controllare la generazione automatica di tag e vir
 |-|-|
 |**Tag di chiusura**|Specifica se il tag di chiusura di un elemento viene generato automaticamente quando si chiude il tag di apertura con il carattere maggiore di (>).|
 |**Virgolette per gli attributi**|Specifica se vengono generate le virgolette quando un valore di attributo viene selezionato dall'elenco a discesa Completamento istruzioni.|
-|**Parentesi graffe di chiusura per MarkupExtensions**|Specifica se una parentesi graffa di chiusura dell'estensione del markup (**}**) viene generata automaticamente quando si digita il carattere di parentesi graffa di apertura (**{**).|
+|**Parentesi graffe di chiusura per MarkupExtensions**|Specifica se una parentesi graffa di chiusura dell'estensione del markup ( **}** ) viene generata automaticamente quando si digita il carattere di parentesi graffa di apertura ( **{** ).|
 |**Virgole per separare i parametri di MarkupExtension**|Specifica se vengono generate le virgole quando si digita più di un parametro in un'estensione di markup.|
 
 ## <a name="errors-and-warnings"></a>Errori e avvisi

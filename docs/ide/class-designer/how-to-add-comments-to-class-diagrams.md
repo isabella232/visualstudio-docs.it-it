@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere commenti a diagrammi classi (Progettazione classi)'
+title: 'Procedura: aggiungere commenti a diagrammi classi (Progettazione classi)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,17 +9,17 @@ helpviewer_keywords:
 - class diagrams, adding comment shapes
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cc778700873b79eb9fc2ec4fa1dd90d631993622
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975526"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631887"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Procedura: Aggiungere commenti a diagrammi classi
 
@@ -38,4 +38,4 @@ Un commento risiede nella visualizzazione del diagramma classi in **Progettazion
 ## <a name="see-also"></a>Vedere anche
 
 - [Uso di diagrammi classi](designing-and-viewing-classes-and-types.md)
-- [Procedura: Personalizzare diagrammi classi](how-to-customize-class-diagrams.md)
+- [Procedura: personalizzare diagrammi classi](how-to-customize-class-diagrams.md)

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, data binding (database)
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 8c17a1ce7b2bf775933be6e9bea3dd299d9fe717
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665425"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
 
@@ -156,9 +156,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 ## <a name="q--a"></a>Domande e risposte
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>D: Quali database è possibile usare come origine dati?
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>D. Quali database è possibile utilizzare come origine dati?
 
-**R:** È possibile usare:
+**R.** È possibile usare:
 
 - Microsoft SQL Azure.
 
@@ -172,9 +172,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 - Oracle 7.3, 8i, 9i o 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>D: È possibile usare un file di testo CSV (con valori delimitati da virgole) come origine dati?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>D. È possibile utilizzare un file di testo CSV (con valori delimitati da virgole) come origine dati?
 
-**R:** Ecco come:
+**R.** Ecco come fare:
 
 1. Creare una cartella per organizzare gli elementi del database dei progetti e aggiungere un elemento.
 
@@ -196,9 +196,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![Immettere un nome e scegliere un file CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>D: Quali operazioni si devono eseguire se il file CSV esistente non contiene intestazioni di colonna?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>D. Quali operazioni si devono eseguire se il file CSV esistente non contiene intestazioni di colonna?
 
-**R:** Se non è possibile aggiungere intestazioni di colonna, usare un file di descrizione dello schema per gestire il file CSV come database.
+**R.** Se non è possibile aggiungere intestazioni di colonna, usare un file di descrizione dello schema per gestire il file CSV come database.
 
 1. Aggiungere un nuovo file di testo denominato *schema.ini*.
 
@@ -247,7 +247,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![L'origine dati aggiunta al test](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>D: Come si usa un file XML come origine dati?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>D. Come si utilizza un file XML come origine dati?
 
 **R:** Sì.
 
@@ -279,9 +279,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![Immettere un nome e scegliere un file XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>D: È possibile aggiungere un data binding a una richiesta di servizio Web che usa SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>D. È possibile aggiungere un data binding a una richiesta di servizio Web che utilizza SOAP?
 
-**R:** Sì, è necessario modificare manualmente il codice XML SOAP.
+**R.** Sì, è necessario modificare manualmente il codice XML SOAP.
 
 1. Scegliere la richiesta di servizio Web nell'albero delle richieste e nella finestra Proprietà scegliere il pulsante con i puntini di sospensione (...) nella proprietà Corpo stringa.
 

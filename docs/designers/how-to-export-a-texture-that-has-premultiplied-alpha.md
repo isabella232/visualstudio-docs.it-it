@@ -1,21 +1,21 @@
 ---
-title: 'Procedura: Esportare una trama che contiene alfa premoltiplicati'
+title: 'Procedura: esportare una trama con alfa premoltiplicati'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16448a53064844f1c75db8b7eaa58c2cf909a968
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 84017bef80f42bd1848833b957abd88297d1e12d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924262"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635489"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procedura: Esportare una trama che contiene alfa premoltiplicati
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procedura: Esportare una trama con alfa premoltiplicati
 
 La pipeline di contenuti immagine può generare trame con valori alfa premoltiplicati da un'immagine di origine. Queste trame possono essere più semplici da usare e più solide delle trame che non contengono valori alfa premoltiplicati.
 
@@ -44,6 +44,6 @@ I valori alfa premoltiplicati offrono diversi vantaggi rispetto ai valori conven
 
 3. Configurare la pipeline di contenuti immagine per generare valori alfa premoltiplicati. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)**  > **Generale**, impostare la proprietà **Convert to pre-multiplied alpha format** (Converti in formato alfa premoltiplicato) su **Sì (/generatepremultipliedalpha)** .
 
-4. Fare clic sul pulsante **OK** .
+4. Fare clic sul pulsante **OK**.
 
    Quando si compila il progetto, la pipeline di contenuti immagine converte l'immagine di origine dal formato di lavoro al formato di output specificato. Ciò include la conversione dell'immagine nel formato alfa premoltiplicato. Il risultato viene copiato nella directory di output del progetto.

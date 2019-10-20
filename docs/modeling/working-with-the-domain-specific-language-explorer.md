@@ -4,26 +4,26 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, DSL Explorer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 744407f129c85f4e083007186dd167e39401d850
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 352315b518102c5b9576c19611522e87d0e67ffe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961937"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666909"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilizzo di Esplora linguaggi specifici di dominio
-Il **DSL Explorer** visualizza diversi tipi di informazioni in una visualizzazione struttura ad albero. Per altre informazioni sulla maggior parte degli elementi in DSL Explorer, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).
+In **Esplora DSL** vengono visualizzati diversi tipi di informazioni in una visualizzazione albero. Per ulteriori informazioni sulla maggior parte degli elementi in DSL Explorer, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
 
  Ha i seguenti nodi:
 
-- **I generatori di connessioni**. Un elenco di generatori di connessioni del modello.
+- **Generatori di connessioni**. Un elenco di generatori di connessioni del modello.
 
-- **I connettori**. Un elenco degli elementi di diagramma dei connettori del modello.
+- **Connettori**. Un elenco degli elementi di diagramma dei connettori del modello.
 
 - **Diagramma**. Un set di proprietà che definiscono il diagramma nonché elenchi di mappe dei connettori e di mappe delle forme.
 
@@ -33,13 +33,13 @@ Il **DSL Explorer** visualizza diversi tipi di informazioni in una visualizzazio
 
 - **Tipi di dominio**. Un elenco dei tipi predefiniti ed esterni usati nel modello.
 
-- **Editor**. Un elenco delle **casella degli strumenti** schede e gli elementi in essi contenuti e le impostazioni di convalida per il modello. Per altre informazioni sulla convalida, vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).
+- **Editor**. Un elenco di schede della **casella degli strumenti** e degli elementi in essi contenuti e le impostazioni di convalida per il modello. Per ulteriori informazioni sulla convalida, vedere [convalida in un Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
 
-- **Comportamento di esplorazione**. Impostazioni che specificano il comportamento di esplorazione nella finestra di progettazione generata. Per altre informazioni su come personalizzare l'esplorazione, vedere [personalizzazione di Esplora modelli](../modeling/customizing-the-model-explorer.md).
+- **Comportamento di Esplora risorse**. Impostazioni che specificano il comportamento di esplorazione nella finestra di progettazione generata. Per ulteriori informazioni sulla personalizzazione della finestra di esplorazione, vedere [personalizzazione di Esplora modelli](../modeling/customizing-the-model-explorer.md).
 
 - **Forme**. Un elenco degli elementi di diagramma delle forme del modello.
 
-- **Comportamento di serializzazione XML**. Impostazioni di serializzazione per il modello. Per altre informazioni sulla serializzazione, vedere [archiviazione di File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+- **Comportamento della serializzazione XML**. Impostazioni di serializzazione per il modello. Per ulteriori informazioni sulla serializzazione, vedere [personalizzazione dell'archiviazione file e della serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
 ## <a name="see-also"></a>Vedere anche
 

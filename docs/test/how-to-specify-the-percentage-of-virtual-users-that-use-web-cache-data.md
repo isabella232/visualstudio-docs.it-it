@@ -1,19 +1,19 @@
 ---
-title: 'Test di carico: Impostare la percentuale di utenti virtuali che usano i dati della cache Web'
+title: 'Test di carico: impostare la percentuale utente virtuale usando i dati della cache Web'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f436573712ff228244a40e5199f2f5a4b4326c5e
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: bc8baf2586e0c0ce682436387bfd612af14e18bd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431873"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653385"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procedura: Specificare la percentuale di utenti virtuali che usano i dati della cache Web
 
@@ -44,7 +44,7 @@ Se si esegue il test di carico di un sito web caratterizzato da un numero signif
 
 4. Impostare il valore per la proprietà **Percentuale di nuovi utenti** immettendo un numero per la percentuale.
 
-5. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. È quindi possibile eseguire il test di carico usando il nuovo valore di **Percentuale di nuovi utenti**.
+5. Dopo avere modificato la proprietà scegliere **Salva** nel menu **File**. È quindi possibile eseguire il test di carico usando il nuovo valore di **Percentuale di nuovi utenti**.
 
 ## <a name="see-also"></a>Vedere anche
 

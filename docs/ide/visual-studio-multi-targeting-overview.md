@@ -6,17 +6,17 @@ helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: f393061b249fc2eb10a348bb0d2da68f4a30c4f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647190"
 ---
 # <a name="framework-targeting-overview"></a>Panoramica sull'impostazione dei framework di destinazione
 
@@ -112,7 +112,7 @@ In un progetto Visual Basic, C# o F# esistente è possibile modificare la versio
 
 Prima di impostare una versione di .NET come destinazione, è necessario installare i riferimenti ad assembly appropriati. È possibile scaricare Developer Pack per versioni diverse di .NET dalla pagina dei [download di .NET](https://www.microsoft.com/net/download/windows).
 
-Per i progetti .NET Framework, la finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema che non pertinenti alla versione di .NET Framework di destinazione, per evitare che vengano aggiunti inavvertitamente a un progetto. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di .NET Framework. I riferimenti che appartengono a una versione di framework successiva a quella di destinazione non vengono risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento.
+Per i progetti .NET Framework, la finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema che non pertinenti alla versione di .NET Framework di destinazione, per evitare che vengano aggiunti inavvertitamente a un progetto. Gli assembly di sistema sono file con *estensione dll* inclusi in una versione .NET Framework. I riferimenti che appartengono a una versione del Framework superiore alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento.
 
 Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 

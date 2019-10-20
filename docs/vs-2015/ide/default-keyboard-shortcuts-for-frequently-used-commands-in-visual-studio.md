@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 77214948609bd73a2a630a62b4c1b7db114cf8e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437515"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665799"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "63437515"
 ||||||
 |-|-|-|-|-|
 |[Compila](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Modifica](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Progetto](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Strumenti](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Finestra](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
-|[Debug](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[File](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refactoring](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Visualizza](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
+|[Debug](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[File](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refactoring](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Visualizzazione](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
 ## <a name="bkmk_build"></a> Compila
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Build.BuildSolution|CTRL+MAIUSC+B [Globale]|
 |Build.Cancel|CTRL+INTERR [Globale]|
@@ -42,7 +42,7 @@ ms.locfileid: "63437515"
 
 ## <a name="bkmk_debug"></a> Debug
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Debug.BreakatFunction|CTRL+B [Globale]|
 |Debug.BreakAll|CTRL+ALT+INTERR [Globale]|
@@ -62,7 +62,7 @@ ms.locfileid: "63437515"
 
 ## <a name="bkmk_edit"></a> Modifica
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|INVIO [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br /> o MAIUSC+INVIO [Editor di testo]|
 |Edit.CollapsetoDefinitions|CTRL+M, CTRL+O [Editor di testo]|
@@ -113,7 +113,7 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 
 ## <a name="bkmk_file"></a> File
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |File.Exit|ALT+F4 [Globale]|
 |File.NewFile|CTRL+N [Globale]|
@@ -129,7 +129,7 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 
 ## <a name="bkmk_project"></a> Progetto
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|MAIUSC+ALT+A [Globale]|
 |Project.AddNewItem|CTRL+MAIUSC+A [Globale]|
@@ -148,7 +148,7 @@ dit.SurroundWith|CTRL+K, CTRL+S [Globale]|
 
 ## <a name="bkmk_view"></a> Visualizza
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |View.ClassView|CTRL+MAIUSC+C [Globale]|
 |View.EditLabel|F2 [Globale]|
@@ -169,7 +169,7 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Globale]|
 
 ## <a name="bkmk_window"></a> Finestra
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------|-------------------------------------|
 |Window.ActivateDocumentWindow|ESC [Globale]|
 |Window.CloseDocumentWindow|CTRL+F4 [Globale]|

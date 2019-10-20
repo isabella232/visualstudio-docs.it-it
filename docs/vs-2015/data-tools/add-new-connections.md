@@ -1,55 +1,52 @@
 ---
-title: Aggiungere nuove connessioni | Microsoft Docs
+title: Aggiungi nuove connessioni | Microsoft Docs
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 44146613fb43b6fc4269741ba09b94629f888d5f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68192551"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673080"
 ---
 # <a name="add-new-connections"></a>Aggiungere nuove connessioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile testare la connessione a un database o un servizio ed esplorare i contenuti del database e schemi, utilizzando **Esplora Server**, **Cloud Explorer**, o **Esplora oggetti di SQL Server**. La funzionalità di queste finestre si sovrappone a una certa misura. Le differenze di base sono:  
-  
- Esplora server  
- Installato per impostazione predefinita in Visual Studio. Utilizzabile per testare le connessioni e visualizzare i database di SQL Server, ad altri database che hanno installato un provider ADO.NET e alcuni servizi di Azure. Mostra anche gli oggetti di basso livello, ad esempio i contatori delle prestazioni di sistema, registri eventi e le code di messaggi. Se un'origine dati non dispone di alcun provider ADO.NET, non verranno visualizzati qui, ma è comunque possibile usarlo da Visual Studio tramite la connessione a livello di codice.  
-  
- Cloud Explorer  
- Installare manualmente questa finestra come un'estensione di Visual Studio selezionando **degli strumenti** > **estensioni e aggiornamenti** > **Online**  >  **Visual Studio Gallery**. Fornisce funzionalità specializzate per l'esplorazione e la connessione a servizi di Azure.  
-  
- Esplora oggetti di SQL Server  
- Installato con SQL Server Data Tools e visibile sotto il **vista** menu. Se non viene visualizzato non esiste, andare al **programmi e funzionalità** nel Pannello di controllo Cerca Visual Studio e quindi selezionare **modifica** per eseguire nuovamente il programma di installazione dopo aver selezionato la casella di controllo per SQL Server Data Tools. Uso **Esplora oggetti di SQL Server** ai database SQL di visualizzazione (se dispongono di un provider ADO.NET), creare nuovi database, modificare gli schemi, creare stored procedure, recuperare le stringhe di connessione, visualizzare i dati e altro ancora. Database SQL di cui non sono installato alcun provider ADO.NET non verranno visualizzate qui, ma può comunque connettersi a essi a livello di codice.  
-  
-## <a name="add-a-connection-in-server-explorer"></a>Aggiungere una connessione in Esplora Server  
- Per creare una connessione al database, fare clic sui **Aggiungi connessione** icona nella **Esplora Server**, o fare doppio clic nella **Esplora Server** nel **dati Le connessioni** nodo e selezionare **Aggiungi connessione**. A questo punto, è anche possibile connettersi a un database in un altro server, un servizio di SharePoint o un servizio di Azure.  
-  
- ![Icona nuova connessione di Esplora server](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata sull'icona di connessione al nuovo Esplora Server")  
-  
- Verrà visualizzata la **Aggiungi connessione** nella finestra di dialogo. In questo caso, è stato immesso il nome dell'istanza di LocalDB di SQL Server.  
-  
- ![Aggiungi nuova connessione](../data-tools/media/raddata-add-new-connection-dialog.png "raddata Aggiungi nuova finestra di dialogo di connessione")  
-  
-## <a name="change-the-provider"></a>Modificare il provider  
- Se l'origine dati non si desidera, fare clic il **modifica** pulsante per selezionare una nuova origine dati e/o un nuovo provider di dati ADO.NET. Il nuovo provider potrebbe chiedere le credenziali, a seconda di come è stato configurato.  
-  
- ![Modificare il Provider di dati AD0.NET](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata Provider di dati di modifica AD0.NET")  
-  
-## <a name="test-the-connection"></a>Testare la connessione  
- Dopo aver scelto l'origine dati, fare clic su **Test connessione**. Se non viene completato, è necessario risolvere i problemi di base la documentazione del fornitore.  
-  
- ![Test connessione](../data-tools/media/raddata-test-connection.png "raddata Test connessione")  
-  
- Se il test ha esito positivo, si è pronti per creare un *zdroj dat*, che è un termine di Visual Studio che in realtà indica una *modello di dati* basato sul database o del servizio sottostante.  
-  
-## <a name="see-also"></a>Vedere anche  
+È possibile testare la connessione a un database o a un servizio ed esplorare il contenuto e gli schemi del database usando **Esplora server**, **Cloud Explorer**o **Esplora oggetti di SQL Server**. La funzionalità di queste finestre si sovrappone a una certa misura. Le differenze di base sono:
+
+ Esplora server installati per impostazione predefinita in Visual Studio. Può essere usato per testare le connessioni e visualizzare SQL Server database, tutti gli altri database in cui è installato un provider ADO.NET e alcuni servizi di Azure. Vengono inoltre visualizzati oggetti di basso livello, ad esempio contatori delle prestazioni del sistema, log eventi e code di messaggi. Se un'origine dati non ha un provider ADO.NET, non verrà visualizzata qui, ma è comunque possibile usarla da Visual Studio tramite la connessione a livello di codice.
+
+ Cloud Explorer installare questa finestra manualmente come estensione di Visual Studio selezionando **strumenti**  > **estensioni e aggiornamenti**  > **online**  > **raccolta di Visual Studio**. Fornisce funzionalità specializzate per l'esplorazione e la connessione ai servizi di Azure.
+
+ Esplora oggetti di SQL Server installato con SQL Server Data Tools e visibile dal menu **Visualizza** . Se non viene visualizzata, passare a **programmi e funzionalità** nel pannello di controllo, trovare Visual Studio, quindi selezionare **Cambia** per eseguire di nuovo il programma di installazione dopo aver selezionato la casella di controllo SQL Server Data Tools. Utilizzare **Esplora oggetti di SQL Server** per visualizzare i database SQL (se hanno un provider ADO.NET), creare nuovi database, modificare schemi, creare stored procedure, recuperare stringhe di connessione, visualizzare i dati e altro ancora. I database SQL che non hanno un provider ADO.NET installato non vengono visualizzati qui, ma è comunque possibile connettersi a essi a livello di codice.
+
+## <a name="add-a-connection-in-server-explorer"></a>Aggiungere una connessione in Esplora server
+ Per creare una connessione al database, fare clic sull'icona **Aggiungi connessione** in **Esplora server**oppure fare clic con il pulsante destro del mouse su **Esplora server** nel nodo **connessioni dati** e scegliere **Aggiungi connessione**. Da qui è inoltre possibile connettersi a un database in un altro server, un servizio SharePoint o un servizio di Azure.
+
+ ![Icona nuova connessione Esplora server](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata Esplora server nuova icona di connessione")
+
+ Verrà visualizzata la finestra di dialogo **Aggiungi connessione** . Qui è stato immesso il nome dell'istanza di SQL Server database locale.
+
+ ![Aggiungi nuova connessione](../data-tools/media/raddata-add-new-connection-dialog.png "Finestra di dialogo Aggiungi nuova connessione di raddata")
+
+## <a name="change-the-provider"></a>Modificare il provider
+ Se l'origine dati non è quella desiderata, fare clic sul pulsante **Cambia** per scegliere una nuova origine dati e/o un nuovo provider di dati ADO.NET. Il nuovo provider potrebbe richiedere le credenziali, a seconda di come è stato configurato.
+
+ ![Modificare provider di dati AD0.NET](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata modificare AD0.NET provider di dati")
+
+## <a name="test-the-connection"></a>Testare la connessione
+ Dopo aver scelto l'origine dati, fare clic su **Test connessione**. Se l'operazione non riesce, sarà necessario risolvere i problemi in base alla documentazione del fornitore.
+
+ ![Test connessione](../data-tools/media/raddata-test-connection.png "Connessione test raddata")
+
+ Se il test ha esito positivo, si è pronti per creare un' *origine dati*, ovvero un termine di Visual Studio che significa realmente un *modello di dati* basato sul database o sul servizio sottostante.
+
+## <a name="see-also"></a>Vedere anche
  [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

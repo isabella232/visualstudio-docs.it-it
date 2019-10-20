@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790863"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654450"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 
@@ -41,7 +41,7 @@ La finestra **Elenco errori** consente di eseguire le attività seguenti:
 
 - Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
 
-Per visualizzare la finestra **Elenco errori**, scegliere **Visualizza** > **Elenco errori** o premere **Ctrl**+**\\**+**E**.
+Per visualizzare la finestra **Elenco errori**, scegliere **Visualizza** > **Elenco errori** o premere **Ctrl**+ **\\** +**E**.
 
 È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.
 
@@ -78,13 +78,13 @@ Usare la casella di testo **Elenco errori di ricerca** sul lato destro della bar
 
 Gravità
 
-Consente di visualizzare i diversi tipi di voci dell'**Elenco errori** (**Errore**, **Messaggio**, **Avviso**, **Avviso (attivo)**, **Avviso (inattivo)**.
+Consente di visualizzare i diversi tipi di voci dell'**Elenco errori** (**Errore**, **Messaggio**, **Avviso**, **Avviso (attivo)** , **Avviso (inattivo)** .
 
 Codice
 
 Restituisce il codice di errore.
 
-Description
+Descrizione
 
 Visualizza il testo della voce.
 

@@ -1,54 +1,50 @@
 ---
-title: Activity Designer Primitives | Microsoft Docs
+title: ActivityDesigner Primitive | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90794b658204fb955e6dfaebed0377f91d9792ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971277"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672537"
 ---
 # <a name="primitives-activity-designers"></a>ActivityDesigner Primitive
-Gli ActivityDesigner primitivi consentono di creare e configurare diverse attività nello spazio dei nomi <xref:System.Activities.Statements>, quali Assign e Delay. Gli argomenti contenuti in questa sezione forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Assign](../workflow-designer/assign-activity-designer.md)  
- Consente di creare e configurare un'attività <xref:System.Activities.Statements.Assign>.  
-  
- [Delay](../workflow-designer/delay-activity-designer.md)  
- Consente di creare e configurare un'attività <xref:System.Activities.Statements.Delay>.  
-  
- [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
- Consente di creare e configurare un'attività <xref:System.Activities.Statements.InvokeMethod>.  
-  
- [WriteLine](../workflow-designer/writeline-activity-designer.md)  
- Consente di creare e configurare un'attività <xref:System.Activities.Statements.WriteLine>.  
-  
-## <a name="reference"></a>Riferimenti  
-  
-## <a name="related-sections"></a>Sezioni correlate  
- [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)  
-  
- [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)  
-  
- [Messaging](../workflow-designer/messaging-activity-designers.md)  
-  
- [Runtime](../workflow-designer/runtime-activity-designers.md)  
-  
- [Transazione](../workflow-designer/transaction-activity-designers.md)  
-  
- [Raccolta](../workflow-designer/collection-activity-designers.md)  
-  
- [Gestione degli errori](../workflow-designer/error-handling-activity-designers.md)  
-  
+Gli ActivityDesigner primitivi consentono di creare e configurare diverse attività nello spazio dei nomi <xref:System.Activities.Statements>, quali Assign e Delay. Gli argomenti contenuti in questa sezione forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Assegna](../workflow-designer/assign-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Assign>.
+
+ [Ritardo](../workflow-designer/delay-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Delay>.
+
+ [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.InvokeMethod>.
+
+ [WriteLine](../workflow-designer/writeline-activity-designer.md) Utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.WriteLine>.
+
+## <a name="reference"></a>Reference
+
+## <a name="related-sections"></a>Sezioni correlate
+ [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)
+
+ [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
+
+ [Messaging](../workflow-designer/messaging-activity-designers.md)
+
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
+
+ [Transazione](../workflow-designer/transaction-activity-designers.md)
+
+ [Raccolta](../workflow-designer/collection-activity-designers.md)
+
+ [Gestione degli errori](../workflow-designer/error-handling-activity-designers.md)
+
 ## <a name="see-also"></a>Vedere anche
 
--[Utilizzo degli ActivityDesigner](../workflow-designer/using-the-activity-designers.md)
+-[usando gli](../workflow-designer/using-the-activity-designers.md) ActivityDesigner

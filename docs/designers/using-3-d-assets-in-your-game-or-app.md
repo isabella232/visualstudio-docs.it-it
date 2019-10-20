@@ -10,19 +10,19 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459108"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634540"
 ---
-# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedura: Usare asset 3D nel gioco o nell'app
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedura: usare asset 3D nel gioco o nell'app
 
 Questo articolo spiega come usare Visual Studio per elaborare gli asset 3D e includerli nelle build.
 
@@ -36,7 +36,7 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto, quindi scegliere **Dipendenze di compilazione** > **Personalizzazioni compilazioni**.
 
-   Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++**.
+   Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++** .
 
 2. In **File di personalizzazione compilazioni disponibili** selezionare le caselle di controllo corrispondenti ai tipi di asset da includere nel progetto, come indicato nella tabella seguente:
 
@@ -46,7 +46,7 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
     |Modelli 3D|**MeshContentTask(.targets, .props)**|
     |Shader|**ShaderGraphContentTask(.targets, .props)**|
 
-3. Fare clic sul pulsante **OK** .
+3. Fare clic sul pulsante **OK**.
 
 ## <a name="include-assets-in-your-build"></a>Inclusione degli asset nella build
 
@@ -65,15 +65,15 @@ Dopo aver specificato i diversi tipi di asset 3D che si intende usare nel proget
     > [!IMPORTANT]
     > Per impostazione predefinita, Visual Studio presuppone che sia necessario suddividere in categorie molti tipi di file di immagine mediante il tipo di elemento **Immagine** integrato in Visual Studio. È quindi necessario modificare la proprietà **Tipo di elemento** di ogni immagine che deve essere elaborata dalla pipeline di contenuti immagine. Per altri tipi di file di origine della pipeline di contenuti per i modelli 3D e la grafica visual shader, viene usato il **Tipo di elemento** corretto per impostazione predefinita.
 
-4. Fare clic sul pulsante **OK** .
+4. Fare clic sul pulsante **OK**.
 
 Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i relativi tipi di file di origine e output.
 
 |Tipo di elemento|Tipi di file di origine|Tipi di file di output|
 |---------------| - | - |
-|**Pipeline di contenuti immagine**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
-|**Pipeline di contenuti mesh**|AutoDesk FBX Interchange File (*.fbx*)<br /><br /> Collada DAE File (*.dae*)<br /><br /> Wavefront OBJ File (*.obj*)|3D mesh file (*.cmo*)|
-|**Pipeline di contenuti shader**|Visual Shader Graph (*.dgsl*)|Compiled Shader Output (*.cso*)|
+|**Pipeline di contenuti immagine**|Portable Network Graphics ( *.png*)<br /><br /> JPEG ( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface ( *.dds*)<br /><br /> Graphics Interchange Format ( *.gif*)<br /><br /> Bitmap ( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format ( *.tif*, *.tiff*)<br /><br /> Targa ( *.tga*)|DirectDraw Surface ( *.dds*)|
+|**Pipeline di contenuti mesh**|AutoDesk FBX Interchange File ( *.fbx*)<br /><br /> Collada DAE File ( *.dae*)<br /><br /> Wavefront OBJ File ( *.obj*)|3D mesh file ( *.cmo*)|
+|**Pipeline di contenuti shader**|Visual Shader Graph ( *.dgsl*)|Compiled Shader Output ( *.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurazione delle proprietà della pipeline di contenuti degli asset
 
@@ -89,34 +89,34 @@ Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i 
 
 3. In **Proprietà di configurazione** scegliere il nodo della pipeline di contenuti, ad esempio **Pipeline di contenuti immagine** per gli asset di trama e immagine, quindi nella griglia delle proprietà impostare le proprietà sui valori appropriati. Ad esempio, per generare mipmap per un asset trama in fase di compilazione, impostare la proprietà **Genera MIP** su **Sì**.
 
-4. Fare clic sul pulsante **OK** .
+4. Fare clic sul pulsante **OK**.
 
 ### <a name="image-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti immagine
 
 Quando si usa lo strumento della pipeline di contenuti immagine per generare un asset trama, è possibile comprimere la trama in diversi modi, specificare se i livelli MIP devono essere generati in fase di compilazione e cambiare il nome del file di output.
 
-|Proprietà|Description|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |**Compressione**|Specifica il tipo di compressione usato per il file di output.<br /><br /> Le opzioni disponibili sono:<br /><br /> -   **Nessuna compressione**<br />-   **Compressione BC1_UNORM**<br />-   **Compressione BC1_UNORM_SRGB**<br />-   **Compressione BC2_UNORM**<br />-   **Compressione BC2_UNORM_SRGB**<br />-   **Compressione BC3_UNORM**<br />-   **Compressione BC3_UNORM_SRGB**<br />-   **Compressione BC4_UNORM**<br />-   **Compressione BC4_SNORM**<br />-   **Compressione BC5_UNORM**<br />-   **Compressione BC5_SNORM**<br />-   **Compressione BC6H_UF16**<br />-   **Compressione BC6H_SF16**<br />-   **Compressione BC7_UNORM**<br />-   **Compressione BC7_UNORM_SRGB**<br /><br /> Per informazioni sui formati di compressione supportati nelle varie versioni di DirectX, vedere la [ Guida alla programmazione per DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Converti in formato premoltiplicato per alfa|**Sì** per convertire l'immagine in formato premoltiplicato per alfa nel file di output, altrimenti **No**. Viene modificato solo il file di output, mentre l'immagine di origine resta invariata.|
 |**Genera MIP**|**Sì** per generare una catena MIP completa in fase di compilazione e includerla nel file di output, altrimenti **No**. Se si sceglie **No** e il file di origine contiene già una catena mipmap, nel file di output sarà presente una catena MIP. In caso contrario, non sarà presente alcuna catena MIP.|
-|**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
+|**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti mesh
 
 Quando si usa lo strumento della pipeline di contenuti mesh per generare un asset mesh, è possibile cambiare il nome del file di output.
 
-|Proprietà|Description|
+|proprietà|Descrizione|
 |--------------|-----------------|
-|**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
+|**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti shader
 
 Quando si usa lo strumento della pipeline di contenuti shader per generare un asset shader, è possibile cambiare il nome del file di output.
 
-|Proprietà|Description|
+|proprietà|Descrizione|
 |--------------|-----------------|
-|**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
+|**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Caricamento e uso di asset 3D in fase di esecuzione
 
@@ -211,10 +211,10 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
-|[Procedura: Esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
-|[Procedura: Esportare una trama da usare con app Direct2D o JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
+|[Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
+|[Procedura: esportare una trama da usare con app Direct2D o JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descrive gli strumenti di modifica forniti da Visual Studio per la creazione e la manipolazione di asset 3D, tra cui trame e immagini, modelli 3D e shader.|
 |[Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)|Descrive come esportare uno shader dalla finestra di progettazione shader.|

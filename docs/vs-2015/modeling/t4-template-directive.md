@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeae6a14c846de83aaffa6568c6c30b82d9d81b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871735"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658559"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito
 ## <a name="compileroptions-attribute"></a>attributo compilerOptions
  Esempio: `compilerOptions="optimize+"`
 
- Valori validi: Qualsiasi opzione del compilatore valida. Per ulteriori informazioni, vedere [ C# opzioni del compilatore elencate per categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opzioni del compilatore elencate per categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valori validi: qualsiasi opzione del compilatore valida. Per ulteriori informazioni, vedere [ C# opzioni del compilatore elencate per categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opzioni del compilatore elencate per categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignorato per i modelli (pre-elaborati) della fase di esecuzione.
 
@@ -45,7 +45,7 @@ Un modello di testo T4 di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di solito
 
  Valori validi: "", le impostazioni cultura invarianti, che è l'impostazione predefinita.
 
- Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per altre informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
+ Impostazioni cultura espresse come una stringa nel formato xx-XX. Ad esempio, it-IT, en-US, ja-JP, de-CH e de-DE. Per ulteriori informazioni, vedere <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
 
  L'attributo Culture specifica le impostazioni cultura da utilizzare quando un blocco di espressione viene convertito in testo.
 
@@ -77,7 +77,7 @@ hostspecific="true"
 
  Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile ai [modelli della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non ai modelli in fase di [esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Quando `hostspecific` è `true` e si utilizza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile eseguire il cast di `this.Host` a IServiceProvider per accedere alle funzionalità di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
+ Quando `hostspecific` è `true` e si utilizza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile eseguire il cast di `this.Host` a IServiceProvider per accedere alle funzionalità di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -108,9 +108,9 @@ Content of myFile is:
 
  `VB`
 
- L'attributo Language specifica la lingua ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)]) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
+ L'attributo Language specifica il linguaggio ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)]) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
 
- Ad esempio:
+ Esempio:
 
 ```vb
 <#@ template language="VB" #>

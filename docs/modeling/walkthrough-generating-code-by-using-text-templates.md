@@ -1,21 +1,21 @@
 ---
-title: 'Procedura dettagliata: Generazione di codice tramite modelli di testo'
+title: 'Procedura dettagliata: generazione di codice tramite modelli di testo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934334"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666926"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -28,7 +28,7 @@ Lo spazio dei nomi System. XML fornisce strumenti completi per il caricamento di
 In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.
 
 > [!NOTE]
-> L'applicazione [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), incluso in Visual Studio, è possibile generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
+> L'applicazione [xsd. exe](http://go.microsoft.com/fwlink/?LinkId=178765), inclusa in Visual Studio, può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
 
 Ecco il file di esempio:
 
@@ -73,7 +73,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-Nella versione fortemente tipizzata, una modifica allo schema XML comporterà modifiche alle classi. Il compilatore evidenzia le parti del codice dell'applicazione che deve essere modificata. Tale supporto non è disponibile nella versione non tipizzata che usa il codice XML generico.
+Nella versione fortemente tipizzata una modifica apportata al XML Schema comporta modifiche alle classi. Il compilatore evidenzia le parti del codice dell'applicazione che devono essere modificate. Tale supporto non è disponibile nella versione non tipizzata che usa il codice XML generico.
 
 In questo progetto viene usato un singolo file di modello per generare le classi che rendono possibile la versione tipizzata.
 
@@ -103,7 +103,7 @@ Il file deve far parte del progetto in modo che il modello possa leggerlo, ma no
 
 ### <a name="add-a-test-code-file"></a>Aggiungere un file di codice di test
 
-Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Ad esempio:
+Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Esempio:
 
 ```csharp
 using System;
@@ -129,7 +129,7 @@ Un test più completo potrebbe controllare l'output di questa funzione di test c
 
 ### <a name="add-a-text-template-file"></a>Aggiungere un file di modello di testo
 
-Aggiungere un file di modello di testo e impostare l'estensione di output *cs*.
+Aggiungere un file di modello di testo e impostare l'estensione di output su *. cs*.
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi**e quindi su **Nuovo elemento**.
 
@@ -140,7 +140,7 @@ Aggiungere un file di modello di testo e impostare l'estensione di output *cs*.
 
 3. Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.
 
-     Questa modifica consentirà il codice del modello ottenere l'accesso ai servizi di Visual Studio.
+     Questa modifica consentirà al codice del modello di ottenere l'accesso ai servizi di Visual Studio.
 
 4. Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".
 
@@ -258,7 +258,7 @@ Se si preferisce che i nomi delle classi inizino con una lettera maiuscola, è p
 #>
 ```
 
-In questa fase, generata *cs* file contiene le dichiarazioni seguenti:
+In questa fase il file *. cs* generato contiene le seguenti dichiarazioni:
 
 ```csharp
 public partial class Catalog {}
@@ -268,9 +268,9 @@ public partial class Song {}
 
 È possibile aggiungere altri dettagli, quali le proprietà per i nodi figlio, attributi e testo interno, mediante lo stesso approccio.
 
-### <a name="access-the-visual-studio-api"></a>Accedere alle API di Visual Studio
+### <a name="access-the-visual-studio-api"></a>Accedere all'API di Visual Studio
 
-Impostando il `hostspecific` attributo del `<#@template#>` direttiva consente al modello di ottenere l'accesso all'API di Visual Studio. Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
+L'impostazione dell'attributo `hostspecific` della direttiva `<#@template#>` consente al modello di ottenere l'accesso all'API di Visual Studio. Il modello può usarla per ottenere il percorso del file di progetto, per evitare di usare un percorso di file assoluto nel codice del modello.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -406,7 +406,7 @@ L'applicazione può ora essere scritta in stile fortemente tipizzato, usando le 
 
 Quando lo schema XML cambia, è possibile generare facilmente nuove classi. Il compilatore indicherà allo sviluppatore dove il codice dell'applicazione deve essere aggiornato.
 
-Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic su **Trasforma tutti i modelli** nel **Esplora soluzioni** sulla barra degli strumenti.
+Per rigenerare le classi quando viene modificato il file XML di esempio, fare clic su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
 
 ## <a name="conclusion"></a>Conclusione
 

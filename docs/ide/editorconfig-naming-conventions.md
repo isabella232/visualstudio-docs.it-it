@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650906"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -47,8 +47,8 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - struct
 - interfaccia
 - enum
-- proprietà
-- method
+- Proprietà
+- metodo
 - campo
 - event
 - delegato
@@ -155,7 +155,7 @@ I valori consentiti per questa proprietà sono:
 > [!NOTE]
 > Nell'ambito dello stile di denominazione è necessario specificare uno stile per le lettere maiuscole e minuscole. In caso contrario, lo stile di denominazione potrebbe essere ignorato.
 
-## <a name="severity"></a>severity
+## <a name="severity"></a>Gravità
 
 Per descrivere la gravità di una violazione della regola di denominazione, specificare una proprietà nel formato seguente:
 
@@ -163,13 +163,13 @@ Per descrivere la gravità di una violazione della regola di denominazione, spec
 
 Nella tabella seguente sono riportati i valori consentiti per la gravità, con il relativo significato:
 
-severity | Effetto
+Gravità | Effetto
 ------------ | -------------
 none | La regola viene eliminata completamente.
 refactoring o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
 suggestion | Se questo stile non viene rispettato, viene visualizzato un suggerimento per l'utente, indicato dai primi due caratteri sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.
 warning | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
-error | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
+errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
 
 > [!NOTE]
 > Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'**Elenco errori** o come suggerimento.

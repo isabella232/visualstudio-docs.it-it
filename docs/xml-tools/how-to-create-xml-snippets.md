@@ -1,21 +1,21 @@
 ---
-title: 'Procedura: di frammenti di codice XML'
+title: 'Procedura: creare frammenti XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926511"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645931"
 ---
-# <a name="how-to-create-xml-snippets"></a>Procedura: Creare frammenti XML
+# <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
 
 È possibile utilizzare l'editor XML per creare nuovi frammenti di codice XML. L'editor comprende un frammento di codice XML, denominato "Snippet", ovvero un frammento standard per la creazione di nuovi frammenti di codice XML.
 
@@ -37,7 +37,7 @@ Per creare un nuovo frammento di codice XML, creare un nuovo file XML e usare la
 
      Viene visualizzata la finestra **di dialogo Salva file con nome** .
 
-7. Immettere il nome per il nuovo frammento e selezionare **file** di frammento nella finestra a discesa **Salva come** .
+7. Immettere il nome per il nuovo frammento e selezionare **file di frammento** nella finestra a discesa **Salva come** .
 
 8. Utilizzare l'elenco a discesa **Salva in** per modificare il percorso del file nella cartella *Documenti\Visual Studio 2005 \ Code Snippets\XML\My XML Snippets* e quindi premere **Save**.
 
@@ -56,7 +56,7 @@ L'editor supporta due tipi di frammento di codice:
 </SnippetTypes>
 ```
 
-Il `Expansion` tipo determina se il frammento viene visualizzato quando si richiama il comando **Inserisci frammento** . Il `SurroundsWith` tipo determina se il frammento viene visualizzato quando si richiama il comando **Racchiudi tra** .
+Il tipo di `Expansion` determina se il frammento viene visualizzato quando si richiama il comando **Inserisci frammento** . Il tipo di `SurroundsWith` determina se il frammento viene visualizzato quando si richiama il comando **Racchiudi tra** .
 
 ### <a name="code-element"></a>Elemento del codice
 
@@ -104,7 +104,7 @@ L'elemento `Literal` viene usato per identificare il testo di sostituzione che �
 </Literal
 ```
 
-I valori formali possono anche fare riferimento a funzioni. L'editor XML include una funzione denominata **LookupPrefix**. La funzione **LookupPrefix** cerca l'URI dello spazio dei nomi specificato dalla posizione nel documento XML da cui viene richiamato il frammento e restituisce il prefisso dello spazio dei nomi definito per lo spazio dei nomi, se presente, e include i due punti (:) con questo nome. Di seguito è riportato un esempio di `Literal` elemento che utilizza la funzione **LookupPrefix** .
+I valori formali possono anche fare riferimento a funzioni. L'editor XML include una funzione denominata **LookupPrefix**. La funzione **LookupPrefix** cerca l'URI dello spazio dei nomi specificato dalla posizione nel documento XML da cui viene richiamato il frammento e restituisce il prefisso dello spazio dei nomi definito per lo spazio dei nomi, se presente, e include i due punti (:) con questo nome. Di seguito è riportato un esempio di un elemento `Literal` che utilizza la funzione **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">
@@ -118,5 +118,5 @@ La variabile $prefix$ può quindi essere usata in altri punti all'interno del fr
 ## <a name="see-also"></a>Vedere anche
 
 - [Frammenti XML](../xml-tools/xml-snippets.md)
-- [Procedura: Usare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Procedura: Generare un frammento XML da un XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Procedura: utilizzare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Procedura: generare un frammento XML da un XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

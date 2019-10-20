@@ -1,5 +1,5 @@
 ---
-title: La scrittura in Store le impostazioni utente | Microsoft Docs
+title: Scrittura nell'archivio impostazioni utente | Microsoft Docs
 ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
@@ -8,21 +8,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44380a03b87318be0fdf746c75eff8988ac68267
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 80b525fe896c59503cac55c9f7cab79a11b481f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318475"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647888"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
-Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strumenti / opzioni** finestra di dialogo, finestre delle proprietà e alcune altre finestre di dialogo. Estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come uno strumento esterno per leggere e scrivere nell'archivio delle impostazioni utente.
+Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra di dialogo **Strumenti/Opzioni** , finestre proprietà e alcune altre finestre di dialogo. Le estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come strumento esterno leggendo e scrivendo nell'archivio impostazioni utente.
 
 ## <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 
-1. Creare un progetto VSIX denominato UserSettingsStoreExtension e quindi aggiungere un comando personalizzato denominato UserSettingsStoreCommand. Per altre informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Creare un progetto VSIX denominato UserSettingsStoreExtension e quindi aggiungere un comando personalizzato denominato UserSettingsStoreCommand. Per ulteriori informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. In UserSettingsStoreCommand.cs, aggiungere quanto segue usando istruzioni:
+2. In UserSettingsStoreCommand.cs aggiungere le direttive using seguenti:
 
     ```csharp
     using System.Collections.Generic;
@@ -30,7 +30,7 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3. In MenuItemCallback, eliminare il corpo del metodo e ottenere l'utente archiviano le impostazioni, come indicato di seguito:
+3. In MenuItemCallback eliminare il corpo del metodo e ottenere l'archivio delle impostazioni utente, come indicato di seguito:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -40,7 +40,7 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
     }
     ```
 
-4. A questo punto è scoprire se il blocco note è già impostato come uno strumento esterno. È necessario scorrere tutti gli strumenti esterni per determinare se l'impostazione ToolCmd è "Notepad", come indicato di seguito:
+4. Verificare ora se il blocco note è già impostato come strumento esterno. È necessario scorrere tutti gli strumenti esterni per determinare se l'impostazione ToolCmd è "blocco note", come indicato di seguito:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -64,7 +64,7 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
 
     ```
 
-5. Se il blocco note non è stato impostato come uno strumento esterno, impostarlo come indicato di seguito:
+5. Se il blocco note non è stato impostato come strumento esterno, impostarlo come segue:
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -100,10 +100,10 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
     }
     ```
 
-6. Testare il codice. Tenere presente che aggiunge il blocco note come uno strumento esterno, pertanto è necessario il rollback del Registro di sistema prima di eseguirlo una seconda volta.
+6. Testare il codice. Tenere presente che aggiunge il blocco note come strumento esterno, quindi è necessario eseguire il rollback del registro di sistema prima di eseguirlo una seconda volta.
 
 7. Compilare il codice e avviare il debug.
 
-8. Nel **degli strumenti** menu, fare clic su **UserSettingsStoreCommand richiamare**. Verrà aggiunto il blocco note per la **strumenti** menu.
+8. Scegliere **richiama UserSettingsStoreCommand**dal menu **strumenti** . Il blocco note verrà aggiunto al menu **strumenti** .
 
-9. Verrà ora visualizzato il blocco note sugli strumenti / opzioni di menu e scegliendo **Notepad** dovrebbe visualizzare un'istanza del blocco note.
+9. A questo punto, il blocco note verrà visualizzato nel menu Strumenti/Opzioni e facendo clic su **blocco note** verrà visualizzata un'istanza del blocco note.

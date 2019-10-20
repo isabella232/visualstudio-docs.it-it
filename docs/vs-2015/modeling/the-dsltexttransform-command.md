@@ -8,31 +8,31 @@ helpviewer_keywords:
 - Domain-Specific Language, commands
 ms.assetid: 7d025d0b-6543-4a49-9f6b-8b8cfcad77ee
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 220ceab29cb2b9bc1b117a98326d22c3c546a162
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 599bf14a3d37fbd6bdff111f79e658f44624792b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548499"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658458"
 ---
 # <a name="the-dsltexttransform-command"></a>Comando DslTextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DslTextTransform.cmd è uno script che chiama TextTransform.exe e lo esegue con opzioni comuni. È possibile usare DslTextTransformation.cmd per una compilazione notturna di automatizzare il [!INCLUDE[dsl](../includes/dsl-md.md)] progetti. Per altre informazioni, vedere [generazione di file con l'utilità di TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  
-  
- DslTextTransform.cmd si trova nella directory seguente:  
-  
- **\<Percorso di installazione di Visual Studio SDK > \visualstudiointegration\tools\bin.**  
-  
- È possibile specificare gli argomenti seguenti come input per DslTextTransform.cmd:  
-  
-- La directory di output del progetto di modello di dominio.  
-  
-- La directory di output del progetto di definizione della finestra di progettazione.  
-  
-- Il percorso del file di modello di testo.  
-  
-  DslTextTransform.cmd elabora il file di modello di testo specificato usando i processori di direttive predefinito e gli assembly. Se si creano i processori di direttiva personalizzati, è possibile creare il proprio file batch che chiama TextTransform.exe. In questo file batch, è possibile specificare gli assembly e i processori di direttiva personalizzati associati.
+DslTextTransform. cmd è uno script che chiama TextTransform. exe e lo esegue con le opzioni comuni. È possibile usare DslTextTransformation. cmd per automatizzare una compilazione notturna dei progetti [!INCLUDE[dsl](../includes/dsl-md.md)]. Per altre informazioni, vedere [generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+
+ DslTextTransform. cmd si trova nella directory seguente:
+
+ **Percorso di installazione di \<Visual Studio SDK > \VisualStudioIntegration\Tools\Bin**
+
+ È possibile specificare gli argomenti seguenti come input per DslTextTransform. cmd:
+
+- Directory di output del progetto di modello di dominio.
+
+- Directory di output del progetto di definizione della finestra di progettazione.
+
+- Percorso del file di modello di testo.
+
+  DslTextTransform. cmd elabora il file del modello di testo specificato utilizzando i processori di direttiva e gli assembly predefiniti. Se si creano processori di direttive personalizzati, è possibile creare un file batch personalizzato che chiama TextTransform. exe. In questo file batch è possibile specificare gli assembly e i processori di direttiva personalizzati associati.

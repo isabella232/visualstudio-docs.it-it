@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer, get started
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 64045221ad9200223264632d4bdbd33ff82d631f
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
-ms.translationtype: HT
+ms.openlocfilehash: 419e5ddb5d915307130a6fdadd795ce5b3236033
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585353"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634128"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>Procedura dettagliata: Introduzione a Progettazione Windows Form
 
@@ -69,7 +69,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
     Il controllo `SplitContainer` viene ancorato ai limiti del controllo DemoCalculator.
 
     > [!NOTE]
-    > Diversi controlli offrono smart tag per facilitare la progettazione. Per altre informazioni, vedere [Procedura dettagliata: Eseguire attività comuni usando gli smart tag nei controlli Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
+    > Diversi controlli offrono smart tag per facilitare la progettazione. Per altre informazioni, vedere [procedura dettagliata: eseguire attività comuni usando gli smart tag nei controlli Windows Forms](/dotnet/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls).
 
 5. Selezionare il bordo verticale tra i pannelli e trascinarlo a destra, in modo che la maggior parte dello spazio sia occupato dal pannello sinistro.
 
@@ -91,7 +91,7 @@ Il controllo DemoCalculator contiene diversi controlli Windows Forms. In questa 
 
 12. Dalla **casella degli strumenti** del nodo **Contenitori** trascinare un controllo `TableLayoutPanel` nel pannello sinistro del controllo `SplitContainer`.
 
-    Il controllo `TableLayoutPanel` viene visualizzato nell'area di progettazione con il relativo pannello smart tag aperto. Il controllo `TableLayoutPanel` dispone i relativi controlli figlio in una griglia. Il controllo `TableLayoutPanel` conterrà i pulsanti e la visualizzazione del controllo DemoCalculator. Per altre informazioni, vedere [Procedura dettagliata: Disporre i controlli usando un controllo TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
+    Il controllo `TableLayoutPanel` viene visualizzato nell'area di progettazione con il relativo pannello smart tag aperto. Il controllo `TableLayoutPanel` dispone i relativi controlli figlio in una griglia. Il controllo `TableLayoutPanel` conterrà i pulsanti e la visualizzazione del controllo DemoCalculator. Per ulteriori informazioni, vedere [procedura dettagliata: disporre i controlli mediante TableLayoutPanel](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel).
 
 13. Selezionare **Modifica righe e colonne** nel pannello smart tag.
 
@@ -257,7 +257,7 @@ I pulsanti del controllo DemoCalculator hanno gestori eventi che possono essere 
 
 ## <a name="test-the-control"></a>Testare il controllo
 
-Poiché il controllo DemoCalculator eredita dalla classe <xref:System.Windows.Forms.UserControl>, è possibile testarne il comportamento con **UserControl Test Container**. Per altre informazioni, vedere [Procedura: Eseguire il test del comportamento in fase di esecuzione di UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
+Poiché il controllo DemoCalculator eredita dalla classe <xref:System.Windows.Forms.UserControl>, è possibile testarne il comportamento con **UserControl Test Container**. Per altre informazioni, vedere [procedura: testare il comportamento in fase di esecuzione di un UserControl](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol).
 
 1. Premere **F5** per compilare ed eseguire il controllo DemoCalculator in **UserControl Test Container**.
 
@@ -291,7 +291,7 @@ Per usare il controllo DemoCalculator in un'applicazione, è necessario inserirl
 
 2. Trascinare il controllo **DemoCalculator** dalla **casella degli strumenti** nel form. Spostare il controllo nell'angolo superiore sinistro del form. Quando il controllo è vicino ai bordi del form, verranno visualizzate le *guide di allineamento*. Le guide di allineamento indicano la distanza della proprietà `Padding` del form e della proprietà `Margin` del controllo. Posizionare il controllo nella posizione indicata dalle guide di allineamento.
 
-   Per altre informazioni, vedere [Procedura dettagliata: Disporre i controlli usando le guide di allineamento](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines).
+   Per ulteriori informazioni, vedere [procedura dettagliata: disposizione di controlli mediante](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)guide di allineamento.
 
 3. Trascinare un controllo `Button` dalla **casella degli strumenti** e rilasciarlo nel form.
 

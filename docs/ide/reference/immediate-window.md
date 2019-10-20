@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995251"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662533"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 
@@ -78,7 +78,7 @@ Entrambe le versioni di questo comando restituiscono il valore della variabile `
 
     La finestra **Controllo immediato** esegue `MyFunction` e visualizza `4`.
 
-Se la funzione o la subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per altre informazioni, vedere [Procedura dettagliata: Debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).
+Se la funzione o la subroutine contiene un punto di interruzione, Visual Studio interrompe l'esecuzione nel punto appropriato. È quindi possibile usare le finestre del debugger per esaminare lo stato del programma. Per ulteriori informazioni, vedere [procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Non è possibile usare la valutazione delle espressioni in fase di progettazione nei tipi di progetto che richiedono l'avvio di un ambiente di esecuzione, tra cui progetti Visual Studio Tools per Office, progetti Web, progetti Smart Device e progetti SQL.
 
@@ -134,6 +134,6 @@ In alcune configurazioni, le notifiche di eccezioni first-chance vengono visuali
 - [Spostarsi nel codice con il Debugger](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
-- [Procedura dettagliata: Debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Procedura dettagliata: debug in fase di progettazione](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Uso delle espressioni regolari in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

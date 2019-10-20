@@ -1,5 +1,5 @@
 ---
-title: C++App Store di analisi statica del codice
+title: C++app di archivio di analisi del codice statico
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ f1_keywords:
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686527"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672715"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
    La soluzione viene compilata e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.
 
-   ![Finestra Analisi codice](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Finestra analisi codice](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice
  Per analizzare un avviso specifico, scegliere il titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare le informazioni dettagliate sul problema. Quando possibile, l'analisi del codice mostra il numero di riga e la logica dell'analisi che ha portato all'avviso.
@@ -73,7 +73,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ## <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice
  Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.
 
- ![Finestra di ricerca e filtro dell'analisi del codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Cercare e filtrare la finestra analisi codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
 ## <a name="Warnings"></a> Avvisi di analisi del codice C++
  L'analisi del codice genera gli avvisi seguenti per il codice C++:
@@ -132,7 +132,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parametro stringa dimensioni non valido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Percorso irraggiungibile stringa dimensioni non valida                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo buffer stringa dimensioni non valido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Stile stringa formato non riconosciuto                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Specifica di dimensione non valida: espressione non analizzabile                              |
@@ -158,7 +158,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                      [C28215](../code-quality/c28215.md)                       |                    Impossibile applicare typefix a un parametro che già dispone di un typefix                    |
 |                      [C28216](../code-quality/c28216.md)                       |        L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.         |
 |                      [C28217](../code-quality/c28217.md)                       |            Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file             |
-|                      [C28218](../code-quality/c28218.md)                       |             Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file              |
+|                      [C28218](../code-quality/c28218.md)                       |             Per il parametro della funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file              |
 |                      [C28219](../code-quality/c28219.md)                       |                 Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  Espressione integer prevista per l'annotazione del parametro nell'annotazione                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        Prevista espressione di tipo String per il parametro nell'annotazione                         |

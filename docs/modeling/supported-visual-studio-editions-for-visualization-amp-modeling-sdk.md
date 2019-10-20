@@ -1,25 +1,25 @@
 ---
-title: Le edizioni di Visual Studio supportate per Visualization and Modeling SDK
+title: Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fdfe698096da53abf28aa583c816d9238810333
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003425"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609337"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
 
-Di seguito sono riportati gli elenchi delle versioni di Visual Studio che sono supportate con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e distribuzione. Per altre informazioni su queste edizioni, vedere Microsoft Visual Studio [Centro per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=75628).
+Di seguito sono elencati gli elenchi delle edizioni di Visual Studio supportate con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] negli ambienti di creazione e distribuzione. Per ulteriori informazioni su queste edizioni, vedere il [centro per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=75628)Microsoft Visual Studio.
 
 ## <a name="authoring-edition"></a>Edizione per lo sviluppo
 
@@ -41,13 +41,13 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 - Visual Studio Professional
 
-- Visual Studio Shell (modalità integrata) pacchetto ridistribuibile
+- Visual Studio Shell (modalità integrata) Redistributable Package Redistributable Package
 
 - Pacchetto ridistribuibile Visual Studio Shell (modalità isolata)
 
 > [!NOTE]
-> Per rendere un linguaggio DSL può essere eseguita su un prodotto Shell, è necessario impostare il **edizione supportata di Visual Studio** campo nel manifesto dell'estensione. Per altre informazioni, vedere [distribuzione di soluzioni Domain-Specific Language](../modeling/deploying-domain-specific-language-solutions.md).
+> Per consentire l'esecuzione di un linguaggio DSL in un prodotto shell, è necessario impostare il campo **supported vs Edition** nel manifesto dell'estensione. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

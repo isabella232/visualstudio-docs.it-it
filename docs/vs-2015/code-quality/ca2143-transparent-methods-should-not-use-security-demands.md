@@ -1,5 +1,5 @@
 ---
-title: 'CA2143: I metodi Transparent non devono utilizzare SecurityDemand | Microsoft Docs'
+title: 'CA2143: i metodi Transparent non devono usare richieste di sicurezza | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2143
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5f9983f832c8793140f79e9b835e26e44fae1927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcfce9a80d02e525212d3f59173df4a7e8fbe968
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142684"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662696"
 ---
-# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: I metodi Transparent non devono usare SecurityDemand
+# <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: I metodi Transparent non devono utilizzare SecurityDemand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "68142684"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo trasparente o un metodo è contrassegnato in modo dichiarativo con un <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` richiesta o il metodo chiama il <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> (metodo).
+ Un metodo o un tipo tranparent è contrassegnato in modo dichiarativo con un <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> `.Demand` richiesta o il metodo chiama il metodo <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il codice trasparente per la sicurezza non deve essere responsabile della verifica della sicurezza di un'operazione, pertanto non deve richiedere autorizzazioni. Il codice trasparente per la sicurezza deve usare richieste complete per prendere decisioni relative alla sicurezza e il codice critico per la sicurezza non deve basarsi sul codice trasparente per l'esecuzione della richiesta completa. Invece, qualsiasi codice che esegue controlli di sicurezza, ad esempio richieste di sicurezza, deve essere richiamabile da codice trasparente.
+ Il codice trasparente per la sicurezza non deve essere responsabile della verifica della sicurezza di un'operazione, pertanto non deve richiedere autorizzazioni. Il codice trasparente per la sicurezza deve usare richieste complete per prendere decisioni relative alla sicurezza e il codice critico per la sicurezza non deve basarsi sul codice trasparente per l'esecuzione della richiesta completa. Il codice che esegue controlli di sicurezza, ad esempio le richieste di sicurezza, deve essere invece critico per la sicurezza.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- In generale, per correggere una violazione di questa regola, contrassegnare il metodo con il <xref:System.Security.SecuritySafeCriticalAttribute> attributo. È anche possibile rimuovere la richiesta.
+ In generale, per correggere una violazione di questa regola, contrassegnare il metodo con l'attributo <xref:System.Security.SecuritySafeCriticalAttribute>. È anche possibile rimuovere la richiesta.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- La regola di file nel codice seguente, perché un metodo trasparente effettua una richiesta di sicurezza dichiarativa.
+ File delle regole nel codice seguente, perché un metodo trasparente esegue una richiesta di sicurezza dichiarativa.
 
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2143.transparentmethodsshouldnotdemand/cs/ca2143 - transparentmethodsshouldnotdemand.cs#1)]
 

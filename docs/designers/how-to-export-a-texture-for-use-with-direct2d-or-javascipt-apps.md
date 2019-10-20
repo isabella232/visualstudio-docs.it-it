@@ -3,19 +3,19 @@ title: Esportare una trama per applicazioni Direct2D e JavaScript
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d163aafa8b00ce1d59b1fc7b597ab5ca535a1ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824619"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635503"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procedura: Esportare una trama da usare con app Direct2D o Javascript
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procedura: esportare una trama da usare con app Direct2D o JavaScript
 
 La pipeline di contenuti immagine può generare trame compatibili con le convenzioni di rendering interne di Direct2D. Le trame di questo genere sono adatte alle app che usano Direct2D e alle app UWP create mediante JavaScript.
 
@@ -35,7 +35,7 @@ Questo documento illustra le attività seguenti:
 
 Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni di rendering interne di Direct2D seguenti:
 
-- Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sui valori alfa premoltiplicati, vedere [Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sul valore alfa premoltiplicato, vedere [Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
 - La trama deve essere specificata in formato *dds*, usando uno dei formati di compressione a blocchi seguenti:
 
@@ -62,6 +62,6 @@ Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni 
 
 5. Configurare la pipeline di contenuti immagine in modo che non generi mipmap. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)**  > **Generale** impostare la proprietà **Genera MIP** su **No**.
 
-6. Fare clic sul pulsante **OK** .
+6. Fare clic sul pulsante **OK**.
 
    Quando si compila il progetto, la pipeline di contenuti immagine converte l'immagine di origine dal formato di lavoro al formato di output specificato, generando anche valori alfa premoltiplicato. Il risultato viene copiato nella directory di output del progetto.

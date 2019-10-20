@@ -1,5 +1,5 @@
 ---
-title: 'CA2200: Rethrow per conservare i dettagli dello stack | Microsoft Docs'
+title: 'CA2200: rigenerazione per mantenere i dettagli dello stack | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - RethrowToPreserveStackDetails
 ms.assetid: 046e1b98-c4dc-4515-874f-9c0de2285621
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ed2dd2884268511ae05ac89c132f73fdf8b2771e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d20407d7cc708ac785e4a792bf8e64768ea58540
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201642"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667381"
 ---
-# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Eseguire il rethrow per mantenere i dettagli dello stack
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Eseguire il rethrow per conservare i dettagli dello stack
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
-|Category|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Viene nuovamente generata un'eccezione e l'eccezione viene specificato in modo esplicito nel `throw` istruzione.
+ Viene generata nuovamente un'eccezione e l'eccezione viene specificata in modo esplicito nell'istruzione `throw`.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una volta che viene generata un'eccezione, parte delle informazioni in essa contenute è l'analisi dello stack. L'analisi dello stack è un elenco della gerarchia di chiamata di metodo che inizia con il metodo che genera l'eccezione e termina con il metodo che intercetta l'eccezione. Se un'eccezione viene generata nuovamente specificando un'eccezione nel `throw` istruzione, l'analisi dello stack viene riavviato in corrispondenza del metodo corrente e l'elenco di chiamate al metodo tra il metodo originale che ha generato l'eccezione e il metodo corrente viene perso. Per mantenere le informazioni di traccia dello stack originale con l'eccezione, usare il `throw` istruzione senza specificare l'eccezione.
+ Una volta generata un'eccezione, parte delle informazioni che contiene è la traccia dello stack. La traccia dello stack è un elenco della gerarchia di chiamata del metodo che inizia con il metodo che genera l'eccezione e termina con il metodo che rileva l'eccezione. Se un'eccezione viene generata di nuovo specificando l'eccezione nell'istruzione `throw`, l'analisi dello stack viene riavviata nel metodo corrente e l'elenco di chiamate al metodo tra il metodo originale che ha generato l'eccezione e il metodo corrente viene perso. Per memorizzare le informazioni originali della traccia dello stack con l'eccezione, utilizzare l'istruzione `throw` senza specificare l'eccezione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, generare nuovamente l'eccezione senza specificare in modo esplicito l'eccezione.

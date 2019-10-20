@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428989"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655934"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Procedura: Creare modelli di elementi a più file
 
@@ -30,13 +30,13 @@ Per i modelli di elementi a più file è necessario specificare i parametri per 
 
 ## <a name="use-the-export-template-wizard"></a>Usare l'Esportazione guidata modelli
 
-È possibile creare un modello di elemento a più file con la stessa procedura usata per un modello di elemento a file singolo. Vedere [Procedura: Creare modelli di elemento](../ide/how-to-create-item-templates.md). Nella pagina **Selezionare l'elemento da esportare** della procedura guidata selezionare il file con file dipendenti, ad esempio un file modulo di Windows Form. La procedura guidata include automaticamente tutti i file dipendenti, ad esempio i file della finestra di progettazione e di risorse, nel modello.
+È possibile creare un modello di elemento a più file con la stessa procedura usata per un modello di elemento a file singolo. Vedere [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md). Nella pagina **Selezionare l'elemento da esportare** della procedura guidata selezionare il file con file dipendenti, ad esempio un file modulo di Windows Form. La procedura guidata include automaticamente tutti i file dipendenti, ad esempio i file della finestra di progettazione e di risorse, nel modello.
 
 ## <a name="manually-create-a-multi-file-item-template"></a>Creare manualmente un modello di elemento a più file
 
 1. Creare il modello di elemento come se si creasse manualmente un modello di elemento a file singolo, ma includere ogni file che costituisce l'elemento a più file.
 
-1. Nel file XML con estensione *vstemplate*, aggiungere un elemento `ProjectItem` per ogni singolo file, quindi aggiungere un attributo `TargetFileName` a questo elemento. Impostare il valore dell'attributo `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Ad esempio:
+1. Nel file XML con estensione *vstemplate*, aggiungere un elemento `ProjectItem` per ogni singolo file, quindi aggiungere un attributo `TargetFileName` a questo elemento. Impostare il valore dell'attributo `TargetFileName` su $fileinputname$.*EstensioneFile*, dove *EstensioneFile* è l'estensione del file da inserire nel modello. Esempio:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

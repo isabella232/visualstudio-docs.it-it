@@ -1,21 +1,21 @@
 ---
-title: 'Procedura: di un frammento XML da uno schema XML'
+title: 'Procedura: generare un frammento XML da XML Schema'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926822"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645374"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: Generare un frammento XML da un XML Schema
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da un XML Schema
 
 L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema Definition Language). Ad esempio, quando si crea un file XML, mentre si è posizionati accanto al nome dell'elemento, è possibile premere **Tab** per popolare l'elemento con i dati XML generati dalle informazioni sullo schema per l'elemento.
 
@@ -88,7 +88,7 @@ Nei passaggi di questa sezione viene illustrato come utilizzare la funzionalità
 
      L'editor aggiunge il tag di inizio `<Contact` e posiziona il cursore dopo il nome dell'elemento.
 
-4. Premere **Tab** per generare dati XML per l' `Contact` elemento in base alle informazioni sullo schema.
+4. Premere **Tab** per generare dati XML per l'elemento `Contact` in base alle informazioni sullo schema.
 
 ## <a name="input"></a>Input
 
@@ -141,7 +141,7 @@ nella procedura dettagliata viene usato il seguente file di schema.
 
 ### <a name="output"></a>Output
 
-Di seguito sono riportati i dati XML generati in base alle informazioni sullo schema associate all'elemento `Contact`. Gli elementi contrassegnati `bold` come designano i campi modificabili nel frammento XML.
+Di seguito sono riportati i dati XML generati in base alle informazioni sullo schema associate all'elemento `Contact`. Gli elementi contrassegnati come `bold` designano campi modificabili nel frammento XML.
 
 ```xml
 <Contact>
@@ -157,4 +157,4 @@ Di seguito sono riportati i dati XML generati in base alle informazioni sullo sc
 ## <a name="see-also"></a>Vedere anche
 
 - [Frammenti XML](../xml-tools/xml-snippets.md)
-- [Procedura: Usare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Procedura: utilizzare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)

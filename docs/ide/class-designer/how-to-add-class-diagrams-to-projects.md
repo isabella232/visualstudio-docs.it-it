@@ -1,22 +1,22 @@
 ---
-title: 'Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)'
+title: 'Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)'
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
-ms.translationtype: HT
+ms.openlocfilehash: 3cd898f2c4d7a84c9526ca9f56ce65a9b706f11d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332756"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647773"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Procedura: Aggiungere diagrammi classi ai progetti
 
@@ -59,7 +59,7 @@ Per aggiungere più diagrammi classi, ripetere questa procedura.
 
 In **Esplora soluzioni** aprire il menu di scelta rapida di un file di classe (clic con il pulsante destro del mouse) e quindi scegliere **Visualizza diagramma classi**.
 
--oppure-
+oppure
 
 In **Visualizzazione classi** aprire il menu di scelta rapida del tipo o dello spazio dei nomi e quindi scegliere **Visualizza diagramma classi**.
 
@@ -77,6 +77,6 @@ Verrà creato un diagramma classi compilato automaticamente.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Creare i tipi usando Progettazione classi](how-to-create-types.md)
+- [Procedura: Creare tipi utilizzando Progettazione classi](how-to-create-types.md)
 - [Procedura: Visualizzare i tipi esistenti](how-to-view-existing-types.md)
 - [Progettazione e visualizzazione di classi e tipi](designing-and-viewing-classes-and-types.md)

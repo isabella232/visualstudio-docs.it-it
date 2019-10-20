@@ -20,26 +20,26 @@ helpviewer_keywords:
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 07c5853b673657c3ce8e90467a13bbac3f430b6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698993"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672981"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile visualizzare i dati agli utenti dell'applicazione mediante l'associazione dati a un Windows Form. Per creare questi controlli con associazione a dati, è possibile trascinare elementi dal **Zdroje dat** finestra in Progettazione Windows Form in Visual Studio. Questo argomento descrive alcune delle più comuni attività, strumenti e le classi coinvolte nella creazione di applicazioni di Windows Form con associazione a dati.
+È possibile visualizzare i dati per gli utenti dell'applicazione associando i dati a Windows Forms. Per creare questi controlli associati a dati, è possibile trascinare gli elementi dalla finestra **origini dati** nel Progettazione Windows Form in Visual Studio. In questo argomento vengono descritte alcune delle attività, degli strumenti e delle classi più comuni per la creazione di applicazioni di Windows Forms con associazione a dati.
 
- ![Operazione di trascinamento Zdroj](../data-tools/media/raddata-data-source-drag-operation.png "raddata Zdroj dat operazione di trascinamento")
+ ![Operazione di trascinamento dell'origine dati](../data-tools/media/raddata-data-source-drag-operation.png "operazione di trascinamento dell'origine dati raddata")
 
- Per informazioni generali su come creare controlli associati a dati in Visual Studio, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Per altre informazioni sul data binding in Windows Form, vedere [Data Binding in Windows Form](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
+ Per informazioni generali su come creare controlli associati a dati in Visual Studio, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Per ulteriori informazioni su data binding in Windows Forms, vedere [Windows Forms Data Binding](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 
 - [Associare controlli Windows Form ai dati](../data-tools/bind-windows-forms-controls-to-data.md)
 
@@ -58,11 +58,11 @@ ms.locfileid: "65698993"
 - [Passare dati da un form all'altro](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource (componente)
- Il componente <xref:System.Windows.Forms.BindingSource> ha due scopi. In primo luogo, fornisce un livello di astrazione quando i controlli nel form di associazione a dati. I controlli nel form sono associati ai <xref:System.Windows.Forms.BindingSource> componente (anziché viene associato direttamente a un'origine dati).
+ Il componente <xref:System.Windows.Forms.BindingSource> ha due scopi. In primo luogo, fornisce un livello di astrazione durante l'associazione dei controlli nel form ai dati. I controlli nel form sono associati al componente <xref:System.Windows.Forms.BindingSource>, anziché essere associati direttamente a un'origine dati.
 
- In secondo luogo, è possibile gestire una raccolta di oggetti. Aggiunta di un tipo per il <xref:System.Windows.Forms.BindingSource> crea un elenco di quel tipo.
+ In secondo luogo, è in grado di gestire una raccolta di oggetti. Se si aggiunge un tipo all'<xref:System.Windows.Forms.BindingSource> viene creato un elenco di tale tipo.
 
- Per altre informazioni sul <xref:System.Windows.Forms.BindingSource> componente, vedere:
+ Per ulteriori informazioni sul componente <xref:System.Windows.Forms.BindingSource>, vedere:
 
 - [Componente BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
@@ -71,10 +71,10 @@ ms.locfileid: "65698993"
 - [Architettura del componente BindingSource](https://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator (controllo)
- Questo componente fornisce un'interfaccia utente per l'esplorazione dei dati visualizzati in un'applicazione Windows. Per altre informazioni, vedere [Controllo BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
+ Questo componente fornisce un'interfaccia utente per spostarsi tra i dati visualizzati da un'applicazione Windows. Per altre informazioni, vedere [Controllo BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView (controllo)
- Per visualizzare e modificare dati tabulari forniti da molti tipi diversi di origini dati, usare il <xref:System.Windows.Forms.DataGridView> controllo. È possibile associare dati a un <xref:System.Windows.Forms.DataGridView> utilizzando il <xref:System.Windows.Forms.DataGridView.DataSource%2A> proprietà. Per altre informazioni, vedere [Cenni preliminari sul controllo DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Per visualizzare e modificare dati tabulari da molti tipi diversi di origini dati, utilizzare il controllo <xref:System.Windows.Forms.DataGridView>. È possibile associare i dati a un <xref:System.Windows.Forms.DataGridView> usando la proprietà <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Per altre informazioni, vedere [Cenni preliminari sul controllo DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
 ## <a name="see-also"></a>Vedere anche
  [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

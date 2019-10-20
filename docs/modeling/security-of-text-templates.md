@@ -4,31 +4,31 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824020"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660082"
 ---
 # <a name="security-of-text-templates"></a>Sicurezza dei modelli di testo
-I modelli di testo presentano i problemi di sicurezza seguenti:
+I modelli di testo presentano i seguenti problemi di sicurezza:
 
-- Modelli di testo sono vulnerabili a operazioni di inserimento di codice arbitrario.
+- I modelli di testo sono vulnerabili agli inserimenti di codice arbitrari.
 
-- Se il meccanismo usato dall'host per trovare un processore di direttiva non è protetto, è possibile eseguire un processore di direttiva dannoso.
+- Se il meccanismo usato dall'host per trovare un processore di direttiva non è sicuro, è possibile eseguire un processore di direttive dannose.
 
-## <a name="arbitrary-code"></a>Esecuzione di codice arbitrario
- Quando si scrive un modello, è possibile inserire il codice all'interno di \<# # > tag. In questo modo arbitraria di codice essere eseguito in un modello di testo.
+## <a name="arbitrary-code"></a>Codice arbitrario
+ Quando si scrive un modello, è possibile inserire qualsiasi codice all'interno dei tag \< # # >. Questo consente l'esecuzione di codice arbitrario dall'interno di un modello di testo.
 
- Assicurarsi di ottenere modelli da fonti attendibili. Assicurarsi che avvisare gli utenti finali dell'applicazione non vengano eseguite modelli che non provengono da origini attendibili.
+ Assicurarsi di ottenere modelli da origini attendibili. Assicurarsi di avvisare gli utenti finali dell'applicazione in modo che non eseguano modelli che non provengono da origini attendibili.
 
-## <a name="malicious-directive-processor"></a>Processore di direttiva dannosi
- Il motore del modello testo interagisce con un host di trasformazione e uno o più processori di direttive per trasformare il testo del modello in un file di output. Per altre informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
+## <a name="malicious-directive-processor"></a>Processore di direttiva dannoso
+ Il motore del modello di testo interagisce con un host di trasformazione e uno o più processori di direttiva per trasformare il testo del modello in un file di output. Per ulteriori informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
 
- Se il meccanismo usato dall'host per trovare un processore di direttiva non è protetto, viene eseguito il rischio di eseguire un processore di direttiva dannoso. Il processore di direttiva dannoso potrebbe fornire codice che viene eseguito in `FullTrust` modalità quando si esegue il modello. Se si crea un host di trasformazione del modello testo personalizzato, è necessario usare un meccanismo protetto, ad esempio il Registro di sistema per il motore individuare i processori di direttiva.
+ Se il meccanismo usato dall'host per trovare un processore di direttiva non è sicuro, viene eseguito il rischio di eseguire un processore di direttive dannose. Il processore di direttiva dannosa potrebbe fornire codice eseguito in modalità `FullTrust` durante l'esecuzione del modello. Se si crea un host di trasformazione del modello di testo personalizzato, è necessario utilizzare un meccanismo protetto, ad esempio il registro di sistema, per individuare i processori di direttiva da parte del motore.

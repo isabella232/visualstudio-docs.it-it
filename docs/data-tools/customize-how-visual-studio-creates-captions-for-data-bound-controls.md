@@ -1,5 +1,5 @@
 ---
-title: Personalizzare le didascalie per controlli con associazione a dati
+title: Personalizzare le didascalie per i controlli associati a dati
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,135 +8,135 @@ helpviewer_keywords:
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 932d50d44fbfaa810225ef90c2f5361bc26d9b72
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567585"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648562"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
-Quando si trascinano elementi dal [finestra Origini dati](add-new-data-sources.md#data-sources-window) in una finestra di progettazione, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono state trovate per essere concatenati tra loro.
+Quando si trascinano elementi dalla [finestra Origini dati](add-new-data-sources.md#data-sources-window) in una finestra di progettazione, si verifica un particolare interesse: i nomi di colonna nelle etichette di didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono concatenate insieme.
 
 ::: moniker range="vs-2017"
 
-È possibile personalizzare il modo in cui vengono create queste etichette impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data** chiave del Registro di sistema.
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** in **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0** Chiave del registro di sistema \Data designer.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-È possibile personalizzare il modo in cui vengono create queste etichette impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data** chiave del Registro di sistema.
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** in **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0** Chiave del registro di sistema \Data designer.
 
 ::: moniker-end
 
 > [!NOTE]
-> Questa chiave del Registro di sistema non esiste fino a quando non si crea.
+> Questa chiave del registro di sistema non esiste fino a quando non viene creata.
 
-I sottotitoli intelligente è controllato dall'espressione regolare immessa nel valore del **SmartCaptionExpression** valore. Aggiunta il **progettazione visiva di dati** chiave del Registro di sistema esegue l'override dell'espressione regolare predefinita che controlla le etichette della didascalia. Per altre informazioni sulle espressioni regolari, vedere [usando le espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+La didascalia intelligente è controllata dall'espressione regolare immessa nel valore del valore **SmartCaptionExpression** . L'aggiunta della chiave del registro di sistema **Data Designer** sostituisce l'espressione regolare predefinita che controlla le etichette delle didascalie. Per altre informazioni sulle espressioni regolari, vedere [uso delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-La tabella seguente descrive i valori del Registro di sistema che controllano le etichette della didascalia.
+La tabella seguente descrive i valori del registro di sistema che controllano le etichette delle didascalie.
 
-|Elemento Registro di sistema|Descrizione|
+|Elemento del registro di sistema|Descrizione|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|L'espressione regolare che è utilizzare in modo che corrispondano ai modelli.|
-|**SmartCaptionReplacement**|Il formato per visualizzare tutti i gruppi di una corrispondenza con il **SmartCaptionExpression**.|
+|**SmartCaptionExpression**|Espressione regolare usata per trovare la corrispondenza con i modelli.|
+|**SmartCaptionReplacement**|Formato per visualizzare i gruppi corrispondenti in **SmartCaptionExpression**.|
 |**SmartCaptionSuffix**|Stringa facoltativa da aggiungere alla fine della didascalia.|
 
-La tabella seguente elenca le impostazioni predefinite interne per questi valori del Registro di sistema.
+Nella tabella seguente sono elencate le impostazioni predefinite interne per questi valori del registro di sistema.
 
-|Elemento Registro di sistema|Valore predefinito|Descrizione|
+|Elemento del registro di sistema|Valore predefinito|Descrizione|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Corrisponde a una lettera minuscola seguita da una lettera maiuscola o un carattere di sottolineatura.|
-|**SmartCaptionReplacement**|**$1 $2**|Il **1 dollaro** rappresenta tutti i caratteri corrispondenti nella prima delle parentesi dell'espressione e il **$2** rappresenta tutti i caratteri parentesi secondo una corrispondenza. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
-|**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, rende il suffisso `Company Name:`|
+|**SmartCaptionExpression**|**(\\\p{Ll})(\\\p{Lu})&#124;_+**|Corrisponde a un carattere minuscolo seguito da un carattere maiuscolo o un carattere di sottolineatura.|
+|**SmartCaptionReplacement**|**$1 $2**|**$1** rappresenta tutti i caratteri corrispondenti nelle prime parentesi dell'espressione e il **$2** rappresenta tutti i caratteri corrispondenti nella seconda parentesi. La sostituzione è la prima corrispondenza, uno spazio e quindi la seconda corrispondenza.|
+|**SmartCaptionSuffix**|**:**|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, il suffisso lo rende `Company Name:`|
 
 > [!CAUTION]
-> Prestare molta attenzione quando si esegue alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si usa l'Editor del Registro di sistema in modo non corretto, si possono causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti utilizzando l'Editor del Registro di sistema in modo non corretto. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
+> Prestare attenzione quando si esegue qualsiasi operazione nell'editor del registro di sistema. Eseguire il backup del registro di sistema prima di modificarlo. Se si utilizza l'editor del registro di sistema in modo errato, è possibile che si verifichino gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che i problemi causati dall'utilizzo errato dell'editor del registro di sistema possano essere risolti. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
 >
-> Per informazioni sul backup, la modifica e il ripristino di registro di sistema, vedere [le informazioni del Registro di sistema di Windows per gli utenti avanzati](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
+> Per informazioni sul backup, la modifica e il ripristino del registro di sistema, vedere [informazioni del registro di sistema di Windows per gli utenti avanzati](https://support.microsoft.com/help/256986/windows-registry-information-for-advanced-users).
 
-## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificare il comportamento di sottotitoli codificato intelligente della finestra Origini dati
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificare il comportamento della didascalia intelligente della finestra Origini dati
 
-1. Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
+1. Aprire una finestra di comando facendo clic su **Start** , quindi su **Esegui**.
 
-2. Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
+2. Digitare `regedit` nella finestra di dialogo **Esegui** , quindi fare clic su **OK**.
 
-3. Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Espandere il  >  HKEY_CURRENT_USER**software**  >  nodo**Microsoft**  > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **15,0** e creare una nuova **chiave** denominata `Data Designers`.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Fare doppio clic il **16.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **16,0** e creare una nuova **chiave** denominata `Data Designers`.
 
 ::: moniker-end
 
-5. Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
+5. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare tre nuovi valori stringa:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. Fare doppio clic il **SmartCaptionExpression** valore, quindi selezionare **Modify**.
+6. Fare clic con il pulsante destro del mouse sul valore **SmartCaptionExpression** e scegliere **modifica**.
 
-7. Immettere l'espressione regolare desidera che il **Zdroje dat** finestra da utilizzare.
+7. Immettere l'espressione regolare che si desidera venga utilizzata dalla finestra **origini dati** .
 
-8. Fare doppio clic il **SmartCaptionReplacement** valore, quindi selezionare **Modify**.
+8. Fare clic con il pulsante destro del mouse sul valore **SmartCaptionReplacement** e scegliere **modifica**.
 
-9. Immettere la sostituzione stringa formattati nel modo desiderato visualizzare i modelli di corrispondenza nell'espressione regolare.
+9. Immettere la stringa di sostituzione formattata nel modo in cui si desidera visualizzare i modelli corrispondenti nell'espressione regolare.
 
-10. Fare doppio clic il **SmartCaptionSuffix** valore, quindi selezionare **Modify**.
+10. Fare clic con il pulsante destro del mouse sul valore **SmartCaptionSuffix** e scegliere **modifica**.
 
-11. Immettere eventuali caratteri che si desidera venga visualizzato alla fine della didascalia.
+11. Immettere i caratteri che si desidera visualizzare alla fine della didascalia.
 
-    La volta successiva che si trascinano elementi dal **Zdroje dat** finestra, le etichette della didascalia vengono create utilizzando i nuovi valori del Registro di sistema specificati.
+    La volta successiva che si trascinano gli elementi dalla finestra **origini dati** , le etichette didascalia vengono create utilizzando i nuovi valori del registro di sistema specificati.
 
-## <a name="turn-off-the-smart-captioning-feature"></a>Disattivare la funzionalità smart i sottotitoli codificata
+## <a name="turn-off-the-smart-captioning-feature"></a>Disattivare la funzionalità di Smart Caption
 
-1. Aprire una finestra di comando facendo **avviare** e quindi **eseguire**.
+1. Aprire una finestra di comando facendo clic su **Start** , quindi su **Esegui**.
 
-2. Tipo di `regedit` nella **eseguire** nella finestra di dialogo e fare clic su **OK**.
+2. Digitare `regedit` nella finestra di dialogo **Esegui** , quindi fare clic su **OK**.
 
-3. Espandere la **HKEY_CURRENT_USER** > **Software** > **Microsoft** > **VisualStudio**nodo.
+3. Espandere il  >  HKEY_CURRENT_USER**software**  >  nodo**Microsoft**  > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
-4. Fare doppio clic il **15.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **15,0** e creare una nuova **chiave** denominata `Data Designers`.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Fare doppio clic il **16.0** nodo e creare un nuovo **chiave** denominato `Data Designers`.
+4. Fare clic con il pulsante destro del mouse sul nodo **16,0** e creare una nuova **chiave** denominata `Data Designers`.
 
 ::: moniker-end
 
-5. Fare doppio clic il **progettazione visiva di dati** nodo e creare tre nuovi valori di stringa:
+5. Fare clic con il pulsante destro del mouse sul nodo **Data Designer** e creare tre nuovi valori stringa:
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. Fare doppio clic il **SmartCaptionExpression** e selezionare **Modify**.
+6. Fare clic con il pulsante destro del mouse sull'elemento **SmartCaptionExpression** e scegliere **modifica**.
 
-7. Immettere `(.*)` per il valore. Ciò corrisponderà alla stringa intera.
+7. Immettere `(.*)` per il valore. Corrisponderà all'intera stringa.
 
-8. Fare doppio clic il **SmartCaptionReplacement** e selezionare **Modify**.
+8. Fare clic con il pulsante destro del mouse sull'elemento **SmartCaptionReplacement** e scegliere **modifica**.
 
-9. Immettere `$1` per il valore. Ciò sostituisce la stringa con il valore corrispondente, ovvero l'intera stringa in modo che rimarrà invariata.
+9. Immettere `$1` per il valore. Questa operazione sostituisce la stringa con il valore corrispondente, ovvero l'intera stringa in modo che rimanga invariata.
 
-    La volta successiva che si trascinano elementi dal **Zdroje dat** finestra, le etichette della didascalia vengono create con sottotitoli in lingua originale non modificate.
+    La volta successiva che si trascinano gli elementi dalla finestra **origini dati** , le etichette didascalia vengono create con didascalie non modificate.
 
 ## <a name="see-also"></a>Vedere anche
 

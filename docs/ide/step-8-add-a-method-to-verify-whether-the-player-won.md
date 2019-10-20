@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d53740d0970aba2c5b0442ded722c648f759f724
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 0c451b2da08fdb0b38487438a47c6285b0380627
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575131"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647460"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto
 È stato creato un gioco divertente, ma serve un elemento aggiuntivo per completare l'opera. Il gioco deve terminare quando il giocatore vince, pertanto è necessario aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.
@@ -40,13 +40,13 @@ ms.locfileid: "72575131"
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]
 
-3. Salvare ed eseguire il programma. Giocare e accoppiare tutte le icone. Quando si vince, il programma visualizza un oggetto **MessageBox** con un messaggio di congratulazioni, come illustrato nell'immagine che segue, quindi chiude il riquadro.
+3. Salvare ed eseguire il programma. Giocare e accoppiare tutte le icone. Quando si vince, il programma visualizza un **MessageBox** di congratulazioni, come illustrato nello screenshot seguente, e quindi chiude la finestra.
 
      ![Matching gioco con MessageBox ](../ide/media/express_tut4step8.png)<br/>
-**Gioco di abbinamenti** con oggetto **MessageBox**
+***Gioco di abbinamenti*** *con* ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 9: Provare altre funzionalità](../ide/step-9-try-other-features.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 9: provare altre funzionalità](../ide/step-9-try-other-features.md)** .
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md).

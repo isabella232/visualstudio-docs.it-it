@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8181b1682f94e8f5d8a6f1b56ded5f1703111e1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 3c1757c687ea48ee1f2770fa320a18da5662f43e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918546"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665317"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Composizione di un test codificato dell'interfaccia utente
 
@@ -26,11 +26,11 @@ Quando si crea un test codificato dell'interfaccia utente in un progetto di test
 
 Quando si crea un test codificato dell'interfaccia utente, il **Generatore di test codificati dell'interfaccia utente** crea una mappa dell'interfaccia utente sottoposta a test, oltre ai metodi di test, ai parametri e alle asserzioni per tutti i test. Crea anche un file di classe per ogni test.
 
-|File|Sommario|Modificabile?|
+|File|Contenuti|Modificabile?|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sezione delle dichiarazioni](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parziale, generata automaticamente)<br /><br /> [Metodi](#UIMapMethods)<br /><br /> [Proprietà](#UIMapProperties)|No|
-|[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Sì|
-|[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Sì|
+|[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parziale)|Yes|
+|[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Metodi](#CodedUITestMethods)<br /><br /> [Proprietà](#CodedUITestProperties)|Yes|
 |[UIMap.uitest](#UIMapuitest)|Mappa XML dell'interfaccia utente per il test.|No|
 
 ### <a name="UIMapDesignerFile"></a> UIMap.Designer.cs

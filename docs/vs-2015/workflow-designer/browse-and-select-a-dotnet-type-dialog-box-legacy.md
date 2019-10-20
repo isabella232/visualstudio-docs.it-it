@@ -1,5 +1,5 @@
 ---
-title: Individuare e selezionare una finestra di dialogo tipo .NET (Legacy) | Microsoft Docs
+title: Finestra di dialogo Cerca e seleziona un tipo .NET (legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,27 +10,27 @@ helpviewer_keywords:
 - Browse and Select a .NET Type dialog box
 ms.assetid: 1e66c9bc-94b2-46e2-bedf-871752e5f917
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d1ba2a1276ba5c752b712c6131048546ca8f69ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5045a62d0a654af968d50e0c309bcf8104b5cc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977465"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668981"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Finestra di dialogo Cerca e seleziona un tipo .NET (legacy)
-Questo argomento viene descritto come usare il **individuare e selezionare un tipo .NET** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Nel **delle proprietà** finestra, quando si selezionano proprietà che accettano un tipo .NET Framework in un assembly di riferimento, un ellissi **[...]**  visualizzata alla fine della casella di testo della proprietà. Facendo clic su di **[...]**  consente di aprire la **Cerca e seleziona un tipo .NET** nella finestra di dialogo. In questa finestra di dialogo, è possibile scegliere un tipo dalla visualizzazione albero degli assembly a cui si fa riferimento. Ad esempio, quando si utilizza la finestra di progettazione di attività, nel **delle proprietà** finestra, fare clic sul **una classe Base** puntini di sospensione **[...]**  per selezionare un'altra classe base per un'attività dall'albero assembly a cui viene fatto riferimento.  
-  
- La tabella seguente descrive gli elementi dell'interfaccia utente di **individuare e selezionare un tipo .NET** nella finestra di dialogo.  
-  
-|Elemento dell'interfaccia utente|Descrizione|  
-|----------------|-----------------|  
-|**Nome del tipo:**|Nome del tipo correntemente selezionato.|  
-|**Type**|Nel riquadro sinistro viene visualizzata una visualizzazione struttura degli Assembly a cui si fa riferimento. Nel riquadro di destra vengono visualizzati i tipi disponibili per la selezione dall’Assembly cui si fa riferimento selezionato nel riquadro sinistro.|  
-  
-## <a name="see-also"></a>Vedere anche  
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Cerca e seleziona un tipo .NET** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ Quando si selezionano proprietà che accettano un .NET Framework tipo in un assembly a cui si fa riferimento, nella finestra **Proprietà** vengono visualizzati i puntini di sospensione **[...]** alla fine della casella di testo della proprietà. Fare clic su **[...]** per aprire la finestra di dialogo **Cerca e seleziona un tipo .NET** . In questa finestra di dialogo, è possibile scegliere un tipo dalla visualizzazione albero degli assembly a cui si fa riferimento. Ad esempio, quando si utilizza l'ActivityDesigner, nella finestra **Proprietà** fare clic sui puntini di sospensione **[...]** della **classe** di base per selezionare un'altra classe di base per un'attività nell'albero degli assembly a cui si fa riferimento.
+
+ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Cerca e seleziona un tipo .NET** .
+
+|Elemento dell'interfaccia utente|Descrizione|
+|----------------|-----------------|
+|**Nome tipo:**|Nome del tipo correntemente selezionato.|
+|**Type**|Nel riquadro sinistro viene visualizzata una visualizzazione struttura degli Assembly a cui si fa riferimento. Nel riquadro di destra vengono visualizzati i tipi disponibili per la selezione dall’Assembly cui si fa riferimento selezionato nel riquadro sinistro.|
+
+## <a name="see-also"></a>Vedere anche
  [Uso dell'Activity Designer legacy](../workflow-designer/using-the-legacy-activity-designer.md)

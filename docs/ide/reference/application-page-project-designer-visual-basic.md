@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 032bc54d5e904cf23d3e886c7dfeb38aa3ecfd93
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: a40b35960b1dda30e1151e242380147ac58a77ce
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160069"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651919"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -86,7 +86,7 @@ Consente di specificare il modulo di avvio o il punto di ingresso dell'applicazi
 
 Se l'opzione **Abilita framework applicazione** è selezionata (impostazione predefinita), questo elenco ha come intestazione **Modulo di avvio** e mostra solo moduli, poiché il framework applicazione supporta solo moduli di avvio, non oggetti.
 
-Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per altre informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.
+Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazione **URI di avvio** e il valore predefinito è **Page1.xaml**. L'elenco **URI di avvio** consente di specificare la risorsa interfaccia utente (un elemento XAML) che l'applicazione visualizza all'avvio dell'applicazione. Per ulteriori informazioni, vedere <xref:System.Windows.Application.StartupUri%2A>.
 
 Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.
 

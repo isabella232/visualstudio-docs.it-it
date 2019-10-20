@@ -6,60 +6,60 @@ ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 38840167-c3f8-4cb3-8d15-8af04a0a20a1
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3991d3b741162b4b1993e5359ad427c17f00321a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160174"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651533"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installare i database di esempio di SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Database di esempio sono utili per la sperimentazione con query SQL e LINQ, Data Binding, la modellazione di Entity Framework e così via.  Ogni prodotto di database ha un proprio database di esempio. Northwind e AdventureWorks sono due database di esempio di SQL Server più diffusi.  
-  
- **AdventureWorks** è il database corrente di esempio fornito per i prodotti SQL Server. È possibile scaricarlo come file con estensione mdf dal [AdventureWorks pagina sul sito Codeplex](http://msftdbprodsamples.codeplex.com/). Sono disponibili versioni (LT) regolari e leggere del database qui. Per la maggior parte degli scenari, la versione LT è preferibile perché è meno complessa.  
-  
- **Northwind** è un database di SQL Server relativamente semplice che è stato usato da molti anni. È possibile scaricarlo come file con estensione bak dal [pagina del database Northwind in CodePlex](https://northwinddatabase.codeplex.com/). Per evitare problemi relativi alle autorizzazioni, decomprimere il file in una nuova cartella che non è presente nella cartella dell'utente.  
-  
-#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Per ripristinare un database da un file con estensione bak in Visual Studio  
-  
-1. Quando si esegue il backup di un database Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere l'estensione bak file utilizzabile nuovamente come un file di database, deve essere *ripristinato*. Nel menu principale, selezionare **View** > **Esplora oggetti di SQL Server**. Se non è visualizzata, è necessario installarlo. Passare a **Pannello di controllo** > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015 e scegliere il **modifica** pulsante. Nella finestra del programma di installazione venga visualizzato l'elenco dei componenti installati, selezionare la **Esplora oggetti di SQL Server** casella di controllo e quindi continuare con l'installazione.  
-  
-2. In Esplora oggetti di SQL Server, fare doppio clic su qualsiasi motore di database di SQL Server (ad esempio, database locale) e selezionare**nuova Query**.  
-  
-     ![SQL Server oggetto Explorer nuova Query](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server oggetto Explorer nuova Query")  
-  
-3. È necessario in primo luogo, i nomi logici dei file di database e log all'interno del file con estensione bak. Per ottenerlo, immettere la query nell'Editor di Query SQL e quindi selezionare il colore verde **eseguire** nella parte superiore della finestra. Se necessario in modo da puntare al file con estensione bak, modificare il percorso del file.  
-  
-    ```  
-    RESTORE FILELISTONLY  
-    FROM DISK = 'C:\nw\northwind.bak'  
-    GO  
-    ```  
-  
-     Annotare i nomi logici che vengono visualizzati nella finestra dei risultati.  Per il database Northwind, i due nomi logici sono Northwind e Northwind_log.  
-  
-4. A questo punto eseguire la query per creare il database. Sostituire i percorsi di origine e di destinazione, i nomi di database logico e nomi di file fisici per Northwind come appropriato. Mantenere il file con estensione mdf e ldf delle estensioni di file.  
-  
-    ```  
-    RESTORE DATABASE Northwind  
-    FROM DISK = 'c:\nw\northwind.bak'  
-    WITH MOVE 'Northwind' TO 'c:\nw\northwind.mdf',  
-    MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'  
-    ```  
-  
-5. In Esplora oggetti di SQL Server, fare clic sui **database** nodo, verrà visualizzato il nodo del database Northwind. In caso contrario, quindi fare clic sul database e selezionare **Aggiungi nuovo Database**. Immettere il nome e il percorso del file con estensione mdf che appena creato.  
-  
-6. Il database è ora pronto per l'uso come origine dati in Visual Studio.  
-  
-#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Per ripristinare un database da un file con estensione bak in SQL Server Management Studio  
-  
-1. Scaricare SQL Server Management Studio dal sito di download.  
-  
-2. In SSMS **Esplora oggetti** finestra, fare doppio clic sui **database** nodo, seleziona**Restore Database**e specificare il percorso del file con estensione bak.  
-  
-     ![Ripristina Database di SQL Server Management Studio](../data-tools/media/raddata-ssms-restore-database.png "raddata Ripristina Database di SQL Server Management Studio")
+I database di esempio sono utili per sperimentare query SQL e LINQ, associazione dati, Entity Framework modellazione e così via.  Ogni prodotto di database dispone di propri database di esempio. Northwind e AdventureWorks sono due comuni database di esempio SQL Server.
+
+ **AdventureWorks** è il database di esempio corrente fornito per SQL Server Products. È possibile scaricarlo come file con estensione MDF dalla [pagina AdventureWorks su CodePlex](http://msftdbprodsamples.codeplex.com/). Sono disponibili versioni normali e Lightweight (LT) del database. Per la maggior parte degli scenari, è preferibile la versione LT perché è meno complessa.
+
+ **Northwind** è un database SQL Server relativamente semplice che è stato utilizzato per molti anni. È possibile scaricarlo come file con estensione bak dalla [pagina del database Northwind sul sito CodePlex](https://northwinddatabase.codeplex.com/). Per evitare problemi relativi alle autorizzazioni, decomprimere il file in una nuova cartella che non si trova nella cartella dell'utente.
+
+#### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Per ripristinare un database da un file con estensione bak in Visual Studio
+
+1. Quando si esegue il backup di un database di Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere il file con estensione bak utilizzabile di nuovo come file di database, è necessario *ripristinarlo*. Nel menu principale selezionare **visualizza**  > **Esplora oggetti di SQL Server**. Se non viene visualizzato, potrebbe essere necessario installarlo. Passare a **Pannello di controllo**  > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015, quindi fare clic sul pulsante **Cambia** . Quando viene visualizzato l'elenco dei componenti installati nella finestra del programma di installazione, selezionare la casella di controllo **Esplora oggetti di SQL Server** , quindi continuare l'installazione.
+
+2. In Esplora oggetti di SQL Server fare clic con il pulsante destro del mouse su un motore di database SQL Server (ad esempio, local DB) e scegliere**nuova query**.
+
+     ![Esplora oggetti di SQL Server nuova query](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata Esplora oggetti di SQL Server nuova query")
+
+3. In primo luogo, sono necessari i nomi logici del database e i file di log all'interno del file con estensione bak. Per ottenerlo, immettere la query nell'editor di query SQL e quindi selezionare il pulsante verde **Esegui** nella parte superiore della finestra. Modificare il percorso del file, se necessario, per puntare al file con estensione bak.
+
+    ```
+    RESTORE FILELISTONLY
+    FROM DISK = 'C:\nw\northwind.bak'
+    GO
+    ```
+
+     Annotare i nomi logici visualizzati nella finestra risultati.  Per il database Northwind, i due nomi logici sono Northwind e Northwind_log.
+
+4. A questo punto, eseguire la query per creare il database. Sostituire i percorsi di origine e di destinazione, i nomi di database logici e i nomi di file fisici per Northwind nel modo appropriato. Mantieni le estensioni di file con estensione MDF e ldf.
+
+    ```
+    RESTORE DATABASE Northwind
+    FROM DISK = 'c:\nw\northwind.bak'
+    WITH MOVE 'Northwind' TO 'c:\nw\northwind.mdf',
+    MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'
+    ```
+
+5. In Esplora oggetti di SQL Server fare clic con il pulsante destro del mouse sul nodo **database** . verrà visualizzato il nodo database Northwind. In caso contrario, fare clic con il pulsante destro del mouse su database e scegliere **Aggiungi nuovo database**. Immettere il nome e il percorso del file con estensione MDF appena creato.
+
+6. Il database è ora pronto per essere utilizzato come origine dati in Visual Studio.
+
+#### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Per ripristinare un database da un file con estensione bak in SQL Server Management Studio
+
+1. Scaricare SQL Server Management Studio dal sito di download.
+
+2. Nella finestra di **Esplora oggetti** di SSMS fare clic con il pulsante destro del mouse sul nodo **database** , scegliere**Ripristina database**e specificare il percorso del file con estensione bak.
+
+     ![Database di ripristino di SSMS](../data-tools/media/raddata-ssms-restore-database.png "Database di ripristino raddata SSMS")

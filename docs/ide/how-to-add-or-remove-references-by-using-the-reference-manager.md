@@ -16,17 +16,17 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787884"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654816"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -72,7 +72,7 @@ La scheda **Assembly** è costituita da due sottoschede:
 
    Per i progetti che non usano .NET Core o la piattaforma UWP (Universal Windows Platform) come destinazione, la scheda **Framework** enumera gli assembly del framework di destinazione. L'utente dovrà aggiungere i riferimenti necessari all'applicazione.
 
-   Per impostazione predefinita, i progetti di Windows universale contengono riferimenti a tutti gli assembly nel framework di destinazione. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero framework. Pertanto nella scheda **Framework** non vengono enumerati gli assembly del framework e viene invece visualizzato il messaggio seguente: "Si è già fatto riferimento a tutti gli assembly del framework. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework."
+   Per impostazione predefinita, i progetti di Windows universale contengono riferimenti a tutti gli assembly nel framework di destinazione. Nei progetti gestiti, un nodo di sola lettura nella cartella **Riferimenti** di **Esplora soluzioni** indica il riferimento all'intero framework. Di conseguenza, la scheda **Framework** non enumera alcuno degli assembly dal Framework e visualizza invece il messaggio seguente: "si è già fatto riferimento a tutti gli assembly del Framework. Utilizzare Visualizzatore oggetti per esplorare i riferimenti nel framework."
 
 2. In **Estensioni** sono elencati tutti gli assembly che i fornitori esterni di componenti e di controlli hanno sviluppato per estendere il framework di destinazione. A seconda dello scopo dell'applicazione utente, potrebbero essere necessari questi assembly.
 
@@ -133,7 +133,7 @@ Evitare di aggiungere riferimenti a file agli output di altri progetti della ste
 
   Se la chiave del Registro di sistema viene creata nel nodo `HKEY_LOCAL_MACHINE`, tutti gli utenti possono visualizzare gli assembly nel percorso specificato nella finestra di dialogo **Aggiungi riferimento**. Se la chiave del Registro di sistema viene creata nel nodo `HKEY_CURRENT_USER`, ha effetto solo sull'impostazione dell'utente corrente.
 
-  Aprire di nuovo la finestra di dialogo **Aggiungi riferimento**. Gli assembly dovrebbero essere visibili nella scheda **.NET**. In caso contrario, assicurarsi che gli assembly si trovino nella directory *AssemblyLocation* specificata, riavviare Visual Studio e riprovare.
+  Aprire di nuovo la finestra di dialogo **Aggiungi riferimento**. Gli assembly verranno visualizzati nella scheda **.NET** . In caso contrario, assicurarsi che gli assembly si trovino nella directory *PercorsoAssembly* specificata, riavviare Visual Studio e riprovare.
 
 ## <a name="projects-tab"></a>Scheda Progetti
 
@@ -151,7 +151,7 @@ Aggiungere un riferimento a un progetto condiviso nella scheda **Progetti condiv
 ## <a name="universal-windows-tab"></a>Scheda Windows universale
 
 La scheda **Windows universale** contiene tutti gli SDK specifici per le piattaforme in cui vengono eseguiti i sistemi operativi Windows.
-Questa scheda ha due sottogruppi: **Base** ed **Estensioni**.
+Questa scheda contiene due sottogruppi: **Core** ed **Extensions**.
 
 ### <a name="core-subgroup"></a>Sottogruppo di base
 

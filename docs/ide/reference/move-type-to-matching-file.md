@@ -3,20 +3,20 @@ title: Refactoring con spostamento di un tipo in un file corrispondente
 description: Spostare un tipo in un file separato con lo stesso nome. Fare clic con il pulsante destro del mouse sul tipo, scegliere Azioni rapide e refactoring e quindi Sposta il tipo in <TypeName>.cs.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3021e08d3cfb601a67f51e53c97d2eba60c397a5
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483659"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666484"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refactoring con spostamento di un tipo in un file corrispondente
 
@@ -30,11 +30,11 @@ Questo refactoring si applica a:
 
 **Quando:** sono presenti più classi, struct, interfacce e così via nello stesso file e si vuole separarli.
 
-**Perché?:** l'inserimento di più tipi nello stesso file può rendere difficile l'individuazione di questi tipi. Con lo spostamento dei tipi in file con lo stesso nome, il codice diventa più leggibile e la navigazione più semplice.
+**Perché:** l'inserimento di più tipi nello stesso file può rendere difficile l'individuazione di questi tipi. Con lo spostamento dei tipi in file con lo stesso nome, il codice diventa più leggibile e la navigazione più semplice.
 
 ## <a name="how-to"></a>Procedura
 
-1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Ad esempio:
+1. Posizionare il cursore all'interno del nome del tipo in cui è definito. Esempio:
 
    ```csharp
    class Person

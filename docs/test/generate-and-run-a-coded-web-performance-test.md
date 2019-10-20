@@ -11,15 +11,15 @@ ms.assetid: 169e48f9-52fd-4d0b-83d9-54913bde506b
 dev_langs:
 - CSharp
 - VB
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 082412d6773bbe69306f3cf95d10716f5675f3bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918401"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664932"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
@@ -85,14 +85,14 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 ## <a name="qa"></a>Domande e risposte
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>D: È possibile eseguire più test contemporaneamente?
-**R:** Sì, usare il menu di scelta rapida in **Esplora soluzioni**.
+**R:** Sì, fare clic con il pulsante destro del mouse sul menu di scelta rapida in **Esplora soluzioni**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>D: È necessario aggiungere un'origine dati prima o dopo avere generato un test codificato?
 **R:** È più semplice aggiungere un'[origine dati](../test/add-a-data-source-to-a-web-performance-test.md) prima di generare il test codificato, perché il codice verrà generato automaticamente.
 
 Quando si esegue un test codificato con un 'origine dati, può venire visualizzato il messaggio di errore seguente:
 
-**Impossibile eseguire il test \<Nome test> sull'agente \<Nome computer>: Riferimento oggetto non impostato a un'istanza di un oggetto.**
+**Impossibile eseguire il test \<Nome test> sull'agente \<Nome computer>: Riferimento oggetto non impostato su un'istanza di un oggetto.**
 
 Questo errore può verificarsi perché per la classe di test è definito un oggetto DataSourceAttribute senza un oggetto DataBindingAttribute corrispondente. Per risolvere questo errore, aggiungere un oggetto DataBindingAttribute appropriato, eliminarlo oppure impostarlo come commento nel codice.
 

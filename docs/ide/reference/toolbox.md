@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747689"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651119"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
@@ -68,7 +68,7 @@ Per impostazione predefinita, la **casella degli strumenti** viene compressa lun
 Negli argomenti seguenti sono disponibili altre informazioni su alcune delle schede disponibili per la **casella degli strumenti**:
 
 - [Casella degli strumenti, scheda Dati](../../ide/reference/toolbox-data-tab.md)
-- [Casella degli strumenti, scheda Componenti](../../ide/reference/toolbox-components-tab.md)
+- [Casella degli strumenti, Scheda Componenti](../../ide/reference/toolbox-components-tab.md)
 - [Casella degli strumenti, scheda HTML](../../ide/reference/toolbox-html-tab.md)
 
 ## <a name="see-also"></a>Vedere anche

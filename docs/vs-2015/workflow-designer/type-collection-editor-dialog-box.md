@@ -8,42 +8,42 @@ f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: be2e6bde6c25c1bb515ec3f017f14506c03a3a71
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dae99166b8b811df75f2e2777d176e6778b60c7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697062"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670153"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Finestra di dialogo Editor raccolta di tipi
-Il **Editor raccolta di tipi** finestra di dialogo consente di aggiungere tipi noti per il **inviare** e **ricezione** attività. Questa finestra di dialogo viene usato anche per aggiungere argomenti tipo generico per il **InvokeMethod** attività. Quando viene utilizzato per il **inviare** e **ricezione** attività per aggiungere tipi noti, il **Editor raccolta di tipi** nella finestra di dialogo richiede tali aggiunte siano univoche. Se viene aggiunto un tipo duplicato e viene eseguito il commit della modifica facendo **OK**, viene restituito un messaggio di errore. Quando viene utilizzato per il **InvokeMethod** attività per aggiungere argomenti tipo generico, il **Editor raccolta di tipi** nella finestra di dialogo consente l'aggiunta di tipi duplicati.  
-  
+La finestra di dialogo **Editor raccolta di tipi** viene utilizzata per aggiungere tipi noti alle attività di **trasmissione** e **ricezione** . Questa finestra di dialogo viene usata anche per aggiungere argomenti di tipo generico all'attività **InvokeMethod** . Se utilizzata per le attività **Send** e **Receive** per aggiungere tipi noti, nella finestra di dialogo Editor della **raccolta di tipi** è necessario che le aggiunte dei tipi siano univoche. Se viene aggiunto un tipo duplicato e viene eseguito il commit della modifica facendo clic su **OK**, viene restituito un messaggio di errore. Quando viene usato per l'attività **InvokeMethod** per aggiungere argomenti di tipo generico, la finestra di dialogo **Editor raccolta** di tipi consente l'aggiunta di tipi duplicati.
+
 > [!NOTE]
-> [!INCLUDE[crabout](../includes/crabout-md.md)] i tipi noti, vedere [Data Contract Known Types](https://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
-  
- La tabella seguente descrive gli elementi dell'interfaccia utente di **raccolta di tipi** nella finestra di dialogo.  
-  
-|Elemento dell'interfaccia utente|Descrizione|  
-|----------------|-----------------|  
-|**Elenco dei tipi**|Un elenco dei tipi che sono stati aggiunti o rimossi.|  
-  
-## <a name="to-bring-up-the-type-collection-editor"></a>Per visualizzare Editor raccolta di tipi  
-  
-#### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Per visualizzare Editor raccolta di tipi per le attività Send e Receive  
-  
-1. Selezionare il **inviare** oppure **ricezione** attività nella visualizzazione progettazione.  
-  
-2. Premere **F4** per visualizzare i **proprietà** finestra.  
-  
-3. Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **KnownTypes** proprietà.  
-  
-#### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Per visualizzare Editor raccolta di tipi per l'attività InvokeMethod  
-  
-1. Selezionare il **InvokeMethod** attività nella visualizzazione progettazione.  
-  
-2. Premere **F4** per visualizzare i **proprietà** finestra.  
-  
-3. Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **GenericTypeArguments** proprietà.
+> [!INCLUDE[crabout](../includes/crabout-md.md)] i tipi noti, vedere [Data Contract Known Types](https://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).
+
+ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **raccolta tipi** .
+
+|Elemento dell'interfaccia utente|Descrizione|
+|----------------|-----------------|
+|**Elenco dei tipi**|Un elenco dei tipi che sono stati aggiunti o rimossi.|
+
+## <a name="to-bring-up-the-type-collection-editor"></a>Per visualizzare Editor raccolta di tipi
+
+#### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Per visualizzare Editor raccolta di tipi per le attività Send e Receive
+
+1. Selezionare l'attività **trasmissione** o **ricezione** nella visualizzazione progettazione.
+
+2. Premere **F4** per visualizzare la finestra **Proprietà** .
+
+3. Nella finestra **Proprietà** fare clic sul pulsante con i puntini di sospensione accanto alla proprietà **knownTypes** .
+
+#### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Per visualizzare Editor raccolta di tipi per l'attività InvokeMethod
+
+1. Selezionare l'attività **InvokeMethod** nella visualizzazione progettazione.
+
+2. Premere **F4** per visualizzare la finestra **Proprietà** .
+
+3. Nella finestra **Proprietà** fare clic sul pulsante con i puntini di sospensione accanto alla proprietà **genericTypeArguments** .

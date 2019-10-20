@@ -3,17 +3,17 @@ title: Considerazioni sulla sicurezza durante l'utilizzo di dati XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926766"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604592"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considerazioni sulla sicurezza quando si utilizzano dati XML
 
@@ -29,7 +29,7 @@ L'editor XML è basato sull'editor di testo di Visual Studio. e si basa sulle cl
 
 - Gli schemi che puntano a un percorso esterno nel file di catalogo vengono scaricati automaticamente al primo caricamento dell'editor XML. La classe <xref:System.Xml.Schema.XmlSchemaSet> è usata per compilare gli schemi. Il file di catalogo fornito con l'editor XML non include collegamenti ad alcuno schema esterno. L'utente deve aggiungere in modo esplicito un riferimento allo schema esterno prima che l'editor XML scarichi il file di schema. Il download HTTP può essere disabilitato tramite la pagina **Opzioni strumenti varie** per l'editor XML.
 
-- L'editor XML utilizza le <xref:System.Net> classi per scaricare gli schemi
+- L'editor XML utilizza le classi <xref:System.Net> per scaricare gli schemi
 
 ## <a name="xslt-debugger"></a>debugger XSLT
 

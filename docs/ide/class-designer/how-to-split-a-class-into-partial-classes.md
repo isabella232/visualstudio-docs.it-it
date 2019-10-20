@@ -1,25 +1,25 @@
 ---
-title: 'Procedura: Dividere una classe in classi parziali (Progettazione classi)'
+title: 'Procedura: dividere una classe in classi parziali (Progettazione classi)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
-ms.translationtype: HT
+ms.openlocfilehash: 42d2cf5c0fa5c08c51ebfbc94d9a03221df46788
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615404"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647697"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Procedura: Dividere una classe in classi parziali in Progettazione classi
 
@@ -27,7 +27,7 @@ ms.locfileid: "65615404"
 
 Le dichiarazioni possono essere in uno o più file di origine. Tutte le dichiarazioni devono trovarsi nello stesso assembly e nello stesso spazio dei nomi.
 
-Le classi parziali sono utili in varie situazioni. In un progetto di grandi dimensioni, ad esempio, la separazione di una classe in più file consente a più programmatori di lavorare sul progetto contemporaneamente. Quando si lavora con il codice generato da Visual Studio, è possibile modificare la classe senza dover ricreare il file di origine. (Il codice wrapper per Windows Form e per servizi web è un esempio di codice generato da Visual Studio.) È possibile creare codice che usa classi generate automaticamente senza dover modificare il file creato da Visual Studio.
+Le classi parziali sono utili in varie situazioni. In un progetto di grandi dimensioni, ad esempio, la separazione di una classe in più file consente a più programmatori di lavorare sul progetto contemporaneamente. Quando si lavora con il codice generato da Visual Studio, è possibile modificare la classe senza dover ricreare il file di origine. Esempi di codice generato da Visual Studio includono Windows Forms e il codice wrapper del servizio Web. È quindi possibile creare codice che usa le classi generate automaticamente senza dover modificare il file creato da Visual Studio.
 
 Esistono due tipi di metodi parziali, chiamati dichiarazione e implementazione in C# e Visual Basic.
 

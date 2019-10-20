@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3c9837f1babf3cb37d99eb1bb74c2c35c05eff9
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 101b678606febd7cc2a7e2f9cee0c8c281289c9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870324"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665092"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -22,7 +22,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Componente Test codificato dell'interfaccia utente
@@ -64,7 +64,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasti di scelta rapida: **CTRL**+**R**,**T**).
+5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL**+**R**,**T**).
 
     Nella finestra **Esplora test** viene visualizzato il risultato del test che mostra se il test è stato superato o meno. Per aprire la finestra Esplora test, scegliere **Finestre** dal menu **Test** e quindi **Esplora test**.
 
@@ -92,7 +92,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
    }
    ```
 
-9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasti di scelta rapida: **CTRL**+**R**,**T**).
+9. Verificare che il test venga eseguito tramite il metodo `ValidateSum()`. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasto di scelta rapida: **CTRL**+**R**,**T**).
 
      A questo punto, tutti i valori dei parametri sono definiti nei relativi metodi come costanti. Ora verrà creato un set di dati in modo che il test sia basato sui dati.
 
@@ -106,7 +106,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
     |Num1|Num2|Sum|
     |-|-|-|
-    |3|4|7|
+    |3\.|4|7|
     |5|6|11|
     |6|8|14|
 
@@ -203,7 +203,7 @@ Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usan
 
 ### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>Quali sono gli attributi di origine dati per altri tipi di origine dati, ad esempio SQL Express o XML?
 
-**R:** È possibile usare le stringhe di origine dati di esempio nella tabella seguente copiandole nel codice e apportando le personalizzazioni necessarie.
+**R:** È possibile usare le stringhe di origine dati di esempio nella tabella seguente copiando le stringhe nel codice e apportando le personalizzazioni necessarie.
 
 **Tipi di origini dati e attributi**
 
@@ -229,7 +229,7 @@ Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usan
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>D: Perché non è possibile modificare il codice nel file UIMap.Designer?
 
-**R:** Le modifiche del codice apportate nel file *UIMapDesigner.cs* vengono sovrascritte ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente, ovvero *CodedUITest1.cs*.
+**R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente, ovvero *CodedUITest1.cs*.
 
 Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file *UIMapDesigner.cs*. È necessario rimuovere il riferimento al metodo originale nel file Coded *UITest.cs* e sostituirlo con il nome del metodo rinominato.
 

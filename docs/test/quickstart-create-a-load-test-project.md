@@ -4,15 +4,15 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784748"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646675"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
@@ -82,11 +82,11 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
    ![Prima pagina della Creazione guidata test di carico](media/load-test-wizard-page-1.png)
 
-1. Scegliere **Avanti** per eseguire la procedura guidata fino a raggiungere la pagina **Aggiungere i test a uno scenario di test di carico e modificare la combinazione di test**. Scegliere il pulsante **Aggiungi**.
+1. Scegliere **Avanti** per eseguire la procedura guidata fino a raggiungere la pagina **Aggiungere i test a uno scenario di test di carico e modificare la combinazione di test**. Scegliere il pulsante **Aggiungi** .
 
    Si apre la finestra di dialogo **Aggiungi test**.
 
-1. Sotto **Test disponibili** selezionare **WebTest1** e quindi scegliere la freccia destra per spostarlo nella finestra **Test selezionati**. Fare clic sul pulsante **OK** .
+1. Sotto **Test disponibili** selezionare **WebTest1** e quindi scegliere la freccia destra per spostarlo nella finestra **Test selezionati**. Fare clic sul pulsante **OK**.
 
    ![Finestra di dialogo Aggiungi test](media/add-tests-dialog-box.png)
 

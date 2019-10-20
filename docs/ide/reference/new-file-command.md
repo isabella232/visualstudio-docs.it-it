@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 65ea2f4bc06ee1db5042219d1dd3b4bb38f0a80e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919123"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666464"
 ---
 # <a name="new-file-command"></a>Comando Nuovo file
 Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File esterni.
@@ -29,14 +29,14 @@ Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File est
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `filename`
 
-facoltativo. Nome del file. Se non viene specificato alcun nome, viene indicato un nome predefinito. Se non viene elencato alcun nome di modello, viene creato un file di testo.
+Parametro facoltativo. Nome del file. Se non viene specificato alcun nome, viene indicato un nome predefinito. Se non viene elencato alcun nome di modello, viene creato un file di testo.
 
 ## <a name="switches"></a>Opzioni
 /t:`templatename`\
-facoltativo. Specifica il tipo di file da creare.
+Parametro facoltativo. Specifica il tipo di file da creare.
 
 La sintassi dell'argomento /t:`templatename` riflette le informazioni riportate nella finestra di dialogo Nuovo file. Immettere il nome categoria seguito da una barra rovesciata (`\`) e il nome del modello e racchiudere l'intera stringa tra virgolette.
 
@@ -49,7 +49,7 @@ Ad esempio, per creare un nuovo file di origine [!INCLUDE[vcprvc](../../code-qua
 L'esempio precedente indica che il modello di file di C++ è incluso nella categoria Visual C++ nella finestra di dialogo **Nuovo file**.
 
 /e:`editorname`\
-facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+Parametro facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
 La sintassi dell'argomento /e:`editorname` usa i nomi degli editor così come visualizzati nella finestra di dialogo Apri con, racchiusi tra virgolette.
 
@@ -72,4 +72,4 @@ In questo esempio viene creata una nuova pagina Web "test1.htm" e la pagina vien
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Finestra di controllo immediato](../../ide/reference/immediate-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

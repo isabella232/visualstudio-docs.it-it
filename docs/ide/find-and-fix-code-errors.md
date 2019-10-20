@@ -4,17 +4,17 @@ description: Questo articolo descrive alcune modalità di base in cui Visual Stu
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331c346e7322543bef0814818a776c705b773846
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000185"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650860"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -40,7 +40,7 @@ Se la compilazione viene completata correttamente, nella finestra **Output** ven
 
 ## <a name="review-the-error-list"></a>Rivedere l'elenco errori
 
-A meno che non siano state apportate modifiche al codice compilato correttamente in precedenza, è probabile si verifichi un errore. Se non si ha familiarità con la codifica, gli errori potrebbero essere numerosi. Gli errori possono essere talvolta elementari, ad esempio un semplice errore di sintassi o un nome di variabile non corretto, oppure difficili da comprendere, in cui l'unico aiuto è un codice non facile da decifrare. Per una visualizzazione più chiara dei problemi, passare alla parte inferiore della finestra di compilazione **Output** e scegliere la scheda **Elenco errori**. Si apre una visualizzazione più organizzata degli errori e degli avvisi relativi al progetto in cui vengono fornite anche alcune opzioni aggiuntive.
+A meno che non siano state apportate modifiche al codice compilato correttamente in precedenza, è probabile si verifichi un errore. Se non si ha familiarità con la codifica, gli errori potrebbero essere numerosi. Gli errori possono essere talvolta elementari, ad esempio un semplice errore di sintassi o un nome di variabile non corretto, oppure difficili da comprendere, in cui l'unico aiuto è un codice non facile da decifrare. Per una visualizzazione più chiara dei problemi, passare alla parte inferiore della finestra di **output** di compilazione, quindi fare clic sulla scheda **Elenco errori** . In questo modo si ottiene una visualizzazione più organizzata degli errori e degli avvisi per il progetto e vengono fornite anche alcune opzioni aggiuntive.
 
 ![Output ed elenco di errori di Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 

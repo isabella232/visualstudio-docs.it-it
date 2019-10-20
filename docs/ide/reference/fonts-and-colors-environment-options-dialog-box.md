@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605424"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667025"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
@@ -86,7 +86,7 @@ Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenc
 
 Elenca tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.
 
-**Dimensione**
+**Size**
 
 Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.
 
@@ -99,7 +99,7 @@ Elenca gli elementi per cui è possibile modificare il colore di primo piano e s
 
 Alcuni degli elementi visualizzati includono:
 
-|Elemento visualizzato|DESCRIZIONE|
+|Elemento visualizzato|Descrizione|
 |------------------|-----------------|
 |**Testo normale**|Testo nell'editor.|
 |**Testo selezionato**|Testo incluso nella selezione corrente quando l'editor ha lo stato attivo.|
@@ -132,7 +132,7 @@ Alcuni degli elementi visualizzati includono:
 |**Area non interessata dal code coverage**|Codice non interessato da un unit test.|
 |**Area parzialmente interessata dal code coverage**|Codice interessato parzialmente da un unit test.|
 |**Area interessata dal code coverage**|Codice interessato totalmente da un unit test.|
-|**Commento CSS**|Commento in CSS (Cascading Style Sheets). Ad esempio:<br /><br /> /* commento \*/|
+|**Commento CSS**|Commento in CSS (Cascading Style Sheets). Esempio:<br /><br /> /* commento \*/|
 |**Parola chiave CSS**|Parole chiave nel foglio di stile CSS.|
 |**Nome proprietà CSS**|Nome di una proprietà, ad esempio Background.|
 |**Valore proprietà CSS**|Valore assegnato a una proprietà, ad esempio blue.|
@@ -168,7 +168,7 @@ Alcuni degli elementi visualizzati includono:
 |**Indicatore DML SQL**|Si applica all'editor Transact-SQL. Per impostazione predefinita, le istruzioni DML in questo editor sono contrassegnate con un rettangolo blu.|
 |**Codice non aggiornato**|Codice obsoleto in attesa di aggiornamento. In alcuni casi la funzionalità Modifica e continuazione non consente di applicare immediatamente modifiche al codice, ma le applicherà in seguito mentre si continua con il debug. Ciò si verifica quando si modifica una funzione che deve chiamare la funzione in esecuzione o si aggiungono più di 64 byte di nuove variabili a una funzione in attesa nello stack di chiamate. In questo caso, il debugger viene visualizzata una finestra di dialogo "Avviso di codice non aggiornato" e il codice obsoleto continua a essere eseguito fino a quando la funzione in questione non termina e viene chiamata nuovamente. Questo è il momento in cui Modifica e continuazione applica le modifiche.|
 |**String**|Valori letterali stringa.|
-|**Stringa (C# @ Verbatim)**|Valori letterali stringa in C# che vengono interpretati come verbatim. Ad esempio:<br /><br /> @"x"|
+|**Stringa (C# @ Verbatim)**|Valori letterali stringa in C# che vengono interpretati come verbatim. Esempio:<br /><br /> @"x"|
 |**Errore di sintassi**|Errori di analisi.|
 |**Collegamento Elenco attività**|Se a una riga viene aggiunto un collegamento **Elenco attività** e il margine indicatore è disabilitato, la riga verrà evidenziata.|
 |**Punto di analisi (disabilitato)**|Non usato.|
@@ -254,4 +254,4 @@ Visualizza un esempio dello stile, della dimensione e della combinazione colori 
 ## <a name="see-also"></a>Vedere anche
 
 - [Finestra di dialogo Opzioni](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Procedura: Modificare i tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

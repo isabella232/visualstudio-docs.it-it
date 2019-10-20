@@ -1,5 +1,5 @@
 ---
-title: 'CA1000: Non dichiarare membri statici su tipi generici | Microsoft Docs'
+title: 'CA1000: non dichiarare membri statici su tipi generici | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1000
 ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 606ae90f92e7df4bf8ca513c7a58d36532562f87
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ef6c98c2808e639570b51d485df90bbdab72c43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676537"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646358"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Non dichiarare membri statici su tipi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "65676537"
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
 |CheckId|CA1000|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo generico visibile esternamente contiene un `static` (`Shared` in Visual Basic) membri.
+ Un tipo generico visibile esternamente contiene un membro `static` (`Shared` nel Visual Basic).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando un `static` membro di un tipo generico viene chiamato, l'argomento tipo deve essere specificato per il tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. La sintassi per specificare l'argomento di tipo in questi due casi è diversa e può generare confusione, come illustrano le chiamate seguenti:
+ Quando viene chiamato un membro `static` di un tipo generico, è necessario specificare l'argomento di tipo per il tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. La sintassi per specificare l'argomento di tipo in questi due casi è diversa e facile da confondere, come illustrato nelle chiamate seguenti:
 
 ```vb
 ' Shared method in a generic type.
@@ -54,28 +54,28 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
- In generale, entrambe le dichiarazioni precedenti devono essere evitati in modo che l'argomento di tipo non deve essere specificato quando viene chiamato il membro. Ciò comporta una sintassi per chiamare i membri nei generics che non confonderla con la sintassi per non generics. Per altre informazioni, vedere [CA1004: I metodi generici devono fornire parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
+ In genere, è consigliabile evitare entrambe le dichiarazioni precedenti in modo che l'argomento di tipo non debba essere specificato quando viene chiamato il membro. In questo modo si ottiene una sintassi per chiamare i membri dei generics che non sono diversi dalla sintassi per i tipi non generici. Per ulteriori informazioni, vedere [CA1004: i metodi generici devono fornire il parametro di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere il membro statico o modificarlo in un membro di istanza.
+ Per correggere una violazione di questa regola, rimuovere il membro statico o impostarlo come membro di istanza.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Che fornisce una sintassi facile da comprendere e usare generics riduce il tempo necessario all'apprendimento e aumenta la frequenza di adozione di nuove librerie.
+ Non escludere un avviso da questa regola. Fornire generics in una sintassi facile da comprendere e utilizzare riduce il tempo necessario per apprendere e aumentare la velocità di adozione delle nuove librerie.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1005: Evitare un numero eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+ [CA1005: Evitare un uso eccessivo di parametri nei tipi generici](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
 
- [CA1010: Le raccolte devono implementare l'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+ [CA1010: Le raccolte devono implementare un'interfaccia generica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
  [CA1002: Non esporre elenchi generici](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
  [CA1006: Non annidare tipi generici nelle firme dei membri](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: I metodi generici devono fornire parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004: I metodi generici devono specificare parametri di tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
  [CA1003: Usare istanze di gestori eventi generici](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Utilizzare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Usare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Vedere anche
  [Generics](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

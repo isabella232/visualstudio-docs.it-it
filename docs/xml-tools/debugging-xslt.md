@@ -1,26 +1,26 @@
 ---
-title: Modalità di debug di codice XSLT
+title: Modi per eseguire il debug del codice XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: bb358efb711211d58525afb8d30d5cb4cad6b2e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043531"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646076"
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 
-È possibile eseguire il debug di codice XSLT in Visual Studio. La trasformazione XSLT il debugger supporta l'impostazione di punti di interruzione, la visualizzazione degli stati di esecuzione di XSLT e così via. Il debugger XSLT è utilizzabile per il debug di fogli di stile XSLT o le applicazioni XSLT.
+È possibile eseguire il debug del codice XSLT in Visual Studio. Il debugger XSLT supporta l'impostazione di punti di interruzione, la visualizzazione degli Stati di esecuzione di XSLT e così via. Il debugger XSLT può essere utilizzato per eseguire il debug di fogli di stile XSLT o di applicazioni XSLT.
 
-Per istruzioni, ignorandole o eseguendole di fuori di codice, è possibile eseguire una riga di codice alla volta. I comandi per l'uso di funzionalità di esecuzione codice del debugger XSLT sono che identici a quelli per Visual Studio debugger.
+È possibile eseguire il codice una riga alla volta eseguendo un'istruzione, eseguendo un'istruzione/routine o uscendo dal codice. I comandi per l'utilizzo della funzionalità di esecuzione del codice del debugger XSLT sono identici a quelli degli altri debugger di Visual Studio.
 
 Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visualizzazione del documento di input e dell'output XSLT.
 
@@ -29,15 +29,15 @@ Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visuali
 
 ## <a name="debug-from-the-xml-editor"></a>Eseguire il debug dall'editor XML
 
-È possibile avviare il debugger quando si dispone di un foglio di stile o un file XML di input aprire nell'editor. Ciò consente di eseguire il debug quando si progetta il foglio di stile.
+È possibile avviare il debugger quando si dispone di un foglio di stile o di un file XML di input aperto nell'editor. Questo consente di eseguire il debug durante la progettazione del foglio di stile.
 
-1. Aprire il foglio di stile o un file XML in Visual Studio.
+1. Aprire il foglio di stile o il file XML in Visual Studio.
 
-1. Selezionare **avviare il debug di XSLT** dalle **XML** dal menu oppure premere **Alt**+**F5**.
+1. Selezionare **Avvia debug XSLT** dal menu **XML** oppure premere **ALT** +**F5**.
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Eseguire il debug da un'app che usa XSLT
 
-È possibile eseguire le istruzioni XSLT durante il debug di un'applicazione. Quando si preme **F11** su un <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> chiamata, il debugger può eseguire il codice XSLT.
+È possibile eseguire l'istruzione XSLT durante il debug di un'applicazione. Quando si preme **F11** su una chiamata <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, il debugger può eseguire un'istruzione nel codice XSLT.
 
 > [!NOTE]
 > Non è supportata l'esecuzione di istruzioni XSLT dalla classe <xref:System.Xml.Xsl.XslTransform>. La classe <xref:System.Xml.Xsl.XslCompiledTransform> è l'unico processore XSLT in grado di supportare l'esecuzione di istruzioni XSLT durante il debug.
@@ -46,9 +46,9 @@ Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visuali
 
 1. Durante la creazione dell'istanza dell'oggetto <xref:System.Xml.Xsl.XslCompiledTransform>, impostare il parametro `enableDebug` su `true` nel codice. In questo modo viene indicato al processore XSLT di creare le informazioni di debug dopo la compilazione del codice.
 
-1. Premere **F11** per eseguire l'istruzione il codice XSLT.
+1. Premere **F11** per eseguire l'istruzione nel codice XSLT.
 
-   Il foglio di stile XSLT viene caricato in una nuova finestra del documento e avvia il debugger XSLT.
+   Il foglio di stile XSLT viene caricato in una nuova finestra del documento e viene avviato il debugger XSLT.
 
    In alternativa, è possibile aggiungere un punto di interruzione al foglio di stile ed eseguire l'applicazione.
 
@@ -88,10 +88,10 @@ namespace ConsoleApplication
 
 ## <a name="xslt-profiler"></a>Profiler XSLT
 
-Il [profiler XSLT](../xml-tools/xslt-profiler.md) è uno strumento che consente agli sviluppatori di misurare, valutare e trattare problemi correlati alle prestazioni nel codice XSLT creando rapporti di prestazioni XSLT dettagliati. Per altre informazioni, vedere [profiler XSLT](../xml-tools/xslt-profiler.md).
+Il [Profiler XSLT](../xml-tools/xslt-profiler.md) è uno strumento che consente agli sviluppatori di misurare, valutare e risolvere i problemi correlati alle prestazioni nel codice XSLT creando rapporti di prestazioni XSLT dettagliati. Per altre informazioni, vedere [XSLT Profiler](../xml-tools/xslt-profiler.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Sguardo al debugger di Visual Studio](../debugger/debugger-feature-tour.md)
-- [Informazioni di base sul debug: Punti di interruzione](../debugger/using-breakpoints.md)
+- [Procedura dettagliata: eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Esaminare prima di tutto il debugger di Visual Studio](../debugger/debugger-feature-tour.md)
+- [Nozioni fondamentali sul debug: punti di interruzione](../debugger/using-breakpoints.md)

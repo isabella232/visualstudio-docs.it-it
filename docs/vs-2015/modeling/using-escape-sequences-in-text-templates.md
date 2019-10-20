@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di sequenze di Escape in modelli di testo | Microsoft Docs
+title: Utilizzo di sequenze di escape in modelli di testo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - text templates, escape sequences
 ms.assetid: 36fff542-2f42-460f-a2d5-03fc76817f3b
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1f564200d0bdac56e975c2f2ab27439652247605
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a45aa36ddce57141a7e1e851f7f0766b77015ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183899"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659426"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Utilizzo di sequenze di escape in modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nei modelli di testo per generare tag di modello di testo e (in c# solo codice), è possibile usare le sequenze di escape per virgolette doppie e caratteri di escape di controllo.  
-  
- Per stampare i tag di aperti e chiusura per un blocco di codice standard per il file di output, escape i tag come indicato di seguito:  
-  
-```  
-\<# ... \#>  
-```  
-  
- È possibile eseguire la stessa con altri tag blocco direttiva e il codice del modello di testo.  
-  
- Se un blocco di testo include le stringhe utilizzate per eseguire l'escape di tag di modello di testo, è possibile usare le sequenze di escape seguenti:  
-  
-- Se un tag di modello di testo è preceduto da un numero pari di escape (\\) il modello di caratteri parser verrà includono la metà dei caratteri di escape e includono la sequenza come un tag di modello di testo. Ad esempio, se sono presenti quattro caratteri di escape nel modello di testo, esisterà due "\\" caratteri nel file generato.  
-  
-- Se il tag di modello di testo è preceduto da un numero dispari di escape (\\) caratteri, il parser del modello includerà la metà del "\\" caratteri oltre il tag stesso (\<# o #>). Il tag non è considerato come un tag di modello di testo.  
-  
-- Se un carattere di escape (\\) carattere viene visualizzato ovunque in qualsiasi sequenza diverso da in cui viene eseguito l'escape un carattere di controllo o una virgoletta (solo in c#), verranno restituiti i caratteri direttamente.  
-  
-## <a name="see-also"></a>Vedere anche  
+È possibile utilizzare sequenze di escape nei modelli di testo per generare tag di modello di testo C# e (solo in codice) per caratteri di escape e virgolette.
+
+ Per stampare i tag di apertura e chiusura per un blocco di codice standard nel file di output, eseguire il escape dei tag come segue:
+
+```
+\<# ... \#>
+```
+
+ È possibile eseguire la stessa operazione con altri tag del blocco di codice e di direttiva del modello di testo.
+
+ Se un blocco di testo include stringhe usate per l'escape dei tag del modello di testo, è possibile usare le sequenze di escape seguenti:
+
+- Se un tag del modello di testo è preceduto da un numero pari di caratteri di escape (\\), il parser del modello includerà la metà dei caratteri di escape e includerà la sequenza come tag del modello di testo. Se, ad esempio, nel modello di testo sono presenti quattro caratteri di escape, saranno presenti due caratteri "\\" nel file generato.
+
+- Se il tag del modello di testo è preceduto da un numero dispari di caratteri di escape (\\), il parser del modello includerà la metà dei caratteri "\\" più il tag stesso (\< # o # >). Il tag non è considerato un tag di modello di testo.
+
+- Se un carattere di escape (\\) viene visualizzato in qualsiasi altra sequenza diversa da quella in cui viene sottoposto a escape da un carattere C# di controllo o da un'offerta (solo in), il carattere verrà restituito direttamente.
+
+## <a name="see-also"></a>Vedere anche
  [Procedura: Generare modelli da modelli usando sequenze di escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

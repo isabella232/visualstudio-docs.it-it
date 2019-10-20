@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918662"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647256"
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
 
@@ -31,7 +31,7 @@ Lo **strumento per l'inserimento di frammenti di codice** visualizza il nome del
 
 Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di codice seguenti.
 
-|Nome (o collegamento)|DESCRIZIONE|Percorsi validi per l'inserimento del frammento di codice|
+|Nome (o collegamento)|Descrizione|Percorsi validi per l'inserimento del frammento di codice|
 | - |-----------------| - |
 |#if|Crea una direttiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e una direttiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Ovunque.|
 |#region|Crea una direttiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e una direttiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Ovunque.|
@@ -44,7 +44,7 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |do|Crea un ciclo [do](/dotnet/csharp/language-reference/keywords/do) `while`.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |else|Crea un blocco [else](/dotnet/csharp/language-reference/keywords/if-else).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |enum|Crea una dichiarazione [enum](/dotnet/csharp/language-reference/keywords/enum).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|equals|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|
+|è uguale a|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|
 |exception|Crea una dichiarazione per una classe che deriva da un'eccezione (<xref:System.Exception> per impostazione predefinita).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |for|Crea un ciclo [for](/dotnet/csharp/language-reference/keywords/for).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |foreach|Crea un ciclo [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
@@ -69,7 +69,7 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |tryf|Crea un blocco [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |unchecked|Crea un blocco [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |unsafe|Crea un blocco [unsafe](/dotnet/csharp/language-reference/keywords/unsafe).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|utilizzo|Crea una direttiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
+|using|Crea una direttiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
 |while|Crea un ciclo [while](/dotnet/csharp/language-reference/keywords/while).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 
 ## <a name="see-also"></a>Vedere anche

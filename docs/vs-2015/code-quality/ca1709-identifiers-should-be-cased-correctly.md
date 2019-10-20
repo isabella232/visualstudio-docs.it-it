@@ -1,5 +1,5 @@
 ---
-title: 'CA1709: Gli identificatori devono essere digitati correttamente | Microsoft Docs'
+title: 'CA1709: gli identificatori devono essere configurati correttamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,57 +12,57 @@ helpviewer_keywords:
 - IdentifiersShouldBeCasedCorrectly
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b447b111cedc30aa23f3aaad0fbc964a5d8a2bd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189160"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669191"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Gli identificatori devono essere digitati correttamente con distinzione tra maiuscole e minuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio, vedere [CA1709: Gli identificatori devono essere digitati correttamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).  
-  
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldBeCasedCorrectly|  
-|CheckId|CA1709|  
-|Category|Microsoft.Naming|  
-|Modifica importante|Interrompere l'esecuzione - quando è generato su assembly, spazi dei nomi, tipi, membri e parametri.<br /><br /> Non sostanziale - Quando viene attivato su parametri di tipo generico.|  
-  
-## <a name="cause"></a>Causa  
- Il nome di un identificatore non è maiuscole e minuscole.  
-  
- \- oppure -  
-  
- Il nome di un identificatore contiene un acronimo di due lettere e la seconda lettera è in minuscola.  
-  
- \- oppure -  
-  
- Il nome di un identificatore contiene l'acronimo di tre o più lettere maiuscole.  
-  
-## <a name="rule-description"></a>Descrizione della regola  
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.  
-  
- Per convenzione, i nomi dei parametri utilizzare convenzione camel; i nomi dello spazio dei nomi, tipo e membro utilizzano la convenzione Pascal maiuscole e minuscole. Un nome di maiuscole/minuscole camel, la prima lettera è in lettere minuscola e la prima lettera di qualsiasi rimanenti parole nel nome è in lettere maiuscole. Esempi di nomi di maiuscole/minuscole camel sono "packetSniffer", "ioFile" e "fatalErrorCode". Un nome, la convenzione Pascal, la prima lettera è un carattere maiuscola, e la prima lettera di qualsiasi rimanenti parole nel nome è in lettere maiuscole. Esempi di convenzione Pascal sono "PacketSniffer", "IOFile" e "FatalErrorCode".  
-  
- Questa regola suddivide il nome in base alle maiuscole e minuscole di parole e controlla le parole di due lettere rispetto a un elenco di parole di due lettere comuni, ad esempio "In" o "My". Se non viene trovata una corrispondenza, la parola è considerata un acronimo. Inoltre, questa regola presuppone che è stata rilevata l'acronimo quando il nome contiene quattro lettere maiuscole in una riga o tre lettere maiuscole in una riga alla fine del nome.  
-  
- Per convenzione, gli acronimi di due lettere usano lettere maiuscole e gli acronimi di tre o più caratteri utilizzano la convenzione Pascal maiuscole e minuscole. Gli esempi seguenti usano questa convenzione di denominazione: 'DB', 'CR', 'Cpa' e 'Ecma'. Negli esempi seguenti non rispettano la convenzione: 'Io', 'XML' e 'DoD' e per i nomi, "xp" e "cpl".  
-  
- 'ID' è maiuscole/minuscole speciale per causare una violazione della regola. 'ID' non è un acronimo bensì l'abbreviazione di 'identification'.  
-  
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- Modificare il nome in modo che viene maiuscole e minuscole.  
-  
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
- È possibile eliminare questo avviso se si dispone di proprie convenzioni di denominazione oppure se l'identificatore rappresenta un nome appropriato, ad esempio, il nome di una società o una tecnologia.  
-  
- È anche possibile aggiungere condizioni specifiche, le abbreviazioni e gli acronimi che a un dizionario personalizzato di analisi del codice. I termini specificati nel dizionario personalizzato non genererà le violazioni di questa regola. Per altre informazioni, vedere [Procedura: Personalizzare il dizionario di analisi codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
-  
-## <a name="related-rules"></a>Regole correlate  
- [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+Per la documentazione più recente su Visual Studio, vedere [CA1709: gli identificatori devono essere configurati correttamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
+
+|||
+|-|-|
+|TypeName|IdentifiersShouldBeCasedCorrectly|
+|CheckId|CA1709|
+|Category|Microsoft. Naming|
+|Modifica importante|Quando vengono generati gli assembly, gli spazi dei nomi, i tipi, i membri e i parametri.<br /><br /> Senza interruzioni: quando viene attivato su parametri di tipo generico.|
+
+## <a name="cause"></a>Causa
+ Il nome di un identificatore non viene inserito correttamente nel caso.
+
+ \- oppure -
+
+ Il nome di un identificatore contiene un acronimo di due lettere e la seconda lettera è minuscola.
+
+ \- oppure -
+
+ Il nome di un identificatore contiene un acronimo di tre o più lettere maiuscole.
+
+## <a name="rule-description"></a>Descrizione della regola
+ Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
+
+ Per convenzione, i nomi dei parametri utilizzano la combinazione Camel; lo spazio dei nomi, il tipo e i nomi dei membri utilizzano la convenzione Pascal. In un nome con distinzione tra maiuscole e minuscole, la prima lettera è minuscola e la prima lettera delle parole rimanenti nel nome è maiuscola. Esempi di nomi con case Camel sono "packetSniffer", "ioFile" e "fatalErrorCode". In un nome con maiuscole e minuscole Pascal la prima lettera è maiuscola e la prima lettera delle parole rimanenti nel nome è maiuscola. Esempi di nomi con case Pascal sono "PacketSniffer", "IOFile" e "FatalErrorCode".
+
+ Questa regola suddivide il nome in parole basate sulla combinazione di maiuscole e minuscole e controlla le parole di due lettere rispetto a un elenco di parole comuni di due lettere, ad esempio "in" o "My". Se non viene trovata alcuna corrispondenza, si presuppone che la parola sia un acronimo. Inoltre, questa regola presuppone che abbia trovato un acronimo quando il nome contiene quattro lettere maiuscole in una riga o tre lettere maiuscole in una riga alla fine del nome.
+
+ Per convenzione, gli acronimi di due lettere utilizzano lettere maiuscole e gli acronimi di tre o più caratteri utilizzano la combinazione di maiuscole e minuscole Pascal. Gli esempi seguenti usano questa convenzione di denominazione:' DB ',' CR ',' CPA ' è ECMA '. Negli esempi seguenti viene violata la convenzione:' io ',' XML ' è DoD ' e per i nomi non di parametri,' XP ' è CPL '.
+
+ Il valore di ' ID ' è speciale in caso di violazione di questa regola. 'ID' non è un acronimo bensì l'abbreviazione di 'identification'.
+
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
+ Modificare il nome in modo che sia inserito correttamente nel caso.
+
+## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+ È possibile evitare di visualizzare questo avviso se si dispone di convenzioni di denominazione personalizzate oppure se l'identificatore rappresenta un nome appropriato, ad esempio, il nome di una società o una tecnologia.
+
+ È anche possibile aggiungere termini specifici, abbreviazioni e acronimi a un dizionario personalizzato di analisi del codice. I termini specificati nel dizionario personalizzato non comporteranno violazioni di questa regola. Per altre informazioni, vedere [procedura: personalizzare il dizionario di analisi del codice](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+
+## <a name="related-rules"></a>Regole correlate
+ [CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

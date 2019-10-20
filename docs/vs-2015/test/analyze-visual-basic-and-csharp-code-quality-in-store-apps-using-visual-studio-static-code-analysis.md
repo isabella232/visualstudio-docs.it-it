@@ -8,15 +8,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7510b7fac5dfc633b88bd9f53347118a02227b92
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416650"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660734"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice Visual Basic e C# nelle app dello Store con l'analisi statica del codice di Visual Studio
 
@@ -29,7 +29,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 > [!NOTE]
 > In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi utilizzare la funzionalità di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](https://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.
 
-## <a name="in-this-topic"></a>Contenuto dell'argomento
+## <a name="in-this-topic"></a>In questo argomento
  Puoi acquisire informazioni su:
 
  [Esecuzione dell'analisi del codice](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Run)
@@ -55,7 +55,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
    La soluzione viene compilata e viene eseguita l'analisi del codice. I risultati vengono visualizzati nella finestra Analisi codice.
 
-   ![Finestra Analisi codice](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![Finestra analisi codice](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analizzare e risolvere gli avvisi di analisi del codice
  Per analizzare un avviso specifico, fai clic sul titolo dell'avviso nella finestra Analisi codice. L'avviso si espande per visualizzare le informazioni dettagliate sul problema.
@@ -64,7 +64,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
  Quando si espande un avviso, la riga di codice che ha provocato l'avviso viene evidenziata nell'editor del codice di Visual Studio.
 
- ![Evidenziazione del testo di analisi del codice](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
+ ![Evidenziazione del testo dell'analisi codice](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
  Dopo aver compreso il problema, potrai risolverlo nel codice. Eseguire quindi di nuovo l'analisi del codice per verificare che l'avviso non venga più visualizzato nella finestra Analisi codice e che la correzione non generi nuovi avvisi.
 
@@ -91,18 +91,18 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ## <a name="BKMK_Search"></a> Ricerca e filtro dei risultati dell'analisi del codice
  Puoi effettuare una ricerca in lunghi elenchi di messaggi di avviso e filtrare gli avvisi nelle soluzioni composte da più progetti.
 
- ![Finestra di ricerca e filtro dell'analisi del codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Cercare e filtrare la finestra analisi codice](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  In [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] a tutti gli avvisi di analisi del codice viene assegnato un livello di gravità Warning.
 
 ## <a name="BKMK_Warnings"></a> Avvisi di analisi del codice Visual Basic e C#
  L'analisi del codice genera gli avvisi seguenti:
 
- [CA1001: I tipi proprietari di campi eliminabili devono essere eliminabili](https://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](https://msdn.microsoft.com/library/ms182172.aspx)
 
  [CA1821: Rimuovere i finalizzatori vuoti](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: I campi eliminabili devono essere eliminati](https://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: I campi Disposable devono essere eliminati](https://msdn.microsoft.com/library/ms182328.aspx)
 
  [CA2229: Implementare costruttori di serializzazione](https://msdn.microsoft.com/library/ms182343.aspx)
 

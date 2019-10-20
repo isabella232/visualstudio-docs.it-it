@@ -2,17 +2,17 @@
 title: Testing unità di codice Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681600"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659837"
 ---
 # <a name="unit-test-c-code"></a>Unit test di codice C#
 
@@ -30,7 +30,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 3. Denominare il progetto **Maths**.
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** > **nuovo progetto**.
+4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi**  > **nuovo progetto**.
 
 5. Cercare e selezionare il modello di progetto **App unit test (Windows universale)** .
 
@@ -48,7 +48,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
    }
    ```
 
-   La classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> fornisce diversi metodi statici che è possibile usare per verificare i risultati nei metodi di test.
+   La classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> offre diversi metodi statici che è possibile usare per verificare i risultati nei metodi di test.
 
 ::: moniker range="vs-2017"
 
@@ -66,7 +66,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Aggiungere la classe Rooter al progetto Maths
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **Maths** , quindi scegliere **Aggiungi** **classe** > .
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **Maths** , quindi scegliere **Aggiungi**  > **classe**.
 
 2. Assegnare il nome *Rooter.cs* al file di classe.
 
@@ -96,7 +96,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 1. Aggiungere un riferimento dal progetto RooterTests all'app Maths.
 
-    1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **RooterTests** , quindi scegliere **Aggiungi** **riferimento** > .
+    1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **RooterTests** , quindi scegliere **Aggiungi**  > **riferimento**.
 
     2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare il progetto **Maths** .
 
@@ -270,4 +270,4 @@ Il metodo **RangeTest** codifica in modo rigido il denominatore della variabile 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Sviluppo basato su test con Esplora test @ no__t-0
+- [Procedura dettagliata: sviluppo basato su test con Esplora test](quick-start-test-driven-development-with-test-explorer.md)

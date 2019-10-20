@@ -4,19 +4,19 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e375c558500c4daeefe3f5d24d46a17139252f
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68610629"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655709"
 ---
-# <a name="options-dialog-box-projects-and-solutions--locations"></a>Finestra di dialogo Opzioni: Progetti e soluzioni \> Percorsi
+# <a name="options-dialog-box-projects-and-solutions--locations"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> posizioni
 
 Usare questa pagina per impostare percorsi predefiniti per i progetti, i modelli di progetto e i modelli di elemento. Per accedere a queste opzioni, selezionare **Strumenti** > **Opzioni**, espandere **Progetti e soluzioni** e quindi selezionare **Percorsi**.
 
@@ -36,6 +36,6 @@ Specifica il percorso predefinito usato per cercare modelli di elemento creati d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di dialogo Opzioni: Progetti e soluzioni \> Generale](projects-and-solutions-options-dialog-box.md)
+- [Finestra di dialogo Opzioni: progetti e soluzioni \> generale](projects-and-solutions-options-dialog-box.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- [Finestra di dialogo Opzioni, Progetti e soluzioni, Progetti Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+- [Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1302: Non impostare come hardcoded le stringhe delle impostazioni locali | Microsoft Docs'
+title: 'CA1302: non impostare come hardcoded le stringhe delle impostazioni locali | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1302
 ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d52489ba25fe2c541d2d0329fcad61aef75350e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e16fff154b5c0df660b06e5bf9e9e838762adff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200419"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661481"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Non impostare come hardcoded le stringhe delle impostazioni locali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ ms.locfileid: "68200419"
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
-|Category|Microsoft.Globalization|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. globalizzazione|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo utilizza un valore letterale stringa che rappresenta una parte del percorso di determinate cartelle di sistema.
+ Un metodo usa un valore letterale stringa che rappresenta parte del percorso di alcune cartelle di sistema.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumerazione contiene i membri che fanno riferimento a cartelle di sistema speciali. I percorsi di queste cartelle possono avere valori diversi nei sistemi operativi diversi, l'utente può modificare alcune delle posizioni e i percorsi sono localizzati. Un esempio di una cartella speciale è la cartella di sistema, ovvero "C:\WINDOWS\system32" nella [!INCLUDE[winxp](../includes/winxp-md.md)] ma "C:\Winnt\System32." su [!INCLUDE[win2kfamily](../includes/win2kfamily-md.md)]. Il <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> metodo restituisce i percorsi che sono associati le <xref:System.Environment.SpecialFolder> enumerazione. I percorsi restituiti da <xref:System.Environment.GetFolderPath%2A> sono localizzati e appropriati per il computer in uso.
+ L'enumerazione <xref:System.Environment.SpecialFolder?displayProperty=fullName> contiene membri che fanno riferimento a cartelle di sistema speciali. I percorsi di queste cartelle possono avere valori diversi in sistemi operativi diversi, l'utente può modificare alcuni percorsi e i percorsi sono localizzati. Un esempio di cartella speciale è la cartella di sistema, ovvero "C:\WINDOWS\system32" in [!INCLUDE[winxp](../includes/winxp-md.md)] ma "C:\WINNT\system32" su [!INCLUDE[win2kfamily](../includes/win2kfamily-md.md)]. Il metodo <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> restituisce i percorsi associati all'enumerazione <xref:System.Environment.SpecialFolder>. I percorsi restituiti da <xref:System.Environment.GetFolderPath%2A> sono localizzati e appropriati per il computer attualmente in esecuzione.
 
- Questa regola suddivide in token i percorsi delle cartelle che vengono recuperati utilizzando la <xref:System.Environment.GetFolderPath%2A> metodo in livelli di directory separate. Ogni valore letterale stringa viene confrontato con i token. Se viene trovata una corrispondenza, si presuppone che il metodo sta creando una stringa che rappresenta il percorso di sistema che è associato il token. Per la portabilità e la verifica della localizzabilità, usare il <xref:System.Environment.GetFolderPath%2A> metodo per recuperare i percorsi delle cartelle di sistema speciale invece di usare valori letterali stringa.
+ Questa regola suddivide in token i percorsi di cartella recuperati usando il metodo <xref:System.Environment.GetFolderPath%2A> in livelli di directory distinti. Ogni valore letterale stringa viene confrontato con i token. Se viene trovata una corrispondenza, si presuppone che il metodo stia compilando una stringa che fa riferimento al percorso di sistema associato al token. Per la portabilità e la localizzabilità, utilizzare il metodo <xref:System.Environment.GetFolderPath%2A> per recuperare i percorsi delle cartelle di sistema speciali anziché utilizzare valori letterali stringa.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, recuperare il percorso utilizzando la <xref:System.Environment.GetFolderPath%2A> (metodo).
+ Per correggere una violazione di questa regola, recuperare il percorso usando il metodo <xref:System.Environment.GetFolderPath%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se il valore letterale stringa non viene utilizzata per fare riferimento a uno dei percorsi di sistema che è associato il <xref:System.Environment.SpecialFolder> enumerazione.
+ È possibile eliminare un avviso da questa regola se il valore letterale stringa non viene usato per fare riferimento a uno dei percorsi di sistema associati all'enumerazione <xref:System.Environment.SpecialFolder>.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente compila il percorso della cartella dati applicazioni comuni che genera tre avvisi da questa regola. Successivamente, l'esempio recupera il percorso utilizzando la <xref:System.Environment.GetFolderPath%2A> (metodo).
+ Nell'esempio seguente viene compilato il percorso della cartella Common Application Data, che genera tre avvisi da questa regola. Successivamente, l'esempio recupera il percorso usando il metodo <xref:System.Environment.GetFolderPath%2A>.
 
  [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.HardcodedLocaleStrings/cs/FxCop.Globalization.HardcodedLocaleStrings.cs#1)]
  [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Globalization.HardcodedLocaleStrings/vb/FxCop.Globalization.HardcodedLocaleStrings.vb#1)]

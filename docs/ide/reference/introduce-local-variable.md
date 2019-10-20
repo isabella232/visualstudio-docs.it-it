@@ -3,17 +3,17 @@ title: Introdurre una variabile locale
 description: Generare una variabile locale per sostituire un'espressione esistente. Selezionare l'espressione, fare clic con il pulsante destro del mouse e scegliere Azioni rapide e refactoring, quindi selezionare Introduce l'elemento locale per tutte le occorrenze di 'expression'.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483689"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668748"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introdurre una variabile locale in Visual Studiio
 
@@ -25,9 +25,9 @@ Questa generazione di codice si applica a:
 
 **Cosa:** consente di generare immediatamente una variabile locale per sostituire un'espressione esistente.
 
-**Quando:** si dispone di codice che potrebbe essere facilmente riutilizzato in seguito se fosse in una variabile locale.
+**Quando:** si dispone di codice che potrebbe essere facilmente riutilizzato in un secondo momento se fosse in una variabile locale.
 
-**Perché?:** è possibile copiare e incollare il codice più volte per usarlo in vari punti, ma è preferibile eseguire l'operazione una sola volta, archiviare il risultato in una variabile locale e usare poi quest'ultima.
+**Perché:** è possibile copiare e incollare il codice più volte per usarlo in varie posizioni, ma sarebbe preferibile eseguire l'operazione una sola volta, archiviare il risultato in una variabile locale e usare poi la variabile locale.
 
 ## <a name="how-to"></a>Procedura
 

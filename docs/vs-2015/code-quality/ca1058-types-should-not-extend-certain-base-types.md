@@ -1,5 +1,5 @@
 ---
-title: 'CA1058: I tipi non devono estendere tipi di base specifici | Microsoft Docs'
+title: 'CA1058: i tipi non devono estendere determinati tipi di base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200456"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603058"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: I tipi non devono estendere tipi di base specifici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "68200456"
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo visibile esternamente estende tipi di base specifici. Attualmente, questa regola segnala i tipi che derivano dai tipi seguenti:
+ Un tipo visibile esternamente estende tipi di base specifici. Attualmente questa regola segnala i tipi che derivano dai tipi seguenti:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 
@@ -52,12 +52,12 @@ ms.locfileid: "68200456"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione 1, era consigliabile derivare nuove eccezioni da <xref:System.ApplicationException>. La raccomandazione è stato modificato e nuove eccezioni devono derivare da <xref:System.Exception?displayProperty=fullName> o una delle sue sottoclassi nel <xref:System> dello spazio dei nomi.
+ Per [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione 1, è consigliabile derivare nuove eccezioni da <xref:System.ApplicationException>. La raccomandazione è stata modificata e le nuove eccezioni dovrebbero derivare da <xref:System.Exception?displayProperty=fullName> o una delle relative sottoclassi nello spazio dei nomi <xref:System>.
 
- Non creare una sottoclasse di <xref:System.Xml.XmlDocument> se si desidera creare una vista XML di un'origine dati o del modello di oggetto sottostante.
+ Non creare una sottoclasse di <xref:System.Xml.XmlDocument> se si desidera creare una vista XML di un modello a oggetti sottostante o di un'origine dati.
 
 ### <a name="non-generic-collections"></a>Raccolte non generiche
- Usare e/o di estendere le raccolte generiche, laddove possibile. Non si estendono le raccolte non generiche nel codice, a meno che non sono stati inviati in precedenza.
+ Quando possibile, utilizzare e/o estendere le raccolte generiche. Non estendere le raccolte non generiche nel codice, a meno che non sia stato spedito in precedenza.
 
  **Esempi di utilizzo non corretto**
 
@@ -84,7 +84,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, derivare il tipo da un tipo di base diverso o una raccolta generica.
+ Per correggere una violazione di questa regola, derivare il tipo da un diverso tipo di base o da una raccolta generica.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non eliminare un avviso da questa regola per le violazioni sulle <xref:System.ApplicationException>. È possibile eliminare un avviso da questa regola per le violazioni su <xref:System.Xml.XmlDocument>. È possibile eliminare un avviso relativo a una raccolta non generiche se il codice è stato rilasciato in precedenza.
+ Non eliminare un avviso da questa regola per violazioni circa <xref:System.ApplicationException>. È possibile eliminare un avviso da questa regola per eventuali violazioni circa <xref:System.Xml.XmlDocument>. Se il codice è stato rilasciato in precedenza, è possibile evitare l'eliminazione di un avviso relativo a una raccolta non generica.

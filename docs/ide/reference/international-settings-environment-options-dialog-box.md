@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Options dialog box, international settings
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146aef659290df4302cc3bbb3d24a5bf6f1f01c8
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 8e55c0e81877c2735571705a2b2d2529b0fa3a74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605639"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666999"
 ---
-# <a name="options-dialog-box-environment--international-settings"></a>Finestra di dialogo Opzioni: Ambiente \> Impostazioni internazionali
+# <a name="options-dialog-box-environment--international-settings"></a>Finestra di dialogo Opzioni: ambiente \> impostazioni internazionali
 
 La pagina Impostazioni internazionali consente di modificare la lingua predefinita quando nel computer in uso sono installate più versioni in lingue diverse dell'IDE (Integrated Development Environment). È possibile accedere a questa finestra di dialogo selezionando **Opzioni** dal menu **Strumenti** e scegliendo **Impostazioni internazionali** dalla cartella **Ambiente**.
 
-**Lingua**
+**Linguaggio**
 
 Elenca le lingue disponibili per le versioni di lingua del prodotto installato. Se l'ambiente è condiviso da più lingue di prodotti o da un'installazione mista di lingue dei prodotti, la selezione della lingua viene modificata in **Come Microsoft Windows**.
 

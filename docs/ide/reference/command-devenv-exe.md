@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Command Devenv switch
 - Command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2ca9a6550fd5fd141a5f8051d1948ccd626e970b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968623"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654601"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -29,13 +29,13 @@ Esegue il comando specificato dopo l'avvio dell'IDE di Visual Studio.
 devenv /Command CommandName
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 *CommandName*
 
 Obbligatorio. Nome completo di un comando di Visual Studio o del relativo alias, racchiuso tra virgolette doppie. Per altre informazioni sulla sintassi dei comandi e degli alias, vedere [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Al completamento dell'avvio, nell'IDE viene eseguito il comando specificato.
 
@@ -45,7 +45,7 @@ Se si usa questa opzione la pagina iniziale non viene visualizzata nell'IDE all'
 
 ::: moniker-end
 
-Se un componente aggiuntivo visualizza un comando, è possibile usare questa opzione per avviare il componente aggiuntivo dalla riga di comando. Per altre informazioni, vedere [Procedura: Controllare i componenti aggiuntivi tramite Gestione componenti aggiuntivi](/previous-versions/xwdatdwh(v=vs.140)).
+Se un componente aggiuntivo visualizza un comando, è possibile usare questa opzione per avviare il componente aggiuntivo dalla riga di comando. Per altre informazioni, vedere [procedura: controllare i componenti aggiuntivi tramite Gestione componenti](/previous-versions/xwdatdwh(v=vs.140))aggiuntivi.
 
 ## <a name="example"></a>Esempio
 
@@ -66,5 +66,5 @@ devenv /command "nf some_file.cs"
 ## <a name="see-also"></a>Vedere anche
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Finestra di comando](command-window.md)

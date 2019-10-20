@@ -1,24 +1,24 @@
 ---
-title: 'Procedura dettagliata: Creazione di un host del modello di testo personalizzato'
+title: 'Procedura dettagliata: creazione di un host del modello di testo personalizzato'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b9d2447d07d9faabb5fc7eabddafc328756056ca
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870655"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666966"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un host del modello di testo personalizzato
 
@@ -35,7 +35,7 @@ Questa procedura dettagliata illustra le attività seguenti:
 
 - Test dell'host personalizzato
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Per completare la procedura dettagliata, è necessario disporre di quanto segue:
 
@@ -51,7 +51,7 @@ In questa procedura dettagliata, si crea un host personalizzato in un'applicazio
 
 2. Aggiungere riferimenti agli assembly riportati di seguito:
 
-   - **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft. VisualStudio. TextTemplating. \*.0**
 
    - **Microsoft. VisualStudio. TextTemplating. Interfaces. 10.0 e versioni successive**
 
@@ -714,7 +714,7 @@ In questa procedura dettagliata, si crea un host personalizzato in un'applicazio
    End Namespace
    ```
 
-4. Solo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per, aprire il menu **progetto** e fare clic su **Proprietà CustomHost**. Nell'elenco **oggetto di avvio** fare clic su **CustomHost. Program**.
+4. Solo per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], aprire il menu **progetto** e fare clic su **Proprietà CustomHost**. Nell'elenco **oggetto di avvio** fare clic su **CustomHost. Program**.
 
 5. Nel menu **File** fare clic su **Salva tutto**.
 
@@ -819,7 +819,7 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per altre informazioni, vedere [Procedura dettagliata: Connessione di un host a un processore](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)di direttiva generato.
+In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per ulteriori informazioni, vedere [procedura dettagliata: connessione di un host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Vedere anche
 

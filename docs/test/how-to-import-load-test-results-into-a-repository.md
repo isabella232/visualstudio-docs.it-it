@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Importare i risultati del test di carico in un repository'
+title: 'Procedura: importare i risultati del test di carico in un repository'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load tests, importing results
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 067c9a9d20f3fe456f93086f2099183fd514d91a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949966"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653511"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Procedura: Importare i risultati del test di carico in un repository
 
@@ -57,4 +57,4 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
 
 - [Gestire i risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Procedura: Esportare i risultati del test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Procedura: Esportare i risultati di un test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)

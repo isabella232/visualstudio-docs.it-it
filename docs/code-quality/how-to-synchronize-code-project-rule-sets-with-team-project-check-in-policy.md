@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975063"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649379"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedura: Sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto DevOps di Azure
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto DevOps di Azure
 
 Sincronizzare le impostazioni di analisi del codice per i progetti di codice con i criteri di archiviazione per il progetto DevOps di Azure specificando un set di regole che contiene almeno le regole specificate nel set di regole per i criteri di archiviazione. Il responsabile dello sviluppatore può indicare il nome e la posizione del set di regole per i criteri di archiviazione. È possibile utilizzare una delle opzioni seguenti per assicurarsi che l'analisi del codice per il progetto utilizzi il set corretto di regole:
 
@@ -31,7 +31,7 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Per specificare un set di regole standard Microsoft
 
-1. Nelle **Esplora soluzioni**, fare clic sul progetto codice e quindi fare clic su **proprietà**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
 
 2. Fare clic su **analisi codice**.
 
@@ -51,7 +51,7 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 1. Se necessario, eseguire un'operazione Get sul file del set di regole che specifica i criteri di archiviazione.
 
-2. Nelle **Esplora soluzioni**, fare clic sul progetto codice e quindi fare clic su **proprietà**.
+2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
 
 3. Fare clic su **analisi codice**.
 

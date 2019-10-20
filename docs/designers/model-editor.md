@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13e19cb22740ff5b8dbd42b5cc5f769a211f6f04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 13ca91c431f574190a5cddbe17f1b042685056bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895586"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635024"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 
@@ -45,7 +45,7 @@ Questa sezione descrive come aggiungere un modello 3D al progetto C++ Visual Stu
 
 1. Assicurarsi di avere a disposizione il componente di Visual Studio richiesto installato necessario per usare gli elementi grafici. Questo componente è denominato **Editor di immagini e modelli 3D**.
 
-   Per installarlo, aprire il Programma di installazione di Visual Studio selezionando **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu e quindi selezionare la scheda **Singoli componenti**. Selezionare il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica** e quindi selezionare **Modifica**.
+   Per installarlo, aprire Programma di installazione di Visual Studio selezionando **strumenti**  > **ottenere strumenti e funzionalità** dalla barra dei menu, quindi selezionare la scheda **singoli componenti** . Selezionare il componente **editor di immagini e modelli 3D** nel  **Giochi e categoria grafica** , quindi selezionare **modifica**.
 
    ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
 
@@ -53,7 +53,7 @@ Questa sezione descrive come aggiungere un modello 3D al progetto C++ Visual Stu
 
 2. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto C++ a cui si vuole aggiungere l'immagine e quindi scegliere **Aggiungi** > **Nuovo elemento**.
 
-3. Nella finestra di dialogo **Aggiungi nuovo elemento**, nella categoria **Grafica**, selezionare **Scena 3D (.fbx)**.
+3. Nella finestra di dialogo **Aggiungi nuovo elemento**, nella categoria **Grafica**, selezionare **Scena 3D (.fbx)** .
 
    ![Finestra di dialogo Aggiungi nuovo elemento con scena 3D selezionata](media/add-new-3d-scene.png)
 
@@ -86,19 +86,19 @@ Di seguito viene riportata la barra degli strumenti della **modalità editor dei
 
 In questa tabella vengono descritti gli elementi disponibili nella barra degli strumenti della **modalità editor dei modelli** nell'ordine di visualizzazione da sinistra verso destra.
 
-|Elemento della barra degli strumenti|Description|
+|Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
-|**Seleziona**|Consente di selezionare i punti, i bordi, le facce oppure gli oggetti nella scena, a seconda della modalità di selezione attiva.|
+|**Selezione**|Consente di selezionare i punti, i bordi, le facce oppure gli oggetti nella scena, a seconda della modalità di selezione attiva.|
 |**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
 |**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli della scena a seconda della cornice della finestra. In modalità **Zoom** selezionare un punto nella scena, quindi spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile eseguire lo zoom avanti o indietro usando la rotellina del mouse mentre si tiene premuto **CTRL**.|
-|**Orbita**|Posiziona la visualizzazione in un percorso circolare intorno all'oggetto selezionato. Se non è selezionato alcun oggetto, il percorso viene centrato nell'origine della scena. **Nota:**  Questa modalità non ha effetto se è abilitata la proiezione di tipo **Ortografico**.|
+|**Orbita**|Posiziona la visualizzazione in un percorso circolare intorno all'oggetto selezionato. Se non è selezionato alcun oggetto, il percorso viene centrato nell'origine della scena. **Nota:** questa modalità non ha effetto se è abilitata la proiezione di tipo **Ortografico**.|
 |**WorldLocal**|Se questo elemento è abilitato, le trasformazioni sull'oggetto selezionato si verificano nello spazio globale. In caso contrario, le trasformazioni sull'oggetto selezionato si verificano nello spazio locale.|
-|**Modalità perno**|Se questo elemento è abilitato, le trasformazioni incidono sulla posizione e sull'orientamento del *punto di perno* dell'oggetto selezionato. Il punto di perno definisce il centro delle operazioni di traslazione, scala e rotazione. In caso contrario, le trasformazioni incidono sulla posizione e sull'orientamento della geometria dell'oggetto, rispetto al punto di perno.|
+|**Modalità perno**|Quando questo elemento è abilitato, le trasformazioni influiscono sulla posizione e sull'orientamento del *punto di perno* dell'oggetto selezionato (il punto di perno definisce il centro delle operazioni di traslazione, ridimensionamento e rotazione). In caso contrario, le trasformazioni influiscono sulla posizione e sull'orientamento della geometria dell'oggetto, rispetto al punto di perno.|
 |**Blocca asse X**|Limita la manipolazione dell'oggetto all'asse x. Si applica solo se si utilizza la parte centrale del widget del manipolatore.|
 |**Blocca asse Y**|Limita la manipolazione dell'oggetto all'asse y. Si applica solo se si utilizza la parte centrale del widget del manipolatore.|
 |**Blocca asse Z**|Limita la manipolazione dell'oggetto all'asse z. Si applica solo se si utilizza la parte centrale del widget del manipolatore.|
 |**Oggetto frame**|All'oggetto selezionato viene aggiunto un frame in modo che sia posizionato al centro della visualizzazione.|
-|**Visualizza**|Imposta l'orientamento di visualizzazione. Di seguito sono riportati gli orientamenti disponibili.<br /><br /> **Fronte**<br /> Posiziona la visualizzazione davanti alla scena.<br /><br /> **Indietro**<br /> Posiziona la visualizzazione dietro la scena.<br /><br /> **A sinistra**<br /> Posiziona la visualizzazione a sinistra della scena.<br /><br /> **A destra**<br /> Posiziona la visualizzazione a destra della scena.<br /><br /> **In alto**<br /> Posiziona la visualizzazione al di sopra della scena.<br /><br /> **In basso**<br /> Posiziona la visualizzazione al di sotto della scena. **Nota:**  Si tratta dell'unico modo per modificare la direzione di visualizzazione quando è abilitata la proiezione di tipo **Ortografico**.|
+|**Visualizzazione**|Imposta l'orientamento di visualizzazione. Di seguito sono riportati gli orientamenti disponibili.<br /><br /> **Fronte**<br /> Posiziona la visualizzazione davanti alla scena.<br /><br /> **Indietro**<br /> Posiziona la visualizzazione dietro la scena.<br /><br /> **A sinistra**<br /> Posiziona la visualizzazione a sinistra della scena.<br /><br /> **A destra**<br /> Posiziona la visualizzazione a destra della scena.<br /><br /> **In alto**<br /> Posiziona la visualizzazione al di sopra della scena.<br /><br /> **In basso**<br /> Posiziona la visualizzazione al di sotto della scena. **Nota:** si tratta dell'unico modo per modificare la direzione di visualizzazione quando è abilitata la proiezione di tipo **Ortografico**.|
 |**Proiezione**|Imposta il tipo di proiezione utilizzato per disegnare la scena. Di seguito sono riportate le proiezioni disponibili.<br /><br /> **Prospettiva**<br /> Nella proiezione Prospettiva gli oggetti più lontani dal punto di vista appaiono di dimensioni inferiori e convergono in un punto a distanza.<br /><br /> **Ortografico**<br /> Nella proiezione Ortografico gli oggetti sembrano avere le stesse dimensioni, indipendentemente dalla distanza dal punto di vista. Non viene visualizzata alcuna convergenza. Quando è abilitata la proiezione di tipo **Ortografico** non è possibile usare la modalità **Orbita** per posizionare la visualizzazione.|
 |**Stile di disegno**|Imposta la modalità di rendering degli oggetti nella scena. Di seguito sono riportati gli stili disponibili.<br /><br /> **Gabbia metallica**<br /> Se abilitata, gli oggetti vengono sottoposti a rendering come wireframe.<br /><br /> **Carica**<br /> Se abilitata, gli oggetti vengono sottoposti a rendering utilizzando una sfumatura aggiuntiva. È possibile utilizzare questa opzione per visualizzare la quantità di carica presente nella scena.<br /><br /> **Ombreggiato semplice**<br /> Se abilitata, gli oggetti vengono sottoposti a rendering utilizzando un modello di illuminazione di base con ombreggiatura semplice. È possibile utilizzare questa opzione per visualizzare più agevolmente le facce di un oggetto.<br /><br /> Se nessuna di queste opzioni è abilitata, per ogni oggetto viene eseguito il rendering utilizzando il materiale a esso applicato.|
 |**Modalità rendering in tempo reale**|Se è abilitato il rendering in tempo reale, Visual Studio ridisegna l'area di progettazione, anche se non viene eseguita alcuna azione da parte dell'utente. Questa modalità è utile se si utilizzano shader mutevoli nel tempo.|
@@ -106,7 +106,7 @@ In questa tabella vengono descritti gli elementi disponibili nella barra degli s
 |**Casella degli strumenti**|Consente di visualizzare o nascondere la **casella degli strumenti**.|
 |**Struttura documento**|Mostra o nasconde la finestra **Struttura documento**.|
 |**Proprietà**|Mostra o nasconde la finestra **Proprietà**.|
-|**Avanzate**|Contiene opzioni e comandi avanzati.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Utilizza Direct3D 11 per il rendering dell'area di progettazione dell'editor modello.<br /><br /> **Rendering con D3D11WARP**<br /> Utilizza la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione dell'editor modello.<br /><br /> **Scene Management** (Gestione scena)<br /><br /> **Import**<br /> Importa oggetti da un altro file di modello 3D nella scena corrente.<br /><br /> **Attach to Parent** (Connetti a oggetto padre)<br /> Stabilisce il primo di più oggetti selezionati come padre degli oggetti selezionati rimanenti.<br /><br /> **Detach from Parent** (Disconnetti da oggetto padre)<br /> Disconnette l'oggetto selezionato dal padre. L'oggetto selezionato diventa un *oggetto radice* nella scena. Un oggetto radice non dispone di un oggetto padre.<br /><br /> **Crea gruppo**<br /> Raggruppa gli oggetti selezionati come oggetti di pari livello.<br /><br /> **Merge di oggetti**<br /> Combina gli oggetti selezionati in un oggetto.<br /><br /> **Crea oggetto da selezione poligono**<br /> Rimuove le facce selezionate dall'oggetto corrente e aggiunge alla scena un nuovo oggetto contenente tali facce.<br /><br /> **Strumenti**<br /><br /> **Capovolgi vertici del poligono**<br /> Capovolge i poligoni selezionati in modo da invertire l'ordine dei vertici e la normale alla superficie.<br /><br /> **Rimuovi tutta l'animazione**<br /> Rimuove i dati di animazione dagli oggetti.<br /><br /> **Triangolazione**<br /> Converte l'oggetto selezionato in triangoli.<br /><br /> **Visualizza**<br /><br /> Eliminazione della faccia posteriore<br /> Abilita o disabilita l'eliminazione della faccia posteriore.<br /><br /> **Frequenza dei fotogrammi**<br /> Visualizza la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo.<br /><br /> Questa opzione è utile quando si abilita l'opzione **Modalità rendering in tempo reale**.<br /><br /> **Mostra tutto**<br /> Mostra tutti gli oggetti nella scena. Questa opzione reimposta la proprietà **Nascosto** di ogni oggetto su **False**.<br /><br /> **Show Face Normals** (Mostra normali delle facce)<br /> Mostra la normale di ciascuna faccia.<br /><br /> **Show Missing Materials** (Mostra materiali mancanti)<br /> Visualizza una trama speciale sugli oggetti a cui non è assegnato un materiale.<br /><br /> **Show Pivot** (Mostra pivot)<br /> Abilita o disabilita la visualizzazione di un marcatore di asse 3D nel punto pivot della selezione attiva.<br /><br /> **Show Placeholder Nodes** (Mostra nodi segnaposto)<br /> Mostra i nodi segnaposto. Viene creato un nodo segnaposto quando si raggruppano oggetti.<br /><br /> **Show Vertex Normals** (Mostra normali dei vertici)<br /> Mostra la normale di ciascun vertice. **Suggerimento:**  È possibile selezionare il pulsante **Script** per eseguire nuovamente l'ultimo script.|
+|**Avanzate**|Contiene opzioni e comandi avanzati.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Utilizza Direct3D 11 per il rendering dell'area di progettazione dell'editor modello.<br /><br /> **Rendering con D3D11WARP**<br /> Utilizza la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione dell'editor modello.<br /><br /> **Scene Management** (Gestione scena)<br /><br /> **Importaa**<br /> Importa oggetti da un altro file di modello 3D nella scena corrente.<br /><br /> **Attach to Parent** (Connetti a oggetto padre)<br /> Stabilisce il primo di più oggetti selezionati come padre degli oggetti selezionati rimanenti.<br /><br /> **Detach from Parent** (Disconnetti da oggetto padre)<br /> Disconnette l'oggetto selezionato dal padre. L'oggetto selezionato diventa un *oggetto radice* nella scena. Un oggetto radice non dispone di un oggetto padre.<br /><br /> **Crea gruppo**<br /> Raggruppa gli oggetti selezionati come oggetti di pari livello.<br /><br /> **Merge di oggetti**<br /> Combina gli oggetti selezionati in un oggetto.<br /><br /> **Crea oggetto da selezione poligono**<br /> Rimuove le facce selezionate dall'oggetto corrente e aggiunge alla scena un nuovo oggetto contenente tali facce.<br /><br /> **Strumenti**<br /><br /> **Capovolgi vertici del poligono**<br /> Capovolge i poligoni selezionati in modo da invertire l'ordine dei vertici e la normale alla superficie.<br /><br /> **Rimuovi tutta l'animazione**<br /> Rimuove i dati di animazione dagli oggetti.<br /><br /> **Triangolazione**<br /> Converte l'oggetto selezionato in triangoli.<br /><br /> **Visualizzazione**<br /><br /> Eliminazione della faccia posteriore<br /> Abilita o disabilita l'eliminazione della faccia posteriore.<br /><br /> **Frequenza dei fotogrammi**<br /> Visualizza la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo.<br /><br /> Questa opzione è utile quando si abilita l'opzione **Modalità rendering in tempo reale**.<br /><br /> **Mostra tutto**<br /> Mostra tutti gli oggetti nella scena. Questa opzione reimposta la proprietà **Nascosto** di ogni oggetto su **False**.<br /><br /> **Show Face Normals** (Mostra normali delle facce)<br /> Mostra la normale di ciascuna faccia.<br /><br /> **Show Missing Materials** (Mostra materiali mancanti)<br /> Visualizza una trama speciale sugli oggetti a cui non è assegnato un materiale.<br /><br /> **Show Pivot** (Mostra pivot)<br /> Abilita o disabilita la visualizzazione di un marcatore di asse 3D nel punto pivot della selezione attiva.<br /><br /> **Show Placeholder Nodes** (Mostra nodi segnaposto)<br /> Mostra i nodi segnaposto. Viene creato un nodo segnaposto quando si raggruppano oggetti.<br /><br /> **Show Vertex Normals** (Mostra normali dei vertici)<br /> Mostra la normale di ciascun vertice. **Suggerimento:** per eseguire di nuovo l'ultimo script è possibile selezionare il pulsante **Script**.|
 
 Di seguito è illustrata la barra degli strumenti dell'**editor dei modelli**:
 
@@ -114,7 +114,7 @@ Di seguito è illustrata la barra degli strumenti dell'**editor dei modelli**:
 
 Nella tabella seguente vengono descritti gli elementi disponibili nella barra degli strumenti dell'**editor dei modelli** nell'ordine di visualizzazione dall'alto verso il basso.
 
-|Elemento della barra degli strumenti|Description|
+|Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
 |**Trasla**|Sposta la selezione.|
 |**Scala**|Modifica la dimensione della selezione.|
@@ -132,16 +132,16 @@ Per la scena 3D viene eseguito il rendering in base alla visualizzazione, che pu
 
 Nella tabella indicata di seguito vengono descritti i controlli di visualizzazione principali.
 
-|Controllo di visualizzazione|Description|
+|Controllo di visualizzazione|Descrizione|
 |------------------|-----------------|
 |**Panoramica**|Consente lo spostamento di una scena 3D relativa alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nella scena e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
 |**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli della scena a seconda della cornice della finestra. In modalità **Zoom** selezionare un punto nella scena, quindi spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile eseguire lo zoom avanti o indietro usando la rotellina del mouse mentre si tiene premuto **CTRL**.|
-|**Orbita**|Posiziona la visualizzazione in un percorso circolare intorno all'oggetto selezionato. Se non è selezionato alcun oggetto, il percorso viene centrato nell'origine della scena. **Nota:**  Questa modalità non ha effetto se è abilitata la proiezione di tipo **Ortografico**.|
+|**Orbita**|Posiziona la visualizzazione in un percorso circolare intorno all'oggetto selezionato. Se non è selezionato alcun oggetto, il percorso viene centrato nell'origine della scena. **Nota:** questa modalità non ha effetto se è abilitata la proiezione di tipo **Ortografico**.|
 |**Oggetto frame**|All'oggetto selezionato viene aggiunto un frame in modo che sia posizionato al centro della visualizzazione.|
 
 La visualizzazione viene determinata dalla fotocamera virtuale, ma è definita anche da una proiezione. La proiezione definisce la modalità di conversione in pixel di forme e oggetti nella visualizzazione nell'area di progettazione. Nella barra degli strumenti dell'**editor dei modelli** è possibile scegliere una proiezione di tipo **Prospettiva** oppure **Ortografico**.
 
-|Proiezione|Description|
+|Proiezione|Descrizione|
 |----------------|-----------------|
 |**Prospettiva**|Nella proiezione Prospettiva gli oggetti più lontani dal punto di vista appaiono di dimensioni inferiori e convergono in un punto a distanza.|
 |**Ortografico**|Nella proiezione Ortografico gli oggetti sembrano avere le stesse dimensioni, indipendentemente dalla distanza dal punto di vista. Non viene visualizzata alcuna convergenza. Se è abilitata la proiezione di tipo **Ortografico** non è possibile usare la modalità **Orbita** per posizionare arbitrariamente la visualizzazione.|
@@ -154,7 +154,7 @@ Per comprendere meglio un oggetto o una scena 3D, è possibile visualizzare dett
 
 ### Creare e importare oggetti 3D <a name="Adding3DObjects"></a>
 
-Per aggiungere una forma 3D predefinita alla scena, nella **casella degli strumenti** selezionare la forma desiderata e spostarla nell'area di progettazione. All'origine della scena vengono posizionate nuove forme. Nell'editor dei modelli sono disponibili sette forme: **Cono**, **Cubo**, **Cilindro**, **Disco**, **Piano**, **Sfera**e **Teiera**.
+Per aggiungere una forma 3D predefinita alla scena, nella **casella degli strumenti** selezionare la forma desiderata e spostarla nell'area di progettazione. All'origine della scena vengono posizionate nuove forme. Nell'editor dei modelli sono disponibili sette forme: **Cono**, **Cubo**, **Cilindro**, **Disco**, **Piano**, **Sfera** e **Teiera**.
 
 Per importare un oggetto 3D da un file, nella barra degli strumenti dell'**editor modello** scegliere **Avanzate** > **Scene Management** (Gestione scena)  > **Importa** > e specificare il file da importare.
 
@@ -191,7 +191,7 @@ Potrebbe essere utile utilizzare oggetti mediante aggancio alla griglia. Nella b
 
 Il punto di perno di un oggetto ne definisce il centro di rotazione e di ridimensionamento. È possibile modificare il punto di perno di un oggetto per variare il modo in cui viene interessato dalle trasformazioni di rotazione e ridimensionamento. Nella barra degli strumenti della **modalità editor dei modelli** scegliere **Modalità perno** per abilitare o disabilitare questa modalità. Se è abilitata la modalità perno, nel punto di perno dell'oggetto selezionato verrà visualizzato un piccolo indicatore di asse. Sarà quindi possibile usare gli strumenti **Traslazione** e **Rotazione** per modificare il punto di perno.
 
-Per una dimostrazione dell'uso del punto pivot, vedere, vedere [Procedura: Modificare il punto pivot di un modello 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
+Per una dimostrazione dell'uso del punto pivot, vedere [Procedura: Modificare il punto pivot di un modello 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Modalità locale e globale
 
@@ -241,7 +241,7 @@ L'aspetto di un oggetto è determinato dall'interazione dell'illuminazione nella
 
 L'editor modello fornisce i materiali predefiniti indicati di seguito.
 
-|Materiale|Description|
+|Materiale|Descrizione|
 |--------------|-----------------|
 |**Non illuminato**|Esegue il rendering di una superficie senza illuminazione simulata.|
 |**Lambert**|Esegue il rendering di un'area con luce di ambiente simulata e illuminazione diffusa.|
@@ -251,7 +251,7 @@ A ognuno di questi materiali viene applicata una trama sulla superficie di un og
 
 Per modificare il modo in cui un determinato oggetto risponde alle differenti sorgenti di luce nella scena, è possibile modificare le proprietà di illuminazione del materiale indipendentemente dagli altri oggetti che lo utilizzano. In questa tabella vengono descritte le proprietà di illuminazione comuni.
 
-|Proprietà di illuminazione|Description|
+|Proprietà di illuminazione|Descrizione|
 | - |-----------------|
 |**Di ambiente**|Descrive in che modo la superficie è interessata da luce ambientale.|
 |**Diffusa**|Descrive in che modo la superficie è interessata da luce direzionale e puntiforme.|
@@ -263,7 +263,7 @@ A seconda del materiale supportato, è possibile modificare le proprietà di ill
 
 Per rimuovere tutti i materiali da un oggetto, nella barra degli strumenti dell'**editor dei modelli** scegliere **Script** > **Materiali** > **Rimuovi materiali**.
 
-È possibile usare la finestra di **progettazione shader** per creare materiali shader personalizzati da applicare agli oggetti nella scena 3D. Per informazioni sulla creazione di materiali shader personalizzati, vedere [Finestra di progettazione shader](../designers/shader-designer.md). Per informazioni su come applicare un materiale di shader personalizzato a un oggetto, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+È possibile usare la finestra di **progettazione shader** per creare materiali shader personalizzati da applicare agli oggetti nella scena 3D. Per informazioni sulla creazione di materiali shader personalizzati, vedere [Finestra di progettazione shader](../designers/shader-designer.md). Per informazioni su come applicare un materiale shader personalizzato a un oggetto, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Gestione della scena
 
@@ -293,14 +293,14 @@ Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto
 
 |Comando|Scelte rapide da tastiera|
 |-------------| - |
-|Passare alla modalità **Seleziona**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
+|Passare alla modalità **Selezione**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
 |Passare alla modalità **Zoom**|**CTRL**+**G**, **CTRL**+**Z**<br /><br /> **Z**|
 |Passare alla modalità **Panoramica**|**CTRL**+**G**, **CTRL**+**P**<br /><br /> **K**|
-|Selezionare tutto|**CTRL**+**A**|
+|Selezionare tutto|**Ctrl**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESCAPE** (**ESC**)|
-|Fare zoom avanti|**Rotellina del mouse avanti**<br /><br /> **CTRL**+**Rotellina del mouse avanti**<br /><br /> **MAIUSC**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più (**+**)|
-|Fare zoom indietro|**Rotellina del mouse indietro**<br /><br /> **CTRL**+**Rotellina del mouse indietro**<br /><br /> **MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **CTRL**+**PGGIÙ**<br /><br /> Segno meno (**-**)|
+|Fare zoom avanti|**Rotellina del mouse avanti**<br /><br /> **CTRL**+**Rotellina del mouse avanti**<br /><br /> **MAIUSC**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più ( **+** )|
+|Fare zoom indietro|**Rotellina del mouse indietro**<br /><br /> **CTRL**+**Rotellina del mouse indietro**<br /><br /> **MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **CTRL**+**PGGIÙ**<br /><br /> Segno meno ( **-** )|
 |Panoramica della fotocamera verso l'alto|**PGGIÙ**|
 |Panoramica della fotocamera verso il basso|**PGSU**|
 |Panoramica della fotocamera verso sinistra|**Rotellina del mouse a sinistra**<br /><br /> **CTRL**+**PGGIÙ**|
@@ -334,7 +334,7 @@ Per rimuovere l'associazione padre-figlio tra due oggetti, selezionare l'oggetto
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Offre informazioni generali sugli strumenti disponibili in Visual Studio per usare gli asset grafici come trame, immagini, modelli 3D ed effetti shader.|
 |[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|

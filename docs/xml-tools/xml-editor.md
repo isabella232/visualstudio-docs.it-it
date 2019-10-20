@@ -2,23 +2,23 @@
 title: Editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7898ff0a592ff8aaf6c6a44672024e13e2f0221
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002492"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608350"
 ---
 # <a name="xml-editor"></a>Editor XML
 
-L'editor XML in Visual Studio si basa sull'editor di testo e include supporto aggiuntivo per i linguaggi XML. Quando si apre un file XML in Visual Studio, viene aperto nell'editor XML.
+L'editor XML in Visual Studio è basato sull'editor di testo e include supporto aggiuntivo per i linguaggi XML. Quando si apre un file XML in Visual Studio, questo viene aperto nell'editor XML.
 
-L'editor XML include le funzionalità seguenti:
+Nell'editor XML sono incluse le funzionalità seguenti:
 
 - Verifica della sintassi XML 1.0.
 
@@ -34,30 +34,30 @@ L'editor XML include le funzionalità seguenti:
 
 - Conversione di una DTD o di uno schema XDR (XML-Data Reduced) in uno schema XML.
 
-- Verifica della sintassi XSLT.
+- Controllo della sintassi XSLT.
 
 - Strutturazione del documento per consentire l'espansione e la compressione degli elementi.
 
-- Integrazione con il [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Ciò fornisce una visualizzazione gerarchica degli schemi XML.
+- Integrazione con [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). In questo modo viene fornita una visualizzazione gerarchica degli schemi XML.
 
-L'editor XML viene richiamato per estensioni di file note, ad esempio *. XML*, *XSD*, *XSL*, e *config*. Viene anche richiamato per estensioni di file sconosciute se il file contiene del codice XML.
+L'editor XML viene richiamato per estensioni di file note, quali *. XML*, *. xsd*, *. xsl*e *. config*. Viene inoltre richiamato su qualsiasi estensione di file sconosciuta se il file sembra contenere XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) consente nomi di set di attributi di completamento automatico, modalità modello e i nomi e i nomi dei parametri per una modalità specificata o un determinato modello denominato.
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md) consente di completare automaticamente i nomi dei set di attributi, le modalità e i nomi dei modelli e i nomi dei parametri per una modalità specificata o un modello denominato specificato.
 
 ## <a name="xslt-profiler"></a>Profiler XSLT
 
-Il [profiler XSLT](../xml-tools/xslt-profiler.md) crea prestazioni XSLT dettagliati report che consentono di misurare, valutare e trattare problemi correlati alle prestazioni nel codice XSLT. XSLT Profiler include anche suggerimenti utili per le ottimizzazioni dei fogli di stile XSL e XSLT.
+Il [Profiler XSLT](../xml-tools/xslt-profiler.md) crea report di prestazioni XSLT dettagliati che consentono di misurare, valutare e individuare i problemi correlati alle prestazioni nel codice XSLT. XSLT Profiler include anche suggerimenti utili per le ottimizzazioni dei fogli di stile XSL e XSLT.
 
 ## <a name="xslt-hierarchy"></a>Gerarchia XSLT
 
-Il [strumento di gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) consente di aggiungere i punti di interruzione in fogli di stile inclusi e/o regole del modello incorporate.
+Lo [strumento di gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) consente di aggiungere punti di interruzione nei fogli di stile inclusi e/o nelle regole del modello predefinite.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Opzioni dell'editor XML - formattazione](../ide/reference/options-text-editor-xml-formatting.md)
-- [Opzioni dell'editor XML - varie](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Opzioni dell'editor XML-formattazione](../ide/reference/options-text-editor-xml-formatting.md)
+- [Opzioni dell'editor XML-varie](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Riferimento agli standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549777"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603538"
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -26,7 +26,7 @@ Gli sviluppatori devono spesso visualizzare le definizioni del codice sorgente p
 
 ## <a name="go-to-definition"></a>Vai a definizione
 
-La funzionalità **Vai a definizione** consente di passare al sorgente di un tipo o di un membro e di aprire il risultato in una nuova scheda. Se si preferisce usare la tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del simbolo e premere **F12**. Se si preferisce usare il mouse, scegliere **Vai a definizione** dal menu di scelta rapida o usare la funzionalità **CTRL+clic** descritta nella sezione seguente.
+La funzionalità **Vai a definizione** consente di passare all'origine di un tipo o di un membro e di aprire il risultato in una nuova scheda. Se si è un utente della tastiera, posizionare il cursore di testo in un punto qualsiasi all'interno del nome del simbolo e premere **F12**. Se si preferisce usare il mouse, scegliere **Vai a definizione** dal menu di scelta rapida o usare la funzionalità **CTRL+clic** descritta nella sezione seguente.
 
 ### <a name="ctrl-click-go-to-definition"></a>Vai a definizione con Ctrl+clic
 
@@ -52,13 +52,13 @@ Premere quindi **Ctrl** (o il tasto di modifica selezionato in **Opzioni**) e fa
 
 Se viene visualizzata una definizione diversa da quella della finestra popup, è possibile seguire un percorso di navigazione usando i cerchi e le frecce visualizzati sopra la finestra popup.
 
-Per altre informazioni, vedere [Procedura: Visualizzare e modificare il codice tramite la finestra Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Per altre informazioni, vedere [How to: View and edit Code by using Peek Definition (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) (Procedura: Visualizzare e modificare il codice usando la finestra Visualizza definizione (ALT+F12)).
 
 ## <a name="view-metadata-as-source-code-c"></a>Visualizzare i metadati come codice sorgente (C#)
 
 Quando si visualizza la definizione di tipi o membri C# per i quali il codice sorgente non è disponibile, vengono visualizzati i relativi metadati. È possibile visualizzare le dichiarazioni di tipi e membri, ma non la relativa implementazione.
 
-Quando si esegue il comando **Vai a definizione** o **Visualizza definizione** per un elemento il cui codice sorgente non è disponibile, nell'editor del codice viene visualizzato un documento a schede che contiene una visualizzazione dei metadati dell'elemento visualizzati come codice sorgente. Il nome del tipo, seguito da **[da metadati]**, viene visualizzato nella scheda del documento.
+Quando si esegue il comando **Vai a definizione** o **Visualizza definizione** per un elemento il cui codice sorgente non è disponibile, nell'editor del codice viene visualizzato un documento a schede che contiene una visualizzazione dei metadati dell'elemento visualizzati come codice sorgente. Il nome del tipo, seguito da **[da metadati]** , viene visualizzato nella scheda del documento.
 
 Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Console>, i metadati per <xref:System.Console> vengono visualizzati nell'editor del codice come codice sorgente C#. Il codice corrisponde alla relativa dichiarazione, ma non mostra un'implementazione.
 
@@ -69,7 +69,7 @@ Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Conso
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualizzare le definizioni del codice sorgente decompilato invece dei metadati (C#)
 
-È possibile impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o di un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **Strumenti** > **Opzioni** dalla barra dei menu. Espandere quindi **Editor di testo** > **C#** > **Avanzate** e selezionare **Enable navigation to decompiled sources** (Abilita navigazione a origini decompilate).
+È possibile impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o di un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **Strumenti** > **Opzioni** dalla barra dei menu. Espandere quindi **Editor di testo** > **C#**  > **Avanzate** e selezionare **Enable navigation to decompiled sources** (Abilita navigazione a origini decompilate).
 
 ![Visualizzazione di una definizione decompilata](media/go-to-definition-decompiled-sources.png)
 
@@ -79,4 +79,4 @@ Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Conso
 ## <a name="see-also"></a>Vedere anche
 
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)
-- [Procedura: Visualizzare e modificare il codice tramite la finestra Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

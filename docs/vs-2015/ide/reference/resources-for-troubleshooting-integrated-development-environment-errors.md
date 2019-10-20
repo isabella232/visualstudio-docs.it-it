@@ -91,28 +91,28 @@ f1_keywords:
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5198c541deb4680d19e2b15ae0e672b831dbb13e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203681"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665541"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi agli errori dell'ambiente di sviluppo integrato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Non tutti i messaggi di errore hanno un argomento specifico della Guida associato. Se le informazioni contenute nel messaggio di errore non sono sufficienti a risolvere il problema, è possibile consultare altre risorse, ad esempio gli articoli della Knowledge Base, la community di sviluppatori o il supporto tecnico.  
-  
-## <a name="knowledge-base-articles"></a>Articoli della Knowledge Base  
- È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile accedere agli articoli KB dal sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).  
-  
-## <a name="the-developer-community"></a>La community degli sviluppatori  
- I forum consentono di interagire con altri sviluppatori e anche con i dipendenti Microsoft. Se si riscontra un errore per il quale non si riesce a trovare una soluzione, è possibile pubblicare domande sul problema in un forum. È anche possibile cercare nei newsgroup per vedere se altri utenti hanno pubblicato qualcosa sullo stesso problema.  
-  
- È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](https://techcommunity.microsoft.com/).  
-  
-## <a name="product-support"></a>Supporto tecnico  
+Non tutti i messaggi di errore hanno un argomento specifico della Guida associato. Se le informazioni contenute nel messaggio di errore non sono sufficienti a risolvere il problema, è possibile consultare altre risorse, ad esempio gli articoli della Knowledge Base, la community di sviluppatori o il supporto tecnico.
+
+## <a name="knowledge-base-articles"></a>Articoli della Knowledge Base
+ È possibile eseguire una ricerca nella Knowledge Base (KB) online per trovare gli articoli sui problemi del prodotto. Non per tutti i problemi esiste un articolo della Knowledge Base corrispondente, ma sono in genere documentati gli errori riscontrati da un numero significativo di utenti. È possibile accedere agli articoli KB dal sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).
+
+## <a name="the-developer-community"></a>La community degli sviluppatori
+ I forum consentono di interagire con altri sviluppatori e anche con i dipendenti Microsoft. Se si riscontra un errore per il quale non si riesce a trovare una soluzione, è possibile pubblicare domande sul problema in un forum. È anche possibile cercare nei newsgroup per vedere se altri utenti hanno pubblicato qualcosa sullo stesso problema.
+
+ È possibile accedere a forum, blog, chat e altre risorse dal sito Web delle [Community tecniche di Microsoft](https://techcommunity.microsoft.com/).
+
+## <a name="product-support"></a>Supporto tecnico
  Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [Comunicazioni con Microsoft](../../ide/talk-to-us.md).

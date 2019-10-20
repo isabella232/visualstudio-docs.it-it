@@ -1,24 +1,24 @@
 ---
-title: 'Microsoft Fakes: Generare e compilare il codice; convenzioni di denominazione'
+title: 'Microsoft Fakes: genera codice di compilazione &; convenzioni di denominazione'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918455"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665242"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
 Questo articolo illustra problemi e opzioni di generazione e compilazione di codice Fakes e descrive le convenzioni di denominazione per tipi, membri e parametri generati da Fakes.
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
@@ -134,7 +134,7 @@ Il framework Fakes usa la stessa chiave per firmare tutti gli assembly generati.
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly sottoposto a shim, specificando il percorso completo del file *.snk* che contiene la chiave alternativa come valore dell'attributo `KeyFile` nell'elemento `Fakes`\\`Compilation` del file con estensione *fakes*. Ad esempio:
+È possibile specificare una chiave pubblica diversa per l'assembly Fakes, ad esempio una chiave creata per l'assembly sottoposto a shim, specificando il percorso completo del file *.snk* che contiene la chiave alternativa come valore dell'attributo `KeyFile` nell'elemento `Fakes`\\`Compilation` del file con estensione *fakes*. Esempio:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->

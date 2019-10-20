@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970226"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661641"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 
@@ -62,7 +62,7 @@ Le regole di sintassi per le opzioni `devenv` sono simili alle regole per altre 
 
 Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed eseguire l'attività descritta.
 
-|Switch della riga di comando|Description|
+|Switch della riga di comando|Descrizione|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Avvia l'IDE ed esegue il comando specificato.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Carica un eseguibile C++ sotto il controllo del debugger. Questa opzione non è disponibile per gli eseguibili Visual Basic o C#. Per altre informazioni, vedere [Automatically start a process in the debugger](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger) (Avviare automaticamente un processo nel debugger).<br /><br /> `devenv /debugexe mysln.exe`|
@@ -75,11 +75,11 @@ Le opzioni della riga di comando seguenti consentono di visualizzare l'IDE ed es
 |[/Run o /R](run-devenv-exe.md)|Compila ed esegue la soluzione specificata.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Compila ed esegue la soluzione specificata, riduce a icona l'IDE quando la soluzione viene eseguita e chiude l'IDE al termine dell'esecuzione della soluzione.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Avvia Visual Studio in modalità sicura. Questa opzione carica solo l'ambiente predefinito, i servizi predefiniti e le versioni acquistate di pacchetti di terze parti.<br /><br /> Questa opzione non accetta argomenti.|
-|[/UseEnv](useenv-devenv-exe.md)|Fa sì che l'IDE usi le variabili di ambiente PATH, INCLUDE, LIBPATH e LIB per la compilazione C++. Questa opzione viene installata con il carico di lavoro **Sviluppo di applicazioni desktop con C++**. Per altre informazioni, vedere [Impostare le variabili di percorso e di ambiente per le compilazioni da riga di comando](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Fa sì che l'IDE usi le variabili di ambiente PATH, INCLUDE, LIBPATH e LIB per la compilazione C++. Questa opzione viene installata con il carico di lavoro **Sviluppo di applicazioni desktop con C++** . Per altre informazioni, vedere [Impostare le variabili di percorso e di ambiente per le compilazioni da riga di comando](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Le opzioni della riga di comando seguenti non visualizzano l'IDE.
 
-|Switch della riga di comando|Description|
+|Switch della riga di comando|Descrizione|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|Visualizza la Guida per le opzioni `devenv` nella **finestra del prompt dei comandi**.<br /><br /> Questa opzione non accetta argomenti.|
 |[/Build](build-devenv-exe.md)|Compila la soluzione o il progetto specificati in base alla configurazione relativa.<br /><br /> `devenv mysln.sln /build`|

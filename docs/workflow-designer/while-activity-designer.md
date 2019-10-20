@@ -1,35 +1,35 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - durante la finestra di progettazione
+title: ActivityDesigner Progettazione flussi di lavoro-while
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.While.UI
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9ea1f6bd42526eb0ea38c23cbf0f28c4346515
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6570a80de5be17b2893fc4105f057e655e841881
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433893"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649762"
 ---
 # <a name="while-activity-designer"></a>ActivityDesigner While
 
-Il <xref:System.Activities.Statements.While> attività viene eseguita l'attività contenuta nel relativo <xref:System.Activities.Statements.While.Body%2A> while specificato <xref:System.Activities.Statements.While.Condition%2A> restituisca **true**. L'attività contenuta potrebbe non essere mai eseguita. Se si desidera eseguirla almeno una volta, usare l'attività <xref:System.Activities.Statements.DoWhile>.
+L'attività <xref:System.Activities.Statements.While> esegue l'attività contenuta nel relativo <xref:System.Activities.Statements.While.Body%2A> mentre il <xref:System.Activities.Statements.While.Condition%2A> specificato restituisce **true**. L'attività contenuta potrebbe non essere mai eseguita. Se si desidera eseguirla almeno una volta, usare l'attività <xref:System.Activities.Statements.DoWhile>.
 
 ## <a name="while-properties-in-workflow-designer"></a>Proprietà di While in Progettazione flussi di lavoro
 
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.While> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà|Obbligatorio|Utilizzo|
+|Nome proprietà|Richiesto|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.While> nell'intestazione. Il valore predefinito è While. Il valore può essere modificato nel **proprietà** finestra o direttamente nell'intestazione dell'ActivityDesigner.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.While.Body%2A>|False|Contiene l'attività da eseguire durante la <xref:System.Activities.Statements.While.Condition%2A> restituisca **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|True|Contiene l'espressione Visual Basic che viene valutata per determinare se l'attività nel <xref:System.Activities.Statements.While.Body%2A> deve essere eseguito.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.While> nell'intestazione. Il valore predefinito è While. Il valore può essere modificato nella finestra **Proprietà** o direttamente nell'intestazione Activity Designer.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
+|<xref:System.Activities.Statements.While.Body%2A>|False|Contiene l'attività da eseguire mentre l'<xref:System.Activities.Statements.While.Condition%2A> restituisce **true**.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Contiene l'espressione Visual Basic che viene valutata per determinare se l'attività nel <xref:System.Activities.Statements.While.Body%2A> deve essere eseguita.|
 
 ## <a name="see-also"></a>Vedere anche
 

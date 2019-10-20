@@ -9,22 +9,22 @@ helpviewer_keywords:
 - plug-ins, load test
 - load tests, plug-ins
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f8bd3aeab7606e33818bce1324ded83fc333eb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e2eea116eb18e192720410b71136de9d823ed0fe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918115"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653661"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedura: Creare un plug-in test di carico
 
-È possibile creare un plug-in test di carico per eseguire il codice in momenti diversi durante l'esecuzione del test di carico. Si crea un plug-in per espandere o modificare le funzioni incorporate del test di carico. È ad esempio possibile scrivere codice per un plug-in test di carico per impostare o modificare il modello del test di carico durante l'esecuzione del test di carico. A tale scopo, è necessario creare una classe che erediti l'interfaccia <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Tale classe deve implementare il metodo <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> dell'interfaccia. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+È possibile creare un plug-in test di carico per eseguire il codice in momenti diversi durante l'esecuzione del test di carico. Si crea un plug-in per espandere o modificare le funzioni incorporate del test di carico. È ad esempio possibile scrivere codice per un plug-in test di carico per impostare o modificare il modello del test di carico durante l'esecuzione del test di carico. A tale scopo, è necessario creare una classe che erediti l'interfaccia <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Tale classe deve implementare il metodo <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> dell'interfaccia. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
-> È anche possibile creare plug-in per i test web. Per altre informazioni, vedere [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+> È anche possibile creare plug-in per i test web. Per ulteriori informazioni, vedere [procedura: creare un plug-in del test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -82,7 +82,7 @@ ms.locfileid: "68918115"
     > [!WARNING]
     > Quando si esegue un test delle prestazioni web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
-    > **Richiesta non riuscita: Eccezione nell'evento \<plug-in>: Non è stato possibile caricare il file o l'assembly '\<"file .dll Nome plug-in" Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
+    > **Richiesta non riuscita: eccezione nell'evento > \<plug: non è stato possibile caricare il nome del plug-in del file o dell'assembly ' \<' ". file dll >, Version = \<n. n. n. n >, Culture = neutral, PublicKeyToken = null ' o una delle relative dipendenze. Il sistema non è in grado di trovare il file specificato.**
     >
     > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)** , ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
@@ -161,4 +161,4 @@ A un test di carico sono associati otto eventi che possono essere gestiti nel pl
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)

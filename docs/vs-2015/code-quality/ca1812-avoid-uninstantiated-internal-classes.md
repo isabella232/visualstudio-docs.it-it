@@ -1,5 +1,5 @@
 ---
-title: 'CA1812: Evitare classi interne prive di istanze | Microsoft Docs'
+title: 'CA1812: evitare classi interne prive di istanze | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1812
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 caps.latest.revision: 28
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5a36ee8cffc221d15243ff72e2e71558e867319
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157987"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645401"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitare classi interne prive di istanze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,16 +29,16 @@ ms.locfileid: "68157987"
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
-|Category|Microsoft.Performance|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. performance|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
  Un'istanza di un tipo a livello di assembly non viene creata dal codice nell'assembly.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola cerca di individuare una chiamata a uno dei costruttori del tipo e se viene trovata alcuna chiamata viene segnalata una violazione.
+ Questa regola tenta di individuare una chiamata a uno dei costruttori del tipo e segnala una violazione se non viene trovata alcuna chiamata.
 
- I tipi seguenti non vengono analizzati da questa regola:
+ I tipi seguenti non vengono esaminati da questa regola:
 
 - Tipi valore
 
@@ -48,29 +48,29 @@ ms.locfileid: "68157987"
 
 - Delegati
 
-- Tipi di matrice emesso dal compilatore
+- Tipi di matrici emesse dal compilatore
 
-- I tipi che non può essere inizializzata e che definiscono `static` (`Shared` in Visual Basic) solo i metodi.
+- Tipi di cui non è possibile creare un'istanza e che definiscono solo i metodi `static` (`Shared` in Visual Basic).
 
-  Se si applicano <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> all'assembly che si sta analizzando, questa regola non verrà eseguita su qualsiasi costruttore contrassegnati come `internal` poiché non è possibile stabilire se un campo viene usato da un altro `friend` assembly.
+  Se si applicano <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> all'assembly analizzato, questa regola non verrà eseguita su alcun costruttore contrassegnato come `internal` perché non è possibile stabilire se un campo è utilizzato da un altro assembly di `friend`.
 
-  Sebbene sia possibile aggirare questa limitazione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analisi del codice, FxCop autonomo esterno si verificherà in costruttori interni se ogni `friend` assembly è presente nell'analisi.
+  Anche se non è possibile aggirare questa limitazione nell'analisi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] codice, l'FxCop autonomo esterno si verificherà sui costruttori interni se ogni assembly `friend` è presente nell'analisi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere il codice che lo utilizza. Se il tipo contiene solo i metodi statici, aggiungere uno dei valori seguenti per il tipo per impedire al compilatore di creazione di un costruttore di istanza pubblici predefinito:
+ Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere il codice che lo utilizza. Se il tipo contiene solo metodi statici, aggiungere uno degli elementi seguenti al tipo per impedire al compilatore di emettere un costruttore di istanza pubblica predefinito:
 
-- Un costruttore privato per i tipi che hanno come destinazione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versioni 1.0 e 1.1.
+- Un costruttore privato per i tipi destinati a [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versioni 1,0 e 1,1.
 
-- Il `static` (`Shared` in Visual Basic) che hanno come destinazione i tipi di modificatore per [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- Il modificatore `static` (`Shared` in Visual Basic) per i tipi destinati [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola. Si consiglia di eliminare l'avviso nelle situazioni seguenti:
+ È possibile eliminare un avviso da questa regola in modo sicuro. Si consiglia di non visualizzare più questo avviso nelle situazioni seguenti:
 
-- La classe viene creata tramite i metodi di reflection con associazione tardiva, ad esempio <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- La classe viene creata tramite metodi di reflection ad associazione tardiva, ad esempio <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- La classe viene creata automaticamente dal runtime o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Ad esempio, le classi che implementano <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La classe viene creata automaticamente dalla fase di esecuzione o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Ad esempio, le classi che implementano <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- La classe viene passata come parametro di tipo generico che ha un nuovo vincolo. Nell'esempio seguente genera ad esempio, questa regola.
+- La classe viene passata come parametro di tipo generico con un nuovo vincolo. Nell'esempio seguente, ad esempio, verrà generata questa regola.
 
   ```csharp
   internal class MyClass
@@ -91,11 +91,11 @@ ms.locfileid: "68157987"
   mc.Create();
   ```
 
-  In questi casi, si consiglia che non visualizzare questo avviso.
+  In questi casi, è consigliabile non visualizzare questo avviso.
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1811: Evitare il codice privato](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811: Evitare il codice privato non chiamato](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: Controllare i parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: Rivedere i parametri non usati](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Rimuovere locali non utilizzati](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: Rimuovere locali non usati](../code-quality/ca1804-remove-unused-locals.md)

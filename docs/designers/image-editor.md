@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897397"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635311"
 ---
 # <a name="image-editor"></a>Editor immagini
 
@@ -56,7 +56,7 @@ Questa sezione descrive come aggiungere un'immagine al progetto Visual Studio e 
 
 3. Specificare il **Nome** e la **Posizione** in cui si desidera creare il file di immagine.
 
-4. Scegliere il pulsante **Aggiungi**.
+4. Scegliere il pulsante **Aggiungi** .
 
 ### <a name="choose-the-image-format"></a>Scelta del formato dell'immagine
 
@@ -111,7 +111,7 @@ I comandi che influiscono sullo stato dell'**editor di immagini** si trovano nel
 
 La tabella seguente descrive gli elementi nella barra degli strumenti della **modalità dell'editor di immagini**, elencati nell'ordine di visualizzazione da sinistra verso destra:
 
-|Elemento della barra degli strumenti|Description|
+|Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
 |**Selezione**|Consente di selezionare un'area rettangolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione irregolare**|Consente di selezionare un'area non regolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
@@ -124,10 +124,10 @@ La tabella seguente descrive gli elementi nella barra degli strumenti della **mo
 |**Griglia**|Abilita o disabilita la griglia che indica i limiti dei pixel. È possibile che la griglia non venga visualizzata finché non si ingrandisce l'immagine con lo zoom.|
 |**Visualizzazione livello MIP successivo**|Attiva il successivo livello MIP più grande in una catena di mapping MIP. Il livello MIP attivo è visualizzato nell'area di progettazione. Questo elemento è disponibile solo per le trame con livelli MIP.|
 |**Visualizzazione livello MIP precedente**|Attiva il successivo livello MIP più piccolo in una catena di mapping MIP. Il livello MIP attivo è visualizzato nell'area di progettazione. Questo elemento è disponibile solo per le trame con livelli MIP.|
-|**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:**  abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|
+|**Canale rosso**<br /><br /> **Canale verde**<br /><br /> **Canale blu**<br /><br /> **Canale alfa**|Abilita o disabilita il canale di colore specifico. **Nota:** abilitando o disabilitando in modo sistematico i canali dei colori, è possibile isolare i problemi correlati a uno o più canali. Ad esempio, è possibile identificare la trasparenza alpha non corretta.|
 |**Sfondo**|Abilita o disabilita la visualizzazione dello sfondo attraverso parti trasparenti dell'immagine. È possibile configurare la modalità di visualizzazione dello sfondo scegliendo tra le opzioni seguenti:<br /><br /> **Scacchi**<br /> Usa il colore verde insieme al colore di sfondo specificato per visualizzare lo sfondo con un motivo a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.<br /><br /> Sfondo bianco<br /> Usa il bianco per visualizzare lo sfondo.<br /><br /> Sfondo nero<br /> Usa il nero per visualizzare lo sfondo.<br /><br /> Anima sfondo<br /> Esegue lentamente una panoramica del modello a scacchiera. È possibile usare questa opzione per rendere più evidenti le parti trasparenti dell'immagine.|
 |**Proprietà**|Apre o chiude alternativamente la finestra **Proprietà**.|
-|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per eseguire il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP, Windows Advanced Rasterization Platform, di Direct3D 11 per il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato *DDS* per salvare l'immagine.<br /><br /> **Visualizza**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** È possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
+|**Avanzate**|Contiene opzioni e comandi aggiuntivi.<br /><br /> **Filtri**<br /><br /> Fornisce vari filtri di immagine comuni: **Bianco e nero**, **Sfocatura**, **Luminosità**, **Scurimento**, **Rilevamento bordi**, **Rilievo**, **Inverti colori**, **Increspatura**, **Tono seppia** e **Nitidezza**.<br /><br /> **Motori grafica**<br /><br /> **Rendering con D3D11**<br /> Usa Direct3D 11 per eseguire il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Rendering con D3D11WARP**<br /> Usa la piattaforma WARP, Windows Advanced Rasterization Platform, di Direct3D 11 per il rendering dell'area di progettazione dell'**editor di immagini**.<br /><br /> **Strumenti**<br /><br /> **Capovolgi orizzontalmente**<br /> Traspone l'immagine attorno all'asse orizzontale, o asse X.<br /><br /> **Capovolgi verticalmente**<br /> Traspone l'immagine attorno all'asse verticale, o asse Y.<br /><br /> **Genera MIP**<br /> Genera i livelli MIP per un'immagine. Se i livelli MIP sono già presenti, vengono ricreati dal livello MIP più grande. Le modifiche apportate ai livelli MIP più piccoli vengono perse. Per salvare i livelli MIP generati, è necessario usare il formato *DDS* per salvare l'immagine.<br /><br /> **Visualizzazione**<br /><br /> **Frequenza dei fotogrammi**<br /> Quanto è abilitata, consente di visualizzare la frequenza dei fotogrammi nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. **Suggerimento:** è possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.|
 
 ### <a name="image-editor-toolbar"></a>Barra degli strumenti dell'editor di immagini
 
@@ -135,7 +135,7 @@ La tabella seguente descrive gli elementi nella barra degli strumenti della **mo
 
 La tabella seguente descrive gli elementi nella barra degli strumenti dell'**editor di immagini**, elencati nell'ordine di visualizzazione dall'alto verso il basso:
 
-|Elemento della barra degli strumenti|Description|
+|Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
 |**Matita**|Usa la selezione di colore attiva per disegnare un tratto con aliasing. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
 |**Pennello**|Usa la selezione di colore attiva per disegnare un tratto con anti-aliasing. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
@@ -144,7 +144,7 @@ La tabella seguente descrive gli elementi nella barra degli strumenti dell'**edi
 |**Riempimento**|Usa la selezione di colore attiva per riempire un'area dell'immagine. L'area interessata include il pixel a cui viene applicato il riempimento e ogni pixel dello stesso colore che sia connesso al primo tramite pixel dello stesso colore. Se il riempimento viene applicato all'interno di una selezione attiva, l'area interessata sarà vincolata dalla selezione.<br /><br /> Per impostazione predefinita, la selezione di colore attiva viene fusa insieme all'area interessata dell'immagine in base alla componente alfa. Per usare la selezione di colore attiva per sovrascrivere l'area interessata, tenere premuto **MAIUSC** quando si usa lo strumento di riempimento.|
 |**Gomma**|Imposta i pixel sul colore completamente trasparente se l'immagine supporta un canale alfa. In caso contrario, imposta i pixel sul colore di sfondo attivo.|
 |**Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**|Disegna una forma in un'immagine. È possibile impostare il colore e lo spessore del contorno nella finestra **Proprietà**.<br /><br /> Per disegnare una primitiva con larghezza e altezza uguali, tenere premuto **MAIUSC** mentre si esegue il disegno.|
-|**per**|Usa la selezione del colore di primo piano per tracciare del testo. Il colore di sfondo è determinato dalla selezione del colore di sfondo. Per uno sfondo trasparente, il valore alfa della selezione del colore di sfondo deve essere 0. Mentre l'area di testo è attiva, è possibile specificare se il testo viene tracciato usando un tratto con anti-aliasing ed è possibile impostare per il testo le opzioni **Valore**, **Tipo di carattere** e **Dimensione** e lo stile **Grassetto**, **Corsivo** o **Sottolineato** nella finestra **Proprietà**. Il contenuto e l'aspetto del testo viene completato quando l'area di testo non è più attiva.|
+|**Testo**|Usa la selezione del colore di primo piano per tracciare del testo. Il colore di sfondo è determinato dalla selezione del colore di sfondo. Per uno sfondo trasparente, il valore alfa della selezione del colore di sfondo deve essere 0. Mentre l'area di testo è attiva, è possibile specificare se il testo viene tracciato usando un tratto con anti-aliasing ed è possibile impostare per il testo le opzioni **Valore**, **Tipo di carattere** e **Dimensione** e lo stile **Grassetto**, **Corsivo** o **Sottolineato** nella finestra **Proprietà**. Il contenuto e l'aspetto del testo viene completato quando l'area di testo non è più attiva.|
 |**Ruota**|Ruota l'immagine di 90 gradi in senso orario.|
 |**Taglia**|Taglia l'immagine in base alla selezione attiva.|
 
@@ -158,7 +158,7 @@ Alcuni formati di immagine, ad esempio i formati con estensione *DDS*, DirectDra
 
 La tabella seguente descrive come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:
 
-|Strumento|Description|
+|Strumento|Descrizione|
 |----------|-----------------|
 |**Matita**, **Pennello**, **Aerografo**, **Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**, **Testo**|Per fondere la selezione di colore attiva insieme all'immagine, nella finestra **Proprietà** espandere il gruppo di proprietà **Canali** e impostare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.<br /><br /> Per disegnare usando la selezione di colore attiva e lasciare invariato il valore alfa dell'immagine, deselezionare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.|
 |**Riempimento**|Per fondere la selezione di colore attiva insieme all'immagine, basta scegliere l'area da riempire.<br /><br /> Per usare la selezione di colore attiva, incluso il valore del canale alfa, per sovrascrivere l'immagine, tenere premuto **MAIUSC** e scegliere l'area da riempire.|
@@ -169,7 +169,7 @@ La tabella seguente descrive come i diversi tipi di strumenti controllano la mod
 
 La tabella seguente descrive le proprietà dell'immagine:
 
-|Proprietà|Description|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |Larghezza|Larghezza dell'immagine.|
 |Altezza|Altezza dell'immagine.|
@@ -214,7 +214,7 @@ Dopo aver selezionato un'area, è possibile ridimensionarla o ridimensionarne i 
 
 La tabella seguente illustra le combinazioni di tasti di modifica valide:
 
-|CTRL|Shift|ALT|Description|
+|CTRL|Shift|ALT|Descrizione|
 |----------|-----------|---------|-----------------|
 ||||Ridimensiona il contenuto dell'area selezionata.|
 ||**MAIUSC**||Ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
@@ -235,7 +235,7 @@ La tabella seguente descrive le proprietà degli strumenti:
 |----------|----------------|
 |Tutti gli strumenti e le selezioni|**Rotazione di**<br /> Definisce il numero di gradi, in senso orario, in base al quale viene ruotato lo strumento o la selezione.|
 |**Matita**, **Pennello**, **Aerografo**, **Gomma**|**Spessore**<br /> Definisce le dimensioni dell'area interessata dallo strumento.|
-|**per**|**Anti-alias**<br /> Traccia il testo usando bordi con anti-aliasing. In questo modo il testo assume un aspetto più uniforme.<br /><br /> **Valore**<br /> Testo da tracciare.<br /><br /> **Tipo di carattere**<br /> Tipo di carattere usato per tracciare il testo.<br /><br /> **Dimensione**<br /> Dimensione del testo.<br /><br /> **Grassetto**<br /> Applica il grassetto.<br /><br /> **Corsivo**<br /> Applica il corsivo.<br /><br /> **Sottolineato**<br /> Applica la sottolineatura.|
+|**Testo**|**Anti-alias**<br /> Traccia il testo usando bordi con anti-aliasing. In questo modo il testo assume un aspetto più uniforme.<br /><br /> **Valore**<br /> Testo da tracciare.<br /><br /> **Tipo di carattere**<br /> Tipo di carattere usato per tracciare il testo.<br /><br /> **Size**<br /> Dimensione del testo.<br /><br /> **Grassetto**<br /> Applica il grassetto.<br /><br /> **Corsivo**<br /> Applica il corsivo.<br /><br /> **Sottolineato**<br /> Applica la sottolineatura.|
 |**Primitiva 2D**|**Anti-alias**<br /> Disegna le primitive usando bordi con anti-aliasing. In questo modo, le primitive assumono un aspetto più uniforme.<br /><br /> **Spessore**<br /> Definisce lo spessore della linea che forma il contorno della primitiva.<br /><br /> **Raggio X**<br /> (Solo rettangolo arrotondato) Definisce il raggio di arrotondamento per i bordi superiore e inferiore della primitiva.<br /><br /> **Raggio Y**<br /> (Solo rettangolo arrotondato) Definisce il raggio di arrotondamento per i bordi destro e sinistro della primitiva.|
 |**Matita**, **Pennello**, **Aerografo**, **Primitiva 2D**|**Canali**<br /> Abilita o disabilita i canali di colore specifici per la visualizzazione e il disegno. Se per un canale di colore specifico è impostata l'opzione **Visualizzazione**, tale canale è visibile nell'immagine. In caso contrario, non è visibile. Se per un canale di colore specifico è impostata l'opzione **Disegno**, tale canale è interessato dalle operazioni di disegno. In caso contrario, non lo è.|
 |**Selezione con bacchetta magica**, **Riempimento**|**Tolleranza**<br /> Definisce la differenza massima tra i colori adiacenti considerati simili, in modo da includere un numero minore o maggiore di colori simili nell'area interessata o selezionata. Per impostazione predefinita, il valore è 32. In questo modo, i pixel adiacenti in 32 tonalità (più chiare o più scure) del colore originale vengono considerati come parte dell'area.|
@@ -244,10 +244,10 @@ La tabella seguente descrive le proprietà degli strumenti:
 
 |Comando|Scelte rapide da tastiera|
 |-------------| - |
-|Passare alla modalità **Seleziona**|**S**|
+|Passare alla modalità **Selezione**|**S**|
 |Passare alla modalità **Zoom**|**Z**|
 |Passare alla modalità **Panoramica**|**K**|
-|Selezionare tutto|**CTRL**+**A**|
+|Selezionare tutto|**Ctrl**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESC** (Escape)|
 |Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più ( **+** )|
@@ -286,7 +286,7 @@ La tabella seguente descrive le proprietà degli strumenti:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce informazioni generali sugli strumenti disponibili in Visual Studio per usare gli asset grafici come trame, immagini, modelli 3D ed effetti shader.|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di Visual Studio per lavorare con i modelli 3D.|

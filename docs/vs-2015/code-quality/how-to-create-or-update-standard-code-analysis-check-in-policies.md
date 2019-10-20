@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Crea o aggiorna i criteri di controllo dell'analisi del codice Standard | Microsoft Docs"
+title: "Procedura: creare o aggiornare criteri di archiviazione standard dell'analisi del codice | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,67 +10,67 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 ms.assetid: 458eb3b8-bb5e-4056-82b7-7079ce9c4089
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5e8016032a0ea8d1b8c62b2dfc2bbdf72251590c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825808"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661782"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare i criteri di archiviazione standard di analisi codice
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile richiedere che l'analisi del codice deve essere eseguito in tutti i progetti di codice in un progetto team usando i criteri di controllo dell'analisi codice. Richiedere l'analisi del codice, è possibile migliorare la qualità del codice che viene archiviata nella codebase.  
-  
+È possibile richiedere l'esecuzione dell'analisi del codice in tutti i progetti di codice in un progetto team usando i criteri di archiviazione dell'analisi del codice. La richiesta di analisi del codice può migliorare la qualità del codice archiviato nella codebase.
+
 > [!NOTE]
-> Questa funzionalità è disponibile solo se si usa Team Foundation Server.  
-  
- Criteri di controllo dell'analisi del codice vengono impostati nelle impostazioni del progetto team e si applicano a ogni progetto di codice nel progetto team. Esecuzioni dell'analisi del codice sono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si abilita un criterio di controllo dell'analisi codice, file in un progetto di codice che devono essere archiviati devono essere compilati termine dell'ultima modifica e analisi del codice eseguito che contiene, come minimo, le regole nelle impostazioni del progetto team devono essere eseguite nel computer in cui il c sono state apportate modifiche in sospeso.  
-  
-- Per codice gestito, si impostano i criteri di archiviazione specificando una *set di regole* che contiene un sottoinsieme di regole di analisi codice.  
-  
-- Per codice C/C++, i criteri di controllo richiedono che vengano eseguite tutte le regole di analisi codice. È possibile aggiungere le direttive del preprocessore per disabilitare regole specifiche per singoli progetti di codice nel progetto team.  
-  
-  Dopo aver specificato un criterio di controllo per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi codice per progetti di codice alle impostazioni dei criteri del progetto team.  
-  
-### <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor Criteri di archiviazione  
-  
-1. In Team Explorer, fare clic sul nome del progetto team, scegliere **le impostazioni del progetto Team**, quindi fare clic su **controllo del codice sorgente**.  
-  
-2. Nel **controllo del codice sorgente** finestra di dialogo, seleziona la **dei criteri di archiviazione** scheda.  
-  
-3. Eseguire una delle operazioni seguenti:  
-  
-    - Fare clic su **Add** per creare un nuovo criterio di controllo.  
-  
-    - Fare doppio clic su esistente **analisi del codice** degli elementi nella **tipo di criterio** elenco per modificare i criteri.  
-  
-### <a name="to-set-policy-options"></a>Per impostare le opzioni dei criteri  
-  
-- Selezionare o deselezionare le opzioni seguenti:  
-  
-    |Opzione|Descrizione|  
-    |------------|-----------------|  
-    |**Consenti archiviazione dei soli file che fanno parte della soluzione corrente.**|Analisi del codice può eseguire solo sui file specificati nel file di configurazione soluzione e progetto. Questo criterio garantisce che tutto il codice che fa parte di una soluzione verrà analizzato.|  
-    |**Applicare analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ deve essere compilato con la /ANALYZE opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|  
-    |**Applicare l'analisi del codice per il codice gestito**|Richiede che tutti i progetti gestiti Esegui analisi del codice e compilare prima che possano essere archiviati.|  
-  
-- 
-  
-### <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestite  
-  
-- Dal **eseguire questo set di regole** elencare, usare uno dei metodi seguenti:  
-  
-  - Selezionare un set di regole standard Microsoft.  
+> Questa funzionalità è disponibile solo se si usa Team Foundation Server.
 
-  - Per selezionare un set di regole personalizzato, fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente... >** , quindi digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:  
+ I criteri di archiviazione dell'analisi codice sono impostati nelle impostazioni del progetto team e si applicano a ogni progetto di codice nel progetto team. Le esecuzioni dell'analisi del codice sono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Le esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si Abilita un criterio di archiviazione dell'analisi del codice, i file in un progetto di codice da archiviare devono essere compilati dopo l'ultima modifica e un'esecuzione dell'analisi del codice che contiene almeno le regole nelle impostazioni del progetto team devono essere eseguite nel computer in cui c sono stati apportati blocchi.
 
-  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+- Per il codice gestito, è possibile impostare i criteri di archiviazione specificando un *set* di regole contenente un subset delle regole di analisi del codice.
 
-  - Per altre informazioni su come creare ed implementare una regola di criteri di archiviazione personalizzati, vedere [criteri di controllo che implementa personalizzati per codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
-  
-## <a name="see-also"></a>Vedere anche  
+- Per C/C++ code, i criteri di archiviazione richiedono l'esecuzione di tutte le regole di analisi del codice. È possibile aggiungere direttive del pre-processore per disabilitare regole specifiche per i singoli progetti di codice nel progetto team.
+
+  Dopo aver specificato i criteri di archiviazione per il codice gestito, i membri del team possono sincronizzare le impostazioni di analisi del codice per i progetti di codice nelle impostazioni dei criteri del progetto team.
+
+### <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor dei criteri di archiviazione
+
+1. In Team Explorer fare clic con il pulsante destro del mouse sul nome del progetto team, scegliere **Impostazioni progetto team**, quindi fare clic su **controllo del codice sorgente**.
+
+2. Nella finestra di dialogo **controllo del codice sorgente** selezionare la scheda **criteri di archiviazione** .
+
+3. Effettuare una delle operazioni riportate di seguito:
+
+    - Fare clic su **Aggiungi** per creare nuovi criteri di archiviazione.
+
+    - Fare doppio clic sull'elemento di **analisi del codice** esistente nell'elenco tipo di **criteri** per modificare il criterio.
+
+### <a name="to-set-policy-options"></a>Per impostare le opzioni dei criteri
+
+- Selezionare o deselezionare le opzioni seguenti:
+
+    |Opzione|Descrizione|
+    |------------|-----------------|
+    |**Applicare l'archiviazione per contenere solo i file che fanno parte della soluzione corrente.**|L'analisi del codice può essere eseguita solo su file specificati nei file di configurazione della soluzione e del progetto. Questo criterio garantisce che tutto il codice che fa parte di una soluzione venga analizzato.|
+    |**Applicare l'analisiC++ C/codice (/Analyze)**|Richiede che tutti i progetti C++ C o siano compilati con l'opzione del compilatore/analyze per eseguire l'analisi del codice prima di poterli archiviare.|
+    |**Imponi analisi codice per codice gestito**|Richiede che tutti i progetti gestiti eseguano l'analisi del codice e vengano compilati prima di poterli archiviare.|
+
+-
+
+### <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestite
+
+- Dall'elenco **Esegui questo set di regole** , usare uno dei metodi seguenti:
+
+  - Selezionare un set di regole standard Microsoft.
+
+  - Per selezionare un set di regole personalizzato, fare clic su **\<Select set di regole dal controllo del codice sorgente... >** , quindi digitare il percorso del controllo della versione del set di regole nel browser del controllo del codice sorgente. La sintassi di un percorso di controllo della versione è la seguente:
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`
+
+  - Per ulteriori informazioni su come creare e implementare un set di regole dei criteri di archiviazione personalizzato, vedere [implementazione di criteri di archiviazione personalizzati per il codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+
+## <a name="see-also"></a>Vedere anche
  [Creazione e uso di criteri di archiviazione di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
