@@ -1,5 +1,5 @@
 ---
-title: Ricerca e uso delle estensioni | Microsoft Docs
+title: Ricerca e utilizzo di estensioni | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426380"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655869"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Ricerca e uso delle estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
 > A partire da Visual Studio 2015, le estensioni ospitate in Visual Studio Gallery verranno aggiornate automaticamente.  È possibile modificare questa impostazione tramite la finestra di dialogo **Estensioni e aggiornamenti** .  Per informazioni dettagliate, vedere la sezione **Aggiornamenti automatici delle estensioni** più avanti.
 
 ## <a name="finding-visual-studio-extensions"></a>Ricerca delle estensioni di Visual Studio
- È possibile installare estensioni dal [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o nella [raccolta di esempi](https://code.msdn.microsoft.com/vstudio) del sito Web Microsoft. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio. In Visual Studio sono supportate estensioni nel formato di pacchetto VSIX. Queste includono modelli di progetto, modelli di elemento, elementi di **Casella degli strumenti** componenti MEF (Managed Extension Framework) e VSPackage. È anche possibile scaricare le estensioni basate su MSI, ma la finestra di dialogo **Estensioni e aggiornamenti** non consente di abilitarle o disabilitarle. Visual Studio Gallery contiene estensioni VSIX e MSI.
+ È possibile installare le estensioni dal [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o dalla [raccolta di esempi](https://code.msdn.microsoft.com/vstudio) nel sito Web Microsoft. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio. In Visual Studio sono supportate estensioni nel formato di pacchetto VSIX. Queste includono modelli di progetto, modelli di elemento, elementi di **Casella degli strumenti** componenti MEF (Managed Extension Framework) e VSPackage. È anche possibile scaricare le estensioni basate su MSI, ma la finestra di dialogo **Estensioni e aggiornamenti** non consente di abilitarle o disabilitarle. Visual Studio Gallery contiene estensioni VSIX e MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Installazione e disinstallazione delle estensioni di Visual Studio
- Nella sezione relativa a **estensioni e aggiornamenti**trovare l'estensione che si vuole installare (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di ricerca di **Visual Studio Gallery**). Fare clic su **Download** e quindi su **Installa**. Per caricare l'estensione, è necessario riavviare Visual Studio.
+ Nella sezione relativa a **estensioni e aggiornamenti**trovare l'estensione che si vuole installare Se si conosce il nome o parte del nome dell'estensione, è possibile eseguire la ricerca nella finestra di **ricerca di Visual Studio Gallery** . Fare clic su **download**, quindi su **Installa**. Per caricare l'estensione, è necessario riavviare Visual Studio.
 
  Se si tenta di installare un'estensione con dipendenze, il programma di installazione verifica se siano già installate. Se non sono installate, nella finestra di dialogo **Estensioni e aggiornamenti** verranno elencate tutte le dipendenze che devono essere installate prima dell'estensione.
 
  Se si desidera interrompere l'utilizzo di un'estensione, è possibile disabilitarla o disinstallarla. Disabilitandola, un'estensione rimarrà installata ma non caricata. È possibile disabilitare solo le estensioni VSIX; le estensioni installate usando un file MSI possono solo essere disinstallate. Trovare l'estensione e fare clic su **Disinstalla** o **Disabilita**. Per scaricare un'estensione disabilitata, è necessario riavviare Visual Studio.
 
 ## <a name="per-user-and-administrative-extensions"></a>Estensioni amministrative e per utente
- La maggior parte delle estensioni sono per utente e sono installate nella cartella **%LocalAppData%\Microsoft\VisualStudio\\<Versione Visual Studio\>\Extensions\\**. Alcune estensioni sono amministrative e vengono installate nel percorso **\<Cartella di installazione Visual Studio>\Common7\IDE\Extensions\\**.
+ La maggior parte delle estensioni sono per utente e sono installate nella cartella **%LocalAppData%\Microsoft\VisualStudio\\<Versione Visual Studio\>\Extensions\\** . Alcune estensioni sono amministrative e vengono installate nel percorso **\<Cartella di installazione Visual Studio>\Common7\IDE\Extensions\\** .
 
  Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni utente amministrative. A questo scopo, passare alla pagina delle opzioni **Estensioni e aggiornamenti** (**Strumenti / Opzioni**, **Ambiente**, **Estensioni e aggiornamenti**oppure digitare **Estensione** nella finestra **Avvio veloce** ). Deselezionare la casella di controllo **Carica estensioni per utente se eseguite come amministratore** , quindi riavviare Visual Studio.
 

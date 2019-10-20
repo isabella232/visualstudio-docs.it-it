@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Generare modelli da modelli utilizzando le sequenze di Escape | Microsoft Docs'
+title: 'Procedura: generare modelli da modelli usando sequenze di escape | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,71 +8,71 @@ helpviewer_keywords:
 - text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4a3ddd7896732c5b87c5b6bd2032c27fffd96a41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 501b7f040cb841d19c06ccc8fe7615a5b4a5e70d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546622"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657340"
 ---
-# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedura: Generare modelli da modelli usando sequenze di escape
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Procedura: generare modelli da modelli utilizzando sequenze di escape
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile creare un modello di testo che crea un altro modello di testo come output testo generato. A tale scopo, è necessario utilizzare le sequenze di escape per delineare i tag di modello di testo. Se non si utilizza le sequenze di escape, il modello di testo generato avrà un significato predefinito. Per altre informazioni sull'uso di sequenze di escape in modelli di testo, vedere [usando le sequenze di Escape in modelli di testo](../modeling/using-escape-sequences-in-text-templates.md).  
-  
-### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Per generare un modello di testo all'interno di un modello di testo  
-  
-- Usare la barra rovesciata (\\) come carattere di escape per produrre il tag di markup necessari all'interno del modello di testo per le direttive, istruzioni, espressioni e funzionalità in un file di modello di testo separato di classe.  
-  
-    ```  
-    \<#@ directive \#>  
-    \<# statement \#>  
-    \<#= expression \#>  
-    \<#+ classfeature \#>  
-    ```  
-  
-## <a name="example"></a>Esempio  
- L'esempio seguente Usa caratteri di escape per produrre un modello di testo da un modello di testo. Il `output` direttiva imposta il tipo di file di destinazione per il tipo di file di modello di testo (con estensione TT).  
-  
-```csharp  
-\<#@ output extension=".tt" \#>  
-\<#@ assembly name="System.Xml.dll" \#>  
-\<#@ import namespace="System.Xml" \#>  
-\<#  
-XmlDocument xDoc = new XmlDocument();  
-//System.Diagnostics.Debugger.Break();  
-    xDoc.Load(@"E:\CSharp\Overview.xml");  
-    XmlAttributeCollection attributes = xDoc.Attributes;  
-    if (attributes != null)  
-    {  
-       foreach (XmlAttribute attr in attributes)  
-       {\#>  
-           \<#= attr.Name \#>  
-       \<#}  
-     }  
-\#>  
-```  
-  
- L'output di testo generato è un modello di testo.  
-  
-```  
-<#@ output extension=".tt" #>  
-<#@ assembly name="System.Xml.dll" #>  
-<#@ import namespace="System.Xml" #>  
-<#  
-XmlDocument xDoc = new XmlDocument();  
-//System.Diagnostics.Debugger.Break();  
-    xDoc.Load(@"E:\CSharp\Overview.xml");  
-    XmlAttributeCollection attributes = xDoc.Attributes;  
-    if (attributes != null)  
-    {  
-       foreach (XmlAttribute attr in attributes)  
-       {#>  
-           <#= attr.Name #>  
-       <#}  
-     }  
-#>  
+È possibile creare un modello di testo che crea un altro modello di testo come output di testo generato. A tale scopo, è necessario utilizzare sequenze di escape per delineare i tag del modello di testo. Se non si utilizzano sequenze di escape, il modello di testo generato avrà un significato predefinito. Per ulteriori informazioni sull'utilizzo di sequenze di escape nei modelli di testo, vedere [utilizzo di sequenze di escape in modelli di testo](../modeling/using-escape-sequences-in-text-templates.md).
+
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Per generare un modello di testo dall'interno di un modello di testo
+
+- Utilizzare la barra rovesciata (\\) come carattere di escape per produrre i tag di markup necessari all'interno del modello di testo per le direttive, le istruzioni, le espressioni e le funzionalità di classe in un file di modello di testo separato.
+
+    ```
+    \<#@ directive \#>
+    \<# statement \#>
+    \<#= expression \#>
+    \<#+ classfeature \#>
+    ```
+
+## <a name="example"></a>Esempio
+ Nell'esempio seguente vengono utilizzati caratteri di escape per produrre un modello di testo da un modello di testo. La direttiva `output` imposta il tipo di file di destinazione sul tipo di file del modello di testo (con estensione TT).
+
+```csharp
+\<#@ output extension=".tt" \#>
+\<#@ assembly name="System.Xml.dll" \#>
+\<#@ import namespace="System.Xml" \#>
+\<#
+XmlDocument xDoc = new XmlDocument();
+//System.Diagnostics.Debugger.Break();
+    xDoc.Load(@"E:\CSharp\Overview.xml");
+    XmlAttributeCollection attributes = xDoc.Attributes;
+    if (attributes != null)
+    {
+       foreach (XmlAttribute attr in attributes)
+       {\#>
+           \<#= attr.Name \#>
+       \<#}
+     }
+\#>
+```
+
+ L'output di testo generato è un modello di testo.
+
+```
+<#@ output extension=".tt" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ import namespace="System.Xml" #>
+<#
+XmlDocument xDoc = new XmlDocument();
+//System.Diagnostics.Debugger.Break();
+    xDoc.Load(@"E:\CSharp\Overview.xml");
+    XmlAttributeCollection attributes = xDoc.Attributes;
+    if (attributes != null)
+    {
+       foreach (XmlAttribute attr in attributes)
+       {#>
+           <#= attr.Name #>
+       <#}
+     }
+#>
 ```

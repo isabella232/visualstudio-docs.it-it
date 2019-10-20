@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c4738caa4fac8596db5b92c6cafa1c0f370e0363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f49f7952b287989d6e828d92b4c3479731dc2c21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664802"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Procedura: Configurare l'emulazione di rete tramite le impostazioni test in Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Procedura: Configurare l'emulazione di rete usando le impostazioni test in Visual Studio
 
 È possibile configurare l'adattatore dati di diagnostica per testare l'applicazione in vari ambienti di rete da Visual Studio. Può anche essere configurato per testare un carico di rete artificiale, o collo di bottiglia, quando si eseguono i test.
 
@@ -76,9 +76,9 @@ Prima di eseguire i passaggi di questa procedura, è necessario aprire le impost
 
 4. Se si include l'adattatore dati di diagnostica dell'emulazione di rete nelle impostazioni di test e si vuole usarlo sul computer locale, è necessario anche associare il driver di emulazione di rete a una delle schede di rete del computer. Il driver di emulazione di rete è richiesto affinché l'adattatore dati di diagnostica dell'emulazione di rete funzioni. Il driver di emulazione di rete viene installato e associato all'adattatore in due modi:
 
-    - **Driver di emulazione di rete installato con l'agente di test Microsoft Visual Studio:** L'agente di test Microsoft Visual Studio può essere usato sia nei computer remoti che nel computer locale. Quando si installa un agente di test di Visual Studio, il processo di installazione include un passaggio di configurazione che associa il driver di emulazione di rete alla scheda di rete. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
+    - **Driver di emulazione di rete installato con Agente di test di Microsoft Visual Studio:** l'agente di test di Microsoft Visual Studio può essere usato sia nei computer remoti che nel computer locale. Quando si installa un agente di test di Visual Studio, il processo di installazione include un passaggio di configurazione che associa il driver di emulazione di rete alla scheda di rete. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
-    - **Driver di emulazione di rete installato con Microsoft Visual Studio Test Professional:** Quando si usa l'emulazione di rete per la prima volta, viene chiesto di associare il driver di emulazione di rete a una scheda di rete.
+    - **Driver di emulazione di rete installato con Microsoft Visual Studio Test Professional:** quando si usa l'emulazione di rete per la prima volta, viene richiesto di associare il driver di emulazione di rete a una scheda di rete.
 
     > [!TIP]
     > È anche possibile installare il driver di emulazione di rete dalla riga di comando nel computer locale senza installare l'agente di test di Visual Studio tramite il comando seguente: **VSTestConfig NETWORKEMULATION /install**

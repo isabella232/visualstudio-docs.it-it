@@ -1,5 +1,5 @@
 ---
-title: 'CA1027: Contrassegnare le enumerazioni con FlagsAttribute | Microsoft Docs'
+title: 'CA1027: contrassegnare le enumerazioni con FlagsAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - MarkEnumsWithFlags
 ms.assetid: 249e882c-8cd1-4c00-a2de-7b6bdc1849ff
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6603e0869a9eb7947735c52a4c438b39d64b9140
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f2dc7dcd79fbcaf47a2db3cf49f22f3467a06ab
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157718"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661939"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027: Contrassegnare le enumerazioni con FlagsAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ ms.locfileid: "68157718"
 |-|-|
 |TypeName|MarkEnumsWithFlags|
 |CheckId|CA1027|
-|Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. Design|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- I valori di enumerazione pubblica sono potenze di due o combinazioni di altri valori definiti nell'enumerazione, e il <xref:System.FlagsAttribute?displayProperty=fullName> attributo non è presente. Per ridurre i falsi positivi, questa regola non segnala una violazione per enumerazioni associate a valori contigui.
+ I valori di un'enumerazione pubblica sono le potenze di due o sono combinazioni di altri valori definiti nell'enumerazione e l'attributo <xref:System.FlagsAttribute?displayProperty=fullName> non è presente. Per ridurre i falsi positivi, questa regola non segnala una violazione per le enumerazioni con valori contigui.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Applicare <xref:System.FlagsAttribute> a un'enumerazione quando le relative costanti denominate possono essere combinate. Si consideri, ad esempio, un'enumerazione dei giorni della settimana in un'applicazione che tiene traccia delle risorse del giorno in cui sono disponibili. Se la disponibilità di ogni risorsa viene codificata utilizzando l'enumerazione con <xref:System.FlagsAttribute> present, qualsiasi combinazione di giorni può essere rappresentato. Senza l'attributo può essere rappresentato un solo giorno della settimana.
+ Un'enumerazione è un tipo di valore che definisce un insieme di costanti denominate correlate. Applicare <xref:System.FlagsAttribute> a un'enumerazione quando le costanti denominate possono essere combinate in modo significativo. Si consideri, ad esempio, un'enumerazione dei giorni della settimana in un'applicazione che tiene traccia delle risorse del giorno disponibili. Se la disponibilità di ogni risorsa è codificata usando l'enumerazione con <xref:System.FlagsAttribute> presente, è possibile rappresentare qualsiasi combinazione di giorni. Senza l'attributo, è possibile rappresentare solo un giorno della settimana.
 
- Per i campi che archiviano le enumerazioni combinable, singoli valori di enumerazione sono considerati come gruppi di bit del campo. Di conseguenza, questi campi sono talvolta detti *campi di bit*. Per combinare i valori di enumerazione per l'archiviazione in un campo di bit, usare gli operatori booleani condizionali. Per testare un campo di bit per determinare se è presente un valore di enumerazione specifico, usare gli operatori logici booleani. Per un campo di bit archiviare e recuperare valori di enumerazione correttamente, ogni valore definito nell'enumerazione deve essere una potenza di due. In caso contrario, gli operatori logici booleani non sarà in grado di estrarre i singoli valori di enumerazione che sono archiviati nel campo.
+ Per i campi che archiviano enumerazioni combinabili, i singoli valori di enumerazione vengono considerati come gruppi di bit nel campo. Pertanto, tali campi vengono talvolta definiti campi di *bit*. Per combinare i valori di enumerazione per l'archiviazione in un campo di bit, usare gli operatori condizionali booleani. Per testare un campo di bit per determinare se è presente un valore di enumerazione specifico, usare gli operatori logici booleani. Affinché un campo di bit memorizzi e recuperi correttamente i valori di enumerazione combinati, ogni valore definito nell'enumerazione deve essere una potenza di due. A meno che non sia così, gli operatori logici booleani non saranno in grado di estrarre i singoli valori di enumerazione archiviati nel campo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, aggiungere <xref:System.FlagsAttribute> all'enumerazione.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Eliminare un avviso da questa regola se non si desidera valori di enumerazione da combinabili.
+ Eliminare un avviso da questa regola se non si desidera che i valori di enumerazione siano combinabili.
 
 ## <a name="example"></a>Esempio
- Nell'esempio riportato di seguito `DaysEnumNeedsFlags` è un'enumerazione che soddisfi i requisiti per l'uso di <xref:System.FlagsAttribute>, ma non è presente. Il `ColorEnumShouldNotHaveFlag` enumerazione non ha i valori che sono potenze di due, ma specifica erroneamente <xref:System.FlagsAttribute>. Questa condizione viola regola [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
+ Nell'esempio seguente `DaysEnumNeedsFlags` è un'enumerazione che soddisfa i requisiti per l'uso di <xref:System.FlagsAttribute>, ma non lo contiene. L'enumerazione `ColorEnumShouldNotHaveFlag` non dispone di valori che sono potenze di due, ma specifica erroneamente <xref:System.FlagsAttribute>. Questo viola la regola [CA2217: non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md).
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EnumFlags/cs/FxCop.Design.EnumFlags.cs#1)]
 

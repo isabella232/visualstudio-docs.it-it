@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cdae6abf3af71967357319addd755a31721053ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786104"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653413"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Procedura: Specificare se i test non superati vengono salvati in log di test usando l'Editor test di carico
 
@@ -39,7 +39,7 @@ Dopo aver creato il test di carico usando la **Creazione guidata test di carico*
 
 4. Nella proprietà **Salva log su test non superati** selezionare **True** o **False** per specificare se si vuole salvare il log di test nel caso in cui un test non venga superato nello scenario.
 
-     Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**.
+     Dopo avere modificato la proprietà scegliere **Salva** nel menu **File**.
 
      È possibile visualizzare i dati salvati nel log utilizzando la visualizzazione Tabelle dell'analizzatore test di carico. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 

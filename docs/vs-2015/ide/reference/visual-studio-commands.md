@@ -1,5 +1,5 @@
 ---
-title: I comandi | Microsoft Docs
+title: Comandi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160872"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667457"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ I comandi di Visual Studio consentono di richiamare un comando dalla finestra **
 
  È possibile trovare l'elenco completo dei comandi e la relativa sintassi nella finestra di dialogo **Opzioni** con le voci Tastiera, Ambiente selezionate.
 
- Il carattere di escape per i comandi di Visual Studio è un accento circonflesso (^) con cui si indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
+ Il carattere di escape per i comandi di Visual Studio è un accento circonflesso (^) con cui si indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Di seguito è riportato un esempio:
 
 ```
 >Edit.Find ^^t /regex
@@ -50,7 +50,7 @@ I comandi di Visual Studio consentono di richiamare un comando dalla finestra **
 |[Valuta istruzione](../../ide/reference/evaluate-statement-command.md)|Valuta e visualizza l'istruzione specificata.|
 |[Find](../../ide/reference/find-command.md)|Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando **Trova e sostituisci** .|
 |[Cerca nei file](../../ide/reference/find-in-files-command.md)|Ricerca il testo nei file usando un subset delle opzioni disponibili nel comando [Cerca nei file](../../ide/find-in-files.md).|
-|[Vai](../../ide/reference/go-to-command.md)|Sposta il cursore sulla riga specificata.|
+|[Vai a](../../ide/reference/go-to-command.md)|Sposta il cursore sulla riga specificata.|
 |[Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)|Visualizza lo stack di chiamate corrente.|
 |[Elenca disassembly](../../ide/reference/list-disassembly-command.md)|Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.|
 |[Elenca memoria](../../ide/reference/list-memory-command.md)|Visualizza il contenuto dell'intervallo di memoria specificato.|
@@ -72,10 +72,10 @@ I comandi di Visual Studio consentono di richiamare un comando dalla finestra **
 |[Imposta radice](../../ide/reference/set-radix-command.md)|Determina il numero di byte da visualizzare.|
 |[Shell](../../ide/reference/shell-command.md)|Avvia i programmi da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] come se il comando venisse eseguito dal prompt dei comandi.|
 |[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|Visualizza l'URL specificato in una finestra del Web browser all'interno o all'esterno dell'ambiente di sviluppo integrato (IDE).|
-|[Start](../../ide/reference/start-command.md)|Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.|
+|[Inizio](../../ide/reference/start-command.md)|Avvia il processo di debug e consente di specificare come devono essere gestiti gli errori.|
 |[Path](../../ide/reference/symbol-path-command.md)|Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.|
 |[Attiva/disattiva punto di interruzione](../../ide/reference/toggle-breakpoint-command.md)|Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file.|
 |[Comando Espressioni di controllo](../../ide/reference/watch-command.md)|Crea e apre un'istanza specificata di una finestra **Espressione di controllo** .|
 
 ## <a name="see-also"></a>Vedere anche
- [Finestra di comando](../../ide/reference/command-window.md) [casella Trova/comando](../../ide/find-command-box.md) [alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Finestra](../../ide/reference/command-window.md) di comando [Trova/comando della casella](../../ide/find-command-box.md) di comando [Visual Studio alias](../../ide/reference/visual-studio-command-aliases.md)

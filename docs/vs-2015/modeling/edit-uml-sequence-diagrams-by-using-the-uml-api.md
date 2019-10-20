@@ -8,24 +8,24 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871875"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669706"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificare i diagrammi di sequenza UML usando l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un'interazione è una sequenza di messaggi tra un set di linee di vita. Un'interazione viene visualizzata in un diagramma di sequenza UML.
 
- Per i dettagli completi dell'API, vedere [Microsoft. VisualStudio. Uml.](/previous-versions/dd493373(v=vs.140))Interactions.
+ Per i dettagli completi dell'API, vedere [Microsoft. VisualStudio. Uml. Interactions](/previous-versions/dd493373(v=vs.140)).
 
- Per un'introduzione più generale alla scrittura di comandi e gestori movimenti per i diagrammi UML, vedere [definire un comando di menu in un diagramma](../modeling/define-a-menu-command-on-a-modeling-diagram.md)di modellazione.
+ Per un'introduzione più generale alla scrittura di comandi e gestori movimenti per i diagrammi UML, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ## <a name="basic-code"></a>Codice di base
 
@@ -52,10 +52,10 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
    // for diagrams and context
 ```
 
- Per altre informazioni, vedere [definire un comando di menu in un diagramma](../modeling/define-a-menu-command-on-a-modeling-diagram.md)di modellazione.
+ Per altre informazioni, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ### <a name="getting-the-context"></a>Recupero del contesto
- Se si sta modificando un'interazione come parte di un comando o di un gestore movimenti in un diagramma di sequenza, è possibile ottenere un riferimento al contesto. Ad esempio:
+ Se si sta modificando un'interazione come parte di un comando o di un gestore movimenti in un diagramma di sequenza, è possibile ottenere un riferimento al contesto. Esempio:
 
 ```
 [SequenceDesignerExtension]
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Aggiornamento di un'interazione e del layout
  Quando si aggiorna un'interazione, terminare sempre l'operazione aggiornando il layout con uno dei metodi seguenti:
 
-- `ISequenceDiagram.UpdateShapePositions()`regola le posizioni delle forme inserite o spostate di recente e le relative forme adiacenti.
+- `ISequenceDiagram.UpdateShapePositions()` regola le posizioni delle forme inserite o spostate di recente e le relative forme adiacenti.
 
 - `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` ridisegna l'intero diagramma. È possibile usare il parametro per specificare il riposizionamento delle linee di vita, dei messaggi o di entrambi.
 
   Ciò è particolarmente importante quando si inseriscono nuovi elementi o si spostano elementi esistenti, che occuperanno le posizioni corrette nel diagramma solo dopo avere eseguito una di queste operazioni. È sufficiente chiamare una di queste operazioni una volta alla fine di una serie di modifiche.
 
-  Per evitare di confondere l'utente che esegue un annullamento dopo il comando, usare `ILinkedUndoTransaction` per racchiudere le modifiche e le operazioni `Layout()` o `UpdateShapePositions()` finali. Ad esempio:
+  Per evitare di confondere l'utente che esegue un annullamento dopo il comando, usare `ILinkedUndoTransaction` per racchiudere le modifiche e le operazioni `Layout()` o `UpdateShapePositions()` finali. Esempio:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>Per creare messaggi
- Per creare un messaggio, è necessario identificare i punti di inserimento sulle linee di vita di origine e di destinazione. Ad esempio:
+ Per creare un messaggio, è necessario identificare i punti di inserimento sulle linee di vita di origine e di destinazione. Esempio:
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,
@@ -241,7 +241,7 @@ cf.CreateInteractionOperand(cf.Operands.First(), false);
 cf.CreateInteractionOperand(cf.Operands.Last(), true);
 ```
 
-## <a name="troubleshooting"></a>risoluzione dei problemi
+## <a name="troubleshooting"></a>Troubleshooting
  Le forme non saranno nelle posizioni corrette se le modifiche non vengono completate con un'operazione `UpdateShapePositions()` o `Layout()`.
 
  La maggior parte degli altri problemi sono causati da punti di inserimento non allineati che obbligheranno i nuovi messaggi o frammenti a intersecare gli altri. I sintomi possono essere la mancata esecuzione delle modifiche o la generazione di un'eccezione. L'eccezione potrebbe venire generata solo dopo l'esecuzione dell'operazione `UpdateShapePositions()` o `Layout()`.

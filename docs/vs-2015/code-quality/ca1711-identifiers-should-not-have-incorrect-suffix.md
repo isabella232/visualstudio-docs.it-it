@@ -1,5 +1,5 @@
 ---
-title: 'CA1711: Gli identificatori non devono contenere il suffisso corretto | Microsoft Docs'
+title: 'CA1711: gli identificatori non devono avere un suffisso errato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - IdentifiersShouldNotHaveIncorrectSuffix
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0ed08a50ce7e4c665839f6dccb4913e13d0d774
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f59a1c88701cf132a46c66eb6550f03eb870d63d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676479"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669171"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Gli identificatori non devono contenere un suffisso non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,41 +29,41 @@ ms.locfileid: "65676479"
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un identificatore ha un suffisso non corretto.
+ Un identificatore ha un suffisso errato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per convenzione, solo i nomi dei tipi che estendono determinati tipi di base o implementano determinate interfacce o dei tipi derivati da questi tipi devono terminare con suffissi specifici riservati. Gli altri nomi di tipi non devono utilizzare questi suffissi riservati.
+ Per convenzione, solo i nomi dei tipi che estendono determinati tipi di base o che implementano determinate interfacce, o tipi derivati da questi tipi, devono terminare con suffissi riservati specifici. Gli altri nomi di tipi non devono utilizzare questi suffissi riservati.
 
- La tabella seguente elenca i suffissi riservati e i tipi di base e interfacce a cui sono associate.
+ Nella tabella seguente sono elencati i suffissi riservati e i tipi e le interfacce di base a cui sono associati.
 
-|Suffisso|Interfaccia di tipo di base|
+|Suffisso|Tipo di base/interfaccia|
 |------------|--------------------------|
 |Attributo|<xref:System.Attribute?displayProperty=fullName>|
 |Raccolta|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |Dizionario|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
-|EventHandler|Un delegato del gestore eventi|
+|EventHandler|Delegato del gestore eventi|
 |Eccezione|<xref:System.Exception?displayProperty=fullName>|
 |Autorizzazioni|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Coda|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Flusso|<xref:System.IO.Stream?displayProperty=fullName>|
 
- Inoltre, i suffissi seguenti dovrebbero **non** utilizzabili:
+ Inoltre, **non** usare i suffissi seguenti:
 
 - delegato
 
 - Enum
 
-- Impl - in alternativa, usare 'Core'
+- Impl-USA ' core '
 
-- Ad esempio o il suffisso simile per distinguerlo da una versione precedente dello stesso tipo
+- Suffisso ex o simile per distinguerlo da una versione precedente dello stesso tipo
 
-  Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+  Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Rimuovere il suffisso dal nome del tipo.
@@ -75,4 +75,4 @@ ms.locfileid: "65676479"
  [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Gli attributi](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [NIB: Eventi e delegati](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+ Pennini [attributi](https://msdn.microsoft.com/library/ee0038ef-b247-4747-a650-3c5c5cd58d8b) [: eventi e delegati](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

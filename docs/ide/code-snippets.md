@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - surround with
 - code snippets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: fa42d9c404aaf75fda03731183abf3d585869b07
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766260"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647556"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -31,7 +31,7 @@ I frammenti di codice sono piccoli blocchi di codice riutilizzabili che possono 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Frammenti di codice (Visual Studio per Mac)](/visualstudio/mac/snippets).
 
-Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti di codice installati disponibili per una lingua, aprire **Gestione frammenti di codice** dal menu **strumenti** (oppure premere **CTRL**+**K**, **CTRL**+**B**) e scegliere la lingua dalla finestra di menu a discesa nella parte superiore.
+Sono disponibili frammenti di codice per una vasta gamma di linguaggi, tra cui C#, C++, Visual Basic, XML e T-SQL, per citarne alcuni. Per visualizzare tutti i frammenti di codice installati disponibili per una lingua, aprire **Gestione frammenti di codice** dal menu **strumenti** (oppure premere **ctrl** +**K**, **CTRL** +**B**) e scegliere la lingua dal menu a discesa. nella parte superiore.
 
 ![Finestra di dialogo Gestione frammenti di codice](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ I frammenti di codice sono accessibili nei modi generali seguenti:
 
 - Dal menu di scelta rapida nell'editor del codice scegliere **Frammento** > **Inserisci frammento di codice**
 
-- Dalla tastiera premere **CTRL**+**K**,**CTRL**+**X**
+- Dalla tastiera premere **ctrl** +**K**,**CTRL** +**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Frammenti di espansione e frammenti Racchiudi tra
 
@@ -60,7 +60,7 @@ finally
 }
 ```
 
-Per inserire questo frammento di codice, scegliere **Inserisci frammento di codice** dal menu di scelta rapida della finestra del codice, quindi scegliere **Visual C#** , digitare `tryf` e infine premere **TAB**. In alternativa, è possibile digitare `tryf` e premere **TAB** due volte.
+Per inserire questo frammento di codice, fare clic su **Inserisci frammento** di codice nel menu di scelta rapida della finestra del codice, quindi su oggetto **C#visivo**, quindi digitare `tryf`, quindi premere **Tab**. In alternativa, è possibile digitare `tryf` e premere due volte **Tab** .
 
 Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio `return FALSE;`) e quindi si sceglie **Racchiudi tra** > **if**, il frammento viene espanso intorno alla riga:
 
@@ -97,7 +97,7 @@ Se si modifica `newPropertyValue` in `m_property`, tutte le istanze di `newPrope
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
 - [Procedura: Distribuire frammenti di codice](../ide/how-to-distribute-code-snippets.md)
 - [Procedure consigliate per l'uso dei frammenti di codice](../ide/best-practices-for-using-code-snippets.md)
 - [Risoluzione dei problemi relativi ai frammenti di codice](../ide/troubleshooting-snippets.md)

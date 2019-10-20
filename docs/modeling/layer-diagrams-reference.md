@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de634ee62387e50fed89e4465842b2801748f45
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766145"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661488"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammi di dipendenza: riferimento
 
@@ -48,7 +48,7 @@ Utilizzare un diagramma delle dipendenze per semplificare l'esecuzione delle att
 
 - Rafforzare l'architettura desiderata durante lo sviluppo e la manutenzione del codice includendo la convalida con le operazioni di archiviazione e compilazione.
 
-In questo argomento vengono descritti gli elementi che è possibile utilizzare in un diagramma delle dipendenze. Per informazioni più dettagliate su come creare e creare diagrammi di dipendenza, [vedere diagrammi delle dipendenze: Linee](../modeling/layer-diagrams-guidelines.md)guida. Per ulteriori informazioni sui modelli di livello, visitare il [sito modelli & procedure](http://go.microsoft.com/fwlink/?LinkId=145794).
+In questo argomento vengono descritti gli elementi che è possibile utilizzare in un diagramma delle dipendenze. Per informazioni più dettagliate su come creare e creare diagrammi di dipendenza, vedere [diagrammi di dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md). Per ulteriori informazioni sui modelli di livello, visitare il [sito modelli & procedure](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Lettura di diagrammi delle dipendenze
 
@@ -58,9 +58,9 @@ Nella tabella seguente vengono descritti gli elementi che è possibile utilizzar
 
 |**Forma**|**Elemento**|**Descrizione**|
 |-|-|-|
-|1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello, quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **Dipendenze dello spazio dei nomi** non consentiti: specifica che gli artefatti associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-   **Forbidden Namespaces** : specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-   **Spazi dei nomi obbligatori** : specifica che gli elementi associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
-|2|**Dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> -   **Direction** : specifica la direzione della dipendenza.|
-|3|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> -   **Direction** : specifica la direzione della dipendenza.|
+|1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello, quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **dipendenze dello spazio dei nomi non consentito** : specifica che gli artefatti associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-    gli**spazi dei nomi** non consentiti: specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-    gli**spazi dei nomi richiesti** : specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
+|2|**Dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> **direzione** -   -specifica la direzione della dipendenza.|
+|3\.|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> **direzione** -   -specifica la direzione della dipendenza.|
 |4|**Commentoo**|Usato per aggiungere note generali al diagramma o elementi nel diagramma.|
 |5|**Collegamento commento**|Usato per collegare commenti a elementi nel diagramma.|
 
@@ -93,7 +93,7 @@ Viene aperto **Esplora livello** che Mostra gli elementi collegati ai livelli se
 |-|-|
 |**Categorie**|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
 |**Livello**|Livello collegato all'elemento|
-|**Supporta la convalida**|Se **true**, il processo di convalida dei livelli può verificare che il progetto sia conforme alle dipendenze da o verso questo elemento.<br /><br /> Se **false**, il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi delle dipendenze: Linee](../modeling/layer-diagrams-guidelines.md)guida.|
+|**Supporta la convalida**|Se **true**, il processo di convalida dei livelli può verificare che il progetto sia conforme alle dipendenze da o verso questo elemento.<br /><br /> Se **false**, il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi di dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md).|
 |**Identificatore**|Riferimento all'elemento collegato|
 
 ## <a name="see-also"></a>Vedere anche

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926473"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665383"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -38,7 +38,7 @@ Vengono forniti molti grafici incorporati. È possibile usare i grafici incorpor
 
 Nella tabella seguente sono riportati i grafici incorporati disponibili per l'analisi dei risultati dei test di carico.
 
-|Nome grafico|DESCRIZIONE|
+|Nome grafico|Descrizione|
 |-|-|
 |Indicatori chiave|Contatori che descrivono gli aspetti di base delle prestazioni del test, ad esempio carico utente, velocità effettiva e tempo di risposta.|
 |Tempo di risposta per test|Dati relativi alla quantità di tempo richiesta per l'esecuzione dei test.|
@@ -78,12 +78,12 @@ Nella legenda sono presenti le seguenti colonne:
 
 |Attività|Argomenti correlati|
 |-|-|
-|**Personalizzare i grafici tramite la legenda:** la legenda della visualizzazione Grafici visualizza le informazioni per ogni contatore delle prestazioni associato a un grafico. È possibile usare la legenda per rimuovere ed evidenziare contatori delle prestazioni nel grafico e personalizzare le opzioni relative ai tracciati.|-   [Uso della legenda della visualizzazione Grafici per analizzare i test di carico](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Personalizzare i grafici tramite la legenda:** la legenda della visualizzazione Grafici consente di visualizzare informazioni per ciascun contatore delle prestazioni associato a un grafico. È possibile usare la legenda per rimuovere ed evidenziare contatori delle prestazioni nel grafico e personalizzare le opzioni relative ai tracciati.|-   [Uso della legenda della visualizzazione Grafici per analizzare i test di carico](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Visualizzare i contatori nei grafici:** è possibile aggiungere diversi tipi di dati in un grafico dei risultati dei test di carico inserendo contatori nel grafico.|-   [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Fare zoom avanti nei grafici:** Al termine di un test di carico, è possibile utilizzare le barre dello zoom per eseguire lo zoom avanti e scorrere un'area del grafico. Lo zoom avanti consente di analizzare i dettagli anche minuti dei dati generati durante l'esecuzione di un test di carico.|-   [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Affiancare i grafici:** È possibile disporre i grafici dei risultati del test di carico adottando diversi modelli. È possibile affiancare fino a quattro grafici.||
-|**Creare grafici personalizzati:** È possibile progettare grafici che visualizzano specifiche informazioni sui risultati dei test di carico. Per progettare un grafico personalizzato, specificare i contatori del test di carico che verranno visualizzati sul grafico.|-   [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Esportare i dati dei contatori delle prestazioni nel grafico:** È possibile esportare i dati del grafico in Microsoft Excel tramite il pulsante **Esporta dati del grafico in Excel** disponibile sulla barra degli strumenti **Analizzatore test di carico** nella visualizzazione **Grafici**.||
+|**Fare zoom avanti nei grafici:** al termine di un test di carico, è possibile usare le barre dello zoom per eseguire lo zoom avanti e scorrere un'area del grafico. Lo zoom avanti consente di analizzare i dettagli anche minuti dei dati generati durante l'esecuzione di un test di carico.|-   [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Affiancare i grafici:** è possibile disporre i grafici dei risultati dei test di carico secondo diversi modelli. È possibile affiancare fino a quattro grafici.||
+|**Creare grafici personalizzati:** è possibile progettare grafici in cui vengono visualizzate informazioni specifiche sui risultati dei test di carico. Per progettare un grafico personalizzato, specificare i contatori del test di carico che verranno visualizzati sul grafico.|-   [Procedura: Creare grafici personalizzati](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**Esportare i dati dei contatori delle prestazioni nel grafico:** è possibile esportare dati del grafico in Microsoft Excel tramite il pulsante **Esporta dati del grafico in Excel** disponibile sulla barra degli strumenti dell'**Analizzatore test di carico** in visualizzazione **Grafici**.||
 
 ## <a name="related-tasks"></a>Attività correlate
 

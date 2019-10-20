@@ -10,38 +10,36 @@ api_type:
 - Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 158e200a33b4783df9f63f42a1eca7bb8957d449
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 383101679827f19b9a85d36f0f5a39eb772c68ec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68145676"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664686"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elementi (proprietà dinamica XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ottiene un indicizzatore usato per recuperare gli elementi figlio dell'elemento corrente che corrispondono al nome espanso specificato.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-elem.Elements[{namespaceName}localName]   
-```  
-  
-## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
- Indicizzatore del tipo `IEnumerable<XElement> Item(String expandedName)`. Questo indicizzatore assume il nome espanso degli elementi figlio desiderati e restituisce gli elementi figlio corrispondenti in una raccolta <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.  
-  
-## <a name="remarks"></a>Note  
- Questa proprietà è equivalente al metodo <xref:System.Xml.Linq.XContainer.Elements%28System.Xml.Linq.XName%29?displayProperty=fullName> della classe <xref:System.Xml.Linq.XContainer>.  
-  
- Gli elementi della raccolta restituita sono in ordine del documento dell'origine XML.  
-  
- Questa proprietà usa l'esecuzione posticipata.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Proprietà dinamiche della classe XElement](../designers/xelement-class-dynamic-properties.md)   
- [Elemento](../designers/element-xelement-dynamic-property.md)   
- [Discendenti](../designers/descendants-xelement-dynamic-property.md)
+Ottiene un indicizzatore usato per recuperare gli elementi figlio dell'elemento corrente che corrispondono al nome espanso specificato.
+
+## <a name="syntax"></a>Sintassi
+
+```
+elem.Elements[{namespaceName}localName]
+```
+
+## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito
+ Indicizzatore del tipo `IEnumerable<XElement> Item(String expandedName)`. Questo indicizzatore assume il nome espanso degli elementi figlio desiderati e restituisce gli elementi figlio corrispondenti in una raccolta <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.
+
+## <a name="remarks"></a>Note
+ Questa proprietà è equivalente al metodo <xref:System.Xml.Linq.XContainer.Elements%28System.Xml.Linq.XName%29?displayProperty=fullName> della classe <xref:System.Xml.Linq.XContainer>.
+
+ Gli elementi della raccolta restituita sono in ordine del documento dell'origine XML.
+
+ Questa proprietà usa l'esecuzione posticipata.
+
+## <a name="see-also"></a>Vedere anche
+ [Discendenti](../designers/descendants-xelement-dynamic-property.md) dell' [elemento](../designers/element-xelement-dynamic-property.md) [proprietà dinamiche della classe XElement](../designers/xelement-class-dynamic-properties.md)

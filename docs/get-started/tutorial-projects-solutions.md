@@ -4,17 +4,17 @@ ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa9c2871a414d5ce6be6c0b64f10b3f57ca7305
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: caa8fde228d83cbb14b911965573e78648133b81
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180183"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647812"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
@@ -22,13 +22,13 @@ Questa articolo introduttivo spiega che cosa significa creare una *soluzione* e 
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -245,7 +245,7 @@ La riga del file *Calendar.cs* contenente l'attributo <xref:System.Runtime.Compi
 
 1. In **Esplora soluzioni** selezionare il progetto **QuickTest**. Nel menu di scelta rapida o nel menu a comparsa selezionare **Proprietà** oppure premere semplicemente **ALT**+**INVIO**.
 
-   Le *pagine proprietà* del progetto vengono aperte nella scheda **Applicazione**. Le pagine proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
+   Le *pagine delle proprietà* per il progetto vengono aperte nella scheda **applicazione** . Le pagine delle proprietà contengono diverse impostazioni per il progetto. Si noti che il nome dell'assembly del progetto **QuickTest** è effettivamente "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
    ![Proprietà di progetti](media/tutorial-projects-netcore-properties.png)
 

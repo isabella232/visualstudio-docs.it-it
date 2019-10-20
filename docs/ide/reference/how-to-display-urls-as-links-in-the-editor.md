@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Visualizzare gli URL come collegamenti nell'editor"
+title: "Procedura: visualizzare gli URL come collegamenti nell'editor"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - Code Editor, displaying URLs
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a44407c891464f39693a2d69e5a32d22b6e993
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 9814614ae752a670a8b707e6fd701a5fa151f481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605696"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668585"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: Visualizzare gli URL come collegamenti nell'editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: visualizzare gli URL come collegamenti nell'editor
 
 È possibile fare in modo che l'Editor del codice consideri gli URL (Uniform Resource Locator) all'interno del codice come collegamenti attivi. Quando si usa questa funzionalità, gli URL:
 
@@ -27,7 +27,7 @@ ms.locfileid: "68605696"
 
 - Visualizzano una **descrizione comando** quando si passa il puntatore su di essi.
 
-- Tenta di aprire il sito Web indicato quando si **Ctrl**+**fare clic su** sul collegamento. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
+- Tentano di aprire il sito Web indicato quando si fa clic sul collegamento tenendo premuto**Ctrl**+. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
 
 ## <a name="display-urls-as-links"></a>Visualizzare gli URL come collegamenti
 

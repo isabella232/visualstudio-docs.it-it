@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fbe9b0005ce190eda6a88dea2f6b5f80890743c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562938"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647512"
 ---
 # <a name="step-5-add-label-references"></a>Passaggio 5: Aggiungere riferimenti alle etichette
 Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al momento il programma mostra tutte le etichette scelte dal giocatore, ma è possibile modificare questa impostazione. Una volta scelta la prima etichetta, il programma dovrebbe visualizzarne l'icona. Una volta scelta la seconda etichetta, il programma dovrebbe visualizzare entrambe le icone per un istante, quindi renderle nuovamente invisibili. Il programma terrà ora traccia del controllo Label scelto per primo e di quello scelto per secondo usando *variabili di riferimento*.
@@ -44,15 +44,15 @@ Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al mo
 
 3. Salvare ed eseguire il programma. Scegliere uno dei controlli etichetta; verrà visualizzata la relativa icona.
 
-4. Scegliere il controllo etichetta successivo. Non accadrà nulla. Il programma sta già tenendo traccia della prima etichetta scelta dal giocatore, pertanto `firstClicked` non è uguale `null` in C# o `Nothing` Visual Basic. Quando l'istruzione `if` controlla `firstClicked` per stabilire se sia uguale a `null` o `Nothing`, rileva che non lo è e non esegue le istruzioni contenute nell'istruzione `if`. Per cui soltanto la prima icona scelta diventa nera, mentre le altre icone sono invisibili, come mostrato nell'immagine seguente.
+4. Scegliere il controllo etichetta successivo. Non accadrà nulla. Il programma sta già tenendo traccia della prima etichetta scelta dal giocatore, pertanto `firstClicked` non è uguale `null` in C# o `Nothing` Visual Basic. Quando l'istruzione `if` controlla `firstClicked` per stabilire se sia uguale a `null` o `Nothing`, rileva che non lo è e non esegue le istruzioni contenute nell'istruzione `if`. Quindi, solo la prima icona scelta è nera e le altre icone sono invisibili, come illustrato nella figura seguente.
 
      ![Gioco di abbinamenti con un'icona visualizzata](../ide/media/express_tut4step5.png)<br/>
-**Gioco di abbinamenti** con un'icona visualizzata
+***Gioco di abbinamenti*** che *Mostra un'icona*
 
      Questa situazione verrà corretta nel passaggio successivo dell'esercitazione aggiungendo un controllo **Timer**.
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 6: Aggiungere un timer](../ide/step-6-add-a-timer.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 6: aggiungere un timer](../ide/step-6-add-a-timer.md)** .
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta](../ide/step-4-add-a-click-event-handler-to-each-label.md).

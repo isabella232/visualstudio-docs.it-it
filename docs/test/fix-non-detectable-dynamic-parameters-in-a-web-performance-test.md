@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, walkthroughs
 - load tests, correlating dynamic parameters
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 265d1510cd4c8a47478344ba06efcf5e4f43f946
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918486"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664971"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 
@@ -237,7 +237,7 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
      ![Sostituire il testo con il parametro](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Il parametro QueryString nella richiesta *JScriptQuery.aspx* viene aggiornato con il nuovo parametro di contesto:  CustomQueryString=jScriptQueryString___{{Param0}}.
+     Il parametro QueryString nella richiesta *JScriptQuery.aspx* viene aggiornato con il nuovo parametro di contesto: CustomQueryString=jScriptQueryString___{{Param0}}.
 
      ![Parametro applicato a querystring](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,9 +249,9 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 ## <a name="qa"></a>Domande e risposte
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>D: È possibile eseguire nuovamente il rilevamento dei parametri dinamici se l'applicazione Web viene modificata?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>D. È possibile eseguire nuovamente il rilevamento dei parametri dinamici se l'applicazione Web viene modificata?
 
-**R:** Sì, usare la procedura seguente:
+**R.** Sì, usare la procedura seguente:
 
 1. Sulla barra degli strumenti scegliere il pulsante **Promuovi parametri dinamici a parametri di test Web**.
 
@@ -263,6 +263,6 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 2. Selezionare o deselezionare la casella di controllo accanto ai parametri dinamici che si desidera correlare automaticamente. Per impostazione predefinita, vengono selezionati tutti i parametri dinamici.
 
-### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>D: È necessario configurare Visual Studio per rilevare i parametri dinamici?
+### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>D. È necessario configurare Visual Studio per rilevare i parametri dinamici?
 
-**R:** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Se tuttavia le opzioni di Visual Studio sono configurate in modo da non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.
+**R.** La configurazione predefinita di Visual Studio prevede il rilevamento dei parametri dinamici quando si registra un test delle prestazioni Web. Se tuttavia le opzioni di Visual Studio sono configurate in modo da non rilevare i parametri dinamici o se l'applicazione Web testata viene modificata con parametri dinamici aggiuntivi, è comunque possibile eseguire il rilevamento dei parametri dinamici dall'Editor test prestazioni Web.

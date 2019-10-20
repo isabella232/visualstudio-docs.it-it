@@ -1,5 +1,5 @@
 ---
-title: 'CA2146: I tipi devono essere critici almeno come le interfacce e i relativi tipi di base | Microsoft Docs'
+title: 'CA2146: i tipi devono essere critici almeno quanto i tipi di base e le interfacce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,15 +8,15 @@ f1_keywords:
 - CA2146
 ms.assetid: 241fb784-1f6b-46e5-8ceb-c438e341d38e
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d1a0120caf16fbed34fa87ab71fe50abc4467d51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab621ade120a257508eddbf9527f674b5fda8748
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142670"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610182"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: I tipi devono essere Critical almeno come le interfacce e i tipi base relativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "68142670"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo trasparente è derivato da un tipo contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute> o il <xref:System.Security.SecurityCriticalAttribute>, o un tipo contrassegnato con il <xref:System.Security.SecuritySafeCriticalAttribute> attributo deriva da un tipo contrassegnato con il <xref:System.Security.SecurityCriticalAttribute> attributo.
+ Un tipo trasparente viene derivato da un tipo contrassegnato con <xref:System.Security.SecuritySafeCriticalAttribute> o <xref:System.Security.SecurityCriticalAttribute> oppure un tipo contrassegnato con l'attributo <xref:System.Security.SecuritySafeCriticalAttribute> viene derivato da un tipo contrassegnato con l'attributo <xref:System.Security.SecurityCriticalAttribute>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Questa regola viene attivata quando un tipo derivato dispone di un attributo di trasparenza di sicurezza che non è critico come il tipo di base o l'interfaccia implementata. Solo i tipi critici possono derivare da tipi di base critici o implementare interfacce critiche e solo tipi critici o critici per la sicurezza possono derivare da tipi di base critici per la sicurezza o implementare interfacce critiche per la sicurezza. Le violazioni di questa regola di trasparenza di livello 2 comportare un <xref:System.TypeLoadException> per i tipi derivati.
+ Questa regola viene attivata quando un tipo derivato dispone di un attributo di trasparenza di sicurezza che non è critico come il tipo di base o l'interfaccia implementata. Solo i tipi critici possono derivare da tipi di base critici o implementare interfacce critiche e solo tipi critici o critici per la sicurezza possono derivare da tipi di base critici per la sicurezza o implementare interfacce critiche per la sicurezza. Le violazioni di questa regola nella trasparenza di livello 2 generano un <xref:System.TypeLoadException> per il tipo derivato.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere questa violazione, contrassegnare il tipo derivato o di implementazione con un attributo di trasparenza è critical almeno come il tipo di base o interfaccia.
+ Per correggere questa violazione, contrassegnare il tipo derivato o di implementazione con un attributo di trasparenza che è almeno critico come il tipo o l'interfaccia di base.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.

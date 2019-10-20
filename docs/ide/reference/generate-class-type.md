@@ -2,8 +2,8 @@
 title: Generare una classe o un tipo
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795023"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660068"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -31,7 +31,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si introduce una nuova classe o un nuovo tipo e si vuole dichiararlo in modo corretto, automaticamente.
 
-**Perché?:** è possibile dichiarare la classe o il tipo prima dell'uso, ma questa funzionalità genera la classe o il tipo automaticamente.
+**Perché:** si potrebbe dichiarare la classe o il tipo prima dell'uso, tuttavia questa funzionalità genera la classe o il tipo automaticamente.
 
 ## <a name="how-to"></a>Procedura
 
@@ -48,11 +48,11 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione della classe](media/class-preview-cs.png)
 
@@ -70,11 +70,11 @@ Questa generazione di codice si applica a:
 
    ![Genera tipo](media/class-newtype-cs.png)
 
-   Selection | Description
+   Selection | Descrizione
    --- | ---
    Accesso | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
    Tipo | Può essere impostato come *classe* o *struct*.
-   nome | Questo non può essere modificato e sarà il nome già digitato.
+   Name | Questo non può essere modificato e sarà il nome già digitato.
    Progetto | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
    Nome file | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
 

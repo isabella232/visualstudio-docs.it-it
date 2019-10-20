@@ -2,49 +2,49 @@
 title: Aggiornamento di forme e di connettori per riflettere il modello
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4c0c88e9e096836e32ce427ff78cc94f5d1f72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84c26295461fa062faf88872dbc043048c26479a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906989"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663786"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Aggiornare forme e connettori per riflettere il modello
 
-In un linguaggio specifico di dominio in Visual Studio, è possibile rendere l'aspetto di una forma riflettono lo stato del modello sottostante.
+In un linguaggio specifico di dominio in Visual Studio, è possibile fare in modo che l'aspetto di una forma rispecchi lo stato del modello sottostante.
 
-Gli esempi di codice in questo argomento devono essere aggiunto a un `.cs` del file nei `Dsl` progetto. Sono necessarie queste dichiarazioni in ciascun file:
+Gli esempi di codice in questo argomento devono essere aggiunti a un file di `.cs` nel progetto `Dsl`. Queste direttive sono necessarie in ogni file:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Impostare le proprietà di mappa della forma per controllare la visibilità di un elemento decorator
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Impostare le proprietà della mappa di forme per controllare la visibilità di un elemento Decorator
 
-È possibile controllare la visibilità di un elemento decorator senza scrivere codice programma, configurando il mapping tra la forma e la classe di dominio nella definizione DSL. Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).
+È possibile controllare la visibilità di un elemento Decorator senza scrivere codice programma, configurando il mapping tra la forma e la classe di dominio nella definizione DSL. Per ulteriori informazioni, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
 
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Esporre il colore e lo stile di una forma come proprietà
 
-Nella definizione DSL, fare doppio clic la classe di forma, scegliere **Aggiungi esposta**, quindi fare clic su uno degli elementi, ad esempio **colore riempimento**.
+Nella definizione DSL, fare clic con il pulsante destro del mouse sulla classe Shape, scegliere **Aggiungi esposto**, quindi fare clic su uno degli elementi, ad esempio **colore riempimento**.
 
-A questo punto, la forma presenta una proprietà di dominio che è possibile impostare nel codice programma o un utente. Per impostarla nel codice del programma di un comando o una regola, ad esempio, è possibile scrivere:
+La forma dispone ora di una proprietà di dominio che è possibile impostare nel codice programma o come utente. Ad esempio, per impostarlo nel codice programma di un comando o di una regola, è possibile scrivere:
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Se si desidera rendere la variabile di proprietà solo nel controllo del programma e non dall'utente, selezionare la nuova proprietà di dominio, ad esempio **colore riempimento** nel diagramma di definizione DSL. Quindi, nella finestra Proprietà impostare **è visualizzabile** a `false` o impostare **sola lettura dell'interfaccia utente viene** per `true`.
+Se si desidera rendere la variabile della proprietà solo sotto il controllo del programma e non dall'utente, selezionare la nuova proprietà del dominio, ad esempio **colore riempimento** nel diagramma di definizione DSL. Quindi, nel Finestra Proprietà, il set **è visualizzabile** in `false` o set **è l'interfaccia utente ReadOnly** per `true`.
 
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definire le regole di modifica per rendere colore, stile o percorso variano a seconda delle proprietà di elemento di modello
- È possibile definire regole che aggiornano l'aspetto della forma dipende da altre parti del modello. Ad esempio, è possibile definire una regola di modifica su un elemento del modello che aggiorna il colore della forma dipende dalle proprietà dell'elemento del modello. Per altre informazioni sulle regole di modifica, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definire le regole di modifica per impostare il colore, lo stile o la posizione dipendono dalle proprietà degli elementi del modello
+ È possibile definire regole che aggiornano l'aspetto della forma dipendente da altre parti del modello. Ad esempio, è possibile definire una regola di modifica su un elemento del modello che aggiorna il colore della relativa forma dipendente dalle proprietà dell'elemento del modello. Per ulteriori informazioni sulle regole di modifica, vedere la pagina relativa [alla propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
 
- Utilizzare le regole solo per aggiornare le proprietà che vengono mantenute in Store, perché le regole non vengono richiamate quando viene eseguito il comando di annullamento. Questo non include alcune funzionalità con interfaccia grafica, ad esempio le dimensioni e la visibilità di una forma. Per aggiornare le funzionalità di una forma, vedere [funzionalità di aggiornamento Non-Store grafica](#OnAssociatedProperty).
+ È consigliabile utilizzare le regole solo per aggiornare le proprietà gestite nell'archivio, perché le regole non vengono richiamate quando viene eseguito il comando Annulla. Non sono incluse alcune funzionalità grafiche, ad esempio le dimensioni e la visibilità di una forma. Per aggiornare le funzionalità di una forma, vedere [aggiornamento delle funzionalità grafiche non di archivio](#OnAssociatedProperty).
 
- Nell'esempio seguente si presuppone che sia stata esposta `FillColor` come una proprietà di dominio come descritto nella sezione precedente.
+ Nell'esempio seguente si presuppone che sia stata esposta `FillColor` come proprietà di dominio, come descritto nella sezione precedente.
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -82,9 +82,9 @@ Se si desidera rendere la variabile di proprietà solo nel controllo del program
   }
 ```
 
-## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Usare OnChildConfigured per inizializzare le proprietà della forma
+## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Usare OnChildConfigured per inizializzare le proprietà di una forma
 
-Per impostare le proprietà di una forma quando viene inizialmente creato, l'override `OnChildConfigured()` in una definizione parziale della classe diagramma. Classe del diagramma viene specificata nella definizione DSL, e il codice generato è nella **Dsl\Generated Code\Diagram.cs**. Ad esempio:
+Per impostare le proprietà di una forma quando viene creata per la prima volta, l'override `OnChildConfigured()` in una definizione parziale della classe del diagramma. La classe Diagram è specificata nella definizione DSL e il codice generato è in **Dsl\Generated Code\Diagram.cs**. Esempio:
 
 ```csharp
 partial class MyLanguageDiagram
@@ -106,13 +106,13 @@ partial class MyLanguageDiagram
 }
 ```
 
-Questo metodo può essere utilizzato sia per le proprietà di dominio e le funzionalità senza store, ad esempio le dimensioni della forma.
+Questo metodo può essere utilizzato sia per le proprietà del dominio che per le funzionalità non di archivio, ad esempio la dimensione della forma.
 
-## <a name="OnAssociatedProperty"></a> Usare AssociateValueWith () per aggiornare altre funzionalità di una forma
+## <a name="OnAssociatedProperty"></a>Utilizzare AssociateValueWith () per aggiornare altre funzionalità di una forma
 
-Per alcune funzionalità di una forma, ad esempio se ha un'ombreggiatura o lo stile della freccia di un connettore, non vi è alcun metodo incorporato di esporre la funzionalità come una proprietà di dominio.  Le modifiche apportate a tali funzionalità non sono sotto il controllo del sistema delle transazioni. Pertanto, non è appropriato per aggiornarli utilizzando le regole, perché le regole non vengono richiamate quando l'utente esegue il comando di annullamento.
+Per alcune funzionalità di una forma, ad esempio se presenta un'ombreggiatura o lo stile della freccia di un connettore, non esiste alcun metodo incorporato per esporre la funzionalità come proprietà di dominio.  Le modifiche apportate a tali funzionalità non sono sotto il controllo del sistema di transazione. Non è pertanto appropriato aggiornarle utilizzando le regole, perché le regole non vengono richiamate quando l'utente esegue il comando Annulla.
 
-In alternativa, è possibile aggiornare queste funzionalità usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Nell'esempio seguente, lo stile della freccia di un connettore è controllato da un valore della proprietà del dominio nella relazione che consente di visualizzare il connettore:
+In alternativa, è possibile aggiornare tali funzionalità usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Nell'esempio seguente lo stile della freccia di un connettore è controllato da un valore di una proprietà di dominio nella relazione visualizzata dal connettore:
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -153,6 +153,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` deve essere chiamato una volta per ogni proprietà di dominio che si desidera registrare. Dopo che è stato chiamato, tutte le modifiche alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in tutte le forme che presentano l'elemento del modello della proprietà.
+`AssociateValueWith()` deve essere chiamato una volta per ogni proprietà del dominio che si desidera registrare. Una volta chiamato, qualsiasi modifica apportata alla proprietà specificata chiamerà `OnAssociatedPropertyChanged()` in tutte le forme che presentano l'elemento del modello della proprietà.
 
-Non è necessario chiamare `AssociateValueWith()` per ogni istanza. Anche se InitializeResources è un metodo di istanza, viene richiamato solo una volta per ogni classe della forma.
+Non è necessario chiamare `AssociateValueWith()` per ogni istanza. Sebbene InitializeResources sia un metodo di istanza, viene richiamato solo una volta per ogni classe Shape.

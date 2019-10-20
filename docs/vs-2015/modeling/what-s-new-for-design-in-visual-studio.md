@@ -1,5 +1,5 @@
 ---
-title: Cosa&#39;s novità per la progettazione
+title: '&#39;Novità per la progettazione'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187127"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659236"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quali sono le novità relative alla progettazione in Visual Studio in Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novità relative alla progettazione in Visual Studio in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Questa versione di Visual Studio include i seguenti miglioramenti, utili per comprendere e progettare meglio il codice.
 
@@ -30,7 +30,7 @@ Questa versione di Visual Studio include i seguenti miglioramenti, utili per com
 
  Nella versione finale (RTM), sono stati creati menu di scelta rapida per gli elementi di codice e collegamenti più facili da usare mediante il raggruppamento di comandi in sezioni relative alla selezione, alla modifica, alla gestione di gruppi e alla modifica del layout del contenuto dei gruppi. Si noti inoltre che i progetti di test vengono visualizzati in uno stile diverso da altri progetti e che le icone per gli elementi nella mappa sono state aggiornate a versioni più appropriate.
 
- ![Mostra gli elementi selezionati in una nuova mappa codice](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![Mostra gli elementi selezionati in una nuova mappa codici](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  Questi miglioramenti includono:
 
@@ -64,18 +64,18 @@ Questa versione di Visual Studio include i seguenti miglioramenti, utili per com
 
 - **Esplora architettura** Per creare diagrammi, non è più possibile usare Esplora architettura, ma si può usare Esplora soluzioni.
 
-## <a name="VersionSupport"></a> Supporto di edizione per un'architettura e strumenti di modellazione
+## <a name="VersionSupport"></a>Supporto dell'edizione per gli strumenti di architettura e modellazione
 
-Visual Studio 2015 è disponibile in diverse edizioni. Non tutte le forniscono il supporto per l'architettura e strumenti di modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
+Visual Studio 2015 è disponibile in diverse edizioni. Non tutti forniscono supporto per gli strumenti di architettura e modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
 
 |**Funzionalità**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mappe codice**|Sì|Supporta solo la lettura e il filtraggio di mappe codice, aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.|-|-|
+|**Mappe codice**|Yes|Supporta solo la lettura e il filtraggio delle mappe codice, l'aggiunta di nuovi nodi generici e la creazione di un nuovo grafico diretto da una selezione.|-|-|
 |**Diagrammi classi UML**|Yes|-|-|-|
-|**Diagrammi di sequenza UML**|Sì|-|-|-|
-|**Diagrammi caso d'uso UML**|Sì|-|-|-|
-|**Diagrammi attività UML**|Sì|-|-|-|
-|**Diagrammi dei componenti UML**|Sì|-|-|-|
-|**Diagrammi livello**|Sì|-|-|-|
-|**Grafici diretti** (diagrammi DGML)|Sì|Yes|-|-|
-|**Clone di codice**|Yes|-|-|-|
+|**Diagrammi di sequenza UML**|Yes|-|-|-|
+|**Diagrammi caso di utilizzo UML**|Yes|-|-|-|
+|**Diagrammi di attività UML**|Yes|-|-|-|
+|**Diagrammi componenti UML**|Yes|-|-|-|
+|**Diagrammi livello**|Yes|-|-|-|
+|**Grafici diretti** (diagrammi DGML)|Yes|Yes|-|-|
+|**Clone del codice**|Yes|-|-|-|

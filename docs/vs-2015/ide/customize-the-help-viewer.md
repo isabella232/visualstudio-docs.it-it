@@ -11,27 +11,27 @@ helpviewer_keywords:
 - Viewer Options [Help Viewer 2.0]
 ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcbe5d943947481bfcf85fdfb23036807c0340bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c3af01f68ba1c000c227ddda14ed3bce54d555b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201879"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665899"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare il visualizzatore della Guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile configurare diverse funzionalità di Help Viewer usando il **opzioni Help Viewer** nella finestra di dialogo.  
-  
-## <a name="setting-viewer-options"></a>Impostazione opzioni Help Viewer  
- Per aprire la finestra di dialogo **Opzioni Help Viewer** scegliere il pulsante **Opzioni Help Viewer** sulla barra degli strumenti.  
-  
-|Per eseguire questa attività:|Eseguire questo passaggio:|  
-|---------------------------|---------------------|  
-|Modificare le dimensioni del carattere per la visualizzazione del testo|Scegliere una dimensione nell'elenco **Dimensioni testo**.|  
-|Modificare il numero massimo di risultati di ricerca visualizzati nella scheda **Ricerca**|Scegliere un valore nell'elenco **Numero massimo di risultati di ricerca**.|  
-|Modificare il numero massimo di voci della cronologia visualizzate nella finestra **Preferiti**|Scegliere un valore nell'elenco **Numero massimo di voci della cronologia salvate**.|  
-|Includere o escludere contenuto in inglese quando si visualizza il contenuto per una versione non inglese di un prodotto.|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**. **Attenzione:**  da questa funzionalità dipende anche la possibilità di scaricare contenuto in inglese nella scheda **Gestisci contenuto**.|
+È possibile configurare diverse funzionalità del Visualizzatore della Guida utilizzando la finestra di dialogo **Opzioni Visualizzatore** .
+
+## <a name="setting-viewer-options"></a>Impostazione delle opzioni del Visualizzatore
+ Per aprire la finestra di dialogo **Opzioni Help Viewer** scegliere il pulsante **Opzioni Help Viewer** sulla barra degli strumenti.
+
+|Per eseguire questa attività:|Eseguire questo passaggio:|
+|---------------------------|---------------------|
+|Modificare le dimensioni del carattere per la visualizzazione del testo|Scegliere una dimensione nell'elenco **Dimensioni testo**.|
+|Modificare il numero massimo di risultati di ricerca visualizzati nella scheda **Ricerca**|Scegliere un valore nell'elenco **Numero massimo di risultati di ricerca**.|
+|Modificare il numero massimo di voci della cronologia visualizzate nella finestra **Preferiti**|Scegliere un valore nell'elenco **Numero massimo di voci della cronologia salvate**.|
+|Includere o escludere contenuto in inglese quando si visualizza il contenuto per una versione non inglese di un prodotto.|Selezionare o deselezionare la casella di controllo **Includi contenuto in inglese in tutte le schede di navigazione e nelle richieste F1**. **Attenzione:** da questa funzionalità dipende anche la possibilità di scaricare contenuto in inglese nella scheda **Gestisci contenuto**.|

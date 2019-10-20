@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add Existing Project command
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5a511e19394b397096a5a5ba2e339166454138e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bd6aca05758185f4df47688044f479b7bbe2829e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926289"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658808"
 ---
 # <a name="add-existing-project-command"></a>Comando Aggiungi progetto esistente
 Aggiunge un progetto esistente alla soluzione corrente.
@@ -29,15 +29,15 @@ Aggiunge un progetto esistente alla soluzione corrente.
 File.AddExistingProject filename
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `filename`\
-facoltativo. Percorso completo e nome del progetto comprensivo di estensione da aggiungere alla soluzione.
+Parametro facoltativo. Percorso completo e nome del progetto comprensivo di estensione da aggiungere alla soluzione.
 
 Se l'argomento `filename` include spazi, deve essere racchiuso tra virgolette.
 
 Se non viene specificato un nome file, il comando aprirà la finestra di dialogo in cui l'utente potrà selezionare un progetto.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 
 ## <a name="example"></a>Esempio
@@ -52,4 +52,4 @@ In questo esempio viene aggiunto il progetto [!INCLUDE[vbprvb](../../code-qualit
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

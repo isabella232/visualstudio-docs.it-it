@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871780"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668549"
 ---
 # <a name="navigate-the-uml-model"></a>Esplorare il modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Questo argomento introduce i principali tipi di modello UML.
 
 - Per un riepilogo dei tipi di modello, vedere [tipi di elemento del modello UML](../modeling/uml-model-element-types.md).
 
-- Per informazioni dettagliate sull'API, vedere informazioni di [riferimento sulle API per](../modeling/api-reference-for-uml-modeling-extensibility.md)l'estendibilità di modellazione UML.
+- Per informazioni dettagliate sull'API, vedere informazioni di [riferimento sulle API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
 ### <a name="relationships"></a>Relazioni
  Le proprietà e le relazioni definite nella specifica UML vengono implementate come proprietà .NET.
@@ -45,20 +45,20 @@ Questo argomento introduce i principali tipi di modello UML.
 
  Se si elimina un elemento dal modello, viene automaticamente eliminata qualsiasi relazione di cui fa parte e la proprietà all'altra estremità viene aggiornata.
 
- Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che il tipo della proprietà .NET è: `IEnumerable<`*Digitare*`>`.
+ Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che la proprietà .NET è di tipo: `IEnumerable<`*tipo* `>`.
 
  Per altre informazioni sull'attraversamento delle relazioni, vedere [esplorare le relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Albero di proprietà
  Un modello contiene una struttura ad albero di oggetti [IElement](/previous-versions/dd516035(v=vs.140)) . Ogni elemento dispone delle proprietà `OwnedElements` e `Owner`.
 
- Nella maggior parte dei casi, alle destinazioni delle proprietà `Owner` e `OwnedElements` viene fatto riferimento anche da altre proprietà con nomi più specifici. Ad esempio, ogni operazione UML è di proprietà di una classe UML. Di conseguenza, [IOperation](/previous-versions/dd481186(v=vs.140)) dispone di una proprietà denominata [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)e in ogni oggetto `Class == Owner` [IOperation](/previous-versions/dd481186(v=vs.140)) .
+ Nella maggior parte dei casi, alle destinazioni delle proprietà `Owner` e `OwnedElements` viene fatto riferimento anche da altre proprietà con nomi più specifici. Ad esempio, ogni operazione UML è di proprietà di una classe UML. Di conseguenza, [IOperation](/previous-versions/dd481186(v=vs.140)) dispone di una proprietà denominata [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)e in ogni oggetto [IOperation](/previous-versions/dd481186(v=vs.140)) `Class == Owner`.
 
- L'elemento più in alto della struttura ad albero, senza proprietario, è un `AuxiliaryConstructs.IModel`. IModel è contenuto all'interno di `IModelStore`un oggetto, in cui è [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
+ L'elemento più in alto della struttura ad albero, senza proprietario, è un `AuxiliaryConstructs.IModel`. IModel è contenuto all'interno di un `IModelStore`, in cui è [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
 
  Ogni elemento del modello viene creato con un proprietario. Per altre informazioni, vedere [creare elementi e relazioni nei modelli UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
- ![Diagramma classi: Modello, diagramma, forma ed elemento](../modeling/media/uml-mm1.png)
+ ![Diagramma classi: modello, diagramma, forma ed elemento](../modeling/media/uml-mm1.png)
 
 ## <a name="shapes-and-diagrams"></a>Forme e diagrammi
  Gli elementi nel modello UML possono essere visualizzati nei diagrammi. Diversi tipi di diagrammi possono visualizzare sottotipi diversi di IElement.

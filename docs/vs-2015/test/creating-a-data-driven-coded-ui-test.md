@@ -8,21 +8,21 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8431c1ed983a2b1d4054d067e53d072c996acb94
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 63c960fd68aba444ff24c0e5f24bab70cbe0746e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871748"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660639"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Creazione di un test codificati dell'interfaccia utente basato sui dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per testare condizioni diverse, è possibile eseguire il test più volte con valori di parametro diversi. I test codificati dell'interfaccia utente basati sui dati offrono un modo conveniente per effettuare questa operazione. È possibile definire i valori dei parametri in un'origine dati e ogni riga nell'origine dati è un'iterazione del test codificato dell'interfaccia utente. Il risultato complessivo del test si baserà sul risultato di tutte le iterazioni. Se, ad esempio, un'iterazione test non riesce, il risultato complessivo del test sarà errato.
 
- **Requisiti**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -41,7 +41,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
 3. Aprire l'app Calcolatrice e avviare la registrazione del test.
 
-     ![Registrare le azioni](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
+     ![Azioni di registrazione](../test/media/cuit-datadriven-cuitbuilder.png "CUIT_dataDriven_CUITBuilder")
 
 4. Aggiungere 1 più 2, mettere in pausa la registrazione e generare il metodo di test. I valori di input dell'utente verranno in seguito sostituiti con valori di un file di dati.
 
@@ -59,7 +59,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
     }
     ```
 
-5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (Tasti di scelta rapida: CTRL + R, T).
+5. Usare il metodo `AddNumbers()` per verificare che il test venga eseguito. Posizionare il cursore nel metodo di test indicato sopra, aprire il menu di scelta rapida e scegliere **Esegui test**. (scelta rapida da tastiera: Ctrl + R, T).
 
      Nella finestra Esplora test viene visualizzato il risultato del test che mostra se il test è stato superato o meno. Per aprire la finestra Esplora test, scegliere **Windows** dal menu **TEST** e quindi scegliere **Esplora test**.
 
@@ -67,7 +67,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
      Mappare il controllo di testo nella calcolatrice che visualizza la somma.
 
-     ![Eseguire il mapping del controllo di testo dell'interfaccia utente](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
+     ![Mappare il controllo testo dell'interfaccia utente](../test/media/cuit-datadriven-addassertion.png "CUIT_dataDriven_AddAssertion")
 
 7. Aggiungere un'asserzione che convalida il valore della somma. Scegliere la proprietà **DisplayText** con il valore **3** e quindi scegliere **Aggiungi asserzione**. Usare il comparatore **AreEqual** e verificare che il valore di confronto sia **3**.
 
@@ -104,19 +104,19 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
     |Num1|Num2|Sum|
     |----------|----------|---------|
-    |3|4|7|
+    |3\.|4|7|
     |5|6|11|
     |6|8|14|
 
      Dopo aver aggiunto i dati, il file viene visualizzato come segue:
 
-     ![Popolare il file CSV con dati](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
+     ![Popolare. File CSV con dati](../test/media/cuit-datadriven-adddatatocsvfile.png "CUIT_dataDriven_AddDataToCSVFile")
 
 3. È importante salvare il file CSV usando la codifica corretta. Scegliere **Opzioni di salvataggio avanzate** dal menu **FILE** e quindi scegliere **Unicode (UTF-8 senza firma digitale) – Codepage 65001** come codifica.
 
 4. Il file CSV deve essere copiato nella directory di output; diversamente, non è possibile eseguire il test. Usare la finestra Proprietà per copiarlo.
 
-     ![Distribuire il file CSV](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
+     ![Distribuire. File CSV](../test/media/cuit-datadriven-deploycsvfile.png "CUIT_dataDriven_DeployCSVFile")
 
      Dopo aver creato il set di dati, è associare i dati al test.
 
@@ -185,11 +185,11 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
     - Aprire il file UIMap.uitest.
 
-         ![Aprire l'Editor di test codificati dell'interfaccia utente](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
+         ![Aprire l'editor di test codificati dell'interfaccia utente](../test/media/cuit-datadriven-opentesteditor.png "CUIT_dataDriven_OpenTestEditor")
 
     - Scegliere l'azione dell'interfaccia utente e osservare il mapping di controllo dell'interfaccia utente corrispondente. Si noti come il mapping corrisponda al codice, ad esempio `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
-         ![Usare l'Editor di test codificati dell'interfaccia utente come supporto per il codice](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
+         ![Usare l'editor di test codificati dell'interfaccia utente per semplificare il codice](../test/media/cuit-datadriven-testeditor.png "CUIT_dataDriven_TestEditor")
 
     - Nella finestra Proprietà aprire **Proprietà di ricerca**. Il valore **Nome** delle proprietà di ricerca è costituito dagli elementi che sono stati modificati nel codice usando l'origine dati. Ad esempio, a `SearchProperties` vengono assegnati i valori della prima colonna di ciascuna riga di dati: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Per le tre iterazioni, questo test imposterà il valore **Nome** per la proprietà di ricerca su 3, quindi su 5 e infine su 6.
 
@@ -205,7 +205,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
    **Linee guida**
 
-   Per altre informazioni, vedere [test per la distribuzione continua con Visual Studio 2012 – capitolo 2: Unit test: Test dell'interno](http://go.microsoft.com/fwlink/?LinkID=255188) e [test per il recapito continuo con Visual Studio 2012 – capitolo 5: Automazione di test di sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
+   Per altre informazioni, vedere [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 2: Unit test: test interni) e [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196) (Test per la distribuzione continua con Visual Studio 2012 - Capitolo 5: Automazione dei test di sistema)
 
 ## <a name="q--a"></a>Domande e risposte
 
@@ -234,7 +234,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>D: È possibile usare i test basati sui dati nell'app Windows Phone?
+### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>D: È possibile usare i test basati su dati in un'app per Windows Phone?
  **R:** Sì. I test codificati dell'interfaccia utente basati sui dati per Windows Phone sono definiti tramite l'uso dell'attributo DataRow su un metodo di test. Nell'esempio seguente x e y usano i valori di 1 e 2 per la prima iterazione e di -1 e -2 per la seconda iterazione del test.
 
 ```
@@ -245,8 +245,8 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 ```
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>D: Perché non è possibile modificare il codice nel file UIMap. designer?
- **R:** Qualsiasi modifica del codice apportata nel file UIMapDesigner.cs verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio, e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente (ovvero CodedUITest1.cs).
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>D: Perché non è possibile modificare il codice nel file UIMap.Designer?
+ **R**: Qualsiasi modifica del codice eseguita nel file UIMapDesigner.cs verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. In questo esempio, e nella maggior parte dei casi, le modifiche al codice necessarie per consentire a un test di usare un'origine dati possono essere apportate al file del codice sorgente (ovvero CodedUITest1.cs).
 
  Se è necessario modificare un metodo registrato, copiarlo nel file UIMap.cs e rinominarlo. Il file UIMap.cs può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file UIMapDesigner.cs. È necessario rimuovere il riferimento al metodo originale nel file Coded UITest.cs e sostituirlo con il nome del metodo rinominato.
 

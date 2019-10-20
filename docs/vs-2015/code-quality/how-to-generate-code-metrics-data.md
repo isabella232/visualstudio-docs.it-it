@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Generare dati di metrica codice | Microsoft Docs'
+title: 'Procedura: generare dati di metrica del codice | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,54 +10,54 @@ helpviewer_keywords:
 - generate code metrics results
 ms.assetid: 7bd2c906-ee9c-484a-9550-4cddecc8f042
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201331"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661284"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>Procedura: Generare dati di metrica del codice
+# <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile decidere di generare risultati metrica codice per un'intera soluzione o un progetto selezionato.  
-  
- **Requisiti**  
-  
- Visual Studio Enterprise  
-  
-### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Per generare risultati metrica codice per un'intera soluzione  
-  
-- Fare clic su **menu Analizza**, quindi fare clic su **CalculateCode metriche per la soluzione**.  
-  
-     \- oppure -  
-  
-- Nelle **Esplora soluzioni**, fare doppio clic la soluzione e quindi fare clic su **metriche CalculateCode**.  
-  
-     \- oppure -  
-  
-- Nel **risultati metrica codice** finestra, fare clic sui **CalculateCode metriche per la soluzione** pulsante.  
-  
-     I risultati vengono generati e il **risultati metrica codice** viene visualizzata la finestra.  
-  
-### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Per generare risultati metrica codice per una o più progetti selezionati  
-  
-1. Nelle **Esplora soluzioni**, selezionare uno o più progetti.  
-  
-2. Fare clic su **Analyze**, quindi fare clic su **Calcola metrica codice per progetti selezionati (s)** .  
-  
-    \- oppure -  
-  
-    Fare doppio clic le selezioni effettuate e quindi fare clic su **CalculateCode metriche**.  
-  
-   I risultati vengono generati e il **risultati metrica codice** viene visualizzata la finestra.  
-  
-### <a name="to-view-the-results-details"></a>Per visualizzare i dettagli dei risultati  
-  
-- Espandere l'albero nel **gerarchia** colonna.  
-  
-## <a name="see-also"></a>Vedere anche  
+È possibile decidere di generare i risultati della metrica del codice per un'intera soluzione o per un progetto selezionato.
+
+ **Requirements**
+
+ Visual Studio Enterprise
+
+### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Per generare risultati della metrica del codice per un'intera soluzione
+
+- Fare clic sul **menu Analizza**e quindi su **metriche CalculateCode per la soluzione**.
+
+     \- oppure -
+
+- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e quindi scegliere **metriche CalculateCode**.
+
+     \- oppure -
+
+- Nella finestra **dei risultati della metrica del codice** , fare clic sul pulsante **metrica CalculateCode per la soluzione** .
+
+     I risultati vengono generati e viene visualizzata la finestra **Risultati metrica codice** .
+
+### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Per generare risultati della metrica del codice per uno o più progetti selezionati
+
+1. In **Esplora soluzioni**selezionare uno o più progetti.
+
+2. Fare clic su **analizza**e quindi su **genera metrica codice per i progetti selezionati**.
+
+    \- oppure -
+
+    Fare clic con il pulsante destro del mouse sulle selezioni e quindi fare clic su **metriche CalculateCode**.
+
+   I risultati vengono generati e viene visualizzata la finestra **Risultati metrica codice** .
+
+### <a name="to-view-the-results-details"></a>Per visualizzare i dettagli dei risultati
+
+- Espandere l'albero nella colonna **gerarchia** .
+
+## <a name="see-also"></a>Vedere anche
  [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

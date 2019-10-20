@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950254"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653645"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
 
@@ -71,7 +71,7 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 8. Aggiungere codice in base a ciò che si vuole che il plug-in di registrazione esegua dopo la registrazione Web. È ad esempio possibile aggiungere codice per gestire la correlazione personalizzata, come mostrato nell'esempio sotto. È anche possibile creare un plug-in di registrazione, ad esempio, per la conversione di commenti in transazioni o per l'aggiunta di regole di convalida al test delle prestazioni Web.
 
-9. Dal menu **Compila** scegliere **Compila\<nome progetto libreria di classi>**.
+9. Dal menu **Compila** scegliere **Compila\<nome progetto libreria di classi>** .
 
 A questo punto, distribuire il plug-in di registrazione per effettuarne la registrazione in Visual Studio.
 
@@ -99,9 +99,9 @@ Dopo avere compilato il plug-in di registrazione, posizionare il file DLL risult
     > [!WARNING]
     > Quando si esegue un test delle prestazioni web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
-    > **Richiesta non riuscita: Eccezione nell'evento \<plug-in>: Non è stato possibile caricare il file o l'assembly '\<"file .dll Nome plug-in" Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
+    > **Richiesta non riuscita: eccezione nell'evento > \<plug: non è stato possibile caricare il nome del plug-in del file o dell'assembly ' \<' ". file dll >, Version = \<n. n. n. n >, Culture = neutral, PublicKeyToken = null ' o una delle relative dipendenze. Il sistema non è in grado di trovare il file specificato.**
     >
-    > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
+    > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)** , ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
     > 1. Nei riferimenti del progetto di test di carico e prestazioni web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
     > 2. Rimuovere il plug-in dal test o dal percorso appropriato, quindi aggiungerlo di nuovo.

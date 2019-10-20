@@ -1,5 +1,5 @@
 ---
-title: 'CA1814: Preferire matrici di matrici multidimensionali | Microsoft Docs'
+title: 'CA1814: Preferire matrici di matrici su multidimensionali | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1814
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0ac183321bd2a3070b1f1ddc54402b74c8fb823
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201707"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668410"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferire matrici di matrici rispetto a matrici multidimensionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "68201707"
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Category|Microsoft.Performance|
+|Category|Microsoft. performance|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un membro viene dichiarato come una matrice multidimensionale.
+ Un membro viene dichiarato come matrice multidimensionale.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Una matrice di matrici è una matrice i cui elementi sono costituiti da matrici. Poiché le matrici che costituiscono gli elementi possono presentare dimensioni diverse, la quantità di spazio inutilizzato sarà inferiore per alcuni insiemi di dati.
@@ -42,10 +42,10 @@ ms.locfileid: "68201707"
  Per correggere una violazione di questa regola, modificare la matrice multidimensionale in una matrice di matrici.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Eliminare un avviso da questa regola se la matrice multidimensionale non spreco di spazio.
+ Eliminare un avviso da questa regola se la matrice multidimensionale non spreca spazio.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra le dichiarazioni per matrici e matrici multidimensionali.
+ Nell'esempio seguente vengono illustrate le dichiarazioni per matrici frastagliate e multidimensionali.
 
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/cs/FxCop.Performance.JaggedArrays.cs#1)]
  [!code-vb[FxCop.Performance.JaggedArrays#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/vb/FxCop.Performance.JaggedArrays.vb#1)]

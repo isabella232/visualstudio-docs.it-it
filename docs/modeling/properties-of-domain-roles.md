@@ -2,44 +2,44 @@
 title: Proprietà dei ruoli di dominio
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a992cc06a177d329701ca98278ad14632bda8df1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998951"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658164"
 ---
 # <a name="properties-of-domain-roles"></a>Proprietà dei ruoli di dominio
-Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere [informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere informazioni su [modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Proprietà|Descrizione|Impostazione predefinita|
+|proprietà|Descrizione|Impostazione predefinita|
 |-|-|-|
-|Tipo di raccolta|Se questo ruolo ha molteplicità pari a 0.. * o 1... \*, questa proprietà consente di personalizzare il tipo generico che viene utilizzato per memorizzare la raccolta di collegamenti.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> viene usato|
-|Attributi personalizzati|Gli attributi specificati in questo punto verranno aggiunto come attributi alla classe del codice generato.|< Nessuno\>|
-|È possibile visualizzare proprietà|Se `True`, e se la molteplicità della relazione è 0..1 1 o 1, la proprietà del ruolo può essere visualizzata dall'utente nella finestra di **proprietà** finestra. La proprietà consente di visualizzare il nome dell'elemento a altra estremità del collegamento della relazione.|`True`|
-|Generatore di proprietà|Se `True`, viene generata una proprietà di ruolo per questo ruolo, che è possibile usare per attraversare la relazione nel codice del programma. Se si imposta questa false, è possibile attraversare la relazione in modo meno efficiente usando metodi statici della relazione di dominio.|`True`|
-|Modificatore di accesso Getter proprietà|Il modificatore di accesso per il metodo Get per la proprietà generata (`public`, `internal`, `private`, `protected`, o `protected internal`).|`public`|
-|Modificatore di accesso Setter di proprietà|Il modificatore di accesso per il setter per la proprietà generata (`public`, `internal`, `private`, `protected`, o `protected internal`).|`public`|
-|Multiplicity|Il numero di elementi del modello che svolge il ruolo opposto (`0..1`, `1..1`, `0..*`, o `1..*`). Se la molteplicità `0..*` o `1..*`, quindi la proprietà generata rappresenta una raccolta; in caso contrario, la proprietà generata rappresenta un singolo elemento del modello.|Dipende dal tipo di relazione e se si tratta del ruolo di origine o destinazione della relazione.|
-|Nome|Il nome del ruolo del dominio. Questa proprietà non può contenere spazi vuoti.|Il nome della classe di dominio dell'assegnatario del ruolo per questo ruolo.|
-|Propaga copia|`DoNotPropagateCopy` -L'assegnatario del ruolo copiato non avrà alcuna copia del collegamento.<br /><br /> `PropagateCopyToLinkOnly` -Il collegamento copiato punta a esistente assegnatario di ruolo opposto.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -Il collegamento copiato punta a una copia dell'assegnatario del ruolo opposto.|`PropagateCopyToLinkAndOppositeRolePlayer` per i ruoli di origine di rappresentazioni distribuite.<br /><br /> `DoNotPropagateCopy` per altri ruoli.<br /><br /> Per altre informazioni, vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md)|
-|Propaga eliminazione|`True` Per eliminare l'elemento che riveste il ruolo quando viene eliminato il collegamento associato.|`True` per la destinazione di un ruolo di incorporamento.<br /><br /> `False` per altri ruoli.|
-|Nome proprietà|Il nome della proprietà generata nel codice dell'assegnatario del ruolo. Questo nome non può contenere spazi vuoti.|Il nome del ruolo opposto se questo ruolo dispone di un zero-a-uno o una molteplicità uno a uno; in caso contrario, il nome pluralizzato del ruolo opposto.|
-|Assegnatario del ruolo|La classe di dominio dell'elemento che può rivestire questo ruolo nella relazione. Questa proprietà è di sola lettura.|La classe di dominio dell'assegnatario del ruolo per questo ruolo.|
-|Note|Note informali associate con il ruolo di dominio.|< Nessuno\>|
-|Category|La categoria in cui la proprietà generata viene visualizzata nella **proprietà** finestra nella finestra di progettazione generata. Se questa proprietà è vuota, quindi la proprietà generata viene visualizzata sotto il **Misc** categoria|< Nessuno\>|
-|Descrizione|La descrizione che consente di documentare il codice e viene utilizzata nell'interfaccia utente della finestra di progettazione generata.<br /><br /> La descrizione viene visualizzata nella descrizione comandi IntelliSense per la proprietà generata nella classe dell'assegnatario di ruolo.|`Description for` *il nome completo del ruolo*|
-|Nome visualizzato|Il nome visualizzato nella finestra di progettazione generata per il ruolo di dominio.|Valore modificato della proprietà Name.|
-|Parola chiave della Guida|La parola chiave facoltativa utilizzata per indicizzare la Guida F1 per il ruolo di dominio.|\<nessuno>|
-|Nome visualizzato proprietà|Il nome visualizzato nella finestra di progettazione generata per la proprietà di ruolo generato.|Valore della proprietà del nome di proprietà modificato.|
+|Tipo di raccolta|Se questo ruolo ha molteplicità pari a 0.. * o 1.. \* questa proprietà Personalizza il tipo generico utilizzato per archiviare la raccolta di collegamenti.|viene usato `(none)`  -  <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601>|
+|Attributi personalizzati|Gli attributi specificati qui verranno aggiunti come attributi alla classe di codice generata.|< Nessuna \>|
+|Proprietà esplorabile|Se `True` e se la molteplicità della relazione è 0.. 1 o 1.. 1, la proprietà Role può essere esplorata dall'utente nella finestra **Proprietà** . La proprietà Visualizza il nome dell'elemento all'altra estremità del collegamento della relazione.|`True`|
+|Generatore di proprietà|Se `True`, viene generata una proprietà Role per questo ruolo, che è possibile utilizzare per attraversare la relazione nel codice del programma. Se si imposta questo valore su false, è possibile attraversare la relazione in modo meno efficiente utilizzando metodi statici della relazione di dominio.|`True`|
+|Modificatore di accesso getter proprietà|Modificatore di accesso per il getter per la proprietà generata (`public`, `internal`, `private`, `protected` o `protected internal`).|`public`|
+|Modificatore di accesso Setter proprietà|Modificatore di accesso per il setter per la proprietà generata (`public`, `internal`, `private`, `protected` o `protected internal`).|`public`|
+|Multiplicity|Numero di elementi del modello in cui è possibile riprodurre il ruolo opposto (`0..1`, `1..1`, `0..*` o `1..*`). Se la molteplicità è `0..*` o `1..*`, la proprietà generata rappresenta una raccolta. in caso contrario, la proprietà generata rappresenta un singolo elemento del modello.|Dipende dal tipo di relazione e dal fatto che questo sia il ruolo di origine o di destinazione nella relazione.|
+|Name|Nome del ruolo del dominio. Questa proprietà non può contenere spazi vuoti.|Nome della classe di dominio dell'assegnatario di ruolo per questo ruolo.|
+|Propaga la copia|`DoNotPropagateCopy`-l'assegnatario di ruolo copiato non avrà alcuna copia di questo collegamento.<br /><br /> `PropagateCopyToLinkOnly`: il collegamento copiato punta all'assegnatario di ruolo opposto esistente.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer`: il collegamento copiato punta a una copia dell'assegnatario di ruolo opposto.|`PropagateCopyToLinkAndOppositeRolePlayer` per i ruoli di origine degli incorporamenti.<br /><br /> `DoNotPropagateCopy` per altri ruoli.<br /><br /> Per altre informazioni, vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md)|
+|Propaga l'eliminazione|`True` eliminare l'elemento che svolge questo ruolo quando il collegamento associato viene eliminato.|`True` per la destinazione di un ruolo di incorporamento.<br /><br /> `False` per altri ruoli.|
+|Nome proprietà|Nome della proprietà generata nel codice dell'assegnatario di ruolo. Questo nome non può contenere spazi vuoti.|Nome del ruolo opposto se il ruolo ha una molteplicità zero-a-uno o uno-a-uno. in caso contrario, il nome plurale del ruolo opposto.|
+|Assegnatario di ruolo|Classe di dominio dell'elemento che può riprodurre questo ruolo nella relazione. Questa proprietà è di sola lettura.|Classe di dominio dell'assegnatario di ruolo per questo ruolo.|
+|Note|Note informali associate al ruolo del dominio.|< Nessuna \>|
+|Category|Categoria in cui la proprietà generata viene visualizzata nella finestra **Proprietà** della finestra di progettazione generata. Se questa proprietà è vuota, la proprietà generata viene visualizzata sotto la categoria **varie**|< Nessuna \>|
+|Descrizione|Descrizione utilizzata per documentare il codice e utilizzata nell'interfaccia utente della finestra di progettazione generata.<br /><br /> La descrizione viene visualizzata nella descrizione comando IntelliSense per la proprietà generata nella classe assegnatario di ruolo.|`Description for` *il nome completo del ruolo*|
+|Nome visualizzato|Nome visualizzato nella finestra di progettazione generata per il ruolo di dominio.|Valore regolato della proprietà Name.|
+|Parola chiave della Guida|Parola chiave facoltativa utilizzata per indicizzare la Guida sensibile al contesto per il ruolo di dominio.|\<nessuno>|
+|Nome visualizzato proprietà|Nome visualizzato nella finestra di progettazione generata per la proprietà del ruolo generata.|Valore regolato della proprietà del nome della proprietà.|
 
 > [!NOTE]
-> Il valore predefinito di un nome visualizzato è basato sul valore della proprietà associato tramite l'inserimento di spazi prima di ogni carattere maiuscolo, che è preceduto da un carattere minuscolo e che non è seguito da un altro carattere maiuscolo.
+> Il valore predefinito di un nome visualizzato è basato sul valore della proprietà associata inserendo spazi prima di ogni carattere maiuscolo preceduto da un carattere minuscolo e non seguito da un altro carattere maiuscolo.
 
 ## <a name="see-also"></a>Vedere anche
 

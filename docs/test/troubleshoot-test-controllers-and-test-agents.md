@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990540"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659917"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
 
@@ -41,7 +41,7 @@ Il problema potrebbe anche essere causato dalla mancata disponibilità di autori
 
 1. Arrestare il servizio controller di test. Al prompt dei comandi digitare `net stop vsttcontroller`.
 
-2. Aprire il file *QTController.exe.config*. Questo file si trova nella directory di installazione del controller.
+2. Aprire il file *QTController. exe. config*. Questo file si trova nella directory di installazione del controller.
 
 3. Modificare la voce per l'opzione `EqtTraceLevel` nella sezione del file relativa alla diagnostica di sistema. Il codice sarà simile a quello riportato di seguito:
 
@@ -86,7 +86,7 @@ Questa procedura si applica al controller di test, al servizio agente di test e 
 
 Quando si tenta di configurare un agente di test, potrebbe verificarsi l'errore seguente:
 
-**Errore 8110. Impossibile connettersi al controller specificato o accedere all'oggetto controller.**
+**Errore 8110. Impossibile connettersi al computer controller specificato o accedere all'oggetto controller.**
 
 Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete.
 
@@ -113,7 +113,7 @@ Per correggere questo errore, è necessario associare il controller di test a un
 
 1. Arrestare il servizio controller di test. Al prompt dei comandi digitare `net stop vsttcontroller`.
 
-2. Aprire il file *QTController.exe.config*. Questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Aprire il file *QTController. exe. config*. Il file si trova in *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 3. Aggiungere una voce per la proprietà `BindTo` alle impostazioni dell'applicazione. Specificare l'indirizzo IP della scheda di rete da associare al controller. Il codice sarà simile a quello riportato di seguito:
 

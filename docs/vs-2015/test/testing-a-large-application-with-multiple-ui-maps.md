@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871576"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672131"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia utente per il test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente.
 
- **Requisiti**
+ **Requirements**
 
 - Visual Studio Enterprise
 
-  Quando si crea un nuovo test codificato dell'interfaccia utente [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , per impostazione predefinita il Framework di test genera il codice per il test in una classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).
+  Quando si crea un nuovo test codificato dell'interfaccia utente, per impostazione predefinita il Framework di test di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera il codice per il test in una classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Per altre informazioni sulla registrazione di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md).
 
   Il codice generato per la mappa dell'interfaccia utente contiene una classe per ogni oggetto con cui il test interagisce. Per ogni metodo generato, viene generata una classe complementare per i parametri del metodo appositamente per quel metodo. Se l'applicazione contiene un numero elevato di oggetti, pagine, moduli e controlli, la mappa dell'interfaccia utente può raggiungere dimensioni significative. Inoltre, se più persone stanno operando sui test, l'applicazione può diventare difficile da gestire se è presente un solo file di mappa dell'interfaccia utente di grandi dimensioni.
 

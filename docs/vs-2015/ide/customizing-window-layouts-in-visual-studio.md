@@ -21,15 +21,15 @@ helpviewer_keywords:
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665828"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 ## <a name="kinds-of-windows"></a>Tipi di finestre
 
 ### <a name="tool-and-document-windows"></a>Finestre dei documenti e degli strumenti
- L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli strumenti includono Esplora soluzioni, Esplora server, Finestra di output, Elenco errori, le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre di documento possono essere trascinate dalla scheda. Fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni della finestra.
+ L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli strumenti includono Esplora soluzioni, Esplora server, Finestra di output, Elenco errori, le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre di documento possono essere trascinate dalla relativa scheda. fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni nella finestra.
 
  Nel menu **Finestra** vengono visualizzate le opzioni disponibili per ancorare, rendere mobili e nascondere le finestre nell'IDE. Fare clic con il pulsante destro del mouse sulla barra del titolo o sulla scheda di una finestra per visualizzare opzioni aggiuntive per tale specifica finestra. È possibile visualizzare più istanze di determinate finestre degli strumenti per volta. Ad esempio, è possibile visualizzare più finestre di un browser Web, nonché creare ulteriori istanze di alcune finestre degli strumenti selezionando **Nuova finestra** nel menu **Finestra** .
 
@@ -53,7 +53,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
  Quando è necessario visualizzare o modificare due percorsi contemporaneamente in un documento, è possibile dividere le finestre. Per dividere il documento in due sezioni che scorrono in modo indipendente, fare clic su **Dividi** nel menu **Finestra** . Fare clic su **Rimuovi divisione** nel menu **Finestra** per ripristinare la visualizzazione singola.
 
 ### <a name="toolbars"></a>Barre degli strumenti
- Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [How to: Customize Menus and Toolbars ](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) (Procedura: Personalizzare i menu e le barre degli strumenti).
 
 ## <a name="arranging-and-docking-windows"></a>Disposizione e ancoraggio delle finestre
  Le finestre dei documenti e le finestre degli strumenti possono essere *ancorate*in modo che abbiano una posizione e una dimensione all'interno della cornice della finestra dell'IDE. È anche possibile renderle mobili come finestre separate indipendenti dell'IDE. Le finestre degli strumenti possono essere ancorate in qualsiasi area all'interno della cornice dell'IDE; alcune di esse possono essere ancorate come finestre a schede nella cornice dell'editor. Le finestre dei documenti possono essere ancorate all'interno della cornice dell'editor e bloccate nella posizione corrente nell'ordine di tabulazione. È possibile ancorare più finestre per renderle mobili in un "raggruppamento" sopra o all'esterno dell'IDE. Le finestre degli strumenti possono anche essere nascoste o ridotte a icona.
@@ -77,7 +77,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
   Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancoraggio delle finestre
  Quando si seleziona e si trascina la barra del titolo di una finestra degli strumenti oppure la scheda della finestra del documento, viene visualizzata una guida a forma di rombo. Durante l'operazione di trascinamento, quando il cursore si trova sopra una delle frecce nel rombo, viene visualizzata un'area ombreggiata che mostra la posizione in cui verrà ancorata la finestra se viene rilasciato il mouse in quel preciso momento.
@@ -88,17 +88,17 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
  Nella figura seguente viene illustrata la guida a forma di rombo per le finestre dei documenti, che è possibile ancorare solo all'interno della cornice per la modifica:
 
- ![Guida a forma di rombo delle finestre dei documenti](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+ ![Guida alla finestra del documento Diamond](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
 
  Le finestre degli strumenti possono essere bloccate su un lato di una cornice nell'IDE o all'interno della cornice per la modifica. Per consentire all'utente di ancorare di nuovo la finestra facilmente, viene visualizzata una guida a forma di rombo quando si trascina una finestra degli strumenti in un'altra posizione.
 
  Guida a forma di rombo per le finestre degli strumenti
 
- ![Guide a forma di rombo delle finestre degli strumenti](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+ ![Guide della finestra degli strumenti-diamanti](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
 
  Nella figura seguente viene illustrata la finestra Esplora soluzioni mentre viene ancorata in una nuova posizione, mostrata dall'area ombreggiata in blu:
 
- ![Esplora soluzioni in una nuova posizione di ancoraggio](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![Ancoraggio Esplora soluzioni in una nuova posizione](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
 ### <a name="closing-and-auto-hiding-tool-windows"></a>Chiusura e scomparsa automatica delle finestre degli strumenti
  È possibile chiudere una finestra degli strumenti facendo clic sulla X nella parte superiore destra della barra del titolo. Per riaprire la finestra, utilizzare l'abbreviazione da tastiera o il comando di menu appropriato. Le finestre degli strumenti supportano una funzionalità denominata Nascondi automaticamente, che fa in modo che una finestra scompaia dallo schermo quando si utilizza un'altra finestra. Quando una finestra viene nascosta automaticamente, il relativo nome viene visualizzato su una scheda sul bordo dell'IDE. Per utilizzare nuovamente la finestra, posizionare il mouse sulla scheda affinché sia possibile visualizzare di nuovo la finestra.
@@ -133,7 +133,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Creare un progetto per interfaccia utente e personalizzare il layout
 
-1. Nella finestra di dialogo **Nuovo progetto** crear un'applicazione desktop WPF di Visual C# e assegnarle il nome desiderato. Si supponga che questo sia il progetto in cui si lavorerà sull'interfaccia utente e che quindi si voglia dare più spazio alla finestra di progettazione spostando quindi le altre finestre degli strumenti.
+1. Nella finestra di dialogo **Nuovo progetto** creare un'applicazione desktop WPF di Visual C# e assegnarle il nome desiderato. Si supponga che questo sia il progetto in cui si lavorerà sull'interfaccia utente e che quindi si voglia dare più spazio alla finestra di progettazione spostando quindi le altre finestre degli strumenti.
 
 2. Se sono disponibili più monitor, spostare le finestre **Esplora soluzioni** e **Proprietà** sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
 
@@ -163,7 +163,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
      Se in ufficio si usa una configurazione a più monitor e a casa una laptop con un solo monitor, è possibile creare layout ottimizzati per ogni computer.
 
-     Nota: Se si applica un layout a più monitor in un sistema a monitor singolo, le finestre mobili posizionate sul secondo monitor risulteranno nascoste dietro la finestra di Visual Studio. Per portarle in primo piano, premere ALT+TAB. Se in seguito si apre Visual Studio in un computer con più monitor, sarà possibile ripristinare le posizioni specificate delle finestre riapplicando il layout.
+     Nota: se si applica un layout a più monitor in un sistema a monitor singolo, le finestre mobili posizionate sul secondo monitor risulteranno nascoste dietro la finestra di Visual Studio. È possibile portare le finestre in primo piano premendo ALT + TAB. Se in seguito si apre Visual Studio con più monitoraggi, è possibile ripristinare le posizioni specificate applicando nuovamente il layout.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Gestire o effettuare il roaming dei layout
 
@@ -181,5 +181,5 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 |-----------|-----------------|
 |[Tipi di finestre](../misc/kinds-of-windows.md)|Vengono illustrate le differenze tra le finestre degli strumenti e le finestre di documento nell'IDE.|
 |[Procedura: Disporre e ancorare le finestre](../misc/how-to-arrange-and-dock-windows.md)|Viene descritto come ancorare, nascondere automaticamente e affiancare le finestre, nonché come reimpostarne il layout.|
-|[Procedura: Spostarsi all'interno dell'IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Descrive come è possibile scorrere tra le finestre aperte nell'IDE, in ordine di utilizzo. Descrive inoltre come è possibile passare a documenti specifici.|
+|[How to: Move Around in the IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md) (Procedura: Spostarsi all'interno dell'IDE)|Descrive come è possibile scorrere tra le finestre aperte nell'IDE, in ordine di utilizzo. Descrive inoltre come è possibile passare a documenti specifici.|
 |[Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Include informazioni sulle combinazioni di impostazioni e sull'effetto di tali impostazioni sul layout delle finestre, sui tasti di scelta rapida e su altri elementi dell'IDE.|

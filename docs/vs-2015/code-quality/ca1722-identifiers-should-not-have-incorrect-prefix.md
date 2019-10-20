@@ -1,5 +1,5 @@
 ---
-title: 'CA1722: Gli identificatori non devono contenere il prefisso non corretto | Microsoft Docs'
+title: 'CA1722: gli identificatori non devono contenere un prefisso errato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
 ms.assetid: c3313c51-d004-4f9a-a0d1-6c4c4a1fb1e6
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0c9aa6600578da0d9868df2ecff9992bff9e818c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f50c5aca934886f03a54692d98a6be3f8bb5562
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191238"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671586"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Gli identificatori non devono contenere il prefisso non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,18 +29,18 @@ ms.locfileid: "68191238"
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectPrefix|
 |CheckId|CA1722|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un identificatore ha un prefisso non corretto.
+ Un identificatore ha un prefisso errato.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Per convenzione, solo determinati elementi di programmazione presentano nomi che iniziano con un prefisso specifico.
 
- I nomi di tipo non è un prefisso specifico e non devono essere preceduti da "C". Questa regola segnala le violazioni per i nomi dei tipi, ad esempio 'CMyClass' e non segnalare le violazioni per i nomi dei tipi, ad esempio "Cache".
+ I nomi dei tipi non hanno un prefisso specifico e non devono essere preceduti da un prefisso ' c'. Questa regola segnala le violazioni dei nomi dei tipi, ad esempio ' CMyClass ', e non segnala violazioni per i nomi dei tipi come ' cache '.
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+ Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Rimuovere il prefisso dall'identificatore.

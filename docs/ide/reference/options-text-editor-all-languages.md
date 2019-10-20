@@ -37,21 +37,21 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 2c33ccbaa21008ab3fa3d1122847c5e18708f9fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606055"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666359"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Finestra di dialogo Opzioni: Editor di testo \> Tutti i linguaggi
+# <a name="options-dialog-box-text-editor--all-languages"></a>Finestra di dialogo Opzioni: editor di testo \> tutti i linguaggi
 
-Questa finestra di dialogo consente di modificare il comportamento predefinito dell'editor del codice. Queste impostazioni si applicano anche agli altri editor basati sull'editor del codice, come ad esempio la visualizzazione dell'origine della finestra di progettazione HTML. Per aprire questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella dell'**Editor di testo** espandere la sottocartella **All Languages** (Tutti i linguaggi), quindi scegliere **Generale**.
+Questa finestra di dialogo consente di modificare il comportamento predefinito dell'editor del codice. Queste impostazioni si applicano anche agli altri editor basati sull'editor del codice, come la visualizzazione dell'origine della finestra di progettazione HTML. Per aprire questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella dell'**Editor di testo** espandere la sottocartella **All Languages** (Tutti i linguaggi), quindi scegliere **Generale**.
 
 > [!CAUTION]
 > Questa pagina consente di impostare le opzioni predefinite per tutti i linguaggi di sviluppo. Tenere presente che la reimpostazione di un'opzione in questa finestra di dialogo reimposterà le opzioni generali in tutti i linguaggi per qualunque scelta operata in questa fase. Per modificare le opzioni dell'editor di testo per un solo linguaggio, espandere la sottocartella per tale linguaggio e selezionare le pagine relative alle opzioni.

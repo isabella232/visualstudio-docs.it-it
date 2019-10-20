@@ -16,17 +16,17 @@ helpviewer_keywords:
 - namespaces [Visual Studio], referencing
 - COM components, referencing
 - objects [Visual Studio], referencing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 06235439fdff952225fe3aafea9f5354a27cb0a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787629"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658427"
 ---
 # <a name="manage-references-in-a-project"></a>Gestire i riferimenti in un progetto
 
@@ -113,7 +113,7 @@ Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di de
 
 I riferimenti da progetto a progetto sono riferimenti a progetti che contengono assembly; è possibile aggiungere riferimenti a progetti tramite la scheda **Progetto** della finestra di dialogo Gestione riferimenti. Visual Studio può trovare un assembly se viene specificato un percorso al progetto.
 
-In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory *bin*, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: "Avviso: impossibile copiare la dipendenza 'file' del progetto 'progetto' nella directory di esecuzione perché sovrascriverebbe il riferimento 'file'.". Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md).
+In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto può fare riferimento a una versione compilata in precedenza del progetto. Questo può comportare la necessità di diverse versioni di una singola DLL nella directory *bin* , il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: "Avviso: impossibile copiare la dipendenza 'file' del progetto 'progetto' nella directory di esecuzione perché sovrascriverebbe il riferimento 'file'.". Per altre informazioni, vedere [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md) e [Procedura: Creare e rimuovere dipendenze di progetto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.

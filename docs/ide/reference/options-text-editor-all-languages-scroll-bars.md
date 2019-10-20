@@ -27,17 +27,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd7be5aea136c901241ca66af485e76a39cd0ee5
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666373"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento
 Questa finestra di dialogo consente di modificare il comportamento predefinito della barra di scorrimento dell'editor del codice. Per visualizzare queste opzioni, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella **Editor di testo** espandere la sottocartella **Tutti i linguaggi** e quindi scegliere **Barre di scorrimento**.

@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648050"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare classi di LINQ to SQL usando l'ereditarietà a tabella singola (O/R Designer)
-Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola poiché viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata si espande in base ai passaggi generici [disponibili in procedura: Configurare l'ereditarietà usando l'argomento O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) designer e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]in.
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: creare classi di LINQ to SQL usando l'ereditarietà a tabella singola (O/R Designer)
+Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola poiché viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici forniti nell'argomento [How to: Configure ereditarietà by using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà nel [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
 Durante questa procedura dettagliata si eseguono le attività seguenti:
 
@@ -38,7 +38,7 @@ Durante questa procedura dettagliata si eseguono le attività seguenti:
 - Visualizzazione dei dati in un Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Creazione di una tabella da cui ereditare
-Per verificare il funzionamento dell'ereditarietà, è possibile creare `Person` una tabella di piccole dimensioni, usarla come classe di base e `Employee` quindi creare un oggetto che eredita da esso.
+Per verificare il funzionamento dell'ereditarietà, creare una piccola tabella di `Person`, usarla come classe di base e quindi creare un `Employee` oggetto che eredita da esso.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Per creare una tabella di base per l'illustrazione dell'ereditarietà
 
@@ -52,7 +52,7 @@ Per verificare il funzionamento dell'ereditarietà, è possibile creare `Person`
     |Nome colonna|Tipo di dati|Ammetti Null|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
-    |**Tipo**|**int**|**True**|
+    |**Type**|**int**|**True**|
     |**FirstName**|**nvarchar(200)**|**False**|
     |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
@@ -72,7 +72,7 @@ Allo scopo di verificare che l'ereditarietà sia configurata correttamente, è n
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Tipo**|**FirstName**|**LastName**|**Manager**|
+    |**ID**|**Type**|**FirstName**|**LastName**|**Manager**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -91,7 +91,7 @@ Una volta creata la tabella, creare un nuovo progetto per illustrare la configur
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Per creare il nuovo Windows Forms Application
 
-1. In Visual Studio scegliere **nuovo** > **progetto**dal menu **file** .
+1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
 
 2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
@@ -188,7 +188,7 @@ Eseguire l'applicazione e verificare che i record visualizzati nella casella di 
 ## <a name="see-also"></a>Vedere anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procedura dettagliata: Creazione di classi di LINQ to SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Procedura: Generare il modello a oggetti in Visual Basic oC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Procedura: Generare il modello a oggetti in Visual Basic o C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

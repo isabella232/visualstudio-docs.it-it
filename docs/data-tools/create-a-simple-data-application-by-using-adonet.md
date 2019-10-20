@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925701"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648725"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
@@ -27,7 +27,7 @@ In questo articolo viene illustrato un modo semplice per estrarre i dati da un d
 > [!IMPORTANT]
 > Per semplificare il codice, non include la gestione delle eccezioni dell'ambiente di produzione.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Per creare l'applicazione, è necessario disporre di:
 
@@ -122,7 +122,7 @@ Creare il database di esempio attenendosi alla procedura seguente:
 ## <a name="store-the-connection-string"></a>Archiviare la stringa di connessione
 Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere manualmente la stringa in ogni form, archiviare la stringa nel file *app. config* nel progetto e creare un metodo che restituisca la stringa quando il metodo viene chiamato da qualsiasi form nell'applicazione.
 
-È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL**+**a**, **CTRL**+**C** per selezionare e copiare la stringa negli Appunti.
+È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL** +**a**, **CTRL** +**C** per selezionare e copiare la stringa negli Appunti.
 
 1. C#Se si usa, in **Esplora soluzioni**espandere il nodo **proprietà** sotto il progetto, quindi aprire il file **Settings. Settings** .
     Se si usa Visual Basic, in **Esplora soluzioni**fare clic su **Mostra tutti i file**, espandere il nodo **progetto** e quindi aprire il file **Settings. Settings** .
@@ -175,7 +175,7 @@ Creare un gestore eventi Click vuoto per ogni pulsante nel form NewCustomer face
 
 Per completare la logica del modulo NewCustomer, attenersi alla seguente procedura.
 
-1. Portare lo `System.Data.SqlClient` spazio dei nomi nell'ambito in modo da non dover qualificare completamente i nomi dei relativi membri.
+1. Portare lo spazio dei nomi `System.Data.SqlClient` nell'ambito in modo da non dover qualificare completamente i nomi dei relativi membri.
 
      ```csharp
      using System.Data.SqlClient;

@@ -1,5 +1,5 @@
 ---
-title: Accedi a Visual Studio 2015 | Microsoft Docs
+title: Accedere a Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679823"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661214"
 ---
 # <a name="signing-in-to-visual-studio"></a>Accesso a Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "65679823"
 
  Dopo aver fornito le impostazioni, viene avviato Visual Studio e viene eseguito l'accesso dell'utente in modo da poter subito iniziare a usare l'applicazione. Per verificare se è stato eseguito l'accesso, cercare il nome nell'angolo superiore destro dell'ambiente Visual Studio.
 
- ![Utente attualmente connesso](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Utente connesso attualmente](../ide/media/vs2015-username.png "VS2015_UserName")
 
  A meno che non esegua la disconnessione, l'utente verrà automaticamente connesso a Visual Studio a ogni avvio e tutte le modifiche apportate alle impostazioni sincronizzate vengono applicate automaticamente. Per disconnettersi, scegliere la freccia in giù accanto al nome del profilo nell'ambiente Visual Studio, scegliere il comando **Impostazioni account** , quindi scegliere il collegamento **Esci** . Per accedere di nuovo, scegliere il comando **Accedi** nell'angolo superiore destro dell'ambiente Visual Studio.
 

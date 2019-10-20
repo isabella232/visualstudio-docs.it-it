@@ -1,19 +1,19 @@
 ---
-title: "CA3076: L'esecuzione di Script XSLT non protetta | Microsoft Docs"
+title: 'CA3076: esecuzione di script XSLT non protetta | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a6b1efa5b5ee84092531a67421d03583afc3578
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 558e205fa37569bfa12d7b93f989d0f8ebabab43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680725"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669065"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Esecuzione di script XSLT non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "65680725"
 ## <a name="rule-description"></a>Descrizione della regola
  [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) è uno standard W3C (World Wide Web Consortium) per la trasformazione dei dati XML. XSLT viene in genere usato per scrivere i fogli di stile per trasformare i dati XML in altri formati, ad esempio HTML, testo di lunghezza fissa, testo delimitato da virgole, oppure in un altro formato XML. Sebbene non sia consentito per impostazione predefinita, è possibile scegliere di abilitarlo per un progetto.
 
- Per assicurarsi che non si espone una superficie di attacco, questa regola viene attivata ogni volta che il XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> istanze di combinazione non protetta di riceve <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, che consente l'elaborazione di uno script dannoso.
+ Per assicurarsi che non si stia esponendo una superficie di attacco, questa regola viene attivata ogni volta che XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> riceve istanze di combinazione non sicure di <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, che consente l'elaborazione di script dannosi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Sostituire l'argomento XsltSettings non protetto con XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> o con un'istanza che ha disabilitato l'esecuzione di script e funzioni di documento.
+- Sostituire l'argomento XsltSettings non protetto con XsltSettings. <xref:System.Xml.Xsl.XsltSettings.Default%2A> o con un'istanza di che ha disabilitato l'esecuzione di script e funzioni di documento.
 
 - Sostituire l'argomento <xref:System.Xml.XmlResolver> con Null o con un'istanza di <xref:System.Xml.XmlSecureResolver> .
 

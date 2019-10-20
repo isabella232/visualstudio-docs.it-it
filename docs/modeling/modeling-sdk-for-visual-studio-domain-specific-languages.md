@@ -6,23 +6,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b955dc6f79c689ca30d8d9876d0888b14127490
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: e9e58de3737acaae01939eb2e29242e02888235d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476523"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658392"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 
-Usando il SDK di modellazione per Visual Studio, è possibile creare strumenti di sviluppo avanzato basato su modello che è possibile integrare in Visual Studio. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.
+Con l'SDK di modellazione per Visual Studio, è possibile creare potenti strumenti di sviluppo basati su modelli che è possibile integrare in Visual Studio. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.
 
-MSDK è basato sulla definizione di un modello creato per rappresentare i concetti nella propria area aziendale. È possibile racchiudere il modello con un'ampia gamma di strumenti, ad esempio una vista basata su diagramma, la possibilità di generare codice e altri artefatti, i comandi per trasformare il modello e la possibilità di interagire con il codice e altri oggetti in Visual Studio. Quando si sviluppa il modello, è possibile combinarlo con altri modelli e strumenti per formare un potente set di strumenti avanzati incentrati sulla propria attività di sviluppo.
+MSDK è basato sulla definizione di un modello creato per rappresentare i concetti nella propria area aziendale. È possibile racchiudere il modello con un'ampia gamma di strumenti, ad esempio una visualizzazione diagrammatiche, la possibilità di generare codice e altri elementi, i comandi per trasformare il modello e la possibilità di interagire con il codice e altri oggetti in Visual Studio. Quando si sviluppa il modello, è possibile combinarlo con altri modelli e strumenti per formare un potente set di strumenti avanzati incentrati sulla propria attività di sviluppo.
 
 MSDK consente di compilare rapidamente un modello nel formato di linguaggio specifico di dominio (DSL). Iniziare utilizzando un editor specifico per definire uno schema o una sintassi astratta insieme a una notazione grafica. Utilizzando questa definizione, VMSDK genera:
 
@@ -40,4 +40,4 @@ Tutte queste funzionalità possono essere personalizzate ed estese. Le estension
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[Post di blog correlati](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+[Post di Blog correlati](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b100defd8f50b4a487e46eef4183457e724a015
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778430"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666186"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opzioni, Editor di testo, HTML (Web Form), Varie
 
-Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **HTML (Web Form)** > **Varie**.
+Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **HTML (Web Form)**  > **Varie**.
 
 ## <a name="miscellaneous-html-options"></a>Altre opzioni HTML
 

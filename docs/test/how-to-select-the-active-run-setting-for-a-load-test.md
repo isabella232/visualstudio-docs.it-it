@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949942"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653441"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: Selezionare l'impostazione di esecuzione test attiva per un test di carico
 
 Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test.
 
@@ -26,7 +26,7 @@ In un test di carico possono essere contenute una o più *impostazioni esecuzion
 > [!NOTE]
 > Per un elenco completo delle proprietà delle impostazioni di esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni di esecuzione test di carico](../test/load-test-run-settings-properties.md).
 
-Se il test di carico contiene solo un nodo di impostazioni di esecuzione nella cartella **Impostazioni di esecuzione**, il nodo sarà sempre il nodo attivo. Se il test di carico contiene più nodi di impostazioni di esecuzione, è possibile selezionare quello da utilizzare per l'esecuzione di un test di carico. Vedere [Procedura: Aggiungere altre impostazioni esecuzione test a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Se il test di carico contiene solo un nodo di impostazioni di esecuzione nella cartella **Impostazioni di esecuzione**, il nodo sarà sempre il nodo attivo. Se il test di carico contiene più nodi di impostazioni di esecuzione, è possibile selezionare quello da utilizzare per l'esecuzione di un test di carico. Vedere [Procedura: Aggiungere impostazioni di esecuzione a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 Nell'**Editor test di carico** l'impostazione di esecuzione attiva è identificata dal suffisso "[Active]".
 
@@ -59,4 +59,4 @@ E per eseguire il test:
 
 - [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Procedura: Aggiungere altre impostazioni esecuzione test a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Procedura: Aggiungere impostazioni di esecuzione a un test di carico](../test/how-to-add-additional-run-settings-to-a-load-test.md)

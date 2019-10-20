@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84a93ed9cac1c3f352b3e658f28da4b492612338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953205"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654609"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 
@@ -42,7 +42,7 @@ La procedura per visualizzare la **Selezione frammento di codice** varia in base
 
 - SQL - Fare clic con il pulsante destro del mouse nella posizione desiderata nell'editor del codice per visualizzare il menu di scelta rapida e quindi scegliere **Inserisci frammento**.
 
-Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
+Nella maggior parte dei linguaggi di sviluppo di Visual Studio, è possibile usare **Gestione frammenti di codice** per aggiungere cartelle all'elenco cartelle in cui la **Selezione frammento di codice** cerca i file di frammenti di codice XML. È anche possibile creare frammenti personalizzati da aggiungere all'elenco. Per altre informazioni, vedere [Procedura dettagliata: creazione di un frammento di codice](../../ide/walkthrough-creating-a-code-snippet.md).
 
 ## <a name="uielement-list"></a>Elenco UIElement
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1308: Normalizzare le stringhe in lettere maiuscole | Microsoft Docs'
+title: 'CA1308: normalizzare le stringhe in lettere maiuscole | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1308
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8385839ce7029ef0676225fd443582ba750b618b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfe8495184bf4daadb3bf8899ee2857a9743c842
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200387"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661381"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizzare le stringhe in lettere maiuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "68200387"
 |-|-|
 |TypeName|NormalizeStringsToUppercase|
 |CheckId|CA1308|
-|Category|Microsoft.Globalization|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. globalizzazione|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un'operazione normalizza una stringa in caratteri minuscoli.
+ Un'operazione normalizza una stringa in minuscolo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Le stringhe devono essere normalizzate in maiuscolo. Un piccolo gruppo di caratteri, quando questi vengono convertiti in caratteri minuscoli, non è possibile completare un round trip. Per completare un round trip mezzi per convertire i caratteri delle impostazioni locali in un'altra delle impostazioni locali che rappresenta i dati di tipo carattere in modo diverso, quindi in modo accurato recupero i caratteri originali dai caratteri convertiti.
+ Le stringhe devono essere normalizzate in maiuscolo. Un piccolo gruppo di caratteri, quando vengono convertiti in caratteri minuscoli, non può creare un round trip. Per creare un round trip significa convertire i caratteri da un'impostazione locale a un'altra locale che rappresenta i dati di tipo carattere in modo diverso e quindi recuperare accuratamente i caratteri originali dai caratteri convertiti.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Modificare le operazioni di conversione di stringhe in caratteri minuscoli in modo che le stringhe vengono convertite in caratteri maiuscoli invece. Ad esempio, modificare `String.ToLower(CultureInfo.InvariantCulture)` in `String.ToUpper(CultureInfo.InvariantCulture)`.
+ Modificare le operazioni che convertono le stringhe in lettere minuscole in modo che le stringhe vengano convertite in maiuscolo. Ad esempio, modificare `String.ToLower(CultureInfo.InvariantCulture)` in `String.ToUpper(CultureInfo.InvariantCulture)`.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un messaggio di avviso quando non si apportano decisione relativa alla sicurezza in base al risultato (ad esempio, quando si visualizza nell'interfaccia utente).
+ È possibile evitare di visualizzare un messaggio di avviso quando non si decide di prendere decisioni di sicurezza in base al risultato, ad esempio quando viene visualizzato nell'interfaccia utente.
 
 ## <a name="see-also"></a>Vedere anche
  [Avvisi di globalizzazione](../code-quality/globalization-warnings.md)

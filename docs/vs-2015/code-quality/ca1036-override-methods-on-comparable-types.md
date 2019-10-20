@@ -1,5 +1,5 @@
 ---
-title: "CA1036: Eseguire l'override di metodi su tipi confrontabili | Microsoft Docs"
+title: "CA1036: eseguire l'override di metodi su tipi confrontabili | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49a4e64767497e4a1098bda9f5ee4e0eec8151f5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 779e6258f9c5be256a7973a5d917045507fc82e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682811"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661834"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Eseguire l'override di metodi su tipi confrontabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "65682811"
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
-|Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. Design|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo pubblico o protetto implementa il <xref:System.IComparable?displayProperty=fullName> l'interfaccia e non esegue l'override <xref:System.Object.Equals%2A?displayProperty=fullName> o non esegue l'overload di operatore specifico del linguaggio per uguaglianza, ineguaglianza, minore o maggiore di. La regola non indica una violazione se il tipo eredita solo un'implementazione dell'interfaccia.
+ Un tipo pubblico o protetto implementa l'interfaccia <xref:System.IComparable?displayProperty=fullName> e non esegue l'override di <xref:System.Object.Equals%2A?displayProperty=fullName> o non esegue l'overload dell'operatore specifico della lingua per verificarne l'uguaglianza, la disuguaglianza, minore di o maggiore di. La regola non segnala una violazione se il tipo eredita solo un'implementazione dell'interfaccia.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I tipi che definiscono un ordinamento personalizzato implementano il <xref:System.IComparable> interfaccia. Il <xref:System.IComparable.CompareTo%2A> metodo restituisce un valore intero che indica l'ordinamento corretto delle due istanze del tipo. Questa regola identifica i tipi che impostare un ordine decrescente. Ciò implica che il significato normale di uguaglianza, ineguaglianza, minore di, maggiore e non si applicano. Quando si fornisce un'implementazione di <xref:System.IComparable>, è necessario in genere anche eseguire l'override <xref:System.Object.Equals%2A> in modo che restituisca i valori che siano coerenti con <xref:System.IComparable.CompareTo%2A>. Se esegue l'override <xref:System.Object.Equals%2A> e scrive il codice in un linguaggio che supporta l'overload dell'operatore, è inoltre necessario fornire gli operatori che siano coerenti con <xref:System.Object.Equals%2A>.
+ I tipi che definiscono un ordinamento personalizzato implementano l'interfaccia <xref:System.IComparable>. Il metodo <xref:System.IComparable.CompareTo%2A> restituisce un valore intero che indica l'ordinamento corretto per due istanze del tipo. Questa regola identifica i tipi che impostano un ordinamento. Ciò implica che il significato comune di uguaglianza, disuguaglianza, minore di e maggiore di non si applicano. Quando si fornisce un'implementazione di <xref:System.IComparable>, è in genere necessario eseguire l'override di <xref:System.Object.Equals%2A> in modo che restituisca valori coerenti con <xref:System.IComparable.CompareTo%2A>. Se si esegue l'override di <xref:System.Object.Equals%2A> e si codifica in un linguaggio che supporta gli overload degli operatori, è necessario fornire anche operatori coerenti con <xref:System.Object.Equals%2A>.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, eseguire l'override <xref:System.Object.Equals%2A>. Se il linguaggio di programmazione supporta l'overload degli operatori, specificare gli operatori seguenti:
+ Per correggere una violazione di questa regola, eseguire l'override <xref:System.Object.Equals%2A>. Se il linguaggio di programmazione supporta l'overload degli operatori, fornire gli operatori seguenti:
 
 - op_Equality
 
@@ -49,18 +49,18 @@ ms.locfileid: "65682811"
 
 - op_GreaterThan
 
-  In c#, i token che vengono usati per rappresentare questi operatori sono i seguenti: = =,! =, \<, e >.
+  In C#i token utilizzati per rappresentare questi operatori sono i seguenti: = =,! =, \< e >.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se la violazione è causata da operatori mancanti e il linguaggio di programmazione non supporta l'overload degli operatori, come avviene con Visual Basic .NET. È anche possibile eliminare un avviso per da questa regola quando viene attivato per gli operatori di uguaglianza diverso da op_Equality se si determina che implementa gli operatori non ha senso nel contesto dell'applicazione. Tuttavia, dovrebbe essere sempre op_Equality e l'operatore = =, se si esegue l'override di Object. Equals.
+ È possibile eliminare un avviso da questa regola quando la violazione è causata da operatori mancanti e il linguaggio di programmazione in uso non supporta l'overload degli operatori, come nel caso di Visual Basic .NET. È anche possibile eliminare un avviso per da questa regola quando viene attivato su operatori di uguaglianza diversi da op_Equality se si determina che l'implementazione degli operatori non è sensata nel contesto dell'applicazione. Tuttavia, se si esegue l'override di Object. Equals, è sempre necessario passare a op_Equality e all'operatore = =.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente contiene un tipo che implementa correttamente <xref:System.IComparable>. Commenti del codice identificano i metodi che soddisfano diverse regole che riguardano <xref:System.Object.Equals%2A> e il <xref:System.IComparable> interfaccia.
+ Nell'esempio seguente è contenuto un tipo che implementa correttamente <xref:System.IComparable>. I commenti del codice identificano i metodi che soddisfano diverse regole correlate a <xref:System.Object.Equals%2A> e l'interfaccia <xref:System.IComparable>.
 
  [!code-csharp[FxCop.Design.IComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IComparable/cs/FxCop.Design.IComparable.cs#1)]
 
 ## <a name="example"></a>Esempio
- L'applicazione seguente testa il comportamento del <xref:System.IComparable> implementazione descritto in precedenza.
+ Nell'applicazione seguente viene testato il comportamento dell'implementazione di <xref:System.IComparable> illustrata in precedenza.
 
  [!code-csharp[FxCop.Design.TestIComparable#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestIComparable/cs/FxCop.Design.TestIComparable.cs#1)]
 

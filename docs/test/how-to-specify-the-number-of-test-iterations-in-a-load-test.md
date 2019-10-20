@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 277c2ad8ffa6ebad55de3957f3d98917a4765ee1
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: aa5de5f7f9c1bfef78ad3698886e8d7af43a4812
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431982"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653386"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione del test di carico
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procedura: Specificare il numero di iterazioni test in un'impostazione di esecuzione test di carico
 
 Dopo avere creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test. Per altre informazioni, vedere [Procedura dettagliata: Creare ed eseguire un test di carico](../test/walkthrough-create-and-run-a-load-test.md).
 
@@ -41,7 +41,7 @@ Usando l'**Editor test di carico** è possibile modificare la proprietà **Itera
 
 5. Nella proprietà **Iterazioni test** immettere un numero che indica il numero di iterazioni di test da eseguire durante il test di carico.
 
-6. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Iterazioni test**.
+6. Dopo avere modificato la proprietà scegliere **Salva** nel menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Iterazioni test**.
 
 ## <a name="see-also"></a>Vedere anche
 

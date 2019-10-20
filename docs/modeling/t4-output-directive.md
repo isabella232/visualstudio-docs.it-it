@@ -2,27 +2,27 @@
 title: Direttiva output T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856252"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606220"
 ---
 # <a name="t4-output-directive"></a>Direttiva output T4
 
-Nei modelli di testo di Visual Studio, il `output` direttiva viene usata per definire l'estensione del nome file e la codifica del file trasformato.
+Nei modelli di testo di Visual Studio, la direttiva `output` viene utilizzata per definire l'estensione del nome file e la codifica del file trasformato.
 
- Ad esempio, se il progetto di Visual Studio include un file di modello denominato **MyTemplate.tt** che contiene la direttiva seguente:
+ Ad esempio, se il progetto di Visual Studio include un file modello denominato **MyTemplate.TT** che contiene la direttiva seguente:
 
  `<#@output extension=".cs"#>`
 
- Visual Studio genererà un file denominato **MyTemplate.cs**
+ quindi, Visual Studio genererà un file denominato **MyTemplate.cs**
 
  La direttiva `output` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. L'applicazione otterrà la stringa generata con una chiamata a `TextTransform()`. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
@@ -47,10 +47,10 @@ Nei modelli di testo di Visual Studio, il `output` direttiva viene usata per def
 
  `<#@ output extension=".vb" #>`
 
- Valori accettabili: Qualsiasi estensione di file valida.
+ Valori accettabili: qualsiasi estensione di file valida.
 
 ## <a name="encoding-attribute"></a>attributo di codifica
- Specifica la codifica da usare quando viene generato il file di output. Ad esempio:
+ Specifica la codifica da usare quando viene generato il file di output. Esempio:
 
  `<#@ output encoding="utf-8"#>`
 

@@ -1,19 +1,19 @@
 ---
-title: "CA3075: L'elaborazione DTD non protetta | Microsoft Docs"
+title: 'CA3075: elaborazione DTD non protetta | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693404"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661619"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ ms.locfileid: "65693404"
 
 - La proprietà <xref:System.Xml.XmlNode.InnerXml%2A> nel codice XML è impostata.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> viene impostata su Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> proprietà è impostata su Parse.
 
 - Un input non attendibile viene elaborato con <xref:System.Xml.XmlResolver> anziché con <xref:System.Xml.XmlSecureResolver> .
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> metodo viene richiamato con un <xref:System.Xml.XmlReaderSettings> istanza o senza alcuna istanza.
+- XmlReader. <xref:System.Xml.XmlReader.Create%2A> il metodo viene richiamato con un'istanza di <xref:System.Xml.XmlReaderSettings> non protetta o senza alcuna istanza.
 
-- <xref:System.Xml.XmlReader> viene creato con le impostazioni predefinite non protette o valori.
+- <xref:System.Xml.XmlReader> viene creato con valori o impostazioni predefinite non sicure.
 
   In ognuno di questi casi, il risultato è lo stesso: il contenuto del file system o delle condivisioni di rete nel computer in cui viene elaborato il codice XML sarà esposto alle minacce di utenti malintenzionati e potrà quindi essere usato come vettore di attacchi DoS.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-- Rilevare ed elaborare tutte le eccezioni XmlTextReader correttamente per evitare la divulgazione di informazioni di percorso.
+- Rilevare ed elaborare correttamente tutte le eccezioni XmlTextReader per evitare la divulgazione di informazioni sul percorso.
 
-- Usare il <xref:System.Xml.XmlSecureResolver> per limitare le risorse che può accedere XmlTextReader.
+- Usare il  <xref:System.Xml.XmlSecureResolver> per limitare le risorse a cui può accedere XmlTextReader.
 
-- Non consentire la <xref:System.Xml.XmlReader> per aprire eventuali risorse esterne impostando la <xref:System.Xml.XmlResolver> proprietà **null**.
+- Non consentire all' <xref:System.Xml.XmlReader> di aprire risorse esterne impostando la proprietà <xref:System.Xml.XmlResolver> su **null**.
 
 - Assicurarsi che la proprietà <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> di <xref:System.Data.DataViewManager> venga assegnata da un'origine attendibile.
 
   .NET 3.5 e versioni precedenti
 
-- Disabilitare l'elaborazione DTD se usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> proprietà **true** .
+- Disabilitare l'elaborazione DTD se si gestiscono origini non attendibili impostando la proprietà  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> su **true** .
 
-- La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Visualizzare [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per altre informazioni.
+- La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Per ulteriori informazioni, vedere [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 
   .NET 4 e versioni successive
 

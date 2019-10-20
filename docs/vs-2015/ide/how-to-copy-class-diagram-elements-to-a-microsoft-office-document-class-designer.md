@@ -9,39 +9,38 @@ helpviewer_keywords:
 - Office documents [Visual Studio]
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f48dd69cf58a6ca3fbe292c5ed39aa3da51c4188
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a44b551e5b2a0b145040dc13cb0e624134f56cf6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68146136"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668164"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Procedura: Copiare elementi dei diagrammi classi in un documento di Microsoft Office (Progettazione classi)
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Procedura: copiare elementi dei diagrammi classi in un documento di Microsoft Office (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile copiare forme da un diagramma classi .NET (file CD) ad altri documenti. Si ottiene una copia della forma o il codice sottostante in base al tipo di documento in cui è stata incollata. Per copiare le forme da diagrammi classi UML a un progetto di modellazione, vedere [Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md).  
-  
-### <a name="to-copy-a-single-element"></a>Per copiare un solo elemento  
-  
-- Fare clic con il pulsante destro del mouse sulla forma e scegliere **Copia immagine**.  
-  
-### <a name="to-copy-several-elements"></a>Per copiare più elementi  
-  
-1. Nel diagramma selezionare le forme da copiare.  
-  
-2. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Copia immagine**.  
-  
-### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Per copiare tutti gli elementi in un diagramma classi  
-  
-1. Fare clic con il pulsante destro del mouse sulla superficie del diagramma e scegliere **Seleziona tutto**. (Tastiera: **CTRL + A**)  
-  
-2. Scegliere **Copia immagine** dal menu **Modifica**.  
-  
-   È anche possibile scegliere **Copia** invece di **Copia immagine**. **Copia** copia l'immagine come bitmap normale. **Copia immagine** copia l'immagine come immagine basata su vettori, consigliabile per la maggior parte delle applicazioni Office.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Stampare diagrammi classi (Progettazione classi)](../ide/how-to-print-class-diagrams-class-designer.md)   
- [Procedura: Esportare diagrammi classi come immagini (Progettazione classi)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)
+È possibile copiare forme da un diagramma classi .NET (file CD) ad altri documenti. Si ottiene una copia della forma o il codice sottostante in base al tipo di documento in cui è stata incollata. Per copiare le forme da diagrammi classi UML a un progetto di modellazione, vedere [Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md).
+
+### <a name="to-copy-a-single-element"></a>Per copiare un solo elemento
+
+- Fare clic con il pulsante destro del mouse sulla forma e scegliere **Copia immagine**.
+
+### <a name="to-copy-several-elements"></a>Per copiare più elementi
+
+1. Nel diagramma selezionare le forme da copiare.
+
+2. Fare clic con il pulsante destro del mouse sulla selezione e scegliere **Copia immagine**.
+
+### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Per copiare tutti gli elementi in un diagramma classi
+
+1. Fare clic con il pulsante destro del mouse sulla superficie del diagramma e scegliere **Seleziona tutto**. (Tastiera: **CTRL+A**)
+
+2. Scegliere **Copia immagine** dal menu **Modifica**.
+
+   È anche possibile scegliere **Copia** invece di **Copia immagine**. **Copia** copia l'immagine come bitmap normale. **Copia immagine** copia l'immagine come immagine basata su vettori, consigliabile per la maggior parte delle applicazioni Office.
+
+## <a name="see-also"></a>Vedere anche
+ [Procedura: stampare diagrammi classi (Progettazione classi)](../ide/how-to-print-class-diagrams-class-designer.md) [procedura: esportare diagrammi classi come immagini (Progettazione classi)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

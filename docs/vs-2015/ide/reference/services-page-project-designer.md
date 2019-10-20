@@ -11,66 +11,51 @@ helpviewer_keywords:
 - Project Designer, Services page
 ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2ee4201871830a3bb1b9f14c47e9d11bbc4d83fc
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 11e1cd997c76974e7b4b8771c0579c175469eca6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689535"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665481"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-I servizi delle applicazioni client consentono l'accesso semplificato ai servizi di accesso, ruolo e profilo di [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] da applicazioni di Windows Forms e Windows Presentation Foundation (WPF). È possibile usare la pagina **Servizi** di **Creazione progetti** per abilitare e configurare i servizi delle applicazioni client per il progetto.  
-  
- Con i servizi delle applicazioni client è possibile usare un server centralizzato per autenticare gli utenti, determinare il ruolo o i ruoli assegnati a ogni utente e archiviare le impostazioni dell'applicazione per utente che possono essere condivise all'interno della rete. Per altre informazioni, vedere [Servizi applicazioni client](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).  
-  
- Per accedere alla pagina **Servizi**, selezionare un nodo di progetto in **Esplora soluzioni** e quindi fare clic su **Proprietà** nel menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Servizi**.  
-  
+I servizi delle applicazioni client offrono accesso semplificato a servizi di accesso, ruolo e profilo di [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] da applicazioni Windows Forms e Windows Presentation Foundation (WPF). È possibile usare la pagina **Servizi** di **Creazione progetti** per abilitare e configurare i servizi delle applicazioni client per il progetto.
+
+ Con i servizi delle applicazioni client è possibile usare un server centralizzato per autenticare gli utenti, determinare il ruolo o i ruoli assegnati a ogni utente e archiviare le impostazioni dell'applicazione per utente che possono essere condivise all'interno della rete. Per altre informazioni, vedere [Servizi applicazioni client](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).
+
+ Per accedere alla pagina **Servizi**, selezionare un nodo di progetto in **Esplora soluzioni** e quindi fare clic su **Proprietà** nel menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Servizi**.
+
 > [!NOTE]
-> I servizi delle applicazioni client richiedono la versione completa di.NET Framework e non sono supportati in .NET Framework Client Profile. Se la casella di controllo **Attiva servizi applicazioni client** è disattivata, verificare che il **Framework di destinazione** sia impostato su.NET Framework 3.5 o versione successiva. Per visualizzare l'impostazione **Framework di destinazione** in C#, aprire Creazione progetti e quindi fare clic sulla pagina **Applicazione**. Per visualizzare l'impostazione **Framework di destinazione** in Visual Basic, aprire Creazione progetti, fare clic sulla pagina **Compilazione** e quindi fare clic su **Opzioni di compilazione avanzate**.  
-  
-## <a name="task-list"></a>Elenco attività  
- [Procedura: Configurare i servizi delle applicazioni client](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
-  
-## <a name="uielement-list"></a>Elenco UIElement  
- **Configurazione**  
- Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) o [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Piattaforma**  
- Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) o [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
-  
- **Attiva servizi applicazione client**  
- Selezionare questa opzione per attivare i servizi dell'applicazione client. Per usare i servizi dell'applicazione client è necessario specificare i percorsi dei servizi nella pagina **Servizi**.  
-  
- **Usa autenticazione di Windows**  
- Indica che il provider di autenticazione userà l'autenticazione basata su Windows, ovvero l'identità fornita dal sistema operativo Windows.  
-  
- **Usa autenticazione basata su form**  
- Indica che il provider di autenticazione userà l'autenticazione basata su form. L'applicazione quindi deve fornire un'interfaccia utente per l'accesso. Per altre informazioni, vedere [Procedura: Implementare l'accesso utente con i servizi dell'applicazione client](https://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).  
-  
- **Percorso servizio di autenticazione**  
- Solo con l'autenticazione basata su form. Specifica il percorso del servizio di autenticazione.  
-  
- **Facoltativo: provider di credenziali**  
- Solo con l'autenticazione basata su form. Indica l'implementazione <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> che il servizio di autenticazione userà per visualizzare una finestra di dialogo di accesso quando l'applicazione chiama il metodo `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> e passa stringhe vuote o `null` per i parametri. Se si lascia questa casella vuota, è necessario passare un nome utente valido e una password al metodo <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. È necessario specificare il provider di credenziali come nome di tipo completo dell'assembly. Per altre informazioni, vedere <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> e [Nomi degli assembly](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). Nella sua forma più semplice, un nome di tipo qualificato dall'assembly è simile all'esempio seguente: `MyNamespace.MyLoginClass, MyAssembly`  
-  
- **Percorso servizi ruoli**  
- Specifica il percorso del servizio ruoli.  
-  
- **Percorso servizi impostazioni Web**  
- Specifica il percorso del servizio profili (impostazioni Web).  
-  
- **Avanzate**  
- Apre la [finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md), che è possibile usare per eseguire l'override del comportamento predefinito. Ad esempio, è possibile usare questa finestra di dialogo per specificare un database per l'archiviazione offline anziché usare il file system locale. Per altre informazioni, vedere [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md).  
-  
-## <a name="see-also"></a>Vedere anche  
- [Servizi applicazioni client](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
- [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
- [Procedura: Configurare i servizi dell'applicazione Client](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
- [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Build Page, Project Designer (C#)](../../ide/reference/build-page-project-designer-csharp.md)  (Pagina Compilazione, Progettazione progetti (C#))  
- [Introduzione a Creazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)
+> I servizi delle applicazioni client richiedono la versione completa di.NET Framework e non sono supportati in .NET Framework Client Profile. Se la casella di controllo **Attiva servizi applicazioni client** è disattivata, verificare che il **Framework di destinazione** sia impostato su.NET Framework 3.5 o versione successiva. Per visualizzare l'impostazione **Framework di destinazione** in C#, aprire Creazione progetti e quindi fare clic sulla pagina **Applicazione**. Per visualizzare l'impostazione **Framework di destinazione** in Visual Basic, aprire Creazione progetti, fare clic sulla pagina **Compilazione** e quindi fare clic su **Opzioni di compilazione avanzate**.
+
+## <a name="task-list"></a>Elenco attività
+ [Procedura: Configurare i servizi delle applicazioni client](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)
+
+## <a name="uielement-list"></a>Elenco UIElement
+ **Configurazione** di Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) o [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Piattaforma**Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) o [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+ **Abilitare i servizi delle applicazioni client** Selezionare per abilitare i servizi delle applicazioni client. Per usare i servizi dell'applicazione client è necessario specificare i percorsi dei servizi nella pagina **Servizi**.
+
+ **Usa autenticazione di Windows** Indica che il provider di autenticazione userà l'autenticazione basata su Windows, ovvero l'identità fornita dal sistema operativo Windows.
+
+ **Usa autenticazione basata su form** Indica che il provider di autenticazione userà l'autenticazione basata su form. L'applicazione quindi deve fornire un'interfaccia utente per l'accesso. Per altre informazioni, vedere [Procedura: implementare l'accesso utente con i servizi dell'applicazione client](https://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).
+
+ **Percorso del servizio di autenticazione** Utilizzato solo con l'autenticazione basata su form. Specifica il percorso del servizio di autenticazione.
+
+ **Facoltativo: provider di credenziali** Utilizzato solo con l'autenticazione basata su form. Indica l'implementazione <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> che il servizio di autenticazione userà per visualizzare una finestra di dialogo di accesso quando l'applicazione chiama il metodo `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> e passa stringhe vuote o `null` per i parametri. Se si lascia questa casella vuota, è necessario passare un nome utente valido e una password al metodo <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. È necessario specificare il provider di credenziali come nome di tipo completo dell'assembly. Per altre informazioni, vedere <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> e [Nomi degli assembly](https://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). Nella sua forma più semplice, un nome di tipo qualificato dall'assembly è simile all'esempio seguente: `MyNamespace.MyLoginClass, MyAssembly`
+
+ **Percorso del servizio ruoli** Specifica il percorso del servizio ruolo.
+
+ **Percorso del servizio delle impostazioni Web** Specifica il percorso del servizio del profilo (impostazioni Web).
+
+ **Funzionalità avanzate** Apre la finestra di [dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md), che è possibile usare per eseguire l'override del comportamento predefinito. Ad esempio, è possibile usare questa finestra di dialogo per specificare un database per l'archiviazione offline anziché usare il file system locale. Per altre informazioni, vedere [Finestra di dialogo Impostazioni avanzate per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md).
+
+## <a name="see-also"></a>Vedere anche
+ Finestra di dialogo Impostazioni avanzate [client Servizi per le applicazioni](https://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e) [per i servizi](../../ide/reference/advanced-settings-for-services-dialog-box.md) [procedura: configurazione](https://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8) della [pagina compilazione client Servizi per le applicazioni, Progettazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) [, creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md) [Introduzione a Progettazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

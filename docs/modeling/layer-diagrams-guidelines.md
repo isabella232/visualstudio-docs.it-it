@@ -1,5 +1,5 @@
 ---
-title: 'Diagrammi delle dipendenze: Indicazioni'
+title: 'Diagrammi delle dipendenze: linee guida'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,21 +7,21 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6241a92d8f40a75ba98f09b7e1e0f113e45d4be8
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 39da24dd0d8b7372c63609124ee0b9427fccb03d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766505"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661499"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammi di dipendenza: linee guida
 
-Descrivere l'architettura dell'app a un livello elevato creando *diagrammi di dipendenza* in Visual Studio. Verificare che il codice rimanga coerente con questa progettazione convalidando il codice con un diagramma delle dipendenze. È anche possibile includere la convalida dei livelli nel processo di compilazione. Vedere [il video di Channel 9: Progettare e convalidare l'architettura usando](http://go.microsoft.com/fwlink/?LinkID=252073)i diagrammi delle dipendenze.
+Descrivere l'architettura dell'app a un livello elevato creando *diagrammi di dipendenza* in Visual Studio. Verificare che il codice rimanga coerente con questa progettazione convalidando il codice con un diagramma delle dipendenze. È anche possibile includere la convalida dei livelli nel processo di compilazione. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 Per visualizzare le edizioni di Visual Studio che supportano questa funzionalità, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -30,7 +30,7 @@ Per visualizzare le edizioni di Visual Studio che supportano questa funzionalit�
 
 ## <a name="what-is-a-dependency-diagram"></a>Che cos'è un diagramma delle dipendenze?
 
-Analogamente a un diagramma di architettura tradizionale, un diagramma delle dipendenze identifica i componenti principali o le unità funzionali della progettazione e le relative interdipendenze. Ogni nodo del diagramma, denominato *livello*, rappresenta un gruppo logico di spazi dei nomi, progetti o altri artefatti. È possibile tracciare le dipendenze che devono esistere nella progettazione. A differenza di un diagramma architettura tradizionale, è possibile verificare che le dipendenze effettive nel codice sorgente siano conformi alle dipendenze desiderate specificate. Includendo la convalida nel normale processo di compilazione in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], sarà possibile assicurare che il codice programma continui ad essere coerente con l'architettura del sistema anche in caso di modifiche future. Vedere [diagrammi delle dipendenze: informazioni di riferimento](../modeling/layer-diagrams-reference.md).
+Analogamente a un diagramma di architettura tradizionale, un diagramma delle dipendenze identifica i componenti principali o le unità funzionali della progettazione e le relative interdipendenze. Ogni nodo del diagramma, denominato *livello*, rappresenta un gruppo logico di spazi dei nomi, progetti o altri artefatti. È possibile tracciare le dipendenze che devono esistere nella progettazione. A differenza di un diagramma architettura tradizionale, è possibile verificare che le dipendenze effettive nel codice sorgente siano conformi alle dipendenze desiderate specificate. Includendo la convalida nel normale processo di compilazione in [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], sarà possibile assicurare che il codice programma continui ad essere coerente con l'architettura del sistema anche in caso di modifiche future. Vedere [diagrammi di dipendenza:](../modeling/layer-diagrams-reference.md)informazioni di riferimento.
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Come progettare o aggiornare l'app con i diagrammi delle dipendenze
 
@@ -70,7 +70,7 @@ Vedere [creare diagrammi di dipendenza dal codice](../modeling/create-layer-diag
 
 I livelli rappresentano gruppi logici di *artefatti*, ad esempio progetti, file di codice, spazi dei nomi, classi e metodi. È possibile creare livelli da artefatti da progetti C# visivi e Visual Basic oppure è possibile collegare specifiche o piani a un livello collegando documenti, ad esempio file di Word o presentazioni di PowerPoint. Ogni livello viene visualizzato come un rettangolo nel diagramma e viene indicato il numero di artefatti collegati a ogni livello. Un livello può contenere livelli annidati che descrivono attività più specifiche.
 
-È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli elementi sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)all'indirizzo.
+È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli artefatti sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per informazioni sui modelli di livello, visitare il sito modelli & Practices [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 > [!TIP]
 > Esistono alcuni tipi di artefatti che è possibile collegare ai livelli ma che non supportano la convalida rispetto al diagramma delle dipendenze. Per verificare se l'artefatto supporta la convalida, aprire **Esplora livello** per esaminare la proprietà **convalida supportata** del collegamento dell'elemento. Vedere [individuare le dipendenze esistenti tra i livelli](#Generate).
@@ -102,7 +102,7 @@ In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È
 
 Per descrivere le modifiche da apportare al sistema o all'architettura desiderata, attenersi alla procedura seguente per modificare il diagramma delle dipendenze. È anche possibile prendere in considerazione alcune modifiche relative al refactoring per migliorare la struttura del codice prima di estenderlo. Vedere [miglioramento della struttura del codice](#Improving).
 
-|**To**|**Eseguire questi passaggi**|
+|**Per**|**Eseguire questi passaggi**|
 |-|-|
 |Eliminare una dipendenza che non dovrebbe essere presente|Fare clic sulla dipendenza, quindi premere **Canc**.|
 |Modificare o limitare la direzione di una dipendenza|Impostarne la proprietà **Direction** .|
@@ -123,7 +123,7 @@ In caso contrario, il codice sarà più difficile da modificare per tutta la sua
 
 Quando si inizia a sviluppare un nuovo progetto o una nuova area in un nuovo progetto, è possibile tracciare livelli e dipendenze per semplificare l'identificazione dei componenti principali prima di iniziare a sviluppare il codice.
 
-- **Mostra i modelli di architettura identificabili** nei diagrammi delle dipendenze, se possibile. Ad esempio, un diagramma delle dipendenze che descrive un'applicazione desktop può includere livelli quali la presentazione, la logica di dominio e l'archivio dati. Un diagramma delle dipendenze che copre una singola funzionalità all'interno di un'applicazione potrebbe avere livelli quali il modello, la visualizzazione e il controller. Per ulteriori informazioni su tali modelli, vedere [patterns & Practices: Architettura](http://go.microsoft.com/fwlink/?LinkId=145794)dell'applicazione.
+- **Mostra i modelli di architettura identificabili** nei diagrammi delle dipendenze, se possibile. Ad esempio, un diagramma delle dipendenze che descrive un'applicazione desktop può includere livelli quali la presentazione, la logica di dominio e l'archivio dati. Un diagramma delle dipendenze che copre una singola funzionalità all'interno di un'applicazione potrebbe avere livelli quali il modello, la visualizzazione e il controller. Per ulteriori informazioni su tali modelli, vedere [patterns & Practices: Application Architecture](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 - **Creare un elemento di codice per ogni livello** , ad esempio uno spazio dei nomi, una classe o un componente. In questo modo sarà più semplice seguire il codice e collegare gli elementi di codice ai livelli. Non appena si crea ogni artefatto, collegarlo al livello appropriato.
 
@@ -157,7 +157,7 @@ Vedere:
 
 In genere, gli errori vengono visualizzati la prima volta che si convalida il codice rispetto a un diagramma delle dipendenze aggiornato. Gli errori possono avere cause diverse:
 
-- Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.
+- Un artefatto viene assegnato al livello errato. In questo caso, spostare l'elemento.
 
 - Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.
 
@@ -174,5 +174,5 @@ Per assicurarsi che le modifiche future nel codice siano conformi ai diagrammi d
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Diagrammi di dipendenza: riferimenti](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
 - [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)

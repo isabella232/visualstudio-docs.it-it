@@ -1,5 +1,5 @@
 ---
-title: Modeling SDK - Domain-Specific Language | Microsoft Docs
+title: SDK di modellazione-linguaggi specifici del dominio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159025"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668631"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usando il SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), è possibile creare strumenti di sviluppo basato su modello avanzato che consente di integrare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ad esempio, gli strumenti UML vengono creati utilizzando MSDK. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.
+Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), è possibile creare potenti strumenti di sviluppo basati su modelli che è possibile integrare in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ad esempio, gli strumenti UML vengono creati utilizzando MSDK. Analogamente, è possibile creare una o più definizioni di modello e integrarle in un set di strumenti.
 
  MSDK è basato sulla definizione di un modello creato per rappresentare i concetti nella propria area aziendale. È possibile integrare il modello con vari strumenti, ad esempio una visualizzazione basata su diagramma, la possibilità di generare codice e altri elementi, comandi per trasformare il modello e la possibilità di interagire con il codice e altri oggetti in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Quando si sviluppa il modello, è possibile combinarlo con altri modelli e strumenti per formare un potente set di strumenti avanzati incentrati sulla propria attività di sviluppo.
 
@@ -41,13 +41,13 @@ Usando il SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (
   Tutte queste funzionalità possono essere personalizzate ed estese. Le estensioni sono integrate in modo che sia comunque possibile aggiornare la definizione DSL e rigenerare le funzionalità senza perdere le estensioni.
 
 ## <a name="samples-and-the-latest-information"></a>Esempi e informazioni più recenti
- [Scaricare la modellazione per Visual Studio 2015 SDK](http://www.microsoft.com/download/details.aspx?id=48148)
+ [Scaricare l'SDK di modellazione per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
 
- [Esempi di](http://go.microsoft.com/fwlink/?LinkId=186128) per il SDK di modellazione per Visual Studio.
+ [Esempi](http://go.microsoft.com/fwlink/?LinkId=186128) per l'SDK di modellazione per Visual Studio.
 
- Per indicazioni sulla risoluzione dei problemi e alle tecniche più avanzate, visitare [forum di estendibilità degli strumenti di modellazione e DSL di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Per informazioni aggiuntive sulle tecniche avanzate e sulla risoluzione dei problemi, visitare il [Forum di estendibilità degli strumenti di modellazione di Visual Studio & DSL](http://go.microsoft.com/fwlink/?LinkID=186074).
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
  [Introduzione ai linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md)
 
  [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)
@@ -72,7 +72,7 @@ Usando il SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (
 
  [Creazione di un linguaggio specifico di dominio basato su WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Procedura: Estendere la finestra di progettazione Domain-Specific Language](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Procedura: Estendere la finestra di progettazione di linguaggio specifico di dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 

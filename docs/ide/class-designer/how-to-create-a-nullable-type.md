@@ -1,25 +1,25 @@
 ---
-title: 'Procedura: Creare un tipo nullable (Progettazione classi)'
+title: 'Procedura: creare un tipo nullable (Progettazione classi)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 671b2230daafbbdf92edda2ba1a671b688723796
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975510"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647861"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procedura: Creare un tipo nullable in Progettazione classi
 

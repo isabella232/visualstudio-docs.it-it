@@ -1,5 +1,5 @@
 ---
-title: 'CA1024: Utilizzare proprietà dove appropriato | Microsoft Docs'
+title: 'CA1024: usare le proprietà laddove appropriato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,62 +12,62 @@ helpviewer_keywords:
 - UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 43487aa97afcd41a5375bacc26efba705cbaa76c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144814"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661954"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usare proprietà dove appropriato
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Utilizzare proprietà dove appropriato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo pubblico o protetto presenta un nome che inizia con `Get`, non accetta parametri e restituisce un valore che non è una matrice.
+ Un metodo pubblico o protetto ha un nome che inizia con `Get`, non accetta parametri e restituisce un valore che non è una matrice.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Nella maggior parte dei casi, le proprietà rappresentano i dati e metodi di eseguono azioni. Le proprietà sono accessibili, ad esempio campi, che li rende più facile da usare. Un metodo è un buon candidato per diventare una proprietà se è presente una delle seguenti condizioni:
+ Nella maggior parte dei casi, le proprietà rappresentano i dati e i metodi che eseguono azioni. È possibile accedere alle proprietà, ad esempio i campi, in modo da semplificarne l'uso. Un metodo è un buon candidato per diventare una proprietà se è presente una di queste condizioni:
 
 - Non accetta argomenti e restituisce le informazioni sullo stato di un oggetto.
 
-- Accetta un singolo argomento per impostare una parte dello stato di un oggetto.
+- Accetta un solo argomento per impostare una parte dello stato di un oggetto.
 
-  Le proprietà devono comportarsi come se si tratta di campi; Se il metodo non è possibile, non si deve essere modificato in una proprietà. I metodi sono preferibili alle proprietà nelle situazioni seguenti:
+  Le proprietà devono comportarsi come se fossero campi; Se il metodo non può, non deve essere modificato in una proprietà. I metodi sono migliori delle proprietà nelle situazioni seguenti:
 
-- Il metodo esegue un'operazione impegnativa. Il metodo è sensibilmente più lento rispetto al tempo necessario per impostare o ottenere il valore di un campo.
+- Il metodo esegue un'operazione che richiede molto tempo. Il metodo è sensibilmente più lento del tempo necessario per impostare o ottenere il valore di un campo.
 
-- Il metodo esegue una conversione. L'accesso a un campo non restituisce una versione convertita dei dati in essa contenuti.
+- Il metodo esegue una conversione. L'accesso a un campo non restituisce una versione convertita dei dati archiviati.
 
 - Il metodo Get ha un effetto collaterale osservabile. Il recupero del valore di un campo non produce effetti collaterali.
 
-- L'ordine di esecuzione è importante. Impostazione del valore di un campo non si basa sull'occorrenza da altre operazioni.
+- L'ordine di esecuzione è importante. L'impostazione del valore di un campo non si basa sull'occorrenza di altre operazioni.
 
-- La chiamata al metodo due volte in successione crea risultati diversi.
+- La chiamata del metodo due volte in successione crea risultati diversi.
 
-- Il metodo è statico ma restituisce un oggetto che può essere modificato dal chiamante. Il recupero del valore di un campo non consente al chiamante di modificare i dati archiviati in base al campo.
+- Il metodo è statico ma restituisce un oggetto che può essere modificato dal chiamante. Il recupero del valore di un campo non consente al chiamante di modificare i dati archiviati dal campo.
 
 - Il metodo restituisce una matrice.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare il metodo a una proprietà.
+ Per correggere una violazione di questa regola, modificare il metodo in una proprietà.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Eliminare un avviso da questa regola se il metodo soddisfi almeno uno dei criteri elencati in precedenza.
+ Eliminare un avviso da questa regola se il metodo soddisfa almeno uno dei criteri elencati in precedenza.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Controllo dell'espansione di proprietà nel Debugger
- Uno dei motivi per i programmatori di evitare l'utilizzo di una proprietà è perché non è richiesto al debugger di auto-espanderlo. Ad esempio, la proprietà potrebbe prevedere l'allocazione di un oggetto di grandi dimensioni o la chiamata di P/Invoke, ma potrebbe non avere effetti collaterali osservabili.
+## <a name="controlling-property-expansion-in-the-debugger"></a>Controllo dell'espansione delle proprietà nel debugger
+ Uno dei motivi per cui i programmatori evitano di utilizzare una proprietà è perché non desiderano che il debugger si espanda automaticamente. Ad esempio, la proprietà può implicare l'allocazione di un oggetto di grandi dimensioni o la chiamata di un P/Invoke, ma potrebbe non avere effetti collaterali osservabili.
 
- È possibile impedire che il debugger di espansione automatica delle proprietà applicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Nell'esempio seguente viene illustrato questo attributo viene applicato a una proprietà dell'istanza.
+ È possibile impedire al debugger di espandere automaticamente le proprietà applicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Nell'esempio seguente viene illustrato l'applicazione di questo attributo a una proprietà dell'istanza.
 
 ```vb
 Imports System
@@ -117,6 +117,6 @@ namespace Microsoft.Samples
 ```
 
 ## <a name="example"></a>Esempio
- L'esempio seguente contiene diversi metodi che devono essere convertiti in proprietà e diversi che devono non perché non si comportano come i campi.
+ Nell'esempio seguente sono contenuti diversi metodi che devono essere convertiti in proprietà e diversi da quelli che non devono essere in quanto non si comportano come campi.
 
  [!code-csharp[FxCop.Design.MethodsProperties#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.MethodsProperties/cs/FxCop.Design.MethodsProperties.cs#1)]

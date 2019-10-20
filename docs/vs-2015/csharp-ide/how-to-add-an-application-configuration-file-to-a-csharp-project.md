@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Aggiungere un File di configurazione dell'applicazione per un C# progetto | Microsoft Docs"
+title: "Procedura: aggiungere un file di configurazione dell'applicazione a C# un progetto | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,41 +10,37 @@ helpviewer_keywords:
 - app.config files, adding to C# projects
 ms.assetid: 9caf6bb0-c2fc-4ab6-ba69-bed3b880fbf8
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f8417b5520dc9587fa3231a3bc459335d2a9896d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681718"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667525"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: Aggiungere un file di configurazione dell'applicazione a un progetto C#
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: aggiungere un file di configurazione dell'applicazione a un progetto C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aggiungendo un file di configurazione dell'applicazione (file app.config) a un progetto C#, è possibile personalizzare il modo in cui CLR individua e carica i file di assembly. Per altre informazioni sui file di configurazione dell'applicazione, vedere [modo in cui il Runtime individua gli assembly](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
-  
+Aggiungendo un file di configurazione dell'applicazione (file app.config) a un progetto C#, è possibile personalizzare il modo in cui CLR individua e carica i file di assembly. Per ulteriori informazioni sui file di configurazione dell'applicazione, vedere [come il runtime individua gli assembly](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).
+
 > [!NOTE]
-> Non supporta il Windows Store <xref:System.Configuration>. Di conseguenza, le app di Store non contengono un modello di App. config.  
-  
- Quando si compila il progetto, l'ambiente di sviluppo copia automaticamente il file app. config, modifica il nome di file della copia in modo che corrisponda il file eseguibile e quindi sposta la copia nella directory bin.  
-  
-### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Per aggiungere un file di configurazione dell'applicazione al progetto c#  
-  
-1. Nella barra dei menu, scegliere **Project**, **Aggiungi nuovo elemento**.  
-  
-     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.  
-  
-2. Espandere **Installed**, espandere **elementi di Visual c#** e quindi scegliere il **File di configurazione dell'applicazione** modello.  
-  
-3. Nella casella di testo **Nome** immettere un nome e quindi scegliere il pulsante **Aggiungi**.  
-  
-     Un file denominato app. config viene aggiunto al progetto.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Gestione delle impostazioni di un'applicazione (.NET)](../ide/managing-application-settings-dotnet.md)   
- [Schema dei file di configurazione](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [Configurazione di app](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Procedura: Configurare un'App per una versione di .NET Framework di destinazione](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
- [Using the Visual Studio Development Environment for C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#)
+> Windows Store non supporta <xref:System.Configuration>. Di conseguenza, le app dello Store non contengono un modello app. config.
+
+ Quando si compila il progetto, l'ambiente di sviluppo copia automaticamente il file app. config, modifica il nome file della copia in modo che corrisponda all'eseguibile, quindi sposta la copia nella directory bin.
+
+### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Per aggiungere un file di configurazione dell'applicazione C# al progetto
+
+1. Sulla barra dei menu scegliere **progetto**, **Aggiungi nuovo elemento**.
+
+     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
+
+2. Espandere **installato**, espandere **elementi C# visivi**, quindi scegliere il modello **file di configurazione dell'applicazione** .
+
+3. Nella casella di testo **Nome** immettere un nome e quindi scegliere il pulsante **Aggiungi**.
+
+     Un file denominato app. config viene aggiunto al progetto.
+
+## <a name="see-also"></a>Vedere anche
+ Gestione [dello schema del file di configurazione](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38) [delle impostazioni dell'applicazione (.NET)](../ide/managing-application-settings-dotnet.md) [configurazione](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f) delle app [procedura: configurare un'App per la destinazione di una versione .NET Framework](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717) [usando l'ambiente di sviluppo di Visual Studio per C# ](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

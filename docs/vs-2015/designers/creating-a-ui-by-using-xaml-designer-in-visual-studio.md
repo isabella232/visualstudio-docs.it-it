@@ -11,15 +11,15 @@ f1_keywords:
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695636"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657944"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Nella visualizzazione Progettazione la finestra che include la *tavola da disegno* è la finestra attiva ed è possibile usarla come area di lavoro principale. Permette di progettare visivamente una pagina nell'app, aggiungendo o disegnando elementi e quindi modificandoli. Per altre informazioni, vedi [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
 
- ![Visualizzazione progettazione nella finestra di progettazione XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Visualizzazione progettazione di finestra di progettazione XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Nella tavola da disegno sono disponibili le funzionalità seguenti:
 
@@ -58,7 +58,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Nella visualizzazione Progettazione sono disponibili comandi aggiuntivi della tavola da disegno nell'area inferiore sinistra della schermata, come illustrato di seguito:
 
- ![Comandi della visualizzazione di progettazione](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Comandi visualizzazione progettazione](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Nella barra degli strumenti sono disponibili i comandi seguenti:
 
@@ -81,15 +81,15 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 ## <a name="device-window"></a>Finestra Dispositivo
  La finestra Dispositivo nella finestra di progettazione XAML per Visual Studio consente di simulare in fase di progettazione diverse visualizzazioni e opzioni di visualizzazione per il progetto Windows Store o Windows Phone. La finestra Dispositivo è disponibile nel menu **Progettazione** quando si usa la finestra di progettazione XAML e ha l'aspetto seguente:
 
- ![Finestra dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Finestra del dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Le opzioni della finestra Dispositivo sono le seguenti:
 
  **Visualizzazione** Specifica dimensioni e risoluzioni di visualizzazione diverse per l'app.
 
- **Orientamento** specifica diversi orientamenti per l'app: **Orizzontale** o **Verticale**.
+ **Orientamento** Specifica diversi orientamenti per l'app, **Orizzontale** o **Verticale**.
 
- **Bordo** specifica diversi allineamenti per l'app: **Entrambi**, **A sinistra**, **A destra** o **Nessuno**.
+ **Bordo** Specifica diversi allineamenti per i bordi dell'app, ad esempio **Entrambi**, **A sinistra**, **A destra** o **Nessuno**.
 
  **Contrasto elevato** Consente di visualizzare in anteprima l'app in base all'impostazione di contrasto selezionata. Se per l'impostazione viene specificato un valore diverso da **Predefinito**, l'impostazione della proprietà `RequestedTheme` in App.xaml verrà sovrascritta.
 
@@ -131,11 +131,11 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 ## <a name="properties-window"></a>Finestra Proprietà
  La finestra Proprietà consente di impostare valori di proprietà sui controlli e ha l'aspetto seguente:
 
- ![Finestra proprietà](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
+ ![Finestra Proprietà](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
  Nella parte superiore della finestra Proprietà sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra Proprietà mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Guida introduttiva: Aggiunta di controlli e gestione di eventi](http://go.microsoft.com/fwlink/?LinkID=247983).
 
  A destra di ogni valore di proprietà è presente un *marcatore della proprietà* , visualizzato sotto forma di simbolo di casella. L'aspetto del marcatore della proprietà indica se è presente un data binding o una risorsa applicata alla proprietà. Ad esempio, una casella bianca indica un valore predefinito, una casella nera indica che è stata applicata una risorsa locale e una casella arancione indica che è stato applicato un data binding. Quando si fa clic su questo marcatore, è possibile passare alla definizione di uno stile, aprire il generatore di data binding oppure aprire il selettore risorse.
 
 ## <a name="see-also"></a>Vedere anche
- [Utilizzo di elementi nella finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md) [come creare e applicare una risorsa](../designers/how-to-create-and-apply-a-resource.md) [procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Uso di elementi in finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md) [come creare e applicare una risorsa](../designers/how-to-create-and-apply-a-resource.md) [procedura dettagliata: associazione ai dati in finestra di progettazione XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

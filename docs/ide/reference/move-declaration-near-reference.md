@@ -2,19 +2,19 @@
 title: Spostare la dichiarazione di variabile vicino al riferimento
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e23c5c8d6ea0895f9e5a78e726bb7a7cede071bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0a82b48a556e26866393661d4b87836db765abb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540596"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666491"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Refactoring con spostamento della dichiarazione vicino al riferimento
 
@@ -22,11 +22,11 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** consente di spostare le dichiarazioni di variabili più vicino al punto in cui le variabili vengono usate.
+**Cosa:** consente di spostare le dichiarazioni di variabili più vicino al loro utilizzo.
 
-**Quando:** in presenza di dichiarazioni di variabili che possono essere inserite in un ambito più ristretto.
+**Quando:** in presenza di dichiarazioni di variabili che possono essere in un ambito più ristretto.
 
-**Perché?:** si può anche non intervenire, ma ciò può causare problemi di leggibilità o nascondere informazioni. Questa è un'opportunità di eseguire il refactoring per migliorare la leggibilità.
+**Perché:** si potrebbe non intervenire, ma ciò potrebbe causare problemi di leggibilità o nascondere informazioni. Questa è un'opportunità di eseguire il refactoring per migliorare la leggibilità.
 
 ## <a name="how-to"></a>Procedura
 
@@ -35,7 +35,7 @@ Questo refactoring si applica a:
 1. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sposta la dichiarazione accanto al riferimento** dal popup della finestra di anteprima.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sposta la dichiarazione accanto al riferimento** dal popup della finestra di anteprima.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Sposta la dichiarazione accanto al riferimento** dal popup della finestra di anteprima.
 

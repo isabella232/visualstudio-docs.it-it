@@ -6,19 +6,19 @@ helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979452"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664853"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 
-Dopo aver creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
+Dopo aver creato il test di carico usando la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -36,9 +36,9 @@ Se si assegna il valore del parametro di contesto Webserver1 a `http://Corporate
 
 Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo stesso nome nelle diverse impostazioni di esecuzione del test di carico, è possibile eseguire il test di carico in ambienti diversi:
 
-- Impostazione di esecuzione test del server Web di gestione temporanea aziendale: il parametro di contesto denominato `WebServer1=http://CorporateStagingWebServer`
+- Impostazione di esecuzione server Web aziendale di gestione temporanea: il parametro di contesto denominato `WebServer1=http://CorporateStagingWebServer`
 
-- Impostazione di esecuzione test del server Web di produzione aziendale: il parametro di contesto denominato `WebServer1=http://CorporateProductionWebServer`
+- Impostazione di esecuzione server Web aziendale di produzione: il parametro di contesto denominato `WebServer1=http://CorporateProductionWebServer`
 
   **Modifica dell'impostazione di esecuzione test dalla riga di comando**
 
@@ -60,7 +60,7 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
      Un nuovo parametro di contesto viene aggiunto alla cartella **Parametri di contesto** nella cartella **Impostazioni di esecuzione** nell'albero del test di carico.
 
-     -oppure-
+     oppure
 
      Se le impostazioni esecuzione test già contengono una cartella **Parametri di contesto**, è possibile fare clic con il pulsante destro del mouse sulla cartella e scegliere **Aggiungi parametro di contesto**.
 

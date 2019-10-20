@@ -11,17 +11,17 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ecc8ae714dfb35281029a9d6e240a148e7c9511
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 45fb9b1a08dc54257f24f469d3a717b82faccf45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913350"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661548"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Eseguire il mapping delle dipendenze con le mappe codice
 
@@ -49,7 +49,7 @@ Per creare e modificare le mappe del codice, è necessario Visual Studio Enterpr
 
 Per creare una mappa del codice in Visual Studio, installare prima di tutto la **mappa codice** e i componenti di **convalida delle dipendenze in tempo reale** :
 
-1. Aprire **programma di installazione di Visual Studio**. È possibile aprirlo dal menu Start di Windows o in Visual Studio scegliendo **strumenti** > **Ottieni strumenti e funzionalità**.
+1. Aprire **programma di installazione di Visual Studio**. È possibile aprirlo dal menu Start di Windows o in Visual Studio selezionando **strumenti**  > **ottenere strumenti e funzionalità**.
 
 1. Selezionare la scheda **Singoli componenti**.
 
@@ -67,7 +67,7 @@ Per creare una mappa del codice in Visual Studio, installare prima di tutto la *
 
 Per aggiungere una mappa codice vuota:
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione di primo livello. Scegliere **Aggiungi** > **nuovo elemento**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione di primo livello. Scegliere **aggiungi**  > **nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** , in **installato**, scegliere la categoria **generale** .
 
@@ -78,13 +78,13 @@ Per aggiungere una mappa codice vuota:
 
    Una mappa vuota viene visualizzata nella cartella **elementi di soluzione** della soluzione.
 
-Analogamente, è possibile creare**un nuovo file**della mappa del codice senza aggiungerlo alla soluzione selezionando **architettura** > **nuova mappa codice** o **file** > **nuovo** > file.
+Analogamente, è possibile creare un nuovo file di mappa codice senza aggiungerlo alla soluzione selezionando **architettura**  > **nuova mappa codice** o **file**  > **nuovo** **file** > .
 
 ## <a name="generate-a-code-map-for-your-solution"></a>Generare una mappa codice per la soluzione
 
 Per visualizzare tutte le dipendenze nella soluzione:
 
-1. Sulla barra dei menu scegliere **architettura** > **Genera mappa codici per la soluzione**. Se il codice non è stato modificato dall'ultima volta in cui è stato compilato, è possibile selezionare l' **architettura** > **Genera mappa codice per la soluzione senza compilazione** .
+1. Nella barra dei menu scegliere **architettura**  > **generare la mappa codici per la soluzione**. Se il codice non è stato modificato dall'ultima volta in cui è stato compilato, è possibile selezionare **architettura**  > **generare la mappa codici per la soluzione senza compilare** .
 
    ![Comando di generazione mappa del codice](../modeling/media/codemapsarchitecturemenu.png)
 
@@ -162,7 +162,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
    ![Selezionare gli elementi da mappare](../modeling/media/codemapsselectinsolutionexplorer.png)
 
-1. Sulla barra degli strumenti **Esplora soluzioni** scegliere **Mostra in mappa** ![codici crea nuovo grafico dal pulsante](../modeling/media/createnewgraphfromselectedbutton.gif)nodi selezionati. In alternativa, aprire il menu di scelta rapida per uno o un gruppo di elementi e scegliere **Mostra in mappa codici**.
+1. Sulla barra degli strumenti **Esplora soluzioni** scegliere **Mostra in mappa codice** ![Create nuovo grafico dal pulsante nodi selezionati ](../modeling/media/createnewgraphfromselectedbutton.gif). In alternativa, aprire il menu di scelta rapida per uno o un gruppo di elementi e scegliere **Mostra in mappa codici**.
 
    È anche possibile trascinare elementi da **Esplora soluzioni**, **Visualizzazione classi**o **Visualizzatore oggetti**in una mappa codice [nuova](#add-a-code-map) o esistente. Per includere la gerarchia padre per gli elementi, tenere premuto il tasto **CTRL** mentre si trascinano gli elementi oppure usare il pulsante **Includi padri** sulla barra degli strumenti della mappa codice per specificare l'azione predefinita. È anche possibile trascinare i file di assembly dall'esterno di Visual Studio, ad esempio da **Esplora risorse**.
 
@@ -177,15 +177,15 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
    ![Espandere un nodo in una mappa codice](../modeling/media/dependencygraph_containment.png)
 
-   Per espandere tutti gli elementi, selezionarli **usando Ctrl**+**A**, quindi aprire il menu di scelta rapida per la mappa e scegliere**Espandi** **gruppo** > . Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
+   Per espandere tutti gli elementi, selezionarli usando **Ctrl** +**A**, quindi aprire il menu di scelta rapida per la mappa e scegliere **gruppo**  > **Espandi**. Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
 
 5. Continuare a espandere gli elementi a cui si è interessati, fino al livello di classe e membro, se necessario.
 
    ![Espandere i gruppi a livello di classe e membro](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   Per visualizzare i membri presenti nel codice ma che non vengono visualizzati sulla mappa, fare clic sull'icona](../modeling/media/dependencygraph_deletednodesicon.png) **Recupera** nuovamente ![i figli icona Riprendi figli nell'angolo in alto a sinistra di un gruppo.
+   Per visualizzare i membri presenti nel codice ma che non vengono visualizzati sulla mappa, fare clic sull'icona **Recupera nuovamente figli** ![Refetch icona elementi figlio ](../modeling/media/dependencygraph_deletednodesicon.png) nell'angolo superiore sinistro di un gruppo.
 
-6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire il menu di scelta rapida, quindi scegliere l'opzione **Mostra** per il tipo di elementi correlati da aggiungere alla mappa. Ad esempio:
+6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire il menu di scelta rapida, quindi scegliere l'opzione **Mostra** per il tipo di elementi correlati da aggiungere alla mappa. Esempio:
 
     Per un **assembly**scegliere:
 
@@ -228,7 +228,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
     ![Mostra i metodi chiamati da questo membro](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. La mappa visualizza le relazioni. In questo esempio la mappa mostra i metodi chiamati dal `Find` metodo e la relativa posizione nella soluzione o esternamente.
+7. La mappa visualizza le relazioni. In questo esempio, la mappa mostra i metodi chiamati dal metodo `Find` e la relativa posizione nella soluzione o esternamente.
 
    ![Mostra dipendenze specifiche su una mappa codici](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -238,7 +238,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Video: Comprendere la progettazione dal codice con le mappe codici di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
+- [Video: informazioni sulla progettazione dal codice con le mappe codici di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Eseguire il mapping dei metodi nello stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)

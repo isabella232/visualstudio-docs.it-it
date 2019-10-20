@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere attività alla casella degli strumenti (Legacy) | Microsoft Docs'
+title: 'Procedura: aggiungere attività alla casella degli strumenti (legacy) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,29 +9,28 @@ helpviewer_keywords:
 - activities, adding to Toolbox
 ms.assetid: b66ea29c-120b-40ba-8a61-c1c8240850fa
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c3a8c6f397bbafdbdb29ecbb193c4200a26335c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3f982372f0189871c4f3d294c07a9e3cfc44391
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943368"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656612"
 ---
-# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Procedura: Aggiungere attività nella casella degli strumenti (legacy)
-Quando si compila una soluzione del flusso di lavoro con legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)] che fa riferimento al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o il [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], le attività personalizzate possono essere aggiunti al progetto del flusso di lavoro e agli ActivityDesigner disponibili nella **della casella degli strumenti** per semplice accesso. È anche possibile aggiungere le attività direttamente la **casella degli strumenti** da una libreria di collegamento dinamico (DLL).  
-  
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Per aggiungere un'attività nella Casella degli strumenti da una DLL  
-  
-1. Il pulsante destro della casella degli strumenti finestra sotto **flusso di lavoro di Windows**, quindi fare clic su **Scegli elementi**.  
-  
-2. Nel **Scegli elementi della casella degli strumenti** della finestra di dialogo fare clic sui **componenti System. Activities** scheda e quindi fare clic su **Sfoglia** dal lato inferiore destro della finestra.  
-  
-3. Selezionare la DLL dalla directory del file che contiene l'implementazione dell'attività personalizzata per aggiungere il **casella degli strumenti**e quindi fare clic su **Open**.  
-  
-4. Fare clic su **OK** per completare l'aggiunta dell'attività alla casella degli strumenti.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Utilizzo dell'ActivityDesigner Legacy](../workflow-designer/using-the-legacy-activity-designer.md)   
- [Attività del flusso di lavoro legacy](../workflow-designer/legacy-workflow-activities.md)
+# <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Procedura: aggiungere attività nella Casella degli strumenti [legacy]
+Quando si compila una soluzione del flusso di lavoro con la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy destinata al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o al [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], le attività personalizzate possono essere aggiunte al progetto flusso di lavoro e le relative finestre di progettazione inserite nella **casella degli strumenti** per semplificare l'accesso. È inoltre possibile aggiungere attività direttamente alla **casella degli strumenti** da una libreria di collegamento dinamico (dll).
+
+### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Per aggiungere un'attività nella Casella degli strumenti da una DLL
+
+1. Fare clic con il pulsante destro del mouse sull'area della finestra casella degli strumenti in **Windows Workflow**, quindi **scegliere Scegli elementi**.
+
+2. Nella finestra di dialogo **Scegli elementi della casella degli strumenti** fare clic sulla scheda **componenti System. Activities** , quindi fare clic su **Sfoglia** dal lato inferiore destro della finestra.
+
+3. Selezionare la DLL dalla directory di file che contiene l'implementazione dell'attività personalizzata da aggiungere alla **casella degli strumenti**, quindi fare clic su **Apri**.
+
+4. Fare clic su **OK** per completare l'aggiunta dell'attività alla casella degli strumenti.
+
+## <a name="see-also"></a>Vedere anche
+ [Utilizzo delle](../workflow-designer/using-the-legacy-activity-designer.md) [attività del flusso di lavoro legacy](../workflow-designer/legacy-workflow-activities.md) di ActivityDesigner legacy

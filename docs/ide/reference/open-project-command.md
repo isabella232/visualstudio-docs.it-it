@@ -10,17 +10,17 @@ helpviewer_keywords:
 - File.OpenProject command
 - Open Project command
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e9249088b188fde1b346772ab1230d33160fe59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5c84a2dcd99ef7cff9b5f37a1c69f235582a7973
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996828"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666421"
 ---
 # <a name="open-project-command"></a>Comando Apri progetto
 
@@ -32,7 +32,7 @@ Apre un progetto o una soluzione esistente.
 File.OpenProject filename
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 `filename`
 
@@ -41,7 +41,7 @@ Obbligatorio. Il percorso completo e il nome file del progetto o della soluzione
 > [!NOTE]
 > La sintassi dell'argomento `filename` richiede che i percorsi contenenti spazi usino le virgolette.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1601: Non usare i timer che impediscono le modifiche dello stato di alimentazione | Microsoft Docs'
+title: 'CA1601: non utilizzare i timer che impediscono le modifiche allo stato di alimentazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - DoNotUseTimersThatPreventPowerStateChanges
 ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 228c95a8f0c3e1b9b1643e529e78f52f1e059bc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95f13604908ad45c5f33a011fec886bba90d0bd8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669281"
 ---
-# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Non usare i timer che impediscono le modifiche allo stato di potenza
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Non utilizzare i timer che impediscono le modifiche allo stato di potenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotUseTimersThatPreventPowerStateChanges|
 |CheckId|CA1601|
-|Category|Microsoft.Mobility|
+|Category|Microsoft. Mobility|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un timer ha un intervallo impostato su si verificano più di una volta al secondo.
+ Un timer ha un intervallo impostato in modo che venga eseguito più di una volta al secondo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Non eseguire il polling più spesso di una volta al secondo o utilizzare i timer che si verificano più frequentemente una volta al secondo. Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi.
+ Non eseguire il polling più spesso di una volta al secondo o usare i timer che si verificano più frequentemente di una volta al secondo. Una frequenza maggiore per l'attività periodica occupa la CPU e interferisce con i timer di inattività per il risparmio di energia tramite cui vengono disattivati lo schermo e i dischi rigidi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Impostare gli intervalli di timer in presenti meno di una volta al secondo.
+ Impostare gli intervalli del timer in modo che si verifichino meno di una volta al secondo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Questa regola deve essere eliminata solo se è richiesta l'attivazione di più di una volta al secondo il timer e le considerazioni sulla mobilità può essere ignorati.
+ Questa regola deve essere eliminata solo se è richiesto l'attivazione del timer più di una volta al secondo e le considerazioni sulla mobilità possono essere ignorate in modo sicuro.

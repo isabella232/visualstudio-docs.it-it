@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eliminare i risultati del test di carico da un repository'
+title: 'Procedura: eliminare i risultati di un test di carico da un repository'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - load tests, removing results
 - load test results, deleting
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3604c8bee778334d4f1355f6b3ce312c9c8d0efc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950007"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653543"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedura: Eliminare i risultati del test di carico da un repository
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedura: Eliminare i risultati di un test di carico da un repository
 
 Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzione vengono archiviate nel repository dei risultati test di carico. Il repository dei risultati del test di carico contiene i dati del contatore delle prestazioni e le informazioni sugli errori. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -53,7 +53,7 @@ Quando si esegue un test di carico, le informazioni raccolte durante l'esecuzion
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Esportare i risultati del test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)
+- [Procedura: Esportare i risultati di un test di carico da un repository](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Gestire i risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Procedura: Importare i risultati del test di carico in un repository](../test/how-to-import-load-test-results-into-a-repository.md)

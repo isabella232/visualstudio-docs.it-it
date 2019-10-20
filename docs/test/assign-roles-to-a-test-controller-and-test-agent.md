@@ -9,15 +9,15 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342339"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665296"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
@@ -25,7 +25,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Creare unit test o test codificati dell'interfaccia utente da eseguire con l'impostazione di test.
 
@@ -59,7 +59,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 1. Scegliere **Ruoli**.
 
-     Verrà visualizzata la pagina **Ruoli**.
+     Viene visualizzata la pagina **Ruoli**.
 
 2. Per eseguire il test in modalità remota, usare l'elenco a discesa **Metodo di esecuzione dei test** e selezionare **Esecuzione remota**.
 
@@ -76,7 +76,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 1. Scegliere **Dati e diagnostica**.
 
-     Verrà visualizzata la pagina **Dati e diagnostica**.
+     Viene visualizzata la pagina **Dati e diagnostica**.
 
 2. In **Ruolo** verificare che il ruolo **Test distribuito** sia selezionato.
 
@@ -97,7 +97,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 ::: moniker range="vs-2017"
 
-8. Nel menu **test** selezionare **impostazioni test** > **Seleziona file di impostazioni test** , quindi scegliere il file *TestSettingDistributedTestWalkthrough. testsettings* .
+8. Nel menu **test** selezionare **impostazioni test** > **selezionare file di impostazioni test** , quindi scegliere il file *TestSettingDistributedTestWalkthrough. testsettings* .
 
 ::: moniker-end
 

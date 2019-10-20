@@ -25,17 +25,17 @@ helpviewer_keywords:
 - find text
 - replace text
 - multi-caret selection
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0e5c4bd54e71357ff6a2d667c540953bc0057b70
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548348"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654237"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -112,11 +112,11 @@ Per selezionare più punti di inserimento, fare clic o effettuare la prima selez
 > [!TIP]
 > Se si è scelto **ALT** come tasto di modifica per il clic del mouse di Vai a definizione in **Strumenti** > **Opzioni**, la selezione per più punti di inserimento è disabilitata.
 
-### <a name="commands"></a>Comandi:
+### <a name="commands"></a>Comandi
 
 Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punti di inserimento:
 
-|Collegamento|Operazione|
+|Metodo rapido|Operazione|
 |-|-|
 |**CTRL**+**ALT** + clic|Aggiungere un punto di inserimento secondario|
 |**CTRL**+**ALT** + doppio clic|Aggiungere una selezione di parola secondaria|

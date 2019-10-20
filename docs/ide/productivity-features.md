@@ -2,17 +2,17 @@
 title: Suggerimenti per la produttività
 ms.date: 2/21/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4f238046e671371a1fe83a3f5b9552b3956be8f
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: c0ac256d9878df45404dc62f1080e12bb6e7f002
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490661"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666783"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 
@@ -34,7 +34,7 @@ Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta 
 
 - **Uso di frammenti di codice**. È possibile usare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
 
-     Per inserire un frammento di codice, scegliere **Modifica** > **IntelliSense** > **Inserisci frammento** o **Racchiudi tra** o aprire il menu di scelta rapida in un file e scegliere **Snippet** > **Inserisci frammento** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
+     Per inserire un frammento di codice, scegliere **Modifica** > **IntelliSense** > **Inserisci frammento** o **Racchiudi tra** o aprire il menu di scelta rapida in un file e scegliere **Snippet** > **Inserisci frammento** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md).
 
 - **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando le icone a forma di cacciavite ![icona cacciavite](media/screwdriver-icon.png) o di lampadina ![icona lampadina](media/light-bulb-icon.png) oppure premendo **ALT**+**INVIO** o **CTRL**+ **.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
 
@@ -138,12 +138,12 @@ In qualsiasi momento, durante lo sviluppo di un'applicazione è possibile che si
 
    È anche possibile gestire i file più facilmente creando un'altra istanza di **Esplora soluzioni** e spostandola in un altro monitor. Per creare un'altra istanza di **Esplora soluzioni**, aprire un menu di scelta rapida in **Esplora soluzioni** e quindi scegliere **Nuova visualizzazione Esplora soluzioni**.
 
-- **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore usato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Procedura: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+- **Personalizzazione di tipi di carattere in Visual Studio**. È possibile modificare il tipo di carattere, la dimensione e il colore usato per il testo nell'IDE. Ad esempio, è possibile personalizzare il colore degli elementi di codice specifici nell'editor e il tipo di carattere nelle finestre degli strumenti o nell'IDE. Per altre informazioni, vedere [Procedura: Modificare i tipi di carattere e i colori](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Procedura: Modificare i tipi di carattere e i colori nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Post di blog di suggerimenti e consigli per Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-tips-and-tricks/)
 - [Tasti di scelta rapida predefiniti per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
 - [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-- [Procedura dettagliata: Creare una semplice applicazione](../get-started/csharp/tutorial-wpf.md)
+- [Procedura dettagliata: Creare un'applicazione semplice](../get-started/csharp/tutorial-wpf.md)
 - [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md)

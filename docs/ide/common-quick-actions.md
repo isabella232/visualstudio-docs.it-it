@@ -3,20 +3,20 @@ title: Azioni rapide comuni
 description: Azioni rapide più diffuse C# per e Visual Basic inclusa la correzione di parole chiave o simboli non digitati, la risoluzione di conflitti di merge, la rimozione delle importazioni necessarie, la generazione di tipi, l'introduzione di variabili locali
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000151"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652253"
 ---
 # <a name="common-quick-actions"></a>Azioni rapide comuni
 
@@ -30,7 +30,7 @@ Le Azioni rapide in questa sezione consentono di correggere gli errori nel codic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu lampadina come **"modifica" \<misspelled word > "in" \<correct word > ""** . Esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu lampadina come **"modifica \<misspelled word >" in "\<correct word >'"** . Esempio:
 
 ```csharp
 // Before
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Rimuovere istruzioni using/Imports non necessarie
 
-L'azione rapida **Rimuovi istruzioni using non necessarie/Rimuovi istruzioni Imports non necessarie** consente di rimuovere eventuali istruzioni `using` e `Import` inutilizzate dal file corrente. Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
+L'azione rapida **Rimuovi using superflue/Imports** rimuove le direttive `using` e `Import` non utilizzate per il file corrente. Quando si seleziona questo elemento, le istruzioni Imports di spazi dei nomi inutilizzate vengono rimosse.
 
 | Linguaggi applicabili | Versione supportata |
 | - | - |
@@ -184,7 +184,7 @@ Se si usano tipi situati in altri progetti della soluzione, l'azione rapida vien
 - Suggerisci le direttive using/import per i tipi in assembly di riferimento
 - Suggerisci le direttive using/import per i tipi in pacchetti NuGet
 
-Dopo l'abilitazione, se si usa un tipo in uno spazio dei nomi non ancora importato, ma esistente in un assembly di riferimento o in un pacchetto NuGet, l'istruzione using/Imports viene creata.
+Se abilitata, se si usa un tipo in uno spazio dei nomi che non è attualmente importato ma esistente in un assembly di riferimento o in un pacchetto NuGet, viene creata la direttiva using o Import.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

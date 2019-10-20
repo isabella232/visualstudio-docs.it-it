@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747574"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653556"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
@@ -29,7 +29,7 @@ Sono disponibili due tipi di report del test di carico:
 - **Tendenza** È possibile generare l'analisi delle tendenze in due o più risultati del test di carico. I risultati vengono visualizzati usando grafici a linee, ma i dati sono disponibili in tabelle pivot.
 
 > [!TIP]
-> È inoltre possibile creare manualmente report di Microsoft Word copiando e incollando dati dalle visualizzazioni Riepilogo, Grafici e Tabelle. Vedere [Procedura: Creare manualmente un report di prestazioni del test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> È inoltre possibile creare manualmente report di Microsoft Word copiando e incollando dati dalle visualizzazioni Riepilogo, Grafici e Tabelle. Vedere [Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Ciascun report può essere usato per condividere dati relativi alle prestazioni con le parti interessate e mostrare se le prestazioni complessive e l'integrità del sistema stanno migliorando o peggiorando.
 
@@ -102,7 +102,7 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
    - **Confronto errore**: confronta i tipi di errore incontrati tra le due esecuzioni e il numero di occorrenze.
 
      > [!TIP]
-     > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina ha due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
+     > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Per generare report sulla tendenza del test di carico con Excel
 
@@ -142,7 +142,7 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
 9. Il report viene generato con un sommario contenente collegamenti alle varie schede della cartella di lavoro di Excel generate nel report. I collegamenti sono basati sui contatori selezionati per il report della tendenza. Ad esempio, se sono stati lasciati i contatori predefiniti selezionati nel passaggio 7, il report genererà dati presentati in schede separate in Excel per ogni contatore elencato nel passaggio 7. I dati generati per ogni contatore vengono presentati in grafici dello stile tendenza.
 
    > [!TIP]
-   > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina ha due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
+   > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina dispone di due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
 ## <a name="net-security"></a>Protezione .NET
 

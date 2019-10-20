@@ -6,111 +6,111 @@ f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82d9a64721f9d1c4f4db982e3a39c65a4b29f167
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445851"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653976"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
-È possibile modificare l'aspetto e il comportamento di esplorazione per la finestra di progettazione di linguaggio specifico di dominio come indicato di seguito:
+È possibile modificare l'aspetto e il comportamento di Esplora risorse per la finestra di progettazione del linguaggio specifico di dominio come indicato di seguito:
 
 - Modificare il titolo della finestra.
 
-- Modificare l'icona di scheda.
+- Modificare l'icona della scheda.
 
 - Modificare le icone per i nodi.
 
 - Nascondere i nodi.
 
-## <a name="changing-the-window-title"></a>Modificare il titolo della finestra
- Per modificare il titolo della finestra di Esplora generato, selezionare **comportamento di esplorazione** nel **DSL Explorer**e quindi nel **proprietà** impostare nella finestra di  **Titolo** proprietà per il titolo desiderato.
+## <a name="changing-the-window-title"></a>Modifica del titolo della finestra
+ Per modificare il titolo della finestra di Esplora generato, selezionare **comportamento di Esplora risorse** in **Esplora DSL**, quindi nella finestra **proprietà** impostare la proprietà **title** sul titolo desiderato.
 
-## <a name="changing-the-tab-icon"></a>Modifica dell'icona di scheda
- Per modificare l'icona di scheda per Esplora risorse, usare un'icona di 16x16 pixel in un file con estensione bmp. Inserire il file icona nella cartella \DslPackage\Resources\ e quindi modificare il nome del file per **ModelExplorerToolWindowBitmaps.bmp**. Ad esempio, è possibile modificare il file dell'icona setup.ico Visual Studio in formato BMP e rinominarlo **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Finestra di progettazione generata verrà visualizzata questa icona nella scheda della finestra Esplora risorse quando è ancorata assieme **Esplora soluzioni**.
+## <a name="changing-the-tab-icon"></a>Modifica dell'icona della scheda
+ Per modificare l'icona della scheda per Esplora risorse, usare un'icona 16x16-pixel in un file con estensione bmp. Inserire il file dell'icona nella cartella \DslPackage\Resources\, quindi modificare il nome del file in **ModelExplorerToolWindowBitmaps. bmp**. Ad esempio, è possibile modificare il file dell'icona Setup. ico di Visual Studio in formato BMP e rinominarlo **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. La finestra di progettazione generata visualizzerà questa icona nella scheda della finestra di esplorazione quando viene ancorata insieme a **Esplora soluzioni**.
 
-## <a name="setting-custom-icons-on-explorer-nodes"></a>Impostazione delle icone personalizzate nei nodi di Esplora
- È possibile personalizzare i nodi in Esplora risorse con impostazioni nodo di esplorazione. La procedura seguente viene illustrato come aggiungere un'icona per un nodo.
+## <a name="setting-custom-icons-on-explorer-nodes"></a>Impostazione delle icone personalizzate nei nodi di esplorazione
+ È possibile personalizzare i nodi in Esplora risorse usando le impostazioni del nodo di esplorazione. Nella procedura seguente viene illustrato come aggiungere un'icona a un nodo.
 
-#### <a name="to-add-an-icon-to-an-explorer-node"></a>Per aggiungere un'icona per un nodo di esplorazione
+#### <a name="to-add-an-icon-to-an-explorer-node"></a>Per aggiungere un'icona a un nodo di esplorazione
 
-1. Creare un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] soluzione usando il modello di soluzione flusso attività.
+1. Creare una soluzione [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usando il modello di soluzione flusso attività.
 
-2. Inserire un file con estensione bmp contiene un'icona di 16x16 pixel nel **Dsl\Resources** cartella della soluzione.
+2. Inserire un file con estensione BMP contenente un'icona 16x16-pixel nella cartella **Dsl\Resources** della soluzione.
 
-3. Nel **DSL Explorer**, fare doppio clic su **comportamento di esplorazione** e quindi fare clic su **aggiungere nuove impostazioni di Esplora nodo**.
+3. In **DSL Explorer**fare clic con il pulsante destro del mouse su **Esplora comportamento** e quindi scegliere **Aggiungi nuove impostazioni del nodo di esplorazione**.
 
-    Un' **ExplorerNodeSettings** nodo viene visualizzato sotto il **impostazioni personalizzate nodo** nodo.
+    Viene visualizzato un nodo **ExplorerNodeSettings** sotto il nodo **Impostazioni nodo personalizzato** .
 
-4. Selezionare **ExplorerNodeSettings**, quindi nel **delle proprietà** impostare nella finestra **classe** per **attore**.
+4. Selezionare **ExplorerNodeSettings**, quindi nella finestra **Proprietà** impostare **Class** su **Actor**.
 
-5. Impostare **alla visualizzazione dell'icona** al percorso del file icona.
+5. Impostare l' **icona per visualizzare** il percorso del file icona.
 
-6. Trasforma tutti i modelli e quindi compilare ed eseguire la soluzione.
+6. Trasformare tutti i modelli, quindi compilare ed eseguire la soluzione.
 
-7. Nella finestra di progettazione generata, aprire il diagramma di esempio.
+7. Nella finestra di progettazione generata aprire il diagramma di esempio.
 
-    Esplora risorse dovrebbe mostrare tre **attore** nodi che dispongono dell'icona.
+    La finestra di esplorazione dovrebbe mostrare tre nodi **Actor** con l'icona.
 
 > [!NOTE]
-> Se è stata impostata un'icona di nodo per qualsiasi elemento che viene visualizzato in Esplora generato, tutti i nodi di Esplora verranno visualizzata l'icona. Se non è stata impostata alcuna icona, i nodi visualizzerà l'icona predefinita.
+> Se è stata impostata un'icona di nodo per qualsiasi elemento visualizzato nell'esploratore generato, l'icona verrà visualizzata in tutti i nodi di esplorazione. Se non è stata impostata alcuna icona, nei nodi viene visualizzata l'icona predefinita.
 
-## <a name="changing-the-name-displayed-on-an-explorer-node"></a>La modifica del nome visualizzato su un nodo di Esplora
- È possibile modificare la modalità in cui vengono visualizzati i nomi degli elementi del modello in Esplora risorse. La procedura seguente viene illustrato come visualizzare il nome del **Task** che fa riferimento un **commento** nel nodo di commento.
+## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Modifica del nome visualizzato in un nodo di esplorazione
+ È possibile modificare la modalità di visualizzazione dei nomi degli elementi del modello in Esplora. Nella procedura riportata di seguito viene illustrato come visualizzare il nome dell' **attività** a cui fa riferimento un **Commento** nel nodo Comment.
 
 #### <a name="to-display-a-property"></a>Per visualizzare una proprietà
 
 1. Aprire la soluzione creata nella procedura precedente.
 
-2. Assicurarsi che il **commento** fa riferimento solo una classe di dominio singolo, impostare la molteplicità del ruolo con nome della proprietà **soggetti** a 0..1. Il nome della proprietà deve diventare **Subject**, il nome della relazione deve diventare **CommentReferencesSubject**.
+2. Verificare che il **Commento** faccia riferimento solo a una singola classe di dominio impostando la molteplicità del ruolo con gli **oggetti** nome proprietà su 0.. 1. Il nome della proprietà deve essere **soggetto**e il nome della relazione deve diventare **CommentReferencesSubject**.
 
-3. Nel **DSL Explorer**, fare doppio clic su **comportamento di esplorazione** e quindi fare clic su **aggiungere nuove impostazioni di Esplora nodo**.
+3. In **DSL Explorer**fare clic con il pulsante destro del mouse su **Esplora comportamento** e quindi scegliere **Aggiungi nuove impostazioni del nodo di esplorazione**.
 
-     Un' **ExplorerNodeSettings** nodo viene visualizzato sotto il **impostazioni personalizzate nodo** nodo.
+     Viene visualizzato un nodo **ExplorerNodeSettings** sotto il nodo **Impostazioni nodo personalizzato** .
 
-4. Selezionare **ExplorerNodeSettings**, quindi nel **delle proprietà** impostare nella finestra **classe** a **commento**.
+4. Selezionare **ExplorerNodeSettings**, quindi nella finestra **Proprietà** impostare **Class** su **Comment**.
 
-5. Fare doppio clic il **commento** nodo e quindi fare clic su **aggiunta nuovo percorso di proprietà**.
+5. Fare clic con il pulsante destro del mouse sul nodo **Comment** , quindi scegliere **Aggiungi nuovo percorso proprietà**.
 
-     Verrà visualizzato un nuovo nodo denominato **proprietà visualizzata**.
+     Viene visualizzato un nuovo nodo denominato **Proprietà**denominata.
 
-6. Selezionare **proprietà visualizzata**e quindi la **proprietà** finestra, fare clic sul campo del valore **percorso alla proprietà**. Selezionare **commento**, quindi **CommentReferencesSubject**, quindi **FlowElement**. Il percorso risulta dovrebbe essere simile **CommentReferencesSubject.Subject/! Soggetto**.
+6. Selezionare **Proprietà visualizzata**, quindi nella finestra **Proprietà** fare clic sul campo valore di percorso della **proprietà**. Selezionare **Comment**, quindi **CommentReferencesSubject**e **FlowElement**. Il percorso risultante sarà simile a **CommentReferencesSubject. Subject/! Oggetto**.
 
-7. Nel campo del valore **proprietà**, selezionare **nome**.
+7. Nel campo valore della **Proprietà**selezionare **nome**.
 
-8. Trasforma tutti i modelli e quindi compilare ed eseguire la soluzione.
+8. Trasformare tutti i modelli, quindi compilare ed eseguire la soluzione.
 
-9. Nella finestra di progettazione generata, aprire il diagramma di esempio.
+9. Nella finestra di progettazione generata aprire il diagramma di esempio.
 
-10. Disegnare una **connettore di commento** tra l'elemento di commento e il **Attività1** elemento del diagramma.
+10. Disegno di un **connettore di commenti** tra l'elemento Comment e l'elemento **Task1** nel diagramma.
 
-     Il nodo di esplorazione deve visualizzare il commento come **Attività1**.
+     Il nodo Explorer dovrebbe visualizzare il commento come **Task1**.
 
-## <a name="hiding-nodes"></a>Nodi di occultamento
- È possibile nascondere un nodo in Esplora risorse aggiungendo il percorso per il **i nodi nascosti** nodo del **DSL Explorer**. La procedura seguente illustra come nascondere **commento** nodi.
+## <a name="hiding-nodes"></a>Nascondere nodi
+ È possibile nascondere un nodo in Esplora risorse aggiungendo il relativo percorso al nodo **nodi nascosti** di **Esplora DSL**. Nella procedura seguente viene illustrato come nascondere i nodi di **Commento** .
 
 #### <a name="to-hide-an-explorer-node"></a>Per nascondere un nodo di esplorazione
 
 1. Aprire la soluzione creata nella procedura precedente.
 
-2. Nel **DSL Explorer**, fare doppio clic su **comportamento di esplorazione** e quindi fare clic su **aggiunta nuovo percorso di dominio**.
+2. In **DSL Explorer**fare clic con il pulsante destro del mouse su **Esplora comportamento** , quindi scegliere **Aggiungi nuovo percorso di dominio**.
 
-     Oggetto **percorso di dominio** nodo viene visualizzato sotto **nodi nascosti**.
+     Un nodo del **percorso di dominio** viene visualizzato sotto i **nodi nascosti**.
 
-3. Selezionare **percorso di dominio**, quindi nel **proprietà** finestra, fare clic sul campo del valore **percorso definizione**. Selezionare **FlowGraph**, quindi **FlowGraphHasComments**. Il percorso risulta dovrebbe essere simile **FlowGraphHasComments.Comments**
+3. Selezionare **percorso dominio**, quindi nella finestra **Proprietà** fare clic sul campo valore di **definizione percorso**. Selezionare **FlowGraph**, quindi **FlowGraphHasComments**. Il percorso risultante sarà simile a **FlowGraphHasComments. comments**
 
-4. Trasforma tutti i modelli e quindi compilare ed eseguire la soluzione.
+4. Trasformare tutti i modelli, quindi compilare ed eseguire la soluzione.
 
-5. Nella finestra di progettazione generata, aprire il diagramma di esempio.
+5. Nella finestra di progettazione generata aprire il diagramma di esempio.
 
-     Finestra di esplorazione deve mostrare solo un' **attori** nodo e non deve visualizzare il **commenti** nodo.
+     La finestra di esplorazione dovrebbe visualizzare solo un nodo **Actors** e non deve visualizzare il nodo **Commenti** .
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario sugli strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,5 +1,5 @@
 ---
-title: Riordina parametri Refactoring (c#) | Microsoft Docs
+title: Refactoring Riordina parametri (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,69 +13,69 @@ helpviewer_keywords:
 - Reorder Parameters refactoring [C#]
 ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e39564fb108b63859620e2c4a650608cdf1e7e82
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444544"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673137"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Refactoring Riordina parametri (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` è un linguaggio Visual c# il refactoring di operazione che fornisce un modo semplice per modificare l'ordine dei parametri per metodi, indicizzatori e delegati. `Reorder Parameters` la dichiarazione viene modificata e in tutti i percorsi in cui viene chiamato il membro, i parametri vengono riorganizzati in modo da riflettere il nuovo ordine.  
-  
- Per eseguire il `Reorder Parameters` operazione, posizionare il cursore sopra o accanto a un metodo, l'indicizzatore o delegato. Quando il cursore si trova nella posizione, richiamare il `Reorder Parameters` operazione premendo il tasto di scelta rapida oppure scegliendo il comando dal menu di scelta rapida.  
-  
+`Reorder Parameters` è un'operazione C# di refactoring visiva che fornisce un modo semplice per modificare l'ordine dei parametri per i metodi, gli indicizzatori e i delegati. `Reorder Parameters` modifica la dichiarazione e in qualsiasi posizione in cui viene chiamato il membro, i parametri vengono ridisposti in modo da riflettere il nuovo ordine.
+
+ Per eseguire l'operazione di `Reorder Parameters`, posizionare il cursore su o accanto a un metodo, un indicizzatore o un delegato. Quando il cursore si trova nella posizione, richiamare l'operazione `Reorder Parameters` premendo il tasto di scelta rapida oppure facendo clic sul comando dal menu di scelta rapida.
+
 > [!NOTE]
-> Non è possibile riordinare il primo parametro in un metodo di estensione.  
-  
-### <a name="to-reorder-parameters"></a>Per riordinare i parametri  
-  
-1. Creare una libreria di classi denominata `ReorderParameters`, quindi sostituire `Class1` con il codice di esempio seguente.  
-  
-    ```csharp  
-    class ProtoClassA  
-    {  
-        // Invoke on 'MethodB'.  
-        public void MethodB(int i, bool b) { }  
-    }  
-  
-    class ProtoClassC  
-    {  
-        void D()  
-        {  
-            ProtoClassA MyClassA = new ProtoClassA();  
-  
-            // Invoke on 'MethodB'.  
-            MyClassA.MethodB(0, false);  
-        }  
-    }  
-    ```  
-  
-2. Posizionare il cursore sulla `MethodB`, nella dichiarazione del metodo o la chiamata al metodo.  
-  
-3. Nel **refactoring** menu, fare clic su **Riordina parametri**.  
-  
-     Il **Riordina parametri** verrà visualizzata la finestra di dialogo.  
-  
-4. Nel **Riordina parametri** finestra di dialogo `int i` nel **parametri** elenco e quindi fare clic sul pulsante a discesa.  
-  
-     In alternativa, è possibile trascinare `int i` dopo aver `bool b` nel **parametri** elenco.  
-  
-5. Nel **Riordina parametri** finestra di dialogo, fare clic su **OK**.  
-  
-     Se il **Anteprima modifiche riferimento** opzione è selezionata nel **Riordina parametri** della finestra di dialogo il **Anteprima modifiche - Riordina parametri** verrà visualizzata la finestra di dialogo. Fornisce un'anteprima delle modifiche nell'elenco dei parametri per `MethodB` sia la firma e la chiamata al metodo.  
-  
-    1. Se il **Anteprima modifiche - Riordina parametri** verrà visualizzata la finestra di dialogo, fare clic su **applica**.  
-  
-         In questo esempio, la dichiarazione del metodo e tutto il metodo di chiamata siti per `MethodB` vengono aggiornati.  
-  
-## <a name="remarks"></a>Note  
- È possibile riordinare i parametri da una dichiarazione di metodo o una chiamata al metodo. Posizionare il cursore sul o accanto la dichiarazione di metodo o delegato, ma non nel corpo.  
-  
-## <a name="see-also"></a>Vedere anche  
+> Non è possibile riordinare il primo parametro in un metodo di estensione.
+
+### <a name="to-reorder-parameters"></a>Per riordinare i parametri
+
+1. Creare una libreria di classi denominata `ReorderParameters`, quindi sostituire `Class1` con il codice di esempio seguente.
+
+    ```csharp
+    class ProtoClassA
+    {
+        // Invoke on 'MethodB'.
+        public void MethodB(int i, bool b) { }
+    }
+
+    class ProtoClassC
+    {
+        void D()
+        {
+            ProtoClassA MyClassA = new ProtoClassA();
+
+            // Invoke on 'MethodB'.
+            MyClassA.MethodB(0, false);
+        }
+    }
+    ```
+
+2. Posizionare il cursore su `MethodB`, nella dichiarazione del metodo o nella chiamata al metodo.
+
+3. Nel menu **refactoring** fare clic su **Riordina parametri**.
+
+     Verrà visualizzata la finestra di dialogo **Riordina parametri** .
+
+4. Nella finestra di dialogo **Riordina parametri** selezionare `int i` nell'elenco **parametri** , quindi fare clic sul pulsante giù.
+
+     In alternativa, è possibile trascinare `int i` dopo `bool b` nell'elenco **parametri** .
+
+5. Nella finestra di dialogo **Riordina parametri** fare clic su **OK**.
+
+     Se l'opzione **Anteprima modifiche riferimenti** è selezionata nella finestra di dialogo **Riordina parametri** , verrà visualizzata la finestra di dialogo **Anteprima modifiche-Riordina parametri** . Fornisce un'anteprima delle modifiche nell'elenco di parametri per `MethodB` sia nella firma che nella chiamata al metodo.
+
+    1. Se viene visualizzata la finestra di dialogo **Anteprima modifiche-Riordina parametri** , fare clic su **applica**.
+
+         In questo esempio vengono aggiornate la dichiarazione del metodo e tutti i siti di chiamata al metodo per `MethodB`.
+
+## <a name="remarks"></a>Note
+ È possibile riordinare i parametri da una dichiarazione di metodo o da una chiamata al metodo. Posizionare il cursore su o accanto al metodo o alla dichiarazione del delegato, ma non nel corpo.
+
+## <a name="see-also"></a>Vedere anche
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)

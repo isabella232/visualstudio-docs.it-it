@@ -5,25 +5,25 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429539"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656073"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedura: Distribuire frammenti di codice
 
 È sufficiente distribuire i frammenti di codice ad altri utenti, che dovranno installarli nei computer con **Gestione frammenti di codice**. Se si hanno diversi frammenti da distribuire o si vuole distribuirli più ampiamente, tuttavia, è possibile includere il file di frammento in un'estensione di Visual Studio. Gli utenti di Visual Studio possono quindi installare l'estensione per ottenere i frammenti di codice.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Installare il carico di lavoro **Sviluppo di estensioni di Visual Studio** per ottenere l'accesso ai modelli del **progetto VSIX**.
 
@@ -31,7 +31,7 @@ Installare il carico di lavoro **Sviluppo di estensioni di Visual Studio** per o
 
 ## <a name="set-up-the-extension"></a>Configurazione dell'estensione
 
-In questa procedura si userà lo stesso frammento di codice Hello World creato in [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Questo articolo specifica il frammento di codice XML, quindi non è necessario tornare indietro e creare un frammento di codice.
+In questa procedura si userà lo stesso frammento di codice Hello World creato in [procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md). Questo articolo specifica il frammento di codice XML, quindi non è necessario tornare indietro e creare un frammento di codice.
 
 1. Creare un nuovo progetto dal modello di **progetto VSIX vuoto** e assegnare al progetto il nome **TestSnippet**.
 
@@ -115,7 +115,7 @@ In questa procedura si userà lo stesso frammento di codice Hello World creato i
 
 4. Eseguire il test del frammento di codice. Nell'istanza sperimentale aprire un progetto Visual Basic e uno dei file di codice. Posizionare il cursore in un punto nel codice, fare clic con il pulsante destro del mouse e nel menu di scelta rapida selezionare **Inserisci frammento di codice**.
 
-5. *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HelloWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**.
+5. *HelloWorldVB* dovrebbe essere visualizzato come una delle cartelle. Fare doppio clic. Verrà visualizzato un menu a comparsa **Inserisci frammento di codice: HellowWorldVB >** con un elenco a discesa **HelloWorldVB**. Fare clic sull'elenco a discesa **HelloWorldVB**.
 
    La riga seguente viene aggiunta al file di codice:
 

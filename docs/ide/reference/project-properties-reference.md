@@ -1,22 +1,22 @@
 ---
-title: Informazioni di riferimento sulle proprietà del progetto
+title: Riferimenti alle proprietà di progetto
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e6a21278670a477bdd30e28a6f0cc4cac04757
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: f3b5c5f79b4ecfcac3e70b6be125c57bcc738199
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461360"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655798"
 ---
 # <a name="project-properties-reference"></a>Informazioni di riferimento sulle proprietà del progetto
 
@@ -24,7 +24,7 @@ Altre informazioni su come configurare e personalizzare le proprietà del proget
 
 ## <a name="project-properties-pages"></a>Pagine delle proprietà del progetto
 
-| Titolo | DESCRIZIONE |
+| Titolo | Descrizione |
 | - | - |
 | [Pagina Applicazione, Creazione progetti (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Pagina Applicazione, Creazione progetti (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |

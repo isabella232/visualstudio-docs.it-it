@@ -6,15 +6,15 @@ f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
 - project templates [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd5bd20d5840b560d5954d62e5d158eb1f6c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f21c20880263a00d36c2fd21097bf8ee8c621d99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430510"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656093"
 ---
 # <a name="how-to-create-project-templates"></a>Procedura: Creare modelli di progetto
 

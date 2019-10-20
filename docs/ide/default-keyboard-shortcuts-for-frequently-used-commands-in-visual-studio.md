@@ -2,17 +2,17 @@
 title: Tasti di scelta rapida predefiniti per i comandi usati di frequente
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043338"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652523"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida più comuni per Visual Studio
 
@@ -25,7 +25,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 
 ## <a name="build"></a>Compilazione
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |Build.BuildSolution|**CTRL+MAIUSC+B** [Globale]|
 |Build.Cancel|**CTRL+INTERR** [Globale]|
@@ -34,7 +34,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 
 ## <a name="debug"></a>Debug
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |Debug.BreakatFunction|**CTRL+B** [Globale]|
 |Debug.BreakAll|**CTRL+ALT+INTERR** [Globale]|
@@ -54,7 +54,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 
 ## <a name="edit"></a>Edit
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |Edit.BreakLine|**INVIO** [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br />o **MAIUSC+INVIO** [Editor di testo]|
 |Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [Editor di testo]|
@@ -105,7 +105,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 
 ## <a name="file"></a>File
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |File.Exit|**ALT+F4** [Globale]|
 |File.NewFile|**CTRL+N** [Globale]|
@@ -121,7 +121,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 
 ## <a name="project"></a>Progetto
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |Project.AddExistingItem|**MAIUSC+ALT+A** [Globale]|
 |Project.AddNewItem|**CTRL+MAIUSC+A** [Globale]|
@@ -138,9 +138,9 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |-------------| - |
 |Tools.AttachtoProcess|**CTRL+ALT+P** [Globale]|
 
-## <a name="view"></a>Visualizza
+## <a name="view"></a>Visualizzazione
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |View.ClassView|**CTRL+MAIUSC+C** [Globale]|
 |View.EditLabel|**F2** [Globale]|
@@ -161,7 +161,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 
 ## <a name="window"></a>Window
 
-|Comandi:|Tasti di scelta rapida [Contesti]|
+|Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |Window.ActivateDocumentWindow|**ESC** [Globale]|
 |Window.CloseDocumentWindow|**CTRL+F4** [Globale]|

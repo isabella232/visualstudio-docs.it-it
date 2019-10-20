@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Find command
 - Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e94f8aa823fc7665144f1d774339d1c41f37edc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 813b9ea0c51b4812c1d8bab4f1fb8be624893016
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926249"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654359"
 ---
 # <a name="find-command"></a>Comando Trova
 Esegue la ricerca di testo nei file usando un subset delle opzioni disponibili nella scheda **Cerca nei file** della finestra **Trova e sostituisci**.
@@ -30,45 +30,45 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `findwhat` Obbligatorio. Testo da cercare.
 
 ## <a name="switches"></a>Opzioni
 /case o /c\
-facoltativo. Vengono rilevate corrispondenze solo se i caratteri maiuscoli e minuscoli corrispondono esattamente a quelli specificati nell'argomento `findwhat`.
+Parametro facoltativo. Vengono rilevate corrispondenze solo se i caratteri maiuscoli e minuscoli corrispondono esattamente a quelli specificati nell'argomento `findwhat`.
 
 /doc o /d\
-facoltativo. Cerca solo nel documento corrente. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open` o `/sel`.
+Parametro facoltativo. Cerca solo nel documento corrente. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open`, o `/sel`.
 
 /markall o /m\
-facoltativo. Inserisce un grafo per ogni riga che contiene una corrispondenza della ricerca all'interno del documento corrente.
+Parametro facoltativo. Inserisce un grafo per ogni riga che contiene una corrispondenza della ricerca all'interno del documento corrente.
 
 /open o /o\
-facoltativo. Cerca in tutti i documenti aperti come se fossero un unico documento. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open` o `/sel`.
+Parametro facoltativo. Cerca in tutti i documenti aperti come se fossero un unico documento. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open`, o `/sel`.
 
 /options o /t\
-facoltativo. Visualizza l'elenco delle impostazioni correnti dell'opzione di ricerca e non esegue una ricerca.
+Parametro facoltativo. Visualizza l'elenco delle impostazioni correnti dell'opzione di ricerca e non esegue una ricerca.
 
 /proc o /p\
-facoltativo. Cerca solo nella routine corrente. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open` o `/sel`.
+Parametro facoltativo. Cerca solo nella routine corrente. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open`, o `/sel`.
 
 /reset o /e\
-facoltativo. Ripristina le impostazioni predefinite delle opzioni di ricerca e non esegue la ricerca.
+Parametro facoltativo. Ripristina le impostazioni predefinite delle opzioni di ricerca e non esegue la ricerca.
 
 /sel o /s\
-facoltativo. Cerca solo nella selezione corrente. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open` o `/sel`.
+Parametro facoltativo. Cerca solo nella selezione corrente. Specificare solo uno degli ambiti di ricerca disponibili, `/doc`, `/proc`, `/open`, o `/sel`.
 
 /up o /u\
-facoltativo. Esegue la ricerca dalla posizione corrente nel file verso l'inizio del file. Per impostazione predefinita, le ricerche iniziano in corrispondenza della posizione nel file e procedono verso la fine del file.
+Parametro facoltativo. Esegue la ricerca dalla posizione corrente nel file verso l'inizio del file. Per impostazione predefinita, le ricerche iniziano in corrispondenza della posizione nel file e procedono verso la fine del file.
 
 /regex o /r\
-facoltativo. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni che rappresentano modelli di testo anziché i caratteri letterali. Per l'elenco completo dei caratteri espressione regolare, vedere [Espressioni regolari](../../ide/using-regular-expressions-in-visual-studio.md).
+Parametro facoltativo. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni che rappresentano modelli di testo anziché i caratteri letterali. Per l'elenco completo dei caratteri espressione regolare, vedere [Espressioni regolari](../../ide/using-regular-expressions-in-visual-studio.md).
 
 /wild o /l\
-facoltativo. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni per rappresentare un carattere o una sequenza di caratteri.
+Parametro facoltativo. Usa caratteri speciali predefiniti nell'argomento `findwhat` come notazioni per rappresentare un carattere o una sequenza di caratteri.
 
 /word o /w\
-facoltativo. Cerca solo parole intere.
+Parametro facoltativo. Cerca solo parole intere.
 
 ## <a name="example"></a>Esempio
 In questo esempio viene eseguita una ricerca con distinzione tra maiuscole e minuscole della parola "string" nella sezione di codice attualmente selezionata.
@@ -82,4 +82,4 @@ In questo esempio viene eseguita una ricerca con distinzione tra maiuscole e min
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

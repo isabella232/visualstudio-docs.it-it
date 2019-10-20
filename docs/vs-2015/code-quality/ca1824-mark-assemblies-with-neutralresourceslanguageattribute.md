@@ -1,5 +1,5 @@
 ---
-title: 'CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute | Microsoft Docs'
+title: 'CA1824: contrassegnare gli assembly con NeutralResourcesLanguageAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1824
 ms.assetid: 10e97f8a-aa6e-47aa-b253-1e5d3a295d82
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203078"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661108"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Contrassegnare gli assembly con NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,29 +29,29 @@ ms.locfileid: "68203078"
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
-|Category|Microsoft.Performance|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. performance|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un assembly contiene un **ResX**-risorsa basata su ma non dispone di <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> applicato.
+ Un assembly contiene una risorsa basata su **resx**a cui non è applicato il <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il **NeutralResourcesLanguage** attributo indica il **ResourceManager** del linguaggio che è stato usato per visualizzare le risorse delle impostazioni cultura di sistema per un assembly. Quando esegue la ricerca di risorse con le stesse impostazioni cultura per la lingua risorse neutra, le **ResourceManager** usa automaticamente le risorse che si trovano nell'assembly principale. Ciò avviene invece di cercare un assembly satellite con le impostazioni cultura dell'interfaccia utente corrente per il thread corrente. Tale approccio migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set.
+ L'attributo **NeutralResourcesLanguage** informa l'oggetto **ResourceManager** del linguaggio usato per visualizzare le risorse delle impostazioni cultura non associate ad alcun paese per un assembly. Quando cerca le risorse nelle stesse impostazioni cultura della lingua delle risorse neutre, **ResourceManager** usa automaticamente le risorse che si trovano nell'assembly principale. Esegue questa operazione anziché cercare un assembly satellite con le impostazioni cultura dell'interfaccia utente correnti per il thread corrente. Tale approccio migliora le prestazioni delle ricerche per la prima risorsa caricata e riduce il working set.
 
-## <a name="fixing-violations"></a>Correzione delle violazioni
- Per correggere una violazione di questa regola, aggiungere l'attributo all'assembly e specificare la lingua delle risorse delle impostazioni cultura neutre.
+## <a name="fixing-violations"></a>Correzione di violazioni
+ Per correggere una violazione di questa regola, aggiungere l'attributo all'assembly e specificare la lingua delle risorse delle impostazioni cultura non associate ad alcun paese.
 
-## <a name="specifying-the-language"></a>Che specifica il linguaggio
+## <a name="specifying-the-language"></a>Specifica della lingua
 
-#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Per specificare la lingua della risorsa delle impostazioni cultura neutre
+#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Per specificare la lingua della risorsa delle impostazioni cultura non associate ad alcun paese
 
-1. Nelle **Esplora soluzioni**mouse sul progetto e quindi fare clic su **proprietà**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
-2. Dalla barra di spostamento a sinistra selezionare **Application**, quindi fare clic su **informazioni sugli Assembly**.
+2. Nella barra di spostamento a sinistra selezionare **applicazione**, quindi fare clic su **informazioni assembly**.
 
-3. Nel **informazioni sull'Assembly** finestra di dialogo, selezionare la lingua dal **lingua neutra** elenco a discesa.
+3. Nella finestra di dialogo **informazioni assembly** selezionare la lingua dall'elenco a discesa **lingua neutra** .
 
 4. Fare clic su **OK**.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola. Tuttavia, potrebbero ridurre le prestazioni di avvio.
+ È possibile eliminare un avviso da questa regola. Tuttavia, le prestazioni di avvio potrebbero ridursi.

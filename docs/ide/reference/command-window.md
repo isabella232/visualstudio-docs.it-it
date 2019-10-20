@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe707d82354a8c947dfa89a7323b41a489d0fa8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4d89b06c406d0495a5699f707c85b4e9e9b3a804
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919300"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654582"
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.
@@ -98,7 +98,7 @@ Esistono due formati per quasi tutte le opzioni supportate da un comando: un for
 Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale valore viene applicato a ogni opzione. Ad esempio, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se una delle opzioni del gruppo non accetta un valore, si verifica un errore.
 
 ## <a name="escape-characters"></a>Caratteri di escape
-Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
+Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Di seguito è riportato un esempio:
 
 ```cmd
 >Edit.Find ^^t /regex
@@ -107,9 +107,9 @@ Un accento circonflesso (^) in una riga di comando indica che il carattere immed
 L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato. Nell'esempio riportato di seguito viene illustrato come cercare il criterio "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usare le virgolette per nomi di percorso con spazi
-Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Program Files"** oppure **"C:\Program Files"** .
+Se, ad esempio, si vuole aprire un file con un percorso contenente spazi, è necessario racchiudere tra virgolette doppie il percorso o il segmento di tracciato contenente gli spazi: **C:\\"Programmi"** or **"C:\Programmi"** .
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

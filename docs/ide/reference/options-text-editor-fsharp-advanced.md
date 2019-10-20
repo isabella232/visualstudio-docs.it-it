@@ -4,21 +4,21 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e28bd5b7ace34995dbf0778d59f42b5c5d383aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: aacc2b6aa47f7a250b161187146accc51736b586
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778983"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668938"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opzioni, Editor di testo, F#, Avanzate
 
-Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **F#** > **Avanzate**.
+Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **F#**  > **Avanzate**.
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 

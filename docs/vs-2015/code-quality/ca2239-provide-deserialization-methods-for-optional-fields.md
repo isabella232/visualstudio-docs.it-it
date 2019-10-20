@@ -1,5 +1,5 @@
 ---
-title: 'CA2239: Fornire metodi di deserializzazione per i campi facoltativi | Microsoft Docs'
+title: 'CA2239: fornire metodi di deserializzazione per i campi facoltativi | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - CA2239
 ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5bfb682e3b2220a6eb68e7f225e147b8106c3e7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5604b697af1716e918f3a0f6d9a26ddbe70fc0b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201524"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672966"
 ---
-# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Specificare metodi di deserializzazione per i campi facoltativi
+# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Fornire metodi di deserializzazione per i campi facoltativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
-|Category|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo ha un campo contrassegnato con il <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> attributo e il tipo non fornisce i metodi di gestione degli eventi di deserializzazione.
+ Un tipo dispone di un campo contrassegnato con l'attributo <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> e il tipo non fornisce metodi di gestione degli eventi di deserializzazione.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il <xref:System.Runtime.Serialization.OptionalFieldAttribute> attributo non ha alcun effetto sulla serializzazione; viene serializzato un campo contrassegnato con l'attributo. Tuttavia, il campo viene ignorato durante la deserializzazione e mantiene il valore predefinito associato al relativo tipo. I gestori di eventi di deserializzazione devono essere dichiarati per impostare il campo durante il processo di deserializzazione.
+ L'attributo <xref:System.Runtime.Serialization.OptionalFieldAttribute> non ha alcun effetto sulla serializzazione; un campo contrassegnato con l'attributo viene serializzato. Tuttavia, il campo viene ignorato in caso di deserializzazione e mantiene il valore predefinito associato al relativo tipo. I gestori eventi di deserializzazione devono essere dichiarati per impostare il campo durante il processo di deserializzazione.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere i metodi per il tipo di gestione degli eventi di deserializzazione.
+ Per correggere una violazione di questa regola, aggiungere metodi di gestione degli eventi di deserializzazione al tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se il campo deve essere ignorato durante il processo di deserializzazione.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo con un campo facoltativo e un evento di deserializzazione metodi di gestione.
+ Nell'esempio seguente viene illustrato un tipo con un campo facoltativo e i metodi di gestione degli eventi di deserializzazione.
 
  [!code-csharp[FxCop.Usage.OptionalFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OptionalFields/cs/FxCop.Usage.OptionalFields.cs#1)]
  [!code-vb[FxCop.Usage.OptionalFields#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.OptionalFields/vb/FxCop.Usage.OptionalFields.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2236: Chiamare metodi della classe di base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Chiamare metodi della classe base su tipi ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementare ISerializable in modo corretto](../code-quality/ca2240-implement-iserializable-correctly.md)
 

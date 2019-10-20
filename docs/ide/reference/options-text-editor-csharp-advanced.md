@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811830"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666283"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
-Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **C#** > **Avanzate**.
+Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** e quindi scegliere **Editor di testo** > **C#**  > **Avanzate**.
 
 > [!NOTE]
 > È possibile che non tutte le opzioni siano elencate.
@@ -118,7 +118,7 @@ Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di format
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 
-Selezionare queste caselle di controllo per visualizzare linee verticali punteggiate tra parentesi graffe (**{}**) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
+Selezionare queste caselle di controllo per visualizzare linee verticali punteggiate tra parentesi graffe ( **{}** ) nel codice. È quindi possibile visualizzare facilmente singoli blocchi di codice per i costrutti a livello di dichiarazione e a livello di codice.
 
 ## <a name="editor-help"></a>Guida Editor
 

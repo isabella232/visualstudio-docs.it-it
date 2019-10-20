@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448992"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649514"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -24,7 +24,7 @@ ms.locfileid: "72448992"
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Creare un set di regole personalizzato da un set di regole esistente
 
-Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola @ no__t-0per esempio, viene visualizzato un avviso o un errore.
+Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola &mdash;for esempio, viene visualizzato un avviso o un errore.
 
 1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 

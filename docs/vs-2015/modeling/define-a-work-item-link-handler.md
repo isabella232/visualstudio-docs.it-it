@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871905"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669927"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definire un gestore dei collegamenti agli elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,10 +84,10 @@ ms.locfileid: "68871905"
 
  `System.Drawing`-usato dal codice di esempio
 
- Se non è possibile trovare uno di questi riferimenti nella scheda **.NET** della finestra di dialogo **Aggiungi riferimento** , utilizzare la scheda Sfoglia per trovarla in \Programmi\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies\\.
+ Se non è possibile trovare uno di questi riferimenti nella scheda **.NET** della finestra di dialogo **Aggiungi riferimento** , utilizzare la scheda Sfoglia per trovarla in \Programmi\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\.
 
 ### <a name="import-the-work-item-namespace"></a>Importare lo spazio dei nomi dell'elemento di lavoro
- Nei **riferimenti**del progettoaggiungereriferimentiagliassembly[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seguenti:
+ Nei **riferimenti**del progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiungere riferimenti agli assembly seguenti:
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-     **Risoluzione dei problemi**: Se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non viene avviato, verificare che il progetto VSIX sia impostato come progetto di avvio della soluzione.
+     **Risoluzione dei problemi**: se non viene avviata una nuova [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.
 
 2. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.
 
@@ -180,7 +180,7 @@ namespace WorkItems
 
 7. Verificare che l'elemento di lavoro sia ora visualizzato in rosso. Ciò dimostra `OnWorkItemLinked()` nel codice di esempio.
 
-     **Risoluzione dei problemi**: Se i metodi del gestore non sono stati eseguiti, verificare che:
+     **Risoluzione dei problemi**: se i metodi del gestore non sono stati eseguiti, verificare che:
 
     - Il progetto di libreria di classi viene elencato come componente MEF nell'elenco di **contenuto** in **source. Extensions. manifest** nel progetto VSIX.
 

@@ -2,17 +2,17 @@
 title: Generare un campo, una proprietà, una variabile locale
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8373339f921c032e52c00b5c8a54e910e5a1c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 626138341e398e67ff41ea116729dd349a1bb044
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790395"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660016"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generare un campo, una proprietà o una variabile locale in Visual Studio
 
@@ -26,7 +26,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si introduce un nuovo campo, proprietà o elemento locale durante la digitazione e si vuole dichiararlo in modo corretto, automaticamente.
 
-**Perché?:** si potrebbe dichiarare il campo, la proprietà o l'elemento locale prima dell'uso, tuttavia questa funzionalità genera la dichiarazione e il tipo automaticamente.
+**Perché:** si potrebbe dichiarare il campo, la proprietà o l'elemento locale prima dell'uso, tuttavia questa funzionalità genera la dichiarazione e il tipo automaticamente.
 
 ## <a name="how-to"></a>Procedura
 
@@ -43,11 +43,11 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione di campo/proprietà/elemento locale](media/field-preview-cs.png)
 

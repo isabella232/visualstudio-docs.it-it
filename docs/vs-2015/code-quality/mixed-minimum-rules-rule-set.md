@@ -1,25 +1,25 @@
 ---
-title: Set di regole minime miste regole | Microsoft Docs
+title: Set di regole minime miste | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682199"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654867"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lo stato attivo di regole minime miste Microsoft ai problemi più critici dei progetti C++ che supportano Common Language Runtime, incluse potenziali lacune nella protezione e arresti anomali delle applicazioni. È necessario includere questo set di regole nel set di regole personalizzati creati per i progetti C++ che supportano Common Language Runtime.  
+Le regole minime miste Microsoft si concentrano sui problemi più C++ critici nei progetti che supportano Common Language Runtime, inclusi potenziali problemi di sicurezza e arresti anomali dell'applicazione. È necessario includere questo set di regole in qualsiasi set di regole personalizzato creato per C++ i progetti che supportano Common Language Runtime.
 
 |                                            Regola                                             |                                                  Descrizione                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ Lo stato attivo di regole minime miste Microsoft ai problemi più critici dei pr
 |        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Parametro stringa dimensioni non valido                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Percorso irraggiungibile stringa dimensioni non valida                                    |
 |        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Tipo buffer stringa dimensioni non valido                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
+|                              [C6527](../code-quality/c6527.md)                              |              Annotazione non valida: la proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Stile stringa formato non riconosciuto                                        |
 |                              [C6540](../code-quality/c6540.md)                              | L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec  |
 |                              [C6551](../code-quality/c6551.md)                              |                              Specifica di dimensione non valida: espressione non analizzabile                              |
@@ -101,7 +101,7 @@ Lo stato attivo di regole minime miste Microsoft ai problemi più critici dei pr
 |                             [C28215](../code-quality/c28215.md)                             |                    Impossibile applicare typefix a un parametro che già dispone di un typefix                    |
 |                             [C28216](../code-quality/c28216.md)                             |        L'annotazione checkReturn si applica soltanto a postcondizioni per il parametro di funzione specifico.         |
 |                             [C28217](../code-quality/c28217.md)                             |            Per la funzione, il numero di parametri per l'annotazione non corrisponde a quello trovato nel file             |
-|                             [C28218](../code-quality/c28218.md)                             |             Per il parametro di funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file              |
+|                             [C28218](../code-quality/c28218.md)                             |             Per il parametro della funzione, il parametro dell'annotazione non corrisponde a quello trovato nel file              |
 |                             [C28219](../code-quality/c28219.md)                             |                 Membro di enumerazione previsto per l'annotazione del parametro nell'annotazione                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  Espressione integer prevista per l'annotazione del parametro nell'annotazione                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        Prevista espressione di tipo String per il parametro nell'annotazione                         |

@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 782d5da27898de7a332824e6fb07842710ab0656
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871836"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669661"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Esportare diagrammi UML nei file di immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "68871836"
  Il codice seguente definisce un comando di menu di scelta rapida, che salva un'immagine in un file.
 
 > [!NOTE]
-> Per correggere questo codice come un comando di menu, è necessario includerlo in un componente MEF. Per altre informazioni, vedere [definire un comando di menu in un diagramma](../modeling/define-a-menu-command-on-a-modeling-diagram.md)di modellazione.
+> Per correggere questo codice come un comando di menu, è necessario includerlo in un componente MEF. Per altre informazioni, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
- Il codice USA innanzitutto [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) per ottenere l' <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> oggetto dell'implementazione sottostante. Questo tipo dispone di un metodo <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
+ Il codice USA innanzitutto [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) per ottenere la <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> dell'implementazione sottostante. Questo tipo dispone di un metodo <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
 
 ```
 namespace SaveToImage
@@ -142,4 +142,4 @@ namespace SaveToImage
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md) [Definire un comando di menu in un diagramma](../modeling/define-a-menu-command-on-a-modeling-diagram.md) di modellazione
+ [Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md) [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

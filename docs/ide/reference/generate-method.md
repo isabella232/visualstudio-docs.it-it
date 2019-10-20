@@ -2,17 +2,17 @@
 title: Generare un metodo
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d815b638033e16796c90a362207b820bfe7cc57d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c85e3f849d7d74f326c1cf330b0e2c338d78fc6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794854"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668337"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generare un metodo in Visual Studio
 
@@ -26,7 +26,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si introduce un nuovo metodo e si vuole dichiararlo in modo corretto, automaticamente.
 
-**Perché?:** è possibile dichiarare il metodo e i parametri prima dell'uso, ma questa funzionalità genera la dichiarazione automaticamente.
+**Perché:** si potrebbero dichiarare il metodo e i parametri prima dell'uso, tuttavia questa funzionalità genera la dichiarazione automaticamente.
 
 ## <a name="how-to"></a>Procedura
 
@@ -43,11 +43,11 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
       ![Anteprima della generazione del metodo](media/method-preview-cs.png)
 

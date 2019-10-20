@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 139833cc427349cb0fd820877c8cad101a647c81
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925605"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648401"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.
@@ -106,7 +106,7 @@ Oltre a controllare i valori durante le modifiche, è anche possibile convalidar
 
     Per i progetti C#:
 
-    Poiché C# i progetti non generano automaticamente i gestori eventi, è possibile utilizzare IntelliSense per creare il `UpdateCLASSNAME` metodo parziale. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento per la classe in cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un `UpdateCLASSNAME` metodo parziale:
+    Poiché C# i progetti non generano automaticamente i gestori eventi, è possibile utilizzare IntelliSense per creare il metodo di `UpdateCLASSNAME` parziale. Digitare `partial` e uno spazio per accedere all'elenco dei metodi parziali disponibili. Fare clic sul metodo di aggiornamento per la classe in cui si desidera aggiungere la convalida. Il codice seguente è simile al codice generato quando si seleziona un `UpdateCLASSNAME` metodo parziale:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

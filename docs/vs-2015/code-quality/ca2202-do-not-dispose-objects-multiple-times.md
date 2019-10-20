@@ -1,5 +1,5 @@
 ---
-title: 'CA2202: Non eliminare oggetti più volte | Microsoft Docs'
+title: 'CA2202: non eliminare oggetti più volte | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,45 +12,45 @@ helpviewer_keywords:
 - CA2202
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3dfe606e3083c937db3ba3d1e6cd49d34bace853
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e0be715d8aea84fac53ea2a796e71850b961730c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697978"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667396"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Non eliminare gli oggetti più volte
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Non eliminare oggetti più volte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DoNotDisposeObjectsMultipleTimes|
 |CheckId|CA2202|
-|Category|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un'implementazione del metodo contiene percorsi di codice che potrebbero comportare più chiamate a <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> o un equivalente di Dispose, ad esempio un metodo Close () su alcuni tipi, sullo stesso oggetto.
+ Un'implementazione di metodo contiene percorsi del codice che possono causare più chiamate a <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> o a un equivalente Dispose, ad esempio un metodo Close () su alcuni tipi, sullo stesso oggetto.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Oggetto implementato correttamente <xref:System.IDisposable.Dispose%2A> metodo può essere chiamato più volte senza generare un'eccezione. Tuttavia, non è garantita e per evitare di generare una <xref:System.ObjectDisposedException?displayProperty=fullName> non è necessario chiamare <xref:System.IDisposable.Dispose%2A> più di una volta su un oggetto.
+ Un metodo di <xref:System.IDisposable.Dispose%2A> implementato correttamente può essere chiamato più volte senza generare un'eccezione. Tuttavia, ciò non è garantito e per evitare la generazione di un <xref:System.ObjectDisposedException?displayProperty=fullName> non è consigliabile chiamare <xref:System.IDisposable.Dispose%2A> più di una volta in un oggetto.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA2000: Eliminare gli oggetti prima di perdere l'ambito](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare quindi vale indipendentemente dal fatto che l'implementazione del percorso di codice, <xref:System.IDisposable.Dispose%2A> viene chiamato solo una volta per l'oggetto.
+ Per correggere una violazione di questa regola, modificare l'implementazione in modo che, indipendentemente dal percorso del codice, <xref:System.IDisposable.Dispose%2A> venga chiamato una sola volta per l'oggetto.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Anche se <xref:System.IDisposable.Dispose%2A> per l'oggetto è noto per essere chiamato in modo sicuro più volte, l'implementazione potrà cambiare in futuro.
+ Non escludere un avviso da questa regola. Anche se <xref:System.IDisposable.Dispose%2A> per l'oggetto è noto come chiamabile in modo sicuro più volte, l'implementazione potrebbe cambiare in futuro.
 
 ## <a name="example"></a>Esempio
- Annidato `using` istruzioni (`Using` in Visual Basic) possono provocare violazioni dell'avviso CA2202. Se la risorsa di IDisposable di interna annidata `using` istruzione contiene la risorsa di esterna `using` istruzione, il `Dispose` metodo della risorsa annidata rilascia la risorsa contenuta. Quando si verifica questa situazione, il `Dispose` metodo di esterna `using` istruzione tenta di eliminare la propria risorsa per la seconda volta.
+ Le istruzioni `using` annidate (`Using` in Visual Basic) possono causare violazioni dell'avviso CA2202. Se la risorsa IDisposable dell'istruzione `using` interna nidificata contiene la risorsa dell'istruzione `using` esterna, il metodo `Dispose` della risorsa nidificata rilascia la risorsa contenuta. Quando si verifica questa situazione, il metodo `Dispose` dell'istruzione `using` esterna tenta di eliminare la risorsa per la seconda volta.
 
- Nell'esempio seguente, un <xref:System.IO.Stream> oggetto che viene creato in un outer utilizzando l'istruzione viene rilasciato alla fine della parte interna usando l'istruzione nel metodo Dispose della <xref:System.IO.StreamWriter> oggetto che contiene il `stream` oggetto. Alla fine di esterna `using` istruzione, il `stream` oggetto viene rilasciato una seconda volta. Il secondo rilascio costituisce una violazione del CA2202.
+ Nell'esempio seguente, un oggetto <xref:System.IO.Stream> creato in un'istruzione using esterna viene rilasciato alla fine dell'istruzione using interna nel metodo Dispose dell'oggetto <xref:System.IO.StreamWriter> che contiene l'oggetto `stream`. Alla fine dell'istruzione `using` esterna, l'oggetto `stream` viene rilasciato una seconda volta. La seconda versione è una violazione di CA2202.
 
 ```
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
@@ -63,7 +63,7 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
 ```
 
 ## <a name="example"></a>Esempio
- Per risolvere questo problema, usare una `try` / `finally` blocco anziché esterna `using` istruzione. Nel `finally` blocco, assicurarsi che il `stream` risorsa non è null.
+ Per risolvere questo problema, utilizzare un `try` / blocco `finally` anziché l'istruzione `using` esterna. Nel blocco `finally` assicurarsi che la risorsa `stream` non sia null.
 
 ```
 Stream stream = null;
@@ -84,4 +84,4 @@ finally
 ```
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.IDisposable?displayProperty=fullName> [Criterio Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [modello Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb) <xref:System.IDisposable?displayProperty=fullName>

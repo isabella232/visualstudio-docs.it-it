@@ -1,5 +1,5 @@
 ---
-title: 'CA1017: Contrassegnare gli assembly con ComVisibleAttribute | Microsoft Docs'
+title: 'CA1017: contrassegnare gli assembly con ComVisibleAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1017
 ms.assetid: 4842cb49-8dd8-4e5d-a2d6-ceeaf6c6cf8e
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ccd9de3f93ff08952c3a8d53423cb4f6d6261cb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 505e5780b8a50113aaf98ea7dbac767d280bebb6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704213"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662063"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Contrassegnare gli assembly con ComVisibleAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "65704213"
 |-|-|
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
-|Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. Design|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un assembly non dispone di <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> applicato l'attributo.
+ A un assembly non è applicato l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il <xref:System.Runtime.InteropServices.ComVisibleAttribute> attributo determina come i client COM accedono al codice gestito. In una buona progettazione gli assembly devono indicare in modo esplicito la visibilità COM. Visibilità COM può essere impostata per un intero assembly e quindi eseguirne l'override per singoli tipi e membri dei tipi. Se l'attributo non è presente, il contenuto dell'assembly è visibile ai client COM.
+ L'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> determina il modo in cui i client COM accedono al codice gestito. In una buona progettazione gli assembly devono indicare in modo esplicito la visibilità COM. È possibile impostare la visibilità COM per un intero assembly e quindi eseguirne l'override per i singoli tipi e membri dei tipi. Se l'attributo non è presente, il contenuto dell'assembly è visibile ai client COM.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, aggiungere l'attributo all'assembly. Se non si desidera che l'assembly sia visibile ai client COM, applicare l'attributo e impostarne il valore su `false`.
@@ -45,7 +45,7 @@ ms.locfileid: "65704213"
  Non escludere un avviso da questa regola. Se si desidera che l'assembly sia visibile, applicare l'attributo e impostarne il valore su `true`.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra un assembly avente il <xref:System.Runtime.InteropServices.ComVisibleAttribute> attributo applicato per impedire che sia visibile ai client COM.
+ Nell'esempio seguente viene illustrato un assembly a cui è applicato l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> per impedire che venga visualizzato ai client COM.
 
  [!code-cpp[FxCop.Design.AssembliesCom#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCom/cpp/FxCop.Design.AssembliesCom.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesCom#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesCom/cs/FxCop.Design.AssembliesCom.cs#1)]

@@ -13,19 +13,19 @@ f1_keywords:
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b555ede6ecf406f98c2e1ae9384b61664e8226cf
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: 8947f6e2fee2b8615c750b770ac3b0dea85bb991
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67260418"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666301"
 ---
-# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Finestra di dialogo Opzioni: Editor di testo \> C# \> Stile codice \> Formattazione
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Finestra di dialogo Opzioni: editor di C# testo \> \> stile di codice \> formattazione
 
 Usare la pagina di opzioni **Formattazione** e le relative pagine secondarie ([**Rientro**](#indentation-page), **Nuove righe**, **Spaziatura** e **Ritorno a capo**) per impostare le opzioni di formattazione del codice nell'editor del codice.
 
@@ -40,7 +40,7 @@ Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** d
 
 Queste impostazioni influenzano *il momento in cui* l'editor del codice applica le opzioni di formattazione al codice.
 
-|Label|DESCRIZIONE|
+|Label|Descrizione|
 |-----------|-----------------|
 |**Formatta automaticamente durante la digitazione**|Quando questa opzione è deselezionata, le opzioni **Formatta automaticamente istruzione dopo :** e **Formatta automaticamente blocco dopo }** sono disabilitate.|
 |**Formatta automaticamente istruzione dopo ;**|Quando questa opzione è selezionata, le istruzioni vengono formattate al completamento in base alle opzioni di formattazione selezionate per l'editor.|
@@ -60,7 +60,7 @@ Se si è già utilizzato il comando **Formatta documento** per applicare imposta
 
 Queste impostazioni configurano il comando **Formatta documento** per eseguire una pulizia del codice aggiuntiva in un file. Per altre informazioni su come applicare queste impostazioni, vedere [Format Document command](../code-styles-and-code-cleanup.md#apply-code-styles) (Comando Formatta documento).
 
-|Label|DESCRIZIONE|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
+|Label|Descrizione|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
 |-----------|-----------------|-----------------|-----------------|
 |**Applica tutte le regole di formattazione di C# (rientro, ritorno a capo, spaziatura)**|Il comando **Formatta documento** corregge sempre i problemi di formattazione. Questa impostazione non può essere modificata.| [Opzioni di base di EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opzioni di formattazione di EditorConfig .NET](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Strumenti** > **Opzioni** > **Editor di testo** > **C#**  > **Formattazione**  > [**Rientro** oppure **Nuove righe** oppure **Spaziatura** oppure **Ritorno a capo**]|
 |**Esegui la pulizia aggiuntiva del codice durante la formattazione**|Se selezionata, applica le correzioni alle regole specificate di seguito nel comando **Edit.FormatDocument**.| N/D |

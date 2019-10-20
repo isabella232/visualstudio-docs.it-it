@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695928"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657996"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creazione di un'interfaccia utente usando Blend per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 ## <a name="Tools"></a> Panoramica del pannello Strumenti
  È possibile usare il pannello **Strumenti** in Blend per Visual Studio per creare e modificare oggetti nell'applicazione. Per creare oggetti, si seleziona lo strumento e si disegna sulla tavola da disegno con il mouse.
 
- ![Pannello Strumenti](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
+ ![Pannello strumenti](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
 |||||
 |-|-|-|-|
@@ -54,7 +54,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 |![](../designers/media/b1-5.png "B1_5")|**Strumenti per gli asset** Consente di accedere al pannello **Assets** e visualizzare l'ultimo asset usato nella libreria.|![Callout E](../designers/media/b5-label-e.png "b5_label_E")|**Controlli testo**|
 |||![Callout F](../designers/media/b5-label-f.png "b5_label_F")|**Controlli comuni**|
 
- **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [barra degli strumenti](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") (Configurare le funzionalità installate) [The Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4) (Barra degli strumenti).
 
 ## <a name="Assets"></a>Panoramica del pannello Asset
  Tutti i controlli sono disponibili nel pannello **Assets**, che è simile alla **Casella degli strumenti** in Visual Studio. Oltre ai controlli, nel pannello **Assets** è disponibile tutto ciò che può essere aggiunto alla tavola da disegno, inclusi gli stili, gli elementi multimediali, i comportamenti e gli effetti.
@@ -72,7 +72,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 ## <a name="Objects"></a> Panoramica del pannello Oggetti e sequenza temporale
  Usare questo pannello per organizzare gli oggetti nella tavola da disegno e, se si vuole, per animarli.
 
- ![Pannello Oggetti e sequenza temporale in modalità animazione](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![Pannello oggetto e sequenza temporale in modalità animazione](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
 |||
 |-|-|
@@ -120,7 +120,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 |                     ![Callout 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Cursore sfumatura** Viene visualizzato solo se è selezionato un pennello sfumato.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Mostra proprietà avanzate** Consente di visualizzare le categorie di proprietà che vengono usate meno.                                                                      |
 
- **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Pannello proprietà](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") (Configurare le funzionalità installate) [Properties panel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7) (Pannello Proprietà).
 
 ## <a name="see-also"></a>Vedere anche
- [Inserire i controlli e modificarne il comportamento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animare oggetti](../designers/animate-objects-in-xaml-designer.md) [disegnare forme e tracciati](../designers/draw-shapes-and-paths.md) [la progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+ [Inserire i controlli e modificarne il comportamento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animare gli oggetti](../designers/animate-objects-in-xaml-designer.md) [disegnare forme e percorsi](../designers/draw-shapes-and-paths.md) [progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1714: Le enumerazioni con Flags devono avere nomi plurali | Microsoft Docs'
+title: 'CA1714: le enumerazioni con Flags devono avere nomi plurali | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - FlagsEnumsShouldHavePluralNames
 ms.assetid: 95ef5b43-7681-49e9-a5a3-ac0357cf1be7
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bf0e75596bfc2b274f12d9b58d2718881931b7df
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ca3709411f50d0b65f33bb8eed6457cfd1325ff6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65700504"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669142"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Le enumerazioni con Flags devono avere nomi plurali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "65700504"
 |-|-|
 |TypeName|FlagsEnumsShouldHavePluralNames|
 |CheckId|CA1714|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un'enumerazione pubblica dispone di <xref:System.FlagsAttribute?displayProperty=fullName> e il nome non può finire in'.
+ Un'enumerazione pubblica ha il <xref:System.FlagsAttribute?displayProperty=fullName> e il nome non termina con ' s'.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Tipi contrassegnati con <xref:System.FlagsAttribute> avere nomi plurali perché l'attributo indica che è possibile specificare più valori. Ad esempio, un'enumerazione che definisce i giorni della settimana potrebbe essere destinata all'uso in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione deve avere il <xref:System.FlagsAttribute> e potrebbe essere denominata "Days". Un'enumerazione simile che consenta solo un singolo giorno specificare non include l'attributo e può essere chiamato 'Day'.
+ I tipi contrassegnati con <xref:System.FlagsAttribute> hanno nomi plurali perché l'attributo indica che è possibile specificare più di un valore. Ad esempio, un'enumerazione che definisce i giorni della settimana può essere usata in un'applicazione in cui è possibile specificare più giorni. Questa enumerazione deve avere il <xref:System.FlagsAttribute> e potrebbe essere denominata ' Days '. Un'enumerazione simile che consente di specificare solo un singolo giorno non avrà l'attributo e potrebbe essere chiamata ' Day '.
 
- Convenzioni di denominazione forniscono un aspetto comune per librerie destinate a common language runtime. In questo modo si riduce la curva di apprendimento che è necessario per le nuove librerie software e aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente con competenze nello sviluppo di codice gestito.
+ Le convenzioni di denominazione forniscono un aspetto comune per le librerie destinate al Common Language Runtime. In questo modo si riduce la curva di apprendimento necessaria per le nuove librerie software e si aumenta la fiducia dei clienti che la libreria è stata sviluppata da un utente esperto nello sviluppo di codice gestito.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Cambiare il nome dell'enumerazione di una parola plurale oppure rimuovere il <xref:System.FlagsAttribute> attributo se non è possibile specificare più valori di enumerazione.
+ Rendere il nome dell'enumerazione una parola plurale oppure rimuovere l'attributo <xref:System.FlagsAttribute> se non devono essere specificati contemporaneamente più valori di enumerazione.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare una violazione, se il nome è una parola plurale, ma non termina del '. Ad esempio, se l'enumerazione di più giorni che è stato descritto in precedenza erano denominata "DaysOfTheWeek", questa violerebbe la logica della regola, ma non lo scopo. Le violazioni di questo tipo devono essere escluse.
+ È possibile evitare una violazione se il nome è una parola plurale ma non termina con ' s'. Se, ad esempio, l'enumerazione di più giorni descritta in precedenza era denominata ' DaysOfTheWeek ', ciò violerebbe la logica della regola, ma non l'intento. Tali violazioni devono essere evitate.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA1027: Contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
@@ -52,4 +52,4 @@ ms.locfileid: "65700504"
  [CA2217: Non contrassegnare le enumerazioni con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.FlagsAttribute?displayProperty=fullName> [Progettazione di enum](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
+ Progettazione di <xref:System.FlagsAttribute?displayProperty=fullName> [enum](https://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
