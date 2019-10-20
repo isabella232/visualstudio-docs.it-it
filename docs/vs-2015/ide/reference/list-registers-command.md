@@ -12,59 +12,53 @@ helpviewer_keywords:
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199130"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659506"
 ---
 # <a name="list-registers-command"></a>Comando Elenca registri
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Consente di visualizzare il valore dei registri selezionati e di modificare l'elenco dei registri da visualizzare.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]  
-[/Watch [{register|registerGroup}...]]  
-[/Unwatch [{register|registerGroup}...]]  
-```  
-  
-## <a name="switches"></a>Opzioni  
- /Display [{`register`&#124;`registerGroup`}...]  
- Consente di visualizzare i valori dell'oggetto `register` o `registerGroup` specificato. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Ad esempio:  
-  
- `Debug.ListRegisters /Display eax`  
-  
- equivale a  
-  
- `Debug.ListRegisters eax`  
-  
- /List  
- Consente di visualizzare tutti i gruppi di registri nell'elenco.  
-  
- /Watch [{`register`&#124;`registerGroup`}...]  
- Aggiunge uno o più valori `register` o `registerGroup` all'elenco.  
-  
- /Unwatch [{`register`&#124;`registerGroup`}...]  
- Rimuove uno o più valori `register` o `registerGroup` dall'elenco.  
-  
-## <a name="remarks"></a>Note  
- L'alias `r` può essere usato al posto di `Debug.ListRegisters`.  
-  
-## <a name="example"></a>Esempio  
- In questo esempio viene usato l'alias di `Debug.ListRegisters` `r` per visualizzare i valori del gruppo di registri `Flags`.  
-  
-```  
-r /Display Flags  
-```  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visual Studio Commands](../../ide/reference/visual-studio-commands.md)  (Comandi di Visual Studio)  
- [Informazioni di base sul debug: Finestra registri](../../debugger/debugging-basics-registers-window.md)   
- [Procedura: Usare la finestra Registri](../../debugger/how-to-use-the-registers-window.md)
+Consente di visualizzare il valore dei registri selezionati e di modificare l'elenco dei registri da visualizzare.
+
+## <a name="syntax"></a>Sintassi
+
+```
+Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
+[/Watch [{register|registerGroup}...]]
+[/Unwatch [{register|registerGroup}...]]
+```
+
+## <a name="switches"></a>Opzioni
+ /Display [{`register`&#124; `registerGroup`}...] Consente di visualizzare i valori del `register` o `registerGroup` specificati. Se non è stato specificato alcun oggetto `register` o `registerGroup`, viene visualizzato l'elenco predefinito dei registri. Se non viene specificata alcuna opzione, il comportamento è lo stesso. Esempio:
+
+ `Debug.ListRegisters /Display eax`
+
+ equivale a
+
+ `Debug.ListRegisters eax`
+
+ /List Visualizza tutti i gruppi di registrazione nell'elenco.
+
+ /Watch [{`register`&#124; `registerGroup`}...] Aggiunge uno o più valori `register` o `registerGroup` all'elenco.
+
+ /Unwatch [{`register`&#124; `registerGroup`}...] Rimuove uno o più valori `register` o `registerGroup` dall'elenco.
+
+## <a name="remarks"></a>Note
+ L'alias `r` può essere usato al posto di `Debug.ListRegisters`.
+
+## <a name="example"></a>Esempio
+ In questo esempio viene usato l'alias di `Debug.ListRegisters` `r` per visualizzare i valori del gruppo di registri `Flags`.
+
+```
+r /Display Flags
+```
+
+## <a name="see-also"></a>Vedere anche
+ Cenni preliminari sul debug dei [comandi di Visual Studio](../../ide/reference/visual-studio-commands.md) [: finestra registri](../../debugger/debugging-basics-registers-window.md) [procedura: usare la finestra registri](../../debugger/how-to-use-the-registers-window.md)

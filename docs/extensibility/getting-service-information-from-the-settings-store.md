@@ -1,5 +1,5 @@
 ---
-title: Recupero di informazioni sul servizio da Store le impostazioni | Microsoft Docs
+title: Recupero delle informazioni sul servizio dall'archivio impostazioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,32 +8,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f65fe81d1b2382df3847c2cfdc0b8ffbfff5662
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 51aa0369793fe5dc4b39fe510c069a7ec93d102a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342430"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647971"
 ---
-# <a name="get-service-information-from-the-settings-store"></a>Ottenere informazioni sul servizio dall'archivio delle impostazioni
-È possibile usare l'archivio delle impostazioni per trovare tutti i servizi disponibili o per determinare se è installato un particolare servizio. È necessario conoscere il tipo della classe del servizio.
+# <a name="get-service-information-from-the-settings-store"></a>Ottenere informazioni sul servizio dall'archivio impostazioni
+È possibile utilizzare l'archivio impostazioni per trovare tutti i servizi disponibili o per determinare se un particolare servizio è installato. È necessario essere a conoscenza del tipo di classe del servizio.
 
 ## <a name="to-list-the-available-services"></a>Per elencare i servizi disponibili
 
-1. Creare un progetto VSIX denominato `FindServicesExtension` e quindi aggiungere un comando personalizzato denominato `FindServicesCommand`. Per altre informazioni su come creare un comando personalizzato, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Creare un progetto VSIX denominato `FindServicesExtension`, quindi aggiungere un comando personalizzato denominato `FindServicesCommand`. Per altre informazioni su come creare un comando personalizzato, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. Nelle *FindServicesCommand.cs*, aggiungere quanto segue usando istruzioni:
+2. In *FindServicesCommand.cs*aggiungere le direttive using seguenti:
 
-    ```vb
+    ```csharp
     using System.Collections.Generic;
     using Microsoft.VisualStudio.Settings;
     using Microsoft.VisualStudio.Shell.Settings;
     using System.Windows.Forms;
     ```
 
-3. Ottenere l'archivio delle impostazioni di configurazione, quindi trovare la Sottoraccolta servizi denominato. Questa raccolta include tutti i servizi disponibili. Nel `MenuItemCommand` (metodo), rimuovere il codice esistente e sostituirlo con quanto segue:
+3. Ottenere l'archivio delle impostazioni di configurazione, quindi trovare la sottoraccolta denominata Services. Questa raccolta include tutti i servizi disponibili. Nel metodo `MenuItemCommand` rimuovere il codice esistente e sostituirlo con quanto segue:
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -52,18 +52,18 @@ ms.locfileid: "66342430"
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.
 
-5. Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **FindServicesCommand richiamare**.
+5. Nell'istanza sperimentale, scegliere **richiama FindServicesCommand**dal menu **strumenti** .
 
-     Dovrebbe elencare tutti i servizi di una finestra di messaggio.
+     Verrà visualizzata una finestra di messaggio in cui sono elencati tutti i servizi.
 
-     Per verificare queste impostazioni, è possibile usare l'editor del Registro di sistema.
+     Per verificare queste impostazioni, è possibile usare l'editor del registro di sistema.
 
 ## <a name="find-a-specific-service"></a>Trovare un servizio specifico
- È anche possibile usare il <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> metodo per determinare se è installato un particolare servizio. È necessario conoscere il tipo della classe del servizio.
+ È anche possibile usare il metodo <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> per determinare se un particolare servizio è installato. È necessario essere a conoscenza del tipo di classe del servizio.
 
-1. In MenuItemCallback del progetto è stato creato nella procedura precedente, eseguire la ricerca dell'archivio delle impostazioni di configurazione per il `Services` raccolta che include la Sottoraccolta denominato dal GUID del servizio. In questo caso verrà cercato il servizio della Guida.
+1. Nella MenuItemCallback del progetto creato nella procedura precedente, cercare nell'archivio impostazioni di configurazione la raccolta `Services` che include la sottoraccolta denominata dal GUID del servizio. In questo caso verrà cercato il servizio della guida.
 
-    ```
+    ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
     {
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);
@@ -78,6 +78,6 @@ ms.locfileid: "66342430"
 
 2. Compilare il progetto e avviare il debug.
 
-3. Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **FindServicesCommand richiamare**.
+3. Nell'istanza sperimentale, scegliere **richiama FindServicesCommand**dal menu **strumenti** .
 
-     Verrà visualizzato un messaggio con il testo **della Guida servizio disponibili:** seguito da **True** oppure **False**. Per verificare questa impostazione, è possibile usare un editor del Registro di sistema, come illustrato nei passaggi precedenti.
+     Verrà visualizzato un messaggio con il servizio di **Guida del testo disponibile:** seguito da **true** o **false**. Per verificare questa impostazione, è possibile utilizzare un editor del registro di sistema, come illustrato nei passaggi precedenti.

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 13a3c16adca29128be275495fe8921895aa84250
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328847"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647218"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -58,21 +58,21 @@ I metodi di estensione usano un'icona diversa rispetto ai metodi di istanza. Per
 
 I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense usando dei filtri. In C# vengono filtrati gli elenchi di completamento disponibili per le voci riportate di seguito:
 
-- **Interfacce e classi di base**: Vengono rimosse le voci dagli elenchi di completamento IntelliSense per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi di base dall'elenco di completamento perché C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.
+- **Interfacce e classi di base**: IntelliSense rimuove automaticamente le voci dagli elenchi di completamento per interfacce e classi base, sia negli elenchi di interfacce e di dichiarazioni di classe base sia negli elenchi di vincoli. Le enumerazioni, ad esempio, non vengono visualizzate nell'elenco di completamento delle classi base perché non possono essere usate per tali classi. L'elenco di completamento delle classi base contiene solo interfacce e spazi dei nomi. Se si seleziona una voce nell'elenco e si digita una virgola, IntelliSense rimuove le classi di base dall'elenco di completamento perché C# non supporta l'ereditarietà multipla. Lo stesso comportamento si verifica anche per le clausole di vincoli.
 
-- **Attributi**: Quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo quei tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.
+- **Attributi**: quando si applica un attributo a un tipo, l'elenco di completamento viene filtrato in modo da contenere solo i tipi che discendono dagli spazi dei nomi contenenti tali tipi, ad esempio <xref:System.Attribute>.
 
 - **Clausole catch**
 
-- **Inizializzatori di oggetti**: Solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.
+- **Inizializzatori di oggetto**: solo i membri che possono essere inizializzati verranno visualizzati nell'elenco di completamento.
 
-- **Parola chiave new**: Quando si digita `new` e poi si preme la **Barra spaziatrice**, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.
+- **Nuova parola chiave**: quando si digita `new` e si preme la **BARRA SPAZIATRICE**, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Per le dichiarazioni e per le istruzioni return nei metodi, ad esempio, vengono selezionate automaticamente delle voci nell'elenco di completamento.
 
-- **Parola chiave enum**: Quando si preme la **Barra spaziatrice** dopo il segno di uguale per un'assegnazione enum, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Dopo aver digitato la parola chiave return e quando si crea una dichiarazione, ad esempio, le voci nell'elenco di completamento vengono selezionate automaticamente.
+- **Parola chiave di enumerazione**: quando si preme la **BARRA SPAZIATRICE** dopo il segno di uguale per un'assegnazione di enumerazione, viene visualizzato un elenco di completamento. In base al contesto del codice, viene selezionata automaticamente una voce nell'elenco. Dopo aver digitato la parola chiave return e quando si crea una dichiarazione, ad esempio, le voci nell'elenco di completamento vengono selezionate automaticamente.
 
-- **Operatori as e is**: Quando si preme la **Barra spaziatrice** dopo aver digitato la parola chiave `as` o `is`, viene visualizzato automaticamente un elenco di completamento.
+- **Operatori as e is**: quando si preme la **BARRA SPAZIATRICE** dopo aver digitato la parola chiave `as` o `is` viene visualizzato automaticamente un elenco di completamento filtrato.
 
-- **Eventi**: Quando si digita la parola chiave `event` l'elenco di completamento contiene solo tipi delegati.
+- **Eventi**: quando si digita la parola chiave `event` l'elenco di completamento contiene solo tipi delegati.
 
 - Il **parametro help** consente di ordinare automaticamente il primo overload di metodo corrispondente ai parametri immessi. Se sono disponibili più overload di metodi, è possibile usare le frecce verso l'alto e verso il basso per selezionare il successivo overload possibile in elenco.
 
@@ -80,7 +80,7 @@ I membri non necessari vengono rimossi dall'elenco di completamento IntelliSense
 
 IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. Al successivo utilizzo di **Elenco membri**, i membri usati di recente vengono visualizzati nella parte superiore. La cronologia dei membri usati più di recente viene cancellata tra ogni sessione di Visual Studio.
 
-### <a name="override"></a>override
+### <a name="override"></a>ignora
 
 Quando si digita [override](/dotnet/csharp/language-reference/keywords/override) e si preme la **BARRA SPAZIATRICE**, IntelliSense visualizza in una casella dell'elenco popup tutti i membri validi della classe di base di cui è possibile eseguire l'override. Se si digita il tipo restituito del metodo dopo `override`, IntelliSense mostra solo i metodi che restituiscono lo stesso tipo. Se non vengono trovate corrispondenze, IntelliSense visualizza tutti i membri della classe di base.
 
@@ -114,7 +114,7 @@ Il comando Implementa interfaccia genera il numero minimo di stub di metodo nece
 
 IntelliSense offre un'opzione che consente di implementare automaticamente i membri di una classe di base astratta mentre si usa l'editor del codice. Per implementare i membri di una classe base astratta è in genere necessario creare una nuova definizione di metodo per ciascun metodo della classe base astratta nella classe derivata. Usando IntelliSense, dopo aver digitato il nome di una classe di base astratta in una dichiarazione di classe, viene visualizzata la lampadina delle **Azioni rapide**. La lampadina offre la possibilità di implementare automaticamente i metodi della classe di base.
 
-Gli stub di metodo generati con la funzionalità **Implementare una classe di base astratta** vengono modellati in base al frammento di codice definito nel file *MethodStub.snippet*. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
+Gli stub di metodo generati con la funzionalità **Implementare una classe di base astratta** vengono modellati in base al frammento di codice definito nel file *MethodStub.snippet*. I frammenti di codice sono modificabili. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generazione dall'utilizzo
 

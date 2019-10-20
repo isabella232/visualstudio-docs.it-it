@@ -2,17 +2,17 @@
 title: Suggerimenti per migliorare le prestazioni
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581783"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647146"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -88,7 +88,7 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     Visual Studio esegue l'analisi dell'intera soluzione per fornire un'esperienza completa di verifica degli errori prima di richiamare una compilazione. Questa funzionalità è utile per identificare gli errori il più presto possibile. In caso di soluzioni di grandi dimensioni, questa funzionalità può tuttavia richiedere un maggiore utilizzo delle risorse di memoria. In caso di memoria insufficiente o di problemi analoghi, è possibile disabilitare questa funzionalità per liberare risorse. Per impostazione predefinita, questa opzione è abilitata per Visual Basic ed è disabilitata per C#.
 
-    Per disabilitare l'**analisi della soluzione completa**, scegliere **Strumenti** > **Opzioni** > **Editor di testo**, quindi selezionare **Visual Basic** o **C#**. Scegliere **Avanzate** e deselezionare **Abilita analisi della soluzione completa**.
+    Per disabilitare l'**analisi della soluzione completa**, scegliere **Strumenti** > **Opzioni** > **Editor di testo**, quindi selezionare **Visual Basic** o **C#** . Scegliere **Avanzate** e deselezionare **Abilita analisi della soluzione completa**.
 
 - **Disabilitare CodeLens**
 

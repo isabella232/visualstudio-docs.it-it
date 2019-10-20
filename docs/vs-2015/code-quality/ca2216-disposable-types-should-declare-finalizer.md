@@ -1,5 +1,5 @@
 ---
-title: 'CA2216: I tipi Disposable devono dichiarare un finalizzatore | Microsoft Docs'
+title: 'CA2216: i tipi Disposable devono dichiarare Finalizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,31 +12,31 @@ helpviewer_keywords:
 - DisposableTypesShouldDeclareFinalizer
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8a033dbb152542e528b32e26f35a7d63dba30891
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 082afacba1ccf4c982e5ddceec37d2a1567efd7a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681174"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651655"
 ---
-# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: I tipi eliminabili devono dichiarare un finalizzatore
+# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: I tipi Disposable devono dichiarare un finalizzatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
-|Category|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName>e include campi che suggeriscono l'utilizzo delle risorse non gestite, non implementa un finalizzatore, come descritto dalla <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+ Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> e dispone di campi che suggeriscono l'uso di risorse non gestite, non implementa un finalizzatore come descritto da <xref:System.Object.Finalize%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una violazione di questa regola viene segnalata se il tipo disposable contiene i campi dei tipi seguenti:
+ Una violazione di questa regola viene segnalata se il tipo Disposable contiene campi dei tipi seguenti:
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -45,22 +45,22 @@ ms.locfileid: "65681174"
 - <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il <xref:System.IDisposable.Dispose%2A> (metodo).
+ Per correggere una violazione di questa regola, implementare un finalizzatore che chiama il metodo <xref:System.IDisposable.Dispose%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se il tipo non implementa <xref:System.IDisposable> allo scopo di rilasciare le risorse non gestite.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo che viola la regola.
+ Nell'esempio seguente viene illustrato un tipo che viola questa regola.
 
  [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DisposeNoFinalize/cs/FxCop.Usage.DisposeNoFinalize.cs#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2115: Chiamare GC. KeepAlive durante l'utilizzo di risorse native](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+ [CA2115: Chiamare GC.KeepAlive durante l'uso di risorse native](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: Chiamare GC. SuppressFinalize correttamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+ [CA1816: Chiamare GC.SuppressFinalize correttamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA1049: I tipi proprietari di risorse native devono essere disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+ [CA1049: I tipi delle risorse native devono essere Disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.IDisposable?displayProperty=fullName> <xref:System.IntPtr?displayProperty=fullName>

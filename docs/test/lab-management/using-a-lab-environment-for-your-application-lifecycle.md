@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783433"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653090"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -28,7 +28,7 @@ Un ambiente lab è una raccolta di computer virtuali e fisici che è possibile u
 
 Ecco alcuni esempi di topologie comuni di ambienti lab:
 
-| Topologia | Description |
+| Topologia | Descrizione |
 |---|---|
 |![Topologia solo server](../media/topology_backend.png)| Questo ambiente lab ha una *topologia server*, che è spesso usata per eseguire test manuali su applicazioni server e che consente ai tester di usare i propri computer client per verificare i bug nell'ambiente. In una topologia di back-end, l'ambiente lab contiene solo i server. Quando si usa questo tipo di topologia in genere si esegue la connessione ai server nell’ambiente lab usando un computer client che non fa parte dell’ambiente.|
 |![Ambiente lab nel cloud](../media/topology_cloud.png)| Questo ambiente lab presenta caratteristiche e funzionalità simili alla _topologia server_ senza il requisito della presenza di macchine virtuali o computer fisici in un ambiente locale. Ciò può ridurre la durata della configurazione, semplificare la manutenzione e abbassare i costi. La configurazione di più siti Web e più macchine virtuali e la personalizzazione della rete sono semplici e rapide in un ambiente cloud come Microsoft Azure.|
@@ -81,7 +81,7 @@ Con Visual Studio Lab Management è possibile creare due tipi di ambiente lab: *
 
 - **Isolamento rete:** l'isolamento rete consente di eseguire contemporaneamente più copie identiche di un ambiente SCVMM senza conflitti di nomi computer.
 
-- **Modelli di macchina virtuale:** un modello di macchina virtuale è una macchina virtuale di cui sono stati rimossi il nome e altri identificatori. Quando un modello di macchina virtuale viene distribuito in un ambiente SCVMM, Microsoft Test Manager genera nuovi identificatori. Ciò consente di distribuire più copie di una macchina virtuale nello stesso ambiente o in più ambienti e quindi eseguire le macchine virtuali contemporaneamente.
+- **Modelli di macchina virtuale:** un modello di macchina virtuale è una macchina virtuale il cui nome e altri identificatori sono stati rimossi. Quando un modello di macchina virtuale viene distribuito in un ambiente SCVMM, Microsoft Test Manager genera nuovi identificatori. Ciò consente di distribuire più copie di una macchina virtuale nello stesso ambiente o in più ambienti e quindi eseguire le macchine virtuali contemporaneamente.
 
 - **Macchine virtuali archiviate:** una macchina virtuale archiviata nella libreria del progetto che include identificatori univoci.
 
@@ -114,7 +114,7 @@ Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzion
 
 Di seguito sono riportati alcuni concetti aggiuntivi che è necessario conoscere prima di continuare:
 
-|Termine|Description|
+|Termine|Descrizione|
 |-|-----------------|
 |Centro Lab|L'area di Microsoft Test Manager in cui creare e gestire ambienti lab.|
 |Lab del progetto Azure DevOps|La raccolta di ambienti lab che sono stati configurati in modo da connettersi a essi ed eseguire le macchine virtuali.|

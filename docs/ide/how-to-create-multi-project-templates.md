@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430497"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655841"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
@@ -46,14 +46,14 @@ Ad esempio, il file con estensione *zip* di un modello per più progetti con due
 
 Il file radice con estensione *vstemplate* per un modello per più progetti differisce da un modello per progetto singolo nei modi seguenti:
 
-- L'attributo **Tipo** dell'elemento**VSTemplate** ha il valore **ProjectGroup** anziché **Project**. Ad esempio:
+- L'attributo **Tipo** dell'elemento**VSTemplate** ha il valore **ProjectGroup** anziché **Project**. Esempio:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- L'elemento **TemplateContent** contiene un elemento **ProjectCollection** che ha uno o più elementi **ProjectTemplateLink** che definiscono i percorsi dei file con estensione *vstemplate* dei progetti inclusi. Ad esempio:
+- L'elemento **TemplateContent** contiene un elemento **ProjectCollection** che ha uno o più elementi **ProjectTemplateLink** che definiscono i percorsi dei file con estensione *vstemplate* dei progetti inclusi. Esempio:
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
     ```
 
 > [!TIP]
-> Se si vuole che solo il modello per più progetti venga visualizzato nella finestra di dialogo Nuovo progetto, anziché i singoli progetti che contiene, contrassegnare i modelli interni come [nascosti](../extensibility/hidden-element-visual-studio-templates.md). Ad esempio:
+> Se si vuole che solo il modello per più progetti venga visualizzato nella finestra di dialogo Nuovo progetto, anziché i singoli progetti che contiene, contrassegnare i modelli interni come [nascosti](../extensibility/hidden-element-visual-studio-templates.md). Esempio:
 >
 > ```xml
 > <VSTemplate Type="Project" ... >

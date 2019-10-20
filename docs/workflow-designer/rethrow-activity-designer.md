@@ -1,39 +1,39 @@
 ---
-title: Finestra di progettazione del flusso di lavoro, ActivityDesigner Rethrow
+title: ActivityDesigner Progettazione flussi di lavoro-Rethrow
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 558ff5a36d172b8cd1fef0b811d1eaa920b90c6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d015ad500537a17cfc2c48c8076df43a38534ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009275"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650010"
 ---
 # <a name="rethrow-activity-designer"></a>ActivityDesigner Rethrow
 
-Il **Rethrow** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Rethrow> attività.
+L'ActivityDesigner **Rethrow** viene utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Rethrow>.
 
 ## <a name="the-rethrow-activity"></a>Attività Rethrow
 
 L'attività <xref:System.Activities.Statements.Rethrow> genera un'eccezione generata precedentemente. Questa attività può essere usata solo in un gestore <xref:System.Activities.Statements.Catch> nell'attività <xref:System.Activities.Statements.TryCatch>.
 
-### <a name="use-the-rethrow-activity-designer"></a>Utilizzo dell'ActivityDesigner ReThrow
+### <a name="use-the-rethrow-activity-designer"></a>Usare l'ActivityDesigner Rethrow
 
-Accesso di **Rethrow** ActivityDesigner nel **Error Handling** categoria del **della casella degli strumenti**. Il **Rethrow** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. La finestra di progettazione di attività di rilascio crea un <xref:System.Activities.Statements.Rethrow> attività con un valore predefinito **DisplayName** throw. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **Rethrow** ActivityDesigner, o nel **DisplayName** finestra della griglia delle proprietà.
+Accedere all'ActivityDesigner **Rethrow** nella categoria **Gestione errori** della **casella degli strumenti**. È possibile trascinare l'ActivityDesigner **Rethrow** dalla **casella degli strumenti** e rilasciarlo nell'area Progettazione flussi di lavoro quando vengono in genere posizionate le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Se si elimina l'ActivityDesigner, viene creata un'attività <xref:System.Activities.Statements.Rethrow> con un valore **DisplayName** predefinito Throw. Il valore <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **Rethrow** oppure nella casella **DisplayName** della griglia delle proprietà.
 
 ### <a name="the-rethrow-properties"></a>Proprietà di Rethrow
 
-La tabella seguente illustra il <xref:System.Activities.Statements.Rethrow> proprietà e viene descritto l'utilizzo nella finestra di progettazione:
+Nella tabella seguente vengono illustrate le proprietà <xref:System.Activities.Statements.Rethrow> e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione:
 
-|Nome proprietà|Obbligatorio|Utilizzo|
+|Nome proprietà|Richiesto|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.Rethrow>. Il valore predefinito è Rethrow.|
 

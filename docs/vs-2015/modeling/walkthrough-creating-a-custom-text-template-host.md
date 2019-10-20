@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di un host del modello di testo personalizzato | Microsoft Docs'
+title: 'Procedura dettagliata: creazione di un host del modello di testo personalizzato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b3ce1dcfd91c906ed050eed770dab7a8dc0e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871692"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659281"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Procedura dettagliata: Creazione di un host del modello di testo personalizzato
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Procedura dettagliata: creazione di un host del modello di testo personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un<em>host</em> del modello di testo fornisce un ambiente che consente l'esecuzione del *motore di trasformazione del modello di testo* . L'host è responsabile della gestione dell'interazione del motore con il file system. Il motore o il *processore di direttiva* che necessita di un file o di un assembly può richiedere una risorsa dall'host. L'host può quindi eseguire ricerche nelle directory e nella Global Assembly Cache per individuare le risorse richieste. Per ulteriori informazioni, vedere [il processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md).
 
- È possibile scrivere un host personalizzato se si desidera utilizzare la funzionalità di *trasformazione del modello* di testo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dall'esterno o se si desidera integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Per la documentazione dei singoli metodi, vedere [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
+ È possibile scrivere un host personalizzato se si desidera utilizzare la funzionalità di *trasformazione del modello di testo* dall'esterno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o se si desidera integrare tale funzionalità in strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Per la documentazione dei singoli metodi, vedere [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
 > [!WARNING]
 > Se si scrive un'estensione o un pacchetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], anziché creare il proprio host, si consiglia di utilizzare il servizio del modello di testo. Per altre informazioni, vedere [richiamo della trasformazione del testo in un'estensione di Visual](../modeling/invoking-text-transformation-in-a-vs-extension.md)Studio.
@@ -35,7 +35,7 @@ Un<em>host</em> del modello di testo fornisce un ambiente che consente l'esecuzi
 
 - Test dell'host personalizzato
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
  Per completare la procedura dettagliata, è necessario disporre di quanto segue:
 
 - Visual Studio 2010 o versione successiva
@@ -51,7 +51,7 @@ Un<em>host</em> del modello di testo fornisce un ambiente che consente l'esecuzi
 
 2. Aggiungere riferimenti agli assembly riportati di seguito:
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \*.0**
 
     - **Microsoft. VisualStudio. TextTemplating. Interfaces. 10.0 e versioni successive**
 
@@ -714,7 +714,7 @@ Un<em>host</em> del modello di testo fornisce un ambiente che consente l'esecuzi
     End Namespace
     ```
 
-4. Solo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] per, aprire il menu **progetto** e fare clic su **Proprietà CustomHost**. Nell'elenco **oggetto di avvio** fare clic su **CustomHost. Program**.
+4. Solo per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], aprire il menu **progetto** e fare clic su **Proprietà CustomHost**. Nell'elenco **oggetto di avvio** fare clic su **CustomHost. Program**.
 
 5. Nel menu **File** fare clic su **Salva tutto**.
 
@@ -816,8 +816,8 @@ Un<em>host</em> del modello di testo fornisce un ambiente che consente l'esecuzi
     This is a test
     ```
 
-## <a name="next-steps"></a>Fasi successive
- In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per altre informazioni, vedere [Procedura dettagliata: Connessione di un host a un processore](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)di direttiva generato.
+## <a name="next-steps"></a>Passaggi successivi
+ In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per ulteriori informazioni, vedere [procedura dettagliata: connessione di un host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Vedere anche
 

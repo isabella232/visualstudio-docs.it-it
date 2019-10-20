@@ -3,17 +3,17 @@ title: Uso di modelli 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbca927a3c4bd26a37318fc9b3403d0eb8d7393c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b364682d8173d34d2b9977836929ca93ddf45a78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892558"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633989"
 ---
 # <a name="work-with-3d-models"></a>Uso di modelli 3D
 
@@ -29,7 +29,7 @@ L'Editor dei modelli è l'unico strumento necessario per creare modelli 3D di ba
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'Editor dei modelli per lavorare con modelli 3D.|
-|[Esempi dell'editor di modelli](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor dei modelli per eseguire attività comuni di modellazione 3D.|
+|[Esempi dell'editor di modelli](../designers/how-to-create-a-basic-3-d-model.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor dei modelli per eseguire attività comuni di modellazione 3D.|

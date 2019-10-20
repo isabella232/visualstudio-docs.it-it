@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, recording desktop video
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 663f89c65604c42b356830b3a0c6d61bdcb265e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 572b3132056ebed1d26c983fdc4024d2ddc51a82
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950099"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653527"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test
 
@@ -22,7 +22,7 @@ Dall'editor di configurazione in Visual Studio è possibile configurare l'adatta
 > [!WARNING]
 > Le registrazioni dello schermo e della voce non supportano configurazioni con più monitor.
 
-La funzionalità di registrazione dello schermo e della voce può essere utilizzata con i test manuali o automatizzati. Ad esempio, se si esegue un test codificato dell'interfaccia utente in modalità remota è necessario registrare il desktop per visualizzare il test nel corso dell'esecuzione. Per altre informazioni sulla modalità di acquisizione di una registrazione dello schermo e della voce in modalità remota, vedere [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
+La funzionalità di registrazione dello schermo e della voce può essere utilizzata con i test manuali o automatizzati. Ad esempio, se si esegue un test codificato dell'interfaccia utente in modalità remota è necessario registrare il desktop per visualizzare il test nel corso dell'esecuzione. Per altre informazioni su come acquisire una registrazione dello schermo e della voce in modalità remota, vedere [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

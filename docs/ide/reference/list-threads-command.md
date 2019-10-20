@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c437b91fea5e3087de8b22cb72a2f20ad421bead
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610490"
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
 Visualizza un elenco dei thread del programma corrente.
@@ -30,12 +30,12 @@ Visualizza un elenco dei thread del programma corrente.
 Debug.ListThreads [index]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `index`
 
-facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
+Parametro facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.
 
 ## <a name="example"></a>Esempio
@@ -51,4 +51,4 @@ Quando specificato, l'argomento `index` contrassegna il thread indicato come thr
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

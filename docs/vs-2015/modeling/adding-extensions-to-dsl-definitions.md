@@ -6,36 +6,36 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 07e133be-92ab-4936-a02b-45d2012bd0a6
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd45a2345e6e5b28b74cb27fac226514c3f92a04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 447001a8aefa22fe15bce9158eddeb0cdb26e4e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159072"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654712"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Aggiunta di estensioni alle definizioni DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Estensione di definizione DSL consente di creare un pacchetto di estensioni da un linguaggio specifico di dominio (DSL). L'estensione del linguaggio DSL, incluso in Visual Studio Integration Extension (VSIX), può essere installato nel computer dell'utente nello stesso modo come un linguaggio DSL. Le funzionalità aggiuntive possono essere abilitate e disabilitate in fase di esecuzione in modo dinamico. Linguaggi specifici di dominio non devono essere progettate in modo esplicito per l'estensione e le estensioni possono essere progettate in un secondo momento o da terze parti senza alterare il DSL esteso.  
-  
- Le funzionalità aggiuntive possono includere quanto segue:  
-  
-- Proprietà degli elementi di modello e la presentazione  
-  
-- Elementi Decorator per forme e connettori  
-  
-- Le classi, le relazioni, forme e connettori  
-  
-- Vincoli di convalida  
-  
-- Schede ed elementi della casella degli strumenti  
-  
-  Un utente di un DSL estesa può creare e salvare un modello che contiene le istanze delle funzionalità aggiuntive e possono essere letti da altri utenti che hanno installato l'estensione corretta. Gli utenti che non hanno installato l'estensione non è possibile usare le funzionalità aggiuntive, ma possono aggiornare e salvare un modello senza perdere le funzionalità aggiuntive.  
-  
-  Per codice di esempio e altre informazioni su questa funzionalità, vedere la [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) sito Web.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+L'estensione di definizione DSL consente di creare un pacchetto di estensioni a un linguaggio specifico di dominio (DSL). L'estensione DSL, che è contenuta in un progetto VSIX (Visual Studio Integration Extension), può essere installata nel computer di un utente in modo analogo a un linguaggio DSL. Le funzionalità aggiuntive possono essere abilitate e disabilitate in modo dinamico in fase di esecuzione. DSLs non devono essere progettati in modo esplicito per l'estensione e le estensioni possono essere progettate in un secondo momento o da terze parti senza modificare il linguaggio DSL esteso.
+
+ Le funzionalità aggiuntive possono includere quanto segue:
+
+- Proprietà per gli elementi del modello e della presentazione
+
+- Elementi Decorator per forme e connettori
+
+- Classi, relazioni, forme e connettori
+
+- Vincoli di convalida
+
+- Elementi e schede della casella degli strumenti
+
+  Un utente di un linguaggio DSL esteso può creare e salvare un modello che contiene istanze delle funzionalità aggiuntive, che possono essere lette da altri utenti che hanno installato l'estensione appropriata. Gli utenti che non hanno installato l'estensione non possono usare le funzionalità aggiuntive, ma possono aggiornare e salvare un modello senza perdere le funzionalità aggiuntive.
+
+  Per il codice di esempio e altre informazioni su questa funzionalità, vedere il sito Web dell' [SDK di visualizzazione e modellazione di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186128) .
+
+## <a name="see-also"></a>Vedere anche
+ [SDK di visualizzazione e modellazione di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186128)

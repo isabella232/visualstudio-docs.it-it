@@ -3,21 +3,21 @@ title: Proprietà dei documenti XML, finestra Proprietà
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 679ac529708a49d18025672ce8f880c4f7710471
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808132"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604148"
 ---
-# <a name="xml-document-properties-properties-window"></a>Proprietà di documento XML, finestra proprietà
+# <a name="xml-document-properties-properties-window"></a>Proprietà del documento XML, Finestra Proprietà
 
-Il **proprietà** finestra fornisce informazioni di base relative al documento attivo nell'editor XML. Le proprietà disponibili variano in base al tipo di documento XML correntemente attivo.
+Nella finestra **Proprietà** vengono fornite informazioni di base sul documento attivo nell'editor XML. Le proprietà disponibili variano in base al tipo di documento XML correntemente attivo.
 
 > [!NOTE]
 > Tutte le proprietà del documento XML vengono salvate nella soluzione. Di conseguenza, non sarà necessario immettere nuovamente tali valori alla successiva apertura della soluzione.
@@ -28,27 +28,27 @@ La codifica dei caratteri per il file. Modificando questa proprietà si modifica
 
 **Input**
 
-Il documento di input associato al foglio di stile XSLT. Viene usato per il **avviare XSLT** comandi, ad esempio, **XML** > **avvia XSLT senza debug**. Un documento può essere selezionato utilizzando il pulsante Sfoglia (**...** ) pulsante.
+Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio **XML**  > **avviare XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia ( **..** .).
 
-Questa proprietà è visibile solo quando un file XSLT viene aperto nell'editor.
+Questa proprietà è visibile solo quando un file XSLT è aperto nell'editor.
 
 **Output**
 
 Il file che viene generato durante la trasformazione di un documento XML.
 
-Se non viene specificato un file, viene generato un nome di file predefinito in base il `method` attributo la `xsl:output` elemento, che determina l'estensione di file. Il file predefinito si trova nella directory temporanea dell'utente corrente.
+Se non si specifica un file, viene generato un nome file predefinito basato sull'attributo `method` sull'elemento `xsl:output`, che determina l'estensione del file. Il file predefinito si trova nella directory temporanea dell'utente corrente.
 
 **Schemi**
 
-Gli schemi da usare per la convalida. Il pulsante apre il **schemi XSD** nella finestra di dialogo può essere usata per selezionare gli schemi da usare.
+Gli schemi da usare per la convalida. Il pulsante consente di aprire la finestra di dialogo **schemi XSD** , che può essere utilizzata per selezionare gli schemi da utilizzare.
 
 È possibile anche immettere il percorso degli schemi. Se vengono specificati più schemi, ogni singolo percorso di schema deve essere racchiuso tra virgolette.
 
-**Foglio di stile**
+**StyleSheet**
 
-Il file XSLT utilizzato per trasformare il documento quando la **avviare il debug di XSLT** e **avviare senza debug XSLT** vengono utilizzati i comandi. Se questo campo è vuoto, l'editor Usa il valore fornito nel `xml-stylesheet` istruzione del documento o di elaborazione viene richiesto un nome di file.
+Il file XSLT utilizzato per trasformare il documento quando vengono utilizzati i comandi **Avvia XSLT debug** e **Avvia XSLT senza debug** . Se questo campo è vuoto, l'editor utilizzerà il valore fornito nell'`xml-stylesheet` istruzione di elaborazione del documento oppure verrà richiesto di specificare un nome file.
 
-Quando si modifica un file XSLT, questa proprietà può essere utilizzata per specificare che deve essere un foglio di stile utilizzato quando la **avviare il debug di XSLT** o **avvia XSLT senza debug** comando selezionato. Ad esempio, è possibile eseguire questa operazione quando si sta modificando un foglio di stile incluso in un foglio di stile padre.
+Quando si modifica un file XSLT, questa proprietà può essere usata per specificare che è necessario usare un foglio di stile diverso quando si seleziona il comando **Avvia il debug XSLT** o **Avvia XSLT senza debug** . Questa operazione può essere eseguita, ad esempio, quando si modifica un foglio di stile incluso in un foglio di stile padre.
 
 ## <a name="see-also"></a>Vedere anche
 

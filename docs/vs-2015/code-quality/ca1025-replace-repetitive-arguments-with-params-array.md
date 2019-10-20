@@ -1,5 +1,5 @@
 ---
-title: 'CA1025: Sostituire gli argomenti ripetitivi con una matrice | Microsoft Docs'
+title: 'Ca1025: sostituire gli argomenti ripetitivi con la matrice params | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1025
 ms.assetid: f009b340-dea3-4459-8fe1-2143aa8b5d0b
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83d36f1f5cd31b1ad1833dd805f4386ac71a3ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21d13611a3c4dd11eb691c746f8746347fb9a83b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144800"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661977"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>Ca1025: Sostituire gli argomenti ripetitivi con una matrice di parametri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. Design|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo pubblico o protetto in un tipo pubblico presenta più di tre parametri e le ultime tre parametri sono dello stesso tipo.
+ Un metodo pubblico o protetto in un tipo pubblico ha più di tre parametri e gli ultimi tre parametri sono dello stesso tipo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Usare una matrice di parametri anziché argomenti ripetuti quando il numero esatto di argomenti è sconosciuto e gli argomenti variabili sono dello stesso tipo oppure possono essere passati come lo stesso tipo. Ad esempio, il <xref:System.Console.WriteLine%2A> metodo fornisce un overload generico che usa una matrice di parametri per accettare un numero qualsiasi di <xref:System.Object> argomenti.
+ Usare una matrice di parametri anziché gli argomenti ripetuti quando il numero esatto di argomenti è sconosciuto e gli argomenti della variabile sono dello stesso tipo oppure possono essere passati come lo stesso tipo. Ad esempio, il metodo <xref:System.Console.WriteLine%2A> fornisce un overload di utilizzo generico che utilizza una matrice di parametri per accettare un numero qualsiasi di argomenti di <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, sostituire gli argomenti ripetuti con una matrice di parametri.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È sempre possibile eliminare un avviso da questa regola. Questa progettazione può tuttavia causare problemi di usabilità.
+ È sempre possibile eliminare un avviso da questa regola. Questo progetto potrebbe tuttavia causare problemi di usabilità.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo che viola la regola.
+ Nell'esempio seguente viene illustrato un tipo che viola questa regola.
 
  [!code-csharp[FxCop.Design.RepeatArgs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.RepeatArgs/cs/FxCop.Design.RepeatArgs.cs#1)]

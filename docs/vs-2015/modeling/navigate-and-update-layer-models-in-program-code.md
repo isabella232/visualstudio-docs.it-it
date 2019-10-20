@@ -9,22 +9,22 @@ helpviewer_keywords:
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eb0c600830c114ca24f9cdc0619fd84c6e18d232
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871817"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668566"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Esplorare e aggiornare i modelli di livello nel codice del programma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questo argomento descrive gli elementi e le relazioni nei modelli di livello, che è possibile esplorare e aggiornare usando codice programma. Per ulteriori informazioni sui diagrammi livello dal punto di vista dell'utente, vedere [diagrammi livello: Diagrammi [livello e di riferimento](../modeling/layer-diagrams-reference.md) : Linee](../modeling/layer-diagrams-guidelines.md)guida.
+Questo argomento descrive gli elementi e le relazioni nei modelli di livello, che è possibile esplorare e aggiornare usando codice programma. Per ulteriori informazioni sui diagrammi livello dal punto di vista dell'utente, vedere [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md) e [diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md).
 
- Il modello `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descritto in questo argomento rappresenta un aspetto di un modello <xref:Microsoft.VisualStudio.GraphModel> più generale. Se si sta scrivendo un [comando di menu o un'estensione](../modeling/add-commands-and-gestures-to-layer-diagrams.md)di movimento `Layer` , usare il modello. Se si scrive un' [estensione di convalida](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)dei `GraphModel`livelli, è più semplice usare.
+ Il modello `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descritto in questo argomento rappresenta un aspetto di un modello <xref:Microsoft.VisualStudio.GraphModel> più generale. Se si sta scrivendo un [comando di menu o un'estensione di movimento](../modeling/add-commands-and-gestures-to-layer-diagrams.md), usare il modello di `Layer`. Se si scrive un' [estensione di convalida dei livelli](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), è più facile usare la `GraphModel`.
 
 ## <a name="transactions"></a>Transazioni
  Quando si aggiorna un modello, valutare la possibilità di includere le modifiche in un elemento `ILinkedUndoTransaction`. Ciò consente di raggruppare le modifiche in un'unica transazione. Se non è possibile apportare correttamente una modifica, viene eseguito il rollback dell'intera transazione. Se l'utente annulla una modifica, tutte le modifiche verranno annullate.
@@ -56,7 +56,7 @@ using (ILinkedUndoTransaction t =
 
  Per creare un collegamento di dipendenza, chiamare `source.CreateDependencyLink(target)`.
 
-## <a name="comments"></a>Commenti
+## <a name="comments"></a>Comments
  I commenti possono essere contenuti in livelli o nel modello di livello e possono inoltre essere collegati a qualsiasi elemento livello:
 
  ![I commenti possono essere collegati a qualsiasi elemento del livello.](../modeling/media/layerapi-comments.png "LayerApi_Comments")
@@ -83,9 +83,9 @@ IEnumerable<ILayerComment> comments =
 ## <a name="layer-elements"></a>Elementi di livello
  Tutti i tipi di elemento che possono essere contenuti in un modello sono elementi di livello:
 
- Il ![contenuto del diagramma livello è ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
+ ![Il contenuto del diagramma livello è ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Proprietà
  Ogni `ILayerElement` ha un dizionario di stringhe denominato`Properties`. È possibile usare questo dizionario per collegare informazioni arbitrarie a qualsiasi elemento livello.
 
 ## <a name="artifact-references"></a>Riferimenti per elementi
@@ -97,14 +97,14 @@ IEnumerable<ILayerComment> comments =
 
  [ILayerArtifactReference](/previous-versions/ff644536(v=vs.140)). La proprietà Categorie indica il tipo di artefatto al quale viene fatto riferimento, ad esempio una classe, un file eseguibile o un assembly. Questa proprietà determina le modalità di identificazione dell'elemento di destinazione da parte dell'identificatore.
 
- [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) crea un riferimento a un elemento <xref:EnvDTE.Project> da <xref:EnvDTE.ProjectItem>un oggetto o. Si tratta di un'operazione asincrona, quindi in genere si fornisce un callback che viene chiamato al termine della creazione.
+ [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) crea un riferimento a un elemento da un <xref:EnvDTE.Project> o <xref:EnvDTE.ProjectItem>. Si tratta di un'operazione asincrona, quindi in genere si fornisce un callback che viene chiamato al termine della creazione.
 
  I riferimenti ad artefatti del livello non devono essere confusi con gli artefatti nei diagrammi dei casi di uso.
 
 ## <a name="shapes-and-diagrams"></a>Forme e diagrammi
- Due oggetti vengono usati per rappresentare ogni elemento in un modello di livello: `ILayerElement`un oggetto e un [IShape](/previous-versions/ee806673(v=vs.140)). L'oggetto `IShape` rappresenta la posizione e la dimensione della forma sul diagramma. Nei modelli di livello ogni `ILayerElement` ha un `IShape` e ogni `IShape` in un diagramma livello ha un `ILayerElement`. `IShape` è usato anche per i modelli UML, quindi non tutti gli oggetti `IShape` hanno un elemento livello.
+ Due oggetti vengono usati per rappresentare ogni elemento in un modello di livello: un `ILayerElement` e un [IShape](/previous-versions/ee806673(v=vs.140)). L'oggetto `IShape` rappresenta la posizione e la dimensione della forma sul diagramma. Nei modelli di livello ogni `ILayerElement` ha un `IShape` e ogni `IShape` in un diagramma livello ha un `ILayerElement`. `IShape` è usato anche per i modelli UML, quindi non tutti gli oggetti `IShape` hanno un elemento livello.
 
- Allo stesso modo, `ILayerModel` viene visualizzato in un [IDiagram](/previous-versions/ee789658(v=vs.140)).
+ Allo stesso modo, il `ILayerModel` viene visualizzato in un [IDiagram](/previous-versions/ee789658(v=vs.140)).
 
  Nel codice di un gestore comandi o movimenti personalizzato, è possibile ottenere il diagramma corrente e la selezione corrente di forme dall'importazione `DiagramContext`:
 
@@ -132,6 +132,6 @@ public void ... (...)
 - [Aggiunta di comandi e movimenti a diagrammi livello](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Aggiungere strumenti di convalida dell'architettura personalizzati a diagrammi livello](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Aggiungere proprietà personalizzate ai diagrammi livello](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [Diagrammi dei livelli: riferimenti](../modeling/layer-diagrams-reference.md)
-- [Diagrammi dei livelli: linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md)
+- [Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)
 - [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)

@@ -1,47 +1,47 @@
 ---
-title: Finestra di progettazione del flusso di lavoro, ActivityDesigner Interop
+title: ActivityDesigner Progettazione flussi di lavoro-Interop
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747144"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650204"
 ---
 # <a name="interop-activity-designer"></a>ActivityDesigner Interop
 
-Il **Interop** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Interop> attività.
+L'ActivityDesigner **Interop** viene utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.Interop>.
 
 ## <a name="the-interop-activity"></a>Attività Interop
 
 L'attività <xref:System.Activities.Statements.Interop> gestisce l'esecuzione dei tipi che derivano da <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> all'interno di un flusso di lavoro.
 
-### <a name="use-the-interop-activity-designer"></a>Utilizzo dell'ActivityDesigner Interop
+### <a name="use-the-interop-activity-designer"></a>Usare l'ActivityDesigner Interop
 
-Il **interoperabilità** ActivityDesigner è reperibile nel **migrazione** categoria del **della casella degli strumenti**, accessibile facendo clic di **della casella degli strumenti**scheda. In alternativa, selezionare **della casella degli strumenti** dal **View** dal menu oppure premere **Ctrl**+**Alt** + **X**.
+L'ActivityDesigner **Interop** è disponibile nella categoria **migrazione** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** . in alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL.** +**ALT** +**X**.
 
-Il [Migration](../workflow-designer/migration-activity-designers.md) categoria che contiene il <xref:System.Activities.Statements.Interop> attività viene visualizzata solo **della casella degli strumenti** se il progetto è destinato a .NET Framework 4 (completo) o versione successiva. Se necessario, è possibile modificare la versione di framework che le destinazioni del progetto.
+La categoria di [migrazione](../workflow-designer/migration-activity-designers.md) che contiene l'attività <xref:System.Activities.Statements.Interop> viene visualizzata solo nella **casella degli strumenti** se il progetto è destinato .NET Framework 4 (completo) o versione successiva. Se necessario, è possibile modificare la versione del Framework di destinazione del progetto.
 
-Il **Interop** ActivityDesigner può essere trascinato dalla **della casella degli strumenti** e rilasciate nell'area di progettazione del flusso di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Eliminando il **Interop** crea ActivityDesigner un' <xref:System.Activities.Statements.Interop> attività con un valore predefinito **DisplayName** di interoperabilità. È possibile modificare il <xref:System.Activities.Activity.DisplayName%2A> nell'intestazione del **interoperabilità** ActivityDesigner, o nel **DisplayName** finestra della griglia delle proprietà.
+È possibile trascinare l'ActivityDesigner **Interop** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro quando vengono in genere posizionate le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Se si elimina l'ActivityDesigner di **interoperabilità** , viene creata un'attività <xref:System.Activities.Statements.Interop> con un **DisplayName** predefinito di interoperabilità. È possibile modificare il <xref:System.Activities.Activity.DisplayName%2A> nell'intestazione dell'ActivityDesigner **Interop** oppure nella casella **DisplayName** della griglia delle proprietà.
 
-Fare clic sul **fare clic per passare** testo nel **ActivityType** finestra, nel **interoperabilità** della finestra di progettazione oppure nella griglia delle proprietà per aprire il **Sfoglia e Selezionare .net tipo** nella finestra di dialogo. Vengono visualizzati solo i tipi di flusso di lavoro 3.0 o le attività del flusso di lavoro 3.5. Vale a dire, solo i tipi derivati da <xref:System.Workflow.ComponentModel.Activity> vengono visualizzati. Per altre informazioni sull'uso di questa casella per specificare un tipo, vedere [individuare e selezionare una finestra di dialogo tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
+Per aprire la finestra di dialogo **Cerca e seleziona un tipo .NET** , fare clic su **fare clic per sfogliare** il testo nella casella **ActivityType** nell'ActivityDesigner **Interop** o nella griglia delle proprietà. Vengono visualizzati solo i tipi per le attività flusso di lavoro 3,0 o flusso di lavoro 3,5. Ovvero vengono visualizzati solo i tipi derivati da <xref:System.Workflow.ComponentModel.Activity>. Per ulteriori informazioni sull'utilizzo di questa casella per specificare un tipo, vedere [finestra di dialogo Cerca e seleziona un tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
 
 ### <a name="the-interop-properties"></a>Proprietà di Interop
 
-La tabella seguente illustra il <xref:System.Activities.Statements.Interop> proprietà e viene descritto come usarle nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro.
+Nella tabella seguente vengono illustrate le proprietà <xref:System.Activities.Statements.Interop> e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà o nell'area di Progettazione flussi di lavoro.
 
-|Nome proprietà|Obbligatorio|Utilizzo|
+|Nome proprietà|Richiesto|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.Interop>. Il valore predefinito è **interoperabilità**. Anche se il nome visualizzato non è obbligatorio, è consigliabile per fornirne una.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.Interop>. Il valore predefinito è **Interop**. Sebbene il nome visualizzato non sia obbligatorio, è consigliabile specificarne uno.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Consente di specificare il tipo di attività incluso nell'attività <xref:System.Activities.Statements.Interop>. Tale tipo specificato deve derivare da <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Vedere anche

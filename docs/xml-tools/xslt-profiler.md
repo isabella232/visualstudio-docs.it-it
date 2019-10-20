@@ -1,48 +1,48 @@
 ---
-title: Prestazioni di XSLT
+title: Prestazioni XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ecc5482c8519ceadfe1e6d5db7880c98b3d2ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2866e9b19ea2b79bf8435d81c93443bb20ff4fec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988033"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645916"
 ---
-# <a name="the-xslt-profiler"></a>Il Profiler XSLT
+# <a name="the-xslt-profiler"></a>Profiler XSLT
 
 Il Profiler XSLT crea rapporti di prestazioni XSLT dettagliati utili per misurare, valutare e trattare problemi correlati alle prestazioni nel codice XSLT. Il Profiler XSLT include suggerimenti utili per le ottimizzazioni dei fogli di stile XSL e XSLT. Per applicazioni XSLT che richiedono massime prestazioni, questo strumento potrebbe essere essenziale.
 
-Il Profiler XSLT è parte di Visual Studio ed è disponibile nel **XML** menu.
+Il Profiler XSLT è parte di Visual Studio ed è disponibile nel menu **XML** .
 
 ![Profiler XSLT](../xml-tools/media/profile-xslt-menu.png)
 
 > [!NOTE]
 > Il Profiler XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
 
-## <a name="create-a-performance-report"></a>Creare un report di prestazioni
+## <a name="create-a-performance-report"></a>Creazione di un report di prestazioni
 
 1. Aprire un documento XSLT in Visual Studio.
 
-2. Nella barra dei menu, scegliere **XML** > **profila XSLT**.
+2. Nella barra dei menu scegliere **XML**  > **profile XSLT**.
 
 3. Fornire un documento XML di input. Se non è già aperto un documento XML, verrà richiesto il file.
 
    L'analisi viene avviata e un indicatore di stato visualizza lo stato di avanzamento all'interno dell'editor. Anche l'output XSLT è visibile.
 
-4. Al termine della sessione di prestazioni, controllare il report sulle prestazioni per analizzare le prestazioni di XSLT.
+4. Al termine della sessione di prestazioni, controllare il rapporto di prestazioni per analizzare le prestazioni di XSLT.
 
 ## <a name="get-all-available-views"></a>Ottenere tutte le visualizzazioni disponibili
 
-1. Fare clic sui **vista corrente** elenco a discesa per ottenere tutte le visualizzazioni disponibili.
+1. Fare clic sull'elenco a discesa **visualizzazione corrente** per ottenere tutte le visualizzazioni disponibili.
 
-2. Selezionare il **visualizzazione di riepilogo** opzione il **visualizzazione corrente** elenco a discesa. Per impostazione predefinita, viene visualizzato un report di prestazioni nel **visualizzazione di riepilogo**. Questa visualizzazione costituisce un punto iniziale per determinare problemi di prestazioni con i documenti XSLT. Il **visualizzazione di riepilogo** sono elencati i punti dati seguenti:
+2. Selezionare l'opzione **visualizzazione Riepilogo** nell'elenco a discesa **visualizzazione corrente** . Per impostazione predefinita, un rapporto di prestazioni viene visualizzato nella **visualizzazione Riepilogo**. Questa visualizzazione costituisce un punto iniziale per determinare problemi di prestazioni con i documenti XSLT. La **visualizzazione Riepilogo** elenca i punti dati seguenti:
 
    - Funzioni più chiamate
 
@@ -50,9 +50,9 @@ Il Profiler XSLT è parte di Visual Studio ed è disponibile nel **XML** menu.
 
    - Funzioni la cui esecuzione richiede più tempo
 
-   Per impostazione predefinita, esistono tre colonne per ogni punto dati: il nome della funzione, il numero di chiamate in valore assoluto e un valore percentuale della funzione denominata per sommare le chiamate di funzione. Da ogni punto dati nella **visualizzazione di riepilogo**, è possibile passare a visualizzazioni più dettagliate facendo clic sui punti dati (funzione).
+   Per impostazione predefinita, esistono tre colonne per ogni punto dati: il nome della funzione, il numero di chiamate in valore assoluto e un valore percentuale della funzione denominata per sommare le chiamate di funzione. Da ogni punto dati nella **visualizzazione di riepilogo**, è possibile passare a visualizzazioni più dettagliate facendo clic con il pulsante destro del mouse sui punti dati della funzione.
 
-3. Selezionare il **visualizzazione funzione** opzione il **visualizzazione corrente** elenco a discesa. Il **visualizzazione funzione** Elenca le funzioni chiamate durante la profilatura. Per ordinare i dati è possibile fare clic sul nome di una colonna. Le colonne visualizzate per impostazione predefinita sono:
+3. Selezionare l'opzione **visualizzazione funzione** nell'elenco a discesa **visualizzazione corrente** . La **visualizzazione** funzioni elenca le funzioni chiamate durante la profilatura. Per ordinare i dati è possibile fare clic sul nome di una colonna. Le colonne visualizzate per impostazione predefinita sono:
 
     - **Nome funzione**
 
@@ -66,19 +66,19 @@ Il Profiler XSLT è parte di Visual Studio ed è disponibile nel **XML** menu.
 
     - **Numero di chiamate**
 
-   Tutte le colonne dell'ora vengono visualizzate sia in valori assoluti che in percentuali. Il termine **esclusivo** si riferisce al tempo totale di una funzione per l'esecuzione, escluso il tempo impiegato da altre funzioni chiamata durante l'esecuzione di questa funzione.
+   Tutte le colonne dell'ora vengono visualizzate sia in valori assoluti che in percentuali. Il termine **esclusivo** si riferisce al tempo totale impiegato da una funzione per l'esecuzione esclusiva del tempo impiegato da altre funzioni chiamate durante l'esecuzione di questa funzione.
 
-   Il termine **inclusivo** si riferisce al tempo totale impiegato da una funzione per l'esecuzione, incluso il tempo di esecuzione di tutte le funzioni chiamate e indica se uno qualsiasi di queste funzioni chiamate ha chiamato altre funzioni.
+   Il termine **inclusivo** si riferisce al tempo totale impiegato per l'esecuzione di una funzione, incluso il tempo di esecuzione di tutte le funzioni chiamate e se una di queste funzioni denominate ha chiamato altre funzioni.
 
 ## <a name="select-callercallee-view"></a>Selezionare la visualizzazione Chiamante/chiamato
 
-Selezionare **chiamante/chiamato** visualizzare il **visualizzazione corrente** elenco a discesa. Il **chiamante/chiamato** Vista ha tre parti distinte seguenti:
+Selezionare la visualizzazione **chiamante/chiamato** nell'elenco a discesa **visualizzazione corrente** . La visualizzazione **chiamante/chiamato** include le tre parti distinte seguenti:
 
-- **Funzioni che hanno chiamato**: Tutte le funzioni che ha chiamato una particolare funzione vengono elencate nella parte superiore della visualizzazione.
+- **Funzioni che hanno chiamato**: tutte le funzioni che hanno chiamato una particolare funzione sono elencate nella parte superiore della vista.
 
-- **Funzione corrente**: La funzione specifica che è stata chiamata è elencata nella parte centrale della visualizzazione.
+- **Funzione corrente**: la funzione specifica chiamata viene elencata nella parte centrale della visualizzazione.
 
-- **Le funzioni chiamate dalla**: Tutte le funzioni chiamate dalla particolare funzione vengono elencate nella parte inferiore della visualizzazione.
+- **Funzioni che sono state chiamate da**: tutte le funzioni chiamate dalla funzione specifica sono elencate nella parte inferiore della visualizzazione.
 
 Se una funzione denominata `SyncToNavigator` viene riportata nella parte centrale della visualizzazione, tutte le funzioni che hanno chiamato la funzione `SyncToNavigator` vengono visualizzate nella parte superiore della visualizzazione e tutte le funzioni che sono state chiamate da `SyncToNavigator` vengono elencate nella parte inferiore della visualizzazione.
 
@@ -86,26 +86,26 @@ Se una funzione denominata `SyncToNavigator` viene riportata nella parte central
 
 - Per ordinare i dati, è anche possibile fare clic sui nomi delle colonne.
 
-## <a name="select-call-tree-view"></a>Selezionare una visualizzazione albero delle chiamate
+## <a name="select-call-tree-view"></a>Selezione visualizzazione albero delle chiamate
 
-- Selezionare **visualizzazione albero delle chiamate** nel **visualizzazione corrente** elenco a discesa. Questa visualizzazione è un albero dell'esecuzione del programma.
+- Selezionare **visualizzazione albero delle chiamate** nell'elenco a discesa **visualizzazione corrente** . Questa visualizzazione è un albero dell'esecuzione del programma.
 
-   Il **visualizzazione albero delle chiamate** mostri la radice dell'albero come nome del processo. Le funzioni sono i nodi dell'albero. Questa visualizzazione consente di esaminare determinate tracce di chiamata e di analizzare quali tracce hanno il maggiore impatto sulle prestazioni. La visualizzazione è simile al **visualizzazione Stack di chiamate** disponibile durante il debug. Oltre alle colonne nel **visualizzazione funzione**, nella **visualizzazione albero delle chiamate**, è una colonna aggiuntiva per visualizzare il **nome modulo**.
+   La **visualizzazione albero delle chiamate** Mostra la radice della struttura ad albero come nome del processo. Le funzioni sono i nodi dell'albero. Questa visualizzazione consente di esaminare determinate tracce di chiamata e di analizzare quali tracce hanno il maggiore impatto sulle prestazioni. La visualizzazione è simile alla **visualizzazione dello stack di chiamate** disponibile durante il debug. Oltre alle colonne nella **visualizzazione funzione**, nella **visualizzazione albero delle chiamate**è presente una colonna aggiuntiva per visualizzare il **nome del modulo**.
 
-- Selezionare **segni** nel **visualizzazione corrente** elenco a discesa.
+- Selezionare **Contrassegni** nell'elenco a discesa **visualizzazione corrente** .
 
-   Con il Profiler XSLT, sono presenti contrassegni nel flusso di raccolta dati con un commento associato. I contrassegni sono parti del codice che dispongono di contatori. Indicando al Profiler XSLT di raccogliere contatori delle prestazioni XSLT, i contatori vengono raccolti ogni volta che viene eseguito uno di questi contrassegni. I dati vengono visualizzati in una tabella che contiene il **ID contrassegno**, **nome contrassegno** (**Avvia programma**, **termina programma**) e il  **Data e ora**. I contrassegni non vengono aggregati e visualizzati in ordine cronologico nel **visualizzazione contrassegni** del rapporto di prestazioni.
+   Con il Profiler XSLT sono presenti contrassegni che vengono visualizzati nel flusso di raccolta dati con un commento associato. I contrassegni sono parti del codice che dispongono di contatori. Indicando al Profiler XSLT di raccogliere contatori delle prestazioni XSLT, i contatori vengono raccolti ogni volta che viene eseguito uno di questi contrassegni. I dati vengono visualizzati in una tabella contenente l' **ID contrassegno**, il **nome del contrassegno** (**programma Start**, il **programma finale**) e il **timestamp**. I contrassegni non vengono aggregati e vengono visualizzati in ordine cronologico nella **visualizzazione Contrassegni** del rapporto di prestazioni.
 
 ## <a name="select-modules-in-the-current-view"></a>Selezionare i moduli nella visualizzazione corrente
 
-- Selezionare **moduli** nel **visualizzazione corrente** elenco a discesa.
+- Selezionare **moduli** nell'elenco a discesa **visualizzazione corrente** .
 
-   La visualizzazione dei moduli è un elenco completo di tutte le funzioni aggregate a livello di modulo. Espandere o comprimere il nome del modulo per visualizzare o chiudere la visualizzazione dei dati relativi alle prestazioni del modulo. Per ordinare i dati è possibile fare clic sul nome di una colonna. Per impostazione predefinita, esistono sia valori assoluti che numeri in percentuale per **corrispondente al tempo inclusivo trascorso**, **corrispondente al tempo esclusivo trascorso**, **tempo inclusivo applicazione**, **Corrispondente al tempo esclusivo applicazione**, e **numero di chiamate**.
+   La visualizzazione dei moduli è un elenco completo di tutte le funzioni aggregate a livello di modulo. Espandere o comprimere il nome del modulo per visualizzare o chiudere la visualizzazione dei dati relativi alle prestazioni del modulo. Per ordinare i dati è possibile fare clic sul nome di una colonna. Per impostazione predefinita, sono presenti sia valori assoluti che numeri percentuali per il **tempo inclusivo trascorso**, il tempo **esclusivo trascorso**, il **tempo inclusivo applicazione**, il **tempo esclusivo applicazione**e il **numero di chiamate**.
 
-- Selezionare **processo** nel **visualizzazione corrente** elenco a discesa.
+- Selezionare **processo** nell'elenco a discesa **visualizzazione corrente** .
 
-   La visualizzazione processo Visualizza una tabella che include il **ID del processo**, **nome del processo**, **ora di inizio**e il **ora di fine**. Per ordinare i dati, è possibile fare clic sui nomi delle colonne.
+   Nella visualizzazione processo viene visualizzata una tabella che include l' **ID del processo**, il nome del **processo**, l'ora di **inizio**e l'ora di **fine**. Per ordinare i dati, è possibile fare clic sui nomi delle colonne.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Uso della gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Procedura dettagliata: utilizzo della gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

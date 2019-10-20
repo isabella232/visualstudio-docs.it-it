@@ -1,5 +1,5 @@
 ---
-title: Creare un controllo utente Windows Form con il data binding
+title: Creare un controllo utente Windows Forms con data binding
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,31 +9,31 @@ helpviewer_keywords:
 - data binding, user controls
 - data binding, complex
 - user controls [Visual Studio], complex data binding
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8da3485ac28d1d4f3ad77f3aa0ba381e0350dae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567637"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648653"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding complesso
 
-Quando si visualizzano dati nei form in applicazioni di Windows, è possibile scegliere i controlli esistenti dal **casella degli strumenti**. In alternativa, è possibile creare controlli personalizzati se l'applicazione richiede funzionalità che non è disponibile nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. I controlli che implementano <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contengono `DataSource` e la proprietà `DataMember` che può essere associata ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.DataGridView> o <xref:System.Windows.Forms.ListBox>.
+Quando si visualizzano i dati nei form nelle applicazioni Windows, è possibile scegliere i controlli esistenti dalla **casella degli strumenti**. In alternativa, è possibile creare controlli personalizzati se l'applicazione richiede funzionalità che non sono disponibili nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. I controlli che implementano <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contengono `DataSource` e la proprietà `DataMember` che può essere associata ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.DataGridView> o <xref:System.Windows.Forms.ListBox>.
 
-Per altre informazioni sulla creazione di controlli, vedere [lo sviluppo di Windows Form controlli in fase di progettazione](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Per ulteriori informazioni sulla creazione di controlli, vedere [sviluppo di controlli Windows Forms in fase di progettazione](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
 Quando si creano controlli da usare negli scenari di data binding, è necessario implementare uno degli attributi di data binding seguenti:
 
-|Utilizzo dell'attributo di data binding|
+|Utilizzo degli attributi di associazione dati|
 | - |
-|Implementare <xref:System.ComponentModel.DefaultBindingPropertyAttribute> su controlli semplici, ad esempio <xref:System.Windows.Forms.TextBox>, che visualizzano una singola colonna, o proprietà, di dati. Per altre informazioni, vedere [creare un controllo utente Windows Form che supporta il data binding semplice](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
+|Implementare <xref:System.ComponentModel.DefaultBindingPropertyAttribute> su controlli semplici, ad esempio <xref:System.Windows.Forms.TextBox>, che visualizzano una singola colonna, o proprietà, di dati. Per altre informazioni, vedere [creare un Windows Forms controllo utente che supporta data binding semplici](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
 |Implementare <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.DataGridView>, che visualizzano elenchi, o tabelle, di dati. Il processo è descritto in questa pagina di procedura dettagliata.|
-|Implementare <xref:System.ComponentModel.LookupBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.ComboBox>, che visualizzano elenchi, o tabelle, di dati ma che devono anche presentare una singola colonna o proprietà. Per altre informazioni, vedere [creare un controllo utente Windows Form che supporta l'associazione di dati di ricerca](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
+|Implementare <xref:System.ComponentModel.LookupBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.ComboBox>, che visualizzano elenchi, o tabelle, di dati ma che devono anche presentare una singola colonna o proprietà. Per altre informazioni, vedere [creare un Windows Forms controllo utente che supporta la ricerca data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
 Questa procedura dettagliata crea un controllo complesso che visualizza righe di dati da una tabella. In questo esempio viene usata la tabella `Customers` del database di esempio Northwind. Il controllo utente complesso visualizzerà la tabella dei clienti in un oggetto <xref:System.Windows.Forms.DataGridView> nel controllo personalizzato.
 
@@ -45,37 +45,37 @@ Durante questa procedura dettagliata si apprenderà come:
 
 - Implementare l'attributo `ComplexBindingProperty`.
 
-- Creare un set di dati con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
+- Creare un set di dati con la [Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
-- Impostare il **i clienti** nella tabella di [finestra Origini dati](add-new-data-sources.md#data-sources-window) per usare il nuovo controllo complesso.
+- Impostare la tabella **Customers** nella [finestra Origini dati](add-new-data-sources.md#data-sources-window) per usare il nuovo controllo complesso.
 
 - Aggiungere il nuovo controllo trascinandolo dalla finestra **Origini dati** in **Form1**.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
-Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
+In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare LocalDB di SQL Server Express come parte delle **elaborazione ed archiviazione dati** carico di lavoro, o come un singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
-1. Installare il database di esempio Northwind seguendo questa procedura:
+1. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
-    1. In Visual Studio, aprire il **Esplora oggetti di SQL Server** finestra. (Esplora oggetti di SQL Server viene installato come parte di **elaborazione ed archiviazione dati** carico di lavoro in Visual Studio Installer.) Espandere la **SQL Server** nodo. Fare doppio clic sull'istanza di Local DB e selezionare **nuova Query**.
+    1. In Visual Studio aprire la finestra **Esplora oggetti di SQL Server** . Esplora oggetti di SQL Server viene installato come parte del carico di lavoro di **elaborazione e archiviazione dei dati** nel programma di installazione di Visual Studio. Espandere il nodo **SQL Server** . Fare clic con il pulsante destro del mouse sull'istanza del database locale e scegliere **nuova query**.
 
-       Apre una finestra dell'editor di query.
+       Si apre una finestra dell'editor di query.
 
-    1. Copia il [script di Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
+    1. Copiare lo [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
 
-    1. Incollare lo script T-SQL nell'editor di query e quindi scegliere il **Execute** pulsante.
+    1. Incollare lo script T-SQL nell'editor di query, quindi scegliere il pulsante **Execute (Esegui** ).
 
-       Dopo un breve periodo di tempo, termina l'esecuzione di query e viene creato il database Northwind.
+       Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
-## <a name="create-a-windows-forms-app-project"></a>Creare un progetto di app di Windows Form
+## <a name="create-a-windows-forms-app-project"></a>Creare un progetto di app Windows Forms
 
-Il primo passaggio consiste nel creare un **App di Windows. Forms** progetto entrambi C# o Visual Basic. Assegnare al progetto il nome **ComplexControlWalkthrough**.
+Il primo passaggio consiste nel creare un progetto di **App Windows Forms** per C# o Visual Basic. Assegnare al progetto il nome **ComplexControlWalkthrough**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
 
-Poiché questa procedura dettagliata crea un controllo data binding complesso da un **controllo utente**, aggiungere un **controllo utente** elemento al progetto:
+Poiché in questa procedura dettagliata viene creato un controllo associabile a dati complesso da un **controllo utente**, aggiungere un elemento del **controllo utente** al progetto:
 
 1. Scegliere **Aggiungi controllo utente** dal menu **Progetto**.
 
@@ -85,9 +85,9 @@ Poiché questa procedura dettagliata crea un controllo data binding complesso da
 
 ## <a name="design-the-complexdatagridview-control"></a>Progettare il controllo ComplexDataGridView
 
-Per aggiungere un <xref:System.Windows.Forms.DataGridView> al controllo utente, trascinare un <xref:System.Windows.Forms.DataGridView> dalle **della casella degli strumenti** nell'area di progettazione del controllo utente.
+Per aggiungere un <xref:System.Windows.Forms.DataGridView> al controllo utente, trascinare una <xref:System.Windows.Forms.DataGridView> dalla **casella degli strumenti** nell'area di progettazione del controllo utente.
 
-## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo di data binding richiesto
+## <a name="add-the-required-data-binding-attribute"></a>Aggiungere l'attributo obbligatorio di associazione dati
 
 Per controlli semplici che supportano il data binding, è possibile implementare l'attributo <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
 
@@ -102,9 +102,9 @@ Per controlli semplici che supportano il data binding, è possibile implementare
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-Usare la **configurazione dell'origine dati** procedura guidata per creare un'origine dati in base il `Customers` tabella nel database di esempio Northwind:
+Utilizzare la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Customers` nel database di esempio Northwind:
 
-1. Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -118,7 +118,7 @@ Usare la **configurazione dell'origine dati** procedura guidata per creare un'or
 
 5. Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
 
-6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
+6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** fare clic su **Avanti**.
 
 7. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
@@ -142,7 +142,7 @@ Nella finestra **Origini dati** è possibile impostare il controllo da creare pr
 
 ## <a name="add-controls-to-the-form"></a>Aggiungere controlli al form
 
-È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** al form. Verificare che il **ComplexDataGridView** controllo utilizzato per visualizzare i dati della tabella.
+È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** al form. Verificare che il controllo **ComplexDataGridView** venga utilizzato per visualizzare i dati della tabella.
 
 ## <a name="run-the-application"></a>Esecuzione dell'applicazione
 
@@ -154,7 +154,7 @@ A seconda dei requisiti dell'applicazione, dopo la creazione di un controllo che
 
 - Posizionamento dei controlli personalizzati in una libreria di controlli in modo da poterli usare di nuovo in altre applicazioni.
 
-- Creazione di controlli che supportano scenari di ricerca. Per altre informazioni, vedere [creare un controllo utente Windows Form che supporta l'associazione di dati di ricerca](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
+- Creazione di controlli che supportano scenari di ricerca. Per altre informazioni, vedere [creare un Windows Forms controllo utente che supporta la ricerca data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
 ## <a name="see-also"></a>Vedere anche
 

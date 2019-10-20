@@ -7,71 +7,71 @@ helpviewer_keywords:
 - what's new [Visual Studio], architecture and modeling
 - architecture [Visual Studio], modeling
 - modeling software [Visual Studio], What's New
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 51d4f4d2af5dde398744d926e45200ec16c6214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476542"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666942"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novità relative alla progettazione in Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Convalida delle dipendenze in tempo reale
 
-Rimozione delle dipendenze indesiderate è una parte importante della gestione del debito tecnico. Visual Studio fornisce la convalida live delle dipendenze, incluse informazioni dettagliate sui problemi, ad esempio in cui si trovano. Dipendenze in tempo reale convalida accetta completa i vantaggi delle nuove funzionalità nell'elenco degli errori e nell'editor.
+La rimozione di dipendenze indesiderate è una parte importante della gestione del debito tecnico. Visual Studio fornisce la convalida in tempo reale delle dipendenze, incluse informazioni precise sui problemi, ad esempio la posizione in cui si trovano. La convalida delle dipendenze in tempo reale sfrutta tutti i vantaggi delle nuove funzionalità del Elenco errori e dell'editor.
 
-![Convalida delle dipendenze in tempo reale in azione](media/dep-validation-whatsnew-01.png)
+![Convalida delle dipendenze attive in azione](media/dep-validation-whatsnew-01.png)
 
-Esperienza di creazione è stata modificata per semplificare la convalida delle dipendenze più accessibili e individuabili. La terminologia è cambiato da "Diagramma livello" a "Diagramma di dipendenze".
+L'esperienza di creazione è cambiata per rendere la convalida delle dipendenze più individuabile e più accessibile. La terminologia è cambiata da "diagramma livello" a "diagramma delle dipendenze".
 
-Il **architettura** menu contiene ora un comando per creare direttamente un diagramma delle dipendenze:
+Il menu **architettura** contiene ora un comando per creare direttamente un diagramma delle dipendenze:
 
-![Elemento di dipendenza in tempo reale del menu architettura](media/dep-validation-whatsnew-02.png)
+![Elemento dipendenza in tempo reale nel menu architettura](media/dep-validation-whatsnew-02.png)
 
-I nomi delle proprietà di livello e le descrizioni sono state modificate in modo da renderli più significativi:
+I nomi e le descrizioni delle proprietà del livello sono stati modificati per renderli più significativi:
 
-![Nomi delle proprietà di dipendenza in tempo reale aggiornato](media/dep-validation-whatsnew-03.png)
+![Nomi di proprietà aggiornati sulle dipendenze attive](media/dep-validation-whatsnew-03.png)
 
-Noterete immediatamente l'impatto delle modifiche nei risultati di analisi per il codice nella soluzione corrente ogni volta che si salva il diagramma. Non è necessario attendere il completamento dei **convalidare le dipendenze** comando.
+Si noterà immediatamente l'effetto delle modifiche nei risultati dell'analisi per il codice corrente della soluzione ogni volta che si salva il diagramma. Non è necessario attendere il completamento del comando **convalida dipendenze** .
 
-Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Per altri dettagli, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
-## <a name="uml-designers-have-been-removed"></a>Sono state rimosse le finestre di progettazione UML
+## <a name="uml-designers-have-been-removed"></a>Le finestre di progettazione UML sono state rimosse
 
 Le finestre di progettazione UML sono state rimosse da Visual Studio.
 
-* Diagrammi UML sono ora presentati come file XML
+* I diagrammi UML sono ora presentati come file XML
 * Esplora modelli UML non esiste più
-* I riferimenti non vengono più utilizzati per la convalida delle dipendenze di progetto di modellazione
-* Il nodo "Riferimenti livello" in Esplora soluzioni non viene più visualizzato
-* L'azione di compilazione "Convalida" in un diagramma delle dipendenze (Layer) non viene più usato, l'attività di compilazione è stato rimosso
-* La struttura del progetto è stata mantenuta per sequenze di andata e ritorno tra versioni
-* Si può comunque aprire, creare, modificare e salvare un diagramma delle dipendenze (Layer) come XML
-* Elementi di lavoro TFS collegati a un diagramma delle dipendenze (Layer) non sono accessibili nell'area di progettazione
-* Il collegamento back-dal linguaggio specifico di dominio o un livello non è più supportato
-* Estendibilità UML nel SDK di modellazione non è più supportato
+* I riferimenti al progetto di modello non vengono più utilizzati per la convalida delle dipendenze
+* Il nodo "riferimenti a livello" in Esplora soluzioni non è più visualizzato
+* L'azione di compilazione "convalida" in un diagramma di dipendenza (livello) non è più utilizzata. l'attività di compilazione è stata rimossa
+* La struttura del progetto viene mantenuta per le sequenze di andata e ritorno tra le versioni
+* È comunque possibile aprire, creare, modificare e salvare un diagramma di dipendenza (livello) come XML
+* Gli elementi di lavoro TFS collegati a un diagramma di dipendenza (livello) non sono accessibili nell'area di progettazione
+* Il collegamento di nuovo da a DSL o a un livello non è più supportato
+* L'estendibilità UML nell'SDK di modellazione non è più supportata
 
-Supporto per visualizzare l'architettura di .NET e C++ codice è disponibile attraverso [mappe codici](map-dependencies-across-your-solutions.md).
+Il supporto per la visualizzazione dell'architettura di .NET C++ e del codice è disponibile tramite le [mappe codici](map-dependencies-across-your-solutions.md).
 
-Se sei un utente significative delle finestre di progettazione UML, è possibile continuare a usare Visual Studio 2015 o versioni precedenti, anche se si decide in uno strumento alternativo per le esigenze di UML.
+Se si è un utente significativo delle finestre di progettazione UML, è possibile continuare a usare Visual Studio 2015 o versioni precedenti, mentre si decide di usare uno strumento alternativo per le proprie esigenze UML.
 
-Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Per altri dettagli, vedere [questo post di Blog](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Supporto di edizione per un'architettura e strumenti di modellazione
+## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a>supporto <a name="VersionSupport" />Edition per gli strumenti di architettura e modellazione
 
-Visual Studio è disponibile in diverse edizioni. Non tutte le forniscono il supporto per l'architettura e strumenti di modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
+Visual Studio è disponibile in diverse edizioni. Non tutti forniscono supporto per gli strumenti di architettura e modellazione. La tabella seguente illustra la disponibilità di ogni strumento.
 
-|**Funzionalità**|**Edizione Enterprise**|**Professional edition**|**Edizione community**|
+|**Funzionalità**|**Enterprise Edition**|**Edizione Professional**|**Edizione community**|
 |-|-|-|-|
-|**Mappe codice**|Yes|Solo supporta la lettura di mappe codice, il filtro di codice viene eseguito il mapping, aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.|-|
-|**Diagrammi delle dipendenze**|Yes|Supporta solo la lettura di diagrammi delle dipendenze.|Supporta solo la lettura di diagrammi delle dipendenze.|
+|**Mappe codice**|Yes|Supporta solo la lettura delle mappe codice, l'applicazione di filtri alle mappe del codice, l'aggiunta di nuovi nodi generici e la creazione di un nuovo grafico diretto da una selezione.|-|
+|**Diagrammi delle dipendenze**|Yes|Supporta solo la lettura di diagrammi di dipendenza.|Supporta solo la lettura di diagrammi di dipendenza.|
 |**Grafici diretti** (diagrammi DGML)|Yes|Yes|Yes|
-|**Clone di codice**|Yes|-|-|
+|**Clone del codice**|Yes|-|-|

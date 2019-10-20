@@ -1,45 +1,45 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ClearCollection<T> ActivityDesigner
+title: ActivityDesigner <T> Progettazione flussi di lavoro-ClearCollection
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cab7ea023524da7e28e2baa2d4e5018cd091c60d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4808c046c4da23bc5c95d3978965afd938962f5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949994"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650693"
 ---
-# <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > ActivityDesigner
+# <a name="clearcollectiont-activity-designer"></a>ActivityDesigner \<T > ClearCollection
 
-Il **ClearCollection\<T >** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.ClearCollection%601> attività.
+Per creare e configurare un'attività <xref:System.Activities.Statements.ClearCollection%601>, viene utilizzato l'ActivityDesigner **clearcollection \<T >** .
 
-## <a name="the-clearcollectiont-activity"></a>ClearCollection\<T > attività
+## <a name="the-clearcollectiont-activity"></a>Attività \<T > ClearCollection
 
 L'attività <xref:System.Activities.Statements.ClearCollection%601> cancella tutti gli elementi di una raccolta specificata.
 
-### <a name="using-the-clearcollectiont-activity-designer"></a>Usando ClearCollection\<T > ActivityDesigner
+### <a name="using-the-clearcollectiont-activity-designer"></a>Uso di ClearCollection \<T > Activity Designer
 
-Il **ClearCollection\<T >** ActivityDesigner è reperibile nella **raccolta** categoria del **casella degli strumenti**, accessibile facendo clic di  **Casella degli strumenti** scheda della finestra di progettazione del flusso di lavoro. In alternativa, selezionare **della casella degli strumenti** dal **View** dal menu oppure premere **Ctrl**+**Alt** + **X**.
+L'ActivityDesigner **clearcollection \<T >** è disponibile nella categoria **raccolta** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** della progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL** +**ALT** +**X**.
 
-Il **ClearCollection\<T >** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che vengono posizionate le attività, ad esempio all'interno di un' <xref:System.Activities.Statements.Sequence>. La finestra di progettazione di attività di rilascio crea un <xref:System.Activities.Statements.ClearCollection%601> attività con un valore predefinito <xref:System.Activities.Activity.DisplayName%2A> clearcollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* viene **Int32**. TypeArgument può essere modificato nella griglia delle proprietà.) Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **ClearCollection < T\>**  ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+È possibile trascinare l'ActivityDesigner **clearcollection \<T >** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro quando vengono inserite le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Se si elimina l'ActivityDesigner, viene creata un'attività <xref:System.Activities.Statements.ClearCollection%601> con una <xref:System.Activities.Activity.DisplayName%2A> predefinita di ClearCollection < Int32 \>. Per impostazione predefinita, *TypeArgument* è **Int32**. TypeArgument può essere modificato nella griglia delle proprietà. Il valore <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **clearcollection < t \>** o nella casella **DisplayName** della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
 
-### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > proprietà
+### <a name="the-clearcollectiont-properties"></a>Proprietà > \<T ClearCollection
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ClearCollection%601> e ne viene descritta la modalità di uso nella finestra di progettazione.
 
-|Nome proprietà|Obbligatorio|Utilizzo|
+|Nome proprietà|Richiesto|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.ClearCollection%601>. Il valore predefinito è ClearCollection < Int32\>. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
-|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Specifica la raccolta di cui cancellare tutti gli elementi. Questa raccolta è di tipo **ICollection\<TypeArgument >.** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|*TypeArgument*|True|Specifica il tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, ciò *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore della *TypeArgument* nella casella combinata nella griglia delle proprietà.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.ClearCollection%601>. Il valore predefinito è ClearCollection < Int32 \>. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
+|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|Specifica la raccolta di cui cancellare tutti gli elementi. Questa raccolta è di tipo **ICollection \<TypeArgument >.** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|*TypeArgument*|True|Specifica il tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6bfc98d5ef6f7b3d3b6291ea55530325836d56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c19f436eddb3311e3bba70420dba6067ce2a8dca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918952"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645276"
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -34,29 +34,29 @@ Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vspr
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `path`
 
 Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È necessario specificare un percorso completo se il file specificato non si trova in una delle directory incluse nella variabile di ambiente PATH.
 
 `args`
 
-facoltativo. Argomenti da passare al programma richiamato.
+Parametro facoltativo. Argomenti da passare al programma richiamato.
 
 ## <a name="switches"></a>Opzioni
 /commandwindow [oppure] /command [oppure] /c [oppure] /cmd
 
-facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
+Parametro facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
 
 /dir:`folder` [oppure] /d: `folder`
 
-facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
+Parametro facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
 
 /outputwindow [oppure] /output [oppure] /out [oppure] /o
 
-facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
+Parametro facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.
 
 È possibile usare l'alias predefinito `Shell` invece di `Tools.Shell`.
@@ -88,6 +88,6 @@ Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartell
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Finestra di output](../../ide/reference/output-window.md)
+- [Output (finestra)](../../ide/reference/output-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -4,59 +4,59 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc7d4ef8e281cd56b7a585d516cd5d48028a00f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440026"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653702"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
-Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e nella finestra di esplorazione del linguaggio e sono accessibili da codice programma. Tuttavia, le proprietà differiscono in modo che i relativi valori vengono archiviati.
+Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora linguaggio ed è possibile accedervi tramite codice programma. Tuttavia, le proprietà differiscono in base alla modalità di archiviazione dei relativi valori.
 
-## <a name="kinds-of-domain-properties"></a>Tipi di proprietà di dominio
- Nella definizione DSL, è possibile impostare il **tipo** della proprietà del dominio, come indicato nella tabella seguente:
+## <a name="kinds-of-domain-properties"></a>Tipi di proprietà del dominio
+ Nella definizione DSL è possibile impostare il **tipo** di una proprietà di dominio, come elencato nella tabella seguente:
 
 |Tipo di proprietà del dominio|Descrizione|
 |-|-|
-|**Standard** (predefinito)|Proprietà di dominio che viene salvata nel *archiviare* e serializzato nel file.|
-|**Calcolata**|Proprietà di dominio di sola lettura che non viene salvata nell'archivio, ma viene calcolata da altri valori.<br /><br /> Ad esempio, `Person.Age` può essere calcolata dalla `Person.BirthDate`.<br /><br /> È necessario fornire il codice che esegue il calcolo. In genere, si calcola il valore da altre proprietà di dominio. Tuttavia, è possibile utilizzare anche le risorse esterne.|
-|**Archiviazione personalizzata**|Proprietà di dominio che non viene salvata direttamente nell'archivio, ma può essere sia get che set.<br /><br /> È necessario fornire i metodi che ottenere e impostare il valore.<br /><br /> Ad esempio, `Person.FullAddress` possono essere archiviati in `Person.StreetAddress`, `Person.City`, e `Person.PostalCode`.<br /><br /> È anche possibile accedere alle risorse esterne, ad esempio per ottenere e impostare i valori da un database.<br /><br /> Il codice non necessario impostare i valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Visualizzare [transazioni e setter personalizzato](#setters).|
+|**Standard** (impostazione predefinita)|Proprietà di dominio salvata nell' *Archivio* e serializzata in un file.|
+|**Calcolato**|Proprietà di dominio di sola lettura che non viene salvata nell'archivio, ma viene calcolata da altri valori.<br /><br /> È ad esempio possibile calcolare `Person.Age` da `Person.BirthDate`.<br /><br /> È necessario fornire il codice per eseguire il calcolo. In genere, il valore viene calcolato dalle altre proprietà del dominio. Tuttavia, è anche possibile usare le risorse esterne.|
+|**Archiviazione personalizzata**|Proprietà di dominio che non viene salvata direttamente nell'archivio, ma che può essere Get e set.<br /><br /> È necessario fornire i metodi che ottengono e impostano il valore.<br /><br /> Ad esempio, `Person.FullAddress` possibile archiviare in `Person.StreetAddress`, `Person.City` e `Person.PostalCode`.<br /><br /> È anche possibile accedere alle risorse esterne, ad esempio per ottenere e impostare i valori da un database.<br /><br /> Il codice non deve impostare i valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Vedere [transazioni e setter personalizzati](#setters).|
 
-## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Fornire il codice per una proprietà calcolata o personalizzati nell'archivio
- Se si imposta il tipo della proprietà del dominio su Calculated o archiviazione personalizzata, è necessario fornire i metodi di accesso. Quando si compila la soluzione, un report degli errori indicherà quali sono i requisiti.
+## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Fornire il codice per una proprietà di archiviazione calcolata o personalizzata
+ Se si imposta il tipo di una proprietà di dominio su un archivio calcolato o personalizzato, è necessario fornire i metodi di accesso. Quando si compila la soluzione, una segnalazione errori indica gli elementi necessari.
 
-#### <a name="to-define-a-calculated-or-custom-storage-property"></a>Per definire un valore calcolato o una proprietà di archiviazione personalizzati
+#### <a name="to-define-a-calculated-or-custom-storage-property"></a>Per definire una proprietà di archiviazione calcolata o personalizzata
 
-1. In Dsldefinition, selezionare la proprietà di dominio nel diagramma o nel **DSL Explorer**.
+1. In DslDefinition. DSL selezionare la proprietà di dominio nel diagramma o in **DSL Explorer**.
 
-2. Nel **delle proprietà** impostare nella finestra di **tipo** campo **Calculated** o **archiviazione personalizzata**.
+2. Nella finestra **Proprietà** impostare il campo **tipo** su archiviazione **calcolata** o **personalizzata**.
 
-     Assicurarsi di aver impostato anche relativi **tipo** nel modo desiderato.
+     Assicurarsi di aver impostato anche il **tipo** su quello desiderato.
 
-3. Fare clic su **Trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni**.
+3. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti di **Esplora soluzioni**.
 
 4. Scegliere **Compila soluzione** dal menu **Compila**.
 
-     Viene visualizzato il messaggio seguente: "*ClasseUtente* non contiene una definizione per Get*proprietà*."
+     Viene visualizzato il messaggio di errore seguente: "*ClasseUtente* non contiene una definizione per Get*Proprietà*".
 
 5. Fare doppio clic sul messaggio di errore.
 
-     Dsl\generatedcode\domainclasses.cs. o DomainRelationships.cs viene aperto. Sopra la chiamata al metodo evidenziato un commento viene richiesto di fornire un'implementazione di Get*proprietà*().
+     Viene aperto Dsl\GeneratedCode\DomainClasses.cs o DomainRelationships.cs. Al di sopra della chiamata al metodo evidenziato, un commento richiede di fornire un'implementazione per Get*Proprietà*().
 
     > [!NOTE]
-    > Questo file viene generato da Dsldefinition. Se si modifica questo file, le modifiche andranno perse la volta successiva che si fa clic su **Trasforma tutti i modelli**. Al contrario, aggiungere il metodo richiesto in un file separato.
+    > Questo file viene generato da DslDefinition. DSL. Se si modifica questo file, le modifiche andranno perse la volta successiva che si fa clic su **trasforma tutti i modelli**. Aggiungere invece il metodo richiesto in un file separato.
 
-6. Creare o aprire un file di classe in una cartella distinta, ad esempio Customcoded\\*YourDomainClass*. cs.
+6. Creare o aprire un file di classe in una cartella separata, ad esempio CustomCoded \\*YourDomainClass*. cs.
 
-     Assicurarsi che lo spazio dei nomi è uguale a quello del codice generato.
+     Verificare che lo spazio dei nomi corrisponda a quello del codice generato.
 
-7. Nel file di classe, scrivere un'implementazione parziale della classe di dominio. Nella classe, scrivere una definizione di parametro mancante `Get` metodo simile al seguente:
+7. Nel file di classe scrivere un'implementazione parziale della classe di dominio. Nella classe scrivere una definizione per il metodo `Get` mancante simile all'esempio seguente:
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
     }  }
     ```
 
-8. Se si imposta **genere** al **archiviazione personalizzata**, sarà inoltre necessario fornire un `Set` (metodo). Ad esempio:
+8. Se si imposta **Kind** sull' **archiviazione personalizzata**, sarà necessario fornire anche un `Set` metodo. Esempio:
 
     ```
     void SetAgeValue(int value)
@@ -75,22 +75,22 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
             System.DateTime.Today.Year - value; }
     ```
 
-     Il codice non necessario impostare i valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Visualizzare [transazioni e setter personalizzato](#setters).
+     Il codice non deve impostare i valori nell'archivio quando `Store.InUndoRedoOrRollback` è true. Vedere [transazioni e setter personalizzati](#setters).
 
 9. Compilare ed eseguire la soluzione.
 
-10. Testare la proprietà. Assicurarsi che provi **Undo** e **Ripeti**.
+10. Testare la proprietà. Assicurarsi di provare a **annullare** e **ripetere**l'operazione.
 
-## <a name="setters"></a> Le transazioni e setter personalizzato
- Nel metodo Set di proprietà di archiviazione personalizzati, non è necessario aprire una transazione, poiché il metodo viene chiamato in genere all'interno di una transazione attiva.
+## <a name="setters"></a>Transazioni e setter personalizzati
+ Nel metodo set della proprietà di archiviazione personalizzata non è necessario aprire una transazione, perché il metodo viene in genere chiamato all'interno di una transazione attiva.
 
- Il metodo Set, tuttavia, potrebbe essere chiamato anche se l'utente richiama l'annullamento o ripristino o se una transazione è in fase di rollback. Quando si <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> è true, il metodo Set deve comportarsi come indicato di seguito:
+ Tuttavia, il metodo set può essere chiamato anche se l'utente richiama l'annullamento o la ripetizione o se viene eseguito il rollback di una transazione. Quando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> è true, il metodo set dovrebbe comportarsi come segue:
 
-- Consigliabile non apportare modifiche nell'archivio, ad esempio l'assegnazione di valori di altre proprietà di dominio. La gestione degli annullamenti imposterà i relativi valori.
+- Non dovrebbe apportare modifiche nell'archivio, ad esempio l'assegnazione di valori ad altre proprietà del dominio. I valori vengono impostati dal gestore di annullamento.
 
-- Tuttavia, è necessario aggiornare eventuali risorse esterne, ad esempio database di contenuto del file o oggetti all'esterno dell'archivio. Questo garantirà che si trovano in synchronism con i valori nell'archivio.
+- Tuttavia, deve aggiornare tutte le risorse esterne, ad esempio il contenuto di un database o di un file, o oggetti all'esterno dell'archivio. In questo modo verranno mantenuti sincronizzati con i valori nell'archivio.
 
-  Ad esempio:
+  Esempio:
 
 ```
 void SetAgeValue(int value)
@@ -105,7 +105,7 @@ void SetAgeValue(int value)
 }
 ```
 
- Per altre informazioni sulle transazioni, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
+ Per ulteriori informazioni sulle transazioni, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Vedere anche
 

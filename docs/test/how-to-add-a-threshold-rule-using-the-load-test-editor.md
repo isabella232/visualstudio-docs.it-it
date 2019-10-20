@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, analyzing
 - thresholds in load tests
 ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4ecec4826966205d849c07169da954198d687696
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002290"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644432"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedura: Aggiungere una regola di soglia usando l'Editor test di carico
 
@@ -36,7 +36,7 @@ Le regole di soglia nei test di carico consentono di confrontare il valore di un
 
      Viene visualizzata la finestra di dialogo **Aggiungi regola di soglia**.
 
-5. È possibile scegliere tra due tipi di regole: **Confronta costante** e **Confronta Contatori**. Selezionare il tipo appropriato e impostare i valori.
+5. È possibile scegliere tra due tipi di regole: **Confronta costante** e **Confronta contatori**. Selezionare il tipo appropriato e impostare i valori.
 
     > [!NOTE]
     > Impostare la proprietà **Avvisa se supera** su **True** per indicare che il superamento della soglia è un problema oppure su **False** per indicare che il non raggiungimento della soglia è un problema.

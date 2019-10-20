@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342457"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646638"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -57,7 +57,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ### <a name="run-tests"></a>Esegui test
 
 ::: moniker range="vs-2017"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Effettuare una delle operazioni riportate di seguito:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -70,7 +70,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Effettuare una delle operazioni riportate di seguito:
 
 - Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
 
@@ -125,7 +125,7 @@ Se il test non viene superato, il riquadro dei dettagli mostra anche le informaz
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Visualizzare il codice sorgente di un metodo di test
 
-Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**).
+Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Raggruppare e filtrare l'elenco dei test
 
@@ -151,20 +151,20 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
 ::: moniker range="vs-2017"
-|Group|Descrizione|
+|Raggruppa|Descrizione|
 |-|-----------------|
-|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
+|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Group|Descrizione|
+|Raggruppa|Descrizione|
 |-|-----------------|
-|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
-|**Stato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**, **Non eseguiti**|
+|**Durata**|Raggruppa i test in base al tempo di esecuzione: **veloce**, **medio**e **lento**.|
+|**Stato**|Raggruppa i test per risultati di esecuzione: **test non**superati, **test ignorati**, **test superati**, **non eseguiti**|
 |**Framework di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
-|**Spazio dei nomi**|Raggruppa i test in base allo spazio dei nomi contenitore.|
+|**Namespace**|Raggruppa i test in base allo spazio dei nomi contenitore.|
 |**Progetto**|Raggruppa i test in base al progetto contenitore.|
 |**Classe**|Raggruppa i test in base alla classe contenitore.|
 ::: moniker-end
@@ -205,13 +205,13 @@ Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-
 Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco vengono visualizzati in una nuova scheda di Esplora test. È possibile aggiungere un test a più di una playlist.
+È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test nell'elenco vengono visualizzati in una nuova scheda Esplora test. È possibile aggiungere un test a più di una playlist.
 
 **Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** > **Nuova playlist** dal menu di scelta rapida.
 
 ![Creare una playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
-La playlist si apre in una nuova scheda di Esplora test. È possibile usare questa playlist una volta e quindi eliminarla oppure fare clic sul pulsante **Salva** sulla barra degli strumenti della finestra della playlist, quindi selezionare un nome e un percorso in cui salvarla.
+La playlist verrà aperta in una nuova scheda Esplora test. È possibile usare questa playlist una volta e quindi eliminarla oppure fare clic sul pulsante **Salva** sulla barra degli strumenti della finestra della playlist, quindi selezionare un nome e un percorso per salvare la playlist.
 
 ![La playlist si apre in una nuova scheda di Esplora test](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
@@ -274,17 +274,17 @@ Per filtrare in base a un criterio diverso:
 |**Percorso file**|Cerca le corrispondenze nel nome file completo dei file di origine test.|
 |**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
 |**Output**|Cerca nei messaggi di errore definiti dall'utente che vengono scritti in stdout (standard output) o stderr (stderr). La sintassi per specificare i messaggi di output è definita dal framework di unit test.|
-|**Risultato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
+|**Risultato**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Qualificatore|Descrizione|
 |-|-----------------|
-|**Stato**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
+|**Stato**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
-|**Framework di destinazione**|Cerca i nomi delle categorie di Esplora test corrispondenti: **Test non superati**, **Test ignorati**, **Test superati**.|
-|**Spazio dei nomi**|Cerca le corrispondenze negli spazi dei nomi di test.|
+|**Framework di destinazione**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
+|**Namespace**|Cerca le corrispondenze negli spazi dei nomi di test.|
 |**Classe**|Cerca le corrispondenze nei nomi delle classi di test.|
 ::: moniker-end
 

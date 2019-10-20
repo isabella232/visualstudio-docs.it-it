@@ -1,5 +1,5 @@
 ---
-title: 'CA2223: I membri devono limitarsi al tipo restituito | Microsoft Docs'
+title: 'CA2223: i membri devono differire più del tipo restituito | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201597"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658885"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: La differenza tra membri non deve limitarsi al tipo restituito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "68201597"
 |-|-|
 |TypeName|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|Category|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Due membri pubblici o protetti con firme identiche ad eccezione di tipo restituito.
+ Due membri public o protected hanno firme identiche, ad eccezione del tipo restituito.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Anche se common language runtime consenta l'utilizzo dei tipi restituiti per differenziare membri altrimenti identici, questa funzionalità non è incluso nel Common Language Specification, né è una funzionalità comune dei linguaggi di programmazione .NET. Quando i membri sono diversi solo per il tipo restituito, gli sviluppatori e gli strumenti di sviluppo potrebbero non correttamente distinguere tra di essi.
+ Sebbene il Common Language Runtime consenta l'uso di tipi restituiti per distinguere membri altrimenti identici, questa funzionalità non si trova nel Common Language Specification, né è una funzionalità comune dei linguaggi di programmazione .NET. Quando i membri differiscono solo per il tipo restituito, gli sviluppatori e gli strumenti di sviluppo potrebbero non distinguere correttamente tra di essi.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare la progettazione dei membri sono univoci basati solo sul relativi nomi e tipi di parametro, o non espongono i membri.
+ Per correggere una violazione di questa regola, modificare la progettazione dei membri in modo che siano univoci solo in base ai nomi e ai tipi di parametro oppure non esporre i membri.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente, in Microsoft intermediate language (MSIL), viene illustrato un tipo che viola la regola. Si noti che questa regola non può essere violata usando c# o Visual Basic .NET.
+ Nell'esempio seguente, in Microsoft Intermediate Language (MSIL), viene illustrato un tipo che viola questa regola. Si noti che questa regola non può essere violata C# tramite o Visual Basic .NET.
 
 ```
 

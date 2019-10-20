@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262286"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653044"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Domande frequenti su Live Unit Testing
 
@@ -31,7 +31,7 @@ Live Unit Testing è compatibile con i tre framework di testing unità elencati 
 
 Se sono presenti progetti di test basati su MSTest precedenti che fanno riferimento a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` e non si vuole passare ai pacchetti NuGet di MSTest più recenti, eseguire l'aggiornamento a Visual Studio 2019 o Visual Studio 2017.
 
-In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui viene fatto riferimento nei progetti della soluzione. È possibile ripristinare i pacchetti eseguendo una compilazione esplicita della soluzione (selezionare **compila** > **Ricompila soluzione** dal menu di primo livello di Visual Studio) o facendo clic con il pulsante destro del mouse sulla soluzione e selezionando **Ripristina pacchetti NuGet** . prima di abilitare Living unit testing.
+In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui viene fatto riferimento nei progetti della soluzione. È possibile ripristinare i pacchetti eseguendo una compilazione esplicita della soluzione (selezionare **compila**  > **Ricompila soluzione** dal menu di primo livello di Visual Studio) oppure facendo clic con il pulsante destro del mouse sulla soluzione e selezionando **Ripristina pacchetti NuGet** . prima di abilitare Living unit testing.
 
 ## <a name="net-core-support"></a>Supporto di .NET Core
 
@@ -87,7 +87,7 @@ Ad esempio, potrebbe essere presente una destinazione che produce pacchetti NuGe
 
 ## <a name="error-messages-with-outputpath-or-outdir"></a>Messaggi di errore con \<OutputPath > o \<OutDir >
 
-**Perché quando Live Unit Testing prova a compilare la soluzione viene visualizzato l'errore "...sembra impostato in modo incondizionato su `<OutputPath>` o `<OutDir>`. In Live Unit Testing non verranno eseguiti test dall'assembly di output"?**
+**Perché viene generato l'errore seguente quando Live Unit Testing tenta di compilare la soluzione: "... sembra impostare in modo non condizionale `<OutputPath>` o `<OutDir>`. Live Unit Testing non eseguirà i test dall'assembly di output "?**
 
 Questo errore può verificarsi se il processo di compilazione per la soluzione esegue in modo incondizionato l'override di `<OutputPath>` o `<OutDir>` in modo tale che non sia una sottodirectory di `<BaseOutputPath>`. In tali casi Live Unit Testing non funziona, perché esegue anche l'override di questi elementi per assicurarsi che gli artefatti di compilazione vengano rilasciati in una cartella in `<BaseOutputPath>`. Se è necessario eseguire l'override del percorso devono essere rilasciati gli artefatti di compilazione in una compilazione normale, eseguire l'override di `<OutputPath>` in modo condizionale in base a `<BaseOutputPath>`.
 
@@ -118,7 +118,7 @@ Non eseguire l'override di `<OutDir>` direttamente nel processo di compilazione,
 
 ## <a name="build-artifact-location"></a>Percorso artefatto di compilazione
 
-**Si vogliono impostare gli artefatti di una compilazione di Live Unit Testing in modo che vengano rilasciati in un percorso specifico invece di quello predefinito nella cartella *vs*. Come si può modificare questa impostazione?**
+**Si vuole che gli elementi di una compilazione Live Unit Testing vengano indirizzati a un percorso specifico anziché al percorso predefinito nella cartella *. vs* . Come posso modificare questo?**
 
 Impostare la variabile di ambiente a livello di utente `LiveUnitTesting_BuildRoot` sul percorso in cui si vuole che vengano rilasciati gli artefatti di compilazione di Live Unit Testing. 
 

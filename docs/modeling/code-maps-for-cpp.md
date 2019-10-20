@@ -1,26 +1,26 @@
 ---
-title: Visualizzare le dipendenze tra file di intestazione e i file di origine C++
+title: Visualizzare le dipendenze tra C++ i file di origine e i file di intestazione
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904ff08496257d18589e36e5878f49404bbdf7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422181"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654187"
 ---
-# <a name="code-maps-for-c-projects"></a>Le mappe codice per i progetti C++
+# <a name="code-maps-for-c-projects"></a>Mappe del codice C++ per i progetti
 
-Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione (**/FR**) su tali progetti. In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive.
+Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione ( **/FR**) su tali progetti. In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive.
 
-Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento del database di IntelliSense potrebbe richiedere del tempo. Durante questo periodo, non è in grado di creare mappe codice per l'intestazione (*h* o `#include`) i file fino a quando il database di IntelliSense ha completato l'aggiornamento. È possibile monitorare lo stato di avanzamento dell'aggiornamento nella barra di stato di Visual Studio.
+Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento del database di IntelliSense potrebbe richiedere del tempo. Durante questo periodo, potrebbe non essere possibile creare mappe codice per file di intestazione ( *. h* o `#include`) fino al termine dell'aggiornamento del database IntelliSense. È possibile monitorare lo stato di avanzamento dell'aggiornamento nella barra di stato di Visual Studio.
 
-- Per visualizzare le dipendenze tra tutti i file di origine e i file di intestazione nella soluzione, selezionare **Architecture** > **Genera grafico dei file di inclusione**.
+- Per visualizzare le dipendenze tra tutti i file di origine e i file di intestazione nella soluzione, selezionare **architettura**  > **Genera grafico dei file di inclusione**.
 
    ![Grafico delle dipendenze per il codice nativo](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -28,7 +28,7 @@ Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento d
 
    ![Grafico delle dipendenze di primo livello per il file con estensione h](../modeling/media/dependencygraph_native_firstlevel.png)
 
-## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Risolvere i problemi delle mappe codici per codice C e C++
+## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Risolvere i problemi relativi alle mappe C++ codici per C e codice
 
 Gli elementi seguenti non sono supportati nel codice C e C++:
 
@@ -36,13 +36,13 @@ Gli elementi seguenti non sono supportati nel codice C e C++:
 
 - La maggior parte delle voci di menu **Mostra** non è disponibile per il codice C e C++.
 
-Questi problemi potrebbero verificarsi quando si creano mappe codici per codice C e C++:
+Questi problemi possono verificarsi quando si creano mappe del codice per C C++ e il codice:
 
 |**Problema**|**Possibile causa**|**Risoluzione**|
 |-|-|-|
 |Non è stato possibile generare la mappa codice.|Nessun progetto nella soluzione è stato compilato correttamente.|Correggere gli errori di compilazione che si sono verificati, quindi rigenerare la mappa.|
-|Visual Studio si blocca quando si prova a generare una mappa codice dal **architettura** menu.|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|
-|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate in Visual Studio **opzioni** nella finestra di dialogo.|Attivare le impostazioni per abilitarle.<br /><br /> Visualizzare [opzioni, Editor di testo, C/C++, avanzate](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|Quando si prova a generare una mappa codice dal menu **architettura** , Visual Studio smette di rispondere.|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|
+|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella finestra di dialogo **Opzioni** di Visual Studio.|Attivare le impostazioni per abilitarle.<br /><br /> Vedere [Opzioni, editor di testo, CC++/, avanzate](../ide/reference/options-text-editor-c-cpp-advanced.md).|
 |Il messaggio **Metodi sconosciuti** viene visualizzato su un nodo di metodo.<br /><br /> Questo problema si verifica perché non è possibile risolvere il nome del metodo.|Il file binario potrebbe non disporre di una tabella di rilocazione di base.|Attivare l'opzione **/FIXED:NO** nel linker.|
 ||Il file di database del programma (con estensione pdb) potrebbe non essere compilato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Attivare l'opzione **/DEBUG** nel linker.|
 ||Non è possibile aprire o trovare il file pdb nei percorsi previsti.|Verificare che il file pdb esista nei percorsi previsti.|
@@ -51,4 +51,4 @@ Questi problemi potrebbero verificarsi quando si creano mappe codici per codice 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Mappare le dipendenze con le mappe codici](../modeling/map-dependencies-across-your-solutions.md)
+- [Eseguire il mapping delle dipendenze con le mappe codice](../modeling/map-dependencies-across-your-solutions.md)

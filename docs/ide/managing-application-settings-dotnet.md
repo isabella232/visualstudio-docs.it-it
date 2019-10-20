@@ -6,17 +6,17 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0627a96bf100232987ace5a42430310912f97b8c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252082"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654628"
 ---
 # <a name="manage-application-settings-net"></a>Gestire le impostazioni dell'applicazione (.NET)
 
@@ -26,7 +26,7 @@ Le impostazioni dell'applicazione sostituiscono le proprietà dinamiche usate ne
 
 Ogni impostazione dell'applicazione deve avere un nome univoco. Tale nome può essere formato da una combinazione di lettere, numeri o un carattere di sottolineatura, non può iniziare con un numero e non può avere spazi. Il nome viene modificato tramite la proprietà `Name`.
 
-Le impostazioni dell'applicazione possono essere archiviate come qualsiasi tipo di dati che viene serializzato come XML che abbia un oggetto `TypeConverter` che implementa `ToString`/`FromString`. I tipi più comuni sono `String`, `Integer`e `Boolean`, ma è anche possibile archiviare i valori come <xref:System.Drawing.Color>, <xref:System.Object>o come una stringa di connessione.
+Le impostazioni dell'applicazione possono essere archiviate come qualsiasi tipo di dati che viene serializzato come XML che abbia un oggetto `TypeConverter` che implementa `ToString`/`FromString`. I tipi più comuni sono `String`, `Integer` e `Boolean`, ma è anche possibile archiviare i valori come <xref:System.Drawing.Color>, <xref:System.Object> o come una stringa di connessione.
 
 Anche le impostazioni dell'applicazione mantengono un valore. Il valore viene impostato con la proprietà **Valore** e deve corrispondere al tipo di dati dell'impostazione.
 
@@ -72,7 +72,7 @@ Quando si crea un'impostazione con ambito di utente, ad esempio il tipo di carat
 
 Ad esempio, è possibile aggiungere un file quale *SpecialSettings.settings* al progetto. Mentre la classe `SpecialSettings` non è esposta nello spazio dei nomi `My` , **Visualizza codice** può leggere il file di impostazioni personalizzate contenente `Partial Class SpecialSettings`.
 
-**Progettazione impostazioni** cerca innanzi tutto il file *Settings.settings* creato dal sistema del progetto, ovvero il file predefinito visualizzato nella scheda **Impostazioni** di **Creazione progetti**. *Settings.settings* è situato nella cartella *Progetti* per i progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e nella cartella *Proprietà* per i progetti [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Successivamente, **Creazione progetti** cerca gli altri file di impostazioni nella cartella radice del progetto. Pertanto, è necessario inserirvi il file di impostazioni personalizzato. Se si aggiunge un file *.settings* in un altro punto del progetto, questo non verrà trovato da **Creazione progetti**.
+La **finestra di progettazione delle impostazioni** cerca innanzitutto il file *Settings. Settings* creato dal sistema del progetto; Questo file è il file predefinito visualizzato in **Progettazione progetti** nella scheda **Impostazioni** . *Settings. Settings* si trova nella cartella *progetto* per i progetti [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e nella cartella *Proprietà* per i progetti [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Successivamente, **Creazione progetti** cerca gli altri file di impostazioni nella cartella radice del progetto. Pertanto, è necessario inserirvi il file di impostazioni personalizzato. Se si aggiunge un file *.settings* in un altro punto del progetto, questo non verrà trovato da **Creazione progetti**.
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Accedere o modificare le impostazioni dell'applicazione in fase di esecuzione in Visual Basic
 

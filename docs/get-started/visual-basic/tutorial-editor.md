@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ebbe6ac8ef8e6a6de99159fa8dd5169a9dcac06
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: fd9643e92d4774ca1356534faca9e031395ff4d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180404"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632645"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -26,14 +26,14 @@ In questa introduzione all'editor di codice di Visual Studio della durata di 10 
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+> Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+> Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Sono disponibili frammenti di codice per determinare se esiste un file nel compu
 
 ## <a name="comment-out-code"></a>Codice di impostazione come commento
 
-La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di Visual Studio, contribuisce ad aumentare la produttività in fase di creazione del codice. È possibile, ad esempio, attivare o disattivare la modalità di terminazione IntelliSense, aumentare o ridurre un rientro riga o impostare come commento una parte del codice che non si desidera compilare. [IntelliSense](../../ide/using-intellisense.md) è uno strumento per la scrittura del codice che consente di visualizzare un elenco di metodi, tra le altre cose. In questa sezione, una porzione del codice verrà impostata come commento.
+La barra degli strumenti, ovvero la riga di pulsanti sotto la barra dei menu di Visual Studio, contribuisce ad aumentare la produttività in fase di creazione del codice. È possibile, ad esempio, attivare o disattivare la modalità di terminazione IntelliSense, aumentare o ridurre un rientro riga o impostare come commento una parte del codice che non si desidera compilare. [IntelliSense](../../ide/using-intellisense.md) è un supporto per la codifica che visualizza un elenco di metodi corrispondenti, tra le altre cose. In questa sezione verrà aggiunto un commento al codice.
 
 ![Pulsanti della barra degli strumenti editor](media/tutorial-editor-toolbar.png)
 
@@ -132,7 +132,7 @@ Il blocco di codice viene compresso e visualizza solo la prima riga seguita dai 
 
 ## <a name="view-symbol-definitions"></a>Visualizzare le definizioni dei simboli
 
-L'editor di Visual Studio semplifica l'ispezione della definizione di un tipo, un metodo e così via. Ad esempio è possibile navigare al file contenente la definizione scegliendo **Vai alla definizione** in qualsiasi punto in cui esiste un riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `String`.
+L'editor di Visual Studio consente di ispezionare facilmente la definizione di un tipo, un metodo e così via. Un modo consiste nel passare al file che contiene la definizione, ad esempio scegliendo **Vai a definizione** in qualsiasi punto in cui viene fatto riferimento al simbolo. Un metodo ancora più veloce che non sposta lo stato attivo dal file in uso è rappresentato da [Visualizza definizione](../../ide/go-to-and-peek-definition.md#peek-definition). Di seguito si procede a visualizzare la definizione del tipo `String`.
 
 1. Fare clic con il pulsante destro del mouse sulla parola `String` e scegliere **Visualizza definizione** dal menu del contenuto. In alternativa, premere **Alt**+**F12**.
 
@@ -185,7 +185,7 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: progetti e soluzioni](tutorial-projects-solutions.md)
+> [Introduzione a progetti e soluzioni](tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

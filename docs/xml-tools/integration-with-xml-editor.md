@@ -3,31 +3,31 @@ title: Integrazione di progettazione XML Schema con l'editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9df2d97a6ff68299ab70545683970188eb1bfea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001860"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601775"
 ---
 # <a name="integration-with-xml-editor"></a>Integrazione con l'editor XML
 
-Progettazione XML Schema è integrato con l'editor XML. Se si modifica un file XSD nell'editor XML, la modifica si rifletterà nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se si dispone di [visualizzazione grafico](../xml-tools/graph-view.md) o il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) aperta, la modifica si rifletterà anche presenti. È possibile spostarsi tra Progettazione XML Schema e l'editor XML nei modi seguenti:
+Progettazione XML Schema è integrato con l'editor XML. Se si modifica un file XSD nell'editor XML, la modifica viene riflessa in [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se è aperta la [visualizzazione grafico](../xml-tools/graph-view.md) o la [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) , la modifica verrà riflessa anche in questa posizione. È possibile spostarsi tra progettazione XML Schema e l'editor XML nei modi seguenti:
 
-- Nell'editor XML, fare doppio clic su un nodo e selezionare **Mostra in XML Schema Explorer**.
+- Nell'editor XML, fare clic con il pulsante destro del mouse su un nodo e selezionare **Mostra in XML Schema Explorer**.
 
-- Nella visualizzazione grafico e la **XML Schema Explorer**, fare doppio clic su un nodo, o fare doppio clic su un nodo e selezionare **Visualizza codice**. Nella visualizzazione modello di contenuto, fare doppio clic su un nodo e selezionare **Visualizza codice**.
+- Nella visualizzazione grafico e in **XML Schema Explorer**fare doppio clic su un nodo oppure fare clic con il pulsante destro del mouse su un nodo e selezionare **Visualizza codice**. Nella visualizzazione modello di contenuto, fare clic con il pulsante destro del mouse su un nodo e selezionare **Visualizza codice**.
 
-Lo screenshot seguente mostra uno Schema XML aperto nel **XML Schema Explorer**. Il **XML Schema Explorer** consente di visualizzare l'insieme in una visualizzazione struttura ad albero dello schema. L'editor XML consente di visualizzare la visualizzazione di testo del nodo attualmente attivo nel **XML Schema Explorer**.
+Nella schermata seguente viene illustrato un XML schema aperto in **XML Schema Explorer**. In **XML Schema Explorer** viene visualizzato il set di schemi in una visualizzazione struttura ad albero. Nell'editor XML viene visualizzata la visualizzazione di testo del nodo attualmente attivo in **XML Schema Explorer**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-In alcuni casi è utile visualizzare il codice nell'editor XML e la finestra di progettazione grafica fianco a fianco. Per visualizzare entrambi i file nello stesso momento, fare doppio clic su un punto qualsiasi nell'editor XML e selezionare **Progettazione viste**. Nel menu di Visual Studio Windows, selezionare **nuovo orizzontali (o verticali) gruppo di schede**.
+A volte è utile visualizzare il codice nell'editor XML e la finestra di progettazione grafica affiancata. Per visualizzare entrambi i file nello stesso momento, fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor XML e scegliere **Visualizza finestra di progettazione**. Nel menu Windows di Visual Studio selezionare **nuovo gruppo di schede orizzontale (o verticale)** .
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 

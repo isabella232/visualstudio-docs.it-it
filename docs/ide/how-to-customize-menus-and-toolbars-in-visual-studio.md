@@ -22,19 +22,19 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fce2c5aed3c98cf4583e20df96c0444cc91439a
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: f5dc68374193c90fe248f92005a266a658f3f668
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531970"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656088"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: Personalizzare menu e barre degli strumenti in Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: personalizzare menu e barre degli strumenti in Visual Studio
 
 È possibile personalizzare Visual Studio non solo aggiungendo e rimuovendo barre degli strumenti e menu nella barra dei menu, ma anche aggiungendo e rimuovendo comandi in una barra degli strumenti o menu specifico.
 
@@ -79,7 +79,7 @@ ms.locfileid: "65531970"
         È inoltre possibile trascinare una barra degli strumenti per il bordo sinistro e spostarla in qualsiasi punto dell'area di ancoraggio principale.
 
         > [!NOTE]
-        > Per altre informazioni su come migliorare l'usabilità e l'accessibilità delle barre degli strumenti, vedere [Procedura: Impostare le opzioni di accessibilità IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Per altre informazioni su come migliorare l'uso e l'accessibilità delle barre degli strumenti, vedere [Procedura: Impostare le opzioni di accessibilità IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="customizing_menu">Personalizzare un menu o di una barra degli strumenti</a>
 

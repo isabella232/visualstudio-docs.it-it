@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Web performance tests, creating plug-ins
 - plug-ins, creating in Web performance tests
 ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c107e6dcba9be92b738bb4756806d584b9abdb50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 318cc217bee235842ebc206b0461dcd7c9aeceaa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949981"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653618"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: Creare un plug-in di test delle prestazioni Web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: Creare un plug-in di test prestazioni Web
 
 I plug-in test delle prestazioni web consentono di isolare e riutilizzare codice al di fuori delle istruzioni dichiarative principali nel test delle prestazioni web. Un plug-in test delle prestazioni web personalizzato consente di chiamare parte del codice durante l'esecuzione del test delle prestazioni web. Il plug-in test delle prestazioni web viene eseguito una sola volta per ogni iterazione di test. Inoltre, se si esegue l'override del metodo PreRequest o PostRequest nel plug-in test, i plug-in di tali richieste verranno eseguiti rispettivamente prima e dopo ciascuna richiesta.
 
@@ -29,7 +29,7 @@ I plug-in test delle prestazioni web consentono di isolare e riutilizzare codice
 I plug-in per test delle prestazioni web personalizzati possono essere utilizzati con i test delle prestazioni web registrati, scrivendo una quantità minima di codice che consente di ottenere un elevato livello di controllo sui test. È tuttavia possibile utilizzarli anche con i test delle prestazioni web codificati. Per altre informazioni, vedere [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
-> È possibile creare anche plug-in test di carico. Vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
+> È anche possibile creare plug-in test di carico. Vedere [procedura: creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Per creare un plug-in di test prestazioni Web personalizzato
 
@@ -92,7 +92,7 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
 17. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
     > [!NOTE]
-    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test delle prestazioni web in un secondo momento utilizzando la finestra Proprietà.
+    > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test delle prestazioni Web in un secondo momento utilizzando la finestra Proprietà.
 
 18. Scegliere **OK**.
 
@@ -101,9 +101,9 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
     > [!WARNING]
     > Quando si esegue un test delle prestazioni web o un test di carico in cui viene utilizzato il plug-in, è possibile che venga visualizzato un errore simile a quello seguente:
     >
-    > **Richiesta non riuscita: Eccezione nell'evento \<plug-in>: Non è stato possibile caricare il file o l'assembly '\<"file .dll Nome plug-in" Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' o una delle relative dipendenze. Il sistema non riesce a trovare il file specificato.**
+    > **Richiesta non riuscita: eccezione nell'evento > \<plug: non è stato possibile caricare il nome del plug-in del file o dell'assembly ' \<' ". file dll >, Version = \<n. n. n. n >, Culture = neutral, PublicKeyToken = null ' o una delle relative dipendenze. Il sistema non è in grado di trovare il file specificato.**
     >
-    > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)**, ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
+    > L'errore si verifica se si effettuano modifiche al codice di uno qualsiasi dei plug-in e si crea una nuova versione del file DLL **(Version=0.0.0.0)** , ma il plug-in fa ancora riferimento alla versione originale. Per risolvere il problema, attenersi ai passaggi riportati di seguito:
     >
     > 1. Nei riferimenti del progetto di test di carico e prestazioni web sarà presente un avviso. Rimuovere e aggiungere nuovamente il riferimento alla DLL del plug-in.
     > 2. Rimuovere il plug-in dal test o dal percorso appropriato, quindi aggiungerlo di nuovo.

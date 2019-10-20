@@ -13,17 +13,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b2252b5e6d8da9f81fbcca9b856222a3230cd080
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975008"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647562"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Usare il codice Visual C++ in Progettazione classi
 
@@ -46,7 +46,7 @@ ms.locfileid: "62975008"
 - Typedef
 
 > [!NOTE]
-> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [Diagrammi classi UML: informazioni di riferimento](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+> Non corrisponde al diagramma classi UML, che è possibile creare in un progetto di modellazione. Per altre informazioni, vedere [UML Class Diagrams: Reference](../../modeling/create-uml-modeling-projects-and-diagrams.md) (Diagrammi classi UML: riferimenti)
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Risoluzione dei problemi relativi al tipo e alla visualizzazione
 
@@ -74,7 +74,7 @@ Se il diagramma classi non viene aggiornato con le modifiche apportate nel codic
 
 - Verificare che **Progettazione classi** supporti il tipo inserito. Vedere [Limitazioni per gli elementi di codice C++](#limitations-for-c-code-elements).
 
-Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è **Impossibile trovare il codice per una o più forme nel diagramma classi '\<elemento>'**. Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice.  Provare a eseguire le operazioni seguenti:
+Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è **Impossibile trovare il codice per una o più forme nel diagramma classi '\<elemento>'** . Questo messaggio di errore non indica necessariamente che il codice sia errato. Indica solo che Progettazione classi non è in grado di visualizzare il codice. Provare a eseguire le operazioni seguenti:
 
 - Verificare l'esistenza del tipo. Verificare di non aver involontariamente eliminato o impostato come codice il codice sorgente.
 

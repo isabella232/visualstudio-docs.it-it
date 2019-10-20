@@ -1,5 +1,5 @@
 ---
-title: T4 Direttive di modello di testo | Microsoft Docs
+title: Direttive di modello di testo T4 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,71 +13,71 @@ helpviewer_keywords:
 - text templates, template directive
 ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
 caps.latest.revision: 83
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6f5c4c474ad737add8580381e7fda5fb0b0c1afc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d77c7a779afcbf7bc7fc3f8fbd863aa368ee7e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549389"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658545"
 ---
 # <a name="t4-text-template-directives"></a>Direttive di modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le direttive forniscono istruzioni al motore di trasformazione del modello di testo.  
-  
- La sintassi per le direttive è la seguente:  
-  
-```  
-<#@ DirectiveName [AttributeName = "AttributeValue"] ... #>  
-```  
-  
- Tutti i valori di attributo devono essere racchiusi tra virgolette doppie. Se il valore stesso contiene virgolette, è necessario applicare loro il carattere di escape \.  
-  
- Le direttive sono in genere i primi elementi di un file modello o di un file incluso. Tali elementi non devono essere inseriti in un blocco di codice `<#...#>`, né dopo un blocco della funzionalità di classe `<#+...#>`.  
-  
- [Direttiva template T4](../modeling/t4-template-directive.md)  
+Le direttive forniscono istruzioni al motore di trasformazione del modello di testo.
 
-```  
-<#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>  
-```  
-  
- [Direttiva parameter T4](../modeling/t4-parameter-directive.md)  
+ La sintassi per le direttive è la seguente:
 
-```  
-<#@ parameter type="Full.TypeName" name="ParameterName" #>  
-```  
-  
- [Direttiva output T4](../modeling/t4-output-directive.md)  
+```
+<#@ DirectiveName [AttributeName = "AttributeValue"] ... #>
+```
 
-```  
-<#@ output extension=".fileNameExtension" [encoding="encoding"] #>  
-```  
-  
- [Direttiva assembly T4](../modeling/t4-assembly-directive.md)  
+ Tutti i valori di attributo devono essere racchiusi tra virgolette doppie. Se il valore stesso contiene virgolette, è necessario applicare loro il carattere di escape \.
 
-```  
-<#@ assembly name="[assembly strong name|assembly file name]" #>  
-```  
-  
- [Direttiva import T4](../modeling/t4-import-directive.md)  
+ Le direttive sono in genere i primi elementi di un file modello o di un file incluso. Tali elementi non devono essere inseriti in un blocco di codice `<#...#>`, né dopo un blocco della funzionalità di classe `<#+...#>`.
 
-```  
-<#@ import namespace="namespace" #>  
-```  
-  
- [Direttiva include T4](../modeling/t4-include-directive.md)  
+ [Direttiva template T4](../modeling/t4-template-directive.md)
 
-```  
-<#@ include file="filePath" #>  
-```  
-  
- [Direttiva T4 CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)  
+```
+<#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>
+```
 
-```  
-<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
-```  
-  
- È inoltre possibile creare direttive personalizzate. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md). Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.
+ [Direttiva parameter T4](../modeling/t4-parameter-directive.md)
+
+```
+<#@ parameter type="Full.TypeName" name="ParameterName" #>
+```
+
+ [Direttiva output T4](../modeling/t4-output-directive.md)
+
+```
+<#@ output extension=".fileNameExtension" [encoding="encoding"] #>
+```
+
+ [Direttiva assembly T4](../modeling/t4-assembly-directive.md)
+
+```
+<#@ assembly name="[assembly strong name|assembly file name]" #>
+```
+
+ [Direttiva import T4](../modeling/t4-import-directive.md)
+
+```
+<#@ import namespace="namespace" #>
+```
+
+ [Direttiva include T4](../modeling/t4-include-directive.md)
+
+```
+<#@ include file="filePath" #>
+```
+
+ [Direttiva T4 CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)
+
+```
+<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
+```
+
+ È inoltre possibile creare direttive personalizzate. Per altre informazioni, vedere [creazione di processori di direttive del modello di testo T4 personalizzato](../modeling/creating-custom-t4-text-template-directive-processors.md). Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.

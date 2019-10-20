@@ -1,5 +1,5 @@
 ---
-title: 'CA2226: Gli operatori devono avere overload simmetrici | Microsoft Docs'
+title: 'CA2226: gli operatori devono avere Overload simmetrici | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2226
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 574f254b1cfccf58def5c404c15b03a4c83658cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9772577c2b1466cf3d1b5267129aa761db983021
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142438"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658899"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Gli operatori devono avere overload simmetrici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,29 +29,29 @@ ms.locfileid: "68142438"
 |-|-|
 |TypeName|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
-|Category|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
  Un tipo implementa l'operatore di uguaglianza o di disuguaglianza e non implementa l'operatore opposto.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Non esistono nessuna circostanza in cui è applicabile alle istanze di un tipo di uguaglianza o disuguaglianza e non è definito l'operatore opposto. Tipi implementano in genere l'operatore di disuguaglianza, restituendo il valore negato dell'operatore di uguaglianza.
+ Non esistono circostanze in cui l'uguaglianza o la disuguaglianza è applicabile alle istanze di un tipo e l'operatore opposto non è definito. I tipi implementano in genere l'operatore di disuguaglianza restituendo il valore negato dell'operatore di uguaglianza.
 
- Il compilatore c# genera un errore per le violazioni di questa regola.
+ Il C# compilatore genera un errore per le violazioni di questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare l'uguaglianza e gli operatori di disuguaglianza o rimuovere quello che è presente.
+ Per correggere una violazione di questa regola, implementare gli operatori di uguaglianza e disuguaglianza oppure rimuovere quello presente.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Il tipo non funzionerà in modo che sia coerenza con il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Non escludere un avviso da questa regola. Il tipo non funzionerà in modo coerente con l'[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1046: Non eseguire l'overload dell'operatore di uguaglianza sui tipi di riferimento](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046: Non eseguire l'overload dell'operatore "uguale a" per i tipi di riferimento](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Overload degli operatori hanno alternative con nome](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Gli overload degli operatori hanno alternative con nome](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2224: Override di equals all'overload dell'operatore è uguale a](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Eseguire l'override di Equals all'override dell'operatore](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2218: Eseguire l'override di GetHashCode all'override di Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 

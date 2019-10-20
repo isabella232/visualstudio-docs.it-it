@@ -1,5 +1,5 @@
 ---
-title: 'CA1409: Tipi visibili a COM devono essere creabili | Microsoft Docs'
+title: 'CA1409: i tipi visibili a com devono essere creabili | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1409
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7bd52ad75c67f9c8faa80e84eb5ae09c22c25280
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: feb50f576fbff656acaa10b70bb4d8adbca1d6c3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678870"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602386"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: I tipi visibili a COM devono essere creabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,27 +29,27 @@ ms.locfileid: "65678870"
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
-|Category|Microsoft.Interoperability|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. interoperabilità|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un tipo di riferimento contrassegnato specificatamente come visibile al modello COM (Component Object) contiene un costruttore con parametri pubblico ma non contiene un costruttore predefinito pubblico (senza parametri).
+ Un tipo di riferimento che è contrassegnato in modo specifico come visibile a Component Object Model (COM) contiene un costruttore con parametri pubblico, ma non contiene un costruttore pubblico predefinito (senza parametri).
 
 ## <a name="rule-description"></a>Descrizione della regola
- Un tipo senza un costruttore predefinito pubblico non è possibile creare per i client COM. Tuttavia, il tipo comunque accessibili da parte dei client COM se è disponibile un altro mezzo per creare il tipo e passarlo al client (ad esempio, tramite il valore restituito di una chiamata al metodo).
+ Non è possibile creare un tipo senza un costruttore predefinito pubblico da parte dei client COM. Tuttavia, il tipo è ancora accessibile ai client COM se è disponibile un altro metodo per creare il tipo e passarlo al client, ad esempio tramite il valore restituito di una chiamata al metodo.
 
- La regola ignora sempre i tipi derivati da <xref:System.Delegate?displayProperty=fullName>.
+ La regola ignora i tipi derivati da <xref:System.Delegate?displayProperty=fullName>.
 
- Per impostazione predefinita, sono visibili a COM seguente: assembly, i tipi pubblici, i membri di istanza pubblici nei tipi pubblici e tutti i membri dei tipi di valore pubblico.
+ Per impostazione predefinita, i seguenti elementi sono visibili a COM: assembly, tipi pubblici, membri di istanze pubbliche nei tipi pubblici e tutti i membri dei tipi di valore pubblici.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, aggiungere un costruttore predefinito pubblico o rimuovere il <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> dal tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se sono disponibili altri modi per creare e passare l'oggetto per il client COM.
+ È possibile eliminare un avviso da questa regola se vengono fornite altre modalità per creare e passare l'oggetto al client COM.
 
 ## <a name="related-rules"></a>Regole correlate
  [CA1017: Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Qualificazione di tipi .NET per l'interoperatività](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) [interoperabilità con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [Qualificazione di tipi .NET per](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd) l'interoperatività [interoperabilità con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

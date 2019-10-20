@@ -3,21 +3,21 @@ title: XML Schema Explorer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 717a5d85a9d3a3251739b62728be572bee1487f6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926774"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608087"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
-**XML Schema Explorer** è integrato con Microsoft Visual Studio e l'editor XML per consentire l'utilizzo di schemi XSD (XML Schema Definition Language). Quando si apre un file di XML Schema, il nodo del **set di schemi** viene visualizzato in **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file a cui viene fatto riferimento tramite `include` un' `import` istruzione o, vengono visualizzati anche in **XML Schema Explorer**.
+**XML Schema Explorer** è integrato con Microsoft Visual Studio e l'editor XML per consentire l'utilizzo di schemi XSD (XML Schema Definition Language). Quando si apre un file di XML Schema, il nodo del **set di schemi** viene visualizzato in **XML Schema Explorer**. Tutti gli schemi inclusi, importati o ridefiniti per il file di destinazione, nonché tutti i file a cui viene fatto riferimento tramite un'istruzione `include` o `import`, vengono visualizzati anche in **XML Schema Explorer**.
 
 **XML Schema Explorer** consente di eseguire le operazioni seguenti:
 
@@ -80,4 +80,4 @@ Se si eliminano i file nella vista, tutti i nodi globali del file vengono aggiun
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Aggiunta di nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Procedura: aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1023: Gli indicizzatori non devono essere multidimensionali | Microsoft Docs'
+title: 'CA1023: gli indicizzatori non devono essere multidimensionali | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - IndexersShouldNotBeMultidimensional
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2b9cf9cd97dd50577a466ed4d433e0e1dbd5da4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b7c4c82add8644a1c2c213536c2ad3c0097c3a6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158043"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661986"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Gli indicizzatori non devono essere multidimensionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,29 +29,29 @@ ms.locfileid: "68158043"
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
  Un tipo pubblico o protetto contiene un indicizzatore pubblico o protetto che usa più di un indice.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Gli indicizzatori, ovvero, le proprietà indicizzate, devono utilizzare un singolo indice. Gli indicizzatori multidimensionali possono ridurre notevolmente l'usabilità della libreria. Se il progetto richiede più indici, valutare se il tipo rappresenta un archivio dati logici. In caso contrario, usare un metodo.
+ Gli indicizzatori, ovvero le proprietà indicizzate, devono utilizzare un solo indice. Gli indicizzatori multidimensionali possono ridurre significativamente l'usabilità della libreria. Se per la progettazione sono necessari più indici, riconsiderare se il tipo rappresenta un archivio dati logico. In caso contrario, usare un metodo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, modificare la progettazione per utilizzare un unico numero intero o un indice di stringa o usare un metodo invece l'indicizzatore.
+ Per correggere una violazione di questa regola, modificare la progettazione in modo da usare un intero solitario o un indice di stringa oppure usare un metodo anziché l'indicizzatore.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Eliminare un avviso da questa regola solo dopo aver considerato con attenzione la necessità per l'indicizzatore non standard.
+ Eliminare un avviso da questa regola solo dopo aver valutato attentamente la necessità dell'indicizzatore non standard.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un tipo, `DayOfWeek03`, con un indicizzatore multidimensionale che viola la regola. L'indicizzatore può essere considerato come un tipo di conversione e pertanto in modo più appropriato è esposta come un metodo. Il tipo è stato riprogettato `RedesignedDayOfWeek03` per soddisfare la regola.
+ Nell'esempio seguente viene illustrato un tipo, `DayOfWeek03`, con un indicizzatore multidimensionale che viola la regola. L'indicizzatore può essere considerato come un tipo di conversione e pertanto viene esposto in modo più appropriato come metodo. Il tipo viene riprogettato in `RedesignedDayOfWeek03` per soddisfare la regola.
 
  [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cpp/FxCop.Design.OneDimensionForIndexer.cpp#1)]
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/cs/FxCop.Design.OneDimensionForIndexer.cs#1)]
  [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.OneDimensionForIndexer/vb/FxCop.Design.OneDimensionForIndexer.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1043: Usare l'argomento di stringa o integrale per gli indicizzatori](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+ [CA1043: Usare argomento di tipo stringa o integrale per gli indicizzatori](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024: Utilizzare proprietà dove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Usare proprietà dove appropriato](../code-quality/ca1024-use-properties-where-appropriate.md)

@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823925"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655850"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 
@@ -123,18 +123,18 @@ In alcuni casi può essere utile creare manualmente un modello di elemento da ze
 
 ::: moniker range="vs-2017"
 
-8. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita è *%USERPROFILE%\Documenti\Visual Studio 2017\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita è *%USERPROFILE%\Documenti\Visual Studio 2017\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elementi](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita è *%USERPROFILE%\Documenti\Visual Studio 2019\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Copiare il file con estensione *zip* e incollarlo nel percorso dei modelli di elemento dell'utente. La directory predefinita è *%USERPROFILE%\Documenti\Visual Studio 2019\Templates\ItemTemplates*. Per altre informazioni, vedere [Procedura: Individuare e organizzare modelli di progetto e modelli di elementi](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
-- [Procedura: Creare modelli di elemento a più file](../ide/how-to-create-multi-file-item-templates.md)
+- [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)
 - [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)

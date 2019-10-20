@@ -7,15 +7,15 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821248"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653288"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: Visualizzare il tempo di risposta delle pagine Web in un test di carico usando l'Analizzatore test di carico
 
@@ -43,7 +43,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 3. I dati per ogni pagina vengono visualizzati nella griglia. Solitamente vengono visualizzate le colonne seguenti.
 
-   |Intestazione colonna|Description|
+   |Intestazione colonna|Descrizione|
    |-|-|
    |**Page**|Nome della pagina Web.|
    |**Scenario**|Nome dello scenario. Importante se il test Web include più di uno scenario.|
@@ -59,7 +59,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
    |**Max**|Tempo di risposta massimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Deviazione standard**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Tempo di risposta pagina**|Tempo di risposta medio per tutte le richieste effettuate per la pagina Web.|
-   |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:**  il tempo pagina obiettivo viene visualizzato solo quando nel test delle prestazioni Web è stato definito l'obiettivo per la richiesta.|
+   |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:** il tempo pagina obiettivo viene visualizzato solo quando nel test delle prestazioni web è stato definito l'obiettivo per la richiesta.|
    |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina web che soddisfano il tempo di risposta obiettivo.|
 
    Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -84,7 +84,7 @@ Per visualizzare i dati sul tempo di risposta in un grafico:
 
     I dati vengono aggiunti al grafico.
 
-7. (Facoltativo) Ripetere il passaggio precedente per **Avg. Page Time**, **Page Response Time Goal** e **Total Pages**.
+7. Opzionale Ripetere il passaggio precedente per **Media tempo pagina**, **obiettivo tempo di risposta pagina**e **Totale pagine**.
 
    > [!NOTE]
    > Il valore **Page Response Time Goal** è costante.

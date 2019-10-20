@@ -1,5 +1,5 @@
 ---
-title: 'CA1026: Non usare i parametri predefiniti | Microsoft Docs'
+title: 'CA1026: i parametri predefiniti non devono essere usati | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - DefaultParametersShouldNotBeUsed
 ms.assetid: 09643415-36ef-4d0f-9411-5721e14e2512
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7c20bfce7dd7fe3b2e116b982408afa813ebab25
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8fffbdc2cf9f4e09fe98c8e14b6692802ab3f275
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704188"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661949"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Evitare l'uso di parametri predefiniti
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Evitare l'utilizzo di parametri predefiniti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
  Un tipo visibile esternamente contiene un metodo visibile esternamente che usa un parametro predefinito.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I metodi che utilizzano parametri predefiniti sono consentiti con la specifica CLS (Common Language); Tuttavia, la specifica CLS consente ai compilatori di ignorare i valori assegnati a questi parametri. Il codice scritto per i compilatori che ignorano i valori predefiniti dei parametri deve fornire esplicitamente gli argomenti per ogni parametro predefinito. Per mantenere il comportamento desiderato tra diversi linguaggi di programmazione, i metodi che utilizzano parametri predefiniti devono essere sostituiti con overload di metodi che forniscono i parametri predefiniti.
+ I metodi che utilizzano parametri predefiniti sono consentiti nel Common Language Specification (CLS); Tuttavia, la CLS consente ai compilatori di ignorare i valori assegnati a questi parametri. Il codice scritto per i compilatori che ignorano i valori dei parametri predefiniti deve fornire in modo esplicito gli argomenti per ogni parametro predefinito. Per mantenere il comportamento desiderato tra i linguaggi di programmazione, i metodi che utilizzano parametri predefiniti devono essere sostituiti con overload del metodo che forniscono i parametri predefiniti.
 
- Il compilatore ignora i valori dei parametri predefiniti per estensioni gestite per C++ durante l'accesso al codice gestito. Il compilatore Visual Basic supporta metodi che hanno parametri predefiniti che utilizzano le [facoltativo](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) (parola chiave).
+ Il compilatore ignora i valori dei parametri predefiniti per l'estensione gestita per C++ quando accede al codice gestito. Il compilatore Visual Basic supporta i metodi con parametri predefiniti che usano la parola chiave [Optional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) .
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, sostituire il metodo che usa i parametri predefiniti con overload di metodi che forniscono i parametri predefiniti.
+ Per correggere una violazione di questa regola, sostituire il metodo che usa parametri predefiniti con overload del metodo che forniscono i parametri predefiniti.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo che usa i parametri predefiniti e i metodi di overload che forniscono una funzionalità equivalente.
+ Nell'esempio seguente viene illustrato un metodo che utilizza parametri predefiniti e i metodi di overload che forniscono una funzionalità equivalente.
 
  [!code-vb[FxCop.Design.DefaultParameters#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.DefaultParameters/vb/FxCop.Design.DefaultParameters.vb#1)]
 

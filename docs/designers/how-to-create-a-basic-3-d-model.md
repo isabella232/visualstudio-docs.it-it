@@ -3,19 +3,19 @@ title: 'Procedura: Creare un modello 3D di base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 604847e5f9bf6111d548b9d3bbdc0a0e10301784
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636725"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Procedura: Creazione di un modello 3D di base
+# <a name="how-to-create-a-basic-3d-model"></a>Procedura: Creare un modello 3D di base
 
 Questo articolo illustra come usare l'editor dei modelli per creare un modello 3D di base. Sono descritte le attività seguenti:
 
@@ -70,7 +70,7 @@ Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà**
 
    ![Modello completato della casa semplificata](../designers/media/gfx_model_demo_house_final.png)
 
-   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per altre informazioni, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Come passaggio successivo, è possibile applicare uno shader a questo modello 3D. Per informazioni, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -18,17 +18,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6ca1f34604c314fea6e90130b298be04f3a6189
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652539"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizzare il layout delle finestre in Visual Studio
 
@@ -40,7 +40,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 ### <a name="tool-and-document-windows"></a>Finestre dei documenti e degli strumenti
 
-L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli strumenti includono **Esplora soluzioni**, **Esplora server**, **Finestra di output**, **Elenco errori**, le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre di documento possono essere trascinate dalla scheda. Fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni della finestra.
+L'IDE presenta due tipi di finestre di base: *finestre degli strumenti* e *finestre dei documenti*. Le finestre degli strumenti includono **Esplora soluzioni**, **Esplora server**, **Finestra di output**, **Elenco errori**, le finestre di progettazione, le finestre del debugger e così via. Le finestre dei documenti contengono i file del codice sorgente, file di testo arbitrario, file config e così via. Le finestre degli strumenti possono essere ridimensionate e trascinate dalla barra del titolo. Le finestre di documento possono essere trascinate dalla relativa scheda. fare clic con il pulsante destro del mouse sulla scheda o sulla barra del titolo per impostare altre opzioni nella finestra.
 
 Nel menu **Finestra** vengono visualizzate le opzioni disponibili per ancorare, rendere mobili e nascondere le finestre nell'IDE. Fare clic con il pulsante destro del mouse sulla barra del titolo o sulla scheda di una finestra per visualizzare opzioni aggiuntive per tale specifica finestra. È possibile visualizzare più istanze di determinate finestre degli strumenti per volta. Ad esempio, è possibile visualizzare più finestre di un browser Web, nonché creare ulteriori istanze di alcune finestre degli strumenti selezionando **Nuova finestra** nel menu **Finestra** .
 
@@ -58,7 +58,7 @@ Quando è necessario visualizzare o modificare due percorsi contemporaneamente i
 
 ### <a name="toolbars"></a>Barre degli strumenti
 
-Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [Procedura: Personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Le barre degli strumenti possono essere disposte trascinandole o utilizzando la finestra di dialogo **Personalizza** . Per altre informazioni su come posizionare e personalizzare le barre degli strumenti, vedere [Procedura: personalizzare menu e barre degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ## <a name="arrange-and-dock-windows"></a>Disporre e ancorare le finestre
 
@@ -170,7 +170,7 @@ Dopo l'applicazione del layout dell'interfaccia utente, notare che questo viene 
 Se in ufficio si usa una configurazione a più monitor e a casa una laptop con un solo monitor, è possibile creare layout ottimizzati per ogni computer.
 
 > [!NOTE]
-> Se si applica un layout a più monitor in un sistema a monitor singolo, le finestre mobili posizionate sul secondo monitor risulteranno nascoste dietro la finestra di Visual Studio. Per portarle in primo piano, premere **ALT+TAB**. Se in seguito si apre Visual Studio in un computer con più monitor, sarà possibile ripristinare le posizioni specificate delle finestre riapplicando il layout.
+> Se si applica un layout a più monitor in un sistema a monitor singolo, le finestre mobili posizionate sul secondo monitor risulteranno nascoste dietro la finestra di Visual Studio. È possibile portare le finestre in primo piano premendo **ALT + TAB**. Se in seguito si apre Visual Studio con più monitoraggi, è possibile ripristinare le posizioni specificate applicando nuovamente il layout.
 
 #### <a name="manage-and-roam-your-layouts"></a>Gestire o effettuare il roaming dei layout
 
@@ -184,4 +184,4 @@ Il roaming di questi layout verrà effettuato automaticamente tra le edizioni di
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Spostarsi all'interno dell'IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)
+- [How to: Move around in the IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md) (Procedura: Spostarsi all'interno dell'IDE)

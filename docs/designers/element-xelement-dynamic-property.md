@@ -6,17 +6,17 @@ apiname:
 - XElement.Element
 apitype: Assembly
 ms.assetid: c6c25b8d-a1da-41ff-aeff-867ff1dcf749
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd197082174bcd23ab6b47d64eb4eb0f7944ca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 08b2f7f008c1522c5f65b5ee7a58c3ed98e8a845
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845542"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637330"
 ---
 # <a name="element-xelement-dynamic-property"></a>Elemento (proprietà dinamica XElement)
 
@@ -32,12 +32,12 @@ elem.Element[{namespaceName}localName]
 
 Indicizzatore del tipo `XElement Item(String expandedName)`. Questo indicizzatore accetta un parametro del nome espanso e restituisce l'oggetto <xref:System.Xml.Linq.XElement> corrispondente o `null` se non esiste nessun elemento con il nome specificato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Questa proprietà è equivalente al metodo <xref:System.Xml.Linq.XContainer.Element%2A> della classe <xref:System.Xml.Linq.XContainer?displayProperty=fullName>.
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>
-- [Proprietà dinamiche della classe XElement](../designers/xelement-class-dynamic-properties.md)
+- [Proprietà dinamiche della classe XElement](../designers/attribute-xelement-dynamic-property.md)
 - [Elementi](../designers/elements-xelement-dynamic-property.md)

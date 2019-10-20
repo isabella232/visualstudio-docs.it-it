@@ -9,19 +9,19 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 0a3162dcbbd041a7d2f540a335bd95854afd87d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745865"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643476"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
+# <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: creare un unit test basato sui dati
 
 È possibile usare il framework unit test Microsoft per il codice gestito per impostare un metodo di unit test per recuperare i valori da un'origine dati. Il metodo viene eseguito in successione per ogni riga nell'origine dati, rendendo più semplice testare una un'ampia varietà di input con un singolo metodo.
 

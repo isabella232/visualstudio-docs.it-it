@@ -13,17 +13,17 @@ helpviewer_keywords:
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a073b4815a01696c546dc2a9dd1132e3605281e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969293"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655778"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -35,13 +35,13 @@ Specifica un file per archiviare e visualizzare gli errori quando si [esegue](ru
 devenv /Out FileName
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 - *FileName*
 
   Obbligatorio. Percorso e nome del file per ricevere l'output quando si compila un eseguibile.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Se viene specificato un nome file inesistente, il file viene creato automaticamente. Se il file esiste già, i risultati vengono aggiunti al contenuto del file già esistente.
 

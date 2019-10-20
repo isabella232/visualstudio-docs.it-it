@@ -6,49 +6,49 @@ f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
 - Domain-Specific Language, swimlane
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5180581b0a0934c049d9c4ea199fa3396a1d1237
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823905"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658128"
 ---
 # <a name="properties-of-swimlanes"></a>Proprietà delle corsie
-È possibile aggiungere le corsie a un oggetto diagram. Le corsie dividono un diagramma in aree verticale o orizzontale. È possibile definire altre forme da visualizzare all'interno di corsie. Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+È possibile aggiungere corsie a un diagramma. Le corsie dividono un diagramma in aree verticali o orizzontali. È possibile definire altre forme da visualizzare all'interno delle corsie. Per ulteriori informazioni, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Le corsie hanno le proprietà elencate nella tabella seguente.
 
-|Proprietà|Descrizione|Impostazione predefinita|
+|proprietà|Descrizione|Impostazione predefinita|
 |-|-|-|
-|Colore di riempimento del corpo|Il colore di riempimento per il corpo della corsia.|Bianco|
-|Colore di riempimento intestazione|Il colore di riempimento per l'intestazione della corsia.|DarkGray|
+|Colore riempimento corpo|Colore di riempimento per il corpo della corsia.|bianco|
+|Colore riempimento intestazione|Colore di riempimento per l'intestazione della corsia.|DarkGray|
 |Colore separatore|Colore della linea di separazione.|LightGray|
-|Stile dei separatori di riga|Lo stile della linea di separazione (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, o `Custom`).|`Dash`|
-|Spessore separatore|Lo spessore della linea di separazione in pollici.|0.03125|
+|Stile linea separatore|Stile della linea di separazione (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot` o `Custom`).|`Dash`|
+|Spessore separatore|Spessore in pollici della linea del separatore.|0,03125|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa corsia.|Nero|
-|Modificatore di accesso|Il livello di accesso della classe (`public` o `internal`).|Public|
-|Attributi personalizzati|Consente di aggiungere attributi alla classe di codice che viene generata da questa corsia.|\<nessuno>|
-|Genera l'errore doppia derivati|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla corsia (`none`, `abstract` o `sealed`).|none|
+|Modificatore di accesso|Livello di accesso della classe (`public` o `internal`).|Public|
+|Attributi personalizzati|Utilizzato per aggiungere attributi alla classe di codice generata da questa corsia.|\<nessuno>|
+|Genera il doppio derivato|Se `True`, verranno generate sia una classe di base che una classe parziale (per supportare la personalizzazione tramite sostituzioni). Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Con costruttore personalizzato|Se `True`, nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generata dalla corsia (`none`, `abstract` o `sealed`).|none|
 |Corsia di base|Classe di base di questa corsia.|(nessuno)|
-|Nome|Il nome di questa corsia.|Nome corrente|
-|Spazio dei nomi|Lo spazio dei nomi che è affiliato a questa corsia.|Spazio dei nomi corrente|
-|Tipo della descrizione comando|Come viene definito la descrizione comando (`fixed`, `variable`, o `none`). Se `fixed`, quindi il valore della `Fixed Tooltip Text` proprietà viene utilizzata; se `variable`, quindi la descrizione comando è definito nel codice personalizzato.|\<nessuno>|
+|Name|Nome di questa corsia.|Nome corrente|
+|Spazio dei nomi|Lo spazio dei nomi affiliato a questa corsia.|Spazio dei nomi corrente|
+|Tipo di descrizione comando|Modalità di definizione della descrizione comando (`fixed`, `variable` o `none`). Se `fixed`, viene usato il valore della proprietà `Fixed Tooltip Text`. Se `variable`, la descrizione comando è definita nel codice personalizzato.|\<nessuno>|
 |Note|Note informali associate a questa corsia.|\<nessuno>|
 |Allineamento|Allineamento orizzontale o verticale.|Vertical|
-|Altezza iniziale|Altezza iniziale della corsia, in pollici. Applicabile solo a corsie orizzontali.|0|
-|Larghezza iniziale|Larghezza iniziale della corsia, in pollici. Applicabile solo a corsie verticali.|0|
-|Espone il colore del testo|Se `True`, l'utente può impostare il colore di un oggetto swimlane nella finestra di progettazione generata. Per procedere, fare doppio clic la forma di corsia e fare clic su **Aggiungi esposta**.|False|
-|Descrizione|Consente di documentare la finestra di progettazione generata.|\<nessuno>|
-|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generata per fare riferimento a questa classe di swimlane.|\<nessuno>|
-|Testo della descrizione comando fissa|Testo che viene usato per una descrizione comando fissa.|\<nessuno>|
-|Parola chiave della Guida|La parola chiave utilizzata per indicizzare la Guida F1 per questa corsia.|\<nessuno>|
+|Altezza iniziale|Altezza iniziale della corsia, in pollici. Applicabile solo alle corsie orizzontali.|0|
+|Larghezza iniziale|Larghezza iniziale della corsia, in pollici. Applicabile solo alle corsie verticali.|0|
+|Espone il colore del testo|Se `True`, l'utente può impostare il colore di una corsia nella finestra di progettazione generata. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla forma corsia e scegliere **Aggiungi esposti**.|False|
+|Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<nessuno>|
+|Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per fare riferimento a questa classe di corsia.|\<nessuno>|
+|Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<nessuno>|
+|Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questa corsia.|\<nessuno>|
 
 ## <a name="see-also"></a>Vedere anche
 

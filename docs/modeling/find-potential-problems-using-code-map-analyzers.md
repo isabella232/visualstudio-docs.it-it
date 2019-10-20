@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd3bb1537d0e985e91f93ea094ec546ed9a6092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f55d4d3c4470d32d9779f7adf06934f10ac618e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994427"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657487"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Trovare problemi potenziali usando gli analizzatori di mappe codice
 
@@ -32,15 +32,15 @@ Eseguire gli analizzatori sulle mappe codice per identificare il codice che potr
 
 ## <a name="analyze-code-maps"></a>Analizzare mappe del codice
 
-Sulla barra degli strumenti della mappa, scegliere **Layout** > **analizzatori**e quindi l'analizzatore che si desidera eseguire:
+Sulla barra degli strumenti della mappa scegliere **Layout**  > **analizzatori**e quindi l'analizzatore che si desidera eseguire:
 
 |**Analizzatore**|**Per identificare i nodi che**|
 |-|-|
-|**Analizzatore Riferimenti circolari**|Hanno dipendenze circolari tra loro. **Nota:**  Dipendenze circolari che sono nel **Generics** gruppo non vengono visualizzati sulla mappa quando si espande il gruppo.|
-|**Analizzatore Trova hub**|Rientrano nel primo 25% dei nodi con connessione elevata<br /><br /> **Per nascondere tutti gli altri nodi nella mappa**<br /><br /> -Aprire il menu di scelta rapida per la mappa, scegliere **avanzate**, **seleziona**, **Nascondi non selezionati**.<br />     La mappa consente di nascondere i nodi non selezionati e l'analizzatore identifica nuovi nodi come hub.|
+|**Analizzatore Riferimenti circolari**|Hanno dipendenze circolari tra loro. **Nota:**  Le dipendenze circolari presenti nel gruppo **generics** non vengono visualizzate sulla mappa quando si espande il gruppo.|
+|**Analizzatore Trova hub**|Rientrano nel primo 25% dei nodi con connessione elevata<br /><br /> **Per nascondere tutti gli altri nodi nella mappa**<br /><br /> -Aprire il menu di scelta rapida per la mappa, scegliere **Avanzate**, **selezionare**, **Nascondi non selezionato**.<br />     La mappa consente di nascondere i nodi non selezionati e l'analizzatore identifica nuovi nodi come hub.|
 |**Analizzatore Nodi senza riferimenti**|Non contengono riferimenti da altri nodi. **Attenzione:**  Verificare ognuno di questi casi prima di presupporre che il codice non venga usato. Non è possibile trovare alcune dipendenze, ad esempio le dipendenze XAML e di runtime, in modo statico nel codice.|
 
-Gli analizzatori di mappe codice continueranno l'esecuzione una volta applicati. Se si modifica la mappa, eventuali analizzatori applicati automaticamente rielaboreranno la mappa aggiornata. Per interrompere l'esecuzione di un analizzatore, sulla barra degli strumenti della mappa, scegliere **Layout** > **analizzatori**. Disattivare l'analizzatore selezionato.
+Gli analizzatori di mappe codice continueranno l'esecuzione una volta applicati. Se si modifica la mappa, eventuali analizzatori applicati automaticamente rielaboreranno la mappa aggiornata. Per arrestare l'esecuzione di un analizzatore, sulla barra degli strumenti della mappa scegliere **Layout**  > **analizzatori**. Disattivare l'analizzatore selezionato.
 
 > [!TIP]
 > Se si ha una mappa di dimensioni molto grandi, l'esecuzione di un analizzatore potrebbe provocare un'eccezione per memoria insufficiente. In questo caso, modificare la mappa per ridurne l'ambito o generarne una di dimensioni più piccole e quindi eseguire l'analizzatore.

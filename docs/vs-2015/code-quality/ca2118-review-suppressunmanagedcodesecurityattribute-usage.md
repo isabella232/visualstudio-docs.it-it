@@ -1,5 +1,5 @@
 ---
-title: 'CA2118: Esaminare la sintassi di SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs'
+title: "CA2118: esaminare l'utilizzo di SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bb7404d9add159f182ae44b22444dded1aafca20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687287"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658646"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verificare la sintassi di SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,43 +33,43 @@ ms.locfileid: "65687287"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un membro o un tipo pubblico o protetto presenta il <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attributo.
+ Un membro o un tipo pubblico o protetto ha l'attributo <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifica il comportamento del sistema di sicurezza predefinito per i membri che eseguono codice non gestito mediante la chiamata di piattaforma o di interoperabilità COM. In genere, il sistema esegue una [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) autorizzazione per codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue una [linking](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per l'autorizzazione: vengono controllate le autorizzazioni del chiamante immediato quando il chiamante viene compilato tramite JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifica il comportamento predefinito del sistema di sicurezza per i membri che eseguono codice non gestito utilizzando l'interoperabilità COM o la chiamata della piattaforma. In genere, il sistema crea [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) per l'autorizzazione per il codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue [richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per l'autorizzazione: le autorizzazioni del chiamante immediato vengono controllate quando il chiamante viene compilato tramite JIT.
 
- Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza. Se si inserisce l'attributo in membri pubblici che chiamano i metodi nativi, i chiamanti nello stack di chiamate (diverso dal chiamante immediato) non sono necessario l'autorizzazione di codice non gestito per eseguire codice non gestito. A seconda delle azioni del membro pubblico e la gestione dell'input, potrebbe consentire ai chiamanti non attendibili per accedere alla funzionalità in genere limitate al codice attendibile.
+ Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza. Se si inserisce l'attributo nei membri pubblici che chiamano metodi nativi, i chiamanti nello stack di chiamate (ad eccezione del chiamante immediato) non necessitano dell'autorizzazione per il codice non gestito per l'esecuzione di codice non gestito. A seconda delle azioni del membro pubblico e della gestione dell'input, potrebbe consentire ai chiamanti non attendibili di accedere alle funzionalità normalmente limitate al codice attendibile.
 
- Il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] si basa su controlli di sicurezza per impedire che i chiamanti abbiano accesso diretto a spazio degli indirizzi del processo corrente. Poiché questo attributo Ignora sicurezza normale, il codice comporta un grave rischio se può essere utilizzato per leggere o scrivere nella memoria del processo. Si noti che il rischio non è limitato ai metodi che forniscono intenzionalmente l'accesso per l'elaborazione di memoria. è inoltre presente in qualsiasi scenario in cui codice dannoso può ottenere l'accesso con qualsiasi mezzo, ad esempio, fornendo input sorprendente, in formato non valido o non valido.
+ Il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] si basa sui controlli di sicurezza per impedire ai chiamanti di accedere direttamente allo spazio degli indirizzi del processo corrente. Poiché questo attributo Ignora la normale sicurezza, il codice costituisce una minaccia grave se può essere usato per leggere o scrivere nella memoria del processo. Si noti che il rischio non è limitato ai metodi che forniscono intenzionalmente l'accesso alla memoria del processo. è presente anche in qualsiasi scenario in cui il codice dannoso può ottenere l'accesso con qualsiasi mezzo, ad esempio, fornendo un input sorprendente, non valido o non valido.
 
- I criteri di sicurezza predefinito non concedere l'autorizzazione di codice non gestito a un assembly a meno che non venga eseguito dal computer locale o è un membro di uno dei seguenti gruppi:
+ Il criterio di sicurezza predefinito non concede l'autorizzazione per il codice non gestito a un assembly a meno che non sia in esecuzione dal computer locale o membro di uno dei seguenti gruppi:
 
-- Il gruppo di codice di area Computer
+- Gruppo di codice della zona Computer locale
 
-- Gruppo di codice nome sicuro di Microsoft
+- Gruppo di codice nome sicuro Microsoft
 
-- Gruppo di codice nome sicuro di ECMA
+- Gruppo di codice con nome sicuro ECMA
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Esaminare attentamente il codice per garantire che questo attributo è assolutamente necessario. Se si ha familiarità con la sicurezza di codice gestito o non supportano le implicazioni di sicurezza di questo attributo, rimuoverlo dal codice. Se l'attributo è obbligatorio, è necessario assicurarsi che i chiamanti non è possibile usare il codice da utenti malintenzionati. Se il codice non ha l'autorizzazione per eseguire codice non gestito, questo attributo non ha alcun effetto e deve essere rimosso.
+ Esaminare attentamente il codice per assicurarsi che l'attributo sia assolutamente necessario. Se non si ha familiarità con la sicurezza del codice gestito o se non si conoscono le implicazioni di sicurezza derivanti dall'uso di questo attributo, rimuoverlo dal codice. Se l'attributo è obbligatorio, è necessario assicurarsi che i chiamanti non possano usare il codice in modo dannoso. Se il codice non è autorizzato a eseguire codice non gestito, questo attributo non ha alcun effetto e deve essere rimosso.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non fornisce i chiamanti accesso alle operazioni native o risorse che possono essere usate in modo distruttivo.
+ Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non fornisca ai chiamanti l'accesso a operazioni native o a risorse che possono essere utilizzate in modo distruttivo.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viola la regola.
+ Nell'esempio seguente viene violata la regola.
 
  [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypesDoNotSuppress/cs/FxCop.Security.TypesDoNotSuppress.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, il `DoWork` metodo fornisce un percorso di codice accessibile pubblicamente per il metodo di chiamata `FormatHardDisk`.
+ Nell'esempio seguente il metodo `DoWork` fornisce un percorso del codice accessibile pubblicamente al metodo di chiamata della piattaforma `FormatHardDisk`.
 
  [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PInvokeAndSuppress/cs/FxCop.Security.PInvokeAndSuppress.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente, il metodo pubblico `DoDangerousThing` provoca una violazione. Per risolvere la violazione `DoDangerousThing` deve essere reso privato, e l'accesso a esso deve avvenire tramite un metodo pubblico è protetto da una richiesta di sicurezza, come illustrato di `DoWork` (metodo).
+ Nell'esempio seguente, il metodo pubblico `DoDangerousThing` causa una violazione. Per risolvere la violazione, `DoDangerousThing` deve essere reso privato e l'accesso a tale violazione deve essere eseguito tramite un metodo pubblico protetto da una richiesta di sicurezza, come illustrato dal metodo `DoWork`.
 
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Linee guida per la generazione di codice sicuro](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ottimizzazioni della sicurezza](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [le richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [linee guida](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) per la codifica delle [ottimizzazioni della sicurezza](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) e delle [richieste dei collegamenti](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [di modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

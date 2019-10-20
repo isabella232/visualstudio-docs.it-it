@@ -10,21 +10,21 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493292"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647361"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
-IntelliSense è uno strumento di completamento del codice che include una serie di funzionalità: Elenca membri, Informazioni sul parametro, Informazioni rapide e Completa parola. Queste funzionalità consentono di acquisire altre informazioni sul codice in uso, tengono traccia dei parametri che si digitano e aggiungono le chiamate a proprietà e metodi con poche sequenze di tasti.
+IntelliSense è lo strumenti di completamento del codice che include numerose funzionalità: Elenca membri, Informazioni sul parametro, Informazioni rapide e Completa parola. Queste funzionalità consentono di acquisire altre informazioni sul codice in uso, tengono traccia dei parametri che si digitano e aggiungono le chiamate a proprietà e metodi con poche sequenze di tasti.
 
 Molti aspetti di IntelliSense sono specifici del linguaggio. Per altre informazioni su IntelliSense per linguaggi diversi, vedere gli argomenti elencati nella sezione [Vedere anche](#see-also).
 
@@ -83,7 +83,7 @@ Le opzioni IntelliSense sono attive per impostazione predefinita. Per disattivar
 ## <a name="intellisense-icons"></a>Icone di IntelliSense
 Le icone in IntelliSense possono trasmettere un significato aggiuntivo con i modificatori di icona. Si tratta di stelle, cuori e lucchetti sovrapposti all'icona dell'oggetto per indicare, rispettivamente, che l'oggetto è protetto, interno o privato.
 
-|    Icona    |    Accessibilità    |    DESCRIZIONE    |
+|    Icona    |    Accessibilità    |    Descrizione    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![Modificatore di icona per oggetto pubblico](../ide/media/intellisensePublicNoModifier.png)       |    Classe pubblica    |    L'accesso non è limitato.   |
 | ![Modificatore di icona per oggetto protetto](../ide/media/intellisenseProtectedModifier.png)       |    Classe protetta    |    L'accesso è limitato alla classe o ai tipi derivati dalla classe che li contiene.    |

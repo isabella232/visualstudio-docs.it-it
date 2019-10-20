@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342440"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659886"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -26,13 +26,13 @@ Gli unit test offrono i risultati migliori in relazione alla qualità del codice
 
 Esplora test può eseguire anche framework per unit test di terze parti e open source che hanno implementato le interfacce dei componenti aggiuntivi di Esplora test. È possibile aggiungere molti di questi framework tramite Gestione estensioni di Visual Studio e la Visual Studio Gallery. Per altre informazioni, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="get-started"></a>Attività iniziali
+## <a name="get-started"></a>Introduzione
 
 Per un'introduzione agli unit test che mostra direttamente la creazione di codice, vedere uno degli argomenti seguenti:
 
 - [Procedura dettagliata: Creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Guida introduttiva: Sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Scrivere unit test per C/C++ in Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -83,7 +83,7 @@ Ora che è disponibile codice, è possibile passare al test.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Creare progetti di unit test e metodi di test
 
-Spesso è più rapido generare il progetto di unit test e gli stub di unit test dal codice. In alternativa, è possibile creare il progetto di unit test e i test manualmente, in base alle esigenze. Se si vogliono creare unit test con framework di terze parti, è necessario che sia installata una di queste estensioni: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) o [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+Spesso è più rapido generare il progetto di unit test e gli stub di unit test dal codice. In alternativa, è possibile creare il progetto di unit test e i test manualmente, in base alle esigenze. Se si vuole creare unit test con un Framework di terze parti, sarà necessario installare una di queste estensioni: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) o [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generare progetto e stub di unit test
 
@@ -116,7 +116,7 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
 ### <a name="create-the-unit-test-project-and-unit-tests-manually"></a>Creare il progetto di unit test e gli unit test manualmente
 
-Un progetto unit test rispecchia in genere la struttura di un progetto a codice singolo. Nell'esempio MyBank si aggiungono due progetti unit test denominati `AccountsTests` e `BankDbTests` alla soluzione `MyBanks` . I nomi dei progetti di test sono arbitrari, ma è consigliabile adottare una convenzione di denominazione standard.
+Un progetto unit test rispecchia in genere la struttura di un progetto a codice singolo. Nell'esempio MyBank si aggiungono due progetti unit test denominati `AccountsTests` e `BankDbTests` alla soluzione `MyBanks`. I nomi dei progetti di test sono arbitrari, ma è consigliabile adottare una convenzione di denominazione standard.
 
 **Per aggiungere un progetto unit test a una soluzione:**
 
@@ -255,7 +255,7 @@ La barra degli strumenti di **Esplora test** consente di individuare, organizzar
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Selezionare un test per visualizzarne i dettagli nel riquadro dei dettagli del test. Scegliere **Apri test** dal menu di scelta rapida (da tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
+È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per selezionare un sottoinsieme di test da eseguire. Selezionare un test per visualizzarne i dettagli nel riquadro dei dettagli del test. Scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
 
 ::: moniker range="vs-2017"
 
@@ -301,7 +301,7 @@ Quando è presente un numero elevato di test, è possibile digitare nella casell
 
 |Button|Descrizione|
 |-|-|
-|![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per**.|
+|![Pulsante di raggruppamento di Team Explorer](../test/media/ute_groupby_btn.png)|Per raggruppare i test in base alla categoria, scegliere il pulsante **Raggruppa per** .|
 
 Per altre informazioni, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md).
 
@@ -322,7 +322,7 @@ Altre informazioni dettagliate sul [debug di unit test](../debugger/debugger-fea
 
 **D: Se si usa lo sviluppo basato su test, come è possibile generare codice dai test?**
 
-**R:** Usare Azioni rapide per generare classi e metodi nel codice del progetto. Scrivere un'istruzione in un metodo di test che chiama la classe o il metodo da generare, quindi aprire la lampadina visualizzata sotto l'errore. Se la chiamata è per un costruttore della nuova classe, scegliere **Genera tipo** dal menu, quindi eseguire la procedura guidata per inserire la classe nel progetto di codice. Se la chiamata è per un metodo, scegliere **Genera metodo** dal menu di IntelliSense.
+**R:** Usare le azioni rapide per generare classi e metodi nel codice del progetto. Scrivere un'istruzione in un metodo di test che chiama la classe o il metodo da generare, quindi aprire la lampadina visualizzata sotto l'errore. Se la chiamata è per un costruttore della nuova classe, scegliere **Genera tipo** dal menu, quindi eseguire la procedura guidata per inserire la classe nel progetto di codice. Se la chiamata è per un metodo, scegliere **Genera metodo** dal menu di IntelliSense.
 
 ::: moniker range="vs-2017"
 ![Genera stub metodo - Menu Azione rapida](../test/media/ute_generatemethodstubintellisense.png)
@@ -333,7 +333,7 @@ Altre informazioni dettagliate sul [debug di unit test](../debugger/debugger-fea
 
 **D: È possibile creare unit test che accettano più set di dati come input per eseguire il test?**
 
-**R:** Sì. I*metodi di test basati sui dati* permettono di testare un intervallo di valori con un singolo metodo di unit test. Usare un attributo `DataSource` per il metodo di test che specifica l'origine dati e la tabella contenente i valori variabili da testare.  Nel corpo del metodo assegnare i valori di riga alle variabili usando l'indicizzatore `TestContext.DataRow[`*NomeColonna*`]` .
+**R:** Sì. I*metodi di test basati sui dati* permettono di testare un intervallo di valori con un singolo metodo di unit test. Usare un attributo `DataSource` per il metodo di test che specifica l'origine dati e la tabella contenente i valori variabili da testare.  Nel corpo del metodo assegnare i valori di riga alle variabili usando l'indicizzatore `TestContext.DataRow[`*NomeColonna*`]`.
 
 > [!NOTE]
 > Queste procedure sono applicabili soli ai metodi di test scritti usando il framework per unit test Microsoft per codice gestito. Se si usa un framework diverso, per informazioni sulla funzionalità equivalente vedere la documentazione del framework in uso.
@@ -369,7 +369,7 @@ Altre informazioni sugli [unit test basati sui dati](../test/how-to-create-a-dat
 
 È possibile eseguire il code coverage su test selezionati oppure su tutti i test in una soluzione. La finestra **Risultati code coverage** visualizza la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 
-Per eseguire code coverage per i metodi di test in una soluzione, scegliere **test** > **per analizzare il code coverage per tutti i test**.
+Per eseguire code coverage per i metodi di test in una soluzione, scegliere **test**  > **Analizza code coverage per tutti i test**.
 
 I risultati del code coverage vengono visualizzati nella finestra **Risultati code coverage**.
 

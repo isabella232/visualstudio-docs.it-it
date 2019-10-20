@@ -8,19 +8,19 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17bda235f0fb5781b19a3b1384b86ae58543edf3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: fd1bb86e13fb5f5b654ad4f4e1ee7fe7a243f1f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261211"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647738"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione e viceversa in Progettazione classi
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione in Progettazione classi
 
 In **Progettazione classi** è possibile modificare il modo in cui il diagramma classi rappresenta una relazione di associazione tra due tipi dalla notazione membro alla notazione associazione e viceversa. I membri visualizzati come linee di associazione spesso offrono una visualizzazione utile della correlazione tra tipi.
 

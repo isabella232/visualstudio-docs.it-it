@@ -1,5 +1,5 @@
 ---
-title: Proprietà delle forme d'immagine | Microsoft Docs
+title: Proprietà delle forme immagine | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -11,68 +11,68 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 ms.assetid: 9ce00ccd-07f2-4640-ac96-2a60481d0d72
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d51801c1be56504fa4bf4ed2046d463db0e99aae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 79ec5470a8bac83d8e60454c984739f1e520b634
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701496"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671381"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare forme d'immagine per specificare l'aspetto delle classi di dominio in una finestra di progettazione generata. Definire una forma immagine impostando il `Image` proprietà della classe in un file di immagine predefinito. Sono supportati i formati seguenti:  
-  
-- .gif  
-  
-- .jpg  
-  
-- .jpeg  
-  
-- .bmp  
-  
-- .wmf  
-  
-- .emf  
-  
-- .png  
-  
-  Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nel **risorse** cartella le **Dsl** progetto.  
-  
-  Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
-  Forme d'immagine hanno le proprietà elencate nella tabella seguente.  
-  
-|Proprietà|Descrizione|Impostazione predefinita|  
-|--------------|-----------------|-------------|  
-|Colore riempimento|Il colore di riempimento di questa forma.|Bianco|  
-|Modalità di sfumatura riempimento|La modalità di sfumatura riempimento della forma.|Orizzontale|  
-|Offre punti di connessione predefinito|Se `True`, la forma userà superiore, inferiore, sinistro e i punti di connessione a destra nella finestra di progettazione generata.|False|  
-|Colore del contorno|Colore del contorno di questa forma.|Nero|  
-|Stile del tratteggio di struttura|Lo stile di tratteggio contorno di questa forma (tinta unita, Dash, Dot, Trattopunto, Trattopuntopunto o personalizzato).|Tinta unita|  
-|Spessore del contorno|Lo spessore del contorno di questa forma.|0.03125|  
-|Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|  
-|Modificatore di accesso|Il modificatore di accesso della forma geometria (pubblico o interno).|Public|  
-|Attributi personalizzati|Consente di aggiungere attributi alla classe del codice sorgente che viene generata da questa forma.|\<nessuno>|  
-|Genera l'errore doppia derivati|Se `True`, verrà generate una classe di base sia una classe parziale (per supportare la personalizzazione tramite override). Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla forma dell'immagine (`none`, `abstract` o `sealed`).|none|  
-|Forma immagine di base|Classe di base di questa forma.|(nessuno)|  
-|Nome|Il nome di questa forma.|Nome corrente|  
-|Spazio dei nomi|Lo spazio dei nomi che è affiliato a questa forma.|Spazio dei nomi corrente|  
-|Tipo della descrizione comando|La posizione in cui è definito la descrizione comando (fissata, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene usata come descrizione comando; se la variabile, la descrizione comando è definito nel codice personalizzato.|none|  
-|Note|Note informali associate a questa forma.|\<nessuno>|  
-|Altezza iniziale|Altezza iniziale della forma, in pollici.|1|  
-|Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1,5|  
-|Colore di riempimento esposte come proprietà<br /><br /> Modalità di sfumatura riempimento esposto<br /><br /> Esposizione del colore del contorno come proprietà<br /><br /> Esposta dello stile di tratteggio di struttura come proprietà<br /><br /> Esposti come proprietà dello spessore del contorno<br /><br /> Espone il colore del testo|Se `True`, l'utente può impostare la proprietà specificata di una forma. Per procedere, fare doppio clic la definizione della forma e fare clic su **Aggiungi esposta**.|False|  
-|Descrizione|Consente di documentare la finestra di progettazione generata.|\<nessuno>|  
-|Nome visualizzato|Il nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<nessuno>|  
-|Testo della descrizione comando fissa|Testo che viene usato per una descrizione comando fissa.|\<nessuno>|  
-|Parola chiave della Guida|La parola chiave utilizzata per indicizzare la Guida F1 per questo elemento.|\<nessuno>|  
-|Image|Il percorso del file di immagine che viene usato per questa forma.|\<nessuno>|  
-  
-## <a name="see-also"></a>Vedere anche  
+È possibile utilizzare le forme immagine per specificare la modalità di visualizzazione delle classi di dominio in una finestra di progettazione generata. Definire una forma immagine impostando la proprietà `Image` della classe su un file di immagine predefinito. Sono supportati i formati seguenti:
+
+- .gif
+
+- . jpg
+
+- . jpeg
+
+- . bmp
+
+- WMF
+
+- . EMF
+
+- .png
+
+  Per impostazione predefinita, i file di risorse della finestra di progettazione, ad esempio i file di immagine, si trovano nella cartella **risorse** del progetto **DSL** .
+
+  Per ulteriori informazioni, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+  Le forme immagine hanno le proprietà elencate nella tabella seguente.
+
+|proprietà|Descrizione|Impostazione predefinita|
+|--------------|-----------------|-------------|
+|Colore riempimento|Colore di riempimento di questa forma.|bianco|
+|Modalità gradiente riempimento|Modalità di sfumatura riempimento di questa forma.|Orizzontale|
+|Con punti di connessione predefiniti|Se `True`, la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|False|
+|Colore del contorno|Colore del contorno di questa forma.|Nero|
+|Stile tratteggiato contorno|Stile di tratteggio del contorno di questa forma (tinta unita, trattino, punto, DashDot, TrattoPuntoPunto o personalizzato).|Tinta unita|
+|Spessore del contorno|Spessore del contorno di questa forma.|0,03125|
+|Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questa forma.|Nero|
+|Modificatore di accesso|Modificatore di accesso della forma geometrica (Public o Internal).|Public|
+|Attributi personalizzati|Utilizzato per aggiungere attributi alla classe di codice sorgente generata da questa forma.|\<nessuno>|
+|Genera il doppio derivato|Se `True`, verranno generate sia una classe di base che una classe parziale (per supportare la personalizzazione tramite sostituzioni). Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Con costruttore personalizzato|Se `True`, nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generata dalla forma dell'immagine (`none`, `abstract` o `sealed`).|none|
+|Forma immagine di base|Classe di base di questa forma.|(nessuno)|
+|Name|Nome di questa forma.|Nome corrente|
+|Spazio dei nomi|Spazio dei nomi affiliato a questa forma.|Spazio dei nomi corrente|
+|Tipo di descrizione comando|Posizione in cui è definita la descrizione comando (fixed, variable o None). Se è fixed, il valore della proprietà `Fixed Tooltip Text` viene usato come descrizione comando; Se variabile, la descrizione comando è definita nel codice personalizzato.|none|
+|Note|Note informali associate a questa forma.|\<nessuno>|
+|Altezza iniziale|Altezza iniziale di questa forma, in pollici.|1|
+|Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1.5|
+|Colore riempimento esposto come proprietà<br /><br /> Modalità di sfumatura riempimento esposta<br /><br /> Colore struttura esposto come proprietà<br /><br /> Stile tratteggiato del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True`, l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|False|
+|Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<nessuno>|
+|Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<nessuno>|
+|Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<nessuno>|
+|Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questo elemento.|\<nessuno>|
+|Immagine|Percorso del file di immagine usato per la forma.|\<nessuno>|
+
+## <a name="see-also"></a>Vedere anche
  [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

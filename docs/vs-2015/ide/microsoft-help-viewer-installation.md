@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Help Viewer 2.0, installing
 ms.assetid: 51e72eac-d5d7-45e6-8899-04935499d1a6
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e3b53cbe31971ddcdc8e349133f52634e03e88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ee97ea6b8b8f0f4026becd53413a17053cd1b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197742"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670430"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installazione di Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Molti prodotti visualizzano la Guida in Microsoft Help Viewer. Le istruzioni di installazione variano in base al prodotto con cui è stato installato Help Viewer.  
-  
-## <a name="locating-setup-information"></a>Individuazione delle informazioni di installazione  
+Molti prodotti visualizzano la Guida in Microsoft Help Viewer. Le istruzioni di installazione variano in base al prodotto con cui è stato installato Help Viewer.
+
+## <a name="locating-setup-information"></a>Individuazione delle informazioni di installazione
  Per informazioni specifiche del prodotto, vedere il relativo file Readme.

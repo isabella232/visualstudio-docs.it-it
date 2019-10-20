@@ -1,21 +1,21 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - Activity Designer FlowDecision
+title: ActivityDesigner Progettazione flussi di lavoro-FlowDecision
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 095ffb7284b9363d3bdb04749c8cff7114927935
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949669"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650435"
 ---
 # <a name="flowdecision-activity-designer"></a>ActivityDesigner FlowDecision
 
@@ -27,19 +27,19 @@ Usare <xref:System.Activities.Statements.FlowDecision> quando per il flusso è p
 
 ### <a name="using-the-flowdecision-designer"></a>Utilizzo dell'ActivityDesigner FlowDecision
 
-Il **FlowDecision** è disponibili nella finestra di progettazione il **diagramma di flusso** categoria del **della casella degli strumenti**, accessibile facendo clic la **casella degli strumenti** scheda della finestra di progettazione del flusso di lavoro. In alternativa, selezionare **della casella degli strumenti** dal **View** dal menu oppure premere **Ctrl**+**Alt** + **X**.
+**FlowDecision** designer è disponibile nella categoria diagramma di **flusso** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** nella progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL** +**ALT** +**X**.
 
-Il **FlowDecision** finestra di progettazione può essere trascinato dal **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro all'interno di un **Flowchart** ActivityDesigner. Verrà creato un <xref:System.Activities.Statements.FlowDecision> con l'etichetta **decisione** all'interno di <xref:System.Activities.Statements.Flowchart> attività. Spostare il mouse sulla finestra di progettazione e la **True** e **False** vengono visualizzati alcuni handle quadrati per i due rami.
+La finestra di progettazione **FlowDecision** può essere trascinata dalla **casella degli strumenti** e rilasciata nell'area Progettazione flussi di lavoro all'interno di un ActivityDesigner **Flowchart** . Viene creata una <xref:System.Activities.Statements.FlowDecision> **decisione** denominata nell'attività <xref:System.Activities.Statements.Flowchart>. Passare il mouse sulla finestra di progettazione e visualizzare gli handle quadrati **veri** e **falsi** per i due rami.
 
-Dopo avere trascinato il **FlowDecision** finestra di progettazione e altre finestre di progettazione sul **diagramma di flusso**, i nodi possono essere collegati tra loro per specificare l'ordine di esecuzione. Per creare un collegamento tra un nodo di origine (inclusi i **True** e **False** rami del **FlowDecision**) e un nodo di destinazione, spostare il mouse sulla finestra di progettazione del nodo di origine e visualizzare gli handle quadrati su ogni lato. Fare clic su uno degli handle quadrati e, tenendo premuto il pulsante del mouse, trascinarlo su uno degli handle visualizzati in modo simile intorno al nodo di destinazione durante il passaggio del mouse. Dopo aver rilasciato il pulsante del mouse, verrà creato un collegamento tra questi due nodi rappresentato da una freccia che collega la finestra di progettazione di origine a quella di destinazione.
+Dopo aver trascinato **FlowDecision** designer e altre finestre di progettazione nel **diagramma di flusso**, i nodi possono essere collegati tra loro per specificare l'ordine di esecuzione. Per creare un collegamento tra un nodo di origine (inclusi i rami **true** e **false** di **FlowDecision**) e un nodo di destinazione, il puntatore del mouse sulla finestra di progettazione del nodo di origine e sui quadratini di ridimensionamento vengono visualizzati su ogni lato. Fare clic su uno degli handle quadrati e, tenendo premuto il pulsante del mouse, trascinarlo su uno degli handle visualizzati in modo simile intorno al nodo di destinazione durante il passaggio del mouse. Dopo aver rilasciato il pulsante del mouse, verrà creato un collegamento tra questi due nodi rappresentato da una freccia che collega la finestra di progettazione di origine a quella di destinazione.
 
-L'espressione che dichiara il <xref:System.Activities.Statements.FlowDecision.Condition%2A> possono essere digitate nel **condizione** finestra di **proprietà** dalla finestra in cui viene visualizzato il testo di suggerimento "Immettere un'espressione VB".
+L'espressione che dichiara la <xref:System.Activities.Statements.FlowDecision.Condition%2A> può essere digitata nella casella **condizione** della finestra **Proprietà** facendo clic sul punto in cui il testo del suggerimento indica "immettere un'espressione VB".
 
 ### <a name="the-flowdecision-properties"></a>Proprietà di FlowDecision
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.FlowDecision> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
-|Nome proprietà|Obbligatorio|Utilizzo|
+|Nome proprietà|Richiesto|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Condizione che determina il percorso seguito dal controllo di flusso.|
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Percorso seguito dal controllo di flusso se viene soddisfatta <xref:System.Activities.Statements.FlowDecision.Condition%2A>.|

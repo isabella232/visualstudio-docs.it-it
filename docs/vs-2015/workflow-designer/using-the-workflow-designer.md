@@ -1,5 +1,5 @@
 ---
-title: Usando la finestra di progettazione del flusso di lavoro | Microsoft Docs
+title: Uso del Progettazione flussi di lavoro | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,37 +9,30 @@ helpviewer_keywords:
 - Visual Studio 2010 Workflow Designer [WFD], using
 ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1490708dc3dce4120d79879ded69283dd6108f67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855420"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656371"
 ---
 # <a name="using-the-workflow-designer"></a>Utilizzo di Progettazione flussi di lavoro
-Contenuto della sezione viene illustrato nei dettagli come creare nuove attività e nuovi progetti di flusso di lavoro usando le finestre di progettazione incorporate e l'editor espressioni ospitato da diversi ActivityDesigner.  
-  
-## <a name="in-this-section"></a>In questa sezione  
- [Creazione di un progetto flusso di lavoro](../workflow-designer/creating-a-workflow-project.md)  
- Argomenti in cui viene illustrato come creare librerie tramite l'uso di tali modelli.  
-  
- [Procedura: Aggiungere attività nella casella degli strumenti](../workflow-designer/how-to-add-activities-to-the-toolbox.md)  
- Illustra modi diversi per aggiungere attività alla casella degli strumenti.  
-  
- [Procedura: Usare la finestra di progettazione argomenti](../workflow-designer/how-to-use-the-argument-designer.md)  
- Mostra come la finestra di progettazione argomenti semplifica il flusso di dati da e verso un'attività.  
-  
- [Procedura: Usare la finestra di progettazione variabili](../workflow-designer/how-to-use-the-variable-designer.md)  
- Mostra come creare variabili da usare in scenari di data binding e istruzioni condizionali.  
-  
- [Procedura: Usare l'editor espressioni](../workflow-designer/how-to-use-the-expression-editor.md)  
- Mostra come usare l'editor espressioni per immettere e valutare espressioni.  
-  
- [Procedura: Usare la finestra di progettazione importazioni](../workflow-designer/how-to-use-the-imports-designer.md)  
- Illustra come immettere gli spazi dei nomi per i tipi usati nelle espressioni.  
-  
- [Procedura: Usare la barra di navigazione](../workflow-designer/how-to-use-breadcrumb-navigation.md)  
- Mostra come spostarsi tra le attività.
+Contenuto della sezione viene illustrato nei dettagli come creare nuove attività e nuovi progetti di flusso di lavoro usando le finestre di progettazione incorporate e l'editor espressioni ospitato da diversi ActivityDesigner.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Creazione di un progetto flusso di lavoro](../workflow-designer/creating-a-workflow-project.md) Argomenti che descrivono come creare librerie tramite l'uso di questi modelli.
+
+ [Procedura: aggiungere attività alla casella degli strumenti](../workflow-designer/how-to-add-activities-to-the-toolbox.md) Mostra i diversi modi per aggiungere attività alla casella degli strumenti.
+
+ [Procedura: usare la finestra di progettazione degli argomenti](../workflow-designer/how-to-use-the-argument-designer.md) Mostra in che modo la finestra di progettazione degli argomenti semplifica l'accesso dei dati all'interno e all'esterno di un'attività.
+
+ [Procedura: utilizzare la finestra di progettazione variabili](../workflow-designer/how-to-use-the-variable-designer.md) Viene illustrato come creare variabili da usare in scenari di data binding e istruzioni condizionali.
+
+ [Procedura: utilizzare l'editor espressioni](../workflow-designer/how-to-use-the-expression-editor.md) Viene illustrato come utilizzare l'editor espressioni per immettere e valutare le espressioni.
+
+ [Procedura: utilizzare la finestra di progettazione importazioni](../workflow-designer/how-to-use-the-imports-designer.md) Mostra come immettere gli spazi dei nomi per i tipi usati nelle espressioni.
+
+ [Procedura: utilizzare l'esplorazione di navigazione](../workflow-designer/how-to-use-breadcrumb-navigation.md) Viene illustrato come spostarsi tra le attività.

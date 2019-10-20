@@ -2,21 +2,21 @@
 title: Risoluzione dei problemi di code coverage
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342484"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659885"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
-Lo strumento di analisi della copertura del codice in Visual Studio raccoglie dati per assembly nativo e gestito (file con estensione *dll* o *exe*). Tuttavia, in alcuni casi, la finestra **Risultati code coverage** visualizza un errore simile a "Nessun risultato generato: ...." Esistono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
+Lo strumento di analisi della copertura del codice in Visual Studio raccoglie dati per assembly nativo e gestito (file con estensione *dll* o *exe*). Tuttavia, in alcuni casi, nella finestra **Risultati code coverage** viene visualizzato un errore simile a "i risultati vuoti generati:...". Esistono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
 
 ## <a name="what-you-should-see"></a>Cosa si dovrebbe vedere
 
@@ -58,7 +58,7 @@ Il file con estensione *pdb* deve essere generato dalla stessa compilazione dei 
 
 Risoluzione&mdash;Verificare che le impostazioni di compilazione generino il file con estensione *pdb*. Se i file con estensione *pdb* non vengono aggiornati quando viene compilato il progetto, aprire le proprietà del progetto, selezionare la pagina **Compila**, scegliere **Avanzate** e controllare **Informazioni di debug**.
 
-Per C++ i progetti, verificare che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che il**debug** > del **linker** > **genera informazioni di debug** sia impostato su **genera informazioni di debug ottimizzate per la condivisione e la pubblicazione (/debug: Full)** .
+Per C++ i progetti, verificare che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che il**debug** del  >  del **linker**  > **genera informazioni di debug** sia impostato su **genera informazioni di debug ottimizzate per la condivisione e la pubblicazione (/debug: Full)** .
 
 Se i file con estensione *pdb* e *dll* o *exe* sono in posizioni diverse, copiare il file con estensione *pdb* nella stessa directory. È inoltre possibile configurare il motore di code coverage per cercare i file con estensione *pdb* in un'altra posizione. Per altre informazioni, vedere [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md).
 

@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666200"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opzioni, Editor di testo, HTML (Web Form), Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **HTML (Web Form)** > **Formattazione**.
+Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere alla pagina, nella barra dei menu scegliere **Strumenti** > **Opzioni** e quindi espandere **Editor di testo** > **HTML (Web Form)**  > **Formattazione**.
 
 ## <a name="capitalization"></a>Maiuscole/minuscole
 
@@ -62,21 +62,21 @@ Tramite queste opzioni viene determinata l'aggiunta o la rimozione delle interru
 
 - **Inserisci virgolette per valori attributi durante la digitazione**
 
-   Se selezionata, nell'editor vengono inserite automaticamente le virgolette prima e dopo gli attributi, durante la digitazione, ad esempio: ID="Select1"). Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
+   Quando questa opzione è selezionata, l'editor inserisce automaticamente le virgolette per racchiudere gli attributi durante la digitazione, ad esempio: ID = "Select1". Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute: le virgolette non vengono mai rimosse.
 
 - **Inserisci valori di attributo tra virgolette durante la formattazione**
 
-   Se selezionata, durante la formattazione automatica vengono aggiunte le virgolette prima e dopo i valori di attributo, ad esempio: ID="Select1").
+   Quando questa opzione è selezionata, la formattazione automatica aggiunge le virgolette intorno ai valori degli attributi, ad esempio: ID = "Select1".
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute.
 
 - **Inserisci automaticamente tag di chiusura**
 
-   Se selezionata, nell'editor viene creato automaticamente un tag di chiusura, ad esempio **\</b>**, quando si chiude il tag di apertura.
+   Se selezionata, nell'editor viene creato automaticamente un tag di chiusura, ad esempio **\</b>** , quando si chiude il tag di apertura.
 
 ## <a name="tag-wrapping"></a>Ritorno a capo dei tag
 

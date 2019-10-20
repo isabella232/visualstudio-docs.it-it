@@ -6,23 +6,23 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695386"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670648"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare avvisi del compilatore
+# <a name="how-to-suppress-compiler-warnings"></a>Procedura: non visualizzare avvisi del compilatore
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile ripulire un log di compilazione specificando uno o più tipi di avvisi del compilatore che non devono essere contenuti nel log. È ad esempio possibile usare questa tecnica per rivedere alcune ma non tutte le informazioni generate automaticamente quando il livello di dettaglio del log di compilazione viene impostato su Normale, Dettagliato o Diagnostico. Per altre informazioni sul livello di dettaglio, vedere [Procedura: Visualizzare, salvare e configurare file di Log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
+È possibile ripulire un log di compilazione specificando uno o più tipi di avvisi del compilatore che non devono essere contenuti nel log. È ad esempio possibile usare questa tecnica per rivedere alcune ma non tutte le informazioni generate automaticamente quando il livello di dettaglio del log di compilazione viene impostato su Normale, Dettagliato o Diagnostico. Per altre informazioni sul livello di dettaglio, vedere [How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md) (Procedura: Visualizzare, salvare e configurare file di log di compilazione)
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Per escludere avvisi specifici per oggetto visivo C# o F\#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Per non visualizzare avvisi specifici per C# Visual o F \#
 
 1. In **Esplora soluzioni** scegliere il progetto in cui non devono essere visualizzati gli avvisi.
 
@@ -58,7 +58,7 @@ ms.locfileid: "65695386"
 
 2. Sulla barra dei menu scegliere **Progetto**, **Scarica progetto**.
 
-3. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Modifica**_nomeprogetto_**.vbproj**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto e scegliere **Modifica**_nomeprogetto_ **.vbproj**.
 
     Il file di progetto si aprirà nell'editor del codice.
 
@@ -110,6 +110,6 @@ ms.locfileid: "65695386"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)
+- [Procedura dettagliata: compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)

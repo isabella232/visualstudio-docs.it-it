@@ -6,28 +6,28 @@ ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 6a3d0ab6-825e-42fa-8df0-37fbc5da9e73
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cc492b17ce4ecf7c4c8bf229a6c43c665dc3c125
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 213f53a426c21f967d82562f24ec07c6eb3edfbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435358"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656189"
 ---
 # <a name="sample-xsd-files"></a>File XSD di esempio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I file di esempio seguenti sono usati nella documentazione della progettazione di schemi XSD.  
-  
+I file di esempio seguenti sono usati nella documentazione della progettazione di schemi XSD.
+
 > [!NOTE]
-> Le società, le organizzazioni, i prodotti, i nomi di dominio, gli indirizzi di posta elettronica, i loghi, le persone, i luoghi e gli eventi di esempio qui riportati sono fittizi. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.  
-  
-## <a name="in-this-section"></a>In questa sezione  
-  
-|Argomento|Descrizione|  
-|-----------|-----------------|  
-|[File XSD di esempio: Schema di ordine di acquisto](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Documento XSD che contiene un tipico schema di ordine di acquisto.|  
-|[File XSD di esempio: Schema semplice](../xml-tools/sample-xsd-file-simple-schema.md)|Documento XSD che contiene uno schema semplice.|  
-|[File XSD di esempio: Relazioni](../xml-tools/sample-xsd-file-relationships.md)|Documento XSD che contiene uno schema con relazioni.|
+> Le società, le organizzazioni, i prodotti, i nomi di dominio, gli indirizzi di posta elettronica, i loghi, le persone, i luoghi e gli eventi di esempio qui riportati sono fittizi. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.
+
+## <a name="in-this-section"></a>Contenuto della sezione
+
+|Argomento|Descrizione|
+|-----------|-----------------|
+|[File XSD di esempio: Schema di ordine di acquisto](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Documento XSD che contiene un tipico schema di ordine di acquisto.|
+|[File XSD di esempio: schema semplice](../xml-tools/sample-xsd-file-simple-schema.md)|Documento XSD che contiene uno schema semplice.|
+|[File XSD di esempio: relazioni](../xml-tools/sample-xsd-file-relationships.md)|Documento XSD che contiene uno schema con relazioni.|

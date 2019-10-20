@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918629"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665334"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -34,14 +34,14 @@ Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di ca
 
 Nella tabella vengono visualizzate le prime 1.000 violazioni di soglia. La tabella seguente contiene queste colonne:
 
-|Colonna|DESCRIZIONE|Visibile per impostazione predefinita|
+|Colonna|Descrizione|Visibile per impostazione predefinita|
 |-|-|-|
-|Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
-|Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:**  Questo nome è importante quando i test di carico vengono eseguiti in rig.|Sì|
-|Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
-|Counter|Il nome del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
-|Istanza|L'istanza del contatore delle prestazioni in cui si è verificata la violazione.|Sì|
-|Messaggio|Messaggio in cui viene descritta la violazione di soglia, Ad esempio, **Il valore 5 supera il valore soglia critico di 0**.|Sì|
+|Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Yes|
+|Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:** questo nome è importante quando i test di carico vengono eseguiti in rig.|Yes|
+|Category|La categoria del contatore delle prestazioni in cui si è verificata la violazione.|Yes|
+|Counter|Il nome del contatore delle prestazioni in cui si è verificata la violazione.|Yes|
+|Istanza|L'istanza del contatore delle prestazioni in cui si è verificata la violazione.|Yes|
+|Messaggio|Messaggio in cui viene descritta la violazione di soglia, Ad esempio, **Il valore 5 supera il valore soglia critico di 0**.|Yes|
 
 > [!NOTE]
 > È possibile ordinare la tabella scegliendo le intestazioni delle colonne.

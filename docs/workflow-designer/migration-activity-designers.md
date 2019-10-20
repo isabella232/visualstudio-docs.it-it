@@ -1,25 +1,25 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - Activity Designer Migration
+title: ActivityDesigner di migrazione Progettazione flussi di lavoro
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7b284b370f248ed2497ece835036679af2e5a8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: da8459db53a1ecb9a297e2a4a218791281806313
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747023"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650129"
 ---
-# <a name="migration-activity-designers"></a>Activity Designer Migration
+# <a name="migration-activity-designers"></a>ActivityDesigner Migrazione
 
-Gli ActivityDesigner Migration vengono usati per chiamare del flusso di lavoro 3.0/3.5 attività da un flusso di lavoro che ha come destinazione .NET Framework 4 o versione successiva.
+Gli ActivityDesigner di migrazione vengono utilizzati per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro che ha come destinazione .NET Framework 4 o versione successiva.
 
-Gli argomenti contenuti in questa sezione forniscono materiale sussidiario su come usare le finestre di progettazione di attività di progettazione del flusso di lavoro.
+Negli argomenti contenuti in questa sezione vengono fornite indicazioni sull'utilizzo degli ActivityDesigner Progettazione flussi di lavoro.
 
 ## <a name="related-sections"></a>Sezioni correlate
 

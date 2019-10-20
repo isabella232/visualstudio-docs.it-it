@@ -1,46 +1,46 @@
 ---
-title: Finestra di progettazione del flusso di lavoro - ExistsInCollection&lt;T&gt; ActivityDesigner
+title: ActivityDesigner Progettazione flussi di lavoro-ActivityDesigner ExistsInCollection &lt;T &gt;
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06892bcfdca33e5e77e8c01f06f594849e5293e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9dc1f6a3694b6164fe4f2187fa4c6e2b42751e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949721"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650484"
 ---
-# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > ActivityDesigner
+# <a name="existsincollectiont-activity-designer"></a>ActivityDesigner ActivityDesigner ExistsInCollection \<T >
 
-Il **ExistsInCollection\<T >** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.ExistsInCollection%601> attività.
+L'ActivityDesigner **activitydesigner existsincollection \<T >** viene utilizzato per creare e configurare un'attività di <xref:System.Activities.Statements.ExistsInCollection%601>.
 
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > attività
+## <a name="the-existsincollectiont-activity"></a>Attività ActivityDesigner ExistsInCollection \<T >
 
 L'attività <xref:System.Activities.Statements.ExistsInCollection%601> determina se in una particolare raccolta è presente un elemento specificato.
 
-### <a name="using-the-existsincollectiont-activity-designer"></a>Usando ExistsInCollection\<T > ActivityDesigner
+### <a name="using-the-existsincollectiont-activity-designer"></a>Uso di ActivityDesigner ExistsInCollection \<T > Activity Designer
 
-Il **ExistsInCollection\<T >** ActivityDesigner è reperibile nella **raccolta** categoria del **casella degli strumenti**, accessibile facendo clic di  **Casella degli strumenti** scheda della finestra di progettazione del flusso di lavoro. In alternativa, selezionare **della casella degli strumenti** dal **View** dal menu oppure premere **Ctrl**+**Alt** + **X**.
+L'ActivityDesigner **activitydesigner existsincollection \<T >** è disponibile nella categoria **raccolta** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** di progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** oppure premere **CTRL** +**ALT** +**X**.
 
-Il **ExistsInCollection\<T >** ActivityDesigner può essere trascinato dal **casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Ciò consente di creare un <xref:System.Activities.Statements.ExistsInCollection%601> attività con un valore predefinito <xref:System.Activities.Activity.DisplayName%2A> existsincollection < Int32\>. (Per impostazione predefinita, il *TypeArgument* viene **Int32**. Tale valore può essere modificato nella griglia delle proprietà.  Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **ExistsInCollection < T\>**  ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
+È possibile trascinare l'ActivityDesigner **activitydesigner existsincollection \<T >** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro quando vengono in genere posizionate le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Viene creata un'attività <xref:System.Activities.Statements.ExistsInCollection%601> con una <xref:System.Activities.Activity.DisplayName%2A> predefinita di ActivityDesigner ExistsInCollection < Int32 \>. Per impostazione predefinita, *TypeArgument* è **Int32**. Può essere modificato nella griglia delle proprietà.  Il valore <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **activitydesigner existsincollection < t \>** o nella casella **DisplayName** della griglia delle proprietà. Le altre proprietà devono essere modificate nella griglia delle proprietà.
 
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > proprietà
+### <a name="the-existsincollectiont-properties"></a>Proprietà di > \<T ActivityDesigner ExistsInCollection
 
-La tabella seguente illustra il <xref:System.Activities.Statements.ExistsInCollection%601> proprietà e viene descritto come usarle nella finestra di progettazione:
+Nella tabella seguente vengono illustrate le proprietà <xref:System.Activities.Statements.ExistsInCollection%601> e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione:
 
-|Nome proprietà|Obbligatorio|Utilizzo|
+|Nome proprietà|Richiesto|Utilizzo|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.ExistsInCollection%601>. L'impostazione predefinita è ExistsInCollection < Int32\>. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|L'elemento da cercare nella raccolta\<T >. Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Raccolta in cui si desidera controllare se l'elemento esiste. Questa raccolta è di tipo **ICollection < TypeArgument\>.** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
-|*TypeArgument*|True|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, ciò *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore della *TypeArgument* nella casella combinata nella griglia delle proprietà.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.ExistsInCollection%601>. Il valore predefinito è ActivityDesigner ExistsInCollection < Int32 \>. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|Elemento da cercare nella raccolta \<T >. Questo elemento è di tipo *T*, che è di tipo *TypeArgument*. Per specificare l'elemento, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|Raccolta in cui verificare se l'elemento esiste. Questa raccolta è di tipo **ICollection < TypeArgument \>.** Per specificare la raccolta, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+|*TypeArgument*|True|Tipo T degli elementi contenuti in <xref:System.Collections.Generic.ICollection%601>. Per impostazione predefinita, questo tipo di *TypeArgument* è impostato su **Int32**. Per modificare il tipo, modificare il valore di *TypeArgument* nella casella combinata della griglia delle proprietà.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Valore che indica se l'elemento specificato è presente nella raccolta. Per specificare una variabile da associare al risultato, digitare una variabile Visual Basic nella griglia delle proprietà.|
 
 ## <a name="see-also"></a>Vedere anche

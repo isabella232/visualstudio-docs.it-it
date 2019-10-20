@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950137"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653603"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedura: Creare un test di servizio Web
 
@@ -25,7 +25,7 @@ I test web consentono di testare i servizi web. Tramite le opzioni **Inserisci r
 
 Nelle procedure seguenti si usa un servizio Web contenuto nel Commerce Starter Kit. È possibile scaricarlo da [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469).
 
-**Requisiti**
+**Requirements**
 
 Visual Studio Enterprise
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 2. Nell'**Editor test prestazioni Web** fare clic con il pulsante destro del mouse sul test prestazioni Web, quindi scegliere **Aggiungi richiesta servizio Web**.
 
-3. Nella proprietà **Url** della nuova richiesta immettere il nome del servizio Web, ad esempio **http://localhost/storecsvs/InstantOrder.asmx**.
+3. Nella proprietà **Url** della nuova richiesta immettere il nome del servizio Web, ad esempio **http://localhost/storecsvs/InstantOrder.asmx** .
 
 4. Aprire una sessione separata del browser e digitare l'URL della pagina con estensione *asmx* sulla barra degli strumenti **Indirizzo**. Selezionare il metodo da testare, quindi esaminare il messaggio SOAP. Esso contiene una `SOAPAction`.
 
@@ -71,7 +71,7 @@ Visual Studio Enterprise
     > [!NOTE]
     > È possibile usare l'associazione dati nel corpo SOAP per sostituire i valori segnaposto con valori associati a dati mediante la sintassi `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Eseguire il test. Nel riquadro superiore del **Visualizzatore risultati test prestazioni web** selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda Web browser. Verranno visualizzati l'XML restituito dal servizio Web e i risultati di tutte le operazioni.
+13. Eseguire il test. Nel riquadro superiore del **Visualizzatore risultati test prestazioni web** selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda Web browser. Verrà visualizzato il codice XML restituito dal servizio Web e i risultati delle operazioni.
 
 ## <a name="see-also"></a>Vedere anche
 

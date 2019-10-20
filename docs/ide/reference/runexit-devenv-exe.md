@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /RunExit switch
 - /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa010e72267dadfb1974f7ce8be3b6b9a3e1cff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 295d4999437248cc9221631378c2beffd80094d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935047"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655526"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -29,7 +29,7 @@ Compila ed esegue il progetto o la soluzione specificati e quindi chiude l'ambie
 devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 - *SolutionName*
 
@@ -41,15 +41,15 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  Facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
-Compila ed esegue il progetto o la soluzione specificati in base alle impostazioni specificate per la configurazione della soluzione attiva. Questa opzione riduce a icona l'IDE durante l'esecuzione del progetto o della soluzione. Chiude l'IDE al termine dell'esecuzione del progetto o della soluzione.
+Compila ed esegue il progetto o la soluzione specificati in base alle impostazioni specificate per la configurazione soluzione attiva. Questa opzione riduce a icona l'IDE durante l'esecuzione del progetto o della soluzione. Chiude l'IDE al termine dell'esecuzione del progetto o della soluzione.
 
 - Racchiudere le stringhe che includono spazi tra virgolette doppie.
 
-- Le informazioni di riepilogo, compresi gli errori, possono essere visualizzate nella finestra di **comando** o in qualsiasi file di log specificato con l'opzione `/Out`.
+- Le informazioni di riepilogo, compresi gli errori, possono essere visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/Out`.
 
 ## <a name="example"></a>Esempio
 

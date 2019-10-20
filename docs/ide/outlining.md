@@ -10,21 +10,21 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61772ead029dccaff9b1090a469865fcc3742df6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811916"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666817"
 ---
 # <a name="outlining"></a>struttura
 
-È possibile scegliere di nascondere parti di codice comprimendo un'area di codice in modo che venga visualizzata sotto un segno più (**+**). Per espandere un'area compressa fare clic sul segno più. Se si preferisce usare la tastiera, per espandere e comprimere è possibile scegliere **CTRL**+**M**+**M**. È anche possibile comprimere un'area della struttura facendo doppio clic su qualsiasi riga nell'area a margine della struttura, che viene visualizzata a sinistra del codice. Il contenuto di un'area compressa può essere visualizzato come descrizione comando quando si passa il mouse sull'area compressa.
+È possibile scegliere di nascondere parti di codice comprimendo un'area di codice in modo che venga visualizzata sotto un segno più ( **+** ). Per espandere un'area compressa fare clic sul segno più. Se si preferisce usare la tastiera, per espandere e comprimere è possibile scegliere **CTRL**+**M**+**M**. È anche possibile comprimere un'area della struttura facendo doppio clic su qualsiasi riga nell'area a margine della struttura, che viene visualizzata a sinistra del codice. Il contenuto di un'area compressa può essere visualizzato come descrizione comando quando si passa il mouse sull'area compressa.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Editor standard (Visual Studio per Mac)](/visualstudio/mac/source-editor).
@@ -51,7 +51,7 @@ I comandi seguenti sono disponibili nel sottomenu **Modifica** > **Struttura**.
 |Comprimi blocco:\<limite logico>|(Visual C++) Consente di comprimere un'area nella funzione contenente il punto di inserimento. Ad esempio, se il punto di inserimento si trova all'interno di un ciclo, il ciclo è nascosto.|
 |Comprimi tutto in:\<strutture logiche>|(Visual C++) Comprime tutte le strutture all'interno della funzione.|
 
-È anche possibile usare Visual Studio SDK per definire le aree di testo che si intende espandere o comprimere. Vedere [Procedura dettagliata: Struttura](../extensibility/walkthrough-outlining.md).
+È anche possibile usare Visual Studio SDK per definire le aree di testo che si intende espandere o comprimere. Vedere [Walkthrough: Outlining](../extensibility/walkthrough-outlining.md) (Procedura dettagliata: struttura).
 
 ## <a name="see-also"></a>Vedere anche
 

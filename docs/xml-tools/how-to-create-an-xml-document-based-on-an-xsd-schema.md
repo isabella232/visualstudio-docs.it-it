@@ -1,21 +1,21 @@
 ---
-title: 'Procedura: Creare un documento XML in base a uno schema XSD'
+title: 'Procedura: creare un documento XML in base allo schema XSD'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918559"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645970"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: Creare un documento XML in base a uno schema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procedura: creare un documento XML in base a uno schema XSD
 
 La funzionalità **genera XML di esempio** genera un file XML di esempio basato sul file XML Schema (XSD).
 
@@ -41,9 +41,9 @@ Si noti inoltre che il contenuto `xs:base64Binary` sarà generato solo se le enu
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Per generare un documento di istanza XML basato sul file XSD
 
-1. Attenersi alla procedura descritta [in procedura: Creazione e modifica di un file](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)di schema XSD.
+1. Seguire i passaggi in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. In [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)fare clic con il pulsante destro `PurchaseOrder` del mouse sull'elemento globale. Selezionare **genera XML di esempio**.
+2. In [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)fare clic con il pulsante destro del mouse sull'elemento globale `PurchaseOrder`. Selezionare **genera XML di esempio**.
 
      Quando si seleziona questa opzione, PurchaseOrder. il file *XML* con il contenuto XML di esempio seguente verrà generato e aperto nell'editor XML:
 

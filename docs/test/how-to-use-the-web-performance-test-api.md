@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d22c1962727d22af965c879de3ae5fea6d4e54af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978562"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653304"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Procedura: Usare l'API del test delle prestazioni Web
 
@@ -62,11 +62,11 @@ ms.locfileid: "62978562"
 
 9. Eseguire il test delle prestazioni Web.
 
-     Per un esempio di un'implementazione di <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, vedere [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Per un esempio di implementazione di <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, vedere [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Procedura: Usare l'API del test di carico](../test/how-to-use-the-load-test-api.md)
-- [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md)

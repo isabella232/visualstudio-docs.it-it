@@ -2,18 +2,18 @@
 title: Uso di shim per isolare l'applicazione per il testing unità
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-author: gewarren
+author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 90a9a0abb43f8185219cb9ca8e4b41d2ed113838
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018924"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659755"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli shim per isolare l'app per il testing unità
 
@@ -23,7 +23,7 @@ Usare gli *shim* per isolare il codice dagli assembly che non fanno parte della 
 
 Per una panoramica e istruzioni introduttive, vedere [isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
@@ -74,7 +74,7 @@ Aggiungere prima di tutto un assembly Fakes:
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
-### <a name="use-shimscontext"></a>Usare ShimsContext
+### <a name="use-shimscontext"></a>Utilizzare ShimsContext
 
 Quando si usano tipi shim in un Framework di unit test, eseguire il wrapping del codice di test in un `ShimsContext` per controllare la durata degli shim. In caso contrario, gli shim dureranno fino alla chiusura di AppDomain. Il modo più semplice per creare un oggetto `ShimsContext` consiste nell'usare il metodo statico `Create()` come mostrato nel codice seguente:
 
@@ -88,7 +88,7 @@ public void Y2kCheckerTest() {
 }
 ```
 
-È fondamentale eliminare correttamente ogni contesto shim. Come regola generale, chiamare il `ShimsContext.Create` all'interno di un'istruzione `using` per garantire la corretta cancellazione degli shim registrati. Ad esempio, si potrebbe registrare uno shim per un metodo di test che sostituisce il metodo `DateTime.Now` con un delegato che restituisce sempre il primo gennaio 2000. Se si dimentica di cancellare lo shim registrato nel metodo di test, il resto dell'esecuzione del test restituisce sempre il primo gennaio 2000 come valore `DateTime.Now`. Ciò potrebbe sorprendere e confondere.
+È fondamentale eliminare correttamente ogni contesto shim. Come regola generale, chiamare la `ShimsContext.Create` all'interno di un'istruzione `using` per garantire la corretta cancellazione degli shim registrati. Ad esempio, si potrebbe registrare uno shim per un metodo di test che sostituisce il metodo `DateTime.Now` con un delegato che restituisce sempre il primo gennaio 2000. Se si dimentica di cancellare lo shim registrato nel metodo di test, il resto dell'esecuzione del test restituisce sempre il primo gennaio 2000 come valore `DateTime.Now`. Ciò potrebbe sorprendere e confondere.
 
 ### <a name="write-a-test-with-shims"></a>Scrivere un test con shim
 
@@ -456,7 +456,7 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="concurrency"></a>Concorrenza
+## <a name="concurrency"></a>concorrenza
 
 I tipi shim si applicano a tutti i thread in AppDomain e non presentano affinità di thread. Questo è un fatto importante se si prevede di usare un test runner che supporta la concorrenza. I test che coinvolgono tipi shim non possono essere eseguiti contemporaneamente. Questa proprietà non viene applicata dal runtime di Fakes.
 

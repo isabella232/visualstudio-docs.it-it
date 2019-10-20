@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 206f97dcb264f85a15a9293e55a3f2ccc6173aa5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746859"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652607"
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -30,7 +30,7 @@ I *progetti* contengono gli elementi necessari per compilare l'app in Visual Stu
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Creare progetti in Visual Studio per Mac](/visualstudio/mac/create-new-projects).
 
-È possibile visualizzare le soluzioni e i progetti in una finestra degli strumenti denominata **Esplora soluzioni**. Lo screenshot seguente illustra una soluzione di esempio in **Esplora soluzioni** (**BikeSharing.Xamarin-UWP**) contenente due progetti: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Ogni progetto contiene più file, cartelle e riferimenti. Il nome del progetto in grassetto indica il *progetto di avvio*, ovvero il progetto che viene avviato quando si esegue l'app. È possibile specificare quale progetto è il progetto di avvio.
+È possibile visualizzare le soluzioni e i progetti in una finestra degli strumenti denominata **Esplora soluzioni**. La schermata seguente visualizza un esempio di soluzione in **Esplora soluzioni** (**BikeSharing.Xamarin-UWP**) contenente due progetti: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Ogni progetto contiene più file, cartelle e riferimenti. Il nome del progetto in grassetto indica il *progetto di avvio*, ovvero il progetto che viene avviato quando si esegue l'app. È possibile specificare quale progetto è il progetto di avvio.
 
 ![Esplora soluzioni con progetti](./media/vside-solution-explorer-projects.png)
 

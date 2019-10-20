@@ -10,18 +10,18 @@ f1_keywords:
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30281d8cd5d5ed94ed89a980006f9618292a778d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc35aec714255b467431488936605fb37009db9d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951970"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659013"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
-Il **InvokeDelegate** designer viene utilizzato per creare e configurare un <xref:System.Activities.Statements.InvokeDelegate> attività.
+**InvokeDelegate** Designer viene utilizzato per creare e configurare un'attività <xref:System.Activities.Statements.InvokeDelegate>.
 
 ## <a name="the-invokedelegate-activity"></a>L'attività InvokeDelegate
 
@@ -29,20 +29,20 @@ L'oggetto <xref:System.Activities.Statements.InvokeDelegate> chiama un delegato 
 
 ### <a name="using-the-invokedelegate-activity-designer"></a>Utilizzo dell'ActivityDesigner InvokeDelegate
 
-Il **InvokeDelegate** ActivityDesigner è reperibile nel **primitive** categoria del **della casella degli strumenti**, accessibile facendo clic di **dellacaselladeglistrumenti** della scheda [!INCLUDE[wfd2](../includes/wfd2-md.md)] (in alternativa, selezionare **sulla barra degli strumenti** dal **visualizzazione** menu o premere CTRL + ALT + X.)
+L'ActivityDesigner **InvokeDelegate** è disponibile nella categoria **primitive** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda della **casella degli strumenti** [!INCLUDE[wfd2](../includes/wfd2-md.md)] (in alternativa, scegliere **barra degli** strumenti dal menu **Visualizza** oppure CTRL + ALT + X.)
 
-Il **InvokeDelegate** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../includes/wfd2-md.md)] superficie in cui le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. In questo modo viene creata un'attività <xref:System.Activities.Statements.InvokeDelegate> con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito InvokeDelegate. Il <xref:System.Activities.Activity.DisplayName%2A> possono essere modificati nell'intestazione del **InvokeDelegate** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà.
+È possibile trascinare l'ActivityDesigner **InvokeDelegate** dalla **casella degli strumenti** e rilasciarlo nell'area [!INCLUDE[wfd2](../includes/wfd2-md.md)] in cui vengono in genere posizionate le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. In questo modo viene creata un'attività <xref:System.Activities.Statements.InvokeDelegate> con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito InvokeDelegate. Il <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **InvokeDelegate** o nella casella **DisplayName** della griglia delle proprietà.
 
 ### <a name="the-invokedelegate-properties"></a>Proprietà di InvokeDelegate
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.InvokeDelegate> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e, in alcuni casi, nell'area della finestra di progettazione di [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
-|Nome proprietà|Obbligatorio|Utilizzo|
+|Nome proprietà|Richiesto|Utilizzo|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nome descrittivo dell'attività <xref:System.Activities.Statements.InvokeDelegate>. Il valore predefinito è InvokeDelegate.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Nome dell'elemento <xref:System.Activities.ActivityDelegate> da richiamare quando viene eseguita l'attività. È possibile modificare questa proprietà nell'area della finestra di progettazione. Si tratta di una proprietà obbligatoria.|
-|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Raccolta dell'argomento del delegato chiamato. Le chiavi sono i nomi degli oggetti <xref:System.Activities.DelegateArgument> su <xref:System.Activities.ActivityDelegate> e i valori sono gli argomenti le cui espressioni vengono valutate ed assegnate agli oggetti corrispondenti <xref:System.Activities.DelegateArgument>. Nella griglia delle proprietà, fare clic sul pulsante puntini di sospensione il **DelegateArguments** campo, viene visualizzato il **DelegateArguments** finestra di dialogo che consente di impostare questa proprietà. Scegliere il **Crea argomento** campo da aggiungere gli argomenti.|
+|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Raccolta dell'argomento del delegato chiamato. Le chiavi sono i nomi degli oggetti <xref:System.Activities.DelegateArgument> su <xref:System.Activities.ActivityDelegate> e i valori sono gli argomenti le cui espressioni vengono valutate ed assegnate agli oggetti corrispondenti <xref:System.Activities.DelegateArgument>. Nella griglia delle proprietà fare clic sul pulsante con i puntini di sospensione nel campo **DelegateArguments** per visualizzare la finestra di dialogo **DelegateArguments** che consente di impostare questa proprietà. Fare clic sul campo **Crea argomento** per aggiungere gli argomenti.|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Definire e usare delegati di attività in Progettazione flussi di lavoro](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Procedura: Definire e usare delegati di attività in Progettazione del flusso di lavoro](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696015"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662213"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "65696015"
 Usare la pagina delle proprietà **Formattazione** per specificare la formattazione di elementi e attributi nei documenti XAML. Per aprire la finestra di dialogo **Opzioni**, fare clic sul menu **Strumenti** e quindi su **Opzioni**. Per accedere alla finestra delle proprietà **Formattazione**, espandere **Editor di testo**, **XAML** e il nodo **Formattazione**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="auto-formatting-events"></a>Eventi di formattazione automatica
 La formattazione automatica può verificarsi quando vengono rilevati gli eventi seguenti.
@@ -117,16 +117,16 @@ Usare questa impostazione per verificare se la visualizzazione Progettazione app
 
 |||
 |-|-|
-|**Documenti sempre aperti nella visualizzazione XAML completo**|Specifica se i documenti XAML vengono visualizzati solo nella visualizzazione XAML, senza la visualizzazione progettazione. È utile per il caricamento dei documenti di grandi dimensioni.|
+|**Apri sempre i documenti nella visualizzazione XAML completa**|Specifica se i documenti XAML vengono visualizzati solo nella visualizzazione XAML, senza visualizzazione progettazione. Utile per il caricamento di documenti di grandi dimensioni.|
 
 ## <a name="toolbox"></a>Casella degli strumenti
-Usare questa impostazione per specificare se i controlli utente e controlli personalizzati vengono visualizzati nella casella degli strumenti.
+Usare questa impostazione per specificare se i controlli utente e i controlli personalizzati vengono visualizzati nella casella degli strumenti.
 
 |||
 |-|-|
 |**Inserisci automaticamente elementi della casella degli strumenti**|Specifica se i controlli utente e i controlli personalizzati della soluzione corrente vengono visualizzati automaticamente nella casella degli strumenti.|
 
 ## <a name="see-also"></a>Vedere anche
-[XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Procedura: Modificare le impostazioni visualizzazione XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[Procedure dettagliate relative all'uso di XAML e del codice](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML in WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[procedura: modificare le impostazioni di visualizzazione XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+[XAML e le procedure dettagliate del codice](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

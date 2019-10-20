@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434168"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606080"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 I blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output. Esistono tre tipi di blocchi di controllo, distinguibili dalla parentesi di apertura:
@@ -62,7 +62,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> Usare sempre {...} per delimitare istruzioni annidate contenenti testo normale incorporato. L'esempio seguente non funziona correttamente:
+> Usa sempre {...} per delimitare le istruzioni nidificate che contengono testo normale incorporato. L'esempio seguente non funziona correttamente:
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -117,7 +117,7 @@ Some text.
 > [!NOTE]
 > Un blocco di controllo della funzionalità di classe non deve essere seguito da blocchi di controllo standard nello stesso file modello. Questa restrizione, tuttavia, non si applica al risultato dell'uso di direttive `<#@include#>`. Ogni file incluso può contenere blocchi standard seguiti da blocchi della funzionalità di classe.
 
- È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Ad esempio:
+ È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Esempio:
 
 ```
 <#+
@@ -141,11 +141,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Come usare i blocchi di controllo
- Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. (Per altre informazioni su come includere altri modelli di testo con il `include` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).)
+ Tutto il codice in tutti i blocchi di controllo standard ed espressione in un unico modello (compreso tutto il codice nei modelli inclusi) viene combinato per formare il metodo `TransformText()` del codice generato. Per ulteriori informazioni sull'inclusione di altri modelli di testo con la direttiva `include`, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
  Quando si usano i blocchi di controllo, è necessario tenere presenti le considerazioni seguenti:
 
-- **Lingua.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. (Per ulteriori informazioni sul `template` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).)
+- **Linguaggio.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. Per ulteriori informazioni sulla direttiva `template`, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).
 
      Il linguaggio usato nei blocchi di controllo non ha nulla a che fare con il linguaggio o il formato del testo generato in un modello di testo. È possibile generare codice C# usando codice Visual Basic o viceversa.
 
@@ -167,4 +167,4 @@ Some text.
     <# } #>
     ```
 
-- **Il refactoring.** Per garantire la brevità e la comprensibilità dei modelli di testo, è consigliabile evitare di usare codice ripetitivo eseguendo il factoring del codice riutilizzabile all'interno di funzioni di supporto nei blocchi della funzionalità di classe o creando una classe di modello di testo personale che eredita dalla classe Microsoft.VisualStudio.TextTemplating.TextTransformation.
+- **Refactoring.** Per garantire la brevità e la comprensibilità dei modelli di testo, è consigliabile evitare di usare codice ripetitivo eseguendo il factoring del codice riutilizzabile all'interno di funzioni di supporto nei blocchi della funzionalità di classe o creando una classe di modello di testo personale che eredita dalla classe Microsoft.VisualStudio.TextTemplating.TextTransformation.

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661f029b617c430f7205552080a94affc5bd543b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445882"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622609"
 ---
 # <a name="code-analysis-policy-errors"></a>Errori dei criteri per l'analisi del codice
 
@@ -47,11 +47,11 @@ Per i criteri di analisi del codice è necessario che tutti i file archiviati de
 
 **La versione di ' {0}' non è corretta. Il nome sicuro specificato nei criteri è "{1}".**
 
-Questo errore si applica ai progetti .NET. Una regola. dll richiesta dai criteri di analisi del codice è presente nel computer locale, ma la chiave pubblica o la versione non corrisponde. Per correggere l'errore, l'autore del criterio deve aggiornare le dll in *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* directory nel computer.
+Questo errore si applica ai progetti .NET. Una regola. dll richiesta dai criteri di analisi del codice è presente nel computer locale, ma la chiave pubblica o la versione non corrisponde. Per correggere l'errore, l'autore del criterio deve aggiornare le dll in *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* directory nel computer.
 
 **l'assembly ' {0}' specificato nel criterio non esiste.**
 
-Questo errore si applica ai progetti .NET. Una regola necessaria per i criteri di analisi del codice non dispone della dll corrispondente installata nel computer client. Per correggere l'errore, l'autore del criterio deve aggiornare la dll nella directory *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* nel computer.
+Questo errore si applica ai progetti .NET. Una regola necessaria per i criteri di analisi del codice non dispone della dll corrispondente installata nel computer client. Per correggere l'errore, l'autore del criterio deve aggiornare la dll in *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* directory nel computer.
 
 **Le impostazioni delle regole di Project {0} non sono conformi ai criteri di analisi del codice.**
 
@@ -67,7 +67,7 @@ Questo errore si applica alle applicazioni .NET [!INCLUDE[vcprvc](../code-qualit
 
 **È necessario abilitare l'analisi del codice nelle proprietà di Project {0} e compilare prima di archiviare.**
 
-Questo errore si è applicato ai progetti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e ai progetti Web. Il criterio richiede l'esecuzione dell'analisi del codice gestito, ma non è abilitata nel progetto corrente nel client.
+Questo errore è stato applicato ai progetti [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e ai progetti Web. Il criterio richiede l'esecuzione dell'analisi del codice gestito, ma non è abilitata nel progetto corrente nel client.
 
 **Prima di archiviare, èC++ necessario abilitare l'analisi del codice C/codice nelle proprietà di Project {0} e compilare.**
 

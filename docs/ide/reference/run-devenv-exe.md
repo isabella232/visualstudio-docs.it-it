@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Devenv, /Run switch
 - R Devenv switch (/R)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c56e3dc4272fd927cc060f5a5a9972e5b8e6ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1797a9731db63999188f05c603cbd83ed0079ac1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945516"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655533"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 
@@ -32,7 +32,7 @@ Compila ed esegue il progetto o la soluzione specificati.
 devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 - *SolutionName*
 
@@ -44,15 +44,15 @@ devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 
 - `/Out` *OutputFilename*
 
-  Facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
-Compila ed esegue il progetto o la soluzione specificati in base alle impostazioni specificate per la configurazione della soluzione attiva. Questa opzione avvia l'IDE e lo mantiene attivo al termine dell'esecuzione del progetto o della soluzione.
+Compila ed esegue il progetto o la soluzione specificati in base alle impostazioni specificate per la configurazione soluzione attiva. Questa opzione avvia l'IDE e lo mantiene attivo al termine dell'esecuzione del progetto o della soluzione.
 
 - Racchiudere le stringhe che includono spazi tra virgolette doppie.
 
-- Le informazioni di riepilogo, compresi gli errori, possono essere visualizzate nella finestra di **comando** o in qualsiasi file di log specificato con l'opzione `/Out`.
+- Le informazioni di riepilogo, compresi gli errori, possono essere visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/Out`.
 
 ## <a name="example"></a>Esempio
 
