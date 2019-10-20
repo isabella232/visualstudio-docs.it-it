@@ -1,45 +1,45 @@
 ---
-title: 'Procedura: Impostare gli attributi CLR in un elemento'
+title: 'Procedura: impostare gli attributi CLR in un elemento'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8954aa6a42e743617080bb6918508273c1dd9528
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07957bd267eba457749eb17a99b1099b8d32be97
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811277"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661157"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>Procedura: Impostare gli attributi CLR in un elemento
-Gli attributi personalizzati sono speciali attributi che possono essere aggiunti a diagrammi, forme, connettori e gli elementi del dominio. È possibile aggiungere qualsiasi attributo che eredita dal `System.Attribute` classe.
+# <a name="how-to-set-clr-attributes-on-an-element"></a>Procedura: impostare gli attributi CLR in un elemento
+Gli attributi personalizzati sono attributi speciali che possono essere aggiunti a elementi di dominio, forme, connettori e diagrammi. È possibile aggiungere qualsiasi attributo che erediti dalla classe `System.Attribute`.
 
 ### <a name="to-add-a-custom-attribute"></a>Per aggiungere un attributo personalizzato
 
-1. Nel **DSL Explorer**, selezionare l'elemento a cui si desidera aggiungere un attributo personalizzato.
+1. In **DSL Explorer**selezionare l'elemento a cui si desidera aggiungere un attributo personalizzato.
 
-2. Nel **delle proprietà** finestra, accanto al **Custom Attributes** proprietà, fare clic su Sfoglia ( **...** ) icona.
+2. Nella finestra **Proprietà** fare clic sull'icona Sfoglia ( **..** .) accanto alla proprietà **attributi personalizzati** .
 
-     Il **Modifica attributi** verrà visualizzata la finestra di dialogo.
+     Verrà visualizzata la finestra di dialogo **modifica attributi** .
 
-3. Nel **Name** colonna, fare clic su  **\<Aggiungi attributo >** e digitare il nome dell'attributo. Premere INVIO.
+3. Nella colonna **nome** fare clic su **\<add attributo >** e digitare il nome dell'attributo. Premere INVIO.
 
-4. La riga sotto il nome dell'attributo Mostra le parentesi. In questa riga digitare un tipo di parametro per l'attributo (ad esempio, `string`), quindi premere INVIO.
+4. La riga sotto il nome dell'attributo Mostra le parentesi. In questa riga digitare un tipo di parametro per l'attributo, ad esempio `string`, quindi premere INVIO.
 
-5. Nel **proprietà Name** colonna, digitare un nome appropriato, ad esempio, `MyString`.
+5. Nella colonna **proprietà nome** Digitare un nome appropriato, ad esempio `MyString`.
 
 6. Fare clic su **OK**.
 
-     Il **Custom Attributes** proprietà Visualizza ora l'attributo nel formato seguente:
+     La proprietà **attributi personalizzati** ora Visualizza l'attributo nel formato seguente:
 
-     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`
+     `[` *attributename* `(` *parametroname* `=` *tipo* `)]`
 
 ## <a name="see-also"></a>Vedere anche
 

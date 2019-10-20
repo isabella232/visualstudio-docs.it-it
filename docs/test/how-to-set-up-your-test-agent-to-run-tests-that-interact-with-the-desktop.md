@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 55cf32d138d2644e2d2a7a08406eb575a2895400
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786008"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653433"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop
 
@@ -38,7 +38,7 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
 
 1. Per configurare l'agente di test installato per l'esecuzione come processo, scegliere **Start** > **Test Agent Configuration Tool**.
 
-   Viene visualizzata la finestra di dialogo **Configura agente di test**.
+   Verrà visualizzata la finestra di dialogo **Configura Test Agent**.
 
    ![Configurare l'agente di test per Visual Studio](media/configure-test-agent.png)
 
@@ -52,7 +52,7 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
    > - Per usare IntelliTrace o l'adattatore dati di emulazione di rete e diagnostico, l'account utente deve essere membro del gruppo Administrators. Se nel computer che esegue l'agente di test viene usato un sistema operativo che dispone di un account utente con privilegi minimi, sarà necessario eseguire l'agente di test anche come amministratore (con privilegi elevati). Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul controller di test.
    > - È necessario che l'utente che sta tentando di usare il test controller sia incluso nell'account utente di tale test controller. In caso contrario non sarà in grado di eseguire i test.
 
-4. Per assicurarsi che un computer con un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
+4. Per assicurarsi che un computer con un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accedi automaticamente**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
 
    > [!NOTE]
    > Quando si è connessi all'ambiente lab usando un desktop remoto o una connessione basata su guest, si potrebbero verificare disconnessioni frequenti e impreviste. La connessione potrebbe interrompersi in quanto il computer potrebbe essere configurato per l'accesso automatico alla rete.

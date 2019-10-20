@@ -2,19 +2,19 @@
 title: Visualizzare l'anteprima delle modifiche al codice
 ms.date: 12/16/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 07d722848725753b0b2abf25c8497327cdb53835
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 485a127faa8228ce5ef17a6208e9cc4e7e50e1b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812232"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666791"
 ---
 # <a name="preview-changes-window"></a>Finestra Anteprima modifiche
 
@@ -30,5 +30,5 @@ Dopo aver verificato le modifiche, fare clic sul pulsante **Applica** per salvar
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Refactoring in Visual Studio](../ide/refactoring-in-visual-studio.md) (Effettuare il refactoring in Visual Studio)
+- [Effettuare il refactoring in Visual Studio](../ide/refactoring-in-visual-studio.md)
 - [Azioni rapide](../ide/quick-actions.md)

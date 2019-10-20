@@ -1,5 +1,5 @@
 ---
-title: Eseguire unit test per le app di Store
+title: Eseguire unit test per le app dello Store
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446216"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672240"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Eseguire unit test per le app dello Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
  È possibile eseguire molte delle operazioni di ricerca, organizzazione ed esecuzione dei test dalla barra degli strumenti di Esplora test.
 
- ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Eseguire i test dalla barra degli strumenti di Esplora test](../test/media/ute-toolbar.png "UTE_ToolBar")
 
 ### <a name="BKMK_Running_tests"></a> Esecuzione di test
- È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
+ È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Effettuare una delle operazioni riportate di seguito:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -105,12 +105,12 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 
 |||
 |-|-|
-|![Pulsante di raggruppamento di Team Explorer](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Per raggruppare i test in base al tempo impiegato per l'esecuzione, aprire l'elenco **Raggruppa** e scegliere **Durata**. Scegliere **Risultato test** per passare al raggruppamento originale.|
+|![Pulsante gruppo Esplora test](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Per raggruppare i test in base al tempo impiegato per l'esecuzione, aprire l'elenco **Raggruppa** e scegliere **Durata**. Scegliere **Risultato test** per passare al raggruppamento originale.|
 
 ### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Ricerca e filtro nell'elenco dei test
  Quando è presente un numero elevato di test, è possibile digitare nella casella di ricerca di Esplora test per filtrare l'elenco in base alla stringa specificata. È possibile limitare il filtro a tipi specifici di stringhe scegliendo dall'elenco di filtri prima di immettere la stringa di ricerca.
 
- ![Categorie di filtri di ricerca](../test/media/ute-searchfilter.png "UTE_SearchFilter")
+ ![Categorie filtro di ricerca](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
 ## <a name="BKMK_Debugging_unit_tests"></a> Debug di unit test
  È possibile usare Esplora test per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:

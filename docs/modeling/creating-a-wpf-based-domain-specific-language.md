@@ -2,23 +2,23 @@
 title: Creazione di un linguaggio specifico di dominio basato su WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0492ec90bd9ef1ca576aad9e8b708783a3ef8ad9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7420faa110ea7243459d4bfc54881b9708d923a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002727"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654078"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>Creare un linguaggio specifico di dominio basato su WPF
 
-È possibile creare un linguaggio specifico di dominio che dispone di una finestra di progettazione WPF invece di una finestra di progettazione grafica.
+È possibile creare un linguaggio specifico di dominio con una finestra di progettazione WPF anziché una finestra di progettazione grafica.
 
-Le informazioni ed esempi relativi a questa funzionalità sono reperibile sul sito Web di strumenti di modellazione a di Visual Studio Visualization and [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
+Informazioni ed esempi relativi a questa funzionalità sono disponibili nel sito Web degli strumenti di visualizzazione e modellazione di Visual Studio all' [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
 
 ## <a name="see-also"></a>Vedere anche
 

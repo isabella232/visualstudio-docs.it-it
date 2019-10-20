@@ -2,17 +2,17 @@
 title: Gestire i test controller e gli agenti di test
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824233"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652918"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -36,14 +36,14 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
 
 1. Scegliere **Avvia** > **Test Agent Configuration Tool**.
 
-     Viene visualizzata la finestra di dialogo **Configura agente di test**.
+     Verrà visualizzata la finestra di dialogo **Configura Test Agent**.
 
     > [!NOTE]
     > È necessario che l'agente di test sia già installato affinché possa essere aggiunto a un controller di test. Per altre informazioni su come installare un agente di test, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
 2. Verranno visualizzate due opzioni relative alla modalità di esecuzione dell'agente di test:
 
-   - **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
+   - **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
 
       A questo punto è possibile immettere i dettagli sull'utente quando l'agente di test viene avviato come servizio.
 
@@ -58,7 +58,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
         |-   Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul test controller.|
         |-   È necessario che l'utente che sta tentando di usare il test controller  disponga di un account utente per tale test controller, diversamente non sarà in grado di eseguite i test.|
 
-   - **Processo interattivo**: se si vuole eseguire test automatizzati che devono interagire con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
+   - **Processo interattivo**: se si desidera eseguire test automatizzati che devono interagire con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione dei test, selezionare **Processo interattivo**. L'agente di test verrà avviato come processo interattivo anziché come servizio.
 
       Nella pagina successiva immettere i dettagli relativi all'utente quando l'agente di test viene avviato come processo e specificare le altre opzioni.
 
@@ -69,7 +69,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
         > [!NOTE]
         > Se si configura l'agente di test in modo che venga eseguito come processo interattivo con un utente diverso dall'utente attualmente attivo, è necessario riavviare il computer e accedere come utente corrente per poter avviare l'agente. Inoltre, le password Null non sono supportate per gli account utente. Per usare l'agente di raccolta di IntelliTrace o l'emulazione di rete, l'account utente deve essere un membro del gruppo Administrators.
 
-      3. Per accertarsi che un computer che dispone di un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
+      3. Per accertarsi che un computer che dispone di un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accedi automaticamente**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
 
       4. Per assicurarsi che lo screen saver sia disabilitato in quanto potrebbe interferire con i test automatizzati che devono interagire con il desktop, selezionare **Verifica che lo screen saver sia disabilitato**.
 
@@ -114,7 +114,7 @@ Per poter rimuovere un agente di test, è necessario che sia impostato sullo sta
 
 Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valori seguenti:
 
-|Status|DESCRIZIONE|
+|Status|Descrizione|
 |-|-----------------|
 |Test in esecuzione|Esecuzione di test|
 |Pronto|Disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
@@ -140,11 +140,11 @@ Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valo
 
 1. Modificare le seguenti proprietà dell'agente di test in base alle necessità:
 
-|Proprietà dell'agente di test|DESCRIZIONE|
+|Proprietà dell'agente di test|Descrizione|
 |-|-----------------|
 |**Peso**|Consente di distribuire il carico quando si usano agenti di test con livelli diversi di prestazioni. Ad esempio, un agente di test con un peso pari a 100 riceve un carico doppio rispetto a uno con un peso di 50.|
-|**Commutazione IP**|Usato per configurare la commutazione IP. La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP. In questo modo si simulano le chiamate provenienti da computer client diversi.<br /><br /> La commutazione IP è importante se il test di carico accede a una Web farm. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, verificare che le richieste provengano da un intervallo di indirizzi IP. **Nota:**  è possibile specificare una scheda di rete o usare **(Tutti non assegnati)** per selezionarne automaticamente una non in uso. <br /><br /> Per usare la funzionalità di commutazione IP, è necessario che il servizio agente di test di Visual Studio sia in esecuzione come utente del gruppo Administrators del computer in cui si trova l'agente. Questo utente viene selezionato durante l'installazione dell'agente, ma è possibile cambiarlo modificando le proprietà del servizio e riavviandolo.<br /><br /> Per verificare che la commutazione IP funzioni correttamente, abilitare la funzionalità di registrazione di IIS nel server Web e usarla per verificare che le richieste provengano dagli indirizzi IP configurati.|
-|**Attributi**|Set di coppie nome/valore utilizzabili nella selezione di agenti di test. Ad esempio un test può richiedere un particolare sistema operativo. Nella scheda **Ruoli** del file di impostazioni di test è possibile aggiungere ruoli utilizzabili per selezionare un agente di test con attributi corrispondenti. Se si desidera eseguire un test su più computer, creare un attributo nel ruolo delle impostazioni di test configurato per l'esecuzione dei test, quindi configurare un attributo corrispondente in ogni agente di test da usare in tale ruolo. **Nota:**  questa impostazione è disponibile solo per gli agenti di test registrati con un test controller non registrato in un progetto, perché quegli attributi vengono usati solo nelle impostazioni di test per Visual Studio.|
+|**Commutazione IP**|Usato per configurare la commutazione IP. La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP. In questo modo si simulano le chiamate provenienti da computer client diversi.<br /><br /> La commutazione IP è importante se il test di carico accede a una Web farm. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, verificare che le richieste provengano da un intervallo di indirizzi IP. **Nota**: è possibile specificare una scheda di rete o usare **(Tutti non assegnati)** per selezionarne automaticamente una non in uso. <br /><br /> Per usare la funzionalità di commutazione IP, è necessario che il servizio agente di test di Visual Studio sia in esecuzione come utente del gruppo Administrators del computer in cui si trova l'agente. Questo utente viene selezionato durante l'installazione dell'agente, ma è possibile cambiarlo modificando le proprietà del servizio e riavviandolo.<br /><br /> Per verificare che la commutazione IP funzioni correttamente, abilitare la funzionalità di registrazione di IIS nel server Web e usarla per verificare che le richieste provengano dagli indirizzi IP configurati.|
+|**Attributi**|Set di coppie nome/valore utilizzabili nella selezione di agenti di test. Ad esempio un test può richiedere un particolare sistema operativo. Nella scheda **Ruoli** del file di impostazioni di test è possibile aggiungere ruoli utilizzabili per selezionare un agente di test con attributi corrispondenti. Se si desidera eseguire un test su più computer, creare un attributo nel ruolo delle impostazioni di test configurato per l'esecuzione dei test, quindi configurare un attributo corrispondente in ogni agente di test da usare in tale ruolo. **Nota:** questa impostazione è disponibile solo per gli agenti di test registrati con un test controller non registrato in un progetto, perché quegli attributi vengono usati solo nelle impostazioni di test per Visual Studio.|
 
 Le modifiche apportate al peso e agli attributi di un agente di test vengono applicate immediatamente, ma non influenzano i test in esecuzione. L'Intervallo di indirizzi IP diventa effettivo dopo il riavvio del controller di test.
 

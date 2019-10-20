@@ -1,5 +1,5 @@
 ---
-title: 'CA1413: Evitare i campi non pubblici nei tipi valore visibili a COM | Microsoft Docs'
+title: 'CA1413: evitare i campi non pubblici nei tipi valore visibili a COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - AvoidNonpublicFieldsInComVisibleValueTypes
 ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 59ca3c5f53dee43bdd73eb706f03792458e71698
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d66c2c52b6ee7f7d1d2fbbd461ca8c1251ce13d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691130"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652706"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413: Evitare i campi non pubblici nei tipi valore visibili a COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "65691130"
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
-|Category|Microsoft.Interoperability|
+|Category|Microsoft. interoperabilità|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo di valore contrassegnato specificatamente come visibile al modello COM (Component Object) consente di dichiarare un campo di istanza non pubblici.
+ Un tipo di valore che viene contrassegnato in modo specifico come visibile a Component Object Model (COM) dichiara un campo di istanza non pubblico.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I campi di istanza non pubblici di tipi di valori visibili a COM sono visibili ai client COM. Esaminare il contenuto del campo per le informazioni che non devono essere esposte o che avrà un effetto indesiderato di progettazione e la protezione.
+ I campi di istanza non pubblici di tipi di valori visibili a COM sono visibili ai client COM. Esaminare il contenuto del campo per ottenere informazioni che non devono essere esposte o che avranno un effetto di progettazione o di sicurezza imprevisto.
 
- Per impostazione predefinita, tutti i tipi di valore pubblico sono visibili a COM. Tuttavia, per ridurre i falsi positivi, questa regola richiede la visibilità COM per essere dichiarata in modo esplicito il tipo. L'assembly che contiene deve essere contrassegnato con il <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> impostata su `false` e il tipo deve essere contrassegnato con il <xref:System.Runtime.InteropServices.ComVisibleAttribute> impostato su `true`.
+ Per impostazione predefinita, tutti i tipi di valore pubblico sono visibili a COM. Tuttavia, per ridurre i falsi positivi, questa regola richiede che la visibilità COM del tipo venga dichiarata in modo esplicito. L'assembly contenitore deve essere contrassegnato con il set di <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> su `false` e il tipo deve essere contrassegnato con il <xref:System.Runtime.InteropServices.ComVisibleAttribute> impostato su `true`.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione della regola e mantenere il campo nascosto, modificare il tipo di valore a un tipo riferimento o rimuovere il <xref:System.Runtime.InteropServices.ComVisibleAttribute> dal tipo di attributo.
+ Per correggere una violazione di questa regola e lasciare il campo nascosto, modificare il tipo di valore in un tipo riferimento o rimuovere l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> dal tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola se esposizione pubblica del campo è accettabile.
+ È possibile eliminare un avviso da questa regola se l'esposizione pubblica del campo è accettabile.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene illustrato un tipo che viola la regola.

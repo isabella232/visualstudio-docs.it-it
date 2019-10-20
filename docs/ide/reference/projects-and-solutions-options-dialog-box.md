@@ -8,19 +8,19 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
-ms.translationtype: HT
+ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976744"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655714"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: Progetti e soluzioni \> Generale
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> generale
 
 Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni selezionare **Strumenti** > **Opzioni**, espandere **Progetti e soluzioni** e selezionare **Generale**.
 
@@ -98,6 +98,6 @@ Se questa opzione non è selezionata e si vuole modificare un file di progetto i
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di dialogo Opzioni: Progetti e soluzioni \> Percorsi](projects-solutions-locations-options.md)
+- [Finestra di dialogo Opzioni: progetti e soluzioni \> posizioni](projects-solutions-locations-options.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- [Finestra di dialogo Opzioni, Progetti e soluzioni, Progetti Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+- [Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

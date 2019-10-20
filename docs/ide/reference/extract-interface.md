@@ -2,8 +2,8 @@
 title: Refactoring con estrazione di un'interfaccia
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8890bac11a37d64c2ace4ea23b92a6ad20a6cbb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531696"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654422"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
 
@@ -27,11 +27,11 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** consente di creare un'interfaccia usando membri esistenti da una classe, uno struct o un'interfaccia.
+**Cosa:** Consente di creare un'interfaccia usando i membri esistenti di una classe, uno struct o un'interfaccia.
 
-**Quando:** si hanno membri in una classe, uno struct o un'interfaccia che possono essere ereditati da altre classi, struct o interfacce.
+**Quando:** Sono presenti membri in una classe, uno struct o un'interfaccia che può essere ereditata da altre classi, struct o interfacce.
 
-**Perché?:** le interfacce sono costrutti ideali per le progettazioni orientate agli oggetti. Si supponga di avere classi per vari animali (Cane, Gatto, Uccello) che potrebbero contenere tutte metodi comuni, come Mangiare, Bere, Dormire. L'uso di un'interfaccia come IAnimali consentirebbe alle classi Cane, Gatto e Uccello di avere una "firma" comune per questi metodi.
+**Perché:** le interfacce sono costrutti ideali per le progettazioni orientate agli oggetti. Si supponga di avere classi per vari animali (Cane, Gatto, Uccello) che potrebbero contenere tutte metodi comuni, come Mangiare, Bere, Dormire. L'uso di un'interfaccia come IAnimali consentirebbe alle classi Cane, Gatto e Uccello di avere una "firma" comune per questi metodi.
 
 ## <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
 
@@ -49,7 +49,7 @@ Questo refactoring si applica a:
 
    - **Tastiera**
       - Premere **CTRL+R** e quindi **CTRL+I**. I tasti di scelta rapida possono essere diversi a seconda del profilo selezionato.
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
    - **Mouse**
       - Selezionare **Modifica > Refactoring - Estrai interfaccia**.
       - Fare clic con il pulsante destro del mouse sul nome della classe, scegliere il menu **Azioni rapide e refactoring** e selezionare **Estrai interfaccia** dal popup della finestra di anteprima.
@@ -58,7 +58,7 @@ Questo refactoring si applica a:
 
    ![Estrai interfaccia](media/extractinterface-dialog-same-file.png)
 
-   | Campo | Description |
+   | Campo | Descrizione |
    | - | - |
    | **Nome nuova interfaccia** | Nome dell'interfaccia da creare. Il nome predefinito è *NomeClasse*, dove *NomeClasse* è il nome della classe selezionata in precedenza. |
    | **Nome nuovo file** | Nome del file generato che conterrà l'interfaccia. Come per l'interfaccia, il nome predefinito è *NomeClasse*, dove *NomeClasse* è il nome della classe selezionata in precedenza. È anche possibile selezionare l'opzione **Add to current file** (Aggiungi al file corrente). |

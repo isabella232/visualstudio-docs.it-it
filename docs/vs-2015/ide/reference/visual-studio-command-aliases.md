@@ -1,5 +1,5 @@
 ---
-title: Comando alias | Microsoft Docs
+title: Alias di comandi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160888"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657846"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Gli alias consentono di immettere un comando nella casella **Trova/Comando** o n
 |Elimina riga|LineDel|Edit.LineDelete|
 |Elenca membri|ListMembers|Edit.ListMembers|
 |Finestra Variabili locali|Variabili locali|Debug.Locals|
-|[Comando Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
+|[Comando Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|Registro|Tools.LogCommandWindowOutput|
 |Modalità indicatore nella finestra di comando|mark|Tools.CommandWindowMarkMode|
 |Memoria (finestra)|Memory Memory1|Debug.Memory1|
 |Finestra Memoria 2|Memory2|Debug.Memory2|
@@ -110,7 +110,7 @@ Gli alias consentono di immettere un comando nella casella **Trova/Comando** o n
 |[Comando Shell](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Interrompi ricerca nei file|StopFind|Edit.FindInFiles /stop|
 |Scambia punto di aggancio|SwapAnchor|Edit.SwapAnchor|
-|Esegui istruzione|t|Debug.StepInto|
+|Esegui istruzione|u|Debug.StepInto|
 |Inserisci tabulazioni nella selezione|inserimento di tabulazioni|Edit.TabifySelection|
 |Finestra dell'elenco attività|TaskList|View.TaskList|
 |finestra Thread|Thread|Debug.Threads|
@@ -128,4 +128,4 @@ Gli alias consentono di immettere un comando nella casella **Trova/Comando** o n
 |[Comando Elenca thread](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Vedere anche
- [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md) [finestra di comando](../../ide/reference/command-window.md) [casella Trova/comando](../../ide/find-command-box.md)
+ [Casella Trova/comando](../../ide/find-command-box.md) della [finestra di comando](../../ide/reference/command-window.md) [comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1900: I campi di tipo di valore devono essere portabili | Microsoft Docs'
+title: 'CA1900: i campi del tipo di valore devono essere portabili | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,36 +12,36 @@ helpviewer_keywords:
 - CA1900
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203096"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661096"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: I campi dei tipi di valore devono essere portabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per la documentazione più recente di Visual Studio, vedere [CA1900: I campi di tipo di valore devono essere portabili](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
-  
-|||  
-|-|-|  
-|TypeName|ValueTypeFieldsShouldBePortable|  
-|CheckId|CA1900|  
-|Category|Microsoft.Portability|  
-|Modifica importante|Rilievo - se il campo può essere visualizzato all'esterno dell'assembly.<br /><br /> Non sostanziale - Se il campo non è visibile all'esterno dell'assembly.|  
-  
-## <a name="cause"></a>Causa  
- Questa regola verifica che le strutture che vengono dichiarate con layout esplicito vengano allineate correttamente quando il marshalling nel codice non gestito nei sistemi operativi a 64 bit. IA-64 non consente gli accessi alla memoria non allineata e il processo verrà arrestato se questa violazione non viene risolto.  
-  
-## <a name="rule-description"></a>Descrizione della regola  
- Strutture con layout esplicito che contiene campi non allineati causano arresti anomali nei sistemi operativi a 64 bit.  
-  
-## <a name="how-to-fix-violations"></a>Come correggere le violazioni  
- Tutti i campi che sono inferiori a 8 byte devono disporre di offset che siano un multiplo della dimensione e i campi che sono a 8 byte o superiori devono avere gli offset sono un multiplo di 8. Un'altra soluzione consiste nell'usare `LayoutKind.Sequential` invece di `LayoutKind.Explicit`se ragionevole.  
-  
-## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
- Questo avviso deve essere eliminato solo se si verifica in errore.
+Per la documentazione più recente su Visual Studio, vedere [CA1900: i campi dei tipi di valore devono essere](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable)portabili.
+
+|||
+|-|-|
+|TypeName|ValueTypeFieldsShouldBePortable|
+|CheckId|CA1900|
+|Category|Microsoft. portabilità|
+|Modifica importante|Interruzioni: se il campo può essere visualizzato all'esterno dell'assembly.<br /><br /> Senza interruzioni: se il campo non è visibile all'esterno dell'assembly.|
+
+## <a name="cause"></a>Causa
+ Questa regola consente di verificare che le strutture dichiarate con layout esplicito vengano allineate correttamente quando viene eseguito il marshalling a codice non gestito in sistemi operativi a 64 bit. IA-64 non consente accessi di memoria non allineati e il processo si arresterà in modo anomalo se questa violazione non è corretta.
+
+## <a name="rule-description"></a>Descrizione della regola
+ Le strutture con layout esplicito che contiene campi non allineati provocano arresti anomali nei sistemi operativi a 64 bit.
+
+## <a name="how-to-fix-violations"></a>Come correggere le violazioni
+ Per tutti i campi di dimensioni inferiori a 8 byte devono essere presenti offset che sono un multiplo delle dimensioni e i campi di 8 byte o più piccoli devono contenere offset che sono un multiplo di 8. Un'altra soluzione consiste nell'utilizzare `LayoutKind.Sequential` anziché `LayoutKind.Explicit`, se ragionevole.
+
+## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
+ Questo avviso deve essere eliminato solo se si verifica un errore.

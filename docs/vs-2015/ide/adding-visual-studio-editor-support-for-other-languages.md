@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di supporto di altri linguaggi all'editor | Microsoft Docs
+title: Aggiunta del supporto dell'editor per altre lingue | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7138784201a1ac036047e1c8df362727fa393b51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68148239"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620783"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Aggiunta del supporto di altri linguaggi all'editor di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Supporto della colorazione della sintassi, del completamento istruzioni e di Navigate To (Passa a)
  Alcune funzionalità dell'editor di Visual Studio, ad esempio la colorazione della sintassi, il completamento istruzioni e Navigate To (Passa a) consentono una maggiore facilità di lettura, creazione e modifica del codice. Lo screenshot seguente mostra un esempio di modifica di uno script Perl in Visual Studio. La sintassi viene colorata automaticamente. Ad esempio, i commenti nel codice sono di colore verde, il codice è nero, i percorsi sono rossi e le istruzioni sono blu. L'editor di Visual Studio applica automaticamente la colorazione della sintassi per qualsiasi linguaggio supportato. Oltre a questo, quando si inizia a immettere una parola chiave o un oggetto noto del linguaggio, la funzionalità di completamento istruzioni visualizza l'elenco delle istruzioni e degli oggetti possibili. Il completamento istruzioni consente di creare codice in modo più rapido e facile.
 
- ![Colorazione della sintassi in uno script Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
+ ![Colorazione della sintassi nello script Perl](../ide/media/vside-perledit.png "VSIDE_PerlEdit")
 
  Attualmente Visual Studio supporta le funzioni di colorazione della sintassi e di completamento istruzioni per i linguaggi riportati di seguito tramite le [grammatiche TextMate](https://manual.macromates.com/en/language_grammars). Se nella tabella non è presente il linguaggio preferito, tuttavia, non è il caso di preoccuparsi: è possibile aggiungerlo.
 
@@ -40,7 +40,7 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 |Clojure|Vai|JavaDoc|Objective-C|ShaderLab|Visual C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
+|CSS|INI|LUA|V|Swift|XML|
 |Docker|Jade|Marca|Ruby|TypeScript|YAML|
 
  Oltre alla colorazione della sintassi e al completamento delle istruzioni di base, Visual Studio ha una funzionalità detta [Navigate To](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) (Passa a). Questa funzionalità consente di cercare rapidamente file di codice, percorsi dei file e simboli di codice. Visual Studio supporta la funzione Navigate To (Passa a) per i linguaggi seguenti.
@@ -72,7 +72,7 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 
  In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla propria situazione:
 
-|Nome cartella|DESCRIZIONE|
+|Nome cartella|Descrizione|
 |-----------------|-----------------|
 |\\ *\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, **\Matlab**.|
 |\Syntaxes|Cartella della grammatica. Contiene i file della grammatica con estensione json per il linguaggio, ad esempio **Matlab.json**.|
@@ -80,7 +80,7 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 
  In Windows %userprofile% si risolve nel percorso c:\Users\\ *\<nome utente>* . Se nel sistema non esiste la cartella delle estensioni, è necessario crearla. Se la cartella esiste già, verrà nascosta.
 
- Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate: Introduzione al linguaggio grammatiche: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Introduzione alle grammatiche dei linguaggi: come aggiungere l'evidenziazione della sintassi del codice sorgente incorporata in HTML) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Note su come creare una grammatica di linguaggio e un tema personalizzato per un bundle TextMate).
+ Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate: introduzione alle grammatiche dei linguaggi: come aggiungere l'evidenziazione della sintassi del codice sorgente incorporata nell'HTML) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Note sulla creazione della grammatica di un linguaggio e di un tema personalizzato per un bundle TextMate).
 
 ## <a name="see-also"></a>Vedere anche
- [Visual Studio 2013 passare a miglioramenti](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md) [procedura dettagliata: visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 passare a miglioramenti](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md) [procedura dettagliata: visualizzazione del completamento delle istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)

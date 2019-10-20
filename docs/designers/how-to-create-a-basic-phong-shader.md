@@ -3,19 +3,19 @@ title: 'Procedura: Creare uno shader con phong di base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 5141df9f7504229733a269c2f7b0f94903064d8f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924409"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635946"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con Phong di base
+# <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 
 Questo articolo illustra come usare la finestra di progettazione shader e il linguaggio DGSL (Directed Graph Shader Language) per creare uno shader di illuminazione che implementa il modello di illuminazione Phong classico.
 

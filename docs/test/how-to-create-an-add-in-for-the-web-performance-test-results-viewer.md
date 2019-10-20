@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ba6ef865b326bd8bc5eea89a9e270b793111e539
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918196"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653589"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo per il Visualizzatore Risultati test prestazioni Web
 
 È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
@@ -37,7 +37,7 @@ Per estendere l'interfaccia utente del **Visualizzatore risultati test prestazio
 Creare o aprire una soluzione non di produzione con la quale sperimentare che contenga un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web con uno o più test delle prestazioni Web per l'applicazione Web ASP.NET.
 
 > [!NOTE]
-> È possibile creare un'applicazione Web ASP.NET e un progetto di test di carico e prestazioni Web contenente test delle prestazioni Web seguendo le procedure descritte in [ Procedura: Creare un test di servizio Web](../test/how-to-create-a-web-service-test.md) e [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
+> È possibile creare un'applicazione Web ASP.NET e un progetto di test prestazioni Web e di carico che contiene test prestazioni Web seguendo le procedure in [Procedura: Creare un test di servizio Web](../test/how-to-create-a-web-service-test.md) e [Generare ed eseguire un test delle prestazioni Web codificato](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Creare un componente aggiuntivo per Visual Studio
 

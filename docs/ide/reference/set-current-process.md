@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Debug.SetCurrentProcess command
 - Set Current Process command
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d4c23934ddb6a838344eb6252f6002a5ecf10d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 6545962f374ea850808c11a3c9c79e0a04602027
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926095"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655469"
 ---
 # <a name="set-current-process"></a>Imposta processo corrente
 Imposta il processo specificato come processo attivo nel debugger.
@@ -27,12 +27,12 @@ Imposta il processo specificato come processo attivo nel debugger.
 Debug.SetCurrentProcess index
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `index`
 
 Obbligatorio. L'indice del processo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Sebbene sia possibile connettersi a più processi durante il debug, nel debugger è attivo un solo processo alla volta. Per impostare il processo attivo, è possibile usare il comando `SetCurrentProcess`.
 
 ## <a name="example"></a>Esempio
@@ -45,4 +45,4 @@ Sebbene sia possibile connettersi a più processi durante il debug, nel debugger
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

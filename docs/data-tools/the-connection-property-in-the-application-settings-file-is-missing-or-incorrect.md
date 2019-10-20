@@ -3,17 +3,17 @@ title: Nel file di impostazioni dell'applicazione la proprietà di connessione m
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: becbc5032c05af1edf5361a54fd0a80b4a0ff412
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2619b5826002944bd728a7744e0b2507cb493dc4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458310"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648167"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata
 
@@ -21,7 +21,7 @@ Nel file di impostazioni dell'applicazione la proprietà di connessione manca o 
 
 Il file *.dbml* contiene un riferimento a una stringa di connessione nel file di impostazioni dell'applicazione che non è possibile trovare. Questo messaggio è puramente informativo: l'impostazione della stringa di connessione verrà creata quando si fa clic su **OK**.
 
-Per rispondere a questo messaggio, selezionare **OK**. Le informazioni di connessione contenute nel file *.dbml* vengono aggiunte alle impostazioni dell'applicazione.
+Per rispondere a questo messaggio, fare clic su **OK**. Le informazioni di connessione contenute nel file *.dbml* vengono aggiunte alle impostazioni dell'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 

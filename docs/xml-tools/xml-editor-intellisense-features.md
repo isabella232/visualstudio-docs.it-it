@@ -1,19 +1,19 @@
 ---
-title: Editor XML le funzionalità di IntelliSense
+title: Funzionalità IntelliSense dell'editor XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807973"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603956"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 
@@ -21,11 +21,11 @@ L'editor XML fornisce funzionalità IntelliSense avanzate paragonabili a quelle 
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in un documento XSD
 
-Dopo uno schema è associato al documento, viene visualizzato un elenco di riepilogo a discesa degli elementi previsti ogni volta che si digita `"<"` oppure fare clic sui **visualizzare un elenco di oggetti membro** pulsante sulla barra degli strumenti editor XML.
+Dopo che uno schema è stato associato al documento, viene visualizzato un elenco a discesa degli elementi previsti ogni volta che si digita `"<"` o si fa clic sul pulsante **Visualizza elenco membri oggetto** sulla barra degli strumenti dell'editor XML.
 
-![Pulsante dell'elenco visualizzato oggetto membro](media/display-object-member-list-xml.png)
+![Pulsante Visualizza elenco membri oggetto](media/display-object-member-list-xml.png)
 
-Per informazioni su come associare gli schemi ai documenti XML, vedere [convalida dei documenti XML](../xml-tools/xml-document-validation.md).
+Per informazioni su come associare gli schemi ai documenti XML, vedere Convalida dei documenti [XML](../xml-tools/xml-document-validation.md).
 
 Quando si preme BARRA SPAZIATRICE all'interno di un tag di inizio, viene visualizzato anche un elenco a discesa contenente tutti gli attributi che possono essere aggiunti all'elemento corrente.
 
@@ -49,7 +49,7 @@ Dopo avere aggiunto un modello denominato o un attributo al documento XSLT, è p
 
 - Nomi del parametro per un determinato modello denominato.
 
-Per altre informazioni, vedere [Procedura dettagliata: Uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) argomento.
+Per altre informazioni, vedere [procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) .
 
 ## <a name="auto-completion"></a>Completamento automatico
 
@@ -57,7 +57,7 @@ L'editor XML, inoltre, semplifica la procedura di modifica del codice XML in qua
 
 `<book>`
 
-L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio (il "&#124;" note sulla posizione del cursore):
+L'editor XML inserisce il tag di fine e posiziona il cursore dopo il tag di inizio. Di seguito è riportato un esempio di questo argomento (&#124;il "" rileva la posizione del cursore):
 
 `<book>`&#124;`</book>`
 
@@ -79,7 +79,7 @@ Analogamente, l'editor XML inserisce automaticamente anche la seguente sintassi 
 
 - Termina una dichiarazione DTD: `>`
 
-L'editor XML è anche la possibilità di inserire uno spazio dei nomi se si seleziona un elemento completo dello spazio dei nomi o attributi da un elenco di IntelliSense e lo spazio dei nomi per tale elemento o attributo non sono ancora nell'ambito di dichiarazione.
+L'editor XML è inoltre in grado di inserire una dichiarazione dello spazio dei nomi se si seleziona un attributo o un elemento completo dello spazio dei nomi da un elenco IntelliSense e lo spazio dei nomi per l'elemento o l'attributo non è ancora nell'ambito.
 
 Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in cui il prefisso è associato allo spazio dei nomi `http://books` che non è stato dichiarato nel documento, l'editor XML inserirà automaticamente la dichiarazione dello spazio dei nomi richiesta. Di seguito è riportato il testo XML risultante:
 
@@ -87,13 +87,13 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 
 ## <a name="brace-matching"></a>Corrispondenza parentesi graffe
 
-Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare i tasti di scelta rapida (**Ctrl**+**]**) per passare da una parentesi graffa a parentesi graffa corrispondente.
+Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare il tasto di scelta rapida (**Ctrl** + **]** ) per passare da una parentesi graffa alla parentesi graffa corrispondente.
 
 L'editor XML effettua tale operazione per i seguenti elementi:
 
 - Tag di inizio e di fine corrispondenti.
 
-- Qualsiasi coppia di "\<" o ">" angolari.
+- Qualsiasi coppia di parentesi angolari "\<" o ">".
 
 - Inizio e fine dei commenti.
 
@@ -107,11 +107,11 @@ L'editor XML effettua tale operazione per i seguenti elementi:
 
 ## <a name="modify-the-intellisense-options"></a>Modificare le opzioni di IntelliSense
 
-Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare questo modificando il **Tools** > **opzioni** impostazioni.
+Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificarlo modificando gli **strumenti**  >  impostazioni delle**Opzioni** .
 
-Il **inserimento automatico** sezione il **varie** pagina controlla il comportamento seguente:
+La sezione **inserimento automatico** della pagina **varie** controlla il comportamento seguente:
 
-|Nome|Descrizione|
+|Name|Descrizione|
 |-|-----------------|
 |Tag di fine|Inserisce i tag di chiusura per i nuovi elementi.|
 |Virgolette per attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
@@ -121,12 +121,12 @@ Il **inserimento automatico** sezione il **varie** pagina controlla il comportam
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Espandere **Editor di testo**, espandere **XML**e selezionare **varie**.
+2. Espandere **editor di testo**, espandere **XML**e selezionare **varie**.
 
-3. Apportare modifiche per il **inserimento automatico** della sezione e fare clic su **OK**.
+3. Apportare le modifiche alla sezione **inserimento automatico** e fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Editor XML](../xml-tools/xml-editor.md)
 - [Utilizzo di IntelliSense](../ide/using-intellisense.md)
-- [Procedura dettagliata: Uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Procedura dettagliata: uso di XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

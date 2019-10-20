@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListModules command
 - list modules command
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89be89bb3befa6f6ab9e67f6e98ae4d7b1b94e64
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 1fef8f314f5b416edcf40c8b2f7da4eaa471a28c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926210"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610657"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
 Elenca i moduli disponibili per il processo corrente.
@@ -35,39 +35,39 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 #### <a name="parameters"></a>Parametri
 /Address:`yes|no`
 
-facoltativo. Specifica se visualizzare gli indirizzi di memoria dei moduli. Il valore predefinito è `yes`.
+Parametro facoltativo. Specifica se visualizzare gli indirizzi di memoria dei moduli. Il valore predefinito è `yes`.
 
 /Name:`yes|no`
 
-facoltativo. Specifica se visualizzare i nomi dei moduli. Il valore predefinito è `yes`.
+Parametro facoltativo. Specifica se visualizzare i nomi dei moduli. Il valore predefinito è `yes`.
 
 /Order:`yes|no`
 
-facoltativo. Specifica se visualizzare l'ordine dei moduli. Il valore predefinito è `no`.
+Parametro facoltativo. Specifica se visualizzare l'ordine dei moduli. Il valore predefinito è `no`.
 
 /Path:`yes|no`
 
-facoltativo. Specifica se visualizzare i percorsi dei moduli. Il valore predefinito è `yes`.
+Parametro facoltativo. Specifica se visualizzare i percorsi dei moduli. Il valore predefinito è `yes`.
 
 /Process:`yes|no`
 
-facoltativo. Specifica se visualizzare i processi dei moduli. Il valore predefinito è `no`.
+Parametro facoltativo. Specifica se visualizzare i processi dei moduli. Il valore predefinito è `no`.
 
 /SymbolFile:`yes|no`
 
-facoltativo. Specifica se visualizzare i file dei simboli dei moduli. Il valore predefinito è `no`.
+Parametro facoltativo. Specifica se visualizzare i file dei simboli dei moduli. Il valore predefinito è `no`.
 
 /SymbolStatus:`yes|no`
 
-facoltativo. Specifica se visualizzare lo stato dei simboli dei moduli. Il valore predefinito è `yes`.
+Parametro facoltativo. Specifica se visualizzare lo stato dei simboli dei moduli. Il valore predefinito è `yes`.
 
 /Timestamp:`yes|no`
 
-facoltativo. Specifica se visualizzare il timestamp dei moduli. Il valore predefinito è `no`.
+Parametro facoltativo. Specifica se visualizzare il timestamp dei moduli. Il valore predefinito è `no`.
 
 /Version:`yes|no`
 
-facoltativo. Specifica se visualizzare le versioni dei moduli. Il valore predefinito è `no`.
+Parametro facoltativo. Specifica se visualizzare le versioni dei moduli. Il valore predefinito è `no`.
 
 ## <a name="example"></a>Esempio
 In questo esempio vengono elencati i nomi dei moduli, gli indirizzi e i timestamp per il processo corrente.

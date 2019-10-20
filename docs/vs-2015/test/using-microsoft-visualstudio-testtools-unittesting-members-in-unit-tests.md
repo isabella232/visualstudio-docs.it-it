@@ -6,16 +6,16 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871550"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657190"
 ---
-# <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Uso di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
+# <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilizzo di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Usare le classi e membri nello spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.UnitTesting> durante la codifica di unit test. È possibile usarli sia quando si scrive uno unit test da zero che per la modifica di uno unit test generato dal codice sottoposto a test.
 
@@ -30,7 +30,7 @@ Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../include
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementi usati per i test basati sui dati
- Usare gli elementi seguenti per configurare unit test basati sui dati. Per ulteriori informazioni, vedere [procedura: Creare uno unit test](../test/how-to-create-a-data-driven-unit-test.md) basato sui dati e [una procedura dettagliata: Utilizzo di un file di configurazione per definire un'](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)origine dati.
+ Usare gli elementi seguenti per configurare unit test basati sui dati. Per altre informazioni, vedere [Procedura: Creare uno unit test basato sui dati](../test/how-to-create-a-data-driven-unit-test.md) e [Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 

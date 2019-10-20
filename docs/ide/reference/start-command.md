@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start command
 - Debug.Start command
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 946c4e39b48d15352ef5fa8ae240fb3fe9da5b9b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926020"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645241"
 ---
 # <a name="start-command"></a>Comando Avvia
 Inizia il debug del progetto di avvio.
@@ -29,12 +29,12 @@ Inizia il debug del progetto di avvio.
 Debug.Start [address]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `address`
 
-facoltativo. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
+Parametro facoltativo. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Il comando **Avvia**, quando eseguito, esegue un'operazione RunToCursor sull'indirizzo specificato.
 
 ## <a name="example"></a>Esempio
@@ -49,4 +49,4 @@ In questo esempio viene avviato il debugger e le eccezioni vengono ignorate.
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

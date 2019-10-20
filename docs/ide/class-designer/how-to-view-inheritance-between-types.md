@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Visualizzare l'ereditarietà tra tipi (Progettazione classi)"
+title: "Procedura: visualizzare l'ereditarietà tra tipi (Progettazione classi)"
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9fd6d2ce365399550b5455ff8bf909e9cc56187b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975099"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647682"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedura: Visualizzare l'ereditarietà tra tipi in Progettazione classi
 
-In **Progettazione classi** è possibile visualizzare la relazione di ereditarietà, se disponibile, tra un tipo di base e i relativi tipi derivati nel diagramma classi. Per creare una relazione di ereditarietà, se non ne esiste alcuna, tra due tipi, vedere [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md).
+In **Progettazione classi** è possibile visualizzare la relazione di ereditarietà, se disponibile, tra un tipo di base e i relativi tipi derivati nel diagramma classi. Per creare una relazione di ereditarietà tra due tipi, se non ne esiste alcuna, vedere [Procedura: Creare ereditarietà tra tipi](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Per trovare il tipo di base
 

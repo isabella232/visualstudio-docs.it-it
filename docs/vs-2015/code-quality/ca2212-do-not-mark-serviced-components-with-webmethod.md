@@ -1,5 +1,5 @@
 ---
-title: 'CA2212: Non contrassegnare componenti serviti con WebMethod | Microsoft Docs'
+title: 'CA2212: non contrassegnare i componenti serviti con WebMethod | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - DoNotMarkServicedComponentsWithWebMethod
 ms.assetid: 774bc55d-e588-48ee-8f38-c228580feca2
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6f2e89705e36407e39103296e3eee70482e3d03f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ee166f8bbc14e66968cd4f7c265331854905ac9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142481"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662944"
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: Non contrassegnare componenti serviti con WebMethod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "68142481"
 |-|-|
 |TypeName|DoNotMarkServicedComponentsWithWebMethod|
 |CheckId|CA2212|
-|Category|Microsoft.Usage|
+|Category|Microsoft. Usage|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo in un tipo che eredita da <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> contrassegnato con <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
+ Un metodo in un tipo che eredita da <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> è contrassegnato con <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Web.Services.WebMethodAttribute> si applica ai metodi all'interno di un servizio Web XML creati mediante ASP.NET. rende il metodo chiamabile dai client Web remoti. Il metodo e la classe deve essere pubblico e in esecuzione in un'applicazione Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> i tipi sono ospitati da applicazioni COM+ e possono utilizzare servizi COM+. <xref:System.Web.Services.WebMethodAttribute> non viene applicato a <xref:System.EnterpriseServices.ServicedComponent> perché non sono progettati per gli stessi scenari. In particolare, aggiungendo l'attributo per il <xref:System.EnterpriseServices.ServicedComponent> metodo non esegue il metodo chiamabile dai client Web remoti. In quanto <xref:System.Web.Services.WebMethodAttribute> e un <xref:System.EnterpriseServices.ServicedComponent> metodo comportamenti in conflitto e i requisiti per contesto e flusso delle transazioni, il comportamento del metodo sarà corretto in determinati scenari.
+ <xref:System.Web.Services.WebMethodAttribute> si applica ai metodi all'interno di un servizio Web XML che sono stati creati tramite ASP.NET; rende il metodo chiamabile dai client Web remoti. Il metodo e la classe devono essere pubblici ed essere eseguiti in un'applicazione Web ASP.NET. i tipi <xref:System.EnterpriseServices.ServicedComponent> sono ospitati da applicazioni COM+ e possono utilizzare i servizi COM+. <xref:System.Web.Services.WebMethodAttribute> non viene applicato ai tipi <xref:System.EnterpriseServices.ServicedComponent> perché non sono destinati agli stessi scenari. In particolare, l'aggiunta dell'attributo al metodo <xref:System.EnterpriseServices.ServicedComponent> non rende il metodo chiamabile dai client Web remoti. Poiché <xref:System.Web.Services.WebMethodAttribute> e un metodo <xref:System.EnterpriseServices.ServicedComponent> presentano comportamenti e requisiti in conflitto per il contesto e il flusso delle transazioni, il comportamento del metodo non sarà corretto in alcuni scenari.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rimuovere l'attributo di <xref:System.EnterpriseServices.ServicedComponent> (metodo).
+ Per correggere una violazione di questa regola, rimuovere l'attributo dal metodo <xref:System.EnterpriseServices.ServicedComponent>.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Non escludere un avviso da questa regola. Sono presenti scenari in cui la combinazione di questi elementi è corretta.
+ Non escludere un avviso da questa regola. Non esistono scenari in cui la combinazione di questi elementi è corretta.
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>

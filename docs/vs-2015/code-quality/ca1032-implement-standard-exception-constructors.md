@@ -1,5 +1,5 @@
 ---
-title: 'CA1032: Implementare costruttori di eccezioni standard | Microsoft Docs'
+title: 'CA1032: implementare costruttori di eccezioni standard | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ImplementStandardExceptionConstructors
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b471387db3ce52944ffad3841dc7e946c4d44873
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205841"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661881"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementare costruttori di eccezioni standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,32 +29,32 @@ ms.locfileid: "68205841"
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. Design|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Estende un tipo <xref:System.Exception?displayProperty=fullName> e non dichiara tutti i costruttori necessari.
+ Un tipo estende <xref:System.Exception?displayProperty=fullName> e non dichiara tutti i costruttori richiesti.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Tipi di eccezione devono implementare i costruttori seguenti:
+ I tipi di eccezione devono implementare i costruttori seguenti:
 
-- NewException() pubblico
+- public NewException ()
 
-- NewException(string) pubblico
+- public NewException (String)
 
-- pubblica NewException (string, eccezione)
+- public NewException (stringa, eccezione)
 
-- NewException protetti o privati (SerializationInfo, StreamingContext)
+- NewException protected o private (SerializationInfo, StreamingContext)
 
-  Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Ad esempio, il costruttore con la firma `NewException(string, Exception)` viene usato per creare le eccezioni sono causate da altri tipi di eccezioni. Senza questo costruttore non è possibile creare e generare un'istanza di eccezione personalizzata contenente un'eccezione (annidata) interna, che è necessario eseguire l'operazione per il codice gestito in tale situazione. I primi tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto nelle classi unsealed e private in classi sealed. Per altre informazioni, vedere [CA2229: Implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)
+  Se non viene fornito l'insieme completo di costruttori può risultare difficile gestire correttamente le eccezioni. Il costruttore con la firma `NewException(string, Exception)`, ad esempio, viene utilizzato per creare eccezioni causate da altre eccezioni. Senza questo costruttore non è possibile creare e generare un'istanza dell'eccezione personalizzata che contiene un'eccezione interna (annidata), ovvero il codice gestito che deve essere eseguita in una situazione di questo tipo. I primi tre costruttori di eccezioni sono pubblici per convenzione. Il quarto costruttore è protetto in classi non sealed e privato in classi sealed. Per altre informazioni, vedere [CA2229: implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere i costruttori mancanti per l'eccezione e assicurarsi che abbiano l'accessibilità corretto.
+ Per correggere una violazione di questa regola, aggiungere i costruttori mancanti all'eccezione e verificare che dispongano dell'accessibilità corretta.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È possibile eliminare un avviso da questa regola quando la violazione è causata dall'utilizzo di un livello di accesso diversi per i costruttori pubblici.
+ È possibile eliminare un avviso da questa regola quando la violazione è causata dall'uso di un livello di accesso diverso per i costruttori pubblici.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente contiene un tipo di eccezione che violano questa regola e un tipo di eccezione che viene implementato in modo corretto.
+ Nell'esempio seguente è contenuto un tipo di eccezione che viola questa regola e un tipo di eccezione implementato correttamente.
 
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionMultipleCtors/cs/FxCop.Design.ExceptionMultipleCtors.cs#1)]

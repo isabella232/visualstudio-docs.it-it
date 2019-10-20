@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 646a8680211d7d79ea24a1b5b62d78eb6955b5f7
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262330"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653008"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Come configurare e usare Live Unit Testing
 
@@ -36,14 +36,14 @@ Live Unit Testing è compatibile con i tre framework di unit test elencati nella
 
 Se sono presenti progetti di test basati su MSTest precedenti che fanno riferimento a Microsoft. VisualStudio. QualityTools. UnitTestFramework e non si vuole passare ai pacchetti NuGet di MSTest più recenti, eseguire l'aggiornamento a Visual Studio 2019 o Visual Studio 2017.
 
-In alcuni casi, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui fa riferimento un progetto per consentire il funzionamento del Live Unit Testing. È possibile eseguire questa operazione eseguendo una compilazione esplicita della soluzione (selezionare **compila** > **Ricompila soluzione** dal menu di primo livello di Visual Studio) o ripristinando i pacchetti nella soluzione (fare clic con il pulsante destro del mouse sulla soluzione e selezionare **Ripristina NuGet Pacchetti**).
+In alcuni casi, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui fa riferimento un progetto per consentire il funzionamento del Live Unit Testing. Questa operazione può essere eseguita eseguendo una compilazione esplicita della soluzione (selezionare **compila**  > **Ricompila soluzione** dal menu di primo livello di Visual Studio) o ripristinando i pacchetti nella soluzione (fare clic con il pulsante destro del mouse sulla soluzione e selezionare **Ripristina NuGet Pacchetti**).
 
 ## <a name="configure"></a>Configurazione
 
-Configurare Live Unit Testing selezionando **strumenti** >  dalla barra dei menu di primo**livello di Visual** studio, quindi selezionando **Live unit testing** nel riquadro sinistro della finestra di dialogo **Opzioni** .
+Configurare Live Unit Testing selezionando **strumenti**  > **Opzioni** dalla barra dei menu di primo livello di Visual Studio, quindi selezionando **Live unit testing** nel riquadro sinistro della finestra di dialogo **Opzioni** .
 
 > [!TIP]
-> Dopo l'abilitazione di Live Unit Testing (vedere la sezione successiva, [avviare, sospendere e arrestare Live unit testing](#start-pause-and-stop)), è anche possibile aprire la finestra di dialogo **Opzioni** selezionando **test** > **Live unit testing** **Opzioni** > .
+> Dopo l'abilitazione di Live Unit Testing (vedere la sezione successiva, [avviare, sospendere e arrestare Live unit testing](#start-pause-and-stop)), è anche possibile aprire la finestra di dialogo **Opzioni** selezionando **Test**  > **Live unit testing** **Opzioni**di  > .
 
 Nella figura seguente sono illustrate le opzioni di configurazione Live Unit Testing disponibili nella finestra di dialogo:
 
@@ -79,7 +79,7 @@ Le opzioni configurabili includono:
 
 ## <a name="start-pause-and-stop"></a>Avvio, sospensione e arresto
 
-Per abilitare Live Unit Testing, selezionare **Test** > **Live unit testing** > **Avvia** dal menu di primo livello di Visual Studio. Quando Live Unit Testing è abilitato, le opzioni disponibili nel menu **Live unit testing** cambiano da un singolo elemento, **Start**, per **sospendere**, **arrestare**e **reimpostare clean**:
+Per abilitare Live Unit Testing, selezionare **Test**  > **Live unit testing**  > **Avvia** dal menu di primo livello di Visual Studio. Quando Live Unit Testing è abilitato, le opzioni disponibili nel menu **Live unit testing** cambiano da un singolo elemento, **Start**, per **sospendere**, **arrestare**e **reimpostare clean**:
 
 - **Sospendi sospende temporaneamente Live unit testing** .
 
@@ -110,7 +110,7 @@ Per visualizzare il numero di test eseguiti su una certa riga, è possibile pass
 
 ![Stato del test per un simbolo in Visual Studio](./media/lut-failedinfo.png)
 
-Oltre a fornire i nomi e il risultato dei test, la descrizione comando consente di eseguire di nuovo o eseguire il debug del set di test. Se si selezionano uno o più test nella descrizione comando, è anche possibile eseguire o sottoporre a debug solo tali test. Ciò consente di eseguire il debug dei test senza uscire dalla finestra del codice. Quando si esegue il debug, oltre a osservare eventuali punti di interruzione già impostati, l'esecuzione del programma viene sospesa quando il debugger esegue un metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> che restituisce un risultato imprevisto.
+Oltre a fornire i nomi e il risultato dei test, la descrizione comando consente di eseguire di nuovo o eseguire il debug del set di test. Se si selezionano uno o più test nella descrizione comando, è anche possibile eseguire o sottoporre a debug solo tali test. Ciò consente di eseguire il debug dei test senza uscire dalla finestra del codice. Quando si esegue il debug, oltre a osservare eventuali punti di interruzione già impostati, l'esecuzione del programma viene sospesa quando il debugger esegue un <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> metodo che restituisce un risultato imprevisto.
 
 Quando si passa il puntatore su un test non superato nella descrizione comando, questa si espande e visualizza informazioni aggiuntive sull'errore, come illustrato nell'immagine seguente. Per passare direttamente a un test non superato, fare doppio clic su di esso nella descrizione comando.
 
@@ -119,7 +119,7 @@ Quando si passa il puntatore su un test non superato nella descrizione comando, 
 Quando si passa al test non superato, Live Unit Testing indica visivamente nella firma del metodo i test che hanno:
 
 - superato (indicato da un becher a metà pieno insieme a una "✓" verde)
-- failed (un becher a metà pieno insieme a un "🞩")
+- failed (un becher a metà pieno insieme a una "🞩" rossa)
 - non sono interessati all'Live Unit Testing (un becher a metà pieno insieme a un "➖" blu)
 
 I metodi non di test non sono decorati con simboli. Nell'immagine seguente vengono illustrati tutti e quattro i tipi di metodi.
@@ -130,16 +130,16 @@ I metodi non di test non sono decorati con simboli. Nell'immagine seguente vengo
 
 Dal test non superato, è possibile eseguire facilmente il debug del codice del prodotto, apportare modifiche e continuare a sviluppare l'applicazione. Poiché Live Unit Testing viene eseguito in background, non è necessario arrestare e riavviare Live Unit Testing durante il ciclo di debug, modifica e continuazione.
 
-L'errore di test illustrato nell'immagine precedente, ad esempio, è stato causato da un presupposto non corretto nel metodo di test in base al quale i caratteri non alfabetici restituiscono `true` quando vengono passati al metodo <xref:System.Char.IsLower%2A?displayProperty=fullName>. Dopo aver corretto il metodo di test, tutti i test devono essere superati. Non è necessario sospendere o arrestare Live Unit Testing.
+Ad esempio, l'errore di test illustrato nell'immagine precedente è stato causato da un presupposto non corretto nel metodo di test che i caratteri non alfabetici restituiscono `true` quando vengono passati al metodo <xref:System.Char.IsLower%2A?displayProperty=fullName>. Dopo aver corretto il metodo di test, tutti i test devono essere superati. Non è necessario sospendere o arrestare Live Unit Testing.
 
 ## <a name="test-explorer"></a>Esplora test
 
 **Esplora test** fornisce un'interfaccia che consente di eseguire ed eseguire il debug dei test e analizzare i risultati dei test. Live Unit Testing si integra con **Esplora test**. Quando Live Unit Testing non è abilitato o è stato arrestato, **Esplora Test** visualizza lo stato degli unit test durante l'ultima esecuzione di un test. Se si apportano modifiche al codice sorgente, è necessario eseguire di nuovo i test. Quando invece è abilitato Live Unit Testing, lo stato degli unit test in **Esplora test** viene aggiornato immediatamente. Non è necessario eseguire gli unit test in modo esplicito.
 
 > [!TIP]
-> Aprire **Esplora test** selezionando **test** > **Windows** > **Esplora test** dal menu di primo livello di Visual Studio.
+> Aprire **Esplora test** selezionando **test**  > **Windows**  > **Esplora test** dal menu di primo livello di Visual Studio.
 
-Come si può notare, nella finestra **Esplora test** alcuni test sono visualizzati in modo attenuato. Ad esempio, quando si Abilita Live Unit Testing dopo l'apertura di un progetto salvato in precedenza, la finestra **Esplora test** ha eliminato tutti i test, tranne quelli non superati, come illustrato nella figura seguente. In questo caso, Live Unit Testing ha rieseguito il test non riuscito, ma non ha eseguito nuovamente i test riusciti. Ciò è dovuto al fatto che Live Unit Testing dati salvati in precedenza indicano che non sono state apportate modifiche dopo l'ultima esecuzione dei test.
+Nella finestra **Esplora test** è possibile notare che alcuni test sono stati sbiaditi. Ad esempio, quando si Abilita Live Unit Testing dopo l'apertura di un progetto salvato in precedenza, la finestra **Esplora test** ha eliminato tutti i test, tranne quelli non superati, come illustrato nella figura seguente. In questo caso, Live Unit Testing ha rieseguito il test non riuscito, ma non ha eseguito nuovamente i test riusciti. Ciò è dovuto al fatto che Live Unit Testing dati salvati in precedenza indicano che non sono state apportate modifiche dopo l'ultima esecuzione dei test.
 
 ![Test non superato in Esplora test](media/lut-test-explorer.png)
 
@@ -156,7 +156,7 @@ Esistono alcune differenze tra l'esecuzione automatica di Live Unit Testing e l'
 Se la soluzione contiene 10 o più progetti, Visual Studio Visualizza la finestra di dialogo seguente quando:
 
 - avvia Live Unit Testing e non sono presenti dati salvati in permanenza
-- Selezionare **Test** > **Live unit testing** > **Reimposta Pulisci**
+- Selezionare **Test**  > **Live unit testing**  > **Reimposta Pulisci**
 
 ![Finestra di dialogo di Live Unit Testing per progetti di grandi dimensioni](media/lut-large-project.png)
 
@@ -177,9 +177,9 @@ Per selezionare i singoli progetti negli unit test, eseguire le operazioni segue
 
 Per includere o escludere singoli metodi di test, è possibile usare la finestra dell'editor del codice. Fare clic con il pulsante destro del mouse sulla firma del metodo di test nella finestra dell'editor di codice e quindi selezionare una delle opzioni seguenti:
 
-- I **test dinamici** > **includono il metodo \<selected >**
-- I **test dinamici** > **escludono il metodo \<selected >**
-- I **test Live** > **escludono tutti i metodi, tranne \<selected >**
+- I **test dinamici**  > **includono \<selected metodo >**
+- **Test dinamici**  > **escludere \<selected metodo >**
+- **Test dinamici**  > **escludere tutti i \<selected metodo >**
 
 ### <a name="exclude-tests-programmatically"></a>Escludi i test a livello di codice
 

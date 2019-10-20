@@ -11,41 +11,41 @@ helpviewer_keywords:
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfb03944743609d20d14f6104e5fadd529a5cfa6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566316"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641315"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Procedura: Salvare dati usando una transazione
 
-Salvare i dati in una transazione usando il <xref:System.Transactions> dello spazio dei nomi. Usare il <xref:System.Transactions.TransactionScope> oggetto da inserire in una transazione che viene gestita automaticamente.
+Per salvare i dati in una transazione, è possibile utilizzare lo spazio dei nomi <xref:System.Transactions>. Utilizzare l'oggetto <xref:System.Transactions.TransactionScope> per partecipare a una transazione gestita automaticamente.
 
-I progetti non vengono creati con un riferimento per la *System. Transactions* assembly, pertanto è necessario aggiungere manualmente un riferimento a progetti che usano le transazioni.
+I progetti non vengono creati con un riferimento all'assembly *System. Transactions* , quindi è necessario aggiungere manualmente un riferimento a progetti che usano transazioni.
 
-Il modo più semplice per implementare una transazione è creare un'istanza di un <xref:System.Transactions.TransactionScope> dell'oggetto un `using` istruzione. (Per altre informazioni, vedere [istruzione Using](/dotnet/visual-basic/language-reference/statements/using-statement), e [istruzione Using](/dotnet/csharp/language-reference/keywords/using-statement).) Il codice eseguito all'interno di `using` istruzione partecipa alla transazione.
+Il modo più semplice per implementare una transazione è creare un'istanza di un oggetto <xref:System.Transactions.TransactionScope> in un'istruzione `using`. Per ulteriori informazioni, vedere [istruzione using](/dotnet/visual-basic/language-reference/statements/using-statement)e [istruzione using](/dotnet/csharp/language-reference/keywords/using-statement). Il codice eseguito all'interno dell'istruzione `using` fa parte della transazione.
 
-Per eseguire il commit della transazione, chiamare il <xref:System.Transactions.TransactionScope.Complete%2A> blocca l'ultima istruzione nel usando il metodo.
+Per eseguire il commit della transazione, chiamare il metodo <xref:System.Transactions.TransactionScope.Complete%2A> come ultima istruzione nel blocco using.
 
-Per eseguire il rollback della transazione, generare un'eccezione prima di chiamare il <xref:System.Transactions.TransactionScope.Complete%2A> (metodo).
+Per eseguire il rollback della transazione, generare un'eccezione prima di chiamare il metodo <xref:System.Transactions.TransactionScope.Complete%2A>.
 
-## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Per aggiungere un riferimento al Transactions
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Per aggiungere un riferimento a System. Transactions. dll
 
-1. Nel **Project** dal menu **Aggiungi riferimento**.
+1. Scegliere **Aggiungi riferimento**dal menu **progetto** .
 
-2. Nel **.NET** scheda (**SQL Server** scheda per i progetti di SQL Server), selezionare **System. Transactions**, quindi selezionare **OK**.
+2. Nella scheda **.NET** (**SQL Server** TAB per SQL Server Projects) selezionare **System. Transactions**e quindi fare clic su **OK**.
 
-     Un riferimento a *Transactions* viene aggiunto al progetto.
+     Al progetto viene aggiunto un riferimento a *System. Transactions. dll* .
 
 ## <a name="to-save-data-in-a-transaction"></a>Per salvare i dati in una transazione
 
-- Aggiungere il codice per salvare i dati all'interno di usando istruzione che contiene la transazione. Il codice seguente viene illustrato come creare e creare un'istanza di un <xref:System.Transactions.TransactionScope> oggetto in un uso istruzione:
+- Aggiungere il codice per salvare i dati all'interno dell'istruzione using che contiene la transazione. Nel codice seguente viene illustrato come creare e creare un'istanza di un oggetto <xref:System.Transactions.TransactionScope> in un'istruzione using:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
@@ -53,4 +53,4 @@ Per eseguire il rollback della transazione, generare un'eccezione prima di chiam
 ## <a name="see-also"></a>Vedere anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
-- [Procedura dettagliata: Salvare i dati in una transazione](../data-tools/save-data-in-a-transaction.md)
+- [Procedura dettagliata: Salvare dati in una transazione](../data-tools/save-data-in-a-transaction.md)

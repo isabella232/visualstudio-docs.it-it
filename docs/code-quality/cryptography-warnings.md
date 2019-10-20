@@ -3,17 +3,17 @@ title: Avvisi di crittografia
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c72dd1455405ecbabb86ca10744639d402881cef
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2414a12c00b7d496e09f01982783a90874721cdc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449145"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649685"
 ---
 # <a name="cryptography-warnings"></a>Avvisi di crittografia
 Gli avvisi di crittografia supportano applicazioni e librerie più sicure attraverso l'uso corretto della crittografia. Questi avvisi contribuiscono ad evitare che il programma presenti difetti nella sicurezza. Se si disabilita uno qualsiasi di questi avvisi, è opportuno indicarne chiaramente il motivo nel codice e informare il responsabile della sicurezza designato per il progetto di sviluppo.

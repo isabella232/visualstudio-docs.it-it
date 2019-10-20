@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72492b984e7f47b87ea326fe8ebcce414ee978ec
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ed46bdb9b5562b38f37129d69e7f075e425588b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644776"
 ---
 # <a name="toolbox-html-tab"></a>Casella degli strumenti, scheda HTML
 
@@ -85,7 +85,7 @@ Quando si trascina **Input (Testo)** nell'area di visualizzazione Progettazione,
 ```
 
 > [!IMPORTANT]
->È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
+>È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).
 
 **Input (File)**
 
@@ -100,7 +100,7 @@ Quando si trascina **Input (File)** nell'area di visualizzazione Progettazione, 
 ```
 
 > [!IMPORTANT]
-> È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
+> È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).
 
 **Input (Password)**
 
@@ -115,7 +115,7 @@ Quando si trascina **Input (Password)** nell'area di visualizzazione Progettazio
 ```
 
 > [!IMPORTANT]
-> Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere [Protezione delle connessioni](/previous-versions/tn-archive/bb418917(v=technet.10)). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nelle pagine Web ASP.NET).
+> Se l'applicazione trasmette nomi utente e password, è necessario configurare il sito Web per usare SSL (Secure Sockets Layer) per la crittografia della trasmissione. Per altre informazioni, vedere [Protezione delle connessioni](/previous-versions/tn-archive/bb418917(v=technet.10)). È poi consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Convalida dell'input utente nei siti di pagine Web ASP.NET (Razor)).
 
 **Input (Casella di controllo)**
 
@@ -192,7 +192,7 @@ Quando si trascina **Immagine** nell'area di visualizzazione Progettazione, nel 
 <img alt="" src="">
 ```
 
-**Seleziona**
+**Selezione**
 
 ![Controllo Dropdown della casella degli strumenti di una pagina HTML](../../ide/reference/media/vxdropdown.gif)
 

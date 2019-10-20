@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 27c9c453549f753f3dfdc1664fd76f7a65d0ded5
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70197146"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632439"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -55,7 +55,7 @@ Sono disponibili tre edizioni di Visual Studio 2017: Community, Professional ed 
 
 Visual Studio è disponibile per Windows e Mac. [Visual Studio per Mac](/visualstudio/mac/) include numerose funzionalità di Visual Studio 2019 ed è ottimizzato per lo sviluppo di app multipiattaforma e per dispositivi mobili. Questo articolo è incentrato sulla versione Windows di Visual Studio 2019.
 
-Sono disponibili tre edizioni di Visual Studio 2019: Community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio 2019: community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
 
 ::: moniker-end
 
@@ -339,7 +339,7 @@ In primo luogo, rinominare la variabile `name`:
 
    ![Membri dell'elenco di IntelliSense in Visual Studio](../media/intellisense-list-members.png)
 
-5. Selezionare il membro denominato **Now** che è una proprietà della classe facendo doppio clic su di esso oppure premendo **TAB**. Completare la riga di codice aggiungendo un punto e virgola alla fine.
+5. Selezionare il membro denominato **Now**, ovvero una proprietà della classe, facendo doppio clic su di esso o premendo **Tab**. Completare la riga di codice aggiungendo un punto e virgola alla fine.
 
 6. Sotto questa riga digitare o incollare le righe di codice seguenti:
 

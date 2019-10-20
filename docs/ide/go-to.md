@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549984"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654645"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
@@ -52,7 +52,7 @@ Per impostazione predefinita, l'elemento specificato viene cercato in tutti gli 
 
 Per limitare la ricerca a un tipo specifico di elemento di codice, è possibile specificare un prefisso nella casella di ricerca o selezionare una delle cinque icone di filtro:
 
-Prefisso | Icona | Metodo rapido | Description
+Prefisso | Icona | Metodo rapido | Descrizione
 :-: | - | - | -
 :| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL**+**G** | Consente di passare al numero di riga specificato
 f| ![Icona File](media/gotoall-files-icon.png) | **CTRL**+**1**, **CTRL**+**F** | Consente di passare al file specificato
@@ -65,7 +65,7 @@ m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL**+**1**, **CTRL**+**
 
 Per limitare la ricerca a una posizione specifica, selezionare una delle due icone documento:
 
-Icona | Description
+Icona | Descrizione
 ---- | ---
 ![Documento corrente](media/gotoall_currentdocument.png) | Cerca solo il documento corrente
 ![Documenti esterni](media/gotoall_external.png) | Cerca i documenti esterni oltre a quelli presenti nel progetto e/o nella soluzione
@@ -80,7 +80,7 @@ Se si usa la [notazione Camel](https://en.wikipedia.org/wiki/Camel_case) nel cod
 
 Se si seleziona l'icona a forma di ingranaggio ![Icona Ingranaggio](media/gotoall_gear.png) è possibile modificare il comportamento di questa funzionalità:
 
-Impostazione | Description
+Impostazioni | Descrizione
 ------- | ---
 Utilizza scheda anteprima | Visualizza immediatamente l'elemento selezionato nella scheda anteprima dell'IDE
 Mostra dettagli | Visualizza informazioni relative a progetto, file, riga e riepilogo recuperando i commenti della documentazione nella finestra

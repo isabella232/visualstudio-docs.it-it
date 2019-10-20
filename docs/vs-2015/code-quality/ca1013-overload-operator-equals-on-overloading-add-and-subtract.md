@@ -1,5 +1,5 @@
 ---
-title: "CA1013: Overload di operatore equals all'overload degli operatori di addizione e sottrazione | Microsoft Docs"
+title: "CA1013: l'operatore di overload è uguale all'overload di Add e Subtract | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -16,15 +16,15 @@ helpviewer_keywords:
 - OverloadOperatorEqualsOnOverloadingAddAndSubtract
 ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1b70085c83d842ccb5f8addc661af9109b5a5976
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dd1c144f04150e3965e2c0264b80147cbd9b8f19
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695615"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663206"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Eseguire l'overload dell'operatore "uguale a" all'overload degli operatori di addizione e sottrazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "65695615"
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
-|Category|Microsoft.Design|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. Design|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
  Un membro pubblico o protetto implementa gli operatori di addizione o sottrazione senza implementare l'operatore di uguaglianza.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando le istanze di un tipo possono essere combinate usando operazioni quali l'addizione e sottrazione, è quasi sempre necessario definire l'uguaglianza per restituire `true` per due istanze che presentano gli stessi valori che lo costituiscono.
+ Quando le istanze di un tipo possono essere combinate usando operazioni quali l'addizione e la sottrazione, è consigliabile definire sempre l'uguaglianza per restituire `true` per due istanze con gli stessi valori costitutivi.
 
- È possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione causerà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo di Object. Equals nell'implementazione. Vedere l'esempio seguente.
+ Non è possibile usare l'operatore di uguaglianza predefinito in un'implementazione di overload dell'operatore di uguaglianza. Questa operazione provocherà un overflow dello stack. Per implementare l'operatore di uguaglianza, usare il metodo Object. Equals nell'implementazione. Vedere l'esempio seguente.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -59,27 +59,25 @@ return left.Equals(right);
 ```
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, implementare l'operatore di uguaglianza, in modo che sia matematicamente coerenza con gli operatori di addizione e sottrazione.
+ Per correggere una violazione di questa regola, implementare l'operatore di uguaglianza in modo che sia matematicamente coerente con gli operatori di addizione e sottrazione.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola quando l'implementazione predefinita dell'operatore di uguaglianza fornisce il comportamento corretto per il tipo.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente definisce un tipo (`BadAddableType`) che violano questa regola. Questo tipo deve implementare l'operatore di uguaglianza affinché due istanze in cui gli stessi valori di campo di test `true` per verificarne l'uguaglianza. Il tipo `GoodAddableType` Mostra l'implementazione corretta. Si noti che questo tipo implementa l'operatore di disuguaglianza anche che esegue l'override <xref:System.Object.Equals%2A> per soddisfare le altre regole. Un'implementazione completa è necessario implementare anche <xref:System.Object.GetHashCode%2A>.
+ Nell'esempio seguente viene definito un tipo (`BadAddableType`) che viola questa regola. Questo tipo deve implementare l'operatore di uguaglianza per creare due istanze con lo stesso valore di campo test `true` per verificarne l'uguaglianza. Il tipo `GoodAddableType` indica l'implementazione corretta. Si noti che questo tipo implementa anche l'operatore di disuguaglianza ed esegue l'override di <xref:System.Object.Equals%2A> per soddisfare altre regole. Un'implementazione completa implementa anche <xref:System.Object.GetHashCode%2A>.
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AddAndSubtract/cs/FxCop.Design.AddAndSubtract.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente testa l'uguaglianza con istanze dei tipi definiti in precedenza in questo argomento per illustrare il comportamento predefinito e il comportamento corretto per l'operatore di uguaglianza.
+ Nell'esempio seguente viene verificata l'uguaglianza utilizzando istanze dei tipi definiti in precedenza in questo argomento per illustrare il comportamento predefinito e corretto per l'operatore di uguaglianza.
 
  [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TestAddAndSubtract/cs/FxCop.Design.TestAddAndSubtract.cs#1)]
 
  Questo esempio produce il seguente output:
 
- **Tipo non valido: {2,2} {2,2} sono uguali? No**
-**tipo ottima: {3,3} {3,3} sono uguali? Sì**
-**tipo ottima: {3,3} {3,3} sono = =?   Sì**
-**tipo non valido: {2,2} {9,9} sono uguali? No**
-**tipo ottima: {3,3} {9,9} sono = =?   No**
+ **Tipo non valido: {2,2} {2,2} sono uguali? Nessun** **tipo 
+ valido: {3,3} {3,3} sono uguali? Sì** 
+**tipo corretto: {3,3} 0 è = =?   Sì** 1**tipo errato: 3 4 sono uguali? Nessun** **tipo 5 valido: 7 8 è = =?   No**
 ## <a name="see-also"></a>Vedere anche
  [Operatori di uguaglianza](https://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)

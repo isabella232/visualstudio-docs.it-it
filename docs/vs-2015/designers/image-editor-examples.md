@@ -6,29 +6,29 @@ ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 921ed880d7a1827a8e52914fa21738f628cf17fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b03e98c6e8865d225e14ea393640b965007b7319
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68155414"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664372"
 ---
 # <a name="image-editor-examples"></a>Esempi dell'editor immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gli articoli di questa sezione della documentazione contengono esempi che illustrano l'uso dell'editor di immagini.  
-  
-## <a name="related-topics"></a>Argomenti correlati  
-  
-|Titolo|DESCRIZIONE|  
-|-----------|-----------------|  
-|[Procedura: creare una trama di base](../designers/how-to-create-a-basic-texture.md)|Viene illustrato come creare uno shader con trama di base.|  
-|[Procedura: esportare una trama da usare con app Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Viene illustrato come creare una trama formato DDS con alfa premoltiplicato che può essere usata in un'app Direct2D o WWA.|  
-|[Procedura: creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)|Viene illustrato come generare livelli MIP da un'immagine.|  
-|[Uso delle risorse tridimensionali nel gioco o nell'app](../designers/using-3-d-assets-in-your-game-or-app.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per elaborare gli asset 3D quando si compila il progetto o la soluzione in modo che siano pronti per l'uso nell'app. Vengono descritte anche le strategie per il caricamento di tipi diversi di risorse nell'app.|  
-|[Procedura: esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|  
-|[Procedura: esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|  
-|[Procedura: esportare una trama da usare con app Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Viene descritto come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
+Gli articoli di questa sezione della documentazione contengono esempi che illustrano l'uso dell'editor di immagini.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+|Titolo|Descrizione|
+|-----------|-----------------|
+|[Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md)|Viene illustrato come creare uno shader con trama di base.|
+|[Procedura: Esportare una trama da usare con Direct2D o app Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Viene illustrato come creare una trama formato DDS con alfa premoltiplicato che può essere usata in un'app Direct2D o WWA.|
+|[Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)|Viene illustrato come generare livelli MIP da un'immagine.|
+|[Uso delle risorse tridimensionali nel gioco o nell'app](../designers/using-3-d-assets-in-your-game-or-app.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per elaborare gli asset 3D quando si compila il progetto o la soluzione in modo che siano pronti per l'uso nell'app. Vengono descritte anche le strategie per il caricamento di tipi diversi di risorse nell'app.|
+|[Procedura: esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
+|[Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
+|[Procedura: Esportare una trama da usare con Direct2D o app Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Viene descritto come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|

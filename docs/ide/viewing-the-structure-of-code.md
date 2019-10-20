@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150132"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647300"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 

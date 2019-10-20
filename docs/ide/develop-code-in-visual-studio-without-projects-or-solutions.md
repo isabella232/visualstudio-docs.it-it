@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962450"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652512"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -83,7 +83,7 @@ La configurazione del codice per l'esecuzione in Visual Studio varia a seconda d
 Le codebase basate su MSBuild possono avere più configurazioni di compilazione visualizzate nell'elenco a discesa del pulsante **Avvia**. Selezionare il file che si vuole usare come elemento di avvio e quindi scegliere il pulsante **Avvia** per avviare il debug.
 
 > [!NOTE]
-> Per le codebase C# e Visual Basic, è necessario avere installato il carico di lavoro **Sviluppo per desktop .NET**. Per le codebase C++, è necessario avere installato il carico di lavoro **Sviluppo di applicazioni desktop con C++**.
+> Per le codebase C# e Visual Basic, è necessario avere installato il carico di lavoro **Sviluppo per desktop .NET**. Per le codebase C++, è necessario avere installato il carico di lavoro **Sviluppo di applicazioni desktop con C++** .
 
 ### <a name="codebases-that-use-custom-build-tools"></a>Codebase che usano strumenti di compilazione personalizzati
 
@@ -120,4 +120,4 @@ Il testo del pulsante **Avvia** cambia per indicare che il progetto è l'element
 - [Personalizzare le attività di compilazione e debug](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Progetti Apri cartella per C++)
 - [Progetti CMake in C++](/cpp/build/cmake-projects-in-visual-studio)
-- [Scrivere codice nell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Scrittura di codice nell'editor di testo e di codice](../ide/writing-code-in-the-code-and-text-editor.md)

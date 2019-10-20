@@ -3,20 +3,20 @@ title: 'Procedura: Estendere il codice generato da Object Relational Designer'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e89410d224adf0980e51c691dbf581655cc2ff3e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566996"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648355"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procedura: Estendere il codice generato da Object Relational Designer
-Codice generato per il **O/R Designer** viene rigenerato quando vengono apportate modifiche alle classi di entità e altri oggetti nell'area di progettazione. A causa di questa rigenerazione, in genere tutto il codice aggiunto al codice generato viene sovrascritto quando la finestra di progettazione rigenera il codice. Il **O/R Designer** offre la possibilità di generare file di classe parziale in cui è possibile aggiungere il codice che non vengano sovrascritti. Un esempio di aggiunta di codice personalizzato al codice generato per il **O/R Designer** viene aggiunta la convalida dei dati a LINQ alle classi di SQL (entity). Per altre informazioni, vedere [Procedura: Aggiungere la convalida a classi di entità](../data-tools/how-to-add-validation-to-entity-classes.md).
+Il codice generato da **O/R Designer** viene rigenerato quando vengono apportate modifiche alle classi di entità e ad altri oggetti nell'area di progettazione. A causa di questa rigenerazione, in genere tutto il codice aggiunto al codice generato viene sovrascritto quando la finestra di progettazione rigenera il codice. La **finestra di progettazione di O/R** consente di generare file di classe parziali in cui è possibile aggiungere codice che non viene sovrascritto. Un esempio di aggiunta di codice personalizzato al codice generato da **O/R Designer** è l'aggiunta della convalida dei dati alle classi LINQ to SQL (Entity). Per altre informazioni, vedere [procedura: aggiungere la convalida alle classi di entità](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -24,7 +24,7 @@ Codice generato per il **O/R Designer** viene rigenerato quando vengono apportat
 
 ### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Per creare una classe parziale e aggiungere codice a una classe di entità
 
-1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nella **O/R Designer**. (Fare doppio clic sul **dbml** del file in **Esplora soluzioni** oppure **Esplora Database**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in **Progettazione relazionale di o/R**. (Fare doppio clic sul file **. dbml** in **Esplora soluzioni** o **Esplora database**).
 
 2. In **Object Relational Designer** fare clic con il pulsante destro del mouse sulla classe per cui si vuole aggiungere la convalida e quindi scegliere **Visualizza codice**.
 
@@ -36,9 +36,9 @@ Codice generato per il **O/R Designer** viene rigenerato quando vengono apportat
 
 ### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Per creare una classe parziale e aggiungere codice a un oggetto DataContext
 
-1. Aprire o creare un nuovo file LINQ to SQL classi (**dbml** file) nella **O/R Designer**. (Fare doppio clic sul **dbml** del file in **Esplora soluzioni** oppure **Esplora Database**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in **Progettazione relazionale di o/R**. (Fare doppio clic sul file **. dbml** in **Esplora soluzioni** o **Esplora database**).
 
-2. Nel **O/R Designer**, fare doppio clic su un'area vuota della finestra di progettazione e quindi fare clic su **Visualizza codice**.
+2. In **Progettazione relazionale**, fare clic con il pulsante destro del mouse su un'area vuota della finestra di progettazione, quindi scegliere **Visualizza codice**.
 
      Viene aperto l'editor del codice con una classe parziale per l'oggetto DataContext.
 
@@ -47,5 +47,5 @@ Codice generato per il **O/R Designer** viene rigenerato quando vengono apportat
 ## <a name="see-also"></a>Vedere anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procedura dettagliata: Creazione di LINQ alle classi di SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

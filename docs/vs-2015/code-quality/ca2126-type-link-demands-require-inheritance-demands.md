@@ -1,5 +1,5 @@
 ---
-title: 'CA2126: Le richieste di collegamento di tipo necessarie richieste di ereditarietà | Microsoft Docs'
+title: 'CA2126: le richieste di collegamento di tipo richiedono richieste di ereditarietà | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - TypeLinkDemandsRequireInheritanceDemands
 ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8aee10059e9c50e7f572c6fb784da7b97f323905
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7bc7c9639d12cc6981c91320104a1565bb1f94e9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687231"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609023"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126: Per le richieste di collegamento dei tipi sono necessarie richieste di ereditarietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "65687231"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo non sealed pubblico è protetto con una richiesta di collegamento, dispone di un metodo sottoponibile a override e il tipo né il metodo è protetto con una richiesta di ereditarietà.
+ Un tipo non sealed pubblico è protetto con una richiesta di collegamento, dispone di un metodo sottoponibile a override e né il tipo né il metodo sono protetti con una richiesta di ereditarietà.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Una richiesta di collegamento in un metodo o nel relativo tipo dichiarante richiede che il chiamante immediato del metodo di avere l'autorizzazione specificata. Una richiesta di ereditarietà in un metodo richiede un metodo di override per avere l'autorizzazione specificata. Una richiesta di ereditarietà in un tipo richiede una classe di derivazione per avere l'autorizzazione specificata.
+ Una richiesta di collegamento su un metodo o sul tipo dichiarante richiede che il chiamante immediato del metodo disponga dell'autorizzazione specificata. Una richiesta di ereditarietà su un metodo richiede che un metodo di override disponga dell'autorizzazione specificata. Una richiesta di ereditarietà su un tipo richiede che una classe di derivazione disponga dell'autorizzazione specificata.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, proteggere il tipo o il metodo con una richiesta di ereditarietà per la stessa autorizzazione della richiesta di collegamento.
@@ -52,13 +52,13 @@ ms.locfileid: "65687231"
  [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.TypesWithLinkDemands/vb/FxCop.Security.TypesWithLinkDemands.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA2108: Controllare la sicurezza dichiarativa sui tipi di valore](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+ [CA2108: Controllare la sicurezza dichiarativa sui tipi di valori](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
  [CA2112: I tipi protetti non devono esporre campi](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
  [CA2122: Non esporre in modo indiretto metodi con richieste di collegamento](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123: Le richieste di collegamento di override devono essere identiche a di base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+ [CA2123: Le richieste di collegamento negli override devono essere identiche a quelle nei metodi di base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Linee guida per la generazione di codice sicuro](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [collegarle](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [richieste](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)
+ [Linee guida per la codifica sicura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [ereditarietà richieste](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) di [collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [richieste](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48)

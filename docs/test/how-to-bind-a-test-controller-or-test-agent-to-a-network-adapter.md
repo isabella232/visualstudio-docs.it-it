@@ -8,15 +8,15 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979328"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643777"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedura: Associare un test controller o un agente di test a una scheda di rete
 
@@ -25,7 +25,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 > [!WARNING]
 > Quando si tenta di configurare un agente di test, potrebbe verificarsi l'errore seguente:
 >
-> **Errore 8110. Impossibile connettersi al controller specificato o accedere all'oggetto controller**
+> **Errore 8110. Non è possibile connettersi al computer controller specificato o accedere all'oggetto controller**
 >
 > Questo errore può essere causato dall'installazione del controller di test in un computer con più di una scheda di rete. È anche possibile installare correttamente gli agenti e non riscontrare il problema finché non si tenta di eseguire un test.
 
@@ -49,7 +49,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2. Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Visual Studio Test Controller** e quindi scegliere **Arresta**.
 
-     -oppure-
+     oppure
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 
@@ -95,7 +95,7 @@ Se un computer con installato il software del test controller o dell'agente di t
 
 2. Nel riquadro dei risultati, nella colonna **Nome** fare clic con il pulsante destro del mouse sul servizio **Agente di test di Visual Studio** e quindi scegliere **Arresta**.
 
-     -oppure-
+     oppure
 
      Aprire un prompt dei comandi con privilegi elevati ed eseguire il comando seguente nella riga di comando:
 
@@ -133,4 +133,4 @@ Se un computer con installato il software del test controller o dell'agente di t
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)
 - [Modificare le impostazioni di registrazione dei test di carico](../test/modify-load-test-logging-settings.md)
 - [Configurare le porte per test controller e agenti di test](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Procedura: Specificare i periodi di timeout per test controller e agenti di test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Procedura: Specificare i periodi di timeout per controller e agenti di test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

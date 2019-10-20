@@ -88,17 +88,17 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 723a9e382256650ae70982d403c2c768fb1f1e8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2741e86bdc8e59434472242210cd6de2ffa8cee9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945555"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655546"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Risorse per la risoluzione dei problemi relativi ad errori dell'ambiente di sviluppo integrato
 
@@ -119,7 +119,7 @@ I forum consentono di interagire con altri sviluppatori e anche con i dipendenti
 
 ## <a name="product-support"></a>Supporto tecnico
 
-Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Per informazioni sul supporto tecnico disponibile nella propria area, vedere [Comunicazioni con Microsoft](../../ide/talk-to-us.md).
+Se le risorse disponibili non sono sufficienti per ottenere una risposta alle proprie domande, contattare l'assistenza Microsoft visitando il sito Web del [Supporto tecnico Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Per informazioni sul supporto tecnico disponibile nella propria area, vedere la pagina [Opzioni commenti e suggerimenti di Visual Studio](../../ide/feedback-options.md) .
 
 ## <a name="see-also"></a>Vedere anche
 

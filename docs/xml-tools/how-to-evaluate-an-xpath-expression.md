@@ -3,54 +3,54 @@ title: Valutare un'espressione XPath durante il debug
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 523c89af70c762f0cd0e31519c8c862c440c79eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002082"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654278"
 ---
 # <a name="evaluate-xpath-expressions"></a>Valutare le espressioni XPath
 
-È possibile valutare le espressioni XPath tramite i **controllo immediato** finestra durante il debug. L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente (vale a dire, il `self::node()` nodo il **variabili locali** finestra) fornisce il contesto di valutazione per l'espressione XPath.
+È possibile valutare le espressioni XPath usando la finestra controllo **immediato** durante il debug. L'espressione XPath deve essere valida in base alla raccomandazione W3C XPath 1.0 (informazioni in lingua inglese). Il contesto XSLT corrente, ovvero il nodo `self::node()` nella finestra **variabili locali** , fornisce il contesto di valutazione per l'espressione XPath.
 
 Quando si valuta un'espressione XPath:
 
 - Sono supportate le funzioni XPath incorporate.
 
-- Non sono supportate le funzioni XSLT incorporate e funzioni definite dall'utente.
+- Le funzioni XSLT predefinite e le funzioni definite dall'utente non sono supportate.
 
 > [!NOTE]
-> Debug XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
+> Il debug XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
 
 ## <a name="evaluate-an-xpath-expression"></a>Valutare un'espressione XPath
 
-La procedura seguente usa il *seguito average.xsl* e *books. XML* dei file dal [procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) pagina.
+Nella procedura seguente vengono usati i file *below-average. xsl* e *books. XML* della pagina [procedura dettagliata: debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) .
 
 1. Inserire un punto di interruzione in corrispondenza del tag di inizio `xsl:if`.
 
-2. Per avviare il debug, scegli **XML** > **Avvia debug XSLT** sulla barra dei menu (oppure premere **Alt**+**F5** ).
+2. Per avviare il debug, scegliere **XML**  > **avviare il debug XSLT** sulla barra dei menu oppure premere **ALT** +**F5**.
 
    Il debugger viene avviato e interrotto sul tag `xsl:if`.
 
-3. Fare doppio clic e selezionare **controllo immediato**.
+3. Fare clic con il pulsante destro del mouse e scegliere **immediato**.
 
-   Il **controllo immediato** verrà visualizzata la finestra.
+   Verrà visualizzata la finestra controllo **immediato** .
 
-4. Immettere `./price/text()` nella **espressione** campo il **controllo immediato** finestra di dialogo casella e quindi scegliere **Rivaluta**.
+4. Immettere `./price/text()` nel campo **espressione** della finestra di dialogo controllo **immediato** , quindi scegliere **Rivaluta**.
 
-   Il prezzo del nodo libro corrente viene visualizzato nei **valore** casella.
+   Il prezzo del nodo libro corrente viene visualizzato nella casella **valore** .
 
    ![Valutare un'espressione XPath nella finestra controllo immediato](media/quickwatch-price.png)
 
-5. Modificare l'espressione XPath `./price/text() < $bookAverage` e fare clic su **Rivaluta**.
+5. Modificare l'espressione XPath in `./price/text() < $bookAverage` e fare clic su **Rivaluta**.
 
-   Il **valore** casella Mostra che l'espressione XPath restituisce `true`.
+   Nella casella **valore** viene indicato che l'espressione XPath restituisce `true`.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766117"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647395"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -23,7 +23,7 @@ Quando viene creata un'istanza di modello, è possibile sostituire i valori nel 
 
 ## <a name="declare-and-enable-template-parameters"></a>Dichiarare e abilitare i parametri di modello
 
-I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
+I parametri di modello vengono dichiarati nel formato $*parametro*$. Esempio:
 
 - $safeprojectname$
 
@@ -63,9 +63,9 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |time|L'ora corrente nel formato GG/MM/AAAA 00:00:00.|
 |specifiedSolutionName|Nome della soluzione. Quando l'opzione per creare una directory di soluzione è selezionata, `specifiedSolutionName` è il nome della soluzione. Quando l'opzione per creare una directory di soluzione non è selezionata, `specifiedSolutionName` è vuoto.|
 |userdomain|Dominio dell'utente corrente.|
-|userName|Nome dell'utente corrente.|
+|nomeutente|Nome dell'utente corrente.|
 |webnamespace|Nome del sito Web corrente. Questo parametro viene usato nel modello di modulo Web per garantire che i nomi delle classi siano univoci. Se il sito Web si trova nella directory radice del server Web, questo parametro di modello viene risolto nella directory radice del server Web.|
-|year|L'anno corrente nel formato AAAA.|
+|anno|L'anno corrente nel formato AAAA.|
 
 > [!NOTE]
 > I parametri di modello fanno distinzione tra maiuscole e minuscole.

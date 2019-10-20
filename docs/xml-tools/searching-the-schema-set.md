@@ -3,17 +3,17 @@ title: XML Schema Explorer-ricerca nel set di schemi
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898b79e53773c09d60e32a3ef262346b0371d2af
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ff7684c56a22ef760655563d1d9f58e2ff01b0c9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926808"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604645"
 ---
 # <a name="search-the-schema-set"></a>Eseguire ricerche nel set di schemi
 
@@ -43,7 +43,7 @@ In **XML Schema Explorer** sono inoltre incluse ricerche predefinite a cui è po
 
 ## <a name="display-and-navigate-search-results"></a>Visualizzare ed esplorare i risultati della ricerca
 
-Dopo aver terminato la ricerca, il riquadro dei risultati di riepilogo viene aggiunto alla barra degli strumenti con i risultati della ricerca. I risultati della ricerca sono evidenziati anche in **XML Schema Explorer** e contrassegnati con i segni di avanzamento sulla barra di scorrimento verticale. È possibile esplorare i risultati della ricerca usando i pulsanti **Vai al** risultato della ricerca successivo e **Vai ai risultati della ricerca precedente** nel riquadro dei risultati di riepilogo della barra degli strumenti di **XML Schema Explorer** . utilizzando i tasti **F3** e **MAIUSC**+**F3**oppure facendo clic sui segni di graduazione nella barra di scorrimento.
+Dopo aver terminato la ricerca, il riquadro dei risultati di riepilogo viene aggiunto alla barra degli strumenti con i risultati della ricerca. I risultati della ricerca sono evidenziati anche in **XML Schema Explorer** e contrassegnati con i segni di avanzamento sulla barra di scorrimento verticale. È possibile esplorare i risultati della ricerca usando i pulsanti **Vai al** risultato della ricerca successivo e **Vai ai risultati della ricerca precedente** nel riquadro dei risultati di riepilogo della barra degli strumenti di **XML Schema Explorer** . utilizzando i tasti **F3** e **MAIUSC** +**F3**; oppure facendo clic sui segni di graduazione nella barra di scorrimento.
 
 È possibile aggiungere i risultati della ricerca all'area di lavoro facendo clic sul pulsante **Aggiungi nodi evidenziati all'area di lavoro** nel riquadro dei risultati di riepilogo.
 

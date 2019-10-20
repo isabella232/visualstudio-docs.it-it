@@ -1,37 +1,37 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: Usare la finestra di progettazione argomenti'
+title: 'Progettazione flussi di lavoro-procedura: usare la finestra di progettazione degli argomenti'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c333e78de17a3af5b4f7f0be46c19cf3120231d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746905"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650283"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Procedura: Usare la finestra di progettazione argomenti
+# <a name="how-to-use-the-argument-designer"></a>Procedura: utilizzare la finestra di progettazione argomenti
 
-La finestra di progettazione argomenti semplifica dati da e verso un'attività del flusso. Accedere a progettazione facendo il **argomenti** pulsante nell'angolo inferiore sinistro dell'area di progettazione. La finestra di progettazione contiene un elenco di argomenti che vengono visualizzati in un formato tabulare e possono essere ordinati per ognuna delle intestazioni di colonna, tranne per il **il valore predefinito** colonna. Ogni argomento include un nome, una direzione per la proprietà in/out/in-out, un tipo e un valore di espressione predefinito (se presente). Il nome e il valore di espressione predefinito sono campi di testo modificabili, mentre il tipo e la direzione sono elenchi a discesa. Per altre informazioni, vedere [variabili e argomenti (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
+La finestra di progettazione degli argomenti semplifica l'accesso ai dati in entrata e in uscita da un'attività. Per accedere alla finestra di progettazione, fare clic sul pulsante **argomenti** nell'angolo inferiore sinistro dell'area di progettazione. La finestra di progettazione contiene un elenco di argomenti che vengono visualizzati in un formato tabulare e possono essere ordinati in base a ognuna delle intestazioni di colonna, ad eccezione della colonna **valore predefinito** . Ogni argomento include un nome, una direzione per la proprietà in/out/in-out, un tipo e un valore di espressione predefinito (se presente). Il nome e il valore di espressione predefinito sono campi di testo modificabili, mentre il tipo e la direzione sono elenchi a discesa. Per altre informazioni, vedere [variabili e argomenti (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
 ## <a name="to-create-a-new-argument"></a>Per creare un nuovo argomento
 
-1. Aprire una soluzione del flusso di lavoro o attività in Visual Studio.
+1. Aprire una soluzione flusso di lavoro o attività in Visual Studio.
 
-2. Aprire la finestra di progettazione scegliendo il **argomenti** pulsante nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione argomenti.
+2. Aprire la finestra di progettazione degli argomenti facendo clic sul pulsante **argomenti** nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione argomenti.
 
-3. Fare clic sulla riga vuota denominata **Crea argomento**. Verrà aggiunta una nuova riga con un nuovo argomento usando i valori predefiniti seguenti: argumentx per il **Name** dove x è di tipo integer e un valore iniziale pari a 1 che viene incrementato automaticamente per creare i nomi di argomento univoco, **In**  per il **direzione**, e **stringa** per i **tipo di argomento**. Non vengono aggiunti valori per **il valore predefinito**. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
+3. Fare clic sulla riga vuota con etichetta **Crea argomento**. Verrà aggiunta una nuova riga con un nuovo argomento usando i valori predefiniti seguenti: argomentox per il **nome** dove x è un numero intero con un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di argomento univoci, **in** per la **direzione**, e **stringa** per il **tipo di argomento**. Per il **valore predefinito**non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
 
     > [!NOTE]
-    > Per eliminare un argomento, selezionare l'argomento facendovi clic sopra e quindi premere il **eliminare** chiave.
+    > Per eliminare un argomento, selezionarlo facendo clic su di esso e quindi premere il tasto **Canc** .
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d503f8d1fd18817a30f49c64307d9fc14c74b3ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567611"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642710"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
 
@@ -27,49 +27,49 @@ Uno scenario applicativo comune prevede la visualizzazione dei dati selezionati 
 
 L'uso di query con parametri rende più efficiente il funzionamento dell'applicazione, consentendo al database di eseguire in modo ottimale le operazioni di filtro rapido dei record. La richiesta invece di un'intera tabella del database, il relativo trasferimento in rete e l'uso della logica dell'applicazione per trovare i record desiderati possono comportare una riduzione della velocità e dell'efficienza dell'applicazione.
 
-È possibile aggiungere le query con parametri a qualsiasi oggetto TableAdapter e controlli per accettare i valori dei parametri ed eseguire la query, tramite il **generatore di criteri di ricerca** nella finestra di dialogo. Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
+È possibile aggiungere query con parametri a qualsiasi TableAdapter (e ai controlli per accettare i valori dei parametri ed eseguire la query), usando la finestra di dialogo **Generatore criteri di ricerca** . Per aprire la finestra di dialogo, scegliere **Aggiungi query** nel menu **Dati** o da qualsiasi smart tag di TableAdapter.
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
-- Creazione e configurazione dell'origine dati nell'applicazione con il **configurazione dell'origine dati** procedura guidata.
+- Creazione e configurazione dell'origine dati nell'applicazione con la **Configurazione guidata origine dati** .
 
-- Impostare il tipo di rilascio degli elementi nel **Zdroje dat** finestra.
+- Impostazione del tipo di eliminazione degli elementi nella finestra **origini dati** .
 
 - Creazione di controlli per la visualizzazione dei dati mediante il trascinamento di elementi dalla finestra **Origini dati** in un form.
 
 - Aggiunta di controlli per la visualizzazione dei dati nel form.
 
-- Completare la **generatore di criteri di ricerca** nella finestra di dialogo.
+- Completamento della finestra di dialogo **Generatore criteri di ricerca** .
 
-- Immissione dei parametri nel form e l'esecuzione della query con parametri.
+- Immissione dei parametri nel form ed esecuzione della query con parametri.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
-Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
+In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare LocalDB di SQL Server Express come parte delle **elaborazione ed archiviazione dati** carico di lavoro, o come un singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
-2. Installare il database di esempio Northwind seguendo questa procedura:
+2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
-    1. In Visual Studio, aprire il **Esplora oggetti di SQL Server** finestra. (Esplora oggetti di SQL Server viene installato come parte del **elaborazione ed archiviazione dati** carico di lavoro nel **programma di installazione di Visual Studio**.) Espandere la **SQL Server** nodo. Fare doppio clic sull'istanza di Local DB e selezionare **nuova Query**.
+    1. In Visual Studio aprire la finestra **Esplora oggetti di SQL Server** . Esplora oggetti di SQL Server viene installato come parte del carico di lavoro di **elaborazione e archiviazione dei dati** nel **programma di installazione di Visual Studio**. Espandere il nodo **SQL Server** . Fare clic con il pulsante destro del mouse sull'istanza del database locale e scegliere **nuova query**.
 
-       Apre una finestra dell'editor di query.
+       Si apre una finestra dell'editor di query.
 
-    2. Copia il [script di Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
+    2. Copiare lo [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
 
-    3. Incollare lo script T-SQL nell'editor di query e quindi scegliere il **Execute** pulsante.
+    3. Incollare lo script T-SQL nell'editor di query, quindi scegliere il pulsante **Execute (Esegui** ).
 
-       Dopo un breve periodo di tempo, termina l'esecuzione di query e viene creato il database Northwind.
+       Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
-## <a name="create-the-windows-forms-application"></a>Creare l'applicazione Windows Form
+## <a name="create-the-windows-forms-application"></a>Creare il Windows Forms Application
 
-Creare una nuova **App di Windows. Forms** progetto entrambi C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
+Creare un nuovo progetto di **App Windows Forms** per C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
 Questo passaggio consente di creare un'origine dati da un database usando la **Configurazione guidata origine dati**:
 
-1. Per aprire la **Zdroje dat** finestra via il **Data** dal menu fare clic su **Mostra origini dati**.
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -83,7 +83,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 5. Se il database in uso richiede una password, selezionare l'opzione che consente di includere dati sensibili, quindi scegliere **Avanti**.
 
-6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina, fare clic su **successivo**.
+6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** fare clic su **Avanti**.
 
 7. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
@@ -91,7 +91,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella **Customers** viene visualizzata nella finestra **Origini dati**.
 
-## <a name="create-the-form"></a>Creazione di form
+## <a name="create-the-form"></a>Creare il modulo
 
 È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form:
 
@@ -101,13 +101,13 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
      Sul form vengono visualizzati un oggetto <xref:System.Windows.Forms.DataGridView> e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
 
-## <a name="add-parameterization-search-functionality-to-the-query"></a>Aggiungere la parametrizzazione (funzionalità di ricerca) per la query
+## <a name="add-parameterization-search-functionality-to-the-query"></a>Aggiungere la parametrizzazione (funzionalità di ricerca) alla query
 
-È possibile aggiungere una clausola WHERE alla query originale utilizzando il **generatore di criteri di ricerca** nella finestra di dialogo:
+È possibile aggiungere una clausola WHERE alla query originale utilizzando la finestra di dialogo **Generatore criteri di ricerca** :
 
 1. Selezionare il controllo <xref:System.Windows.Forms.DataGridView> e quindi scegliere **Aggiungi query** dal menu **Dati**.
 
-2. Tipo **FillByCity** nel **nuovo nome query** area di **generatore di criteri di ricerca** nella finestra di dialogo.
+2. Digitare **FillByCity** nell'area **nuovo nome query** della finestra di dialogo **Generatore criteri di ricerca** .
 
 3. Aggiungere `WHERE City = @City` alla query nell'area **Testo della query**.
 
@@ -121,7 +121,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
      ```
 
     > [!NOTE]
-    > Origini dati Access e OLE DB usano il punto interrogativo ('? ') per indicare i parametri, pertanto la clausola WHERE risulterebbe simile al seguente: `WHERE City = ?`.
+    > L'accesso e OLE DB origini dati usano il punto interrogativo ('?') per indicare i parametri, quindi la clausola WHERE sarà simile alla seguente: `WHERE City = ?`.
 
 4. Fare clic su **OK** per chiudere la finestra di dialogo **Generatore di criteri per la ricerca**.
 
@@ -129,13 +129,13 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 ## <a name="test-the-application"></a>Testare l'applicazione
 
-Esecuzione dell'applicazione consente di aprire il modulo e lo rende pronto ad accettare il parametro come input:
+L'esecuzione dell'applicazione apre il form e lo rende pronto per assumere il parametro come input:
 
 1. Premere **F5** per eseguire l'applicazione.
 
 2. Digitare **London** nella casella di testo **City**, quindi fare clic su **FillByCity**.
 
-     La griglia dei dati viene popolata con i clienti che soddisfano i criteri. In questo esempio nella griglia dei dati vengono visualizzati solo i clienti nella cui colonna **City** è presente un valore **London**.
+     La griglia di dati viene popolata con i clienti che soddisfano i criteri. In questo esempio nella griglia dei dati vengono visualizzati solo i clienti nella cui colonna **City** è presente un valore **London**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

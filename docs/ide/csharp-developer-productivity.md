@@ -2,7 +2,7 @@
 title: Aumentare la produttività per lo sviluppo .NET
 description: Panoramica di esplorazione, analisi del codice, testing unità e altre funzionalità che consentono di scrivere codice .NET in modo più efficiente e veloce.
 author: kuhlenh
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.date: 04/25/2019
 ms.topic: conceptual
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328772"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652584"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -41,7 +41,7 @@ Alcune estensioni offrono anche gli schemi della tastiera:
 
 Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni di Visual Studio:
 
-| Tasti di scelta rapida (tutti i profili) | Comando | DESCRIZIONE |
+| Tasti di scelta rapida (tutti i profili) | Comando | Descrizione |
 |-|-|-|
 | **CTRL**+**T** | Vai a tutti | Consente di passare a qualsiasi dichiarazione di file, tipo, membro o simbolo |
 | **F12** (o **CTRL**+**clic**) | Vai a definizione | Consente di passare al punto in cui si trova la definizione di un simbolo |
@@ -149,7 +149,7 @@ Diversi membri della community hanno scritto estensioni gratuite che aggiungono 
 
 Visual Studio include molte funzionalità che consentono di eseguire ricerche e di [esplorare il codice](../ide/navigating-code.md).
 
-| Funzionalità | Collegamento | Dettagli/Miglioramenti |
+| Funzionalità | Metodo rapido | Dettagli/Miglioramenti |
 |- | - | -|
 | Trova tutti i riferimenti | **MAIUSC**+**F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e tipo riferimento, ad esempio lettura o scrittura. È anche possibile "bloccare" i risultati. |
 | Vai all'implementazione | **CTRL**+**F12** | È possibile usare Vai a definizione nella parola chiave `override` per passare al membro sostituito |

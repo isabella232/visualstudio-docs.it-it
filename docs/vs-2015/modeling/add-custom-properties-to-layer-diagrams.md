@@ -8,15 +8,15 @@ helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75d3284c4584c67550c7dcee3c8f1737ebed5380
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871912"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655292"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "68871912"
 Quando si scrive un codice di estensione per i diagrammi livello, è possibile archiviare i valori con qualsiasi elemento in un diagramma livello. I valori saranno permanenti quando il diagramma viene salvato e riaperto. È anche possibile fare in modo che queste proprietà vengano visualizzate nella finestra **Proprietà** in modo che gli utenti possano visualizzarle e modificarle. Ad esempio, è possibile consentire agli utenti di specificare un'espressione regolare per ogni livello e scrivere il codice di convalida per verificare che i nomi delle classi in ogni livello siano conformi al modello specificato dall'utente.
 
 ## <a name="properties-not-visible-to-the-user"></a>Proprietà non visibili all'utente
- Se si desidera solo che il codice associ i valori a un elemento in un diagramma livello, non è necessario definire un componente MEF. In [ILayerElement](/previous-versions/ff644511(v=vs.140)) è presente un dizionario denominato `Properties`. Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. I valori saranno salvati come parte del diagramma livello. Per altre informazioni, vedere [esplorare e aggiornare i modelli di livello nel codice programma](../modeling/navigate-and-update-layer-models-in-program-code.md).
+ Se si desidera solo che il codice associ i valori a un elemento in un diagramma livello, non è necessario definire un componente MEF. In [ILayerElement](/previous-versions/ff644511(v=vs.140))è presente un dizionario denominato `Properties`. Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. I valori saranno salvati come parte del diagramma livello. Per altre informazioni, vedere [esplorare e aggiornare i modelli di livello nel codice programma](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
 ## <a name="properties-that-the-user-can-edit"></a>Proprietà modificabili dall'utente
  **Preparazione iniziale**

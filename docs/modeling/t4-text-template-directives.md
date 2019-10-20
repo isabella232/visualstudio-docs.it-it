@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c949eaeaf8e780fa6a85d61dea272d21fb8be1
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 6fd13f92af80e985a6942d05f66cc64b01138955
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476549"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606085"
 ---
 # <a name="t4-text-template-directives"></a>Direttive di modello di testo T4
 
@@ -77,4 +77,4 @@ Le direttive sono in genere i primi elementi di un file modello o di un file inc
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
-È inoltre possibile creare direttive personalizzate. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md). Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.
+È inoltre possibile creare direttive personalizzate. Per altre informazioni, vedere [creazione di processori di direttive del modello di testo T4 personalizzato](../modeling/creating-custom-t4-text-template-directive-processors.md). Se si utilizza l'SDK di visualizzazione e modellazione per creare un linguaggio DSL, verrà generato un processore di direttiva come parte di tale linguaggio DSL.

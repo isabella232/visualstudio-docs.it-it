@@ -2,8 +2,8 @@
 title: Refactoring con ridenominazione
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186580"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655612"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring con ridenominazione di un simbolo di codice
 
@@ -31,7 +31,7 @@ Questo refactoring si applica a:
 
 **Quando:** si vuole rinominare un elemento in modo sicuro senza dover trovare tutte le istanze e copiare/incollare il nuovo nome.
 
-**Perché?:** è probabile che copiare e incollare il nuovo nome in un intero progetto causi errori. Questo strumento di refactoring eseguirà in modo accurato l'azione di ridenominazione.
+**Perché:** è probabile che copiare e incollare il nuovo nome in un intero progetto causi errori. Questo strumento di refactoring eseguirà in modo accurato l'azione di ridenominazione.
 
 ## <a name="how-to"></a>Procedura
 
@@ -73,7 +73,7 @@ Questo refactoring si applica a:
 - A partire da Visual Studio 2019 versione 16,3, quando si rinomina un tipo che corrisponde al nome del file in, viene visualizzata una casella di controllo che consente di rinominare il file nello stesso momento. Questa opzione viene visualizzata quando si rinomina una classe, un'interfaccia o un'enumerazione. Questa opzione non è supportata per i tipi parziali con più definizioni.
 
    ![Rinomina animazione con file-C#](media/rename-with-file-animated-cs.gif)
-   
+
 - Se si usa un nome già esistente che causerebbe un conflitto, nella finestra di dialogo **Rinomina** verrà visualizzato un avviso.
 
    ![Conflitto di ridenominazione](media/rename-conflict-cs.png)

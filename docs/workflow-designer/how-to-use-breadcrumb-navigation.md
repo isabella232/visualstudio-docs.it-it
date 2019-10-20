@@ -1,23 +1,23 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: Usare la barra di navigazione'
+title: "Progettazione flussi di lavoro-procedura: usare l'esplorazione di navigazione"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de1004dd7a62fe4163147db4928783dd9a0dca98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7a851ea074a78349c9e52ef127bf2814d203bf5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949500"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650308"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Procedura: Usare la barra di navigazione
+# <a name="how-to-use-breadcrumb-navigation"></a>Procedura: utilizzare l'esplorazione tramite la barra di navigazione
 
-Esistono tre modi principali per modificare il set di attività che vengono visualizzati nella finestra di progettazione del flusso di lavoro:
+Esistono tre modi principali per modificare il set di attività visualizzate in Progettazione flussi di lavoro:
 
 1. Facendo doppio clic per analizzare un'attività figlio.
 
@@ -27,7 +27,7 @@ Esistono tre modi principali per modificare il set di attività che vengono visu
 
 ## <a name="using-breadcrumb-navigation"></a>Usando l'esplorazione tramite la barra di navigazione
 
-1. Fare doppio clic su un'attività di progettazione del flusso di lavoro per modificare l'attività radice per l'attività selezionata. L'attività selezionata viene quindi espansa completamente alla radice e relativi predecessori vengono mostrati nella barra di navigazione. Questa operazione viene talvolta definita analisi o annullamento dell'analisi di un'attività.
+1. Fare doppio clic su un'attività di Progettazione flussi di lavoro per impostare l'attività radice sull'attività su cui è stato fatto clic. L'attività su cui viene fatto clic viene quindi espansa completamente alla radice e i relativi predecessori vengono visualizzati nella barra di navigazione. Questa operazione viene talvolta definita analisi o annullamento dell'analisi di un'attività.
 
 2. Per passare a un predecessore dell'attività radice corrente, fare clic sull'attività nella barra di navigazione.
 
@@ -38,16 +38,16 @@ Esistono tre modi principali per modificare il set di attività che vengono visu
 2. Quando lo stato di espansione viene modificato facendo clic sul pulsante, il nuovo stato di espansione viene salvato in XAML.
 
     > [!WARNING]
-    > Non tutte le attività possono essere espanse sul posto. Esistono due casi in cui un'attività non può essere espansa sul posto, ovvero quando il padre dell'attività non consente l'espansione sul posto dei relativi figli (le attività di un diagramma di flusso non possono ad esempio essere espanse sul posto) o quando non è consentita l'espansione automatica dell'ActivityDesigner sul posto. Anche se nessuno degli ActivityDesigner inclusi nella finestra di progettazione del flusso di lavoro hanno il comportamento di quest'ultimo, alcune attività personalizzate lo espongano.
+    > Non tutte le attività possono essere espanse sul posto. Esistono due casi in cui un'attività non può essere espansa sul posto, ovvero quando il padre dell'attività non consente l'espansione sul posto dei relativi figli (le attività di un diagramma di flusso non possono ad esempio essere espanse sul posto) o quando non è consentita l'espansione automatica dell'ActivityDesigner sul posto. Sebbene nessuno degli ActivityDesigner inclusi in Progettazione flussi di lavoro abbia il secondo comportamento, alcune attività personalizzate possono presentare questo comportamento.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Espansione o compressione di tutte le attività
 
-1. Usare la **Espandi tutto** e **Comprimi tutto** pulsanti nell'interfaccia utente per espandere o comprimere tutte le attività sotto la radice di navigazione corrente. Si noti che Espandi tutto e Comprimi tutto sono stati globali. Ciò significa che quando si modifica l'attività radice usando la struttura di spostamento, espandere tutte o comprimere tutti gli stati persiste fino a quando non si fa clic su **ripristinare**.
+1. Usare i pulsanti **Espandi tutto** e **Comprimi tutto** nell'interfaccia utente per espandere o comprimere tutte le attività sotto la radice di navigazione corrente. Si noti che Espandi tutto e Comprimi tutto sono stati globali. Ciò significa che quando si modifica l'attività radice utilizzando l'esplorazione di navigazione, lo stato Espandi tutto o Comprimi tutto viene mantenuto fino a quando non si fa clic su **Ripristina**.
 
-2. Quando è stato applicato un Espandi tutto o Comprimi tutti gli stati, è possibile scegliere il **ripristinare** pulsante visualizzato per tornare alla visualizzazione dello stato in precedenza applicato a ogni attività.
-
-    > [!WARNING]
-    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, ha acconsentito esplicitamente espansione sul posto, la funzionalità associata il **Espandi tutto** e **Comprimi tutto** pulsanti sono disabilitato nel **diagramma di flusso**  finestra di progettazione. Per altre informazioni sul **diagramma di flusso** della finestra di progettazione, vedere il [Flowchart](../workflow-designer/flowchart-activity-designer.md) argomento.
+2. Dopo aver applicato uno stato Espandi tutto o Comprimi tutto, è possibile fare clic sul pulsante **Ripristina** che sembra tornare a esaminare lo stato applicato in precedenza a ogni attività.
 
     > [!WARNING]
-    > Espandi tutto ha anche un effetto speciale **commutatore** e **TryCatch** ActivityDesigner. Quando fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Facendo clic **ripristinare** oppure **Comprimi tutto** restituisce queste finestre di progettazione al relativo stato predefinito, in cui è possibile scegliere un case/blocco singolo per visualizzarne il contenuto.
+    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, ha rifiutato l'espansione sul posto, la funzionalità associata ai pulsanti **Espandi tutto** e **Comprimi tutto** è disabilitata nella finestra di progettazione **diagramma di flusso** . Per ulteriori informazioni sulla finestra di progettazione **diagramma di flusso** , vedere l'argomento [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) .
+
+    > [!WARNING]
+    > Expand all ha un effetto speciale anche negli ActivityDesigner **Switch** e **TryCatch** . Quando si fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Se si fa clic su **Ripristina** o **Comprimi tutto** , le finestre di progettazione vengono restituite allo stato predefinito, da cui è possibile fare clic su un singolo case/blocco per visualizzarne il contenuto.

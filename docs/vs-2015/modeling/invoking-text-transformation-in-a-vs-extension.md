@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd491ea0a17bcc0a4fccc0ade205736daae552d5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a87f84a945d9d79f6d481f7bcc9e656f7ec7bcbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871867"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646143"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Richiamo della trasformazione del testo in un'estensione VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,8 +140,8 @@ Sample text.
  È possibile passare i valori da un modello di testo tramite una classe di parametri derivata da <xref:System.MarshalByRefObject>.
 
 ## <a name="related-topics"></a>Argomenti correlati
- Per generare testo da un modello di testo pre-elaborato: Chiamare il metodo `TransformText()` della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Per generare testo da un modello di testo pre-elaborato: chiamare il metodo `TransformText()` della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Per generare testo all'esterno di un'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]: Definire un host personalizzato. Per altre informazioni, vedere [elaborazione di modelli di testo tramite un Host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
+ Per generare testo al di fuori di un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]: definire un host personalizzato. Per ulteriori informazioni, vedere [elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento: Chiamare il metodo [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) di [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+ Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento, chiamare il metodo [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) di [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
-ms.translationtype: HT
+ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250648"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647748"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
 
@@ -42,7 +42,7 @@ ms.locfileid: "68250648"
 
 |**Type**|**Membri che può contenere**|
 |--------------| - |
-|Classe|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), distruttore (metodo), costante|
+|Class|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), distruttore (metodo), costante|
 |Enum|membro|
 |Interfaccia|metodo, proprietà, evento (per C# e Visual Basic)|
 |Classe astratta|metodo, proprietà (per C# e Visual Basic), campo, evento (per C# e Visual Basic), costruttore (metodo), distruttore (metodo), costante|
@@ -58,11 +58,11 @@ ms.locfileid: "68250648"
 |Attività|Contenuto di supporto|
 |----------| - |
 |**Introduzione:** prima di creare e configurare membri di tipo, è necessario aprire la finestra **Dettagli classe**.|- [Aprire la finestra Dettagli classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Note sull'uso di Dettagli classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Visualizzare le informazioni di sola lettura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Creare e modificare i membri dei tipi:** è possibile creare nuovi membri, modificare membri esistenti e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creare membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Creare e modificare membri di tipi:**  è possibile creare nuovi membri, modificare i membri e aggiungere parametri a un metodo tramite la finestra **Dettagli classe**.|- [Creare membri](creating-and-configuring-type-members.md#create-members)<br />- [Modificare i membri dei tipi](creating-and-configuring-type-members.md#modify-type-members)<br />- [Aggiungere parametri a metodi](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Aprire la finestra Dettagli classe
 
-Per impostazione predefinita, la finestra **Dettagli classe** viene visualizzata automaticamente quando si apre un nuovo diagramma classi. Vedere [How to: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md). È anche possibile aprire la finestra **Dettagli classe** nei modi seguenti:
+Per impostazione predefinita, la finestra **Dettagli classe** viene visualizzata automaticamente quando si apre un nuovo diagramma classi. Vedere [Procedura: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md). È anche possibile aprire la finestra **Dettagli classe** nei modi seguenti:
 
 - Fare clic con il pulsante destro del mouse su qualsiasi classe nel diagramma per visualizzare un menu di scelta rapida e quindi scegliere **Dettagli classe**.
 
@@ -186,7 +186,7 @@ Usare la finestra **Dettagli classe** per aggiungere parametri ai metodi. I para
 
 Le righe dei parametri contengono i seguenti elementi:
 
-- **Name**
+- **Nome**
 
      La colonna **Nome** di una riga di parametri visualizza il nome del parametro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per cambiare il nome di qualsiasi parametro con autorizzazioni di lettura-scrittura.
 
@@ -208,7 +208,7 @@ Le righe dei parametri contengono i seguenti elementi:
 
      Nell'ultima riga di parametri di un membro la cella **Nome** contiene la stringa **<aggiungi parametro\>** . Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-Nella finestra **Proprietà** vengono visualizzate le stesse proprietà di parametro della finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
+Nella finestra **Proprietà** vengono visualizzate le stesse proprietà dei parametri riportate nella finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
 
 > [!NOTE]
 > Per aggiungere un parametro a un delegato, vedere [Creare membri](creating-and-configuring-type-members.md#create-members).

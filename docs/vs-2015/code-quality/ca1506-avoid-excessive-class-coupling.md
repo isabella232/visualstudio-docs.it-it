@@ -1,5 +1,5 @@
 ---
-title: "CA1506: Evitare l'accoppiamento di classe eccessivo | Microsoft Docs"
+title: 'CA1506: evitare un accoppiamento di classe eccessiva | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1506
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1c5a5e070892f7efc096b0f8e24952bb9d139969
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e85ac61e404ac9bc1afb9459716c2395233c5080
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189294"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607399"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitare un numero eccessivo di accoppiamenti tra classi
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitare un numero eccessivo di accoppiamenti di classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|Category|Microsoft.Maintainability|
+|Category|Microsoft. gestibilità|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un tipo o metodo è associata a molti altri tipi.
+ Un tipo o un metodo è abbinato a molti altri tipi.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo.
 
- Tipi e metodi che hanno un livello elevato di accoppiamenti di classi possono essere difficili da gestire. È buona norma disporre di tipi e metodi che mostrano uno stile accoppiamento ridotto e un'elevata coesione.
+ I tipi e i metodi con un elevato grado di accoppiamento della classe possono essere difficili da gestire. È consigliabile disporre di tipi e metodi che presentano un accoppiamento basso e una coesione elevata.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere questa violazione, provare a riprogettare il tipo o metodo in modo da ridurre il numero di tipi a cui è associato.
+ Per correggere la violazione, provare a riprogettare il tipo o il metodo per ridurre il numero di tipi a cui è associato.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- Escludere questo avviso quando il tipo o metodo è considerato accettabile, nonostante il numero elevato di dipendenze da altri tipi.
+ Escludere questo avviso quando il tipo o il metodo è ancora considerato gestibile nonostante il numero elevato di dipendenze da altri tipi.
 
 ## <a name="see-also"></a>Vedere anche
- [Avvisi di manutenibilità](../code-quality/maintainability-warnings.md) [misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [Avvisi di gestibilità](../code-quality/maintainability-warnings.md) [per la misurazione della complessità e della gestibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

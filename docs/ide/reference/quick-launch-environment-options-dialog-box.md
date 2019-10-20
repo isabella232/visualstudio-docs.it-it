@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605900"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655673"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 
@@ -30,11 +30,11 @@ ms.locfileid: "68605900"
 
 ## <a name="category-list"></a>Elenco di categorie
 
-I risultati delle ricerche eseguite in Avvio veloce vengono visualizzati in quattro categorie: **Usati di recente**, **Menu**, **Opzioni** e **Documenti aperti** con un'indicazione del numero di elementi nella categoria. Per scorrere i risultati della ricerca per categoria, premere **CTRL**+**Q** per mostrare tutti i risultati della categoria successiva. Dopo la visualizzazione dell'ultima categoria, premendo **CTRL**+**Q** vengono visualizzati alcuni risultati di ogni categoria. Premere **CTRL**+**MAIUSC**+**Q** per spostarsi tra le categorie in ordine inverso. Per visualizzare tutti i risultati della ricerca in una categoria, scegliere il nome della categoria.
+I risultati delle ricerche effettuate in Avvio veloce vengono visualizzati in quattro categorie: **Usati di recente**, **Menu**, **Opzioni** e **Documenti aperti** con un'indicazione del numero di elementi in ogni categoria. Per scorrere i risultati della ricerca per categoria, premere **CTRL**+**Q** per mostrare tutti i risultati della categoria successiva. Dopo la visualizzazione dell'ultima categoria, premendo **CTRL**+**Q** vengono visualizzati alcuni risultati di ogni categoria. Premere **CTRL**+**MAIUSC**+**Q** per spostarsi tra le categorie in ordine inverso. Per visualizzare tutti i risultati della ricerca in una categoria, scegliere il nome della categoria.
 
 È possibile usare i metodi rapidi seguenti per limitare la ricerca a categorie specifiche.
 
-|Category|Collegamento|Descrizione metodo rapido|
+|Category|Metodo rapido|Descrizione metodo rapido|
 |--------------|--------------| - |
 |Usati di recente|@mru<br /><br /> Ad esempio, `@mru font`.|Visualizza fino a cinque elementi **Usati di recente**.|
 |Menu|@menu<br /><br /> Ad esempio, `@menu project`.|Limita la ricerca alle voci di menu.|

@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 738bb1bcf14d5b3459f325fe13eb3c4b0119e562
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448960"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649469"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 

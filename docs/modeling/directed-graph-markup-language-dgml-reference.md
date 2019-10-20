@@ -2,28 +2,28 @@
 title: Riferimento di Directed Graph Markup Language (DGML)
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b473dc706cd7183835c5d84091fb53e45337c013
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6d29717c57d37daf200a859fb12f88c1108520b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653860"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Riferimento di Directed Graph Markup Language (DGML)
 
 Directed Graph Markup Language (DGML) descrive le informazioni usate per la visualizzazione e per eseguire l'analisi di complessità, ed è il formato usato per rendere persistenti le mappe codice in Visual Studio. Usa semplice codice XML per descrivere grafici diretti ciclici e aciclici. Un grafico diretto è un set di nodi connessi da collegamenti o bordi. I nodi e i collegamenti possono essere utilizzati per rappresentare strutture di rete, ad esempio elementi in un progetto software.
 
-Si noti che alcune versioni di Visual Studio supportano solo un subset delle funzionalità DGML; vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Si noti che alcune versioni di Visual Studio supportano solo un subset di funzionalità DGML, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
 > Quando si modifica un file con estensione dgml, IntelliSense consente di identificare gli attributi disponibili per ogni elemento e i relativi valori. Per specificare il colore in un attributo, utilizzare nomi dei colori comuni, come "Blue", o valori ARGB esadecimali, come "#ffa0b1c3." In DGML viene utilizzato un piccolo subset di formati di definizione dei colori WPF (Windows Presentation Foundation). Per altre informazioni, vedere [classe Colors](http://go.microsoft.com/fwlink/?LinkId=182345).
 
-## <a name="DGML"></a> Sintassi DGML
+## <a name="DGML"></a>Sintassi DGML
 
 Nella tabella seguente sono descritti i tipi di elementi usati in DGML:
 
@@ -37,11 +37,11 @@ Nella tabella seguente sono descritti i tipi di elementi usati in DGML:
 
    `BackgroundImage` - Percorso di un file di immagine da usare come sfondo della mappa.
 
-   `GraphDirection`- Quando la mappa viene impostata sul layout struttura ad albero (`Sugiyama`), i nodi vengono disposti in modo che la maggior parte dei collegamenti vada nella direzione specificata: `TopToBottom`, `BottomToTop`, `LeftToRight` o `RightToLeft`. Visualizzare [modificare il layout della mappa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection`- Quando la mappa viene impostata sul layout struttura ad albero (`Sugiyama`), i nodi vengono disposti in modo che la maggior parte dei collegamenti vada nella direzione specificata: `TopToBottom`, `BottomToTop`, `LeftToRight` o `RightToLeft`. Vedere [modificare il layout della mappa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `Layout` - Impostare la mappa su uno dei layout seguenti: `None`, `Sugiyama` (layout struttura ad albero), `ForceDirected` (raggruppamenti veloci) o `DependencyMatrix`. Visualizzare [modificare il layout della mappa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `Layout` - Impostare la mappa su uno dei layout seguenti: `None`, `Sugiyama` (layout struttura ad albero), `ForceDirected` (raggruppamenti veloci) o `DependencyMatrix`. Vedere [modificare il layout della mappa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `NeighborhoodDistance`- Quando la mappa viene impostata sul layout struttura ad albero o raggruppamenti veloci, vengono visualizzati solo i nodi la cui distanza dai nodi selezionati corrisponde a un numero di collegamenti specificato (1-7). Visualizzare [modificare il layout della mappa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `NeighborhoodDistance`- Quando la mappa viene impostata sul layout struttura ad albero o raggruppamenti veloci, vengono visualizzati solo i nodi la cui distanza dai nodi selezionati corrisponde a un numero di collegamenti specificato (1-7). Vedere [modificare il layout della mappa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    Esempio:
 
@@ -94,19 +94,19 @@ Nella tabella seguente sono descritti i tipi di elementi usati in DGML:
 
    Nell'elenco seguente vengono descritti alcuni degli attributi facoltativi che è possibile includere:
 
-   `Label` -Il nome visualizzato del nodo.
+   `Label`: il nome visualizzato del nodo.
 
-   Attributi di stile. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Attributi di stile. Vedere [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` - Nome di una categoria che identifica gli elementi che condividono questo attributo. Per altre informazioni, vedere l'elemento `<Category/>`.
 
    `Property`- Nome di una proprietà che identifica gli elementi che hanno lo stesso valore della proprietà. Per altre informazioni, vedere l'elemento `<Property/>`.
 
-   `Group`- Se il nodo contiene altri nodi, impostare questo attributo su `Expanded` o su `Collapsed`, per visualizzare o nascondere il relativo contenuto. Deve essere presente un elemento `<Link/>` che include l'attributo `Category="Contains"` e specifica il nodo padre come nodo di origine e il nodo figlio come nodo di destinazione. Visualizzare [raggruppare gli elementi di codice](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
+   `Group`- Se il nodo contiene altri nodi, impostare questo attributo su `Expanded` o su `Collapsed`, per visualizzare o nascondere il relativo contenuto. Deve essere presente un elemento `<Link/>` che include l'attributo `Category="Contains"` e specifica il nodo padre come nodo di origine e il nodo figlio come nodo di destinazione. Vedere [elementi di codice del gruppo](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` - Impostare questo attributo su `Visible`, `Hidden` o `Collapsed`. Vengono usati `System.Windows.Visibility`. Visualizzare [nascondere o mostrare nodi e collegamenti](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility` - Impostare questo attributo su `Visible`, `Hidden` o `Collapsed`. Vengono usati `System.Windows.Visibility`. Vedere [nascondere o visualizzare nodi e collegamenti](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
-   `Reference` - Impostare questo attributo per collegare un nodo a un documento o a un URL. Visualizzare [collegare documenti o URL a elementi di codice e collegamenti](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
+   `Reference` - Impostare questo attributo per collegare un nodo a un documento o a un URL. Vedere [collegare documenti o URL a elementi di codice e collegamenti](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
    Esempio:
 
@@ -161,7 +161,7 @@ Nella tabella seguente sono descritti i tipi di elementi usati in DGML:
 
    `Label` - Nome visualizzato del collegamento
 
-   Attributi di stile. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Attributi di stile. Vedere [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category` - Nome di una categoria che identifica gli elementi che condividono questo attributo. Per altre informazioni, vedere l'elemento `<Category/>`.
 
@@ -216,9 +216,9 @@ Nella tabella seguente sono descritti i tipi di elementi usati in DGML:
 
    `BasedOn` - Categoria padre da cui eredita l'oggetto `<Category/>` dell'elemento corrente.
 
-   Nell'esempio per questo elemento la categoria `FailedTest` eredita l'attributo `Stroke` dalla categoria `PassedTest`. Vedere la sezione "per creare categorie gerarchiche" in [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Nell'esempio per questo elemento la categoria `FailedTest` eredita l'attributo `Stroke` dalla categoria `PassedTest`. Vedere "per creare categorie gerarchiche" in [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Le categorie forniscono inoltre il comportamento di base dei modelli che controlla l'aspetto di nodi e collegamenti quando vengono visualizzati in una mappa. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Le categorie forniscono inoltre il comportamento di base dei modelli che controlla l'aspetto di nodi e collegamenti quando vengono visualizzati in una mappa. Vedere [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Esempio:
 
@@ -269,9 +269,9 @@ Nella tabella seguente sono descritti i tipi di elementi usati in DGML:
 
   - `DataType` - Tipo di dati archiviati dalla proprietà
 
-    Se si desidera che la proprietà venga visualizzata nel **delle proprietà** finestra, usare il `Label` proprietà per specificare nome visualizzato della proprietà.
+    Se si desidera che la proprietà venga visualizzata nella finestra **Proprietà** , utilizzare la proprietà `Label` per specificare il nome visualizzato della proprietà.
 
-    Visualizzare [assegnare categorie a elementi di codice e collegamenti](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
+    Vedere [assegnare categorie a elementi di codice e collegamenti](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
     Esempio:
 
@@ -300,7 +300,7 @@ Nella tabella seguente sono descritti i tipi di elementi usati in DGML:
   </DirectedGraph>
   ```
 
-### <a name="AddAlias"></a> Alias per i percorsi di uso comune
+### <a name="AddAlias"></a>Alias per i percorsi di uso comune
 
 Sostituendo i percorsi d'uso comune con alias è possibile ridurre le dimensioni del file con estensione dgml e il tempo necessario per caricare o salvare il file. Per creare un alias, aggiungere una sezione `<Paths></Paths>` alla fine del file con estensione dgml. In questa sezione aggiungere un elemento `<Path/>` per definire un alias per il percorso:
 
@@ -310,7 +310,7 @@ Sostituendo i percorsi d'uso comune con alias è possibile ridurre le dimensioni
 </Paths>
 ```
 
-Per fare riferimento l'alias da un elemento nel file con estensione dgml, racchiudere il `Id` del \<Path / > elemento con un segno di dollaro ($) e parentesi (()):
+Per fare riferimento all'alias da un elemento nel file con estensione dgml, racchiudere il `Id` dell'elemento \<Path/> con un segno di dollaro ($) e le parentesi (()):
 
 ```xml
 <Nodes>

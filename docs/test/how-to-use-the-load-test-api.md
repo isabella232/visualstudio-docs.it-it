@@ -7,15 +7,15 @@ helpviewer_keywords:
 - plug-ins, load test
 - APIs, load tests
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 571abf14b1e17d85e21667c0ef0dbc3894b3ae76
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821496"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653312"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Procedura: Usare l'API del test di carico
 
@@ -26,7 +26,7 @@ Visual Studio supporta plug-in di test di carico che consentono di controllare o
 > [!TIP]
 > Il visualizzatore oggetti consente di esaminare lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Gli editor Visual C# e Visual Basic forniscono il supporto IntelliSense per la codifica delle classi nello spazio dei nomi.
 
-È anche possibile creare plug-in per i test web. Per altre informazioni, vedere [Procedura: Creare un plug-in di test delle prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md) e [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md).
+È anche possibile creare plug-in per i test web. Per altre informazioni, vedere [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md) e [Procedura: Creare un plug-in a livello di richiesta](../test/how-to-create-a-request-level-plug-in.md).
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Per usare lo spazio dei nomi LoadTesting
 
@@ -57,11 +57,11 @@ Visual Studio supporta plug-in di test di carico che consentono di controllare o
 
 9. Eseguire il test di carico.
 
-     Per l'implementazione di <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
+     Per un'implementazione di <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Procedura: Usare l'API del test prestazioni Web](../test/how-to-use-the-web-performance-test-api.md)
+- [Procedura: Usare l'API del test delle prestazioni Web](../test/how-to-use-the-web-performance-test-api.md)
 - [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md)

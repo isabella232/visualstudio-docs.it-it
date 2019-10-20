@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 5a6491a6b9ac9312befbf0c8c6c3fb0f293885ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926652"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659872"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
 
@@ -142,7 +142,7 @@ Per accedere agli strumenti e ai modelli dei test codificati dell'interfaccia ut
 
 Le sezioni rimanenti di questo argomento offrono informazioni più dettagliate sui passaggi di questa procedura.
 
-Per un esempio più dettagliato, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
+Per un esempio più dettagliato, vedere [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
 
 ## <a name="start-and-stop-the-application-under-test"></a>Avviare e arrestare l'applicazione sottoposta a test
 
@@ -289,7 +289,7 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
   - Dopo aver creato un test codificato dell'interfaccia utente, è possibile modificarlo in modo che sia basato sui dati. Per altre informazioni, vedere [Creare un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md).
 
-  - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata una finestra, che venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente impostato in modo da attendere che un controllo venga abilitato tramite il metodo WaitForControlEnabled, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata una finestra, che venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente che attende che un controllo venga abilitato usando il metodo WaitForControlEnabled, vedere [procedura dettagliata: creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
   - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere [Uso dei controlli HTML5 nei test codificati dell'interfaccia utente](../test/using-html5-controls-in-coded-ui-tests.md).
 
@@ -435,7 +435,7 @@ myWinCheckBox.Checked = true;
 
 ## <a name="whats-next"></a>Argomenti successivi
 
-**Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:** come descritto in precedenza in questo argomento, è possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente da Microsoft Test Manager o tramite Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
+**Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:** È possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio, come descritto in precedenza in questo argomento. Inoltre, è possibile eseguire test automatizzati dell'interfaccia utente da Microsoft Test Manager o tramite Azure Pipelines. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
 
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
 
@@ -443,7 +443,7 @@ myWinCheckBox.Checked = true;
 
 - [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**Aggiunta del supporto per controlli personalizzati:**  il framework dei test codificati dell'interfaccia utente non supporta tutte le interfacce utente e potrebbe non supportare l'interfaccia utente da testare. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente per Microsoft Excel. È tuttavia possibile creare un'estensione al framework dei test codificati dell'interfaccia utente che supporterà un controllo personalizzato.
+**Aggiunta del supporto per controlli personalizzati:**  Il Framework dei test codificati dell'interfaccia utente non supporta ogni possibile interfaccia utente e potrebbe non supportare l'interfaccia utente che si desidera testare. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente per Microsoft Excel. È tuttavia possibile creare un'estensione al framework dei test codificati dell'interfaccia utente che supporterà un controllo personalizzato.
 
 - [Abilitare test codificati dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md)
 
@@ -456,7 +456,7 @@ I test codificati dell'interfaccia utente vengono spesso usati per automatizzare
 - [Registrare e riprodurre test manuali](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Procedura dettagliata: creare, modificare e gestire un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Creare un test codificato dell'interfaccia utente per testare un'app UWP](test-uwp-app-with-coded-ui-test.md)
 - [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)
 - [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)

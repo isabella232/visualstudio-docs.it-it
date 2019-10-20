@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.AddExistingItem command
 - Add Existing Item command
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d91e84a817b7b68f56c053d11d69facf753c6efc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 35dead5c71c1309cf01426541b7212eadad83d9e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919377"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658832"
 ---
 # <a name="add-existing-item-command"></a>Comando Aggiungi elemento esistente
 Aggiunge un file esistente alla soluzione corrente e lo apre.
@@ -29,13 +29,13 @@ Aggiunge un file esistente alla soluzione corrente e lo apre.
 File.AddExistingItem filename [/e:editorname]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `filename`\
 Obbligatorio. Percorso completo e nome del file con estensione dell'elemento da aggiungere alla soluzione corrente. Se il percorso o il nome del file contiene spazi, racchiudere l'intero percorso tra virgolette.
 
 ## <a name="switches"></a>Opzioni
 /e: `editorname`\
-facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+Parametro facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
 La sintassi dell'argomento `editorname` usa i nomi degli editor così come visualizzati nella **finestra di dialogo Apri con**, racchiusi tra virgolette. Ad esempio, per aprire un foglio di stile nell'editor del codice sorgente, per l'argomento /e:`editorname` è necessario immettere quanto segue.
 
@@ -43,7 +43,7 @@ La sintassi dell'argomento `editorname` usa i nomi degli editor così come visua
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 
 ## <a name="example"></a>Esempio
@@ -58,4 +58,4 @@ In questo esempio viene aggiunto il file Form1.frm alla soluzione corrente.
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

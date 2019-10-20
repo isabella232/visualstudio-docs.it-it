@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 35
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1c8f306315ad236843b6fcd5551d9aed13c26a92
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 71f18fbbf9f2d5c587c2cd0961c6625467f4f298
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871788"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652459"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Elaborazione di modelli di testo tramite un host personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,16 +46,16 @@ string output = engine.ProcessTemplate(templateString, host);
 
  L'applicazione deve trovare e fornire il modello e deve gestire l'output.
 
- Nel parametro è necessario fornire una classe che implementi [ITextTemplatingEngineHost.](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) `host` Questa viene richiamata dal motore.
+ Nel parametro `host` è necessario fornire una classe che implementi [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Questa viene richiamata dal motore.
 
  L'host deve essere in grado di registrare errori, risolvere riferimenti agli assembly e ai file di inclusione, fornire un dominio dell'applicazione nel quale il modello possa essere eseguito e possa chiamare il processore adatto per ciascuna direttiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>è definito in **Microsoft. VisualStudio. TextTemplating.\*. 0. dll**e [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) sono definiti in **Microsoft. VisualStudio. TextTemplating. Interfaces.\* 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> è definito in **Microsoft. VisualStudio. TextTemplating. \*.0. dll**e [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) è definito in **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0. dll**.
 
-## <a name="in-this-section"></a>In questa sezione
- [Procedura dettagliata: La creazione di un host](../modeling/walkthrough-creating-a-custom-text-template-host.md) del modello di testo personalizzato Mostra come creare un host del modello di testo personalizzato che rende disponibile la funzionalità del modello di testo all'esterno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]di.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Procedura dettagliata: creazione di un host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md) Viene illustrato come creare un host del modello di testo personalizzato che rende disponibili le funzionalità del modello di testo all'esterno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Sezioni correlate

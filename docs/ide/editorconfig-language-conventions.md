@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186513"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652804"
 ---
 # <a name="language-conventions"></a>Convenzioni del linguaggio
 
@@ -37,12 +37,12 @@ Le regole per le convenzioni del linguaggio hanno il formato generale seguente:
 
 `option_name = value:severity`
 
-Per ogni convenzione del linguaggio, si specifica un valore che definisce se o quando preferire lo stile. Molte regole accettano un valore `true` (preferire questo stile) o `false` (non preferisce questo stile). Altre regole accettano valori come `when_on_single_line` o. `never` La seconda parte della regola specifica la [gravità](#severity-levels).
+Per ogni convenzione del linguaggio, si specifica un valore che definisce se o quando preferire lo stile. Molte regole accettano un valore di `true` (preferire questo stile) o `false` (non preferire questo stile). Altre regole accettano valori quali `when_on_single_line` o `never`. La seconda parte della regola specifica la [gravità](#severity-levels).
 
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Poiché le convenzioni del linguaggio vengono applicate dagli analizzatori, è anche possibile impostarne la gravità usando la sintassi di configurazione predefinita per gli analizzatori. La sintassi assume il formato `dotnet_diagnostic.<rule ID>.severity = <severity>`, ad `dotnet_diagnostic.IDE0040.severity = silent`esempio. Per altre informazioni, vedere [impostare la gravità della regola in un file EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file).
+> Poiché le convenzioni del linguaggio vengono applicate dagli analizzatori, è anche possibile impostarne la gravità usando la sintassi di configurazione predefinita per gli analizzatori. La sintassi assume il formato `dotnet_diagnostic.<rule ID>.severity = <severity>`, ad esempio `dotnet_diagnostic.IDE0040.severity = silent`. Per altre informazioni, vedere [impostare la gravità della regola in un file EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file).
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Gravità | Effetto
 `error` | Quando questa regola di stile viene violata, viene visualizzato un errore del compilatore.
 `warning` | Quando questa regola di stile viene violata, viene visualizzato un avviso del compilatore.
 `suggestion` | Quando questa regola di stile viene violata, viene visualizzato un suggerimento all'utente. I suggerimenti sono indicati da tre punti grigi sotto i primi due caratteri.
-`silent` | Quando questa regola viene violata non viene visualizzato alcun avviso all'utente. Le funzionalità di generazione del codice generano tuttavia il codice in questo stile. Le regole `silent` con gravità partecipano alla pulizia e vengono visualizzate nel menu **azioni rapide e refactoring** .
+`silent` | Quando questa regola viene violata non viene visualizzato alcun avviso all'utente. Le funzionalità di generazione del codice generano tuttavia il codice in questo stile. Le regole con gravità `silent` partecipano alla pulizia e vengono visualizzate nel menu **azioni rapide e refactoring** .
 `none` | Quando questa regola viene violata non viene visualizzato alcun avviso all'utente. Le funzionalità di generazione del codice generano tuttavia il codice in questo stile. Le regole con gravità `none` non vengono mai visualizzate nel menu **Azioni rapide e refactoring**. Nella maggior parte dei casi sono considerate "disabilitate" o "ignorate".
 
 ::: moniker range=">=vs-2019"
@@ -66,7 +66,7 @@ A partire da Visual Studio 2019 versione 16,3, è possibile configurare le regol
 
 Per modificare la convenzione di stile del codice:
 
-1. Passare il puntatore del mouse su zigzag nell'editor, quindi aprire il menu lampadina visualizzato. Scegliere **Configura o Elimina problemi** > **Configura \<ID regola > stile codice**.
+1. Passare il puntatore del mouse su zigzag nell'editor, quindi aprire il menu lampadina visualizzato. Scegliere **Configura o non visualizzare problemi**  > **configurare \<rule ID > lo stile del codice**.
 
    ![Configurare lo stile di codice dal menu a bulbo chiaro in Visual Studio](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Per modificare la convenzione di stile del codice:
 
    Visual Studio aggiunge o modifica l'impostazione di configurazione nel file EditorConfig, come illustrato nella casella Anteprima.
 
-Per modificare la gravità della violazione dello stile del codice, seguire la stessa procedura, ma **scegliere \<Configura ID regola > gravità** anziché **Configura \<ID regola > stile codice**. Per altre informazioni, vedere [configurare automaticamente la gravità della regola](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Per modificare il livello di gravità della violazione dello stile del codice, seguire la stessa procedura, ma scegliere **Configura id \<rule > gravità** anziché **configura ID \<rule > stile di codice**. Per altre informazioni, vedere [configurare automaticamente la gravità della regola](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
 
 ::: moniker-end
 

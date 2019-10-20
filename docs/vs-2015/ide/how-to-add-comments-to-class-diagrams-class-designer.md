@@ -12,32 +12,30 @@ helpviewer_keywords:
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe77e8cb0f21789c7311d9c337b3b973c4dd44f9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584439"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645509"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Procedura: Aggiungere commenti a diagrammi classi (Progettazione classi)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Procedura: aggiungere commenti a diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare le forme Commenti per annotare i diagrammi classi. Una forma Commenti ha una sola proprietà, **Testo**, in cui è possibile digitare il testo. Le forme Commenti esistono solo sulla superficie del diagramma e non nel codice.  
-  
- Un commento risiede nella visualizzazione del diagramma classi in **Progettazione classi**. Se si apre un secondo diagramma classi nello stesso progetto, i commenti creati nella prima visualizzazione non sono visibili. Se si elimina un diagramma, vengono eliminati anche tutti i commenti in esso contenuti.  
-  
- È possibile ridimensionare una forma Commenti, ma non è possibile modificare altri elementi dell'aspetto della forma, come colore di sfondo, tipo di carattere o dimensioni del carattere.  
-  
-### <a name="to-add-a-comment"></a>Per aggiungere un commento  
-  
-1. Trascinare un commento dalla **casella degli strumenti di Progettazione classi** nel diagramma classi.  
-  
-2. Fare clic sulla nuova forma Commenti nel diagramma e digitare il testo desiderato.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Working with Class Diagrams (Class Designer)](../ide/working-with-class-diagrams-class-designer.md)  (Uso di diagrammi classi (Progettazione classi))  
- [Working with Class Diagrams (Class Designer)](../ide/working-with-class-diagrams-class-designer.md)  (Uso di diagrammi classi (Progettazione classi))  
- [Procedura: Personalizzare diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)
+È possibile usare le forme Commenti per annotare i diagrammi classi. Una forma Commenti ha una sola proprietà, **Testo**, in cui è possibile digitare il testo. Le forme Commenti esistono solo sulla superficie del diagramma e non nel codice.
+
+ Un commento risiede nella visualizzazione del diagramma classi in **Progettazione classi**. Se si apre un secondo diagramma classi nello stesso progetto, i commenti creati nella prima visualizzazione non sono visibili. Se si elimina un diagramma, vengono eliminati anche tutti i commenti in esso contenuti.
+
+ È possibile ridimensionare una forma Commenti, ma non è possibile modificare altri elementi dell'aspetto della forma, come colore di sfondo, tipo di carattere o dimensioni del carattere.
+
+### <a name="to-add-a-comment"></a>Per aggiungere un commento
+
+1. Trascinare un commento dalla **casella degli strumenti di Progettazione classi** nel diagramma classi.
+
+2. Fare clic sulla nuova forma Commenti nel diagramma e digitare il testo desiderato.
+
+## <a name="see-also"></a>Vedere anche
+ [Uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md) [uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md) [procedura: personalizzare i diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)

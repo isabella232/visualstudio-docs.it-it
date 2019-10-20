@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975047"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647640"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
 
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-È anche possibile trascinare solo la classe B sul diagramma classi, fare clic col pulsante destro del mouse sulla forma classe relativa a B e quindi fare clic su **Mostra classi base** per visualizzare la relativa classe di base, Un 
+È anche possibile trascinare solo la classe B sul diagramma classi, fare clic col pulsante destro del mouse sulla forma classe relativa a B e quindi fare clic su **Mostra classi base** per visualizzare la relativa classe di base, ovvero A.
 
 ## <a name="multiple-inheritance"></a>Ereditarietà multipla
 
@@ -149,7 +149,7 @@ La tabella seguente illustra alcuni esempi di ereditarietà nella specializzazio
 
 |Elemento del codice|Visualizzazione di Progettazione classi|
 |------------------| - |
-|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Classe modello<br /><br /> `B`<br /><br /> Classe<br /><br /> (punta alla classe A)<br /><br /> `C`<br /><br /> Classe<br /><br /> (punta alla classe A)|
+|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Classe modello<br /><br /> `B`<br /><br /> Class<br /><br /> (punta alla classe A)<br /><br /> `C`<br /><br /> Class<br /><br /> (punta alla classe A)|
 
 La tabella seguente illustra alcuni esempi di funzioni del modello di specializzazione parziale.
 
@@ -157,19 +157,19 @@ La tabella seguente illustra alcuni esempi di funzioni del modello di specializz
 |------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 overload)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Classe modello<br /><br /> `B<T2>`<br /><br /> Classe modello<br /><br /> (B è contenuto all'interno della classe A in **Tipi annidati**)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Classe<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Classe modello|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Classe modello|
 
 La tabella seguente illustra alcuni esempi di ereditarietà del modello.
 
 |Elemento del codice|Visualizzazione di Progettazione classi|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Classe<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Classe<br /><br /> (B è contenuto all'interno della classe C in **Tipi annidati**)<br /><br /> `C<T>`<br /><br /> Classe modello|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (B è contenuto all'interno della classe C in **Tipi annidati**)<br /><br /> `C<T>`<br /><br /> Classe modello|
 
 La tabella seguente illustra alcuni esempi di tipica connessione di classe specializzata.
 
 |Elemento del codice|Visualizzazione di Progettazione classi|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Classe<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Classe<br /><br /> `C<T>`<br /><br /> Classe modello<br /><br /> `D`<br /><br /> Classe<br /><br /> ->C\<float>|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Classe modello<br /><br /> `D`<br /><br /> Class<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
 ## <a name="see-also"></a>Vedere anche

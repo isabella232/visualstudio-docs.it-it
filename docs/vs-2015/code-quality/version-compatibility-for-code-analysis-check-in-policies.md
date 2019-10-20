@@ -1,5 +1,5 @@
 ---
-title: Compatibilità delle versioni di criteri di controllo dell'analisi del codice | Microsoft Docs
+title: Compatibilità tra le versioni per i criteri di archiviazione dell'analisi del codice | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,37 +9,37 @@ helpviewer_keywords:
 - check-in policies, version compatibility for code analysis
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a63ead03baffaa0ce8047220ff1ce8a33c88be8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 075981569cbee05e90afe17b3afc9558d7bbb270
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201199"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72609309"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Criteri di archiviazione relativi alla compatibilità delle versioni per l'analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se è necessario valutare e creare codice check-in Criteri di analisi usino versioni diverse di [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], è necessario conoscere le differenze nella procedura [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] e [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] valutare i criteri di controllo.  
-  
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilità delle versioni di valutazione di criteri di archiviazione  
-  
-- Quando i criteri di controllo dell'analisi del codice vengono valutati [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], eventuali regole presenti in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] ma non esistono nel [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] vengono ignorati.  
-  
-- Quando i criteri di controllo dell'analisi del codice vengono valutati [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], tutte le regole sono esclusive di [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] vengono ignorati.  
-  
-- Se i criteri di controllo dell'analisi codice specificano gli assembly di regole, [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] Ignora tutte le regole che vengono specificate dagli assembly che non riconosce.  
-  
-- Se i criteri di controllo dell'analisi codice specificano gli assembly di regole che [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] non riconosce, viene visualizzato un messaggio.  
-  
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilità delle versioni per la creazione di criteri di archiviazione  
-  
-- Se è stato creato un criterio di controllo dell'analisi codice usando il [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] versione di [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], non è possibile utilizzare il [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] versione di [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] per modificarlo. E inoltre [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] non è possibile valutare i criteri.  
-  
-- Se è stato creato un criterio di controllo dell'analisi codice usando [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] nel [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], è possibile usare [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] nelle [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] per modificarlo, quindi i criteri possa anche essere valutato [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]. Dopo aver modificato i criteri usando [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] nel [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], è non possibile modificare i criteri non sono più usando [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]. [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] può valutare i criteri senza problemi con i nomi sicuri non corrispondenti.  
-  
-- Per creare un criterio di controllo dell'analisi codice con impostazioni delle regole valide per entrambi [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] e [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], è necessario creare i criteri in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], apportare tutte le modifiche necessarie e salvare il criterio. Se le modifiche alle regole sono disponibili solo nel [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], modificare e salvare i criteri in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].  
-  
-     Dopo aver salvato i criteri in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], non è più è possibile modificare le impostazioni per le regole esistenti in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] solo.
+Se è necessario valutare e creare criteri di archiviazione dell'analisi del codice utilizzando versioni diverse di [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], è necessario comprendere le differenze tra [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] e [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] valutare i criteri di archiviazione.
+
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilità tra le versioni per la valutazione dei criteri di archiviazione
+
+- Quando i criteri di archiviazione dell'analisi del codice vengono valutati in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], tutte le regole esistenti in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] ma che non esistono in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] vengono ignorate.
+
+- Quando i criteri di archiviazione dell'analisi del codice vengono valutati in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], tutte le nuove regole esclusive per [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] verranno ignorate.
+
+- Se i criteri di archiviazione dell'analisi del codice specificano gli assembly delle regole, [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] ignora tutte le regole specificate dagli assembly non riconosciute.
+
+- Se i criteri di archiviazione dell'analisi del codice specificano gli assembly di regole che [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] non riconosce, viene visualizzato un messaggio.
+
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilità tra le versioni per la creazione di criteri di archiviazione
+
+- Se è stato creato un criterio di archiviazione dell'analisi del codice usando la versione [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] di [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], non è possibile usare la versione [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] di [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] per modificarla. Inoltre, [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] non è in grado di valutare i criteri.
+
+- Se è stato creato un criterio di archiviazione dell'analisi del codice utilizzando [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], è possibile utilizzare [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)] per modificarlo e il criterio può essere valutato anche da [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]. Dopo aver modificato il criterio utilizzando [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], non è più possibile modificare il criterio utilizzando [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]. [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] può valutare i criteri senza problemi con i nomi sicuri non corrispondenti.
+
+- Per creare criteri di archiviazione dell'analisi del codice con le impostazioni delle regole valide per [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] e [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], è necessario creare i criteri in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)], apportare tutte le modifiche necessarie e salvare il criterio. Se le modifiche alle regole esistono solo in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], è possibile modificare e salvare il criterio in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)].
+
+     Dopo aver salvato i criteri in [!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)], non è più possibile modificare le impostazioni per le regole presenti solo in [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)].

@@ -4,149 +4,149 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42cbc0ea5694e462faf6d3995bc68723a3f522e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386975"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605846"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
-Un linguaggio specifico di dominio (DSL) è definito dal relativo file di definizione DSL, insieme a qualsiasi codice programma personalizzato che è possibile scrivere. La maggior parte del codice del programma nella soluzione DSL viene generato da questo file.
+Un linguaggio specifico di dominio (DSL) viene definito dal file di definizione DSL, insieme a qualsiasi codice del programma personalizzato che è possibile scrivere. La maggior parte del codice programma nella soluzione DSL viene generata da questo file.
 
- Questo argomento illustra le funzionalità principali di definizione DSL.
+ In questo argomento vengono illustrate le funzionalità centrali della definizione DSL.
 
-## <a name="the-dsl-definition"></a>La definizione DSL
- Quando si apre `Dsl\DslDefinition.dsl`, finestra di Visual Studio è simile all'immagine seguente.
+## <a name="the-dsl-definition"></a>Definizione DSL
+ Quando si apre `Dsl\DslDefinition.dsl`, la finestra di Visual Studio è simile all'immagine seguente.
 
  ![Progettazione DSL](../modeling/media/dsl_designer.png)
 
- Vengono visualizzate le informazioni più importanti nella definizione DSL del diagramma di definizione DSL. Informazioni aggiuntive, che fa anche parte di Dsldefinition, viene visualizzate in Esplora DSL, che in genere viene visualizzato nel riquadro laterale del diagramma. Si lavora con il diagramma per le attività più frequenti e DSL Explorer per le personalizzazioni più avanzate.
+ Le informazioni più importanti nella definizione DSL vengono visualizzate nel diagramma di definizione DSL. Informazioni aggiuntive, che fanno parte anche di DslDefinition. DSL, vengono visualizzate in DSL Explorer, che in genere viene visualizzato sul lato del diagramma. Si lavora con il diagramma per le attività più frequenti e con DSL Explorer per le personalizzazioni più avanzate.
 
- Diagramma di definizione DSL vengono illustrate le classi di dominio che definiscono gli elementi del modello e le relazioni che definiscono i collegamenti tra elementi del modello. Indica anche le forme e connettori che consentono di visualizzare gli elementi del modello per l'utente.
+ Il diagramma di definizione DSL Mostra le classi di dominio che definiscono gli elementi del modello e le relazioni che definiscono i collegamenti tra gli elementi del modello. Vengono inoltre illustrate le forme e i connettori utilizzati per visualizzare gli elementi del modello all'utente.
 
  ![Progettazione DSL con corsia](../modeling/media/dsl_desinger.png)
 
- Quando si seleziona un elemento nella definizione DSL, nel diagramma o in Esplora DSL, informazioni su di esso viene visualizzate nella finestra Proprietà. Informazioni aggiuntive possono essere visualizzate nella finestra Dettagli DSL.
+ Quando si seleziona un elemento nella definizione DSL, nel diagramma o in Esplora DSL, le relative informazioni vengono visualizzate nel Finestra Proprietà. Nella finestra Dettagli DSL potrebbero essere visualizzate informazioni aggiuntive.
 
-### <a name="models-are-instances-of-dsls"></a>I modelli sono istanze dei linguaggi specifici di dominio
- Oggetto *modello* è un'istanza del linguaggio DSL creata da un utente. Un modello contiene elementi del modello, che sono istanze di classi di dominio che definiscono e i collegamenti tra gli elementi, che sono istanze delle relazioni di dominio che definiscono. Un modello può anche avere forme e connettori, che visualizza gli elementi di modello e i collegamenti in un diagramma. La definizione DSL include le classi forma, connettore classi e una classe del diagramma.
+### <a name="models-are-instances-of-dsls"></a>I modelli sono istanze di DSLs
+ Un *modello* è un'istanza del linguaggio DSL creato da un utente. Un modello contiene elementi del modello, ovvero istanze delle classi di dominio definite dall'utente e collegamenti tra gli elementi, ovvero istanze delle relazioni di dominio definite. Un modello può inoltre disporre di forme e connettori, che visualizzano gli elementi del modello e i collegamenti in un diagramma. La definizione DSL include le classi di forma, le classi del connettore e una classe per il diagramma.
 
- Una definizione DSL è noto anche come un *modello di dominio*. Un modello di dominio o di definizione DSL è la rappresentazione design-time del linguaggio specifico di dominio, mentre il modello è la creazione dell'istanza di runtime del linguaggio specifico di dominio.
+ Una definizione DSL è nota anche come *modello di dominio*. Una definizione DSL o un modello di dominio è la rappresentazione in fase di progettazione del linguaggio specifico di dominio, mentre il modello è l'istanza di runtime del linguaggio specifico di dominio.
 
-## <a name="domain-classes-define-model-elements"></a>Le classi di dominio definiscono gli elementi del modello
- Classi di dominio vengono utilizzate per creare i vari elementi del dominio e le relazioni di dominio sono i collegamenti tra gli elementi. Sono la rappresentazione design-time degli elementi e collegamenti a cui verranno creati dagli utenti del linguaggio specifico di progettazione quando si creano i propri modelli.
+## <a name="domain-classes-define-model-elements"></a>Classi di dominio che definiscono gli elementi del modello
+ Le classi di dominio vengono utilizzate per creare i vari elementi nel dominio e le relazioni di dominio sono i collegamenti tra gli elementi. Si tratta della rappresentazione in fase di progettazione degli elementi e dei collegamenti di cui verrà creata un'istanza dagli utenti del linguaggio specifico della progettazione quando creano i modelli.
 
- Questa illustrazione mostra un modello che è stato creato dall'utente di un catalogo musicale DSL. Gli album musicali sono rappresentati da caselle che contengono elenchi di brani. Alle creazioni degli artisti sono rappresentati da caselle con angoli arrotondati e sono connessi agli album a cui hanno contribuito.
+ Questa illustrazione mostra un modello creato dall'utente di un linguaggio DSL della raccolta musicale. Gli album musicali sono rappresentati da caselle contenenti elenchi di canzoni. Gli artisti sono rappresentati da caselle con angoli arrotondati e sono connessi agli album a cui hanno contribuito.
 
  ![Modello di istanza generato di DSL](../modeling/media/music_instance.png)
 
- La definizione DSL separa due aspetti. L'aspetto degli elementi del modello nel diagramma modello viene definito tramite le classi shape e connector. Le informazioni incluse nel modello sono definite tramite le classi di dominio e le relazioni di dominio.
+ La definizione DSL separa due aspetti. L'aspetto degli elementi del modello nel diagramma del modello viene definito usando le classi di forme e le classi del connettore. Le informazioni trasferite nel modello vengono definite utilizzando le classi di dominio e le relazioni di dominio.
 
- Nella figura seguente mostra le classi di dominio e le relazioni nella definizione DSL del catalogo musicale.
+ Nella figura seguente sono illustrate le classi di dominio e le relazioni nella definizione DSL della raccolta musicale.
 
  ![Relazioni di incorporamento e riferimento](../modeling/media/music_classes.png)
 
- L'illustrazione mostra quattro classi di dominio: Musica, Album, artisti e brano. Le classi di dominio definiscono le proprietà di dominio, ad esempio nome, titolo e così via. Nel modello di istanza, i valori di alcune di queste proprietà vengono visualizzati nel diagramma.
+ Nella figura sono illustrate quattro classi di dominio: musica, album, artista e brano. Le classi di dominio definiscono le proprietà del dominio, ad esempio il nome, il titolo e così via. Nel modello di istanza, i valori di alcune di queste proprietà vengono visualizzati nel diagramma.
 
- Tra le classi sono le relazioni di dominio: MusicHasAlbums MusicHasArtists, AlbumbHasSongs e Artistaapparsoneglialbum. Le relazioni dispongono di molteplicità, ad esempio 1..1, 0.. *. Ogni brano, ad esempio, deve essere correlato a esattamente un Album attraverso la relazione AlbumHasSongs. Ogni Album può avere un numero qualsiasi di brani.
+ Tra le classi sono incluse le relazioni di dominio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs e Artistaapparsoneglialbum. Le relazioni hanno molteplicità, ad esempio 1.. 1, 0.. *. Ogni brano, ad esempio, deve essere correlato esattamente a un album tramite la relazione AlbumHasSongs. Ogni album può avere un numero qualsiasi di canzoni.
 
-### <a name="rearranging-the-dsl-definition-diagram"></a>Ridisposizione il diagramma di definizione DSL
- Si noti che una classe di dominio può venire visualizzato diverse volte nel diagramma di definizione DSL, così come dell'Album in questa immagine. È sempre presente un'unica visualizzazione principale, e possono essere presenti alcuni *riferimento* viste.
+### <a name="rearranging-the-dsl-definition-diagram"></a>Ridisposizione del diagramma di definizione DSL
+ Si noti che una classe di dominio può apparire più volte nel diagramma di definizione DSL, come avviene in album in questa immagine. C'è sempre una visualizzazione principale e possono esserci alcune visualizzazioni di *riferimento* .
 
  Per ridisporre il diagramma di definizione DSL, è possibile:
 
-- Scambia principale e fare riferimento alle viste tramite il **Bring Tree Here** e **Dividi albero** comandi. Fare doppio clic su una classe di dominio singolo per visualizzarne i comandi seguenti.
+- Scambiare le visualizzazioni principali e di riferimento usando i comandi **Bring Tree here** e **Split Tree** . Fare clic con il pulsante destro del mouse su una singola classe di dominio per visualizzare questi comandi.
 
-- Riordinare le classi di dominio e le classi di forme premendo Ctrl + freccia su e Ctrl + freccia giù.
+- Riordinare le classi di dominio e le classi di forme premendo CTRL + freccia su e CTRL + freccia giù.
 
-- Comprimere o espandere le classi usando l'icona in alto a destra di ciascuna forma.
+- Comprime o espande le classi utilizzando l'icona in alto a destra di ogni forma.
 
-- Comprime le parti della struttura ad albero, fare clic sul segno meno (-) nella parte inferiore di una classe di dominio.
+- Comprime le parti dell'albero facendo clic sul segno meno (-) nella parte inferiore di una classe di dominio.
 
 ## <a name="inheritance"></a>Ereditarietà
- È possibile definire classi di dominio utilizzando l'ereditarietà. Per creare una derivazione di ereditarietà, fare clic sullo strumento di ereditarietà, sulla classe derivata e quindi scegliere la classe di base. Un elemento del modello ha tutte le proprietà definite in una propria classe di dominio, insieme a tutte le proprietà ereditate dalla classe di base. Eredita anche i ruoli nelle relazioni.
+ È possibile definire le classi di dominio usando l'ereditarietà. Per creare una derivazione di ereditarietà, fare clic sullo strumento ereditarietà, scegliere la classe derivata, quindi fare clic sulla classe di base. Un elemento del modello dispone di tutte le proprietà definite nella propria classe di dominio, insieme a tutte le proprietà ereditate dalla classe base. Eredita inoltre i ruoli nelle relazioni.
 
- Ereditarietà può essere usata anche tra le relazioni, forme e connettori. Ereditarietà deve mantenere nello stesso gruppo. Una forma non può ereditare da una classe di dominio.
+ L'ereditarietà può essere utilizzata anche tra relazioni, forme e connettori. L'ereditarietà deve rimanere nello stesso gruppo. Una forma non può ereditare da una classe di dominio.
 
 ## <a name="domain-relationships"></a>Relazioni di dominio
- È possibile collegare gli elementi del modello tramite relazioni. I collegamenti sono sempre binari; vengono forniti collegamenti esattamente due elementi. Tuttavia, qualsiasi elemento può avere molti collegamenti ad altri oggetti, e può anche essere più di un collegamento tra la stessa coppia di elementi.
+ Gli elementi del modello possono essere collegati da relazioni. I collegamenti sono sempre binari; collegano esattamente due elementi. Tuttavia, qualsiasi elemento può avere molti collegamenti ad altri oggetti e può anche essere presente più di un collegamento tra la stessa coppia di elementi.
 
- Come è possibile definire diverse classi di elementi, è possibile definire classi diverse di collegamenti. La classe di un collegamento viene chiamata un *relazione di dominio*. Una relazione di dominio specifica quali classi dell'elemento che possono connettersi le relative istanze. Viene chiamato ogni estremità di una relazione di una *ruolo*, e la relazione di dominio definisce i nomi per i due ruoli, nonché per la relazione stessa.
+ Così come è possibile definire classi diverse di elementi, è possibile definire classi di collegamenti diverse. La classe di un collegamento è denominata *relazione di dominio*. Una relazione di dominio specifica le classi di elementi a cui le istanze possono connettersi. Ogni estremità di una relazione viene chiamata *ruolo*e la relazione di dominio definisce i nomi dei due ruoli, nonché per la relazione stessa.
 
- Esistono due tipi di relazioni di dominio: incorporamento delle relazioni e le relazioni di riferimento. Nel diagramma di definizione DSL, le relazioni di incorporamento sono linee a tinta unita a ogni ruolo e le relazioni di riferimento sono linee tratteggiate.
+ Esistono due tipi di relazioni di dominio: incorporamento di relazioni e relazioni di riferimento. Nel diagramma di definizione DSL, le relazioni di incorporamento hanno linee continue a ogni ruolo e le relazioni di riferimento hanno linee tratteggiate.
 
-### <a name="embedding-relationships"></a>Le relazioni di incorporamento
- Ogni elemento in un modello, tranne la radice, è la destinazione di un collegamento di incorporamento. Pertanto, l'intero modello costituisce un singolo albero di incorporamento di collegamenti. Una relazione di incorporamento rappresenta contenuto o la proprietà. Due elementi del modello che sono correlati in questo modo sono noti anche come padre e figlio. L'elemento figlio viene definito da incorporare nell'elemento padre.
+### <a name="embedding-relationships"></a>Incorporamento di relazioni
+ Ogni elemento di un modello, ad eccezione della radice, è la destinazione di un collegamento di incorporamento. Pertanto, l'intero modello costituisce un singolo albero di collegamenti di incorporamento. Una relazione di incorporamento rappresenta il contenimento o la proprietà. Due elementi del modello correlati in questo modo sono noti anche come padre e figlio. Il figlio viene definito incorporato nell'elemento padre.
 
- Incorporamento di collegamenti non sono in genere visualizzati in modo esplicito come connettori in un diagramma. In alternativa, in genere sono rappresentate da contenimento. La radice del modello è rappresentata dal diagramma e gli elementi incorporati in essa vengono visualizzati come forme nel diagramma.
+ I collegamenti di incorporamento non vengono in genere visualizzati in modo esplicito come connettori in un diagramma. Sono invece rappresentati in genere da Containment. La radice del modello è rappresentata dal diagramma e gli elementi incorporati vengono visualizzati come forme nel diagramma.
 
- Nell'esempio, la classe radice musica ha una relazione di incorporamento MusicHasAlbums ad Album, dotato di un incorporamento AlbumHasSongs al brano. Canzoni vengono visualizzati come elementi in un elenco all'interno di ogni Album. Musica dispone anche di un incorporamento MusicHasArtists alla classe artista, le cui istanze vengono anche visualizzati come forme nel diagramma.
+ Nell'esempio, la classe radice Music dispone di una relazione di incorporamento MusicHasAlbums to album, che include un AlbumHasSongs di incorporamento a Song. I brani vengono visualizzati come elementi in un elenco all'interno di ogni album. Music dispone anche di un MusicHasArtists di incorporamento alla classe Artist, le cui istanze vengono visualizzate anche come forme nel diagramma.
 
- Per impostazione predefinita, gli elementi incorporati vengono eliminati automaticamente quando vengono eliminati i padri.
+ Per impostazione predefinita, gli elementi incorporati vengono eliminati automaticamente quando vengono eliminati gli elementi padre.
 
- Quando viene salvato un modello di file in formato XML, gli elementi incorporati sono annidati all'interno di elementi padre, a meno che non è stata personalizzata la serializzazione.
+ Quando un modello viene salvato in un file in formato XML, gli elementi incorporati sono annidati all'interno degli elementi padre, a meno che non sia stata personalizzata la serializzazione.
 
 > [!NOTE]
-> L'incorporamento è diverso dall'ereditarietà. Gli elementi figlio in una relazione di incorporamento non ereditano le proprietà dell'elemento padre. Incorporamento è un tipo di collegamento tra elementi del modello. Ereditarietà è una relazione tra classi e di non creare collegamenti tra elementi del modello.
+> L'incorporamento è diverso dall'ereditarietà. Gli elementi figlio in una relazione di incorporamento non ereditano le proprietà dell'elemento padre. Un incorporamento è un tipo di collegamento tra gli elementi del modello. L'ereditarietà è una relazione tra le classi e non crea collegamenti tra gli elementi del modello.
 
-### <a name="embedding-rules"></a>Regole di incorporamento
- Ogni elemento in un modello di istanza deve essere la destinazione di esattamente un collegamento di incorporamento, fatta eccezione per la radice del modello.
+### <a name="embedding-rules"></a>Incorporamento di regole
+ Ogni elemento in un modello di istanza deve essere la destinazione di un solo collegamento di incorporamento, ad eccezione della radice del modello.
 
- Pertanto, ogni classe di dominio non astratta, ad eccezione della classe radice, deve essere la destinazione di almeno una relazione di incorporamento, o deve ereditare un incorporamento da una classe base. Una classe può essere la destinazione di rappresentazioni distribuite due o più, ma gli elementi di modello di istanza possono avere un solo padre alla volta. La molteplicità di destinazione all'origine deve essere 0..1 1 o 1.
+ Pertanto, ogni classe di dominio non astratta, ad eccezione della classe radice, deve essere la destinazione di almeno una relazione di incorporamento o deve ereditare un incorporamento da una classe base. Una classe può essere la destinazione di due o più incorporamenti, ma gli elementi del modello di istanza possono avere un solo elemento padre alla volta. La molteplicità da target a source deve essere 0.. 1 o 1.. 1.
 
-### <a name="the-explorer-displays-the-embedding-tree"></a>Finestra di esplorazione Mostra l'albero di incorporamento
- La definizione DSL creato anche uno strumento di esplorazione, gli utenti vedono insieme ai relativi diagramma del modello.
+### <a name="the-explorer-displays-the-embedding-tree"></a>La finestra di esplorazione Visualizza l'albero di incorporamento
+ La definizione DSL crea anche un visualizzatore, che gli utenti vedono insieme al diagramma del modello.
 
  ![Finestra di esplorazione generata di DSL](../modeling/media/music_explorer.png)
 
- Finestra di esplorazione Mostra tutti gli elementi nel modello, anche quelli per cui non è stata definita alcuna forma. Visualizza gli elementi e le relazioni di incorporamento, ma non fare riferimento alle relazioni.
+ La finestra di esplorazione Mostra tutti gli elementi del modello, anche quelli per i quali non sono state definite forme. Mostra gli elementi e le relazioni di incorporamento, ma non le relazioni di riferimento.
 
- Per visualizzare i valori delle proprietà di dominio di un elemento, l'utente seleziona un elemento nel diagramma modello o in Esplora modelli e verrà visualizzata la finestra Proprietà. Visualizza tutte le proprietà di dominio, inclusi quelli che non vengono visualizzati nel diagramma. Nell'esempio, ogni brano ha un titolo e un genere, ma viene visualizzato solo il valore del titolo del diagramma.
+ Per visualizzare i valori delle proprietà di dominio di un elemento, l'utente seleziona un elemento nel diagramma del modello o in Esplora modelli e apre il Finestra Proprietà. Vengono visualizzate tutte le proprietà del dominio, incluse quelle che non vengono visualizzate nel diagramma. Nell'esempio, ogni brano ha un titolo e un genere, ma nel diagramma viene visualizzato solo il valore del titolo.
 
 ## <a name="reference-relationships"></a>Relazioni di riferimento
- Una relazione di riferimento rappresenta qualsiasi tipo di relazione che non è di incorporamento.
+ Una relazione di riferimento rappresenta qualsiasi tipo di relazione non incorporata.
 
  Le relazioni di riferimento vengono in genere visualizzate in un diagramma come connettori tra le forme.
 
- Nella rappresentazione XML del modello, un collegamento di riferimento tra due elementi viene espressa utilizzando *moniker.* Vale a dire i moniker sono nomi che identificano in modo univoco ogni elemento nel modello. Il nodo XML per ogni elemento del modello contiene un nodo che specifica il nome della relazione e il moniker dell'elemento.
+ Nella rappresentazione XML del modello, un collegamento di riferimento tra due elementi viene rappresentato utilizzando i *moniker.* Ovvero, i moniker sono nomi che identificano in modo univoco ogni elemento del modello. Il nodo XML per ogni elemento del modello contiene un nodo che specifica il nome della relazione e il moniker dell'altro elemento.
 
 ## <a name="roles"></a>Ruoli
  Ogni relazione di dominio ha due ruoli, un ruolo di origine e un ruolo di destinazione.
 
- Nell'immagine seguente, la linea tra i **server di pubblicazione** della classe di dominio e il **PublisherCatalog** relazione di dominio è il ruolo di origine. La riga tra la relazione di dominio e il **Album** della classe di dominio è il ruolo di destinazione.
+ Nell'immagine seguente la riga tra la classe di dominio del **server di pubblicazione** e la relazione di dominio **PublisherCatalog** è il ruolo di origine. La riga tra la relazione di dominio e la classe di dominio **album** è il ruolo di destinazione.
 
  ![Ruoli e proprietà.](../modeling/media/propertycode.png)
 
- I nomi associati a una relazione sono particolarmente importanti quando si scrive codice programma che attraversa il modello. Ad esempio, quando si compila la soluzione DSL, la classe generata, server di pubblicazione ha una proprietà del catalogo che rappresenta una raccolta di album. La classe Album ha una proprietà server di pubblicazione che è una singola istanza della classe server di pubblicazione.
+ I nomi associati a una relazione sono particolarmente importanti quando si scrive codice programma che attraversa il modello. Ad esempio, quando si compila la soluzione DSL, il server di pubblicazione della classe generata dispone di un catalogo di proprietà costituito da una raccolta di album. L'album della classe dispone di un server di pubblicazione di proprietà che rappresenta una singola istanza del server di pubblicazione della classe.
 
- Quando si crea una relazione in una definizione DSL, valori predefiniti vengono specificati i nomi di proprietà e relazioni. Tuttavia, è possibile modificarli.
+ Quando si crea una relazione in una definizione DSL, al nome della proprietà e della relazione vengono assegnati i valori predefiniti. Tuttavia, è possibile modificarli.
 
 ## <a name="multiplicities"></a>Molteplicità
- Molteplicità specificare quanti elementi può avere lo stesso ruolo in una relazione di dominio. Nell'esempio zero-a-molti (0..\*) impostazione di molteplicità per il **catalogo** ruolo specifica che qualsiasi istanza del **server di pubblicazione** della classe di dominio può avere un numero  **PublisherCatalog** relazione collega che si desidera assegnare.
+ Molteplicità specificare il numero di elementi che possono avere lo stesso ruolo in una relazione di dominio. Nell'esempio, l'impostazione di molteplicità zero-a-molti (0.. \*) nel ruolo del **Catalogo** specifica che qualsiasi istanza della classe di dominio del **server di pubblicazione** può avere tutti i collegamenti alla relazione di **PublisherCatalog** che si desidera assegnare.
 
- Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la `Multiplicity` proprietà nel **proprietà** finestra. Nella tabella seguente descrive le impostazioni per questa proprietà.
+ Configurare la molteplicità di un ruolo digitando nel diagramma o modificando la proprietà `Multiplicity` nella finestra **Proprietà** . Nella tabella seguente vengono descritte le impostazioni per questa proprietà.
 
 |Tipo di molteplicità|Descrizione|
 |-|-|
-|0.. * (zero a molti)|Ogni istanza della classe di dominio può avere più istanze della relazione o nessuna istanza della relazione.|
-|0..1 (zero a uno)|Ogni istanza della classe di dominio può avere non più di un'istanza della relazione o nessuna istanza della relazione.|
-|1..1 (One)|Ogni istanza della classe di dominio può avere un'istanza della relazione. È possibile creare più di un'istanza di questa relazione da qualsiasi istanza della classe role. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|
-|1.. * (uno a molti)|Ogni istanza della classe nel ruolo con molteplicità di questo può avere più istanze della relazione e ogni istanza deve avere almeno un'istanza della relazione. Se la convalida è abilitata, verrà visualizzato un errore di convalida quando qualsiasi istanza della classe ruolo non dispone di alcuna istanza della relazione.|
+|0.. * (da zero a molti)|Ogni istanza della classe di dominio può avere più istanze della relazione o nessuna istanza della relazione.|
+|0.. 1 (zero a uno)|Ogni istanza della classe di dominio non può avere più di un'istanza della relazione o nessuna istanza della relazione.|
+|1.. 1 (uno)|Ogni istanza della classe di dominio può avere un'istanza della relazione. Non è possibile creare più di un'istanza di questa relazione da qualsiasi istanza della classe Role. Se la convalida è abilitata, viene visualizzato un errore di convalida quando un'istanza della classe role non dispone di un'istanza della relazione.|
+|1.. * (da uno a molti)|Ogni istanza della classe nel ruolo che dispone di questa molteplicità può avere più istanze della relazione e ogni istanza deve avere almeno un'istanza della relazione. Se la convalida è abilitata, viene visualizzato un errore di convalida quando un'istanza della classe role non dispone di un'istanza della relazione.|
 
 ## <a name="domain-relationships-as-classes"></a>Relazioni di dominio come classi
- Un collegamento è rappresentato nel Store come un'istanza di LinkElement, ovvero una classe derivata di ModelElement. Nel diagramma del modello di dominio nelle relazioni di dominio, è possibile definire queste proprietà.
+ Un collegamento viene rappresentato nell'archivio come un'istanza di LinkElement, che è una classe derivata di ModelElement. È possibile definire queste proprietà nel diagramma del modello di dominio per le relazioni di dominio.
 
- È anche possibile rendere una relazione di origine o destinazione di altre relazioni. Nel diagramma del modello di dominio, fare doppio clic la relazione di dominio e quindi fare clic su **Show As Class**. Verrà visualizzata una finestra di classi aggiuntive. È quindi possibile connettere le relazioni a esso.
+ È anche possibile creare una relazione con l'origine o la destinazione di altre relazioni. Nel diagramma del modello di dominio fare clic con il pulsante destro del mouse sulla relazione di dominio, quindi scegliere **Mostra come classe**. Verrà visualizzata una finestra di classe aggiuntiva. È quindi possibile connettere le relazioni.
 
- È possibile definire una relazione in parte tramite ereditarietà, proprio come con le classi di dominio. Selezionare la relazione derivata e impostare **relazione Base** nella finestra Proprietà.
+ È possibile definire una relazione parzialmente in base all'ereditarietà, così come è possibile con le classi di dominio. Selezionare la relazione derivata e impostare la **relazione di base** nel finestra Proprietà.
 
- Una relazione derivata specializza la relazione di base. Il dominio delle classi che non devono essere derivati da collegamenti o quello utilizzato per le classi collegate tramite la relazione di base. Quando viene creato un collegamento della relazione derivata in un modello, è un'istanza della classe derivata sia le relazioni di base. Nel codice programma, è possibile passare all'estremità opposta del collegamento utilizzando le proprietà generate da di base o dalla classe derivata.
+ Una relazione derivata specializza la relazione di base. Le classi di dominio da cui viene collegato devono essere derivate da o dalle stesse classi collegate dalla relazione di base. Quando viene creato un collegamento della relazione derivata in un modello, è un'istanza di entrambe le relazioni derivate e di base. Nel codice programma è possibile passare all'estremità opposta del collegamento usando le proprietà generate dalla base o dalla classe derivata.
 
 ## <a name="see-also"></a>Vedere anche
 

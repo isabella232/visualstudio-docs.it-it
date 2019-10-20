@@ -1,5 +1,5 @@
 ---
-title: Creazione di soluzioni di pulizia di progetti
+title: Compila soluzioni di progetti puliti
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685710"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620561"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Tramite le procedure descritte in questo argomento è possibile compilare, ricompilare o pulire tutti o alcuni progetti o elementi di progetto di una soluzione. Per un'esercitazione dettagliata, vedere [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md).
+Tramite le procedure descritte in questo argomento è possibile compilare, ricompilare o pulire tutti o alcuni progetti o elementi di progetto di una soluzione. Per un'esercitazione dettagliata, vedere [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilazione di un'applicazione).
 
 > [!NOTE]
 > L'interfaccia utente dell'edizione di Visual Studio in uso potrebbe essere diversa da quanto descritto in questo argomento, a seconda delle impostazioni attive. Per modificare le impostazioni, aprire il menu **Strumenti** e quindi scegliere **Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -75,9 +75,9 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
     Se questa casella di controllo è selezionata, solo il progetto di avvio corrente e le relative dipendenze vengono compilati quando si esegue la procedura seguente:
 
-   - Nella barra dei menu, scegliere **Debug** > **Avvia debug** (F5).
+   - Nella barra dei menu scegliere **debug**  > **Avvia debug** (F5).
 
-   - Nella barra dei menu, scegliere **compilare** > **Compila soluzione** (CTRL + MAIUSC + B).
+   - Nella barra dei menu scegliere **compila**  > **Compila soluzione** (CTRL + MAIUSC + B).
 
      Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, questa casella di controllo è deselezionata.
 
@@ -110,4 +110,4 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
     - Scegliere la combinazione di tasti Ctrl + Interr.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: Visualizzare, salvare e configurare file di Log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md) [ottenere log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md) [compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [Eseguire il debug e rilascio delle configurazioni di progetto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ riferimenti alla compilazione](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [opzioni della riga di comando Devenv](../ide/reference/devenv-command-line-switches.md) [soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
+ [Procedura: visualizzare, salvare e configurare i file di log](../ide/how-to-view-save-and-configure-build-log-files.md) di compilazione [recupero dei log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md) [compilazione e](../ide/compiling-and-building-in-visual-studio.md) compilazione informazioni sulle configurazioni di [compilazione](../ide/understanding-build-configurations.md) [debug e rilascio di configurazioni di progetto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ riferimento per la compilazione ](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md) [soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)

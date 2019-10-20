@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211311"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645372"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -72,7 +72,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 
 La tabella seguente riepiloga le impostazioni specifiche di F#:
 
-|Pagina Creazione progetti|Impostazione|Descrizione|
+|Pagina Creazione progetti|Impostazioni|Descrizione|
 | - |-------|-----------|
 |Compilazione|Genera chiamate tail|Se selezionata, abilita l'uso delle istruzioni tail MSIL (Microsoft Intermediate Language). In questo modo lo stack frame viene riutilizzato per le funzioni tail ricorsive. Equivalente all'opzione del compilatore `--tailcalls`.|
 |Compilazione|Altri flag|Consente di specificare opzioni da riga di comando del compilatore aggiuntive.|
@@ -148,7 +148,7 @@ La tabella seguente riepiloga le funzionalità disponibili quando si esegue il d
 
 Per informazioni generali sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/index.yml).
 
-## <a name="additional-tools"></a>Strumenti aggiuntivi
+## <a name="additional-tools"></a>Altri strumenti
 
 La tabella seguente riepiloga il supporto per F# di Strumenti di Visual Studio.
 

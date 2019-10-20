@@ -16,29 +16,29 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: ae83add4db8e45fca1b97b9c4148cea5bcba0947
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605621"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621905"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: Ambiente \> Web browser
+# <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: ambiente \> Web browser
 
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > L'apertura di determinati file o componenti dal Web può determinare l'esecuzione del codice nel computer in uso.
 
-## <a name="home-page"></a>Home page
+## <a name="home-page"></a>home page
 
 Consente di impostare la pagina visualizzata quando si apre il Web browser dell'IDE.
 

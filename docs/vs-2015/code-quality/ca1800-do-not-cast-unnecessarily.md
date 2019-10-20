@@ -1,5 +1,5 @@
 ---
-title: 'CA1800: Non eseguire il cast inutilmente | Microsoft Docs'
+title: 'CA1800: non eseguire il cast inutilmente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1800
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49ffc66b1b7047c7b88664ac0c5198fbd51c51c6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 466309cef8905faa9b659e2d3652975d815767fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682071"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663100"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Non eseguire il cast inutilmente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,33 +29,33 @@ ms.locfileid: "65682071"
 |-|-|
 |TypeName|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Category|Microsoft.Performance|
-|Modifica importante|Non sostanziale|
+|Category|Microsoft. performance|
+|Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo esegue i cast duplicati comportano su uno dei relativi argomenti o variabili locali. Per l'analisi completa da questa regola, l'assembly testata deve essere compilato usando le informazioni di debug e il file di database (con estensione pdb) del programma associato deve essere disponibile.
+ Un metodo esegue cast duplicati su uno degli argomenti o variabili locali. Per un'analisi completa da parte di questa regola, è necessario compilare l'assembly testato utilizzando le informazioni di debug e il file di database di programma (con estensione pdb) associato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I cast duplicati comportano una riduzione delle prestazioni, in particolare quando i cast vengono eseguiti in istruzioni di iterazione compatte. Per le operazioni cast duplicati esplicito, archiviare il risultato del cast in una variabile locale e usare la variabile locale anziché le operazioni cast duplicati.
+ I cast duplicati comportano una riduzione delle prestazioni, in particolare quando i cast vengono eseguiti in istruzioni di iterazione compatte. Per le operazioni di cast duplicate esplicite, archiviare il risultato del cast in una variabile locale e usare la variabile locale anziché le operazioni cast duplicate.
 
- Se il codice c# `is` operatore viene usato per verificare se il cast sarà completato prima di eseguita il cast effettivo, è consigliabile testare il risultato del `as` operatore invece. Questo offre la stessa funzionalità senza l'operazione di cast implicito che viene eseguita mediante il `is` operatore.
+ Se viene C# usato l'operatore `is` per verificare se il cast avrà esito positivo prima di eseguire il cast effettivo, provare a testare il risultato dell'operatore `as`. Fornisce la stessa funzionalità senza l'operazione cast implicita eseguita dall'operatore `is`.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare l'implementazione del metodo per ridurre al minimo il numero di operazioni cast.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
- È sicuro per eliminare un avviso da questa regola o di ignorare completamente la regola se le prestazioni non costituiscono un problema.
+ È possibile eliminare un avviso da questa regola oppure ignorare completamente la regola, se le prestazioni non sono un problema.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra un metodo che viola la regola usando il codice c# `is` operatore. Un secondo metodo soddisfa la regola, sostituendo il `is` operatore con il risultato di un test di `as` operatore, che riduce il numero di operazioni di cast per ogni iterazione da due a uno.
+ Nell'esempio seguente viene illustrato un metodo che viola la regola utilizzando l' C# operatore `is`. Un secondo metodo soddisfa la regola sostituendo l'operatore `is` con un test rispetto al risultato dell'operatore `as`, che riduce il numero di operazioni cast per iterazione da due a uno.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCastsAsIs/cs/FxCop.Performance.UnnecessaryCastsAsIs.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo, `start_Click`, che ha più di cast espliciti duplicati, che viola la regola e un metodo, `reset_Click`, che soddisfa la regola, archiviando il cast in una variabile locale.
+ Nell'esempio seguente viene illustrato un metodo, `start_Click`, che dispone di più cast espliciti duplicati, che violano la regola e un metodo, `reset_Click`, che soddisfa la regola archiviando il cast in una variabile locale.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/cs/FxCop.Performance.UnnecessaryCasts.cs#1)]
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## <a name="see-also"></a>Vedere anche
- [as](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [is](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
+ [così come](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [sono](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)

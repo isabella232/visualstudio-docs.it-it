@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 715086a2c0d9196680dd1f332ee9b5122e144e5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950072"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653489"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni del test di carico usando Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni di un test di carico usando Microsoft Word
 
 È possibile creare manualmente report di test di carico di Microsoft Word copiando e incollando dati dalla visualizzazione Riepilogo dei risultati test di carico e dalla visualizzazione Grafici. I dati presenti nelle visualizzazioni Riepilogo e Grafici vengono applicati in formato HTML quando vengono copiati.
 
@@ -26,7 +26,7 @@ ms.locfileid: "62950072"
 > È possibile copiare testo normale dalla visualizzazione Tabelle e schermate dalla visualizzazione Dettagli in Microsoft Word, ma non verrà applicato in formato HTML e richiederà formattazione e modifiche aggiuntive.
 
 > [!TIP]
-> È possibile generare automaticamente anche report di Microsoft Excel organizzati. Per altre informazioni, vedere [Procedura: Creare un report di prestazioni del test di carico usando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> È possibile generare automaticamente anche report di Microsoft Excel organizzati. Per altre informazioni, vedere [Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Copiare i dati della visualizzazione Riepilogo
 

@@ -2,20 +2,20 @@
 title: Isolamento del codice sottoposto a test con Microsoft Fakes
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926642"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653107"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolare codice sottoposto a test con Microsoft Fakes
 
@@ -29,7 +29,7 @@ Fakes è di due tipi:
 
 ![Fakes sostituisce altri componenti](../test/media/fakes-2.png)
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
@@ -244,7 +244,7 @@ Non c'è un assembly "System.IO.Fakes" a cui fare riferimento. Lo spazio dei nom
 
 È inoltre possibile creare shim per istanze, costruttori e proprietà specifiche. Per altre informazioni, vedere [Usare shim per isolare l'applicazione da altri assembly per unit test](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 [Usare stub per isolare le parti dell'applicazione l'una dall'altra per unit test](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
 [Usare shim per isolare l'applicazione da altri assembly per unit test](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

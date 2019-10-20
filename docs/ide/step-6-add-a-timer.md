@@ -13,22 +13,22 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1364ce26b4a6f54f99267ce3e1288160f75ca148
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 4aeb28fe7fbfbaa6e2d120fe58fdc39f188367b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562528"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647499"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
 
 ## <a name="to-add-a-timer"></a>Per aggiungere un timer
 
-1. Nella casella degli strumenti in **Progettazione Windows Form** scegliere **Timer** (nella categoria **Componenti**) e quindi premere **INVIO** oppure fare doppio clic sul timer per aggiungere un controllo timer al modulo. L'icona del timer, denominata **Timer1**, verrà visualizzata nella parte inferiore del form, come illustrato nell'immagine seguente.
+1. Nella casella degli strumenti in **Progettazione Windows Form** scegliere **Timer** (nella categoria **Componenti**) e quindi premere **INVIO** oppure fare doppio clic sul timer per aggiungere un controllo timer al modulo. L'icona del timer, denominata **Timer1**, dovrebbe essere visualizzata in uno spazio sotto il form, come illustrato nella figura seguente.
 
      ![Timer](../ide/media/express_timer.png)<br/>
-**Timer**
+***Timer***
 
     > [!NOTE]
     > Se la casella degli strumenti è vuota, assicurarsi di selezionare la finestra di progettazione del form e non il codice retrostante prima di aprire la casella degli strumenti.
@@ -63,6 +63,6 @@ Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbina
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 7: Mantieni le coppie visibili](../ide/step-7-keep-pairs-visible.md)** .
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: Aggiungere riferimenti alle etichette](../ide/step-5-add-label-references.md).

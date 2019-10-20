@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d0b694f9703c6260d95ad03e085fcdf774dc52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fb5e6181c2dbe9a79b2ab1d0859722de324d768e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919137"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610687"
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
 Visualizza il contenuto dell'intervallo di memoria specificato.
@@ -31,29 +31,29 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 [/Hex|Signed|Unsigned] [expression]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `expression`
 
-facoltativo. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.
+Parametro facoltativo. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.
 
 ## <a name="switches"></a>Opzioni
 /ANSI&#124;Unicode
 
-facoltativo. Visualizza la memoria come caratteri corrispondenti ai byte di memoria, ANSI o Unicode.
+Parametro facoltativo. Visualizza la memoria come caratteri corrispondenti ai byte di memoria, ANSI o Unicode.
 
 /Count:`number`
 
-facoltativo. Determina il numero di byte di memoria da visualizzare, a partire da `expression`.
+Parametro facoltativo. Determina il numero di byte di memoria da visualizzare, a partire da `expression`.
 
 /Format:`formattype`
 
-facoltativo. Tipo di formato per la visualizzazione di informazioni sulla memoria nella finestra **Memoria**; può essere OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) o Double (64 bit). Se viene usato il formato OneByte, `/Unicode` non è disponibile.
+Parametro facoltativo. Tipo di formato per la visualizzazione di informazioni sulla memoria nella finestra **Memoria**; può essere OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) o Double (64 bit). Se viene usato il formato OneByte, `/Unicode` non è disponibile.
 
 /Hex&#124;Signed&#124;Unsigned
 
-facoltativo. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.
+Parametro facoltativo. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Invece di scrivere un comando **Debug.ListMemory** completo con tutte le opzioni, è possibile richiamare il comando tramite alias predefiniti con alcune opzioni preimpostate su valori specificati. Ad esempio, anziché immettere:
 
 ```cmd
@@ -92,4 +92,4 @@ Di seguito viene riportato un elenco degli alias disponibili per il comando **De
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

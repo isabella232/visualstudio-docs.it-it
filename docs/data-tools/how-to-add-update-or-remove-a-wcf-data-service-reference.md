@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services'
+title: 'Procedura: aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925640"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648413"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services
-Un *riferimento al servizio* consente a un progetto di accedere a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]uno o più. Utilizzare la finestra di dialogo **Aggiungi riferimento al servizio** per cercare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, localmente, in una rete locale o su Internet.
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF
+Un *riferimento al servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Utilizzare la finestra di dialogo **Aggiungi riferimento al servizio** per cercare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, localmente, in una rete locale o su Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -41,7 +41,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a [!INCLUDE[ssAs
 
      È anche possibile selezionare l'URL nell'elenco **indirizzi** , che archivia i 15 URL precedenti in cui sono stati trovati i metadati del servizio validi.
 
-     Quando viene eseguita la ricerca, viene visualizzato un indicatore di stato. È possibile arrestare la ricerca in qualsiasi momento facendo clicsu Interrompi.
+     Quando viene eseguita la ricerca, viene visualizzato un indicatore di stato. È possibile arrestare la ricerca in qualsiasi momento facendo clic su **Interrompi**.
 
 3. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
 
@@ -59,7 +59,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a [!INCLUDE[ssAs
 
 2. Fare clic su **individua**.
 
-    Tutti i servizi ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] e i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **dei servizi** .
+    Tutti i servizi (sia [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] che i servizi WCF) nella soluzione corrente vengono aggiunti all'elenco **dei servizi** .
 
 3. Nell'elenco **Servizi** espandere il nodo per il servizio che si desidera utilizzare e selezionare un set di entità.
 
@@ -70,7 +70,7 @@ Un *riferimento al servizio* consente a un progetto di accedere a [!INCLUDE[ssAs
     Un client del servizio (proxy) genera e i metadati che descrivono il servizio vengono aggiunti al file *app. config* .
 
 ## <a name="update-a-service-reference"></a>Aggiornare un riferimento al servizio
-Il Entity Data Model per un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] oggetto a volte cambia. Quando si verifica questo problema, è necessario aggiornare il riferimento al servizio.
+Il Entity Data Model di un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] a volte cambia. Quando si verifica questo problema, è necessario aggiornare il riferimento al servizio.
 
 ### <a name="to-update-a-service-reference"></a>Per aggiornare un riferimento al servizio
 

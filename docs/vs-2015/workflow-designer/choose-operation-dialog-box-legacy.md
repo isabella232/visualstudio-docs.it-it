@@ -1,5 +1,5 @@
 ---
-title: Dialogo Seleziona operazione (Legacy) | Microsoft Docs
+title: Finestra di dialogo Seleziona operazione (legacy) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,37 +8,35 @@ f1_keywords:
 - System.Workflow.Activities.Design.OperationPickerDialog.UI
 ms.assetid: bc3ec902-7797-494e-af48-e70c97eb6779
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b42ecd7ad38144786ff12d5cad20c9e8a1437646
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2736db7e18733a9477238cafad21088eb135e89
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417563"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659166"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Finestra di dialogo Seleziona operazione (legacy)
-Questo argomento viene descritto come usare il **Seleziona operazione** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Il **Seleziona operazione** finestra di dialogo consente di selezionare un'operazione da associare a un <xref:System.Workflow.Activities.ReceiveActivity> attività o un <xref:System.Workflow.Activities.SendActivity> attività. Per altre informazioni sull'uso di questa finestra di dialogo con tali attività, vedere [come: Implementare un'operazione del contratto WCF (Legacy)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) e [come: Richiamare un'operazione del contratto WCF (Legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).  
-  
- La tabella seguente descrive gli elementi dell'interfaccia utente di **Seleziona operazione** nella finestra di dialogo.  
-  
-|Elemento dell'interfaccia utente|Descrizione|  
-|----------------|-----------------|  
-|**Aggiungi contratto**|Crea un nuovo contratto, in cui è possibile definire nuove operazioni. (Utilizzato solo con <xref:System.Workflow.Activities.ReceiveActivity>.)|  
-|**L'operazione di aggiunta**|Aggiunge nuove operazioni a un nuovo contratto creato nella **Seleziona operazione** nella finestra di dialogo. **Nota:**  È possibile aggiungere nuove operazioni solo ai contratti creati tramite il **Seleziona operazione** nella finestra di dialogo. <br /><br /> (Utilizzato solo con <xref:System.Workflow.Activities.ReceiveActivity>.)|  
-|**Importa...**|Importa un contratto definito in precedenza e consente di selezionare un'operazione da tale contratto.|  
-|**Nome dell'operazione**|Nome dell'operazione attualmente selezionata. Questa casella di testo è disponibile per la modifica solo se è stata creata un'operazione tramite il **Seleziona operazione** nella finestra di dialogo.|  
-|**Parametri**|Scheda contenente le definizioni di parametro per l'operazione attualmente selezionata. **Nota:**  Le definizioni di parametro possono essere modificate solo se è stata creata un'operazione tramite il **Seleziona operazione** nella finestra di dialogo.|  
-|**Proprietà**|Scheda contenente le impostazioni di <xref:System.Net.Security.ProtectionLevel> per i messaggi scambiati fra il client e il servizio. **Nota:**  Questa scheda è abilitata solo se è stata creata un'operazione tramite il **Seleziona operazione** nella finestra di dialogo.|  
-|**Autorizzazioni**|Scheda contenente le proprietà <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> e <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> degli utenti autorizzati a chiamare tale operazione. Ad esempio, se solo gli utenti dal gruppo Administrators sono autorizzati a chiamare tale operazione, quindi si scriverebbe "Administrators" **ruolo** casella di testo.<br /><br /> Questa scheda è abilitata per le operazioni create tramite il **ChooseOperation** finestra di dialogo e le operazioni che sono state importate tramite il **importazione** pulsante.|  
-  
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Scegli operazione** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ La finestra di dialogo **Scegli operazione** viene utilizzata per selezionare un'operazione da associare a un'attività <xref:System.Workflow.Activities.ReceiveActivity> o a un'attività <xref:System.Workflow.Activities.SendActivity>. Per ulteriori informazioni sull'utilizzo di questa finestra di dialogo con tali attività, vedere [procedura: implementare un'operazione del contratto WCF (legacy)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) e [procedura: richiamare un'operazione del contratto WCF (legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md).
+
+ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Seleziona operazione** .
+
+|Elemento dell'interfaccia utente|Descrizione|
+|----------------|-----------------|
+|**Aggiungi contratto**|Crea un nuovo contratto, in cui è possibile definire nuove operazioni. (Utilizzato solo con <xref:System.Workflow.Activities.ReceiveActivity>.)|
+|**Operazione di aggiunta**|Aggiunge nuove operazioni a un nuovo contratto creato nella finestra di dialogo **Seleziona operazione** . **Nota:**  È possibile aggiungere nuove operazioni solo ai contratti creati tramite la finestra di dialogo **Seleziona operazione** . <br /><br /> (Utilizzato solo con <xref:System.Workflow.Activities.ReceiveActivity>.)|
+|**Importa...**|Importa un contratto definito in precedenza e consente di selezionare un'operazione da tale contratto.|
+|**Nome operazione**|Nome dell'operazione attualmente selezionata. Questa casella di testo è disponibile per la modifica solo se è stata creata un'operazione tramite la finestra di dialogo **Seleziona operazione** .|
+|**Parametri**|Scheda contenente le definizioni di parametro per l'operazione attualmente selezionata. **Nota:**  Le definizioni dei parametri possono essere modificate solo se è stata creata un'operazione tramite la finestra di dialogo **Seleziona operazione** .|
+|**Proprietà**|Scheda contenente le impostazioni di <xref:System.Net.Security.ProtectionLevel> per i messaggi scambiati fra il client e il servizio. **Nota:**  Questa scheda è abilitata solo se è stata creata un'operazione tramite la finestra di dialogo **Seleziona operazione** .|
+|**Autorizzazioni**|Scheda contenente le proprietà <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> e <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> degli utenti autorizzati a chiamare tale operazione. Se, ad esempio, solo gli utenti del gruppo Administrators sono autorizzati a chiamare tale operazione, è necessario scrivere "Administrators" nella casella di testo **Role** .<br /><br /> Questa scheda è abilitata per entrambe le operazioni create tramite la finestra di dialogo **ChooseOperation** e le operazioni che sono state importate tramite il pulsante **Importa** .|
+
 > [!NOTE]
-> Il **Seleziona operazione** finestra di dialogo vengono visualizzati solo i contratti o operazioni che vengono usate da altre <xref:System.Workflow.Activities.SendActivity> attività nel flusso di lavoro. Allo stesso modo, il **Seleziona operazione** finestra di dialogo <xref:System.Workflow.Activities.ReceiveActivity> le attività vengono visualizzati solo i contratti o operazioni che vengono usate da altre **ReceiveActivity** attività nel flusso di lavoro.  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Implementare un'operazione del contratto WCF (Legacy)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Procedura: Richiamare un'operazione del contratto WCF (Legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md)   
- [Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+> Nella finestra di dialogo **Scegli operazione** vengono visualizzati solo i contratti o le operazioni usati da altre <xref:System.Workflow.Activities.SendActivity> attività nel flusso di lavoro. Analogamente, la finestra di dialogo **Scegli operazione** per <xref:System.Workflow.Activities.ReceiveActivity> attività Mostra solo i contratti o le operazioni usati da altre attività **ReceiveActivity** nel flusso di lavoro.
+
+## <a name="see-also"></a>Vedere anche
+ [Procedura: implementare un'operazione del contratto WCF (legacy)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) [procedura: richiamare una finestra di progettazione legacy di un'operazione del contratto WCF (legacy)](../workflow-designer/how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md) [per la guida dell'interfaccia utente di Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

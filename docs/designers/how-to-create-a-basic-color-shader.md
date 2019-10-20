@@ -3,17 +3,17 @@ title: 'Procedura: Creare uno shader con colore di base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f15bba37f5a03da934fae9ba4689da7775cfdb92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: db97199518d4f7f023696b085d0f66dc81394511
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844868"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636401"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedura: Creare uno shader con colore di base
 

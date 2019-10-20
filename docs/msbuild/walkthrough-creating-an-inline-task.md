@@ -11,15 +11,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cbeba8418b3364d4e3762643a78465158f80e6fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655451"
 ---
-# <a name="walkthrough-create-an-inline-task"></a>Procedura dettagliata: Creazione di un'attività inline
-Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. Per altre informazioni, vedere [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (Attività inline).
+# <a name="walkthrough-create-an-inline-task"></a>Procedura dettagliata: Creare un'attività inline
+Le attività MSBuild vengono in genere create tramite la compilazione di una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. Per altre informazioni, vedere [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (Attività inline).
 
  Questa procedura dettagliata mostra come creare ed eseguire le attività inline seguenti:
 
@@ -46,7 +46,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 1. In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto **Visual C#** e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\*. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
+2. Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto **Visual C#** e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\* . Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
 
 3. Scegliere **OK** per creare il file di progetto.
 
@@ -85,7 +85,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 3. Salvare il file di progetto.
 
-   Questo codice crea un'attività inline denominata Hello priva di parametri, riferimenti o istruzioni `Using`. L'attività Hello contiene un'unica riga di codice. Tale riga visualizza un messaggio di saluto nel dispositivo di registrazione predefinito, in genere la finestra della console.
+   Questo codice consente di creare un'attività inline denominata Hello e senza parametri, riferimenti o direttive `Using`. L'attività Hello contiene un'unica riga di codice. Tale riga visualizza un messaggio di saluto nel dispositivo di registrazione predefinito, in genere la finestra della console.
 
 ### <a name="run-the-hello-task"></a>Eseguire l'attività Hello
  Eseguire MSBuild tramite la **finestra del prompt dei comandi** per costruire l'attività Hello ed elaborare la destinazione TestBuild che la richiama.
@@ -94,7 +94,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 1. Fare clic su **Start**, scegliere **Tutti i programmi,** , quindi individuare la cartella **Strumenti di Visual Studio** e infine fare clic su **Prompt dei comandi di Visual Studio**.
 
-2. Nella **finestra del prompt dei comandi** individuare la cartella contenente il file di progetto, in questo caso *:\InlineTasks\InlineTasks\\*.
+2. Nella **finestra del prompt dei comandi** individuare la cartella contenente il file di progetto, in questo caso *:\InlineTasks\InlineTasks\\* .
 
 3. Digitare **msbuild** senza opzioni di comando e quindi premere **Invio**. Per impostazione predefinita, viene compilato il file *InlineTasks.csproj* e viene elaborata la destinazione predefinita TestBuild che richiama l'attività Hello.
 

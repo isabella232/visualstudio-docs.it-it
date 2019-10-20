@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814570"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658404"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 
@@ -60,7 +60,7 @@ La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per un
 
 Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
-Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle relative classi di un diagramma classi concettuali. Ad esempio:
+Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuali. Esempio:
 
 ![Regola nel commento associato alla classe Order.](../modeling/media/uml_reqmcd2.png)
 
@@ -94,7 +94,7 @@ Esistono diverse categorie di requisiti per la qualità del servizio. Di seguito
 
 Se un Ristorante elimina un Elemento menu mentre un Cliente ordina un pasto, tutti gli Elementi ordine che fanno riferimento all'Elemento menu verranno visualizzati in rosso.
 
-Visualizzare [modellare l'architettura dell'applicazione](../modeling/model-your-app-s-architecture.md) per imparare a sviluppare il codice che è conforme alla qualità dei requisiti del servizio.
+Per informazioni su come sviluppare codice che soddisfi i requisiti di qualità del servizio, vedere [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md) .
 
 ## <a name="see-also"></a>Vedere anche
 

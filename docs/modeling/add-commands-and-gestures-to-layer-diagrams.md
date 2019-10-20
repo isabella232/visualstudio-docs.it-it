@@ -5,42 +5,42 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 7392d6f131cc1658a04769e7e2a5fc58c76f522e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476662"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652354"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 
-È possibile definire comandi di menu di scelta rapida e gestori movimenti nei diagrammi delle dipendenze in Visual Studio. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) che è possibile distribuire ad altri utenti di Visual Studio.
+È possibile definire comandi del menu di scelta rapida e gestori movimenti nei diagrammi delle dipendenze in Visual Studio. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) che è possibile distribuire ad altri utenti di Visual Studio.
 
-Se si vuole, è possibile definire gestori comandi e movimenti diversi nello stesso progetto di Visual Studio. È anche possibile combinare più progetti di questo tipo in un progetto VSIX. Ad esempio, è possibile definire un unico progetto VSIX contenente comandi di livello e un linguaggio specifico di dominio.
+Se si vuole, è possibile definire gestori comandi e movimenti diversi nello stesso progetto di Visual Studio. È anche possibile combinare più progetti di questo tipo in un progetto VSIX. Ad esempio, è possibile definire un singolo progetto VSIX che include comandi di livello e un linguaggio specifico di dominio.
 
 > [!NOTE]
-> È anche possibile personalizzare la convalida dell'architettura, in origine degli utenti che verrà confrontato con i diagrammi delle dipendenze. È consigliabile definire la convalida dell'architettura in un progetto di Visual Studio separato. È possibile aggiungerlo allo stesso progetto VSIX come per le altre estensioni. Per altre informazioni, vedere [aggiungere la convalida architettura personalizzati a diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+> È anche possibile personalizzare la convalida dell'architettura, in cui il codice sorgente degli utenti viene confrontato con i diagrammi delle dipendenze. È consigliabile definire la convalida dell'architettura in un progetto di Visual Studio separato. È possibile aggiungerlo allo stesso progetto VSIX come per le altre estensioni. Per altre informazioni, vedere [aggiungere la convalida dell'architettura personalizzata ai diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
 ## <a name="requirements"></a>Requisiti
 
 Vedere [Requisiti](../modeling/extend-layer-diagrams.md#requirements).
 
-## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definire un comando o movimento in un nuovo progetto VSIX
+## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definire un comando o un movimento in un nuovo progetto VSIX
 
 Il modo più rapido per creare un'estensione è usare il modello di progetto. In questo modo il codice e il manifesto VSIX vengono inseriti nello stesso progetto.
 
-1. Creare una nuova **estensione di comando Progettazione livelli** oppure **estensione di movimento Progettazione livelli** progetto.
+1. Creare una nuova **estensione del comando della finestra di progettazione di livello** o un progetto di estensione del movimento della **finestra**
 
    Il modello crea un progetto che contiene un piccolo esempio funzionante.
 
-2. Per testare l'estensione, premere **Ctrl**+**F5** oppure **F5**.
+2. Per testare l'estensione, premere **Ctrl** +**F5** o **F5**.
 
-    Avvia un'istanza sperimentale di Visual Studio. In questo caso, creare un diagramma delle dipendenze. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.
+    Viene avviata un'istanza sperimentale di Visual Studio. In questa istanza creare un diagramma delle dipendenze. L'estensione di comando o di movimento dovrebbe funzionare in questo diagramma.
 
 3. Chiudere l'istanza sperimentale e modificare il codice di esempio.
 
@@ -52,17 +52,17 @@ Il modo più rapido per creare un'estensione è usare il modello di progetto. In
 
 ::: moniker range="vs-2017"
 
-5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **estensioni e aggiornamenti** nel **Tools** menu.
+5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il file *VSIX* nella directory *bin* . Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallarlo, scegliere **estensioni e aggiornamenti** dal menu **strumenti** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il *VSIX* del file nei *bin* directory. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, scegliere **gestire le estensioni** nel **estensioni** menu.
+5. Per installare l'estensione nell'istanza principale di Visual Studio o in un altro computer, trovare il file *VSIX* nella directory *bin* . Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallarla, scegliere **Gestisci estensioni** dal menu **estensioni** .
 
 ::: moniker-end
 
-## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Aggiungere un comando o movimento a un progetto VSIX separato
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Aggiungere un comando o un movimento a un progetto VSIX separato
 
 Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori.
 
@@ -71,9 +71,9 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
    > [!NOTE]
    > È possibile definire più classi dei gestori comandi o movimenti in una stessa libreria di classi, ma è consigliabile definire le classi per la convalida dei livelli in una libreria di classi distinta.
 
-2. Aggiungere o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **vsixmanifest**.
+2. Aggiungere o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source. Extension. vsixmanifest**.
 
-3. Nelle **Esplora soluzioni**, fare clic sul progetto VSIX e scegliere **imposta come progetto di avvio**.
+3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
 
 4. In **source.extension.vsixmanifest**, in **Asset**, aggiungere il progetto di gestore comandi o movimenti come componente MEF.
 
@@ -85,9 +85,9 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
 
     4. Salvare il file.
 
-5. Tornare al progetto di gestore comandi o movimenti e aggiungere i riferimenti di progetto seguenti:
+5. Tornare al progetto del gestore comandi o movimenti e aggiungere i riferimenti al progetto seguenti:
 
-   |**Riferimento**|**Operazioni consentite**|
+   |**Reference**|**Operazioni consentite**|
    |-|-|
    |Programmi\Microsoft Visual Studio [versione]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Creare e modificare livelli|
    |Microsoft.VisualStudio.Uml.Interfaces|Creare e modificare livelli|
@@ -102,11 +102,11 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
 
      [Definizione di un gestore movimenti](#gesture)
 
-7. Per testare la funzionalità, premere **Ctrl**+**F5** oppure **F5**.
+7. Per testare la funzionalità, premere **Ctrl** +**F5** o **F5**.
 
-   Viene aperta un'istanza sperimentale di Visual Studio. In questo caso, creare o aprire un diagramma delle dipendenze.
+   Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza creare o aprire un diagramma delle dipendenze.
 
-8. Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora File.
+8. Per installare VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare **il file VSIX** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora file.
 
 ## <a name="command"></a> Definizione di un comando di menu
 
@@ -214,7 +214,7 @@ namespace MyLayerExtension // Change to your preference.
 
 ## <a name="gesture"></a> Definizione di un gestore movimenti
 
-Un gestore movimenti risponde quando l'utente trascina elementi nel diagramma delle dipendenze e quando l'utente fa doppio clic in qualsiasi punto nel diagramma.
+Un gestore movimenti risponde quando l'utente trascina gli elementi nel diagramma delle dipendenze e quando l'utente fa doppio clic su un punto qualsiasi del diagramma.
 
 È possibile aggiungere al progetto VSIX del gestore comandi o movimenti esistente un file di codice che definisce un gestore movimenti:
 
@@ -246,7 +246,7 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
 
      **OnDragDrop** : viene chiamato quando l'utente rilascia un elemento nel diagramma.
 
-- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Ad esempio:
+- Il primo argomento per ogni metodo è un `IShape`, da cui è possibile ottenere l'elemento del livello. Esempio:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
     }
     ```
 
-- I gestori per alcuni tipi di elemento trascinato sono già definiti. Ad esempio, l'utente può trascinare elementi da Esplora soluzioni in un diagramma di dipendenza. Non è possibile definire un gestore del trascinamento per questi tipi di elemento. In questi casi, i metodi `DragDrop` non verranno richiamati.
+- I gestori per alcuni tipi di elemento trascinato sono già definiti. Ad esempio, l'utente può trascinare elementi da Esplora soluzioni in un diagramma delle dipendenze. Non è possibile definire un gestore del trascinamento per questi tipi di elemento. In questi casi, i metodi `DragDrop` non verranno richiamati.
 
 ## <a name="see-also"></a>Vedere anche
 

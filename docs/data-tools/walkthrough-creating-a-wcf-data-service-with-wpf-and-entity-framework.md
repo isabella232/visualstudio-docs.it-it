@@ -11,26 +11,26 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ed07e723b2cb423883491d7e6ca3774a12d0824
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925447"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648083"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
 Questa procedura dettagliata illustra come creare un semplice servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] incluso in un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e come accedervi da un'applicazione Windows Forms.
 
 In questa procedura dettagliata:
 
 - Creare un'applicazione Web per ospitare un servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
-- Creare un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] oggetto che rappresenta `Customers` la tabella nel database Northwind.
+- Creare una [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] che rappresenti la tabella `Customers` nel database Northwind.
 
 - Creare un oggetto [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
@@ -40,7 +40,7 @@ In questa procedura dettagliata:
 
 - Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
 1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
@@ -74,7 +74,7 @@ Nel primo passaggio viene aggiunto un progetto Web per ospitare il servizio.
 
 4. Nella finestra di dialogo **Nuovo progetto ASP.NET**, nell'elenco **Seleziona modello** scegliere **Vuoto** e quindi fare clic su **OK**.
 
-Nel passaggio successivo viene creato un oggetto [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] che rappresenta la `Customers` tabella nel database Northwind.
+Nel passaggio successivo viene creato un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] che rappresenta la tabella `Customers` nel database Northwind.
 
 ### <a name="to-create-the-entity-data-model"></a>Per creare il modello Entity Data Model
 
@@ -92,7 +92,7 @@ Nel passaggio successivo viene creato un oggetto [!INCLUDE[adonet_edm](../data-t
 
     - Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.
 
-         -oppure-
+         oppure
 
     - Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
@@ -132,11 +132,11 @@ Nel passaggio successivo viene creato e testato il servizio dati.
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. Sulla barra dei menu scegliere **debug** > **Avvia senza eseguire debug** per eseguire il servizio. Viene visualizzata una finestra del browser e viene visualizzata la XML Schema per il servizio.
+6. Nella barra dei menu scegliere **debug**  > **Avvia senza eseguire debug** per eseguire il servizio. Viene visualizzata una finestra del browser e viene visualizzata la XML Schema per il servizio.
 
-7. Nella barra degli **indirizzi** `Customers` immettere alla fine dell'URL per **NorthwindCustomers. svc**, quindi premere il tasto **invio** .
+7. Nella barra degli **indirizzi** immettere `Customers` alla fine dell'URL per **NorthwindCustomers. svc**, quindi premere il tasto **invio** .
 
-     Viene visualizzata una rappresentazione XML dei dati nella `Customers` tabella.
+     Viene visualizzata una rappresentazione XML dei dati nella tabella `Customers`.
 
     > [!NOTE]
     > In alcuni casi, Internet Explorer interpreterà erroneamente i dati come feed RSS. È necessario assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata. Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti al servizio](../data-tools/troubleshooting-service-references.md).
@@ -152,7 +152,7 @@ Nel primo passaggio si aggiunge un progetto di Windows Forms alla soluzione e lo
 
 ### <a name="to-create-the-client-application"></a>Per creare l'applicazione client
 
-1. Sulla barra dei menu scegliere file, **Aggiungi** > **nuovo progetto**.
+1. Nella barra dei menu scegliere file, **aggiungi**  > **nuovo progetto**.
 
 2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **oggetto C# visivo** , scegliere il nodo **Windows** , quindi scegliere **Windows Forms applicazione**.
 
@@ -162,11 +162,11 @@ Nel primo passaggio si aggiunge un progetto di Windows Forms alla soluzione e lo
 
 5. Nella barra dei menu scegliere **Progetto**, **Imposta come progetto di avvio**.
 
-Nel passaggio successivo si aggiungerà un riferimento al servizio a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] nel progetto Web.
+Nel passaggio successivo si aggiungerà un riferimento al servizio all'[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] nel progetto Web.
 
 ### <a name="to-add-a-service-reference"></a>Per aggiungere un riferimento al servizio
 
-1. Nella barra dei menu scegliere **progetto** > **Aggiungi riferimento al servizio**.
+1. Nella barra dei menu scegliere **progetto**  > **Aggiungi riferimento al servizio**.
 
 2. Nella finestra di dialogo **Aggiungi riferimento al servizio** scegliere il pulsante **Individua**.
 
@@ -178,7 +178,7 @@ Nel passaggio successivo viene configurata un'origine dati per abilitare data bi
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Per abilitare il data binding al servizio
 
-1. Sulla barra dei menu scegliere **Visualizza** > **altre** > **origini dati**di Windows.
+1. Nella barra dei menu scegliere **visualizza**  >  altre**origini dati** >  di**Windows** .
 
    Verrà visualizzata la finestra **Origini dati**.
 
@@ -202,7 +202,7 @@ Nel passaggio successivo viene creata l'interfaccia utente che Visualizza i dati
 
 3. Scegliere il controllo **CustomersDataGridView** e nella finestra **Proprietà** impostare la proprietà **Ancora** su **Riempimento**.
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **Form1** e scegliere **Visualizza codice** per aprire l'editor di codice e aggiungere l' `Imports` istruzione `Using` o seguente all'inizio del file:
+4. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **Form1** e scegliere **Visualizza codice** per aprire l'editor di codice e aggiungere l'istruzione `Imports` o `Using` seguente all'inizio del file:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -236,7 +236,7 @@ Nel passaggio successivo viene creata l'interfaccia utente che Visualizza i dati
 
 8. Nel codice aggiunto nel passaggio 4, selezionare `http://localhost:53161/NorthwindCustomers.svc/` e sostituirlo con l'URL appena copiato.
 
-9. Sulla barra dei menu scegliere **debug** > **Avvia debug** per eseguire l'applicazione. Vengono visualizzate le informazioni del cliente.
+9. Nella barra dei menu scegliere **debug**  > **Avvia debug** per eseguire l'applicazione. Vengono visualizzate le informazioni del cliente.
 
    A questo punto si disporrà di un'applicazione nella quale sarà visualizzato un elenco di clienti del servizio NorthwindCustomers. Se si desidera esporre altri dati tramite il servizio, è possibile modificare [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] per includere tabelle aggiuntive dal database Northwind.
 
@@ -251,7 +251,7 @@ In questo passaggio viene personalizzata l'applicazione in modo da filtrare i da
 
 2. Aggiungere al form un controllo <xref:System.Windows.Forms.TextBox> e un controllo <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti**.
 
-3. Aprire il menu di scelta rapida <xref:System.Windows.Forms.Button> per il controllo, scegliere **Visualizza codice**, quindi aggiungere il codice `Button1_Click` seguente nel gestore eventi:
+3. Aprire il menu di scelta rapida per il controllo <xref:System.Windows.Forms.Button>, scegliere **Visualizza codice**, quindi aggiungere il codice seguente nel gestore eventi `Button1_Click`:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -282,11 +282,11 @@ In questo passaggio viene personalizzata l'applicazione in modo da filtrare i da
 
 4. Nel codice precedente, sostituire `http://localhost:53161/NorthwindCustomers.svc` con l'URL del gestore eventi `Form1_Load`.
 
-5. Sulla barra dei menu scegliere **debug** > **Avvia debug** per eseguire l'applicazione.
+5. Nella barra dei menu scegliere **debug**  > **Avvia debug** per eseguire l'applicazione.
 
 6. Nella casella di testo immettere **London**, quindi scegliere il pulsante. Verranno visualizzati solo i clienti di Londra.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Servizi Windows Communication Foundation e dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Procedura: Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio dati WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

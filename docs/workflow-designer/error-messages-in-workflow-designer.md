@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Presentation.ErrorActivity.UI
 - System.Activities.Presentation.View.ErrorView.UI
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 1406802f85c755d4dab25e000843a995be252d0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254804"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650489"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messaggi di errore in Progettazione flussi di lavoro
 
@@ -35,7 +35,7 @@ Gli errori nelle Progettazione flussi di lavoro si verificano nelle situazioni s
 
 4. Sono presenti errori nel file XAML che impediscono il caricamento del flusso di lavoro.
 
-Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro ha esito positivo, ma viene generata un' <xref:System.Activities.InvalidWorkflowException> eccezione in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
+Espressioni non valide e vincoli di convalida non possono impedire la compilazione del flusso di lavoro. La compilazione del flusso di lavoro ha esito positivo, ma viene generata un'<xref:System.Activities.InvalidWorkflowException> in fase di esecuzione. In presenza di errori nel file XAML, la compilazione non riesce.
 
 All'interno di Visual Studio, quando viene caricato un flusso di lavoro, gli errori vengono visualizzati nel **Elenco errori**. Per passare all'attività che rappresenta l'origine dell'errore, fare doppio clic sull'errore nel **Elenco errori**.
 

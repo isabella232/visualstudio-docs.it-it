@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
-ms.translationtype: HT
+ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805332"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647789"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Aggiungere il supporto di altri linguaggi all'editor di Visual Studio
 
@@ -41,7 +41,7 @@ Attualmente Visual Studio supporta le funzioni di colorazione della sintassi e d
 |Clojure|Vai|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
+|CSS|INI|LUA|V|Swift|XML|
 |Docker|Jade|Marca|Ruby|TypeScript|YAML|
 
 Oltre alla colorazione della sintassi e al completamento delle istruzioni di base, Visual Studio ha una funzionalità detta [Navigate To](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/) (Passa a). Questa funzionalità consente di cercare rapidamente file di codice, percorsi dei file e simboli di codice. Visual Studio supporta la funzione Navigate To (Passa a) per i linguaggi seguenti.
@@ -74,13 +74,13 @@ Aggiungere le nuove grammatiche TextMate per Visual Studio nella cartella seguen
 
 In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla situazione specifica:
 
-|Nome cartella|Description|
+|Nome cartella|Descrizione|
 |-----------------|-----------------|
-|\\*\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, *\Matlab*.|
+|\\ *\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, *\Matlab*.|
 |*\Syntaxes*|Cartella della grammatica. Contiene i file della grammatica con estensione *json* per il linguaggio, ad esempio *Matlab.json*.|
 |*\Snippets*|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|
 
-In Windows, *%userprofile%* si risolve nel percorso: *c:\Users\\\<nome utente>*. Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
+In Windows, *%userprofile%* si risolve nel percorso: *c:\Users\\\<nome utente>* . Se nel sistema non esiste la cartella *Extensions*, sarà necessario crearla. Se la cartella esiste già, verrà nascosta.
 
 > [!TIP]
 > Se ci sono file aperti nell'editor, sarà necessario chiuderli e riaprirli per vedere l'evidenziazione della sintassi dopo aver aggiunto le grammatiche TextMate.
@@ -91,4 +91,4 @@ Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMa
 
 - [Aggiungere un'estensione del protocollo di server di linguaggio](../extensibility/adding-an-lsp-extension.md)
 - [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)
-- [Procedura dettagliata: visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Procedura dettagliata: Visualizzare il completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a45bcbdc149a6d3665efb0bc203d4a21138c979a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821091"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653357"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio
 
@@ -66,7 +66,7 @@ La proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, a
 
 5. Impostare il valore per la proprietà **Tempo di preparazione passaggio** immettendo un numero per i secondi richiesti in ogni passaggio per aggiungere gradualmente gli utenti specificati tramite la proprietà **Numero utenti per passaggio**.
 
-6. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore di **Tempo di preparazione passaggio**.
+6. Dopo avere modificato la proprietà scegliere **Salva** nel menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore di **Tempo di preparazione passaggio**.
 
 ## <a name="see-also"></a>Vedere anche
 

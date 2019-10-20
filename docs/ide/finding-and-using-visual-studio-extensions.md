@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f86aa6cf99ae910c9b10bc6e93c408ca2c85265
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150095"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654208"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gestire le estensioni per Visual Studio
 
@@ -65,7 +65,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Installare senza usare la finestra di dialogo Estensioni e aggiornamenti
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **strumenti** > **estensioni e aggiornamenti** non consente di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **strumenti**  > **estensioni e aggiornamenti** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
 > - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo estensioni e aggiornamenti non consente di abilitare o disabilitare le estensioni basate su MSI.
@@ -89,7 +89,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installare senza usare la finestra di dialogo Gestisci estensioni
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **estensioni** > **Gestione estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **estensioni**  > **Gestisci estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
 > - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo Gestisci estensioni non può abilitare o disabilitare le estensioni basate su MSI.
@@ -106,13 +106,13 @@ Se si desidera interrompere l'utilizzo di un'estensione, è possibile disabilita
 
 ## <a name="per-user-and-administrative-extensions"></a>Estensioni amministrative e per utente
 
-La maggior parte delle estensioni è per singolo utente e sono installate nella cartella *%LocalAppData%\Microsoft\VisualStudio\\<\>Visual\\ Studio versione \Extensions* . Alcune estensioni sono di tipo amministrativo e vengono installate nel percorso *\<Cartella di installazione di Visual Studio>\Common7\IDE\Extensions\\* .
+La maggior parte delle estensioni è configurata per utente e viene installata nella cartella *%LocalAppData%\Microsoft\VisualStudio \\ < Visual Studio version \> \extensions \\* . Alcune estensioni sono di tipo amministrativo e vengono installate nel percorso *\<Cartella di installazione di Visual Studio>\Common7\IDE\Extensions\\* .
 
 Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni elevate.
 
 Per limitare il caricamento delle estensioni per utente:
 
-1. Aprire la pagina Opzioni estensioni (**strumenti** > **Opzioni** > **estensioni**di**ambiente** > ).
+1. Aprire la pagina Opzioni estensioni (**strumenti**  > **opzioni**  > **ambiente**  > **estensioni**).
 
 2. Deselezionare la casella **di controllo carica estensioni per utente quando viene eseguito come amministratore** .
 

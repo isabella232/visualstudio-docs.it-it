@@ -9,19 +9,19 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653411"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedura: Specificare agenti di test da usare negli scenari di test di carico
 
-Dopo aver creato il test di carico mediante la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
+Dopo aver creato il test di carico usando la **Creazione guidata test di carico**, è possibile usare l'**Editor test di carico** per modificare le proprietà degli scenari in modo da soddisfare le necessità e gli obiettivi di test specifici.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

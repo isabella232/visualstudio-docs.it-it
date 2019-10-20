@@ -6,70 +6,70 @@ helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f793e6ff468bdec6df499c5e5eb6b8524e9e4d5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747807"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650568"
 ---
-# <a name="workflow-project-templates"></a>Modelli di progetto del flusso di lavoro
+# <a name="workflow-project-templates"></a>Modelli di progetto flusso di lavoro
 
-È possibile creare flussi di lavoro, servizi flusso di lavoro Windows Communication Foundation (WCF), le attività personalizzate e ActivityDesigner personalizzati usando i modelli di progetto di Visual Studio. Questo articolo descrive come creare applicazioni e librerie con i modelli di progetto disponibili in Visual Studio.
+È possibile creare flussi di lavoro, Windows Communication Foundation (WCF) servizi flusso di lavoro, attività personalizzate e ActivityDesigner personalizzati usando i modelli di progetto di Visual Studio. Questo articolo descrive come creare librerie e applicazioni con i modelli di progetto disponibili in Visual Studio.
 
 ## <a name="create-a-workflow-project"></a>Creare un progetto flusso di lavoro
 
-Visual Studio offre quattro diversi modelli di progetto del flusso di lavoro:
+Visual Studio fornisce quattro diversi modelli di progetto del flusso di lavoro:
 
-- App di console del flusso di lavoro
+- App console flusso di lavoro
 
-- App del servizio del flusso di lavoro WCF
+- App del servizio flusso di lavoro WCF
 
-- Libreria di attività
+- Libreria attività
 
 - Libreria ActivityDesigner
 
-Per accedere a questi modelli, prima di tutto installare il **Windows Workflow Foundation** componente di Visual Studio. Per istruzioni dettagliate, vedere [installazione di Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Per accedere a questi modelli, installare prima il componente **Windows Workflow Foundation** di Visual Studio. Per istruzioni dettagliate, vedere [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Dopo aver installato il **Windows Workflow Foundation** component, selezionare **File** > **nuovo** > **progetto**.
+1. Dopo aver installato il componente **Windows Workflow Foundation** , selezionare **File**  > **nuovo**  > **progetto**.
 
-1. Cercare e selezionare un modello di progetto del flusso di lavoro, ad esempio, il **applicazione Console flusso di lavoro** modello.
+1. Cercare e selezionare un modello di progetto flusso di lavoro, ad esempio il modello **applicazione console flusso** di lavoro.
 
-1. Proseguire creare il progetto.
+1. Continuare con per creare il progetto.
 
    > [!NOTE]
-   > Se si desidera aggiungere un nuovo progetto a una soluzione esistente, aprire la soluzione in Visual Studio, fare doppio clic la soluzione in **Esplora soluzioni**e selezionare **Add** > **New Progetto**.
+   > Se si desidera aggiungere un nuovo progetto a una soluzione esistente, aprire la soluzione in Visual Studio, fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni**e selezionare **Aggiungi**  > **nuovo progetto**.
 
-## <a name="workflow-console-app"></a>App di console del flusso di lavoro
+## <a name="workflow-console-app"></a>App console flusso di lavoro
 
-Se si sceglie la **applicazione Console flusso di lavoro** modello, Visual Studio crea una definizione del flusso di lavoro in XAML. La finestra di progettazione del flusso di lavoro si apre e visualizza l'area di disegno del flusso di lavoro che è stato creato. Per creare un flusso di lavoro, trascinare attività o altri elementi del flusso di lavoro dalla **casella degli strumenti** all'area di progettazione.
+Se si sceglie il modello **applicazione console flusso di lavoro** , Visual Studio crea una definizione del flusso di lavoro in XAML. Viene aperto il Progettazione flussi di lavoro e viene visualizzata l'area di disegno per il flusso di lavoro creato. Per comporre un flusso di lavoro, trascinare le attività o altri elementi del flusso di lavoro dalla **casella degli strumenti** all'area di progettazione.
 
-## <a name="wcf-workflow-service-app"></a>App del servizio del flusso di lavoro WCF
+## <a name="wcf-workflow-service-app"></a>App del servizio flusso di lavoro WCF
 
-Se si sceglie la **applicazione del servizio del flusso di lavoro WCF** modello, Visual Studio crea una definizione del servizio come XAML. Verrà visualizzata la finestra di progettazione del flusso di lavoro per la visualizzazione di progettazione con una <xref:System.Activities.Statements.Sequence> che contiene un set di attività <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply> attività.
+Se si sceglie il modello **applicazione del servizio flusso di lavoro WCF** , Visual Studio crea una definizione di servizio come XAML. Il Progettazione flussi di lavoro viene aperto nella visualizzazione progettazione con un'attività <xref:System.Activities.Statements.Sequence> contenente un set di attività di <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply>.
 
-## <a name="activity-library"></a>Libreria di attività
+## <a name="activity-library"></a>Libreria attività
 
-Se si sceglie la **libreria di attività** modello, Visual Studio crea una definizione di attività in XAML. Finestra di progettazione del flusso di lavoro si apre e visualizza l'area di disegno per l'attività personalizzata. Trascinare un'attività dalla **casella degli strumenti** all'area di progettazione per includerla nell'attività personalizzata.
+Se si sceglie il modello di **libreria di attività** , Visual Studio crea una definizione di attività in XAML. Progettazione flussi di lavoro viene aperto e viene visualizzata l'area di disegno per l'attività personalizzata. Trascinare un'attività dalla **casella degli strumenti** nell'area di progettazione per includerla nell'attività personalizzata.
 
 > [!NOTE]
-> Si è consentita una sola attività figlio nel corpo dell'attività personalizzata. Tuttavia, tale attività figlio può essere un'attività composta, ad esempio un <xref:System.Activities.Statements.Sequence> attività o <xref:System.Activities.Statements.Flowchart> attività.
+> Si è consentita una sola attività figlio nel corpo dell'attività personalizzata. Tuttavia, tale attività figlio potrebbe essere un'attività composita, ad esempio un'attività <xref:System.Activities.Statements.Sequence> o un'attività <xref:System.Activities.Statements.Flowchart>.
 
 ## <a name="activity-designer-library"></a>Libreria ActivityDesigner
 
-Se si sceglie la **libreria ActivityDesigner** modello, Visual Studio crea una definizione dell'ActivityDesigner in un file di implementazione code-behind e XAML. La finestra di progettazione del flusso di lavoro apre e visualizza l'area di disegno per l'ActivityDesigner. Trascinare Windows Presentation Foundation (WPF) dei controlli **casella degli strumenti** all'area di progettazione per usarli nell'ActivityDesigner personalizzati.
+Se si sceglie il modello **libreria** ActivityDesigner, Visual Studio crea una definizione di ACTIVITYDESIGNER in XAML e un file di implementazione code-behind. Viene aperto il Progettazione flussi di lavoro e viene visualizzata l'area di disegno per l'ActivityDesigner. Trascinare i controlli Windows Presentation Foundation (WPF) dalla **casella degli strumenti** nell'area di progettazione per utilizzarli nell'ActivityDesigner personalizzato.
 
-Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [come: Creare un ActivityDesigner personalizzato](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
+Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [procedura: creare un ActivityDesigner personalizzato](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
-> Gli ActivityDesigner personalizzati sono utilizzabile per le attività personalizzate e per attività predefinite di .NET.
+> Gli ActivityDesigner personalizzati possono essere utilizzati per le attività personalizzate e per le attività .NET predefinite.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Utilizzare la finestra di progettazione del flusso di lavoro](developing-applications-with-the-workflow-designer.md)
-- [Progettazione flussi di lavoro (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)
+- [Usare il Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)
+- [Flussi di lavoro di progettazione (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

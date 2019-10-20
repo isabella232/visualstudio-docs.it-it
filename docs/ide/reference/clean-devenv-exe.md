@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /Clean Devenv switch
 - Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5f46a17371f0c83d3bdb3873c0138eca87c6b3d5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573092"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663813"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -30,7 +30,7 @@ Pulisce tutti i file intermedi e le directory di output.
 devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 - *SolutionName*
 
@@ -38,21 +38,21 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *Config*
 
-  Facoltativo. La configurazione (ad esempio, `Debug` o `Release`) per pulire i file intermedi per la soluzione denominata in *SolutionName*. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se questo argomento non viene specificato o viene specificata una stringa vuota (`""`), lo strumento usa la configurazione attiva della soluzione.
+  Parametro facoltativo. La configurazione (ad esempio, `Debug` o `Release`) per pulire i file intermedi per la soluzione denominata in *SolutionName*. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se questo argomento non viene specificato o viene specificata una stringa vuota (`""`), lo strumento usa la configurazione attiva della soluzione.
 
 - `/Project` *ProjName*
 
-  Facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
+  Parametro facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il nome visualizzato del progetto o un percorso relativo dalla cartella *SolutionName* al file di progetto. È anche possibile immettere il percorso completo e il nome del file di progetto.
 
 - `/ProjectConfig` *ProjConfigName*
 
-  Facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la pulizia del `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *Config*.
+  Parametro facoltativo. Nome della configurazione della build del progetto (ad esempio, `Debug` o `Release`) da usare per la pulizia del `/Project` denominato. Se è disponibile più di una piattaforma di soluzione, è necessario specificare anche la piattaforma (ad esempio, `Debug|Win32`). Se si specifica questa opzione, viene eseguito l'override dell'argomento *Config*.
 
 - `/Out` *OutputFilename*
 
-  Facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
+  Parametro facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Questa opzione ha la stessa funzione del comando di menu **Pulisci soluzione** all'interno dell'IDE.
 

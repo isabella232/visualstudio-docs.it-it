@@ -2,17 +2,17 @@
 title: Implementare un'interfaccia
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 58c714dec8b8a4679d34168cdaf901dc2fb94ea6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 45265c10677b8d3eadc27eb3b6e22c69bb5299be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974790"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658923"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementare un'interfaccia in Visual Studio
 
@@ -26,7 +26,7 @@ Questa generazione di codice si applica a:
 
 **Quando:** si vuole ereditare da un'interfaccia.
 
-**Perché?:** è possibile implementare manualmente tutte le interfacce, una alla volta. Questa funzionalità, tuttavia, genera automaticamente tutte le firme dei metodi.
+**Perché:** è possibile implementare manualmente tutte le interfacce, una alla volta, tuttavia questa funzionalità genera automaticamente tutte le firme dei metodi.
 
 ## <a name="how-to"></a>Procedura
 
@@ -43,11 +43,11 @@ Questa generazione di codice si applica a:
 2. Eseguire quindi una delle operazioni seguenti:
 
    - **Tastiera**
-      - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+      - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
       - Passare il mouse sulla sottolineatura rossa ondulata e fare clic sull'icona a forma di ![lampadina di errore](media/error-bulb.png) visualizzata.
-      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
+      - Fare clic sul pulsante ![lampadina di errore](media/error-bulb.png) visualizzato nel margine sinistro se il cursore del testo si trova già nella riga con la sottolineatura ondulata rossa.
 
 3. Scegliere **Implementa interfaccia** dal menu a discesa.
 

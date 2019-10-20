@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add New Item command
 - File.AddNewItem command
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a73bd7008e0058fe984fcb708c92c2bd983d427
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c08ae19ee6e1238d412e2df2f3a4ebe544bca851
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919375"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658785"
 ---
 # <a name="add-new-item-command"></a>Comando Aggiungi nuovo elemento
 Aggiunge un nuovo elemento, ad esempio un file con estensione htm, css o txt o una pagina con frame, alla soluzione corrente e lo apre.
@@ -29,13 +29,13 @@ Aggiunge un nuovo elemento, ad esempio un file con estensione htm, css o txt o u
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `filename`\
-facoltativo. Percorso e nome file dell'elemento da aggiungere alla soluzione.
+Parametro facoltativo. Percorso e nome file dell'elemento da aggiungere alla soluzione.
 
 ## <a name="switches"></a>Opzioni
 /t: `templatename`\
-facoltativo. Specifica il tipo di file da creare. Se non viene specificato alcun modello, per impostazione predefinita viene creato un file di testo.
+Parametro facoltativo. Specifica il tipo di file da creare. Se non viene specificato alcun modello, per impostazione predefinita viene creato un file di testo.
 
 La sintassi dell'argomento /t:`templatename` riflette le informazioni riportate nella finestra di dialogo **Aggiungi nuovo elemento di soluzione**. È necessario immettere il nome completo della categoria e il tipo di file separati da una barra rovesciata (`\`) racchiudendo l'intera stringa tra virgolette.
 
@@ -46,7 +46,7 @@ Ad esempio, per creare un nuovo file di testo, per l'argomento /t:`templatename`
 ```
 
 /e: `editorname`\
-facoltativo. Il nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+Parametro facoltativo. Il nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
 La sintassi dell'argomento `editorname` usa i nomi degli editor così come visualizzati nella **finestra di dialogo Apri con**, racchiusi tra virgolette.
 
@@ -68,4 +68,4 @@ In questo esempio un nuovo elemento di soluzione, denominato MyHTMLpg, viene agg
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

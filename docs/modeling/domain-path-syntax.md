@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, domain path
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47c2adc2894cc67b337243c30f4a62bc3642ff39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8343f3a417c0c435711fb1df337d47c3a747905
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834172"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653813"
 ---
 # <a name="domain-path-syntax"></a>Sintassi del percorso di dominio
 Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi specifici in un modello.
@@ -23,13 +23,13 @@ Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi spe
 
  Un percorso di dominio usa il formato seguente:
 
- *RelationshipName.PropertyName/!Role*
+ *RelationshipName. PropertyName/! Ruolo*
 
  ![Relazione di riferimento CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 
- La sintassi attraversa l'albero del modello. Ad esempio, la relazione di dominio **CommentReferencesSubjects** nella figura sopra riportata ha un **soggetti** ruolo. Il segmento di percorso **/! Subjectt** specifica che il percorso termina con gli elementi accessibili tramite il **soggetti** ruolo.
+ La sintassi attraversa l'albero del modello. La relazione di dominio **CommentReferencesSubjects** nell'illustrazione precedente, ad esempio, ha un ruolo **Subjects** . Segmento di percorso **/! Subjectt** specifica che il percorso termina con gli elementi a cui si accede tramite il ruolo **Subjects** .
 
- Ogni segmento inizia con il nome di una relazione di dominio. Se l'attraversamento è da un elemento a una relazione, il segmento di percorso viene visualizzato come *PropertyName*. Se l'hop è da un collegamento a un elemento, il segmento di percorso viene visualizzato come *Relationship /! RoleName*.
+ Ogni segmento inizia con il nome di una relazione di dominio. Se l'attraversamento è da un elemento a una relazione, il segmento di percorso viene visualizzato come *Relationship. PropertyName*. Se l'hop è da un collegamento a un elemento, il segmento di percorso viene visualizzato come *Relationship/! RoleName*.
 
  Le barre separano la sintassi di un percorso. Ogni segmento di percorso è un hop da un elemento a un collegamento (istanza di una relazione) o da un collegamento a un elemento. I segmenti di percorso vengono visualizzati spesso in coppie. Un segmento di percorso rappresenta un hop da un elemento a un collegamento e il segmento successivo rappresenta un hop dal collegamento all'elemento all'altra estremità. Un collegamento può anche essere l'origine o la destinazione di una relazione stessa.
 

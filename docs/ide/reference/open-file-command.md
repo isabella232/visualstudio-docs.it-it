@@ -9,17 +9,17 @@ helpviewer_keywords:
 - File.OpenFile command
 - of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b76db52534f4c264e065152548d49f9773863a29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 811667e89f01728c5a7516f5e7f7a12d448c6311
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995247"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666427"
 ---
 # <a name="open-file-command"></a>Comando Apri file
 
@@ -31,7 +31,7 @@ Apre un file esistente e consente di specificare un editor.
 File.OpenFile filename [/e:editorname]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 `filename`
 
@@ -41,7 +41,7 @@ Obbligatorio. Percorso completo o parziale e nome file del file da aprire. I per
 
 /e:`editorname`
 
-Facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
+Parametro facoltativo. Nome dell'editor in cui verrà aperto il file. Se viene specificato l'argomento ma non viene fornito il nome di un editor, verrà visualizzata la finestra di dialogo **Apri con**.
 
 La sintassi dell'argomento /e:`editorname` usa i nomi degli editor così come visualizzati nella finestra di dialogo Apri con, racchiusi tra virgolette.
 
@@ -51,7 +51,7 @@ Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento 
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Quando si immette un percorso, il completamento automatico tenta di individuare il percorso e il nome file corretti.
 

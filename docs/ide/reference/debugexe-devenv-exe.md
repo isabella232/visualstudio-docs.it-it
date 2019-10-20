@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /DebugExe [devenv.exe]
 - debugging executables
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05266a6f1b5ee0be22e2edc8df1c03b720844f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bb4eb1eb49cd6b29740fb6d365a98a51cc28387e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968080"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661672"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
@@ -30,13 +30,13 @@ Apre il file eseguibile specificato per il debug.
 devenv /DebugExe ExecutableFile
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 - *ExecutableFile*
 
   Obbligatorio. Percorso e nome di un file con estensione `.exe`. Se il file `.exe` non viene trovato o non esiste, non viene visualizzato alcun avviso o errore e Visual Studio viene avviato normalmente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Le stringhe che seguono il parametro *ExecutableFile* vengono passate a tale file come argomenti.
 

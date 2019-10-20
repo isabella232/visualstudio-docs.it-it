@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Diff Devenv switch
 - Diff Devenv switch
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 26d438e9cea35cbf178658d8def78e264804240c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945783"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654504"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -29,7 +29,7 @@ Confronta due file. Le differenze vengono visualizzate in una finestra speciale 
 devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 - *SourceFile*
 
@@ -41,13 +41,13 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 - *SourceDisplayName*
 
-  Facoltativo. Nome visualizzato del primo file.
+  Parametro facoltativo. Nome visualizzato del primo file.
 
 - *TargetDisplayName*
 
-  Facoltativo. Nome visualizzato del secondo file.
+  Parametro facoltativo. Nome visualizzato del secondo file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Se un'istanza dell'IDE è già aperta, il confronto dei file viene visualizzato in una scheda nell'IDE corrente.
 

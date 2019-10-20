@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7dec16291758b330614d8a522aaf3825ae461047
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72449053"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649573"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola FxCop
 
@@ -67,8 +67,8 @@ ID regola | Titolo
 [CA1063](ca1063-implement-idisposable-correctly.md) | Implementare IDisposable correttamente
 [CA1064](ca1064-exceptions-should-be-public.md) | Le eccezioni devono essere pubbliche
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Non generare eccezioni in posizioni non previste
-Ca1066 | Il tipo {0} deve implementare IEquatable @ no__t-1T > perché esegue l'override di Equals
-CA1067 | Eseguire l'override di Object. Equals (Object) quando si implementa IEquatable @ no__t-0T >
+Ca1066 | Il tipo {0} deve implementare IEquatable \<T > perché esegue l'override di Equals
+CA1067 | Eseguire l'override di Object. Equals (Object) quando si implementa IEquatable \<T >
 [CA1068](ca1068.md) | I parametri CancellationToken devono essere indicati per ultimi
 Ca1200 | Evitare l'uso di tag cref con un prefisso
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Non passare valori letterali come parametri localizzati

@@ -12,42 +12,42 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818163"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648824"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associare controlli alle immagini di un database
 
-È possibile usare la **Zdroje dat** finestra per associare un'immagine in un database a un controllo nell'applicazione. Ad esempio, è possibile associare un'immagine da un <xref:System.Windows.Controls.Image> controllo in un'applicazione WPF o a un <xref:System.Windows.Forms.PictureBox> controllo in un'applicazione Windows Form.
+È possibile utilizzare la finestra **origini dati** per associare un'immagine di un database a un controllo nell'applicazione. Ad esempio, è possibile associare un'immagine a un controllo <xref:System.Windows.Controls.Image> in un'applicazione WPF o a un controllo <xref:System.Windows.Forms.PictureBox> in un Windows Forms Application.
 
-Le immagini in un database sono in genere archiviate come matrici di byte. Gli elementi nel **Zdroje dat** finestra in cui vengono archiviati come matrici di byte avere il controllo tipo impostato su **None** per impostazione predefinita, poiché le matrici di byte possono contenere qualsiasi elemento da una semplice matrice di byte del file eseguibile un'applicazione di grandi dimensioni. Per creare un controllo con associazione a dati per un elemento di matrice di byte nel **Zdroje dat** finestra che rappresenta un'immagine, è necessario selezionare il controllo da creare.
+Le immagini in un database vengono in genere archiviate come matrici di byte. Per impostazione predefinita, gli elementi della finestra **origini dati** archiviati come matrici di byte hanno il tipo di controllo impostato su **None** , perché le matrici di byte possono contenere qualsiasi elemento di una semplice matrice di byte nel file eseguibile di un'applicazione di grandi dimensioni. Per creare un controllo con associazione a dati per un elemento della matrice di byte nella finestra **origini dati** che rappresenta un'immagine, è necessario selezionare il controllo da creare.
 
-La procedura seguente si presuppone che il **Zdroje dat** finestra sia già popolata con un elemento che è associato all'immagine.
+Nella procedura seguente si presuppone che la finestra **origini dati** sia già popolata con un elemento associato all'immagine.
 
-## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Per associare un'immagine in un database a un controllo
+## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Per associare un'immagine di un database a un controllo
 
-1. Assicurarsi che l'area di progettazione che si desidera aggiungere il controllo viene aperto in WPF Designer o in Progettazione Windows Form.
+1. Assicurarsi che l'area di progettazione a cui si desidera aggiungere il controllo sia aperta in WPF Designer o nella Progettazione Windows Form.
 
-2. Nel **Zdroje dat** finestra, espandere la tabella desiderata o per visualizzare le colonne o proprietà dell'oggetto.
+2. Nella finestra **origini dati** espandere la tabella o l'oggetto desiderato per visualizzare le relative colonne o proprietà.
 
    > [!TIP]
-   > Se il **Zdroje dat** finestra non è aperta, aprirlo selezionando **View** > **Other Windows** > **Zdroje dat**.
+   > Se la finestra **origini dati** non è aperta, aprirla selezionando **Visualizza**  > **altre** **origini dati** >  di Windows.
 
-3. Selezionare la colonna o proprietà che contiene i dati di immagine e selezionare uno dei seguenti controlli dal relativo elenco di controllo elenco a discesa:
+3. Selezionare la colonna o la proprietà che contiene i dati dell'immagine e selezionare uno dei controlli seguenti dall'elenco di controllo a discesa:
 
-    - Se la finestra di progettazione WPF è aperto, selezionare **immagine**.
+    - Se Progettazione WPF è aperto, selezionare **immagine**.
 
-    - Se la finestra di progettazione Windows Form è aperto, selezionare **PictureBox**.
+    - Se la finestra di progettazione Windows Forms è aperta, selezionare **PictureBox**.
 
-    - In alternativa, è possibile selezionare un altro controllo che supporta il data binding e in grado di visualizzare immagini. Se il controllo che si desidera utilizzare non è presente nell'elenco dei controlli disponibili, è possibile aggiungerlo all'elenco e quindi selezionarlo. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    - In alternativa, è possibile selezionare un controllo diverso che supporti data binding e che possa visualizzare immagini. Se il controllo che si desidera utilizzare non è presente nell'elenco dei controlli disponibili, è possibile aggiungerlo all'elenco e quindi selezionarlo. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="see-also"></a>Vedere anche
 

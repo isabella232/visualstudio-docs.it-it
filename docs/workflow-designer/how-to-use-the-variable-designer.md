@@ -1,40 +1,40 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: Usare la finestra di progettazione variabili'
+title: 'Progettazione flussi di lavoro-procedura: usare la finestra di progettazione variabili'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949046"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650243"
 ---
-# <a name="how-to-use-the-variable-designer"></a>Procedura: Usare la finestra di progettazione variabili
+# <a name="how-to-use-the-variable-designer"></a>Procedura: utilizzare la finestra di progettazione variabili
 
-La finestra di progettazione variabili consente di creare variabili da usare in scenari di data binding e istruzioni condizionali. Viene visualizzata la finestra di progettazione facendo il **variabili** pulsante nell'angolo inferiore sinistro dell'area di progettazione. La finestra di progettazione contiene un elenco di variabili che vengono visualizzati in un formato tabulare e possono essere ordinati per ognuna delle intestazioni di colonna, tranne per il **predefinito** colonna. Ogni variabile contiene un nome, un tipo di variabile, un ambito e un valore predefinito (se presente). Il nome e il valore predefinito sono campi di testo modificabili mentre il tipo e l'ambito sono elenchi a discesa. L'ambito è l'attività selezionata al momento del richiamo della finestra di progettazione variabili. Se non è possibile creare una variabile nell'ambito della selezione, l'ambito verrà impostato in modo predefinito sull'attività predecessore più vicina della selezione in modo da consentire la creazione di variabili nel relativo ambito. Per altre informazioni, vedere [variabili e argomenti (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
+La finestra di progettazione variabili consente di creare variabili da usare in scenari di data binding e istruzioni condizionali. Per accedere alla finestra di progettazione, fare clic sul pulsante **variabili** nell'angolo inferiore sinistro dell'area di disegno. La finestra di progettazione contiene un elenco di variabili che vengono visualizzate in un formato tabulare e possono essere ordinate in base a ognuna delle intestazioni di colonna, ad eccezione della colonna **predefinita** . Ogni variabile contiene un nome, un tipo di variabile, un ambito e un valore predefinito (se presente). Il nome e il valore predefinito sono campi di testo modificabili mentre il tipo e l'ambito sono elenchi a discesa. L'ambito è l'attività selezionata al momento del richiamo della finestra di progettazione variabili. Se non è possibile creare una variabile nell'ambito della selezione, l'ambito verrà impostato in modo predefinito sull'attività predecessore più vicina della selezione in modo da consentire la creazione di variabili nel relativo ambito. Per altre informazioni, vedere [variabili e argomenti (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
  L'ordinamento non viene applicato fino a quando l'utente non usa in modo esplicito uno dei controlli di ordinamento, chiude e riapre la finestra di progettazione variabili o crea un'altra variabile.
 
 ## <a name="to-create-a-new-variable"></a>Per creare una nuova variabile
 
-1. Aprire una soluzione del flusso di lavoro o attività in Visual Studio.
+1. Aprire una soluzione flusso di lavoro o attività in Visual Studio.
 
 2. Nell'area di progettazione selezionare un'attività nel flusso di lavoro.
 
-3. Aprire la finestra di progettazione variabile facendo il **variabili** pulsante nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione variabili.
+3. Aprire la finestra di progettazione variabili facendo clic sul pulsante **variabili** nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione variabili.
 
-4. Fare clic sulla riga vuota denominata **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile con i valori predefiniti seguenti: variablex per il **Name** dove x è di tipo integer e un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di variabili univoci,  **Stringa** per il **tipo di variabile**, e **sequenza** per i **ambito**. Non vengono aggiunti valori per **predefinito**. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
+4. Fare clic sulla riga vuota con etichetta **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile usando i valori predefiniti seguenti: VariableX per il **nome** dove x è un numero intero con un valore iniziale di 1 che viene incrementato automaticamente per creare nomi di variabile univoci, **stringa** per la **variabile tipo**e **sequenza** per l' **ambito**. Per **impostazione predefinita**, non viene aggiunto alcun valore. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
 
     > [!NOTE]
-    > Per eliminare una variabile, selezionare la variabile facendovi clic sopra e quindi premere il **eliminare** chiave.
+    > Per eliminare una variabile, selezionarla facendo clic su di essa e quindi premere il tasto **Canc** .
 
 ## <a name="see-also"></a>Vedere anche
 

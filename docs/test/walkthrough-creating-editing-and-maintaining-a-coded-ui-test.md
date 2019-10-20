@@ -2,17 +2,17 @@
 title: Creare un test codificato dell'interfaccia utente
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976304"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659639"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
@@ -166,7 +166,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Modificare ed eseguire di nuovo il test codificato dell'interfaccia utente
 
-1. Nella finestra **Esplora test** selezionare il test non riuscito e quindi nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest()**.
+1. Nella finestra **Esplora test** selezionare il test non riuscito e quindi nella sezione **StackTrace** scegliere il primo collegamento a **UIMap.SimpleAppTest()** .
 
 2. Il file *UIMap.Designer.cs* verrà aperto con il punto di errore evidenziato nel codice:
 
@@ -249,7 +249,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
      Il test non funziona perché il test codificato dell'interfaccia utente non è in grado di individuare il pulsante mappato in origine come button1 in UIMap. Il refactoring può influire in questo modo sui test codificati dell'interfaccia utente.
 
-5. Nella sezione **StackTrace** di **Esplora test** scegliere il primo collegamento accanto a **UIMpa.ModifiedSimpleAppTest()**.
+5. Nella sezione **StackTrace** di **Esplora test** scegliere il primo collegamento accanto a **UIMpa.ModifiedSimpleAppTest()** .
 
      Verrà aperto il file *UIMap.cs*. Il punto di errore è evidenziato nel codice:
 
@@ -264,7 +264,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 ## <a name="map-refactored-control-rerun-the-test"></a>Mapping del controllo di cui è stato effettuato il refactoring, eseguire di nuovo il test
 
-1. Nel file *CodedUITest1.cs* fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod1()**, scegliere **Genera codice per test codificato dell'interfaccia utente** e quindi fare clic su **Usa il generatore di test codificati dell'interfaccia utente**.
+1. Nel file *CodedUITest1.cs* fare clic con il pulsante destro del mouse sul metodo **CodedUITestMethod1()** , scegliere **Genera codice per test codificato dell'interfaccia utente** e quindi fare clic su **Usa il generatore di test codificati dell'interfaccia utente**.
 
      Verrà visualizzato **UIMap - Generatore di test codificati dell'interfaccia utente**.
 

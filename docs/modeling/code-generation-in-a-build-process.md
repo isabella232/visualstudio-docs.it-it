@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163129"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654203"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Richiama trasformazione testo nel processo di compilazione
 
@@ -49,7 +49,7 @@ Se [il server di compilazione](/azure/devops/pipelines/agents/agents) è in esec
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
-  
+
 > [!TIP]
 > Se si ottiene un `MissingMethodException` per un metodo Microsoft. CodeAnalysis quando si eseguono destinazioni di compilazione TextTemplating in un server di compilazione, assicurarsi che gli assembly Roslyn si trovino in una directory denominata *Roslyn* che si trova nella stessa directory del file eseguibile di compilazione, ad esempio  *MSBuild. exe*).
 
@@ -116,11 +116,11 @@ Esistono alcune proprietà che è possibile inserire all'interno del file di pro
     ```
 
      Per impostazione predefinita, l'attività MSBuild T4 rigenera un file di output se è più vecchio di:
-     
+
      - file modello
      - tutti i file inclusi
      - tutti i file precedentemente letti dal modello o da un processore di direttiva utilizzato
-     
+
      Si tratta di un test di dipendenza più potente rispetto a quello usato dal comando **trasforma tutti i modelli** in Visual Studio, che confronta solo le date del modello e del file di output.
 
 Per eseguire solo le trasformazioni di testo nel progetto, richiamare l'attività TransformAll:
@@ -184,7 +184,7 @@ Queste proprietà sono utilizzate solo da MSBuild. Non influiscono sulla generaz
 </ItemGroup>
 ```
 
-Una cartella utile da reindirizzare a è `$(IntermediateOutputPath)`.
+Una cartella utile per il reindirizzamento a è `$(IntermediateOutputPath)`.
 
 Se si specifica un nome di file di output, avrà la precedenza sull'estensione specificata nella direttiva output nei modelli.
 
@@ -285,7 +285,7 @@ Queste direttive ottengono valori da T4parameterValues in MSBuild e negli host d
 
 ## <a name="q--a"></a>Domande e risposte
 
-**Why desidera trasformare i modelli nel server di compilazione? Sono già stati trasformati i modelli in Visual Studio prima di archiviare il codice.**
+**Perché si desidera trasformare i modelli nel server di compilazione? Ho già trasformato i modelli in Visual Studio prima di archiviare il codice.**
 
 Se si aggiorna un file incluso o un altro file letto dal modello, Visual Studio non trasforma automaticamente il file. La trasformazione dei modelli come parte della compilazione garantisce che tutti gli elementi siano aggiornati.
 

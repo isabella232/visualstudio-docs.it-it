@@ -16,23 +16,23 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996f0336742441e565d16b0fe491e846d0d24329
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811687"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654123"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 
 I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le idee sul codice e i requisiti dell'utente che devono supportare il sistema software.
 
-Per informazioni sulle versioni di Visual Studio supportano ogni tipo di diagramma, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per individuare le versioni di Visual Studio che supportano ogni tipo di diagramma, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 Per visualizzare l'architettura di un sistema o codice esistente, creare i diagrammi seguenti:
 
@@ -44,16 +44,16 @@ Per visualizzare l'architettura di un sistema o codice esistente, creare i diagr
 
 ## <a name="related-tasks"></a>Attività correlate
 
-|**Argomento**|**Task**|
+|**Argomento**|**Attività**|
 |-|-|
-|[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe codice e diagrammi delle dipendenze per una migliore comprensione di codice non familiare.|
+|[Visualizzare il codice](../modeling/visualize-code.md)|Creare mappe del codice e diagrammi di dipendenza per comprendere meglio il codice non noto.|
 |[Modellare i requisiti utente](../modeling/model-user-requirements.md)|Usare modelli per chiarire e comunicare le esigenze degli utenti.|
 |[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|Usare i modelli per descrivere la struttura complessiva e il comportamento del sistema e per verificare che soddisfi esigenze degli utenti.|
 |[Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)|Verificare che il software continui a essere coerente con le esigenze degli utenti e con l'architettura complessiva del sistema.|
-|[Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usare i modelli in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usare i modelli per comprendere e modificare il sistema durante lo sviluppo.|
+|[Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usare i modelli nello sviluppo agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usare i modelli per comprendere e modificare il sistema durante lo sviluppo.|
 |[Strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)|Organizzare i modelli in un progetto di medie o grandi dimensioni.|
 
 ## <a name="resources"></a>Risorse
 
-- [Visual Studio Visualization and Modeling Tools Forum](http://go.microsoft.com/fwlink/?LinkId=184720)
+- [Forum sugli strumenti di modellazione di Visual Studio &](http://go.microsoft.com/fwlink/?LinkId=184720)
 - [Forum sull'estendibilità di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

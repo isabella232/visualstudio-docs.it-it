@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ef03b3833f30c1376bd3b2787f4ca773c992ef
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870676"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652303"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi delle dipendenze
 
@@ -22,7 +22,7 @@ Quando si scrive il codice di estensione per i diagrammi di dipendenza, è possi
 
 ## <a name="non-visible-properties"></a>Proprietà non visibili
 
-Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma delle dipendenze, non è necessario definire un componente MEF. In [ILayerElement](/previous-versions/ff644511(v=vs.140)) è presente un dizionario denominato `Properties`. Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvati come parte del diagramma delle dipendenze.
+Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma delle dipendenze, non è necessario definire un componente MEF. In [ILayerElement](/previous-versions/ff644511(v=vs.140))è presente un dizionario denominato `Properties`. Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvati come parte del diagramma delle dipendenze.
 
 ## <a name="editable-properties"></a>Proprietà modificabili
 
@@ -47,7 +47,7 @@ Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma
 
 **Verificare che il codice si trovi in un progetto VSIX**
 
-Se la proprietà fa parte di un comando, di un movimento o di un progetto di convalida, non è necessario aggiungere alcun elemento. Il codice per la proprietà personalizzata deve essere specificato in un progetto Extensibility di Visual Studio definito come componente MEF. Per altre informazioni, vedere [aggiungere comandi e movimenti a diagrammi di dipendenza](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [aggiungere la convalida dell'architettura personalizzata ai diagrammi](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)delle dipendenze.
+Se la proprietà fa parte di un comando, di un movimento o di un progetto di convalida, non è necessario aggiungere alcun elemento. Il codice per la proprietà personalizzata deve essere specificato in un progetto Extensibility di Visual Studio definito come componente MEF. Per altre informazioni, vedere [aggiungere comandi e movimenti a diagrammi di dipendenza](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [aggiungere la convalida dell'architettura personalizzata ai diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
 **Definire la proprietà personalizzata**
 
