@@ -10,19 +10,19 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: fb76fd61cb06b2877ebe0cd1714610b25845ebc0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259819"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647106"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 
@@ -76,9 +76,9 @@ Il codice XML seguente illustra il modello di frammento di base:
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
-   
+
    > [!NOTE]
-   > Non è possibile specificare come impostare un rientro o formattare le righe di codice nella sezione **CDATA** di un frammento di codice. Al momento dell'inserimento, il servizio di linguaggio formatta automaticamente il codice inserito. 
+   > Non è possibile specificare come impostare un rientro o formattare le righe di codice nella sezione **CDATA** di un frammento di codice. Al momento dell'inserimento, il servizio di linguaggio formatta automaticamente il codice inserito.
 
 5. Salvare il frammento come *SquareRoot.snippet* in un percorso qualsiasi.
 

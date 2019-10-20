@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di un Menu di scelta rapida in una finestra degli strumenti | Microsoft Docs
+title: Aggiunta di un menu di scelta rapida in una finestra degli strumenti | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,33 +13,33 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36df685197acbac4372daa8f8c813acf22357678
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ef3ba3e9a59ac1289803260b5894b05927205a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66309942"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633426"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Aggiungere un menu di scelta rapida in una finestra degli strumenti
-Questa procedura dettagliata inserisce un menu di scelta rapida in una finestra degli strumenti. Un menu di scelta rapida è un menu che viene visualizzato quando l'utente fa clic sul pulsante, casella di testo un sfondo della finestra. I comandi in un menu di scelta rapida si comportano come i comandi su altri menu o barre degli strumenti. Per supportare un menu di scelta rapida, specificarlo nella *vsct* file e visualizzarli in risposta al pulsante destro del mouse del mouse.
+In questa procedura dettagliata viene inserito un menu di scelta rapida in una finestra degli strumenti. Un menu di scelta rapida è un menu visualizzato quando un utente fa clic con il pulsante destro del mouse su un pulsante, una casella di testo o uno sfondo della finestra. I comandi di un menu di scelta rapida hanno lo stesso comportamento dei comandi di altri menu o barre degli strumenti. Per supportare un menu di scelta rapida, specificarlo nel file con *estensione vsct* e visualizzarlo in risposta al clic con il pulsante destro del mouse.
 
-Una finestra degli strumenti è costituito da un controllo utente WPF in una classe della finestra degli strumenti personalizzata che eredita da <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.
+Una finestra degli strumenti è costituita da un controllo utente WPF in una classe della finestra degli strumenti personalizzata che eredita da <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.
 
-Questa procedura dettagliata illustra come creare un menu di scelta rapida come un menu di Visual Studio, con la dichiarazione di voci di menu la *vsct* file e quindi usando il Framework di pacchetto gestito per la relativa implementazione nella classe che definisce la finestra degli strumenti. Questo approccio semplifica l'accesso a comandi di Visual Studio, gli elementi dell'interfaccia utente e il modello oggetto di automazione.
+Questa procedura dettagliata illustra come creare un menu di scelta rapida come menu di Visual Studio, dichiarando voci di menu nel file con *estensione vsct* e quindi usando il Framework di pacchetto gestito per implementarli nella classe che definisce la finestra degli strumenti. Questo approccio semplifica l'accesso ai comandi di Visual Studio, agli elementi dell'interfaccia utente e al modello a oggetti di automazione.
 
-In alternativa, se il menu di scelta rapida non accederanno funzionalità di Visual Studio, è possibile usare il <xref:System.Windows.FrameworkElement.ContextMenu%2A> proprietà di un elemento XAML nel controllo utente. Per altre informazioni, vedere [sull'oggetto ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
+In alternativa, se il menu di scelta rapida non accede alla funzionalità di Visual Studio, è possibile usare la proprietà <xref:System.Windows.FrameworkElement.ContextMenu%2A> di un elemento XAML nel controllo utente. Per altre informazioni, vedere [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
 
-## <a name="prerequisites"></a>Prerequisiti
-A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerequisites
+A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per ulteriori informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-the-tool-window-shortcut-menu-package"></a>Creare il pacchetto di menu scelta rapida finestra degli strumenti
+## <a name="create-the-tool-window-shortcut-menu-package"></a>Creare il pacchetto del menu di scelta rapida della finestra degli strumenti
 
-1. Creare un progetto VSIX denominato `TWShortcutMenu` e aggiungere un modello di finestra degli strumenti denominato **menu scelta rapida** ad esso. Per altre informazioni sulla creazione di una finestra degli strumenti, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Creare un progetto VSIX denominato `TWShortcutMenu` e aggiungere un modello di finestra degli strumenti denominato **ShortcutMenu** . Per ulteriori informazioni sulla creazione di una finestra degli strumenti, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
 
-## <a name="specifying-the-shortcut-menu"></a>Specifica il menu di scelta rapida
-Un menu di scelta rapida, ad esempio quella illustrata in questa procedura dettagliata consente all'utente di selezionare da un elenco di colori utilizzati per riempire lo sfondo della finestra degli strumenti.
+## <a name="specifying-the-shortcut-menu"></a>Impostazione del menu di scelta rapida
+Un menu di scelta rapida, ad esempio quello illustrato in questa procedura dettagliata, consente all'utente di effettuare una selezione da un elenco di colori utilizzati per riempire lo sfondo della finestra degli strumenti.
 
-1. Nelle *ShortcutMenuPackage.vsct*, trovare nell'elemento GuidSymbol denominato guidShortcutMenuPackageCmdSet e dichiarare il menu di scelta rapida, il gruppo di menu di scelta rapida e le opzioni di menu. L'elemento GuidSymbol dovrebbe ora essere simile al seguente:
+1. In *ShortcutMenuPackage. vsct*trovare nell'elemento GuidSymbol denominato guidShortcutMenuPackageCmdSet e dichiarare il menu di scelta rapida, il gruppo di menu di scelta rapida e le opzioni di menu. L'elemento GuidSymbol dovrebbe ora essere simile al seguente:
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -52,7 +52,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     </GuidSymbol>
     ```
 
-2. Appena prima dell'elemento di pulsanti, creare un elemento del menu di scelta e quindi definire il menu di scelta rapida in esso.
+2. Immediatamente prima dell'elemento Buttons, creare un elemento menus e quindi definire il menu di scelta rapida.
 
     ```vb
     <Menus>
@@ -65,9 +65,9 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     </Menus>
     ```
 
-    Un menu di scelta rapida non è un elemento padre perché non fa parte di un menu o sulla barra degli strumenti.
+    Un menu di scelta rapida non dispone di un elemento padre perché non fa parte di un menu o di una barra degli strumenti.
 
-3. Creare un elemento di gruppi con un elemento di gruppo che contiene le voci di menu di scelta rapida e associare il gruppo di menu di scelta rapida.
+3. Creare un elemento groups con un elemento Group contenente le voci del menu di scelta rapida e associare il gruppo al menu di scelta rapida.
 
     ```xml
     <Groups>
@@ -77,7 +77,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     </Groups>
     ```
 
-4. Nell'elemento pulsanti, definire i singoli comandi che verranno visualizzato il menu di scelta rapida. L'elemento pulsanti dovrebbe essere simile al seguente:
+4. Nell'elemento Buttons (pulsanti) definire i singoli comandi che verranno visualizzati nel menu di scelta rapida. L'elemento Button dovrebbe essere simile al seguente:
 
     ```xml
     <Buttons>
@@ -112,7 +112,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     </Buttons>
     ```
 
-5. Nelle *ShortcutMenuCommand.cs*, aggiungere le definizioni per il comando del set di GUID, il menu di scelta rapida e le voci di menu.
+5. In *ShortcutMenuCommand.cs*aggiungere le definizioni per il GUID del set di comandi, il menu di scelta rapida e le voci di menu.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -122,21 +122,21 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     public const int cmdidBlue = 0x104;
     ```
 
-    Questi sono gli stessi ID di comando che sono definiti nella sezione Symbols del *ShortcutMenuPackage.vsct* file. Il gruppo di contesto non è incluso qui perché è necessaria solo il *vsct* file.
+    Questi sono gli stessi ID di comando definiti nella sezione symbols del file *ShortcutMenuPackage. vsct* . Il gruppo di contesto non è incluso perché è necessario solo nel file con *estensione vsct* .
 
-## <a name="implementing-the-shortcut-menu"></a>Implementazione di menu di scelta rapida
- In questa sezione implementa il menu di scelta rapida e i relativi comandi.
+## <a name="implementing-the-shortcut-menu"></a>Implementazione del menu di scelta rapida
+ Questa sezione implementa il menu di scelta rapida e i relativi comandi.
 
-1. Nelle *ShortcutMenu.cs*, la finestra degli strumenti è possibile ottenere il servizio di comando di menu, ma non è il controllo che contiene. La procedura seguente illustra come rendere disponibili per il controllo utente servizio dei comandi di menu.
+1. In *ShortcutMenu.cs*, la finestra degli strumenti può ottenere il servizio di comando di menu, ma il controllo in essa contenuto non può. Nei passaggi seguenti viene illustrato come rendere disponibile il servizio comando di menu per il controllo utente.
 
-2. Nelle *ShortcutMenu.cs*, aggiungere quanto segue usando istruzioni:
+2. In *ShortcutMenu.cs*aggiungere le direttive using seguenti:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
     using System.ComponentModel.Design;
     ```
 
-3. Eseguire l'override di metodo Initialize () della finestra degli strumenti per ottenere il servizio di comando di menu e aggiungere il controllo, passando il servizio di comando di menu al costruttore:
+3. Eseguire l'override del metodo Initialize () della finestra degli strumenti per ottenere il servizio dei comandi di menu e aggiungere il controllo, passando il servizio di comando di menu al costruttore:
 
     ```csharp
     protected override void Initialize()
@@ -146,7 +146,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     }
     ```
 
-4. Nel costruttore di finestra degli strumenti del menu scelta rapida, rimuovere la riga che aggiunge il controllo. Il costruttore a questo punto dovrebbe essere simile al seguente:
+4. Nel costruttore della finestra degli strumenti ShortcutMenu rimuovere la riga che aggiunge il controllo. Il costruttore dovrebbe ora essere simile al seguente:
 
     ```csharp
     public ShortcutMenu() : base(null)
@@ -157,7 +157,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     }
     ```
 
-5. Nelle *ShortcutMenuControl.xaml.cs*, aggiungere un campo privato per il servizio di comando di menu e modificare il costruttore di controllo per sfruttare il servizio di comando di menu. Usare quindi il servizio di comando di menu per aggiungere i comandi di menu di scelta rapida. Il costruttore ShortcutMenuControl deve ora apparire simile al codice seguente. Il gestore del comando verrà definito in un secondo momento.
+5. In *ShortcutMenuControl.XAML.cs*aggiungere un campo privato per il servizio di comando di menu e modificare il costruttore del controllo in modo da scegliere il servizio comando di menu. Usare quindi il servizio comando di menu per aggiungere i comandi del menu di scelta rapida. Il costruttore ShortcutMenuControl dovrebbe ora essere simile al codice seguente. Il gestore comando verrà definito in un secondo momento.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +183,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     }
     ```
 
-6. Nelle *ShortcutMenuControl.xaml*, aggiungere un <xref:System.Windows.UIElement.MouseRightButtonDown> evento nel livello superiore <xref:System.Windows.Controls.UserControl> elemento. Il file XAML dovrebbe ora essere simile al seguente:
+6. In *ShortcutMenuControl. XAML*aggiungere un evento <xref:System.Windows.UIElement.MouseRightButtonDown> all'elemento <xref:System.Windows.Controls.UserControl> di primo livello. Il file XAML dovrebbe ora essere simile al seguente:
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -205,7 +205,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     </UserControl>
     ```
 
-7. Nelle *ShortcutMenuControl.xaml.cs*, aggiungere uno stub per il gestore dell'evento.
+7. In *ShortcutMenuControl.XAML.cs*aggiungere uno stub per il gestore eventi.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -214,7 +214,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     }
     ```
 
-8. Aggiungere quanto segue usando istruzioni nello stesso file:
+8. Aggiungere le direttive using seguenti allo stesso file:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -224,7 +224,7 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     using System.Windows.Media;
     ```
 
-9. Implementare il `MyToolWindowMouseRightButtonDown` evento come indicato di seguito.
+9. Implementare l'evento `MyToolWindowMouseRightButtonDown` come indicato di seguito.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -240,9 +240,9 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     }
     ```
 
-    Ciò consente di creare un <xref:System.ComponentModel.Design.CommandID> oggetto per il menu di scelta rapida, identifica la posizione di clic del mouse e consente di aprire il menu di scelta rapida in tale percorso usando il <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> (metodo).
+    Viene creato un oggetto <xref:System.ComponentModel.Design.CommandID> per il menu di scelta rapida, viene identificato il percorso del clic del mouse e viene aperto il menu di scelta rapida in tale posizione utilizzando il metodo <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A>.
 
-10. Implementare il gestore del comando.
+10. Implementare il gestore di comandi.
 
     ```csharp
     private void ChangeColor(object sender, EventArgs e)
@@ -264,18 +264,18 @@ Un menu di scelta rapida, ad esempio quella illustrata in questa procedura detta
     }
     ```
 
-    In questo caso, un solo metodo gestisce gli eventi per tutte le voci di menu identificando il <xref:System.ComponentModel.Design.CommandID> e impostando il colore di sfondo di conseguenza. Se le voci di menu conteneva comandi non correlati, si sarebbe stato creato un gestore di evento separato per ogni comando.
+    In questo caso, solo un metodo gestisce gli eventi per tutte le voci di menu identificando il <xref:System.ComponentModel.Design.CommandID> e impostando di conseguenza il colore di sfondo. Se le voci di menu contenevano comandi non correlati, sarebbe stato creato un gestore eventi separato per ogni comando.
 
-## <a name="test-the-tool-window-features"></a>Testare la funzionalità della finestra degli strumenti
+## <a name="test-the-tool-window-features"></a>Testare le funzionalità della finestra degli strumenti
 
 1. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.
 
-2. Nell'istanza sperimentale, fare clic su **Vista / Windows Other**, quindi fare clic su **menu scelta rapida**. In questo modo, dovrebbe essere visualizzata la finestra degli strumenti.
+2. Nell'istanza sperimentale, fare clic su **Visualizza/altre finestre**, quindi fare clic su **ShortcutMenu**. Questa operazione dovrebbe visualizzare la finestra degli strumenti.
 
-3. Pulsante destro del mouse all'interno della finestra degli strumenti. Deve essere visualizzato un menu di scelta rapida che include un elenco di colori.
+3. Fare clic con il pulsante destro del mouse nel corpo della finestra degli strumenti. Verrà visualizzato un menu di scelta rapida con un elenco di colori.
 
-4. Fare clic su un colore menu di scelta rapida. Il colore di sfondo finestra degli strumenti deve essere modificato in colore selezionato.
+4. Fare clic su un colore nel menu di scelta rapida. Il colore di sfondo della finestra degli strumenti deve essere impostato sul colore selezionato.
 
 ## <a name="see-also"></a>Vedere anche
-- [I comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Uso e fornitura di servizi](../extensibility/using-and-providing-services.md)

@@ -1,5 +1,5 @@
 ---
-title: Non è supportato nella finestra di progettazione del flusso di lavoro scenari di debug | Microsoft Docs
+title: Scenari di debug non supportati nel Progettazione flussi di lavoro | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -7,50 +7,50 @@ ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: 4
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: fdbe68b416560b85580e3dd30e5f8138b7cd08fe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825228"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606932"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scenari di debug non supportati in Progettazione flussi di lavoro
-In Progettazione flussi di lavoro in [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] sono state aggiunte numerose e nuove funzionalità, ma sono ancora presenti alcuni scenari di debug non supportati. In questo documento vengono indicati gli scenari di debug non supportati in Progettazione flussi di lavoro.  
-  
-- Impossibile continuare l'esecuzione dopo che il codice è stato modificato.  
-  
-- Impossibile continuare l'esecuzione da un punto arbitrario nel flusso di lavoro (Imposta istruzione successiva).  
-  
-- Impossibile continuare l'esecuzione fino a quando non si raggiunge il cursore (Esegui fino al cursore).  
-  
-- Impossibile usare Progettazione flussi di lavoro per eseguire debug di flussi di lavoro creati in codice senza l'uso della finestra di progettazione.  
-  
-- Impossibile eseguire il debug di flussi di lavoro creati in versioni precedenti di [!INCLUDE[wf](../includes/wf-md.md)] nella finestra di progettazione di [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].  
-  
-- Impossibile definire i punti di interruzione nei collegamenti tra attività o nodi <xref:System.Activities.Statements.Flowchart>.  
-  
-- Gli Appunti non sono disponibili durante l'esecuzione del debug.  
-  
-- I punti di interruzione non vengono mantenuti quando le attività vengono copiate o incollate.  
-  
-- Impossibile impostare i punti di interruzione del flusso di lavoro nella finestra dello stack di chiamate.  
-  
-- Durante la creazione di punti di interruzione nella finestra di progettazione, il **Line** e **carattere** impostazioni nel **nuovo punto di interruzione** finestra di dialogo non vengono usati.  
-  
-- La finestra Punto di interruzione o il menu di scelta rapida non supporta le colonne o le opzioni seguenti per il debug del flusso di lavoro:  
-  
-  - Condizione  
+In Progettazione flussi di lavoro in [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] sono state aggiunte numerose e nuove funzionalità, ma sono ancora presenti alcuni scenari di debug non supportati. In questo documento vengono indicati gli scenari di debug non supportati in Progettazione flussi di lavoro.
 
-  - Numero di passaggi  
+- Impossibile continuare l'esecuzione dopo che il codice è stato modificato.
 
-  - Quando raggiunto  
+- Impossibile continuare l'esecuzione da un punto arbitrario nel flusso di lavoro (Imposta istruzione successiva).
 
-  - Funzione  
+- Impossibile continuare l'esecuzione fino a quando non si raggiunge il cursore (Esegui fino al cursore).
 
-  - Data  
+- Impossibile usare Progettazione flussi di lavoro per eseguire debug di flussi di lavoro creati in codice senza l'uso della finestra di progettazione.
 
-  - Process  
+- Impossibile eseguire il debug di flussi di lavoro creati in versioni precedenti di [!INCLUDE[wf](../includes/wf-md.md)] nella finestra di progettazione di [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
+
+- Impossibile definire i punti di interruzione nei collegamenti tra attività o nodi <xref:System.Activities.Statements.Flowchart>.
+
+- Gli Appunti non sono disponibili durante l'esecuzione del debug.
+
+- I punti di interruzione non vengono mantenuti quando le attività vengono copiate o incollate.
+
+- Impossibile impostare i punti di interruzione del flusso di lavoro nella finestra dello stack di chiamate.
+
+- Quando si creano punti di interruzione nella finestra di progettazione, le impostazioni di **riga** e **carattere** nella finestra di dialogo nuovo punto di **interruzione** non vengono utilizzate.
+
+- La finestra Punto di interruzione o il menu di scelta rapida non supporta le colonne o le opzioni seguenti per il debug del flusso di lavoro:
+
+  - Condizione
+
+  - Numero di passaggi
+
+  - Quando raggiunto
+
+  - Funzione
+
+  - Dati
+
+  - Processo
 
   - Vai a disassembly

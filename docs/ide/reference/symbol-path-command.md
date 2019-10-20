@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.SymbolPath command
 - SymbolPath command
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3792f3d6f86faf0b58e8cf8f1b76984ba3bd5d80
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 6309396877a32233bfe05fff1d2173d1f8765ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926002"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645193"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.
@@ -30,12 +30,12 @@ Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei
 Debug.SymbolPath pathname1;pathname2;... pathnameN
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `pathname`
 
-facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
+Parametro facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Se non viene specificato un `pathname`, il comando elenca i percorsi dei simboli correnti.
 
 ## <a name="example"></a>Esempio

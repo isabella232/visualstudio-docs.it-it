@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 7fa62baf020751a175b24f47a93b3e7280fb76fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043031"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647656"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
 
@@ -28,7 +28,7 @@ ms.locfileid: "67043031"
 
 Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
-|Combinazione del mouse|Contesto|DESCRIZIONE|
+|Combinazione del mouse|Contesto|Descrizione|
 | - |-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
 |Doppio clic|Connettore simbolo|Espande/comprime il simbolo.|
@@ -56,7 +56,7 @@ Usando il mouse è possibile modificare l'aspetto della finestra **Dettagli clas
 
 Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
-|Chiave|Contesto|DESCRIZIONE|
+|Chiave|Contesto|Descrizione|
 |---------|-------------|-----------------|
 |**Tasti di direzione**|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
 |**Tasti di direzione**|Forme di primo livello|Consentono di spostare forme nel diagramma.|

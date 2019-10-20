@@ -3,19 +3,19 @@ title: 'Procedura: Creare un modello di territorio 3D'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41974aee19cf1e4919028d5ef0f0e9b53c6b369e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 82ee7791c8356f13ebfdce5ad5bd3ba8be0674d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844454"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635417"
 ---
-# <a name="how-to-model-3d-terrain"></a>Procedura: Creare un modello di territorio 3D
+# <a name="how-to-model-3d-terrain"></a>Procedura: Creare un modello di terreno 3D
 
 Questo articolo illustra come usare l'editor dei modelli per creare un modello di terreno 3D.
 

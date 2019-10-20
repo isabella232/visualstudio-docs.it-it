@@ -7,23 +7,23 @@ helpviewer_keywords:
 - Log switch [devenv.exe]
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b2e11cb36176aec94528019cdd19bb5fa86c92b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc37f4cd7441fc7945ca1762d16300c18d9ecbfe
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946804"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610362"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
 Registra tutte le attività nel file di log per la risoluzione dei problemi. Il file verrà visualizzato dopo aver chiamato `devenv /log` almeno una volta. Per impostazione predefinita, il file di log è disponibile qui:
 
-**%APPDATA%\\Microsoft\\VisualStudio\\**\<versione\>**\\ActivityLog.xml**
+**%APPDATA%\\Microsoft\\VisualStudio\\** \<versione\> **\\ActivityLog.xml**
 
 dove \<Versione\> indica la versione di Visual Studio. È tuttavia possibile specificare un percorso e un nome di file diversi.
 
@@ -33,13 +33,13 @@ dove \<Versione\> indica la versione di Visual Studio. È tuttavia possibile spe
 devenv /Log NameOfLogFile
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 - *NameOfLogFile*
 
   Obbligatorio. Percorso completo e nome del file di log in cui salvare le attività.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 Questa opzione deve apparire alla fine della riga di comando, dopo tutte le altre opzioni.
 

@@ -1,23 +1,23 @@
 ---
-title: Creare uno Schema XML
+title: Creazione di uno schema XML
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e93155f230ee4a564116f5d1357a97923706c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73563d732aab48192892794c15750bc9e5d3eb6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783493"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645958"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: Creare un XML Schema da un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: creare un XML Schema da un documento XML
 
-L'editor XML consente di creare uno schema di XML Schema definition language (XSD) da un documento XML. Il file XML determina la modalità di generazione dello schema nel modo seguente:
+L'editor XML consente di creare uno schema XSD (XML Schema Definition Language) da un documento XML. Il file XML determina il modo in cui viene generato lo schema nel modo seguente:
 
 - Se al documento XML non è associato alcuno schema o DTD (Document Type Definition), i dati del documento XML vengono usati per inferire un nuovo schema XML.
 
@@ -25,17 +25,17 @@ L'editor XML consente di creare uno schema di XML Schema definition language (XS
 
 - Se il documento XML contiene uno schema XDR (XML-Data Reduced) inline, lo schema XDR viene convertito in uno schema XML corrispondente.
 
-Gli schemi creati vengono quindi utilizzati per fornire funzionalità IntelliSense per il file XML.
+Gli schemi creati vengono quindi utilizzati per fornire IntelliSense per il file XML.
 
-Per altre informazioni sul motore di inferenza dello schema, vedere [inferire uno schema XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
+Per ulteriori informazioni sul motore di inferenza dello schema, vedere [dedurre un XML Schema](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
 ## <a name="to-create-an-xml-schema"></a>Per creare uno schema XML
 
 1. Aprire un file XML in Visual Studio.
 
-2. Nella barra dei menu, scegliere **XML** > **Create Schema**.
+2. Nella barra dei menu scegliere **XML**  > **Crea schema**.
 
-   Un documento XML Schema viene creato e aperto per ogni spazio dei nomi disponibile nel file XML. Ogni schema viene aperto come file esterno temporaneo. Gli schemi possono essere salvati su disco, aggiunti al progetto oppure eliminati.
+   Un documento XML Schema viene creato e aperto per ogni spazio dei nomi trovato nel file XML. Ogni schema viene aperto come file esterno temporaneo. Gli schemi possono essere salvati su disco, aggiunti al progetto oppure eliminati.
 
 ## <a name="see-also"></a>Vedere anche
 

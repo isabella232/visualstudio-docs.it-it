@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747702"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644608"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 
@@ -30,9 +30,9 @@ Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La 
 
 Per passare direttamente alla pagina di riferimento di .NET per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.
 
-|nome|Description|
+|Name|Descrizione|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|Aggiunge un'istanza di un set di dati tipizzato o non tipizzato al form o al componente. Quando si trascina questo oggetto in una finestra di progettazione, viene visualizzata una finestra di dialogo che consente di selezionare una classe Dataset tipizzata esistente o di specificare che si vuole creare un nuovo set di dati non tipizzato vuoto. **Nota:**  l'oggetto <xref:System.Data.DataSet> nella **Casella degli strumenti** non viene usato per creare una nuova classe e un nuovo schema di set di dati tipizzato. Per altre informazioni, vedere [Create and configure datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).|
+|<xref:System.Data.DataSet>|Aggiunge un'istanza di un set di dati tipizzato o non tipizzato al form o al componente. Quando si trascina questo oggetto in una finestra di progettazione, viene visualizzata una finestra di dialogo che consente di selezionare una classe Dataset tipizzata esistente o di specificare che si vuole creare un nuovo set di dati non tipizzato vuoto. **Nota:** l'oggetto <xref:System.Data.DataSet> nella **Casella degli strumenti** non viene usato per creare una nuova classe e un nuovo schema di set di dati tipizzato. Per altre informazioni, vedere [Create and configure datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).|
 |<xref:System.Windows.Forms.DataGridView>|Offre un sistema efficiente e flessibile per visualizzare i dati in formato tabulare.|
 |<xref:System.Windows.Forms.BindingSource>|Semplifica il processo di associazione dei controlli a un'origine dati sottostante.|
 |<xref:System.Windows.Forms.BindingNavigator>|Rappresenta l’interfaccia utente di spostamento e modifica per i controlli associati a dati contenuti in un form.|

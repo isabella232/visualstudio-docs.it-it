@@ -2,19 +2,19 @@
 title: Procedura dettagliata sullo sviluppo basato su test
 ms.date: 07/24/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 17ee82630e75e0b0ea8b4a069249c2dccad9010e
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: d62989ffe5444f94cf3b062cde16399c08322b16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493183"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646674"
 ---
-# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procedura dettagliata: Sviluppo basato su test con Esplora test
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procedura dettagliata: sviluppo basato su test con Esplora test
 
 Creare unit test per garantire il corretto funzionamento del codice attraverso modifiche incrementali. Esistono diversi framework che possono essere utilizzati per scrivere unit test, tra i quali alcuni sviluppati da terze parti. Alcuni framework di test sono specializzati per il testing in diversi linguaggi o piattaforme. Esplora test fornisce una singola interfaccia per gli unit test per uno qualsiasi di questi framework. Per altre informazioni su **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md) e [Domande frequenti su Esplora test](test-explorer-faq.md).
 
@@ -28,7 +28,7 @@ Questa procedura dettagliata illustra come sviluppare un metodo testato in C# us
 
    ![Nuovo codice e progetti di test](../test/media/test-driven-development-ide.png)
 
-3. Scrivere un metodo di test semplice che verifica il risultato ottenuto per un input specifico. Aggiungere il codice seguente alla classe `UnitTest1`:
+3. Scrivere un metodo di test semplice che verifica il risultato ottenuto per un input specifico. Aggiungere il codice seguente alla classe `UnitTest1` :
 
    ```csharp
    [TestMethod]

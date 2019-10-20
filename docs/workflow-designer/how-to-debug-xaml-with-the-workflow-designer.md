@@ -1,21 +1,21 @@
 ---
-title: 'Progettazione flussi di lavoro: Debug di XAML'
+title: 'Progettazione flussi di lavoro: debug di XAML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: af5b7585ed5c0f34eeb44edba8c60ba0d5e14559
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a7b686db2f8c6818d7a76a5e5188715665b3a87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254773"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650347"
 ---
-# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procedura: Eseguire il debug di XAML con Progettazione flussi di lavoro
+# <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procedura: debug di XML mediante Progettazione flussi di lavoro
 
 I flussi di lavoro vengono definiti mediante codice XAML. La rappresentazione dell'interfaccia utente del flusso di lavoro si basa sull'albero XAML che definisce il flusso di lavoro. L'esperienza di debug è simile ai flussi di lavoro di debug nel Progettazione flussi di lavoro. Ad esempio, durante il debug di XAML, le finestre variabili locali, espressioni di controllo e thread funzionano in modo analogo a quanto avviene in Progettazione flussi di lavoro il debug. Durante il debug di XAML, inoltre, la visualizzazione degli stack di chiamate si presenta sotto forma di visualizzazione gerarchica basata sulle righe del flusso di esecuzione del flusso di lavoro.
 
@@ -26,7 +26,7 @@ I flussi di lavoro vengono definiti mediante codice XAML. La rappresentazione de
 
 1. Aprire un flusso di lavoro o un progetto di attività in Visual Studio.
 
-2. Impostare un punto di interruzione per l'attività o le attività di cui si vuole [eseguire il debug, come descritto in procedura: Impostare punti di interruzione nei flussi](../workflow-designer/how-to-set-breakpoints-in-workflows.md)di lavoro.
+2. Impostare un punto di interruzione per l'attività o le attività di cui si vuole eseguire il debug, come descritto in [procedura: impostare punti di interruzione nei flussi di lavoro](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
 
 3. Fare clic con il pulsante destro del mouse sul file con estensione XAML che contiene la definizione del flusso di lavoro e selezionare **Visualizza codice**. Verrà visualizzato un punto di interruzione nella stessa riga in cui si trova la dichiarazione dell'elemento XAML dell'attività per la quale è stato impostato il punto di interruzione nella visualizzazione Progettazione.
 
@@ -36,5 +36,5 @@ I flussi di lavoro vengono definiti mediante codice XAML. La rappresentazione de
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Impostare punti di interruzione in flussi di lavoro](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+- [Procedura: Impostazione di punti di interruzione nei Flussi di lavoro](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [Flussi di lavoro di debug](debugging-workflows-with-the-workflow-designer.md)

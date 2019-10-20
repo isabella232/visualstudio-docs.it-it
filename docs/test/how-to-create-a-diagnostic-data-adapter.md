@@ -1,19 +1,19 @@
 ---
-title: 'Procedura: Creare un adattatore dati di diagnostica'
+title: 'Procedura: creare un adattatore dati di diagnostica'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a1940cda15d1ac5515e25b1e1e997f13a32d6e53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950725"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653692"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
@@ -32,7 +32,7 @@ Eventi vengono generati quando si eseguono i test in modo che l'adattatore dati 
 
 Di seguito è riportato un elenco parziale di eventi chiave che è possibile utilizzare quando si crea l'adattatore dati di diagnostica. Per un elenco completo di eventi dell'adattatore dati di diagnostica, vedere la classe astratta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
-|event|Description|
+|event|Descrizione|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Inizio dell'esecuzione di test|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Fine dell'esecuzione di test|
@@ -68,7 +68,7 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 
    3. Scegliere **OK**.
 
-4. Aggiungere le seguenti istruzioni `using` al file della classe:
+4. Aggiungere le seguenti direttive di `using` al file di classe:
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;
@@ -210,7 +210,7 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 
      Questi file sono allegati ai risultati del test. Se si crea un bug da questi risultati o quando si utilizza [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], i file vengono allegati anche al bug.
 
-     Se si vuole usare il proprio editor per raccogliere i dati da usare nelle impostazioni di test, vedere [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/quickstart-create-a-load-test-project.md).
+     Per usare il proprio editor per raccogliere i dati da usare nelle impostazioni test, vedere [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/quickstart-create-a-load-test-project.md).
 
 11. Per raccogliere un file di log quando un test viene completato in base alla configurazione effettuata dall'utente nelle impostazioni di test, è necessario creare un file *App.config* e aggiungerlo alla soluzione. Questo file ha il formato seguente e deve contenere l'URI affinché l'adattatore dati di diagnostica lo identifichi. Sostituire i valori reali a "Company/ProductName/Version".
 
@@ -243,11 +243,11 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
     > [!NOTE]
     > L'elemento di configurazione predefinito può contenere qualsiasi dato necessario. Se l'utente non configura l'adattatore dati di diagnostica nelle impostazioni di test, a questo verranno passati i dati predefiniti al momento dell'esecuzione. Poiché il codice XML che si aggiunge alla sezione `<DefaultConfigurations>` non fa probabilmente parte dello schema dichiarato, è possibile ignorare gli eventuali errori XML generati.
     >
-    > Altri esempi di file di configurazione sono disponibili nel percorso seguente in base alla directory di installazione: *Programmi\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
+    > Sono disponibili altri esempi di file di configurazione nel percorso seguente in base alla directory di installazione: *Programmi\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
      Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Per altre informazioni sull'installazione del file di configurazione, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/quickstart-create-a-load-test-project.md)
+     Per altre informazioni sull'installazione del file di configurazione, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/quickstart-create-a-load-test-project.md).
 
 12. Compilare la soluzione per creare l'assembly dell'adattatore dati di diagnostica.
 

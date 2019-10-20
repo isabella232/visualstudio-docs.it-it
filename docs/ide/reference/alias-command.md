@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396db6e08da211a801361328416d97622ee3eac8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 48fa131514f82ec13538b8f5a0662fde7388ddea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926331"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651983"
 ---
 # <a name="alias-command"></a>Comando Alias
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.
@@ -35,21 +35,21 @@ Crea un nuovo alias per un comando completo, un comando completo con i relativi 
 Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 `aliasname`\
-facoltativo. Nome del nuovo alias. Se per `aliasname` non viene specificato alcun valore, verrà visualizzato un elenco degli alias correnti e le relative definizioni.
+Parametro facoltativo. Nome del nuovo alias. Se per `aliasname` non viene specificato alcun valore, verrà visualizzato un elenco degli alias correnti e le relative definizioni.
 
 `aliasstring`\
-facoltativo. Nome del comando completo o alias esistente e i parametri da creare come alias. Se per `aliasstring` non viene specificato alcun valore, verranno visualizzati il nome di alias e la stringa di alias per l'alias specificato.
+Parametro facoltativo. Nome del comando completo o alias esistente e i parametri da creare come alias. Se per `aliasstring` non viene specificato alcun valore, verranno visualizzati il nome di alias e la stringa di alias per l'alias specificato.
 
 ## <a name="switches"></a>Opzioni
 /delete o /del o /d\
-facoltativo. Elimina l'alias specificato rimuovendolo dal completamento automatico.
+Parametro facoltativo. Elimina l'alias specificato rimuovendolo dal completamento automatico.
 
 /reset\
-facoltativo. Ripristina le impostazioni originali dell'elenco di alias predefiniti, ovvero ripristina tutti gli alias predefiniti e rimuove tutti gli alias definiti dall'utente.
+Parametro facoltativo. Ripristina le impostazioni originali dell'elenco di alias predefiniti, ovvero ripristina tutti gli alias predefiniti e rimuove tutti gli alias definiti dall'utente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Poiché rappresentano i comandi, gli alias devono essere posizionati all'inizio della riga di comando.
 
 Quando si esegue questo comando, le opzioni devono essere incluse subito dopo il comando, non dopo gli alias. In caso contrario, l'opzione verrà considerata parte della stringa di alias.
@@ -80,4 +80,4 @@ In questo esempio viene visualizzato un elenco di tutti gli alias correnti e le 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

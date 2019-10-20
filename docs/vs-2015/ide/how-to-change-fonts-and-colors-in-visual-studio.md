@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Modificare tipi di carattere e colori'
+title: 'Procedura: modificare tipi di carattere e colori'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439235"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645445"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedura: Modificare i tipi di carattere e i colori in Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedura: modificare i tipi di carattere e i colori in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile personalizzare il colore della cornice e delle finestre degli strumenti dell'IDE in Visual Studio in diversi modi.
 
 > [!TIP]
-> Per informazioni su come modificare i colori dell'editor del codice, vedere [Procedura: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Per informazioni su come modificare i colori dell'editor del codice, vedere [Procedura: Modificare i tipi di carattere e i colori usati nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Modificare il tema colori dell'IDE
 
@@ -59,7 +59,7 @@ ms.locfileid: "63439235"
 3. Nell'elenco **Mostra impostazioni per** scegliere **Tipo di carattere ambiente**.
 
     > [!TIP]
-    > Se si desidera modificare il tipo di carattere solo per le finestre degli strumenti, nell'elenco **Mostra impostazioni per** scegliere **[Tutte le finestre degli strumenti di testo]**.
+    > Se si desidera modificare il tipo di carattere solo per le finestre degli strumenti, nell'elenco **Mostra impostazioni per** scegliere **[Tutte le finestre degli strumenti di testo]** .
 
 4. Nell'elenco **Tipo di carattere** selezionare un tipo di carattere.
 

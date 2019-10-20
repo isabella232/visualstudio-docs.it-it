@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare i tipi usando Progettazione classi'
+title: 'Procedura: creare tipi utilizzando Progettazione classi'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,21 +12,21 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1db43fc16202234f24d8179bba656d71ac96d39a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975268"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631758"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare i tipi usando Progettazione classi
+# <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare tipi usando Progettazione classi
 
-Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramma di classi. Per visualizzare i tipi esistenti, vedere [Procedura: Visualizzare i tipi esistenti](how-to-view-existing-types.md).
+Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramma di classi. Per visualizzare i tipi esistenti, vedere [Procedura : Visualizzare i dati esistenti](how-to-view-existing-types.md).
 
 ## <a name="CreateType"></a>Creare un nuovo tipo
 

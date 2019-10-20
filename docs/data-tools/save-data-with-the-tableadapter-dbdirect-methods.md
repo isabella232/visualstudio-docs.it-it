@@ -11,61 +11,61 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567572"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641154"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 
-Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuzione di istruzioni SQL direttamente su un database utilizzando i metodi DBDirect di un oggetto TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile utilizzarli per eseguire istruzioni SQL specifiche e stored procedure chiamando i singoli `Insert`, `Update`, e `Delete` metodi secondo le esigenze dell'applicazione (a differenza di overload `Update` metodo che esegue l'aggiornamento INSERT e istruzioni di eliminazione in un'unica chiamata).
+In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuzione di istruzioni SQL direttamente in un database utilizzando i metodi DBDirect di un TableAdapter. I metodi DBDirect di un oggetto TableAdapter consentono un elevato livello di controllo degli aggiornamenti del database. È possibile utilizzarli per eseguire istruzioni SQL e stored procedure specifiche chiamando i singoli metodi `Insert`, `Update` e `Delete` in base alle esigenze dell'applicazione (anziché il metodo di `Update` di overload che esegue l'aggiornamento, inserire e le istruzioni DELETE in una sola chiamata).
 
 Durante questa procedura dettagliata, si apprenderà come:
 
 - Creare una nuova applicazione **Windows Forms Application**.
 
-- Creare e configurare un set di dati con il [configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
+- Creare e configurare un set di dati con la [Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
-- Selezionare il controllo da creare nel form tramite il trascinamento degli elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Selezionare il controllo da creare nel form tramite il trascinamento degli elementi dalla finestra **Origini dati**. Per ulteriori informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Creare il controllo associato a dati tramite il trascinamento di elementi dalla finestra **Origini dati** nel form.
 
-- Aggiungere i metodi per accedere al database ed eseguire gli inserimenti, aggiornamenti ed eliminazioni direttamente.
+- Aggiungere metodi per accedere direttamente al database ed eseguire inserimenti, aggiornamenti ed eliminazioni.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
-Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
+In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare LocalDB di SQL Server Express come parte delle **elaborazione ed archiviazione dati** carico di lavoro, o come un singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
-2. Installare il database di esempio Northwind seguendo questa procedura:
+2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
-    1. In Visual Studio, aprire il **Esplora oggetti di SQL Server** finestra. (Esplora oggetti di SQL Server viene installato come parte di **elaborazione ed archiviazione dati** carico di lavoro in Visual Studio Installer.) Espandere la **SQL Server** nodo. Fare doppio clic sull'istanza di Local DB e selezionare **nuova Query**.
+    1. In Visual Studio aprire la finestra **Esplora oggetti di SQL Server** . Esplora oggetti di SQL Server viene installato come parte del carico di lavoro di **elaborazione e archiviazione dei dati** nel programma di installazione di Visual Studio. Espandere il nodo **SQL Server** . Fare clic con il pulsante destro del mouse sull'istanza del database locale e scegliere **nuova query**.
 
-       Apre una finestra dell'editor di query.
+       Si apre una finestra dell'editor di query.
 
-    2. Copia il [script di Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
+    2. Copiare lo [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
 
-    3. Incollare lo script T-SQL nell'editor di query e quindi scegliere il **Execute** pulsante.
+    3. Incollare lo script T-SQL nell'editor di query, quindi scegliere il pulsante **Execute (Esegui** ).
 
-       Dopo un breve periodo di tempo, termina l'esecuzione di query e viene creato il database Northwind.
+       Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
 ## <a name="create-a-windows-forms-application"></a>Creare un'applicazione Windows Forms Application
 
-Il primo passaggio consiste nel creare un **Windows Forms Application**.
+Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
 
-1. In Visual Studio sul **File** dal menu **New** > **progetto**.
+1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
 
-2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
 4. Denominare il progetto **TableAdapterDbDirectMethodsWalkthrough**, quindi scegliere **OK**.
 
@@ -73,43 +73,43 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
-Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Region` presente nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+Questo passaggio usa la **Configurazione guidata origine dati** per creare un'origine dati basata sulla tabella `Region` presente nel database di esempio Northwind. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database Northwind di esempio, vedere [procedura: installare database di](../data-tools/installing-database-systems-tools-and-samples.md)esempio.
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1. Nel **Data** dal menu **Mostra origini dati**.
+1. Scegliere **Mostra origini dati**dal menu **dati** .
 
    Verrà visualizzata la finestra **Origini dati**.
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nel **scegliere un tipo di origine dati** schermata, seleziona **Database**e quindi selezionare **Next**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
 
-4. Nel **scegliere la connessione dati** schermata, effettuare una delle operazioni seguenti:
+4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
     - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         -oppure-
+         oppure
 
     - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.
 
-5. Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.
+5. Se il database richiede una password, selezionare l'opzione per includere i dati sensibili, quindi selezionare **Avanti**.
 
-6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** schermata, seleziona **successivo**.
+6. Nella schermata **Salva stringa di connessione nel file di configurazione dell'applicazione** selezionare **Avanti**.
 
-7. Nel **Scegli oggetti di Database** schermata, quindi espandere il **tabelle** nodo.
+7. Nella schermata **Seleziona oggetti di database** espandere il nodo **tabelle** .
 
-8. Selezionare il `Region` tabella e quindi selezionare **fine**.
+8. Selezionare la tabella `Region`, quindi fare clic su **fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella `Region` viene visualizzata nella finestra **Origini dati**.
 
-## <a name="add-controls-to-the-form-to-display-the-data"></a>Aggiungere controlli al form per visualizzare i dati
+## <a name="add-controls-to-the-form-to-display-the-data"></a>Aggiungere i controlli al form per visualizzare i dati
 
 Creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.
 
-Per creare controlli associati a dati nel form di Windows, trascinare l'oggetto principale **regione** nodo dalle **Zdroje dat** finestra nei form.
+Per creare controlli associati a dati in Windows Form, trascinare il nodo **area** principale dalla finestra **origini dati** nel form.
 
-Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Per aggiungere pulsanti da usare per la chiamata ai singoli metodi DbDirect di TableAdapter
 
@@ -117,7 +117,7 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 2. Impostare le proprietà **Name** e **Text** seguenti per ciascun pulsante.
 
-    |Nome|Testo|
+    |Name|Testo|
     |----------|----------|
     |`InsertButton`|**Inserisci**|
     |`UpdateButton`|**Aggiornamento**|
@@ -125,7 +125,7 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Per aggiungere il codice per l'inserimento dei nuovi record nel database
 
-1. Selezionare **InsertButton** per creare un gestore eventi per l'evento clic e aprire il form nell'editor del codice.
+1. Selezionare **InsertButton** per creare un gestore eventi per l'evento click e aprire il form nell'editor di codice.
 
 2. Sostituire il gestore eventi `InsertButton_Click` con il codice seguente:
 
@@ -141,9 +141,9 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
      [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
      [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]
 
-### <a name="to-add-code-to-delete-records-from-the-database"></a>Per aggiungere il codice per eliminare record dal database
+### <a name="to-add-code-to-delete-records-from-the-database"></a>Per aggiungere il codice per eliminare i record dal database
 
-1. Selezionare **DeleteButton** per creare un gestore eventi per l'evento clic e aprire il form nell'editor del codice.
+1. Selezionare **DeleteButton** per creare un gestore eventi per l'evento click e aprire il form nell'editor di codice.
 
 2. Sostituire il gestore eventi `DeleteButton_Click` con il codice seguente:
 
@@ -154,15 +154,15 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 - Selezionare **F5** per eseguire l'applicazione.
 
-- Selezionare il **Inserisci** pulsante e verificare che il nuovo record venga visualizzato nella griglia.
+- Selezionare il pulsante **Inserisci** e verificare che il nuovo record venga visualizzato nella griglia.
 
-- Selezionare il **Update** pulsante e verificare che il record viene aggiornato nella griglia.
+- Selezionare il pulsante **Aggiorna** e verificare che il record sia stato aggiornato nella griglia.
 
-- Selezionare il **eliminare** pulsante e verificare che il record viene rimosso dalla griglia.
+- Selezionare il pulsante **Elimina** e verificare che il record sia stato rimosso dalla griglia.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-A seconda dei requisiti dell'applicazione, sono disponibili diversi passaggi, che si potrebbe voler eseguire dopo la creazione di un form con associazione a dati. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:
+A seconda dei requisiti dell'applicazione, è possibile eseguire diversi passaggi dopo la creazione di un form associato a dati. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:
 
 - Aggiunta di funzionalità di ricerca al form.
 

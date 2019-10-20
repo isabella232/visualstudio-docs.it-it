@@ -2,17 +2,17 @@
 title: "Procedura: Compilare ed eseguire l'esempio LinqToXmlDataBinding"
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
-ms.translationtype: HT
+ms.openlocfilehash: 3b3999ae6fb602c9877bc3f997ab922bda08565b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714842"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636870"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Procedura: Compilare ed eseguire l'esempio LinqToXmlDataBinding
 
@@ -77,5 +77,5 @@ Eseguire LinqToXmlDataBinding premendo **F5** (**Avvia debug**) o **CTRL**+**F5*
 ## <a name="see-also"></a>Vedere anche
 
 - [Esempio di data binding WPF tramite LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
-- [Procedura dettagliata: esempio LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Procedura dettagliata: Esempio LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)

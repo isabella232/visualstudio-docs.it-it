@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Esportare diagrammi classi come immagini (Progettazione classi)'
+title: 'Procedura: esportare diagrammi classi come immagini (Progettazione classi)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0bceb724784f70e3b1c527507eb7d837558c7d0f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975203"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631735"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Procedura: Esportare diagrammi classi come immagini
 

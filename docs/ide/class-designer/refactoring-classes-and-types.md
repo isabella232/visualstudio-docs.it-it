@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b82bebb8e7eedcf6bdff7b12048f8c98cabdeb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975086"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631177"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoring di classi e tipi in Progettazione classi
 
@@ -37,9 +37,9 @@ Quando si effettua il refactoring del codice, si modifica la struttura interna d
 
 |Attività|Contenuto di supporto|
 |----------| - |
-|**Refactoring di classi:** è possibile usare le operazioni di refactoring per suddividere una classe in classi parziali o per implementare una classe di base astratta.|-   [Procedura: Dividere una classe in classi parziali](how-to-split-a-class-into-partial-classes.md)|
-|**Uso di interfacce:** In Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia.|-   [Procedura: Implementare un'interfaccia](how-to-implement-an-interface.md)|
-|**Refactoring di tipi, membri di tipi e parametri:** con Progettazione classi è possibile rinominare i tipi, eseguire l'override dei membri dei tipi oppure spostarli da un tipo all'altro. È anche possibile creare tipi nullable.|-   [Ridenominazione di tipi e membri dei tipi](#rename-types-and-type-members)<br />-   [Spostamento dei membri dei tipi da un tipo a un altro](#move-type-members-from-one-type-to-another)<br />-   [Procedura: Creare un tipo nullable](how-to-create-a-nullable-type.md)|
+|**Refactoring di classi:** è possibile usare le operazioni di refactoring per suddividere una classe in classi parziali o per implementare una classe base astratta.|-   [Procedura: dividere una classe in classi parziali](how-to-split-a-class-into-partial-classes.md)|
+|**Uso di interfacce:** in Progettazione classi è possibile implementare un'interfaccia nel diagramma classi connettendola a una classe che fornisce il codice per i metodi di interfaccia.|-   [Procedura: implementare un'interfaccia](how-to-implement-an-interface.md)|
+|**Refactoring di tipi, membri dei tipi e parametri:** con Progettazione classi è possibile rinominare i tipi, eseguire l'override dei membri dei tipi oppure spostarli da un tipo all'altro. È anche possibile creare tipi nullable.|-   [Ridenominazione di tipi e membri dei tipi](#rename-types-and-type-members)<br />-   [Spostamento dei membri dei tipi da un tipo a un altro](#move-type-members-from-one-type-to-another)<br />-   [Procedura: Creare un tipo nullable](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Ridenominazione di tipi e membri dei tipi
 

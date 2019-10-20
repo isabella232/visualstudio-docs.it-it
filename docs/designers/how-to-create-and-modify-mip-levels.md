@@ -1,19 +1,19 @@
 ---
-title: 'Procedura: Creare e modificare livelli MIP'
+title: 'Procedura: creare e modificare livelli MIP'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026916a86609f665fdb8329b9c9eacf147be51e3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 56fa2875b8a0893e55f7fc373b933b85b4fa8207
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924276"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635517"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Procedura: Creare e modificare livelli MIP
 Questo documento illustra come usare **Editor di immagini** per generare e modificare i *livelli MIP* per il livello di dettaglio dell'area della trama.

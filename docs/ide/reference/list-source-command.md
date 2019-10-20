@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f162590fafaa263e9cc4233744e5f2ba39c8ce6f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 3123479d819662905020c27060e1234bd01c9077
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926176"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610508"
 ---
 # <a name="list-source-command"></a>Comando Elenca origine
 Visualizza le righe del codice sorgente specificate.
@@ -34,23 +34,23 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ## <a name="switches"></a>Opzioni
 /Count:`number`
 
-facoltativo. Specifica il numero di righe da visualizzare.
+Parametro facoltativo. Specifica il numero di righe da visualizzare.
 
 /Current
 
-facoltativo. Visualizza la riga corrente.
+Parametro facoltativo. Visualizza la riga corrente.
 
 /File:`filename`
 
-facoltativo. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
+Parametro facoltativo. Percorso del file da visualizzare. Se non viene specificato alcun nome file, il comando visualizza il codice sorgente per la riga dell'istruzione corrente.
 
 /Line:`number`
 
-facoltativo. Visualizza un numero di riga specifico.
+Parametro facoltativo. Visualizza un numero di riga specifico.
 
 /ShowLineNumbers:`yes|no`
 
-facoltativo. Specifica se visualizzare i numeri di riga.
+Parametro facoltativo. Specifica se visualizzare i numeri di riga.
 
 ## <a name="example"></a>Esempio
 In questo esempio viene elencato il codice sorgente dalla riga 4 del file Form1.vb, con i numeri di riga visibili.

@@ -1,36 +1,36 @@
 ---
-title: Relazioni tra classi LINQ to SQL (O/R Designer)
+title: Relazioni tra LINQ to SQL classi (O/R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51999b1fe9396eaa393491d9a96b184a674621da
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 13443dd25719caad5002b29a33975a0dbc5850f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260432"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641896"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione tra classi LINQ to SQL (O/R Designer)
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: creare un'associazione tra classi di LINQ to SQL (O/R Designer)
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando la finestra di dialogo **Editor di associazione**.
 
-Quando si usa la finestra di dialogo **Editor di associazione** per creare un'associazione, è necessario selezionare una classe padre e una classe figlio. La classe padre è la classe di entità che contiene la chiave primaria, mentre la classe figlio è la classe di entità che contiene la chiave esterna. Se, ad esempio, le classi di entità sono state create con mapping al `Northwind Customers` e `Orders` tabelle, il `Customer` classe sarebbe la classe padre e il `Order` classe sarebbe la classe figlio.
+Quando si usa la finestra di dialogo **Editor di associazione** per creare un'associazione, è necessario selezionare una classe padre e una classe figlio. La classe padre è la classe di entità che contiene la chiave primaria, mentre la classe figlio è la classe di entità che contiene la chiave esterna. Se, ad esempio, sono state create classi di entità che sono mappate alle tabelle `Northwind Customers` e `Orders`, la classe `Customer` sarebbe la classe padre e la classe `Order` sarebbe la classe figlio.
 
 > [!NOTE]
-> Quando si trascinano tabelle da **Esplora Server** oppure **Esplora Database** nel **Object Relational Designer** (**O/R Designer**), le associazioni vengono create automaticamente in base alle relazioni di chiave esterna esistente nel database.
+> Quando si trascinano le tabelle da **Esplora server** o **Esplora database** nel **Object Relational Designer** (**o/R Designer**), le associazioni vengono create automaticamente in base alle relazioni di chiave esterna esistenti nel database.
 
 ## <a name="association-properties"></a>Proprietà dell'associazione
-Quando, dopo aver creato un'associazione, la si seleziona in **Object Relational Designer**, nella finestra **Proprietà** è possibile configurare alcune proprietà (l'associazione rappresenta la linea tra le classi correlate). Nella tabella seguente vengono descritte le proprietà di un'associazione.
+Quando, dopo aver creato un'associazione, la si seleziona in **Object Relational Designer**, nella finestra **Proprietà** è possibile configurare alcune proprietà (L'associazione è la linea tra le classi correlate). Nella tabella seguente vengono fornite le descrizioni per le proprietà di un'associazione.
 
-|Proprietà|Descrizione|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |**Cardinality**|Controlla se l'associazione è uno-a-molti o uno-a-uno.|
-|**Child Property**|Specifica se creare una proprietà nella chiave esterna dell'associazione nell'elemento padre, che è una raccolta o un riferimento a record figlio. Ad esempio, nell'associazione tra `Customer` e `Order`, se il **Child Property** è impostata su **True**, una proprietà denominata `Orders` viene creato nella classe padre.|
-|**Parent Property**|Proprietà nella classe figlio che fa riferimento alla classe padre associata. Ad esempio, nell'associazione tra `Customer` e `Order`, una proprietà denominata `Customer` che fa riferimento al cliente associato per un ordine viene creato nel `Order` classe.|
+|**Child Property**|Specifica se creare una proprietà nella chiave esterna dell'associazione nell'elemento padre, che è una raccolta o un riferimento a record figlio. Nell'associazione tra `Customer` e `Order`, ad esempio, se la **proprietà figlio** è impostata su **true**, viene creata una proprietà denominata `Orders` nella classe padre.|
+|**Parent Property**|Proprietà nella classe figlio che fa riferimento alla classe padre associata. Ad esempio, nell'associazione tra `Customer` e `Order`, una proprietà denominata `Customer` che fa riferimento al cliente associato per un ordine viene creato nella classe `Order`.|
 |**Participating Properties**|Vengono visualizzati le proprietà dell'associazione e un pulsante con i **puntini di sospensione** (...) che consente di riaprire la finestra di dialogo **Editor di associazione**.|
 |**Unique**|Specifica se le colonne esterne di destinazione presentano un vincolo di univocità.|
 
@@ -42,14 +42,14 @@ Quando, dopo aver creato un'associazione, la si seleziona in **Object Relational
 
 3. Nella casella combinata selezionare **Classe figlio**.
 
-4. Selezionare le **Proprietà associazione** che mettono in relazione le classi. In genere, questa operazione consente di eseguire il mapping alla relazione di chiave esterna definita nel database. Ad esempio, nel `Customers` e `Orders` associazione, il **le proprietà di associazione** sono il `CustomerID` per ogni classe.
+4. Selezionare le **Proprietà associazione** che mettono in relazione le classi. In genere, questa operazione consente di eseguire il mapping alla relazione di chiave esterna definita nel database. Nell'associazione `Customers` e `Orders`, ad esempio, le **proprietà di associazione** sono le `CustomerID` per ogni classe.
 
 5. Fare clic su **OK** per creare l'associazione.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procedura dettagliata: Creazione di LINQ alle classi di SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procedura dettagliata: creazione di classi di LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Metodi DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Procedura: Rappresentare le chiavi primarie](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

@@ -2,23 +2,23 @@
 title: Direttiva import T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f49ab8d3462877a28cf40aed519b71615b23f8d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74181ea3bb086688893749850adb697c75b6eac1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856358"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606436"
 ---
 # <a name="t4-import-directive"></a>Direttiva import T4
 
-Nei blocchi di codice di un modello di testo T4 di Visual Studio, il `import` direttiva consente di fare riferimento agli elementi in un altro spazio dei nomi senza fornire un nome completo. È l'equivalente di `using` in C# o di `imports` in [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+Nei blocchi di codice di un modello di testo T4 di Visual Studio, la direttiva `import` consente di fare riferimento agli elementi di un altro spazio dei nomi senza fornire un nome completo. È l'equivalente di `using` in C# o di `imports` in [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
-Per una panoramica generale della scrittura di modelli di testo T4, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
+Per una panoramica generale sulla scrittura di modelli di testo T4, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-import-directive"></a>Utilizzo della direttiva Import
 

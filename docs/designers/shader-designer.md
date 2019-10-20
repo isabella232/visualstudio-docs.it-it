@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823862"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635048"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 
@@ -46,7 +46,7 @@ In questa sezione viene descritto come aggiungere uno shader DGSL al progetto Vi
 
 1. Assicurarsi di avere a disposizione il componente di Visual Studio richiesto installato necessario per usare gli elementi grafici. Questo componente è denominato **Editor di immagini e modelli 3D**.
 
-   Per installarlo, aprire il Programma di installazione di Visual Studio selezionando **Strumenti** > **Ottieni strumenti e funzionalità** dalla barra dei menu e quindi selezionare la scheda **Singoli componenti**. Selezionare il componente **Editor di immagini e modelli 3D** nella categoria **Giochi e grafica** e quindi selezionare **Modifica**.
+   Per installarlo, aprire Programma di installazione di Visual Studio selezionando **strumenti**  > **ottenere strumenti e funzionalità** dalla barra dei menu, quindi selezionare la scheda **singoli componenti** . Selezionare il componente **editor di immagini e modelli 3D** nel  **Giochi e categoria grafica** , quindi selezionare **modifica**.
 
    ![Componente Editor di immagini e modelli 3D](media/image-3d-model-editors-component.png)
 
@@ -59,7 +59,7 @@ In questa sezione viene descritto come aggiungere uno shader DGSL al progetto Vi
 
 4. Specificare il **Nome** del file shader e il **percorso** in cui crearlo.
 
-5. Scegliere il pulsante **Aggiungi**.
+5. Scegliere il pulsante **Aggiungi** .
 
 ### <a name="the-default-shader"></a>Shader predefinito
 
@@ -81,9 +81,9 @@ Di seguito è illustrata la barra degli strumenti **Modalità progettazione shad
 
 Questa tabella descrive gli elementi disponibili nella barra degli strumenti **Modalità progettazione shader**, elencati nell'ordine di visualizzazione da sinistra verso destra.
 
-|Elemento della barra degli strumenti|DESCRIZIONE|
+|Elemento della barra degli strumenti|Descrizione|
 |------------------|-----------------|
-|**Seleziona**|Consente l'interazione con i nodi e i bordi nel grafico. In questa modalità è possibile selezionare nodi per spostarli o eliminarli, nonché definire bordi o interromperli.|
+|**Selezione**|Consente l'interazione con i nodi e i bordi nel grafico. In questa modalità è possibile selezionare nodi per spostarli o eliminarli, nonché definire bordi o interromperli.|
 |**Panoramica**|Consente lo spostamento di un grafico shader relativo alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nell'area di progettazione e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
 |**Zoom**|Consente la visualizzazione di un numero maggiore o minore di dettagli del grafico shader relativo alla cornice della finestra. In modalità **Zoom** selezionare un punto nell'area di progettazione e spostarlo a destra o in basso per eseguire lo zoom avanti oppure a sinistra o in alto per eseguire lo zoom indietro.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per eseguire lo zoom avanti o indietro usando la rotellina del mouse.|
 |**Adatta alla finestra**|Consente di visualizzare il grafico shader completo nella cornice della finestra.|
@@ -96,7 +96,7 @@ Questa tabella descrive gli elementi disponibili nella barra degli strumenti **M
 |**Anteprima con teiera**|Se abilitata, viene usato un modello di teiera per visualizzare in anteprima lo shader. È possibile abilitare una sola forma di anteprima alla volta.|
 |**Casella degli strumenti**|Consente di visualizzare o nascondere la **casella degli strumenti**.|
 |**Proprietà**|Consente di visualizzare o nascondere la finestra **Proprietà**.|
-|**Avanzate**|Contiene opzioni e comandi avanzati.<br /><br /> **Esporta**: consente l'esportazione di uno shader in diversi formati.<br /><br /> **Esporta come**: esporta lo shader come codice sorgente HLSL o come bytecode shader compilato. Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md).<br /><br /> **Motori grafica**: consente la selezione del renderer usato per visualizzare l'area di progettazione.<br /><br /> **Rendering con D3D11**: usa Direct3D 11 per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Rendering con D3D11WARP**: usa Direct3D 11 WARP (Windows Advanced Rasterization Platform) per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Visualizza**: consente la selezione di informazioni aggiuntive sulla finestra di progettazione shader.<br /><br /> **Frequenza dei fotogrammi**: se abilitata, consente di visualizzare la frequenza dei fotogrammi corrente nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. Questa opzione è utile quando si abilita l'opzione **Modalità rendering in tempo reale**.|
+|**Avanzate**|Contiene opzioni e comandi avanzati.<br /><br /> **Esporta**: consente l'esportazione di uno shader in diversi formati.<br /><br /> **Esporta come**: esporta lo shader come codice sorgente HLSL o come bytecode shader compilato. Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md).<br /><br /> **Motori grafica**: consente la selezione del renderer usato per visualizzare l'area di progettazione.<br /><br /> **Rendering con D3D11**: usa Direct3D 11 per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Rendering con D3D11**: usa la piattaforma WARP (Windows Advanced Rasterization Platform) di Direct3D 11 per il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Visualizza**: consente la selezione di informazioni aggiuntive sulla finestra di progettazione shader.<br /><br /> **Frequenza dei fotogrammi**: se abilitata, consente di visualizzare la frequenza dei fotogrammi corrente nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo. Questa opzione è utile quando si abilita l'opzione **Modalità rendering in tempo reale**.|
 
 > [!TIP]
 > È possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.
@@ -147,10 +147,10 @@ La tabella seguente riporta i parametri di shader che è possibile modificare:
 |---------------|----------------|
 |**Trama 1** - **Trama 8**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Nome file**: percorso completo del file della trama associato a questo registro di trama.|
 |**Ambiente materiale**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: colore con riflessione diffusa del pixel corrente, in base all'illuminazione indiretta ovvero alla luce ambientale.|
-|**Materiale diffuso**|**Accesso**: **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**:  Colore che descrive il modo in cui il pixel corrente diffonde l'illuminazione diretta.|
+|**Materiale diffuso**|**Accesso**: **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Value**: colore che descrive il modo in cui il pixel corrente diffonde l'illuminazione diretta.|
 |**Materiale emissivo**|**Accesso**:                              **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: contributo di colore del pixel corrente, in base all'illuminazione autofornita.|
-|**Materiale speculare**|**Accesso**:                              **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: Colore che descrive il modo in cui l'illuminazione diretta viene riflessa dal pixel corrente.|
-|**Materiale potenza speculare**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: Esponente che definisce l'intensità delle evidenziazioni speculari nel pixel corrente.|
+|**Materiale speculare**|**Accesso**:                              **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: colore che descrive il modo in cui l'illuminazione diretta viene riflessa dal pixel corrente.|
+|**Materiale potenza speculare**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: esponente che definisce l'intensità delle evidenziazioni speculari nel pixel corrente.|
 
 #### <a name="time-based-effects"></a>Effetti basati sul tempo
 
@@ -176,10 +176,10 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 
 |Comando|Scelte rapide da tastiera|
 |-------------| - |
-|Passare alla modalità **Seleziona**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
+|Passare alla modalità **Selezione**|**CTRL**+**G**, **CTRL**+**Q**<br /><br /> **S**|
 |Passare alla modalità **Zoom**|**CTRL**+**G**, **CTRL**+**Z**<br /><br /> **Z**|
 |Passare alla modalità **Panoramica**|**CTRL**+**G**, **CTRL**+**P**<br /><br /> **K**|
-|Selezionare tutto|**CTRL**+**A**|
+|Selezionare tutto|**Ctrl**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESCAPE** (**ESC**)|
 |Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> Segno più ( **+** )|
@@ -199,7 +199,7 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|DESCRIZIONE|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce una panoramica degli strumenti di Visual Studio a cui attingere per poter usare trame e immagini, modelli 3D ed effetti shader.|
 |[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|

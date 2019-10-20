@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 9c3de8e1d83a5d74f518eda2d5ab59bd9845b45a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869766"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72630870"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
-Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare l'elenco, scegliere **Scegli elementi della Casella degli strumenti** dal menu **Strumenti** per visualizzare la finestra di dialogo **Scegli elementi della Casella degli strumenti**, quindi selezionare la scheda **Componenti WPF**. Per ordinare i componenti elencati, selezionare una delle intestazioni di colonna.
+Questa scheda della finestra di dialogo **Scegli elementi della Casella degli strumenti** include l'elenco dei controlli Windows Presentation Foundation (WPF) disponibili nel computer locale. Per visualizzare questo elenco, **scegliere Scegli elementi della casella degli** strumenti dal menu **strumenti** per visualizzare la finestra di dialogo **Scegli elementi della casella degli strumenti** e quindi selezionare la scheda **Componenti WPF** . Per ordinare i componenti elencati, selezionare un'intestazione di colonna.
 
 - Quando la casella di controllo accanto a un componente è selezionata, l'icona di tale componente viene visualizzata nella **casella degli strumenti**.
 
@@ -35,11 +35,11 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
 
 Le colonne della scheda **Componenti WPF** contengono le informazioni seguenti:
 
-**Name**
+**Nome**
 
 Elenca i nomi dei controlli WPF per i quali sono presenti voci nel Registro di sistema del computer.
 
-**Spazio dei nomi**
+**Namespace**
 
 Visualizza la gerarchia dello spazio dei nomi [API di .NET](/dotnet/api/?view=netframework-4.7) che definisce la struttura del componente. Ordinare in base a questa colonna per elencare i componenti disponibili in ogni spazio dei nomi .NET installato nel computer in uso.
 
@@ -65,7 +65,7 @@ Cancella la stringa del filtro.
 
 Apre la finestra di dialogo **Apri** che consente di selezionare gli assembly che contengono i controlli WPF. Usare questo metodo per caricare gli assembly che non si trovano nella cartella Global Assembly Cache.
 
-**Lingua**
+**Linguaggio**
 
 Visualizza la lingua localizzata dell'assembly che contiene il controllo WPF selezionato.
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Watch command
 - Debug.Watch command
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ccb87fef9ff91c77c926d5bca40a5e5ec08c3720
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925943"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622033"
 ---
 # <a name="watch-command"></a>Comando Watch
 Crea e apre un'istanza specificata di una finestra **Espressione di controllo** . È possibile usare una finestra **Espressioni di controllo** per calcolare i valori di variabili, espressioni e registri, modificare i valori e salvare i risultati.
@@ -29,12 +29,12 @@ Crea e apre un'istanza specificata di una finestra **Espressione di controllo** 
 Debug.Watch[index]
 ```
 
-## <a name="arguments"></a>Argomenti
+## <a name="arguments"></a>argomenti
 
 `index`\
 Obbligatorio. Il numero di istanza della finestra Espressioni di controllo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 `index` deve essere di tipo Integer. I valori validi sono 1, 2, 3 e 4.
 
@@ -51,4 +51,4 @@ Obbligatorio. Il numero di istanza della finestra Espressioni di controllo.
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

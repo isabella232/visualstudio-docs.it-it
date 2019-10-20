@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a068414fb157ab71733d6c726b6ec71532629d4
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345422"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648713"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Connettersi ai dati in un database di Access
 
 È possibile connettersi a un database di Access, ovvero un file con estensione *MDB* o *accdb* , usando Visual Studio. Dopo avere definito la connessione, i dati vengono visualizzati nella finestra **Origine dati** Da qui è possibile trascinare tabelle o viste nell'area di progettazione.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Per usare queste procedure, è necessario un progetto Windows Forms o WPF e un database di Access (file con estensione*accdb* ) o un database di Access 2000-2003 (file con*estensione mdb* ). Attenersi alla procedura che corrisponde al tipo di file utilizzato.
 
@@ -33,7 +33,7 @@ Connettersi ai database creati con Office 365, Access 2013, Access 2010 o Access
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Per aprire la finestra **origini dati** , scegliere **altre** > **origini dati**di Windows dal menu **Visualizza** .
+2. Per aprire la finestra **origini dati** , scegliere **altre finestre**  > **origini dati**dal menu **Visualizza** .
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Connettersi ai database creati con Access 2000-2003 usando la procedura seguente
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Scegliere **altre** > **origini dati**di Windows dal menu **Visualizza** .
+2. Scegliere **altre finestre**  > **origini dati**dal menu **Visualizza** .
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
@@ -113,7 +113,7 @@ Il set di dati appena creato è disponibile nella finestra **origini dati** . A 
 
 - Aprire l'origine dati in **Progettazione DataSet** per aggiungere o modificare gli oggetti che costituiscono il set di dati.
 
-- Aggiungere la logica di convalida <xref:System.Data.DataTable.ColumnChanging> all' <xref:System.Data.DataTable.RowChanging> evento o delle tabelle dati nel DataSet (vedere convalidare [i dati nei set di dati](../data-tools/validate-data-in-datasets.md)).
+- Aggiungere la logica di convalida all'evento <xref:System.Data.DataTable.ColumnChanging> o <xref:System.Data.DataTable.RowChanging> delle tabelle dati nel DataSet. vedere [convalidare i dati nei set](../data-tools/validate-data-in-datasets.md)di dati.
 
 ## <a name="see-also"></a>Vedere anche
 

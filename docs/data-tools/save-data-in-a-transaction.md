@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Salvare i dati in una transazione'
+title: 'Procedura dettagliata: Salvare dati in una transazione'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,49 +12,49 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea312ca2858a02bc8a70c3e41dbb525c9d222adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565717"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641105"
 ---
-# <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare i dati in una transazione
+# <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare dati in una transazione
 
-Questa procedura dettagliata illustra come salvare i dati in una transazione usando il <xref:System.Transactions> dello spazio dei nomi. In questa procedura dettagliata, si creerà un'applicazione Windows Form. Si userà la configurazione guidata origine dati per creare un set di dati per le due tabelle nel database di esempio Northwind. Si aggiungeranno dati controlli associati a un modulo di Windows, e si modificherà il codice di BindingNavigator pulsante Salva aggiornare il database all'interno di un ambito di transazione.
+In questa procedura dettagliata viene illustrato come salvare i dati in una transazione utilizzando lo spazio dei nomi <xref:System.Transactions>. In questa procedura dettagliata verrà creato un Windows Forms Application. Si utilizzerà la configurazione guidata origine dati per creare un set di dati per due tabelle nel database di esempio Northwind. Si aggiungono controlli con associazione a dati a un Windows Form e si modificherà il codice per il pulsante Salva di BindingNavigator per aggiornare il database all'interno di un TransactionScope.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
-Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di esempio Northwind.
+In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express LocalDB, installarlo dal [pagina di download di SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o tramite il **programma di installazione di Visual Studio**. Nel programma di installazione di Visual Studio Express LocalDB di SQL Server può essere installato come parte del **sviluppo di applicazioni desktop .NET** carico di lavoro, o come un singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel Programma di installazione di Visual Studio SQL Server Express database locale può essere installato come parte del carico di lavoro sviluppo di applicazioni **desktop .NET** o come singolo componente.
 
-2. Installare il database di esempio Northwind seguendo questa procedura:
+2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
-    1. In Visual Studio, aprire il **Esplora oggetti di SQL Server** finestra. (Esplora oggetti di SQL Server viene installato come parte di **elaborazione ed archiviazione dati** carico di lavoro in Visual Studio Installer.) Espandere la **SQL Server** nodo. Fare doppio clic sull'istanza di Local DB e selezionare **nuova Query**.
+    1. In Visual Studio aprire la finestra **Esplora oggetti di SQL Server** . Esplora oggetti di SQL Server viene installato come parte del carico di lavoro di **elaborazione e archiviazione dei dati** nel programma di installazione di Visual Studio. Espandere il nodo **SQL Server** . Fare clic con il pulsante destro del mouse sull'istanza del database locale e scegliere **nuova query**.
 
-       Apre una finestra dell'editor di query.
+       Si apre una finestra dell'editor di query.
 
-    2. Copia il [script di Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
+    2. Copiare lo [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) negli Appunti. Questo script T-SQL crea il database Northwind da zero e lo popola con i dati.
 
-    3. Incollare lo script T-SQL nell'editor di query e quindi scegliere il **Execute** pulsante.
+    3. Incollare lo script T-SQL nell'editor di query, quindi scegliere il pulsante **Execute (Esegui** ).
 
-       Dopo un breve periodo di tempo, termina l'esecuzione di query e viene creato il database Northwind.
+       Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
 ## <a name="create-a-windows-forms-application"></a>Creare un'applicazione Windows Forms Application
 
-Il primo passaggio consiste nel creare un **Windows Forms Application**.
+Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
 
-1. In Visual Studio sul **File** dal menu **New** > **progetto**.
+1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
 
-2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
+2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
 4. Denominare il progetto **SavingDataInATransactionWalkthrough**, quindi scegliere **OK**.
 
@@ -62,29 +62,29 @@ Il primo passaggio consiste nel creare un **Windows Forms Application**.
 
 ## <a name="create-a-database-data-source"></a>Creare un'origine dati del database
 
-Questo passaggio Usa la **configurazione guidata origine dati** per creare un'origine dati basata sulle `Customers` e `Orders` tabelle nel database di esempio Northwind.
+In questo passaggio viene utilizzata la **Configurazione guidata origine dati** per creare un'origine dati basata sulle tabelle `Customers` e `Orders` del database di esempio Northwind.
 
-1. Per aprire la **Zdroje dat** finestra via il **Data** dal menu **Mostra origini dati**.
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nel **scegliere un tipo di origine dati** schermata, seleziona **Database**e quindi selezionare **Next**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
 
-4. Nel **scegliere la connessione dati** eseguire schermata una delle operazioni seguenti:
+4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
     - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         -oppure-
+         oppure
 
     - Selezionare **Nuova connessione** per avviare la finestra di dialogo **Aggiungi/Modifica connessione** e creare una connessione al database Northwind.
 
-5. Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.
+5. Se il database richiede una password, selezionare l'opzione per includere i dati sensibili, quindi selezionare **Avanti**.
 
-6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** schermata, seleziona **successivo**.
+6. Nella schermata **Salva stringa di connessione nel file di configurazione dell'applicazione** selezionare **Avanti**.
 
-7. Nel **Scegli oggetti di Database** schermata, quindi espandere il **tabelle** nodo.
+7. Nella schermata **Seleziona oggetti di database** espandere il nodo **tabelle** .
 
-8. Selezionare il `Customers` e `Orders` tabelle e quindi selezionare **fine**.
+8. Selezionare le tabelle `Customers` e `Orders`, quindi fare clic su **fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle `Customers` e `Orders` vengono visualizzate nella finestra **Origini dati**.
 
@@ -92,15 +92,15 @@ Questo passaggio Usa la **configurazione guidata origine dati** per creare un'or
 
 È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.
 
-1. Nel **Zdroje dat** finestra, espandere il **clienti** nodo.
+1. Nella finestra **origini dati** espandere il nodo **Customers** .
 
 2. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.
 
-   Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+   Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
-3. Trascinare i relativi **ordini** nodo (non principale **ordini** nodo, ma il nodo della tabella figlio correlata riportato di seguito il **Fax** colonna) nel form sotto la  **CustomersDataGridView**.
+3. Trascinare il nodo **Orders** correlato, non il nodo **Orders** principale, ma il nodo della tabella figlio correlato al di sotto della colonna **Fax** , nel form sotto **customersDataGridView**.
 
-   Nel form verrà visualizzato un oggetto <xref:System.Windows.Forms.DataGridView>. Un' `OrdersTableAdapter` e <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.
+   Nel form verrà visualizzato un oggetto <xref:System.Windows.Forms.DataGridView>. Nella barra dei componenti viene visualizzata una `OrdersTableAdapter` e <xref:System.Windows.Forms.BindingSource>.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Aggiungere un riferimento all'assembly System. Transactions
 
@@ -108,19 +108,19 @@ Le transazioni usano lo spazio dei nomi <xref:System.Transactions>. Un riferimen
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Per aggiungere un riferimento al file DLL System.Transactions.
 
-1. Nel **Project** dal menu **Aggiungi riferimento**.
+1. Scegliere **Aggiungi riferimento**dal menu **progetto** .
 
-2. Selezionare **System. Transactions** (nelle **.NET** scheda), quindi selezionare **OK**.
+2. Selezionare **System. Transactions** nella scheda **.NET** e quindi fare clic su **OK**.
 
      Al progetto viene aggiunto un riferimento a **System.Transactions**.
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Modificare il codice nel pulsante SaveItem di BindingNavigator
 
-Per la prima tabella rilasciata nel form, viene aggiunto codice per impostazione predefinita per il `click` pulsante eventi del salvataggio il <xref:System.Windows.Forms.BindingNavigator>. È necessario aggiungere manualmente il codice per aggiornare eventuali tabelle aggiuntive. In questa procedura dettagliata è effettuare il refactoring del codice dal salvataggio di salvataggio gestore dell'evento click del pulsante. Si crea anche altri metodi per fornire funzionalità di aggiornamento specifico basata sul fatto che la riga debba essere aggiunti o eliminati.
+Per la prima tabella rilasciata nel form, per impostazione predefinita viene aggiunto il codice all'evento `click` del pulsante Salva nel <xref:System.Windows.Forms.BindingNavigator>. È necessario aggiungere manualmente il codice per aggiornare eventuali tabelle aggiuntive. Per questa procedura dettagliata viene effettuato il refactoring del codice di salvataggio esistente dal gestore dell'evento click del pulsante Salva. Vengono inoltre creati altri metodi per fornire funzionalità di aggiornamento specifiche a seconda che la riga debba essere aggiunta o eliminata.
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>Per modificare il codice di salvataggio autogenerato
 
-1. Selezionare il **salvare** pulsante il **CustomersBindingNavigator** (il pulsante con icona del disco floppy).
+1. Selezionare il pulsante **Salva** in **CustomersBindingNavigator** (il pulsante con l'icona del disco floppy).
 
 2. Sostituire il metodo `CustomersBindingNavigatorSaveItem_Click` con il codice seguente:
 
@@ -129,13 +129,13 @@ Per la prima tabella rilasciata nel form, viene aggiunto codice per impostazione
 
 L'ordine di riconciliazione delle modifiche ai dati correlati è il seguente:
 
-- Eliminare i record figlio. (In questo caso, eliminare i record di `Orders` tabella.)
+- Elimina i record figlio. (In questo caso, eliminare i record dalla tabella `Orders`).
 
-- Eliminare i record padre. (In questo caso, eliminare i record di `Customers` tabella.)
+- Elimina i record padre. (In questo caso, eliminare i record dalla tabella `Customers`).
 
-- Inserire i record padre. (In questo caso, inserire i record nella `Customers` tabella.)
+- Inserire i record padre. (In questo caso, inserire i record nella tabella `Customers`).
 
-- Inserire i record figlio. (In questo caso, inserire i record nella `Orders` tabella.)
+- Inserire i record figlio. (In questo caso, inserire i record nella tabella `Orders`).
 
 ### <a name="to-delete-existing-orders"></a>Per eliminare gli ordini esistenti
 

@@ -22,14 +22,14 @@ helpviewer_keywords:
 description: Informazioni su come aggiornare la copia gratuita di Dotfuscator Community inclusa in Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78a26da7734e4fa74a9b312b41786caca4b7cc67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557242"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652814"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Aggiornare Dotfuscator Community
 
@@ -38,10 +38,10 @@ Gli utenti che eseguono l'aggiornamento della loro versione di Dotfuscator posso
 
 ## <a name="registering-dotfuscator-community"></a>Registrazione di Dotfuscator Community
 
-Gli utenti registrati di Dotfuscator Community ottengono l'accesso a funzionalità aggiuntive, ad esempio il [supporto della riga di comando][cli], che rendono più facile l'integrazione di Dotfuscator Community nel processo di compilazione automatico. Con la registrazione verrà anche concesso l'accesso a uno strumento integrato usato per la [decodifica delle tracce dello stack offuscate][decode-obfuscated].
+Gli utenti registrati di Dotfuscator Community ottengono l'accesso a funzionalità aggiuntive, ad esempio il [supporto della riga di comando][cli], che semplifica l'integrazione di Dotfuscator Community nel processo di compilazione automatizzato. La registrazione concede anche l'accesso a uno strumento incorporato usato per la [decodifica delle tracce dello stack offuscato][decode-obfuscated].
 
 La registrazione è veloce, semplice e gratuita.
-Per registrare Dotfuscator Community, vedere [le istruzioni nella guida dell'utente completa di Dotfuscator Community][register-ce].
+Per registrare Dotfuscator Community, vedere [le istruzioni disponibili nella guida completa per l'utente della community Dotfuscator][register-ce].
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
@@ -49,25 +49,25 @@ Mentre Dotfuscator Community offre un livello base di protezione, ***PreEmptive 
 
 * *Protezione della proprietà intellettuale*
   * Opzioni di ridenominazione aggiuntive, tra cui Enhanced Overload Induction™ e selezione casuale degli identificatori.
-  * Accesso alle trasformazioni di offuscamento a livello aziendale, incluse le [trasformazioni destinate ad annullare la decompilazione automatica del codice][control-flow].
-  * La possibilità di [nascondere stringhe sensibili][string-encryption], rendendo impossibile una ricerca semplice del codice decompilato.
-  * La possibilità di [incorporare in modo discreto le stringhe di proprietà e distribuzione negli assembly] [ watermarking], consentendo di determinare l'origine delle perdite di software non autorizzate.
-  * La possibilità di [combinare più assembly in uno solo][linking], rendendo ancora più difficile per gli utenti malintenzionati determinare i ruoli degli elementi di codice, poiché è stata eliminata la separazione dei ruoli.
-  * La possibilità di [rimuovere automaticamente il codice non usato dall'applicazione][pruning], riducendo la quantità di codice sensibile inviato.
+  * Accesso alle trasformazioni di offuscamento a livello aziendale, incluse le [trasformazioni destinate alla sconfitta della decompilazione automatica del codice][control-flow].
+  * La possibilità di [nascondere le stringhe sensibili][string-encryption], rendendo impossibile una semplice ricerca del codice decompilato.
+  * La possibilità di [incorporare in modo discreto le stringhe di proprietà e distribuzione negli assembly][watermarking], consentendo di determinare l'origine delle perdite di software non autorizzate.
+  * La possibilità di [combinare più assembly in uno][linking], rendendo ancora più difficile per gli utenti malintenzionati determinare i ruoli degli elementi di codice, in quanto la separazione dei problemi è stata eliminata.
+  * La possibilità di [rimuovere automaticamente il codice inutilizzato dall'applicazione][pruning], riducendo la quantità di codice sensibile fornito.
 * *Protezione dell'integrità dell'applicazione*
-  * [Comportamenti di difesa delle applicazioni][check-actions] aggiuntivi.
+  * [Comportamenti di difesa dell'applicazione][check-actions]aggiuntivi.
   * La possibilità di specificare un periodo di avviso prima della scadenza finale di un'applicazione.
   * La possibilità di comunicare il codice dell'applicazione durante un periodo di avviso di scadenza o dopo la scadenza.
 
-Dotfuscator Professional è l'[obfuscator .NET] [net-obfuscator] di riferimento del settore ed è adatto per gli sviluppatori aziendali che richiedono supporto, manutenzione e aggiornamenti di prodotto continui.
+Dotfuscator Professional è l' [offuscatore .NET][net-obfuscator] standard di settore ed è adatto per gli sviluppatori aziendali che richiedono il supporto continuo, la manutenzione e gli aggiornamenti del prodotto.
 Dotfuscator Professional offre anche una migliore integrazione con Visual Studio e viene concesso in licenza per uso commerciale.
 
-Per altre informazioni sulle funzionalità di protezione avanzata delle applicazioni di Dotfuscator Professional, visitare la [pagina della panoramica di Dotfuscator][product-about] e il [confronto con Dotfuscator Community][product-compare] di PreEmptive Solutions.
-[Le versioni di valutazione completamente supportate sono disponibili sul sito preemptive.com][eval].
+Per ulteriori informazioni sulle funzionalità di protezione avanzata delle applicazioni di Dotfuscator Professional, visitare la [pagina introduttiva di Dotfuscator][product-about] Solutions ' Dotfuscator ' e [confrontarla con Dotfuscator Community][product-compare].
+Le [versioni di valutazione completamente supportate sono disponibili all'preemptive.com][eval].
 
 ## <a name="see-also"></a>Vedere anche
 
-[Questo articolo nella guida dell'utente completa di Dotfuscator Community][full]
+[Questo articolo del manuale dell'utente completo di Dotfuscator Community][full]
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 

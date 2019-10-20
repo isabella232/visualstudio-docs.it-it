@@ -3,20 +3,20 @@ title: Introduzione a WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 5fe70c531a109294b49a1f6104f535cf8aca5a45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962967"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635441"
 ---
 # <a name="wpf-overview"></a>Panoramica di WPF
 
@@ -139,7 +139,7 @@ Namespace SDKSample
 End Namespace
 ```
 
-In questo esempio il code-behind implementa una classe che deriva dalla classe <xref:System.Windows.Window> . L'attributo `x:Class` viene usato per associare il markup alla classe code-behind. `InitializeComponent` viene chiamato dal costruttore della classe code-behind per unire l'interfaccia utente definita nel markup con la classe code-behind. `InitializeComponent` viene generato durante la compilazione dell'applicazione, per questo motivo non occorre implementarlo manualmente. La combinazione di `x:Class` e `InitializeComponent` assicura che l'implementazione venga inizializzata correttamente quando viene creata. La classe code-behind implementa anche un gestore dell'evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click> del pulsante. Quando si fa clic sul pulsante, il gestore eventi mostra una finestra di messaggio chiamando il metodo <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> .
+In questo esempio il code-behind implementa una classe che deriva dalla classe <xref:System.Windows.Window> . L'attributo `x:Class` viene usato per associare il markup alla classe code-behind. `InitializeComponent` viene chiamato dal costruttore della classe code-behind per unire l'interfaccia utente definita nel markup con la classe code-behind. `InitializeComponent` viene generato automaticamente quando viene compilata l'applicazione, motivo per cui non è necessario implementarla manualmente. La combinazione di `x:Class` e `InitializeComponent` assicurarsi che l'implementazione venga inizializzata correttamente ogni volta che viene creata. La classe code-behind implementa anche un gestore dell'evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click> del pulsante. Quando si fa clic sul pulsante, il gestore eventi mostra una finestra di messaggio chiamando il metodo <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> .
 
 La figura seguente illustra il risultato della scelta del pulsante.
 
@@ -278,7 +278,7 @@ In WPF è disponibile una libreria di forme 2D comuni disegnate da vettori, ad e
 
 ![Ellissi e rettangoli](../designers/media/wpfintrofigure4.PNG)
 
-La caratteristica interessante delle forme è che non vengono usate solo per la visualizzazione. Le forme, infatti, implementano molte delle funzionalità fornite dai controlli, incluso l'input della tastiera e del mouse. L'esempio seguente illustra la gestione dell'evento <xref:System.Windows.UIElement.MouseUp> di un oggetto <xref:System.Windows.Shapes.Ellipse> .
+La caratteristica interessante delle forme è che non vengono usate solo per la visualizzazione. Le forme, infatti, implementano molte delle funzionalità fornite dai controlli, incluso l'input della tastiera e del mouse. L'esempio seguente illustra la gestione dell'evento <xref:System.Windows.UIElement.MouseUp> di un oggetto <xref:System.Windows.Shapes.Ellipse>.
 
 [!code-xaml[IntroToWPFSnippets#HandleEllipseMouseUpEventMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_7.xaml)]
 
@@ -398,7 +398,7 @@ La figura seguente ne illustra il risultato.
 
 ![Controllo TextBox contenente testo](../designers/media/wpfintrofigure21.png)
 
-Gli altri controlli, tuttavia, possono contenere più elementi di tipi diversi di contenuto. Il contenuto di un oggetto <xref:System.Windows.Controls.Button>, specificato dalla proprietà <xref:System.Windows.Controls.ContentControl.Content%2A>, può contenere vari elementi, inclusi i controlli di layout, testo, immagini e forme. L'esempio seguente illustra un oggetto <xref:System.Windows.Controls.Button> con contenuto che include un oggetto <xref:System.Windows.Controls.DockPanel>, un oggetto <xref:System.Windows.Controls.Label>, un oggetto <xref:System.Windows.Controls.Border>e un oggetto <xref:System.Windows.Controls.MediaElement>.
+Gli altri controlli, tuttavia, possono contenere più elementi di tipi diversi di contenuto. Il contenuto di un oggetto <xref:System.Windows.Controls.Button>, specificato dalla proprietà <xref:System.Windows.Controls.ContentControl.Content%2A>, può contenere vari elementi, inclusi i controlli di layout, testo, immagini e forme. L'esempio seguente illustra un oggetto <xref:System.Windows.Controls.Button> con contenuto che include un oggetto <xref:System.Windows.Controls.DockPanel>, un oggetto <xref:System.Windows.Controls.Label>, un oggetto <xref:System.Windows.Controls.Border> e un oggetto <xref:System.Windows.Controls.MediaElement>.
 
 ```xaml
 <Window
@@ -426,7 +426,7 @@ La figura seguente mostra il contenuto di questo pulsante.
 
 Per altre informazioni sui tipi di contenuto supportati dai vari controlli, vedere [Modello di contenuto WPF](/dotnet/framework/wpf/controls/wpf-content-model).
 
-### <a name="triggers"></a>Trigger
+### <a name="triggers"></a>trigger
 
 Anche se lo scopo principale del markup XAML consiste nell'implementare l'aspetto di un'applicazione, è anche possibile usare XAML per implementare alcuni aspetti del comportamento di un'applicazione. Un esempio è dato dall'uso dei trigger per modificare l'aspetto di un'applicazione in base alle interazioni dell'utente. Per altre informazioni, vedere [stili e modelli](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
@@ -453,7 +453,7 @@ Mentre un modello di controllo consente di specificare l'aspetto di un controllo
 
 ![Casella di riepilogo con aspetto predefinito](../designers/media/wpfintrofigure18.png)
 
-L'aspetto predefinito è quello previsto per un oggetto <xref:System.Windows.Controls.ListBox>. L'aspetto predefinito di ciascuna attività, tuttavia, contiene solo il nome dell'attività. Per visualizzare il nome, la descrizione e la priorità di un'attività, è necessario modificare l'aspetto predefinito degli elementi elenco associati del controllo <xref:System.Windows.Controls.ListBox> usando un oggetto <xref:System.Windows.DataTemplate>. Il codice XAML seguente definisce un oggetto <xref:System.Windows.DataTemplate>, applicato a ogni attività usando l'attributo <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> .
+L'aspetto predefinito è quello previsto per un oggetto <xref:System.Windows.Controls.ListBox>. L'aspetto predefinito di ciascuna attività, tuttavia, contiene solo il nome dell'attività. Per visualizzare il nome, la descrizione e la priorità di un'attività, è necessario modificare l'aspetto predefinito degli elementi elenco associati del controllo <xref:System.Windows.Controls.ListBox> usando un oggetto <xref:System.Windows.DataTemplate>. Il codice XAML seguente definisce un oggetto <xref:System.Windows.DataTemplate>, applicato a ogni attività tramite l'attributo <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.
 
 ```xaml
 <Window
