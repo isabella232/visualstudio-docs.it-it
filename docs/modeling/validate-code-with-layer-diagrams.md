@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9786c35b81ac0ff4fd29ffe121aab7e1aa04f2f
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416443"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662931"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -42,7 +42,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, convali
 
    Trovare codice o dipendenze che richiedono azioni quando si sposta il codice in un'architettura diversa.
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio
 
@@ -52,7 +52,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, convali
 
 Per visualizzare le edizioni di Visual Studio che supportano questa funzionalità, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-È possibile convalidare manualmente il codice da un diagramma delle dipendenze aperto in Visual Studio o da un prompt dei comandi. È anche possibile convalidare automaticamente il codice quando si eseguono compilazioni locali o Azure Pipelines compilazioni. Vedere [il video di Channel 9: Progettare e convalidare l'architettura usando](http://go.microsoft.com/fwlink/?LinkID=252073)i diagrammi delle dipendenze.
+È possibile convalidare manualmente il codice da un diagramma delle dipendenze aperto in Visual Studio o da un prompt dei comandi. È anche possibile convalidare automaticamente il codice quando si eseguono compilazioni locali o Azure Pipelines compilazioni. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
 > Se si desidera eseguire la convalida dei livelli utilizzando Team Foundation Server (TFS), è necessario installare anche la stessa versione di Visual Studio nel server di compilazione.
@@ -144,7 +144,7 @@ Se si dispone di un diagramma delle dipendenze aperto collegato a elementi della
        msbuild /p:ValidateArchitecture=true
        ```
 
-     Verranno elencati tutti gli errori che si verificano. Per altre informazioni su MSBuild [, vedere](../msbuild/msbuild.md) attività MSBuild e [MSBuild](../msbuild/msbuild-task.md).
+     Verranno elencati tutti gli errori che si verificano. Per altre informazioni su MSBuild [, vedere attività MSBuild e](../msbuild/msbuild.md) [MSBuild](../msbuild/msbuild-task.md).
 
    Per ulteriori informazioni sugli errori di convalida, vedere [risolvere i problemi di convalida dei livelli](#troubleshoot-layer-validation-issues).
 
@@ -161,10 +161,10 @@ Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni con
 
 Usare queste attività per gestire gli errori di convalida nella finestra **Elenco errori** :
 
-|**To**|**Attenersi alla seguente procedura**|
+|**Per**|**Attenersi alla seguente procedura**|
 |-|-|
 |Eliminare gli errori selezionati durante la convalida|Fare clic con il pulsante destro del mouse su uno o più errori selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su non **visualizzare errori**.<br /><br /> Gli errori eliminati vengono visualizzati come barrati. Alla successiva convalida, questi errori non saranno visualizzati.<br /><br /> Gli errori eliminati vengono rilevati in un file con estensione eliminazioni per il file del diagramma di dipendenza corrispondente.|
-|Interrompere l'eliminazione di errori selezionati|Fare clic con il pulsante destro del mouse sull'errore o sugli errori eliminati selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su Interrompi **eliminazione errori**.<br /><br /> Alla successiva convalida, gli errori eliminati selezionati verranno visualizzati.|
+|Interrompere l'eliminazione di errori selezionati|Fare clic con il pulsante destro del mouse sull'errore o sugli errori eliminati selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su **Interrompi eliminazione errori**.<br /><br /> Alla successiva convalida, gli errori eliminati selezionati verranno visualizzati.|
 |Ripristinare tutti gli errori eliminati nella finestra di **Elenco errori**|Fare clic con il pulsante destro del mouse in un punto qualsiasi della finestra **Elenco errori** , scegliere **Gestisci errori di convalida**, quindi fare clic su **Mostra tutti gli errori eliminati**.|
 |Nascondi tutti gli errori eliminati dalla finestra di **Elenco errori**|Fare clic con il pulsante destro del mouse in un punto qualsiasi della finestra **Elenco errori** , scegliere **Gestisci errori di convalida**, quindi fare clic su **Nascondi tutti gli errori eliminati**.|
 
@@ -208,7 +208,7 @@ Nella tabella seguente vengono descritti i problemi di convalida dei livelli e l
 
 Quando si convalida il codice in base a un diagramma di dipendenza, si verificano errori di convalida quando il codice è in conflitto con la progettazione. In presenza delle condizioni seguenti è possibile ad esempio che si verifichino errori di convalida:
 
-- Un elemento viene assegnato al livello errato. In questo caso, spostare l'elemento.
+- Un artefatto viene assegnato al livello errato. In questo caso, spostare l'elemento.
 
 - Un elemento, ad esempio una classe, usa un'altra classe in un modo che causa conflitti con l'architettura. In questo caso, eseguire il refactoring del codice per rimuovere la dipendenza.
 
@@ -218,22 +218,22 @@ Nella sezione seguente viene descritta la sintassi usata negli errori, viene ill
 
 |**Sintassi**|**Descrizione**|
 |-|-|
-|*ArtifactN*(*ArtifactTypeN*)|*Artefatto* è un artefatto associato a un livello nel diagramma delle dipendenze.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
+|*Artefatto*(*tipoelementon*)|*Artefatto* è un artefatto associato a un livello nel diagramma delle dipendenze.<br /><br /> *Tipoelementon* è il tipo di *artefatto*, ad esempio una **classe** o un **Metodo**, ad esempio:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Metodo)|
 |*NamespaceNameN*|Nome di uno spazio dei nomi.|
 |*LayerNameN*|Nome di un livello nel diagramma delle dipendenze.|
-|*DependencyType*|Tipo di relazione di dipendenza tra *elemento1* e *Artifact2*. Ad esempio, *elemento1* ha una  relazione Calls con *Artifact2*.|
+|*DependencyType*|Tipo di relazione di dipendenza tra *elemento1* e *Artifact2*. Ad esempio, *elemento1* ha una relazione **calls** con *Artifact2*.|
 
 | **Sintassi di errore** | **Descrizione errore** |
 |-|-|
-| DV0001: **Dipendenza non valida** | Questo problema viene segnalato quando un elemento di codice (spazio dei nomi, tipo, membro) mappato a un livello fa riferimento a un elemento di codice mappato a un altro livello, ma non esiste alcuna freccia di dipendenza tra questi livelli nel diagramma di convalida delle dipendenze che contiene questi livelli. Si tratta di una violazione del vincolo di dipendenza. |
-| DV1001: **Nome dello spazio dei nomi non valido** | Questo problema viene segnalato su un elemento di codice associato a un livello che la proprietà "Allowed namespace names" non contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione di vincolo di denominazione. Si noti che la sintassi dei nomi degli spazi dei nomi consentiti è costituita da un elenco di spazi dei nomi con un punto e virgola in cui è consentito definire gli elementi di codice associati al livello. |
-| DV1002: **Dipendenza dallo spazio dei nomi non referenziabile** | Questo problema viene segnalato su un elemento di codice associato a un livello e fa riferimento a un altro elemento di codice definito in uno spazio dei nomi definito nella proprietà "spazio dei nomi non referenziabile" del livello. Si tratta di una violazione di vincolo di denominazione. Si noti che la proprietà "spazi dei nomi non referenziabili" è definita come un elenco separato da punti e virgola di spazi dei nomi a cui non è necessario fare riferimento negli elementi di codice associati a questo livello. |
-| DV1003: **Nome dello spazio dei nomi non consentito** | Questo problema viene segnalato su un elemento di codice associato a un livello che contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione di vincolo di denominazione. Si noti che la proprietà "nome spazio dei nomi non consentito" è definita come un elenco di spazi dei nomi separati da punto e virgola in cui gli elementi di codice associati a questo livello non devono essere definiti. |
-| DV3001: **Collegamento mancante** | Il livello' LayerName ' si collega a'*artefatto*' che non è stato trovato. Probabilmente manca un riferimento a un assembly. |
-| DV9001: **Sono stati trovati errori interni dell'analisi architettura** | I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output. |
+| DV0001: **dipendenza non valida** | Questo problema viene segnalato quando un elemento di codice (spazio dei nomi, tipo, membro) mappato a un livello fa riferimento a un elemento di codice mappato a un altro livello, ma non esiste alcuna freccia di dipendenza tra questi livelli nel diagramma di convalida delle dipendenze che contiene questi livelli. Si tratta di una violazione del vincolo di dipendenza. |
+| DV1001: **nome dello spazio dei nomi non valido** | Questo problema viene segnalato su un elemento di codice associato a un livello che la proprietà "Allowed namespace names" non contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione di vincolo di denominazione. Si noti che la sintassi dei nomi degli spazi dei nomi consentiti è costituita da un elenco di spazi dei nomi con un punto e virgola in cui è consentito definire gli elementi di codice associati al livello. |
+| DV1002: **dipendenza dallo spazio dei nomi non referenziabile** | Questo problema viene segnalato su un elemento di codice associato a un livello e fa riferimento a un altro elemento di codice definito in uno spazio dei nomi definito nella proprietà "spazio dei nomi non referenziabile" del livello. Si tratta di una violazione di vincolo di denominazione. Si noti che la proprietà "spazi dei nomi non referenziabili" è definita come un elenco separato da punti e virgola di spazi dei nomi a cui non è necessario fare riferimento negli elementi di codice associati a questo livello. |
+| DV1003: **nome dello spazio dei nomi non consentito** | Questo problema viene segnalato su un elemento di codice associato a un livello che contiene lo spazio dei nomi in cui è definito questo elemento di codice. Si tratta di una violazione di vincolo di denominazione. Si noti che la proprietà "nome spazio dei nomi non consentito" è definita come un elenco di spazi dei nomi separati da punto e virgola in cui gli elementi di codice associati a questo livello non devono essere definiti. |
+| DV3001: **collegamento mancante** | Il livello '*LayerName*' si collega a'*artefatto*' che non è stato trovato. Probabilmente manca un riferimento a un assembly. |
+| DV9001: l' **analisi dell'architettura ha rilevato errori interni** | I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output. |
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Convalida delle dipendenze in tempo reale in Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
-- [Video: Convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Video: convalidare le dipendenze dell'architettura in tempo reale](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
