@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435089"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670599"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Come sbloccare Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63435089"
 ### <a name="updating-stale-licenses"></a>Aggiornamento di licenze obsolete
  È possibile che sia stato visualizzato il messaggio seguente, che indica che la licenza sta per diventare obsoleta in Visual Studio.
 
- ![Finestra di dialogo Informazioni utente di Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Finestra di dialogo con le informazioni utente di Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  Questo messaggio indica che, anche se è possibile che l'abbonamento sia ancora valido, il token della licenza usato da Visual Studio per mantenere aggiornato l'abbonamento non è stato aggiornato ed è diventato obsoleto a causa di uno dei motivi seguenti:
 

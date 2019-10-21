@@ -26,28 +26,26 @@ helpviewer_keywords:
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66a895b48051ed8797644b36d6f6663e1e35a8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68145663"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620396"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informazioni aggiuntive sugli errori di Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano i file di origine in un progetto, Progettazione classi può perdere traccia del tipo, soprattutto del tipo di origine di un typedef, delle classi di base o dei tipi di associazione. Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.  
-  
- Nelle risorse seguenti è possibile trovare assistenza per altri errori e avvisi:  
-  
- [Uso del codice Visual C++ (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md)  
- Include informazioni sulla risoluzione dei problemi relativi alla visualizzazione di C++ in un diagramma classi.  
-  
- [Forum su Progettazione classi di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754)  
- Forum dedicato a domande su Progettazione classi.  
-  
-## <a name="see-also"></a>Vedere anche  
+Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano i file di origine in un progetto, Progettazione classi può perdere traccia del tipo, soprattutto del tipo di origine di un typedef, delle classi di base o dei tipi di associazione. Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.
+
+ Nelle risorse seguenti è possibile trovare assistenza per altri errori e avvisi:
+
+ [L'utilizzo di C++ codice visuale (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md) include informazioni sulla risoluzione C++ dei problemi di visualizzazione in un diagramma classi.
+
+ [Forum su Progettazione classi di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) Forum dedicato a domande su Progettazione classi.
+
+## <a name="see-also"></a>Vedere anche
  [Progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md)

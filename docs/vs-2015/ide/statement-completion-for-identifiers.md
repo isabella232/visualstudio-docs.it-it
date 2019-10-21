@@ -1,5 +1,5 @@
 ---
-title: Completamento delle istruzioni per gli identificatori | Microsoft Docs
+title: Completamento istruzioni per gli identificatori | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,56 +9,56 @@ helpviewer_keywords:
 - statement completion, JavaScript IntelliSense
 ms.assetid: c2cd4945-c67e-471b-8057-96cfd25f7fb2
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f507c2f4d01cf5e3e1e983cfcb5bafd9d9a7dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5e52bf174e5a41d79fa23bfca39121db668e40e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68152912"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643863"
 ---
 # <a name="statement-completion-for-identifiers"></a>Completamento delle istruzioni per gli identificativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-JavaScript non consente esplicita tipizzazione per dichiarazioni di variabili. Di conseguenza, IntelliSense non può sempre fornire elenchi di completamento per gli oggetti. Ciò può verificarsi in varie situazioni. Di seguito sono alcune più comuni.  
-  
-- Viene dichiarato un parametro, ma non è stato chiamato in un' posizione nel documento attivo, come illustrato nell'esempio seguente.  
-  
-  ```javascript  
-  function illuminate(light) {  
-           light.  // Accurate statement completion is not available   
-                   // unless illuminate is called elsewhere with a   
-                   // parameter that has a value. If it is called only  
-                   // in a function that is a sibling to   
-                   // illuminate(light) in the call hierarchy, the   
-                   // IntelliSense engine also cannot determine the   
-                   // parameter type.  
-       }  
-  
-  // Sibling function. No statement completion for light   
-  // object in preceding code.  
-  function lightLamp() {  
-      var x = illuminate(1);  
-  }  
-  
-  // Uncomment the next line to obtain statement completion for  
-  // light object in preceding code.  
-  // var x = illuminate(1);  
-  ```  
-  
-- Un oggetto è una funzione che viene chiamata in risposta a un evento. In fase di progettazione, il motore di IntelliSense non è possibile determinare il tipo degli oggetti utilizzati in questa situazione.  
-  
-   Se il motore di IntelliSense può determinare che l'evento deve essere chiamato, in genere tramite l'utilizzo di `addEventListener` per l'evento nel documento attivo, vengono fornite informazioni di IntelliSense più accurate.  
-  
-  Se IntelliSense non riesce a identificare un oggetto, il motore di IntelliSense consente di popolare l'elenco di completamento con le entità denominate, o gli identificatori che sono presenti nel documento attivo. Quando l'elenco di completamento contiene questi identificatori, vengono visualizzate le icone di informazioni accanto a essi. Inoltre, una descrizione comando per ogni identificatore indica che l'espressione è sconosciuto. Di seguito vengono illustrati le opzioni di completamento per un oggetto di tipo istruzione `light` che non è possibile identificare perché l'oggetto e le relative proprietà sono definite. Tuttavia, il `intensity` proprietà è disponibile nell'elenco di identificatore perché è stato usato nel `illuminate` (funzione).  
-  
-  **Opzioni di completamento di un oggetto che non può essere identificato**  
-  
-  ![JavaScript IntelliSense per identificatori](../ide/media/js-intellisense-identifiers.png "js_intellisense_identifiers")  
-  
-  È possibile sostituire l'elenco di completamento di un oggetto usando i commenti della documentazione XML o funzionalità di estensibilità JavaScript IntelliSense. Usando queste funzionalità, è possibile fornire le informazioni sul tipo e le informazioni di IntelliSense più descrittive quando che altrimenti non sarebbero disponibile. Per altre informazioni, vedere [estensione di IntelliSense per JavaScript](../ide/extending-javascript-intellisense.md) e [creare commenti in formato documentazione XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).  
-  
-## <a name="see-also"></a>Vedere anche  
+JavaScript non consente la tipizzazione esplicita per le dichiarazioni di variabili. Di conseguenza, IntelliSense non è sempre in grado di fornire elenchi di completamento per gli oggetti. Questa situazione può verificarsi in varie situazioni. Di seguito sono riportate alcune delle opzioni più comuni.
+
+- Un parametro è dichiarato, ma non è stato chiamato altrove nel documento attivo, come illustrato nell'esempio seguente.
+
+  ```javascript
+  function illuminate(light) {
+           light.  // Accurate statement completion is not available
+                   // unless illuminate is called elsewhere with a
+                   // parameter that has a value. If it is called only
+                   // in a function that is a sibling to
+                   // illuminate(light) in the call hierarchy, the
+                   // IntelliSense engine also cannot determine the
+                   // parameter type.
+       }
+
+  // Sibling function. No statement completion for light
+  // object in preceding code.
+  function lightLamp() {
+      var x = illuminate(1);
+  }
+
+  // Uncomment the next line to obtain statement completion for
+  // light object in preceding code.
+  // var x = illuminate(1);
+  ```
+
+- Un oggetto si trova in una funzione che viene chiamata in risposta a un evento. In fase di progettazione, il motore IntelliSense non è in grado di determinare il tipo di oggetti utilizzati in questa situazione.
+
+   Se il motore IntelliSense è in grado di determinare che l'evento deve essere chiamato, in genere tramite l'utilizzo di `addEventListener` per l'evento nel documento attivo, vengono fornite informazioni di IntelliSense più accurate.
+
+  Quando IntelliSense non è in grado di identificare un oggetto, il motore di IntelliSense compila l'elenco di completamento con le entità denominate o gli identificatori presenti nel documento attivo. Quando l'elenco di completamento contiene questi identificatori, le icone delle informazioni vengono visualizzate accanto. Inoltre, una descrizione comando per ogni identificatore indica che l'espressione è sconosciuta. Nella figura seguente sono illustrate le opzioni di completamento delle istruzioni per un oggetto di tipo `light` che non è possibile identificare perché l'oggetto e le relative proprietà non sono definiti. Tuttavia, la proprietà `intensity` è disponibile nell'elenco di identificatori perché è stata usata nella funzione di `illuminate`.
+
+  **Opzioni di completamento per un oggetto che non è possibile identificare**
+
+  ![JavaScript IntelliSense per identificatori](../ide/media/js-intellisense-identifiers.png "|::ref1::|")
+
+  È possibile eseguire l'override dell'elenco di completamento per un oggetto usando i commenti della documentazione XML o le funzionalità di estensibilità IntelliSense per JavaScript. Utilizzando queste funzionalità, è possibile fornire informazioni sul tipo e informazioni IntelliSense più descrittive quando potrebbero non essere disponibili in altro modo. Per ulteriori informazioni, vedere [estensione di JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) e [creazione di commenti alla documentazione XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
+
+## <a name="see-also"></a>Vedere anche
  [IntelliSense per JavaScript](../ide/javascript-intellisense.md)
