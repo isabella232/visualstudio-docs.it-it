@@ -13,33 +13,29 @@ helpviewer_keywords:
 - security [.NET Framework], maintaining after deployment
 ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651407"
 ---
 # <a name="maintaining-security"></a>Gestione della sicurezza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si afferma spesso che il prezzo da pagare per la sicurezza sia dato da una vigilanza costante. Indipendentemente dall'attenzione dedicata alla sicurezza durante la progettazione e lo sviluppo dell'applicazione, occorre considerare che i punti deboli relativi a questo aspetto si manifesteranno dopo la distribuzione. Controllando l'applicazione e analizzandone i log eventi potrebbero venire alla luce problemi precedentemente nascosti.  
-  
- Inoltre, non è sufficiente vigilare la propria applicazione, ma occorre tenersi aggiornati rispetto alle minacce e ai punti deboli della piattaforma sulla quale questa viene eseguita e su altri eventuali prodotti dai quali potrebbe dipendere.  
-  
- [Sicurezza, privacy e account](http://go.microsoft.com/fwlink/?LinkId=72881)  
- Informazioni su sicurezza, privacy e account utente, incluse informazioni su virus, password, Controllo genitori, firewall e Crittografia unità.  
-  
- [Ricerca nel Bollettino Microsoft sulla sicurezza](/security-updates/)  
- In questa pagina è possibile individuare articoli informativi pubblicati in precedenza. Destinati ai professionisti del settore IT, tali articoli sulla sicurezza forniscono informazioni approfondite sulle ultime novità dell'argomento.  
-  
- [Guida alla protezione di Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) offre informazioni aggiuntive necessarie per i professionisti IT affinché operino in un ambiente Windows Server 2003, garantendo il corretto accesso ai contenuti appropriati alle persone autorizzate.  
-  
- [Best Practices for Enterprise Security](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29) (Procedure consigliate per la sicurezza aziendale)  
- Raccolta di whitepaper incentrati sui differenti aspetti della sicurezza nelle reti aziendali.  
-  
- [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
- MBSA (Microsoft Baseline Security Analyzer) è uno strumento che consente a un singolo utente privato, a un utente aziendale o a un amministratore di analizzare uno o più componenti di Windows per individuare errori comuni di configurazione della sicurezza.
+Si afferma spesso che il prezzo da pagare per la sicurezza sia dato da una vigilanza costante. Indipendentemente dall'attenzione dedicata alla sicurezza durante la progettazione e lo sviluppo dell'applicazione, occorre considerare che i punti deboli relativi a questo aspetto si manifesteranno dopo la distribuzione. Controllando l'applicazione e analizzandone i log eventi potrebbero venire alla luce problemi precedentemente nascosti.
+
+ Inoltre, non è sufficiente vigilare la propria applicazione, ma occorre tenersi aggiornati rispetto alle minacce e ai punti deboli della piattaforma sulla quale questa viene eseguita e su altri eventuali prodotti dai quali potrebbe dipendere.
+
+ [Sicurezza, privacy e account](http://go.microsoft.com/fwlink/?LinkId=72881) Ottieni assistenza per sicurezza, privacy e account utente, incluse informazioni su virus, password, controlli padre, firewall e crittografia unità.
+
+ [Microsoft Security Bulletin Search](/security-updates/) Questa pagina consente di trovare più facilmente i bollettini rilasciati in precedenza. Destinati ai professionisti del settore IT, tali articoli sulla sicurezza forniscono informazioni approfondite sulle ultime novità dell'argomento.
+
+ [Guida alla sicurezza di Windows Server 2003] (/Previous-Versions/TN-Archive/cc163140 (v = TechNet. 10) fornisce le informazioni necessarie per consentire ai professionisti IT di utilizzare in modo sicuro un ambiente Windows Server 2003 garantendo al contempo l'accesso corretto ai contenuti appropriati da parte delle persone giuste.
+
+ [Procedure consigliate per la sicurezza aziendale](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29) Raccolta di white paper che si concentrano sui diversi aspetti della sicurezza nelle reti aziendali.
+
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance) Microsoft Baseline Security Analyzer (MBSA) è uno strumento che consente a un singolo utente di casa, a un utente aziendale o a un amministratore di eseguire l'analisi di uno o più computer basati su Windows per errori di configurazione della sicurezza comuni.
