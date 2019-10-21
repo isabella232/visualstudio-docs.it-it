@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679888"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661186"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Quando si crea un’app, un’applicazione, un sito Web, uno script, un plug-in 
 
  Nel diagramma seguente viene illustrata la relazione tra progetti e soluzioni e gli elementi in essi contenuti dal punto di vista logico.
 
- ![Progetti e soluzioni di Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Progetti e soluzioni di Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  È inoltre possibile creare modelli di progetto e modelli di elemento personalizzati. Per altre informazioni, vedere [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
@@ -80,7 +80,7 @@ Quando si crea un’app, un’applicazione, un sito Web, uno script, un plug-in 
 ## <a name="managing-projects-in-solution-explorer"></a>Gestione di progetti in Esplora soluzioni
  Dopo aver creato un nuovo progetto, viene utilizzato **Esplora soluzioni** per visualizzare e gestire progetti e soluzioni e i relativi articoli associati. Nella figura seguente viene illustrato Esplora Server con una soluzione C# contenente due progetti.
 
- ![Esplora soluzioni](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
+ ![Esplora soluzioni](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>In questa sezione
 

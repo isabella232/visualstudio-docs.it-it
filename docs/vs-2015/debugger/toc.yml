@@ -155,7 +155,7 @@
         - name: Creare visualizzazioni personalizzate di oggetti gestiti
           items:
             - name: Creare visualizzazioni personalizzate di oggetti gestiti
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: Utilizzo dell'attributo DebuggerTypeProxy
               href: using-debuggertypeproxy-attribute.md
             - name: Utilizzo dell'attributo DebuggerDisplay
@@ -342,9 +342,9 @@
       href: using-saved-intellitrace-data.md
     - name: Riferimento API per l'estensibilità di IntelliTrace
       href: api-reference-for-intellitrace-extensibility.md
-- name: 'Debug di applicazioni '
+- name: Debug di applicazioni
   items:
-    - name: 'Debug di applicazioni '
+    - name: Debug di applicazioni
       href: debugging-applications.md
     - name: Debug delle app di Windows Store e Windows Universal
       items:

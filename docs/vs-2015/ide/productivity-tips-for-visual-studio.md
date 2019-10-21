@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696302"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670305"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Figura 1: errori di smart tag
 
-     ![Suggerimenti Smart Tag errori](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![Suggerimenti smart tag errori](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      Nelle caselle rosse vengono forniti suggerimenti per effettuare il refactoring del codice.
 
      Figura 2: refactoring degli smart tag
 
-     ![Suggerimenti Smart Tag errori](../ide/media/productivity-redsmarttags.png "Productivity_BlueSmartTags")
+     ![Suggerimenti smart tag refactoring](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **Visualizzazione e modifica della definizione di un elemento di codice**. È possibile visualizzare e modificare rapidamente il modulo in cui viene definito un elemento di codice, ad esempio un membro, una variabile o un elemento locale.
 
@@ -117,7 +117,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
      Figura 3: elenco risultati di Avvio veloce per `new project`
 
-     ![Risultati di avvio veloce per 'nuovo progetto'](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     ![Risultati di Avvio veloce per il nuovo progetto](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      **Avvio veloce** consente di visualizzare i collegamenti alla finestra di dialogo **Nuovo progetto**, alla finestra di dialogo **Aggiungi nuovo elemento** e alla pagina Progetti e soluzioni nella finestra di dialogo **Opzioni**. I risultati di Avvio veloce possono anche includere file di progetto e finestre degli strumenti.
 
@@ -126,7 +126,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 
 - **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile usare l'elenco **Destinazione di debug**, che si trova sulla barra degli strumenti **Standard** accanto al pulsante **Avvia debug**, per verificare rapidamente quale browser si stia usando durante il debug o la visualizzazione delle pagine.
 
-     ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **Impostazione di punti di interruzione temporanei**. È possibile creare un punto di interruzione temporaneo nella riga di codice corrente e avviare contemporaneamente il debugger. Quando si raggiunge la riga di codice, viene attivata la modalità di interruzione del debugger. Per altre informazioni, vedere [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) (Spostarsi nel codice con il Debugger).
 

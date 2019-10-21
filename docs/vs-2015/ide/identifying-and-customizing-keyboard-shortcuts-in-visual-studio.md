@@ -16,15 +16,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 ms.assetid: d2774be2-60a4-4d6f-95f1-79d0d9e55b56
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432315"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670495"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "63432315"
 
 2. Espandere **Ambiente**, quindi scegliere **Tastiera**.
 
-     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "|::ref1::|")
 
 3. Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
 
@@ -70,7 +70,7 @@ ms.locfileid: "63432315"
 
 5. Se al comando è associato un tasto di scelta rapida, verrà visualizzato nell'elenco **Tasti di scelta rapida per comando selezionato**.
 
-     ![Visualizzare un tasto di scelta rapida per un comando specifico](../ide/media/viewshortcut.png "ViewShortcut")
+     ![Visualizzare un tasto di scelta rapida per un comando specificato](../ide/media/viewshortcut.png "|::ref2::|")
 
 ## <a name="bkmk_assign"></a> Personalizzazione di un tasto di scelta rapida
 
@@ -78,7 +78,7 @@ ms.locfileid: "63432315"
 
 2. Espandere la cartella **Ambiente** e scegliere **Tastiera**.
 
-     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Visualizzare i tasti di scelta rapida nella finestra di dialogo Opzioni](../ide/media/optionskeyboard.png "|::ref3::|")
 
 3. Nella casella **Mostra comandi contenenti** immettere il nome del comando intero o parziale, senza spazi.
 
@@ -100,7 +100,7 @@ ms.locfileid: "63432315"
 
      Se un tasto di scelta rapida è già assegnato a un altro comando, verrà visualizzato nella casella **Combinazione già utilizzata da**. In tal caso, premere il tasto BACKSPACE per eliminare il tasto di scelta rapida prima di provarne un altro.
 
-     ![Specificare un tasto di scelta rapida diverso per un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
+     ![Specificare un tasto di scelta rapida diverso per un comando](../ide/media/reassignshortcut.png "|::ref4::|")
 
 7. Scegliere il pulsante **Assegna**.
 
@@ -120,7 +120,7 @@ ms.locfileid: "63432315"
 
 4. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Avanti**.
 
-     ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png "ExportShortcuts")
+     ![Esportare solo i tasti di scelta rapida personalizzati](../ide/media/exportshortcuts.png "|::ref5::|")
 
 5. Nelle caselle **Assegnare un nome al file di impostazioni?** e **Archivia il file di impostazioni in questa directory** lasciare i valori predefiniti o specificare valori diversi e quindi scegliere il pulsante **Fine**.
 
@@ -142,7 +142,7 @@ ms.locfileid: "63432315"
 
 7. Selezionare la casella di controllo **Tastiera**, quindi scegliere il pulsante **Fine**.
 
-     ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png "ImportShortcuts")
+     ![Importare solo i tasti di scelta rapida personalizzati](../ide/media/importshortcuts.png "|::ref6::|")
 
 ## <a name="see-also"></a>Vedere anche
  [Accessibility Features of Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) (Funzionalità di accessibilità di Visual Studio)
