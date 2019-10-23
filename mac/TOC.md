@@ -105,6 +105,10 @@
 ### [Uso degli spostamenti tramite tastiera](accessibility-keyboard.md)
 ### [Uso di VoiceOver](accessibility-voiceover.md)
 
+# Esercitazioni video
+## [Introduzione ad ASP.NET Core in Visual Studio per Mac](tutorial-aspnet-core-vsmac-getting-started.md)
+## [Estensione di un'applicazione Web ASP.NET Core esistente](tutorial-aspnet-core-vsmac-extending.md)
+
 # [Visual Studio per Mac per gli utenti di Windows](vsmac-for-windows-users.md)
 
 # Risoluzione dei problemi
