@@ -58,4 +58,4 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Compilazione e pulizia di progetti e soluzioni nelle opzioni della riga di comando devenv di Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+ [Compilazione e pulizia di progetti e soluzioni in Visual Studio ](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Devenv opzioni della riga di comando ](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv. exe) ](../../ide/reference/rebuild-devenv-exe.md) [/clean (devenv. exe) ](../../ide/reference/clean-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
