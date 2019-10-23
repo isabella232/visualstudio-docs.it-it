@@ -94,4 +94,4 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
 3. Selezionare la directory contenente la soluzione e premere CANC.
 
 ## <a name="see-also"></a>Vedere anche
- [](../ide/solutions-and-projects-in-visual-studio.md) [Procedura: creare soluzioni basate su più progetti](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [Soluzioni e progetti ](../ide/solutions-and-projects-in-visual-studio.md) [NIB procedura: creare soluzioni multiprogetto](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
