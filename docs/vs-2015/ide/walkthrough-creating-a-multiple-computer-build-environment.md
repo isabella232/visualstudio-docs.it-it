@@ -424,4 +424,4 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
          Per una compilazione nativa a 64 bit, puntare a MSBuild a 64 bit.
 
 ## <a name="see-also"></a>Vedere anche
- [Preparazione di un computer di test per l'esecuzione di un riferimento alla riga di comando eseguibile di debug](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [](../msbuild/msbuild-command-line-reference.md)
+ [Preparazione di un computer di test per l'esecuzione di un file eseguibile di debug ](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) [Command-Line Reference](../msbuild/msbuild-command-line-reference.md)

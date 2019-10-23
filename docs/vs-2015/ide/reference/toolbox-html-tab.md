@@ -38,7 +38,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 ## <a name="ui-elements"></a>Elementi dell'interfaccia utente
  Per impostazione predefinita, nella scheda HTML sono disponibili i seguenti strumenti.
 
- **** ![Puntatore pagina HTML puntatore ASP.NET Mobile Designer](../../ide/reference/media/vxpointer.gif "|::ref1::|")
+ **Puntatore**  ![ASP puntatore pagina HTML di progettazione mobile .NET](../../ide/reference/media/vxpointer.gif "|::ref1::|")
 
  Questo strumento viene selezionato per impostazione predefinita quando si fa clic su una delle schede della casella degli strumenti e non è possibile eliminarlo. Il puntatore consente di trascinare oggetti nell'area di visualizzazione Progettazione, ridimensionarli e riposizionarli nella pagina o nel form. Per altre informazioni, vedere [Procedura: gestire la finestra Casella degli strumenti](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
 
@@ -159,7 +159,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controlli Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintassi dichiarativa per il controllo server HtmlInputHidden](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) e <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.
 
- **** ![Area di testo della barra degli strumenti pagina HTML](../../ide/reference/media/vxtextarea.gif "|::ref11::|") textarea
+ ![Area di testo della barra degli strumenti pagina HTML](../../ide/reference/media/vxtextarea.gif "|::ref11::|") **textarea**
 
  Consente di inserire un elemento `textarea`. È possibile ridimensionare l'area di testo oppure usare le barre di scorrimento per visualizzare il testo che si estende oltre l'area di visualizzazione. Per modificare il testo predefinito visualizzato, modificare l'attributo `value`. Per impostazione predefinita, come prima area di testo viene inserito `id="textarea1"`, come seconda `id=" textarea 2"` e così via.
 
@@ -174,7 +174,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 > [!IMPORTANT]
 > È consigliabile convalidare tutto l'input degli utenti. Per altre informazioni, vedere [Convalida dell'input utente nelle pagine Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
- **** ![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "|::ref12::|") tabella
+ ![Schermata HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "|::ref12::|") **tabella**
 
  Consente di inserire un elemento `table`.
 
@@ -186,7 +186,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Sintassi dichiarativa per il controllo server HtmlTable](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Cenni preliminari sui controlli server Web Table, TableRow e TableCell](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable> e <xref:System.Web.UI.WebControls.Table>.
 
- **** ![Elemento immagine pagina HTML](../../ide/reference/media/vximage.gif "|::ref13::|") immagine
+ ![Elemento immagine pagina HTML](../../ide/reference/media/vximage.gif "|::ref13::|") **immagine**
 
  Consente di inserire un elemento `img`. Modificare questo elemento per specificare il testo `src` e `alt`.
 
@@ -224,7 +224,7 @@ La scheda **HTML** della casella degli strumenti contiene componenti utili nelle
 
  Per altre informazioni, vedere [Controllo Righello orizzontale HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- **** ![Etichetta pagina HTML](../../ide/reference/media/vxlabel.gif "|::ref16::|") div
+ ![Etichetta pagina HTML](../../ide/reference/media/vxlabel.gif "|::ref16::|") **div**
 
  Consente di inserire un elemento `div` che include un attributo `ms_positioning="FlowLayout"`. Tranne che per i valori relativi a larghezza e altezza, questo elemento è identico a un pannello di layout flusso. Per formattare il testo contenuto nell'elemento `div`, aggiungere un attributo `class="stylename"` al tag di apertura.
 

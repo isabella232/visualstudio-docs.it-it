@@ -69,4 +69,4 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [](../../ide/reference/command-window.md) [Casella Trova/comando](../../ide/find-command-box.md) della finestra di comando [Visual Studio](../../ide/reference/visual-studio-commands.md) Visualizza gli [alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Finestra di comando ](../../ide/reference/command-window.md) [Find/Command Box ](../../ide/find-command-box.md) comandi di [Visual Studio ](../../ide/reference/visual-studio-commands.md) alias di comando di [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

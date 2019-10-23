@@ -41,4 +41,4 @@ struct MyStructure
 |`struct StructureName {};`|**NomeStruttura**<br /><br /> Struct|
 
 ## <a name="see-also"></a>Vedere anche
- [Uso di classi C++ e struct del codice visivo (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md) [](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)
+ [Utilizzo del codice C++ visuale (Progettazione classi) ](../ide/working-with-visual-cpp-code-class-designer.md) [Classes e struct ](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)
