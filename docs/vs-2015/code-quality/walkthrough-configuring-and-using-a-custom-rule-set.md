@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Configurazione e utilizzo di un Set di regole | Microsoft Docs'
+title: 'Procedura dettagliata: Configurazione e utilizzo di un set di regole personalizzate | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -9,149 +9,148 @@ helpviewer_keywords:
 - code analysis, rule sets
 ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
 caps.latest.revision: 42
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8239afd1cf4e8c0a5e702f2b0e4ed64408cada09
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383412"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645749"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procedura dettagliata: Configurazione e uso di un set di regole personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa procedura dettagliata illustra come usare gli strumenti di analisi codice che sono stati configurati per usare un oggetto personalizzato *set di regole* in una libreria di classi. È possibile selezionare un set di regole che è correlato al tipo di progetto che è stato specificato per la soluzione, oppure è possibile selezionare set di regole alternativa per soddisfare esigenze specifiche, ad esempio l'analisi del codice legacy per i problemi che possono essere risolti in modo che non determina interruzione. In entrambi i casi, i set di regole possono essere personalizzati anche per adattarli ai propri requisiti di progetto.  
-  
- In questa procedura dettagliata, avanzerà questi processi:  
-  
-- Creare una libreria di classi.  
-  
-- Selezionare il **regole base delle linee guida di progettazione Microsoft** set di regole di analisi del codice.  
-  
-- Aggiungere il proprio codice alla classe.  
-  
-- Esegui analisi del codice.  
-  
-- Personalizzare il set di regole.  
-  
-- Esegui analisi del codice e vedere come il set di regole comportamento delle personalizzazioni.  
-  
-## <a name="prerequisites"></a>Prerequisiti  
-  
-- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]  
-  
-## <a name="using-rule-sets-with-code-analysis"></a>Utilizza regole, viene impostato con l'analisi del codice  
- Innanzitutto, creare una libreria di classi semplici.  
-  
-#### <a name="create-a-class-library"></a>Creare una libreria di classi  
-  
-1. Scegliere **Nuovo** dal menu **File** , quindi fare clic su **Progetto**.  
-  
-2. Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual c#** .  
-  
-3. Sotto **Visual c#** , selezionare **libreria di classi**.  
-  
-4. Nel **Name** casella di testo, digitare **RuleSetSample** e quindi fare clic su **OK**.  
-  
-   Successivamente, si selezionerà il **regole base delle linee guida di progettazione Microsoft** set di regole e salvarlo con il progetto.  
-  
-#### <a name="select-a-code-analysis-rule-set"></a>Selezionare un set di regole di analisi codice  
-  
-1. Nel **Analyze** menu, fare clic su **Configura analisi codice per RuleSetSample**.  
-  
-    Vengono visualizzate le impostazioni di configurazione per l'analisi codice.  
-  
-2. Nel **eseguire questo set di regole** elenco a discesa, seleziona **tutte le regole Microsoft**.  
-  
-    Per altre informazioni sui set di regole disponibili, vedere [riferimento di set di regole di analisi di codice](../code-quality/code-analysis-rule-set-reference.md).  
-  
-    Nel menu File fare clic su **Salva elementi selezionati** per aggiornare il file di progetto con informazioni sui set di regole che è stata selezionata e le relative impostazioni.  
-  
+In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di analisi del codice configurati per l'utilizzo di un *set di regole* personalizzato in una libreria di classi. È possibile selezionare un set di regole che si riferisce al tipo di progetto specificato per la soluzione oppure è possibile selezionare set di regole alternativi per soddisfare una specifica esigenza, ad esempio l'analisi del codice legacy per individuare i problemi che possono essere corretti in modo non interrompente. In entrambi i casi, è inoltre possibile personalizzare i set di regole per ottimizzarli ai requisiti del progetto.
+
+ In questa procedura dettagliata si eseguiranno i passaggi seguenti:
+
+- Creare una libreria di classi.
+
+- Selezionare il set di regole di analisi del codice per le **linee guida di Microsoft Basic Design** .
+
+- Aggiungere codice personalizzato alla classe.
+
+- Eseguire l'analisi del codice.
+
+- Personalizzare il set di regole.
+
+- Eseguire l'analisi del codice e verificare il funzionamento del comportamento di personalizzazione del set di regole.
+
+## <a name="prerequisites"></a>Prerequisiti
+
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]
+
+## <a name="using-rule-sets-with-code-analysis"></a>Uso di set di regole con l'analisi del codice
+ Per prima cosa, creare una libreria di classi semplice.
+
+#### <a name="create-a-class-library"></a>Creare una libreria di classi
+
+1. Scegliere **Nuovo** dal menu **File** , quindi fare clic su **Progetto**.
+
+2. Nella finestra di dialogo **nuovo progetto** , in **Tipi progetto**, fare clic su oggetto **visivo C#** .
+
+3. In **Visual C#** Selezionare **libreria di classi**.
+
+4. Nella casella di testo **nome** digitare **RuleSetSample** e quindi fare clic su **OK**.
+
+   A questo punto, selezionare il set di **regole Microsoft Basic Design Guideline** Rules e salvarlo con il progetto.
+
+#### <a name="select-a-code-analysis-rule-set"></a>Selezionare un set di regole di analisi del codice
+
+1. Nel menu **analizza** fare clic su **Configura analisi codice per RuleSetSample**.
+
+    Verranno visualizzate le impostazioni di configurazione per l'analisi del codice.
+
+2. Nell'elenco a discesa **Esegui questo set di regole** selezionare **Microsoft all Rules**.
+
+    Per ulteriori informazioni sui set di regole disponibili, vedere [riferimento al set di regole di analisi del codice](../code-quality/code-analysis-rule-set-reference.md).
+
+    Scegliere **Salva elementi selezionati** dal menu file per aggiornare il file di progetto con le informazioni sul set di regole selezionato e le relative impostazioni.
+
    > [!TIP]
-   > In una situazione reale, una buona norma usare per definire la priorità dei problemi di destinazione con l'analisi del codice consiste nell'iniziare con il **regole minime** set di regole e correggere i problemi desiderati e quindi aggiungere in modo incrementale altre regole o regole imposta per trovare e correggere i problemi aggiuntivi.  
-  
-   Successivamente, si aggiungerà codice alla libreria di classi che verrà usata per dimostrare le violazioni del CA1704 "Gli identificatori devono essere digitati correttamente" regola di analisi del codice. Per altre informazioni, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
-  
-#### <a name="add-your-own-code"></a>Aggiungere il proprio codice  
-  
-- In Esplora soluzioni aprire il file Class1.cs e sostituire il codice esistente con il codice seguente:  
-  
-  ```  
-  using System;  
-  using System.Collections.Generic;  
-  using System.Text;  
-  
-  namespace RuleSetSample  
-  {  
-      public class Class1  
-      {  
-          //The variable parameter names "a" and "b" will cause  
-          //the warning CA 1704 Microsoft.Naming "Consider   
-          //providing a more meaningful name" to fire  
-          public int AddIntegers(int a, int b)  
-          {  
-  
-              int sum = a + b;  
-  
-              return (sum);  
-          }  
-      }  
-  }  
-  
-  ```  
-  
-  A questo punto è possibile eseguire l'analisi del codice sul progetto RuleSetSample e cercare eventuali errori e avvisi generati nella finestra Elenco errori.  
-  
-#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Esegui analisi del codice sul progetto RuleSetSample  
-  
-1. Nel **Analyze** menu, fare clic su **Esegui analisi del codice RuleSetSample**.  
-  
-2. Nella finestra Elenco errori, fare clic su **gli avvisi** e quindi fare clic sui **descrizione** intestazione di colonna per ordinare gli avvisi in modalità alfanumerica.  
-  
-    In un'applicazione reale, vorrebbero correggere eventuali violazioni delle regole vale la pena correzione a questo punto, o, facoltativamente, disattivare o eliminare una regola se è possibile determinare che non è stato necessario correggere. Per altre informazioni, vedere [Rimuovere avvisi tramite l'attributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
-  
-3. Si noti che gli avvisi di CA1704. Tali violazioni di questa regola indicano che è "consigliabile fornire un nome più significativo per i parametri." È possibile correggere il problema nel codice oppure è possibile disabilitare la regola, come illustrato nella procedura successiva.  
-  
-   Successivamente si personalizzerà il set di regole per escludere l'avviso CA1704, "Gli identificatori devono essere digitati correttamente".  
-  
-#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Personalizzare il set di regole per il progetto disabilitare una regola specifica  
-  
-1. Nel **Analyze** menu, fare clic su **Configura analisi codice per RuleSetSample**.  
-  
-2. Nel **eseguire questo set di regole** elenco a discesa elenco, verificare che il **tutte le regole Microsoft** regola set viene comunque evidenziato e quindi fare clic su **Open**. Verrà visualizzata la pagina di set di regole.  
-  
-3. Espandere il nodo della categoria Microsoft. naming e quindi selezionare l'avviso CA1704.  
-  
-4. Sotto il **azione** colonna, selezionare **None.** Ciò impedisce CA1704 venga visualizzato come un avviso o un errore nella finestra Elenco errori.  
-  
-    A questo punto sarebbe opportuno provare a usare i pulsanti della barra degli strumenti diversi e per acquisire familiarità con le opzioni di filtro. Ad esempio, è possibile usare la **Group By** elenco a discesa per consentire l'individuazione di una regola specifica, o categoria delle regole. Un altro esempio è che è possibile usare la **nascondere le regole disabilitate** pulsante sulla barra degli strumenti regola del set di pagine per nascondere o mostrare tutte le regole con il **azione** colonna impostata su **None**. Ciò può essere utile se si desidera cercare eventuali regole che è stata disattivata per verificare che si desidera abilitarle o meno.  
-  
-5. Dal menu Visualizza, fare clic sulla finestra Proprietà. Tipo di **My Custom Rule Set** nella casella nome della finestra degli strumenti delle proprietà. Questa operazione modificherà il nome visualizzato della nuova regola di cui il [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE.  
-  
-6. Nel **File** menu, fare clic su **Rules.ruleset tutti i Microsoft salvare** per salvare la regola personalizzata impostata. Passare alla cartella radice del progetto. Nelle **il nome del file** casella di testo, digitare **SetRegolePersonalizzato**. È ora possibile selezionare il set di regole personalizzate per l'uso con il progetto.  
-  
-   Con il nuovo set di regole creato, a questo punto è necessario configurare le impostazioni del progetto per specificare che si desidera utilizzare il nuovo set di regole.  
-  
-#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Specificare la nuova regola impostata per l'uso con il progetto  
-  
-1. In Esplora soluzioni fare clic sul progetto e quindi selezionare **proprietà**.  
-  
-2. Nel **delle proprietà** scheda, fare clic su **analisi del codice**.  
-  
-    Nel **eseguire questo set di regole** elenco a discesa, fare clic su  **\<Sfoglia... >** . Passare alla cartella radice del progetto del codice e quindi selezionare **SetRegolePersonalizzato**. Questo è il nuovo set di regole creato nella procedura precedente.  
-  
-3. Nel **File** menu, fare clic su **salvare** per salvare la configurazione del progetto. Il set di regole personalizzate a questo punto è utilizzabile con il progetto.  
-  
-   Infine, verrà eseguito nuovamente usando il set di regole SetRegolePersonalizzato analisi del codice. Si noti che la finestra Elenco errori non vengono visualizzate alla violazione della regola delle prestazioni CA1704.  
-  
-#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Esegui analisi codice sul progetto RuleSetSample per la seconda volta  
-  
-1. Nel **Analyze** menu, fare clic su **Esegui analisi del codice RuleSetSample**.  
-  
-2. Nella finestra Elenco errori, si noti che quando si fa clic **avvisi**, non si visualizzata più il segno di CA1704 per la regola "Gli identificatori devono essere digitati correttamente".  
-  
-## <a name="see-also"></a>Vedere anche  
- [Procedura: Configura analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Tabella di riferimento del set di regole di analisi del codice](../code-quality/code-analysis-rule-set-reference.md)
+   > In una situazione reale, una procedura consigliata per la definizione delle priorità dei problemi che si desidera definire come destinazione dell'analisi del codice consiste nell'iniziare con il set di regole **minime consigliate** e correggere i problemi desiderati, quindi aggiungere in modo incrementale altre regole o set di regole a trovare e correggere i problemi aggiuntivi.
+
+   Successivamente, si aggiungerà codice alla libreria di classi che verrà usato per illustrare le violazioni della regola di analisi del codice di CA1704 "identificatori". Per ulteriori informazioni, vedere [CA1704: Gli identificatori devono essere digitati correttamente ](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+
+#### <a name="add-your-own-code"></a>Aggiungere codice personalizzato
+
+- In Esplora soluzioni aprire il file Class1.cs e sostituire il codice esistente con il codice seguente:
+
+  ```
+  using System;
+  using System.Collections.Generic;
+  using System.Text;
+
+  namespace RuleSetSample
+  {
+      public class Class1
+      {
+          //The variable parameter names "a" and "b" will cause
+          //the warning CA 1704 Microsoft.Naming "Consider
+          //providing a more meaningful name" to fire
+          public int AddIntegers(int a, int b)
+          {
+
+              int sum = a + b;
+
+              return (sum);
+          }
+      }
+  }
+
+  ```
+
+  A questo punto è possibile eseguire l'analisi del codice sul progetto RuleSetSample e cercare eventuali errori e avvisi generati nella finestra Elenco errori.
+
+#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Eseguire l'analisi del codice nel progetto RuleSetSample
+
+1. Nel menu **analizza** fare clic su **Esegui analisi del codice in RuleSetSample**.
+
+2. Nella finestra Elenco errori fare clic su **avvisi** e quindi sull'intestazione di colonna **Descrizione** per ordinare gli avvisi in modo alfanumerico.
+
+    In un'applicazione reale, è necessario correggere le eventuali violazioni delle regole che è opportuno correggere a questo punto o facoltativamente disattivare o eliminare una regola se è stato determinato che la correzione non è stata corretta. Per altre informazioni, vedere [Rimuovere avvisi tramite l'attributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).
+
+3. Si notino gli avvisi CA1704. Queste violazioni in questa regola indicano che è necessario fornire un nome più significativo per i parametri. È possibile risolvere il problema nel codice oppure disabilitare la regola, come illustrato nella procedura seguente.
+
+   Successivamente, verrà personalizzato il set di regole in modo da escludere l'avviso di CA1704, "gli identificatori devono essere digitati correttamente".
+
+#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Personalizzare il set di regole per il progetto in modo da disabilitare una regola specifica
+
+1. Nel menu **analizza** fare clic su **Configura analisi codice per RuleSetSample**.
+
+2. Nell'elenco a discesa **Esegui questo set** di regole verificare che il set di regole **Microsoft all Rules** sia ancora evidenziato, quindi fare clic su **Apri**. Verrà visualizzata la pagina set di regole.
+
+3. Espandere il nodo Microsoft. naming Category, quindi selezionare l'avviso CA1704.
+
+4. Nella colonna **azione** selezionare **nessuno.** Ciò impedisce la visualizzazione di CA1704 come un avviso o un errore nella finestra Elenco errori.
+
+    A questo punto è opportuno provare i diversi pulsanti della barra degli strumenti e le opzioni di filtro per acquisire familiarità con essi. Ad esempio, è possibile usare l'elenco a discesa **raggruppa** per per individuare una regola specifica o una categoria di regole. Un altro esempio è che è possibile usare il pulsante **Nascondi regole disabilitate** nella barra degli strumenti pagine set di regole per nascondere o mostrare tutte le regole con la colonna **azione** impostata su **None**. Questa operazione può essere utile se si desidera eseguire l'analisi di tutte le regole disattivate per verificare che siano ancora disabilitate.
+
+5. Scegliere Finestra Proprietà dal menu Visualizza. Digitare **My Custom Rule Set** nella casella nome della finestra degli strumenti Proprietà. Viene modificato il nome visualizzato del nuovo set di regole nell'IDE [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+
+6. Scegliere **Salva Microsoft all Rules. RuleSet** dal menu **file** per salvare il set di regole personalizzato. Passare alla cartella radice del progetto. Nella casella di testo **nome file** digitare **MyCustomRuleSet**. Il set di regole personalizzate ora può essere selezionato per l'uso con il progetto.
+
+   Con il nuovo set di regole creato, è ora necessario configurare le impostazioni del progetto per specificare che si vuole usare il nuovo set di regole.
+
+#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Specificare il nuovo set di regole da usare con il progetto
+
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+
+2. Nella scheda **Proprietà** fare clic su **analisi codice**.
+
+    Nell'elenco a discesa **Esegui questo set di regole** fare clic su **\<Browse. >** . Passare alla cartella radice del progetto di codice e quindi selezionare **MyCustomRuleSet. RuleSet**. Si tratta del nuovo set di regole creato nella procedura precedente.
+
+3. Nel menu **file** fare clic su **Salva** per salvare la configurazione del progetto. Il set di regole personalizzate ora può essere usato con il progetto.
+
+   Infine, sarà necessario eseguire di nuovo l'analisi del codice usando il set di regole MyCustomRuleSet. Si noti che nella finestra Elenco errori non viene visualizzata la violazione della regola delle prestazioni CA1704.
+
+#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Esegui analisi del codice sul progetto RuleSetSample per la seconda volta
+
+1. Nel menu **analizza** fare clic su **Esegui analisi del codice in RuleSetSample**.
+
+2. Nella finestra Elenco errori si noti che quando si fa clic su **avvisi**, non vengono più visualizzate le violazioni di avviso CA1704 per la regola "identificatori che devono essere digitati correttamente".
+
+## <a name="see-also"></a>Vedere anche
+ [Procedura: Configurare l'analisi del codice per un progetto di codice gestito ](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [riferimento al set di regole di analisi del codice](../code-quality/code-analysis-rule-set-reference.md)
