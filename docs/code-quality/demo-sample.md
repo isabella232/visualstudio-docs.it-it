@@ -11,16 +11,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018439"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745920"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Esempio di progetto C++ per l'analisi del codice
 
-Le procedure seguenti illustrano come creare un esempio per la [Procedura dettagliata: Analizzare il codice C/C++ per rilevarne i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:
+Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedura dettagliata: analizzare CC++ /codice per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:
 
 - Una soluzione di Visual Studio con nome CppDemo.
 
@@ -34,7 +34,7 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 1. Fare clic sul menu **File**, scegliere **Nuovo** e fare clic su **Nuovo progetto**.
 
-2. Nell'elenco ad albero **Tipo progetto** espandere **Altri linguaggi** se Visual C++ non è il linguaggio predefinito in Visual Studio.
+2. Nell'elenco albero dei **tipi di progetto** , C++ se non è la lingua predefinita in Visual Studio espandere **altri linguaggi**.
 
 3. Espandere **Visual C++** , quindi fare clic su **Generale**.
 
@@ -168,7 +168,7 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 6. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.
 
-7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)** .
+7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)** .
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Aggiungere il file di intestazione e il file di origine per il progetto Annotations
 

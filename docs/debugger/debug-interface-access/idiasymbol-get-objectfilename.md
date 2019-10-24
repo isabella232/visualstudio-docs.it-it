@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841fe2b1ae6f54b3bc7deea97b335790ca6dac5f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8e7717e6fbf19fdf8f14e7667db171991319fb3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841813"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739632"
 ---
-# <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
+# <a name="idiasymbolget_objectfilename"></a>IDiaSymbol::get_objectFileName
 Recupera il nome del file oggetto.
 
 ## <a name="syntax"></a>Sintassi
@@ -30,7 +30,7 @@ HRESULT get_objectFilename(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `BSTR` che contiene il nome del file oggetto.
+out Puntatore a un `BSTR` che include il nome del file oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

@@ -1,5 +1,5 @@
 ---
-title: Just-In-Time, debug, finestra di dialogo Opzioni | Microsoft Docs
+title: JIT, debug, finestra di dialogo Opzioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905935"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731606"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>JIT, Debug, Finestra di dialogo Opzioni
 Per accedere alla pagina **JIT** scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere il nodo **Debug** e selezionare **JIT**. Questa pagina consente di abilitare il debug JIT per codice gestito, codice nativo e script. Per altre informazioni, vedere [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md).
@@ -43,13 +43,13 @@ Per accedere alla pagina **JIT** scegliere **Opzioni** dal menu **Strumenti**. N
 ## <a name="associated-warnings"></a>Avvisi associati
  Quando si accede a questa pagina della finestra di dialogo **Opzioni**, è possibile che venga visualizzato il seguente messaggio di avviso:
 
- **Un altro debugger è stato registrato come debugger JIT. Per risolvere il problema, abilitare il debug JIT o ripristinare Visual Studio.**
+ **Un altro debugger si è registrato come debugger JIT. Per ripristinare, abilitare il debug JIT o eseguire il ripristino di Visual Studio.**
 
  Questo messaggio viene visualizzato se come debugger JIT è impostato un altro debugger, ad esempio una versione precedente del debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
  È anche possibile che venga visualizzato il messaggio seguente:
 
- **Rilevati errori di registrazione del debug JIT. Per risolvere il problema, abilitare il debug JIT o ripristinare Visual Studio.**
+ **Sono stati rilevati errori di registrazione del debug JIT. Per ripristinare, abilitare il debug JIT o eseguire il ripristino di Visual Studio.**
 
  In entrambi i casi, finché il problema non viene risolto, per l'esecuzione del debug JIT con [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] sarà necessario disporre dei privilegi di amministratore. Se si tenta di abilitare la modalità JIT in queste condizioni senza disporre di questi privilegi, viene visualizzato il seguente messaggio di errore:
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae1201fca1fc25cce19b40b47d6435d02d80e1b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837914"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741472"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
-Legge dall'immagine della memoria.
+Legge la memoria dall'immagine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,23 +37,23 @@ HRESULT readMemory ( 
 #### <a name="parameters"></a>Parametri
  `type`
 
-[in] Uno dei [enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) valori di enumerazione che specifica il tipo di memoria per accedere.
+in Uno dei valori di enumerazione dell' [enumerazione MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) che specifica il tipo di memoria a cui accedere.
 
  `va`
 
-[in] Percorso di indirizzo virtuale nell'immagine per iniziare la lettura.
+in Posizione dell'indirizzo virtuale nell'immagine da cui iniziare la lettura.
 
  `cbData`
 
-[in] Dimensioni del buffer di dati, in byte.
+in Dimensioni in byte del buffer di dati.
 
  `pcbData`
 
-[out] Restituisce il numero di byte restituiti. Se `data` viene `NULL`, quindi `pcbData` contiene il numero totale di byte di dati disponibili.
+out Restituisce il numero di byte restituiti. Se `data` è `NULL`, `pcbData` contiene il numero totale di byte di dati disponibili.
 
  `data`
 
-[out] Un buffer che deve essere compilato con i dati dalla posizione specificata.
+out Buffer da compilare con i dati del percorso specificato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

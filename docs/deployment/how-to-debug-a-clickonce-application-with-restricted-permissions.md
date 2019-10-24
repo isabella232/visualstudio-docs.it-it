@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug dell'applicazione ClickOnce con autorizzazioni limitate
+title: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78577f197f952b46d474fb3fd61c72008857c4be
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0d942c41aac873b775566efa4e128651a8830e92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263319"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727955"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate
 Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizzazioni di attendibilità totale. È quindi molto probabile che le eccezioni di sicurezza generate durante il debug di un'applicazione ClickOnce siano diverse da quelle restituite all'utente finale quando esegue l'applicazione con autorizzazioni limitate.
@@ -59,7 +59,7 @@ Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizz
 6. Nella casella di testo **Esegui debug dell'applicazione come se fosse stata scaricata dal seguente URL** immettere un URL o un percorso di rete.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

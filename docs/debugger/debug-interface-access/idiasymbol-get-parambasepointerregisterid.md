@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6901210e05ef3eb1f8e63b8e6c508d36b2770b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 09bdfb5d276e4dc7414c78529c2a6f1644597cd3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798793"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739510"
 ---
-# <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
-Recupera l'ID del registro che contiene un puntatore di base per i parametri. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.
+# <a name="idiasymbolget_parambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
+Recupera l'ID del registro che include un puntatore di base ai parametri. Utilizzare quando l' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,22 +33,22 @@ HRESULT get_paramBasePointerRegisterId ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'ID del registro che contiene un puntatore di base per i parametri.
+out Restituisce l'ID del registro che include un puntatore di base ai parametri.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: DIA2.h
+ Intestazione: dia2. h
 
- Libreria: diaguids.lib
+ Libreria: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

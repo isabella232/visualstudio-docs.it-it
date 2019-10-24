@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f807ca27598580beb011376e115025ab0c3168fe
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 30a393f2725b4924a02bbaed12aef8b60273ffd0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808378"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740429"
 ---
-# <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
-Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene omogenei a virgola mobile (HFA) i dati aggregati di tipo double.
+# <a name="idiasymbolget_hfadouble"></a>IDiaSymbol::get_hfaDouble
+Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene dati di aggregazione a virgola mobile (HFA) omogenei di tipo Double.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,22 +33,22 @@ HRESULT get_hfaDouble( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se il tipo definito dall'utente sono contenuti dati HFA di tipo double; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se il tipo definito dall'utente contiene dati HFA di tipo Double; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: DIA2.h
+ Intestazione: dia2. h
 
- Libreria: diaguids.lib
+ Libreria: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

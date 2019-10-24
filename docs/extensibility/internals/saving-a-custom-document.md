@@ -12,34 +12,34 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b90938e44b4227f8aad43542fc99136745a8af4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cf67335b6a12b966eb148b3f8dcaf16339e2a29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66318735"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724082"
 ---
 # <a name="saving-a-custom-document"></a>Salvataggio di un documento personalizzato
-Gli handle di ambiente il **salvare**, **Salva con nome**, e **Salva tutto** comandi. Quando un utente fa clic **salvare**, **Salva con nome**, **o Salva tutto** nel **File** menu o chiude la soluzione, causando un Salva tutto, quanto segue si verifica.
+L'ambiente gestisce i comandi **Salva**, **Salva con nome**e **Salva tutti** . Quando un utente fa clic su **Salva**, **Salva con nome** **o Salva tutto** dal menu **file** o chiude la soluzione, generando un salvataggio, si verifica il processo seguente.
 
- ![Salvataggio Editor Customer](../../extensibility/internals/media/private.gif "Private") Save, Salva e Salva tutto gestione dei comandi per un editor personalizzato
+ ![Salvataggio dell'editor del cliente](../../extensibility/internals/media/private.gif "Private") Salva, Salva con nome e Salva tutte le operazioni di gestione dei comandi per un editor personalizzato
 
- Questa procedura è descritta nei passaggi seguenti:
+ Questo processo è descritto in dettaglio nei passaggi seguenti:
 
-1. Per il **salvare** e **Salva con nome** comandi, nell'ambiente viene usato il <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> del servizio per determinare la finestra del documento attivo e in questo modo gli elementi che devono essere salvate. Dopo che è noto che la finestra del documento attivo, l'ambiente Cerca il puntatore di gerarchia e l'identificatore dell'elemento (ID elemento) per il documento nella tabella documenti in esecuzione. Per altre informazioni, vedere [tabella documenti in esecuzione](../../extensibility/internals/running-document-table.md).
+1. Per i comandi **Salva** e **Salva con nome** , l'ambiente USA il servizio <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> per determinare la finestra del documento attiva e quindi gli elementi da salvare. Quando la finestra del documento attivo è nota, l'ambiente trova il puntatore della gerarchia e l'identificatore dell'elemento (itemID) per il documento nella tabella documenti in esecuzione. Per ulteriori informazioni, vedere [esecuzione della tabella documenti](../../extensibility/internals/running-document-table.md).
 
-     Per il comando Salva tutto, l'ambiente utilizza le informazioni nella tabella documenti in esecuzione per compilare l'elenco di tutti gli elementi da salvare.
+     Per il comando Salva tutto, l'ambiente USA le informazioni nella tabella documenti in esecuzione per compilare l'elenco di tutti gli elementi da salvare.
 
-2. Quando la soluzione riceve un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chiamata, scorre il set di elementi selezionati (vale a dire le selezioni multiple esposte dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servizio).
+2. Quando la soluzione riceve una chiamata di <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>, scorre il set di elementi selezionati, ovvero le selezioni multiple esposte dal servizio di <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.
 
-3. Su ogni elemento nella selezione, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metodo per determinare se il comando di menu Salva deve essere abilitato. Se uno o più elementi vengono modificati, è abilitato il comando Salva. Se la gerarchia Usa un editor standard, i delegati di gerarchia per l'esecuzione di query modificato lo stato per l'editor chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> (metodo).
+3. Per ogni elemento della selezione, la soluzione USA il puntatore della gerarchia per chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> per determinare se il comando di menu Salva deve essere abilitato. Se uno o più elementi sono Dirty, il comando Salva è abilitato. Se la gerarchia usa un editor standard, la gerarchia delega la query per lo stato dirty all'editor chiamando il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>.
 
-4. Su ogni elemento selezionato è stato modificato, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> metodo sulle gerarchie appropriate.
+4. Per ogni elemento selezionato Dirty, la soluzione USA il puntatore della gerarchia per chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> sulle gerarchie appropriate.
 
-     Nel caso di un editor personalizzato, la comunicazione tra l'oggetto dati del documento e il progetto è privata. In questo modo, eventuali problemi di persistenza speciali vengono gestiti tra questi due oggetti.
+     Nel caso di un editor personalizzato, la comunicazione tra l'oggetto dati del documento e il progetto è privata. Quindi, eventuali problemi di persistenza speciali vengono gestiti tra questi due oggetti.
 
     > [!NOTE]
-    > Se si implementa il proprio persistenza, accertarsi di chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metodo per risparmiare tempo. Questo metodo consente di assicurarsi che sia sicuro salvare il file (ad esempio, il file non è in sola lettura).
+    > Se si implementa la propria persistenza, assicurarsi di chiamare il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> per risparmiare tempo. Questo metodo verifica che sia possibile salvare il file in modo sicuro (ad esempio, il file non è di sola lettura).
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229ee7f4384c5ab93a329104ecbe165e0e1136a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666462"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748676"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Pagina Estensioni My, Progettazione progetti (Visual Basic)
 Usare la pagina **Estensioni My** di **Progettazione progetti** per gestire le estensioni dello spazio dei nomi `My` nel progetto. Le estensioni dello spazio dei nomi `My` consentono di personalizzare lo spazio dei nomi `My` per aggiungere i propri membri personalizzati. Per informazioni sulla creazione di estensioni personalizzate dello spazio dei nomi `My`, vedere [Estensione dello spazio dei nomi My in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

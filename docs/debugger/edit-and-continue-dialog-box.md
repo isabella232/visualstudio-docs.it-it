@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione nella finestra di dialogo | Microsoft Docs
+title: Finestra di dialogo modifica e continuazione | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851326"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737937"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Finestra di dialogo Modifica e continuazione
 (Solo codice nativo) Questa finestra di dialogo viene visualizzata se durante il debug sono state apportate modifiche al codice riconosciute come applicabili dalla funzionalità **Modifica e continuazione**. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).
 
- **Non visualizzare più questo messaggio** se si seleziona questa casella di controllo **modifica e continuazione** applicherà le modifiche al codice senza chiedere l'autorizzazione in futuro. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Richiama dai comandi di debug** e **Chiedi conferma**.
+ **Non visualizzare più questo messaggio** Se si seleziona questa casella di controllo, **modifica e continuazione** applicherà le modifiche al codice senza chiedere l'autorizzazione in futuro. Per attivare nuovamente questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Richiama dai comandi di debug** e **Chiedi conferma**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

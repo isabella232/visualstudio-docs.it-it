@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c556d67ca8823ce54da19de51c934181465807
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5f9ad47a37c2d9306cc4f087719bfef7a52be308
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803571"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739881"
 ---
-# <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
-Recupera l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.
+# <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
+Recupera l'ID del registro che include un puntatore di base alle variabili locali nello stack. Utilizzare quando l' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,22 +33,22 @@ HRESULT get_localBasePointerRegisterId ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack.
+out Restituisce l'ID del registro che include un puntatore di base alle variabili locali nello stack.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: DIA2.h
+ Intestazione: dia2. h
 
- Libreria: diaguids.lib
+ Libreria: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

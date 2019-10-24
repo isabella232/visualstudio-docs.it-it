@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28d9a7762cac1a63b40fa34118d4076403120763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838028"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741420"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-Recupera lo stack frame contenente l'indirizzo virtuale specificato.
+Recupera la stack frame che contiene l'indirizzo virtuale specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,11 +34,11 @@ HRESULT frameForVA( 
 #### <a name="parameters"></a>Parametri
  `va`
 
-[in] L'indirizzo virtuale per i frame di dati.
+in Indirizzo virtuale per i dati del frame.
 
  `ppFrame`
 
-[out] Un' [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta il frame dello stack all'indirizzo specificato.
+out Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame in corrispondenza dell'indirizzo specificato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

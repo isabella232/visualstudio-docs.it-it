@@ -19,16 +19,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 0ee4c97c4ecbf665bbaef39b658a4b96715acb23
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b1d19c0b607d2c5a09fddc9d4550230e478d57a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408638"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730303"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Aggiornare un'app UWP in Visual Studio
 
- È possibile apportare modifiche al codice mentre si sta eseguendo il debug e quindi aggiornarla un'app UWP con JavaScript scegliendo il **app di Windows di aggiornare** pulsante il **eseguire il Debug** sulla barra degli strumenti. Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per le app UWP.
+ È possibile apportare modifiche al codice durante il debug e quindi aggiornare un'app UWP usando JavaScript scegliendo il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti **debug** . Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per le app UWP.
 
  L'aggiornamento non mantiene lo stato dell'app né riflette le seguenti modifiche nell'app:
 
@@ -49,17 +49,17 @@ ms.locfileid: "63408638"
 
 1. Con il progetto UWP aperto in Visual Studio, selezionare **computer locale** come destinazione di debug.
 
-     ![Elenco di destinazioni di debug selezionare](../debugger/media/js_select_target.png "JS_Select_Target")
+     ![Selezionare l'elenco destinazione di debug](../debugger/media/js_select_target.png "JS_Select_Target")
 
 3. Premi F5 per eseguire l'app in modalità debug.
 
 4. Passa a Visual Studio.
 
-5. Nella home page dell'app UWP, modificare parte del codice HTML.
+5. Nella home page dell'app UWP modificare parte del codice HTML.
 
-7. Fare clic sui **app di aggiornare Windows** pulsante, che ha un aspetto simile al seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js_refresh.png "JS_Refresh"). o premi F4.
+7. Fare clic sul pulsante **Aggiorna app Windows** , simile al ![pulsante Aggiorna app Windows](../debugger/media/js_refresh.png "JS_Refresh"). o premi F4.
 
-8. Torna all'app. L'app viene ricaricata e il codice HTML aggiornato è utilizzato per il rendering dell'app.
+8. Torna all'app. L'app viene ricaricata e il codice HTML aggiornato viene usato per eseguire il rendering dell'app.
 
 ## <a name="see-also"></a>Vedere anche
-- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

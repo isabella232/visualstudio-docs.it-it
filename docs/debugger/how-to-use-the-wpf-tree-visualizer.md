@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Usare il Visualizzatore dell'albero WPF | Microsoft Docs"
+title: "Procedura: usare il Visualizzatore dell'albero di WPF | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e005c1b41d2c563c5b47f358e87912cba64bf7f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0adcca4acd5fc72d301d707ccdd831c86ef3e48f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821384"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731916"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: Usare il visualizzatore dell'albero di WPF
-È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per altre informazioni sulle strutture ad albero visuali, vedere [strutture ad albero in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Per altre informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview).
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: utilizzare il visualizzatore della struttura ad albero di WPF
+È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per ulteriori informazioni sugli alberi visivi, vedere [strutture ad albero in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Per ulteriori informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Quando si apre il Visualizzatore dell'albero di WPF, si vedranno due riquadri: il **struttura ad albero visuale** a sinistra e il **delle proprietà della** _nome_ **:**  _Tipo_ riquadro a destra. Selezionare un oggetto qualsiasi nel **struttura ad albero visuale** riquadro e il **delle proprietà di** _nome_ **:** _tipo_ riquadro è aggiornati automaticamente per mostrare le proprietà di quell'oggetto.
+ Quando si apre il Visualizzatore della struttura ad albero di WPF, vengono visualizzati due riquadri: la **struttura ad albero visuale** a sinistra e il riquadro **Proprietà** _nome_ **:** _tipo_ a destra. Selezionare un oggetto nel riquadro **struttura ad albero visuale** e il riquadro **Proprietà** _nome_ **:** _tipo_ viene aggiornato automaticamente per visualizzare le proprietà dell'oggetto.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Per aprire il visualizzatore della struttura ad albero di WPF
 
@@ -50,7 +50,7 @@ ms.locfileid: "67821384"
 
 ### <a name="to-search-the-properties-list"></a>Per eseguire ricerche nell'elenco di proprietà
 
-- Nel **delle proprietà di** _nome_ **:** _tipo_ riquadro, digitare la stringa da cercare nel **filtrare**finestra.
+- Nel riquadro **Proprietà** _nome_ **:** _digitare_ la stringa che si desidera cercare nella casella **filtro** .
 
   Il visualizzatore della struttura ad albero di WPF troverà immediatamente le proprietà che corrispondono alla stringa digitata; nell'elenco sono visualizzate soltanto le proprietà corrispondenti alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.
 

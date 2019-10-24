@@ -1,5 +1,5 @@
 ---
-title: JIT debug e ottimizzazione | Microsoft Docs
+title: Ottimizzazione e debug JIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12752acf75da70fa30666f9b1780256c94bde859
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731627"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
-**Funzionano delle ottimizzazioni in .NET:** Se si sta tentando di eseguire il debug di codice, è più semplice quando che il codice è **non** ottimizzato. Questo avviene perché quando il codice è ottimizzato, il compilatore e il runtime di apportare modifiche al codice della CPU generato in modo che viene eseguito più velocemente, ma ha un mapping diretto meno a codice sorgente originale. Ciò significa che i debugger sono spesso non è possibile indicare il valore delle variabili locali e l'esecuzione di istruzioni del codice e i punti di interruzione potrebbe non funzionare come previsto.
+**Funzionamento delle ottimizzazioni in .NET:** Se si sta provando a eseguire il debug del codice, è più facile quando il codice **non** è ottimizzato. Questo è dovuto al fatto che quando il codice è ottimizzato, il compilatore e il runtime apportano modifiche al codice della CPU creato in modo che venga eseguito più velocemente, ma con un mapping meno diretto al codice sorgente originale. Ciò significa che i debugger spesso non riescono a indicare il valore delle variabili locali e l'esecuzione del codice e i punti di interruzione potrebbero non funzionare come previsto.
 
-In genere la configurazione della build di rilascio crea codice ottimizzato e non la configurazione di build di Debug. Il `Optimize` proprietà di MSBuild controlla se viene indicato al compilatore di ottimizzare il codice.
+In genere, la configurazione della build di rilascio crea codice ottimizzato e la configurazione della build di debug non lo è. Il `Optimize` proprietà MSBuild controlla se il compilatore viene informato per ottimizzare il codice.
 
-Nell'ecosistema .NET, codice è abilitato dall'origine di istruzioni CPU in un processo in due fasi: innanzitutto, il C# compilatore converte il testo digitato in un formato binario intermedio denominato codice MSIL e si scrive in file con estensione dll. In un secondo momento, il Runtime di .NET converte il codice MSIL in istruzioni CPU. Consente di ottimizzare entrambi questi passaggi per un certo livello, ma il secondo passaggio eseguito dal Runtime di .NET esegue le ottimizzazioni più significative.
+Nell'ecosistema .NET, il codice viene convertito dalle istruzioni di origine a CPU in un processo in due passaggi: innanzitutto C# , il compilatore converte il testo digitato in un formato binario intermedio denominato MSIL e lo scrive in file con estensione dll. Successivamente, il Runtime .NET converte il codice MSIL in istruzioni per la CPU. Entrambi i passaggi possono essere ottimizzati a un certo livello, ma il secondo passaggio eseguito dal runtime .NET esegue le ottimizzazioni più significative.
 
-**L'opzione 'Disattivare l'ottimizzazione JIT al caricamento del modulo (solo gestito)':** Il debugger è disponibile un'opzione che controlla cosa accade quando una DLL che viene compilata con ottimizzazioni abilitate Carica all'interno del processo di destinazione. Se questa opzione è deselezionata (stato predefinito), quindi quando il Runtime di .NET compila il codice MSIL in codice della CPU, lascia le ottimizzazioni abilitate. Se l'opzione è selezionata, il debugger richiede che le ottimizzazioni disabilitato.
+**Opzione ' non visualizzare l'ottimizzazione JIT al caricamento del modulo (solo gestito)':** Il debugger espone un'opzione che controlla cosa accade quando una DLL compilata con ottimizzazioni abilitate viene caricata all'interno del processo di destinazione. Se questa opzione è deselezionata (stato predefinito), quando il Runtime .NET compila il codice MSIL nel codice della CPU, lascia le ottimizzazioni abilitate. Se l'opzione è selezionata, il debugger richiede che le ottimizzazioni siano disabilitate.
 
-Per trovare le **disattivare l'ottimizzazione JIT al caricamento del modulo (solo gestito)** opzione, selezionare **Tools** > **opzioni**e quindi selezionare il  **Generali** pagina la **debug** nodo.
+Per trovare l' **opzione Disattiva ottimizzazione JIT al caricamento del modulo (solo gestito)** , selezionare **strumenti**  > **Opzioni**e quindi selezionare la pagina **generale** nel nodo **debug** .
 
-**Quando è necessario selezionare questa opzione:** Selezionare questa opzione quando si scaricano le DLL da un'altra origine, ad esempio un pacchetto nuget, e da sottoporre a debug il codice nella DLL. Affinché il corretto funzionamento, è anche necessario trovare il file di simboli (PDB) per questa DLL.
+**Quando è necessario selezionare questa opzione:** Selezionare questa opzione quando si scaricano le dll da un'altra origine, ad esempio un pacchetto NuGet, e si vuole eseguire il debug del codice in questa DLL. Per funzionare, è inoltre necessario trovare il file di simboli (con estensione pdb) per questa DLL.
 
-Se desidera utilizzare solo nel debug del codice che si compila in locale, è consigliabile lasciare questa opzione non è selezionata, come, in alcuni casi, l'abilitazione di questa opzione in modo significativo rallenterà il debug. Esistono due motivi per questo rallentamento:
+Se si vuole solo eseguire il debug del codice che si sta compilando localmente, è preferibile lasciare deselezionata questa opzione, come, in alcuni casi, l'abilitazione di questa opzione rallenterà significativamente il debug. Questo rallentamento è dovuto a due motivi:
 
-* Codice ottimizzato viene eseguito più velocemente. Se consentono di disattivare le ottimizzazioni di grandi quantità di codice, l'impatto sulle prestazioni può sommare.
-* Se si dispone di Just My Code abilitato, il debugger non lo è nemmeno tenta di caricare i simboli per DLL c / ottimizzati. Ricerca di simboli può richiedere molto tempo.
+* Il codice ottimizzato viene eseguito più velocemente. Se si disattivano le ottimizzazioni per una grande quantità di codice, l'effetto sulle prestazioni può aumentare.
+* Se Just My Code è abilitata, il debugger non tenterà neanche di caricare i simboli per le dll ottimizzate. La ricerca di simboli può richiedere molto tempo.
 
-**Limitazioni di questa opzione:** Esistono due casi in cui questa opzione effettuerà **non** lavorare:
+**Limitazioni di questa opzione:** Esistono due situazioni in cui questa opzione **non** funzionerà:
 
-1. In situazioni in cui si collega il debugger a un processo già in esecuzione, questa opzione non avrà effetto sui moduli che sono stati già caricati al momento che è stato collegato il debugger.
-2. Questa opzione non ha alcun effetto sulle DLL che sono stati precompilati (dette anche Ngen) al codice nativo. Tuttavia, è possibile disabilitare l'utilizzo di codice precompilato avviando il processo con l'ambiente di che variabili 'COMPlus_ZapDisable' impostato su '1'.
+1. Nei casi in cui si connette il debugger a un processo già in esecuzione, questa opzione non avrà alcun effetto sui moduli che erano già stati caricati nel momento in cui il debugger è stato collegato.
+2. Questa opzione non ha alcun effetto sulle DLL precompilate (a. k. a ngen'ed) in codice nativo. Tuttavia, è possibile disabilitare l'utilizzo del codice precompilato avviando il processo con la variabile di ambiente ' COMPlus_ZapDisable ' impostata su' 1'.
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug di codice gestito](../debugger/debugging-managed-code.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a0324046383557c9c32afae2e6f05a41124ba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1291c57425b7250af46b3b02ba8f407fb4959a05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64790391"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740713"
 ---
-# <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
-Recupera la classificazione di variabili di un simbolo di dati.
+# <a name="idiasymbolget_datakind"></a>IDiaSymbol::get_dataKind
+Recupera la classificazione variabile di un simbolo di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,19 +33,19 @@ HRESULT get_dataKind ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un valore di [enumerazione DataKind](../../debugger/debug-interface-access/datakind.md) enumerazione che specifica il tipo di dati, ad esempio globali, statici o costanti, ad esempio.
+out Restituisce un valore dell'enumerazione di [enumerazione DataKind](../../debugger/debug-interface-access/datakind.md) che specifica il tipo di dati, ad esempio Global, static o Constant.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

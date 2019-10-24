@@ -1,5 +1,5 @@
 ---
-title: 'Vsgdbg:: Vsgdbg (costruttore) | Microsoft Docs'
+title: 'VsgDbg:: VsgDbg (costruttore) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db51226c4d980359fd36ee5196e48d7fa4577a37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae94a7cb9572a0975dc1c3717275c384c2e45978
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895143"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734753"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (costruttore)
 Costruisce un'istanza della classe `VsgDbg` con o senza la preparazione del componente della diagnostica della grafica integrato nell'applicazione per acquisire e registrare attivamente le informazioni grafiche per impostazione predefinita, in base al parametro booleano specificato.
@@ -30,7 +30,7 @@ VsgDbg(
  `bDefaultInit` `true` per specificare che il componente di diagnostica della grafica integrato nell'applicazione deve essere preparato per acquisire e registrare attivamente le informazioni grafiche; `false` per specificare che in questo momento l'applicazione non deve essere preparata per acquisire e registrare attivamente le informazioni grafiche.
 
 ## <a name="remarks"></a>Note
- Quando il costruttore viene chiamato con `bDefaultInit` impostata su `true`, il nome file del file di log di grafica viene determinato dal modo in cui `DONT_SAVE_VSGLOG_TO_TEMP` e `VSG_DEFAULT_RUN_FILENAME` vengono definiti i simboli del preprocessore prima `vsgcapture.h` è incluso nell'app.
+ Quando il costruttore viene chiamato con `bDefaultInit` impostato su `true`, il nome file del file di log di grafica è determinato dalla modalità di definizione dei simboli del preprocessore `DONT_SAVE_VSGLOG_TO_TEMP` e `VSG_DEFAULT_RUN_FILENAME` prima che `vsgcapture.h` sia incluso nell'app.
 
  Quando il costruttore viene chiamato con `bDefaultInit` impostato su `false`, il componente di diagnostica della grafica integrato nell'applicazione può essere preparato per acquisire e registrare attivamente le informazioni grafiche in un secondo momento chiamando la funzione `Init`.
 
