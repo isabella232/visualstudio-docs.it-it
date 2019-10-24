@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461493"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748880"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gestione delle firme di assembly e manifesti
 
@@ -29,7 +29,7 @@ Un nome sicuro è costituito dall'identità dell'assembly, corrispondente al nom
 
 Per informazioni sulla firma degli assembly nei progetti Visual Basic e C#, vedere [Creare e usare gli assembly con nome sicuro](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Per informazioni sulla firma degli assembly nei progetti Visual C++, vedere [Assembly con nome sicuro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Per informazioni sulla firma degli assembly C++ nei progetti, vedere [assembly con nome sicuroC++(/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > La firma con nome sicuro non offre protezione da attacchi di reverse engineering dell'assembly. Per la protezione da attacchi di reverse engineering, vedere [Dotfuscator Community](dotfuscator/index.md).

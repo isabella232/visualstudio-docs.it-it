@@ -13,12 +13,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1811caaee4368489a0b0167019ee05883d5c4ef7
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8ccf20ab4348a8abed4b052f512477c8b2a8cd0b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448791"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745891"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>Specificare dove e quando applicare un'annotazione
 Quando un'annotazione è condizionale, potrebbe essere necessario specificare altre annotazioni per l'analizzatore.  Se, ad esempio, una funzione dispone di una variabile che può essere sincrona o asincrona, la funzione funziona nel modo seguente: nel caso sincrono viene sempre completata correttamente, ma nel caso asincrono viene segnalato un errore se non riesce immediatamente. Quando la funzione viene chiamata in modo sincrono, il controllo del valore del risultato non fornisce alcun valore all'analizzatore del codice perché non sarebbe stato restituito.  Tuttavia, quando la funzione viene chiamata in modo asincrono e il risultato della funzione non è selezionato, potrebbe verificarsi un errore grave. In questo esempio viene illustrata una situazione in cui è possibile utilizzare l'annotazione `_When_`, descritta più avanti in questo articolo, per abilitare il controllo.
@@ -31,7 +31,7 @@ Per controllare quando e dove si applicano le annotazioni, utilizzare le seguent
 |`_At_(expr, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretata in una condizione preliminare se l'annotazione viene interpretata in una condizione preliminare e in una condizione successiva se l'annotazione viene interpretata in una condizione post-condizione.|
 |`_At_buffer_(expr, iter, elem-count, anno-list)`|`expr` è un'espressione che restituisce un lvalue. Le annotazioni in `anno-list` vengono applicate all'oggetto denominato da `expr`. Per ogni annotazione in `anno-list`, `expr` viene interpretata in una condizione preliminare se l'annotazione viene interpretata nella precondizione e in una successiva condizione se l'annotazione viene interpretata in una condizione post-condizione.<br /><br /> `iter` è il nome di una variabile con ambito di annotazione (incluso `anno-list`). `iter` ha un tipo implicito `long`. Le variabili denominate in modo identico in qualsiasi ambito di inclusione sono nascoste dalla valutazione.<br /><br /> `elem-count` è un'espressione che restituisce un Integer.|
 |`_Group_(anno-list)`|Le annotazioni in `anno-list` sono tutte considerate con qualsiasi qualificatore applicabile all'annotazione di gruppo applicata a ogni annotazione.|
-|`_When_(expr, anno-list)`|`expr` è un'espressione che può essere convertita in `bool`. Quando è diverso da zero (`true`), le annotazioni specificate in `anno-list` sono considerate applicabili.<br /><br /> Per impostazione predefinita, per ogni annotazione in `anno-list` `expr` viene interpretato come utilizzando i valori di input se l'annotazione è una precondizione e come se si utilizzasse i valori di output se l'annotazione è una post-condizione. Per eseguire l'override dell'impostazione predefinita, è possibile usare la funzione intrinseca `_Old_` quando si valuta una post-condizione per indicare che devono essere usati i valori di input. **Nota:**  È possibile che vengano abilitate annotazioni diverse come conseguenza dell'utilizzo di `_When_` se è necessario un valore modificabile, ad esempio `*pLength`, perché il risultato valutato di `expr` nella precondizione potrebbe differire dal risultato valutato in post-condizione.|
+|`_When_(expr, anno-list)`|`expr` è un'espressione che può essere convertita in `bool`. Quando è diverso da zero (`true`), le annotazioni specificate in `anno-list` sono considerate applicabili.<br /><br /> Per impostazione predefinita, per ogni annotazione in `anno-list` `expr` viene interpretato come utilizzando i valori di input se l'annotazione è una precondizione e come se si utilizzasse i valori di output se l'annotazione è una post-condizione. Per eseguire l'override dell'impostazione predefinita, è possibile usare la funzione intrinseca `_Old_` quando si valuta una post-condizione per indicare che devono essere usati i valori di input. **Nota:**  È possibile che vengano abilitate annotazioni diverse come conseguenza dell'utilizzo di `_When_` se è necessario un valore modificabile, ad esempio `*pLength`, perché il risultato valutato di `expr` nella precondizione può essere diverso dal risultato valutato in post-condizione.|
 
 ## <a name="see-also"></a>Vedere anche
 

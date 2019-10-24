@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 154abe3d73fa71ac897f0442697196cd859f32bd
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435897"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745749"
 ---
 # <a name="cc-assertions"></a>Asserzioni C/C++
 Un'istruzione di asserzione specifica una condizione che si prevede venga soddisfatta in un punto del programma. Se tale condizione non è true, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata la finestra di [dialogo asserzione non riuscita](../debugger/assertion-failed-dialog-box.md) .
@@ -81,7 +81,7 @@ Usare le asserzioni per rilevare gli errori durante lo sviluppo. Come regola, us
 [In questo argomento](#BKMK_In_this_topic)
 
 ## <a name="BKMK_Assertions_in_Debug_and_Release_builds"></a>Asserzioni nelle build di debug e di rilascio
-Le istruzioni di asserzione vengono compilate solo se è definito `_DEBUG`. In caso contrario, il compilatore considera le asserzioni come istruzioni null. Di conseguenza, le istruzioni di asserzione non comportano costi di overhead o prestazioni nel programma di rilascio finale e consentono di evitare l'uso di direttive `#ifdef`.
+Le istruzioni di asserzione vengono compilate solo se `_DEBUG` è definito. In caso contrario, il compilatore considera le asserzioni come istruzioni null. Di conseguenza, le istruzioni di asserzione non comportano costi di overhead o prestazioni nel programma di rilascio finale e consentono di evitare l'uso di direttive `#ifdef`.
 
 ## <a name="BKMK_Side_effects_of_using_assertions"></a>Effetti collaterali dell'utilizzo delle asserzioni
 Quando si aggiungono asserzioni al codice, assicurarsi che le asserzioni non abbiano effetti collaterali. Si consideri, ad esempio, la seguente asserzione che modifica il valore `nM`:
@@ -109,7 +109,7 @@ CRTDBG. Il file di intestazione H definisce le [macro _ASSERT e _ASSERTE](/cpp/c
 | Macro | Risultato |
 |------------| - |
 | `_ASSERT` | Se l'espressione specificata restituisce FALSE, il nome del file e il numero di riga del `_ASSERT`. |
-| `_ASSERTE` | Uguale a `_ASSERT`, più una rappresentazione di stringa dell'espressione dichiarata. |
+| `_ASSERTE` | Uguale a `_ASSERT`, oltre a una rappresentazione di stringa dell'espressione dichiarata. |
 
 `_ASSERTE` è più potente perché segnala l'espressione dichiarata che si è rivelata falsa. Questo può essere sufficiente per identificare il problema senza fare riferimento al codice sorgente. Tuttavia, la versione di debug dell'applicazione conterrà una costante di stringa per ogni espressione dichiarata utilizzando `_ASSERTE`. Se si usano molte macro `_ASSERTE`, queste espressioni di stringa hanno una quantità significativa di memoria. Se si verifica un problema, usare `_ASSERT` per salvare la memoria.
 
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [In questo argomento](#BKMK_In_this_topic)
 
 ## <a name="BKMK_MFC_assertions"></a>Asserzioni MFC
-MFC definisce la macro [Assert](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) per il controllo dell'asserzione. Definisce inoltre i metodi `MFC ASSERT_VALID` e `CObject::AssertValid` per verificare lo stato interno di un oggetto derivato da @no__t 2.
+MFC definisce la macro [Assert](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) per il controllo dell'asserzione. Definisce inoltre i metodi `MFC ASSERT_VALID` e `CObject::AssertValid` per verificare lo stato interno di un oggetto derivato da `CObject`.
 
 Se l'argomento della macro MFC `ASSERT` restituisce zero o false, la macro interrompe l'esecuzione del programma e avvisa l'utente. in caso contrario, l'esecuzione continua.
 
@@ -215,9 +215,9 @@ void CPerson::AssertValid() const
 #endif
 ```
 
-Se una delle variabili membro Archivia oggetti, è possibile usare la macro `ASSERT_VALID` per verificarne la validità interna (se le relative classi eseguono l'override di `AssertValid`).
+Se una delle variabili membro Archivia oggetti, è possibile usare la macro `ASSERT_VALID` per verificarne la validità interna, se le relative classi eseguono l'override di `AssertValid`.
 
-Si consideri, ad esempio, una classe `CMyData`, che archivia un [CObList](/cpp/mfc/reference/coblist-class) in una delle variabili membro. La variabile `CObList`, `m_DataList`, archivia una raccolta di oggetti `CPerson`. Una dichiarazione abbreviata di `CMyData` ha un aspetto simile al seguente:
+Si consideri, ad esempio, una classe `CMyData`, che archivia un [CObList](/cpp/mfc/reference/coblist-class) in una delle variabili membro. La variabile `CObList`, `m_DataList`, archivia una raccolta di oggetti di `CPerson`. Una dichiarazione abbreviata di `CMyData` ha un aspetto simile al seguente:
 
 ```cpp
 class CMyData : public CObject
@@ -250,7 +250,7 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` utilizza il meccanismo `AssertValid` per verificare la validità degli oggetti archiviati nel relativo membro dati. L'override di `AssertValid` di `CMyData` richiama la macro `ASSERT_VALID` per la propria variabile membro m_pDataList.
+`CMyData` utilizza il meccanismo `AssertValid` per verificare la validità degli oggetti archiviati nel relativo membro dati. L'override `AssertValid` di `CMyData` richiama la macro `ASSERT_VALID` per la propria variabile membro m_pDataList.
 
 Il test di validità non si arresta a questo livello perché anche la classe `CObList` esegue l'override di `AssertValid`. Questo override esegue un test di validità aggiuntivo sullo stato interno dell'elenco. Pertanto, un test di validità su un oggetto `CMyData` comporta test di validità aggiuntivi per gli Stati interni dell'oggetto elenco `CObList` archiviato.
 

@@ -1,5 +1,5 @@
 ---
-title: Idiasegment | Microsoft Docs
+title: 'IDiaSegment:: get_virtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94958fb51f6742bf07cc5a4cd34da059c05adc23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839407"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742363"
 ---
-# <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-Recupera l'indirizzo virtuale (valutazione della vulnerabilità) dell'inizio della sezione.
+# <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
+Recupera l'indirizzo virtuale (VA) dell'inizio della sezione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce la valutazione della vulnerabilità dell'inizio della sezione.
+out Restituisce l'oggetto VA dell'inizio della sezione.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

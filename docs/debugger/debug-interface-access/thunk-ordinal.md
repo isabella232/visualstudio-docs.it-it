@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854440"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738504"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
-Definisce i tipi di thunk.
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
+Designa i tipi di thunk.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,25 +39,25 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Elementi
-Thunk THUNK_ORDINAL_NOTYPE Standard.
+Thunk standard THUNK_ORDINAL_NOTYPE.
 
-Oggetto THUNK_ORDINAL_ADJUSTOR `this` thunk DS.
+THUNK_ORDINAL_ADJUSTOR un thunk di regolazione `this`.
 
-Thunk chiamata THUNK_ORDINAL_VCALL virtuale.
+Thunk di chiamata virtuale THUNK_ORDINAL_VCALL.
 
-Thunk P-code THUNK_ORDINAL_PCODE.
+THUNK_ORDINAL_PCODE P-thunk di codice.
 
-Thunk carico THUNK_ORDINAL_LOAD ritardo.
+Thunk di caricamento ritardato THUNK_ORDINAL_LOAD.
 
-Thunk trampoline THUNK_ORDINAL_TRAMP_INCREMENTAL incrementale (un thunk trampoline viene usato a oscillare in chiamate dallo spazio di memoria a un altro).
+Thunk THUNK_ORDINAL_TRAMP_INCREMENTAL incrementale per il trampolino (un thunk del trampolino viene usato per rimbalzare le chiamate da uno spazio di memoria a un altro).
 
-Thunk di trampoline punto THUNK_ORDINAL_TRAMP_BRANCHISLAND ramo.
+Thunk del punto di THUNK_ORDINAL_TRAMP_BRANCHISLAND del ramo.
 
 ## <a name="remarks"></a>Note
-I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (metodo).
+I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

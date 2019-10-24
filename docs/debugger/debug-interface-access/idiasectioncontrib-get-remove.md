@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b3eef646f9105d651a17b58100aad8b4869c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b21423dc017a09b983ae157774aa4f0485df1a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827664"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742530"
 ---
-# <a name="idiasectioncontribgetremove"></a>IDiaSectionContrib::get_remove
-Recupera un flag che indica se la sezione è stato rimosso prima di renderlo parte dell'immagine in memoria.
+# <a name="idiasectioncontribget_remove"></a>IDiaSectionContrib::get_remove
+Recupera un flag che indica se la sezione viene rimossa prima che venga resa parte dell'immagine in memoria.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_remove ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se la sezione non devono essere aggiunti all'immagine in memoria; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se non è necessario aggiungere la sezione all'immagine in memoria; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

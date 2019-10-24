@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c42cdfc5c3f3c0267fdcbdfca8ddc4bb30663384
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924535"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728832"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 Questo messaggio può verificarsi perché Remote Debugging Monitor non è configurato correttamente nel computer remoto o il computer remoto non è accessibile a causa di problemi di rete o della presenza di un firewall.
@@ -30,7 +30,7 @@ Questo messaggio può verificarsi perché Remote Debugging Monitor non è config
 
 ## <a name="specificerrors"></a>Qual è il messaggio di errore dettagliato?
 
-Il `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` messaggio è generico. In genere, nella stringa di errore viene incluso un messaggio più specifico che può aiutare a identificare la causa del problema o a cercare una correzione più precisa. Di seguito sono riportati alcuni dei messaggi di errore più comuni aggiunti al messaggio di errore principale:
+Il messaggio `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` è generico. In genere, nella stringa di errore viene incluso un messaggio più specifico che può aiutare a identificare la causa del problema o a cercare una correzione più precisa. Di seguito sono riportati alcuni dei messaggi di errore più comuni aggiunti al messaggio di errore principale:
 
 - [Il debugger non è in grado di connettersi al computer remoto. Il debugger non è riuscito a risolvere il nome computer specificato](#cannot_connect)
 - [La richiesta di connessione è stata rifiutata dal debugger remoto](#rejected)

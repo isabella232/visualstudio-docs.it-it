@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d08168a83b9bb635fd6a0e22dc22f91a454001f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839459"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742327"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Restituisce un'enumerazione dei simboli per i frame inline che corrispondono al percorso di origine specificato.
+Restituisce un'enumerazione di simboli per i frame inline che corrispondono al percorso di origine specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,23 +35,23 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parametri
  `parent`
 
-[in] Un `IDiaSymbol` che corrisponde alla funzione di stub di tasti di scelta rapida che deve essere eseguita la ricerca.
+in @No__t_0 che corrisponde alla funzione dello stub dell'acceleratore in cui è necessario eseguire la ricerca.
 
  `file`
 
-[in] Il `IDiaSourceFile` della posizione di origine.
+in @No__t_0 del percorso di origine.
 
  `linenum`
 
-[in] Numero di riga della posizione di origine.
+in Numero di riga del percorso di origine.
 
  `colnum`
 
-[in] Il numero di colonna della posizione di origine.
+in Numero di colonna del percorso di origine.
 
  `ppResult`
 
-[out] Un puntatore a un `IDiaEnumLineNumbers` puntatore a interfaccia che viene inizializzato con il risultato.
+out Puntatore a un puntatore a interfaccia `IDiaEnumLineNumbers` inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

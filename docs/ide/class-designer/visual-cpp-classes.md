@@ -1,5 +1,5 @@
 ---
-title: Classi Visual C++ in Progettazione classi
+title: C++Classi in Progettazione classi
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647640"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748922"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
+# <a name="c-classes-in-class-designer"></a>C++classi in Progettazione classi
 
 **Progettazione classi** supporta le classi C++ e visualizza classi C++ native in modo analogo alle forme di classe di Visual Basic e C#, con la differenza che le classi C++ possono avere più relazioni di ereditarietà. È possibile espandere la forma classe in modo da visualizzare più campi e metodi nella classe o comprimerla per risparmiare spazio.
 
@@ -174,7 +174,7 @@ La tabella seguente illustra alcuni esempi di tipica connessione di classe speci
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso del codice di Visual C++](working-with-visual-cpp-code.md)
+- [Utilizzo del C++ codice](working-with-visual-cpp-code.md)
 - [Classi e struct](/cpp/cpp/classes-and-structs-cpp)
 - [Tipi di classe anonimi](/cpp/cpp/anonymous-class-types)
 - [Ereditarietà multipla](https://msdn.microsoft.com/library/6td5yws2.aspx)

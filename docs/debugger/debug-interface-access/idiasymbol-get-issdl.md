@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6904fc673462a79578549bcf22c2973a5c10c95c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 01503bca82046ace7f27cf4f80c163944009e89b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836435"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740078"
 ---
-# <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
-Specifica se il modulo viene compilato con l'opzione /SDL.
+# <a name="idiasymbolget_issdl"></a>IDiaSymbol::get_isSdl
+Specifica se il modulo viene compilato con l'opzione/SDL.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ HRESULT get_isSdl(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `BOOL` che specifica se il modulo viene compilato con l'opzione /SDL.
+out Puntatore a un `BOOL` che specifica se il modulo viene compilato con l'opzione/SDL.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

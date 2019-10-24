@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55875d4ad964b958bf2fb38d259e7d4d68909cb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6fe478e503ed6e16ee570f309f91434c658ebd27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830105"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744593"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Recupera un determinato numero di elementi di dati di intervallo nella sequenza di enumerazione.
+Recupera un numero specificato di elementi dati del frame nella sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di elementi di dati di frame nell'enumeratore deve essere recuperato.
+in Numero di elementi dati del frame nell'enumeratore da recuperare.
 
  rgelt
 
-[out] Matrice di [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetti da compilare con gli elementi di dati frame richiesto.
+out Matrice di oggetti [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) da compilare con gli elementi dati del frame richiesti.
 
  pceltFetched
 
-[out] Restituisce il numero di elementi di dati di frame nell'enumeratore recuperata.
+out Restituisce il numero di elementi dati del frame nell'enumeratore recuperato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più record. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri record. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

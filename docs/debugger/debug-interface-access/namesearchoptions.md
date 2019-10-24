@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661827"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738622"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Specifica le opzioni di ricerca per i nomi di simboli e file.
@@ -45,15 +45,15 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elementi
 `nsNone` Non è stata specificata alcuna opzione.
 
-`nsfCaseSensitive`Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole.
+`nsfCaseSensitive` applica una corrispondenza del nome con distinzione tra maiuscole e minuscole.
 
-`nsfCaseInsensitive`Applica una corrispondenza con il nome senza distinzione tra maiuscole e minuscole.
+`nsfCaseInsensitive` applica una corrispondenza con il nome senza distinzione tra maiuscole e minuscole.
 
-`nsfFNameExt`Considera i nomi come percorsi e applica un nome nomefile. EXT corrispondente.
+`nsfFNameExt` considera i nomi come percorsi e applica un nome nomefile. EXT corrispondente.
 
-`nsfRegularExpression`Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole utilizzando asterischi (*) e punti interrogativi (?) come caratteri jolly. Altri caratteri di espressione regolare comuni non sono supportati.
+`nsfRegularExpression` applica una corrispondenza del nome con distinzione tra maiuscole e minuscole utilizzando asterischi (*) e punti interrogativi (?) come caratteri jolly. Altri caratteri di espressione regolare comuni non sono supportati.
 
-`nsfUndecoratedName`Si applica solo ai simboli con nomi non decorati e decorati.
+`nsfUndecoratedName` si applica solo ai simboli con nomi non decorati e decorati.
 
 ## <a name="remarks"></a>Note
 I valori di questa enumerazione vengono passati ai metodi seguenti:

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918048"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777479"
 ---
 # <a name="installation"></a>Installazione
 
@@ -33,7 +33,7 @@ Questa estensione può essere usata con Visual Studio 2015 e con Visual Studio 2
 2. Nella finestra di dialogo **Estensioni e aggiornamenti** selezionare **Online** sul lato sinistro.
 3. Nella casella di ricerca nell'angolo in alto a destra digitare o immettere "tools for ai".
 4. Selezionare **Visual Studio Tools for AI** dai risultati.
-5. Scegliere **Download**.
+5. Fare clic su **Scarica**.
 
 ## <a name="prepare-your-local-machine"></a>Preparare il computer locale
 
@@ -44,7 +44,7 @@ Prima di eseguire il training di modelli di apprendimento nel computer locale, a
 
 ### <a name="nvidia-gpu-driver"></a>Driver della GPU NVIDIA
 
-I framework dell'apprendimento profondo sfruttano la GPU NVIDIA per consentire alle macchine di apprendere con una velocità, precisione e scalabilità tipiche della vera e propria intelligenza artificiale. Se il computer ha schede GPU NVIDIA, vedere [Download dei driver NVIDIA](http://www.nvidia.com/Download/index.aspx) oppure provare a eseguire un aggiornamento del sistema operativo per installare il driver più recente.
+I framework dell'apprendimento profondo sfruttano la GPU NVIDIA per consentire alle macchine di apprendere con una velocità, precisione e scalabilità tipiche della vera e propria intelligenza artificiale. Se il computer ha schede GPU NVIDIA, vedere [Download dei driver NVIDIA](https://www.nvidia.com/Download/index.aspx) oppure provare a eseguire un aggiornamento del sistema operativo per installare il driver più recente.
 
 ### <a name="cuda"></a>CUDA
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-[PyTorch](http://pytorch.org/) è un pacchetto Python che offre due funzionalità di alto livello:
+[PyTorch](https://pytorch.org/) è un pacchetto Python che offre due funzionalità di alto livello:
 
 - Calcolo del tensore, come NumPy, con un'accelerazione della GPU notevole
 - Reti neurali profonde generate a partire da un sistema di differenziazione automatica basato su nastro

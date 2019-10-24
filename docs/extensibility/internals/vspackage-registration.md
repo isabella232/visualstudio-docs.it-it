@@ -11,22 +11,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924192"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722005"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
-I pacchetti VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] devono consigliare che siano installati e che debbano essere caricati. Questo processo viene eseguito scrivendo le informazioni nel registro di sistema. Si tratta di un processo tipico di un programma di installazione.
+I pacchetti VSPackage devono consigliare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che sono installati e che devono essere caricati. Questo processo viene eseguito scrivendo le informazioni nel registro di sistema. Si tratta di un processo tipico di un programma di installazione.
 
 > [!NOTE]
-> Si tratta di una procedura accettata durante lo sviluppo di VSPackage per l'uso della registrazione automatica. Tuttavia, [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] i partner non possono spedire i propri prodotti usando la registrazione automatica come parte del programma di installazione.
+> Si tratta di una procedura accettata durante lo sviluppo di VSPackage per l'uso della registrazione automatica. Tuttavia, [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] partner non possono spedire i propri prodotti usando la registrazione automatica come parte del programma di installazione.
 
  Le voci del registro di sistema in un pacchetto di Windows Installer vengono in genere eseguite nella tabella del registro di sistema. È anche possibile registrare le estensioni di file nella tabella del registro di sistema. Tuttavia, Windows Installer fornisce supporto incorporato tramite le tabelle ProgId (Programmatic Identifier), Class, Extension e verb. Per altre informazioni, vedere [tabelle di database](/windows/desktop/Msi/database-tables).
 
- Assicurarsi che le voci del registro di sistema siano associate al componente appropriato per la strategia side-by-side scelta. Ad esempio, le voci del registro di sistema per un file condiviso devono essere associate al componente Windows Installer del file. Analogamente, le voci del registro di sistema per un file specifico della versione devono essere associate al componente di tale file. In caso contrario, l'installazione o la disinstallazione del pacchetto VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per una versione di potrebbe interrompere il pacchetto VSPackage in altre versioni. Per altre informazioni, vedere [supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Assicurarsi che le voci del registro di sistema siano associate al componente appropriato per la strategia side-by-side scelta. Ad esempio, le voci del registro di sistema per un file condiviso devono essere associate al componente Windows Installer del file. Analogamente, le voci del registro di sistema per un file specifico della versione devono essere associate al componente di tale file. In caso contrario, l'installazione o la disinstallazione del pacchetto VSPackage per una versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] potrebbe interrompere il pacchetto VSPackage in altre versioni. Per altre informazioni, vedere [supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 > [!NOTE]
 > Il modo più semplice per gestire la registrazione consiste nell'usare gli stessi dati negli stessi file per la registrazione degli sviluppatori e la registrazione in fase di installazione. Ad esempio, alcuni strumenti di sviluppo del programma di installazione possono utilizzare file in. reg-format in fase di compilazione. Se gli sviluppatori mantengono i file. reg per lo sviluppo e il debug quotidiani, questi stessi file possono essere inclusi automaticamente nel programma di installazione. Se non è possibile condividere automaticamente i dati di registrazione, è necessario assicurarsi che la copia del programma di installazione dei dati di registrazione sia aggiornata.
@@ -47,7 +47,7 @@ I pacchetti VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
 
 - Per supportare correttamente l'installazione, la disinstallazione, il rollback dell'installazione e il rollback della disinstallazione, è necessario creare quattro azioni personalizzate per ogni VSPackage gestito che esegue la registrazione automatica chiamando RegPkg.
 
-- L'approccio al supporto affiancato potrebbe richiedere la creazione di quattro azioni personalizzate che richiamano RegSvr32 o RegPkg per tutte le versioni supportate di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- L'approccio al supporto affiancato potrebbe richiedere la creazione di quattro azioni personalizzate che richiamano RegSvr32 o RegPkg per ogni versione supportata di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 - Non è possibile eseguire il rollback di un'installazione con moduli autoregistrati perché non esiste alcun modo per stabilire se le chiavi autoregistrate vengono usate da un'altra funzionalità o applicazione.
 

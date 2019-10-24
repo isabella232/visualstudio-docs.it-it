@@ -1,15 +1,15 @@
 ---
-title: Utilizzo del codice Visual C++ (Progettazione classi)
+title: Utilizzo del C++ codice (Progettazione classi)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
@@ -18,14 +18,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2252b5e6d8da9f81fbcca9b856222a3230cd080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647562"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748905"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>Usare il codice Visual C++ in Progettazione classi
+# <a name="work-with-c-code-in-class-designer"></a>Usare il C++ codice in Progettazione classi
 
 **Progettazione classi** mostra un'area di progettazione visiva denominata *diagramma classi* che fornisce una rappresentazione visiva degli elementi di codice nel progetto. Si possono usare i diagrammi classi per progettare e visualizzare le classi e gli altri tipi in un progetto.
 
@@ -56,7 +56,7 @@ ms.locfileid: "72647562"
 
 ### <a name="update-and-performance-issues"></a>Problemi di aggiornamento e di prestazioni
 
-Per i progetti Visual C++, potrebbero essere necessari dai 30 ai 60 secondi perché una modifica nel file di origine venga visualizzata nel diagramma classi. A causa di questo ritardo, **Progettazione classi** potrebbe anche generare l'errore **Nessun tipo trovato nella selezione**. Se viene visualizzato un messaggio di errore di questo tipo, scegliere **Annulla** nel messaggio di errore e attendere che l'elemento di codice venga visualizzato in **Visualizzazione classi**. A questo punto, **Progettazione classi** dovrebbe essere in grado di visualizzare il tipo.
+Per C++ i progetti potrebbero essere importati da 30 a 60 secondi affinché una modifica nel file di origine venga visualizzata nel diagramma classi. A causa di questo ritardo, **Progettazione classi** potrebbe anche generare l'errore **Nessun tipo trovato nella selezione**. Se viene visualizzato un messaggio di errore di questo tipo, scegliere **Annulla** nel messaggio di errore e attendere che l'elemento di codice venga visualizzato in **Visualizzazione classi**. A questo punto, **Progettazione classi** dovrebbe essere in grado di visualizzare il tipo.
 
 Se il diagramma classi non viene aggiornato con le modifiche apportate nel codice, può essere necessario chiuderlo e riaprirlo.
 
@@ -88,11 +88,11 @@ Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è 
 
 ## <a name="limitations-for-c-code-elements"></a>Limitazioni per gli elementi di codice C++
 
-- Quando viene caricato un progetto Visual C++, **Progettazione classi** funziona in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.
+- Quando viene C++ caricato un progetto, **Progettazione classi** funziona in modalità di sola lettura. È possibile modificare il diagramma classi, ma non salvare modifiche dal diagramma classi nel codice sorgente.
 
-- **Progettazione classi** supporta solo semantica C++ nativa. Per i progetti Visual C++ compilati in codice gestito, **Progettazione classi** visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma **Progettazione classi** non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
+- **Progettazione classi** supporta solo semantica C++ nativa. Per C++ i progetti compilati in codice gestito, **Progettazione classi** visualizzerà solo gli elementi di codice che sono tipi nativi. Di conseguenza, è possibile aggiungere un diagramma classi a un progetto, ma **Progettazione classi** non consentirà di visualizzare elementi in cui la proprietà `IsManaged` è impostata su `true` (ovvero tipi di valore e tipi di riferimento).
 
-- Per i progetti Visual C++, **Progettazione classi** legge soltanto la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), **Progettazione classi** non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, **Progettazione classi** analogamente non visualizzerà niente.
+- Per C++ i progetti, il **Progettazione classi** legge solo la definizione del tipo. Ad esempio, si supponga di definire un tipo in un file di intestazione (.h) e i relativi membri in un file di implementazione (.cpp). Se si richiama "Visualizza diagramma classi" sul file di implementazione (.cpp), **Progettazione classi** non visualizzerà niente. Per fare un altro esempio, se si richiama "Visualizza diagramma classi" su un file .cpp che usa un'istruzione `#include` per includere altri file ma non contiene definizioni della classe, **Progettazione classi** analogamente non visualizzerà niente.
 
 - I file IDL (.idl), che definiscono le interfacce COM e le librerie dei tipi, non vengono visualizzati nei diagrammi a meno che non siano compilati in codice C++ nativo.
 
@@ -112,7 +112,7 @@ Per un problema di risoluzione del tipo, l'errore più comunemente segnalato è 
 
 - [Progettazione e visualizzazione di classi e tipi](designing-and-viewing-classes-and-types.md)
 - [Informazioni aggiuntive sugli errori di Progettazione classi](additional-information-about-errors.md)
-- [Classi Visual C++ in Progettazione classi](visual-cpp-classes.md)
-- [Strutture Visual C++ in Progettazione classi](visual-cpp-structures.md)
-- [Enumerazioni Visual C++ in Progettazione classi](visual-cpp-enumerations.md)
-- [Typedef di Visual C++ in Progettazione classi](visual-cpp-typedefs.md)
+- [C++Classi in Progettazione classi](visual-cpp-classes.md)
+- [C++Strutture in Progettazione classi](visual-cpp-structures.md)
+- [C++Enumerazioni in Progettazione classi](visual-cpp-enumerations.md)
+- [C++Typedef in Progettazione classi](visual-cpp-typedefs.md)

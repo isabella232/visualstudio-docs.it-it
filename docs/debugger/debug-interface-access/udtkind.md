@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45ed43bf65c38890ca7ebda1a6b1719532697eae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853521"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738450"
 ---
 # <a name="udtkind"></a>UdtKind
-Descrive la varietà di tipo definito dall'utente (UDT).
+Descrive la varietà di tipi definiti dall'utente (UDT).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +34,19 @@ enum UdtKind {
 ```
 
 ## <a name="elements"></a>Elementi
-UdtStruct UDT è una struttura.
+Il tipo definito dall'utente UdtStruct è una struttura.
 
-UdtClass UDT è una classe.
+Il tipo definito dall'utente UdtClass è una classe.
 
-UdtUnion UDT è un'unione.
+Il tipo definito dall'utente UdtUnion è un'Unione.
 
-UdtInterface UDT è un'interfaccia.
+Il tipo definito dall'utente UdtInterface è un'interfaccia.
 
 ## <a name="remarks"></a>Note
-I valori di questa enumerazione vengono restituiti per il [Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) (metodo).
+I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
