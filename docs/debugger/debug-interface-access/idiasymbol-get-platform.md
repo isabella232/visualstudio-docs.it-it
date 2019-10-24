@@ -1,5 +1,5 @@
 ---
-title: Get_platform | Microsoft Docs
+title: 'IDiaSymbol:: get_Platform | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6df21b974489004a27847e307089b1a65715b076
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3a86e7b6b75e0689ccd98a2cab2ed9ef93188312
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813426"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739495"
 ---
-# <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
-Recupera il tipo di piattaforma per cui è stato compilato il modulo.
+# <a name="idiasymbolget_platform"></a>IDiaSymbol::get_platform
+Recupera il tipo di piattaforma per cui è stato compilato modulo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_platform ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un valore compreso il [enumerazione CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) tipo di enumerazione che specifica la piattaforma per cui è stato compilato il modulo.
+out Restituisce un valore dall'enumerazione Enumerazione [CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) che specifica il tipo di piattaforma per il quale è stato compilato il modulo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

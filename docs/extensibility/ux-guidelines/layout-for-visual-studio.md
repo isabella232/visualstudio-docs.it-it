@@ -8,151 +8,151 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef763f3142f41e63effa1f76bb6bebdc95f0ee3a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1dfafa26b314c35f81e5caf9c433b1b630d916f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335351"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747173"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
-La maggior parte delle finestre di dialogo di Visual Studio [layout di finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), che sono il unthemed finestre di dialogo standard di seguire [principi di layout di finestra di dialogo Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Mentre Visual Studio viene spostato alla relativa interfaccia utente di aggiornamento, alcune delle finestre di dialogo più evidenti sono una nuova progettazione che stabilisce le esperienze di definizione del prodotto. Questi [layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) hanno un aspetto a tema.
+La maggior parte delle finestre di dialogo di Visual Studio è il [layout della finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), ovvero le finestre di dialogo che seguono i principi standard di layout delle finestre di [dialogo desktop di Windows](/windows/desktop/uxguide/win-dialog-box). Quando Visual Studio si sposta per aggiornare l'interfaccia utente, alcune delle finestre di dialogo più importanti hanno un nuovo progetto che li definisce come esperienze di definizione dei prodotti. Il [layout della finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) presenta un aspetto con tema.
 
-## <a name="BKMK_UtilityDialogLayout"></a> Layout di finestra di dialogo utilità
+## <a name="BKMK_UtilityDialogLayout"></a>Layout della finestra di dialogo utilità
 
-- Tutti i controlli all'interno di una finestra di dialogo utilità devono iniziare in alto/a sinistra e verso il basso del flusso.
+- Tutti i controlli all'interno di una finestra di dialogo di utilità devono iniziare in alto a sinistra e scorrere verso il basso.
 
-- Center mai i controlli in una finestra di dialogo per riempire una vasta area.
+- Non centrare mai i controlli in una finestra di dialogo per riempire un'area di grandi dimensioni.
 
-- Usare il tipo di carattere ambiente per tutto il testo della finestra. Quando si scrive una specifica di visual, specificare il tipo di carattere ambiente invece di selezionare un particolare tipo di carattere e dimensioni. Visualizzare [il tipo di carattere ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Utilizzare il tipo di carattere ambiente per tutto il testo della finestra di dialogo. Quando si scrive una specifica visiva, specificare il tipo di carattere dell'ambiente anziché selezionare un tipo di carattere e una dimensione specifici. Vedere [il tipo di carattere ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-- Usare controllo coerenti con spaziatura e posizionamento per supportare l'obiettivo per la qualità in maestria.
+- Utilizzare la spaziatura e la posizione di controllo coerenti per supportare l'obiettivo di qualità nell'artigianato.
 
-- Le finestre di dialogo può diventare più complesse da un numero maggiore di controlli, un contatto univoca dei controlli o entrambi. Per tali situazioni complicate, consentire spazio sufficiente tra i raggruppamenti di controllo per consentire all'utente un flusso logico da analizzare.
+- I dialoghi possono diventare più complessi da un numero maggiore di controlli, una giustapposizione univoca di controlli o entrambi. Per tali situazioni complesse, consentire agli utenti di analizzare un flusso logico tra i raggruppamenti dei controlli.
 
-### <a name="utility-dialog-layout-examples"></a>Esempi di layout di finestra di dialogo utilità
- Tutte le dimensioni vengono espresse in pixel.
+### <a name="utility-dialog-layout-examples"></a>Esempi di layout della finestra di dialogo utilità
+ Tutte le dimensioni sono espresse come pixel.
 
- ![Spaziatura della finestra di dialogo per le etichette sopra i controlli](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")
+ ![Spaziatura della finestra di dialogo per le etichette sopra i controlli](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801-a_UtilitySpacingAbove")
 
- **Figura 08.01-r: Linee guida per la spaziatura per le finestre di dialogo utilità con etichette sopra i controlli**
+ **Figura 08,01-a: linee guida per la spaziatura per le finestre di dialogo di utilità con etichette sopra i controlli**
 
- ![Spaziatura della finestra di dialogo per le etichette a sinistra dei controlli](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")
+ ![Spaziatura della finestra di dialogo per le etichette a sinistra dei controlli](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801-b_UtilitySpacingLeft")
 
- **Figura 08.01-b: Linee guida per la spaziatura per le finestre di dialogo utilità con etichette a sinistra dei controlli**
+ **Figura 08,01-b: linee guida per la spaziatura per le finestre di dialogo di utilità con etichette a sinistra dei controlli**
 
-### <a name="layout-details"></a>Dettagli del layout
+### <a name="layout-details"></a>Dettagli layout
 
 #### <a name="margins"></a>Margini
 
-- Tutti i dialoghi devono avere un bordo di 12 pixel intorno ai lati.
+- Tutte le finestre di dialogo devono avere un bordo di 12 pixel intorno a tutti i bordi.
 
-- Margini all'interno di un gruppo devono essere 9 pixel dal bordo del frame.
+- I margini all'interno di un frame di gruppo devono essere di 9 pixel dal bordo del frame.
 
-- Margini all'interno di un controllo struttura a schede devono essere 6 pixel dal bordo del controllo scheda.
+- I margini in un controllo struttura a schede devono essere di 6 pixel dal bordo del controllo struttura a schede.
 
 #### <a name="command-buttons"></a>Pulsanti di comando
 
-- Pulsanti di comando operano su frame di finestra di dialogo non sul contenuto. Che deve essere inseriti nella parte inferiore destra e deve avere sufficiente spazio delle variabili precedente per impostare i pulsanti nettamente separata.
+- I pulsanti di comando operano sulla cornice della finestra di dialogo, non sul contenuto. Devono essere posizionati in basso a destra e devono disporre di spazio variabile sufficiente per impostare i pulsanti in modo distinto.
 
-- Se sono presenti pulsanti orizzontali che operano all'interno della finestra di dialogo, la configurazione di pulsante di comando alternativo è uno stack verticale nell'angolo superiore destro. Visualizzare [pulsanti di comando interni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) sotto.
+- Se sono presenti pulsanti orizzontali che operano all'interno della finestra di dialogo, la configurazione del pulsante di comando alternativo è uno stack verticale in alto a destra. Vedere i [pulsanti di comando interni](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) di seguito.
 
-- Lo spazio a sinistra dei pulsanti di comando (più basso a sinistra o al centro della finestra di dialogo) viene considerato parte della "banda" dei controlli di finestra di dialogo operazione. L'unica cosa che dovrebbe ostacolano lo spazio è un collegamento alla Guida che è rilevante per l'attività generale o la finestra di dialogo.
+- Lo spazio a sinistra dei pulsanti di comando (in basso a sinistra/centrale della finestra di dialogo) viene considerato parte della "banda" dei controlli dell'operazione della finestra di dialogo. L'unica cosa che dovrebbe inserirsi su tale spazio è un collegamento alla guida rilevante per l'attività o la finestra di dialogo complessiva.
 
-- Pulsanti di comando devono essere 75 x 23 pixel.
+- I pulsanti di comando devono essere 75x23 pixel.
 
-- Pulsanti di comando devono essere 6 pixel di distanza.
+- I pulsanti di comando devono essere separati da 6 pixel.
 
-  ![Allineamento di base dei pulsanti](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")
+  ![Allineamento pulsante di base](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801-c_ButtonAlign")
 
-  **Figura 08.01-c: Allineamento di base dei pulsanti**
+  **Figura 08,01-c: allineamento del pulsante di base**
 
 #### <a name="labels"></a>Etichette
 
 - Allinea a sinistra tutte le etichette.
 
-- Per le etichette al di sopra un controllo, si devono allineare a sinistra con precisione con il controllo sotto di essa e la parte inferiore dell'etichetta deve essere 5 pixel oltre il margine superiore di altro controllo (ad esempio, una casella combinata).
+- Per le etichette che si trovano sopra un controllo, devono essere allineate esattamente con il controllo sottostante e la parte inferiore dell'etichetta deve essere di 5 pixel al di sopra della parte superiore dell'altro controllo, ad esempio una casella combinata.
 
-- Per le etichette che si trovano a sinistra dei controlli, la larghezza minima tra l'etichetta e il controllo di input è di 10 pixel. Una colonna implicita secondo deve essere stabilita per allineare le caselle di testo, caselle combinate o altri controlli.
+- Per le etichette che si trovano a sinistra dei controlli, la larghezza minima tra l'etichetta e il controllo di input è 10 pixel. È necessario stabilire una seconda colonna implicita per allineare le caselle di testo, le caselle combinate o altri controlli.
 
-- Le etichette maiuscola e sono seguite da due punti. Visualizzare [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Le etichette sono maiuscole e minuscole e sono seguite da due punti. Vedere [stile testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
 #### <a name="distance-between-controls"></a>Distanza tra i controlli
- Sovrapporre controlli ragionevolmente. Non vi è alcun assoluti delle linee guida per la spaziatura tra i controlli in pila. Il livello tra i controlli può variare leggermente tra le finestre di dialogo. La spaziatura consigliata è 20 pixel per le coppie etichetta/controllo verticali e 9 pixel per le coppie etichetta/controllo orizzontale. La spaziatura minima di controlli per le coppie orizzontale è 6 pixel.
+ Controlli dello stack ragionevolmente. Non esiste alcuna linea guida assoluta per la spaziatura tra i controlli in pila. La rigidità tra i controlli può variare leggermente tra le finestre di dialogo. La spaziatura consigliata è 20 pixel per le coppie di controllo/etichetta verticali e 9 pixel per le coppie di controllo/etichetta orizzontali. La spaziatura minima del controllo per le coppie orizzontali è 6 pixel.
 
- ![Distanza tra i controlli consigliati](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")
+ ![Distanza consigliata tra i controlli](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-d_ControlDistance")
 
- **Figura 08.01-d: Raccomandazioni per la distanza tra i controlli**
+ **Figura 08,01-d: suggerimenti per la distanza tra i controlli**
 
-#### <a name="control-indentation"></a>Rientro di controllo
- Quando i controlli sono nidificati, allineare i controlli interni in senso orizzontale con il bordo sinistro del controllo precedente, in genere l'etichetta.
+#### <a name="control-indentation"></a>Rientro del controllo
+ Quando i controlli sono annidati, allineare orizzontalmente i controlli interni al bordo sinistro del controllo precedente, in genere l'etichetta.
 
- ![Allineamento dei controlli annidati](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")
+ ![Allineamento del controllo annidato](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801-e_ControlAlign")
 
- **Figura 08.01-e: Allineamento dei controlli annidati**
+ **Figura 08,01-e: allineamento del controllo annidato**
 
 #### <a name="control-width"></a>Larghezza del controllo
- La larghezza di una casella di testo o altri controlli simili deve essere composto l'input medio per il campo. La parola inglese Media è di cinque caratteri. Ad esempio, una casella di testo che richiede un nome di percorso lungo deve essere a condizione che consente il layout orizzontale, mentre un elenco a discesa di nomi di piattaforma devono essere solo una lunghezza che consente la voce più lunga.
+ La larghezza di una casella di testo o altri controlli simili non devono essere più lunghi dell'input medio per il campo. La parola media inglese è di cinque caratteri. Ad esempio, una casella di testo che richiede un nome di percorso lungo deve essere purché il layout orizzontale consenta, mentre un elenco a discesa per i nomi di piattaforma deve essere solo una lunghezza che consente la voce più lunga.
 
-#### <a name="helper-text"></a>Testo di supporto
+#### <a name="helper-text"></a>Testo Helper
 
-- Una finestra di dialogo è possibile visualizzare il testo di supporto che fornisce informazioni aggiuntive sullo scopo della finestra di dialogo. Ciò in genere si trova nella parte superiore e può essere 1 o 2 frasi.
+- In una finestra di dialogo è possibile visualizzare il testo dell'helper che fornisce ulteriori informazioni sullo scopo della finestra di dialogo. Si trova in genere nella parte superiore e può essere costituito da 1-2 frasi.
 
-- La lunghezza di riga deve essere una larghezza comoda per un utente di analizzare e di lettura. Una finestra di dialogo medio deve essere non più di 550 pixel di larghezza.
+- La lunghezza della riga deve essere una larghezza comoda per l'analisi e la lettura da parte di un utente. Una finestra di dialogo Media non deve superare i 550 pixel di larghezza.
 
-#### <a name="BKMK_InteriorCommandButtons"></a> Pulsanti di comando interni
- Nelle finestre di dialogo più complessi, un controllo interno potrebbe essere relativi pulsanti correlate, che possono influire in cui si trovano i pulsanti di commit della finestra di dialogo.
+#### <a name="BKMK_InteriorCommandButtons"></a>Pulsanti di comando interni
+ Nelle finestre di dialogo più complesse, un controllo interno potrebbe avere i propri pulsanti correlati, che potrebbero influire sulla posizione in cui si trovano i pulsanti di commit della finestra di dialogo.
 
-- Usare i pulsanti quando l'allineamento verticale (colonna) della parte interna **OK**/**Annulla** è orientato in senso orizzontale nell'angolo inferiore destro.
+- Usare un allineamento verticale (colonna) di pulsanti interni quando **OK** /**Annulla** sono orientati orizzontalmente nell'angolo inferiore destro.
 
-- Usare i pulsanti quando l'allineamento orizzontale (riga) della parte interna **OK**/**Annulla** è orientato in senso verticale in alto a destra. Questa situazione è meno comune.
+- Usare un allineamento orizzontale (riga) dei pulsanti interni quando **OK** /**Annulla** sono orientati verticalmente nell'angolo superiore destro. Questa situazione è meno comune.
 
-- Dimensioni del pulsante interni devono avere come destinazione le dimensioni del pulsante standard di 75 x 23 pixel, corrispondenti le dimensioni di **OK**/**Annulla** pulsanti quando possibile. Se un'etichetta del pulsante effettua il pulsante superano le dimensioni del pulsante standard, gli altri pulsanti in tale set devono essere allineate con tale dimensione più ampia.
+- Le dimensioni del pulsante interno devono avere come destinazione le dimensioni del pulsante standard di 75x23 pixel, che corrispondono alle dimensioni dei pulsanti **OK** /**Annulla** quando possibile. Se l'etichetta di un pulsante consente di superare le dimensioni del pulsante standard, gli altri pulsanti del set devono essere allineati alla dimensione più ampia.
 
-  ![Pulsanti OK e Annulla orizzontali](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")
+  ![Pulsanti OK e Annulla orizzontali](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801-f_HorizOKCan")
 
-  **Figura 08.01-f: Pulsanti interni verticali con OK/Annulla orizzontale**
+  **Figura 08,01-f: pulsanti interni verticali con OK/Annulla orizzontali**
 
-  ![Pulsanti OK e Annulla verticali](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")
+  ![Pulsanti verticali OK e Annulla](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801-g_VertOKCan")
 
-  **Figura 08.01-g: Pulsanti interni orizzontali con OK/Annulla verticale**
+  **Figura 08,01-g: pulsanti interni orizzontali con OK/Annulla verticale**
 
 #### <a name="browse-button"></a>[Sfoglia...] pulsante
- **[Sfoglia...]**  pulsanti che seguono una casella di testo devono spiegare chiaramente "Sfoglia..." in modo completo, inclusi i puntini di sospensione. Se lo spazio è insufficiente o ci sono più **[Sfoglia...]**  pulsanti sullo schermo, il pulsante possono essere ridotto a semplicemente i puntini di sospensione.
+ **[Sfoglia...]** i pulsanti che seguono una casella di testo devono digitare "Sfoglia". completo, inclusi i puntini di sospensione. Se lo spazio è limitato o sono presenti più pulsanti **[Browse.** ..] sullo schermo, il pulsante può essere ridotto solo ai puntini di sospensione.
 
-## <a name="BKMK_ThemedDialogLayout"></a> Layout di finestra di dialogo con tema
- Finestre di dialogo con tema in Visual Studio hanno un aspetto più chiaro e offrire più spazio vuoto. Funzionalità tipografiche fornisce ulteriori enfasi e interesse, offre più aperta l'interlinea e una variante dei pesi e le dimensioni dei caratteri. Dove possibile, le barre del titolo e chrome sono state ridotte o rimosse. Il layout di queste finestre di dialogo deve seguire questo modello di base:
+## <a name="BKMK_ThemedDialogLayout"></a>Layout della finestra di dialogo con tema
+ Le finestre di dialogo con tema in Visual Studio hanno un aspetto più chiaro e offrono più spazio vuoto. La funzionalità tipografica offre maggiore enfasi e interesse, offrendo una maggiore interlinea di apertura e una variazione di dimensioni e pesi dei tipi di carattere. Laddove possibile, le barre Chrome e title sono state ridotte o rimosse. Il layout di queste finestre di dialogo deve seguire questo modello di base:
 
 1. Lo sfondo della finestra di dialogo è bianco.
 
-2. In un grigio medio valore è presente un bordo regola 1 pixel.
+2. Il bordo di una regola da 1 pixel è in grigio di valore medio.
 
-3. Non è più il titolo della finestra di dialogo si trova in una barra del titolo, ma fornisce l'interesse visivo ed enfasi un aumento delle dimensioni del punto. (Vedere la sezione di dimensioni del carattere in [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. Il titolo della finestra di dialogo non si trova più in una barra del titolo, ma fornisce interesse visivo e enfasi in una dimensione del punto più grande. (Vedere la sezione relativa alle dimensioni del carattere nello [stile testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)).
 
-4. Devono essere associate testo aggiuntivo, ad esempio una descrizione, le etichette **tipo di carattere ambiente + grassetto**.
+4. Le etichette associate a testo aggiuntivo, ad esempio una descrizione, devono essere un **tipo di carattere ambiente + grassetto**.
 
-5. Colonne interne sono separate da una regola di 1 pixel in grigio chiaro.
+5. Le colonne interne sono separate da una regola di 1 pixel in grigio chiaro.
 
-6. Collegamenti predefiniti non hanno nessun carattere di sottolineatura. Al passaggio del mouse e premuti stati dispongono di una modifica del colore e un carattere di sottolineatura.
+6. I collegamenti predefiniti non hanno un carattere di sottolineatura. Gli Stati con passaggio del mouse e premuto hanno una modifica del colore e un carattere di sottolinea
 
-7. Eseguire il commit pulsanti (ad esempio **OK**/**Annulla**) si trovano nell'angolo inferiore destro.
+7. I pulsanti di commit (ad esempio **OK** /**Annulla**) si trovano nell'angolo inferiore destro.
 
-### <a name="themed-dialog-layout-examples"></a>Esempi di layout di finestra di dialogo con tema
- ![Layout di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")
+### <a name="themed-dialog-layout-examples"></a>Esempi di layout della finestra di dialogo con tema
+ ![Layout della finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801-h_ThemedDialog")
 
- **Figura 08.01-h: Finestra di dialogo con tema**
+ **Figura 08,01-h: finestra di dialogo con tema**
 
- ![Le dimensioni di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")
+ ![Dimensioni finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801-i_ThemedDialogDimensions")
 
- **Figura 08.01-ricerca per categorie: Finestra di dialogo con tema - dimensioni**
+ **Figura 08,01-i: finestra di dialogo con tema-dimensioni**
 
- ![I tipi di carattere di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")
+ ![Tipi di carattere della finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801-j_ThemedDialogFonts")
 
- **Figura 08.01-j: Finestra di dialogo con tema - tipi di carattere**
+ **Figura 08,01-j: finestra di dialogo con tema-tipi di carattere**
 
- ![I colori di finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")
+ ![Colori della finestra di dialogo con tema](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-k_ThemedDialogColors")
 
- **Figura 08.01-k: Finestra di dialogo con tema - colori**
+ **Figura 08,01-k: finestra di dialogo con tema-colori**
 
 ## <a name="see-also"></a>Vedere anche
 - [Modelli delle applicazioni per Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)

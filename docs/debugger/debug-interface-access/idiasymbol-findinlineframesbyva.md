@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc91ad3a2e4e89a154295bf41baa31e59c4d65e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f2ec0280f7eab6d5dd44c4577cfde2cd3846e5fd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831668"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741135"
 ---
 # <a name="idiasymbolfindinlineframesbyva"></a>IDiaSymbol::findInlineFramesByVA
-Recupera un'enumerazione che consente a un client scorrere tutti i frame inline in un indirizzo virtuale specificato (valutazione della vulnerabilità).
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo virtuale specificato (VA).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,11 +32,11 @@ HRESULT findInlineFramesByVA ( 
 #### <a name="parameters"></a>Parametri
  `va`
 
-[in] Specifica l'indirizzo come un responsabile tecnologico
+in Specifica l'indirizzo come VA.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame che vengono recuperati.
+out Contiene un oggetto `IDiaEnumSymbols` contenente l'elenco dei frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

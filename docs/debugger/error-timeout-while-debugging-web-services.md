@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Timeout durante il debug dei servizi Web | Microsoft Docs'
+title: 'Errore: timeout durante il debug dei servizi Web | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9979f723a342aaefee80f9410c28aa68047b5e57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aba4fef3e1c787651eb961f80b3507090f250a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850210"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736881"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>Errore: Timeout durante il debug dei servizi Web
+# <a name="error-timeout-while-debugging-web-services"></a>Errore: timeout durante il debug dei servizi Web
 Durante l'accesso a un servizio Web XML dal codice chiamante, è possibile che si verifichi un timeout con conseguente interruzione del debug. Potrebbe essere visualizzato un messaggio di errore simile al seguente.
 
 ```cmd
@@ -40,4 +40,4 @@ obj.TimeOut = -1; // infinite time out.
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

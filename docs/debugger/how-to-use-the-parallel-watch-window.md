@@ -1,5 +1,5 @@
 ---
-title: Impostare un'espressione di controllo per le variabili di thread in parallelo | Microsoft Docs
+title: Impostare un'espressione di controllo sulle variabili nei thread paralleli | Microsoft Docs
 ms.date: 04/25/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388466"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732007"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Impostare un'espressione di controllo per le variabili di thread in parallelo in Visual Studio (C#, Visual Basic, C++)
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Impostare un'espressione di controllo sulle variabili nei thread paralleli inC#Visual Studio ( C++, Visual Basic,)
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nella finestra **Espressione di controllo in parallelo**:
 
 - Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.
 
-- La colonna del thread corrente, in cui una freccia gialla indica che il thread corrente (una freccia verde ricurva indica che un thread non correnti è il contesto di debug corrente).
+- La colonna del thread corrente, in cui una freccia gialla indica il thread corrente (una freccia verde con una coda riccia indica che un thread non corrente ha il contesto del debugger corrente).
 
 - Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.
 
   > [!TIP]
-  > Per visualizzare informazioni sulle attività nella **espressioni di controllo parallela** finestra, è innanzitutto necessario aprire le **attività** finestra.
+  > Per visualizzare le informazioni sulle attività nella finestra espressione di **controllo in parallelo** , è innanzitutto necessario aprire la finestra **attività** .
 
-- Lo spazio vuoto *Aggiungi espressione di controllo* colonne, in cui è possibile immettere espressioni di controllo.
+- Colonne di espressioni di *controllo di aggiunta* vuote, in cui è possibile immettere espressioni da controllare.
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,19 +50,19 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 
 ### <a name="to-add-a-watch-expression"></a>Per aggiungere un'espressione di controllo
 
-- Selezionare una dello spazio vuoto *Aggiungi espressione di controllo* colonne e quindi immettere un'espressione di controllo.
+- Selezionare una delle colonne Aggiungi espressione di *controllo* vuota e quindi immettere un'espressione di controllo.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Per aggiungere o rimuovere flag che contrassegnano un thread
 
-- Selezionare la colonna del contrassegno per la riga (prima colonna), oppure aprire il menu di scelta rapida per il thread e scegliere **Flag** oppure **Rimuovi flag**.
+- Selezionare la colonna flag per la riga (prima colonna) oppure aprire il menu di scelta rapida per il thread e scegliere **flag o Rimuovi** **flag**.
 
 ### <a name="to-display-only-flagged-threads"></a>Per visualizzare solo i thread con flag
 
-- Scegliere il **Mostra solo con contrassegno** pulsante nell'angolo superiore sinistro della **espressioni di controllo parallela** finestra.
+- Scegliere il pulsante **Mostra solo con flag** nell'angolo superiore sinistro della finestra espressione di **controllo in parallelo** .
 
 ### <a name="to-switch-to-another-thread"></a>Per passare a un altro thread
 
-- Fare doppio clic sulla colonna thread corrente (seconda colonna). (Tastiera: Selezionare la riga e premere INVIO).
+- Fare doppio clic sulla colonna thread corrente (seconda colonna). (tastiera: selezionare la riga e premere INVIO).
 
 ### <a name="to-sort-a-column"></a>Per ordinare una colonna
 
@@ -87,4 +87,4 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)
-- [Procedura dettagliata: Debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Procedura dettagliata: debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

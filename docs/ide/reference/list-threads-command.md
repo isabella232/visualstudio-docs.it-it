@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c437b91fea5e3087de8b22cb72a2f20ad421bead
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c89f4e38d21e7dd66f53b8e768019a3e53c7a39
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610490"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747882"
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
 Visualizza un elenco dei thread del programma corrente.

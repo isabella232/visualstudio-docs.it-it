@@ -1,5 +1,5 @@
 ---
-title: Continuare l'esecuzione dopo un'eccezione | Microsoft Docs
+title: Continuazione dell'esecuzione dopo un'eccezione | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -25,20 +25,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7be214a950c8cc93d986f97834a848bd9ab824e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564099"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745656"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
-Quando il debugger interrompe l'esecuzione a causa di un'eccezione, verrà visualizzato il **Helper eccezioni**, per impostazione predefinita. Se è stata disabilitata la **Helper eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **informazioni sulle eccezioni** (C# o Visual Basic) o il  **Eccezione** finestra di dialogo (C++).
+Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostazione predefinita viene visualizzato l' **Helper eccezioni**. Se l' **Helper eccezioni** è stato disabilitato nella finestra di dialogo **Opzioni** , viene visualizzata la finestra di dialogo informazioniC# sulle **eccezioni** (o Visual Basic) o la finestraC++di dialogo **eccezione** ().
 
- Quando la **Helper eccezioni** viene visualizzata, è possibile provare a risolvere il problema che ha causato l'eccezione.
+ Quando viene visualizzato l' **Helper eccezioni** , è possibile tentare di risolvere il problema che ha causato l'eccezione.
 
 ## <a name="managed-and-native-code"></a>Codice gestito e nativo
- Nel codice gestito e nativo, è possibile continuare l'esecuzione nello stesso thread dopo un'eccezione non gestita. Il **Helper eccezioni** rimuove lo stack di chiamate al punto in cui è stata generata l'eccezione.
+ Nel codice gestito e nativo è possibile continuare l'esecuzione nello stesso thread dopo un'eccezione non gestita. Il **supporto eccezioni** rimuove lo stack di chiamate nel punto in cui è stata generata l'eccezione.
 
 ## <a name="mixed-code"></a>Codice misto
  Se si rileva un'eccezione non gestita durante il debug di codice misto nativo e gestito, i vincoli del sistema operativo impediscono la rimozione dello stack di chiamate. Se si tenta di rimuovere lo stack di chiamate utilizzando il menu di scelta rapida, un messaggio di errore indica che il debugger non può eseguire la rimozione da un'eccezione non gestita durante il debug di codice misto.

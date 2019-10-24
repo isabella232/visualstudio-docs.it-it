@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 468e9865c1648a4bc19f107f7e201d678b672177
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f452aa01f29d25ad1674c6bc2f5494a745733793
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858195"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741064"
 ---
-# <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
+# <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo di questo simbolo.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,16 +33,16 @@ HRESULT get_addressTaken ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se un altro simbolo fa riferimento a questo indirizzo; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se un altro simbolo fa riferimento a questo indirizzo; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="example"></a>Esempio
- Nell'esempio riportato di seguito `B` riferimenti `A`. Pertanto, di simboli `A`del `get_addressTaken` restituzione del metodo `TRUE`.
+ Nell'esempio seguente `B` fa riferimento a `A`. Pertanto, il metodo di `get_addressTaken` del `A` di simboli restituisce `TRUE`.
 
 ```C++
 int A  = 0;
@@ -51,9 +51,9 @@ int* B = &A;
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|DESCRIZIONE|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

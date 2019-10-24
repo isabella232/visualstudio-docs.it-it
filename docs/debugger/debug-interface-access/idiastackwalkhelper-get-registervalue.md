@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfb3e219012effe47a2352f7c22c6cf51b4617f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831832"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741410"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 Recupera il valore di un registro.
 
 ## <a name="syntax"></a>Sintassi
@@ -34,17 +34,17 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>Parametri
  `index`
 
-[in] Un valore compreso il [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) enumerazione che specifica quale registro da cui per ottenere il valore.
+in Valore dell'enumerazione di [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) che specifica il registro da cui ottenere il valore.
 
  `pRetVal`
 
-[out] Restituisce il valore corrente del registro.
+out Restituisce il valore corrente del registro.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Nonostante le dimensioni del `pRetVal` parametro, un'implementazione deve archiviare solo registro in genere conserva. Un registro a 8 bit, ad esempio, contiene solo i bit più bassi 8-del valore specificato. Questo valore a 8 bit viene espanso a 64-bit quando restituito da questo metodo.
+ Nonostante le dimensioni del parametro `pRetVal`, un'implementazione deve archiviare solo ciò che il registro include normalmente. Un registro a 8 bit, ad esempio, include solo gli 8 bit più bassi del valore specificato. Questo valore a 8 bit viene espanso a 64 bit quando viene restituito da questo metodo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

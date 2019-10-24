@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e35db1186f2547b8d3c859d20e0e4ce2b1f68e9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 28a78094d9779a0da35052808dfb8d5f42972894
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803340"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741041"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-Recupera il valore di durata di un file con estensione pdb.
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
+Recupera il valore Age di un file con estensione pdb.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,22 +33,22 @@ HRESULT get_age ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il valore di durata di un file con estensione pdb.
+out Restituisce il valore Age di un file con estensione pdb.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- Il periodo di validità non corrisponde necessariamente su qualsiasi valore di tempo noto; in genere utilizzato per determinare se un file con estensione PDB non è sincronizzato con un file .exe corrispondente.
+ L'età non corrisponde necessariamente a un valore di ora noto. viene in genere usato per determinare se un file con estensione PDB non è sincronizzato con un file exe corrispondente.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

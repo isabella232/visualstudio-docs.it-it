@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f372d42869bf533b598f3e2aba9e60e34e47144d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605286"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748375"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: intercettare un clic su una forma o su un elemento Decorator
 Nelle procedure riportate di seguito viene illustrato come intercettare un clic su una forma o su un elemento Decorator di icona. È possibile intercettare clic, fare doppio clic, trascinare e altri movimenti e fare in modo che l'elemento risponda.

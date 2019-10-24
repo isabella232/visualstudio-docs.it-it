@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f57454be3690f36cbf1addddb3d51bb01a39f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6e871570ad49a4efe2df320f98fe56b5372c6bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838350"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741801"
 ---
-# <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
-Recupera il nome di file di origine.
+# <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
+Recupera il nome del file di origine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_fileName ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il nome di file di origine.
+out Restituisce il nome del file di origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

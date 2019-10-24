@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98b441e52d3d24a5ccd738fe1ac65b268a30a2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 329bf9f4fa94171347eeea8fc9f2744b7ce4269f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839316"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742148"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
-Recupera un'enumerazione che consente a un client scorrere tutti i frame inline in un indirizzo virtuale relativo specificato (RVA).
+Recupera un'enumerazione che consente a un client di scorrere tutti i frame inline in un indirizzo RVA (relative Virtual Address) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,15 +32,15 @@ HRESULT findInlineFramesByRVA ( 
 #### <a name="parameters"></a>Parametri
  `parent`
 
-[in] Un `IDiaSymbol` oggetto che rappresenta l'elemento padre.
+in Oggetto `IDiaSymbol` che rappresenta l'elemento padre.
 
  `rva`
 
-[in] Specifica l'indirizzo come un RVA.
+in Specifica l'indirizzo come RVA.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumSymbols` oggetto che contiene l'elenco di frame che vengono recuperati.
+out Contiene un oggetto `IDiaEnumSymbols` contenente l'elenco dei frame recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

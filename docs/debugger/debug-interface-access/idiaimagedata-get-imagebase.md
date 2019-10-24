@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829067"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743444"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
-Recupera la posizione di memoria in cui deve basarsi l'immagine.
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
+Recupera la posizione di memoria in cui deve essere basata l'immagine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il valore di base dell'immagine suggerita.
+out Restituisce il valore di base dell'immagine suggerito.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- A causa di conflitti di base di immagine, un'immagine può essere riassegnata automaticamente in una posizione di memoria inutilizzata al momento del caricamento. Questo metodo restituisce l'hint di base (percorso consigliato per la memoria) che è stato archiviato nel modulo in fase di compilazione.
+ A causa dei conflitti di base dell'immagine, un'immagine potrebbe essere riassegnata automaticamente a una posizione di memoria inutilizzata quando viene caricata. Questo metodo restituisce l'hint di base (posizione di memoria suggerita) archiviato nel modulo in fase di compilazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

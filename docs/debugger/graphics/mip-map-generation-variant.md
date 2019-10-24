@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895599"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734894"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
 Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di rendering.
@@ -26,7 +26,7 @@ Per le scene 3D, è consigliabile usare le mappe MIP quando è disponibile memor
 Se questa variante mostra un aumento delle prestazioni significativo, indica che si stanno usando trame senza abilitare le mappe MIP e pertanto senza sfruttare al massimo la cache delle trame.
 
 ## <a name="remarks"></a>Note
-La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, generazione di mappe mip viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che è:
+La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, la generazione di mappe MIP viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che non cambia. Cioè:
 
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.
 
@@ -62,7 +62,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 ```
 
-Per creare una trama con una catena MIP completa, impostare `D3D11_TEXTURE2D_DESC::MipLevels` su 0. Il numero di livelli mip in una catena mip completa è floor(log2(n) + 1), dove n è la dimensione più grande della trama.
+Per creare una trama con una catena MIP completa, impostare `D3D11_TEXTURE2D_DESC::MipLevels` su 0. Il numero di livelli MIP in una catena MIP completa è floor (log2 (n) + 1), dove n è la dimensione più grande della trama.
 
 Ricordare che quando vengono forniti i dati iniziali a `CreateTexture2D`, è necessario fornire un oggetto D3D11_SUBRESOURCE_DATA per ogni livello MIP.
 

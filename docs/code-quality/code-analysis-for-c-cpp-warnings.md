@@ -18,12 +18,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ecae431f75e14443895b816a24000b6fe3fba52
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: efcb6c5aeb60062dea75906969b71e65ac4912bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445861"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745980"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Avvisi dell'analisi codice per il linguaggio C/C++
 Questa sezione elenca gli avvisiC++ di analisi C/codice, ad eccezione di quelli generati dalle [ C++ linee guida principali per le linee guida](code-analysis-for-cpp-corecheck.md). Per informazioni sull'analisi del codice, vedere [/Analyze (analisi del codice)](/cpp/build/reference/analyze-code-analysis) e [avvio rapido: analisi del codiceC++per C/](../code-quality/quick-start-code-analysis-for-c-cpp.md).

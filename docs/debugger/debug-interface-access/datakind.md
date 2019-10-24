@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31be0615fd7d1da279ecf414260af21cb8239dc8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554922"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745281"
 ---
 # <a name="datakind"></a>DataKind
 Indica l'ambito specifico di un valore di dati.
@@ -40,31 +40,31 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>Elementi
-Non è possibile determinare il simbolo DataIsUnknown dei dati.
+Non è possibile determinare il simbolo di dati DataIsUnknown.
 
-Elemento dati DataIsLocal è una variabile locale.
+L'elemento dati DataIsLocal è una variabile locale.
 
-Elemento dati DataIsStaticLocal è una variabile locale statica.
+L'elemento dati DataIsStaticLocal è una variabile locale statica.
 
-Elemento dati DataIsParam è un parametro formale.
+L'elemento dati DataIsParam è un parametro formale.
 
-Elemento dati DataIsObjectPtr è un puntatore a oggetto (`this`).
+L'elemento dati DataIsObjectPtr è un puntatore a oggetto (`this`).
 
-Elemento dati DataIsFileStatic è una variabile con ambito file.
+L'elemento dati DataIsFileStatic è una variabile con ambito file.
 
-Elemento dati DataIsGlobal è una variabile globale.
+L'elemento dati DataIsGlobal è una variabile globale.
 
-Elemento dati DataIsMember è una variabile membro oggetto.
+L'elemento dati DataIsMember è una variabile membro oggetto.
 
-Elemento dati DataIsStaticMember è una variabile di classe statici.
+L'elemento dati DataIsStaticMember è una variabile statica di classe.
 
-Elemento dati DataIsConstant è un valore costante.
+L'elemento dati DataIsConstant è un valore costante.
 
 ## <a name="remarks"></a>Note
-I valori di questa enumerazione vengono restituiti per il [Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (metodo).
+I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

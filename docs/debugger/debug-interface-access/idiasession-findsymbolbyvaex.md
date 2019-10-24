@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b62c5efb520e90606d6311b60a839404359720
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56dd91e76380bb4f43fae4f26d4124b2f9bc3ebf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832363"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741979"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-Recupera un tipo di simbolo specificato che contiene, o più vicino a un indirizzo virtuale specificato (valutazione della vulnerabilità) e l'offset.
+Recupera un tipo di simbolo specificato che contiene o è più vicino a un indirizzo virtuale (VA) e un offset specificati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,19 +36,19 @@ HRESULT findSymbolByVAEx ( 
 #### <a name="parameters"></a>Parametri
  `va`
 
-[in] Specifica il Virginia.
+in Specifica il VA.
 
  `symtag`
 
-[in] Tipo di simbolo da trovare. I valori sono ricavati dal [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione.
+in Tipo di simbolo da trovare. I valori vengono ricavati dall'enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperare l'oggetto che rappresenta il simbolo.
+out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo recuperato.
 
  `displacement`
 
-[out] Restituisce un valore che specifica un offset dall'indirizzo virtuale fornito dal `va`.
+out Restituisce un valore che specifica un offset dall'indirizzo virtuale fornito da `va`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

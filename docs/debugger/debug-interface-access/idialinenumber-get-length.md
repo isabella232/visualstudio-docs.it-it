@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 896e26075780c0cbd7bf0b1762da141d5ba7d2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f803fac1439d384133f0819859f2917072a8790
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828465"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743188"
 ---
-# <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
+# <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
 Recupera il numero di byte in un blocco.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,13 +33,13 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di byte in un blocco.
+out Restituisce il numero di byte in un blocco.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Note
- Il blocco è la lunghezza del codice sorgente nella riga come rappresentata dai [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) oggetto.
+ Il blocco è la lunghezza del codice sorgente sulla riga come rappresentato dall'oggetto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

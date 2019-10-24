@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b1f10778c4866e67630fcac7af3b92b3de780aa5
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253136"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777751"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso di .NET 4.x in Unity
 
@@ -21,7 +21,7 @@ C# e .NET, le tecnologie sottostanti alle funzionalità di scripting Unity, cont
 
 Con il rilascio di Unity 2017.1, Unity ha introdotto una versione sperimentale del runtime di scripting aggiornata a una versione compatibile con .NET 4.6 e C# 6. In Unity 2018.1, il runtime equivalente di .NET 4.x non è più considerato sperimentale, mentre il runtime equivalente a .NET 3.5 precedente viene ora considerato la versione legacy. Con il rilascio di Unity 2018.3, Unity progetta di rendere il runtime di scripting aggiornato la selezione predefinita con ulteriori aggiornamenti a C# 7. Per altre informazioni e indicazioni sugli aggiornamenti più recenti, leggere questo [post di blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) di Unity oppure visitare il [forum dedicato alle anteprime di scripting sperimentali](https://forum.unity.com/forums/experimental-scripting-previews.107/). Nel frattempo, consultare le sezioni seguenti per altre informazioni sulle nuove funzionalità ora disponibili con il runtime di scripting .NET 4.x.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * [Unity 2017.1 o versione successiva](https://unity3d.com/) (consigliata la versione 2018.2)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)

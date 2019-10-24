@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd788124927de759558392cfe36194632c0996
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0f9b0fc0f2f4cd7c441f5f88e4220216c8d964
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211093"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738033"
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
 In questa sezione viene illustrato come eseguire il debug di diversi tipi di applicazioni Web.
 
-## <a name="in-this-section"></a>In questa sezione
- [Debug di script sul lato client](../debugger/client-side-script-debugging.md) Viene illustrato il test degli script e degli script [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] lato client nelle pagine.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Debug di script sul lato client](../debugger/client-side-script-debugging.md) Vengono illustrati gli script di test e gli script sul lato client nelle pagine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Vengono descritti i passaggi necessari per abilitare il debug delle [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applicazioni.
+ [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Vengono descritti i passaggi necessari per abilitare il debug di applicazioni [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

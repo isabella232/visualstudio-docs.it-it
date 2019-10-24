@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95c51910ee638338f588b1e81b844cf3f487a50e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828634"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743359"
 ---
-# <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
-Recupera il numero di byte del codice.
+# <a name="idiainjectedsourceget_length"></a>IDiaInjectedSource::get_length
+Recupera il numero di byte di codice.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di byte del codice.
+out Restituisce il numero di byte di codice.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Note
- Il valore restituito da questo metodo è la lunghezza del codice sorgente ed è lo stesso valore restituito dal [Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) (metodo).
+ Il valore restituito da questo metodo è la lunghezza del codice sorgente ed è lo stesso valore restituito dal metodo [IDiaInjectedSource:: get_Source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

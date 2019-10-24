@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3caa5574605864a0dd16b59b6f451530b8e631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 007477d3f0de3767b0c5ef0af977f969505884ed
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827776"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742307"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
-Restituisce un'enumerazione dei simboli per i frame inline corrispondente al nome di funzione inline specificati.
+Restituisce un'enumerazione di simboli per i frame inline che corrispondono al nome della funzione inline specificata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,21 +33,21 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parametri
  `name`
 
-[in] Il nome della funzione inline da cercare.
+in Nome della funzione inline in cui eseguire la ricerca.
 
  `option`
 
-[in] Le opzioni di ricerca del nome da usare durante la ricerca di inline di fotogrammi che corrispondono a `name`. Per altre informazioni, vedere [enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).
+in Opzioni di ricerca del nome da utilizzare per la ricerca di frame inline che corrispondono a `name`. Per ulteriori informazioni, vedere [enumerazione NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).
 
  `ppResult`
 
-[out] Un puntatore a un `IDiaEnumSymbols` puntatore a interfaccia che viene inizializzato con il risultato.
+out Puntatore a un puntatore a interfaccia `IDiaEnumSymbols` inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Questa funzione ricerca inline solo all'interno delle funzioni di stub di tasti di scelta rapida. Ignora i record di procedure native C++.
+ Questa funzione Cerca le inline solo nelle funzioni dello stub dell'acceleratore. Ignora i record delle C++ procedure native.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

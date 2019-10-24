@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252511"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728593"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: Debug di un'applicazione parallela in VisualC#Studio (, C++Visual Basic,)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procedura dettagliata: debug di un'applicazione parallela inC#Visual Studio ( C++, Visual Basic,)
 
 In questa procedura dettagliata viene illustrato come usare le finestre **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento in fase di esecuzione del codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o il [runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Una volta interrotta l'esecuzione del codice, viene illustrato come esaminarlo usando le finestre **Attività in parallelo** e **Stack in parallelo**.
 
@@ -45,7 +45,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
 - Come le finestre affrontano il ridimensionamento tramite il raggruppamento, lo zoom e altre funzionalità correlate.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
  In questa procedura dettagliata si presuppone che **Just My Code** sia abilitata per impostazione predefinita nelle versioni più recenti di Visual Studio. Nel menu **Strumenti** fare clic su **Opzioni**, espandere il nodo **Debug**, selezionare **Generale**, quindi **Abilita Just My Code (solo gestito)** . Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
 
 ## <a name="c-sample"></a>Esempio in C#
@@ -98,7 +98,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
     Notare che vi sono quattro chiamate a `Debugger.Break` (`DebugBreak` nell'esempio C++). Pertanto, non è necessario inserire punti di interruzione; la semplice esecuzione dell'applicazione determinerà fino a quattro interruzioni nel debugger.
 
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Uso della finestra Stack in parallelo: Visualizzazione Thread
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilizzo della finestra Stack in parallelo: visualizzazione Thread
  Scegliere **Avvia debug** dal menu **Debug**. Attendere che venga raggiunto il primo punto di interruzione.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Per visualizzare lo stack di chiamate di un singolo thread
@@ -244,7 +244,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 
      ![Due attività in attesa nella finestra attività](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     L'attività 4, a sua volta, è in attesa di un monitoraggio di proprietà del thread assegnato all'attività 2. (Fare clic con il pulsante destro del mouse sulla riga di intestazione e scegliere **colonne** > **assegnazione thread** per visualizzare il valore di assegnazione thread per l'attività 2).
+     L'attività 4, a sua volta, è in attesa di un monitoraggio di proprietà del thread assegnato all'attività 2. (Fare clic con il pulsante destro del mouse sulla riga di intestazione e scegliere **colonne**  > **assegnazione thread** per visualizzare il valore di assegnazione thread per l'attività 2).
 
      ![Attività in attesa e descrizione comando nella finestra attività](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 

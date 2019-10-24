@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51fb2c4ff2f27cee8fcc989139f5ae14c2641394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a81113242379070e56d6d0bd0f916355985eaa42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828106"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742615"
 ---
-# <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
-Recupera un flag che indica se la sezione non deve essere riempita per il limite di memoria successivo.
+# <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
+Recupera un flag che indica se la sezione non deve essere riempita al limite di memoria successivo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_nopad(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se la sezione non deve essere riempita per il limite di memoria successivo; in caso contrario restituisce `FALSE`.
+out Restituisce `TRUE` se la sezione non deve essere riempita al limite di memoria successivo. in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Note
- Questa è una proprietà in genere visualizzata solo per i file meno recenti.
+ Si tratta di una proprietà in genere visibile solo in file meno recenti.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

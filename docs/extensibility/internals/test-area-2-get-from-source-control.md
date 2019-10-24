@@ -1,5 +1,5 @@
 ---
-title: 'Area di test 2: Ottenere dal controllo del codice sorgente | Microsoft Docs'
+title: 'Area di test 2: ottenere dal controllo del codice sorgente | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,47 +11,47 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31f5f9b9657b0577d6b8e36166049fe46ac2a907
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dca98c927209062d2a1fc67c309d2f32c18d1b5d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331027"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722576"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Area di test 2: Caricare dal controllo del codice sorgente
-Questa area di test riguarda casi di test per il recupero di elementi dall'archivio delle versioni tramite il comando Get. Questi test case possono essere applicati a locali e ai progetti Web.
+# <a name="test-area-2-get-from-source-control"></a>Area di test 2: Recuperare elementi dal controllo del codice sorgente
+Questa area di test include i test case per il recupero di elementi dall'archivio delle versioni tramite il comando Get. Questi test case possono essere applicati sia ai progetti locali che ai progetti Web.
 
-## <a name="command-menu-access"></a>Accesso a comandi di Menu
- Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei test case vengono usati percorsi di menu ambiente di sviluppo integrato.
+## <a name="command-menu-access"></a>Accesso al menu dei comandi
+ Nei test case vengono utilizzati i seguenti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment i percorsi dei menu.
 
 ##### <a name="get-latest-version"></a>Ottenere la versione più recente:
 
-- **File**, **controllo del codice sorgente**, **Leggi ultima versione**.
+- **File**, **controllo del codice sorgente**, **ottenere la versione più recente**.
 
-- **File**, **Leggi ultima versione**.
+- **File**, **ottenere la versione più recente**.
 
-- Menu di scelta rapida **Leggi ultima versione**.
+- Menu di scelta rapida, **ottenere la versione più recente**.
 
-- Ottieni: **File**, **controllo del codice sorgente**, **ottenere**.
+- Get: **file**, **controllo del codice sorgente**, **Get**.
 
 ## <a name="expected-behavior"></a>Comportamento previsto
 
 ##### <a name="get-latest-version"></a>Ottenere la versione più recente:
- Esegue un recupero automatico (senza interfaccia utente) della versione più recente dell'elemento dall'archivio delle versioni.
+ Esegue un recupero invisibile all'utente della versione più recente dell'elemento dall'archivio delle versioni.
 
 ##### <a name="get"></a>Ottieni:
- Consente di visualizzare il **ottenere** nella finestra di dialogo e consente all'utente di apportare modifiche al set di file che verranno recuperate, nonché modificare le opzioni che influiscono sul modo in cui vengono recuperati i file.
+ Visualizza la finestra di dialogo Ottieni e consente all'utente di apportare modifiche al set di file che verrà recuperato, nonché di modificare le opzioni che influiscono sulla modalità di **recupero** dei file.
 
 ## <a name="test-cases"></a>Test case
 
-|Operazione|Passi del test|Per verificare i risultati previsti|
+|Operazione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
-|Ottenere la versione più recente di un file che non esiste in locale|1.  Creare un progetto.<br />2.  Aggiungere un elemento al progetto.<br />3.  Inserire il progetto nel controllo del codice sorgente.<br />4.  Elimina la copia locale dell'elemento.<br />5.  Ottenere la versione più recente dell'elemento (Menu di scelta rapida **Leggi ultima versione**).|File di elemento viene recuperato in locale.|
-|Ottenere un file che non esiste in locale|1.  Creare un progetto.<br />2.  Aggiungere un elemento al progetto.<br />3.  Inserire il progetto nel controllo del codice sorgente.<br />4.  Elimina la copia locale dell'elemento.<br />5.  Ottenere l'elemento (**File**, **controllo del codice sorgente**, **Ottieni** \<elemento >).|File di elemento viene recuperato in locale.|
-|Ottenere un file che è stato estratto in modo esclusivo e modificato localmente|1.  Creare un progetto.<br />2.  Aggiungere un elemento al progetto.<br />3.  Inserire il progetto nel controllo del codice sorgente.<br />4.  Estrae l'elemento del progetto in modo esclusivo.<br />5.  Modificare la copia locale.<br />6.  Ottenere la versione più recente dell'elemento (**File**, **Leggi ultima versione del** \<elemento >). Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />7.  Fare clic su **sostituire** pulsante nella finestra di dialogo di avviso.|**ReResult dal passaggio 6** `:`<br /><br /> Finestra di dialogo di avviso indica che il file è estratto.<br /><br /> **ReResult dal passaggio 7:**<br /><br /> Modifica file locale è sostituita dalla versione originale dall'archivio versioni.<br /><br /> File è di lettura/scrittura.|
-|Ottenere e sostituire i file che è stato estratto, condiviso e modificato localmente|1.  Creare un nuovo progetto.<br />2.  Aggiungere un elemento al progetto.<br />3.  Inserire il progetto nel controllo del codice sorgente.<br />4.  Estrarre l'elemento del progetto come condiviso.<br />5.  Modificare la copia locale.<br />6.  Ottenere la versione più recente dell'elemento (**File**, **Leggi ultima versione del** \<elemento >). Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />7.  Fare clic su **sostituire** nella finestra di dialogo di avviso.|**Risultato del passaggio 6:**<br /><br /> Finestra di dialogo di avviso indica che il file è estratto.<br /><br /> **Risultato del passaggio 7:**<br /><br /> Modifica file locale è sostituita dalla versione originale dall'archivio versioni.<br /><br /> File è di lettura/scrittura.|
-|Ottenere un file che esistono in locale, identica a quella più recente nell'archivio delle versioni|1.  Creare un nuovo progetto.<br />2.  Aggiungere un elemento al progetto.<br />3.  Inserire il progetto nel controllo del codice sorgente.<br />4.  Ottenere l'elemento (**File**, **controllo del codice sorgente**, **Ottieni** \<elemento >).|File locale è invariato.|
-|Ottenere una soluzione con un unico progetto|1.  Creare una soluzione con un unico progetto.<br />2.  Inserire la soluzione nel controllo del codice sorgente.<br />3.  Eliminare tutti i file di progetto in locale.<br />4.  Ottenere la soluzione (**File**, **controllo del codice sorgente**, **Ottieni**).|Tutti i file eliminati vengono ripristinati in locale.|
+|Ottenere la versione più recente di un file che non esiste localmente|1. creare un progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. eliminare la copia locale dell'elemento.<br />5. ottenere la versione più recente dell'elemento (menu di scelta rapida, **ottenere la versione più recente**).|Il file di elemento viene recuperato localmente.|
+|Ottenere un file che non esiste localmente|1. creare un progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. eliminare la copia locale dell'elemento.<br />5. ottenere l'elemento (**file**, **controllo del codice sorgente**, **Get** \<item >).|Il file di elemento viene recuperato localmente.|
+|Ottenere un file che è stato estratto in modo esclusivo e modificato localmente|1. creare un progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. Estrarre l'elemento del progetto in modo esclusivo.<br />5. modificare la copia locale.<br />6. ottenere la versione più recente dell'elemento (**file**, **ottenere la versione più recente di** \<item >). Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />7. fare clic sul pulsante **Sostituisci** nella finestra di dialogo di avviso.|**Risultato del passaggio 6** `:`<br /><br /> La finestra di dialogo di avviso indica che il file è stato estratto.<br /><br /> **Risultato del passaggio 7:**<br /><br /> Il file locale modificato viene sostituito dalla versione originale dall'archivio delle versioni.<br /><br /> Il file è di lettura/scrittura.|
+|Ottenere e sostituire il file estratto, condiviso e modificato localmente|1. creare un nuovo progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. Estrarre l'elemento del progetto come condiviso.<br />5. modificare la copia locale.<br />6. ottenere la versione più recente dell'elemento (**file**, **ottenere la versione più recente di** \<item >). Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />7. fare clic su **Sostituisci** nella finestra di dialogo di avviso.|**Risultato del passaggio 6:**<br /><br /> La finestra di dialogo di avviso indica che il file è stato estratto.<br /><br /> **Risultato del passaggio 7:**<br /><br /> Il file locale modificato viene sostituito dalla versione originale dall'archivio delle versioni.<br /><br /> Il file è di lettura/scrittura.|
+|Ottenere un file esistente localmente, uguale alla versione più recente nell'archivio delle versioni|1. creare un nuovo progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. ottenere l'elemento (**file**, **controllo del codice sorgente**, **Get** \<item >).|Il file locale è invariato.|
+|Ottenere una soluzione con un progetto|1. creare una soluzione con un progetto.<br />2. Inserire la soluzione nel controllo del codice sorgente.<br />3. eliminare tutti i file di progetto in locale.<br />4. ottenere la soluzione (**file**, **controllo del codice sorgente**, **Get**).|Tutti i file eliminati vengono ripristinati localmente.|
 
 ## <a name="see-also"></a>Vedere anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

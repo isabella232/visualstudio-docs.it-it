@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446288"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747060"
 ---
 # <a name="annotating-structs-and-classes"></a>Annotazioni di struct e classi
 
@@ -108,7 +108,7 @@ Note per questo esempio:
 
 - `_Field_z_` è equivalente a `_Null_terminated_`.  `_Field_z_` per il campo nome specifica che il campo nome è una stringa con terminazione null.
 - `_Field_range_` per `bufferSize` specifica che il valore di `bufferSize` deve essere compreso tra 1 e `MaxBufferSize` (inclusi).
-- I risultati finali delle annotazioni `_Struct_size_bytes_` e `_Field_size_` sono equivalenti. Per le strutture o le classi che presentano un layout simile, `_Field_size_` è più facile da leggere e gestire, perché contiene meno riferimenti e calcoli rispetto all'annotazione `_Struct_size_bytes_` equivalente. `_Field_size_` non richiede la conversione alla dimensione in byte. Se le dimensioni in byte sono l'unica opzione, ad esempio per un campo puntatore void, è possibile utilizzare `_Field_size_bytes_`. Se sono presenti sia `_Struct_size_bytes_` che `_Field_size_`, entrambi saranno disponibili per gli strumenti di. Se le due annotazioni non sono consentite, è possibile utilizzare lo strumento.
+- I risultati finali delle annotazioni `_Struct_size_bytes_` e `_Field_size_` sono equivalenti. Per le strutture o le classi che presentano un layout simile, `_Field_size_` è più facile da leggere e gestire, perché contiene meno riferimenti e calcoli rispetto all'annotazione `_Struct_size_bytes_` equivalente. `_Field_size_` non richiede la conversione alle dimensioni in byte. Se le dimensioni in byte sono l'unica opzione, ad esempio per un campo puntatore void, è possibile usare `_Field_size_bytes_`. Se sono presenti sia `_Struct_size_bytes_` che `_Field_size_`, entrambi saranno disponibili per gli strumenti di. Se le due annotazioni non sono consentite, è possibile utilizzare lo strumento.
 
 ## <a name="see-also"></a>Vedere anche
 

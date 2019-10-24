@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b502d1504c5a61ed073ed77eed76dd5f7c139a35
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bca44ea4b8b290089f0c1332cf5c9ba792265ee2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784374"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739785"
 ---
-# <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
-Recupera un flag che specifica se il simbolo relativo al codice Microsoft Intermediate Language (MSIL).
+# <a name="idiasymbolget_msil"></a>IDiaSymbol::get_msil
+Recupera un flag che specifica se il simbolo fa riferimento al codice MSIL (Microsoft Intermediate Language).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_msil ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se il simbolo relativo al codice MSIL; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se il simbolo fa riferimento al codice MSIL. in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

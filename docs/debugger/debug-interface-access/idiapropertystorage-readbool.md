@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d776e37bab189e61d0264f4cbda24f89cb4501ce
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839693"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742932"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Legge `BOOL` valori in un set di proprietà.
@@ -34,17 +34,17 @@ HRESULT ReadBOOL ( 
 #### <a name="parameters"></a>Parametri
  `id`
 
-[in] Identificatore della proprietà da leggere (`PROPID` definito in Wtypes. H come un `ULONG`).
+in Identificatore della proprietà da leggere (`PROPID` è definito in WTypes. h come `ULONG`).
 
  `pValue`
 
-[out] Restituisce il valore della proprietà.
+out Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL`.
 
 ## <a name="remarks"></a>Note
- Per ottenere risultati coerenti, interpretare la `BOOL` valore in modo che siano valori diversi da zero `TRUE` e zero è `FALSE`.
+ Per ottenere risultati coerenti, interpretare il valore `BOOL` in modo che i valori diversi da zero siano `TRUE` e che venga `FALSE` zero.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

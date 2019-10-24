@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b5be9ee787a2d4397d7384116cc9d7ac751d53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec182918cccb42cf4d1c3cfdb3ae816aeef97a73
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838233"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744632"
 ---
-# <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
-Recupera il numero di elementi di frame di dati.
+# <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
+Recupera il numero di elementi dati del frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-[out] Restituisce il numero di elementi di frame di dati.
+out Restituisce il numero di elementi dati del frame.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

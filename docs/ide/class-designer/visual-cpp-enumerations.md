@@ -1,5 +1,5 @@
 ---
-title: Enumerazioni Visual C++ in Progettazione classi
+title: C++Enumerazioni in Progettazione classi
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5df17176839dccf0fbe0c42f164bde6b3e39f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a514d5eb4b7f79e2fd193c79de670b6dd9c14cb5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631130"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747984"
 ---
-# <a name="visual-c-enumerations-in-class-designer"></a>Enumerazioni Visual C++ in Progettazione classi
+# <a name="c-enumerations-in-class-designer"></a>C++enumerazioni in Progettazione classi
 
 **Progettazione classi** supporta i tipi `enum` e `enum class` con ambito in C++. Di seguito è riportato un esempio:
 
@@ -44,5 +44,5 @@ Per altre informazioni sull'uso del tipo `enum`, vedere [Enumerazioni](/cpp/cpp/
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso del codice di Visual C++](working-with-visual-cpp-code.md)
+- [Utilizzo del C++ codice](working-with-visual-cpp-code.md)
 - [Enumerazioni](/cpp/cpp/enumerations-cpp)

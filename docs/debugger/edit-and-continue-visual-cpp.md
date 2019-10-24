@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435851"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737904"
 ---
-# <a name="edit-and-continue-c"></a>Modifica e continuazioneC++()
+# <a name="edit-and-continue-c"></a>Modifica e continuazione (C++)
 È possibile usare modifica e continuazione C++ nei progetti. Per informazioni sulle limitazioni di modifica e continuazione, vedere [modifiche al codice supportate (C++)](../debugger/supported-code-changes-cpp.md) .
 
 Per ulteriori informazioni sui miglioramenti apportati a Visual Studio 2015 Update 3, vedere [ C++ modifica e continuazione in Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).

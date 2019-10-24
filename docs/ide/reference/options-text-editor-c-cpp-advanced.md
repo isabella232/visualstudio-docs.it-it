@@ -14,12 +14,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c5399411998f4a03468f2dedccfd660eaf8de11
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: cbdbadd93eec07c43aba99e40072cb6173e0e83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461826"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747837"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
 
@@ -28,7 +28,7 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
 Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++** e quindi fare clic su **Avanzate**.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="browsingnavigation"></a>Esplorazione/Navigazione
 
@@ -52,7 +52,7 @@ Il database di esplorazione del codice non raccoglierà dati per i file non spec
 
 **Disabilita pulizia implicita**
 
-Il database di esplorazione del codice non pulisce i file impliciti a cui non viene più fatto riferimento. Questa opzione impedisce la rimozione dei file impliciti dal database quando non vengono più usati. Ad esempio, se si aggiunge una direttiva `#include` che riconduce mapi.h a uno dei file di origine, mapi.h verrà trovato e indicizzato. Se in seguito si rimuove l'istruzione #include e al file non viene fatto riferimento altrove, le informazioni su di esso verranno infine rimosse a meno che non sia stata scelta questa opzione. (Vedere l'opzione **Ripeti analisi intervallo soluzione**.) Questa opzione viene ignorata quando si ripete in modo esplicito l'analisi della soluzione.
+Il database di esplorazione del codice non pulisce i file impliciti a cui non viene più fatto riferimento. Questa opzione impedisce la rimozione dei file impliciti dal database quando non vengono più usati. Ad esempio, se si aggiunge una direttiva `#include` che riconduce mapi.h a uno dei file di origine, mapi.h verrà trovato e indicizzato. Se in seguito si rimuove l'istruzione #include e al file non viene fatto riferimento altrove, le informazioni su di esso verranno infine rimosse a meno che non sia stata scelta questa opzione. Vedere l'opzione **Ripeti analisi intervallo soluzione** . Questa opzione viene ignorata quando si ripete l'analisi in modo esplicito della soluzione.
 
 **Disabilita cartelle dipendenze esterne**
 
@@ -64,7 +64,7 @@ Consente di ricreare da zero il database di esplorazione del codice la volta suc
 
 **Ripeti analisi intervallo soluzione**
 
-Viene pianificato un processo 'Ripeti analisi soluzione' per l'intervallo specificato. È necessario specificare tra 0 e 5000 minuti. Il valore predefinito è 60 minuti. Mentre viene ripetuta l'analisi della soluzione, i timestamp dei file vengono controllati per stabilire se un file sia stato modificato all'esterno dell'IDE. (Le modifiche apportate nell'IDE vengono rilevate automaticamente e i file vengono aggiornati.) I file inclusi in modo implicito vengono controllati per stabilire se vi si faccia ancora riferimento.
+Viene pianificato un processo 'Ripeti analisi soluzione' per l'intervallo specificato. È necessario specificare tra 0 e 5000 minuti. Il valore predefinito è 60 minuti. Mentre viene ripetuta l'analisi della soluzione, i timestamp dei file vengono controllati per stabilire se un file sia stato modificato all'esterno dell'IDE. Le modifiche apportate nell'IDE vengono rilevate automaticamente e i file vengono aggiornati. I file inclusi in modo implicito vengono controllati per determinare se sono sempre presenti riferimenti.
 
 ## <a name="diagnostic-logging"></a>Registrazione diagnostica
 

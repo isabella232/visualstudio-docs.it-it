@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Modificare un valore di registro | Microsoft Docs'
+title: 'Procedura: modificare un valore di registro | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3ccaa124b64ad462f633e760695f931afaae531
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388414"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733410"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedura: Modificare un valore di registro (C#, C++, Visual Basic, F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedura: modificare un valore di registro (C#, C++, Visual Basic, F#)
 
 La finestra Registri è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo **Debug**.
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211122"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730263"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto di C# un progetto di o Visual Basic in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio distribuita in un computer diverso, installare ed eseguire Remote Tools nel computer in cui è stata distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
@@ -102,7 +102,7 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 
 13. Se richiesto, immettere le credenziali di rete per la connessione al computer remoto.
 
-     Le credenziali necessarie variano a seconda della configurazione di sicurezza della rete. Ad esempio, in un computer di dominio è possibile immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido <strong>MJO-DL\name@something.com</strong>, ad esempio, insieme alla password corretta.
+     Le credenziali necessarie variano a seconda della configurazione di sicurezza della rete. Ad esempio, in un computer di dominio è possibile immettere il nome di dominio e la password. In un computer non di dominio, è possibile immettere il nome del computer e un nome di account utente valido, ad esempio <strong>MJO-DL\name@something.com</strong>, insieme alla password corretta.
 
      La finestra principale dell'applicazione WPF apparirà aperta nel computer remoto.
 

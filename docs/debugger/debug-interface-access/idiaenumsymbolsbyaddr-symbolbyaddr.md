@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8620dcf7367914e25411fad7ac54a34a5bac54c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0891cc5eb244b781b69e231d4282b92aa064b91
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743839"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-Posiziona l'enumeratore eseguendo una ricerca per offset e numero di sezione dell'immagine.
+Posiziona l'enumeratore eseguendo una ricerca in base al numero di sezione dell'immagine e all'offset.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,15 +35,15 @@ HRESULT symbolByAddr ( 
 #### <a name="parameters"></a>Parametri
  isect
 
-[in] Numero di sezione dell'immagine.
+in Numero di sezione dell'immagine.
 
  offsect
 
-[in] Offset di sezione.
+in Offset nella sezione.
 
  ppsymbol
 
-[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo trovato.
+out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo trovato.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il simbolo non è stato trovato. In caso contrario, verrà restituito un codice di errore.

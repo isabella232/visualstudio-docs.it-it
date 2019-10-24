@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34954cd32b350a7c5f9c176deffd9943f8e05100
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48595dda70560f555533a1857f73db4d7bd20a86
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554196"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744979"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 Recupera il nome del file per l'ultimo errore di caricamento.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_lastError (
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-[out] Restituisce una stringa che contiene il nome del file con estensione pdb associato con l'ultimo errore di caricamento.
+out Restituisce una stringa che contiene il nome del file con estensione pdb associato all'ultimo errore di caricamento.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce l'ultimo codice di errore causato da un'operazione di caricamento. Restituisce `E_INVALIDARG` se il `pRetVal` parametro è `NULL`.

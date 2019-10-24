@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f861d5cf8be8fedec6d32158aa735b8dfd826587
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1f08cd539d3042ff0715a5c84445e4cc40214a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786331"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740545"
 ---
-# <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Recupera un flag che specifica se la funzione contiene qualsiasi gestione delle eccezioni non gestite in stile C++ (ad esempio, un blocco try/catch).
+# <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
+Recupera un flag che specifica se la funzione contiene una gestione delle eccezioni C++di tipo non gestito, ad esempio un blocco try/catch.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,19 +33,19 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[out] Restituisce `TRUE` se la funzione è presenti C++-applicare uno stile eccezione gestisce; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la funzione ha una C++gestione delle eccezioni in stile. in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

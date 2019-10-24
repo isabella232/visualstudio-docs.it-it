@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede156a5416ca065a5271ae87abfcfd621f02b26
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1709120dfa8e115f4b14a4ee4e2d1c7ffb293329
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837992"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741212"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
-Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni sul numeri di riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, in questo simbolo all'interno dell'intervallo di indirizzi specificato.
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'intervallo di indirizzi specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +34,19 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>Parametri
  `isect`
 
-[in] Specifica il componente di sezione dell'indirizzo.
+in Specifica il componente della sezione dell'indirizzo.
 
  `offset`
 
-[in] Specifica il componente offset dell'indirizzo.
+in Specifica il componente di offset dell'indirizzo.
 
  `length`
 
-[in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query viene usata.
+in Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

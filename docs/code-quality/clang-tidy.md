@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430d0e271f83332f7163c9c0c947f96756ca7a7d
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72165192"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745985"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Uso di Clang-tidy in Visual Studio
 
@@ -28,23 +28,23 @@ Clang-tidy viene eseguito dopo la compilazione riuscita. potrebbe essere necessa
 
 ## <a name="msbuild"></a>MSBuild
 
-È possibile configurare Clang-tidy affinché venga eseguito come parte di un'analisi del codice e compilata nella pagina**generale** dell' **analisi codice** >  del progetto finestra Proprietà. Le opzioni per la configurazione dello strumento sono disponibili nel sottomenu Clang-tidy.
+È possibile configurare Clang-tidy affinché venga eseguito come parte dell'analisi del codice e compilata nella pagina**generale** dell' **analisi codice**  >  nel finestra proprietà del progetto. Le opzioni per la configurazione dello strumento sono disponibili nel sottomenu Clang-tidy.
 
-Per altre informazioni, vedere [Procedura: Impostare le proprietà di analisi del codiceC++ per C/Projects @ no__t-1.
+Per altre informazioni, vedere [procedura: impostare le proprietà di analisi del codice perC++ C/progetti](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="cmake"></a>CMake
 
-Nei progetti CMake è possibile configurare i controlli Clang-tidy entro `CMakeSettings.json`. Una volta aperto, fare clic su "modifica JSON" nell'angolo superiore destro dell'editor delle impostazioni del progetto CMake. Sono state riconosciute le chiavi seguenti:
+Nei progetti CMake è possibile configurare i controlli Clang-tidy all'interno `CMakeSettings.json`. Una volta aperto, fare clic su "modifica JSON" nell'angolo superiore destro dell'editor delle impostazioni del progetto CMake. Sono state riconosciute le chiavi seguenti:
 
 - `enableMicrosoftCodeAnalysis`: Abilita l'analisi del codice Microsoft
-- `enableClangTidyCodeAnalysis`: Abilita l'analisi di Clang-tidy
-- `clangTidyChecks`: Configurazione Clang-tidy, specificata come elenco delimitato da virgole, ovvero controlli da abilitare o disabilitare
+- `enableClangTidyCodeAnalysis`: Abilita l'analisi in ordine Clang
+- `clangTidyChecks`: configurazione Clang-tidy, specificata come elenco delimitato da virgole, ovvero controlli da abilitare o disabilitare
 
 Se non viene specificata alcuna opzione "Enable", Visual Studio selezionerà lo strumento di analisi corrispondente al set di strumenti della piattaforma usato.
 
 ## <a name="warning-display"></a>Visualizzazione avviso
 
-Le esecuzioni Clang-tidy generano avvisi visualizzati nel Elenco errori e come controllo ortografia durante nell'editor sotto le sezioni pertinenti di codice. Usare la colonna "Category" nel Elenco errori per ordinare e organizzare gli avvisi Clang-tidy. È possibile configurare gli avvisi in-Editor attivando l'impostazione "Disabilita controllo ortografia durante analisi codice" in **strumenti** > **Opzioni**.
+Le esecuzioni Clang-tidy generano avvisi visualizzati nel Elenco errori e come controllo ortografia durante nell'editor sotto le sezioni pertinenti di codice. Usare la colonna "Category" nel Elenco errori per ordinare e organizzare gli avvisi Clang-tidy. È possibile configurare gli avvisi in-Editor attivando l'impostazione "Disabilita controllo ortografia durante analisi codice" in **strumenti**  > **Opzioni**.
 
 ## <a name="clang-tidy-configuration"></a>Configurazione Clang-tidy
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b7819c90804933795c220c4d47f288d29abfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b66729192c9c976ecd226ab21aad73b94bf9f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838298"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744722"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
-Recupera un determinato numero di flussi di debug nella sequenza di enumerazione.
+Recupera un numero specificato di flussi di debug nella sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di flussi di debug nell'enumeratore deve essere recuperato.
+in Numero di flussi di debug nell'enumeratore da recuperare.
 
  rgelt
 
-[out] Restituisce una matrice di [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) crea un flusso in corso il recupero di oggetti che rappresenta il debug.
+out Restituisce una matrice di oggetti [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) che rappresenta i flussi di debug da recuperare.
 
  pceltFetched
 
-[out] Restituisce il numero di flussi debug restituiti.
+out Restituisce il numero di flussi di debug restituiti.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non esistono Nessun più flussi. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri flussi. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

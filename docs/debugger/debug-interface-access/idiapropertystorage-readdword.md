@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadDWORD | Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadDWORD | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4709a218f6586320e96f79ea8a9f423f537c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1764ec83a69dcc5daff267767594473bf690b341
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839654"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742902"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 Legge `DWORD` valori in un set di proprietà.
@@ -34,17 +34,17 @@ HRESULT ReadDWORD ( 
 #### <a name="parameters"></a>Parametri
  `id`
 
-[in] Identificatore della proprietà da leggere (`PROPID` definito in Wtypes. H come un `ULONG`).
+in Identificatore della proprietà da leggere (`PROPID` è definito in WTypes. h come `ULONG`).
 
  `pValue`
 
-[out] Restituisce il valore della proprietà.
+out Restituisce il valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `DWORD`.
 
 ## <a name="remarks"></a>Note
- Oggetto `DWORD` è definito da Windows come un intero senza segno a 32 bit.
+ Un `DWORD` viene definito da Windows come Unsigned Integer a 32 bit.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

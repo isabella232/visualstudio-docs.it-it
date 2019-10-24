@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcbe9e97eb429fa7427ae0e3da4dce77281b40a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae0bab8ec0561b65c22890c0e0bbfeb461364b5c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839277"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742060"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
-Recupera un tipo di simbolo specificato che contiene, o è più vicino, l'indirizzo specificati.
+Recupera un tipo di simbolo specificato che contiene o è più vicino a un indirizzo specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,19 +36,19 @@ HRESULT findSymbolByAddr ( 
 #### <a name="parameters"></a>Parametri
  `isect`
 
-[in] Specifica il componente di sezione dell'indirizzo.
+in Specifica il componente della sezione dell'indirizzo.
 
  `offset`
 
-[in] Specifica il componente offset dell'indirizzo.
+in Specifica il componente di offset dell'indirizzo.
 
  `symtag`
 
-[in] Tipo di simbolo da trovare. I valori sono ricavati dal [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione.
+in Tipo di simbolo da trovare. I valori vengono ricavati dall'enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperare l'oggetto che rappresenta il simbolo.
+out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo recuperato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bd5a24a136bb9c04366449a91d825ddbecff2957
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836902"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740316"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-Recupera un flag che indica se il simbolo corrisponde alla *simbolo definizione intervallo* per il componente di tag di una variabile puntatore nel codice compilato per un tasto di scelta rapida AMP C++. Simbolo definizione intervallo è il percorso di una variabile per un intervallo di indirizzi.
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+Recupera un flag che indica se il simbolo corrisponde al *simbolo dell'intervallo di definizioni* per il componente tag di una variabile puntatore nel codice compilato per C++ un acceleratore amp. Il simbolo dell'intervallo di definizioni è il percorso di una variabile per un intervallo di indirizzi.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[out] Un puntatore a un `BOOL` che indica se il simbolo corrisponde al simbolo di intervallo di definizione.
+out Puntatore a un `BOOL` che indica se il simbolo corrisponde al simbolo dell'intervallo di definizioni.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

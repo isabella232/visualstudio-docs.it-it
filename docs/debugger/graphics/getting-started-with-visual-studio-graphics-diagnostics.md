@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva a diagnostica della grafica | Microsoft Docs
+title: Introduzione alla diagnostica della grafica | Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
 ms.topic: conceptual
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388689"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735700"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica grafica di Visual Studio
 In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, quindi si acquisisce un frame da un'app Direct3D e lo si esamina in Analizzatore grafica.
 
 ## <a name="requirements"></a>Requisiti
- Per usare diagnostica della grafica in Visual Studio, è necessario usare Visual Studio Enterprise, Visual Studio Professional o Visual Studio Community.  Le altre edizioni, tra cui Visual Studio Code, non contengono questa funzionalità.
+ Per usare Diagnostica della grafica in Visual Studio, è necessario usare Visual Studio Enterprise, Visual Studio Professional o Visual Studio community.  Le altre edizioni, incluse le Visual Studio Code, non contengono questa funzionalità.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -33,9 +33,9 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Per installare Strumenti di grafica per Windows 10
 
-1. Nella ricerca, digitare **App e funzionalità** e quindi aprire il **App e funzionalità** impostazioni.
+1. In Cerca digitare **app e funzionalità** e quindi aprire le **app &** le impostazioni delle funzionalità.
 
-2. Sul lato destro del **App e funzionalità** finestra di dialogo, scegliere **Gestisci funzionalità facoltative** (sotto **App e funzionalità**).
+2. Sul lato destro della finestra di dialogo **app & funzionalità** scegliere **Gestisci funzionalità facoltative** (in **app & funzionalità**).
 
    Viene visualizzata la finestra di dialogo **Gestisci funzionalità facoltative**.
 
@@ -52,15 +52,15 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
  Ora che si dispone di tutto il necessario, è possibile iniziare a usare Diagnostica della grafica eseguendo le operazioni descritte nei passaggi seguenti.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Creare un'app Direct3D
- Se si ha già la propria app Direct3D per esplorare diagnostica della grafica con, benissimo. In caso contrario, usare uno dei seguenti:
+ Se si dispone già di un'app Direct3D per esplorare Diagnostica della grafica con, ottimo! In caso contrario, usare uno dei seguenti elementi:
 
-- Il **App di DirectX 11 (Windows universale)** oppure **DirectX 12 App (Windows universale)** modelli di progetto per Windows 10.
+- Modelli di progetto **app DirectX 11 (Windows universale)** o **app DirectX 12 (Windows universale)** per Windows 10.
 - [Esempio Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) per Windows 10.
 
   Verificare che sia possibile compilare l'applicazione prima di andare avanti.
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Avviare una sessione di Diagnostica grafica
- A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. In Visual Studio, nel menu principale, scegliere **eseguire il Debug, grafica, Avvia debug grafica**, oppure premere **ALT+F5**. L'app viene avviata in Diagnostica grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.
+ A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. In Visual Studio scegliere **debug, grafica, Avvia debug grafica**dal menu principale oppure premere **ALT + F5**. L'app viene avviata in Diagnostica grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.
 
 > [!IMPORTANT]
 > Se si esegue l'app in Windows 10 e non si è ancora installata la funzionalità facoltativa Strumenti di grafica, verrà richiesto di farlo ora. La funzionalità deve essere installata per poter usare Diagnostica della grafica in Windows 10.
@@ -70,7 +70,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
 #### <a name="to-capture-single-frames"></a>Per acquisire singoli frame
 
-- In Visual Studio scegliere il pulsante nella barra degli strumenti **Acquisisci frame** nella barra degli strumenti di grafica o nella finestra della sessione di diagnostica. Oppure, se l'app ha lo stato attivo, premere il **Stamp** sulla tastiera.
+- In Visual Studio scegliere il pulsante nella barra degli strumenti **Acquisisci frame** nella barra degli strumenti di grafica o nella finestra della sessione di diagnostica. In alternativa, se l'app ha lo stato attivo, è sufficiente premere il tasto **Stamp** sulla tastiera.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>Per acquisire una sequenza di frame
 
@@ -85,7 +85,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 
  Se è stato selezionato frame errato nella finestra della sessione di diagnostica oppure si vuole esaminare un frame diverso, è possibile selezionare un altro da Analizzatore grafica. Nella scheda **Destinazione rendering** della finestra del log di grafica, sotto l'immagine della destinazione di rendering, espandere l'**Elenco frame** e quindi scegliere un altro frame da esaminare.
 
- Per altre informazioni su come usare gli strumenti di Analizzatore grafica tra loro, vedere la [esempi](graphics-diagnostics-examples.md).
+ Per altre informazioni su come usare gli strumenti di analizzatore grafica insieme, vedere gli [esempi](graphics-diagnostics-examples.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Grafica Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

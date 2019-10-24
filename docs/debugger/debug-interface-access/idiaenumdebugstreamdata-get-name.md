@@ -1,5 +1,5 @@
 ---
-title: Get_name | Microsoft Docs
+title: 'IDiaEnumDebugStreamData:: get_Name | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d92b7873395c51491b9164f27d62eec8020a0f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edabdf0b24a0aa7cee6e021d86719621e4e7eac3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838467"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744868"
 ---
-# <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
+# <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 Recupera il nome di un flusso di dati di debug.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_Name ( 
 #### <a name="parameters"></a>Parametri
  pRetVal
 
-[out] Restituisce il nome di un flusso di dati di debug.
+out Restituisce il nome di un flusso di dati di debug.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

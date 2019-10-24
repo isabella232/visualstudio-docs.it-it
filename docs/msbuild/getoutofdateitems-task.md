@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), GetOutOfDateItems task
-- GetOutOfDateItems task (MSBuild (Visual C++))
+- MSBuild (C++), GetOutOfDateItems task
+- GetOutOfDateItems task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: e3393dd7e81fa98c49dd09a32457171286f88f18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977490"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747313"
 ---
 # <a name="getoutofdateitems-task"></a>Attività GetOutOfDateItems
 
@@ -32,13 +32,13 @@ Attività di supporto che legge i tlog precedenti, scrive nuovi tlog e restituis
 
 Nella tabella seguente vengono descritti i parametri dell'attività **GetOutOfDateItems**.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Parametro **bool** facoltativo.|
 |**CommandMetadataName**|Parametro **string** facoltativo.|
 |**DependenciesMetadataName**|Parametro **string** facoltativo.|
 |**HasInterdependencies**|Parametro di output **bool** facoltativo.|
-|**OutOfDateSources**|Parametro di output **ITaskItem[]** facoltativo.|
+|**OutOfDateSources**|Parametro di output facoltativo **ITaskItem[]** .|
 |**OutputsMetadataName**|Parametro **string** obbligatorio.|
 |**Sources**|Parametro **ITaskItem[]** facoltativo.|
 |**TLogDirectory**|Parametro **string** obbligatorio.|
@@ -46,4 +46,4 @@ Nella tabella seguente vengono descritti i parametri dell'attività **GetOutOfDa
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+[Riferimento alle attività](../msbuild/msbuild-task-reference.md)

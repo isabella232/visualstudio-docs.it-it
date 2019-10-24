@@ -1,5 +1,5 @@
 ---
-title: Oggetto di configurazione di progetto | Microsoft Docs
+title: Oggetto configurazione progetto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9460a30e63a7d2c282bf537517016dfa5f790a1e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e3321b70b51d194c67f1deee8ed33e240762b16b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328427"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725830"
 ---
 # <a name="project-configuration-object"></a>Oggetto di configurazione del progetto
-L'oggetto di configurazione di progetto gestisce la visualizzazione delle informazioni di configurazione per l'interfaccia utente.
+L'oggetto configurazione progetto gestisce la visualizzazione delle informazioni di configurazione nell'interfaccia utente.
 
- ![Configurazione del progetto di Visual Studio](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg") pagine delle proprietà di configurazione del progetto
+ ![Configurazione del progetto di Visual Studio](../../extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg") Pagine delle proprietà di configurazione del progetto
 
- Il Provider di configurazione di progetto gestisce le configurazioni di progetto. L'ambiente e altri pacchetti, per accedere e recuperare informazioni sulle configurazioni di un progetto, chiamare le interfacce collegate all'oggetto Provider di configurazione di progetto.
-
-> [!NOTE]
-> È possibile creare o modificare i file di configurazione di soluzione a livello di codice. È necessario usare `DTE.SolutionBuilder`. Visualizzare [configurazione della soluzione](../../extensibility/internals/solution-configuration.md) per altre informazioni.
-
- Per pubblicare un nome visualizzato da usare nella configurazione dell'interfaccia utente, è necessario implementare il progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. L'ambiente chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, che restituisce un elenco di `IVsCfg` puntatori che è possibile usare per ottenere i nomi visualizzati per le informazioni di configurazione e la piattaforma da elencare nell'interfaccia utente dell'ambiente. La configurazione attiva e la piattaforma dipendono dalla configurazione del progetto nella configurazione soluzione attiva. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> metodo può essere utilizzato per recuperare la configurazione di progetto attivo.
-
- Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> oggetto facoltativamente può essere implementato nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> dell'oggetto con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper> oggetto per consentire di recuperare un `IVsProjectCfg2` oggetto basato sul nome di configurazione del progetto canonico.
-
- Un altro modo per fornire accesso alle configurazioni di progetto l'ambiente e altri progetti sia per i progetti fornire un'implementazione del `IVsCfgProvider2::GetCfgs` per restituire uno o più oggetti di configurazione. I progetti possono anche implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, che eredita da `IVsProjectCfg` e quindi da `IVsCfg`, per fornire informazioni specifiche della configurazione. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> supporta le piattaforme e le funzionalità per l'aggiunta, eliminazione e ridenominazione di configurazioni di progetto.
+ Il provider di configurazione del progetto gestisce le configurazioni del progetto. L'ambiente e altri pacchetti, per ottenere l'accesso e recuperare informazioni sulle configurazioni di un progetto, chiamano le interfacce collegate all'oggetto provider di configurazione del progetto.
 
 > [!NOTE]
-> Poiché Visual Studio non è più limitato a due tipi di configurazione, il codice che elabora le configurazioni non deve essere scritta con presupposti sul numero di configurazioni, né deve essere scritto partendo dal presupposto che un progetto che ha un unico configurazione è necessariamente Debug o vendita al dettaglio. In questo modo l'utilizzo di <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> obsoleto.
+> Non è possibile creare o modificare i file di configurazione della soluzione a livello di codice. È necessario utilizzare `DTE.SolutionBuilder`. Per ulteriori informazioni, vedere [configurazione della soluzione](../../extensibility/internals/solution-configuration.md) .
 
- La chiamata `QueryInterface` sull'oggetto restituito da`IVsGetCfgProvider::GetCfgProvider` recupera `IVsCfgProvider2`. Se `IVsGetCfgProvider` non viene trovato chiamando `QueryInterface` nel `IVsProject3` oggetto progetto, è possibile accedere all'oggetto provider di configurazione chiamando `QueryInterface` sull'oggetto gerarchia radice browser per l'oggetto restituito per `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, o tramite un puntatore al provider di configurazione restituito per `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.
+ Per pubblicare un nome visualizzato da usare nell'interfaccia utente di configurazione, il progetto deve implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. L'ambiente chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, che restituisce un elenco di puntatori `IVsCfg` che è possibile usare per ottenere i nomi visualizzati per le informazioni di configurazione e piattaforma da elencare nell'interfaccia utente dell'ambiente. La configurazione e la piattaforma attive sono determinate dalla configurazione del progetto archiviata nella configurazione della soluzione attiva. Il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> può essere utilizzato per recuperare la configurazione del progetto attivo.
 
- `IVsProjectCfg2` principalmente fornisce l'accesso per compilare, eseguire il debug e distribuzione di oggetti di gestione e consente ai progetti la libertà necessaria per raggruppare gli output. I metodi della `IVsProjectCfg` e `IVsProjectCfg2` può essere utilizzato per implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> per gestire il processo di compilazione e <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> puntatori per i gruppi di output di una configurazione.
+ L'oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> può facoltativamente essere implementato nell'oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> con l'oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProviderEventsHelper> per consentire il recupero di un oggetto `IVsProjectCfg2` basato sul nome della configurazione del progetto canonico.
 
- Il progetto deve restituire lo stesso numero di gruppi per ogni configurazione che supporta anche se il numero degli output contenute all'interno di un gruppo può variare da una configurazione alla configurazione. I gruppi di devono anche avere le stesse informazioni di identificatore (nome canonico, nome visualizzato e le informazioni sui gruppi) dalla configurazione alla configurazione all'interno di un progetto. Per altre informazioni, vedere [configurazione del progetto per l'Output](../../extensibility/internals/project-configuration-for-output.md).
+ Un altro modo per fornire all'ambiente e altri progetti con accesso alle configurazioni di progetto è che i progetti forniscano un'implementazione del metodo `IVsCfgProvider2::GetCfgs` per restituire uno o più oggetti di configurazione. I progetti possono anche implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, che eredita da `IVsProjectCfg` e quindi da `IVsCfg`, per fornire informazioni specifiche della configurazione. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> supporta le piattaforme e le funzionalità per l'aggiunta, l'eliminazione e la ridenominazione delle configurazioni di progetto.
 
- Per abilitare il debug, è consigliabile implementare le configurazioni <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>. `IVsDebuggableProjectCfg` è un'interfaccia opzionale implementata dai progetti per consentire al debugger di avviare una configurazione e viene implementata nell'oggetto di configurazione con `IVsCfg` e `IVsProjectCfg`. L'ambiente viene chiamato quando l'utente decide di avviare il debugger premendo F5.
+> [!NOTE]
+> Poiché Visual Studio non è più limitato a due tipi di configurazione, il codice che elabora le configurazioni non deve essere scritto con presupposti sul numero di configurazioni, né deve essere scritto con il presupposto che un progetto con un solo la configurazione è necessariamente debug o al dettaglio. In questo modo l'uso di <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> obsoleti.
 
- `ISpecifyPropertyPages` e `IDispatch` vengono utilizzati in combinazione con le pagine delle proprietà per recuperare e visualizzare all'utente informazioni dipendenti dalla configurazione. Per altre informazioni, vedere [pagine delle proprietà](../../extensibility/internals/property-pages.md).
+ La chiamata di `QueryInterface` sull'oggetto restituito da `IVsGetCfgProvider::GetCfgProvider` recupera `IVsCfgProvider2`. Se `IVsGetCfgProvider` non viene trovato chiamando `QueryInterface` nell'oggetto `IVsProject3` Project, è possibile accedere all'oggetto provider di configurazione chiamando `QueryInterface` nell'oggetto del browser radice della gerarchia per l'oggetto restituito per `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)` o tramite un puntatore alla configurazione. provider restituito per `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.
+
+ `IVsProjectCfg2` fornisce principalmente l'accesso agli oggetti di compilazione, debug e gestione della distribuzione e consente ai progetti di raggruppare gli output. I metodi di `IVsProjectCfg` e di `IVsProjectCfg2` possono essere utilizzati per implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> per gestire il processo di compilazione e <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> i puntatori per i gruppi di output di una configurazione.
+
+ Il progetto deve restituire lo stesso numero di gruppi per ogni configurazione supportata anche se il numero di output contenuti in un gruppo può variare dalla configurazione alla configurazione. I gruppi devono avere anche le stesse informazioni sull'identificatore (nome canonico, nome visualizzato e informazioni sul gruppo) dalla configurazione alla configurazione all'interno di un progetto. Per altre informazioni, vedere [configurazione di progetto per l'output](../../extensibility/internals/project-configuration-for-output.md).
+
+ Per abilitare il debug, le configurazioni devono implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>. `IVsDebuggableProjectCfg` è un'interfaccia facoltativa implementata dai progetti per consentire al debugger di avviare una configurazione e viene implementata nell'oggetto di configurazione con `IVsCfg` e `IVsProjectCfg`. L'ambiente lo chiama quando l'utente sceglie di avviare il debugger premendo F5.
+
+ `ISpecifyPropertyPages` e `IDispatch` vengono utilizzati in combinazione con le pagine delle proprietà per recuperare e visualizzare all'utente le informazioni dipendenti dalla configurazione. Per ulteriori informazioni, vedere [pagine delle proprietà](../../extensibility/internals/property-pages.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)

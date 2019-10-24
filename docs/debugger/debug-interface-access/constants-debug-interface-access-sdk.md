@@ -13,23 +13,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b10ab87f056bc153ec41c125b0e01ddefa139b80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555078"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745409"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Costanti (Debug Interface Access SDK)
-Queste costanti di stringa possono essere utilizzate per identificare diverse sezioni di un file di database (PDB) di debug programma tramite il DIA SDK.
+Queste costanti di stringa possono essere utilizzate per identificare varie sezioni di un file di database di debug del programma (PDB) tramite il DIA SDK.
 
 ## <a name="constants"></a>Costanti
-Di seguito viene dichiarati come macro C/C++.
+Gli elementi seguenti sono dichiaratiC++ come C/macro.
 
 |Macro|Value|
 |-----------|-----------|
-|`DiaTable_Symbols`|L "Simboli"|
-|`DiaTable_Sections`|L "Sezioni"|
+|`DiaTable_Symbols`|L "simboli"|
+|`DiaTable_Sections`|L "sezioni"|
 |`DiaTable_SrcFiles`|L"SourceFiles"|
 |`DiaTable_LineNums`|L "LineNumbers"|
 |`DiaTable_SegMap`|L"SegmentMap"|
@@ -38,7 +38,7 @@ Di seguito viene dichiarati come macro C/C++.
 |`DiaTable_FrameData`|L"FrameData"|
 
 ## <a name="example"></a>Esempio
-Di seguito è riportato un esempio con uno di questi simboli:
+Di seguito è riportato un esempio di utilizzo di uno di questi simboli:
 
 ```C++
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
@@ -53,10 +53,10 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2.h
+Intestazione: dia2. h
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [Reference](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25a4b9b7d07b74047890c4ba56583cc09a394368
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5807eb6b695e140350696436a8bba351687f4a24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353518"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720835"
 ---
 # <a name="sccqueryinfo-function"></a>Funzione SccQueryInfo
-Questa funzione Ottiene informazioni sullo stato per un set di file selezionati nel controllo del codice sorgente.
+Questa funzione ottiene le informazioni sullo stato per un set di file selezionati nel controllo del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,44 +36,44 @@ SCCRTN SccQueryInfo(
 #### <a name="parameters"></a>Parametri
  pvContext
 
-[in] La struttura del contesto plug-in del controllo origine.
+in Struttura del contesto del plug-in del controllo del codice sorgente.
 
- nFiles
+ nFile
 
-[in] Numero di file specificato per il `lpFileNames` matrice e la lunghezza del `lpStatus` matrice.
+in Numero di file specificati nella matrice di `lpFileNames` e lunghezza della matrice di `lpStatus`.
 
  lpFileNames
 
-[in] Matrice di nomi di file sottoposti a query.
+in Matrice di nomi di file su cui eseguire la query.
 
  lpStatus
 
-[in, out] Matrice in cui il controllo del codice sorgente del plug-in restituisce i flag di stato per ogni file. Per altre informazioni, vedere [File di codice di stato](../extensibility/file-status-code-enumerator.md).
+[in, out] Matrice in cui il plug-in del controllo del codice sorgente restituisce i flag di stato per ogni file. Per ulteriori informazioni, vedere [codice di stato del file](../extensibility/file-status-code-enumerator.md).
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
 
 |Value|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Query completata.|
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente causato da problemi di contesa o di rete. È consigliabile un nuovo tentativo.|
+|SCC_OK|La query è stata completata.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente causato da problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|
 |SCC_E_PROJNOTOPEN|Il progetto non è aperto nel controllo del codice sorgente.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Note
- Se `lpFileName` è una stringa vuota, non sono attualmente disponibili informazioni di stato da aggiornare. In caso contrario, è il nome e percorso completo del file per cui le informazioni sullo stato sia stato modificato.
+ Se `lpFileName` è una stringa vuota, non sono attualmente disponibili informazioni sullo stato da aggiornare. In caso contrario, è il nome del percorso completo del file per il quale potrebbero essere state modificate le informazioni sullo stato.
 
- Alla matrice restituita può essere una maschera di bit di `SCC_STATUS_xxxx` bits. Per altre informazioni, vedere [File di codice di stato](../extensibility/file-status-code-enumerator.md). Un sistema di controllo di origine potrebbe non supportare tutti i tipi di bit. Ad esempio, se `SCC_STATUS_OUTOFDATE` non è disponibile, ma non viene impostato il bit.
+ La matrice restituita può essere una maschera di bit di `SCC_STATUS_xxxx` bit. Per ulteriori informazioni, vedere [codice di stato del file](../extensibility/file-status-code-enumerator.md). Un sistema di controllo del codice sorgente potrebbe non supportare tutti i tipi di bit. Se, ad esempio, `SCC_STATUS_OUTOFDATE` non è disponibile, il bit non è impostato.
 
- Quando si usa questa funzione per estrarre i file, tenere presente quanto segue `MSSCCI` i requisiti di stato:
+ Quando si usa questa funzione per estrarre i file, tenere presente i seguenti requisiti di stato `MSSCCI`:
 
 - `SCC_STATUS_OUTBYUSER` viene impostato quando l'utente corrente ha estratto il file.
 
-- `SCC_STATUS_CHECKEDOUT` non può essere impostata a meno che non `SCC_STATUS_OUTBYUSER` è impostata.
+- non è possibile impostare `SCC_STATUS_CHECKEDOUT` a meno che non sia impostato `SCC_STATUS_OUTBYUSER`.
 
-- `SCC_STATUS_CHECKEDOUT` viene impostato solo quando il file viene estratto nella directory di lavoro designato.
+- `SCC_STATUS_CHECKEDOUT` viene impostato solo quando il file viene estratto nella directory di lavoro designata.
 
-- Se il file è stato estratto dall'utente corrente in una directory diversa dalla directory di lavoro `SCC_STATUS_OUTBYUSER` è impostata ma `SCC_STATUS_CHECKEDOUT` non.
+- Se il file viene estratto dall'utente corrente in una directory diversa dalla directory di lavoro, viene impostato `SCC_STATUS_OUTBYUSER` ma `SCC_STATUS_CHECKEDOUT` non lo è.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

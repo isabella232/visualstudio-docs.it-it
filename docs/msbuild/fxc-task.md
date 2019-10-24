@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), FXC task
-- FXC task (MSBuild (Visual C++))
+- MSBuild (C++), FXC task
+- FXC task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931485"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747330"
 ---
 # <a name="fxc-task"></a>Attività FXC
 
@@ -32,7 +32,7 @@ Usare i compilatori di shader HLSL nel processo di compilazione.
 
 Nella tabella seguente vengono descritti i parametri dell'attività **FXC**.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parametro **string[]** facoltativo.<br/><br/>Specifica una o più directory da aggiungere al percorso di inclusione. Usare il punto e virgola (;) come delimitatore per più percorsi.<br/><br/>Usare `/I[path]`.|
 |**AdditionalOptions**|Parametro **string** facoltativo.|
@@ -53,7 +53,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **FXC**.
 |**SetRootSignature**|Parametro **string** facoltativo.<br/><br/>Associa la firma radice al bytecode dello shader. Disponibile per Modello shader 5.0 e versioni successive.<br/><br/>Usare `/setrootsignature`.|
 |**ShaderModel**|Parametro **string** facoltativo.<br/><br/>Specifica il modello di shader. Alcuni tipi di shader possono essere usati solo con modelli di shader recenti.<br/><br/>Usare `/T [type]_[model]`.|
 |**ShaderType**|Parametro **string** facoltativo.<br/><br/>Specifica il tipo di shader.<br/><br/>Usare `/T [type]_[model]`.<br/><br/>**Effect**, usare `fx`.<br/>**Vertex**, usare `vs`.<br/>**Pixel**, usare `ps`.<br/>**Geometry**, usare `gs`.<br/>**Hull**, usare `hs`.<br/>**Domain**, usare `ds`.<br/>**Compute**, usare `cs`.<br/>**Library**, usare `lib`.<br/>**RootSignature**, genera oggetto firma radice.|
-|**Origine**|Parametro **ITaskItem** obbligatorio.|
+|**Source**|Parametro **ITaskItem** obbligatorio.|
 |**SuppressStartupBanner**|Parametro **bool** facoltativo.<br/><br/>Evita la visualizzazione del messaggio di avvio e dei messaggi informativi.<br/><br/>Usare `/nologo`.|
 |**TrackerLogDirectory**|Parametro **string** facoltativo.|
 |**TreatWarningAsError**|Parametro **bool** facoltativo.<br/><br/>Considera tutti gli avvisi del compilatore come errori.<br/><br/>Per un nuovo progetto, potrebbe essere preferibile usare `/WX` in tutte le compilazioni. La risoluzione degli avvisi garantirà il minor numero possibile di errori del codice di difficile individuazione.|
@@ -61,4 +61,4 @@ Nella tabella seguente vengono descritti i parametri dell'attività **FXC**.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+[Riferimento alle attività](../msbuild/msbuild-task-reference.md)
