@@ -1,5 +1,5 @@
 ---
-title: Debugger proprietà le impostazioni consigliate per C#, Visual Basic | Microsoft Docs
+title: Impostazioni consigliate delle proprietà C#del debugger per, VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 711a8c1e8353f6e57f7101549a3b5421a33e0ae4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07c63a70de9d633ccd73d1d0d3bd23196d421543
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846286"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731377"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Debug gestito: Impostazioni consigliate delle proprietà
+# <a name="managed-debugging-recommended-property-settings"></a>Debug gestito: impostazioni consigliate delle proprietà
 Determinate proprietà devono essere impostate nello stesso modo per tutti gli scenari di debug gestito.
 
  Nelle tabelle riportate di seguito sono indicate le impostazioni consigliate delle proprietà.
@@ -35,9 +35,9 @@ Determinate proprietà devono essere impostate nello stesso modo per tutti gli s
 
 |**Nome proprietà**|**Impostazione**|
 |-----------------------|-----------------|
-|**Definisci costante DEBUG**|C#e F#: Impostare la casella di controllo selezionata. per consentire all'applicazione di utilizzare la classe Debug.|
-|**Definisci costante TRACE**|C#e F#: Impostare la casella di controllo selezionata. per consentire all'applicazione di utilizzare la classe Trace.|
-|**Ottimizza codice**|C#, F#e Visual Basic: Impostare su false. L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra **Disassembly** è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nell'editor del codice. Per eseguire il debug di codice ottimizzato, disattivare Just My Code. (Vedere [Limitare l'esecuzione di istruzioni a Just My Code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Per altre informazioni, vedere [impostazioni di progetto per c# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) oppure [impostazioni di progetto per una configurazione di Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
+|**Definisci costante DEBUG**|C# e F#: selezionare la casella di controllo per consentire all'applicazione di utilizzare la classe Debug.|
+|**Definisci costante TRACE**|C# e F#: selezionare la casella di controllo per consentire all'applicazione di utilizzare la classe Trace.|
+|**Ottimizza codice**|C#, F# e Visual Basic: impostare su false. L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra **Disassembly** è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nell'editor del codice. Per eseguire il debug di codice ottimizzato, disattivare Just My Code. (Vedere [Limitare l'esecuzione di istruzioni a Just My Code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Per altre informazioni, vedere [impostazioni di progetto C# per le configurazioni di debug](../debugger/project-settings-for-csharp-debug-configurations.md) o [le impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
 |**Percorso output**|Impostare su bin\Debug\\.|
 |**Opzioni di compilazione avanzate**|Solo Visual Basic. Fare clic su **Avanzate** per impostare le proprietà avanzate descritte nella tabella riportata di seguito.|
 
@@ -45,7 +45,7 @@ Determinate proprietà devono essere impostate nello stesso modo per tutti gli s
 
 |**Nome proprietà**|**Impostazione**|
 |-----------------------|-----------------|
-|**Abilita ottimizzazioni**|Impostare su false per i motivi indicati nella **Ottimizza codice** opzione nella tabella precedente.|
+|**Abilita ottimizzazioni**|Impostare su false per i motivi specificati nell'opzione **Ottimizza codice** nella tabella precedente.|
 |**Genera informazioni di debug**|Selezionare questa casella di controllo se si desidera che durante la compilazione venga impostato il flag /DEBUG. In questo modo verranno generate le informazioni necessarie per semplificare il debug.|
 |**Definisci costante DEBUG**|Selezionare questa casella di controllo per definire la costante `DEBUG`, che consente all'applicazione di utilizzare la classe <xref:System.Diagnostics.Debug>.|
 |**Definisci costante TRACE**|Selezionare questa casella di controllo per definire la costante `TRACE`, che consente all'applicazione di utilizzare la classe <xref:System.Diagnostics.Trace>.|

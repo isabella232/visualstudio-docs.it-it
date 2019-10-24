@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905555"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731393"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
-Per eseguire il debug, è possibile usare la **RPTn** e **RPTFn** macro, definite in CRTDBG. H, per sostituire l'uso di `printf` istruzioni. Non devi inclose nella **#ifdef**s, poiché essi vengono automaticamente eliminate nel rilascio quando compilare **debug** non è definito.
+Per il debug, è possibile usare le macro **_RPTn** e **_RPTFn** , definite in CRTDBG. H, per sostituire l'uso di istruzioni `printf`. Non è necessario inserirli nel **#ifdef**s, perché scompaiono automaticamente nella build di rilascio quando _ **debug** non è definito.
 
 |Macro|Descrizione|
 |-----------|-----------------|
@@ -54,7 +54,7 @@ Per eseguire il debug, è possibile usare la **RPTn** e **RPTFn** macro, definit
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-È possibile che una particolare applicazione necessiti di report di debug che non forniscono le macro fornite con la libreria di runtime C. In questi casi, è possibile scrivere una macro progettata appositamente per rispondere alle proprie esigenze. In uno dei file di intestazione, ad esempio, è possibile includere un codice simile al seguente per definire una macro denominata **ALERT_IF2**:
+È possibile che un'applicazione specifica necessiti di report di debug che le macro fornite con la libreria di runtime C non forniscono. In questi casi, è possibile scrivere una macro progettata in modo specifico per adattarsi ai propri requisiti. In uno dei file di intestazione, ad esempio, è possibile includere un codice simile al seguente per definire una macro denominata **ALERT_IF2**:
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,14 +70,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif
 ```
 
- Una chiamata a **ALERT_IF2** è stato possibile eseguire tutte le funzioni delle **printf** codice:
+ Una chiamata a **ALERT_IF2** può eseguire tutte le funzioni del codice **printf** :
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
 someVar=%d, otherVar=%d.\n", someVar, otherVar );
 ```
 
- È possibile modificare facilmente una macro personalizzata per segnalare più o meno informazioni a destinazioni diverse. Questo approccio è particolarmente utile man mano che cambiano le esigenze di debug.
+ È possibile modificare facilmente una macro personalizzata per segnalare più o meno informazioni a destinazioni diverse. Questo approccio è particolarmente utile in quanto i requisiti di debug si evolvono.
 
 ## <a name="see-also"></a>Vedere anche
 - [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)

@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f430b4fee28e0bd1a9d5b1c64f9e8d95b2a97
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e577af3ce70280b81681cb72295c3511dd3ab4a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338684"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720546"
 ---
 # <a name="sccrunscc-function"></a>Funzione SccRunScc
-Questa funzione richiama lo strumento di amministrazione di controllo di origine.
+Questa funzione richiama lo strumento di amministrazione del controllo del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,42 +36,42 @@ SCCRTN SccRunScc(
 #### <a name="parameters"></a>Parametri
  pvContext
 
-[in] La struttura del contesto plug-in del controllo origine.
+in Struttura del contesto del plug-in del controllo del codice sorgente.
 
  hWnd
 
-[in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.
+in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.
 
- nFiles
+ nFile
 
-[in] Numero di file specificato per il `lpFileNames` matrice.
+in Numero di file specificati nella matrice `lpFileNames`.
 
  lpFileNames
 
-[in] Matrice di nomi di file selezionato.
+in Matrice dei nomi file selezionati.
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
 
 |Value|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Lo strumento di amministrazione di controllo di origine è stato richiamato.|
+|SCC_OK|Lo strumento di amministrazione del controllo del codice sorgente è stato richiamato correttamente.|
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata.|
-|SCC_E_INITIALIZEFAILED|Impossibile inizializzare il controllo del codice sorgente.|
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete.|
-|SCC_E_CONNECTIONFAILURE|Impossibile connettersi al sistema di controllo di origine.|
-|SCC_E_FILENOTCONTROLLED|Il file selezionato non è incluso nel controllo del codice sorgente.|
+|SCC_E_INITIALIZEFAILED|Impossibile inizializzare il sistema di controllo del codice sorgente.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto.|
+|SCC_E_CONNECTIONFAILURE|Non è stato possibile connettersi al sistema di controllo del codice sorgente.|
+|SCC_E_FILENOTCONTROLLED|Il file selezionato non è sotto il controllo del codice sorgente.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Note
- Questa funzione consente di accedere all'intera gamma di funzionalità del sistema di origine tramite uno strumento di amministrazione esterne al chiamante. Se il sistema di controllo di origine non dispone di alcuna interfaccia utente, il plug-in del controllo del codice sorgente può implementare un'interfaccia per eseguire funzioni amministrative necessarie.
+ Questa funzione consente al chiamante di accedere all'intera gamma di funzionalità del sistema di controllo del codice sorgente tramite uno strumento di amministrazione esterno. Se il sistema di controllo del codice sorgente non dispone di un'interfaccia utente, il plug-in del controllo del codice sorgente può implementare un'interfaccia per eseguire le funzioni di amministrazione necessarie.
 
- Questa funzione viene chiamata con un conteggio e una matrice di nomi di file per i file attualmente selezionati. Se lo strumento di amministrazione lo supporta, l'elenco dei file è utilizzabile per preselezionerà file nell'interfaccia di amministrazione; in caso contrario, l'elenco può essere ignorato.
+ Questa funzione viene chiamata con un conteggio e una matrice di nomi file per i file attualmente selezionati. Se lo strumento di amministrazione lo supporta, è possibile utilizzare l'elenco dei file per preselezionare i file nell'interfaccia di amministrazione. in caso contrario, l'elenco può essere ignorato.
 
- Questa funzione viene richiamata in genere quando l'utente seleziona il **avvio veloce \<Source Control Server >** dal **File** -> **controllo del codice sorgente** menu di scelta. Ciò **avviare** opzione di menu può essere sempre disabilitata o persino nascosto impostando una voce del Registro di sistema. Vedere [Procedura: Installare un plug-in controllo sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md) per informazioni dettagliate. Questa funzione viene chiamata solo se [SccInitialize](../extensibility/sccinitialize-function.md) restituisce il `SCC_CAP_RUNSCC` bit funzionalità (vedere [flag funzionalità](../extensibility/capability-flags.md) per informazioni dettagliate su questo e gli altri bit funzionalità).
+ Questa funzione viene in genere richiamata quando l'utente seleziona l' **> avvia il server di controllo \<Source** dal menu **file**  -> **controllo del codice sorgente** . Questa opzione di menu di **avvio** può essere sempre disabilitata o anche nascosta impostando una voce del registro di sistema. Per informazioni dettagliate, vedere [procedura: installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md) . Questa funzione viene chiamata solo se [SccInitialize](../extensibility/sccinitialize-function.md) restituisce il bit della funzionalità `SCC_CAP_RUNSCC` (vedere [flag funzionalità](../extensibility/capability-flags.md) per informazioni dettagliate su questo e altri bit di funzionalità).
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
-- [Procedura: installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Procedura: Installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Flag di funzionalità](../extensibility/capability-flags.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

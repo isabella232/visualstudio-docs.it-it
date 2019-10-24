@@ -1,5 +1,5 @@
 ---
-title: Modello di un servizio di linguaggio Legacy | Microsoft Docs
+title: Modello di un servizio di linguaggio legacy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,42 +10,42 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6efe97e0a6ca5d2188aee9d44246f1d9fb347cda
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5b87106060d3fd66b3659f5d49159ebbb9be9ef6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326767"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726383"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio legacy
-Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene usato per fornire l'editor con informazioni specifiche per tale lingua. Ad esempio, l'editor deve conoscere gli elementi e le parole chiave del linguaggio per supportare la colorazione della sintassi.
+Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene usato per fornire all'editor le informazioni specifiche di tale lingua. È ad esempio necessario che l'editor conosca gli elementi e le parole chiave del linguaggio per supportare la colorazione della sintassi.
 
- Il servizio di linguaggio è ben integrata con il buffer di testo gestito da editor e la vista che contiene l'editor. Microsoft IntelliSense **informazioni rapide** opzione è un esempio di una funzionalità fornita da un servizio di linguaggio.
+ Il servizio di linguaggio opera a stretto contatto con il buffer di testo gestito dall'editor e con la visualizzazione che contiene l'editor. L'opzione Microsoft IntelliSense **Quick Info** è un esempio di funzionalità fornita da un servizio di linguaggio.
 
 ## <a name="a-minimal-language-service"></a>Un servizio di linguaggio minimo
  Il servizio di linguaggio più semplice contiene i due oggetti seguenti:
 
-- Il *servizio di linguaggio* implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaccia. Un servizio di linguaggio conterrà informazioni sul linguaggio, inclusi nome, estensioni di file, gestione di finestre di codice e colorizzatore.
+- Il *servizio di linguaggio* implementa l'interfaccia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>. Un servizio di linguaggio dispone di informazioni sulla lingua, tra cui il nome, le estensioni di file, il gestore della finestra del codice e il colorante.
 
-- Il *colorizzatore* implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfaccia.
+- Il *coloratore* implementa l'interfaccia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.
 
-  La rappresentazione concettuale seguente illustra un modello di un servizio di linguaggio di base.
+  Il disegno concettuale seguente mostra un modello di servizio di linguaggio di base.
 
-  ![Rappresentazione grafica del modello di servizio di linguaggio](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") modello del servizio linguaggio di base
+  ![Rappresentazione grafica del modello del servizio di linguaggio](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") Modello di servizio del linguaggio di base
 
-  Gli host della finestra documento la *visualizzazione di documenti* dell'editor, in questo caso il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principale. La visualizzazione del documento e il buffer di testo sono di proprietà dall'editor. Questi oggetti rivolgersi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tramite una finestra del documento specializzato chiamato un *finestra del codice*. La finestra del codice è contenuta in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> oggetto che viene creato e controllato dall'IDE.
+  La finestra del documento ospita la *visualizzazione documento* dell'editor, in questo caso l'editor [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] core. La visualizzazione del documento e il buffer di testo sono di proprietà dell'editor. Questi oggetti funzionano con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tramite una finestra di documento specializzata denominata *finestra del codice*. La finestra del codice è contenuta in un oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> creato e controllato dall'IDE.
 
-  Quando viene caricato un file con una determinata estensione, l'editor consente di individuare il servizio di linguaggio associato a tale estensione e passa a tale finestra del codice chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> (metodo). Il servizio di linguaggio restituisce un *gestione di finestre di codice*, che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interfaccia.
+  Quando viene caricato un file con una determinata estensione, l'editor individua il servizio di linguaggio associato all'estensione e lo passa alla finestra del codice chiamando il metodo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>. Il servizio di linguaggio restituisce una *Gestione finestre di codice*che implementa l'interfaccia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>.
 
-  Nella tabella seguente fornisce una panoramica degli oggetti nel modello.
+  Nella tabella seguente viene fornita una panoramica degli oggetti nel modello.
 
-| Componente | Object | Funzione |
+| Componente | Oggetto | Funzione |
 |------------------| - | - |
-| Buffer di testo | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Un flusso di testo Unicode di lettura/scrittura. È possibile che il testo da utilizzare altre codifiche. |
-| Finestra del codice | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Una finestra del documento che contiene uno o più visualizzazioni di testo. Quando si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è in modalità interfaccia a documenti multipli (MDI), la finestra del codice è un figlio MDI. |
-| Visualizzazione di testo | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Una finestra che consente all'utente di esplorare e visualizzare il testo usando la tastiera e mouse. Una visualizzazione di testo viene visualizzato dall'utente come editor. È possibile usare le visualizzazioni di testo nelle finestre dell'editor comune, la finestra di Output e finestra controllo immediato. Inoltre, è possibile configurare uno o più visualizzazioni di testo all'interno di una finestra del codice. |
-| Gestione di testo | Gestito dal <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> del servizio, da cui ottenere un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> puntatore | Un componente che gestisce informazioni comuni condivise da tutti i componenti descritti in precedenza. |
-| servizio di linguaggio | Implementazione dipendenti; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Un oggetto che fornisce l'editor con informazioni specifiche del linguaggio, ad esempio l'evidenziazione della sintassi, completamento delle istruzioni e corrispondenza delle parentesi graffe. |
+| Buffer di testo | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Flusso di testo in lettura/scrittura Unicode. È possibile che il testo usi altre codifiche. |
+| Finestra del codice | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Finestra del documento che contiene una o più visualizzazioni di testo. Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è in modalità interfaccia a documenti multipli (MDI), la finestra del codice è un elemento figlio MDI. |
+| Visualizzazione testo | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Finestra che consente all'utente di spostarsi e visualizzare il testo utilizzando la tastiera e il mouse. Una visualizzazione di testo viene visualizzata all'utente come editor. È possibile utilizzare le visualizzazioni di testo nelle finestre dell'editor normali, nella finestra di output e nella finestra di controllo immediato. Inoltre, è possibile configurare una o più visualizzazioni di testo all'interno di una finestra del codice. |
+| Gestione testo | Gestito dal servizio <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>, da cui si ottiene un puntatore <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> | Componente che mantiene le informazioni comuni condivise da tutti i componenti descritti in precedenza. |
+| Servizio di linguaggio | Dipendente dall'implementazione; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Oggetto che fornisce all'editor le informazioni specifiche della lingua, ad esempio l'evidenziazione della sintassi, il completamento delle istruzioni e la corrispondenza delle parentesi graffe. |
 
 ## <a name="see-also"></a>Vedere anche
 - [Dati documento e visualizzazione documento negli editor personalizzati](../../extensibility/document-data-and-document-view-in-custom-editors.md)

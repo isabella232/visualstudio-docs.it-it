@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b139bd9abdb8266acce9bab4d82a8c59b60623a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 077a0a7895e93714bfe7b64b658c59f4d38ead4e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835326"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739040"
 ---
-# <a name="idiasymbolgetuavslot"></a>IDiaSymbol::get_uavSlot
-Recupera lo slot uav.
+# <a name="idiasymbolget_uavslot"></a>IDiaSymbol::get_uavSlot
+Recupera lo slot UAV.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ HRESULT get_uavSlot(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `DWORD` che contiene lo slot uav.
+out Puntatore a un `DWORD` che include lo slot UAV.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
