@@ -1,5 +1,5 @@
 ---
-title: Searchforreturnaddress | Microsoft Docs
+title: 'IDiaStackWalkFrame:: Searchforreturnaddress (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40437dfe6d7b8d46a3850f55f181ecd0c3745b70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1060d5ffce3abc8596b896ef227f72993219f57
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831954"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741469"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-Cerca stack frame specificato per l'indirizzo del mittente (funzione) più vicino.
+Cerca nell'stack frame specificato l'indirizzo restituito della funzione più vicino.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,11 +34,11 @@ HRESULT searchForReturnAddress ( 
 #### <a name="parameters"></a>Parametri
  `frame`
 
-[in] Un' [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) oggetto che rappresenta lo stack frame corrente.
+in Oggetto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) che rappresenta l'stack frame corrente.
 
  `returnAddress`
 
-[out] Restituisce l'indirizzo del mittente (funzione) più vicino.
+out Restituisce l'indirizzo restituito della funzione più vicino.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

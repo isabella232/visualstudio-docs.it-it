@@ -12,20 +12,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), tasks
-- BscMake task (MSBuild (Visual C++))
+- MSBuild (C++), tasks
+- BscMake task (MSBuild (C++))
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acf9c0df17ec0e1bb97c1426d5d312f616de0a8e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385807"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747380"
 ---
 # <a name="bscmake-task"></a>Attività BscMake
 > [!IMPORTANT]
@@ -36,7 +36,7 @@ ms.locfileid: "63385807"
 ## <a name="parameters"></a>Parametri
  La tabella seguente illustra i parametri dell'attività **BscMake**. La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **BscMake**.<br /><br /> Per altre informazioni, vedere le opzioni in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|
 |**OutputFile**|Parametro **String** facoltativo.<br /><br /> Specifica un nome di file che esegue l'override del nome del file di output predefinito.<br /><br /> Per altre informazioni, vedere l'opzione **/o** in [Opzioni di BSCMAKE](/cpp/build/reference/bscmake-options).|
@@ -46,4 +46,4 @@ ms.locfileid: "63385807"
 |**TrackerLogDirectory**|Parametro **String** facoltativo.<br /><br /> Specifica la directory per il log di Tracker.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

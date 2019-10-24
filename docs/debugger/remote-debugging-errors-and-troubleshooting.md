@@ -1,5 +1,5 @@
 ---
-title: Remote Debug degli errori e risoluzione dei problemi | Microsoft Docs
+title: Errori e risoluzione dei problemi di debug remoto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,58 +20,58 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078551111223f11b38f3192075caa9ddfabaf18c
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f41292c22de1d9c76007ca44cb7accbf82359b3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043339"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730023"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Errori e risoluzione dei problemi relativi al debug remoto
 
-Potrebbe riscontrare gli errori seguenti durante il tentativo di eseguire il debug remoto.
+È possibile che si verifichino gli errori seguenti quando si tenta di eseguire il debug in modalità remota.
 
-- [Errore: Non è possibile eseguire automaticamente l'istruzione nel server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
 - [Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
 
 - [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
-- [Errore: Il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
+- [Errore: il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
 ## <a name="run-the-remote-debugger-as-an-administrator"></a>Eseguire il debugger remoto come amministratore
 
-Potrebbero riscontrare problemi se non si esegue il debugger remoto come amministratore. Ad esempio, si verifichi l'errore seguente: "Di Visual Studio Remote Debugger (MSVSMON. Con estensione EXE) ha privilegi sufficienti per il debug del processo". Se si esegue il debugger remoto come un'applicazione (non un servizio), può vedere le [account utente diverso](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) errore.
+Se non si esegue il debugger remoto come amministratore, è possibile che si verifichino problemi. Ad esempio, è possibile che venga visualizzato l'errore seguente: "il Visual Studio Remote Debugger (MSVSMON. EXE) non dispone di privilegi sufficienti per eseguire il debug del processo ". Se il debugger remoto viene eseguito come un'applicazione (non come servizio), è possibile che venga visualizzato un errore diverso per l' [account utente](error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md) .
 
 ### <a name="when-running-the-remote-debugger-as-a-service"></a>Quando si esegue il debugger remoto come servizio
 
-Quando si esegue il debugger remoto come servizio s, è consigliabile eseguirlo come amministratore per diversi motivi:
+Quando si esegue il debugger remoto come servizio, è consigliabile eseguirlo come amministratore per diversi motivi:
 
-- Il servizio debugger remoto consente solo le connessioni da parte degli amministratori, quindi esistono **alcun** nuovi rischi per la sicurezza dovuti a eseguirlo come amministratore.
+- Il servizio debugger remoto consente solo le connessioni dagli amministratori, quindi non **sono stati** introdotti nuovi rischi per la sicurezza eseguendolo come amministratore.
 
-- È possibile evitare gli errori di risultati quando l'utente di Visual Studio ha più diritti per eseguire il debug di un processo del debugger remoto stesso.
+- Può impedire errori che si verificano quando l'utente di Visual Studio dispone di più diritti per eseguire il debug di un processo rispetto al debugger remoto stesso.
 
-- Per semplificare l'installazione e configurazione del debugger remoto.
+- Per semplificare l'installazione e la configurazione del debugger remoto.
 
-Sebbene sia possibile eseguire il debug senza eseguire il debugger remoto come amministratore, esistono diversi requisiti per eseguire questa operazione in modo corretto e spesso richiedono passaggi di configurazione più avanzati del servizio.
+Sebbene sia possibile eseguire il debug senza eseguire il debugger remoto come amministratore, esistono diversi requisiti per eseguire correttamente questa operazione e spesso richiedono passaggi di configurazione dei servizi più avanzati.
 
-- L'account in uso nel computer remoto deve avere il **accesso come servizio** privilegio. Vedere la sezione "Per aggiungere accesso come servizio" nel [non è possibile connettersi nuovamente](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) articolo di errore.
+- L'account in uso nel computer remoto deve disporre del privilegio **di accesso come servizio** . Vedere i passaggi in "per aggiungere l'accesso come servizio" nell'articolo [non è possibile connettere](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md) l'errore.
 
-- L'account deve disporre dei diritti per eseguire il debug del processo di destinazione. Per ottenere questi diritti, è necessario eseguire il debugger remoto con lo stesso account del processo da sottoporre a debug. (L'alternativa più semplice consiste nell'eseguire il servizio come amministratore). 
+- L'account deve disporre dei diritti per eseguire il debug del processo di destinazione. Per ottenere questi diritti, è necessario eseguire il debugger remoto con lo stesso account del processo di cui eseguire il debug. L'alternativa più semplice consiste nell'eseguire il servizio come amministratore. 
 
-- L'account deve essere in grado di connettersi nuovamente per (vale a dire, eseguire l'autenticazione con) nel computer di Visual Studio in rete. In un dominio, è più semplice connettersi nuovamente se il debugger remoto viene eseguito con l'account sistema locale o servizio di rete predefiniti o un account di dominio. Gli account predefiniti sono elevati privilegi di sicurezza che possono implicare problemi di sicurezza.
+- L'account deve essere in grado di connettersi (ovvero eseguire l'autenticazione con) il computer che esegue Visual Studio tramite la rete. In un dominio, è più semplice connettersi di nuovo se il debugger remoto è in esecuzione con l'account di sistema locale o di servizio di rete predefinito o con un account di dominio. Gli account predefiniti hanno privilegi di sicurezza elevati che possono rappresentare un rischio per la sicurezza.
 
-### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Quando si esegue il debugger remoto come un'applicazione (modalità normale)
+### <a name="when-running-the-remote-debugger-as-an-application-normal-mode"></a>Quando si esegue il debugger remoto come applicazione (modalità normale)
 
-Se si sta tentando di connettersi al proprio processo senza privilegi elevati (ad esempio una normale applicazione), non è importante se si esegue il debugger remoto come amministratore.
+Se si sta tentando di connettersi a un processo non con privilegi elevati (ad esempio, un'applicazione normale), non è importante se il debugger remoto viene eseguito come amministratore.
 
 Si vuole eseguire il debugger remoto come amministratore in diversi scenari:
 
-- Si desidera connettersi a processi in esecuzione come utente diverso (ad esempio, quando il debug di IIS), o
+- Si desidera eseguire la connessione a processi in esecuzione con un altro utente, ad esempio durante il debug di IIS, oppure
 
-- Si sta tentando di avviare un altro processo e il processo di cui che si vuole avviare sia un amministratore.
+- Si sta provando ad avviare un altro processo e il processo che si vuole avviare è un amministratore.
 
-È effettuare **non** da eseguire come amministratore se si vuole avviare i processi e il processo di cui si vuole avviare deve **non** sia un amministratore.
+**Non si desidera eseguire** come amministratore se si desidera avviare i processi e il processo che si desidera avviare **non** deve essere un amministratore.
 
 ## <a name="see-also"></a>Vedere anche
 - [Remote Debugging](../debugger/remote-debugging.md)

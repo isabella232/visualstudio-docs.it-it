@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 526c857acbe1283e16312355c181c56c67e19883
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829628"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744072"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
-Recupera un determinato numero di file di origine nella sequenza di enumerazione.
+Recupera un numero specificato di file di origine nella sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di file di origine nell'enumeratore deve essere recuperato.
+in Numero di file di origine nell'enumeratore da recuperare.
 
  rgelt
 
-[out] Matrice che deve essere compilato con il [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) gli oggetti che rappresentano i file di origine desiderato.
+out Matrice che deve essere compilata con gli oggetti [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) che rappresentano i file di origine desiderati.
 
  pceltFetched
 
-[out] Restituisce il numero di file di origine nell'enumeratore recuperata.
+out Restituisce il numero di file di origine nell'enumeratore recuperato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti più file di origine. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri file di origine. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

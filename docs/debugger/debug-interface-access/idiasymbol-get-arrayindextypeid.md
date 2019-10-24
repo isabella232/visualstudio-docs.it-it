@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f7d04a8c1e498200db66a37a5af56624eb2d0ae
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8363475a80748cb35472dfaaac043bff83a4fae5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64833097"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741016"
 ---
-# <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
-Recupera l'identificatore di tipo di indice di matrice del simbolo.
+# <a name="idiasymbolget_arrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
+Recupera l'identificatore del tipo di indice della matrice del simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,22 +33,22 @@ HRESULT get_arrayIndexTypeId ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'ID del tipo di indice di matrice del simbolo.
+out Restituisce l'ID del tipo di indice della matrice del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|DESCRIZIONE|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

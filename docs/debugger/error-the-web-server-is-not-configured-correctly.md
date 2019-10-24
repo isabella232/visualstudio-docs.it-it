@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Il server web non è configurato correttamente | Microsoft Docs'
+title: 'Errore: il server Web non è configurato correttamente | Microsoft Docs'
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,37 +16,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be5db0a08a287e2611c29396e96e72719b5106a7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850408"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736921"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Errore: Il server Web non è configurato in modo corretto
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Errore: il server Web non è configurato in modo corretto
 
-Dopo aver valutato i passaggi descritti in questa sezione per risolvere il problema e prima di riprovare a eseguire il debug, è necessario anche reimpostare IIS. È possibile farlo aprendo un prompt dei comandi di amministratore e digitando `iisreset`.
+Dopo aver eseguito i passaggi descritti qui per risolvere il problema e prima di riprovare a eseguire il debug, potrebbe essere necessario reimpostare IIS. A tale scopo, aprire un prompt dei comandi dell'amministratore e digitare `iisreset`.
 
-Eseguire questi passaggi per risolvere il problema:
+Per risolvere il problema, seguire questa procedura:
 
-1. Se l'app web ospitata nel server è configurato come una build di rilascio, pubblicare di nuovo come una build di Debug e verificare che il file Web. config contenga `debug=true` nell'elemento di compilazione. Reimpostare IIS, quindi riprovare.
+1. Se l'app Web ospitata nel server è configurata come build di rilascio, ripubblicarla come build di debug e verificare che il file Web. config contenga `debug=true` nell'elemento di compilazione. Ripristinare IIS e riprovare.
 
-    Ad esempio, se si usa un profilo di pubblicazione per una build di rilascio, modificarla su Debug e pubblicare di nuovo. In caso contrario, l'attributo di debug verrà impostato `false` quando si pubblica.
+    Se ad esempio si usa un profilo di pubblicazione per una build di rilascio, modificarlo in debug e ripubblicazione. In caso contrario, l'attributo debug verrà impostato su `false` durante la pubblicazione.
 
-2. (IIS) Verificare che il percorso fisico sia corretto. In IIS, questa impostazione in disponibile **impostazioni di base > percorso fisico** (o **impostazioni avanzate** nelle versioni precedenti di IIS).
+2. IIS Verificare che il percorso fisico sia corretto. In IIS è possibile trovare questa impostazione in **impostazioni di base > percorso fisico** (o **Impostazioni avanzate** nelle versioni precedenti di IIS).
 
-    Il percorso fisico potrebbe essere inesatti se l'applicazione web è stato copiato in un computer diverso, rinominato manualmente o spostata. Reimpostare IIS, quindi riprovare.
+    Il percorso fisico potrebbe non essere corretto se l'applicazione Web è stata copiata in un computer diverso, rinominata o spostata manualmente. Ripristinare IIS e riprovare.
 
-3. Se si esegue il debug in locale in Visual Studio, verificare che il server corretto sia selezionato nelle proprietà. (Aprire **proprietà > Web > server** oppure **proprietà > eseguire il Debug** a seconda del tipo di progetto. Per un progetto di Web Form, aprire **pagine delle proprietà > Opzioni di avvio > Server**).
+3. Se si esegue il debug in locale in Visual Studio, verificare che nelle proprietà sia selezionato il server corretto. (Aprire **proprietà > server > Web** o **Proprietà > eseguire il debug** a seconda del tipo di progetto. Per un progetto Web Form, aprire **pagine delle proprietà > opzioni di avvio > server**).
 
-    Se si usa un server (personalizzato) esterno, ad esempio IIS, l'URL deve essere corretta. In caso contrario, selezionare IIS Express e riprovare.
+    Se si utilizza un server esterno (personalizzato), ad esempio IIS, l'URL deve essere corretto. In caso contrario, selezionare IIS Express e riprovare.
 
-4. (IIS) Assicurarsi che la versione corretta di ASP.NET sia installata nel server.
+4. IIS Verificare che nel server sia installata la versione corretta di ASP.NET.
 
-    Le versioni non corrispondenti di ASP.NET in IIS e nel progetto di Visual Studio possono causare questo problema. Si potrebbe essere necessario impostare la versione di framework nel file Web. config. Per installare ASP.NET in IIS, usare il [installazione guidata piattaforma Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Vedere anche [IIS 8.0 Using ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) o, per ASP.NET Core [Host in Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    La mancata corrispondenza delle versioni di ASP.NET in IIS e nel progetto di Visual Studio può causare questo problema. Potrebbe essere necessario impostare la versione del Framework in Web. config. Per installare ASP.NET in IIS, usare l' [installazione guidata piattaforma Web (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Vedere anche [iis 8,0 con ASP.NET 3,5 e ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) o, per ASP.NET Core, [host in Windows con IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
-4. Se il `maxConnection` limite in IIS è troppo basso e si dispone di un numero eccessivo di connessioni, potrebbe essere necessario [aumentare il limite di connessione](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
+4. Se il limite di `maxConnection` in IIS è troppo basso e si dispone di un numero eccessivo di connessioni, potrebbe essere necessario [aumentare il limite di connessione](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug remoto di ASP.NET in un computer remoto con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
-- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f51489b888a0b85b53856e413eb4704d24161b6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925728"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777715"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 
@@ -77,7 +77,7 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 
  In Visual Studio 2015, è possibile installare, disinstallare e avviare i profili di dispositivo utilizzando Gestione emulatori di. Accedere a Gestione emulatori scegliendo **Strumenti** e quindi **Visual Studio Emulator for Android**.
 
- ![Gestione di Visual Studio Emulator for Android](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")
+ ![Emulatore di Visual Studio per Android Manager](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")
 
  Per impostazione predefinita, sono disponibili quattro profili dispositivo pre-installato (telefono/5 KitKat e il simbolo "e Tablet PC/7" configurazioni), come indicato dal testo bianco e icone. Gli altri profili nell'elenco vengono visualizzati in grigio fino a quando non viene scelto il pulsante **Installa profilo** e l'installazione non viene completata. È possibile filtrare l'elenco in base al livello dell'API e fare clic sulla freccia di dettagli sul lato inferiore destro di un profilo per visualizzarne i dettagli di configurazione completa.
 
@@ -100,7 +100,7 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 ## <a name="Support"></a> Risorse di supporto
  Se il computer host soddisfa i requisiti di sistema e si verifica un problema non incluso in questa guida alla risoluzione dei problemi:
 
-- Porre una domanda su StackOverflow usando i tag [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.
+- Porre una domanda su StackOverflow usando i tag [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.
 
 - Segnalare un problema usando lo strumento Invia smile in Visual Studio o in Gestione emulatori.
 

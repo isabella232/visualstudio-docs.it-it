@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d004491feedff26c350cd7d40c544bc6b6de0f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 39db3bc0e0107e734f5de3f6902a2ca0fcc55bb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "64783745"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741895"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
-Imposta l'indirizzo di caricamento del file eseguibile che corrisponde ai simboli in questo archivio dei simboli.
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
+Imposta l'indirizzo di caricamento per il file eseguibile che corrisponde ai simboli nell'archivio simboli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT put_loadAddress ( 
 #### <a name="parameters"></a>Parametri
  `NewVal`
 
-[in] Carica l'indirizzo del file eseguibile.
+in Indirizzo di caricamento per il file eseguibile.
 
 ## <a name="remarks"></a>Note
- Proprietà dei simboli indirizzo virtuale (valutazione della vulnerabilità) vengono calcolate utilizzando il valore di questo metodo. Gli indirizzi virtuali non vengono calcolati solo se questa proprietà è impostata su diverso da zero.
+ Le proprietà dell'indirizzo virtuale del simbolo (VA) vengono calcolate usando il valore di questo metodo. Gli indirizzi virtuali non vengono calcolati se questa proprietà non è impostata su un valore diverso da zero.
 
 > [!NOTE]
-> È necessario chiamare questo metodo quando si riceve la [IDiaSession](../../debugger/debug-interface-access/idiasession.md) dell'oggetto e prima di iniziare a utilizzare l'oggetto se è necessario usare qualsiasi proprietà virtuali sui simboli.
+> È necessario chiamare questo metodo quando si ottiene l'oggetto [IDiaSession](../../debugger/debug-interface-access/idiasession.md) e prima di iniziare a usare l'oggetto se è necessario usare qualsiasi proprietà virtuale nei simboli.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

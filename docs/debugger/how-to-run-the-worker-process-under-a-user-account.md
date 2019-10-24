@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847753"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732824"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: Eseguire il processo di lavoro con un account utente
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.
 
  > [!IMPORTANT]
- > A partire da Windows Server 2008 R2, è consigliabile usare la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
+ > A partire da Windows Server 2008 R2, è consigliabile usare [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) come identità per ogni pool di applicazioni.
 
 ## <a name="procedure"></a>Routine
 
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Per eseguire aspnet_wp.exe con un account utente
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Per eseguire aspnet_wp.exe con un account utente
 
 1. Aprire il file machine.config, che si trova sul computer nella cartella CONFIG, nel percorso in cui è stato installato l'ambiente runtime.
 
@@ -76,9 +76,9 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 9. Nella finestra di dialogo **Impostazioni avanzate di sicurezza per file ASP.Net temporanei** fare clic sul pulsante **Aggiungi**.
 
-    Verrà visualizzata la finestra di dialogo per **la selezione di utenti, computer o gruppi**  .
+    Verrà visualizzata la **finestra di dialogo per la selezione di utenti, computer o gruppi**.
 
-10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato: Nomedominio\nomeutente.
+10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato NomeDominio\NomeUtente.
 
 11. Nella finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** , assegnare all'utente **Controllo completo**, quindi scegliere **OK** per chiudere la finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** .
 
@@ -88,4 +88,4 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Debug ASP.NET: Requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)
+- [Requisiti di sistema per il debug di ASP.NET](../debugger/aspnet-debugging-system-requirements.md)

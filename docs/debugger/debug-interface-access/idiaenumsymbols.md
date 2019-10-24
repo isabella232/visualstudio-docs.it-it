@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44be5f88542d867d8baf25fbc3cdd3c060231d7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0864522c079ff1f694072fec3147d006cd2ce43d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833403"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743893"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
-Enumera i simboli diversi contenuti nell'origine dati.
+Enumera i vari simboli contenuti nell'origine dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,23 +29,23 @@ IDiaEnumSymbols : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-Nella tabella seguente sono illustrati i metodi di `IDiaEnumSymbols`.
+La tabella seguente illustra i metodi di `IDiaEnumSymbols`.
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Recupera il `IEnumVARIANT Interface` versione l'enumeratore.|
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Recupera la versione `IEnumVARIANT Interface` dell'enumeratore.|
 |[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Recupera il numero di simboli.|
-|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Recupera un simbolo mediante un indice.|
-|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Recupera un determinato numero di simboli nella sequenza di enumerazione.|
-|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Ignora un determinato numero di simboli in una sequenza di enumerazione.|
-|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Recupera un simbolo per mezzo di un indice.|
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Recupera un numero specificato di simboli nella sequenza di enumerazione.|
+|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Ignora un numero specificato di simboli in una sequenza di enumerazione.|
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Reimposta l'inizio di una sequenza di enumerazione.|
 |[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 
 ## <a name="remarks"></a>Note
-Questa interfaccia fornisce i simboli raggruppati per uno specifico tipo di simbolo, ad esempio, `SymTagUDT` (tipi definiti dall'utente) o `SymTagBaseClass`. Per lavorare con i simboli raggruppati per indirizzo, usare il [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) interfaccia.
+Questa interfaccia fornisce i simboli raggruppati in base a un tipo specifico di simbolo, ad esempio `SymTagUDT` (tipi definiti dall'utente) o `SymTagBaseClass`. Per lavorare con i simboli raggruppati per indirizzo, usare l'interfaccia [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) .
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Per ottenere questa interfaccia, chiamata dei metodi seguenti:
+Ottenere questa interfaccia chiamando i metodi seguenti:
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -54,10 +54,10 @@ Per ottenere questa interfaccia, chiamata dei metodi seguenti:
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)
 
 ## <a name="example"></a>Esempio
-In questo esempio viene illustrato come ottenere il `IDiaEnumSymbols` interfaccia e quindi usare tale enumerazione ai tipi di elenco definito dall'utente (UDT).
+In questo esempio viene illustrato come ottenere l'interfaccia `IDiaEnumSymbols` e quindi utilizzare tale enumerazione per elencare i tipi definiti dall'utente (UDT).
 
 > [!NOTE]
-> `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.
+> `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente la liberazione della stringa quando la creazione dell'istanza esce dall'ambito.
 
 ```C++
 void ShowUDTs(IDiaSymbol *pGlobals)
@@ -86,11 +86,11 @@ void ShowUDTs(IDiaSymbol *pGlobals)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: DIA2.h
+Intestazione: dia2. h
 
-Libreria: diaguids.lib
+Libreria: diaguids. lib
 
-DLL: MSDIA80
+DLL: Msdia80. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

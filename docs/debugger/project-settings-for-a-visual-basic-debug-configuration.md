@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di progetto per un VB debug config | Microsoft Docs
+title: Impostazioni di progetto per una configurazione di debug VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,34 +23,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d948595dcf34bba32708f04e4bdf2f16ba1166
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408671"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730609"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug Visual Basic
 È possibile modificare le impostazioni di progetto per una configurazione di debug [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nella finestra di dialogo **Pagine delle proprietà**, come descritto in [Configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
 
 > [!WARNING]
-> Questo argomento non si applica alle app UWP. Vedere [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Questo argomento non si applica alle app UWP. Vedere [avviare una sessione di debug (VB C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ### <a name="debug-tab"></a>Scheda Debug
 
-| Impostazione | Descrizione |
+| Impostazioni | Descrizione |
 |------------------------------| - |
-| **Configurazione** | Imposta la modalità per la compilazione dell'applicazione. Le opzioni disponibili sono **Attiva (Debug)**, **Debug**, **Release**, **Tutte le configurazioni**. |
-| **Azione di avvio** | Questo gruppo di controlli specifica l'azione che verrà eseguita quando si sceglie Avvia dal menu Debug.<br /><br /> -   **Avvia progetto** è l'azione predefinita e avvia il progetto di avvio per il debug. <br />-   **Avvia programma esterno** consente di avviare un programma che non fa parte di un progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e di stabilire una connessione al programma. Per altre informazioni, vedere [connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Avvia browser con URL** consente di eseguire il debug di un'applicazione Web. |
+| **Configurazione** | Imposta la modalità per la compilazione dell'applicazione. Le opzioni disponibili sono **Attiva (Debug)** , **Debug**, **Release**, **Tutte le configurazioni**. |
+| **Azione di avvio** | Questo gruppo di controlli specifica l'azione che verrà eseguita quando si sceglie Avvia dal menu Debug.<br /><br /> -   **Avvia progetto** è l'azione predefinita e avvia il progetto di avvio per il debug. <br />-   **Avvia programma esterno** consente di avviare un programma che non fa parte di un progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e di stabilire una connessione al programma. Per ulteriori informazioni, vedere [Connetti a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Avvia browser con URL** consente di eseguire il debug di un'applicazione Web. |
 | **Argomenti della riga di comando** | Specifica gli argomenti della riga di comando per il programma da sottoporre a debug. Il nome del comando è il nome del programma specificato in Avvia programma esterno. Se l'opzione Azione di avvio è impostata su Avvia URL, gli argomenti della riga di comando verranno ignorati. |
 | **Directory di lavoro** | Specifica la cartella di lavoro del programma sottoposto a debug. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] la cartella di lavoro è la cartella dalla quale viene avviata l'applicazione. La cartella di lavoro predefinita è \bin\Debug or \bin\Release, a seconda della configurazione corrente. |
-| **Usa computer remoto** | Quando la casella di controllo è selezionata, il debug remoto è attivato. Nella casella di testo è possibile digitare il nome di un computer remoto in cui verrà eseguita l'applicazione ai fini del debug oppure un [nome di server Msvsmon](../debugger/remote-debugging.md). Il percorso del file EXE nel computer remoto è specificato dalla proprietà Percorso output nella scheda Compila. Il percorso deve essere una directory condivisibile del computer remoto. |
+| **Usa computer remoto** | Quando la casella di controllo è selezionata, il debug remoto è attivato. Nella casella di testo è possibile digitare il nome di un computer remoto in cui verrà eseguita l'applicazione ai fini del debug oppure un [nome di server Msvsmon](../debugger/remote-debugging.md). Il percorso del file EXE nel computer remoto è specificato dalla proprietà percorso output nella scheda Compila. Il percorso deve essere una directory condivisibile nel computer remoto. |
 | **Debug codice non gestito** | Consente di eseguire il debug delle chiamate al codice Win32 nativo (non gestito) dall'applicazione gestita in uso. Ha lo stesso effetto della selezione di Misto per Tipo debugger in un progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. |
 | **Debug SQL Server** | Consente di eseguire il debug di oggetti di database di SQL Server. |
 
 ### <a name="compile-tab-press-advanced-compile-options-button"></a>Scheda Compila (scegliere il pulsante Opzioni di compilazione avanzate)
 
-| Impostazione | Descrizione |
+| Impostazioni | Descrizione |
 |---------------------------| - |
 | **Abilita ottimizzazioni** | Si consiglia di non selezionare questa opzione. L'ottimizzazione rende più difficile il debug perché il codice effettivamente eseguito è diverso dal codice sorgente visualizzato in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Se il codice è ottimizzato, non caricare i simboli per impostazione predefinita quando si esegue il debug con Just My Code. |
 | **Genera informazioni di debug** | Questa impostazione, predefinita in entrambe le versioni di debug e di rilascio ed equivalente all'opzione del compilatore /debug, determina la creazione delle informazioni di debug in fase di compilazione. Il debugger utilizza tali informazioni per mostrare i nomi delle variabili e altri dati in un formato utile quando si esegue il debug. Se il programma viene compilato senza specificarle, la funzionalità del debugger risulterà limitata. Per altre informazioni, vedere [/debug](/dotnet/visual-basic/reference/command-line-compiler/debug). |

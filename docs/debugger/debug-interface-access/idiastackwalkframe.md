@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 343c56e3d3175c26900b0cfb4cdc3d816a324404
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b2657127726e387e81a5b28c639abbaa5399019
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831819"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741432"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
-Mantiene dello stack di contesto tra le chiamate dei [Idiaframedata](../../debugger/debug-interface-access/idiaframedata-execute.md) (metodo).
+Mantiene il contesto dello stack tra le chiamate del metodo [IDiaFrameData:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,28 +29,28 @@ IDiaStackWalkFrame : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
- Nella tabella seguente sono illustrati i metodi di `IDiaStackWalkFrame`.
+ La tabella seguente illustra i metodi di `IDiaStackWalkFrame`.
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Recupera il valore di un registro.|
 |[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Imposta il valore di un registro.|
-|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Legge dall'immagine della memoria.|
-|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Cerca stack frame specificato per l'indirizzo del mittente (funzione) più vicino.|
-|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Cerca stack frame specificato per un indirizzo del mittente o in prossimità dell'indirizzo specificato.|
+|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Legge la memoria dall'immagine.|
+|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Cerca nell'stack frame specificato l'indirizzo restituito della funzione più vicino.|
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Cerca nell'stack frame specificato un indirizzo restituito in corrispondenza o in prossimità dell'indirizzo specificato.|
 
 ## <a name="remarks"></a>Note
- Questa interfaccia viene utilizzata durante l'esecuzione del programma per leggere e scrivere registri, nonché accedere alla memoria e trovare gli indirizzi restituiti.
+ Questa interfaccia viene utilizzata durante l'esecuzione del programma per leggere e scrivere i registri, nonché per accedere alla memoria e trovare gli indirizzi restituiti.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
- L'applicazione client implementa questa interfaccia e passa un'istanza dell'interfaccia per il [Idiaframedata](../../debugger/debug-interface-access/idiaframedata-execute.md) (metodo). La stessa istanza di questa interfaccia viene utilizzata ripetutamente per mantenere lo stato dei registri durante ogni richiamata del `execute` (metodo). Il `execute` metodo Usa inoltre questa interfaccia per stabilire l'indirizzo del mittente.
+ L'applicazione client implementa questa interfaccia e passa un'istanza dell'interfaccia al metodo [IDiaFrameData:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) . La stessa istanza di questa interfaccia viene utilizzata nuovamente e per mantenere lo stato dei registri durante ogni chiamata del metodo `execute`. Anche il metodo `execute` usa questa interfaccia per determinare l'indirizzo mittente.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: DIA2.h
+ Intestazione: dia2. h
 
- Libreria: diaguids.lib
+ Libreria: diaguids. lib
 
- DLL: MSDIA80
+ DLL: Msdia80. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

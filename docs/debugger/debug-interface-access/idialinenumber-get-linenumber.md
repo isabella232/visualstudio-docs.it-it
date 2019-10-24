@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a1554e749e6f5186f7c99844cb793814b0129b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 726f5df7ff898675fc9253b47785c666d435a387
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839836"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743208"
 ---
-# <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
+# <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
 Recupera il numero di riga nel file di origine.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_lineNumber ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di riga nel file di origine.
+out Restituisce il numero di riga nel file di origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 114d9f7b00bbe5d322e7b6893e96fbbabec9d002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858115"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739987"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-Recupera il numero di bit o byte di memoria utilizzata dall'oggetto rappresentato da questo simbolo.
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
+Recupera il numero di bit o byte di memoria utilizzati dall'oggetto rappresentato da questo simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,16 +33,16 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di byte o bit di memoria usata dall'oggetto rappresentato da questo simbolo.
+out Restituisce il numero di byte o bit di memoria utilizzati dall'oggetto rappresentato da questo simbolo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- Se il [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) del simbolo è `LocIsBitField`, la lunghezza restituita da questo metodo è espressa in bit; in caso contrario, la lunghezza è espressa in byte per tutti gli altri tipi di percorso.
+ Se l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) del simbolo è `LocIsBitField`, la lunghezza restituita da questo metodo è in bit; in caso contrario, la lunghezza è in byte per tutti gli altri tipi di località.
 
 ## <a name="example"></a>Esempio
 
@@ -54,9 +54,9 @@ pSymbol->get_length( &length );
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

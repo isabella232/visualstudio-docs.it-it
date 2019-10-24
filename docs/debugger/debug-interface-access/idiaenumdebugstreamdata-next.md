@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acdab0a565613194c67aa85484316a235c91dbf6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838607"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744788"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-Recupera un determinato numero di record nella sequenza enumerata.
+Recupera un numero specificato di record nella sequenza enumerata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -37,26 +37,26 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di record da recuperare.
+in Numero di record da recuperare.
 
  cbData
 
-[in] Dimensioni del buffer di dati, in byte.
+in Dimensioni in byte del buffer di dati.
 
  pcbData
 
-[out] Restituisce il numero di byte restituiti. Se `data` è NULL, quindi `pcbData` contiene il numero totale di byte di dati disponibili per tutti i record richiesti.
+out Restituisce il numero di byte restituiti. Se `data` è NULL, `pcbData` contiene il numero totale di byte dei dati disponibili per tutti i record richiesti.
 
  data[]
 
-[out] Un buffer che deve essere compilata con i dati di record di flusso di debug.
+out Buffer che deve essere compilato con i dati del record del flusso di debug.
 
  pceltFetched
 
 [in, out] Restituisce il numero di record in `data`.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più record. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri record. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

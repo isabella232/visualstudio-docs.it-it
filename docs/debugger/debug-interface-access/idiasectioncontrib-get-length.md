@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cd7b349cd3b048d68adf21aa11f89c33e7a05f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4d77854ca3c7b2d7edb8e1917927462af19dc31
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839563"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742610"
 ---
-# <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
+# <a name="idiasectioncontribget_length"></a>IDiaSectionContrib::get_length
 Recupera il numero di byte in una sezione.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di byte in una sezione.
+out Restituisce il numero di byte in una sezione.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

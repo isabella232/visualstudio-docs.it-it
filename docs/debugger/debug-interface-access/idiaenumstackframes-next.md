@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cf220c65cf11836e64a7e1f4c0142c89669f4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffde40e221823d9656c4b6414b14067ac9d0537a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833305"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744033"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
-Recupera un numero specificato di elementi dello stack frame dalla sequenza di enumerazione.
+Recupera un numero specificato di elementi stack frame dalla sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,18 +35,18 @@ HRESULT Next( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di elementi di stack frame nell'enumeratore deve essere recuperato.
+in Numero di elementi StackFrame nell'enumeratore da recuperare.
 
  rgelt
 
-[out] Matrice che deve essere compilata con l'oggetto richiesto [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) oggetti.
+out Matrice che deve essere compilata con gli oggetti [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) richiesti.
 
  pceltFetched
 
-[out] Restituisce il numero di stack frame elementi nell'enumeratore recuperata.
+out Restituisce il numero di elementi stack frame nell'enumeratore recuperato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti più stack frame. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri stack frame. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

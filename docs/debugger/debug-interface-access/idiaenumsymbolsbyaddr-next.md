@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e52567eddcbb6c4f372256e66b7b723bc7aa7394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 424924f3fab62cf862420d58c947bba16343141d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833441"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743888"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
 Recupera i simboli successivi nell'ordine in base all'indirizzo.
@@ -35,21 +35,21 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di simboli nell'enumeratore deve essere recuperato.
+in Numero di simboli nell'enumeratore da recuperare.
 
  rgelt
 
-[out] Matrice che deve essere compilato con il [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetti che rappresentano i simboli desiderati.
+out Matrice che deve essere compilata con l'oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta i simboli desiderati.
 
  pceltFetched
 
-[out] Restituisce il numero di simboli nell'enumeratore recuperata.
+out Restituisce il numero di simboli nell'enumeratore recuperato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori simboli. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri simboli. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Note
- Questo metodo aggiorna la posizione di enumeratore per il numero di elementi recuperati.
+ Questo metodo aggiorna la posizione dell'enumeratore in base al numero di elementi recuperati.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

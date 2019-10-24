@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864de61a3cc0c17dfa81770b3be35f6e5879541d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 206415f45c4f4f087b99064f772a679f15eb1506
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839602"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742565"
 ---
-# <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
+# <a name="idiasectioncontribget_read"></a>IDiaSectionContrib::get_read
 Recupera un flag che indica se è possibile leggere la sezione.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_read ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se è possibile leggere la sezione; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se è possibile leggere la sezione. in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
