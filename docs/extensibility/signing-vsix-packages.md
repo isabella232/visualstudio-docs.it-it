@@ -14,37 +14,37 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 710cc523cdd01ad431572860ace9b06af3cff418
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08a709b50dd61beb874ea4cb80ebfb92a8fcd49e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332090"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720044"
 ---
 # <a name="signing-vsix-packages"></a>Firma di pacchetti VSIX
-Assembly di estensione non è necessario essere firmato prima che possono essere eseguiti in Visual Studio, ma è buona norma eseguire questa operazione.
+Gli assembly di estensione non devono essere firmati prima di poter essere eseguiti in Visual Studio, ma è consigliabile farlo.
 
- Se si desidera proteggere l'estensione e assicurarsi che non sia stato manomesso, è possibile aggiungere una firma digitale a un pacchetto VSIX. Quando viene firmato un progetto VSIX, il programma di installazione VSIX verrà visualizzato un messaggio che indica che è firmato, oltre a ulteriori informazioni sulla firma stessa. Se il contenuto del pacchetto VSIX è stato modificato e l'estensione VSIX non è stato firmato anche in questo caso, il programma di installazione VSIX mostrerà che la firma non è valida. L'installazione non è stato arrestato, ma l'utente viene avvisato.
+ Se si vuole proteggere l'estensione e assicurarsi che non sia stata manomessa, è possibile aggiungere una firma digitale a un pacchetto VSIX. Quando un progetto VSIX è firmato, il programma di installazione VSIX Visualizza un messaggio che indica che è firmato, più altre informazioni sulla firma stessa. Se il contenuto di VSIX è stato modificato e il progetto VSIX non è ancora stato firmato, il programma di installazione VSIX indicherà che la firma non è valida. L'installazione non viene arrestata, ma l'utente viene avvisato.
 
 > [!IMPORTANT]
-> A partire da Visual Studio 2015, i pacchetti VSIX firmati con un valore diverso da crittografia SHA256 verranno identificati come avente una firma non valida. Installazione di VSIX non è bloccata, ma l'utente verrà visualizzato un avviso.
+> A partire da Visual Studio 2015, i pacchetti VSIX firmati con un valore diverso dalla crittografia SHA256 verranno identificati con una firma non valida. L'installazione VSIX non è bloccata, ma l'utente verrà avvisato.
 
-## <a name="signing-a-vsix-with-vsixsigntool"></a>La firma di un'estensione VSIX con VSIXSignTool
- Strumento disponibile dalla firma una crittografia di SHA256 [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) su nuget.org a [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
+## <a name="signing-a-vsix-with-vsixsigntool"></a>Firma di un progetto VSIX con VSIXSignTool
+ È disponibile uno strumento di firma della crittografia SHA256 disponibile in [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) in NuGet.org in [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
 
-#### <a name="to-use-the-vsixsigntool"></a>Usare il VSIXSignTool
+#### <a name="to-use-the-vsixsigntool"></a>Per usare VSIXSignTool
 
-1. Aggiungere un progetto VSIX.
+1. Aggiungere il progetto VSIX a un progetto.
 
-2. Fare clic con il pulsante destro sul nodo del progetto in Esplora soluzioni selezionando **Aggiungi &#124; Gestisci pacchetti NuGet**.  Per ulteriori informazioni sull'aggiunta di NuGet e NuGet pacchetti vedere il [documentazione di NuGet](/NuGet) e [Package Manager UI](/NuGet/Tools/Package-Manager-UI) argomenti.
+2. Fare clic con il pulsante destro del mouse sul nodo del progetto in Esplora soluzioni, quindi scegliere **Aggiungi &#124; Gestisci pacchetti NuGet**.  Per altre informazioni su NuGet e sull'aggiunta di pacchetti NuGet, vedere gli argomenti relativi alla [documentazione](/NuGet) e all' [interfaccia utente di gestione pacchetti](/NuGet/Tools/Package-Manager-UI) NuGet.
 
 3. Cercare VSIXSignTool da VisualStudioExtensibility e installare il pacchetto NuGet.
 
-4. È ora possibile eseguire il VSIXSignTool dal percorso locale dei pacchetti del progetto. Consultare la Guida dello strumento della riga di comando per lo scenario di firma (VSIXSignTool.exe /?).
+4. È ora possibile eseguire VSIXSignTool dal percorso dei pacchetti locali del progetto. Consultare la guida della riga di comando dello strumento per lo scenario di firma (VSIXSignTool. exe/?).
 
-   Ad esempio da firmare con una password protetta file del certificato:
+   Ad esempio, per firmare con un file di certificato protetto da password:
 
-   /F sign VSIXSignTool.exe \<certfile >/p \<password > \<VSIXfile >
+   VSIXSignTool. exe sign/f \<certfile >/p \<password > \<VSIXfile >
 
 ## <a name="see-also"></a>Vedere anche
 - [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

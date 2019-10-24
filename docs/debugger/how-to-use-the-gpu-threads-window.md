@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione thread GPU nel Debugger | Microsoft Docs
+title: Visualizzazione dei thread GPU nel debugger | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846860"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732092"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Procedura: Utilizzare la finestra thread GPU (C++)
-Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per altre informazioni sulle applicazioni eseguite nella GPU, vedere [Panoramica di C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Procedura: utilizzare la finestra thread GPU (C++)
+Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per ulteriori informazioni sulle applicazioni eseguite sulla GPU, vedere [ C++ Panoramica di amp](/cpp/parallel/amp/cpp-amp-overview).
 
  La finestra Thread GPU contiene una tabella in cui ogni riga rappresenta un set di thread GPU che hanno gli stessi valori in tutte le colonne. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile contrassegnare, rimuovere i flag, bloccare (sospendere) e sbloccare (riprendere) i thread dalla finestra Thread GPU. Le colonne seguenti sono visualizzate nella finestra Thread GPU:
 
 - Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.
 
-- Il thread colonna corrente, in cui una freccia gialla indica che il thread corrente.
+- Colonna del thread corrente, nella quale una freccia gialla indica il thread corrente.
 
 - Colonna **Conteggio thread**, che visualizza il numero di thread nella stessa posizione.
 
@@ -58,7 +58,7 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 
 3. Nell'elenco **Debugger da avviare** selezionare **Debugger Windows locale**. Nell'elenco **Tipo di debugger** selezionare **Solo GPU**. È necessario scegliere questo debugger per l'interruzione in corrispondenza dei punti di interruzione nel codice in esecuzione sulla GPU.
 
-4. Fare clic sul pulsante **OK** .
+4. Fare clic sul pulsante **OK**.
 
 5. Impostare un punto di interruzione nel codice della GPU.
 
@@ -66,9 +66,9 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 
 7. Nella barra dei menu scegliere **Debug**, **Windows**, **Thread GPU**.
 
-### <a name="to-switch-to-a-different-thread"></a>Per passare a un altro thread
+### <a name="to-switch-to-a-different-thread"></a>Per passare a un thread diverso
 
-- Fare doppio clic sulla colonna. (Tastiera: Selezionare la riga e premere INVIO).
+- Fare doppio clic sulla colonna. Sulla tastiera selezionare la riga e premere INVIO.
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>Per visualizzare un riquadro e un thread specifici
 
@@ -105,4 +105,4 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: Usare la finestra Espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Procedura dettagliata: Debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Procedura dettagliata: debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

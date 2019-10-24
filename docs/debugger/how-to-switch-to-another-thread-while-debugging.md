@@ -16,34 +16,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31eb3427a441b4b79bbd57d9da9871118173b15c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11ad6280ad1213008bbb8ca8f6311ca34231d308
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849405"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732437"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Procedura: Passare a un altro Thread durante il debug in Visual Studio (C#, Visual Basic, C++)
-Quando si esegue il debug di un'applicazione multithreading, è possibile utilizzare uno dei diversi metodi per passare dal thread che stava lavorando a un altro thread.
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>Procedura: passare a un altro thread durante il debug in Visual StudioC#(, Visual Basic C++,)
+Quando si esegue il debug di un'applicazione multithreading, è possibile usare uno dei diversi metodi per passare dal thread che si sta utilizzando a un altro thread.
 
 > [!NOTE]
 > Se si desidera controllare l'ordine in cui vengono eseguiti i thread, è necessario [bloccare e sbloccare i thread](../debugger/get-started-debugging-multithreaded-apps.md).
 
-Quando si esaminano i thread nell'editor del codice e finestre di debug con multithreading diversi, la freccia gialla indica che il thread corrente. Una freccia verde ricurva indica che un thread non corrente ha il contesto di debug corrente.
+Quando si esaminano i thread nell'editor di codice e le diverse finestre di debug multithreading, la freccia gialla indica il thread corrente. Una freccia verde con una coda riccia indica che un thread non corrente ha il contesto del debugger corrente.
 
-### <a name="to-switch-to-any-thread-that-appears"></a>Passare a un thread visualizzato
+### <a name="to-switch-to-any-thread-that-appears"></a>Per passare a un thread che viene visualizzato
 
-- Nel **thread** oppure **espressioni di controllo parallela** finestra, fare doppio clic sul thread.
+- Nella finestra **thread** o espressione di **controllo in parallelo** fare doppio clic sul thread.
 
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>Per passare a un thread in una finestra di origine
 
-- Nella barra di navigazione a sinistra, fare doppio clic su un'icona marcatore di thread ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker"), scegliere **passa a**e quindi fare clic sul nome del thread a cui si passa a . Nel menu di scelta rapida vengono visualizzati solo i thread presenti in quella determinata posizione.
+- Nella barra di navigazione a sinistra fare clic con il pulsante destro del mouse sul ![marcatore del thread](../debugger/media/dbg-thread-marker.png "ThreadMarker")dell'icona del marcatore del thread, scegliere **passa a**, quindi fare clic sul nome del thread a cui si desidera passare. Nel menu di scelta rapida vengono visualizzati solo i thread presenti in quella determinata posizione.
 
-     Se viene visualizzato senza indicatori di thread, fare doppio clic nella **thread** finestra e verificare che **Mostra thread nell'origine** sia selezionata.
+     Se non viene visualizzato alcun marcatore di thread, fare clic con il pulsante destro del mouse nella finestra **thread** e verificare che l'opzione **Mostra thread nell'origine** sia selezionata.
 
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Per passare a un thread nella barra degli strumenti Posizione di debug
 
-1. Nel **posizione di Debug** sulla barra degli strumenti, fare clic sui **Thread** elenco.
+1. Sulla barra degli strumenti **posizione di debug** fare clic sull'elenco **thread** .
 
 2. Nell'elenco, fare clic sul thread al quale si desidera passare.
 

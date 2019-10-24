@@ -1,5 +1,5 @@
 ---
-title: Priorità di progetto | Microsoft Docs
+title: Priorità progetto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1badd483690ae22f9e314c0f9eb4ac3033d82e4a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee4c0f41902e74f58684d6806877d352447351bf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328271"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725388"
 ---
 # <a name="project-priority"></a>Priorità di progetto
-In genere, un elemento del progetto è un membro di un solo progetto nella soluzione. Di conseguenza, l'IDE di può facilmente determinare quale progetto viene utilizzato per aprire l'elemento. Tuttavia, se un elemento è un membro di più di un progetto, l'IDE usa uno schema di priorità per determinare il migliore progetto per aprire l'elemento.
+Un elemento del progetto è in genere un membro di un solo progetto nella soluzione. Pertanto, l'IDE può determinare facilmente quale progetto viene utilizzato per aprire l'elemento. Tuttavia, se un elemento è un membro di più di un progetto, l'IDE usa uno schema di priorità per determinare il progetto migliore per l'apertura dell'elemento.
 
- Nell'elenco seguente viene illustrato lo schema di priorità di progetto:
+ L'elenco seguente mostra lo schema di priorità del progetto:
 
-- Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> metodo per ogni progetto nella soluzione per determinare se il documento è un membro di tale progetto.
+- L'IDE chiama il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> per ogni progetto nella soluzione per determinare se il documento è un membro di tale progetto.
 
-- Se il documento è un membro del progetto, il progetto risponde con una priorità di progetto viene assegnata in base alla relativa funzionalità di gestione di tale documento. Ad esempio, un progetto in linguaggio risponde con una priorità assoluta per i file di origine della lingua ma risponde con una priorità più bassa per un tipo di file non riconosciuto che non viene usato come parte del processo di compilazione.
+- Se il documento è un membro del progetto, il progetto risponde con una priorità assegnata dal progetto in base alla relativa gestione del documento. Ad esempio, un progetto di linguaggio risponde con una priorità alta per i file di origine della lingua, ma risponde con una priorità più bassa per un tipo di file non riconosciuto che non viene usato come parte del processo di compilazione.
 
-- I progetti che forniscono gli editor personalizzati, specifico del progetto o le finestre di progettazione per un documento ricevono anche una priorità alta.
+- I progetti che forniscono editor o finestre di progettazione personalizzate, specifici del progetto per un documento ricevono anche una priorità alta.
 
-- Il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione fornisce valori di priorità dei documenti.
+- L'enumerazione <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> fornisce i valori di priorità del documento.
 
-- Il progetto che specifica la priorità più elevata viene fornito il contesto per aprire il documento. Se due progetti di restituiscono i valori di uguale priorità, il progetto attivo è preferito. Se nessun progetto nella soluzione risponde che è possibile aprire il documento, l'IDE inserisce il documento nel progetto file esterni. Per altre informazioni, vedere [progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md).
+- Al progetto che specifica la priorità più alta viene assegnato il contesto per l'apertura del documento. Se due progetti restituiscono valori di priorità uguali, è preferibile il progetto attivo. Se nessun progetto nella soluzione risponde che è in grado di aprire il documento, l'IDE inserisce il documento nel progetto di file esterni. Per altre informazioni, vedere [progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md)
-- [Procedura: aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Procedura: Aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [Aggiunta di modelli di progetto e di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
