@@ -1,5 +1,5 @@
 ---
-title: Confrontare la cartella di progetto di origine controllo Store | Microsoft Docs
+title: Confrontare la cartella del progetto con l'archivio del controllo del codice sorgente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d675868e10a99a192681c52495ad3b37e384d390
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 45bd5b105a2fd24078bc85d8cf5b044351cd78be
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350696"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726122"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Confronto facoltativo della cartella di progetto locale con l'archivio del controllo del codice sorgente
-In origine controllare il confronto tra la cartella di progetto locale e il controllo del codice sorgente viene eseguito usando le funzioni di plug-in API 1.2 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) e [SccDirDiff](../../extensibility/sccdirdiff-function.md).
+Nell'API del plug-in del controllo del codice sorgente 1,2 il confronto tra la cartella del progetto locale e il controllo del codice sorgente viene eseguito usando le funzioni [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) e [SccDirDiff](../../extensibility/sccdirdiff-function.md).
 
- All'interno **Esplora soluzioni**, se si seleziona una cartella anziché un singolo file, il **confrontare le versioni** richiama il nuovo menu di scelta rapida [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) e[ SccDirDiff](../../extensibility/sccdirdiff-function.md) nel plug-in del controllo del codice sorgente.
+ All'interno **Esplora soluzioni**, se è stata selezionata una cartella anziché un singolo file, il menu di scelta rapida **Confronta versioni** richiama i nuovi [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) e [SccDirDiff](../../extensibility/sccdirdiff-function.md) nel plug-in del controllo del codice sorgente.
 
 ## <a name="new-capability-flags"></a>Nuovi flag funzionalità
  `SCC_CAP_DIRECTORYDIFF`
@@ -33,10 +33,10 @@ In origine controllare il confronto tra la cartella di progetto locale e il cont
 
 - [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)
 
- Il `SccDirQueryInfo` funzione viene chiamata prima `SccDirDiff` per determinare se la directory di lavoro è controllato dal codice sorgente. Il `SccDirDiff` funzione consente di visualizzare le differenze tra la directory corrente e la cartella di controllo di origine corrispondente. Questo comando richiede il controllo del codice sorgente del plug-in per visualizzare l'elenco delle modifiche alla directory. Un plug-in del controllo del codice sorgente fornisce la propria interfaccia utente per visualizzare le differenze.
+ La funzione `SccDirQueryInfo` viene chiamata prima `SccDirDiff` per determinare se la directory di lavoro è controllata dal codice sorgente. La funzione `SccDirDiff` Visualizza le differenze tra la directory locale corrente e la cartella del controllo del codice sorgente corrispondente. Questo comando chiede al plug-in del controllo del codice sorgente di visualizzare l'elenco delle modifiche apportate alla directory. Un plug-in del controllo del codice sorgente fornisce una propria interfaccia utente per visualizzare le differenze.
 
 > [!NOTE]
-> Questa funzione Usa gli stessi flag di comando come [SccDiff](../../extensibility/sccdiff-function.md). Un provider di plug-in del controllo codice sorgente, è possibile scegliere di non supportare l'operazione "diff veloce" per le directory.
+> Questa funzione usa gli stessi flag di comando di [SccDiff](../../extensibility/sccdiff-function.md). Come provider del plug-in del controllo del codice sorgente, è possibile scegliere di non supportare l'operazione "diff veloce" per le directory.
 
 ## <a name="see-also"></a>Vedere anche
 - [Novità della versione 1.2 dell'API del plug-in del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
