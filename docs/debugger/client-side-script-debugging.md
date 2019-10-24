@@ -1,5 +1,5 @@
 ---
-title: Debug degli Script lato client | Microsoft Docs
+title: Debug di script sul lato client | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564086"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745705"
 ---
 # <a name="client-side-script-debugging"></a>Debug di script sul lato client
 Il debugger di Visual Studio offre un ambiente di debug completo per l'individuazione e la correzione degli errori negli script lato client delle pagine ASP.NET.
 
 ## <a name="opening-script-documents"></a>Apertura di documenti di script
-È possibile usare **Esplora soluzioni** per visualizzare elenchi di documenti script lato server e client. È possibile aprire qualsiasi documento di script da **Esplora soluzioni**. Per altre informazioni, vedere [Procedura: Visualizzare documenti script](../debugger/how-to-view-script-documents.md).
+È possibile usare **Esplora soluzioni** per visualizzare elenchi di documenti script lato server e client. È possibile aprire qualsiasi documento di script da **Esplora soluzioni**. Per altre informazioni, vedere [How to: View Script Documents](../debugger/how-to-view-script-documents.md).
 
 ## <a name="breakpoint-mapping"></a>Mapping dei punti di interruzione
  In Visual Studio non è possibile eseguire direttamente il debug di codice lato server, ma è possibile impostare un punto di interruzione in un file lato server. Visual Studio esegue automaticamente il mapping del punto di interruzione a un percorso corrispondente del file lato client e crea un punto di interruzione associato nel codice lato client.
@@ -35,7 +35,7 @@ Il debugger di Visual Studio offre un ambiente di debug completo per l'individua
 ## <a name="manually-or-automatically-attaching-to-script"></a>Connessione manuale o automatica a script
  Per avviare il debug di script in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il debugger deve essere connesso allo script del quale si desidera eseguire il debug. Questa operazione può essere eseguita manualmente o automaticamente.
 
- È possibile eseguire la connessione manualmente utilizzando l'interfaccia del debugger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per scegliere il processo di script in esecuzione desiderato. Per altre informazioni, vedere [Procedura: Associare a script](../debugger/how-to-attach-to-script.md).
+ È possibile eseguire la connessione manualmente utilizzando l'interfaccia del debugger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per scegliere il processo di script in esecuzione desiderato. Per altre informazioni, vedere [How to: Attach to Script](../debugger/how-to-attach-to-script.md).
 
  Il debugger si connette automaticamente allo script quando si verifica uno dei seguenti casi:
 

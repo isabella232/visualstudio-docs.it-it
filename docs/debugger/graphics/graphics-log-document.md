@@ -1,5 +1,5 @@
 ---
-title: Documento di Log della grafica | Microsoft Docs
+title: Documento di log di grafica | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aed2acd4dbf921d99bcefe2e74575401fc01c7d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895980"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735524"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 Il documento di log della grafica è la registrazione degli eventi di grafica che si sono verificati durante l'esecuzione dell'app in una sessione di diagnostica della grafica. Dopo la registrazione, è possibile esaminare il log in Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.
 
  Ecco l'aspetto di un documento di log della grafica in Analizzatore grafica:
 
- ![Un log di grafica contenente due frame acquisiti. ](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
+ ![Un log di grafica contenente due frame acquisiti.](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
 
 ## <a name="understanding-graphics-log-documents"></a>Informazioni sui documenti di log della grafica
  Se si usa Analizzatore grafica per esaminare un documento di log della grafica, è possibile visualizzare gli effetti degli eventi Direct3D che si sono verificati durante l'acquisizione sulla destinazione di rendering. È possibile individuare aree della destinazione di rendering che contengono un output non previsto. Quando si seleziona un pixel nell'area interessata, è possibile usare gli strumenti di Diagnostica grafica per esaminarlo, per analizzare gli shader e gli eventi Direct3D che hanno influito su di esso, gli stack di chiamate dell'applicazione che hanno generato tali eventi e gli oggetti DirectX che supportano tali eventi. È possibile usare queste informazioni per diagnosticare i problemi di rendering nel gioco o nell'app.
@@ -37,19 +37,19 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 
 #### <a name="to-inspect-a-pixel"></a>Per esaminare un pixel
 
-- Nella parte superiore del documento di log della grafica, selezionare il pixel desiderato dall'output della destinazione di rendering. Dopo avere selezionato un pixel, è possibile usare la finestra **Cronologia pixel grafica** per visualizzare informazioni dettagliate sul pixel selezionato. Per altre informazioni, vedere [cronologia Pixel](graphics-pixel-history.md).
+- Nella parte superiore del documento di log della grafica, selezionare il pixel desiderato dall'output della destinazione di rendering. Dopo avere selezionato un pixel, è possibile usare la finestra **Cronologia pixel grafica** per visualizzare informazioni dettagliate sul pixel selezionato. Per ulteriori informazioni, vedere la pagina relativa alla [cronologia dei pixel](graphics-pixel-history.md).
 
 ## <a name="playback-machine"></a>Computer riproduzione
  Nell'angolo superiore destro di **Elenco frame** è disponibile **Computer riproduzione**. Computer riproduzione è un computer o un dispositivo usato per riprodurre gli eventi della grafica da un file di log della grafica durante una sessione di diagnostica della grafica successiva. Usando un dispositivo diverso dal computer di sviluppo per riprodurre gli eventi acquisiti, è possibile riprodurre in modo più accurato l'ambiente di esecuzione in cui si verifica il problema. È ad esempio possibile usare un computer con un hardware o driver di grafica diversi rispetto a quelli presenti nel computer di sviluppo o altri tipi di dispositivi, come un tablet Windows RT basato su ARM o un dispositivo Windows Phone.
 
- Per informazioni su come specificare un computer di riproduzione, vedere [come: Modificare il computer di riproduzione della diagnostica della grafica](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Per informazioni su come specificare un computer di riproduzione, vedere [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="graphics-log-summary-information"></a>Informazioni di riepilogo del log di grafica
  Quando un file di log di grafica è il documento attivo, nella finestra **Proprietà** sono visualizzate informazioni sull'ambiente che ha ospitato la sessione di acquisizione di Diagnostica della grafica. Sono visualizzate numerose categorie di informazioni.
 
- **Informazioni Direct3D** Elenca le informazioni sulle funzionalità hardware e driver della scheda video usata durante la sessione di acquisizione.
+ **Informazioni su Direct3D** Elenca le informazioni sulle funzionalità hardware e driver della scheda video utilizzata durante la sessione di acquisizione.
 
-|Proprietà|Descrizione|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |**Formato High Color 10 bit XR**|**True** se il formato High Color 10 bit XR è supportato; in caso contrario, **False**.|
 |**DirectCompute CS 4.x**|**True** se Compute Shader 4.0 è supportato; in caso contrario, **False**.|
@@ -59,27 +59,27 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Formati estesi (BGRA e così via)**|**True** se i formati estesi come BGRA sono supportati; in caso contrario, **False**.|
 |**Livello funzionalità hardware massimo**|Visualizza il livello di funzionalità massimo supportato dalla scheda video.|
 
- **Visualizzare le informazioni** Elenca le informazioni relative alla scheda video usata durante la sessione di acquisizione.
+ **Visualizza informazioni** Elenca le informazioni sulla scheda di visualizzazione utilizzata durante la sessione di acquisizione.
 
-|Proprietà|Descrizione|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |**Descrizione**|Stringa di descrizione della scheda video.|
 |**Memoria visualizzazione**|Quantità di memoria installata nella scheda video grafica.|
 |**Nome driver**|Nome del driver della scheda video grafica.|
 |**Versione driver**|Versione del driver della scheda video grafica.|
-|**Name**|Nome della scheda video grafica.|
+|**Nome**|Nome della scheda video grafica.|
 
- **File esperimento** Elenca le informazioni relative al file esperimento associato la sessione di acquisizione.
+ **File esperimento** Elenca le informazioni sul file di esperimento associato alla sessione di acquisizione.
 
-|Proprietà|Descrizione|
+|proprietà|Descrizione|
 |--------------|-----------------|
-|**Path**|Percorso del file con estensione vsglog. **Nota:**  Nell'ambito dell'acquisizione legacy, questa proprietà è inutilizzata.|
+|**Path**|Percorso del file con estensione vsglog. **Nota:**  In acquisizione legacy questa proprietà è inutilizzata.|
 
- **Informazioni sul modulo** Elenca il nome e la versione delle librerie di collegamento dinamico (DLL) che sono state caricate dall'app durante la sessione di acquisizione.
+ **Informazioni sul modulo** Elenca il nome e la versione delle librerie di collegamento dinamico (dll) caricate dall'app durante la sessione di acquisizione.
 
- **Informazioni sul sistema** Elenca le informazioni relative all'hardware e sistema operativo che ha ospitato l'app durante la sessione di acquisizione.
+ **Informazioni di sistema** Elenca le informazioni relative all'hardware e al sistema operativo che ospitavano l'app durante la sessione di acquisizione.
 
-|Proprietà|Descrizione|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |**Memoria**|Quantità di memoria installata nel computer.|
 |**Architettura sistema operativo**|L'architettura della CPU di destinazione del sistema operativo.|
@@ -87,23 +87,23 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Processore**|Processore installato nel computer.|
 |**Architettura applicazione di destinazione**|L'architettura della CPU di destinazione dell'app. Può essere diversa da **Architettura sistema operativo**.|
 
- **Applicazione di destinazione** Elenca le informazioni sull'app che sono oggetto della sessione di acquisizione.
+ **Applicazione di destinazione** Elenca le informazioni sull'app che è l'oggetto della sessione di acquisizione.
 
-|Proprietà|Descrizione|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |**Data/ora ultima modifica**|Data e ora in cui è stata compilata l'app.|
 |**Path**|Percorso dell'app.|
 |**ID processo**|ID processo assegnato all'app.|
 |**Version**|Versione dell'app.|
 
- **Di Log Vsg** riporta informazioni sul documento log grafica.
+ **File di log VSG** Elenca le informazioni sul documento del log di grafica.
 
-| Proprietà | Descrizione |
+| proprietà | Descrizione |
 |------------------------| - |
 | **Creato da** | Nome dell'app che ha creato il documento di log della grafica. Ad esempio, se la sessione di acquisizione è stata avviata da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (acquisizione manuale), il valore di questa proprietà è [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | **Ora inizio sessione** | Data e ora in cui è stata iniziata la sessione di acquisizione. |
-| **Dimensione** | Dimensione del documento log grafica. |
+| **Size** | Dimensione del documento log grafica. |
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procedure dettagliate: debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

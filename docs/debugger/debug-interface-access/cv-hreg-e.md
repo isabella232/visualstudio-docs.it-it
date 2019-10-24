@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aac055930e9d1b016bbdc4949cbbdbee798cfaa2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554974"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745310"
 ---
-# <a name="cvhrege"></a>CV_HREG_e
+# <a name="cv_hreg_e"></a>CV_HREG_e
 Specifica un registro di destinazione.
 
 > [!NOTE]
-> Poiché il `CV_HREG_e` enumerazione è troppo grande per essere duplicato nella sua interezza in questo caso, una versione abbreviata viene fornita come riferimento. Le voci mancanti sono annotate in corsivo. L'enumerazione completo è disponibile nel file di intestazione cvconst.h.
+> Poiché il `CV_HREG_e` enumerazione è troppo grande per essere duplicato nel suo complesso, viene fornita una versione abbreviata come riferimento. Le voci mancanti sono notate in corsivo. L'enumerazione complete è disponibile nel file di intestazione cvconst. h.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -409,30 +409,30 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>Elementi
-CV_REG_ * registra utilizzato da Intel 80x86 e ix86 processori e p-code.
+Registri CV_REG_ * usati dai processori Intel 80x86 e ix86 e p-code.
 
-CV_R68_ * registra utilizzato dal processore 68K.
+Registri CV_R68_ * usati dal processore 68K.
 
-CV_M4_ * registra utilizzato dal processore serie MIPS 4000.
+Registri CV_M4_ * usati dal processore della serie MIPS 4000.
 
-CV_ALPHA_ * registra utilizzato dal processore serie Digital Equipment Corporation Alpha AXP.
+Registri CV_ALPHA_ * usati dal processore di serie Alpha AXP di Digital Equipment Corporation.
 
-CV_PPC_ * registra utilizzato dal processore/IBM Motorola PowerPC.
+Registri CV_PPC_ * usati dal processore PowerPC Motorola/IBM.
 
-CV_SH3_ * e CV_SH_\* registri usati dal processore serie SH3 Hitachi e Hitachi SH.
+CV_SH3_ * e CV_SH_ \* registri usati dal processore Hitachi SH3 e Hitachi SH Series.
 
-CV_ARM_ * registra usato dai processori Advanced RISC Machine (ARM).
+Registri CV_ARM_ * usati dai processori Advanced RISC Machine (ARM).
 
-CV_IA64_ * registra usato dai processori di serie IA64 di Intel.
+Registri CV_IA64_ * usati dai processori della serie Intel IA64.
 
-CV_TRI_ * registra utilizzato dal processore Infineon tecnologie TriCore.
+Registri CV_TRI_ * usati dal processore Tricore di Infineon Technologies.
 
-CV_AM33_ * registra usate da AM33 Matsushita/Panasonic e relativi processori.
+Registri CV_AM33_ * usati da Matsushita/Panasonic AM33 e dai processori correlati.
 
-CV_M32R_ * registra utilizzato dal processore Mitsubishi M32R.
+Registri CV_M32R_ * usati dal processore Mitsubishi M32R.
 
 ## <a name="remarks"></a>Note
-Ogni tipo di processore utilizza un proprio set univoco di registri.
+Ogni tipo di processore utilizza un proprio set di registri univoco.
 
 I valori di questa enumerazione vengono passati ai metodi seguenti:
 
@@ -447,7 +447,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti:
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
 
 ## <a name="requirements"></a>Requisiti:
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

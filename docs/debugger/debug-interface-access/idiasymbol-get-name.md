@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed872bd0cf90bef4433e3430ea8a7557213cbb4c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 754416049197a92344fd238b28ec99e8fb912791
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809006"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739755"
 ---
-# <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
+# <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
 Recupera il nome del simbolo.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,13 +33,13 @@ HRESULT get_name ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il nome del simbolo.
+out Restituisce il nome del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="example"></a>Esempio
 

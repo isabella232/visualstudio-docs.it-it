@@ -1,5 +1,5 @@
 ---
-title: Come testare una libreria di collegamento dinamico di Visual C++ per le app UWP
+title: Come testare una C++ dll per le app UWP
 ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
@@ -7,14 +7,14 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925793"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748081"
 ---
-# <a name="how-to-test-a-visual-c-dll"></a>Come testare una DLL di Visual C++
+# <a name="how-to-test-a-c-dll"></a>Come testare una C++ dll
 
 In questo argomento viene descritto come creare unit test per una libreria di collegamento dinamico di Visual C++ per le app della piattaforma UWP (Universal Windows Platform) con il framework di test Microsoft per C++. La libreria di collegamento RooterLib rammenta vagamente la teoria dei limiti di calcolo implementando una funzione che calcola una stima della radice quadrata di un numero specificato. La DLL può quindi essere inclusa in un'app UWP che mostra a un utente il lato divertente della matematica.
 
@@ -22,7 +22,7 @@ Questo argomento illustra come usare unit test come primo passaggio dell'attivit
 
 In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. Puoi anche includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL. Per suggerimenti sulla struttura da usare, vedere [Aggiunta di unit test alle applicazioni C++ esistenti](../test/how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="Create_the_solution_and_the_unit_test_project"></a> Creare la soluzione e il progetto di unit test
+## <a name="Create_the_solution_and_the_unit_test_project"></a> Creare la soluzione e il progetto unit test
 
 ::: moniker range="vs-2019"
 
@@ -48,7 +48,7 @@ Per iniziare, creare un nuovo progetto di test. Nel menu **File** scegliere **Nu
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Come si può notare:
+     Tenere presente quanto segue:
 
     - Ogni test è definito tramite `TEST_METHOD(YourTestName){...}`.
 

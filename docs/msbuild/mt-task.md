@@ -16,20 +16,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBUILD (Visual C++), MT task
-- MT task (MSBuild (Visual C++))
+- MSBUILD (C++), MT task
+- MT task (MSBuild (C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 11395230ac3721bbcef13b85aa1f0d244c19c6eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437833"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748049"
 ---
 # <a name="mt-task"></a>attività MT
 Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre informazioni, vedere [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,13 +38,13 @@ Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre info
  Nella tabella che segue vengono descritti i parametri dell'attività **MT**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 > [!NOTE]
-> Nella documentazione di *mt.exe* viene usato un trattino (**-**) come prefisso per le opzioni della riga di comando, ma questo argomento usa una barra (**/**). Entrambi i prefissi sono accettabili.
+> Nella documentazione di *mt.exe* viene usato un trattino ( **-** ) come prefisso per le opzioni della riga di comando, ma questo argomento usa una barra ( **/** ). Entrambi i prefissi sono accettabili.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**AdditionalManifestFiles**|Parametro **String[]** facoltativo.<br /><br /> Specifica il nome di uno o più file manifesto.<br /><br /> Per altre informazioni, vedere l'opzione **/manifest** in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe) sul sito Web.|
 |**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Elenco di opzioni della riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività **MT**.<br /><br /> Per altre informazioni, vedere [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
-|**AssemblyIdentity**|Parametro **String** facoltativo.<br /><br /> Specifica i valori dell'attributo dell'elemento **assemblyIdentity** del manifesto. Specificare un elenco delimitato da virgole, dove il primo componente è il valore dell'attributo `name`, seguito da una o più coppie nome/valore nel formato *\<nome attributo> = <attributo_valore>*.<br /><br /> Per altre informazioni, vedere l'opzione **/identity** in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe) sul sito Web.|
+|**AssemblyIdentity**|Parametro **String** facoltativo.<br /><br /> Specifica i valori dell'attributo dell'elemento **assemblyIdentity** del manifesto. Specificare un elenco delimitato da virgole, dove il primo componente è il valore dell'attributo `name`, seguito da una o più coppie nome/valore nel formato *\<nome attributo> = <attributo_valore>* .<br /><br /> Per altre informazioni, vedere l'opzione **/identity** in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe) sul sito Web.|
 |**ComponentFileName**|Parametro **String** facoltativo.<br /><br /> Specifica il nome della libreria di collegamento dinamico che si intende compilare dai file con estensione *rgs* o *tlb*. Questo parametro è obbligatorio se si specifica il parametro **RegistrarScriptFile** o **TypeLibraryFile** dell'attività MT.<br /><br /> Per altre informazioni, vedere l'opzione **/dll** in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
 |**DependencyInformationFile**|Parametro **String** facoltativo.<br /><br /> Specifica il file di informazioni sulle dipendenze usato da Visual Studio per tenere traccia delle informazioni sulle dipendenze della compilazione per lo strumento Manifesto.|
 |**EmbedManifest**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, incorpora il file manifesto nell'assembly. Se `false`, crea un file manifesto autonomo.|
@@ -69,4 +69,4 @@ Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre info
 |**VerboseOutput**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, visualizza informazioni dettagliate sul debug.<br /><br /> Per altre informazioni, vedere l'opzione **/verbose** in [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).|
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

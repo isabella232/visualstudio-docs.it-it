@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6fca61dfaf4577f4818c84e1570739c6d63149
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5d146df46defd0b0d052e0d65d5c40ae58a404d6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835958"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739805"
 ---
-# <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
+# <a name="idiasymbolget_memoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
 Recupera il tipo di spazio di memoria.
 
 ## <a name="syntax"></a>Sintassi
@@ -30,7 +30,7 @@ HRESULT get_memorySpaceKind(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `DWORD` che contiene il tipo di spazio di memoria.
+out Puntatore a un `DWORD` che include il tipo di spazio di memoria.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8345e722036e90ebedf51ec91e274770887e49
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5a5d030e56a279615dd2f23785993a0386a7380d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808191"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740572"
 ---
-# <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
-Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di qualsiasi operatore di cast definite.
+# <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
+Recupera un flag che specifica se per il tipo di dati definito dall'utente sono definiti operatori di cast.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,19 +33,19 @@ HRESULT get_hasCastOperator ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un `TRUE` se il tipo di dati definito dall'utente ha tutti gli operatori di cast definiti; in caso contrario, restituisce `FALSE`.
+out Restituisce un `TRUE` se per il tipo di dati definito dall'utente sono definiti operatori cast; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

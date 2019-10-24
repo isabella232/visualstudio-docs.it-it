@@ -1,5 +1,5 @@
 ---
-title: Idiaenumframedata | Microsoft Docs
+title: 'IDiaEnumFrameData:: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c86d9f4f8eb02b0389e7ea28b5858f8576f6c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47f6119eac1d48a7819f67bc57660c53e6b93b54
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838402"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744656"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -33,7 +33,7 @@ HRESULT Clone( 
 #### <a name="parameters"></a>Parametri
  ppenum
 
-[out] Restituisce un [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) oggetto che contiene un duplicato dell'enumeratore. Il frame di dati non sono duplicato, solo l'enumeratore.
+out Restituisce un oggetto [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) che contiene un duplicato dell'enumeratore. I dati del frame non sono duplicati, ma solo l'enumeratore.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

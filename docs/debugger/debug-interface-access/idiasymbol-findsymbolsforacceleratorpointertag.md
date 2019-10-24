@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs
+title: 'IDiaSymbol:: findSymbolsForAcceleratorPointerTag | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf55f372b9beb0a4cb0feda0dc5869ee9eb7c5f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1544471bd4ff9166d4c8f4c10f48840db6f576f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827738"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741122"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Restituisce il numero di tag di puntatore tasti di scelta rapida in una funzione di stub di C++ AMP.
+Restituisce il numero di tag del puntatore dell'acceleratore in una C++ funzione dello stub amp.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,11 +31,11 @@ HRESULT findSymbolsForAccleratorPointerTag (
 #### <a name="parameters"></a>Parametri
  `tagValue`
 
-[in] Il valore del tag puntatore per il quale i record dei simboli pointee vengono trovati.
+in Valore del tag del puntatore per il quale vengono trovati i record dei simboli puntati.
 
  `ppResult`
 
-[out] Un puntatore a un `IDiaEnumSymbols` puntatore a interfaccia che viene inizializzato con il risultato.
+out Puntatore a un puntatore a interfaccia `IDiaEnumSymbols` inizializzato con il risultato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

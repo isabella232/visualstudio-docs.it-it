@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Non è possibile connettersi alla macchina &lt;nome&gt;. Impossibile trovare il computer sulla rete. | Microsoft Docs'
+title: 'Errore: non è possibile connettersi al computer &lt;name &gt;. Impossibile trovare il computer sulla rete. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8eebd082df031161604bd04afe61d1aca652f6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d0f820156714a726d506d8871d4e42a8dc12a23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850057"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736832"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Errore: Non è possibile connettersi alla macchina &lt;nome&gt;. Impossibile trovare il computer sulla rete.
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Errore: non è possibile connettersi al computer &lt;name &gt;. Impossibile trovare il computer sulla rete.
 Questo messaggio di errore viene visualizzato quando si verifica una delle seguenti condizioni:
 
 - La connessione stabilita al computer remoto è stata interrotta.
@@ -36,11 +36,11 @@ Questo messaggio di errore viene visualizzato quando si verifica una delle segue
 
 - Assicurarsi che il computer locale e il computer remoto si trovino nella stessa rete. A tale scopo, utilizzare Esplora risorse o Esplora file per tentare di accedere al computer remoto.
 
-     - e -
+     \- e -
 
 - Assicurarsi che l'account utente utilizzato per la connessione al computer remoto sia attivato.
 
-     - e -
+     \- e -
 
 - Assicurarsi che la password utilizzata per la connessione al computer remoto sia valida e non scaduta.
 

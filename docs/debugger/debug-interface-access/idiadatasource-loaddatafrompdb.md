@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7526ba6e62c9df22a2338adc80f5d56578502cdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554144"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744929"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
-Viene aperto e lo prepara un file di database (con estensione pdb) del programma come un'origine dati di debug.
+Apre e prepara un file di database di programma (con estensione pdb) come origine dati di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,26 +33,26 @@ HRESULT loadDataFromPdb (
 #### <a name="parameters"></a>Parametri
 pdbPath
 
-[in] Il percorso del file con estensione pdb.
+in Percorso del file con estensione pdb.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
 
 |Value|Descrizione|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|Non è stato possibile aprire il file o determinato che il file di formato non è valido.|
-|E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|
+|E_PDB_NOT_FOUND|Non è stato possibile aprire il file oppure è stato rilevato che il formato del file non è valido.|
+|E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
 |E_INVALIDARG|Parametro non valido.|
-|E_UNEXPECTED|Origine dati è già stata preparata.|
+|E_UNEXPECTED|L'origine dati è già stata preparata.|
 
 ## <a name="remarks"></a>Note
 Questo metodo carica i dati di debug direttamente da un file con estensione pdb.
 
-Per convalidare il file con estensione PDB in base ai criteri specifici, usare il [Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) (metodo).
+Per convalidare il file con estensione PDB rispetto a criteri specifici, usare il metodo [IDiaDataSource:: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .
 
-Per ottenere l'accesso per il processo di caricamento dei dati (tramite un meccanismo di callback), usare il [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (metodo).
+Per ottenere l'accesso al processo di caricamento dei dati (tramite un meccanismo di callback), usare il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-Per caricare un file con estensione pdb direttamente dalla memoria, usare il [Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) (metodo).
+Per caricare un file con estensione PDB direttamente dalla memoria, usare il metodo [IDiaDataSource:: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .
 
 ## <a name="example"></a>Esempio
 

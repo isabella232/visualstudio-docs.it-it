@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4fe19ace9d84357b08ab848038283c857d15610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f163c2a6a37dd1e379557047f70966932ef45c64
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828292"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742660"
 ---
-# <a name="idiasectioncontribgetexecute"></a>IDiaSectionContrib::get_execute
+# <a name="idiasectioncontribget_execute"></a>IDiaSectionContrib::get_execute
 Recupera un flag che indica se la sezione è eseguibile come codice.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_excute ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se la sezione può essere eseguita come codice; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la sezione può essere eseguita come codice. in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

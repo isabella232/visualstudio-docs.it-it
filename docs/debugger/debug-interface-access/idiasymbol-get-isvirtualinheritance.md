@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5d1630b46ca2203e9f935517e96b11856b273b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7716d9688677eb12d603b208decc0f737bb1c6ca
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62842123"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740003"
 ---
-# <a name="idiasymbolgetisvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
-Specifica se il `this` puntatore punta a un membro dati con ereditarietà virtuale.
+# <a name="idiasymbolget_isvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
+Specifica se il puntatore `this` punta a un membro dati con ereditarietà virtuale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ HRESULT get_isVirtualInheritance(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `BOOL` che specifica se il `this` puntatore punta a un membro dati con ereditarietà virtuale.
+out Puntatore a un `BOOL` che specifica se il puntatore `this` punta a un membro dati con ereditarietà virtuale.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

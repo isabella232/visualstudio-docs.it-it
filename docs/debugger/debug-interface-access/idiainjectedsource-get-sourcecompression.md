@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00c7783752a183e8afc580c4c74285add8a51041
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9428b30df82d92a8c74511644aaf97f2166807a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839914"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743328"
 ---
-# <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
-Recupera l'indicatore della compressione origine usata.
+# <a name="idiainjectedsourceget_sourcecompression"></a>IDiaInjectedSource::get_sourceCompression
+Recupera l'indicatore della compressione di origine utilizzata.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_sourceCompression ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'indicatore della compressione origine usata. Un valore pari a zero indica che è stata usata alcuna compressione di origine.
+out Restituisce l'indicatore della compressione di origine utilizzata. Un valore pari a zero indica che non è stata utilizzata alcuna compressione di origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="remarks"></a>Note
- Il valore restituito da questo metodo è specifico per il compilatore usato. Ad esempio, un compilatore può utilizzare la compressione di Run-Length codifica o lo stile di Huffman.
+ Il valore restituito da questo metodo è specifico del compilatore utilizzato. Ad esempio, un compilatore può usare la codifica di lunghezza di esecuzione o la compressione di tipo Huffman.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

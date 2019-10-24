@@ -1,5 +1,5 @@
 ---
-title: Typedef di Visual C++ in Progettazione classi
+title: C++Typedef in Progettazione classi
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf886aedc27b6e702637b84bbe919971baec9e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647574"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748004"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>Typedef di Visual C++ in Progettazione classi
+# <a name="c-typedefs-in-class-designer"></a>C++typedef in Progettazione classi
 
 Le istruzioni [typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) creano uno o più livelli di riferimento indiretto tra un nome e il relativo tipo sottostante. **Progettazione classi** supporta i tipi typedef di C++, che vengono dichiarati con la parola chiave `typedef`, ad esempio:
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Usare il codice Visual C++](working-with-visual-cpp-code.md)
+- [Usare il C++ codice](working-with-visual-cpp-code.md)
 - [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
