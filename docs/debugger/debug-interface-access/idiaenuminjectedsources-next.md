@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea793f33eb78ee1637d7f22eb46ba34514e0e8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84dd3e1d107b8e55d5e94979627d1c1586534127
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554035"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744487"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-Recupera un determinato numero di origini inserite nella sequenza di enumerazione.
+Recupera un numero specificato di origini inserite nella sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di origini inserite nell'enumeratore deve essere recuperato.
+in Numero di origini inserite nell'enumeratore da recuperare.
 
  rgelt
 
-[out] Restituisce una matrice di [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) gli oggetti che rappresenta le origini inserite desiderate.
+out Restituisce una matrice di oggetti [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) che rappresenta le origini inserite desiderate.
 
  pceltFetched
 
-[out] Restituisce il numero di origini inserite nell'enumeratore recuperata.
+out Restituisce il numero di origini inserite nell'enumeratore recuperato.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se sono presenti origini inserite nessun altro. In caso contrario, verrà restituito un codice di errore.
+ Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altre origini inserite. In caso contrario, verrà restituito un codice di errore.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0710ec5cdfcfcb59407d18b43b885603f017fdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855124"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738624"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
-Specifica il tipo di memoria per accedere.
+Specifica il tipo di memoria a cui accedere.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,19 +34,19 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Parametri
-`MemTypeCode` Gli accessi alla memoria del codice solo.
+`MemTypeCode` accede solo alla memoria del codice.
 
-`MemTypeData` Accede a dati o dello stack di memoria.
+`MemTypeData` accede ai dati o alla memoria dello stack.
 
-`MemTypeStack` Gli accessi solo la memoria dello stack.
+`MemTypeStack` accede solo alla memoria dello stack.
 
-`MemTypeAny` Accede a qualsiasi tipo di memoria.
+`MemTypeAny` accede a qualsiasi tipo di memoria.
 
 ## <a name="remarks"></a>Note
-I valori di questa enumerazione vengono passati per il [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) metodo per limitare l'accesso a diversi tipi di memoria.
+I valori di questa enumerazione vengono passati al metodo [IDiaStackWalkHelper:: ReadMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) per limitare l'accesso a diversi tipi di memoria.
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4a4741c4f3a13b77dd871cefdb7a9d6430250b98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796601"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740265"
 ---
-# <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
-Recupera un flag che indica se il modulo è stato convertito da un modulo Common Intermediate Language (CIL) in un modulo nativo.
+# <a name="idiasymbolget_iscvtcil"></a>IDiaSymbol::get_isCVTCIL
+Recupera un flag che indica se il modulo è stato convertito da un modulo di Common Intermediate Language (CIL) a un modulo nativo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,22 +33,22 @@ HRESULT get_isCVTCIL(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[out] Restituisce `TRUE` se il modulo è stato convertito da CIL in codice nativo; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se il modulo è stato convertito da CIL a codice nativo; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- Questa proprietà è disponibile il `SymTagCompilandDetails` tipo di simboli (vedere [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).
+ Questa proprietà è disponibile dal tipo di simbolo `SymTagCompilandDetails` (vedere [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md).
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

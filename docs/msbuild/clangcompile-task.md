@@ -11,28 +11,28 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ClangCompile task
-- ClangCompile task (MSBuild (Visual C++))
+- MSBuild (C++), ClangCompile task
+- ClangCompile task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569706"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747335"
 ---
 # <a name="clangcompile-task"></a>Attività ClangCompile
 
-Esegue il wrapping dello strumento del compilatore Visual C++, clang.exe.
+Esegue il wrapping dello C++ strumento compilatore Microsoft, Clang. exe.
 
 ## <a name="parameters"></a>Parametri
 
 Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompile**.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**AdditionalIncludeDirectories**|Parametro **string[]** facoltativo.<br/><br/>Specifica una o più directory da aggiungere al percorso di inclusione. Usare il punto e virgola (;) come delimitatore per più percorsi.<br/><br/>Usare `-I[path]`.|
 |**AdditionalOptions**|Parametro **string** facoltativo.|
@@ -51,7 +51,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**FunctionLevelLinking**|Parametro **bool** facoltativo.<br/><br/>Consente al compilatore di assemblare le singole funzioni sotto forma di funzioni incluse nel pacchetto (COMDAT). Impostazione necessaria per le operazioni di modifica e continuazione.<br/><br/>Usare `ffunction-sections`.|
 |**GccToolChain**|Parametro **string** facoltativo.<br/><br/>Percorso della cartella della catena di strumenti GCC.|
 |**GNUMode**|Parametro **bool** facoltativo.<br/><br/>|
-|**MSCompatibility**|Parametro **bool** facoltativo.<br/><br/>Abilita la compatibilità completa con Microsoft Visual C++.|
+|**MSCompatibility**|Parametro **bool** facoltativo.<br/><br/>Abilita la compatibilità C++ completa con Microsoft.|
 |**MSCompatibilityVersion**|Parametro **string** facoltativo.<br/><br/>Valore delimitato da punti che rappresenta il numero di versione del compilatore Microsoft da restituire in _MSC_VER (0 = non definito; impostazione predefinita).|
 |**MSExtensions**|Parametro **bool** facoltativo.<br/><br/>Accetta alcuni costrutti non standard supportati dal compilatore Microsoft.|
 |**MSCompilerVersion**|Parametro **string** facoltativo.<br/><br/>Numero di versione del compilatore Microsoft da restituire in _MSC_VER (0 = non definito; impostazione predefinita).|
@@ -68,7 +68,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**RuntimeLibrary**|Parametro **string** facoltativo.<br/><br/>Specifica la libreria di runtime per il collegamento.<br/><br/>Usare le opzioni `MSVC /MT`, `/MTd`, `/MD`, `/MDd`.<br/><br/>**MultiThreaded** fa in modo che l'applicazione usi la versione statica multithread della libreria di runtime.<br/>**MultiThreadedDebug** definisce _DEBUG e _MT. Fa inoltre in modo che il compilatore inserisca il nome della libreria LIBCMTD.lib nel file .obj affinché il linker utilizzi LIBCMTD.lib per risolvere i simboli esterni.<br/>**MultiThreadedDLL** fa in modo che l'applicazione usi la versione specifica per multithread e DLL della libreria di runtime. Definisce _MT e _DLL e fa inoltre in modo che il compilatore inserisca il nome della libreria MSVCRT.lib nel file con estensione obj.<br/>**MultiThreadedDebugDLL** definisce _DEBUG, _MT e _DLL e fa in modo che l'applicazione usi la versione specifica per multithread e DLL di debug della libreria di runtime. Fa inoltre in modo che il compilatore inserisca il nome della libreria MSVCRTD.lib nel file .obj.|
 |**RuntimeTypeInfo**|Parametro **bool** facoltativo.<br/><br/>Aggiunge codice per il controllo dei tipi di oggetto C++ in fase di esecuzione (informazioni sui tipi in fase di esecuzione).<br/><br/>Usare `frtti`, `fno-rtti`.|
 |**ShowIncludes**|Parametro **bool** facoltativo.<br/><br/>Indica al compilatore di generare un elenco dei file di inclusione.<br/><br/>Usare `-H`.|
-|**Sources**|Parametro **ITaskItem[]** obbligatorio.|
+|**Sources**|Parametro **ITaskItem []** obbligatorio.|
 |**StrictAliasing**|Parametro **bool** facoltativo.<br/><br/>Presuppone le regole di aliasing più restrittive. Un oggetto di un certo tipo non potrà mai risiedere nello stesso indirizzo di un oggetto di un tipo diverso.|
 |**Sysroot**|Parametro **string** facoltativo.<br/><br/>Percorso della cartella della directory radice per intestazioni e librerie.|
 |**TargetArch**|Parametro **string** facoltativo.<br/><br/>Architettura di destinazione.|
@@ -84,4 +84,4 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+[Riferimento alle attività](../msbuild/msbuild-task-reference.md)

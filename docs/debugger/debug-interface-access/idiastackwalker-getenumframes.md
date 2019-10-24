@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames | Microsoft Docs
+title: 'IDiaStackWalker:: getEnumFrames | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9011f0becd893fa4ca966c40013844b0be47e46d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd6f5219edf9426067a4431936caa2186604e1cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832020"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741543"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
-Recupera un enumeratore di frame dello stack x86 a piattaforme.
+Recupera un enumeratore stack frame per le piattaforme x86.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,17 +34,17 @@ HRESULT getEnumFrames( 
 #### <a name="parameters"></a>Parametri
  `pHelper`
 
-[in] L'helper [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) oggetto.
+in Oggetto [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) helper.
 
  `ppEnum`
 
-[out] Restituisce un [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) oggetto che contiene un elenco delle [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) oggetti.
+out Restituisce un oggetto [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) che contiene un elenco di oggetti [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Per ottenere un elenco di frame dello stack in qualsiasi altra piattaforma, chiamare il [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) (metodo).
+ Per ottenere un elenco di stack frame in qualsiasi altra piattaforma, chiamare il metodo [IDiaStackWalker:: getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)

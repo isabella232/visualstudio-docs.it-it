@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c85288902d1a8c75b067bec0c77242e9a246561
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b663ef54959544764016fe59e4b0fb41607854b1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808241"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739924"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 Restituisce la lunghezza dell'intervallo di indirizzi in cui il simbolo locale è valido.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,22 +33,22 @@ HRESULT get_liveRangeLength ( 
 #### <a name="parameters"></a>Parametri
  `length`
 
-[out] Restituisce la lunghezza dell'intervallo di indirizzi.
+out Restituisce la lunghezza dell'intervallo di indirizzi.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 > [!NOTE]
-> Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.
+> Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.
 
 ## <a name="remarks"></a>Note
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: DIA2.h
+ Intestazione: dia2. h
 
- Libreria: diaguids.lib
+ Libreria: diaguids. lib
 
- DLL: msdia100.dll
+ DLL: msdia100. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

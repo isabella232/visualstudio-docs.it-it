@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0130ba9e893d5a4036df9ee1bc2ab22c8e18008
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929872"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731096"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Il debug in modalità mista per i processi IA64 non è supportato.
 Visual Studio non supporta debug in modalità mista di codice gestito e nativo nei processi IA64. Questo significa che non è possibile passare dal codice gestito al codice nativo, o viceversa, durante l'esecuzione del debug.
@@ -29,7 +29,7 @@ Visual Studio non supporta debug in modalità mista di codice gestito e nativo n
 
 - Eseguire il debug del codice gestito e del codice nativo in sessioni di debug separate.
 
-     -oppure-
+     oppure
 
      Eseguire il debug del codice misto come processo a 32 bit, come descritto nelle procedure che seguono.
 

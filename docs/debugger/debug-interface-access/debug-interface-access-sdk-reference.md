@@ -1,5 +1,5 @@
 ---
-title: Riferimenti di debug Interface Access SDK | Microsoft Docs
+title: Riferimento Debug Interface Access SDK | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,36 +14,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6760e77fc59292c8d4bdeee02690ab65d5edf7f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa8e898a4f045f739eed156e181346a9a6e2df3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555026"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745273"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Riferimenti di Debug Interface Access SDK
 
-Un riferimento completo a tutte le interfacce e supporto enumerazioni e strutture in DIA SDK.
+Un riferimento completo a tutte le interfacce e le enumerazioni e le strutture di supporto nel DIA SDK.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
-Un riferimento completo a tutte le interfacce fornite dal DIA SDK.
+Riferimento completo a tutte le interfacce fornite dal DIA SDK.
 
 [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
-Un riferimento completo a tutte le enumerazioni e strutture necessarie per le interfacce.
+Riferimento completo a tutte le enumerazioni e strutture necessarie per le interfacce.
 
 [Costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-Descrive una serie di stringhe e le etichette che possono essere utilizzate con le interfacce.
+Descrive un numero di stringhe e le relative etichette che possono essere usate con le interfacce.
 
 ## <a name="related-sections"></a>Sezioni correlate
 
 [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
-Descrive i simboli sono e come vengono identificati dal tipo.
+Vengono descritti i simboli e il modo in cui vengono identificati in base al tipo.
 
 ## <a name="see-also"></a>Vedere anche
 

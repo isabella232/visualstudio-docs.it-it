@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d5eac08833c534e9da3a998687992cca6bc47c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 110d357bd113913ab73990b8e3cfa12e4dd1cdae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653672"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748528"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Scelta di un modello di soluzione per un linguaggio specifico di dominio
 Per creare una soluzione per il linguaggio specifico di dominio, scegliere uno dei modelli di soluzione disponibili nella procedura guidata Finestra di progettazione Domain-Specific Language. Scegliendo il modello che è molto simile alla lingua che si desidera creare, è possibile ridurre al minimo le modifiche da apportare alla soluzione iniziale.

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 808eecab2b4f468b730b6c58cce32d08ca523d0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 74d64b4fe0c0aa5293e11daad13f632c4a487736
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660315"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747423"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archiviazione per propagare una modifica da un elemento a un altro nell'SDK di visualizzazione e modellazione (VMSDK). Quando si verifica una modifica a qualsiasi elemento nell'archivio, le regole vengono pianificate per l'esecuzione, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio l'aggiunta o l'eliminazione di un elemento. È possibile alleghi regole a tipi specifici di elementi, forme o diagrammi. Molte funzionalità predefinite sono definite da regole: ad esempio, le regole assicurano che un diagramma venga aggiornato quando il modello viene modificato. È possibile personalizzare il linguaggio specifico di dominio aggiungendo regole personalizzate.

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a3d1bb8b2f3095fd35488c47f823e7b3603995b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837607"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740914"
 ---
-# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-Recupera il tipo base per questo simbolo<em>.</em>
+# <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
+Recupera il tipo di base per questo simbolo<em>.</em>
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,16 +33,16 @@ HRESULT get_baseType (
 #### <a name="parameters"></a>Parametri
 `pRetVal`
 
-[out] Restituisce un valore di [enumerazione BasicType](../../debugger/debug-interface-access/basictype.md) enumerazione che specifica il tipo di base del simbolo.
+out Restituisce un valore dell'enumerazione di [enumerazione BasicType](../../debugger/debug-interface-access/basictype.md) che specifica il tipo di base del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
-Prima di tutto ottenere il tipo del simbolo ed quindi interrogazione che restituito per il tipo di base, è possibile determinare il tipo di base per un simbolo. Si noti che alcuni simboli potrebbero non avere un tipo di base, ad esempio, un nome di struttura.
+Il tipo di base per un simbolo può essere determinato ottenendo innanzitutto il tipo del simbolo e quindi interrogando il tipo restituito per il tipo di base. Si noti che alcuni simboli non possono avere un tipo di base, ad esempio un nome di struttura.
 
 ## <a name="example"></a>Esempio
 
@@ -61,9 +61,9 @@ if (pType->get_type( &pBaseType ) == S_OK)
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

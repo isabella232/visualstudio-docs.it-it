@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832406"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742080"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Recupera le informazioni sul numeri di riga per righe contenute in un intervallo di indirizzi virtuale specificato (valutazione della vulnerabilità).
+Recupera le informazioni sul numero di riga per le righe contenute in un intervallo di indirizzi virtuali (VA) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Parametri
 `va`
 
-[in] Specifica l'indirizzo come un responsabile tecnologico
+in Specifica l'indirizzo come VA.
 
 `length`
 
-[in] Specifica il numero di byte dell'intervallo di indirizzi per coprire la query viene usata.
+in Specifica il numero di byte dell'intervallo di indirizzi da coprire con questa query.
 
 `ppResult`
 
-[out] Restituisce un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) oggetto che contiene un elenco di tutto la riga di numeri che coprono l'intervallo di indirizzi specificato.
+out Restituisce un oggetto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) che contiene un elenco di tutti i numeri di riga che coprono l'intervallo di indirizzi specificato.
 
 ## <a name="example"></a>Esempio
-In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga inclusi in una funzione usando l'indirizzo della funzione virtuale e la lunghezza.
+In questo esempio viene illustrata una funzione che ottiene tutti i numeri di riga contenuti in una funzione utilizzando l'indirizzo e la lunghezza virtuali della funzione.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

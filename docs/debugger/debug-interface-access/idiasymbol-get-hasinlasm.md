@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ebeb1670ed9eb85820a41858c964ef561a8a5c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 336849e6818bd3b8d68558b381b8f0a0f8600028
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830418"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740510"
 ---
-# <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
+# <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
 Recupera un flag che specifica se la funzione contiene assembly inline.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,19 +33,19 @@ HRESULT get_hasInlAsm(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[out] Restituisce `TRUE` se la funzione dispone di qualsiasi assembly inline; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la funzione contiene assembly inline; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

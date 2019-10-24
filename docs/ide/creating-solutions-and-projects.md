@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206f97dcb264f85a15a9293e55a3f2ccc6173aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652607"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747969"
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -53,7 +53,7 @@ Se è presente una raccolta di file di origine di codice è possibile aggiungerl
 1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine scegliere il pulsante **Fine**.
 
 > [!NOTE]
-> Questa opzione risulta più adatta per raccolte di file relativamente semplici. Attualmente sono supportati solo i tipi di progetto Visual C++, Apache Cordova, Visual Basic e C#.
+> Questa opzione risulta più adatta per raccolte di file relativamente semplici. Sono attualmente supportati C++solo i tipi di progetto, C# Apache Cordova, Visual Basic e.
 
 ## <a name="add-files-to-a-solution"></a>Aggiungere file a una soluzione
 

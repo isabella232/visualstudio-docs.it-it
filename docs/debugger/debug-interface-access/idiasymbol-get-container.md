@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b8d43931b880ff61ec9871f9f5984b98833c28
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0533eb2cdea1dd3e1bea3d64e2b94ce29a09353d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64787887"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740771"
 ---
-# <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
-Questa funzione recupera un puntatore a un simbolo che rappresenta il contenitore/padre di questo simbolo.
+# <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
+Questa funzione recupera un puntatore a un simbolo che rappresenta il padre o il contenitore del simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,19 +33,19 @@ HRESULT get_container(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un puntatore a un `IDiaSymbol` contenente informazioni sul contenitore di questo simbolo.
+out Restituisce un puntatore a un `IDiaSymbol` contenente informazioni sul contenitore di questo simbolo.
 
 ## <a name="return-value"></a>Valore restituito
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce S_FALSE o un codice di errore.
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce S_FALSE o un codice di errore.
 
 > [!NOTE]
-> Un valore restituito S_FALSE significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di S_FALSE indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

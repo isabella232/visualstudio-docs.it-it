@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10835f422f8d2d116234eadd91da0d27c424f314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef17e1073c67ede75d075b18773129c287349c0d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554222"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745010"
 ---
-# <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
-Set di intestazioni per abilitare la conversione dell'indirizzo virtuale relativo dell'immagine.
+# <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
+Imposta le intestazioni dell'immagine per abilitare la conversione di indirizzi virtuali relativa.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,23 +35,23 @@ HRESULT set_imageHeaders ( 
 #### <a name="parameters"></a>Parametri
  cbData
 
-[in] Numero di byte di dati dell'intestazione. Deve essere `n*sizeof(IMAGE_SECTION_HEADER)` in cui `n` è il numero di intestazioni delle sezioni nel file eseguibile.
+in Numero di byte dei dati di intestazione. Deve essere `n*sizeof(IMAGE_SECTION_HEADER)` dove `n` è il numero di intestazioni di sezione nell'eseguibile.
 
  data[]
 
-[in] Matrice di `IMAGE_SECTION_HEADER` strutture da utilizzare come intestazioni di immagine.
+in Matrice di strutture di `IMAGE_SECTION_HEADER` da utilizzare come intestazioni di immagine.
 
  originalHeaders
 
-[in] Impostare su `FALSE` se le intestazioni di immagine dalla nuova immagine, `TRUE` se riflettono l'immagine originale prima di un aggiornamento. In genere, ciò verrebbe impostato su `TRUE` solo in combinazione con le chiamate per il [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (metodo).
+in Impostare su `FALSE` se le intestazioni di immagine sono della nuova immagine, `TRUE` se riflettono l'immagine originale prima di un aggiornamento. In genere, questo viene impostato su `TRUE` solo in combinazione con le chiamate al metodo [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Il `IMAGE_SECTION_HEADER` struttura è dichiarato in Winnt. h e rappresenta il formato dell'intestazione sezione del file eseguibile.
+ La struttura di `IMAGE_SECTION_HEADER` viene dichiarata in Winnt. h e rappresenta il formato dell'intestazione della sezione dell'immagine del file eseguibile.
 
- I calcoli di indirizzo virtuale relativo variano a seconda di `IMAGE_SECTION_HEADER` valori. In genere, il DIA recupera queste informazioni dal file di database (con estensione pdb) di programma. Se questi valori sono mancanti, il DIA non riesce a calcolare indirizzi virtuali relativi e la [Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) restituzione del metodo `FALSE`. Il client deve quindi chiamare il [Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) metodo per consentire i calcoli di indirizzo virtuale relativo dopo aver fornito le intestazioni di immagine mancante dall'immagine di se stesso.
+ I calcoli degli indirizzi virtuali relativi dipendono dai valori `IMAGE_SECTION_HEADER`. In genere, il DIA li recupera dal file di database di programma (con estensione pdb). Se questi valori sono mancanti, il DIA non è in grado di calcolare gli indirizzi virtuali relativi e il metodo [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) restituisce `FALSE`. Il client deve quindi chiamare il metodo [IDiaAddressMap::P ut_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) per abilitare i calcoli degli indirizzi virtuali relativi dopo aver fornito le intestazioni di immagine mancanti dall'immagine stessa.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

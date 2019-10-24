@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 209ce1189963a3943a691b71c840474c3da1a07c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7185498f351b8f69c926b7247ea348d5674ce6a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808828"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740690"
 ---
-# <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
-Recupera un flag che specifica se la funzione contiene un lontano restituito.
+# <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
+Recupera un flag che specifica se la funzione contiene un valore di restituzione molto lungo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,19 +33,19 @@ HRESULT get_farReturn(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[in] Restituisce `TRUE` se la funzione Usa un lontano restituito, in caso contrario, restituisce `FALSE`.
+in Restituisce `TRUE` se la funzione usa un valore di restituzione molto, in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

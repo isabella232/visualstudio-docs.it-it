@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69dac79a040a8eff68c36c82b9a85935d969b5ec
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e4254a121ce29578438f4ee7264345aa30bafd7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808910"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739614"
 ---
-# <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
-Recupera il tipo del puntatore a oggetto per un metodo della classe.
+# <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
+Recupera il tipo del puntatore all'oggetto per un metodo della classe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,16 +33,16 @@ HRESULT get_objectPointerType ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il puntatore all'oggetto per un metodo della classe.
+out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il puntatore all'oggetto per un metodo della classe.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- Questa proprietà si applica solo ai simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo di `SymTagFunctionType`.
+ Questa proprietà si applica solo ai simboli con un tipo di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagFunctionType`.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Area di test 8: Cambio di plug-in | Microsoft Docs'
+title: 'Area di test 8: cambio di plug-in | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,46 +11,46 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6af0a0333131697526d1ffcc8394f7bfe81ca6b4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fb815a773351c1bb6212962a639e2758114a0e2c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327804"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722427"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Area di test 8: Cambio di plug-in
-Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) è l'interfaccia utente (UI) per modificare il controllo del codice sorgente corrente del plug-in. Questa area di test fornisce i test case per il processo di selezione plug-in da usare per la soluzione controllo del codice sorgente che.
+Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) dispone dell'interfaccia utente per modificare il plug-in del controllo del codice sorgente corrente. Questa area di test fornisce i test case per il processo di selezione del plug-in da utilizzare per il controllo del codice sorgente della soluzione.
 
-## <a name="command-menu-access"></a>Accesso a comandi di Menu
- Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei test case vengono usati percorsi di menu ambiente di sviluppo integrato.
+## <a name="command-menu-access"></a>Accesso al menu dei comandi
+ Nei test case vengono utilizzati i seguenti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment i percorsi dei menu.
 
-- Controllo origine corrente del plug-in: **Gli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **Selezione plug-in**.
+- Plug-in del controllo del codice sorgente corrente: **strumenti**  -> **Opzioni**  -> **controllo del codice sorgente**  -> **Selezione plug-in**.
 
-- Modificare l'origine dell'associazione di controllo: **File** -> **controllo del codice sorgente** -> **Modifica controllo del codice sorgente**...
+- Modifica associazione del controllo del codice sorgente: **File**  -> **controllo** del codice sorgente  -> **modificare il controllo del codice sorgente**...
 
 ## <a name="common-expected-behavior"></a>Comportamento previsto comune
- Il plug-in per una soluzione di controllo del codice sorgente è possibile modificare senza uscire da Visual Studio o il ricaricamento della soluzione. Inoltre, il controllo del codice sorgente corrente del plug-in modifica automaticamente a quella usata da una soluzione quando tale soluzione è caricata.
+ È possibile modificare il plug-in del controllo del codice sorgente per una soluzione senza uscire da Visual Studio o ricaricare la soluzione. Inoltre, il plug-in del controllo del codice sorgente corrente viene automaticamente modificato in quello utilizzato da una soluzione quando viene caricata la soluzione.
 
 ## <a name="test-cases"></a>Test case
- Di seguito sono specifici test case per l'area di test di commutazione del plug-in.
+ Di seguito sono riportati i test case specifici per l'area di test del commutatore plug-in.
 
-### <a name="case-8a-automatic-change"></a>Case 8a: Modifiche automatico
+### <a name="case-8a-automatic-change"></a>Caso 8a: modifica automatica
 
 #### <a name="expected-behavior"></a>Comportamento previsto
- Quando un utente viene caricata una soluzione che si trova sotto controllo del codice sorgente, la soluzione viene automaticamente caricata e il plug-in del controllo del codice sorgente appropriato viene selezionata come corrente.
+ Quando un utente carica una soluzione nel controllo del codice sorgente, la soluzione viene caricata automaticamente e il plug-in del controllo del codice sorgente appropriato viene selezionato come corrente.
 
-| Operazione | Passi del test | Per verificare i risultati previsti |
+| Operazione | Passi del test | Risultati previsti da verificare |
 | - | - | - |
-| Modifica del plug-in controllo origine automatica | 1.  Selezionare plug-nel test come corrente (**degli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **plug-in Selezione**.)<br />2.  Creare un nuovo progetto.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Selezionare un altro plug-in (ad esempio, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Accettare scaricamento soluzione richiesta.<br />6.  Riaprire la soluzione dal disco. | Soluzione è aperta.<br /><br /> Plug-in sottoposta a test è il controllo del codice sorgente corrente del plug-in. |
+| Modifica del plug-in del controllo del codice sorgente automatico | 1. Selezionare il plug-in sottoposto a test come corrente (**strumenti**  -> **Opzioni**  -> **controllo del codice sorgente**  -> **Selezione plug-in**.)<br />2. creare un nuovo progetto.<br />3. aggiungere la soluzione al controllo del codice sorgente.<br />4. Selezionare un altro plug-in, ad esempio [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)].<br />5. accettare la richiesta di scaricamento della soluzione.<br />6. riaprire la soluzione dal disco. | La soluzione è aperta.<br /><br /> Il plug-in sottoposto a test è il plug-in del controllo del codice sorgente corrente. |
 
-### <a name="case-8b-solution-based-change"></a>Case 8b: Modifica basati su soluzioni
+### <a name="case-8b-solution-based-change"></a>Caso 8b: modifica basata sulla soluzione
 
 #### <a name="expected-behavior"></a>Comportamento previsto
- La soluzione può avere il controllo del codice sorgente associato del plug-in modificato.
+ È possibile modificare il plug-in del controllo del codice sorgente associato alla soluzione.
 
-| Operazione | Passi del test | Per verificare i risultati previsti |
+| Operazione | Passi del test | Risultati previsti da verificare |
 |----------------------------------| - | - |
-| Modifica del plug-in per una soluzione | 1.  Selezionare plug-nel test come corrente (**degli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **plug-in Selezione**).<br />2.  Creare un nuovo progetto e soluzione.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Dissociare la soluzione dal controllo del codice sorgente (usando il **Modifica controllo del codice sorgente** nella finestra di dialogo).<br />5.  Selezionare un altro plug-in (ad esempio, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6.  Ricaricare la soluzione dal disco se scaricato.<br />7.  Aggiungere la soluzione al controllo del codice sorgente.<br />8.  Dissociare la soluzione dal controllo del codice sorgente (tramite **Modifica controllo del codice sorgente** nella finestra di dialogo).<br />9. Selezione plug-in sottoposta a test nuovamente.<br />10. Ricaricare la soluzione dal disco se scaricato.<br />11. Associare la soluzione nel percorso originale (tramite il **Modifica controllo del codice sorgente** nella finestra di dialogo). | Soluzione viene aggiunta al controllo del codice sorgente usando il plug-in. |
+| Modifica del plug-in per una soluzione | 1. Selezionare il plug-in sottoposto a test come corrente (**strumenti**  -> **Opzioni**  -> **controllo del codice sorgente**  -> **Selezione plug-in**).<br />2. creare un nuovo progetto e una nuova soluzione.<br />3. aggiungere la soluzione al controllo del codice sorgente.<br />4. annullare l'associazione della soluzione dal controllo del codice sorgente usando la finestra di dialogo **modifica controllo del codice sorgente** .<br />5. Selezionare un altro plug-in, ad esempio [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)].<br />6. ricaricare la soluzione dal disco se scaricata.<br />7. aggiungere la soluzione al controllo del codice sorgente.<br />8. annullare l'associazione della soluzione dal controllo del codice sorgente usando la finestra di dialogo **modifica controllo del codice sorgente** .<br />9. Selezionare di nuovo il plug-in sottoposto a test.<br />10. ricaricare la soluzione dal disco se scaricata.<br />11. associare la soluzione al percorso originale (usando la finestra di dialogo **modifica controllo del codice sorgente** ). | La soluzione viene aggiunta al controllo del codice sorgente utilizzando il plug-in selezionato. |
 
 ## <a name="see-also"></a>Vedere anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

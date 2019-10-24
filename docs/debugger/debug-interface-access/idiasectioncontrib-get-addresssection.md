@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89642ac461de6157de7c75e91532191f85b167a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ccca5decf432169add7ebf6d70a33fe6b5c1c9e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832499"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742765"
 ---
-# <a name="idiasectioncontribgetaddresssection"></a>IDiaSectionContrib::get_addressSection
+# <a name="idiasectioncontribget_addresssection"></a>IDiaSectionContrib::get_addressSection
 Recupera la parte della sezione dell'indirizzo del contributo.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce la parte della sezione dell'indirizzo del contributo.
+out Restituisce la parte della sezione dell'indirizzo del contributo.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99d549a0edc56d48d686424c35f22fc7ea74438b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 49cf159501e3f582010d514a586151e0626fc8f7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841186"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738962"
 ---
-# <a name="idiasymbolgetunmodifiedtypeid"></a>IDiaSymbol::get_unmodifiedTypeId
+# <a name="idiasymbolget_unmodifiedtypeid"></a>IDiaSymbol::get_unmodifiedTypeId
 Recupera l'ID del tipo originale (non modificato).
 
 ## <a name="syntax"></a>Sintassi
@@ -30,7 +30,7 @@ HRESULT get_unmodifiedTypeId(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `DWORD` che contiene l'ID.
+out Puntatore a un `DWORD` che include l'ID.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

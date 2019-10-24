@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 421581520f28037bc4b8fce9d546eaffad557f75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cf1a29019de2d3ffdfdb3cc7b9006e964495aa9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839719"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742977"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
-Determina se la ricerca di file con estensione pdb nella directory radice di sistema.
+Determina se la ricerca di file con estensione PDB è consentita nella directory radice di sistema.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,7 +32,7 @@ HRESULT RestrictSystemRootAccess();
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Diverso da qualsiasi codice restituito `S_OK` impedisce la ricerca la radice di sistema per i file con estensione pdb.
+ Qualsiasi codice restituito diverso da `S_OK` impedisce la ricerca nei file con estensione pdb della radice di sistema.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

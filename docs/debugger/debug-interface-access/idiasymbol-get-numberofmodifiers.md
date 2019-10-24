@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfModifiers | Microsoft Docs
+title: 'IDiaSymbol:: get_numberOfModifiers | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a83a83a805aa86d10b3c051ac1c6fc39f36f14
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e034f081f8a279a65134c40e5ee485cd1d08d9b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835993"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739675"
 ---
-# <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
-Recupera il numero di modificatori che vengono applicati al tipo originale.
+# <a name="idiasymbolget_numberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
+Recupera il numero di modificatori applicati al tipo originale.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ HRESULT get_numberOfModifiers(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `DWORD` che specifica il numero di modificatori che vengono applicati al tipo originale.
+out Puntatore a un `DWORD` che specifica il numero di modificatori applicati al tipo originale.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834130"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738640"
 ---
 # <a name="locationtype"></a>LocationType
-Indica il tipo di informazioni di percorso contenute in un simbolo.
+Indica il tipo di informazioni sulla posizione contenute in un simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -42,37 +42,37 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Elementi
-`LocIsNull` Informazioni sulla posizione non è disponibile.
+le informazioni sul percorso `LocIsNull` non sono disponibili.
 
-`LocIsStatic` Posizione è statica.
+il percorso del `LocIsStatic` è statico.
 
-`LocIsTLS` Si trova nell'archiviazione thread-local.
+il percorso del `LocIsTLS` è nell'archiviazione thread-local.
 
-`LocIsRegRel` Percorso è relativo al registro.
+`LocIsRegRel` percorso è relativo al registro.
 
-`LocIsThisRel` Percorso è `this`-relativo.
+il percorso `LocIsThisRel` è relativo `this`.
 
-`LocIsEnregistered` Si trova in un registro di sistema.
+il percorso `LocIsEnregistered` si trova in un registro.
 
-`LocIsBitField` Si trova in un campo di bit.
+il percorso del `LocIsBitField` è in un campo di bit.
 
-`LocIsSlot` Trova uno slot di Microsoft Intermediate Language (MSIL).
+`LocIsSlot` percorso è uno slot Microsoft Intermediate Language (MSIL).
 
-`LocIsIlRel` Percorso è relativo al codice MSIL.
+`LocIsIlRel` percorso è relativo a MSIL.
 
-`LocInMetaData` Si trova nei metadati.
+il percorso del `LocInMetaData` è nei metadati.
 
-`LocIsConstant` Si trova in un valore costante.
+il percorso del `LocIsConstant` è in un valore costante.
 
-`LocTypeMax` Il numero di tipi di percorso di questa enumerazione.
+`LocTypeMax` il numero di tipi di posizione in questa enumerazione.
 
 ## <a name="remarks"></a>Note
-Le proprietà disponibili per il [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaccia dipendono dalla posizione del simbolo all'interno del file di immagine. Per altre informazioni, vedere [percorsi di simboli](../../debugger/debug-interface-access/symbol-locations.md).
+Le proprietà disponibili per l'interfaccia [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dipendono dalla posizione del simbolo all'interno del file di immagine. Per ulteriori informazioni, vedere [posizioni dei simboli](../../debugger/debug-interface-access/symbol-locations.md).
 
-I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) (metodo).
+I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

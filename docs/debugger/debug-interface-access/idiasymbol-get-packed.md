@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91e99da7832bb2a0e067de6eb3c09f90255eaf32
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 420ba5b56342b4b1d5b8e4c2756aa828e5fe53b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785840"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739533"
 ---
-# <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) verrà compressi.
+# <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
+Recupera un flag che specifica se il tipo di dati definito dall'utente (UDT) è compresso.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,16 +33,16 @@ HRESULT get_packed ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce `TRUE` se il tipo definito dall'utente viene compresso; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se il tipo definito dall'utente è compresso; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- Compressi significa che tutti i membri del tipo in questione vengono posizionati come vicini possibili, senza spazi intermedi in linea con i limiti di memoria.
+ Compresso significa che tutti i membri del tipo definito dall'utente vengono posizionati il più vicino possibile, senza spaziatura interna per allinearli ai limiti della memoria.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
