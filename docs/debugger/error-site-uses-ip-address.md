@@ -1,5 +1,5 @@
 ---
-title: "Errore: Sito Usa l'indirizzo IP | Microsoft Docs"
+title: "Errore: il sito usa l'indirizzo IP | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 468cb2c85be088213bc865122a790408c6c992b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96786efad0349dec7c9e8e9a02cca40af3668341
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850424"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737494"
 ---
-# <a name="error-site-uses-ip-address"></a>Errore: Il sito usa un indirizzo IP
+# <a name="error-site-uses-ip-address"></a>Errore: il sito utilizza un indirizzo IP
 Questo errore si verifica quando il debugger tenta di connettersi automaticamente a un'applicazione Web che utilizza un indirizzo IP ed è dovuto alla selezione di **Usa indirizzo IP specifico** anziché **Identificazione sito Web** in IIS.
 
  Per il funzionamento della connessione automatica, occorre creare il progetto con l'indirizzo IP specifico piuttosto che con il semplice nome del computer. In caso contrario, il debugger modificherà il nome del computer in localhost causando l'esito negativo dell'invio del verbo debug a IIS.
@@ -37,4 +37,4 @@ Questo errore si verifica quando il debugger tenta di connettersi automaticament
 2. Modificare l'impostazione **Identificazione sito Web IIS**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+- [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

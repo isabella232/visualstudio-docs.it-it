@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93cbefe716b46b3dd3fe481447612c5c7f65daa3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd8fb5439ac68200ba1a3bbf3af665595528173e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721075"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>Funzione SccIsMultiCheckoutEnabled
-Questa funzione controlla se il plug-in del controllo del codice sorgente consente le estrazioni multiple in un file.
+Questa funzione controlla se il plug-in del controllo del codice sorgente consente più estrazioni in un file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,22 +34,22 @@ SCCRTN SccIsMultiCheckoutEnabled(
 #### <a name="parameters"></a>Parametri
  pContext
 
-[in] La struttura del contesto plug-in del controllo origine.
+in Struttura del contesto del plug-in del controllo del codice sorgente.
 
  pbMultiCheckout
 
-[out] Specifica se le estrazioni multiple sono abilitate per questo progetto (diverso da zero indica che le estrazioni multiple sono supportate).
+out Specifica se sono abilitate più estrazioni per questo progetto (valore diverso da zero indica che sono supportate più estrazioni).
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
 
 |Value|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Il controllo è riuscito.|
+|SCC_OK|Il controllo è stato completato correttamente.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|
 
 ## <a name="remarks"></a>Note
- Nell'IDE viene due controlli per determinare se i file possono essere estratti contemporaneamente da più di un utente. In primo luogo, il controllo del codice sorgente deve supportare estrazioni multiple. Il plug-in del controllo del codice sorgente possa specificare questa funzionalità durante l'inizializzazione, specificando il `SCC_CAP_MULTICHECKOUT`. Successivamente, come un secondo controllo, l'IDE chiama questa funzione per determinare se il progetto corrente supporta le estrazioni multiple. Se le estrazioni multiple sono supportate per il progetto selezionato, i plug-in restituisce un esito positivo del codice e imposta `pbMultiCheckout` diverso da zero a (`TRUE`) o `FALSE`.
+ L'IDE esegue due controlli per determinare se i file possono essere estratti simultaneamente da più di un utente. In primo luogo, il sistema di controllo del codice sorgente deve supportare più estrazioni. Il plug-in del controllo del codice sorgente può specificare questa funzionalità durante l'inizializzazione specificando la `SCC_CAP_MULTICHECKOUT`. Successivamente, come secondo controllo, l'IDE chiama questa funzione per determinare se il progetto corrente supporta più estrazioni. Se per il progetto selezionato sono supportate più estrazioni, il plug-in restituisce un codice di esito positivo e imposta `pbMultiCheckout` su un valore diverso da zero (`TRUE`) o `FALSE`.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

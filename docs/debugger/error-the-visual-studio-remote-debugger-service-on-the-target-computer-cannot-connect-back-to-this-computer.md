@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer'
+title: 'Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043433"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737413"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
-Questo errore indica che il servizio debugger remoto sia in esecuzione con un account utente che non è possibile eseguire l'autenticazione quando si tenta di connettersi al computer in cui sta eseguendo il debug. Questo errore può verificarsi quando il debug remoto tramite il motore di debug legacy e il debugger remoto è in esecuzione come servizio.
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
+Questo errore indica che il servizio debugger remoto è in esecuzione con un account utente che non è in grado di eseguire l'autenticazione quando tenta di connettersi al computer da cui si esegue il debug. Questo errore può verificarsi quando il debug remoto utilizza il motore di debug legacy e il debugger remoto viene eseguito come servizio.
 
  Nella tabella riportata di seguito sono indicati gli account in grado di accedere al computer:
 
@@ -46,7 +46,7 @@ Questo errore indica che il servizio debugger remoto sia in esecuzione con un ac
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-1. Assicurarsi che il servizio Debugger remoto di Visual Studio sia configurato in modo corretto nel computer remoto. Per altre informazioni, vedere [debug remoto](../debugger/remote-debugging.md).
+1. Assicurarsi che il servizio Debugger remoto di Visual Studio sia configurato in modo corretto nel computer remoto. Per ulteriori informazioni, vedere [Remote Debugging](../debugger/remote-debugging.md).
 
 2. Eseguire il servizio Debugger remoto utilizzando un account in grado di accedere al computer host del debugger, come indicato nella tabella precedente.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Errore: Debug in modalità mista è supportato solo quando si usa Microsoft .NET Framework 2.0 o versione successiva | Microsoft Docs'
+title: 'Errore: il debug in modalità mista è supportato solo quando si usa Microsoft .NET Framework 2,0 o versione successiva | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fd30fb1b181224b61b96670553ef5aa6ff0f721
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c85dac85146c59d8aeba9f9cf85351b5bc17a81c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745273"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737618"
 ---
-# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Errore: Il debug in modalità mista è supportato solo quando si usa Microsoft .NET Framework 2.0 o versione successiva
-Per eseguire il debug di codice nativo e gestito misto, è necessario disporre di .NET Framework versione 2.0, 3.0. 3.5 o 4. Debug con le versioni precedenti di .NET Framework in modalità mista non è supportata.
+# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Errore: il debug in modalità mista è supportato solo quando si utilizza Microsoft .NET Framework 2.0 o versione successiva
+Per eseguire il debug di codice nativo e gestito misto, è necessario avere .NET Framework versione 2,0, 3,0. 3.5 o 4. Il debug in modalità mista con versioni precedenti del .NET Framework non è supportato.
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-- Aggiornare .NET Framework versione 2.0, 3.0, 3.5 o 4.0.
+- Aggiornare il .NET Framework alla versione 2,0, 3,0, 3,5 o 4,0.
 
 ## <a name="see-also"></a>Vedere anche
 - [Remote Debugging](../debugger/remote-debugging.md)

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e0d8c37b4016412f6dca8772d22baf65799429
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9640fa8f82c7bb87990c97ef7916e7323943ece
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832799"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741640"
 ---
-# <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
+# <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
 Recupera il numero massimo di byte inseriti nello stack nel frame.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero massimo di byte inseriti nello stack.
+out Restituisce il numero massimo di byte inseriti nello stack.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
