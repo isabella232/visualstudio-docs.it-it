@@ -1,5 +1,5 @@
 ---
-title: Acquisizione di informazioni grafiche | Microsoft Docs
+title: Acquisizione delle informazioni grafiche | Microsoft Docs
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389701"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736202"
 ---
 # <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
 Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.
@@ -27,17 +27,17 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Per eseguire l'applicazione nella diagnostica della grafica
 
-- Nella barra dei menu, scegliere **Debug**, **grafica**, **Avvia debug grafica**. (Tastiera: Premere ALT+F5)
+- Sulla barra dei menu scegliere **debug**, **grafica**, **Avvia debug grafica**. Tastiera: premere ALT+F5.
 
-- Nel **grafica** sulla barra degli strumenti, scegliere il **Avvia debug grafica** pulsante.
+- Sulla barra degli strumenti **grafica** scegliere il pulsante **Avvia debug grafica** .
 
   Se un'app è in esecuzione nella diagnostica grafica, verranno costantemente acquisiti determinati tipi di informazioni grafiche, tra cui la configurazione dei dispositivi, la creazione della catena di scambio e di oggetti grafici e risorse, nonché altri eventi importanti che influiscono su più di un frame. Contemporaneamente, è possibile acquisire informazioni dettagliate su frame specifici; tali informazioni includono chiamate di disegno e invii di compute shader, oltre a risorse e oggetti Direct3D che li supportano.
 
 ### <a name="to-capture-a-frame"></a>Per acquisire un frame
 
-- In Visual Studio sul **grafica** sulla barra degli strumenti, fare clic sui **Acquisisci Frame** pulsante ![icona pulsante acquisizione grafica](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").
+- In Visual Studio, sulla barra degli strumenti **grafica** , fare clic sull'icona del pulsante **Acquisisci frame** pulsante ![Acquisisci](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").
 
-- Sulla tastiera, premere il tasto STAMP.
+- Premere il tasto stampa sullo schermo sulla tastiera.
 
   > [!NOTE]
   > Mentre un'app è in esecuzione in **Diagnostica della grafica**, è possibile usare il tasto STAMP solo per acquisire un frame di informazioni grafiche e non per eseguire la funzione standard. Questa condizione rimarrà attiva finché non si deciderà di interrompere l'acquisizione delle informazioni grafiche, in genere arrestando il debug o chiudendo l'app, anche se un'altra app presenta lo stato attivo.
@@ -61,18 +61,18 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
 
 2. Nell'elenco di categorie delle opzioni a sinistra scegliere Diagnostica grafica, quindi configurare le opzioni desiderate di Diagnostica grafica.
 
-     **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** selezionare questa casella per raccogliere gli stack di chiamate. Per impostazione predefinita, gli stack di chiamate non vengono raccolti. Per acquisire gli stack di chiamate, assicurarsi che la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** sia selezionata e quindi impostare l'opzione **per indicatori _draw, dispatch, present e perf** (predefinita) per raccogliere solo gli stack di chiamate più importanti oppure l'opzione **per tutto** per raccogliere tutti gli stack di chiamate. Per interrompere la raccolta degli stack di chiamate in un momento successivo, deselezionare la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)**.
+     **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** Selezionare questa casella per raccogliere gli stack di chiamate. Per impostazione predefinita, gli stack di chiamate non vengono raccolti. Per acquisire gli stack di chiamate, assicurarsi che la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** sia selezionata e quindi impostare l'opzione **per indicatori _draw, dispatch, present e perf** (predefinita) per raccogliere solo gli stack di chiamate più importanti oppure l'opzione **per tutto** per raccogliere tutti gli stack di chiamate. Per interrompere la raccolta degli stack di chiamate in un momento successivo, deselezionare la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** .
 
-     **Disabilita HUD di gioco durante l'acquisizione** controlla questa casella per disabilitare l'HUD sovrapporre che un'app in esecuzione con grafica diagnostica generalmente vengono visualizzati. Deselezionarla per visualizzare l'hud in sovraimpressione.
+     **Disabilitare HUD di gioco durante l'acquisizione** Selezionare questa casella per disabilitare la sovrimpressione HUD visualizzata in genere da un'app in esecuzione nella diagnostica della grafica. Deselezionarla per visualizzare l'hud in sovraimpressione.
 
-     **Acquisisci in modalità di compatibilità** selezionare questa casella per acquisire informazioni grafiche in modalità di compatibilità. L'acquisizione in modalità di compatibilità è l'impostazione predefinita. In modalità di compatibilità Direct3D non segnalerà che la GPU supporta tutte le funzionalità aggiuntive oltre a quelle definite nel livello funzionalità di base. Ciò impedisce all'app da acquisire di usare le estensioni specifiche dell'hardware della GPU su cui viene acquisita e assicura che il log di grafica possa essere riprodotto con qualsiasi GPU che supporta lo stesso livello funzionalità o un livello superiore. Deselezionare questa casella per disabilitare la modalità di compatibilità. I log acquisiti con la modalità di compatibilità disabilitata non verranno riprodotti su una GPU che non supporta le stesse funzionalità aggiuntive usate dall'app durante l'acquisizione.
+     **Acquisisci in modalità di compatibilità** Selezionare questa casella per acquisire le informazioni grafiche in modalità di compatibilità. L'acquisizione in modalità di compatibilità è l'impostazione predefinita. In modalità di compatibilità Direct3D non segnalerà che la GPU supporta tutte le funzionalità aggiuntive oltre a quelle definite nel livello funzionalità di base. Ciò impedisce all'app da acquisire di usare le estensioni specifiche dell'hardware della GPU su cui viene acquisita e assicura che il log di grafica possa essere riprodotto con qualsiasi GPU che supporta lo stesso livello funzionalità o un livello superiore. Deselezionare questa casella per disabilitare la modalità di compatibilità. I log acquisiti con la modalità di compatibilità disabilitata non verranno riprodotti su una GPU che non supporta le stesse funzionalità aggiuntive usate dall'app durante l'acquisizione.
 
-     **Arrestare l'acquisizione se vengono rilevati errori livelli SDK** selezionare questa casella per interrompere immediatamente l'acquisizione se vengono rilevati errori.
+     **Interrompi acquisizione se vengono trovati errori dei livelli SDK** Selezionare questa casella per arrestare immediatamente l'acquisizione se vengono rilevati errori.
 
 ## <a name="capturing-graphics-information-remotely"></a>Acquisizione remota di informazioni grafiche
  È possibile acquisire informazioni grafiche da un'app in esecuzione nel computer locale o in un computer o dispositivo remoto. L'acquisizione remota è supportata per i computer [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] e i dispositivi [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)]. Per acquisire informazioni grafiche da un'app in esecuzione in remoto, configurare il progetto per il debug remoto e quindi eseguire l'app nella diagnostica della grafica come descritto in precedenza. L'app viene eseguita nel computer remoto e le informazioni grafiche acquisite vengono registrate nel computer di sviluppo.
 
- La modalità di configurazione del progetto per il debug remoto varia a seconda del tipo di app sviluppata e dal linguaggio di programmazione in uso. Per informazioni su come configurare il debug remoto per un'app UWP, vedere [eseguire App UWP in un computer remoto](../run-windows-store-apps-on-a-remote-machine.md). Per informazioni su come configurare il debug remoto per un'app desktop di Windows, vedere [debug remoto](../remote-debugging.md).
+ La modalità di configurazione del progetto per il debug remoto varia a seconda del tipo di app sviluppata e dal linguaggio di programmazione in uso. Per informazioni su come configurare il debug remoto per un'app UWP, vedere [eseguire app UWP in un computer remoto](../run-windows-store-apps-on-a-remote-machine.md). Per informazioni su come configurare il debug remoto per un'app desktop di Windows, vedere [Remote Debugging](../remote-debugging.md).
 
  Successivamente sarà possibile usare un computer o un dispositivo remoto per riprodurre le informazioni grafiche, indipendentemente dall'origine dell'acquisizione. Per altre informazioni, vedere [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
@@ -80,4 +80,4 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
  È possibile acquisire le informazioni grafiche da un'app con uno strumento da riga di comando. Questo strumento, DXCap.exe, può acquisire e riprodurre rapidamente le informazioni grafiche senza usare Visual Studio o l'acquisizione a livello di codice. In particolare, è possibile usare DXCap.exe per l'automazione o in un ambiente di test. Per altre informazioni su DXCap.exe, vedere [Strumento di acquisizione da riga di comando](command-line-capture-tool.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura dettagliata: Acquisizione di informazioni grafiche](walkthrough-capturing-graphics-information.md)
+- [Procedura dettagliata: cattura delle informazioni grafica](walkthrough-capturing-graphics-information.md)

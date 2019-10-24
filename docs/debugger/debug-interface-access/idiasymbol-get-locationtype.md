@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: add36da660b9ab8130884db0a4088b693af18a6d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b10668a4767d411f48df213c79ae6508e7c0bf28
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785668"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739846"
 ---
-# <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
-Recupera il tipo di percorso di un simbolo di dati.
+# <a name="idiasymbolget_locationtype"></a>IDiaSymbol::get_locationType
+Recupera il tipo di posizione di un simbolo di dati.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_locationType ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un valore di [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) enumerazione che specifica il tipo di percorso di un simbolo di dati, ad esempio `static` o `local`.
+out Restituisce un valore dall'enumerazione Enumerazione [LocationType](../../debugger/debug-interface-access/locationtype.md) che specifica il tipo di posizione di un simbolo di dati, ad esempio `static` o `local`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

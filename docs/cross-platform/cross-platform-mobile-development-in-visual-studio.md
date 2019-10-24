@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e82828296234b13e36b7d3eabf071071ebb708d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589022"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777773"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -33,7 +33,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Installare Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Installare Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Informazioni su Xamarin in Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Documentazione di Xamarin sullo sviluppo di app per dispositivi mobili](/xamarin/) |
 |[DevOps con app Xamarin](/xamarin/tools/ci/devops/) |
@@ -108,9 +108,9 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Installare Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Installare Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Introduzione a Strumenti di Visual Studio per Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Informazioni sull'emulatore di Visual Studio per Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Informazioni sull'emulatore di Visual Studio per Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end
 
@@ -140,7 +140,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
 |**Altre informazioni**|
 |--------------------|
-|[Scarica Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Scarica Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Installare lo sviluppo di app per dispositivi mobili multipiattaforma conC++](install-visual-cpp-for-cross-platform-mobile-development.md)|
 |[Altre informazioni sull'uso C++ di per la destinazione di più piattaforme](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Installare gli elementi necessari, quindi creare un'applicazione di attività nativa per Android](create-an-android-native-activity-app.md)|
@@ -163,8 +163,8 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |[Altre informazioni su Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Iniziare a usare Visual Studio Tools per Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Informazioni sugli ultimi miglioramenti apportati a Visual Studio Tools per Unity 2.0 Preview](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog di Visual Studio)|
-|[Guardare un video di introduzione a Visual Studio Tools per Unity 2.0 Preview](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
-|[Informazioni su Unity](http://unity3d.com/) (sito Web Unity)|
+|[Guardare un video di introduzione a Visual Studio Tools per Unity 2.0 Preview](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
+|[Informazioni su Unity](https://unity.com/) (sito Web Unity)|
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36cf93beb6b6c8b66ec25dc8008be7024e398b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fe5589b667054ee75e3b01743553a2d60bef92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554339"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745070"
 ---
-# <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
-Specifica se la mappa indirizzi deve essere utilizzata per convertire gli indirizzi di simboli.
+# <a name="idiaaddressmapput_addressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
+Specifica se la mappa degli indirizzi deve essere utilizzata per tradurre gli indirizzi dei simboli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,17 +33,17 @@ HRESULT put_addressMapEnabled ( 
 #### <a name="parameters"></a>Parametri
  NewVal
 
-[in] Impostare su `TRUE` per abilitare la traduzione di simboli o `FALSE` disabilitare.
+in Impostare su `TRUE` per abilitare la conversione di simboli o `FALSE` per disabilitare.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Eseguibile postprocessori talvolta aggiornare il file eseguibile. DIA contiene un meccanismo per supportare la traduzione di simboli a cui il nuovo layout.
+ I successivi processori eseguibili a volte aggiornano il file eseguibile. DIA contiene un meccanismo per supportare la conversione di simboli nel nuovo layout.
 
- Quando viene caricato un file PDB, viene abilitata la mappa indirizzi archiviata nel file. Esistono casi, tuttavia, quando un'applicazione client potrebbe essere necessario fornire la propria mappa indirizzo chiamando il [Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (metodo). Se il `set_addressMap` metodo ha esito positivo, l'applicazione client deve chiamare il `put_addressMapEnabled` metodo con un `NewVal` parametri di `TRUE` per consentire l'uso della mappa tale indirizzo.
+ Quando viene caricato un file PDB, la mappa degli indirizzi archiviata nel file è abilitata. In alcuni casi, tuttavia, quando un'applicazione client potrebbe dover fornire la propria mappa degli indirizzi chiamando il metodo [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) . Se il `set_addressMap` metodo ha esito positivo, l'applicazione client deve chiamare il metodo `put_addressMapEnabled` con un parametro `NewVal` di `TRUE` per consentire l'uso di tale mappa di indirizzi.
 
- Può essere recuperato lo stato corrente della mappa indirizzo viene abilitata con una chiamata ai [Get_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) (metodo).
+ Lo stato corrente della mappa degli indirizzi abilitata può essere recuperato con una chiamata al metodo [IDiaAddressMap:: get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

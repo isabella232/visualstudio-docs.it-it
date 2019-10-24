@@ -1,5 +1,5 @@
 ---
-title: Asserzione non riuscita nella finestra di dialogo | Microsoft Docs
+title: Finestra di dialogo asserzione non riuscita | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,20 +20,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39362adf5837e3293782df04627af9acd06fdd88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564619"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745772"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
 Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia valore True in un dato punto del programma. Se questa condizione non restituisce True, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata questa finestra di dialogo.
 
-|Fare clic su|A|
+|Fare clic su|Per|
 |-----------|--------|
 |Riprova|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|
-|Ignora|Ignorare l'asserzione e continuare l'esecuzione del programma.|
+|Ignore|Ignorare l'asserzione e continuare l'esecuzione del programma.|
 |Abort|Interrompere l'esecuzione del programma e terminare la sessione di debug.|
 
 ## <a name="see-also"></a>Vedere anche

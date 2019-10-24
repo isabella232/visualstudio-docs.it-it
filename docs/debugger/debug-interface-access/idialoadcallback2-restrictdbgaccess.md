@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24317ff7a79815e5af2306b09cc8d2aa3bfdde0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79756c2f9ab9e69fa45041e2ddaa2ff2119c27c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832670"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743007"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-Determina se alla ricerca di informazioni di debug è consentita dai file DBG.
+Determina se la ricerca di informazioni di debug è consentita dai file con estensione dbg.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,7 +32,7 @@ HRESULT RestrictDBGAccess();
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Diverso da qualsiasi valore restituito `S_OK` per impedire alla ricerca di informazioni di debug da file DBG.
+ Qualsiasi valore restituito diverso da `S_OK` per impedire la ricerca di informazioni di debug da file con estensione dbg.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

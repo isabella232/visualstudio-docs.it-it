@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 963ee64b639780bae60a4c2655db8b666d87c702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8414788af44d78943088b78b2d3e42a5a8d8c50b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554248"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745020"
 ---
-# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
-Fornisce un mapping di indirizzi per supportare le traduzioni di layout di immagine.
+# <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
+Fornisce una mappa degli indirizzi per supportare le traduzioni del layout dell'immagine.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -35,21 +35,21 @@ HRESULT set_addressMap ( 
 #### <a name="parameters"></a>Parametri
  `cbData`
 
-[in] Il numero di elementi nel `data` parametro.
+in Numero di elementi nel parametro `data`.
 
  `data[]`
 
-[in] Matrice di [struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md) strutture che definiscono il mapping per la conversione.
+in Matrice di strutture di [struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md) che definiscono la mappa di conversione.
 
  `imagetoSymbols`
 
-[in] `TRUE` se il `data` parametro definisce una mappa dal layout dell'immagine di nuovo il layout originale (come descritto per i simboli di debug). `FALSE` Se `data` è una mappa per il nuovo layout dell'immagine ricavato il layout originale.
+[in] `TRUE` se il parametro `data` definisce una mappa dal nuovo layout dell'immagine al layout originale (come descritto dai simboli di debug). `FALSE` se `data` è un mapping al nuovo layout dell'immagine tratto dal layout originale.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- In genere, il DIA recupera indirizzo traduzione mappe dal file di database (con estensione pdb) del programma. Se questi valori non sono presenti, il [Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) viene chiamato due volte, una volta con i `imagetoSymbols` parametro impostato su `TRUE` e una volta con il `imagetoSymbols` parametro impostato su `FALSE`. Conversioni di mapping di indirizzi non possono essere abilitate usando il [Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) metodo a meno che non vengono fornite entrambe le mappe di traduzione.
+ In genere, il diametro recupera le mappe degli indirizzi da un file di database di programma (con estensione pdb). Se questi valori sono mancanti, il metodo [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) viene chiamato due volte, una volta con il parametro `imagetoSymbols` impostato su `TRUE` e una volta con il parametro `imagetoSymbols` impostato su `FALSE`. Non è possibile abilitare le traduzioni della mappa indirizzi usando il metodo [IDiaAddressMap::P ut_addressmapenabled,](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) a meno che non siano disponibili entrambe le mappe di conversione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Struttura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)

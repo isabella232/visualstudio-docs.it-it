@@ -1,5 +1,5 @@
 ---
-title: Idiaframedata | Microsoft Docs
+title: 'IDiaFrameData:: get_relativeVirtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 833ef811f6859d7b991ba5931803fc0a3d21745c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be44c7a4136629c6b8d86b4e60a509842734131d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829017"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743501"
 ---
-# <a name="idiaframedatagetrelativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
-Recupera l'indirizzo virtuale relativo (RVA) del codice per il frame.
+# <a name="idiaframedataget_relativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
+Recupera l'indirizzo RVA (relativo Virtual Address) del codice per il frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_relativeVirtualAddress ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'indirizzo virtuale relativo del codice per il frame.
+out Restituisce l'indirizzo virtuale relativo del codice per il frame.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

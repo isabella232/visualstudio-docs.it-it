@@ -1,5 +1,5 @@
 ---
-title: Oggetto Graphics tabella | Microsoft Docs
+title: Tabella oggetti grafici | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848430"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735445"
 ---
 # <a name="graphics-object-table"></a>Tabella oggetti grafici
 La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio consente di individuare gli oggetti Direct3D che supportano un frame specifico del gioco o dell'app.
 
  Questa è la Tabella oggetti:
 
- ![Oggetti Direct3D che sono stati creati da un'app.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
+ ![Oggetti Direct3D creati da un'app.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
 
 ## <a name="understanding-the-graphics-object-table"></a>Informazioni sullo strumento Tabella oggetti grafici
- Con la Tabella oggetti è possibile analizzare gli oggetti Direct3 che supportano il rendering di un frame specifico. È possibile associare con precisione un problema di rendering a un oggetto specifico esaminandone le proprietà e i dati (usando gli altri strumenti di Diagnostica grafica usati in precedenza nella diagnosi è possibile limitare l'elenco di oggetti che potrebbero non corrispondere a quanto previsto). Dopo avere trovato l'oggetto che crea il problema, è possibile esaminarlo usando una visualizzazione specifica per quel tipo di oggetto. Ad esempio, è possibile usare l'editor di immagini per visualizzare le trame o il *Visualizzatore buffer* per visualizzare il contenuto del buffer.
+ Con la Tabella oggetti è possibile analizzare gli oggetti Direct3 che supportano il rendering di un frame specifico. È possibile individuare un problema di rendering per un oggetto specifico esaminando le proprietà e i dati, usando altri strumenti Diagnostica della grafica in precedenza nella diagnosi, è possibile limitare l'elenco di oggetti che potrebbero non essere quelli previsti. Quando è stato trovato l'oggetto che causa il danneggiamento, è possibile usare una visualizzazione specifica del tipo per esaminarla. ad esempio, è possibile usare l'editor di immagini per visualizzare le trame o il *Visualizzatore buffer* per visualizzare il contenuto del buffer.
 
  La Tabella oggetti supporta le funzioni di copia e incolla in modo che sia possibile usare un altro strumento, ad esempio Microsoft Excel, per esaminarne il contenuto.
 
- Inoltre, è possibile usare la **tipo** elenco a discesa in alto a sinistra angolo per attivare o disattivare la visualizzazione oggetti di tipo **buffer**, **shader** o **trame**, o tutti questi elementi in una sola volta.  Inoltre, è possibile utilizzare la casella di ricerca nell'angolo in alto a destra per ricerca di righe specifiche in tutti i dati presentati.  Ad esempio, è possibile cercare *D32_FLOAT* per trovare tutte le istanze di oggetti di tale formato nell'elenco.
+ Inoltre, è possibile utilizzare l'elenco a discesa **tipo** nell'angolo superiore sinistro per impostare la visualizzazione di oggetti di tipo **buffer**, **shader** o **trame**o tutti questi elementi contemporaneamente.  Inoltre, è possibile utilizzare la casella di ricerca nell'angolo superiore destro per trovare righe specifiche in tutti i dati presentati.  Ad esempio, è possibile cercare *D32_FLOAT* per trovare tutte le istanze di oggetti di tale formato nell'elenco.
 
 ### <a name="graphics-object-table-format"></a>Formato della Tabella oggetti grafici
  Nella Tabella oggetti vengono visualizzati gli oggetti e le risorse Direct3D che supportano il frame associato all'evento selezionato, ad esempio gli oggetti di stato, i buffer, gli shader, le trame e altre risorse. Gli oggetti creati nel frame precedente ma non usati durante il frame acquisito vengono omessi dalla tabella degli oggetti. Gli oggetti eliminati da eventi precedenti durante il frame acquisito vengono omessi negli eventi successivi. Gli oggetti che non vengono impostati per D3D10Device o D3D11DeviceContext vengono visualizzati come testo in grigio. Gli oggetti vengono visualizzati in un formato tabella.
@@ -39,10 +39,10 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |Colonna|Descrizione|
 |------------|-----------------|
 |**Identificatore**|ID dell'oggetto.|
-|**Name**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|
+|**Nome**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|
 |**Type**|Tipo di oggetto.|
 |**Active**|Visualizza "*" per un oggetto impostato per D3D10Device o D3D11DeviceContext durante il frame acquisito.<br /><br /> Corrisponde agli oggetti visualizzati come testo in grigio, ma fornisce una voce di colonna che è possibile usare per ordinare la tabella degli oggetti.|
-|**Dimensione**|Dimensione dell'oggetto in byte.|
+|**Size**|Dimensione dell'oggetto in byte.|
 |**Format**|Formato dell'oggetto. Ad esempio, il formato di un oggetto trama o il modello di shader di un oggetto shader.|
 |**Width**|Larghezza di un oggetto trama. Non vale per altri tipi di oggetto.|
 |**Height**|Altezza di un oggetto trama. Non vale per altri tipi di oggetto.|
@@ -56,7 +56,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
  Ecco il Visualizzatore trame che mostra il contenuto della fase della pipeline Unione output.
 
- ![Anteprima della trama con unione output](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
+ ![Anteprima della trama che visualizza la fusione dell'output](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
 
 ### <a name="d3d12-command-list"></a>Elenco comandi D3D12
  In Direct3D 12 un elenco di comandi è un oggetto che registra i comandi in un allocatore di comandi, in modo che sia possibile inviarli alla GPU come una singola richiesta. Gli elenchi di comandi in genere eseguono una serie di comandi di impostazione dello stato, disegno, cancellazione e copia. Sono particolarmente importanti perché rappresentano il metodo consigliato per il rendering in Direct3D 12 e possono essere riutilizzati tra i frame per migliorare le prestazioni. I dettagli sull'elenco di comandi vengono visualizzati in una nuova finestra del documento, con informazioni relative a ogni fase della pipeline presentate in schede separate.
@@ -71,14 +71,14 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
  In Direct3D 12, le risorse sono oggetti polivalenti che forniscono dati alla pipeline di rendering. In Direct3D11, al contrario, vengono definiti molti oggetti specifici per dimensioni e tipi diversi delle risorse. Una risorsa Direct3D 12 può contenere dati di trame, vertici, shader e altro ancora. Possono anche rappresentare destinazioni di rendering, ad esempio il buffer di profondità. I dettagli di una risorsa Direct3D 12 vengono visualizzati in una nuova finestra del documento. Analisi grafica userà il visualizzatore appropriato per il contenuto dell'oggetto risorsa, se è in grado di determinare il tipo. Ad esempio, un oggetto risorsa che contiene dati di trama, come l'oggetto D3D11 Texture2D, viene visualizzato con il Visualizzatore trame.
 
 ### <a name="device-context-object"></a>Oggetto contesto del dispositivo
- In Direct3D 11 e Direct3D 10 l'oggetto contesto di dispositivo (**Contesto di dispositivo D3D11** o **Dispositivo D3D10**) è particolarmente importante perché contiene le informazioni sullo stato più importanti ed è collegato ad altri oggetti di stato attualmente impostati. I dettagli del contesto di dispositivo vengono visualizzati in una nuova finestra del documento e ogni categoria di informazioni viene visualizzata nella rispettiva scheda. Il contesto di dispositivo cambia quando viene selezionato un nuovo evento in modo da riflettere lo stato corrente del dispositivo.
+ In Direct3D 11 e Direct3D 10 l'oggetto contesto di dispositivo (**Contesto di dispositivo D3D11** o **Dispositivo D3D10**) è particolarmente importante perché contiene le informazioni sullo stato più importanti ed è collegato ad altri oggetti di stato attualmente impostati. I dettagli del contesto di dispositivo vengono visualizzati in una nuova finestra del documento e ogni categoria di informazioni viene visualizzata nella relativa scheda. Il contesto di dispositivo cambia quando viene selezionato un nuovo evento per riflettere lo stato corrente del dispositivo.
 
 ### <a name="buffer-object"></a>Oggetto buffer
  I dettagli dell'oggetto buffer (Buffer D3D11 o Buffer D3D10) vengono visualizzati in una nuova finestra del documento che mostra il contenuto del buffer in una tabella e fornisce un'interfaccia per modificare il modo in cui il contenuto del buffer viene visualizzato. La tabella dei **dati del buffer** supporta le funzioni di copia e incolla in modo da poter usare un altro strumento, ad esempio Microsoft Excel, per esaminarne il contenuto. Il contenuto del buffer viene interpretato in base al valore della casella combinata **formato**, che si trova sopra la tabella dei **dati del buffer**. Nella casella è possibile immettere un formato di dati composito costituito dai tipi di dati elencati nella tabella seguente. Ad esempio, con "float int" viene visualizzato un elenco di strutture che contengono un valore a virgola mobile a 32 bit seguito da un valore Signed Integer a 32 bit. I formati dati compositi specificati vengono aggiunti alla casella combinata per un uso successivo.
 
  Si può anche selezionare/deselezionare la casella di controllo **Mostra offset** per nascondere o visualizzare l'offset di ogni elemento del buffer.
 
-|Tipo|Descrizione|
+|Digitare|Descrizione|
 |----------|-----------------|
 |**float**|Valore a virgola mobile a 32 bit.|
 |**float2**|Vettore che contiene due valori a virgola mobile a 32 bit.|
@@ -111,4 +111,4 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
 ## <a name="see-also"></a>Vedere anche
 - [Diagnostica della grafica (debug della grafica DirectX)](visual-studio-graphics-diagnostics.md)
-- [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)

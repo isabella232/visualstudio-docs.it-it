@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f55f47d8db9ec3723caf9ad5ff05d81d60404dba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ba113964ae316d7f887ccd558b804a4135865004
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791679"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739860"
 ---
-# <a name="idiasymbolgetlowerbound"></a>IDiaSymbol::get_lowerBound
-Recupera il limite inferiore di una dimensione di matrice FORTRAN.
+# <a name="idiasymbolget_lowerbound"></a>IDiaSymbol::get_lowerBound
+Recupera il limite inferiore di una dimensione della matrice FORTRAN.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_lowerBound ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il limite inferiore di una dimensione di matrice FORTRAN.
+out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il limite inferiore di una dimensione della matrice FORTRAN.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

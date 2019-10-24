@@ -1,5 +1,5 @@
 ---
-title: Idiaenuminjectedsources | Microsoft Docs
+title: 'IDiaEnumInjectedSources:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 807ed82a68089cb656f68c8cc1881dce683bb8a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2c7ca67581916ad0c68d7eb1b49fd1c15cf9eaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829719"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744449"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-Ignora un determinato numero di origini inserite in una sequenza di enumerazione.
+Ignora un numero specificato di origini inserite in una sequenza di enumerazione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parametri
  celt
 
-[in] Il numero di origini inserite nella sequenza di enumerazione da ignorare.
+in Numero di origini inserite nella sequenza di enumerazione da ignorare.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se sono presenti origini inserite nessun altro da ignorare.
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non sono presenti altre origini inserite da ignorare.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

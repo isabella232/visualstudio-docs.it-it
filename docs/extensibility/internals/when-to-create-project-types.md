@@ -1,5 +1,5 @@
 ---
-title: Quando creare tipi di progetto | Microsoft Docs
+title: Quando creare i tipi di progetto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,54 +10,54 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8be01ef0592deab48d923828ccfd3f86f1311a4d
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ff29843965c220c505266a9cd973e5695c0b9dab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323068"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721561"
 ---
 # <a name="when-to-create-project-types"></a>Quando creare tipi di progetto
-Creare un nuovo tipo di progetto fornisce una base per la personalizzazione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per gli utenti. Tuttavia, creare un nuovo tipo di progetto non è obbligatorio per tutti i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizzazioni. Le seguenti linee guida dovrebbero consentire di determinare se un nuovo tipo di progetto è obbligatorio per il proprio scenario.
+La creazione di un nuovo tipo di progetto costituisce una base per la personalizzazione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per gli utenti. Tuttavia, la creazione di un nuovo tipo di progetto non è necessaria per tutte le personalizzazioni [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Le linee guida seguenti consentono di determinare se è necessario un nuovo tipo di progetto per lo scenario in uso.
 
 ## <a name="create-a-new-project-type"></a>Creare un nuovo tipo di progetto
- È necessario creare un tipo di progetto se si desidera personalizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di agire in uno o più dei modi seguenti:
+ È necessario creare un tipo di progetto se si desidera personalizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per agire in uno o più dei modi seguenti:
 
-- Partecipa a compilazione, distribuzione, le configurazioni e controllo del codice sorgente.
+- Partecipare a compilazione, distribuzione, configurazioni e controllo del codice sorgente.
 
-- Offrono supporto per il debug.
+- Offrire supporto per il debug.
 
-- Visualizzare gli elementi di progetto in **Esplora soluzioni**.
+- Visualizza gli elementi del progetto in **Esplora soluzioni**.
 
-- Usare la **Apri progetto** oppure **nuovo progetto** nella finestra di dialogo.
+- Utilizzare la finestra di dialogo **Apri progetto** o **nuovo progetto** .
 
-- Supporta l'annidamento di progetto.
+- Supporto dell'annidamento del progetto.
 
-## <a name="extend-an-existing-project-type"></a>Estendere un tipo di progetto esistente
- Si potrebbe voler creare un nuovo tipo di progetto utilizzabili [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei modi seguenti per modificare o estendere il comportamento di un tipo di progetto esistente, ad esempio, la modifica del processo di compilazione per [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] progetti:
+## <a name="extend-an-existing-project-type"></a>Estendi un tipo di progetto esistente
+ Potrebbe essere necessario creare un nuovo tipo di progetto in grado di utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei modi seguenti per modificare o estendere il comportamento di un tipo di progetto esistente, ad esempio per modificare il processo di compilazione per i progetti [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]:
 
-- Funziona con più file come singola unità.
+- Usare più file come singola unità.
 
-- Visualizzare un singolo file come una gerarchia di elementi secondari.
+- Visualizza un singolo file come una gerarchia di elementi secondari.
 
-- Visualizzare un contesto del comando per gli editor.
+- Visualizzare un contesto di comando intorno agli editor.
 
-- Visualizzare un contesto del servizio per gli editor.
+- Visualizza un contesto del servizio per gli editor.
 
-## <a name="use-an-existing-project-type"></a>Usare un tipo di progetto esistente
- Crea un nuovo progetto in alcuni casi non è necessario. La tabella seguente illustra le attività che non è necessario creare un tipo di progetto per.
+## <a name="use-an-existing-project-type"></a>Usa un tipo di progetto esistente
+ A volte non è necessario creare un nuovo progetto. Nella tabella seguente vengono illustrate le attività per cui non è necessario creare un tipo di progetto.
 
 |Attività|Descrizione|
 |----------|-----------------|
 |Gestione dei comandi|Qualsiasi pacchetto VSPackage può gestire i comandi.|
-|Creazione di un editor|Editor personalizzati possono essere registrati. Per altre informazioni, vedere [editor e documenti Windows](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
-|Proprietario windows|È possibile creare documenti e degli strumenti windows senza l'aggiunta di un nuovo tipo di progetto.|
-|Esposizione di proprietà nella finestra proprietà|Tutti gli oggetti possono esporre le proprietà.|
+|Compilazione di un editor|È possibile registrare gli editor personalizzati. Per altre informazioni, vedere [Document Windows and Editors](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
+|Finestre proprietarie|È possibile creare finestre degli strumenti e del documento senza aggiungere un nuovo tipo di progetto.|
+|Esposizione delle proprietà nell'Finestra Proprietà|Tutti gli oggetti possono esporre proprietà.|
 
 ## <a name="create-a-project-subtype"></a>Creare un sottotipo di progetto
- È possibile usare i sottotipi di progetto per estendere un tipo di progetto gestito senza la necessità di creare un nuovo tipo di progetto. Sottotipi di progetto usano aggregazione COM per estendere i progetti gestiti, scritti in Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Con l'aggregazione COM, è possibile riutilizzare gran parte dell'implementazione del sistema del progetto gestito e comunque personalizzare per un determinato scenario tramite l'aggregazione e l'uso del supporto di interfacce. Per altre informazioni sulle sottotipi di progetto, vedere [sottotipi di progetto](../../extensibility/internals/project-subtypes.md).
+ È possibile utilizzare sottotipi di progetto per estendere un tipo di progetto gestito senza dover creare un nuovo tipo di progetto. I sottotipi di progetto utilizzano l'aggregazione COM per estendere i progetti gestiti scritti in Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Con l'aggregazione COM, è possibile riutilizzare gran parte dell'implementazione del sistema di progetti gestiti e comunque personalizzare per uno scenario specifico tramite l'aggregazione e l'utilizzo di interfacce di supporto. Per ulteriori informazioni sui sottotipi di progetto, vedere [sottotipi di progetto](../../extensibility/internals/project-subtypes.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Editor e documenti Windows](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
-- [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Finestre di documento e editor](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

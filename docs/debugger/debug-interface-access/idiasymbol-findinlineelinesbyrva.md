@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdcb85db51a3fcfca434af9d39bc88587a0e5cdc
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 737bc647cf3f5b64bdd8c48f7c827e8ef86a1386
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831757"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741199"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni sul numeri di riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale relativo specificato (RVA).
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo RVA (relative Virtual Address) specificato.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,15 +31,15 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
 #### <a name="parameters"></a>Parametri
  `rva`
 
-[in] Specifica l'indirizzo come un RVA.
+in Specifica l'indirizzo come RVA.
 
  `length`
 
-[in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query viene usata.
+in Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

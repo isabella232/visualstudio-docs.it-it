@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4702b121161bd73639d580faa13f502e89d8be3d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6154ff287f39f723ba84bf977d38bcce4d9b88f6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806694"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740619"
 ---
-# <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
-Recupera un flag che specifica se i simboli pubblici fa riferimento a una funzione.
+# <a name="idiasymbolget_function"></a>IDiaSymbol::get_function
+Recupera un flag che specifica se il simbolo pubblico fa riferimento a una funzione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,19 +33,19 @@ HRESULT get_function ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un `TRUE` se il simbolo relativo a una funzione; in caso contrario, restituisce `FALSE`.
+out Restituisce un `TRUE` se il simbolo fa riferimento a una funzione; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

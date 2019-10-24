@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854827"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738549"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
-Specifica il tipo di frame dello stack.
+Specifica il tipo di stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,23 +36,23 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementi
-`FrameTypeFPO` Puntatore ai frame omessi. Info FPO disponibile.
+puntatore del frame di `FrameTypeFPO` omesso; Informazioni sulla Polinesia disponibili.
 
-`FrameTypeTrap` Frame Trap kernel.
+frame trap del kernel `FrameTypeTrap`.
 
-`FrameTypeTSS` Frame Trap kernel.
+frame trap del kernel `FrameTypeTSS`.
 
-`FrameTypeStandard` Frame dello stack EBP standard.
+`FrameTypeStandard` stack frame EBP standard.
 
-`FrameTypeFrameData` Puntatore ai frame omessi. Informazioni sui dati di intervallo disponibile.
+puntatore del frame di `FrameTypeFrameData` omesso; Informazioni sui dati dei frame disponibili.
 
-`FrameTypeUnknown` Frame che non ha le informazioni di debug.
+`FrameTypeUnknown` frame privo di informazioni di debug.
 
 ## <a name="remarks"></a>Note
-I valori di questa enumerazione vengono restituiti da una chiamata per il [Idiastackframe](../../debugger/debug-interface-access/idiastackframe-get-type.md) (metodo).
+I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaStackFrame:: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a819293863b658f6e12609b2c1cd83c37532e02d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d270b9b177367c9a15c2b64f6f8bc5607c5a459d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832105"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741616"
 ---
-# <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-Recupera il valore di un registro specificato archiviato nel frame dello stack.
+# <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
+Recupera il valore di un registro specificato come archiviato nel stack frame.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,11 +34,11 @@ HRESULT get_registerValue(
 #### <a name="parameters"></a>Parametri
  `registerIndex`
 
-[in] Uno dei [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) valori di enumerazione.
+in Uno dei valori di enumerazione dell' [enumerazione CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) .
 
  `pRetVal`
 
-[out] Valore archiviato nel registro.
+out Valore archiviato nel registro.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.

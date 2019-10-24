@@ -11,36 +11,36 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- XDCMake task (MSBuild (Visual C++))
-- MSBuild (Visual C++), XDCMake task
+- XDCMake task (MSBuild (C++))
+- MSBuild (C++), XDCMake task
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa868695316ec83e066885590f859af947660625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0b1ae0fbbcdb36c13a8c0ee91011f2b7d6fba9f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777971"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747153"
 ---
 # <a name="xdcmake-task"></a>attività XDCMake
-Esegue il wrapping dello strumento Documentazione XML, *xdcmake.ex*  che unisce i file di commento con estensione *xdc* del documento XML in un file con estensione *xml*.
+Esegue il wrapping dello strumento Documentazione XML (*xdcmake.exe*) che unisce i file di commento (con estensione *xdc*) del documento XML in un file con estensione *xml*.
 
- Viene creato un file con estensione *xdc* quando si aggiungono commenti alla documentazione nel codice sorgente di Visual C++ e si compila con l'opzione [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) del compilatore. Per altre informazioni, vedere [Riferimento a XDCMake](/cpp/build/reference/xdcmake-reference), [Pagina delle proprietà dello strumento generatore di documenti XML](/cpp/build/reference/xml-document-generator-tool-property-pages) e l'opzione della riga di comando per la visualizzazione della Guida (**/?**) relativa a *xdcmake.exe*.
+ Viene creato un file con *estensione xdc* quando si forniscono commenti alla documentazione C++ nel codice sorgente e si compila usando l'opzione del compilatore [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) . Per altre informazioni, vedere [Riferimento a XDCMake](/cpp/build/reference/xdcmake-reference), [Pagina delle proprietà dello strumento generatore di documenti XML](/cpp/build/reference/xml-document-generator-tool-property-pages) e l'opzione della riga di comando per la visualizzazione della Guida ( **/?** ) relativa a *xdcmake.exe*.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Per impostazione predefinita lo strumento *xdcmake.exe* supporta solo alcune opzioni della riga di comando. Vengono supportate altre opzioni quando si specifica l'opzione **/old** della riga di comando.
 
 ## <a name="parameters"></a>Parametri
  La tabella seguente descrive i parametri dell'attività **XDCMake**.
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**AdditionalDocumentFile**|Parametro **String[]** facoltativo.<br /><br /> Consente di specificare uno o più file aggiuntivi con estensione *xdc* da unire.<br /><br /> Per altre informazioni, vedere la descrizione di **File di documentazione aggiuntivi** in [Pagina delle proprietà dello strumento generatore di documenti XML](/cpp/build/reference/xml-document-generator-tool-property-pages). Vedere anche le opzioni della riga di comando **/old** e **/Fs** per *xdcmake.exe*.|
-|**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XDCMake**.<br /><br /> Per altre informazioni, vedere [Riferimento a XDCMake](/cpp/build/reference/xdcmake-reference), [Pagina delle proprietà dello strumento generatore di documenti XML](/cpp/build/reference/xml-document-generator-tool-property-pages) e l'opzione della riga di comando per la visualizzazione della Guida (**/?**) relativa a *xdcmake.exe*.|
+|**AdditionalOptions**|Parametro **String** facoltativo.<br /><br /> Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XDCMake**.<br /><br /> Per altre informazioni, vedere [Riferimento a XDCMake](/cpp/build/reference/xdcmake-reference), [Pagina delle proprietà dello strumento generatore di documenti XML](/cpp/build/reference/xml-document-generator-tool-property-pages) e l'opzione della riga di comando per la visualizzazione della Guida ( **/?** ) relativa a *xdcmake.exe*.|
 |**DocumentLibraryDependencies**|Parametro **Boolean** facoltativo.<br /><br /> Se è `true` e il progetto corrente contiene una dipendenza a un progetto di libreria statica (con estensione *lib*) nella soluzione, i file con estensione *xdc* di quel progetto di libreria sono inclusi nel file *xml* di output del progetto corrente.<br /><br /> Per altre informazioni, vedere la descrizione di **Dipendenze raccolte documenti** in [Pagina delle proprietà dello strumento generatore di documenti XML](/cpp/build/reference/xml-document-generator-tool-property-pages).|
 |**OutputFile**|Parametro **String** facoltativo.<br /><br /> Esegue l'override del nome del file di output predefinito. Il nome predefinito è derivato dal nome del primo file con estensione *xdc* elaborato.<br /><br /> Per altre informazioni, vedere l'opzione **/out:\<nomefile>** in [Riferimento a XDCMake](/cpp/build/reference/xdcmake-reference). Vedere anche le opzioni **/old** e **/Fo** della riga di comando per *xdcmake.exe*.|
 |**ProjectName**|Parametro **String** facoltativo.<br /><br /> Nome del progetto corrente.|
@@ -50,4 +50,4 @@ Esegue il wrapping dello strumento Documentazione XML, *xdcmake.ex*  che unisce 
 |**TrackerLogDirectory**|Parametro **String** facoltativo.<br /><br /> Specifica la directory per il log di Tracker.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

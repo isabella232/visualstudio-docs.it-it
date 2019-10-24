@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4680af2d41ef3fa06a89784003c98982a09c2b63
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836800"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740341"
 ---
-# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-Recupera un flag che specifica se la funzione è un'introduzione alle funzioni virtuali.
+# <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
+Recupera un flag che specifica se la funzione è una funzione virtuale introduttiva.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT get_intro ( 
 #### <a name="parameters"></a>Parametri
 `pRetVal`
 
-[out] Restituisce `TRUE` se la funzione è intro virtuale; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se la funzione è l'introduzione virtuale; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="example"></a>Esempio
 
@@ -52,13 +52,13 @@ class B : public A {
 }
 ```
 
-Entrambe `A::f1` e `B::f1` sono funzioni virtuali, ma `A::f1` è virtuale introduttivo.
+Sia `A::f1` che `B::f1` sono funzioni virtuali, ma `A::f1` è il virtuale introduttivo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|DESCRIZIONE|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

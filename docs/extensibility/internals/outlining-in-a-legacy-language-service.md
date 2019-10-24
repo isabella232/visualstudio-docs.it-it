@@ -1,5 +1,5 @@
 ---
-title: La struttura in un servizio di linguaggio Legacy | Microsoft Docs
+title: Struttura in un servizio di linguaggio legacy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,41 +12,41 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7af8ab4615cff7462a47dfb11b193660eb62274c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6b2ba55a2e77a1f7261812a181ad780c2ef2b71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314874"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726169"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio legacy
-La struttura rende possibile comprimere un programma complesso panoramica in o in una struttura. Ad esempio, in c# tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Inoltre, classi e strutture possono essere compressi per mostrare solo i nomi delle classi e strutture. All'interno di un singolo metodo, è possibile comprimere una logica complessa in modo da mostrare il flusso generale che mostra solo la prima riga di istruzioni, ad esempio `foreach`, `if`, e `while`.
+La struttura rende possibile la compressione di un programma complesso in una panoramica o una struttura. Ad esempio, in C# tutti i metodi possono essere compressi in una sola riga, mostrando solo la firma del metodo. Inoltre, le strutture e le classi possono essere compresse per visualizzare solo i nomi delle strutture e delle classi. All'interno di un singolo metodo, la logica complessa può essere compressa per mostrare il flusso generale mostrando solo la prima riga di istruzioni, ad esempio `foreach`, `if` e `while`.
 
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [procedura dettagliata: Struttura](../../extensibility/walkthrough-outlining.md).
+ I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni, vedere [procedura dettagliata: struttura](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
-> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+> Si consiglia di iniziare a usare la nuova API editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare i vantaggi delle nuove funzionalità dell'editor.
 
 ## <a name="enabling-support-for-outlining"></a>Abilitazione del supporto per la struttura
- Il `AutoOutlining` voce del Registro di sistema è impostata su 1 per abilitare la struttura automatica. La struttura automatica consente di impostare un'analisi dell'intera origine quando un file viene caricato o modificato allo scopo di identificare le aree nascoste e Mostra le icone della struttura. La struttura può anche essere controllata anche manualmente dall'utente.
+ La voce del registro di sistema `AutoOutlining` è impostata su 1 per abilitare la struttura automatica. La struttura automatica configura un'analisi dell'intera origine quando un file viene caricato o modificato per identificare le aree nascoste e Mostra i glifi della struttura. La struttura può essere controllata anche manualmente dall'utente.
 
- Il valore del `AutoOutlining` voce del Registro di sistema può essere ottenuto tramite il <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> proprietà di <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Il `AutoOutlining` voce del Registro di sistema può essere inizializzati con un parametro denominato per il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo (vedere [registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md) per informazioni dettagliate).
+ Il valore della voce del registro di sistema `AutoOutlining` può essere ottenuto tramite la proprietà <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> della classe <xref:Microsoft.VisualStudio.Package.LanguagePreferences>. La voce del registro di sistema `AutoOutlining` può essere inizializzata con un parametro denominato nell'attributo <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> (vedere [registrazione di un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md) per informazioni dettagliate).
 
-## <a name="the-hidden-region"></a>L'area nascosta
- Per fornire la struttura, il servizio di linguaggio deve supportare le aree nascoste. Si tratta di intervalli di testo che possono essere espansi o compressi. Le aree nascoste possono essere delimitate dai simboli standard del linguaggio, ad esempio le parentesi graffe, o dai simboli personalizzati. Ad esempio, c# ha un `#region` / `#endregion` coppia che delimita un'area nascosta.
+## <a name="the-hidden-region"></a>Area nascosta
+ Per fornire la struttura, il servizio di linguaggio deve supportare le aree nascoste. Si tratta di un intervallo di testo che può essere espanso o compresso. Le aree nascoste possono essere delimitate da simboli di linguaggio standard, ad esempio parentesi graffe o simboli personalizzati. C# Dispone ad esempio di un `#region` / `#endregion` coppia che delimita un'area nascosta.
 
- Le aree nascoste sono gestite da un responsabile di area nascosta, che viene esposto come il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interfaccia.
+ Le aree nascoste sono gestite da un gestore di aree nascoste, esposto come interfaccia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>.
 
- La struttura Usa le aree nascoste le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> interfaccia e contenere l'intervallo dell'area nascosta, lo stato visibile corrente e il banner da visualizzare quando l'intervallo è compressa.
+ La struttura Usa aree nascoste l'interfaccia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> e contiene l'intervallo dell'area nascosta, lo stato visibile corrente e il banner da visualizzare quando l'intervallo è compresso.
 
- Il parser servizio di linguaggio utilizza il <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> metodo per aggiungere una nuova area nascosta con il comportamento predefinito per le aree nascoste, mentre il <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> metodo consente di personalizzare l'aspetto e comportamento del contorno. Una volta che le aree nascoste sono concesso per la sessione di area nascosta, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le aree nascoste per il servizio di linguaggio.
+ Il parser del servizio di linguaggio usa il metodo <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> per aggiungere una nuova area nascosta con il comportamento predefinito per le aree nascoste, mentre il metodo <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> consente di personalizzare l'aspetto e il comportamento della struttura. Una volta assegnate le aree nascoste alla sessione dell'area nascosta, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le aree nascoste per il servizio di linguaggio.
 
- Se è necessario determinare quando viene eliminata definitivamente la sessione di area nascosta, un'area nascosta viene modificata o è necessario assicurarsi che una determinata area nascosta è visibile; è necessario derivare una classe dalla classe la <xref:Microsoft.VisualStudio.Package.Source> classe ed eseguire l'override dei metodi appropriati, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, e <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, rispettivamente.
+ Se è necessario determinare quando la sessione dell'area nascosta viene distrutta, viene modificata un'area nascosta oppure è necessario assicurarsi che sia visibile una determinata area nascosta; è necessario derivare una classe dalla classe <xref:Microsoft.VisualStudio.Package.Source> ed eseguire l'override rispettivamente dei metodi, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A> e <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A> appropriati.
 
 ### <a name="example"></a>Esempio
- Ecco un esempio semplificato di creazione di aree nascoste per tutte le coppie di parentesi graffe. Si presuppone che il linguaggio fornisce corrispondenza parentesi graffe e che le parentesi graffe devono corrispondere almeno includono le parentesi graffe ({e}). Questo approccio è solo a scopo illustrativo. Un'implementazione completa avrebbe una gestione completa dei case in <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. In questo esempio viene inoltre illustrato come impostare il <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preferenza `true` temporaneamente. In alternativa è possibile specificare il `AutoOutlining` parametro denominato nella `ProvideLanguageServiceAttribute` attributo nel pacchetto di linguaggio.
+ Di seguito è riportato un esempio semplificato di creazione di aree nascoste per tutte le coppie di parentesi graffe. Si presuppone che il linguaggio fornisca la corrispondenza tra parentesi graffe e che le parentesi graffe da confrontare includano almeno le parentesi graffe ({e}). Questo approccio è solo a scopo illustrativo. Un'implementazione completa avrebbe una gestione completa dei case in <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Questo esempio illustra anche come impostare la preferenza <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> su `true` temporaneamente. In alternativa, è possibile specificare il `AutoOutlining` parametro denominato nell'attributo `ProvideLanguageServiceAttribute` nel pacchetto di linguaggio.
 
- Questo esempio si presuppone le regole di c# per i commenti, stringhe e valori letterali.
+ In questo esempio C# si presuppone la presenza di regole per commenti, stringhe e valori letterali.
 
 ```csharp
 using Microsoft.VisualStudio.Package;

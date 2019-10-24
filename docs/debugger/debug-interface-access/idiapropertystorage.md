@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2de57f0d3bd44e4d46f19ee74484380bf0e6f2ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832742"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742837"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
-Consente di leggere le proprietà persistenti di un set di proprietà DIA.
+Consente di leggere le proprietà permanenti di un set di proprietà DIA.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,7 +29,7 @@ IDiaPropertyStorage : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-Nella tabella seguente sono illustrati i metodi di `IDiaPropertyStorage`.
+La tabella seguente illustra i metodi di `IDiaPropertyStorage`.
 
 |Metodo|Descrizione|
 |------------|-----------------|
@@ -39,14 +39,14 @@ Nella tabella seguente sono illustrati i metodi di `IDiaPropertyStorage`.
 |[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Legge `DWORD` valori in un set di proprietà.|
 |[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Legge `LONG` valori in un set di proprietà.|
 |[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Legge i valori delle proprietà in un set di proprietà.|
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Ottiene i nomi di stringa corrispondente assegnato gli identificatori di proprietà.|
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Ottiene i nomi di stringa corrispondenti per gli identificatori di proprietà specificati.|
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Legge `ULONGLONG` valori in un set di proprietà.|
 
 ## <a name="remarks"></a>Note
-Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), a quattro byte `ULONG` valore univoco per tale set. Le proprietà esposte tramite il `IDiaPropertyStorage` interfaccia proprietà corrispondono a quelle disponibili nell'interfaccia padre. Ad esempio, le proprietà del [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaccia sono accessibili in base al nome tramite la `IDiaPropertyStorage` interfaccia (si noti tuttavia che anche se la proprietà è accessibile, non significa la proprietà è valida per un particolare `IDiaSymbol` oggetto).
+Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), un valore di `ULONG` a quattro byte univoco per tale set. Le proprietà esposte tramite l'interfaccia `IDiaPropertyStorage` corrispondono alle proprietà disponibili nell'interfaccia padre. Ad esempio, è possibile accedere alle proprietà dell'interfaccia [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) in base al nome tramite l'interfaccia `IDiaPropertyStorage` (si noti, tuttavia, che anche se la proprietà può essere accessibile, non significa che la proprietà è valida per un determinato oggetto `IDiaSymbol`).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Ottenere questa interfaccia mediante la chiamata di `QueryInterface` metodo in un'altra interfaccia. Le interfacce seguenti è possibile eseguire query per il `IDiaPropertyStorage` interfaccia:
+Ottenere questa interfaccia chiamando il metodo `QueryInterface` su un'altra interfaccia. È possibile eseguire query sulle interfacce seguenti per l'interfaccia `IDiaPropertyStorage`:
 
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
@@ -63,7 +63,7 @@ Ottenere questa interfaccia mediante la chiamata di `QueryInterface` metodo in u
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
 ## <a name="example"></a>Esempio
-In questo esempio viene illustrata una funzione che consente di visualizzare tutte le proprietà esposte dal `IDiaPropertyStorage` oggetto. Vedere le [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interfaccia per un esempio di come il `IDiaPropertyStorage` interfaccia viene ottenuta dal [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interfaccia.
+In questo esempio viene illustrata una funzione che Visualizza tutte le proprietà esposte dall'oggetto `IDiaPropertyStorage`. Vedere l'interfaccia [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) per un esempio di come viene ottenuta l'interfaccia `IDiaPropertyStorage` dall'interfaccia [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
 
 ```C++
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
@@ -120,11 +120,11 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: DIA2.h
+Intestazione: dia2. h
 
-Libreria: diaguids.lib
+Libreria: diaguids. lib
 
-DLL: MSDIA80
+DLL: Msdia80. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

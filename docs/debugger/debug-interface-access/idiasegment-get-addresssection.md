@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e098f1e2367395f201abf6f44554f1699400b12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9114a1d97dc9c25aa9c2bfe84dc96b63051b92d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827806"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742445"
 ---
-# <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
-Recupera il numero di sezione che viene eseguito il mapping a questo segmento.
+# <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
+Recupera il numero di sezione mappato a questo segmento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di sezione che viene eseguito il mapping a questo segmento.
+out Restituisce il numero di sezione che esegue il mapping a questo segmento.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

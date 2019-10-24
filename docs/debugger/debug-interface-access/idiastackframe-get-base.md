@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72c39e7cbfe9589d2fdf6ed8d1b8f25dee99936
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6802737a69467fb823fb2df8df8160f459e739f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838158"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741740"
 ---
-# <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
+# <a name="idiastackframeget_base"></a>IDiaStackFrame::get_base
 Recupera l'indirizzo di base del frame.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,7 +33,7 @@ HRESULT get_base ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce l'indirizzo di base.
+out Restituisce l'indirizzo di base.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se la proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

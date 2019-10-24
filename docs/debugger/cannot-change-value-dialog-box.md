@@ -1,5 +1,5 @@
 ---
-title: Non è possibile modificare la finestra di dialogo valore | Microsoft Docs
+title: Finestra di dialogo non è possibile modificare il valore | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564151"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745746"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Impossibile modificare il valore (finestra di dialogo)
 ## <a name="error"></a>Error
- `The value of this variable cannot be changed` &#124;`The name` *name* `does not exist in the current context` &#124; *vari altri messaggi*
+ `The value of this variable cannot be changed` &#124; `The name` *nome* `does not exist in the current context` &#124; *diversi altri messaggi*
 
  Questa finestra di messaggio viene visualizzata quando si tenta di modificare il contenuto di una variabile in un valore non consentito in una finestra del debugger (finestre Auto, Espressioni di controllo o Variabili locali) o nella finestra di dialogo Controllo immediato. Se, ad esempio, si tenta di impostare il valore di una variabile Integer in una stringa di caratteri, viene visualizzata questa finestra di messaggio.
 

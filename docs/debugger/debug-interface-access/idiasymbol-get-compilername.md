@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076b2fbcd4a1f65de56e52ffbf8b565ca122ffe1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3fd64d2f1a18df2d41a7d39f4ce474d601e194c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813969"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740810"
 ---
-# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
-Restituisce il nome del compilatore usato per generare il [compilando](../../debugger/debug-interface-access/compiland.md).
+# <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
+Restituisce il nome del compilatore utilizzato per generare [modulo](../../debugger/debug-interface-access/compiland.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -31,21 +31,21 @@ HRESULT get_compilerName (
 ```
 
 #### <a name="parameters"></a>Parametri
- `pName` Puntatore a un BSTR che contiene il nome di Unicode del compilatore.
+ `pName` puntatore a un BSTR che conterrà il nome Unicode del compilatore.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

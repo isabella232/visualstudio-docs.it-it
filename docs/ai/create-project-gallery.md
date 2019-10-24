@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5694bfe49e88d0ea5911e72abba842e98f54e373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3967b637d547ed99ed840761b3b843068afee1af
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538076"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777482"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Creare un progetto AI dalla raccolta di Azure Machine Learning in Visual Studio
 
@@ -33,11 +33,11 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile cre
 
     ![Accesso](media/create-project-gallery/azureml-login.png)
 
-3. Selezionare **AI Tools (Strumenti AI) > Azure Machine Learning Sample Gallery (Raccolta di esempi di Azure Machine Learning)**.
+3. Selezionare **AI Tools (Strumenti AI) > Azure Machine Learning Sample Gallery (Raccolta di esempi di Azure Machine Learning)** .
 
     ![Raccolta di esempi](media/create-project-gallery/gallery.png)
 
-4. Per questa guida introduttiva, selezionare l'esempio "**MNIST using TensorFlow**" e fare clic su **Installa**. Specificare le informazioni seguenti:
+4. Per questa guida rapida, selezionare il campione "**MNIST using TensorFlow**" e fare clic su **Installa**. Specificare le informazioni seguenti:
 
    - **Gruppo di risorse**: gruppo di risorse di Azure in cui verranno archiviati i metadati
    - **Account**: account di sperimentazione di Azure Machine Learning

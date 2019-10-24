@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 48efbc249d076853e12bc54d2e8a8d438570e740
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64783873"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739000"
 ---
-# <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-Recupera o parte di un nome non decorato per C++ decorati nome (collegamento).
+# <a name="idiasymbolget_undecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
+Recupera parte o tutto un nome non decorato per un C++ nome decorato (collegamento).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,45 +34,45 @@ HRESULT get_undecoratedNameEx( 
 #### <a name="parameters"></a>Parametri
  `undecoratedOptions`
 
-[in] Specifica una combinazione di flag che controllano i valori restituiti. Vedere la sezione Osservazioni per i valori specifici e le operazioni eseguite.
+in Specifica una combinazione di flag che controllano ciò che viene restituito. Vedere la sezione Osservazioni per i valori specifici e le relative operazioni.
 
  `pRetVal`
 
-[out] Restituisce il nome non decorato per una C++ nome decorato.
+out Restituisce il nome non decorato per C++ un nome decorato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
  Il `undecorateOptions` può essere una combinazione dei flag seguenti.
 
 > [!NOTE]
-> I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.
+> I nomi dei flag non sono definiti nella DIA SDK, quindi è necessario aggiungere le dichiarazioni al codice o usare i valori non elaborati.
 
-|Flag|Valore|Descrizione|
+|Flag|Value|Descrizione|
 |----------|-----------|-----------------|
-|UNDNAME_COMPLETE|0x0000|Abilita undecoration completo.|
-|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove gli iniziali di caratteri di sottolineatura da parole chiave estese Microsoft.|
+|UNDNAME_COMPLETE|0x0000|Abilita la dedecorazione completa.|
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove i caratteri di sottolineatura iniziali dalle parole chiave estese Microsoft.|
 |UNDNAME_NO_MS_KEYWORDS|0x0002|Disabilita l'espansione delle parole chiave estese Microsoft.|
-|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Disabilita l'espansione del tipo restituito per la dichiarazione primario.|
+|UNDNAME_NO_FUNCTION_RETURNS|0x0004|Disabilita l'espansione del tipo restituito per la dichiarazione primaria.|
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|Disabilita l'espansione del modello di dichiarazione.|
-|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Disabilita l'espansione dell'identificatore di lingua di dichiarazione.|
+|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|Disabilita l'espansione dell'identificatore del linguaggio di dichiarazione.|
 |UNDNAME_RESERVED1|0x0020|RISERVATO.|
 |UNDNAME_RESERVED2|0x0040|RISERVATO.|
-|UNDNAME_NO_THISTYPE|0x0060|Disabilita tutti i modificatori nel `this` tipo.|
-|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Disabilita l'espansione di identificatori di accesso per i membri.|
-|UNDNAME_NO_THROW_SIGNATURES|0x0100|Disabilita l'espansione di "throw-firme" per le funzioni e i puntatori a funzioni.|
-|UNDNAME_NO_MEMBER_TYPE|0x0200|Disabilita l'espansione della `static` o `virtual` membri.|
-|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Disabilita l'espansione del modello di Microsoft per tipo definito dall'utente restituisce.|
-|UNDNAME_32_BIT_DECODE|0x0800|Undecorates nomi decorati 32 bit.|
-|UNDNAME_NAME_ONLY|0x1000|Ottiene solo il nome per la dichiarazione di primario. Restituisce semplicemente [ambito::] nome.  Espande i parametri di modello.|
-|UNDNAME_TYPE_ONLY|0x2000|L'input è solo un tipo di codifica; compone un dichiaratore astratto.|
-|UNDNAME_HAVE_PARAMETERS|0x4000|I parametri di modello reali sono disponibili.|
-|UNDNAME_NO_ECSU|0x8000|Elimina enum, classe o struct/unione.|
-|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Elimina controllo per i caratteri di identificatore valido.|
+|UNDNAME_NO_THISTYPE|0x0060|Disabilita tutti i modificatori del tipo di `this`.|
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Disabilita l'espansione degli identificatori di accesso per i membri.|
+|UNDNAME_NO_THROW_SIGNATURES|0x0100|Disabilita l'espansione di "Throw-Signatures" per le funzioni e i puntatori alle funzioni.|
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Disabilita l'espansione dei membri `static` o `virtual`.|
+|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Disabilita l'espansione del modello Microsoft per i ritorni UDT.|
+|UNDNAME_32_BIT_DECODE|0x0800|Non decora i nomi decorati a 32 bit.|
+|UNDNAME_NAME_ONLY|0x1000|Ottiene solo il nome della dichiarazione primaria; restituisce solo il nome [Scope::].  Espande i parametri del modello.|
+|UNDNAME_TYPE_ONLY|0x2000|L'input è semplicemente una codifica di tipo; compone un dichiaratore astratto.|
+|UNDNAME_HAVE_PARAMETERS|0x4000|Sono disponibili i parametri del modello reale.|
+|UNDNAME_NO_ECSU|0x8000|Disattiva enum/class/struct/union.|
+|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Disattiva il controllo della presenza di caratteri identificatore validi.|
 |UNDNAME_NO_PTR64|0x20000|Non include ptr64 nell'output.|
 
 ## <a name="see-also"></a>Vedere anche

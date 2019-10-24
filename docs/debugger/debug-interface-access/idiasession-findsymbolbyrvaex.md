@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6c8e3523a49bd4fc22a86c9ec86b1e8cd2038e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d9b27cee1c8df3eb26d64f4f860c33e0d4bf45f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839251"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742041"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
-Recupera un tipo di simbolo specificato che contiene, o più vicino a un indirizzo virtuale relativo specificato (RVA) e l'offset.
+Recupera un tipo di simbolo specificato che contiene o è più vicino a un indirizzo RVA (relative Virtual Address) specificato e un offset.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,19 +36,19 @@ HRESULT findSymbolByRVAEx ( 
 #### <a name="parameters"></a>Parametri
  `rva`
 
-[in] Specifica il RVA.
+in Specifica l'RVA.
 
  `symtag`
 
-[in] Tipo di simbolo da trovare. I valori sono ricavati dal [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione.
+in Tipo di simbolo da trovare. I valori vengono ricavati dall'enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperare l'oggetto che rappresenta il simbolo.
+out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo recuperato.
 
  `displacement`
 
-[out] Restituisce un valore che specifica un offset dall'indirizzo virtuale relativo specificato `rva`.
+out Restituisce un valore che specifica un offset dall'indirizzo virtuale relativo specificato in `rva`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

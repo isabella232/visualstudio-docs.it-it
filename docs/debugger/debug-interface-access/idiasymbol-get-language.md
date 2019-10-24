@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97af3e1bcee89462b7060aaefa8f1fb452d2ab03
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eb7a7fa688825ce341417f695766a37ddb00028b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825430"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739995"
 ---
-# <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
+# <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
 Recupera la lingua dell'origine.
 
 ## <a name="syntax"></a>Sintassi
@@ -33,13 +33,13 @@ HRESULT get_language ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un valore di [enumerazione CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) enumerazione che specifica la lingua dell'origine.
+out Restituisce un valore dall'enumerazione Enumerazione [CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md) che specifica la lingua dell'origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

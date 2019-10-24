@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edab3547a16f32f3a8177b3efa7a342c4aae5955
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2875bcb4583c1d2ec47a935d1a8bb4f0de109a92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331851"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719917"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Elemento SortOrder (modelli di Visual Studio)
-Specifica un valore che viene usato per disporre il modello, tra gli altri modelli della stessa categoria, così come appare in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.
+Specifica un valore utilizzato per disporre il modello, tra gli altri modelli nella stessa categoria, così come viene visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
 
  \<VSTemplate > \<TemplateData > \<SortOrder >
 
@@ -36,10 +36,10 @@ Specifica un valore che viene usato per disporre il modello, tra gli altri model
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -50,17 +50,17 @@ Specifica un valore che viene usato per disporre il modello, tra gli altri model
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
- Un `integer` che rappresenta il valore di ordinamento.
+ @No__t_0 che rappresenta il valore dell'ordinamento.
 
 ## <a name="remarks"></a>Note
  `SortOrder` è un elemento facoltativo. Il valore predefinito è 100 e tutti i valori devono essere multipli di 10.
 
- Il `SortOrder` elemento viene ignorato per i modelli creati dall'utente. Tutti i modelli creati dall'utente vengono ordinati alfabeticamente.
+ L'elemento `SortOrder` viene ignorato per i modelli creati dall'utente. Tutti i modelli creati dall'utente sono ordinati alfabeticamente.
 
- I modelli che hanno valori di ordinamento insufficiente vengono visualizzati in uno il **nuovo progetto** o **Aggiungi nuovo elemento** finestra di dialogo prima dei modelli con valori di ordinamento elevata.
+ I modelli con valori di ordinamento bassi vengono visualizzati nella finestra di dialogo **nuovo progetto** o **nuovo elemento aggiunto** prima dei modelli con valori di ordinamento elevati.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente vengono illustrati i metadati di un controllo standard [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modello di classe.
+ Nell'esempio seguente vengono illustrati i metadati per un modello di classe di [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] standard.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,7 +79,7 @@ Specifica un valore che viene usato per disporre il modello, tra gli altri model
 </VSTemplate>
 ```
 
- In questo esempio, il `SortOrder` elemento è relativamente alto. È probabile che gli altri [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelli di elemento avrà un `SortOrder` valore inferiore a `290` e verranno visualizzati prima di questo modello nel **nuovo elemento** nella finestra di dialogo.
+ In questo esempio, l'elemento `SortOrder` è relativamente elevato. È probabile che altri modelli di elemento [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] avranno un valore `SortOrder` minore di `290` e verranno visualizzati prima di questo modello nella finestra di dialogo **nuovo elemento** .
 
 ## <a name="see-also"></a>Vedere anche
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

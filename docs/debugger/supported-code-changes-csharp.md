@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887782"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729083"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifiche al codice supportateC# (e Visual Basic)
 La funzionalità Modifica e continuazione è in grado di gestire la maggior parte dei tipi di modifiche al codice all'interno del corpo del metodo. Tuttavia, non è possibile applicare durante il debug la maggior parte delle modifiche all'esterno del corpo del metodo nonché alcune modifiche all'interno del corpo del metodo. Per applicare tali modifiche non supportate, interrompere il debug e riavviarlo utilizzando una versione aggiornata del codice.
@@ -56,8 +56,8 @@ Nella tabella seguente vengono illustrate le modifiche che possono essere C# app
 |Elemento/funzionalità del linguaggio|Operazione di modifica non supportata|
 |-|-|
 |Tutti gli elementi di codice|Ridenominazione|
-|Spazi dei nomi|Aggiunta|
-|Spazi dei nomi, tipi, membri|Eliminare|
+|Namespaces|Aggiunta|
+|Spazi dei nomi, tipi, membri|Eliminazione|
 |Generics|Aggiungi o modifica|
 |Interfacce|Modifica|
 |Tipi|Aggiungi membro astratto o virtuale, Aggiungi override (vedere [i dettagli](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
@@ -79,7 +79,7 @@ Nella tabella seguente vengono illustrate le modifiche che possono essere C# app
 |Iterators|Modificare un iteratore in un progetto destinato a .NET Framework 4 e inferiore (vedere [i dettagli](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Codice di tipo unsafe
- Le modifiche al codice di tipo unsafe sono soggette alle stesse limitazioni delle modifiche al codice di tipo safe, con l'aggiunta della seguente: La funzionalità modifica e continuazione non supporta le modifiche apportate al codice unsafe che termina all' `stackalloc` interno di un metodo che contiene l'operatore.
+ Le modifiche a codice non sicuro hanno le stesse limitazioni delle modifiche a codice sicuro, con un'ulteriore restrizione: Modifica e continuazione non supporta modifiche a codice non sicuro all'interno di un metodo che contiene l'operatore `stackalloc`.
 
 ## <a name="unsupported-app-scenarios"></a>Scenari di app non supportati
 

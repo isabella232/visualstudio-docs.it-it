@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604160cdaf8c1ff28b306106afe34e047768f3c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b389df8220766ffbdbf865a2b8e70877fe91b3f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828434"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743341"
 ---
-# <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
+# <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Recupera i byte del codice sorgente.
 
 ## <a name="syntax"></a>Sintassi
@@ -35,15 +35,15 @@ HRESULT get_source ( 
 #### <a name="parameters"></a>Parametri
  `cbData`
 
-[in] Il numero di byte che rappresenta le dimensioni del buffer di dati.
+in Numero di byte che rappresenta la dimensione del buffer di dati.
 
  `pcbData`
 
-[out] Restituisce il numero di byte che rappresenta i byte. Se `data` viene `NULL`, quindi `pcbData` è il numero totale di byte di dati disponibili.
+out Restituisce il numero di byte che rappresenta i byte restituiti. Se `data` è `NULL`, `pcbData` è il numero totale di byte di dati disponibili.
 
  `data[]`
 
-[out] Un buffer che deve essere compilato con i byte di origine.
+out Buffer da compilare con i byte di origine.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

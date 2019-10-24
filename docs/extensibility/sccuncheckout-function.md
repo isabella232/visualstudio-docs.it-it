@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d50b321f96b6759d95a6d923222e5e0a92b2ee3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e35d7287d8fc12100da9ba3b8383d8e92cee73d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338465"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720528"
 ---
 # <a name="sccuncheckout-function"></a>Funzione SccUncheckout
-Questa funzione Annulla un'operazione di estrazione precedente, ripristinando in questo modo il contenuto del file selezionato o dei file lo stato precedente l'estrazione. Tutte le modifiche apportate al file dopo l'estrazione andranno perdute.
+Questa funzione Annulla un'operazione di estrazione precedente, ripristinando in tal modo il contenuto del file o dei file selezionati nello stato precedente all'estrazione. Tutte le modifiche apportate al file dall'estrazione vengono perse.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -38,44 +38,44 @@ SCCRTN SccUncheckout (
 #### <a name="parameters"></a>Parametri
  pvContext
 
-[in] La struttura del contesto plug-in del controllo origine.
+in Struttura del contesto del plug-in del controllo del codice sorgente.
 
  hWnd
 
-[in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.
+in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.
 
- nFiles
+ nFile
 
-[in] Numero di file specificato per il `lpFileNames` matrice.
+in Numero di file specificati nella matrice `lpFileNames`.
 
  lpFileNames
 
-[in] Matrice di nomi di percorso locale completo dei file per il quale annullare un'estrazione.
+in Matrice di nomi di percorsi locali completi dei file per i quali annullare un'estrazione.
 
  fOptions
 
-[in] Flag di comando (non usato).
+in Flag di comando (non utilizzati).
 
  pvOptions
 
-[in] Opzioni specifiche plug-in controllo sorgente.
+in Opzioni specifiche del plug-in del controllo del codice sorgente.
 
 ## <a name="return-value"></a>Valore restituito
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:
 
 |Value|Descrizione|
 |-----------|-----------------|
-|SCC_OK|Annullamento estrazione riuscito.|
-|SCC_E_FILENOTCONTROLLED|Il file selezionato non è incluso nel controllo del codice sorgente.|
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|
-|SCC_E_NONSPECIFICERROR|Errore non specifico. Annulla estrazione non è riuscita.|
-|SCC_E_NOTCHECKEDOUT|L'utente non è disponibile il file estratto.|
+|SCC_OK|Annullamento dell'estrazione riuscito.|
+|SCC_E_FILENOTCONTROLLED|Il file selezionato non è sotto il controllo del codice sorgente.|
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|
+|SCC_E_NONSPECIFICERROR|Errore non specifico. Annullamento dell'estrazione non riuscito.|
+|SCC_E_NOTCHECKEDOUT|L'utente non ha estratto il file.|
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|
 |SCC_E_PROJNOTOPEN|Il progetto non è stato aperto dal controllo del codice sorgente.|
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|
 
 ## <a name="remarks"></a>Note
- Dopo questa operazione, il `SCC_STATUS_CHECKEDOUT` e `SCC_STATUS_MODIFIED` flag verranno cancellati per i file in cui è stato eseguito l'annullamento dell'estrazione.
+ Dopo questa operazione, i flag `SCC_STATUS_CHECKEDOUT` e `SCC_STATUS_MODIFIED` verranno cancellati per i file in cui è stata eseguita l'operazione di annullamento.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

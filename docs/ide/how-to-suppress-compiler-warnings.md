@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415782"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747957"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
@@ -33,7 +33,7 @@ Usare la pagina delle proprietà **Compila** per escludere avvisi specifici per 
 
 1. Ricompilare la soluzione.
 
-## <a name="suppress-specific-warnings-for-visual-c"></a>Non visualizzare avvisi specifici per Visual C++
+## <a name="suppress-specific-warnings-for-c"></a>Non visualizzare avvisi specifici perC++
 
 Usare la pagina delle proprietà **Proprietà di configurazione** per escludere avvisi specifici per i progetti C++.
 
@@ -87,7 +87,7 @@ Questo esempio mostra come modificare il file *vbproj* per escludere avvisi spec
     ```
 
    > [!NOTE]
-   > I progetti .NET Core non contengono gruppi di proprietà di configurazione della build per impostazione predefinita. Per escludere avvisi in un progetto .NET Core, aggiungere la sezione della configurazione della build manualmente al file. Ad esempio:
+   > I progetti .NET Core non contengono gruppi di proprietà di configurazione della build per impostazione predefinita. Per escludere avvisi in un progetto .NET Core, aggiungere la sezione della configurazione della build manualmente al file. Esempio:
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -132,6 +132,6 @@ In alcuni casi, può essere necessario escludere gli avvisi del compilatore NuGe
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
+- [Walkthrough: Building an Application](../ide/walkthrough-building-an-application.md) (Procedura dettagliata: Compilare un'applicazione)
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ee36d1901f7acb5bc7e41ac72b8dc03b15bc45c8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830557"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740289"
 ---
-# <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
-Recupera un flag che specifica se il simbolo di dati fa parte di una funzione di aggregazione o una raccolta di simboli. il compilatore considererà i simboli aggregati come entità separate, ma sono in effetti parte di un singolo simbolo di dimensioni maggiori.
+# <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
+Recupera un flag che specifica se il simbolo di dati fa parte di un'aggregazione o di una raccolta di simboli. il compilatore considererà i simboli aggregati come entità separate, ma fa parte di un singolo simbolo più grande.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,22 +33,22 @@ HRESULT get_isAggregated(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[out] Restituisce `TRUE` se i dati fanno parte di un'aggregazione di simboli divise da un simbolo padre; in caso contrario, restituisce `FALSE`.
+out Restituisce `TRUE` se i dati fanno parte di un'aggregazione di simboli divisi da un simbolo padre; in caso contrario, restituisce `FALSE`.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- Il [Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) metodo `TRUE` per il simbolo del padre dei simboli aggregati.
+ Il metodo [IDiaSymbol:: get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) è `TRUE` per il simbolo che rappresenta l'elemento padre dei simboli aggregati.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

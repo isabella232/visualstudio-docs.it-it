@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78440c703ece2aa54e54594d57156dbb17848915
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88c9af8293dfc6a35e5f0e42d9596494d74b10aa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832657"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743691"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
-Esegue la rimozione dello stack e restituisce i risultati in un'interfaccia di frame dello stack del percorso.
+Esegue la rimozione dello stack e restituisce i risultati in un'interfaccia di frame di percorso stack.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,20 +33,20 @@ HRESULT execute ( 
 #### <a name="parameters"></a>Parametri
  `frame`
 
-[in] Un' [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) oggetto che contiene lo stato dei registri di frame.
+in Oggetto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) che include lo stato dei registri dei frame.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
 
 |Value|Descrizione|
 |-----------|-----------------|
-|E_DIA_INPROLOG|Non è possibile eseguire uno stack frame nel codice di prologo.|
-|E_DIA_SYNTAX|Analizzare l'errore nel programma di frame.|
-|E_DIA_FRAME_ACCESS|Non è possibile registri di accesso o la memoria.|
-|E_DIA_VALUE|Errore nel calcolo di un valore (ad esempio, la divisione per zero).|
+|E_DIA_INPROLOG|Non è possibile eseguire un stack frame durante il codice di prologo.|
+|E_DIA_SYNTAX|Si è verificato un errore di analisi nel programma frame.|
+|E_DIA_FRAME_ACCESS|Impossibile accedere ai registri o alla memoria.|
+|E_DIA_VALUE|Errore durante il calcolo di un valore (ad esempio, divisione per zero).|
 
 ## <a name="remarks"></a>Note
- Questo metodo viene chiamato durante il debug di rimozione dello stack. Il [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) oggetto viene implementato dall'applicazione client per ricevere gli aggiornamenti per i registri e fornire i metodi utilizzati dal `execute` (metodo).
+ Questo metodo viene chiamato durante il debug per rimuovere lo stack. L'oggetto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) viene implementato dall'applicazione client per ricevere aggiornamenti ai registri e per fornire i metodi utilizzati dal metodo `execute`.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

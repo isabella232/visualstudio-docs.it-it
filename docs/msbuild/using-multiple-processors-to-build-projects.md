@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af67aa3961b92b55abfdcf7a811daef284ca523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 065b11b689189f5ad833ce642cfcfc94da06f83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747195"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Usare più processori per la compilazione di progetti
 MSBuild è in grado di trarre vantaggio dai sistemi che dispongono di più processori o di più componenti principali. Per ogni processore disponibile viene creato un processo di compilazione separato. Se, ad esempio, nel sistema sono presenti quattro processori, vengono creati quattro diversi processi di compilazione. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è in grado di elaborare queste compilazioni simultaneamente e il tempo di compilazione globale risulta quindi ridotto. Tuttavia, la compilazione parallela introduce alcune modifiche ai processi di compilazione. Questo argomento descrive queste modifiche.
@@ -30,8 +30,8 @@ MSBuild è in grado di trarre vantaggio dai sistemi che dispongono di più proc
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Errori ed eccezioni durante le compilazioni parallele
  Nelle compilazioni parallele possono verificarsi errori ed eccezioni in momenti diversi rispetto a quanto avviene nelle compilazioni non parallele e, se un progetto non viene compilato, gli altri processi di compilazione di progetti proseguono normalmente. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] non interromperà alcuna compilazione di progetti eseguita in parallelo con quella che ha avuto esito negativo. La compilazione degli altri progetti continua finché non viene completata correttamente o non si verifica un errore. Tuttavia, se <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> è stato abilitato, nessuna compilazione verrà arrestata anche se si verifica un errore.
 
-## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>File di progetto Visual C++ (con estensione vcproj) e file di soluzione (con estensione sln)
- È possibile passare all'[attività MSBuild](../msbuild/msbuild-task.md) sia file di progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] (con estensione *vcproj*) che file di soluzione (con estensione *sln*). Per i progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] viene chiamato VCWrapperProject e quindi viene creato il progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interno, mentre per le soluzioni [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] viene chiamato SolutionWrapperProject e quindi viene creato il progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interno. In entrambi casi, il progetto risultante viene considerato come qualsiasi altro progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++file di progetto (. vcxproj) e di soluzione (. sln)
+ Sia i file di progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] ( *. vcxproj*) sia i file di soluzione ( *. sln*) possono essere passati all' [attività MSBuild](../msbuild/msbuild-task.md). Per i progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] viene chiamato VCWrapperProject e quindi viene creato il progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interno, mentre per le soluzioni [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] viene chiamato SolutionWrapperProject e quindi viene creato il progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interno. In entrambi casi, il progetto risultante viene considerato come qualsiasi altro progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 ## <a name="multi-process-execution"></a>Esecuzione di più processi
  Quasi tutte le attività correlate alla compilazione richiedono che la directory corrente rimanga costante durante l'intero processo di compilazione per evitare errori di percorso. Pertanto, non è possibile eseguire progetti su thread diversi in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], poiché in questo caso verrebbero create più directory.

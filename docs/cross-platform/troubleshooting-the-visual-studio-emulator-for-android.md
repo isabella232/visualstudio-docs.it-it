@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261050"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777805"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Risolvere i problemi di Visual Studio Emulator for Android
 Questo argomento contiene informazioni che consentono di risolvere i problemi che possono verificarsi quando si usa Visual Studio Emulator for Android.
@@ -23,7 +23,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 > [!WARNING]
 > Quando l'emulatore è installato, il programma di installazione verifica i prerequisiti per l'esecuzione del software. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti per l’installazione.
 
- Di seguito sono elencate le diverse sezioni di questo argomento:
+ In questo argomento sono incluse le sezioni seguenti.
 
 - [Prima di iniziare](#BeforeYouStart)
 
@@ -67,7 +67,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 ## <a name="NoInstall"></a> Non è possibile installare l'emulatore
  Se Hyper-V non è installato, quando si prova a installare l'emulatore verrà visualizzato un messaggio analogo al seguente. È necessario avere un computer che supporta HyperV e che HyperV sia abilitato.
 
- ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Problema&#95;di&#95;installazione&#95;di Android Emu](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Questo messaggio è applicabile a Visual Studio Emulator for Android e all'emulatore Windows Phone. Windows 8.1 e Windows 10 supportano l'emulatore.
@@ -103,7 +103,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 ## <a name="SlowStart"></a> L'emulatore viene avviato lentamente, non viene avviato a causa di un timeout o si verifica un errore di distribuzione dell'app
  In determinate condizioni, l'emulatore richiede alcuni minuti per avviare o non viene avviato a causa di un timeout. Se l'emulatore non viene avviato, viene visualizzato il seguente messaggio: Distribuzione dell’applicazione non riuscita:`App deployment failed. Please try again` Le condizioni seguenti possono causare questo errore.
 
-- Attivare l’emulatore di Visual Studio per Android da un VHD bootable. Questa configurazione non è supportata.
+- Attivare l’emulatore di Visual Studio per Android da un VHD bootable. (Questa configurazione non è supportata.)
 
 - Un disco rigido difettoso. Si consiglia di eseguire il programma chkdsk.
 
@@ -134,7 +134,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
-     Se l'installazione non è corretta e si usa Windows 10, è possibile provare a [reinstallare i dispositivi di rete con il comando netcfg -d](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (sezione 6).
+     Se l'installazione non è corretta e si usa Windows 10, è possibile provare a [reinstallare i dispositivi di rete con il comando netcfg -d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (sezione 6).
 
 - Se questa procedura non consente di risolvere il problema, vedere [Emulator fails to start (first use)](#NoStart) per informazioni su software di terze parti che potrebbe interferire con l'emulatore.
 
@@ -173,7 +173,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
      - Disabilitare esecuzione Trusted
 
-       Per altre informazioni, vedere questo articolo: Technet: Hyper-V: How to Fix BIOS Errors Enabling Hyper-V (Technet: Hyper-V: Come correggere gli errori del BIOS abilitando Hyper-V)
+       Per ulteriori informazioni, vedere l'articolo: Technet: come Hyper-v: per correggere BIOS errori abilitazione di Hyper-V
 
   5. Assicurarsi di che disporre di almeno 4 GB di memoria di sistema e che non viene utilizzato da altri programmi che richiedono molte risorse e processi.
 
@@ -191,7 +191,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
    In generale, è compito degli sviluppatori di tali prodotti per l'aggiornamento del software per essere compatibile con Windows 8 e Hyper-V.
 
-   I prodotti seguenti potrebbero richiedere l'aggiornamento per la conformità di Windows 8: VirtualBox, Virtual PC 7, VMWare, alcuni client VPN, i firewall software, alcune versioni di client VPN Cisco e altri sistemi di virtualizzazione. Collaborare con lo sviluppatore del software di virtualizzazione incerta incoraggiarli per aggiornare il software per renderlo compatibile con Windows 8 e Hyper-V.
+   I seguenti prodotti potrebbero richiedere l'aggiornamento per la conformità di Windows 8: VirtualBox, Virtual PC 7, VMWare, alcuni client VPN, i firewall software, alcune versioni di client VPN Cisco e altri sistemi di virtualizzazione. Collaborare con lo sviluppatore del software di virtualizzazione incerta incoraggiarli per aggiornare il software per renderlo compatibile con Windows 8 e Hyper-V.
 
    Come *soluzione*, è possibile disabilitare tutti i driver di terze parti e le applicazioni che potrebbero interferire con la rete virtuale utilizzata dall'emulatore di comunicare con Visual Studio. Queste applicazioni possono comprendere:
 
@@ -213,7 +213,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
       Qui vengono visualizzate le proprietà dell'adapter.
 
-      ![Proprietà della scheda virtuale](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")
+      ![Proprietà scheda virtuale](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")
 
   3. Per questo adapter, gli unici elementi che devono essere selezionati in **la connessione utilizza i seguenti elementi** riportato di seguito:
 
@@ -241,7 +241,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
   - Aprire Hyper V e andare in Gestione commutatori virtuali. Creare un commutatore virtuale denominato "Windows Phone emulatore interna Switch" e impostarne il tipo di connessione **rete interna**.
 
-     ![Gestione commutatori virtuali](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
+     ![Gestione commutiri virtuali](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")
 
     Ora avviare l'emulatore Dovrebbe funzionare.
 
@@ -254,7 +254,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
   Per risolvere questo problema, disabilitare USB3 nelle impostazioni del BIOS della scheda madre e riavviare il computer. Controllare quindi se Gigabyte ha rilasciato un aggiornamento per il BIOS della scheda madre in uso.
 
-  Per altre informazioni, vedere l'articolo della Knowledge Base relativo all'[errore di avvio dopo l'installazione del ruolo Hyper-V in sistemi Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
+  Per altre informazioni, vedere l'articolo della Knowledge Base relativo all' [errore di avvio dopo l'installazione del ruolo Hyper-V in sistemi Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
 
 ## <a name="ADB"></a> Visual Studio si blocca durante il tentativo di distribuzione dell'app all'emulatore oppure l'emulatore non è visualizzato come destinazione di debug in altri IDE
  Se l'emulatore è in esecuzione, ma non sembra essere connesso ad ADB (Bridge Debug Android) o non è visualizzato negli strumenti di Android che usano ADB, ad esempio Studio Android o Eclipse, potrebbe essere necessario modificare le posizioni in cui l'emulatore cerca ADB. L'emulatore utilizza una chiave del Registro di sistema per identificare il percorso di base dell'Android SDK e cerca il file \platform-tools\adb.exe in tale directory. Per modificare il percorso di Android SDK utilizzato dall'emulatore:
@@ -311,6 +311,6 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 ## <a name="Support"></a> Risorse di supporto
  Se il computer host soddisfa i requisiti di sistema e si verifica un problema non incluso in questa guida alla risoluzione dei problemi:
 
-- Porre una domanda su StackOverflow usando i tag [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.
+- Porre una domanda su StackOverflow usando i tag [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.
 
 - Segnalare un problema usando lo strumento Invia smile in Visual Studio o in Gestione emulatori.

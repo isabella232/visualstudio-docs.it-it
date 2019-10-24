@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61772ead029dccaff9b1090a469865fcc3742df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666817"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748857"
 ---
 # <a name="outlining"></a>struttura
 
@@ -48,8 +48,8 @@ I comandi seguenti sono disponibili nel sottomenu **Modifica** > **Struttura**.
 |Arresta struttura|(**Ctrl**+**M**, **Ctrl**+**P**) - Rimuove tutte le informazioni relative alla struttura per l'intero documento.|
 |Visualizza selezione nascosta|(**Ctrl**+**M**, **Ctrl**+**U**) - Rimuove le informazioni relative alla struttura per l'area definita dall'utente attualmente selezionata. Non disponibile in Visual Basic.|
 |Comprimi alle definizioni|(**Ctrl**+**M**, **Ctrl**+**O**) - Consente di comprimere i membri di tutti i tipi.|
-|Comprimi blocco:\<limite logico>|(Visual C++) Consente di comprimere un'area nella funzione contenente il punto di inserimento. Ad esempio, se il punto di inserimento si trova all'interno di un ciclo, il ciclo è nascosto.|
-|Comprimi tutto in:\<strutture logiche>|(Visual C++) Comprime tutte le strutture all'interno della funzione.|
+|Comprimi blocco:\<limite logico>|(C++) Comprime un'area nella funzione contenente il punto di inserimento. Ad esempio, se il punto di inserimento si trova all'interno di un ciclo, il ciclo è nascosto.|
+|Comprimi tutto in:\<strutture logiche>|(C++) Comprime tutte le strutture all'interno della funzione.|
 
 È anche possibile usare Visual Studio SDK per definire le aree di testo che si intende espandere o comprimere. Vedere [Walkthrough: Outlining](../extensibility/walkthrough-outlining.md) (Procedura dettagliata: struttura).
 

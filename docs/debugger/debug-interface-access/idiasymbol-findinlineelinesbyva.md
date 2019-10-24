@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae02877b7e81e0d2240ab2c6eea68f22f0e2d2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de092109282506747606799b45b89059bf41fd8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837862"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741192"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Recupera un'enumerazione che consente a un client di eseguire l'iterazione attraverso le informazioni sul numeri di riga di tutte le funzioni che vengono impostati come inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato (valutazione della vulnerabilità).
+Recupera un'enumerazione che consente a un client di scorrere le informazioni sul numero di riga di tutte le funzioni inline, direttamente o indirettamente, in questo simbolo all'interno dell'indirizzo virtuale specificato (VA).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,15 +33,15 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>Parametri
  `va`
 
-[in] Specifica l'indirizzo come un responsabile tecnologico
+in Specifica l'indirizzo come VA.
 
  `length`
 
-[in] Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query viene usata.
+in Specifica l'intervallo di indirizzi, in numero di byte, per coprire la query.
 
  `ppResult`
 
-[out] Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco dei numeri di riga recuperati.
+out Contiene un `IDiaEnumLineNumbers` oggetto che contiene l'elenco di numeri di riga recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

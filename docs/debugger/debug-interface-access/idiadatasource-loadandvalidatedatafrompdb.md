@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5426e27d7b100c42cd571935b1634d6dbd6e990f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97afff946827c37ec2f84457016525377977dc8b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833547"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744996"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
-Consente di aprire e verifica che il file di programma (PDB) del database corrisponda le informazioni sulla firma fornite e prepara il file con estensione PDB come un'origine dati di debug.
+Apre e verifica che il file del database di programma (con estensione pdb) corrisponda alle informazioni di firma fornite e prepara il file con estensione PDB come origine dati di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -36,40 +36,40 @@ HRESULT loadAndValidateDataFromPdb ( 
 #### <a name="parameters"></a>Parametri
 `pdbPath`
 
-[in] Il percorso del file con estensione pdb.
+in Percorso del file con estensione pdb.
 
 `pcsig70`
 
-[in] Firma GUID per la verifica della firma di file con estensione pdb. File con solo con estensione PDB [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] e versioni successive dispongono di firme di GUID.
+in Firma GUID da verificare rispetto alla firma del file con estensione pdb. Solo i file con estensione PDB in [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] e versioni successive presentano firme GUID.
 
 `sig`
 
-[in] La firma di 32 bit per la verifica della firma di file con estensione pdb.
+in Firma a 32 bit da verificare rispetto alla firma del file con estensione pdb.
 
 `age`
 
-[in] Valore Age da verificare. Il periodo di validità non corrisponde necessariamente su qualsiasi valore di tempo noto, viene usato per determinare se un file con estensione PDB non è sincronizzato con un file .exe corrispondente.
+in Valore Age da verificare. L'età non corrisponde necessariamente a un valore di ora noto, viene utilizzata per determinare se un file con estensione PDB non è sincronizzato con un file con estensione exe corrispondente.
 
 ## <a name="return-value"></a>Valore restituito
-Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.
+Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra i possibili valori restituiti per questo metodo.
 
 |Value|Descrizione|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|Non è stato possibile aprire il file o il file di formato non è valido.|
-|E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|
-|E_PDB_INVALID_SIG|Firma non corrisponde.|
-|E_PDB_INVALID_AGE|Non corrisponde a età.|
+|E_PDB_NOT_FOUND|Non è stato possibile aprire il file o il formato del file non è valido.|
+|E_PDB_FORMAT|Tentativo di accedere a un file con un formato obsoleto.|
+|E_PDB_INVALID_SIG|La firma non corrisponde.|
+|E_PDB_INVALID_AGE|Age non corrisponde a.|
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
 ## <a name="remarks"></a>Note
-Un file con estensione PDB contiene i valori di firma sia age. Questi valori vengono replicati nel file con estensione dll o .exe che corrisponde al file con estensione pdb. Prima di preparare l'origine dati, questo metodo verifica che age e la firma del file con estensione pdb denominato corrispondano ai valori forniti.
+Un file con estensione PDB contiene sia la firma che i valori di età. Questi valori vengono replicati nel file con estensione exe o dll che corrisponde al file con estensione pdb. Prima di preparare l'origine dati, questo metodo verifica che la firma del file con estensione PDB denominata e l'età corrispondano ai valori specificati.
 
-Per caricare un file con estensione pdb senza convalida, usare il [Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (metodo).
+Per caricare un file con estensione pdb senza convalida, usare il metodo [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
 
-Per ottenere l'accesso per il processo di caricamento dei dati (tramite un meccanismo di callback), usare il [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (metodo).
+Per ottenere l'accesso al processo di caricamento dei dati (tramite un meccanismo di callback), usare il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-Per caricare un file con estensione pdb direttamente dalla memoria, usare il [Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) (metodo).
+Per caricare un file con estensione PDB direttamente dalla memoria, usare il metodo [IDiaDataSource:: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .
 
 ## <a name="example"></a>Esempio
 

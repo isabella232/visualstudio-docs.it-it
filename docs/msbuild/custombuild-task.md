@@ -11,33 +11,33 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), CustomBuild task
-- CustomBuild task (MSBuild (Visual C++))
+- MSBuild (C++), CustomBuild task
+- CustomBuild task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f33f3852f051e1f492cb2b6dca44fcdb260e11
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
-ms.translationtype: HT
+ms.openlocfilehash: 678068d1b6acc055fa65e6d0305b07152ed28695
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67587013"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748107"
 ---
 # <a name="custombuild-task"></a>Attività CustomBuild
 
-Esegue il wrapping dello strumento del compilatore Visual C++, cmd.exe. Questa classe deriva da [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ma non usa il rilevamento file per individuare le dipendenze di file. Affinché la compilazione incrementale funzioni correttamente, tutte le dipendenze devono essere specificate esplicitamente come AdditionalDependencies.
+Esegue il wrapping dello C++ strumento compilatore Microsoft, cmd. exe. Questa classe deriva da [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ma non usa il rilevamento file per individuare le dipendenze di file. Affinché la compilazione incrementale funzioni correttamente, tutte le dipendenze devono essere specificate esplicitamente come AdditionalDependencies.
 
 ## <a name="parameters"></a>Parametri
 
 La tabella seguente descrive i parametri dell'attività **CustomBuild**.
 
-|Parametro|DESCRIZIONE|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |**BuildSuffix**|Parametro **string** facoltativo.|
-|**Sources**|Parametro **ITaskItem[]** obbligatorio.|
+|**Sources**|Parametro **ITaskItem []** obbligatorio.|
 |**TrackerLogDirectory**|Parametro **string** facoltativo.|
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+[Riferimento alle attività](../msbuild/msbuild-task-reference.md)

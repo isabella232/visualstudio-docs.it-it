@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a39186cfc8fb3f83986692ebf7c608b895aae7ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3406052f4d5466b5b7f52a1da3490d35bbb0508f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839732"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742985"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
-Determina se alla ricerca di un file con estensione PDB è consentita nel percorso in cui si trova il file .exe.
+Determina se la ricerca di un file con estensione PDB è consentita nel percorso in cui si trova il file con estensione exe.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,7 +32,7 @@ HRESULT RestrictReferencePathAccess();
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="remarks"></a>Note
- Diverso da qualsiasi codice restituito `S_OK` per impedire alla ricerca di un file con estensione pdb nel percorso in cui si trova il file .exe.
+ Qualsiasi codice restituito diverso da `S_OK` per impedire la ricerca di un file con estensione pdb nel percorso in cui si trova il file con estensione exe.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

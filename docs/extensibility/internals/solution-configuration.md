@@ -10,50 +10,50 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be7d265db26c31bbec3527ad2bb60e127b1dc9c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 243af2549862f1d29c44ba5bfc3060d87d5c6f85
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322640"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723839"
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
-Configurazioni soluzione archiviano proprietà a livello di soluzione. Quindi indirizzano il comportamento dei **avviare** chiave (F5) e **compilazione** comandi. Per impostazione predefinita, questi comandi compilare e avviare la configurazione di debug. Entrambi i comandi vengono eseguite nel contesto di una configurazione di soluzione. Ciò significa che l'utente può aspettarsi F5 per avviare e qualunque sia la soluzione attiva viene configurata tramite le impostazioni di compilazione. L'ambiente è progettato per ottimizzare per le soluzioni anziché per i progetti quando si tratta di compilazione e l'esecuzione.
+Le configurazioni della soluzione archiviano le proprietà a livello di soluzione. Essi indirizzano il comportamento della chiave di **avvio** (F5) e dei comandi di **compilazione** . Per impostazione predefinita, questi comandi compilano e avviano la configurazione di debug. Entrambi i comandi vengono eseguiti nel contesto di una configurazione di soluzione. Ciò significa che l'utente può prevedere l'avvio di F5 e la compilazione di qualsiasi soluzione attiva configurata tramite le impostazioni. L'ambiente è progettato per ottimizzare le soluzioni anziché i progetti quando si tratta di creare ed eseguire.
 
- Barra degli strumenti standard di Visual Studio contiene un pulsante di avvio e un elenco a discesa a destra del pulsante Avvia configurazione della soluzione. Questo elenco consente agli utenti di scegliere la configurazione da avviare quando viene premuto F5, creare le proprie configurazioni di soluzione o modificare una configurazione esistente.
+ La barra degli strumenti standard di Visual Studio contiene un pulsante Start e un elenco a discesa Configurazione soluzione a destra del pulsante Avvia. Questo elenco consente agli utenti di scegliere la configurazione da avviare quando si preme F5, creare configurazioni di soluzione personalizzate o modificare una configurazione esistente.
 
 > [!NOTE]
-> Non sono presenti interfacce di estendibilità per creare o modificare le configurazioni di soluzione. È necessario usare `DTE.SolutionBuilder`. Tuttavia, esistono API di estendibilità per la gestione della compilazione della soluzione. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Non sono disponibili interfacce di estendibilità per creare o modificare le configurazioni della soluzione. È necessario utilizzare `DTE.SolutionBuilder`. Sono tuttavia disponibili API di estendibilità per la gestione della compilazione della soluzione. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
- Ecco come è possibile implementare le configurazioni di soluzione supportate dal tipo di progetto:
+ Ecco come è possibile implementare le configurazioni della soluzione supportate dal tipo di progetto:
 
 - Progetto
 
-   Visualizza i nomi dei progetti inclusi nella soluzione corrente.
+   Consente di visualizzare i nomi dei progetti presenti nella soluzione corrente.
 
 - Configurazione
 
-   Per fornire l'elenco delle configurazioni supportate per il tipo di progetto e visualizzato nelle pagine delle proprietà, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.
+   Per fornire l'elenco delle configurazioni supportate dal tipo di progetto e visualizzate nelle pagine delle proprietà, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.
 
-   La colonna di configurazione viene visualizzato il nome della configurazione del progetto per compilare in questa configurazione di soluzione ed elenca tutte le configurazioni di progetto quando si fa clic sul pulsante freccia. L'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> metodo per compilare questo elenco. Se il <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metodo indica che il progetto supporta la modifica della configurazione, nuovo o modifica selezioni vengono anche visualizzate sotto l'intestazione di configurazione. Ognuna di queste impostazioni avviare le finestre di dialogo che chiamano metodi del `IVsCfgProvider2` interfaccia per modificare le configurazioni del progetto.
+   Nella colonna configurazione viene visualizzato il nome della configurazione del progetto da compilare in questa configurazione della soluzione ed è possibile elencare tutte le configurazioni del progetto quando si fa clic sul pulsante freccia. L'ambiente chiama il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> per compilare questo elenco. Se il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> indica che il progetto supporta la modifica della configurazione, vengono visualizzate anche le selezioni nuove o modificate nell'intestazione della configurazione. Ognuna di queste selezioni avvia le finestre di dialogo che chiamano i metodi dell'interfaccia `IVsCfgProvider2` per modificare le configurazioni del progetto.
 
-   Se un progetto non supporta le configurazioni, la colonna di configurazione viene visualizzato Nessuno ed è disabilitata.
+   Se un progetto non supporta le configurazioni, la colonna di configurazione Visualizza None ed è disabilitata.
 
 - Piattaforma
 
-   Consente di visualizzare la piattaforma consente di compilare per la configurazione di progetto selezionato ed elenca tutte le piattaforme disponibili per il progetto quando si fa clic sul pulsante freccia. L'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> metodo per compilare questo elenco. Se il <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metodo indica che il progetto supporta la modifica della piattaforma, nuovo o modifica selezioni vengono anche visualizzate sotto l'intestazione della piattaforma. Ognuna di queste impostazioni avviare le finestre di dialogo chiamano `IVsCfgProvider2` metodi per modificare le piattaforme disponibili del progetto.
+   Visualizza la piattaforma per cui viene compilata la configurazione di progetto selezionata ed elenca tutte le piattaforme disponibili per il progetto quando si fa clic sul pulsante freccia. L'ambiente chiama il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> per compilare questo elenco. Se il metodo <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> indica che il progetto supporta la modifica della piattaforma, le selezioni nuove o modificate vengono visualizzate anche sotto l'intestazione della piattaforma. Ognuna di queste selezioni avvia le finestre di dialogo che chiamano `IVsCfgProvider2` metodi per modificare le piattaforme disponibili del progetto.
 
-   Se un progetto non supporta le piattaforme, la colonna di piattaforma per il progetto viene visualizzato Nessuno ed è disabilitata.
+   Se un progetto non supporta le piattaforme, la colonna della piattaforma per il progetto Visualizza None ed è disabilitata.
 
 - Compilazione
 
-   Specifica se il progetto è compilato dalla configurazione della soluzione corrente. I progetti non selezionati non vengono compilati quando vengono richiamati i comandi di compilazione a livello di soluzione nonostante eventuali dipendenze di progetto che contengono. Progetti non selezionati da compilare sono ancora inclusi nel debug, esecuzione, creazione di pacchetti e distribuzione della soluzione.
+   Specifica se il progetto viene compilato o meno dalla configurazione della soluzione corrente. I progetti non selezionati non vengono compilati quando vengono richiamati i comandi di compilazione a livello di soluzione nonostante le dipendenze del progetto in essi contenute. I progetti non selezionati per la compilazione sono ancora inclusi in debug, esecuzione, creazione di pacchetti e distribuzione della soluzione.
 
-- Distribuzione
+- Distribuisci
 
-   Specifica se il progetto verrà distribuito quando vengono utilizzati i comandi di avvio o distribuire con la configurazione di compilazione della soluzione selezionata. La casella di controllo per questo campo sarà disponibile se il progetto supporta la distribuzione mediante l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia sul relativo <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> oggetto.
+   Specifica se il progetto verrà distribuito quando si utilizzano i comandi Avvia o Distribuisci con la configurazione della build della soluzione selezionata. La casella di controllo per questo campo sarà disponibile se il progetto supporta la distribuzione implementando l'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> sul relativo oggetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>.
 
-  Dopo avere aggiunto una nuova configurazione di soluzione, l'utente può selezionarlo dall'elenco a discesa Configurazione della soluzione nella barra degli strumenti standard per compilare e/o che la configurazione di avvio.
+  Una volta aggiunta una nuova configurazione di soluzione, l'utente può selezionarla dall'elenco a discesa Configurazione soluzione sulla barra degli strumenti standard per compilare e/o avviare tale configurazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)

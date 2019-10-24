@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d7b0cb8564743ab35cac20cdcb352cdbca48d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4c34ce4105da6d50dc2bc9a0554f9539c1b2177
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830272"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743836"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo virtuale relativo (RVA).
+Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (relative Virtual Address).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -34,11 +34,11 @@ HRESULT symbolByRVA ( 
 #### <a name="parameters"></a>Parametri
  relativeVirtualAddress
 
-[in] Indirizzo relativa all'inizio dell'immagine.
+in Indirizzo relativo all'inizio dell'immagine.
 
  ppsymbol
 
-[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta il simbolo trovato.
+out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta il simbolo trovato.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il simbolo non è stato trovato. In caso contrario, verrà restituito un codice di errore.
