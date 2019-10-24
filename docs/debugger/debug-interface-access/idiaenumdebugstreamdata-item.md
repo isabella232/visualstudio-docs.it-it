@@ -1,5 +1,5 @@
 ---
-title: Idiaenumdebugstreamdata | Microsoft Docs
+title: 'IDiaEnumDebugStreamData:: Item | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4a3e3f668789f98600cd649716413a57b13130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e221516198d186dd08c353123ce4236f0be1383c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838506"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744814"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 Recupera il record specificato.
@@ -36,22 +36,22 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parametri
  indice
 
-[in] Indice del record da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` restituito da [Idiaenumdebugstreamdata](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
+in Indice del record da recuperare. L'indice è compreso nell'intervallo da 0 a `count`-1, dove `count` viene restituito da [IDiaEnumDebugStreamData:: get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md).
 
  cbData
 
-[in] Dimensioni del buffer di dati, in byte.
+in Dimensioni in byte del buffer di dati.
 
  pcbData
 
-[out] Restituisce il numero di byte restituiti. Se `data` viene `NULL`, quindi `pcbData` contiene il numero totale di byte di dati disponibili nel record specificato.
+out Restituisce il numero di byte restituiti. Se `data` è `NULL`, `pcbData` contiene il numero totale di byte di dati disponibili nel record specificato.
 
  data[]
 
-[out] Un buffer che viene compilato con i dati di record di flusso di debug.
+out Buffer compilato con i dati del record del flusso di debug.
 
 ## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` per i parametri non validi e se il `index` parametro è compreso nell'intervallo.
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` per i parametri non validi e se il `index` parametro è fuori limite.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
