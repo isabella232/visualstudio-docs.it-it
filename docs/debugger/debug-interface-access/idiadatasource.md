@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 453be1d77f1d2b1759e3de4433225cf97d026054
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838519"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744909"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
-Avvia l'accesso a un'origine dei simboli di debug.
+Avvia l'accesso a un'origine di simboli di debug.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -29,22 +29,22 @@ IDiaDataSource : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
-Nella tabella seguente sono illustrati i metodi di `IDiaDataSource`.
+La tabella seguente illustra i metodi di `IDiaDataSource`.
 
 |Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Recupera il nome del file per l'ultimo errore di caricamento.|
-|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Viene aperto e lo prepara un file di database (con estensione pdb) del programma come un'origine dati di debug.|
-|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Si apre e verifica che il file di programma (PDB) del database corrisponda le informazioni sulla firma forniti. Prepara il file PDB come un'origine dati di debug.|
-|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Viene aperto e prepara i dati di debug associati al file.exe/.dll.|
-|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prepara i dati di debug archiviati in un file di programma del database (con estensione pdb) si accede tramite un flusso di dati in memoria.|
-|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Apre una sessione per eseguire query sui simboli.|
+|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Apre e prepara un file di database di programma (con estensione pdb) come origine dati di debug.|
+|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Apre e verifica che il file del database di programma (con estensione pdb) corrisponda alle informazioni di firma fornite; prepara il file con estensione PDB come origine dati di debug.|
+|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Apre e prepara i dati di debug associati al file con estensione exe/dll.|
+|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prepara i dati di debug archiviati in un file di database di programma (con estensione pdb) a cui si accede tramite un flusso di dati in memoria.|
+|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Apre una sessione per l'esecuzione di query sui simboli.|
 
 ## <a name="remarks"></a>Note
-Una chiamata a uno dei metodi load del `IDiaDataSource` all'origine simboli viene visualizzata l'interfaccia. Una chiamata riuscita per il [Idiadatasource](../../debugger/debug-interface-access/idiadatasource-opensession.md) restituzione del metodo un' [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interfaccia che supporta query sull'origine dati. Se il metodo load restituisce un errore relativo al file il [Get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) metodo restituisce il valore contiene il nome del file associato all'errore.
+Una chiamata a uno dei metodi Load dell'interfaccia `IDiaDataSource` apre l'origine del simbolo. Una chiamata riuscita al metodo [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) restituisce un'interfaccia [IDiaSession](../../debugger/debug-interface-access/idiasession.md) che supporta l'esecuzione di query sull'origine dati. Se il metodo Load restituisce un errore relativo al file, il valore restituito dal metodo [IDiaDataSource:: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) contiene il nome file associato all'errore.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
-Questa interfaccia viene ottenuta chiamando il `CoCreateInstance` canonica con l'identificatore di classe `CLSID_DiaSource` e l'ID di interfaccia di `IID_IDiaDataSource`. Nell'esempio viene illustrato come questa interfaccia è ottenuta.
+Questa interfaccia viene ottenuta chiamando la funzione `CoCreateInstance` con l'identificatore di classe `CLSID_DiaSource` e l'ID di interfaccia di `IID_IDiaDataSource`. Nell'esempio viene illustrato come ottenere questa interfaccia.
 
 ## <a name="example"></a>Esempio
 
@@ -63,11 +63,11 @@ if (FAILED(hr))
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: DIA2.h
+Intestazione: dia2. h
 
-Libreria: diaguids.lib
+Libreria: diaguids. lib
 
-DLL: MSDIA80
+DLL: Msdia80. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

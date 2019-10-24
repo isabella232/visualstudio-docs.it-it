@@ -25,7 +25,7 @@
 ### [Contattare l'amministratore delle sottoscrizioni](contact-my-admin.md)
 ### Vantaggi
 #### Strumenti
-##### [Credito Azure](vs-azure.md)
+##### [Credito individuale per Azure DevTest](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Azure con pagamento in base al consumo](vs-azure-payg.md)
 ##### [CAST Highlight](vs-cast.md)
