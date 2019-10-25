@@ -434,6 +434,10 @@
                   href: deploy-windows-store-apps-from-visual-studio.md
             - name: Eseguire il debug di un pacchetto dell'app installato
               href: debug-installed-app-package.md
+            - name: Analizzare le proprietà XAML durante il debug
+              href: inspect-xaml-properties-while-debugging.md
+            - name: Scrivere ed eseguire il debug di codice XAML in esecuzione
+              href: xaml-hot-reload.md
             - name: Debug XAML in Blend
               href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML e CSS
@@ -490,6 +494,10 @@
               items:
                 - name: Eseguire il debug di WPF
                   href: debugging-wpf.md
+                - name: Analizzare le proprietà XAML durante il debug
+                  href: inspect-xaml-properties-while-debugging.md
+                - name: Scrivere ed eseguire il debug di codice XAML in esecuzione
+                  href: xaml-hot-reload.md
                 - name: Usare il visualizzatore dell'albero di WPF
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Visualizzare le informazioni di traccia WPF
