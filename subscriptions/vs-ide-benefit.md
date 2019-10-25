@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/01/2019
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 5a5acda814739f907aaa36e9b3408527b5ece732
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787874"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816510"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
 
@@ -61,12 +61,12 @@ Per scaricare l'ambiente IDE:
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Sì          |
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Sì          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Sì         |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Yes          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Yes          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Yes         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 
-<sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Non include: MCT Software & Services.*
+<sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, Imagine, most VALUABLE Professional (MVP), Regional Director (Rd).  Esclude: MCT software & Services.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -82,5 +82,5 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 ## <a name="next-steps"></a>Passaggi successivi
 Una volta installato Visual Studio, non dimenticare di attivare questi altri importanti vantaggi:
 - [Azure DevOps](vs-azure-devops.md)
-- [Crediti Azure](vs-azure.md)
+- [Credito singolo di Azure DevTest](vs-azure.md)
 - [Account per sviluppatore di Windows](vs-windows-dev.md)

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
-ms.openlocfilehash: 063c0348af226f0cbe06256426352edac7124b11
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929750"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816562"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 
@@ -57,7 +57,7 @@ Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professio
 
 I sottoscrittori di Visual Studio Professional (MPN) possono anche scaricare e usare software per lo sviluppo, incluso SQL Server Developer Edition.
 
-La sottoscrizione di Visual Studio Professional (MPN) non include vantaggi Azure DevOps Services, crediti Azure mensili, supporto tecnico, training o altri vantaggi per i sottoscrittori offerti con le sottoscrizioni di Visual Studio disponibili in commercio.
+La sottoscrizione di Visual Studio Professional (MPN) non include i vantaggi Azure DevOps Services, il credito individiaul di Azure DevTest, il supporto tecnico, il training o altri vantaggi per gli abbonati disponibili con le sottoscrizioni di Visual Studio offerta commercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrizione per il solo uso interno
 

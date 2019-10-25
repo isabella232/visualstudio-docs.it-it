@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Informazioni su come attivare la sottoscrizione Parasoft Virtualize/SOA Test Professional inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787724"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816490"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Vantaggio Parasoft Virtualize/SOAtest Professional Desktop nelle sottoscrizioni di Visual Studio
 
@@ -72,14 +72,14 @@ ms.locfileid: "68787724"
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Sì       |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 6 mesi       |  Yes       |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
-<sup>1</sup>  *Include: Microsoft Partner Network (Enterprise).  Non include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
+<sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -92,4 +92,4 @@ ms.locfileid: "68787724"
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Sfruttare i vantaggi della sandbox di sviluppo attivando i [crediti di Azure](vs-azure.md). 
+Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md). 

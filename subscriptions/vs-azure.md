@@ -5,16 +5,16 @@ ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
-description: Informazioni su come attivare il vantaggio Azure incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
+ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681666"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816455"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
-I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il [credito Azure mensile](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure costituisce la sandbox personale per lo sviluppo e il test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
+I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -41,21 +41,21 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 ## <a name="eligibility"></a>Idoneità
 |                 Livello di sottoscrizione/Programma                 |           Vantaggio           |                         Rinnovabile?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     Credito mensile pari a 150 dollari USA     |                             Sì                             ||
+|              Visual Studio Enterprise Standard               |     Credito mensile pari a 150 dollari USA     |                             Yes                             ||
 |               Visual Studio Enterprise (mensile)               |        Non disponibile        |                                                             |
-|             Visual Studio Professional Standard              |     Credito mensile pari a 50 dollari USA      |                             Sì
+|             Visual Studio Professional Standard              |     Credito mensile pari a 50 dollari USA      |                             Yes
 |              Visual Studio Professional (mensile)              |        Non disponibile        |                                                             |
-|                    Visual Studio Test Pro                    |     Credito mensile pari a 50 dollari USA      |                             Sì                             |
-|                        MSDN Platforms                        |     Credito mensile pari a 100 dollari USA     |                             Sì                             |
-|               Visual Studio Enterprise - NFR\*               |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
-|                Visual Studio Enterprise - FTE                |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
-|     Visual Studio Enterprise - Microsoft Partner Network     |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
+|                    Visual Studio Test Pro                    |     Credito mensile pari a 50 dollari USA      |                             Yes                             |
+|                        MSDN Platforms                        |     Credito mensile pari a 100 dollari USA     |                             Yes                             |
+|               Visual Studio Enterprise - NFR\*               |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|                Visual Studio Enterprise - FTE                |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|     Visual Studio Enterprise - Microsoft Partner Network     |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
 |    Visual Studio Professional - Microsoft Partner Network    |        Non disponibile        |                                                             |
 |        Visual Studio Enterprise - Imagine (Standard)         |        Non disponibile        |                                                             |
 |         Visual Studio Enterprise - Imagine (Premium)         |        Non disponibile        |                                                             |
-|             Visual Studio Enterprise - BizSpark              |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
-|      Visual Studio Enterprise – MCT Software & Services      |     Credito mensile pari a 100 dollari USA     |                             Sì                             |
-| Visual Studio Enterprise - MCT Developer Software & Services |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
+|             Visual Studio Enterprise - BizSpark              |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
+|      Visual Studio Enterprise – MCT Software & Services      |     Credito mensile pari a 100 dollari USA     |                             Yes                             |
+| Visual Studio Enterprise - MCT Developer Software & Services |     Credito mensile pari a 150 dollari USA     |                             Yes                             |
 
 *Include Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
@@ -65,22 +65,22 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>D: Come si invia una richiesta di supporto tecnico dal portale di Azure?
-R:  L'invio di una richiesta di supporto dal portale di Azure è un processo in tre fasi.
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>D: come è possibile inviare una richiesta di supporto tecnico dal portale di Azure?
+R: l'invio di una richiesta di supporto dal portale di Azure è un processo in tre fasi.
 1. Attivare il vantaggio di supporto tecnico e ottenere l'ID di accesso dell'ID di contratto.
 2. Collegare il contratto di supporto alla sottoscrizione di Azure.
 3. Inviare una richiesta di supporto online.
 
 Vedere la documentazione del [supporto tecnico](vs-tech-support.md) per informazioni dettagliate.
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>D: Si riceve un messaggio che informa che l'accesso ad Azure terminerà a breve.  Che cosa si può fare per continuare a usare Azure?
-R:  Questo messaggio di posta elettronica viene inviato a coloro che usano il vantaggio Azure associato alla sottoscrizione di Visual Studio quando la sottoscrizione è scaduta o è stata rimossa.  Per continuare a usare Azure, sono disponibili diverse opzioni:
+### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>D: si riceve un messaggio che informa che l'accesso ad Azure terminerà a breve.  Che cosa si può fare per continuare a usare Azure?
+R: questo messaggio di posta elettronica viene inviato a coloro che usano il vantaggio Azure associato alla sottoscrizione di Visual Studio quando la sottoscrizione è scaduta o è stata rimossa.  Per continuare a usare Azure, sono disponibili diverse opzioni:
 
 **Azione consigliata:**
 
-Per continuare a usare il credito di Azure di Visual Studio e gli sconti, eseguire una delle operazioni seguenti:
+Per continuare a usare il credito singolo e gli sconti di Azure DevTest per Visual Studio, eseguire una delle operazioni seguenti:
 
-Se un utente del team o dell'organizzazione acquista sottoscrizioni, contattare l'amministratore di Visual Studio dell'organizzazione e richiedere una sottoscrizione di Visual Studio che conceda l'importo di credito mensile di Azure necessario.   Richiedere all'amministratore di assegnare la nuova sottoscrizione allo stesso ID utente a cui era assegnata la sottoscrizione precedente in modo che non sia necessario trasferire la sottoscrizione di Azure.
+Se un utente del team o dell'organizzazione acquista sottoscrizioni per conto dell'utente, contattare l'amministratore di Visual Studio dell'organizzazione e richiedere una sottoscrizione di Visual Studio che consentirà di utilizzare l'importo di credito individuale di Azure DevTest.   Richiedere all'amministratore di assegnare la nuova sottoscrizione allo stesso ID utente a cui era assegnata la sottoscrizione precedente in modo che non sia necessario trasferire la sottoscrizione di Azure.
 
 Se è possibile acquistare direttamente una sottoscrizione, eseguire una delle operazioni seguenti:
 1. Acquistare una sottoscrizione cloud di Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) o [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) annuale tramite Visual Studio Marketplace.
