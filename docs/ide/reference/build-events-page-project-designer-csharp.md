@@ -1,6 +1,6 @@
 ---
 title: Pagina Eventi di compilazione, Progettazione progetti (C#)
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba429c116d44a5d79d935fe3a1ad07b6d5f36f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461845"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789831"
 ---
 # <a name="build-events-page-project-designer-c"></a>Pagina Eventi di compilazione, Progettazione progetti (C#)
 
-Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specificare le istruzioni di configurazione della build. È anche possibile specificare le condizioni in cui vengono eseguiti gli eventi di post-compilazione. Per altre informazioni, vedere [Procedura: Specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specificare le istruzioni di configurazione della build. È anche possibile specificare le condizioni in cui vengono eseguiti gli eventi di post-compilazione. Per ulteriori informazioni, vedere [procedura: specificare gli eventi di compilazioneC#()](../../ide/how-to-specify-build-events-csharp.md) e [procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
@@ -61,9 +61,36 @@ Specifica le condizioni seguenti per l'esecuzione dell'evento di post-compilazio
 |**A compilazione completata**|L'evento di post-compilazione verrà eseguito se la compilazione avrà esito positivo. L'evento verrà quindi eseguito anche per un progetto aggiornato, purché la compilazione abbia esito positivo.|
 |**Quando la compilazione aggiorna l'output del progetto**|L'evento di post-compilazione verrà eseguito solo quando il file di output del compilatore (con estensione exe o dll) è diverso dal file di output del compilatore precedente. L'evento di post-compilazione non viene quindi eseguito se un progetto è aggiornato.|
 
+## <a name="in-the-project-file"></a>Nel file di progetto
+
+Nelle versioni precedenti di Visual Studio, quando si modifica l'impostazione **PreBuildEvent** o **PostBuildEvent** nell'IDE, Visual Studio aggiunge un `PreBuildEvent` o `PostBuildEvent` proprietà al file di progetto. Quindi, ad esempio, se l'impostazione della riga di comando **PreBuildEvent** nell'IDE è la seguente:
+
+```input
+"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
+```
+
+l'impostazione del file di progetto è la seguente:
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+Visual Studio 2019 (e Visual Studio 2017 negli aggiornamenti più recenti) aggiunge una destinazione MSBuild denominata `PreBuild` o `PostBuild` per le impostazioni **PreBuildEvent** e **PostBuildEvent** . Ad esempio, per l'esempio precedente, Visual Studio genera ora il codice seguente:
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+> [!NOTE]
+> Queste modifiche al file di progetto sono state apportate per supportare i progetti in stile SDK. Se si esegue la migrazione manuale di un file di progetto dal formato precedente al formato di tipo SDK, è necessario eliminare le proprietà `PreBuildEvent` e `PostBuildEvent` e sostituirle con `PreBuild` e `PostBuild` destinazioni, come illustrato nel codice precedente. Per informazioni su come stabilire se il progetto è un progetto di tipo SDK, vedere [controllare il formato del progetto](/nuget/resources/check-project-format).
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Procedura: Specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Procedura: Specificare eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)
 - [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)

@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648990"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807056"
 ---
 # <a name="access-data-in-visual-studio"></a>Accedere ai dati in Visual Studio
 
@@ -94,7 +94,7 @@ Se ci si connette ai servizi di Azure, assicurarsi di scaricare gli strumenti pi
 
 ### <a name="data-providers"></a>Provider di dati
 
-Affinché un database sia utilizzabile in ADO.NET, è necessario che disponga di un *provider di dati ADO.NET* personalizzato. in caso contrario, deve esporre un'interfaccia ODBC o OLE DB. Microsoft fornisce un [elenco di provider di dati ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) per i prodotti SQL Server, nonché per i provider ODBC e OLE DB.
+Affinché un database sia utilizzabile in ADO.NET, è necessario che disponga di un *provider di dati ADO.NET* personalizzato. in caso contrario, deve esporre un'interfaccia ODBC o OLE DB. Microsoft fornisce un [elenco di provider di dati ADO.NET](/dotnet/framework/data/adonet/ado-net-overview) per i prodotti SQL Server, nonché per i provider ODBC e OLE DB.
 
 ### <a name="data-modeling"></a>Modellazione dei dati
 
@@ -144,9 +144,9 @@ Il [database SQL di azure](/azure/sql-database/) &mdash;Describes come connetter
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes l'architettura ADO.NET e come usare le classi ADO.NET per gestire i dati dell'applicazione e interagire con le origini dati e il codice XML.
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/) &mdash;Describes come creare applicazioni di dati che consentono agli sviluppatori di programmare in base a un modello concettuale anziché direttamente a un database relazionale.
+[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes come creare applicazioni di dati che consentono agli sviluppatori di programmare in base a un modello concettuale anziché direttamente a un database relazionale.
 
-[WCF Data Services 4,5](/dotnet/framework/data/wcf/index) &mdash;Describes come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati nel Web o in una rete Intranet che implementano il [Open Data Protocol (OData)](https://www.odata.org/).
+[WCF Data Services 4,5](/dotnet/framework/data/wcf/index)&mdash;viene descritto come utilizzare [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] per distribuire servizi dati sul Web o in una rete Intranet che implementano il [Open Data Protocol (OData)](https://www.odata.org/).
 
 [I dati nelle soluzioni office](../vsto/data-in-office-solutions.md) &mdash;Contains collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, sulla memorizzazione dei dati nella cache e sull'accesso ai dati sul lato server.
 

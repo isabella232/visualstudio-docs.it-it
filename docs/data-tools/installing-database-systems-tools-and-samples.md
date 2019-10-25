@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94ce946f7c14706b57618f3d9aeb90cc207fcf04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd469f955a24c6d3c2fb5e438d81e6b8a2db8458
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648298"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807004"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemi di database compatibili per Visual Studio
 
@@ -35,19 +35,19 @@ SQL Server è l'offerta di database Microsoft Flagship. SQL Server 2016 offre pr
 
 ## <a name="oracle"></a>Oracle
 
-È possibile scaricare un'edizione a pagamento o gratuita del database Oracle dalla pagina [rete della tecnologia Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) . Per il supporto in fase di progettazione per Entity Framework e TableAdapter, sarà necessario [Oracle Developer Tools per Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Altri prodotti Oracle ufficiali, incluso Oracle Instant client, sono disponibili tramite Gestione pacchetti NuGet. È possibile scaricare gli schemi di esempio Oracle seguendo le istruzioni riportate nella [documentazione online di Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+È possibile scaricare un'edizione a pagamento o gratuita del database Oracle dalla pagina [rete della tecnologia Oracle](https://www.oracle.com/database/technologies/oracle-database-software-downloads.html) . Per il supporto in fase di progettazione per Entity Framework e TableAdapter, sarà necessario [Oracle Developer Tools per Visual Studio](https://www.oracle.com/database/technologies/developer-tools/visual-studio/). Altri prodotti Oracle ufficiali, incluso Oracle Instant client, sono disponibili tramite Gestione pacchetti NuGet. È possibile scaricare gli schemi di esempio Oracle seguendo le istruzioni riportate nella [documentazione online di Oracle](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ## <a name="mysql"></a>MySQL
 
-MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](http://www.mysql.com/why-mysql/windows/). Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
+MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](https://www.mysql.com/why-mysql/windows/). Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](http://www.postgresql.org/download/windows/). È anche possibile compilare PostgreSQL dal codice sorgente. Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**). Il pacchetto più diffuso è probabilmente fornito da [npgsql.org](http://www.npgsql.org).
+PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](https://www.postgresql.org/download/windows/). È anche possibile compilare PostgreSQL dal codice sorgente. Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**). Il pacchetto più diffuso è probabilmente fornito da [npgsql.org](http://www.npgsql.org).
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](http://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
+SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](https://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
 
 ## <a name="firebird"></a>Firebird
 
@@ -56,4 +56,4 @@ Firebird è un sistema open source per database SQL. È possibile scaricarlo dal
 ## <a name="see-also"></a>Vedere anche
 
 - [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [Come determinare la versione e l'edizione di SQL Server e dei relativi componenti](http://support.microsoft.com/kb/321185)
+- [Come determinare la versione e l'edizione di SQL Server e dei relativi componenti](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

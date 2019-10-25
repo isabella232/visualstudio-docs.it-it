@@ -1,6 +1,6 @@
 ---
 title: C++Avvisi delle linee guida di base
-ms.date: 08/10/2017
+ms.date: 10/16/2019
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e616b380c223118b42d9cb345f17cb06db78779b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 69adb52b4fa7649bd99ecb5d4e29aa69390f6076
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018473"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807115"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 
@@ -60,11 +60,11 @@ int main()
 
 Questo esempio illustra alcuni degli avvisi che possono essere trovati C++ dalle regole di controllo principali:
 
-- C26494 è il tipo di regola. 5: Inizializzare sempre un oggetto.
+- C26494 è il tipo di regola. 5: Inizializza sempre un oggetto.
 
-- C26485 è associato alle regole. 3: Nessun decadimento da matrice a puntatore.
+- C26485 è associato alle regole. 3: nessun decadimento da matrice a puntatore.
 
-- C26481 è associato alle regole. 1: Non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.
+- C26481 è associato alle regole. 1: non usare l'aritmetica dei puntatori. In alternativa, utilizzare `span`.
 
 Se i C++ set di regole di analisi del codice di base del controllo vengono installati e abilitati quando si compila il codice, i primi due avvisi vengono restituiti, ma il terzo viene eliminato. Ecco l'output di compilazione del codice di esempio:
 
@@ -84,17 +84,17 @@ Le C++ linee guida di base sono disponibili per semplificare la scrittura di cod
 
 Quando vengono aggiunte nuove regole al controllo C++ delle linee guida di base, il numero di avvisi generati per il codice preesistente può aumentare. È possibile utilizzare set di regole predefiniti per filtrare i tipi di regole da abilitare. A partire da Visual Studio 2017 versione 15,3, i set di regole supportati sono:
 
-- Le **regole del puntatore del proprietario** applicano [i C++ controlli di gestione risorse correlati a owner @ No__t-2T > dalle linee guida di base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- Le **regole del puntatore del proprietario** applicano [i C++ controlli di gestione risorse correlati al proprietario\<t > dalle linee guida di base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- Le **regole const** applicano [controlli correlati a C++ const delle linee guida di base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- Le **regole const** applicano [controlli correlati a C++ const delle linee guida di base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-- Le **regole del puntatore non elaborato** applicano [i C++ controlli di gestione risorse correlati a puntatori non elaborati delle linee guida di base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- Le **regole del puntatore non elaborato** applicano [i C++ controlli di gestione risorse correlati a puntatori non elaborati delle linee guida di base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- Le **regole univoche del puntatore** applicano [ C++ i controlli di gestione delle risorse correlati ai tipi con semantica dei puntatori univoca dalle linee guida di base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- Le **regole univoche del puntatore** applicano [ C++ i controlli di gestione delle risorse correlati ai tipi con semantica dei puntatori univoca dalle linee guida di base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- Le **regole dei limiti** applicano il [profilo dei limiti C++ delle linee guida di base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- Le **regole dei limiti** applicano il [profilo dei limiti C++ delle linee guida di base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-- Le **regole di tipo** applicano il [profilo C++ dei tipi delle linee guida di base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- Le **regole di tipo** applicano il [profilo C++ dei tipi delle linee guida di base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 È possibile scegliere di limitare gli avvisi solo a uno o pochi gruppi. I set di regole **native minime** e **native consigliate** includono C++ regole di controllo principali oltre ad altri controlli preveloci. Per visualizzare i set di regole disponibili, aprire la finestra di dialogo delle proprietà del progetto, selezionare **codice Analysis\General**, aprire l'elenco a discesa nella casella combinata **set di regole** e scegliere **Scegli più set di regole**. Per altre informazioni sull'uso dei set di regole in Visual Studio, vedere [uso di set di regole per raggruppare regole di analisi del codice](using-rule-sets-to-group-code-analysis-rules.md).
 
@@ -122,7 +122,7 @@ Queste macro corrispondono ai set di regole e si espandono in un elenco separato
 
 ## <a name="attributes"></a>Attributi
 
-Il compilatore Microsoft C++ Visual ha un supporto limitato per l'attributo di eliminazione GSL. Può essere usato per disattivare gli avvisi sulle istruzioni Expression e Block all'interno di una funzione.
+Il compilatore C++ Microsoft dispone di un supporto limitato per l'attributo di eliminazione GSL. Può essere usato per disattivare gli avvisi sulle istruzioni Expression e Block all'interno di una funzione.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -215,18 +215,18 @@ Se si usa un sistema di compilazione che non si basa su MSBuild, è ancora possi
 1. **Variabili di ambiente**
    - `set esp.extensions=cppcorecheck.dll` indica al motore di caricare il modulo C++ delle linee guida di base.
    - `set esp.annotationbuildlevel=ignore` Disabilita la logica che elabora le annotazioni SAL. Le annotazioni non influiscono sull' C++ analisi del codice nel controllo delle linee guida di base, ma la loro elaborazione richiede tempo, a volte molto tempo. Questa impostazione è facoltativa, ma altamente consigliata.
-   - `set caexcludepath=%include%` si consiglia vivamente di disabilitare gli avvisi che vengono attivati sulle intestazioni standard. È possibile aggiungere altri percorsi, ad esempio il percorso delle intestazioni comuni nel progetto.
+   - `set caexcludepath=%include%` si consiglia di disabilitare gli avvisi generati sulle intestazioni standard. È possibile aggiungere altri percorsi, ad esempio il percorso delle intestazioni comuni nel progetto.
 2. **Opzioni della riga di comando**
    - `/analyze` Abilita l'analisi del codice (considerare anche l'uso di/analyze: only e/analyze: quiet).
    - `/analyze:plugin EspXEngine.dll` questa opzione carica il motore delle estensioni di analisi del codice in PREfast. Questo motore, a sua volta, carica C++ il controllo delle linee guida di base.
 
 ## <a name="use-the-guideline-support-library"></a>Usare la libreria di supporto per le linee guida
 
-La libreria del supporto per le linee guida è stata progettata per consentire di seguire le linee guida di base. Il GSL include definizioni che consentono di sostituire costrutti soggetti a errori con alternative più sicure. È ad esempio possibile sostituire una coppia `T*, length` di parametri con il tipo `span<T>`. GSL è disponibile in [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). La libreria è open source ed è quindi possibile visualizzare le origini, creare commenti o contribuire. Il progetto è disponibile in [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+La libreria del supporto per le linee guida è stata progettata per consentire di seguire le linee guida di base. Il GSL include definizioni che consentono di sostituire costrutti soggetti a errori con alternative più sicure. È ad esempio possibile sostituire una coppia `T*, length` di parametri con il tipo `span<T>`. GSL è disponibile in [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La libreria è open source ed è quindi possibile visualizzare le origini, creare commenti o contribuire. Il progetto è disponibile in [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Usare le C++ linee guida per il controllo principale nei progetti di Visual Studio 2015
 
-Se si usa Visual Studio 2015, i C++ set di regole di analisi del codice di base non sono installati per impostazione predefinita. È necessario eseguire alcuni passaggi aggiuntivi prima di poter abilitare gli C++ strumenti di analisi del codice per il controllo principale in Visual Studio 2015. Microsoft fornisce supporto per i progetti Visual Studio 2015 usando un pacchetto NuGet. Il pacchetto è denominato Microsoft. CppCoreCheck ed è disponibile all' [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Per questo pacchetto è necessario avere almeno Visual Studio 2015 con Update 1 installato.
+Se si usa Visual Studio 2015, i C++ set di regole di analisi del codice di base non sono installati per impostazione predefinita. È necessario eseguire alcuni passaggi aggiuntivi prima di poter abilitare gli C++ strumenti di analisi del codice per il controllo principale in Visual Studio 2015. Microsoft fornisce supporto per i progetti Visual Studio 2015 usando un pacchetto NuGet. Il pacchetto è denominato Microsoft. CppCoreCheck ed è disponibile all' [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Per questo pacchetto è necessario avere almeno Visual Studio 2015 con Update 1 installato.
 
 Il pacchetto installa anche un altro pacchetto come dipendenza, una libreria di supporto per le linee guida solo intestazione (GSL). GSL è disponibile anche in GitHub all' [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 

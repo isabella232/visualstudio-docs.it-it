@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 006ecdffd7b109c32f7063fee5f454e43c6c4597
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128151"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806922"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -40,7 +40,7 @@ Per istruzioni dettagliate per la distribuzione, vedere le guide introduttive e 
 
 La distribuzione in una cartella locale viene di solito usata a scopo di test o per iniziare una pre-distribuzione quando viene usato un altro strumento per la distribuzione finale.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e **.NET Core**: usare lo strumento Pubblicazione per la distribuzione in una cartella locale. Le opzioni disponibili variano a seconda del tipo di app. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se in precedenza non sono stati configurati profili di pubblicazione, è necessario fare clic su **Crea nuovo profilo**. Quindi scegliere **Cartella**. Per altre informazioni, vedere [Distribuire in una cartella locale](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e .**NET Core**: usare lo strumento Pubblicazione per eseguire la distribuzione in una cartella locale. Le opzioni disponibili variano a seconda del tipo di app. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se in precedenza non sono stati configurati profili di pubblicazione, è necessario fare clic su **Crea nuovo profilo**. Quindi scegliere **cartella**. Per altre informazioni, vedere [Distribuire in una cartella locale](quickstart-deploy-to-local-folder.md).
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
@@ -48,17 +48,17 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
 ## <a name="publish-to-azure"></a>Pubblicare in Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python** e **Node.js**: Pubblicare in Servizio app di Azure o in Servizio app di Azure in Linux (con contenitori) tramite uno dei metodi seguenti.
+- **ASP.NET**, **ASP.NET Core**, **Python**e **node. js**: pubblicare in app Azure servizio o app Azure servizio Linux (usando i contenitori) usando uno dei metodi seguenti.
 
-  - Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Per una distribuzione delle app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
   - Per una distribuzione di app una tantum o manuale, usare lo strumento **Pubblica** in Visual Studio.
 
   Per una distribuzione che offre una maggiore personalizzazione della configurazione del server, è anche possibile usare lo strumento **Pubblica** per distribuire le app in una macchina virtuale di Azure.
 
-  Per usare lo strumento **Pubblica**, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è quindi necessario fare clic su **Crea nuovo profilo**. Nella finestra di dialogo Pubblica scegliere **Servizio app** oppure **Macchine virtuali di Azure** e quindi seguire la procedura di configurazione.
+  Per usare lo strumento **Pubblica**, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Se sono stati configurati in precedenza i profili di pubblicazione, è necessario fare clic su **Crea nuovo profilo**. Nella finestra di dialogo Pubblica scegliere **servizio app** o **macchine virtuali di Azure**e quindi seguire la procedura di configurazione.
 
-  ![Scegliere Servizio app di Azure](../deployment/media/quickstart-publish-azure.png "Scegliere Servizio app di Azure")
+  ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-azure.png "Scegliere app Azure servizio")
 
   A partire da Visual Studio 2017 versione 15.7, è possibile distribuire app ASP.NET Core in **Servizio app di Azure in Linux**.
 
@@ -73,15 +73,15 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>Pubblicare nel Web o distribuire in una condivisione di rete
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: è possibile usare lo strumento Pubblicazione per distribuire un sito Web con FTP o Distribuzione Web. Per altre informazioni, vedere [Distribuire in un sito Web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js** e **Python**: è possibile usare lo strumento Pubblicazione per eseguire la distribuzione in un sito Web tramite FTP o Distribuzione Web. Per altre informazioni, vedere [Distribuire in un sito Web](quickstart-deploy-to-a-web-site.md).
 
-    In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se in precedenza sono stati configurati profili di pubblicazione, è quindi necessario fare clic su **Crea nuovo profilo**. Nello strumento Pubblicazione scegliere l'opzione da usare e seguire la procedura di configurazione.
+    In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**. Se sono stati configurati in precedenza i profili di pubblicazione, è necessario fare clic su **Crea nuovo profilo**. Nello strumento di pubblicazione scegliere l'opzione desiderata e seguire i passaggi di configurazione.
 
     ![Scegliere IIS, FTP e così via.](../deployment/media/quickstart-publish-iis-ftp.png)
 
     Per informazioni sull'importazione di un profilo di pubblicazione in Visual Studio, vedere [Importare impostazioni di pubblicazione e distribuzione in IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
-    È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per altre informazioni, vedere [Deploying ASP.NET web applications and services](http://www.asp.net/aspnet/overview/deployment) (Distribuzione di applicazioni e servizi Web ASP.NET).
+    È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per altre informazioni, vedere [Deploying ASP.NET web applications and services](/aspnet/mvc/overview/deployment/) (Distribuzione di applicazioni e servizi Web ASP.NET).
 
 - **Desktop di Windows**: è possibile pubblicare un'applicazione desktop di Windows in un server Web o in una condivisione file di rete tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [Distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Per C++/CLI, vedere [distribuire un'app nativa con ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere [distribuire un'app nativa usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
@@ -93,7 +93,7 @@ Da Visual Studio è possibile creare pacchetti di app per la distribuzione in Mi
 
     ![Creare un pacchetto dell'applicazione](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Desktop di Windows**: È possibile eseguire la distribuzione nel Microsoft Store a partire da Visual Studio 2017 versione 15,4. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere creare [un pacchetto di un'app desktop per Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
+- **Desktop di Windows**: è possibile eseguire la distribuzione nel Microsoft Store a partire da Visual Studio 2017 versione 15,4. A tale scopo, iniziare creando un progetto di creazione del pacchetto dell'applicazione Windows. Per altre informazioni, vedere creare [un pacchetto di un'app desktop per Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
     ![Creare un pacchetto di un'app desktop](../deployment/media/feature-tour-desktop-bridge.png)
 
@@ -118,7 +118,7 @@ Se è necessaria un'installazione di un'applicazione desktop più complessa di q
    Per Visual Studio 2019, ottenere l'[estensione WiX Toolset Visual Studio 2019](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension).
    ::: moniker-end
 
-- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. È possibile usare InstallShield con Visual Studio 2017 e versioni successive. Si noti che InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017 e versioni successive. Rivolgersi a [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) per informazioni sulla disponibilità futura.
+- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. È possibile usare InstallShield con Visual Studio 2017 e versioni successive. Si noti che InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017 e versioni successive. Rivolgersi a [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) per informazioni sulla disponibilità futura.
 
 - È possibile creare un pacchetto del programma di installazione MSI o EXE usando un progetto di installazione (vdproj). Per usare questa opzione, installare l'[estensione Visual Studio Installer Projects](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
