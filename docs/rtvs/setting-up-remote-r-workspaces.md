@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810175"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888538"
 ---
 # <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
 
@@ -26,7 +26,7 @@ In questo articolo viene illustrato come configurare un server remoto con SSL e 
 
 ## <a name="install-an-ssl-certificate"></a>Installare un certificato SSL
 
-RTVS richiede che tutte le comunicazioni con un server remoto si svolgano tramite HTTP, che richiede un certificato SSL nel server. È possibile usare un certificato firmato da un'autorità di certificazione attendibile (scelta consigliata) o un certificato autofirmato. Con un certificato autofirmato RTVS genera avvisi al momento della connessione. In entrambi i casi è necessario installare il certificato nel computer e consentire l'accesso alla relativa chiave privata.
+RTVS richiede che tutte le comunicazioni con un server remoto si svolgano tramite HTTP, che richiede un certificato SSL nel server. È possibile usare un certificato firmato da un'autorità di certificazione attendibile (scelta consigliata) o un certificato autofirmato. Un certificato autofirmato causa l'emissione di avvisi da RTVS in caso di connessione. Con uno di essi, è necessario installarlo nel computer e consentire l'accesso alla relativa chiave privata.
 
 ### <a name="obtain-a-trusted-certificate"></a>Ottenere un certificato attendibile
 
@@ -176,9 +176,9 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
 1. Account utente: creare account per ogni utente che accede al computer remoto. È possibile creare account locali standard (senza privilegi) oppure è possibile includere il computer server R nel dominio e aggiungere i gruppi di sicurezza appropriati al gruppo di sicurezza `Users`.
 
-1. Regole del firewall: per impostazione predefinita `R Host Broker` è in ascolto sulla porta TCP 5444. Pertanto verificare che siano attivate regole firewall di Windows per il traffico in ingresso e in uscita (le regole in uscita sono necessarie per l'installazione di pacchetti e operazioni simili).  Il programma di installazione dei servizi R imposta automaticamente queste regole per il firewall incorporato di Windows. Se si usa un firewall di terze parti, è tuttavia necessario aprire manualmente la porta 5444 per `R Host Broker`.
+1. Regole del firewall: per impostazione predefinita, `R Host Broker` è in ascolto sulla porta TCP 5444. Pertanto verificare che siano attivate regole firewall di Windows per il traffico in ingresso e in uscita (le regole in uscita sono necessarie per l'installazione di pacchetti e operazioni simili).  Il programma di installazione dei servizi R imposta automaticamente queste regole per il firewall incorporato di Windows. Se si usa un firewall di terze parti, è tuttavia necessario aprire manualmente la porta 5444 per `R Host Broker`.
 
-1. Configurazione di Azure: se il computer remoto è una macchina virtuale in Azure, aprire la porta 5444 per il traffico in ingresso anche nella rete di Azure, che è indipendente dal firewall di Windows. Per informazioni dettagliate vedere [Filtrare il traffico di rete con gruppi di sicurezza di rete](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) nella documentazione di Azure.
+1. Configurazione di Azure: se il computer remoto è una macchina virtuale in Azure, aprire la porta 5444 per il traffico in ingresso anche nella rete di Azure, che è indipendente dal firewall di Windows. Per informazioni dettagliate vedere [Filtrare il traffico di rete con gruppi di sicurezza di rete](/azure/virtual-network/virtual-networks-nsg) nella documentazione di Azure.
 
 1. Indicare a R Host Broker il certificato SSL da caricare: se si installa il certificato in un server Intranet, è probabile che il nome di dominio completo del server corrisponda al nome NETBIOS del server. In questo caso non è necessario eseguire alcuna operazione, perché viene caricato il certificato predefinito.
 
@@ -197,13 +197,13 @@ Per l'esecuzione dei servizi R nel computer remoto è anche necessario creare ac
 
     Salvare il file e riavviare il computer per applicare le modifiche.
 
-## <a name="troubleshooting"></a>Risoluzione dei problemi
+## <a name="troubleshooting"></a>Troubleshooting
 
-**D. Il computer server R non risponde, come procedere?**
+**D. il computer server R non risponde, cosa devo fare?**
 
 Provare a eseguire il ping del computer remoto dalla riga di comando: `ping remote-machine-name`. Se il ping non riesce verificare che il computer sia in esecuzione.
 
-**D. La finestra interattiva di R indica che il computer remoto è acceso ma il servizio non è in esecuzione. Perché?**
+**D. la finestra interattiva di R indica che il computer remoto è acceso, ma perché il servizio non è in esecuzione?**
 
 Esistono tre possibili motivi:
 
@@ -213,21 +213,21 @@ Esistono tre possibili motivi:
 
 Riavviare il computer dopo aver modificato le condizioni precedenti. Quindi verificare che `RHostBrokerService` e `RUserProfileService` siano in esecuzione tramite Gestione attività (scheda Servizi) o tramite *services.msc*.
 
-**D. Perché la finestra interattiva di R visualizza il messaggio "401 Accesso negato" durante la connessione al server R?**
+**D. perché la finestra interattiva di R dice "401 Access denied" durante la connessione a R server?**
 
 Le ragioni possibili sono due:
 
 - È molto probabile che l'account `NETWORK SERVICE` non disponga dell'accesso alla chiave privata del certificato SSL. Seguire le istruzioni specificate in precedenza per concedere a `NETWORK SERVICE` l'accesso alla chiave privata.
 - Verificare che il servizio `seclogon` sia in esecuzione. Usare *services.msc* per configurare l'avvio automatico di `seclogon`.
 
-**D. Perché la finestra interattiva di R visualizza il messaggio "404 Non trovato" durante la connessione al server R?**
+**D. perché la finestra interattiva di R dice "404 non trovato" durante la connessione a R server?**
 
 Questo errore è probabilmente dovuto al fatto che mancano una o più librerie ridistribuibili di Visual C++. Verificare se nella finestra interattiva di R è presente un messaggio relativo a una libreria (DLL) mancante. Quindi verificare che sia installato il componente ridistribuibile VS 2015 e che sia installato R.
 
-**D. Non è possibile accedere a Internet o a una risorsa dalla finestra interattiva di R. Come procedere?**
+**D. non è possibile accedere a Internet/Resource dalla finestra R interattiva, cosa devo fare?**
 
 Verificare che le regole firewall per `Microsoft.R.Host.Broker` e `Microsoft.R.Host` consentano l'accesso in uscita sulla porta 5444. Riavviare il computer dopo aver applicato le modifiche.
 
-**D. Nessuna delle soluzioni sopra elencate sembra funzionare. Come procedere?**
+**D. ho provato tutte queste soluzioni e il suo lavoro non funziona ancora. Ora?**
 
-Cercare nei file log in *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Questa cartella contiene file di log separati per ogni istanza del servizio R Broker che è stata eseguita. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.
+Esaminare i file di log in *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Questa cartella contiene file di log distinti per ogni istanza del servizio R broker eseguito. Ogni volta che il servizio viene riavviato, viene creato un nuovo file di log. Verificare se il file di log più recente contiene indicazioni sulla possibile causa dell'errore.

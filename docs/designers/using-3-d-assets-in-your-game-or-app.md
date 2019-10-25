@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634540"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888509"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedura: usare asset 3D nel gioco o nell'app
 
@@ -97,7 +97,7 @@ Quando si usa lo strumento della pipeline di contenuti immagine per generare un 
 
 |proprietà|Descrizione|
 |--------------|-----------------|
-|**Compressione**|Specifica il tipo di compressione usato per il file di output.<br /><br /> Le opzioni disponibili sono:<br /><br /> -   **Nessuna compressione**<br />-   **Compressione BC1_UNORM**<br />-   **Compressione BC1_UNORM_SRGB**<br />-   **Compressione BC2_UNORM**<br />-   **Compressione BC2_UNORM_SRGB**<br />-   **Compressione BC3_UNORM**<br />-   **Compressione BC3_UNORM_SRGB**<br />-   **Compressione BC4_UNORM**<br />-   **Compressione BC4_SNORM**<br />-   **Compressione BC5_UNORM**<br />-   **Compressione BC5_SNORM**<br />-   **Compressione BC6H_UF16**<br />-   **Compressione BC6H_SF16**<br />-   **Compressione BC7_UNORM**<br />-   **Compressione BC7_UNORM_SRGB**<br /><br /> Per informazioni sui formati di compressione supportati nelle varie versioni di DirectX, vedere la [ Guida alla programmazione per DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Compressione**|Specifica il tipo di compressione usato per il file di output.<br /><br /> Le opzioni disponibili sono:<br /><br /> -   **Nessuna compressione**<br />-   **Compressione BC1_UNORM**<br />-   **Compressione BC1_UNORM_SRGB**<br />-   **Compressione BC2_UNORM**<br />-   **Compressione BC2_UNORM_SRGB**<br />-   **Compressione BC3_UNORM**<br />-   **Compressione BC3_UNORM_SRGB**<br />-   **Compressione BC4_UNORM**<br />-   **Compressione BC4_SNORM**<br />-   **Compressione BC5_UNORM**<br />-   **Compressione BC5_SNORM**<br />-   **Compressione BC6H_UF16**<br />-   **Compressione BC6H_SF16**<br />-   **Compressione BC7_UNORM**<br />-   **Compressione BC7_UNORM_SRGB**<br /><br /> Per informazioni sui formati di compressione supportati nelle varie versioni di DirectX, vedere la [ Guida alla programmazione per DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Converti in formato premoltiplicato per alfa|**Sì** per convertire l'immagine in formato premoltiplicato per alfa nel file di output, altrimenti **No**. Viene modificato solo il file di output, mentre l'immagine di origine resta invariata.|
 |**Genera MIP**|**Sì** per generare una catena MIP completa in fase di compilazione e includerla nel file di output, altrimenti **No**. Se si sceglie **No** e il file di origine contiene già una catena mipmap, nel file di output sarà presente una catena MIP. In caso contrario, non sarà presente alcuna catena MIP.|
 |**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
@@ -122,7 +122,7 @@ Quando si usa lo strumento della pipeline di contenuti shader per generare un as
 
 ### <a name="use-textures-and-images"></a>Uso di trame e immagini
 
-Direct3D dispone di funzioni per la creazione di risorse di trama. In Direct3D 11 la libreria di utilità D3DX11 fornisce funzioni aggiuntive per la creazione di risorse trama e visualizzazioni di risorse direttamente dai file di immagine. Per altre informazioni su come creare una risorsa trama in Direct3D 11, vedere l'argomento relativo alle [trame](http://go.microsoft.com/fwlink/p/?LinkID=246267). Per altre informazioni su come usare la libreria D3DX11 per creare una risorsa trama o una visualizzazione risorse da un file di immagine, vedere [How to: Initialize a texture from a file](http://go.microsoft.com/fwlink/p/?LinkId=246268) (Procedura: Inizializzare una trama da un file).
+Direct3D dispone di funzioni per la creazione di risorse di trama. In Direct3D 11 la libreria di utilità D3DX11 fornisce funzioni aggiuntive per la creazione di risorse trama e visualizzazioni di risorse direttamente dai file di immagine. Per altre informazioni su come creare una risorsa trama in Direct3D 11, vedere l'argomento relativo alle [trame](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures). Per altre informazioni su come usare la libreria D3DX11 per creare una risorsa trama o una visualizzazione risorse da un file di immagine, vedere [How to: Initialize a texture from a file](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to) (Procedura: Inizializzare una trama da un file).
 
 ### <a name="use-3d-models"></a>Uso di modelli 3D
 
@@ -130,7 +130,7 @@ Direct3D 11 non fornisce funzioni per la creazione di risorse da modelli 3D. È 
 
 ### <a name="use-shaders"></a>Uso degli shader
 
-Direct3D fornisce funzioni per la creazione di risorse shader e per la relativa associazione alla pipeline di grafica programmabile. Per altre informazioni su come creare una risorsa shader in Direct3D e associarla alla pipeline, vedere [Programming guide for HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521) (Guida alla programmazione per HLSL).
+Direct3D fornisce funzioni per la creazione di risorse shader e per la relativa associazione alla pipeline di grafica programmabile. Per altre informazioni su come creare una risorsa shader in Direct3D e associarla alla pipeline, vedere [Programming guide for HLSL](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide) (Guida alla programmazione per HLSL).
 
 Nella pipeline di grafica programmabile, ogni fase della pipeline deve fornire alla fase successiva un risultato che sia formattato in modo tale da essere comprensibile. Dato che la finestra di progettazione shader può solo creare i pixel shader, spetta all'app verificare che i dati che riceve siano nel formato previsto. Il pixel shader è preceduto da molte fasi di shader programmabili che eseguono trasformazioni geometriche, ovvero vertex shader, hull shader, domain shader e geometry shader. Il pixel shader è preceduto anche dalla fase del mosaico non programmabile. Indipendentemente da quale sia la fase che precede immediatamente il pixel shader, deve fornire il risultato in questo formato:
 
