@@ -21,16 +21,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163057"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806305"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Cenni preliminari sull'analisi del codice per C/C++
 
-Lo strumento diC++ analisi del codice c/codice fornisce informazioni sui possibili difetti nelC++ codice sorgente c/. Gli errori di codifica più comuni segnalati dallo strumento includono i sovraccarichi del buffer, l'annullamento dell'inizializzazione della memoria, le dereferenziazioni al puntatore null e le perdite di memoria e risorse. Lo strumento può inoltre eseguire controlli sulle [ C++ linee guida di base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+Lo strumento diC++ analisi del codice c/codice fornisce informazioni sui possibili difetti nelC++ codice sorgente c/. Gli errori di codifica più comuni segnalati dallo strumento includono i sovraccarichi del buffer, l'annullamento dell'inizializzazione della memoria, le dereferenziazioni al puntatore null e le perdite di memoria e risorse. Lo strumento può inoltre eseguire controlli sulle [ C++ linee guida di base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integrazione con IDE (Integrated Development Environment)
 
@@ -46,11 +46,11 @@ Durante il processo di compilazione, tutti gli avvisi generati a causa del codic
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 versione 15.7 e successive:** È possibile eseguire lo strumento dalla riga di comando con qualsiasi sistema di compilazione incluso CMake.
+**Visual Studio 2017 versione 15,7 e successive:** È possibile eseguire lo strumento dalla riga di comando con qualsiasi sistema di compilazione incluso CMake.
 
 ## <a name="pragma-support"></a>supporto #pragma
 
-È possibile utilizzare la direttiva `#pragma` per considerare gli avvisi come errori. abilitare o disabilitare gli avvisi ed eliminare gli avvisi per le singole righe di codice. Per altre informazioni, vedere [Direttive pragma e parola chiave __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+È possibile utilizzare la direttiva `#pragma` per considerare gli avvisi come errori. abilitare o disabilitare gli avvisi ed eliminare gli avvisi per le singole righe di codice. Per altre informazioni, vedere [Direttive pragma e parola chiave __Pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Supporto delle annotazioni
 
@@ -66,8 +66,8 @@ Le annotazioni rendono più precisa l'analisi del codice, in quanto offrono info
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Avvio rapido: Analisi del codice per CC++/](quick-start-code-analysis-for-c-cpp.md)
-- [Procedura dettagliata: Analizza C/C++ codice per i difetti @ no__t-1
+- [Guida introduttiva: analisi del codice per C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Procedura dettagliata: analizzare CC++ /codice per i difetti](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Avvisi dell'analisi codice per C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Usare gli strumenti di verifica delle Linee guida di base di C++](using-the-cpp-core-guidelines-checkers.md)
 - [C++Riferimento di controllo delle linee guida di base](code-analysis-for-cpp-corecheck.md)

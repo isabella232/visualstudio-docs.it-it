@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446319"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806763"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'appropriata disciplina di blocco e utilizzare le annotazioni SAL.
@@ -115,7 +115,7 @@ I blocchi intelligenti in genere avvolgono i blocchi nativi e ne gestiscono la d
 |`_Moves_lock_(target, source)`|Viene descritta l'operazione `move constructor` che trasferisce lo stato di blocco dall'oggetto `source` al `target`. Il `target` viene considerato un oggetto appena costruito, quindi qualsiasi stato precedente viene perso e sostituito con lo stato `source`. Anche `source` viene reimpostato su uno stato pulito senza conteggi dei blocchi o destinazione di aliasing, ma gli alias che vi fanno riferimento rimangono invariati.|
 |`_Replaces_lock_(target, source)`|Viene descritta la semantica `move assignment operator` in cui viene rilasciato il blocco di destinazione prima di trasferire lo stato dall'origine. Questo può essere considerato come una combinazione di `_Moves_lock_(target, source)` preceduta da un `_Releases_lock_(target)`.|
 |`_Swaps_locks_(left, right)`|Descrive il comportamento standard `swap` che presuppone che gli oggetti `left` e `right` scambino il proprio stato. Lo stato scambiato include il conteggio dei blocchi e la destinazione di alias, se presenti. Gli alias che puntano agli oggetti `left` e `right` rimangono invariati.|
-|`_Detaches_lock_(detached, lock)`|Descrive uno scenario in cui un tipo di wrapper di blocco consente la dissociazione con la relativa risorsa contenuta. Questo approccio è simile a quello che `std::unique_ptr` funziona con il puntatore interno: consente ai programmatori di estrarre il puntatore e lasciare il relativo contenitore del puntatore intelligente in uno stato pulito. Una logica simile è supportata da `std::unique_lock` e può essere implementata nei wrapper di blocco personalizzati. Il blocco scollegato mantiene il proprio stato (se presente, il numero di blocchi e la destinazione di aliasing), mentre il wrapper viene reimpostato in modo da contenere zero blocchi e nessuna destinazione di alias, mantenendo i propri alias. Non viene eseguita alcuna operazione sui conteggi dei blocchi (rilascio e acquisizione). Questa annotazione si comporta esattamente come `_Moves_lock_`, tranne per il fatto che l'argomento scollegato deve essere `return` anziché `this`.|
+|`_Detaches_lock_(detached, lock)`|Descrive uno scenario in cui un tipo di wrapper di blocco consente la dissociazione con la relativa risorsa contenuta. Questo approccio è simile al funzionamento di `std::unique_ptr` con il puntatore interno: consente ai programmatori di estrarre il puntatore e lasciare il relativo contenitore del puntatore intelligente in uno stato pulito. Una logica simile è supportata da `std::unique_lock` e può essere implementata nei wrapper di blocco personalizzati. Il blocco scollegato mantiene il proprio stato (se presente, il numero di blocchi e la destinazione di aliasing), mentre il wrapper viene reimpostato in modo da contenere zero blocchi e nessuna destinazione di alias, mantenendo i propri alias. Non viene eseguita alcuna operazione sui conteggi dei blocchi (rilascio e acquisizione). Questa annotazione si comporta esattamente come `_Moves_lock_` ad eccezione del fatto che l'argomento scollegato deve essere `return` invece che `this`.|
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -127,4 +127,4 @@ I blocchi intelligenti in genere avvolgono i blocchi nativi e ne gestiscono la d
 - [Specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [Funzioni intrinseche](../code-quality/intrinsic-functions.md)
 - [Suggerimenti ed esempi](../code-quality/best-practices-and-examples-sal.md)
-- [Blog del team di analisi del codice](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [Blog del team di analisi del codice](https://blogs.msdn.microsoft.com/codeanalysis/)

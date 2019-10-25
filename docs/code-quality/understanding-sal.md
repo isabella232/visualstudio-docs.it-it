@@ -8,16 +8,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: e3740b9a7544d6cc6d5b9eceb548ae66e7d3f474
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445606"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807095"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 
-Il linguaggio di annotazione del codice sorgente Microsoft (SAL) fornisce un set di annotazioni che è possibile usare per descrivere il modo in cui una funzione usa i parametri, le ipotesi che fa su di essi e le garanzie che apporta al termine dell'esecuzione. Le annotazioni sono definite nel file di intestazione `<sal.h>`. L'analisi del codice di C++ Visual Studio per USA le annotazioni SAL per modificare l'analisi delle funzioni. Per ulteriori informazioni su SAL 2,0 per lo sviluppo di driver Windows, vedere le [annotazioni sal 2,0 per i driver di Windows](http://go.microsoft.com/fwlink/?LinkId=250979).
+Il linguaggio di annotazione del codice sorgente Microsoft (SAL) fornisce un set di annotazioni che è possibile usare per descrivere il modo in cui una funzione usa i parametri, le ipotesi che fa su di essi e le garanzie che apporta al termine dell'esecuzione. Le annotazioni sono definite nel file di intestazione `<sal.h>`. L'analisi del codice di C++ Visual Studio per USA le annotazioni SAL per modificare l'analisi delle funzioni. Per ulteriori informazioni su SAL 2,0 per lo sviluppo di driver Windows, vedere le [annotazioni sal 2,0 per i driver di Windows](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
 
 In modalità nativa, C C++ e forniscono solo agli sviluppatori un metodo limitato per esprimere costantemente finalità e invarianza. Con le annotazioni SAL è possibile descrivere più dettagliatamente le funzioni in modo che gli sviluppatori che li utilizzano possano comprendere meglio come utilizzarle.
 
@@ -114,11 +114,11 @@ Negli esempi, lo strumento di analisi Visual Studio Code viene usato insieme all
 
 2. Sulla barra dei menu scegliere **Compila**, **Esegui analisi del codice su soluzione**.
 
-     Si consideri l'esempio \_Cm @ no__t-1 in questa sezione. Se si esegue l'analisi del codice su di essa, viene visualizzato questo avviso:
+     Si consideri il \_in\_ esempio in questa sezione. Se si esegue l'analisi del codice su di essa, viene visualizzato questo avviso:
 
     > **Valore del parametro C6387 non valido** ' pInt ' potrebbe essere ' 0': non rispetta la specifica per la funzione ' incallee '.
 
-### <a name="example-the-_in_-annotation"></a>Esempio: annotazione \_Cm @ no__t-1
+### <a name="example-the-_in_-annotation"></a>Esempio: \_nell'annotazione\_
 
 L'annotazione `_In_` indica che:
 
@@ -130,7 +130,7 @@ L'annotazione `_In_` indica che:
 
 - `_In_` specifica "di sola lettura". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere invece l'annotazione `_Inout_`.
 
-- `_In_` è consentito, ma viene ignorato dall'analizzatore su scalari non puntatore.
+- `_In_` è consentito ma ignorato dall'analizzatore su scalari non puntatore.
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -156,9 +156,9 @@ void BadInCaller()
 
 Se si usa Visual Studio Code analisi in questo esempio, viene convalidato che i chiamanti passano un puntatore non null a un buffer inizializzato per `pInt`. In questo caso, il puntatore `pInt` non può essere NULL.
 
-### <a name="example-the-_in_opt_-annotation"></a>Esempio: l'annotazione \_Cm @ no__t-1opt @ no__t-2
+### <a name="example-the-_in_opt_-annotation"></a>Esempio: \_in\_opt\_ annotazione
 
-`_In_opt_` corrisponde a `_In_`, ad eccezione del fatto che il parametro di input può essere NULL e, di conseguenza, la funzione deve verificare la presenza di questa.
+`_In_opt_` è uguale a `_In_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve verificare la presenza di questa.
 
 ```cpp
 
@@ -184,9 +184,9 @@ void InOptCaller()
 
 Visual Studio Code analisi convalida che la funzione verifica la presenza di valori NULL prima di accedere al buffer.
 
-### <a name="example-the-_out_-annotation"></a>Esempio: annotazione \_Out @ no__t-1
+### <a name="example-the-_out_-annotation"></a>Esempio: annotazione\_ \_out
 
-`_Out_` supporta uno scenario comune in cui viene passato un puntatore non NULL che punta a un buffer di elemento e la funzione Inizializza l'elemento. Il chiamante non deve inizializzare il buffer prima della chiamata. la funzione chiamata promette di inizializzarla prima della restituzione.
+`_Out_` supporta uno scenario comune in cui un puntatore non NULL che punta a un buffer di elemento viene passato e la funzione Inizializza l'elemento. Il chiamante non deve inizializzare il buffer prima della chiamata. la funzione chiamata promette di inizializzarla prima della restituzione.
 
 ```cpp
 void GoodOutCallee(_Out_ int *pInt)
@@ -210,9 +210,9 @@ void OutCaller()
 
 Visual Studio Code strumento di analisi verifica che il chiamante passi un puntatore non NULL a un buffer per `pInt` e che il buffer venga inizializzato dalla funzione prima che venga restituito.
 
-### <a name="example-the-_out_opt_-annotation"></a>Esempio: l'annotazione \_Out @ no__t-1opt @ no__t-2
+### <a name="example-the-_out_opt_-annotation"></a>Esempio: \_out\_opt\_ Annotation
 
-`_Out_opt_` corrisponde a `_Out_`, ad eccezione del fatto che il parametro può essere NULL e, di conseguenza, la funzione deve verificare la presenza di questa.
+`_Out_opt_` è uguale a `_Out_`, ad eccezione del fatto che il parametro può essere NULL e, pertanto, la funzione deve verificare la presenza di questa.
 
 ```cpp
 void GoodOutOptCallee(_Out_opt_ int *pInt)
@@ -237,12 +237,12 @@ void OutOptCaller()
 
 Visual Studio Code analisi verifica che questa funzione verifichi la presenza di valori NULL prima che venga dereferenziato `pInt` e se `pInt` non è NULL, il buffer viene inizializzato dalla funzione prima che venga restituito.
 
-### <a name="example-the-_inout_-annotation"></a>Esempio: annotazione \_Inout @ no__t-1
+### <a name="example-the-_inout_-annotation"></a>Esempio: l'annotazione \_InOut\_
 
 `_Inout_` viene utilizzato per annotare un parametro del puntatore che può essere modificato dalla funzione. Il puntatore deve puntare a dati inizializzati validi prima della chiamata e anche in caso di modifica, deve comunque avere un valore valido al momento della restituzione. L'annotazione specifica che la funzione può leggere liberamente e scrivere nel buffer a elemento singolo. Il chiamante deve fornire il buffer e inizializzarlo.
 
 > [!NOTE]
-> Come `_Out_`, `_Inout_` deve essere applicato a un valore modificabile.
+> Come `_Out_`, `_Inout_` necessario applicare a un valore modificabile.
 
 ```cpp
 void InOutCallee(_Inout_ int *pInt)
@@ -268,9 +268,9 @@ void BadInOutCaller()
 
 Visual Studio Code analisi convalida che i chiamanti passano un puntatore non NULL a un buffer inizializzato per `pInt` e che, prima della restituzione, `pInt` è ancora non NULL e il buffer viene inizializzato.
 
-### <a name="example-the-_inout_opt_-annotation"></a>Esempio: l'annotazione \_Inout @ no__t-1opt @ no__t-2
+### <a name="example-the-_inout_opt_-annotation"></a>Esempio: l'annotazione\_ di \_InOut\_opt
 
-`_Inout_opt_` corrisponde a `_Inout_`, ad eccezione del fatto che il parametro di input può essere NULL e, di conseguenza, la funzione deve verificare la presenza di questa.
+`_Inout_opt_` è uguale a `_Inout_`, ad eccezione del fatto che il parametro di input può essere NULL e, pertanto, la funzione deve verificare la presenza di questa.
 
 ```cpp
 void GoodInOutOptCallee(_Inout_opt_ int *pInt)
@@ -297,7 +297,7 @@ void InOutOptCaller()
 
 Visual Studio Code analisi convalida che questa funzione verifica la presenza di valori NULL prima di accedere al buffer e se `pInt` non è NULL, il buffer viene inizializzato dalla funzione prima che venga restituito.
 
-### <a name="example-the-_outptr_-annotation"></a>Esempio: annotazione \_Outptr @ no__t-1
+### <a name="example-the-_outptr_-annotation"></a>Esempio: \_annotazione\_ Outptr
 
 `_Outptr_` viene utilizzato per annotare un parametro progettato per restituire un puntatore.  Il parametro non deve essere NULL e la funzione chiamata restituisce un puntatore non NULL al suo interno e il puntatore punta ai dati inizializzati.
 
@@ -327,9 +327,9 @@ void OutPtrCaller()
 
 Visual Studio Code analisi verifica che il chiamante passi un puntatore non NULL per `*pInt` e che il buffer venga inizializzato dalla funzione prima che venga restituito.
 
-### <a name="example-the-_outptr_opt_-annotation"></a>Esempio: l'annotazione \_Outptr @ no__t-1opt @ no__t-2
+### <a name="example-the-_outptr_opt_-annotation"></a>Esempio: \_Outptr\_opt\_ Annotation
 
-`_Outptr_opt_` corrisponde a `_Outptr_`, ad eccezione del fatto che il parametro è facoltativo, il chiamante può passare un puntatore NULL per il parametro.
+`_Outptr_opt_` è uguale `_Outptr_`, ad eccezione del fatto che il parametro è facoltativo, il chiamante può passare un puntatore NULL per il parametro.
 
 ```cpp
 void GoodOutPtrOptCallee(_Outptr_opt_ int **pInt)
@@ -359,9 +359,9 @@ void OutPtrOptCaller()
 
 Visual Studio Code analisi convalida che questa funzione verifica la presenza di valori NULL prima che venga dereferenziato `*pInt` e che il buffer venga inizializzato dalla funzione prima che venga restituito.
 
-### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Esempio: annotazione \_Success @ no__t-1 in combinazione con \_Out @ no__t-3
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Esempio: l'annotazione \_Success\_ in combinazione con \_out\_
 
-Le annotazioni possono essere applicate alla maggior parte degli oggetti.  In particolare, è possibile aggiungere annotazioni a una funzione intera.  Una delle caratteristiche più ovvie di una funzione è che può avere esito positivo o negativo. Tuttavia, come l'associazione tra un buffer e le relative dimensioni,C++ C/non può esprimere l'esito positivo o negativo della funzione. Utilizzando l'annotazione `_Success_`, è possibile indicare l'esito positivo di una funzione.  Il parametro per l'annotazione `_Success_` è semplicemente un'espressione che, quando è true, indica che la funzione ha avuto esito positivo. L'espressione può essere qualsiasi elemento che può essere gestito dal parser dell'annotazione. Gli effetti delle annotazioni dopo la restituzione della funzione sono applicabili solo quando la funzione ha esito positivo. Questo esempio illustra il modo in cui `_Success_` interagisce con `_Out_` per eseguire la cosa corretta. È possibile usare la parola chiave `return` per rappresentare il valore restituito.
+Le annotazioni possono essere applicate alla maggior parte degli oggetti.  In particolare, è possibile aggiungere annotazioni a una funzione intera.  Una delle caratteristiche più ovvie di una funzione è che può avere esito positivo o negativo. Tuttavia, come l'associazione tra un buffer e le relative dimensioni,C++ C/non può esprimere l'esito positivo o negativo della funzione. Utilizzando l'annotazione `_Success_`, è possibile specificare l'esito positivo di una funzione.  Il parametro per l'annotazione `_Success_` è semplicemente un'espressione che, quando è true, indica che la funzione ha avuto esito positivo. L'espressione può essere qualsiasi elemento che può essere gestito dal parser dell'annotazione. Gli effetti delle annotazioni dopo la restituzione della funzione sono applicabili solo quando la funzione ha esito positivo. In questo esempio viene illustrato come `_Success_` interagisce con `_Out_` per eseguire la corretta operazione. È possibile usare la parola chiave `return` per rappresentare il valore restituito.
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)
@@ -376,7 +376,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 }
 ```
 
-L'annotazione `_Out_` fa in modo che Visual Studio Code analisi convalidi che il chiamante passa un puntatore non NULL a un buffer per `pInt` e che il buffer venga inizializzato dalla funzione prima che venga restituito.
+L'annotazione `_Out_` fa in modo che Visual Studio Code analisi convalidi che il chiamante passa un puntatore non NULL a un buffer per `pInt`e che il buffer venga inizializzato dalla funzione prima che venga restituito.
 
 ## <a name="sal-best-practice"></a>Procedura consigliata SAL
 
@@ -402,7 +402,7 @@ In alternativa, è possibile aggiungere annotazioni a tutti i parametri per rend
 
 ## <a name="related-resources"></a>Risorse correlate
 
-[Blog del team di analisi del codice](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+[Blog del team di analisi del codice](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>Vedere anche
 

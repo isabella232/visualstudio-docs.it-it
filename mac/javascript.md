@@ -6,18 +6,18 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 7ffe24d26af91d7d6733ec1540c2f2d810425e1e
-ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
+ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175403"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807161"
 ---
 # <a name="javascript-and-typescript-support"></a>Supporto per JavaScript e TypeScript
 
 Visual Studio per Mac offre supporto per JavaScript e TypeScript con evidenziazione della sintassi, formattazione del codice e IntelliSense.
 
-![Supporto per l'editor Typescript](/media/tsjseditor-2019.gif)
+![Supporto per l'editor Typescript](media/tsjseditor-2019.gif)
 
 Per altre informazioni sulla scrittura di JavaScript, vedere le guide sulla [scrittura di codice JavaScript](/scripting/javascript/writing-javascript-code).
 

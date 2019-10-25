@@ -1,5 +1,5 @@
 ---
-title: Avvisi di documentazione
+title: Avvisi della documentazione
 ms.date: 09/16/2019
 ms.topic: reference
 f1_keywords:
@@ -13,22 +13,22 @@ ms.author: mavasani
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b42dc20b228e30a9b2632a0525a1ec8a9ddbb1
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 4946c69bbbe4bf1c240967ebd93ef58cfa79e333
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079207"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807105"
 ---
-# <a name="documentation-warnings"></a>Avvisi di documentazione
+# <a name="documentation-warnings"></a>Avvisi della documentazione
 
-Gli avvisi relativi alla documentazione supportano la scrittura di librerie ben documentate tramite l'uso corretto di commenti relativi alla [documentazione XML](https://docs.microsoft.com/dotnet/csharp/codedoc) per le API visibili esternamente.
+Gli avvisi relativi alla documentazione supportano la scrittura di librerie ben documentate tramite l'uso corretto di commenti relativi alla [documentazione XML](/dotnet/csharp/codedoc) per le API visibili esternamente.
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 
-| Regola | DESCRIZIONE |
+| Regola | Descrizione |
 | - | - |
-| [CA1200: Evitare l'uso di tag cref con un prefisso](../code-quality/ca1200.md) | L'attributo [cref](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute) in un tag di documentazione XML significa "riferimento al codice". Specifica che il testo all'interno del tag è un elemento di codice, ad esempio un tipo, un metodo o una proprietà. Evitare di `cref` usare i tag con i prefissi, perché impedisce al compilatore di verificare i riferimenti. Impedisce inoltre a Visual Studio Integrated Development Environment (IDE) di trovare e aggiornare questi riferimenti ai simboli durante i refactoring. |
+| [Ca1200: evitare di usare tag cref con un prefisso](../code-quality/ca1200.md) | L'attributo [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) in un tag di documentazione XML significa "riferimento al codice". Specifica che il testo all'interno del tag è un elemento di codice, ad esempio un tipo, un metodo o una proprietà. Evitare di usare i tag `cref` con i prefissi, perché impedisce al compilatore di verificare i riferimenti. Impedisce inoltre a Visual Studio Integrated Development Environment (IDE) di trovare e aggiornare questi riferimenti ai simboli durante i refactoring. |
 
 ## <a name="see-also"></a>Vedere anche
 
