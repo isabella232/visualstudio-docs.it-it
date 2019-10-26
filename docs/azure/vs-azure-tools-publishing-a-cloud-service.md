@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 440e5198cf05168cffb43ba8c81453413e7754dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ae6449613d273c6e0f8302b8a0b604fe91ebc847
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572305"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911747"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Pubblicazione di un servizio cloud con Visual Studio
 
@@ -33,7 +33,7 @@ Quando si pubblica l'applicazione Azure, è possibile eseguire una delle seguent
 
 - Creare un pacchetto del servizio: è possibile usare questo pacchetto e il file di configurazione del servizio per pubblicare l'applicazione in un ambiente di distribuzione dal [portale di Azure](https://portal.azure.com).
 
-- Pubblicare il progetto Azure da Visual Studio: per pubblicare l'applicazione direttamente in Azure, usare la Pubblicazione guidata. Per altre informazioni, vedere [Procedura guidata Pubblica l'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Pubblicare il progetto Azure da Visual Studio: per pubblicare l'applicazione direttamente in Azure, usare la pubblicazione guidata. Per altre informazioni, vedere [Procedura guidata Pubblica l'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Per creare un pacchetto del servizio da Visual Studio
 
@@ -69,11 +69,11 @@ Se l'infrastruttura back-end dell'app è stabile, ma i ruoli Web richiedono aggi
 
 - **Solo a scopo di sviluppo e test**: le modifiche vengono apportate direttamente alla macchina virtuale in cui è in esecuzione il ruolo Web. Se è necessario riciclare questa macchina virtuale, le modifiche andranno perse perché il pacchetto originale pubblicato viene utilizzato per ricreare la macchina virtuale per il ruolo. Pubblicare nuovamente l'applicazione per ottenere le modifiche più recenti per il ruolo Web.
 
-- **È possibile aggiornare solo i ruoli Web**: non è possibile aggiornare i ruoli di lavoro. Inoltre, non è possibile aggiornare `RoleEntryPoint` in `web role.cs`.
+- **È possibile aggiornare solo i ruoli Web**: i ruoli di lavoro non possono essere aggiornati. Inoltre, non è possibile aggiornare `RoleEntryPoint` in `web role.cs`.
 
-- **Può supportare solo una singola istanza di un ruolo Web**: non è possibile avere più istanze di un ruolo Web nell'ambiente di distribuzione. Tuttavia, sono supportati più ruoli web con una sola istanza.
+- **Può supportare solo una singola istanza di un ruolo Web**: non è possibile avere più istanze di qualsiasi ruolo Web nell'ambiente di distribuzione. Tuttavia, sono supportati più ruoli web con una sola istanza.
 
-- **Abilitare le connessioni Desktop remoto**: consente a Distribuzione Web di usare il nome utente e la password per connettersi alla macchina virtuale e distribuire le modifiche al server che esegue IIS (Internet Information Services). Inoltre, potrebbe essere necessario connettersi alla macchina virtuale per aggiungere un certificato attendibile a IIS su questa macchina virtuale. Con questo certificato si ha la certezza che la connessione remota per IIS usata da Distribuzione Web sia protetta.
+- **Abilita connessioni Desktop remoto**: questo requisito consente distribuzione Web di usare l'utente e la password per connettersi alla macchina virtuale per distribuire le modifiche al server che esegue Internet Information Services (IIS). Inoltre, potrebbe essere necessario connettersi alla macchina virtuale per aggiungere un certificato attendibile a IIS su questa macchina virtuale. Con questo certificato si ha la certezza che la connessione remota per IIS usata da Distribuzione Web sia protetta.
 
 La procedura seguente presuppone che si stia utilizzando la procedura guidata **Pubblica applicazione di Azure** .
 
@@ -120,7 +120,7 @@ La procedura seguente presuppone che si stia utilizzando la procedura guidata **
 
    a. Per connettersi alla macchina virtuale che esegue il ruolo Web, selezionare l'istanza del ruolo Web in **Cloud Explorer** o **Esplora server**, quindi scegliere il comando **Connessione tramite desktop remoto**. Per informazioni dettagliate su come connettersi alla macchina virtuale, vedere [Abilitare una connessione Desktop remoto per un ruolo in Servizi cloud di Azure con Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). Il browser chiederà di scaricare un file con estensione `.rdp`.
 
-   b. Per aggiungere un certificato SSL, aprire il servizio di gestione in Gestione IIS. In Gestione IIS abilitare SSL aprendo il collegamento **Binding** nel riquadro **Azione**. La finestra di dialogo **Aggiungi binding del sito** verrà visualizzata. Fare clic su **Aggiungi** e quindi selezionare HTTPS dall'elenco a discesa **Tipo**. Nell'elenco **Certificato SSL** selezionare il certificato SSL firmato da una CA che è stato caricato nel portale di Azure. Per altre informazioni, vedere [Configurare le impostazioni di connessione per il servizio di gestione](http://go.microsoft.com/fwlink/?LinkId=215824).
+   b. Per aggiungere un certificato SSL, aprire il servizio di gestione in Gestione IIS. In Gestione IIS abilitare SSL aprendo il collegamento **Binding** nel riquadro **Azione**. La finestra di dialogo **Aggiungi binding del sito** verrà visualizzata. Fare clic su **Aggiungi** e quindi selezionare HTTPS dall'elenco a discesa **Tipo**. Nell'elenco **Certificato SSL** selezionare il certificato SSL firmato da una CA che è stato caricato nel portale di Azure. Per altre informazioni, vedere [Configurare le impostazioni di connessione per il servizio di gestione](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Se si aggiunge un certificato SSL attendibile, il triangolo giallo di avviso non viene visualizzato nella **Pubblicazione guidata**.

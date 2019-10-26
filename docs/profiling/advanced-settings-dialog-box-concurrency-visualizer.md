@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0507e75a84f18350817a33abe25d3e59fa9aa2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926320"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911217"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente di controllare quali tracce vengono raccolte.  Nella finestra sono presenti le schede seguenti: Simboli, Just My Code, Buffer, Filtro, Eventi CLR, Marcatori, Provider e File.
@@ -29,7 +29,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
  I percorsi dei file con estensione *exe* e *dll* vengono archiviati nel file di traccia quando la traccia viene raccolta.  La modifica di questa impostazione non ha alcun effetto sulle tracce raccolte in precedenza.
 
 ## <a name="buffering"></a>Buffer
- Per raccogliere una traccia, il visualizzatore di concorrenza usa ETW (Event Tracing for Windows).  Per l'archiviazione degli eventi, ETW usa diversi buffer.  Le impostazioni predefinite del buffer ETW possono non essere sempre ottimali e, in alcuni casi, possono causare problemi come la perdita di eventi.  Per configurare le impostazioni del buffer ETW, è possibile usare la scheda Buffer. Per altre informazioni, vedere [Registrazione di eventi](http://go.microsoft.com/fwlink/?LinkId=234579) e [EVENT_TRACE_PROPERTIES structure](http://go.microsoft.com/fwlink/?LinkId=234580) (Struttura EVENT_TRACE_PROPERTIES).
+ Per raccogliere una traccia, il visualizzatore di concorrenza usa ETW (Event Tracing for Windows).  Per l'archiviazione degli eventi, ETW usa diversi buffer.  Le impostazioni predefinite del buffer ETW possono non essere sempre ottimali e, in alcuni casi, possono causare problemi come la perdita di eventi.  Per configurare le impostazioni del buffer ETW, è possibile usare la scheda Buffer. Per altre informazioni, vedere [Registrazione di eventi](/windows/win32/etw/event-tracing-portal) e [EVENT_TRACE_PROPERTIES structure](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) (Struttura EVENT_TRACE_PROPERTIES).
 
 ## <a name="filter"></a>Filtro
  Nella scheda Filtro è possibile selezionare il set di eventi raccolti dal visualizzatore di concorrenza. La selezione di un subset di eventi limita i tipi di dati visualizzati nei report, riduce la dimensione di ciascuna traccia e diminuisce il tempo necessario per l'elaborazione delle tracce.

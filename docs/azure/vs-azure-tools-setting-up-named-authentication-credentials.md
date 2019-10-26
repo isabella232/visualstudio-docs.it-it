@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 319f9327cb83f3d05d26512f448b029b57d23b0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572197"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911676"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurare le credenziali di autenticazione denominate
 
@@ -37,7 +37,7 @@ Se si vuole creare un certificato, vedere le istruzioni contenute in [Creare e c
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Panoramica di App Web](https://docs.microsoft.com/azure/app-service/)
-- [Distribuire l'app nel Servizio app di Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
-- [Distribuzione di processi Web usando Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [Creare e distribuire un servizio cloud](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Panoramica di App Web](/azure/app-service/)
+- [Distribuire l'app nel Servizio app di Azure](/azure/app-service/app-service-deploy-local-git)
+- [Distribuzione di processi Web usando Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Creare e distribuire un servizio cloud](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

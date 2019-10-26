@@ -20,20 +20,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925367"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911412"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funzionalità IntelliTrace (C#, Visual Basic, C++)
 
-È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto: IntelliTrace viene attivato per impostazione predefinita e si possono vedere le informazioni registrate da IntelliTrace nella nuova finestra **Strumenti di diagnostica** nella scheda **Eventi**. Selezionare un evento e fare clic su **Attiva debug cronologico** per visualizzare gli stack di chiamate e le variabili locali registrati per questo evento.
+È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto. IntelliTrace è attivato per impostazione predefinita ed è possibile visualizzare le informazioni che IntelliTrace sta registrando nella nuova finestra **strumenti di diagnostica** nella scheda **eventi** . Selezionare un evento e fare clic su **Attiva debug cronologico.** per visualizzare lo stack di chiamate e le variabili locali registrate per questo evento.
 
-Per una descrizione dettagliata, vedere [procedura dettagliata: Utilizzo di](../debugger/walkthrough-using-intellitrace.md)IntelliTrace.
+Per una descrizione dettagliata, vedere [procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
-È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition ma non le edizioni Professional o Community.
+È possibile utilizzare IntelliTrace in Visual Studio Enterprise Edition ma non le edizioni Professional o Community.
 
 Per verificare che IntelliTrace è abilitato, aprire la pagina delle opzioni **Strumenti > Opzioni > IntelliTrace**. **Abilita IntelliTrace** deve essere selezionata per impostazione predefinita.
 
@@ -123,7 +123,7 @@ Quando si salvano i dati di IntelliTrace per file, è possibile ottenere un file
 
 ## <a name="forums"></a>Forum
 
-[Debugger di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Debugger di Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>Video
 

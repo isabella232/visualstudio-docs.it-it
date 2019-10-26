@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba95cde967f428717be852dad785233eb96cb290
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b1143da15ca682e9c3b748fbc853bcfce78f72bb
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444878"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910175"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Frequenza elevata di conflitti di blocco
 
@@ -32,12 +32,12 @@ ms.locfileid: "63444878"
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.
 
 ## <a name="cause"></a>Causa
- I dati sulle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza significativamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. Considerare la possibilità di ripetere la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti.
+ I dati sulle prestazioni di sistema raccolti con i dati di profilatura indicano che si è verificata una frequenza significativamente elevata di conflitti di blocco durante l'esecuzione dell'applicazione. È consigliabile eseguire di nuovo la profilatura usando il metodo di profilatura della concorrenza per individuare la causa dei conflitti.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I blocchi vengono usati per proteggere sezioni critiche di codice che devono essere eseguite in serie un thread alla volta in un'applicazione multithreading. Common Language Run-time (CLR) di Microsoft .NET offre un set completo di primitive di sincronizzazione e blocco. Ad esempio, il linguaggio C# supporta un'istruzione lock (SyncLock in Visual Basic). Un'applicazione gestita può chiamare i metodi Monitor.Enter e Monitor.Exit nello spazio dei nomi System.Threading per acquisire e rilasciare direttamente un blocco. .NET Framework supporta primitive di sincronizzazione e blocco aggiuntive, includendo classi che supportano mutex, blocchi ReaderWriter e semafori. Per altre informazioni, vedere [Panoramica delle primitive di sincronizzazione](http://go.microsoft.com/fwlink/?LinkId=177867) nella Guida per gli sviluppatori di .NET Framework nel sito Web MSDN. Le classi .NET Framework sono sovrapposte ai servizi di sincronizzazione di livello inferiore incorporati nel sistema operativo Windows. Includono oggetti sezione critica e molte funzioni diverse di segnalazione eventi e attesa. Per altre informazioni, vedere la sezione [Synchronization](http://go.microsoft.com/fwlink/?LinkId=177869) (Sincronizzazione) della documentazione relativa allo sviluppo Win32 e COM in MSDN Library
+ I blocchi vengono usati per proteggere sezioni critiche di codice che devono essere eseguite in serie un thread alla volta in un'applicazione multithreading. Common Language Run-time (CLR) di Microsoft .NET offre un set completo di primitive di sincronizzazione e blocco. Ad esempio, il linguaggio C# supporta un'istruzione lock (SyncLock in Visual Basic). Un'applicazione gestita può chiamare i metodi Monitor.Enter e Monitor.Exit nello spazio dei nomi System.Threading per acquisire e rilasciare direttamente un blocco. .NET Framework supporta primitive di sincronizzazione e blocco aggiuntive, includendo classi che supportano mutex, blocchi ReaderWriter e semafori. Per altre informazioni, vedere [Panoramica delle primitive di sincronizzazione](/dotnet/standard/threading/overview-of-synchronization-primitives) nella Guida per gli sviluppatori di .NET Framework nel sito Web MSDN. Le classi .NET Framework sono sovrapposte ai servizi di sincronizzazione di livello inferiore incorporati nel sistema operativo Windows. Includono oggetti sezione critica e molte funzioni diverse di segnalazione eventi e attesa. Per altre informazioni, vedere la sezione [Synchronization](/windows/win32/sync/synchronization) (Sincronizzazione) della documentazione relativa allo sviluppo Win32 e COM in MSDN Library
 
- I percorsi di memoria condivisi sottostanti le classi .NET Framework e gli oggetti Windows nativi usati per la sincronizzazione e il blocco devono essere modificati tramite operazioni interlock. Le operazioni interlock usano istruzioni specifiche dell'hardware che agiscono sui percorsi di memoria condivisi per modificare il proprio stato tramite operazioni atomiche. La coerenza delle operazioni atomiche è garantita attraverso tutti i processori del computer. Blocchi e WaitHandle sono gli oggetti .NET che usano automaticamente operazioni interlock quando vengono impostati o reimpostati. Nell'applicazione possono essere presenti anche altre strutture dei dati della memoria condivisa che richiedono l'uso di operazioni interlock per essere aggiornate in modo thread-safe. Per altre informazioni, vedere [Interlocked Operations](http://go.microsoft.com/fwlink/?LinkId=177870) (Operazioni interlock) nella sezione relativa a .NET Framework della MSDN Library.
+ I percorsi di memoria condivisi sottostanti le classi .NET Framework e gli oggetti Windows nativi usati per la sincronizzazione e il blocco devono essere modificati tramite operazioni interlock. Le operazioni interlock usano istruzioni specifiche dell'hardware che agiscono sui percorsi di memoria condivisi per modificare il proprio stato tramite operazioni atomiche. La coerenza delle operazioni atomiche è garantita attraverso tutti i processori del computer. Blocchi e WaitHandle sono gli oggetti .NET che usano automaticamente operazioni interlock quando vengono impostati o reimpostati. Nell'applicazione possono essere presenti anche altre strutture dei dati della memoria condivisa che richiedono l'uso di operazioni interlock per essere aggiornate in modo thread-safe. Per altre informazioni, vedere [Interlocked Operations](/dotnet/api/system.threading.interlocked&view=netframework-4.8) (Operazioni interlock) nella sezione relativa a .NET Framework della MSDN Library.
 
  Sincronizzazione e blocco sono meccanismi usati per assicurare che tali applicazioni multithreading vengano eseguite correttamente. Ogni thread di un'applicazione multithreading è un'unità di esecuzione indipendente, pianificata indipendentemente dal sistema operativo. Si verifica un conflitto di blocco quando un thread che sta tentando di acquisire un blocco viene ritardato perché il blocco è trattenuto da un altro thread.
 

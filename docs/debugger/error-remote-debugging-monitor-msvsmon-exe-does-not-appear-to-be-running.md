@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737564"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911526"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Errore: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) non sembra essere in esecuzione sul computer remoto.
 Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza corretta di Visual Studio Remote Debugging Monitor nel computer remoto. Per il funzionamento del debug remoto, è necessario che Visual Studio Remote Debugging Monitor sia installato. Per informazioni sul download e sulla configurazione del debugger remoto, vedere [Remote Debugging](../debugger/remote-debugging.md).
@@ -41,7 +41,7 @@ Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza cor
  Provare a eseguire il [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) del computer remoto. Se non risponde al ping, neanche gli strumenti remoti potranno connettersi. Provare a riavviare il computer remoto, altrimenti assicurarsi che sia configurato correttamente sulla rete.
 
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La versione del debugger remoto non corrisponde alla versione di Visual Studio
- La versione di Visual Studio in esecuzione in locale deve corrispondere alla versione di Remote Debugging Monitor in esecuzione nel computer remoto. Per risolvere questo problema, scaricare e installare la versione corrispondente di Remote Debugging Monitor. Andare nell' [Area download](http://www.microsoft.com/en-us/download) per trovare la versione corretta per il debugger remoto.
+ La versione di Visual Studio in esecuzione in locale deve corrispondere alla versione di Remote Debugging Monitor in esecuzione nel computer remoto. Per risolvere questo problema, scaricare e installare la versione corrispondente di Remote Debugging Monitor. Andare nell' [Area download](https://www.microsoft.com/download) per trovare la versione corretta per il debugger remoto.
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Il computer locale e quello remoto hanno modalità di autenticazione diverse
  Il computer locale e quello remoto devono usare la stessa modalità di autenticazione. Per risolvere questo problema, assicurarsi che entrambi i computer usino la stessa modalità di autenticazione. Per altre informazioni sulle modalità di autenticazione, vedere [Panoramica di Autenticazione di Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).
@@ -72,7 +72,7 @@ Questo messaggio di errore indica che Visual Studio non ha trovato l'istanza cor
 ## <a name="more-help"></a>Altre informazioni
  Per ottenere ulteriori informazioni sulla guida del debugger remoto, incluse le opzioni della riga di comando, fare clic su **guida > utilizzo** nella finestra del debugger remoto. Se non è disponibile, è possibile visualizzare la pagina Web copiando la riga seguente in una finestra di **Esplora file** . È necessario sostituire la directory di installazione di \<Visual Studio > con il percorso dell'installazione di Visual Studio.
 
- Directory di installazione di res:// *\<Visual Studio >* \ COMMON7 \ IDE \ Remote %2 0 debugger \ x64 \ msvsmon. exe/help. htm
+ res:// *\<directory di installazione di Visual Studio >* \ COMMON7 \ IDE \ Remote %2 0 debugger \ x64 \ msvsmon. exe/help. htm
 
 ## <a name="see-also"></a>Vedere anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

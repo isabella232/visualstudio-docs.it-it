@@ -9,14 +9,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253426"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911800"
 ---
-# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
+# <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto di Azure in Visual Studio per l'uso di più configurazioni del servizio
 
 Un progetto di servizio cloud di Azure in Visual Studio include tre file di configurazione: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg`:
 
@@ -55,7 +55,7 @@ Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il p
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
-Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](http://go.microsoft.com/fwlink?LinkID=171026), in particolare il metodo [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
+Nella pagina **Impostazioni** è possibile aggiungere impostazioni a una configurazione come coppie nome-valore. Il codice in esecuzione nel ruolo può leggere i valori delle impostazioni di configurazione in fase di esecuzione usando le classi fornite dalla [libreria gestita di Azure](/previous-versions/azure/dn602775(v=azure.11)), in particolare il metodo [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurazione di una stringa di connessione per un account di archiviazione
 
@@ -95,7 +95,7 @@ Un ruolo Web ha in genere un solo endpoint HTTP sulla porta 80. Un ruolo di lavo
 
 ## <a name="certificates-page"></a>Pagina Certificati
 
-La pagina delle proprietà **Certificati** consente di aggiungere informazioni sui certificati alla configurazione del servizio. Si noti che i certificati non sono inclusi nel servizio. È necessario caricarli separatamente in Azure usando il [portale di Azure](http://portal.azure.com).
+La pagina delle proprietà **Certificati** consente di aggiungere informazioni sui certificati alla configurazione del servizio. Si noti che i certificati non sono inclusi nel servizio. È necessario caricarli separatamente in Azure usando il [portale di Azure](https://portal.azure.com).
 
 Aggiungendo un certificato nel portale si inseriscono informazioni sui certificati nella configurazione del servizio. I certificati non sono inclusi nel servizio. È necessario caricarli separatamente in Azure usando il portale di Azure.
 

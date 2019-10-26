@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e1085d13612cefee370aeac5fe67c7ddd2af8bae
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919797"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911762"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script di Windows PowerShell)
 ## <a name="syntax"></a>Sintassi
@@ -36,8 +36,8 @@ Percorso del file di configurazione JSON che descrive i dettagli della distribuz
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |true |
-| Posizione |denominata |
+| Necessario? |true |
+| Posizione |denominati |
 | Valore predefinito |none |
 | Input pipeline accettato? |False |
 | Caratteri jolly accettati? |False |
@@ -48,20 +48,20 @@ Nome della sottoscrizione di Azure in cui si vuole creare il sito Web.
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
+| Necessario? |False |
+| Posizione |denominati |
 | Valore predefinito |none |
 | Input pipeline accettato? |False |
 | Caratteri jolly accettati? |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
 
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
+| Necessario? |False |
+| Posizione |denominati |
 | Valore predefinito |none |
 | Input pipeline accettato? |False |
 | Caratteri jolly accettati? |False |
@@ -72,8 +72,8 @@ Nome utente e password per il database SQL di Azure.
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
+| Necessario? |False |
+| Posizione |denominati |
 | Valore predefinito |none |
 | Input pipeline accettato? |False |
 | Caratteri jolly accettati? |False |
@@ -84,13 +84,13 @@ Se impostato su true, stampa i messaggi dallo script al flusso di output.
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
+| Necessario? |False |
+| Posizione |denominati |
 | Valore predefinito |False |
 | Input pipeline accettato? |False |
 | Caratteri jolly accettati? |False |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Per una spiegazione completa sull'uso dello script per creare ambienti di sviluppo e test, vedere [Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 Il file di configurazione JSON specifica i dettagli degli elementi da distribuire. Include le informazioni specificate al momento della creazione del progetto, ad esempio il nome e il nome utente per il sito Web. Se esiste, include anche il database di cui eseguire il provisioning. Il codice seguente mostra un esempio di file di configurazione JSON:

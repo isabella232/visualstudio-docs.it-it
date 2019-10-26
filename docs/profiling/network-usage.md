@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f69d5188a82937c44552e8fd192ea2dba28d3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 9d1b81e35cdf08aef82c6e9c070d7127cb2debd5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128144"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911915"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizzare l'utilizzo della rete nelle app UWP
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](/uwp/api/windows.web.http). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.
@@ -39,7 +39,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 
    La finestra di report dovrebbe essere analoga alla seguente:
 
-   ![Finestra dello strumento Rete](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")
+   ![Finestra di rete](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")
 
 ## <a name="analyze-data"></a>Analizzare i dati
  È possibile analizzare il traffico HTTP acquisito mentre l'applicazione è in esecuzione o anche dopo che l'applicazione è stata chiusa, selezionando una delle operazioni di rete visualizzate nella visualizzazione di riepilogo.
@@ -50,7 +50,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 
  Nelle visualizzazioni dei dettagli dello strumento **Rete** sono visualizzate maggiori informazioni su un'operazione di rete presente nella visualizzazione di riepilogo.
 
- ![Riquadro dei dettagli dello strumento Rete](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
+ ![Riquadro dei dettagli dello strumento di rete](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
 |||
 |-|-|
@@ -74,7 +74,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 ## <a name="see-also"></a>Vedere anche
 
 - [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
-- [Blog di Visual Studio: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022) (Introduzione al controllo di rete di Visual Studio)
-- [Video di Channel 9: VS diagnostics tools - new Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206) (Strumenti di diagnostica di Visual Studio - Nuovo profiler di rete)
+- [Blog di Visual Studio: Introduzione al controllo di rete di Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- [Video di Channel 9: Strumenti di diagnostica di Visual Studio - Nuovo Profiler di rete](https://channel9.msdn.com/Series/ConnectOn-Demand/206)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962937"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911594"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
-Se i passaggi descritti in questo articolo non **consentono**di risolvere il problema, cercare il problema nella [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo?  > **inviare commenti e suggerimenti** > **segnala un problema** in Visual Studio.
+Se i passaggi descritti in questo articolo non **consentono** di risolvere il problema, cercare il problema nella [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo? > **inviare commenti e suggerimenti** > **segnalare un problema** in Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Connetti Snapshot Debugger" rileva un errore del codice di stato HTTP
 
@@ -34,7 +34,7 @@ Questo errore indica che la chiamata REST eseguita da Visual Studio in Azure usa
 
 Seguire questa procedura:
 
-* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **Debug** > **Connetti snapshot debugger...**  >  la**risorsa di Azure** > **selezionare esistente**o in Cloud Explorer.
+* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **Debug** > **Connetti snapshot debugger...**  > **risorsa di Azure** > **selezionare esistente**o in Cloud Explorer.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
 ### <a name="403-forbidden"></a>(403) non consentito
@@ -43,7 +43,7 @@ Questo errore indica che l'autorizzazione è stata negata. Questa situazione pu�
 
 Seguire questa procedura:
 
-* Verificare che l'account di Visual Studio disponga di una sottoscrizione di Azure valida con le autorizzazioni necessarie per il controllo degli accessi in base al ruolo (RBAC) per la risorsa. Per AppService, verificare se si dispone delle autorizzazioni per [eseguire query](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) sul piano di servizio app che ospita l'app.
+* Verificare che l'account di Visual Studio disponga di una sottoscrizione di Azure valida con le autorizzazioni necessarie per il controllo degli accessi in base al ruolo (RBAC) per la risorsa. Per AppService, verificare se si dispone delle autorizzazioni per [eseguire query](/rest/api/appservice/appserviceplans/get) sul piano di servizio app che ospita l'app.
 * Verificare che il timestamp del computer client sia corretto e aggiornato. I server con timestamp spenti da più di 15 minuti del timestamp della richiesta generano questo errore.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
@@ -54,8 +54,8 @@ Questo errore indica che il sito Web non è stato trovato nel server.
 Seguire questa procedura:
 
 * Verificare di disporre di un sito Web distribuito e in esecuzione nella risorsa del servizio app a cui si sta eseguendo la connessione.
-* Verificare che il sito sia disponibile in https://@no__t -0resource\>.azurewebsites.net
-* Verificare che l'applicazione Web personalizzata in esecuzione correttamente non restituisca un codice di stato 404 quando si accede a https://@no__t -0resource\>.azurewebsites.net
+* Verificare che il sito sia disponibile in https://\<Resource\>. azurewebsites.net
+* Verificare che l'applicazione Web personalizzata in esecuzione correttamente non restituisca un codice di stato 404 quando si accede a https://\<Resource\>. azurewebsites.net
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
 ### <a name="406-not-acceptable"></a>(406) non accettabile
@@ -64,7 +64,7 @@ Questo errore indica che il server non è in grado di rispondere al tipo imposta
 
 Seguire questa procedura:
 
-* Verificare che il sito sia disponibile in https://@no__t -0resource\>.azurewebsites.net
+* Verificare che il sito sia disponibile in https://\<Resource\>. azurewebsites.net
 * Verificare che non sia stata eseguita la migrazione del sito alle nuove istanze. Snapshot Debugger usa la nozione di ARRAffinity per il routing delle richieste a istanze specifiche che possono generare questo errore in modo intermittente.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
@@ -88,7 +88,7 @@ Seguire questa procedura:
 
 ### <a name="500-internal-server-error"></a>(500) errore interno del server
 
-Questo errore indica che il sito è completamente inattivo oppure il server non è in grado di gestire la richiesta. Snapshot Debugger solo le funzioni sulle applicazioni in esecuzione. [Application Insights snapshot debugger](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) fornisce istantanee per le eccezioni e potrebbe essere lo strumento migliore per le proprie esigenze.
+Questo errore indica che il sito è completamente inattivo oppure il server non è in grado di gestire la richiesta. Snapshot Debugger solo le funzioni sulle applicazioni in esecuzione. [Application Insights snapshot debugger](/azure/azure-monitor/app/snapshot-debugger) fornisce istantanee per le eccezioni e potrebbe essere lo strumento migliore per le proprie esigenze.
 
 ### <a name="502-bad-gateway"></a>(502) gateway non valido
 
@@ -99,21 +99,21 @@ Seguire questa procedura:
 * Provare ad attendere alcuni minuti prima di riallacciare il Snapshot Debugger.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Ancoraggio non attiva
+## <a name="issue-snappoint-does-not-turn-on"></a>Problema: il punto di acquisizione snapshot di ancoraggio non viene attivato
 
-Se viene visualizzata un'icona di avviso ![Icona di avviso punto di acquisizione snapshot](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Icona di avviso punto di acquisizione snapshot") con il punto di acquisizione snapshot al posto della normale icona di punto di acquisizione snapshot, questo significa che il punto di acquisizione snapshot non è attivato.
+Se viene visualizzata un'icona di avviso ancoraggio icona di ![avviso](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Icona di avviso ancoraggio") con il ancoraggio anziché l'icona normale ancoraggio, il ancoraggio non è attivato.
 
-![Punto di acquisizione snapshot non attivato](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Punto di acquisizione snapshot non attivato")
+![Ancoraggio non attiva](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Ancoraggio non attiva")
 
 Seguire questa procedura:
 
 1. Assicurarsi di avere la stessa versione del codice sorgente usato per compilare e distribuire l'app. Assicurarsi di caricare i simboli corretti per la distribuzione. A tale scopo, visualizzare la finestra **Moduli** durante il debug di snapshot e verificare che nella colonna File di simboli sia indicato un file con estensione pdb caricato per il modulo di cui si esegue il debug. Snapshot Debugger tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: I simboli non vengono caricati quando si apre uno snapshot
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: i simboli non vengono caricati quando si apre uno snapshot
 
 Se viene visualizzata la finestra seguente, i simboli non sono stati caricati.
 
-![Simboli non caricati](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "Simboli non caricati")
+![I simboli non vengono caricati](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "I simboli non vengono caricati")
 
 Seguire questa procedura:
 
@@ -125,7 +125,7 @@ Seguire questa procedura:
 
 - In alternativa, se l'organizzazione usa un server di simboli o posiziona i simboli in un percorso diverso, usare le impostazioni dei simboli per caricare i simboli corretti per la distribuzione.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: Non è possibile visualizzare l'opzione "Connetti Snapshot Debugger" nella Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: non è possibile visualizzare l'opzione "Collega Snapshot Debugger" in Cloud Explorer
 
 Seguire questa procedura:
 
@@ -144,9 +144,9 @@ Seguire questa procedura:
   - Servizi Azure Kubernetes - Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Nel Strumenti di diagnostica vengono visualizzati solo gli snapshot limitati
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: negli strumenti di diagnostica sono visibili solo snapshot soggetti a limitazioni
 
-![Punto di acquisizione snapshot soggetto a limitazioni](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Punto di acquisizione snapshot soggetto a limitazioni")
+![Ancoraggio limitato](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Ancoraggio limitato")
 
 Seguire questa procedura:
 
@@ -157,11 +157,11 @@ Seguire questa procedura:
 
 Visual Studio 2019 richiede una versione più recente dell'estensione del sito Snapshot Debugger nel servizio app Azure.  Questa versione non è compatibile con la versione precedente dell'estensione del sito di Snapshot Debugger usata da Visual Studio 2017.  Se si tenta di aggiungere il Snapshot Debugger in Visual Studio 2019 a un servizio di app Azure che è stato precedentemente sottoposto a debug dal Snapshot Debugger in Visual Studio 2017, verrà visualizzato l'errore seguente:
 
-![Estensione del sito snapshot debugger incompatibile Visual studio 2019]non(../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "compatibile snapshot debugger estensione del sito Visual Studio 2019")
+![Estensione del sito Snapshot Debugger incompatibile Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Estensione del sito Snapshot Debugger incompatibile Visual Studio 2019")
 
 Viceversa, se si usa Visual Studio 2017 per alporre il Snapshot Debugger a un servizio di app Azure che è stato precedentemente sottoposto a debug dal Snapshot Debugger in Visual Studio 2019, verrà visualizzato l'errore seguente:
 
-![Estensione del sito snapshot debugger incompatibile Visual studio 2017]non(../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "compatibile snapshot debugger estensione del sito Visual Studio 2017")
+![Estensione del sito Snapshot Debugger incompatibile Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Estensione del sito Snapshot Debugger incompatibile Visual Studio 2017")
 
 Per risolvere questo problema, eliminare le impostazioni dell'app seguenti nel portale di Azure e collegare nuovamente Snapshot Debugger:
 
@@ -169,7 +169,7 @@ Per risolvere questo problema, eliminare le impostazioni dell'app seguenti nel p
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: Si verificano problemi durante il debug dello snapshot ed è necessario abilitare una maggiore registrazione
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: si verificano problemi con il debug di snapshot ed è necessario abilitare ulteriori log
 
 ### <a name="enable-agent-logs"></a>Abilitare i log dell'agente
 
@@ -179,9 +179,9 @@ I log dell'agente sono disponibili nelle posizioni seguenti:
 
 - Servizi app:
   - Passare al sito di Kudu del servizio app (ovvero, servizioapp.**scm**.azurewebsites.net) e passare alla console di debug.
-  - I log degli agenti vengono archiviati nella directory seguente:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - I log dell'agente vengono archiviati nella directory seguente: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - Macchina virtuale/set di scalabilità di macchine virtuali:
-  - Accedere alla macchina virtuale. i log degli agenti vengono archiviati come segue:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics @ no__t-0Version > \SnapshotDebuggerAgent_ *. txt
+  - Accedere alla macchina virtuale. I log dell'agente sono archiviati nella posizione seguente: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Versione>\SnapshotDebuggerAgent_*.txt
 - Servizio Azure Kubernetes
   - Passare alla directory seguente: /tmp/diag/AgentLogs/*
 
@@ -193,7 +193,7 @@ I log di strumentazione sono disponibili nelle posizioni seguenti:
   - La registrazione degli errori viene inviata automaticamente a D:\Home\LogFiles\eventlog.xml, gli eventi sono contrassegnati con `<Provider Name="Instrumentation Engine" />` o "punti di interruzione di produzione"
 - Macchina virtuale/set di scalabilità di macchine virtuali:
   - Accedere alla macchina virtuale e aprire il Visualizzatore eventi.
-  - Aprire la vista seguente: *Log di Windows > applicazione*.
+  - Aprire la visualizzazione seguente: *Registri di Windows > Applicazione*.
   - Selezionare *Filtro registro corrente* e in *Origine eventi* selezionare *Production Breakpoints* o *Instrumentation Engine*.
 - Servizio Azure Kubernetes
   - La registrazione del motore di strumentazione è disponibile in /tmp/diag/log.txt (impostare MicrosoftInstrumentationEngine_FileLogPath in DockerFile)

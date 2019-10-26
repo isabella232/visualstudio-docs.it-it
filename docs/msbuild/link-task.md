@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747282"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911253"
 ---
 # <a name="link-task"></a>Link (attività)
 Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).
@@ -65,7 +65,7 @@ Esegue il wrapping dello C++ strumento Microsoft linker, *link. exe*. Lo strumen
 
   Specifica gli attributi che verranno inseriti nella sezione `dependency` del file manifesto.
 
-  Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vedere anche [Publisher Configuration Files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files) (File di configurazione del server di pubblicazione).
+  Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vedere anche [Publisher Configuration Files](/windows/desktop/SbsCs/publisher-configuration-files) (File di configurazione del server di pubblicazione).
 
 - **AdditionalOptions**
 

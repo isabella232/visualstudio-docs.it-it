@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 48f02e9e2f051bbdb77b0d567d79d8793787cf1c
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822989"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911278"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Compilare più progetti in parallelo con MSBuild
 È possibile utilizzare MSBuild per compilare più progetti più velocemente eseguendoli in parallelo. Per eseguire compilazioni in parallelo, è possibile utilizzare le impostazioni seguenti in un computer multicore o con più processori:
@@ -27,7 +27,7 @@ ms.locfileid: "62822989"
 - Il parametro dell'attività <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> in un attività MSBuild.
 
 > [!NOTE]
-> L'opzione **-verbosity** (**-v**) in una riga di comando può incidere sulle prestazioni di compilazione, che possono diminuire se il livello di dettaglio delle informazioni del log di compilazione è impostato su dettagliato o diagnostico, utilizzati per la risoluzione dei problemi. Per altre informazioni, vedere [Recuperare log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md) e [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
+> L'opzione **-verbosity** ( **-v**) in una riga di comando può incidere sulle prestazioni di compilazione, che possono diminuire se il livello di dettaglio delle informazioni del log di compilazione è impostato su dettagliato o diagnostico, utilizzati per la risoluzione dei problemi. Per altre informazioni, vedere [Recuperare log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md) e [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>Opzione -maxcpucount
 Se si usa l'opzione `-maxcpucount` o l'abbreviazione `-m`, tramite MSBuild è possibile creare il numero specificato di processi *MSBuild.exe* eseguibili in parallelo. Questi processi sono noti anche come "processi di lavoro". Ogni processo di lavoro usa un componente principale o un processore separato, se disponibile, per compilare progetti mentre altri processori eventualmente disponibili ne compilano altri. Ad esempio, se si imposta questa opzione su un valore pari a "4", in MSBuild verranno creati quattro processi di lavoro per compilare il progetto.
@@ -72,4 +72,4 @@ Di seguito è riportato un esempio, tratto da *microsoft.common.targets*, che de
 ## <a name="see-also"></a>Vedere anche
 - [Usare più processori per la compilazione di progetti](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Scrittura di logger compatibili con più processori](../msbuild/writing-multi-processor-aware-loggers.md)
-- [Blog di ottimizzazione del parallelismo di compilazione di C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Blog di ottimizzazione del parallelismo di compilazione di C++](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/)

@@ -1,5 +1,5 @@
 ---
-title: Usando i dati di IntelliTrace salvati | Microsoft Docs
+title: Utilizzo dei dati di IntelliTrace salvati | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,26 +15,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825608"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911319"
 ---
-# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando i dati di IntelliTrace salvati (C#, Visual Basic, C++)
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Utilizzo dei dati IntelliTrace salvatiC#(, Visual Basic C++,)
 
 Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il debug da un file di log IntelliTrace (.iTrace). Questo file può contenere eventi di prestazioni, eccezioni, thread, passi del test, moduli e altre informazioni di sistema che IntelliTrace ha raccolto durante l'esecuzione dell'applicazione.
 
  Assicurarsi di disporre degli elementi seguenti:
 
-- File di origine e file di simboli (.pdb) corrispondenti per il codice dell'applicazione. In caso contrario, Visual Studio non consente di risolvere i percorsi di origine e verrà visualizzato il messaggio "Simboli non trovati". Visualizzare [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
+- File di origine e file di simboli (.pdb) corrispondenti per il codice dell'applicazione. In caso contrario, Visual Studio non consente di risolvere i percorsi di origine e verrà visualizzato il messaggio "Simboli non trovati". Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
 
 - Visual Studio Enterprise (ma non edizioni Professional o Community) in un computer di sviluppo o in un altro computer per aprire i file .iTrace
 
 - Un file .iTrace da una di queste origini:
 
-    |**Origine**|**Vedere**|
+    |**Source**|**Vedere**|
     |----------------|-------------|
     |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità IntelliTrace](../debugger/intellitrace-features.md)|
     |Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012 R2 Operations Manager, per app Web ASP.NET e applicazioni SharePoint in esecuzione in fase di distribuzione|-   [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novità di System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
@@ -66,17 +66,17 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 > Se si chiude il file IntelliTrace durante il debug, è possibile riaprirlo facilmente. Scegliere **IntelliTrace** dal menu **Debug**, quindi selezionare **Mostra riepilogo log**. È inoltre possibile scegliere **Mostra riepilogo log** nella finestra **IntelliTrace** . Questo comando è disponibile solo se si esegue il debug con IntelliTrace.
 
 ## <a name="Understand"></a> Leggere il log IntelliTrace
- Alcune delle sezioni seguenti del file. iTrace vengono visualizzate solo se si raccolgono dati da una determinata origine, ad esempio, da applicazioni di SharePoint.
+ Alcune delle seguenti sezioni del file con estensione iTrace vengono visualizzate solo se si raccolgono dati da una determinata origine, ad esempio, dalle applicazioni di SharePoint.
 
-|**Sezione**|**Contiene**|**Origine della raccolta**|
+|**Section**|**Contiene**|**Origine della raccolta**|
 |-----------------|------------------|---------------------------|
-|[Violazioni di prestazioni](#Performance)|Eventi di prestazioni con chiamate di funzione che superano la soglia configurata|Microsoft Monitoring Agent, l'agente di raccolta autonomo o con System Center 2012 R2 Operations Manager per App web ASP.NET ospitate in IIS|
+|[Violazioni di prestazioni](#Performance)|Eventi di prestazioni con chiamate di funzione che superano la soglia configurata|Microsoft Monitoring Agent, agente di raccolta autonomo o con System Center 2012 R2 Operations Manager per app Web ASP.NET ospitate in IIS|
 |[Dati eccezione](#ExceptionData)|Eccezioni, incluso lo stack di chiamate completo per ogni eccezione|Tutte le origini|
-|[Analisi](#Analysis)|Solo per applicazioni SharePoint 2010 e SharePoint 2013. Esaminare eventi SharePoint e IntelliTrace, ad esempio eventi del debugger, eventi ULS, eccezioni non gestite e altri dati registrati da Microsoft Monitoring Agent.|Microsoft Monitoring Agent, l'agente di raccolta autonomo o con System Center 2012 R2 Operations Manager|
+|[Analisi](#Analysis)|Solo per applicazioni SharePoint 2010 e SharePoint 2013. Esaminare eventi SharePoint e IntelliTrace, ad esempio eventi del debugger, eventi ULS, eccezioni non gestite e altri dati registrati da Microsoft Monitoring Agent.|Microsoft Monitoring Agent, ovvero agente di raccolta autonomo o con System Center 2012 R2 Operations Manager|
 |[Informazioni di sistema](#SystemInfo)|Impostazioni e specifiche del sistema host|Tutte le origini|
 |[Elenco dei thread](#ThreadsList)|Thread eseguiti durante la raccolta|Tutte le origini|
 |[Moduli](#Modules)|Moduli caricati dal processo di destinazione nell'ordine di caricamento.|Tutte le origini|
-|[Richiesta Web](#Modules)|Dati della richiesta Web per la produzione IIS applicazioni web e SharePoint 2010 e SharePoint 2013|Microsoft Monitoring Agent e agente di raccolta autonomo|
+|[Richiesta Web](#Modules)|Dati delle richieste Web per le applicazioni Web IIS di produzione e SharePoint 2010 e SharePoint 2013|Microsoft Monitoring Agent e l'agente di raccolta autonomo|
 
  Di seguito sono indicati alcuni suggerimenti per individuare informazioni in ogni sezione:
 
@@ -97,7 +97,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 1. In **Violazioni prestazioni**esaminare gli eventi di prestazioni registrati, i relativi tempi di esecuzione totali e altre informazioni sugli eventi. Esaminare ulteriori dettagli sui metodi chiamati durante un evento di prestazioni specifico.
 
-     ![Visualizzare i dettagli degli eventi di prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+     ![Visualizza dettagli evento prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      È inoltre sufficiente fare doppio clic sull'evento.
 
@@ -107,17 +107,17 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 3. Espandere tale chiamata per rivedere tutte le chiamate e i valori di parametri annidati registrati in quel momento.
 
-     (Tastiera: Per mostrare o nascondere una chiamata annidata, premere il **freccia destra** oppure **freccia sinistra** rispettivamente. Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .
+     Tastiera: per visualizzare o nascondere una chiamata annidata, premere rispettivamente **Freccia DESTRA** o **Freccia SINISTRA** . Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .
 
      Avviare il debug dalla chiamata.
 
-     ![Avviare il debug da una chiamata di metodo](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
+     ![Avviare il debug dalla chiamata al metodo](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
 
      È inoltre sufficiente fare doppio clic sulla chiamata o premere **INVIO** .
 
      Se il metodo è incluso nel codice dell'applicazione, Visual Studio passa a tale metodo.
 
-     ![Passare al codice dell'applicazione da un evento di prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![Vai al codice dell'applicazione dall'evento prestazioni](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni.
 
@@ -140,7 +140,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     |**Colonna**|**Mostra**|
     |----------------|-------------------|
-    |**Tipo**|Tipo .NET dell'eccezione|
+    |**Type**|Tipo .NET dell'eccezione|
     |**Messaggio più recente** per eccezioni raggruppate o **Messaggio** per eccezioni non raggruppate|Messaggio fornito dall'eccezione|
     |**Conteggio** per eccezioni raggruppate|Numero di volte in cui è stata generata l'eccezione|
     |**ID thread** per eccezioni non raggruppate|ID del thread che ha generato l'eccezione|
@@ -158,13 +158,13 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 1. Copiare l'ID di correlazione SharePoint dalla relativa origine.
 
-    Ad esempio:
+    Esempio:
 
-    ![IntelliTrace &#45; errore di SharePoint &#45; ID di correlazione](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![ID &#45; di correlazione degli errori &#45; di SharePoint IntelliTrace](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
 2. Aprire il file .iTrace, quindi passare ad **Analisi** e immettere l'ID di correlazione SharePoint per esaminare eventi registrati e di richieste Web corrispondenti.
 
-    ![Log di IntelliTrace &#45; ID di correlazione SharePoint immettere](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Log &#45; IntelliTrace immettere l'ID correlazione di SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
 3. In **Eventi richiesta**esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.
 
@@ -172,7 +172,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
    2. Scegliere **Avvia debug** per avviare il debug nel punto in cui si è verificato l'evento.
 
-      ![File di log IntelliTrace &#45; Visualizza la richiesta web &#43; gli eventi](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![Eventi di richiesta &#45; &#43; Web visualizzazione file di log IntelliTrace](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
    È possibile visualizzare questi tipi di eventi SharePoint insieme agli eventi IntelliTrace:
 
@@ -186,7 +186,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     |**Campo IntelliTrace**|**Campo del servizio di registrazione unificato SharePoint**|
     |----------------------------|------------------------------|
-    |**Id**|**ID evento**|
+    |**ID**|**ID evento**|
     |**Livello**|**Livello**|
     |**ID categoria**|**ID categoria**|
     |**Categoria**|**Categoria**|
@@ -202,9 +202,9 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 3. Scegliere **Debug eccezione** per avviare il debug nel punto e nel momento in cui si è verificata l'eccezione.
 
-    ![Log di IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Eccezioni non &#45; gestite di SharePoint log IntelliTrace](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   Per informazioni dettagliate, vedere [procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+   Per una procedura dettagliata, vedere [procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Per i tipi di dati registrati dall'agente, vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).
 
 ### <a name="ThreadsList"></a> Elenco dei thread
  Esaminare i thread registrati che sono stati eseguiti nel processo di destinazione. È possibile avviare il debug dal primo evento IntelliTrace valido in un thread selezionato.
@@ -215,7 +215,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 2. Nella parte inferiore di **Elenco dei thread**scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un thread.
 
-    Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+    Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).
 
    I dati dei thread creati dall'utente potrebbero essere più utili di quelli creati da un server e gestiti per applicazioni Web ospitate in IIS.
 
@@ -264,7 +264,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
  [IntelliTrace](../debugger/intellitrace.md)
 
 #### <a name="forums"></a>Forum
- [Debugger di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+ [Debugger di Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
-#### <a name="guidance"></a>Materiale sussidiario
- [Esecuzione di test per il recapito continuo con Visual Studio 2012 - capitolo 6: Una casella degli strumenti di test](http://go.microsoft.com/fwlink/?LinkID=255203)
+#### <a name="guidance"></a>Informazioni aggiuntive
+ [Test per una distribuzione continua con Visual Studio 2012 - Capitolo 6: Casella degli strumenti per test](/previous-versions/msp-n-p/jj159337(v=pandp.10))

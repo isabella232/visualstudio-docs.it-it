@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262950"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911878"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 
-Le funzionalità di protezione avanzata introdotte a partire da Windows 8 e Windows Server 2012 hanno richiesto modifiche significative delle modalità di raccolta dei dati in queste piattaforme con gli strumenti per le prestazioni di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Questo argomento descrive le modifiche agli strumenti per le prestazioni introdotte a partire dalle piattaforme Windows 8 e Windows Server 2012.
+Le funzionalità di protezione avanzata introdotte a partire da Windows 8 e Windows Server 2012 hanno richiesto modifiche significative delle modalità di raccolta dei dati in queste piattaforme con gli strumenti per le prestazioni di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Questo argomento descrive le modifiche agli strumenti per le prestazioni introdotte a partire dalle piattaforme Windows 8 e Windows Server 2012.
 
 > [!NOTE]
 > Gli strumenti per le prestazioni per le altre versioni di Windows supportate (Windows 7, Windows Server 2008 R2) sono rimasti invariati.
@@ -63,7 +63,7 @@ Queste funzionalità e opzioni di profilatura non sono supportate quando si prof
 
 Per raccogliere dati di profilatura nei dispositivi Windows 8 e Windows Server 2012, inclusi i dispositivi privi di installazione di Visual Studio, si usano due strumenti da riga di comando:
 
-|Nome dello strumento|Description|
+|Nome dello strumento|Descrizione|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|Raccoglie i dati di profilatura dalle app UWP e raccoglie campioni di dati di profilatura dalle applicazioni Windows 8 Desktop e Windows Server 2012.|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Raccoglie i dati di profilatura della strumentazione, della concorrenza e dell'interazione tra livelli dalle applicazioni in esecuzione su Windows 8 Desktop o Windows Server 2012. Raccoglie tutti i tipi di dati di profilatura dalle versioni precedenti di Windows.|
@@ -72,7 +72,7 @@ Entrambi gli strumenti vengono installati con Visual Studio per l'uso nel comput
 
 Per profilare le applicazioni sui dispositivi in cui non è installato Visual Studio, eseguire una delle operazioni seguenti:
 
-- Scaricare gli strumenti come parte di Remote Tools per Visual Studio dal [sito Web MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
+- Scaricare gli strumenti come parte di Remote Tools per Visual Studio dal [sito Web MSDN](https://visualstudio.microsoft.com/#downloads+d-additional-software).
 
 - Copiare ed eseguire il programma di installazione dei profiler autonomi dal computer con Visual Studio. Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Scegliere il programma di installazione per il sistema operativo (x86/x64) del computer remoto.
 

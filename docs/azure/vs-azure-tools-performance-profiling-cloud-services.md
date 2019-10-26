@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427409"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911784"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test delle prestazioni di un servizio cloud
 ## <a name="overview"></a>Panoramica
 È possibile testare le prestazioni di un servizio cloud nei modi seguenti:
 
-* Usare la diagnostica di Azure per raccogliere informazioni su connessioni e richieste e per esaminare le statistiche del sito che mostrano le prestazioni del servizio dalla prospettiva del cliente. Per iniziare, consultare [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](http://go.microsoft.com/fwlink/p/?LinkId=623009).
-* Usare il profiler di Visual Studio per ottenere un'analisi approfondita degli aspetti computazionali dell'esecuzione del servizio. Come descritto in questo argomento, è possibile usare il profiler per misurare le prestazioni durante l'esecuzione di un servizio in Azure. Per informazioni su come usare il profiler per misurare le prestazioni durante l'esecuzione di un servizio localmente in un emulatore di calcolo, vedere [Test delle prestazioni di un servizio cloud di Azure in locale nell'emulatore di calcolo tramite Visual Studio Profiler](http://go.microsoft.com/fwlink/p/?LinkId=262845).
+* Usare la diagnostica di Azure per raccogliere informazioni su connessioni e richieste e per esaminare le statistiche del sito che mostrano le prestazioni del servizio dalla prospettiva del cliente. Per iniziare, consultare [Configurazione della diagnostica per i servizi cloud e le macchine virtuali di Azure](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
+* Usare il profiler di Visual Studio per ottenere un'analisi approfondita degli aspetti computazionali dell'esecuzione del servizio. Come descritto in questo argomento, è possibile usare il profiler per misurare le prestazioni durante l'esecuzione di un servizio in Azure. Per informazioni su come usare il profiler per misurare le prestazioni durante l'esecuzione di un servizio localmente in un emulatore di calcolo, vedere [Test delle prestazioni di un servizio cloud di Azure in locale nell'emulatore di calcolo tramite Visual Studio Profiler](/azure/cloud-services/cloud-services-performance-testing-visual-studio-profiler).
 
 ## <a name="choosing-a-performance-testing-method"></a>Scelta di un metodo di test delle prestazioni
 ### <a name="use-azure-diagnostics-to-collect"></a>Usare la diagnostica di Azure per raccogliere:
@@ -65,9 +65,9 @@ Per altre informazioni sulla profilatura delle prestazioni in Visual Studio, ved
 È possibile usare metodi di raccolta diversi per la profilatura, in base ai problemi delle prestazioni:
 
 * **Campionamento CPU** : questo metodo consente di raccogliere statistiche dell'applicazione utili per l'analisi iniziale dei problemi relativi all'utilizzo della CPU. Campionamento CPU è il metodo consigliato per iniziare la maggior parte delle indagini sulle prestazioni. Esiste un impatto minimo sull'applicazione di cui si esegue la profilatura quando si raccolgono dati di campionamento CPU.
-* **Strumentazione** : questo metodo consente di raccogliere dati dettagliati sui tempi utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output. Il metodo della strumentazione registra ogni voce, uscita e chiamata di funzione delle funzioni di un modulo durante l'esecuzione di una profilatura. Questo metodo è utile per raccogliere informazioni dettagliate sui tempi per una sezione del codice e per comprendere l'impatto delle operazioni di input e output sulle prestazioni dell'applicazione. Questo metodo è disabilitato per un computer che esegue un sistema operativo a 32 bit. Questa opzione è disponibile solo quando si esegue il servizio cloud in Azure, non in locale nell'emulatore di calcolo.
+* **Strumentazione** : questo metodo consente di raccogliere dati dettagliati sui tempi utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output. Il metodo della strumentazione registra ogni voce, uscita e chiamata di funzione delle funzioni di un modulo durante l'esecuzione di una profilatura. Questo metodo è utile per raccogliere informazioni dettagliate sulle tempistiche per una sezione del codice e per comprendere l'impatto delle operazioni di input e output sulle prestazioni dell'applicazione. Questo metodo è disabilitato per un computer che esegue un sistema operativo a 32 bit. Questa opzione è disponibile solo quando si esegue il servizio cloud in Azure, non in locale nell'emulatore di calcolo.
 * **Allocazione della memoria .NET** : questo metodo raccoglie dati sull'allocazione della memoria .NET Framework usando il metodo di profilatura del campionamento. I dati raccolti includono il numero e la dimensione degli oggetti allocati.
-* **Concorrenza** : questo metodo raccoglie dati sui conflitti delle risorse e dati di esecuzione dei thread e dei processi utili per l'analisi delle applicazioni multithread e multiprocesso. Il metodo di concorrenza raccoglie i dati per ogni evento che blocca l'esecuzione del codice, ad esempio quando un thread attende che l'accesso bloccato a una risorsa dell'applicazione venga liberato. Questo metodo è utile per l'analisi di applicazioni multithread.
+* **Concorrenza** : questo metodo raccoglie dati sui conflitti delle risorse e dati di esecuzione dei thread e dei processi utili per l'analisi delle applicazioni multithread e multiprocesso. Il metodo di concorrenza raccoglie i dati per ogni evento che blocca l'esecuzione del codice, ad esempio quando un thread attende che l'accesso bloccato a una risorsa di un'applicazione venga liberato. Questo metodo è utile per l'analisi delle applicazioni multithread.
 * È inoltre possibile abilitare **Profilatura interazione tra livelli**, che fornisce informazioni aggiuntive sui tempi di esecuzione delle chiamate ADO.NET sincrone nelle funzioni di applicazioni multilivello che comunicano con uno o più database. È possibile raccogliere dati dell’interazione tra livelli con qualsiasi metodo di profilatura. Per altre informazioni sulla profilatura dell'interazione tra livelli, vedere [Visualizzazione Interazioni tra livelli](https://msdn.microsoft.com/library/azure/dd557764.aspx).
 
 ## <a name="configuring-profiling-settings"></a>Configurazione delle impostazioni di profilatura
@@ -81,7 +81,7 @@ La figura seguente illustra come configurare le impostazioni di profilatura dall
 >
 
 ### <a name="to-configure-profiling-settings"></a>Per configurare le impostazioni di profilatura
-1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi scegliere **Pubblica**. Per altre informazioni su come pubblicare un servizio cloud, vedere [Pubblicazione di un servizio cloud con gli strumenti di Azure](http://go.microsoft.com/fwlink/p?LinkId=623012).
+1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi scegliere **Pubblica**. Per altre informazioni su come pubblicare un servizio cloud, vedere [Pubblicazione di un servizio cloud con gli strumenti di Azure](vs-azure-tools-publishing-a-cloud-service.md).
 2. Nella finestra di dialogo **Pubblica l'applicazione Azure** scegliere la scheda **Impostazioni avanzate**.
 3. Per abilitare la profilatura, selezionare la casella di controllo **Abilita profilatura** .
 4. Per configurare le impostazioni di profilatura, scegliere il collegamento ipertestuale **Impostazioni** . Viene visualizzata la finestra di dialogo Impostazioni di profilatura.
@@ -101,7 +101,7 @@ Viene creata una sessione di profilatura per ogni istanza di un ruolo nel serviz
 2. Scegliere il nodo di calcolo di Azure e quindi scegliere il nodo di distribuzione di Azure per il servizio cloud selezionato per la profilatura durante la pubblicazione da Visual Studio.
 3. Per visualizzare i rapporti sulla profilatura per un'istanza, scegliere il ruolo nel servizio, aprire il meno di scelta rapida per un'istanza specifica, quindi scegliere **Visualizza rapporto sulla profilatura**.
 
-    Il report, un file con estensione vsp, viene ora scaricato da Azure e lo stato del download viene visualizzato nel log attività di Azure. Al termine del download, il report sulla profilatura viene visualizzato in una scheda dell'editor per Visual Studio con il nome <Nome ruolo\>*<Numero istanza\>*<identificatore\>.vsp. Vengono visualizzati i dati di riepilogo per il report.
+    Il report, un file con estensione vsp, viene ora scaricato da Azure e lo stato del download viene visualizzato nel log attività di Azure. Al termine del download, il report sulla profilatura viene visualizzato in una scheda dell'editor per Visual Studio con il nome <Nome ruolo\> *<Numero istanza\>* <identificatore\>.vsp. Vengono visualizzati i dati di riepilogo per il report.
 4. Per visualizzare viste diverse del report, nell'elenco Vista corrente, scegliere il tipo di visualizzazione che si desidera. Per altre informazioni, vedere [Visualizzazioni dei rapporti degli strumenti di profilatura](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Passaggi successivi

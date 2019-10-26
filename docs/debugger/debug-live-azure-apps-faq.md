@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211221"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911401"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Domande frequenti per il debug di snapshot in Visual Studio
 
@@ -31,7 +31,7 @@ In presenza di più istanze dell'app, a ogni singola istanza vengono applicati p
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>In che modo Snapshot Debugger carica i simboli?
 
-Snapshot Debugger richiede di avere a disposizione i simboli corrispondenti per l'applicazione in locale o distribuiti nel servizio app di Azure. (Non sono attualmente supportati PDB incorporati.) Snapshot Debugger scarica automaticamente i simboli dal servizio app di Azure. A partire da Visual Studio 2017 versione 15.2, la distribuzione nel servizio app di Azure consente di distribuire anche i simboli dell'app.
+Snapshot Debugger richiede di avere a disposizione i simboli corrispondenti per l'applicazione in locale o distribuiti nel servizio app di Azure. (PDB Embedded non sono attualmente supportati). Il Snapshot Debugger Scarica automaticamente i simboli dal servizio app Azure. A partire da Visual Studio 2017 versione 15.2, la distribuzione nel servizio app di Azure consente di distribuire anche i simboli dell'app.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Snapshot Debugger funziona sulle build di versione dell'applicazione?
 
@@ -125,7 +125,7 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
 
    - Certificato del server
       - L'identificazione personale del certificato server corrispondente viene distribuita come chiave privata nell'insieme di credenziali delle credenziali di Azure. VS tenterà di trovare o creare un insieme di credenziali delle credenziali con prefisso MSVSAZ * nell'area corrispondente alla risorsa della macchina virtuale o dei set di scalabilità di macchine virtuali. Tutte le risorse della macchina virtuale o del set di scalabilità di macchine virtuali distribuite in tale area condividono pertanto lo stesso insieme di credenziali delle credenziali.
-      - Per eliminare il segreto di identificazione personale del certificato del server, passare alla portale di Azure e trovare l'insieme di credenziali delle MSVSAZ * nella stessa area in cui è ospitata la risorsa. Elimina il segreto che dovrebbe essere etichettato`remotedebugcert<<ResourceName>>`
+      - Per eliminare il segreto di identificazione personale del certificato del server, passare alla portale di Azure e trovare l'insieme di credenziali delle MSVSAZ * nella stessa area in cui è ospitata la risorsa. Eliminare il segreto che dovrebbe essere etichettato `remotedebugcert<<ResourceName>>`
       - Sarà anche necessario eliminare il segreto server dalla risorsa tramite PowerShell.
 
       Per le macchine virtuali:
@@ -181,7 +181,7 @@ Esistono diversi modi per disabilitare la Snapshot Debugger:
 
 - Portale di Azure > il pannello della risorsa macchina virtuale/set di scalabilità di macchine virtuali > estensioni > disinstallare Microsoft. Insights. VMDiagnosticsSettings
 
-- Cmdlet di PowerShell da [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Cmdlet di PowerShell da [AZ PowerShell](/powershell/azure/overview)
 
    Macchina virtuale:
 
