@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652620"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919123"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
-È possibile aggiungere un file [EditorConfig](http://editorconfig.org/) al progetto o alla codebase per imporre stili di codifica coerenti per tutti gli utenti che usano la codebase. Le impostazioni di EditorConfig hanno la precedenza sulle impostazioni dell'editor di testo di Visual Studio globali. Ciò significa che è possibile personalizzare ogni codebase in modo che vengano usate le impostazioni dell'editor di testo specifiche del progetto. È comunque possibile impostare preferenze personali per l'editor nella finestra di dialogo **Opzioni** di Visual Studio. Queste impostazioni si applicano ogni volta che si usa una codebase priva di file con estensione *editorconfig* o quando il file con estensione *editorconfig* non esegue l'override di un'impostazione specifica. Un esempio di tale preferenza è lo stile del rientro&mdash;caratteri di tabulazione o spazi.
+È possibile aggiungere un file [EditorConfig](https://editorconfig.org/) al progetto o alla codebase per imporre stili di codifica coerenti per tutti gli utenti che usano la codebase. Le impostazioni di EditorConfig hanno la precedenza sulle impostazioni dell'editor di testo di Visual Studio globali. Ciò significa che è possibile personalizzare ogni codebase in modo che vengano usate le impostazioni dell'editor di testo specifiche del progetto. È comunque possibile impostare preferenze personali per l'editor nella finestra di dialogo **Opzioni** di Visual Studio. Queste impostazioni si applicano ogni volta che si usa una codebase priva di file con estensione *editorconfig* o quando il file con estensione *editorconfig* non esegue l'override di un'impostazione specifica. Un esempio di tale preferenza è lo stile del rientro&mdash;caratteri di tabulazione o spazi.
 
 Le impostazioni di EditorConfig sono supportate da numerosi editor di codice e molti ambienti IDE, tra cui Visual Studio. Si tratta di un componente portatile che viene trasferito con il codice ed è in grado di imporre stili di codice anche all'esterno di Visual Studio.
 
@@ -50,14 +50,14 @@ Le impostazioni nei file EditorConfig consentono di mantenere stili e impostazio
 
 Le convenzioni di codifica usate per i progetti personali possono essere diverse da quelle per i progetti del team. Si potrebbe ad esempio preferire che durante la scrittura di codice il rientro aggiunga un carattere di tabulazione. Il team, tuttavia, potrebbe preferire per il rientro quattro spazi anziché un carattere di tabulazione. I file di EditorConfig risolvono questo problema consentendo di predisporre una configurazione per ogni scenario.
 
-Dato che le impostazioni si trovano all'interno di un file nella codebase, seguono quest'ultima nei suoi spostamenti. Quando il file di codice viene aperto, le impostazioni dell'editor di testo vengono implementate, a condizione che l'editor sia compatibile con EditorConfig. Per altre informazioni sui file di EditorConfig, vedere il sito Web [EditorConfig.org](http://editorconfig.org/).
+Dato che le impostazioni si trovano all'interno di un file nella codebase, seguono quest'ultima nei suoi spostamenti. Quando il file di codice viene aperto, le impostazioni dell'editor di testo vengono implementate, a condizione che l'editor sia compatibile con EditorConfig. Per altre informazioni sui file di EditorConfig, vedere il sito Web [EditorConfig.org](https://editorconfig.org/).
 
 > [!NOTE]
 > Attualmente non è possibile applicare convenzioni impostate in un file EditorConfig in una pipeline CI/CD come errori o avvisi di compilazione. Tutte le deviazioni di stile vengono visualizzate solo nell'editor di Visual Studio e in **Elenco errori**.
 
 ## <a name="supported-settings"></a>Impostazioni supportate
 
-L'editor in Visual Studio supporta il set di base delle [proprietà di EditorConfig](http://editorconfig.org/#supported-properties):
+L'editor in Visual Studio supporta il set di base delle [proprietà di EditorConfig](https://editorconfig.org/#supported-properties):
 
 - indent_style
 - indent_size
@@ -182,6 +182,6 @@ dir .editorconfig /s
 
 - [.NET code style conventions](../ide/editorconfig-code-style-settings-reference.md) (Convenzioni di stile del codice .NET)
 - [Supporting EditorConfig for a language service](../extensibility/supporting-editorconfig.md) (Supporto di EditorConfig per un servizio di linguaggio)
-- [EditorConfig.org](http://editorconfig.org/)
+- [EditorConfig.org](https://editorconfig.org/)
 - [Funzionalità dell'editor del codice](writing-code-in-the-code-and-text-editor.md)
 - [EditorConfig (Visual Studio per Mac)](/visualstudio/mac/editorconfig)
