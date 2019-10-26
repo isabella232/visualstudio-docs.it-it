@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300539"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888585"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aggiornare Visual Studio secondo una baseline di manutenzione
 
@@ -28,7 +28,7 @@ Visual Studio viene aggiornato spesso durante il ciclo di vita del prodotto. Son
 
 Gli amministratori dell'organizzazione possono scegliere di mantenere i client su una baseline di manutenzione, supportata con gli aggiornamenti di manutenzione per un anno dopo il rilascio della baseline di manutenzione successiva.
 
-La baseline di manutenzione offre una maggiore flessibilità a sviluppatori e amministratori per l'adozione di nuove funzionalità, correzioni di bug o componenti inclusi nei nuovi aggiornamenti secondari. La prima baseline di manutenzione è 16.0.x. Per altre informazioni, vedere [Opzioni di supporto per i clienti Enterprise e Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+La baseline di manutenzione offre una maggiore flessibilità a sviluppatori e amministratori per l'adozione di nuove funzionalità, correzioni di bug o componenti inclusi nei nuovi aggiornamenti secondari. La prima baseline di manutenzione è 16.0.x. Per altre informazioni, vedere [Opzioni di supporto per i clienti Enterprise e Professional](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Come adottare una baseline di manutenzione
 
@@ -82,7 +82,7 @@ Nel caso di un'installazione basata su Internet, eseguire il nuovo programma di 
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)

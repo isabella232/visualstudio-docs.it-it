@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di app UWP | Microsoft Docs
-ms.custom: seodec18
-ms.date: 03/28/2019
+ms.custom: ''
+ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fe8348b342627cba861a9ceb67e74d0876752cdf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b008dd22b99e0024fcba479564c02cfad148f14a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738014"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888470"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Eseguire il debug di app di Windows universale (UWP) in Visual Studio
 
@@ -28,6 +28,8 @@ Il debugger di Visual Studio fornisce supporto completo per il debug di app UWP.
 |-|-|
 |Eseguire app UWP in un computer locale, in un dispositivo remoto o connesso o in un simulatore di app.|[Avviare una sessione di debug per un'app UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |Eseguire il debug di app distribuite, sia locali che remote.|[Eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md)|
+| [Scrivere ed eseguire il debug del codice XAML in esecuzione](../xaml-tools/xaml-hot-reload.md) | È possibile usare il ricaricamento a caldo di XAML per esplorare la struttura ad albero visuale di un oggetto XAML UWP e visualizzare le proprietà di dipendenza per gli oggetti in tale albero. Questo argomento descrive come usare il ricaricamento a caldo di XAML. |
+| [Analizzare le proprietà XAML durante il debug](../xaml-tools/xaml-hot-reload.md) | È possibile usare la struttura ad albero visuale attiva per esplorare la struttura ad albero visuale di un oggetto XAML UWP e visualizzare le proprietà di dipendenza per gli oggetti in tale albero. |
 |Analizzare l'effetto della classe ContentPrefetcher sulle app UWP.|[Prelettura del contenuto per le app UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>Vedere anche

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Supporto della community di Azure in specifiche sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681268"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816547"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum Supporto della community di Azure nelle sottoscrizioni di Visual Studio
 Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.
@@ -49,13 +49,13 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 
 |                                          Livello di sottoscrizione                                           |     Canali      |    Vantaggio    | Rinnovabile? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
-|                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Un anno    |    Sì     |
-|                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Un anno    |    Sì     |
-|                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Un anno    |    Sì     |
-|                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Un anno    |    Sì     |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile)Visual Studio Enterprise (cloud mensile), NFR<sup>1</sup> |        Tutti        | Non disponibile |     No     |
+|                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Un anno    |    Yes     |
+|                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Un anno    |    Yes     |
+|                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Un anno    |    Yes     |
+|                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Un anno    |    Yes     |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile)Visual Studio Enterprise (cloud mensile), NFR<sup>1</sup> |        All        | Non disponibile |     No     |
 
-<sup>1</sup>  *Include:  Not for Resale (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
+<sup>1</sup>  *include: not for Resale (NFR), Microsoft ETP, most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -69,4 +69,4 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Molte sottoscrizioni di Visual Studio includono crediti di Azure.  Leggere informazioni su [come attivarli](vs-azure.md).
+Sai che molte sottoscrizioni di Visual Studio sono associate a un credito singolo di Azure DevTest?  Leggere informazioni su [come attivarli](vs-azure.md).

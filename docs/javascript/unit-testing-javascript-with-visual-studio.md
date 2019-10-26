@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787983"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888635"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Testing unità di codice JavaScript e TypeScript in Visual Studio
 
 Node.js Tools For Visual Studio consente di scrivere ed eseguire unit test usando alcuni dei più diffusi framework JavaScript senza la necessità di passare a un prompt dei comandi.
 
 I framework supportati sono:
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
@@ -91,7 +91,7 @@ Dopo aver aperto Esplora test (scegliere **Test** > **Finestre** > **Esplora tes
 > [!NOTE]
 > Test di profilatura o code coverage non sono attualmente supportati.
 
-### <a name="run-tests-from-the-command-line"></a>Eseguire test dalla riga di comando
+### <a name="run-tests-from-the-command-line"></a>Eseguire i test dalla riga di comando
 
 È possibile eseguire i test dal [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per Visual Studio 2017 usando il comando seguente:
 

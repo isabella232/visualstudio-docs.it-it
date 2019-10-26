@@ -16,18 +16,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd6cb64c3dad56c291b229dfee6cc2816e574b69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0fc3719f57e91ddd602bdb6eeb382bf5885a81a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634833"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888420"
 ---
 # <a name="the-visual-studio-image-library"></a>Libreria di immagini di Visual Studio
 
 La libreria di immagini di Visual Studio contiene le immagini dell'applicazione visualizzate in Microsoft Visual Studio, Microsoft Windows, Office System e in altre applicazioni Microsoft. Questo set di oltre 1.000 immagini può essere utilizzato per creare applicazioni visivamente conformi con il software Microsoft.
 
-[Scaricare la libreria di immagini di Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+[Scaricare la libreria di immagini di Visual Studio](http://www.microsoft.com/download/details.aspx?id=35825)
 
 La libreria di immagini è suddivisa in cinque categorie: Elementi comuni, Azioni, Annotazioni, Icone e Oggetti. I file readme vengono inclusi in formato PDF per i tipi Elementi comuni e Icone. I file contengono informazioni su come utilizzare le immagini in maniera appropriata all'interno delle applicazioni.
 
