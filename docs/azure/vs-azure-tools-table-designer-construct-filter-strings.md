@@ -9,39 +9,39 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 2f63872d3578a8abe03887bfc8bf188ba83f0b1d
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624073"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911654"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Creazione di stringhe di filtro per Progettazione tabelle
 ## <a name="overview"></a>Panoramica
-Per filtrare i dati in una tabella di Azure visualizzata in **Progettazione tabelle**di Visual Studio, creare una stringa di filtro e immetterla nel campo del filtro. La sintassi della stringa di filtro è definita da WCF Data Services ed è simile a una clausola WHERE SQL, ma viene inviata al servizio tabelle con una richiesta HTTP. **Progettazione tabelle** gestisce automaticamente la codifica appropriata, quindi per filtrare in base a un valore di proprietà desiderato, è necessario immettere solo il nome della proprietà, l'operatore di confronto, il valore dei criteri e, facoltativamente, l'operatore booleano nel campo del filtro. Non è necessario includere l'opzione di query $filter come quando si crea un URL per eseguire la query della tabella in base alle [Informazioni di riferimento sulle API REST dei servizi di archiviazione](http://go.microsoft.com/fwlink/p/?LinkId=400447).
+Per filtrare i dati in una tabella di Azure visualizzata in **Progettazione tabelle**di Visual Studio, creare una stringa di filtro e immetterla nel campo del filtro. La sintassi della stringa di filtro è definita da WCF Data Services ed è simile a una clausola WHERE SQL, ma viene inviata al servizio tabelle con una richiesta HTTP. **Progettazione tabelle** gestisce automaticamente la codifica appropriata, quindi per filtrare in base a un valore di proprietà desiderato, è necessario immettere solo il nome della proprietà, l'operatore di confronto, il valore dei criteri e, facoltativamente, l'operatore booleano nel campo del filtro. Non è necessario includere l'opzione di query $filter come quando si crea un URL per eseguire la query della tabella in base alle [Informazioni di riferimento sulle API REST dei servizi di archiviazione](/rest/api/storageservices/).
 
-WCF Data Services si basa su [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Per i dettagli sull'opzione di query del sistema di filtro ( **$filter**), vedere la [specifica sulle convenzioni URI OData](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+WCF Data Services si basa su [Open Data Protocol](https://www.odata.org/) (OData). Per i dettagli sull'opzione di query del sistema di filtro ( **$filter**), vedere la [specifica sulle convenzioni URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operatori di confronto
 Gli operatori logici seguenti sono supportati per tutti i tipi di proprietà:
 
-| Operatore logico | DESCRIZIONE | Stringa di filtro di esempio |
+| Operatore logico | Descrizione | Stringa di filtro di esempio |
 | --- | --- | --- |
 | eq |Uguale |Città eq "Redmond" |
 | gt |Maggiore di |Prezzo gt 20 |
 | ge |Maggiore o uguale a |Prezzo ge 10 |
 | lt |Minore di |Prezzo lt 20 |
-| le |Minore o uguale |Prezzo le 100 |
-| ne |Diverso |Città ne "Londra" |
+| le |Minore o uguale a |Prezzo le 100 |
+| ne |Non uguaglianza |Città ne "Londra" |
 | e |e |Prezzo le 200 and Prezzo gt 3,5 |
-| oppure |Or |Prezzo le 3,5 or Prezzo gt 200 |
+| Oppure |Oppure |Prezzo le 3,5 or Prezzo gt 200 |
 | not |not |not isAvailable |
 
 Quando si crea una stringa di filtro, tenere presente le regole seguenti:
 
 * Usare gli operatori logici per confrontare una proprietà con un valore. Si noti che non è possibile confrontare una proprietà con un valore dinamico. Un elemento dell'espressione deve essere una costante.
 * Viene effettuata la distinzione tra maiuscole e minuscole per tutte le parti della stringa di filtro.
-* Il valore costante deve essere dello stesso tipo di dati della proprietà affinché il filtro restituisca risultati validi. Per altre informazioni sui tipi di proprietà supportati, vedere [Informazioni sul modello di dati del servizio tabelle](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Il valore costante deve essere dello stesso tipo di dati della proprietà affinché il filtro restituisca risultati validi. Per altre informazioni sui tipi di proprietà supportati, vedere [Informazioni sul modello di dati del servizio tabelle](/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
 
 ## <a name="filtering-on-string-properties"></a>Applicazione di filtri alle proprietà della stringa
 Quando si applicano filtri alle proprietà della stringa, includere la costante di stringa tra virgolette singole.
@@ -101,7 +101,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>Applicazione di filtri alle proprietà DateTime
-Per applicare filtri a un valore DateTime, specificare la parola chiave **datetime** , seguita dalla costante data/ora tra virgolette singole. La costante data/ora tra virgolette singole deve essere nel formato UTC combinato, come descritto in [Formattazione di valori della proprietà DateTime](http://go.microsoft.com/fwlink/p/?LinkId=400449).
+Per applicare filtri a un valore DateTime, specificare la parola chiave **datetime** , seguita dalla costante data/ora tra virgolette singole. La costante data/ora tra virgolette singole deve essere nel formato UTC combinato, come descritto in [Formattazione di valori della proprietà DateTime](/rest/api/storageservices/Formatting-DateTime-Property-Values).
 
 L'esempio seguente restituisce le entità in cui la proprietà CustomerSince è uguale a 10 luglio 2008:
 

@@ -9,26 +9,26 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: e5304011b27717f8967d2fc77c66c0cf0e6bc908
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 35e790f9651e0f358fe60dd7ebdc131496259102
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555412"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911818"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debug di un servizio cloud di Azure pubblicato con Visual Studio e IntelliTrace
 Con IntelliTrace è possibile registrare informazioni di debug approfondite per un'istanza del ruolo quando è in esecuzione in Azure. Se è necessario individuare la causa di un problema, è possibile usare i log di IntelliTrace per esaminare il codice da Visual Studio come se fosse in esecuzione in Azure. In effetti, IntelliTrace registra i dati fondamentali dell’esecuzione del codice e dell’ambiente quando l'applicazione Azure è in esecuzione come servizio cloud in Azure e consente di riprodurre i dati registrati da Visual Studio.
 
 È possibile usare IntelliTrace se Visual Studio Enterprise è installato e l'applicazione Azure è destinata a .NET Framework 4 o versione successiva. IntelliTrace raccoglie informazioni per i ruoli Azure. Le macchine virtuali per questi ruoli eseguono sempre sistemi operativi a 64 bit.
 
-In alternativa, è possibile usare il [debug remoto](http://go.microsoft.com/fwlink/p/?LinkId=623041) per connettersi direttamente a un servizio cloud in esecuzione in Azure.
+In alternativa, è possibile usare il [debug remoto](vs-azure-tools-debugging-cloud-services-overview.md) per connettersi direttamente a un servizio cloud in esecuzione in Azure.
 
 > [!IMPORTANT]
 > IntelliTrace è destinato esclusivamente a scenari di debug e non deve essere usato per una distribuzione di produzione.
 >
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configurare un'applicazione Azure per IntelliTrace
-Per abilitare IntelliTrace per un'applicazione Azure, è necessario creare e pubblicare l'applicazione da un progetto Azure di Visual Studio. È necessario configurare IntelliTrace per l'applicazione Azure prima di pubblicarla in Azure. Se si pubblica l'applicazione senza configurare IntelliTrace, è necessario ripubblicare il progetto. Per altre informazioni, vedere [Pubblicazione di progetti di servizi cloud di Azure con Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=623012).
+Per abilitare IntelliTrace per un'applicazione Azure, è necessario creare e pubblicare l'applicazione da un progetto Azure di Visual Studio. È necessario configurare IntelliTrace per l'applicazione Azure prima di pubblicarla in Azure. Se si pubblica l'applicazione senza configurare IntelliTrace, è necessario ripubblicare il progetto. Per altre informazioni, vedere [Pubblicazione di progetti di servizi cloud di Azure con Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
 1. Quando si è pronti distribuire l'applicazione Azure, verificare che le destinazioni di compilazione del progetto siano impostate su **Debug**.
 
@@ -44,7 +44,7 @@ Per abilitare IntelliTrace per un'applicazione Azure, è necessario creare e pub
 
     ![Collegamento alle impostazioni di IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/intellitrace-settings-link.png)
 
-1. Nella finestra di dialogo **Impostazioni di IntelliTrace** è possibile specificare gli eventi da registrare, se si desidera raccogliere informazioni sulle chiamate, i moduli e i processi di cui raccogliere i log e quanto spazio allocare per la registrazione. Per ulteriori informazioni su IntelliTrace, vedere [Debug con IntelliTrace](http://go.microsoft.com/fwlink/?LinkId=214468).
+1. Nella finestra di dialogo **Impostazioni di IntelliTrace** è possibile specificare gli eventi da registrare, se si desidera raccogliere informazioni sulle chiamate, i moduli e i processi di cui raccogliere i log e quanto spazio allocare per la registrazione. Per ulteriori informazioni su IntelliTrace, vedere [Debug con IntelliTrace](../debugger/intellitrace.md).
 
     ![Impostazioni di IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC519063.png)
 

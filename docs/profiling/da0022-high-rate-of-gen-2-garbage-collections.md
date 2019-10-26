@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0c156cc4b47bc4ebedd169b099a538941f56d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba70e303c3164417890be51e834d86d8983526cf
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936398"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910530"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Frequenza elevata di Garbage Collection di generazione 2
 
@@ -25,7 +25,7 @@ ms.locfileid: "62936398"
 |-|-|
 |ID regola|DA0022|
 |Category|Uso di .NET Framework|
-|Metodo di profilatura|Tutti|
+|Metodo di profilatura|All|
 |Messaggio|È stata rilevata una frequenza elevata di Garbage Collection di generazione 2. In genere, ciò avviene se la maggior parte delle strutture dati del programma sono allocate e rese persistenti per molto tempo per progettazione. Tuttavia, se tale comportamento è imprevisto, l'applicazione potrebbe bloccare gli oggetti. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|
 |Tipo regola|Avviso|
 
@@ -50,4 +50,4 @@ ms.locfileid: "62936398"
 
  Per comprendere il modello di utilizzo della memoria gestita dell'applicazione, eseguire di nuovo la profilatura con un profilo di allocazione della memoria .NET e selezionare l'opzione di profilatura Durata oggetti.
 
- Per informazioni su come migliorare le prestazioni di Garbage Collection, vedere [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=148226) (Nozioni fondamentali su Garbage Collection e suggerimenti sulle prestazioni) sul sito Web Microsoft. Per informazioni sul sovraccarico della procedura di Garbage Collection automatica, vedere [Large Object Heap Uncovered](http://go.microsoft.com/fwlink/?LinkId=177836) (Heap di oggetti grandi).
+ Per informazioni su come migliorare le prestazioni di Garbage Collection, vedere [Garbage Collector Basics and Performance Hints](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) (Nozioni fondamentali su Garbage Collection e suggerimenti sulle prestazioni) sul sito Web Microsoft. Per informazioni sul sovraccarico della procedura di Garbage Collection automatica, vedere [Large Object Heap Uncovered](https://msdn.microsoft.com/magazine/cc534993.aspx) (Heap di oggetti grandi).

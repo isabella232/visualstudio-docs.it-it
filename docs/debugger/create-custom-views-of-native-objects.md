@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb2f9d9319a943182c8256256ca6ea7334c532d1
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349481"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911619"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creare visualizzazioni personalizzate di C++ oggetti nel debugger usando il Framework natvis
 
@@ -30,15 +30,15 @@ Natvis sostituisce il file *autoexp. dat* nelle versioni precedenti di Visual St
 
 Usare il Framework natvis per creare regole di visualizzazione per i tipi creati, in modo che gli sviluppatori possano visualizzarli più facilmente durante il debug.
 
-Nell'illustrazione seguente, ad esempio, viene mostrata una variabile di tipo [Windows:: UI:: XAML:: Controls:: TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) in una finestra del debugger senza alcuna visualizzazione personalizzata applicata.
+Nell'illustrazione seguente, ad esempio, viene mostrata una variabile di tipo [Windows:: UI:: XAML:: Controls:: TextBox](/uwp/api/Windows.UI.Xaml.Controls.TextBox) in una finestra del debugger senza alcuna visualizzazione personalizzata applicata.
 
-![](../debugger/media/dbg_natvis_textbox_default.png "Visualizzazione") predefinita casella di testo visualizzazione predefinita casella di testo
+![Visualizzazione predefinita casella di testo](../debugger/media/dbg_natvis_textbox_default.png "Visualizzazione predefinita di TextBox")
 
 La riga evidenziata mostra la proprietà `Text` della classe `TextBox` . La gerarchia di classi complesse rende difficile trovare questa proprietà. Il debugger non è in grado di interpretare il tipo di stringa personalizzato, pertanto non è possibile visualizzare la stringa contenuta nella casella di testo.
 
 Lo stesso `TextBox` sembra molto più semplice nella finestra delle variabili quando vengono applicate le regole del visualizzatore personalizzato natvis. I membri importanti della classe vengono visualizzati insieme e il debugger Mostra il valore stringa sottostante del tipo di stringa personalizzato.
 
-![Dati TextBox usando](../debugger/media/dbg_natvis_textbox_visualizer.png "i dati TextBox") del visualizzatore tramite il Visualizzatore
+![Dati TextBox tramite Visualizzatore](../debugger/media/dbg_natvis_textbox_visualizer.png "Dati TextBox con uso di visualizzatore")
 
 ## <a name="BKMK_Using_Natvis_files"></a>Usare i file con estensione C++ natvis nei progetti
 
@@ -130,7 +130,7 @@ Usare anche il comando **. natvisreload** per aggiornare il file con *estensione
 ## <a name="BKMK_Expressions_and_formatting"></a> Espressioni e formattazione
 Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elementi di dati da visualizzare. Oltre ai miglioramenti e alle limitazioni delle C++ espressioni nel debugger, descritti in operatore di [contesto (C++)](../debugger/context-operator-cpp.md), tenere presente quanto segue:
 
-- Le espressioni di Natvis vengono valutate nel contesto dell'oggetto da visualizzare, non nello stack frame corrente. @No__t_0 in un'espressione natvis, ad esempio, fa riferimento al campo denominato **x** nell'oggetto visualizzato, non a una variabile locale denominata **x** nella funzione corrente. Non è possibile accedere alle variabili locali nelle espressioni natvis, anche se è possibile accedere alle variabili globali.
+- Le espressioni di Natvis vengono valutate nel contesto dell'oggetto da visualizzare, non nello stack frame corrente. `x` in un'espressione natvis, ad esempio, fa riferimento al campo denominato **x** nell'oggetto visualizzato, non a una variabile locale denominata **x** nella funzione corrente. Non è possibile accedere alle variabili locali nelle espressioni natvis, anche se è possibile accedere alle variabili globali.
 
 - Le espressioni natvis non consentono la valutazione di funzioni o effetti collaterali. Le chiamate di funzione e gli operatori di assegnazione vengono ignorati. Dal momento che le [funzioni intrinseche del debugger](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) non hanno effetti collaterali, possono essere chiamate liberamente da qualsiasi espressione Natvis, anche se non sono consentite altre chiamate di funzione.
 
@@ -156,7 +156,7 @@ Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elemen
 
 Nella finestra **espressioni di controllo** usare l'identificatore di formato di **visualizzazione** per specificare una visualizzazione alternativa. La visualizzazione semplice viene visualizzata come **VEC, View (Simple)** :
 
-![Finestra espressioni di controllo con visualizzazione semplice](../debugger/media/watch-simpleview.png "finestra espressioni di controllo con visualizzazione semplice")
+![finestra Espressioni di controllo con visualizzazione semplice](../debugger/media/watch-simpleview.png "Finestra Espressioni di controllo con visualizzazione semplice")
 
 ## <a name="BKMK_Diagnosing_Natvis_errors"></a>Errori natvis
 
@@ -256,7 +256,7 @@ Nell'esempio seguente viene prima di tutto analizzata la voce che corrisponde a 
 ```
 
 ### <a name="optional-attribute"></a>Attributo Optional
-È possibile inserire un attributo `Optional` su qualsiasi nodo. Se una sottoespressione all'interno di un nodo facoltativo non viene analizzata, il debugger ignora tale nodo, ma applica le altre regole di `Type`. Nel tipo seguente `[State]` non è facoltativo, mentre `[Exception]` lo è.  Se `MyNamespace::MyClass` dispone di un campo denominato _ `M_exceptionHolder`, verranno visualizzati sia il nodo `[State]` che il nodo `[Exception]`, ma se non è presente alcun campo `_M_exceptionHolder`, viene visualizzato solo il nodo `[State]`.
+È possibile inserire un attributo `Optional` su qualsiasi nodo. Se una sottoespressione all'interno di un nodo facoltativo non viene analizzata, il debugger ignora tale nodo, ma applica le altre regole di `Type`. Nel tipo seguente `[State]` non è facoltativo, mentre `[Exception]` lo è.  Se `MyNamespace::MyClass` dispone di un campo denominato _`M_exceptionHolder`, verranno visualizzati sia il nodo `[State]` che il nodo `[Exception]`, ma se non è presente alcun campo `_M_exceptionHolder`, viene visualizzato solo il nodo `[State]`.
 
 ```xml
 <Type Name="MyNamespace::MyClass">
@@ -271,7 +271,7 @@ Nell'esempio seguente viene prima di tutto analizzata la voce che corrisponde a 
 
 L'attributo `Condition` facoltativo è disponibile per molti elementi di visualizzazione e specifica quando usare una regola di visualizzazione. Se l'espressione all'interno dell'attributo Condition viene risolta in `false`, la regola di visualizzazione non è applicabile. Se restituisce `true` o non esiste alcun attributo `Condition`, viene applicata la visualizzazione. È possibile usare questo attributo per la logica if-else nelle voci di visualizzazione.
 
-La visualizzazione seguente, ad esempio, include due elementi `DisplayString` per un tipo di puntatore intelligente. Quando il membro `_Myptr` è vuoto, la condizione del primo elemento `DisplayString` viene risolta in `true`, in modo da visualizzare il form. Quando il membro `_Myptr` non è vuoto, la condizione restituisce `false` e viene visualizzato il secondo elemento `DisplayString`.
+La visualizzazione seguente, ad esempio, include due elementi `DisplayString` per un tipo di puntatore intelligente. Quando il membro `_Myptr` è vuoto, la condizione del primo elemento `DisplayString` viene risolta in `true`, in modo da visualizzare il form. Quando il membro `_Myptr` non è vuoto, la condizione restituisce `false`e viene visualizzato il secondo elemento `DisplayString`.
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -331,7 +331,7 @@ L'elemento `DisplayString` specifica una stringa da visualizzare come valore di 
 
 Indica che le variabili di tipo `CPoint` visualizzate come illustrato nella figura seguente:
 
- ![Utilizzare un elemento DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "utilizzare un elemento DisplayString")
+ ![Usare un elemento DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "Usare un elemento DisplayString")
 
 Nell'espressione `DisplayString` `x` e `y`, che sono membri di `CPoint`, sono racchiusi tra parentesi graffe, pertanto i relativi valori vengono valutati. Nell'esempio viene inoltre illustrato come sfuggire a una parentesi graffa con parentesi graffe doppie (`{{` o `}}`).
 
@@ -350,7 +350,7 @@ L'elemento `StringView` definisce un valore che il debugger può inviare al visu
 
 L'oggetto `CStringT` viene visualizzato in una finestra delle variabili come nell'esempio seguente:
 
-Elemento CStringT DisplayString ![elemento](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT") DisplayString
+![Elemento DisplayString CStringt](../debugger/media/dbg_natvis_displaystring_cstringt.png "Elemento DisplayString CStringT")
 
 L'aggiunta di un elemento `StringView` indica al debugger che è possibile visualizzare il valore come visualizzazione di testo.
 
@@ -363,7 +363,7 @@ L'aggiunta di un elemento `StringView` indica al debugger che è possibile visua
 
 Durante il debug, è possibile selezionare l'icona della lente di ingrandimento accanto alla variabile, quindi selezionare **Visualizzatore di testo** per visualizzare la stringa a cui punta **m_pszData** .
 
- ![Dati CStringT con](../debugger/media/dbg_natvis_stringview_cstringt.png "i dati CStringT") del Visualizzatore StringView con il Visualizzatore StringView
+ ![Dati CStringt con visualizzatore StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "Dati CStringT con visualizzatore StringView")
 
 L'espressione `{m_pszData,su}` include un C++ identificatore di formato **su**per visualizzare il valore come stringa Unicode. Per ulteriori informazioni, vedere [identificatori di formato C++in ](../debugger/format-specifiers-in-cpp.md).
 
@@ -391,7 +391,7 @@ Il nodo `Expand` facoltativo Personalizza gli elementi figlio di un tipo visuali
 
 Nella finestra del debugger, il tipo di `CRect` è simile a questo esempio:
 
-![CRect con espansione elemento]elemento(../debugger/media/dbg_natvis_expand_item_crect1.png "CRect con espansione elemento") elemento
+![CRect con espansione elemento elemento](../debugger/media/dbg_natvis_expand_item_crect1.png "CRect con espansione dell'elemento Item")
 
 Il debugger valuta le espressioni specificate negli elementi `Width` e `Height` e Mostra i valori nella colonna **valore** della finestra delle variabili.
 
@@ -419,7 +419,7 @@ Usare il nodo `ArrayItems` per consentire al debugger di Visual Studio di interp
 
 Un elemento `std::vector` visualizza i singoli elementi quando viene espanso nella finestra delle variabili:
 
-![std:: Vector con l'espansione ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std:: Vector con espansione ArrayItems")
+![STD:: Vector con espansione ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std::vector con uso dell'espansione ArrayItems")
 
 Il nodo `ArrayItems` deve avere:
 
@@ -454,7 +454,7 @@ Il valore predefinito del limite inferiore della matrice è 0. Per eseguire l'ov
 
 Ecco il modo in cui un oggetto `Concurrency::array` bidimensionale Cerca nella finestra del debugger:
 
-![Matrice bidimensionale con ArrayItems di espansione](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "bidimensionale con espansione ArrayItems")
+![Matrice bidimensionale con espansione ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "Matrice bidimensionale con espansione ArrayItems")
 
 #### <a name="BKMK_IndexListItems_expansion"></a> Espansione di IndexListItems
 
@@ -582,7 +582,7 @@ La sintassi è simile al nodo `LinkedListItems`. `LeftPointer`, `RightPointer` e
 
 Ad esempio, il tipo di puntatore intelligente `auto_ptr<vector<int>>` in genere viene visualizzato come:
 
- (../debugger/media/dbg_natvis_expand_expandeditem_default.png "espansione") predefinita dell'espansione predefinita del ![vettore&#60;di&#62; &#62; tipo auto PTR&#60;&#95;]
+ ![espansione&#95;predefinita&#60;del&#60;vettore&#62; &#62; di tipo auto PTR](../debugger/media/dbg_natvis_expand_expandeditem_default.png "Espansione predefinita")
 
  Per visualizzare i valori del vettore, è necessario eseguire il drill-down di due livelli nella finestra delle variabili, passando il membro `_Myptr`. Aggiungendo un elemento `ExpandedItem`, è possibile eliminare la variabile `_Myptr` dalla gerarchia e visualizzare direttamente gli elementi del vettore:
 
@@ -595,7 +595,7 @@ Ad esempio, il tipo di puntatore intelligente `auto_ptr<vector<int>>` in genere 
 </Type>
 ```
 
- ![espansione&#95;auto&#60;PTR&#60;vector&#62; &#62; int ExpandedItem Expansion](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "ExpandedItem")
+ ![espansione&#95;auto&#60;PTR&#60;vector&#62; &#62; int ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "Espansione di ExpandedItem")
 
 Nell'esempio seguente viene illustrato come aggregare proprietà dalla classe base in una classe derivata. Si supponga che la classe `CPanel` derivi da `CFrameworkElement`. Invece di ripetere le proprietà che provengono dalla classe `CFrameworkElement` di base, la visualizzazione del nodo `ExpandedItem` Accoda tali proprietà all'elenco figlio della classe `CPanel`.
 
@@ -631,7 +631,7 @@ In questo caso è necessario l'identificatore di formato **nd** che disattiva la
 </Type>
 ```
 
- ![Concurrency:: array con espansione dell'elemento sintetico](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: array con espansione di elementi sintetici")
+ ![Concurrency:: array con espansione di elementi sintetici](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrency:: array con espansione di elementi sintetici")
 
 ### <a name="BKMK_HResult"></a>HResult (elemento)
  L'elemento `HResult` consente di personalizzare le informazioni visualizzate per un **HRESULT** nelle finestre del debugger. L'elemento `HRValue` deve contenere il valore a 32 bit di **HRESULT** da personalizzare. L'elemento `HRDescription` contiene le informazioni da visualizzare nella finestra del debugger.
@@ -665,7 +665,7 @@ Il seguente è un esempio di elemento UIVisualizer:
 
 - L'attributo `MenuName` definisce il nome di un visualizzatore da visualizzare nell'elenco a discesa accanto all'icona della lente di ingrandimento nel debugger. Esempio:
 
-  Menu di ![scelta rapida]del menu UIVisualizer UIVisualizer menu di(../debugger/media/dbg_natvis_vectorvisualizer.png "scelta rapida")
+  ![Menu di scelta rapida del menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu di scelta rapida UIVisualizer")
 
 Ogni tipo definito nel file *natvis* deve elencare in modo esplicito tutti i visualizzatori dell'interfaccia utente in grado di visualizzarli. Il debugger corrisponde ai riferimenti del visualizzatore nelle voci di tipo con i visualizzatori registrati. Ad esempio, la voce di tipo seguente per `std::vector` fa riferimento al `UIVisualizer` nell'esempio precedente.
 

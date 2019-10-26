@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e719563c831c50cc325d70d0de431f4be1bf514
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732751"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911433"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Procedura: impostare il nome di un thread in codice nativo
 La denominazione dei thread è possibile in tutte le edizioni di Visual Studio. La denominazione dei thread è utile per identificare i thread di interesse nella finestra **thread** durante il debug di un processo in esecuzione. Un thread con nome riconoscibile può essere utile anche quando si esegue il debug post-mortem tramite l'ispezione dei dump di arresto anomalo del sistema e quando si analizzano le acquisizioni delle prestazioni usando vari strumenti.
@@ -37,7 +37,7 @@ Vale la pena notare che _entrambi_ gli approcci possono essere utilizzati insiem
 I vantaggi sono:
 * I nomi dei thread sono visibili durante il debug in Visual Studio, indipendentemente dal fatto che il debugger sia stato collegato al processo al momento in cui viene richiamato SetThreadDescription.
 * I nomi dei thread sono visibili durante l'esecuzione del debug post-mortem tramite il caricamento di un dump di arresto anomalo in Visual Studio.
-* I nomi dei thread sono visibili anche quando si usano altri strumenti, ad esempio il debugger [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) e [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Performance Analyzer.
+* I nomi dei thread sono visibili anche quando si usano altri strumenti, ad esempio il debugger [WinDbg](/windows-hardware/drivers/debugger/debugger-download-tools) e [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) Performance Analyzer.
 
 Avvertenze:
 * I nomi dei thread sono visibili solo in Visual Studio 2017 versione 15,6 e versioni successive.

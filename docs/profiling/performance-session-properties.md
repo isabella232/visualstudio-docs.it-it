@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798369"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910153"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
 
@@ -34,17 +34,17 @@ Queste impostazioni consentono di selezionare il metodo di profilatura, aggiunge
 
 Per altre informazioni, vedere:
 
-[Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
+[Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
 
 [Raccogliere dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
-- [Procedura: Impostare le opzioni relative ai nomi file dei dati sulle prestazioni](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
 Queste impostazioni consentono di effettuare una selezione da un elenco di file binari e specificare il relativo ordine di avvio.
 
-Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)
+Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>Campionamento
 
@@ -61,7 +61,7 @@ Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](..
 ## <a name="binary"></a>Binario
 Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di *My.DLL* e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di *My.DLL* denominata *My.Orig.DLL*. *My.DLL* viene quindi modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.
 
-Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md)
+Per altre informazioni, vedere[Procedura: Specificare l'inizio del file binario](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Interazioni tra livelli
 
@@ -73,7 +73,7 @@ Queste impostazioni consentono di raccogliere i dati sulle prestazioni per il co
 
 Per altre informazioni, vedere:
 
-[Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
+[Procedura: Profilare codice JavaScript nelle pagine Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
 [Procedura: Specificare comandi pre- e post-strumentazione](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
@@ -85,7 +85,7 @@ Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori CPU]
 
 ## <a name="windows-events"></a>Eventi di Windows
 
-Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione`/calltrace` dello strumento da riga di comando *VSPerfReport.exe*. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](http://go.microsoft.com/fwlink/?linkid=90752) (Informazioni su Event Tracing).
+Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione`/calltrace` dello strumento da riga di comando *VSPerfReport.exe*. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](/windows/win32/etw/about-event-tracing) (Informazioni su Event Tracing).
 
 Per altre informazioni, vedere:
 
@@ -105,7 +105,7 @@ Queste impostazioni consentono di aggiungere opzioni al processo di strumentazio
 
 Per altre informazioni, vedere:
 
-[Procedura: Specificare il runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Procedura: Specificare il Runtime di .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
 [Procedura: Specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)
 

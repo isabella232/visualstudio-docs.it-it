@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ecd968c5be30e50550fb29a5c44cb7065630a63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 46dfce74e02faffb90cf5984651968633c27a16d
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442344"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910614"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Tempo CPU GC eccessivo
 
@@ -25,7 +25,7 @@ ms.locfileid: "63442344"
 |-|-|
 |ID regola|DA0024|
 |Category|Uso di .NET Framework|
-|Metodo di profilatura|Tutti|
+|Metodo di profilatura|All|
 |Messaggio|% tempo in GC elevata. Indica un sovraccarico di Garbage Collection.|
 |Tipo regola|Avviso|
 
@@ -42,9 +42,9 @@ ms.locfileid: "63442344"
  Questa regola viene attivata quando la quantità di tempo impiegato per l'operazione di Garbage Collection è eccessivamente elevata rispetto al tempo di elaborazione totale dell'applicazione.
 
 > [!NOTE]
-> Quando la percentuale di tempo impiegato per l'operazione di Garbage Collection è significativa ma non eccessiva rispetto al tempo di elaborazione totale dell'applicazione, viene attivato l'avviso [DA0023: Tempo CPU GC elevato](../profiling/da0023-high-gc-cpu-time.md) anziché la regola.
+> Quando la percentuale di tempo impiegato per l'operazione di Garbage Collection è significativo ma non eccessivo rispetto al tempo di elaborazione totale dell'applicazione, viene attivato l'avviso [DA0023: Tempo CPU GC elevato](../profiling/da0023-high-gc-cpu-time.md) anziché la regola.
 
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
  Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla [visualizzazione Contrassegni](../profiling/marks-view.md) dei dati di profilatura. Individuare la colonna **Memoria CLR .NET\\% Time in GC** (% tempo in GC). Determinare se sono presenti fasi specifiche di esecuzione del programma in cui il sovraccarico di Garbage Collection della memoria gestita è maggiore rispetto ad altre fasi. Confrontare i valori di % Time in GC (% tempo in GC) con la frequenza di Garbage Collection indica nei valori **Raccolte di generazione 0**, **Raccolte di generazione 1**, **Raccolte di generazione 2**.
 
- Il valore % Time in GC (% tempo in GC) tenta di segnalare la quantità di tempo impiegato da un'applicazione di eseguire operazioni di Garbage Collection proporzionale alla quantità totale di elaborazione. Tenere presente che esistono circostanze in cui il valore % Time in GC (% tempo in GC) può segnalare un valore elevato, ma non a causa di un numero eccessivo di operazioni di Garbage Collection. Per altre informazioni sul modo in cui viene calcolato il valore % Time in GC (% tempo in GC), vedere [Difference Between Perf Data Reported by Different Tools - 4](http://go.microsoft.com/fwlink/?LinkId=177863) (Differenza tra i dati delle prestazioni indicati da strumenti diversi - 4) in **Maoni's Weblog** (Blog Web di Maoni) in MSDN. Se si verificano errori di pagina o l'applicazione viene superata da altre operazioni con priorità superiore sul computer durante l'operazione di Garbage Collection, il valore di % Time in GC (% tempo in GC) rifletterà tali ritardi aggiuntivi.
+ Il valore % Time in GC (% tempo in GC) tenta di segnalare la quantità di tempo impiegato da un'applicazione di eseguire operazioni di Garbage Collection proporzionale alla quantità totale di elaborazione. Tenere presente che esistono circostanze in cui il valore % Time in GC (% tempo in GC) può segnalare un valore elevato, ma non a causa di un numero eccessivo di operazioni di Garbage Collection. Per altre informazioni sul modo in cui viene calcolato il valore % Time in GC (% tempo in GC), vedere [Difference Between Perf Data Reported by Different Tools - 4](https://devblogs.microsoft.com/maoni/archive/difference-between-perf-data-reported-by-different-tools-4.aspx) (Differenza tra i dati delle prestazioni indicati da strumenti diversi - 4) in **Maoni's Weblog** (Blog Web di Maoni) in MSDN. Se si verificano errori di pagina o l'applicazione viene superata da altre operazioni con priorità superiore sul computer durante l'operazione di Garbage Collection, il valore di % Time in GC (% tempo in GC) rifletterà tali ritardi aggiuntivi.

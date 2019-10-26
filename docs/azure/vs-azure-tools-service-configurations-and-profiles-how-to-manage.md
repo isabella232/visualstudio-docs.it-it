@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b91e2df31ae0e188d0d1e0e3076ab410bf8c2296
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919838"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911690"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Come gestire le configurazioni e i profili dei servizi
 ## <a name="overview"></a>Panoramica
@@ -25,7 +25,7 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
 
 È possibile aggiungere, eliminare, rinominare e modificare queste configurazioni del servizio in base alle proprie esigenze. È possibile gestire queste configurazioni del servizio da Visual Studio, come indicato nella figura seguente.
 
-![Gestisci configurazioni di servizio](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
+![Gestisci configurazioni servizio](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
 È inoltre possibile aprire la finestra di dialogo **Gestisci configurazioni** dalle pagine delle proprietà del ruolo. Per accedere alle proprietà per un ruolo nel progetto Azure, aprire il menu di scelta rapida per il ruolo in questione, quindi scegliere **Proprietà**. Nella scheda **Impostazioni** espandere l'elenco **Configurazione del servizio**, quindi fare clic su **Gestisci** per aprire la finestra di dialogo **Gestisci configurazioni**.
 
@@ -56,7 +56,7 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
     Il nome del file di configurazione del servizio viene modificato nel progetto Azure in Esplora soluzioni.
 
 ### <a name="to-change-a-service-configuration"></a>Per modificare una configurazione del servizio
-* Se si vuole modificare una configurazione del servizio, aprire il menu di scelta rapida di un ruolo specifico da modificare in un progetto Azure, quindi selezionare **Proprietà**. Vedere [Procedura: Configurare i ruoli per un servizio cloud di Azure con Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) per altre informazioni.
+* Se si vuole modificare una configurazione del servizio, aprire il menu di scelta rapida di un ruolo specifico da modificare in un progetto Azure, quindi selezionare **Proprietà**. Per altre informazioni, vedere [procedura: configurare i ruoli per un servizio cloud di Azure con Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) .
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Effettuare diverse combinazioni di impostazioni usando i profili
 Mediante i profili è possibile popolare automaticamente la **Pubblicazione guidata** con diverse combinazioni di impostazioni usate per scopi differenti. Ad esempio, è possibile definire un profilo per eseguire il debug e uno per le build di rilascio. In questo caso, nel profilo **Debug** sarà abilitato **IntelliTrace** e sarà selezionata la configurazione **Debug**, mentre nel profilo **Rilascio** sarà disabilitato **IntelliTrace** e sarà selezionata la configurazione **Rilascio**. È anche possibile usare diversi profili per distribuire un servizio mediante un account di archiviazione diverso.
@@ -78,7 +78,7 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
 
     Il nuovo profilo viene visualizzato nell'elenco Profilo di destinazione.
 6. Nell'elenco **Profilo di destinazione** , selezionare il profilo appena creato. Le impostazioni della pubblicazione guidata vengono popolate in base alle opzioni relative al profilo selezionato.
-7. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi personalizzare le impostazioni per il profilo. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+7. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi personalizzare le impostazioni per il profilo. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 8. Dopo avere personalizzato le impostazioni, selezionare **Avanti** per tornare alla pagina Impostazioni. Il profilo viene salvato quando si pubblica il servizio con queste impostazioni o se si seleziona **Salva** accanto all'elenco dei profili.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Per rinominare o eliminare un profilo
@@ -91,9 +91,9 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
 ### <a name="to-change-a-profile"></a>Per modificare un profilo
 1. Aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Pubblica**.
 2. Nell'elenco **Profilo di destinazione** , selezionare il profilo da modificare.
-3. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi modificare le impostazioni desiderate. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+3. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi modificare le impostazioni desiderate. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 4. Dopo avere modificato le impostazioni, selezionare **Avanti** per tornare alla pagina **Impostazioni**.
 5. (Facoltativo) Selezionare **Pubblica** per pubblicare il servizio cloud usando le nuove impostazioni. Se per il momento non si vuole pubblicare il servizio cloud e si chiude la pubblicazione guidata, Visual Studio richiede se si vogliono salvare le modifiche apportate al profilo.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per informazioni sulla configurazione di altre parti del progetto Azure da Visual Studio, vedere [Configurazione di un progetto Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075).
+Per informazioni sulla configurazione di altre parti del progetto Azure da Visual Studio, vedere [Configurazione di un progetto Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).

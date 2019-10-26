@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62d4e2431ab2dbc2ca74944ac1717fe6c3169287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4dad42d9bd4919e90f3ef3bd84ee156cd510e311
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440101"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910237"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 L'opzione **Events** di *VSPerfCmd.exe* controlla la registrazione di Event Tracing for Windows (ETW). I dati ETW vengono salvati in un file ETL separato dal file di dati del profiler. I dati possono essere visualizzati in un report usando il comando di [VSPerfReport](../profiling/vsperfreport.md) /summary: ETW.
@@ -59,7 +59,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 
  Si noti che il provider del Kernel può solo essere abilitato. Non può essere disattivato, né i relativi flag possono essere modificati, finché il monitor non viene chiuso.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 > [!NOTE]
 > Quando sono abilitati gli eventi ETW di CLR i dati di avvio aggiuntivi vengono raccolti anche nel report della visualizzazione tracce. Per evitare che gli eventi di avvio vengano visualizzati nel report, usare il comando seguente:
@@ -69,7 +69,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```
 
 > [!IMPORTANT]
-> Se non si escludono gli eventi di avvio, poiché non sono elencati nel file MOF (Managed Object Format), tali eventi vengono visualizzati come GUID nel report. Per altre informazioni, vedere la pagina nel sito Web Microsoft relativa all' [File di esempio Managed Object Format (MOF)](http://go.microsoft.com/fwlink/?linkid=37118).
+> Se non si escludono gli eventi di avvio, poiché non sono elencati nel file MOF (Managed Object Format), tali eventi vengono visualizzati come GUID nel report. Per altre informazioni, vedere la pagina [File di esempio Managed Object Format (MOF)](https://msdn.microsoft.com/library/default.aspx) nel sito Web Microsoft.
 
 ## <a name="see-also"></a>Vedere anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)

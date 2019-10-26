@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128228"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910351"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
@@ -40,13 +40,13 @@ Lo strumento **Utilizzo memoria** può essere eseguito con o senza debugger. Le 
 
 1. Selezionare **Utilizzo memoria**, quindi selezionare **Avvia**.
 
-   ![Avviare una sessione di diagnostica con lo strumento Utilizzo memoria](../profiling/media/memuse_start_diagnosticssession.png "Avviare una sessione di diagnostica con lo strumento Utilizzo memoria")
+   ![Avviare una sessione di diagnostica utilizzo memoria](../profiling/media/memuse_start_diagnosticssession.png "Avviare una sessione di diagnostica con lo strumento Utilizzo memoria")
 
 ### <a name="monitor-memory-use"></a>Monitorare l'uso della memoria
 
 Quando si avvia una sessione di diagnostica, l'app viene avviata e nella finestra **Strumenti di diagnostica** viene visualizzato un grafico della sequenza temporale dell'uso della memoria dell'app.
 
-![Pagina delle informazioni generali dello strumento Utilizzo memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Pagina Panoramica utilizzo memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 Il grafico della sequenza temporale mostra le fluttuazioni di memoria durante l'esecuzione dell'app. Eventuali picchi nel grafico in genere indicano che alcune stringhe di codice stanno raccogliendo o creando dati, per poi rimuoverli al termine del processo. Picchi significativi indicano aree che potrebbero essere ottimizzate. Più preoccupante sarebbe un aumento del consumo di memoria che non torna ai valori normali, perché può indicare un uso della memoria non efficiente o addirittura una perdita di memoria.
 
@@ -60,13 +60,13 @@ Per raccogliere gli snapshot, scegliere **Crea snapshot** quando si vogliono acq
 
 Per arrestare una sessione di monitoraggio senza creare un report, chiudi semplicemente la finestra di diagnostica. Per generare un report al termine della raccolta o della creazione di snapshot, selezionare **Arresta raccolta**.
 
-![Arresta raccolta](../profiling/media/memuse__stopcollection.png "Arresta raccolta")
+![Interrompi raccolta](../profiling/media/memuse__stopcollection.png "Arresta raccolta")
 
 ## <a name="memory-usage-reports"></a>Report sull'utilizzo della memoria
 
 Una volta completata la raccolta dei dati, lo strumento **Utilizzo memoria** arresta l'app e visualizza la pagina di panoramica **Utilizzo memoria**.
 
-![Pagina di panoramica Utilizzo memoria](../profiling/media/memuse__reportoverview1.png "Pagina di panoramica Utilizzo memoria")
+![Pagina Panoramica utilizzo memoria](../profiling/media/memuse__reportoverview1.png "Pagina di panoramica Utilizzo memoria")
 
 ### <a name="BKMK_Memory_Usage_snapshot_views"></a> Snapshot di Utilizzo memoria
 
@@ -74,7 +74,7 @@ I numeri dei riquadri **Snapshot** mostrano i byte e gli oggetti in memoria quan
 
 I numeri sono collegamenti che aprono visualizzazioni report dettagliate di **Utilizzo memoria** in nuove finestre di Visual Studio. Un [report dettagli dello snapshot](#snapshot-details-reports) mostra i tipi e le istanze in uno snapshot. Un [report differenze degli snapshot](#snapshot-difference-diff-reports) confronta i tipi e le istanze in due snapshot.
 
-  ![Collegamenti delle visualizzazioni snapshot](../profiling/media/memuse__snapshotview_numbered.png "Collegamenti delle visualizzazioni snapshot")
+  ![Collegamenti alla visualizzazione snapshot](../profiling/media/memuse__snapshotview_numbered.png "Collegamenti della visualizzazione Snapshot")
 
 |||
 |-|-|
@@ -87,7 +87,7 @@ I numeri sono collegamenti che aprono visualizzazioni report dettagliate di **Ut
 
 <a name="BKMK_Snapshot_report_trees"></a> Quando si seleziona uno dei collegamenti dello snapshot nella pagina di panoramica **Utilizzo di memoria**, un report snapshot viene aperto in una nuova pagina.
 
-![Report snapshot dello strumento Utilizzo memoria](../profiling/media/memuse_snapshotreport_all.png "Report snapshot dello strumento Utilizzo memoria")
+![Report snapshot utilizzo memoria](../profiling/media/memuse_snapshotreport_all.png "Report snapshot Utilizzo memoria")
 
 In un report snapshot è possibile espandere le voci **Tipo di oggetto** per visualizzare le voci figlio. I nomi di istanza sono ID univoci generati dallo strumento Utilizzo memoria.
 
@@ -126,7 +126,7 @@ Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo d
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Albero Heap gestito (report dettagli dello snapshot)
  Nell'albero **Heap gestito** sono elencati i tipi di oggetti contenuti in memoria. Espandere un nome di tipo per visualizzare le dieci istanze più grandi del tipo, ordinate in base alla dimensione. Selezionare un tipo o un'istanza per visualizzare gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
 
- ![Albero Heap gestito](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Albero Heap gestito")
+ ![Albero heap gestito](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Albero Heap gestito")
 
 L'albero **Heap gestito** di un report dettagli dello snapshot include le colonne seguenti:
 
@@ -143,12 +143,12 @@ L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferim
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**.
 
-![Albero Percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Albero Percorsi della radice per i tipi")
+![Albero percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Albero percorsi della radice per i tipi")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report dettagli dello snapshot)
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
-![Albero Oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Albero Oggetti a cui si fa riferimento per le istanze")
+![Albero oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Albero oggetti a cui si fa riferimento per le istanze")
 
 Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** non comprende la colonna **Conteggio riferimenti**.
 
@@ -172,7 +172,7 @@ Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo d
 
  Nell'albero **Heap gestito** sono elencati i tipi di oggetti contenuti in memoria. Puoi espandere un nome di tipo per visualizzare le dieci istanze più grandi del tipo, ordinate in base alla dimensione. Selezionare un tipo o un'istanza per visualizzare gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
 
- ![Albero Heap gestito per un tipo nel report delle differenze](../profiling/media/memuse_snapshotdiff_type_heap.png "Albero Heap gestito per un tipo nel report delle differenze")
+ ![Albero heap gestito per un tipo nel report delle differenze](../profiling/media/memuse_snapshotdiff_type_heap.png "Albero Heap gestito per un tipo nel report delle differenze")
 
 L'albero **Heap gestito** di un report differenze dello snapshot include le colonne seguenti:
 
@@ -193,13 +193,13 @@ L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferim
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**. La differenza di numero rispetto allo snapshot precedente è indicata nella colonna **Diff. conteggio riferimenti**.
 
- ![Albero Percorsi della radice in un report delle differenze](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero Percorsi della radice in un report delle differenze")
+ ![Albero percorsi della radice in un rapporto diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero percorsi della radice in un rapporto diff")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report differenze degli snapshot)
 
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
-![Tipi a cui si fa riferimento in un report delle differenze](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report delle differenze")
+![Tipi a cui si fa riferimento in un report diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report diff")
 
 Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)** , **Dimensione inclusiva (byte)** e **Modulo**.
 
@@ -219,4 +219,4 @@ Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapsho
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnostica dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio)
+- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/) (Diagnostica dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio)

@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745313"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910321"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
 
 È possibile eseguire la profilatura sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento degli strumenti di profilatura di Visual Studio. Per altre informazioni su HPC, vedere [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) nel sito Web Microsoft.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le operazioni seguenti:
 
-- Installare Microsoft HPC Pack 2008 nello stesso computer di Visual Studio. Il computer non deve far parte del cluster HPC. È possibile installare HPC Pack nell'[Area download Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).
+- Installare Microsoft HPC Pack 2008 nello stesso computer di Visual Studio. Il computer non deve far parte del cluster HPC. È possibile installare HPC Pack nell'[Area download Microsoft](https://www.microsoft.com/download/details.aspx?id=4812).
 
 - Installare .NET Framework 4 e la versione autonoma degli strumenti di profilatura sul nodo di calcolo HPC. I programmi di installazione per .NET Framework e per il profiler autonomo sono disponibili nel supporto di installazione di Visual Studio. **Nota** È necessario riavviare il computer dopo aver installato .NET Framework e prima di installare gli strumenti di profilatura.
 
@@ -124,7 +124,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 ### <a name="hpc-launch-properties"></a>Proprietà avvio HPC
 
-|Proprietà|Description|
+|proprietà|Descrizione|
 |--------------|-----------------|
 |**Nodo head**|Specifica il computer che funge da nodo head HPC nell'esecuzione della profilatura.|
 |**Numero di processi**|Specifica il numero di istanze dell'applicazione da eseguire nell'applicazione profilata.|
@@ -135,7 +135,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 ### <a name="advanced-properties"></a>Proprietà avanzate
 
-| Proprietà | Description |
+| proprietà | Descrizione |
 |---------------------------------------| - |
 | **Nome progetto** | Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] corrente. |
 | **Esegui pulizia all'arresto del profiler** | Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE. |

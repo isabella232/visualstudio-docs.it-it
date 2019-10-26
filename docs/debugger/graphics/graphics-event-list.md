@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735554"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911497"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.
@@ -88,7 +88,7 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Eventi definiti dall'utente in Direct3D 11 e versioni precedenti
  Per creare gruppi e marcatori in Direct3D 11 o versione precedente, usare le API descritte in questa sezione. La tabella di seguito contiene un riepilogo delle API che è possibile usare per versioni diverse di Direct3D 11 e versioni precedenti di Direct3D.
 
-|Descrizione API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Famiglia D3DPerf_ API (Direct3D 11.0 e precedenti)|
+|Descrizione API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11.1)|Famiglia D3DPerf_ API (Direct3D 11.0 e precedenti)|
 |---------------------| - | - | - |
 |Iniziare un gruppo di eventi|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |Terminare un gruppo di eventi|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Cronologia risorse
-Visual Studio 2017 e versioni successive contengono la finestra **Cronologia risorse** .  Selezionando l'icona espressioni di controllo ![watch icona ](media/gfx_watch.png) accanto a una voce nella finestra **elenco eventi** verrà visualizzata la finestra **Cronologia risorse** mostrata di seguito:
+Visual Studio 2017 e versioni successive contengono la finestra **Cronologia risorse** .  Selezionando l'icona espressioni di controllo ![icona espressioni di controllo](media/gfx_watch.png) accanto a una voce nella finestra **elenco eventi** verrà visualizzata la finestra **Cronologia risorse** mostrata di seguito:
 
 ![Cronologia risorse](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ Questa finestra consente di visualizzare la cronologia dell'elemento selezionato
 |-----------| - |
 | **Type** | Mostra il tipo di voce, in genere *creazione*, *lettura* e *scrittura*. |
 | **Visualizzazione** | Mostra un'anteprima della risorsa in un momento specifico.  Fare doppio clic sull'anteprima per aprire una visualizzazione dettagli della risorsa in quel momento. |
-| **Event** | Mostra la chiamata al metodo che ha generato l'evento.  È possibile visualizzare qualsiasi cronologia aggiuntiva sui singoli elementi selezionando l'icona a espressioni di controllo ![watch icona ](media/gfx_watch.png) nella riga appropriata.  Per ulteriori informazioni, è inoltre possibile selezionare qualsiasi elemento disegnato con testo blu, ad esempio `m_commandList` nella schermata precedente. |
+| **Event** | Mostra la chiamata al metodo che ha generato l'evento.  È possibile visualizzare qualsiasi cronologia aggiuntiva sui singoli elementi selezionando l'icona a espressioni di controllo ![icona espressioni di controllo](media/gfx_watch.png) nella riga appropriata.  Per ulteriori informazioni, è inoltre possibile selezionare qualsiasi elemento disegnato con testo blu, ad esempio `m_commandList` nella schermata precedente. |
 
 <!-- /VERSIONLESS -->
 

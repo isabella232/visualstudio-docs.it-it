@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 805fa62b003559eb92c0531b0f4df7133cf0cdf5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306155"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911984"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Eseguire l'override di Equals() per i tipi di valore
 
@@ -26,7 +26,7 @@ ms.locfileid: "72306155"
 |-|-|
 |ID regola|DA0006|
 |Category|Uso di .NET Framework|
-|Metodi di profilatura|campionamento|
+|Metodi di profilatura|Campionamento|
 |Messaggio|Eseguire l'override di Equals e dell'operatore di uguaglianza sui tipi di valore.|
 |Tipo di messaggio|Avviso|
 
@@ -36,7 +36,7 @@ ms.locfileid: "72306155"
 ## <a name="rule-description"></a>Descrizione della regola
  Per i tipi di valore, l'implementazione ereditata di Equals usa la libreria <xref:System.Reflection> e confronta il contenuto di tutti i campi del tipo. La libreria Reflection è onerosa dal punto di vista del calcolo, inoltre il confronto di ogni campo per determinarne l'uguaglianza potrebbe essere superfluo. Se si prevede che gli utenti confrontino o ordinino le istanze oppure le usino come chiavi di tabelle hash, il tipo di valore deve implementare Equals. Se il linguaggio di programmazione in uso supporta l'overload degli operatori, è necessario specificare anche un'implementazione degli operatori di uguaglianza e disuguaglianza.
 
- Per altre informazioni su come eseguire l'override del metodo Equals e degli operatori di uguaglianza, vedere [Linee guida per l'implementazione del metodo Equals e dell'operatore di uguaglianza (==)](http://go.microsoft.com/fwlink/?LinkId=177818).
+ Per altre informazioni su come eseguire l'override del metodo Equals e degli operatori di uguaglianza, vedere [Linee guida per l'implementazione del metodo Equals e dell'operatore di uguaglianza (==)](/dotnet/standard/design-guidelines/equality-operators).
 
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
- Per un esempio di implementazione di Equals e degli operatori di uguaglianza, vedere la regola di analisi del codice [CA1815: Eseguire l'override di Equals e dell'operatore "uguale a" sui tipi di valore](../code-quality/ca1815.md)
+ Per un esempio di implementazione di Equals e degli operatori di uguaglianza, vedere la regola di analisi del codice [CA1815: Eseguire l'override di Equals e dell'operatore " uguale a" sui tipi di valore](../code-quality/ca1815.md)

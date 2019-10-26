@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eebbdfd7774018ecf49801c6b01b5867b7bd3408
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0235cc00a740069a77afd492cd585788ea666d2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734548"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911467"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>Come è possibile eseguire il C++ debug di una violazione di accesso?
 
@@ -77,7 +77,7 @@ Se si esegue questo codice in Visual Studio 2015 Update 1, dovrebbe comparire la
 
 ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
 
-Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che sia passato in modo corretto e che non si stia creando accidentalmente una [copia superficiale](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).
+Se non è possibile determinare perché il puntatore ha causato una violazione di accesso, tracciare il codice per assicurarsi che il puntatore che provoca il problema sia stato assegnato correttamente.  Se viene passato come parametro, assicurarsi che sia passato in modo corretto e che non si stia creando accidentalmente una [copia superficiale](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Verificare quindi che i valori non vengano involontariamente modificati in qualche punto del programma creando un punto di interruzione dei dati per il puntatore in questione per assicurarsi che non venga modificato altrove nel programma. Per ulteriori informazioni sui punti di interruzione dei dati, vedere la relativa sezione in [Using Breakpoints](../debugger/using-breakpoints.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
