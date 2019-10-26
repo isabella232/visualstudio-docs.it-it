@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648713"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924522"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Connettersi ai dati in un database di Access
 
@@ -109,7 +109,7 @@ Connettersi ai database creati con Access 2000-2003 usando la procedura seguente
 
 Il set di dati appena creato è disponibile nella finestra **origini dati** . A questo punto è possibile eseguire una delle attività seguenti:
 
-- Selezionare gli elementi nella finestra **origini dati** e trascinarli nel form o nell'area di progettazione. vedere [associare Windows Forms controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) o [WPF Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview)).
+- Selezionare gli elementi nella finestra **origini dati** e trascinarli nel form o nell'area di progettazione. vedere [associare Windows Forms controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) o [WPF Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)).
 
 - Aprire l'origine dati in **Progettazione DataSet** per aggiungere o modificare gli oggetti che costituiscono il set di dati.
 
