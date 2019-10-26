@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a949c8b8e5956f9a606195671c0453bbb3689701
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: f4f12aafa8296914461e647dddc3400e399770c0
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018872"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919175"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -44,7 +44,7 @@ Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Come accedere a Visual Studio
 
-Quando si apre Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si hanno questi account Microsoft, è possibile crearne uno Microsoft gratuitamente. Vedere [Come posso iscrivermi a un account Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Quando si apre Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si hanno questi account Microsoft, è possibile crearne uno Microsoft gratuitamente. Vedere [Come posso iscrivermi a un account Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
 Selezionare quindi le impostazioni dell'interfaccia utente e il tema colori che si desidera usare in Visual Studio. Visual Studio memorizza queste impostazioni e le sincronizza tra tutti gli ambienti Visual Studio a cui si è eseguito l'accesso. Per un elenco delle impostazioni sincronizzate, vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). È possibile modificare in seguito le impostazioni nel menu **Strumenti** > **Opzioni** in Visual Studio.
 
@@ -62,7 +62,7 @@ A meno che non esegua la disconnessione, l'utente viene automaticamente connesso
 
 1. Al termine, scegliere il pulsante **Salva modifiche**.
 
-## <a name="troubleshooting"></a>Risoluzione dei problemi
+## <a name="troubleshooting"></a>Troubleshooting
 
 Se si verificano problemi durante l'accesso, vedere la pagina [per ricevere assistenza](https://visualstudio.microsoft.com/subscriptions/support/).
 

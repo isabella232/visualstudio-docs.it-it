@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 79b369fdc4bed2489b997e59215264ebaca03c74
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
-ms.translationtype: HT
+ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64556757"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919078"
 ---
 # <a name="visual-studio-feedback-options"></a>Opzioni per commenti e suggerimenti in Visual Studio
 
@@ -48,7 +48,7 @@ Visual Studio apre quindi la pagina [Developer Community](https://developercommu
 
 ::: moniker-end
 
-## <a name="make-a-suggestion"></a>Inviare un suggerimento
+## <a name="make-a-suggestion"></a>Suggerimento
 
 ::: moniker range="vs-2019"
 
@@ -75,7 +75,7 @@ Le versioni non definitive di Visual Studio includono una voce di menu **Valuta 
 È possibile contribuire a migliorare la documentazione in due modi:
 
 * Fare clic sul pulsante per l'invio di commenti e suggerimenti **Questa pagina è stata utile?** nella parte inferiore della pagina. Questo pulsante si trova in tutte le pagine della documentazione.
-* Usare il proprio account GitHub per fornire commenti e suggerimenti per qualsiasi pagina su Visual Studio in [docs.microsoft.com](https://docs.microsoft.com/visualstudio/). A tale scopo, fare clic sul pulsante **Invia feedback su** > **Questa pagina**, anch'esso disponibile nella parte inferiore della pagina.
+* Usare il proprio account GitHub per fornire commenti e suggerimenti per qualsiasi pagina su Visual Studio in [docs.microsoft.com](/visualstudio/). A tale scopo, fare clic sul pulsante **Invia feedback su** > **Questa pagina**, anch'esso disponibile nella parte inferiore della pagina.
 
 ## <a name="contact-microsoft-support"></a>Contattare il supporto tecnico Microsoft
 

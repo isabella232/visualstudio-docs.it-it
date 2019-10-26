@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: c9a89155b81b88f46f4849ce8d739772fd6760fe
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: a9e111f904f0c017dbbe4487401e8e3c363931ac
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451185"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919209"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 
@@ -37,7 +37,7 @@ Di seguito sono elencate alcune cause comuni degli errori di sintassi XAML:
 
 - È presente un elemento XAML in una posizione non consentita.
 
-Per ulteriori informazioni sulla sintassi XAML comune, vedi [Guida alla sintassi XAML di base](http://go.microsoft.com/fwlink/?LinkId=329942).
+Per ulteriori informazioni sulla sintassi XAML comune, vedi [Guida alla sintassi XAML di base](/previous-versions/windows/apps/hh700351(v=win.10)).
 
 È inoltre possibile identificare e risolvere semplici errori di sintassi di code-behind, errori di compilazione ed errori di run-time in Blend. Ricorda, tuttavia, che gli errori code-behind sono più facilmente individuabili e risolvibili in Visual Studio.
 
@@ -119,8 +119,8 @@ Quando vengono rilevati errori XAML, nell'area di progettazione viene visualizza
 
 È possibile aprire i progetti Blend in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto di Blend in Visual Studio, fare clic con il pulsante destro del mouse sul progetto nel pannello **progetti** , quindi scegliere **modifica in Visual Studio**. Al termine della sessione di debug in Visual Studio, premere CTRL + MAIUSC + S per salvare tutte le modifiche e quindi tornare a Blend. Ti verrà chiesto di ricaricare il progetto. Fare clic su **Sì per** continuare a lavorare in Blend.
 
-Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app UWP in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).
+Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app UWP in Visual Studio](/visualstudio/debugger/debug-store-apps-in-visual-studio?view=vs-2015&redirectedfrom=MSDN).
 
 ## <a name="get-help"></a>Ottenere assistenza
 
-Per ulteriori informazioni sul debug dell'app Blend, è possibile cercare i post correlati al problema o pubblicare una domanda nei [Forum della community delle app UWP](http://go.microsoft.com/fwlink/?LinkId=280308) .
+Per ulteriori informazioni sul debug dell'app Blend, è possibile cercare i post correlati al problema o pubblicare una domanda nei [Forum della community delle app UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) .
