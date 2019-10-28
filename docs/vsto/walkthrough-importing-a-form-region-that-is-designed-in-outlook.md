@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Importare un'area del modulo progettata in Outlook"
+title: "Procedura dettagliata: importare un'area del modulo progettata in Outlook"
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb4e57d1186b42ac1ed4807faf150d1af9090c69
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255570"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985443"
 ---
-# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procedura dettagliata: Importare un'area del modulo progettata in Outlook
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procedura dettagliata: importare un'area del modulo progettata in Outlook
   Questa procedura dettagliata illustra come progettare un'area del modulo in Microsoft Office Outlook e come importare l'area del modulo in un progetto di componente aggiuntivo VSTO di Outlook con la procedura guidata **Nuova area modulo** . Progettando l'area del modulo in Outlook è possibile aggiungere i controlli nativi di Outlook all'area del modulo associata ai dati di Outlook. Dopo avere importato l'area del modulo, è possibile gestire gli eventi di ogni controllo.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "71255570"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -43,9 +43,8 @@ ms.locfileid: "71255570"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] o [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
- ![collegamento al video](../vsto/media/playvideo.gif "collegamento al video") Per una dimostrazione video correlata, [vedere Ricerca per categorie: Creazione di aree del modulo di Outlook con Visual Studio 2008 ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Progettare un'area del modulo usando progettazione aree di form in Outlook
  In questo passaggio si progetterà un'area del modulo in Outlook. L'area del modulo verrà quindi salvata in un percorso facilmente accessibile e successivamente importata in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
@@ -55,7 +54,7 @@ ms.locfileid: "71255570"
 
 1. Avviare Microsoft Office Outlook.
 
-2. In Outlook, nella scheda **Sviluppatore** , fare clic **Progetta modulo**. Per altre informazioni, vedere [Procedura: Mostra la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+2. In Outlook, nella scheda **Sviluppatore** , fare clic **Progetta modulo**. Per ulteriori informazioni, vedere [procedura: visualizzare la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Nella finestra **Progetta modulo** scegliere **Attività**, quindi **Apri**.
 
@@ -124,7 +123,7 @@ ms.locfileid: "71255570"
 
 3. Salvare il progetto nella directory del progetto predefinita.
 
-     Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="import-the-form-region"></a>Importare l'area del modulo
  Usare la procedura guidata **Nuova area del modulo di Outlook** per importare l'area del modulo progettata in Outlook nel progetto di componente aggiuntivo VSTO per Outlook.
@@ -187,7 +186,7 @@ ms.locfileid: "71255570"
 
    - Aggiornamento della casella di riepilogo sull'area del modulo con lo stato di completamento corrente di ogni attività dipendente.
 
-   - Analisi del campo di testo nascosto per ottenere l'oggetto di ogni attività dipendente. Quindi individua ogni `Microsoft.Office.Interop.Outlook.TaskItem` nella cartella delle *attività* chiamando il `FindTaskBySubjectName` metodo di supporto e passando l'oggetto di ogni attività.
+   - Analisi del campo di testo nascosto per ottenere l'oggetto di ogni attività dipendente. Individua quindi ogni `Microsoft.Office.Interop.Outlook.TaskItem` nella cartella delle *attività* chiamando il metodo helper `FindTaskBySubjectName` e passando l'oggetto di ogni attività.
 
    - Aggiunta dei valori `Microsoft.Office.Interop.Outlook.TaskItem.Subject` e `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` alla casella di riepilogo dell'attività dipendente.
 
@@ -245,7 +244,7 @@ ms.locfileid: "71255570"
 ## <a name="next-steps"></a>Passaggi successivi
  È possibile trovare altre informazioni sulla personalizzazione dell'interfaccia utente di un'applicazione di Outlook negli argomenti seguenti:
 
-- Per ulteriori informazioni su come progettare l'aspetto di un'area del modulo trascinando i controlli gestiti in una finestra di progettazione [visiva, vedere Procedura dettagliata: Progettare un'area](../vsto/walkthrough-designing-an-outlook-form-region.md)del modulo di Outlook.
+- Per altre informazioni su come progettare l'aspetto di un'area del modulo trascinando i controlli gestiti in una finestra di progettazione visiva, vedere [procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Per informazioni su come personalizzare la barra multifunzione di un elemento di Outlook, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
@@ -255,8 +254,8 @@ ms.locfileid: "71255570"
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
 - [Linee guida per la creazione di aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Procedura dettagliata: Progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Azioni personalizzate nelle aree del modulo di Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Procedura: Impedisci a Outlook di visualizzare un'area del modulo](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Procedura: impedire la visualizzazione di un'area del modulo in Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

@@ -14,26 +14,23 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5487bd64e835f876141afb6657dd885c38223cc5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2c939d15375696aeef47754eec31f63d15b4371a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72719469"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982424"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su come estendere Visual Studio Integrated Development Environment (IDE).
 
 ## <a name="free-support"></a>Supporto gratuito
 
-### <a name="msdn-development-center"></a>Centro per sviluppatori MSDN
- [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?LinkID=84381) su MSDN contiene risorse che consentono di rispondere a domande su come estendere Visual Studio. Ad esempio, sono disponibili diversi collegamenti ai Blog per sviluppatori di VSIP.
-
 ### <a name="microsoft-newsgroups"></a>Newsgroup Microsoft
  I membri del team di sviluppo di Visual Studio e altri sviluppatori che estendono Visual Studio spesso partecipano al newsgroup Microsoft. public. vstudio. Extensibility. Questo newsgroup è un newsgroup gestito. Per gli abbonati MSDN universali, assicurati di registrare un alias per la posta indesiderata per consentire a Microsoft di rispondere.
 
 ### <a name="msdn-forums"></a>Forum MSDN
- I [Forum MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) forniscono un altro modo per chattare con peer ed esperti. L'interfaccia utente grafica dei forum è progettata per facilitarne l'utilizzo rispetto ai newsgroup. Il [Forum di estendibilità di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=121964) è un valido punto di partenza per la ricerca di risposte alle domande di estendibilità. Eseguire sempre la ricerca prima di porre una domanda perché qualcun altro potrebbe avere già richiesto la stessa domanda.
+ I [Forum MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) forniscono un altro modo per chattare con peer ed esperti. L'interfaccia utente grafica dei forum è progettata per facilitarne l'utilizzo rispetto ai newsgroup. Il [Forum di estendibilità di Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) è un valido punto di partenza per la ricerca di risposte alle domande di estendibilità. Eseguire sempre la ricerca prima di porre una domanda perché qualcun altro potrebbe avere già richiesto la stessa domanda.
 
 ### <a name="visual-studio-gallery"></a>Visual Studio Gallery
  Il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) è il posto per le estensioni e il codice di esempio. È possibile trovare strumenti che migliorano la produttività e l'esperienza utente con Visual Studio, le applicazioni di esempio che illustrano come usare VSPackage e il Managed Extensibility Framework (MEF) e altri tipi di esempi.
@@ -63,7 +60,7 @@ I clienti che desiderano utilizzare il [!INCLUDE[vsipsdk](../extensibility/inclu
 
 È possibile inviare al [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com)le domande sulle offerte supporto tecnico Premier insieme al programma VSIP. Le domande sul nuovo programma Partner Advantage possono essere inviate a [advantg@microsoft.com](mailto:advantg@microsoft.com).
 
-Le informazioni sulle singole richieste di supporto sono reperibili a [singole richieste di supporto](http://go.microsoft.com/fwlink/?LinkID=82385).
+Le informazioni sulle singole richieste di supporto sono reperibili a [singole richieste di supporto](https://support.microsoft.com/supportforbusiness/productselection).
 
 ## <a name="see-also"></a>Vedere anche
 

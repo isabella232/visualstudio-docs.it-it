@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Creare un'associazione tra entità | Microsoft Docs"
+title: "Procedura: creare un'associazione tra entità | Microsoft Docs"
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,56 +21,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966796"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981839"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>Procedura: Creare un'associazione tra entità
-  È possibile definire relazioni tra entità nel modello di integrazione applicativa dei dati (BDC) mediante la creazione di associazioni. Visual Studio genera i metodi che forniscono i consumer del modello con informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
+# <a name="how-to-create-an-association-between-entities"></a>Procedura: creare un'associazione tra entità
+  È possibile definire le relazioni tra entità nel modello di integrazione applicativa dei dati (Business Data Connectivity) creando associazioni. Visual Studio genera metodi che forniscono agli utenti del modello informazioni sulle singole associazioni. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
 
- È possibile creare due tipi di associazioni nella finestra di progettazione integrazione applicativa dei dati: associazioni basate sulle chiavi esterne e associazioni senza chiave esterna. Per altre informazioni, vedere [creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md).
+ È possibile creare due tipi di associazioni nella finestra di progettazione dell'integrazione applicativa dei dati: associazioni basate su chiavi esterne e associazioni di chiavi esterne. Per altre informazioni, vedere [creare un'associazione tra le entità](../sharepoint/creating-an-association-between-entities.md).
 
 ### <a name="to-create-an-association-between-entities"></a>Per creare un'associazione tra entità
 
-1. Nel **BusinessDataConnectivity** scheda della finestra del **della casella degli strumenti**, scegliere il **associazione** elemento.
+1. Nella scheda **BusinessDataConnectivity** della **casella degli strumenti**scegliere l'elemento **Association** .
 
 2. Nella finestra di progettazione dell'integrazione applicativa dei dati scegliere l'entità di origine, quindi l'entità di destinazione.
 
-     Il **Editor di associazione** viene visualizzata.
+     Verrà visualizzato l' **editor di associazione** .
 
-3. Se si desidera creare un'associazione basata su chiavi esterne, selezionare la **associazione chiave esterna** casella di controllo.
+3. Se si desidera creare un'associazione basata su chiave esterna, selezionare la casella di controllo **è associazione chiave esterna** .
 
-    1. Nel **ID origine** della colonna della **Mapping identificatori** tabella, scegliere l'identificatore accanto a ogni descrittore di tipo corrispondente visualizzato nella **campo** colonna.
+    1. Nella colonna **ID origine** della tabella **mapping identificatore** scegliere l'identificatore accanto a ogni descrittore di tipo corrispondente visualizzato nella colonna **campo** .
 
-         Ad esempio, nel **ID di origine** colonna, selezionare `ContactID` accanto al `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descrittore di tipo e il `ReadItem.salesOrder.SalesOrder.ContactID` descrittore di tipo.
+         Ad esempio, nella colonna **ID origine** selezionare `ContactID` accanto al descrittore di tipo `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` e il descrittore del tipo di `ReadItem.salesOrder.SalesOrder.ContactID`.
 
-4. Se si desidera creare un'associazione senza chiave esterna, deselezionare il **associazione chiave esterna** casella di controllo.
+4. Se si desidera creare un'associazione di chiavi esterne, deselezionare la casella di controllo **è associazione chiave esterna** .
 
-5. Fare clic sul pulsante **OK** .
+5. Fare clic sul pulsante **OK**.
 
-6. Nella finestra di progettazione integrazione applicativa dei dati, verrà visualizzata una linea che rappresenta l'associazione tra entità di origine e l'entità di destinazione.
+6. Nella finestra di progettazione dell'integrazione applicativa dei dati, viene visualizzata una riga che rappresenta l'associazione tra l'entità di origine e l'entità di destinazione.
 
-     Visual Studio aggiunge un metodo AssociationNavigator alla classe del servizio dell'entità di destinazione e la classe di servizio dell'entità di origine. Per altre informazioni sui metodi AssociationNavigator, vedere [operazioni supportate](http://go.microsoft.com/fwlink/?LinkId=169286).
+     Visual Studio aggiunge un metodo dello strumento di navigazione dell'associazione alla classe di servizio dell'entità di destinazione e alla classe di servizio dell'entità di origine. Per ulteriori informazioni sui metodi di navigazione associati, vedere [operazioni supportate](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14)).
 
-7. Nel metodo AssociationNavigator dell'entità di origine, aggiungere il codice che restituisce una raccolta di entità di destinazione.
+7. Nel metodo di associazione dello strumento di navigazione dell'entità di origine aggiungere il codice che restituisce una raccolta di entità di destinazione.
 
-8. Nel metodo AssociationNavigator dell'entità di destinazione, aggiungere il codice che restituisce l'entità di origine correlati.
+8. Nel metodo dello strumento di spostamento dell'associazione dell'entità di destinazione, aggiungere il codice che restituisce l'entità di origine correlata.
 
-     Per esempi di metodi AssociationNavigator, vedere [creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md).
+     Per esempi di metodi di associazione dello strumento di navigazione, vedere [creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md)
-- [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Procedura: Aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Procedura: Aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Procedura: Aggiungere un metodo Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md)
-- [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Procedura: Definire un'istanza del metodo](../sharepoint/how-to-define-a-method-instance.md)
-- [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
+- [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Procedura: aggiungere un metodo Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Procedura: aggiungere un metodo Deleter](../sharepoint/how-to-add-a-deleter-method.md)
+- [Procedura: aggiungere un metodo di aggiornamento](../sharepoint/how-to-add-an-updater-method.md)
+- [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Procedura: definire un'istanza di metodo](../sharepoint/how-to-define-a-method-instance.md)
+- [Procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Procedura dettagliata: creare un elenco esterno in SharePoint usando i dati aziendali](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)

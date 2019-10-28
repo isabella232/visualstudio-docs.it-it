@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 6159cd2afc5788e12a836c138ddcc1ea967a5381
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255786"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986343"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
 
-Microsoft Visual Studio e Microsoft Office includono molte funzionalità di accessibilità che consentono di compilare soluzioni personalizzate che soddisfano i requisiti di accessibilità standard. Microsoft pubblica le linee guida per l'accessibilità sul Web. Per informazioni dettagliate, vedere il [sito Web di accessibilità](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio e Microsoft Office includono molte funzionalità di accessibilità che consentono di compilare soluzioni personalizzate che soddisfano i requisiti di accessibilità standard. Microsoft pubblica le linee guida per l'accessibilità sul Web. Per informazioni dettagliate, vedere il [sito Web di accessibilità](https://www.microsoft.com/accessibility/).
 
 Nella maggior parte dei casi, i progetti di Office in Visual Studio soddisfano gli standard di accessibilità o espongono proprietà che è possibile impostare per rendere accessibili le soluzioni. Tuttavia, esistono alcune funzionalità con accessibilità limitata.
 

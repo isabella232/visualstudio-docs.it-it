@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718719"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983033"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struttura del file [Content_types].xml
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio usa il file [Content_Types]. XML per installare il pacchetto, ma non installa il file stesso.
 
 > [!NOTE]
-> Sebbene questo argomento sia valido solo per i file [Content_Type]. XML usati nei pacchetti VSIX, il tipo di file [Content_Types]. XML fa parte dello standard *OPC (Open Packaging Conventions)* . Per ulteriori informazioni, vedere [OPC: nuovo standard per la creazione di pacchetti di dati](http://go.microsoft.com/fwlink/?LinkID=148207) nel sito Web MSDN.
+> Sebbene questo argomento sia valido solo per i file [Content_Type]. XML usati nei pacchetti VSIX, il tipo di file [Content_Types]. XML fa parte dello standard *OPC (Open Packaging Conventions)* . Per ulteriori informazioni, vedere [OPC: nuovo standard per la creazione di pacchetti di dati](https://msdn.microsoft.com/magazine/cc163372.aspx) nel sito Web MSDN.
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti l'elemento radice e i relativi attributi ed elementi figlio.
@@ -102,4 +102,4 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 ## <a name="see-also"></a>Vedere anche
 - [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: nuovo standard per il packaging dei dati](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC: nuovo standard per il packaging dei dati](https://msdn.microsoft.com/magazine/cc163372.aspx)

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Contrassegnare i controlli come controlli sicuri | Microsoft Docs'
+title: 'Procedura: contrassegnare i controlli come controlli sicuri | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,104 +14,104 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 232fef4908a6168d550d510a0d753fe8e39db02b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443077"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982721"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: Contrassegnare i controlli come controlli sicuri
-  Per la sicurezza, SharePoint consente di distinguere tra i controlli Web che sono protetti dagli attacchi script injection e Web che non sono. Protetto (controlli), oppure *controlli sicuri*, sono accessibili da utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà di un elemento di progetto SharePoint o in voci di controllo sicure le **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere
+# <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: contrassegnare i controlli come controlli sicuri
+  Per la sicurezza, SharePoint distingue tra i controlli Web protetti da attacchi di script injection e Web che non lo sono. È possibile accedere ai controlli protetti o ai *controlli sicuri*da parte di utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà voci di controllo sicure di un elemento del progetto SharePoint o in **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere
 
-- [Modifica delle impostazioni Web. config](http://go.microsoft.com/fwlink/?LinkId=178965) e [la registrazione di un Assembly della Web Part come SafeControl](http://go.microsoft.com/fwlink/?LinkId=171013).
+- [le impostazioni del file Web. config cambiano](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) e [registrano un assembly Web part come controllo sicuro](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
 > [!IMPORTANT]
-> Queste procedure sono per solo a scopo illustrativo. Contrassegnare i controlli sicuri solo se si è certi che siano protetti.
+> Queste procedure sono a scopo illustrativo. Contrassegnare i controlli in modo sicuro solo se si è certi che siano protetti.
 
-## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Contrassegnare i controlli sicuri nella proprietà voci SafeControl
+## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Contrassegno di controlli sicuri nella proprietà voci di controllo sicure
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Per contrassegnare i controlli come safe o unsafe nella proprietà voci SafeControl
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Per contrassegnare i controlli come sicuri o non sicuri nella proprietà voci di controllo sicure
 
-1. Creare una soluzione di SharePoint con un progetto di Web Part visiva.
+1. Creare una soluzione di SharePoint con un progetto Web part visiva.
 
-2. Aggiungere due controlli alla Web part: una casella di testo e un pulsante. Lasciare i nomi dei valori predefiniti, TextBox1 e Button1, rispettivamente.
+2. Aggiungere due controlli alla web part, ovvero una casella di testo e un pulsante. Lasciare i nomi rispettivamente come valori predefiniti, TextBox1 e Button1.
 
-3. Aggiungere due voci per la Web part **voci di controllo sicure** proprietà. A tale scopo, scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) accanto al pulsante il **voci di controllo sicure** proprietà nel  **Proprietà** finestra.
+3. Aggiungere due voci alla proprietà delle voci di **controllo sicure** della web part. A tale scopo, scegliere il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto alla proprietà **voci di controllo sicure** nella finestra **proprietà** .
 
-     Il **voci di controllo sicure** verrà visualizzata la finestra di dialogo.
+     Verrà visualizzata la finestra di dialogo **voci di controllo sicure** .
 
-4. Nel **voci di controllo sicure** finestra di dialogo scegliere la **Add** due volte per aggiungere due voci di controllo sicure per il **membri** riquadro: uno per il pulsante e una casella di testo.
+4. Nella finestra di dialogo **voci di controllo sicure** scegliere il pulsante **Aggiungi** due volte per aggiungere due voci di controllo sicure al riquadro **membri** : una per il pulsante e una per la casella di testo.
 
-5. Scegliere la prima voce di controllo sicura e quindi modificare il valore di relativi **sicuro** proprietà **False**, la relativa **nome del tipo** proprietà **Button1**e il relativo **sicurezza Script** alla proprietà **False**.
+5. Scegliere la prima voce di controllo sicura, quindi impostare il valore della relativa proprietà **Safe** su **false**, la **proprietà nome tipo** su **Button1**e la relativa proprietà **Safe su script** su **false**.
 
-     Questo passaggio identifica il controllo pulsante come controllo di tipo unsafe.
+     Questo passaggio identifica il controllo Button come un controllo unsafe.
 
-6. Scegliere la seconda voce di controllo sicura nell'elenco. Lasciare il valore della relativa **sicuro** proprietà come **True** e impostare relativo **nome del tipo** proprietà **TextBox1** e il relativo **sicuro Script** proprietà **True**.
+6. Scegliere la seconda voce di controllo sicura nell'elenco. Lasciare **true** il valore della proprietà **Safe** e impostare la relativa proprietà **Type Name** su **textBox1** e la relativa proprietà **safe against script** su **true**.
 
-     Controllo casella di testo è ora contrassegnato come un controllo che è protetto dagli attacchi script injection.
+     Il controllo casella di testo è ora contrassegnato come controllo protetto da attacchi di script injection.
 
 7. Scegliere il pulsante **OK** per chiudere la finestra di dialogo.
 
-## <a name="marking-safe-controls-in-the-package-designer"></a>Contrassegnare i controlli sicuri nella progettazione dei pacchetti
+## <a name="marking-safe-controls-in-the-package-designer"></a>Contrassegno di controlli sicuri in Progettazione pacchetti
 
-#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Per contrassegnare i controlli come safe o unsafe nella progettazione dei pacchetti
+#### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Per contrassegnare i controlli come sicuri o non sicuri in Progettazione pacchetti
 
-1. Creare una soluzione di SharePoint con un progetto di Web Part visiva.
+1. Creare una soluzione di SharePoint con un progetto Web part visiva.
 
-2. Aggiungere due controlli alla Web part: una casella di testo e un pulsante. Lasciare i nomi dei valori predefiniti, TextBox1 e Button1, rispettivamente.
+2. Aggiungere due controlli alla web part, ovvero una casella di testo e un pulsante. Lasciare i nomi rispettivamente come valori predefiniti, TextBox1 e Button1.
 
-     Prendere nota dello spazio dei nomi del controllo perché viene utilizzato in un secondo momento.
+     Prendere nota dello spazio dei nomi del controllo perché verrà usato in un secondo momento.
 
-3. Nella barra dei menu, scegliere **compilare** > **Compila soluzione** per compilare il progetto.
+3. Nella barra dei menu scegliere **compila** > **Compila soluzione** per compilare il progetto.
 
-4. Creare un'altra soluzione di SharePoint.
+4. Creare un'altra soluzione SharePoint.
 
-5. Nella **Esplora soluzioni**, aprire il menu di scelta rapida per il *package. package* del file e quindi scegliere **aprire** per aprire la **Progettazione pacchetti**.
+5. In **Esplora soluzioni**aprire il menu di scelta rapida per il file *Package. Package* , quindi scegliere **Apri** per aprire **Progettazione pacchetti**.
 
-6. Nel **Progettazione pacchetti**, scegliere il **avanzate** scheda.
+6. In **Progettazione pacchetti**scegliere la scheda **Avanzate** .
 
-7. Sotto **Additional Assemblies**, scegliere il **Add** pulsante e quindi scegliere **Aggiungi Assembly esistente** dall'elenco.
+7. In **assembly aggiuntivi**scegliere il pulsante **Aggiungi** , quindi scegliere **Aggiungi assembly esistente** dall'elenco.
 
-8. Nel **Aggiungi Assembly esistente** finestra di dialogo scegliere i puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) accanto al pulsante  **Percorso di origine**.
+8. Nella finestra di dialogo **Aggiungi assembly esistente** scegliere il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto a **percorso di origine**.
 
-9. Scegliere l'assembly dalla soluzione di SharePoint creato nel passaggio 1 e quindi scegliere il **aperto** pulsante.
+9. Scegliere l'assembly dalla soluzione SharePoint creata nel passaggio 1, quindi scegliere il pulsante **Apri** .
 
-10. Per questo esempio, lasciare il **destinazione distribuzione** opzione GlobalAssemblyCache.
+10. Per questo esempio, lasciare l'opzione della **destinazione di distribuzione** come GlobalAssemblyCache.
 
-     Questo passaggio fa sì che l'assembly distribuire il sistema Global Assembly Cache (GAC). Se si desidera che l'assembly per la distribuzione della cartella di Web application (Bin), selezionare l'opzione corrispondente. Per altre informazioni, vedere [distribuzione di Web part in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+     Questo passaggio determina la distribuzione dell'assembly nella global assembly cache (GAC) di sistema. Se si desidera che l'assembly venga distribuito nella cartella dell'applicazione Web (bin), selezionare tale opzione. Per ulteriori informazioni, vedere [distribuzione di Web part in SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
-11. Nel **controlli sicuri** scegliere i **fare clic qui per aggiungere un nuovo elemento** pulsante.
+11. Nella casella **controlli sicuri** scegliere il pulsante **fare clic qui per aggiungere un nuovo elemento** .
 
-12. Immettere i valori per le proprietà contenute nella tabella seguente.
+12. Immettere i valori per le proprietà della tabella seguente.
 
     |Nome proprietà|Value|
     |-------------------|-----------|
-    |Spazio dei nomi|Il nome completo dello spazio dei nomi per il controllo, ad esempio **BdcModelProject1.VisualWebPart1**.|
+    |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|Button1|
-    |Nome assembly|Nome di assembly sicuro, ad esempio: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|
-    |Safe|Cancella il **sicuro** casella di controllo.|
-    |Sicurezza Script|Lasciare il **sicurezza Script** casella di controllo.|
+    |Nome assembly|Un nome di assembly sicuro, ad esempio: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
+    |Safe|Deselezionare la casella di controllo **sicurezza** .|
+    |Sicurezza dallo script|Lasciare la casella di controllo non crittografata per **script** .|
 
     > [!NOTE]
-    > Il **nome dell'Assembly** valore degli assembly aggiunti tramite il **avanzate** scheda della finestra del **Progettazione pacchetti** non è un token, deve essere un assembly con nome sicuro. Per altre informazioni, vedere [Creazione e utilizzo degli assembly con nome sicuro](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > Il valore del **nome dell'assembly** per gli assembly aggiunti tramite la scheda **Avanzate** della finestra di **progettazione del pacchetto** non può essere un token, ma deve essere un assembly con nome sicuro. Per altre informazioni, vedere [Creazione e utilizzo degli assembly con nome sicuro](/previous-versions/dotnet/netframework-4.0/xwb8f617(v=vs.100)).
 
-13. Scegliere il **scheda** tasto per creare un'altra voce di controllo sicura.
+13. Premere il tasto **Tab** per creare un'altra voce di controllo sicura.
 
-14. Scegliere il **fare clic qui per aggiungere un nuovo elemento** nuovamente clic sul pulsante.
+14. Scegliere di nuovo il pulsante **fare clic qui per aggiungere un nuovo elemento** .
 
-15. Immettere i valori per le proprietà contenute nella tabella seguente.
+15. Immettere i valori per le proprietà della tabella seguente.
 
     |Nome proprietà|Value|
     |-------------------|-----------|
-    |Spazio dei nomi|Il nome completo dello spazio dei nomi per il controllo, ad esempio **BdcModelProject1.VisualWebPart1**.|
+    |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|TextBox1|
-    |Nome assembly|Nome di assembly sicuro, ad esempio: Microsoft.Office.SharePoint.ClientExtensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c.|
-    |Safe|Selezionare il **sicuro** casella di controllo.|
-    |Sicurezza Script|Selezionare il **sicurezza Script** casella di controllo.|
+    |Nome assembly|Un nome di assembly sicuro, ad esempio: Microsoft. Office. SharePoint. ClientExtensions, Version = 14.0.0.0, Culture = neutral, PublicKeyToken = 71e9bce111e9429c.|
+    |Safe|Selezionare la casella di controllo **Safe** .|
+    |Sicurezza dallo script|Selezionare la casella di controllo protezione da **script** .|
 
-16. Scegliere il **della scheda** chiave e quindi scegliere il **OK** per chiudere la finestra di dialogo.
+16. Premere il tasto **Tab** , quindi scegliere il pulsante **OK** per chiudere la finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
-- [Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
-- [Pacchetto e distribuzione delle soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [Pacchetto e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

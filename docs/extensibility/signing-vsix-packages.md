@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08a709b50dd61beb874ea4cb80ebfb92a8fcd49e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8e2e97845c7ef17476e18e0068663772341ad8eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720044"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983118"
 ---
 # <a name="signing-vsix-packages"></a>Firma di pacchetti VSIX
 Gli assembly di estensione non devono essere firmati prima di poter essere eseguiti in Visual Studio, ma è consigliabile farlo.
@@ -30,7 +30,7 @@ Gli assembly di estensione non devono essere firmati prima di poter essere esegu
 > A partire da Visual Studio 2015, i pacchetti VSIX firmati con un valore diverso dalla crittografia SHA256 verranno identificati con una firma non valida. L'installazione VSIX non è bloccata, ma l'utente verrà avvisato.
 
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>Firma di un progetto VSIX con VSIXSignTool
- È disponibile uno strumento di firma della crittografia SHA256 disponibile in [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) in NuGet.org in [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
+ È disponibile uno strumento di firma della crittografia SHA256 disponibile in [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) in NuGet.org in [VsixSignTool](https://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
 
 #### <a name="to-use-the-vsixsigntool"></a>Per usare VSIXSignTool
 

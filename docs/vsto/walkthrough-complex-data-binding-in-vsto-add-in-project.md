@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efe99e4d12ea4ace6d6c996b816dc315c502fa47
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255556"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985489"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Procedura dettagliata: data binding complessi nel progetto di componente aggiuntivo VSTO
   È possibile associare dati a controlli host e Windows Form in progetti di componente aggiuntivo VSTO. Questa procedura dettagliata illustra come aggiungere controlli a un foglio di lavoro di Microsoft Office Excel e associare i controlli ai dati in fase di esecuzione.
@@ -34,18 +34,18 @@ ms.locfileid: "71255556"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] o [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Accesso a un'istanza in esecuzione di SQL Server 2005 o SQL Server 2005 Express con il database di esempio `AdventureWorksLT` collegato. È possibile scaricare il `AdventureWorksLT` database dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
+- Accesso a un'istanza in esecuzione di SQL Server 2005 o SQL Server 2005 Express con il database di esempio `AdventureWorksLT` collegato. È possibile scaricare il database `AdventureWorksLT` dal [repository GitHub degli esempi di SQL Server](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Per altre informazioni sul collegamento di un database, vedere gli argomenti seguenti:
 
-  - Per aggiungere un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [procedura: Alleghi un database (SQL Server Management Studio](/sql/relational-databases/databases/attach-a-database)).
+  - Per aggiungere un database usando SQL Server Management Studio o SQL Server Management Studio Express, vedere [procedura: connessione di un database (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-  - Per aggiungere un database tramite la riga di comando, vedere [procedura: Alleghi un file di database](/previous-versions/sql/)a SQL Server Express.
+  - Per aggiungere un database tramite la riga di comando, vedere [procedura: allineare un file di database a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
  Il primo passaggio consiste nel creare un progetto di componente aggiuntivo VSTO per Excel.
@@ -54,7 +54,7 @@ ms.locfileid: "71255556"
 
 1. Creare un progetto di componente aggiuntivo VSTO di Excel denominato **Popolamento di fogli di lavoro da un database**, usando Visual Basic o C#.
 
-     Per altre informazioni, vedere [Procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+     Per altre informazioni, vedere [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio apre il file `ThisAddIn.vb` o `ThisAddIn.cs` e aggiunge il progetto **Popolamento di fogli di lavoro da un database** a **Esplora soluzioni**.
 
@@ -63,7 +63,7 @@ ms.locfileid: "71255556"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Per aggiungere un set di dati tipizzato al progetto
 
-1. Se la **finestra Origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza** > **altre** > **origini dati**di Windows.
+1. Se la finestra **origini dati** non è visibile, visualizzarla nella barra dei menu scegliendo **Visualizza** > **altre** **origini dati**di Windows > .
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -83,7 +83,7 @@ ms.locfileid: "71255556"
 
    - Un set di dati tipizzato denominato `AdventureWorksLTDataSet`. Questo set di dati rappresenta i contenuti della tabella **Address (SalesLT)** nel database AdventureWorksLT.
 
-   - Oggetto TableAdapter denominato `AddressTableAdapter`. Questo TableAdapter può essere utilizzato per leggere e scrivere dati in `AdventureWorksLTDataSet`. Per altre informazioni, vedere [Panoramica di TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Oggetto TableAdapter denominato `AddressTableAdapter`. Questo TableAdapter può essere utilizzato per leggere e scrivere dati nel `AdventureWorksLTDataSet`. Per altre informazioni, vedere [Panoramica di TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Si useranno entrambi gli oggetti più avanti in questa procedura dettagliata.
 
@@ -132,12 +132,12 @@ ms.locfileid: "71255556"
 
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Procedura: Popolamento di fogli di dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Procedura: Compilare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Procedura: Popola i documenti con i dati dei servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Procedura: Compilare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Procedura: Scorrere i record del database in un foglio di foglio](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [Procedura: Aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Procedura: popolare fogli di dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Procedura: popolare documenti con dati da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Procedura: scorrere i record di un database in un foglio di foglio](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Procedura: aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Procedura dettagliata: data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Procedura dettagliata: data binding complesse in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Panoramica sull'uso dei file di database locali nelle soluzioni Office](../vsto/using-local-database-files-in-office-solutions-overview.md)

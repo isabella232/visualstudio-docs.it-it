@@ -16,17 +16,17 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748428"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985150"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 Per definire un linguaggio specifico di dominio (DSL), creare una soluzione di Visual Studio da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
 
-Se non si ha familiarità con DSLs, è consigliabile usare il **Lab strumenti DSL**, disponibile in questo sito: [SDK di visualizzazione e modellazione](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se non si ha familiarità con DSLs, è consigliabile usare il **Lab strumenti DSL**, disponibile in questo sito: [SDK di visualizzazione e modellazione](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="templates"></a>Selezione di una soluzione modello
 
@@ -607,7 +607,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
  Vedere anche [procedura: modificare lo spazio dei nomi di un Domain-Specific Language](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a>Risoluzione dei problemi
- La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sull'estendibilità degli strumenti di visualizzazione](http://go.microsoft.com/fwlink/?LinkId=186074).
+ La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sull'estendibilità degli strumenti di visualizzazione](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problema | Suggerimento |
 |-|-|

@@ -12,18 +12,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dea4b4781fd8026c29436bbd37a6bfa6824e73b3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 749b3faf938fbc862fdf9b406127c898ee6b6d98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66339487"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727567"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Questa interfaccia rappresenta una raccolta di oggetti che implementano il [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaccia.
+ Questa interfaccia rappresenta una raccolta di oggetti che implementano l'interfaccia [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .
 
 ## <a name="syntax"></a>Sintassi
 
@@ -32,31 +32,31 @@ IEnumDebugObjects : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
- L'analizzatore di espressioni implementa questa interfaccia per fornire i set di oggetti che implementano il [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaccia. Si noti che questo non è un'enumerazione standard COM a causa della presenza del [GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md) (metodo).
+ L'analizzatore di espressioni implementa questa interfaccia per fornire set di oggetti che implementano l'interfaccia [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) . Si noti che non si tratta di un'enumerazione COM standard a causa della presenza del metodo [GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md) .
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 - [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md) restituisce questa interfaccia.
 
-## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
+## <a name="methods-in-vtable-order"></a>Metodi nell'ordine vtable
  Questa interfaccia implementa i metodi seguenti.
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[avanti](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|Recupera il set successivo di [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetti dall'enumerazione.|
-|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|Ignora un determinato numero di voci.|
-|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|Reimposta l'enumerazione per la prima voce.|
+|[avanti](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|Recupera il set successivo di oggetti [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) dall'enumerazione.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|Ignora un numero specificato di voci.|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|Reimposta l'enumerazione sulla prima voce.|
 |[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|Recupera una copia dell'enumerazione corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|Recupera il numero di voci nell'enumerazione.|
 
 ## <a name="remarks"></a>Note
- Questa interfaccia consente un motore di debug enumerare un set di oggetti in una matrice.
+ Questa interfaccia consente a un motore di debug di enumerare un set di oggetti in una matrice.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: ee.h
+ Intestazione: EE. h
 
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft. VisualStudio. Debugger. Interop. dll
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

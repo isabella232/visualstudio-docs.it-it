@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di una pagina di applicazione di SharePoint | Microsoft Docs'
+title: "Procedura dettagliata: creazione di una pagina dell'applicazione SharePoint | Microsoft Docs"
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,79 +13,79 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0eaf7bda4ac4ed67dae79b8dd83bb59ba6985343
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778632"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985019"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>Procedura dettagliata: Creare una pagina dell'applicazione SharePoint
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>Procedura dettagliata: creare una pagina dell'applicazione SharePoint
 
-Una pagina dell'applicazione è un tipo speciale di una pagina ASP.NET. Le pagine dell'applicazione includono contenuto che viene unito a una pagina master di SharePoint. Per altre informazioni, vedere [creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+Una pagina dell'applicazione è un modulo specializzato di una pagina ASP.NET. Le pagine dell'applicazione contengono contenuto unito a una pagina master di SharePoint. Per ulteriori informazioni, vedere [creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
-Questa procedura dettagliata illustra come creare una pagina dell'applicazione e quindi eseguirne il debug tramite un sito di SharePoint locale. Questa pagina Mostra tutti gli elementi di ogni utente ha creato o modificato in tutti i siti nella server farm.
+In questa procedura dettagliata viene illustrato come creare una pagina dell'applicazione ed eseguirne il debug tramite un sito di SharePoint locale. In questa pagina vengono visualizzati tutti gli elementi creati o modificati da ogni utente in tutti i siti del server farm.
 
 Questa procedura dettagliata illustra le attività seguenti:
 
 - Creazione di un progetto SharePoint.
 - Aggiunta di una pagina dell'applicazione al progetto SharePoint.
 - Aggiunta di controlli ASP.NET alla pagina dell'applicazione.
-- Aggiunta di code-behind i controlli ASP.NET.
+- Aggiunta di codice dietro i controlli ASP.NET.
 - Test della pagina dell'applicazione.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Edizioni supportate di Windows e SharePoint.
 
-## <a name="create-a-sharepoint-project"></a>Creare un progetto SharePoint
+## <a name="create-a-sharepoint-project"></a>Creazione di un progetto SharePoint
 
-Creare prima di tutto una **progetto SharePoint vuoto**. In seguito aggiungerà un' **pagina dell'applicazione** elemento al progetto.
+Per prima cosa, creare un **progetto SharePoint vuoto**. Successivamente, verrà aggiunto un elemento della **pagina dell'applicazione** al progetto.
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Aprire il **nuovo progetto** finestra di dialogo espandere il **Office/SharePoint** nodo sotto il linguaggio che si desidera usare e quindi scegliere il **soluzioni SharePoint** nodo.
+2. Aprire la finestra di dialogo **nuovo progetto** , espandere il nodo **Office/SharePoint** sotto la lingua che si desidera utilizzare, quindi scegliere il nodo **soluzioni di SharePoint** .
 
-3. Nel **modelli di Visual Studio installata** riquadro, scegliere il **SharePoint 2010 - progetto vuoto** modello. Denominare il progetto **MySharePointProject**, quindi scegliere il **OK** pulsante.
+3. Nel riquadro **modelli Visual Studio installati** scegliere il modello di **progetto SharePoint 2010-vuoto** . Denominare il progetto **MySharePointProject**, quindi scegliere il pulsante **OK** .
 
-     Il **Personalizzazione guidata SharePoint** viene visualizzata. Questa procedura guidata consente di selezionare il sito che si utilizzerà per eseguire il debug del progetto e il livello di attendibilità della soluzione.
+     Viene visualizzata la **personalizzazione guidata SharePoint** . Questa procedura guidata consente di selezionare il sito che verrà utilizzato per eseguire il debug del progetto e il livello di attendibilità della soluzione.
 
-4. Scegliere il **Distribuisci come soluzione farm** pulsante di opzione e quindi scegliere il **fine** pulsante per accettare il sito di SharePoint locale predefinito.
+4. Scegliere il pulsante di opzione **Distribuisci come soluzione farm** , quindi scegliere il pulsante **fine** per accettare il sito di SharePoint locale predefinito.
 
-## <a name="create-an-application-page"></a>Creare una pagina applicazione
+## <a name="create-an-application-page"></a>Creare una pagina dell'applicazione
 
-Per creare una pagina applicazione, aggiungere un' **pagina dell'applicazione** elemento al progetto.
+Per creare una pagina dell'applicazione, aggiungere un elemento della **pagina dell'applicazione** al progetto.
 
-1. Nelle **Esplora soluzioni**, scegliere il **MySharePointProject** progetto.
+1. In **Esplora soluzioni**scegliere il progetto **MySharePointProject** .
 
 2. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-3. Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **pagina dell'applicazione (solo soluzione Farm** modello.
+3. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere la **pagina applicazione (modello solo soluzione farm** .
 
-4. Denominare la pagina **SearchItems**, quindi scegliere il **Add** pulsante.
+4. Denominare la pagina **SearchItems**, quindi scegliere il pulsante **Aggiungi** .
 
-     La finestra di progettazione di Visual Web Developer consente di visualizzare la pagina dell'applicazione in **origine** vista in cui è possibile visualizzare gli elementi HTML della pagina. La finestra di progettazione viene visualizzato il markup per diversi <xref:System.Web.UI.WebControls.Content> controlli. Ogni controllo è associato a un <xref:System.Web.UI.WebControls.ContentPlaceHolder> controllo definito nella pagina master dell'applicazione predefinito.
+     Nella finestra di progettazione di Visual Web Developer viene visualizzata la pagina dell'applicazione nella visualizzazione **origine** , in cui è possibile visualizzare gli elementi HTML della pagina. Nella finestra di progettazione viene visualizzato il markup per diversi controlli <xref:System.Web.UI.WebControls.Content>. Ogni controllo esegue il mapping a un controllo <xref:System.Web.UI.WebControls.ContentPlaceHolder> definito nella pagina master dell'applicazione predefinita.
 
 ## <a name="design-the-layout-of-the-application-page"></a>Progettare il layout della pagina dell'applicazione
 
-L'elemento pagina applicazione consente di usare una finestra di progettazione per aggiungere i controlli ASP.NET alla pagina dell'applicazione. Questa finestra di progettazione è la stessa finestra di progettazione utilizzato in Visual Web Developer. Aggiungere un'etichetta, un elenco di pulsanti di opzione e una tabella per la **origine** visualizzazione della finestra di progettazione e quindi impostare le proprietà come si farebbe quando si progetta di qualsiasi pagina ASP.NET standard.
+L'elemento della pagina dell'applicazione consente di usare una finestra di progettazione per aggiungere controlli ASP.NET alla pagina dell'applicazione. Questa finestra di progettazione è la stessa utilizzata in Visual Web Developer. Aggiungere un'etichetta, un elenco di pulsanti di opzione e una tabella alla visualizzazione **origine** della finestra di progettazione e quindi impostare le proprietà come quando si progetta una pagina ASP.NET standard.
 
 1. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
 
-2. Nel nodo Standard della **casella degli strumenti**, effettuare una delle operazioni seguenti:
+2. Nel nodo standard della **casella degli strumenti**eseguire uno dei passaggi seguenti:
 
-    - Aprire il menu di scelta rapida per il **Label** voce, scegliere **copia**, aprire il menu di scelta rapida per la riga sotto il **PlaceHolderMain** controllo nella finestra di progettazione, contenuto e quindi Scegli **Incolla**.
+    - Aprire il menu di scelta rapida per l'elemento **etichetta** , scegliere **copia**, aprire il menu di scelta rapida per la riga sotto il controllo contenuto **PlaceHolderMain** nella finestra di progettazione, quindi scegliere **Incolla**.
 
-    - Trascinare il **etichetta** articolo dalle **della casella degli strumenti** nel corpo del **PlaceHolderMain** controllo contenuto.
+    - Trascinare l'elemento **Label** dalla **casella degli strumenti** nel corpo del controllo contenuto **PlaceHolderMain** .
 
-3. Ripetere il passaggio precedente per aggiungere un **DropDownList** elemento e un **tabella** elemento per il **PlaceHolderMain** controllo contenuto.
+3. Ripetere il passaggio precedente per aggiungere un elemento **DropDownList** e un elemento della **tabella** al controllo contenuto **PlaceHolderMain** .
 
-4. Nella finestra di progettazione, modificare il valore della `Text` attributo del controllo etichetta **Mostra tutti gli elementi**.
+4. Nella finestra di progettazione modificare il valore dell'attributo `Text` del controllo etichetta in modo da **visualizzare tutti gli elementi**.
 
-5. Nella finestra di progettazione, sostituire il `<asp:DropDownList>` elemento con il codice XML seguente.
+5. Nella finestra di progettazione sostituire l'elemento `<asp:DropDownList>` con il codice XML seguente.
 
     ```xml
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"
@@ -97,23 +97,23 @@ L'elemento pagina applicazione consente di usare una finestra di progettazione p
 
 ## <a name="handle-the-events-of-controls-on-the-page"></a>Gestire gli eventi dei controlli nella pagina
 
-Gestire i controlli in una pagina dell'applicazione esattamente come si farebbe qualsiasi pagina ASP.NET. In questa procedura verrà gestito il `SelectedIndexChanged` evento dell'elenco di riepilogo a discesa.
+Gestire i controlli in una pagina dell'applicazione in modo analogo a qualsiasi pagina ASP.NET. In questa procedura verrà gestito l'evento `SelectedIndexChanged` dell'elenco a discesa.
 
-1. Nel **View** menu, scegliere **codice**.
+1. Scegliere **codice**dal menu **Visualizza** .
 
-     File di codice della pagina applicazione verrà aperto nell'Editor del codice.
+     Il file di codice della pagina dell'applicazione verrà aperto nell'editor di codice.
 
-2. Aggiungere il metodo seguente alla classe `SearchItems` . Questo codice gestisce il <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> eventi del <xref:System.Web.UI.WebControls.DropDownList> chiamando un metodo che verrà creato più avanti in questa procedura dettagliata.
+2. Aggiungere il metodo seguente alla classe `SearchItems` . Questo codice gestisce l'evento <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> della <xref:System.Web.UI.WebControls.DropDownList> chiamando un metodo che verrà creato più avanti in questa procedura dettagliata.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
 
-3. Aggiungere le istruzioni seguenti all'inizio del file di codice della pagina dell'applicazione.
+3. Aggiungere le seguenti istruzioni all'inizio del file di codice della pagina dell'applicazione.
 
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Aggiungere il metodo seguente alla classe `SearchItems` . Questo metodo scorre tutti i siti nella server farm e ricerca gli elementi creati o modificati dall'utente corrente.
+4. Aggiungere il metodo seguente alla classe `SearchItems` . Questo metodo scorre tutti i siti nella server farm e cerca gli elementi creati o modificati dall'utente corrente.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
@@ -125,33 +125,33 @@ Gestire i controlli in una pagina dell'applicazione esattamente come si farebbe 
 
 ## <a name="test-the-application-page"></a>Testare la pagina dell'applicazione
 
-Quando si esegue il progetto, viene aperto il sito di SharePoint e viene visualizzata la pagina dell'applicazione.
+Quando si esegue il progetto, viene aperto il sito di SharePoint e viene visualizzata la pagina applicazione.
 
-1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per la pagina dell'applicazione e quindi scegliere **imposta come elemento di avvio**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per la pagina applicazione, quindi scegliere **Imposta come elemento di avvio**.
 
 2. Premere **F5**.
 
-     Viene aperto il sito di SharePoint.
+     Verrà aperto il sito di SharePoint.
 
-3. Nella pagina dell'applicazione, scegliere il **modificato da me** opzione.
+3. Nella pagina applicazione scegliere l'opzione **modificato da me** .
 
-     La pagina dell'applicazione viene aggiornata e visualizza tutti gli elementi che è stato modificato in tutti i siti nella server farm.
+     La pagina dell'applicazione viene aggiornata e vengono visualizzati tutti gli elementi modificati in tutti i siti del server farm.
 
-4. Nella pagina dell'applicazione, scegliere **creati da me** nell'elenco.
+4. Nella pagina applicazione scegliere **creato dall'** utente nell'elenco.
 
-     La pagina dell'applicazione viene aggiornata e visualizza tutti gli elementi che è stato creato in tutti i siti nella server farm.
+     La pagina dell'applicazione viene aggiornata e vengono visualizzati tutti gli elementi creati in tutti i siti del server farm.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni sulle pagine dell'applicazione SharePoint, vedere [creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
+Per ulteriori informazioni sulle pagine dell'applicazione SharePoint, vedere [creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
-Ulteriori informazioni su come progettare contenuto pagina di SharePoint tramite Visual Web Designer da questi argomenti:
+Per ulteriori informazioni su come progettare il contenuto di una pagina di SharePoint utilizzando la finestra di progettazione Web visiva, vedere gli argomenti seguenti:
 
-- [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-- [Creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Creazione di controlli riutilizzabili per Web part o pagine dell'applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: Creare una pagina applicazione](../sharepoint/how-to-create-an-application-page.md)
-[applicazione layouts tipo di pagina](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Procedura: creare una pagina dell'applicazione](../sharepoint/how-to-create-an-application-page.md)
+[tipo di pagina _layouts dell'applicazione](/previous-versions/office/aa979604(v=office.14))

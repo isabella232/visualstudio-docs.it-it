@@ -1,5 +1,5 @@
 ---
-title: Estendere il servizio di linguaggio per il supporto di EditorConfig
+title: Estendi il servizio di linguaggio per supportare EditorConfig
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,40 +10,40 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c6974c7943a751f50cafb0b141ba9c1dfc85677
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 663a87ba15121896edcb4c049e7adc6b5c38492a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353502"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983110"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Supporto di EditorConfig per il servizio di linguaggio
 
-[EditorConfig](http://editorconfig.org/) file consentono di descrivere opzioni dell'editor di testo comuni, ad esempio la dimensione del rientro, in base al progetto. Per altre informazioni sul supporto di Visual Studio per i file EditorConfig, vedere [creare le impostazioni di portabili per l'editor con EditorConfig](../ide/create-portable-custom-editor-options.md).
+I file [EditorConfig](https://editorconfig.org/) consentono di descrivere le opzioni comuni dell'editor di testo, ad esempio le dimensioni del rientro, in base al progetto. Per altre informazioni sul supporto di Visual Studio per i file EditorConfig, vedere [creare le impostazioni dell'editor portatile usando EditorConfig](../ide/create-portable-custom-editor-options.md).
 
-Nella maggior parte dei casi, quando si implementa un servizio di linguaggio di Visual Studio, non è necessario alcun intervento aggiuntivo per supportare le proprietà universali di EditorConfig. L'editor principale individua e legge automaticamente il file con estensione editorconfig quando gli utenti aprono i file e imposta le opzioni appropriate per buffer di testo e visualizzazione. Tuttavia, per le modifiche, ad esempio spazi e tabulazioni, alcuni servizi di linguaggio scelgono per utilizzare un'opzione di visualizzazione testo contestuale appropriata anziché utilizzare le impostazioni globali. In questi casi il servizio di linguaggio deve essere aggiornato in modo da supportare i file EditorConfig.
+Nella maggior parte dei casi, quando si implementa un servizio di linguaggio di Visual Studio, non è necessario alcun intervento aggiuntivo per supportare le proprietà universali di EditorConfig. L'editor principale individua e legge automaticamente il file con estensione editorconfig quando gli utenti aprono i file e imposta le opzioni appropriate per buffer di testo e visualizzazione. Per le modifiche, ad esempio tabulazioni e spazi, tuttavia, alcuni servizi di linguaggio scelgono di usare un'opzione di visualizzazione di testo contestuale appropriata invece di usare le impostazioni globali. In questi casi il servizio di linguaggio deve essere aggiornato in modo da supportare i file EditorConfig.
 
-Di seguito sono le modifiche necessarie per aggiornare un servizio di linguaggio per supportare i file di EditorConfig, sostituendo globale _specifiche della lingua_ con un _contestuali_ opzione:
+Di seguito sono riportate le modifiche necessarie per aggiornare un servizio di linguaggio per supportare i file EditorConfig, sostituendo un'opzione globale _specifica del linguaggio_ con un'opzione _contestuale_ :
 
 ## <a name="indent-style"></a>Stile rientro
 
-Opzioni specifiche del linguaggio | Opzioni contestuali
+Opzioni specifiche della lingua | Opzioni contestuali
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs|!textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)<br/>!textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId)
 
 ## <a name="indent-size"></a>Dimensione rientro
 
-Opzioni specifiche del linguaggio | Opzioni contestuali
+Opzioni specifiche della lingua | Opzioni contestuali
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize|textBufferOptions.GetOptionValue(DefaultOptions.IndentSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.IndentSizeOptionId)
 
 ## <a name="tab-size"></a>Dimensione tabulazione
 
-Opzioni specifiche del linguaggio | Opzioni contestuali
+Opzioni specifiche della lingua | Opzioni contestuali
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare impostazioni portabili per l'editor con EditorConfig](../ide/create-portable-custom-editor-options.md)
-- [Estensione di editor e servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md)
+- [Creare le impostazioni dell'editor portabile usando EditorConfig](../ide/create-portable-custom-editor-options.md)
+- [Estensione dell'editor e dei servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md)

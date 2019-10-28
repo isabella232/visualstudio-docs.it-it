@@ -14,32 +14,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01417d9c08491edc882f7f758bb36e6184500e52
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810754"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985365"
 ---
 # <a name="xmlmappedrange-control"></a>Controllo XmlMappedRange
-  Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo è un intervallo che viene creato solo quando un elemento dello schema non ripetuto viene eseguito il mapping a una cella in Microsoft Office Excel. Ad esempio, quando il `maxOccurs` attributo di un elemento dello schema è uguale a 1. Dopo che Visual Studio crea l'intervallo mappato XML, è possibile programmare contrastarla direttamente senza dover passare attraverso il modello a oggetti Excel. È possibile eliminare solo un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo all'interno di Excel quando viene rimosso il mapping dell'elemento.
+  Il controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> è un intervallo creato solo quando viene eseguito il mapping di un elemento dello schema non ripetuto su una cella in Microsoft Office Excel. Ad esempio, quando l'attributo `maxOccurs` di un elemento dello schema è uguale a 1. Dopo che Visual Studio ha creato l'intervallo mappato XML, è possibile programmare direttamente su di esso senza dover attraversare il modello a oggetti di Excel. È possibile eliminare un controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> in Excel solo quando viene rimosso il mapping degli elementi.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare il mapping XML in Excel? ](http://go.microsoft.com/fwlink/?LinkID=130288).
-
 ## <a name="bind-data-to-the-control"></a>Associare dati al controllo
- Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo supporta l'associazione a un singolo campo di dati (data binding semplice). Il <xref:Microsoft.Office.Tools.Excel.ListObject> può controllo supporta l'associazione di dati complessi e viene creato automaticamente quando un elemento ripetuto dello schema è mappato a una cella. Per altre informazioni, vedere [ListObject control](../vsto/listobject-control.md).
+ Un controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> supporta l'associazione a un singolo campo dati (data binding semplice). Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> può supportare data binding complessi e viene creato automaticamente quando viene eseguito il mapping di un elemento dello schema ripetuto su una cella. Per ulteriori informazioni, vedere [controllo ListObject](../vsto/listobject-control.md).
 
- Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> è associato a un'origine dati usando il <xref:System.Windows.Forms.Control.DataBindings%2A> proprietà. Quando un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> viene aggiunto a una cella di foglio di lavoro, Visual Studio genera automaticamente un set di dati dai dati delle celle mappate e associa il controllo di set di dati. La proprietà di associazione di dati predefinito di <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> è <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>.
+ Il controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> è associato a un'origine dati utilizzando la proprietà <xref:System.Windows.Forms.Control.DataBindings%2A>. Quando un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> viene aggiunto a una cella di un foglio di controllo, Visual Studio genera automaticamente un set di dati dai dati nelle celle mappate e associa il controllo a tale set di dati. Viene <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>la proprietà data binding predefinita del <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>.
 
- Se i dati nel set di dati associato vengono aggiornati con qualsiasi meccanismo, il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo riflette le modifiche.
+ Se i dati nel set di dati associato vengono aggiornati con qualsiasi meccanismo, il controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> riflette le modifiche.
 
 ## <a name="formatting"></a>Formattazione
- È possibile applicare la stessa formattazione a un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo che è possibile applicare a un <xref:Microsoft.Office.Interop.Excel.Range>. Questo include i bordi, i tipi di carattere, il formato numero e gli stili.
+ È possibile applicare la stessa formattazione a un controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> che è possibile applicare a una <xref:Microsoft.Office.Interop.Excel.Range>. Questo include i bordi, i tipi di carattere, il formato numero e gli stili.
 
-## <a name="events"></a>Eventi
- Gli eventi disponibili per il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo sono:
+## <a name="events"></a>eventi
+ Gli eventi disponibili per il controllo <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> sono:
 
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 
@@ -58,8 +56,8 @@ ms.locfileid: "62810754"
 - <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
 ## <a name="see-also"></a>Vedere anche
-- [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
-- [Procedura: Aggiungere controlli XMLMappedRange a fogli di lavoro](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
-- [Associare dati a controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Procedura: Mappare schemi a fogli di lavoro in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
-- [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
+- [Procedura: aggiungere controlli XMLMappedRange a fogli di foglio](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)
+- [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Procedura: eseguire il mapping di schemi a fogli di fogli di Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

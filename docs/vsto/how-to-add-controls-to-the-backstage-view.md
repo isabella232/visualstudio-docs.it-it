@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere controlli alla visualizzazione Backstage '
+title: 'Procedura: aggiungere controlli alla visualizzazione Backstage '
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826781"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986015"
 ---
-# <a name="how-to-add-controls-to-the-backstage-view"></a>Procedura: Aggiungere controlli alla visualizzazione Backstage
-  È possibile usare la finestra di progettazione della barra multifunzione per aggiungere controlli al menu visualizzato quando si sceglie la **File** scheda. Quando si esegue l'applicazione, i controlli aggiunti per il **File** scheda visualizzata un gruppo denominato **Add-ins**.
+# <a name="how-to-add-controls-to-the-backstage-view"></a>Procedura: aggiungere controlli alla visualizzazione Backstage
+  È possibile utilizzare la finestra di progettazione della barra multifunzione per aggiungere controlli al menu visualizzato quando si fa clic sulla scheda **file** . Quando si esegue l'applicazione, i controlli aggiunti alla scheda **file** vengono visualizzati in un gruppo denominato **componenti**aggiuntivi.
 
- È possibile posizionare i controlli prima o dopo i controlli incorporati tramite la finestra di progettazione della barra multifunzione in Visual Studio. Un controllo incorporato è un controllo già disponibile nella visualizzazione Backstage. Se si desidera posizionare controlli prima o dopo i controlli incorporati, è necessario utilizzare un formato XML della barra multifunzione. Per altre informazioni sulle **sulla barra multifunzione (XML)**, vedere [XML della barra multifunzione](../vsto/ribbon-xml.md). Per altre informazioni sulla personalizzazione della visualizzazione Backstage, vedere [Introduzione alla visualizzazione Backstage di Office 2010 per sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizzare la visualizzazione Backstage di Office 2010 per gli sviluppatori](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Non è possibile posizionare i controlli prima o dopo i controlli incorporati tramite la finestra di progettazione della barra multifunzione in Visual Studio. Un controllo incorporato è un controllo già visualizzato nella visualizzazione Backstage. Se si desidera posizionare i controlli prima o dopo i controlli incorporati, è necessario utilizzare un XML della barra multifunzione. Per ulteriori informazioni sulla **barra multifunzione (XML)** , vedere [Ribbon XML](../vsto/ribbon-xml.md). Per ulteriori informazioni sulla personalizzazione della visualizzazione Backstage, vedere [Introduzione alla visualizzazione Backstage di office 2010 per gli sviluppatori](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) e [personalizzare la visualizzazione Backstage di Office 2010 per gli sviluppatori](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -38,13 +38,13 @@ ms.locfileid: "62826781"
 
 1. Aprire l'elemento della barra multifunzione in visualizzazione progettazione.
 
-     Per informazioni su come aggiungere un **sulla barra multifunzione (finestra di progettazione visiva)** elemento al progetto, vedere [come: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).
+     Per informazioni su come aggiungere un elemento **barra multifunzione (finestra di progettazione visiva)** al progetto, vedere [procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. Nella finestra di progettazione della barra multifunzione, scegliere il **File** scheda.
+2. Nella finestra di progettazione della barra multifunzione fare clic sulla scheda **file** .
 
-     Verrà visualizzata una finestra di progettazione menu. Questa area di progettazione non contiene tutti i controlli.
+     Viene visualizzata una finestra di progettazione dei menu. Questa area di progettazione non contiene controlli.
 
-3. Dal **controlli della barra multifunzione di Office** scheda della finestra di **della casella degli strumenti**, trascinare uno dei seguenti controlli nella finestra di progettazione menu:
+3. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti**trascinare uno dei seguenti controlli nella finestra di progettazione menu:
 
     - Button
 
@@ -54,17 +54,17 @@ ms.locfileid: "62826781"
 
     - Menu
 
-    - Separatore
+    - Separator
 
     - SplitButton
 
     - ToggleButton
 
-4. Trascinare i controlli per spostarle in una nuova posizione del menu.
+4. Trascinare i controlli per spostarli in nuove posizioni nel menu.
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
-- [Procedura: Iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [XML della barra multifunzione](../vsto/ribbon-xml.md)
+- [Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

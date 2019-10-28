@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826157"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983691"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
@@ -30,7 +30,7 @@ Questa immagine presenta Visual Studio con un progetto Python aperto e varie fin
   - Oltre a **Esplora soluzioni** è disponibile [**Ambienti Python**](managing-python-environments-in-visual-studio.md), in cui è possibile gestire i diversi interpreti Python installati nel computer.
 
   ::: moniker range=">=vs-2019"
-  - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md).
+  - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Guida introduttiva: aprire ed eseguire codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md).
   ::: moniker-end
 
 - La [finestra dell'editor](../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più utilizzati, visualizza il contenuto dei file. In questa finestra è possibile [modificare il codice Python](editing-python-code-in-visual-studio.md), spostarsi nella struttura del codice e impostare punti di interruzione durante le sessioni di debug. Con Python è anche possibile selezionare codice e premere CTRL+INVIO per eseguire il codice selezionato in una [finestra REPL interattiva](python-interactive-repl-in-visual-studio.md).
@@ -44,7 +44,7 @@ Questa immagine presenta Visual Studio con un progetto Python aperto e varie fin
 
 Visual Studio è disponibile per Windows e Mac, ma il supporto di Python è disponibile solo in Visual Studio per Windows.
 
-Sono disponibili tre edizioni di Visual Studio in Windows: Community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
+Sono disponibili tre edizioni di Visual Studio in Windows: community, Professional ed Enterprise. Vedere [Confronta gli IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare/) per informazioni sulle funzionalità supportate in ogni edizione.
 
 ## <a name="popular-productivity-features"></a>Funzionalità di produttività più note
 
@@ -94,7 +94,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
     A partire da Visual Studio 2019 è possibile aprire una cartella contenente codice Python per usufruire di funzionalità quali IntelliSense e debug, senza dover creare un progetto di Visual Studio per il codice.
 ::: moniker-end
 
-- [Collaborare usando Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+- [Collaborare usando Visual Studio](/visualstudio/liveshare/use/vs)
   
     Visual Studio Live Share consente di modificare ed eseguire il debug in collaborazione con altri utenti in tempo reale, indipendentemente dal linguaggio di programmazione in uso o dai tipi di app che si sta creando. 
 
@@ -133,7 +133,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 Per approfondire altri aspetti di Python in Visual Studio, eseguire una delle esercitazioni seguenti:
 
 > [!div class="nextstepaction"]
-> [Avvio rapido: Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Guida introduttiva: creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
 > [Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

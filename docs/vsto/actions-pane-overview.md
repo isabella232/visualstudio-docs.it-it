@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255692"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986318"
 ---
 # <a name="actions-pane-overview"></a>Panoramica del riquadro azioni
   Un riquadro azioni è un riquadro attività personalizzabile di **azioni documento** associato a una specifica Microsoft Office documento di Word o Microsoft Office cartella di lavoro di Excel. Il riquadro azioni è ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività incorporati, ad esempio il riquadro attività **origine XML** in Excel o il riquadro attività **stili e formattazione** in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.
@@ -32,8 +32,6 @@ ms.locfileid: "71255692"
 > [!NOTE]
 > Il riquadro azioni è diverso dai riquadri attività. I riquadri attività personalizzati sono associati all'applicazione e non a un documento specifico. È possibile creare riquadri attività personalizzati in componenti aggiuntivi VSTO per alcune applicazioni di Microsoft Office. Per ulteriori informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
- ![collegamento al video](../vsto/media/playvideo.gif "collegamento al video") Per una dimostrazione video correlata, [vedere Ricerca per categorie: Utilizzare i controlli WPF all'interno di un riquadro azioni di Excel ](http://go.microsoft.com/fwlink/?LinkId=132763).
-
 ## <a name="display-the-actions-pane"></a>Visualizzare il riquadro azioni
  Il riquadro azioni è rappresentato dalla classe <xref:Microsoft.Office.Tools.ActionsPane>. Quando si crea un progetto a livello di documento, un'istanza di questa classe è disponibile per il codice usando il campo `ActionsPane` della classe `ThisWorkbook` (per Excel) o `ThisDocument` (per Word) nel progetto. Per visualizzare il riquadro azioni, aggiungere un controllo Windows Form alla proprietà <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> del campo `ActionsPane`. L'esempio di codice seguente aggiunge un controllo denominato `actions` al riquadro azioni.
 
@@ -43,7 +41,7 @@ ms.locfileid: "71255692"
  Il riquadro azioni diventa visibile in fase di esecuzione non appena vi si aggiunge in modo esplicito un controllo. Dopo che il riquadro azioni viene visualizzato, è possibile aggiungere o rimuovere dinamicamente controlli in risposta alle azioni dell'utente. In genere, è necessario aggiungere il codice per visualizzare il riquadro azioni nel gestore eventi `Startup` di `ThisDocument` o `ThisWorkbook` in modo che il riquadro azioni sia visibile quando l'utente apre per la prima volta il documento. Potrebbe tuttavia essere necessario visualizzare il riquadro azioni solo in risposta all'azione di un utente nel documento. Ad esempio, è possibile aggiungere il codice all'evento `Click` di un controllo nel documento.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Aggiungere più controlli al riquadro azioni
- Quando si aggiungono più controlli al riquadro azioni, è necessario raggruppare i controlli in un controllo utente e quindi aggiungere il controllo utente alla <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà. Questo processo include i due passaggi seguenti:
+ Quando si aggiungono più controlli al riquadro azioni, è necessario raggruppare i controlli in un controllo utente e quindi aggiungere il controllo utente alla proprietà <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>. Questo processo include i due passaggi seguenti:
 
 1. Creare l'interfaccia utente del riquadro azioni aggiungendo un **controllo del riquadro azioni** o un elemento del **controllo utente** al progetto. Entrambi questi elementi includono una classe <xref:System.Windows.Forms.UserControl> personalizzata di Windows Form. Il **controllo del riquadro azioni** e gli elementi del **controllo utente** sono equivalenti; l'unica differenza è il nome.
 
@@ -54,24 +52,24 @@ ms.locfileid: "71255692"
 
 3. Aggiungere un'istanza del controllo utente personalizzato ai controlli contenuti nel campo `ActionsPane` della classe `ThisWorkbook` (per Excel) o `ThisDocument` (per Word) nel progetto.
 
-   Per esempi che illustrano questo processo in modo più dettagliato [, vedere How to: Aggiungere un riquadro azioni ai documenti di Word o alle cartelle](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)di lavoro di Excel.
+   Per esempi che illustrano questo processo in modo più dettagliato, vedere [procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
 ## <a name="hide-the-actions-pane"></a>Nascondere il riquadro azioni
- Benché la classe <xref:Microsoft.Office.Tools.ActionsPane> includa un metodo <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> e una proprietà <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, non è possibile rimuovere il riquadro azioni dall'interfaccia utente usando membri della classe <xref:Microsoft.Office.Tools.ActionsPane> stessa. La chiamata <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> al metodo o l' <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> impostazione della proprietà su **false** nasconde solo i controlli nel riquadro azioni e non nasconde il riquadro attività.
+ Benché la classe <xref:Microsoft.Office.Tools.ActionsPane> includa un metodo <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> e una proprietà <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, non è possibile rimuovere il riquadro azioni dall'interfaccia utente usando membri della classe <xref:Microsoft.Office.Tools.ActionsPane> stessa. La chiamata al metodo <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> o l'impostazione della proprietà <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> su **false** nasconde solo i controlli nel riquadro azioni; non nasconde il riquadro attività.
 
  Per nascondere il riquadro attività nella soluzione, sono disponibili diverse opzioni:
 
-- Per Word, impostare la <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> proprietà <xref:Microsoft.Office.Interop.Word.TaskPane> dell'oggetto che rappresenta il riquadro attività azioni documento su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` nel progetto.
+- Per Word, impostare la proprietà <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.TaskPane> che rappresenta il riquadro attività azioni documento su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` nel progetto.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Per Excel, impostare la <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> proprietà <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> dell'oggetto su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisWorkbook` nel progetto.
+- Per Excel, impostare la proprietà <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> dell'oggetto <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisWorkbook` nel progetto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Per Word o Excel, è possibile impostare in alternativa la <xref:Microsoft.Office.Core.CommandBar.Visible%2A> proprietà della barra dei comandi che rappresenta il riquadro attività su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` o `ThisWorkbook` nel progetto.
+- Per Word o Excel, è possibile impostare in alternativa la proprietà <xref:Microsoft.Office.Core.CommandBar.Visible%2A> della barra dei comandi che rappresenta il riquadro attività su **false**. L'esempio di codice seguente deve essere eseguito dalla classe `ThisDocument` o `ThisWorkbook` nel progetto.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -80,7 +78,7 @@ ms.locfileid: "71255692"
  Quando un utente salva il documento mentre il riquadro azioni è visibile, il riquadro azioni è visibile ogni volta che viene aperto il documento, indipendentemente dal fatto che il riquadro azioni contenga controlli. Per controllare i momenti in cui viene visualizzato, chiamare il metodo <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> del campo `ActionsPane` nel gestore eventi `Startup` di `ThisDocument` o `ThisWorkbook` per fare in modo che il riquadro azioni non sia visibile all'apertura del documento.
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>Determinare quando il riquadro azioni viene chiuso
- Quando il riquadro azioni viene chiuso, non viene generato alcun evento. Benché la classe <xref:Microsoft.Office.Tools.ActionsPane> includa un evento <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, questo evento non viene generato quando l'utente finale chiude il riquadro azioni. Al contrario, questo evento viene generato quando i controlli nel riquadro azioni sono nascosti chiamando il <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metodo o impostando la <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> proprietà su **false**.
+ Quando il riquadro azioni viene chiuso, non viene generato alcun evento. Benché la classe <xref:Microsoft.Office.Tools.ActionsPane> includa un evento <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, questo evento non viene generato quando l'utente finale chiude il riquadro azioni. Al contrario, questo evento viene generato quando i controlli nel riquadro azioni sono nascosti chiamando il metodo <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> o impostando la proprietà <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> su **false**.
 
  Quando l'utente chiude il riquadro azioni, l'utente può visualizzarlo di nuovo eseguendo una delle procedure riportate di seguito nell'interfaccia utente dell'applicazione.
 
@@ -91,20 +89,20 @@ ms.locfileid: "71255692"
 2. Nel gruppo **Mostra/Nascondi** fare clic sull'interruttore **azioni documento** .
 
 ## <a name="program-actions-pane-events"></a>Eventi del riquadro azioni programma
- È possibile aggiungere più controlli utente al riquadro azioni e quindi scrivere codice in risposta a eventi nel documento mostrando e nascondendo i controlli utente. Se si esegue il mapping di elementi XML Schema al documento, è possibile mostrare determinati controlli utente nel riquadro azioni ogni volta che il punto di inserimento si trova all'interno di uno degli elementi XML. Per altre informazioni, vedere [Procedura: Eseguire il mapping degli schemi ai documenti di Word](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) in [Visual Studio e procedura: Mappare gli schemi ai fogli di fogli di](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)Visual Studio.
+ È possibile aggiungere più controlli utente al riquadro azioni e quindi scrivere codice in risposta a eventi nel documento mostrando e nascondendo i controlli utente. Se si esegue il mapping di elementi XML Schema al documento, è possibile mostrare determinati controlli utente nel riquadro azioni ogni volta che il punto di inserimento si trova all'interno di uno degli elementi XML. Per altre informazioni, vedere [procedura: eseguire il mapping degli schemi ai documenti di Word in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) e [procedura: eseguire il mapping degli schemi ai fogli di dati all'interno di Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).
 
- È anche possibile scrivere codice per rispondere agli eventi di qualsiasi oggetto, tra cui controlli host, applicazioni o eventi del documento. Per altre informazioni, vedere [Procedura dettagliata: Programma per gli eventi di un controllo](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)NamedRange.
+ È anche possibile scrivere codice per rispondere agli eventi di qualsiasi oggetto, tra cui controlli host, applicazioni o eventi del documento. Per ulteriori informazioni, vedere [procedura dettagliata: programma per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 ## <a name="bind-data-to-controls-on-the-actions-pane"></a>Associare dati a controlli nel riquadro azioni
  I controlli nel riquadro azioni hanno le stesse caratteristiche di data binding di quelli in Windows Form. È possibile associare i controlli a origini dati come set di dati, set di dati tipizzati e XML. Per ulteriori informazioni, vedere [Data Binding e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
- È possibile associare controlli nel riquadro azioni e controlli nel documento allo stesso set di dati. Ad esempio, è possibile creare una relazione master/dettaglio tra i controlli nel riquadro azioni e i controlli nel foglio di lavoro. Per altre informazioni, vedere [Procedura dettagliata: Associare dati a controlli in un riquadro](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)azioni di Excel.
+ È possibile associare controlli nel riquadro azioni e controlli nel documento allo stesso set di dati. Ad esempio, è possibile creare una relazione master/dettaglio tra i controlli nel riquadro azioni e i controlli nel foglio di lavoro. Per ulteriori informazioni, vedere [procedura dettagliata: associare dati a controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).
 
 ## <a name="validate-data-in-actions-pane-controls"></a>Convalida dei dati nei controlli del riquadro azioni
  Se si visualizza una finestra di messaggio nel gestore eventi <xref:System.Windows.Forms.Control.Validating> di un controllo nel riquadro azioni, l'evento potrebbe essere generato una seconda volta quando lo stato attivo passa dal controllo alla finestra di messaggio. Per evitare questo problema, usare un controllo <xref:System.Windows.Forms.ErrorProvider> per visualizzare eventuali messaggi di errore di convalida.
 
 ## <a name="user-control-stacking-order"></a>Ordine di sovrapposizione del controllo utente
- Se si usano più controlli utente, è possibile scrivere codice per sovrapporre correttamente i controlli utenti nel riquadro azioni, quando è ancorato in verticale o in orizzontale. È possibile impostare l'ordine di sovrapposizione nel riquadro azioni usando l'enumerazione <xref:Microsoft.Office.Tools.StackStyle> della proprietà <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>. Per altre informazioni, vedere [Procedura: Gestire il layout di controllo nei riquadri](../vsto/how-to-manage-control-layout-on-actions-panes.md)azioni.
+ Se si usano più controlli utente, è possibile scrivere codice per sovrapporre correttamente i controlli utenti nel riquadro azioni, quando è ancorato in verticale o in orizzontale. È possibile impostare l'ordine di sovrapposizione nel riquadro azioni usando l'enumerazione <xref:Microsoft.Office.Tools.StackStyle> della proprietà <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A>. Per altre informazioni, vedere [procedura: gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  La proprietà <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> può accettare i valori dell'enumerazione <xref:Microsoft.Office.Tools.StackStyle> seguenti.
 
@@ -114,7 +112,7 @@ ms.locfileid: "71255692"
 |FromLeft|Sovrapposizione dal lato sinistro del riquadro azioni.|
 |FromRight|Sovrapposizione dal lato destro del riquadro azioni.|
 |FromTop|Sovrapposizione dall'alto del riquadro azioni.|
-|nessuno|Nessun ordine di sovrapposizione definito. L'ordine è controllato dallo sviluppatore.|
+|Nessuno|Nessun ordine di sovrapposizione definito. L'ordine è controllato dallo sviluppatore.|
 
  Il codice seguente imposta la proprietà <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> per ordinare i controlli utente dall'alto del riquadro azioni.
 
@@ -122,7 +120,7 @@ ms.locfileid: "71255692"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
 
 ## <a name="anchor-controls"></a>Ancoraggi (controlli)
- Se l'utente ridimensiona il riquadro azioni in fase di esecuzione, i controlli possono essere ridimensionati insieme al riquadro azioni. È possibile usare la proprietà <xref:System.Windows.Forms.Control.Anchor%2A> di un controllo Windows Form per ancorare i controlli al riquadro azioni. È anche possibile ancorare i controlli Windows Form nel controllo utente allo stesso modo. Per altre informazioni, vedere [Procedura: Ancoraggio di controlli in](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)Windows Forms.
+ Se l'utente ridimensiona il riquadro azioni in fase di esecuzione, i controlli possono essere ridimensionati insieme al riquadro azioni. È possibile usare la proprietà <xref:System.Windows.Forms.Control.Anchor%2A> di un controllo Windows Form per ancorare i controlli al riquadro azioni. È anche possibile ancorare i controlli Windows Form nel controllo utente allo stesso modo. Per altre informazioni, vedere [How to: Anchor Controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 ## <a name="resize-the-actions-pane"></a>Ridimensionare il riquadro azioni
  Non è possibile modificare direttamente le dimensioni di un oggetto <xref:Microsoft.Office.Tools.ActionsPane> perché <xref:Microsoft.Office.Tools.ActionsPane> è incorporato nel riquadro attività. È tuttavia modificare a livello di codice la larghezza del riquadro attività impostando la proprietà <xref:Microsoft.Office.Core.CommandBar.Width%2A> dell'oggetto <xref:Microsoft.Office.Core.CommandBar> che rappresenta il riquadro attività. È possibile modificare l'altezza del riquadro attività se è ancorato in orizzontale o se è mobile.
@@ -141,9 +139,9 @@ ms.locfileid: "71255692"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
-> Gli utenti finali possono riposizionare manualmente il riquadro attività in qualsiasi momento. Non esiste alcun modo per garantire che il riquadro attività resti ancorato nella posizione indicata a livello di codice. Tuttavia, è possibile controllare le modifiche di orientamento e garantire che i controlli nel riquadro azioni siano sovrapposti nella direzione corretta. Per altre informazioni, vedere [Procedura: Gestire il layout di controllo nei riquadri](../vsto/how-to-manage-control-layout-on-actions-panes.md)azioni.
+> Gli utenti finali possono riposizionare manualmente il riquadro attività in qualsiasi momento. Non esiste alcun modo per garantire che il riquadro attività resti ancorato nella posizione indicata a livello di codice. Tuttavia, è possibile controllare le modifiche di orientamento e garantire che i controlli nel riquadro azioni siano sovrapposti nella direzione corretta. Per altre informazioni, vedere [procedura: gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
- L'impostazione delle <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> proprietà <xref:Microsoft.Office.Tools.ActionsPane> e di non modifica la posizione perché l' <xref:Microsoft.Office.Tools.ActionsPane> oggetto è incorporato nel riquadro attività. <xref:Microsoft.Office.Tools.ActionsPane.Top%2A>
+ L'impostazione delle proprietà <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> e <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> del <xref:Microsoft.Office.Tools.ActionsPane> non modifica la posizione perché l'oggetto <xref:Microsoft.Office.Tools.ActionsPane> è incorporato nel riquadro attività.
 
  Se il riquadro attività non è ancorato, è possibile impostare le proprietà <xref:Microsoft.Office.Core.CommandBar.Top%2A> e <xref:Microsoft.Office.Core.CommandBar.Left%2A> dell'oggetto <xref:Microsoft.Office.Core.CommandBar> che rappresenta il riquadro attività. Il codice seguente sposta un riquadro attività non ancorato nell'angolo superiore sinistro del documento.
 
@@ -154,9 +152,9 @@ ms.locfileid: "71255692"
 - [Usare i controlli WPF nelle soluzioni Office](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
 - [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)
-- [Procedura: Aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
-- [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
-- [Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)
-- [Procedura: Gestire il layout di controllo nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)
-- [Procedura dettagliata: Inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Procedura dettagliata: inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [Procedura dettagliata: associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)
+- [Procedura dettagliata: associare dati a controlli in un riquadro azioni di Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)
+- [Procedura: gestire il layout di controllo nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)
+- [Procedura dettagliata: inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: b8b9ad4677d580d495c72866be57712476d6a9c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576217"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985329"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 Restituisce le informazioni sul tipo e le posizioni di ancoraggio per un determinato carattere in un blocco di codice. Vengono fornite informazioni per IntelliSense membro, elenchi globali e suggerimenti per i parametri.  
@@ -103,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IProvideMultipleClassInfo](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
+ [Interfaccia IProvideMultipleClassInfo](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
  [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

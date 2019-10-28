@@ -1,5 +1,5 @@
 ---
-title: Risorse aggiuntive per lo sviluppo di soluzioni Office
+title: Risorse aggiuntive per sviluppare soluzioni Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,37 +12,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953181"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986267"
 ---
-# <a name="additional-resources-to-develop-office-solutions"></a>Risorse aggiuntive per lo sviluppo di soluzioni Office
+# <a name="additional-resources-to-develop-office-solutions"></a>Risorse aggiuntive per sviluppare soluzioni Office
   Gli strumenti di sviluppo di Microsoft Office in Visual Studio rappresentano solo uno dei diversi modi per estendere le applicazioni di Office. Le applicazioni di Office includono infatti anche alcune funzionalità incorporate, tra cui i formati Open XML, non contemplate dagli strumenti di sviluppo di Office in Visual Studio o da questa documentazione.
 
  Queste risorse contengono informazioni utili per scoprire le possibilità offerte da Microsoft Office e dagli strumenti di sviluppo di Office in Visual Studio.
 
-[Sviluppo per Office con Centro per sviluppatori di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=149752)
-
-Portale centrale per accedere agli ultimi articoli, video, forum, blog e ad altre risorse per gli strumenti di sviluppo di Office in Visual Studio.
-
-[Centro per sviluppatori Office](http://go.microsoft.com/fwlink/?LinkId=83467)
+[Centro per sviluppatori Office](https://developer.microsoft.com/office/docs)
 
 Portale centrale per accedere alle ultime risorse per gli sviluppatori Office (non specifico per lo sviluppo di Office con Visual Studio).
 
-[Sezione relativa allo sviluppo di Microsoft Office di MSDN Library](http://go.microsoft.com/fwlink/?LinkId=149870)
+[Sezione sviluppo Microsoft Office di MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12))
 
 Area di MSDN Library dove è possibile trovare articoli e documentazione di riferimento sullo sviluppo di soluzioni per diverse versioni di Office (non specifiche per lo sviluppo di Office con Visual Studio).
-
-[Portale per sviluppatori di applicazioni aziendali di Office](http://go.microsoft.com/fwlink/?LinkId=99125)
-
-Portale centrale per accedere alle informazioni sulle applicazioni di Office Business Application (OBA). Le applicazioni OBA consentono di connettere i sistemi Line of Business (LOB) agli utenti che li usano tramite le applicazioni di Microsoft Office. In tal modo, è possibile espandere gli investimenti IT esistenti combinando le risorse a disposizione in modi innovativi.
-
-[Sviluppo per Office con blog di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=149748)
-
-Blog gestito dal team Microsoft che crea gli strumenti di sviluppo di Office per Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
 - [Supporto aggiuntivo per gli errori nelle soluzioni Office](../vsto/additional-support-for-errors-in-office-solutions.md)

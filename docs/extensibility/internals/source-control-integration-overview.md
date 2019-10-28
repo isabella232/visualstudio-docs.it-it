@@ -1,5 +1,5 @@
 ---
-title: Panoramica dell'integrazione di controllo di origine | Microsoft Docs
+title: Panoramica dell'integrazione del controllo del codice sorgente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,68 +10,68 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dd54872325766b432af7e3104e7ab9f431b79d7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6f714bfdfc94cb9481071becf1cdc95f5259e975
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322513"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723540"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
-Questa sezione Confronta i due modi per integrare nel controllo del codice sorgente Visual Studio; un controllo del codice sorgente del plug-in e un pacchetto VSPackage che fornisce una soluzione di controllo del codice sorgente e vengono evidenziate le nuove funzionalità di controllo di origine. Visual Studio consente il passaggio manuale tra controllo del codice sorgente pacchetti VSPackage e plug-in controllo codice sorgente, nonché basati su soluzioni un passaggio automatico.
+In questa sezione vengono confrontati i due modi per integrarsi nel controllo del codice sorgente di Visual Studio. un plug-in del controllo del codice sorgente e un VSPackage che fornisce una soluzione di controllo del codice sorgente ed evidenzia le nuove funzionalità del controllo del codice sorgente. Visual Studio consente il cambio manuale tra i pacchetti VSPackage del controllo del codice sorgente e i plug-in del controllo del codice sorgente, nonché il cambio automatico basato sulla soluzione.
 
-## <a name="source-control-integration"></a>Integrazione del controllo codice sorgente
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di opzioni di integrazione del controllo sorgente. In tutte le versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è comunque possibile integrare un plug-in base l'origine dei plug-in dell'API di controllo (in precedenza detta anche l'API di MSSCCI), che fornisce la funzionalità di controllo di origine di base quando si usa Visual Studio origine controllo utente (interfaccia INTERFACCIA UTENTE). Un controllo del codice sorgente VSPackage, d'altra parte, offre una nuova, deep-integrazione [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] percorso adatto per l'integrazione del controllo codice sorgente che richiede un elevato livello di complessità e autonomia nel modello di controllo relativa origine.
+## <a name="source-control-integration"></a>Integrazione del controllo del codice sorgente
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di opzioni di integrazione del controllo del codice sorgente. In tutte le versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è ancora possibile integrare un plug-in basato sull'API del plug-in del controllo del codice sorgente (in precedenza definita anche API MSSCCI), che fornisce la funzionalità di base del controllo del codice sorgente durante l'uso dell'interfaccia utente del controllo del codice sorgente di Visual Studio. Un VSPackage del controllo del codice sorgente, d'altra parte, fornisce un nuovo percorso [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] di integrazione profonda adatto per l'integrazione del controllo del codice sorgente che richiede un livello elevato di complessità e autonomia nel modello di controllo del codice sorgente.
 
- ![Cenni preliminari sul controllo di origine](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")
+ ![Cenni preliminari sul controllo del codice sorgente](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")
 
 ## <a name="source-control-plug-in"></a>Plug-in del controllo del codice sorgente
- Tutte le versioni di Visual Studio supportano l'API dei plug-in del controllo origine versione della specifica 1.2 come un percorso di integrazione. Un implementatore di plug-in del controllo origine scrive una DLL che implementa le funzioni API dei plug-in del controllo origine per l'integrazione del controllo codice sorgente e la registrazione come descritto in [creazione di un plug-in controllo sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md). Questo approccio, l'ambiente di sviluppo integrato (IDE) usa il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente per le finestre di dialogo, ad esempio archiviazione, l'estrazione, pagine delle proprietà di strumenti/opzioni, le barre degli strumenti e i glifi di controllo di origine. Aderendo all'API dei plug-in del controllo origine assicura un'integrazione semplice in Visual Studio e un'esperienza senza problemi per l'utente. Ciò significa che il plug-in del controllo del codice sorgente deve implementare la maggior parte delle funzioni e i callback dettagliati nell'API.
+ Tutte le versioni di Visual Studio supportano la specifica API del plug-in del controllo del codice sorgente versione 1,2 come percorso di integrazione. Un implementatore del plug-in del controllo del codice sorgente scrive una DLL che implementa le funzioni API del plug-in del controllo del codice sorgente per l'integrazione e la registrazione del controllo del codice sorgente, come descritto in [creazione di un plug-in del controllo](../../extensibility/internals/creating-a-source-control-plug-in.md) Con questo approccio, l'ambiente di sviluppo integrato (IDE) utilizza l'interfaccia utente di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per le finestre di dialogo, ad esempio archivia, Estrai, strumenti/Opzioni pagine delle proprietà, barre degli strumenti e glifi del controllo del codice sorgente. Una stretta aderenza all'API plug-in del controllo del codice sorgente assicura una facile integrazione in Visual Studio e un'esperienza senza problemi per l'utente. Questo significa che il plug-in del controllo del codice sorgente deve implementare la maggior parte delle funzioni e dei callback descritti in dettaglio nell'API.
 
- Per implementare un controllo del codice sorgente del plug-in usando l'API dei plug-in del controllo origine, seguire questa procedura:
+ Per implementare un plug-in del controllo del codice sorgente tramite l'API del plug-in del controllo del codice sorgente, attenersi alla seguente procedura:
 
-1. Creare una DLL che implementa le funzioni specificate nei [Plug-in controllo del codice sorgente](../../extensibility/source-control-plug-ins.md).
+1. Creare una DLL che implementi le funzioni specificate nei [plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md).
 
-2. Registrare la DLL, rendendo le voci del Registro di sistema (descritto in [come: Installare un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).
+2. Registrare la DLL rendendo le voci del registro di sistema appropriate (descritte in [procedura: installazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).
 
-3. Creare un file di supporto dell'interfaccia utente e la visualizzazione quando viene richiesto dal pacchetto di scheda di controllo di origine (il componente di Visual Studio che gestisce la funzionalità di controllo sorgente tramite plug-in controllo codice sorgente)
+3. Creare un'interfaccia utente di supporto e visualizzarla quando richiesto dal pacchetto di adattatori del controllo del codice sorgente (componente di Visual Studio che gestisce la funzionalità del controllo del codice sorgente tramite plug-in del controllo del codice sorgente)
 
-   In risposta a un comando di controllo di origine, l'IDE di Visual Studio presenta un'interfaccia utente standard per le operazioni di base e quindi passa le informazioni per il controllo del codice sorgente del plug-in tramite le funzioni definite nell'API dei plug-in controllo di origine. Per le opzioni avanzate, il plug-in del controllo del codice sorgente può essere chiamata su per presentare la propria interfaccia utente, ad esempio, di esplorazione per un progetto di controllo del codice sorgente. Ciò significa che l'utente possibile che venga visualizzata due potenzialmente diversi stili dell'interfaccia utente quando si lavora con controllo del codice sorgente: l'interfaccia utente che presenta Visual Studio e l'interfaccia utente che presenta il plug-in del controllo del codice sorgente. Ciò è più evidente con operazioni di controllo avanzate.
+   In risposta a un comando di controllo del codice sorgente, l'IDE di Visual Studio presenta un'interfaccia utente standard per le operazioni di base e quindi passa le informazioni al plug-in del controllo del codice sorgente tramite le funzioni definite nell'API del plug-in del controllo del codice sorgente. Per le opzioni avanzate, è possibile chiamare il plug-in del controllo del codice sorgente per presentare una propria interfaccia utente, ad esempio l'esplorazione di un progetto incluso nel controllo del codice sorgente. Ciò significa che all'utente possono essere presentati due stili probabilmente diversi dell'interfaccia utente quando si utilizza il controllo del codice sorgente: l'interfaccia utente visualizzata da Visual Studio e l'interfaccia utente presente nel plug-in del controllo del codice sorgente. Questo è più evidente con le operazioni avanzate di controllo del codice sorgente.
 
-### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Inconvenienti legati all'implementazione di un plug-in del controllo del codice sorgente
+### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Svantaggi dell'implementazione di un plug-in del controllo del codice sorgente
 
-- Per le funzionalità avanzate, l'utente può visualizzare due diversi stili di interfacce, causando possibili confusioni.
+- Per le funzionalità avanzate, l'utente può visualizzare due stili diversi di interfacce, causando possibili confusioni.
 
-- Il plug-in del controllo del codice sorgente è limitata al modello di controllo di origine in cui è inclusa l'API dei plug-in del controllo origine.
+- Il plug-in del controllo del codice sorgente è limitato al modello di controllo del codice sorgente, implicito nell'API del plug-in del controllo del codice sorgente.
 
-- L'API dei plug-in del controllo origine potrebbero essere troppo restrittiva per alcuni scenari di controllo di origine.
+- L'API del plug-in del controllo del codice sorgente può essere troppo restrittiva per alcuni scenari di controllo del codice sorgente.
 
 ### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Vantaggi dell'implementazione di un plug-in del controllo del codice sorgente
 
-- Visual Studio fornisce l'interfaccia utente per tutte le operazioni di controllo di origine di base in modo che il plug-in del controllo del codice sorgente non è necessario implementare interfacce utente potenzialmente complesse.
+- Visual Studio fornisce tutte le interfacce utente per tutte le operazioni di base del controllo del codice sorgente, in modo che il plug-in del controllo del codice sorgente non debba implementare un'interfaccia utente potenzialmente complessa.
 
-- A causa dell'API strict, il plug-in del controllo del codice sorgente può interagire facilmente con i programmi di controllo di origine esterna per offrire funzionalità più estese; Visual Studio non è rilevante troppo molto come il controllo del codice sorgente viene eseguita, solo che viene eseguito in base all'API dei plug-in del controllo origine.
+- Grazie all'API Strict, il plug-in del controllo del codice sorgente può interagire prontamente con i programmi di controllo del codice sorgente esterni per fornire funzionalità più estese. Visual Studio non è rilevante per il modo in cui viene eseguita la funzionalità del controllo del codice sorgente, solo che viene eseguita in base all'API del plug-in del controllo del codice sorgente.
 
-- È più semplice implementare un controllo del codice sorgente del plug-in rispetto a un pacchetto VSPackage di controllo di origine.
+- È più facile implementare un plug-in del controllo del codice sorgente rispetto a un VSPackage del controllo del codice sorgente.
 
-## <a name="source-control-vspackage"></a>VSPackage di controllo codice sorgente
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Consente di integrazione completa con Visual Studio con controllo completo del controllo del codice sorgente e la sostituzione completa dell'interfaccia utente controllo origine fornita da Visual Studio. Un controllo del codice sorgente VSPackage è stato registrato con Visual Studio e fornisce funzionalità di controllo di origine. Sebbene controllo del codice sorgente diversi pacchetti VSPackage può essere registrato con Visual Studio, solo uno di essi può essere attivo in qualsiasi momento. Un pacchetto VSPackage di controllo di origine dispone del controllo completo sul controllo del codice sorgente e l'aspetto in Visual Studio mentre è attiva. Tutti gli altri controllo del codice sorgente pacchetti VSPackage che possono essere registrati nel sistema sono inattivo e non verrà visualizzata alcuna interfaccia utente affatto.
+## <a name="source-control-vspackage"></a>VSPackage del controllo del codice sorgente
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] consente una profonda integrazione in Visual Studio con il controllo completo della funzionalità di controllo del codice sorgente e la sostituzione completa dell'interfaccia utente del controllo del codice sorgente fornita da Visual Studio. Un pacchetto VSPackage del controllo del codice sorgente viene registrato con Visual Studio e fornisce funzionalità di controllo del codice sorgente. Sebbene diversi VSPackage del controllo del codice sorgente possono essere registrati con Visual Studio, solo uno di essi può essere attivo in qualsiasi momento. Un VSPackage del controllo del codice sorgente ha il controllo completo sulla funzionalità e l'aspetto del controllo del codice sorgente in Visual Studio mentre è attivo. Tutti gli altri pacchetti VSPackage del controllo del codice sorgente che possono essere registrati nel sistema sono inattivi e non visualizzano alcuna interfaccia utente.
 
- Implementazione di un controllo del codice sorgente VSPackage richiede una strategia di "tutto o niente". Il creatore di un pacchetto VSPackage di controllo di origine deve investire una quantità significativa di lavoro richiesto nell'implementazione di un numero di interfacce di controllo di origine e di nuovi elementi dell'interfaccia utente (finestre di dialogo, menu e barre degli strumenti) per coprire l'intero di controllo del codice sorgente. Visualizzare [creazione di un VSPackage di controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md) per altri dettagli.
+ Per l'implementazione di un pacchetto VSPackage del controllo del codice sorgente è necessaria una strategia "tutto o niente". L'autore di un pacchetto VSPackage di controllo del codice sorgente deve investire una notevole quantità di sforzi nell'implementazione di una serie di interfacce di controllo del codice sorgente e di nuovi elementi dell'interfaccia utente (finestre di dialogo, menu e barre degli strumenti) per coprire l'intera funzionalità del controllo del codice sorgente. Per altri dettagli, vedere [creazione di un pacchetto VSPackage del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md) .
 
-### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Inconvenienti legati all'implementazione di un VSPackage di controllo del codice sorgente
+### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Svantaggi dell'implementazione di un pacchetto VSPackage del controllo del codice sorgente
 
-- Il pacchetto VSPackage deve implementare un numero di interfacce complesse da integrare correttamente con Visual Studio.
+- Il pacchetto VSPackage deve implementare una serie di interfacce complesse per integrarsi correttamente con Visual Studio.
 
-- Il pacchetto VSPackage deve fornire tutte l'interfaccia utente necessaria per controllo del codice sorgente; Visual Studio non offre alcuna assistenza in quest'area.
+- Il pacchetto VSPackage deve fornire tutta l'interfaccia utente necessaria per il controllo del codice sorgente. Visual Studio non fornirà assistenza in quest'area.
 
-- Un controllo del codice sorgente VSPackage è strettamente associato a Visual Studio e non può funzionare con i programmi autonomi, in modo che la funzionalità non può essere condivisi facilmente con una versione del programma di controllo di origine esterna.
+- Un VSPackage del controllo del codice sorgente è strettamente correlato a Visual Studio e non può funzionare con i programmi autonomi, quindi la funzionalità non può essere condivisa con facilità con una versione esterna del programma di controllo del codice sorgente.
 
-### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Vantaggi dell'implementazione di un VSPackage di controllo del codice sorgente
+### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Vantaggi dell'implementazione di un pacchetto VSPackage del controllo del codice sorgente
 
-- Poiché il pacchetto VSPackage dispone di funzionalità e controllo completo sul controllo del codice sorgente dell'interfaccia utente, l'utente viene visualizzata un'interfaccia trasparente per controllo del codice sorgente.
+- Poiché il pacchetto VSPackage ha il controllo completo sull'interfaccia utente e la funzionalità del controllo del codice sorgente, viene visualizzata un'interfaccia trasparente per il controllo del codice sorgente.
 
-- Il pacchetto VSPackage non è limitato a un modello di controllo di origine specifico.
+- Il pacchetto VSPackage non è confinato a un particolare modello di controllo del codice sorgente.
 
 ## <a name="see-also"></a>Vedere anche
 - [Controllo del codice sorgente](../../extensibility/internals/source-control.md)

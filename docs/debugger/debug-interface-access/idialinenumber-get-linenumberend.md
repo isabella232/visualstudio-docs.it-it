@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c43c1d4b3b6a59f6601684fe20e238782448decb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828687"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743162"
 ---
-# <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Recupera il numero di riga di origine in base uno in cui termina l'istruzione o espressione.
+# <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
+Recupera il numero di riga del codice sorgente in base 1 in cui termina l'istruzione o l'espressione.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_lineNumberEnd ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di riga in cui termina l'istruzione o espressione. Se il valore è zero, le informazioni di fine non sono presente.
+out Restituisce il numero di riga in cui termina l'istruzione o l'espressione. Se il valore è zero, le informazioni finali non sono presenti.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

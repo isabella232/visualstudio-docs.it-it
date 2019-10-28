@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666926"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984415"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -28,7 +28,7 @@ Lo spazio dei nomi System. XML fornisce strumenti completi per il caricamento di
 In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.
 
 > [!NOTE]
-> L'applicazione [xsd. exe](http://go.microsoft.com/fwlink/?LinkId=178765), inclusa in Visual Studio, può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
+> L'applicazione [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), inclusa in Visual Studio, può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
 
 Ecco il file di esempio:
 

@@ -1,5 +1,5 @@
 ---
-title: Get_virtualfilename | Microsoft Docs
+title: 'IDiaInjectedSource:: get_virtualFilename | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d60a8c46c4a9e6f17e0123554ac25cb14bbf430b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828407"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743291"
 ---
-# <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-Recupera il nome assegnato al codice sorgente non basate su file. vale a dire, il codice che è stato inserito.
+# <a name="idiainjectedsourceget_virtualfilename"></a>IDiaInjectedSource::get_virtualFilename
+Recupera il nome assegnato al codice sorgente non file; ovvero il codice inserito.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,7 +33,7 @@ HRESULT get_virtualFilename ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il nome assegnato al codice sorgente non basate su file inserito.
+out Restituisce il nome assegnato al codice sorgente non file inserito.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.

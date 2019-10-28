@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666711"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985123"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: aggiungere un comando al menu di scelta rapida
 
@@ -28,8 +28,6 @@ In sintesi, i passaggi vengono eseguiti nel progetto DslPackage nel modo seguent
 2. [Aggiornare il numero di versione del pacchetto in Package.TT](#version). È necessario effettuare questa operazione ogni volta che si modifica Commands.vsct
 
 3. [Scrivere i metodi nella classe commandt](#CommandSet) per rendere visibile il comando e definire quello che si vuole eseguire per il comando.
-
-   Per esempi, vedere il [sito Web SDK di visualizzazione e modellazione](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > È inoltre possibile modificare il comportamento di alcuni comandi esistenti quali Taglia, Incolla, Seleziona tutto e Stampa eseguendo l'override dei metodi in CommandSet.cs. Per altre informazioni, vedere [procedura: modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -102,7 +100,7 @@ Usare il metodo descritto in questo argomento se:
     </VisibilityConstraints>
     ```
 
-4. Definire i nomi da usare per i GUID e gli ID. Per eseguire questa operazione, aggiungere un elemento `Symbols` all'elemento `CommandTable` dopo l'elemento `Commands`.
+4. Definire i nomi usati per GUID e ID. Per eseguire questa operazione, aggiungere un elemento `Symbols` all'elemento `CommandTable` dopo l'elemento `Commands`.
 
     ```xml
     <Symbols>
@@ -362,8 +360,8 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>Vedere anche
 
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Procedura: Modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md)
+- [Procedura: modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Distribuzione di soluzioni di linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md)
 - [Codice di esempio: diagrammi di circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

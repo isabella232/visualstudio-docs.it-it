@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961747"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985200"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Flask con visualizzazioni e modelli di pagina
 
@@ -84,7 +84,7 @@ Nel codice creato usando il modello "Progetto Web Flask vuoto" si ha un unico fi
 
 7. Selezionare **Debug** > **Avvia debug** (**F5**) o usare il pulsante **Server Web** nella barra degli strumenti (il browser visualizzato può variare) per avviare l'app e aprire un browser. Provare entrambe le route dell'URL / e /home.
 
-8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione nelle prime righe di *runserver.py* e *HelloFlask\_* init_*.py* e nella riga `return "Hello Flask!"` in *views.py*. Quindi riavviare l'app (**Debug** > **Riavvia**, **CTRL**+**F5** o il pulsante della barra degli strumenti illustrato di seguito) e scorrere il codice (**F10**) o eseguirlo da ogni punto di interruzione premendo **F5**.
+8. È inoltre possibile impostare punti di interruzione in varie parti del codice e riavviare l'app per seguire la sequenza di avvio. Ad esempio, impostare un punto di interruzione nelle prime righe di *runserver.py* e *HelloFlask\_* init_ *.py* e nella riga `return "Hello Flask!"` in *views.py*. Quindi riavviare l'app (**Debug** > **Riavvia**, **CTRL**+**F5** o il pulsante della barra degli strumenti illustrato di seguito) e scorrere il codice (**F10**) o eseguirlo da ogni punto di interruzione premendo **F5**.
 
     ![Pulsante di riavvio sulla barra degli strumenti per il debug in Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -98,7 +98,7 @@ Poiché sono state apportate modifiche al codice e il test delle modifiche è ri
 
     ![Pulsante Modifiche per il controllo del codice sorgente sulla barra di stato di Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. In **Team Explorer** immettere un messaggio per il commit, ad esempio "Refactoring del codice" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato il messaggio **Commit \<hash> creato in locale. Sync per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
+1. In **Team Explorer** immettere un messaggio per il commit, ad esempio "Refactoring del codice" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato un messaggio di **commit \<hash > creato localmente. Sincronizzare per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
 
     ![Eseguire il push dei commit in remoto in Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 
@@ -199,9 +199,9 @@ Poiché il valore restituito per la visualizzazione è una stringa, è possibile
 
 Risposta: Anche se i modelli vengono in genere mantenuti in file HTML separati, è possibile usare anche un modello inline. L'uso di un file distinto è l'opzione consigliata, tuttavia, per mantenere una netta separazione tra il markup e il codice.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione file html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione html?
 
-Risposta: L'estensione *html* per i file di modello di pagina è completamente facoltativa, perché è sempre possibile identificare esattamente il percorso relativo del file nel primo argomento della funzione `render_template`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
+Risposta: L'estensione *html* per i file di modello di pagina è del tutto facoltativa, perché il percorso relativo esatto del file viene sempre identificato nel primo argomento della funzione `render_template`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
 
 In realtà, quando si lavora a un progetto Flask, Visual Studio rileva automaticamente se il file HTML che si sta modificando è un modello Flask e offre alcune funzionalità di completamento automatico. Ad esempio, quando si inizia a digitare un commento in un modello di pagina Flask, `{#`, Visual Studio suggerisce automaticamente i caratteri di chiusura `#}`. Anche i comandi **Commenta selezione** e **Rimuovi commento selezione** (nel menu **Modifica** > **Avanzate** e sulla barra degli strumenti) usano i commenti dei modelli anziché i commenti HTML.
 
@@ -209,7 +209,7 @@ In realtà, quando si lavora a un progetto Flask, Visual Studio rileva automatic
 
 Risposta: Se vengono visualizzati errori che indicano che non è possibile trovare il modello, verificare di aver aggiunto l'app al file *settings.py* del progetto Flask nell'elenco `INSTALLED_APPS`. Senza questa voce, Flask non sa di dover cercare nella cartella *templates* dell'app.
 
-### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Domanda: I modelli possono essere organizzati in altre sottocartelle?
+### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Domanda: I modelli possono essere organizzati in ulteriori sottocartelle?
 
 Risposta: Sì, è possibile usare sottocartelle e quindi fare riferimento al percorso relativo in *templates* nelle chiamate a `render_template`. In questo modo si possono creare in modo efficace gli spazi dei nomi per i modelli.
 
@@ -220,5 +220,5 @@ Risposta: Sì, è possibile usare sottocartelle e quindi fare riferimento al per
 
 ## <a name="go-deeper"></a>Approfondimento
 
-- [Flask Quickstart - Rendering Templates](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (Avvio rapido di Flask - Rendering dei modelli) (flask.pocoo.org)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Flask Quickstart - Rendering Templates](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates) (Avvio rapido di Flask - Rendering dei modelli) (flask.pocoo.org)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

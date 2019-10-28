@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41bffbc248d9004248a3552f335dccefaba72cca
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822155"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981706"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di integrare nuove funzionalità in Visual Studio. È possibile distribuire le estensioni ad altri utenti e al Visual Studio Marketplace. Di seguito sono illustrati alcuni dei modi in cui si può estendere Visual Studio:
@@ -63,20 +63,20 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
  È possibile trovare esempi Open Source di estensioni di Visual Studio SDK in GitHub in [Visual Studio Samples](https://aka.ms/vs2015sdksamples). Questo repository GitHub contiene esempi che illustrano varie funzionalità estendibili in Visual Studio.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Altre risorse di Visual Studio SDK
- In caso di domande su VSSDK o se si vuole condividere le proprie esperienze sviluppando estensioni, è possibile usare il forum di estendibilità di [Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) o la [chat di ExtendVS](https://gitter.im/Microsoft/extendvs).
+ In caso di domande su VSSDK o se si vuole condividere le proprie esperienze sviluppando estensioni, è possibile usare il [Forum di estendibilità di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) o la [chat di ExtendVS](https://gitter.im/Microsoft/extendvs).
 
  Per ulteriori informazioni, vedere il [Blog di VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) e diversi blog scritti da Microsoft MVP:
 
-- [Estensioni di Visual Studio preferite](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Estensioni di Visual Studio preferite](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
 - [Estendibilità di Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
-- [Estensione di Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Estensione di Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Vedere anche
 - [Creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
-- [Procedura: Eseguire la migrazione di progetti di estendibilità a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Domande frequenti: Conversione di componenti aggiuntivi in estensioni VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+- [Domande frequenti: conversione di componenti aggiuntivi in estensioni VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [Gestire più thread nel codice gestito](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Estendi menu e comandi](../extensibility/extending-menus-and-commands.md)
 - [Aggiungere comandi alle barre degli strumenti](../extensibility/adding-commands-to-toolbars.md)
@@ -93,5 +93,5 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
 - [Distribuire le estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Componenti e funzionalità di Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Supporto per Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Archiviazione](../extensibility/archive.md)
+- [Archivio](../extensibility/archive.md)
 - [Riferimenti per Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Creazione di soluzioni flusso di lavoro di SharePoint | Microsoft Docs
+title: Creazione di soluzioni flusso di lavoro SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,93 +20,93 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4139760995d655dbeb4e1c76d164f21949a9b50
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443537"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984564"
 ---
-# <a name="create-sharepoint-workflow-solutions"></a>Creare soluzioni di flusso di lavoro di SharePoint
+# <a name="create-sharepoint-workflow-solutions"></a>Creazione di soluzioni flusso di lavoro SharePoint
 
-[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce strumenti che consentono di creare flussi di lavoro personalizzati che gestiscono il ciclo di vita dei documenti ed elencare elementi in un sito Web di SharePoint. Gli elementi forniti prevedono una finestra di progettazione, un set di controlli dell'attività e i riferimenti all'assembly necessari. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include anche il **Personalizzazione guidata SharePoint**, per creare e configurare i flussi di lavoro.
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] offre strumenti che consentono di creare flussi di lavoro personalizzati che gestiscono il ciclo di vita dei documenti e degli elementi dell'elenco in un sito Web di SharePoint. Gli elementi forniti prevedono una finestra di progettazione, un set di controlli dell'attività e i riferimenti all'assembly necessari. per la creazione e la configurazione dei flussi di lavoro, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inoltre inclusa la **procedura guidata di personalizzazione di SharePoint**.
 
-Per altre informazioni su SharePoint, vedere [Microsoft SharePoint Products and Technologies](http://go.microsoft.com/fwlink/?LinkId=178470).
+Per ulteriori informazioni su SharePoint, vedere [prodotti e tecnologie Microsoft SharePoint](/sharepoint/dev/).
 
 ## <a name="workflows-in-sharepoint"></a>Flussi di lavoro in SharePoint
- Quando si aggiunge un flusso di lavoro a una raccolta di SharePoint o un elenco, si applica un processo di business su tutti gli elementi nell'elenco o libreria. Un flusso di lavoro vengono descritte le azioni che il sistema o gli utenti devono eseguire su ogni elemento, ad esempio inviare l'elemento da modificare e quindi esaminato. Queste azioni, note come *attività*, sono i blocchi predefiniti del flusso di lavoro.
+ Quando si aggiunge un flusso di lavoro a una raccolta o a un elenco di SharePoint, viene applicato un processo di business su tutti gli elementi della raccolta o dell'elenco. Un flusso di lavoro descrive le azioni che il sistema o gli utenti devono eseguire su ogni elemento, ad esempio l'invio dell'elemento da modificare e quindi la revisione. Queste azioni, note come *attività*, sono i blocchi predefiniti del flusso di lavoro.
 
- È possibile creare flussi di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirli a un sito Web di SharePoint. Dopo aver distribuito un flusso di lavoro in SharePoint, associarlo a una libreria o elenco. Si può quindi essere avviato automaticamente, da un processo, o manualmente dall'utente. Per altre informazioni sull'operazione del flusso di lavoro, vedere [i flussi di lavoro di sviluppo di SharePoint con Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).
+ È possibile creare flussi di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuirli in un sito Web di SharePoint. Dopo la distribuzione di un flusso di lavoro in SharePoint, è possibile associarlo a una raccolta o a un elenco. Può quindi essere avviato automaticamente, da un processo o manualmente da un utente. Per altre informazioni sulle operazioni del flusso di lavoro, vedere [sviluppare flussi di lavoro SharePoint con Visual Studio](/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).
 
-## <a name="create-custom-sharepoint-workflows"></a>Creare flussi di lavoro di SharePoint personalizzati
- Sono disponibili in due progetti di flusso di lavoro di SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **Flusso di lavoro sequenza** e **lo stato del flusso di lavoro di Machine**.
+## <a name="create-custom-sharepoint-workflows"></a>Creazione di flussi di lavoro SharePoint personalizzati
+ Sono disponibili due progetti di flusso di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: flusso di lavoro **sequenziale** e **flusso di lavoro della macchina a stati**.
 
- Oggetto *flusso di lavoro sequenza* rappresenta una serie di passaggi. I passaggi vengono eseguiti uno dopo l'altro fino al completamento dell'ultima attività. Flussi di lavoro sequenziali sono sempre strettamente sequenziale la loro esecuzione. Poiché possono ricevere gli eventi esterni e includere flussi di logica parallela, può variare l'esatto ordine di esecuzione. La figura seguente mostra un esempio di flusso di lavoro sequenza.
+ Un *flusso di lavoro sequenziale* rappresenta una serie di passaggi. I passaggi vengono eseguiti uno dopo l'altro fino al completamento dell'ultima attività. I flussi di lavoro sequenziali sono sempre rigorosamente sequenziali nell'esecuzione. Poiché possono ricevere eventi esterni e includere flussi logici paralleli, l'ordine di esecuzione esatto può variare. Nella figura seguente viene illustrato un esempio di flusso di lavoro sequenziale.
 
- ![Flusso di lavoro sequenza](../sharepoint/media/sp-sequential.png "flusso di lavoro sequenza")
+ ![Flusso di lavoro sequenziale](../sharepoint/media/sp-sequential.png "Flusso di lavoro sequenziale")
 
- Oggetto *lavoro macchina a stati* rappresenta un set di stati, transizioni e le azioni. Eseguire i passaggi descritti in un flusso di lavoro macchina in modo asincrono. Ciò significa non vengono necessariamente eseguite una dopo l'altra, ma vengono invece generati da azioni e gli stati. Uno stato assegnato come stato iniziale e quindi, in base a un evento, viene effettuata una transizione a un altro stato. La macchina a stati può avere uno stato finale che determina la fine del flusso di lavoro. Il diagramma seguente mostra un esempio di un lavoro macchina a stati.
+ Un *flusso di lavoro della macchina a stati* rappresenta un set di Stati, transizioni e azioni. I passaggi nel flusso di lavoro di una macchina a stati vengono eseguiti in modo asincrono. Ciò significa che non vengono necessariamente eseguiti uno dopo l'altro, ma vengono invece attivati da azioni e Stati. Uno stato viene assegnato come stato di avvio e quindi, in base a un evento, viene eseguita una transizione a un altro stato. La macchina a stati può avere uno stato finale che determina la fine del flusso di lavoro. Il diagramma seguente mostra un esempio di flusso di lavoro di una macchina a Stati.
 
- ![Stato del flusso di lavoro di Machine](../sharepoint/media/sp-state.png "lo stato del flusso di lavoro di Machine")
+ ![Flusso di lavoro macchina a Stati](../sharepoint/media/sp-state.png "StateMachineWorkflow")
 
- Per altre informazioni sui tipi di flusso di lavoro, vedere [tipi di flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=178995).
+ Per ulteriori informazioni sui tipi di flussi di lavoro, vedere [tipi di flussi di lavoro](/previous-versions/office/developer/sharepoint-2010/ms468447(v=office.14)).
 
 ### <a name="use-the-wizard"></a>Utilizzare la procedura guidata
- Quando si crea un progetto di flusso di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], è innanzitutto specificare le impostazioni nel **Personalizzazione guidata SharePoint**. La procedura guidata Usa queste impostazioni per creare un progetto in **Esplora soluzioni**. Questo progetto contiene un file di codice, più file che vengono usate per distribuire il flusso di lavoro e fa riferimento agli assembly necessari per creare un flusso di lavoro di SharePoint personalizzato.
+ Quando si crea un progetto flusso di lavoro di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], è necessario innanzitutto specificarne le impostazioni nella **procedura guidata di personalizzazione di SharePoint**. La procedura guidata usa queste impostazioni per creare un progetto in **Esplora soluzioni**. Questo progetto contiene un file di codice, diversi file utilizzati per distribuire il flusso di lavoro e i riferimenti agli assembly necessari per creare un flusso di lavoro di SharePoint personalizzato.
 
- Dopo aver creato il flusso di lavoro, è possibile modificarne le proprietà nella finestra Proprietà. Sebbene la maggior parte delle proprietà del flusso di lavoro possono essere modificate direttamente nella finestra Proprietà, alcune richiedono fare clic su un pulsante con puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) per modificare i relativi valori. Questo pulsante Riavvia il **Personalizzazione guidata SharePoint**. Dopo aver apportato la proprietà cambia valore, scegliere il **fine** pulsante per renderle effettive.
+ Dopo aver creato il flusso di lavoro, è possibile modificarne le proprietà nella Finestra Proprietà. Anche se la maggior parte delle proprietà del flusso di lavoro può essere modificata direttamente nella Finestra Proprietà, è necessario fare clic su un pulsante con i puntini di sospensione (![ASP.NET Mobile Designer Ellipse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) per modificarne i valori. Questo pulsante Riavvia la **personalizzazione guidata SharePoint**. Dopo aver apportato le modifiche al valore della proprietà, fare clic sul pulsante **fine** per finalizzarle.
 
 > [!NOTE]
-> Il **tipo di flusso di lavoro** proprietà è di sola lettura e non può essere modificata. Se si desidera modificare il tipo di flusso di lavoro, è necessario creare un altro flusso di lavoro.
+> La proprietà del **tipo di flusso di lavoro** è di sola lettura e non può essere modificata. Se si desidera modificare il tipo di flusso di lavoro, è necessario creare un altro flusso di lavoro.
 
 ## <a name="design-a-sharepoint-workflow"></a>Progettare un flusso di lavoro di SharePoint
- Dopo aver definito tutti i passaggi nel processo di business, usare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Progettazione flussi di lavoro per la progettazione del flusso di lavoro di SharePoint. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1.vb in **Esplora soluzioni**, oppure aprire il menu di scelta rapida per uno di questi file e quindi scegliere **aprire**.
+ Dopo aver definito tutti i passaggi del processo di business, utilizzare la finestra di progettazione del flusso di lavoro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per progettare il flusso di lavoro di SharePoint. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1. vb in **Esplora soluzioni**oppure aprire il menu di scelta rapida per uno di questi file, quindi scegliere **Apri**.
 
 ### <a name="activities"></a>Attività
- Per progettare un flusso di lavoro, aggiungere le attività eseguite dal **casella degli strumenti** a un *pianificazione del flusso di lavoro* nella finestra di progettazione. Una pianificazione del flusso di lavoro contiene la sequenza di attività nell'ordine che deve essere eseguite.
+ Per progettare un flusso di lavoro, aggiungere attività dalla **casella degli strumenti** a una *pianificazione del flusso di lavoro* nella finestra di progettazione. Una pianificazione del flusso di lavoro contiene la sequenza di attività nell'ordine in cui devono essere eseguite.
 
  Esistono due tipi di attività:
 
-- *Attività semplici* eseguire una singola unità di lavoro, ad esempio "ritarda per un giorno" o "Avvia servizio Web".
+- Le *attività semplici* eseguono una singola unità di lavoro, ad esempio "ritardo per 1 giorno" o "Avvia servizio Web".
 
-- *Le attività composte* contenere altre attività, ad esempio, un'attività condizionale può contenere due rami.
+- Le *attività composite* contengono altre attività; ad esempio, un'attività condizionale potrebbe contenere due rami.
 
-  Sono disponibili in entrambi i tipi di attività di **casella degli strumenti**.
+  Entrambi i tipi di attività sono disponibili nella **casella degli strumenti**.
 
-  Attività possono avere proprietà, metodi ed eventi. Usare la **proprietà** finestra per impostare le proprietà di un'attività.
+  Le attività possono avere proprietà, metodi ed eventi. Utilizzare la finestra **Proprietà** per impostare le proprietà di un'attività.
 
-  È anche possibile creare un'attività personalizzata. Per altre informazioni, vedere [Procedura dettagliata: Creare un'attività flusso di lavoro di sito personalizzati](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  È anche possibile creare un'attività personalizzata. Per ulteriori informazioni, vedere [procedura dettagliata: creare un'attività del flusso di lavoro del sito personalizzata](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
-  Le attività sono organizzate nelle seguenti schede nel **casella degli strumenti**:
+  Le attività sono organizzate nelle schede seguenti della **casella degli strumenti**:
 
-- **Flusso di lavoro SharePoint**
+- **Flusso di lavoro di SharePoint**
 
-- **Windows Workflow v3.0**
+- **Windows Workflow v 3.0**
 
-- **Windows Workflow v3.5**
+- **Windows Workflow versione 3.5**
 
-  Non tutte le attività del flusso di lavoro di base sono supportate da SharePoint. Per altre informazioni, vedere [Cenni preliminari sulle attività del flusso di lavoro per Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Non tutte le attività di base del flusso di lavoro sono supportate da SharePoint. Per ulteriori informazioni, vedere [Cenni preliminari sulle attività del flusso di lavoro per Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
 #### <a name="sharepoint-workflow-activities"></a>Attività del flusso di lavoro di SharePoint
- Il **flusso di lavoro SharePoint** schede contengono le attività specializzate per l'uso in [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Queste attività semplificano lo sviluppo di flussi di lavoro ciclo di vita documento. Per altre informazioni sulle attività elencate nel **flusso di lavoro SharePoint** scheda, vedere [Cenni preliminari sulle attività del flusso di lavoro per Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=156094).
+ Le schede del **flusso di lavoro di SharePoint** contengono attività specializzate da usare in [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Queste attività semplificano e semplificano lo sviluppo di flussi di lavoro del ciclo di vita dei documenti. Per ulteriori informazioni sulle attività elencate nella scheda **flusso di lavoro SharePoint** , vedere [Cenni preliminari sulle attività del flusso di lavoro per Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
-#### <a name="windows-workflow-activities"></a>Attività del flusso di lavoro di Windows
- Il **flusso di lavoro di Windows** schede contengono le attività fornite dal [!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)]. È possibile utilizzare queste attività per creare pianificazioni di flusso di lavoro per qualsiasi tipo di applicazione di flusso di lavoro di Windows.
+#### <a name="windows-workflow-activities"></a>Attività di Windows Workflow
+ Le schede dei **flussi di lavoro di Windows** contengono le attività fornite dal [!INCLUDE[TLA#tla_workflow](../sharepoint/includes/tlasharptla-workflow-md.md)]. È possibile utilizzare queste attività per creare pianificazioni del flusso di lavoro per qualsiasi tipo di applicazione Windows Workflow.
 
- Per altre informazioni sulle attività elencate nel **i flussi di lavoro di Windows** scheda, vedere [attività di Windows Workflow Foundation](http://go.microsoft.com/fwlink/?LinkID=156096). Per altre informazioni su Windows Workflow Foundation, vedere [Panoramica di Windows Workflow Foundation](http://go.microsoft.com/fwlink/?LinkID=128632).
+ Per ulteriori informazioni sulle attività elencate nella scheda **flussi di lavoro di Windows** , vedere [attività Windows Workflow Foundation](/previous-versions/dotnet/netframework-3.5/ms733615(v=vs.90)). Per ulteriori informazioni sulla Windows Workflow Foundation, vedere [Panoramica di Windows Workflow Foundation](/previous-versions/dotnet/netframework-3.5/ms734631(v=vs.90)).
 
-### <a name="work-with-activities-in-the-designer"></a>Utilizzare le attività nella finestra di progettazione
- La pianificazione del flusso di lavoro può contenere una combinazione di attività del flusso di lavoro di Windows e le attività del flusso di lavoro di SharePoint.
+### <a name="work-with-activities-in-the-designer"></a>Usare le attività nella finestra di progettazione
+ La pianificazione del flusso di lavoro può contenere una combinazione di attività di Windows Workflow e attività del flusso di lavoro di SharePoint.
 
- La finestra di progettazione vengono visualizzati segnali visivi che consentono di posizionare e configurare le attività in modo corretto. Quando si trascina o si copia un'attività nella pianificazione del flusso di lavoro, nella finestra di progettazione vengono visualizzate delle icone con il segno di addizione (+) in verde che indicano le posizioni valide per quell'attività nel flusso di lavoro. Non è possibile posizionare un'attività in una posizione in cui non sarebbe valido. Ad esempio, è possibile posizionare un'attività di invio come prima attività in un ramo di attività di ascolto. Per altre informazioni, vedere [Centro per sviluppatori di SharePoint Designer](http://go.microsoft.com/fwlink/?LinkId=178476).
+ Nella finestra di progettazione vengono visualizzati i segnali visivi per facilitare la posizione e la configurazione corretta delle attività. Quando si trascina o si copia un'attività nella pianificazione del flusso di lavoro, nella finestra di progettazione vengono visualizzate delle icone con il segno di addizione (+) in verde che indicano le posizioni valide per quell'attività nel flusso di lavoro. Non è possibile posizionare un'attività in una posizione in cui non sarebbe valida. Non è ad esempio possibile posizionare un'attività Send come prima attività in un ramo dell'attività Listen. Per ulteriori informazioni, vedere [centro per sviluppatori di SharePoint Designer](https://developer.microsoft.com/office/docs).
 
-## <a name="collect-information-during-the-workflow"></a>Raccogliere informazioni durante il flusso di lavoro
- È possibile raccogliere informazioni dagli utenti in determinati momenti nel flusso di lavoro. È possibile raccogliere informazioni tramite moduli o le proprietà dell'elemento.
+## <a name="collect-information-during-the-workflow"></a>Raccogli informazioni durante il flusso di lavoro
+ Potrebbe essere necessario raccogliere informazioni dagli utenti in orari predefiniti del flusso di lavoro. È possibile raccogliere informazioni usando i form o le proprietà degli elementi.
 
 ### <a name="forms"></a>Moduli
- I moduli sono come le finestre di dialogo che contengono domande e forniscono agli utenti di fornire risposte modi.
+ I moduli sono simili alle finestre di dialogo che contengono domande e forniscono modi per consentire agli utenti di fornire risposte.
 
- Esistono quattro tipi di form che può essere usato in un flusso di lavoro:
+ Sono disponibili quattro tipi di form che possono essere utilizzati in un flusso di lavoro:
 
 - Associazione
 
@@ -116,34 +116,34 @@ Per altre informazioni su SharePoint, vedere [Microsoft SharePoint Products and 
 
 - Attività
 
-  Tra questi, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include modelli di elementi per i form di associazione e di avvio. Un esempio di un' *form di associazione* è quello che consente all'amministratore di installare il flusso di lavoro immettere i parametri correlati al flusso di lavoro, ad esempio un limite di spesa per un flusso di lavoro di nota spese. Un esempio di un' *form di avvio* è quello che consente all'utente di un flusso di lavoro di spesa di immettere l'importo speso nel flusso di lavoro. Per altre informazioni su questi tipi di form, vedere [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include modelli di elementi per i form di associazione e di avvio. Un esempio di un *modulo di associazione* è quello che consente all'amministratore di installare il flusso di lavoro di immettere i parametri relativi al flusso di lavoro, ad esempio un limite di spesa per un flusso di lavoro delle spese. Un esempio di un *modulo di avvio* è quello che consente all'utente di un flusso di lavoro di spesa di immettere la quantità di tempo trascorsa nel flusso di lavoro. Per ulteriori informazioni su questi tipi di form, vedere [modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-### <a name="item-properties"></a>Proprietà degli elementi
- È anche possibile raccogliere informazioni dagli utenti usando le proprietà di un elemento nell'elenco o raccolta di SharePoint. Il file di codice principale (Workflow1.cs o Workflow1.vb) dichiara un'istanza della classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominata `workflowProperties`. Usare il `workflowProperties` oggetto per accedere alle proprietà della libreria o dell'elenco nel codice. Per un esempio, vedere [Procedura dettagliata: Creare ed eseguire il debug di una soluzione di flusso di lavoro SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
+### <a name="item-properties"></a>Proprietà elemento
+ È anche possibile raccogliere informazioni dagli utenti usando le proprietà di un elemento nella raccolta o nell'elenco di SharePoint. Il file di codice principale (Workflow1.cs o Workflow1. vb) dichiara un'istanza della classe Microsoft. SharePoint. Workflow. SPWorkflowActivationProperties. WorkflowProperties denominata `workflowProperties`. Utilizzare l'oggetto `workflowProperties` per accedere alle proprietà della raccolta o dell'elenco nel codice. Per un esempio, vedere [procedura dettagliata: creare ed eseguire il debug di una soluzione flusso di lavoro di SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
 
-## <a name="debug-a-sharepoint-workflow-template"></a>Eseguire il debug di un modello di flusso di lavoro di SharePoint
- Eseguire il debug di un progetto di flusso di lavoro SharePoint lo stesso quando si esegue il debug di altri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti basati su Web. Quando si avvia il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vengono utilizzate le impostazioni specificate nella **Personalizzazione guidata SharePoint** per aprire il sito Web di SharePoint appropriato e associare automaticamente il modello di flusso di lavoro con la libreria appropriata o elenco. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Associa anche il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del debugger per il [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo denominato *w3wp.exe*.
+## <a name="debug-a-sharepoint-workflow-template"></a>Eseguire il debug di un modello di flusso di lavoro SharePoint
+ È possibile eseguire il debug di un progetto di flusso di lavoro SharePoint nello stesso modo in cui si esegue il debug di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] altri progetti basati sul Web Quando si avvia il debugger [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilizza le impostazioni specificate nella **procedura guidata di personalizzazione di SharePoint** per aprire il sito Web di SharePoint appropriato e associare automaticamente il modello di flusso di lavoro alla libreria appropriata o elenco. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] connette inoltre il debugger [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] al processo [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] denominato *w3wp. exe*.
 
- Per testare il flusso di lavoro, è necessario avviarlo manualmente. Per altre informazioni, vedere la sezione "Il debug dei flussi di lavoro" in [debug delle soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Per altre informazioni sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debug delle applicazioni Web, vedere [eseguire il Debug di script e applicazioni web](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
+ Per eseguire il test del flusso di lavoro, è necessario avviarlo manualmente. Per ulteriori informazioni, vedere la sezione "debug dei flussi di lavoro" in [debug di soluzioni SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Per altre informazioni sul debug di applicazioni Web [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vedere [eseguire il debug di script e applicazioni Web](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Distribuire un modello di flusso di lavoro di SharePoint
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Distribuire progetti di flusso di lavoro di SharePoint come qualsiasi altro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti SharePoint. Per altre informazioni, vedere [soluzioni del pacchetto e distribuire SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] i progetti di flusso di lavoro SharePoint vengono distribuiti esattamente come gli altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint. Per altre informazioni, vedere creare [pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
 
-## <a name="import-globally-reusable-workflows"></a>Importa i flussi di lavoro riutilizzabile globalmente
- Oltre a creare flussi di lavoro riutilizzabili specifiche del sito, SharePoint Designer consente di creare *flussi di lavoro riutilizzabile globalmente*, quali sono i flussi di lavoro che può essere utilizzati da qualsiasi sito di SharePoint. Il progetto Importa flusso di lavoro riutilizzabili in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] attualmente non è possibile importare flussi di lavoro riutilizzabile globalmente. Tuttavia, è possibile utilizzare SharePoint Designer per convertire un flusso di lavoro riutilizzabile globalmente in un flusso di lavoro riutilizzabile, o importare il flusso di lavoro come un flusso di lavoro dichiarativo non convertito. Per altre informazioni, vedere [elementi di importazione da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).
+## <a name="import-globally-reusable-workflows"></a>Importare flussi di lavoro riutilizzabili a livello globale
+ Oltre alla creazione di flussi di lavoro riutilizzabili specifici del sito, SharePoint Designer consente di creare *flussi di lavoro riutilizzabili a livello globale*, ovvero flussi di lavoro che possono essere utilizzati da qualsiasi sito di SharePoint. Il progetto di flusso di lavoro di importazione riutilizzabile in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] attualmente non importa i flussi di lavoro riutilizzabili a livello globale. Tuttavia, è possibile utilizzare SharePoint Designer per convertire un flusso di lavoro riutilizzabile a livello globale in un flusso di lavoro riutilizzabile o importare il flusso di lavoro come flusso di lavoro dichiarativo non convertito. Per ulteriori informazioni, vedere [importare elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Procedura dettagliata: Creare ed eseguire il debug di una soluzione del flusso di lavoro di SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Illustra la procedura dettagliata illustra la creazione e debug di un semplice [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] flusso di lavoro.|
-|[Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Illustra la procedura dettagliata per la creazione di un più complete [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] flusso di lavoro completato con i form di associazione e di avvio.|
-|[Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Si basa sull'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) aggiungendo un ulteriore *aspx* pagina dell'applicazione che invia report sui dati immessi nel flusso di lavoro.|
-|[Procedura dettagliata: Creare un'attività flusso di lavoro del sito personalizzata](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Viene illustrato come eseguire due attività fondamentali: creare un flusso di lavoro a livello di sito e creare un'attività flusso di lavoro personalizzato.|
-|[Procedura dettagliata: Importa un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Viene illustrato come importare flussi di lavoro dichiarativi riutilizzabili creati in SharePoint Designer 2010 in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.|
+|[Procedura dettagliata: creare ed eseguire il debug di una soluzione flusso di lavoro SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Guida dettagliata alla creazione e al debug di un semplice flusso di lavoro di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Guida dettagliata alla creazione di un flusso di lavoro di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] con funzionalità complete completate con i moduli di associazione e di avvio.|
+|[Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Si basa sull'argomento [procedura dettagliata: creare un flusso di lavoro con i form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) aggiungendo una pagina dell'applicazione *aspx* aggiuntiva che segnala i dati immessi nel flusso di lavoro.|
+|[Procedura dettagliata: creare un'attività personalizzata del flusso di lavoro del sito](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Viene illustrato come eseguire due attività principali: creare un flusso di lavoro a livello di sito e creare un'attività personalizzata del flusso di lavoro.|
+|[Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Viene illustrato come importare flussi di lavoro dichiarativi riutilizzabili creati in SharePoint Designer 2010 in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.|
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Creare le pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)

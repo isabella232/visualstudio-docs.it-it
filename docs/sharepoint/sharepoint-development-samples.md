@@ -12,19 +12,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1719656c475dc6ee78de27f068baaf77c8b2a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a52dbb77145d1389995813d89384966fea35cec
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971410"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984162"
 ---
 # <a name="sharepoint-development-samples"></a>Esempi di sviluppo di SharePoint
-  È possibile usare Visual Studio per scaricare e installare esempi di applicazioni di SharePoint dal [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).
+  È possibile utilizzare Visual Studio per scaricare e installare esempi di applicazioni SharePoint da [MSDN Code Gallery](https://code.msdn.microsoft.com/).
 
- È possibile scaricare ogni esempio singolarmente. È anche possibile scaricare un pacchetto che lo ha gli esempi che condividono una tecnologia o un articolo correlato. Si riceverà una notifica al momento della pubblicazione delle modifiche apportate al codice sorgente per ogni esempio scaricato.
+ Ogni esempio può essere scaricato singolarmente. È anche possibile scaricare un pacchetto di esempio, con esempi correlati che condividono una tecnologia o un articolo. Si riceverà una notifica al momento della pubblicazione delle modifiche apportate al codice sorgente per ogni esempio scaricato.
 
 ## <a name="see-also"></a>Vedere anche
 - [Creare soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
-- [Esempi di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150928)
+- [Esempi di Visual Studio](https://code.msdn.microsoft.com/vstudio)
 - [Attività comuni nella programmazione Office](../vsto/common-tasks-in-office-programming.md)

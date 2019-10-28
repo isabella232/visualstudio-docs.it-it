@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e33ab59660263a5053642c95ec62ab36663f8e7b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654100"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984300"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 In un linguaggio specifico di dominio (DSL) creato con l'SDK di visualizzazione e modellazione di Visual Studio, è possibile modificare ciò che accade quando l'utente copia e incolla gli elementi.
@@ -86,7 +86,7 @@ Eseguire l'override di *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` 
 Eseguire l'override di *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` nel progetto DslPackage.
 
  **Mantieni il layout delle forme tramite copia e incolla.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](http://go.microsoft.com/fwlink/?LinkId=213879).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Per ottenere questo effetto, aggiungere le forme e i connettori all'elemento ElementGroupPrototype copiato. Il metodo più conveniente per l'override è ElementOperations.CreateElementGroupPrototype(). Per eseguire questa operazione, aggiungere il codice seguente al progetto DSL:
 
@@ -142,7 +142,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Incollare le forme in una posizione scelta, ad esempio la posizione del cursore corrente.**
-Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](http://go.microsoft.com/fwlink/?LinkId=213879).
+Quando l'utente copia più forme, è possibile conservarne le relative posizioni quando vengono incollate. Questa tecnica è illustrata nell'esempio in [VMSDK: Circuit Diagrams Sample](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8).
 
  Per ottenere questo effetto, eseguire l'override di `ClipboardCommandSet.ProcessOnMenuPasteCommand()` per usare la versione di `ElementOperations.Merge()` specifica per il percorso. Per eseguire questa operazione, aggiungere il codice seguente al progetto DslPackage:
 
@@ -556,6 +556,6 @@ namespace Company.MyDsl
 
 - [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md)
 - [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Esempio: esempio di diagrammi di circuito VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Esempio: esempio di diagrammi di circuito VMSDK](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

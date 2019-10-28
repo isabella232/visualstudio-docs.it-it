@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957188"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985175"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Passaggio 3: Rendere disponibili file statici, aggiungere pagine e usare l'ereditarietà dei modelli
 
@@ -44,7 +44,7 @@ Per usare un modello, selezionare il modello desiderato, specificare un nome per
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Domanda: In che modo Visual Studio individua i modelli di elementi da offrire?
 
-Risposta: Il file di progetto di Visual Studio (con estensione *pyproj*) contiene un identificatore del tipo di progetto che lo contrassegna come progetto Python. Visual Studio usa questo identificatore di tipo per mostrare solo i modelli di elementi appropriati per il tipo di progetto. In questo modo, Visual Studio può fornire un set completo di modelli di elementi per numerosi tipi di progetti senza che sia necessario che l'utente li esamini tutti ogni volta.
+Risposta: Il file di progetto di Visual Studio ( *.pyproj*) contiene un identificatore del tipo di progetto che lo contrassegna come progetto Python. Visual Studio usa questo identificatore di tipo per mostrare solo i modelli di elementi appropriati per il tipo di progetto. In questo modo, Visual Studio può fornire un set completo di modelli di elementi per numerosi tipi di progetti senza che sia necessario che l'utente li esamini tutti ogni volta.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Passaggio 3-2: Rendere disponibili file statici dall'app
 
@@ -115,11 +115,11 @@ Flask offre una funzione denominata `serve_static_file` che può essere chiamata
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Domanda: Ci sono convenzioni per organizzare i file statici?
 
-Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella *static* a propria discrezione. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate *fonts*, *scripts* e *content* (per i fogli di stile e qualsiasi altro file).
+Risposta: È possibile aggiungere altri file CSS, JavaScript e HTML nella cartella *static* come si vuole. Un modo tipico per organizzare i file statici consiste nel creare sottocartelle denominate *fonts*, *scripts* e *content* (per i fogli di stile e qualsiasi altro file).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Domanda: Come si gestiscono le variabili di URL e i parametri di query in un'API?
 
-Risposta: Vedere la risposta nel passaggio 1-4 per la [Domanda: Come funziona Flask con route di URL e parametri di query variabili?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Risposta: Vedere la risposta al passaggio 1-4 per [Domanda: Come funziona Flask con route di URL e parametri di query variabili?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Passaggio 3-3: Aggiungere una pagina all'app
 
@@ -172,7 +172,7 @@ I passaggi seguenti aggiungono una pagina "About" al progetto "HelloFlask", nonc
 
 1. Eseguire il progetto per osservare i risultati e controllare lo spostamento tra le pagine. Al termine, arrestare l'app.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Domanda: Il nome di una funzione di pagina è rilevante per Flask?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Domanda: il nome di una funzione di pagina è rilevante per Flask?
 
 Risposta: No, perché è l'elemento Decorator `@app.route` che determina gli URL per cui Flask chiama la funzione per generare una risposta. Gli sviluppatori in genere fanno corrispondere il nome della funzione alla route, ma tale corrispondenza non è obbligatoria.
 
@@ -286,6 +286,6 @@ I passaggi seguenti illustrano l'ereditarietà:
 ## <a name="go-deeper"></a>Approfondimento
 
 - [Distribuire l'app Web nel Servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Per altre funzionalità dei modelli Jinja, ad esempio il flusso di controllo, vedere la [documentazione relativa alla progettazione dei modelli Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
-- Per informazioni dettagliate sull'uso di `url_for`, vedere [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) nella documentazione dell'oggetto applicazione Flask (flask.pocoo.org)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- Per altre funzionalità dei modelli Jinja, ad esempio il flusso di controllo, vedere la [documentazione relativa alla progettazione dei modelli Jinja](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)
+- Per informazioni dettagliate sull'uso di `url_for`, vedere [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) nella documentazione dell'oggetto applicazione Flask (flask.pocoo.org)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

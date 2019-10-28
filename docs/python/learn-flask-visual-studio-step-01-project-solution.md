@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958747"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985207"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
-[Flask](http://flask.pocoo.org/) è un framework Python leggero per le applicazioni Web che offre le informazioni fondamentali per il routing dell'URL e il rendering della pagina.
+[Flask](https://palletsprojects.com/p/flask/) è un framework Python leggero per le applicazioni Web che offre le informazioni fondamentali per il routing dell'URL e il rendering della pagina.
 
 Flask è definito un framework "micro" perché non mette direttamente a disposizione funzionalità come la convalida del modulo, l'astrazione di database, l'autenticazione e così via. Tali funzionalità sono invece contenute in speciali pacchetti Python denominati *estensioni* di Flask. Le estensioni si integrano perfettamente con Flask, come se facessero parte del framework. Ad esempio, lo stesso Flask non offre un motore del modello di pagina. La creazione dei modelli è possibile grazie alle estensioni, ad esempio Jinja e Jade, come illustrato in questa esercitazione.
 
@@ -38,7 +38,7 @@ Nel corso della procedura verrà creata un'unica soluzione di Visual Studio che 
 > [!Note]
 > Questa esercitazione si differenzia dalla guida [Flask Quickstart](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) (Avvio rapido di Flask) per il fatto che offre un maggior numero di informazioni e spiega come usare i vari modelli di progetto Flask, ideali come punto di partenza per la creazione dei propri progetti. Ad esempio, i modelli di progetto installano automaticamente il pacchetto Flask durante la creazione di un progetto, evitando la necessità di installare il pacchetto manualmente come illustrato nell'Avvio rapido.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Visual Studio 2017 o versioni successive in Windows con le opzioni seguenti:
   - Carico di lavoro **Sviluppo Python** (scheda **Carico di lavoro** nel programma di installazione). Per istruzioni, vedere [Installare il supporto Python in Visual Studio](installing-python-support-in-visual-studio.md).
@@ -59,8 +59,8 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
     - **Nome**: impostare il nome del progetto di Visual Studio su **BasicProject**. Questo nome verrà usato anche per il progetto Flask.
     - **Percorso**: specificare un percorso in cui creare la soluzione e il progetto di Visual Studio.
     - **Nome della soluzione**: impostare su **LearningFlask**, un nome appropriato per la soluzione come contenitore per più progetti in questa esercitazione.
-    - **Crea directory per soluzione**: Lasciare i valori predefiniti impostati.
-    - **Crea nuovo repository GIT**: Selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository GIT locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
+    - **Crea directory per soluzione**: lasciare impostato il valore predefinito.
+    - **Crea nuovo repository Git**: selezionare questa opzione (deselezionata per impostazione predefinita), in modo che Visual Studio crei un repository Git locale durante la creazione della soluzione. Se questa opzione non è visualizzata, eseguire il programma di installazione di Visual Studio e aggiungere **GIT per Windows** ed **Estensione GitHub per Visual Studio** nella scheda **Singoli componenti** in **Strumenti per il codice**.
 
 1. Dopo un istante, Visual Studio visualizza una finestra di dialogo con il messaggio **Questo progetto richiede pacchetti esterni**, riportata di seguito. Questa finestra di dialogo viene visualizzata perché il modello include un file *requirements.txt* che fa riferimento al pacchetto Flask 1.x più recente. Selezionare **Mostra pacchetti necessari** per visualizzare le dipendenze esatte.
 
@@ -68,7 +68,7 @@ Lo sviluppo in Python non è attualmente supportato in Visual Studio per Mac. In
 
 1. Selezionare l'opzione **Installazione manuale**. A breve si creerà l'ambiente virtuale per assicurarsi che venga escluso dal controllo del codice sorgente. L'ambiente può sempre essere creato da *requirements.txt*.
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Passaggio 1-2: Esaminare i controlli GIT e pubblicare il progetto in un repository remoto
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Passaggio 1-2: Esaminare i controlli Git e pubblicare il progetto in un repository remoto
 
 Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dialogo **Nuovo progetto**, il progetto è già stato sottoposto a commit nel controllo del codice sorgente subito dopo il completamento del processo di creazione. In questo passaggio si acquisirà familiarità con i controlli Git di Visual Studio e la finestra **Team Explorer**, in cui viene usato il controllo del codice sorgente.
 
@@ -104,9 +104,9 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Domanda: Quali sono alcuni dei vantaggi dell'uso del controllo del codice sorgente sin dall'inizio di un progetto?
 
-Risposta: Prima di tutto, l'uso del controllo del codice sorgente sin dall'inizio, in particolare con un repository remoto, offre un backup regolare del progetto in un'altra posizione. A differenza della situazione in cui si mantiene un progetto solo in un file system locale, il controllo del codice sorgente fornisce anche una cronologia delle modifiche completa e la possibilità di ripristinare un singolo file o l'intero progetto in base a uno stato precedente in tutta semplicità. La cronologia delle modifiche permette di determinare la causa delle regressioni (errori di test). Inoltre, il controllo del codice sorgente è essenziale se più persone lavorano su un progetto, perché gestisce le sovrascritture ed esegue la risoluzione dei conflitti. Infine, il controllo del codice sorgente, che è sostanzialmente una forma di automazione, offre tutti gli strumenti necessari per l'automazione delle compilazioni, dei test e della gestione del rilascio. Si tratta davvero del primo passaggio quando si usa DevOps per un progetto e poiché le limitazioni preliminari sono minime, non vi è alcun motivo per non usare il controllo del codice sorgente sin dall'inizio.
+Risposta: Prima di tutto, l'uso del controllo del codice sorgente sin dall'inizio, in particolare con un repository remoto, garantisce un backup regolare del progetto in un'altra posizione. A differenza della situazione in cui si mantiene un progetto solo in un file system locale, il controllo del codice sorgente fornisce anche una cronologia delle modifiche completa e la possibilità di ripristinare un singolo file o l'intero progetto in base a uno stato precedente in tutta semplicità. La cronologia delle modifiche permette di determinare la causa delle regressioni (errori di test). Inoltre, il controllo del codice sorgente è essenziale se più persone lavorano su un progetto, perché gestisce le sovrascritture ed esegue la risoluzione dei conflitti. Infine, il controllo del codice sorgente, che è sostanzialmente una forma di automazione, offre tutti gli strumenti necessari per l'automazione delle compilazioni, dei test e della gestione del rilascio. Si tratta davvero del primo passaggio quando si usa DevOps per un progetto e poiché le limitazioni preliminari sono minime, non vi è alcun motivo per non usare il controllo del codice sorgente sin dall'inizio.
 
-Per altre informazioni sul controllo del codice sorgente come automazione, vedere [The Source of Truth: il ruolo dei repository in DevOps](https://msdn.microsoft.com/magazine/mt763232), un articolo di MSDN Magazine scritto per app per dispositivi mobili che si applica anche alle app Web.
+Per altre informazioni sul controllo del codice sorgente come strumento di automazione, vedere [ Source of Truth: il ruolo dei repository in DevOps](https://msdn.microsoft.com/magazine/mt763232), un articolo in MSDN Magazine scritto per le app per dispositivi mobili, ma valido anche per le app Web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Domanda: È possibile impedire a Visual Studio di eseguire il commit automatico di un nuovo progetto?
 
@@ -126,9 +126,9 @@ Dopo aver configurato il controllo del codice sorgente per il progetto, è possi
 
 1. Selezionare **Crea** per accettare i valori predefiniti. È possibile modificare il nome dell'ambiente virtuale, se si vuole, e questa operazione modifica solo il nome della sottocartella dell'ambiente, ma `env` è una convenzione standard.
 
-1. Accettare i privilegi di amministratore se richiesto, quindi attendere alcuni minuti mentre Visual Studio scarica e installa i pacchetti. Questo per Flask e le relative dipendenze significa l'espansione di un migliaio di file in più di 100 sottocartelle. È possibile visualizzare lo stato di avanzamento nella finestra **Output** di Visual Studio. Durante l'attesa, leggere le sezioni delle domande seguenti. È anche possibile visualizzare una descrizione delle dipendenze di Flask nella pagina di [installazione di Flask](http://flask.pocoo.org/docs/1.0/installation/#installation) (flask.pcocoo.org).
+1. Accettare i privilegi di amministratore se richiesto, quindi attendere alcuni minuti mentre Visual Studio scarica e installa i pacchetti. Questo per Flask e le relative dipendenze significa l'espansione di un migliaio di file in più di 100 sottocartelle. È possibile visualizzare lo stato di avanzamento nella finestra **Output** di Visual Studio. Durante l'attesa, leggere le sezioni delle domande seguenti. È anche possibile visualizzare una descrizione delle dipendenze di Flask nella pagina di [installazione di Flask](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
 
-1. Nei controlli Git di Visual Studio nella barra di stato selezionare l'indicatore delle modifiche (indica **99&#42;**) che apre la pagina **Modifiche** in **Team Explorer**.
+1. Nei controlli Git di Visual Studio nella barra di stato selezionare l'indicatore delle modifiche (indica **99&#42;** ) che apre la pagina **Modifiche** in **Team Explorer**.
 
     La creazione dell'ambiente virtuale ha comportato centinaia di modifiche, ma non è necessario includerle nel controllo del codice sorgente, perché sarà sempre possibile, per l'utente o per chiunque altro cloni il progetto, ricreare l'ambiente da *requirements.txt*.
 
@@ -190,13 +190,13 @@ In secondo luogo, aprire una finestra di comando, passare alla cartella, ad esem
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Domanda: Qual è lo scopo dell'argomento __name__ per la classe Flask?
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>Domanda: Qual è lo scopo dell'argomento __name__ per la classe Flask?
 
-Risposta: L'argomento è il nome del modulo o pacchetto dell'app e indica a Flask dove cercare modelli, file statici e altre risorse che appartengono all'app. Per le app contenute in un singolo modulo, `__name__` è sempre il valore appropriato. È anche importante per le estensioni che richiedono le informazioni di debug. Per altre informazioni e argomenti aggiuntivi, vedere la [documentazione relativa alla classe Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
+Risposta: l'argomento è il nome del modulo o pacchetto dell'app e indica a Flask dove cercare modelli, file statici e altre risorse che appartengono all'app. Per le app contenute in un singolo modulo, `__name__` è sempre il valore appropriato. È anche importante per le estensioni che richiedono le informazioni di debug. Per altre informazioni e argomenti aggiuntivi, vedere la [documentazione relativa alla classe Flask](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) (flask.pocoo.org).
 
 ### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Domanda: Una funzione può avere più di un elemento Decorator di route?
 
-Risposta: Sì, è possibile usare qualsiasi numero di elementi Decorator se si usa la stessa funzione per più route. Ad esempio, per usare la funzione `hello` sia per "/" che per "/ hello", usare il codice seguente:
+Risposta: sì, è possibile usare qualsiasi numero di elementi Decorator se si usa la stessa funzione per più route. Ad esempio, per usare la funzione `hello` sia per "/" che per "/ hello", usare il codice seguente:
 
 ```python
 @app.route('/')
@@ -210,7 +210,7 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Domanda: Come funziona Flask con route di URL e parametri di query variabili?
 
-Risposta: In una route si contrassegna qualsiasi variabile con `<variable_name>` e Flask passa la variabile alla funzione usando un argomento denominato. La variabile può far parte del percorso dell'URL o di un parametro di query. Ad esempio, una route nel formato `'/hello/<name>` genera un argomento di stringa denominato `name` per la funzione e usando `?message=<msg>` nella route analizza il valore specificato per il parametro di query "message=" e lo passa alla funzione come `msg`:
+Risposta: in una route si contrassegna qualsiasi variabile con `<variable_name>` e Flask passa la variabile alla funzione usando un argomento denominato. La variabile può far parte del percorso dell'URL o di un parametro di query. Ad esempio, una route nel formato `'/hello/<name>` genera un argomento di stringa denominato `name` per la funzione e usando `?message=<msg>` nella route analizza il valore specificato per il parametro di query "message=" e lo passa alla funzione come `msg`:
 
 ```python
 @app.route('/hello/<name>?message=<msg>')
@@ -218,9 +218,9 @@ def hello(name, msg):
     return "Hello " + name + "! Message is " + msg + "."
 ```
 
-Per modificare il tipo, anteporre alla variabile `int`, `float`, `path` (che accetta le barre per delineare i nomi delle cartelle) e `uuid`. Per informazioni dettagliate, vedere le [regole delle variabili](http://flask.pocoo.org/docs/1.0/quickstart/#variable-rules) nella documentazione di Flask.
+Per modificare il tipo, anteporre alla variabile `int`, `float`, `path` (che accetta le barre per delineare i nomi delle cartelle) e `uuid`. Per informazioni dettagliate, vedere le [regole delle variabili](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) nella documentazione di Flask.
 
-I parametri di query sono disponibili anche attraverso la proprietà `request.args`, in particolare con il metodo `request.args.get`. Per altre informazioni, vedere l'[oggetto Request](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) nella documentazione di Flask.
+I parametri di query sono disponibili anche attraverso la proprietà `request.args`, in particolare con il metodo `request.args.get`. Per altre informazioni, vedere l'[oggetto Request](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) nella documentazione di Flask.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Domanda: Visual Studio può generare un file requirements.txt da un ambiente virtuale dopo che si installano altri pacchetti?
 
@@ -242,7 +242,7 @@ Risposta: Sì. Espandere il nodo **Ambienti Python**, fare clic con il pulsante 
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Domanda: Qual è la differenza tra l'uso dei comandi del menu Debug e dei comandi del server nel sottomenu Python del progetto?
 
-Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Run server** (Avvia server) o **Python** > **Run debug server** (Avvia server di debug) del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile collegare un debugger al processo in esecuzione in un secondo momento, se necessario, usando il comando **Debug** > **Associa a processo**.
+Risposta: Oltre ai comandi del menu **Debug** e ai pulsanti della barra degli strumenti, è possibile avviare il server anche usando i comandi **Python** > **Avvia server** o **Python** > **Avvia il server di debug** del menu di scelta rapida del progetto. Entrambi i comandi aprono una finestra della console in cui viene visualizzato l'URL locale (localhost:port) per il server in esecuzione. Tuttavia, è necessario aprire manualmente un browser con l'URL e l'esecuzione del server di debug non avvia automaticamente il debugger di Visual Studio. È possibile collegare un debugger al processo in esecuzione in un secondo momento, se necessario, usando il comando **Debug** > **Associa a processo**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -253,5 +253,5 @@ A questo punto, il progetto Flask di base contiene il codice di avvio e il codic
 
 ## <a name="go-deeper"></a>Approfondimento
 
-- [Flask Quickstart](http://flask.pocoo.org/docs/1.0/quickstart/) (Avvio rapido di Flask) (flask.pocoo.org)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Flask Quickstart](https://flask.palletsprojects.com/en/1.0.x/quickstart/) (Avvio rapido di Flask) (flask.pocoo.org)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

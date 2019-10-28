@@ -19,12 +19,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2b972c3c275f3e43819220532ac0a3c4a597e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662931"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981126"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -52,7 +52,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, convali
 
 Per visualizzare le edizioni di Visual Studio che supportano questa funzionalità, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-È possibile convalidare manualmente il codice da un diagramma delle dipendenze aperto in Visual Studio o da un prompt dei comandi. È anche possibile convalidare automaticamente il codice quando si eseguono compilazioni locali o Azure Pipelines compilazioni. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi delle dipendenze](http://go.microsoft.com/fwlink/?LinkID=252073).
+È possibile convalidare manualmente il codice da un diagramma delle dipendenze aperto in Visual Studio o da un prompt dei comandi. È anche possibile convalidare automaticamente il codice quando si eseguono compilazioni locali o Azure Pipelines compilazioni. Vedere [video di Channel 9: progettare e convalidare l'architettura usando i diagrammi delle dipendenze](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Se si desidera eseguire la convalida dei livelli utilizzando Team Foundation Server (TFS), è necessario installare anche la stessa versione di Visual Studio nel server di compilazione.

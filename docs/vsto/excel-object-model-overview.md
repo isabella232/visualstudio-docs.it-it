@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d7371880c739e242bcdd70fb2bb9ac0cd92677b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551592"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986095"
 ---
 # <a name="excel-object-model-overview"></a>Panoramica del modello a oggetti di Excel
   Per sviluppare soluzioni che utilizzano Microsoft Office Excel, è possibile interagire con gli oggetti forniti dal modello a oggetti di Excel. In questo argomento vengono introdotti gli oggetti più importanti:
@@ -47,8 +47,6 @@ ms.locfileid: "69551592"
 
   In questo argomento viene illustrato brevemente il modello a oggetti di Excel. Per le risorse in cui è possibile ottenere altre informazioni sull'intero modello a oggetti di Excel, vedere [usare la documentazione del modello a oggetti di Excel](#ExcelOMDocumentation).
 
-  ![collegamento al video](../vsto/media/playvideo.gif "collegamento al video") Per una dimostrazione video correlata, [vedere Ricerca per categorie: Usare i gestori eventi in un componente aggiuntivo di Excel 2007? ](http://go.microsoft.com/fwlink/?LinkID=130291) e[ricerca per categorie: Usare forme per creare un grafico a bolle in Excel ](http://go.microsoft.com/fwlink/?LinkID=130313).
-
 ## <a name="access-objects-in-an-excel-project"></a>Accedere agli oggetti in un progetto di Excel
  Quando si crea un nuovo progetto di componente aggiuntivo VSTO per Excel, Visual Studio crea automaticamente un file di codice *ThisAddIn. vb* o *ThisAddIn.cs* . È possibile accedere all'oggetto applicazione tramite `Me.Application` o `this.Application`.
 
@@ -61,7 +59,7 @@ ms.locfileid: "69551592"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- È possibile utilizzare la classe `Globals` nel progetto per accedere a `ThisWorkbook`, `Sheet1`, `Sheet2` o `Sheet3` dall'esterno della rispettiva classe. Per altre informazioni, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md). Nell'esempio seguente viene chiamato <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> il metodo `Sheet1` di indipendentemente dal fatto che il codice venga `Sheet`inserito in una delle classi *n* o `ThisWorkbook` nella classe.
+ È possibile utilizzare la classe `Globals` nel progetto per accedere a `ThisWorkbook`, `Sheet1`, `Sheet2` o `Sheet3` dall'esterno della rispettiva classe. Per altre informazioni, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md). Nell'esempio seguente viene chiamato il metodo <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> di `Sheet1`, indipendentemente dal fatto che il codice venga inserito in una delle classi `Sheet`*n* o nella classe `ThisWorkbook`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
@@ -105,14 +103,14 @@ ms.locfileid: "69551592"
  Per informazioni complete sul modello a oggetti di Excel, è possibile utilizzare il riferimento di assembly di interoperabilità primario di Excel e il riferimento del modello a oggetti VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Riferimento all'assembly di interoperabilità primario
- Nella documentazione di riferimento dell’assembly di interoperabilità primario di Excel vengono descritti i tipi dell'assembly di interoperabilità primario per Excel. Questa documentazione è disponibile nel percorso seguente: [Riferimento all'assembly di interoperabilità primario di Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+ Nella documentazione di riferimento dell’assembly di interoperabilità primario di Excel vengono descritti i tipi dell'assembly di interoperabilità primario per Excel. Questa documentazione è disponibile nel percorso seguente: [riferimento all'assembly di interoperabilità primario di Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
 
- Per ulteriori informazioni sulla progettazione dell'assembly di interoperabilità primario di Excel, ad esempio le differenze tra classi e interfacce nell'assembly di interoperabilità primario e il modo in cui vengono implementati gli eventi nell'assembly di interoperabilità [primario di Office](http://go.microsoft.com/fwlink/?LinkId=189592)
+ Per ulteriori informazioni sulla progettazione dell'assembly di interoperabilità primario di Excel, ad esempio le differenze tra classi e interfacce nell'assembly di interoperabilità primario e il modo in cui vengono implementati gli eventi nell' [assembly di interoperabilità primario di Office](/previous-versions/office/office-12/ms247299(v=office.12))
 
 ### <a name="vba-object-model-reference"></a>Riferimento del modello a oggetti VBA
- Nel riferimento del modello a oggetti VBA è illustrato il modello a oggetti di Excel esposto al codice Visual Basic Applications (VBA). Per altre informazioni, vedere [riferimento del modello a oggetti di Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).
+ Nel riferimento del modello a oggetti VBA è illustrato il modello a oggetti di Excel esposto al codice Visual Basic Applications (VBA). Per altre informazioni, vedere [riferimento del modello a oggetti di Excel 2010](/office/vba/api/overview/Excel/object-model).
 
- Tutti gli oggetti e i membri del riferimento del modello a oggetti VBA corrispondono ai tipi e ai membri dell'assembly di interoperabilità primario di Excel. Ad esempio, l'oggetto foglio di lavoro nel riferimento del modello a oggetti VBA <xref:Microsoft.Office.Interop.Excel.Worksheet> corrisponde all'oggetto nell'assembly di interoperabilità primario di Excel. Sebbene il riferimento del modello a oggetti VBA fornisce esempi di codice per la maggior parte delle proprietà, dei metodi e degli eventi, è necessario convertire il codice VBA di questo riferimento per Visual Basic o Visual C#, se si desidera utilizzarlo in un progetto di Excel che è possibile creare tramite Visual Studio.
+ Tutti gli oggetti e i membri del riferimento del modello a oggetti VBA corrispondono ai tipi e ai membri dell'assembly di interoperabilità primario di Excel. Ad esempio, l'oggetto foglio di lavoro nel riferimento del modello a oggetti VBA corrisponde all'oggetto <xref:Microsoft.Office.Interop.Excel.Worksheet> nell'assembly di interoperabilità primario di Excel. Sebbene il riferimento del modello a oggetti VBA fornisce esempi di codice per la maggior parte delle proprietà, dei metodi e degli eventi, è necessario convertire il codice VBA di questo riferimento per Visual Basic o Visual C#, se si desidera utilizzarlo in un progetto di Excel che è possibile creare tramite Visual Studio.
 
 ### <a name="related-topics"></a>Argomenti correlati
 

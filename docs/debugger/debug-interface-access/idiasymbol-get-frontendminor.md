@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a23d3aeade62865f768f54eb8face462affee8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 2b329cd69d010cba4e3667bde0d7b976389037bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832770"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740641"
 ---
-# <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
-Recupera il numero di versione secondaria del front-end.
+# <a name="idiasymbolget_frontendminor"></a>IDiaSymbol::get_frontEndMinor
+Recupera il numero della versione secondaria del front-end.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,24 +33,24 @@ HRESULT get_frontEndMinor ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce il numero di versione secondaria front.end.
+out Restituisce il numero di versione secondario front. end.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
 ## <a name="remarks"></a>Note
- Un compilatore è in genere costituito da due elementi principali: il front-end (parser), che gestisce l'analisi del codice sorgente in un modulo intermedio, e un back-end (Generatore di codice), che converte il formato intermedio in assembly. Non è insolito per il front-end avere una versione diversa rispetto al back-end.
+ Un compilatore è in genere costituito da due elementi primari: il front-end (il parser), che gestisce l'analisi del codice sorgente in un form intermedio e un back-end (Generatore di codice), che converte il modulo intermedio in assembly. Non è insolito che il front-end disponga di una versione diversa da quella del back-end.
 
- Un front-end o un numero di versione back-end è costituito da tre parti: \<principale >.\< secondaria >. \<compilazione >, dove \<principali > è il numero di versione principale, \<secondaria > è il numero di versione secondaria, e \<compilazione > è il numero di build. Ad esempio, 13.10.3077.
+ Un numero di versione front-end o back-end è costituito da tre parti: \<major >. \<minor >. \<build >, dove \<major > è il numero di versione principale, \<minor > è il numero di versione secondario e \<build > è il numero di Build. Ad esempio, 13.10.3077.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|DESCRIZIONE|
+|Requisiti|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|DIA2.h|
+|Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

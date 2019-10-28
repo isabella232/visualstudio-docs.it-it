@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654024"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984275"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personalizzare ed estendere un linguaggio specifico di dominio
 
@@ -40,7 +40,7 @@ Visual Studio Modeling and Visualization SDK (VMSDK) offre diversi livelli in cu
 |L'icona di forma cambia per indicare lo stato.|Imposta la visibilità del mapping dell'elemento Decorator nella finestra Dettagli DSL. Individuare diversi elementi Decorator immagine nella stessa posizione. Vedere [aggiornamento di forme e connettori per riflettere il modello](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> In alternativa, eseguire l'override di `ImageField.GetDisplayImage()`. Vedere l'esempio in <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Imposta un'immagine di sfondo in qualsiasi forma|Eseguire l'override di InitializeInstanceResources () per aggiungere un ImageField ancorato.|
 |Annidare forme a qualsiasi profondità|Configurare un albero di incorporamento ricorsivo. Definire BoundsRules per contenere le forme.|
-|Alleghi i connettori nei punti fissi sul limite di un elemento.|Definisce gli elementi terminali incorporati, rappresentati da porte di piccole dimensioni nel diagramma. Usare BoundsRules per correggere le porte sul posto. Vedere l'esempio di diagramma di circuito nell' [SDK di visualizzazione e modellazione](http://go.microsoft.com/fwlink/?LinkID=186128).|
+|Alleghi i connettori nei punti fissi sul limite di un elemento.|Definisce gli elementi terminali incorporati, rappresentati da porte di piccole dimensioni nel diagramma. Usare BoundsRules per correggere le porte sul posto. Vedere l'esempio di diagramma di circuito nell' [SDK di visualizzazione e modellazione](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
 |Campo di testo Visualizza un valore derivato da altri valori.|Eseguire il mapping dell'elemento Decorator del testo a una proprietà del dominio di archiviazione calcolata o personalizzata. Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagazione delle modifiche tra gli elementi del modello o tra forme|Vedere [convalida in un Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).|
 |Propagare le modifiche alle risorse, ad esempio altre estensioni di Visual Studio all'esterno dello Store.|Vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).|

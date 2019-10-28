@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae8d89baf864c73bed42e4f478624bc930e3c143
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c8e8aca881ba25df134c675ac504ea0794c4b051
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253615"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986123"
 ---
 # <a name="events-in-office-projects"></a>Eventi nei progetti di Office
   Ogni modello di progetto di Office genera automaticamente diversi gestori eventi. I gestori eventi per le personalizzazioni a livello di documento sono leggermente diversi dai gestori eventi per componenti aggiuntivi VSTO.
@@ -45,7 +45,7 @@ ms.locfileid: "71253615"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="document-level-projects"></a>Progetti a livello di documento
- Visual Studio fornisce codice generato sottostante documenti nuovi o esistenti o fogli di lavoro nelle personalizzazioni a livello di documento. Questo codice genera due eventi diversi: **Avvio** e **arresto**.
+ Visual Studio fornisce codice generato sottostante documenti nuovi o esistenti o fogli di lavoro nelle personalizzazioni a livello di documento. Questo codice genera due eventi distinti: **Startup** e **Shutdown**.
 
 ### <a name="startup-event"></a>Startup (evento)
  L'evento **Startup** viene generato per ogni elemento host (documento, cartella di lavoro o foglio di lavoro) dopo l'esecuzione del documento e di tutto il codice di inizializzazione nell'assembly. È l'ultima operazione da eseguire nel costruttore della classe in cui viene eseguito il codice. Per ulteriori informazioni sugli elementi host, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
@@ -103,39 +103,39 @@ ms.locfileid: "71253615"
 ### <a name="order-of-events-in-document-level-excel-projects"></a>Ordine degli eventi nei progetti di Excel a livello di documento
  I gestori eventi **Startup** nei progetti di Excel vengono chiamati nell'ordine seguente:
 
-1. `ThisWorkbook_Startup`.
+1. `ThisWorkbook_Startup`
 
-2. `Sheet1_Startup`.
+2. `Sheet1_Startup`
 
-3. `Sheet2_Startup`.
+3. `Sheet2_Startup`
 
-4. `Sheet3_Startup`.
+4. `Sheet3_Startup`
 
 5. Altri fogli in ordine.
 
    I gestori eventi **Shutdown** in una soluzione di cartella di lavoro vengono chiamati nell'ordine seguente:
 
-6. `ThisWorkbook_Shutdown`.
+6. `ThisWorkbook_Shutdown`
 
-7. `Sheet1_Shutdown`.
+7. `Sheet1_Shutdown`
 
-8. `Sheet2_Shutdown`.
+8. `Sheet2_Shutdown`
 
-9. `Sheet3_Shutdown`.
+9. `Sheet3_Shutdown`
 
 10. Altri fogli in ordine.
 
     L'ordine viene determinato quando viene compilato il progetto. Se l'utente riorganizza i fogli in fase di esecuzione, non viene modificato l'ordine poiché gli eventi vengono generati alla successiva apertura o chiusura della cartella di lavoro.
 
 ## <a name="vsto-add-in-projects"></a>Progetti di componente aggiuntivo VSTO
- Visual Studio fornisce codice generato nei componenti aggiuntivi VSTO. Questo codice genera due eventi distinti: <xref:Microsoft.Office.Tools.AddInBase.Startup> e <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
+ Visual Studio fornisce codice generato nei componenti aggiuntivi VSTO. Questo codice genera due eventi diversi: <xref:Microsoft.Office.Tools.AddInBase.Startup> e <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.
 
 ### <a name="startup-event"></a>Startup (evento)
  L'evento <xref:Microsoft.Office.Tools.AddIn.Startup> viene generato dopo che il componente aggiuntivo VSTO viene caricato e tutto il codice di inizializzazione nell'assembly è stato eseguito. Questo evento viene gestito dal metodo `ThisAddIn_Startup` nel file di codice generato.
 
  Il codice nel gestore eventi `ThisAddIn_Startup` è il primo codice utente da eseguire, a meno che il componente aggiuntivo VSTO non esegua l'override del metodo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . In questo caso, il gestore eventi `ThisAddIn_Startup` viene chiamato dopo <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.
 
- Non aggiungere il `ThisAdd-In_Startup` codice nel gestore eventi se il codice richiede l'apertura di un documento. Al contrario, aggiungere tale codice a un evento generato dall'applicazione di Office quando un utente crea o apre un documento. Per altre informazioni, vedere [accedere a un documento all'avvio dell'applicazione di Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+ Non aggiungere il codice nel gestore eventi `ThisAdd-In_Startup` se il codice richiede l'apertura di un documento. Al contrario, aggiungere tale codice a un evento generato dall'applicazione di Office quando un utente crea o apre un documento. Per altre informazioni, vedere [accedere a un documento all'avvio dell'applicazione di Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
  Per altre informazioni sulla sequenza di avvio dei componenti aggiuntivi VSTO, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
@@ -150,11 +150,11 @@ ms.locfileid: "71253615"
 - Evento <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> dell'oggetto <xref:Microsoft.Office.Interop.Outlook.Explorer> .
 
 > [!NOTE]
-> È possibile imporre a Outlook di generare l'evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> alla chiusura modificando il Registro di sistema. Tuttavia, se un amministratore ripristina questa impostazione, qualsiasi codice viene aggiunto al metodo `ThisAddIn_Shutdown` , non viene più eseguito quando si esce da Outlook. Per ulteriori informazioni, vedere [Shutdown changes for Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> È possibile imporre a Outlook di generare l'evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> alla chiusura modificando il Registro di sistema. Tuttavia, se un amministratore ripristina questa impostazione, qualsiasi codice viene aggiunto al metodo `ThisAddIn_Shutdown` , non viene più eseguito quando si esce da Outlook. Per ulteriori informazioni, vedere [Shutdown changes for Outlook 2010](/previous-versions/office/developer/office-2010/ee720183(v=office.14)).
 
 ## <a name="see-also"></a>Vedere anche
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
-- [Procedura: Creazione di progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 - [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
 - [Panoramica sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)

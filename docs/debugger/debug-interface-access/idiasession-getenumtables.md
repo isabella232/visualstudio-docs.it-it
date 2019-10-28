@@ -1,5 +1,5 @@
 ---
-title: Getenumtables | Microsoft Docs
+title: 'IDiaSession:: getEnumTables | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759972fa02c7645ae457e0b715d835b2d717e26f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41679304986f5de948119a2958524b8f269ceb42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839173"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741913"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
-Recupera un enumeratore per tutte le tabelle incluse nell'archivio simboli.
+Recupera un enumeratore per tutte le tabelle contenute nell'archivio dei simboli.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -33,13 +33,13 @@ HRESULT getEnumTables (
 #### <a name="parameters"></a>Parametri
 `ppEnumTables`
 
-[out] Restituisce un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) oggetto. Utilizzare questa interfaccia per enumerare le tabelle nell'archivio simboli.
+out Restituisce un oggetto [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Utilizzare questa interfaccia per enumerare le tabelle nell'archivio simboli.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
 ## <a name="example"></a>Esempio
-In questo esempio presenta una funzione generica che utilizza il `getEnumTables` metodo per ottenere un oggetto enumeratore specifico. Se l'enumeratore viene trovato, la funzione restituisce un puntatore che è possibile eseguire il cast all'interfaccia desiderata. in caso contrario, la funzione restituisce `NULL`.
+Questo esempio presenta una funzione generale che usa il metodo `getEnumTables` per ottenere un oggetto enumeratore specifico. Se l'enumeratore viene trovato, la funzione restituisce un puntatore di cui è possibile eseguire il cast all'interfaccia desiderata. in caso contrario, la funzione restituisce `NULL`.
 
 ```C++
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)

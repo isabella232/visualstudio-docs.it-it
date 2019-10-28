@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aca6c91724e26059011c1044c9a2d501c7995bc5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255837"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986164"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associare i dati ai controlli nelle soluzioni Office
   È possibile associare i controlli Windows Form e i *controlli host* in un documento di Microsoft Office Word o in un foglio di lavoro di Microsoft Office Excel a un'origine dati in modo da visualizzare automaticamente i dati. È possibile associare dati ai controlli nei progetti a livello di applicazione e a livello di documento.
@@ -33,8 +33,6 @@ ms.locfileid: "71255837"
  I controlli host consentono di estendere gli oggetti contenuti nei modelli a oggetti di Word ed Excel, ad esempio i controlli del contenuto in Word e gli intervalli denominati in Excel. Per altre informazioni, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
 
  I controlli Windows Form e i controlli host usano il modello di data binding di Windows Form, che supporta sia il *data binding semplice* , sia il *data binding complesso* a origini dati quali set di dati e tabelle dati. Per informazioni complete sul modello di data binding in Windows Forms, vedere [associazione dati e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
-
- ![collegamento al video](../vsto/media/playvideo.gif "collegamento al video") Per una dimostrazione video correlata, [vedere Ricerca per categorie: Utilizzare i dati di database in Excel ](http://go.microsoft.com/fwlink/?LinkID=130287).
 
 ## <a name="simple-data-binding"></a>Data binding semplice
  Il data binding semplice si verifica quando una proprietà controllo è associata a un singolo elemento dati, come un valore in una tabella dati. Ad esempio, il controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> ha una proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> che può essere associata a un campo in un set di dati. Quando il campo all'interno del set di dati viene modificato, cambia anche il valore nell'intervallo denominato. Tutti i controlli host, tranne <xref:Microsoft.Office.Tools.Word.XMLNodes> , supportano il data binding semplice. Il controllo <xref:Microsoft.Office.Tools.Word.XMLNodes> è una raccolta e pertanto non supporta il data binding.
@@ -46,7 +44,7 @@ ms.locfileid: "71255837"
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
 
- Per le procedure dettagliate che illustrano data binding semplici [, vedere Procedura dettagliata: Data Binding semplice in un progetto](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) a livello di documento per un progetto a livello di documento e [una procedura dettagliata: Semplice data binding nel progetto](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) di componente aggiuntivo VSTO per un progetto di componente aggiuntivo VSTO.
+ Per le procedure dettagliate che illustrano data binding semplici, vedere [procedura dettagliata: data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) per un progetto a livello di documento e [procedura dettagliata: data binding semplice nel progetto](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) di componente aggiuntivo VSTO per un progetto di componente aggiuntivo VSTO.
 
 ## <a name="complex-data-binding"></a>Data binding complesso
  Il data binding complesso si verifica quando una proprietà controllo è associata a più elementi dati, ad esempio più colonne in una tabella dati. Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> per Excel è l'unico controllo host che supporta il data binding complesso. Esistono anche numerosi controlli Windows Form che supportano il data binding complesso, ad esempio il controllo <xref:System.Windows.Forms.DataGridView> .
@@ -58,7 +56,7 @@ ms.locfileid: "71255837"
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
 
- Per le procedure dettagliate che illustrano data binding complesse [, vedere Procedura dettagliata: Data Binding complesse in un progetto](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) a livello di documento per un progetto a livello di documento e [una procedura dettagliata: Data Binding complessi nel progetto](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) di componente aggiuntivo VSTO per un progetto di componente aggiuntivo VSTO.
+ Per le procedure dettagliate che illustrano data binding complesse, vedere [procedura dettagliata: data binding complessi in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) per un progetto a livello di documento e [procedura dettagliata: data binding complessi nel progetto](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) di componente aggiuntivo VSTO per un progetto di componente aggiuntivo VSTO.
 
 ## <a name="display-data-in-documents-and-workbooks"></a>Visualizzare i dati in documenti e cartelle di lavoro
  Nei progetti a livello di documento è possibile usare la finestra di dialogo **Origini dati** per aggiungere facilmente controlli associati a dati ai documenti o alle cartelle di lavoro, mediante una procedura analoga a quella usata per i Windows Form. Per altre informazioni sull'uso della finestra **origini dati** , vedere [associare Windows Forms controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) e [aggiungere nuove origini dati](../data-tools/add-new-data-sources.md).
@@ -73,15 +71,15 @@ ms.locfileid: "71255837"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Associare i dati nei progetti a livello di documento in fase di progettazione
  Gli argomenti seguenti mostrano esempi di data binding in fase di progettazione:
 
-- [Procedura: Popolamento di fogli di dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Procedura: popolare fogli di dati da un database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
-- [Procedura: Compilare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
-- [Procedura: Compilare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
-- [Procedura: Popola i documenti con i dati dei servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Procedura: popolare documenti con dati da servizi](../vsto/how-to-populate-documents-with-data-from-services.md)
 
-- [Procedura: Scorrere i record del database in un foglio di foglio](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Procedura: scorrere i record di un database in un foglio di foglio](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Associare i dati nei progetti di componente aggiuntivo VSTO
  Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli solo in fase di esecuzione. Gli argomenti seguenti mostrano esempi di data binding in fase di esecuzione:
@@ -97,11 +95,11 @@ ms.locfileid: "71255837"
 
  Non è necessario aggiornare in modo esplicito l'origine dati in memoria quando si esegue il data binding complesso usando il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> . In quel caso, le modifiche vengono inviate automaticamente all'origine dati in memoria senza codice aggiuntivo.
 
- Per altre informazioni, vedere [Procedura: Aggiornare un'origine dati con i dati di un controllo](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)host.
+ Per altre informazioni, vedere [procedura: aggiornare un'origine dati con dati da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Data Binding e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
-- [Procedura: Creare un controllo con associazione semplice in un Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
+- [Procedura: creare un controllo con associazione semplice in un Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 - [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

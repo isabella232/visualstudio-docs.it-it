@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450440"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986224"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Passaggio 3: Usare la finestra interattiva REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "72450440"
 La finestra **Interattiva** di Visual Studio per Python offre un'esperienza completa REPL (Read–Eval–Print Loop), che consente di ridurre notevolmente il normale ciclo di modifica-compilazione-debug. La finestra **Interattiva** offre tutte le funzionalità dell'esperienza REPL della riga di comando di Python. Rende anche molto semplice lo scambio di codice con i file di origine dell'editor di Visual Studio, che altrimenti risulta eccessivamente complessa con la riga di comando.
 
 > [!NOTE]
-> Per i problemi relativi a REPL, verificare che i pacchetti `ipython` e `ipykernel` siano installati. Per informazioni sull'installazione dei pacchetti, vedere la [scheda Packages (Pacchetti) in Python Environments (Ambienti Python)](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Per i problemi relativi a REPL, verificare che i pacchetti `ipython` e `ipykernel` siano installati. Per informazioni sull'installazione dei pacchetti, vedere la [scheda Packages (Pacchetti) in Python Environments (Ambienti Python)](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
 1. Aprire la finestra **Interattiva** facendo clic col pulsante destro del mouse sull'ambiente Python del progetto in **Esplora soluzioni**, come **Python 3.6 (32 bit)** illustrato in precedenza, e selezionando **Apri finestra interattiva**. In alternativa, è possibile selezionare **Visualizza** > **Altre finestre** > **Finestre interattive Python** dal menu principale di Visual Studio.
 
@@ -54,7 +54,7 @@ La finestra **Interattiva** di Visual Studio per Python offre un'esperienza comp
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Selezionare le istruzioni della funzione `import`, `from` e `make_dot_string` nel file con *estensione py* , fare clic con il pulsante destro del mouse e selezionare **Invia a interattivo** oppure premere **CTRL**+**invio**. Il frammento di codice viene incollato immediatamente nella finestra **Interattiva** ed eseguito. Poiché il codice ha definito una funzione, è possibile testare rapidamente la funzione chiamandola più volte:
+1. Selezionare le istruzioni per la funzione `import`, `from`e `make_dot_string` nel file con *estensione py* , fare clic con il pulsante destro del mouse e selezionare **Invia a interattivo** oppure premere **CTRL**+**invio**. Il frammento di codice viene incollato immediatamente nella finestra **Interattiva** ed eseguito. Poiché il codice ha definito una funzione, è possibile testare rapidamente la funzione chiamandola più volte:
 
     ![Invio del codice alla finestra interattiva e test](media/vs-getting-started-python-14-interactive4.png)
 

@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551502"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986067"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Introduzione (sviluppo per Office in Visual Studio)
   In questa sezione sono contenuti gli argomenti che consentono di iniziare a utilizzare gli strumenti di sviluppo di Microsoft Office in Visual Studio.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 - [Panoramica &#40;dello sviluppo di soluzioni Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Fornisce informazioni di base per lo sviluppo di soluzioni Office in Visual Studio.
@@ -88,4 +88,4 @@ ms.locfileid: "69551502"
 
  Vengono fornite informazioni su come rendere disponibili agli utenti le soluzioni Office, nonché sui principali aspetti da considerare quando si sceglie un metodo di distribuzione e si imposta la sicurezza.
 
-- [Strumenti di Visual Studio per gli articoli tecnici di Office e le procedure visive](http://go.microsoft.com/fwlink/?LinkID=106640) Contiene collegamenti a video e articoli tecnici sulle soluzioni Office create con Visual Studio.
+- [Strumenti di Visual Studio per gli articoli tecnici di Office e le procedure visive](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Contiene collegamenti a video e articoli tecnici sulle soluzioni Office create con Visual Studio.
