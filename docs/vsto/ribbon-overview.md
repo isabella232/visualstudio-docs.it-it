@@ -18,17 +18,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5067a52fb9d6a0b6d8991b68a2fce8cdbae987c9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255937"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985606"
 ---
 # <a name="ribbon-overview"></a>Panoramica della barra multifunzione
   La barra multifunzione è un modo per organizzare i comandi correlati in modo che siano più facili da trovare. I comandi vengono visualizzati come controlli sulla barra multifunzione. I controlli sono organizzati in *gruppi* lungo una striscia orizzontale sul bordo superiore di una finestra dell'applicazione. I gruppi correlati sono organizzati in schede.
 
- Per accedere alla maggior parte delle funzionalità a cui è stato eseguito l'accesso tramite menu e barre degli strumenti nelle versioni precedenti del sistema di Microsoft Office, è ora possibile utilizzare la barra multifunzione. Per ulteriori informazioni, vedere l'articolo tecnico [Panoramica degli sviluppatori dell'interfaccia utente per il sistema di Microsoft Office 2007](http://go.microsoft.com/fwlink/?LinkID=70860).
+ Per accedere alla maggior parte delle funzionalità a cui è stato eseguito l'accesso tramite menu e barre degli strumenti nelle versioni precedenti del sistema di Microsoft Office, è ora possibile utilizzare la barra multifunzione. Per ulteriori informazioni, vedere l'articolo tecnico [Panoramica degli sviluppatori dell'interfaccia utente per il sistema di Microsoft Office 2007](/previous-versions/office/developer/office-2007/aa338198(v=office.12)).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -81,7 +81,7 @@ ms.locfileid: "71255937"
 
  In più, i valori di proprietà predefiniti rimasti invariati non vengono visualizzati nel file XML risultante della barra multifunzione.
 
- Per ulteriori informazioni su come esportare la barra multifunzione in XML, [vedere Procedura: Esportare una barra multifunzione dalla finestra di progettazione della](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)barra multifunzione alla barra multifunzione XML
+ Per ulteriori informazioni su come esportare la barra multifunzione in XML, vedere [procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).
 
 ### <a name="update-the-code"></a>Aggiornare il codice
  Viene aggiunto un nuovo file di codice della barra multifunzione **Esplora soluzioni**. Questo file contiene la classe XML della barra multifunzione. È necessario creare metodi di callback nell'area `Ribbon Callbacks` di questa classe per gestire le azioni dell'utente, ad esempio la selezione di un pulsante. Spostare il codice dai gestori eventi in questi metodi di callback e modificarlo in modo che usi il modello di programmazione di estendibilità della barra multifunzione (RibbonX). Per altre informazioni, vedere [Ribbon XML](../vsto/ribbon-xml.md).
@@ -103,7 +103,7 @@ ms.locfileid: "71255937"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Selezionare le barre multifunzione da visualizzare in fase di esecuzione
  Poiché un progetto può contenere più di una barra multifunzione, è possibile selezionare la barra multifunzione da visualizzare in fase di esecuzione.
 
- Per selezionare una barra multifunzione da visualizzare in fase di esecuzione `CreateRibbonExtensibilityObject` , eseguire l' `ThisAddin`override `ThisWorkbook`del metodo `ThisDocument` nella classe, o del progetto e restituire la barra multifunzione che si desidera visualizzare. Nell'esempio seguente viene controllato il valore di un campo `myCondition` denominato e viene restituita la barra multifunzione appropriata.
+ Per selezionare una barra multifunzione da visualizzare in fase di esecuzione, eseguire l'override del metodo `CreateRibbonExtensibilityObject` nella classe `ThisAddin`, `ThisWorkbook`o `ThisDocument` del progetto e restituire la barra multifunzione che si desidera visualizzare. Nell'esempio seguente viene controllato il valore di un campo denominato `myCondition` e viene restituita la barra multifunzione appropriata.
 
 > [!NOTE]
 > La sintassi utilizzata in questo esempio restituisce una barra multifunzione creata utilizzando l'elemento **barra multifunzione (finestra di progettazione visiva)** . La sintassi per la restituzione di una barra multifunzione creata utilizzando un elemento **barra multifunzione (XML)** è leggermente diversa. Per ulteriori informazioni sulla restituzione di un elemento **barra multifunzione (XML)** , vedere [Ribbon XML](../vsto/ribbon-xml.md).
@@ -117,18 +117,18 @@ ms.locfileid: "71255937"
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Procedura: Introduzione alla personalizzazione della barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)|Viene illustrato come personalizzare la barra multifunzione di un'applicazione Microsoft Office, aggiungere un elemento barra **multifunzione (finestra di progettazione visiva)** o **barra multifunzione (XML)** a un progetto di Office.|
+|[Procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md)|Viene illustrato come personalizzare la barra multifunzione di un'applicazione Microsoft Office, aggiungere un elemento barra **multifunzione (finestra di progettazione visiva)** o **barra multifunzione (XML)** a un progetto di Office.|
 |[Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)|Viene descritto come utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede, gruppi e controlli personalizzati alla barra multifunzione di un'applicazione Microsoft Office.|
-|[Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Illustra come creare una scheda personalizzata della barra multifunzione usando la finestra di progettazione della barra multifunzione. Questa finestra di progettazione può essere usata per aggiungere e posizionare controlli sulla scheda personalizzata.|
+|[Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Illustra come creare una scheda personalizzata della barra multifunzione usando la finestra di progettazione della barra multifunzione. Questa finestra di progettazione può essere usata per aggiungere e posizionare controlli sulla scheda personalizzata.|
 |[Panoramica del modello a oggetti della barra multifunzione](../vsto/ribbon-object-model-overview.md)|Fornisce una panoramica di un modello a oggetti fortemente tipizzato per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione.|
-|[Procedura dettagliata: Aggiornare i controlli in una barra multifunzione in fase di esecuzione](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Mostra come usare il modello a oggetti della barra multifunzione per aggiornare i controlli in una barra multifunzione dopo che è stata caricata nell'applicazione di Office.|
+|[Procedura dettagliata: aggiornare i controlli in una barra multifunzione in fase di esecuzione](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Mostra come usare il modello a oggetti della barra multifunzione per aggiornare i controlli in una barra multifunzione dopo che è stata caricata nell'applicazione di Office.|
 |[Personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Vengono fornite informazioni aggiuntive per personalizzare la barra multifunzione in Microsoft Office Outlook.|
 |[Personalizzare una barra multifunzione per InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Vengono fornite informazioni aggiuntive per personalizzare la barra multifunzione in Microsoft Office InfoPath.|
 |[Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)|Viene illustrato come visualizzare, nascondere e modificare la barra multifunzione e consentire agli utenti di eseguire il codice dai controlli in un riquadro attività personalizzato, un riquadro azioni o un'area del modulo di Outlook.|
-|[Procedura: Modificare la posizione di una scheda sulla barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Viene illustrato come modificare l'ordine delle schede in una barra multifunzione.|
-|[Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)|Illustra come aggiungere gruppi e controlli a una scheda incorporata.|
-|[Procedura: Aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Viene illustrato come aggiungere controlli al menu visualizzato quando si fa clic sul **file**.|
-|[Procedura: Aggiungere un pulsante di avvio della finestra di dialogo a un gruppo della barra multifunzione](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra come aggiungere un pulsante di avvio della finestra di dialogo a qualsiasi gruppo su una barra multifunzione.|
-|[Procedura: Esportare una barra multifunzione dalla finestra di progettazione Ribbon alla barra multifunzione XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Viene illustrato come personalizzare la barra multifunzione in modi avanzati esportando la barra multifunzione dalla finestra di progettazione al file XML della barra multifunzione.|
-|[Ribbon XML](../vsto/ribbon-xml.md)|Viene illustrato come personalizzare una barra multifunzione tramite XML della barra multifunzione.|
-|[Procedura dettagliata: Creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Viene illustrato come creare una scheda personalizzata della barra multifunzione usando l'elemento **barra multifunzione (XML)** .|
+|[Procedura: modificare la posizione di una scheda nella barra multifunzione](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Viene illustrato come modificare l'ordine delle schede in una barra multifunzione.|
+|[Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)|Illustra come aggiungere gruppi e controlli a una scheda incorporata.|
+|[Procedura: aggiungere controlli alla visualizzazione Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Viene illustrato come aggiungere controlli al menu visualizzato quando si fa clic sul **file**.|
+|[Procedura: aggiungere un pulsante di avvio della finestra di dialogo a un gruppo della barra multifunzione](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra come aggiungere un pulsante di avvio della finestra di dialogo a qualsiasi gruppo su una barra multifunzione.|
+|[Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Viene illustrato come personalizzare la barra multifunzione in modi avanzati esportando la barra multifunzione dalla finestra di progettazione al file XML della barra multifunzione.|
+|[XML della barra multifunzione](../vsto/ribbon-xml.md)|Viene illustrato come personalizzare una barra multifunzione tramite XML della barra multifunzione.|
+|[Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Viene illustrato come creare una scheda personalizzata della barra multifunzione usando l'elemento **barra multifunzione (XML)** .|

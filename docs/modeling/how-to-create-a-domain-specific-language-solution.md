@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609388"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985118"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione specializzata di Visual Studio.
@@ -114,7 +114,7 @@ Il valore predefinito è un nome composto dai nomi della società e del prodotto
 
  **Usa chiave con nome sicuro esistente** Usare questa opzione se si vuole integrare il linguaggio DSL con un altro assembly.
 
- Per ulteriori informazioni sulla denominazione sicura, vedere [creazione e utilizzo di assembly con nome sicuro](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Per ulteriori informazioni sulla denominazione sicura, vedere [creazione e utilizzo di assembly con nome sicuro](/dotnet/standard/assembly/create-use-strong-named).
 
 ## <a name="see-also"></a>Vedere anche
 

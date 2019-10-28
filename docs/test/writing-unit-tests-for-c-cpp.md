@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481923"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982904"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -37,11 +37,11 @@ I progetti di unit test C++ supportano [CodeLens](../ide/find-code-changes-and-o
 
 **Visual Studio 2017 e versioni successive (tutte le edizioni)**
 
-- L'**adattatore per Google Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Questo adattatore include un modello di progetto che è possibile aggiungere a una soluzione tramite il menu di scelta rapida **Aggiungi nuovo progetto** nel nodo della soluzione in **Esplora soluzioni** e opzioni configurabili tramite **Strumenti** > **Opzioni**. Per altre informazioni, vedere [Procedura: Usare Google Test in Visual Studio](how-to-use-google-test-for-cpp.md).
+- L'**adattatore per Google Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Questo adattatore include un modello di progetto che è possibile aggiungere a una soluzione tramite il menu di scelta rapida **Aggiungi nuovo progetto** nel nodo della soluzione in **Esplora soluzioni** e opzioni configurabili tramite **Strumenti** > **Opzioni**. Per altre informazioni, vedere [procedura: usare Google test in Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++** . È integrato in **Esplora test** ma attualmente non include un modello di progetto, pertanto è necessario configurarlo manualmente. Per altre informazioni, vedere [Procedura: Usare Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** è incluso come componente predefinito del carico di lavoro **Sviluppo di applicazioni desktop con C++** . È integrato in **Esplora test** ma attualmente non include un modello di progetto, pertanto è necessario configurarlo manualmente. Per altre informazioni, vedere [procedura: usare boost. test in Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- Il supporto per **CTest** è incluso nel componente **CMake Tools per C++** , che fa parte del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Tuttavia, CTest non è ancora completamente integrato con **Esplora test**. Per altre informazioni, vedere [Procedura: Usare CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
+- Il supporto per **CTest** è incluso nel componente **CMake Tools per C++** , che fa parte del carico di lavoro **Sviluppo di applicazioni desktop con C++** . Tuttavia, CTest non è ancora completamente integrato con **Esplora test**. Per altre informazioni, vedere [procedura: usare CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 e versioni precedenti**
 
@@ -79,7 +79,7 @@ Per abilitare il codice di test per l'accesso alle funzioni nel progetto da test
 
 ### <a name="link-to-object-or-library-files"></a>Eseguire il collegamento a file oggetto o di libreria
 
-Se il codice di test non esporta le funzioni che si vuole testare, è possibile aggiungere i file con estensione obj o lib di output alle dipendenze del progetto di test. Vedere [Per collegare i test all'oggetto o a file di libreria](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef).
+Se il codice di test non esporta le funzioni che si vuole testare, è possibile aggiungere i file con estensione obj o lib di output alle dipendenze del progetto di test. Vedere [Per collegare i test all'oggetto o a file di libreria](unit-testing-existing-cpp-applications-with-test-explorer.md).
 
 ### <a name="add-include-directives-for-header-files"></a>Aggiungere direttive #include per il file di intestazione
 
@@ -87,12 +87,12 @@ Nel file con estensione *cpp* dell'unit test aggiungere quindi una direttiva `#i
 
 ![Aggiungere direttive include](media/cpp-add-includes-test-project.png)
 
-Per evitare di dover digitare il percorso completo in ogni istruzione include nel file di origine, è possibile aggiungere le cartelle necessarie nelle**Proprietà** **Project** >   > **C/C++**  > **General** > **Additional include Directory**.
+Per evitare di dover digitare il percorso completo in ogni istruzione di inclusione nel file di origine, è possibile aggiungere le cartelle necessarie in **Project** > **Properties** > **C/C++**  > **General** > **Additional include Directory**.
 
 ### <a name="write-test-methods"></a>Scrivere i metodi di test
 
 > [!NOTE]
-> Questa sezione mostra la sintassi per il framework di testing unità Microsoft per C/C++. È documentata di seguito: [Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Per la documentazione di Google Test, vedere [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per Boost.Test, vedere [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Libreria di test Boost: framework di unit test).
+> Questa sezione mostra la sintassi per il framework di testing unità Microsoft per C/C++. La documentazione è disponibile in [Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Per la documentazione di Google Test, vedere [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) (Introduzione a Google Test). Per Boost.Test, vedere [Boost Test library: The unit test framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html) (Libreria di test Boost: framework di unit test).
 
 Il file con estensione *cpp* nel progetto di test include una classe stub e un metodo definiti come esempio per la scrittura del codice di test. Si noti che le firme usano le macro TEST_CLASS e TEST_METHOD, che rendono individuabili i metodi dalla finestra **Esplora test**.
 
@@ -140,7 +140,7 @@ Per le procedure consigliate associate agli unit test, vedere [Nozioni fondament
 
 **Visual Studio 2017 e versioni successive (edizioni Professional ed Enterprise)**
 
-[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) consente di visualizzare rapidamente lo stato di uno unit test senza uscire dall'editor di codice. È possibile inizializzare CodeLens per un progetto di unit test C++ in uno dei modi seguenti:
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) consente di visualizzare rapidamente lo stato di un unit test senza uscire dall'editor di codice. È possibile inizializzare CodeLens per un progetto di unit test C++ in uno dei modi seguenti:
 
 - Modificare e compilare la soluzione o il progetto di test.
 - Ricompilare la soluzione o il progetto.

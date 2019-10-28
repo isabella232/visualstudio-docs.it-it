@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650718"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985348"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 
@@ -31,7 +31,7 @@ Nella finestra **Proprietà** , finestre di dialogo o finestre di progettazione,
 - Quando si aggiunge un oggetto catch all'attività <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> Il browser del tipo può visualizzare i tipi di matrice irregolari, ma non i tipi di matrice multidimensionale. Per informazioni dettagliate, vedere [matrici frastagliate](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrici multidimensionali](http://go.microsoft.com/fwlink/?LinkId=195227) .
+> Il browser del tipo può visualizzare i tipi di matrice irregolari, ma non i tipi di matrice multidimensionale. Per informazioni dettagliate, vedere [matrici frastagliate](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90)) e [matrici multidimensionali](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90)) .
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selezione di un tipo di riferimento o di valore da Browser tipi.
 

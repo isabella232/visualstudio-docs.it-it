@@ -1,5 +1,5 @@
 ---
-title: Integrazione di dati aziendali in SharePoint | Microsoft Docs
+title: Integrazione di dati business in SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,40 +19,40 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbbdba27b5ccc52e64575aad018af4ca20cf2e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06d9e8059db8daa1c27b8c1d5fecc50940b7facb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008795"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986396"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrare i dati aziendali in SharePoint
-  È possibile integrare i dati aziendali in SharePoint. I dati aziendali possono provenire da applicazioni server back-end, ad esempio [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel e SAP, o un servizio Web. Gli utenti possono visualizzare, aggiungere, aggiornare o eliminare i dati aziendali usando gli elenchi esterni o Web part dei dati aziendali in SharePoint.  Gli utenti possono accedere anche questi dati in un'applicazione Microsoft Office, ad esempio Microsoft Outlook. Per altre informazioni, vedere [dove possibile è visualizzazione dei dati esterni](http://go.microsoft.com/fwlink/?LinkId=169295).
+  È possibile integrare i dati aziendali in SharePoint. I dati aziendali possono provenire dalle applicazioni server back-end, ad esempio [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel e SAP o un servizio Web. Gli utenti possono visualizzare, aggiungere, aggiornare o eliminare i dati aziendali utilizzando elenchi esterni o dati aziendali Web part in SharePoint.  Gli utenti possono anche accedere ai dati offline in un'applicazione Microsoft Office, ad esempio Microsoft Outlook. Per ulteriori informazioni, vedere [dove è possibile visualizzare i dati esterni](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
 
- Per integrare i dati in SharePoint, creare un modello per il servizio di integrazione applicativa dei dati (BDC). Il servizio di integrazione applicativa dei dati è un'applicazione in SharePoint che archivia le informazioni sui dati nelle applicazioni aziendali. Per altre informazioni, vedere [servizio di integrazione applicativa dei dati (BDC)](http://go.microsoft.com/fwlink/?LinkID=169276).
+ Per integrare i dati in SharePoint, creare un modello per il servizio di integrazione applicativa dei dati. Il servizio BDC è un'applicazione di SharePoint che archivia le informazioni sui dati nelle applicazioni aziendali. Per ulteriori informazioni, vedere servizio di integrazione applicativa [dei dati](/previous-versions/office/developer/sharepoint-2010/ee556407(v=office.14)).
 
 ## <a name="models-in-visual-studio"></a>Modelli in Visual Studio
- I modelli in Visual Studio consentono di scrivere codice personalizzato per recuperare e aggiornare i dati da origini dati back-end. È anche possibile aggregare i dati da più origini dati. Ad esempio, è possibile visualizzare un elenco di clienti che contiene i dati da un [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] database e un servizio Web.
+ I modelli in Visual Studio consentono di scrivere codice personalizzato per recuperare e aggiornare i dati dalle origini dati back-end. È anche possibile aggregare dati da più origini dati. Ad esempio, è possibile visualizzare un elenco di clienti che contengono dati da un database di [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)] e un servizio Web.
 
- È anche possibile importare i modelli che sono già stati distribuiti in SharePoint. Dopo aver importato un modello, è possibile aggiungere codice personalizzato o semplicemente usare Visual Studio per creare un pacchetto e distribuirlo in più server farm di SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).
+ È inoltre possibile importare modelli già distribuiti in SharePoint. Dopo aver importato un modello, è possibile aggiungere codice personalizzato oppure utilizzare semplicemente Visual Studio per creare il pacchetto e distribuire il modello in più server farm di SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ## <a name="design-a-model-in-visual-studio"></a>Progettare un modello in Visual Studio
- È possibile progettare un modello usando una finestra di progettazione e finestre degli strumenti diversi. Quando si progetta il modello, Visual Studio genera il codice XML del modello. Per altre informazioni, vedere [Cenni preliminari sugli strumenti di progettazione di modelli di integrazione applicativa dei dati](../sharepoint/bdc-model-design-tools-overview.md).
+ È possibile progettare un modello utilizzando una finestra di progettazione e diverse finestre degli strumenti. Quando si progetta il modello, Visual Studio genera il codice XML del modello. Per altre informazioni, vedere [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
- Un modello contiene entità e i metodi.
+ Un modello contiene entità e metodi.
 
 ### <a name="entities"></a>Entità
- Un'entità descrive una raccolta di campi. Ad esempio, un'entità può rappresentare una tabella in un database. Un'entità viene visualizzata come un tipo di contenuto esterno in SharePoint. Per altre informazioni sui tipi di contenuto esterni, vedere [quali sono i tipi di contenuto esterni?](http://go.microsoft.com/fwlink/?LinkId=169293)
+ Un'entità descrive una raccolta di campi. Un'entità, ad esempio, può rappresentare una tabella in un database. Un'entità viene visualizzata come tipo di contenuto esterno in SharePoint. Per ulteriori informazioni sui tipi di contenuto esterno, vedere [che cosa sono i tipi di contenuto esterno?](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14))
 
 ### <a name="methods"></a>Metodi
- Un metodo consente ai consumer del tipo di contenuto esterno per eseguire un'azione sui campi di un'entità. Ad esempio, un metodo Updater potrà consentire agli utenti di modificare l'indirizzo e la data di un cliente di nascita in cui `Address` e `BirthDate` sono campi del `Customer` entità.
+ Un metodo consente ai consumer di un tipo di contenuto esterno di eseguire un'azione sui campi di un'entità. Un metodo di aggiornamento, ad esempio, può consentire agli utenti di modificare l'indirizzo e la data di nascita di un cliente in cui `Address` e `BirthDate` sono campi dell'entità `Customer`.
 
- Visual Studio genera un file di codice del servizio per ogni entità nel modello. Quando si aggiunge un metodo per il modello, Visual Studio genera un metodo corrispondente nel file di codice del servizio. Aggiungere codice per ogni metodo per eseguire l'operazione appropriata. Ad esempio, se si aggiunge un metodo Creator al modello, Visual Studio genera un metodo Creator nel file di codice del servizio. Questo metodo viene chiamato dal servizio di integrazione applicativa dei dati quando un utente sceglie il **nuovo elemento** pulsante in un elenco che si basa sul modello. Pertanto, è possibile aggiungere codice al metodo Creator che aggiungono nuovi dati a un'origine dati. Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
+ Visual Studio genera un file di codice del servizio per ogni entità nel modello. Quando si aggiunge un metodo al modello, Visual Studio genera un metodo corrispondente nel file di codice del servizio. Aggiungere codice a ogni metodo per eseguire l'attività appropriata. Se ad esempio si aggiunge un metodo Creator al modello, Visual Studio genera un metodo Creator nel file di codice del servizio. Questo metodo viene chiamato dal servizio di integrazione applicativa dei dati quando un utente fa clic sul pulsante **nuovo elemento** in un elenco basato sul modello. Quindi, aggiungere il codice al metodo Creator che aggiunge nuovi dati a un'origine dati. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|
-|[Creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md)|Mostra si come creare un nuovo modello o si importa un modello esportato da SharePoint.|
-|[Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)|Viene illustrato come progettare gli elementi di un modello usando gli strumenti di progettazione di Visual Studio.|
-|[Quando Visual Studio di utilizzare SharePoint Designer. Soluzioni di Visual Studio per la compilazione tramite BCS](http://go.microsoft.com/fwlink/?LinkID=183448)|Consente di decidere se usare Visual Studio o utilizzare SharePoint Designer per creare un modello per l'integrazione applicativa dei dati.|
+|[Creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)|Viene illustrato come creare un nuovo modello o importare un modello esportato da SharePoint.|
+|[Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)|Viene illustrato come progettare gli elementi di un modello utilizzando gli strumenti di progettazione di Visual Studio.|
+|[Quando utilizzare SharePoint Designer e Visual Studio quando si compilano soluzioni con BCS](/previous-versions/office/developer/sharepoint-2010/ee558875(v=office.14))|Consente di decidere se utilizzare Visual Studio o utilizzare SharePoint Designer per creare un modello per l'integrazione applicativa dei dati.|

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fff76abdecdd8613a462225278053ef4f6d9694
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829732"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745485"
 ---
 # <a name="basictype"></a>BasicType
-Specifica tipo di base del simbolo.
+Specifica il tipo di base del simbolo.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,47 +50,47 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>Elementi
-btNoType che viene specificato alcun tipo di base.
+btNoType non è specificato alcun tipo di base.
 
-è di tipo base btVoid un `void`.
+il tipo di base di btVoid è un `void`.
 
-btChar tipo di base è un `char` (C /C++ tipo).
+il tipo di base di btChar è un `char`C++ (C/Type).
 
-tipo di base btWChar è un carattere wide (Unicode) (`WCHAR`).
+il tipo di base di btWChar è un carattere wide (Unicode) (`WCHAR`).
 
-è di tipo base btInt `signed int` (C /C++ tipo).
+il tipo di base di btInt è `signed int`C++ (C/Type).
 
-è di tipo base btUInt `unsigned int` (C /C++ tipo).
+il tipo di base di btUInt è `unsigned int`C++ (C/Type).
 
-btFloat tipo di base è un numero a virgola mobile (`FLOAT`).
+il tipo di base di btFloat è un numero a virgola mobile (`FLOAT`).
 
-btBCD tipo di base è un valore decimale a livello di codice binario (`BCD`).
+il tipo di base di btBCD è un valore decimale con codifica binaria (`BCD`).
 
-tipo di base btBool è un valore booleano (`BOOL`).
+il tipo di base di btBool è un valore booleano (`BOOL`).
 
-btLong tipo di base è un `long int` (C /C++ tipo).
+il tipo di base di btLong è un `long int`C++ (C/Type).
 
-tipo base btULong è un' `unsigned long int` (C /C++ tipo).
+il tipo di base di btULong è un `unsigned long int`C++ (C/Type).
 
-tipo di base btCurrency è currency.
+il tipo di base di btCurrency è Currency.
 
-tipo di base btDate è data/ora (`DATE`).
+il tipo di base di btDate è data/ora (`DATE`).
 
-btVariant tipo di base è una struttura di tipo di variabile (`VARIANT`).
+il tipo di base di btVariant è una struttura di tipo variabile (`VARIANT`).
 
-tipo di base btComplex è un numero complesso.
+il tipo di base di btComplex è un numero complesso.
 
-tipo di base btBit è un po'.
+il tipo di base di btBit è bit.
 
-btBSTR tipo di base è una stringa di base o binary (`BSTR`).
+il tipo di base di btBSTR è una stringa di base o binaria (`BSTR`).
 
-è di tipo base btHresult un `HRESULT`.
+il tipo di base di btHresult è un `HRESULT`.
 
 ## <a name="remarks"></a>Note
-I valori di questa enumerazione vengono restituiti per il [Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) (metodo).
+I valori di questa enumerazione vengono restituiti dal metodo [IDiaSymbol:: get_BaseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) .
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: cvconst.h
+Intestazione: cvconst. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)

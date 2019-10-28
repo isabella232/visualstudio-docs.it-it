@@ -8,24 +8,24 @@ ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf962ec4ecade1bb88d9e301d62eb6ab8a5131cf
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: 966983fa15b60db33f11645b25561a74ad5fadbe
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226096"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983443"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Come usare Boost.Test per C++ in Visual Studio
 
-In Visual Studio 2017 e nelle versioni successive l'adattatore di test Boost.Test è integrato nell'IDE di Visual Studio come componente del carico di lavoro **Sviluppo di applicazioni desktop con C++**.
+In Visual Studio 2017 e nelle versioni successive l'adattatore di test Boost.Test è integrato nell'IDE di Visual Studio come componente del carico di lavoro **Sviluppo di applicazioni desktop con C++** .
 
 ![Adattatore di test per Boost.Test](media/cpp-boost-component.png)
 
-Se il carico di lavoro **Sviluppo di applicazioni desktop con C++** non è installato, aprire il **programma di installazione di Visual Studio**. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere il pulsante **Modifica**.
+Se il carico di lavoro **Sviluppo di applicazioni desktop con C++** non è installato, aprire il **programma di installazione di Visual Studio**. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere il pulsante **Modifica**.
 
 ## <a name="install-boost"></a>Installare Boost
 
-Per usare Boost.Test è necessario installare [Boost](http://www.boost.org/). Se Boost non è stato installato, è consigliabile usare il sistema di gestione pacchetti Vcpkg.
+Per usare Boost.Test è necessario installare [Boost](https://www.boost.org/). Se Boost non è stato installato, è consigliabile usare il sistema di gestione pacchetti Vcpkg.
 
 1. Seguire le istruzioni in [vcpkg: gestione pacchetti per C++ per Windows](/cpp/vcpkg) per installare vcpkg, se non è già stato installato.
 
@@ -55,7 +55,7 @@ In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test precon
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Aggiungi** > **Nuovo progetto**.
 
-1. Nel riquadro sinistro scegliere **Visual C++** > **Desktop di Windows** e quindi scegliere il modello **Applicazione console di Windows**.
+1. Nel riquadro sinistro scegliere **Visual C++**  > **Desktop di Windows** e quindi scegliere il modello **Applicazione console di Windows**.
 
 1. Specificare un nome per il progetto e scegliere **OK**.
 
@@ -79,7 +79,7 @@ In Visual Studio 2017 versione 15.5 non sono disponibili progetti di test precon
 
    d. Per aprire le **pagine delle proprietà**, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**.
 
-   d. Espandere **C/C++** > **Generazione di codice**, quindi selezionare **Libreria di Runtime**. Selezionare **/MTd** per la libreria di runtime statica di debug o **/MT** per la libreria di runtime statica di versione.
+   d. Espandere **C/C++**  > **Generazione di codice**, quindi selezionare **Libreria di Runtime**. Selezionare **/MTd** per la libreria di runtime statica di debug o **/MT** per la libreria di runtime statica di versione.
 
    f. Espandere **Linker** > **System**. Verificare che **SubSystem** sia impostato su **Console**.
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 
 ## <a name="write-and-run-tests"></a>Scrivere ed eseguire i test
 
-È ora possibile scrivere ed eseguire i Boost Test. Per informazioni sulle macro dei test, vedere la [documentazione della libreria Boost Test](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html). Per informazioni sull'individuazione, l'esecuzione e il raggruppamento dei test usando **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
+È ora possibile scrivere ed eseguire i Boost Test. Per informazioni sulle macro dei test, vedere la [documentazione della libreria Boost Test](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html). Per informazioni sull'individuazione, l'esecuzione e il raggruppamento dei test usando **Esplora test**, vedere [Eseguire unit test con Esplora test](run-unit-tests-with-test-explorer.md).
 
 ## <a name="see-also"></a>Vedere anche
 

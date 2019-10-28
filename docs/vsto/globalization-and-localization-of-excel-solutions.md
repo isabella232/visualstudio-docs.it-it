@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0a7293672bb0b4e74515b71d2e0c4f961440b8c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255983"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986048"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizzazione e localizzazione di soluzioni Excel
   Questa sezione contiene considerazioni speciali per le soluzioni Microsoft Office Excel eseguite in computer che hanno impostazioni di Windows non in inglese. Gli aspetti da considerare per la globalizzazione e la localizzazione di soluzioni Microsoft Office sono gli stessi implicati negli altri tipi di soluzioni create con Visual Studio. Per informazioni generali, vedere [globalizzazione e localizzazione delle applicazioni](../ide/globalizing-and-localizing-applications.md).
@@ -36,7 +36,7 @@ ms.locfileid: "71255983"
 
  Anche se si usa il formato inglese (Stati Uniti) per i dati passati o modificati da codice gestito, Excel interpreta e visualizza i dati correttamente in base alle impostazioni locali dell'utente finale. In Excel i dati vengono formattati in maniera corretta perché il codice gestito passa l'ID delle impostazioni locali 1033 insieme ai dati, a indicare che i dati sono nel formato inglese (Stati Uniti) e quindi devono essere riformattati in modo da corrispondere alle impostazioni locali dell'utente.
 
- Ad esempio, se le opzioni internazionali degli utenti finali sono impostate sulle impostazioni locali tedesche (Germania), si prevede che la data 29 giugno 2005 venga formattata in questo modo: 29.06.2005. Tuttavia, se la soluzione passa la data a Excel sotto forma di stringa, è necessario formattare la data in base al formato inglese (Stati Uniti): 6/29/2005. Se la cella viene formattata come una cella di data, Excel visualizzerà la data nel formato della lingua tedesca (Germania).
+ Se ad esempio le opzioni internazionali degli utenti finali sono impostate sulle impostazioni locali per la lingua tedesca (Germania), ci si aspetta che la data 29 giugno 2005 sia formattata come segue: 29.06.2005. Tuttavia, se la soluzione passa la data a Excel sotto forma di stringa, è necessario formattare la data in base al formato inglese (Stati Uniti): 6/29/2005. Se la cella viene formattata come una cella di data, Excel visualizzerà la data nel formato della lingua tedesca (Germania).
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Passare altri ID impostazioni locali al modello a oggetti di Excel
  Common Language Runtime (CLR) passa automaticamente l'ID delle impostazioni locali 1033 a tutti i metodi e le proprietà nel modello a oggetti di Excel che accettano i dati dipendenti dalle impostazioni locali. Non è possibile modificare automaticamente questo comportamento per tutte le chiamate nel modello a oggetti. Tuttavia, è possibile passare un ID delle impostazioni locali diverso a un metodo specifico usando <xref:System.Type.InvokeMember%2A> per chiamare il metodo e passando l'ID delle impostazioni locali al parametro *culture* del metodo.
@@ -47,7 +47,7 @@ ms.locfileid: "71255983"
  È tuttavia necessario assicurarsi che tutte le parti del codice che interagiscono con il testo del documento continuino a corrispondere alla lingua del testo e che i segnalibri, gli intervalli denominati e gli altri campi visualizzati si adattino alle eventuali riformattazioni del documento di Office necessarie per rispettare le differenze nella grammatica e nella lunghezza del testo. Per i modelli di documenti che contengono testo relativamente breve, è possibile memorizzare il testo in file di risorse per poi caricarlo in fase di esecuzione.
 
 ### <a name="text-direction"></a>Direzione del testo
- In Excel, è possibile impostare una proprietà del foglio di lavoro per il rendering del testo da destra a sinistra. I controlli host, o qualsiasi controllo con una `RightToLeft` proprietà, posizionati nella finestra di progettazione corrispondono automaticamente a tali impostazioni in fase di esecuzione. Per Word non è presente un'impostazione del documento per il testo bidirezionale (è sufficiente modificare l'allineamento del testo), pertanto non è possibile eseguire il mapping dei controlli a questa impostazione. che devono quindi essere impostati individualmente. È possibile scrivere codice per esaminare tutti i controlli e imporre il rendering del testo da destra a sinistra.
+ In Excel, è possibile impostare una proprietà del foglio di lavoro per il rendering del testo da destra a sinistra. I controlli host, o qualsiasi controllo che disponga di una proprietà `RightToLeft`, che viene posizionata nella finestra di progettazione corrisponde automaticamente a queste impostazioni in fase di esecuzione. Per Word non è presente un'impostazione del documento per il testo bidirezionale (è sufficiente modificare l'allineamento del testo), pertanto non è possibile eseguire il mapping dei controlli a questa impostazione. che devono quindi essere impostati individualmente. È possibile scrivere codice per esaminare tutti i controlli e imporre il rendering del testo da destra a sinistra.
 
 ### <a name="change-culture"></a>Modifica impostazioni cultura
  Il codice di personalizzazione a livello di documento in genere condivide il thread principale dell'interfaccia utente di Excel, per cui tutte le modifiche apportate alle impostazioni cultura del thread influiscono su qualsiasi altro elemento in esecuzione su tale thread. La modifica non è limitata alla personalizzazione.
@@ -55,9 +55,9 @@ ms.locfileid: "71255983"
  I controlli Windows Form vengono inizializzati prima dell'avvio dei componenti aggiuntivi VSTO a livello di applicazione da parte dell'applicazione host. In queste situazioni, le impostazioni cultura devono essere modificate prima dell'impostazione dei controlli dell'interfaccia utente.
 
 ## <a name="install-the-language-packs"></a>Installare i Language Pack
- Se Windows è impostato su una lingua diversa dall'inglese, è possibile installare i Language Pack di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] in modo da visualizzare i messaggi di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nella stessa lingua di Windows. Se gli utenti finali eseguono le soluzioni con le impostazioni non in lingua inglese per Windows, devono avere il Language Pack corretto per visualizzare i messaggi di runtime nella stessa lingua di Windows. I [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Language Pack sono disponibili nell' [area download Microsoft](http://www.microsoft.com/downloads).
+ Se Windows è impostato su una lingua diversa dall'inglese, è possibile installare i Language Pack di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] in modo da visualizzare i messaggi di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nella stessa lingua di Windows. Se gli utenti finali eseguono le soluzioni con le impostazioni non in lingua inglese per Windows, devono avere il Language Pack corretto per visualizzare i messaggi di runtime nella stessa lingua di Windows. I Language Pack [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sono disponibili nell' [area download Microsoft](https://www.microsoft.com/download).
 
- Inoltre, sono necessari i Language Pack per .NET Framework ridistribuibili per i messaggi di ClickOnce. I Language Pack .NET Framework sono disponibili nell' [area download Microsoft](http://www.microsoft.com/downloads).
+ Inoltre, sono necessari i Language Pack per .NET Framework ridistribuibili per i messaggi di ClickOnce. I Language Pack .NET Framework sono disponibili nell' [area download Microsoft](https://www.microsoft.com/download).
 
 ## <a name="regional-settings-and-excel-com-calls"></a>Impostazioni internazionali e chiamate COM di Excel
  Ogni volta che un client gestito chiama un metodo su un oggetto COM e deve passare informazioni specifiche delle impostazioni cultura, usa la proprietà <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (impostazioni locali) che corrisponde alle impostazioni locali del thread corrente, che per impostazione predefinita vengono ereditate dalle impostazioni internazionali dell'utente. Tuttavia, quando si effettua una chiamata nel modello a oggetti di Excel da una soluzione Excel creata tramite gli strumenti di sviluppo di Office in Visual Studio, il formato dati inglese (Stati Uniti) con ID delle impostazioni locali 1033 viene passato automaticamente al modello a oggetti di Excel. Tutti i dati con formattazione dipendente dalle impostazioni locali, ad esempio le date e la valuta, devono essere formattati usando il formato dati inglese (Stati Uniti) prima di essere passati a Microsoft Office Excel o prima che vengano letti dal codice del progetto.
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Lo stesso codice, se usato in una soluzione creata tramite gli strumenti di sviluppo di Office in Visual Studio e passato a Excel tramite l'interoperabilità COM, produce gli stessi risultati quando la data viene formattata in stile en-US.
 
- Ad esempio:
+ Esempio:
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
@@ -97,6 +97,6 @@ Application.ActiveCell.Value2 = "05/12/04"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Utilizzare l'interfaccia utente multilingue di Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
+- [Procedura: utilizzare l'interfaccia utente multilingue di Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

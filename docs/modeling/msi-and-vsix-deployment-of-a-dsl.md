@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e42b5156ced1c01995882e3250c7243c18d24d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658369"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984444"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 È possibile installare un linguaggio specifico di dominio nel computer in uso o in altri computer. Visual Studio deve essere già installato nel computer di destinazione.
@@ -68,7 +68,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
  Per ulteriori informazioni sui file MSI e altre opzioni di distribuzione, vedere [distribuzione di applicazioni, servizi e componenti](../deployment/deploying-applications-services-and-components.md).
 
- Per compilare un'identità del servizio gestito, è necessario aggiungere un progetto di installazione alla soluzione di Visual Studio. Il metodo più semplice per creare un progetto di installazione consiste nell'usare il modello CreateMsiSetupProject.tt, che è possibile scaricare dal [sito VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Per compilare un'identità del servizio gestito, è necessario aggiungere un progetto di installazione alla soluzione di Visual Studio. Il metodo più semplice per creare un progetto di installazione consiste nell'usare il modello CreateMsiSetupProject.tt, che è possibile scaricare dal [sito VMSDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).
 
 ### <a name="to-deploy-a-dsl-in-an-msi"></a>Per distribuire un linguaggio DSL in un file MSI
 
@@ -96,7 +96,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
    - Nel menu **Compila** aprire **Configuration Manager**e selezionare la configurazione che si desidera compilare, ad esempio **versione** o **debug**.
 
-4. Passare a [visualizzazione e modellazione SDK Home page](http://go.microsoft.com/fwlink/?LinkID=186128)e dalla scheda **download** scaricare **CreateMsiSetupProject.TT**.
+4. Passare a [visualizzazione e modellazione SDK Home page](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)e dalla scheda **download** scaricare **CreateMsiSetupProject.TT**.
 
 5. Aggiungere **CreateMsiSetupProject.TT** al progetto DSL.
 
@@ -126,7 +126,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
     - Quando si fa doppio clic sul file, viene avviato Visual Studio e viene aperto il file DSL nell'editor DSL.
 
-    Se si preferisce, è possibile creare manualmente il progetto di installazione, anziché usare il modello di testo. Per una procedura dettagliata che include questa procedura, vedere il capitolo 5 del [Lab SDK di visualizzazione e modellazione](http://go.microsoft.com/fwlink/?LinkId=208878).
+    Se si preferisce, è possibile creare manualmente il progetto di installazione, anziché usare il modello di testo. Per una procedura dettagliata che include questa procedura, vedere il capitolo 5 del [Lab SDK di visualizzazione e modellazione](https://code.msdn.microsoft.com/DSLToolsLab/Release/ProjectReleases.aspx?ReleaseId=4207).
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Per disinstallare un linguaggio DSL installato da un file MSI
 

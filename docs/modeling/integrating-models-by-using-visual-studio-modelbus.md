@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27abf8470527e4e5de5c05ca3438a8471b7c80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b5a0ad18c7b1472e8c08ccc2902cade7714f2b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667775"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985271"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 
@@ -36,15 +36,13 @@ Per altre informazioni e per il codice di esempio, vedere:
 
 ### <a name="expose"></a>Per esporre una definizione DSL al bus di modello
 
-1. Scaricare e installare l'estensione ModelBus di Visual Studio, se non è già installata. Per altre informazioni, vedere [SDK di visualizzazione e modellazione](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Aprire il file di definizione del linguaggio specifico di dominio. Fare clic con il pulsante destro del mouse sull'area di progettazione e quindi scegliere **Abilita ModelBus**.
 
-2. Aprire il file di definizione del linguaggio specifico di dominio. Fare clic con il pulsante destro del mouse sull'area di progettazione e quindi scegliere **Abilita ModelBus**.
+2. Nella finestra di dialogo scegliere si **desidera esporre questo DSL al ModelBus**. È possibile scegliere entrambe le opzioni se si vuole che il linguaggio specifico di dominio esponga i propri modelli e usi riferimenti ad altri modelli.
 
-3. Nella finestra di dialogo scegliere si **desidera esporre questo DSL al ModelBus**. È possibile scegliere entrambe le opzioni se si vuole che il linguaggio specifico di dominio esponga i propri modelli e usi riferimenti ad altri modelli.
+3. Fare clic su **OK**. Un nuovo progetto "ModelBusAdapter" verrà aggiunto alla soluzione relativa al linguaggio specifico di dominio.
 
-4. Fare clic su **OK**. Un nuovo progetto "ModelBusAdapter" verrà aggiunto alla soluzione relativa al linguaggio specifico di dominio.
-
-5. Se si vuole accedere al linguaggio specifico di dominio da un modello di testo, è necessario modificare il file AdapterManager.tt nel nuovo progetto. Ignorare questo passaggio se si vuole accedere al linguaggio specifico di dominio da altro codice, ad esempio comandi e gestori di eventi. Per ulteriori informazioni, vedere [utilizzo di Visual Studio ModelBus in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+4. Se si vuole accedere al linguaggio specifico di dominio da un modello di testo, è necessario modificare il file AdapterManager.tt nel nuovo progetto. Ignorare questo passaggio se si vuole accedere al linguaggio specifico di dominio da altro codice, ad esempio comandi e gestori di eventi. Per ulteriori informazioni, vedere [utilizzo di Visual Studio ModelBus in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
    1. Modificare la classe di base di AdapterManagerBase in [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
@@ -56,9 +54,9 @@ Per altre informazioni e per il codice di esempio, vedere:
 
       Se si vuole accedere al linguaggio specifico di dominio sia da modelli di testo che da altro codice, sono necessari due adattatori, uno modificato e uno non modificato.
 
-6. Fare clic su **trasforma tutti i modelli**.
+5. Fare clic su **trasforma tutti i modelli**.
 
-7. Ricompilare la soluzione.
+6. Ricompilare la soluzione.
 
    Per ModelBus sarà ora possibile aprire istanze di questo linguaggio specifico di dominio.
 
@@ -78,7 +76,7 @@ Per assicurarsi che gli ID elemento siano salvati in modo permanente:
 
     Fare clic sul nodo della classe e nella Finestra Proprietà verificare che **Serialize ID** sia impostato su `true`.
 
-   In alternativa, se per identificare gli elementi si preferisce usare i nomi di elementi anziché i GUID, è possibile eseguire l'override di parti degli adattatori generati. Eseguire l'override dei metodi seguenti nella classe Adapter:
+   In alternativa, se si desidera utilizzare i nomi di elemento per identificare gli elementi anziché i GUID, è possibile eseguire l'override di parti degli adapter generati. Eseguire l'override dei metodi seguenti nella classe Adapter:
 
 - Eseguire l'override di `GetElementId` affinché venga restituito l'identificatore che si vuole usare. Questo metodo viene chiamato quando vengono creati i riferimenti.
 
@@ -124,7 +122,7 @@ Per consentire a un linguaggio DSL di usare riferimenti a un altro linguaggio DS
 
 2. Selezionare il **tipo appropriato di ModelBusReference**: per un modello o per un elemento all'interno di un modello.
 
-3. Nella stringa di filtro della finestra di dialogo File, immettere una stringa come `Family Tree files |*.ftree`. Sostituire l'estensione di file del linguaggio specifico di dominio esposto.
+3. Nella stringa di filtro della finestra di dialogo File, immettere una stringa come `Family Tree files |*.ftree`. Sostituire l'estensione di file del linguaggio DSL esposto.
 
 4. Se si sceglie di fare riferimento a un elemento in un modello, è possibile aggiungere un elenco di tipi che possono essere selezionati dall'utente, ad esempio Company.FamilyTree.Person.
 

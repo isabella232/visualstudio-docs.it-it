@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8929414c0e36983d378ea2a801803321f3aa88c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eac7e512d2fbfb5367725b3878d292444961b6de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835526"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739400"
 ---
-# <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Specifica se il `this` puntatore viene contrassegnato come con restrizioni.
+# <a name="idiasymbolget_restrictedtype"></a>IDiaSymbol::get_restrictedType
+Specifica se il puntatore `this` viene contrassegnato come con restrizioni.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,7 +30,7 @@ HRESULT get_restrictedType(
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Un puntatore a un `BOOL` che specifica se il `this` puntatore viene contrassegnato come con restrizioni.
+out Puntatore a un `BOOL` che specifica se il puntatore `this` è contrassegnato come con restrizioni.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Includere i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: includere i prerequisiti con un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47142e63976a743166e5211631e77a0c0878ad9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406962"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727900"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedura: Includere i prerequisiti con un'applicazione ClickOnce
 Prima di poter distribuire i prerequisiti relativi al software con un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario scaricare i pacchetti di installazione per quei prerequisiti nel computer di sviluppo. Quando si pubblica un'applicazione e si sceglie **Scarica prerequisiti dallo stesso percorso dell'applicazione**, si verificherà un errore se i pacchetti di installazione non si trovano nella cartella **Pacchetti**.
 
 > [!NOTE]
-> Per aggiungere un pacchetto di installazione di .NET Framework, vedere [Guida alla distribuzione di .NET Framework per sviluppatori](/dotnet/framework/deployment/deployment-guide-for-developers).
+> Per aggiungere un pacchetto di installazione per la .NET Framework, vedere [Guida alla distribuzione di .NET Framework per sviluppatori](/dotnet/framework/deployment/deployment-guide-for-developers).
 
 ## <a name="Package"></a> Per aggiungere un pacchetto di installazione tramite Package.xml
 
@@ -31,10 +31,10 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
 
 3. Nel Blocco Note aprire il file*Package.xml*.
 
-4. Individuare il **Name** elemento contenente **http://go.microsoft.com/fwlink** e copiare l'URL. Includere la parte **LinkID**.
+4. Individuare l'elemento **Name** che contiene **http://go.microsoft.com/fwlink** , quindi copiare l'URL. Includere la parte **LinkID**.
 
    > [!NOTE]
-   > Se nessun **Name** elemento contiene **http://go.microsoft.com/fwlink** , aprire il **Product** file nella cartella radice del prerequisito e individuare il **fwlink** stringa.
+   > Se nessun elemento **Name** contiene **http://go.microsoft.com/fwlink** , aprire il file **Product. XML** nella cartella radice del prerequisito e individuare la stringa **fwlink** .
 
    > [!IMPORTANT]
    > Alcuni prerequisiti hanno più pacchetti di installazione (ad esempio, per sistemi a 32 bit o a 64 bit). Se più elementi **Nome** contengono **fwlink**, è necessario ripetere i passaggi restanti per ciascuno di essi.

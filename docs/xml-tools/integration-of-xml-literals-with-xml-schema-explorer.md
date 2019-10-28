@@ -8,16 +8,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81f5db0477713ff99e9b7894bcbe86b3cf33018
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf073145b0deb21a2ec29ac1fff16be08fb24593
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601771"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986293"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integrazione di valori letterali XML con XML Schema Explorer
 
-Visual Basic supporta i valori letterali XML, il che significa che è possibile incorporare frammenti XML direttamente nel codice di Visual Basic. Per altre informazioni, vedere [Cenni preliminari sui valori letterali XML](http://go.microsoft.com/fwlink/?LinkId=140325).
+Visual Basic supporta i valori letterali XML, il che significa che è possibile incorporare frammenti XML direttamente nel codice di Visual Basic. Per altre informazioni, vedere [Cenni preliminari sui valori letterali XML](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview).
 
 ## <a name="how-to"></a>Procedura
 

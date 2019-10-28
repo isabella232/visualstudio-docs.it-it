@@ -1,5 +1,5 @@
 ---
-title: Selezionare una finestra di dialogo tipo di codice | Microsoft Docs
+title: Finestra di dialogo Seleziona tipo di codice | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 761845044bae9b35694bef53cae36dd64f3dd6ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929760"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729578"
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 Per visualizzare questa finestra di dialogo, aprire la finestra di dialogo **Connetti a processo** e fare clic su **Seleziona**.
 
- **Determina automaticamente il tipo di codice per eseguire il debug** verrà selezionato il debugger appropriato in base al tipo di codice che è in esecuzione.
+ **Determinare automaticamente il tipo di codice di cui eseguire il debug** Il debugger appropriato verrà selezionato in base al tipo di codice in esecuzione.
 
- **Esegui il debug di questi tipi di codice:** Dall'elenco fornito, scegliere il tipo di codice di cui eseguire il debug.
+ **Eseguire il debug di questi tipi di codice:** Dall'elenco fornito scegliere il tipo di codice di cui si vuole eseguire il debug.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

@@ -13,23 +13,23 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71d4501fff04b62abe392c6684a4a0551dea9ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e9bb3905da6227b978bc27b96493500f8d6d2ff
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443659"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984545"
 ---
 # <a name="iwebappdiagnosticssetup-interface"></a>Interfaccia IWebAppDiagnosticsSetup
-Questa interfaccia viene implementata da un'applicazione di debug PDM per creare oggetti COM nel processo di cui è in corso il debug e per abilitare la diagnostica web. Se PDM esegue il debug dell'applicazione oggetto implementa [IObjectWithSite](http://go.microsoft.com/fwlink/?LinkId=232438), Internet Explorer chiama [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) dopo che è stato creato e passa un riferimento a [IWebBrowser2](http://go.microsoft.com/fwlink/?LinkId=232449). Le chiamate di un'applicazione WWA [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) e passa il WWA interfaccia IWebApplicationHost invece. Se [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439) è stato chiamato con un valore diverso da NULL, [IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) restituisce true. Se non, restituisce false e le chiamate a [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) esito negativo.  
+Questa interfaccia viene implementata da un'applicazione di debug PDM per creare oggetti COM nel processo di cui è in corso il debug e per abilitare la diagnostica Web. Se l'oggetto dell'applicazione di debug PDM implementa [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite), Internet Explorer chiama il [sito](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) a sua volta dopo che è stato creato e passa un riferimento a [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127(v=vs.85)). Un'applicazione WWA chiama il [sito](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) e passa invece l'interfaccia WWA IWebApplicationHost. Se [il](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) metodo è stato chiamato con un valore diverso da null, [IWebAppDiagnosticsSetup::D iagnosticssupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md) restituisce true. In caso contrario, restituisce false e le chiamate a [IWebAppDiagnosticsSetup:: CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md) hanno esito negativo.  
   
 > [!IMPORTANT]
-> `IWebAppDiagnosticsSetup` viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
+> `IWebAppDiagnosticsSetup` viene implementato da PDM v 11.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="methods"></a>Metodi  
  Questa interfaccia espone i metodi seguenti.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Ottiene i documenti di testo che sono nascoste per il filtro specificato.|  
-|[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)|Determina se il documento specificato appartiene a uno dei nodi figlio del nodo.|
+|[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)|Ottiene i documenti di testo nascosti dal filtro specificato.|  
+|[IWebAppDiagnosticsSetup::DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)|Determina se il documento specificato appartiene a uno dei nodi figlio di questo nodo.|

@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668237"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985039"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 
@@ -59,7 +59,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
   Vedere:
 
-- [Video: debug visivo con l'integrazione del debugger con la mappa codici (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Video: debug visivo con l'integrazione del debugger con la mappa codici (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [Eseguire il mapping dello stack di chiamate](#MapStack)
 
@@ -178,7 +178,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
 
 - **Ricerca per categorie arrestare la mappa aggiungendo automaticamente nuovi stack di chiamate?**
 
-   Scegliere ![Button &#45; Mostra stack di chiamate nella mappa del codice ](../debugger/media/debuggermap_automaticupdateicon.gif) automaticamente sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl**  + **MAIUSC**  +  **`** .
+   Scegliere ![pulsante &#45; Mostra stack di chiamate nella mappa del codice](../debugger/media/debuggermap_automaticupdateicon.gif)automaticamente sulla barra degli strumenti della mappa. Per aggiungere manualmente lo stack di chiamate corrente alla mappa, premere **Ctrl**  + **MAIUSC**  +  **`** .
 
    La mappa continuerà a evidenziare gli stack di chiamate esistenti sulla mappa durante il debug.
 

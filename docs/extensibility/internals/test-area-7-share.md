@@ -1,5 +1,5 @@
 ---
-title: 'Area di test 7: Condivisione | Microsoft Docs'
+title: 'Area di test 7: condivisione | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,52 +11,52 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b117bcf78d4644533f8931296e6f726281fe14e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c7b698f3802425a16476931513b6e4fe314d9954
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327851"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722373"
 ---
-# <a name="test-area-7-share"></a>Area di test 7: Condividi
-Questa area di test illustra gli elementi di condivisione tra località, tramite il **condivisione** comando.
+# <a name="test-area-7-share"></a>Area di test 7: Condividere
+Questa area di test copre la condivisione di elementi tra percorsi tramite il comando **share** .
 
- È un'operazione di hhare la duplicazione apparente di file e cartella elementi tra due o più posizioni all'interno di una gerarchia di file di controllo di origine. Nel server non è realmente verificarsi la duplicazione, ma l'utente di visualizzare lo stesso file in due o più percorsi specificati. Ogni volta che vengono apportate modifiche per gli elementi condivisi, tali modifiche vengono visualizzati in tutti gli altri percorsi condivisi.
+ Un'operazione hhare è la duplicazione apparente di file e elementi di cartella tra due o più posizioni all'interno di una gerarchia di file del controllo del codice sorgente. La duplicazione non viene effettivamente eseguita sul server, ma l'utente visualizza lo stesso file in due o più percorsi specificati. Ogni volta che vengono apportate modifiche a uno degli elementi condivisi, le modifiche vengono visualizzate in tutti gli altri percorsi condivisi.
 
- Condivisione in cartelle funziona se si seleziona una cartella con almeno un file sotto controllo del codice sorgente in esso. Il comando di condivisione è disabilitato nelle condizioni seguenti:
+ La condivisione in cartelle funziona se si seleziona una cartella con almeno un file nel controllo del codice sorgente. Il comando Condividi è disabilitato nelle condizioni seguenti:
 
-- Se la cartella selezionata è una cartella vuota.
+- Se la cartella selezionata è vuota.
 
-- Se è presente una cartella reale, ma non contiene alcun file di controllo di origine.
+- Se è presente una cartella reale, ma non contiene alcun file del controllo del codice sorgente.
 
-- Se è presente una cartella virtuale, se i file nel controllo del codice sorgente sono in esso o non.
+- Se è presente una cartella virtuale, se i file nel controllo del codice sorgente sono presenti o meno.
 
-- Se è presente un progetti Web sito remoto.
+- Se è presente un progetto Web del sito remoto.
 
-## <a name="command-menu-access"></a>Accesso a comandi di Menu
- Nell'esempio [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nei test case vengono usati percorsi di menu ambiente di sviluppo integrato.
+## <a name="command-menu-access"></a>Accesso al menu dei comandi
+ Nei test case vengono utilizzati i seguenti [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment i percorsi dei menu.
 
- Condividere: **File**->**controllo del codice sorgente**->**condivisione**.
+ Condivisione: **File** -> il**controllo del codice sorgente** ->**condivisione**.
 
 ## <a name="expected-behavior"></a>Comportamento previsto
 
-- File condivisi viene visualizzato in percorso condiviso.
+- Il file condiviso viene visualizzato in un percorso condiviso.
 
-- Visualizzazione origine controllo versione archivio della cronologia mostra che i file sono condivisi.
+- La visualizzazione della cronologia dell'archivio delle versioni del controllo del codice sorgente Mostra che i file sono condivisi.
 
-- Modifica di un file condiviso consente di modificare entrambe le posizioni del file.
+- La modifica di un file condiviso modifica entrambe le posizioni del file.
 
 ## <a name="test-cases"></a>Test case
- Di seguito sono specifici test case per l'area di test di condivisione.
+ Di seguito sono riportati i test case specifici per l'area test di condivisione.
 
-|Operazione|Passi del test|Per verificare i risultati previsti|
+|Operazione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
-|Condividere un file da un progetto caricato nel controllo del codice sorgente in un altro progetto caricato|1.  Creare un nuovo progetto.<br />2.  Aggiungere un secondo progetto alla soluzione.<br />3.  Creare un file nel progetto secondo con un nome che non è presente nel primo progetto.<br />4.  Aggiungere la soluzione al controllo del codice sorgente.<br />5.  Selezionare il primo progetto.<br />6.  Aprire **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />7.  Condividere il file dal progetto secondo al primo progetto.<br />8.  Accettare **Estrai** se richiesto.|Comportamento previsto comune.|
-|Condividere un file da un progetto a un altro|1.  Creare un nuovo progetto.<br />2.  Aggiungerlo al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare un secondo progetto (nuova soluzione).<br />5.  Aggiungere la soluzione al controllo del codice sorgente.<br />6.  Selezionare il progetto.<br />7.  Aprire il **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />8.  Condividere un file dal progetto precedentemente aggiunto al progetto aperto.<br />9. Accettare **Estrai** se richiesto.|Comportamento previsto comune.|
-|Condividere un file non fa parte del progetto dal controllo del codice sorgente nel progetto attualmente caricato|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un file al controllo del codice sorgente che non fa parte del progetto o della soluzione.<br />4.  Selezionare il progetto e aprire il **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />5.  Selezionare un file all'interno di **condividere** finestra di dialogo che non esiste all'interno del progetto corrente o una soluzione e condividerlo.<br />6.  Accettare **Estrai** se richiesto.|Archivio del controllo codice sorgente ha eseguito un'operazione Get, in modo che il file è ora in corrispondenza della posizione locale del progetto.|
-|Condivisione di file all'interno dello stesso progetto a un'altra cartella|1.  Selezionare **Estrai automaticamente** nelle **Tools** -> **opzioni** -> **controllo del codice sorgente**.<br />2.  Creare un nuovo progetto e aggiungerlo al controllo del codice sorgente.<br />3.  Aggiungere una cartella al progetto.<br />4.  Aggiungere un file nella cartella e archiviare la cartella.<br />5.  Selezionare la cartella.<br />6.  Aprire **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />7.  Condividere il file nella cartella selezionata.|Comportamento previsto comune.<br /><br /> Prima che possa essere utilizzato per la condivisione della cartella deve essere selezionata con un file in essa contenuti.|
-|Condividere una cartella nel progetto caricato, ricorsivi|1.  Creare un nuovo progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Selezionare il progetto.<br />4.  Aprire il **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />5.  Selezionare una cartella.<br />6.  Condividere la cartella in modo ricorsivo nel progetto.|Comportamento previsto comune.|
-|Condivisione di file diversi da un progetto a un altro|1.  Creare un nuovo progetto con molti file.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare un nuovo progetto in una nuova soluzione.<br />5.  Aggiungere la soluzione al controllo del codice sorgente.<br />6.  Selezionare il progetto.<br />7.  Aprire il **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />8.  Condividere i file diversi dal progetto creato in precedenza al progetto attualmente aperto.|Comportamento previsto comune.|
+|Condividere un file da un progetto caricato nel controllo del codice sorgente a un altro progetto caricato|1. creare un nuovo progetto.<br />2. aggiungere un secondo progetto alla soluzione.<br />3. creare un file nel secondo progetto con un nome non presente nel primo progetto.<br />4. aggiungere la soluzione al controllo del codice sorgente.<br />5. Selezionare il primo progetto.<br />6. finestra di dialogo Apri **condivisione** (**file**  -> **controllo del codice sorgente**  -> **condivisione**).<br />7. condividere il file dal secondo progetto al primo progetto.<br />8. se richiesto, accettare il **controllo** .|Comportamento previsto comune.|
+|Condividere un file da un progetto a un altro|1. creare un nuovo progetto.<br />2. aggiungerlo al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare un secondo progetto (nuova soluzione).<br />5. aggiungere la soluzione al controllo del codice sorgente.<br />6. Selezionare il progetto.<br />7. Aprire la finestra di dialogo **Condividi** (**file**  -> **controllo del codice sorgente**  -> **condivisione**).<br />8. condividere un file dal progetto aggiunto in precedenza al progetto aperto.<br />9. se richiesto, accettare il **controllo** .|Comportamento previsto comune.|
+|Condividere un file non parte del progetto dal controllo del codice sorgente nel progetto attualmente caricato|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. aggiungere un file al controllo del codice sorgente che non fa parte del progetto o della soluzione.<br />4. Selezionare il progetto e aprire la finestra di dialogo **Condividi** (**file**  -> **controllo del codice sorgente**  -> **condivisione**).<br />5. Selezionare un file nella finestra di dialogo **Condividi** che non esiste all'interno del progetto o della soluzione corrente e condividerlo.<br />6. se richiesto, accettare il **controllo** .|L'archivio del controllo del codice sorgente ha eseguito un'operazione get, quindi il file è ora il percorso locale del progetto.|
+|Condividere i file all'interno dello stesso progetto in un'altra cartella|1. Selezionare **Estrai automaticamente** in **strumenti**  -> **Opzioni**  -> **controllo del codice sorgente**.<br />2. creare un nuovo progetto e aggiungerlo al controllo del codice sorgente.<br />3. aggiungere una cartella al progetto.<br />4. aggiungere un file alla cartella e archiviare la cartella.<br />5. Selezionare la cartella.<br />6. finestra di dialogo Apri **condivisione** (**file**  -> **controllo del codice sorgente**  -> **condivisione**).<br />7. condividere il file nella cartella selezionata.|Comportamento previsto comune.<br /><br /> È necessario archiviare la cartella con un file al suo interno prima di poterla usare per la condivisione.|
+|Condividere una cartella nel progetto caricato: ricorsivo|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. Selezionare il progetto.<br />4. Aprire la finestra di dialogo **Condividi** (**file**  -> **controllo del codice sorgente**  -> **condivisione**).<br />5. Selezionare una cartella.<br />6. condividere la cartella in modo ricorsivo nel progetto.|Comportamento previsto comune.|
+|Condividere più file da un progetto a un altro|1. creare un nuovo progetto con più file.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare un nuovo progetto in una nuova soluzione.<br />5. aggiungere la soluzione al controllo del codice sorgente.<br />6. Selezionare il progetto.<br />7. Aprire la finestra di dialogo **Condividi** (**file**  -> **controllo del codice sorgente**  -> **condivisione**).<br />8. condividere diversi file dal progetto creato in precedenza al progetto attualmente aperto.|Comportamento previsto comune.|
 
 ## <a name="see-also"></a>Vedere anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

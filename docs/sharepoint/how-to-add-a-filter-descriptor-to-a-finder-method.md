@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere un descrittore di filtro a un metodo Finder | Microsoft Docs'
+title: 'Procedura: aggiungere un descrittore di filtro a un metodo Finder | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,62 +15,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418296"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986241"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedura: Aggiungere un descrittore di filtro a un metodo Finder
-  Descrittori di filtro consentono ai consumer del modello passare valori ai metodi prima che vengano eseguiti. Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedura: aggiungere un descrittore di filtro a un metodo Finder
+  I descrittori di filtro consentono agli utenti del modello di passare i valori ai metodi prima dell'esecuzione. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
 
- Uno scenario comune è che gli utenti di SharePoint recuperare le istanze di un tipo di contenuto esterno che corrispondono a certi criteri. È possibile supportare questo scenario tramite l'aggiunta di un descrittore di filtro a un metodo Finder.
+ Uno scenario comune è che gli utenti di SharePoint vogliono recuperare le istanze di un tipo di contenuto esterno che soddisfano alcuni criteri. È possibile supportare questo scenario aggiungendo un descrittore di filtro a un metodo Finder.
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Per aggiungere un descrittore di filtro a un metodo Finder
 
-1. Nel **Dettagli metodo BDC** finestra, espandere il nodo di un metodo Finder, il **parametri** nodo e quindi aggiungere un parametro di input. Per altre informazioni, vedere [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. Nella finestra **Dettagli metodo di integrazione applicativa dei dati** espandere il nodo di un metodo Finder, espandere il nodo **parametri** , quindi aggiungere un parametro di input. Per altre informazioni, vedere [procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2. Nel **Dettagli metodo** finestra, scegliere il descrittore di tipo del parametro.
+2. Nella finestra **Dettagli metodo** scegliere il descrittore di tipo del parametro.
 
-3. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
+3. Nella barra dei menu scegliere **visualizza** > **finestra Proprietà**.
 
-4. Nel **proprietà** impostare nella finestra di **nome tipo** proprietà a un tipo di dati che è appropriato per il filtro.
+4. Nella finestra **Proprietà** impostare la proprietà **nome tipo** su un tipo di dati appropriato per il filtro.
 
-     Ad esempio, un filtro potrebbe usare una data di ordine per limitare il numero di ordini di vendita restituiti dal metodo. Per supportare tale filtro, il **nome del tipo** proprietà del descrittore del tipo deve essere impostata su **System. DateTime**.
+     Ad esempio, un filtro può utilizzare una data di ordine per limitare il numero di ordini di vendita restituiti dal metodo. Per supportare tale filtro, la proprietà **nome tipo** del descrittore di tipo deve essere impostata su **System. DateTime**.
 
-5. Nel **Dettagli metodo** finestra, espandere il **descrittori di filtro** nodo.
+5. Nella finestra **Dettagli metodo** espandere il nodo **descrittori di filtro** .
 
-6. Nelle **aggiungere un descrittore di filtro** casella di riepilogo **Crea descrittore di filtro**.
+6. Nell'elenco **Aggiungi descrittori di filtro** scegliere **Crea descrittore filtro**.
 
-     Un nuovo descrittore di filtro viene visualizzato sotto il **descrittori di filtro** nodo.
+     Un nuovo descrittore di filtro viene visualizzato sotto il nodo **descrittori di filtro** .
 
-7. Nella barra dei menu, scegliere **View** > **finestra proprietà**.
+7. Nella barra dei menu scegliere **visualizza** > **finestra Proprietà**.
 
-8. Nel **delle proprietà** finestra, scegliere il **tipo** proprietà.
+8. Nella finestra **Proprietà** scegliere la proprietà **tipo** .
 
-9. Nell'elenco visualizzato per il **tipo** proprietà, scegliere il criterio di filtro desiderati.
+9. Nell'elenco visualizzato per la proprietà **Type** scegliere il modello di filtro desiderato.
 
-     Ad esempio, per creare un filtro che usa una data di ordine per limitare il numero di ordini di vendita restituiti in un metodo Finder, scegliere **confronto**. Un filtro di confronto assicura che un metodo finder restituisce solo le istanze che soddisfano una condizione specifica. Per altre informazioni su ogni modello di filtro, vedere [tipi di filtri supportati per l'integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkId=169287).
+     Ad esempio, per creare un filtro che usi una data di ordine per limitare il numero di ordini di vendita restituiti in un metodo di ricerca, scegliere **confronto**. Un filtro di confronto garantisce che un metodo di ricerca restituisca solo le istanze che soddisfano una condizione specifica. Per ulteriori informazioni su ogni modello di filtro, vedere [tipi di filtri supportati da integrazione applicativa](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))dei dati.
 
-10. Nel **delle proprietà** finestra, scegliere il **associati descrittori di tipo** proprietà.
+10. Nella finestra **Proprietà** scegliere la proprietà **descrittori di tipo associato** .
 
-11. Nell'elenco visualizzato per il **descrittori di tipo associati** proprietà, scegliere il descrittore di tipi che è stato creato in precedenza in questa procedura. Il filtro verrà associato al parametro di input del metodo Finder.
+11. Nell'elenco visualizzato per la proprietà **descrittori di tipo associato** scegliere il descrittore di tipo creato in precedenza in questa procedura. In questo modo il filtro viene correlato al parametro di input del metodo Finder.
 
-12. Aggiungere codice al metodo di ricerca che restituisce i dati. È possibile usare il parametro di input come una condizione in una query select.
+12. Aggiungere il codice al metodo Finder che restituisce i dati. È possibile usare il parametro di input come condizione in una query SELECT.
 
-     L'esempio seguente restituisce gli ordini di vendita che hanno la data dell'ordine specificato.
+     Nell'esempio seguente vengono restituiti gli ordini di vendita con la data dell'ordine specificata.
 
     > [!NOTE]
-    > Sostituire il valore del `ServerName` campo con il nome del server.
+    > Sostituire il valore del campo `ServerName` con il nome del server.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Procedura: Aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Procedura: Aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [Progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Integrazione di dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
+- [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [Integrazione di dati business in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

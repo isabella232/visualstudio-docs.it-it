@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8a1c2148f25a1e97cfd1369770e056d1cb907d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 58bfec6fa09f6450afb8170d60acad39edacd590
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568977"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982449"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Estensibilità del debugger di Visual Studio
-Visual Studio include un debugger completamente interattivo del codice sorgente, che offre uno strumento potente e facile da usare per tenere traccia dei bug nel programma. Il debugger dispone del supporto completo per Visual Basic C#,, CC++/e JavaScript. Tuttavia, con il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], disponibile nell' [area download Microsoft](http://go.microsoft.com/fwlink/?LinkId=214453), altri linguaggi di programmazione possono essere supportati nel debugger con le stesse funzionalità avanzate.
+Visual Studio include un debugger completamente interattivo del codice sorgente, che offre uno strumento potente e facile da usare per tenere traccia dei bug nel programma. Il debugger dispone del supporto completo per Visual Basic C#,, CC++/e JavaScript. Tuttavia, con il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], disponibile nell' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), altri linguaggi di programmazione possono essere supportati nel debugger con le stesse funzionalità avanzate.
 
  Il debugger [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è il front-end comune, ovvero l'interfaccia utente, per i componenti di debug che, a loro volta, sono specifici del linguaggio di cui è in corso il debug. Per le nuove lingue, tutto ciò che è necessario per il supporto da parte del debugger [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste nel creare i componenti back-end necessari, ad esempio un motore di debug (DE). Questo è il punto in cui viene fornita la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 

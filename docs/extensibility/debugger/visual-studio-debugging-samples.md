@@ -12,16 +12,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea408640b47b04041e99b9a4bff2605b6231a92f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348292"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981228"
 ---
 # <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
-Due esempi mostrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+In due esempi viene illustrato come estendere il debugger di Visual Studio utilizzando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
-- L'esempio dell'analizzatore di espressioni Debugger, per linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] finestra, fare clic sui **esempi** scheda, fare clic su **tutti** o **c#** nell'elenco delle lingue e quindi fare clic su **Debugger**.
+- L'esempio di analizzatore di espressioni del debugger, per i linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Nella finestra [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fare clic sulla scheda **esempi** , fare clic su tutto **C#** o nell'elenco di lingue, quindi fare clic su **debugger**.
 
-- Visual Studio il Debug di motore di esempio, per linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere [esempio di motore di debug Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) nel sito Web Microsoft.
+- L'esempio del motore di debug di Visual Studio, per le lingue native, è disponibile in MSDN Code Gallery. Per ulteriori informazioni, vedere l'esempio relativo al [motore di debug di Visual Studio](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) nel sito Web Microsoft.

@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Profilatura di un'applicazione di SharePoint | Microsoft Docs"
+title: "Procedura dettagliata: profilatura di un'applicazione SharePoint | Microsoft Docs"
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834011"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981148"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: Profilare un'applicazione SharePoint
-  In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più onerosa (esecuzione più lenta) del progetto, noto anche come il *percorso ad accesso frequente*.
+# <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: profilare un'applicazione SharePoint
+  In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più costosa (con prestazioni più lente) del progetto, nota anche come *percorso critico*.
 
  In questa procedura dettagliata vengono descritte le attività seguenti:
 
-- [Addg una funzionalità e un ricevitore di eventi funzionalità](#add-a-feature-and-feature-event-receiver).
+- [Addg un ricevitore di eventi di funzionalità e funzionalità](#add-a-feature-and-feature-event-receiver).
 
 - [Configurare e distribuire l'applicazione SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -37,44 +37,44 @@ ms.locfileid: "62834011"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Edizioni supportate di Microsoft Windows e SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
 
-## <a name="create-a-sharepoint-project"></a>Creare un progetto SharePoint
+## <a name="create-a-sharepoint-project"></a>Creazione di un progetto SharePoint
  Creare innanzitutto un progetto SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Per creare un progetto SharePoint
 
-1. Nella barra dei menu, scegliere **File** > **New** > **progetto** per visualizzare il **nuovo progetto** nella finestra di dialogo.
+1. Nella barra dei menu scegliere **File**  > **nuovo** **progetto**  >  per visualizzare la finestra di dialogo **nuovo progetto** .
 
-2. Espandere la **SharePoint** nodo sotto **Visual c#** o **Visual Basic**, quindi scegliere il **2010** nodo.
+2. Espandere il nodo **SharePoint** sotto **Visual C#**  o **Visual Basic**, quindi scegliere il nodo **2010** .
 
-3. Nel riquadro Modelli scegliere il **progetto SharePoint 2010** modello.
+3. Nel riquadro Modelli scegliere il modello di **progetto SharePoint 2010** .
 
-4. Nel **Name** casella, immettere **ProfileTest**e quindi scegliere il **OK** pulsante.
+4. Nella casella **nome** immettere **profiletto**, quindi scegliere il pulsante **OK** .
 
-    Il **Personalizzazione guidata SharePoint** viene visualizzata.
+    Viene visualizzata la **personalizzazione guidata SharePoint** .
 
-5. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, immettere l'URL per il sito di SharePoint server in cui si desidera eseguire il debug della definizione di sito o utilizzare il percorso predefinito (http://<em>il nome del sistema</em>/) .
+5. Nella pagina **specificare il sito e il livello di sicurezza per il debug** immettere l'URL per il sito del server SharePoint in cui si desidera eseguire il debug della definizione del sito oppure utilizzare il percorso predefinito (http://<em>System Name</em>/).
 
-6. Nel **qual è il livello di attendibilità per la soluzione SharePoint?** keychains le **Distribuisci come soluzione farm** pulsante di opzione.
+6. Nella sezione **Qual è il livello di attendibilità per la soluzione SharePoint** scegliere il pulsante di opzione **Distribuisci come soluzione farm** .
 
-    Attualmente, è possibile profilare solo soluzioni farm. Per altre informazioni sulle soluzioni create mediante sandbox e soluzioni farm, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
+    Attualmente, è possibile profilare solo soluzioni farm. Per ulteriori informazioni sulle soluzioni create mediante sandbox e sulle soluzioni farm, vedere Considerazioni sulle soluzioni [create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
 
-7. Scegliere il **fine** pulsante. Il progetto viene visualizzato nella **Esplora soluzioni**.
+7. Scegliere il pulsante **fine** . Il progetto viene visualizzato in **Esplora soluzioni**.
 
-## <a name="add-a-feature-and-feature-event-receiver"></a>Aggiungere una funzionalità e un ricevitore di eventi
+## <a name="add-a-feature-and-feature-event-receiver"></a>Aggiungere un ricevitore di eventi funzionalità e funzionalità
  Successivamente, aggiungere una funzionalità al progetto insieme a un ricevitore di eventi per la funzionalità. In questo ricevitore di eventi sarà incluso il codice da profilare.
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>Per aggiungere una funzionalità e un ricevitore di eventi di funzionalità
 
-1. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **funzionalità** nodo, scegliere **Aggiungi funzionalità**e lasciare il valore predefinito, il nome **Feature1**.
+1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **funzionalità** , scegliere **Aggiungi funzionalità**e lasciare il nome in corrispondenza del valore predefinito **Feature1**.
 
-2. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida **Feature1**, quindi scegliere **Aggiungi ricevitore di eventi**.
+2. In **Esplora soluzioni**aprire il menu di scelta rapida per **Feature1**, quindi scegliere **Aggiungi ricevitore di eventi**.
 
      Verrà aggiunto un file di codice alla funzionalità con diversi gestori di eventi impostati come commenti e viene aperto il file da modificare.
 
@@ -151,7 +151,7 @@ ms.locfileid: "62834011"
     }
     ```
 
-5. Aggiungere la procedura seguente sotto il `FeatureActivated`procedure.
+5. Aggiungere la procedura seguente sotto la procedura `FeatureActivated`.
 
     ```vb
 
@@ -178,11 +178,11 @@ ms.locfileid: "62834011"
     }
     ```
 
-6. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il progetto (**ProfileTest**), quindi scegliere **proprietà**.
+6. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto (**profiletto**), quindi scegliere **proprietà**.
 
-7. Nel **delle proprietà** finestra di dialogo scegliere la **SharePoint** scheda.
+7. Nella finestra di dialogo **Proprietà** scegliere la scheda **SharePoint** .
 
-8. Nel **configurazione distribuzione attiva** casella di riepilogo **Nessuna attivazione**.
+8. Nell'elenco **Configurazione distribuzione attiva** scegliere **Nessuna attivazione**.
 
      Se si seleziona questa configurazione di distribuzione è possibile attivare manualmente la funzionalità in un secondo momento in SharePoint.
 
@@ -193,65 +193,65 @@ ms.locfileid: "62834011"
 
 ### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Per configurare e distribuire l'applicazione SharePoint
 
-1. Nel **Analyze** menu, scegliere **Avvia Creazione guidata sessione di prestazioni**.
+1. Scegliere **Avvia Creazione guidata sessione di prestazioni**dal menu **analizza** .
 
-2. Nella prima pagina della **Creazione guidata sessione prestazioni**, lasciare il metodo di profilatura come **campionamento CPU** e scegliere il **Avanti** pulsante.
+2. In una pagina della **creazione guidata sessione di prestazioni**lasciare il metodo di profilatura come **campionamento CPU** e scegliere il pulsante **Avanti** .
 
      Gli altri metodi di profilatura possono essere utilizzati in situazioni di profilatura più avanzate. Per altre informazioni, vedere [Informazioni sui metodi di raccolta delle prestazioni](/visualstudio/profiling/understanding-performance-collection-methods).
 
-3. Nella pagina del **Creazione guidata sessione prestazioni**, lasciare la destinazione del profilo come **ProfileTest** e scegliere il **Avanti** pulsante.
+3. Nella pagina due della **creazione guidata sessione di prestazioni**, lasciare la destinazione **profilo come** profiling e scegliere il pulsante **Avanti** .
 
      Se in una soluzione sono disponibili più progetti, vengono visualizzati in questo elenco.
 
-4. Nella terza pagina della **Creazione guidata sessione prestazioni**, deselezionare il **Abilita profilatura interazione tra livelli** casella di controllo e quindi scegliere il **successivo** pulsante.
+4. Nella terza pagina della **creazione guidata sessione di prestazioni**deselezionare la casella di controllo **Abilita profilatura interazione tra livelli** , quindi scegliere il pulsante **Avanti** .
 
      La funzionalità di profilatura interazione tra livelli (TIP) è utile per misurare le prestazioni di applicazioni in cui vengono eseguite query sui database e per visualizzare il numero di volte in cui viene richiesta una pagina Web. Poiché i dati non sono necessari per questo esempio, la funzionalità non verrà abilitata.
 
-5. Nella quarta pagina del **Creazione guidata sessione prestazioni**, lasciare il **avvia profilatura al termine della procedura guidata** selezionata casella di controllo e quindi scegliere il **fine** pulsante.
+5. Nella pagina quattro della **creazione guidata sessione di prestazioni**, lasciare selezionata la casella di controllo **Avvia profilatura al termine della procedura guidata** , quindi scegliere il pulsante **fine** .
 
-     La procedura guidata abilita la profilatura dell'applicazione nel server, viene visualizzato il **Esplora prestazioni** finestra e quindi la compilazione, distribuzione e l'esecuzione dell'applicazione SharePoint.
+     Con la procedura guidata è possibile abilitare la profilatura dell'applicazione nel server, visualizzare la finestra di **Esplora prestazioni** , quindi compilare, distribuire ed eseguire l'applicazione SharePoint.
 
 ## <a name="run-the-sharepoint-application"></a>Eseguire l'applicazione SharePoint
  Attivare la funzionalità in SharePoint, attivando il codice dell'evento `FeatureActivation` da eseguire.
 
 ### <a name="to-run-the-sharepoint-application"></a>Per eseguire l'applicazione SharePoint
 
-1. In SharePoint, aprire il **Azioni sito** menu, quindi scegliere **Impostazioni sito**.
+1. In SharePoint aprire il menu **Azioni sito** , quindi scegliere **Impostazioni sito**.
 
-2. Nel **Azioni sito** scegliere i **Gestisci caratteristiche sito** collegamento.
+2. Nell'elenco **Azioni sito** scegliere il collegamento **Gestisci caratteristiche sito** .
 
-3. Nel **caratteristiche** scegliere il **Activate** accanto alla **ProfileTest Feature1**.
+3. Nell'elenco **funzionalità** scegliere il pulsante **attiva** accanto a **profiletto Feature1**.
 
      Vi sarà una pausa quando verrà eseguita questa operazione, a causa del ciclo inattivo chiamato nella funzione `FeatureActivated`.
 
-4. Nel **avvio veloce** barra, scegliere **Elenca** e quindi il **Elenca** scegliere **annunci**.
+4. Nella barra **avvio veloce** scegliere **elenchi** , quindi nell'elenco **elenchi** scegliere **annunci**.
 
      Si noti che un nuovo annuncio è stato aggiunto all'elenco per indicare che la funzionalità è stata attivata.
 
 5. Chiudere il sito di SharePoint.
 
-     Dopo aver chiuso SharePoint, il profiler crea e visualizza un Report di profilatura di esempio e salvarlo come file con estensione vsp nel **ProfileTest** cartella del progetto.
+     Dopo aver chiuso SharePoint, il profiler crea e visualizza un report di profilatura di esempio e lo salva come file con estensione VSP nella cartella **del progetto** Profiler.
 
 ## <a name="view-and-interpret-the-profile-results"></a>Visualizzare e interpretare i risultati del profilo
  Dopo aver eseguito e profilato l'applicazione SharePoint, visualizzare i risultati del test.
 
 ### <a name="to-view-and-interpret-the-profile-results"></a>Per visualizzare e interpretare i risultati del profilo
 
-1. Nel **funzioni che svolgono più lavoro individuale** sezione del Report di profilatura di esempio, si noti che `TimeCounter` nella parte superiore dell'elenco.
+1. Nella sezione **funzioni che effettuano la maggior parte dei lavori** del report di profilatura di esempio, si noti che `TimeCounter` è vicino all'inizio dell'elenco.
 
      Questa posizione indica che `TimeCounter` è una delle funzioni con il numero più elevato di campioni, pertanto è uno dei più grandi colli di bottiglia delle prestazioni nell'applicazione. Questa situazione non è insolita, tuttavia, dal momento che si tratta di una modalità progettata espressamente a scopo dimostrativo.
 
-2. Nel **funzioni che svolgono più lavoro individuale** keychains le `ProcessRequest` link per visualizzare la distribuzione dei costi per il `ProcessRequest` (funzione).
+2. Nella sezione funzioni che consentono di **lavorare più di singolo** , scegliere il collegamento `ProcessRequest` per visualizzare la distribuzione dei costi per la funzione di `ProcessRequest`.
 
-     Nel **le funzioni chiamate** sezione per `ProcessRequest`, si noti che il **FeatureActiviated** funzione viene elencata come la più costosa chiamata alla funzione.
+     Nella sezione **funzioni chiamate** per `ProcessRequest`si noti che la funzione **FeatureActiviated** è elencata come la funzione chiamata più costosa.
 
-3. Nel **le funzioni chiamate** keychains le **FeatureActivated** pulsante.
+3. Nella sezione **funzioni chiamate** scegliere il pulsante **FeatureActivated** .
 
-     Nel **le funzioni chiamate** sezione per **FeatureActivated**, il `TimeCounter` funzione viene elencata come la più costosa chiamata alla funzione. Nel **visualizzazione codice funzione** riquadro, il codice evidenziato (`TimeCounter`) è l'area sensibile e indica dove è necessaria la correzione.
+     Nella sezione **funzioni chiamate** per **FeatureActivated**, la funzione `TimeCounter` viene elencata come la funzione chiamata più costosa. Nel riquadro **visualizzazione codice funzione** il codice evidenziato (`TimeCounter`) è l'area sensibile e indica dove è necessaria la correzione.
 
 4. Chiudere il Rapporto sulla profilatura dei campioni.
 
-     Per visualizzare il report in qualsiasi momento, aprire il file con estensione vsp nel **Esplora prestazioni** finestra.
+     Per visualizzare di nuovo il report in qualsiasi momento, aprire il file con estensione VSP nella finestra **Esplora prestazioni** .
 
 ## <a name="fix-the-code-and-reprofile-the-application"></a>Correggere il codice e riprofilare l'applicazione
  Una volta identificata la funzione relativa all'area sensibile nell'applicazione SharePoint, correggerla.
@@ -262,13 +262,13 @@ ms.locfileid: "62834011"
 
 2. Salvare il progetto.
 
-3. Nelle **Esplora prestazioni**, aprire la cartella destinazioni e quindi scegliere il **ProfileTest** nodo.
+3. In **Esplora prestazioni**aprire la cartella destinazioni, quindi scegliere il nodo **profiletto** .
 
-4. Nel **Esplora prestazioni** sulla barra degli strumenti, nella **azioni** scheda, scegliere il **avvia profilatura** pulsante.
+4. Nella scheda **azioni** della barra degli strumenti **Esplora prestazioni** scegliere il pulsante **Avvia profilatura** .
 
-     Se si desidera modificare le proprietà di profilatura prima di riprofilare l'applicazione, scegliere il **Avvia Creazione guidata sessione di prestazioni** pulsante invece.
+     Se si desidera modificare le proprietà della profilatura prima di riprofilare l'applicazione, scegliere il pulsante **Avvia Creazione guidata sessione di prestazioni** .
 
-5. Seguire le istruzioni di **esecuzione dell'applicazione SharePoint** sezione, in precedenza in questo argomento.
+5. Seguire le istruzioni riportate nella sezione **esecuzione dell'applicazione SharePoint** , in precedenza in questo argomento.
 
      L'attivazione della funzionalità dovrebbe essere molto più veloce una volta che è stata eliminata la chiamata al ciclo inattivo. Il Rapporto sulla profilatura dei campioni dovrebbe riflettere questa situazione.
 
@@ -276,4 +276,4 @@ ms.locfileid: "62834011"
 - [Esplora prestazioni](/visualstudio/profiling/performance-explorer)
 - [Panoramica delle sessioni di prestazioni](/visualstudio/profiling/performance-session-overview)
 - [Guida per principianti alla profilatura delle prestazioni](/visualstudio/profiling/beginners-guide-to-performance-profiling)
-- [Trovare i colli di bottiglia dell'applicazione con Visual Studio Profiler](http://go.microsoft.com/fwlink/?LinkID=137266)
+- [Trovare colli di bottiglia delle applicazioni con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
