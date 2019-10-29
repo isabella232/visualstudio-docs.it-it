@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1826981f29ebfc29e7e5d28aa32fbff8c74ea5a
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
-ms.translationtype: HT
+ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585385"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024717"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -70,13 +70,13 @@ In entrambi i casi, la finestra **Ambienti Python** viene visualizzata accanto a
 
 Visual Studio cerca gli ambienti globali installati usando il Registro di sistema (in base a [PEP 514](https://www.python.org/dev/peps/pep-0514/)), oltre agli ambienti virtuali e agli ambienti Conda (vedere [Tipi di ambienti](#types-of-environments)). Se l'elenco non include un ambiente previsto, vedere [Identificare manualmente un ambiente esistente](#manually-identify-an-existing-environment).
 
-Quando si seleziona un ambiente nell'elenco, vengono visualizzati vari comandi e proprietà per l'ambiente nella scheda **Panoramica**. Nell'immagine precedente si può ad esempio vedere che il percorso dell'interprete è *C:\Python36-32*. Ognuno dei quattro comandi nella parte inferiore della scheda **Panoramica** apre un prompt dei comandi con l'interprete in esecuzione. Per altre informazioni, vedere [Informazioni di riferimento sulle schede della finestra Ambienti Python - Panoramica](python-environments-window-tab-reference.md#overview-tab).
+Quando si seleziona un ambiente nell'elenco, Visual Studio Visualizza varie proprietà e comandi per l'ambiente nella scheda **Panoramica** . È ad esempio possibile vedere nell'immagine precedente che la posizione dell'interprete è *C:\Python36-32*. Ognuno dei quattro comandi nella parte inferiore della scheda **Panoramica** apre un prompt dei comandi con l'interprete in esecuzione. Per altre informazioni, vedere [Informazioni di riferimento sulle schede della finestra Ambienti Python - Panoramica](python-environments-window-tab-reference.md#overview-tab).
 
 Usare l'elenco a discesa disponibile sotto l'elenco degli ambienti per spostarsi tra le diverse schede, ad esempio **Pacchetti** e **IntelliSense**. Queste schede sono descritte anche in [Informazioni di riferimento sulle schede della finestra Ambienti Python](python-environments-window-tab-reference.md).
 
 La selezione di un ambiente non cambia la relazione dell'ambiente con eventuali progetti. L'ambiente predefinito, visualizzato in grassetto nell'elenco, è quello che Visual Studio usa per i nuovi progetti. Per usare un altro ambiente con i nuovi progetti, usare il comando **Imposta come ambiente predefinito per i nuovi progetti**. Nel contesto di un progetto è sempre possibile selezionare un ambiente specifico. Per altre informazioni, vedere [Selezionare un ambiente per un progetto](selecting-a-python-environment-for-a-project.md).
 
-A destra di ogni ambiente elencato è disponibile un controllo che consente di aprire una finestra **interattiva** per tale ambiente. (In Visual Studio 2017 15.5 e versioni precedenti potrebbe essere visualizzato un altro controllo che aggiorna il database di IntelliSense per tale ambiente. Vedere [Informazioni di riferimento sulle schede della finestra Ambienti](python-environments-window-tab-reference.md#intellisense-tab) per informazioni dettagliate sul database.)
+A destra di ogni ambiente elencato è disponibile un controllo che consente di aprire una finestra **interattiva** per tale ambiente. (In Visual Studio 2017 15.5 e versioni precedenti potrebbe essere visualizzato un altro controllo che aggiorna il database di IntelliSense per tale ambiente. Vedere [Informazioni di riferimento sulle schede della finestra Ambienti](python-environments-window-tab-reference.md) per informazioni dettagliate sul database.)
 
 ::: moniker range="vs-2017"
 > [!Tip]
@@ -102,7 +102,7 @@ Se non viene visualizzato alcun ambiente, significa che Visual Studio non è riu
 Se si è certi di disporre di un interprete Python nel computer in uso, ma Visual Studio (qualsiasi versione) non lo rileva, usare il comando **+ Personalizzato** per specificarne il percorso manualmente. Vedere la sezione successiva, [Identificare manualmente un ambiente esistente](#manually-identify-an-existing-environment).
 
 > [!Tip]
-> Visual Studio rileva gli aggiornamenti per un interprete esistente, ad esempio l'aggiornamento di Python 2.7.11 a 2.7.14 tramite i programmi di installazione da python.org. Durante il processo di installazione, l'ambiente precedente scompare dall'elenco **Ambienti Python** prima che venga visualizzato l'aggiornamento nella posizione prevista.
+> Visual Studio rileva gli aggiornamenti a un interprete esistente, ad esempio l'aggiornamento di Python 2.7.11 a 2.7.14 usando i programmi di installazione di python.org. Durante il processo di installazione, l'ambiente precedente scompare dall'elenco degli **ambienti Python** prima che l'aggiornamento venga visualizzato al suo posto.
 >
 > Tuttavia, se si sposta manualmente un interprete e il relativo ambiente tramite il file system, Visual Studio non conosce il nuovo percorso. Per altre informazioni, vedere [Spostare un interprete](installing-python-interpreters.md#move-an-interpreter).
 
@@ -124,7 +124,7 @@ Per questo motivo, spesso gli sviluppatori creano un *ambiente virtuale* per un 
 
 Visual Studio offre supporto diretto per la creazione di un ambiente virtuale per un progetto. Se ad esempio si apre un progetto che contiene un file *requirements.txt* o si crea un progetto da un modello che include quel file, Visual Studio chiede di creare automaticamente un ambiente virtuale e di installare le dipendenze necessarie.
 
-È possibile creare un nuovo ambiente virtuale in qualsiasi momento all'interno di un progetto aperto. In **Esplora soluzioni** espandere il nodo del progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e scegliere "Aggiungi ambiente virtuale". Per altre informazioni, vedere [Creare un ambiente virtuale](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment).
+È possibile creare un nuovo ambiente virtuale in qualsiasi momento all'interno di un progetto aperto. In **Esplora soluzioni** espandere il nodo del progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e scegliere "Aggiungi ambiente virtuale". Per altre informazioni, vedere [Creare un ambiente virtuale](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1).
 
 Visual Studio include anche un comando che consente di generare un file *requirements.txt* dall'ambiente virtuale, facilitando la riproduzione dell'ambiente in altri computer. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -157,10 +157,10 @@ Un ambiente Conda è un ambiente creato usando lo strumento `conda` o con la ges
 
 1. Configurare i campi seguenti:
 
-    | Campo | DESCRIZIONE |
+    | Campo | Descrizione |
     | --- | --- |
     | Progetto | Progetto in cui creare l'ambiente (in presenza di più progetti nella stessa soluzione di Visual Studio). |
-    | nome | Nome per l'ambiente Conda. |
+    | Name | Nome per l'ambiente Conda. |
     | Aggiungi pacchetti da | Scegliere **File di ambiente** se è disponibile un file *environment.yml* che descrive le dipendenze oppure scegliere **Uno o più nomi di pacchetto Anaconda** ed elencare almeno un pacchetto Python o una versione di Python nel campo sottostante. L'elenco dei pacchetti indica a Conda di creare un ambiente Python. Per installare la versione più recente di Python, usare `python`. Per installare una versione specifica, usare `python=,major>.<minor>` come in `python=3.7`. È anche possibile usare il pulsante Pacchetto per selezionare le versioni e i pacchetti comuni di Python da una serie di menu. |
     | Imposta come ambiente corrente | Dopo aver creato l'ambiente, attiva il nuovo ambiente nel progetto selezionato. |
     | Imposta come ambiente predefinito per i nuovi progetti | Imposta e attiva automaticamente l'ambiente Conda in tutti i nuovi progetti creati in Visual Studio. Questa opzione equivale a selezionare **Imposta come ambiente predefinito per i nuovi progetti** nella finestra **Ambienti Python**. |
@@ -225,7 +225,7 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
 1. Quando i campi contengono i valori desiderati, selezionare **Applica** per salvare la configurazione. È ora possibile usare l'ambiente come qualsiasi altro all'interno di Visual Studio.
 
-1. Se è necessario rimuovere un ambiente identificato manualmente, selezionare il comando **Rimuovi** nella scheda **Configura**. Gli ambienti rilevati automaticamente non offrono questa opzione. Per altre informazioni, vedere [Scheda Configura](python-environments-window-tab-reference.md#configure-tab).
+1. Se è necessario rimuovere un ambiente identificato manualmente, selezionare il comando **Rimuovi** nella scheda **Configura** . gli ambienti rilevati automaticamente non forniscono questa opzione. Per altre informazioni, vedere [Scheda Configura](python-environments-window-tab-reference.md#configure-tab).
 
 ::: moniker-end
 
@@ -243,7 +243,7 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
     ![Campi per specificare i dettagli per un'opzione di ambiente personalizzato nella finestra di dialogo Aggiungi ambiente](media/environments/environments-custom-3-2019.png)
 
-1. I dettagli dell'ambiente possono essere controllati e modificati in qualsiasi momento nella finestra **Ambienti Python**. In tale finestra, selezionare l'ambiente e quindi selezionare la scheda **Configura**. Dopo aver apportato le modifiche, selezionare il comando **Applica**. È anche possibile rimuovere l'ambiente tramite il comando **Rimuovi** (non disponibile per gli ambienti rilevati automaticamente). Per altre informazioni, vedere [Scheda Configura](python-environments-window-tab-reference.md#configure-tab).
+1. I dettagli dell'ambiente possono essere controllati e modificati in qualsiasi momento nella finestra **Ambienti Python**. In tale finestra selezionare l'ambiente, quindi selezionare la scheda **Configura** . Dopo avere apportato le modifiche, selezionare il comando **Apply** . È anche possibile rimuovere l'ambiente tramite il comando **Rimuovi** (non disponibile per gli ambienti rilevati automaticamente). Per altre informazioni, vedere [Scheda Configura](python-environments-window-tab-reference.md#configure-tab).
 ::: moniker-end
 
 ## <a name="fix-or-delete-invalid-environments"></a>Correggere o eliminare gli ambienti non validi
