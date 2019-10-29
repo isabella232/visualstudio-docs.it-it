@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255637"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985781"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Migliorare le prestazioni di un componente aggiuntivo VSTO
   È possibile offrire agli utenti un'esperienza migliore ottimizzando i componenti aggiuntivi VSTO creati per le applicazioni di Office per poterli avviare rapidamente, interromperli o usarli per aprire gli elementi ed eseguire altre attività. Se il componente aggiuntivo VSTO è per Outlook, è anche possibile ridurre la probabilità che il componente aggiuntivo VSTO venga disabilitato a causa delle prestazioni ridotte. È possibile incrementare le prestazioni del componente aggiuntivo VSTO implementando le strategie seguenti:
@@ -28,7 +28,7 @@ ms.locfileid: "71255637"
 
 - [Eseguire operazioni complesse in un thread di esecuzione separato](#Perform).
 
-  Per altre informazioni su come ottimizzare un componente aggiuntivo VSTO di Outlook, vedere [criteri delle prestazioni per la conservazione dei componenti aggiuntivi VSTO abilitati](http://go.microsoft.com/fwlink/?LinkID=266503).
+  Per altre informazioni su come ottimizzare un componente aggiuntivo VSTO di Outlook, vedere [criteri delle prestazioni per la conservazione dei componenti aggiuntivi VSTO abilitati](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
 
 ## <a name="Load"></a> Caricare componenti aggiuntivi VSTO su richiesta
  È possibile configurare un componente aggiuntivo VSTO da caricare solo nelle circostanze seguenti:
@@ -51,13 +51,13 @@ ms.locfileid: "71255637"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Per configurare una soluzione Windows Installer per caricare componenti aggiuntivi VSTO su richiesta
 
-1. Nel registro di sistema impostare la `LoadBehavior` voce della chiave **_root_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_Add-in ID_** su **0x10**.
+1. Nel registro di sistema impostare la voce `LoadBehavior` della chiave **_radice_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_ID componente aggiuntivo_** su **0x10**.
 
      Per altre informazioni, vedere [voci del registro di sistema per i componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Per configurare una soluzione per caricare componenti aggiuntivi VSTO su richiesta durante il debug della soluzione
 
-1. Creare uno script che imposta la `LoadBehavior` voce della chiave **_radice_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_ID componente_** aggiuntivo su **0x10**.
+1. Creare uno script che imposta la voce di `LoadBehavior` della chiave **_radice_\Software\Microsoft\Office\\_ApplicationName_\Addins\\_ID componente aggiuntivo_** su **0x10**.
 
      Nel codice seguente viene illustrato un esempio di questo script.
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255637"
 
     ```
 
-     Per informazioni su come creare un evento di post-compilazione in C# un progetto, [vedere Procedura: Specificare gli eventi &#40;di&#35;&#41;](../ide/how-to-specify-build-events-csharp.md)compilazione C.
+     Per informazioni su come creare un evento di post-compilazione in C# un progetto, vedere [procedura: specificare gli eventi &#40;di&#35;compilazione C](../ide/how-to-specify-build-events-csharp.md).
 
-     Per informazioni su come creare un evento di post-compilazione in un progetto di Visual Basic, [vedere Procedura: Specificare gli eventi &#40;di&#41;](../ide/how-to-specify-build-events-visual-basic.md)compilazione Visual Basic.
+     Per informazioni su come creare un evento di post-compilazione in un progetto di Visual Basic, vedere [procedura: specificare gli eventi &#40;di&#41;compilazione Visual Basic](../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="Publish"></a>Pubblicare soluzioni Office usando Windows Installer
  Se si pubblica la soluzione usando Windows Installer, Visual Studio 2010 Tools per Office runtime ignora i passaggi seguenti quando viene caricato il componente aggiuntivo VSTO.
@@ -100,7 +100,7 @@ ms.locfileid: "71255637"
 ## <a name="Bypass"></a>Ignora Reflection della barra multifunzione
  Se si compila una soluzione usando [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], assicurarsi che gli utenti abbiano installato la versione più recente di Visual Studio 2010 Tools per Office Runtime quando si distribuisce la soluzione. Le versioni precedenti del runtime di VSTO si riflettono negli assembly della soluzione per individuare le personalizzazioni della barra multifunzione. Questo processo può rallentare il caricamento del componente aggiuntivo VSTO.
 
- In alternativa, è possibile impedire a qualsiasi versione di Visual Studio 2010 Tools per Office Runtime di usare la reflection per identificare le personalizzazioni della barra multifunzione. Per seguire questa strategia, eseguire l' `CreateRibbonExtensibility` override del metodo e restituire in modo esplicito gli oggetti della barra multifunzione. Se il componente aggiuntivo VSTO non contiene personalizzazioni della barra multifunzione, `null` restituire all'interno del metodo.
+ In alternativa, è possibile impedire a qualsiasi versione di Visual Studio 2010 Tools per Office Runtime di usare la reflection per identificare le personalizzazioni della barra multifunzione. Per seguire questa strategia, eseguire l'override del metodo `CreateRibbonExtensibility` e restituire in modo esplicito gli oggetti della barra multifunzione. Se il componente aggiuntivo VSTO non contiene personalizzazioni della barra multifunzione, restituire `null` all'interno del metodo.
 
  Nell'esempio seguente viene restituito un oggetto Ribbon basato sul valore di un campo.
 

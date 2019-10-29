@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b27f874766853fb5239c96ec178233935484d1b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551482"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985677"
 ---
 # <a name="outlook-solutions"></a>soluzioni Outlook
   Visual Studio offre modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office Outlook. È possibile usare i componenti aggiuntivi VSTO per automatizzare Outlook, estenderne le funzionalità o personalizzarne l'interfaccia utente. Per altre informazioni sui componenti aggiuntivi VSTO, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
@@ -35,12 +35,12 @@ ms.locfileid: "69551482"
 ## <a name="create-an-outlook-vsto-add-in-project"></a>Creare un progetto di componente aggiuntivo VSTO per Outlook
  Creare progetti Outlook usando uno dei modelli di progetto **Componente aggiuntivo per Outlook** nella finestra di dialogo **Nuovo progetto** . Questo modello include i riferimenti agli assembly e i file di progetto necessari.
 
- Per ulteriori informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio. Per ulteriori informazioni sui modelli di progetto, vedere [Panoramica dei modelli di progetto di Office](../vsto/office-project-templates-overview.md).
+ Per altre informazioni su come creare un progetto di componente aggiuntivo VSTO, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md). Per ulteriori informazioni sui modelli di progetto, vedere [Panoramica dei modelli di progetto di Office](../vsto/office-project-templates-overview.md).
 
 ## <a name="outlook-vsto-add-in-programming-model"></a>Modello di programmazione di componenti aggiuntivi VSTO per Outlook
  Quando si crea un progetto di componente aggiuntivo VSTO per Outlook, Visual Studio genera una classe, chiamata `ThisAddIn`, che costituisce la base della soluzione. Questa classe fornisce un punto di partenza per la scrittura del codice ed espone inoltre il modello a oggetti di Outlook nel componente aggiuntivo VSTO.
 
- Per altre informazioni sulla `ThisAddIn` classe e su altre funzionalità che è possibile usare in un componente aggiuntivo VSTO, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
+ Per altre informazioni sulla classe `ThisAddIn` e altre funzionalità che è possibile usare in un componente aggiuntivo VSTO, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatizzare Outlook mediante il modello a oggetti di Outlook
  Il modello a oggetti di Outlook espone diversi tipi che è possibile usare per automatizzare Outlook. Questi tipi consentono di scrivere il codice per eseguire attività comuni:
@@ -58,7 +58,7 @@ ms.locfileid: "69551482"
 |Attività|Per altre informazioni|
 |----------|--------------------------|
 |Aggiungere schede personalizzate alla barra multifunzione di un controllo di Outlook.|[Panoramica della barra multifunzione](../vsto/ribbon-overview.md)|
-|Aggiungere gruppi personalizzati a una scheda predefinita in un controllo di Outlook.|[Procedura: Personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)|
+|Aggiungere gruppi personalizzati a una scheda predefinita in un controllo di Outlook.|[Procedura: personalizzare una scheda incorporata](../vsto/how-to-customize-a-built-in-tab.md)|
 |Aggiungere un riquadro attività personalizzato da visualizzare in un controllo di Outlook|[Riquadri attività personalizzati](../vsto/custom-task-panes.md).|
 |Aggiungere un'area del modulo che estende o sostituisce moduli di Outlook esistenti.|[Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)|
 
@@ -70,5 +70,5 @@ ms.locfileid: "69551482"
 |-----------|-----------------|
 |[Panoramica del modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)|Contiene una panoramica degli oggetti forniti dal modello a oggetti di Word.|
 |[Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)|Descrive gli strumenti disponibili in Visual Studio che semplificano la progettazione, lo sviluppo e il debug delle aree del modulo.|
-|[Procedura dettagliata: Creare il primo componente aggiuntivo VSTO per Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Mostra come creare un componente aggiuntivo VSTO per Microsoft Office Outlook.|
-|[Outlook 2010 nello sviluppo per Office](http://go.microsoft.com/fwlink/?LinkId=199013)|Area di MSDN Library in cui è possibile trovare articoli e documentazione di riferimento sullo sviluppo di soluzioni Office (non specifiche per lo sviluppo di Office con Visual Studio).|
+|[Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Mostra come creare un componente aggiuntivo VSTO per Microsoft Office Outlook.|
+|[Outlook 2010 nello sviluppo per Office](/previous-versions/office/developer/office-2010/ff458122(v=office.14))|Area di MSDN Library in cui è possibile trovare articoli e documentazione di riferimento sullo sviluppo di soluzioni Office (non specifiche per lo sviluppo di Office con Visual Studio).|
