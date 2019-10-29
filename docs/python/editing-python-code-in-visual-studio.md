@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959529"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024729"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
 Poiché si passa molto tempo nell'editor di codice, il [supporto per Python in Visual Studio](installing-python-support-in-visual-studio.md) offre funzionalità che consentono di migliorare la produttività. Le funzionalità includono evidenziazione della sintassi di IntelliSense, completamento automatico, supporto per la firma digitale, override dei metodi, ricerca e navigazione.
 
-L'editor è anche integrato con la finestra **interattiva** in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Per i dettagli, vedere il [Passaggio 3 dell'esercitazione: Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usare la finestra interattiva - Comando Invia a finestra interattiva](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
+L'editor è anche integrato con la finestra **interattiva** in Visual Studio, semplificando così lo scambio di codice tra i due prodotti. Vedere [Passaggio 3: Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usare la finestra interattiva - Comando per inviare codice alla finestra interattiva](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) per informazioni dettagliate.
 
 Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md). Vedere anche [Struttura](../ide/outlining.md) per informazioni su questa funzionalità che consente di concentrarsi su sezioni specifiche del codice.
 
@@ -31,7 +31,7 @@ Per informazioni generali sulla modifica del codice in Visual Studio, vedere [Fu
 
 IntelliSense offre [completamenti](#completions), [informazioni della Guida per le firme](#signature-help), [informazioni rapide](#quick-info) e [colorazione del codice](#code-coloring). Visual Studio 2017 versione 15.7 e versioni successive supporta anche i [suggerimenti relativi al tipo](#type-hints).
 
-Per migliorare le prestazioni, IntelliSense in Visual Studio 2017 versione 15.5 e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di **Esplora soluzioni**, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md#intellisense-tab)).
+Per migliorare le prestazioni, IntelliSense in Visual Studio 2017 versione 15.5 e versioni precedenti dipende da un database di completamento generato per ogni ambiente Python nel progetto. Può essere necessario aggiornare i database se si aggiungono, si rimuovono o si aggiornano i pacchetti. Lo stato dei database viene visualizzato nella finestra **Ambienti Python**, elemento di pari livello di **Esplora soluzioni**, nella scheda **IntelliSense** (vedere [Informazioni di riferimento sulla finestra Ambienti Python](python-environments-window-tab-reference.md)).
 
 Visual Studio 2017 versione 15.6 e versioni successive usano modi diversi per rendere disponibili i completamenti IntelliSense non dipendenti dal database.
 
@@ -213,7 +213,7 @@ Il comando **Vai a definizione** consente di passare velocemente dall'uso di un 
 
 ### <a name="navigate-to"></a>Passa a
 
-Il comando **Modifica** > **Passa a** (**CTRL**+**,**) consente di visualizzare una casella di ricerca nell'editor in cui è possibile digitare qualsiasi stringa e vedere le possibili corrispondenze nel codice che definisce una funzione, una classe o una variabile contenente tale stringa. La funzionalità di questo comando è simile a **Vai a definizione**, ma non richiede l'individuazione di un uso di un identificatore.
+Il comando **Modifica** > **Passa a** (**CTRL**+ **,** ) consente di visualizzare una casella di ricerca nell'editor in cui è possibile digitare qualsiasi stringa e vedere le possibili corrispondenze nel codice che definisce una funzione, una classe o una variabile contenente tale stringa. La funzionalità di questo comando è simile a **Vai a definizione**, ma non richiede l'individuazione di un uso di un identificatore.
 
 Per passare alla definizione dell'identificatore, fare doppio clic su qualsiasi nome oppure selezionarlo con i tasti di direzione e premere **INVIO**.
 

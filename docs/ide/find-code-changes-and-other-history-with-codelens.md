@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653841"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024827"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -217,7 +217,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 1. Accedere all'applicazione contenente il [codice di unit test](../test/unit-test-your-code.md) associato.
 
-2. Se non se ne ha già uno, compilare l'applicazione per caricare gli indicatori test di CodeLens. Assicurarsi che l'[individuazione basata sugli assembly compilati](../test/test-explorer-faq.md#assembly-based-discovery) sia abilitata.
+2. Se non se ne ha già uno, compilare l'applicazione per caricare gli indicatori test di CodeLens. 
 
 3. Esaminare i test per il codice premendo **ALT**+**3**.
 
@@ -352,8 +352,7 @@ Per usare la tastiera:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>D: Gli indicatori test di CodeLens non vengono più visualizzati nel file quando si apre la soluzione per la prima volta. Come possono essere caricati?
 
-**R:** Ricompilare il progetto per ottenere gli indicatori test di CodeLens da caricare nel file. Assicurarsi che l'[individuazione basata sugli assembly compilati](../test/test-explorer-faq.md#assembly-based-discovery
-) sia abilitata. Per migliorare le prestazioni, Visual Studio non recupera più le informazioni sull'origine per gli indicatori test quando vengono caricati file di codice. Gli indicatori test vengono caricati dopo una compilazione o quando si seleziona un test facendo doppio clic in **Esplora Test**.
+**R:** Ricompilare il progetto per ottenere gli indicatori test di CodeLens da caricare nel file. Per migliorare le prestazioni, Visual Studio non recupera più le informazioni sull'origine per gli indicatori test quando vengono caricati file di codice. Gli indicatori test vengono caricati dopo una compilazione o quando si seleziona un test facendo doppio clic in **Esplora Test**.
 
 ## <a name="see-also"></a>Vedere anche
 
