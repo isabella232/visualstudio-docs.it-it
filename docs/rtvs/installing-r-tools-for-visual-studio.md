@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 4b505b1a8669c0eff14e7afcdb88275cd1502f95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 38082d854a6c817503d2765c48c5b08c0bd2a5b3
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581243"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888530"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Come installare R Tools per Visual Studio
 
@@ -30,7 +30,7 @@ Contenuto dell'articolo:
 
 ## <a name="supported-versions-of-visual-studio"></a>Versioni supportate di Visual Studio
 
-R Tools per Visual Studio (RTVS) è supportato in Windows con le edizioni Community (gratuita), Professional ed Enterprise di [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e [Visual Studio 2015 Update 3 (o versioni successive)](http://go.microsoft.com/fwlink/?LinkId=691129) (download diretto).
+R Tools per Visual Studio (RTVS) è supportato in Windows con le edizioni Community (gratuita), Professional ed Enterprise di [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e [Visual Studio 2015 Update 3 (o versioni successive)](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) (download diretto).
 
 RTVS non è attualmente supportato in Visual Studio per Mac.
 
@@ -38,7 +38,7 @@ RTVS non viene installato se si ha solo Visual Studio Shell incluso in prodotti 
 
 ## <a name="install-rtvs-in-visual-studio-2017"></a>Installare RTVS in Visual Studio 2017
 
-1. Eseguire il programma di installazione di Visual Studio e selezionare l'opzione **Modifica**. Per informazioni dettagliate, vedere [Modificare Visual Studio](../install/modify-visual-studio.md). Se Visual Studio non è ancora installato, vedere [Installare Visual Studio](../install/install-visual-studio.md). In Windows 7 verificare che il programma di installazione sia aggiornato in modo da visualizzare Visual Studio 2017 versione *15.2 build 26430.12* o versione successiva.
+1. Eseguire il programma di installazione di Visual Studio e selezionare l'opzione **Modifica**. Per informazioni dettagliate, vedere [Modificare Visual Studio](../install/modify-visual-studio.md). Se Visual Studio non è ancora installato, vedere [Installare Visual Studio](../install/install-visual-studio.md). In Windows 7 verificare che il programma di installazione sia aggiornato in modo da visualizzare Visual Studio 2017 versione *15,2 build 26430,12* o successiva.
 
 1. Selezionare il carico di lavoro **Applicazioni analitiche e di analisi scientifica dei dati**:
 
