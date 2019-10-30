@@ -9,12 +9,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
-  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.openlocfilehash: b0fb7ff139ce91e981fa5fd5a9c43d1e335a1525
+  ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/19/2019
-  ms.locfileid: "71130620"
+  ms.lasthandoff: 10/30/2019
+  ms.locfileid: "73061104"
 landingContent:
 - title: Informazioni sulla profilatura
   linkLists:
@@ -41,7 +41,7 @@ landingContent:
     - text: Introduzione all'analisi dell'utilizzo della CPU
       url: beginners-guide-to-performance-profiling.md
     - text: Introduzione alla misurazione dell'utilizzo della memoria
-      url: beginners-guide-to-performance-profiling.md
+      url: memory-usage.md
 - title: Altri strumenti per le prestazioni
   linkLists:
   - linkListType: how-to-guide
