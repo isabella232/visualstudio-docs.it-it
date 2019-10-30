@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154959"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061157"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -34,13 +34,13 @@ Per iniziare:
 - Eseguire una o più guide introduttive per creare un progetto. In caso di dubbi, iniziare con [Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- Eseguire una o più guide introduttive per creare un progetto. In caso di dubbi, iniziare con [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md) oppure [Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
+- Eseguire una o più guide introduttive per creare un progetto. Se non si è certi, iniziare con la [Guida introduttiva: aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md) o [creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 - Seguire l'esercitazione [Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) per un'esperienza completa.
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio supporta Python versione 2.7, versione 3.5 e versioni successive. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare.
+> Visual Studio supporta Python versione 2,7, nonché la versione da 3,5 a 3,7. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare. Il supporto per Python versione 3,8 è ancora in fase di sviluppo. i dettagli specifici sul supporto possono essere visualizzati in questo problema di rilevamento [su GitHub](https://github.com/microsoft/PTVS/issues/5822).
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Supporto di più interpreti
@@ -70,10 +70,10 @@ Visual Studio mette a disposizione un editor Python di prima classe, con funzion
 Per ulteriori informazioni:
 
 - Documentazione: [Modificare il codice Python](editing-python-code-in-visual-studio.md)
-- Documentazione: [Codice formato](formatting-python-code.md)
+- Documentazione: [Formattare il codice](formatting-python-code.md)
 - Documentazione: [Effettuare il refactoring del codice](refactoring-python-code.md)
 - Documentazione: [Usare un linter](linting-python-code.md)
-- Documentazione generale sulle funzionalità di Visual Studio: [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Finestra Interattiva
 
@@ -94,7 +94,7 @@ Per ulteriori informazioni:
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 2019 supporta l'apertura di una cartella contenente codice Python e l'esecuzione del codice senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md). L'uso di un file di progetto offre tuttavia alcuni vantaggi, come illustrato in questa sezione.
+> Visual Studio 2019 supporta l'apertura di una cartella contenente codice Python e l'esecuzione del codice senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Guida introduttiva: aprire ed eseguire codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md). L'uso di un file di progetto offre tuttavia alcuni vantaggi, come illustrato in questa sezione.
 ::: moniker-end
 
 Visual Studio consente di gestire la complessità di un progetto man mano che le dimensioni di questo aumentano. Un *progetto di Visual Studio* è molto più di una struttura di cartelle, poiché al suo interno sono presenti informazioni sull'uso dei diversi file e sulla loro interazione reciproca. Visual Studio consente di distinguere codice dell'app, codice di test, pagine Web, JavaScript, script di compilazione e così via, abilitando le funzionalità appropriate per ogni file. Una soluzione di Visual Studio, poi, consente di gestire più progetti correlati, ad esempio un progetto Python e un progetto di estensione C++.
@@ -107,12 +107,12 @@ Grazie ai modelli di progetto e di elemento, è possibile automatizzare il proce
 
 Per ulteriori informazioni:
 
-- Documentazione: [Gestire i progetti Python](managing-python-projects-in-visual-studio.md)
-- Documentazione: [Riferimento ai modelli di elemento](python-item-templates.md)
-- Documentazione: [Modelli di progetto Python](managing-python-projects-in-visual-studio.md#project-templates)
-- Documentazione: [Usare C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
-- Documentazione generale sulle funzionalità di Visual Studio: [Modelli di progetti ed elementi](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- Documentazione generale sulle funzionalità di Visual Studio: [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+- Documenti: [Gestire i progetti Python](managing-python-projects-in-visual-studio.md)
+- Documenti: [Riferimento ai modelli di elemento](python-item-templates.md)
+- Documenti: [Modelli di progetto Python](managing-python-projects-in-visual-studio.md#project-templates)
+- Documenti: [Usare C++ e Python](working-with-c-cpp-python-in-visual-studio.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Modelli di progetto e di elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Documenti generali sulle funzionalità di Visual Studio: [Soluzioni e progetti in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>Debug con funzionalità complete
 
@@ -121,15 +121,15 @@ Uno dei punti di forza di Visual Studio è un debugger avanzato. Specificamente 
 ![Debugger di Visual Studio per Python con un'eccezione in una finestra popup](media/debugging-exception-popup.png)
 
 ::: moniker range=">=vs-2019"
-In Visual Studio 2019, è possibile eseguire il codice ed eseguirne il debug senza un file di progetto di Visual Studio. Vedere [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md) per un esempio.
+In Visual Studio 2019, è possibile eseguire il codice ed eseguirne il debug senza un file di progetto di Visual Studio. Per un esempio, vedere [Guida introduttiva: aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md) .
 ::: moniker-end
 
 Per ulteriori informazioni:
 
-- Documentazione: [Debug del codice Python](debugging-python-in-visual-studio.md)
-- Documentazione: [Debug in modalità mista di Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- Documentazione: [Debug remoto in Linux](debugging-python-code-on-remote-linux-machines.md)
-- Documentazione generale sulle funzionalità di Visual Studio: [Presentazione del debugger di Visual Studio](../debugger/debugger-feature-tour.md)
+- Documentazione: [Eseguire il debug di Python](debugging-python-in-visual-studio.md)
+- Documenti: [Debug in modalità mista Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Documenti: [Debug remoto in Linux](debugging-python-code-on-remote-linux-machines.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Presentazione delle funzionalità del debugger di Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Strumenti di profilatura con funzionalità complete di creazione di report
 
@@ -139,8 +139,8 @@ La profilatura esplora come viene impiegato il tempo all'interno dell'applicazio
 
 Per ulteriori informazioni:
 
-- Documentazione: [Strumenti di profilatura di Python](profiling-python-code-in-visual-studio.md)
-- Documentazione generale sulle funzionalità di Visual Studio: [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md). (non tutte le funzionalità di profilatura di Visual Studio sono disponibili per Python).
+- Documenti: [Strumenti di profilatura di Python](profiling-python-code-in-visual-studio.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Panoramica delle funzionalità di profilatura](../profiling/profiling-feature-tour.md) (non tutte le funzionalità di profilatura di Visual Studio sono disponibili per Python).
 
 ## <a name="unit-testing-tools"></a>Strumenti per unit test
 
@@ -150,8 +150,8 @@ Consentono di individuare, eseguire e gestire i test in **Esplora test** di Visu
 
 Per ulteriori informazioni:
 
-- Documentazione: [Strumenti di esecuzione di unit test per Python](unit-testing-python-in-visual-studio.md)
-- Documentazione generale sulle funzionalità di Visual Studio: [Eseguire unit test del codice](../test/unit-test-your-code.md).
+- Documenti: [Strumenti di esecuzione di unit test per Python](unit-testing-python-in-visual-studio.md)
+- Documenti generali sulle funzionalità di Visual Studio: [Eseguire unit test del codice](../test/unit-test-your-code.md).
 
 ## <a name="azure-sdk-for-python"></a>Azure SDK per Python
 
@@ -161,15 +161,15 @@ Per altre informazioni, vedere [Azure SDK per Python](/azure/python/) e [Libreri
 
 ## <a name="questions-and-answers"></a>Domande e risposte
 
-**D. Il supporto di Python è disponibile in Visual Studio per Mac?**
+**D. il supporto di Python è disponibile con Visual Studio per Mac?**
 
 Un Non in questo momento, ma è possibile votare a favore della richiesta nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentazione di [Visual Studio per Mac](/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
 
-**D. Cosa si può usare per compilare un'interfaccia utente con Python?**
+**D. cosa si può usare per compilare l'interfaccia utente con Python?**
 
 Un La proposta migliore in questo campo è il [progetto Qt](https://www.qt.io/qt-for-application-development/), con le associazioni per Python note come [PySide (l'associazione ufficiale)](https://wiki.qt.io/PySide) (vedere anche [PySide downloads](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). Attualmente il supporto di Python in Visual Studio non include strumenti specifici per lo sviluppo dell'interfaccia utente.
 
-**D. Un progetto Python può produrre un file eseguibile autonomo?**
+**D. un progetto Python può produrre un file eseguibile autonomo?**
 
 Un Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython può anche essere incorporato in un'applicazione nativa, come descritto nel post del blog, [Using CPython's embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Uso del file ZIP incorporabile di CPython).
 
