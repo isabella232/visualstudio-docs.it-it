@@ -1,5 +1,5 @@
 ---
-title: Le app di eseguire Windows Store nel simulatore | Microsoft Docs
+title: Eseguire app di Windows Store nel simulatore | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823849"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144770"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Eseguire applicazioni Windows Store nel simulatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Impostare il simulatore come destinazione  
  Per eseguire l'app di Windows Store nel simulatore, scegli **Simulatore** dall'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Standard** del debugger.  
   
- ![L'esecuzione nel simulatore](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
+ ![Esecuzione nel simulatore](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
 ## <a name="BKMK_Choose_an_interaction_mode"></a> Scegliere una modalità di interazione  
  È possibile scegliere le modalità di interazione seguenti  
   
-- ![Pulsante modalità mouse](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") modalità Mouse: imposta la modalità di interazione sui movimenti del mouse. I movimenti del mouse includono clic, doppio clic e trascinamento.  
+- ![Pulsante modalità mouse](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") Modalità mouse: imposta la modalità di interazione sui movimenti del mouse. I movimenti del mouse includono clic, doppio clic e trascinamento.  
   
-- ![Pulsante emulazione tocco di avvio](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") emulazione tocco di avvio: imposta la modalità di interazione sui movimenti tocco di un singolo dito. Gli eventi di un singolo dito includono tocco, trascinamento e scorrimento rapido.  
+- ![Pulsante di avvio emulazione tocco](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Emulazione tocco di avvio: imposta la modalità di interazione sui movimenti tocco di un singolo dito. Gli eventi di un singolo dito includono tocco, trascinamento e scorrimento rapido.  
   
-     ![Destinazione simulatore un dito](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") l'icona di bersaglio singolo indica la posizione degli eventi nel simulatore. Usa il mouse per posizionare il puntatore.  
+     ![Simulatore di destinazione di un dito](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") La singola icona di destinazione indica la posizione degli eventi nel simulatore. Usa il mouse per posizionare il puntatore.  
   
-     ![Destinazione touch un dito](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") premere il pulsante sinistro del mouse per attivare la modalità tocco. Ad esempio, fai clic sul pulsante per simulare un tocco o premi e tieni premuto il pulsante mentre trascini o scorri rapidamente.  
+     ![Destinazione tocco di un dito](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") Premere il pulsante sinistro del mouse per attivare la modalità tocco. Ad esempio, fai clic sul pulsante per simulare un tocco o premi e tieni premuto il pulsante mentre trascini o scorri rapidamente.  
   
 ## <a name="pinch-and-zoom"></a>Zoom indietro/avanti  
  Imposta la modalità di interazione per i movimenti zoom indietro e avanti di due dita.  
   
-- ![Destinazione di simulatore due dita](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+- ![Simulatore di destinazione due dita](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
 
   - La doppia icona di destinazione indica la posizione di due dita sullo schermo del dispositivo.  
 
@@ -62,7 +62,7 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
 
   - Ruota la rotellina del mouse avanti o indietro per modificare la distanza simulata delle due dita prima di eseguire il movimento zoom avanti o indietro.  
 
-- ![Avvicinare le dita, eseguire lo zoom avanti e destinazioni di rotazione](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+- ![Destinazioni Pinch, zoom e rotate](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
 
   - Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per fare zoom avanti.  
 
@@ -86,7 +86,7 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
  Puoi modificare l'orientamento verticale e orizzontale del dispositivo ruotando il simulatore di 90 gradi in qualsiasi direzione.  
   
 > [!NOTE]
-> Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.  
+> Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.  
   
 > [!NOTE]
 > Se ruoti il simulatore in modo che un suo bordo sia più largo dello schermo su cui viene visualizzato, il simulatore verrà ridimensionato automaticamente alle dimensioni dello schermo. Il simulatore non viene ripristinato alla dimensione originale se lo ruoti di nuovo.  
@@ -112,7 +112,7 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
      ![Menu di scelta rapida impostazioni screenshot](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Simulare le proprietà di connessione di rete  
- Puoi consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) consentono di rispondere agli eventi [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) e [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) che consentono l'accesso. Vedere [Avvio rapido: Gestione dei vincoli di costo di rete a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puoi consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) consentono di rispondere agli eventi [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) e [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) che consentono l'accesso. Vedere [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Per eseguire il debug o il test del codice in grado di rilevare i costi di rete, il simulatore può simulare le proprietà di una rete esposte tramite l'oggetto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) restituito da [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
@@ -136,12 +136,12 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
   
    **Altre informazioni sulla gestione delle connessioni di rete**  
   
-   [Avvio rapido: La gestione dei vincoli di costo di rete a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
-   [Esempio di informazioni di rete](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Esempio di informazioni di rete](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
    [Analizzare il consumo di energia](../profiling/analyze-energy-use-in-store-apps.md)  
-  
+    
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
    [Come rispondere agli eventi di sistema con attività in background](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  

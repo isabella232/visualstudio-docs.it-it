@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
-ms.translationtype: MT
+ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72536070"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144754"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni sui suggerimenti per la produttività per il debugger in Visual Studio
 
@@ -140,6 +140,7 @@ Se è necessario eseguire il debug dei tipi di problemi comuni alle app multithr
 
     È anche possibile visualizzare il percorso dei thread nella [finestra stack in parallelo](../debugger/get-started-debugging-multithreaded-apps.md).
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Esaminare i payload per i servizi Web e le risorse di rete (UWP)
 
 Nelle app UWP è possibile analizzare le operazioni di rete eseguite con l'API `Windows.Web.Http`. È possibile utilizzare questo strumento per facilitare il debug di servizi Web e risorse di rete. Per usare lo strumento, selezionare **Debug > Profiler prestazioni**. Selezionare **rete**, quindi fare clic su **Avvia**. Nell'applicazione seguire lo scenario che usa `Windows.Web.Http` e quindi scegliere **Arresta raccolta** per generare il report.
@@ -151,6 +152,7 @@ Selezionare un'operazione nella visualizzazione di riepilogo per visualizzare al
 ![Informazioni dettagliate nello strumento utilizzo rete](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Per altre informazioni, vedere [Utilizzo della rete](../profiling/network-usage.md).
+::: moniker-end
 
 ## <a name="modules_window"></a>Acquisire familiarità con le modalità di connessione del debugger all'app (C#, C++, Visual Basic, F#)
 

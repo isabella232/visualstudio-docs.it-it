@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816469"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144712"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus nelle sottoscrizioni di Visual Studio
 
 Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 365 ProPlus è una sottoscrizione che include app di alto livello, come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo su PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
+
+> [!NOTE]
+> La sottoscrizione di Visual Studio consente di usare Office 365 per l'uso in ambiente di produzione.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Introduzione a Office 365 ProPlus
 
@@ -42,10 +45,6 @@ Seguire questa procedura per il download e l'attivazione di Office 365 ProPlus:
    > ![Immettere il codice " Product Key" di Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Fare di nuovo clic su **Avanti**.
 0. Fare clic su **Installa** per installare le applicazioni di Office.
-
-## <a name="next-steps"></a>Passaggi successivi
-
-Se si prevede di sviluppare applicazioni per Office, è opportuno attivare l'[abbonamento a Office Developer](vs-office-dev.md)
 
 ## <a name="eligibility"></a>Idoneità
 
@@ -75,4 +74,4 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Credito singolo di Azure DevTest](vs-azure.md)
+- [Credito singolo di Azure DevTest](vs-azure.md) Se si prevede di sviluppare applicazioni per Office, è necessario attivare la [sottoscrizione per sviluppatori di Office](vs-office-dev.md)
