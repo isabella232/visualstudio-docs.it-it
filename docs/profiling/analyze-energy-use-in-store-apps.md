@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128327"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144740"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizzare il consumo di energia nelle app UWP
 
@@ -90,7 +91,7 @@ if (performance && performance.mark) {
 
 1. Scegliere **Avvia strumenti di diagnostica senza debug** dal menu **Debug**.
 
-     ![Scegliere il consumo di energia nell'hub diagnostica](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Scegliere il consumo di energia nell'hub di diagnostica](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Scegliere **Utilizzo di energia** , quindi **Avvia**.
 
@@ -101,7 +102,7 @@ if (performance && performance.mark) {
 
 4. Per interrompere la profilatura, passa di nuovo a Visual Studio (ALT+TAB) e nella pagina dell'hub di diagnostica scegli **Arresta raccolta** .
 
-     ![Arrestare la raccolta di dati](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
+     ![Interrompi raccolta dati](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
      Visual Studio consente di analizzare i dati raccolti e visualizzare i risultati.
 
@@ -139,11 +140,11 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Ottimizzare l'utilizzo di energia
  Oltre alla trasmissione di dati, le connessioni di rete comportano un costo in termini di energia per l'inizializzazione, la gestione e la chiusura della connessione. Alcune reti mantengono aperta la connessione per un certo periodo successivo all'invio o alla ricezione dei dati per consentire la trasmissione di più dati tramite una singola connessione. Puoi utilizzare il riquadro **Risorse (On/Off)** per esaminare la modalità di interazione dell'app con la connessione.
 
- ![Riquadro Risorse &#40;On&#47;Off&#41;](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![Risorse &#40;nel&#47;riquadro&#41; disattivato](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Se le barre **Rete** e **Trasferimento dati** indicano che la connessione rimane aperta per lunghi periodi di tempo per trasmettere in modo intermittente una serie di pacchetti di dati di piccole dimensioni, puoi suddividere i dati in batch per inviarli in un'unica trasmissione, riducendo il tempo in cui la rete rimane aperta e risparmiando costi energetici.
 
- ![Riquadro Riepilogo consumo energia](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")
+ ![Riquadro Riepilogo consumo di energia](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")
 
  Hai un controllo minore sui costi energetici dello schermo. La maggior parte degli schermi richiede più energia per visualizzare i colori chiari rispetto a quelli più scuri, quindi l'utilizzo di uno sfondo scuro è un modo per ridurre i costi.
 
