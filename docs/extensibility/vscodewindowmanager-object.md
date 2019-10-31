@@ -13,21 +13,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1da94495019d30a8ba3df8bdaa7df0ccf2ae4d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322939"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189043"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
-Il servizio di linguaggio implementa la gestione di finestre di codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra di riepilogo a discesa). Per altre informazioni, vedere [personalizzazione di Windows di codice usando l'API Legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
 
- Nella tabella seguente mostra le interfacce nel `VSCodeWindowManager` oggetto.
+Il servizio di linguaggio implementa gestione finestre del codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra a discesa). Per altre informazioni, vedere [personalizzazione delle finestre di codice tramite l'API legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+
+Nella tabella seguente vengono illustrate le interfacce nell'oggetto `VSCodeWindowManager`.
 
 |Interfaccia|Descrizione|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente le aree di controllo (ad esempio barre a discesa) per essere aggiunto o rimosso da una finestra del codice.|
-
-## <a name="see-also"></a>Vedere anche
-- [Personalizzazione delle finestre del codice tramite l'API legacy](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Consente l'aggiunta o la rimozione di aree di strumenti, ad esempio barre a discesa, da una finestra del codice.|

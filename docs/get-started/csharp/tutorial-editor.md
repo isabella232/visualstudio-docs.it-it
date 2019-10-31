@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647875"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189074"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -186,7 +186,7 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Introduzione a progetti e soluzioni](tutorial-projects-solutions.md)
+> [Introduzione a progetti e soluzioni](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

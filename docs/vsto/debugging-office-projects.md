@@ -17,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a0bf47afe3937d0c5550286efd50c8055ae5f47
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551659"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189706"
 ---
 # <a name="debug-office-projects"></a>Debug di progetti di Office
-  È possibile eseguire il debug di progetti di Office usando gli stessi strumenti di Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] che si usano per altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Le funzionalità del debugger di[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , ad esempio la possibilità di inserire punti di interruzione e visualizzare le variabili nella finestra **Variabili locali** , sono disponibili anche quando si esegue il debug di progetti di Office. Per altre informazioni sugli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di debug, vedere [debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
+  È possibile eseguire il debug di progetti di Office usando gli stessi strumenti di Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] che si usano per altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Le funzionalità del debugger di[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , ad esempio la possibilità di inserire punti di interruzione e visualizzare le variabili nella finestra **Variabili locali** , sono disponibili anche quando si esegue il debug di progetti di Office. Per ulteriori informazioni sugli strumenti di debug di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vedere [debug in Visual Studio](../debugger/debugger-feature-tour.md).
 
 > [!TIP]
 > Per semplificare il debug, chiudere tutte le istanze dell'applicazione di Office aperte, prima di generare ed eseguire il debug.
@@ -35,7 +35,7 @@ ms.locfileid: "69551659"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="start-and-stop-the-debugger"></a>Avviare e arrestare il debugger
- È possibile avviare il debug di un progetto di Office come si avvia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] il debug di altri progetti. ad esempio, è possibile premere il tasto **F5** . Quando si avvia il debug di un progetto di componente aggiuntivo VSTO, viene avviato un nuovo processo per l'applicazione di Office di destinazione e il componente aggiuntivo VSTO viene caricato.
+ È possibile avviare il debug di un progetto di Office come si inizia a eseguire il debug di altri progetti di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]; ad esempio, è possibile premere il tasto **F5** . Quando si avvia il debug di un progetto di componente aggiuntivo VSTO, viene avviato un nuovo processo per l'applicazione di Office di destinazione e il componente aggiuntivo VSTO viene caricato.
 
  Quando si avvia il debug di un progetto a livello di documento, il documento o la cartella di lavoro viene aperta in un nuovo processo di Word o Excel.
 
@@ -72,10 +72,10 @@ ms.locfileid: "69551659"
  Ogni volta che si compila un progetto, il dataset viene svuotato e ricreato. Se si desidera eseguire il debug di un dataset memorizzato nella cache, è necessario aprire il documento all'esterno di Visual Studio e quindi connettere il debugger.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Eseguire il debug di progetti di documento di Word in base al formato documento di Word 97-2003 (*. doc)
- Per eseguire il debug di un progetto documento di Word basato sul */* formato documento di Word 97-2003 (doc *), è necessario aggiungere la cartella del progetto all'elenco delle cartelle attendibili. Per ulteriori informazioni su come eseguire questa operazione, vedere [Grant trust to Documents](../vsto/granting-trust-to-documents.md).
+ Per eseguire il debug di un progetto documento di Word basato sul formato documento di Word 97-2003 ( */* . doc *), è necessario aggiungere la cartella del progetto all'elenco delle cartelle attendibili. Per ulteriori informazioni su come eseguire questa operazione, vedere [Grant trust to Documents](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Eseguire il debug di componenti aggiuntivi disabilitati
- Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Un'applicazione di Microsoft Office disabilita i componenti aggiuntivi VSTO per impedire che il codice con errori venga caricato ogni volta che viene avviata l'applicazione. Tuttavia, è anche facile causare un comportamento imprevisto durante il normale debug. Per informazioni su come abilitare nuovamente i componenti aggiuntivi VSTO, vedere [procedura: Abilitare di nuovo un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).
+ Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Un'applicazione di Microsoft Office disabilita i componenti aggiuntivi VSTO per impedire che il codice con errori venga caricato ogni volta che viene avviata l'applicazione. Tuttavia, è anche facile causare un comportamento imprevisto durante il normale debug. Per informazioni su come abilitare nuovamente i componenti aggiuntivi VSTO, vedere [procedura: riabilitare un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).
 
  Esistono due tipi di disabilitazione usati dalle applicazioni di Microsoft Office per i componenti aggiuntivi VSTO: disabilitazione che causa la chiusura imprevista dell'applicazione e disabilitazione che non causa la chiusura imprevista dell'applicazione.
 
@@ -95,10 +95,10 @@ ms.locfileid: "69551659"
 
  Per visualizzare ogni errore in una finestra di messaggio, creare una variabile di ambiente denominata `VSTO_SUPPRESSDISPLAYALERTS` e impostarla su 0 (zero). È possibile eliminare i messaggi eliminando la variabile di ambiente o impostandola su 1 (uno).
 
- Per scrivere gli errori in un file di log, creare una variabile di ambiente denominata `VSTO_LOGALERTS` e impostarla su 1 (uno).           [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea il file di log nella cartella che contiene il manifesto della distribuzione per il componente aggiuntivo VSTO o nella cartella che contiene il documento o la cartella di lavoro associata alla personalizzazione. Se l'operazione non riesce [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , il crea il file di log nella cartella *% Temp%* locale. Per i componenti aggiuntivi VSTO a livello di applicazione, il nome predefinito è *nome componente aggiuntivo*.vsto.log. Per i progetti a livello di documento, il nome del file di log è *nome documento*.*estensione*.log, ad esempio ExcelWorkbook1.xlsx.log. Per arrestare la registrazione degli errori, eliminare la variabile di ambiente o impostarla su 0 (zero).
+ Per scrivere gli errori in un file di log, creare una variabile di ambiente denominata `VSTO_LOGALERTS` e impostarla su 1 (uno). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea il file di log nella cartella che contiene il manifesto della distribuzione per il componente aggiuntivo VSTO o nella cartella che contiene il documento o la cartella di lavoro associata alla personalizzazione. Se l'operazione ha esito negativo, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea il file di log nella cartella *% Temp%* locale. Per i componenti aggiuntivi VSTO a livello di applicazione, il nome predefinito è *nome componente aggiuntivo*.vsto.log. Per i progetti a livello di documento, il nome del file di log è *nome documento*.*estensione*.log, ad esempio ExcelWorkbook1.xlsx.log. Per arrestare la registrazione degli errori, eliminare la variabile di ambiente o impostarla su 0 (zero).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)
-- [Procedura: Abilitare di nuovo un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
+- [Procedura: riabilitare un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)
 - [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)

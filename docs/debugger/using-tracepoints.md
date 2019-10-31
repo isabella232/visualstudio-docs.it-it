@@ -1,6 +1,6 @@
 ---
-title: Usare punti nel debugger | Microsoft Docs
-ms.date: 9/17/2019
+title: Informazioni sul log con punti | Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516400"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187308"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Usare punti nel debugger di Visual Studio
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Registrare le informazioni nella finestra di output usando punti in Visual Studio
 
-Punti consentono di registrare le informazioni nella finestra di output in condizioni configurabili senza modificare o arrestare il codice. Questa funzionalità è supportata sia per il codice gestito che per quello nativo, nonché per diversi linguaggi, C#ad esempio JavaScript e.
+Punti consentono di registrare le informazioni nella finestra di output in condizioni configurabili senza modificare o arrestare il codice. Questa funzionalità è supportata sia per i linguaggi gestitiC#(, Visual Basic F#,) sia per il codice nativo, nonché per linguaggi quali JavaScript e Python.
 
 ## <a name="let39s-take-an-example"></a>Diamo&#39;un esempio
 
@@ -111,7 +111,7 @@ Per il numero di passaggi è possibile scegliere di generare un messaggio quando
 ![Numero di passaggi delle espressioni condizionali](../debugger/media/conditionalexpressionhitcount.png "Numero di passaggi delle espressioni condizionali")
 
 ### <a name="filter"></a>Filtro
-Per una condizione di filtro, specificare per quali dispositivi, processi o output dei thread viene visualizzato.
+Per una condizione di filtro, specificare quali dispositivi, processi o output dei thread vengono visualizzati per.
 
 ![Filtro espressione condizionale](../debugger/media/conditionalexpressionfilter.png "Filtro espressione condizionale")
 
@@ -129,7 +129,7 @@ Racchiudere le stringhe, ad esempio i nomi, tra virgolette doppie. I valori poss
 
 Anche se punti è progettato per semplificare l'esperienza di debug e più semplice, è necessario tenere presenti alcune considerazioni su come usarle.
 
-In alcuni casi, quando si ispeziona una proprietà o un attributo di un oggetto, il relativo valore può cambiare. Non si tratta di un bug causato dalla funzionalità del punto di analisi, ma è importante ricordare che l'uso di punti per controllare gli oggetti non evita queste modifiche accidentali.
+In alcuni casi, quando si ispeziona una proprietà o un attributo di un oggetto, il relativo valore può cambiare. Se il valore viene modificato durante l'ispezione, non si tratta di un bug causato dalla funzionalità del punto di analisi. Tuttavia, l'uso di punti per controllare gli oggetti non evita queste modifiche accidentali.
 
 Il modo in cui le espressioni vengono valutate nella finestra di messaggio **azione** può essere diverso dalla lingua attualmente utilizzata per lo sviluppo. Per restituire una stringa, ad esempio, non è necessario eseguire il wrapping di un messaggio tra virgolette anche se si utilizza normalmente `Debug.WriteLine()` o `console.log()`. Inoltre, la sintassi di parentesi graffe (`{ }`) per le espressioni di output può essere diversa rispetto alla convenzione per l'output dei valori nel linguaggio di sviluppo. Tuttavia, il contenuto racchiuso tra parentesi graffe (`{ }`) deve comunque essere scritto utilizzando la sintassi del linguaggio di sviluppo.
 

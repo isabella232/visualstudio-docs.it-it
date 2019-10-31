@@ -12,16 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0540ac17ca64f24ead19b8b3655175d12fa42e41
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253971"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189759"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usare i controlli WPF nelle soluzioni Office
 
-Anche se le soluzioni create tramite gli strumenti di sviluppo di Office in Visual Studio sono progettate per essere usate direttamente con i controlli Windows Form, è possibile usare anche i controlli WPF nelle soluzioni. Windows Presentation Foundation (WPF) è un'alternativa a Windows Form per progettare interfacce utente. In WPF viene usato un linguaggio di markup, denominato Extensible Application Markup Language (XAML), che offre nuove tecniche per l'incorporazione di interfacce utente, supporti e documenti. Per ulteriori informazioni, vedere [Cenni preliminari su WPF](../designers/introduction-to-wpf.md).
+Anche se le soluzioni create tramite gli strumenti di sviluppo di Office in Visual Studio sono progettate per essere usate direttamente con i controlli Windows Form, è possibile usare anche i controlli WPF nelle soluzioni. Windows Presentation Foundation (WPF) è un'alternativa a Windows Form per progettare interfacce utente. In WPF viene usato un linguaggio di markup, denominato Extensible Application Markup Language (XAML), che offre nuove tecniche per l'incorporazione di interfacce utente, supporti e documenti. Per ulteriori informazioni, vedere [Cenni preliminari su WPF](/dotnet/framework/wpf/introduction-to-wpf).
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -53,11 +53,11 @@ Non è possibile aggiungere i controlli WPF direttamente agli elementi dell'inte
 
 5. Aggiungere un riquadro azioni, un'area del modulo o un riquadro attività personalizzato al progetto:
 
-    - Per le aree del modulo, aggiungere un elemento dell' **area del modulo di Outlook** al progetto. Per altre informazioni, vedere [Procedura: Aggiungere un'area del modulo a un progetto](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)di componente aggiuntivo di Outlook.
+    - Per le aree del modulo, aggiungere un elemento dell' **area del modulo di Outlook** al progetto. Per altre informazioni, vedere [procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Per i riquadri azioni, aggiungere un **controllo del riquadro azioni** o un elemento del **controllo utente** al progetto. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro azioni ai documenti di Word o alle cartelle](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)di lavoro di Excel.
+    - Per i riquadri azioni, aggiungere un **controllo del riquadro azioni** o un elemento del **controllo utente** al progetto. Per altre informazioni, vedere [procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    - Per i riquadri attività personalizzati, aggiungere un elemento del **controllo utente** al progetto. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    - Per i riquadri attività personalizzati, aggiungere un elemento del **controllo utente** al progetto. Per altre informazioni, vedere [procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
 6. Dalla scheda **controlli utente WPF** di NomeProgetto della **casella degli strumenti**trascinare il controllo utente WPF nella finestra di progettazione per il riquadro azioni, l'area del modulo o il riquadro attività personalizzato.
 
@@ -110,11 +110,11 @@ Per altre informazioni sulle problematiche di progettazione e architettura per l
 
 Per altre informazioni sull'aggiunta dei controlli WPF a form e controlli Windows Form in Visual Studio in fase di progettazione, vedere gli argomenti seguenti:
 
-- [Procedura dettagliata: Crea nuovo contenuto WPF in Windows Forms in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+- [Procedura dettagliata: creare nuovi contenuti WPF in Windows Forms in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
-- [Procedura dettagliata: Disponi contenuto WPF in Windows Forms in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+- [Procedura dettagliata: disposizione del contenuto WPF in Windows Forms in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
-- [Procedura dettagliata: Stile contenuto WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+- [Procedura dettagliata: stile contenuto WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -123,6 +123,6 @@ Per altre informazioni sull'aggiunta dei controlli WPF a form e controlli Window
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Riquadri attività personalizzati](../vsto/custom-task-panes.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
-- [Procedura: Aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

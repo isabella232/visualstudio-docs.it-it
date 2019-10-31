@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349702"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188104"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Trovare l'attività di debug in Visual Studio
 
@@ -43,11 +43,15 @@ In caso contrario C# , F# solo per e è possibile [tenere traccia di un ID ogget
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>Sospendere il codice all'interno di un ciclo in una determinata iterazione
 
-Impostare un punto di interruzione utilizzando il **numero di passaggi** come condizione. Per ulteriori informazioni, vedere [passaggi](using-breakpoints.md#hit-count).
+Impostare un punto di interruzione utilizzando il **numero di passaggi** come condizione. Per ulteriori informazioni, vedere [passaggi](using-breakpoints.md#set-a-hit-count-condition).
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>Sospendere il codice all'inizio di una funzione quando si conosce il nome della funzione, ma non la relativa posizione
 
 Questa operazione può essere eseguita con un punto di interruzione di funzione. Per altre informazioni, vedere [impostare](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file)i punti di interruzione di una funzione.
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>Sospende il codice all'inizio di più funzioni con lo stesso nome
+
+Quando si hanno più funzioni con lo stesso nome (funzioni o funzioni in overload in progetti diversi), è possibile usare un punto di [interruzione della funzione](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>Gestisci e tieni traccia dei punti di interruzione
 
@@ -101,11 +105,15 @@ Per configurare le opzioni del debugger e le impostazioni del progetto del debug
 
 ### <a name="edit-code-during-a-debugging-session"></a>Modificare il codice durante una sessione di debug
 
-Usare [modifica e continuazione](edit-and-continue.md). Per XAML, usare il [ricaricamento a caldo di XAML](xaml-hot-reload.md).
+Usare [modifica e continuazione](edit-and-continue.md). Per XAML, usare il [ricaricamento a caldo di XAML](../xaml-tools/xaml-hot-reload.md).
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Invia messaggi alla finestra di output senza modificare il codice
 
 Impostare un punto di analisi. Per altre informazioni, vedere [uso di punti](using-tracepoints.md).
+
+## <a name="view-the-order-in-which-functions-are-called"></a>Consente di visualizzare l'ordine in cui vengono chiamate le funzioni
+
+Vedere [come visualizzare lo stack di chiamate](how-to-use-the-call-stack-window.md).
 
 ### <a name="debug-on-remote-machines"></a>Eseguire il debug su computer remoti
 

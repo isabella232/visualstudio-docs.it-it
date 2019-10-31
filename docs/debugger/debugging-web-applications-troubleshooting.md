@@ -1,5 +1,5 @@
 ---
-title: Debug di App web - risoluzione dei problemi | Microsoft Docs
+title: Debug di app Web-risoluzione dei problemi | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852354"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188326"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: Risoluzione dei problemi
+# <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: risoluzione dei problemi
 In questa sezione sono contenute le procedure comuni utilizzabili per risolvere gli errori.
 
-## <a name="in-this-section"></a>In questa sezione
- [Procedura: Verificare le impostazioni delle proprietà IIS](../debugger/how-to-verify-iis-property-settings.md) spiega come impostare correttamente le proprietà in IIS per abilitare il debug.
+## <a name="in-this-section"></a>Contenuto della sezione
+ [Procedura: verificare le impostazioni delle proprietà IIS](../debugger/how-to-verify-iis-property-settings.md) Viene illustrato come impostare correttamente le proprietà in IIS per abilitare il debug.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Debug di applicazioni Web: Gli errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md) spiega risolvere gli errori.
+ [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Spiega la risoluzione dei problemi e la risoluzione degli errori.
 
- [Debug di Script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) Cenni preliminari sul debug delle applicazioni Web, ad esempio [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], servizi Web XML e progetti ATL server.
+ [Debug di script e applicazioni Web](how-to-enable-debugging-for-aspnet-applications.md) Cenni preliminari sul debug di applicazioni Web quali [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], servizi Web XML e progetti ATL Server.

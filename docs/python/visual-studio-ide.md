@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983691"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189315"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
@@ -26,7 +26,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 Questa immagine presenta Visual Studio con un progetto Python aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
-- [**Esplora soluzioni**](../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](/visualstudio/get-started/tutorial-projects-solutions).
+- [**Esplora soluzioni**](../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](../get-started/tutorial-projects-solutions.md).
   - Oltre a **Esplora soluzioni** è disponibile [**Ambienti Python**](managing-python-environments-in-visual-studio.md), in cui è possibile gestire i diversi interpreti Python installati nel computer.
 
   ::: moniker range=">=vs-2019"

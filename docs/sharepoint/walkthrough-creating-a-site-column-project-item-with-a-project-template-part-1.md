@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ede811cf2e9d900a0c78aca2214b43bd8438fe
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984693"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189164"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procedura dettagliata: creare un elemento di progetto colonna del sito con un modello di progetto, parte 1
   I progetti SharePoint sono contenitori per uno o più elementi del progetto SharePoint. Per estendere il sistema del progetto SharePoint in Visual Studio, è possibile creare tipi di elemento di progetto SharePoint personalizzati e quindi associarli a un modello di progetto. In questa procedura dettagliata verrà definito un tipo di elemento di progetto per la creazione di una colonna del sito, quindi verrà creato un modello di progetto che può essere utilizzato per creare un nuovo progetto che contiene un elemento di progetto colonna del sito.
@@ -433,7 +433,7 @@ ms.locfileid: "72984693"
 
    - USA lo spazio dei nomi "<http://schemas.microsoft.com/developer/vstemplate/2005>". Altri file di progetto in questa soluzione usano lo spazio dei nomi "<http://schemas.microsoft.com/developer/msbuild/2003>". Di conseguenza, verranno generati XML Schema messaggi di avviso, ma è possibile ignorarli in questa procedura dettagliata.
 
-     Per ulteriori informazioni sul contenuto dei file con *estensione vstemplate* , vedere [riferimenti allo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Per ulteriori informazioni sul contenuto dei file con *estensione vstemplate* , vedere [riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
 2. Salvare e chiudere il file.
 

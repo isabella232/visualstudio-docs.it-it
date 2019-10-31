@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728378"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187151"
 ---
 # <a name="visualizer-security-considerations"></a>Considerazioni sulla sicurezza del visualizzatore
 La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. Attualmente non sono noti attacchi in grado di sfruttare tali rischi, ma gli sviluppatori devono essere a conoscenza della loro esistenza e adottare misure di sicurezza adeguate come descritto in questo argomento al fine di impedire eventuali attacchi futuri.
@@ -39,6 +39,6 @@ La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. At
 
 ## <a name="see-also"></a>Vedere anche
 - [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
-- [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Procedura: Scrivere un visualizzatore](create-custom-visualizers-of-data.md)
 - [Creazione di visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

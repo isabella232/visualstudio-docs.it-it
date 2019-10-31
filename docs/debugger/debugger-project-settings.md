@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738334"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188627"
 ---
 # <a name="debugger-project-settings"></a>Impostazioni di progetto correlate al debugger
 Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste impostazioni vengono definiti determinati aspetti del processo di debug, ad esempio le directory esaminate dal debugger, il comando e i relativi argomenti utilizzati per l'avvio del programma e il tipo di informazioni di debug create per il programma. Per modificare le impostazioni, è possibile utilizzare la finestra di dialogo **Pagine delle proprietà** .
@@ -44,7 +44,7 @@ Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste im
 ## <a name="related-sections"></a>Sezioni correlate
  [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Viene descritto come il debugger utilizza file di simboli e file di origine per visualizzare informazioni per il debug.
 
- [Eseguire il debug di app in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) Viene descritto come eseguire il debug di app UWP. (Centro sviluppatori Windows)
+ [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Viene descritto come eseguire il debug di app UWP. (Centro sviluppatori Windows)
 
  [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md) Vengono descritte le impostazioni delle proprietà correlate al debugger e la preparazione necessaria per eseguire il debug del programma con il debugger [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 

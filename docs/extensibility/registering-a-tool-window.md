@@ -1,5 +1,5 @@
 ---
-title: La registrazione di una finestra degli strumenti | Microsoft Docs
+title: Registrazione di una finestra degli strumenti | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ae53481b773cfdad5d4ac70f90202fcfd9d1ad4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334315"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186270"
 ---
 # <a name="register-a-tool-window"></a>Registrare una finestra degli strumenti
 È possibile registrare le finestre degli strumenti usando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- Nel codice precedente, il <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra il `PersistedWindowPane` e `DynamicWindowPane` strumento windows con Visual Studio. La finestra degli strumenti persistente viene ancorata e a schede con **Esplora soluzioni**, e la finestra dinamica è stata assegnata un valore predefinito a partire da posizione e dimensioni. La finestra dinamica viene resa temporanea, che indica che non è stato creato all'avvio. Scrive un `DontForceCreate` valore di `ToolWindows` chiave nel Registro di sistema. Per altre informazioni, vedere [configurazione visualizzazione della finestra degli strumenti](../extensibility/tool-window-display-configuration.md).
+ Nel codice precedente, il <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra le finestre degli strumenti `PersistedWindowPane` e `DynamicWindowPane` con Visual Studio. La finestra degli strumenti permanente è ancorata e a schede con **Esplora soluzioni**e alla finestra dinamica viene assegnata una posizione e una dimensione di inizio predefinite. La finestra dinamica viene resa temporanea, a indicare che non viene creata all'avvio. Viene scritto un valore `DontForceCreate` nella chiave `ToolWindows` nel registro di sistema. Per ulteriori informazioni, vedere [configurazione dello schermo della finestra degli strumenti](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

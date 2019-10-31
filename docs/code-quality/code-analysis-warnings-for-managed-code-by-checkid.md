@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806161"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188846"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
@@ -276,7 +276,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 
 | CheckId | Avviso | Descrizione |
 |---------| - | - |
-| Ca2007 | [Ca2007: non eseguire direttamente l'attesa di un'attività](ca2007-do-not-directly-await-task.md) | Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) direttamente un <xref:System.Threading.Tasks.Task>. Quando un metodo asincrono attende direttamente un <xref:System.Threading.Tasks.Task>, la continuazione viene eseguita nello stesso thread che ha creato l'attività. Questo comportamento può essere oneroso in termini di prestazioni e può causare un deadlock sul thread UI. Prendere in considerazione la chiamata a <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> per segnalare l'intenzione per la continuazione. |
+| Ca2007 | [Ca2007: non eseguire direttamente l'attesa di un'attività](ca2007.md) | Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) direttamente un <xref:System.Threading.Tasks.Task>. Quando un metodo asincrono attende direttamente un <xref:System.Threading.Tasks.Task>, la continuazione viene eseguita nello stesso thread che ha creato l'attività. Questo comportamento può essere oneroso in termini di prestazioni e può causare un deadlock sul thread UI. Prendere in considerazione la chiamata a <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> per segnalare l'intenzione per la continuazione. |
 | CA1000 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
 | CA1001 | [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001.md) | Una classe dichiara e implementa un campo di istanza di tipo System.IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable. |
 | CA1002 | [CA1002: Non esporre elenchi generici](../code-quality/ca1002.md) | System. Collections. Generic. List < (of \< (T >) >) è una raccolta generica progettata per le prestazioni, non per l'ereditarietà. List, pertanto, non contiene membri virtuali. Devono invece essere esposte le raccolte generiche che sono state progettate per l'ereditarietà. |

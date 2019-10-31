@@ -1,5 +1,5 @@
 ---
-title: 'Guida introduttiva: Creare la prima app Vue.js'
+title: 'Guida introduttiva: creare la prima app Vue. js'
 description: In questa Guida introduttiva viene spiegato come creare un'app Vue.js in Visual Studio usando Node.js Tools for Visual Studio
 ms.custom: seodec18
 ms.date: 09/24/2018
@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: ba1f403cd722b4d3dd1860c4a8b135c87b80bb4d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226487"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189476"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Vue.js
+# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Guida introduttiva: Creare per la prima volta un'app Vue.js con Visual Studio
 
 In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) di Visual Studio si creerà ed eseguirà una semplice applicazione Web Vue.js.
 
 > [!IMPORTANT]
 > Questo articolo richiede il modello Vue.js disponibile a partire da Visual Studio 2017 versione 15.8.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -106,7 +106,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 1. In seguito, scegliere **Compila** > **Compila soluzione** per compilare il progetto. Controllare i risultati della compilazione nella finestra **Output** e scegliere **Compila** dall'elenco **Mostra output di**.
 
-    Il modello di progetto Vue.js usa lo script npm `build` tramite la configurazione di un evento di post-compilazione. Se si desidera modificare questa impostazione, aprire il file di progetto (*\<projectname\>.njsproj*) da Esplora risorse e individuare la seguente riga di codice:
+    Il modello di progetto Vue.js usa lo script npm `build` tramite la configurazione di un evento di post-compilazione. Se si desidera modificare questa impostazione, aprire il file di progetto ( *\<projectname\>.njsproj*) da Esplora risorse e individuare la seguente riga di codice:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -128,6 +128,6 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Completare l'[Esercitazione per Node.js e Express](../nodejs/tutorial-nodejs.md)
-- Completare l'[Esercitazione per Node.js e React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
+- Completare l'[Esercitazione per Node.js e Express](tutorial-nodejs.md)
+- Completare l'[Esercitazione per Node.js e React](tutorial-nodejs-with-react-and-jsx.md)
 - [Distribuire l'app nel Servizio app di Linux](../javascript/publish-nodejs-app-azure.md)

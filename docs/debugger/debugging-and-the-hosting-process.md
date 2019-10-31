@@ -1,5 +1,5 @@
 ---
-title: Debug e processo di Hosting | Microsoft Docs
+title: Debug e processo di hosting | Microsoft Docs
 ms.date: 08/01/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f77df2eae643b658e915662e0f50f6a376141d27
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852480"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188462"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debug e processo di hosting
 Il processo di hosting di Visual Studio migliora le prestazioni del debugger e offre ulteriori funzionalità, ad esempio il debug in contesti di attendibilità parziale e la valutazione delle espressioni per la fase di progettazione. Se necessario, è possibile disabilitare il processo di hosting. Nelle sezioni riportate di seguito vengono descritte alcune differenze tra l'esecuzione del debug con e senza processo di hosting.
 
 > [!NOTE]
-> A partire da Visual Studio 2017, l'opzione per eseguire il debug usando il processo di hosting non è più necessario ed è stata rimossa. Per altre informazioni, vedere [debug: Visual Studio 2017 consente di velocizzare il processo meno preferito](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
+> A partire da Visual Studio 2017, l'opzione per eseguire il debug con il processo di hosting non è più necessaria ed è stata rimossa. Per altre informazioni, vedere [debug: Visual Studio 2017 mira ad accelerare il processo meno preferito](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Debug in contesti di attendibilità parziale e sicurezza ClickOnce
- Il debug in contesti di attendibilità parziale richiede il processo di hosting. Se il processo di hosting viene disabilitato, questo tipo di debug non potrà funzionare anche se la sicurezza con attendibilità parziale è attivata nella pagina **Sicurezza** di **Proprietà progetto**. Per altre informazioni, vedere [Procedura: Eseguire il debug di un'applicazione parzialmente attendibile](/visualstudio/debugger/debugger-security).
+ Il debug in contesti di attendibilità parziale richiede il processo di hosting. Se il processo di hosting viene disabilitato, questo tipo di debug non potrà funzionare anche se la sicurezza con attendibilità parziale è attivata nella pagina **Sicurezza** di **Proprietà progetto**. Per altre informazioni, vedere [procedura: eseguire il debug di un'applicazione parzialmente attendibile](debugger-security.md).
 
 ## <a name="design-time-expression-evaluation"></a>Valutazione delle espressioni per la fase di progettazione
  Le espressioni per la fase di progettazione usano sempre il processo di hosting. La disattivazione del processo di hosting in **Proprietà progetto** comporta la disattivazione della valutazione delle espressioni per la fase di progettazione per i progetti Libreria di classi. Per altri tipi di progetto la valutazione delle espressioni per la fase di progettazione non viene disabilitata. In Visual Studio viene invece avviato l'eseguibile usato per la valutazione per la fase di progettazione senza il processo di hosting. Questa differenza potrebbe produrre risultati diversi.
@@ -43,4 +43,4 @@ Il processo di hosting di Visual Studio migliora le prestazioni del debugger e o
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Eseguire il debug di un'applicazione parzialmente attendibile](/visualstudio/debugger/debugger-security)
+- [Procedura: Eseguire il debug di un'applicazione parzialmente attendibile](debugger-security.md)

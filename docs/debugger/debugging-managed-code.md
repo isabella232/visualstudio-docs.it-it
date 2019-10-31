@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536055"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188408"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug di codice gestitoC#(, Visual Basic F#, C++,/CLI)
 
@@ -76,7 +76,7 @@ Vengono fornite considerazioni per il debug di applicazioni di servizio Windows,
 [Debug e profilatura](/dotnet/framework/debug-trace-profile/index)\
 Viene descritto il debug di applicazioni .NET e i requisiti di configurazione.
 
-[Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+[Debug di script e applicazioni Web](how-to-enable-debugging-for-aspnet-applications.md)\
 Vengono presentati le tecniche di debug e i problemi più comuni riscontrabili durante il debug di script e applicazioni Web.
 
 ## <a name="see-also"></a>Vedere anche

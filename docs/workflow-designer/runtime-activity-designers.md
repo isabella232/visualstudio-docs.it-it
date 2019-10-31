@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb62644b362a7630d454db2740b354c546b0155b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c553b7069243d5a701b94fd1f5f011e4075d4c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649992"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188916"
 ---
 # <a name="runtime-activity-designers"></a>ActivityDesigner Runtime
 Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e terminare le attività del flusso di lavoro. Negli argomenti contenuti in questa sezione vengono fornite indicazioni sull'utilizzo degli ActivityDesigner Progettazione flussi di lavoro.
@@ -35,4 +35,4 @@ Gli ActivityDesigner Runtime vengono usati per salvare in modo permanente e term
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Uso degli Activity Designer](../workflow-designer/using-the-activity-designers.md)
+- [Uso degli Activity Designer](control-flow-activity-designers.md)

@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b58a4c6f369f9a5338365e215805c2379db8d2ba
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650136"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189744"
 ---
 # <a name="messaging-activity-designers"></a>ActivityDesigner Messaggistica
 
@@ -41,7 +41,7 @@ Per altri tipi di ActivityDesigner, vedere gli argomenti seguenti:
 
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)
 
-- [Uso degli Activity Designer](../workflow-designer/using-the-activity-designers.md)
+- [Uso degli Activity Designer](control-flow-activity-designers.md)
 
 - [Diagramma di flusso](../workflow-designer/flowchart-activity-designers.md)
 
@@ -57,4 +57,4 @@ Per altri tipi di ActivityDesigner, vedere gli argomenti seguenti:
 
 ## <a name="external-resources"></a>Risorse esterne
 
-[Uso degli Activity Designer](../workflow-designer/using-the-activity-designers.md)
+[Uso degli Activity Designer](control-flow-activity-designers.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737918"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188199"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C#)
  La funzionalità Modifica e continuazione per C# consente di apportare modifiche al codice in modalità di interruzione durante il debug. Le modifiche possono essere applicate senza terminare e riavviare la sessione di debug. In modalità di esecuzione l'editor del codice sorgente è di sola lettura.
@@ -41,4 +41,4 @@ ms.locfileid: "72737918"
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Usare Modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Modifiche al codice supportateC# (e Visual Basic)](../debugger/supported-code-changes-csharp.md)
-- [Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio](../debugger/xaml-hot-reload.md)
+- [Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio](../xaml-tools/xaml-hot-reload.md)

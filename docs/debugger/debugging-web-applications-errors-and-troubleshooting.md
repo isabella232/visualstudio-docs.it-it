@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84da1c75da968f9f89417cc48deec5310bc270
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738048"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188343"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: errori e risoluzione dei problemi
 È possibile che si verifichino i seguenti errori durante il tentativo di eseguire il debug di applicazioni Web.
@@ -57,4 +57,4 @@ ms.locfileid: "72738048"
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
-- [Debug di script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Debug di script e applicazioni Web](how-to-enable-debugging-for-aspnet-applications.md)

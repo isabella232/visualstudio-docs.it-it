@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734929"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187922"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica grafica di Visual Studio
 *Diagnostica della grafica* di Visual Studio è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Diagnostica della grafica può essere usato nelle app in esecuzione localmente nel PC Windows o in un computer o un dispositivo remoto.
@@ -52,7 +52,7 @@ ms.locfileid: "72734929"
 ### <a name="gpu-usage"></a>Utilizzo GPU
  Diagnostica della grafica può anche profilare le prestazioni dell'app Direct3D. Poiché i dati di profilatura sarebbero falsati dalla registrazione di dettagli sugli eventi di grafica, questa funzione è distinta dall'acquisizione dei frame da esaminare con Analizzatore grafica.
 
- Per altre informazioni, vedere [Utilizzo GPU](/visualstudio/profiling/gpu-usage).
+ Per altre informazioni, vedere [Utilizzo GPU](../../profiling/gpu-usage.md).
 
 ### <a name="directx-control-panel"></a>Pannello di controllo DirectX
  Il pannello di controllo DirectX è un componente che consente di modificare il comportamento di DirectX. È ad esempio possibile abilitare la versione di debug dei componenti di runtime di DirectX, selezionare il tipo di messaggi di debug segnalati e impedire l'uso di determinate funzionalità dell'hardware grafico per emulare hardware meno potente. Questo livello di controllo su DirectX può facilitare il debug e il test dell'app DirectX. È possibile accedere al pannello di controllo DirectX da Visual Studio.
