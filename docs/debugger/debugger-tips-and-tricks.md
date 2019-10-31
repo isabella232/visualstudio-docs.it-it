@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144754"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188624"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni sui suggerimenti per la produttività per il debugger in Visual Studio
 
@@ -41,7 +41,7 @@ Per ulteriori informazioni sull'utilizzo della funzionalità e sulle limitazioni
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>Modificare il codice XAML e continuare il debug
 
-Per modificare il codice XAML durante una sessione di debug, vedere [scrivere ed eseguire il debug di codice XAML in esecuzione con il ricaricamento a caldo di XAML](xaml-hot-reload.md).
+Per modificare il codice XAML durante una sessione di debug, vedere [scrivere ed eseguire il debug di codice XAML in esecuzione con il ricaricamento a caldo di XAML](../xaml-tools/xaml-hot-reload.md).
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Problemi di debug difficili da riprodurre
 

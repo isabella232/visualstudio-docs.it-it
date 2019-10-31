@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c78c56d00f087bdef7733ee1ef2cbf90afd9638
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144767"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189419"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Avvio rapido: Presentazione degli strumenti di profilatura
 
@@ -111,7 +111,7 @@ Per altre informazioni, vedere [Sequenza temporale dell'applicazione](../profili
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analizza l'utilizzo della GPU (Direct3D)
 
-Nelle applicazioni Direct3D (i componenti Direct3D devono essere in C++) è possibile esaminare l'attività sulla GPU e analizzare i problemi di prestazioni. Per altre informazioni, vedere l'articolo relativo all'[uso della GPU](../debugger/gpu-usage.md). Per usare lo strumento, scegliere **Utilizzo GPU** nel profiler delle prestazioni e quindi scegliere **Inizia**. Nell'applicazione seguire lo scenario che interessa per la profilatura e quindi scegliere **Arresta raccolta** per generare un report.
+Nelle applicazioni Direct3D (i componenti Direct3D devono essere in C++) è possibile esaminare l'attività sulla GPU e analizzare i problemi di prestazioni. Per altre informazioni, vedere l'articolo relativo all'[uso della GPU](/visualstudio/debugger/graphics/gpu-usage). Per usare lo strumento, scegliere **Utilizzo GPU** nel profiler delle prestazioni e quindi scegliere **Inizia**. Nell'applicazione seguire lo scenario che interessa per la profilatura e quindi scegliere **Arresta raccolta** per generare un report.
 
 Quando si seleziona un periodo di tempo nei grafici e si sceglie **Visualizza dettagli**, appare una visualizzazione dettagliata nel riquadro inferiore. Nella visualizzazione dettagliata è possibile esaminare l'entità dell'attività in corso in ogni CPU e GPU. Selezionare gli eventi nel riquadro inferiore per ottenere i popup nella sequenza temporale. Ad esempio, selezionare l'evento **Present** per visualizzare i popup delle chiamate **presenti**. Le linee verticali grigio chiaro di vsync possono essere usate come riferimento per capire se per determinate chiamate **presenti** non è stato eseguito il vsync. Deve esistere una chiamata **presente** tra ogni due vsync affinché l'applicazione esegua costantemente 60 FPS.
 
@@ -162,7 +162,7 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |----------------------|---------------------|-------------|-------------|
 |[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
-|[Utilizzo GPU](../debugger/gpu-usage.md)|sì|sì|No|
+|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|
 |[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì|
@@ -174,7 +174,7 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |----------------------|---------------------|-------------|-------------|
 |[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
-|[Utilizzo GPU](../debugger/gpu-usage.md)|sì|sì|No|
+|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|
 |[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì|
@@ -186,4 +186,4 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug in Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+- [Debug in Visual Studio](../debugger/debugger-feature-tour.md)

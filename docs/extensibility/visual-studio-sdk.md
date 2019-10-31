@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 662b64f69b278c4cc815a742c5cba26592e000bd
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981706"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189092"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di integrare nuove funzionalità in Visual Studio. È possibile distribuire le estensioni ad altri utenti e al Visual Studio Marketplace. Di seguito sono illustrati alcuni dei modi in cui si può estendere Visual Studio:
@@ -74,6 +74,7 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
 - [Estensione di Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 - [Domande frequenti: conversione di componenti aggiuntivi in estensioni VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
@@ -93,5 +94,4 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
 - [Distribuire le estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Componenti e funzionalità di Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Supporto per Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Archivio](../extensibility/archive.md)
 - [Riferimenti per Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md)

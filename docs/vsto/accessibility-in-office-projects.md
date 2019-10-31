@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6159cd2afc5788e12a836c138ddcc1ea967a5381
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986343"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189629"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
 
@@ -88,5 +88,5 @@ Visual Studio presenta le limitazioni seguenti relative alle modalità di visual
 
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
-- [Accessibilità per utenti con particolari esigenze](../ide/reference/accessibility-for-people-with-disabilities.md)
+- [Accessibilità per utenti con particolari esigenze](../ide/reference/accessibility-features-of-visual-studio.md)
 - [Funzionalità di accessibilità di Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

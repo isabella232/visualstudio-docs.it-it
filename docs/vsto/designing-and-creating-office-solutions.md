@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ee2d7470a14836d7369fb916c06f2a8172c4e6b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551622"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189708"
 ---
 # <a name="design-and-create-office-solutions"></a>Progettazione e creazione di soluzioni Office
 
@@ -31,7 +31,7 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="create-office-projects"></a>Creazione di progetti di Office
- Prima di iniziare, è necessario stabilire i requisiti e individuare il tipo di soluzione più adatta alle proprie esigenze. Ad esempio, se la soluzione Office deve essere eseguita ogni volta che viene usata l'applicazione, un componente aggiuntivo VSTO è più adatto per soddisfare le esigenze. Se il codice è strettamente integrato con un unico documento, creare una personalizzazione a livello di documento. Questi tipi di progetto sono disponibili come modelli di progetto Visual Studio. Per ulteriori informazioni sui modelli di progetto di Office inclusi in Visual Studio, vedere [Panoramica dei modelli di progetto di Office](../vsto/office-project-templates-overview.md). Per ulteriori informazioni sulla creazione di progetti di Office, vedere [procedura: Creazione di progetti di Office in](../vsto/how-to-create-office-projects-in-visual-studio.md)Visual Studio.
+ Prima di iniziare, è necessario stabilire i requisiti e individuare il tipo di soluzione più adatta alle proprie esigenze. Ad esempio, se la soluzione Office deve essere eseguita ogni volta che viene usata l'applicazione, un componente aggiuntivo VSTO è più adatto per soddisfare le esigenze. Se il codice è strettamente integrato con un unico documento, creare una personalizzazione a livello di documento. Questi tipi di progetto sono disponibili come modelli di progetto Visual Studio. Per ulteriori informazioni sui modelli di progetto di Office inclusi in Visual Studio, vedere [Panoramica dei modelli di progetto di Office](../vsto/office-project-templates-overview.md). Per altre informazioni su come creare progetti di Office, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
  I progetti Office presentano funzionalità ed elementi di progetto diversi da altri tipi di progetti in Visual Studio. Ad esempio, quando si crea un progetto a livello di documento, il documento o cartella di lavoro nel progetto può essere aperto e modificato in Visual Studio. Per altre informazioni, vedere [progetti di Office nell'ambiente Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -44,26 +44,26 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  La versione di .NET Framework scelta per il progetto è necessaria per l'esecuzione della soluzione nei computer degli utenti finali. Se, ad esempio, il progetto è [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , il è necessario nei computer degli utenti finali. In questo esempio, la soluzione non verrà eseguita se nei computer degli utenti finali viene installato solo il .NET Framework 3,5.
+  La versione di .NET Framework scelta per il progetto è necessaria per l'esecuzione della soluzione nei computer degli utenti finali. Se, ad esempio, il progetto è destinato alla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] è necessario nei computer degli utenti finali. In questo esempio, la soluzione non verrà eseguita se nei computer degli utenti finali viene installato solo il .NET Framework 3,5.
 
   Se si esegue la migrazione di un progetto di componente aggiuntivo VSTO destinato a .NET Framework 3.5, Visual Studio modifica il framework di destinazione del progetto impostandolo su [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva, a seconda della versione di Office installata.
 
-  Dopo la modifica del framework di destinazione, tuttavia, potrebbe essere necessario modificare parte del codice nel progetto se vengono utilizzate alcune funzionalità. Per ulteriori informazioni su come modificare il Framework di destinazione, vedere [procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Per ulteriori informazioni sulle modifiche che potrebbero essere necessarie nel progetto, vedere [eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
+  Dopo la modifica del framework di destinazione, tuttavia, potrebbe essere necessario modificare parte del codice nel progetto se vengono utilizzate alcune funzionalità. Per ulteriori informazioni su come modificare il Framework di destinazione, vedere [How to: target a version of the .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Per ulteriori informazioni sulle modifiche che potrebbero essere necessarie nel progetto, vedere [eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
-  Se Visual Studio modifica la .NET Framework di destinazione per il progetto e si usa ClickOnce per distribuire la soluzione, assicurarsi di selezionare anche la versione corrispondente della .NET Framework nella finestra di dialogo **prerequisiti** . Questa selezione non viene modificata automaticamente quando si modifica il framework di destinazione per il progetto. Per altre informazioni, vedere [Procedura: Installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)Office.
+  Se Visual Studio modifica la .NET Framework di destinazione per il progetto e si usa ClickOnce per distribuire la soluzione, assicurarsi di selezionare anche la versione corrispondente della .NET Framework nella finestra di dialogo **prerequisiti** . Questa selezione non viene modificata automaticamente quando si modifica il framework di destinazione per il progetto. Per altre informazioni, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
 > Non è possibile usare .NET Framework 3.5 o versioni precedenti nei progetti Office creati tramite [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. I progetti di Office create mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] richiedono funzionalità che sono state introdotte in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprendere quando gli assembly di interoperabilità primari di Office sono necessari nei computer degli utenti finali
- Per impostazione predefinita, gli assembly di interoperabilità primari (PIA) di Office non devono essere installati nei computer degli utenti finali se la proprietà **Incorpora tipi** di interoperabilità di ogni riferimento Pia di Office nel progetto è impostata su **true**, ovvero il valore predefinito. In questo scenario, le informazioni sul tipo per i tipi di assembly di interoperabilità primari utilizzati dalla soluzione vengono incorporate nell'assembly della soluzione quando si compila il progetto. In fase di esecuzione vengono utilizzate le informazioni sul tipo incorporate anziché gli assembly di interoperabilità primari per effettuare chiamate nel modello a oggetti basato su COM dell'applicazione di Office. Per ulteriori informazioni sulla modalità di incorporamento dei tipi di assembly di interoperabilità primari nella soluzione, vedere [equivalenza del tipo e tipi](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)di interoperabilità incorporati.
+ Per impostazione predefinita, gli assembly di interoperabilità primari (PIA) di Office non devono essere installati nei computer degli utenti finali se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **true**, ovvero il valore predefinito. In questo scenario, le informazioni sul tipo per i tipi di assembly di interoperabilità primari utilizzati dalla soluzione vengono incorporate nell'assembly della soluzione quando si compila il progetto. In fase di esecuzione vengono utilizzate le informazioni sul tipo incorporate anziché gli assembly di interoperabilità primari per effettuare chiamate nel modello a oggetti basato su COM dell'applicazione di Office. Per ulteriori informazioni sulla modalità di incorporamento dei tipi di assembly di interoperabilità primari nella soluzione, vedere [equivalenza del tipo e tipi di interoperabilità incorporati](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
- Se la proprietà **Incorpora tipi** di interoperabilità di ogni riferimento Pia di Office nel progetto è impostata su **false**, gli assembly di interoperabilità primari di Office devono essere installati e registrati nel Global assembly cache in ogni computer dell'utente finale che esegue la soluzione. Nella maggior parte dei casi, gli assembly di interoperabilità primari vengono installati per impostazione predefinita con Office, ma è anche possibile includere l'assembly di interoperabilità primario ridistribuibile come prerequisito per la soluzione. Per ulteriori informazioni, vedere [prerequisiti della soluzione Office per la distribuzione](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
+ Se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **false**, gli assembly di interoperabilità primari di Office devono essere installati e registrati nel Global assembly cache in ogni computer dell'utente finale che esegue la soluzione. Nella maggior parte dei casi, gli assembly di interoperabilità primari vengono installati per impostazione predefinita con Office, ma è anche possibile includere l'assembly di interoperabilità primario ridistribuibile come prerequisito per la soluzione. Per ulteriori informazioni, vedere [prerequisiti della soluzione Office per la distribuzione](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
 
 ### <a name="understand-the-client-profile"></a>Informazioni sul profilo client
  .NET Framework Client Profile è un sottoinsieme della versione completa di .NET Framework. È possibile scegliere .NET Framework Client Profile se è necessario utilizzare solo le funzionalità client di .NET Framework e si desidera fornire l'esperienza di distribuzione più veloce per la soluzione Office. Per ulteriori informazioni, vedere [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).
 
- Quando si crea un progetto Office destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)],  [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] è la destinazione predefinita. Se si desidera sviluppare soluzioni per la versione completa di [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], è necessario impostare questa opzione dopo la creazione del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ Quando si crea un progetto Office destinato a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)],  [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] è la destinazione predefinita. Se si desidera sviluppare per la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]completa, è necessario impostare questa opzione dopo la creazione del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Creare soluzioni per l'edizione a 64 bit di Microsoft Office
  Microsoft Office è disponibile nelle edizioni a 64 bit e a 32 bit. Per creare soluzioni Office che possono essere eseguite in entrambe le edizioni, l'impostazione della piattaforma di destinazione per il progetto deve essere impostata su **qualsiasi CPU**. Questo è il valore predefinito per i progetti Office. Per altre informazioni, vedere [compilare soluzioni Office](../vsto/building-office-solutions.md).
@@ -93,13 +93,13 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)
-- [Procedura: Creazione di progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Progetti di Office nell'ambiente Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)
 - [Proprietà nei progetti di Office](../vsto/properties-in-office-projects.md)
 - [Eseguire soluzioni in versioni diverse di Microsoft Office](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)
-- [Procedura: Applicazioni di Office di destinazione tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Procedura: destinare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Manifesti dell'applicazione e di distribuzione nelle soluzioni Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Procedura: Configurare le informazioni di configurazione per una soluzione Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)
+- [Procedura: impostare le informazioni di configurazione per una soluzione Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)
 - [Usare le funzionalità di Office all'interno di Visual Studio](../vsto/using-office-functionality-inside-of-visual-studio.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Attività comuni nella programmazione di Office](../vsto/common-tasks-in-office-programming.md)

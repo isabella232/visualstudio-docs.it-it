@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911369"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187742"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
 Visual Studio*diagnostica della grafica* è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Può essere usato su app eseguite localmente in un computer Windows, in un emulatore di dispositivo Windows oppure in un computer o un dispositivo remoto.
@@ -38,7 +38,7 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
 
  [Acquisizione delle informazioni grafiche](capturing-graphics-information.md) Per usare Diagnostica della grafica per esaminare un problema di rendering nell'app, è prima di tutto necessario registrare le informazioni sul modo in cui l'app usa DirectX. Durante la sessione di registrazione, nel corso della normale esecuzione dell'app, *acquisire* (ossia selezionare) i frame che interessano. Le acquisizioni contengono informazioni dettagliate sulla modalità di rendering dei frame. È possibile salvare le informazioni acquisite come documento di log della grafica da esaminare in un secondo momento o da condividere con gli altri membri del team.
 
- [Utilizzo GPU](gpu-usage.md) Per usare Diagnostica della grafica per profilare l'app, usare lo strumento utilizzo GPU. Utilizzo GPU può essere usato insieme ad altri strumenti di profilatura, ad esempio Utilizzo CPU, per correlare le attività della CPU e GPU che potrebbero contribuire a problemi di prestazioni nell'app.
+ [Utilizzo GPU](../../profiling/gpu-usage.md) Per usare Diagnostica della grafica per profilare l'app, usare lo strumento utilizzo GPU. Utilizzo GPU può essere usato insieme ad altri strumenti di profilatura, ad esempio Utilizzo CPU, per correlare le attività della CPU e GPU che potrebbero contribuire a problemi di prestazioni nell'app.
 
  [Documento di log di grafica](graphics-log-document.md) Per avviare l'analisi di un log di grafica registrato, usare la finestra del documento del log di grafica per selezionare un frame acquisito, o anche un pixel specifico, in modo che sia possibile esaminare in dettaglio gli *eventi* , ovvero le chiamate all'API DirectX, che lo influiscono.
 
@@ -66,5 +66,5 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
 
 | Titolo | Descrizione |
 | - | - |
-| [Tour delle funzionalità del debugger](/visualstudio/debugger/debugger-feature-tour) | Introduce le funzionalità di debug in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Tour delle funzionalità del debugger](../debugger-feature-tour.md) | Introduce le funzionalità di debug in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Grafica e giochi DirectX](/windows/win32/directx) | Include articoli che illustrano le tecnologie grafiche DirectX. |

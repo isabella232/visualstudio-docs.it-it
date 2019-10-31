@@ -1,7 +1,7 @@
 ---
 title: Creare un'installazione di rete
 description: Informazioni sulla creazione di un punto di installazione di rete per la distribuzione di Visual Studio in un'organizzazione.
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516329"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189487"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -88,8 +88,9 @@ Per completare questo passaggio è necessario avere una connessione Internet. Pe
 
 ## <a name="modify-the-responsejson-file"></a>Modificare il file response.json
 
-È possibile modificare il file response.json per impostare i valori predefiniti da usare quando viene eseguito il programma di installazione.  È possibile ,ad esempio, configurare il file `response.json` per selezionare un set specifico di carichi di lavoro selezionato in modo automatico.
-Per informazioni dettagliate, vedere [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md).
+È possibile modificare il file response.json per impostare i valori predefiniti da usare quando viene eseguito il programma di installazione.  È possibile ,ad esempio, configurare il file `response.json` per selezionare un set specifico di carichi di lavoro selezionato in modo automatico. Per informazioni dettagliate, vedere [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md).
+
+Se si verifica un problema con il programma di avvio automatico di Visual Studio che genera un errore quando lo si associa a un file Response. JSON, vedere la sezione "Impossibile analizzare l'ID dal processo padre" di [risoluzione dei problemi relativi agli errori correlati alla rete quando si installa o si usa l'oggetto visivo Pagina studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) per altre informazioni sulle operazioni da eseguire.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copiare il layout in una condivisione di rete
 
@@ -219,7 +220,7 @@ Gli amministratori possono distribuire Visual Studio nelle workstation client ne
 
 > [!IMPORTANT]
 > Per evitare un errore, assicurarsi che il tracciato di layout completo sia composto da meno di 80 caratteri.
->
+
 > [!TIP]
 > Se Visual Studio viene eseguito nell'ambito di un file batch, l'opzione `--wait` garantisce che il processo `vs_enterprise.exe` attenda il completamento dell'installazione prima di restituire un codice di uscita.
 >
@@ -287,6 +288,7 @@ Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la p
 
 - [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 - [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 - [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Aggiornare Visual Studio secondo una baseline di manutenzione](update-servicing-baseline.md)

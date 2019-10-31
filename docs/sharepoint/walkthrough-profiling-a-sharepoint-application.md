@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981148"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189131"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: profilare un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più costosa (con prestazioni più lente) del progetto, nota anche come *percorso critico*.
@@ -197,7 +197,7 @@ ms.locfileid: "72981148"
 
 2. In una pagina della **creazione guidata sessione di prestazioni**lasciare il metodo di profilatura come **campionamento CPU** e scegliere il pulsante **Avanti** .
 
-     Gli altri metodi di profilatura possono essere utilizzati in situazioni di profilatura più avanzate. Per altre informazioni, vedere [Informazioni sui metodi di raccolta delle prestazioni](/visualstudio/profiling/understanding-performance-collection-methods).
+     Gli altri metodi di profilatura possono essere utilizzati in situazioni di profilatura più avanzate. Per altre informazioni, vedere [Informazioni sui metodi di raccolta delle prestazioni](../profiling/understanding-performance-collection-methods.md).
 
 3. Nella pagina due della **creazione guidata sessione di prestazioni**, lasciare la destinazione **profilo come** profiling e scegliere il pulsante **Avanti** .
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981148"
      L'attivazione della funzionalità dovrebbe essere molto più veloce una volta che è stata eliminata la chiamata al ciclo inattivo. Il Rapporto sulla profilatura dei campioni dovrebbe riflettere questa situazione.
 
 ## <a name="see-also"></a>Vedere anche
-- [Esplora prestazioni](/visualstudio/profiling/performance-explorer)
-- [Panoramica delle sessioni di prestazioni](/visualstudio/profiling/performance-session-overview)
-- [Guida per principianti alla profilatura delle prestazioni](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Esplora prestazioni](../profiling/performance-explorer.md)
+- [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)
+- [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)
 - [Trovare colli di bottiglia delle applicazioni con Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)

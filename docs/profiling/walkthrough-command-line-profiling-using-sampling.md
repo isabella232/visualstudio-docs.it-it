@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
+title: 'Procedura dettagliata: profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20804e6ada568828ea1850ae249d9bf0d24855e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433618"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189269"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
 
@@ -29,11 +29,11 @@ In questa procedura dettagliata vengono illustrate le operazioni seguenti:
 - Eseguire la profilatura di un'applicazione usando gli strumenti della riga di comando e il campionamento.
 - Analizzare i risultati della profilatura campionati per individuare e risolvere i problemi di prestazioni.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Conoscenza a livello intermedio di [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Conoscenza a livello intermedio dell'uso degli strumenti della riga di comando
-- Una copia dell'[esempio PeopleTrax](/visualstudio/profiling/performance-explorer)
+- Una copia dell'[esempio PeopleTrax](performance-explorer.md)
 - Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilatura dalla riga di comando tramite il metodo di campionamento

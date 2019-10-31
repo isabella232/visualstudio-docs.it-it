@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: cfbc0dcecbf9b30afdfb268117e34c2fcfc0341e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826104"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189392"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizzare l'utilizzo della memoria di JavaScript nelle app UWP
 JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi dell'uso della memoria e il rilevamento delle perdite di memoria nelle app UWP create per Windows con JavaScript. Le app supportate includono le app di Windows universali.
@@ -40,7 +40,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
 - Ridurre le informazioni non utilizzabili nei dati dell'heap JavaScript.
 
-     Gli oggetti non creati nel codice dell'app vengono esclusi dal filtro. Puoi anche filtrare i dati in base al nome dell'oggetto.
+     Gli oggetti che non vengono creati direttamente nel codice dell'app vengono esclusi automaticamente. È anche possibile filtrare i dati in base al nome dell'oggetto.
 
 ## <a name="run-the-javascript-memory-analyzer"></a>Eseguire JavaScript Memory Analyzer
  È possibile usare l'analizzatore di memoria quando un'app UWP funzionante è aperta in Visual Studio.
@@ -55,7 +55,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
      Per impostazione predefinita, viene analizzato il progetto di avvio corrente. Per modificare la destinazione di analisi, scegli **Cambia destinazione**.
 
-     ![Cambia destinazione analisi](../profiling/media/js_tools_target.png "JS_Tools_Target")
+     ![Destinazione analisi modifiche](../profiling/media/js_tools_target.png "JS_Tools_Target")
 
      Sono disponibili le seguenti opzioni per la destinazione di analisi:
 
@@ -99,7 +99,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 - [Visualizzare le differenze di uno snapshot](#view-a-snapshot-diff). Mostra i valori differenti tra gli snapshot. Queste visualizzazioni mostrano le differenze nelle dimensioni e nei conteggi degli oggetti.
 
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak
- Questi passaggi forniscono un flusso di lavoro che può aiutarti a usare JavaScript Memory Analyzer in modo più efficace. Queste operazioni possono essere utili se ritieni che l'app abbia una perdita di memoria. Per un'esercitazione che descriva in dettaglio il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).
+ Questi passaggi forniscono un flusso di lavoro che può aiutarti a usare JavaScript Memory Analyzer in modo più efficace. Queste operazioni possono essere utili se ritieni che l'app abbia una perdita di memoria. Per un'esercitazione che consente di eseguire in modo guidato il processo di identificazione di una perdita di memoria in un'app in funzione, vedere [Procedura dettagliata: Trovare una perdita di memoria (JavaScript)](javascript-memory.md).
 
 1. Apri l'app in Visual Studio.
 
@@ -141,7 +141,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
     - Dimensioni heap differenziali (collegamento a sinistra sotto le dimensioni dell'heap). Il testo del collegamento mostra la differenza tra le dimensioni heap dello snapshot corrente e quelle dello snapshot precedente.
 
-    - Conteggio oggetti differenziale (collegamento a destra sotto il conteggio oggetti). Il testo del collegamento visualizza due valori (ad esempio +1858/-1765): il primo è il numero di nuovi oggetti aggiunti e il secondo indica il numero di oggetti rimossi dopo la creazione dello snapshot precedente.
+    - Conteggio oggetti differenziale (collegamento a destra sotto il conteggio oggetti). Il testo del collegamento mostra due valori, ad esempio +1858 / -1765. Il primo è il numero di nuovi oggetti aggiunti rispetto allo snapshot precedente, mentre il secondo valore indica il numero di oggetti rimossi dallo snapshot precedente.
 
       Con questi collegamenti viene aperta una visualizzazione dettagli snapshot differenziale dei tipi sull'heap, ordinati in base alle dimensioni o al conteggio oggetti mantenuti, a seconda del collegamento aperto.
 
@@ -156,7 +156,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
      Nella figura seguente è illustrata una visualizzazione differenziale di oggetti rimasti dallo snapshot #2.
 
-     ![Visualizzazione delle differenze di snapshot con i tipi](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
+     ![Visualizzazione differenze snapshot che mostra i tipi](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
 
      Nella figura precedente sono illustrati due oggetti rimasti dallo snapshot precedente. Controlla se questo è il comportamento previsto della tua app specifica. In caso contrario, questo potrebbe indicare un problema di memoria.
 
@@ -169,7 +169,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
  Il grafico relativo alla memoria mostra una visualizzazione in tempo reale della memoria di processo dell'app, inclusi i byte privati, la memoria nativa e l'heap JavaScript. Il grafico relativo alla memoria è una visualizzazione scorrevole della memoria di processo. e ha l'aspetto seguente:
 
- ![Grafico della memoria di JavaScript Memory Analyzer](../profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")
+ ![Grafico memoria di JavaScript Memory Analyzer](../profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")
 
  Se hai aggiunto contrassegni utente al codice dell'app (vedi [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data)), nel grafico relativo all'uso della memoria appare un triangolo capovolto che indica il punto iniziale di questa sezione del codice.
 
@@ -183,7 +183,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
  Di seguito è riportato un esempio di riepilogo di uno snapshot quando acquisisci più snapshot.
 
- ![Riepilogo dello snapshot](../profiling/media/js_mem_snapshot_summary.png "JS_Mem_Snapshot_Summary")
+ ![Riepilogo snapshot](../profiling/media/js_mem_snapshot_summary.png "JS_Mem_Snapshot_Summary")
 
  Il riepilogo dello snapshot include:
 
@@ -197,7 +197,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
 - Conteggio oggetti. Questo conteggio mostra solo gli oggetti creati nell'app ed esclude quelli incorporati creati dal runtime JavaScript. Il conteggio di oggetti è un collegamento alla visualizzazione Tipi dei dettagli dello snapshot.
 
-- Conteggio oggetti differenziale. Visualizza due valori: il primo è il numero di nuovi oggetti aggiunti e il secondo indica il numero di oggetti rimossi dopo la creazione dello snapshot precedente. Ad esempio, la figura mostra che sono stati aggiunti 1.859 oggetti e che ne sono stati rimossi 1.733 dopo lo snapshot n.1. Questo valore è seguito da una freccia su rossa se il conteggio oggetti totale è aumentato o da una freccia giù verde se è diminuito. Se il conteggio oggetti rimane invariato, verrà visualizzato il testo **Nessuna modifica** anziché un numero. Per il primo snapshot, verrà visualizzato il testo **Linea di base**. Il conteggio oggetti differenziale è collegato alla visualizzazione Tipi delle differenze dello snapshot.
+- Conteggio oggetti differenziale. Sono riportati due valori: il primo è il numero di nuovi oggetti aggiunti rispetto allo snapshot precedente e il secondo valore indica il numero di oggetti rimossi dallo snapshot precedente. Ad esempio, la figura mostra che sono stati aggiunti 1.859 oggetti e che ne sono stati rimossi 1.733 dopo lo snapshot n.1. Questo valore è seguito da una freccia su rossa se il conteggio oggetti totale è aumentato o da una freccia giù verde se è diminuito. Se il conteggio oggetti rimane invariato, verrà visualizzato il testo **Nessuna modifica** anziché un numero. Per il primo snapshot, verrà visualizzato il testo **Linea di base**. Il conteggio oggetti differenziale è collegato alla visualizzazione Tipi delle differenze dello snapshot.
 
 - Schermata creata al momento dell'acquisizione dello snapshot.
 
@@ -208,7 +208,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
  Questa figura mostra la visualizzazione Tipi in un dettaglio snapshot, con i dati sull'utilizzo della memoria ordinati in base alle dimensioni conservate.
 
- ![Visualizzazione dei dettagli dello snapshot con problemi potenziali](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")
+ ![Visualizzazione dettagli snapshot che mostra potenziali problemi](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")
 
  Nella visualizzazione dei dettagli dello snapshot puoi esaminare i dati sull'utilizzo della memoria in base al tipo, alla radice o al dominatore scegliendo l'opzione desiderata sulla barra degli strumenti:
 
@@ -245,7 +245,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
  Di seguito viene mostrata la visualizzazione Tipi nelle differenze di uno snapshot.
 
- ![Visualizzazione delle differenze di snapshot con i tipi](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
+ ![Visualizzazione differenze snapshot che mostra i tipi](../profiling/media/js_mem_snapshot_diff.png "JS_Mem_Snapshot_Diff")
 
  Nella visualizzazione delle differenze dello snapshot le visualizzazioni dominatori, tipi e radice sono uguali a quelle della finestra [Visualizzare i dettagli dello snapshot](#view-snapshot-details) . Le differenze dello snapshot mostrano le stesse informazioni dei dettagli dello snapshot, con questi valori aggiuntivi:
 
@@ -264,15 +264,15 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
 - **Tutti gli oggetti nello snapshot #\<numero>** . Con questa impostazione di filtro non viene escluso nessuno oggetto sull'heap.
 
-  Per mostrare riferimenti a oggetti non corrispondenti al filtro **Ambito** corrente, selezionare **Mostra riferimenti non corrispondenti** nell'elenco delle impostazioni ![elenco a discesa Impostazioni in Memory Analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo in alto a destra del riquadro. Se abiliti questa impostazioni, i riferimenti non corrispondenti saranno visualizzati in testo grigio.
+  Per visualizzare i riferimenti a oggetti che non corrispondono al filtro **ambito** corrente, selezionare **Mostra riferimenti non corrispondenti** nell'elenco a ![discesa&#45;impostazioni elenco impostazioni in Memory Analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo superiore destro del riquadro. Se abiliti questa impostazioni, i riferimenti non corrispondenti saranno visualizzati in testo grigio.
 
 > [!TIP]
 > Ti consigliamo di seguire la procedura descritta in [Isolate a memory leak](#isolate-a-memory-leak) e quindi di usare gli oggetti rimasti dopo l'applicazione del filtro **Ambito** per identificare gli oggetti in cui si verificano perdite di memoria.
 
 ## <a name="view-objects-by-dominator"></a>Visualizzare gli oggetti in base al dominatore
- Nelle visualizzazioni Tipi e Dominatori è possibile scegliere se visualizzare gli oggetti ridotti nei rispettivi dominatori (visualizzazione predefinita nella scheda **Dominatori**). Se è selezionata questa visualizzazione, solo i dominatori saranno mostrati nella visualizzazione di primo livello degli oggetti. Gli oggetti discendenti da oggetti non globali sono nascosti dalla visualizzazione di primo livello. Nel caso di alcune app, ciò può aiutare a chiarire quali sono gli oggetti che provocano una perdita di memoria, grazie alla riduzione di rumore nei dati.
+ Nelle visualizzazioni Tipi e Dominatori è possibile scegliere se visualizzare gli oggetti ridotti nei rispettivi dominatori (visualizzazione predefinita nella scheda **Dominatori**). Se è selezionata questa visualizzazione, solo i dominatori saranno mostrati nella visualizzazione di primo livello degli oggetti. Gli oggetti discendenti da oggetti non globali sono nascosti dalla visualizzazione di primo livello. Per alcune app, questo può chiarire quali oggetti causano una perdita di memoria riducendo il rumore nei dati.
 
- Per attivare o disattivare la visualizzazione degli oggetti in base al dominatore, scegli il pulsante **Riduci gli oggetti in base a quello dominante** . ![Riduzione di oggetti nei relativi dominatori](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")
+ Per attivare o disattivare la visualizzazione degli oggetti in base al dominatore, scegli il pulsante **Riduci gli oggetti in base a quello dominante** . ![Riduzione di oggetti nei rispettivi dominatori](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")
 
  Per altre informazioni sui dominatori, vedi [Visualizzare i dettagli dello snapshot](#view-snapshot-details).
 
@@ -290,7 +290,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 > [!NOTE]
 > I riferimenti circolari sono mostrati con un asterisco (*) e una descrizione informativa e non possono essere espansi. In caso contrario, impedirebbero di spostarsi verso l'alto nell'albero dei riferimenti e identificare gli oggetti che conservano memoria.
 
- Per altre informazioni sull'identificazione di oggetti equivalenti, scegliere **Visualizza ID oggetto** nell'elenco delle impostazioni ![elenco a discesa Impostazioni in Memory Analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo in alto a destra del riquadro superiore. Questa opzione consente di visualizzare gli ID oggetto accanto ai nomi degli oggetti nell'elenco **Identificatore/i** (gli ID vengono visualizzati in tutte le visualizzazioni, non solo nell'elenco dei riferimenti a oggetti). Gli oggetti con lo stesso ID sono riferimenti condivisi.
+ Per ulteriori informazioni sull'identificazione di oggetti equivalenti, scegliere **Visualizza ID oggetto** nell'elenco a ![discesa&#45;impostazioni elenco impostazioni in Memory Analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo superiore destro del riquadro superiore. Questa opzione consente di visualizzare gli ID oggetto accanto ai nomi degli oggetti nell'elenco **Identificatore/i** (gli ID vengono visualizzati in tutte le visualizzazioni, non solo nell'elenco dei riferimenti a oggetti). Gli oggetti con lo stesso ID sono riferimenti condivisi.
 
  Di seguito viene mostrato l'elenco di riferimenti a oggetti per un elemento selezionato con ID visualizzati.
 
@@ -299,7 +299,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 ## <a name="show-built-in-objects"></a>Mostrare oggetti incorporati
  Per impostazione predefinita, le visualizzazioni Dominatori e Tipi mostrano solo gli oggetti creati nell'app. Questo ti consente di escludere le informazioni non necessarie e di isolare i problemi correlati all'app. Talvolta può comunque essere utile visualizzare tutti gli oggetti generati per l'app dal runtime JavaScript.
 
- Per visualizzare questi oggetti, scegliere **Mostra incorporati** nell'elenco delle impostazioni ![elenco a discesa Impostazioni in Memory Analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo in alto a destra del riquadro.
+ Per visualizzare questi oggetti, scegliere **Mostra incorporati** nell' ![elenco a discesa&#45;impostazioni elenco impostazioni in Memory Analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo superiore destro del riquadro.
 
 ## <a name="save-diagnostic-session-files"></a>Salvare file delle sessioni di diagnostica
  I riepiloghi degli snapshot di diagnostica e le visualizzazioni dei dettagli associate vengono salvati come file con estensione *diagsession*. **Esplora soluzioni** visualizza le sessioni di diagnostica precedenti nella cartella Sessioni di diagnostica. In **Esplora soluzioni**puoi aprire sessioni precedenti oppure rimuovere o rinominare file.
@@ -324,7 +324,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 > [!TIP]
 > Usa `console.takeHeapSnapshot` per velocizzare l'analisi quando si ripetono gli scenari di utilizzo della memoria.
 
- Questi comandi generano un'eccezione se li aggiungi all'app ed esegui quest'ultima all'esterno di JavaScript Memory Analyzer. Puoi tuttavia verificare se i comandi sono presenti prima di usarli. (I comandi non sono presenti nella fase di avvio della sessione.) Per verificare di poter chiamare `takeHeapSnapshot`, usa questo codice:
+ Questi comandi generano un'eccezione se li aggiungi all'app ed esegui quest'ultima all'esterno di JavaScript Memory Analyzer. Puoi tuttavia verificare se i comandi sono presenti prima di usarli. (I comandi non sono presenti all'inizio della fase di avvio della sessione.) Per verificare se è possibile chiamare `takeHeapSnapshot`in modo sicuro, usare il codice seguente:
 
 ```javascript
 if (console && console.takeHeapSnapshot) {
@@ -343,7 +343,7 @@ if (performance && performance.mark) {
 
  Di seguito è riportato un grafico relativo alla memoria con diversi contrassegni utente e la descrizione comando per il contrassegno utente selezionato, per il quale l'argomento di stringa `performance.mark` è impostato su "dati generati":
 
- ![Uso del contrassegno del profilo](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")
+ ![Uso di un contrassegno del profilo](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")
 
 ## <a name="tips-to-identify-memory-issues"></a>Suggerimenti per identificare i problemi di memoria
 
@@ -353,13 +353,13 @@ if (performance && performance.mark) {
 
 - Quando la causa di un problema di memoria è difficilmente identificabile, usa le diverse visualizzazioni, ad esempio dei dominatori e dei tipi, per cercare gli elementi in comune, in particolare per identificare un oggetto (o alcuni oggetti) che potrebbero contenere riferimenti a molti degli altri oggetti presenti nella visualizzazione.
 
-- Cercare gli oggetti mantenuti inavvertitamente in memoria dopo che l'utente è passato a un'altra pagina, una causa comune dei problemi di memoria. Ad esempio:
+- Cercare gli oggetti mantenuti inavvertitamente in memoria dopo che l'utente è passato a un'altra pagina, una causa comune dei problemi di memoria. Esempio:
 
   - L'uso non corretto della funzione [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) può causare questo problema.
 
   - Con alcuni oggetti viene fornito un metodo `dispose` , oltre a consigli per l'uso. Ad esempio, è necessario chiamare `dispose` in un oggetto [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) se si chiama il metodo `createFiltered` dell'elenco e quindi si esce dalla pagina.
 
-  - Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](../debugger/quickstart-debug-html-and-css.md).
 
 - Guardare l'ultima parte di [questo video](https://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 su JavaScript Memory Analyzer.
 

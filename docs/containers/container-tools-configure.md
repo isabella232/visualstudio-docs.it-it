@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253183"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188781"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Come configurare Visual Studio container Tools
 
@@ -23,24 +23,24 @@ Dal menu principale scegliere **Strumenti > Opzioni** ed espandere **Strumenti c
 
 ::: moniker range="vs-2017"
 
-![Opzioni di Visual Studio container Tools, che mostra: Pull automatico delle immagini Docker richieste al caricamento del progetto, Avvia automaticamente i contenitori in background, Termina automaticamente i contenitori alla chiusura della soluzione e Non chiedere di considerare attendibile il certificato SSL per localhost.](./media/overview/visual-studio-docker-tools-options.png)
+![Opzioni di Visual Studio container Tools, Mostra: Pull automatico delle immagini Docker richieste al caricamento del progetto, avvio automatico dei contenitori in background, eliminazione automatica dei contenitori alla chiusura della soluzione e non richiesta di attendibilità del certificato SSL.](./media/overview/visual-studio-docker-tools-options.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
 Impostazioni **generali** degli strumenti contenitore:
 
-![Opzioni di Visual Studio container Tools, che mostra: Installare Docker desktop se necessario e considerare attendibile ASP.NET Core certificato SSL.](./media/configure-container-tools/tools-options-1.png)
+![Opzioni di Visual Studio container Tools, Showing: install Docker desktop se necessario e trust ASP.NET Core certificato SSL.](./media/configure-container-tools/tools-options-1.png)
 
 Impostazioni del **singolo progetto** e del **Docker compose** di strumenti contenitore:
 
-![Opzioni di Visual Studio container Tools, che mostra: Terminare i contenitori alla chiusura del progetto, estrarre le immagini Docker necessarie nel progetto aperto ed eseguire i contenitori nel progetto aperto.](./media/configure-container-tools/tools-options-2.png)
+![Opzioni di Visual Studio container Tools, Showing: Kill Recipients on Project Close, pull required image Docker nel progetto aperto ed esecuzione di contenitori nel progetto aperto.](./media/configure-container-tools/tools-options-2.png)
 ::: moniker-end
 
 La tabella seguente può essere utile per decidere come impostare queste opzioni.
 
 ::: moniker range="vs-2017"
-| nome | Impostazione predefinita | Si applica a | Descrizione |
+| Name | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
 | Pull automatico delle immagini Docker richieste al caricamento del progetto | Attivato | Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si stanno semplicemente caricando progetti ed esplorando codice, è possibile disattivare questa opzione per evitare che vengano scaricate immagini del contenitore non necessarie. |
 | Avvia automaticamente i contenitori in background | Attivato | Docker Compose | Sempre per ottenere migliori prestazioni, Visual Studio crea un contenitore con punti di montaggio di volume pronti per quando viene compilato ed eseguito il contenitore. Se si vuole controllare quando viene creato il contenitore, disattivare questa opzione. |
@@ -52,14 +52,14 @@ La tabella seguente può essere utile per decidere come impostare queste opzioni
 
 Nella tabella seguente vengono descritte le impostazioni **generali** :
 
-| nome | Impostazione predefinita | Si applica a | Descrizione |
+| Name | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
 | Installare Docker desktop se necessario | Richiedi | Progetto singolo, Docker Compose | Scegliere se si vuole che venga richiesto se Docker desktop non è installato. |
 | Attendibilità ASP.NET Core certificato SSL | Richiedi | Progetti ASP.NET Core 2. x | Quando l'opzione è impostata su **Richiedi conferma**, se il certificato SSL localhost non è attendibile, Visual Studio richiederà ogni volta che viene eseguito il progetto. |
 
 Nella tabella seguente vengono descritte le impostazioni di **singoli progetti** e **Docker compose** :
 
-| nome | Impostazione predefinita | Si applica a | Descrizione |
+| Name | Impostazione predefinita | Si applica a | Descrizione |
 | -----|:---------------:|:----------:| ----------- |
 | Estrai le immagini Docker necessarie nel progetto aperto | True | Progetto singolo, Docker Compose | Per ottenere migliori prestazioni durante il caricamento dei progetti, Visual Studio avvierà un'operazione di pull automatico di Docker in modo che quando si è pronti per eseguire il codice l'immagine sia già stata scaricata o in fase di download. Se si stanno caricando solo progetti ed esplorando il codice, è possibile impostare su **false** per evitare di scaricare le immagini del contenitore non necessarie. |
 | Esegui contenitori nel progetto aperto | True | Progetto singolo, Docker Compose | Per migliorare le prestazioni, Visual Studio crea un contenitore in anticipo in modo che sia pronto per la compilazione e l'esecuzione del contenitore. Se si vuole controllare quando viene creato il contenitore, impostare su **false**. |
@@ -71,4 +71,4 @@ Nella tabella seguente vengono descritte le impostazioni di **singoli progetti**
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni sull'uso dei contenitori in Visual Studio, vedere questa [Panoramica](visual-studio-tools-for-docker.md).
+Per altre informazioni sull'uso dei contenitori in Visual Studio, vedere questa [Panoramica](overview.md).

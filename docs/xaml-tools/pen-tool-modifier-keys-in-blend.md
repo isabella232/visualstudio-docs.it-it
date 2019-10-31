@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 801ccc48f913b36366ac27292abd472d6ea11207
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7213bd271b5c690d78443339039d09bf14163e91
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668818"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189613"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Tasti di modifica dello strumento Penna in Blend per Visual Studio
 
@@ -40,4 +40,4 @@ Nella tabella seguente sono elencati i tasti di scelta rapida che è possibile u
 
 - [Tasti di modifica della tavola da disegno](../designers/artboard-modifier-keys-in-blend.md)
 - [Tasti di modifica strumento Selezione diretta](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-- [Disegnare forme e tracciati](../designers/draw-shapes-and-paths.md)
+- [Disegnare forme e tracciati](draw-shapes-and-paths.md)

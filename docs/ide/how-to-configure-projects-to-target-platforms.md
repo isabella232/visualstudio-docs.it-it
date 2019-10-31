@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Configurare progetti per le piattaforme di destinazione'
+title: 'Procedura: configurare progetti per le piattaforme di destinazione'
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
-ms.translationtype: HT
+ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634915"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188945"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: Configurare progetti per le piattaforme di destinazione
+# <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: configurare progetti per le piattaforme di destinazione
 
 Visual Studio consente di configurare le applicazioni per diverse piattaforme di destinazione, tra cui le piattaforme a 64 bit. Per altre informazioni sul supporto delle piattaforme a 64 bit in Visual Studio, vedere [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps).
 
@@ -68,7 +68,7 @@ L'esecuzione di questa attività varia in base al linguaggio di programmazione u
 
 In alcuni casi è necessario modificare manualmente il file di progetto per applicare una configurazione personalizzata. Un esempio è la presenza di condizioni che non possono essere specificate nell'IDE, ad esempio un riferimento diverso per due piattaforme differenti, come nell'esempio seguente.
 
-### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Esempio: Riferimento ad assembly e DLL x86 e x64
+### <a name="example-referencing-x86-and-x64-assemblies-and-dlls"></a>Esempio: riferimento a assembly e dll x86 e x64
 
 Potrebbe essere disponibile un assembly o una DLL .NET con entrambe le versioni x86 e x64. Per configurare il progetto in modo da usare questi riferimenti, aggiungere prima di tutto il riferimento, quindi aprire il file di progetto e modificarlo per aggiungere un `ItemGroup` con una condizione che fa riferimento sia alla configurazione che alla piattaforma di destinazione.  Si supponga, ad esempio, che il file binario a cui si fa riferimento sia ClassLibrary1 e che ci siano percorsi diversi per le configurazioni di debug e di versione, nonché per le versioni x86 e x64.  Usare quindi quattro elementi `ItemGroup` con tutte le combinazioni di impostazioni, come indicato di seguito:
 
@@ -112,7 +112,7 @@ Potrebbe essere disponibile un assembly o una DLL .NET con entrambe le versioni 
 > In Visual Studio 2017 è necessario scaricare il progetto prima di poter modificare il file di progetto. Per scaricare il progetto, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Scarica progetto**. Al termine, salvare le modifiche e ricaricare il progetto facendo clic con il pulsante destro del mouse sul nodo del progetto e scegliendo **Ricarica progetto**.
 ::: moniker-end
 
-Per altre informazioni sul file di progetto, vedere [Informazioni di riferimento sullo schema del file di progetto di MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+Per altre informazioni sul file di progetto, vedere [Informazioni di riferimento sullo schema del file di progetto di MSBuild](../msbuild/msbuild-project-file-schema-reference.md).
 
 ## <a name="see-also"></a>Vedere anche
 

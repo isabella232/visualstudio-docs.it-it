@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc337b1ac753c214ad2484c26c9149e9a1a6ca04
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981192"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189211"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilare le prestazioni delle applicazioni SharePoint
 
@@ -55,7 +55,7 @@ I test delle prestazioni Web simulano il modo in cui un utente finale può inter
 
 ## <a name="test-user-interfaces"></a>Interfacce utente di test
 
-I test codificati dell'interfaccia utente indirizzano automaticamente l'applicazione SharePoint tramite la relativa interfaccia utente. Questi test coprono i controlli dell'interfaccia utente, ad esempio pulsanti e menu, per verificare che funzionino correttamente. Questo tipo di test è particolarmente utile se nell'interfaccia utente viene eseguita la convalida o un'altra logica, ad esempio in una pagina Web. È anche possibile usare i test codificati dell'interfaccia utente per automatizzare i test manuali. Si creano test codificati dell'interfaccia utente per le applicazioni SharePoint nello stesso modo in cui si creano test per altri tipi di applicazioni. Per altre informazioni, vedere [test di applicazioni SharePoint 2010 con test codificati dell'interfaccia utente](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md).
+I test codificati dell'interfaccia utente indirizzano automaticamente l'applicazione SharePoint tramite la relativa interfaccia utente. Questi test coprono i controlli dell'interfaccia utente, ad esempio pulsanti e menu, per verificare che funzionino correttamente. Questo tipo di test è particolarmente utile se nell'interfaccia utente viene eseguita la convalida o un'altra logica, ad esempio in una pagina Web. È anche possibile usare i test codificati dell'interfaccia utente per automatizzare i test manuali. Si creano test codificati dell'interfaccia utente per le applicazioni SharePoint nello stesso modo in cui si creano test per altri tipi di applicazioni. Per altre informazioni, vedere [test di applicazioni SharePoint 2010 con test codificati dell'interfaccia utente](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -64,7 +64,7 @@ I test codificati dell'interfaccia utente indirizzano automaticamente l'applicaz
 |[Procedura dettagliata: profilare un'applicazione SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Viene illustrato come eseguire un'analisi del profilo di campionamento in un'applicazione SharePoint.|
 |[Eseguire il test delle prestazioni dell'applicazione prima del rilascio](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Viene descritto come creare test di carico che consentono di sottoporre a test le applicazioni SharePoint.|
 |[Eseguire unit test del codice](../test/unit-test-your-code.md)|Viene descritto come trovare errori di logica nel codice tramite unit test.|
-|[Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)|Viene descritto come testare l'interfaccia utente delle applicazioni SharePoint.|
+|[Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Viene descritto come testare l'interfaccia utente delle applicazioni SharePoint.|
 
 ## <a name="see-also"></a>Vedere anche
 

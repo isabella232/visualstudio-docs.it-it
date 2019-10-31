@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a22e867fe043437e76ebbf61220dd2adda89c12
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 186df377670ffec2c06e0214d25b8824679b6f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822321"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188871"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Sviluppo di estensioni di Visual Studio
 
@@ -51,7 +51,7 @@ In pratica, è stato rilevato che le funzionalità che la maggior parte degli ut
 
 - [Estensione e personalizzazione delle finestre degli](../extensibility/extending-and-customizing-tool-windows.md)strumenti: estendere le finestre degli strumenti esistenti o creare le proprie finestre degli strumenti. Ad esempio, è possibile aggiungere nuove proprietà alle **Proprietà**oppure è possibile creare una nuova finestra degli strumenti per aggiungere ulteriori funzionalità.
 
-- [Editor e Language Service Extensions](../extensibility/editor-and-language-service-extensions.md): aggiungere personalizzazioni personalizzate fornite da IntelliSense per i linguaggi di Visual Studio o creare supporto per i nuovi linguaggi di programmazione. È possibile creare nuovi completamenti di istruzioni, suggerimenti e nuove descrizioni comandi di informazioni rapide. Con le lampadine è possibile aggiungere suggerimenti per il refactoring e correzioni del codice per supportare i nuovi linguaggi di programmazione.
+- [Editor e Language Service Extensions](../extensibility/editor-and-language-service-extensions.md): aggiungere personalizzazioni personalizzate a IntelliSense fornite per i linguaggi di Visual Studio oppure creare supporto per i nuovi linguaggi di programmazione. È possibile creare nuovi completamenti di istruzioni, suggerimenti e nuove descrizioni comandi di informazioni rapide. Con le lampadine è possibile aggiungere suggerimenti per il refactoring e correzioni del codice per supportare i nuovi linguaggi di programmazione.
 
 - [Estensione dei progetti](../extensibility/extending-projects.md)
 
@@ -72,15 +72,15 @@ In pratica, è stato rilevato che le funzionalità che la maggior parte degli ut
 
  Il modello di shell isolata viene usato per creare il pacchetto di un'estensione in una versione della shell di Visual Studio che è possibile personalizzare e distribuire in modo autonomo. Negli argomenti seguenti viene illustrato come iniziare a usare ogni tipo di estensione:
 
-- Comandi di menu: [Creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+- Comandi di menu: [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-- Finestre degli strumenti: [Creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md)
+- Finestre degli strumenti: [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md)
 
-- Estensioni Editor: [Creazione di un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- Estensioni dell'Editor: [creazione di un'estensione con un modello di elemento dell'editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
-- Pacchetti VSPackage di base: [Creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- Pacchetti VSPackage di base: [creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-- Modello di progetto VSIX: [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
+- Modello di progetto VSIX: [Introduzione con il modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Ricerca per categorie ottenere un'estensione simile a Visual Studio?
  Suggerimenti utili per la progettazione dell'interfaccia utente per l'estensione nelle [linee guida sull'esperienza utente di Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).
@@ -91,7 +91,7 @@ In pratica, è stato rilevato che le funzionalità che la maggior parte degli ut
 ## <a name="how-can-i-distribute-my-extension"></a>Come si distribuisce l'estensione?
  È possibile installare l'estensione in un altro computer o inviarla agli amici come file con estensione VSIX, che viene installato facendo doppio clic su di esso. Per ulteriori informazioni sui pacchetti VSIX, vedere la pagina relativa alle [estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- È anche possibile pubblicare l'estensione nella Visual Studio Marketplace, rendendola visibile a un numero elevato di clienti di Visual Studio. Per un esempio di creazione di pacchetti di un'estensione per il [Marketplace, vedere Procedura dettagliata: Pubblicazione di un'estensione](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)di Visual Studio. Per altre informazioni su ciò che è necessario fare per pubblicare nel Marketplace, vedere [prodotti ed estensioni per Visual Studio](/azure/devops/extend/overview?view=vsts).
+ È anche possibile pubblicare l'estensione nella Visual Studio Marketplace, rendendola visibile a un numero elevato di clienti di Visual Studio. Per un esempio di creazione di pacchetti di un'estensione per il Marketplace, vedere [procedura dettagliata: pubblicazione di un'estensione di Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Per altre informazioni su ciò che è necessario fare per pubblicare nel Marketplace, vedere [prodotti ed estensioni per Visual Studio](/azure/devops/extend/overview?view=vsts).
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798402"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189352"
 ---
 # <a name="performance-session-overview"></a>Panoramica delle sessioni di prestazioni
 In questa panoramica vengono illustrate le nozioni di base della profilatura. Gli sviluppatori non esperti di prestazioni potranno notare come gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] possano contribuire ad accrescere rapidamente la produttività e a migliorare le prestazioni del codice. Gli sviluppatori con esperienza nella profilatura possono trovare informazioni su specifici processi e funzionalità degli strumenti di profilatura.
@@ -75,4 +75,4 @@ In questa panoramica vengono illustrate le nozioni di base della profilatura. Gl
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramiche](../profiling/overviews-performance-tools.md)
-- [Procedura dettagliata: Identificare i problemi di prestazioni](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [Procedura dettagliata: Identificare i problemi di prestazioni](beginners-guide-to-cpu-sampling.md)

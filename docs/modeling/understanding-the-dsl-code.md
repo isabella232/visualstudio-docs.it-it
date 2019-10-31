@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747387"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189451"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 
@@ -58,7 +58,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 ## <a name="generated-files-in-dsl"></a>File generati in DSL
  I file generati seguenti vengono visualizzati nel progetto **DSL** .
 
- @No__t_1 *dslutente*
+ `Schema.xsd` *dslutente*
 
  Schema per i file contenenti le istanze del linguaggio DSL. Questo file viene copiato nella directory di compilazione (**bin**). Quando si installa il linguaggio DSL, è possibile copiare questo file in **\Programmi\microsoft Visual Studio 11.0 \ Xml\Schemas** in modo che i file di modello possano essere convalidati. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
@@ -192,7 +192,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
  `CommandSet.cs`
 
- I comandi del menu di scelta rapida visibili nel diagramma. È possibile adattare o aggiungere elementi a questo set. Questo file contiene il codice per i comandi. La posizione dei comandi nei menu è determinata dal file Commands.vsct. Per altre informazioni, vedere [scrittura di comandi e azioni utente](../modeling/writing-user-commands-and-actions.md).
+ I comandi del menu di scelta rapida visibili nel diagramma. È possibile adattare o aggiungere elementi a questo set. Questo file contiene il codice per i comandi. La posizione dei comandi nei menu è determinata dal file Commands.vsct. Per altre informazioni, vedere [scrittura di comandi e azioni utente](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Consente di individuare i comandi di menu standard nei menu, ad esempio il menu di scelta rapida del diagramma (contesto), il menu **modifica** e così via. Codice per i comandi in CommandSet.cs. È possibile rilocare o modificare i comandi standard ed è possibile aggiungere i propri comandi. Per altre informazioni, vedere [scrittura di comandi e azioni utente](../modeling/writing-user-commands-and-actions.md).
+ Consente di individuare i comandi di menu standard nei menu, ad esempio il menu di scelta rapida del diagramma (contesto), il menu **modifica** e così via. Codice per i comandi in CommandSet.cs. È possibile rilocare o modificare i comandi standard ed è possibile aggiungere i propri comandi. Per altre informazioni, vedere [scrittura di comandi e azioni utente](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `ModelExplorer.cs`
 

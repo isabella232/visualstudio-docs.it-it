@@ -15,44 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "70222649"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187608"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Esplorare il codice con il debugger di Visual Studio
 
 Il debugger di Visual Studio consente di spostarsi nel codice per esaminare lo stato di un'app e visualizzarne il flusso di esecuzione. È possibile utilizzare i tasti di scelta rapida, i comandi di debug, i punti di interruzione e altre funzionalità per ottenere rapidamente il codice che si desidera esaminare. Una certa familiarità con i comandi e i collegamenti di navigazione del debugger rende più semplice e rapida la ricerca e la risoluzione dei problemi delle app.  Se è la prima volta che si tenta di eseguire il debug del codice, è consigliabile leggere il [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
 
-## <a name="basic-debugging"></a>Debug di base
+## <a name="get-into-break-mode"></a>Entra in "modalità di rottura"
 
-Per avviare l'app con il debugger collegato, premere **F5**, selezionare **debug**  > **avviare il debug**o selezionare la freccia verde sulla barra degli strumenti di Visual Studio.
+In *modalità di interruzioni*, l'esecuzione dell'app viene sospesa mentre le funzioni, le variabili e gli oggetti rimangono in memoria. Quando il debugger è in modalità di interruzione, è possibile spostarsi nel codice. I modi più comuni per entrare rapidamente in modalità di interruzioni sono:
 
- ![Il&#95;&#95;debug&#95;di base dbg](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
+- Avviare l'esecuzione del codice premendo **F10** o **F11**. Questo consente di trovare rapidamente il punto di ingresso dell'app, quindi è possibile continuare a premere i comandi dei passaggi per spostarsi nel codice.
 
-Durante il debug, un'evidenziazione gialla mostra la riga di codice che verrà eseguita successivamente.
+- [Eseguire fino a una posizione o a una funzione specifica](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All), ad esempio [impostando un](using-breakpoints.md) punto di interruzione e avviando l'app.
 
- ![Modalità&#95;di&#95;break&#95;nozioni di base di dbg](../debugger/media/dbg_basics_break_mode.png "Modalità di interruzione")
+   Ad esempio, dall'editor di codice in Visual Studio, è possibile usare il comando **Esegui fino al cursore** per avviare l'app, il debugger collegato e passare alla modalità di interruzione, quindi **F11** per esplorare il codice.
 
-La maggior parte delle finestre del debugger, come i **moduli** e le finestre **espressioni di controllo** , sono disponibili solo durante l'esecuzione del debugger. Alcune funzionalità del debugger, ad esempio la visualizzazione dei valori delle variabili nella finestra **variabili locali** o la valutazione delle espressioni nella finestra **espressioni di controllo** , sono disponibili solo quando il debugger viene sospeso in corrispondenza di un punto di interruzione, detto anche *modalità di interruzione*.
+   ![Esegui fino al cursore ed Esegui istruzione nel codice](../debugger/media/navigate-code-code-stepping.gif "Esegui fino al cursore ed Esegui istruzione nel codice")
 
-In modalità di interruzioni, l'esecuzione dell'app viene sospesa mentre le funzioni, le variabili e gli oggetti rimangono in memoria. È possibile esaminare le posizioni e gli Stati degli elementi per cercare violazioni o bug. Per alcuni tipi di progetto, è anche possibile apportare modifiche all'app in modalità di interruzioni. Per un video che illustra queste funzionalità, vedere [Introduzione con il debugger](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+Una volta in modalità di interruzioni, è possibile usare un'ampia gamma di comandi per esplorare il codice. In modalità di interruzioni è possibile esaminare i valori delle variabili per cercare violazioni o bug. Per alcuni tipi di progetto, è anche possibile apportare modifiche all'app in modalità di interruzioni.
 
-Se si interrompe il codice che non dispone di file di origine o di simboli (con*estensione PDB*) caricati, il debugger visualizza una pagina **file di origine non trovati** o **simboli non trovati** che consentono di trovare e caricare i file. Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se non è possibile caricare i file di simboli o di origine, è comunque possibile eseguire il debug delle istruzioni di assembly nella finestra **Disassembly** .
+La maggior parte delle finestre del debugger, come i **moduli** e le finestre **espressioni di controllo** , sono disponibili solo quando il debugger è collegato all'app. Alcune funzionalità del debugger, ad esempio la visualizzazione dei valori delle variabili nella finestra **variabili locali** o la valutazione delle espressioni nella finestra **espressioni di controllo** , sono disponibili solo quando il debugger è in pausa, ovvero in modalità di interruzione.
 
-Non è sempre necessario avviare il debug avviando un'app all'inizio. È anche possibile premere **F11** per eseguire l' [istruzione del codice](#BKMK_Step_into__over__or_out_of_the_code), premere **F10** per eseguire l'istruzione/routine del [codice](#BKMK_Step_over_Step_out)oppure [eseguire fino a una posizione o una funzione specifica](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
+> [!NOTE]
+> Se si interrompe il codice che non dispone di file di origine o di simboli (con*estensione PDB*) caricati, il debugger visualizza una pagina **file di origine non trovati** o **simboli non trovati** che consentono di trovare e caricare i file. Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se non è possibile caricare i file di simboli o di origine, è comunque possibile eseguire il debug delle istruzioni di assembly nella finestra **Disassembly** .
 
 ## <a name="step-through-code"></a>Esecuzione del codice un'istruzione alla volta
 
 I comandi dei passaggi del debugger consentono di esaminare lo stato dell'app o di ottenere altre informazioni sul flusso di esecuzione.
 
-Se è necessario trovare il punto di ingresso nell'app, iniziare con **F10** o **F11**.
-
 ### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Esegui istruzione codice riga per riga
 
-Per arrestare ogni riga di codice o istruzione durante il debug, utilizzare **debug**  > **Esegui istruzione**oppure premere **F11**.
+Per arrestare ogni istruzione durante il debug, utilizzare **debug** > **Esegui istruzione**oppure premere **F11**.
 
 Il debugger esegue le istruzioni del codice, non le righe fisiche. Ad esempio, una clausola `if` può essere scritta in una riga:
 
@@ -73,11 +72,11 @@ Tuttavia, quando si esegue l'istruzione in questa riga, il debugger considera la
 In una chiamata di funzione annidata, scegliendo **Esegui istruzione** verrà eseguita la funzione annidata più interna. Se, ad esempio, si utilizza **Esegui istruzione** in una chiamata come `Func1(Func2())`, il debugger esegue la procedura nella `Func2` della funzione.
 
 >[!TIP]
->Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzarne i valori oppure utilizzare le finestre variabili [locali](autos-and-locals-windows.md) e [espressioni di controllo](watch-and-quickwatch-windows.md) per controllare la modifica dei valori. È inoltre possibile tracciare visivamente lo stack di chiamate durante l'esecuzione di funzioni. Vedere [eseguire il mapping dei metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+>Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzarne i valori oppure utilizzare le finestre variabili [locali](autos-and-locals-windows.md) e [espressioni di controllo](watch-and-quickwatch-windows.md) per controllare la modifica dei valori. È inoltre possibile tracciare visivamente lo [stack di chiamate](how-to-use-the-call-stack-window.md) durante l'esecuzione di funzioni. (Solo per Visual Studio Enterprise, vedere [eseguire il mapping dei metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
 ### <a name="BKMK_Step_over_Step_out"></a>Eseguire il codice un'istruzione alla volta e ignorare alcune funzioni
 
-È possibile che non si sia interessati a una funzione durante il debug o si sappia che funziona, come il codice di libreria testato correttamente. Per ignorare il codice, è possibile usare i comandi seguenti. Le funzioni sono ancora in esecuzione, ma il debugger ne ignora.
+È possibile che non si sia interessati a una funzione durante il debug o si sappia che funziona, come il codice di libreria testato correttamente. È possibile usare i comandi seguenti per ignorare il codice durante l'esecuzione del codice. Le funzioni sono ancora in esecuzione, ma il debugger ne ignora.
 
 |Comando tastiera|Comando di menu debug|Descrizione|
 |----------------------|------------------|-----------------|

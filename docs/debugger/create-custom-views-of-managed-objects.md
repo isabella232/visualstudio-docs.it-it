@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745631"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188644"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Creazione di visualizzazioni personalizzate di oggetti gestitiC#(, Visual Basic F#, C++,/CLI)
 È possibile personalizzare la modalità di visualizzazione dei tipi di dati nelle finestre delle variabili del debugger in Visual Studio.
@@ -41,10 +41,10 @@ Nel codice .NET Framework 2,0 Visual Basic non supporta l'attributo l'DebuggerBr
 
 ## <a name="visualizers"></a>Visualizzatori
 
-È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [procedura: scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data).
+È possibile scrivere un visualizzatore per visualizzare qualsiasi tipo di dati gestito. Per altre informazioni, vedere [procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md).
 
 > [!NOTE]
-> Per C++ il codice, è possibile aggiungere espansioni di tipi di dati personalizzati usando natvis Framework, come descritto in [creare visualizzazioni personalizzate C++ di oggetti nel debugger](/visualstudio/debugger/create-custom-views-of-native-objects).
+> Per C++ il codice, è possibile aggiungere espansioni di tipi di dati personalizzati usando natvis Framework, come descritto in [creare visualizzazioni personalizzate C++ di oggetti nel debugger](create-custom-views-of-native-objects.md).
 
 ## <a name="see-also"></a>Vedere anche
 

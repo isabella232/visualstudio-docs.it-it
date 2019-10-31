@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745705"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188692"
 ---
 # <a name="client-side-script-debugging"></a>Debug di script sul lato client
 Il debugger di Visual Studio offre un ambiente di debug completo per l'individuazione e la correzione degli errori negli script lato client delle pagine ASP.NET.
@@ -61,7 +61,7 @@ Il debugger di Visual Studio offre un ambiente di debug completo per l'individua
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Debug di applicazioni ASP.NET e AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Debug di applicazioni ASP.NET e AJAX](how-to-enable-debugging-for-aspnet-applications.md)
 - [Limitazioni del debug di script](../debugger/limitations-on-script-debugging.md)
 - [Finestra delle variabili](../debugger/debugger-windows.md)
 - [Finestra di controllo immediato](../ide/reference/immediate-window.md)

@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi correlati alla rete o al proxy
 description: Trovare soluzioni per gli errori correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,18 +17,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062781"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189468"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio
 
 Esistono soluzioni per la maggiore parte degli errori tipici correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
 
-## <a name="error-proxy-authorization-required"></a>Errore: "Necessaria autorizzazione proxy"
+## <a name="error-proxy-authorization-required"></a>Errore: "Autorizzazione del proxy richiesta"
 
 Generalmente questo errore si verifica quando gli utenti sono connessi a Internet tramite un server proxy e quest'ultimo blocca le chiamate di Visual Studio ad alcune risorse di rete.
 
@@ -133,10 +133,23 @@ Abilitare le connessioni per gli URL seguenti:
   > [!NOTE]
   > Gli URL di server NuGet di proprietà privata potrebbero non essere inclusi in questo elenco. È possibile controllare i server NuGet in uso in %APPData%\Nuget\NuGet.Config.
 
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Errore: "non è stato possibile analizzare l'ID dal processo padre"
+
+Questo messaggio di errore può essere visualizzato quando si usa un programma di avvio automatico di Visual Studio e un file Response. JSON in un'unità di rete. L'origine dell'errore è il controllo dell'account utente (UAC) in Windows.
+
+Ecco perché questo errore può verificarsi: un'unità di rete mappata o una condivisione [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) è collegata al token di accesso di un utente. Quando UAC è abilitato, vengono creati due [token di accesso](/windows/win32/secauthz/access-tokens) utente: uno *con* accesso amministratore e uno *senza* accesso amministratore. Quando viene creata l'unità o la condivisione di rete, il token di accesso corrente dell'utente è collegato a tale unità. Poiché il programma di avvio automatico deve essere eseguito come amministratore, non sarà in grado di accedere all'unità di rete o alla condivisione se l'unità o la condivisione non è collegata a un token di accesso utente con accesso di amministratore.
+
+### <a name="to-fix-this-error"></a>Per correggere l'errore
+
+È possibile usare il comando `net use` oppure è possibile modificare l'impostazione di controllo dell'account utente Criteri di gruppo. Per ulteriori informazioni su queste soluzioni alternative e su come implementarle, vedere gli articoli del supporto tecnico Microsoft seguenti:
+
+* [Le unità mappate non sono disponibili da un prompt con privilegi elevati quando UAC è configurato per "Richiedi credenziali" in Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [I programmi potrebbero non essere in grado di accedere ad alcuni percorsi di rete dopo l'attivazione del controllo dell'account utente nei sistemi operativi Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
 * [Installare e usare Visual Studio protetto da un firewall o un server proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
