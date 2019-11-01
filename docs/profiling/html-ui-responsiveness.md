@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: a483d1382ea1f67c14aa4674016331bfe0f76e7d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826105"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189379"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.
@@ -44,7 +44,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
      Se si vuole modificare la destinazione di analisi per il profiler, scegliere **Modifica destinazione**.
 
-     ![Cambia destinazione analisi](../profiling/media/js_tools_target.png "JS_Tools_Target")
+     ![Destinazione analisi modifiche](../profiling/media/js_tools_target.png "JS_Tools_Target")
 
      Sono disponibili le seguenti opzioni per la destinazione di analisi:
 
@@ -69,7 +69,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 6. Per interrompere la profilatura dell'app e visualizzare i dati raccolti dal profiler, scegli **Arresta raccolta**.
 
 ## <a name="isolate-an-issue"></a>Isolare un problema
- Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni usando un'app di test delle prestazioni di esempio, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (HTML)](/visualstudio/profiling/html-ui-responsiveness).
+ Nella seguente sezione vengono descritti i suggerimenti per isolare i problemi di prestazioni. Per una spiegazione dettagliata della procedura di identificazione e risoluzione dei problemi di prestazioni mediante un'app di esempio per la verifica delle prestazioni, vedere [Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente](html-ui-responsiveness.md).
 
 ### <a name="Workflow"></a> Isolare un problema di risposta dell'interfaccia utente
  Questi passaggi forniscono un flusso di lavoro consigliato che può aiutarti a usare il profiler della velocità di risposta dell'interfaccia utente in modo più efficace:
@@ -95,9 +95,9 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
 8. Se hai aggiunto contrassegni utente, questi vengono visualizzati nella [Visualizzare la sequenza temporale della sessione di diagnostica](#Ruler) del profiler. La figura seguente mostra un contrassegno utente singolo usato per specificare una determinata operazione nel codice.
 
-     ![Righello della diagnostica con contrassegno utente](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")
+     ![Righello di diagnostica che mostra un contrassegno utente](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")
 
-9. Identificare un'area di interesse nella sequenza temporale e nei grafici del profiler usando i contrassegni utente, gli eventi del ciclo di vita dell'app o i dati visualizzati nei grafici. Di seguito sono riportate alcune linee guida che facilitano l'analisi e l'utilizzo dei dati nei grafici:
+9. Identifica un'area di interesse nella sequenza temporale e nei grafici del profiler utilizzando i contrassegni utente, gli eventi del ciclo di vita dell'app o i dati visualizzati nei grafici. Di seguito sono riportate alcune linee guida che facilitano l'analisi e l'utilizzo dei dati nei grafici:
 
     - Usa la [Visualizzare la sequenza temporale della sessione di diagnostica](#Ruler) per visualizzare i [Contrassegnare il codice per l'analisi](#ProfileMark), gli eventi del ciclo di vita dell'app e la sequenza temporale associata per questi eventi e quella per i dati negli altri grafici.
 
@@ -109,7 +109,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
      Nella figura seguente viene mostrato il grafico dell'utilizzo della CPU con un'area di interesse evidenziata.
 
-     ![Grafico dell'utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+     ![Grafico di utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
 11. Nella sezione [Visualizzare i dettagli della sequenza temporale](#TimelineDetails) sono disponibili informazioni dettagliate sugli eventi che si verificano troppo spesso o il cui completamento richiede troppo tempo. Ad esempio, cerca quanto segue:
 
@@ -152,9 +152,9 @@ if (performance && performance.mark) {
 
  La figura seguente mostra il righello di diagnostica con un unico contrassegno utente e la relativa descrizione comando.
 
- ![Righello della diagnostica con contrassegno utente](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")
+ ![Righello di diagnostica che mostra un contrassegno utente](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")
 
- È possibile anche creare eventi generati da strumenti nella visualizzazione dei dettagli della sequenza temporale per mostrare il tempo trascorso tra due contrassegni utente. Il codice seguente permette di aggiungere un secondo contrassegno utente e una misura del tempo trascorso tra l'esecuzione dei due contrassegni utenti. Il codice precedente mostra il primo contrassegno utente.
+ Puoi anche creare eventi generati da strumenti nella visualizzazione dei dettagli della cronologia per mostrare il tempo trascorso tra due contrassegni utente. Il codice seguente permette di aggiungere un secondo contrassegno utente e una misura del tempo trascorso tra l'esecuzione dei due contrassegni utenti. Il codice precedente mostra il primo contrassegno utente.
 
 ```javascript
 if (performance.mark && performance.measure) {
@@ -165,9 +165,9 @@ if (performance.mark && performance.measure) {
 
  Se il secondo contrassegno utente non è specificato, `performance.measure` usa un timestamp come secondo contrassegno utente. Il primo contrassegno utente è obbligatorio.
 
- La misurazione della durata è visualizzata come evento **Misura utente** nella visualizzazione dei dettagli della sequenza temporale. Se si seleziona questo evento, saranno mostrate informazioni dettagliate.
+ La misurazione della durata è visualizzata come evento **Misura utente** nella visualizzazione dei dettagli della cronologia. Se selezioni questo evento, saranno mostrate informazioni dettagliate.
 
- ![Evento Misura utente nella visualizzazione dei dettagli della sequenza temporale](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
+ ![Evento misura utente nella visualizzazione dei dettagli della sequenza temporale](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")
 
 ## <a name="analyze-data"></a>Analizzare i dati
  Nelle sezioni seguenti vengono fornite le informazioni per interpretare i dati visualizzati nel profiler.
@@ -188,7 +188,7 @@ if (performance.mark && performance.measure) {
 - Un evento di navigazione, che si verifica quando passi a una pagina diversa. Una descrizione comando per l'evento mostra l'URL della pagina di destinazione.
 
 ### <a name="CPUUtilization"></a> Visualizzare l'utilizzo della CPU
- Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering** e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#profiler-event-reference) più avanti in questo argomento.
+ Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering**e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#profiler-event-reference) più avanti in questo argomento.
 
  Il grafico dell'utilizzo della CPU mostra la quantità di tempo trascorso in tutti i thread dell'app, combinando i valori di utilizzo per una o più CPU in un singolo valore percentuale. Il valore di utilizzo della CPU può superare il 100% quando sono in uso più CPU.
 
@@ -197,9 +197,9 @@ if (performance.mark && performance.measure) {
 
  Questo esempio mostra l'aspetto del grafico relativo all'utilizzo della CPU:
 
- ![Grafico dell'utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
+ ![Grafico di utilizzo della CPU](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")
 
- Usare questo grafico per:
+ Usa questo grafico per:
 
 - Identificare aree problematiche generali.
 
@@ -224,7 +224,7 @@ if (performance.mark && performance.measure) {
 
   ![Grafico della velocità effettiva visuale](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")
 
-  Usare il grafico della velocità effettiva visuale per:
+  Usa il grafico della velocità effettiva visuale per:
 
 - Identificare aree problematiche generali.
 
@@ -240,9 +240,9 @@ if (performance.mark && performance.measure) {
 > [!TIP]
 > Quando si verifica un evento in un thread in background, l'ID thread viene visualizzato tra parentesi accanto al nome dell'evento.
 
- Questo esempio mostra l'aspetto del grafico dei dettagli della sequenza temporale quando viene selezionato il listener di eventi per un evento di clic su DOM:
+ Questo esempio mostra l'aspetto del grafico dei dettagli della cronologia quando viene selezionato il listener di eventi per un evento click DOM:
 
- ![Grafico Dettagli sequenza temporale](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
+ ![Grafico dei dettagli della sequenza temporale](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
 
  In questa figura il gestore dell'evento **spinAction** nella colonna **Nome evento** è un collegamento che, se selezionato, conduce al gestore dell'evento nel codice sorgente. Nel riquadro destro la proprietà **Funzione di callback** fornisce lo stesso collegamento al codice sorgente. Altre proprietà forniscono inoltre informazioni sull'evento, ad esempio l'elemento DOM associato.
 
@@ -272,9 +272,9 @@ if (performance.mark && performance.measure) {
   > Il grafico dei dettagli della sequenza temporale e **Riepilogo tempo inclusivo** possono aiutarti a identificare aree per l'ottimizzazione. Se una di queste visualizzazioni mostra numeri elevati di piccole attività, l'evento può essere un candidato per l'ottimizzazione. È ad esempio possibile che un'app aggiorni gli elementi DOM molto frequentemente, con conseguente aumento del numero di eventi di layout e di analisi HTML. Puoi ottimizzare le prestazioni suddividendo in batch il lavoro.
 
 ### <a name="FilterTimelineDetails"></a> Filtrare i dettagli cronologia
- Puoi filtrare la visualizzazione nei dettagli cronologia in base a un evento particolare selezionando **Filtra per evento** dal menu di scelta rapida per un evento specifico. Quando scegli questa opzione, l'ambito della sequenza temporale e della visualizzazione viene definito sull'evento selezionato. La selezione nel grafico dell'utilizzo della CPU definisce l'ambito sull'evento specifico.
+ Puoi filtrare la visualizzazione nei dettagli cronologia in base a un evento particolare selezionando **Filtra per evento** dal menu di scelta rapida per un evento specifico. Quando scegli questa opzione, l'ambito della sequenza temporale e della visualizzazione viene definito sull'evento selezionato. La selezione nel grafico di utilizzo della CPU definisce l'ambito sull'evento specifico.
 
- ![Applicazione di filtri alla sequenza temporale per un evento](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
+ ![Filtrare la sequenza temporale in un evento](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
 ### <a name="FilterEvents"></a> Filtrare gli eventi
  Puoi filtrare alcuni eventi dal grafico dei dettagli cronologia per ridurre il rumore nei dati o eliminare i dati non attinenti allo scenario specifico. Puoi filtrare in base al nome o alla durata degli eventi oppure in base a filtri specifici descritti in questo argomento.
@@ -283,7 +283,7 @@ if (performance.mark && performance.measure) {
 
  ![Applicazione di filtri agli eventi nella sequenza temporale](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")
 
- Per filtrare gli eventi di richiesta HTTP, deselezionare l'opzione **Traffico di rete** dall'icona filtro nel riquadro inferiore. Per impostazione predefinita, questi eventi sono visibili nel grafico dettagli cronologia.
+ Per filtrare gli eventi di richiesta HTTP, deseleziona l'opzione **Traffico di rete** dall'icona filtro nel riquadro inferiore. Per impostazione predefinita, questi eventi sono visibili nel grafico dettagli cronologia.
 
  Per escludere l'attività del thread dell'interfaccia utente dal filtro, deseleziona l'opzione **Attività dell'interfaccia utente** .
 
@@ -293,11 +293,11 @@ if (performance.mark && performance.measure) {
  Per escludere le misure utente da filtro, deseleziona l'opzione **Misure utente** . Le misure utente sono eventi di primo livello senza elementi figlio.
 
 ### <a name="GroupFrames"></a> Raggruppare gli eventi per frame
- Puoi raggruppare gli eventi inclusi nella visualizzazione dei dettagli della sequenza temporale in base a singoli frame. Questi eventi frame sono eventi generati da strumenti e rappresentano i contenitori eventi di primo livello per tutte le operazioni relativa al thread dell'interfaccia utente che si verificano tra eventi Paint. Per abilitare questa visualizzazione, selezionare **Raggruppa eventi di primo livello in base ai frame**.
+ Puoi raggruppare gli eventi inclusi nella visualizzazione dei dettagli della sequenza temporale in base a singoli frame. Questi eventi frame sono eventi generati da strumenti e rappresentano i contenitori eventi di primo livello per tutte le operazioni relativa al thread dell'interfaccia utente che si verificano tra eventi Paint. Per abilitare questa visualizzazione, seleziona **Raggruppa eventi di primo livello in base ai frame**.
 
- ![Raggruppamento degli eventi di livello superiore per frame](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
+ ![Raggruppare gli eventi di primo livello in base al frame](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
 
- Quando si raggruppano gli eventi in base ai frame, ogni evento di primo livello nella visualizzazione dei dettagli della sequenza temporale rappresenta un frame.
+ Quando raggruppi gli eventi in base ai frame, ogni evento di primo livello nella visualizzazione dei dettagli della sequenza temporale rappresenta un frame.
 
  ![Eventi della sequenza temporale raggruppati per frame](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")
 
@@ -319,9 +319,9 @@ if (performance.mark && performance.measure) {
 
 - **Decodifica immagine.** Indica il tempo impiegato per la decompressione e la decodifica delle immagini.
 
-  Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, è possibile usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per ulteriori informazioni, vedi [Memoria JavaScript](../profiling/javascript-memory.md).
+  Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, puoi usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per altre informazioni, vedere [Memoria JavaScript](../profiling/javascript-memory.md).
 
-  Per le altre categorie di eventi, è possibile che si identifichino gli effetti collaterali della piattaforma che derivano dall'aggiunta di funzionalità all'app, ma in questi casi è possibile che non si riesca a risolvere i problemi di prestazioni specifici tramite il profiler della velocità di risposta dell'interfaccia utente.
+  Per le altre categorie di eventi, potresti essere in grado di identificare gli effetti collaterali della piattaforma che derivano dall'aggiunta di funzionalità all'app, ma in questi casi è possibile che tu non riesca a risolvere i problemi di prestazioni specifici tramite il profiler della velocità di risposta dell'interfaccia utente.
 
   Questa tabella mostra gli eventi e le relative descrizioni:
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981728"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189217"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizzare le soluzioni SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981728"
 |Indipendente dalla lingua|Un file di risorse contenente stringhe localizzate per una lingua, ma non per impostazioni cultura specifiche. Ad esempio, "fr" per il francese.|
 |Specifico della lingua|Un file di risorse che contiene le stringhe localizzate per una lingua e le impostazioni cultura. Ad esempio, "fr-CA" per il francese canadese.|
 
- Per ulteriori informazioni, vedere [organizzazione gerarchica di risorse per la localizzazione](../ide/hierarchical-organization-of-resources-for-localization.md).
+ Per ulteriori informazioni, vedere [organizzazione gerarchica di risorse per la localizzazione](../ide/globalizing-and-localizing-applications.md).
 
  Per specificare i file di risorse predefiniti nei progetti SharePoint sviluppati in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], scegliere **lingua inglese (paese invariante)** nell'elenco impostazioni cultura della finestra di dialogo **Aggiungi risorsa** quando si aggiunge un file di risorse.
 
