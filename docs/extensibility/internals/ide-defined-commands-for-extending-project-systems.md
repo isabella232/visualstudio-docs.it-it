@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e406fb5ba9f221fa22faadfecaa8f0baaefebf75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c8be1cff099a713413957cfa5f8b3f383ca4bae
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727338"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186342"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandi definiti dall'IDE per l'estensione dei sistemi di progetto
 Quando si desidera estendere i sistemi del progetto, è possibile utilizzare i comandi e i gruppi di comandi forniti dall'IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -70,6 +70,6 @@ Quando si desidera estendere i sistemi del progetto, è possibile utilizzare i c
 |IDG_VS_CTXT_PROJECT_PROPERTIES|Comandi che consentono di accedere alla finestra di dialogo delle **proprietà del progetto** .|
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Confronto tra oggetti MenuCommand e OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)
 - [Creazione di gruppi riutilizzabili di pulsanti](../../extensibility/creating-reusable-groups-of-buttons.md)
