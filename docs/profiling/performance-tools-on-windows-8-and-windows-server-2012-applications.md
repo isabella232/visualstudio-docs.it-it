@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: bb5442d12899436076f6b60e8fd7e807b19e4f82
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911878"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189330"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 
@@ -37,7 +37,7 @@ Le funzionalità e opzioni di profilatura seguenti non sono supportate per la pr
 
 Per altre informazioni sulla profilatura delle app UWP, vedere gli articoli seguenti:
 
-- [Eseguire app UWP nel computer locale](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
+- [Eseguire app UWP nel computer locale](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 - [Eseguire app UWP in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Presentazione degli strumenti di profilatura](profiling-feature-tour.md)
 - [Memoria JavaScript](../profiling/javascript-memory.md)

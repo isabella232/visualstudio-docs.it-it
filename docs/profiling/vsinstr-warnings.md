@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822907"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189291"
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
 La tabella seguente elenca gli avvisi generati dallo strumento *VSInstr.exe*. Per impedire la visualizzazione dei messaggi, è possibile usare l'opzione NOWARN insieme al numero di avviso appropriato.
 
-|Numero di avviso|Description|
+|Numero di avviso|Descrizione|
 |--------------------|-----------------|
-|**VSP1026**|Code coverage non è supportato nelle librerie che non fanno riferimento a MSCorLib. Ciò è vero spesso per le librerie portabili.<br /><br />L'opzione della riga di comando [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) è obbligatoria per .NET Core.|
+|**VSP1026**|Code coverage non è supportato nelle librerie che non fanno riferimento a MSCorLib. Ciò è vero spesso per le librerie portabili.<br /><br />L'opzione della riga di comando [/EnableCodeCoverage](../test/vstest-console-options.md) è obbligatoria per .NET Core.|
 |**VSP2000**|Errore interno Impossibile ottenere il nome del file di modulo per questo eseguibile.|
 |**VSP2001**|\<nome assembly> è un assembly con nome sicuro. Deve essere firmato di nuovo prima dell'esecuzione.<br /><br /> Questo avviso viene visualizzato quando un assembly firmato viene instrumentato. È possibile usare lo strumento *sn.exe* per firmare nuovamente il file binario o disattivare temporaneamente il requisito del nome sicuro. Per altre informazioni, vedere [Sn.exe (strumento Nome sicuro)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
 |**VSP2002**|Impossibile trovare la funzione \<nome funzione> nel file \<nome file><br /><br /> Questo avviso viene visualizzato quando non è possibile individuare una funzione nel file specificato.|
