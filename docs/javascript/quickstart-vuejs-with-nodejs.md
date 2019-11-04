@@ -1,11 +1,10 @@
 ---
 title: 'Guida introduttiva: creare la prima app Vue. js'
 description: In questa Guida introduttiva viene spiegato come creare un'app Vue.js in Visual Studio usando Node.js Tools for Visual Studio
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ba1f403cd722b4d3dd1860c4a8b135c87b80bb4d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189476"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428767"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Guida introduttiva: Creare per la prima volta un'app Vue.js con Visual Studio
 
@@ -104,9 +103,13 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
 1. (Solo per progetti TypeScript) Da Visual Studio scegliere **Compila** > **Pulisci soluzione**.
 
+    ::: moniker range=">=vs-2019"
+    Nel modello TypeScript incluso in Visual Studio 2019 ignorare questo passaggio.
+    ::: moniker-end
+
 1. In seguito, scegliere **Compila** > **Compila soluzione** per compilare il progetto. Controllare i risultati della compilazione nella finestra **Output** e scegliere **Compila** dall'elenco **Mostra output di**.
 
-    Il modello di progetto Vue.js usa lo script npm `build` tramite la configurazione di un evento di post-compilazione. Se si desidera modificare questa impostazione, aprire il file di progetto ( *\<projectname\>.njsproj*) da Esplora risorse e individuare la seguente riga di codice:
+    Il modello di progetto di JavaScript VME. js (e le versioni precedenti del modello TypeScript) usano lo script NPM di `build` configurando un evento di post-compilazione. Se si desidera modificare questa impostazione, aprire il file di progetto ( *\<projectname\>.njsproj*) da Esplora risorse e individuare la seguente riga di codice:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
    Nella console un messaggio avvisa che è in corso *l'avvio del server di sviluppo* .
 
    Quindi, l'app verrà aperta in un browser.
+   
+   Se l'app in esecuzione non è visibile, aggiornare la pagina.
 
    ![App Vue.js in esecuzione nel browser](../javascript/media/vuejs-running-app.png)
 
