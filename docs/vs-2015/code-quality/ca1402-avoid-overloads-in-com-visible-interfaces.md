@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1402
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: abf6382dfba8b8d9c3cc0ed6ccf90e929afca589
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 258b7ba1444cd990c3ec68ebfd5faccc945439e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694969"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661345"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Evitare gli overload nelle interfacce visibili a COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "65694969"
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |CheckId|CA1402|
-|Category|Microsoft.Interoperability|
+|Category|Microsoft. interoperabilità|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un modello COM (Component Object) visibile interfaccia dichiara i metodi di overload.
+ Un'interfaccia visibile Component Object Model (COM) dichiara i metodi di overload.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Quando i metodi sottoposti a overload vengono esposti ai client COM, solo il primo overload di metodo conserva il proprio nome. Gli overload successivi vengono rinominati in modo univoco aggiungendo al nome un carattere di sottolineatura '_' e un numero intero che corrisponde all'ordine di dichiarazione dell'overload. Si consideri ad esempio i metodi seguenti.
+ Quando i metodi sottoposti a overload vengono esposti ai client COM, solo il primo overload di metodo conserva il proprio nome. Gli overload successivi vengono rinominati in modo univoco aggiungendo al nome un carattere di sottolineatura "_" e un numero intero corrispondente all'ordine di dichiarazione dell'overload. Si considerino, ad esempio, i metodi seguenti:
 
 ```
 void SomeMethod(int valueOne);
@@ -44,7 +44,7 @@ void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);
 ```
 
- Questi metodi vengono esposti ai client COM come indicato di seguito.
+ Questi metodi vengono esposti ai client COM come riportato di seguito.
 
 ```
 void SomeMethod(int valueOne);
@@ -52,26 +52,26 @@ void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);
 ```
 
- I client COM Visual Basic 6 non possono implementare i metodi di interfaccia con un carattere di sottolineatura nel nome.
+ Visual Basic 6 client COM non possono implementare metodi di interfaccia usando un carattere di sottolineatura nel nome.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, rinominare i metodi di overload in modo che i nomi siano univoci. In alternativa, rendere l'interfaccia invisibili a COM modificando l'accessibilità `internal` (`Friend` nel [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) oppure applicando il <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attributo impostato su `false`.
+ Per correggere una violazione di questa regola, rinominare i metodi di overload in modo che i nomi siano univoci. In alternativa, rendere invisibile l'interfaccia a COM modificando l'accessibilità in `internal` (`Friend` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) o applicando l'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> impostato su `false`.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra un'interfaccia che viola la regola e un'interfaccia che soddisfa la regola.
+ Nell'esempio seguente viene illustrata un'interfaccia che viola la regola e un'interfaccia che soddisfa la regola.
 
  [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.OverloadsInterface/cs/FxCop.Interoperability.OverloadsInterface.cs#1)]
  [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.OverloadsInterface/vb/FxCop.Interoperability.OverloadsInterface.vb#1)]
 
 ## <a name="related-rules"></a>Regole correlate
- [CA1413: Evitare i campi non pubblici nei tipi valore visibili a COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413: Evitare i campi non pubblici nei tipi valore visibili a COM ](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407: Evitare i membri statici nei tipi visibili a COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+ [CA1407: Evitare i membri statici nei tipi visibili a COM ](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017: Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017: Contrassegnare gli assembly con ComVisibleAttribute ](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Interoperabilità con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [tipo di dati Long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
+ [Interoperabilità con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Tipo di dati Long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)

@@ -1,5 +1,5 @@
 ---
-title: Activity Designer throw | Microsoft Docs
+title: ActivityDesigner Throw | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,37 +8,34 @@ f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db909618971eeab2d92506d1c29b06290aa9263b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1855daa5016241fb6eb04f05d7218e02083fc0a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976623"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655155"
 ---
 # <a name="throw-activity-designer"></a>ActivityDesigner Throw
-Il **Throw** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Throw> attività.  
-  
-## <a name="the-throw-activity"></a>Attività Throw  
- L'attività <xref:System.Activities.Statements.Throw> genera un'eccezione.  
-  
-### <a name="using-the-throw-activity-designer"></a>Utilizzo dell'ActivityDesigner Throw  
- Il **Throw** ActivityDesigner è reperibile nella **Error Handling** categoria del **della casella degli strumenti**, accessibile facendo clic la **della casella degli strumenti**sul lato sinistro della scheda il [!INCLUDE[wfd2](../includes/wfd2-md.md)] (in alternativa, selezionare **sulla barra degli strumenti** dal **visualizzazione** menu oppure premere CTRL + ALT + X.)  
-  
- Il **Throw** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciato nel [!INCLUDE[wfd2](../includes/wfd2-md.md)] superficie ovunque posizionate le attività vengono in genere, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. Ciò consente di creare un <xref:System.Activities.Statements.Throw> attività con un valore predefinito **DisplayName** throw. Il <xref:System.Activities.Activity.DisplayName%2A> possibile modificare il valore nell'intestazione del **Throw** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà. La proprietà <xref:System.Activities.Statements.Throw.Exception%2A> deve essere modificata nella griglia delle proprietà.  
-  
-### <a name="the-throw-properties"></a>Proprietà di Throw  
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di uso nella finestra di progettazione.  
-  
-|Nome proprietà|Obbligatorio|Utilizzo|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.Throw>. Il valore predefinito è Throw.|  
-|<xref:System.Activities.Statements.Throw.Exception%2A>|True|Eccezione da generare. Questa eccezione deve derivare da <xref:System.Exception>. Per specificare l'eccezione, digitare un'espressione Visual Basic nella griglia delle proprietà.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Raccolta](../workflow-designer/collection-activity-designers.md)   
- [Rethrow](../workflow-designer/rethrow-activity-designer.md)   
- [Activity Designer throw](../workflow-designer/throw-activity-designer.md)   
- [TryCatch](../workflow-designer/trycatch-activity-designer.md)
+L'ActivityDesigner **throw** viene usato per creare e configurare un'attività <xref:System.Activities.Statements.Throw>.
+
+## <a name="the-throw-activity"></a>Attività Throw
+ L'attività <xref:System.Activities.Statements.Throw> genera un'eccezione.
+
+### <a name="using-the-throw-activity-designer"></a>Utilizzo dell'ActivityDesigner Throw
+ L'ActivityDesigner **throw** è disponibile nella categoria **Gestione errori** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** sul lato sinistro del [!INCLUDE[wfd2](../includes/wfd2-md.md)]. in alternativa, selezionare **barra degli** strumenti nella **visualizzazione.** oppure premere CTRL + ALT + X.
+
+ È possibile trascinare l'ActivityDesigner **throw** dalla **casella degli strumenti** e rilasciarlo nell'area [!INCLUDE[wfd2](../includes/wfd2-md.md)] quando vengono in genere posizionate le attività, ad esempio all'interno di un <xref:System.Activities.Statements.Sequence>. Viene creata un'attività di <xref:System.Activities.Statements.Throw> con un valore **DisplayName** predefinito Throw. Il valore <xref:System.Activities.Activity.DisplayName%2A> può essere modificato nell'intestazione dell'ActivityDesigner **throw** o nella casella **DisplayName** della griglia delle proprietà. La proprietà <xref:System.Activities.Statements.Throw.Exception%2A> deve essere modificata nella griglia delle proprietà.
+
+### <a name="the-throw-properties"></a>Proprietà di Throw
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di uso nella finestra di progettazione.
+
+|Nome proprietà|Obbligatorio|Utilizzo|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.Throw>. Il valore predefinito è Throw.|
+|<xref:System.Activities.Statements.Throw.Exception%2A>|True|Eccezione da generare. Questa eccezione deve derivare da <xref:System.Exception>. Per specificare l'eccezione, digitare un'espressione Visual Basic nella griglia delle proprietà.|
+
+## <a name="see-also"></a>Vedere anche
+ [Raccolta](../workflow-designer/collection-activity-designers.md) [Rethrow](../workflow-designer/rethrow-activity-designer.md) [ActivityDesigner Throw](../workflow-designer/throw-activity-designer.md) [TryCatch](../workflow-designer/trycatch-activity-designer.md)

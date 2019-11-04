@@ -1,5 +1,5 @@
 ---
-title: Activity Designer Sequence | Microsoft Docs
+title: ActivityDesigner Sequence | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,31 +8,30 @@ f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47743feae8c256aa0ddb4e3270aca32b108aa5d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3acf02ab478eee244557e04f19f78ba2d5f0b950
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007479"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663254"
 ---
 # <a name="sequence-activity-designer"></a>ActivityDesigner Sequence
-L'attività <xref:System.Activities.Statements.Sequence> contiene una raccolta ordinata di attività figlio eseguite nell'ordine.  
-  
- Un altro sistema per eseguire un set delle attività nell'ordine consiste nell'usare un'attività <xref:System.Activities.Statements.Flowchart>. È consigliabile usare la [diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) quando si dispone di una semplice creazione di rami o cicli del flusso di programma che si desidera modellare graficamente.  
-  
-## <a name="using-the-sequence-activity-designer"></a>Utilizzo dell'ActivityDesigner Sequence  
- Per aggiungere un <xref:System.Activities.Statements.Sequence> attività, trascinare il **sequenza** ActivityDesigner dal **casella degli strumenti** e rilasciarlo sul [!INCLUDE[wfd1](../includes/wfd1-md.md)] superficie. Per aggiungere un'attività figlio a questa <xref:System.Activities.Statements.Sequence> attività, trascinare un'altra attività dal **casella degli strumenti** e rilasciarla sul triangolo nella casella con il testo di suggerimento "Rilasciare l'attività".  
-  
-### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività della sequenza in Progettazione flussi di lavoro   
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Sequence> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.  
-  
-|Nome proprietà|Obbligatorio|Utilizzo|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Sequence> nell'intestazione. Il valore predefinito è Sequence. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|  
-  
-## <a name="see-also"></a>Vedere anche  
- [Diagramma di flusso](../workflow-designer/flowchart-activity-designer.md)   
- [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)
+L'attività <xref:System.Activities.Statements.Sequence> contiene una raccolta ordinata di attività figlio eseguite nell'ordine.
+
+ Un altro sistema per eseguire un set delle attività nell'ordine consiste nell'usare un'attività <xref:System.Activities.Statements.Flowchart>. Si consiglia di utilizzare il [diagramma](../workflow-designer/flowchart-activity-designer.md) di flusso quando si dispone di un semplice flusso del programma di diramazione o ciclo che si desidera modellare graficamente.
+
+## <a name="using-the-sequence-activity-designer"></a>Utilizzo dell'ActivityDesigner Sequence
+ Per aggiungere un'attività <xref:System.Activities.Statements.Sequence>, trascinare l'ActivityDesigner **Sequence** dalla **casella degli strumenti** e rilasciarlo sull'area [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Per aggiungere un'attività figlio a questa attività <xref:System.Activities.Statements.Sequence>, trascinare un'altra attività dalla **casella degli strumenti** e rilasciarla sul triangolo nella casella con il testo del suggerimento "rilasciare l'attività".
+
+### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività della sequenza in Progettazione flussi di lavoro
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Sequence> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
+
+|Nome proprietà|Obbligatorio|Utilizzo|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Sequence> nell'intestazione. Il valore predefinito è Sequence. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
+
+## <a name="see-also"></a>Vedere anche
+ [Diagramma di flusso](../workflow-designer/flowchart-activity-designer.md) [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)
