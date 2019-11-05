@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dd34d0afa9f1b83a3795a9bccd0578d88c585ffa
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: c5f3c4a0a2acdf73aae96c5cb5629252e712da64
+ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569023"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618110"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -55,7 +55,7 @@ JSX è un'estensione della sintassi JavaScript in genere usata con React per des
 
 webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Può anche trasformare o creare pacchetti di altri asset e risorse. Viene spesso usato per specificare un compilatore, ad esempio Babel o TypeScript, per convertire tramite transpile il codice JSX o TypeScript in codice JavaScript semplice.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -88,7 +88,7 @@ Per prima cosa creare un progetto di applicazione Web Node.js.
     Premere **ESC** per chiudere la finestra iniziale. Premere **Ctrl + Q** per aprire la casella di ricerca, digitare **Node.js**, quindi scegliere **Applicazione Web Node.js vuota** (JavaScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
     ::: moniker-end
     Se il modello di progetto **Applicazione Web Node.js vuota** non compare, è necessario installare prima il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
@@ -395,7 +395,11 @@ Per questo scenario, usare Chrome.
 
 1. Chiudere tutte le finestre per il browser di destinazione.
 
-   Le altre istanze del browser possono impedire il fissaggio del debugger.
+   Le altre istanze del browser possono impedire l'apertura del browser con il debug abilitato. (È possibile che le estensioni del browser siano in esecuzione e impediscano la modalità di debug completa, pertanto potrebbe essere necessario aprire Gestione attività per individuare le istanze impreviste di Chrome).
+
+   ::: moniker range=">=vs-2019"
+   Per Microsoft Edge (cromo), arrestare anche tutte le istanze di Chrome. Poiché entrambi i browser condividono la codebase di cromo, questo fornisce i migliori risultati.
+   ::: moniker-end
 
 2. Aprire il comando **Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui**) e immettere il comando seguente:
 
@@ -417,19 +421,44 @@ Per questo scenario, usare Chrome.
 
     L'app non è ancora in esecuzione, quindi si ottiene una pagina del browser vuota.
 
-3. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice *app-bundle. js* nella funzione `render()` come illustrato nella figura seguente:
+3. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice sorgente, ovvero *app-bundle. js* o *app. TSX*.
+
+    Per *app-bundle. js*, impostare il punto di interruzione nella funzione `render()` come illustrato nella figura seguente:
 
     ![Imposta punto di interruzione](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Per trovare la funzione `render()` in *app-bundle.js*, usare **CTRL**+**F** (**Modifica** > **Trova e sostituisci** > **Ricerca veloce**).
+    Per trovare la funzione `render()` nel file *app-bundle. js* transpiled, usare **CTRL**+**F** (**modifica** > **trova e Sostituisci** > **ricerca veloce**).
 
-4. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **Ctrl**+**F5** (**debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
+    Per *app. TSX*, impostare il punto di interruzione all'interno della funzione `render()` nell'istruzione `return`.
+
+    ![Imposta punto di interruzione](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+4. Se si imposta il punto di interruzione nel file con *estensione TSX* (anziché *app-bundle. js*), è necessario aggiornare *Webpack-config. js*. Sostituire il codice seguente:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    con questo codice:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Si tratta di un'impostazione di solo sviluppo per abilitare il debug in Visual Studio. Questa impostazione consente di eseguire l'override dei riferimenti generati nel file sourcemap, *app-bundle. js. map*, durante la compilazione dell'app. Per impostazione predefinita, i riferimenti a Webpack nel file sourcemap includono il prefisso *Webpack:///* , che impedisce a Visual Studio di trovare il file di origine, *app. TSX*. In particolare, quando si apportano queste modifiche, il riferimento al file di origine, *app. TSX*, viene modificato da *Webpack:///./app.TSX* a *./app.TSX*, che consente il debug.
+
+5. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **Ctrl**+**F5** (**debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
 
     L'app viene aperta in una nuova scheda del browser.
 
-5. Scegliere **Debug** > **Associa a processo**.
+6. Scegliere **Debug** > **Associa a processo**.
 
-6. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
+7. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
 
     ::: moniker range=">=vs-2019"
     In Visual Studio 2019 scegliere il browser di destinazione corretto, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare i risultati della ricerca. Se è stata creata una configurazione del browser con un nome descrittivo, scegliere invece.
@@ -438,7 +467,7 @@ Per questo scenario, usare Chrome.
     In Visual Studio 2017 scegliere **codice Webkit** nel campo **Connetti a** , digitare **Chrome** nella casella filtro per filtrare i risultati della ricerca.
     ::: moniker-end
 
-7. Selezionare il processo browser con la porta host corretta (localhost in questo esempio) e selezionare **Connetti**.
+8. Selezionare il processo browser con la porta host corretta (localhost in questo esempio) e selezionare **Connetti**.
 
     La porta (1337) può essere visualizzata anche nel campo **titolo** per facilitare la selezione dell'istanza del browser corretta.
 
@@ -456,15 +485,19 @@ Per questo scenario, usare Chrome.
     > [!TIP]
     > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Operazione non valida nello stato corrente. utilizzare Gestione attività per chiudere tutte le istanze del browser di destinazione prima di avviare il browser in modalità di debug. Le estensioni del browser possono essere in esecuzione e impedire la modalità di debug completa.
 
-8. Dato che il codice con il punto di interruzione è già stato eseguito, aggiornare la pagina del browser per raggiungere il punto di interruzione.
+9. Dato che il codice con il punto di interruzione è già stato eseguito, aggiornare la pagina del browser per raggiungere il punto di interruzione.
 
     Durante la pausa del debugger, è possibile esaminare lo stato dell'app passando il mouse sulle variabili e usando le finestre del debugger. È possibile far avanzare il debugger eseguendo il codice istruzione per istruzione (**F5**, **F10** e **F11**).
 
-    A seconda dell'ambiente e dello stato del browser è possibile raggiungere il punto di interruzione in *app-bundle.js* o nel relativo percorso mappato in *app.tsx*. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
+    È possibile raggiungere il punto di interruzione in *app-bundle. js* o nel percorso di cui è stato eseguito il mapping in *app. TSX*, a seconda dei passaggi seguiti in precedenza, insieme all'ambiente e allo stato del browser. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
 
-   * Se è necessario inserire un'interruzione nel codice in *app.tsx*, ma non è possibile eseguire questa operazione, usare **Associa a processo** come descritto nei passaggi precedenti per associare il debugger. A questo punto, aprire il file *app.tsx* generato dinamicamente da Esplora soluzioni selezionando **Documenti script** > **app.tsx**, impostare un punto di interruzione e aggiornare la pagina nel browser. Impostare il punto di interruzione in una riga di codice che ammetta i punti di interruzione, come l'istruzione `return` o una dichiarazione `var`.
+   * Se è necessario inserire un'interruzione nel codice in *app.tsx*, ma non è possibile eseguire questa operazione, usare **Associa a processo** come descritto nei passaggi precedenti per associare il debugger. Assicurarsi che l'ambiente sia configurato correttamente:
 
-       In alternativa, se è necessario suddividere il codice in *app. TSX* e non è possibile eseguire questa operazione, provare a usare l'istruzione `debugger;` in *app. TSX*o impostare i punti di interruzione nel strumenti di sviluppo di Chrome (o negli strumenti F12 per Microsoft Edge). Per i file sourcemap generati da Webpack, gli strumenti del browser (**F12**) funzionano in genere in modo ottimale per il debug.
+      * Tutte le istanze del browser sono state chiuse, incluse le estensioni Chrome (mediante Gestione attività), in modo che sia possibile eseguire il browser in modalità di debug. Assicurarsi di avviare il browser in modalità di debug.
+
+      * Assicurarsi che il file sourcemap includa un riferimento a *./app.TSX* e non *Webpack:///./app.TSX*, che impedisce al debugger di Visual Studio di individuare *app. TSX*.
+
+       In alternativa, se è necessario suddividere il codice in *app. TSX* e non è possibile eseguire questa operazione, provare a usare l'istruzione `debugger;` in *app. TSX*o impostare i punti di interruzione nel strumenti di sviluppo di Chrome (o negli strumenti F12 per Microsoft Edge).
 
    * Se è necessario inserire un'interruzione nel codice in *app bundle.js*, ma non è possibile eseguire questa operazione, rimuovere il file del mapping di origine *app-bundle.js.map*.
 
