@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188890"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568957"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colori e stile per Visual Studio
 
@@ -311,7 +311,7 @@ Molti elementi dell'interfaccia utente comuni dispongono già di colori Contrast
 | --- | --- |
 | ActiveCaption | -Icone dell'IDE attivo e del pulsante della finestra con rafting al passaggio del mouse e premere<br />-Sfondo della barra del titolo per l'IDE e le finestre con rafting<br />-Sfondo della barra di stato predefinita |
 | ActiveCaptionText | -IDE attivo e finestre con rafting per il primo piano della barra del titolo (testo e glifi)<br />-Sfondo e bordo dei pulsanti della finestra attiva al passaggio del mouse e premere |
-| Control | -Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti |
+| Controllo | -Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti |
 | ControlDark | -Sfondo IDE<br />-Separatori dei menu e della barra dei comandi<br />-Bordo barra del comando<br />-Ombreggiature dei menu<br />-Scheda della finestra degli strumenti predefinita e bordo e separatore del passaggio del mouse<br />-Sfondo del pulsante di overflow del documento<br />-Bordo del glifo di destinazione dell'ancoraggio |
 | ControlDarkDark |-Non attivo, finestra scheda documento selezionata |
 | ControlLight |-Nascondi automaticamente bordo scheda<br />-Casella combinata e bordo dell'elenco a discesa<br />-Ancoraggio dello sfondo e del bordo della destinazione |
@@ -340,7 +340,7 @@ In alcuni casi è opportuno consentire all'utente finale di personalizzare l'int
 
 Un pacchetto VSPackage può controllare i tipi di carattere e i colori tramite le categorie personalizzate e gli elementi visualizzati nella pagina delle proprietà tipi di carattere e colori. Quando si usa questo meccanismo, i pacchetti VSPackage devono implementare l'interfaccia [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) e le interfacce associate.
 
-In linea di principio, questo meccanismo può essere usato per modificare tutti gli elementi visualizzati esistenti e le categorie che li contengono. Tuttavia, non deve essere usato per modificare la categoria dell'editor di testo o i relativi elementi visualizzati. Per altre informazioni sulla categoria Editor di testo, vedere [Cenni preliminari su tipi di carattere e colori](../font-and-color-overview.md).
+In linea di principio, questo meccanismo può essere usato per modificare tutti gli elementi visualizzati esistenti e le categorie che li contengono. Tuttavia, non deve essere usato per modificare la categoria dell'editor di testo o i relativi elementi visualizzati. Per altre informazioni sulla categoria Editor di testo, vedere [Cenni preliminari su tipi di carattere e colori](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
 
 Per implementare categorie personalizzate o elementi visualizzati, un pacchetto VSPackage deve:
 
@@ -358,9 +358,9 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Name | Digitare | Dati | Descrizione |
+| Nome | Tipo | Dati | Descrizione |
 | --- | --- | --- | --- |
-| Category | REG_SZ | GUID | GUID creato per identificare la categoria |
+| Categoria | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
 
  Il servizio specificato nel registro di sistema deve fornire un'implementazione di [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) per la categoria corrispondente.
@@ -371,9 +371,9 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Name | Digitare | Dati | Descrizione |
+| Nome | Tipo | Dati | Descrizione |
 |--- | --- | --- | --- |
-| Category | REG_SZ | GUID | GUID creato per identificare la categoria |
+| Categoria | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
 
 Il servizio specificato nel registro di sistema deve fornire un'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> per il gruppo corrispondente.

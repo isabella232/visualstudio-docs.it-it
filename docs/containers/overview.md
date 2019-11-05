@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 19a6149e60e61cad347dda9bf8b2a75be7b1885d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b60e5df4d94c290ca8aa7bf56471b5fed6c1879a
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188743"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568900"
 ---
 # <a name="container-tools-in-visual-studio"></a>Strumenti per contenitori in Visual Studio
 
@@ -19,7 +19,7 @@ Gli strumenti inclusi in Visual Studio per lo sviluppo con i contenitori sono fa
 
 ::: moniker range="vs-2017"
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
@@ -40,7 +40,7 @@ Con Visual Studio 2017, è possibile usare Docker Compose e Service Fabric come 
 
 ::: moniker range=">=vs-2019"
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
@@ -148,6 +148,6 @@ Per Kubernetes, vedere [Deploy a Docker container app to Azure Kubernetes Servic
 
 Per altri dettagli sull'implementazione dei servizi e l'uso degli strumenti di Visual Studio per usare i contenitori, vedere gli articoli seguenti:
 
-[Debug delle applicazioni in un contenitore Docker locale](vs-azure-tools-docker-edit-and-refresh.md)
+[Debug delle applicazioni in un contenitore Docker locale](edit-and-refresh.md)
 
 [Distribuire un contenitore ASP.NET in un registro contenitori con Visual Studio](hosting-web-apps-in-docker.md)
