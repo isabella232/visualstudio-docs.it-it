@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188799"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568846"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -24,7 +24,7 @@ ms.locfileid: "73188799"
 
 - Installando gli [analizzatori FxCop](#fxcop-analyzers-code-metrics-rules) e abilitando le quattro regole della metrica del codice (gestibilità) in esso contenute.
 
-- Scegliendo il comando di menu [ **analizza**  > **Calcola metriche del codice** ](#calculate-code-metrics-menu-command) in Visual Studio.
+- Scegliendo il comando di menu [ **analizza** > **Calcola metriche del codice** ](#calculate-code-metrics-menu-command) in Visual Studio.
 
 - Dalla [riga di comando](#command-line-code-metrics) per C# i progetti e Visual Basic.
 
@@ -35,7 +35,7 @@ Il [pacchetto NuGet FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.Cod
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 Queste regole sono disabilitate per impostazione predefinita, ma è possibile abilitarle da [**Esplora soluzioni**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) o in un file del [set di regole](using-rule-sets-to-group-code-analysis-rules.md) . Ad esempio, per abilitare la regola CA1502 come avviso, il file con estensione ruleset conterrà la voce seguente:
 
@@ -62,7 +62,7 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
 
    In questo esempio la regola [CA1502](ca1502.md) è configurata in modo da essere attivata quando la complessità ciclomatica di un metodo è maggiore di 10.
 
-3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Esempio:
+3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Ad esempio:
 
    ```xml
    <ItemGroup>
@@ -72,13 +72,13 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
 
 ## <a name="calculate-code-metrics-menu-command"></a>Comando di menu Calcola metrica codice
 
-Generare la metrica del codice per uno o tutti i progetti aperti nell'IDE usando il menu **analizza**  > **Calcola metrica del codice** .
+Generare la metrica del codice per uno o tutti i progetti aperti nell'IDE usando il menu **analizza** > **Calcola metrica del codice** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Generare risultati della metrica del codice per un'intera soluzione
 
 È possibile generare risultati della metrica del codice per un'intera soluzione in uno dei modi seguenti:
 
-- Dalla barra dei menu scegliere **analizza**  > **Calcola metriche del codice**  > **per la soluzione**.
+- Dalla barra dei menu scegliere **analizza** > **Calcola metriche del codice** > **per la soluzione**.
 
 - In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Calcola metrica codice**.
 
@@ -90,7 +90,7 @@ I risultati vengono generati e viene visualizzata la finestra **Risultati metric
 
 1. In **Esplora soluzioni**selezionare uno o più progetti.
 
-1. Dalla barra dei menu scegliere **analizza**  > **calcolare le metriche del codice**  > **per i progetti selezionati**.
+1. Dalla barra dei menu scegliere **analizza** > **calcolare le metriche del codice** > **per i progetti selezionati**.
 
 I risultati vengono generati e viene visualizzata la finestra **Risultati metrica codice** . Per visualizzare i dettagli dei risultati, espandere l'albero nella **gerarchia**.
 
@@ -111,7 +111,7 @@ I risultati vengono generati e viene visualizzata la finestra **Risultati metric
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pacchetto NuGet Microsoft. CodeAnalysis. Metrics
 
-Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Esempio:
+Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Ad esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>`. È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true`. Esempio:
+È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>`. È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true`. Ad esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -231,7 +231,7 @@ Se non si vuole installare il pacchetto NuGet, è possibile generare e usare dir
 
 #### <a name="metricsexe-usage"></a>Utilizzo di Metrics. exe
 
-Per eseguire *metrics. exe*, fornire un progetto o una soluzione e un file XML di output come argomenti. Esempio:
+Per eseguire *metrics. exe*, fornire un progetto o una soluzione e un file XML di output come argomenti. Ad esempio:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
