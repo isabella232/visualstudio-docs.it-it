@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180065"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636578"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
 
@@ -21,13 +21,13 @@ In questa introduzione della durata di 5-10 minuti all'ambiente di sviluppo inte
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 1. Nella finestra di dialogo **Nuovo progetto** visualizzata accettare il nome di progetto predefinito e scegliere **OK**.
 ::: moniker-end
 
-   Viene creato il progetto e viene aperto un file denominato *server.cs* nella finestra **Editor**. L'**Editor** mostra il contenuto dei file ed è la posizione in cui si esegue la maggior parte delle operazioni di scrittura del codice in Visual Studio.
+   Il progetto viene creato e viene aperto un file denominato *Server. js* nella finestra dell' **Editor** . L'**Editor** mostra il contenuto dei file ed è la posizione in cui si esegue la maggior parte delle operazioni di scrittura del codice in Visual Studio.
 
    ![Editor di Visual Studio](media/editor.png)
 
@@ -154,7 +154,7 @@ Sono state presentate solo alcune delle funzionalità di Visual Studio per inizi
 > [Informazioni sull'editor del codice](write-and-edit-code.md)
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
+> [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Vedere anche
 

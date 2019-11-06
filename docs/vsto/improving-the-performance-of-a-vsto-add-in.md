@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985781"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661832"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Migliorare le prestazioni di un componente aggiuntivo VSTO
   È possibile offrire agli utenti un'esperienza migliore ottimizzando i componenti aggiuntivi VSTO creati per le applicazioni di Office per poterli avviare rapidamente, interromperli o usarli per aprire gli elementi ed eseguire altre attività. Se il componente aggiuntivo VSTO è per Outlook, è anche possibile ridurre la probabilità che il componente aggiuntivo VSTO venga disabilitato a causa delle prestazioni ridotte. È possibile incrementare le prestazioni del componente aggiuntivo VSTO implementando le strategie seguenti:
@@ -28,7 +28,7 @@ ms.locfileid: "72985781"
 
 - [Eseguire operazioni complesse in un thread di esecuzione separato](#Perform).
 
-  Per altre informazioni su come ottimizzare un componente aggiuntivo VSTO di Outlook, vedere [criteri delle prestazioni per la conservazione dei componenti aggiuntivi VSTO abilitati](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
+  Per altre informazioni su come ottimizzare un componente aggiuntivo VSTO di Outlook, vedere [criteri delle prestazioni per la conservazione dei componenti aggiuntivi VSTO abilitati](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
 
 ## <a name="Load"></a> Caricare componenti aggiuntivi VSTO su richiesta
  È possibile configurare un componente aggiuntivo VSTO da caricare solo nelle circostanze seguenti:

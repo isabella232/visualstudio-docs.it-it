@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986095"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661855"
 ---
 # <a name="excel-object-model-overview"></a>Panoramica del modello a oggetti di Excel
   Per sviluppare soluzioni che utilizzano Microsoft Office Excel, è possibile interagire con gli oggetti forniti dal modello a oggetti di Excel. In questo argomento vengono introdotti gli oggetti più importanti:
@@ -103,7 +103,7 @@ ms.locfileid: "72986095"
  Per informazioni complete sul modello a oggetti di Excel, è possibile utilizzare il riferimento di assembly di interoperabilità primario di Excel e il riferimento del modello a oggetti VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Riferimento all'assembly di interoperabilità primario
- Nella documentazione di riferimento dell’assembly di interoperabilità primario di Excel vengono descritti i tipi dell'assembly di interoperabilità primario per Excel. Questa documentazione è disponibile nel percorso seguente: [riferimento all'assembly di interoperabilità primario di Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
+ Nella documentazione di riferimento dell’assembly di interoperabilità primario di Excel vengono descritti i tipi dell'assembly di interoperabilità primario per Excel. Questa documentazione è disponibile nel percorso seguente: [riferimento all'assembly di interoperabilità primario di Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies).
 
  Per ulteriori informazioni sulla progettazione dell'assembly di interoperabilità primario di Excel, ad esempio le differenze tra classi e interfacce nell'assembly di interoperabilità primario e il modo in cui vengono implementati gli eventi nell' [assembly di interoperabilità primario di Office](/previous-versions/office/office-12/ms247299(v=office.12))
 

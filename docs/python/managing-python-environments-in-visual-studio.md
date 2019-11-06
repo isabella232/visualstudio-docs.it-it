@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024717"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661947"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -124,7 +124,7 @@ Per questo motivo, spesso gli sviluppatori creano un *ambiente virtuale* per un 
 
 Visual Studio offre supporto diretto per la creazione di un ambiente virtuale per un progetto. Se ad esempio si apre un progetto che contiene un file *requirements.txt* o si crea un progetto da un modello che include quel file, Visual Studio chiede di creare automaticamente un ambiente virtuale e di installare le dipendenze necessarie.
 
-È possibile creare un nuovo ambiente virtuale in qualsiasi momento all'interno di un progetto aperto. In **Esplora soluzioni** espandere il nodo del progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e scegliere "Aggiungi ambiente virtuale". Per altre informazioni, vedere [Creare un ambiente virtuale](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1).
+È possibile creare un nuovo ambiente virtuale in qualsiasi momento all'interno di un progetto aperto. In **Esplora soluzioni** espandere il nodo del progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e scegliere "Aggiungi ambiente virtuale". Per altre informazioni, vedere [Creare un ambiente virtuale](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1).
 
 Visual Studio include anche un comando che consente di generare un file *requirements.txt* dall'ambiente virtuale, facilitando la riproduzione dell'ambiente in altri computer. Per altre informazioni, vedere [Uso di ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 

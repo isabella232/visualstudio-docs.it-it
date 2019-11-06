@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c5f3c4a0a2acdf73aae96c5cb5629252e712da64
-ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
+ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73618110"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636562"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -386,6 +386,8 @@ A partire da Visual Studio 2019, è necessario uno script di compilazione. Invec
 
 Nella sezione precedente il debugger è stato associato al codice Node.js lato server. Per associare il debugger da Visual Studio e accedere a punti di interruzione nel codice React lato client, è necessario che il debugger identifichi il processo corretto. Di seguito viene descritto un metodo per abilitare questa funzionalità.
 
+### <a name="prepare-the-browser-for-debugging"></a>Preparare il browser per il debug
+
 ::: moniker range=">=vs-2019"
 Per questo scenario, usare Microsoft Edge (cromo), attualmente denominato **Microsoft Edge beta** nell'IDE o Chrome.
 ::: moniker-end
@@ -398,30 +400,38 @@ Per questo scenario, usare Chrome.
    Le altre istanze del browser possono impedire l'apertura del browser con il debug abilitato. (È possibile che le estensioni del browser siano in esecuzione e impediscano la modalità di debug completa, pertanto potrebbe essere necessario aprire Gestione attività per individuare le istanze impreviste di Chrome).
 
    ::: moniker range=">=vs-2019"
-   Per Microsoft Edge (cromo), arrestare anche tutte le istanze di Chrome. Poiché entrambi i browser condividono la codebase di cromo, questo fornisce i migliori risultati.
+   Per Microsoft Edge (cromo), arrestare anche tutte le istanze di Chrome. Poiché entrambi i browser usano la codebase di cromo, questo fornisce i migliori risultati.
    ::: moniker-end
 
-2. Aprire il comando **Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui**) e immettere il comando seguente:
+2. Avviare il browser con il debug abilitato.
+
+    ::: moniker range=">=vs-2019"
+    A partire da Visual Studio 2019, è possibile impostare il flag di `--remote-debugging-port=9222` all'avvio del browser selezionando **Sfoglia con...** > dalla barra degli strumenti **debug** , quindi scegliendo **Aggiungi**e quindi impostando il flag nel campo **argomenti** . Usare un nome descrittivo diverso per il browser, ad esempio **Edge con debug** o **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-v16.2).
+
+    ![Imposta il browser per l'apertura con il debug abilitato](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
+
+    In alternativa, aprire il comando **Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui**) e immettere il comando seguente:
+
+    `msedge --remote-debugging-port=9222`
+
+    O
 
     `chrome.exe --remote-debugging-port=9222`
-    ::: moniker range=">=vs-2019"
-    oppure `msedge --remote-debugging-port=9222`
+    ::: moniker-end
+
+    ::: moniker range="vs-2017"
+    Aprire il comando **Esegui** dal pulsante **Start** di Windows (fare clic con il pulsante destro del mouse e scegliere **Esegui**) e immettere il comando seguente:
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
     Verrà avviato il browser con il debug abilitato.
 
-    ::: moniker range=">=vs-2019"
-
-    > [!TIP]
-    > A partire da Visual Studio 2019, è possibile impostare il flag di `--remote-debugging-port` all'avvio del browser selezionando **Sfoglia con...** > dalla barra degli strumenti **debug** , quindi scegliendo **Aggiungi**e quindi impostando il flag nel campo **argomenti** . Usare un nome descrittivo diverso per il browser, ad esempio **Edge con debug** o **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-v16.2).
-
-    ![Imposta il browser per l'apertura con il debug abilitato](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
-
-    ::: moniker-end
-
     L'app non è ancora in esecuzione, quindi si ottiene una pagina del browser vuota.
 
-3. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice sorgente, ovvero *app-bundle. js* o *app. TSX*.
+### <a name="attach-the-debugger-to-client-side-script"></a>Connessione del debugger a uno script lato client
+
+1. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice sorgente, ovvero *app-bundle. js* o *app. TSX*.
 
     Per *app-bundle. js*, impostare il punto di interruzione nella funzione `render()` come illustrato nella figura seguente:
 
@@ -433,7 +443,7 @@ Per questo scenario, usare Chrome.
 
     ![Imposta punto di interruzione](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-4. Se si imposta il punto di interruzione nel file con *estensione TSX* (anziché *app-bundle. js*), è necessario aggiornare *Webpack-config. js*. Sostituire il codice seguente:
+2. Se si imposta il punto di interruzione nel file con *estensione TSX* (anziché *app-bundle. js*), è necessario aggiornare *Webpack-config. js*. Sostituire il codice seguente:
 
     ```javascript
     output: {
@@ -450,24 +460,31 @@ Per questo scenario, usare Chrome.
     },
     ```
 
-    Si tratta di un'impostazione di solo sviluppo per abilitare il debug in Visual Studio. Questa impostazione consente di eseguire l'override dei riferimenti generati nel file sourcemap, *app-bundle. js. map*, durante la compilazione dell'app. Per impostazione predefinita, i riferimenti a Webpack nel file sourcemap includono il prefisso *Webpack:///* , che impedisce a Visual Studio di trovare il file di origine, *app. TSX*. In particolare, quando si apportano queste modifiche, il riferimento al file di origine, *app. TSX*, viene modificato da *Webpack:///./app.TSX* a *./app.TSX*, che consente il debug.
+    Si tratta di un'impostazione di solo sviluppo per abilitare il debug in Visual Studio. Questa impostazione consente di eseguire l'override dei riferimenti generati nel file di mappa di origine, *app-bundle. js. map*, quando si compila l'app. Per impostazione predefinita, i riferimenti a Webpack nel file di mappa di origine includono il prefisso *Webpack:///* , che impedisce a Visual Studio di trovare il file di origine, *app. TSX*. In particolare, quando si apportano queste modifiche, il riferimento al file di origine, *app. TSX*, viene modificato da *Webpack:///./app.TSX* a *./app.TSX*, che consente il debug.
 
-5. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **Ctrl**+**F5** (**debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
+3. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **Ctrl**+**F5** (**debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
+
+    ::: moniker range=">=vs-2019"
+    Se è stata creata una configurazione del browser con un nome descrittivo, sceglierla come destinazione di debug.
+    ::: moniker-end
 
     L'app viene aperta in una nuova scheda del browser.
 
-6. Scegliere **Debug** > **Associa a processo**.
+4. Scegliere **Debug** > **Associa a processo**.
 
-7. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
+    > [!TIP]
+    > A partire da Visual Studio 2017, quando ci si connette al processo la prima volta eseguendo questi passaggi, è possibile riconnettersi rapidamente allo stesso processo scegliendo **Debug** > **Riconnetti a processo**.
+
+5. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 scegliere il browser di destinazione corretto, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare i risultati della ricerca. Se è stata creata una configurazione del browser con un nome descrittivo, scegliere invece.
+    In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare il Risultati della ricerca.
     ::: moniker-end
     ::: moniker range="vs-2017"
     In Visual Studio 2017 scegliere **codice Webkit** nel campo **Connetti a** , digitare **Chrome** nella casella filtro per filtrare i risultati della ricerca.
     ::: moniker-end
 
-8. Selezionare il processo browser con la porta host corretta (localhost in questo esempio) e selezionare **Connetti**.
+6. Selezionare il processo browser con la porta host corretta (localhost in questo esempio) e selezionare **Connetti**.
 
     La porta (1337) può essere visualizzata anche nel campo **titolo** per facilitare la selezione dell'istanza del browser corretta.
 
@@ -485,9 +502,9 @@ Per questo scenario, usare Chrome.
     > [!TIP]
     > Se il debugger non è associato e viene visualizzato il messaggio "Impossibile connettersi al processo. Operazione non valida nello stato corrente. utilizzare Gestione attività per chiudere tutte le istanze del browser di destinazione prima di avviare il browser in modalità di debug. Le estensioni del browser possono essere in esecuzione e impedire la modalità di debug completa.
 
-9. Dato che il codice con il punto di interruzione è già stato eseguito, aggiornare la pagina del browser per raggiungere il punto di interruzione.
+7. Dato che il codice con il punto di interruzione è già stato eseguito, aggiornare la pagina del browser per raggiungere il punto di interruzione.
 
-    Durante la pausa del debugger, è possibile esaminare lo stato dell'app passando il mouse sulle variabili e usando le finestre del debugger. È possibile far avanzare il debugger eseguendo il codice istruzione per istruzione (**F5**, **F10** e **F11**).
+    Durante la pausa del debugger, è possibile esaminare lo stato dell'app passando il mouse sulle variabili e usando le finestre del debugger. È possibile far avanzare il debugger eseguendo il codice istruzione per istruzione (**F5**, **F10** e **F11**). Per ulteriori informazioni sulle funzionalità di debug di base, vedere [la prima occhiata al debugger](../debugger/debugger-feature-tour.md).
 
     È possibile raggiungere il punto di interruzione in *app-bundle. js* o nel percorso di cui è stato eseguito il mapping in *app. TSX*, a seconda dei passaggi seguiti in precedenza, insieme all'ambiente e allo stato del browser. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
 
@@ -495,14 +512,11 @@ Per questo scenario, usare Chrome.
 
       * Tutte le istanze del browser sono state chiuse, incluse le estensioni Chrome (mediante Gestione attività), in modo che sia possibile eseguire il browser in modalità di debug. Assicurarsi di avviare il browser in modalità di debug.
 
-      * Assicurarsi che il file sourcemap includa un riferimento a *./app.TSX* e non *Webpack:///./app.TSX*, che impedisce al debugger di Visual Studio di individuare *app. TSX*.
+      * Verificare che il file di mapping di origine includa un riferimento a *./app.TSX* e non *Webpack:///./app.TSX*, che impedisce al debugger di Visual Studio di individuare *app. TSX*.
 
        In alternativa, se è necessario suddividere il codice in *app. TSX* e non è possibile eseguire questa operazione, provare a usare l'istruzione `debugger;` in *app. TSX*o impostare i punti di interruzione nel strumenti di sviluppo di Chrome (o negli strumenti F12 per Microsoft Edge).
 
-   * Se è necessario inserire un'interruzione nel codice in *app bundle.js*, ma non è possibile eseguire questa operazione, rimuovere il file del mapping di origine *app-bundle.js.map*.
-
-     > [!TIP]
-     > Dopo aver eseguito per la prima volta l'associazione al processo seguendo questa procedura, è possibile ripetere rapidamente l'associazione allo stesso processo in Visual Studio 2017 scegliendo **Debug** > **Riassocia a processo**.
+   * Se è necessario suddividere il codice in *app-bundle. js* e non è possibile eseguire questa operazione, rimuovere il file di mapping di origine, *app-bundle. js. map*.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

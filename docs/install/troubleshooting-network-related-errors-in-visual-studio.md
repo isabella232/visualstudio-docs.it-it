@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f585a4ee58408e5f48c875602ba5531419dfd2ff
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189468"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661820"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio
 
@@ -137,7 +137,7 @@ Abilitare le connessioni per gli URL seguenti:
 
 Questo messaggio di errore può essere visualizzato quando si usa un programma di avvio automatico di Visual Studio e un file Response. JSON in un'unità di rete. L'origine dell'errore è il controllo dell'account utente (UAC) in Windows.
 
-Ecco perché questo errore può verificarsi: un'unità di rete mappata o una condivisione [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) è collegata al token di accesso di un utente. Quando UAC è abilitato, vengono creati due [token di accesso](/windows/win32/secauthz/access-tokens) utente: uno *con* accesso amministratore e uno *senza* accesso amministratore. Quando viene creata l'unità o la condivisione di rete, il token di accesso corrente dell'utente è collegato a tale unità. Poiché il programma di avvio automatico deve essere eseguito come amministratore, non sarà in grado di accedere all'unità di rete o alla condivisione se l'unità o la condivisione non è collegata a un token di accesso utente con accesso di amministratore.
+Ecco perché questo errore può verificarsi: un'unità di rete mappata o una condivisione [UNC](/dotnet/standard/io/file-path-formats#unc-paths) è collegata al token di accesso di un utente. Quando UAC è abilitato, vengono creati due [token di accesso](/windows/win32/secauthz/access-tokens) utente: uno *con* accesso amministratore e uno *senza* accesso amministratore. Quando viene creata l'unità o la condivisione di rete, il token di accesso corrente dell'utente è collegato a tale unità. Poiché il programma di avvio automatico deve essere eseguito come amministratore, non sarà in grado di accedere all'unità di rete o alla condivisione se l'unità o la condivisione non è collegata a un token di accesso utente con accesso di amministratore.
 
 ### <a name="to-fix-this-error"></a>Per correggere l'errore
 
