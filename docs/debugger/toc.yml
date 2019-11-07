@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: Scelte rapide da tastiera (HTML e JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Script lato client
-              items:
-                - name: Debug di script sul lato client
-                  href: client-side-script-debugging.md
-                - name: Limitazioni del debug di script
-                  href: limitations-on-script-debugging.md
-                - name: Associa (script)
-                  items:
-                    - name: Associare a script
-                      href: how-to-attach-to-script.md
-                    - name: 'Avviso: Debug degli script disabilitato'
-                      href: warning-script-debugging-disabled.md
+            - name: 'Avviso: Debug degli script disabilitato'
+              href: warning-script-debugging-disabled.md
         - name: Servizi WCF
           items:
             - name: Eseguire il debug di servizi WCF
