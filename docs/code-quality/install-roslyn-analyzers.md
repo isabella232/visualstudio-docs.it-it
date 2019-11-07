@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b204d6824f06037341420d27083c120e6e4b2a95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649296"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636528"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installare gli analizzatori di codice .NET Compiler Platform
 
@@ -26,7 +26,7 @@ Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Ro
 
 1. Trovare il pacchetto dell'analizzatore che si vuole installare in www.nuget.org.
 
-   È possibile, ad esempio, [installare gli analizzatori FxCop Microsoft](install-fxcop-analyzers.md#nuget-package) per verificare la presenza di problemi di sicurezza e prestazioni, tra gli altri. In alternativa, installare [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) per cercare problemi di stile nella codebase.
+   È possibile, ad esempio, [installare gli analizzatori FxCop Microsoft](install-fxcop-analyzers.md#nuget-package) per verificare la presenza di problemi di sicurezza e prestazioni, tra gli altri. In alternativa, installare [StyleCop. Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) per individuare i problemi di stile nella codebase.
 
 2. Installare il pacchetto in Visual Studio, usando la [console di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) o l' [interfaccia utente di gestione pacchetti](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 

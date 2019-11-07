@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981946"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661870"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modelli di progetto e di elementi di progetto SharePoint
   Le sezioni seguenti descrivono i modelli di progetto e di elemento di progetto SharePoint disponibili e il modo in cui vengono usati.
@@ -132,7 +132,7 @@ ms.locfileid: "72981946"
  Un *flusso di lavoro* di una macchina a Stati è un set di Stati, transizioni e azioni della logica di business. I passaggi nel flusso di lavoro di una macchina a Stati non vengono eseguiti in sequenza; vengono invece attivati da azioni e Stati. Analogamente a un flusso di lavoro sequenziale, i flussi di lavoro macchina a Stati sono associati a elementi di SharePoint, ad esempio elenchi e documenti. Ancora una volta, è possibile creare flussi di lavoro a livello di sito (globali) o flussi di lavoro a livello di elenco (locale). È inoltre possibile specificare se un flusso di lavoro viene avviato automaticamente o manualmente. Questo elemento del progetto può essere utilizzato solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo alle soluzioni farm. Per ulteriori informazioni, vedere la pagina relativa alla [creazione di soluzioni flusso di lavoro SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md), [flussi di lavoro in SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))e novità [: miglioramenti del flusso di lavoro](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14)).
 
 ### <a name="user-control-farm-solution-only"></a>Controllo utente (solo soluzione farm)
- Un *controllo utente* è un controllo personalizzato e riutilizzabile a cui è possibile aggiungere altri controlli ASP.NET e controlli di SharePoint. Il controllo utente può essere aggiunto alle pagine dell'applicazione e alle web part eseguite in SharePoint. Questo elemento del progetto può essere utilizzato solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo alle soluzioni farm. Per ulteriori informazioni, vedere [creazione di controlli riutilizzabili per Web part o pagine dell'applicazione](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019).
+ Un *controllo utente* è un controllo personalizzato e riutilizzabile a cui è possibile aggiungere altri controlli ASP.NET e controlli di SharePoint. Il controllo utente può essere aggiunto alle pagine dell'applicazione e alle web part eseguite in SharePoint. Questo elemento del progetto può essere utilizzato solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo alle soluzioni farm. Per ulteriori informazioni, vedere [creazione di controlli riutilizzabili per Web part o pagine dell'applicazione](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages).
 
 ### <a name="visual-web-part"></a>Web part visiva
  Un elemento del progetto *Web part visiva* include un file di definizione *Elements. XML* , un elemento **Web part** e un elemento del **controllo utente** . È possibile progettare l'aspetto della web part visiva trascinando o copiando i controlli dalla casella degli strumenti di Visual Studio alla superficie del controllo utente. Per ulteriori informazioni, vedere [procedura: creare una Web part di SharePoint tramite una finestra di progettazione e un](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) [blocco predefinito: Web part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
