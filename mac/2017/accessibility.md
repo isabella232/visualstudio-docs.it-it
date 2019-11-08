@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 19104cb090ff2a115afefe994bd53c93d2baaf5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988363"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714430"
 ---
 # <a name="accessibility"></a>Accessibilità
 
@@ -64,18 +64,18 @@ Per attivare o disattivare VoiceOver premere **Comando-F5**
 
 Per spostarsi tra i comandi di VoiceOver dell'interfaccia utente, usare i comandi seguenti:
 
-- Spostare il cursore di VoiceOver tra i controlli: **CTRL + ALT + Tasto freccia SINISTRA / Tasto freccia DESTRA**
+- Spostare il cursore di VoiceOver tra i controlli: **CTRL+ALT+freccia SINISTRA/freccia DESTRA**
 
    VoiceOver pronuncia il nome dei controlli, alcuni dettagli e le operazioni che possono essere eseguite con il controllo evidenziato.
 
-- Entrare in gruppi e controlli (come il riquadro della soluzione, la casella degli strumenti e altri riquadri): **CTRL + ALT + MAIUSC + Freccia GIÙ**
+- Entrare in gruppi e controlli (come il riquadro della soluzione, la casella degli strumenti e altri riquadri): **CTRL+ALT+MAIUSC+freccia GIÙ**
 
    Una volta all'interno di un controllo, è possibile usare **CTRL+ALT+frecce** per spostarsi all'interno.
 
 Per informazioni generali sull'uso di Voice over in macOS, fare riferimento alle guide seguenti:
 
 - [Guida Utente di VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/)
-- [VoiceOver commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (Comandi di VoiceOver in macOS)
+- [VoiceOver commands in macOS](https://lab.dotjay.com/notes/voiceover-commands/) (Comandi di VoiceOver in macOS)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: visualizzare documenti script | Microsoft Docs'
-ms.date: 01/08/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,16 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731855"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714436"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Procedura: visualizzare documenti script (JavaScript)
 
 I file script sul lato server sono visibili in Esplora soluzioni. I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. I file script sul lato client vengono visualizzati nel nodo **documenti script** .
+
+Per alcuni tipi di applicazione che generano dinamicamente pagine, è più semplice attivare la modalità di interruzione ed eseguire il debug quando si imposta un punto di interruzione da un documento di script caricato nel browser. Analogamente, è possibile aggiungere l'istruzione `debugger` da un documento di script caricato per attivare la modalità di interruzioni. Questo articolo illustra come visualizzare questi documenti.
 
 > [!NOTE]
 > Prima di [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], i file di script sul lato client generati da uno script sul lato server venivano visualizzati nella finestra Esplora script.

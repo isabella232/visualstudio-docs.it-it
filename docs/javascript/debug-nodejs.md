@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636547"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714495"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
@@ -86,7 +86,7 @@ Per questo scenario, usare Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    O
+    o
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -157,7 +157,7 @@ Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione
 
     Durante la pausa del debugger, è possibile esaminare lo stato dell'app passando il mouse sulle variabili e usando le finestre del debugger. È possibile far avanzare il debugger eseguendo il codice istruzione per istruzione (**F5**, **F10** e **F11**). Per ulteriori informazioni sulle funzionalità di debug di base, vedere [la prima occhiata al debugger](../debugger/debugger-feature-tour.md).
 
-    È possibile raggiungere il punto di interruzione sia nel file con *estensione js* transpiled che nel file di origine, a seconda dei passaggi seguiti in precedenza, insieme all'ambiente e allo stato del browser. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
+    È possibile raggiungere il punto di interruzione in un file di origine o in un file con estensione *JS* transpiled, a seconda del tipo di app, in cui sono stati eseguiti i passaggi precedenti e altri fattori, ad esempio lo stato del browser. In entrambi i casi è possibile eseguire il codice istruzione per istruzione ed esaminare le variabili.
 
    * Se è necessario suddividere il codice in un file di origine TypeScript, JSX o *VME* e non è possibile eseguire questa operazione, assicurarsi che l'ambiente sia configurato correttamente, come descritto nella sezione [risoluzione dei problemi](#troubleshooting_source_maps) .
 
@@ -171,7 +171,7 @@ Se è necessario inserire un'interruzione nel codice in un file di origine TypeS
       
 * Assicurarsi [di avviare il browser in modalità di debug](#prepare_the_browser_for_debugging).
 
-* Verificare che il file di mapping di origine includa il riferimento corretto al file di origine e che non includa prefissi non supportati, ad esempio *Webpack:///* , che impedisce al debugger di Visual Studio di individuare un file di origine. Ad esempio, un riferimento come *Webpack:///.app.TSX* potrebbe essere corretto in *./app.TSX*. Questa operazione può essere eseguita manualmente nel file di mappa di origine o tramite una configurazione di compilazione personalizzata. Per altre informazioni, vedere [generare mappe di origine per il debug](#generate_source_maps).
+* Verificare che il file di mapping di origine includa il percorso relativo corretto per il file di origine e che non includa prefissi non supportati, ad esempio *Webpack:///* , che impedisce al debugger di Visual Studio di individuare un file di origine. Ad esempio, un riferimento come *Webpack:///.app.TSX* potrebbe essere corretto in *./app.TSX*. Questa operazione può essere eseguita manualmente nel file di mappa di origine (utile per il test) o tramite una configurazione di compilazione personalizzata. Per altre informazioni, vedere [generare mappe di origine per il debug](#generate_source_maps).
 
 In alternativa, se è necessario suddividere il codice in un file di origine (ad esempio, *app. TSX*) e non è possibile eseguire questa operazione, provare a usare l'istruzione `debugger;` nel file di origine o impostare i punti di interruzione nel strumenti di sviluppo di Chrome (o negli strumenti F12 per Microsoft Edge).
 

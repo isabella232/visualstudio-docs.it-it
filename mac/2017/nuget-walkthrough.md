@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 154f779ee8b622c9ee66a753a23e9627f9d443c0
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692796"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715174"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
 
@@ -39,7 +39,7 @@ Verrà visualizzata la finestra **Aggiungi pacchetti**. Verificare che l'elenco 
 
 ![Elenco a discesa Origine](media/nuget-walkthrough-Source.png)
 
-Quando la finestra viene visualizzata, carica un elenco di pacchetti dall'origine dei pacchetti predefinita: nuget.org. I risultati iniziali sono simili ai seguenti:
+Quando viene visualizzata la finestra, viene caricato un elenco di pacchetti dall'origine del pacchetto predefinita: nuget.org. I risultati iniziali hanno un aspetto simile al seguente:
 
 ![Elenco di pacchetti NuGet](media/nuget-walkthrough-AddPackages1.png)
 
@@ -51,7 +51,7 @@ Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzi
 
 * Il nodo **Riferimenti** conterrà un elenco di tutti gli assembly che fanno parte di un pacchetto NuGet.
 * Il nodo **Pacchetti** mostra ogni pacchetto NuGet scaricato. È possibile aggiornare o rimuovere un pacchetto dall'elenco.
-* Al progetto verrà aggiunto un file **packages.config**. Questo file XML viene usato dall'IDE per tenere traccia delle versioni del pacchetto a cui si fa riferimento nel progetto. Questo file non deve essere modificato manualmente, ma è consigliabile includerlo nel controllo della versione. Si noti che è possibile usare un file project.json al posto di un file packages.config. Il file project.json è un nuovo formato di file di pacchetto introdotto con NuGet 3, che supporta il ripristino transitivo. Per altre informazioni dettagliate su project.json, vedere la [documentazione di NuGet](https://docs.microsoft.com/NuGet/Schema/Project-Json). Per poter usare il file project.json in Visual Studio per Mac è necessario aggiungerlo manualmente e quindi chiudere e riaprire il progetto.
+* Al progetto verrà aggiunto un file **packages.config**. Questo file XML viene usato dall'IDE per tenere traccia delle versioni del pacchetto a cui si fa riferimento nel progetto. Questo file non deve essere modificato manualmente, ma è consigliabile includerlo nel controllo della versione. Si noti che è possibile usare un file project.json al posto di un file packages.config. Il file project.json è un nuovo formato di file di pacchetto introdotto con NuGet 3, che supporta il ripristino transitivo. Per altre informazioni dettagliate su project.json, vedere la [documentazione di NuGet](/NuGet/Schema/Project-Json). Per poter usare il file project.json in Visual Studio per Mac è necessario aggiungerlo manualmente e quindi chiudere e riaprire il progetto.
 
 ## <a name="using-nuget-packages"></a>Uso di pacchetti NuGet
 
@@ -93,7 +93,7 @@ Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e
 
 ## <a name="adding-package-sources"></a>Aggiunta di origini dei pacchetti
 
-I pacchetti disponibili per l'installazione vengono recuperati inizialmente da nuget.org. È tuttavia possibile aggiungere in Visual Studio per Mac altri percorsi dei pacchetti. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
+I pacchetti disponibili per l'installazione vengono inizialmente recuperati da nuget.org. Tuttavia, è possibile aggiungere altri percorsi di pacchetti a Visual Studio per Mac. Ciò può essere utile per testare i pacchetti NuGet in fase di sviluppo oppure per usare un server NuGet privato all'interno dell'azienda o dell'organizzazione.
 
 In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origini** per visualizzare e modificare l'elenco di origini dei pacchetti. Si noti che le origini possono essere un server remoto (specificato da un URL) o una directory locale.
 

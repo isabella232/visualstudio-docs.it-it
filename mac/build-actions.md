@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714395"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
@@ -33,10 +33,10 @@ Di seguito sono riportate alcune delle azioni di compilazione comuni per i proge
 
 |Azione di compilazione | Tipi di progetto | Descrizione |
 |--|--|--|
-| **Compile** | qualsiasi | Il file viene passato al C# compilatore come file di origine.|
+| **Compile** | any | Il file viene passato al C# compilatore come file di origine.|
 | **Contenuto** | .NET, Novell | Per i progetti ASP.NET, questi file vengono inclusi come parte del sito quando questo viene distribuito. Per i progetti Xamarin.iOS e Xamarin.Mac, sono inclusi nel bundle dell'app.|
-| **Embedded Resource** | .NET | Il file viene passato al C# compilatore come risorsa da incorporare nell'assembly. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), sarà quindi possibile usare lo spazio dei nomi `System.Reflection` per leggere il file dall'assembly.|
-| **None** | qualsiasi | Il file non fa parte della compilazione in alcun modo ed è incluso nel progetto per facilitarne l'accesso dall'IDE. Questo valore può essere usato per i file di documentazione come i file leggimi, ad esempio.|
+| **Embedded Resource** | .NET | Il file viene passato al C# compilatore come risorsa da incorporare nell'assembly. [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream), sarà quindi possibile usare lo spazio dei nomi `System.Reflection` per leggere il file dall'assembly.|
+| **None** | any | Il file non fa parte della compilazione in alcun modo ed è incluso nel progetto per facilitarne l'accesso dall'IDE. Questo valore può essere usato per i file di documentazione come i file leggimi, ad esempio.|
 
 > [!NOTE]
 > È possibile definire azioni di compilazione aggiuntive per tipi di progetto specifici, pertanto l'elenco di azioni di compilazione dipende dal tipo di progetto e potrebbero venire visualizzati valori che non sono presenti in questo elenco.  

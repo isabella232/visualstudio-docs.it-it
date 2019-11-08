@@ -1,17 +1,17 @@
 ---
 title: Estensione di Visual Studio per Mac
 description: Le funzioni e funzionalità di Visual Studio per Mac possono essere estese con moduli chiamati pacchetti di estensione. La prima parte di questa guida permette di creare un semplice pacchetto di estensione per Visual Studio per Mac per inserire la data e l'ora in un documento. La seconda parte della guida presenta le nozioni di base relative al sistema dei pacchetti di estensione e alcune delle principali API che costituiscono la base di Visual Studio per Mac.
-author: alanjclark
-ms.author: alcl
+author: conceptdev
+ms.author: crdun
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691652"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716847"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -28,7 +28,7 @@ Perché un pacchetto di estensione possa essere compilato da Visual Studio per M
 Il vantaggio di questa progettazione modulare è il fatto che Visual Studio per Mac è estendibile, ovvero sono disponibili molti punti di estensione su cui è possibile basare i pacchetti di estensione personalizzati. Alcuni esempi degli attuali pacchetti di estensione includono il supporto per C# ed F#, strumenti debugger e modelli di progetto.
 
 > [!NOTE]
-> in presenza di un progetto Addin Maker creato prima di Addin Maker 1.2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
+> Se si dispone di un progetto di creatore di componenti aggiuntivi creato prima del componente aggiuntivo Maker 1,2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -135,7 +135,7 @@ Il comando e CommandItem sono ora collegati: CommandItem chiama il comando quand
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Per informazioni sull'ambito delle aree disponibili per lo sviluppo, vedere le [informazioni di riferimento sull'albero delle estensioni](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) e la [panoramica delle API](http://monodevelop.com/Developers/Articles/API_Overview). Quando si compilano pacchetti di estensione avanzati, fare riferimento agli [articoli per sviluppatori](http://monodevelop.com/Developers/Articles). Ecco un elenco parziale delle aree per la personalizzazione:
+Per informazioni sull'ambito delle aree disponibili per lo sviluppo, vedere le [informazioni di riferimento sull'albero delle estensioni](https://www.monodevelop.com/developers/articles/extension-tree-reference/) e la [panoramica delle API](https://www.monodevelop.com/developers/articles/api-overview/). Quando si compilano pacchetti di estensione avanzati, fare riferimento agli [articoli per sviluppatori](https://www.monodevelop.com/developers/articles/). Ecco un elenco parziale delle aree per la personalizzazione:
 
 * Riquadri
 * Schemi di tasti di scelta rapida
@@ -174,13 +174,13 @@ La condivisione dell'editor di testo tra Visual Studio e Visual Studio per Mac o
 
 Prima di affrontare i dettagli dell'estensione per Visual Studio per Mac, è utile fornire alcune informazioni sull'editor condiviso. Di seguito sono elencate alcune risorse che possono facilitare questo approfondimento:
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [MEF nell'editor](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
-* [Componenti e funzionalità dell'editor](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [Punti di estensione dei servizi di linguaggio e dell'editor](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [MEF nell'editor](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Componenti e funzionalità dell'editor](/visualstudio/extensibility/inside-the-editor)
+* [Punti di estensione dei servizi di linguaggio e dell'editor](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Video introduttivo dell'architettura dell'editor](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Durante la consultazione di queste risorse, sarà necessario avere familiarità con i concetti principali relativi a [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) e [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+Durante la consultazione di queste risorse, sarà necessario avere familiarità con i concetti principali relativi a [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) e [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview):
 
 * Un `ITextBuffer` è una rappresentazione in memoria di testo che può essere modificato nel corso del tempo. La proprietà `CurrentSnapshot` di `ITextBuffer` restituisce una rappresentazione *immutabile* del contenuto corrente del buffer, un'istanza di `ITextSnapshot`. Quando viene apportata una modifica nel buffer, la proprietà CurrentSnapshot viene aggiornata alla versione più recente. Gli analizzatori potranno esaminare lo snapshot di testo in qualsiasi thread, ma il contenuto non potrà essere in alcun modo modificato.
 
