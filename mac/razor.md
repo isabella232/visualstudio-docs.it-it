@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: d9a9df56074cde8735b54c12bbbf15a79e727497
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: fe9ef921ccfc42b77bd08925805aeac6f4aec777
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962919"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715883"
 ---
 # <a name="create-razor-web-apps"></a>Creare app Web Razor
 
-Questa guida offre un'introduzione alla creazione della prima app Web Razor. Per istruzioni più dettagliate, vedere [Introduzione a Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
+Questa guida offre un'introduzione alla creazione della prima app Web Razor. Per istruzioni più dettagliate, vedere [Introduzione a Razor Pages in ASP.NET Core](/aspnet/core/razor-pages/index).
 
 Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evidenziazione della sintassi nei file con estensione *cshtml*. Una novità di Visual Studio 2019 per Mac 8.3 + è la possibilità di disporre di IntelliSense in grado di riconoscere il contesto all'interno di un file Razor, in modo da ricevere IntelliSense che corrisponde alla lingua attualmente in corso di modifica all'interno di un documento.
 
@@ -26,7 +26,7 @@ Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evide
 1. Nella schermata iniziale selezionare **nuovo** per creare un nuovo progetto:
 
    ![Nuovo progetto di Visual Studio per Mac](media/razor-new.png)
-1. Nella finestra di dialogo **nuovo progetto** passare a **.NET Core** > **app** > **applicazione Web** e selezionare **Avanti**:
+1. Nella finestra di dialogo **nuovo progetto** passare all'applicazione **.NET Core** > **app** **Web** > e selezionare **Avanti**:
 
    ![Modello di progetto Razor](media/razor-new-project1.png)
 1. Selezionare il Framework di destinazione di .NET Core (si consiglia la versione 2,2 o successiva) e quindi fare clic su **Avanti**. Scegliere un nome per il progetto e aggiungere il supporto Git, se necessario. Selezionare **Crea** per creare il progetto.
@@ -36,7 +36,7 @@ Visual Studio per Mac supporta la modifica Razor, tra cui IntelliSense e l'evide
    Visual Studio per Mac apre il progetto nella finestra di layout del codice.
 1. Eseguire il progetto senza eseguire il debug usando **comando + opzione + F5**.
 
-   Visual Studio avvia [gheppio](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), apre un browser per `https://localhost:5001` e visualizza la prima app Web Razor.
+   Visual Studio avvia [gheppio](/aspnet/core/fundamentals/servers/kestrel), apre un browser per `https://localhost:5001`e visualizza la prima app Web Razor.
 
    ![App Web Razor in Safari](media/razor-webapp.png)
 
@@ -47,10 +47,10 @@ Le app Web Razor includono i componenti seguenti.
 ### <a name="pages-folder"></a>Cartella Pages
 
 Questa cartella contiene le pagine Web di un progetto, insieme al code-behind per ogni:
-   - Un file *@no__t 1. cshtml* per il markup HTML e il sintassi Razor.
-   - Un file *@no__t 1.cshtml.cs* per il code C# -behind per la gestione degli eventi di pagina.
+   - Un file *\*. cshtml* per il markup HTML e il sintassi Razor.
+   - Un file *\*. cshtml.cs* per il C# code-behind per la gestione degli eventi di pagina.
 
-I nomi dei file di supporto iniziano con un carattere di sottolineatura. Ad esempio, il file _Layout.cshtml configura gli elementi dell'interfaccia utente comuni a tutte le pagine. Questo file consente di impostare il menu di navigazione nella parte superiore della pagina e le informazioni sul copyright nella parte inferiore della pagina. Per altre informazioni, vedere [Layout in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/layout).
+I nomi dei file di supporto iniziano con un carattere di sottolineatura. Ad esempio, il file _Layout.cshtml configura gli elementi dell'interfaccia utente comuni a tutte le pagine. Questo file consente di impostare il menu di navigazione nella parte superiore della pagina e le informazioni sul copyright nella parte inferiore della pagina. Per altre informazioni, vedere [Layout in ASP.NET Core](/aspnet/core/mvc/views/layout).
 
 ### <a name="launch-settings"></a>Impostazioni di avvio
 
@@ -60,20 +60,20 @@ Il file *launchSettings. JSON* contiene le impostazioni di IIS, l'URL dell'appli
 
 Il file *appSettings. JSON* contiene i dati di configurazione, ad esempio le stringhe di connessione.
 
-Per ulteriori informazioni sulla configurazione, vedere la pagina relativa alla [configurazione nella Guida di ASP.NET](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/index).
+Per ulteriori informazioni sulla configurazione, vedere la pagina relativa alla [configurazione nella Guida di ASP.NET](/aspnet/core/fundamentals/configuration/index).
 
 ### <a name="wwwroot-folder"></a>Cartella wwwroot
 
-Questa cartella contiene file statici, ad esempio file HTML, JavaScript e CSS. Per altre informazioni, vedere [File statici in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files).
+Questa cartella contiene file statici, ad esempio file HTML, JavaScript e CSS. Per altre informazioni, vedere [File statici in ASP.NET Core](/aspnet/core/fundamentals/static-files).
 
 ### <a name="programcs"></a>Program.cs
 
-Questo file contiene il punto di ingresso per il programma. Per altre informazioni, vedere [Host Web ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/web-host).
+Questo file contiene il punto di ingresso per il programma. Per altre informazioni, vedere [Host Web ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="startupcs"></a>Startup.cs
 
-Questo file contiene il codice che configura il comportamento dell'app, ad esempio se l'app richiede il consenso per i cookie. Per altre informazioni, vedere [Avvio delle app in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup).
+Questo file contiene il codice che configura il comportamento dell'app, ad esempio se l'app richiede il consenso per i cookie. Per altre informazioni, vedere [Avvio delle app in ASP.NET Core](/aspnet/core/fundamentals/startup).
 
 ## <a name="see-also"></a>Vedere anche
 
-Per una guida più completa alla creazione di app Web Razor, vedere [Introduzione a Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
+Per una guida più completa alla creazione di app Web Razor, vedere [Introduzione a Razor Pages in ASP.NET Core](/aspnet/core/razor-pages/index).

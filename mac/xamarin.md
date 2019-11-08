@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211478"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714473"
 ---
 # <a name="xamarin-mobile-app-development"></a>Sviluppo di app per dispositivi mobili Xamarin
 
@@ -22,7 +22,7 @@ Il ricaricamento a caldo di XAML per Novell. Forms è integrato in Visual Studio
 
 È possibile abilitare il ricaricamento a caldo di XAML selezionando la casella di controllo **Abilita ricaricamento a caldo di Novell** in **Visual Studio > preferenze > Progetti > ricaricamento a caldo di Novell**.
 
-Per ulteriori informazioni sul ricaricamento a caldo, vedere la guida relativa al [ricaricamento a caldo di XAML per Novell. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) nella documentazione di.
+Per ulteriori informazioni sul ricaricamento a caldo, vedere la guida relativa al [ricaricamento a caldo di XAML per Novell. Forms](/xamarin/xamarin-forms/xaml/hot-reload) nella documentazione di.
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ La finestra di progettazione di iOS è pienamente integrata in Visual Studio per
 
 ![Finestar di progettazione storyboard iOS](media/intro-image30.png)
 
-Per altre informazioni sull'uso di iOS Designer, vedere le guide dello strumento [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Per altre informazioni sull'uso di iOS Designer, vedere le guide dello strumento [Designer](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 

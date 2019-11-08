@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872561"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73717265"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Creazione di applicazioni ASP.NET Core in Visual Studio per Mac
 
@@ -25,7 +25,7 @@ In questo lab si creerà ed esplorerà un'applicazione ASP.NET Core con Visual S
 > * Esplorare il modello di hosting, configurazione e middleware di ASP.NET Core
 > * Eseguire il debug di un'app Web ASP.NET Core
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio per Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
@@ -33,7 +33,7 @@ In questo lab si creerà ed esplorerà un'applicazione ASP.NET Core con Visual S
 
 Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche se non è necessaria una vasta esperienza.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Attività 1: Creazione di una nuova applicazione ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Attività 1: creazione di una nuova applicazione ASP.NET Core
 
 1. Avviare **Visual Studio per Mac**.
 
@@ -47,7 +47,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Attività 2: Esplorazione della soluzione
+## <a name="task-2-touring-the-solution"></a>Attività 2: tour della soluzione
 
 1. Il modello predefinito genera una soluzione con un unico progetto ASP.NET Core denominato **CoreLab**. Espandere il nodo del progetto per esporne il contenuto.
 
@@ -65,7 +65,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image6.png)
 
-5. Questo file CSHTML usa la sintassi Razor per eseguire il rendering HTML in base a una combinazione di tag standard e C# inline. Per altre informazioni su questo modello, vedere la [documentazione online](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+5. Questo file CSHTML usa la sintassi Razor per eseguire il rendering HTML in base a una combinazione di tag standard e C# inline. Per altre informazioni su questo modello, vedere la [documentazione online](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
     ![](media/netcore-image7.png)
 
@@ -73,11 +73,11 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image8.png)
 
-7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. È tuttavia possibile ignorare alcune di queste impostazioni, oppure ignorarle tutte, a seconda dell'ambiente, ad esempio tramite un file **appsettings.Development.json** per l'ambiente **Development**.
+7. Sono presenti anche diversi file di configurazione che consentono di gestire il progetto, i pacchetti di questo e l'applicazione in fase di runtime. La [configurazione](/aspnet/core/fundamentals/configuration) predefinita dell'applicazione, ad esempio, è archiviata in **appsettings.json**. È tuttavia possibile ignorare alcune di queste impostazioni, oppure ignorarle tutte, a seconda dell'ambiente, ad esempio tramite un file **appsettings.Development.json** per l'ambiente **Development**.
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: Comprensione della modalità di hosting dell'applicazione
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Attività 3: informazioni sul modo in cui è ospitata l'applicazione
 
 1. In **Esplora soluzioni** aprire **Program.cs**. Questo è il programma di bootstrap che eseguirà l'applicazione.
 
@@ -87,7 +87,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image11.png)
 
-3. **WebHostBuilder** ha il compito di creare l'host che eseguirà il bootstrap del server per l'app e al tempo stesso richiede di specificare un server per l'implementazione di **IServer**. Per impostazione predefinita viene usato **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** , un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
+3. **WebHostBuilder** ha il compito di creare l'host che eseguirà il bootstrap del server per l'app e al tempo stesso richiede di specificare un server per l'implementazione di **IServer**. Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
 
     ![](media/netcore-image12.png)
 
@@ -111,7 +111,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>Attività 4: Esecuzione e debug dell'applicazione
+## <a name="task-4-running-and-debugging-the-application"></a>Attività 4: esecuzione e debug dell'applicazione
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto **CoreLab** e scegliere **Opzioni**.
 
@@ -171,7 +171,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 18. Chiudere la console dell'applicazione e la finestra del browser di test. In questo modo verrà arrestato anche il processo di debug.
 
-## <a name="task-5-application-startup-configuration"></a>Attività 5: Configurazione dell'avvio dell'applicazione
+## <a name="task-5-application-startup-configuration"></a>Attività 5: configurazione dell'avvio dell'applicazione
 
 1. In **Esplora soluzioni** aprire **Startup.cs**. È possibile notare inizialmente alcune righe rosse a zigzag mentre i pacchetti NuGet vengono ripristinati in background e il compilatore Roslyn genera un quadro completo delle dipendenze del progetto.
 
@@ -189,7 +189,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image32.png)
 
-5. Dopo questa operazione, prova a caricare un file **appsettings.json** specifico dell'ambiente, che eseguirà l'override delle impostazioni esistenti. Questo è ad esempio un file **appsettings.Development.json** predefinito che viene usato per l'ambiente specifico. Per altre informazioni sulla configurazione in ASP.NET Core, consultare la [documentazione](https://docs.microsoft.com/aspnet/core/fundamentals/configuration).
+5. Dopo questa operazione, prova a caricare un file **appsettings.json** specifico dell'ambiente, che eseguirà l'override delle impostazioni esistenti. Questo è ad esempio un file **appsettings.Development.json** predefinito che viene usato per l'ambiente specifico. Per altre informazioni sulla configurazione in ASP.NET Core, consultare la [documentazione](/aspnet/core/fundamentals/configuration).
 
     ![](media/netcore-image34.png)
 
@@ -197,7 +197,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>Attività 6: Inserimento del middleware dell'applicazione
+## <a name="task-6-inserting-application-middleware"></a>Attività 6: inserimento del middleware dell'applicazione
 
 1. Individuare il metodo **Configure** nella classe **Startup**. In questa classe viene configurato tutto il middleware in modo che possa essere inserito nella pipeline HTTP e usato per elaborare ogni richiesta inviata al server. Anche se questo metodo viene chiamato una sola volta, il contenuto dei metodi, ad esempio **UseStaticFiles**, può essere eseguito per ogni richiesta.
 
@@ -243,4 +243,4 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 ## <a name="summary"></a>Riepilogo
 
-In questo lab si è appreso come iniziare a sviluppare app ASP.NET Core con Visual Studio per Mac. Se si vogliono approfondire le conoscenze sullo sviluppo di un'applicazione di database di film più completa, vedere l'esercitazione [Introduzione ad ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc).
+In questo lab si è appreso come iniziare a sviluppare app ASP.NET Core con Visual Studio per Mac. Se si vogliono approfondire le conoscenze sullo sviluppo di un'applicazione di database di film più completa, vedere l'esercitazione [Introduzione ad ASP.NET Core MVC](/aspnet/core/tutorials/first-mvc-app/start-mvc).

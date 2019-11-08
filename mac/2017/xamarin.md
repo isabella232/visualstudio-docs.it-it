@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c9b150c55e54b851e96e3bfb22e5e9a77646f7d7
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 7d9cfbcafc90340d15172dd0d862ef9904fd6715
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872250"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716117"
 ---
 # <a name="xamarin-mobile-app-development"></a>Sviluppo di app per dispositivi mobili Xamarin
 
@@ -32,7 +32,7 @@ La finestra di progettazione di iOS è pienamente integrata in Visual Studio per
 
 ![Finestar di progettazione storyboard iOS](media/intro-image30.png)
 
-Per altre informazioni sull'uso di iOS Designer, vedere le guide dello strumento [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Per altre informazioni sull'uso di iOS Designer, vedere le guide dello strumento [Designer](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 

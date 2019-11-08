@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 08/20/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 98451c728b15344b116f275ca6a40fd902f33f0f
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: ad23044792d2c21c075e70107b74984d54de2bd3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186807"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714524"
 ---
 # <a name="net-core-support"></a>Supporto di .NET Core
 
@@ -33,5 +33,5 @@ La tabella seguente descrive le versioni di .NET Core supportate dalle versioni 
 * .NET Core v 3.0 viene installato per impostazione predefinita per 8,3.
 * .NET Core v2.1.701 (v2.1.700 per 8.1) viene installato per impostazione predefinita con il programma di installazione.
 * Per scaricare qualsiasi altra versione di .NET Core, visitare la [pagina di dotnet](https://dotnet.microsoft.com/download/dotnet-core).
-* Quando si usa .NET Core 3,0 C# , per impostazione predefinita verrà usata la versione 8. C#7,3 è il valore predefinito quando si usa .NET Core 2. x. Per altre informazioni, vedere [ C# controllo delle versioni della lingua](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version) .
-* Per informazioni sull'installazione di una versione di anteprima di Visual Studio per Mac, vedere la guida [Installare un'anteprima o un aggiornamento per Visual Studio per Mac](https://docs.microsoft.com/visualstudio/mac/install-preview).
+* Quando si usa .NET Core 3,0 C# , per impostazione predefinita verrà usata la versione 8. C#7,3 è il valore predefinito quando si usa .NET Core 2. x. Per altre informazioni, vedere [ C# controllo delle versioni della lingua](/dotnet/csharp/language-reference/configure-language-version) .
+* Per informazioni sull'installazione di una versione di anteprima di Visual Studio per Mac, vedere la guida [Installare un'anteprima o un aggiornamento per Visual Studio per Mac](/visualstudio/mac/install-preview).
