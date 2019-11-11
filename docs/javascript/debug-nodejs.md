@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
+ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714495"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73913004"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
@@ -105,13 +105,13 @@ Per questo scenario, usare Chrome.
 
 Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione nel codice sul lato client, il debugger necessita di aiuto per identificare il processo corretto. Di seguito viene descritto un metodo per abilitare questa funzionalità.
 
-1. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice sorgente, che potrebbe essere un file JavaScript, un file TypeScript, un file con *estensione VME* o un file JSX. Impostare il punto di interruzione in una riga di codice che consente i punti di interruzione, ad esempio un'istruzione return o una dichiarazione var.
+1. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice sorgente, che potrebbe essere un file JavaScript, un file TypeScript o un file JSX. Impostare il punto di interruzione in una riga di codice che consente i punti di interruzione, ad esempio un'istruzione return o una dichiarazione var.
 
     ![Imposta punto di interruzione](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Per trovare il codice specifico in un file transpiled, usare **Ctrl**+**F** (**modifica** > **trova e Sostituisci** > **ricerca veloce**).
 
-    Per il codice lato client, per raggiungere un punto di interruzione in un file TypeScript, il file con *estensione VME*o JSX richiede in genere l'uso delle [mappe di origine](#generate_source_maps). Una mappa di origine deve essere configurata correttamente per supportare il debug in Visual Studio.
+    Per il codice lato client, per raggiungere un punto di interruzione in un file TypeScript o JSX in genere è necessario usare le [mappe di origine](#generate_source_maps). Una mappa di origine deve essere configurata correttamente per supportare il debug in Visual Studio.
 
 2. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **Ctrl**+**F5** (**debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
 
@@ -165,7 +165,7 @@ Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione
 
 ### <a name="troubleshooting_source_maps"></a>Risoluzione dei problemi relativi a punti di interruzione e mappe di origine
 
-Se è necessario inserire un'interruzione nel codice in un file di origine TypeScript, JSX o *. vue* e non è possibile eseguire questa operazione, usare **Connetti a processo** come descritto nei passaggi precedenti per allineare il debugger. Assicurarsi che l'ambiente sia configurato correttamente:
+Se è necessario suddividere il codice in un file di origine TypeScript o JSX e non è possibile eseguire questa operazione, usare **Connetti a processo** come descritto nei passaggi precedenti per la connessione del debugger. Assicurarsi che l'ambiente sia configurato correttamente:
 
 * Tutte le istanze del browser sono state chiuse, incluse le estensioni Chrome (mediante Gestione attività), in modo che sia possibile eseguire il browser in modalità di debug.
       
