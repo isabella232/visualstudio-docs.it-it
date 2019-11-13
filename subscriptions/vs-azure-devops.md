@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314164"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983683"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
@@ -25,7 +25,9 @@ Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottos
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato  | Repository Azure Boards & (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Yes          |
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail,                                        | Azure Boards e Repos (Basic)                                                            |  Yes          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL| Repository Azure Boards & (Basic), Azure Test Plans, Azure Pipelines (self-hosted)       |  Yes          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Azure Boards e Repos (Basic)                                                            |  Yes          |
+| Visual Studio Professional con GitHub Enterprise | VL| Azure Boards e Repos (Basic)                                                            |  Yes          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Yes          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Azure Boards e Repos (Basic), Azure Test Plans                                              |  Yes          |
 ||
@@ -49,3 +51,5 @@ Altre informazioni sulle funzionalità di Azure DevOps:
 - [Azure Boards e Repos (Basic)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+
+Informazioni su come attivare il [credito individuale di Azure DevTest](vs-azure.md).

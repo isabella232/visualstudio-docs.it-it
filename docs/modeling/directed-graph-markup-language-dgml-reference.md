@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b5405afbcea1f80d19e3985da3d0781cd459e43
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985105"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983681"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Riferimento di Directed Graph Markup Language (DGML)
 
@@ -21,7 +21,7 @@ Directed Graph Markup Language (DGML) descrive le informazioni usate per la visu
 Si noti che alcune versioni di Visual Studio supportano solo un subset di funzionalità DGML, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Quando si modifica un file con estensione dgml, IntelliSense consente di identificare gli attributi disponibili per ogni elemento e i relativi valori. Per specificare il colore in un attributo, utilizzare nomi dei colori comuni, come "Blue", o valori ARGB esadecimali, come "#ffa0b1c3." In DGML viene utilizzato un piccolo subset di formati di definizione dei colori WPF (Windows Presentation Foundation). Per altre informazioni, vedere [classe Colors](/dotnet/api/system.windows.media.colors&view=netframework-4.8).
+> Quando si modifica un file con estensione dgml, IntelliSense consente di identificare gli attributi disponibili per ogni elemento e i relativi valori. Per specificare il colore in un attributo, utilizzare nomi dei colori comuni, come "Blue", o valori ARGB esadecimali, come "#ffa0b1c3." In DGML viene utilizzato un piccolo subset di formati di definizione dei colori WPF (Windows Presentation Foundation). Per altre informazioni, vedere [classe Colors](/dotnet/api/system.windows.media.colors?view=netframework-4.8).
 
 ## <a name="DGML"></a>Sintassi DGML
 

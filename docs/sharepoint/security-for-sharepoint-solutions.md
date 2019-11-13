@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984177"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983786"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicurezza per le soluzioni SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora le funzionalità seguenti per migliorare la sicurezza delle applicazioni SharePoint.
 
 ## <a name="safe-control-entries"></a>Voci di controllo sicure
- Ogni elemento del progetto SharePoint creato in [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispone di una proprietà di **voci di controllo sicura** che rappresenta una raccolta di controlli sicuri. La relativa sottoproprietà **Safe** consente di specificare i controlli considerati protetti. Per altre informazioni, vedere [fornire informazioni sul pacchetto e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [specificando Web part sicuri](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
+ Ogni elemento del progetto SharePoint creato in [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispone di una proprietà di **voci di controllo sicura** che rappresenta una raccolta di controlli sicuri. La relativa sottoproprietà **Safe** consente di specificare i controlli considerati protetti. Per altre informazioni, vedere [fornire informazioni sul pacchetto e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [specificando Web part sicuri](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Attributo AllowPartiallyTrustedCallers
  Per impostazione predefinita, solo le applicazioni completamente attendibili dal sistema di sicurezza dall'accesso di codice di runtime possono accedere a un assembly di codice gestito condiviso. Il contrassegno di un assembly completamente attendibile con l'attributo AllowPartiallyTrustedCallers consente di accedere a assembly parzialmente attendibili.

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e75d003031d591c8ae777c606e6f7a2b6ea8c0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911997"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983697"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizzare StringBuilder per le concatenazioni
 
@@ -41,4 +41,4 @@ ms.locfileid: "72911997"
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
  Fare doppio clic sul messaggio nella finestra **Elenco errori** per passare alla [visualizzazione Dettagli funzione](../profiling/function-details-view.md) dei dati di profilo di campionamento. Trovare le sezioni del programma che fanno maggior uso della concatenazione di stringhe. Usare la classe StringBuilder per le modifiche di stringa complesse, comprese le operazioni frequenti di concatenazione di stringhe.
 
- Per altre informazioni sull'uso delle stringhe, vedere la sezione [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic26) (Operazioni sulle stringhe) in [Chapter 5 - Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) (Capitolo 5 - Miglioramento delle prestazioni del codice gestito) nella libreria Microsoft Patterns and Practices.
+ Per altre informazioni sull'uso delle stringhe, vedere la sezione [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) (Operazioni sulle stringhe) in [Chapter 5 - Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) (Capitolo 5 - Miglioramento delle prestazioni del codice gestito) nella libreria Microsoft Patterns and Practices.

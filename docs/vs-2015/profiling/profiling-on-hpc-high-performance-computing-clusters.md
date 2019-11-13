@@ -21,22 +21,22 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62421085"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983812"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilatura su cluster HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile eseguire la profilatura sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento degli strumenti di profilatura di [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Per altre informazioni su HPC vedere [Big Compute: HPC e Batch](https://azure.microsoft.com/solutions/big-compute/) nel sito Web Microsoft.  
+È possibile eseguire la profilatura sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento degli strumenti di profilatura di [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Per ulteriori informazioni su HPC [, vedere Big Compute: hpc & batch](https://azure.microsoft.com/solutions/big-compute/) sul sito Web Microsoft.  
   
-## <a name="prerequisites"></a>Prerequisiti  
+## <a name="prerequisites"></a>Prerequisites  
  Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le operazioni seguenti:  
   
-- Installare Microsoft HPC Pack 2008 nello stesso computer di [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Il computer non deve far parte del cluster HPC. È possibile installare HPC Pack nell'[Area download Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Installare Microsoft HPC Pack 2008 nello stesso computer di [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Il computer non deve far parte del cluster HPC. È possibile installare HPC Pack nell'[Area download Microsoft](https://www.microsoft.com/download/details.aspx?id=2800).  
   
 - Installare [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] e la versione autonoma degli strumenti di profilatura sul nodo di calcolo HPC. I programmi di installazione per [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e per il profiler autonomo sono disponibili nel supporto di installazione di [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Nota** È necessario riavviare il computer dopo avere installato [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e prima di installare gli strumenti di profilatura.  
   
@@ -55,8 +55,8 @@ ms.locfileid: "62421085"
 |||  
 |-|-|  
 |*%HeadNode%*|Nome del nodo head del cluster.|  
-|*%FxPath%*|Percorso del programma di installazione di [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Nel [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] supporti di installazione, il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] supporti di installazione, il percorso è: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Percorso del programma di installazione di [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Nel supporto di installazione di [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] il percorso è: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Esecuzione della profilatura su un nodo di calcolo HPC  
  È possibile configurare una sessione di profilatura tramite la Creazione guidata sessione di prestazioni HPC per specificare informazioni sul cluster HPC e sulla destinazione. Eventuali opzioni aggiuntive possono essere impostate nelle pagine delle proprietà della sessione di prestazioni. Gli strumenti di profilatura distribuiscono automaticamente i file binari di destinazione necessari e avviano il profiler e l'applicazione HPC.  
@@ -71,7 +71,7 @@ ms.locfileid: "62421085"
   
     - Per profilare un progetto attualmente aperto in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], selezionare l'opzione **Uno o più progetti disponibili** e quindi selezionare il nome del progetto dall'elenco.  
   
-    - Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)**.  
+    - Per profilare un file binario non incluso in un progetto aperto, selezionare l'opzione **Eseguibile (file EXE)** .  
   
 4. Scegliere **Avanti**.  
   
@@ -126,7 +126,7 @@ ms.locfileid: "62421085"
   
 ### <a name="hpc-launch-properties"></a>Proprietà avvio HPC  
   
-|Proprietà|Descrizione|  
+|proprietà|Descrizione|  
 |--------------|-----------------|  
 |**Nodo head**|Specifica il computer che funge da nodo head HPC nell'esecuzione della profilatura.|  
 |**Numero di processi**|Specifica il numero di istanze dell'applicazione da eseguire nell'applicazione profilata.|  
@@ -137,11 +137,11 @@ ms.locfileid: "62421085"
   
 ### <a name="advanced-properties"></a>Proprietà avanzate  
   
-|Proprietà|Descrizione|  
+|proprietà|Descrizione|  
 |--------------|-----------------|  
 |**Nome progetto**|Nome del progetto o della soluzione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] corrente.|  
 |**Esegui pulizia all'arresto del profiler**|Se il valore è true, rimuove i file binari distribuiti alla directory di esecuzione. I file e le directory creati dal programma utente non vengono rimossi in questo passaggio. Se la directory di esecuzione e la directory di distribuzione sono state create dall'IDE, l'IDE stesso tenterà di rimuoverle, a meno che non contengano file non distribuiti dall'IDE.|  
-|**File aggiuntivi da distribuire**|Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione (**...**) per selezionare più file usando una finestra di dialogo.|  
+|**File aggiuntivi da distribuire**|Specifica un elenco di file aggiuntivi separati da punto e virgola da distribuire sul nodo di calcolo. È possibile fare clic sul pulsante con i puntini di sospensione ( **...** ) per selezionare più file usando una finestra di dialogo.|  
 |**Comando Mpiexec**|Specifica l'applicazione che avvia l'applicazione MPI. Il valore predefinito è **mpiexec.exe**.|  
 |**Argomenti Mpiexec**|Specifica gli argomenti da passare al comando mpiexec.exe.|  
 |**Nodi richiesti nel cluster**|Specifica il numero di nodi nel cluster su cui eseguire l'applicazione.|  
