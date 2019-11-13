@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio CAST Highlight disponibile nelle sottoscrizioni di Visual Studio selezionate
-ms.openlocfilehash: c55891b9aacb81c5169a9082f7e1fd1d922eda92
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: c985a4ae4c1cdcf5c034293d2848a764d6be3d24
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816434"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983743"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio
 Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software durante la migrazione al cloud. Con CAST Highlight, i sottoscrittori di Visual Studio Enterprise possono analizzare rapidamente il codice sorgente delle applicazioni in uso per identificarne l'idoneità al cloud per la migrazione ad Azure e monitorare lo stato di avanzamento delle app durante e dopo una migrazione.
@@ -76,7 +76,9 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Valutazione di 5 app per 30 giorni|  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Visual Studio Enterprise con GitHub Enterprise  | VL | Valutazione di 5 app per 30 giorni|  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                             |  N/D          |
+| Visual Studio Professional con GitHub Enterprise | VL                                       | Non disponibile                                                             |  N/D          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
@@ -98,6 +100,6 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Se non è già stato attivato il vantaggio Azure incluso nella sottoscrizione, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul riquadro Azure nella categoria strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale di Azure DevTest.
+Se non è già stato attivato il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul riquadro Azure nella categoria strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale Azure DevTest.
 
 Non dimenticare di seguire la demo, il manuale dell'utente e le esercitazioni video indicati nel messaggio di posta elettronica ricevuto.

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Supporto della community di Azure in specifiche sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816547"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983759"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum Supporto della community di Azure nelle sottoscrizioni di Visual Studio
 Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.
@@ -50,7 +50,9 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 |                                          Livello di sottoscrizione                                           |     Canali      |    Vantaggio    | Rinnovabile? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Un anno    |    Yes     |
+|                           Visual Studio Enterprise con GitHub Enterprise                           | VL, Azure, Retail |   Un anno    |    Yes     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Un anno    |    Yes     |
+|                          Visual Studio Professional con GitHub Enterprise                          | VL, Azure, Retail |   Un anno    |    Yes     |
 |                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Un anno    |    Yes     |
 |                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Un anno    |    Yes     |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile)Visual Studio Enterprise (cloud mensile), NFR<sup>1</sup> |        All        | Non disponibile |     No     |
