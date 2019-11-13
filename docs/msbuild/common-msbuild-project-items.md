@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0493e7d16a7c7ecb7a9cf7d414e3bd13cb9ad9a7
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636567"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956141"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno molti elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
@@ -141,6 +141,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 > [!NOTE]
 > Questo vale per i progetti che usano solo la .NET Core SDK.
+
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  Rappresenta il manifesto dell'applicazione di base per la compilazione e contiene informazioni sulla protezione di distribuzione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
