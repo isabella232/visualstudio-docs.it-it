@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0210f66bcfeaad8143ac4eee78b7b086c36eb164
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 11e739fc1b0516c2b6e34421ecee7a329830de14
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823209"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983788"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Procedura: individuare il codice Product Key di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,4 +35,6 @@ Potrebbe essere necessario individuare il codice Product Key per [!INCLUDE[vsprv
   - Documentazione o altra comunicazione del fornitore dal quale è stato acquistato il software.
 
 ## <a name="see-also"></a>Vedere anche
- [Procedura: eseguire l'aggiornamento da una versione di valutazione di Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Installare Visual Studio](../install/install-visual-studio-2015.md) [White paper sulla gestione delle licenze di Visual Studio e MSDN](http://go.microsoft.com/fwlink/?LinkId=191417)
+ * [Procedura: Eseguire l'aggiornamento da una versione di valutazione di Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
+ * [Installare Visual Studio](../install/install-visual-studio-2015.md)
+ * [White paper sulle licenze per Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)
