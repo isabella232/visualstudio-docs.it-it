@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144712"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099607"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus nelle sottoscrizioni di Visual Studio
 
@@ -51,8 +51,10 @@ Seguire questa procedura per il download e l'attivazione di Office 365 ProPlus:
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponibile       |  Yes          |
+| Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Yes          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Non disponibile       |  N/D          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                            |  N/D          |
+| Visual Studio Professional con GitHub Enterprise | VL | Non disponibile         |  N/D          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |

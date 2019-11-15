@@ -1,7 +1,7 @@
 ---
 title: Sviluppo di app per dispositivi mobili C++ multipiattaforma con | Microsoft Docs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589049"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098982"
 ---
-# <a name="cross-platform-mobile-development-with-c"></a>Sviluppo di app per dispositivi mobili multipiattaforma conC++
+# <a name="cross-platform-mobile-development-with-c"></a>Sviluppo di app per dispositivi mobili multipiattaforma con C++
 
 È possibile compilare app C++ native per dispositivi iOS, Android e Windows usando gli strumenti multipiattaforma disponibili in Visual Studio. **Sviluppo per dispositivi C++ mobili con** è un carico di lavoro disponibile nel programma di installazione di Visual Studio. Installa gli SDK e gli strumenti necessari per lo sviluppo multipiattaforma di librerie condivise e app native. Quando è installato, è possibile usare C++ per creare codice che viene eseguito su dispositivi e piattaforme iOS e Android, Windows, Windows Store e Xbox.
 
@@ -42,10 +42,6 @@ Lo sviluppo di C++ applicazioni per dispositivi mobili con è un carico di lavor
 Se si proviene dallo sviluppo per Android o iOS, sono disponibili ottimi materiali per iniziare. Visual Studio è un ambiente di sviluppo espressivo e potente. Per informazioni su come usarlo, vedere la [Guida introduttiva per sviluppatori Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) o la [Guida introduttiva per sviluppatori iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Questi articoli presentano Visual Studio e i concetti necessari per sviluppare app multipiattaforma per Windows e Windows Store. Per iniziare a scrivere la prima app multipiattaforma per iOS e Android, vedere [creare un'applicazione OpenGL ES in Android e iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 Lo sviluppo per dispositivi C++ mobili con carico di lavoro include diversi modelli utili per iniziare a usare le app:
-
-- Applicazione OpenGLES 2 (Android, iOS, piattaforma UWP)
-
-  Creare una soluzione che include un set di progetti per compilare un'app Android NativeActivity, un'app iOS e un'app di Windows universale, insieme a una libreria di codice C++ condivisa. Queste app usano librerie specifiche della piattaforma create mediante il codice C++ OpenGL ES comune per disegnare lo stesso cubo rotante in ogni app. Per usare questo modello, includere il carico di lavoro **sviluppo della piattaforma Windows universale** quando si installa Visual Studio.
 
 - Applicazione NativeActivity (Android)
 
