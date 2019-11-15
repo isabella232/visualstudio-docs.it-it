@@ -1,6 +1,6 @@
 ---
 title: Generale, debug, finestra di dialogo Opzioni | Microsoft Docs
-ms.date: 11/09/2018
+ms.date: 11/12/2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 528fa04b081937af69e647b01911ed00c1ec40c9
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72569074"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072708"
 ---
 # <a name="general-debugging-options"></a>Opzioni generali di debug
 
@@ -137,6 +137,12 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 - **Mostra gli strumenti di runtime nell'applicazione**: Mostra i comandi della **struttura ad albero visuale** attiva in una barra degli strumenti nella finestra principale dell'applicazione XAML di cui è in corso il debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.
 
 - **Abilita ricaricamento attivo XAML**: consente di usare la funzionalità di ricaricamento a caldo di XAML con codice XAML quando l'app è in esecuzione. Questa funzionalità era in precedenza denominata "modifica e continuazione XAML".
+
+::: moniker range=">= vs-2019" 
+- **Abilita Just My XAML**: a partire da visual studio 2019 versione 16,4, per impostazione predefinita l' **albero elementi visivi attivi** Mostra solo il codice XAML classificato come codice utente. Se si disabilita questa opzione, tutto il codice XAML generato verrà visualizzato nello strumento.
+
+- **Disattiva la modalità di selezione quando viene selezionato un elemento** A partire da Visual Studio 2019 versione 16,4, il pulsante di selezione dell'elemento della barra degli strumenti in-app (**Abilita selezione**) si disattiva quando viene selezionato un elemento. Se si disabilita questa opzione, la selezione degli elementi resta attiva fino a quando non si fa nuovamente clic sul pulsante della barra degli strumenti in-app.
+::: moniker-end
 
 **Abilita strumenti di diagnostica durante il debug**: la finestra **strumenti di diagnostica** viene visualizzata durante il debug.
 
