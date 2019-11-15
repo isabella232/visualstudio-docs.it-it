@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Modificare il codice in Visual Studio
-summary: Informazioni sulla modifica di attività, ad esempio l'apertura di un progetto, l'uso delle funzionalità dell'editor di codice e la gestione di stili di codice coerenti.
+title: Organizzare e modificare il codice in Visual Studio
+summary: Informazioni sull'utilizzo dei progetti di codice, sull'utilizzo delle funzionalità dell'editor del codice e sulla gestione di uno stile di codice coerente.
 metadata:
   title: Funzionalità dell'editor del codice
   description: Informazioni sulle funzionalità di modifica del codice in Visual Studio.
@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
+  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516821"
+  ms.lasthandoff: 11/14/2019
+  ms.locfileid: "74087243"
 landingContent:
 - title: Aprire o creare un progetto
   linkLists:
