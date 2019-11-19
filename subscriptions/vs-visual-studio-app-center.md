@@ -3,15 +3,15 @@ title: Vantaggio Visual Studio App Center nelle sottoscrizioni di Visual Studio 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Visual Studio App Center nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787809"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161914"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center nelle sottoscrizioni di Visual Studio
 
@@ -41,13 +41,15 @@ Iniziare a usare Visual Studio App Center è facile.
 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> | Included       |  Sì          |
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Included                                                            |Sì |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Included                                                            |Sì |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Included                                                            |Sì |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> | Included       |  Yes          |
+| Visual Studio Enterprise con GitHub Enterprise  | VL | Included       |  Yes          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Included                                                            |Yes |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Included                                                            |Yes |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Included                                                            |Yes |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Included                                                            |Yes |
 ||
 
-<sup>1</sup>  *Include:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
+<sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), imagine, Microsoft Partner Network (MPN), MCT software & Services, MCT software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (Rd).*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -56,8 +58,8 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>D:  viene visualizzato un messaggio di errore di browser non supportato.  Qual è il problema?
-R:  App Center richiede funzionalità aggiornate, che potrebbero non essere disponibili in alcuni browser meno recenti.  Se il browser non è supportato, seguire questa procedura:
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>D: ricevo un messaggio di errore di browser non supportato.  Qual è il problema?
+R: per App Center sono richieste funzionalità più recenti che potrebbero non essere disponibili in alcuni browser meno recenti.  Se il browser non è supportato, seguire questa procedura:
 1. Aprire un browser diverso, ad esempio Microsoft Edge o le versioni più recenti di Google Chrome, Firefox o Safari.
 2. Connettersi a Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ed effettuare l'accesso.
 3. Fare clic sul collegamento **Inizia subito** nel riquadro di Visual Studio App Center.
@@ -72,4 +74,7 @@ A questo punto dovrebbe essere possibile accedere al portale di App Center e cre
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Azure è la sandbox personale per le attività di sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure. Se non è già stato fatto, attivare il [vantaggio Azure](vs-azure.md). 
+Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Credito individuale per Azure DevTest](vs-azure.md)
