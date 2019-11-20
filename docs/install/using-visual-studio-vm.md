@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 32446e40fa388e72fd12e32dad3a466c0b5823d5
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 88e11bf7bd84fdac5d584c06042488c895b7aa09
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273384"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174138"
 ---
 # <a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -36,11 +36,11 @@ In Azure Marketplace sono disponibili immagini per le versioni principali più r
 
 | Versione di rilascio                                                                                                                                          | Edizioni              |    Versione del prodotto    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: Più recente (versione 16,3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Versione 16.3.0    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | Versione 16.0.8    |
-| [Visual Studio 2017: Versione più recente (15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Versione 15.9.16   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Versione 15.0.27   |
-| [Visual Studio 2015: Versione più recente (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Versione 14.0.25431.01 |
+| [Visual Studio 2019: Latest (Version 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Version 16.3.9    |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | Version 16.0.9    |
+| [Visual Studio 2017: Latest (Version 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Version 15.9.17   |
+| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Version 15.0.27   |
+| [Visual Studio 2015: Latest (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Versione 14.0.25431.01 |
 
 > [!NOTE]
 > In base i criteri per la manutenzione adottati da Microsoft, la versione rilasciata originariamente (RTW) di Visual Studio 2015 è scaduta per la manutenzione. Visual Studio 2015 Update 3 è l'unica versione rimanente disponibile per la linea di prodotti Visual Studio 2015.
@@ -101,7 +101,7 @@ Per altre informazioni, vedere [Accedere a Visual Studio](../ide/signing-in-to-v
 
 La gamma di possibili configurazioni degli ambienti di sviluppo è enorme e i costi sostenuti per la preparazione degli ambienti più complessi sono tutt'altro che irrilevanti. Indipendentemente dalla configurazione dell'ambiente, è possibile salvare, o acquisire, la macchina virtuale configurata come "immagine di base" per usi futuri o per altri membri del team. In questo modo, quando si avvia una nuova macchina virtuale è possibile eseguirne il provisioning dall'immagine di base anziché dall'immagine di Azure Marketplace.
 
-Riepilogo rapido: usare l'utilità preparazione sistema (Sysprep), arrestare la macchina virtuale in esecuzione e quindi acquisire *(Figura 1)* la macchina virtuale sotto forma di immagine tramite l'interfaccia utente nel portale di Azure. Azure salva il file `.vhd` che contiene l'immagine nell'account di archiviazione di propria scelta. La nuova immagine viene quindi visualizzata come risorsa Immagine nell'elenco di risorse della sottoscrizione.
+Riepilogo rapido: usare l'utilità preparazione sistema (Sysprep) e arrestare la macchina virtuale in esecuzione, quindi acquisire *(figura 1)* la macchina virtuale come immagine tramite l'interfaccia utente nel portale di Azure. Azure salva il file `.vhd` che contiene l'immagine nell'account di archiviazione di propria scelta. La nuova immagine viene quindi visualizzata come risorsa Immagine nell'elenco di risorse della sottoscrizione.
 
 ![Acquisire un'immagine tramite l'interfaccia utente del portale di Azure](media/capture-vm.png)
 

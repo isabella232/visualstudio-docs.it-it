@@ -3,15 +3,15 @@ title: Vantaggio Account per sviluppatore di Windows nelle sottoscrizioni di Vis
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816424"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174113"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
@@ -43,13 +43,15 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Included       |  Yes|
+| Visual Studio Enterprise con GitHub Enterprise   | VL  | Included       |  Yes|
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Included                                                            |Yes|
+| Visual Studio Professional con GitHub Enterprise | VL                                        | Included                                                            |Yes|
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  N/D|
 | MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  N/D|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
-<sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer. Escludi: Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services.*
+<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Excludes:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -63,4 +65,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Azure è la sandbox personale per le attività di sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure. Assicurarsi di attivare i [vantaggi di Azure](vs-azure.md) per iniziare a usare il credito singolo di Azure DevTest.
+Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Credito individuale per Azure DevTest](vs-azure.md)
