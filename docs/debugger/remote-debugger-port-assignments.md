@@ -1,5 +1,5 @@
 ---
-title: Assegnazioni delle porte del debugger remoto | Microsoft Docs
+title: Remote Debugger Port Assignments | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3d3ce704d517224452731c52a891ac2263f738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730250"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239450"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:
@@ -29,7 +29,7 @@ Visual Studio Remote Debugger può essere eseguito come applicazione o come serv
 
 - Visual Studio 2012: 4016
 
-  In altre parole, il numero della porta assegnata al debugger remoto viene incrementato di 2 per ogni versione. È possibile impostare un numero di porta diverso. In una sezione successiva verrà illustrato come impostare i numeri di porta.
+In altre parole, il numero della porta assegnata al debugger remoto viene incrementato di 2 per ogni versione. È possibile impostare un numero di porta diverso. In una sezione successiva verrà illustrato come impostare i numeri di porta.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 32 bit
 
@@ -48,10 +48,10 @@ Visual Studio Remote Debugger può essere eseguito come applicazione o come serv
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 64 bit
 ::: moniker range=">=vs-2019"
- Quando viene avviata la versione a 64 bit del debugger remoto, per impostazione predefinita viene usata la porta principale (4024).  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4025 (il numero di porta principale è stato incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4024 e non la porta 4025.
+ When the 64-bit version of the remote debugger is started, it uses the main port (4024) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4025 (the main port number incremented by 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4024 e non la porta 4025.
 ::: moniker-end
 ::: moniker range="vs-2017"
- Quando viene avviata la versione a 64 bit del debugger remoto, per impostazione predefinita viene usata la porta principale (4022).  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4023 (il numero di porta principale è stato incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4022 e non la porta 4023.
+ When the 64-bit version of the remote debugger is started, it uses the main port (4022) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023 (the main port number incremented by 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4022 e non la porta 4023.
 :::moniker-end
 
  Questa porta è configurabile dalla riga di comando: **Msvsmon /wow64port \<numero porta>** .
