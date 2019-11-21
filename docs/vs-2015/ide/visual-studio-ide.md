@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667134"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296926"
 ---
 # <a name="visual-studio-ide"></a>IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Se non si è mai usato Visual Studio in precedenza, apprendere le nozioni di bas
 Per informazioni sulle nuove funzionalità di Visual Studio 2015, vedere [Novità di Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
 ## <a name="visual-studio-setup"></a>Configurazione di Visual Studio
- Per scoprire l'edizione di Visual Studio più adatta alle proprie esigenze, vedere [Edizioni di Visual Studio](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
+ Per scoprire l'edizione di Visual Studio più adatta alle proprie esigenze, vedere [Edizioni di Visual Studio](https://visualstudio.microsoft.com/vs/).
 
- Per installare Visual Studio 2015, scaricarlo dalla pagina [Download di Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Per altre informazioni sul processo di installazione, vedere [Installazione di Visual Studio 2015](../install/install-visual-studio-2015.md).
+ Per installare Visual Studio 2015, scaricarlo dalla pagina [Download di Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Per altre informazioni sul processo di installazione, vedere [Installazione di Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>Nozioni di base sull'IDE
  L'immagine seguente mostra l'IDE di Visual Studio con un progetto aperto, la finestra Esplora soluzioni per la navigazione nei file di progetto e la finestra Team Explorer per spostarsi tra gli elementi rilevati del controllo del codice sorgente e della gestione degli elementi di lavoro. Le funzionalità indicate nella barra del titolo vengono spiegate di seguito in modo più dettagliato.
