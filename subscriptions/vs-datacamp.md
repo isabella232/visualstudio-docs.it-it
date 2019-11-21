@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 526b0f25fc745cee25ce2300a1326041e86df7db
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
+ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099655"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199873"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.
@@ -37,7 +37,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
    > [!div class="mx-imgBorder"]
    > ![Scelta del percorso DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
-5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegliere un'opzione oppure fare clic su non è **certo.  Mostra tutti i percorsi di carriera** per creare un percorso più ampio.
+5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Choose an option, or click **I am not sure.  Show me all career paths** to create a broader path.
    > [!div class="mx-imgBorder"]
    > ![Insieme di competenze di data science di DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
@@ -53,7 +53,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
 È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Visitare [http://www.datacamp.com](http://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
 
 > [!div class="mx-imgBorder"]
-> Formazione continua ![datacamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp Continue Training](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
@@ -67,7 +67,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 
-<sup>1</sup>  *include: not for Resale (NFR), ETP, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
@@ -86,6 +86,6 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 Esplorare altre opportunità di sviluppo professionale nella propria sottoscrizione:
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
-- [MSDN Magazine](vs-msdn.md)
 
-Se non è già stato attivato il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul riquadro Azure nella categoria strumenti per configurare la sottoscrizione di Azure e riscattare il credito individuale Azure DevTest.
+
+If you haven't already activated the Azure DevTest individual credit benefit that comes with your subscription, visit [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) and click on the Azure tile in the Tools category to set up your Azure subscription and redeem your Azure DevTest individual credit.
