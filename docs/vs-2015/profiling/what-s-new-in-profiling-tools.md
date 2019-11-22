@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f9611170c7b23a9db72c27b9c3f69a39e21a4bdc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261629"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300633"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Novità negli strumenti di profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Per informazioni sulle novità relative al debug ed alla diagnostica di Visual S
  Per informazioni sulle novità relative al debug ed alla diagnostica di Visual Studio 2015, vedere le [note sulla versione di Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
   
 ## <a name="whats-new-in-update-1"></a>Novità di Update 1  
- A partire da Visual Studio 2015 Update 1, è possibile visualizzare i dettagli dell'utilizzo della CPU a livello di singole funzioni senza uscire dal debugger. Per altre informazioni, vedere il blog relativo alla [profilatura della CPU nel debugger di Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
+ A partire da Visual Studio 2015 Update 1, è possibile visualizzare i dettagli dell'utilizzo della CPU a livello di singole funzioni senza uscire dal debugger. Per altre informazioni, vedere il blog relativo alla [profilatura della CPU nel debugger di Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
- Nella finestra **Strumenti di diagnostica** sono state aggiunte le opzioni di ricerca e filtro nella scheda **Eventi** . Per altre informazioni, vedere le pagine sugli [strumenti di profilatura integrati nel debugger](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) e su come [eseguire ricerche e applicare filtri nella scheda Eventi della finestra Strumenti di diagnostica](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+ Nella finestra **Strumenti di diagnostica** sono state aggiunte le opzioni di ricerca e filtro nella scheda **Eventi** . Per altre informazioni, vedere le pagine sugli [strumenti di profilatura integrati nel debugger](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) e su come [eseguire ricerche e applicare filtri nella scheda Eventi della finestra Strumenti di diagnostica](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnostica con modifiche all'interfaccia utente e i tasti di scelta rapida di debug  
  È ora possibile eseguire gli strumenti di diagnostica durante il debug con la nuova **gli strumenti di diagnostica** finestra. La finestra viene visualizzata automaticamente, ma è possibile aprirla anche con la nuova voce di menu **Mostra strumenti di diagnostica** (tasto di scelta rapida **Ctrl+Alt+F2**).  

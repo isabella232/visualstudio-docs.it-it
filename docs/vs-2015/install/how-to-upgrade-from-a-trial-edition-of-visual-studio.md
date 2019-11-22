@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696202"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298066"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Procedura: eseguire l'aggiornamento da una versione di valutazione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,12 +23,12 @@ ms.locfileid: "65696202"
 
  È possibile valutare la versione di rilascio delle edizioni Professional ed Enterprise di Visual Studio per 30 giorni, a partire dalla data di installazione del prodotto. L'[accesso a Visual Studio](../ide/signing-in-to-visual-studio.md) aggiunge 60 giorni al periodo di valutazione, per un totale di 90 giorni. Se non si registra una versione di valutazione di Visual Studio entro 30 giorni, il periodo di valutazione scadrà 30 giorni dopo l'installazione.
 
- Ad esempio, se si scarica e si usa [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] per 10 giorni, quindi lo si registra, sarà possibile usarlo per altri 80 giorni. Per continuare a usare il prodotto dopo i 90 giorni, è necessario specificare un codice Product Key valido oppure accedere a Visual Studio con un account Microsoft o aziendale, associato a una sottoscrizione MSDN o Visual Studio Online. Per informazioni su come individuare oppure ottenere un codice Product Key, vedere [Procedura: Individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e [Modalità di acquisto di Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
+ Ad esempio, se si scarica e si usa [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] per 10 giorni, quindi lo si registra, sarà possibile usarlo per altri 80 giorni. Per continuare a usare il prodotto dopo i 90 giorni, è necessario specificare un codice Product Key valido oppure accedere a Visual Studio con un account Microsoft o aziendale, associato a una sottoscrizione MSDN o Visual Studio Online. Per informazioni su come individuare oppure ottenere un codice Product Key, vedere [Procedura: Individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e [Modalità di acquisto di Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).
 
 > [!IMPORTANT]
 > Anche per le versioni di rilascio delle edizioni Express di Visual Studio il periodo di valutazione è di 30 giorni. Per estendere definitivamente il periodo di valutazione per le edizioni Express di Visual Studio, accedere a Visual Studio o registrare il prodotto.
 
- Prima di eseguire l'aggiornamento, è consigliabile scaricare e leggere il [white paper sulla gestione delle licenze di Visual Studio e MSDN](http://www.microsoft.com/download/details.aspx?id=13350) del sito Web Microsoft. Per ulteriore assistenza, vedere [Supporto per Visual Studio](http://support.microsoft.com/ph/1117/en-us).
+ Prima di eseguire l'aggiornamento, è consigliabile scaricare e leggere il [white paper sulla gestione delle licenze di Visual Studio e MSDN](https://www.microsoft.com/download/details.aspx?id=13350) del sito Web Microsoft. Per ulteriore assistenza, vedere [Supporto per Visual Studio](https://support.microsoft.com/ph/1117/en-us).
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Per eseguire l'aggiornamento da una versione di valutazione di Visual Studio Professional o Enterprise
 

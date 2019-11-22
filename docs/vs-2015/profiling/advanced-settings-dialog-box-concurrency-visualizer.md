@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e1dbe50f3161ca80b4eabe63cbf9264210e9658
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705754"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300319"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
  I percorsi dei file con estensione exe e dll vengono archiviati nel file di traccia quando la traccia viene raccolta.  La modifica di questa impostazione non ha alcun effetto sulle tracce raccolte in precedenza.  
   
 ## <a name="buffering"></a>Buffer  
- Per raccogliere una traccia, il visualizzatore di concorrenza usa ETW (Event Tracing for Windows).  Per l'archiviazione degli eventi, ETW usa diversi buffer.  Le impostazioni predefinite del buffer ETW possono non essere sempre ottimali e, in alcuni casi, possono causare problemi come la perdita di eventi.  Per configurare le impostazioni del buffer ETW, è possibile usare la scheda Buffer. Per altre informazioni, vedere [Registrazione di eventi](http://go.microsoft.com/fwlink/?LinkId=234579) e [EVENT_TRACE_PROPERTIES structure](http://go.microsoft.com/fwlink/?LinkId=234580) (Struttura EVENT_TRACE_PROPERTIES).  
+ Per raccogliere una traccia, il visualizzatore di concorrenza usa ETW (Event Tracing for Windows).  Per l'archiviazione degli eventi, ETW usa diversi buffer.  Le impostazioni predefinite del buffer ETW possono non essere sempre ottimali e, in alcuni casi, possono causare problemi come la perdita di eventi.  Per configurare le impostazioni del buffer ETW, è possibile usare la scheda Buffer. Per altre informazioni, vedere [Registrazione di eventi](https://go.microsoft.com/fwlink/?LinkId=234579) e [EVENT_TRACE_PROPERTIES structure](https://go.microsoft.com/fwlink/?LinkId=234580) (Struttura EVENT_TRACE_PROPERTIES).  
   
 ## <a name="filter"></a>Filtro  
  Nella scheda Filtro è possibile selezionare il set di eventi raccolti dal visualizzatore di concorrenza. La selezione di un subset di eventi limita i tipi di dati visualizzati nei report, riduce la dimensione di ciascuna traccia e diminuisce il tempo necessario per l'elaborazione delle tracce.  

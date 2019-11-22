@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620396"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300290"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informazioni aggiuntive sugli errori di Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Progettazione classi non tiene traccia del percorso dei file di origine. Di cons
 
  [L'utilizzo di C++ codice visuale (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md) include informazioni sulla risoluzione C++ dei problemi di visualizzazione in un diagramma classi.
 
- [Forum su Progettazione classi di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) Forum dedicato a domande su Progettazione classi.
+ [Forum su Progettazione classi di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160754) Forum dedicato a domande su Progettazione classi.
 
 ## <a name="see-also"></a>Vedere anche
  [Progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md)

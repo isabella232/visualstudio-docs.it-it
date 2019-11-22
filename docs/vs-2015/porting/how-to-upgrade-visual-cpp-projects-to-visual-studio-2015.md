@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823285"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300385"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedura: Aggiornare i progetti Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Quando si apre per la prima volta un progetto Visual C++ creato in una versione 
 - Per i progetti [!INCLUDE[cppcli](../includes/cppcli-md.md)] TargetFrameworkVersion viene impostato su .NET Framework 4.5.2.
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Continuare a usare un set di strumenti della piattaforma personalizzato
- Se si desidera continuare a usare un set di strumenti della piattaforma personalizzato in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], il set di strumenti deve trovarsi in %Programmi%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x86 o in %Programmi (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x64. Per informazioni su come creare un set di strumenti della piattaforma personalizzato, vedere il post relativo al [multitargeting nativo per C++](http://go.microsoft.com/fwlink/?LinkId=248587) nel blog del team di Visual C++.
+ Se si desidera continuare a usare un set di strumenti della piattaforma personalizzato in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], il set di strumenti deve trovarsi in %Programmi%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x86 o in %Programmi (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x64. Per informazioni su come creare un set di strumenti della piattaforma personalizzato, vedere il post relativo al [multitargeting nativo per C++](https://go.microsoft.com/fwlink/?LinkId=248587) nel blog del team di Visual C++.
 
 ## <a name="see-also"></a>Vedere anche
  [Guida al porting e aggiornamento in Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

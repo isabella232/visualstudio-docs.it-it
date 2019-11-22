@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efcdbb4f72d47a5044b287f1b40424f5611d6401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703438"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295881"
 ---
 # <a name="link-task"></a>Attività Link
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,13 +68,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specifica gli attributi che verranno inseriti nella sezione `dependency` del file manifesto.  
   
-   Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Vedere anche "Publisher Configuration Files" (File di configurazione del server di pubblicazione) sul sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+   Per altre informazioni, vedere [/MANIFESTDEPENDENCY (Specifica le dipendenze tra manifesti)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Vedere anche "Publisher Configuration Files" (File di configurazione del server di pubblicazione) sul sito Web [MSDN](https://go.microsoft.com/fwlink/?LinkId=737).  
   
 - **AdditionalOptions**  
   
    Parametro **String** facoltativo.  
   
-   Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio, **"**_/opzione1 /opzione2 /opzione#_". Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.  
+   Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio, **"** _/opzione1 /opzione2 /opzione#_ ". Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.  
   
    Per altre informazioni, vedere [Opzioni linker](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
@@ -140,13 +140,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**  
   
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
   
     Per altre informazioni, vedere [/CLRIMAGETYPE (Specifica il tipo di immagine CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
@@ -158,11 +158,11 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **Enabled** - **/CLRSupportLastError**  
+  - **Enabled** -  **/CLRSupportLastError**  
   
-  - **Disabled** - **/CLRSupportLastError:NO**  
+  - **Disabled** -  **/CLRSupportLastError:NO**  
   
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
   
     Per altre informazioni, vedere [/CLRSUPPORTLASTERROR (Mantiene l'ultimo codice di errore per le chiamate PInvoke)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
@@ -174,11 +174,11 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**  
   
-  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**  
   
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**  
   
     Per altre informazioni, vedere [/CLRTHREADATTRIBUTE (Imposta l'attributo thread CLR)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
   
@@ -198,13 +198,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, che corrisponde a un'opzione del linker.  
   
-  - **Enabled** - **/FUNCTIONPADMIN**  
+  - **Enabled** -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** - **/FUNCTIONPADMIN:5**  
+  - **X86Image** -  **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** - **/FUNCTIONPADMIN:6**  
+  - **X64Image** -  **/FUNCTIONPADMIN:6**  
   
-  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**  
   
     Per altre informazioni, vedere [/FUNCTIONPADMIN (Crea immagine con funzionalità di patch a caldo)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
   
@@ -240,13 +240,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione del linker.  
   
-  - **NotSet** - *\<nessuno>*  
+  - **NotSet** -  *\<nessuno>*  
   
-  - **Driver** - **/Driver**  
+  - **Driver** -  **/Driver**  
   
-  - **UpOnly** - **/DRIVER:UPONLY**  
+  - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **WDM** - **/DRIVER:WDM**  
+  - **WDM** -  **/DRIVER:WDM**  
   
     Per altre informazioni, vedere [/DRIVER (Driver in modalità kernel di Windows NT)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
@@ -298,11 +298,11 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Enabled** - **/FORCE**  
+  - **Enabled** -  **/FORCE**  
   
-  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
   
     Per altre informazioni, vedere [/FORCE (Forza l'output del file)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
@@ -448,13 +448,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NoErrorReport** - **/ERRORREPORT:NONE**  
+  - **NoErrorReport** -  **/ERRORREPORT:NONE**  
   
-  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**  
   
-  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** - **/ERRORREPORT:SEND**  
+  - **SendErrorReport** -  **/ERRORREPORT:SEND**  
   
     Per altre informazioni, vedere [/ERRORREPORT (Segnala gli errori interni del linker)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
@@ -490,13 +490,13 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **UseLinkTimeCodeGeneration** - **/LTCG**  
+  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
-  - **PGInstrument** - **/LTCG:PGInstrument**  
+  - **PGInstrument** -  **/LTCG:PGInstrument**  
   
-  - **PGOptimization** - **/LTCG:PGOptimize**  
+  - **PGOptimization** -  **/LTCG:PGOptimize**  
   
   - **PGUpdate**  
   
@@ -684,19 +684,19 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NotSet** - *\<nessuno>*  
+  - **NotSet** -  *\<nessuno>*  
   
-  - **LinkVerbose** - **/VERBOSE**  
+  - **LinkVerbose** -  **/VERBOSE**  
   
-  - **LinkVerboseLib** - **/VERBOSE:Lib**  
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** - **/VERBOSE:ICF**  
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** - **/VERBOSE:REF**  
+  - **LinkVerboseREF** -  **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
     Per altre informazioni, vedere [/VERBOSE (stampa di messaggi sullo stato)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
@@ -746,25 +746,25 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NotSet** - *\<nessuno>*  
+  - **NotSet** -  *\<nessuno>*  
   
-  - **Console** - **/SUBSYSTEM:CONSOLE**  
+  - **Console** -  **/SUBSYSTEM:CONSOLE**  
   
-  - **Windows** - **/SUBSYSTEM:WINDOWS**  
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
   
-  - **Native** - **/SUBSYSTEM:NATIVE**  
+  - **Native** -  **/SUBSYSTEM:NATIVE**  
   
-  - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**  
+  - **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
+  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**  
   
-  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
   
-  - **POSIX** - **/SUBSYSTEM:POSIX**  
+  - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
     Per altre informazioni, vedere [/SUBSYSTEM (Specifica il sottosistema)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
@@ -816,29 +816,29 @@ Esegue il wrapping dello strumento linker di Visual C++, link.exe. Lo strumento 
   
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.  
   
-  - **NotSet** - *\<nessuno>*  
+  - **NotSet** -  *\<nessuno>*  
   
-  - **MachineARM** - **/MACHINE:ARM**  
+  - **MachineARM** -  **/MACHINE:ARM**  
   
-  - **MachineEBC** - **/MACHINE:EBC**  
+  - **MachineEBC** -  **/MACHINE:EBC**  
   
-  - **MachineIA64** - **/MACHINE:IA64**  
+  - **MachineIA64** -  **/MACHINE:IA64**  
   
-  - **MachineMIPS** - **/MACHINE:MIPS**  
+  - **MachineMIPS** -  **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** - **/MACHINE:MIPS16**  
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** - **/MACHINE:SH4**  
+  - **MachineSH4** -  **/MACHINE:SH4**  
   
-  - **MachineTHUMB** - **/MACHINE:THUMB**  
+  - **MachineTHUMB** -  **/MACHINE:THUMB**  
   
-  - **MachineX64** - **/MACHINE:X64**  
+  - **MachineX64** -  **/MACHINE:X64**  
   
-  - **MachineX86** - **/MACHINE:X86**  
+  - **MachineX86** -  **/MACHINE:X86**  
   
     Per altre informazioni, vedere [/MACHINE (Specifica la piattaforma di destinazione)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   

@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08e317555042bbc63707cc6eccd0177e78b6ddcc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645660"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300195"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introduzione al debug in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
 
  ![Punto di interruzione condizionale di Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
 
- Per altre informazioni su come dichiarare le espressioni usate per valutare i punti di interruzione condizionali, guardare il video di Channel9 [Breakpoint Configuration Experience in Visual Studio 2015](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Esperienza di configurazione dei punti di interruzione in Visual Studio 2015).
+ Per altre informazioni su come dichiarare le espressioni usate per valutare i punti di interruzione condizionali, guardare il video di Channel9 [Breakpoint Configuration Experience in Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Esperienza di configurazione dei punti di interruzione in Visual Studio 2015).
 
 ### <a name="inspecting-your-code-at-run-time"></a>Esame del codice in fase di esecuzione
  Quando il codice in esecuzione raggiunge un punto di interruzione e si arresta, è possibile esaminare le variabili e gli stack di chiamate per individuare il problema. I valori sono compresi negli intervalli previsti? L'ordine con cui si stanno eseguendo le chiamate è corretto?
