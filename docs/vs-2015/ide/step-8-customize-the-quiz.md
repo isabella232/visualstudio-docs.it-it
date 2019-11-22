@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6084daea11d981477bbee6f210e1faf718b58d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ded65e85a2ae11e96c21fdd852ea12daa4bbcdf4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646916"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299995"
 ---
 # <a name="step-8-customize-the-quiz"></a>Passaggio 8: personalizzare il quiz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,8 +28,6 @@ Nell'ultima parte dell'esercitazione si esamineranno alcune modalità per person
 - Fornire un suggerimento all'utente riproducendo un suono quando viene immessa la risposta corretta in un controllo NumericUpDown. È necessario scrivere un gestore di evento per l'evento `ValueChanged()` di ogni controllo, che viene attivato ogni qualvolta l'utente modifica il valore del controllo.
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
-
-- Per scaricare una versione completa del quiz, vedere [Esempio di esercitazione per un quiz matematico completo](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 - Per passare all'esercitazione successiva, vedere [Esercitazione 3: creare un gioco delle coppie](../ide/tutorial-3-create-a-matching-game.md).
 

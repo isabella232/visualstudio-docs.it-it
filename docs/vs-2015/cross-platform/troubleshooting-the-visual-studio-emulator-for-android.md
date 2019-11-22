@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi dell'emulatore per Android | Microsoft Docs
+title: Risoluzione dei problemi relativi all'emulatore per Android | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 380de9206b2dc4e78c3719919dfd78720de28129
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263378"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297645"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Risoluzione dei problemi di Visual Studio Emulatore per Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
 - [Non è possibile collegare un debugger a un progetto Xamarin](#Skylake)
 
-- [Non è possibile eseguire nell'emulatore un'app che usa Google Play Services](#GooglePlay)
+- [Emulatore non viene eseguita l'applicazione che utilizza Google Play Services](#GooglePlay)
 
 - [Il trascinamento di un file, APK o file ZIP che supportano il flashing non funziona](#DragAndDrop)
 
@@ -67,7 +67,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 ## <a name="NoInstall"></a> Non è possibile installare l'emulatore
  Se Hyper-V non è installato, quando si prova a installare l'emulatore verrà visualizzato un messaggio analogo al seguente. È necessario avere un computer che supporta HyperV e che HyperV sia abilitato.
 
- ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
+ ![Problema&#95;di&#95;installazione&#95;di Android Emu](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Questo messaggio è applicabile a Visual Studio Emulator for Android e all'emulatore Windows Phone. Windows 8.1 e Windows 10 supportano l'emulatore.
@@ -100,7 +100,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
   Se la rete richiede impostazioni configurate manualmente, rivolgersi all'amministratore IT di determinare come è possibile abilitare la connettività di rete per l'emulatore.
 
-## <a name="SlowStart"></a> L'emulatore viene avviato lentamente, non viene avviato a causa di un timeout o si verifica un errore di distribuzione dell'app
+## <a name="SlowStart"></a> Emulatore viene avviato lentamente, non viene avviato a causa di un timeout o errore di distribuzione di applicazioni
  In determinate condizioni, l'emulatore richiede alcuni minuti per avviare o non viene avviato a causa di un timeout. Se l'emulatore non viene avviato, viene visualizzato il seguente messaggio: Distribuzione dell’applicazione non riuscita:`App deployment failed. Please try again` Le condizioni seguenti possono causare questo errore.
 
 - Attivare l’emulatore di Visual Studio per Android da un VHD bootable. Questa configurazione non è supportata.
@@ -134,7 +134,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")
 
-     Se l'installazione non è corretta e si usa Windows 10, è possibile vedere [Reinstalla i dispositivi di rete con il comando netcfg –d](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (sezione 6).
+     Se l'installazione non è corretta e si usa Windows 10, è possibile vedere [Reinstalla i dispositivi di rete con il comando netcfg –d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (sezione 6).
 
 - Se questa procedura non consente di risolvere il problema, vedere [Emulator fails to start (first use)](#NoStart) per informazioni su software di terze parti che potrebbe interferire con l'emulatore.
 
@@ -173,7 +173,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
      - Disabilitare esecuzione Trusted
 
-       Per altre informazioni, vedere questo articolo: Technet: Hyper-V: How to Fix BIOS Errors Enabling Hyper-V (Technet: Hyper-V: Come correggere gli errori del BIOS abilitando Hyper-V)
+       Per ulteriori informazioni, vedere l'articolo: Technet: come Hyper-v: per correggere BIOS errori abilitazione di Hyper-V
 
   5. Assicurarsi di che disporre di almeno 4 GB di memoria di sistema e che non viene utilizzato da altri programmi che richiedono molte risorse e processi.
 
@@ -191,7 +191,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
    In generale, è compito degli sviluppatori di tali prodotti per l'aggiornamento del software per essere compatibile con Windows 8 e Hyper-V.
 
-   I prodotti seguenti potrebbero richiedere l'aggiornamento per la conformità di Windows 8: VirtualBox, Virtual PC 7, VMWare, alcuni client VPN, i firewall software, alcune versioni di client VPN Cisco e altri sistemi di virtualizzazione. Collaborare con lo sviluppatore del software di virtualizzazione incerta incoraggiarli per aggiornare il software per renderlo compatibile con Windows 8 e Hyper-V.
+   I seguenti prodotti potrebbero richiedere l'aggiornamento per la conformità di Windows 8: VirtualBox, Virtual PC 7, VMWare, alcuni client VPN, i firewall software, alcune versioni di client VPN Cisco e altri sistemi di virtualizzazione. Collaborare con lo sviluppatore del software di virtualizzazione incerta incoraggiarli per aggiornare il software per renderlo compatibile con Windows 8 e Hyper-V.
 
    Come un **soluzione**, è possibile disabilitare tutti i driver di terze parti e applicazioni che potrebbero interferire con la rete virtuale utilizzata dall'emulatore di comunicare con Visual Studio. Queste applicazioni possono comprendere:
 
@@ -213,7 +213,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
       Qui vengono visualizzate le proprietà dell'adapter.
 
-      ![Proprietà della scheda virtuale](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")
+      ![Proprietà scheda virtuale](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")
 
   3. Per questo adapter, gli unici elementi che devono essere selezionati in **la connessione utilizza i seguenti elementi** riportato di seguito:
 
@@ -241,7 +241,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
   - Aprire Hyper V e andare in Gestione commutatori virtuali. Creare un commutatore virtuale denominato "Windows Phone emulatore interna Switch" e impostarne il tipo di connessione **rete interna**.
 
-     ![Gestione commutatori virtuali](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")
+     ![Gestione commutiri virtuali](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")
 
     Ora avviare l'emulatore Dovrebbe funzionare.
 
@@ -254,7 +254,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
   Per risolvere questo problema, disabilitare USB3 nelle impostazioni del BIOS della scheda madre e riavviare il computer. Controllare quindi se Gigabyte ha rilasciato un aggiornamento del BIOS della scheda madre.
 
-  Per altre informazioni, vedere l'articolo della Knowledge Base relativo all'[errore di avvio dopo l'installazione del ruolo Hyper-V in sistemi Gigabyte](https://support.microsoft.com/kb/2693144).
+  Per altre informazioni, vedere l'articolo della Knowledge Base relativo all' [errore di avvio dopo l'installazione del ruolo Hyper-V in sistemi Gigabyte](https://support.microsoft.com/kb/2693144).
 
 ## <a name="ADB"></a> Visual Studio si blocca durante il tentativo di distribuzione dell'app all'emulatore oppure l'emulatore non è visualizzato come destinazione di debug in altri IDE
  Se l'emulatore è in esecuzione, ma non sembra essere connesso ad ADB (Bridge Debug Android) o non è visualizzato negli strumenti di Android che usano ADB, ad esempio Studio Android o Eclipse, potrebbe essere necessario modificare le posizioni in cui l'emulatore cerca ADB. L'emulatore utilizza una chiave del Registro di sistema per identificare il percorso di base dell'Android SDK e cerca il file \platform-tools\adb.exe in tale directory. Per modificare il percorso di Android SDK utilizzato dall'emulatore:
@@ -268,7 +268,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
   Riavviare l'emulatore e a questo punto dovrebbe essere in grado di visualizzare l'emulatore connesso a ADB e relativi strumenti Android.
 
 ## <a name="XamarinPlayer"></a> L'emulatore si blocca perché non è stato in grado di configurare la porta UDP
- Questo problema può essere dovuto a un'incompatibilità con Xamarin Player. Se l'emulatore appare bloccato o se viene visualizzato un messaggio di errore che indica che l'emulatore non riesce a connettersi al sistema operativo del dispositivo Non è stato possibile configurare la porta UDP.  quindi alcune funzionalità potrebbero essere disabilitate, è possibile che si stia verificando questo problema. Seguire questa procedura.
+ Questo problema può essere dovuto a un'incompatibilità con Xamarin Player. Se l'emulatore appare bloccato o se viene visualizzato un messaggio di errore che indica che l'emulatore non riesce a connettersi al sistema operativo del dispositivo e non è stato possibile configurare la posta UDP,  quindi alcune funzionalità potrebbero essere disabilitate, è possibile che si stia verificando questo problema. Seguire questa procedura.
 
 1. Disinstallare Xamarin Player.
 
@@ -293,7 +293,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
 6. Riavviare il servizio (in **Azioni**) e riprovare.
 
-## <a name="GooglePlay"></a> Non è possibile eseguire nell'emulatore un'app che usa Google Play Services
+## <a name="GooglePlay"></a> Emulatore non viene eseguita l'applicazione che utilizza Google Play Services
  L'emulatore non viene fornito con le librerie per Google Play Services. Tuttavia, l'emulatore supporta l'installazione per trascinamento di file ZIP che supportano il flashing.
 
 ## <a name="DragAndDrop"></a> Il trascinamento di un file, APK o file ZIP che supportano il flashing non funziona
@@ -302,7 +302,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 ## <a name="Resolution"></a> Risoluzione della schermata non è corretta
  Se acquisire una schermata utilizzando la scheda della schermata nel **Strumenti aggiuntivi** finestra e l'immagine risultante è di dimensioni impreviste, potrebbe essere necessario regolare il livello di zoom della schermata prima di scegliere **acquisire**. L'emulatore viene schermate alla risoluzione dello schermo sul monitor del PC host.
 
-## <a name="OpenGL"></a> L'emulatore non riesce a eseguire il rendering di contenuto OpenGL
+## <a name="OpenGL"></a> Emulatore non riesce a eseguire il rendering OpenGL contenuto
  L'emulatore viene eseguito il rendering di contenuto OpenGL utilizzando GPU del computer host e utilizza il progetto angolo per convertire queste chiamate da e verso DirectX. Se l'applicazione esegue correttamente il rendering in un dispositivo, ma in modo non corretto nell'emulatore, è probabile che il dispositivo è ridurre una chiamata di OpenGL errata (ad esempio l'utilizzo di variabili di shader che non corrispondono).
 
 ## <a name="Multitouch"></a> Emulatore non risponde ai movimenti multitocco
@@ -311,6 +311,6 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 ## <a name="Support"></a> Risorse di supporto
  Se il computer host soddisfa i requisiti di sistema e si verifica un problema non incluso in questa guida alla risoluzione dei problemi:
 
-- Porre una domanda su StackOverflow usando i tag [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.
+- Porre una domanda su StackOverflow usando i tag [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.
 
 - Segnalare un problema usando lo strumento Invia smile in Visual Studio o in Gestione emulatori.

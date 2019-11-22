@@ -11,15 +11,15 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d5049a24b7457adb5ae126a75816814e1295b73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a80aef71271df0a1353dfd73898dbe8fcd7007c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656805"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300922"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Sviluppo di applicazioni flusso di lavoro destinate a Framework .NET 3.0 o Framework .NET 3.5
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] fornisce la [!INCLUDE[wfd1](../includes/wfd1-md.md)] per la creazione di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] che vengono destinate a [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Il progettatore usa l'interfaccia utente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comune per la costruzione grafica e per l'esecuzione del debug di applicazioni flusso di lavoro.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] fornisce le [!INCLUDE[wfd1](../includes/wfd1-md.md)] per la creazione di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] destinate al [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Il progettatore usa l'interfaccia utente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comune per la costruzione grafica e per l'esecuzione del debug di applicazioni flusso di lavoro.
 
  [!INCLUDE[vs2010](../includes/vs2010-md.md)] fornisce inoltre l'accesso a una Progettazione flussi di lavoro legacy che può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Questa sezione include materiale sussidiario sull'uso di questa finestra di progettazione legacy.
 
@@ -29,4 +29,4 @@ ms.locfileid: "72656805"
  [Debug dei flussi di lavoro legacy](../workflow-designer/debugging-legacy-workflows.md)
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Guida alla programmazione di Windows Workflow Foundation](http://go.microsoft.com/fwlink?LinkID=65012)
+ [Guida alla programmazione di Windows Workflow Foundation](https://go.microsoft.com/fwlink?LinkID=65012)

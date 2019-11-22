@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a230b55149152ba1d195f487951323eda855b8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657151"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301400"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso di stub per isolare le parti dell'applicazione tra loro per gli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ I tipi stub* costituiscono una delle due tecnologie offerte dal framework Micros
 
  Poiché gli stub si basano sulla possibilità di strutturare il codice in questo modo, in genere si usano gli stub per isolare una parte dell'applicazione da un'altra. Per isolarlo da altri assembly che non sono sotto controllo, ad esempio System.dll, è di solito consigliabile usare gli shim. Vedere [Uso di shim per isolare l'applicazione da altri assembly per gli unit test](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
 ## <a name="How"></a> Come usare gli stub
 
 ### <a name="Dependency"></a> Progettare l'inserimento di dipendenze
- Per usare gli stub, è necessario progettare l'applicazione in modo che i diversi componenti non dipendano l'uno dall'altro, ma siano dipendenti solo dalle definizioni di interfaccia. Anziché essere accoppiati in fase di compilazione, i componenti vengono connessi in fase di esecuzione. Questo modello consente di progettare software affidabile e facile da aggiornare perché le modifiche non tendono a propagarsi oltre i limiti dei componenti. Si consiglia di usarlo anche in assenza di stub. Se si scrive un nuovo codice, è facile usare il modello per l'[inserimento di dipendenze](http://en.wikipedia.org/wiki/Dependency_injection). Se si scrivono test per un software esistente, potrebbe essere necessario eseguire il refactoring. Se l'operazione è poco pratica, prendere in considerazione l'utilizzo degli shim.
+ Per usare gli stub, è necessario progettare l'applicazione in modo che i diversi componenti non dipendano l'uno dall'altro, ma siano dipendenti solo dalle definizioni di interfaccia. Anziché essere accoppiati in fase di compilazione, i componenti vengono connessi in fase di esecuzione. Questo modello consente di progettare software affidabile e facile da aggiornare perché le modifiche non tendono a propagarsi oltre i limiti dei componenti. Si consiglia di usarlo anche in assenza di stub. Se si scrive un nuovo codice, è facile usare il modello per l'[inserimento di dipendenze](https://en.wikipedia.org/wiki/Dependency_injection). Se si scrivono test per un software esistente, potrebbe essere necessario eseguire il refactoring. Se l'operazione è poco pratica, prendere in considerazione l'utilizzo degli shim.
 
  Questa discussione si apre con un esempio di motivazione, riportato nel diagramma. La classe StockAnalyzer legge i prezzi delle azioni e genera alcuni risultati significativi. Dispone di alcuni metodi pubblici che si desidera vengano testati. Per semplificare le operazioni, verrà esaminato un solo metodo, molto semplice, che restituisce il prezzo corrente di un'azione particolare. Si desidera scrivere uno unit test del metodo. Di seguito è riportata la prima bozza di un test:
 
@@ -224,7 +224,7 @@ End Class
  Gli stub vengono generati per i metodi GET e SET di proprietà, per gli eventi e per i metodi generici.
 
 ### <a name="mocks"></a> Verifica dei valori dei parametri
- È possibile verificare che quando il componente effettua una chiamata a un altro componente vengano passati i valori corretti. È possibile inserire un'asserzione nello stub oppure memorizzare il valore e verificarlo nella parte principale del test. Esempio:
+ È possibile verificare che quando il componente effettua una chiamata a un altro componente vengano passati i valori corretti. È possibile inserire un'asserzione nello stub oppure memorizzare il valore e verificarlo nella parte principale del test. Di seguito è riportato un esempio:
 
 ```csharp
 [TestClass]
@@ -400,7 +400,7 @@ public void TestGetValue()
  Se il codice deve chiamare `GetValue<T>` con qualsiasi altra creazione dell'istanza, lo stub chiama semplicemente il comportamento.
 
 ### <a name="BKMK_Partial_stubs"></a> Stub di classi virtuali
- Negli esempi precedenti gli stub sono stati generati dalle interfacce. È anche possibile generare gli stub da una classe che contiene membri virtuali o astratti. Esempio:
+ Negli esempi precedenti gli stub sono stati generati dalle interfacce. È anche possibile generare gli stub da una classe che contiene membri virtuali o astratti. Di seguito è riportato un esempio:
 
 ```csharp
 // Base class in application under test
@@ -471,8 +471,8 @@ StubBehaviors.Current =
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="guidance"></a>Informazioni aggiuntive
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Materiale sussidiario
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Vedere anche
  [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

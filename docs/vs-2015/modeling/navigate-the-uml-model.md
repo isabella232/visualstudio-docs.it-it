@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668549"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289854"
 ---
 # <a name="navigate-the-uml-model"></a>Esplorare il modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "72668549"
 Questo argomento introduce i principali tipi di modello UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Elementi del modello, modello e archivio modelli
- I tipi definiti nell'assembly **Microsoft. VisualStudio. Uml. Interfaces. dll** corrispondono ai tipi definiti nella [specifica UML, versione 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ I tipi definiti nell'assembly **Microsoft. VisualStudio. Uml. Interfaces. dll** corrispondono ai tipi definiti nella [specifica UML, versione 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
  I tipi nella specifica UML vengono rappresentati come interfacce in Visual Studio. La lettera "I" viene anteposta al nome di ogni tipo. Ad esempio: [IElement](/previous-versions/dd516035(v=vs.140)), [iCLASS](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
@@ -45,7 +45,7 @@ Questo argomento introduce i principali tipi di modello UML.
 
  Se si elimina un elemento dal modello, viene automaticamente eliminata qualsiasi relazione di cui fa parte e la proprietà all'altra estremità viene aggiornata.
 
- Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che la proprietà .NET è di tipo: `IEnumerable<`*tipo* `>`.
+ Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che il tipo della proprietà .NET è `IEnumerable<`*Tipo*`>`.
 
  Per altre informazioni sull'attraversamento delle relazioni, vedere [esplorare le relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "Errore: Debug non è riuscita perché non è abilitata l'autenticazione integrata di Windows | Microsoft Docs"
+title: "Errore: debug non riuscito perché l'autenticazione integrata di Windows non è abilitata | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 074c6c1cace31797e46a192ec0891f1e13dac22b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684267"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299783"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: Errore di debug. L'autenticazione integrata di Windows non è abilitata
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione. Questo errore può verificarsi quando si tenta di eseguire un'applicazione Web o un servizio Web XML. Una causa di questo errore è la mancata attivazione dell'autenticazione di Windows integrata. Per attivarla, seguire i passaggi della procedura relativa all'attivazione dell'autenticazione integrata di Windows.  
@@ -71,7 +71,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
 2. Attivare Autenticazione di Windows e Compatibilità di gestione con IIS 6, se tale operazione non è stata già effettuata, seguendo questi passaggi:  
   
-    1. Fare clic su **avviare**, fare clic su **Pannello di controllo** e quindi fare clic su **programmi**.  
+    1. Fare clic sul pulsante **Start**, scegliere **Pannello di controllo** , quindi fare clic su **programmi**.  
   
     2. In **Programmi e funzionalità** fare clic su **Attivazione o disattivazione delle funzionalità Windows**.  
   
@@ -101,7 +101,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
 4. Selezionare **Visualizzazione classica**, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-5. Nella colonna **Nome** fare doppio clic su **Gestione Internet Information Services (IIS)**.  
+5. Nella colonna **Nome** fare doppio clic su **Gestione Internet Information Services (IIS)** .  
   
 6. Nella colonna **Connessioni** espandere il nodo del server.  
   
@@ -115,9 +115,9 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
 9. Nella colonna **Nome** del riquadro **Autenticazione** fare clic con il pulsante destro del mouse su **Autenticazione di Windows**, quindi scegliere **Attiva**.  
   
-10. Chiudere la finestra **Gestione Internet Information Services (IIS)**.  
+10. Chiudere la finestra **Gestione Internet Information Services (IIS)** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticazione digest Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [Esecuzione di applicazioni Web in Windows Vista con IIS 7.0 e Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Autenticazione digest Microsoft](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

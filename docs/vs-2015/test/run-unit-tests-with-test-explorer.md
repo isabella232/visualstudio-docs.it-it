@@ -10,20 +10,20 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9a860ad5408038cced1f5aa2ac20420e35a1240a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56f2d4cb0b02cc661177a4f781a5c40db924ee2c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672213"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302109"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esplora Test consente di eseguire unit test da Visual Studio o progetti unit test di terze parti, raggruppare i test in categorie, filtrare l'elenco dei test, nonché creare, salvare ed eseguire playlist di test. È anche possibile eseguire il debug dei test e analizzare code coverage e prestazioni dei test.
 
-## <a name="BKMK_Contents"></a> Contenuto
- [Framework unit test e progetti di test](#BKMK_Unit_test_frameworks_and_test_projects)
+## <a name="BKMK_Contents"></a> Sommario
+ [Framework di unit test e progetti di test](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Eseguire test in Esplora test](#BKMK_Run_tests_in_Test_Explorer)
 
@@ -37,7 +37,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
  [Risorse esterne](#BKMK_External_resources)
 
-## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Framework di unit test e progetti di test
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Framework unit test e progetti di test
  Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Esplora test può tuttavia eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
  Esplora test può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET Framework, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET Framework, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++.
@@ -47,7 +47,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 ## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Eseguire test in Esplora test
  [Eseguire i test](#BKMK_Run_tests) **&#124;** [Eseguire i test dopo ogni compilazione](#BKMK_Run_tests_after_every_build)
 
- Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
+ Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows** e infine **Esplora test**.
 
  ![Esplora unit test](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
@@ -59,7 +59,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
  ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
-### <a name="BKMK_Run_tests"></a> Esegui test
+### <a name="BKMK_Run_tests"></a> Eseguire i test
  È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Effettuare una delle operazioni riportate di seguito:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
@@ -74,7 +74,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
   ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
-### <a name="BKMK_Run_tests_after_every_build"></a> Eseguire test dopo ogni compilazione
+### <a name="BKMK_Run_tests_after_every_build"></a> Eseguire i test dopo ogni compilazione
 
 > [!WARNING]
 > L'esecuzione di unit test dopo ogni compilazione è supportata in Visual Studio Enterprise.
@@ -128,9 +128,9 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
-|Raggruppa|Descrizione|
+|Raggruppa|description|
 |-----------|-----------------|
-|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
+|**Durata**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio** e **Lento**.|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|
@@ -142,9 +142,9 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
  **Tratti nel framework di unit test Microsoft per il codice gestito**
 
- Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:
+ Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. Il framework di test contiene anche i tratti predefiniti seguenti:
 
-|Tratto|Descrizione|
+|Tratto|description|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
@@ -153,7 +153,7 @@ Esplora Test consente di eseguire unit test da Visual Studio o progetti unit tes
 
  **Tratti nel framework di unit test Microsoft per C++**
 
- Per definire un tratto, usare la macro `TEST_METHOD_ATTRIBUTE` . Ad esempio, per definire un tratto denominato `TEST_MY_TRAIT`:
+ Per definire un tratto, usare la macro `TEST_METHOD_ATTRIBUTE`. Ad esempio, per definire un tratto denominato `TEST_MY_TRAIT`:
 
 ```cpp
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)
@@ -177,7 +177,7 @@ TEST_METHOD(Method1)
 
 ### <a name="c-trait-attribute-macros"></a>Macro di attributo di tratto C++
 
-|Macro|Descrizione|
+|Macro|description|
 |-----------|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Usare la macro TEST_METHOD_ATTRIBUTE per definire un tratto.|
 |`TEST_OWNER(ownerAlias)`|Usare il tratto Owner predefinito per specificare un proprietario del metodo di test.|
@@ -203,7 +203,7 @@ TEST_METHOD(Method1)
 > [!NOTE]
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
 
-|Qualificatore|Descrizione|
+|Qualificatore|description|
 |---------------|-----------------|
 |**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
@@ -219,7 +219,7 @@ TEST_METHOD(Method1)
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 
- Di seguito è riportato un esempio:
+ Ad esempio,
 
 ```
 FullName:"MyClass" - FullName:"PerfTest"
@@ -230,13 +230,13 @@ FullName:"MyClass" - FullName:"PerfTest"
  ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
 ## <a name="BKMK_Create_custom_playlists"></a> Creare playlist personalizzate
- È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco saranno visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test** .
+ È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test inclusi nell'elenco saranno visualizzati in Esplora test. È possibile aggiungere un test a più playlist e tutti i test del progetto saranno disponibili quando si sceglie la playlist predefinita **Tutti i test**.
 
  ![Scegliere una playlist](../test/media/ute-playlist.png "UTE_Playlist")
 
- **Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist**, **Nuova playlist**dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist** .
+ **Per creare una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist**, **Nuova playlist** dal menu di scelta rapida. Salvare il file con il nome e il percorso specificati nella finestra di dialogo **Crea nuova playlist**.
 
- **Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist**dal menu di scelta rapida e quindi scegliere la playlist a cui aggiungere i test.
+ **Per aggiungere test a una playlist**, scegliere uno o più test in Esplora Test. Scegliere **Aggiungi a playlist** dal menu di scelta rapida e quindi scegliere la playlist a cui aggiungere i test.
 
  **Per aprire una playlist**, scegliere Test, Playlist dal menu di Visual Studio e quindi scegliere nell'elenco delle playlist usate di recente oppure scegliere Apri playlist per specificare il nome e il percorso della playlist.
 
@@ -257,7 +257,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
-   Per altre informazioni sul debugger, vedere [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Per altre informazioni sul debugger, vedere [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
    ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
@@ -283,14 +283,14 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    La finestra Risultati code coverage mostra la percentuale di blocchi di codice del prodotto esaminati in base a riga, funzione, classe, spazio dei nomi e modulo.
 
-   Per altre informazioni, vedere [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+   Per altre informazioni, vedere [Using Code Coverage to Determine How Much Code is being Tested](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
    ![Torna al](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [contenuto](#BKMK_Contents) principale
 
 ## <a name="BKMK_External_resources"></a> Risorse esterne
 
 ### <a name="BKMK_Guidance"></a> Materiale sussidiario
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Vedere anche
  [Unit test il codice](../test/unit-test-your-code.md) [esegue un unit test come processo a 64 bit](../test/run-a-unit-test-as-a-64-bit-process.md)

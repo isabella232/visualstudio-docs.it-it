@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157116"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295825"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +47,14 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
   
  I bug di concorrenza sono notoriamente difficili da riprodurre, diagnosticare e sottoporre al debug perché sono non deterministici. Ragionare sull'interfoliazione dei thread è difficile idealmente e quindi praticamente quando si progetta un corpo di codice che dispone di più di un thread. Pertanto, è consigliabile seguire una disciplina di blocco nei programmi multithread. Ad esempio, obbedendo a un ordine di blocco mentre si acquisiscono molteplici blocchi aiuta ad evitare deadlock e acquisendo correttamente la guardia del blocco prima di accedere ad una risorsa condivisa aiuta a impedire una race condition.  
   
- Sfortunatamente, queste regole di blocco in apparenza semplici sono sorprendentemente difficili da utilizzare nella pratica. Una limitazione fondamentale in linguaggi di programmazione e i compilatori di oggi è che non direttamente supportano la specifica e analisi dei requisiti di concorrenza. I programmatori devono fare affidamento sui commenti informali del codice per esprime le intenzioni su come utilizzare i blocchi.  
+ Sfortunatamente, queste regole di blocco in apparenza semplici sono sorprendentemente difficili da utilizzare nella pratica. Una limitazione fondamentale nei linguaggi di programmazione e nei compilatori odierni consiste nel fatto che non supportano direttamente la specifica e l'analisi dei requisiti di concorrenza. I programmatori devono fare affidamento sui commenti informali del codice per esprime le intenzioni su come utilizzare i blocchi.  
   
  Le annotazioni di concorrenza SAL sono progettate per specificare gli effetti collaterali del blocco, la responsabilità del blocco, la tutela di dati, la gerarchia d'ordine e altri comportamenti previsti del blocco. Creando regole implicite esplicite, le annotazioni di concorrenza SAL forniscono un metodo coerente per documentare come il codice utilizza le regole di blocco. Le annotazioni di concorrenza migliorano anche la capacità degli strumenti di analisi del codice di trovare race condition, deadlock, operazioni di sincronizzazione non corrispondenti e altri difficili errori di concorrenza.  
   
-## <a name="general-guidelines"></a>Linee guida generali  
+## <a name="general-guidelines"></a>Indicazioni generali  
  Utilizzando le annotazioni è possibile indicare i contratti impliciti nelle definizioni di funzione tra le implementazioni (chiamati) e i client (chiamanti) ed esprimere invarianti e altre proprietà del programma che possono migliorare ulteriormente l'analisi.  
   
- SAL supporta molti tipi diversi di primitive di blocco, come ad esempio le sezioni critiche, i mutex, gli spinlock e altri oggetti risorsa. Le annotazioni di concorrenza molti hanno un'espressione di blocco come parametro. Per convenzione, un blocco è identificato dall'espressione del percorso dell'oggetto sottostante di blocco.  
+ SAL supporta molti tipi diversi di primitive di blocco, come ad esempio le sezioni critiche, i mutex, gli spinlock e altri oggetti risorsa. Molte annotazioni di concorrenza accettano un'espressione di blocco come parametro. Per convenzione, un blocco è indicato dall'espressione di percorso dell'oggetto blocco sottostante.  
   
  Alcune regole sulla proprietà dei thread da tenere in considerazione:  
   
@@ -64,19 +64,19 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
   
 - I semafori e gli eventi sono considerati blocchi contati che non che dispongono della proprietà dei thread.  
   
-## <a name="locking-annotations"></a>Annotazioni di bloccante  
- Nella tabella seguente sono elencate le annotazioni di bloccante.  
+## <a name="locking-annotations"></a>Annotazioni di blocco  
+ Nella tabella seguente sono elencate le annotazioni di blocco.  
   
-|Annotazione|Descrizione|  
+|Annotazione|description|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|  
 |`_Acquires_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|  
 |`_Acquires_nonreentrant_lock_(expr)`|Il blocco denominato da `expr` viene acquisito.  Viene restituito un errore se il blocco è già utilizzato.|  
 |`_Acquires_shared_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi condivisi dell'oggetto di blocco denominato da `expr`.|  
 |`_Create_lock_level_(name)`|Un'istruzione che dichiara il simbolo `name` come un livello di blocco in modo che possa essere utilizzato nelle annotazioni `_Has_Lock_level_` e `_Lock_level_order_`.|  
-|`_Has_lock_kind_(kind)`|Annota un qualsiasi oggetto per perfezionare le informazioni sul tipo di un oggetto risorsa. In alcuni casi viene utilizzato un tipo comune per diversi tipi di risorse e il tipo di overload non è sufficiente per distinguere i requisiti di semantici tra varie risorse. Di seguito è riportato un elenco di parametri `kind` predefiniti:<br /><br /> `_Lock_kind_mutex_`<br /> ID tipo di blocco per i mutex.<br /><br /> `_Lock_kind_event_`<br /> ID tipo di blocco per gli eventi.<br /><br /> `_Lock_kind_semaphore_`<br /> ID tipo di blocco per i semafori.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID tipo di blocco per SpinLock.<br /><br /> `_Lock_kind_critical_section_`<br /> ID tipo di blocco per le sezioni critiche.|  
+|`_Has_lock_kind_(kind)`|Annota qualsiasi oggetto per perfezionare le informazioni sul tipo di un oggetto risorsa. A volte viene usato un tipo comune per diversi tipi di risorse e il tipo di overload non è sufficiente per distinguere i requisiti semantici tra le varie risorse. Di seguito è riportato un elenco di parametri `kind` predefiniti:<br /><br /> `_Lock_kind_mutex_`<br /> ID del tipo di blocco per mutex.<br /><br /> `_Lock_kind_event_`<br /> ID del tipo di blocco per gli eventi.<br /><br /> `_Lock_kind_semaphore_`<br /> ID del tipo di blocco per i semafori.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID del tipo di blocco per i blocchi di rotazione.<br /><br /> `_Lock_kind_critical_section_`<br /> ID del tipo di blocco per le sezioni critiche.|  
 |`_Has_lock_level_(name)`|Annota un oggetto di blocco e lo fornisce al livello di blocco `name`.|  
-|`_Lock_level_order_(name1, name2)`|Un'istruzione che fornisce il blocco di ordinamento tra `name1` e `name2`.|  
+|`_Lock_level_order_(name1, name2)`|Istruzione che fornisce l'ordinamento dei blocchi tra `name1` e `name2`.|  
 |`_Post_same_lock_(expr1, expr2)`|Annota una funzione e indica che lo stato successivo dei due blocchi `expr1` e `expr2`, verrà considerato come se fosse lo stesso oggetto di blocco.|  
 |`_Releases_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|  
 |`_Releases_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|  
@@ -89,32 +89,32 @@ Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'
 |`_Requires_exclusive_lock_held_(expr)`|Annota una funzione e indica che nello stato precedente il conteggio dei blocchi esclusivi dell'oggetto denominato da `expr` è di almeno uno.|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrinseci SAL per oggetti di blocco non esposti  
- Alcuni oggetti di blocco non sono esposte dall'implementazione delle funzioni di blocco associate.  Nella tabella seguente sono elencate le variabili intrinseche SAL che abilitano le annotazioni sulle funzioni che operano sugli oggetti di blocco non esposti.  
+ Determinati oggetti Lock non vengono esposti dall'implementazione delle funzioni di blocco associate.  Nella tabella seguente sono elencate le variabili intrinseche SAL che abilitano le annotazioni sulle funzioni che operano sugli oggetti di blocco non esposti.  
   
-|Annotazione|DESCRIZIONE|  
+|Annotazione|description|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Viene descritto lo spin lock di annullamento.|  
 |`_Global_critical_region_`|Viene descritta l'area critica.|  
 |`_Global_interlock_`|Vengono descritte le operazioni con interlock.|  
 |`_Global_priority_region_`|Viene descritta la regione di prioritaria.|  
   
-## <a name="shared-data-access-annotations"></a>Annotazioni dei dati condivisa per l'accesso  
+## <a name="shared-data-access-annotations"></a>Annotazioni di accesso ai dati condivise  
  Nella tabella seguente sono elencate le annotazioni per l'accesso ai dati condivisi.  
   
-|Annotazione|Descrizione|  
+|Annotazione|description|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Annota una variabile e indica se la variabile è accessibile, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|  
 |`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)`.|  
-|`_Interlocked_operand_`|Il parametro della funzione con annotazioni è l'operando di destinazione di una delle varie funzioni Interlocked.  Tali operandi devono avere le proprietà aggiuntive specifiche.|  
+|`_Interlocked_operand_`|Il parametro della funzione con annotazioni è l'operando di destinazione di una delle varie funzioni Interlocked.  Tali operandi devono disporre di proprietà aggiuntive specifiche.|  
 |`_Write_guarded_by_(expr)`|Annota una variabile e indica se la variabile è modificata, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Uso delle annotazioni SAL per ridurreC++ i difetti di C/codice](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [Informazioni su SAL](../code-quality/understanding-sal.md)   
  [Annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annotazione del comportamento (funzione)](../code-quality/annotating-function-behavior.md)   
- [Annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)   
- [Specificare quando e dove applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
+ [Annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)   
+ [Annotazione di struct e classi](../code-quality/annotating-structs-and-classes.md)   
+ [Specificare quando e dove si applica un'Annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funzioni intrinseche](../code-quality/intrinsic-functions.md)   
- [Esempi e procedure consigliate](../code-quality/best-practices-and-examples-sal.md)   
- [Blog del Team di analisi del codice](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [Procedure consigliate ed esempi](../code-quality/best-practices-and-examples-sal.md)   
+ [Blog del team di analisi del codice](https://go.microsoft.com/fwlink/p/?LinkId=251197)

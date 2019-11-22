@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug di stili CSS tramite DOM Explorer | Microsoft Docs
+title: Eseguire il debug di stili CSS usando DOM Explorer | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,17 +20,17 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 05d8cafce91fa55c515457b9f44779a06586387a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409494"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299495"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Eseguire il debug di stili CSS tramite DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content. png "windows_and_phone_content")  
   
  Quando si esegue il debug delle app di Windows Store o di Windows Phone Store e di app create usando Strumenti di Visual Studio per Apache Cordova, è possibile visualizzare e modificare le regole CSS per alcuni elementi DOM e i relativi elementi figlio.  
   
@@ -48,7 +48,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 - Usare la scheda **Modifiche** (solo per app di Windows Store e Windows Phone Store) per identificare e tenere traccia degli stili CSS modificati durante la sessione di debug.  
   
 > [!TIP]
-> Le modifiche apportate nelle schede **Stili** e **Calcolata** non sono permanenti, vengono infatti perse quando si arresta il debug. Per modificare il codice sorgente e ricaricare le pagine senza arrestare e riavviare il debugger, aggiornare l'app usando il ![pulsante di aggiornamento Windows app](../debugger/media/js-refresh.png "JS_Refresh") pulsante (**Windows aggiorna app** ) sul **Debug** (solo app Windows Store e Windows Phone Store) sulla barra degli strumenti. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Le modifiche apportate nelle schede **Stili** e **Calcolata** non sono permanenti, vengono infatti perse quando si arresta il debug. Per modificare il codice sorgente e ricaricare le pagine senza arrestare e riavviare il debugger, aggiornare l'app usando il pulsante ![Aggiorna applicazione Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Aggiorna applicazione Windows**) nella barra degli strumenti **debug** (solo Windows Store e app Windows Phone di Windows Store). Per altre informazioni, vedere [aggiornare un'app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Esempio di correzione di una regola CSS  
  Questo esempio illustra come controllare le regole CSS ed eseguire il debug di un problema di stile. Per questo esempio, si supponga di voler modificare il colore di un carattere usato per visualizzare i titoli di gruppo nel modello Applicazione divisa di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
@@ -91,23 +91,23 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 4. Selezionare **Simulatore** nell'elenco a discesa della barra degli strumenti **Debug** (**Computer locale** è il valore predefinito).  
   
-     ![Elenco di destinazioni di debug selezionare](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Selezionare l'elenco destinazione di debug](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 5. Premere F5 per eseguire l'app in modalità debug.  
   
-     Quando l'app ha terminato di caricare, esaminare le intestazioni degli elementi dell'elenco, ad esempio **titolo gruppo: 1**. Il colore rimane invariato, quindi il tentativo di applicare un colore arancione ai titoli non ha funzionato. Si cercherà di capire qual è la causa dell'errore che verrà risolto usando le schede CSS in DOM Explorer.  
+     Al termine del caricamento dell'app, osservare le intestazioni degli elementi dell'elenco, ad esempio **Titolo gruppo: 1**. Il colore rimane invariato, quindi il tentativo di applicare un colore arancione ai titoli non ha funzionato. Si cercherà di capire qual è la causa dell'errore che verrà risolto usando le schede CSS in DOM Explorer.  
   
     > [!TIP]
     > Dopo che l'app viene visualizzata nel simulatore, posizionare il simulatore proprio accanto alla finestra di Visual Studio in modo che sia possibile osservare immediatamente i risultati delle selezioni e le modifiche apportate agli stili CSS.  
   
-6. Passare a Visual Studio e fare clic su **Seleziona elemento** in DOM Explorer (o premere CTRL+B). In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic. Ecco il pulsante **Seleziona elemento** . ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Passare a Visual Studio e fare clic su **Seleziona elemento** in DOM Explorer (o premere CTRL+B). In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic. Ecco il pulsante **Seleziona elemento** . ![Pulsante Seleziona elemento in DOM Explorer](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button ")  
   
     > [!TIP]
-    > È anche possibile selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > È anche possibile selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-7. Nel simulatore al passaggio del mouse sul titolo del primo elemento nell'elenco, **titolo gruppo: 1**, nel riquadro sinistro della home page. Il titolo è evidenziato come illustrato qui:  
+7. Nel simulatore passare il mouse sul titolo del primo elemento nell'elenco, **Titolo gruppo: 1**, nel riquadro sinistro della home page. Il titolo è evidenziato come illustrato qui:  
   
-     ![Con il pulsante Seleziona elemento](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
+     ![Uso del pulsante Seleziona elemento](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     > L'emulatore Windows Phone supporta solo in parte l'evidenziazione degli elementi al passaggio del mouse.  
@@ -136,13 +136,13 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 9. Deselezionare la casella di controllo per la prima occorrenza dello stile `color` , ovvero per il selettore `.itemspage .itemslist .item .item-overlay .item-title` . A questo punto, nel simulatore si vedrà che il colore dei titoli dell'elemento diventa arancione, come previsto, e non viene più eseguito l'override del selettore modificato in CSS `.itemspage .itemslist .item`, (non viene più applicato il testo barrato). Di seguito è riportata la scheda **Calcolata** dopo aver deselezionato la casella di controllo.  
   
-     ![La scheda calcolati dopo aver aggiornato lo stile CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![Scheda calcolata dopo l'aggiornamento dello stile CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. Selezionare la scheda **Modifiche** .  
   
      Usare la scheda **Modifiche** per identificare e tenere traccia delle modifiche degli stili apportate durante la sessione di debug. La figura seguente illustra il selettore `.itemspage .itemslist .item .item-overlay .item-title` nella scheda **Modifiche** , di cui è stato eseguito l'override.  
   
-     ![Scheda modifiche di DOM Explorer](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
+     ![Scheda modifiche della DOM Explorer](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
 11. È anche possibile modificare manualmente i valori di stile CSS e visualizzare il risultato immediato tramite la scheda **Stili** .  
   
@@ -154,10 +154,10 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 15. Usare la tastiera per modificare questo valore. Sostituirlo con `rgb(255, 255, 0, 0.87)`e quindi premere INVIO. I colori dei titoli degli elementi nel simulatore vengono tutti cambiati in giallo.  
   
-16. Per apportare modifiche al file CSS di origine, fare clic sul collegamento **items.css** nella scheda **Stili** . Verrà aperto items.css, dove è possibile modificare il valore dello stile `color` nel codice dell'app. Per aggiornare l'app senza arrestare e riavviare il debugger, fare clic sui ![pulsante di aggiornamento Windows app](../debugger/media/js-refresh.png "JS_Refresh") (**Aggiorna Windows app**) pulsante il **Eseguire il debug** sulla barra degli strumenti.  
+16. Per apportare modifiche al file CSS di origine, fare clic sul collegamento **Items. CSS** nella scheda **stili** . Verrà aperto Items. CSS, in cui è possibile modificare il valore dello stile del `color` nel codice dell'app. Per aggiornare l'app senza arrestare e riavviare il debugger, fare clic sul pulsante ![Aggiorna applicazione Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Aggiorna applicazione Windows**) sulla barra degli strumenti **debug** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Eseguire il debug di layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
- [Visualizzare listener di eventi DOM](../debugger/view-dom-event-listeners.md)   
- [Supporto tecnico e accessibilità](http://go.microsoft.com/fwlink/?LinkId=253502)
+ [Guida introduttiva: eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Eseguire il debug del layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
+ [Visualizza listener di eventi DOM](../debugger/view-dom-event-listeners.md)   
+ [Supporto tecnico e accessibilità](https://go.microsoft.com/fwlink/?LinkId=253502)

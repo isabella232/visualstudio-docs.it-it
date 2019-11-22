@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673815"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297906"
 ---
 # <a name="network-usage"></a>Utilizzo della rete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
  Lo strumento Rete supporta solo app della piattaforma Windows Universal. Altre piattaforme non sono attualmente supportate.  
   
 > [!NOTE]
-> Per una descrizione più completa dello strumento Rete, vedere [Introducing Visual Studio's network tool](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx) (Introduzione allo strumento Rete di Visual Studio).  
+> Per una descrizione più completa dello strumento Rete, vedere [Introducing Visual Studio's network tool](https://devblogs.microsoft.com/visualstudio/?m=20155) (Introduzione allo strumento Rete di Visual Studio).  
   
 ## <a name="collecting-network-tool-data"></a>Raccolta dei dati dello strumento di rete  
  È consigliabile eseguire lo strumento **Rete** con un progetto di Visual Studio aperto nel computer di Visual Studio.  
   
 1. Aprire il progetto in Visual Studio.  
   
-2. Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere **Rete** e quindi **Avvia**.  
+2. Nel menu fare clic su **debug/Profiler prestazioni...** . Scegliere **rete**, quindi scegliere **Avvia**.  
   
 3. Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
   
@@ -41,18 +41,18 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
    La finestra di report dovrebbe essere analoga alla seguente:  
   
-   ![Finestra dello strumento Rete](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Finestra di rete](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analisi dei dati  
  È possibile analizzare il traffico HTTP acquisito mentre l'applicazione è in esecuzione o anche dopo che l'applicazione è stata chiusa, selezionando una delle operazioni di rete visualizzate nella visualizzazione di riepilogo.  
   
- Nella visualizzazione di riepilogo dello strumento **Rete** sono visualizzati i dati relativi alle singole operazioni di rete che si sono verificate durante l'esecuzione dell'app. Scegliere un'intestazione di colonna per ordinare l'elenco oppure scegliere i tipi di contenuto da visualizzare nella visualizzazione del filtro **Tipo di contenuto**.  
+ Nella visualizzazione di riepilogo di **Rete** sono visualizzati i dati relativi a ogni operazione di rete nell’esecuzione dell’app. Scegliere un'intestazione di colonna per ordinare l'elenco oppure scegliere i tipi di contenuto da visualizzare nella visualizzazione del filtro **Tipo di contenuto**.  
   
  Scegliere **Salva come HAR** per creare un file JSON utilizzabile da strumenti di terze parti come Fiddler.  
   
  Nelle visualizzazioni dei dettagli dello strumento **Rete** sono visualizzate maggiori informazioni su un'operazione di rete presente nella visualizzazione di riepilogo.  
   
- ![Riquadro dei dettagli dello strumento Rete](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
+ ![Riquadro dei dettagli dello strumento di rete](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
 |||  
 |-|-|  
@@ -62,9 +62,9 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 |**Cookie**|Dati relativi ai cookie di richiesta e risposta.|  
 |**Intervalli**|Grafico delle fasi di acquisizione delle risorse selezionate.|  
   
- La barra di **riepilogo** dello strumento Rete indica il numero di operazioni di rete visualizzate in un determinato momento, la quantità di dati trasferita, il tempo impiegato per il download e il numero di errori (richieste con risposte 4xx o 5xx) visibili.  
+ La barra di **riepilogo** di Rete indica il numero di operazioni di rete visualizzate in qualsiasi punto, la quantità di dati trasferita, il tempo impiegato per il download e il numero di errori (richieste con risposte 4xx o 5xx) visibili.  
   
-### <a name="analysis-tips"></a>Suggerimenti sull’analisi   
+### <a name="analysis-tips"></a>Suggerimenti sull’analisi  
  Questo strumento evidenzia determinate aree che possono essere utili quando si esegue l’analisi correlata alla rete:  
   
 1. Le richieste gestite completamente dalla cache vengono visualizzate come **(dalla cache)** nella colonna **Ricevute**. Ciò consente di determinare se si sta utilizzando la cache in modo efficace per risparmiare la larghezza di banda dell’utente o se si stanno erroneamente memorizzando nella cache risposte fornendo agli utenti finali dell'applicazione dati obsoleti.  
@@ -74,6 +74,6 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 3. Il pulsante di stampa della risposta (all'interno della scheda corpo) consente di analizzare i paylod di risposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando la leggibilità del contenuto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Strumenti di profilatura senza il debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog di Visual Studio: Introduzione a controllo di rete di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Video di Channel 9: Strumenti di diagnostica di Visual Studio – nuovo Profiler di rete](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Esegui gli strumenti di profilatura senza debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Blog di Visual Studio: Introduzione al controllo di rete di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Video di Channel 9: Strumenti di diagnostica di Visual Studio - Nuovo Profiler di rete](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

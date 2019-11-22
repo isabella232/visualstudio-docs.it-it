@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dba4e9143c02a76763372a12153b2e22f612959c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624434"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298128"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script di Windows PowerShell)
 ## <a name="syntax"></a>Sintassi
@@ -57,7 +57,7 @@ Nome della sottoscrizione di Azure in cui si vuole creare il sito Web.
 | Caratteri jolly accettati? |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
 
 | Parametro | Valore predefinito |
 | --- | --- |

@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651407"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294235"
 ---
 # <a name="maintaining-security"></a>Gestione della sicurezza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Si afferma spesso che il prezzo da pagare per la sicurezza sia dato da una vigil
 
  Inoltre, non è sufficiente vigilare la propria applicazione, ma occorre tenersi aggiornati rispetto alle minacce e ai punti deboli della piattaforma sulla quale questa viene eseguita e su altri eventuali prodotti dai quali potrebbe dipendere.
 
- [Sicurezza, privacy e account](http://go.microsoft.com/fwlink/?LinkId=72881) Ottieni assistenza per sicurezza, privacy e account utente, incluse informazioni su virus, password, controlli padre, firewall e crittografia unità.
+ [Sicurezza, privacy e account](https://go.microsoft.com/fwlink/?LinkId=72881) Ottieni assistenza per sicurezza, privacy e account utente, incluse informazioni su virus, password, controlli padre, firewall e crittografia unità.
 
  [Microsoft Security Bulletin Search](/security-updates/) Questa pagina consente di trovare più facilmente i bollettini rilasciati in precedenza. Destinati ai professionisti del settore IT, tali articoli sulla sicurezza forniscono informazioni approfondite sulle ultime novità dell'argomento.
 

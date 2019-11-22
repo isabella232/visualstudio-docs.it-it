@@ -13,20 +13,20 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194951"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301109"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id regola | DA0018 |  
-| Categoria | Utilizzo degli strumenti di profilatura |  
+ID regola | DA0018 |  
+| Categoria | Utilizzo Strumenti di profilatura |  
 | Metodo di profilatura | Campionamento |  
-| Messaggio | Gestire le allocazioni di memoria per raggiungere il limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria.|  
+| Messaggio | Le allocazioni di memoria gestite si avvicinano al limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria.|  
 | Tipo di regola | Avviso |  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.  
@@ -54,7 +54,7 @@ Id regola | DA0018 |
   
 - ottimizzazione dell'utilizzo delle risorse di memoria gestita da parte dell'applicazione  
   
-   -oppure-  
+   oppure  
   
 - esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit  
   
@@ -64,7 +64,7 @@ Id regola | DA0018 |
   
   Usare la [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md) per determinare il percorso di esecuzione che ha comportato queste allocazioni.  
   
-  Per altre informazioni su come migliorare le prestazioni di Garbage Collection, vedere l'articolo tecnico di .NET Framework, [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) (Nozioni fondamentali su Garbage Collector e suggerimenti sulle prestazioni) sul sito Web MSDN.  
+  Per altre informazioni su come migliorare le prestazioni di Garbage Collection, vedere l'articolo tecnico di .NET Framework, [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=177946) (Nozioni fondamentali su Garbage Collector e suggerimenti sulle prestazioni) sul sito Web MSDN.  
   
   Per limitare i vincoli della memoria virtuale sull'architettura alla dimensione della parte privata di uno spazio degli indirizzi del processo, provare a eseguire questo processo a 32 bit su un computer a 64 bit.  Un processo a 32 bit su un computer a 64 bit può acquisire fino a 4 GB di memoria virtuale privata.  
   

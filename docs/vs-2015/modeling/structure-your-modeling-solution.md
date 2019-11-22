@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: edf9eaee512eda7439d1beea7303cd0e74b27178
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661031"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298165"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 
@@ -26,7 +26,7 @@ Per iniziare rapidamente un progetto o un sottoprogetto, è utile avere un model
 
 Questo argomento presuppone che si lavori su un progetto abbastanza grande per richiedere la collaborazione di più membri del team ed eventualmente di più team. Il codice e i modelli del progetto sono archiviati in un sistema di controllo del codice sorgente quale [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Almeno alcuni membri del team usano Visual Studio per sviluppare i modelli, mentre altri membri possono visualizzarli con altre versioni di Visual Studio.
 
-Per individuare le versioni di Visual Studio che supportano ogni strumento e funzionalità di modellazione, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per informazioni sulle versioni di Visual Studio che supportano ogni strumento e funzionalità di modellazione, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Struttura della soluzione
 
@@ -34,13 +34,13 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 #### <a name="to-divide-an-application-into-layers"></a>Per suddividere un'applicazione in livelli
 
-1. Basare la struttura delle soluzioni sulla struttura dell'applicazione, ad esempio applicazione Web, applicazione di servizio o applicazione desktop. Un'ampia gamma di architetture comuni è illustrata in [archetipi delle applicazioni nella Guida all'architettura delle applicazioni Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Basare la struttura delle soluzioni sulla struttura dell'applicazione, ad esempio applicazione Web, applicazione di servizio o applicazione desktop. Un'ampia gamma di architetture comuni è illustrata in [archetipi delle applicazioni nella Guida all'architettura delle applicazioni Microsoft](https://go.microsoft.com/fwlink/?LinkId=196681).
 
 2. Creare una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], che verrà denominata soluzione Architecture. Questa soluzione verrà usata per creare la progettazione complessiva del sistema. Conterrà modelli ma non il codice.
 
     Aggiungere un diagramma livello alla soluzione. Nel diagramma livello tracciare l'architettura scelta per l'applicazione. Ad esempio, il diagramma potrebbe mostrare i seguenti livelli con le reciproche dipendenze: presentazione, logica di business e dati.
 
-    È possibile creare contemporaneamente il diagramma livello e una nuova soluzione di Visual Studio usando il comando **nuovo diagramma livello o UML** nel menu **architettura** .
+    È possibile creare contemporaneamente il diagramma livello e una nuova soluzione di Visual Studio tramite il comando **Nuovo diagramma livello o UML** dal menu **Architettura**.
 
 3. Aggiungere al modello Architecture i diagrammi UML che rappresentano i concetti aziendali più importanti e i casi di utilizzo ai quali viene fatto riferimento nella progettazione di tutti i livelli.
 
@@ -60,7 +60,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
     A questo punto è disponibile un modello per ogni livello, oltre a un modello per l'architettura dell'applicazione. Ogni modello è contenuto in una soluzione separata. In questo modo, i membri del team possono lavorare contemporaneamente sugli stessi livelli.
 
-2. Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi, quindi fare clic su **progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.
+2. Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi e quindi fare clic su **Progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.
 
     Ogni modello è ora visibile in due soluzioni: la relativa soluzione principale e la soluzione Architecture.
 
@@ -80,9 +80,9 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>Per usare un pacchetto separato per ogni livello
 
-1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
+1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi** e quindi fare clic su **Progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
 
-2. Nel modello UML condiviso creare un pacchetto per ogni livello. In Esplora soluzioni selezionare il progetto di modello. In Esplora modelli UML fare clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi**, quindi fare clic su **pacchetto**.
+2. Nel modello UML condiviso creare un pacchetto per ogni livello. In Esplora soluzioni selezionare il progetto di modello. In Esplora modelli UML fare clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi** e quindi fare clic su **Pacchetto**.
 
     Ogni pacchetto conterrà i diagrammi UML che descrivono i requisiti e la progettazione del livello corrispondente.
 
@@ -100,24 +100,24 @@ Ad esempio, se si usano spesso soluzioni con livelli presentazione, aziendale e 
 
 #### <a name="to-create-a-solution-template"></a>Per creare un modello di soluzione
 
-1. [Scaricare e installare l'esportazione guidata modelli](http://go.microsoft.com/fwlink/?LinkId=196686), se non è già stato fatto.
+1. [Scaricare e installare l'esportazione guidata modelli](https://go.microsoft.com/fwlink/?LinkId=196686), se non è già stato fatto.
 
 2. Creare la struttura della soluzione da usare come punto di partenza per i progetti futuri.
 
-3. Scegliere **Esporta modello come VSIX** dal menu **File**. Si apre la **procedura guidata Esporta modello come VSIX** .
+3. Scegliere **Esporta modello come VSIX** dal menu **File**. Verrà aperta l'**Esportazione guidata modello come VSIX**.
 
 4. Seguendo le istruzioni della procedura guidata, selezionare i progetti da includere nel modello, fornire un nome e una descrizione per il modello e specificare un percorso di output.
 
 > [!NOTE]
-> Il materiale contenuto in questo argomento è tratto e adattato dalla documentazione Visual Studio Architecture Tooling Guidance, redatta dai membri del gruppo Visual Studio ALM Rangers, una collaborazione tra Most Valued Professional (MVP), Microsoft Services e i team e i writer del prodotto Visual Studio. [Fare clic qui per scaricare il pacchetto completo della guida.](http://go.microsoft.com/fwlink/?LinkID=191984)
+> Il materiale contenuto in questo argomento è tratto e adattato dalla documentazione Visual Studio Architecture Tooling Guidance, redatta dai membri del gruppo Visual Studio ALM Rangers, una collaborazione tra Most Valued Professional (MVP), Microsoft Services e i team e i writer del prodotto Visual Studio. [Fare clic qui per scaricare il pacchetto completo della guida.](https://go.microsoft.com/fwlink/?LinkID=191984)
 
 ## <a name="related-materials"></a>Materiali correlati
 
-[Organizzazione e gestione dei modelli](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-9-Organizing-and-Managing-Your-Models/) -video di Clint Edmondson.
+[Organizzazione e gestione dei modelli](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models) -video di Clint Edmondson.
 
 [Linee guida](../modeling/visual-studio-architecture-tooling-guidance.md) per gli strumenti per l'architettura di Visual Studio: informazioni aggiuntive sulla gestione dei modelli in un team
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire modelli e diagrammi nel controllo della versione](../modeling/manage-models-and-diagrams-under-version-control.md) 
+[Gestire modelli e diagrammi nel controllo della versione](../modeling/manage-models-and-diagrams-under-version-control.md)
 [usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 132e6252662ed765630764dabca26b22f868a315
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0feabad8dfa3b086c9ed5a1a58e231719774f9cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704870"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298360"
 ---
 # <a name="memory-usage"></a>Utilizzo memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "65704870"
   
   Il grafico seguente mostra la finestra **Strumenti di diagnostica** in Visual Studio 2015 Update 1:  
   
-  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+  ![Update1&#45;diagnostica](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
   Anche se è possibile raccogliere snapshot di memoria in qualsiasi momento nello strumento **Utilizzo memoria** è possibile usare il debugger di Visual Studio per controllare la modalità di esecuzione dell'applicazione durante l'analisi dei problemi di prestazioni. L'impostazione dei punti di interruzione, l'esecuzione di istruzioni, l'azione Interrompi tutto e altre azioni del debugger consentono di concentrare l'analisi delle prestazioni sui percorsi del codice più rilevanti. L'esecuzione di tali azioni durante l'esecuzione dell'app può eliminare il rumore dal codice che non interessa l'utente e può ridurre notevolmente la quantità di tempo necessaria per la diagnosi di un problema.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "65704870"
 ## <a name="analyze-memory-use-with-the-debugger"></a>Analizzare l’uso della memoria con il debugger  
   
 > [!NOTE]
-> Poiché la raccolta di dati può influire sulle prestazioni di debug delle app native o in modalità mista, gli snapshot di memoria sono disattivati per impostazione predefinita. Per abilitare App native o in modalità mista di snapshot, avviare una sessione di debug (tasto di scelta rapida: **F5**). Quando la finestra **Strumenti di diagnostica** verrà visualizzata, scegliere la scheda Utilizzo memoria e quindi scegliere **Abilita snapshot**.  
+> Poiché la raccolta di dati può influire sulle prestazioni di debug delle app native o in modalità mista, gli snapshot di memoria sono disattivati per impostazione predefinita. Per abilitare app native o in modalità mista di snapshot, avviare una sessione di debug (tasto di scelta rapida: **F5**). Quando la finestra **Strumenti di diagnostica** verrà visualizzata, scegliere la scheda Utilizzo memoria e quindi scegliere **Abilita snapshot**.  
 >   
 > ![Abilita snapshot](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
@@ -49,7 +49,7 @@ ms.locfileid: "65704870"
   
  Ogni volta che si vuole acquisire lo stato della memoria, scegliere **Crea snapshot** nella barra degli strumenti del riepilogo **Utilizzo memoria** .  
   
- ![Crea snapshot](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
+ ![Creazione Snapshot](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
 > [!TIP]
 > - Per creare una linea di base per i confronti di memoria, si consiglia di creare uno snapshot all'inizio di una sessione di debug.  
@@ -81,58 +81,58 @@ ms.locfileid: "65704870"
 ### <a name="managed-types-reports"></a>Report di tipi gestiti  
  Scegliere il collegamento corrente di una cella **Oggetti gestiti** o **Dimensione heap gestito** nella tabella di riepilogo Utilizzo memoria.  
   
- ![Report di tipo gestito del debugger &#45; Percorsi della radice](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Percorsi del report &#45; di tipo gestito dal debugger alla radice](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
- Il riquadro superiore mostra il numero e la dimensione dei tipi dello snapshot, inclusa la dimensione di tutti gli oggetti cui fa riferimento il tipo (**Dimensione inclusiva**).  
+ Nel riquadro superiore viene illustrato il numero e le dimensioni dei tipi dello snapshot, inclusa la dimensione di tutti gli oggetti cui fa riferimento il tipo (**Dimensione inclusiva**).  
   
  L'albero **Percorsi della radice** del riquadro inferiore mostra gli oggetti che fanno riferimento al tipo selezionato nel riquadro superiore. Il Garbage Collector di .NET Framework pulisce la memoria per un oggetto solo quando è stato rilasciato l'ultimo tipo cui fa riferimento.  
   
- L'albero **Tipi a cui si fa riferimento** mostra i riferimenti mantenuti dal tipo selezionato nel riquadro superiore.  
+ Nell’albero **Tipi a cui si fa riferimento** vengono visualizzati i riferimenti mantenuti dal tipo selezionato nel riquadro superiore.  
   
- ![Visualizzazione del report di tipi di riferimento gestiti](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
+ ![Visualizzazione report tipi riferimento gestiti](../profiling/media/dbgdiag-mem-managedtypesreport-referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- Per visualizzare le istanze di un tipo selezionato nel riquadro superiore, scegliere l'icona ![Istanza](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon").  
+ Per visualizzare le istanze di un tipo selezionato nel riquadro superiore, scegliere l'icona dell' ![icona dell'istanza](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon") .  
   
- ![Visualizzazione Istanze](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
+ ![Visualizzazione istanze](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
  La visualizzazione **Istanze** mostra le istanze dell'oggetto selezionato nello snapshot nel riquadro superiore. I riquadri Percorsi della radice e Oggetti a cui si fa riferimento mostrano gli oggetti che fanno riferimento all'istanza selezionata e i tipi cui fa riferimento l'istanza selezionata. Quando il debugger viene interrotto nel punto in cui è stato creato lo snapshot, è possibile passare il mouse sulla cella Valore per visualizzare i valori dell'oggetto in una descrizione comando.  
   
 ### <a name="native-type-reports"></a>Report di tipo nativo  
  Scegliere il collegamento corrente di una cella **Allocazioni native** o **Dimensione heap nativo** della tabella di riepilogo Utilizzo memoria della finestra **Strumenti di diagnostica** .  
   
- ![Visualizzazione di tipo nativo](../profiling/media/dbgdiag-mem-native-typesview.png "DBGDIAG_MEM_Native_TypesView")  
+ ![Visualizzazione del tipo nativo](../profiling/media/dbgdiag-mem-native-typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
- La **Visualizzazione Tipi** mostra il numero e la dimensione dei tipi dello snapshot.  
+ La **visualizzazione Tipi** visualizza il numero e la dimensione dei tipi dello snapshot.  
   
-- Scegliere l'icona delle istanze (![Icona dell'istanza nella colonna Tipo di oggetto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) di un tipo selezionato per visualizzare le informazioni sugli oggetti del tipo selezionato nello snapshot.  
+- Scegliere l'icona delle istanze (![icona dell'istanza nella colonna tipo di oggetto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) di un tipo selezionato per visualizzare le informazioni sugli oggetti del tipo selezionato nello snapshot.  
   
-     La visualizzazione **Istanze** mostra ogni istanza del tipo selezionato. La selezione di un'istanza consente di visualizzare lo stack di chiamate che ha comportato la creazione dell'istanza nel riquadro **Stack di chiamate allocazione** .  
+     La visualizzazione **Istanze** mostra ogni istanza del tipo selezionato. La selezione di un'istanza consente di visualizzare lo stack di chiamate che ha comportato la creazione dell'istanza nel riquadro **Stack di chiamate allocazione**.  
   
-     ![Visualizzazione Istanze](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![Visualizzazione istanze](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
 - Scegliere **Visualizzazione stack** dall'elenco **Modalità di visualizzazione** per visualizzare lo stack di allocazione per il tipo selezionato.  
   
-     ![Visualizzazione Stack](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Visualizzazione stack](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>Report di modifica (Diff)  
   
 - Scegliere il collegamento di modifica in una cella della tabella di riepilogo della scheda **Utilizzo memoria** nella finestra **Strumenti di diagnostica** .  
   
-   ![Scegliere un report delle modifiche &#40;dif&#41;f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Scegliere un report &#40;di&#41;modifica dif f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
-- Scegliere uno snapshot dall'elenco **Confronta con** di un report gestito o nativo.  
+- Scegliere uno snapshot nell’elenco**Confronta con** di un report gestito o nativo.  
   
    ![Scegliere uno snapshot dall'elenco Confronta con](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
-  Il report di modifica aggiunge colonne (contrassegnate con **(Diff)**) al report di base che mostra la differenza tra il valore di snapshot di base e lo snapshot di confronto. Ecco un esempio di come potrebbe apparire un report delle differenze di visualizzazione del tipo nativo:  
+  Il report di modifica aggiunge colonne (contrassegnate con **(Diff)** ) al report di base che mostra la differenza tra il valore di snapshot di base e lo snapshot di confronto. Ecco un esempio di come potrebbe apparire un report delle differenze di visualizzazione del tipo nativo:  
   
-  ![Visualizzazione differenze dei tipi nativi](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Differenze tra tipi nativi nativi](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blog e video  
- [Diagnostic Tools debugger window in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx) (Finestra del debugger degli strumenti di diagnostica in Visual Studio 2015)  
+ [Diagnostic Tools debugger window in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/) (Finestra del debugger degli strumenti di diagnostica in Visual Studio 2015)  
   
- [Blog: Strumento utilizzo memoria durante il debug in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [Blog: Strumento di utilizzo della memoria durante il debug in Visual Studio 2015](https://devblogs.microsoft.com/devops/memory-usage-tool-while-debugging-in-visual-studio-2015/)  
   
- [Visual C++ Blog: Diagnostica della memoria nativa in Visual Studio 2015 Preview](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Blog su Visual C++: Diagnostica della memoria nativa in Visual Studio 2015 Preview](https://devblogs.microsoft.com/cppblog/native-memory-diagnostics-in-vs2015-preview/)  
   
- [Visual C++ Blog: Strumenti di diagnostica memoria nativa per Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Blog su Visual C++: Strumenti di diagnostica della memoria nativa per Visual Studio 2015 CTP](https://devblogs.microsoft.com/cppblog/native-memory-diagnostic-tools-for-visual-studio-14-ctp/)

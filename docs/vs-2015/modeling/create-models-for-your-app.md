@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da86a6cf2e561fdc7e642a76b84b4e604bec12d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651237"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300250"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le idee sul codice e i requisiti dell'utente che devono supportare il sistema software. Ad esempio, per descrivere e comunicare i requisiti utente, è possibile usare caso di utilizzo, attività, classe e diagrammi di sequenza UML (Unified Modeling Language). Per descrivere e comunicare le funzionalità del sistema, è possibile usare il componente, la classe, l'attività e i diagrammi di sequenza UML.
 
- Vedere [video di Channel 9: migliorare l'architettura tramite la modellazione](http://go.microsoft.com/fwlink/?LinkID=252078).
+ Vedere [video di Channel 9: migliorare l'architettura tramite la modellazione](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  In questa versione è possibile creare i diagrammi UML seguenti:
 
@@ -59,9 +59,9 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 |[Diagrammi dei componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)|Componenti di un sistema, interfacce, porte e relazioni|
 |[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|Tipi usati per archiviare e scambiare dati nel sistema e le relative relazioni|
 |[Diagrammi di sequenza UML: riferimenti](../modeling/uml-sequence-diagrams-reference.md)|Sequenze di interazioni tra oggetti, componenti, sistemi o attori|
-|[Diagrammi casi d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)|Gli obiettivi utente e le attività che supporta un sistema|
+|[Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)|Gli obiettivi utente e le attività che supporta un sistema|
 
- Per individuare le versioni di Visual Studio che supportano ogni tipo di diagramma, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano questo tipo di diagramma, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Per visualizzare l'architettura di un sistema o codice esistente, creare i diagrammi seguenti:
 
@@ -75,12 +75,12 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 
 |**Argomento**|**Attività**|
 |---------------|--------------|
-|[Creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Creare modelli** e aggiungere diagrammi.|
+|[Creare diagrammi e progetti di modellazione UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Creare modelli**  e aggiungere diagrammi.|
 |[Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)|**Creare diagrammi** per modificare il modello.|
 |[Definire pacchetti e spazi dei nomi](../modeling/define-packages-and-namespaces.md)|**Creare pacchetti** per dividere un modello in unità su cui possono lavorare diversi membri del team.|
 |[Generare codice da diagrammi classi UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Generare C# codice dai diagrammi classi** per avviare l'implementazione.|
-|[Personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personalizzare gli elementi del modello** usando gli stereotipi, per estendere gli elementi del modello UML standard per scopi specifici.|
-|[Collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md)|**Creare collegamenti tra elementi del modello ed** elementi di lavoro per tenere traccia di attività, test case, bug, requisiti, problemi o altri tipi di lavoro associati a parti specifiche del modello.|
+|[Personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personalizzare elementi modello** usando stereotipi per estendere gli elementi modello UML standard per scopi specifici.|
+|[Collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md)|**Creare collegamenti tra elementi del modello ed elementi di lavoro** per tenere traccia di attività, test case, bug, requisiti, problemi o altri tipi di lavoro associati a parti specifiche del modello.|
 |[Esportare diagrammi come immagini](../modeling/export-diagrams-as-images.md)|**Salvare il modello e i diagrammi** in modo da poterli condividere con altri utenti, inclusi quelli che non usano [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
 
 ## <a name="related-tasks"></a>Attività correlate
@@ -96,6 +96,6 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Categoria**|**Links**|
+|**Category**|**Links**|
 |------------------|---------------|
-|**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|

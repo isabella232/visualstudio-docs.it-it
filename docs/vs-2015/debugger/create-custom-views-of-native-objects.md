@@ -1,5 +1,5 @@
 ---
-title: Creare viste personalizzate di oggetti nativi | Microsoft Docs
+title: Creazione di visualizzazioni personalizzate di oggetti nativi | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,14 +16,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a510c522723cf991c7a3fff21542a069a3de000a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440840"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299489"
 ---
-# <a name="create-custom-views-of-native-objects"></a>Creare viste personalizzate di oggetti nativi
+# <a name="create-custom-views-of-native-objects"></a>Creare visualizzazioni personalizzate di oggetti nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il framework Natvis di Visual Studio consente di personalizzare il modo in cui Visual Studio visualizza i tipi nativi nelle finestre delle variabili del debugger (ad esempio, le finestre **Espressioni di controllo**, **Variabili locali**e **Suggerimenti dati** ).  
@@ -40,15 +40,15 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 ## <a name="BKMK_Why_create_visualizations_"></a> Perché creare visualizzazioni Natvis?  
  È possibile usare il framework Natvis per creare regole di visualizzazione per i tipi creati in modo che gli sviluppatori possano vederli facilmente durante il debug.  
 
- Ad esempio, l'immagine seguente mostra una variabile di tipo [Windows::UI::Xaml::Controls::TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) visualizzata nel debugger, alla quale non è stata applicata alcuna visualizzazione personalizzata.  
+ Ad esempio, l'immagine seguente mostra una variabile di tipo [Windows::UI::Xaml::Controls::TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) visualizzata nel debugger, alla quale non è stata applicata alcuna visualizzazione personalizzata.  
 
- ![Visualizzazione predefinita di TextBox](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
+ ![Visualizzazione predefinita casella di testo](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
  La riga evidenziata mostra la proprietà `Text` della classe `TextBox` . La complessa gerarchia di classi non consente di trovare facilmente questo valore; inoltre, dal momento che il debugger non riesce a interpretare il tipo di stringa personalizzato usato dall'oggetto, non è possibile visualizzare la stringa contenuta nella casella di testo.  
 
  Lo stesso oggetto `TextBox` ha un aspetto molto più semplice nella finestra delle variabili quando vengono applicate regole di visualizzazione personalizzate. I membri importanti della classe possono essere visualizzati insieme e il debugger mostra il valore della stringa sottostante del tipo di stringa personalizzato.  
 
- ![Dati TextBox con uso del visualizzatore](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
+ ![Dati TextBox tramite Visualizzatore](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
 
 ## <a name="BKMK_Using_Natvis_files"></a> Uso di file Natvis  
  I file NATVIS sono file XML con estensione natvis. Lo schema è definito in **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**.  
@@ -76,7 +76,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 ## <a name="adding-natvis-files-to-your-projects"></a>Aggiunta di file NATVIS ai progetti  
  È possibile aggiungere i file NATVIS a qualsiasi progetto C++.  
 
- Per aggiungere un nuovo file NATVIS, selezionare il nodo di un progetto C++ aperto in **Esplora soluzioni**, quindi fare clic su **Aggiungi/Nuovo elemento/Visual C++/Utilità/File di visualizzazione debugger (.natvis)**. Il debugger caricherà i file Natvis dai progetti C++ automaticamente. Per impostazione predefinita, i file Natvis del progetto vengono inseriti anche nel file PDB compilato dal progetto. Ciò significa che se si esegue il debug del file binario compilato da questo progetto, il debugger carica il file Natvis dal file PDB anche se il progetto non è aperto. Per non includere il file NATVIS nel file PDB, fare clic con il pulsante destro del mouse sul file NATVIS in **Esplora soluzioni**e impostare **Escluso dalla compilazione** su **Sì** nella finestra **Proprietà di configurazione**.  
+ Per aggiungere un nuovo file NATVIS, selezionare il nodo di un progetto C++ aperto in **Esplora soluzioni**, quindi fare clic su **Aggiungi/Nuovo elemento/Visual C++/Utilità/File di visualizzazione debugger (.natvis)** . Il debugger caricherà i file Natvis dai progetti C++ automaticamente. Per impostazione predefinita, i file Natvis del progetto vengono inseriti anche nel file PDB compilato dal progetto. Ciò significa che se si esegue il debug del file binario compilato da questo progetto, il debugger carica il file Natvis dal file PDB anche se il progetto non è aperto. Per non includere il file NATVIS nel file PDB, fare clic con il pulsante destro del mouse sul file NATVIS in **Esplora soluzioni**e impostare **Escluso dalla compilazione** su **Sì** nella finestra **Proprietà di configurazione**.  
 
  Si consiglia di modificare i file Natvis usando Visual Studio. Qualsiasi modifica apportata durante il debug diventano effettive quando si salva il file. È anche possibile ottenere una migliore esperienza di modifica con IntelliSense.  
 
@@ -91,9 +91,9 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
 2. File NATVIS che fanno parte di progetti C++ caricati o di un elemento della soluzione di primo livello. Sono inclusi tutti i progetti C++ caricati, incluse le librerie di classi, ma non i progetti di altri linguaggi (ad esempio, non è possibile caricare un file NATVIS da un progetto C#). Per i progetti eseguibili, usare gli elementi della soluzione per ospitare i file NATVIS non ancora presenti in un file PDB, poiché non è disponibile alcun progetto C++.  
 
-3. La directory Natvis specifica dell'utente (**%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**)  
+3. La directory Natvis specifica dell'utente ( **%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**)  
 
-4. La directory Natvis a livello di sistema (**%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**). Posizione in cui vengono copiati i file NATVIS installati con Visual Studio. È anche possibile aggiungere altri file a questa directory se si hanno le autorizzazioni di amministratore.  
+4. La directory Natvis a livello di sistema ( **%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**). Posizione in cui vengono copiati i file NATVIS installati con Visual Studio. È anche possibile aggiungere altri file a questa directory se si hanno le autorizzazioni di amministratore.  
 
 ## <a name="modifying-natvis-files-while-debugging"></a>Modifica dei file NATVIS durante il debug  
  È possibile modificare un file NATVIS nell'IDE durante il debug del progetto in cui è incluso. Aprire il file nell'IDE (usando la stessa istanza di Visual Studio con cui si esegue il debug), modificarlo e salvarlo. Non appena il file viene salvato, le finestre **Espressioni di controllo** e **Variabili locali** devono essere aggiornate per riflettere la modifica. Se si modifica il file NATVIS all'esterno dell'IDE, le modifiche non diventano effettive automaticamente. Per aggiornare le finestre, è possibile valutare il comando **.natvisreload** nella finestra **Espressioni di controllo** . In questo modo le modifiche vengono applicate senza necessità di riavviare la sessione di debug.  
@@ -105,13 +105,13 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
  Usare il comando **.natvisreload** quando si aggiorna il file NATVIS a una versione più recente (ad esempio, se è archiviato nel controllo del codice sorgente e si vogliono visualizzare le modifiche recenti apportate da altri utenti al file). Si consiglia di modificare i file con estensione natvis con l'editor xml di Visual Studio.  
 
 ## <a name="BKMK_Expressions_and_formatting"></a> Espressioni e formattazione  
- Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elementi di dati da visualizzare. Oltre ai miglioramenti e alle limitazioni delle espressioni C++ nel debugger descritte in [Context Operator (C++)](../debugger/context-operator-cpp.md), è necessario essere consapevoli delle differenze seguenti:  
+ Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elementi di dati da visualizzare. Oltre ai miglioramenti e alle limitazioni delle C++ espressioni nel debugger descritte in operatore di [contesto (C++)](../debugger/context-operator-cpp.md), è necessario tenere presenti le differenze seguenti:  
 
 - Le espressioni di Natvis vengono valutate nel contesto dell'oggetto da visualizzare, non nello stack frame corrente. Ad esempio, se si usa `x` in un'espressione Natvis, questo fa riferimento al campo denominato `x` nell'oggetto visualizzato, non a una variabile locale denominata `x` nella funzione attualmente in esecuzione. Non è possibile accedere a variabili locali all'interno di espressioni Natvis, mentre è possibile accedere a variabili globali.  
 
 - Le espressioni natvis non consentono la valutazione di funzioni o effetti collaterali. Ciò significa che le chiamate di funzione e gli operatori di assegnazione vengono ignorati. Dal momento che le [funzioni intrinseche del debugger](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) non hanno effetti collaterali, possono essere chiamate liberamente da qualsiasi espressione Natvis, anche se non sono consentite altre chiamate di funzione.  
 
-  Per controllare la visualizzazione di un'espressione in una finestra delle variabili, è possibile usare uno qualsiasi degli identificatori di formato descritti nella [identificatori di formato](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) sezione il [identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md) argomento. Si noti che gli identificatori di formato vengono ignorati quando la voce di virtualizzazione viene usata internamente da Natvis, ad esempio il `Size` espressione in un'espansione di ArrayItems.  
+  Per controllare la modalità di visualizzazione di un'espressione in una finestra delle variabili, è possibile usare uno qualsiasi degli identificatori di formato descritti nella sezione [identificatori](../debugger/format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers) di formato degli [identificatori di C++ formato nell'](../debugger/format-specifiers-in-cpp.md) argomento. Si noti che gli identificatori di formato vengono ignorati quando la voce di virtualizzazione viene usata internamente da natvis, ad esempio l'espressione `Size` in un'espansione ArrayItems.  
 
 ## <a name="natvis-views"></a>Visualizzazioni di Natvis  
  Le visualizzazioni di natvis consentono di visualizzare qualsiasi tipo in più modi. Ad esempio, è possibile definire una visualizzazione denominata **simple** che fornisce la visualizzazione semplificata di un tipo. Ad esempio, ecco la visualizzazione di `std::vector`:  
@@ -130,9 +130,9 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 </Type>  
 ```  
 
- Gli elementi `DisplayString` e `ArrayItems` vengono usati nella visualizzazione predefinita e nella visualizzazione semplice, mentre gli elementi `[size]` e `[capacity]` sono esclusi dalla visualizzazione semplice. È possibile usare l'identificatore di formato **view** per specificare una visualizzazione alternativa. Nella finestra **Espressioni di controllo** specificare la visualizzazione semplice come **vec,view(simple)**:  
+ Gli elementi `DisplayString` e `ArrayItems` vengono usati nella visualizzazione predefinita e nella visualizzazione semplice, mentre gli elementi `[size]` e `[capacity]` sono esclusi dalla visualizzazione semplice. È possibile usare l'identificatore di formato **view** per specificare una visualizzazione alternativa. Nella finestra **Espressioni di controllo** specificare la visualizzazione semplice come **vec,view(simple)** :  
 
- ![Finestra Espressioni di controllo con visualizzazione semplice](../debugger/media/watch-simpleview.png "Watch SimpleView")  
+ ![finestra Espressioni di controllo con visualizzazione semplice](../debugger/media/watch-simpleview.png "Watch-SimpleView")  
 
 ## <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnostica degli errori di Natvis  
  È possibile usare la diagnostica di Natvis per risolvere i problemi di sintassi e gli errori di analisi. Quando il debugger rileva errori in una voce di visualizzazione, li ignora e visualizza il tipo nel formato non elaborato o seleziona un'altra visualizzazione appropriata. Per capire perché una determinata voce di visualizzazione viene ignorata e visualizzare quali sono gli errori sottostanti, è possibile attivare l'opzione della diagnostica di Natvis dal seguente percorso: **Strumenti/Opzioni/Debug/Finestra di output/Messaggi di diagnostica natvis (solo C++)** . Gli errori vengono visualizzati nella finestra **Output** .  
@@ -318,7 +318,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
  L'oggetto `CStringT` sarà simile a:  
 
- ![Elemento CStringT DisplayString](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
+ ![Elemento DisplayString CStringt](../debugger/media/dbg-natvis-displaystring-cstringt.png "DBG_NATVIS_DisplayString_CStringT")  
 
  La visualizzazione mostra un oggetto `CStringT` in una finestra delle variabili simile alla seguente:  
 
@@ -333,10 +333,10 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
  Si noti l'icona a forma di lente di ingrandimento visualizzata accanto al valore seguente. Scegliendo l'icona verrà avviato il visualizzatore di testo che mostrerà la stringa a cui punta `m_pszData` .  
 
- ![Dati CStringT con Visualizzatore StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
+ ![Dati CStringt con visualizzatore StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
-> Si noti che l'espressione `{m_pszData,su}` include un identificatore di formato C++ `su` per visualizzare il valore come stringa Unicode. Per altre informazioni, vedere [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
+> Si noti che l'espressione `{m_pszData,su}` include un identificatore di formato C++ `su` per visualizzare il valore come stringa Unicode. Per altre informazioni vedere [identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md).  
 
 ### <a name="BKMK_Expand"></a> Expand  
  Il nodo `Expand` viene usato per personalizzare i figli del tipo visualizzato quando l'utente lo espande nelle finestre delle variabili. Accetta un elenco di nodi figlio che definiscono gli elementi figlio.  
@@ -363,7 +363,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
  Il tipo `CRect` avrà un aspetto simile al seguente:  
 
- ![CRect con espansione dell'elemento Item](../debugger/media/dbg-natvis-expand-item-crect1.png "DBG_NATVIS_Expand_Item_CRect1")  
+ ![CRect con espansione elemento elemento](../debugger/media/dbg-natvis-expand-item-crect1.png "DBG_NATVIS_Expand_Item_CRect1")  
 
  Le espressioni specificate negli elementi `Width` e `Height` vengono valutate e illustrate nella colonna del valore. Il nodo `[Raw View]` viene creato automaticamente dal debugger ogni volta che si usa un'espansione personalizzata. Viene espanso nella schermata precedente per mostrare le differenze tra la visualizzazione non elaborata dell'oggetto e la relativa visualizzazione. L'espansione predefinita di Visual Studio crea un sottoalbero per la classe base ed elenca tutti i membri dati della classe base come elementi figlio.  
 
@@ -390,7 +390,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
  Un elemento `std::vector` visualizza i singoli elementi quando viene espanso nella finestra delle variabili:  
 
- ![std:: Vector con espansione ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-stdvector.png "DBG_NATVIS_Expand_ArrayItems_StdVector")  
+ ![STD:: Vector con espansione ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-stdvector.png "DBG_NATVIS_Expand_ArrayItems_StdVector")  
 
  Come minimo, il nodo `ArrayItems` deve disporre di:  
 
@@ -532,7 +532,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 #### <a name="BKMK_ExpandedItem_expansion"></a> Espansione di ExpandedItem  
  L'elemento `ExpandedItem` può essere usato per generare una visualizzazione figlio aggregata visualizzando le proprietà delle classi base o dei membri dati come se fossero figli del tipo visualizzato. L'espressione specificata viene valutata e i nodi figlio del risultato vengono aggiunti all'elenco figlio del tipo visualizzato. Ad esempio, si supponga di disporre di un tipo di puntatore intelligente `auto_ptr<vector<int>>` che, in genere, viene visualizzato nel modo seguente:  
 
- ![automatico&#95;ptr&#60;vector&#60;int&#62; &#62; espansione predefinita](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![espansione&#95;predefinita&#60;del&#60;vettore&#62; &#62; di tipo auto PTR](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
 
  Per visualizzare i valori del vettore, è necessario eseguire il drill-down di due livelli nella finestra delle variabili e attraversare il membro _Myptr. Aggiungendo un elemento `ExpandedItem` , è possibile eliminare la variabile `_Myptr` dalla gerarchia e visualizzare direttamente gli elementi del vettore:  
 
@@ -546,7 +546,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
 ```  
 
- ![automatico&#95;ptr&#60;vector&#60;int&#62; &#62; espansione di ExpandedItem](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![espansione&#95;auto&#60;PTR&#60;vector&#62; &#62; int ExpandedItem](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
 
  L'esempio seguente mostra come aggregare proprietà dalla classe base in una classe derivata. Si supponga che la classe `CPanel` derivi da `CFrameworkElement`. Invece di ripetere le proprietà fornite dalla classe base `CFrameworkElement` , il nodo `ExpandedItem` consente di aggiungere queste proprietà all'elenco figlio della classe `CPanel` . In questo caso è necessario l'identificatore di formato **nd** che disattiva la corrispondenza della visualizzazione per la classe derivata. In caso contrario, con l'espressione `*(CFrameworkElement*)this` sarà nuovamente applicata la visualizzazione `CPanel` perché viene considerata la più appropriata secondo le regole predefinite di corrispondenza del tipo di visualizzazione. L'uso dell'identificatore di formato **nd** consente di indicare al debugger di usare la visualizzazione della classe base o l'espansione predefinita della classe base se questa non include una visualizzazione.  
 
@@ -582,7 +582,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
 ```  
 
- ![Concurrency:: array con espansione dell'elemento Synthetic](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
+ ![Concurrency:: array con elemento espansione Expansio](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
 
 ### <a name="BKMK_HResult"></a> HResult  
  L'elemento `HResult` consente di personalizzare le informazioni visualizzate per un HRESULT nelle finestre del debugger. L'elemento `HRValue` deve contenere il valore a 32 bit di HRESULT da personalizzare. L'elemento `HRDescription` contiene le informazioni visualizzate nel debugger.  
@@ -617,7 +617,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 
  L'attributo `MenuName` corrisponde al nome del visualizzatore visualizzato dagli utenti quando viene aperto il menu a discesa accanto all'icona a forma di lente di ingrandimento nelle finestre delle variabili del debugger, ad esempio:  
 
- ![Menu di scelta rapida UIVisualizer](../debugger/media/dbg-natvis-vectorvisualizer.png "DBG_NATVIS_VectorVisualizer")  
+ ![Menu di scelta rapida del menu UIVisualizer](../debugger/media/dbg-natvis-vectorvisualizer.png "DBG_NATVIS_VectorVisualizer")  
 
  Ogni tipo definito nel file NATVIS deve elencare esplicitamente i visualizzatori dell'interfaccia utente in grado di visualizzarlo. Il debugger abbina i riferimenti del visualizzatore nelle voci dei tipi ai tipi con i visualizzatori registrati. Ad esempio, la voce del tipo seguente per `std::vector` fa riferimento all'elemento UIVisualizer dell'esempio precedente.  
 
@@ -627,7 +627,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 </Type>  
 ```  
 
- È possibile vedere un esempio di UIVisualizer nell'estensione Image Watch usata per visualizzare le bitmap in memoria: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
+ È possibile visualizzare un esempio di UIVisualizer nell'estensione delle espressioni di controllo immagine usate per visualizzare le bitmap in memoria: [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>Elemento CustomVisualizer  
  `CustomVisualizer` è un punto di estendibilità che specifica un'estensione VSIX che è possibile scrivere per controllare la visualizzazione nel codice in esecuzione in Visual Studio. Per altre informazioni sulla scrittura di estensioni VSIX, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md). La scrittura di un visualizzatore personalizzato comporta molte più operazioni rispetto alla scrittura di una definizione natvis XML, ma non sussistono vincoli su ciò che Natvis supporta o non supporta. I visualizzatori personalizzati hanno accesso al set completo di API di estendibilità del debugger, che possono essere usate per eseguire query e modificare il processo dell'oggetto del debug o per comunicare con altre parti di Visual Studio.  

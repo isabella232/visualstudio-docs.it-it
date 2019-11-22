@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c8365f045618b92b4b34935bf5024c2ff781650
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669751"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296003"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Visualizzare un modello UML nei diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nel codice programma per un'estensione a Visual Studio, è possibile controllare come vengono visualizzati gli elementi modello nei diagrammi. Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Nel codice programma per un'estensione a Visual Studio, è possibile controllare come vengono visualizzati gli elementi modello nei diagrammi. Per informazioni sulle versioni di Visual Studio che supportano modelli UML, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-In questo argomento
+Contenuto dell'argomento:
 - [Per visualizzare un elemento in un diagramma](#Display)
 
 - [Accesso alle forme che rappresentano un elemento](#GetShapes)
@@ -43,7 +43,7 @@ In questo argomento
 |---------------------|-----------------|-------------------------------------|
 |Classificatore|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Creare forme associate nei diagrammi specificati. È possibile creare un numero qualsiasi di forme per ogni classificatore.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Impostare `parentShape` su `null` per una forma di livello superiore del diagramma.<br /><br /> Per visualizzare una forma all'interno di un'altra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:** se si esegue la visualizzazione all'interno di una transazione **ILinkedUndo** , il metodo a volte non restituisce alcun `IShape`. La forma viene tuttavia creata correttamente ed è accessibile mediante `IElement.Shapes().`|
 |Elemento figlio del classificatore|Attributo, Operazione,<br /><br /> Parte, Porta|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato come parte dell'elemento padre.|
-|Comportamento|Interazione (sequenza)<br /><br /> Attività|Associare il comportamento a un diagramma appropriato.<br /><br /> Ogni comportamento può essere associato a più diagrammi alla volta.<br /><br /> Esempio:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|Comportamento|Interazione (sequenza)<br /><br /> Attività|Associare il comportamento a un diagramma appropriato.<br /><br /> Ogni comportamento può essere associato a più diagrammi alla volta.<br /><br /> Di seguito è riportato un esempio:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Elemento figlio del comportamento|Linee di vita, messaggi, azioni, nodi oggetto|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato se l'elemento padre è associato a un diagramma.|
 |Relationship|Associazione, generalizzazione, flusso, dipendenza|Automatico: non è richiesto alcun codice.<br /><br /> Viene visualizzato in ogni diagramma in cui vengono visualizzate entrambe le estremità.|
 
@@ -54,7 +54,7 @@ In questo argomento
 
  `IShape<` *ElementType* `>`
 
- dove *elementType* è un tipo dell'elemento del modello, ad esempio `IClass` o `IUseCase`.
+ dove *ElementType* è un tipo di elemento modello come `IClass` o `IUseCase`.
 
 |||
 |-|-|
@@ -75,7 +75,7 @@ In questo argomento
 |`anIShape.Move(x, y, [width], [height])`|Spostare o ridimensionare una forma.|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|Attivare la finestra e scorrere il diagramma in modo che tutte le forme specificate siano visibili. Le forme devono essere tutte nel diagramma. Se `zoomToFit` è true, il diagramma verrà ridimensionato se necessario in modo che tutte le forme siano visibili.|
 
- Per un esempio, vedere [definizione di un comando di allineamento](#AlignCommand).
+ Per un esempio vedere [Definizione di un comando di allineamento](#AlignCommand).
 
 ## <a name="Removing"></a>Per rimuovere una forma da un diagramma
  È possibile eliminare forme di alcuni tipi di elemento senza eliminare l'elemento.
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [esplorare il modello UML](../modeling/navigate-the-uml-model.md) [esempio: allineare le forme in un esempio di comando di menu Diagramma](http://go.microsoft.com/fwlink/?LinkId=213809) [: creazione di elementi, forme e stereotipi](http://go.microsoft.com/fwlink/?LinkId=213811)
+ [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [esplorare il modello UML](../modeling/navigate-the-uml-model.md) [esempio: allineare le forme in un esempio di comando di menu Diagramma](https://go.microsoft.com/fwlink/?LinkId=213809) [: creazione di elementi, forme e stereotipi](https://go.microsoft.com/fwlink/?LinkId=213811)

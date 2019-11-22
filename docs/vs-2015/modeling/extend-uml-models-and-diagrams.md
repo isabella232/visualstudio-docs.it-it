@@ -12,17 +12,17 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669601"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301038"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estendere modelli e diagrammi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questo argomento sono riepilogati i diversi modi in cui è possibile estendere gli strumenti di modellazione UML di Visual Studio. Per individuare le versioni di Visual Studio che supportano i singoli tipi di modello e strumenti, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
+In questo argomento sono riepilogati i diversi modi in cui è possibile estendere gli strumenti di modellazione UML di Visual Studio. Per informazioni sulle versioni di Visual Studio supportano ogni tipo di modello e strumento, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Nello scenario di esempio seguente Fabrikam progetta e installa sistemi di gestione bagagli in aeroporto. I progetti di diversi aeroporti presentano molte analogie in termini di attrezzatura di base e software che la controlla. Vi sono però anche molti fattori che variano notevolmente, come la configurazione dei nastri trasportatori, i banchi del check-in, i contenitori di stoccaggio e altre apparecchiature per la gestione dei bagagli.
 
@@ -30,13 +30,13 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
 
  Il team degli strumenti di Fabrikam appronta una serie di miglioramenti per i team di sviluppo. Nelle sezioni seguenti sono descritti i tipi diversi di estensione che è possibile definire. È possibile combinare tra loro molte di queste tecniche in un'unica estensione di Visual Studio.
 
- Per altre informazioni, vedere questo video: ![collegamento alla serie di video](../data-tools/media/playvideo.gif "PlayVideo")sulle[procedure di MSDN: strumenti e estendibilità UML](http://go.microsoft.com/fwlink/?LinkId=214467).
+ Per altre informazioni, vedere questo video: ![collegamento alla serie di video](../data-tools/media/playvideo.gif "PlayVideo")sulle[procedure di MSDN: strumenti e estendibilità UML](https://go.microsoft.com/fwlink/?LinkId=214467).
 
 ## <a name="Requirements"></a> Requisiti
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-- [SDK di modellazione per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).
+- [SDK di modellazione per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Profili
  I profili consentono di definire gli stereotipi e le proprietà aggiuntive negli elementi UML.
@@ -111,12 +111,12 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Categoria**|**Links**|
+|**Category**|**Links**|
 |------------------|---------------|
-|**Video**|![collegamento a video sulle serie di](../data-tools/media/playvideo.gif "PlayVideo") [procedure MSDN: strumenti ed estendibilità UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Videos**|![collegamento a video sulle serie di](../data-tools/media/playvideo.gif "PlayVideo") [procedure MSDN: strumenti ed estendibilità UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Vedere anche
  [Creare modelli per le](../modeling/create-models-for-your-app.md) informazioni di [riferimento sulle API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

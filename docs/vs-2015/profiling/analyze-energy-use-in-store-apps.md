@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a3147a6bafc550383f96134f5a76932413eb8a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696996"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299367"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizzare il consumo di energia nelle app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Il profiler **Utilizzo di energia** consente di analizzare il consumo di energia
   
  Nel profiler Utilizzo di energia vengono utilizzate queste definizioni di *potenza* ed *energia*:  
   
-- *Potenza* : misura la frequenza di utilizzo della forza per eseguire il lavoro svolto in un periodo di tempo. In elettrotecnica, l'unità di potenza standard è un *watt*, definito come la frequenza con cui viene eseguito un lavoro quando un ampere di corrente fluisce attraverso una differenza di potenziale elettrico di un volt. Nel grafico **Utilizzo energia** le unità vengono visualizzate come milliwatt **mW** che corrispondono a un millesimo di watt.  
+- *Potenza* misura la quantità di forza utilizzata per eseguire un lavoro in un determinato periodo di tempo. In elettrotecnica, l'unità di potenza standard è un *watt*, definito come la frequenza con cui viene eseguito un lavoro quando un ampere di corrente fluisce attraverso una differenza di potenziale elettrico di un volt. Nel grafico **Utilizzo energia** le unità vengono visualizzate come milliwatt **mW** che corrispondono a un millesimo di watt.  
   
    Si noti che poiché la potenza è una frequenza, presenta una direzione (il lavoro può aumentare o diminuire in un periodo di tempo) e una velocità (la quantità di aumento o diminuzione del lavoro).  
   
-- *Energia* : misura la quantità totale di potenza, come capacità o potenziale, come nella capacità di potenza di una batteria, o come il totale complessivo della potenza consumata in un periodo di tempo. L'unità di energia è un wattora, la quantità di potenza di un watt applicato continuamente per un'ora. In **Riepilogo energia**le unità vengono visualizzate come milliwatt-ore **mW-h**.  
+- *Energia* : misura la quantità totale di potenza, come capacità o potenziale, come nella capacità di potenza di una batteria, o come il totale complessivo della potenza consumata in un periodo di tempo. L'unità di energia è un wattora, la quantità di potenza di un watt applicato continuamente per un'ora. In **Riepilogo energia** le unità vengono visualizzate come milliwatt-ore **mW-h**.  
   
-  ![Capacità energia, potenza usata, totale energia usata](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Capacità energetica, potenza usata, totale energia usata](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
   Ad esempio, la batteria completamente carica di un tablet dispone di una certa quantità di energia immagazzinata. Mentre l'energia viene utilizzata per eseguire attività quali la comunicazione in rete, il calcolo dei valori o la visualizzazione di grafica, la potenza della batteria viene consumata con frequenze diverse. In qualsiasi momento, il totale della potenza utilizzata viene misurato anche in base all'energia.  
   
@@ -62,8 +62,6 @@ Il profiler **Utilizzo di energia** consente di analizzare il consumo di energia
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel implementa l'interfaccia [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proiettata come [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) in C# e VB). Per evitare un consumo eccessivo di risorse del sistema operativo, chiamare [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() in C# e VB) quando non si usa più un canale di registrazione.  
 >   - Ogni canale di registrazione aperto deve avere un nome univoco. Il tentativo di creare un nuovo canale di registrazione con lo stesso nome di uno non eliminato genera un'eccezione.  
-  
- Per esempi, vedere [Esempio di LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) in Windows SDK.  
   
  **Aggiungere contrassegni al codice JavaScript**  
   
@@ -89,33 +87,33 @@ if (performance && performance.mark) {
   
 1. Scegliere **Avvia strumenti di diagnostica senza debug** dal menu **Debug**.  
   
-     ![Scegliere il consumo di energia nell'hub diagnostica](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
+     ![Scegliere il consumo di energia nell'hub di diagnostica](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
-2. Scegliere **Utilizzo di energia** , quindi **Avvia**.  
+2. Scegli **Consumo di energia**, quindi **Avvia**.  
   
     > [!NOTE]
-    > Quando si avvia il profiler **Utilizzo di energia** , è possibile che venga visualizzata la finestra **Controllo dell'account utente** nella quale viene richiesta l'autorizzazione a eseguire VsEtwCollector.exe. Scegliere **Sì**.  
+    > Quando si avvia il profiler **Utilizzo di energia**, è possibile che venga visualizzata la finestra **Controllo dell'account utente** nella quale viene richiesta l'autorizzazione a eseguire VsEtwCollector.exe. Scegliere **Sì**.  
   
 3. Verificare la funzionalità dell'applicazione per la raccolta di dati.  
   
-4. Per interrompere la profilatura, passa di nuovo a Visual Studio (ALT+TAB) e nella pagina dell'hub di diagnostica scegli **Arresta raccolta** .  
+4. Per interrompere la profilatura, tornare a Visual Studio (ALT+TAB) e scegliere **Arrestare la raccolta** nella pagina dell'hub Diagnostica.  
   
-     ![Arrestare la raccolta di dati](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
+     ![Interrompi raccolta dati](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
-     Visual Studio consente di analizzare i dati raccolti e visualizzare i risultati.  
+     Visual Studio consente di analizzare i dati raccolti e di visualizzare i risultati.  
   
 ## <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Raccogliere dati relativi al profilo energetico per un'applicazione installata  
  Lo strumento Utilizzo di energia può essere eseguito solo su applicazioni Windows Store 8.1 avviate da una soluzione di Visual Studio o installate da Windows Store. Se una soluzione è aperta in Visual Studio, la destinazione predefinita è **Progetto di avvio**. Per impostare come destinazione un'applicazione installata:  
   
-1. Scegliere **Cambia destinazione** , quindi **Applicazione installata**.  
+1. Scegli **Cambia destinazione** e **App installata**.  
   
 2. Dall'elenco **Seleziona pacchetto di applicazioni installato** scegliere la destinazione.  
   
 3. Scegliere **Utilizzo di energia** nella pagina dell'hub di diagnostica.  
   
-4. Scegliere **Avvia** per iniziare la profilatura.  
+4. Scegli **Avvia** per iniziare la profilatura.  
   
-   Per interrompere la profilatura, passa di nuovo a Visual Studio (ALT+TAB) e nella pagina dell'hub di diagnostica scegli **Arresta raccolta** .  
+   Per interrompere la profilatura, tornare a Visual Studio (ALT+TAB) e scegliere **Arrestare la raccolta** nella pagina dell'hub Diagnostica.  
   
 ## <a name="BKMK_Analyze_energy_profile_data"></a> Analizzare i dati relativi al profilo energetico  
  I dati relativi al profilo energetico vengono visualizzati in una finestra di documento di Visual Studio:  
@@ -127,7 +125,7 @@ if (performance && performance.mark) {
 |![Passaggio 1](../profiling/media/procguid-1.png "ProcGuid_1")|Il file di rapporto è denominato Report*YYYYMMDD-HHMM*.diagsession. Puoi modificare il nome del file se decidi di salvarlo.|  
 |![Passaggio 2](../profiling/media/procguid-2.png "ProcGuid_2")|La sequenza temporale mostra la durata della sessione di profilatura, gli eventi di attivazione del ciclo di vita dell'app e i contrassegni utente.|  
 |![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Puoi limitare il rapporto a una parte della sequenza temporale trascinando le barre blu per selezionare un'area della stessa.|  
-|![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|**Utilizzo energia** è un grafico a più linee in cui viene visualizzata la modifica della potenza in uscita causata da una risorsa del dispositivo durante una sessione di profilatura. Il profiler Consumo di energia consente di tenere traccia della potenza utilizzata dalla CPU, dalle attività di rete e dallo schermo.|  
+|![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|Il grafico **Utilizzo energia** è un grafico a più linee che visualizza il cambiamento nell'output della potenza causato da una risorsa del dispositivo durante una sessione di profilatura. Il profiler Consumo di energia consente di tenere traccia della potenza utilizzata dalla CPU, dalle attività di rete e dallo schermo.|  
 |![Passaggio 5](../profiling/media/procguid-6.png "ProcGuid_6")|Nel grafico **Risorse (On/Off)**  vengono fornite informazioni sui costi energetici della rete. La barra **Rete** rappresenta il tempo di apertura della connessione di rete. La barra figlio **Trasferimento dati** rappresenta il momento in cui l'app stava ricevendo o inviando dati sulla rete.|  
 |![Passaggio 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|In **Riepilogo utilizzo energia** viene visualizzata la quantità proporzionale di energia totale utilizzata dalla CPU, dalle attività di rete e dallo schermo nella sequenza temporale selezionata.|  
   
@@ -138,11 +136,11 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Optimize_energy_use"></a> Ottimizzare l'utilizzo di energia  
  Oltre alla trasmissione di dati, le connessioni di rete comportano un costo in termini di energia per l'inizializzazione, la gestione e la chiusura della connessione. Alcune reti mantengono aperta la connessione per un certo periodo successivo all'invio o alla ricezione dei dati per consentire la trasmissione di più dati tramite una singola connessione. Puoi utilizzare il riquadro **Risorse (On/Off)** per esaminare la modalità di interazione dell'app con la connessione.  
   
- ![Riquadro Risorse &#40;On&#47;Off&#41;](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![Risorse &#40;nel&#47;riquadro&#41; disattivato](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  Se le barre **Rete** e **Trasferimento dati** indicano che la connessione rimane aperta per lunghi periodi di tempo per trasmettere in modo intermittente una serie di pacchetti di dati di piccole dimensioni, puoi suddividere i dati in batch per inviarli in un'unica trasmissione, riducendo il tempo in cui la rete rimane aperta e risparmiando costi energetici.  
   
- ![Riquadro Riepilogo consumo energia](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
+ ![Riquadro Riepilogo consumo di energia](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
   
  Hai un controllo minore sui costi energetici dello schermo. La maggior parte degli schermi richiede più energia per visualizzare i colori chiari rispetto a quelli più scuri, quindi l'utilizzo di uno sfondo scuro è un modo per ridurre i costi.  
   

@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab16750694e1bc8bb74afa7d22d899dc492d7c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671796"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295736"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: creare il layout del form con un controllo TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLayoutPanel consente di allineare in modo corretto i controlli nel form che si aggiungerà successivamente.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 2](http://go.microsoft.com/fwlink/?LinkId=205211) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 2](http://go.microsoft.com/fwlink/?LinkId=205200). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 2](https://go.microsoft.com/fwlink/?LinkId=205211) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 2](https://go.microsoft.com/fwlink/?LinkId=205200). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Per creare il layout del form con un controllo TableLayoutPanel
 
@@ -36,7 +36,7 @@ In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLa
      ![Controllo TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout") Controllo TableLayoutPanel
 
     > [!NOTE]
-    > Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic in qualsiasi punto all'interno del form per chiuderla. Verranno fornite ulteriori informazioni su questa finestra più avanti nell'esercitazione.
+    > Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic ovunque all'interno del form per chiuderla. Verranno fornite ulteriori informazioni su questa finestra più avanti nell'esercitazione.
 
      Si noti come la Casella degli strumenti si espanda per includere il form quando si fa clic sulla scheda e come si chiuda quando si fa clic in un punto esterno. Si tratta della funzionalità Nascondi automaticamente dell'IDE. È possibile attivarla o disattivarla e bloccare in posizione qualsiasi finestra facendo clic sull'icona a forma di puntina da disegno nell'angolo superiore destro della finestra. L'icona a forma di puntina da disegno ha l'aspetto seguente.
 
@@ -46,7 +46,7 @@ In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLa
 
      ![Finestra proprietà che mostra il controllo TableLayoutPanel](../ide/media/express-controlspropwin.png "Express_ControlsPropWin") Finestra Proprietà che mostra il controllo TableLayoutPanel
 
-5. Scegliere il pulsante **Alfabetico** nella barra degli strumenti nella finestra **Proprietà**. In questo modo, l'elenco delle proprietà nella finestra **Proprietà** viene visualizzato in ordine alfabetico per semplificare l'individuazione delle proprietà in questa esercitazione.
+5. Scegliere il pulsante **Alfabetico** sulla barra degli strumenti della finestra **Proprietà**. In questo modo, l'elenco delle proprietà nella finestra **Proprietà** viene visualizzato in ordine alfabetico, per semplificare l'individuazione delle proprietà in questa esercitazione.
 
 6. Il selettore dei controlli è un elenco a discesa che si trova nella parte superiore della finestra **Proprietà**. In questo esempio è selezionato un controllo denominato `tableLayoutPanel1`. È possibile selezionare i controlli scegliendo un'area in Progettazione Windows Form o selezionandoli dal selettore dei controlli. Dopo aver selezionato `TableLayoutPanel`, individuare la proprietà **Dock** e scegliere **Ancora** che dovrebbe essere impostato su **Nessuno**. Si noti che viene visualizzata una freccia a discesa accanto al valore. Fare clic sulla freccia, quindi selezionare il pulsante **Riempimento** (il pulsante grande al centro), come mostrato nell'immagine seguente.
 
@@ -75,7 +75,7 @@ In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLa
 
 11. Dall'elenco a discesa **Mostra** nella parte superiore della finestra scegliere **Righe**. Impostare **Row1** su 90% e **Row2** su 10%.
 
-12. Fare clic sul pulsante **OK**. Il controllo TableLayoutPanel dispone ora di una riga grande nella parte superiore, una riga piccola nella parte inferiore, una colonna piccola a sinistra e una colonna grande a destra. È possibile ridimensionare righe e colonne in TableLayoutPanel scegliendo tableLayoutPanel1 nel form e trascinando quindi i bordi di righe e colonne.
+12. Fare clic su **OK** . Il controllo TableLayoutPanel dispone ora di una riga grande nella parte superiore, una riga piccola nella parte inferiore, una colonna piccola a sinistra e una colonna grande a destra. È possibile ridimensionare righe e colonne in TableLayoutPanel scegliendo tableLayoutPanel1 nel form e trascinando quindi i bordi di righe e colonne.
 
      ![Form1 con TableLayoutPanel ridimensionato](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 con TableLayoutPanel ridimensionato
 

@@ -13,19 +13,19 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 165214dff519e7db94d5ee8f3a1a6d86856cd4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609660"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302801"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio facilita la comprensione, la discussione e la comunicazione delle esigenze degli utenti mediante la creazione di diagrammi delle attività e del ruolo che il sistema svolge per il raggiungimento degli obiettivi. Un modello di requisiti è un set di tali diagrammi, ognuno dei quali è incentrato su un aspetto diverso delle esigenze degli utenti. Per una dimostrazione video, vedere: [Modellazione del dominio aziendale](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).
+Visual Studio facilita la comprensione, la discussione e la comunicazione delle esigenze degli utenti mediante la creazione di diagrammi delle attività e del ruolo che il sistema svolge per il raggiungimento degli obiettivi. Un modello di requisiti è un set di tali diagrammi, ognuno dei quali è incentrato su un aspetto diverso delle esigenze degli utenti. Per una dimostrazione video, vedere: [Modellazione del dominio aziendale](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
- Per vedere quali versioni di Visual Studio supportano ogni tipo di modello, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano questo tipo di modello, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Un modello di requisiti consente di:
 
@@ -89,8 +89,8 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
 |Informazioni|Lettura|
 |--------------------|----------|
-|Informazioni più dettagliate su come creare casi di utilizzo|[Diagrammi casi d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)|
-|Elementi in un diagramma caso di utilizzo|[Diagrammi casi d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)|
+|Informazioni più dettagliate su come creare casi di utilizzo|[Diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)|
+|Elementi in un diagramma caso di utilizzo|[Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)|
 |Come sviluppare codice dai casi di utilizzo|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="RequirementsClasses"></a>Definizione dei termini usati per descrivere i requisiti
@@ -114,7 +114,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 
   Un diagramma classi concettuali fornisce il vocabolario dei termini usati in tutto il modello dei requisiti. Ad esempio, nella descrizione dettagliata del caso di utilizzo Ordinazione pasto, è possibile scrivere:
 
-  Il cliente sceglie un *Menu* da cui creare un *Ordine*, quindi crea gli *Elementi ordine* nell' *Ordine* selezionando *Elementi menu* dal *Menu*.
+  Il cliente sceglie un *Menu* da cui creare un *Ordine*, quindi crea gli *Elementi ordine* nell'*Ordine* selezionando *Elementi menu* dal *Menu*.
 
   Si noti che i termini utilizzati nella descrizione sono nomi di classi del modello. Il diagramma rimuove le ambiguità dalle relazioni tra le classi. Ad esempio, mostra chiaramente che a ogni Ordine è associato un solo Menu.
 
@@ -138,12 +138,12 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 |Elementi in un diagramma classi concettuali|[Diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)|
 |Come sviluppare codice dalle classi concettuali|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
- In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seguente le frecce sono non direzionali per impostazione predefinita: [Esempio: funzionalità di modellazione di un dominio UML](http://go.microsoft.com/fwlink/?LinkId=213849).
+ In un diagramma classi concettuali non è in genere utile posizionare le frecce sulle associazioni per rappresentare l'esplorabilità. Ciò è dovuto al fatto che il diagramma non rappresenta un'implementazione. Le associazioni rappresentano le relazioni tra oggetti reali. Nell'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seguente le frecce sono non direzionali per impostazione predefinita: [Esempio: funzionalità di modellazione di un dominio UML](https://go.microsoft.com/fwlink/?LinkId=213849).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
- Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuali. Esempio:
+ Molte regole di business sono vincoli sulle relazioni tra le classi concettuali. È possibile scrivere queste *regole di business statiche* come commenti associati alle classi pertinenti in un diagramma classi concettuali. Di seguito è riportato un esempio:
 
  ![Regola nel commento collegata alla classe Order.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
@@ -188,11 +188,11 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 ## <a name="Workflow"></a>Visualizzazione del flusso di lavoro tra gli utenti e il sistema
  È possibile usare un diagramma di attività per mostrare il flusso di lavoro tra diversi casi di utilizzo. Spesso è utile iniziare un modello di requisiti creando un diagramma di attività che illustri le attività principali eseguite dagli utenti, sia con il sistema che all'esterno.
 
- Esempio:
+ Di seguito è riportato un esempio:
 
  ![Attività con tre azioni e un ciclo.](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
- È possibile creare diagrammi caso di utilizzo e diagrammi di attività per mostrare visualizzazioni diverse delle stesse informazioni.  Il diagramma caso di utilizzo è più efficace perché mostra l'annidamento delle azioni più piccole all'interno dell'attività più grande, ma non mostra il flusso di lavoro. Esempio:
+ È possibile creare diagrammi caso di utilizzo e diagrammi di attività per mostrare visualizzazioni diverse delle stesse informazioni.  Il diagramma caso di utilizzo è più efficace perché mostra l'annidamento delle azioni più piccole all'interno dell'attività più grande, ma non mostra il flusso di lavoro. Di seguito è riportato un esempio:
 
  ![Casi d'uso per le azioni precedenti](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
@@ -209,7 +209,7 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
 ## <a name="Sequences"></a>Visualizzazione delle interazioni tra gli utenti e il sistema
  È possibile usare un diagramma di sequenza per mostrare l'interscambio di messaggi tra il sistema e gli attori esterni o tra le parti del sistema. In questo modo vengono visualizzati i passaggi di un caso di utilizzo che mostra molto chiaramente la sequenza di interazioni. I diagrammi di sequenza sono particolarmente utili nelle situazioni in cui sono presenti molte parti che interagiscono tra di loro in un caso di utilizzo e anche quando nel sistema è disponibile un'API.
 
- Esempio:
+ Di seguito è riportato un esempio:
 
  ![Diagramma di sequenza con sistema e attori.](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
@@ -239,4 +239,4 @@ Visual Studio facilita la comprensione, la discussione e la comunicazione delle 
   Esaminando le relazioni tra le visualizzazioni fornite dai diversi diagrammi, è possibile comprendere rapidamente i concetti principali usati dagli utenti e aiutarli a comprendere ciò che hanno l'esigenza di ottenere dal sistema. È anche possibile ottenere una migliore comprensione dei requisiti di cui le parti interessate sono meno sicure. È possibile pianificare lo sviluppo di queste funzionalità, almeno in formato semplice nella fase iniziale del progetto, per permettere agli utenti di sperimentarle.
 
 ## <a name="see-also"></a>Vedere anche
- [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md) [sviluppare test da un modello](../modeling/develop-tests-from-a-model.md) [usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md) [modellare l'esempio di architettura dell'app](../modeling/model-your-app-s-architecture.md) [Visual Studio Extension: UML Domain Modeling features](http://go.microsoft.com/fwlink/?LinkId=213849) [vs Extension: color UML Elementi per stereotipo di esempio di](http://go.microsoft.com/fwlink/?LinkID=213841) [Visual Studio: collegare elementi UML a diagrammi, file e altri elementi](http://go.microsoft.com/fwlink/?LinkID=213813) [esempio di estensione di Visual Studio: allineare forme in un diagramma UML](http://go.microsoft.com/fwlink/?LinkID=213809) [video: modellazione del dominio aziendale](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
+ [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md) [sviluppare test da un modello](../modeling/develop-tests-from-a-model.md) [usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md) [modellare l'esempio di architettura dell'app e l'](../modeling/model-your-app-s-architecture.md) [estensione: modellazione del dominio UML](https://go.microsoft.com/fwlink/?LinkId=213849) [esempio di Visual Studio Extension: color UML elementi by stereotipo](https://go.microsoft.com/fwlink/?LinkID=213841) [esempio vs estensione: collegare elementi UML a diagrammi, file e altri elementi](https://go.microsoft.com/fwlink/?LinkID=213813) [esempio di Visual Studio: allineare forme in un diagramma UML](https://go.microsoft.com/fwlink/?LinkID=213809) [video: modellazione del dominio aziendale](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

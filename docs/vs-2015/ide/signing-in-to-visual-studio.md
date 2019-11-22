@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661214"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301242"
 ---
 # <a name="signing-in-to-visual-studio"></a>Accesso a Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "72661214"
 - **Si collega automaticamente a servizi come Azure e Visual Studio Team Services** nell'IDE senza richiedere di nuovo le credenziali per lo stesso account.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Come accedere a Visual Studio
- Quando si avvia Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si hanno questi account Microsoft, è possibile crearne uno Microsoft gratuitamente. Vedere [Come posso iscrivermi a un account Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+ Quando si avvia Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si hanno questi account Microsoft, è possibile crearne uno Microsoft gratuitamente. Vedere [Come posso iscrivermi a un account Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
  Selezionare quindi le impostazioni dell'interfaccia utente e il tema colori che si desidera usare in Visual Studio. Visual Studio memorizza queste impostazioni e le sincronizza tra tutti gli ambienti Visual Studio a cui si è eseguito l'accesso. Per un elenco delle impostazioni sincronizzate, vedere [Impostazioni sincronizzate](../ide/synchronized-settings-in-visual-studio.md). È possibile modificare le impostazioni in seguito usando il menu **Strumenti &#124; Opzioni** di Visual Studio.
 

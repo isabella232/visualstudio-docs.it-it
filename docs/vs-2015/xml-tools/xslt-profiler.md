@@ -9,23 +9,23 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d090e5c570eb2700e3493ffd80f256c76d0d52ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1316602d900fb122567b5ad50edf8e7b90c79bd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669314"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300952"
 ---
 # <a name="xslt-profiler"></a>Profiler XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il Profiler XSLT è uno strumento di profiler di analisi delle prestazioni che consente di sviluppare ed eseguire debug di documenti XSLT. Il Profiler XSLT consente agli sviluppatori di misurare e valutare i problemi correlati alle prestazioni nel codice XSLT creando rapporti dettagliati sulle prestazioni XSLT. Il Profiler XSLT include utili suggerimenti per l'ottimizzazione dei fogli di stile XSLT e XSL, essenziale per le applicazioni XSLT che richiedono massime prestazioni.
 
- Il Profiler XSLT è parte di Visual Studio 2010 ed è disponibile nel menu **XML** di Visual Studio.
+ Il Profiler XSLT è incluso in Visual Studio 2010 ed è disponibile nel menu **XML** di Visual Studio.
 
  ![Profiler XSLT](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 
- Il Profiler XSLT è stato introdotto per la prima volta come un componente aggiuntivo di Visual Studio 2008. Per altre informazioni, vedere la sezione relativa alle risorse correlate nella pagina [Community Technology Preview di XSLT Profiler per Visual Studio feb 08](http://go.microsoft.com/fwlink/?LinkId=142987) .
+ Il Profiler XSLT è stato introdotto per la prima volta come un componente aggiuntivo di Visual Studio 2008. Per altre informazioni, vedere la sezione relativa alle risorse correlate nella pagina [Community Technology Preview di XSLT Profiler per Visual Studio feb 08](https://go.microsoft.com/fwlink/?LinkId=142987) .
 
 > [!NOTE]
 > Alcuni schermi potrebbero essere diversi in Visual Studio 2010 rispetto a questi documenti perché alcuni elementi visivi sono stati modificati dopo Visual Studio 2008.

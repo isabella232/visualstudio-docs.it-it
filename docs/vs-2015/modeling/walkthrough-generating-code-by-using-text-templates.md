@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29a455194e64ee30186941cb67b014170426cce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659260"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295501"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procedura dettagliata: generazione di codice tramite modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La generazione del codice consente di creare codice di programma fortemente tipi
  In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.
 
 > [!NOTE]
-> L'applicazione [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), inclusa in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
+> L'applicazione [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765), inclusa in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.
 
  Ecco il file di esempio:
 
@@ -88,7 +88,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 1. Nel menu **File** fare clic su **Nuovo** e poi su **Progetto**.
 
-2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.
+2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli**, su **Applicazione console**.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Aggiungere un file XML prototipo al progetto
  Lo scopo di questo file è fornire esempi dei tipi di nodo XML che l'applicazione dovrà poter leggere. Potrebbe trattarsi di un file che sarà usato per il test dell'applicazione. Il modello genererà una classe C# per ogni tipo di nodo in questo file.
@@ -97,9 +97,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>Per aggiungere un file XML
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli**.
 
 3. Aggiungere il contenuto di esempio al file.
 
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>Aggiungere un file di codice di test
- Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Esempio:
+ Aggiungere al progetto un file C# e scrivere in esso un esempio del codice che si vuole poter scrivere. Di seguito è riportato un esempio:
 
 ```
 using System;
@@ -137,9 +137,9 @@ namespace MyProject
 
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Per aggiungere un file di modello di testo al progetto
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi**e quindi su **Nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli**.
 
    > [!NOTE]
    > Assicurarsi di aggiungere un modello di testo e non un modello di testo pre-elaborato.
@@ -157,7 +157,7 @@ namespace MyProject
    <#@ output extension=".cs" #>
    ```
 
-   .
+   senza subire modifiche.
 
    Si noti che un file con l'estensione .cs viene visualizzato in Esplora soluzioni come file secondario del file di modello. È possibile vederlo facendo clic su [+] accanto al nome del file di modello. Questo file viene generato dal file di modello quando si salva il file di modello o si allontana lo stato attivo da esso. Il file generato sarà compilato come parte del progetto.
 
@@ -405,7 +405,7 @@ namespace MyProject
 ## <a name="conclusion"></a>Conclusione
  Questa procedura dettagliata illustra diverse tecniche e vantaggi della generazione del codice:
 
-- La*generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.
+- La *generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.
 
 - La tipizzazione forte è uno dei vantaggi della generazione del codice. Mentre il modello rappresenta le informazioni in un formato più adatto all'utente, il codice generato consente ad altre parti dell'applicazione di gestire le informazioni mediante un set di tipi.
 

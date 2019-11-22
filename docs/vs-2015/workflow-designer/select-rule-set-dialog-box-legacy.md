@@ -13,21 +13,21 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24f17d6f07840f666dd1bb130be172ffa9d22cd3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663321"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301440"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Finestra di dialogo Seleziona set di regole (legacy)
-In questo argomento viene descritto come utilizzare la finestra di dialogo **Seleziona set di regole** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come usare la finestra di dialogo **Seleziona set di regole** in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- La finestra di dialogo **Seleziona set di regole** viene utilizzata per selezionare un set di regole che è possibile utilizzare con un'attività [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) . Per informazioni su come accedere alla finestra di dialogo **Seleziona set di regole** , vedere [How: Creare un set di regole PolicyActivity (legacy) ](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ La finestra di dialogo **Seleziona set di regole** viene utilizzata per selezionare un set di regole che è possibile utilizzare con un'attività [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Per informazioni su come accedere alla finestra di dialogo **Seleziona set di regole** , vedere [procedura: creare un set di regole PolicyActivity (legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
- Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Seleziona set di regole** .
+ La tabella seguente descrive gli elementi dell'interfaccia utente della finestra di dialogo **Seleziona set di regole**.
 
-|Elemento dell'interfaccia utente|Descrizione|
+|Elemento dell'interfaccia utente|description|
 |----------------|-----------------|
 |**Nuovo...**|Fare clic per aprire la finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) per creare una nuova condizione della regola.|
 |**Modifica...**|Fare clic per aprire la finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) per modificare la condizione della regola selezionata.|
@@ -41,7 +41,7 @@ In questo argomento viene descritto come utilizzare la finestra di dialogo **Sel
 > [!WARNING]
 > L'editor delle regole della [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] non supporta il multitargeting.
 
- Per ulteriori informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](http://go.microsoft.com/fwlink?LinkID=65009).
+ Per ulteriori informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](https://go.microsoft.com/fwlink?LinkID=65009).
 
 ## <a name="see-also"></a>Vedere anche
- [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) [Finestra di dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Utilizzo di PolicyActivity Activity](http://go.microsoft.com/fwlink?LinkID=65004) [Utilizzo delle condizioni nei flussi di lavoro](http://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Finestra di dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Utilizzo di PolicyActivity Activity](https://go.microsoft.com/fwlink?LinkID=65004) [Utilizzo delle condizioni nei flussi di lavoro](https://go.microsoft.com/fwlink?LinkID=65009)

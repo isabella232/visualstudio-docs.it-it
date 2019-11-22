@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aa377f657143ccc03a19d99bfc9620782bb916e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8189330f5bc3ff5c9008b6f01ffc00af96162806
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655036"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301141"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "72655036"
 > [!NOTE]
 > Se si scrive codice di merge personalizzato, influiscono solo sulle unioni eseguite utilizzando questo EMD. Se sono presenti altri EMDs che uniscono lo stesso tipo di oggetto o se è presente altro codice personalizzato che crea questi oggetti senza usare EMD, non saranno interessati dal codice di merge personalizzato.
 >
-> Per assicurarsi che un nuovo elemento o una nuova relazione venga sempre elaborata dal codice personalizzato, valutare la possibilità di definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio dell'elemento. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+> Per assicurarsi che un nuovo elemento o una nuova relazione venga sempre elaborata dal codice personalizzato, valutare la possibilità di definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio dell'elemento. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Esempio: definizione di un EMD senza codice personalizzato
  L'esempio seguente consente agli utenti di creare contemporaneamente un elemento e un connettore trascinando dalla casella degli strumenti su una forma esistente. Nell'esempio viene aggiunto un EMD alla definizione DSL. Prima di questa modifica, gli utenti possono trascinare gli strumenti sul diagramma, ma non sulle forme esistenti.
@@ -110,7 +110,7 @@ ms.locfileid: "72655036"
 
       È possibile utilizzare lo strumento di navigazione percorso per creare ogni percorso:
 
-   3. In **processo Unione creando collegamenti nei percorsi**fare clic su **\<add percorso >** .
+   3. In **processo Unione creando collegamenti nei percorsi**fare clic su **\<Aggiungi percorso >** .
 
    4. Fare clic sulla freccia a discesa a destra della voce dell'elenco. Viene visualizzata una visualizzazione struttura ad albero.
 
@@ -214,7 +214,7 @@ ms.locfileid: "72655036"
 
 2. Eseguire l'override del metodo `MergeRelate` e, facoltativamente, il metodo `MergeDisconnect`. A tale scopo, è necessario impostare la proprietà **generata doppia derivata** della classe di dominio. Il codice può chiamare il codice di merge generato nella classe di base. Utilizzare questa opzione se si desidera eseguire operazioni aggiuntive dopo l'esecuzione del merge.
 
-   Questi approcci influiscono solo sulle unioni eseguite utilizzando questo EMD. Se si desidera influire su tutti i modi in cui è possibile creare l'elemento Unito, un'alternativa consiste nel definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio unita. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+   Questi approcci influiscono solo sulle unioni eseguite utilizzando questo EMD. Se si desidera influire su tutti i modi in cui è possibile creare l'elemento Unito, un'alternativa consiste nel definire un `AddRule` sulla relazione di incorporamento e una `DeleteRule` sulla classe di dominio unita. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 #### <a name="to-override-mergerelate"></a>Per eseguire l'override di MergeRelate
 
@@ -230,7 +230,7 @@ ms.locfileid: "72655036"
 
 5. Esaminare il contenuto di **Dsl\Generated Files\DomainClasses.cs**. Cercare i metodi denominati `MergeRelate` ed esaminarne il contenuto. Ciò consentirà di scrivere versioni personalizzate.
 
-6. In un nuovo file di codice scrivere una classe parziale per la classe ricevente ed eseguire l'override del metodo `MergeRelate`. Ricordarsi di chiamare il metodo di base. Esempio:
+6. In un nuovo file di codice scrivere una classe parziale per la classe ricevente ed eseguire l'override del metodo `MergeRelate`. Ricordarsi di chiamare il metodo di base. Di seguito è riportato un esempio:
 
     ```csharp
     partial class ExampleModel
@@ -273,7 +273,7 @@ ms.locfileid: "72655036"
 
 4. Scrivere i metodi in una definizione di classe parziale in un file di codice separato. Gli esempi esaminati in precedenza dovrebbero suggerire gli elementi necessari.
 
-   Il codice di merge personalizzato non avrà alcun effetto sul codice che crea direttamente oggetti e relazioni e non influirà sugli altri EMDs. Per assicurarsi che le modifiche aggiuntive vengano implementate indipendentemente dalla modalità di creazione dell'elemento, prendere in considerazione la scrittura di un `AddRule` e di un `DeleteRule`. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+   Il codice di merge personalizzato non avrà alcun effetto sul codice che crea direttamente oggetti e relazioni e non influirà sugli altri EMDs. Per assicurarsi che le modifiche aggiuntive vengano implementate indipendentemente dalla modalità di creazione dell'elemento, prendere in considerazione la scrittura di un `AddRule` e di un `DeleteRule`. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Reindirizzamento di un'operazione di Unione
  Una direttiva di Unione diretta reindirizza la destinazione di un'operazione di Unione. In genere, la nuova destinazione è l'elemento padre di incorporamento della destinazione iniziale.
@@ -304,7 +304,7 @@ ms.locfileid: "72655036"
 
      Il nuovo percorso sarà simile a quello riportato di seguito:
 
-     **Componente ComponentHasPorts. Component/!**
+     **ComponentHasPorts.Component/!Component**
 
 9. Salvare la soluzione, quindi trasformare i modelli facendo clic sul pulsante all'estrema destra sulla barra degli strumenti **Esplora soluzioni** .
 
@@ -317,4 +317,4 @@ ms.locfileid: "72655036"
      Non dovrebbe essere visualizzato il puntatore non disponibile e dovrebbe essere possibile eliminare la nuova porta di **input** su quella esistente. Selezionare la nuova **porta di input** e trascinarla in un altro punto del **componente**.
 
 ## <a name="see-also"></a>Vedere anche
- [Esplorazione e aggiornamento di un modello nel codice programma personalizzazione di](../modeling/navigating-and-updating-a-model-in-program-code.md) [strumenti e dei](../modeling/customizing-tools-and-the-toolbox.md) [diagrammi circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8) della casella degli strumenti DSL di esempio
+ [Esplorazione e aggiornamento di un modello nel codice programma personalizzazione di](../modeling/navigating-and-updating-a-model-in-program-code.md) [strumenti e della casella degli](../modeling/customizing-tools-and-the-toolbox.md) strumenti

@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 76590f55b21f1609a20c6fd8eb041a41a0f82131
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656033"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299471"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrare le app alla piattaforma UWP (Universal Windows Platform)
 Apportare le modifiche manuali necessarie ai file di progetto esistenti per le app di Windows Store 8.1, di Windows Phone 8.1 o di Windows universale create con Visual Studio 2015 RC, in modo da consentirne l'uso con Visual Studio 2015 RTM. Se è presente un'app universale di Windows 8.1 con un progetto di app di Windows e un progetto di Windows Phone, è necessario seguire la procedura per la migrazione dei singoli progetti.
@@ -84,17 +84,17 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
      ![Fare clic con il pulsante destro del mouse e scegliere modifica.](../misc/media/uap-editproject.png "UAP_EditProject")
 
-6. Trovare l'elemento \<PropertyGroup > che contiene l'elemento \<TargetPlatformVersion > con un valore di 8,1. Eseguire i passaggi seguenti per questa \<PropertyGroup elemento >:
+6. Trovare l'elemento \<PropertyGroup > che contiene l'elemento \<TargetPlatformVersion > con un valore di 8,1. Eseguire i passaggi seguenti per questo elemento \<PropertyGroup >:
 
     1. Impostare il valore dell'elemento \<Platform > su: **x86**.
 
-    2. Aggiungere un elemento \<TargetPlatformIdentifier > e impostarne il valore su: **UAP**.
+    2. Aggiungere un elemento \<> TargetPlatformIdentifier e impostarne il valore su: **UAP**.
 
-    3. Modificare il valore esistente dell'elemento \<TargetPlatformVersion > in modo che sia il valore della versione piattaforma UWP (Universal Windows Platform) installata. Aggiungere anche un elemento \<TargetPlatformMinVersion > e assegnargli lo stesso valore.
+    3. Modificare il valore esistente dell'elemento \<> TargetPlatformVersion in modo che sia il valore della versione piattaforma UWP (Universal Windows Platform) installata. Aggiungere anche un elemento \<TargetPlatformMinVersion > e assegnargli lo stesso valore.
 
-    4. Modificare il valore dell'elemento > \<MinimumVisualStudioVersion in: **14**.
+    4. Modificare il valore dell'elemento \<MinimumVisualStudioVersion > in: **14**.
 
-    5. Sostituire l'elemento \<ProjectTypeGuids >, come illustrato di seguito:
+    5. Sostituire l'elemento \<> ProjectTypeGuids, come illustrato di seguito:
 
          Per C#:
 
@@ -108,9 +108,9 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
         ```
 
-    6. Aggiungere un elemento \<EnableDotNetNativeCompatibleProfile > e impostarne il valore su: **true**.
+    6. Aggiungere un elemento \<> EnableDotNetNativeCompatibleProfile e impostarne il valore su: **true**.
 
-    7. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse non ridimensionate a 200, sarà necessario aggiungere un elemento \<UapDefaultAssetScale > con il valore della scala degli asset a questo PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).
+    7. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse non ridimensionate a 200, sarà necessario aggiungere un elemento \<UapDefaultAssetScale > con il valore della scala delle risorse a questo PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).
 
          A questo punto l'elemento \<PropertyGroup > dovrebbe essere simile all'esempio seguente:
 
@@ -140,7 +140,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
         <VisualStudioVersion>14.0</VisualStudioVersion>
     ```
 
-8. Trovare \<PropertyGroup elementi > configurati per la piattaforma AnyCPU come parte dell'attributo Condition. Rimuovere questi elementi e i relativi elementi figlio. L'elemento AnyCPU non è supportato per le app di Windows 10 in Visual Studio 2015. Ad esempio, è necessario rimuovere \<PropertyGroup > elementi come questi:
+8. Trovare \<PropertyGroup > gli elementi configurati per la piattaforma AnyCPU come parte dell'attributo Condition. Rimuovere questi elementi e i relativi elementi figlio. L'elemento AnyCPU non è supportato per le app di Windows 10 in Visual Studio 2015. Ad esempio, è necessario rimuovere \<PropertyGroup > elementi come questi:
 
     ```xml
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -164,7 +164,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
       </PropertyGroup>
     ```
 
-9. Per ogni elemento \<PropertyGroup > rimanente, verificare se l'elemento ha un attributo Condition con una configurazione di rilascio. In caso contrario, ma non contiene un elemento \<UseDotNetNativeToolchain >, quindi aggiungerne uno. Impostare il valore per l'elemento \<UseDotNetNativeToolchain > su true, come segue:
+9. Per ogni elemento rimanente \<PropertyGroup >, verificare se l'elemento ha un attributo Condition con una configurazione di rilascio. In caso contrario, ma non contiene un elemento \<> UseDotNetNativeToolchain, quindi aggiungerne uno. Impostare il valore per l'elemento \<UseDotNetNativeToolchain > su true, come segue:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
@@ -189,13 +189,13 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     </PropertyGroup>
     ```
 
-11. Trovare l'elemento \<ItemGroup > che contiene l'elemento \<AppxManifest >. Aggiungere il seguente \<None elemento > come figlio dell'elemento > \<ItemGroup:
+11. Trovare l'elemento \<ItemGroup > che contiene l'elemento \<AppxManifest >. Aggiungere il seguente \<elemento > None come figlio dell'elemento > \<ItemGroup:
 
     ```xml
     <None Include="project.json" />
     ```
 
-12. Trovare l'elemento \<ItemGroup > che contiene altre risorse aggiunte al progetto, ad esempio i file con estensione png logo (\<Content include = "Assets\Logo.scale-100.png"/>). Aggiungere la \<Content seguente > elemento figlio a questo elemento \<ItemGroup >:
+12. Trovare l'elemento \<ItemGroup > che contiene altri asset aggiunti al progetto, ad esempio i file con estensione png logo (\<Content include = "Assets\Logo.scale-100.png"/>). Aggiungere l'elemento \<content > figlio seguente a questo elemento \<ItemGroup >:
 
      **Per C#:**
 
@@ -209,7 +209,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     <Content Include="My Project\default.rd.xml" />
     ```
 
-13. Trovare l'elemento \<ItemGroup > che include \<Reference elementi figlio > per i pacchetti NuGet. Prendere nota dei pacchetti NuGet usati, perché sarà necessario scaricarli con Gestione pacchetti NuGet dopo che il progetto è stato ricaricato. Rimuovere questa \<ItemGroup > insieme ai relativi elementi figlio. Ad esempio, un progetto UWP può includere i pacchetti NuGet seguenti che devono essere rimossi:
+13. Trovare l'elemento \<> ItemGroup che include \<riferimento > elementi figlio ai pacchetti NuGet. Prendere nota dei pacchetti NuGet usati, perché sarà necessario scaricarli con Gestione pacchetti NuGet dopo che il progetto è stato ricaricato. Rimuovere questo \<ItemGroup > insieme ai relativi elementi figlio. Ad esempio, un progetto UWP può includere i pacchetti NuGet seguenti che devono essere rimossi:
 
     ```xml
     <ItemGroup>
@@ -262,17 +262,17 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
      ![Fare&#45;clic con il pulsante destro del mouse su file progetto e scegliere modifica](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")
 
-3. Trovare l'elemento \<PropertyGroup > che contiene l'elemento \<ApplicationTypeRevision > con un valore di 8,1. Eseguire i passaggi seguenti per questa \<PropertyGroup elemento >:
+3. Trovare l'elemento \<PropertyGroup > che contiene l'elemento \<ApplicationTypeRevision > con un valore di 8,1. Eseguire i passaggi seguenti per questo elemento \<PropertyGroup >:
 
     1. Aggiungere un elemento \<WindowsTargetPlatformVersion > e un elemento \<WindowsTargetPlatformMinVersion > e assegnare loro il valore della versione di piattaforma UWP (Universal Windows Platform) installata.
 
     2. Aggiornare il valore dell'elemento ApplicationTypeRevision da 8.1 a 10.0.
 
-    3. Modificare il valore dell'elemento > \<MinimumVisualStudioVersion in: 14.
+    3. Modificare il valore dell'elemento \<MinimumVisualStudioVersion > in: 14.
 
-    4. Aggiungere un elemento \<EnableDotNetNativeCompatibleProfile > e impostarne il valore su: true.
+    4. Aggiungere un elemento \<> EnableDotNetNativeCompatibleProfile e impostarne il valore su: true.
 
-    5. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse non ridimensionate a 200, sarà necessario aggiungere un elemento \<UapDefaultAssetScale > con il valore della scala degli asset a questo PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).
+    5. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse non ridimensionate a 200, sarà necessario aggiungere un elemento \<UapDefaultAssetScale > con il valore della scala delle risorse a questo PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).
 
     6. Solo per i progetti Windows Phone, modificare il valore di \<ApplicationType > da Windows Phone a Windows Store.
 
@@ -292,7 +292,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
         </PropertyGroup>
         ```
 
-4. Modificare tutte le istanze del \<PlatformToolset elemento > in modo che il valore V140. Esempio:
+4. Modificare tutte le istanze dell'elemento \<PlatformToolset > in modo che il valore V140. Di seguito è riportato un esempio:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -304,7 +304,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
       </PropertyGroup>
     ```
 
-5. Per ogni elemento \<PropertyGroup > rimanente, verificare se l'elemento ha un attributo Condition con una configurazione di rilascio. In caso contrario, ma non contiene un elemento \<UseDotNetNativeToolchain >, quindi aggiungerne uno. Impostare il valore per l'elemento \<UseDotNetNativeToolchain > su true, come segue:
+5. Per ogni elemento rimanente \<PropertyGroup >, verificare se l'elemento ha un attributo Condition con una configurazione di rilascio. In caso contrario, ma non contiene un elemento \<> UseDotNetNativeToolchain, quindi aggiungerne uno. Impostare il valore per l'elemento \<UseDotNetNativeToolchain > su true, come segue:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
@@ -332,7 +332,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 2. È necessario aggiornare l'elemento \<Package > con i nuovi schemi in base al tipo di progetto esistente. Rimuovere prima gli schemi seguenti in base al tipo di progetto in uso, Windows Store o Windows Phone.
 
-    **Precedente per il progetto Windows Store:** Il \<Package > elemento sarà simile a quello seguente.
+    **Precedente per il progetto Windows Store:** L'elemento > del pacchetto di \<sarà simile a quello seguente.
 
    ```xml
    <Package
@@ -341,7 +341,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-    **Precedente per il progetto Windows Phone:** Il \<Package > elemento sarà simile a quello seguente.
+    **Precedente per il progetto Windows Phone:** L'elemento > del pacchetto di \<sarà simile a quello seguente.
 
    ```xml
    <Package
@@ -351,7 +351,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
    ```
 
-    **Nuovo per piattaforma UWP (Universal Windows Platform):** Aggiungere gli schemi seguenti all'elemento \<Package >. Rimuovere i prefissi dell'identificatore dello spazio dei nomi associato dagli elementi per gli schemi appena rimossi. Aggiornare la proprietà IgnorableNamespaces su: uap mp. Il nuovo elemento di > \<Package dovrebbe essere simile a quello seguente.
+    **Nuovo per piattaforma UWP (Universal Windows Platform):** Aggiungere gli schemi seguenti al pacchetto di \<> elemento. Rimuovere i prefissi dell'identificatore dello spazio dei nomi associato dagli elementi per gli schemi appena rimossi. Aggiornare la proprietà IgnorableNamespaces su: uap mp. Il nuovo pacchetto di \<> elemento dovrebbe essere simile a quello seguente.
 
    ```xml
    <Package
@@ -362,7 +362,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-3. Aggiungere un \<Dependencies > elemento figlio all'elemento \<Package >. Aggiungere quindi un \<TargetDeviceFamily > elemento figlio a questo \<Dependencies elemento > con gli attributi Name, MinVersion e MaxVersionTested. Assegnare all'attributo Name il valore: Windows.Universal. Assegnare a MinVersion e MaxVersionTested il valore della versione della piattaforma UWP installata. Questo elemento dovrebbe essere simile al seguente:
+3. Aggiungere un \<dipendenze > elemento figlio all'elemento > del pacchetto di \<. Aggiungere quindi un elemento \<TargetDeviceFamily > figlio a questo \<dipendenze > elemento con attributi Name, MinVersion e MaxVersionTested. Assegnare all'attributo Name il valore: Windows.Universal. Assegnare a MinVersion e MaxVersionTested il valore della versione della piattaforma UWP installata. Questo elemento dovrebbe essere simile al seguente:
 
    ```xml
    <Dependencies>
@@ -370,16 +370,16 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
    </Dependencies>
    ```
 
-4. **Solo per Windows Store:** È necessario aggiungere un \<mp:P honeIdentity > elemento figlio all'elemento \<Package >. Aggiungere un attributo PhoneProductId e un attributo PhonePublisherId. Impostare PhoneProductId in modo che abbia lo stesso valore dell'attributo Name nell'elemento \<Identity >. Impostare il valore PhonePublishedId su: 00000000-0000-0000-0000-000000000000, analogamente a quanto segue:
+4. **Solo per Windows Store:** È necessario aggiungere un elemento \<MP: PhoneIdentity > figlio all'elemento > del pacchetto di \<. Aggiungere un attributo PhoneProductId e un attributo PhonePublisherId. Impostare PhoneProductId in modo che abbia lo stesso valore dell'attributo Name nell'elemento Identity > di \<. Impostare il valore PhonePublishedId su: 00000000-0000-0000-0000-000000000000, analogamente a quanto segue:
 
    ```xml
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />
    <mp:PhoneIdentity PhoneProductId="aa3815a1-2d97-4c71-8c99-578135b28cd8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
    ```
 
-5. Trovare l'elemento \<Prerequisites > ed eliminare questo elemento e gli eventuali elementi figlio presenti.
+5. Trovare l'elemento > \<prerequisiti ed eliminare questo elemento e gli eventuali elementi figlio.
 
-6. Aggiungere lo spazio dei nomi **UAP** ai seguenti \<Resource > elementi: scale, DXFeatureLevel. Esempio:
+6. Aggiungere lo spazio dei nomi **UAP** ai seguenti elementi di > risorsa \<: scale, DXFeatureLevel. Di seguito è riportato un esempio:
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-7. Aggiungere lo spazio dei nomi **UAP** ai seguenti \<Capability > elementi: documentsLibrary, picturesLibrary, VideosLibrary, musicLibrary, EnterpriseAuthentication, SharedUserCertificates, removableStorage, appuntamenti e contatti. Esempio:
+7. Aggiungere lo spazio dei nomi **UAP** ai seguenti elementi di \<funzionalità >: documentsLibrary, picturesLibrary, VideosLibrary, musicLibrary, enterpriseAuthentication, SharedUserCertificates, removableStorage, appuntamenti e contatti. Di seguito è riportato un esempio:
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-8. Aggiungere lo spazio dei nomi **UAP** all'elemento \<VisualElements > e a tutti i relativi elementi figlio. Esempio:
+8. Aggiungere lo spazio dei nomi **UAP** all'elemento \<VisualElements > e a tutti i relativi elementi figlio. Di seguito è riportato un esempio:
 
    ```xml
    <uap:VisualElements
@@ -444,7 +444,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-9. Aggiungere lo spazio dei nomi **UAP** al > \<ApplicationContentUriRules e a tutti i relativi elementi figlio. Esempio:
+9. Aggiungere lo spazio dei nomi **UAP** al > \<ApplicationContentUriRules e a tutti i relativi elementi figlio. Di seguito è riportato un esempio:
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-10. Aggiungere lo spazio dei nomi **UAP** ai seguenti \<Extension > gli elementi e tutti i relativi elementi figlio: Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. cameraSettings, Windows. fileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Protocol, Windows. search, Windows. shareTarget. Esempio:
+10. Aggiungere lo spazio dei nomi **UAP** all'estensione \<seguente > elementi e tutti i relativi elementi figlio: Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. CameraSettings, Windows. FileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. PrintTaskSettings, Windows. Protocol, Windows. search, Windows. ShareTarget. Di seguito è riportato un esempio:
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-11. Aggiungere lo spazio dei nomi **uap** alle attività in background di tipo chatMessageNotification. Esempio:
+11. Aggiungere lo spazio dei nomi **uap** alle attività in background di tipo chatMessageNotification. Di seguito è riportato un esempio:
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -480,9 +480,9 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-12. Modificare le dipendenze framework. Aggiungere un nome del server di pubblicazione a tutti gli elementi di > \<PackageDependency e specificare un MinVersion se non è già specificato.
+12. Modificare le dipendenze framework. Aggiungere un nome editore a tutti gli elementi \<> PackageDependency e specificare un MinVersion se non è già specificato.
 
-     **Vecchia:** \<PackageDependency elemento >
+     **Vecchia:** \<elemento > PackageDependency
 
     ```xml
     <Dependencies>
@@ -491,7 +491,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-     **Nuovo:** elemento \<PackageDependency >
+     **Novità:** \<elemento > PackageDependency
 
     ```xml
     <Dependencies>
@@ -505,7 +505,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
      Usare i valori Publisher e MinVersion appropriati per il framework che si sta effettivamente usando. Tenere presente che questi nomi possono essere diversi per Windows 10.
 
-13. Sostituire le attività di tipo background gattCharacteristicNotification e rfcommConnection con un'attività di tipo Bluetooth. Esempio:
+13. Sostituire le attività di tipo background gattCharacteristicNotification e rfcommConnection con un'attività di tipo Bluetooth. Di seguito è riportato un esempio:
 
      **PRECEDENTE**
 
@@ -528,7 +528,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     </Extension>
     ```
 
-14. Sostituire le capacità del dispositivo Bluetooth bluetooth.rfcomm e bluetooth.genericAttributeProfile con una capacità Bluetooth generica. Esempio:
+14. Sostituire le capacità del dispositivo Bluetooth bluetooth.rfcomm e bluetooth.genericAttributeProfile con una capacità Bluetooth generica. Di seguito è riportato un esempio:
 
      **PRECEDENTE**
 
@@ -558,15 +558,15 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 15. Rimuovere tutti gli elementi deprecati.
 
-    1. Questi attributi per \<VisualElements > sono deprecati e devono essere rimossi:
+    1. Questi attributi per \<> VisualElements sono deprecati e devono essere rimossi:
 
-       - Attributi di > \<VisualElements: ForegroundText, ToastCapable
+       - Attributi \<VisualElements >: ForegroundText, ToastCapable
 
-       - Attributo \<DefaultTile > DefaultSize
+       - Il \<DefaultTile > attributo DefaultSize
 
-       - Elemento \<ApplicationView >
+       - Elemento > \<ApplicationView
 
-         Esempio:
+         Di seguito è riportato un esempio:
 
        ```xml
        <m2:VisualElements
@@ -585,7 +585,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 17. È necessario rimuovere alcuni file nascosti prima di riaprire la soluzione.
 
-    1. Aprire Esplora file, fare clic su **Visualizza** nella barra degli strumenti e selezionare **Elementi nascosti** ed **Estensioni di file**. Aprire la cartella nel computer: \<path per il percorso della soluzione > \\. vs \\ {nome progetto} \v14. Se esiste un file con estensione suo, eliminarlo.
+    1. Aprire Esplora file, fare clic su **Visualizza** nella barra degli strumenti e selezionare **Elementi nascosti** ed **Estensioni di file**. Aprire la cartella nel computer: \<percorso per il percorso della soluzione >\\. vs\\{nome progetto} \v14. Se esiste un file con estensione suo, eliminarlo.
 
     2. Tornare alla cartella in cui si trova la soluzione. Aprire le cartelle per i progetti presenti nella soluzione. Se nelle cartelle del progetto esiste un file con estensione csproj.user o vbproj.user, eliminarlo.
 
@@ -649,11 +649,11 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ![Fare clic con il pulsante destro del mouse e scegliere modifica.](../misc/media/uap-editproject.png "UAP_EditProject")
 
-4. Trovare l'elemento \<PropertyGroup > che contiene gli elementi \<TargetPlatformVersion > e \<TargetPlatformMinVersion >. Modificare il valore esistente del \<TargetPlatformVersion > e \<TargetPlatformMinVersion > gli elementi in modo che corrispondano alla versione della piattaforma UWP (Universal Windows Platform) installata.
+4. Trovare l'elemento \<PropertyGroup > che contiene gli elementi \<TargetPlatformVersion > e \<TargetPlatformMinVersion >. Modificare il valore esistente del \<TargetPlatformVersion > e \<TargetPlatformMinVersion > elementi in modo che corrispondano alla versione di piattaforma UWP (Universal Windows Platform) installata.
 
     La dimensione predefinita per le risorse nelle app di Windows universale è 200. I progetti creati con Visual Studio 2015 RC includono asset ridimensionati a 100, è necessario aggiungere un elemento \<UapDefaultAssetScale > con il valore 100 a questo PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).
 
-5. Se sono stati aggiunti riferimenti a SDK di estensione della piattaforma UWP (Universal Windows Platform), ad esempio Windows Mobile SDK, sarà necessario aggiornare la versione dell'SDK. Ad esempio, questo \<SDKReference elemento >:
+5. Se sono stati aggiunti riferimenti a SDK di estensione della piattaforma UWP (Universal Windows Platform), ad esempio Windows Mobile SDK, sarà necessario aggiornare la versione dell'SDK. Ad esempio, questo \<Elemento SDKReference >:
 
    ```xml
    <SDKReference Include="WindowsMobile, Version=10.0.0.1">
@@ -671,7 +671,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-6. Trovare l'elemento \<Target > con un attributo Name con il valore: EnsureNuGetPackageBuildImports. Eliminare questo elemento e tutti i relativi elementi figlio.
+6. Trovare l'elemento \<> di destinazione con un attributo Name con il valore: EnsureNuGetPackageBuildImports. Eliminare questo elemento e tutti i relativi elementi figlio.
 
    ```xml
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -683,7 +683,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
    </Target>
    ```
 
-7. Trovare ed eliminare gli elementi \<Import > con attributi di progetto e condizione che fanno riferimento a Microsoft. Diagnostics. Tracing. EventSource e Microsoft. ApplicationInsights, come segue:
+7. Trovare ed eliminare il \<importare elementi > con attributi di progetto e condizione che fanno riferimento a Microsoft. Diagnostics. Tracing. EventSource e Microsoft. ApplicationInsights, come segue:
 
    ```xml
    <Import Project="..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.EventSource.Redist.1.1.16-beta\build\portable-net45+win8+wpa81\Microsoft.Diagnostics.Tracing.EventSource.Redist.targets')" />
@@ -691,9 +691,9 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-8. Trovare la \<ItemGroup > che ha \<Reference elementi figlio > per i pacchetti NuGet. Prendere nota dei pacchetti NuGet a cui viene fatto riferimento, perché queste informazioni saranno necessarie per un passaggio successivo. Una differenza significativa nel formato di progetto Windows 10 tra Visual Studio 2015 RC e Visual Studio 2015 RTM è rappresentata dal fatto che il formato RTM usa [NuGet](http://docs.nuget.org/) versione 3.
+8. Trovare il \<> ItemGroup con \<riferimento > elementi figlio ai pacchetti NuGet. Prendere nota dei pacchetti NuGet a cui viene fatto riferimento, perché queste informazioni saranno necessarie per un passaggio successivo. Una differenza significativa nel formato di progetto Windows 10 tra Visual Studio 2015 RC e Visual Studio 2015 RTM è rappresentata dal fatto che il formato RTM usa [NuGet](https://docs.microsoft.com/nuget/) versione 3.
 
-    Rimuovere la \<ItemGroup > e tutti i relativi elementi figlio. Ad esempio, un progetto UWP creato con Visual Studio RC includerà i pacchetti NuGet seguenti che devono essere rimossi:
+    Rimuovere il \<> ItemGroup e tutti i relativi elementi figlio. Ad esempio, un progetto UWP creato con Visual Studio RC includerà i pacchetti NuGet seguenti che devono essere rimossi:
 
    ```xml
    <ItemGroup>
@@ -721,7 +721,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-9. Trovare l'elemento \<ItemGroup > che contiene un elemento \<AppxManifest >. Se è presente un \<None elemento > con un attributo include impostato su: packages. config, eliminarlo. Aggiungere anche un elemento \<None > con un attributo include e impostarne il valore su: Project. JSON.
+9. Trovare l'elemento \<ItemGroup > che contiene un elemento \<AppxManifest >. Se è presente un elemento \<None > con un attributo include impostato su: packages. config, eliminarlo. Aggiungere anche un elemento \<None > con un attributo include e impostarne il valore su: Project. JSON.
 
 10. Salvare le modifiche. Quindi, chiudere il file di progetto.
 
@@ -731,7 +731,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 13. Aprire il file Package.appxmanifest nel progetto.
 
-    1. Trovare l'elemento \<TargetDeviceFamily >. Modificare gli attributi MinVersion e MaxVersionTested in modo che corrispondano alla versione della piattaforma UWP (Universal Windows Platform) installata, analogamente a quanto segue:
+    1. Trovare l'elemento \<> TargetDeviceFamily. Modificare gli attributi MinVersion e MaxVersionTested in modo che corrispondano alla versione della piattaforma UWP (Universal Windows Platform) installata, analogamente a quanto segue:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -739,7 +739,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     2. Salvare le modifiche.
 
-14. Usare Gestione NuGet per aggiungere i pacchetti eliminati nel passaggio precedente. Una differenza significativa nel formato di progetto Windows 10 tra Visual Studio 2015 RC e Visual Studio 2015 RTM è rappresentata dal fatto che il formato RTM usa [NuGet](http://docs.nuget.org/) versione 3.
+14. Usare Gestione NuGet per aggiungere i pacchetti eliminati nel passaggio precedente. Una differenza significativa nel formato di progetto Windows 10 tra Visual Studio 2015 RC e Visual Studio 2015 RTM è rappresentata dal fatto che il formato RTM usa [NuGet](https://docs.microsoft.com/nuget/) versione 3.
 
     Ora è possibile codificare, compilare ed eseguire il debug dell'app.
 
@@ -759,11 +759,11 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 3. Trovare tutti gli elementi \<PropertyGroup > che non contengono un attributo Condition ma che contengono un elemento \<ApplicationTypeRevision >. Aggiornare il valore di ApplicationTypeRevision da 8.2 a 10.0. Aggiungere un \<WindowsTargetPlatformVersion > e un elemento \<WindowsTargetPlatformMinVersion > e impostare i relativi valori come valore della versione di piattaforma UWP (Universal Windows Platform) installata.
 
-     Aggiungere un elemento \<EnableDotNetNativeCompatibleProfile > e impostarne il valore su true se l'elemento non esiste già.
+     Aggiungere un elemento \<> EnableDotNetNativeCompatibleProfile e impostarne il valore su true se l'elemento non esiste già.
 
      La dimensione predefinita per le risorse nelle app di Windows universale è 200. I progetti creati con Visual Studio 2015 RC includono asset ridimensionati a 100, è necessario aggiungere un elemento \<UapDefaultAssetScale > con il valore 100 a questo PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).
 
-     Questo \<PropertyGroup elemento > ora sarà simile al seguente:
+     Questo \<elemento PropertyGroup > ora sarà simile al seguente:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -779,7 +779,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-4. Per ogni elemento \<PropertyGroup > rimanente, verificare se l'elemento ha un attributo Condition con una configurazione di rilascio. In caso contrario, ma non contiene un elemento \<UseDotNetNativeToolchain >, quindi aggiungerne uno. Impostare il valore per l'elemento \<UseDotNetNativeToolchain > su true, come segue:
+4. Per ogni elemento rimanente \<PropertyGroup >, verificare se l'elemento ha un attributo Condition con una configurazione di rilascio. In caso contrario, ma non contiene un elemento \<> UseDotNetNativeToolchain, quindi aggiungerne uno. Impostare il valore per l'elemento \<UseDotNetNativeToolchain > su true, come segue:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -800,7 +800,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 7. Aprire il file Package.appxmanifest nel progetto.
 
-    1. Trovare l'elemento \<TargetDeviceFamily >. Modificare gli attributi MinVersion e MaxVersionTested in modo che corrispondano alla versione della piattaforma UWP (Universal Windows Platform) installata, analogamente a quanto segue:
+    1. Trovare l'elemento \<> TargetDeviceFamily. Modificare gli attributi MinVersion e MaxVersionTested in modo che corrispondano alla versione della piattaforma UWP (Universal Windows Platform) installata, analogamente a quanto segue:
 
         ```xml
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
@@ -821,7 +821,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 ### <a name="UnitTestRCUpdate10CSharp"></a>Aggiornare i C#progetti/VB unit test
 
-1. Con Visual Studio aprire la soluzione contenente il progetto di unit test C#/VB. Modificare il valore dell'elemento \<OuttputType > su: AppContainerExe.
+1. Con Visual Studio aprire la soluzione contenente il progetto di unit test C#/VB. Modificare il valore dell'elemento \<OuttputType > in: AppContainerExe.
 
    ```xml
 
@@ -829,7 +829,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-2. Sostituire questo elemento \<EnableCoreRuntime > false \</EnableCoreRuntime > con l'elemento seguente:
+2. Sostituire questo elemento \<EnableCoreRuntime > false\</EnableCoreRuntime > con l'elemento seguente:
 
    ```xml
 
@@ -867,7 +867,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-4. Aggiungere questo elemento \<UseDotNetNativeToolchain > true \</UseDotNetNativeToolchain > come elemento figlio a questi gruppi di proprietà:
+4. Aggiungere questo elemento \<UseDotNetNativeToolchain > true\</UseDotNetNativeToolchain > come elemento figlio a questi gruppi di proprietà:
 
    ```xml
 
@@ -877,7 +877,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-5. Eliminare gli elementi > \<ItemGroup seguenti:
+5. Eliminare gli elementi seguenti \<ItemGroup >:
 
    ```xml
 
@@ -1036,7 +1036,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-4. Aggiungere questi \<PropertyGroup > elementi se non sono già presenti nel file:
+4. Aggiungere questi elementi \<PropertyGroup > Se non sono già presenti nel file:
 
     ```xml
 
@@ -1127,7 +1127,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-     Sostituirlo con questo \<ItemGroup elemento >:
+     Sostituirlo con questo \<elemento > ItemGroup:
 
     ```xml
 
@@ -1152,7 +1152,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     </ItemGroup>
     ```
 
-     Sostituirlo con questi elementi di > \<ItemGroup:
+     Sostituirlo con questi \<elementi di > ItemGroup:
 
     ```xml
 
@@ -1176,7 +1176,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     <ClCompile Include="UnitTest.cpp"/>
     ```
 
-     Sostituirlo con questi elementi di > \<CICompile:
+     Sostituirlo con questi \<elementi di > CICompile:
 
     ```xml
 

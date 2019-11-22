@@ -15,23 +15,23 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652267"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297152"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagrammi dei componenti UML: linee guida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare la struttura di un sistema software. Per una dimostrazione video, vedere [progettazione della struttura fisica tramite i diagrammi dei componenti](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).
+In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare la struttura di un sistema software. Per una dimostrazione video, vedere [progettazione della struttura fisica tramite i diagrammi dei componenti](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
 
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Per creare un diagramma dei componenti UML, scegliere **nuovo diagramma livello o UML**dal menu **architettura** .
+ Per creare un diagramma dei componenti UML, scegliere **Nuovo diagramma livello o UML** dal menu **Architettura**.
 
- Un componente è un'unità modulare sostituibile all'interno dell'ambiente. I relativi elementi interni sono nascosti, ma dispongono di una o più *interfacce fornite* ben definite tramite cui è possibile accedere alle relative funzioni. Un componente può inoltre disporre di *interfacce obbligatorie*. Un'interfaccia richiesta definisce le funzioni o i servizi necessari presenti in altri componenti. Connettendo le interfacce fornite e richieste di diversi componenti, è possibile costruire un componente più grande. Un sistema software completo può essere considerato come un componente.
+ Un componente è un'unità modulare sostituibile all'interno dell'ambiente. Dispone di elementi interni nascosti e di una o più *interfacce fornite* ben definite tramite cui è possibile accedere alle relative funzioni. Un componente può contenere anche *interfacce richieste*. Un'interfaccia richiesta definisce le funzioni o i servizi necessari presenti in altri componenti. Connettendo le interfacce fornite e richieste di diversi componenti, è possibile costruire un componente più grande. Un sistema software completo può essere considerato come un componente.
 
  La creazione dei diagrammi dei componenti comporta diversi vantaggi:
 
@@ -46,9 +46,9 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 |Altro diagramma|Discussione e comunicazione dei seguenti aspetti della progettazione|
 |-------------------|--------------------------------------------------------------------|
-|Diagramma di sequenza UML|-Interazioni tra i componenti di un sistema<br />-Interazioni e tra le parti all'interno di un componente.<br /><br /> Per altre informazioni, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).|
-|Diagramma classi UML|-Interfacce di un componente. Il diagramma classi consente di descrivere in dettaglio i metodi di interfaccia.<br />: I dati inviati nei parametri tra le interfacce dei componenti.<br /><br /> Per altre informazioni, vedere [diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md).|
-|Diagrammi di attività|: Elaborazione interna eseguita da un componente in risposta ai messaggi in arrivo.<br /><br /> Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).|
+|Diagramma di sequenza UML|-Interazioni tra i componenti di un sistema<br />-Interazioni e tra le parti all'interno di un componente.<br /><br /> Per altre informazioni, vedere [Diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).|
+|Diagramma classi UML|-Interfacce di un componente. Il diagramma classi consente di descrivere in dettaglio i metodi di interfaccia.<br />: I dati inviati nei parametri tra le interfacce dei componenti.<br /><br /> Per altre informazioni, vedere [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md).|
+|Diagrammi di attività|: Elaborazione interna eseguita da un componente in risposta ai messaggi in arrivo.<br /><br /> Per altre informazioni, vedere [Diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).|
 |Diagrammi livello|-Livelli di architettura logica per i componenti.<br /><br /> Per altre informazioni, vedere [diagrammi livello: riferimento](../modeling/layer-diagrams-reference.md).|
 
 ## <a name="Basics"></a>Passaggi di base per la creazione di diagrammi dei componenti
@@ -61,26 +61,26 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 #### <a name="to-create-a-component-diagram"></a>Per creare un diagramma dei componenti
 
-1. Scegliere **nuovo diagramma livello o UML**dal menu **architettura** .
+1. Scegliere **Nuovo diagramma livello o UML** dal menu **Architettura**.
 
-2. In **modelli**fare clic su **diagramma componente UML**.
+2. Nel riquadro **Modelli** fare clic su **Diagramma componente UML**.
 
 3. Assegnare un nome al diagramma.
 
-4. In **Aggiungi a progetto di modello**selezionare un progetto di modello esistente nella soluzione oppure **creare un nuovo progetto di modello**e quindi fare clic su **OK**.
+4. In **Aggiungi a progetto di modello** selezionare un progetto di modellazione esistente nella soluzione o scegliere **Crea nuovo progetto di modello** e quindi fare clic su **OK**.
 
-     Viene visualizzato un nuovo diagramma dei componenti con la casella degli strumenti **diagramma dei componenti** UML. La casella degli strumenti contiene le relazioni e gli elementi necessari.
+     Verrà visualizzato un nuovo diagramma dei componenti con la casella degli strumenti **Diagramma componente UML**. La casella degli strumenti contiene le relazioni e gli elementi necessari.
 
 ### <a name="drawing-components"></a>Creazione dei componenti
  ![Componenti con interfacce](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
 
- Creare un *componente* (1) per ogni unità funzionale principale del sistema o dell'applicazione.
+ Creare un *componente* (1) per ogni unità funzionale principale nel sistema o nell'applicazione.
 
  Gli esempi includono un'applicazione, un dispositivo hardware, un servizio Web, un assembly .NET, una classe o un gruppo di classi di programma oppure qualsiasi segmento separabile di un programma.
 
 ##### <a name="to-create-components"></a>Per creare i componenti
 
-1. Fare clic su **componente** nella casella degli strumenti, quindi fare clic su una parte vuota del diagramma.
+1. Fare clic su **Componente** nella casella degli strumenti, quindi fare clic su una parte vuota del diagramma.
 
      \- oppure -
 
@@ -88,7 +88,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
     1. Trovare un componente esistente in un diagramma o in **Esplora modelli UML**.
 
-    2. Fare clic con il pulsante destro del mouse sul componente, quindi scegliere **copia**.
+    2. Fare clic con il pulsante destro del mouse sul componente, quindi scegliere **Copia**.
 
     3. Aprire il diagramma in cui si desidera che venga visualizzato il componente copiato.
 
@@ -101,13 +101,13 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 3. Fare clic sulla freccia di espansione (5) se si desidera visualizzare solo l'intestazione del componente.
 
 ### <a name="showing-the-ports-of-a-component"></a>Visualizzazione delle porte di un componente
- Una *porta* (2,3) rappresenta un gruppo di messaggi o chiamate di operazione che passano all'interno o all'esterno di un componente. Il gruppo viene descritto da un'interfaccia che definisce il tipo della porta. Una porta può fornire o richiedere un'interfaccia.
+ Una *porta* (2, 3) rappresenta un gruppo di messaggi o chiamate di operazioni che passano all'interno o all'esterno di un componente. Il gruppo viene descritto da un'interfaccia che definisce il tipo della porta. Una porta può fornire o richiedere un'interfaccia.
 
- Una porta con un' *interfaccia fornita* (2) fornisce le operazioni implementate dal componente e che possono essere utilizzate da altri componenti.
+ Una porta con un'*interfaccia fornita* (2) fornisce le operazioni implementate dal componente e che possono essere utilizzate da altri componenti.
 
  Alcuni esempi sono un'interfaccia utente, un servizio Web, un'interfaccia .NET o una raccolta di funzioni in qualsiasi linguaggio di programmazione.
 
- Una porta con un' *interfaccia obbligatoria* (3) rappresenta il requisito di un componente per l'offerta di un gruppo di operazioni o servizi da parte di altri componenti o sistemi esterni.
+ Una porta con un'*interfaccia richiesta* (3) rappresenta il requisito di un componente per un gruppo di operazioni o servizi che deve essere fornito da altri componenti o sistemi esterni.
 
  Ad esempio, un browser Web richiede server Web o un componente aggiuntivo dell'applicazione richiede i servizi dall'applicazione.
 
@@ -115,7 +115,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 ##### <a name="to-add-ports-to-a-component"></a>Per aggiungere le porte a un componente
 
-1. Nella casella degli strumenti fare clic su **interfaccia fornita** o **interfaccia richiesta**.
+1. Nella casella degli strumenti fare clic su **Interfaccia fornita** o **Interfaccia richiesta**.
 
 2. Fare clic sul componente a cui si desidera aggiungere la porta.
 
@@ -136,7 +136,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Per mostrare che un'interfaccia fornita può soddisfare un'interfaccia richiesta
 
-1. Nella casella degli strumenti fare clic su **dipendenza**.
+1. Nella casella degli strumenti fare clic su **Dipendenza**.
 
 2. Fare clic sulla porta con l'interfaccia richiesta in un componente, quindi fare clic sulla porta con l'interfaccia fornita in un altro componente.
 
@@ -144,22 +144,22 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Per aggiungere una porta di un'interfaccia esistente a un componente
 
-- Trovare l'interfaccia in **Esplora modelli UML** e trascinarla da tale posizione sul componente.
+- Individuare l'interfaccia in **Esplora modelli UML**, quindi trascinarla sul componente.
 
      oppure
 
 - Copiare e incollare un riferimento a un'interfaccia da un diagramma.
 
-    1. In un diagramma classi o in un diagramma dei componenti fare clic con il pulsante destro del mouse sull'interfaccia e quindi scegliere **copia**.
+    1. In un diagramma classi o in un diagramma dei componenti fare clic con il pulsante destro del mouse sull'interfaccia, quindi scegliere **Copia**.
 
     2. Nel diagramma dei componenti fare clic con il pulsante destro del mouse sul componente, quindi scegliere **Incolla riferimento**.
 
          Un'interfaccia fornita verrà visualizzata nel componente e accanto viene visualizzato un tag azioni.
 
         > [!NOTE]
-        > Se si utilizza **Incolla** anziché **Incolla riferimento**, verrà creata una nuova interfaccia con un nuovo nome.
+        > Se si usa **Incolla** anziché **Incolla riferimento**, verrà creata una nuova interfaccia con un nuovo nome.
 
-    3. Se si desidera creare un'interfaccia obbligatoria, fare clic sul tag azione, quindi fare clic su **Converti in interfaccia richiesta**.
+    3. Per creare un'interfaccia richiesta, fare clic sul tag azioni, quindi fare clic su **Converti in interfaccia richiesta**.
 
 ## <a name="Parts"></a>Visualizzazione delle parti interne di un componente
  ![Diagramma componenti che mostra parti interne](../modeling/media/uml-compshowing.png "UML_CompShowing")
@@ -172,9 +172,9 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
  `+ partName : TypeName`
 
- Nel componente padre ogni parte mostra le interfacce fornite e richieste definite per il tipo (4, 5). Le operazioni o i servizi richiesti da una parte possono essere forniti da un'altra parte. È possibile usare i connettori degli **assembly** delle parti per mostrare come le parti siano connesse tra loro (6).
+ Nel componente padre ogni parte mostra le interfacce fornite e richieste definite per il tipo (4, 5). Le operazioni o i servizi richiesti da una parte possono essere forniti da un'altra parte. È possibile usare i connettori **Assembly parti** per illustrare il modo in cui le parti sono connesse tra loro (6).
 
- È inoltre possibile illustrare che un'interfaccia del componente padre è in effetti fornita o richiesta da una delle relative parti. È possibile connettere una porta del padre a una porta di una parte interna usando una relazione di **delega** (9). Le due porte devono essere dello stesso tipo (fornito o richiesto) e i tipi di interfaccia devono essere compatibili.
+ È inoltre possibile illustrare che un'interfaccia del componente padre è in effetti fornita o richiesta da una delle relative parti. È possibile connettere una porta del componente padre a una porta di una parte interna utilizzando una relazione **Delega** (9). Le due porte devono essere dello stesso tipo (fornito o richiesto) e i tipi di interfaccia devono essere compatibili.
 
  È possibile creare una nuova parte con un nuovo tipo o da un tipo esistente.
 
@@ -182,11 +182,11 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 1. Creare una parte per ogni unità funzionale principale che si considera parte del componente padre.
 
-    1. Fare clic su **componente** nella casella degli strumenti, quindi fare clic all'interno del componente padre (1).
+    1. Fare clic su **Componente** nella casella degli strumenti, quindi fare clic all'interno del componente padre (1).
 
          Una nuova parte (3) verrà visualizzata nel componente padre.
 
-         In **Esplora modelli UML**viene creato un nuovo componente. Si tratta del tipo della nuova parte.
+         Un nuovo componente verrà creato in **Esplora modelli UML**. Si tratta del tipo della nuova parte.
 
          \- oppure -
 
@@ -196,7 +196,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
          \- oppure -
 
-         Fare clic con il pulsante destro del mouse su un componente, in un diagramma o in Esplora modelli UML, quindi fare clic su **copia**.
+         Fare clic con il pulsante destro del mouse su un componente in un diagramma o in Esplora modelli UML, quindi scegliere **Copia**.
 
          Fare clic con il pulsante destro del mouse sul componente padre, quindi scegliere **Incolla riferimento**.
 
@@ -204,23 +204,23 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
     2. Fare clic sul nome della nuova parte per modificarlo. Non è possibile modificarne il tipo.
 
-    3. È possibile aggiungere alla nuova parte le interfacce fornite e richieste (4, 5). Fare clic sull' **interfaccia fornita** o sullo strumento **interfaccia richiesta** , quindi fare clic nella parte.
+    3. È possibile aggiungere alla nuova parte le interfacce fornite e richieste (4, 5). Fare clic sullo strumento **Interfaccia fornita** o **Interfaccia richiesta**, quindi fare clic nella parte.
 
          \- oppure -
 
-         Trascinare un'interfaccia esistente da **Esplora modelli UML** nella parte.
+         Trascinare un'interfaccia esistente da **Esplora modelli UML** sulla parte.
 
          Le interfacce verranno aggiunte al tipo della parte e verranno visualizzate nella parte stessa. Se necessario, il componente padre modifica la dimensione.
 
 2. Connettere le parti tra loro.
 
-    - Utilizzare lo strumento **dipendenza** per connettere le porte di parti diverse (6).
+    - Utilizzare lo strumento **Dipendenza** per connettere le porte di parti diverse (6).
 
 3. Connettere le parti alle porte del componente padre:
 
-    1. Creare uno o più porte (7) nel componente padre. Fare clic su **interfaccia richiesta** o **interfaccia fornita** nella casella degli strumenti, quindi fare clic sul componente padre.
+    1. Creare uno o più porte (7) nel componente padre. Fare clic su **Interfaccia richiesta** o **Interfaccia fornita** nella casella degli strumenti, quindi fare clic sul componente padre.
 
-    2. Delegare (9) la porta a una o più parti. Fare clic sullo strumento **delega** , quindi su una porta sul componente padre e su una porta su una parte. È possibile connettere le porte che forniscono o richiedono le interfacce allo stesso modo.
+    2. Delegare (9) la porta a una o più parti. Fare clic sullo strumento **Delega**, quindi su una porta nel componente padre e infine su una porta in una parte. È possibile connettere le porte che forniscono o richiedono le interfacce allo stesso modo.
 
 ### <a name="showing-the-parts-of-a-part"></a>Visualizzazione delle parti di una parte
  Dopo avere scomposto un componente in parti, è possibile scomporre ogni tipo della parte nelle relative parti interne.
@@ -233,15 +233,15 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
      Fare clic con il pulsante destro del mouse sulla parte, quindi scegliere **Proprietà**.
 
-     Il nome del tipo viene visualizzato nel campo **tipo** della finestra Proprietà.
+     Il nome del tipo verrà visualizzato nel campo **Tipo** della finestra Proprietà.
 
 2. Individuare il tipo della parte in **Esplora modelli UML**.
 
-     Fare clic su **Visualizza**, scegliere **altre finestre**, quindi fare clic su **Esplora modelli UML**.
+     Scegliere **Altre finestre** dal menu **Visualizza**, quindi fare clic su **Esplora modelli UML**.
 
      Espandere il progetto e se necessario il pacchetto a cui appartiene il tipo.
 
-     Il tipo verrà elencato come **componente**.
+     Il tipo verrà elencato come **Componente**.
 
      Se si desidera, è possibile modificarne il nome.
 
@@ -276,11 +276,11 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 1. Creare un nuovo diagramma di sequenza.
 
-     Per altre informazioni, vedere [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).
+     Per altre informazioni, vedere [Diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md).
 
 2. Creare una linea di vita per un componente esterno, un utente, un dispositivo o un altro attore (1) che invia messaggi a questo componente.
 
-     È possibile impostare la proprietà **Actor** di questa linea di vita su true per indicare che è esterna al componente in considerazione. Sopra la linea di vita viene visualizzata una figura stilizzata.
+     È possibile impostare la proprietà **Actor** di questa linea di vita su true per indicare che è esterna al componente in fase di analisi. Sopra la linea di vita viene visualizzata una figura stilizzata.
 
 3. Creare una linea di vita per l'interfaccia fornita (2) di questo componente a cui l'attore scelto invia i messaggi.
 
@@ -295,10 +295,10 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 ### <a name="is-the-component-more-than-its-parts"></a>Il componente vale più delle relative parti?
  In alcuni casi, un componente rappresenta solo un nome assegnato a una raccolta di parti. Tutto il lavoro viene svolto dalle parti e in fase di esecuzione non è presente un codice né un altro artefatto che rappresenti il componente.
 
- È possibile indicare questo oggetto nel modello impostando la proprietà di cui **è indirettamente stata creata un'istanza** del componente. In questo caso, tutte le interfacce del componente devono trovarsi sulle porte, con deleghe alle parti interne.
+ È possibile indicare tale condizione nel modello impostando la proprietà **Is Indirectly Instantiated** del componente. In questo caso, tutte le interfacce del componente devono trovarsi sulle porte, con deleghe alle parti interne.
 
 ### <a name="describing-the-process-inside-each-part"></a>Descrizione del processo all'interno di ogni parte
- È possibile usare i diagrammi di attività per illustrare come un componente elabori ogni messaggio in arrivo. Per altre informazioni, vedere [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).
+ È possibile usare i diagrammi di attività per illustrare come un componente elabori ogni messaggio in arrivo. Per altre informazioni, vedere [Diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md).
 
  ![Diagramma di attività con buffer di dati](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
 
@@ -320,7 +320,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
  ![Dipendenza tra i componenti](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
- Utilizzare lo strumento di **dipendenza** per creare una dipendenza. In questo modo viene indicato che la progettazione di un componente si basa su un altro componente.
+ Usare lo strumento **Dipendenza** per creare una dipendenza. In questo modo viene indicato che la progettazione di un componente si basa su un altro componente.
 
  Tra i comuni tipi di dipendenza sono inclusi i seguenti:
 
@@ -330,7 +330,7 @@ In Visual Studio è possibile creare un *diagramma dei componenti* per mostrare 
 
 - Un componente utilizza le informazioni create da un altro componente.
 
-  È possibile utilizzare il nome della freccia di dipendenza per indicare un particolare tipo di utilizzo. Per impostare il nome, fare clic con il pulsante destro del mouse sulla freccia, scegliere **Proprietà**, quindi impostare il campo **nome** nella finestra Proprietà.
+  È possibile utilizzare il nome della freccia di dipendenza per indicare un particolare tipo di utilizzo. Per impostare il nome, fare clic con il pulsante destro del mouse sulla freccia, quindi scegliere **Proprietà** e impostare il campo **Nome** nella finestra delle proprietà.
 
 ## <a name="see-also"></a>Vedere anche
- [Modificare modelli e](../modeling/edit-uml-models-and-diagrams.md) diagrammi UML diagrammi di [componenti UML](../modeling/uml-component-diagrams-reference.md) : riferimenti ai diagrammi di [sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md) [diagrammi caso d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md) [diagrammi classi UML:](../modeling/uml-class-diagrams-reference.md) riferimento [diagrammi componenti UML:](../modeling/uml-component-diagrams-reference.md) informazioni di riferimento [ Video: progettazione della struttura fisica tramite i diagrammi dei componenti](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+ [Modificare modelli e](../modeling/edit-uml-models-and-diagrams.md) diagrammi UML diagrammi dei [componenti UML:](../modeling/uml-component-diagrams-reference.md) riferimento diagrammi di [sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md) [diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md) [diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md) [diagrammi dei componenti UML:](../modeling/uml-component-diagrams-reference.md) riferimento [video: progettazione della struttura fisica tramite diagrammi componenti](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

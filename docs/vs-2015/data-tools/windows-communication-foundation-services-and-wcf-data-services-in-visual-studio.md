@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c2dc46a3e78c5823e569aec80a3166c6e30c04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657822"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299571"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] è un framework unificato per la creazione di applicazioni distribuite sicure, affidabili, transazionali e interoperabili. Sostituisce le tecnologie di comunicazione interprocesso precedenti, ad esempio i servizi Web ASMX, .NET Remoting, Enterprise Services (DCOM) e MSMQ. WCF combina le funzionalità di tutte le tecnologie in un modello di programmazione unificato. Questo semplifica l'esperienza di sviluppo di applicazioni distribuite.
 
 #### <a name="what-are-wcf-data-services"></a>Che cosa sono WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] è un'implementazione dello standard del protocollo OData (Open Data).  WCF Data Services consente di esporre i dati tabulari come un set di API REST, consentendo di restituire i dati usando verbi HTTP standard come GET, POST, PUT o DELETE. Sul lato server, WCF Data Services verranno sostituiti da [API Web ASP.NET](http://www.asp.net/web-api) per la creazione di nuovi servizi OData. La libreria client di WCF Data Services continua a essere una scelta ottimale per l'utilizzo di servizi OData in un'applicazione .NET da Visual Studio (**progetto &#124; Aggiungi riferimento al servizio**). Per altre informazioni, vedere [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] è un'implementazione dello standard del protocollo OData (Open Data).  WCF Data Services consente di esporre i dati tabulari come un set di API REST, consentendo di restituire i dati usando verbi HTTP standard come GET, POST, PUT o DELETE. Sul lato server, WCF Data Services verranno sostituiti da [API Web ASP.NET](https://dotnet.microsoft.com/apps/aspnet/apis) per la creazione di nuovi servizi OData. La libreria client di WCF Data Services continua a essere una scelta ottimale per l'utilizzo di servizi OData in un'applicazione .NET da Visual Studio (**progetto &#124; Aggiungi riferimento al servizio**). Per altre informazioni, vedere [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952).
 
 ### <a name="wcf-programming-model"></a>Modello di programmazione WCF
  Il modello di programmazione WCF è basato sulla comunicazione tra due entità, ovvero un servizio WCF e un client WCF. Il modello di programmazione viene incapsulato nello spazio dei nomi <xref:System.ServiceModel> nel [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
@@ -102,7 +102,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
  Per ulteriori informazioni sull'host del servizio WCF, vedere [host del servizio WCF (WcfSvcHost. exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>Client di prova WCF
- Lo strumento client di test WCF consente di immettere parametri di test, inviare l'input a un servizio WCF e visualizzare la risposta restituita dal servizio. Offre un'esperienza di test del servizio ottimale quando la si combina con l'host del servizio WCF. Lo strumento si trova nella cartella \Common7\IDE, che per Visual Studio 2015 installata nell'unità C: si trova qui: **c:\Programmi (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE \\** .
+ Lo strumento client di test WCF consente di immettere parametri di test, inviare l'input a un servizio WCF e visualizzare la risposta restituita dal servizio. Offre un'esperienza di test del servizio ottimale quando la si combina con l'host del servizio WCF. Lo strumento si trova nella cartella \Common7\IDE, che per Visual Studio 2015 installata nell'unità C: si trova qui: **c:\Programmi (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE\\** .
 
  Quando si preme F5 per eseguire il debug di un progetto di servizio WCF, il client di prova WCF apre e visualizza un elenco di endpoint di servizio definiti nel file di configurazione. È possibile testare i parametri e avviare il servizio e ripetere il processo per verificare e convalidare costantemente il servizio.
 
@@ -156,7 +156,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 
      Se il riferimento al servizio fornisce più endpoint, saranno presenti due o più tag `<Endpoint`.
 
-4. All'interno del tag `<EndPoint>` sarà presente un parametro di `"` `name="`*nomeservizio* (dove *nomeservizio* rappresenta il nome di un endpoint). Si tratta del nome dell'endpoint che può essere passato all'overload `endpointConfigurationName As String` di un costruttore per un riferimento al servizio.
+4. All'interno del tag `<EndPoint>` sarà presente un parametro di`"` `name="`*nomeservizio* (dove *nomeservizio* rappresenta il nome di un endpoint). Si tratta del nome dell'endpoint che può essere passato all'overload `endpointConfigurationName As String` di un costruttore per un riferimento al servizio.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Procedura: chiamare un metodo di servizio in modo asincrono
  La maggior parte dei metodi nei servizi Windows Communication Foundation (WCF) può essere chiamata in modo sincrono o asincrono. La chiamata asincrona di un metodo consente all'applicazione di continuare a funzionare mentre il metodo viene chiamato quando opera su una connessione lenta.
@@ -232,7 +232,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|description|
 |-----------|-----------------|
 |[Procedura dettagliata: creazione di un Windows Form semplice](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Viene fornita una dimostrazione dettagliata della creazione e dell'utilizzo di servizi WCF in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Procedura dettagliata: creazione di un servizio dati WCF con WPF ed Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Viene fornita una dimostrazione dettagliata di come creare e utilizzare [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
@@ -245,7 +245,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 |[Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti.|
 |[Configura riferimento a servizio (finestra di dialogo)](../data-tools/configure-service-reference-dialog-box.md)|Vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Configura riferimento al servizio** .|
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Riferimenti
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>

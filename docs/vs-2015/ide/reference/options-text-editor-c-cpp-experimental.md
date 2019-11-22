@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7e9d1464481b33bc5fbf5e73bc09a6da4eb082c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662354"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297856"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
 
  **Abilita espansione precedenza** Se abilitata, è possibile racchiudere il testo selezionato tra parentesi digitando ' (' nell'editor di testo.
 
- Per altre funzionalità dell'editor di testo in Visual Studio Gallery, vedere l'elenco disponibile [qui](http://go.microsoft.com/fwlink/?LinkId=692016). Un esempio è [Correzioni rapide per C++](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), che supporta quanto segue:
+ Per altre funzionalità dell'editor di testo in Visual Studio Gallery, vedere l'elenco disponibile [qui](https://go.microsoft.com/fwlink/?LinkId=692016). Un esempio è [Correzioni rapide per C++](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), che supporta quanto segue:
 
 - **Aggiunta di #include mancante** : suggerisce gli #include rilevanti per i simboli sconosciuti nel codice
 
@@ -59,4 +59,4 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
   È possibile passare il mouse su una sottolineatura ondulata per ottenere una lampadina oppure usare la combinazione di tasti predefinita Ctrl+punto (Ctrl+.). Per la combinazione di tasti, non è necessario che il punto di inserimento sia posizionato sull'errore specifico o token. È sufficiente trovarsi sulla stessa riga dell'errore per richiamare i suggerimenti per tutti gli elementi della riga.
 
 ## <a name="see-also"></a>Vedere anche
- [Impostazione](../../ide/reference/setting-language-specific-editor-options.md) [del refactoring delle opzioni dell'editor specifiche C++ della lingua in (Blog di VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+ [Impostazione](../../ide/reference/setting-language-specific-editor-options.md) [del refactoring delle opzioni dell'editor specifiche C++ della lingua in (Blog di VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

@@ -8,19 +8,19 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660562"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302561"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estensione di test codificati dell'interfaccia utente e registrazioni delle azioni per supportare Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il framework di test per i test codificati dell'interfaccia utente e le registrazioni delle azioni non supportano tutte le interfacce utente disponibili, e quindi potrebbero non supportare l'interfaccia utente specifica di cui eseguire il test. Ad esempio, non si può creare immediatamente un test codificato dell'interfaccia utente o una registrazione delle azioni per un foglio di calcolo di [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Si può però creare un'estensione personalizzata del framework dei test codificati dell'interfaccia utente che supporterà l'interfaccia utente specifica sfruttando l'estendibilità del framework stesso. L'argomento seguente viene fornito un esempio che illustra come estendere il framework per supportare la creazione di test e le registrazioni delle azioni per [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Per altre informazioni sulle piattaforme supportate, vedere [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
@@ -39,7 +39,7 @@ Il framework di test per i test codificati dell'interfaccia utente e le registra
 
 - SampleTestProject
 
-  È possibile scaricare l'esempio da questo [post di blog](http://go.microsoft.com/fwlink/?LinkID=185592).
+  È possibile scaricare l'esempio da questo [post di blog](https://go.microsoft.com/fwlink/?LinkID=185592).
 
 > [!NOTE]
 > L'esempio è concepito per Microsoft Excel 2010. Potrebbe funzionare con altre versioni di Microsoft Excel, ma non è attualmente supportato.

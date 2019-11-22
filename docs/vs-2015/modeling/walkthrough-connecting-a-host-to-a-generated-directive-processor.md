@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41023f49f1897f3e3d26d7fc57807ea98fa35f24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659288"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301279"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: connessione di un host a un processore di direttiva generato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "72659288"
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK di visualizzazione e modellazione di Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|SDK di visualizzazione e modellazione di Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  Inoltre, è necessario che la trasformazione del modello di testo personalizzato sia stata creata in [procedura dettagliata: creazione di un host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -95,17 +95,17 @@ ms.locfileid: "72659288"
 
 3. Aggiungere i riferimenti seguenti:
 
-    - Microsoft. VisualStudio. Modeling. Sdk. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Interfaces. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. Nella parte superiore di Program.cs o Module1. vb aggiungere la riga di codice seguente:
 
@@ -117,7 +117,7 @@ ms.locfileid: "72659288"
     Imports Microsoft.Win32
     ```
 
-5. Individuare il codice per la proprietà `StandardAssemblyReferences` e sostituirlo con il codice seguente:
+5. Individuare il codice per la proprietà `StandardAssemblyReferences`e sostituirlo con il codice seguente:
 
     > [!NOTE]
     > In questo passaggio si aggiungono riferimenti agli assembly richiesti dal processore di direttiva generato che verrà supportato dall'host.
@@ -153,7 +153,7 @@ ms.locfileid: "72659288"
     }
     ```
 
-6. Individuare il codice per la funzione `ResolveDirectiveProcessor` e sostituirlo con il codice seguente:
+6. Individuare il codice per la funzione `ResolveDirectiveProcessor`e sostituirlo con il codice seguente:
 
     > [!IMPORTANT]
     > Questo codice contiene riferimenti hardcoded al nome del processore di direttiva generato a cui si desidera connettersi. È possibile rendere questa operazione più generale, nel qual caso Cerca tutti i processori di direttiva elencati nel registro di sistema e tenta di trovare una corrispondenza. In tal caso, l'host funzionerebbe con qualsiasi processore di direttiva generato.
@@ -310,7 +310,7 @@ ms.locfileid: "72659288"
     #>
     ```
 
-3. Nel codice, sostituire \<YOUR percorso > con il percorso del file Sample. min dalla lingua specifica della progettazione creata nella prima procedura.
+3. Nel codice sostituire \<percorso > con il percorso del file Sample. min dalla lingua specifica della progettazione creata nella prima procedura.
 
 4. Salvare e chiudere il file.
 

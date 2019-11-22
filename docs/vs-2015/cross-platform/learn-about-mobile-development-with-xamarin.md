@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9924eee661f917334aed586506a107486cd5be0f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443988"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299777"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 - Il Mac con Xcode e Xamarin opera come host di compilazione/firma e ambiente di runtime per le app iOS. Le compilazioni per iOS da Visual Studio nel computer Windows sono delegate a questo Mac. Durante il debug di un'app iOS da Visual Studio, questa viene eseguita nel simulatore iOS nel Mac o direttamente in un dispositivo con tethering connesso al Mac. In questo caso si interagirà con l'app nel Mac o in prossimità di tale sistema e l'esperienza di debug avrà luogo in Visual Studio.  
   
-  Queste relazioni sono illustrate di seguito. Altre informazioni sull'uso delle app iOS sono inoltre disponibili nell' [introduzione a Xamarin.iOS per Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com).  
+  Queste relazioni sono illustrate di seguito. Altre informazioni sull'uso delle app iOS sono inoltre disponibili nell' [introduzione a Xamarin.iOS per Visual Studio](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/introduction-to-xamarin-ios-for-visual-studio) (xamarin.com).  
   
-  ![Relazione tra computer di sviluppo Windows e Mac in un ambiente Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![Relazione tra computer di sviluppo Windows e Mac in un ambiente Novell](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Novell Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>Concetti di base: Struttura dei progetti  
+## <a name="essentials-how-projects-are-structured"></a>Informazioni di base: Come sono strutturati i progetti  
  *10-30 minuti*  
   
-1. [Opzioni di condivisione del codice](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). È consigliabile usare l'opzione relativa alle librerie di classi portabili, poiché offre il migliore supporto per l'uso delle sole API .NET che sono supportate in tutte le piattaforme di destinazione. Gran parte del codice per la logica di business si troverà nella libreria di classi Portabile, incluso l'accesso ai database, le chiamate alle API REST e le chiamate ai componenti di Xamarin portatili (vedere [Deeper Dive: I componenti di Xamarin](#components) alla fine di questo argomento). Anche il codice dell'interfaccia utente comune scritto con Xamarin.Forms può risiedere in una PCL.  
+1. [Opzioni di condivisione del codice](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com). È consigliabile usare l'opzione relativa alle librerie di classi portabili, poiché offre il migliore supporto per l'uso delle sole API .NET che sono supportate in tutte le piattaforme di destinazione. La maggior parte del codice relativo alla logica di business si troverà nella libreria di classi portabile, incluso l'accesso ai database, le chiamate alle API REST e le chiamate ai componenti di Xamarin portatili (vedere [Deeper Dive: Xamarin Components](#components) alle fine di questo argomento). Anche il codice dell'interfaccia utente comune scritto con Xamarin.Forms può risiedere in una PCL.  
   
-2. (Facoltativo) [Case Study: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) vengono descritte alcune procedure consigliate per la progettazione e la struttura di un'app completa, come strutturare il progetto con una libreria di classi Portabile per il codice condiviso che separa i dati, l'accesso ai dati e il livello business.  
+2. (Facoltativo) Nel [case study relativo a Tasky](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/building-cross-platform-applications/case-study-tasky) (xamarin.com) vengono descritte alcune procedure consigliate per la progettazione e la struttura di un'app completa, ad esempio come strutturare il progetto con una libreria di classi portabile per il codice condiviso che separa il livello dati, il livello di accesso ai dati e il livello business.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Concetti di base: Livelli dell'interfaccia utente Xamarin Native e Xamarin.Forms  
  *10-40 minuti*  
   
- Xamarin offre due modi per creare eccezionali App native: Xamarin Native e xamarin. Forms.  
+ Xamarin offre due metodi per creare app native di alto livello: Xamarin Native e Xamarin.Forms.  
   
  Con Xamarin Native occorre scrivere codice separato per l'interfaccia utente per ogni piattaforma di destinazione: iOS, Android e Windows.  Con questo approccio è possibile accedere direttamente alle API specifiche della piattaforma e realizzare così un'esperienza dell'interfaccia utente personalizzata per ogni piattaforma.  È anche disponibile l'accesso completo alle finestre di progettazione e ai controlli nativi per ogni piattaforma, per facilitare la creazione dell'interfaccia utente corrispondente.  
   
@@ -69,15 +69,15 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
   Per altre informazioni:  
   
-1. [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) fornisce una breve panoramica e informazioni sui vantaggi e gli svantaggi di Xamarin.Forms rispetto ai livelli dell'interfaccia utente nativa (ovvero, Xamarin.iOS e Xamarin.Android).  
+1. [Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/) (xamarin.com) fornisce una breve panoramica e informazioni sui vantaggi e gli svantaggi di Xamarin.Forms rispetto ai livelli dell'interfaccia utente nativa (ovvero, Xamarin.iOS e Xamarin.Android).  
   
-2. I primi tre minuti del video di James Montemagno [xamarin. Forms: Native App iOS, Android e Windows con C# & XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel 9, 13m3s) forniscono un'altra Panoramica ed è possibile continuare a guardare alcune demo.  
+2. I primi tre minuti del video di James Montemagno su [Xamarin.Forms: app iOS, Android e Windows native con C# e XAML](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/704) (Channel 9, 13 minuti e 3 secondi) forniscono un'altra panoramica ed è possibile continuare a guardare il video per assistere ad alcune demo.  
   
-3. (Facoltativo) [Introduzione a Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/introduction-to-xamarin-forms/) (xamarin.com)  
+3. (Facoltativo) [Introduzione a Xamarin.Forms](https://docs.microsoft.com/xamarin/get-started/quickstarts/deepdive?pivots=windows) (xamarin.com)  
   
-4. (Facoltativo) Vedere alcuni esempi di come usare OnPlatform per la personalizzazione nella documentazione relativa alla [classe Device](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) (xamarin.com)  
+4. (Facoltativo) Vedere alcuni esempi di come usare OnPlatform per la personalizzazione nella documentazione relativa alla [classe Device](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) (xamarin.com)  
   
-5. (Facoltativo) L'articolo dedicato alla [condivisione del codice dell'interfaccia utente tra piattaforme per dispositivi mobili diverse con Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) di Jason Smith (MSDN Magazine) presenta le varie opzioni di personalizzazione disponibili in Xamarin.Forms. Altri dettagli sono disponibili nell'articolo relativo alla [personalizzazione dei controlli per ogni piattaforma](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
+5. (Facoltativo) L'articolo dedicato alla [condivisione del codice dell'interfaccia utente tra piattaforme per dispositivi mobili diverse con Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) di Jason Smith (MSDN Magazine) presenta le varie opzioni di personalizzazione disponibili in Xamarin.Forms. Altri dettagli sono disponibili nell'articolo relativo alla [personalizzazione dei controlli per ogni piattaforma](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/custom-renderer/) (xamarin.com).  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>Approfondimento: Debug con gli emulatori  
  *10-15 minuti*  
@@ -86,15 +86,15 @@ In questo argomento viene fatto riferimento a materiale introduttivo che fornisc
   
 1. **Emulatore Android.** A seconda della versione di Windows in uso, è consigliabile usare Visual Studio Emulator for Android di Microsoft o Xamarin Player, che offrono entrambi prestazioni elevate e supportano un'ampia gamma di funzionalità dei dispositivi:  
   
-    - **Computer Windows 8 e versioni successive:** È consigliabile usare di Microsoft [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx), che viene installato con Visual Studio.  Il video dedicato a [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel 9, 5 minuti e 55 secondi) offre una panoramica e una dimostrazione.  
+    - **Computer con Windows 8 +:** è caldamente consigliato l'uso di [Visual Studio Emulator for Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)di Microsoft, installato con Visual Studio.  Il video dedicato a [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel 9, 5 minuti e 55 secondi) offre una panoramica e una dimostrazione.  
   
-    - **Windows 7 o versioni precedenti e Windows in esecuzione su Mac OS X**: usare [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
+    - **Windows 7 o versioni precedenti e Windows in esecuzione su Mac OS X**: usare [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
-2. **Simulatore iOS di Apple.** Per altre informazioni, leggere l'[introduzione al simulatore iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2. **Simulatore iOS di Apple.** Per altre informazioni, leggere l' [introduzione al simulatore iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
 3. **Emulatore Windows Phone di Microsoft.** Per altre informazioni, leggere l' [Emulatore Windows Phone per Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-## <a name="components"></a> Approfondimento: Componenti di Xamarin  
+## <a name="components"></a> Deeper Dive: Xamarin Components  
  *10 minuti*  
   
- Numerose funzionalità estese sono disponibili per le app Xamarin mediante i componenti di Xamarin. All'indirizzo [http://components.xamarin.com/](http://components.xamarin.com/) è disponibile per il download il catalogo completo, che include i componenti per controlli aggiuntivi dell'interfaccia utente e per l'autenticazione, oltre a un'ampia gamma di servizi cloud come Microsoft Azure e molto altro ancora.
+ Numerose funzionalità estese sono disponibili per le app Xamarin mediante i componenti di Xamarin. All'indirizzo [http://components.xamarin.com/](https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) è disponibile per il download il catalogo completo, che include i componenti per controlli aggiuntivi dell'interfaccia utente e per l'autenticazione, oltre a un'ampia gamma di servizi cloud come Microsoft Azure e molto altro ancora.

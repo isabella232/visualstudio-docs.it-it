@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656013"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300906"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedura: estendere la finestra di progettazione di linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile creare estensioni per la finestra di progettazione utilizzata per modificare le definizioni DSL. I tipi di estensione che è possibile apportare includono l'aggiunta di comandi di menu, l'aggiunta di gestori per i movimenti di trascinamento e doppio clic e le regole attivate quando vengono modificati determinati tipi di valori o relazioni. Le estensioni possono essere assemblate come estensione VSIX (Visual Studio Integration Extension) e distribuite ad altri utenti.
 
- Per il codice di esempio e ulteriori informazioni su questa funzionalità, vedere il [sito Web di Visual Studio Visualization and Modeling SDK (VMSDK)](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Per il codice di esempio e ulteriori informazioni su questa funzionalità, vedere il [sito Web di Visual Studio Visualization and Modeling SDK (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
 
 ## <a name="setting-up-the-solution"></a>Configurazione della soluzione
  Configurare un progetto che contiene il codice dell'estensione e un progetto VSIX che esporta il progetto. La soluzione può contenere altri progetti incorporati nello stesso progetto VSIX.
@@ -48,13 +48,13 @@ ms.locfileid: "72656013"
 
 7. Nel progetto libreria di classi aggiungere riferimenti agli assembly seguenti:
 
-     Microsoft. VisualStudio. CoreUtility
+     Microsoft.VisualStudio.CoreUtility
 
-     Microsoft. VisualStudio. Modeling. Sdk. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-     Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-     Microsoft. VisualStudio. Modeling. Sdk. DslDefinition. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -69,9 +69,9 @@ ms.locfileid: "72656013"
 ## <a name="testing-and-deployment"></a>Test e distribuzione
  Per testare le estensioni in questo argomento, compilare ed eseguire la soluzione. Viene aperta un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . In questa istanza aprire una soluzione DSL. Modificare il diagramma di DslDefinition. Il comportamento dell'estensione può essere visualizzato.
 
- Per distribuire le estensioni nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] principale e in altri computer, attenersi alla seguente procedura:
+ Per distribuire le estensioni nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]principale e in altri computer, attenersi alla seguente procedura:
 
-1. Trovare il file di installazione VSIX nel progetto VSIX in bin \\ * \\ \*. vsix
+1. Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX
 
 2. Copiare questo file nel computer di destinazione, quindi in Esplora risorse (o Esplora file) fare doppio clic su di esso.
 
@@ -79,7 +79,7 @@ ms.locfileid: "72656013"
 
    Per disinstallare l'estensione, attenersi alla procedura seguente:
 
-3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] scegliere **Gestione estensioni**dal menu **strumenti** .
+3. in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]scegliere **Gestione estensioni**dal menu **strumenti** .
 
 4. Selezionare l'estensione ed eliminarla.
 

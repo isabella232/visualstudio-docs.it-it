@@ -9,25 +9,25 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3991d3b741162b4b1993e5359ad427c17f00321a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651533"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299628"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installare i database di esempio di SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I database di esempio sono utili per sperimentare query SQL e LINQ, associazione dati, Entity Framework modellazione e così via.  Ogni prodotto di database dispone di propri database di esempio. Northwind e AdventureWorks sono due comuni database di esempio SQL Server.
 
- **AdventureWorks** è il database di esempio corrente fornito per SQL Server Products. È possibile scaricarlo come file con estensione MDF dalla [pagina AdventureWorks su CodePlex](http://msftdbprodsamples.codeplex.com/). Sono disponibili versioni normali e Lightweight (LT) del database. Per la maggior parte degli scenari, è preferibile la versione LT perché è meno complessa.
+ **AdventureWorks** è il database di esempio corrente fornito per SQL Server Products. È possibile scaricarlo come file con estensione MDF dalla [pagina AdventureWorks su CodePlex](https://archive.codeplex.com/?p=msftdbprodsamples). Sono disponibili versioni normali e Lightweight (LT) del database. Per la maggior parte degli scenari, è preferibile la versione LT perché è meno complessa.
 
  **Northwind** è un database SQL Server relativamente semplice che è stato utilizzato per molti anni. È possibile scaricarlo come file con estensione bak dalla [pagina del database Northwind sul sito CodePlex](https://northwinddatabase.codeplex.com/). Per evitare problemi relativi alle autorizzazioni, decomprimere il file in una nuova cartella che non si trova nella cartella dell'utente.
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Per ripristinare un database da un file con estensione bak in Visual Studio
 
-1. Quando si esegue il backup di un database di Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere il file con estensione bak utilizzabile di nuovo come file di database, è necessario *ripristinarlo*. Nel menu principale selezionare **visualizza**  > **Esplora oggetti di SQL Server**. Se non viene visualizzato, potrebbe essere necessario installarlo. Passare a **Pannello di controllo**  > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015, quindi fare clic sul pulsante **Cambia** . Quando viene visualizzato l'elenco dei componenti installati nella finestra del programma di installazione, selezionare la casella di controllo **Esplora oggetti di SQL Server** , quindi continuare l'installazione.
+1. Quando si esegue il backup di un database di Microsoft SQL Server, il risultato è un file con estensione bak. Per rendere il file con estensione bak utilizzabile di nuovo come file di database, è necessario *ripristinarlo*. Nel menu principale selezionare **visualizza** > **Esplora oggetti di SQL Server**. Se non viene visualizzato, potrebbe essere necessario installarlo. Passare a **Pannello di controllo** > **programmi e funzionalità**, trovare Microsoft Visual Studio 2015, quindi fare clic sul pulsante **Cambia** . Quando viene visualizzato l'elenco dei componenti installati nella finestra del programma di installazione, selezionare la casella di controllo **Esplora oggetti di SQL Server** , quindi continuare l'installazione.
 
 2. In Esplora oggetti di SQL Server fare clic con il pulsante destro del mouse su un motore di database SQL Server (ad esempio, local DB) e scegliere**nuova query**.
 

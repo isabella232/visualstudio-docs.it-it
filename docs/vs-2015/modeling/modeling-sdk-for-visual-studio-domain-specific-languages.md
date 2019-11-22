@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668631"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297680"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   Tutte queste funzionalità possono essere personalizzate ed estese. Le estensioni sono integrate in modo che sia comunque possibile aggiornare la definizione DSL e rigenerare le funzionalità senza perdere le estensioni.
 
 ## <a name="samples-and-the-latest-information"></a>Esempi e informazioni più recenti
- [Scaricare l'SDK di modellazione per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+ [Scaricare l'SDK di modellazione per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Esempi](http://go.microsoft.com/fwlink/?LinkId=186128) per l'SDK di modellazione per Visual Studio.
+ [Esempi](https://go.microsoft.com/fwlink/?LinkId=186128) per l'SDK di modellazione per Visual Studio.
 
- Per informazioni aggiuntive sulle tecniche avanzate e sulla risoluzione dei problemi, visitare il [Forum di estendibilità degli strumenti di modellazione di Visual Studio & DSL](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Per indicazioni sulla risoluzione dei problemi e alle tecniche più avanzate, visitare [forum di estendibilità degli strumenti di modellazione e DSL di Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Introduzione ai linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md)

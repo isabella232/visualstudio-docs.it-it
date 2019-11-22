@@ -1,5 +1,5 @@
 ---
-title: Associazione di scelte rapide da tastiera a voci di Menu | Microsoft Docs
+title: Associazione dei tasti di scelta rapida alle voci di menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,56 +14,56 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e362a61c5ecab78c332eb5e077a02ee4e9e3fa9b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405636"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295623"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associazione di scelte rapide da tastiera a voci di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per associare un tasto di scelta rapida per un comando di menu personalizzate, è sufficiente aggiungere una voce al file con estensione vsct per il pacchetto. Questo argomento viene illustrato come eseguire il mapping di un tasto di scelta rapida per un pulsante personalizzato, voce di menu o comandi della barra degli strumenti e come applicare il mapping della tastiera nell'editor predefinito o limitati a un editor personalizzato.  
+Per associare un tasto di scelta rapida a un comando di menu personalizzato, è sufficiente aggiungere una voce al file con estensione vsct per il pacchetto. In questo argomento viene illustrato come eseguire il mapping di una scelta rapida da tastiera a un pulsante personalizzato, una voce di menu o un comando della barra degli strumenti e come applicare il mapping della tastiera nell'editor predefinito o come limitarlo a un editor personalizzato.  
   
- Per assegnare tasti di scelta rapida da tastiera a voci di menu esistenti di Visual Studio, vedere [identificazione e personalizzazione dei tasti](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+ Per assegnare tasti di scelta rapida alle voci di menu di Visual Studio esistenti, vedere [identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 ## <a name="choosing-a-key-combination"></a>Scelta di una combinazione di tasti  
- Molti tasti di scelta rapida sono già utilizzati in Visual Studio. È consigliabile non assegnare la stessa combinazione di tasti a più di un comando poiché associazioni duplicate sono difficili da rilevare e possono anche provocare risultati imprevisti. Pertanto, è consigliabile verificare la disponibilità di un collegamento prima di assegnarla.  
+ Molti tasti di scelta rapida sono già in uso in Visual Studio. Non è consigliabile assegnare lo stesso collegamento a più di un comando perché le associazioni duplicate sono difficili da rilevare e potrebbero anche causare risultati imprevedibili. Pertanto, è consigliabile verificare la disponibilità di un collegamento prima di assegnarlo.  
   
 #### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Per verificare la disponibilità di un tasto di scelta rapida  
   
-1. Nel **Strumenti / opzioni / ambiente** finestra, seleziona **tastiera**.  
+1. Nella finestra **strumenti/opzioni/ambiente** selezionare **tastiera**.  
   
-2. Verificare che l'opzione **Usa nuova combinazione in** è impostata su **Global**.  
+2. Assicurarsi che **Usa nuovo collegamento in** sia impostato su **globale**.  
   
-3. Nel **premere i tasti di scelta rapida** , digitare il tasto di scelta rapida che si desidera utilizzare.  
+3. Nella casella **premere i tasti di scelta rapida** Digitare il tasto di scelta rapida che si desidera utilizzare.  
   
-    Se il collegamento è già usato in Visual Studio, il **combinazione già utilizzata da** deve essere visualizzato il comando che chiama attualmente lo scelta rapida.  
+    Se il tasto di scelta rapida è già usato in Visual Studio, il **collegamento attualmente usato da** box visualizzerà il comando attualmente chiamato dal collegamento.  
   
-4. Provare diverse combinazioni di tasti per trovarne uno che non è mappata.  
+4. Provare combinazioni diverse di chiavi finché non ne viene individuato uno non mappato.  
   
    > [!NOTE]
-   > Tasti di scelta rapida che utilizzano ALT possono aprire un menu di scelta e non direttamente eseguire un comando. Pertanto, il **combinazione già utilizzata da** casella può essere vuoto quando si digita un collegamento che include ALT. È possibile verificare che il collegamento non si apre un menu chiudendo il **opzioni** nella finestra di dialogo e quindi premendo i tasti.  
+   > Le scelte rapide da tastiera che usano ALT possono aprire un menu e non eseguire direttamente un comando. Pertanto, il **collegamento attualmente utilizzato da** box può essere vuoto quando si digita un tasto di scelta rapida che include alt. È possibile verificare che il collegamento non apra un menu chiudendo la finestra di dialogo **Opzioni** e quindi premendo i tasti.  
   
-   La procedura seguente si presuppone che si dispone di un pacchetto VSPackage esistente con un comando di menu. Se occorre assistenza questa operazione, dare un'occhiata [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+   Nella procedura seguente si presuppone che si disponga di un VSPackage esistente con un comando di menu. Per ottenere assistenza, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 #### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Per assegnare un tasto di scelta rapida a un comando  
   
 1. Aprire il file con estensione vsct per il pacchetto.  
   
-2. Creare un oggetto vuoto `<KeyBindings>` sezione dopo la `<Commands>` se non è già presente.  
+2. Crea una sezione di `<KeyBindings>` vuota dopo l'`<Commands>` se non è già presente.  
   
    > [!WARNING]
-   > Per altre informazioni sui tasti di scelta rapida, vedere [Keybinding](../extensibility/keybinding-element.md).  
+   > Per ulteriori informazioni sui tasti di scelta, vedere la pagina relativa all' [associazione](../extensibility/keybinding-element.md)di tasti.  
   
-    Nel `<KeyBindings>` sezione, creare un `<KeyBinding>` voce.  
+    Nella sezione `<KeyBindings>` creare una voce di `<KeyBinding>`.  
   
-    Impostare il `guid` e `id` attributi a quelle del comando da richiamare.  
+    Impostare gli attributi `guid` e `id` su quelli del comando che si desidera richiamare.  
   
-    Impostare il `mod1` dell'attributo **controllo**, **Alt**, oppure **MAIUSC**.  
+    Impostare l'attributo `mod1` per **controllare**, **ALT**o **MAIUSC**.  
   
-    La sezione di tasti di scelta rapida dovrebbe essere simile al seguente:  
+    La sezione delle combinazioni di tasti dovrebbe avere un aspetto simile al seguente:  
   
    ```xml  
    <KeyBindings>  
@@ -73,18 +73,18 @@ Per associare un tasto di scelta rapida per un comando di menu personalizzate, �
   
    ```  
   
-   Se il tasto di scelta rapida richiede più di due chiavi, impostare il `mod2` e `key2` attributi.  
+   Se il tasto di scelta rapida richiede più di due chiavi, impostare gli attributi `mod2` e `key2`.  
   
-   Nella maggior parte delle situazioni **MAIUSC** non deve essere utilizzato senza un modificatore secondo quanto ci si già fa sì che la maggior parte dei tasti alfanumerici in cui digitare una lettera maiuscola o un simbolo.  
+   Nella maggior parte dei casi, lo **spostamento** non deve essere usato senza un secondo modificatore perché la pressione della maggior parte delle chiavi alfanumeriche consente di digitare una lettera maiuscola o un simbolo.  
   
-   Codici di tasti virtuali permettono di accedere tasti speciali che non è un carattere associato, ad esempio, le chiavi di funzione e il **BACKSPACE** chiave. Per altre informazioni, vedere [codici tasto virtuale](http://go.microsoft.com/fwlink/?LinkID=105932).  
+   I codici a chiave virtuale consentono di accedere a tasti speciali a cui non è associato alcun carattere, ad esempio i tasti funzione e il tasto **BACKSPACE** . Per ulteriori informazioni, vedere [codici chiave virtuale](https://go.microsoft.com/fwlink/?LinkID=105932).  
   
-   Per rendere disponibile il comando in Visual Studio editor, impostare il `editor` dell'attributo `guidVSStd97`.  
+   Per rendere il comando disponibile nell'editor di Visual Studio, impostare l'attributo `editor` su `guidVSStd97`.  
   
-   Per rendere il comando è disponibile solo in un editor personalizzato, impostare il `editor` dell'attributo per il nome dell'editor personalizzato che è stato generato dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modello di pacchetto durante la creazione di VSPackage che include l'editor personalizzato. Per trovare il valore del nome, esaminare i `<Symbols>` sezione per un `<GuidSymbol>` nodo il cui `name` attributo termina con "`editorfactory`." Si tratta del nome dell'editor personalizzato.  
+   Per rendere il comando disponibile solo in un editor personalizzato, impostare l'attributo `editor` sul nome dell'editor personalizzato generato dal modello di pacchetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando è stato creato il pacchetto VSPackage che include l'editor personalizzato. Per trovare il valore del nome, esaminare la sezione `<Symbols>` per un nodo `<GuidSymbol>` il cui attributo `name` termina con "`editorfactory`". Si tratta del nome dell'editor personalizzato.  
   
 ## <a name="example"></a>Esempio  
- Questo esempio associa il tasto di scelta rapida CTRL + ALT + C per un comando denominato `cmdidMyCommand` in un pacchetto denominato `MyPackage`.  
+ In questo esempio il tasto di scelta rapida CTRL + ALT + C viene associato a un comando denominato `cmdidMyCommand` in un pacchetto denominato `MyPackage`.  
   
 ```  
 <CommandTable>  
@@ -101,7 +101,7 @@ Per associare un tasto di scelta rapida per un comando di menu personalizzate, �
 ```  
   
 ## <a name="example"></a>Esempio  
- Questo esempio associa il tasto di scelta rapida CTRL + B per un comando denominato `cmdidBold` in un progetto denominato `TestEditor`. Il comando è disponibile solo nell'editor personalizzato e non in altri editor.  
+ In questo esempio il tasto di scelta rapida CTRL + B viene associato a un comando denominato `cmdidBold` in un progetto denominato `TestEditor`. Il comando è disponibile solo nell'editor personalizzato e non in altri editor.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  

@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8672d04bd2311c5bda5e2bb1bc9dc1455764f96a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657156"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301425"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Uso di shim per isolare l'applicazione da altri assembly per gli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ I tipi shim** sono una delle due tecnologie che il framework Microsoft Fakes usa
 
  Per una panoramica e materiale sussidiario introduttivo, vedere [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
- **Requirements**
+ **Requisiti**
 
 - Visual Studio Enterprise
 
-  Guardare il [video (durata: 1 ora e 16 minuti) su come testare codice non testabile con Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+  Guardare il [video (durata: 1 ora e 16 minuti) su come testare codice non testabile con Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> Esempio: il bug dell'anno 2000
  Si consideri un metodo che genera un'eccezione l'1 gennaio 2000:
@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  È fondamentale eliminare correttamente ogni contesto shim. Come regola generale, chiamare sempre `ShimsContext.Create` all'interno di un'istruzione `using` per assicurare la corretta eliminazione degli shim registrati. Ad esempio, si potrebbe registrare uno shim per un metodo di test che sostituisce il metodo `DateTime.Now` con un delegato che restituisce sempre il primo gennaio 2000. Se si dimentica di eliminare lo shim registrato nel metodo di test, il resto dell'esecuzione del test restituisce sempre il primo gennaio 2000 come valore di DateTime.Now. Ciò potrebbe sorprendere e confondere.
 
 ### <a name="WriteShims"></a> Scrivere un test con shim
- Nel codice di test inserire una *deviazione* per il metodo da simulare. Esempio:
+ Nel codice di test inserire una *deviazione* per il metodo da simulare. Di seguito è riportato un esempio:
 
 ```csharp
 [TestClass]
@@ -499,12 +499,12 @@ ShimFile.WriteAllTextStringString = shim;
 ```
 
 ## <a name="BKMK_Limitations"></a> Limitazioni
- Non è possibile usare gli shim in tutti i tipi della libreria di classi base .NET **mscorlib** e **System**.
+ Gli shim non possono essere usati in tutti i tipi della libreria di classi base .NET **mscorlib** e **System**.
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="guidance"></a>Informazioni aggiuntive
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Materiale sussidiario
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Vedere anche
- [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter prevosto Blog: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [video (1H16): test del codice non testabile con fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter prevosto Blog: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [video (1H16): test del codice non testabile con fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)

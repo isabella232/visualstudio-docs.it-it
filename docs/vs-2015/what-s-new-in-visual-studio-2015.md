@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 469405515b7cc0ebe615dc821ebfa5ddb7258468
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672089"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297556"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
 ## <a name="sign-in-across-multiple-accounts"></a>Accedere a più account
  Con Visual Studio 2015 la nuova esperienza di accesso ottimizzata è concepita in modo da semplificare notevolmente l'accesso alle risorse online, anche quando si hanno più account di Visual Studio. Dopo avere effettuato l'accesso a Visual Studio, si accede automaticamente a tutte le istanze di Visual Studio 2015 e Blend nel computer in uso. L'accesso  avvia automaticamente il roaming delle impostazioni. In Visual Studio 2015 l'account è condiviso tra più funzionalità e, di conseguenza, se si ha un token valido, è possibile accedere agli account di Visual Studio Team Services da **Team Explorer**e alle risorse e ai siti Web dalla sottoscrizione di Microsoft Azure in Esplora server. Le risorse di Azure sono inoltre visualizzate nella finestra di dialogo Nuovo progetto per i progetti di Application Insights, mentre gli account di Servizi mobili di Azure, Archiviazione di Azure, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) e quello per [sviluppatori di Saleforce.com](https://developer.salesforce.com/) sono visualizzati nella nuova finestra di dialogo **Aggiungi servizio connesso** .
 
- Per usare più account utente in Visual Studio, aggiungerli man mano o tramite il nuovo Gestione account. In questo modo sarà possibile passare immediatamente da un account all'altro quando ci si connette ai servizi o si accede alle risorse online. Visual Studio memorizza gli account aggiunti, che possono quindi essere usati da qualsiasi istanza di Visual Studio o Blend. In Visual Studio verrà effettuato anche il roaming dell'elenco di account (ma non delle preziose credenziali dell'utente) tramite l'account di personalizzazione, in modo da poter iniziare rapidamente a usare uno di questi account in un altro dispositivo. Naturalmente è possibile rimuovere gli account dalla finestra di dialogo Impostazioni account in qualsiasi momento. Per un'introduzione, vedere [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md).
+ Per usare più account utente in Visual Studio, aggiungerli man mano o tramite il nuovo Gestione account. In questo modo sarà possibile passare immediatamente da un account all'altro quando ci si connette ai servizi o si accede alle risorse online. Visual Studio memorizza gli account aggiunti, che possono quindi essere usati da qualsiasi istanza di Visual Studio o Blend. In Visual Studio verrà effettuato anche il roaming dell'elenco di account (ma non delle preziose credenziali dell'utente) tramite l'account di personalizzazione, in modo da poter iniziare rapidamente a usare uno di questi account in un altro dispositivo. Naturalmente è possibile rimuovere gli account dalla finestra di dialogo Impostazioni account in qualsiasi momento. Per un'introduzione, vedere [Gestire più account utente](./ide/work-with-multiple-user-accounts.md).
 
  ![Gestione account](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")
 
@@ -73,7 +73,7 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
  Usare C#, Visual Basic, C++ o JavaScript per creare queste [app di Windows universale](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
- ASP.NET 5 è un aggiornamento principale per MVC, WebAPI e SignalR e viene eseguito in Windows, Mac e Linux.  ASP.NET 5 è stato completamente riprogettato per fornire uno stack .NET pulito e componibile per la compilazione di moderne app basate sul cloud. Strumenti di Visual Studio 2015 sono più strettamente integrati con i comuni strumenti di sviluppo Web, come Bower e Grunt. Per un'introduzione, vedere i numerosi post nel  [blog relativo a strumenti e sviluppo Web .NET](http://blogs.msdn.com/b/webdev/).
+ ASP.NET 5 è un aggiornamento principale per MVC, WebAPI e SignalR e viene eseguito in Windows, Mac e Linux.  ASP.NET 5 è stato completamente riprogettato per fornire uno stack .NET pulito e componibile per la compilazione di moderne app basate sul cloud. Strumenti di Visual Studio 2015 sono più strettamente integrati con i comuni strumenti di sviluppo Web, come Bower e Grunt. Per un'introduzione, vedere i numerosi post nel  [blog relativo a strumenti e sviluppo Web .NET](https://devblogs.microsoft.com/aspnet/).
 
 ### <a name="classic-desktop-and-windows-store"></a>Desktop classico e Windows Store
  Visual Studio 2015 continua a supportare lo sviluppo per desktop classico e Windows Store. Visual Studio si evolverà parallelamente all'evoluzione di Windows.  In Visual Studio 2015 i linguaggi e le librerie per .NET e C++ includono miglioramenti significativi applicabili a tutte le versioni di Windows.
@@ -87,12 +87,12 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
 
  I linguaggi C# e Visual Basic includono entrambi numerosi miglioramenti minori a livello di linguaggio di base e supporto dell'IDE. Questi miglioramenti contribuiscono a rendere l'esperienza di scrittura di codice .NET ancor più intuitiva, comoda e produttiva.
 
- Per ulteriori informazioni [, vedere Novità](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e il Blog di [.NET](http://blogs.msdn.com/b/dotnet/).
+ Per ulteriori informazioni [, vedere Novità](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e il Blog di [.NET](https://devblogs.microsoft.com/dotnet/).
 
 #### <a name="c"></a>C++
  Visual C++ include significativi miglioramenti relativamente alla conformità del linguaggio C++11/14, oltre al supporto per lo sviluppo di app per dispositivi multipiattaforma, al supporto per funzioni ripristinabili e await (attualmente pianificato per la standardizzazione in C++17), a miglioramenti e correzioni di bug nelle implementazioni della libreria run-time C (CRT) e della libreria standard C++ (STL), nelle finestre di dialogo ridimensionabili in MCF, a nuove ottimizzazioni del compilatore, al miglioramento delle prestazioni di compilazione, a nuove funzionalità di diagnostica e a nuovi strumenti di produttività nell'editor del codice.
 
- Per ulteriori informazioni, vedere [What ' s New for C++ Visual](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) and [the C++ Visual Blog](http://blogs.msdn.com/b/vcblog/).
+ Per ulteriori informazioni, vedere [What ' s New for C++ Visual](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) and [the C++ Visual Blog](https://devblogs.microsoft.com/cppblog/).
 
 ## <a name="device-preview-menu-bar"></a>Menu Anteprima dispositivo
  In progetti per la piattaforma Windows universale, la barra dei menu Anteprima dispositivo consente di vedere come verrà eseguito il rendering dell'interfaccia utente basata su XAML in diverse dimensioni dello schermo.
@@ -121,7 +121,7 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
  L'esperienza Blend per la progettazione di interfacce utente XAML è stata notevolmente migliorata. Blend è stato completamente riprogettato per fornire un'interfaccia utente più intuitiva, funzionalità di modifica XAML più potenti, tra cui IntelliSense e una migliore integrazione con Visual Studio. Per altre informazioni, vedere [Progettazione di XAML in Visual Studio e Blend per Visual Studio](./designers/designing-xaml-in-visual-studio.md).
 
 ## <a name="cross-platform-debugging-support"></a>Supporto per il debug multipiattaforma
- È possibile usare Visual Studio per creare ed eseguire il debug di app native per dispositivi mobili eseguite in dispositivi Windows, iOS e Android. Usare [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)oppure connettere un dispositivo ed eseguire il debug del codice direttamente in Visual Studio.
+ È possibile usare Visual Studio per creare ed eseguire il debug di app native per dispositivi mobili eseguite in dispositivi Windows, iOS e Android. Usare [Visual Studio Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)oppure connettere un dispositivo ed eseguire il debug del codice direttamente in Visual Studio.
 
 - **JavaScript / Cordova**. Usare [Visual Studio Tools per Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android con JavaScript.
 
@@ -129,7 +129,7 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
 
 - **C# / Xamarin**. Usare [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android in Visual Studio con C#.
 
-     Gli argomenti relativi a[debug](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) e [debug nel dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) delle [guide per sviluppatori Xamarin](http://developer.xamarin.com/guides) descrivono l'esperienza di debug.
+     Gli argomenti relativi a[debug](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (iOS) e [debug nel dispositivo](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) delle [guide per sviluppatori Xamarin](https://docs.microsoft.com/xamarin/) descrivono l'esperienza di debug.
 
 - **C++ / Android**. Usare i modelli di [Visual C++ per lo sviluppo per dispositivi mobili multipiattaforma](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) insieme a strumenti di terze parti come [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) per creare app native per Windows e Android.
 
@@ -140,13 +140,13 @@ Per informazioni sulle novità di diagnostica, vedere Novità [di strumenti di p
 Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diversi tipi di diagnosi e di analisi nel codice:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips visualizza il tempo di esecuzione dei metodi durante il debug, consentendo di individuare rapidamente i colli di bottiglia senza dover richiamare il profiler. Per un'introduzione, vedere il post relativo a [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips visualizza il tempo di esecuzione dei metodi durante il debug, consentendo di individuare rapidamente i colli di bottiglia senza dover richiamare il profiler. Per un'introduzione, vedere il post relativo a [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
 
 ### <a name="error-list"></a>Elenco errori
  L'elenco errori ora supporta l'applicazione del filtro su qualsiasi colonna. Consente inoltre di visualizzare in tempo reale errori, avvisi e analisi di codice nell'intera soluzione C# o Visual Basic mentre si digita, anche quando una modifica del codice produce migliaia di avvisi. Il nuovo Elenco errori è compatibile con la modalità d'uso esistente. Per altre informazioni, vedere [Error List Window](./ide/reference/error-list-window.md).
 
 ### <a name="gpu-usage-tool"></a>Strumento Utilizzo della GPU
- Questo strumento consente di raccogliere e analizzare i dati di utilizzo della GPU in app e giochi DirectX e di risolvere i problemi nel caso di colli di bottiglia delle prestazioni generati nella CPU o GPU. Per un'introduzione allo strumento, vedere il [post di blog del team di Visual C++](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx).
+ Questo strumento consente di raccogliere e analizzare i dati di utilizzo della GPU in app e giochi DirectX e di risolvere i problemi nel caso di colli di bottiglia delle prestazioni generati nella CPU o GPU. Per un'introduzione allo strumento, vedere il [post di blog del team di Visual C++](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/).
 
 ## <a name="live-code-analysis-light-bulbs"></a>Analisi del codice in tempo reale (lampadine)
  Il nuovo compilatore Roslyn per C# e Visual Basic non offre solo tempi di compilazione più rapidi, ma abilita anche scenari completamente nuovi, come l'analisi del codice in tempo reale che fornisce feedback e suggerimenti estesi e personalizzabili direttamente all'interno dell'editor di codice mentre si digita. In Visual Studio 2015 le lampadine vengono visualizzate nel margine sinistro quando si usa la tastiera o come descrizione comando quando si passa il puntatore del mouse su un errore. La lampadina indica in tempo reale che il compilatore, eventualmente usando un set di regole personalizzate, ha rilevato un problema nel codice, ma che è disponibile un suggerimento per correggere l'errore. Fare clic su una lampadina visualizzata per ottenere suggerimenti sulle azioni da eseguire.
@@ -247,7 +247,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ## <a name="please-give-feedback"></a>Invio di commenti e suggerimenti
  È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, esaminando singolarmente tutti quelli pervenuti nel proprio sistema e usandoli per migliorare i propri prodotti.
 
-### <a name="send-a-smile"></a>Inviare apprezzamenti
+### <a name="send-a-smile"></a>Invia smile
  L'invio di apprezzamenti consente a Microsoft di conoscere quali prodotti o funzionalità hanno soddisfatto o superato le aspettative dei clienti. Nella fase decisionale del processo di progettazione e implementazione di nuove funzionalità vengono infatti usati i dati relativi alle funzionalità più gradite. È per questo motivo che Microsoft invita i propri clienti a esprimere il proprio apprezzamento per una particolare funzionalità di Visual Studio. La procedura per farlo è semplice ed è possibile effettuare questa operazione direttamente dall'IDE.
 
  È sufficiente fare clic sulla faccina gialla sulla barra del titolo, indicare gli aspetti apprezzati e fare clic sul pulsante **Invia smile** .

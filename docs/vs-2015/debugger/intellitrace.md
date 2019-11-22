@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ea7378e72d970bf53470b4434222aa4a1a4d9a1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690528"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298922"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 |||  
 |-|-|  
-|**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> -Mostrare gli eventi passati.<br />-Mostra me chiamare informazioni con gli eventi passati.<br />-Salva la sessione di IntelliTrace.<br />-Controllare i dati raccolti da IntelliTrace.|-   [Procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Debug cronologico](../debugger/historical-debugging.md)|  
+|**Eseguire il debug dell'applicazione con IntelliTrace:**<br /><br /> -Mostra gli eventi precedenti.<br />-Visualizza le informazioni sulle chiamate con gli eventi precedenti.<br />-Salvare la sessione di IntelliTrace.<br />: Controllare i dati raccolti da IntelliTrace.|-   [Procedura dettagliata: uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />     [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)<br />-   [configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)<br />-   [Debug cronologico](../debugger/historical-debugging.md)|  
 |**Raccogliere i dati IntelliTrace durante una sessione di test in Test Manager**|-   [Raccogliere un maggior numero di dati di diagnostica durante i test manuali](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
 |**Raccogliere dati IntelliTrace dalle applicazioni distribuite**|-   [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Avviare il debug da un file di log IntelliTrace (file .iTrace).**|-   [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)|  
@@ -57,9 +57,9 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 |||  
 |-|-|  
-|**Supportato**|-Applicazioni Visual Basic e Visual c# che usano .NET Framework 2.0 o versioni successive.<br />     È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br />     Per eseguire il debug di applicazioni di SharePoint con IntelliTrace, vedere [procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Per eseguire il debug delle app di Microsoft Azure con IntelliTrace, vedere [debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
-|**Supporto limitato**|- F# App su base sperimentale<br />-Le app di Windows Store supportate solo per gli eventi|  
-|**Non supportato**|- C++, in altri linguaggi e script<br />-Windows Services, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] App|  
+|**Supportato**|-Visual Basic e applicazioni C# visive che usano .NET Framework 2,0 o versioni successive.<br />     È possibile eseguire il debug della maggior parte delle applicazioni, comprese le app ASP.NET, Microsoft Azure, Windows Form, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 e a 64 bit.<br />     Per eseguire il debug di applicazioni SharePoint con IntelliTrace, vedere [procedura dettagliata: debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4).<br />     Per eseguire il debug di app Microsoft Azure con IntelliTrace, vedere [debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).|  
+|**Supporto limitato**|- F# app su base sperimentale<br />-App di Windows Store supportate solo per gli eventi|  
+|**Non supportato**|- C++, altri linguaggi e script<br />-App per servizi Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)]|  
   
 > [!NOTE]
 > Se si desidera eseguire il debug di un processo già in esecuzione, non è possibile usare IntelliTrace. È necessario avviare IntelliTrace all'avvio del processo.  
@@ -67,7 +67,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
 ## <a name="IntelliTraceVSTraditional"></a> Perché eseguire il debug con IntelliTrace?  
  Il debug tradizionale o *attivo* mostra solo lo stato corrente dell'applicazione con dati limitati sugli eventi passati. È necessario dedurre tali eventi dallo stato corrente dell'applicazione oppure ricrearli rieseguendo l'applicazione.  
   
- IntelliTrace consente di espandere questa esperienza di debug tradizionale registrando dati ed eventi specifici in un preciso momento. Ciò consente di verificare cosa sia accaduto nell'applicazione senza riavviarla, specialmente se si supera il punto in cui si è verificato il bug. IntelliTrace è attivato per impostazione predefinita durante il debug tradizionale e raccoglie i dati in modo automatico e invisibile. Ciò consente di passare facilmente dal debug tradizionale al debug IntelliTrace e viceversa per visualizzare le informazioni registrate. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md) e [quali dati raccoglie IntelliTrace?](#WhatData)  
+ IntelliTrace consente di espandere questa esperienza di debug tradizionale registrando dati ed eventi specifici in un preciso momento. Ciò consente di verificare cosa sia accaduto nell'applicazione senza riavviarla, specialmente se si supera il punto in cui si è verificato il bug. IntelliTrace è attivato per impostazione predefinita durante il debug tradizionale e raccoglie i dati in modo automatico e invisibile. Ciò consente di passare facilmente dal debug tradizionale al debug IntelliTrace e viceversa per visualizzare le informazioni registrate. Vedere le [funzionalità IntelliTrace](../debugger/intellitrace-features.md) e [i dati raccolti da IntelliTrace.](#WhatData)  
   
  IntelliTrace consente anche di eseguire il debug di errori difficili da riprodurre o che si verificano in fase di distribuzione. È possibile raccogliere dati IntelliTrace e salvarli in un file di log IntelliTrace (file .iTrace), contenente dettagli su eccezioni, eventi di prestazioni, richieste Web, dati di test, thread, moduli e altre informazioni di sistema. È possibile aprire questo file in Visual Studio Enterprise, selezionare un elemento e avviare il debug con IntelliTrace. Ciò consente di passare a qualsiasi evento nel file e visualizzare dettagli specifici sull'applicazione in un dato momento.  
   
@@ -77,7 +77,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 - Una sessione di test in Microsoft Test Manager  
   
-- App Web ASP.NET ospitate in IIS o applicazioni SharePoint 2010 e SharePoint 2013 in esecuzione nella distribuzione quando si usa Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012. Visualizzare [usando l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) e [monitoraggio con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
+- App Web ASP.NET ospitate in IIS o applicazioni SharePoint 2010 e SharePoint 2013 in esecuzione nella distribuzione quando si usa Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012. Vedere [uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) e [monitoraggio con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
   
   Di seguito sono riportati alcuni esempi sul modo in cui IntelliTrace semplifica le operazioni di debug:  
   
@@ -91,7 +91,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 - L'applicazione si arresta in modo anomalo in un computer utilizzato per i test, ma viene eseguita correttamente in un computer di sviluppo.  
   
-   È possibile raccogliere dati IntelliTrace da Microsoft Test Manager, salvare i dati in un file .iTrace e allegarlo a un elemento di lavoro Team Foundation Server per analizzarlo in un secondo momento. Visualizzare [raccogliere più dati di diagnostica nei test manuali](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) e [uso dei dati di IntelliTrace salvato](../debugger/using-saved-intellitrace-data.md).  
+   È possibile raccogliere dati IntelliTrace da Microsoft Test Manager, salvare i dati in un file .iTrace e allegarlo a un elemento di lavoro Team Foundation Server per analizzarlo in un secondo momento. Vedere [raccogliere più dati di diagnostica nei test manuali](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2) e [usare i dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md).  
   
 - Un bug o un arresto anomalo si verifica in un'applicazione distribuita.  
   
@@ -99,12 +99,12 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
    Per le app Web ASP.NET ospitate in IIS 7.0, 7.5 e 8.0 o le applicazioni SharePoint 2010 o SharePoint 2013, utilizzare Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012, per salvare i dati IntelliTrace in un file .iTrace.  
   
-   Si tratta di un'opzione utile per diagnosticare problemi con le app in fase di distribuzione. Visualizzare [usando l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+   Si tratta di un'opzione utile per diagnosticare problemi con le app in fase di distribuzione. Vedere [uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
 ## <a name="WhatData"></a> Quali dati raccoglie IntelliTrace?  
- **Raccolta delle informazioni di evento**  
+ **Raccolta delle informazioni sugli eventi**  
   
- Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTrace: eventi del debugger, eccezioni, eventi .NET Framework e altri eventi di sistema utili per il debug. È possibile scegliere i tipi di eventi IntelliTrace che si desidera raccogliere, tranne gli eventi del debugger e le eccezioni, che vengono sempre raccolti. Visualizzare [configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTrace: eventi del debugger, eccezioni, eventi .NET Framework e altri eventi di sistema utili per il debug. È possibile scegliere i tipi di eventi IntelliTrace che si desidera raccogliere, tranne gli eventi del debugger e le eccezioni, che vengono sempre raccolti. Vedere [Configure IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 - **Eventi del debugger**  
   
@@ -128,7 +128,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 - **Eventi .NET Framework**  
   
-   Per impostazione predefinita, tramite IntelliTrace vengono registrati gli eventi .NET Framework più comuni. Ad esempio:  
+   Per impostazione predefinita, tramite IntelliTrace vengono registrati gli eventi .NET Framework più comuni. Di seguito è riportato un esempio:  
   
   - Per un evento di accesso ai file, tramite IntelliTrace viene raccolto il nome del file.  
   
@@ -136,7 +136,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 - **Eventi delle applicazioni SharePoint 2010 e SharePoint 2013**  
   
-   È possibile registrare eventi di profili utente e un subset di eventi del sistema di registrazione unificato per le applicazioni SharePoint 2010 e 2013 in esecuzione all'esterno di Visual Studio. È possibile salvare questi eventi in un file .iTrace. Richiede Visual Studio Enterprise 2015, una versione precedente di Visual Studio Ultimate, oppure [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) in esecuzione nel **traccia** modalità.  
+   È possibile registrare eventi di profili utente e un subset di eventi del sistema di registrazione unificato per le applicazioni SharePoint 2010 e 2013 in esecuzione all'esterno di Visual Studio. È possibile salvare questi eventi in un file .iTrace. Richiede Visual Studio Enterprise 2015, una versione precedente di Visual Studio Ultimate o [Microsoft Monitoring Agent](https://go.microsoft.com/fwlink/?LinkId=320384) in esecuzione in modalità **Trace** .  
   
    Quando si apre il file .iTrace, immettere un ID di correlazione SharePoint per trovare la richiesta Web corrispondente, visualizzare gli eventi registrati e avviare il debug da un evento specifico. Se il file contiene eccezioni non gestite, è possibile scegliere un ID di correlazione per avviare il debug di un'eccezione.  
   
@@ -146,9 +146,9 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
   - [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
-  **Raccolta delle informazioni di chiamata di funzione**  
+  **Raccolta delle informazioni sulle chiamate di funzione**  
   
   È possibile configurare IntelliTrace per la raccolta delle informazioni sulle chiamate per le funzioni. Tali informazioni consentono di visualizzare la cronologia dello stack di chiamate e scorrere in avanti e indietro le chiamate nel codice. Per ogni chiamata di funzione, IntelliTrace registra i seguenti dati:  
   
@@ -163,30 +163,30 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
 > [!NOTE]
 > IntelliTrace raccoglie solo i primi 256 oggetti in matrici e i primi 256 caratteri per le stringhe.  
   
- Visualizzare [configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Vedere [Configure IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
- **La raccolta di informazioni sul modulo**  
+ **Raccolta delle informazioni sui moduli**  
   
- Per controllare la quantità di informazioni sulle chiamate raccolte da IntelliTrace, specificare solo i moduli di interesse. In questo modo è possibile migliorare le prestazioni dell'applicazione durante la raccolta. Visualizzare [configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ Per controllare la quantità di informazioni sulle chiamate raccolte da IntelliTrace, specificare solo i moduli di interesse. In questo modo è possibile migliorare le prestazioni dell'applicazione durante la raccolta. Vedere [Configure IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 ## <a name="AffectPerformance"></a> IntelliTrace rallenterà l'applicazione?  
  Per impostazione predefinita, vengono raccolti dati solo per eventi di IntelliTrace selezionati. Ciò può rallentare o meno l'applicazione, a seconda della struttura e dell'organizzazione del codice. Ad esempio, se IntelliTrace registra spesso un evento, questo potrebbe rallentare l'applicazione. Potrebbe essere opportuno anche considerare il refactoring dell'applicazione.  
   
- La raccolta di informazioni sulle chiamate potrebbe rallentare significativamente l'applicazione. Potrebbe inoltre aumentare la dimensione di ogni file di log IntelliTrace (file .iTrace) salvato nel disco. Per ridurre al minimo questi effetti, raccogliere le informazioni sulle chiamate solo per i moduli desiderati.  Per modificare la dimensione massima dei file .iTrace, passare a **Strumenti**, **Opzioni**, **IntelliTrace**, **Avanzate**. Visualizzare [configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+ La raccolta di informazioni sulle chiamate potrebbe rallentare significativamente l'applicazione. Potrebbe inoltre aumentare la dimensione di ogni file di log IntelliTrace (file .iTrace) salvato nel disco. Per ridurre al minimo questi effetti, raccogliere le informazioni sulle chiamate solo per i moduli desiderati.  Per modificare la dimensione massima dei file .iTrace, passare a **Strumenti**, **Opzioni**, **IntelliTrace**, **Avanzate**. Vedere [Configure IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-## <a name="in-this-section"></a>Contenuto della sezione  
+## <a name="in-this-section"></a>In questa sezione  
  [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)  
   
  [Configurare IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  
   
- [Inclusione di dati di traccia diagnostica nei bug difficili da riprodurre](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
+ [Inclusione dei dati di traccia di diagnostica con bug difficili da riprodurre](https://msdn.microsoft.com/library/944ae9af-5a55-4c58-b520-0108c03b3564)  
   
  [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)  
   
  [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blog  
- [Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
   
 ### <a name="forums"></a>Forum  
- [Diagnostica di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+ [Diagnostica di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)

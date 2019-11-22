@@ -9,18 +9,18 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7c34e9cae335af12f59e6c25d5fb3c24e5c1749
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6fae0bb2cca6f6f8a4ffb4e5af58473d041a12eb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659350"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301328"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Documentazione Visual Studio Architecture Tooling Guidance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questo materiale sussidiario per gli strumenti di architettura è un pacchetto scaricabile di indicazioni pratiche sull'uso degli strumenti di modellazione in Visual Studio 2010. Presenta una panoramica di alto livello su come usare tutti gli strumenti di modellazione in modo integrato e illustra gli scenari più comuni in cui vengono usati gli strumenti.
+L'Architecture Tooling Guidance è un pacchetto scaricabile di istruzioni pratiche sull'utilizzo degli strumenti di modellazione in Visual Studio 2010. Viene fornita una panoramica di come usare gli strumenti di modellazione in maniera integrata e vengono illustrati gli scenari più comuni in cui vengono usati gli strumenti.
 
  Il contenuto è stato creato dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ALM Rangers, un gruppo speciale con membri del team del prodotto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], servizi Microsoft, Microsoft Most Valued Professional (MVP) e [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lead della community.
 
- [Fare clic qui per scaricare le linee guida per gli strumenti per l'architettura.](http://go.microsoft.com/fwlink/?LinkID=191984)
+ [Fare clic qui per scaricare le linee guida per gli strumenti per l'architettura.](https://go.microsoft.com/fwlink/?LinkID=191984)

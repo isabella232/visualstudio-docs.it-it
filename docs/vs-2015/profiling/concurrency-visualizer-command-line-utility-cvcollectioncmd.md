@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692749"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300647"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "65692749"
 L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) permette di raccogliere tracce dalla riga di comando, in modo da poterle visualizzare nel Visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.  
   
 > [!NOTE]
-> A partire da Visual Studio 2013, il Visualizzatore di concorrenza è un'estensione facoltativa. (In precedenza era stato incluso in Visual Studio.) È possibile scaricare gli [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) dall'Area download.  
+> A partire da Visual Studio 2013, il Visualizzatore di concorrenza è un'estensione facoltativa. (In precedenza era stato incluso in Visual Studio). È possibile scaricare gli [strumenti di raccolta del Visualizzatore di concorrenza per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) dall'area download.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Scaricare l'utilità riga di comando Visualizzatore di concorrenza  
- Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, CVCollectionCmd.exe è installato in %Programmi%\Microsoft Concurrency Visualizer Collection Tools\ (%Programmi(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).  
+ Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, CVCollectionCmd.exe è installato in %Programmi%\Microsoft Concurrency Visualizer Collection Tools\ (%Programmi(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Raccogliere una traccia con CVCollectionCmd  
  È possibile raccogliere una traccia avviando l'app con CVCollectionCmd oppure tramite una connessione all'app. Per le opzioni disponibili, vedere i riferimenti ai comandi seguenti. Esempio:  
@@ -41,9 +41,9 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
   
  **CvCollectionCmd /?**  
   
-|Opzione|Descrizione|Parametri|Valori restituiti|  
+|Opzione|description|Parametri|Valori restituiti|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non sono in corso raccolte, ma sono già state abilitate una o più delle sessioni [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
+|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non è in corso alcuna raccolta, ma sono già state abilitate una o più delle sessioni [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
 |Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
 |Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
 |Detach|Arresta la raccolta.|Nessuno.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  
@@ -64,19 +64,19 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 ### <a name="configuration-file-tags"></a>Tag del file di configurazione  
  Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:  
   
-|Tag|Descrizione|Valori|  
+|Tag|description|Valori|  
 |---------|-----------------|------------|  
 |Config|Delimita il file di configurazione complessivo.|Deve contenere gli elementi seguenti:<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|Specifica la versione principale del file di configurazione.|Deve essere 1 per progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Se è diverso da 1, l'utilità non funzionerà.|  
 |MinorVersion|Specifica la versione secondaria del file di configurazione.|Deve essere 0 per progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Se è diverso da 0, l'utilità non funzionerà.|  
 |IncludeEnvSymbolPath|Imposta un valore che determina se è usato il percorso simboli di ambiente (_NT_SYMBOL_PATH).|-   True<br />-   False|  
 |DeleteEtlsAfterAnalysis|Imposta un valore che determina se i file ETL sono eliminati dopo il completamento dell'analisi.|-   True<br />-   False|  
-|SymbolPath|Specifica il percorso del server di simboli. Per altre informazioni, vedere [Usare il server di simboli Microsoft per ottenere il file di simboli di debug](http://go.microsoft.com/fwlink/?LinkID=149389).|Nome di directory o URL.|  
-|Markers|Include l'elenco di provider marcatori.|Può includere zero o più elementi MarkerProvider.|  
+|SymbolPath|Specifica il percorso del server di simboli. Per altre informazioni, vedere [Usare il server di simboli Microsoft per ottenere il file di simboli di debug](https://go.microsoft.com/fwlink/?LinkID=149389).|Nome di directory o URL.|  
+|Marcatori|Include l'elenco di provider marcatori.|Può includere zero o più elementi MarkerProvider.|  
 |MarkerProvider|Specifica un singolo provider marcatori.|Deve contenere gli elementi seguenti:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Può includere questi elementi:<br /><br /> -   Categories<br />-   IsEnabled|  
-|Livello|Imposta il livello di importanza di un MarkerProvider.|-   Basso<br />-   Normale<br />-   Alto<br />-   Critico<br />-   Tutto|  
+|Level|Imposta il livello di importanza di un MarkerProvider.|-   Basso<br />-   Normale<br />-   Alto<br />-   Critico<br />-   Tutto|  
 |GUID|Identificatore univoco globale del provider marcatori ETW.|Un valore GUID.|  
-|Nome|Specifica la descrizione del provider marcatori.|Stringa.|  
+|nome|Specifica la descrizione del provider marcatori.|Una stringa.|  
 |Categories|Specifica le categorie raccolte per il provider marcatori.|Stringa delimitata da virgole che include numeri o intervalli di numeri.|  
 |IsEnabled|Imposta un valore che determina se il provider marcatori è abilitato per la raccolta.|-   True<br />-   False|  
 |FilterConfig|Specifica l'elenco di opzioni di configurazione degli eventi ETW filtrati dalla raccolta.|Può includere gli elementi seguenti:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

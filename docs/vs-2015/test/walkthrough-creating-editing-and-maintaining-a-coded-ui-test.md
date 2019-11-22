@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2891a01590f2970fc2e68ea7bc2d57506b12d26b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657114"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302051"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 1. Nel menu **FILE** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 2. Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Windows Desktop**.
 
@@ -127,7 +127,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 3. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo progetto**.
+     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo progetto** .
 
 4. Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Test**.
 
@@ -139,7 +139,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      Viene visualizzata la finestra di dialogo **Genera codice per test codificato dell'interfaccia utente**.
 
-7. Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e fare clic su **OK**.
+7. Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e scegliere **OK**.
 
      La finestra UIMap – Generatore di test codificato dell'interfaccia utente è visualizzata e Visual Studio è ridotto a icona.
 
@@ -151,7 +151,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      Se necessario, è possibile sospendere la registrazione, ad esempio per controllare la posta elettronica in arrivo.
 
-     ![Sospendere la registrazione](../test/media/cuit.png "CUIT")
+     ![Sospendere la registrazione](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > Tutte le azioni eseguite sul desktop verranno registrate. Sospendere la registrazione se si eseguono azioni che possono comportare l'inserimento di dati sensibili nella registrazione.
@@ -224,7 +224,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
      Gli aggiornamenti al metodo di test vengono salvati nel file UIMap.Designer.
 
     > [!CAUTION]
-    > Una volta che è stato spostato il metodo, non è più possibile modificarlo tramite l'Editor test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice.
+    > Una volta che è stato spostato il metodo, non è più possibile modificarlo tramite l'Editor test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor di codice.
 
 10. Rinominare il metodo `SimpleAppTest()` in `ModifiedSimpleAppTest()`.
 
@@ -369,22 +369,22 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 ## <a name="external-resources"></a>Risorse esterne
 
 ### <a name="videos"></a>Video
- ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)
+ ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)
+ ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)
+ ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode3-HandCoding](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>Lab pratico
- [Lab virtuale MSDN: Introduzione alla creazione di test codificati dell'interfaccia utente con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)
+ [Lab virtuale MSDN: Introduzione alla creazione di test codificati dell'interfaccia utente con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
 
 ### <a name="faq"></a>Domande frequenti
- [Domande frequenti sui test codificati dell'interfaccia utente - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Domande frequenti sui test codificati dell'interfaccia utente - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
- [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Test di automazione dell'interfaccia utente di Visual Studio (include CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Vedere anche
  [Usare automazione interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [Introduzione con le](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [configurazioni e le piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [modifica dei test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

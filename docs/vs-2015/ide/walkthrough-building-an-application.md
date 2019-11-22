@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670131"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296871"
 ---
 # <a name="walkthrough-building-an-application"></a>Procedura dettagliata: compilazione di un'applicazione
 
@@ -24,7 +24,7 @@ Completando questa procedura dettagliata è possibile acquisire familiarità con
 
 Di seguito sono elencate le diverse sezioni di questo argomento:
 
-[Installare l'applicazione di esempio](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Installare l'applicazione di esempio](../ide/walkthrough-building-an-application.md)
 
 [Creare una configurazione della build personalizzata](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ Di seguito sono elencate le diverse sezioni di questo argomento:
 
 [Visualizzare dettagli di compilazione aggiuntivi nella finestra di output](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Creare una build di versione](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> Installare l'applicazione di esempio
-
-Usare la finestra di dialogo **Estensioni e aggiornamenti** per trovare e installare l'esempio [Introduzione alla creazione di applicazioni WPF](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) nella raccolta esempi del sito Web Microsoft. La raccolta esempi offre un'ampia gamma di progetti e codice di esempio che è possibile scaricare ed esaminare durante la pianificazione e lo sviluppo delle applicazioni.
+[Creare una build di versione](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>Per installare l'applicazione di esempio
 
@@ -74,7 +70,7 @@ Usare la finestra di dialogo **Estensioni e aggiornamenti** per trovare e instal
 
      ![Finestra di dialogo nuovo progetto, Visual Basic esempio](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. Fare clic sul pulsante **OK**.
+4. Fare clic su **OK** .
 
 ## <a name="BKMK_CreateBuildConfig"></a> Creare una configurazione della build personalizzata
 
@@ -100,7 +96,7 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
     ![Finestra di dialogo nuova piattaforma soluzione](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. Fare clic sul pulsante **OK**.
+6. Fare clic su **OK** .
 
    La configurazione della soluzione attiva è stata modificata su Test con la piattaforma della soluzione attiva impostata su x64.
 
@@ -116,7 +112,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 #### <a name="to-build-the-solution"></a>Per compilare la soluzione
 
-- Nella barra dei menu scegliere **Compila**, **Compila soluzione**.
+- Nella barra dei menu scegliere **Compilazione**, **Compila soluzione**.
 
   Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione ha avuto esito positivo, ma sono stati generati alcuni messaggi di avviso.
 
@@ -185,7 +181,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 1. Aprire la finestra di dialogo **Opzioni**.
 
-    ![Comando Options dal menu strumenti](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+    ![Comando Opzioni nel menu Strumenti](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
 
 2. Scegliere la categoria **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.
 
@@ -206,7 +202,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
    Per altre informazioni, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a> Creare una build di versione
+## <a name="create-a-release-build"></a>Creare una build di versione
 
 È possibile compilare una versione dell'applicazione di esempio ottimizzata per la spedizione. Per la build di versione, si specificherà che il file eseguibile venga copiato in una condivisione di rete prima dell'avvio della compilazione.
 
@@ -233,9 +229,9 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
 
 6. Compilare l'applicazione.
 
-     ![Comando Compila soluzione nel menu Compila](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Comando Compila soluzione del menu Compila](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Per specificare una build di rilascio per Visual C \#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Per specificare una build di rilascio per Visual C\#
 
 1. Aprire **Creazione progetti**.
 
@@ -256,7 +252,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
 
 6. Compilare l'applicazione.
 
-    ![Comando Compila soluzione nel menu Compila](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Comando Compila soluzione del menu Compila](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    Il file eseguibile viene copiato nel percorso di rete specificato. Il percorso sarà \\\mioserver\compilazioni\\*Nomefile*.exe.
 

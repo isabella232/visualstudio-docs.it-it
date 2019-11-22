@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669342"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297446"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Strumenti XML in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Extensible Markup Language (XML) * è un linguaggio di markup che fornisce un fo
 
  Molte funzionalità di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sono basate su XML. L'argomento seguente descrive gli strumenti e le funzionalità relativi a XML disponibili in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- Per ulteriori informazioni, vedere il [centro](http://go.microsoft.com/fwlink/?LinkID=100176)per sviluppatori XML, che fornisce la documentazione più recente, informazioni tecniche, download, newsgroup e altre risorse per gli sviluppatori XML.
+ Per ulteriori informazioni, vedere il [centro](https://go.microsoft.com/fwlink/?LinkID=100176)per sviluppatori XML, che fornisce la documentazione più recente, informazioni tecniche, download, newsgroup e altre risorse per gli sviluppatori XML.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Utilizzo di dati XML](../xml-tools/working-with-xml-data.md) Viene illustrato il ruolo del codice XML nel modo in cui i dati vengono gestiti in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
  [Debug di XSLT](../xml-tools/debugging-xslt.md) Fornisce collegamenti ad argomenti sull'uso del debugger di Visual Studio per eseguire il debug di XSLT.
 
-## <a name="reference"></a>Reference
- [Microsoft. VisualStudio. XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) espone l'albero di analisi dell' [editor XML](http://go.microsoft.com/fwlink/?LinkId=228249) tramite [System. XML. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) per qualsiasi documento XML.
+## <a name="reference"></a>Riferimenti
+ [Microsoft.VisualStudio.XmlEditor](https://go.microsoft.com/fwlink/?LinkID=165699) espone il [Editor XML](https://go.microsoft.com/fwlink/?LinkId=228249) analizzato albero tramite [perché](https://go.microsoft.com/fwlink/?LinkId=228250) per tutti i documenti XML.
 
- [Riferimento agli standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Vengono fornite informazioni sulle tecnologie XML, tra cui XML, DTD (Document Type Definition), XSD (XML Schema Definition Language) e XSLT.
+ [Riferimento agli standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornisce informazioni sulle tecnologie XML, tra cui XML, definizione DTD (Document Type Definition), il linguaggio XML Schema definition (XSD) e XSLT.
 
- <xref:System.Xml?displayProperty=fullName> descrive le classi e altri elementi che costituiscono lo spazio dei nomi <xref:System.Xml> e fornisce collegamenti a informazioni più dettagliate su ogni elemento.
+ <xref:System.Xml?displayProperty=fullName> Descrive le classi e altri elementi che costituiscono il <xref:System.Xml> dello spazio dei nomi e vengono forniti collegamenti a informazioni più dettagliate su ogni elemento.
 
- <xref:System.Xml.Serialization?displayProperty=fullName> descrive le classi e altri elementi che costituiscono lo spazio dei nomi <xref:System.Xml.Serialization> e fornisce collegamenti a informazioni più dettagliate su ogni elemento.
+ <xref:System.Xml.Serialization?displayProperty=fullName> Descrive le classi e altri elementi che costituiscono il <xref:System.Xml.Serialization> dello spazio dei nomi e vengono forniti collegamenti a informazioni più dettagliate su ogni elemento.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Document Object Model XML (Dom)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Viene descritto il modo in cui le <xref:System.Xml.XmlDocument> e le classi associate sono conformi alle specifiche del supporto per gli spazi dei nomi W3C Document Object Model (Core) Level 1 e Level 2.
+ [Oggetto del modello DOM (Document XML)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) descrive il modo in cui il <xref:System.Xml.XmlDocument> e le relative classi associate conformano a W3C Document Object Model (Core) livello 1 e specifiche per il supporto dello spazio dei nomi di livello 2.
 
  [Lettura di XML con XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Viene descritto il modo in cui il <xref:System.Xml.XmlReader> fornisce accesso non memorizzato nella cache, solo in modalità di sola lettura ai dati XML in un flusso XML.
 
@@ -76,4 +76,4 @@ Extensible Markup Language (XML) * è un linguaggio di markup che fornisce un fo
 
  [Elaborare dati XML utilizzando il modello di dati XPath](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) Viene descritto il modo in cui la classe <xref:System.Xml.XPath.XPathNavigator> può elaborare i dati XML archiviati in un <xref:System.Xml.XPath.XPathDocument> o in un oggetto <xref:System.Xml.XmlDocument>. La classe <xref:System.Xml.XPath.XPathNavigator> è basata sul modello di dati XQuery 1.0 e XPath 2.0 e può essere usata per spostarsi tra i dati XML e per modificarli.
 
- [Modello SOM (XML Schema Object Model)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) Vengono descritte le classi utilizzate per la creazione e la modifica di XML Schema, fornendo una classe <xref:System.Xml.Schema.XmlSchema> per caricare e modificare uno schema.
+ [Modello SOM (Schema Object Model) XML](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) descrive le classi usate per la creazione e modifica di schemi XML, fornendo un <xref:System.Xml.Schema.XmlSchema> classe per caricare e modificare uno schema.

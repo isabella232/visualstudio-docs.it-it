@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione (Visual C++) | Microsoft Docs
+title: Modifica e continuazione ( C++Visual) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,21 +18,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fef02f08ac635687eaaf071188ba0455c6389d9e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697388"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301059"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare Modifica e continuazione nei progetti Visual C++. Visualizzare [modifiche di codice supportato (C++)](../debugger/supported-code-changes-cpp.md) per informazioni sulle limitazioni di modifica e continuazione.  
+È possibile usare Modifica e continuazione nei progetti Visual C++. Per informazioni sulle limitazioni di modifica e continuazione, vedere [modifiche al codice supportate (C++)](../debugger/supported-code-changes-cpp.md) .  
   
- A partire da Visual Studio 2015 Update 1, è ora possibile usare modifica e continuazione nelle App Windows Store C++ e nelle App DirectX perché ora è supportata la **/ZI** opzione del compilatore con **/bigobj** passare. È anche possibile usare modifica e continuazione con file binari compilati con il **/FASTLINK** passare.  
+ A partire da Visual Studio 2015 Update 1, è ora possibile usare modifica e continuazione nelle C++ app di Windows Store e nelle app DirectX, perché ora supporta l'opzione del compilatore **/Zi** con l'opzione **/bigobj** . È anche possibile usare modifica e continuazione con file binari compilati con l'opzione **/FASTLINK** .  
   
- Tra gli altri miglioramenti, Update 1 include una nuova finestra di dialogo di attesa annullabile e la notifica quando un file non supporta Modifica e continuazione. Per altre informazioni sui miglioramenti apportati a Update 1, vedere [miglioramenti per C++ Modifica e continuazione in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
+ Altri miglioramenti dell'aggiornamento 1 includono una nuova finestra di dialogo di attesa annullabile e una notifica quando un file non supporta modifica e continuazione. Per ulteriori informazioni sui miglioramenti dell'aggiornamento 1, vedere [miglioramenti C++ per modifica e continuazione in Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  L'opzione del compilatore [/Zo (Enhance Optimized Debugging)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) introdotta in Visual Studio 2013 Update 3 aggiunge altre informazioni ai file PDB (symbol) per i file binari compilati senza l'opzione [/Od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   
@@ -45,7 +45,7 @@ ms.locfileid: "65697388"
   
 2. Nella finestra di dialogo **Opzioni** selezionare la cartella **Debug / Generale**.  
   
-3. Nel gruppo **Modifica e continuazione** selezionare o deselezionare la casella di controllo **Abilita Modifica e continuazione nativo** .  
+3. Nel gruppo **Modifica e continuazione** selezionare o deselezionare la casella di controllo **Abilita Modifica e continuazione nativo**.  
   
    La modifica di questa impostazione influisce su tutti i progetti attivi. Non è necessario ricompilare l'applicazione dopo la modifica di questa impostazione. L'impostazione può essere modificata anche durante il debug. Quando si compila l'applicazione dalla riga di comando o da un makefile, ma si esegue il debug nell'ambiente Visual Studio, è comunque possibile usare Modifica e continuazione se si imposta l'opzione **/ZI** .  
   
@@ -70,7 +70,7 @@ ms.locfileid: "65697388"
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Come reimpostare il punto di esecuzione  
  Alcune modifiche al codice applicate in modalità Modifica e continuazione possono causare uno spostamento automatico del punto di esecuzione in una nuova posizione. Nonostante il punto di esecuzione venga collocato nel modo più accurato possibile, in alcuni casi il risultato potrebbe non essere corretto.  
   
- In Visual C++ la modifica del punto di esecuzione viene segnalata tramite una finestra di dialogo. Si consiglia di verificare che la posizione sia corretta prima di continuare con il debug. In caso negativo, usare il comando **Imposta istruzione successiva** . Per altre informazioni, vedere [Impostare l'istruzione successiva da eseguire](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ In Visual C++ la modifica del punto di esecuzione viene segnalata tramite una finestra di dialogo. Si consiglia di verificare che la posizione sia corretta prima di continuare con il debug. In caso negativo, usare il comando **Imposta istruzione successiva**. Per altre informazioni, vedere [Impostare l'istruzione successiva da eseguire](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
 ## <a name="BKMK_How_to_work_with_stale_code"></a> Come usare il codice non aggiornato  
  In alcuni casi la funzionalità Modifica e continuazione non consente di applicare immediatamente modifiche all'eseguibile, ma può apportare automaticamente tali modifiche in un secondo momento se si continua il debug. Ciò si verifica quando si modifica una funzione che chiama la funzione corrente o si aggiungono più di 64 byte di nuove variabili ad una funzione presente nello stack di chiamate.  

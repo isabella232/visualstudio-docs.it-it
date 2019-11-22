@@ -12,18 +12,18 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 19144365a428fdde8915f481ce8d12841bddc003
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f1dab6be397028917976c9827e48a6748ba78bd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68185259"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295995"
 ---
 # <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Due esempi mostrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+In due esempi viene illustrato come estendere il debugger di Visual Studio utilizzando [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
-- L'esempio dell'analizzatore di espressioni Debugger, per linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Nel [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] finestra, fare clic sui **esempi** scheda, fare clic su **tutti** o **c#** nell'elenco delle lingue e quindi fare clic su **Debugger**.  
+- L'esempio di analizzatore di espressioni del debugger, per i linguaggi gestiti, è incluso nel [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Nella finestra [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fare clic sulla scheda **esempi** , fare clic su tutto **C#** o nell'elenco di lingue, quindi fare clic su **debugger**.  
   
-- Visual Studio il Debug di motore di esempio, per linguaggi nativi, è disponibile in MSDN Code Gallery. Per altre informazioni, vedere la pagina nel sito Web Microsoft relativa all' [Esempio di motore di Debug di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).
+- L'esempio del motore di debug di Visual Studio, per le lingue native, è disponibile in MSDN Code Gallery. Per ulteriori informazioni, vedere questa pagina sul sito Web Microsoft: [esempio di motore di debug di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=150236).

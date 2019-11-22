@@ -10,14 +10,14 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: b7e1d5e63a93f8fe1f67de920a1ccf7966d97ed6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: d89762511e88e296a51c781c6a403c2dd227ed4f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263778"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293253"
 ---
-# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso dell'emulatore Express per l'esecuzione e il debug di un servizio cloud di Azure in un computer locale
+# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso dell'emulatore Express per eseguire un servizio cloud di Azure ed eseguirne il debug in un computer locale
 Con l'emulatore Express, è possibile testare ed eseguire il debug di un servizio cloud senza eseguire Visual Studio come amministratore. È possibile configurare le impostazioni del progetto per usare l'emulatore Express o l'emulatore completo, in base ai requisiti del servizio cloud. Per altre informazioni sull'emulatore completo, vedere [Eseguire un'applicazione Azure nell'emulatore di calcolo](/azure/storage/common/storage-use-emulator).
 
 ## <a name="using-emulator-express-in-visual-studio"></a>Uso dell'emulatore Express in Visual Studio
@@ -47,7 +47,7 @@ Di seguito sono indicati alcuni problemi causati da limiti noti dell'emulatore E
 - L'emulatore Express non è compatibile con il Server Web IIS.
 - Il servizio cloud può contenere più ruoli, ma ogni ruolo è limitato a un'istanza.
 - È possibile accedere ai numeri di porta inferiori a 1000. Se si usa un provider di autenticazione che in genere usa una porta inferiore a 1000, potrebbe essere necessario modificare questo valore per i numeri di porta superiori a 1000.
-- Qualsiasi limitazione dell'emulatore di calcolo di Azure si applica anche all'emulatore Express. Ad esempio, non si può disporre di più di 50 istanze del ruolo per ogni distribuzione. Per altre informazioni sull'emulatore completo di Azure, vedere [Eseguire un'applicazione Azure nell'emulatore di calcolo](http://go.microsoft.com/fwlink/p/?LinkId=623050).
+- Qualsiasi limitazione dell'emulatore di calcolo di Azure si applica anche all'emulatore Express. Ad esempio, non si può disporre di più di 50 istanze del ruolo per ogni distribuzione. Per altre informazioni sull'emulatore completo di Azure, vedere [Eseguire un'applicazione Azure nell'emulatore di calcolo](https://go.microsoft.com/fwlink/p/?LinkId=623050).
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Debug dei servizi cloud di Azure](vs-azure-tools-debugging-cloud-services-overview.md)

@@ -10,17 +10,17 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c7b3d6a3cdb6eefd27f391dbe68a45ec3824b7de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f03490fc7ea3513a006254e3931cc1113f3bc159
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660549"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302588"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generare unit test per il codice con IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni branch condizionale nel codice. Vengono ad esempio analizzate le istruzioni if, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
+IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni ramo condizionale nel codice. Vengono ad esempio analizzate le istruzioni if, le asserzioni e tutte le operazioni che possono generare eccezioni. Questa analisi viene usata per generare dati di test per uno unit test con parametri per ognuno dei metodi, creando unit test con un elevato code coverage.
 
  Quando si esegue IntelliTest, è possibile visualizzare facilmente i test non superati e aggiungere l'eventuale codice necessario per correggerli. È possibile scegliere quali dei test generati salvare in un progetto di test per fornire un gruppo di regressione. Quando si modifica il codice, eseguire nuovamente IntelliTest per mantenere i test generati sincronizzati con le modifiche apportate al codice.
 
@@ -134,4 +134,4 @@ IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit
  Eseguire quindi IntelliTest per generare i singoli unit test nei relativi file con estensione g.cs.
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>D: È possibile reperire maggiori informazioni sulla modalità di generazione dei test?
- **R:** Sì, per ottenere una panoramica dettagliata, leggere questo [post di blog](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx).
+ **R:** Sì, per ottenere una panoramica dettagliata, leggere questo [post di blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).
