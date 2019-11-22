@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47083fe3f496cb855a7fb7101a886290e53cfbce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619124"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300605"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
  È necessario disporre di .NET Framework 3.5 installato nel sistema peri accedere alle versioni di framework precedenti alla 4.0.
 
 ## <a name="downloading-sample-solutions"></a>Download di soluzioni di esempio
- È possibile usare Visual Studio per scaricare e installare esempi di soluzioni dalla [raccolta di codici MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).
+ È possibile usare Visual Studio per scaricare e installare esempi di soluzioni dalla [raccolta di codici MSDN](https://go.microsoft.com/fwlink/?LinkId=254185).
 
  È possibile scaricare esempi individualmente oppure scaricare un Pacchetto di esempi contenente gli esempi correlati che condividono una tecnologia o un argomento. Si riceverà una notifica al momento della pubblicazione delle modifiche apportate al codice sorgente per ogni esempio scaricato.
 
