@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442093"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300770"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
   
  Di seguito sono elencate le diverse sezioni di questo argomento:  
   
-- [Installazione e disinstallazione](#Installing)  
+- [Installazione o disinstallazione](#Installing)  
   
 - [Requisiti di sistema e compatibilità con le versioni precedenti](#Requirements)  
   
-- [Gestione delle reti in Visual Studio Emulator for Android](#Networking)  
+- [Rete con l’emulatore di Visual Studio per Android](#Networking)  
   
 - [Configurare Visual Studio Emulator for Android](#Configuring)  
   
@@ -81,16 +81,16 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 ## <a name="Configuring"></a> Configurare Visual Studio Emulator for Android  
  Test dell'app Android per la compatibilità tra la varietà di hardware Android scaglionamento può rappresentare un problema. Telefoni e Tablet nel mercato Android span un'ampia gamma di versioni e le dimensioni dello schermo e sono disponibili in molte configurazioni hardware diverse (RAM, CPU, architettura e così via). Emulatore di Visual Studio per Android semplifica questo utilizzo dei profili di dispositivo. Il set di profili di dispositivo rappresentano l'hardware più diffuso sul mercato, inclusi i dispositivi da Samsung, Motorola, Sony, generatore di carico e così via.  
   
- In Visual Studio 2015, è possibile installare, disinstallare e avviare i profili di dispositivo utilizzando Gestione emulatori di. Accedere a Gestione emulatori scegliendo **Strumenti** e quindi **Visual Studio Emulator for Android**.  
+ In Visual Studio 2015, è possibile installare, disinstallare e avviare i profili di dispositivo utilizzando Gestione emulatori di. Accedere a Gestione emulatori di scegliendo **strumenti**, quindi **Visual Studio l'emulatore di Android**.  
   
- ![Gestione di Visual Studio Emulator for Android](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
+ ![Emulatore di Visual Studio per Android Manager](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
   
- Per impostazione predefinita, sono disponibili quattro profili dispositivo pre-installato (telefono/5 KitKat e il simbolo "e Tablet PC/7" configurazioni), come indicato dal testo bianco e icone. Gli altri profili nell'elenco vengono visualizzati in grigio fino a quando non viene scelto il pulsante **Installa profilo** e l'installazione non viene completata. È possibile filtrare l'elenco in base al livello dell'API e fare clic sulla freccia di dettagli sul lato inferiore destro di un profilo per visualizzarne i dettagli di configurazione completa.  
+ Per impostazione predefinita, sono disponibili quattro profili dispositivo pre-installato (telefono/5 KitKat e il simbolo "e Tablet PC/7" configurazioni), come indicato dal testo bianco e icone. Altri profili nell'elenco verranno visualizzati in grigio fino a quando non si sceglie il **Installa profilo** pulsante e l'installazione viene completata. È possibile filtrare l'elenco in base al livello dell'API e fare clic sulla freccia di dettagli sul lato inferiore destro di un profilo per visualizzarne i dettagli di configurazione completa.  
   
- Dopo aver installato il set di profili di destinazione, è possibile avviare questi nuovi profili direttamente dalla gestione premendo il pulsante verde **Riproduci**. Verranno inoltre visualizzati nel menu a discesa destinazione debug in qualsiasi tipo di progetto per dispositivi mobili multipiattaforma di Visual Studio.  
+ Dopo aver installato il set di profili che si desidera di destinazione, è possibile avviare questi nuovi profili direttamente dalla gestione premendo verde **riprodurre** pulsante. Verranno inoltre visualizzati nel menu a discesa destinazione debug in qualsiasi tipo di progetto per dispositivi mobili multipiattaforma di Visual Studio.  
   
 ## <a name="FeaturesTest"></a> Funzionalità che è possibile testare nell'emulatore  
- Per informazioni dettagliate sulle funzionalità che è possibile testare nell'emulatore, vedere questa [documentazione](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Per informazioni dettagliate sulle funzionalità che è possibile testare nell'emulatore, vedere questa [documentazione](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).  
   
 ## <a name="FeaturesNonTest"></a> Funzionalità che non è possibile testare nell'emulatore  
  Nell'elenco seguente vengono descritte le funzionalità della piattaforma Android che **non è possibile** testare nell'emulatore. È necessario verificare queste funzionalità in un dispositivo fisico.  
@@ -106,10 +106,10 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
 ## <a name="Support"></a> Risorse di supporto  
  Se il computer host soddisfa i requisiti di sistema e si verifica un problema non incluso in questa guida alla risoluzione dei problemi:  
   
-- Porre una domanda su StackOverflow usando i tag [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.  
+- Porre una domanda su StackOverflow usando i tag [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) e visual-studio.  
   
 - Segnalare un problema usando lo strumento Invia smile in Visual Studio o in Gestione emulatori.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Requisiti di sistema per Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Risoluzione dei problemi di Visual Studio Emulator per Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

@@ -17,19 +17,19 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e66f8438e0c28a64d2e8705fea0ffa5e362887b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671262"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296016"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare gli strumenti di visualizzazione e di modellazione in Visual Studio. Questi strumenti includono diagrammi UML (Unified Modeling Language), mappe codice, diagrammi livello e diagrammi classi per:
 
- Per individuare le versioni di Visual Studio che supportano i singoli strumenti, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano ciascuno strumento, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 - Definire le esigenze degli utenti e i processi aziendali.
 
@@ -103,7 +103,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Procedura: Aggiungere diagrammi classi ai progetti (Creazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
 - [SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -120,7 +120,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 - [Convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md)
 
   > [!NOTE]
-  > Alcune versioni di Visual Studio supportano la convalida dei livelli e le versioni di sola lettura di mappe codice e diagrammi UML per la visualizzazione e la modellazione. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+  > Alcune versioni di Visual Studio supportano la convalida dei livelli e le versioni di sola lettura di mappe codice e diagrammi UML per la visualizzazione e la modellazione. Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="UnderstandingCommunicating"></a> Comprensione e comunicazione delle informazioni relative al sistema
  Non è necessario usare i diagrammi di modellazione di Visual Studio in base a un ordine stabilito; possono essere usati in base alle proprie esigenze o all'approccio preferito. In genere i team rivedono i propri modelli in modo frequente e iterativo nel corso di un progetto. Ogni diagramma offre specifici punti di forza che consentono di comprendere, descrivere e comunicare i diversi aspetti del sistema in fase di sviluppo.
@@ -242,7 +242,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 |**Mappa o diagramma**|**Mostra**|
 |------------------------|---------------|
 |*Mappa codice*<br /><br /> Vedere:<br /><br /> -   [mappare le dipendenze tra le soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br />-   [cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)<br />-   [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dipendenze e altre relazioni nel codice.<br /><br /> Ad esempio, Dinner Now potrebbe iniziare esaminando le mappe codice assembly per avere una panoramica degli assembly e delle relative dipendenze. Può analizzare in dettaglio le mappe per esplorare gli spazi dei nomi e le classi in tali assembly.<br /><br /> Dinner Now può anche creare mappe per esplorare aree specifiche e altri tipi di relazioni nel codice. Usa Esplora soluzioni per trovare e selezionare le aree e le relazioni di suo interesse.|
-|*Diagramma classi basato su codice*<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice|
+|*Diagramma classi basato su codice*<br /><br /> Vedere [Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice|
 
  Ad esempio, lo sviluppatore crea una mappa codice. Modifica l'ambito per concentrarsi sulle aree che saranno interessate dal nuovo scenario. Queste aree sono selezionate ed evidenziate nella mappa:
 
@@ -264,7 +264,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 |------------------|-------------------|
 |*Diagramma di attività (UML)*<br /><br /> Vedere:<br /><br /> -   [diagrammi di attività UML: riferimento](../modeling/uml-activity-diagrams-reference.md)<br />-   [diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md)|Il flusso dei passaggi eseguiti quando il sistema rileva che un cliente effettua un nuovo ordine presso un ristorante già usato in precedenza e gli propone pertanto di scriverne la recensione.|
 |*Diagramma classi (UML)*<br /><br /> Vedere:<br /><br /> -   [diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)<br />-   [diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|Classi logiche e relative relazioni. Ad esempio, viene aggiunta una nuova classe per descrivere una **Recensione** e le sue  relazioni con altre entità come **Ristorante**, **Menu**e **Cliente**.<br /><br /> Per associare le recensioni a un cliente, il sistema deve archiviare i dati relativi al cliente. Un diagramma classi UML può essere utile per chiarire quei dati.|
-|*Diagramma classi basato su codice*<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice.|
+|*Diagramma classi basato su codice*<br /><br /> Vedere [Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice.|
 |*Diagramma componenti (UML)*<br /><br /> Vedere:<br /><br /> -   [diagrammi componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)<br />-   [diagrammi di componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md)|Parti generali del sistema, ad esempio il sito Web di Dinner Now e le relative interfacce. Queste interfacce definiscono la modalità di interazione reciproca dei componenti tramite i metodi o i servizi da essi forniti e utilizzati.|
 |*Diagramma sequenza (UML)*<br /><br /> Vedere:<br /><br /> -   [diagrammi di sequenza UML: riferimento](../modeling/uml-sequence-diagrams-reference.md)<br />-   [diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md)|Sequenza di interazioni tra le istanze.|
 
@@ -363,7 +363,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
 
-- [Utilizzare il controllo della versione](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [Utilizzare il controllo della versione](https://go.microsoft.com/fwlink/?LinkID=525605)
 
 - [Compilare l'applicazione](/azure/devops/pipelines/index)
 
@@ -419,9 +419,9 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
   Vedere:
 
-- [Diagrammi casi d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)
+- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)
 
-- [Diagrammi casi d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)
+- [Diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)
 
 #### <a name="drawing-a-use-case-diagram"></a>Creazione di un diagramma caso d'uso
  Le caratteristiche principali di un diagramma caso di utilizzo sono le seguenti:
@@ -440,9 +440,9 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
   Vedere:
 
-- [Diagrammi casi d'uso UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)
+- [Diagrammi caso di utilizzo UML: riferimento](../modeling/uml-use-case-diagrams-reference.md)
 
-- [Diagrammi casi d'uso UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)
+- [Diagrammi caso di utilizzo UML: linee guida](../modeling/uml-use-case-diagrams-guidelines.md)
 
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Riepilogo: vantaggi dei diagrammi caso di utilizzo
  I diagrammi caso di utilizzo consentono di visualizzare:
@@ -665,7 +665,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 |Diagramma livello|L'architettura logica del sistema. Usare la convalida dei livelli per assicurare la coerenza del codice con la progettazione.<br /><br /> Per identificare più facilmente i livelli esistenti o previsti, creare una mappa codice e raggruppare gli elementi correlati. Per creare un diagramma livello, vedere:<br /><br /> -   [creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagrammi livello -   : linee guida](../modeling/layer-diagrams-guidelines.md)|
 |Diagramma dei componenti|I componenti e le relative interfacce e relazioni.<br /><br /> Per identificare più facilmente i componenti, creare una mappa codice e raggruppare gli elementi in base alla funzione che svolgono nel sistema.<br /><br /> Vedere:<br /><br /> -   [diagrammi componenti UML: riferimento](../modeling/uml-component-diagrams-reference.md)<br />-   [diagrammi di componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md)|
 |Diagramma classi (UML)|Le classi e i relativi attributi, operazioni e relazioni.<br /><br /> Per identificare più facilmente questi elementi, creare un diagramma classi UML in cui siano visualizzati.<br /><br /> Vedere:<br /><br /> -   [diagrammi classi UML: riferimento](../modeling/uml-class-diagrams-reference.md)<br />-   [diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|
-|Diagramma classi (basato su codice)|Classi presenti nel codice per un progetto specifico.<br /><br /> Per visualizzare e modificare una classe esistente nel codice, usare Progettazione classi.<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
+|Diagramma classi (basato su codice)|Classi presenti nel codice per un progetto specifico.<br /><br /> Per visualizzare e modificare una classe esistente nel codice, usare Progettazione classi.<br /><br /> Vedere [Procedura: aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
 ### <a name="DescribeSequence"></a>Descrivere le interazioni: diagrammi di sequenza
  I diagrammi di sequenza descrivono una serie di interazioni tra le parti di un sistema. Le parti possono essere di qualsiasi dimensione, da singoli oggetti di un programma a grandi sottosistemi o attori esterni. Le interazioni possono essere di qualsiasi entità e tipo, da singoli messaggi a transazioni estese, e possono essere chiamate di funzione o messaggi del servizio Web.
@@ -697,9 +697,9 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
 - *Messaggi* orizzontali, che rappresentano chiamate ai metodi, messaggi del servizio Web o altre comunicazioni. Le*occorrenze dell'esecuzione* sono rettangoli ombreggiati verticali che vengono visualizzati sulle linee di vita e rappresentano i periodi durante i quali gli oggetti riceventi elaborano le chiamate.
 
-- Durante un messaggio *sincrono* , l'oggetto mittente attende che il controllo < \<return > > come in una normale chiamata di funzione. Durante un messaggio *asincrono* , il mittente può continuare immediatamente.
+- Durante un messaggio *sincrono* , l'oggetto mittente attende che il controllo <\<restituire > > come in una normale chiamata di funzione. Durante un messaggio *asincrono* , il mittente può continuare immediatamente.
 
-- Utilizzare < \<create > Messaggi > per indicare la costruzione di oggetti da parte di altri oggetti. Deve essere il primo messaggio inviato all'oggetto.
+- Utilizzare <\<creare > Messaggi > per indicare la costruzione di oggetti da parte di altri oggetti. Deve essere il primo messaggio inviato all'oggetto.
 
   Vedere:
 
@@ -750,31 +750,31 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
 - Tipi quali classi, interfacce ed enumerazioni:
 
-  - *Classe* : la definizione di oggetti che condividono caratteristiche strutturali o comportamentali specifiche.
+  - *Classe*: la definizione di oggetti che condividono caratteristiche strutturali o comportamentali specifiche.
 
-  - *Interfaccia* : la definizione di una parte del comportamento esternamente visibile di un oggetto.
+  - *Interfaccia*: la definizione di una parte del comportamento esternamente visibile di un oggetto.
 
-  - *Enumerazione* : un classificatore che contiene un elenco di valori letterali.
+  - *Enumerazione*: un classificatore che contiene un elenco di valori letterali.
 
-- *Attributi* : valori di un determinato tipo che descrivono ogni istanza di un *classificatore*. Un classificatore è un nome generale per tipi, componenti, casi d'uso e persino attori.
+- *Attributi*: valori di un determinato tipo che descrivono ogni istanza di un *classificatore*. Un classificatore è un nome generale per tipi, componenti, casi d'uso e persino attori.
 
-- *Operazioni* : metodi o funzioni che possono essere eseguite dalle istanze di un classificatore.
+- *Operazioni*: metodi o funzioni che possono essere eseguite dalle istanze di un classificatore.
 
-- *Associazione* : indica un tipo di relazione tra due classificatori.
+- *Associazione*: indica un tipo di relazione tra due classificatori.
 
-  - *Aggregazione* : un'associazione che indica una proprietà condivisa tra classificatori.
+  - *Aggregazione*: un'associazione che indica una proprietà condivisa tra classificatori.
 
-  - *Composizione* : un'associazione che indica una relazione di una parte con il tutto tra classificatori.
+  - *Composizione*: un'associazione che indica una relazione di una parte con il tutto tra classificatori.
 
     Per mostrare aggregazioni o composizioni, impostare la proprietà **Aggregazione** su un'associazione. **Condiviso** mostra le aggregazioni e **Composito** mostra le composizioni
 
-- *Dipendenza* : indica che la modifica della definizione di un classificatore potrebbe comportare la modifica della definizione di un altro classificatore.
+- *Dipendenza*: indica che la modifica della definizione di un classificatore potrebbe comportare la modifica della definizione di un altro classificatore.
 
-- *Generalizzazione* : indica che uno specifico classificatore eredita parte della definizione da un classificatore generale. *Realizzazione* : indica che una classe implementa le operazioni e gli attributi offerti da un'interfaccia.
+- *Generalizzazione*: indica che uno specifico classificatore eredita parte della definizione da un classificatore generale. *Realizzazione*: indica che una classe implementa le operazioni e gli attributi offerti da un'interfaccia.
 
-   Per creare le relazioni, usare lo strumento **Ereditarietà** . In alternativa, una realizzazione può essere rappresentata come *simbolo*.
+   Per creare le relazioni, usare lo strumento **Ereditarietà**. In alternativa, una realizzazione può essere rappresentata come *simbolo*.
 
-- *Pacchetti* : gruppi di classificatori, associazioni, linee di vita, componenti e altri pacchetti. *Importazione* : relazioni indicanti che un pacchetto include tutte le definizioni di un altro pacchetto.
+- *Pacchetti*: gruppi di classificatori, associazioni, linee di vita, componenti e altri pacchetti. *Importazione*: relazioni indicanti che un pacchetto include tutte le definizioni di un altro pacchetto.
 
   Come punto di partenza per esplorare e discutere le classi esistenti, è possibile usare Progettazione classi per creare diagrammi classi dal codice.
 
@@ -784,7 +784,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
 - [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)
 
-- [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
+- [Procedura: Aggiungere diagrammi classi ai progetti (Creazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Riepilogo: vantaggi dei diagrammi classi
  I diagrammi classi consentono di definire:
@@ -834,9 +834,9 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 #### <a name="drawing-a-layer-diagram"></a>Creazione di un diagramma livello
  Le caratteristiche principali di un diagramma livello sono le seguenti:
 
-- *Livelli* : descrivono gruppi logici di elementi.
+- *Livelli*: descrivono gruppi logici di elementi.
 
-- *Collegamento* : un'associazione tra un livello e un elemento.
+- *Collegamento*: un'associazione tra un livello e un elemento.
 
    Per creare livelli dagli elementi, trascinare gli elementi da Esplora soluzioni, da mappe codice, da Visualizzazione classi o da Visualizzatore oggetti. Per disegnare nuovi livelli e collegarli agli elementi, usare la casella degli strumenti o fare clic con il pulsante destro del mouse sulla superficie del diagramma per creare i livelli, quindi trascinare gli elementi su tali livelli.
 
@@ -850,7 +850,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
     Per visualizzare gli elementi collegati a un livello, fare clic con il pulsante destro del mouse su un livello, quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.
 
-- *Dipendenza* : indica che un livello può usare le funzionalità di un altro livello, ma non viceversa. *Dipendenza bidirezionale* : indica che un livello può usare le funzionalità di un altro livello e viceversa.
+- *Dipendenza*: indica che un livello può usare le funzionalità di un altro livello, ma non viceversa. *Dipendenza bidirezionale* : indica che un livello può usare le funzionalità di un altro livello e viceversa.
 
    Per visualizzare le dipendenze esistenti nel diagramma livello, fare clic con il pulsante destro del mouse sulla superficie del diagramma e scegliere **Genera dipendenze**. Per descrivere le dipendenze previste, disegnarne altre.
 
@@ -880,9 +880,9 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Categoria**|**Links**|
+|**Category**|**Links**|
 |------------------|---------------|
-|**Forum**|-   [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Vedere anche
  [Visualizzare il codice](../modeling/visualize-code.md) [creare modelli per l'app](../modeling/create-models-for-your-app.md) [usare i modelli nel processo di sviluppo usare i](../modeling/use-models-in-your-development-process.md) [modelli nello sviluppo agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)

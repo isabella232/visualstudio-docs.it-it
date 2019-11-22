@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669679"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295513"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ namespace Company.MusicLib
 ```
 
 ## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Uso di eventi per apportare modifiche annullabili nell'archivio
- Gli eventi di archiviazione non vengono in genere usati per la propagazione delle modifiche all'interno dell'archivio, perché il gestore eventi viene eseguito dopo il commit della transazione. Usare invece una regola di archiviazione. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+ Gli eventi di archiviazione non vengono in genere usati per la propagazione delle modifiche all'interno dell'archivio, perché il gestore eventi viene eseguito dopo il commit della transazione. Usare invece una regola di archiviazione. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
  Tuttavia, è possibile usare un gestore eventi per eseguire ulteriori aggiornamenti all'archivio se si vuole che l'utente sia in grado di annullare gli aggiornamenti aggiuntivi separatamente dall'evento originale. Si supponga, ad esempio, che i caratteri minuscoli siano la convenzione usuale per i titoli degli album. È possibile scrivere un gestore eventi di archiviazione che corregge il titolo in lettere minuscole dopo che l'utente lo ha digitato in lettere maiuscole. Tuttavia, l'utente può usare il comando Annulla per annullare la correzione, ripristinando i caratteri maiuscoli. Una seconda operazione di annullamento comporta la rimozione della modifica dell'utente.
 
@@ -190,4 +190,4 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionRolledBack||
 
 ## <a name="see-also"></a>Vedere anche
- [Risposta alle modifiche e propagazione](../modeling/responding-to-and-propagating-changes.md) del [codice di esempio: diagrammi di circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Risposta alle modifiche e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md)

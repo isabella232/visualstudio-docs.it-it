@@ -12,21 +12,21 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a821899eb660fb8448b541f9c1be082351dacc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662589"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300871"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare il **taglio** in modo che escluda le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. È possibile, ad esempio, modificare **Taglia** in modo che escluda le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
  In sintesi, per modificare un comando:
 
-1. [Individuare i comandi che è possibile modificare](#what).
+1. [Trovare i comandi modificabili](#what).
 
 2. [Creare una dichiarazione parziale della classe del set di comandi appropriata](#extend).
 
@@ -67,7 +67,7 @@ ms.locfileid: "72662589"
 
 2. In **DslPackage**creare una cartella denominata **codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs`.
 
-3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Esempio:
+3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Di seguito è riportato un esempio:
 
     ```
     using System;
@@ -138,17 +138,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection` La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
-- `this.IsDiagramSelected()`  -  `true` se l'utente ha fatto clic su una parte vuota del diagramma.
+- `this.IsDiagramSelected()` - `true` se l'utente ha fatto clic su una parte vuota del diagramma.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - l'utente non ha selezionato più forme
+- `this.IsSingleSelection()`-l'utente non ha selezionato più forme
 
-- `this.SingleSelection` - la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse.
+- `this.SingleSelection`: la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse
 
-- `shape.ModelElement as MyLanguageElement` - l'elemento del modello rappresentato da una forma.
+- `shape.ModelElement as MyLanguageElement`: elemento del modello rappresentato da una forma.
 
   Per ulteriori informazioni su come passare da un elemento all'altro e su come creare oggetti e collegamenti, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Vedere anche
- <xref:System.ComponentModel.Design.MenuCommand> [scrivere codice per personalizzare una Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md) [procedura: aggiungere un comando al menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [procedura dettagliata: ottenere informazioni da un collegamento selezionato](../misc/walkthrough-getting-information-from-a-selected-link.md) [come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio Tabella comandi (. Vsct) file](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct XML Schema Reference](../extensibility/vsct-xml-schema-reference.md) [VMSDK-Sample Diagrams Sample. ](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)Codice di esempio per la personalizzazione DSL completa [: diagrammi di circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ <xref:System.ComponentModel.Design.MenuCommand> [scrivere codice per personalizzare una Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md) [procedura: aggiungere un comando al menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [procedura dettagliata: recupero di informazioni da un collegamento selezionato](../misc/walkthrough-getting-information-from-a-selected-link.md) [come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio tabella dei comandi (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct XML Schema Reference](../extensibility/vsct-xml-schema-reference.md)

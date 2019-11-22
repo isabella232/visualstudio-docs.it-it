@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 124fc1027e3b5eba537341c87ae2a80ce5c325bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666061"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300907"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo argomento vengono illustrati i concetti di base per la definizione e l'utilizzo di un linguaggio specifico di dominio (DSL) creato con l'SDK di modellazione per Visual Studio.
 
- Se non si ha familiarità con DSLs, è consigliabile usare il **Lab strumenti DSL**, che è possibile trovare in questo sito: [VISUALIZATON e l'SDK di modellazione](http://go.microsoft.com/fwlink/?LinkID=186128)
+ Se non si ha familiarità con DSLs, è consigliabile usare il **Lab strumenti DSL**, che è possibile trovare in questo sito: [VISUALIZATON e l'SDK di modellazione](https://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Che cosa è possibile fare con un Domain-Specific Language?
  Un linguaggio specifico di dominio è una notazione, in genere grafica, progettata per essere usata per uno scopo specifico. Al contrario, i linguaggi come UML sono di uso generale. In un linguaggio DSL è possibile definire i tipi di elemento del modello e le relative relazioni e il modo in cui vengono presentati sullo schermo.
@@ -41,8 +41,8 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
 |SDK di modellazione per Visual Studio|[Scarica MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Creazione di una soluzione DSL
@@ -72,7 +72,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
    - Scegliere un'estensione non associata ad alcuna applicazione nel computer o in qualsiasi computer in cui si desidera installare il linguaggio DSL. Ad esempio, **docx** e **htm** sarebbero estensioni di file non accettabili.
 
-   - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**.
+   - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic su **Start**, **Tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **Strumenti** e quindi **Reimposta l'istanza sperimentale di Microsoft Visual Studio 2010**.
 
 7. Esaminare le altre pagine e quindi fare clic su **fine**.
 
@@ -83,7 +83,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
    L'interfaccia utente ora è simile a quella nell'immagine seguente.
 
-   ![finestra di progettazione DSL](../modeling/media/dsl-designer.png "dsl_designer")
+   ![finestra di progettazione dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
    Questa soluzione definisce un linguaggio specifico di dominio. Per ulteriori informazioni, vedere [Panoramica dell'interfaccia utente di strumenti Domain-Specific Language](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -101,7 +101,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 #### <a name="to-experiment-with-the-dsl"></a>Per sperimentare il linguaggio DSL
 
-1. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti Esplora soluzioni. Questa operazione Rigenera la maggior parte del codice sorgente da DslDefinition. DSL.
+1. Sulla barra degli strumenti di Esplora soluzioni fare clic su **Trasforma tutti i modelli**. Questa operazione Rigenera la maggior parte del codice sorgente da DslDefinition. DSL.
 
    > [!NOTE]
    > Quando si modifica DslDefinition. DSL, è necessario fare clic su **trasforma tutti i modelli** prima di ricompilare la soluzione. È possibile automatizzare questo passaggio. Per ulteriori informazioni, vedere [come automatizzare Transform All Templates](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
@@ -112,7 +112,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
     Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . L'istanza sperimentale prende le impostazioni da un sottoalbero separato del registro di sistema, in cui le estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono registrate a scopo di debug. Le istanze normali di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non hanno accesso alle estensioni registrate.
 
-3. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire il file di modello denominato **test** da **Esplora soluzioni**.
+3. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire il file di modello denominato **test** da **Esplora soluzioni**.
 
     \- oppure -
 
@@ -141,7 +141,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
  È possibile visualizzare un modello come albero nella visualizzazione di **esplorazione** durante la modifica di un modello. Quando si aggiungono forme al diagramma, gli elementi del modello vengono visualizzati anche nella finestra di esplorazione. La finestra di esplorazione può essere utilizzata anche se non è presente alcun diagramma.
 
- Se la finestra di esplorazione non è visibile nell'istanza di debug di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], scegliere **altre finestre**dal menu **Visualizza** , quindi fare clic su *\<Your Language >* **Explorer**.
+ Se Esplora risorse non è visibile nell'istanza di debug di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], scegliere **altre finestre**dal menu **Visualizza** , quindi fare clic su *\<Language >* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>API del linguaggio DSL
  Il linguaggio DSL genera un'API che consente di leggere e aggiornare i modelli che sono istanze del linguaggio DSL. Un'applicazione dell'API consiste nel generare file di testo da un modello. Per altre informazioni, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
@@ -158,7 +158,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Per rigenerare i file di testo dopo aver modificato il file di modello
 
-1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] salvare il file del modello.
+1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]salvare il file del modello.
 
 2. Verificare che il parametro del nome file in ogni file con estensione tt faccia riferimento al file di modello usato per gli esperimenti. Salvare il file con estensione tt.
 
@@ -200,7 +200,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
     2. Aprire il Finestra Proprietà e posizionarlo in modo che sia possibile visualizzare le proprietà e la finestra di esplorazione DSL nello stesso momento.
 
-    3. In DSL Explorer espandere **Editor**, **schede della casella degli strumenti**, *\<your DSL >* , quindi **strumenti**.
+    3. In DSL Explorer espandere **Editor**, **schede della casella degli strumenti**, *\<il > DSL*, quindi **strumenti**.
 
     4. Fare clic su **ExampleElement**. Si tratta dell'elemento della casella degli strumenti utilizzato per creare gli elementi.
 
@@ -218,7 +218,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
     3. Premere F5. Attendere fino a quando non viene visualizzata l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-4. Nella soluzione di debug nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire un file del modello di test. Trascinare gli elementi nella casella degli strumenti. Si noti che le didascalie degli strumenti e i nomi dei tipi in DSL Explorer sono stati modificati.
+4. Nella soluzione di debug nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire un file del modello di test. Trascinare gli elementi nella casella degli strumenti. Si noti che le didascalie degli strumenti e i nomi dei tipi in DSL Explorer sono stati modificati.
 
 5. Salvare il file del modello.
 
@@ -324,7 +324,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
     1. In **DSL Explorer**espandere **Editor** e quindi **schede della casella degli strumenti**.
 
-    2. Fare clic con il pulsante destro del mouse su *\<your > DSL* , quindi scegliere **Aggiungi nuovo elemento strumento**.
+    2. Fare clic con il pulsante destro del mouse su *\<> DSL* , quindi scegliere **Aggiungi nuovo elemento strumento**.
 
     3. Impostare la proprietà **Name** del nuovo strumento e impostare la relativa proprietà **Class** su Town.
 
@@ -332,7 +332,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 7. Creazione di uno strumento di connessione per la creazione di un collegamento tra città e persone.
 
-    1. Fare clic con il pulsante destro del mouse su *\<your > DSL* , quindi scegliere **Aggiungi nuovo strumento connettore**.
+    1. Fare clic con il pulsante destro del mouse su *\<> DSL* , quindi scegliere **Aggiungi nuovo strumento connettore**.
 
     2. Impostare la proprietà Name del nuovo strumento.
 
@@ -342,7 +342,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 8. Salvare la definizione DSL, fare clic su **trasforma tutti i modelli**, quindi premere **F5**.
 
-9. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire un file del modello di test. Usare i nuovi strumenti per creare città e collegamenti tra città e persone. Si noti che è possibile creare collegamenti solo tra i tipi di elemento corretti.
+9. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire un file del modello di test. Usare i nuovi strumenti per creare città e collegamenti tra città e persone. Si noti che è possibile creare collegamenti solo tra i tipi di elemento corretti.
 
 10. Creare codice che elenca la città in cui risiede ogni persona. I modelli di testo sono uno dei punti in cui è possibile eseguire tale codice. Ad esempio, è possibile modificare il file Sample.tt esistente nella soluzione di debug in modo che contenga il codice seguente:
 
@@ -394,9 +394,9 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Per reimpostare l'istanza sperimentale di Visual Studio
 
-1. Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**.
+1. Fare clic su **Start**, **Tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **Strumenti** e quindi **Reimposta l'istanza sperimentale di Microsoft Visual Studio 2010**.
 
 2. Ricompilare eventuali DSLs sperimentali o altre estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sperimentali che si desidera comunque utilizzare.
 
 ## <a name="see-also"></a>Vedere anche
- [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md) [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton e l'SDK di modellazione](http://go.microsoft.com/fwlink/?LinkID=186128)
+ [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md) [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [Visualizaton e l'SDK di modellazione](https://go.microsoft.com/fwlink/?LinkID=186128)

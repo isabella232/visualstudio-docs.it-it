@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c44b949daabf587dbca5d8a5d1d932afca2c1f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602458"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299578"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procedura dettagliata: visualizzazione dei dati correlati in un'applicazione WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
@@ -88,7 +88,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 3. Nella pagina **scegliere un modello di database** fare clic su **Entity Data Model**e quindi su **Avanti**.
 
-4. Nella pagina **Scegli contenuto Model** fare clic su **genera da database**, quindi fare clic su **Avanti**.
+4. Nella pagina **Scegli contenuto Model** fare clic su **Genera da database**, quindi su **Avanti**.
 
 5. Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -96,7 +96,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
       oppure
 
-   - Fare clic su **nuova connessione** e creare una connessione al database AdventureWorksLT.
+   - Fare clic su **Nuova connessione** e creare una connessione al database AdventureWorksLT.
 
      Assicurarsi che l'opzione **Salva le impostazioni di connessione dell'entità in app. config come** sia selezionata, quindi fare clic su **Avanti**.
 
@@ -115,13 +115,13 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Per creare controlli associati a dati che visualizzano i record degli ordini
 
-1. In **Esplora soluzioni**fare doppio clic su MainWindow. XAML.
+1. In **Esplora soluzioni** fare doppio clic su MainWindow.xaml.
 
     La finestra verrà aperta in WPF Designer.
 
 2. Modificare il codice XAML in modo che le proprietà **Height** e **Width** siano impostate su 800
 
-3. Nella finestra **origini dati** fare clic sul menu a discesa del nodo **SalesOrderHeaders** e selezionare **Details**.
+3. Nella finestra **Origini dati** fare clic sul menu a discesa del nodo **SalesOrderHeaders** e selezionare **Dettagli**.
 
 4. Espandere il nodo **SalesOrderHeaders**.
 
@@ -139,7 +139,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **CreditCardApprovalCode**
 
-   - **Subtotale**
+   - **SubTotal**
 
    - **TaxAmt**
 

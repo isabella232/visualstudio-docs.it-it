@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705779"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295911"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,27 +25,27 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 
  È possibile che vengano richieste versioni specifiche di Visual Studio o estensioni specifiche di Visual Studio per sviluppare determinati tipi di applicazioni e servizi con HTML e JavaScript. L'elenco seguente include i collegamenti ad altre informazioni.
 
-- Per creare app multipiattaforma con Apache Cordova, [scaricare Strumenti di Visual Studio per Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
+- Per creare app multipiattaforma con Apache Cordova, [scaricare Strumenti di Visual Studio per Apache Cordova](https://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Per creare app di [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) e app universali, che supportano entrambe le piattaforme, [scaricare gli strumenti](https://developer.microsoft.com/windows/downloads).
+- Per creare app di [Windows Store](https://developer.microsoft.com/), [Windows Phone](https://developer.microsoft.com/) e app universali, che supportano entrambe le piattaforme, [scaricare gli strumenti](https://developer.microsoft.com/windows/downloads).
 
 - Per creare servizi basati sul cloud, visitare il [sito Web di Microsoft Azure](https://azure.microsoft.com/documentation/).
 
-- Per creare siti Web e app Web, [visitare il sito ASP.NET](http://www.asp.net/get-started/websites).
+- Per creare siti Web e app Web, [visitare il sito ASP.NET](https://dotnet.microsoft.com/apps/aspnet/web-apps).
 
   > [!NOTE]
   > È possibile creare un sito Web ASP.NET vuoto e usarlo per la programmazione HTML, CSS e JavaScript. Il file Webconfig fornito da ASP.NET consente il debug in Visual Studio (o è possibile usare gli strumenti F12 quando si esegue l'app).
 
-  L'editor JavaScript in Visual Studio fornisce il supporto IntelliSense. Per altre informazioni, vedere [IntelliSense per JavaScript](../ide/javascript-intellisense.md).
+  L'editor JavaScript in Visual Studio fornisce il supporto IntelliSense. Per altre informazioni, vedere [JavaScript IntelliSense](../ide/javascript-intellisense.md).
 
 ## <a name="whats-new-in-javascript"></a>Novità in JavaScript
  Nuove funzionalità per JavaScript sono elencate nella tabella seguente.
 
-|Funzionalità|Descrizione|
+|Funzionalità|description|
 |-------------|-----------------|
 |Classi|La nuova sintassi supporta la dichiarazione delle [classi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Suggerimenti|I [suggerimenti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) consentono una codifica asincrona più semplice e chiara. I costruttori di suggerimenti sono supportati, con i metodi di utilità `all` e `race`.|
-|Iterators|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Nota:**  I generatori non sono ancora supportati.|
+|Iteratori|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Nota:** i generatori non sono ancora supportati.|
 |Funzioni freccia|La funzione freccia (=>) fornisce una sintassi abbreviata per la parola chiave `function` che offre un'associazione `this` lessicale.|
 |Nuovi metodi per gli oggetti predefiniti|Gli oggetti predefiniti [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) e [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) includono diverse nuove proprietà e funzioni di utilità per la modifica e il controllo dei dati.|
 |Miglioramenti dei valori letterali di oggetto|Gli oggetti ora supportano proprietà calcolate, definizioni di metodo concise e sintassi abbreviata per le proprietà il cui valore viene inizializzato su una variabile con lo stesso nome. Per altre informazioni, vedere [Creazione di oggetti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

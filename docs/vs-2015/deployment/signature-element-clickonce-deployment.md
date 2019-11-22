@@ -1,5 +1,5 @@
 ---
-title: '&lt;Firma&gt; elemento (distribuzione ClickOnce) | Microsoft Docs'
+title: Elemento&gt; della firma &lt;(distribuzione ClickOnce) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df18b63ff306525cba74ef0932c97edd64eee797
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db696546fdd64199753054b38fa2ac554f6a774f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68198111"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295070"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (distribuzione ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>Elemento&gt; della firma &lt;(distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.  
@@ -36,13 +36,13 @@ Contiene le informazioni necessarie per apporre una firma digitale al manifesto 
 </Signature>  
 ```  
   
-## <a name="remarks"></a>Note  
- Firma un manifesto di distribuzione utilizzando una firma protetta è facoltativa ma consigliato. Per altre informazioni sulla firma XML i file di vedere il World Wide Web Consortium raccomandazione "XML-Signature Syntax and Processing," descritta in [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+## <a name="remarks"></a>Osservazioni  
+ La firma di un manifesto di distribuzione con una firma della busta è facoltativa, ma consigliata. Per ulteriori informazioni sulla firma dei file XML, vedere la World Wide Web Consortium raccomandazione "sintassi e elaborazione della firma XML" descritta in [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
   
- Se si desidera firmare il manifesto, è necessario specificare l'hash per tutti i file. Impossibile firmare un manifesto con i file che non è stato eseguito l'hashing, perché gli utenti non è possibile verificare il contenuto del file senza hash.  
+ Se si desidera firmare il manifesto, è necessario fornire gli hash per tutti i file. Un manifesto con file non con hash non può essere firmato perché gli utenti non possono verificare il contenuto dei file senza hash.  
   
 ## <a name="example"></a>Esempio  
- L'esempio di codice seguente illustra un `Signature` elemento in un manifesto di distribuzione usato in un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione.  
+ Nell'esempio di codice seguente viene illustrato un elemento `Signature` in un manifesto di distribuzione usato in una distribuzione di [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  

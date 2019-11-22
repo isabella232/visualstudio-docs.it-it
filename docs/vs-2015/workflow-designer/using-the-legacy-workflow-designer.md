@@ -11,28 +11,28 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c09c4588bb1fcd0aa7487a6896d2fc286253e198
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606783"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302791"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Utilizzo di Progettazione flussi di lavoro legacy
 La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)] può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- È possibile accedervi selezionando l'opzione **.NET Framework 3,0** o l'opzione **.NET Framework 3,5** nell'elenco a discesa nella parte superiore della finestra **nuovo progetto** . L'opzione predefinita in [!INCLUDE[vs2010](../includes/vs2010-md.md)] è **.NET Framework 4** utilizzata per creare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] destinate al [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
+ Per accedere alla finestra di progettazione legacy, selezionare l'opzione **.NET Framework 3.0** o l'opzione **.NET Framework 3.5** nell'elenco a discesa nella parte superiore della finestra **Nuovo progetto**. L'opzione predefinita in [!INCLUDE[vs2010](../includes/vs2010-md.md)] è **.NET Framework 4** e viene usata per creare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] che vengono destinate a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
 
- [!INCLUDE[wfd2](../includes/wfd2-md.md)] consente di creare graficamente le applicazioni di [!INCLUDE[wf](../includes/wf-md.md)] usando dell'interfaccia utente comune di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le applicazioni [!INCLUDE[wf](../includes/wf-md.md)]sono composte da passaggi del processo del flusso di lavoro chiamati attività. Per creare un flusso di lavoro, comporre le attività nell'area di progettazione trascinando i rispettivi ActivityDesigner dalla **casella degli strumenti** nell'area di progettazione.
+ [!INCLUDE[wfd2](../includes/wfd2-md.md)] consente di creare graficamente le applicazioni di [!INCLUDE[wf](../includes/wf-md.md)] usando dell'interfaccia utente comune di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le applicazioni [!INCLUDE[wf](../includes/wf-md.md)]sono composte da passaggi del processo del flusso di lavoro chiamati attività. Per creare un flusso di lavoro, creare le attività nell'area di progettazione trascinando i rispettivi ActivityDesigner dalla **Casella degli strumenti** nell'area di progettazione.
 
  Nella tabella seguente sono elencate le funzionalità principali di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per Windows Workflow Foundation.
 
-|Funzionalità|Descrizione|
+|Funzionalità|description|
 |-------------|-----------------|
-|Attività di trascinamento della selezione|Trascinare le attività dalla **casella degli strumenti** nell'area di progettazione per creare un flusso di lavoro.|
+|Attività di trascinamento della selezione|Trascinare le attività dalla **Casella degli strumenti** nella superficie dell'area di progettazione per creare un flusso di lavoro.|
 |Visualizzatore proprietà|La finestra **Proprietà** standard in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene utilizzata per configurare le proprietà di un'attività.|
-|Zoom|L'icona del **livello di zoom** del binocolo si trova sotto la barra di scorrimento verticale sul lato destro dell'area di progettazione. Fare clic sui binocoli e selezionare una percentuale di zoom per ingrandire o ridurre il grafico del flusso di lavoro. Per eseguire lo zoom avanti e indietro, è anche possibile usare le opzioni del cursore della lente di ingrandimento dell'icona **Panoramica** .|
-|Dettaglio|L'icona a forma di **Pan** , un cerchio che contiene quattro frecce incrociate che puntano in quattro direzioni, si trova sotto la barra di scorrimento verticale sul lato destro dell'area di progettazione immediatamente sotto l'icona dello zoom del binocolo. Facendo clic sull'icona di panoramica, le opzioni del cursore seguenti verranno offerte da un menu a comparsa:<br /><br /> -Il cursore **zoom avanti** lente di ingrandimento consente di eseguire lo zoom avanti facendo clic sull'area di progettazione.<br />-Il cursore **Zoom indietro** lente di ingrandimento consente di eseguire lo zoom indietro facendo clic sull'area di progettazione.<br />-Il cursore a forma di mano dello **strumento di navigazione** consente di "selezionare" e spostare la visualizzazione di un flusso di lavoro nell'area di progettazione.<br />-Il cursore freccia **predefinito** consente di tornare dagli altri cursori al cursore freccia predefinito.|
+|Zoom|L'icona **Livello di zoom** a forma di binocolo si trova sotto la barra di scorrimento verticale sul lato destro dell'area di progettazione. Fare clic sui binocoli e selezionare una percentuale di zoom per ingrandire o ridurre il grafico del flusso di lavoro. Per eseguire lo zoom avanti e indietro, è anche possibile usare le opzioni del cursore della lente di ingrandimento dell'icona **Panoramica** .|
+|Dettaglio|L'icona **Panoramica**, un cerchio contenente quattro frecce incrociate che puntano in quattro direzioni, si trova sotto la barra di scorrimento verticale sul lato destro dell'area di progettazione esattamente sotto l'icona dello zoom a forma di binocolo. Facendo clic sull'icona di panoramica, le opzioni del cursore seguenti verranno offerte da un menu a comparsa:<br /><br /> -Il cursore **zoom avanti** lente di ingrandimento consente di eseguire lo zoom avanti facendo clic sull'area di progettazione.<br />-Il cursore **Zoom indietro** lente di ingrandimento consente di eseguire lo zoom indietro facendo clic sull'area di progettazione.<br />-Il cursore a forma di mano dello **strumento di navigazione** consente di "selezionare" e spostare la visualizzazione di un flusso di lavoro nell'area di progettazione.<br />-Il cursore freccia **predefinito** consente di tornare dagli altri cursori al cursore freccia predefinito.|
 |Scorrimento automatico|Se si ha un grande flusso di lavoro, è necessario posizionare un'attività oltre la visualizzazione visibile dell'area di progettazione. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di trascinare un'attività verso il bordo dell'area di progettazione nel punto più vicino a dove si desidera inserire l'attività. La visualizzazione dell'area di progettazione scorre automaticamente in quella direzione.|
 |Smart tag|Le attività la cui configurazione non è completa o valida sono contrassegnate da un'icona di punto esclamativo. È possibile fare clic sull'icona e visualizzare un elenco a discesa di richieste di configurazione esistenti sull'attività. È quindi possibile usare la finestra **Proprietà** per configurare l'attività in modo appropriato. Quando tutte le proprietà sono valide per l'attività, l'icona di punto esclamativo scompare.|
 
@@ -54,4 +54,4 @@ La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](
  [Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Sviluppo di flussi di lavoro](http://go.microsoft.com/fwlink?LinkID=65010)
+ [Sviluppo di flussi di lavoro](https://go.microsoft.com/fwlink?LinkID=65010)

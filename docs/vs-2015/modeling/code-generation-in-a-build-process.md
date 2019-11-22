@@ -12,20 +12,20 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 81c4160ca6d03d55d631cd4dad8c3bce01fa9722
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667871"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297936"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generazione di codice in un processo di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 La trasformazione del testo può essere richiamata come parte del processo di compilazione di una soluzione di Visual Studio. Esistono attività di compilazione che sono specializzate nella trasformazione del testo. Le attività di compilazione di T4 eseguono modelli di testo della fase di progettazione e compilano anche modelli di testo (pre-elaborati) della fase di esecuzione.
 
-Esistono alcune differenze in ciò che le attività di compilazione possono fare, a seconda del motore di compilazione utilizzato. Quando si compila la soluzione in Visual Studio, un modello di testo può accedere all'API di Visual Studio (EnvDTE) se è impostato l'attributo [hostspecific = "true"](../modeling/t4-template-directive.md) . Ma ciò non accade quando si compila la soluzione da riga di comando o quando si avvia una compilazione per server tramite Visual Studio. In questi casi, la compilazione viene eseguita da MSBuild e viene utilizzato un diverso host T4.
+Esistono alcune differenze in ciò che le attività di compilazione possono fare, a seconda del motore di compilazione utilizzato. Quando si compila la soluzione in Visual Studio, un modello di testo può accedere alle API di Visual Studio (EnvDTE) se è impostato l'attributo [hostspecific="true"](../modeling/t4-template-directive.md). Ma ciò non accade quando si compila la soluzione da riga di comando o quando si avvia una compilazione per server tramite Visual Studio. In questi casi, la compilazione viene eseguita da MSBuild e viene utilizzato un diverso host T4.
 
-Ciò significa che non è possibile accedere a elementi quali i nomi dei file di progetto allo stesso modo di quando si compila un modello di testo in MSBuild. Tuttavia, è possibile [passare informazioni sull'ambiente in modelli di testo e processori di direttiva utilizzando parametri di compilazione](#parameters).
+Ciò significa che non è possibile accedere a elementi quali i nomi dei file di progetto allo stesso modo di quando si compila un modello di testo in MSBuild. Tuttavia è possibile [passare delle informazioni sull'ambiente ai modelli di testo e ai processori di direttive utilizzando parametri di compilazione](#parameters).
 
 ## <a name="buildserver"></a>Configurare i computer
 
@@ -57,9 +57,9 @@ Se [il server di compilazione](https://msdn.microsoft.com/library/788443c3-0547-
 
 Sarà necessario modificare il file di progetto per configurare alcune funzionalità di MSBuild.
 
-In Esplora soluzioni scegliere **Scarica** dal menu di scelta rapida del progetto. Ciò consente di modificare il file con estensione csproj o vbproj nell'editor XML.
+In esplora soluzioni, scegliere **Scarica** dal menu contestuale del progetto. Ciò consente di modificare il file con estensione csproj o vbproj nell'editor XML.
 
-Al termine della modifica, scegliere **ricarica**.
+Una volta terminato di modificare, scegliere **Ricarica**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importare le destinazioni della trasformazione del testo
 
@@ -226,7 +226,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>
 ```
 
-In un modello di testo, impostare `hostspecific` nella direttiva del modello. Usare la direttiva [Parameter](../modeling/t4-parameter-directive.md) per ottenere i valori:
+In un modello di testo, impostare `hostspecific` nella direttiva del modello. Usare la direttiva [parametro](../modeling/t4-parameter-directive.md) per ottenere i valori:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -271,7 +271,7 @@ Se si aggiorna un file incluso oppure un altro file letto dal modello, Visual St
 
 **Quali altre opzioni sono disponibili per trasformare i modelli di testo?**
 
-- L' [utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) può essere usata negli script di comando. Nella maggior parte dei casi è più facile utilizzare MSBuild.
+- L'[utilità di TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) può essere utilizzata negli script di comando. Nella maggior parte dei casi è più facile utilizzare MSBuild.
 
 - [Richiamo della trasformazione del testo in un'estensione VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
@@ -284,5 +284,5 @@ Se si aggiorna un file incluso oppure un altro file letto dal modello, Visual St
 Esiste materiale sussidiario nel modello MSbuild di T4, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)
-- [SDK di visualizzazione e modellazione di Visual Studio](http://go.microsoft.com/fwlink/?LinkID=185579)
+- [SDK di visualizzazione e modellazione di Visual Studio](https://go.microsoft.com/fwlink/?LinkID=185579)
 - [Oleg Sych: informazioni su T4: integrazione di MSBuild](https://github.com/olegsych/T4Toolbox)

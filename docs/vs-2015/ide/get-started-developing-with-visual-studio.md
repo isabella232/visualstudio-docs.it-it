@@ -11,25 +11,25 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e0dbc2c4a4402cc60febaaf158a7a4578bc78115
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7ad3ebd395c813877c444b5531255f56690c98b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655882"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292063"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Introduzione allo sviluppo con Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il prodotto, queste pagine sono utili per iniziare a scrivere codice.
+Visual Studio Dopo aver [scaricato](https://visualstudio.microsoft.com/vs/community/) il prodotto, queste pagine sono utili per iniziare a scrivere codice.
 
 - **[Creare app Web](https://www.visualstudio.com/features/modern-web-tooling-vs):** strumenti per creare e distribuire applicazioni Web moderne.
 
-     [Do a tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://docs.asp.net/) (Esplorare i documenti) &#124;                                   [Watch a video](http://www.asp.net/vnext) (Guardare un video)
+     [Do a tutorial](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://docs.asp.net/) (Esplorare i documenti) &#124;                                   [Watch a video](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) (Guardare un video)
 
-- **[Creare app per dispositivi mobili multipiattaforma in HTML/JavaScript (Apache Cordova)](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)** : Apache Cordova è un ambiente multipiattaforma open source basato su HTML/CSS/JavaScript.  Il codice JavaScript viene eseguito in un wrapper che è destinato a una piattaforma specifica e consente l'accesso a tutte le funzionalità hardware del dispositivo. È possibile sviluppare app per Apple Store, lo store Android e Windows Store.
+- **[Creare app per dispositivi mobili multipiattaforma in HTML/JavaScript (Apache Cordova)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017)** : Apache Cordova è un ambiente multipiattaforma open source basato su HTML/CSS/JavaScript.  Il codice JavaScript viene eseguito in un wrapper che è destinato a una piattaforma specifica e consente l'accesso a tutte le funzionalità hardware del dispositivo. È possibile sviluppare app per Apple Store, lo store Android e Windows Store.
 
-     [Load a sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) (Caricare un esempio) &#124;   [Do a tutorial](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) (Eseguire un'esercitazione) &#124;                               [Browse the docs](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (Esplorare i documenti) &#124;                                [Watch a video](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio) (Guardare un video)
+     [Load a sample](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) (Caricare un esempio) &#124;   [Do a tutorial](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (Esplorare i documenti) &#124;                                [Watch a video](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio) (Guardare un video)
 
 - **[Creare le app per dispositivi mobili multipiattaforma in C# o Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)** : iniziare a usare Visual Studio e gli strumenti per Xamarin per creare app per dispositivi mobili per Android, iOS e la piattaforma UWP (Universal Windows Platform) da una codebase condivisa.
 
@@ -45,7 +45,7 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 
 - **[Creare giochi con Unity](../cross-platform/visual-studio-tools-for-unity.md)** : iniziare a creare giochi multipiattaforma usando il framework Unity.
 
-     [Load a sample](http://unity3d.com/learn/resources/downloads) (Caricare un esempio) &#124;                     [Do a tutorial](http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) (Esplorare i documenti) &#124;     [Watch a video](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em) (Guardare un video)
+     [Load a sample](http://unity3d.com/learn/resources/downloads) (Caricare un esempio) &#124;                     [Do a tutorial](https://learn.unity.com/projects) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/library/dn940019\(v=vs.140\).aspx) (Esplorare i documenti) &#124;     [Watch a video](https://www.youtube.com/playlist?list=PLReL099Y5nRfseAg0k1SJOlpqdcsDs8Em) (Guardare un video)
 
 - **[Creare app per la piattaforma UWP](https://dev.windows.com/windows-apps)** : iniziare a creare app per la piattaforma UWP (Universal Windows Platform): Xbox, PC, tablet, Windows Phone, Surface Hub e Internet delle cose.
 
@@ -57,7 +57,7 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 
 - Creare **[applicazioni Office](https://msdn.microsoft.com/library/fp161347.aspx)** : iniziare a creare applicazioni di Office che estendono e personalizzano Word, Excel, Outlook e PowerPoint con i servizi di Office 365.
 
-     [Load a sample](https://code.msdn.microsoft.com/office365/) (Caricare un esempio) &#124;                     [Do a tutorial](http://dev.office.com/getting-started/office365apis) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/office/aa905340.aspx) (Esplorare i documenti) &#124;                                [Watch a video](http://dev.office.com/videos) (Guardare un video)
+     [Load a sample](https://code.msdn.microsoft.com/office365/) (Caricare un esempio) &#124;                     [Do a tutorial](https://developer.microsoft.com/graph) (Eseguire un'esercitazione) &#124;                               [Browse the docs](https://msdn.microsoft.com/office/aa905340.aspx) (Esplorare i documenti) &#124;                                [Watch a video](https://developer.microsoft.com/office/gallery/?filterBy=Videos) (Guardare un video)
 
 - **[Presentazione di Visual Studio Team Services e Team Foundation Server](https://www.visualstudio.com/products/visual-studio-team-services-vs)**  Informazioni su Visual Studio Team Services e Team Foundation Server.
 
@@ -65,6 +65,6 @@ Visual Studio Dopo aver [scaricato](http://www.visualstudio.com/community) il pr
 
 |||
 |-|-|
-|[Guida introduttiva a Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Scrittura di codice JavaScript](https://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
-|[Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[Introduction to Functional Programming with F#](https://msdn.microsoft.com/library/vstudio/dd233147.aspx) (Introduzione alla programmazione funzionale con F#)|
+|[Getting Started with Visual C# and Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) (Introduzione a Visual C# e Visual Basic)|[Scrittura di codice JavaScript](https://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|
+|[Visual C++ for Cross-Platform Mobile Development](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) (Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma)|[Introduction to Functional Programming with F#](https://msdn.microsoft.com/library/vstudio/dd233147.aspx) (Introduzione alla programmazione funzionale con F#)|
 |[Introduzione a C++ in Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)|[Introduzione al debug in Visual Studio 2015](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|

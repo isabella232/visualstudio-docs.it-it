@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665721"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297814"
 ---
 # <a name="proxy-authorization-required"></a>Autorizzazione del proxy richiesta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Per correggere l'errore, provare a eseguire uno o più dei passaggi seguenti:
 
 - Riavviare Visual Studio. Verrà visualizzata una finestra di dialogo di autenticazione del proxy. Immettere le credenziali nella finestra di dialogo.
 
-- Se il passaggio precedente non risolve il problema, è possibile che il server proxy usato non richiede le credenziali per gli indirizzi http://go.microsoft.com mentre le richiede per gli indirizzi *.visualStudio.com. Per questi server, è necessario aggiungere gli URL seguenti all'elenco Consenti per sbloccare tutti gli scenari di accesso in Visual Studio:
+- Se il passaggio precedente non risolve il problema, è possibile che il server proxy usato non richiede le credenziali per gli indirizzi https://go.microsoft.com mentre le richiede per gli indirizzi *.visualStudio.com. Per questi server, è necessario aggiungere gli URL seguenti all'elenco Consenti per sbloccare tutti gli scenari di accesso in Visual Studio:
 
   - *.windows.net
 
@@ -37,7 +37,7 @@ Per correggere l'errore, provare a eseguire uno o più dei passaggi seguenti:
 
   - *.live.com
 
-- È possibile rimuovere l'indirizzo http://go.microsoft.com dall'elenco Consenti per visualizzare la finestra di dialogo di autenticazione del proxy per l'indirizzo di http://go.microsoft.com e gli endpoint server al riavvio di Visual Studio.
+- È possibile rimuovere l'indirizzo https://go.microsoft.com dall'elenco Consenti per visualizzare la finestra di dialogo di autenticazione del proxy per l'indirizzo di https://go.microsoft.com e gli endpoint server al riavvio di Visual Studio.
 
 - Se si desidera usare le credenziali predefinite con il proxy, seguire questa procedura:
 
@@ -53,4 +53,4 @@ Per correggere l'errore, provare a eseguire uno o più dei passaggi seguenti:
 
       Inserire l'indirizzo proxy corretto per la rete in `proxyaddress="<http://<yourproxy:port#>`.
 
-- Seguire le istruzioni in [questo post di Blog](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) per aggiungere il codice che consente di usare il proxy.
+- Seguire le istruzioni in [questo post di Blog](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) per aggiungere il codice che consente di usare il proxy.

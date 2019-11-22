@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 70dfaa5671f589c02560a554a6d50611c5364c82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651191"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299420"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
@@ -103,7 +103,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 8. Scegliere **Fine**.
 
-     Visual Studio aggiunge un nuovo file AdventureWorksLTDataSet. xsd al progetto e aggiunge un elemento **AdventureWorksLTDataSet** corrispondente alla finestra **origini dati** . Il file AdventureWorksLTDataSet.xsd definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un oggetto TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
+     Visual Studio aggiunge un nuovo file AdventureWorksLTDataSet.xsd al progetto e un elemento **AdventureWorksLTDataSet** corrispondente alla finestra **Origini dati**. Il file AdventureWorksLTDataSet.xsd definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un oggetto TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
 
 9. Compilare il progetto.
 
@@ -112,11 +112,11 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 #### <a name="to-load-product-rows-that-have-photos"></a>Per caricare le righe di prodotti con foto
 
-1. In **Esplora soluzioni**fare doppio clic sul file AdventureWorksLTDataSet. xsd.
+1. In **Esplora soluzioni** fare doppio clic sul file AdventureWorksLTDataSet.xsd.
 
      Viene aperto Progettazione DataSet.
 
-2. Nella finestra di progettazione fare clic con il pulsante destro del mouse sulla query **Fill, GetData ()** e scegliere **Configura**.
+2. Nella finestra di progettazione fare clic con il pulsante destro del mouse sulla query **Fill,GetData()** e scegliere **Configura**.
 
      Verrà avviata la **Configurazione guidata TableAdapter**.
 
@@ -133,7 +133,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>Per definire l'interfaccia utente della finestra
 
-1. In **Esplora soluzioni**fare doppio clic su MainWindow. XAML.
+1. In **Esplora soluzioni** fare doppio clic su MainWindow.xaml.
 
      La finestra verrà aperta in WPF Designer.
 

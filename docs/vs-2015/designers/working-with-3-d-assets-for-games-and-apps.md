@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6976d7c0e32739348ec0d78603e6b6d47d01477b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9cc4f8038906de89afd86fd666fbb011e974362d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661577"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298087"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Utilizzo di risorse tridimensionali per giochi e app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-
  È possibile usare la finestra di progettazione shader di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ovvero uno strumento di progettazione shader basato su grafico, per creare effetti visivi personalizzati senza conoscere la programmazione HLSL.
 
 > [!NOTE]
-> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Per altre informazioni su come eseguire il debug di un'app DirectX, vedere [Diagnostica della grafica (Debug grafica DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
+> Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](https://go.microsoft.com/fwlink/p/?LinkId=224633). Per altre informazioni su come eseguire il debug di un'app DirectX, vedere [Diagnostica della grafica (Debug grafica DirectX)](../debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilità tra versioni DirectX
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usa DirectX per eseguire il rendering di risorse 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per altre informazioni su WARP, vedere [Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) (Guida per Windows Advanced Rasterization Platform).
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usa DirectX per eseguire il rendering di risorse 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per altre informazioni su WARP, vedere [Windows Advanced Rasterization Platform (WARP) Guide](https://go.microsoft.com/fwlink/p/?LinkId=224634) (Guida per Windows Advanced Rasterization Platform).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|description|
 |-----------|-----------------|
 |[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con immagini e texture.|
 |[Uso dei modelli tridimensionali](../designers/working-with-3-d-models.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D.|

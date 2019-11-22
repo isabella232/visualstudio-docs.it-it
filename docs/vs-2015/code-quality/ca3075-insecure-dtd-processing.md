@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661619"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300965"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72661619"
  Se si usano istanze di <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non protette o si fa riferimento a origini di entità esterne, il parser può accettare un input non attendibile e divulgare informazioni riservate a utenti malintenzionati.
 
 ## <a name="rule-description"></a>Descrizione della regola
- La [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/library/aa468547.aspx) rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , che possono causare attacchi [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Questa regola viene attivata quando:
+ La [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/library/aa468547.aspx) rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](https://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , che possono causare attacchi [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Questa regola viene attivata quando:
 
 - DtdProcessing viene abilitato nell'istanza di <xref:System.Xml.XmlReader> , che risolve le entità XML esterne con <xref:System.Xml.XmlUrlResolver>.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72661619"
 
 - Un input non attendibile viene elaborato con <xref:System.Xml.XmlResolver> anziché con <xref:System.Xml.XmlSecureResolver> .
 
-- XmlReader. <xref:System.Xml.XmlReader.Create%2A> il metodo viene richiamato con un'istanza di <xref:System.Xml.XmlReaderSettings> non protetta o senza alcuna istanza.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> il metodo viene richiamato con un'istanza di <xref:System.Xml.XmlReaderSettings> non protetta o senza alcuna istanza.
 
 - <xref:System.Xml.XmlReader> viene creato con valori o impostazioni predefinite non sicure.
 
@@ -49,7 +49,7 @@ ms.locfileid: "72661619"
 
 - Rilevare ed elaborare correttamente tutte le eccezioni XmlTextReader per evitare la divulgazione di informazioni sul percorso.
 
-- Usare il  <xref:System.Xml.XmlSecureResolver> per limitare le risorse a cui può accedere XmlTextReader.
+- Usare il <xref:System.Xml.XmlSecureResolver> per limitare le risorse a cui può accedere XmlTextReader.
 
 - Non consentire all' <xref:System.Xml.XmlReader> di aprire risorse esterne impostando la proprietà <xref:System.Xml.XmlResolver> su **null**.
 
@@ -57,7 +57,7 @@ ms.locfileid: "72661619"
 
   .NET 3.5 e versioni precedenti
 
-- Disabilitare l'elaborazione DTD se si gestiscono origini non attendibili impostando la proprietà  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> su **true** .
+- Disabilitare l'elaborazione DTD se si gestiscono origini non attendibili impostando la proprietà <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> su **true** .
 
 - La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Per ulteriori informazioni, vedere [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 

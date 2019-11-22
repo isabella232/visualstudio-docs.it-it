@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1352da002b16c736ce20a9fbaf7cdc26b258b718
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657617"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296336"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
  **Ecco alcuni video**:
 
-- [Comprensione delle dipendenze del codice tramite la visualizzazione](http://go.microsoft.com/fwlink/?LinkID=252065)
+- [Comprensione delle dipendenze del codice tramite la visualizzazione](https://go.microsoft.com/fwlink/?LinkID=252065)
 
-- [Visualizza l'impatto di una modifica](http://go.microsoft.com/fwlink/?LinkID=252068)
+- [Visualizza l'impatto di una modifica](https://go.microsoft.com/fwlink/?LinkID=252068)
 
-- [Informazioni sul codice complesso con mappe codice](http://go.microsoft.com/fwlink/?LinkID=259869)
+- [Informazioni sul codice complesso con mappe codice](https://go.microsoft.com/fwlink/?LinkID=259869)
 
 ## <a name="GetStarted"></a> Introduzione all'uso delle mappe codice
  **Per usare le mappe codice saranno necessari**:
@@ -183,9 +183,9 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
     Vedere anche:
 
-- [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)
+- [Cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 
 - Trovare potenziali problemi nel codice [eseguendo un analizzatore](../modeling/find-potential-problems-using-code-map-analyzers.md).
 
@@ -232,7 +232,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
      Per visualizzare i membri presenti nel codice ma che non vengono visualizzati sulla mappa, fare clic sull'icona recupera nuovamente i **figli** icona ![Riprendi figli](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") nell'angolo in alto a sinistra di un gruppo.
 
-6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire il menu di scelta rapida e quindi scegliere l'opzione **Mostra** per il tipo di elementi correlati da aggiungere alla mappa. Esempio:
+6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire il menu di scelta rapida e quindi scegliere l'opzione **Mostra** per il tipo di elementi correlati da aggiungere alla mappa. Di seguito è riportato un esempio:
 
      Per un **assembly**scegliere:
 
@@ -284,9 +284,9 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
      ![Usare il riquadro filtro per semplificare la visualizzazione](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")
 
 ## <a name="SeeSourceHeader"></a> Visualizzare le dipendenze tra i file di origine e i file di intestazione C e C++
- Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione ( **/FR**) su tali progetti. Vedere [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive. Se si nasconde il messaggio, è possibile visualizzarlo nuovamente. Impostare la seguente chiave del Registro di sistema su `0` o eliminare la chiave:
+ Per creare mappe più complete per i progetti C++, impostare l'opzione del compilatore di informazioni di visualizzazione ( **/FR**) su tali progetti. Vedere [/FR, /Fr (Crea file sbr)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). In caso contrario, viene visualizzato un messaggio con la richiesta di impostare l'opzione. Se si seleziona **OK**, l'opzione viene impostata solo per la mappa corrente. È possibile scegliere di nascondere il messaggio per tutte le mappe successive. Se si nasconde il messaggio, è possibile visualizzarlo nuovamente. Impostare la seguente chiave del Registro di sistema su `0` o eliminare la chiave:
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**
+ **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
 
  Quando si apre una soluzione che contiene progetti Visual C++, l'aggiornamento del database di IntelliSense potrebbe richiedere del tempo. Durante questo periodo potrebbe non essere possibile creare mappe codice per file di intestazione (con estensione h o `#include`) o finché il database IntelliSense non ha completato l'aggiornamento. È possibile monitorare lo stato di avanzamento dell'aggiornamento nella barra di stato di Visual Studio. Per risolvere problemi o messaggi che vengono visualizzati perché determinate impostazioni di IntelliSense sono disattivate, vedere [Risoluzione dei problemi relativi alle mappe per il codice C e C++](#Troubleshooting).
 
@@ -311,12 +311,12 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 |---------------|------------------------|--------------------|
 |Non è stato possibile generare la mappa codice.|Nessun progetto nella soluzione è stato compilato correttamente.|Correggere gli errori di compilazione che si sono verificati, quindi rigenerare la mappa.|
 |Quando si prova a generare una mappa codice dal menu[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Architettura **,** smette di rispondere.|Il file di database del programma (con estensione pdb) potrebbe essere danneggiato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Ricompilare la soluzione e riprovare.|
-|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella finestra di dialogo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**di** .|Attivare le impostazioni per abilitarle.<br /><br /> Vedere [Opzioni, editor di testo, CC++/, avanzate](../ide/reference/options-text-editor-c-cpp-advanced.md).|
-|Il messaggio **Metodi sconosciuti** viene visualizzato su un nodo di metodo.<br /><br /> Questo problema si verifica perché non è possibile risolvere il nome del metodo.|Il file binario potrebbe non disporre di una tabella di rilocazione di base.|Attivare l'opzione **/FIXED:NO** nel linker.<br /><br /> Vedere [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
-||Il file di database del programma (con estensione pdb) potrebbe non essere compilato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Attivare l'opzione **/DEBUG** nel linker.<br /><br /> Vedere [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
+|Alcune impostazioni per il database di esplorazione IntelliSense sono disabilitate.|Alcune impostazioni di IntelliSense potrebbero essere disabilitate nella finestra di dialogo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Opzioni**.|Attivare le impostazioni per abilitarle.<br /><br /> Vedere [Opzioni, editor di testo, CC++/, avanzate](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|Il messaggio **Metodi sconosciuti** viene visualizzato su un nodo di metodo.<br /><br /> Questo problema si verifica perché non è possibile risolvere il nome del metodo.|Il file binario potrebbe non disporre di una tabella di rilocazione di base.|Attivare l'opzione **/FIXED:NO** nel linker.<br /><br /> Vedere [/FIXED (Indirizzo di base fisso)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
+||Il file di database del programma (con estensione pdb) potrebbe non essere compilato.<br /><br /> Nel file pdb sono memorizzate informazioni di debug, ad esempio informazioni sui tipi, sui metodi e sui file di origine.|Attivare l'opzione **/DEBUG** nel linker.<br /><br /> Vedere [/DEBUG (Genera informazioni di debug)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
 ||Non è possibile aprire o trovare il file pdb nei percorsi previsti.|Verificare che il file pdb esista nei percorsi previsti.|
 ||Le informazioni di debug sono state rimosse dal file pdb.|Se nel linker è stata usata l'opzione **/PDBSTRIPPED** , includere il file pdb completo.<br /><br /> Vedere [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
-||Il chiamante non è una funzione e non è un thunk nel file binario o un puntatore nella sezione di dati.|Quando il chiamante è un thunk, provare a usare `_declspec(dllimport)` per evitare il thunk.<br /><br /> Vedere:<br /><br /> -   [regole e limitazioni generali](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importazione di chiamate di funzione tramite _ _ declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||Il chiamante non è una funzione e non è un thunk nel file binario o un puntatore nella sezione di dati.|Quando il chiamante è un thunk, provare a usare `_declspec(dllimport)` per evitare il thunk.<br /><br /> Vedere:<br /><br /> -   [regole e limitazioni generali](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importazione di chiamate di funzione tramite __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
 ## <a name="RenderMoreQuickly"></a> Accelerare il rendering delle mappe codice
  Quando si genera una mappa per la prima volta, Visual Studio indicizza tutte le dipendenze trovate. Questo processo potrebbe richiedere molto tempo, soprattutto per le soluzioni di grandi dimensioni, ma ciò migliorerà le prestazioni successive. Se il codice viene modificato, Visual Studio reindicizza solo il codice aggiornato. Per ridurre al minimo il tempo necessario per completare il rendering della mappa, tenere presente quanto segue:
@@ -329,13 +329,13 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 - Disattivare la compilazione automatica degli elementi padre con il pulsante **Includi padri** nella barra degli strumenti della mappa codice.
 
-- Modificare il file della mappa codice per rimuovere i nodi e i collegamenti non necessari. La modifica della mappa non influisce in alcun modo sul codice sottostante. Vedere [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Modificare il file della mappa codice per rimuovere i nodi e i collegamenti non necessari. La modifica della mappa non influisce in alcun modo sul codice sottostante. Vedere [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
   ![Ignorare i pulsanti Compila e Includi padri](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 
   Sebbene Visual Studio sia in grado di funzionare con 1 GB di memoria, è consigliabile che il computer disponga di almeno 2 GB di memoria per evitare lunghi ritardi quando viene creato l'indice del codice e viene generata la mappa.
 
-  La creazione di mappe o l'aggiunta di elementi a una mappa da Esplora soluzioni potrebbe richiedere più tempo quando la proprietà **Copia nella directory di output** di un elemento di progetto è impostata su **Copia sempre**. Ciò potrebbe causare problemi nelle compilazioni incrementali e in Visual Studio per ricompilare il progetto ogni volta. Per aumentare le prestazioni, impostare questa proprietà su **Copia se più recente** o su `PreserveNewest`. Vedere [Incremental Builds](../msbuild/incremental-builds.md).
+  La creazione di mappe o l'aggiunta di elementi a una mappa da Esplora soluzioni potrebbe richiedere più tempo quando la proprietà **Copia nella directory di output** di un elemento di progetto è impostata su **Copia sempre**. Ciò potrebbe causare problemi nelle compilazioni incrementali e in Visual Studio per ricompilare il progetto ogni volta. Per aumentare le prestazioni, impostare questa proprietà su **Copia se più recente** o su `PreserveNewest`. Vedere [Compilazioni incrementali](../msbuild/incremental-builds.md).
 
   La mappa completata mostrerà le dipendenze solo per il codice compilato correttamente. Se si verificano errori di compilazione per determinati componenti, tali errori vengono visualizzati nella mappa. Assicurarsi quindi che un componente venga effettivamente compilato e contenga le dipendenze prima di prendere decisioni a livello di architettura in base alla mappa.
 
@@ -383,6 +383,6 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 
 - [Trovare problemi potenziali usando gli analizzatore delle mappe del codice](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-- [Cercare e ridisporre le mappe del codice](../modeling/browse-and-rearrange-code-maps.md)
+- [Cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md)
 
-- [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
+- [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

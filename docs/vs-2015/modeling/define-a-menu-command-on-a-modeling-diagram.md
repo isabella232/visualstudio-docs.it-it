@@ -11,29 +11,29 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87acbb53fd8fe5eae744aa4ef72c808da8eb6642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663486"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299261"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definire un comando di menu in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio è possibile definire altre voci di menu nei menu di scelta rapida di un diagramma UML. È possibile controllare se il comando di menu viene visualizzato ed è abilitato nel menu di scelta rapida di tutti gli elementi del diagramma ed è possibile scrivere codice che viene eseguito quando l'utente sceglie la voce di menu. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
+In Visual Studio è possibile definire altre voci di menu nei menu di scelta rapida di un diagramma UML. È possibile controllare se il comando di menu viene visualizzato ed è abilitato nel menu di scelta rapida di tutti gli elementi del diagramma ed è possibile scrivere codice che viene eseguito quando l'utente sceglie la voce di menu. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
 
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="defining-the-menu-command"></a>Definizione del comando di menu
  Per creare un comando di menu per una finestra di progettazione UML, è necessario creare una classe che definisca il comportamento del comando e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX funge da contenitore che può installare il comando. Esistono due metodi alternativi per definire un comando di menu:
 
-- **Creare un comando di menu nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i comandi di menu con altri tipi di estensione, ad esempio estensioni di convalida, elementi della casella degli strumenti personalizzati o gestori di movimento.
+- **Creare un comando di menu nella relativa estensione VSIX con un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i comandi di menu con altri tipi di estensione, ad esempio estensioni di convalida, elementi della casella degli strumenti personalizzati o gestori di movimento.
 
-- **Creare comandi di menu e progetti VSIX separati.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
+- **Creare un comando di menu e progetti VSIX separati.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Per creare un comando di menu nella relativa estensione VSIX
 
@@ -47,7 +47,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
 4. Testare il comando di menu premendo F5. Per altre informazioni, vedere [Esecuzione del comando di menu](#Executing).
 
-5. Installare il comando di menu in un altro computer copiando il file **bin \\ \* \\ \*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
+5. Installare il comando di menu in un altro computer copiando il file **bin\\\*\\\*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
 
    Ecco la procedura alternativa:
 
@@ -65,7 +65,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
 2. Aggiungere i riferimenti seguenti al progetto.
 
-   |                                                                                                    Reference                                                                                                    |                                                                                                  Operazioni consentite                                                                                                  |
+   |                                                                                                    Riferimenti                                                                                                    |                                                                                                  Operazioni consentite                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definire i componenti usando [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Leggere e modificare le proprietà degli elementi del modello.                                                                                         |
@@ -172,7 +172,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 |||
 |-|-|
 |`string Text { get; }`|Restituisce l'etichetta della voce di menu.|
-|`void QueryStatus(IMenuCommand command);`|Chiamato quando l'utente fa clic con il pulsante destro del mouse nel diagramma.<br /><br /> Questo metodo non dovrebbe modificare il modello.<br /><br /> Usare `DiagramContext.CurrentDiagram.SelectedShapes` per determinare se si vuole visualizzare e abilitare il comando.<br /><br /> Impostare:<br /><br /> -    `command.Visible` di `true` se il comando deve essere visualizzato nel menu quando l'utente fa clic con il pulsante destro del mouse nel diagramma<br />-    `command.Enabled` per `true` se l'utente può fare clic sul comando nel menu<br />-    `command.Text` per impostare in modo dinamico l'etichetta del menu|
+|`void QueryStatus(IMenuCommand command);`|Chiamato quando l'utente fa clic con il pulsante destro del mouse nel diagramma.<br /><br /> Questo metodo non dovrebbe modificare il modello.<br /><br /> Usare `DiagramContext.CurrentDiagram.SelectedShapes` per determinare se si vuole visualizzare e abilitare il comando.<br /><br /> Impostare:<br /><br /> -   `command.Visible` di `true` se il comando deve essere visualizzato nel menu quando l'utente fa clic con il pulsante destro del mouse nel diagramma<br />-   `command.Enabled` per `true` se l'utente può fare clic sul comando nel menu<br />-   `command.Text` per impostare in modo dinamico l'etichetta del menu|
 |`void Execute (IMenuCommand command);`|Chiamato quando l'utente fa clic sulla voce di menu, se è visibile e abilitata.|
 
 ### <a name="accessing-the-model-in-code"></a>Accesso al modello nel codice
@@ -236,7 +236,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - I parametri degli attributi `Import` ed `Export` siano validi.
 
-    - Il metodo `QueryStatus` non imposta l'`command`. `Enabled` o `Visible` su `false`.
+    - Il metodo `QueryStatus` non imposta l'`command`.`Enabled` o `Visible` su `false`.
 
     - Il tipo di diagramma del modello in uso (classe UML, sequenza e così via) sia elencato come uno degli attributi della classe del comando di menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` e così via.
 
@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.
 
-    2. Individuare il file **bin \\ \* \\** _progettoutente_ **. vsix**
+    2. Individuare il file **bin\\\*\\** _progettoutente_ **. vsix**
 
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.
 
@@ -271,7 +271,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [versione] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[versione] \Extensions**
 
 ## <a name="MenuExample"></a> Esempio
  L'esempio seguente mostra il codice per un comando di menu che scambierà i nomi di due elementi in un diagramma classi. Questo codice deve essere compilato in un progetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension e installato come indicato nelle precedenti sezioni.
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definire un elemento della casella degli strumenti di modellazione personalizzato](../modeling/define-a-custom-modeling-toolbox-item.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [modifica Diagrammi di sequenza UML usando l'API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML [programmazione con l'esempio di API UML](../modeling/programming-with-the-uml-api.md) [: comando per allineare le forme in un diagramma UML](http://go.microsoft.com/fwlink/?LinkID=213809)
+ [Definire e installare un'estensione di modellazione](../modeling/define-and-install-a-modeling-extension.md) [estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [definire un elemento della casella degli strumenti di modellazione personalizzato](../modeling/define-a-custom-modeling-toolbox-item.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [modificare i diagrammi di sequenza UML usando l'API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) UML [programmazione con l'esempio di API UML](../modeling/programming-with-the-uml-api.md) [: comando per allineare le forme in un diagramma UML](https://go.microsoft.com/fwlink/?LinkID=213809)

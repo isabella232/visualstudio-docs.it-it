@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Risolvere i problemi di aggiornamento di progetti non riuscito | Microsoft Docs'
+title: 'Procedura: risolvere i problemi relativi agli aggiornamenti di progetti non riusciti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,33 +18,33 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696385"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300352"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedura: Risolvere i problemi relativi agli aggiornamenti di progetti Visual Studio
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedura: Risolvere i problemi relativi agli aggiornamenti di progetti Visual Studio con esito negativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In alcuni casi Visual Studio completamente non può convertire un progetto da una versione precedente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se i suggerimenti nelle sezioni seguenti non consentono di risolvere il problema riscontrato, potrebbe essere in grado di trovare altre informazioni su TechNet [Wiki: Portale di sviluppo](http://go.microsoft.com/fwlink/?LinkId=254808).
+In alcuni casi Visual Studio non è in grado di convertire completamente un progetto da una versione precedente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se i suggerimenti nelle sezioni seguenti non consentono di risolvere il problema specifico, è possibile trovare ulteriori informazioni su TechNet [wiki: portale di sviluppo](https://go.microsoft.com/fwlink/?LinkId=254808).
 
-## <a name="the-project-does-not-run-because-files-are-not-found"></a>Il progetto non viene eseguita perché non vengono trovati file
- Un file di progetto contiene i percorsi di file hardcoded che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Usa per eseguire il progetto quando si preme F5. Questi percorsi possono includere il percorso del devenv.exe e altri file necessari. In una versione aggiornata di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], i percorsi di questi file sono stati modificati.
+## <a name="the-project-does-not-run-because-files-are-not-found"></a>Il progetto non viene eseguito perché i file non sono stati trovati
+ Un file di progetto contiene percorsi di file hardcoded che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizza per eseguire il progetto quando si preme F5. Questi percorsi possono includere il percorso di devenv. exe e gli altri file necessari. In una versione aggiornata di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile che i percorsi di questi file siano stati modificati.
 
-#### <a name="to-resolve-incorrect-file-paths"></a>Per risolvere i percorsi di file non corretto
+#### <a name="to-resolve-incorrect-file-paths"></a>Per risolvere i percorsi di file non corretti
 
 1. Aprire il file di progetto in un editor di testo.
 
-2. Analizzare i percorsi di file che non sia corretti, specialmente quelle che contengono un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numero di versione.
+2. Analizzare i percorsi di file che potrebbero non essere corretti, in particolare quelli che contengono un numero di versione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-3. Modificare i percorsi di file non corretto in modo che facciano riferimento alle destinazioni di nuovo.
+3. Modificare i percorsi di file non corretti in modo che puntino alle nuove destinazioni.
 
-## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Il progetto non viene compilato perché i riferimenti non validi
- Quando esegue l'aggiornamento [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], si potrebbe anche essere aggiornando il [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione. Se il progetto contiene i riferimenti che non sono più disponibili in più di recente [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione, non vengano risolti correttamente. Ciò si verifica soprattutto per i riferimenti che includono numeri di versione, ad esempio, `Microsoft.VisualStudio.Shell.Interop.8.0`.
+## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Il progetto non viene compilato perché i riferimenti non sono validi
+ Quando si aggiorna [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è anche possibile aggiornare la versione del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Se il progetto contiene riferimenti che non sono più disponibili nella versione più recente di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], è possibile che non vengano risolti correttamente. Questo è particolarmente probabile per i riferimenti che includono i numeri di versione, ad esempio `Microsoft.VisualStudio.Shell.Interop.8.0`.
 
- Se il codice contiene molti riferimenti non validi, potrebbe essere la soluzione più semplice per usare la funzionalità di multitargeting [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] come destinazione una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Se il codice contiene molti riferimenti non validi, la soluzione più semplice potrebbe consistere nell'usare la funzionalità di multitargeting di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per definire come destinazione una versione precedente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 #### <a name="to-resolve-incorrect-references"></a>Per risolvere i riferimenti non corretti
 
@@ -52,9 +52,9 @@ In alcuni casi Visual Studio completamente non può convertire un progetto da un
 
 2. Aprire le proprietà del progetto.
 
-3. Selezionare i valori corretti **Framework di destinazione** valore. In alternativa, è possibile modificare il valore della `<TargetFrameworkVersion>` elemento direttamente nel file di progetto.
+3. Selezionare il valore del **Framework di destinazione** corretto. In alternativa, è possibile modificare il valore dell'elemento `<TargetFrameworkVersion>` direttamente nel file di progetto.
 
-   Se si vuole che il progetto per l'esecuzione in aggiornati [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione, è necessario aggiornare i riferimenti del progetto e aggiornare anche eventuali `Imports` o `Using` istruzioni che chiama i riferimenti. Se il progetto viene caricato nell'IDE, è possibile aggiornare i riferimenti utilizzando **Esplora soluzioni** o nella **gestione riferimenti** nella finestra di dialogo.
+   Se si desidera che il progetto venga eseguito nella versione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aggiornata, è necessario aggiornare i riferimenti per il progetto e aggiornare anche eventuali istruzioni `Imports` o `Using` che chiamano i riferimenti. Se il progetto viene caricato nell'IDE, è possibile aggiornare i riferimenti usando **Esplora soluzioni** o la finestra di dialogo **Gestione riferimenti** .
 
 ## <a name="see-also"></a>Vedere anche
- [/ Aggiornamento (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [conversione in ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade (devenv. exe)](../ide/reference/upgrade-devenv-exe.md) [conversione in ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

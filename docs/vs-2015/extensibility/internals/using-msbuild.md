@@ -12,24 +12,24 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 887afab85738e33bccd56543772b576e3843fe92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1ad59e6d8f4cb88004629b0dfd2cdf0631a7824
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675218"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297675"
 ---
 # <a name="using-msbuild"></a>Uso di MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-MSBuild fornisce un formato XML ben definito ed estendibile per la creazione di file di progetto che descrivono gli elementi di progetto per essere compilato, attività di compilazione e le configurazioni della build.  
+MSBuild fornisce un formato XML estendibile e ben definito per la creazione di file di progetto che descrivono completamente gli elementi di progetto da compilare, le attività di compilazione e le configurazioni di compilazione.  
   
- Per un esempio end-to-end di un sistema di progetto linguaggio basato su MSBuild, vedere Approfondimenti esempio IronPython nel[esempi di VSSDK](../../misc/vssdk-samples.md).  
+ Per un esempio end-to-end di un sistema di progetto di linguaggio basato su MSBuild, vedere l'approfondimento di esempio di IronPython negli[esempi di VSSDK](../../misc/vssdk-samples.md).  
   
-## <a name="general-msbuild-considerations"></a>Considerazioni generali MSBuild  
- File di progetto MSBuild, ad esempio, [!INCLUDE[csprcs](../../includes/csprcs-md.md)] file con estensione csproj e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] file con estensione vbproj, contengono dati che viene usati in fase di compilazione, ma possono anche contenere dati che viene usati in fase di progettazione. Dati in fase di compilazione vengono archiviati utilizzando le primitive di MSBuild, incluso [elemento Item (MSBuild)](../../msbuild/item-element-msbuild.md) e [elemento Property (MSBuild)](../../msbuild/property-element-msbuild.md). Dati Design-time, ovvero i dati specifici per il tipo di progetto e qualsiasi sottotipi di progetto correlate, sono archiviati in XML Freeform riservate per il servizio.  
+## <a name="general-msbuild-considerations"></a>Considerazioni generali su MSBuild  
+ I file di progetto MSBuild, ad esempio [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. csproj e i file [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. vbproj, contengono dati utilizzati in fase di compilazione, ma possono contenere anche dati utilizzati in fase di progettazione. I dati in fase di compilazione vengono archiviati usando le primitive MSBuild, inclusi elemento [Item (MSBuild)](../../msbuild/item-element-msbuild.md) ed [elemento Property (MSBuild)](../../msbuild/property-element-msbuild.md). I dati della fase di progettazione, ovvero i dati specifici per il tipo di progetto e gli eventuali sottotipi di progetto correlati, vengono archiviati in un file XML in formato libero riservato.  
   
- MSBuild non include il supporto nativo per gli oggetti di configurazione, ma fornire attributi condizionali per specificare i dati specifici della configurazione. Ad esempio:  
+ MSBuild non dispone del supporto nativo per gli oggetti di configurazione, ma fornisce attributi condizionali per la specifica di dati specifici della configurazione. Di seguito è riportato un esempio:  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
@@ -37,12 +37,12 @@ MSBuild fornisce un formato XML ben definito ed estendibile per la creazione di 
   
  Per altre informazioni sugli attributi condizionali, vedere [costrutti condizionali](../../msbuild/msbuild-conditional-constructs.md).  
   
-### <a name="extending-msbuild-for-your-project-type"></a>MSBuild per l'estensione per il tipo di progetto  
- Interfacce di MSBuild e le API sono soggetti a modifiche nelle versioni future di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pertanto, è consigliabile usare le classi di framework (MPF) di pacchetto gestito, perché forniscono la schermatura dalle modifiche.  
+### <a name="extending-msbuild-for-your-project-type"></a>Estensione di MSBuild per il tipo di progetto  
+ Le interfacce e le API di MSBuild sono soggette a modifiche nelle versioni future di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pertanto, è consigliabile utilizzare le classi del Framework di pacchetto gestito (MPF) perché forniscono la schermatura dalle modifiche.  
   
- Il Framework di pacchetto gestito per progetti (MPFProj) fornisce classi helper per la creazione e la gestione di nuovo sistema di progetto. È possibile trovare l'origine istruzioni di compilazione e codice in [MPF per i progetti - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+ Il Framework di pacchetto gestito per i progetti (MPFProj) fornisce classi helper per la creazione e la gestione di un nuovo sistema di progetto. È possibile trovare il codice sorgente e le istruzioni di compilazione in [MPF for Projects-Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
   
- Le classi MPF di progetti specifici sono i seguenti:  
+ Di seguito sono riportate le classi MPF specifiche del progetto:  
   
 |Classe|Implementazione|  
 |-----------|--------------------|  
@@ -52,10 +52,10 @@ MSBuild fornisce un formato XML ben definito ed estendibile per la creazione di 
 |`Microsoft.VisualStudio.Package.ProjectConfig`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg>|  
 |`Microsoft.VisualStudio.Package.SettingsPage`|<xref:Microsoft.VisualStudio.OLE.Interop.IPropertyPageSite>|  
   
- `Microsoft.VisualStudio.Package.ProjectElement` classe è un wrapper per gli elementi di MSBuild.  
+ `Microsoft.VisualStudio.Package.ProjectElement` classe è un wrapper per gli elementi MSBuild.  
   
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>Visual Studio di generatori di File singoli. Attività MSBuild  
- Singolo file i generatori sono accessibili in fase di progettazione solo, ma le attività di MSBuild possono essere utilizzate in fase di progettazione e in fase di compilazione. Per la massima flessibilità, pertanto, utilizzare le attività di MSBuild per trasformare e generare il codice. Per altre informazioni, vedere [strumenti personalizzati](../../extensibility/internals/custom-tools.md).  
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>Generatori di file singoli e attività MSBuild  
+ I generatori di file singoli sono accessibili solo in fase di progettazione, ma le attività di MSBuild possono essere utilizzate in fase di progettazione e di compilazione. Per garantire la massima flessibilità, utilizzare le attività MSBuild per trasformare e generare codice. Per ulteriori informazioni, vedere [strumenti personalizzati](../../extensibility/internals/custom-tools.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Informazioni di riferimento su MSBuild](../../msbuild/msbuild-reference.md)   

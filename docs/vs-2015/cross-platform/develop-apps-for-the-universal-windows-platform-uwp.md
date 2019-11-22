@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ed601f6b3bfeba4d7aebed5955b340fb28908c74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660198"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299843"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
 
  È possibile eseguire le app su telefoni Windows 10, computer desktop Windows 10 o Xbox. Il pacchetto di app non cambia. Con l'introduzione del singolo core unificato Windows 10, un unico pacchetto di app può essere eseguito su tutte le piattaforme. Diverse piattaforme hanno SDK di estensione che è possibile aggiungere alla app per sfruttare i comportamenti specifici di piattaforma. Ad esempio, un SDK di estensione per dispositivi mobili gestisce la pressione del pulsante Indietro su un telefono Windows. Se si fa riferimento a un SDK di estensione nel progetto, è sufficiente aggiungere i controlli di runtime per verificare se tale SDK è disponibile nella piattaforma. In questo modo è possibile avere lo stesso pacchetto di app per ogni piattaforma.
 
- **Informazioni sul core di Windows**
+ **Che cos'è il core Windows?**
 
  Per la prima volta, è stato eseguito il refactoring di Windows per avere a disposizione un core comune a tutte le piattaforme Windows 10. Esiste una sola origine comune, un unico kernel di Windows comune, un unico stack I/O di file e un solo modello di applicazione. Per l'interfaccia utente, esiste un unico framework dell'interfaccia utente XAML e un unico framework dell'interfaccia utente HTML. L'esecuzione delle app su diversi dispositivi Windows 10 è stata semplificata per permettere di concentrarsi sulla creazione di app eccezionali.
 
@@ -38,9 +38,9 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
 
  Elenco del software necessario:
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads)
+- [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725). Assicurarsi che gli strumenti per lo sviluppo di app di Windows universale siano selezionati nell'elenco di funzionalità facoltative. Senza questi strumenti, non sarà possibile creare app universali.
+- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Assicurarsi che gli strumenti per lo sviluppo di app di Windows universale siano selezionati nell'elenco di funzionalità facoltative. Senza questi strumenti, non sarà possibile creare app universali.
 
   Dopo aver installato il software, è necessario [abilitare il dispositivo Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) per lo sviluppo (non è più necessaria una licenza per sviluppatori per ogni dispositivo Windows 10).
 
@@ -55,7 +55,7 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
   È possibile usare la finestra di progettazione XAML solo se la piattaforma di sviluppo è Windows 10.
 
 ## <a name="universal-windows-apps"></a>App di Windows universale
- Scegliere il linguaggio di sviluppo preferito tra C#, Visual Basic, C++ o JavaScript per [creare un'app di Windows universale per dispositivi Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). In alternativa, è possibile guardare [questo video introduttivo](http://channel9.msdn.com/Series/ConnectOn-Demand/229).
+ Scegliere il linguaggio di sviluppo preferito tra C#, Visual Basic, C++ o JavaScript per [creare un'app di Windows universale per dispositivi Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). In alternativa, è possibile guardare [questo video introduttivo](https://channel9.msdn.com/Series/ConnectOn-Demand/229).
 
  Se si hanno app di Windows Store 8.1 o Windows Phone 8.1 oppure app di Windows universale create con Visual Studio 2015 RC, [trasferire le app esistenti](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) per usare la versione più recente della piattaforma UWP (Universal Windows Platform).
 

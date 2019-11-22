@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiornare una pagina iniziale personalizzata | Microsoft Docs'
+title: 'Procedura: aggiornare una pagina iniziale personalizzata | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: abe1013d37db43114f3970f12b1a0d1f08b07a4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a7854de705a961463b1e8435e7340548cfc23bf3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446456"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293373"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Procedura: Aggiornare una pagina iniziale personalizzata di Visual Studio
 La procedura illustrata di seguito consente di aggiornare una pagina iniziale personalizzata di Visual Studio 2010 o Visual Studio 2012 a Visual Studio 2015.
 
 > [!WARNING]
-> La pagina iniziale personalizzata aggiornata in questa routine è quella creata con il modello [Custom Start Page](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) disponibile in Visual Studio Gallery. La pagina iniziale dell'utente potrebbe contenere altre funzionalità che occorre aggiornare.
+> La pagina iniziale personalizzata aggiornata in questa routine è quella creata con il modello [Custom Start Page](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.CustomStartPageProjectTemplate) disponibile in Visual Studio Gallery. La pagina iniziale dell'utente potrebbe contenere altre funzionalità che occorre aggiornare.
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Per aggiornare una pagina iniziale personalizzata a Visual Studio 2015
 

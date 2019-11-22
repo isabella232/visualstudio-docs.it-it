@@ -17,12 +17,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6f260af17a2fab142c5f5fa58e4ed267dc469d9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 091338e411369e40f19e028cd19b6cb2e697718c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651501"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299604"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Installazione di sistemi di database, strumenti ed esempi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Visual Studio non include alcun sistema di database diverso da quelli usati inte
  SQL Server è l'offerta di database Microsoft Flagship. SQL Server 2016 offre prestazioni eccezionali, sicurezza avanzata e funzionalità avanzate di creazione di report e analisi integrate. Viene fornito in varie edizioni progettate per usi diversi: da analisi business a scalabilità elevata e a elevate prestazioni, da usare in un singolo computer. SQL Server Express è un'edizione completa di SQL Server personalizzata per la ridistribuzione e l'incorporamento.  Il database locale è un'edizione semplificata di SQL Server Express che non richiede alcuna configurazione ed è in esecuzione nel processo dell'applicazione. È possibile scaricare uno o entrambi i prodotti dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express). Molti degli esempi SQL di questa sezione usano SQL Server database locale. SQL Server Management Studio (SSMS) è un'applicazione di gestione di database autonoma che offre più funzionalità rispetto a quelle disponibili in Visual Studio Esplora oggetti di SQL Server. È possibile ottenere SSMS dal collegamento precedente.
 
 ### <a name="oracle"></a>Oracle
- È possibile scaricare un'edizione a pagamento o gratuita del database Oracle dalla pagina [rete della tecnologia Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) . Per il supporto in fase di progettazione per Entity Framework e TableAdapter, sarà necessario [Oracle strumenti di sviluppo per Visual Studio](http://www.oracle.com/technetwork/developer-tools/visual-studio/overview/index.html). Altri prodotti Oracle ufficiali, incluso Oracle Instant client, sono disponibili tramite Gestione pacchetti NuGet.  È possibile scaricare gli schemi di esempio Oracle seguendo le istruzioni riportate nella [documentazione online di Oracle](http://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
+ È possibile scaricare un'edizione a pagamento o gratuita del database Oracle dalla pagina [rete della tecnologia Oracle](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index-092322.html) . Per il supporto in fase di progettazione per Entity Framework e TableAdapter, sarà necessario [Oracle strumenti di sviluppo per Visual Studio](https://www.oracle.com/database/technologies/developer-tools/visual-studio/). Altri prodotti Oracle ufficiali, incluso Oracle Instant client, sono disponibili tramite Gestione pacchetti NuGet.  È possibile scaricare gli schemi di esempio Oracle seguendo le istruzioni riportate nella [documentazione online di Oracle](https://docs.oracle.com/cd/E11882_01/server.112/e10831/toc.htm).
 
 ### <a name="mysql"></a>MySQL
- MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](http://www.mysql.com/why-mysql/windows/).  Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
+ MySQL è un diffuso sistema di database open source ampiamente usato in aziende e siti Web. I download per MySQL, MySQL per Visual Studio e i prodotti correlati si trovano in [MySQL in Windows](https://www.mysql.com/why-mysql/windows/).  Le terze parti offrono varie estensioni di Visual Studio e applicazioni di gestione autonoma per MySQL. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**).
 
 ### <a name="postgresql"></a>PostgreSQL
- PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](http://www.postgresql.org/download/windows/).  È anche possibile compilare PostgreSQL dal codice sorgente.  Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET.  È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**). Probabilmente il pacchetto più diffuso è fornito da [npgsql.org](http://www.npgsql.org).
+ PostgreSQL è un sistema di database relazionale a oggetti open source gratuito. Per installarlo in Windows, è possibile scaricarlo dalla [pagina di download di PostgreSQL](http://www.postgresql.org/download/windows/).  È anche possibile compilare PostgreSQL dal codice sorgente.  Il sistema di base PostgreSQL include un'interfaccia del linguaggio C. Molte terze parti forniscono pacchetti NuGet per l'uso di PostgreSQL dalle applicazioni .NET.  È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**). Probabilmente il pacchetto più diffuso è fornito da [npgsql.org](http://www.npgsql.org/).
 
 ### <a name="sqlite"></a>SQLite
- SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](http://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti**  > **gestione pacchetti NuGet**  > **gestire i pacchetti NuGet per la soluzione**).
+ SQLite è un motore di database SQL incorporato che viene eseguito nel processo dell'applicazione. È possibile scaricarlo dalla [pagina di download di SQLite](http://www.sqlite.org/download.html). Sono disponibili anche molti pacchetti NuGet di terze parti per SQLite. È possibile esplorare le offerte in Gestione pacchetti NuGet (**strumenti** > **gestione pacchetti NuGet** > **gestire i pacchetti NuGet per la soluzione**).
 
 ### <a name="firebird"></a>Firebird
  Firebird è un sistema open source per database SQL. È possibile scaricarlo dalla [pagina di download di Firebird](http://firebirdsql.org/en/downloads/). Un provider di dati ADO.NET è disponibile tramite Gestione pacchetti NuGet.
 
 ## <a name="see-also"></a>Vedere anche
- [Come determinare la versione e l'edizione di SQL Server e dei relativi componenti](http://support.microsoft.com/kb/321185)
+ [Come determinare la versione e l'edizione di SQL Server e dei relativi componenti](https://support.microsoft.com/help/321185/how-to-determine-the-version-edition-and-update-level-of-sql-server-an)

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fcaa8424e1b60375ec62bde31c5e22f3706641d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4633b32c1d59a59c91848f72403571955263472f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660748"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297549"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice della app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,5 +35,5 @@ Lo strumento di analisi del codice disponibile in Visual Studio esamina il codic
 
 |||
 |-|-|
-|[Analisi del codice in MSDN Library](http://go.microsoft.com/fwlink/?LinkID=227580)|Ulteriori informazioni sull'uso dell'analisi del codice in Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional.|
-|[Blog del team di analisi del codice MSDN](http://go.microsoft.com/fwlink/?LinkId=227200)|In questo blog sono disponibili ulteriori informazioni, inclusi documenti ed esempi tecnici.|
+|[Analisi del codice in MSDN Library](https://go.microsoft.com/fwlink/?LinkID=227580)|Ulteriori informazioni sull'uso dell'analisi del codice in Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional.|
+|[Blog del team di analisi del codice MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|In questo blog sono disponibili ulteriori informazioni, inclusi documenti ed esempi tecnici.|

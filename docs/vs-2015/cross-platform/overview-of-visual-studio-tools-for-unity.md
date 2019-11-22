@@ -8,19 +8,19 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27ef5a1f79b97a5be5583917f1c9703b3d624c16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183313"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298752"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Panoramica di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa sezione contiene altre informazioni sulle funzionalità offerte da Visual Studio Tools per Unity e su come usarle per incrementare la produttività con Unity.  
   
- Con Visual Studio Tools per Unity (*VSTU*) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usare il debugger avanzato per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.  
+ Con Visual Studio Tools per Unity (*VSTU*) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usarne il potente debugger per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.  
   
  Per altre informazioni su queste funzionalità, continuare a leggere questa pagina.  
   
@@ -67,4 +67,4 @@ Questa sezione contiene altre informazioni sulle funzionalità offerte da Visual
 - È possibile modificare il modo in cui Visual Studio Tools per Unity genera file di progetto usando il callback in stile Unity ProjectFileGeneration. Per altre informazioni, vedere l'esempio di generazione di file di progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Home page di Unity](http://unity3d.com)
+ [Home page di Unity](https://unity.com/)

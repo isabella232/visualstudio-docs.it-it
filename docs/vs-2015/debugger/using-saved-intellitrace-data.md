@@ -1,5 +1,5 @@
 ---
-title: Usando i dati di IntelliTrace salvati | Microsoft Docs
+title: Utilizzo dei dati di IntelliTrace salvati | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891083"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297126"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
  Assicurarsi di disporre degli elementi seguenti:  
   
-- File di origine e file di simboli (.pdb) corrispondenti per il codice dell'applicazione. In caso contrario, Visual Studio non consente di risolvere i percorsi di origine e verrà visualizzato il messaggio "Simboli non trovati". Visualizzare [specifica simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).  
+- File di origine e file di simboli (.pdb) corrispondenti per il codice dell'applicazione. In caso contrario, Visual Studio non consente di risolvere i percorsi di origine e verrà visualizzato il messaggio "Simboli non trovati". Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).  
   
 - Visual Studio Enterprise (ma non edizioni Professional o Community) in un computer di sviluppo o in un altro computer per aprire i file .iTrace  
   
@@ -100,7 +100,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 1. In **Violazioni prestazioni**esaminare gli eventi di prestazioni registrati, i relativi tempi di esecuzione totali e altre informazioni sugli eventi. Esaminare ulteriori dettagli sui metodi chiamati durante un evento di prestazioni specifico.  
   
-     ![Visualizzare i dettagli degli eventi di prestazioni](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Visualizza dettagli evento prestazioni](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      È inoltre sufficiente fare doppio clic sull'evento.  
   
@@ -110,17 +110,17 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 3. Espandere tale chiamata per rivedere tutte le chiamate e i valori di parametri annidati registrati in quel momento.  
   
-     (Tastiera: Per mostrare o nascondere una chiamata annidata, premere il **freccia destra** oppure **freccia sinistra** rispettivamente. Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .  
+     Tastiera: per visualizzare o nascondere una chiamata annidata, premere rispettivamente **Freccia DESTRA** o **Freccia SINISTRA** . Per visualizzare e nascondere i valori dei parametri per una chiamata annidata, premere **BARRA SPAZIATRICE** .  
   
      Avviare il debug dalla chiamata.  
   
-     ![Avviare il debug da una chiamata di metodo](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Avviare il debug dalla chiamata al metodo](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      È inoltre sufficiente fare doppio clic sulla chiamata o premere **INVIO** .  
   
      Se il metodo è incluso nel codice dell'applicazione, Visual Studio passa a tale metodo.  
   
-     ![Passare al codice dell'applicazione da un evento di prestazioni](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Vai al codice dell'applicazione dall'evento prestazioni](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      È possibile esaminare altri valori registrati, lo stack di chiamate, eseguire un'istruzione alla volta nel codice o usare la finestra **IntelliTrace** per [spostarsi in avanti o indietro tra gli altri metodi](../debugger/intellitrace.md) chiamati durante questo evento di prestazioni.  
   
@@ -161,13 +161,13 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 1. Copiare l'ID di correlazione SharePoint dalla relativa origine.  
   
-    Ad esempio:  
+    Di seguito è riportato un esempio:  
   
-    ![IntelliTrace &#45; errore di SharePoint &#45; ID di correlazione](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![ID &#45; di correlazione degli errori &#45; di SharePoint IntelliTrace](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
 2. Aprire il file .iTrace, quindi passare ad **Analisi** e immettere l'ID di correlazione SharePoint per esaminare eventi registrati e di richieste Web corrispondenti.  
   
-    ![Log di IntelliTrace &#45; ID di correlazione SharePoint immettere](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![Log &#45; IntelliTrace immettere l'ID correlazione di SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3. In **Eventi richiesta**esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.  
   
@@ -175,7 +175,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
    2. Scegliere **Avvia debug** per avviare il debug nel punto in cui si è verificato l'evento.  
   
-      ![File di log IntelliTrace &#45; Visualizza la richiesta web &#43; gli eventi](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![Eventi di richiesta &#45; &#43; Web visualizzazione file di log IntelliTrace](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
    È possibile visualizzare questi tipi di eventi SharePoint insieme agli eventi IntelliTrace:  
   
@@ -192,7 +192,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
     |**Id**|**ID evento**|  
     |**Livello**|**Livello**|  
     |**ID categoria**|**ID categoria**|  
-    |**Categoria**|**Categoria**|  
+    |**Category**|**Category**|  
     |**Area**|**Prodotto**|  
     |**Output**|**Messaggio**|  
     |**ID correlazione**|**ID correlazione**|  
@@ -205,9 +205,9 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 3. Scegliere **Debug eccezione** per avviare il debug nel punto e nel momento in cui si è verificata l'eccezione.  
   
-    ![Log di IntelliTrace &#45; le eccezioni non gestite di SharePoint](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![Eccezioni non &#45; gestite di SharePoint log IntelliTrace](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Per informazioni dettagliate, vedere [procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Per i tipi di dati registrati dall'agente, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
+   Per una procedura dettagliata, vedere [procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Per i tipi di dati registrati dall'agente, vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Elenco dei thread  
  Esaminare i thread registrati che sono stati eseguiti nel processo di destinazione. È possibile avviare il debug dal primo evento IntelliTrace valido in un thread selezionato.  
@@ -218,7 +218,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 2. Nella parte inferiore di **Elenco dei thread**scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un thread.  
   
-    Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
+    Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).  
   
    I dati dei thread creati dall'utente potrebbero essere più utili di quelli creati da un server e gestiti per applicazioni Web ospitate in IIS.  
   
@@ -256,9 +256,9 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 |**Colonna**|**Mostra**|  
 |----------------|-------------------|  
-|**Nome modulo**|Nome del file di modulo|  
+|**Module Name**|Nome del file di modulo|  
 |**Percorso modulo**|Posizione sul disco in cui è stato caricato il modulo|  
-|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Individuare i file di simboli (con estensione pdb) e i file di origine](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?  
  [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
@@ -270,7 +270,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Forum  
- [Debugger di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Debugger di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>Materiale sussidiario  
- [Esecuzione di test per il recapito continuo con Visual Studio 2012 – capitolo 6: Una casella degli strumenti di test](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [Test per una distribuzione continua con Visual Studio 2012 – Capitolo 6: Casella degli strumenti per test](https://go.microsoft.com/fwlink/?LinkID=255203)

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663593"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295946"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Non generare eccezioni in posizioni non previste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72663593"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Category|Microsoft. Design|
+|Category|Microsoft.Design|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
@@ -89,16 +89,16 @@ ms.locfileid: "72663593"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  Un metodo **Equals** deve restituire `true` o `false` anziché generare un'eccezione. Se, ad esempio, viene passato un valore uguale a due tipi non corrispondenti, deve restituire solo `false` anziché generare un <xref:System.ArgumentException>.
+  Un metodo **Equals** deve restituire `true` o `false` anziché generare un'eccezione. Se, ad esempio, viene passato un valore uguale a due tipi non corrispondenti, deve restituire solo `false` anziché generare una <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Metodi GetHashCode
  I metodi **GetHashCode** seguenti non devono in genere generare eccezioni:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode (T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere gli elementi nella tabella hash.
 

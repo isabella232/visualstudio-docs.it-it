@@ -1,5 +1,5 @@
 ---
-title: Specificare i simboli (PDB) e file di origine nel Debugger | Microsoft Docs
+title: Specificare i file di simboli (PDB) e di origine nel debugger | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4d4b02d512480d96c501758f4cf0f1313158942
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694919"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300549"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specifica di file di simboli con estensione pdb) e di file di origine nel debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
  Quando si esegue il debug di un progetto nell'IDE di Visual Studio, il debugger conosce la posizione predefinita dei file con estensione pdf e i file di origine per il codice. Se si desidera eseguire il debug del codice al di fuori del codice sorgente del progetto, ad esempio il codice di Windows o di terze parti chiamato dal progetto, è necessario specificare il percorso del file con estensione pdb (e, facoltativamente, i file di origine del codice esterno) e tali file devono corrispondere esattamente alla compilazione dei file eseguibili.
 
- Prima di Visual Studio 2012, per eseguire il debug del codice gestito in un dispositivo remoto era necessario che i file di simboli fossero presenti nel computer remoto. Questo tipo di operazione non è più così complesso. Tutti i file di simboli devono trovarsi nel computer locale o in un percorso specificato nella pagina **Strumenti / Opzioni / Debug / Simboli** .
+ Prima di Visual Studio 2012, per eseguire il debug del codice gestito in un dispositivo remoto era necessario che i file di simboli fossero presenti nel computer remoto. Questa procedura non è più necessaria. Tutti i file di simboli devono trovarsi nel computer locale o in un percorso specificato nella pagina **Strumenti / Opzioni / Debug / Simboli**.
 
-## <a name="BKMK_Find_symbol___pdb__files"></a> In cui il debugger cerca i file con estensione pdb
+## <a name="BKMK_Find_symbol___pdb__files"></a>Percorso in cui il debugger cerca i file con estensione PDB
 
 1. Percorso specificato nella DLL o nel file eseguibile.
 
@@ -58,18 +58,18 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 ### <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> Motivi per cui i file di simboli devono corrispondere esattamente ai file eseguibili
  Il debugger caricherà solo un file con estensione pdb per un file eseguibile che corrisponde esattamente al file pdb creato alla compilazione del file eseguibile (il file pdb deve essere l'originale o una copia del file pdb originale). Poiché il compilatore è ottimizzato per la velocità di compilazione, oltre all'attività principale di creazione di codice corretto ed efficiente, il layout effettivo di un file eseguibile può cambiare anche se il codice non è cambiato. Per altre informazioni, vedere il post del blog sulla [necessità di creare una corrispondenza esatta tra i file di simboli del debugger e i file binari con cui sono stati creati](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
 
-### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> Specificare percorsi dei simboli e il comportamento di caricamento
+### <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>Specificare i percorsi dei simboli e il comportamento di caricamento
  Quando si esegue il debug di un progetto nell'IDE di Visual Studio, il debugger carica automaticamente i file di simboli presenti nella directory del progetto. È possibile specificare percorsi di ricerca alternativi e server di simboli per Microsoft, Windows o i componenti di terze parti in **Strumenti / Opzioni / Debug / Simboli**. È anche possibile indicare moduli specifici per cui il debugger deve caricare automaticamente i simboli. È quindi possibile modificare queste impostazioni manualmente durante il debug.
 
-1. In Visual Studio aprire la pagina **Strumenti / Opzioni / Debug / Simboli** .
+1. In Visual Studio aprire la pagina **Strumenti / Opzioni / Debug / Simboli**.
 
-    ![Strumenti di &#45; opzioni &#45; debug &#45; pagina simboli](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
+    ![Pagina &#45; dei &#45; simboli &#45; di debug delle opzioni degli strumenti](../debugger/media/dbg-tools-options-symbols.png "DBG_Tools_Options_Symbols")
 
-2. Scegliere la cartella ![strumenti&#47; opzioni&#47; debug&#47;icona della cartella simboli](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icona. Nella casella **Percorsi dei file di simboli (pdb)** verrà visualizzato un testo modificabile.
+2. Scegliere l'icona ![della&#47; cartella&#47; strumenti&#47;per il debug dei simboli cartella simboli](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") . Nella casella **Percorsi dei file di simboli (pdb)** verrà visualizzato un testo modificabile.
 
 3. Digitare l'URL o il percorso della directory del server di simboli o il percorso del simbolo. La funzione di completamento delle istruzioni facilita l'individuazione del formato corretto.
 
-4. Per migliorare le prestazioni di caricamento dei simboli, digitare il percorso di una directory locale in cui i server di simboli possono copiare i simboli nella casella **Directory memorizzazione simboli nella cache** .
+4. Per migliorare le prestazioni di caricamento dei simboli, digitare il percorso di una directory locale in cui i server di simboli possono copiare i simboli nella casella **Directory memorizzazione simboli nella cache**.
 
    > [!NOTE]
    > Non inserire la cache dei simboli in una cartella protetta, ad esempio la cartella C:\Windows o una delle relative sottocartelle. Usare invece una cartella di lettura e scrittura.
@@ -78,13 +78,13 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
    È possibile specificare i file da caricare automaticamente dai percorsi della casella **Percorsi dei file di simboli (pdb)** all'avvio del debug. I file di simboli nella directory del progetto vengono sempre caricati.
 
-5. Scegliere **Tutti i moduli, eccetto quelli esclusi** per caricare tutti i simboli per tutti i moduli, tranne quelli specificati alla scelta del collegamento **Specificare moduli esclusi** .
+5. Scegliere **Tutti i moduli, eccetto quelli esclusi** per caricare tutti i simboli per tutti i moduli, tranne quelli specificati alla scelta del collegamento **Specificare moduli esclusi**.
 
-6. Scegliere l'opzione **Solo moduli specificati** , quindi scegliere **Specificare moduli** per elencare i moduli dei file di simboli che si desidera caricare automaticamente. I file di simboli per altri moduli vengono ignorati.
+6. Scegliere l'opzione **Solo moduli specificati**, quindi scegliere **Specificare moduli** per elencare i moduli dei file di simboli che si desidera caricare automaticamente. I file di simboli per altri moduli vengono ignorati.
 
-   **Specificare le opzioni dei simboli aggiuntive**
+   **Specificare le opzioni aggiuntive per i simboli**
 
-   È anche possibile impostare le opzioni seguenti nella pagina **Strumenti / Opzioni / Debug / Simboli** :
+   È anche possibile impostare le opzioni seguenti nella pagina **Strumenti / Opzioni / Debug / Simboli**:
 
    **Avvisa se non vi sono simboli all'avvio (solo nativo)**
 
@@ -105,7 +105,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
  Per eseguire il debug di un arresto anomalo del sistema che si verifica durante una chiamata a una DLL di sistema o a una libreria di terze parti, spesso sono necessari file con estensione pdb del sistema contenenti i simboli per DLL, file EXE e driver di dispositivo di Windows. È possibile ottenere questi simboli dai server dei simboli pubblici Microsoft. I server dei simboli pubblici Microsoft forniscono simboli per i sistemi operativi Windows, oltre a MDAC, IIS, ISA e [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- Per utilizzare i server di simboli Microsoft, scegliere **Opzioni e impostazioni** dal menu **Debug** , quindi scegliere **Simboli**. Selezionare **Server dei simboli Microsoft**.
+ Per utilizzare i server di simboli Microsoft, scegliere **Opzioni e impostazioni** dal menu **Debug**, quindi scegliere **Simboli**. Selezionare **Server dei simboli Microsoft**.
 
  **Server di simboli in una rete interna o nel computer locale**
 
@@ -135,7 +135,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
    Quando si verifica uno di questi eventi, nel debugger viene visualizzata la pagina **Nessun simbolo caricato** per consentire l'individuazione e il caricamento dei simboli necessari.
 
-   ![Pagina Nessun simbolo caricato](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
+   ![Pagina nessun simbolo caricato](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")
 
 - Per modificare i percorsi di ricerca, scegliere un percorso non selezionato o scegliere **Nuovo** e immettere un nuovo percorso. Scegliere **Carica** per cercare nuovamente i percorsi e per caricare il file di simboli se viene trovato.
 
@@ -147,13 +147,13 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
 - Per visualizzare sempre il disassembly quando i file di origine o di simboli non vengono trovati, scegliere il collegamento **Finestra di dialogo Opzioni** e selezionare sia **Attiva debug a livello di indirizzo** sia **Mostra disassembly se l'origine non è disponibile**.
 
-   ![Le opzioni &#47; debug &#47; opzioni di disassembly generali](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
+   ![Opzioni &#47; debug &#47; opzioni generali Disassembly](../debugger/media/dbg-options-general-disassembly-checkbox.png "DBG_Options_General_disassembly_checkbox")
 
   **Modificare le opzioni dei simboli dal menu di scelta rapida**
 
   In modalità di interruzione è possibile trovare e caricare i simboli per gli elementi visualizzati nelle finestre Stack di chiamate, Moduli, Variabili locali, Auto e in tutte le finestre Espressioni di controllo. Selezionare un elemento nella finestra, aprire il menu di scelta rapida e scegliere una delle opzioni seguenti:
 
-|Opzione|Descrizione|
+|Opzione|description|
 |------------|-----------------|
 |**Carica simboli**|Tenta di caricare i simboli dai percorsi specificati nella pagina **Debug** / **Simboli** della finestra di dialogo **Opzioni** di Visual Studio. Se il file di simboli non viene trovato, si apre Esplora file per consentire di specificare un nuovo percorso per la ricerca.|
 |**Informazioni sul caricamento simboli**|Vengono fornite informazioni che mostrano il percorso di un file di simboli caricato o i percorsi cercati se il file non è stato trovato dal debugger.|
@@ -167,7 +167,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
  Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si esegue una compilazione con [/ZI o /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (per C/C++).
 
- In [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]l'opzione [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) assegna un nome al file con estensione pdb creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con le procedure guidate, l'opzione **/Fd** viene impostata in modo da creare un file con estensione pdb denominato *project*.pdb.
+ In [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] l'opzione [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) assegna un nome al file con estensione pdb creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con le procedure guidate, l'opzione **/Fd** viene impostata in modo da creare un file con estensione pdb denominato *project*.pdb.
 
  Se l'applicazione C/C++ viene compilata usando un makefile e si specifica **/ZI** o **/Zi** senza **/Fd**, vengono generati due file con estensione pdb:
 
@@ -175,17 +175,17 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
 - project.pdb   In questo file vengono archiviate tutte le informazioni di debug relative al file con estensione exe. Per C/C++, questo file si trova nella sottodirectory \debug.
 
-  Ogni volta che crea un file OBJ, il compilatore C/C++ unisce le informazioni di debug nel file VC*x*.pdb. Queste includono informazioni sui tipi ma non sui simboli, quali le definizioni delle funzioni. Pertanto, anche se ogni file di origine include file di intestazione comuni, ad esempio \<Windows. h >, i typedef di tali intestazioni vengono archiviati una sola volta, anziché in ogni file OBJ.
+  Ogni volta che crea un file OBJ, il compilatore C/C++ unisce le informazioni di debug nel file VC*x*.pdb. Queste includono informazioni sui tipi ma non sui simboli, quali le definizioni delle funzioni. Quindi, anche se ogni file di origine include file di intestazione comuni, ad esempio \<Windows. h >, i typedef di tali intestazioni vengono archiviati solo una volta, anziché in ogni file OBJ.
 
   Il linker crea il file project.pdb contenente informazioni di debug relative al file EXE del progetto. Il file project.pdb contiene non solo le informazioni sui tipi disponibili nel file VC*x*.pdb, ma tutte le informazioni di debug, inclusi i prototipi di funzione. Entrambi i file con estensione pdb supportano gli aggiornamenti incrementali. Il linker incorpora inoltre il percorso del file con estensione pdb nel file con estensione exe o dll creato.
 
-  Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, ad esempio perché il progetto è stato spostato in un altro computer, il debugger cerca nel percorso contenente il file exe i percorsi di simboli specificati nella finestra di dialogo **Opzioni** (cartella**Debug** , nodo **Simboli** ). Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.
+  Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, ad esempio perché il progetto è stato spostato in un altro computer, il debugger cerca nel percorso contenente il file exe i percorsi di simboli specificati nella finestra di dialogo **Opzioni** (cartella **Debug**, nodo **Simboli**). Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.
 
   **Opzioni di .NET Framework**
 
-  Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si compila con **/debug**. È possibile compilare applicazioni con **/debug:full** o **/debug:pdbonly**. Se si usa l'opzione di compilazione **/debug:full** , verrà generato codice di cui è possibile effettuare il debug. Se si usa l'opzione di compilazione **/debug:pdbonly** , vengono generati file con estensione pdb ma non l'attributo `DebuggableAttribute` , che indica al compilatore JIT che sono disponibili informazioni di debug. Usare **/debug:pdbonly** per generare file con estensione pdb per una build di rilascio che non si vuole sottoporre a debug. Per altre informazioni, vedere [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) o [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si compila con **/debug**. È possibile compilare applicazioni con **/debug:full** o **/debug:pdbonly**. Se si usa l'opzione di compilazione **/debug:full**, verrà generato codice di cui è possibile effettuare il debug. Se si usa l'opzione di compilazione **/debug:pdbonly**, vengono generati file con estensione pdb ma non l'attributo `DebuggableAttribute`, che indica al compilatore JIT che sono disponibili informazioni di debug. Usare **/debug:pdbonly** per generare file con estensione pdb per una build di rilascio che non si vuole sottoporre a debug. Per altre informazioni vedere [/debug (Opzioni del compilatore C#)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) o [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
-  Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, viene eseguita una ricerca nel percorso contenente il file EXE e quindi nei percorsi di simboli specificati nella finestra di dialogo **Opzioni** . Questo percorso in genere corrisponde alla cartella **Debug** del nodo **Simboli** . Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.
+  Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, viene eseguita una ricerca nel percorso contenente il file EXE e quindi nei percorsi di simboli specificati nella finestra di dialogo **Opzioni**. Questo percorso in genere corrisponde alla cartella **Debug** del nodo **Simboli** . Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.
 
   **Applicazioni Web**
 
@@ -200,7 +200,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
 2. File nella soluzione aperta nell'istanza di Visual Studio.
 
-3. Directory specificate nella pagina **Proprietà comuni** / **Esegui debug dei file di origine** nelle proprietà della soluzione. In **Esplora soluzioni**selezionare il nodo della soluzione e selezionare **Proprietà**. )
+3. Directory specificate nella pagina **Proprietà comuni** / **Esegui debug dei file di origine** nelle proprietà della soluzione. In **Esplora soluzioni** selezionare il nodo della soluzione e selezionare **Proprietà**. )
 
 4. Informazioni di origine del file con estensione pdb del modulo. Può essere il percorso del file di origine alla compilazione del modulo o un comando a un server di origine.
 
@@ -214,7 +214,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
 2. Nel nodo **Proprietà comuni** scegliere **Esegui debug dei file di origine**.
 
-3. Fare clic sulla cartella ![strumenti&#47; opzioni&#47; debug&#47;icona della cartella simboli](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") icona. Nell'elenco **Directory contenenti codice sorgente** viene visualizzato testo modificabile.
+3. Fare clic sull'icona dell' ![icona della cartella&#47; strumenti cartella&#47; &#47;debug simboli](../debugger/media/dbg-tools-options-foldersicon.png "DBG_Tools_Options_FoldersIcon") . Nell'elenco **Directory contenenti codice sorgente** viene visualizzato testo modificabile.
 
 4. Aggiungere il percorso che si desidera cercare.
 
@@ -224,7 +224,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
  Quando il codice sorgente non è disponibile nel computer locale oppure il file con estensione pdb non corrisponde al codice sorgente, è possibile usare il server di origine per eseguire il debug di un'applicazione. Il server di origine riceve richieste di file e restituisce i file effettivi. Questo server viene eseguito tramite un file DLL denominato srcsrv.dll. Il server di origine legge il file con estensione pdb dell'applicazione, che contiene i puntatori al repository del codice sorgente nonché alcuni comandi utilizzati per recuperare il codice sorgente dal repository. È possibile limitare i comandi che è consentito eseguire dal file con estensione pdb dell'applicazione specificando i comandi consentiti all'interno di un file srcsrv.ini, che deve essere inserito nella stessa directory dei file srcsrv.dll e devenv.exe.
 
 > [!IMPORTANT]
-> Poiché è possibile incorporare i comandi arbitrari nel file pdb dell'applicazione, assicurarsi di inserire nel file srcsrv.ini solo quelli da eseguire. Eventuali tentativi di eseguire un comando non presente nel file srcsvr.ini causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [avviso di sicurezza: Il debugger deve eseguire un comando non attendibile](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Se ad esempio si considera attendibile il file cmd.exe, un utente malintenzionato potrebbe specificare parametri in grado di rendere dannoso il comando.
+> Poiché è possibile incorporare i comandi arbitrari nel file pdb dell'applicazione, assicurarsi di inserire nel file srcsrv.ini solo quelli da eseguire. Eventuali tentativi di eseguire un comando non presente nel file srcsvr.ini causerà la visualizzazione di una finestra di dialogo di conferma. Per altre informazioni, vedere [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Poiché non viene eseguita alcuna convalida sui parametri dei comandi, prestare attenzione nell'utilizzare i comandi attendibili. Se ad esempio si considera attendibile il file cmd.exe, un utente malintenzionato potrebbe specificare parametri in grado di rendere dannoso il comando.
 
  **Per abilitare l'utilizzo di un server di origine**
 
@@ -232,17 +232,17 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
 2. Scegliere **Opzioni** dal menu **Strumenti**.
 
-     Verrà visualizzata la finestra di dialogo **Opzioni** .
+     Verrà visualizzata la finestra di dialogo **Opzioni**.
 
 3. Nel nodo **Debug** scegliere **Generale**.
 
-4. Selezionare la casella di controllo **Attiva il supporto del server di origine** .
+4. Selezionare la casella di controllo **Attiva il supporto del server di origine**.
 
-     ![Abilitare le opzioni relative ai server di origine](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
+     ![Abilita opzioni del server di origine](../debugger/media/dbg-options-general-enablesrcsrvr-checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")
 
 5. (Facoltativo) Scegliere le opzioni figlio desiderate.
 
      Si noti che sia **Consenti server origine per assembly parzialmente attendibili (solo gestito)** che **Esegui sempre comandi del server di origine non attendibili senza chiedere conferma** possono aumentare i rischi di sicurezza descritti.
 
 ## <a name="see-also"></a>Vedere anche
- [Modifiche nel caricamento remoto dei simboli .NET in Visual Studio 2012 e 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)
+ [Modifiche nel caricamento remoto dei simboli .NET in Visual Studio 2012 e 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

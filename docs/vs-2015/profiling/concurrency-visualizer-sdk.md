@@ -11,19 +11,19 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaaaacdcc5cf7e3044505f7cdb7aeb2e7e3e7078
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871972"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300637"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).(Introduzione all'SDK del visualizzatore di concorrenza).
+Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](https://go.microsoft.com/fwlink/?LinkId=235405).(Introduzione all'SDK del visualizzatore di concorrenza).
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Proprietà
  Flag, span e messaggi hanno due proprietà: categoria e importanza. Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) è possibile usare queste proprietà per filtrare il set di marcatori visualizzati. Queste proprietà influiscono anche sulla rappresentazione visiva dei marcatori. Ad esempio, l'importanza è rappresentata dalla dimensione dei flag, mentre il colore viene usato per indicare la categoria.
 
 ## <a name="basic-usage"></a>Utilizzo di base
@@ -31,7 +31,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 ### <a name="c-and-visual-basic"></a>C# e Visual Basic
 
-In C#, Visual Basic e altro codice gestito, usare il provider predefinito chiamando i metodi nella classe [markers](/previous-versions/hh694099(v=vs.140)) . Espone quattro metodi per la generazione di marcatori: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Sono disponibili più overload per queste funzioni, a seconda che si voglia o meno usare le impostazioni predefinite per le proprietà.  L'overload più semplice accetta solo un parametro di stringa che specifica la descrizione dell'evento. La descrizione viene visualizzata nei rapporti del visualizzatore di concorrenza.
+In C#, Visual Basic e altro codice gestito usare il provider predefinito chiamando i metodi nella classe [Markers](/previous-versions/hh694099(v=vs.140)). Espone quattro metodi per la generazione di marcatori: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Sono disponibili più overload per queste funzioni, a seconda che si voglia o meno usare le impostazioni predefinite per le proprietà.  L'overload più semplice accetta solo un parametro di stringa che specifica la descrizione dell'evento. La descrizione viene visualizzata nei rapporti del visualizzatore di concorrenza.
 
 #### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Aggiungere il supporto di SDK C# a un progetto di o Visual Basic
 
@@ -78,7 +78,7 @@ In C#, Visual Basic e altro codice gestito, usare il provider predefinito chiama
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Per usare un nuovo provider marcatori in un progetto C# o Visual Basic
 
-1. Creare un oggetto [MarkerWriter](/previous-versions/hh694138(v=vs.140)) . Il costruttore accetta un GUID.
+1. Creare un oggetto [MarkerWriter](/previous-versions/hh694138(v=vs.140)). Il costruttore accetta un GUID.
 
 2. Per registrare il provider, aprire la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) del visualizzatore di concorrenza.  Selezionare la scheda **Marcatori** e selezionare il pulsante **Aggiungi nuovo provider**. Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) immettere il GUID usato per creare il provider e una descrizione del provider.
 
@@ -90,7 +90,7 @@ In C#, Visual Basic e altro codice gestito, usare il provider predefinito chiama
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Per usare una serie di marcatori in un progetto C# o Visual Basic
 
-1. Per usare un nuovo [MarkerSeries](/previous-versions/hh694127(v=vs.140)), crearlo prima di tutto usando un oggetto [MarkerWriter](/previous-versions/hh694138(v=vs.140)) e quindi generare gli eventi marcatore direttamente dalla nuova serie.
+1. Per usare un nuovo oggetto [MarkerSeries](/previous-versions/hh694127(v=vs.140)), è necessario prima crearlo tramite un oggetto [MarkerWriter](/previous-versions/hh694138(v=vs.140)). A questo punto è possibile generare gli eventi marcatori direttamente dalla nuova serie.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);
@@ -123,7 +123,7 @@ In C#, Visual Basic e altro codice gestito, usare il provider predefinito chiama
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|DESCRIZIONE|
+|Titolo|description|
 |-----------|-----------------|
 |[Riferimento alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
 |[Riferimento alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare un controllo della casella degli strumenti che usa Windows Form | Microsoft Docs'
+title: 'Procedura: creare un controllo della casella degli strumenti che usa Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442915"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300435"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procedura: Creare un controllo della casella degli strumenti che usa Windows Form
 Il modello di controllo della casella degli strumenti Windows Form incluso in [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] consente di creare controlli Windows Form che vengono aggiunti automaticamente alla **casella degli strumenti** quando l'estensione viene installata. Questo argomento mostra come usare il modello per creare un controllo della **casella degli strumenti** che è possibile distribuire ad altri utenti.  
   
 > [!NOTE]
-> Per informazioni su come scaricare Visual Studio SDK, vedere il [centro per sviluppatori per l'estensione dell'IDE di Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) nel sito Web MSDN.  
+> Per informazioni su come scaricare Visual Studio SDK, vedere il [centro per sviluppatori per l'estensione dell'IDE di Visual Studio](https://go.microsoft.com/fwlink/?linkid=121964) nel sito Web MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Creazione di un controllo della casella degli strumenti  
  Usare il modello di controllo della casella degli strumenti Windows Form per creare il progetto e quindi compilare un'interfaccia utente nella finestra di progettazione.  
@@ -87,7 +87,7 @@ Il modello di controllo della casella degli strumenti Windows Form incluso in [!
   
 2. Caricare il file VSIX in una rete o in un sito Web.  
   
-     Se si carica il file per il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web, altri utenti potranno usare **gestore estensioni del** in Visual Studio per trovare il controllo e installarlo.  
+     Se si carica il file nel sito Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , altri utenti possono usare **Gestione estensioni** in Visual Studio per trovare il controllo e installarlo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di un controllo della casella degli strumenti WPF](../extensibility/creating-a-wpf-toolbox-control.md)

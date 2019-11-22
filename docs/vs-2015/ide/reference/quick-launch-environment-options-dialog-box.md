@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77220ef55871d59bf8c8810547fccae5399869ce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665682"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297804"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "72665682"
 ## <a name="show-previous-results"></a>Visualizzare i risultati precedenti
  Per impostazione predefinita, il termine di ricerca immesso non viene mantenuto tra sessioni di ricerca. Se si cerca un termine, si sposta il cursore all'esterno dell'area **Avvio veloce** e quindi si torna nell'area, la stringa di ricerca viene cancellata. Per mantenere i risultati della ricerca, nella finestra di dialogo **Opzioni** scegliere **Avvio veloce** e quindi selezionare la casella di controllo **Mostra risultati della ricerca precedente quando viene attivato Avvio veloce** . In seguito, se si esegue una ricerca, si esce dall'area Avvio veloce e si torna nell'aera, verrà mantenuto il termine di ricerca usato per ultimo e verranno inoltre visualizzati i risultati della ricerca.
 
- Per i suggerimenti e i consigli più recenti sull'uso di **Avvio veloce**, vedere il [blog di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
+ Per i suggerimenti e i consigli più recenti sull'uso di **Avvio veloce**, vedere il [blog di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Vedere anche
  [Elementi generali dell'interfaccia utente (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md) finestra di [dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)

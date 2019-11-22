@@ -11,17 +11,17 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698471"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299795"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installare Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](http://go.microsoft.com/fwlink/p/?LinkId=536383) è un componente installabile di Visual Studio 2015. Include modelli multipiattaforma di Visual Studio e installa gli SDK e gli strumenti multipiattaforma per iniziare rapidamente, senza doverli individuare, scaricare e configurare manualmente. Con questi strumenti di Visual Studio è possibile creare, modificare, eseguire il debug e testare facilmente i progetti multipiattaforma. Questo argomento descrive come installare gli strumenti e il software di terze parti necessari per sviluppare app multipiattaforma mediante Visual Studio. Per una panoramica del componente, vedere [Visual C++ per dispositivi mobili multipiattaforma](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma]https://go.microsoft.com/fwlink/p/?LinkId=536383) è un componente installabile di Visual Studio 2015. Include modelli multipiattaforma di Visual Studio e installa gli SDK e gli strumenti multipiattaforma per iniziare rapidamente, senza doverli individuare, scaricare e configurare manualmente. Con questi strumenti di Visual Studio è possibile creare, modificare, eseguire il debug e testare facilmente i progetti multipiattaforma. Questo argomento descrive come installare gli strumenti e il software di terze parti necessari per sviluppare app multipiattaforma mediante Visual Studio. Per una panoramica del componente, vedere [Visual C++ per dispositivi mobili multipiattaforma](https://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Requisiti](#Requirements)   
  [Ottenere gli strumenti](#GetTheTools)   
@@ -40,12 +40,12 @@ Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](http:
   
 - Gli emulatori Windows Phone e l'emulatore di Microsoft Visual Studio per Android richiedono un computer in grado di eseguire Hyper-V. Per poter installare ed eseguire gli emulatori, è prima necessario abilitare la funzionalità Hyper-V in Windows. Per altre informazioni, vedere i [requisiti di sistema](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) dell'emulatore.  
   
-- Gli emulatori Android x86 inclusi in Android SDK offrono i risultati migliori nei computer in grado di eseguire il driver HAXM Intel. A questo scopo è necessario un processore Intel x64 con supporto di VT-x e della funzionalità del bit di disattivazione dell'esecuzione (XD, Execute Disable Bit). Per altre informazioni, vedere le [istruzioni di installazione per Intel® Hardware Accelerated Execution Manager - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Gli emulatori Android x86 inclusi in Android SDK offrono i risultati migliori nei computer in grado di eseguire il driver HAXM Intel. A questo scopo è necessario un processore Intel x64 con supporto di VT-x e della funzionalità del bit di disattivazione dell'esecuzione (XD, Execute Disable Bit). Per altre informazioni, vedere le [istruzioni di installazione per Intel® Hardware Accelerated Execution Manager - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
-- La compilazione di codice per iOS richiede un ID Apple, un account iOS Developer Program e un computer Mac in grado di eseguire [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) o versioni successive su OS X Mavericks o versioni successive. Per una procedura di installazione semplice, vedere [Install tools for iOS](#InstallForiOS).  
+- La compilazione di codice per iOS richiede un ID Apple, un account iOS Developer Program e un computer Mac in grado di eseguire [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) o versioni successive su OS X Mavericks o versioni successive. Per una procedura di installazione semplice, vedere [Install tools for iOS](#InstallForiOS).  
   
 ## <a name="GetTheTools"></a> Ottenere gli strumenti  
- Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma è un componente installabile incluso nelle edizioni Community, Professional ed Enterprise di Visual Studio. Per ottenere Visual Studio, passare alla pagina [Download di Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) e scaricare Visual Studio 2015 con Update 2 RC o versioni successive.  
+ Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma è un componente installabile incluso nelle edizioni Community, Professional ed Enterprise di Visual Studio. Per ottenere Visual Studio, passare alla pagina [Download di Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) e scaricare Visual Studio 2015 con Update 2 RC o versioni successive.  
   
 ## <a name="InstallTheTools"></a> Installare gli strumenti  
  Il programma di installazione per Visual Studio 2015 include un'opzione per installare Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma. Vengono installati gli strumenti, i modelli e i componenti del linguaggio C++ richiesti per Visual Studio, i set di strumenti GCC e Clang necessari per le compilazioni e il debug di Android e i componenti per comunicare con un Mac per lo sviluppo iOS. Vengono anche installati tutti gli strumenti e gli SDK di terze parti necessari per supportare lo sviluppo di app per iOS e Android. Molti di questi strumenti di terze parti sono software open source necessari per il supporto della piattaforma Android.  
@@ -60,11 +60,11 @@ Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](http:
   
 1. Eseguire il programma di installazione di Visual Studio 2015 scaricato mediante il collegamento in [Ottenere gli strumenti](#GetTheTools). Per installare i componenti facoltativi, scegliere **Personalizzata** come tipo di installazione. Scegliere **Avanti** per selezionare i componenti facoltativi da installare.  
   
-2. In Selezione funzionalità espandere **Sviluppo di app per dispositivi mobili multipiattaforma** e selezionare **Sviluppo di app per dispositivi mobili in Visual C++**.  
+2. In Selezione funzionalità espandere **Sviluppo di app per dispositivi mobili multipiattaforma** e selezionare **Sviluppo di app per dispositivi mobili in Visual C++** .  
   
-     ![Selezionare Sviluppo di app per dispositivi mobili in Visual C&#43;&#43;](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Seleziona sviluppo per&#43; &#43; dispositivi mobili Visual C](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
-     Per impostazione predefinita, quando si seleziona **Sviluppo di app per dispositivi mobili in Visual C++**, l'opzione **Linguaggi di programmazione** viene impostata per installare **Visual C++** e le opzioni **Strumenti comuni e Software Development Kit** vengono impostate per installare i componenti di terze parti richiesti. Se necessario, è possibile scegliere componenti aggiuntivi. Per impostazione predefinita, è selezionato anche **Microsoft Visual Studio Emulator for Android**. I componenti già installati risultano inattivi nell'elenco.  
+     Per impostazione predefinita, quando si seleziona **Sviluppo di app per dispositivi mobili in Visual C++** , l'opzione **Linguaggi di programmazione** viene impostata per installare **Visual C++** e le opzioni **Strumenti comuni e Software Development Kit** vengono impostate per installare i componenti di terze parti richiesti. Se necessario, è possibile scegliere componenti aggiuntivi. Per impostazione predefinita, è selezionato anche **Microsoft Visual Studio Emulator for Android**. I componenti già installati risultano inattivi nell'elenco.  
   
      Per compilare app di Windows universale e condividere codice tra tali app e i progetti iOS e Android, in **Selezione funzionalità** espandere **Sviluppo per Windows e Web** e selezionare **Strumenti per lo sviluppo di app di Windows universale**. Se non si prevede di sviluppare app di Windows universale, è possibile ignorare questa opzione.  
   
@@ -129,7 +129,7 @@ Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma](http:
   
      ![Opzioni di percorso dello strumento Android](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3. Per modificare il percorso usato da uno strumento, selezionare la casella di controllo accanto al percorso e modificare il percorso della cartella nella casella di testo. È anche possibile usare il pulsante Sfoglia (**...**) per aprire una finestra di dialogo **Selezionare il percorso** in cui scegliere la cartella.  
+3. Per modificare il percorso usato da uno strumento, selezionare la casella di controllo accanto al percorso e modificare il percorso della cartella nella casella di testo. È anche possibile usare il pulsante Sfoglia ( **...** ) per aprire una finestra di dialogo **Selezionare il percorso** in cui scegliere la cartella.  
   
 4. Scegliere **OK** per salvare i percorsi personalizzati delle cartelle degli strumenti.  
   

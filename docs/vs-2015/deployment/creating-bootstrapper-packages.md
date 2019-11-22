@@ -1,5 +1,5 @@
 ---
-title: Creazione di pacchetti di programma di bootstrap | Microsoft Docs
+title: Creazione di pacchetti del programma di avvio automatico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187800"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300726"
 ---
 # <a name="creating-bootstrapper-packages"></a>Creazione di programmi di avvio automatico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Il programma di installazione è un programma generico che può essere configura
  Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.  
   
 ## <a name="creating-custom-packages"></a>Creazione di pacchetti personalizzati  
- È possibile generare i manifesti usando l'editor XML in Visual Studio. Per altre informazioni, vedere [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md) e [come: Creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md). Per un esempio di creazione di un pacchetto di programma di avvio automatico, vedere [procedura dettagliata: Creazione di un programma di avvio automatico per visualizzare l'informativa sulla Privacy dei messaggi di richiesta](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ È possibile generare i manifesti usando l'editor XML in Visual Studio. Per altre informazioni, vedere [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) e [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Per un esempio di creazione di un pacchetto del programma di avvio automatico, vedere [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Per creare un pacchetto del programma di avvio automatico, è necessario fornire il ridistribuibile sotto forma di un file EXE o MSI al generatore di manifesti del programma di avvio automatico. Il generatore di manifesti del programma di avvio automatico crea, quindi, i file seguenti:  
   
@@ -70,7 +70,7 @@ Il programma di installazione è un programma generico che può essere configura
   
   `package.xml`  
   
-  Infine, copiare i file ridistribuibili nel percorso della cartella del programma di avvio automatico. Per altre informazioni, vedere [Procedura: Creare un pacchetto Bootstrapper localizzata](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Infine, copiare i file ridistribuibili nel percorso della cartella del programma di avvio automatico. Per altre informazioni, vedere [Procedura: Creare un pacchetto del programma di avvio automatico personalizzato](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.  
   
-|Proprietà|Descrizione|  
+|Proprietà|description|  
 |--------------|-----------------|  
 |ApplicationName|Nome dell'applicazione.|  
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- L'elenco dei ridistribuibili è un file XML che deve essere denominato utilizzando il formato seguente: *Nome società*. *Nome del componente*. RedistList. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome Acme.DataWidgets.RedistList.xml. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
+ L'elenco dei ridistribuibili è un file XML al quale è necessario assegnare un nome usando il formato *Nome azienda*.*Nome componente*.RedistList.xml. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome Acme.DataWidgets.RedistList.xml. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -127,5 +127,5 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md)   
- [Riferimenti dello Schema di pacchetto e del prodotto](../deployment/product-and-package-schema-reference.md)   
- [Usare il programma di avvio automatico di Visual Studio 2005 per avviare l'installazione](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)   
+ [Usare il programma di avvio automatico di Visual Studio 2005 per avviare l'installazione](https://go.microsoft.com/fwlink/?LinkId=107537)

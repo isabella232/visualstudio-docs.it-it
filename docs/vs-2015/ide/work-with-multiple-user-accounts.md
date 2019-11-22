@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9aa08d68da53f54491439da8e35c28db90f4c508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296784"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Se si dispone di più account Microsoft e/o di account aziendali o dell’istitu
 
  ![Finestra di dialogo Cambia autenticazione per ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- Per altre informazioni sui diversi tipi di autenticazione in ASP.NET, vedere [Creazione di progetti Web ASP.NET in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (le informazioni sull'autenticazione sono ancora rilevanti per Visual Studio 2015).
+ Per altre informazioni sui diversi tipi di autenticazione in ASP.NET, vedere [Creazione di progetti Web ASP.NET in Visual Studio 2013](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (le informazioni sull'autenticazione sono ancora rilevanti per Visual Studio 2015).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Accedere all'account di Visual Studio Team Services
  Nel menu principale scegliere **Team> Connetti a Team Foundation Server** per visualizzare la finestra **Team Explorer**. Fare clic su **Seleziona progetti team**. A questo punto nella casella di riepilogo sotto **Seleziona Team Foundation Server**verrà visualizzato l'URL dell'account di Visual Studio Team Services. Quando si seleziona l'URL verrà registrato senza dover immettere nuovamente le credenziali.

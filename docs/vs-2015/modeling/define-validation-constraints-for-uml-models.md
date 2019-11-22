@@ -11,26 +11,26 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f279216d06972578f5173e57375c89542c71e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669891"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295839"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile definire vincoli di convalida che verificano se il modello soddisfa una condizione specificata. Ad esempio, si può definire un vincolo che assicura che un utente non crei un ciclo di relazioni di ereditarietà. Il vincolo viene richiamato quando l'utente cerca di aprire o di salvare il modello e può essere richiamato anche manualmente. Se il vincolo non riesce, alla finestra di errore viene aggiunto un messaggio definito dall'utente. È possibile creare un pacchetto di questi vincoli in un progetto[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
+È possibile definire vincoli di convalida che verificano se il modello soddisfa una condizione specificata. Ad esempio, si può definire un vincolo che assicura che un utente non crei un ciclo di relazioni di ereditarietà. Il vincolo viene richiamato quando l'utente cerca di aprire o di salvare il modello e può essere richiamato anche manualmente. Se il vincolo non riesce, alla finestra di errore viene aggiunto un messaggio definito dall'utente. È possibile creare un pacchetto di questi vincoli in un progetto[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
 
  Si possono definire anche vincoli che convalidano il modello a fronte di risorse esterne, ad esempio un database. Se si vuole convalidare il codice del programma rispetto a un diagramma livello, vedere [aggiungere la convalida dell'architettura personalizzata ai diagrammi livello](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
- Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano modelli UML, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="applying-validation-constraints"></a>Applicazione dei vincoli di convalida
  I vincoli di convalida vengono applicati in tre casi: quando si salva un modello, quando si apre un modello e quando si fa clic su **Convalida modello UML** nel menu **Architettura** . In ogni caso, verranno applicati solo i vincoli definiti per il caso specifico, anche se di solito si definisce ogni vincolo in modo che venga applicato in più di un caso.
@@ -42,9 +42,9 @@ ms.locfileid: "72669891"
 ## <a name="defining-a-validation-extension"></a>Definizione di un'estensione di convalida
  Per creare un'estensione di convalida per una finestra di progettazione UML, è necessario creare una classe che definisca i vincoli di convalida e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX è un contenitore che può installare il vincolo. Esistono due metodi alternativi per definire un'estensione di convalida:
 
-- **Creare un'estensione di convalida nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.
+- **Creare un'estensione di convalida nella relativa estensione VSIX con un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.
 
-- **Creare una classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
+- **Creare la classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Per creare un'estensione di convalida nella relativa estensione VSIX
 
@@ -63,7 +63,7 @@ ms.locfileid: "72669891"
 
 4. Testare i vincoli premendo F5. Per altre informazioni, vedere [Esecuzione di un vincolo di convalida](#Executing).
 
-5. Installare il comando di menu in un altro computer copiando il file **bin \\ \* \\ \*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
+5. Installare il comando di menu in un altro computer copiando il file **bin\\\*\\\*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
 
    Quando si aggiungono altri file **.cs** , in genere vengono richieste le istruzioni `using` seguenti:
 
@@ -95,7 +95,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 3. Impostare il progetto VSIX come progetto di avvio della soluzione.
 
-    - In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.
+    - In Esplora soluzioni scegliere **Imposta come progetto di avvio** dal menu di scelta rapida del progetto VSIX.
 
 4. In **source.extension.vsixmanifest**, in **Contenuto**, aggiungere il progetto di libreria di classi come componente MEF:
 
@@ -239,7 +239,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }
 ```
 
- Vedere [Programming with the UML API](../modeling/programming-with-the-uml-api.md) per informazioni sui metodi e sui tipi utilizzabili per esplorare e leggere il modello.
+ Vedere [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md) per informazioni sui metodi e sui tipi utilizzabili per esplorare e leggere il modello.
 
 ### <a name="about-validation-constraint-methods"></a>Informazioni sui metodi dei vincoli di convalida
  Ogni vincolo di convalida è definito da un metodo nel seguente formato:
@@ -269,9 +269,9 @@ public void ValidateSomething
 
  `context.LogError("error string", errorCode, elementsWithError);`
 
-- `"error string"` appare nell'elenco errori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+- `"error string"` viene visualizzato nell'elenco errori di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- `errorCode` è una stringa che identifica l'errore in modo univoco
+- `errorCode` è una stringa che dovrebbe identificare l'errore in modo univoco
 
 - `elementsWithError` identifica gli elementi del modello. Quando l'utente fa doppio clic sulla segnalazione errori, verrà selezionata la forma che rappresenta questo elemento.
 
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.
 
-    2. Individuare il file **bin \\ \* \\** _progettoutente_ **. vsix**
+    2. Individuare il file **bin\\\*\\** _progettoutente_ **. vsix**
 
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.
 
@@ -392,9 +392,9 @@ context.LogError(... , usecase);
 
 3. Selezionare l'estensione e quindi scegliere **Disinstalla**.
 
-   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente, in cui *% LocalAppData%* è in genere *driveName*: \Users \\*username*\AppData\Local:
+   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente, in cui *% LocalAppData%* è in genere *driveName*: \Users\\*username*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [versione] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[versione] \Extensions**
 
 ## <a name="Example"></a> Esempio
  In questo esempio vengono trovati i cicli nella relazione di dipendenza tra gli elementi.

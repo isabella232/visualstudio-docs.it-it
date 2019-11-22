@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624159"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291227"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Esplorare e gestire le risorse di archiviazione usando Esplora server
 
@@ -122,7 +122,7 @@ Per impostazione predefinita, un BLOB viene scaricato in una directory temporane
 
 Per caricare i BLOB, selezionare il pulsante **Carica BLOB** quando il contenitore è aperto nella relativa visualizzazione.
 
-È possibile scegliere di caricare uno o più file ed è possibile caricare file di qualsiasi tipo. La finestra **Log attività di Azure** mostra lo stato del caricamento. Per altre informazioni su come usare i dati BLOB, vedere [Come usare il servizio Archiviazione BLOB di Azure in .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+È possibile scegliere di caricare uno o più file ed è possibile caricare file di qualsiasi tipo. La finestra **Log attività di Azure** mostra lo stato del caricamento. Per altre informazioni su come usare i dati BLOB, vedere [Come usare il servizio Archiviazione BLOB di Azure in .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Per visualizzare i log trasferiti nei BLOB
 
@@ -157,7 +157,7 @@ La figura seguente mostra una coda contenente due messaggi:
 
 ![Visualizzazione di una coda](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Per altre informazioni sulle code dei servizi di archiviazione, vedere [Introduzione all'archiviazione code di Azure con .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Per informazioni sul servizio Web per le code dei servizi di archiviazione, vedere [Concetti relativi al servizio di accodamento](http://go.microsoft.com/fwlink/?LinkId=264788). Per informazioni su come inviare messaggi a una coda dei servizi di archiviazione usando Visual Studio, vedere [Invio di messaggi a una coda di servizi di archiviazione](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Per altre informazioni sulle code dei servizi di archiviazione, vedere [Introduzione all'archiviazione code di Azure con .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Per informazioni sul servizio Web per le code dei servizi di archiviazione, vedere [Concetti relativi al servizio di accodamento](https://go.microsoft.com/fwlink/?LinkId=264788). Per informazioni su come inviare messaggi a una coda dei servizi di archiviazione usando Visual Studio, vedere [Invio di messaggi a una coda di servizi di archiviazione](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Le code dei servizi di archiviazione sono diverse dalle code del bus di servizio di Azure. Per altre informazioni sulle code del bus di servizio, vedere[Code, argomenti e sottoscrizioni del bus di servizio](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -227,7 +227,7 @@ La figura seguente mostra un esempio di una stringa di filtro valida:
 
 ## <a name="refresh-storage-data"></a>Aggiornare i dati di archiviazione
 
-Quando Esplora server si connette o riceve dati da un account di archiviazione, il completamento dell'operazione potrebbe richiedere fino a un minuto. Se Esplora server non riesce a stabilire la connessione, potrebbe verificarsi il timeout dell'operazione. Durante il recupero dei dati è possibile continuare a lavorare in altre aree di Visual Studio. Per annullare l'operazione se sta richiedendo troppo tempo, selezionare il pulsante **Interrompi aggiornamento** sulla barra degli strumenti di Esplora server.
+Quando Esplora server si connette o riceve dati da un account di archiviazione, il completamento dell'operazione potrebbe richiedere fino a un minuto. Se Esplora server non riesce a connettersi, l'operazione potrebbe non riuscire. Mentre i dati vengono recuperati, è possibile continuare a lavorare in altre parti di Visual Studio. Per annullare l'operazione se sta richiedendo troppo tempo, selezionare il pulsante **Interrompi aggiornamento** sulla barra degli strumenti di Esplora server.
 
 ### <a name="to-refresh-blob-container-data"></a>Per aggiornare i dati del contenitore BLOB
 
@@ -295,4 +295,4 @@ Se si elimina un account di archiviazione da Esplora server, tale operazione non
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per altre informazioni su come usare servizi di archiviazione di Azure, vedere [Introduzione ad archiviazione di Azure](/azure/storage/common/storage-introduction).
+Per altre informazioni su come usare i servizi di archiviazione di Azure, vedere [Introduzione ad archiviazione di Azure](/azure/storage/common/storage-introduction).

@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609256"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292651"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-the-dsl-project"></a>Creazione del progetto DSL
  Creare il progetto per il linguaggio specifico di dominio.
@@ -98,9 +98,9 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
     1. Assegnare un nome alla nuova proprietà `DefaultNamespace`.
 
-    2. Nella finestra **Proprietà** per la nuova proprietà impostare **valore predefinito** su `DefaultNamespace` e impostare **tipo** su **stringa**.
+    2. Nella finestra **Proprietà** per la nuova proprietà impostare **valore predefinito** su `DefaultNamespace`e impostare **tipo** su **stringa**.
 
-2. Aggiungere una proprietà di dominio denominata `CustomElements` alla classe di dominio **ExampleModel** .
+2. Aggiungere una proprietà di dominio denominata `CustomElements`alla classe di dominio **ExampleModel** .
 
      Nella finestra **Proprietà** per la nuova proprietà impostare **Kind** su **calcolato**.
 
@@ -110,7 +110,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 4. Alla classe di dominio **ExampleElement** aggiungere una proprietà di dominio denominata `IsNamespaceTracking`.
 
-     Nella finestra **Proprietà** per la nuova proprietà impostare **è esplorabile** su **false**, impostare il **valore predefinito** su `true` e impostare **tipo** su **booleano**.
+     Nella finestra **Proprietà** per la nuova proprietà impostare **è esplorabile** su **false**, impostare il **valore predefinito** su `true`e impostare **tipo** su **booleano**.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Per aggiornare gli elementi del diagramma e i dettagli DSL
 
@@ -141,7 +141,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 #### <a name="to-transform-the-text-templates"></a>Per trasformare i modelli di testo
 
-1. Sulla barra degli strumenti **Esplora soluzioni** fare clic su **trasforma tutti i modelli**.
+1. Sulla barra degli strumenti di **Esplora soluzioni** fare clic su **Trasforma tutti i modelli**.
 
 2. Il sistema rigenera il codice per la soluzione e Salva DslDefinition. DSL. Per informazioni sul formato XML dei file di definizione, vedere [il file DslDefinition. DSL](../modeling/the-dsldefinition-dsl-file.md).
 
@@ -156,11 +156,11 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 2. Fare clic con il pulsante destro del mouse sulla nuova cartella **CustomCoded** , scegliere **Aggiungi**, quindi fare clic su **nuovo elemento**.
 
-3. Selezionare il modello **file di codice** , impostare il **nome** su `NamespaceTrackingProperty.cs` e quindi fare clic su **OK**.
+3. Selezionare il modello **file di codice** , impostare il **nome** su `NamespaceTrackingProperty.cs`e quindi fare clic su **OK**.
 
      Il file NamespaceTrackingProperty.cs viene creato e aperto per la modifica.
 
-4. Nella cartella creare i file di codice seguenti: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs` e `TypeDescriptor.cs`.
+4. Nella cartella creare i file di codice seguenti: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`e `TypeDescriptor.cs`.
 
 5. Nel progetto **DslPackage** creare inoltre una cartella `CustomCode` e aggiungervi un file di codice `Package.cs`.
 
@@ -348,7 +348,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
  La definizione del metodo `GetCustomElementsValue` fornisce la logica per la proprietà calcolata CustomElements di `ExampleModel`. Questo metodo conta il numero di `ExampleElement` classi di dominio che dispongono di una proprietà di rilevamento dello spazio dei nomi con un valore aggiornato dall'utente e restituisce una stringa che rappresenta il conteggio come una percentuale degli elementi totali del modello.
 
- Aggiungere inoltre un metodo `OnDefaultNamespaceChanged` per `ExampleModel` ed eseguire l'override del metodo `OnValueChanged` della classe annidata `DefaultNamespacePropertyHandler` di `ExampleModel` per chiamare `OnDefaultNamespaceChanged`.
+ Aggiungere inoltre un metodo `OnDefaultNamespaceChanged` per `ExampleModel`ed eseguire l'override del metodo `OnValueChanged` della classe annidata `DefaultNamespacePropertyHandler` di `ExampleModel` per chiamare `OnDefaultNamespaceChanged`.
 
  Poiché la proprietà una proprietà DefaultNamespace viene utilizzata per calcolare la proprietà di rilevamento dello spazio dei nomi, `ExampleModel` necessario notificare a tutte `ExampleElement` classi di dominio che il valore di una proprietà DefaultNamespace è stato modificato.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675271"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299653"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
 ## <a name="BKMK_Profiling_from_the_command_line"></a> Profilatura dalla riga di comando  
  Per raccogliere dati di profilatura nei dispositivi Windows 8 e Windows Server 2012, inclusi i dispositivi privi di installazione di Visual Studio, si usano due strumenti da riga di comando:  
   
-|Nome dello strumento|Descrizione|  
+|Nome dello strumento|description|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|Raccoglie i dati di profilatura dalle app di Windows Store e dalle applicazioni di Windows 8 Desktop e Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Raccoglie i dati di profilatura della strumentazione, della concorrenza e dell'interazione tra livelli dalle applicazioni in esecuzione su Windows 8 Desktop o Windows Server 2012. Raccoglie tutti i tipi di dati di profilatura dalle versioni precedenti di Windows.|  
@@ -100,7 +100,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
  Per profilare le applicazioni sui dispositivi in cui non è installato Visual Studio, eseguire una delle operazioni seguenti:  
   
-- Scaricare gli strumenti come parte di Remote Tools per Visual Studio dal [sito Web MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).  
+- Scaricare gli strumenti come parte di Remote Tools per Visual Studio dal [sito Web MSDN](https://go.microsoft.com/fwlink/?LinkID=219549).  
   
 - Copiare ed eseguire il programma di installazione dei profiler autonomi dal computer con Visual Studio. I programmi di installazione si trovano nella cartella *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Scegliere il programma di installazione per il sistema operativo (x86/x64) del computer remoto.  
   
@@ -136,7 +136,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
    **Raccolta di dati TIP in un computer remoto**  
   
-   Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs\_profiler\_**_\<Piattaforma>_**\_**_\<Linguaggio>_**.exe** dalla cartella _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs\_profiler\_** _\<Piattaforma>_ **\_** _\<Linguaggio>_ **.exe** dalla cartella _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download [Remote Tools per Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    È possibile usare [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) per raccogliere i dati di profilatura.  
   
@@ -146,5 +146,5 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplora prestazioni](../profiling/performance-explorer.md)   
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

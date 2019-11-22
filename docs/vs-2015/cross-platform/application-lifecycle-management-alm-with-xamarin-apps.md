@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 1a0ea4f611c5312331fa0e2f2f467b4189778f30
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740175"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300027"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) con app Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +36,10 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 |Funzionalità|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |Gestione di backlog e sprint|Sì||  
-|Verifica del lavoro|Yes||  
+|Verifica del lavoro|Sì||  
 |Collaborazione nella chat team|Sì||  
 |Bacheche Kanban|Sì||  
-|Segnalare e visualizzare lo stato di avanzamento|Yes||  
+|Segnalare e visualizzare lo stato di avanzamento|Sì||  
   
 ## <a name="modeling"></a>Modellazione  
  Collegamento di riferimento: **[Analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md)**  
@@ -52,7 +52,7 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 |Grafici delle dipendenze|Sì||  
 |Gerarchia di chiamata|Sì||  
 |Progettazione classi|Sì||  
-|Esplora architettura|Yes||  
+|Esplora architettura|Sì||  
 |Diagrammi UML (caso di utilizzo, attività, classe, componente, sequenza e DSL)|Sì||  
 |Diagrammi livello|Sì||  
 |Convalida dei livelli|Sì||  
@@ -62,17 +62,17 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 |Funzionalità|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
 |[Usare il controllo della versione di Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Sì||  
-|[Introduzione a Git in Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Yes||  
+|[Introduzione a Git in Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sì||  
 |[Analisi del codice/migliorare la qualità del codice (riferimenti, modifiche suggerite e così via)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Sì||  
-|[Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md)|Yes|Ad eccezione dei limiti specifici tra le piattaforme dove l'implementazione viene risolta solo dopo la fase di esecuzione.|  
-|[Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)|Yes||  
+|[Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md)|Sì|Ad eccezione dei limiti specifici tra le piattaforme dove l'implementazione viene risolta solo dopo la fase di esecuzione.|  
+|[Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)|Sì||  
   
 ## <a name="build"></a>Compilazione  
  Collegamento di riferimento: **[Compilazione](/azure/devops/pipelines/index)**  
   
 |Funzionalità|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
-|Server TFS locale|Sì|È necessario che nei computer di compilazione sia installato Xamarin e che i computer possano essere collegati a un computer OSX per la compilazione con iOS. Vedere [Configurazione di TFS per Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (sito Web Xamarin)|  
+|Server TFS locale|Sì|È necessario che nei computer di compilazione sia installato Xamarin e che i computer possano essere collegati a un computer OSX per la compilazione con iOS. Vedere [Configurazione di TFS per Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (sito Web Xamarin)|  
 |Server di compilazione locale collegato a Visual Studio Team Services|Sì|Per istruzioni, vedere [Server di compilazione](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
 |Servizio controller ospitato di Visual Studio Team Services|Sì|Vedere [Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin) (Compilare l'app Xamarin).|  
 |Definizioni di compilazione con pre e post script|Sì||  
@@ -86,8 +86,8 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 |Pianificazione dei test, creazione di test case e organizzazione di gruppi di test|Sì||  
 |Test manuali|Sì||  
 |Test Manager (registrazione e riproduzione di test)|Sì|Solo dispositivi Windows ed emulatori Android da Visual Studio. È possibile la registrazione per tutti i dispositivi con [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
-|Code coverage|n/d||  
-|[Eseguire unit test del codice](../test/unit-test-your-code.md)|Yes|Per destinazioni Windows e Android, è possibile usare gli strumenti incorporati MSTest. Per eseguire unit test in Windows, Android e iOS, Xamarin consiglia NUnit. Vedere [Configurazione di TFS per Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (sito Web Xamarin).|  
+|Code coverage|N/D||  
+|[Eseguire unit test del codice](../test/unit-test-your-code.md)|Sì|Per destinazioni Windows e Android, è possibile usare gli strumenti incorporati MSTest. Per eseguire unit test in Windows, Android e iOS, Xamarin consiglia NUnit. Vedere [Configurazione di TFS per Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (sito Web Xamarin).|  
 |[Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)|Solo Windows|La registrazione dei test dell'interfaccia utente di Visual Studio è disponibile solo per Windows. Per tutte le piattaforme, vedere [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Migliorare la qualità del codice  
@@ -97,8 +97,8 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
 |-------------|----------------------------|-------------------------|  
 |[Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sì||  
 |[Ricerca del codice duplicato mediante il rilevamento del clone di codice](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sì||  
-|[Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Yes||  
-|[Esplora prestazioni](../profiling/performance-explorer.md)|No|Usare invece il [Profiler Xamarin](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) tramite Xamarin Studio. Si noti che il Profiler Xamarin è attualmente in versione di anteprima e non funziona ancora per le destinazioni Windows.|  
+|[Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sì||  
+|[Esplora prestazioni](../profiling/performance-explorer.md)|No|Usare invece il [Profiler Xamarin](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/) tramite Xamarin Studio. Si noti che il Profiler Xamarin è attualmente in versione di anteprima e non funziona ancora per le destinazioni Windows.|  
 |[Analizzare i problemi relativi alla memoria .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Gli strumenti di Visual Studio non hanno hook nel framework Mono per la profilatura.|  
   
 ## <a name="release-management"></a>Gestione versioni  
@@ -106,12 +106,12 @@ Xamarin consente di compilare le app per dispositivi mobili multipiattaforma des
   
 |Funzionalità|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  
-|Gestire i processi di rilascio|Yes||  
-|Distribuzione ai server per il caricamento laterale tramite script|Yes||  
+|Gestire i processi di rilascio|Sì||  
+|Distribuzione ai server per il caricamento laterale tramite script|Sì||  
 |Caricare nell'app store|Partial|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni.  Vedere le [estensioni per Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorare con HockeyApp  
- Collegamento di riferimento: **[Monitor with HockeyApp](https://www.hockeyapp.net/features/)** (Eseguire il monitoraggio con HockeyApp)  
+ Collegamento di riferimento: **[Monitorare con HockeyApp](https://www.hockeyapp.net/features/)**  
   
 |Funzionalità|Supportato con Xamarin|Commenti aggiuntivi|  
 |-------------|----------------------------|-------------------------|  

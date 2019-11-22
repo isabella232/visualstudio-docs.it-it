@@ -11,36 +11,36 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb55508c705013c3ad604c3ceeb52d7af6bb4445
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158457"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296895"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio*diagnostica della grafica* è un set di strumenti per la registrazione e quindi eseguire l'analisi dei problemi di prestazioni e di rendering nelle App Direct3D. Può essere usato su app eseguite localmente in un computer Windows, in un emulatore di dispositivo Windows oppure in un computer o un dispositivo remoto.  
+Visual Studio*diagnostica della grafica* è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Può essere usato su app eseguite localmente in un computer Windows, in un emulatore di dispositivo Windows oppure in un computer o un dispositivo remoto.  
   
- Il flusso di lavoro di Diagnostica grafica inizia con l'acquisizione di informazioni sul modo in cui l'app usa Direct3D durante l'esecuzione, in modo che il comportamento possa essere analizzato immediatamente, condiviso o salvato per un momento successivo. Sessioni di acquisizione possono essere avviate e controllate manualmente da Visual Studio o con lo strumento di acquisizione da riga di comando **dxcap.exe**. Sessioni di acquisizione possono anche essere avviate e controllate a livello di programmazione tramite le API di acquisizione di diagnostica della grafica.  
+ Il flusso di lavoro di Diagnostica grafica inizia con l'acquisizione di informazioni sul modo in cui l'app usa Direct3D durante l'esecuzione, in modo che il comportamento possa essere analizzato immediatamente, condiviso o salvato per un momento successivo. Le sessioni di acquisizione possono essere avviate e controllate manualmente da Visual Studio o con lo strumento di acquisizione da riga di comando **dxcap. exe**. Le sessioni di acquisizione possono anche essere avviate e controllate a livello di codice usando le API di acquisizione Diagnostica della grafica.  
   
- Dopo la registrazione di una sessione di acquisizione, è possibile riprodurne il contenuto in qualsiasi momento con *Analizzatore grafica* di Visual Studio, ricreando i frame acquisiti mediante le stesse risorse e gli stessi comandi di rendering usati dall'app. Quindi, usando gli strumenti forniti nella finestra analizzatore grafica, uno qualsiasi dei frame acquisiti possono essere analizzato in dettaglio. Questi strumenti consentono di esaminare qualsiasi chiamata alle API Direct3D, risorsa, oggetto di stato della pipeline, fase della pipeline o anche la cronologia completa di qualsiasi pixel in un frame acquisito. Usando questi strumenti insieme si può esplorare un problema di rendering in modo intuitivo, a partire dal modo in cui si manifesta in un frame acquisito ed eseguendo il drill-down alla causa radice nel codice sorgente dell'app, negli shader o nelle risorse grafiche.  
+ Dopo la registrazione di una sessione di acquisizione, è possibile riprodurne il contenuto in qualsiasi momento con *Analizzatore grafica* di Visual Studio, ricreando i frame acquisiti mediante le stesse risorse e gli stessi comandi di rendering usati dall'app. Quindi, usando gli strumenti forniti nella finestra analizzatore grafica, i frame acquisiti possono essere analizzati in dettaglio. Questi strumenti consentono di esaminare qualsiasi chiamata alle API Direct3D, risorsa, oggetto di stato della pipeline, fase della pipeline o anche la cronologia completa di qualsiasi pixel in un frame acquisito. Usando questi strumenti insieme si può esplorare un problema di rendering in modo intuitivo, a partire dal modo in cui si manifesta in un frame acquisito ed eseguendo il drill-down alla causa radice nel codice sorgente dell'app, negli shader o nelle risorse grafiche.  
   
  Per diagnosticare i problemi di prestazioni, è possibile analizzare un frame acquisito usando lo strumento *Analisi dei frame*. Questo strumento esplora le potenziali ottimizzazioni delle prestazioni modificando automaticamente il modo in cui l'app usa Direct3D ed effettuando un benchmark di tutte le variazioni. In passato questi benchmark e queste modifiche venivano eseguiti manualmente, semplicemente per verificare quali modifiche creassero effettivamente una differenza. Grazie ad Analisi dei frame, è possibile apportare solo modifiche di cui si conosce già il valore.  
   
  Diagnostica grafica aiuta a ottimizzare l'esecuzione e l'aspetto delle app Direct3D con contenuti grafici avanzati.  
   
- Continuare a [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md) per altre informazioni sulle funzionalità offerte di Visual Studio Graphics Diagnostics.  
+ Per ulteriori informazioni sulle funzionalità offerte da Visual Studio Diagnostica della grafica, continuare con la [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md) .  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
  Viene fornita un'introduzione agli strumenti di diagnostica della grafica e al relativo flusso di lavoro.  
   
  [Introduzione](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  Questa sezione illustra come installare Diagnostica grafica di Visual Studio e come iniziare a usare Diagnostica grafica con le app Direct3D.  
   
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
+ [Acquisizione delle informazioni grafiche](../debugger/capturing-graphics-information.md)  
  Per usare la diagnostica della grafica al fine di esaminare un problema di rendering nell'app, è necessario prima registrare informazioni su come l'app stessa usa DirectX. Durante la sessione di registrazione, nel corso della normale esecuzione dell'app, *acquisire* (ossia selezionare) i frame che interessano. Le acquisizioni contengono informazioni dettagliate sulla modalità di rendering dei frame. È possibile salvare le informazioni acquisite come documento di log della grafica da esaminare in un secondo momento o da condividere con gli altri membri del team.  
   
  [Utilizzo GPU](../debugger/gpu-usage.md)  
@@ -81,7 +81,7 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
   
 ## <a name="related-sections"></a>Sezioni correlate  
   
-|Titolo|Descrizione|  
+|Titolo|description|  
 |-----------|-----------------|  
 |[Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)|Introduce le funzionalità di debug in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Grafica e giochi DirectX](http://go.microsoft.com/fwlink/?LinkId=256498)|Include articoli che illustrano le tecnologie grafiche DirectX.|
+|[Grafica e giochi DirectX](https://go.microsoft.com/fwlink/?LinkId=256498)|Include articoli che illustrano le tecnologie grafiche DirectX.|

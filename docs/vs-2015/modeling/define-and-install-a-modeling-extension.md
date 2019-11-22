@@ -12,22 +12,22 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66a9cdab1284d015e2ea76162d240b6a1232d90f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669924"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298720"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definire e installare un'estensione di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazione. In questo modo, è possibile adattare i modelli e diagrammi alle proprie esigenze. Ad esempio, è possibile definire comandi di menu, profili UML, vincoli di convalida ed elementi della casella degli strumenti. È possibile definire diversi componenti in un'unica estensione. È anche possibile distribuire queste estensioni ad altri utenti di Visual Studio in formato [VSIX (Visual Studio Integration Extension)](http://go.microsoft.com/fwlink/?LinkId=160780). È possibile creare un'estensione VSIX tramite un progetto VSIX in Visual Studio.
+In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazione. In questo modo, è possibile adattare i modelli e diagrammi alle proprie esigenze. Ad esempio, è possibile definire comandi di menu, profili UML, vincoli di convalida ed elementi della casella degli strumenti. È possibile definire diversi componenti in un'unica estensione. È anche possibile distribuire queste estensioni ad altri utenti di Visual Studio in formato [VSIX (Visual Studio Integration Extension)](https://go.microsoft.com/fwlink/?LinkId=160780). È possibile creare un'estensione VSIX tramite un progetto VSIX in Visual Studio.
 
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-modeling-extension-solution"></a>Creazione di una soluzione di estensione di modellazione
  Per definire un'estensione di modellazione, è necessario creare una soluzione contenente questi progetti:
@@ -58,7 +58,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 3. Impostare il progetto VSIX come progetto di avvio della soluzione.
 
-    - In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.
+    - In Esplora soluzioni scegliere **Imposta come progetto di avvio** dal menu di scelta rapida del progetto VSIX.
 
 4. Aprire **source.extension.vsixmanifest**. Il file viene aperto nell'editor del manifesto.
 
@@ -74,10 +74,10 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
         |||
         |-|-|
-        |**Digitare**  =|**Microsoft. VisualStudio. MefComponent**|
+        |**Digitare** =|**Microsoft.VisualStudio.MefComponent**|
         |**Source** =|**Progetto nella soluzione corrente**|
-        |@No__t_1 di **progetto**|*Progetto di libreria di classi*|
-        |**Incorpora in questa cartella**  =|*vuoto*|
+        | = di **progetto**|*Progetto di libreria di classi*|
+        |**Incorpora in questa cartella** =|*(empty)*|
 
          Per altri tipi di componente, vedere i collegamenti nella sezione successiva.
 
@@ -116,7 +116,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto.
 
-    2. Individuare il file **bin \\ \* \\** _progettoutente_ **. vsix**
+    2. Individuare il file **bin\\\*\\** _progettoutente_ **. vsix**
 
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.
 
@@ -136,9 +136,9 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 3. Selezionare l'estensione e quindi fare clic su **Disinstalla**.
 
-   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente, in cui *% LocalAppData%* è in genere *driveName*: \Users \\*username*\AppData\Local:
+   Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file dal percorso seguente, in cui *% LocalAppData%* è in genere *driveName*: \Users\\*username*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [versione] \Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[versione] \Extensions**
 
 ## <a name="see-also"></a>Vedere anche
  [Definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md) [definire un elemento della casella degli strumenti di modellazione personalizzata](../modeling/define-a-custom-modeling-toolbox-item.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md) [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

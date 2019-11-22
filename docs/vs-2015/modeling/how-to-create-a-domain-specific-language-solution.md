@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671668"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301402"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|SDK di visualizzazione e modellazione di Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|SDK di visualizzazione e modellazione di Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific Language
 
@@ -44,7 +44,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 
    1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-   2. Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+   2. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
    3. In **Tipi progetto**espandere il nodo **altri tipi di progetto** e fare clic su **estensibilità**.
 
@@ -69,7 +69,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 
    - Se è stata usata l'estensione del nome file in DSLs sperimentali precedenti che non sono stati completamente installati, è possibile cancellarli usando lo strumento **Reimposta istanza sperimentale** , disponibile nel menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
 
-   - Se un'altra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione che usa questa estensione di file è stata completamente installata nel computer, è consigliabile disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
+   - Se un'altra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione che usa questa estensione di file è stata completamente installata nel computer, è consigliabile disinstallarla. Nel menu **Strumenti** fare clic su **Gestione estensioni**.
 
 4. Esaminare e, se necessario, modificare i campi nelle pagine rimanenti della procedura guidata. Una volta soddisfatte le impostazioni, fare clic su **fine**. Per ulteriori informazioni sulle impostazioni, vedere [finestra di progettazione DSL pagine della procedura guidata](#settings).
 
@@ -106,7 +106,7 @@ Digitare una nuova estensione di file.
 
      \- oppure -
 
-- Se un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
+- Se un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Nel menu **Strumenti** fare clic su **Gestione estensioni**.
 
 ### <a name="product-settings-page"></a>Pagina Impostazioni prodotto
  **Qual è il nome del prodotto a cui appartiene il nuovo linguaggio specifico di dominio?**
@@ -127,7 +127,7 @@ Il valore predefinito è un nome composto dai nomi della società e del prodotto
 
  **Usa chiave con nome sicuro esistente** Usare questa opzione se si vuole integrare il linguaggio DSL con un altro assembly.
 
- Per ulteriori informazioni sulla denominazione sicura, vedere [creazione e utilizzo di assembly con nome sicuro](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Per ulteriori informazioni sulla denominazione sicura, vedere [creazione e utilizzo di assembly con nome sicuro](https://go.microsoft.com/fwlink/?LinkId=186073).
 
 ## <a name="see-also"></a>Vedere anche
  [Come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md) [strumenti Domain-Specific Language Glossario](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

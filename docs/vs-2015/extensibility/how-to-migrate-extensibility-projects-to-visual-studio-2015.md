@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire la migrazione di progetti di estendibilità di Visual Studio 2015 | Microsoft Docs'
+title: 'Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2015 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -10,48 +10,48 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 41bf80c8ae00aa22666750de7b4b23df981c8465
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 46b48370847cbb2cf8b171342aff9baf38c40a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435931"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295556"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: Eseguire la migrazione di progetti di estendibilità di Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ecco come eseguire l'aggiornamento dell'estensione.  
   
 > [!IMPORTANT]
-> Se si prevede di gestire una versione della soluzione di estensione per una versione precedente di Visual Studio, assicurarsi di creare una copia prima di aggiornarlo. Potrebbe essere difficile restituire la versione aggiornata allo stato precedente.  
+> Se si intende mantenere una versione della soluzione di estensione per una versione precedente di Visual Studio, assicurarsi di creare una copia prima di aggiornarla. Potrebbe essere difficile ripristinare lo stato precedente della versione aggiornata.  
   
-#### <a name="to-upgrade-an-extensibility-solution"></a>Per eseguire l'aggiornamento di una soluzione di estendibilità  
+#### <a name="to-upgrade-an-extensibility-solution"></a>Per aggiornare una soluzione di estendibilità  
   
-1. Usando la copia si desidera aggiornare, aprirlo nella nuova versione. Si viene avvisati che l'aggiornamento non è reversibile.  
+1. Utilizzando la copia che si desidera aggiornare, aprirla nella nuova versione. Si può notare che l'aggiornamento non è reversibile.  
   
-2. Al termine dell'aggiornamento, modificare il percorso del programma esterno per la nuova versione di devenv.exe. Fare clic sul nodo del progetto nel **Esplora soluzioni**, quindi scegliere **proprietà**. Nel **Debug** scheda, la casella di testo da trovare **Avvia programma esterno** e modificare il percorso di devenv.exe sul percorso di Visual Studio 2015, che dovrebbe essere simile al seguente:  
+2. Al termine dell'aggiornamento, modificare il percorso del programma esterno con la nuova versione di devenv. exe. Fare clic con il pulsante destro del mouse sul nodo del progetto nella **Esplora soluzioni**, quindi scegliere **Proprietà**. Nella scheda **debug** trovare la casella di testo **Avvia programma esterno** e modificare il percorso di devenv. exe nel percorso di Visual Studio 2015, che dovrebbe avere un aspetto simile al seguente:  
   
-     **%ProgramFiles%\Microsoft visual Studio 14.0\Common7\IDE\devenv.exe**  
+     **%Programmi%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
   
-3. Aggiungere un riferimento a Microsoft.VisualStudio.Shell.14.0.dll. (Fare clic sul nodo del progetto nel **Esplora soluzioni** e quindi scegliere **aggiungere-Reference**. Selezionare il **Extensions** scheda e quindi controllare **Microsoft.VisualStudio.Shell.14.0**.)  
+3. Aggiungere un riferimento a Microsoft. VisualStudio. Shell. 14.0. dll. Fare clic con il pulsante destro del mouse sul nodo del progetto nella **Esplora soluzioni** , quindi scegliere **Aggiungi/riferimento**. Selezionare la scheda **estensioni** , quindi selezionare **Microsoft. VisualStudio. Shell. 14.0**.  
   
-4. Compilare la soluzione. I file compilati vengono distribuiti per:  
+4. Compilare la soluzione. I file compilati vengono distribuiti in:  
   
-     **%LocalAppData%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nome di autore\>\\< nome progetto\>\\< versione progetto\>\\**.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nome dell'autore\>\\< nome del progetto** \>\\<\>versione del progetto \\.  
   
-#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Per aggiornare un progetto di estensibilità per gli assembly di riferimento di NuGet di Visual Studio SDK  
+#### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Per aggiornare un progetto di estendibilità agli assembly di riferimento NuGet VS SDK  
   
-1. Determinare gli assembly di riferimento di Visual Studio SDK che nel progetto è richiesta.  Nelle **Esplora soluzioni**, espandere il progetto **riferimenti** nodo ed esaminare l'elenco di riferimenti al progetto.  Gli assembly di riferimenti di Visual Studio SDK avranno il prefisso **Microsoft.VisualStudio** nel nome (ad esempio: Microsoft.VisualStudio.Shell.14.0).  
+1. Determinare gli assembly di riferimento di Visual Studio SDK necessari per il progetto.  In **Esplora soluzioni**espandere il nodo **riferimenti** del progetto ed esaminare l'elenco dei riferimenti al progetto.  Gli assembly di riferimento di VS SDK avranno il prefisso **Microsoft. VisualStudio** nel nome, ad esempio Microsoft. VisualStudio. Shell. 14.0.  
   
-2. Rimuovere gli assembly di riferimento di Visual Studio SDK dal progetto selezionandole facendo clic con il pulsante destro e **rimuovere**.  
+2. Rimuovere gli assembly di riferimento di Visual Studio SDK dal progetto selezionandoli, fare clic con il pulsante destro del mouse e **rimuovere**.  
   
-3. Aggiungere le versioni NuGet degli assembly di riferimento di Visual Studio SDK.  Mentre si trovano ancora nella **riferimenti di Esplora soluzioni** nodo, aprire il **Gestisci pacchetti NuGet...** finestra di dialogo.  Per altre informazioni su questa finestra di dialogo, vedere [la gestione di pacchetti NuGet mediante la finestra di dialogo](http://docs.nuget.org/Consume/Package-Manager-Dialog). Gli assembly di riferimento di Visual Studio SDK sono stati pubblicati nel [nuget.org](http://www.nuget.org) dal [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3. Aggiungere le versioni NuGet degli assembly di riferimento di Visual Studio SDK.  Nel nodo **Esplora soluzioni References** aprire la pagina **Gestisci pacchetti NuGet...** dialogo.  Per altre informazioni su questa finestra di dialogo, vedere [gestire i pacchetti NuGet usando la finestra di dialogo](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio). Gli assembly di riferimento di Visual Studio SDK sono pubblicati in [NuGet.org](https://www.nuget.org/) da [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility).  
   
-4. Usando **nuget.org** come le **origine pacchetto**, cercare il nome del pacchetto NuGet che corrisponde all'assembly di riferimento desiderato (ad esempio: Microsoft.VisualStudio.Shell.14.0) e installarlo nel progetto.  NuGet può aggiungere più assembly di riferimento per soddisfare le dipendenze dell'assembly iniziale.  
+4. Usando **NuGet.org** come **origine del pacchetto**, cercare il nome del pacchetto NuGet che corrisponde all'assembly di riferimento desiderato (ad esempio: Microsoft. VisualStudio. Shell. 14.0) e installarlo nel progetto.  NuGet può aggiungere più assembly di riferimento per soddisfare le dipendenze dell'assembly iniziale.  
   
-     Se si preferisce, è possibile aggiungere contemporaneamente tutti gli assembly di riferimento di Visual Studio SDK mediante l'installazione di Visual Studio SDK [metapacchetto](http://www.nuget.org/packages/VSSDK_Reference_Assemblies).  
+     Se si preferisce, è possibile aggiungere contemporaneamente tutti gli assembly di riferimento di Visual Studio SDK installando il [pacchetto meta](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)SDK di Visual Studio.  
   
-5. È anche possibile passare all'uso della versione di NuGet degli strumenti di compilazione di Visual Studio SDK. Il pacchetto NuGet [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) e una volta aggiunto a includere gli strumenti necessari e i file per consentire la compilazione del progetto di estendibilità in un computer senza installato il SDK di Visual Studio di destinazione del progetto di.  
+5. È anche possibile passare all'uso della versione NuGet degli strumenti di compilazione di Visual Studio SDK. Questo pacchetto NuGet è [Microsoft. VSSDK. BuildTools](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) e, una volta aggiunto al progetto, includerà i file di destinazione e gli strumenti necessari per consentire la compilazione del progetto di estendibilità in un computer in cui non è installato Visual Studio SDK.  
   
 > [!NOTE]
-> Non è necessario aggiornare i progetti di estendibilità esistenti per l'uso di strumenti e gli assembly di riferimento di NuGet.  È possibile continuare a compilare usando gli assembly di riferimento e gli strumenti installati con il SDK di Visual Studio.
+> Non è necessario aggiornare i progetti di estendibilità esistenti per usare gli strumenti e gli assembly di riferimento NuGet.  Possono continuare a compilare usando gli assembly di riferimento e gli strumenti installati con Visual Studio SDK.

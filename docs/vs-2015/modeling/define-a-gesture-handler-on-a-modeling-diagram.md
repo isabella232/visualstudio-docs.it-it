@@ -12,24 +12,24 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf111dbf8297994994f10b9b867e03321268679
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654877"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299302"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In Visual Studio è possibile definire i comandi eseguiti quando l'utente trascina o fa doppio clic sugli elementi in un diagramma UML. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
+In Visual Studio è possibile definire i comandi eseguiti quando l'utente trascina o fa doppio clic sugli elementi in un diagramma UML. È possibile creare un pacchetto di queste estensioni in un progetto[VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)(Visual Studio Integration Extension) e distribuirlo ad altri utenti di Visual Studio.
 
  Se esiste già un comportamento predefinito per il tipo di diagramma e il tipo di elemento che si vuole trascinare, potrebbe non essere possibile aggiungere o modificare questo comportamento.
 
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-gesture-handler"></a>Creazione di un gestore movimenti
  Per definire un gestore movimenti per una finestra di progettazione UML, è necessario creare una classe che definisca il comportamento del gestore movimenti e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX funge da contenitore che può installare il gestore. Esistono due metodi alternativi per definire un gestore movimenti:
@@ -48,7 +48,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 3. Testare il gestore movimenti premendo F5. Per altre informazioni, vedere [Esecuzione del gestore movimenti](#Executing).
 
-4. Installare il gestore movimenti in un altro computer copiando il file **bin \\ \* \\ \*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
+4. Installare il gestore movimenti in un altro computer copiando il file **bin\\\*\\\*. vsix** compilato dal progetto. Per altre informazioni, vedere [Installazione e disinstallazione di un'estensione](#Installing).
 
    Ecco la procedura alternativa:
 
@@ -282,7 +282,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 - `ShapeElement target` Forma o diagramma in cui l'utente ha trascinato un elemento.
 
-    `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. Eseguire invece il wrapping dell'elemento in un `IShape` e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. Eseguire invece il wrapping dell'elemento in un `IShape`e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Per ottenere un oggetto `IShape`:
 
@@ -322,7 +322,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
      Se l'oggetto di origine è un elemento UML trascinato da Esplora modelli UML o da un altro diagramma UML, fare riferimento a [ottenere gli elementi del modello UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
 ### <a name="writing-the-code-of-the-methods"></a>Scrittura del codice dei metodi
- Per altre informazioni sulla scrittura del codice per la lettura e l'aggiornamento del modello, vedere [Programming with the UML API](../modeling/programming-with-the-uml-api.md).
+ Per altre informazioni sulla scrittura del codice per la lettura e l'aggiornamento del modello, vedere [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md).
 
  Per informazioni sull'accesso alle informazioni del modello in un'operazione di trascinamento, vedere [ottenere elementi del modello UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.
 
-    2. Individuare il file **bin \\ \* \\** _progettoutente_ **. vsix**
+    2. Individuare il file **bin\\\*\\** _progettoutente_ **. vsix**
 
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.
 
@@ -379,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [versione] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[versione] \Extensions**
 
 ## <a name="DragExample"></a> Esempio
  L'esempio seguente mostra come creare linee di vita in un diagramma di sequenza in base alle parti e alle porte di un componente, trascinate da un diagramma dei componenti.

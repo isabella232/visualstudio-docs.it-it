@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 421bd778b86aa223e1e7b3a96aa3943a86588174
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662519"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299406"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Accesso a un'istanza in esecuzione di SQL Server o SQL Server Express con il database di esempio AdventureWorksLT associato. È possibile scaricare il database AdventureWorksLT dal [sito Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:
 
@@ -116,9 +116,9 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 1. Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
 
-2. Nell'elenco modelli installati fare clic su **Web**, quindi selezionare l'elemento del progetto **WCF Data Services** .
+2. Nell'elenco Modelli installati fare clic su **Web**, quindi selezionare l'elemento di progetto **WCF Data Services**.
 
-3. Nella casella **nome** Digitare `AdventureWorksService.svc` e fare clic su **Aggiungi**.
+3. Nella casella **nome** Digitare `AdventureWorksService.svc`e fare clic su **Aggiungi**.
 
      Visual Studio aggiunge il `AdventureWorksService.svc` al progetto.
 
@@ -180,7 +180,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 #### <a name="to-create-the-window-layout"></a>Per creare il layout della finestra
 
-1. In **Esplora soluzioni**fare doppio clic su MainWindow. XAML.
+1. In **Esplora soluzioni** fare doppio clic su MainWindow.xaml.
 
      La finestra verrà aperta in WPF Designer.
 
@@ -273,7 +273,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
 ## <a name="saving-changes-to-sales-records"></a>Salvataggio delle modifiche ai record delle vendite
- Aggiungere il codice che consente agli utenti di visualizzare e salvare le modifiche ai record delle vendite usando il pulsante **Salva modifiche** .
+ Aggiungere il codice che consente agli utenti di visualizzare e salvare le modifiche ai record delle vendite usando il pulsante **Salva modifiche**.
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Per aggiungere la possibilità di salvare le modifiche ai record delle vendite
 
@@ -291,7 +291,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione
 
-1. Scegliere **Compila soluzione**dal menu **Compila** . Verificare che la soluzione venga compilata senza errori.
+1. Nel menu **Compila** fare clic su **Compila soluzione**. Verificare che la soluzione venga compilata senza errori.
 
 2. Premere **CTRL + F5**.
 
@@ -323,4 +323,4 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 - Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per ulteriori informazioni, vedere [procedura dettagliata: visualizzazione di dati correlati in un'applicazione WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [associare controlli WPF a un set](../data-tools/bind-wpf-controls-to-a-dataset.md) di [dati Cenni preliminari](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework Cenni](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) preliminari sulla Panoramica di [WPF e Silverlight Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [ Panoramica dell'associazione](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [associare controlli WPF a un set](../data-tools/bind-wpf-controls-to-a-dataset.md) di dati [Cenni](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) preliminari [Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) Panoramica di [WPF e Silverlight Designer](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) Cenni preliminari sull' [associazione dati](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

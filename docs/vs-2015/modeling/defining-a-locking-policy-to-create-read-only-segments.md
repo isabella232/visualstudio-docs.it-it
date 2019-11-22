@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53542ec2a5270aec6836864fa3108d5f84da2df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669884"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295812"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ L'API di immutabilità del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK di v
 > [!NOTE]
 > Un criterio di blocco può essere eluso tramite reflection. Fornisce un limite chiaro per gli sviluppatori di terze parti, ma non offre una protezione avanzata.
 
- Ulteriori informazioni ed esempi sono disponibili nel sito Web di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) .
+ Ulteriori informazioni ed esempi sono disponibili nel sito Web di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkId=186128) .
 
 ## <a name="setting-and-getting-locks"></a>Impostazione e recupero di blocchi
  È possibile impostare blocchi nell'archivio, in una partizione o in un singolo elemento. Questa istruzione, ad esempio, impedisce l'eliminazione di un elemento del modello e impedisce inoltre la modifica delle proprietà:
@@ -79,11 +79,11 @@ partition.SetLocks(Locks.Delete);
 
 |Value|Indica se `IsLocked(Value)` è true|
 |-----------|------------------------------------------|
-|Nessuno|Nessuna restrizione.|
-|proprietà|Impossibile modificare le proprietà di dominio degli elementi. Questa operazione non si applica alle proprietà generate dal ruolo di una classe di dominio in una relazione.|
+|nessuno|Nessuna restrizione.|
+|Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Questa operazione non si applica alle proprietà generate dal ruolo di una classe di dominio in una relazione.|
 |Aggiunta|Non è possibile creare nuovi elementi e collegamenti in una partizione o in un archivio.<br /><br /> Non applicabile a `ModelElement`.|
 |Move|Non è possibile spostare l'elemento tra partizioni se `element.IsLocked(Move)` è true o se `targetPartition.IsLocked(Move)` è true.|
-|Eliminazione|Non è possibile eliminare un elemento se questo blocco è impostato sull'elemento stesso o su uno degli elementi a cui l'eliminazione propagherà, ad esempio elementi e forme incorporati.<br /><br /> È possibile utilizzare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
+|Eliminare|Non è possibile eliminare un elemento se questo blocco è impostato sull'elemento stesso o su uno degli elementi a cui l'eliminazione propagherà, ad esempio elementi e forme incorporati.<br /><br /> È possibile utilizzare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
 |Riordinare|Non è possibile modificare l'ordine dei collegamenti in un RolePlayer.|
 |RolePlayer|Il set di collegamenti originati in questo elemento non può essere modificato. Ad esempio, non è possibile incorporare nuovi elementi in questo elemento. Questa operazione non influisce sui collegamenti per i quali questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e la destinazione non sono interessate.|
 |All|OR bit per bit degli altri valori.|
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  Questi metodi vengono chiamati quando viene effettuata una chiamata a `SetLocks()` in un archivio, una partizione o ModelElement. In ogni metodo viene fornito un set di blocchi proposto. È possibile restituire il set proposto oppure è possibile aggiungere e sottrarre blocchi.
 
- Esempio:
+ Di seguito è riportato un esempio:
 
 ```
 using Microsoft.VisualStudio.Modeling;

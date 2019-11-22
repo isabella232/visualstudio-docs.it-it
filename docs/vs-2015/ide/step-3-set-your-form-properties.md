@@ -9,23 +9,23 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d5f3f02e89e77b63420d4a04062d7b661c0c9f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 90fab2724c3d392db7824222da2450a8a4d585c3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671816"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295753"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: impostare le proprietà del form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto del form.
 
- ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](http://go.microsoft.com/fwlink/?LinkId=205209) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](http://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
+ ![collegamento al video](../data-tools/media/playvideo.gif "PlayVideo") Per una versione video di questo argomento, vedere [esercitazione 1: creare un visualizzatore di immagini in Visual Basic-video 1](https://go.microsoft.com/fwlink/?LinkId=205209) o [esercitazione 1: creare un visualizzatore di C# immagini in-video 1](https://go.microsoft.com/fwlink/?LinkId=205199). In questi video viene usata una versione precedente di Visual Studio, pertanto vi sono piccole differenze in alcuni comandi di menu e altri elementi dell'interfaccia utente. Tuttavia, i concetti e le procedure funzionano in modo analogo nella versione corrente di Visual Studio.
 
 ### <a name="to-set-your-form-properties"></a>Per impostare le proprietà del form
 
-1. Assicurarsi che sia visualizzato Progettazione Windows Form. Nell'ambiente di sviluppo integrato (IDE) di Visual Studio, scegliere la scheda **Form1.cs [Design]** (o **Form1.vb [Design]** in Visual Basic).
+1. Assicurarsi che sia visualizzato Progettazione Windows Form. Nell'ambiente di sviluppo integrato (IDE) di Visual Studio, scegliere la scheda **Form1.cs [Progettazione]** (o **Form1.vb [Progettazione]** in Visual Basic).
 
 2. Fare clic in qualsiasi punto all'interno del form **Form1** per selezionarlo. Analizzare la finestra **Proprietà**, che ora visualizza le proprietà per il form. I form dispongono di diverse proprietà. Ad esempio, è possibile impostare il colore primo piano e di sfondo, il testo del titolo visualizzato all'inizio del form, le dimensioni del form e altre proprietà.
 

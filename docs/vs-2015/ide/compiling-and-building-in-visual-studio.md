@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 71bddf0f833bbaf717f7a2dbdf4a734efa295afb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619435"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300264"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "72619435"
 
 - [Specificare le azioni personalizzate precedenti e successive alla compilazione per una compilazione](../ide/specifying-custom-build-events-in-visual-studio.md).
 
-- Migliorare le prestazioni di compilazione utilizzando compilazioni parallele. Per altre informazioni, vedere [Building Multiple Projects in Parallel with MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) (Compilazione di più progetti in parallelo con MSBuild) o il post di blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ottimizzazione del parallelismo di compilazione C++).
+- Migliorare le prestazioni di compilazione utilizzando compilazioni parallele. Per altre informazioni, vedere [Building Multiple Projects in Parallel with MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) (Compilazione di più progetti in parallelo con MSBuild) o il post di blog [Tuning C++ build parallelism](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/) (Ottimizzazione del parallelismo di compilazione C++).
 
 ## <a name="see-also"></a>Vedere anche
  [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md) [informazioni sulle configurazioni della Build](../ide/understanding-build-configurations.md) [informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) [compilazione di progetti di siti Web (in fase di compilazione)](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Come si fa: Creare e rimuovere dipendenze del progetto](../ide/how-to-create-and-remove-project-dependencies.md)
