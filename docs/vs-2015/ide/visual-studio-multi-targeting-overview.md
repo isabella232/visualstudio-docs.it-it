@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ba7566e4a6bdffc5e7075bc138832097415a7129
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6a816981b41dd8ca2a2119bbd99c776c6a7e2436
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667104"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296885"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Cenni preliminari sul multitargeting di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ In questa versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile
 > Nelle edizioni Express di Visual Studio, non è possibile impostare il framework di destinazione nella finestra di dialogo **Nuovo progetto**.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Risoluzione dei riferimenti ad assembly di sistema e utente
- Per impostare come destinazione una versione di .NET Framework, è necessario prima installare i riferimenti dell'assembly appropriato. I riferimenti degli assembly per .NET Framework versioni 2.0, 3.0 e 3.5 sono inclusi in .NET Framework 3.5 SP1, scaricabile dal sito Web [Area download Microsoft, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). I riferimenti degli assembly per .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile e Silverlight sono disponibili anche nei siti Web relativi ai [download di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).
+ Per impostare come destinazione una versione di .NET Framework, è necessario prima installare i riferimenti dell'assembly appropriato. I riferimenti degli assembly per .NET Framework versioni 2.0, 3.0 e 3.5 sono inclusi in .NET Framework 3.5 SP1, scaricabile dal sito Web [Area download Microsoft, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). I riferimenti degli assembly per .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile e Silverlight sono disponibili anche nei siti Web relativi ai [download di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=179687).
 
 > [!NOTE]
 > Un profilo client di .NET Framework è un sottoinsieme di .NET Framework che offre un set limitato di librerie e funzionalità. Per altre informazioni sui profili di client, vedere [Profilo client .NET Framework](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).

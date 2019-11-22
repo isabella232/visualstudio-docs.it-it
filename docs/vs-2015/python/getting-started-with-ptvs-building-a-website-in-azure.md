@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62551000"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300594"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Introduzione a PTVS: Compilazione di un sito Web in Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "62551000"
   
  È possibile seguire queste istruzioni in un brevissimo [video di youtube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
- Iniziare con la finestra di dialogo Nuovo progetto e tra i progetti Python scegliere il progetto Web Bottle.  Questo modello [Bottle](http://bottlepy.org/docs/dev/index.html) è un sito di partenza basato sul [framework Bootstrap](http://getbootstrap.com/).  Quando si crea il progetto, Visual Studio richiede di installare le dipendenze (Bottle in questo caso) in un ambiente virtuale.  Poiché si sta eseguendo la distribuzione in un sito Web di Azure, è necessario aggiungere le dipendenze in un ambiente virtuale per distribuire i bit necessari per il funzionamento del sito.  È anche necessario basare l'ambiente su Python 2.7 o 3.4 a 32 bit.  Dopo aver creato il progetto, premere F5 per avviare l'esecuzione del sito in locale.  
+ Iniziare con la finestra di dialogo Nuovo progetto e tra i progetti Python scegliere il progetto Web Bottle.  Questo modello [Bottle](http://bottlepy.org/docs/dev/index.html) è un sito di partenza basato sul [framework Bootstrap](https://getbootstrap.com/).  Quando si crea il progetto, Visual Studio richiede di installare le dipendenze (Bottle in questo caso) in un ambiente virtuale.  Poiché si sta eseguendo la distribuzione in un sito Web di Azure, è necessario aggiungere le dipendenze in un ambiente virtuale per distribuire i bit necessari per il funzionamento del sito.  È anche necessario basare l'ambiente su Python 2.7 o 3.4 a 32 bit.  Dopo aver creato il progetto, premere F5 per avviare l'esecuzione del sito in locale.  
   
  È facile provare il sito in Azure.  Se non si ha una sottoscrizione di Azure, è possibile usare [try.azurewebsites.net](https://trywebsites.azurewebsites.net/).  Questo sito offre un modo semplice per provare i siti Web di Azure per un'ora alla volta solo con un account di accesso social.  Non è necessaria una carta di credito.  Scegliere il modello di sito vuoto nell'elenco a discesa Change Language e scegliere Create.  In "Work with your web application" scegliere Download Publishing Profile e salvare il file da usare con Visual Studio.  È anche possibile eseguire la distribuzione usando GIT da qualsiasi sistema operativo.  
   

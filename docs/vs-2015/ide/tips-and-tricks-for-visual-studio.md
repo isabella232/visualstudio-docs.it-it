@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d17a053a5620996f3462e2c79e0b68bd374adccd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654831"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299917"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Suggerimenti su Visual Studio
 
@@ -143,6 +143,6 @@ Vedere [Scelte rapide da tastiera: Visual Studio Online, portale Web TFS e Team 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Blog di Visual Studio](http://blogs.msdn.com/b/visualstudio)
-- [Blog di suggerimenti e consigli di Visual Studio](http://blogs.msdn.com/b/zainnab)
-- [Casella degli strumenti di Visual Studio su Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Blog di Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- [Blog di suggerimenti e consigli di Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Casella degli strumenti di Visual Studio su Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)

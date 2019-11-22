@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: df937d43c196193593bcfb1244bcc9e59a3c634a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ff1d953dc853beba8ef836b1eab03140ee0b1e0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660667"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300389"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,7 +110,7 @@ Questo argomento illustra problemi e opzioni di generazione e compilazione di co
 ```
 
 ### <a name="BKMK_Internal_types"></a> Tipi interni
- Il generatore di codice Fakes genera tipi shim e stub per i tipi visibili nell'assembly Fakes generato. Per fare in modo che i tipi interni di un assembly sottoposto a shim siano visibili per Fakes e l'assembly di test, aggiungere attributi <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al codice dell'assembly sottoposto a shim per dare visibilità all'assembly Fakes generato e all'assembly di test. Ad esempio:
+ Il generatore di codice Fakes genera tipi shim e stub per i tipi visibili nell'assembly Fakes generato. Per fare in modo che i tipi interni di un assembly sottoposto a shim siano visibili per Fakes e l'assembly di test, aggiungere attributi <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al codice dell'assembly sottoposto a shim per dare visibilità all'assembly Fakes generato e all'assembly di test. Di seguito è riportato un esempio:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -204,7 +204,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_Fakes_naming_conventions"></a> Convenzioni di denominazione Fakes
 
 ### <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Convenzioni di denominazione dei tipi shim e stub
- **Namespaces** (Spazi dei nomi)
+ **Spazi dei nomi**
 
 - Viene aggiunto il suffisso .Fakes allo spazio dei nomi.
 
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_External_resources"></a> Risorse esterne
 
 ### <a name="BKMK_Guidance"></a> Materiale sussidiario
- [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Vedere anche
  [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

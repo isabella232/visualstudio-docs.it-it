@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662612"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296215"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilizzo del codice Visual C++ (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 - Verificare che il tipo si trovi nell'ambito corretto in modo che Progettazione classi possa trovarlo. Assicurarsi che nel codice non manchi un'istruzione `using`, `imports` o `#include`. Assicurarsi inoltre che il tipo (o un tipo correlato) non sia stato spostato dallo spazio dei nomi in cui si trovava in origine.
 
 ### <a name="troubleshooting-other-error-messages"></a>Risoluzione di altri messaggi di errore
- È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Vedere il [forum dedicato a Progettazione classi di Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
+ È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Vedere il [forum dedicato a Progettazione classi di Visual Studio](https://go.microsoft.com/fwlink/?linkid=160754).
 
 ## <a name="limitations"></a> Limitazioni per gli elementi di codice C++
 
@@ -107,4 +107,4 @@ Progettazione classi usa un'area di progettazione visiva denominata *diagramma c
 - Progettazione classi non può visualizzare tipi void o che derivano da un tipo void.
 
 ## <a name="see-also"></a>Vedere anche
- [Progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md) [utilizzo di classi e altri tipi (Progettazione classi)](../ide/working-with-classes-and-other-types-class-designer.md) [utilizzo di diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md) [progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md) [informazioni aggiuntive su Progettazione classi](../ide/additional-information-about-class-designer-errors.md) [le classi C++ visive degli errori in Progettazione classi](../ide/visual-cpp-classes-in-class-designer.md) [strutture visive C++ in Progettazione classi](../ide/visual-cpp-structures-in-class-designer.md) [enumerazioni visive C++ in Progettazione classi](../ide/visual-cpp-enumerations-in-class-designer.md) i [typedef visivi C++ in Progettazione classi](../ide/visual-cpp-typedefs-in-class-designer.md)
+ [Progettazione e visualizzazione di classi e tipi](../ide/designing-and-viewing-classes-and-types.md) [uso di classi e altri tipi (Progettazione classi)](../ide/working-with-classes-and-other-types-class-designer.md) [uso dei diagrammi classi (Progettazione classi)](../ide/working-with-class-diagrams-class-designer.md) [progettazione di classi e tipi (Progettazione classi)](../ide/designing-classes-and-types-class-designer.md) [informazioni aggiuntive sulle](../ide/additional-information-about-class-designer-errors.md) [classi C++ visive](../ide/visual-cpp-classes-in-class-designer.md) degli errori progettazione classi in Progettazione classi [ C++ strutture visive in](../ide/visual-cpp-structures-in-class-designer.md) progettazione classi [ C++ enumerazioni](../ide/visual-cpp-enumerations-in-class-designer.md) visive in Progettazione classi i [ C++ typedef](../ide/visual-cpp-typedefs-in-class-designer.md) visivi in Progettazione classi
