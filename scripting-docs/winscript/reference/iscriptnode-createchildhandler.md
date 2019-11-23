@@ -82,7 +82,7 @@ HRESULT CreateChildHandler(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -90,5 +90,5 @@ HRESULT CreateChildHandler(
  Un scriptlet specifica un gestore eventi. Questo metodo crea un scriptlet se viene chiamato da un oggetto `IScriptNode` che rappresenta una pagina Web. Questo metodo non ha esito positivo se viene chiamato da altre interfacce.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)    
+ [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)   
  [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

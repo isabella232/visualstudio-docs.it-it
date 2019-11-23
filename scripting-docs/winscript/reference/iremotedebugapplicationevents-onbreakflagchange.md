@@ -46,7 +46,7 @@ HRESULT OnBreakFlagChange(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -54,5 +54,5 @@ HRESULT OnBreakFlagChange(
  Questo metodo gestisce l'evento quando cambia il flag di interruzioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)    
+ [Interfaccia IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
  [Enumerazione APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)

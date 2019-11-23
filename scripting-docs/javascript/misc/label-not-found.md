@@ -31,7 +31,7 @@ ms.locfileid: "72573776"
 - Assicurarsi che tutti i riferimenti alle etichette siano stati definiti nell'ambito corrente (incluse le definizioni in base).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)    
- [istruzione switch](../../javascript/reference/switch-statement-javascript.md)    
+ [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)   
+ [istruzione switch](../../javascript/reference/switch-statement-javascript.md)   
  [Istruzione break](../../javascript/reference/break-statement-javascript.md)   
  [Istruzione continue](../../javascript/reference/continue-statement-javascript.md)
