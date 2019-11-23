@@ -29,5 +29,5 @@ Non è stata inclusa la condizione `while` in un ciclo di `do...while`. Un'istru
 - Includere l'istruzione di test `while` dopo la parentesi graffa chiusa.  
   
 ## <a name="see-also"></a>Vedere anche  
- [istruzione while](../../javascript/reference/while-statement-javascript.md)    
+ [istruzione while](../../javascript/reference/while-statement-javascript.md)   
  [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)

@@ -31,5 +31,5 @@ ms.locfileid: "72573435"
 - Provare a usare un blocco **finally** anziché un blocco **catch** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [prova... rileva...   istruzione finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)  
+ [prova... rileva...  istruzione finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)  
  [Oggetto Error](../../javascript/reference/error-object-javascript.md)

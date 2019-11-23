@@ -46,7 +46,7 @@ HRESULT GetBreakFlags(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -54,5 +54,5 @@ HRESULT GetBreakFlags(
  Questo metodo restituisce i flag di interruzioni correnti per l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [Enumerazione APPBREAKFLAGS](../../winscript/reference/appbreakflags-enumeration.md)

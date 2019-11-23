@@ -44,12 +44,12 @@ HRESULT GetName(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)    
+ [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptNode::CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

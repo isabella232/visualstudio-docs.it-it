@@ -42,7 +42,7 @@ HRESULT SetBreakPoint(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,5 +50,5 @@ HRESULT SetBreakPoint(
  Questo metodo imposta o cancella un punto di interruzione in questo contesto del codice.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)    
+ [Interfaccia IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)   
  [Enumerazione BREAKPOINT_STATE](../../winscript/reference/breakpoint-state-enumeration.md)

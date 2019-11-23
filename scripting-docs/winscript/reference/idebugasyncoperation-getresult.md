@@ -46,7 +46,7 @@ HRESULT GetResult(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_PENDING`|Operazione non completata.|  
@@ -55,5 +55,5 @@ HRESULT GetResult(
  Se l'operazione è stata completata, questo metodo restituisce il `HRESULT` e il parametro dell'oggetto da `IDebugSyncOperation::Execute`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)    
+ [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

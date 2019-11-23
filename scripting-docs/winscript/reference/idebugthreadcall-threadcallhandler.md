@@ -50,7 +50,7 @@ HRESULT ThreadCallHandler(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -58,6 +58,6 @@ HRESULT ThreadCallHandler(
  Questo metodo gestisce le chiamate per eseguire il codice nel thread del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)    
- @No__t_1 [IDebugApplication:: SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)  
+ [Interfaccia IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)   
+ [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

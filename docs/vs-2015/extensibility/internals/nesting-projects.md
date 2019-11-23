@@ -23,11 +23,11 @@ ms.locfileid: "68180426"
 # <a name="nesting-projects"></a>Annidamento dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto vs possono raggruppare in modo pratico tipi simili [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] di progetti in utilizzando l' *annidamento del progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.  
+Gli sviluppatori di applicazioni aziendali che usano il pacchetto VS possono raggruppare in modo pratico tipi simili di progetti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usando l' *annidamento del progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.  
   
  In questo scenario non esiste alcun limite al numero di progetti che lo sviluppatore può annidare in ogni progetto padre, sebbene lo sviluppatore possa fornire i limiti a livello di codice. Questo tipo di raggruppamento può anche essere reso ricorsivo, nel qual caso i progetti dello stesso tipo di un progetto figlio possono essere annidati sotto l'elemento figlio per diventare un sottoprogetto del figlio, che è un sottoprogetto dell'elemento padre.  
   
- L'annidamento del progetto non è una parte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]intrinseca di. È necessario scrivere il codice per abilitare l'annidamento e la nidificazione del sottoprogetto nei progetti figlio. Il progetto padre è un VSPackage speciale o un tipo di progetto, creato e registrato con il proprio GUID che include il codice necessario per implementare l'annidamento del progetto.  
+ La nidificazione del progetto non è una parte intrinseca del [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. È necessario scrivere il codice per abilitare l'annidamento e la nidificazione del sottoprogetto nei progetti figlio. Il progetto padre è un VSPackage speciale o un tipo di progetto, creato e registrato con il proprio GUID che include il codice necessario per implementare l'annidamento del progetto.  
   
  È possibile trovare un esempio di progetti annidati nell' C# esempio example. Nested Project.  
   
@@ -36,12 +36,12 @@ Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto vs posson
 Esempio di progetti annidati  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md)   
+ [Procedura: implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md)   
  [Considerazioni per lo scaricamento e il ricaricamento di progetti annidati](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [Supporto della procedura guidata per i progetti annidati](../../extensibility/internals/wizard-support-for-nested-projects.md)   
  [Registrazione di modelli di progetti e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Implementazione della gestione dei comandi per i progetti annidati](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
- [Filtro della finestra di dialogo AddItem per i progetti annidati](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Filtrare la finestra di dialogo AddItem per i progetti annidati](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
+ [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parametri di contesto](../../extensibility/internals/context-parameters.md)   
  [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)

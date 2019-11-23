@@ -39,7 +39,7 @@ HRESULT onComplete();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -47,5 +47,5 @@ HRESULT onComplete();
  Questo metodo viene chiamato quando la valutazione dell'espressione è completa. Il metodo `IDebugExpression::GetResultAsString` può essere chiamato dall'interno di questo gestore eventi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugExpressionCallBack](../../winscript/reference/idebugexpressioncallback-interface.md)    
+ [Interfaccia IDebugExpressionCallBack](../../winscript/reference/idebugexpressioncallback-interface.md)   
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

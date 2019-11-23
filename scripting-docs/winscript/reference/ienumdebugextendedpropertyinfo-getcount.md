@@ -40,8 +40,8 @@ HRESULT GetCount (
  out Restituisce il numero di strutture `ExtendedDebugPropertyInfo` nell'enumeratore.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un `HRESULT` valido, in genere `S_OK`.  
+ Restituisce un `HRESULT`valido, in genere `S_OK`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)    
+ [Interfaccia IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [Struttura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

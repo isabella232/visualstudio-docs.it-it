@@ -1,5 +1,5 @@
 ---
-title: 'IApplicationDebugger:: onDebugOutput | Microsoft Docs'
+title: IApplicationDebugger::onDebugOutput | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT onDebugOutput(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -52,5 +52,5 @@ HRESULT onDebugOutput(
  Questo metodo viene chiamato quando viene chiamato `IDebugApplication::DebugOutput`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)    
+ [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

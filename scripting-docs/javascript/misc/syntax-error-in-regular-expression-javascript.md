@@ -29,6 +29,6 @@ La struttura della stringa di ricerca viola una o più regole grammaticali di un
 - Verificare che la struttura della stringa di ricerca dell'espressione regolare sia conforme alla sintassi dell'espressione regolare [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [oggetto Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)  
- [Sintassi delle espressioni regolari (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+   [oggetto Regular Expression](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Sintassi delle espressioni regolari (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [Metodo compile (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

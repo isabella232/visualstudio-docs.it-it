@@ -46,7 +46,7 @@ HRESULT GetName(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_FAIL`|Il nome del documento specificato non è noto.|  
@@ -55,5 +55,5 @@ HRESULT GetName(
  Questo metodo restituisce il nome del documento specificato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)    
+ [Interfaccia IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)   
  [Enumerazione DOCUMENTNAMETYPE](../../winscript/reference/documentnametype-enumeration.md)

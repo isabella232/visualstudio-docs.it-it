@@ -35,6 +35,6 @@ ms.locfileid: "72576578"
 - Evitare l'utilizzo di caratteri che non fanno parte della definizione del linguaggio [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Vedere anche  
- [Variabili](../../javascript/variables-javascript.md)    
- [Caratteri speciali](../../javascript/advanced/special-characters-javascript.md)    
+ [Variabili](../../javascript/variables-javascript.md)   
+ [Caratteri speciali](../../javascript/advanced/special-characters-javascript.md)   
  [Tipi di dati](../../javascript/data-types-javascript.md)

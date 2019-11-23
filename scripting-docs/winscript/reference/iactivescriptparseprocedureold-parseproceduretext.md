@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParseProcedureOld::P arseProcedureText | Microsoft Docs
+title: IActiveScriptParseProcedureOld::ParseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -68,7 +68,7 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  in Flag associati alla procedura. Può essere una combinazione di questi valori.  
   
-|Costante|Value|Significato|  
+|Costante|Valore|Significato|  
 |--------------|-----------|-------------|  
 |SCRIPTPROC_ISEXPRESSION|0x00000020|Indica che il codice in `pstrCode` è un'espressione che rappresenta il valore restituito della stored procedure.|  
 |SCRIPTPROC_IMPLICIT_THIS|0x00000100|Indica che il puntatore `this` è incluso nell'ambito della procedura.|  
@@ -80,7 +80,7 @@ HRESULT ParseProcedureText(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_INVALIDARG`|Argomento non valido.|  
@@ -88,7 +88,7 @@ HRESULT ParseProcedureText(
 |`E_NOTIMPL`|Questo metodo non è supportato. Il motore di scripting non supporta l'aggiunta in fase di esecuzione delle procedure allo spazio dei nomi.|  
 |`E_UNEXPECTED`|La chiamata non era prevista (ad esempio, il motore di scripting è nello stato non inizializzato o chiuso).|  
 |`OLESCRIPT_E_SYNTAX`|Si è verificato un errore di sintassi non specificato nella procedura.|  
-|`S_FALSE`|Il motore di scripting non supporta un oggetto dispatch. il `ppdisp`parameter è impostato su `NULL`.|  
+|`S_FALSE`|Il motore di scripting non supporta un oggetto dispatch. il parametro `ppdisp`è impostato su `NULL`.|  
   
 ## <a name="remarks"></a>Note  
  Nessun codice di script viene valutato durante la chiamata. la procedura viene invece compilata in un metodo in `ppdisp`, dove può essere chiamata successivamente dallo script.  
@@ -96,5 +96,5 @@ HRESULT ParseProcedureText(
  Questa interfaccia è deprecata a favore dell'interfaccia `IActiveScriptParseProcedure`. Il metodo `IActiveScriptParseProcedure::ParseProcedureText` è simile a questo metodo, ma consente di specificare il nome della stored procedure. In tutti i casi, è necessario usare `IActiveScriptParseProcedure::ParseProcedureText`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptParseProcedureOld](../../winscript/reference/iactivescriptparseprocedureold-interface.md)    
+ [Interfaccia IActiveScriptParseProcedureOld](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   
  [IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)

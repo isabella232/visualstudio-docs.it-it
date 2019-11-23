@@ -42,7 +42,7 @@ HRESULT SetItemName(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_FAIL`|Il metodo non è riuscito.|  
@@ -53,5 +53,5 @@ HRESULT SetItemName(
  Per gli oggetti `IScriptScriptlet` (che derivano da `IScriptEntry`), questo metodo restituisce `E_FAIL`. Per `IScriptScriptlet` oggetti, il nome dell'elemento viene impostato da [IActiveScriptAuthor:: AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md) e non può essere modificato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)    
+ [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetItemName](../../winscript/reference/iscriptentry-getitemname.md)

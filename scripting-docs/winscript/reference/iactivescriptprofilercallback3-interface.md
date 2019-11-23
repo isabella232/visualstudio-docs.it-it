@@ -34,5 +34,5 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
 |[Metodo IActiveScriptProfilerCallback3::SetWebWorkerId](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|Notifica al profiler l'ID del ruolo di lavoro da usare per questa sessione di profilatura.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)    
+ [Interfaccia IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)   
  [Interfaccia IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

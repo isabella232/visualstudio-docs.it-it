@@ -46,16 +46,16 @@ HRESULT GetResultAsDebugProperty(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
-|`E_PENDING`|L'operazione è ancora in sospeso.|  
+|`E_PENDING`|L'operazione è ancora in corso.|  
   
 ## <a name="remarks"></a>Note  
- Questo metodo restituisce il risultato della valutazione dell'espressione come `IDebugProperty` e il `HRESULT` dell'operazione.  
+ Questo metodo restituisce il risultato della valutazione dell'espressione come `IDebugProperty` e il `HRESULT`dell'operazione.  
   
  Questo metodo restituisce `S_OK` e `phrResult` restituisce `E_ABORT` se `Abort` interrompe l'operazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugExpression](../../winscript/reference/idebugexpression-interface.md)    
+ [Interfaccia IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

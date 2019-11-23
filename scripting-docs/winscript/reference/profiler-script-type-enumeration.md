@@ -38,7 +38,7 @@ typedef enum {
   
 ## <a name="members"></a>Members  
   
-|Member|Descrizione|  
+|Membro|Descrizione|  
 |------------|-----------------|  
 |PROFILER_SCRIPT_TYPE_USER|Specifica il codice di script scritto dall'utente.|  
 |PROFILER_SCRIPT_TYPE_DYNAMIC|Specifica il codice di script generato in modo dinamico durante l'esecuzione.|  
@@ -46,7 +46,7 @@ typedef enum {
 |PROFILER_SCRIPT_TYPE_DOM|Specifica una chiamata al Document Object Model (DOM) di Internet Explorer, ad esempio una chiamata al metodo `document.getElementById`.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Costanti, enumerazioni e strutture del profiler di script activex](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- @No__t_1 [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)  
- @No__t_1 [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)  
+ [Costanti, enumerazioni e strutture del profiler di script activex](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
+   [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)  
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

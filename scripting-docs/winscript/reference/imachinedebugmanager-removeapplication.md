@@ -42,7 +42,7 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,6 +50,6 @@ HRESULT RemoveApplication(
  Questo metodo viene chiamato dalla gestione del debug del processo ogni volta che viene chiamato `IProcessDebugManager::RemoveApplication`.  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [IMachineDebugManager:: AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)  
- [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)    
+ [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   
+ [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

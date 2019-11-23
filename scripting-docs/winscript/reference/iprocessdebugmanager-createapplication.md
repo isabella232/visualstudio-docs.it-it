@@ -42,7 +42,7 @@ HRESULT CreateApplication(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,5 +50,5 @@ HRESULT CreateApplication(
  L'oggetto creato da questo metodo non ha alcun nome e non viene aggiunto all'elenco di applicazioni in esecuzione. Usare il `IProcessDebugManager::AddApplication` per aggiungere l'applicazione di debug all'elenco di applicazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)    
+ [Interfaccia IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

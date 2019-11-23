@@ -1,5 +1,5 @@
 ---
-title: 'IEnumDebugPropertyInfo:: Next | Microsoft Docs'
+title: IEnumDebugPropertyInfo::Next | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -39,7 +39,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametri  
  `celt`  
- in Numero di `DebugPropertyInfo`structures da recuperare.  
+ in Numero di strutture di `DebugPropertyInfo`da recuperare.  
   
  `rgelt`  
  out Matrice di strutture di `DebugPropertyInfo` recuperate.  
@@ -48,8 +48,8 @@ HRESULT Next (
  out Restituisce il numero di strutture di `DebugPropertyInfo` effettivamente recuperate.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un `HRESULT` valido, in genere `S_OK`.  
+ Restituisce un `HRESULT`valido, in genere `S_OK`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)    
+ [Interfaccia IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
  [Struttura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

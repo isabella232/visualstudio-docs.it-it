@@ -33,6 +33,6 @@ ms.locfileid: "72572864"
 - Se l'eccezione viene generata nuovamente, verificare che sia presente un'altra istruzione catch corrispondente.  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [oggetto errore](../../javascript/reference/error-object-javascript.md)  
- [istruzione throw](../../javascript/reference/throw-statement-javascript.md)    
+   [oggetto errore](../../javascript/reference/error-object-javascript.md)  
+ [istruzione throw](../../javascript/reference/throw-statement-javascript.md)   
  [Istruzione try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

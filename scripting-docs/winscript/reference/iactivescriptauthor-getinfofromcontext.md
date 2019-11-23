@@ -57,7 +57,7 @@ HRESULT GetInfoFromContext(
  `dwListTypesRequested`  
  in Tipi di elenco richiesti. Può essere una combinazione dei valori seguenti:  
   
-|Costante|Value|Descrizione|  
+|Costante|Valore|Descrizione|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Nessun elenco.|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|Elenco dei membri.|  
@@ -65,7 +65,7 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Elenco di parametri del metodo di chiamata.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Elenco globale.|  
   
- Il tipo SCRIPT_CMPL_GLOBALLIST viene considerato come un elemento di completamento predefinito che può essere combinato usando l'operatore OR con altri elementi di completamento. Il motore di creazione script tenta innanzitutto di popolare le informazioni sul tipo per gli altri elementi dell'elenco di completamento. Se l'operazione ha esito negativo, il motore popola per SCRIPT_CMPL_GLOBALLIST.  
+ Il tipo di SCRIPT_CMPL_GLOBALLIST viene considerato come un elemento di completamento predefinito che può essere combinato usando l'operatore OR con altri elementi di completamento. Il motore di creazione script tenta innanzitutto di popolare le informazioni sul tipo per gli altri elementi dell'elenco di completamento. Se l'operazione ha esito negativo, il motore popola per SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
  out Tipo di elenco fornito.  
@@ -96,12 +96,12 @@ HRESULT GetInfoFromContext(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IProvideMultipleClassInfo](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)    
+ [Interfaccia IProvideMultipleClassInfo](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

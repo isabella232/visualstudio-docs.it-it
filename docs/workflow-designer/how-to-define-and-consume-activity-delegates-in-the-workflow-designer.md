@@ -26,7 +26,7 @@ ms.locfileid: "72650341"
    > [!NOTE]
    > Se non vengono visualizzati i modelli di progetto del **flusso di lavoro** , installare prima il componente **Windows Workflow Foundation** di Visual Studio. Per istruzioni dettagliate, vedere [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Aggiungi**  > **nuovo elemento**. Selezionare la categoria **flusso di lavoro** , quindi selezionare il modello di elemento di **attività** . Assegnare alla nuova attività il nome **foreach. XAML** e quindi selezionare **OK**.
+3. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **nuovo elemento**. Selezionare la categoria **flusso di lavoro** , quindi selezionare il modello di elemento di **attività** . Assegnare alla nuova attività il nome **foreach. XAML** e quindi selezionare **OK**.
 
    L'attività viene aperta nella finestra di progettazione del flusso di lavoro.
 
@@ -42,7 +42,7 @@ ms.locfileid: "72650341"
 
 9. Nella colonna tipo di argomento selezionare **Cerca tipi**
 
-10. Nel browser dei tipi immettere **ActivityAction** nel campo **nome tipo** . Selezionare **ActivityAction \<T >** nella visualizzazione albero. Selezionare **oggetto** nell'elenco a discesa a cui viene assegnato il tipo **ActivityAction \<Object >** all'argomento.
+10. Nel browser dei tipi immettere **ActivityAction** nel campo **nome tipo** . Selezionare **ActivityAction\<t >** nella visualizzazione albero. Selezionare **oggetto** nell'elenco a discesa che viene visualizzato per assegnare il tipo **ActivityAction\<oggetto >** all'argomento.
 
 11. Trascinare un'attività <xref:System.Activities.Statements.While> dalla sezione **flusso di controllo** della casella degli strumenti all'area di progettazione.
 
@@ -70,7 +70,7 @@ ms.locfileid: "72650341"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Usare l'attività personalizzata in un flusso di lavoro
 
-1. Compilare il progetto premendo **Ctrl** +**MAIUSC** +**B**.
+1. Compilare il progetto premendo **Ctrl**+**MAIUSC**+**B**.
 
 2. In **Esplora soluzioni**aprire **Workflow1. XAML** nella finestra di progettazione.
 
@@ -84,5 +84,5 @@ ms.locfileid: "72650341"
 
 Quando il flusso di lavoro viene eseguito, nella console viene visualizzato l'output seguente:
 
-**1** 
-**ABC**
+**1**
+**abc**

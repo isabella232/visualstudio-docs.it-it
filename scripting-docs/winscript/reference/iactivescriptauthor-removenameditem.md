@@ -42,7 +42,7 @@ HRESULT RemoveNamedItem(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`S_FALSE`|L'oggetto `NamedItem` non è presente nello spazio dei nomi del motore di creazione degli script.|  
@@ -51,5 +51,5 @@ HRESULT RemoveNamedItem(
  [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) viene usato per inserire l'oggetto `NamedItem` nello spazio dei nomi del motore di creazione dello script.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)

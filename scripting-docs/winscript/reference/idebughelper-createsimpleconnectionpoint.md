@@ -46,7 +46,7 @@ HRESULT CreateSimpleConnectionPoint(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -54,5 +54,5 @@ HRESULT CreateSimpleConnectionPoint(
  Restituisce un'interfaccia evento che esegue il wrapping del `IDispatch` specificato (vedere l' [interfaccia ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)    
+ [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
  [Interfaccia ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

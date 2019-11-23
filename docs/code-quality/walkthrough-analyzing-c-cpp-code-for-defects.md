@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Analisi del codice C/C++ per l'identificazione degli errori"
+title: "Procedura guidata: analisi del codice C/C++ per l'identificazione degli errori"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "72018348"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura dettagliata: Analisi del codice C/C++ per l'identificazione degli errori
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura guidata: analisi del codice C/C++ per l'identificazione degli errori
 
 Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenziali difetti del codice usando lo strumento di analisi del codiceC++ per C/code.
 
@@ -65,7 +65,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
 2. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6230: Cast implicito tra tipi semanticamente diversi: utilizzo di HRESULT in un contesto booleano.
+     avviso C6230: cast implicito tra tipi semanticamente diversi: utilizzo di HRESULT in un contesto booleano.
 
      Nell'editor di codice viene visualizzata la riga che ha provocato l'avviso nella funzione `bool ProcessDomain()`. Questo avviso indica che è in uso un HRESULT in un'istruzione ' If ' in cui è previsto un risultato booleano.
 
@@ -77,7 +77,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
 4. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6282: Operatore errato: assegnazione alla costante nel contesto di test. Is = = designato?
+     avviso C6282: operatore errato: assegnazione alla costante nel contesto di test. Is = = designato?
 
 5. Correggere questo avviso verificando l'uguaglianza. Il codice dovrebbe essere simile al codice seguente:
 
@@ -119,7 +119,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
 6. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6011: Dereferenziazione del puntatore NULL ' newNode '.
+     avviso C6011: dereferenziazione del puntatore NULL ' newNode '.
 
      Questo avviso indica un errore del chiamante per verificare il valore restituito. In questo caso, una chiamata a **AllocateNode** potrebbe restituire un valore null (vedere il file di intestazione Annotations. h per la dichiarazione di funzione per AllocateNode).
 
@@ -156,7 +156,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
 3. Nella **Elenco errori**fare doppio clic sull'avviso seguente:
 
-     avviso C6011: Dereferenziazione del puntatore NULL ' node '.
+     avviso C6011: dereferenziazione del puntatore NULL ' node '.
 
      Questo avviso indica che il nodo passato nella funzione potrebbe essere null e indica il numero di riga in cui è stato generato l'avviso.
 
@@ -178,4 +178,5 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura dettagliata: Analisi del codice gestito per i difetti del codice @ no__t-0 @ no__t-1[analisi del codiceC++ per C/](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Procedura dettagliata: analisi del codice gestito per i difetti del codice](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[analisi delC++ codice per C/](../code-quality/code-analysis-for-c-cpp-overview.md)

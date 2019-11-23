@@ -80,7 +80,7 @@ Per prima cosa si crea un progetto di applicazione C#. Il tipo di progetto inclu
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
+   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -100,7 +100,7 @@ Dopo aver selezionato il C# modello di progetto e denominato il file, Visual Stu
 
      ![Scegliere la casella degli strumenti per aprire la finestra casella degli strumenti](../ide/media/csharp-toolbox-toolwindow.png)
 
-     (Se l'opzione di apertura a comparsa della **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare**la**casella degli strumenti** > . In alternativa, premere **CTRL**+**ALT**+**X**.)
+     (Se l'opzione di apertura a comparsa della **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare** > **casella degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
 
 1. Scegliere l'icona **Aggiungi** per ancorare la finestra **casella degli strumenti** .
 
@@ -110,11 +110,11 @@ Dopo aver selezionato il C# modello di progetto e denominato il file, Visual Stu
 
      ![Aggiungere un pulsante al modulo](../ide/media/csharp-add-button-form1.png)
 
-1. Nella finestra **Proprietà** individuare il **testo**, modificare il nome da **Button1** a `Click this`, quindi premere **invio**.
+1. Nella finestra **Proprietà** individuare il **testo**, modificare il nome da **Button1** a `Click this`e quindi premere **invio**.
 
      ![Aggiungere testo al pulsante nel modulo](../ide/media/vb-button-control-text.png)
 
-     (Se la finestra **Proprietà** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, scegliere **Visualizza** **finestra delle proprietà** > . In alternativa premere **F4**.)
+     (Se la finestra **Proprietà** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, scegliere **visualizza** > **finestra Proprietà**. In alternativa premere **F4**.)
 
 1. Nella sezione **Progettazione** della finestra **Proprietà** cambiare il nome da **Button1** a `btnClickThis`, quindi premere **INVIO**.
 
@@ -160,7 +160,7 @@ Dopo aver selezionato il C# modello di progetto e denominato il file, Visual Stu
 Per altre informazioni, continuare con l'esercitazione seguente:
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Creazione di un visualizzatore immagini @ no__t-0
+> [Esercitazione: creare un visualizzatore di immagini](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Vedere anche
 

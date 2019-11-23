@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplication:: AddGlobalExpressionContextProvider | Microsoft Docs'
+title: IDebugApplication::AddGlobalExpressionContextProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -46,7 +46,7 @@ HRESULT AddGlobalExpressionContextProvider(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -54,5 +54,5 @@ HRESULT AddGlobalExpressionContextProvider(
  Questo metodo aggiunge un provider di contesto dell'espressione globale a questa applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)

@@ -23,7 +23,7 @@ ms.locfileid: "71720798"
 ---
 # <a name="diagnosing-task-failures"></a>Diagnosi degli errori delle attività
 
-`MSB6006` viene generato quando una classe derivata da @no__t 1 esegue un processo dello strumento che restituisce un codice di uscita diverso da zero se l'attività non registra un errore più specifico.
+`MSB6006` viene generato quando una classe derivata da <xref:Microsoft.Build.Utilities.ToolTask>esegue un processo dello strumento che restituisce un codice di uscita diverso da zero se l'attività non registra un errore più specifico.
 
 ## <a name="identifying-the-failing-task"></a>Identificazione dell'attività non riuscita
 
@@ -53,7 +53,7 @@ Questo risultato indica che l'errore si è verificato in un'attività definita a
 
 ### <a name="in-visual-studio"></a>In Visual Studio
 
-Le stesse informazioni sono disponibili nell'elenco errori di Visual Studio nelle colonne `Project`, `File` e `Line`.
+Le stesse informazioni sono disponibili nell'elenco errori di Visual Studio nelle colonne `Project`, `File`e `Line`.
 
 ## <a name="finding-more-failure-information"></a>Ricerca di ulteriori informazioni sugli errori
 

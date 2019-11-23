@@ -46,7 +46,7 @@ HRESULT HandleBreakPoint(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -59,7 +59,7 @@ HRESULT HandleBreakPoint(
  Questo metodo fa sì che `IApplicationDebugger::onHandleBreakPoint` venga chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
- @No__t_1 [IApplicationDebugger:: onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)  
- @No__t_1 [enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)  
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
+   [enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)  
  [Enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)

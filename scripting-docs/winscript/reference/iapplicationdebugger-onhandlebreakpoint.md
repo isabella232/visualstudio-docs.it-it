@@ -1,5 +1,5 @@
 ---
-title: 'IApplicationDebugger:: onHandleBreakPoint | Microsoft Docs'
+title: IApplicationDebugger::onHandleBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -50,7 +50,7 @@ HRESULT onHandleBreakPoint(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -60,7 +60,7 @@ HRESULT onHandleBreakPoint(
  L'applicazione resterà sospesa finché l'IDE del debugger non chiamerà `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)    
- @No__t_1 [IDebugApplication:: HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)  
- @No__t_1 [IRemoteDebugApplication:: ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)  
+ [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
+ [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
+ [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [Enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

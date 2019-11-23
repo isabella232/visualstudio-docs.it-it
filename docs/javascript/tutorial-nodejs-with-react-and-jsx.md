@@ -55,7 +55,7 @@ JSX è un'estensione della sintassi JavaScript in genere usata con React per des
 
 webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Può anche trasformare o creare pacchetti di altri asset e risorse. Viene spesso usato per specificare un compilatore, ad esempio Babel o TypeScript, per convertire tramite transpile il codice JSX o TypeScript in codice JavaScript semplice.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -80,7 +80,7 @@ webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Pu
 
 Per prima cosa creare un progetto di applicazione Web Node.js.
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 1. Creare un nuovo progetto.
 
@@ -88,7 +88,7 @@ Per prima cosa creare un progetto di applicazione Web Node.js.
     Premere **ESC** per chiudere la finestra iniziale. Premere **Ctrl + Q** per aprire la casella di ricerca, digitare **Node.js**, quindi scegliere **Applicazione Web Node.js vuota** (JavaScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
+    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
     ::: moniker-end
     Se il modello di progetto **Applicazione Web Node.js vuota** non compare, è necessario installare prima il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
@@ -414,7 +414,7 @@ Per questo scenario, usare Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    O
+    o
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -478,7 +478,7 @@ Per questo scenario, usare Chrome.
 5. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare il Risultati della ricerca.
+    In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare i risultati della ricerca.
     ::: moniker-end
     ::: moniker range="vs-2017"
     In Visual Studio 2017 scegliere **codice Webkit** nel campo **Connetti a** , digitare **Chrome** nella casella filtro per filtrare i risultati della ricerca.

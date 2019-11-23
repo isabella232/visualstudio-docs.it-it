@@ -46,14 +46,14 @@ HRESULT CanHandleException(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il chiamante può gestire l'eccezione|  
 |`E_FAIL`|Il chiamante non è in grado di gestire l'eccezione.|  
   
 ## <a name="remarks"></a>Note  
- Se una chiamata a `IDispatchEx::InvokeEx` o a un metodo simile genera un'eccezione, il motore di script verifica la presenza di un chiamante nella catena di chiamante dello script che supporta l'interfaccia `ICanHandleException` e indica che è in grado di gestire l'eccezione. Se nessun chiamante è in grado di gestire l'eccezione, il motore di script si arresta.  
+ Se una chiamata a `IDispatchEx::InvokeEx`o a un metodo simile genera un'eccezione, il motore di script verifica la presenza di un chiamante nella catena di chiamante dello script che supporta l'interfaccia `ICanHandleException` e indica che è in grado di gestire l'eccezione. Se nessun chiamante è in grado di gestire l'eccezione, il motore di script si arresta.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)    
+ [Interfaccia ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

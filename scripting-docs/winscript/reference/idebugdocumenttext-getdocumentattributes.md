@@ -42,7 +42,7 @@ HRESULT GetDocumentAttributes(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,5 +50,5 @@ HRESULT GetDocumentAttributes(
  Questo metodo restituisce gli attributi del documento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)    
+ [Interfaccia IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)   
  [Costanti TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

@@ -58,7 +58,7 @@ HRESULT CreatePropertyBrowserEx(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -66,6 +66,6 @@ HRESULT CreatePropertyBrowserEx(
  Questo metodo restituisce un visualizzatore proprietà che esegue il wrapping di una variante e consente la conversione personalizzata di valori VARIANT o tipi VARTYPE in stringhe.  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [IDebugHelper:: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)  
- [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)    
+ [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
+ [Interfaccia IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
  [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

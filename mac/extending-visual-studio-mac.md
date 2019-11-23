@@ -28,7 +28,7 @@ Perché un pacchetto di estensione possa essere compilato da Visual Studio per M
 Il vantaggio di questa progettazione modulare è il fatto che Visual Studio per Mac è estendibile, ovvero sono disponibili molti punti di estensione su cui è possibile basare i pacchetti di estensione personalizzati. Alcuni esempi degli attuali pacchetti di estensione includono il supporto per C# ed F#, strumenti debugger e modelli di progetto.
 
 > [!NOTE]
-> Se si dispone di un progetto di creatore di componenti aggiuntivi creato prima del componente aggiuntivo Maker 1,2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
+> in presenza di un progetto Addin Maker creato prima di Addin Maker 1.2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 

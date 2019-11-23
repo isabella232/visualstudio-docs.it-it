@@ -39,7 +39,7 @@ HRESULT onClose();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -47,5 +47,5 @@ HRESULT onClose();
  Questo metodo viene chiamato quando viene chiamato `IDebugApplication::Close`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)    
+ [Interfaccia IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)

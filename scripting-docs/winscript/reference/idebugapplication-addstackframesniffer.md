@@ -46,7 +46,7 @@ HRESULT AddStackFrameSniffer(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -54,6 +54,6 @@ HRESULT AddStackFrameSniffer(
  Sebbene i motori di linguaggio chiamino in genere questo metodo per esporre gli stack frame al debugger, è possibile che altre entità espongano gli stack frame.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
- @No__t_1 [IDebugApplication:: RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)  
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [Interfaccia IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

@@ -26,7 +26,7 @@ In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) d
 > [!IMPORTANT]
 > Questo articolo richiede il modello Vue.js disponibile a partire da Visual Studio 2017 versione 15.8.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -53,7 +53,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
 
     In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non viene rilevato un runtime installato, è possibile usare la pagina delle proprietà per configurare il progetto in modo che faccia riferimento al runtime installato (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**).
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 1. Creare un nuovo progetto.
 
@@ -63,7 +63,7 @@ Per prima cosa si crea un progetto di applicazione Web Vue.js.
     ![Modello Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript** o **TypeScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Vue.js di base**, digitare il nome **basic-vuejs** e scegliere **OK**.
+    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript** o **TypeScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Vue.js di base**, digitare il nome **basic-vuejs** e scegliere **OK**.
 
     ![Modello Vue.js](../javascript/media/vuejs-template.png)
     ::: moniker-end

@@ -42,7 +42,7 @@ HRESULT SetDebugDocumentHost(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,5 +50,5 @@ HRESULT SetDebugDocumentHost(
  L'interfaccia `IDebugDocumentHost` viene utilizzata per la colorazione della sintassi per smart host, per il recupero di testo posticipato e per la restituzione di oggetti di controllo per contesti di documento appena creati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

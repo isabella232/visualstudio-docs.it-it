@@ -42,7 +42,7 @@ typedef enum {
   
 ## <a name="members"></a>Members  
   
-|Member|Descrizione|  
+|Membro|Descrizione|  
 |------------|-----------------|  
 |PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Funzioni dei profili definite in script e codice dinamico scritti dall'utente.|  
 |PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Profili funzioni native definite dal motore di scripting.|  
@@ -51,6 +51,6 @@ typedef enum {
 |PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Esegue la profilatura di tutte le funzioni, incluse le chiamate al DOM.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Costanti, enumerazioni e strutture del profiler di script activex](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- @No__t_1 [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)  
+ [Costanti, enumerazioni e strutture del profiler di script activex](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptProfilerControl2:: CompleteProfilerStart | Microsoft Docs'
+title: IActiveScriptProfilerControl2::CompleteProfilerStart | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -33,7 +33,7 @@ HRESULT CompleteProfilerStart();
  Il metodo non accetta parametri.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un valore HRESULT. I valori possibili sono i seguenti:  
+ Restituisce un valore HRESULT. I possibili valori sono i seguenti:  
   
 |Valore restituito|Significato|  
 |------------------|-------------|  
@@ -47,5 +47,5 @@ HRESULT CompleteProfilerStart();
  La chiamata di `IActiveScriptProfilerControl2::CompleteProfilerStart` garantisce che vengano inviati gli eventi per le funzioni già presenti nello stack di chiamate. Questo metodo deve essere chiamato dopo l'avvio della profilatura in un motore di script che si trova nella scheda corrente. Il metodo può essere chiamato per qualsiasi motore di scripting.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [Interfaccia IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

@@ -37,8 +37,8 @@ Si è provato a usare una variabile di compilazione condizionale senza prima att
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 di [compilazione condizionale](../../javascript/advanced/conditional-compilation-javascript.md)  
- [Variabili di compilazione condizionale](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
- [istruzione @cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)    
- [istruzione @if](../../javascript/reference/at-if-statement-javascript.md)    
+   di [compilazione condizionale](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Variabili di compilazione condizionale](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
+ [istruzione@cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [istruzione@if](../../javascript/reference/at-if-statement-javascript.md)   
  [Istruzione @set](../../javascript/reference/at-set-statement-javascript.md)

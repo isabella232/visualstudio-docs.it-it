@@ -72,7 +72,7 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
    > [!NOTE]
    > Assicurarsi di fare clic sul collegamento per l'attivazione nel messaggio di posta elettronica ricevuto.  In caso contrario, non sarà possibile accedere alla sottoscrizione di CAST Highlight. Se questo messaggio non compare nella posta in arrivo, assicurarsi di controllare le cartella della posta indesiderata.
 
-## <a name="eligibility"></a>Idoneità
+## <a name="eligibility"></a>Eligibility
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Valutazione di 5 app per 30 giorni|  No.  Disponibile solo per i nuovi sottoscrittori          |

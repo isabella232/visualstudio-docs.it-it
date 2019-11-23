@@ -42,7 +42,7 @@ HRESULT Attach(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,5 +50,5 @@ HRESULT Attach(
  Questo metodo aggiunge questo documento all'albero del documento, usando `pddhParent` come padre. Se la `pddhParent` è `NULL`, questo documento sarà il documento di primo livello.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
+ [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

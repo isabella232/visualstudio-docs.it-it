@@ -31,5 +31,5 @@ Fornisce metodi che aggiungono la possibilità di avviare o arrestare la profila
 |[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Notifica al profiler che si intende arrestare la profilatura su tutti i motori di scripting applicabili. In questo modo è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si arresta la profilatura.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)    
+ [Interfaccia IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   
  [Interfacce del profiler di script ActiveX](../../winscript/reference/active-script-profiler-interfaces.md)

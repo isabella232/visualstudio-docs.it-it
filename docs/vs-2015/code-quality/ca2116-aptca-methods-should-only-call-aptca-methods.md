@@ -29,7 +29,7 @@ ms.locfileid: "72658688"
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
 |CheckId|CA2116|
-|Category|Microsoft.Security|
+|Categoria|Microsoft.Security|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -44,9 +44,9 @@ ms.locfileid: "72658688"
 
 - `M1` chiama un metodo `M2` all'esterno dell'assembly di `M1`.
 
-- l'assembly `M2` non dispone dell'attributo APTCA e, pertanto, non deve essere eseguito da o per conto di chiamanti parzialmente attendibili.
+- l'assembly di `M2`non dispone dell'attributo APTCA e, pertanto, non deve essere eseguito da o per conto di chiamanti parzialmente attendibili.
 
-  Un chiamante parzialmente attendibile `X` può chiamare il metodo `M1`, causando `M1` per chiamare `M2`. Poiché `M2` non dispone dell'attributo APTCA, il chiamante immediato (`M1`) deve soddisfare una richiesta di collegamento per l'attendibilità totale; `M1` ha attendibilità totale e pertanto soddisfa questa verifica. Il rischio per la sicurezza è dovuto al fatto che `X` non partecipa alla soddisfazione della richiesta di collegamento che protegge `M2` da chiamanti non attendibili. Pertanto, i metodi con l'attributo APTCA non devono chiamare metodi che non dispongono dell'attributo.
+  Un chiamante parzialmente attendibile `X` può chiamare il metodo `M1`, causando `M1` chiamare `M2`. Poiché `M2` non dispone dell'attributo APTCA, il chiamante immediato (`M1`) deve soddisfare una richiesta di collegamento per l'attendibilità totale; `M1` dispone di attendibilità totale e pertanto soddisfa questa verifica. Il rischio per la sicurezza è dovuto al fatto che `X` non partecipa alla soddisfazione della richiesta di collegamento che protegge `M2` da chiamanti non attendibili. Pertanto, i metodi con l'attributo APTCA non devono chiamare metodi che non dispongono dell'attributo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Se l'attributo APCTA è obbligatorio, usare una richiesta per proteggere il metodo che chiama nell'assembly con attendibilità totale. Le autorizzazioni richieste dipenderanno dalle funzionalità esposte dal metodo. Se possibile, proteggere il metodo con una richiesta di attendibilità totale per assicurarsi che la funzionalità sottostante non venga esposta a chiamanti parzialmente attendibili. Se ciò non è possibile, selezionare un set di autorizzazioni che protegga efficacemente la funzionalità esposta. Per ulteriori informazioni sulle richieste, vedere la pagina relativa alle [richieste](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
@@ -65,14 +65,14 @@ ms.locfileid: "72658688"
  [!code-csharp[FxCop.Security.YesAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.YesAptca/cs/FxCop.Security.YesAptca.cs#1)]
 
 ## <a name="example"></a>Esempio
- L'applicazione di test (rappresentata da `X` nella discussione precedente) è parzialmente attendibile.
+ L'applicazione di test, rappresentata da `X` nella discussione precedente, è parzialmente attendibile.
 
  [!code-csharp[FxCop.Security.TestAptcaMethods#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestAptcaMethods/cs/FxCop.Security.TestAptcaMethods.cs#1)]
 
  Questo esempio produce il seguente output:
 
- Richiesta **di attendibilità totale: la richiesta non è riuscita.** 
-**ClassRequiringFullTrust. DoWork è stato chiamato.**
+ **La richiesta di attendibilità completa: richiesta non è riuscita.** 
+**ClassRequiringFullTrust.DoWork è stato chiamato.**
 ## <a name="related-rules"></a>Regole correlate
  [CA2117: I tipi APTCA devono estendere solo tipi di base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 

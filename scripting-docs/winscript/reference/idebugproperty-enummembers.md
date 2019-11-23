@@ -52,10 +52,10 @@ HRESULT EnumMembers (
  out Restituisce l'interfaccia `IEnumDebugPropertyInfo` che enumera le proprietà del membro.  
   
 ## <a name="return-value"></a>Valore restituito  
- Restituisce un `HRESULT` valido, in genere `S_OK`.  
+ Restituisce un `HRESULT`valido, in genere `S_OK`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)    
- @No__t_1 [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
- [Interfaccia IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)    
+ [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [Interfaccia IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
  [Interfaccia IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

@@ -37,7 +37,7 @@ Questa procedura dettagliata illustra le attività seguenti:
 > [!NOTE]
 > Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 - Edizioni supportate di Windows e SharePoint.
 
@@ -103,7 +103,7 @@ Gestire i controlli in una pagina dell'applicazione in modo analogo a qualsiasi 
 
      Il file di codice della pagina dell'applicazione verrà aperto nell'editor di codice.
 
-2. Aggiungere il metodo seguente alla classe `SearchItems` . Questo codice gestisce l'evento <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> della <xref:System.Web.UI.WebControls.DropDownList> chiamando un metodo che verrà creato più avanti in questa procedura dettagliata.
+2. Aggiungere il seguente metodo alla classe `SearchItems`. Questo codice gestisce l'evento <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> della <xref:System.Web.UI.WebControls.DropDownList> chiamando un metodo che verrà creato più avanti in questa procedura dettagliata.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +113,12 @@ Gestire i controlli in una pagina dell'applicazione in modo analogo a qualsiasi 
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Aggiungere il metodo seguente alla classe `SearchItems` . Questo metodo scorre tutti i siti nella server farm e cerca gli elementi creati o modificati dall'utente corrente.
+4. Aggiungere il seguente metodo alla classe `SearchItems`. Questo metodo scorre tutti i siti nella server farm e cerca gli elementi creati o modificati dall'utente corrente.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Aggiungere il metodo seguente alla classe `SearchItems` . Questo metodo consente di visualizzare gli elementi creati o modificati dall'utente corrente nella tabella.
+5. Aggiungere il seguente metodo alla classe `SearchItems`. Questo metodo consente di visualizzare gli elementi creati o modificati dall'utente corrente nella tabella.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -154,4 +154,4 @@ Per ulteriori informazioni su come progettare il contenuto di una pagina di Shar
 ## <a name="see-also"></a>Vedere anche
 
 [Procedura: creare una pagina dell'applicazione](../sharepoint/how-to-create-an-application-page.md)
-[tipo di pagina _layouts dell'applicazione](/previous-versions/office/aa979604(v=office.14))
+[tipo di pagina _layouts applicazione](/previous-versions/office/aa979604(v=office.14))
