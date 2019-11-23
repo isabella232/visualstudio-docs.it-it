@@ -17,7 +17,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572190"
 ---
-# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32:: GetApplication
+# <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Restituisce l'oggetto applicazione di debug associato a questo sito di script.  
   
 ## <a name="syntax"></a>Sintassi  
@@ -35,7 +35,7 @@ HRESULT GetApplication(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_NOTIMPL`|L'host non supporta direttamente il debug.|  
@@ -44,5 +44,5 @@ HRESULT GetApplication(
  Il `GetApplication` metodo consente a un host intelligente di definire l'oggetto applicazione a cui appartiene ogni script. I motori di script devono tentare di chiamare questo metodo per ottenere l'applicazione contenitore e ricorrere a `IProcessDebugManager::GetDefaultApplication` in caso di errore.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)    
+ [Interfaccia IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

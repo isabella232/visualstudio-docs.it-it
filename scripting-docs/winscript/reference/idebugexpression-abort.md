@@ -39,7 +39,7 @@ HRESULT Abort();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -47,5 +47,5 @@ HRESULT Abort();
  Questo metodo arresta una valutazione dell'espressione alla prima opportunità.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugExpression](../../winscript/reference/idebugexpression-interface.md)    
+ [Interfaccia IDebugExpression](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Start](../../winscript/reference/idebugexpression-start.md)

@@ -44,7 +44,7 @@ HRESULT AddNamedItem(
  `dwFlags`  
  in Flag associati all'elemento specificato. Può essere una combinazione dei valori seguenti:  
   
-|Costante|Value|Descrizione|  
+|Costante|Valore|Descrizione|  
 |--------------|-----------|-----------------|  
 |SCRIPTITEM_ISVISIBLE|0x00000002|Indica che il nome dell'elemento è disponibile nello spazio dei nomi dello script. Questo consente l'accesso alle proprietà, ai metodi e agli eventi dell'elemento.<br /><br /> Per convenzione, le proprietà dell'elemento includono i membri figlio dell'elemento. Pertanto, tutti i metodi e le proprietà dell'oggetto figlio (e i relativi membri figlio, in modo ricorsivo) sono accessibili.|  
 |SCRIPTITEM_ISSOURCE|0x00000004|Indica gli eventi dell'origine dell'elemento che lo script può avere gestori di eventi di script.|  
@@ -54,17 +54,17 @@ HRESULT AddNamedItem(
 |SCRIPTITEM_NOCODE|0x00000400|Indica che l'elemento denominato è semplicemente un nome da aggiungere e non ha nulla da creare.|  
   
  `pdisp`  
- in @No__t_0 dell'oggetto `NamedItem` utilizzato per raccogliere metodi, proprietà o l'origine dell'evento.  
+ in `IDispatch` dell'oggetto `NamedItem` utilizzato per raccogliere metodi, proprietà o l'origine dell'evento.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)

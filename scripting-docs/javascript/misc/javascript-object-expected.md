@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573796"
 ---
 # <a name="javascript-object-expected"></a>Previsto oggetto JavaScript
-Si è tentato di passare un oggetto non [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] a una funzione predefinita che prevede un oggetto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Diverse funzioni predefinite richiedono oggetti definiti in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], anziché oggetti definiti dall'host o un componente esterno come un controllo.  
+Si è tentato di passare un oggetto non[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] a una funzione predefinita che prevede un oggetto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Diverse funzioni predefinite richiedono oggetti definiti in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], anziché oggetti definiti dall'host o un componente esterno come un controllo.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   

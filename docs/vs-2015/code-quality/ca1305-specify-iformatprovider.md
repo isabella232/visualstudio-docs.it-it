@@ -29,11 +29,11 @@ ms.locfileid: "72661434"
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Category|Microsoft. globalizzazione|
+|Categoria|Microsoft. globalizzazione|
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
- Un metodo o un costruttore chiama uno o più membri con overload che accettano un parametro <xref:System.IFormatProvider?displayProperty=fullName> e il metodo o il costruttore non chiama l'overload che accetta il parametro <xref:System.IFormatProvider>. Questa regola consente di ignorare le chiamate a [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] metodi documentati come ignorando il parametro <xref:System.IFormatProvider> e i metodi seguenti:
+ Un metodo o un costruttore chiama uno o più membri con overload che accettano un parametro di <xref:System.IFormatProvider?displayProperty=fullName> e il metodo o il costruttore non chiama l'overload che accetta il parametro <xref:System.IFormatProvider>. Questa regola consente di ignorare le chiamate a [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] metodi documentati come ignorando il parametro <xref:System.IFormatProvider> e i metodi seguenti:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
@@ -61,18 +61,18 @@ ms.locfileid: "72661434"
  È possibile eliminare un avviso da questa regola quando si è certi che il provider di impostazioni cultura/formato predefinito sia la scelta corretta e che la gestibilità del codice non sia una priorità di sviluppo importante.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente `BadMethod` causa due violazioni di questa regola. `GoodMethod` corregge la prima violazione passando le impostazioni cultura invarianti al <xref:System.String.Compare%2A> e corregge la seconda violazione passando le impostazioni cultura correnti al <xref:System.String.ToLower%2A> perché `string3` viene visualizzato all'utente.
+ Nell'esempio seguente `BadMethod` causa due violazioni di questa regola. `GoodMethod` corregge la prima violazione passando le impostazioni cultura invarianti al <xref:System.String.Compare%2A>e corregge la seconda violazione passando le impostazioni cultura correnti al <xref:System.String.ToLower%2A> perché `string3` viene visualizzato all'utente.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato l'effetto delle impostazioni cultura correnti sul valore predefinito <xref:System.IFormatProvider> selezionato dal tipo <xref:System.DateTime>.
+ Nell'esempio seguente viene illustrato l'effetto delle impostazioni cultura correnti sul <xref:System.IFormatProvider> predefinito selezionato dal tipo di <xref:System.DateTime>.
 
  [!code-csharp[FxCop.Globalization.IFormatProvider#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.IFormatProvider/cs/FxCop.Globalization.IFormatProvider.cs#1)]
 
  Questo esempio produce il seguente output:
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Regole correlate
  [CA1304: Specificare CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)

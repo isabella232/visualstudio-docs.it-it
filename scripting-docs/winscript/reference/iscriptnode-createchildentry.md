@@ -66,7 +66,7 @@ HRESULT CreateChildEntry(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -74,5 +74,5 @@ HRESULT CreateChildEntry(
  L'interfaccia `IScriptNode` rappresenta una pagina Web o i relativi elementi. L'interfaccia `IScriptEntry` (derivata da `IScriptNode`) rappresenta un blocco di script o un oggetto funzione. L'interfaccia `IScriptScriptlet` (derivata da `IScriptEntry`) rappresenta un gestore eventi.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)    
+ [Interfaccia IScriptNode](../../winscript/reference/iscriptnode-interface.md)   
  [Interfaccia IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

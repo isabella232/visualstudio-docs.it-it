@@ -55,9 +55,9 @@ HRESULT InvokeEx(
   
  Flag che descrivono il contesto della chiamata `InvokeEx`:  
   
-|Value|Significato|  
+|Valore|Significato|  
 |-----------|-------------|  
-|DISPATCH_METHOD|Il membro viene richiamato come metodo. Se una proprietà ha lo stesso nome, è possibile impostare sia il flag che il flag DISPATCH_PROPERTYGET (definito da `IDispatch`).|  
+|DISPATCH_METHOD|Il membro viene richiamato come metodo. Se una proprietà ha lo stesso nome, è possibile impostare sia questo che il flag di DISPATCH_PROPERTYGET (definito da `IDispatch`).|  
 |DISPATCH_PROPERTYGET|Il membro viene recuperato come una proprietà o un membro dati (definito da `IDispatch`).|  
 |DISPATCH_PROPERTYPUT|Il membro viene modificato come una proprietà o un membro dati (definito da `IDispatch`).|  
 |DISPATCH_PROPERTYPUTREF|Il membro viene modificato da un'assegnazione di riferimento anziché da un'assegnazione di valore. Questo flag è valido solo quando la proprietà accetta un riferimento a un oggetto (definito da `IDispatch`).|  
@@ -67,7 +67,7 @@ HRESULT InvokeEx(
  Puntatore a una struttura contenente una matrice di argomenti, una matrice di DISPID per argomenti denominati e i conteggi del numero di elementi nelle matrici. Per una descrizione completa della struttura DISPPARAMS, vedere la documentazione `IDispatch`.  
   
  `pVarRes`  
- Puntatore alla posizione in cui deve essere archiviato il risultato o null se il chiamante non prevede alcun risultato. Questo argomento viene ignorato se è specificato DISPATCH_PROPERTYPUT o DISPATCH_PROPERTYPUTREF.  
+ Puntatore alla posizione in cui deve essere archiviato il risultato o null se il chiamante non prevede alcun risultato. Questo argomento viene ignorato se viene specificato DISPATCH_PROPERTYPUT o DISPATCH_PROPERTYPUTREF.  
   
  `pei`  
  Puntatore a una struttura contenente informazioni sull'eccezione. Questa struttura deve essere compilata se viene restituito `DISP_E_EXCEPTION`. Può essere null. Per una descrizione completa della struttura `EXCEPINFO`, vedere la documentazione `IDispatch`.  
@@ -81,7 +81,7 @@ HRESULT InvokeEx(
 |-|-|  
 |DISPATCH_CONSTRUCT|Indica che l'elemento viene utilizzato come costruttore.|  
 |`pspCaller`|Il `pspCaller` consente all'oggetto di accedere ai servizi forniti dal chiamante. I servizi specifici possono essere gestiti dal chiamante stesso o delegati ai chiamanti più in alto nella catena di chiamate. Se, ad esempio, un modulo di gestione di script all'interno di un browser esegue una chiamata `InvokeEx` a un oggetto esterno, l'oggetto può seguire la catena di `pspCaller` per ottenere servizi dal motore di script o dal browser. Si noti che la catena di chiamate non corrisponde alla catena di creazione, nota anche come catena di contenitori o catena di siti. La catena di creazione può essere disponibile tramite un altro meccanismo, ad esempio `IObjectWithSite`.|  
-|Puntatore `this`|Quando DISPATCH_METHOD è impostato in `wFlags`, è possibile che sia presente un "parametro denominato" per il valore "This". Il DISPID sarà DISPID_THIS e deve essere il primo parametro denominato.|  
+|Puntatore `this`|Quando DISPATCH_METHOD viene impostato in `wFlags`, potrebbe essere presente un "parametro denominato" per il valore "This". Il DISPID verrà DISPID_THIS e deve essere il primo parametro denominato.|  
   
  Il parametro `riid` non usato in `IDispatch::Invoke` è stato rimosso.  
   
@@ -137,6 +137,6 @@ VARIANT var;
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)    
- @No__t_1 [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
+ [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

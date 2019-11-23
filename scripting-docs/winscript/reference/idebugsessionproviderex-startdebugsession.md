@@ -44,7 +44,7 @@ HRESULT StartDebugSession(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -52,5 +52,5 @@ HRESULT StartDebugSession(
  Questo metodo avvia una sessione di debug con l'applicazione specificata. Il debugger deve chiamare `IRemoteDebugApplication::ConnectDebugger` prima di tornare da questa chiamata.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugSessionProviderEx](../../winscript/reference/idebugsessionproviderex-interface.md)    
+ [Interfaccia IDebugSessionProviderEx](../../winscript/reference/idebugsessionproviderex-interface.md)   
  [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)

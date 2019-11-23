@@ -42,7 +42,7 @@ HRESULT Attach(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,5 +50,5 @@ HRESULT Attach(
  Questo metodo aggiunge il nodo dell'applicazione all'albero del progetto, usando `pdanParent` come padre. Se `pdanParent` è `NULL`, il nodo dell'applicazione sarà il nodo di primo livello.  
   
 ## <a name="see-also"></a>Vedere anche  
- [IDebugApplicationNode::D etach](../../winscript/reference/idebugapplicationnode-detach.md)    
+ [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
  [Interfaccia IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

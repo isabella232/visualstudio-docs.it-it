@@ -52,11 +52,11 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  in Flag associati al blocco di script. Può essere una combinazione di questi valori:  
   
-|Costante|Value|Descrizione|  
+|Costante|Valore|Descrizione|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Indica che gli identificatori e gli operatori punto devono essere identificati rispettivamente con i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP.|  
-|GETATTRFLAG_THIS|0x0100|Indica che l'identificatore per l'oggetto corrente deve essere identificato con il flag SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Indica che il contenuto della stringa e il testo del commento devono essere identificati con il flag SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_THIS|0x0100|Indica che l'identificatore per l'oggetto corrente deve essere identificato con il flag di SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Indica che il contenuto della stringa e il testo del commento devono essere identificati con il flag di SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
  [in, out] Buffer contenente gli attributi restituiti.  
@@ -64,7 +64,7 @@ HRESULT GetScriptTextAttributes(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_NOTIMPL`|L'host utilizza solo attributi predefiniti.|  
@@ -73,5 +73,5 @@ HRESULT GetScriptTextAttributes(
  Questo metodo restituisce gli attributi di testo per un blocco arbitrario di testo del documento. È accettabile che gli host restituiscano `E_NOTIMPL`, nel qual caso vengono usati gli attributi predefiniti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)    
+ [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

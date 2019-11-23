@@ -42,7 +42,7 @@ HRESULT SetDefaultTextAttr(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,5 +50,5 @@ HRESULT SetDefaultTextAttr(
  A meno che non vengano modificati gli attributi predefiniti da questo metodo, gli attributi predefiniti per il testo all'esterno di un blocco di script sono SOURCETEXT_ATTR_NONSOURCE. L'interfaccia utente può utilizzare queste informazioni per contrassegnare il testo all'esterno dei blocchi di script come di sola lettura.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

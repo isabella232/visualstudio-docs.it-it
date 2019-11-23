@@ -29,5 +29,5 @@ ms.locfileid: "72576520"
 - Aggiungere la parentesi quadra chiusa all'espressione che fa riferimento all'elemento della matrice.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso di matrici](../../javascript/advanced/using-arrays-javascript.md)    
+ [Uso di matrici](../../javascript/advanced/using-arrays-javascript.md)   
  [Oggetto Array](../../javascript/reference/array-object-javascript.md)

@@ -29,5 +29,5 @@ Si è provato a creare un'espressione usando l'operatore condizionale ternario, 
 - Inserire i due punti tra il secondo e il terzo operando.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Operatore condizionale (ternario) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+ [Operatore condizionale (ternario) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [Operatori](../../javascript/operators-javascript.md)

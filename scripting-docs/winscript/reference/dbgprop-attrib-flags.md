@@ -110,5 +110,5 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  Questi flag vengono usanti anche per filtrare i figli di un oggetto. I valori possono essere combinati con un OR bit per bit.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)    
+ [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
  [Struttura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

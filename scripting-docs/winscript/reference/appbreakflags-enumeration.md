@@ -35,11 +35,11 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 ## <a name="members"></a>Members  
   
-|Member|Value|Descrizione|  
+|Membro|Valore|Descrizione|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Il motore di linguaggio deve interrompersi immediatamente su tutti i thread con BREAKREASON_DEBUGGER_BLOCK.|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Il motore di linguaggio deve interrompere immediatamente tutti i thread con BREAKREASON_DEBUGGER_BLOCK.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Il motore di linguaggio deve interrompersi immediatamente con BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|Il motore di linguaggio dovrebbe interrompere immediatamente il thread di esecuzione con BREAKREASON_STEP.|  
+|APPBREAKFLAG_STEP|0x00010000|Il motore di linguaggio deve interrompere immediatamente il thread di esecuzione con BREAKREASON_STEP.|  
 |APPBREAKFLAG_NESTED|0x00020000|L'applicazione è in esecuzione annidata in un punto di interruzione.|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|Il debugger sta eseguendo un'istruzione a livello di origine.|  
 |APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|Il debugger esegue l'istruzione a livello di codice byte.|  
@@ -51,5 +51,5 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
  Alcuni flag specificano che i motori di linguaggio dovrebbero interrompersi alla successiva opportunità, mentre altri flag specificano la modalità di esecuzione del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Costanti, enumerazioni e strutture del debugger di script activex](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
+ [Costanti, enumerazioni e strutture del debugger di script activex](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [Enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

@@ -54,7 +54,7 @@ HRESULT EnumCodeContextsOfPosition(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -62,5 +62,5 @@ HRESULT EnumCodeContextsOfPosition(
  Gli host intelligenti utilizzano questo metodo per delegare il metodo `IDebugDocumentContext::EnumCodeContexts`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)    
+ [Interfaccia IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)

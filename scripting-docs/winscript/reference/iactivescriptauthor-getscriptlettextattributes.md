@@ -52,9 +52,9 @@ HRESULT GetScriptletTextAttributes(
  `dwFlags`  
  in Flag associati agli attributi di testo di scriptlet. Può essere una combinazione dei valori seguenti.  
   
-|Costante|Value|Descrizione|  
+|Costante|Valore|Descrizione|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|Identificare gli identificatori con l'attributo SOURCETEXT_ATTR_IDENTIFIER e identificare gli operatori punto con l'attributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Identificare gli identificatori che hanno l'attributo SOURCETEXT_ATTR_IDENTIFIER e identificare gli operatori punto con l'attributo SOURCETEXT_ATTR_MEMBERLOOKUP.|  
 |GETATTRFLAG_THIS|0x0100|Identificare l'oggetto corrente con l'attributo SOURCETEXT_ATTR_THIS.|  
 |GETATTRFLAG_HUMANTEXT|0x8000|Identificare il contenuto della stringa e il testo del commento con l'attributo SOURCETEXT_ATTR_HUMANTEXT.|  
   
@@ -64,13 +64,13 @@ HRESULT GetScriptletTextAttributes(
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)    
- @No__t_1 [IActiveScriptAuthor:: GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)  
+ [Interfaccia IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+ [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

@@ -24,13 +24,13 @@ In questa esercitazione per lo sviluppo in Visual Studio con Node.js ed Express 
 
 ::: moniker range="vs-2017"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ npm è l'applicazione di gestione pacchetti predefinita di Node.js. L'applicazio
 
 Express è un framework applicazione Web utilizzato come framework server per da Node.js per creare applicazioni Web. Express consente di usare e scegliere diversi framework front-end per creare un'interfaccia utente, ad esempio Pug (conosciuto in precedenza come Jade). In questa esercitazione viene usata l'interfaccia Pug.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -85,7 +85,7 @@ Visual Studio gestisce i file per una sola applicazione in un *progetto*. Il pro
 
 In questa esercitazione si inizia con un semplice progetto che contiene codice per un'app Express e Node.js.
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 1. Creare un nuovo progetto.
 
@@ -93,7 +93,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene codice p
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Node.js** e scegliere **Create new Basic Azure Node.js Express 4 application** (Crea nuova applicazione Basic Azure Node.js Express 4) (JavaScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
+    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
     ::: moniker-end
     Se non viene visualizzato il modello di progetto **Applicazione Express 4 Node.js Azure di base** è necessario aggiungere il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 

@@ -29,7 +29,7 @@ ms.locfileid: "72666017"
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
-|Category|Microsoft.Security|
+|Categoria|Microsoft.Security|
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
@@ -43,7 +43,7 @@ ms.locfileid: "72666017"
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere la vulnerabilità di sicurezza identificata da questa regola, non basarsi sul contenuto di una matrice di sola lettura a cui è possibile accedere pubblicamente. Si consiglia vivamente di utilizzare una delle procedure seguenti:
 
-- Sostituire la matrice con una raccolta fortemente tipizzata che non può essere modificata. Per ulteriori informazioni, vedere <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
+- Sostituire la matrice con una raccolta fortemente tipizzata che non può essere modificata. Per altre informazioni, vedere <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
 - Sostituire il campo public con un metodo che restituisce un clone di una matrice privata. Poiché il codice non si basa sul clone, non vi sono pericoli se gli elementi vengono modificati.
 
@@ -53,7 +53,7 @@ ms.locfileid: "72666017"
  L'esclusione di un avviso da questa regola è fortemente sconsigliata. Non si verificano praticamente scenari in cui il contenuto di un campo di sola lettura non è importante. In tal caso, rimuovere il modificatore `readonly` anziché escludere il messaggio.
 
 ## <a name="example"></a>Esempio
- Questo esempio illustra i rischi derivanti dalla violazione di questa regola. La prima parte Mostra una libreria di esempio con un tipo, `MyClassWithReadOnlyArrayField`, che contiene due campi (`grades` e `privateGrades`) che non sono sicuri. Il campo `grades` è pubblico e pertanto vulnerabile a qualsiasi chiamante. Il campo `privateGrades` è privato, ma è ancora vulnerabile perché viene restituito ai chiamanti dal metodo `GetPrivateGrades`. Il campo `securePrivateGrades` viene esposto in modo sicuro dal metodo `GetSecurePrivateGrades`. Viene dichiarata come privata per seguire buone procedure di progettazione. La seconda parte Mostra il codice che modifica i valori archiviati nei membri `grades` e `privateGrades`.
+ Questo esempio illustra i rischi derivanti dalla violazione di questa regola. La prima parte Mostra una libreria di esempio con un tipo, `MyClassWithReadOnlyArrayField`, che contiene due campi (`grades` e `privateGrades`) che non sono sicuri. Il campo `grades` è pubblico e pertanto vulnerabile a qualsiasi chiamante. Il campo `privateGrades` è privato, ma è ancora vulnerabile perché viene restituito ai chiamanti dal metodo `GetPrivateGrades`. Il campo `securePrivateGrades` viene esposto in modo sicuro dal `GetSecurePrivateGrades` metodo. Viene dichiarata come privata per seguire buone procedure di progettazione. La seconda parte Mostra il codice che modifica i valori archiviati nei membri `grades` e `privateGrades`.
 
  Nell'esempio seguente viene visualizzata la libreria di classi di esempio.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72666017"
 
  L'output di questo esempio è:
 
- **Prima di manomettere: voti: 90, 90, 90 voti privati: 90, 90, 90 qualità sicura, 90, 90, 90** 
+ **Prima di manomettere: voti: 90, 90, 90 voti privati: 90, 90, 90 qualità sicura, 90, 90, 90**
 **dopo la manomissione: voti: 90, 555, 90 voti privati: 90, 555, 90 qualità sicura, 90, 90, 90**
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

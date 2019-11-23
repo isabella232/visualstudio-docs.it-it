@@ -43,5 +43,5 @@ return [ expression ];
   
 ## <a name="see-also"></a>Vedere anche  
  [Istruzione return](../../javascript/reference/return-statement-javascript.md)   
- @No__t_1 [oggetto funzione](../../javascript/reference/function-object-javascript.md)  
+   [oggetto funzione](../../javascript/reference/function-object-javascript.md)  
  [Proprietà caller (Function)](../../javascript/reference/caller-property-function-javascript.md)

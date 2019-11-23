@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplicationNodeEvents:: onRemoveChild | Microsoft Docs'
+title: IDebugApplicationNodeEvents::onRemoveChild | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT onRemoveChild(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -52,6 +52,6 @@ HRESULT onRemoveChild(
  Gli implementatori dell'interfaccia `IDebugApplicationNode` generano questo evento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)    
- @No__t_1 [IDebugApplicationNodeEvents:: onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)  
+ [Interfaccia IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+ [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
  [Interfaccia IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

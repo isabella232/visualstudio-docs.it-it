@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplicationNodeEvents:: ondetach | Microsoft Docs'
+title: IDebugApplicationNodeEvents::onDetach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -39,7 +39,7 @@ HRESULT onDetach();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -49,6 +49,6 @@ HRESULT onDetach();
  Gli implementatori dell'interfaccia `IDebugApplicationNode` generano questo evento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)    
- @No__t_1 [IDebugApplicationNodeEvents:: alleghi](../../winscript/reference/idebugapplicationnodeevents-onattach.md)  
+ [Interfaccia IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+ [IDebugApplicationNodeEvents::onAttach](../../winscript/reference/idebugapplicationnodeevents-onattach.md)   
  [Interfaccia IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

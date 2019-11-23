@@ -45,6 +45,6 @@ Si è provato a usare l'istruzione **continue** all'esterno di un ciclo. L'istru
   - ciclo **for/in** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [istruzione continue](../../javascript/reference/continue-statement-javascript.md)    
- [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)    
+ [istruzione continue](../../javascript/reference/continue-statement-javascript.md)   
+ [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)   
  [Risoluzione dei problemi relativi agli script](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

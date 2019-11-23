@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0d2bf2f8a45618e8b1f7540479a02c1a5f91b9bf
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977355"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316476"
 ---
-# <a name="how-to-build-incrementally"></a>Procedura: Compilazione incrementale
+# <a name="how-to-build-incrementally"></a>Procedura: Eseguire la compilazione incrementale
 Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali, in cui vengono compilate solo le destinazioni che non sono state compilate precedentemente o le destinazioni non aggiornate, [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) può confrontare i timestamp dei file di input con i timestamp dei file di output e stabilire se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
 
 ## <a name="specify-inputs-and-outputs"></a>Specifica di input e output
@@ -27,7 +27,7 @@ Una destinazione può essere compilata in modo incrementale se gli input e gli o
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Per specificare input e output per una destinazione
 
-- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio:
+- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Esempio:
 
   ```xml
   <Target Name="Build"
@@ -35,7 +35,7 @@ Una destinazione può essere compilata in modo incrementale se gli input e gli o
       Outputs="hello.exe">
   ```
 
-  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente se un file dell'elenco di elementi `@(CSFile)` è più recente del file *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilerà la destinazione; in caso contrario il file verrà ignorato:
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] può confrontare i timestamp dei file di input con i timestamps dei file di output e determinare se ignorare, compilare o ricompilare parzialmente una destinazione. Nell'esempio seguente se un file dell'elenco di elementi `@(CSFile)` è più recente del file *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilerà la destinazione; in caso contrario il file verrà ignorato:
 
 ```xml
 <Target Name="Build"

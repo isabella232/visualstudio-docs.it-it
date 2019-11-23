@@ -29,7 +29,7 @@ ms.locfileid: "72661464"
 |-|-|
 |TypeName|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Category|Microsoft. globalizzazione|
+|Categoria|Microsoft. globalizzazione|
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -66,13 +66,13 @@ ms.locfileid: "72661464"
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato l'effetto delle impostazioni cultura correnti sul valore predefinito <xref:System.IFormatProvider> selezionato dal tipo <xref:System.DateTime>.
+ Nell'esempio seguente viene illustrato l'effetto delle impostazioni cultura correnti sul <xref:System.IFormatProvider> predefinito selezionato dal tipo di <xref:System.DateTime>.
 
  [!code-csharp[FxCop.Globalization.IFormatProvider#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.IFormatProvider/cs/FxCop.Globalization.IFormatProvider.cs#1)]
 
  Questo esempio produce il seguente output:
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Regole correlate
  [CA1305: Specificare IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)

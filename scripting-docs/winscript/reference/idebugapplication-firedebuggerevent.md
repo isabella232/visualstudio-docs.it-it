@@ -46,7 +46,7 @@ HRESULT FireDebuggerEvent(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_NOTIMPL`|Il metodo non è attualmente implementato.|  
@@ -59,5 +59,5 @@ HRESULT FireDebuggerEvent(
  Questo metodo fa sì che `IApplicationDebugger::onDebuggerEvent` venga chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

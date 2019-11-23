@@ -42,7 +42,7 @@ HRESULT GetDescription(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -53,5 +53,5 @@ HRESULT GetDescription(
 > Questo metodo non è implementato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDispError](../../winscript/reference/idisperror-interface.md)    
+ [Interfaccia IDispError](../../winscript/reference/idisperror-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

@@ -50,7 +50,7 @@ HRESULT ResumeFromBreakPoint(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -58,6 +58,6 @@ HRESULT ResumeFromBreakPoint(
  Questo metodo continua un'applicazione che attualmente si trova in un punto di interruzione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)    
- @No__t_1 [enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
+ [Interfaccia IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
+   [enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [Enumerazione ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

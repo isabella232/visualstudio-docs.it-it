@@ -54,8 +54,8 @@ HRESULT SetScriptState(
  Per ulteriori informazioni sugli Stati del motore di script, vedere la sezione Stati del motore di script dei [motori di script Windows](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)  
- @No__t_1 [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)  
- @No__t_1 [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)  
- [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
+   [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)  
+ [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

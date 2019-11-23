@@ -44,7 +44,7 @@ HRESULT GetMemberProperties(
  `grfdexFetch`  
  Determina le proprietà da recuperare. Può trattarsi di una combinazione dei valori elencati in `pgrfdex` e/o una combinazione dei valori seguenti:  
   
-|Value|Significato|  
+|Valore|Significato|  
 |-----------|-------------|  
 |grfdexPropCanAll|Combina fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct e fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Combina fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct e fdexPropCannotSourceEvents.|  
@@ -54,18 +54,18 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  Indirizzo di un `DWORD` che riceve le proprietà richieste. Può trattarsi di una combinazione dei valori seguenti:  
   
-|Value|Significato|  
+|Valore|Significato|  
 |-----------|-------------|  
 |fdexPropCanGet|Il membro può essere ottenuto utilizzando DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|Impossibile ottenere il membro utilizzando DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|Il membro può essere impostato tramite DISPATCH_PROPERTYPUT.|  
-|fdexPropCannotPut|Il membro non può essere impostato con DISPATCH_PROPERTYPUT.|  
-|fdexPropCanPutRef|Il membro può essere impostato tramite DISPATCH_PROPERTYPUTREF.|  
-|fdexPropCannotPutRef|Il membro non può essere impostato con DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCanPut|Il membro può essere impostato utilizzando DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|Impossibile impostare il membro utilizzando DISPATCH_PROPERTYPUT.|  
+|fdexPropCanPutRef|Il membro può essere impostato utilizzando DISPATCH_PROPERTYPUTREF.|  
+|fdexPropCannotPutRef|Impossibile impostare il membro utilizzando DISPATCH_PROPERTYPUTREF.|  
 |fdexPropNoSideEffects|Il membro non ha effetti collaterali. Un debugger, ad esempio, può ottenere, impostare o chiamare in modo sicuro questo membro senza modificare lo stato dello script di cui è in corso il debug.|  
 |fdexPropDynamicType|Il membro è dinamico e può essere modificato nel corso della durata dell'oggetto.|  
 |fdexPropCanCall|Il membro può essere chiamato come metodo usando DISPATCH_METHOD.|  
-|fdexPropCannotCall|Il membro non può essere chiamato come metodo usando DISPATCH_METHOD.|  
+|fdexPropCannotCall|Il membro non può essere chiamato come metodo utilizzando DISPATCH_METHOD.|  
 |fdexPropCanConstruct|Il membro può essere chiamato come Costruttore usando DISPATCH_CONSTRUCT.|  
 |fdexPropCannotConstruct|Il membro non può essere chiamato come costruttore utilizzando DISPATCH_CONSTRUCT.|  
 |fdexPropCanSourceEvents|Il membro può generare eventi.|  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)    
- @No__t_1 [IDispatchEx:: GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
+ [Interfaccia IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

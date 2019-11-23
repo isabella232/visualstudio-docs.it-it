@@ -58,7 +58,7 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -69,8 +69,8 @@ HRESULT HandleRuntimeError(
 > Durante l'errore di run-time, il motore del linguaggio può essere chiamato dal thread per eseguire attività quali l'enumerazione di stack frame o la valutazione delle espressioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
- [Interfaccia IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)    
- @No__t_1 [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)  
- @No__t_1 [enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ [Interfaccia IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)   
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
+   [enumerazione BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [Enumerazione ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

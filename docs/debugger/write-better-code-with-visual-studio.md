@@ -47,7 +47,7 @@ Per creare l'app:
     > [!NOTE]
     > Se il modello di progetto **Applicazione console** non viene visualizzato, fare clic sul collegamento **Apri il Programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo multipiattaforma .NET Core** e quindi **Modifica**.
 
-2. Nel campo **nome** digitare **Console_Parse_JSON** e fare clic su **OK**. Visual Studio crea il progetto.
+2. Nel campo **nome** Digitare **Console_Parse_JSON** e fare clic su **OK**. Visual Studio crea il progetto.
 
 3. Sostituire il codice predefinito nel file *Program.cs* del progetto con il codice di esempio seguente.
 
@@ -186,13 +186,13 @@ Per correggere l'errore, è possibile esaminare un'altra funzionalità dell'IDE,
 
 Il primo zigzag rosso rappresenta un errore in fase di compilazione. Posizionare il puntatore del mouse su di esso per visualizzare il messaggio ```The name `Encoding` does not exist in the current context```.
 
-Si noti che questo errore Mostra un'icona a forma di lampadina in basso a sinistra. Insieme all'icona del cacciavite ![screwdriver icona @ no__t-1, l'icona a forma di lampadina ![LIGHT icona a forma di lampadina @ no__t-3 rappresenta azioni rapide che consentono di correggere o effettuare il refactoring del codice inline. Il bulbo di luce rappresenta i problemi che è *necessario* correggere. Il cacciavite è per i problemi che è possibile scegliere di correggere. Per risolvere l'errore, usare la prima correzione consigliata facendo clic su **using System. Text (sistema** ) a sinistra.
+Si noti che questo errore Mostra un'icona a forma di lampadina in basso a sinistra. Insieme all'icona del cacciavite ![icona del cacciavite](../ide/media/screwdriver-icon.png), l'icona a forma di lampadina ![icona a forma di lampadina](../ide/media/light-bulb-icon.png) rappresenta azioni rapide che consentono di correggere o effettuare il refactoring del codice inline. Il bulbo di luce rappresenta i problemi che è *necessario* correggere. Il cacciavite è per i problemi che è possibile scegliere di correggere. Per risolvere l'errore, usare la prima correzione consigliata facendo clic su **using System. Text (sistema** ) a sinistra.
 
 ![Usare la lampadina per correggere il codice](../debugger/media/write-better-code-missing-include.png)
 
-Quando si fa clic su questo elemento, Visual Studio aggiunge l'istruzione `using System.Text` all'inizio del file *Program.cs* e la zigzag rossa scompare. Se non si è certi di quale sia la correzione suggerita, scegliere il collegamento **Anteprima modifiche** a destra prima di applicare la correzione.
+Quando si fa clic su questo elemento, Visual Studio aggiunge l'istruzione `using System.Text` nella parte superiore del file *Program.cs* e la zigzag rossa scompare. Se non si è certi di quale sia la correzione suggerita, scegliere il collegamento **Anteprima modifiche** a destra prima di applicare la correzione.
 
-L'errore precedente è quello comune che in genere si corregge aggiungendo una nuova istruzione `using` al codice. Esistono diversi errori comuni e simili a questo, ad esempio ```The type or namespace `Name` cannot be found.``` questi tipi di errori potrebbero indicare un riferimento a un assembly mancante (fare clic con il pulsante destro del mouse sul progetto, scegliere **aggiungi** > **riferimento**), un nome digitato in modo errato o una libreria mancante necessaria per aggiungere (per C#, fare clic con il pulsante destro del mouse sul progetto e scegliere **Gestisci pacchetti NuGet**).
+L'errore precedente è quello comune che in genere si corregge aggiungendo una nuova istruzione `using` al codice. Esistono diversi errori comuni e simili a questo, ad esempio ```The type or namespace `Name` cannot be found.``` questi tipi di errori potrebbero indicare un riferimento a un assembly mancante (fare clic con il pulsante destro del mouse sul progetto, scegliere **aggiungi** > **riferimento**), un nome digitato in modo errato o una libreria C#mancante che è necessario aggiungere (per, fare clic con il pulsante destro del mouse sul progetto e scegliere **Gestisci pacchetti NuGet**).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Correggere gli errori e gli avvisi rimanenti
 
@@ -200,7 +200,7 @@ Ci sono altri controllo ortografia durante da esaminare in questo codice. Viene 
 
 ![Errore di conversione del tipo](../debugger/media/write-better-code-conversion-error.png)
 
-Poiché l'analizzatore del codice non è in grado di indovinare lo scopo, non sono disponibili lampadine che consentano di risolvere questo problema. Per correggere l'errore, è necessario conoscerne lo scopo. In questo esempio, non è troppo difficile vedere che `points` deve essere un valore numerico (Integer), perché si sta tentando di aggiungere `points` a `totalpoints`.
+Poiché l'analizzatore del codice non è in grado di indovinare lo scopo, non sono disponibili lampadine che consentano di risolvere questo problema. Per correggere l'errore, è necessario conoscerne lo scopo. In questo esempio non è troppo difficile vedere che `points` deve essere un valore numerico (Integer), perché si sta tentando di aggiungere `points` a `totalpoints`.
 
 Per correggere l'errore, modificare il membro `points` della classe `User` da questo:
 
@@ -243,11 +243,11 @@ Quando sono state corrette tutte le controllo ortografia durante rosse e risolte
 
 Premere **F5** (**Debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia debug](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti Debug.
 
-A questo punto, l'app di esempio genera un'eccezione `SerializationException` (errore di Runtime). Ovvero, l'app viene soffocata sui dati che sta provando a serializzare. Poiché l'app è stata avviata in modalità di debug (debugger collegato), l'helper eccezioni del debugger consente di eseguire direttamente il codice che ha generato l'eccezione e fornisce un messaggio di errore utile.
+A questo punto, l'app di esempio genera un'eccezione `SerializationException` (un errore di Runtime). Ovvero, l'app viene soffocata sui dati che sta provando a serializzare. Poiché l'app è stata avviata in modalità di debug (debugger collegato), l'helper eccezioni del debugger consente di eseguire direttamente il codice che ha generato l'eccezione e fornisce un messaggio di errore utile.
 
 ![Si verifica un'operazione di serializzazione](../debugger/media/write-better-code-serialization-exception.png)
 
-Il messaggio di errore indica che il valore `4o` non può essere analizzato come numero intero. Quindi, in questo esempio, si sa che i dati sono danneggiati: `4o` deve essere `40`. Tuttavia, se non si ha il controllo dei dati in uno scenario reale (ad indicare che si sta ricevendo da un servizio Web), cosa è possibile fare? In che modo è possibile risolvere il problema?
+Il messaggio di errore indica che non è possibile analizzare il valore `4o` come Integer. Quindi, in questo esempio, si sa che i dati sono errati: `4o` dovrebbe essere `40`. Tuttavia, se non si ha il controllo dei dati in uno scenario reale (ad indicare che si sta ricevendo da un servizio Web), cosa è possibile fare? In che modo è possibile risolvere il problema?
 
 Quando si verifica un'eccezione, è necessario chiedere (e rispondere) a un paio di domande:
 
@@ -255,7 +255,7 @@ Quando si verifica un'eccezione, è necessario chiedere (e rispondere) a un paio
 
 * Si tratta di un'eccezione che può verificarsi per gli utenti?
 
-Se è il primo, correggere il bug. Nell'app di esempio significa correggere i dati non validi. Se è il secondo, potrebbe essere necessario gestire l'eccezione nel codice usando un blocco `try/catch` (si osserveranno altre strategie possibili nella sezione successiva). Nell'app di esempio sostituire il codice seguente:
+Se è il primo, correggere il bug. Nell'app di esempio significa correggere i dati non validi. Se è il secondo, potrebbe essere necessario gestire l'eccezione nel codice usando un blocco di `try/catch` (si osserveranno altre strategie possibili nella sezione successiva). Nell'app di esempio sostituire il codice seguente:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -275,13 +275,13 @@ catch (SerializationException)
 }
 ```
 
-Un blocco `try/catch` ha un certo costo in termini di prestazioni, quindi è consigliabile usarli solo quando sono effettivamente necessari, ovvero dove (a) potrebbero verificarsi nella versione di rilascio dell'app e dove (b) la documentazione per il metodo indica che è necessario verificare l'eccezione (come suming la documentazione è stata completata. In molti casi, è possibile gestire un'eccezione in modo appropriato e non sarà mai necessario che l'utente ne sia a conoscenza.
+Un blocco `try/catch` comporta un certo costo in termini di prestazioni, quindi è consigliabile usarli solo quando sono effettivamente necessari, ovvero dove (a) potrebbero essere presenti nella versione di rilascio dell'app e dove (b) la documentazione per il metodo indica che è necessario verificare l'eccezione (presupponendo che la documentazione sia stata completata). In molti casi, è possibile gestire un'eccezione in modo appropriato e non sarà mai necessario che l'utente ne sia a conoscenza.
 
 Ecco alcuni suggerimenti importanti per la gestione delle eccezioni:
 
 * Evitare di utilizzare un blocco catch vuoto, ad esempio `catch (Exception) {}`, che non esegue l'azione appropriata per esporre o gestire un errore. Un blocco catch vuoto o non informativo può nascondere le eccezioni e rendere il codice più difficile da eseguire il debug anziché più semplice.
 
-* Usare il blocco `try/catch` intorno alla funzione specifica che genera l'eccezione (`ReadObject` nell'app di esempio). Se lo si usa per un blocco di codice più ampio, viene nascosta la posizione dell'errore. Ad esempio, non usare il blocco `try/catch` intorno alla chiamata alla funzione padre `ReadToObject`, illustrato di seguito oppure non si conosce esattamente dove si è verificata l'eccezione.
+* Usare il blocco `try/catch` intorno alla funzione specifica che genera l'eccezione (`ReadObject`nell'app di esempio). Se lo si usa per un blocco di codice più ampio, viene nascosta la posizione dell'errore. Ad esempio, non usare il blocco `try/catch` per la chiamata alla funzione padre `ReadToObject`, illustrato di seguito oppure non si conosce esattamente dove si è verificata l'eccezione.
 
     ```csharp
     // Don't do this
@@ -296,17 +296,17 @@ Ecco alcuni suggerimenti importanti per la gestione delle eccezioni:
 
 * Per le funzioni non note incluse nell'app, in particolare quelle che interagiscono con i dati esterni (ad esempio una richiesta Web), controllare la documentazione per visualizzare le eccezioni che la funzione può generare. Può trattarsi di informazioni critiche per la corretta gestione degli errori e per il debug dell'app.
 
-Per l'app di esempio, correggere il `SerializationException` nel metodo `GetJsonData` modificando `4o` in `40`.
+Per l'app di esempio, correggere il `SerializationException` nel metodo `GetJsonData` cambiando `4o` in `40`.
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Chiarire l'intenzione del codice tramite Assert
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "Riavvia app") nella barra degli strumenti di debug (**CTRL** + **MAIUSC** + **F5**). Questa operazione riavvia l'app in un minor numero di passaggi. Nella finestra della console viene visualizzato l'output seguente.
+Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**). Questa operazione riavvia l'app in un minor numero di passaggi. Nella finestra della console viene visualizzato l'output seguente.
 
 ![Valore null nell'output](../debugger/media/write-better-code-using-assert-null-output.png)
 
 In questo output è possibile visualizzare un elemento che non è abbastanza adatto. il **nome** e il **Cognome** per il terzo record sono vuoti.
 
-Questo è il momento giusto per illustrare una procedura di codifica utile, spesso sottoutilizzata, che prevede l'uso di istruzioni `assert` nelle funzioni. Aggiungendo il codice seguente, si include un controllo di runtime per assicurarsi che `firstname` e `lastname` non siano `null`. Sostituire il codice seguente nel metodo `UpdateRecords`:
+Questo è il momento giusto per illustrare una procedura di codifica utile, spesso sottoutilizzata, che consiste nell'usare `assert` istruzioni nelle funzioni. Aggiungendo il codice seguente, si include un controllo di runtime per assicurarsi che `firstname` e `lastname` non siano `null`. Sostituire il codice seguente nel metodo `UpdateRecords`:
 
 ```csharp
 if (existingUser == false)
@@ -329,28 +329,28 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-Con l'aggiunta di istruzioni `assert` come questa alle funzioni durante il processo di sviluppo, è possibile specificare lo scopo del codice. Nell'esempio precedente, viene specificato quanto segue:
+Con l'aggiunta di `assert` istruzioni come questa alle funzioni durante il processo di sviluppo, è possibile specificare lo scopo del codice. Nell'esempio precedente, viene specificato quanto segue:
 
 * Per il primo nome è necessaria una stringa valida
 * Per il cognome è necessaria una stringa valida
 
-Specificando Intent in questo modo, si applicano le proprie esigenze. Si tratta di un metodo semplice e pratico che è possibile utilizzare per la superficie dei bug durante lo sviluppo. (le istruzioni `assert` vengono utilizzate anche come elemento principale negli unit test.)
+Specificando Intent in questo modo, si applicano le proprie esigenze. Si tratta di un metodo semplice e pratico che è possibile utilizzare per la superficie dei bug durante lo sviluppo. (le istruzioni`assert` vengono utilizzate anche come elemento principale negli unit test.)
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "Riavvia app") nella barra degli strumenti di debug (**CTRL** + **MAIUSC** + **F5**).
+Fare clic sul pulsante **Riavvia** ![Riavvia app](../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
 
 > [!NOTE]
-> Il codice `assert` è attivo solo in una compilazione di debug.
+> Il codice `assert` è attivo solo in una build di debug.
 
 Quando si riavvia, il debugger viene sospeso sull'istruzione `assert`, perché l'espressione `users[i].firstname != null` restituisce `false` anziché `true`.
 
 ![Assert viene risolto in false](../debugger/media/write-better-code-using-assert.png)
 
-L'errore `assert` indica che è necessario esaminare il problema. `assert` può coprire molti scenari in cui non viene necessariamente visualizzata un'eccezione. In questo esempio, l'utente non visualizzerà un'eccezione e verrà aggiunto un valore `null` come `firstname` nell'elenco di record. Questo può causare problemi in un secondo momento, ad esempio nell'output della console, e potrebbe risultare più difficile eseguire il debug.
+Il `assert` errore indica che è necessario esaminare il problema. `assert` possono coprire molti scenari in cui non viene necessariamente visualizzata un'eccezione. In questo esempio, l'utente non visualizzerà un'eccezione e un valore `null` verrà aggiunto come `firstname` nell'elenco di record. Questo può causare problemi in un secondo momento, ad esempio nell'output della console, e potrebbe risultare più difficile eseguire il debug.
 
 > [!NOTE]
-> Negli scenari in cui si chiama un metodo sul valore `null`, viene restituito un `NullReferenceException`. In genere è consigliabile evitare di utilizzare un blocco `try/catch` per un'eccezione generale, ovvero un'eccezione non associata alla funzione di libreria specifica. Qualsiasi oggetto può generare un `NullReferenceException`. Se non si è certi, controllare la documentazione relativa alla funzione di libreria.
+> Negli scenari in cui si chiama un metodo sul valore `null`, un `NullReferenceException` risultati. In genere è consigliabile evitare di utilizzare un blocco `try/catch` per un'eccezione generale, ovvero un'eccezione non associata alla funzione di libreria specifica. Qualsiasi oggetto può generare un `NullReferenceException`. Se non si è certi, controllare la documentazione relativa alla funzione di libreria.
 
-Durante il processo di debug è consigliabile tenere una particolare istruzione `assert` fino a quando non si è certi che sia necessario sostituirla con una correzione del codice effettiva. Si supponga di decidere che l'utente può riscontrare l'eccezione in una build di rilascio dell'app. In tal caso, è necessario effettuare il refactoring del codice per assicurarsi che l'app non generi un'eccezione irreversibile o provochi un altro errore. Quindi, per correggere questo codice, sostituire il codice seguente:
+Durante il processo di debug, è opportuno tenere una specifica `assert` istruzione fino a quando non si sa che è necessario sostituirla con una correzione del codice reale. Si supponga di decidere che l'utente può riscontrare l'eccezione in una build di rilascio dell'app. In tal caso, è necessario effettuare il refactoring del codice per assicurarsi che l'app non generi un'eccezione irreversibile o provochi un altro errore. Quindi, per correggere questo codice, sostituire il codice seguente:
 
 ```csharp
 if (existingUser == false)
@@ -366,9 +366,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-Con questo codice si soddisfano i requisiti del codice e si verifica che un record con un valore `firstname` o `lastname` di `null` non venga aggiunto ai dati.
+Utilizzando questo codice, si soddisfano i requisiti del codice e si verifica che un record con un valore `firstname` o `lastname` di `null` non venga aggiunto ai dati.
 
-In questo esempio sono state aggiunte due istruzioni `assert` all'interno di un ciclo. In genere, quando si usa `assert`, è consigliabile aggiungere istruzioni `assert` al punto di ingresso (inizio) di una funzione o di un metodo. Si sta esaminando attualmente il metodo `UpdateRecords` nell'app di esempio. In questo metodo, si sa che si verificano problemi se uno degli argomenti del metodo è `null`, quindi è necessario verificarli entrambi con un'istruzione `assert` nel punto di ingresso della funzione.
+In questo esempio sono state aggiunte le due istruzioni `assert` all'interno di un ciclo. In genere, quando si usa `assert`, è consigliabile aggiungere istruzioni `assert` nel punto di ingresso (inizio) di una funzione o di un metodo. Si sta esaminando attualmente il metodo `UpdateRecords` nell'app di esempio. In questo metodo, si sa che si verificano problemi se uno degli argomenti del metodo è `null`, quindi è necessario verificarli entrambi con un'istruzione `assert` nel punto di ingresso della funzione.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)

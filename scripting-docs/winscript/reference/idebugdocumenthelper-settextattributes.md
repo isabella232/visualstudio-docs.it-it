@@ -50,16 +50,16 @@ HRESULT SetTextAttributes(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
 ## <a name="remarks"></a>Note  
- È un errore chiamare `SetTextAttributes` su un intervallo di testo prima che il testo venga aggiunto al documento. Chiamare i metodi `AddDBCSText`, `AddUnicodeText` o `AddDeferredText` per aggiungere testo al documento.  
+ È un errore chiamare `SetTextAttributes` su un intervallo di testo prima che il testo venga aggiunto al documento. Chiamare i metodi `AddDBCSText`, `AddUnicodeText`o `AddDeferredText` per aggiungere testo al documento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
- @No__t_1 [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)  
- @No__t_1 [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)  
- @No__t_1 [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)  
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Enumerazione SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

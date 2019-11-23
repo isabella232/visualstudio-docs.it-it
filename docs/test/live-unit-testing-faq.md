@@ -31,7 +31,7 @@ Live Unit Testing è compatibile con i tre framework di testing unità elencati 
 
 Se sono presenti progetti di test basati su MSTest precedenti che fanno riferimento a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` e non si vuole passare ai pacchetti NuGet di MSTest più recenti, eseguire l'aggiornamento a Visual Studio 2019 o Visual Studio 2017.
 
-In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui viene fatto riferimento nei progetti della soluzione. È possibile ripristinare i pacchetti eseguendo una compilazione esplicita della soluzione (selezionare **compila**  > **Ricompila soluzione** dal menu di primo livello di Visual Studio) oppure facendo clic con il pulsante destro del mouse sulla soluzione e selezionando **Ripristina pacchetti NuGet** . prima di abilitare Living unit testing.
+In alcuni casi, per consentire il funzionamento di Live Unit Testing, potrebbe essere necessario ripristinare in modo esplicito i pacchetti NuGet a cui viene fatto riferimento nei progetti della soluzione. È possibile ripristinare i pacchetti eseguendo una compilazione esplicita della soluzione (selezionare **compila** > **Ricompila soluzione** dal menu di primo livello di Visual Studio) oppure facendo clic con il pulsante destro del mouse sulla soluzione e selezionando **Ripristina pacchetti NuGet** prima di abilitare Living unit testing.
 
 ## <a name="net-core-support"></a>Supporto di .NET Core
 

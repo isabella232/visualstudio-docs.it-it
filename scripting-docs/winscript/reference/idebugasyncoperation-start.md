@@ -42,7 +42,7 @@ HRESULT Start(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_UNEXPECTED`|Un'operazione è già in sospeso.|  
@@ -51,7 +51,7 @@ HRESULT Start(
  Questo metodo fa sì che `IDebugSyncOperation::Execute` venga chiamato in modo asincrono nel thread ottenuto da `IDebugSyncOperation::GetTargetThread`. Questo metodo deve essere chiamato solo dall'interno del thread del debugger. in caso contrario, non verrà restituito fino al completamento dell'operazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [IDebugAsyncOperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)  
- [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)    
- @No__t_1 [IDebugSyncOperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)  
+ [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+ [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
+ [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

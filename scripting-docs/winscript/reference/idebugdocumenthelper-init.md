@@ -54,7 +54,7 @@ HRESULT Init(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -64,6 +64,6 @@ HRESULT Init(
  Questo documento non viene visualizzato nell'albero fino a quando non viene chiamato `IDebugDocumentHelper::Attach`.  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [IDebugDocumentHelper:: Connetti](../../winscript/reference/idebugdocumenthelper-attach.md)  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
+   [IDebugDocumentHelper:: Connetti](../../winscript/reference/idebugdocumenthelper-attach.md)  
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [Costanti TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

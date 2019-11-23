@@ -38,5 +38,5 @@ Analogamente all'interfaccia `IMachineDebugManager`, l'interfaccia `IMachineDebu
 |[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Rimuove un'applicazione dall'elenco di applicazioni in esecuzione.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)    
+ [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   
  [Interfaccia IDebugCookie](../../winscript/reference/idebugcookie-interface.md)

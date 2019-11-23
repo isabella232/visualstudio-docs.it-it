@@ -42,7 +42,7 @@ HRESULT RemoveStackFrameSniffer(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -50,6 +50,6 @@ HRESULT RemoveStackFrameSniffer(
  Il metodo `RemoveStackFrameSniffer` rimuove un provider di enumeratori stack frame da questa applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [IDebugApplication:: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [Interfaccia IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

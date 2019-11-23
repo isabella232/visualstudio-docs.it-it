@@ -80,7 +80,7 @@ In primo luogo si creerà un progetto di applicazione Visual Basic. Il tipo di p
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
+   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -100,7 +100,7 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 
      ![Fare clic su Casella degli strumenti per aprire la finestra della casella degli strumenti](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Se l'opzione di apertura a comparsa della **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare**la**casella degli strumenti** > . In alternativa, premere **CTRL**+**ALT**+**X**.)
+     (Se l'opzione di apertura a comparsa della **Casella degli strumenti** non viene visualizzata, è possibile aprirla dalla barra dei menu. A tale scopo, **visualizzare** > **casella degli strumenti**. In alternativa, premere **CTRL**+**ALT**+**X**.)
 
 1. Fare clic sull'icona **Blocca** per ancorare la **Casella degli strumenti**.
 
@@ -160,7 +160,7 @@ Dopo aver selezionato il modello di progetto Visual Basic e assegnato un nome al
 Per altre informazioni, continuare con l'esercitazione seguente:
 
 > [!div class="nextstepaction"]
-> [Esercitazione: Creazione di un visualizzatore immagini @ no__t-0
+> [Esercitazione: creare un visualizzatore di immagini](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Vedere anche
 

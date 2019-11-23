@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572895"
 ---
 # <a name="date-object-expected"></a>Previsto oggetto date
-Si è provato a richiamare il metodo **date. Prototype. ToString** o **date. Prototype. valueOf** su un oggetto di un tipo diverso da `Date`. L'oggetto di questo tipo di chiamata deve essere di tipo `Date`. Esempio:  
+Si è provato a richiamare il metodo **date. Prototype. ToString** o **date. Prototype. valueOf** su un oggetto di un tipo diverso da `Date`. L'oggetto di questo tipo di chiamata deve essere di tipo `Date`. Ad esempio:  
   
 ```JavaScript  
 var o = new Object;  
@@ -36,5 +36,5 @@ o.f();
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto Date](../../javascript/reference/date-object-javascript.md)   
- [Metodo getDate (date)](../../javascript/reference/getdate-method-date-javascript.md)    
+ [Metodo getDate (date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Oggetti intrinseci](../../javascript/intrinsic-objects-javascript.md)

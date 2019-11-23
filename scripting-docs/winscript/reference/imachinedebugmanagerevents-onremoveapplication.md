@@ -46,7 +46,7 @@ HRESULT onRemoveApplication(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -54,5 +54,5 @@ HRESULT onRemoveApplication(
  Questo metodo indica che un'applicazione è stata rimossa dall'elenco delle applicazioni in esecuzione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IMachineDebugManagerEvents](../../winscript/reference/imachinedebugmanagerevents-interface.md)    
+ [Interfaccia IMachineDebugManagerEvents](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onAddApplication](../../winscript/reference/imachinedebugmanagerevents-onaddapplication.md)

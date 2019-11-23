@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptSiteInterruptPoll:: QueryContinue | Microsoft Docs'
+title: IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -39,16 +39,16 @@ HRESULT QueryContinue();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|La chiamata ha avuto esito positivo e l'host consente di continuare l'esecuzione dello script.|  
 |`S_FALSE`|La chiamata ha avuto esito positivo e l'host richiede che lo script venga terminato.|  
   
 ## <a name="remarks"></a>Note  
- Lo script Hosted deve terminare a meno che non venga `S_OK` il valore restituito del metodo `QueryContinue`. Un valore restituito di `S_FALSE` indica che l'host richiede in modo esplicito che lo script venga terminato.  
+ Lo script Hosted deve terminare a meno che non venga `S_OK`il valore restituito del metodo `QueryContinue`. Un valore restituito di `S_FALSE` indica che l'host richiede in modo esplicito che lo script venga terminato.  
   
  Un host multithread può utilizzare il metodo `IActiveScript::InterruptScriptThread` per terminare uno script.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IActiveScriptSiteInterruptPoll](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)    
+ [Interfaccia IActiveScriptSiteInterruptPoll](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

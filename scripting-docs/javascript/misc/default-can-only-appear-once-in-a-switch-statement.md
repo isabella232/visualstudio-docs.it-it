@@ -29,6 +29,6 @@ Si è provato a usare l'istruzione **predefinita** più di una volta all'interno
 - Rimuovere eventuali istruzioni case **predefinite** aggiuntive dall'istruzione `switch` (usare al massimo un'istruzione case predefinita nell'istruzione switch).  
   
 ## <a name="see-also"></a>Vedere anche  
- [istruzione switch](../../javascript/reference/switch-statement-javascript.md)    
- [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)    
+ [istruzione switch](../../javascript/reference/switch-statement-javascript.md)   
+ [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)   
  [Parole riservate in JavaScript](../../javascript/reference/javascript-reserved-words.md)

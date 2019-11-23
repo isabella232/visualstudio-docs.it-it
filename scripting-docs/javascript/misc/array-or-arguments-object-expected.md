@@ -29,6 +29,6 @@ Non è stata fornita una matrice come argomento. Questo errore si applica solo a
 - Specificare un `Array` o un oggetto **arguments** come secondo argomento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Uso di matrici](../../javascript/advanced/using-arrays-javascript.md)    
- [metodo Apply (Function)](../../javascript/reference/apply-method-function-javascript.md)    
+ [Uso di matrici](../../javascript/advanced/using-arrays-javascript.md)   
+ [metodo Apply (Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [Funzioni](../../javascript/functions-javascript.md)

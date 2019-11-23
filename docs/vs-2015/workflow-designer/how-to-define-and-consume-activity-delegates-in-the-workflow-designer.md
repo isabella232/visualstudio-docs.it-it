@@ -17,11 +17,11 @@ ms.lasthandoff: 10/19/2019
 ms.locfileid: "72603859"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: definire e utilizzare delegati di attività in Progettazione del flusso di lavoro
-In [!INCLUDE[net_v45](../includes/net-v45-md.md)] è inclusa una nuova finestra di progettazione predefinita dell'attività di <xref:System.Activities.Statements.InvokeDelegate>. Questa finestra di progettazione può essere usata per assegnare i delegati all'attività che derivano da <xref:System.Activities.ActivityDelegate>, come <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
+[!INCLUDE[net_v45](../includes/net-v45-md.md)] include una nuova finestra di progettazione predefinita per l'attività <xref:System.Activities.Statements.InvokeDelegate>. Questa finestra di progettazione può essere usata per assegnare i delegati all'attività che derivano da <xref:System.Activities.ActivityDelegate>, come <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
 
 ### <a name="define-an-activity-delegate"></a>Definire un delegato dell'attività
 
-1. In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] selezionare **file**, **nuovo**, **progetto**. Selezionare il nodo **flusso di lavoro** a sinistra e il modello **applicazione console flusso di lavoro** a destra. Denominare il progetto (se necessario) e fare clic su **OK**.
+1. In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]selezionare **file**, **nuovo**, **progetto**. Selezionare il nodo **flusso di lavoro** a sinistra e il modello **applicazione console flusso di lavoro** a destra. Denominare il progetto (se necessario) e fare clic su **OK**.
 
 2. Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** e scegliere **Aggiungi**, **nuovo elemento...** . Selezionare il nodo **flusso di lavoro** a sinistra e il modello **attività** a destra. Assegnare alla nuova attività il nome **foreach. XAML** e fare clic su **OK**. L'attività verrà visualizzata nella finestra di progettazione flussi di lavoro.
 
@@ -37,7 +37,7 @@ In [!INCLUDE[net_v45](../includes/net-v45-md.md)] è inclusa una nuova finestra 
 
 8. Nella colonna tipo di argomento selezionare **Cerca tipi...**
 
-9. Nel browser dei tipi immettere **ActivityAction** nel campo **nome tipo** . Selezionare **ActivityAction \<T >** nella visualizzazione albero. Selezionare **oggetto** nell'elenco a discesa a cui viene assegnato il tipo **ActivityAction \<Object >** all'argomento.
+9. Nel browser dei tipi immettere **ActivityAction** nel campo **nome tipo** . Selezionare **ActivityAction\<t >** nella visualizzazione albero. Selezionare **oggetto** nell'elenco a discesa che viene visualizzato per assegnare il tipo **ActivityAction\<oggetto >** all'argomento.
 
 10. Trascinare un'attività <xref:System.Activities.Statements.While> dalla sezione **flusso di controllo** della casella degli strumenti all'area di progettazione.
 
@@ -79,5 +79,5 @@ In [!INCLUDE[net_v45](../includes/net-v45-md.md)] è inclusa una nuova finestra 
 
    Quando il flusso di lavoro viene eseguito, nella console verrà visualizzato quanto segue:
 
-   **1** 
-   **ABC**
+   **1**
+   **abc**

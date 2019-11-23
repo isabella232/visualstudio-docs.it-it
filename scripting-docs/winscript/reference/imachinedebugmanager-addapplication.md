@@ -46,7 +46,7 @@ HRESULT AddApplication(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -54,6 +54,6 @@ HRESULT AddApplication(
  Questo metodo viene chiamato dalla gestione del debug del processo ogni volta che viene chiamato `IProcessDebugManager::AddApplication`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)    
- @No__t_1 [IMachineDebugManager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)  
+ [Interfaccia IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   
+ [IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

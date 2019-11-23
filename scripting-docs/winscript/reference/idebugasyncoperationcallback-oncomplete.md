@@ -39,7 +39,7 @@ HRESULT onComplete();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -47,5 +47,5 @@ HRESULT onComplete();
  Questo metodo segnala che un risultato è disponibile da un oggetto `IDebugAsyncOperation`. L'evento viene generato nel thread del debugger.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)    
+ [Interfaccia IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
  [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)

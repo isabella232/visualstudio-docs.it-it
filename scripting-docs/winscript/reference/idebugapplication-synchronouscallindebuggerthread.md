@@ -54,7 +54,7 @@ HRESULT SynchronousCallInDebuggerThread(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -62,5 +62,5 @@ HRESULT SynchronousCallInDebuggerThread(
  I motori di linguaggio e gli host utilizzano in genere questo metodo per implementare oggetti a thread libero sulle rispettive implementazioni a thread singolo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)    
+ [Interfaccia IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
  [Interfaccia IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)

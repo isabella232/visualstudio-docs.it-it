@@ -29,7 +29,7 @@ ms.locfileid: "72573764"
 - Assicurarsi che tutte le etichette usate nei programmi siano univoche nei rispettivi ambiti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)    
- [istruzione switch](../../javascript/reference/switch-statement-javascript.md)    
+ [Istruzione con etichetta](../../javascript/reference/labeled-statement-javascript.md)   
+ [istruzione switch](../../javascript/reference/switch-statement-javascript.md)   
  [Istruzione break](../../javascript/reference/break-statement-javascript.md)   
  [Istruzione continue](../../javascript/reference/continue-statement-javascript.md)

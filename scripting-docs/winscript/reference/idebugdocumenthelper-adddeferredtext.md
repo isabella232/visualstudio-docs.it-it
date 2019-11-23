@@ -46,7 +46,7 @@ HRESULT AddDeferredText(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_FAIL`|Il metodo non è riuscito.|  
@@ -60,7 +60,7 @@ HRESULT AddDeferredText(
 > Le chiamate a `AddDeferredText` non devono essere combinate con chiamate a `AddUnicodeText` o `AddDBCSText`. In tal caso, viene restituito `E_FAIL`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)    
- @No__t_1 [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)  
- @No__t_1 [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)  
+ [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

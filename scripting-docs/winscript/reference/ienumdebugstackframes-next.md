@@ -50,7 +50,7 @@ HRESULT Next(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   
@@ -58,5 +58,5 @@ HRESULT Next(
  Questo metodo recupera un numero specificato di segmenti nella sequenza di enumerazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)    
+ [Interfaccia IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)   
  [Struttura DebugStackFrameDescriptor](../../winscript/reference/debugstackframedescriptor-structure.md)

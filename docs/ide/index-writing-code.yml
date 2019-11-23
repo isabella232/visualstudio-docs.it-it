@@ -1,23 +1,23 @@
 ### YamlMime:Landing
-title: Organizzare e modificare il codice in Visual Studio
-summary: Informazioni sull'utilizzo dei progetti di codice, sull'utilizzo delle funzionalità dell'editor del codice e sulla gestione di uno stile di codice coerente.
+title: Organize and edit code in Visual Studio
+summary: Learn about working with code projects, using code editor features, and maintaining consistent code style.
 metadata:
   title: Funzionalità dell'editor del codice
-  description: Informazioni sulle funzionalità di modifica del codice in Visual Studio.
+  description: Learn about code editing features in Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: gewarren
-  ms.author: gewarren
+  author: jillre
+  ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
-  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
+  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
+  ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 11/14/2019
-  ms.locfileid: "74087243"
+  ms.lasthandoff: 11/22/2019
+  ms.locfileid: "74316433"
 landingContent:
-- title: Aprire o creare un progetto
+- title: Open or create a project
   linkLists:
   - linkListType: tutorial
     links:
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: Usare Visual Studio senza progetti o soluzioni
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Usare le funzionalità di modifica
+- title: Use editing features
   linkLists:
   - linkListType: overview
     links:
@@ -39,15 +39,15 @@ landingContent:
       url: navigating-code.md
     - text: Generare e correggere il codice
       url: code-generation-in-visual-studio.md
-    - text: Usare IntelliSense per il completamento del codice
+    - text: Use IntelliSense for code completion
       url: using-intellisense.md
-    - text: Gestisci preferenze stile codice
+    - text: Manage code style preferences
       url: code-styles-and-code-cleanup.md
     - text: Analisi codice
       url: ../code-quality/roslyn-analyzers-overview.md
     - text: IntelliCode
       url: /visualstudio/intellicode/intellicode-visual-studio
-- title: Introduzione ai linguaggi di programmazione
+- title: Get started with programming languages
   linkLists:
   - linkListType: tutorial
     links:

@@ -1,6 +1,6 @@
 ---
 title: Comandi di spostamento per il codice
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667006"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316460"
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -82,7 +82,7 @@ Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifi
 
 - **Vai al file** o **CTRL**+**1**, **CTRL**+**F**: consente di passare al file specificato nella soluzione.
 
-- **Vai a file recente** (**CTRL** +**1**, **CTRL** +**R**): consente di passare al file specificato, visitato di recente nella soluzione.
+- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
 
 - **Vai al tipo** o **CTRL**+**1**, **CTRL**+**T**: consente di passare al tipo specificato nella soluzione.
 
@@ -124,6 +124,15 @@ Input | Funzione
 ------------ | ---
 **Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **CTRL**+**F12**
 **Mouse** | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Vai all'implementazione**
+
+## <a name="go-to-base"></a>Go To Base
+
+Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+
+Input | Funzione
+------------ | ---
+**Tastiera** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
+**Mouse** | Right-click on the type name and select **Go To Base**
 
 ## <a name="call-hierarchy"></a>Gerarchia delle chiamate
 

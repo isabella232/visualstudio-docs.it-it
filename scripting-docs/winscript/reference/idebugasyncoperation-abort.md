@@ -39,7 +39,7 @@ HRESULT Abort();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |S_OK|Il metodo è riuscito.|  
 |E_NOTIMPL|Le operazioni non possono essere annullate.|  
@@ -48,6 +48,6 @@ HRESULT Abort();
  Questo metodo viene in genere chiamato dall'interno del thread del debugger per annullare un'operazione che non risponde. Questo metodo fa sì che il metodo `InProgressAbort` sull'oggetto `IDebugSyncOperation` venga chiamato.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)    
- @No__t_1 [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)  
+ [Interfaccia IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
+   [IDebugAsyncOperation:: Start](../../winscript/reference/idebugasyncoperation-start.md)  
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

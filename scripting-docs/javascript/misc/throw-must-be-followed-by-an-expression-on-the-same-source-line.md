@@ -22,7 +22,7 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72572753"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>La parola chiave 'throw' deve essere seguita da un'espressione nella stessa riga di codice sorgente
-È stata usata la parola chiave `throw`, ma non è stata seguita da un'espressione nella stessa riga di codice sorgente. Un'istruzione `throw` è costituita da due parti: la parola chiave `throw`, seguita dall'espressione da generare. Esempio:  
+È stata usata la parola chiave `throw`, ma non è stata seguita da un'espressione nella stessa riga di codice sorgente. Un'istruzione `throw` è costituita da due parti: la parola chiave `throw`, seguita dall'espressione da generare. Ad esempio:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -37,6 +37,6 @@ if (denominator == 0) {
 - Verificare che la parola chiave `throw` e l'espressione da generare vengano visualizzate nella stessa riga.  
   
 ## <a name="see-also"></a>Vedere anche  
- @No__t_1 [oggetto errore](../../javascript/reference/error-object-javascript.md)  
- [istruzione throw](../../javascript/reference/throw-statement-javascript.md)    
+   [oggetto errore](../../javascript/reference/error-object-javascript.md)  
+ [istruzione throw](../../javascript/reference/throw-statement-javascript.md)   
  [Istruzione try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
