@@ -61,9 +61,9 @@ typedef struct DebugPropertyInfo{
  Enumerazione che specifica i flag per gli attributi della proprietà di debug.  
   
  pDebugProp  
- @No__t_0 descritta dalle informazioni contenute in questa struttura di `DebugPropertyInfo`.  
+ `IDebugProperty` descritta dalle informazioni contenute in questa struttura di `DebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)    
- @No__t_1 [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
+ [Interfaccia IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)
