@@ -27,7 +27,7 @@ Un tipo gestito (qualsiasi simbolo definito da metadati o nativo per la funziona
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate proprietà valide aggiuntive per questo tipo di simbolo.
 
-|proprietà|Tipo di dati|Descrizione|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome del simbolo gestito.|
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|

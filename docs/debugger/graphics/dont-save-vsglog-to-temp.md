@@ -24,7 +24,7 @@ Quando presente, definisce se il file di log di grafica viene salvato nella dire
 #define DONT_SAVE_VSGLOG_TO_TEMP
 ```
 
-## <a name="value"></a>Value
+## <a name="value"></a>Valore
  Simbolo del preprocessore che, per sua presenza o assenza, determina se il file di log di grafica viene salvato nella directory dei file temporanei dell'utente. Se questo simbolo è definito, il nome file definito da `VSG_DEFAULT_RUN_FILENAME` è relativo alla directory corrente dell'app acquisita oppure è un percorso assoluto. in caso contrario, il nome file definito da `VSG_DEFAULT_RUN_FILENAME` è relativo alla directory dei file temporanei dell'utente e non può essere un percorso assoluto.
 
 ## <a name="remarks"></a>Note
