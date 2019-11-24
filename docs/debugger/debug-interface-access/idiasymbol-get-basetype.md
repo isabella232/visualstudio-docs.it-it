@@ -61,7 +61,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|

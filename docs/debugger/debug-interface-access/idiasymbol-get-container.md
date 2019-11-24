@@ -43,7 +43,7 @@ out Restituisce un puntatore a un `IDiaSymbol` contenente informazioni sul conte
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisiti|Descrizione|
+|Requisito|Descrizione|
 |-----------------|-----------------|
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
