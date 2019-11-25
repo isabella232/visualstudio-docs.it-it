@@ -1,7 +1,7 @@
 ---
 title: Pubblicare un'app Node.js nel Servizio app Linux
 description: È possibile pubblicare applicazioni Node.js create in Visual Studio nel Servizio app Linux in Azure
-ms.date: 11/1/2018
+ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e02e232f8ebfd9454842de5aabaa1706a0df6202
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695913"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474020"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Pubblicare un'applicazione Node.js in Azure (Servizio app Linux)
 
@@ -36,7 +36,7 @@ In questa esercitazione si imparerà a:
 > * Creare un Servizio app Linux in Azure
 > * Distribuire in Azure
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -130,15 +130,17 @@ Per configurare GitHub per Visual Studio:
     > [!WARNING]
     > Il processo di distribuzione del Servizio app usa una serie di regole euristiche per determinare il tipo di applicazione da provare ed eseguire. Se viene rilevato un file .*sln* nel contenuto distribuito, processo presuppone che venga distribuito un progetto basato su MSBuild. L'impostazione aggiunta in precedenza sostituisce questa logica e specifica esplicitamente che si tratta di un'applicazione Node.js. Senza questa impostazione, l'applicazione Node.js non verrà distribuita se il file .*sln* fa parte del repository distribuito al Servizio app.
 
-7. Dopo la distribuzione, aprire il Servizio app e selezionare **Opzioni di distribuzione**.
+7. Under **Application settings**, add another setting with a name of `WEBSITE_NODE_DEFAULT_VERSION` and a value of `8.9.0`.
+
+8. Dopo la distribuzione, aprire il Servizio app e selezionare **Opzioni di distribuzione**.
 
     ![Opzioni di distribuzione](../javascript/media/azure-deployment-options.png)
 
-8. Fare clic su **Scegli origine**, quindi scegliere **GitHub** e quindi configurare le autorizzazioni necessarie.
+9. Fare clic su **Scegli origine**, quindi scegliere **GitHub** e quindi configurare le autorizzazioni necessarie.
 
     ![Autorizzazioni GitHub](../javascript/media/azure-choose-source.png)
 
-9. Selezionare il repository e il ramo da cui eseguire la pubblicazione, quindi selezionare **OK**.
+10. Selezionare il repository e il ramo da cui eseguire la pubblicazione, quindi selezionare **OK**.
 
     ![Pubblicare nel servizio app di Linux](../javascript/media/azure-repo-and-branch.png)
 
@@ -168,12 +170,12 @@ Per configurare GitHub per Visual Studio:
 
 3. Al termine della distribuzione, passare al sito pubblico e accodare */api* all'URL. Viene restituita la risposta JSON.
 
-## <a name="troubleshooting"></a>Risoluzione dei problemi
+## <a name="troubleshooting"></a>Troubleshooting
 
 * Se il processo node.exe smette di funzionare (ovvero si verifica un'eccezione non gestita), il contenitore viene riavviato.
 * Durante l'avvio del contenitore, viene eseguito tramite varie regole euristiche che determinano come avviare il processo Node.js. È possibile visualizzare i dettagli dell'implementazione in [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
 * È possibile connettersi al contenitore in esecuzione tramite SSH per le indagini. Questa operazione viene eseguita agevolmente tramite il portale di Azure. Selezionare il Servizio app e scorrere verso il basso nell'elenco di strumenti fino a raggiungere **SSH** nella sezione **Strumenti di sviluppo**.
-* Per facilitare la risoluzione dei problemi, passare alle impostazioni dei **log di diagnostica** per il Servizio app e modificare l'impostazione **Registrazione del contenitore Docker** da **Off** a **File system**. I log vengono creati nel contenitore in */home/LogFiles/*_docker.log* e sono accessibili nella scheda tramite SSH o FTP (S).
+* Per facilitare la risoluzione dei problemi, passare alle impostazioni dei **log di diagnostica** per il Servizio app e modificare l'impostazione **Registrazione del contenitore Docker** da **Off** a **File system**. I log vengono creati nel contenitore in */home/LogFiles/* _docker.log* e sono accessibili nella scheda tramite SSH o FTP (S).
 * È possibile assegnare un nome di dominio personalizzato al sito, anziché l'URL *.azurewebsites.net URL assegnato per impostazione predefinita. Per altre informazioni, vedere l'argomento [Eseguire il mapping di un dominio personalizzato](/azure/app-service/app-service-web-tutorial-custom-domain).
 * È consigliabile eseguire la distribuzione in un sito di gestione temporanea per altri test prima di passare in produzione. Per informazioni dettagliate su come configurare questa opzione, vedere l'argomento [Creare ambienti di staging](/azure/app-service/web-sites-staged-publishing).
 * Vedere le [Domande frequenti sul Servizio app in Linux ](/azure/app-service/containers/app-service-linux-faq) per le domande più comuni.
