@@ -34,31 +34,31 @@ In questo argomento viene descritto come creare un set di regole per PolicyActiv
 
 1. Fare clic con il pulsante destro del mouse su [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)e quindi scegliere **Proprietà** per aprire la finestra **proprietà** .
 
-2. Fare clic sulla proprietà **RuleSetReference**.
+2. Fare clic sulla proprietà **RuleSetReference** .
 
-3. Effettuare una delle operazioni riportate di seguito:
+3. Esegui una delle operazioni seguenti:
 
     - Fare clic sui puntini di sospensione **[...]** di **RuleSetReference** e quindi selezionare un set di regole esistente nella finestra di [dialogo Seleziona set di regole (legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Andare al passaggio 10.
 
-         oppure
+         -oppure-
 
     - Digitare il nome da assegnare al set di regole. Fare clic sui puntini di sospensione **[...]** di **RuleSetReference** e quindi selezionare **modifica** nella finestra di [dialogo Seleziona set di regole (legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
-         oppure
+         -oppure-
 
-    - Digitare il nome da assegnare al set di regole. Espandere la proprietà **RuleSetReference** e selezionare i puntini di sospensione **[.]** nella proprietà **RuleSet Definition**.
+    - Digitare il nome da assegnare al set di regole. Espandere la proprietà **RuleSetReference** e selezionare i puntini di sospensione **[...]** nella proprietà di **definizione di RuleSet** .
 
          Verrà visualizzata la finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) .
 
 4. Nella finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)fare clic su **Aggiungi regola** per aggiungere una nuova regola al set di regole.
 
-5. Immettere **Nome**, **Priorità** e proprietà **Nuova valutazione** oppure mantenere i valori predefiniti.
+5. Immettere le proprietà **nome**, **priorità**e **rivalutazione** oppure Mantieni i valori predefiniti.
 
-6. Immettere il testo per la **Condizione**.
+6. Immettere il testo per la **condizione**.
 
-7. Immettere il testo per **Azioni THEN** e **Azioni ELSE**.
+7. Immettere il testo per le azioni **then** e **else**.
 
-8. Fare clic nuovamente su **Aggiungi regola** per aggiungere un'altra regola.
+8. Fare di nuovo clic su **Aggiungi regola** per aggiungere un'altra regola.
 
 9. Al termine, fare clic su **OK**.
 

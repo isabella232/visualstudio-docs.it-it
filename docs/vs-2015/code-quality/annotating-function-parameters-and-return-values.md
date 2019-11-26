@@ -219,7 +219,7 @@ Questo articolo descrive gli usi tipici delle annotazioni per i parametri di fun
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In altre parole, ogni elemento presente nel buffer fino a `s` nello stato precedente è valido nel post-stato.  Di seguito è riportato un esempio:  
+     In altre parole, ogni elemento presente nel buffer fino a `s` nello stato precedente è valido nel post-stato.  Ad esempio:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ Questo articolo descrive gli usi tipici delle annotazioni per i parametri di fun
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     In altre parole, ogni elemento presente nel buffer fino a `s` nello stato precedente è valido nel post-stato.  Di seguito è riportato un esempio:  
+     In altre parole, ogni elemento presente nel buffer fino a `s` nello stato precedente è valido nel post-stato.  Ad esempio:  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ Questo articolo descrive gli usi tipici delle annotazioni per i parametri di fun
   
 - `_Struct_size_bytes_(size)`  
   
-     Si applica a una dichiarazione di classe o struct.  Indica che un oggetto valido di quel tipo può essere più grande del tipo dichiarato, con il numero di byte fornito dal `size`.  Di seguito è riportato un esempio:  
+     Si applica a una dichiarazione di classe o struct.  Indica che un oggetto valido di quel tipo può essere più grande del tipo dichiarato, con il numero di byte fornito dal `size`.  Ad esempio:  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   

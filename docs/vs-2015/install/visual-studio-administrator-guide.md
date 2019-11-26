@@ -40,11 +40,11 @@ Per la documentazione più recente di Visual Studio, vedere la [Guida dell'ammin
 ## <a name="error-return-codes"></a>Codici di errore restituiti  
  La tabella seguente riporta codici di errore importanti. È possibile usare questi codici di errore nell'automazione per decidere se è necessario un riavvio e se l'installazione è riuscita. Se si riceve un codice di errore, prendere in considerazione le procedure di risoluzione dei problemi nella pagina [installare Visual Studio](../install/install-visual-studio-2015.md) .  
   
-|Stato dell'installazione|Riavvio non richiesto|Riavvio richiesto|description|  
+|Stato dell'installazione|Riavvio non richiesto|Riavvio richiesto|Descrizione|  
 |------------------|--------------------------|----------------------|-----------------|  
-|Operazione completata|0x00000000 [0]|0x00000bc2 [3010]|Installazione riuscita.|  
+|Success|0x00000000 [0]|0x00000bc2 [3010]|Installazione riuscita.|  
 |Blocco|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se l'unico blocco da segnalare è "Riavvio in sospeso", il valore restituito è il valore Incompleto-Richiesto riavvio (0x80048bc7).|  
-|Annulla|0x00000642 [1602]|0x80048642 [-2147187134]|Quando viene restituito il valore di riavvio, il codice restituito è 1602.|  
+|Cancel|0x00000642 [1602]|0x80048642 [-2147187134]|Quando viene restituito il valore di riavvio, il codice restituito è 1602.|  
 |Incompleto-Richiesto riavvio|N/D|0x80048bc7 [-2147185721]|Per completare l'installazione, è necessario riavviare.|  
 |Errore|0x00000643 [1603]|0x80048643 [-2147187133]|Quando viene restituito il valore di riavvio, il codice restituito è 1603.|  
   
@@ -67,7 +67,7 @@ Ad esempio, modificare il valore in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microso
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Argomento|description|  
+|Argomento|Descrizione|  
 |-----------|-----------------|  
 |[Procedura: Installare una versione specifica di Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Viene descritto come installare configurazioni specifiche della versione corrente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Procedura: Creare ed eseguire un'installazione automatica di Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Viene descritto come installare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica.|  

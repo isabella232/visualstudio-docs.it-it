@@ -57,7 +57,7 @@ In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per orga
   
 - Implementare la sostituzione del parametro di modello di base.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per ulteriori informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
  È inoltre necessario scaricare il codice sorgente per il [Framework di pacchetto gestito per i progetti](https://archive.codeplex.com/?p=mpfproj12). Estrarre il file in un percorso accessibile alla soluzione che si vuole creare.  
@@ -164,7 +164,7 @@ In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per orga
   
     Modelli  
   
-    Progetti  
+    Projects  
   
     SimpleProject  
   

@@ -23,7 +23,7 @@ ms.locfileid: "74301316"
 # <a name="visualize-code"></a>Visualizzare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare gli strumenti di visualizzazione e modellazione di Visual Studio per comprendere più facilmente il codice esistente e descrivere l'applicazione. In questo modo è possibile avere un'indicazione visiva dell'impatto che le modifiche potrebbero avere sul codice e valutare il lavoro e i rischi risultanti da tali modifiche. Di seguito è riportato un esempio:
+È possibile usare gli strumenti di visualizzazione e modellazione di Visual Studio per comprendere più facilmente il codice esistente e descrivere l'applicazione. In questo modo è possibile avere un'indicazione visiva dell'impatto che le modifiche potrebbero avere sul codice e valutare il lavoro e i rischi risultanti da tali modifiche. Ad esempio:
 
 - Per comprendere le relazioni nel codice, eseguire visivamente il mapping di tali relazioni.
 
@@ -35,9 +35,9 @@ ms.locfileid: "74301316"
 
   Questi strumenti facilitano anche la comunicazione con le persone coinvolte nel progetto. Ad esempio, è possibile usare diagrammi classi UML per creare un glossario comune per discutere il sistema con parti interessate, utenti e membri del team di progetto.
 
-  Per informazioni sulle versioni di Visual Studio che supportano ciascuna funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+  Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
-## <a name="what-do-you-want-to-do"></a>Selezionare l'operazione da eseguire.
+## <a name="what-do-you-want-to-do"></a>Come procedere
 
 |||
 |-|-|
@@ -48,9 +48,9 @@ ms.locfileid: "74301316"
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Category**|**Links**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Articoli e pubblicazioni tecniche**|[Forum sull'architettura MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 

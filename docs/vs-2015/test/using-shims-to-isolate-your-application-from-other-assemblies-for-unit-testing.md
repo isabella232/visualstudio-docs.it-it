@@ -18,9 +18,9 @@ ms.locfileid: "74301425"
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Uso di shim per isolare l'applicazione da altri assembly per gli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I tipi shim** sono una delle due tecnologie che il framework Microsoft Fakes usa per consentire agli utenti di isolare dall'ambiente i componenti sottoposti a test. Gli shim deviano le chiamate ai metodi specifici al codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Ciò rende i test più semplici da scrivere.
+I tipi shim** sono una delle due tecnologie che il framework Microsoft Fakes usa per consentire agli utenti di isolare dall'ambiente i componenti sottoposti a test. Gli shim deviano le chiamate a metodi specifici verso il codice scritto come parte del test. Molti metodi restituiscono risultati diversi dipendenti dalle condizioni esterne, ma uno shim si trova sotto il controllo del test e può restituire risultati coerenti a ogni chiamata. Questo semplifica considerevolmente la scrittura dei test.
 
- Utilizzare gli shim per isolare il codice dagli assembly che non fanno parte della soluzione. Per isolare tra loro i componenti della soluzione, è consigliabile utilizzare gli stub.
+ Usare gli shim per isolare il proprio codice dagli assembly che non fanno parte della propria soluzione. Per isolare tra loro i diversi componenti della soluzione, è consigliabile usare gli stub.
 
  Per una panoramica e materiale sussidiario introduttivo, vedere [Isolamento del codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  È fondamentale eliminare correttamente ogni contesto shim. Come regola generale, chiamare sempre `ShimsContext.Create` all'interno di un'istruzione `using` per assicurare la corretta eliminazione degli shim registrati. Ad esempio, si potrebbe registrare uno shim per un metodo di test che sostituisce il metodo `DateTime.Now` con un delegato che restituisce sempre il primo gennaio 2000. Se si dimentica di eliminare lo shim registrato nel metodo di test, il resto dell'esecuzione del test restituisce sempre il primo gennaio 2000 come valore di DateTime.Now. Ciò potrebbe sorprendere e confondere.
 
 ### <a name="WriteShims"></a> Scrivere un test con shim
- Nel codice di test inserire una *deviazione* per il metodo da simulare. Di seguito è riportato un esempio:
+ Nel codice di test inserire una *deviazione* per il metodo da simulare. Ad esempio:
 
 ```csharp
 [TestClass]
@@ -499,7 +499,7 @@ ShimFile.WriteAllTextStringString = shim;
 ```
 
 ## <a name="BKMK_Limitations"></a> Limitazioni
- Gli shim non possono essere usati in tutti i tipi della libreria di classi base .NET **mscorlib** e **System**.
+ Non è possibile usare gli shim in tutti i tipi della libreria di classi base .NET **mscorlib** e **System**.
 
 ## <a name="external-resources"></a>Risorse esterne
 

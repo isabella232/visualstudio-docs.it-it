@@ -25,12 +25,12 @@ ms.locfileid: "74295839"
 
  Si possono definire anche vincoli che convalidano il modello a fronte di risorse esterne, ad esempio un database. Se si vuole convalidare il codice del programma rispetto a un diagramma livello, vedere [aggiungere la convalida dell'architettura personalizzata ai diagrammi livello](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
- Per informazioni sulle versioni di Visual Studio che supportano modelli UML, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="applying-validation-constraints"></a>Applicazione dei vincoli di convalida
  I vincoli di convalida vengono applicati in tre casi: quando si salva un modello, quando si apre un modello e quando si fa clic su **Convalida modello UML** nel menu **Architettura** . In ogni caso, verranno applicati solo i vincoli definiti per il caso specifico, anche se di solito si definisce ogni vincolo in modo che venga applicato in più di un caso.
@@ -42,9 +42,9 @@ ms.locfileid: "74295839"
 ## <a name="defining-a-validation-extension"></a>Definizione di un'estensione di convalida
  Per creare un'estensione di convalida per una finestra di progettazione UML, è necessario creare una classe che definisca i vincoli di convalida e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX è un contenitore che può installare il vincolo. Esistono due metodi alternativi per definire un'estensione di convalida:
 
-- **Creare un'estensione di convalida nella relativa estensione VSIX con un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.
+- **Creare un'estensione di convalida nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.
 
-- **Creare la classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
+- **Creare una classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Per creare un'estensione di convalida nella relativa estensione VSIX
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Creare un progetto di libreria di classi, aggiungendolo a una soluzione VSIX esistente oppure creando una nuova soluzione.
 
-    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+    1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
     2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.
 
@@ -95,7 +95,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 3. Impostare il progetto VSIX come progetto di avvio della soluzione.
 
-    - In Esplora soluzioni scegliere **Imposta come progetto di avvio** dal menu di scelta rapida del progetto VSIX.
+    - In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.
 
 4. In **source.extension.vsixmanifest**, in **Contenuto**, aggiungere il progetto di libreria di classi come componente MEF:
 
@@ -239,7 +239,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }
 ```
 
- Vedere [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md) per informazioni sui metodi e sui tipi utilizzabili per esplorare e leggere il modello.
+ Vedere [Programming with the UML API](../modeling/programming-with-the-uml-api.md) per informazioni sui metodi e sui tipi utilizzabili per esplorare e leggere il modello.
 
 ### <a name="about-validation-constraint-methods"></a>Informazioni sui metodi dei vincoli di convalida
  Ogni vincolo di convalida è definito da un metodo nel seguente formato:

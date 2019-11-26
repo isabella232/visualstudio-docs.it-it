@@ -70,7 +70,7 @@ Il programma di installazione è un programma generico che può essere configura
   
   `package.xml`  
   
-  Infine, copiare i file ridistribuibili nel percorso della cartella del programma di avvio automatico. Per altre informazioni, vedere [Procedura: Creare un pacchetto del programma di avvio automatico personalizzato](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Infine, copiare i file ridistribuibili nel percorso della cartella del programma di avvio automatico. Per altre informazioni, vedere [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.  
   
-|Proprietà|description|  
+|Proprietà|Descrizione|  
 |--------------|-----------------|  
 |ApplicationName|Nome dell'applicazione.|  
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  

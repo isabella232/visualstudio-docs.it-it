@@ -90,7 +90,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
  Di seguito sono disponibili maggiori dettagli:  
   
-|Controllo filtro|description|  
+|Controllo filtro|Descrizione|  
 |--------------------|-----------------|  
 |**Processo**|Nome del processo a cui si è interessati. Questo elenco a discesa contiene tutti i processi che hanno utilizzato la GPU durante la sessione di diagnostica. Il colore associato al processo nell'elenco a discesa è il colore dell'attività del thread nelle sequenze temporali successive.|  
 |**Thread**|ID del thread a cui si è interessati. In un'app multithread, questo consente di isolare gli specifici thread che appartengono al processo a cui si è interessati. Gli eventi associati al thread selezionato sono evidenziati in ogni sequenza temporale.|  
@@ -100,7 +100,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
   
  L'elenco eventi nella parte inferiore del report di utilizzo della GPU mostra i dettagli relativi a ogni evento.  
   
-|Colonna|description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Nome evento**|Nome dell'evento di grafica. Un evento in genere corrisponde a un evento nella sequenza temporale di un thread della CPU e un evento in una sequenza temporale della GPU.<br /><br /> Se Utilizzo GPU non è riuscito a determinare il nome di un evento, i nomi degli eventi possono risultare non attribuiti. Per altre informazioni, vedere la nota sotto questa tabella.|  
 |**Avvio CPU (ns)**|Momento di avvio dell'evento nella CPU a seguito della chiamata a un'API Direct3D. Il tempo viene misurato in nanosecondi in relazione al momento di avvio dell'app.|  
@@ -133,7 +133,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
 ## <a name="hwsupport"></a> Hardware e driver supportati  
  Di seguito è riportato un elenco delle GPU e dei driver supportati:  
   
-|Vendor|Descrizione GPU|Versione driver richiesta|  
+|Console|Descrizione GPU|Versione driver richiesta|  
 |------------|---------------------|-----------------------------|  
 |Intel®|Processori Intel® Core di quarta generazione (Haswell)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|-- (usare i driver più recenti)|  
 |AMD®|La maggior parte dalla serie AMD Radeon™ HD 7000 (escluso AMD Radeon™ HD 7350-7670)<br /><br /> GPU AMD Radeon™, GPU AMD FirePro™ e acceleratori grafici AMD FirePro con architettura Graphics Core Next (GCN).<br /><br /> APU (Accelerated Processing Unit) AMD® E-Series e AMD A-series con architettura Graphics Core Next (GCN) (Kaveri, Kabini, Temash, Beema, Mullins)|14.7 RC3 o versione successiva|  

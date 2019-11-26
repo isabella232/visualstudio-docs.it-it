@@ -46,7 +46,7 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
   
  [Procedura: Impostare le opzioni relative ai nomi file dei dati di profilatura](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Launch  
+## <a name="launch"></a>Avvio  
  Queste impostazioni consentono di effettuare una selezione da un elenco di file binari e specificare il relativo ordine di avvio.  
   
  Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md).  
@@ -66,7 +66,7 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
   
   Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
   
-## <a name="binary"></a>Binario  
+## <a name="binary"></a>Binary  
  Queste impostazioni consentono di specificare se si desidera rilocare il file binario instrumentato in un'altra posizione. Ad esempio, se si esegue la profilatura di My.DLL e si sceglie di non rilocare il file binario instrumentato, viene creata una copia di backup di My.DLL denominata My.Orig.DLL. Successivamente, My.DLL viene modificato con l'inserimento di probe per la raccolta dei dati. Se si decide di rilocare il file binario instrumentato, il file binario originale non viene rinominato e il file binario instrumentato viene copiato nel percorso specificato in modo da essere usato durante la strumentazione.  
   
  Per altre informazioni, vedere [Procedura: Specificare il file binario da avviare](../profiling/how-to-specify-the-binary-to-start.md).  
@@ -88,7 +88,7 @@ Una **sessione di prestazioni** consente di configurare le impostazioni che dete
   
  Per altre informazioni, vedere [Procedura: Raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md).  
   
-## <a name="windows-events"></a>Eventi Windows  
+## <a name="windows-events"></a>Windows Events  
  Durante la profilatura, è possibile raccogliere i dati dai provider di traccia eventi. I dati possono essere visualizzati usando l'opzione `/calltrace` dello strumento da riga di comando VSPerfReport.exe. Per altre informazioni su Event Tracing for Windows (ETW), vedere [About Event Tracing](https://go.microsoft.com/fwlink/?linkid=90752) (Informazioni su Event Tracing).  
   
  Per altre informazioni, vedere:  

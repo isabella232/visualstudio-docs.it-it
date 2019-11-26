@@ -54,14 +54,14 @@ La shell isolata di Visual Studio consente di creare applicazioni autonome che p
 ## <a name="standard-features-of-the-isolated-shell"></a>Funzionalità standard della shell isolata  
  Le funzionalità seguenti sono standard per tutte le edizioni di Visual Studio.  
   
-|Categoria funzionalità|Funzionalità|  
+|Categoria funzionalità|Caratteristica|  
 |----------------------|-------------|  
 |Funzionalità IDE|Impostazioni di importazione/esportazione<br /><br /> Programma di installazione controllo della casella degli strumenti<br /><br /> Elenco attività & Elenco errori<br /><br /> Output (finestra)<br /><br /> Pagina iniziale<br /><br /> Finestra Proprietà<br /><br /> Casella degli strumenti<br /><br /> Esplora soluzioni<br /><br /> Finestra Segnalibro<br /><br /> Visualizzazione classi<br /><br /> Visualizzatore oggetti<br /><br /> Finestra di comando<br /><br /> Struttura documento<br /><br /> Visualizzazione risorse<br /><br /> Strumento esterno<br /><br /> Aggiungi riferimento al servizio Windows Communication Foundation (WCF)<br /><br /> Supporto LINQ (Language Integrated Query)|  
 |Editor/finestra di progettazione|Strumenti di esplorazione del codice (ricerca unificata, definizione di origine, ereditarietà)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Gestione frammenti di codice<br /><br /> Frammenti di codice<br /><br /> Refactoring<br /><br /> Elenco di belle<br /><br /> Filtro IntelliSense<br /><br /> Finestra Definizione codice<br /><br /> Progettazione applicazioni<br /><br /> Progettazione Windows Form<br /><br /> Progettazione Windows Presentation Foundation (WPF)|  
-|Debug|C#Analizzatore di espressioni<br /><br /> Debug locale<br /><br /> Debug gestito<br /><br /> Modifica e continuazione<br /><br /> Debug tra thread<br /><br /> Visualizzazioni<br /><br /> DataTips<br /><br /> Debug nativo<br /><br /> Debug di script<br /><br /> Debug di interoperabilità<br /><br /> Debug JIT (just-in-Time)<br /><br /> Debug di più processi<br /><br /> Debug XSLT<br /><br /> Connetti al processo locale<br /><br /> Punti di traccia<br /><br /> Vincoli del punto di interruzione|  
-|Dati|Esplora server (solo dati semplificati)<br /><br /> Data binding a dati locali (. MDF o. MDB<br /><br /> Associa dati a oggetto<br /><br /> Associazione dati al servizio Web<br /><br /> Set completo di controlli dati<br /><br /> Editor XML<br /><br /> Associa dati a server di database locale<br /><br /> Finestra Origini dati|  
+|Debug|C#Analizzatore di espressioni<br /><br /> Debug locale<br /><br /> Debug gestito<br /><br /> Modifica e continuazione<br /><br /> Debug tra thread<br /><br /> Visualizzazioni<br /><br /> DataTips<br /><br /> Debug nativo<br /><br /> Debug degli script<br /><br /> Debug di interoperabilità<br /><br /> Debug JIT (just-in-Time)<br /><br /> Debug di più processi<br /><br /> Debug XSLT<br /><br /> Connetti al processo locale<br /><br /> Punti di traccia<br /><br /> Vincoli del punto di interruzione|  
+|Data|Esplora server (solo dati semplificati)<br /><br /> Data binding a dati locali (. MDF o. MDB<br /><br /> Associa dati a oggetto<br /><br /> Associazione dati al servizio Web<br /><br /> Set completo di controlli dati<br /><br /> Editor XML<br /><br /> Associa dati a server di database locale<br /><br /> Finestra Origini dati|  
 |Web|Editor HTML<br /><br /> Web browser<br /><br /> Progettazione Web Form<br /><br /> Progetto sito Web<br /><br /> Progetto di applicazione Web|  
-|Estendibilità|Utilizza VSPackage e componenti MEF|  
+|Extensibility|Utilizza VSPackage e componenti MEF|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Shell (isolata o integrata)](../extensibility/shell-isolated-or-integrated.md)

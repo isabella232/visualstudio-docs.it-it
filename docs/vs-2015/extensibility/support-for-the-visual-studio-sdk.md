@@ -40,7 +40,7 @@ Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su 
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
  Il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) è il posto per le estensioni e il codice di esempio. È possibile trovare strumenti che migliorano la produttività e l'esperienza utente con Visual Studio, le applicazioni di esempio che illustrano come usare VSPackage e il Managed Extensibility Framework (MEF) e altri tipi di esempi.  
   
-### <a name="codeplex"></a>CodePlex  
+### <a name="codeplex"></a>Codeplex  
  [Codeplex](https://go.microsoft.com/fwlink/?LinkId=76627) è il sito Web Microsoft Open source che ospita il progetto. È possibile utilizzare CodePlex per creare e condividere nuovi progetti, contribuire a progetti esistenti o utilizzare le applicazioni nel sito e fornire commenti e suggerimenti. Tutte le PowerToy (e la relativa documentazione) incluse con le versioni precedenti del [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sono ora disponibili su CodePlex.  
   
 ## <a name="included-support"></a>Supporto incluso  
@@ -66,4 +66,4 @@ Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su 
  Le informazioni sulle singole richieste di supporto sono reperibili a [singole richieste di supporto](https://go.microsoft.com/fwlink/?LinkID=82385).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Comunicazioni con Microsoft](../ide/talk-to-us.md)
+ [Talk to Us](../ide/talk-to-us.md) (Comunicazioni con Microsoft)

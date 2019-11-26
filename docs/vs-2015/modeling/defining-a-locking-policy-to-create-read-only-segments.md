@@ -77,16 +77,16 @@ partition.SetLocks(Locks.Delete);
 
   Non è possibile impostare un blocco su una partizione o un archivio e contemporaneamente disabilitare il blocco su un singolo elemento.
 
-|Value|Indica se `IsLocked(Value)` è true|
+|Valore|Indica se `IsLocked(Value)` è true|
 |-----------|------------------------------------------|
-|nessuno|Nessuna restrizione.|
+|Nessuna|Nessuna restrizione.|
 |Proprietà|Impossibile modificare le proprietà di dominio degli elementi. Questa operazione non si applica alle proprietà generate dal ruolo di una classe di dominio in una relazione.|
-|Aggiunta|Non è possibile creare nuovi elementi e collegamenti in una partizione o in un archivio.<br /><br /> Non applicabile a `ModelElement`.|
-|Move|Non è possibile spostare l'elemento tra partizioni se `element.IsLocked(Move)` è true o se `targetPartition.IsLocked(Move)` è true.|
-|Eliminare|Non è possibile eliminare un elemento se questo blocco è impostato sull'elemento stesso o su uno degli elementi a cui l'eliminazione propagherà, ad esempio elementi e forme incorporati.<br /><br /> È possibile utilizzare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
+|Aggiungi|Non è possibile creare nuovi elementi e collegamenti in una partizione o in un archivio.<br /><br /> Non applicabile a `ModelElement`.|
+|Sposta|Non è possibile spostare l'elemento tra partizioni se `element.IsLocked(Move)` è true o se `targetPartition.IsLocked(Move)` è true.|
+|Elimina|Non è possibile eliminare un elemento se questo blocco è impostato sull'elemento stesso o su uno degli elementi a cui l'eliminazione propagherà, ad esempio elementi e forme incorporati.<br /><br /> È possibile utilizzare `element.CanDelete()` per individuare se un elemento può essere eliminato.|
 |Riordinare|Non è possibile modificare l'ordine dei collegamenti in un RolePlayer.|
 |RolePlayer|Il set di collegamenti originati in questo elemento non può essere modificato. Ad esempio, non è possibile incorporare nuovi elementi in questo elemento. Questa operazione non influisce sui collegamenti per i quali questo elemento è la destinazione.<br /><br /> Se questo elemento è un collegamento, l'origine e la destinazione non sono interessate.|
-|All|OR bit per bit degli altri valori.|
+|Tutte|OR bit per bit degli altri valori.|
 
 ## <a name="locking-policies"></a>Criteri di blocco
  Come autore di un linguaggio DSL, è possibile definire un *criterio di blocco*. Un criterio di blocco modera l'operazione di blocchi (), in modo che sia possibile impedire l'impostazione di blocchi specifici o richiedere l'impostazione di blocchi specifici. In genere, è possibile usare un criterio di blocco per impedire a utenti o sviluppatori di contravvenendo accidentalmente l'uso previsto di un linguaggio DSL, nello stesso modo in cui è possibile dichiarare una variabile `private`.
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  Questi metodi vengono chiamati quando viene effettuata una chiamata a `SetLocks()` in un archivio, una partizione o ModelElement. In ogni metodo viene fornito un set di blocchi proposto. È possibile restituire il set proposto oppure è possibile aggiungere e sottrarre blocchi.
 
- Di seguito è riportato un esempio:
+ Ad esempio:
 
 ```
 using Microsoft.VisualStudio.Modeling;

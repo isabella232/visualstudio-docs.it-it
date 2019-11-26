@@ -71,7 +71,7 @@ ms.locfileid: "74300906"
 
  Per distribuire le estensioni nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]principale e in altri computer, attenersi alla seguente procedura:
 
-1. Trovare il file di installazione di VSIX nel progetto VSIX in bin\\*\*\\\*VSIX
+1. Trovare il file di installazione VSIX nel progetto VSIX in bin\\*\\\*. vsix
 
 2. Copiare questo file nel computer di destinazione, quindi in Esplora risorse (o Esplora file) fare doppio clic su di esso.
 

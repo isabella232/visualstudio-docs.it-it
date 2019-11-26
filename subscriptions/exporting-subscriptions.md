@@ -6,15 +6,15 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Informazioni su come esportare un elenco di sottoscrittori e i dettagli delle assegnazioni delle sottoscrizioni.
-ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605559"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491733"
 ---
-# <a name="export-subscription-information"></a>Esportare le informazioni sulla sottoscrizione
-Nel [portale di amministrazione](https://manage.visualstudio.com) delle sottoscrizioni di Visual Studio è possibile esportare l'elenco dei sottoscrittori e dei dettagli sulle rispettive assegnazioni. Queste informazioni includono nome, indirizzo di posta elettronica, indirizzo di posta elettronica alternativo, livello della sottoscrizione, data di assegnazione, stato di attivazione, data di scadenza, campo di riferimento, abilitazione o meno dei download, paese, lingua, stato della sottoscrizione e GUID della sottoscrizione.  L'elenco viene esportato come file CSV e può essere facilmente aperto in Microsoft Excel per la creazione di grafici, pivot e altri artefatti.
+# <a name="export-subscription-information"></a>Esporta informazioni sulla sottoscrizione
+Nel [portale di amministrazione](https://manage.visualstudio.com)delle sottoscrizioni di Visual Studio è possibile esportare un elenco di sottoscrittori e informazioni dettagliate sulle relative assegnazioni. Queste informazioni includono nome, indirizzo di posta elettronica, indirizzo di posta elettronica alternativo, livello della sottoscrizione, data di assegnazione, stato di attivazione, data di scadenza, campo di riferimento, abilitazione o meno dei download, paese, lingua, stato della sottoscrizione e GUID della sottoscrizione.  L'elenco viene esportato come file CSV e può essere facilmente aperto in Microsoft Excel per la creazione di grafici, pivot e altri artefatti.
 
 La possibilità di avere tutte le informazioni sui sottoscrittori in un'unica posizione semplifica le operazioni seguenti:
 - Ottenere una panoramica complessiva delle sottoscrizioni usate in base a team e/o posizione nell'intera organizzazione.

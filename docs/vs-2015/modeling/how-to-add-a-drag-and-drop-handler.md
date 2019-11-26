@@ -19,7 +19,7 @@ ms.locfileid: "74298944"
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: aggiungere un gestore di trascinamento della selezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile aggiungere al linguaggio DSL gestori per gli eventi di trascinamento della selezione, in modo che gli utenti possano trascinare gli elementi sul diagramma da altri diagrammi o da altre parti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È possibile aggiungere gestori anche per eventi come il doppio clic. Insieme, i gestori di trascinamento della selezione e di doppio clic sono noti come *gestori movimenti*.
+È possibile aggiungere al linguaggio DSL gestori per gli eventi di trascinamento della selezione, in modo che gli utenti possano trascinare gli elementi sul diagramma da altri diagrammi o da altre parti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È possibile aggiungere gestori anche per eventi come il doppio clic. Insieme, il trascinamento della selezione e i gestori di doppio clic sono noti come *gestori di movimento*.
 
  Questo argomento illustra i movimenti di trascinamento della selezione originati in altri diagrammi. Per gli eventi di spostamento e copia in uno stesso diagramma, considerare come alternativa la possibilità di definire una sottoclasse di `ElementOperations`. Per ulteriori informazioni, vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md). È anche possibile personalizzare la definizione DSL.
 
@@ -29,13 +29,13 @@ ms.locfileid: "74298944"
 
   - [Definizione di gestori movimenti eseguendo l'override dei metodi ShapeElement](#overrideShapeElement). è possibile eseguire l'override di `OnDragDrop`, `OnDoubleClick`, `OnDragOver`e altri metodi.
 
-  - [Definizione di gestori movimenti con MEF](#MEF). Usare questo metodo se si vuole che gli sviluppatori di terze parti possano definire i propri gestori per il linguaggio DSL. Gli utenti possono scegliere di installare le estensioni di terze parti dopo aver installato il linguaggio DSL.
+  - [Definizione di gestori movimenti mediante MEF](#MEF). Usare questo metodo se si vuole che gli sviluppatori di terze parti possano definire i propri gestori per il linguaggio DSL. Gli utenti possono scegliere di installare le estensioni di terze parti dopo aver installato il linguaggio DSL.
 
 - [Come decodificare l'elemento trascinato](#extracting). Gli elementi possono essere trascinati da una finestra o dal desktop, oltre che da un linguaggio DSL.
 
 - [Come ottenere l'elemento trascinato originale](#getOriginal). Se l'elemento trascinato è un elemento DSL, è possibile aprire il modello di origine e accedere all'elemento.
 
-- [Uso delle azioni del mouse: trascinamento di elementi raggruppamento](#mouseActions). In questo esempio viene illustrato un gestore di livello inferiore che intercetta le azioni del mouse nei campi di una forma. L'esempio consente all'utente di riordinare gli elementi in un raggruppamento trascinando con il mouse.
+- [Uso delle azioni del mouse: trascinamento di elementi di raggruppamento](#mouseActions). In questo esempio viene illustrato un gestore di livello inferiore che intercetta le azioni del mouse nei campi di una forma. L'esempio consente all'utente di riordinare gli elementi in un raggruppamento trascinando con il mouse.
 
 ## <a name="overrideShapeElement"></a>Definizione di gestori movimenti eseguendo l'override dei metodi ShapeElement
  Aggiungere un nuovo file di codice al progetto DSL. Per un gestore movimenti, in genere è necessario avere almeno le istruzioni `using` seguenti:
@@ -86,7 +86,7 @@ using System.Linq;
 
    Per altre informazioni, vedere [procedura: intercettare un clic su una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
-  Definire `IsAcceptableDropItem(e)` per determinare se l'elemento trascinato sia accettabile e ProcessDragDropItem(e) per aggiornare il modello quando l'elemento viene rilasciato. Questi metodi devono prima estrarre l'elemento dagli argomenti dell'evento. Per informazioni su questa operazione, vedere [Come ottenere un riferimento all'elemento trascinato](#extracting).
+  Definire `IsAcceptableDropItem(e)` per determinare se l'elemento trascinato sia accettabile e ProcessDragDropItem(e) per aggiornare il modello quando l'elemento viene rilasciato. Questi metodi devono prima estrarre l'elemento dagli argomenti dell'evento. Per informazioni su come eseguire questa operazione, vedere [come ottenere un riferimento all'elemento trascinato](#extracting).
 
 ## <a name="MEF"></a>Definizione di gestori movimenti mediante MEF
  MEF (Managed Extensibility Framework) consente di definire i componenti che possono essere installati con la configurazione minima. Per altre informazioni, vedere [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).
@@ -129,7 +129,7 @@ using System.Linq;
 
      È possibile creare più di un componente gestore movimenti, ad esempio quando si hanno tipi diversi di oggetti trascinati.
 
-3. Aggiungere le definizioni di classe parziale per le classi forma, connettore o diagramma di destinazione e definire i metodi `IsAcceptableDropItem()` e `ProcessDragDropItem()`. Questi metodi devono iniziare estraendo gli elementi trascinati dagli argomenti dell'evento. Per altre informazioni, vedere [Come ottenere un riferimento all'elemento trascinato](#extracting).
+3. Aggiungere le definizioni di classe parziale per le classi forma, connettore o diagramma di destinazione e definire i metodi `IsAcceptableDropItem()` e `ProcessDragDropItem()`. Questi metodi devono iniziare estraendo gli elementi trascinati dagli argomenti dell'evento. Per ulteriori informazioni, vedere [come ottenere un riferimento all'elemento trascinato](#extracting).
 
 ## <a name="extracting"></a>Come decodificare l'elemento trascinato
  Quando l'utente trascina un elemento sul diagramma o da una parte del diagramma a un'altra, le informazioni sull'elemento trascinato sono disponibili in `DiagramDragEventArgs`. I dati possono essere disponibili in svariati formati, perché l'operazione di trascinamento potrebbe essere stata iniziata da qualsiasi oggetto. Il codice deve riconoscere i formati che riesce a gestire.
@@ -140,11 +140,11 @@ using System.Linq;
 
   - diagramEventArgs.Data.GetDataFormats() - Elenca i formati in cui è possibile decodificare l'oggetto trascinato. Se, ad esempio, l'utente trascina un file dal desktop, i formati disponibili includono il nome file ("`FileNameW`").
 
-  - `diagramEventArgs.Data.GetData(format)`: decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Di seguito è riportato un esempio:
+  - `diagramEventArgs.Data.GetData(format)`: decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Ad esempio:
 
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-       È anche possibile trasmettere oggetti, quali i riferimenti ModelBus, dall'origine nel formato personalizzato. Per altre informazioni, vedere [Come inviare i riferimenti ModelBus in un'operazione di trascinamento della selezione](#mbr).
+       È anche possibile trasmettere oggetti, quali i riferimenti ModelBus, dall'origine nel formato personalizzato. Per altre informazioni, vedere [How to Send Model Bus References in a trascinamento della selezione](#mbr).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype`: usare questa proprietà se si vuole che gli utenti trascinino gli elementi da un modello DSL o UML. Un prototipo di gruppo di elementi contiene uno o più oggetti, collegamenti e i valori delle proprietà. Viene usato anche nelle operazioni Incolla e quando si aggiunge un elemento dalla casella degli strumenti. In un prototipo, gli oggetti e i tipi vengono identificati dal GUID. Ad esempio, questo codice consente all'utente di trascinare gli elementi della classe da un diagramma UML o da Esplora modelli UML:
 
@@ -170,11 +170,11 @@ using System.Linq;
 
 1. Rendere il linguaggio DSL di origine accessibile da ModelBus di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
-    1. Scaricare e installare l'estensione di ModelBus di Visual Studio, se non è già installata. Per altre informazioni, vedere [Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Scaricare e installare l'estensione di ModelBus di Visual Studio, se non è già installata. Per altre informazioni, vedere [SDK di visualizzazione e modellazione](https://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare clic con il pulsante destro del mouse sull'area di progettazione e quindi scegliere **Abilita ModelBus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  Fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
+    2. Aprire il file di definizione DSL del linguaggio DSL di origine in Progettazione DSL. Fare clic con il pulsante destro del mouse sull'area di progettazione e quindi scegliere **Abilita ModelBus**. Nella finestra di dialogo scegliere una o entrambe le opzioni.  fare clic su **OK**. Un nuovo progetto "ModelBus" viene aggiunto alla soluzione DSL.
 
-    3. Fare clic su **Trasforma tutti i modelli** e ricompilare la soluzione.
+    3. Fare clic su **trasforma tutti i modelli** e ricompilare la soluzione.
 
 ### <a name="mbr"></a>Per inviare un oggetto da un DSL di origine
 
@@ -339,7 +339,7 @@ using System.Linq;
 ## <a name="mouseActions"></a>Uso delle azioni del mouse: trascinamento di elementi di raggruppamento
  È possibile scrivere un gestore che intercetta le azioni del mouse nei campi di una forma. L'esempio seguente consente all'utente di riordinare gli elementi in un raggruppamento trascinando con il mouse.
 
- Per compilare questo esempio, creare una soluzione con il modello di soluzione **Diagramma classi**. Aggiungere un file di codice e aggiungere il codice seguente. Modificare lo spazio dei nomi in modo che sia uguale al proprio.
+ Per compilare questo esempio, creare una soluzione usando il modello di soluzione **diagrammi classi** . Aggiungere un file di codice e aggiungere il codice seguente. Modificare lo spazio dei nomi in modo che sia uguale al proprio.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

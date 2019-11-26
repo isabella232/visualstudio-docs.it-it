@@ -64,13 +64,13 @@ Editor
 - Eliminare schede e strumenti.
 
 > [!IMPORTANT]
-> Per aggiungere o incollare elementi in DSL Explorer, fare clic con il pulsante destro del mouse sul nodo padre del padre del nuovo nodo. Per aggiungere uno strumento, ad esempio, fare clic con il pulsante destro del mouse sulla scheda e non sul nodo **Strumenti**. Per aggiungere una scheda, fare clic con il pulsante destro del mouse sul nodo **Editor**.
+> Per aggiungere o incollare elementi in DSL Explorer, fare clic con il pulsante destro del mouse sul nodo padre del padre del nuovo nodo. Ad esempio, per aggiungere uno strumento, fare clic con il pulsante destro del mouse sulla scheda e non sul nodo **strumenti** . Per aggiungere una scheda, fare clic con il pulsante destro del mouse sul nodo **Editor** .
 
- La proprietà **Icona casella degli strumenti** di ogni strumento fa riferimento a un file bitmap da 16x16 pixel. Questi file vengono in genere conservati nella cartella **Dsl\Resources** .
+ La proprietà **icona casella degli strumenti** di ogni strumento fa riferimento a un file bitmap 16x16. Questi file vengono in genere conservati nella cartella **Dsl\Resources** .
 
- La proprietà **Classe** di uno strumento elemento fa riferimento a una classe di dominio concreta. Per impostazione predefinita, lo strumento creerà istanze di questa classe. È tuttavia possibile scrivere codice per fare in modo che lo strumento crei gruppi di elementi o elementi di tipi diversi.
+ La proprietà **classe** di uno strumento elemento fa riferimento a una classe di dominio concreta. Per impostazione predefinita, lo strumento creerà istanze di questa classe. È tuttavia possibile scrivere codice per fare in modo che lo strumento crei gruppi di elementi o elementi di tipi diversi.
 
- La proprietà **Generazione di connessioni** di uno strumento di connessione fa riferimento a un generatore di connessioni che definisce i tipi di elementi a cui lo strumento può connettersi e i tipi di relazioni che crea tra di essi. I generatori di connessioni sono definiti come nodi in DSL Explorer. I generatori di connessioni vengono creati automaticamente al momento della definizione delle relazioni di dominio, ma è possibile scrivere codice per personalizzarli.
+ La proprietà **Generatore** di connessione di uno strumento di connessione fa riferimento a un generatore di connessioni, che definisce i tipi di elementi che lo strumento è in grado di connettere e le relazioni che crea tra di essi. I generatori di connessioni sono definiti come nodi in DSL Explorer. I generatori di connessioni vengono creati automaticamente al momento della definizione delle relazioni di dominio, ma è possibile scrivere codice per personalizzarli.
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Per aggiungere uno strumento alla casella degli strumenti
 
@@ -78,11 +78,11 @@ Editor
 
      Si crea invece uno strumento di connessione dopo avere creato una classe connettore e averla mappata a una relazione di riferimento.
 
-2. In DSL Explorer espandere il nodo **Editor** e il nodo **Schede della casella degli strumenti**.
+2. In DSL Explorer espandere il nodo **Editor** e il nodo **schede della casella degli strumenti** .
 
-     Fare clic con il pulsante destro del mouse su un nodo di scheda della casella degli strumenti e scegliere **Aggiungi nuovo strumento elemento** o **Aggiungi nuovo strumento di connessione**.
+     Fare clic con il pulsante destro del mouse su un nodo della scheda della casella degli strumenti, quindi scegliere **Aggiungi nuovo strumento elemento** o **Aggiungi nuovo strumento di connessione**.
 
-3. Impostare la proprietà **Icona casella degli strumenti** in modo che faccia riferimento a un file bitmap da 16x16 pixel.
+3. Impostare la proprietà **icona della casella degli strumenti** in modo che faccia riferimento a una bitmap 16x16.
 
      Se si vuole definire una nuova icona, creare un file bitmap in Esplora soluzioni nella cartella **Dsl\Resources** . Il file deve avere i valori di proprietà seguenti: **azione di compilazione** = **contenuto**; **Copiare nella directory di Output** = non **copiare**.
 
@@ -92,7 +92,7 @@ Editor
 
 5. Per testare il linguaggio specifico di dominio (DSL), premere F5 o CTRL+F5 e nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire un file di modello di esempio. Il nuovo strumento verrà visualizzato nella casella degli strumenti. Trascinarlo sul diagramma per verificare che crei un nuovo elemento.
 
-     Se lo strumento non viene visualizzato, arrestare l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dal menu **Start** di Windows, eseguire **Reimposta istanza sperimentale di Microsoft Visual Studio 2010**. Nel menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Compila**di** fare clic su **Ricompila soluzione**. Testare di nuovo il DSL.
+     Se lo strumento non viene visualizzato, arrestare l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Nel menu **Start** di Windows eseguire **Reimposta l'istanza sperimentale di Microsoft Visual Studio 2010**. Scegliere **Ricompila soluzione**dal menu **compilazione** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Testare di nuovo il DSL.
 
 ## <a name="customizing"></a>Personalizzazione degli strumenti degli elementi
  Per impostazione predefinita, lo strumento creerà una singola istanza della classe specificata, ma è possibile scegliere tra due alternative:
@@ -103,7 +103,7 @@ Editor
 
      Per altre informazioni, vedere [personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md).
 
-- Scrivere codice per personalizzare lo strumento in modo che possa creare gruppi di elementi. Lo strumento è inizializzato dai metodi in ToolboxHelper.cs che possono essere sostituiti. Per altre informazioni, vedere [Creazione di gruppi di elementi da uno strumento](#groups).
+- Scrivere codice per personalizzare lo strumento in modo che possa creare gruppi di elementi. Lo strumento è inizializzato dai metodi in ToolboxHelper.cs che possono essere sostituiti. Per ulteriori informazioni, vedere [creazione di gruppi di elementi da uno strumento](#groups).
 
 ## <a name="groups"></a>Creazione di gruppi di elementi da uno strumento
  Ogni strumento elemento contiene un prototipo degli elementi che deve creare. Per impostazione predefinita, ogni strumento elemento crea un singolo elemento, ma è anche possibile creare un gruppi di oggetti correlati con un solo strumento. A questo scopo, è necessario inizializzare lo strumento con un prototipo <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> che contiene gli elementi correlati.
@@ -173,20 +173,20 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  È possibile usare i generatori di connessioni per limitare l'occorrenza di determinate classi sia nel ruolo di origine che nel ruolo di destinazione di una determinata relazione di dominio. Ad esempio, una classe di dominio di base potrebbe avere una relazione di dominio con un'altra classe di dominio, ma non si vuole che tutte le classi derivate della classe di base abbiano gli stessi ruoli in quella relazione. Nella soluzione flusso attività sono disponibili quattro classi di dominio concrete (**StartPoint**, **endpoint**, **MergeBranch**e **Synchronization**) che ereditano direttamente dalla classe di dominio astratta **FlowElement**e due classi di dominio concrete (**Task** e **ObjectInState**) che ereditano indirettamente da tale classe. Esiste anche una relazione di riferimento del **flusso** che accetta le classi di dominio **FlowElement** sia nel ruolo di origine che nel ruolo di destinazione. Tuttavia, un'istanza di una classe di dominio dell' **endpoint** non deve essere l'origine di un'istanza di una relazione di **flusso** , né un'istanza di una classe **StartPoint** è la destinazione di un'istanza di una relazione di **flusso** . Il generatore di connessioni **FlowBuilder** dispone di una direttiva di connessione di collegamento denominata **Flow** che specifica le classi di dominio che possono riprodurre il ruolo di origine (**Task**, **MergeBranch**, **StartPoint**e **Synchronization**) e che possono riprodurre il ruolo di destinazione (**MergeBranch**, **endpoint**e **sincronizzazione**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Generatori di connessione con più direttive di connessione collegamento
- È possibile aggiungere più di una direttiva di connessione di collegamento a un generatore di connessioni. Questo consente di non mostrare agli utenti alcune delle complessità del modello di dominio ed evita di creare troppa confusione nella **Casella degli strumenti**. È possibile aggiungere direttive di connessione collegamento per diverse relazioni di dominio a un singolo generatore di connessioni. È tuttavia consigliabile combinare le relazioni di dominio quando svolgono approssimativamente la stessa funzione.
+ È possibile aggiungere più di una direttiva di connessione di collegamento a un generatore di connessioni. In questo modo è possibile nascondere alcune complessità del modello di dominio dagli utenti e impedire che la **casella degli strumenti** si trovi troppo ingombrante. È possibile aggiungere direttive di connessione collegamento per diverse relazioni di dominio a un singolo generatore di connessioni. È tuttavia consigliabile combinare le relazioni di dominio quando svolgono approssimativamente la stessa funzione.
 
  Nella soluzione flusso attività, lo strumento di connessione del **flusso** viene usato per creare istanze delle relazioni di dominio **Flow** e **ObjectFlow** . Il generatore di connessioni **FlowBuilder** dispone, oltre alla direttiva di connessione a collegamento **dinamico** descritta in precedenza, due direttive Connect di collegamento denominate **ObjectFlow**. Queste direttive specificano che un'istanza di una relazione **ObjectFlow** può essere disegnata tra le istanze della classe di dominio **ObjectInState** o da un'istanza di un **ObjectInState** a un'istanza di un' **attività**, ma non tra due istanze di un' **attività**o da un'istanza di un' **attività** a un'istanza di un **ObjectInState**. Tuttavia, un'istanza di una relazione di **flusso** può essere disegnata tra due istanze di un' **attività**. Se si compila ed esegue la soluzione flusso attività, è possibile notare che il disegno di un **flusso** da un'istanza di un **ObjectInState** a un'istanza di un' **attività** crea un'istanza di un **ObjectFlow**, ma il disegno di un **flusso** tra due istanze di un' **attività** crea un'istanza di un **flusso**.
 
 ### <a name="custom-code-for-connection-builders"></a>Codice personalizzato per i generatori di connessioni
  Nell'interfaccia utente sono disponibili quattro caselle di controllo che definiscono i vari tipi di personalizzazione dei generatori di connessioni:
 
-- casella di controllo **Accettazione personalizzata** in una direttiva del ruolo di origine o di destinazione
+- casella di controllo **accetta personalizzata** in una direttiva del ruolo di origine o di destinazione
 
-- casella di controllo **Connessione personalizzata** in una direttiva del ruolo di origine o di destinazione
+- casella di controllo **connessione personalizzata** in una direttiva del ruolo di origine o di destinazione
 
-- casella di controllo **Usa la connessione personalizzata** in una direttiva di connessione
+- casella di controllo **Usa connessione personalizzata** in una direttiva Connect
 
-- proprietà **Personalizzato** per il generatore di connessioni
+- proprietà **personalizzata** del generatore di connessioni
 
   Per implementare queste personalizzazioni, è necessario fornire codice. Per informazioni sul codice da fornire, selezionare una delle caselle di controllo, fare clic su Trasforma tutti i modelli e quindi compilare la soluzione. Verrà visualizzato un report degli errori. Fare doppio clic sul report degli errori per visualizzare un commento che indica il codice da aggiungere.
 
@@ -194,7 +194,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 > Per aggiungere il codice personalizzato, creare una definizione di classe parziale in un file di codice separato dai file di codice nelle cartelle GeneratedCode. Per non perdere il lavoro svolto, non modificare i file di codice generati. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Creazione di codice di connessione personalizzato
- In ogni direttiva di connessione di collegamento, nella scheda **Direttive ruolo di origine** sono definiti i tipi da cui è possibile trascinare. Allo stesso modo, nella scheda **Direttive ruolo di destinazione** sono definiti i tipi verso cui è possibile trascinare. Per ogni tipo, è inoltre possibile specificare se consentire la connessione (per quella direttiva di connessione di collegamento) impostando il flag **Accettazione personalizzata** e quindi specificando il codice supplementare.
+ In ogni direttiva di connessione a collegamento la scheda **direttive del ruolo di origine** definisce da quali tipi è possibile trascinare. Analogamente, nella scheda **direttive ruolo di destinazione** vengono definiti i tipi che è possibile trascinare. Per ogni tipo, è possibile specificare se consentire la connessione (per la direttiva di connessione di collegamento) impostando il flag **Accept personalizzato** e quindi specificando il codice aggiuntivo.
 
  È anche possibile personalizzare ciò che accade una volta stabilita la connessione. Ad esempio, è possibile personalizzare solo il caso in cui il trascinamento si verifica da o a una classe specifica, tutti i casi regolamentati da una direttiva di connessione di collegamento o l'intero generatore di connessioni FlowBuilder. Per ognuna di queste opzioni, è possibile impostare flag personalizzati al livello appropriato. Quando si trasformano tutti i modelli e si tenta di compilare la soluzione, i messaggi di errore indirizzano l'utente ai commenti presenti nel codice generato. I commenti indicano ciò che è necessario fornire.
 
@@ -204,7 +204,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  ![Generatore di connessioni](../modeling/media/connectionbuilder-3.png "ConnectionBuilder_3")
 
- È possibile specificare che una connessione può provenire da un componente annidato a un elemento OutPort. Per specificare tale connessione, è necessario impostare **Usa l'accettazione personalizzata** per il tipo **InPort** come ruolo di origine e per il tipo **OutPort** come ruolo di destinazione nella finestra **Dettagli DSL** come illustrato nelle figure seguenti:
+ È possibile specificare che una connessione può provenire da un componente annidato a un elemento OutPort. Per specificare una connessione di questo tipo, è necessario impostare **utilizza Accept personalizzato** per il tipo **InPort** come ruolo di origine e il tipo di **OutPort** come ruolo di destinazione nella finestra **Dettagli DSL** , come illustrato nelle illustrazioni seguenti:
 
  **Direttiva di connessione di collegamento in DSL Explorer**
 

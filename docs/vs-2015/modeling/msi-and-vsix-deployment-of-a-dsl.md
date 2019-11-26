@@ -56,7 +56,7 @@ ms.locfileid: "74297734"
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Per disinstallare un linguaggio DSL installato tramite VSX
 
-1. Nel menu **Strumenti** fare clic su **Gestione estensioni**.
+1. Scegliere **Gestione estensioni**dal menu **strumenti** .
 
 2. Espandere **Estensioni installate**.
 
@@ -91,9 +91,9 @@ ms.locfileid: "74297734"
 
    - In DSL Explorer fare clic sul nodo radice e in Finestra Proprietà rivedere:
 
-       - description
+       - Descrizione
 
-       - Version
+       - di destinazione
 
    - Fare clic sul nodo **Editor** e nella finestra Proprietà fare clic **sull'icona**. Impostare il valore in modo che faccia riferimento a un file di icona in **DslPackage\Resources**, ad esempio **file. ico**
 
@@ -105,7 +105,7 @@ ms.locfileid: "74297734"
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] creerà un file denominato **CreateMsiSetupProject. vdproj**.
 
-6. In Esplora risorse, la copia Dsl\\\*.vdproj in una nuova cartella denominata il programma di installazione.
+6. In Esplora risorse copiare DSL\\*. vdproj in una nuova cartella denominata setup.
 
     Se lo si desidera, è ora possibile escludere CreateMsiSetupProject.tt dal progetto DSL.
 
@@ -121,7 +121,7 @@ ms.locfileid: "74297734"
 
 10. In Esplora risorse individuare il file MSI compilato nel progetto di installazione.
 
-     Copiare il file MSI in un computer in cui si vuole installare il linguaggio DSL. Fare doppio clic sul file MSI. Viene eseguito il programma di installazione.
+     Copiare il file MSI in un computer in cui si vuole installare il linguaggio DSL. Fare doppio clic sul file MSI. Il programma di installazione verrà eseguito.
 
 11. Nel computer di destinazione, creare un nuovo file con l'estensione di file del linguaggio DSL. Verificare che:
 

@@ -23,7 +23,7 @@ ms.locfileid: "74299293"
 
 Per semplificare la creazione di un elemento o di un gruppo di elementi in base a un modello usato di frequente, è possibile aggiungere nuovi strumenti alla casella degli strumenti dei diagrammi di modellazione in Visual Studio. È possibile distribuire questi elementi della casella degli strumenti ad altri utenti di Visual Studio.
 
- Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Uno strumento personalizzato crea uno o più nuovi elementi in un diagramma. Ad esempio, è possibile creare uno strumento personalizzato per creare gli elementi seguenti:
 
@@ -42,7 +42,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
     - Questi elementi possono presentare relazioni tra loro e possono contenere elementi sussidiari quali porte, attributi, operazioni o PIN.
 
-2. Salvare il diagramma usando il nome che si desidera assegnare al nuovo strumento. Nel menu **File** usare **Salva con nome**.
+2. Salvare il diagramma usando il nome che si desidera assegnare al nuovo strumento. Scegliere Salva dal menu **file** **... Come**.
 
 3. Usando Esplora risorse, copiare i due file diagramma nella cartella seguente o in qualsiasi sottocartella:
 
@@ -129,14 +129,14 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 |---------------|-------------|
 |displayName|Il nome dell'elemento della casella degli strumenti.|
 |tabName|La scheda casella degli strumenti in cui l'elemento verrà visualizzato. È possibile specificare il nome della scheda standard per questo tipo di diagramma o un nome distinto.|
-|immagine|Il percorso del file bitmap ( **. bmp**), che deve avere altezza e larghezza pari a 16 e una profondità di colore di 24 bit.|
+|image|Il percorso del file bitmap ( **. bmp**), che deve avere altezza e larghezza pari a 16 e una profondità di colore di 24 bit.|
 |f1Keyword|La parola chiave che individua un argomento della Guida.|
-|descrizione comando|Una descrizione comandi per questo strumento.|
+|descrizione comandi|Una descrizione comandi per questo strumento.|
 
  È possibile modificare il file bitmap in Visual Studio e impostare l'altezza e larghezza su 16 nella finestra Proprietà.
 
 > [!NOTE]
-> Se si inizia a usare un file con estensione tbxinfo dopo qualche esperimento con l'utilizzo dei file diagramma in modo autonomo, si noterà che la casella degli strumenti contiene le versioni vecchie e nuove di un elemento della casella degli strumenti. È possibile che ciò si verifichi anche se il nome del file diagramma è stato digitato in modo errato nel file con estensione tbxinfo. In questo caso, nel menu di scelta rapida della casella degli strumenti scegliere **Reimposta Casella degli strumenti**. Gli elementi della casella degli strumenti personalizzata verranno rimossi. Riavviare Visual Studio e verranno visualizzati gli elementi personalizzati corretti.
+> Se si inizia a usare un file con estensione tbxinfo dopo qualche esperimento con l'utilizzo dei file diagramma in modo autonomo, si noterà che la casella degli strumenti contiene le versioni vecchie e nuove di un elemento della casella degli strumenti. È possibile che ciò si verifichi anche se il nome del file diagramma è stato digitato in modo errato nel file con estensione tbxinfo. In tal caso, scegliere **Reimposta casella**degli strumenti dal menu di scelta rapida della casella degli strumenti. Gli elementi della casella degli strumenti personalizzata verranno rimossi. Riavviare Visual Studio e verranno visualizzati gli elementi personalizzati corretti.
 
 ## <a name="Extension"></a>Come distribuire elementi della casella degli strumenti in un'estensione di Visual Studio
  È possibile distribuire gli elementi della casella degli strumenti ad altri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utenti creandone un pacchetto in un'estensione di Visual Studio (VSIX). È possibile comprimere comandi, profili e altre estensioni nello stesso file VSIX. Per ulteriori informazioni, vedere [distribuzione delle estensioni di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
@@ -155,13 +155,13 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
      Aprire un nuovo progetto di estensione di Visual Studio.
 
-    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+    1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
-    2. Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#** , **Extensibility**, **Progetto VSIX** in **Modelli installati**.
+    2. Nella finestra di dialogo **nuovo progetto** , in **modelli installati**, scegliere **Visual C#** , **Extensibility**, **progetto VSIX**.
 
 4. Aggiungere le definizioni della casella degli strumenti al progetto. Includere il file con **estensione tbxinfo** , i file di diagramma, i file bitmap e tutti i file di risorse e assicurarsi che siano inclusi in VSIX.
 
-    - A tale scopo, in Esplora soluzioni dal menu di scelta rapida del progetto VSIX scegliere **Aggiungi** e quindi **Nuovo elemento**. Nella finestra di dialogo impostare **Oggetti di tipo: Tutti i file**. Individuare i file, selezionarli tutti e quindi scegliere **Aggiungi**.
+    - In Esplora soluzioni scegliere **Aggiungi**, **elemento esistente**dal menu di scelta rapida del progetto VSIX. Nella finestra di dialogo impostare **oggetti di tipo: tutti i file**. Individuare i file, selezionarli tutti, quindi scegliere **Aggiungi**.
 
         > [!NOTE]
         > In questo progetto non è possibile aprire i file del diagramma nell'editor del modello.
@@ -176,9 +176,9 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 6. Aprire **source.extension.vsixmanifest**. Viene aperto nell'editor del manifesto dell'estensione.
 
-7. In **metadati** aggiungere una descrizione per gli strumenti personalizzati.
+7. In **metadati**aggiungere una descrizione per gli strumenti personalizzati.
 
-     In **Asset** scegliere **Nuovo** e impostare i campi nella finestra di dialogo nel modo seguente:
+     In **Asset**scegliere **nuovo** e quindi impostare i campi nella finestra di dialogo come segue:
 
     - **Digitare** = **tipo di estensione personalizzato**
 
@@ -191,7 +191,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
     - **Path** = il file con **estensione tbxinfo** , ad esempio, **strumenti. tbxinfo**
 
-8. Compilare il progetto.
+8. Compilazione del progetto.
 
 9. **Per verificare il funzionamento dell'estensione**, premere F5. Viene avviata l'istanza sperimentale di Visual Studio.
 
@@ -205,7 +205,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 
 2. Scegliere **Installa** nella finestra di dialogo visualizzata.
 
-3. Per disinstallare o disabilitare temporaneamente l'estensione, aprire **Estensioni e aggiornamenti** dal menu **Strumenti**.
+3. Per disinstallare o disabilitare temporaneamente l'estensione, aprire **estensioni e aggiornamenti** dal menu **strumenti** .
 
 ## <a name="localization"></a>Localizzazione
  È possibile creare un'estensione che, quando viene installata su un altro computer, verranno visualizzati i nomi dello strumento e le descrizioni comandi nella lingua del computer di destinazione.
@@ -231,7 +231,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 ## <a name="other-toolbox-operations"></a>Altre operazioni della casella degli strumenti
  Normalmente, in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], è possibile personalizzare la casella degli strumenti rinominando gli strumenti, spostandoli in altre schede della casella degli strumenti ed eliminandoli. Queste modifiche non vengono mantenute per gli strumenti di modellazione personalizzati creati con le procedure descritte in questo argomento. Quando si riavvia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], gli strumenti personalizzati verranno visualizzati nuovamente con i nomi e i percorsi definiti della casella degli strumenti.
 
- Inoltre, gli strumenti personalizzati verranno nascosti se si esegue il comando **Reimposta Casella degli strumenti**. Verranno però visualizzati nuovamente quando si riavvia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+ Inoltre, gli strumenti personalizzati scompariranno se si esegue il comando **Reimposta casella degli strumenti** . Verranno però visualizzati nuovamente quando si riavvia [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
 ## <a name="see-also"></a>Vedere anche
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md) [definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md) [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md)

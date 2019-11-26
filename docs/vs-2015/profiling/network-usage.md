@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297906"
 ---
-# <a name="network-usage"></a>Utilizzo della rete
+# <a name="network-usage"></a>Utilizzo rete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.  
@@ -29,7 +29,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 ## <a name="collecting-network-tool-data"></a>Raccolta dei dati dello strumento di rete  
  È consigliabile eseguire lo strumento **Rete** con un progetto di Visual Studio aperto nel computer di Visual Studio.  
   
-1. Aprire il progetto in Visual Studio.  
+1. Apri il progetto in Visual Studio.  
   
 2. Nel menu fare clic su **debug/Profiler prestazioni...** . Scegliere **rete**, quindi scegliere **Avvia**.  
   
@@ -46,7 +46,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 ## <a name="analyzing-data"></a>Analisi dei dati  
  È possibile analizzare il traffico HTTP acquisito mentre l'applicazione è in esecuzione o anche dopo che l'applicazione è stata chiusa, selezionando una delle operazioni di rete visualizzate nella visualizzazione di riepilogo.  
   
- Nella visualizzazione di riepilogo di **Rete** sono visualizzati i dati relativi a ogni operazione di rete nell’esecuzione dell’app. Scegliere un'intestazione di colonna per ordinare l'elenco oppure scegliere i tipi di contenuto da visualizzare nella visualizzazione del filtro **Tipo di contenuto**.  
+ Nella visualizzazione di riepilogo dello strumento **Rete** sono visualizzati i dati relativi alle singole operazioni di rete che si sono verificate durante l'esecuzione dell'app. Scegliere un'intestazione di colonna per ordinare l'elenco oppure scegliere i tipi di contenuto da visualizzare nella visualizzazione del filtro **Tipo di contenuto**.  
   
  Scegliere **Salva come HAR** per creare un file JSON utilizzabile da strumenti di terze parti come Fiddler.  
   
@@ -62,7 +62,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 |**Cookie**|Dati relativi ai cookie di richiesta e risposta.|  
 |**Intervalli**|Grafico delle fasi di acquisizione delle risorse selezionate.|  
   
- La barra di **riepilogo** di Rete indica il numero di operazioni di rete visualizzate in qualsiasi punto, la quantità di dati trasferita, il tempo impiegato per il download e il numero di errori (richieste con risposte 4xx o 5xx) visibili.  
+ La barra di **riepilogo** dello strumento Rete indica il numero di operazioni di rete visualizzate in un determinato momento, la quantità di dati trasferita, il tempo impiegato per il download e il numero di errori (richieste con risposte 4xx o 5xx) visibili.  
   
 ### <a name="analysis-tips"></a>Suggerimenti sull’analisi  
  Questo strumento evidenzia determinate aree che possono essere utili quando si esegue l’analisi correlata alla rete:  

@@ -20,7 +20,7 @@ ms.locfileid: "74302051"
 
 In questa procedura dettagliata verrà creata una semplice applicazione Windows Presentation Foundation (WPF) per dimostrare come creare, modificare e gestire un test codificato dell'interfaccia utente. Nella procedura dettagliata vengono fornite le soluzioni per correggere i test interrotti da vari problemi di temporizzazione e dal refactoring del controllo.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per la procedura dettagliata è necessario il seguente componente:
 
 - Visual Studio Enterprise
@@ -29,7 +29,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 1. Nel menu **FILE** scegliere **Nuovo** e quindi selezionare **Progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
+     Viene visualizzata la finestra di dialogo **Nuovo progetto**.
 
 2. Nel riquadro **Installato** espandere **Visual C#** e quindi selezionare **Windows Desktop**.
 
@@ -139,9 +139,9 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
      Viene visualizzata la finestra di dialogo **Genera codice per test codificato dell'interfaccia utente**.
 
-7. Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e scegliere **OK**.
+7. Selezionare l'opzione **Registra azioni, modifica mappa dell'interfaccia utente o aggiungi asserzioni** e fare clic su **OK**.
 
-     La finestra UIMap – Generatore di test codificato dell'interfaccia utente è visualizzata e Visual Studio è ridotto a icona.
+     La finestra UIMap – Generatore di test codificato dell'interfaccia utente viene visualizzata e Visual Studio viene ridotto al minimo.
 
      Per altre informazioni sulle opzioni disponibili nella finestra di dialogo, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -368,7 +368,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="videos"></a>Video
+### <a name="videos"></a>Videos
  ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-Episode1-GettingStarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
  ![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") [test codificati dell'interfaccia utente video-Deepdive-episode2-MaintainenceAndDebugging](https://go.microsoft.com/fwlink/?LinkID=230574)
@@ -378,7 +378,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 ### <a name="hands-on-lab"></a>Lab pratico
  [Lab virtuale MSDN: Introduzione alla creazione di test codificati dell'interfaccia utente con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
 
-### <a name="faq"></a>Domande frequenti
+### <a name="faq"></a>DOMANDE FREQUENTI
  [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://go.microsoft.com/fwlink/?LinkID=230578)

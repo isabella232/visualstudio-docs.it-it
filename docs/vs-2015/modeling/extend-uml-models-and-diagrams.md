@@ -22,7 +22,7 @@ ms.locfileid: "74301038"
 # <a name="extend-uml-models-and-diagrams"></a>Estendere modelli e diagrammi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questo argomento sono riepilogati i diversi modi in cui è possibile estendere gli strumenti di modellazione UML di Visual Studio. Per informazioni sulle versioni di Visual Studio supportano ogni tipo di modello e strumento, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+In questo argomento sono riepilogati i diversi modi in cui è possibile estendere gli strumenti di modellazione UML di Visual Studio. Per individuare le versioni di Visual Studio che supportano i singoli tipi di modello e strumenti, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
  Nello scenario di esempio seguente Fabrikam progetta e installa sistemi di gestione bagagli in aeroporto. I progetti di diversi aeroporti presentano molte analogie in termini di attrezzatura di base e software che la controlla. Vi sono però anche molti fattori che variano notevolmente, come la configurazione dei nastri trasportatori, i banchi del check-in, i contenitori di stoccaggio e altre apparecchiature per la gestione dei bagagli.
 
@@ -50,7 +50,7 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
 
  Per altre informazioni, vedere [definire un elemento personalizzato della casella degli strumenti di modellazione](../modeling/define-a-custom-modeling-toolbox-item.md).
 
-## <a name="validation"></a>Convalida
+## <a name="validation"></a>Validation
  È possibile definire regole per assicurarsi che un modello UML sia conforme ai vincoli specificati.
 
  Gli sviluppatori di strumenti di Fabrikam definiscono regole per evitare ai membri del team di commettere semplici errori nei modelli di gestione dei bagagli. Ad esempio, un banco del check-in non può essere connesso direttamente al contenitore di stoccaggio, ma tra essi deve esserci almeno un nastro trasportatore.
@@ -111,10 +111,10 @@ In questo argomento sono riepilogati i diversi modi in cui è possibile estender
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Category**|**Links**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Videos**|![collegamento a video sulle serie di](../data-tools/media/playvideo.gif "PlayVideo") [procedure MSDN: strumenti ed estendibilità UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Video**|![collegamento a video sulle serie di](../data-tools/media/playvideo.gif "PlayVideo") [procedure MSDN: strumenti ed estendibilità UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)|
 

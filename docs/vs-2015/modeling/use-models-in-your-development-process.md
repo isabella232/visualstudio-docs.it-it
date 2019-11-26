@@ -23,7 +23,7 @@ ms.locfileid: "74298260"
 
 In Visual Studio è possibile usare un modello che consenta di comprendere e modificare un sistema, un'applicazione o un componente. Un modello consente di visualizzare l'ambiente in cui opera il sistema, chiarire le esigenze degli utenti, definire l'architettura del sistema, analizzare il codice e assicurarsi che soddisfi i requisiti. Vedere [video di Channel 9: migliorare l'architettura tramite la modellazione](https://go.microsoft.com/fwlink/?LinkID=252078).
 
- Per informazioni sulle versioni di Visual Studio che supportano questo tipo di modello, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per vedere quali versioni di Visual Studio supportano ogni tipo di modello, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="how-to-use-models"></a>Come usare i modelli
  I modelli possono essere di supporto all'utente in vari modi:
@@ -122,7 +122,7 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 
 |Livello di progettazione|Tipi di diagramma|
 |------------------|-------------------|
-|Processo aziendale<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi di attività descrivono il flusso di lavoro tra gli utenti e i sistemi per raggiungere gli obiettivi aziendali.<br />-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
+|Processo di business<br /><br /> Le informazioni sul contesto in cui verrà usato il sistema consentono di comprendere quali sono le esigenze degli utenti.|-I diagrammi di attività descrivono il flusso di lavoro tra gli utenti e i sistemi per raggiungere gli obiettivi aziendali.<br />-I diagrammi classi concettuali descrivono i concetti aziendali utilizzati all'interno del processo di business.|
 |Requisiti utente<br /><br /> La definizione di ciò che gli utenti richiedono al sistema.|-I diagrammi caso di utilizzo riepilogano le interazioni tra gli utenti e altri sistemi esterni con il sistema che si sta sviluppando. È possibile associare altri documenti per ogni caso di utilizzo per descriverlo in dettaglio.<br />-I diagrammi classi UML descrivono i tipi di informazioni comunicate dagli utenti e dal sistema.<br />-Le regole di business e i requisiti di qualità del servizio possono essere descritti in documenti distinti.|
 |Progettazione ad alto livello<br /><br /> La struttura generale del sistema: i componenti principali e la modalità con cui vengono accoppiati.|-I diagrammi livello descrivono il modo in cui il sistema viene strutturato in parti interdipendenti. È possibile convalidare il codice di programma con i diagrammi livello per assicurarsi che sia conforme all'architettura.<br />-I diagrammi dei componenti mostrano le interfacce delle parti, specificando i messaggi e i servizi forniti e richiesti da ogni componente.<br />-I diagrammi di sequenza mostrano come i componenti comunicano per implementare ogni caso d'uso.<br />-I diagrammi classi UML descrivono le interfacce dei componenti e i tipi di dati passati tra i componenti.|
 |Schemi progettuali<br /><br /> Convenzioni e metodi di risoluzione dei problemi di progettazione che vengono usati in tutte le parti della progettazione|-I diagrammi classi UML descrivono le strutture di un modello<br />-I diagrammi di sequenza o di attività mostrano le interazioni e gli algoritmi|
@@ -130,10 +130,10 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Category**|**Links**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Videos**|![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") video sulle procedure per I video su [MSDN: come creare e usare I modelli e I diagrammi UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![collegamento a video sulle serie di informazioni su](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: strumenti ed estendibilità UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Video**|![collegamento ai](../data-tools/media/playvideo.gif "PlayVideo") video sulle procedure per I video su [MSDN: come creare e usare I modelli e I diagrammi UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![collegamento a video sulle serie di informazioni su](../data-tools/media/playvideo.gif "PlayVideo") [MSDN: strumenti ed estendibilità UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blog**|[Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 

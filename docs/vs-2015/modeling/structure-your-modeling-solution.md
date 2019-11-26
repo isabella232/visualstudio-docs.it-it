@@ -26,7 +26,7 @@ Per iniziare rapidamente un progetto o un sottoprogetto, è utile avere un model
 
 Questo argomento presuppone che si lavori su un progetto abbastanza grande per richiedere la collaborazione di più membri del team ed eventualmente di più team. Il codice e i modelli del progetto sono archiviati in un sistema di controllo del codice sorgente quale [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Almeno alcuni membri del team usano Visual Studio per sviluppare i modelli, mentre altri membri possono visualizzarli con altre versioni di Visual Studio.
 
-Per informazioni sulle versioni di Visual Studio che supportano ogni strumento e funzionalità di modellazione, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per individuare le versioni di Visual Studio che supportano ogni strumento e funzionalità di modellazione, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Struttura della soluzione
 
@@ -40,7 +40,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
     Aggiungere un diagramma livello alla soluzione. Nel diagramma livello tracciare l'architettura scelta per l'applicazione. Ad esempio, il diagramma potrebbe mostrare i seguenti livelli con le reciproche dipendenze: presentazione, logica di business e dati.
 
-    È possibile creare contemporaneamente il diagramma livello e una nuova soluzione di Visual Studio tramite il comando **Nuovo diagramma livello o UML** dal menu **Architettura**.
+    È possibile creare contemporaneamente il diagramma livello e una nuova soluzione di Visual Studio usando il comando **nuovo diagramma livello o UML** nel menu **architettura** .
 
 3. Aggiungere al modello Architecture i diagrammi UML che rappresentano i concetti aziendali più importanti e i casi di utilizzo ai quali viene fatto riferimento nella progettazione di tutti i livelli.
 
@@ -60,7 +60,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
     A questo punto è disponibile un modello per ogni livello, oltre a un modello per l'architettura dell'applicazione. Ogni modello è contenuto in una soluzione separata. In questo modo, i membri del team possono lavorare contemporaneamente sugli stessi livelli.
 
-2. Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi e quindi fare clic su **Progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.
+2. Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi, quindi fare clic su **progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.
 
     Ogni modello è ora visibile in due soluzioni: la relativa soluzione principale e la soluzione Architecture.
 
@@ -80,9 +80,9 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>Per usare un pacchetto separato per ogni livello
 
-1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi** e quindi fare clic su **Progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
+1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
 
-2. Nel modello UML condiviso creare un pacchetto per ogni livello. In Esplora soluzioni selezionare il progetto di modello. In Esplora modelli UML fare clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi** e quindi fare clic su **Pacchetto**.
+2. Nel modello UML condiviso creare un pacchetto per ogni livello. In Esplora soluzioni selezionare il progetto di modello. In Esplora modelli UML fare clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi**, quindi fare clic su **pacchetto**.
 
     Ogni pacchetto conterrà i diagrammi UML che descrivono i requisiti e la progettazione del livello corrispondente.
 
@@ -104,7 +104,7 @@ Ad esempio, se si usano spesso soluzioni con livelli presentazione, aziendale e 
 
 2. Creare la struttura della soluzione da usare come punto di partenza per i progetti futuri.
 
-3. Scegliere **Esporta modello come VSIX** dal menu **File**. Verrà aperta l'**Esportazione guidata modello come VSIX**.
+3. Scegliere **Esporta modello come VSIX** dal menu **File**. Si apre la **procedura guidata Esporta modello come VSIX** .
 
 4. Seguendo le istruzioni della procedura guidata, selezionare i progetti da includere nel modello, fornire un nome e una descrizione per il modello e specificare un percorso di output.
 

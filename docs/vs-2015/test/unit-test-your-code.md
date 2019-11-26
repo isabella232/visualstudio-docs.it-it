@@ -41,7 +41,7 @@ Gli unit test rappresentano per sviluppatori e tester un modo rapido per verific
 ## <a name="key-tasks"></a>Attività chiave
  Usare gli argomenti seguenti per la comprensione e la creazione di unit test:
 
-|Attività|Argomenti correlati|
+|Attività|Argomenti associati|
 |-----------|-----------------------|
 |**Guide introduttive e procedure dettagliate:** usare gli argomenti seguenti per ottenere informazioni sugli unit test in Visual Studio da esempi di codice.|-   [Procedura dettagliata: Creazione ed esecuzione di unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Aggiunta di unit test alle applicazioni C++ esistenti](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [Unit test di codice nativo con Esplora test](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|
 |**Unit test con Esplora test:** informazioni su come Esplora test può agevolare la creazione di unit test più produttivi ed efficienti.|-   [Nozioni fondamentali sugli unit test](../test/unit-test-basics.md)<br />-   [Creare un progetto di unit test](../test/create-a-unit-test-project.md)<br />-   [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)<br />-   [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md)<br />-   [Aggiornamento di unit test da Visual Studio 2010](https://msdn.microsoft.com/9bb75856-f68a-4de2-a084-b08a947a1172)|
@@ -63,23 +63,23 @@ Gli unit test rappresentano per sviluppatori e tester un modo rapido per verific
 
  Fornisce collegamenti alle informazioni sull'utilizzo di Visual Studio rispetto all'utilizzo di  [!INCLUDE[TCMext](../includes/tcmext-md.md)] per eseguire test automatizzati.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Riferimento
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> descrive lo spazio dei nomi UnitTesting, che fornisce attributi, eccezioni, asserzioni e altre classi che supportano il testing unità.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> descrive lo spazio dei nomi UnitTesting. Web, che estende lo spazio dei nomi UnitTesting fornendo il supporto per [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e gli unit test del servizio Web.
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="videos"></a>Video
+### <a name="videos"></a>Videos
  [Channel 9: Unit testing your Windows Store apps built using XAML (Testing unità delle app di Windows Store scritte in XAML)](https://go.microsoft.com/fwlink/?LinkId=226285)
 
-### <a name="forums"></a>Forum
+### <a name="forums"></a>Forums
  [Visual Studio Unit Testing (Testing unità con Visual Studio)](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>Materiale sussidiario
  [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="reference"></a>Riferimenti
+### <a name="reference"></a>Riferimento
  [Indice dei contenuti relativi agli unit test](https://go.microsoft.com/fwlink/?LinkID=254719)
 
 ## <a name="see-also"></a>Vedere anche

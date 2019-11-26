@@ -1,5 +1,5 @@
 ---
-title: Remote Debugger Port Assignments | Microsoft Docs
+title: Assegnazioni delle porte del debugger remoto | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -48,10 +48,10 @@ In altre parole, il numero della porta assegnata al debugger remoto viene increm
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 64 bit
 ::: moniker range=">=vs-2019"
- When the 64-bit version of the remote debugger is started, it uses the main port (4024) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4025 (the main port number incremented by 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4024 e non la porta 4025.
+ Quando viene avviata la versione a 64 bit del debugger remoto, per impostazione predefinita viene usata la porta principale (4024).  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4025 (il numero di porta principale è stato incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4024 e non la porta 4025.
 ::: moniker-end
 ::: moniker range="vs-2017"
- When the 64-bit version of the remote debugger is started, it uses the main port (4022) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023 (the main port number incremented by 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4022 e non la porta 4023.
+ Quando viene avviata la versione a 64 bit del debugger remoto, per impostazione predefinita viene usata la porta principale (4022).  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4023 (il numero di porta principale è stato incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4022 e non la porta 4023.
 :::moniker-end
 
  Questa porta è configurabile dalla riga di comando: **Msvsmon /wow64port \<numero porta>** .

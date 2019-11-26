@@ -224,7 +224,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
 ```  
 
 #### <a name="BKMK_Versioning"></a> Elemento Version  
- Usare l'elemento `Version` per definire l'ambito delle visualizzazioni per moduli specifici e le versioni corrispondenti in modo da ridurre al minimo i conflitti di nome e usare visualizzazioni diverse per versioni diverse dei tipi. Di seguito è riportato un esempio:  
+ Usare l'elemento `Version` per definire l'ambito delle visualizzazioni per moduli specifici e le versioni corrispondenti in modo da ridurre al minimo i conflitti di nome e usare visualizzazioni diverse per versioni diverse dei tipi. Ad esempio:  
 
 ```xml  
 <Type Name="DirectUI::Border">  
@@ -336,7 +336,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
  ![Dati CStringt con visualizzatore StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
-> Si noti che l'espressione `{m_pszData,su}` include un identificatore di formato C++ `su` per visualizzare il valore come stringa Unicode. Per altre informazioni vedere [identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md).  
+> Si noti che l'espressione `{m_pszData,su}` include un identificatore di formato C++ `su` per visualizzare il valore come stringa Unicode. Per altre informazioni, vedere [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
 
 ### <a name="BKMK_Expand"></a> Expand  
  Il nodo `Expand` viene usato per personalizzare i figli del tipo visualizzato quando l'utente lo espande nelle finestre delle variabili. Accetta un elenco di nodi figlio che definiscono gli elementi figlio.  

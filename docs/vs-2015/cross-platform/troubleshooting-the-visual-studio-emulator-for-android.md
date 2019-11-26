@@ -15,7 +15,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297645"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Risoluzione dei problemi di Visual Studio Emulatore per Android
+# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Risoluzione dei problemi di Visual Studio Emulator per Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo argomento contiene informazioni che consentono di risolvere i problemi che possono verificarsi quando si utilizza Visual Studio emulatore Android.
@@ -23,7 +23,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 > [!WARNING]
 > Quando l'emulatore è installato, il programma di installazione verifica i prerequisiti per l'esecuzione del software. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti per l’installazione.
 
- Di seguito sono elencate le diverse sezioni di questo argomento:
+ In questo argomento sono contenute le seguenti sezioni.
 
 - [Prima di iniziare](#BeforeYouStart)
 
@@ -225,7 +225,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
 
      - Driver di protocollo LLDP Microsoft
 
-     - Driver dei / o mapping individuazione topologia livelli di collegamento
+     - Driver di I/O del mapping di individuazione topologia livelli di collegamento
 
      - Risponditore individuazione topologia livelli di collegamento
 

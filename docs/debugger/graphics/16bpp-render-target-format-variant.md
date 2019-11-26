@@ -1,5 +1,5 @@
 ---
-title: 16bpp Render Target Format Variant | Microsoft Docs
+title: Variante del formato di destinazione di rendering 16bpp | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -15,35 +15,35 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188583"
 ---
-# <a name="16-bpp-render-target-format-variant"></a>16 bpp Render Target Format Variant
+# <a name="16-bpp-render-target-format-variant"></a>Variante del formato di destinazione di rendering a 16 BPP
 Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazioni di rendering e i buffer nascosti.
 
 ## <a name="interpretation"></a>Interpretazione
- A render target or back buffer typically uses a 32 bpp (32 bits per pixel) format such as B8G8R8A8_UNORM. 32-bpp formats can consume a large amount of memory bandwidth. Because the B5G6R5_UNORM format is a 16-bpp format that's half the size of 32-bpp formats, using it can relieve pressure on memory bandwidth, but at the cost of reduced color fidelity.
+ Una destinazione di rendering o un buffer nascosto USA in genere un formato di 32 BPP (32 bit per pixel), ad esempio B8G8R8A8_UNORM. i formati 32-BPP possono utilizzare una grande quantità di larghezza di banda di memoria. Poiché il formato di B5G6R5_UNORM è un formato a 16 BPP che rappresenta la metà delle dimensioni dei formati 32-BPP, l'uso di tale formato può ridurre la pressione della larghezza di banda di memoria, ma a scapito della fedeltà dei colori ridotta.
 
- Se questa variante mostra un miglioramento notevole delle prestazioni, ciò potrebbe indicare un consumo eccessivo della larghezza di banda della memoria. You can gain significant performance improvement, especially when the profiled frame had a significant amount of overdraw or alpha-blending.
+ Se questa variante mostra un miglioramento notevole delle prestazioni, ciò potrebbe indicare un consumo eccessivo della larghezza di banda della memoria. È possibile ottenere un miglioramento significativo delle prestazioni, soprattutto quando il frame profilato ha una quantità significativa di Overcast o alfa-Blend.
 
-A 16-bpp render target format can reduce memory band with usage when your application has the following conditions:
-- Doesn't require high-fidelity color reproduction.
-- Doesn't require an alpha channel.
-- Doesn't often have smooth gradients (which are susceptible to banding artifacts under reduced color fidelity).
+Un formato di destinazione di rendering a 16 BPP può ridurre la banda di memoria con utilizzo quando l'applicazione presenta le condizioni seguenti:
+- Non richiede la riproduzione di colori ad alta fedeltà.
+- Non richiede un canale alfa.
+- Non dispone spesso di sfumature smussate, che sono soggette a bande di elementi con una fedeltà dei colori ridotta.
 
-Other strategies to reduce memory bandwidth include:
-- Reduce the amount of overdraw or alpha-blending.
-- Reduce the dimensions of the frame buffer.
-- Reduce dimensions of texture resources.
-- Reduce compressions of texture resources.
+Altre strategie per ridurre la larghezza di banda di memoria includono:
+- Ridurre la quantità di overblend o la fusione alfa.
+- Ridurre le dimensioni del buffer del frame.
+- Ridurre le dimensioni delle risorse di trama.
+- Ridurre le compressioni delle risorse di trama.
 
 Di norma, è necessario valutare i compromessi relativi alla qualità di immagine associati a ognuna di queste ottimizzazioni.
 
-Applications that are a part of a swap chain have a back buffer format (DXGI_FORMAT_B5G6R5_UNORM) that doesn't support 16 bpp. These swap chains are created by using `D3D11CreateDeviceAndSwapChain` or `IDXGIFactory::CreateSwapChain`. To work around this limitation, do the following steps:
-1. Create a B5G6R5_UNORM format render target by using `CreateTexture2D` and render to that target.
-2. Copy the render target onto the swap-chain backbuffer by drawing a full-screen quad with the render target as your source texture.
-3. Call Present on your swap chain.
+Le applicazioni che fanno parte di una catena di scambio hanno un formato di buffer nascosto (DXGI_FORMAT_B5G6R5_UNORM) che non supporta 16 BPP. Queste catene di scambio vengono create utilizzando `D3D11CreateDeviceAndSwapChain` o `IDXGIFactory::CreateSwapChain`. Per ovviare a questa limitazione, attenersi alla procedura seguente:
+1. Creare una destinazione di rendering del formato B5G6R5_UNORM usando `CreateTexture2D` ed eseguire il rendering su tale destinazione.
+2. Copiare la destinazione di rendering nel buffer a catena di scambio disegnando un quad a schermo intero con la destinazione di rendering come trama di origine.
+3. Chiamata presente nella catena di scambio.
 
-   If this strategy saves more bandwidth than is consumed by copying the render target to the swap-chain backbuffer, then rendering performance is improved.
+   Se questa strategia salva una maggiore larghezza di banda rispetto a quella utilizzata copiando la destinazione di rendering nel buffer nascosto della catena di scambio, le prestazioni di rendering risultano migliorate.
 
-   GPU architectures that use tiled rendering techniques can see significant performance benefits by using a 16 bpp frame buffer format. This improvement is because a larger portion of the frame buffer can fit in each tile's local frame buffer cache. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.
+   Le architetture GPU che usano tecniche di rendering affiancate possono avere vantaggi significativi in merito alle prestazioni usando un formato di buffer di frame a 16 BPP. Questo miglioramento è dovuto al fatto che una parte più ampia del buffer dei frame può adattarsi alla cache del buffer dei frame locale di ogni riquadro. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.
 
 ## <a name="remarks"></a>Note
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:
@@ -58,7 +58,7 @@ Applications that are a part of a swap chain have a back buffer format (DXGI_FOR
  Poiché il formato B5G6R5 non ha un canale alfa, il contenuto alfa non viene mantenuto da questa variante. Se il rendering dell'app richiede un canale alfa nella destinazione di rendering, non è possibile passare semplicemente al formato B5G6R5.
 
 ## <a name="example"></a>Esempio
- The **16 bpp Render Target Format** variant can be reproduced for render targets created by using `CreateTexture2D` by using code like this:
+ La variante del **formato di destinazione di rendering a 16 BPP** può essere riprodotta per le destinazioni di rendering create usando `CreateTexture2D` usando un codice simile al seguente:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

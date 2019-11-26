@@ -54,7 +54,7 @@ ID regola | DA0018 |
   
 - ottimizzazione dell'utilizzo delle risorse di memoria gestita da parte dell'applicazione  
   
-   oppure  
+   -oppure-  
   
 - esecuzione di procedure per limitare i vincoli architettonici alla dimensione massima della memoria virtuale per un processo a 32 bit  
   

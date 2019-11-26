@@ -24,7 +24,7 @@ Questa sezione descrive come installare Visual Studio Tools per Unity e configur
 > [!IMPORTANT]
 > Unity 5.2 aggiunge il supporto incorporato per Visual Studio Tools per Unity 2.1, che semplifica la configurazione dei progetti. Per usufruirne, è necessario disporre di Unity 5.2.0 o versioni successive in Windows e Visual Studio Tools per Unity 2.1 o versioni successive.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Prerequisiti  
  Per usare Visual Studio Tools per Unity, è necessario quanto segue:  
   
 - Una versione di **Visual Studio** che supporti le estensioni, come Visual Studio Community, Professional, Premium o Enterprise. È possibile scaricare gratuitamente Visual Studio Community  
@@ -71,9 +71,9 @@ Questa sezione descrive come installare Visual Studio Tools per Unity e configur
  [Esercitazioni – Pagina Unity Learn](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - Configurare l'editor di Unity per l'uso di Visual Studio Tools per Unity  
- Per abilitare il progetto per usare Visual Studio Tools per Unity, è sufficiente impostare Visual Studio come editor di script esterni. Nel menu principale dell'editor di Unity scegliere **Edit, Preferences**, quindi nella finestra di dialogo **Unity Preferences** scegliere **External Tools**. Impostare quindi la proprietà **External Script Editor** sulla versione di Visual Studio che si vuole usare (per questa versione di Visual Studio è necessario che sia installato Visual Studio Tools per Unity) e assicurarsi che sia impostata la proprietà **Editor Attaching**.  
+ Per abilitare il progetto per usare Visual Studio Tools per Unity, è sufficiente impostare Visual Studio come editor di script esterni. Nel menu principale dell'editor di Unity scegliere **Edit, Preferences** e quindi nella finestra di dialogo **Unity Preferences** scegliere **External Tools**. Impostare quindi la proprietà **External Script Editor** sulla versione di Visual Studio che si vuole usare (per questa versione di Visual Studio è necessario che sia installato Visual Studio Tools per Unity) e assicurarsi che sia impostata la proprietà **Editor Attaching**.  
   
- Per assicurarsi che il supporto incorporato per Visual Studio Tools per Unity sia abilitato, visualizzare la finestra di dialogo **About Unity**. Nel menu principale dell'editor di Unity scegliere **Help, About Unity**. Se Visual Studio Tools per Unity è installato e configurato correttamente, verrà visualizzato un messaggio nell'angolo inferiore sinistro della finestra di dialogo **About Unity**.  
+ Per assicurarsi che il supporto incorporato per Visual Studio Tools per Unity sia abilitato, visualizzare la finestra di dialogo **About Unity**. In the Unity editor, on the main menu, choose **Help, About Unity** . Se Visual Studio Tools per Unity è installato e configurato correttamente, verrà visualizzato un messaggio nell'angolo inferiore sinistro della finestra di dialogo **About Unity**.  
   
  Infine, assicurarsi di aver impostato una destinazione di compilazione nella pagina **Build Settings** e verificare che l'opzione **Script Debugging** sia abilitata.  
   
@@ -109,7 +109,7 @@ Questa sezione descrive come installare Visual Studio Tools per Unity e configur
  ![Aprire il progetto Unity in Visual Studio.](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   
 ## <a name="next-steps"></a>Passaggi successivi  
- Per informazioni su come utilizzare e il debug del progetto Unity in Visual Studio, vedere [utilizzando Visual Studio Tools per Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
+ Per informazioni sull'uso e sul debug di un progetto Unity in Visual Studio, vedere [Uso di Visual Studio Tools per Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Home page di Unity](https://unity.com/)

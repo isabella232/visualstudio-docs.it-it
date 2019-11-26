@@ -22,7 +22,7 @@ ms.locfileid: "74296060"
 # <a name="programming-with-the-uml-api"></a>Programmazione con l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'API UML di Visual Studio consente di scrivere codice per creare, leggere e aggiornare modelli e diagrammi UML. Per informazioni sulle versioni di Visual Studio che supportano modelli UML, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+L'API UML di Visual Studio consente di scrivere codice per creare, leggere e aggiornare modelli e diagrammi UML. Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Oltre alle pagine di riferimento dell'API, gli argomenti seguenti descrivono l'API.
 
@@ -51,13 +51,13 @@ L'API UML di Visual Studio consente di scrivere codice per creare, leggere e agg
 ## <a name="the-api-assemblies"></a>Assembly API
  In questa tabella sono riepilogati gli assembly che forniscono estensibilità per gli strumenti UML e gli spazi dei nomi che si consiglia di usare.
 
-|Assembly|Namespaces|Consente di accedere a:|
+|Assembly|Spazi dei nomi|Consente di accedere a:|
 |--------------|----------------|-------------------------|
-|Microsoft.VisualStudio.Uml.Interfaces|(Tutto)|Tipi UML.|
+|Microsoft.VisualStudio.Uml.Interfaces|(Tutte)|Tipi UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. ArchitectureTools. Extensibility. Uml|[Metodi di creazione](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagrammi e forme](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[Progetto di modello](../modeling/read-a-uml-model-in-program-code.md)|
-|Microsoft.VisualStudio.Modeling.Sdk.[versione]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Estensione del comando di menu](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Annullamento delle transazioni di collegamento](../modeling/link-uml-model-updates-by-using-transactions.md).|
+|Microsoft.VisualStudio.Modeling.Sdk.[versione]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Estensione del comando di menu](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Transazioni di annullamento collegate](../modeling/link-uml-model-updates-by-using-transactions.md).|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[Convalida](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(altri spazi dei nomi)|Opzione consigliata solo per utenti esperti.|
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versione]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[Gestori di movimento](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).|

@@ -30,7 +30,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
 - Chiamare `CaptureCurrentFrame`quando un problema di rendering è difficile da prevedere e acquisire nei test manuali, ma può essere previsto a livello di codice usando le informazioni sullo stato dell'app in fase di esecuzione.  
   
 ## <a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 8.1  
- Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice nelle app che usano l'API DirectX 11.2 su Windows 8.1, che usa il metodo di acquisizione affidabile. Per informazioni sull'utilizzo dell'acquisizione a livello di codice nelle app che usano versioni precedenti di DirectX in Windows 8.0, vedere [Acquisizione a livello di codice in Windows 8.0 e versioni precedenti](#CaptureDX11_1) più avanti in questa procedura dettagliata.  
+ Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice nelle app che usano l'API DirectX 11.2 su Windows 8.1, che usa il metodo di acquisizione affidabile. Per informazioni sull'acquisizione a livello di codice nelle app che usano versioni precedenti di DirectX in Windows 8.0, vedere [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) più avanti in questa procedura dettagliata.  
   
  Questa sezione illustra l'esecuzione delle attività seguenti:  
   
@@ -58,7 +58,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     ```  
   
     > [!IMPORTANT]
-    > Non includere il file di intestazione vsgcapture. h, che supporta l'acquisizione a livello di codice in Windows 8,0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app Windows 8.1. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo che è stata inclusa l'intestazione d3d11_2. h, il compilatore genera un avviso. Se vsgcapture. h è incluso prima di d3d11_2. h, l'app non verrà avviata.  
+    > Non includere il file di intestazione vsgcapture.h, che supporta l'acquisizione a livello di codice in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app Windows 8.1. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo che è stata inclusa l'intestazione d3d11_2. h, il compilatore genera un avviso. Se vsgcapture. h è incluso prima di d3d11_2. h, l'app non verrà avviata.  
   
     > [!NOTE]
     > Se nel computer è installata la versione di DirectX SDK del giugno 2010 e il percorso di inclusione del progetto contiene `%DXSDK_DIR%includex86`, spostarlo alla fine del percorso di inclusione. Eseguire la stessa operazione per il percorso della libreria.  
@@ -130,7 +130,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     ```  
   
 ## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
- Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice per Windows 8.0 e versioni precedenti che usano l'API DirectX 11.1, che usa il metodo di acquisizione legacy. Per informazioni sull'utilizzo dell'acquisizione a livello di codice nelle app che usano DirectX 11.2 in Windows 8.1, vedere [Acquisizione a livello di codice in Windows 8.1](#CaptureDX11_2) più avanti in questa procedura dettagliata.  
+ Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice per Windows 8.0 e versioni precedenti che usano l'API DirectX 11.1, che usa il metodo di acquisizione legacy. Per informazioni sull'acquisizione a livello di codice nelle app che usano DirectX 11.2 in Windows 8.1, vedere [Acquisizione a livello di codice in Windows 8.1](#CaptureDX11_2) in precedenza in questa procedura dettagliata.  
   
  Questa sezione illustra le attività seguenti:  
   
@@ -182,7 +182,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
    Se non si esegue questo passaggio, il file verrà denominato default.vsglog. Se `DONT_SAVE_VSGLOG_TO_TEMP`non è stato definito, il percorso del file è relativo alla directory temporanea. In caso contrario, è relativo alla directory di lavoro o a un'altra posizione se è stato specificato un nome file assoluto.  
   
-  Per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, il percorso della directory temporanea è specifico per ogni utente e app e si trova in genere in un percorso come C:\Users\\*nomeutente*\AppData\Local\Packages\\nome della *famiglia di pacchetti*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico per ogni utente e si trova in genere in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp\\.  
+  Per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, il percorso della directory temporanea è specifico per ogni utente e app e si trova in genere in un percorso come C:\Users\\*nomeutente*\AppData\Local\Packages\\nome della *famiglia di pacchetti*\TempState\\. Per le applicazioni desktop, il percorso della directory temporanea è specifico per ogni utente e in genere si trova in un percorso, ad esempio C:\Users\\*nomeutente*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 > Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che le app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] hanno più restrizioni rispetto alle app desktop sui percorsi in cui è possibile scrivere dati e che per scrivere in determinati percorsi può essere necessario eseguire operazioni di configurazione aggiuntive.  
@@ -191,7 +191,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
  Dopo aver preparato l'app per l'acquisizione a livello di codice e aver facoltativamente configurato il percorso e il nome del file di log della grafica, compilare l'applicazione ed eseguirla o eseguire il debug per acquisire i dati; non avviare la diagnostica grafica da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando si usa l'API di acquisizione a livello di codice. Il log di grafica viene scritto nel percorso specificato. Se si vuole conservare questa versione del log, spostarlo in un altro percorso. In caso contrario, verrà sovrascritto quando si esegue nuovamente l'app.  
   
 > [!TIP]
-> Quando si usa l'acquisizione a livello di codice, è comunque possibile acquisire informazioni grafiche manualmente premendo **STAMP** con l'app in stato attivo. Si può usare questa tecnica per acquisire informazioni grafiche aggiuntive, che non vengono acquisite dall'API di acquisizione a livello di codice.  
+> Quando si usa l'acquisizione a livello di codice, è comunque possibile acquisire informazioni grafiche manualmente premendo **STAMP**con l'app in stato attivo. Si può usare questa tecnica per acquisire informazioni grafiche aggiuntive, che non vengono acquisite dall'API di acquisizione a livello di codice.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche a livello di codice. Come passaggio successivo, prendere in considerare questa opzione:  

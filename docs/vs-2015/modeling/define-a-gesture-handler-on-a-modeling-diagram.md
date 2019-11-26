@@ -29,7 +29,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-gesture-handler"></a>Creazione di un gestore movimenti
  Per definire un gestore movimenti per una finestra di progettazione UML, è necessario creare una classe che definisca il comportamento del gestore movimenti e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX funge da contenitore che può installare il gestore. Esistono due metodi alternativi per definire un gestore movimenti:
@@ -56,7 +56,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 
 1. Creare un progetto Libreria di classi in una nuova soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o in una soluzione esistente.
 
-   1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+   1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
    2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.
 
@@ -322,7 +322,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
      Se l'oggetto di origine è un elemento UML trascinato da Esplora modelli UML o da un altro diagramma UML, fare riferimento a [ottenere gli elementi del modello UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 
 ### <a name="writing-the-code-of-the-methods"></a>Scrittura del codice dei metodi
- Per altre informazioni sulla scrittura del codice per la lettura e l'aggiornamento del modello, vedere [Programmazione con l'API UML](../modeling/programming-with-the-uml-api.md).
+ Per altre informazioni sulla scrittura del codice per la lettura e l'aggiornamento del modello, vedere [Programming with the UML API](../modeling/programming-with-the-uml-api.md).
 
  Per informazioni sull'accesso alle informazioni del modello in un'operazione di trascinamento, vedere [ottenere elementi del modello UML da IDataObject](../modeling/get-uml-model-elements-from-idataobject.md).
 

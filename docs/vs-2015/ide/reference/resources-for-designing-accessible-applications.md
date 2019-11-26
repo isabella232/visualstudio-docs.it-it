@@ -42,7 +42,7 @@ Usare i collegamenti seguenti per trovare informazioni sulle tecnologie che supp
 
 - [Console Accessibility](/previous-versions/windows/desktop/dnacc/console-accessibility) (Accessibilità alla console) In questo articolo tecnico vengono descritti gli eventi e le API usati per esporre la console in Windows XP per gli strumenti di accessibilità.
 
-## <a name="web-sites"></a>Siti Web
+## <a name="web-sites"></a>di Windows Azure Pack
 
 - [Procedura dettagliata: linee guida di accessibilità per l'utilizzo di controlli immagine, controlli menu e AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Questo argomento offre istruzioni dettagliate per includere i controlli di accessibilità in una pagina Web di esempio, nonché alcuni suggerimenti sulla progettazione di accessibilità per il Web.
 

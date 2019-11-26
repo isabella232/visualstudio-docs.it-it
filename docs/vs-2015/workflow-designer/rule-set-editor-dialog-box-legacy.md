@@ -21,42 +21,42 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302757"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
-In questo argomento viene descritto come usare la finestra di dialogo **Editor set di regole** in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Editor set di regole** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  La finestra di dialogo **Editor set di regole** viene utilizzata per creare e modificare i set di regole [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) , che vengono serializzati in un file con estensione rules.
 
 > [!NOTE]
-> Se si desidera aprire il file con estensione rules con **Editor XML con codifica**, chiudere prima la finestra di progettazione associata per il flusso di lavoro o attività.
+> Se si desidera aprire il file con estensione rules con l' **editor XML con codifica**, è innanzitutto necessario chiudere la finestra di progettazione associata per il flusso di lavoro o l'attività.
 
  Per informazioni su come accedere alla finestra di dialogo **Editor set di regole** , vedere [procedura: creare un set di regole PolicyActivity (legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
 > L'editor delle regole della [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] non supporta il multitargeting.
 
- La tabella seguente descrive gli elementi dell'interfaccia utente della finestra di dialogo **Editor set di regole**.
+ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente (UI) della finestra di dialogo **Editor set di regole** .
 
-|Elemento dell'interfaccia utente|description|
+|Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
 |**Aggiungi regola**|Aggiunge una nuova definizione della regola nuova nell’insieme di regole.|
-|**Elimina**|Elimina la regola selezionata dall’insieme di regole.|
+|**Eliminazione**|Elimina la regola selezionata dall’insieme di regole.|
 |**Concatenamento**|Specifica quale tipo di concatenamento diretto usare con l’insieme di regole. Le opzioni disponibili sono:<br /><br /> -   **concatenamento completo**, che specifica di usare tutti i meccanismi di concatenamento diretto: implicito, attribuzione di metodi ed esplicita usando una funzione **Update** .<br />-   **sequenziale**, che specifica di non usare alcun concatenamento diretto.<br />-   **solo l'aggiornamento esplicito**, che specifica di eseguire il concatenamento diretto solo per le azioni di **aggiornamento** .<br /><br /> Per ulteriori informazioni sul concatenamento diretto, vedere [utilizzo dell'attività PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).|
 |**Nome**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per nome.|
 |**Priorità**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per priorità.|
 |**Rivalutazione**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per tipo di rivalutazione.|
 |**Anteprima della regola**|Intestazione di colonna dell’elenco dell’insieme di regole. Fare clic per ordinare l'elenco di regole per anteprima di una condizione della regola e delle azioni.|
 |**Name:**|Immettere il nome della regola.|
-|**Priorità:**|Immettere una priorità per la regola. La priorità predefinita è 0.|
+|**Priorità**|Immettere una priorità per la regola. La priorità predefinita è 0.|
 |**Rivalutazione**|Specifica quale tipo di rivalutazione della regola usare con la regola. Le opzioni disponibili sono:<br /><br /> -   **sempre**, che fa sì che la regola venga rivalutata in base alle esigenze.<br />-   **mai**, in modo che la regola non venga mai rivalutata. In questo caso una regola viene eseguita solo una volta.|
 |**Active**|Selezionare per rendere attiva la regola.|
 |**Condizione**|Immettere un'espressione per la condizione della regola. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
 |**Azioni Then:**|Immettere l'espressione per azioni THEN. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
 |**Azioni else:**|Immettere l'espressione per azioni ELSE. Per informazioni sulla sintassi dell'espressione, vedere la sessione riguardante l’immissione di espressioni di condizioni e azioni in questa pagina.|
-|**OK**|Fare clic per salvare l’insieme di regole in un file con estensione rules.|
+|**Ok**|Fare clic per salvare l’insieme di regole in un file con estensione rules.|
 
  Per ulteriori informazioni sui set di regole, vedere [utilizzo dell'attività PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004).
 
 ## <a name="entering-condition-and-action-expressions"></a>Immissione di espressioni di condizioni e azioni
- Immettere espressioni per la Condizione e le azioni THEN ed ELSE come testo nelle rispettive caselle di testo nella finestra di dialogo **Editor dell’insieme di regole**. È possibile digitare **questo.** nell'editor per fare riferimento a campi, proprietà e metodi usati nel flusso di lavoro usando un menu di tipo IntelliSense. In alternativa, è possibile digitare direttamente il nome di un membro del flusso di lavoro. È possibile richiamare metodi statici sui tipi a cui viene fatto riferimento digitando il nome della classe seguito dal nome del metodo.
+ Immettere le espressioni per la condizione e le azioni Then e else come testo nelle rispettive caselle di testo nella finestra di dialogo **Editor set di regole** . È possibile digitare **questo.** nell'editor per fare riferimento a campi, proprietà e metodi usati nel flusso di lavoro usando un menu di tipo IntelliSense. In alternativa, è possibile digitare direttamente il nome di un membro del flusso di lavoro. È possibile richiamare metodi statici sui tipi a cui viene fatto riferimento digitando il nome della classe seguito dal nome del metodo.
 
  È possibile aggiungere operatori logici alla condizione, ad esempio E, O e NON. È anche possibile aggiungere predicati. Un predicato è composto da un operatore binario e due operandi. Gli operatori binari supportati sono = =, >, \<, > = e < =. Gli operandi supportati sono membri pubblici ai quali è stato assegnato un valore costante, una funzione aritmetica e un ambito.
 

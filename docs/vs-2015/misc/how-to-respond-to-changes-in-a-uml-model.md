@@ -17,7 +17,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74293393"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>Procedura: rispondere alle modifiche in un modello UML
-È possibile scrivere codice che viene eseguito ogni volta che si verifica una modifica in un modello UML in Visual Studio. Il codice risponderà allo stesso modo alle modifiche apportate direttamente dall'utente e a quelle apportate da altre estensioni di Visual Studio. Per informazioni sulle versioni di Visual Studio che supportano modelli UML, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+È possibile scrivere codice che viene eseguito ogni volta che si verifica una modifica in un modello UML in Visual Studio. Il codice risponderà allo stesso modo alle modifiche apportate direttamente dall'utente e a quelle apportate da altre estensioni di Visual Studio. Per individuare le versioni di Visual Studio che supportano i modelli UML, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!WARNING]
 > Queste tecniche non sono supportate dall'API UML e potrebbero non funzionare nelle prossime versioni di Visual Studio.

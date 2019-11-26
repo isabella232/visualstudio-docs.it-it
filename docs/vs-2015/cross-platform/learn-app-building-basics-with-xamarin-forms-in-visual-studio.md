@@ -71,7 +71,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
 
     - Aggiornare il campo **Versione** all' **Ultima versione stabile** disponibile.
 
-    - Fare clic su **Aggiorna**.
+    - Fare clic su **Update**.
 
          ![Aggiornamento del pacchetto NuGet Novell. Forms](../cross-platform/media/crossplat-xamarin-formsguide-4.png "CrossPlat Novell FormsGuide 4")
 
@@ -81,15 +81,15 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
 
     - Selezionare **Newtonsoft.Json**.
 
-    - Selezionare il progetto **WeatherApp**, che rappresenta l'unico progetto in cui è necessario installare il pacchetto.
+    - Selezionare il progetto **WeatherApp** , che rappresenta l'unico progetto in cui è necessario installare il pacchetto.
 
-    - Verificare che il campo **Versione** sia impostato su **Ultima versione stabile**.
+    - Verificare che il campo **Versione** sia impostato su **Ultima versione stabile** .
 
     - Fare clic su **Installa**.
 
     - ![Individuazione e installazione del pacchetto NuGet Newtonsoft. JSON](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Novell FormsGuide 5")
 
-5. Ripetere il passaggio 4 per trovare e installare il pacchetto **Microsoft.Net.Http**.
+5. Ripetere il passaggio 4 per trovare e installare il pacchetto **Microsoft.Net.Http** .
 
 6. Compilare la soluzione e verificare che non ci siano errori di compilazione.
 
@@ -232,7 +232,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
     </ContentPage>
     ```
 
-     Il nome del pulsante deve essere definito usando l'attributo **x:Name**, in modo che si possa fare riferimento al pulsante tramite il nome all'interno del file code-behind.
+     Il nome del pulsante deve essere definito usando l'attributo **x:Name** , in modo che si possa fare riferimento al pulsante tramite il nome all'interno del file code-behind.
 
 3. Per aggiungere un gestore eventi per l'evento **Selezionato** del pulsante per aggiornarne il testo, sostituire i contenuti di **WeatherPage.xaml.cs** con il codice seguente. Il codice postale "60601" può essere liberamente modificato.
 
@@ -279,7 +279,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
 
 1. Impostare il progetto **WeatherApp.Droid** come progetto di avvio facendo clic con il pulsante destro del mouse su di esso e selezionando **Imposta come progetto di avvio**.
 
-2. Nella barra degli strumenti di Visual Studio viene visualizzato **WeatherApp.Droid** come progetto di destinazione. Selezionare uno degli emulatori di Android per il debug e premere **F5**. Si consiglia di usare una delle opzioni di **VS Emulator**, che eseguirà l'app in Visual Studio Emulator per le opzioni Android.
+2. Nella barra degli strumenti di Visual Studio viene visualizzato **WeatherApp.Droid** come progetto di destinazione. Selezionare uno degli emulatori di Android per il debug e premere **F5**. Si consiglia di usare una delle opzioni di **VS Emulator** , che eseguirà l'app in Visual Studio Emulator per le opzioni Android.
 
      ![Selezione di una destinazione di debug dell'emulatore VS](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Novell FormsGuide 7")
 
@@ -382,7 +382,7 @@ Dopo aver eseguito i passaggi [Setup and install](../cross-platform/setup-and-in
 
     Si noti l'uso del tag **OnPlatform** in Xamarin.Forms. Il tag**OnPlatform** seleziona un valore della proprietà specifico per la piattaforma corrente in cui è in esecuzione l'app (vedere la sezione relativa alla [sintassi XAML esterna](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com). In questo caso, viene usato per impostare un colore del testo diverso per i campi dati: bianco in Android e Windows Phone, nero in iOS. **OnPlatform** può essere usato per qualsiasi proprietà e tipo di dati per apportare modifiche specifiche per la piattaforma in qualsiasi punto del file XAML. Nel file code-behind è possibile usare [Device.OnPlatform API](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) per lo stesso scopo.
 
-2. In **WeatherPage.xaml.cs** sostituire il gestore eventi **GetWeatherBtn_Clicked** con il codice seguente. Questo codice verifica che sia presente un codice postale nel campo di immissione, recupera i dati da tale codice, imposta il contesto di associazione dell'intera schermata sull'istanza Weather risultante, quindi imposta il testo del pulsante su "Cerca di nuovo". Ogni etichetta nell'interfaccia utente viene associata a una proprietà della classe Weather, quindi, quando si imposta il contesto di associazione della schermata su un'istanza **Weather** , le etichette vengono aggiornate automaticamente.
+2. In **WeatherPage.xaml.cs**sostituire il gestore eventi **GetWeatherBtn_Clicked** con il codice seguente. Questo codice verifica che sia presente un codice postale nel campo di immissione, recupera i dati da tale codice, imposta il contesto di associazione dell'intera schermata sull'istanza Weather risultante, quindi imposta il testo del pulsante su "Cerca di nuovo". Ogni etichetta nell'interfaccia utente viene associata a una proprietà della classe Weather, quindi, quando si imposta il contesto di associazione della schermata su un'istanza **Weather** , le etichette vengono aggiornate automaticamente.
 
    ```csharp
    private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

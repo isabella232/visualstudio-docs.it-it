@@ -36,7 +36,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
  Il resto di questa panoramica è una procedura dettagliata in cui vengono introdotte le operazioni di base per la creazione e l'utilizzo di un linguaggio specifico di dominio in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
 |||
@@ -58,7 +58,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
     ![Crea finestra di dialogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")
 
-4. Nella casella **nome** digitare **FamilyTree**. Fare clic su **OK**.
+4. Nella casella **nome** digitare **FamilyTree**. fare clic su **OK**.
 
     Viene aperta la **procedura guidata Domain-Specific Language** e viene visualizzato un elenco di soluzioni DSL del modello.
 
@@ -72,7 +72,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
    - Scegliere un'estensione non associata ad alcuna applicazione nel computer o in qualsiasi computer in cui si desidera installare il linguaggio DSL. Ad esempio, **docx** e **htm** sarebbero estensioni di file non accettabili.
 
-   - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic su **Start**, **Tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **Strumenti** e quindi **Reimposta l'istanza sperimentale di Microsoft Visual Studio 2010**.
+   - La procedura guidata avviserà se l'estensione immessa è in uso come DSL. Provare a usare un'estensione di file diversa. È anche possibile reimpostare l'istanza sperimentale di Visual Studio SDK per eliminare le precedenti finestre di progettazione sperimentali. Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**.
 
 7. Esaminare le altre pagine e quindi fare clic su **fine**.
 
@@ -101,7 +101,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 #### <a name="to-experiment-with-the-dsl"></a>Per sperimentare il linguaggio DSL
 
-1. Sulla barra degli strumenti di Esplora soluzioni fare clic su **Trasforma tutti i modelli**. Questa operazione Rigenera la maggior parte del codice sorgente da DslDefinition. DSL.
+1. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti Esplora soluzioni. Questa operazione Rigenera la maggior parte del codice sorgente da DslDefinition. DSL.
 
    > [!NOTE]
    > Quando si modifica DslDefinition. DSL, è necessario fare clic su **trasforma tutti i modelli** prima di ricompilare la soluzione. È possibile automatizzare questo passaggio. Per ulteriori informazioni, vedere [come automatizzare Transform All Templates](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
@@ -394,7 +394,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Per reimpostare l'istanza sperimentale di Visual Studio
 
-1. Fare clic su **Start**, **Tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **Strumenti** e quindi **Reimposta l'istanza sperimentale di Microsoft Visual Studio 2010**.
+1. Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**.
 
 2. Ricompilare eventuali DSLs sperimentali o altre estensioni [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sperimentali che si desidera comunque utilizzare.
 

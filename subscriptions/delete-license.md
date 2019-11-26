@@ -6,17 +6,17 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono eliminare le assegnazioni di sottoscrizione
-ms.openlocfilehash: 91959ef8e9acebb2c218b1edd33627caf1ccee1c
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 8cf90ef15939eec6ec142a076e4a064b9fde7147
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605616"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491564"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminare assegnazioni nelle sottoscrizioni di Visual Studio
 Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di Visual Studio, ad esempio quando lascia l'azienda, completa un progetto o passa a un nuovo incarico, è possibile rimuovere la sua sottoscrizione e assegnarla a un altro utente. Si noti che quando si riassegna una sottoscrizione, i vantaggi del sottoscrittore non vengono reimpostati.  Il nuovo utente sarà in grado di richiedere le chiavi non richieste e di visualizzare le chiavi richieste in precedenza, ma i limiti di attestazione **non** vengono reimpostati.
 
-## <a name="delete-a-subscription-assigment"></a>Eliminare l'assegnazione di una sottoscrizione
+## <a name="delete-a-subscription-assignment"></a>Eliminare un'assegnazione di sottoscrizione
 1. Fare clic sul nome del sottoscrittore che si desidera rimuovere. Per selezionare più sottoscrittori per la rimozione, tenere premuto il tasto **CTRL** e fare clic su ogni sottoscrittore che si desidera rimuovere, oppure premere **CTRL + A** per selezionare e rimuovere tutti i sottoscrittori. L'immagine seguente mostra tre sottoscrittori selezionati.
 2. Per eliminare i sottoscrittori selezionati, fare clic su **Elimina**.
 3. Quando viene visualizzato il messaggio che chiede di confermare l'eliminazione, fare clic su **OK**.

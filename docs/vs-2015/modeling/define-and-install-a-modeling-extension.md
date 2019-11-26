@@ -27,7 +27,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-modeling-extension-solution"></a>Creazione di una soluzione di estensione di modellazione
  Per definire un'estensione di modellazione, è necessario creare una soluzione contenente questi progetti:
@@ -42,7 +42,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Per creare un progetto di libreria di classi per comandi di menu, gestori di movimento o convalida
 
-1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
 2. In **Modelli installati**selezionare **Visual C#** o **Visual Basic**, quindi scegliere **Libreria di classi**.
 
@@ -58,7 +58,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
 3. Impostare il progetto VSIX come progetto di avvio della soluzione.
 
-    - In Esplora soluzioni scegliere **Imposta come progetto di avvio** dal menu di scelta rapida del progetto VSIX.
+    - In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.
 
 4. Aprire **source.extension.vsixmanifest**. Il file viene aperto nell'editor del manifesto.
 
@@ -74,10 +74,10 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
 
         |||
         |-|-|
-        |**Digitare** =|**Microsoft.VisualStudio.MefComponent**|
+        |**Digitare** =|**Microsoft. VisualStudio. MefComponent**|
         |**Source** =|**Progetto nella soluzione corrente**|
         | = di **progetto**|*Progetto di libreria di classi*|
-        |**Incorpora in questa cartella** =|*(empty)*|
+        |**Incorpora in questa cartella** =|*vuoto*|
 
          Per altri tipi di componente, vedere i collegamenti nella sezione successiva.
 

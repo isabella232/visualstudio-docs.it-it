@@ -46,9 +46,9 @@ Assicurarsi che l'app soddisfi i requisiti usando gli strumenti di architettura 
 
  Creare modelli con diversi livelli di dettaglio in tutto il ciclo di vita dell'applicazione nel contesto del processo di sviluppo. Tenere traccia di requisiti, attività, test case, bug e altre operazioni associate ai modelli collegando gli elementi del modello agli elementi di lavoro di Team Foundation Server e al piano di sviluppo. Vedere [scenario: modificare la progettazione con la visualizzazione e la modellazione](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
- Per informazioni sulle versioni di Visual Studio che supportano ciascuna funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
-## <a name="to"></a>A
+## <a name="to"></a>Per
 
 |||
 |-|-|
@@ -74,7 +74,7 @@ Assicurarsi che l'app soddisfi i requisiti usando gli strumenti di architettura 
 
 |||
 |-|-|
-|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Vedere anche
 

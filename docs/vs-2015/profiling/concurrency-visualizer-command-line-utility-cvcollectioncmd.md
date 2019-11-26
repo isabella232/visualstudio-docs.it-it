@@ -41,17 +41,17 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
   
  **CvCollectionCmd /?**  
   
-|Opzione|description|Parametri|Valori restituiti|  
+|Opzione|Descrizione|Parametri|Valori restituiti|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non è in corso alcuna raccolta, ma sono già state abilitate una o più delle sessioni [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
-|Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
-|Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
-|Detach|Arresta la raccolta.|Nessuno.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  
-|Analyze|Analizza la traccia specificata.|Percorso completo del file CVTrace.|0 se l'analisi è riuscita.<br /><br /> 1 se non è possibile avviare l'analisi poiché la traccia specificata è a livello di sistema, ma non è stato specificato alcun processo di destinazione.<br /><br /> 2 se non è possibile avviare l'analisi poiché la traccia specificata non è a livello di sistema ed è stato specificato un processo.<br /><br /> 3  se l'analisi non è riuscita poiché il processo specificato non è valido.<br /><br /> 4 se l'analisi non è riuscita poiché il file CVTrace specificato non è valido.|  
-|LaunchArgs|Specifica gli argomenti eseguibili di destinazione. Questa opzione è applicabile solo al comando Launch.|Argomenti da riga di comando per l'applicazione.|Nessuno.|  
-|Outdir|Specifica la directory in cui salvare i file di traccia. Applicabile ai comandi Launch e Attach.|Percorso di directory o percorso relativo.|Nessuno.|  
-|Process|Specifica il processo a cui connettersi quando si esegue il comando Attach o il processo in una traccia da analizzare quando si esegue il comando Analyze. Applicabile ai comandi Attach e Analyze.|PID o nome del processo.|Nessuno.|  
-|Config|Specifica il percorso del file di configurazione, se si vogliono impostazioni di raccolta diverse da quelle predefinite.   Applicabile ai comandi Launch, Attach e Analyze.|Percorso di directory o percorso relativo del file di configurazione XML.|Nessuno.|  
+|Query|Indica se è possibile avviare la raccolta.|Nessuna|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non è in corso alcuna raccolta, ma sono già state abilitate una o più delle sessioni [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
+|Avvio|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
+|Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
+|Detach|Arresta la raccolta.|Nessuno|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  
+|Analizza|Analizza la traccia specificata.|Percorso completo del file CVTrace.|0 se l'analisi è riuscita.<br /><br /> 1 se non è possibile avviare l'analisi poiché la traccia specificata è a livello di sistema, ma non è stato specificato alcun processo di destinazione.<br /><br /> 2 se non è possibile avviare l'analisi poiché la traccia specificata non è a livello di sistema ed è stato specificato un processo.<br /><br /> 3  se l'analisi non è riuscita poiché il processo specificato non è valido.<br /><br /> 4 se l'analisi non è riuscita poiché il file CVTrace specificato non è valido.|  
+|LaunchArgs|Specifica gli argomenti eseguibili di destinazione. Questa opzione è applicabile solo al comando Launch.|Argomenti da riga di comando per l'applicazione.|Nessuno|  
+|Outdir|Specifica la directory in cui salvare i file di traccia. Applicabile ai comandi Launch e Attach.|Percorso di directory o percorso relativo.|Nessuno|  
+|Processo|Specifica il processo a cui connettersi quando si esegue il comando Attach o il processo in una traccia da analizzare quando si esegue il comando Analyze. Applicabile ai comandi Attach e Analyze.|PID o nome del processo.|Nessuno|  
+|Config|Specifica il percorso del file di configurazione, se si vogliono impostazioni di raccolta diverse da quelle predefinite.   Applicabile ai comandi Launch, Attach e Analyze.|Percorso di directory o percorso relativo del file di configurazione XML.|Nessuno|  
   
 ## <a name="customizing-configuration-settings"></a>Personalizzazione delle impostazioni di configurazione  
  Se si usa CVCollectionCmd per raccogliere tracce e si vogliono personalizzare le impostazioni di raccolta, usare un file di configurazione per specificarle.  
@@ -64,7 +64,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 ### <a name="configuration-file-tags"></a>Tag del file di configurazione  
  Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:  
   
-|Tag|description|Valori|  
+|Tag|Descrizione|Valori|  
 |---------|-----------------|------------|  
 |Config|Delimita il file di configurazione complessivo.|Deve contenere gli elementi seguenti:<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|Specifica la versione principale del file di configurazione.|Deve essere 1 per progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Se è diverso da 1, l'utilità non funzionerà.|  
@@ -75,9 +75,9 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 |Marcatori|Include l'elenco di provider marcatori.|Può includere zero o più elementi MarkerProvider.|  
 |MarkerProvider|Specifica un singolo provider marcatori.|Deve contenere gli elementi seguenti:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Può includere questi elementi:<br /><br /> -   Categories<br />-   IsEnabled|  
 |Level|Imposta il livello di importanza di un MarkerProvider.|-   Basso<br />-   Normale<br />-   Alto<br />-   Critico<br />-   Tutto|  
-|GUID|Identificatore univoco globale del provider marcatori ETW.|Un valore GUID.|  
-|nome|Specifica la descrizione del provider marcatori.|Una stringa.|  
-|Categories|Specifica le categorie raccolte per il provider marcatori.|Stringa delimitata da virgole che include numeri o intervalli di numeri.|  
+|Guid|Identificatore univoco globale del provider marcatori ETW.|GUID.|  
+|Name|Specifica la descrizione del provider marcatori.|stringa.|  
+|Categorie|Specifica le categorie raccolte per il provider marcatori.|Stringa delimitata da virgole che include numeri o intervalli di numeri.|  
 |IsEnabled|Imposta un valore che determina se il provider marcatori è abilitato per la raccolta.|-   True<br />-   False|  
 |FilterConfig|Specifica l'elenco di opzioni di configurazione degli eventi ETW filtrati dalla raccolta.|Può includere gli elementi seguenti:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  
 |CollectClrEvents|Imposta un valore che determina se gli eventi CLR sono raccolti.|-   True<br />-   False|  

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 10/13/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio della rivista del codice incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099601"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491662"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Rivista di codice inclusa nelle sottoscrizioni di Visual Studio
 
@@ -39,13 +39,13 @@ Il processo di configurazione della sottoscrizione di CODE Magazine è semplice.
       > ![Dettagli della sottoscrizione di Magazine del codice](_img/vs-code-magazine/vs-code-magazine-details.png "Dettagli sottoscrizione e prezzo")
 6. Successivamente, sarà necessario fornire le informazioni sul Sottoscrittore e un indirizzo di recapito.  L'indirizzo di recapito è obbligatorio anche per le sottoscrizioni digitali, in quanto supporta l'evasione, la selezione dell'offerta e i processi di accesso digitale.
 7. Se l'utente si trova al di fuori del Stati Uniti e ha scelto di ricevere una sottoscrizione stampata, potrebbe essere richiesto di fornire un indirizzo di fatturazione e le informazioni di pagamento per coprire i costi di spedizione. 
-8. È possibile acconsentire esplicitamente al codice HTML newletter facendo clic sulla casella di controllo.
+8. È possibile acconsentire esplicitamente alla newsletter HTML del codice facendo clic sulla casella di controllo.
    > [!div class="mx-imgBorder"]
    > ![Informazioni sul Sottoscrittore della rivista del codice](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Informazioni sul Sottoscrittore e indirizzo di recapito")
 9. Fare clic su **Inserisci ordine** per completare la sottoscrizione.  
 Dopo aver completato l'ordine di sottoscrizione, viene visualizzata una pagina di conferma, che include un collegamento che è possibile usare per vedere quali problemi sono stati ricevuti: https://codemag.com/my/fulfillment. 
 
-## <a name="eligibility"></a>Idoneità
+## <a name="eligibility"></a>Eligibility
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  No          |

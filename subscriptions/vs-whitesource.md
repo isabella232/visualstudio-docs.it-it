@@ -37,8 +37,8 @@ ms.locfileid: "74174134"
 8. Dopo aver installato correttamente WhiteSource Bolt, tornare alla [pagina di attivazione](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate) e visualizzare il video per vedere come configurarlo. 
 9. Per altre informazioni, visita la [pagina delle domande frequenti](https://bolt.whitesourcesoftware.com/azure/faq/) su WhiteSource Bolt. 
 
-## <a name="eligibility"></a>Idoneità
-[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) is now available free in the [Visual Studio Marketplace. 
+## <a name="eligibility"></a>Eligibility
+Il [Bolt WhiteSource](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) è ora disponibile gratuitamente nell'[Visual Studio Marketplace. 
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con WhiteSource Bolt?  Chat con un rappresentante WhiteSource Bolt in tempo reale all'indirizzo https://www.whitesourcesoftware.com/vse_whitesource_bolt/

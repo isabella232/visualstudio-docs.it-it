@@ -57,12 +57,12 @@ Prima di entrare nei dettagli, ecco un elenco dei collegamenti richiesti più fr
 
  Di seguito è riportato l'elenco completo dei componenti personalizzati:
 
-|Set di funzionalità|Componenti|
+|Set di funzionalità|Components|
 |------------------|----------------|
 |**Aggiornamenti**|Visual Studio 2015 Update 3|
 |**Linguaggi di programmazione**|Visual C++<br />Visual F#<br />Python Tools per Visual Studio|
-|**Windows e sviluppo Web**|Strumenti di pubblicazione ClickOnce<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio (terze parti)<br />Kit di sviluppo di Silverlight<br />Strumenti per lo sviluppo di app universali di Windows<br />SDK e strumenti di Windows 10<br />Strumenti di Windows 8.1 e Windows Phone 8.0/8.1<br />SDK e strumenti di Windows 8.1|
-|**Sviluppo multipiattaforma per dispositivi mobili**|C#/.NET (Novell)<br />HTML/JavaScript (Apache Cordova)<br />Visual C++ Mobile Development per iOS/Android<br />Clang con Microsoft CodeGen|
+|**Windows e sviluppo Web**|Strumenti di pubblicazione ClickOnce<br />LightSwitch<br />Microsoft Office Developer Tools<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio (terze parti)<br />Kit di sviluppo Silverlight<br />Strumenti per lo sviluppo di app di Windows universale<br />SDK e strumenti di Windows 10<br />Strumenti per Windows 8.1 e Windows Phone 8.0/8.1<br />SDK e strumenti di Windows 8.1|
+|**Sviluppo multipiattaforma per dispositivi mobili**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Visual C++ Mobile Development per iOS/Android<br />Clang con Microsoft CodeGen|
 |**Strumenti comuni e Software Development Kit**|Android Native Development Kit (terze parti)<br /> Android SDK [terze parti]<br />API di installazione di Android SDK (terze parti)<br />Apache Ant (terze parti)<br /> Java SE Development Kit (terze parti)<br /> Joyent node. js (terze parti)|
 |**Strumenti comuni**|Git per Windows (terze parti)<br />Estensione GitHub per Visual Studio (terze parti)<br /> Strumenti di estendibilità in Visual Studio|
 
@@ -184,7 +184,7 @@ Prima di entrare nei dettagli, ecco un elenco dei collegamenti richiesti più fr
 
 ## <a name="relatedTopics"></a> Argomenti correlati
 
-|Titolo|description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Viene descritto come installare Visual Studio quando non si è connessi a Internet.
 |[Installare versioni affiancate di Visual Studio](../install/install-visual-studio-versions-side-by-side.md)|Vengono fornite informazioni sull'installazione di più versioni di Visual Studio nello stesso computer.|

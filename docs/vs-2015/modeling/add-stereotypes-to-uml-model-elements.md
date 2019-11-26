@@ -29,31 +29,31 @@ ms.locfileid: "74292327"
 
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Per collegare un profilo a un modello o a un pacchetto
 
-1. Aprire **Esplora modelli UML**. Scegliere **Finestre** dal menu **Architettura**, quindi fare clic su **Esplora modelli UML**.
+1. Aprire **Esplora modelli UML**. Scegliere **finestre**dal menu **architettura** , quindi fare clic su **Esplora modelli UML**.
 
 2. Individuare un pacchetto o un modello contenente tutti gli elementi a cui applicare gli stereotipi nel profilo.
 
 3. Fare clic con il pulsante destro del mouse sul pacchetto o sul modello, quindi scegliere **Proprietà**.
 
-4. Nella finestra **Proprietà** impostare la proprietà **Profili** sui profili contenenti gli stereotipi da usare.
+4. Nella finestra **Proprietà** impostare la proprietà **profili** sui profili che contengono gli stereotipi che si desidera utilizzare.
 
      Gli stereotipi del profilo ora saranno disponibili in tutti gli elementi all'interno del modello o del pacchetto. Se il pacchetto contiene altri pacchetti, gli stereotipi saranno disponibili anche negli elementi negli altri pacchetti.
 
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>Per aggiungere stereotipi a elementi del modello o a relazioni
 
-1. Fare clic con il pulsante destro del mouse sull'elemento del modello o sulla relazione, in un diagramma o in **Esplora modelli UML**, e quindi fare clic su **Proprietà**.
+1. Fare clic con il pulsante destro del mouse sull'elemento o sulla relazione del modello in un diagramma o in **Esplora modelli UML**e quindi scegliere **Proprietà**.
 
     > [!NOTE]
     > Per aggiungere gli stessi stereotipi a più elementi, è possibile selezionare più elementi e quindi fare clic con il pulsante destro del mouse su uno di essi.
 
-2. Fare clic sulla proprietà **Stereotipi** e selezionare gli stereotipi che si desidera applicare.
+2. Fare clic sulla proprietà **stereotipi** e selezionare gli stereotipi che si desidera applicare.
 
      Gli stereotipi selezionati vengono visualizzati tra «frecce di espansione» nell'elemento del modello, per la maggior parte dei tipi di elemento e di relazione.
 
     > [!NOTE]
-    > Se la proprietà **Stereotipi** non è visibile o se lo stereotipo desiderato non viene visualizzato, verificare che l'elemento del modello sia in un pacchetto o in un modello a cui è stato collegato il profilo appropriato.
+    > Se non è possibile visualizzare la proprietà **stereotipi** o se lo stereotipo desiderato non viene visualizzato, verificare che l'elemento del modello si trovi all'interno di un pacchetto o di un modello a cui è stato collegato il profilo appropriato.
 
-3. Alcuni stereotipi consentono di impostare i valori di altre proprietà per l'elemento del modello. Per visualizzare queste proprietà, espandere la proprietà **Stereotipi**.
+3. Alcuni stereotipi consentono di impostare i valori di altre proprietà per l'elemento del modello. Per visualizzare queste proprietà, espandere la proprietà **stereotipi** .
 
 ### <a name="to-create-model-elements-within-a-package"></a>Per creare elementi del modello in un pacchetto
 
@@ -65,7 +65,7 @@ ms.locfileid: "74292327"
 
          \- oppure -
 
-    - In Esplora modelli UML fare clic con il pulsante destro del mouse sul pacchetto, scegliere **Aggiungi** e quindi fare clic su un tipo di elemento.
+    - In Esplora modelli UML fare clic con il pulsante destro del mouse sul pacchetto, scegliere **Aggiungi**, quindi fare clic su un tipo di elemento.
 
          \- oppure -
 
@@ -75,7 +75,7 @@ ms.locfileid: "74292327"
 
     - Collegare un diagramma al pacchetto e quindi creare gli elementi nel diagramma.
 
-         A tale scopo, fare clic con il pulsante destro del mouse su una parte vuota del diagramma, quindi scegliere **Proprietà**. Nella finestra **Proprietà** impostare **Pacchetto collegato** sul pacchetto desiderato.
+         A tale scopo, fare clic con il pulsante destro del mouse su una parte vuota del diagramma, quindi scegliere **Proprietà**. Nella finestra **Proprietà** impostare **pacchetto collegato** sul pacchetto desiderato.
 
          Tutti i nuovi elementi creati nel diagramma verranno definiti in questo pacchetto.
 

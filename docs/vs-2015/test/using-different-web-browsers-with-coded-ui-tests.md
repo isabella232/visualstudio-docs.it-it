@@ -56,14 +56,14 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
  Testando l'applicazione Web con vari tipi di Web browser si emula meglio l'esperienza dell'interfaccia utente degli utenti che possono eseguire diversi browser. Ad esempio, l'applicazione potrebbe includere un controllo o un codice in Internet Explorer non compatibile con altri Web browser. L'esecuzione dei test codificati dell'interfaccia utente in altri browser consente di individuare e risolvere i problemi prima dell'impatto sui clienti.
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Come registrare e riprodurre i test codificati dell'interfaccia utente nelle applicazioni web usando i Web browser supportati
- **Registrazione:** è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
+ **Registrazione**: è necessario usare il Generatore di test codificati dell'interfaccia utente per registrare il test di un'applicazione Web usando Internet Explorer. È possibile aggiungere la convalida e il codice personalizzato per i controlli testati usando un set predefinito di proprietà come generalmente accade per i test codificati dell'interfaccia utente. Per altre informazioni, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Non è possibile registrare i test codificati dell'interfaccia utente usando i browser Mozilla Firefox o Google Chrome.
 
- **Riproduzione con Internet Explorer:** quando non è specificato alcun browser in modo esplicito, i test vengono eseguiti in Internet Explorer per impostazione predefinita. È possibile dichiarare in modo esplicito il browser da usare impostando la proprietà **BrowserWindow.CurrentBrowser** nel codice del test. Per Internet Explorer, questa proprietà deve essere impostata su **IE** o **Internet Explorer**.
+ **Riproduzione con Internet Explorer**: quando non è specificato alcun browser in modo esplicito, i test vengono eseguiti in Internet Explorer per impostazione predefinita. È possibile dichiarare in modo esplicito il browser da usare impostando la proprietà **BrowserWindow.CurrentBrowser** nel codice del test. Per Internet Explorer questa proprietà deve essere impostata su **IE** o **Internet Explorer**.
 
- **Riproduzione con Web browser diversi da Internet Explorer:** per riprodurre in Web browser diversi da Internet Explorer, modificare le proprietà BrowserWindow.CurrentBrowser nel codice del test su **Firefox** o **Chrome**.
+ **Riproduzione con Web browser diversi da Internet Explorer**: per riprodurre in Web browser diversi da Internet Explorer, modificare le proprietà BrowserWindow.CurrentBrowser nel codice del test su **Firefox** o **Chrome**.
 
  Per riprodurre i test su Web browser diversi da IE, è necessario installare i **componenti Selenium per il test codificato dell'interfaccia utente tra più browser**.
 
@@ -73,27 +73,27 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 
 2. Nella finestra di dialogo dell'estensione e degli aggiornamenti cercare `Selenium components for Cross Browser Testing`.
 
-3. Evidenziare l'estensione e scegliere **Download**.
+3. Evidenziare l'estensione e scegliere **Scarica**.
 
    > [!TIP]
    > È anche possibile scaricare i componenti Selenium per il test codificato dell'interfaccia utente tra più browser facendo clic [qui](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-   Per ulteriori informazioni sulla creazione e l'utilizzo di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
+   Per altre informazioni sulla creazione e l'uso di test codificati dell'interfaccia utente, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
 ### <a name="enable-debugging"></a>Abilita debug
  Per abilitare il debug dell'applicazione Web è necessario completare le opzioni di configurazione seguenti:
 
 1. Abilitare Just My Code:
 
-    1. Dal menu **Strumenti** scegliere **Opzioni**, quindi **Debug**.
+    1. Nel menu **Strumenti** scegliere **Opzioni** e quindi **Debug**.
 
-    2. Selezionare **Abilita Just My Code** .
+    2. Selezionare **Abilita Just My Code**.
 
 2. Disabilitare le eccezioni CLR:
 
-    1. Scegliere **Eccezioni** dal menu **Debug**.
+    1. Nel menu **Debug** scegliere **Eccezioni**.
 
-    2. Per **Eccezioni Common Language Runtime**, deselezionare **Non gestita dall'utente**.
+    2. Per **Eccezioni Common Language Runtime** deselezionare **Non gestita dall'utente**.
 
 ## <a name="generate"></a> *L'opzione per modificare BrowserWindow.CurrentBrowser non è presente nel test codificato dell'interfaccia utente.*
  È possibile che si usi una versione di [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] che non supporta i test codificati dell'interfaccia utente tramite Web browser differenti. Per usare questi test codificati dell'interfaccia utente, è necessario usare Visual Studio Enterprise.
@@ -115,7 +115,7 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 
    **C:\Programmi (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
-   Impostare i seguenti valori:
+   Impostare i valori seguenti:
 
   - `EqtTraceLevel` nella sezione `system.diagnostics`.
 
@@ -127,7 +127,7 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="videos"></a>Video
+### <a name="videos"></a>Videos
  [Record on IE and Playback everywhere](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU) (Registrazione in IE e riproduzione ovunque)
 
  [Author cross browser tests with Coded UI Test Builder](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8) (Creazione di test eseguibili in più browser con il generatore di test codificati dell'interfaccia utente)
@@ -143,7 +143,7 @@ I test codificati dell'interfaccia utente possono automatizzare il test delle ap
 
  [Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>Domande frequenti
+### <a name="faq"></a>DOMANDE FREQUENTI
  [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://go.microsoft.com/fwlink/?LinkID=230578)

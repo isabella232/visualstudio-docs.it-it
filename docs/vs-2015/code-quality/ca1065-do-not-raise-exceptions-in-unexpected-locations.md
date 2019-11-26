@@ -29,7 +29,7 @@ ms.locfileid: "74295946"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Category|Microsoft.Design|
+|Categoria|Microsoft.Design|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
@@ -98,7 +98,7 @@ ms.locfileid: "74295946"
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** deve sempre restituire un valore. In caso contrario, è possibile perdere gli elementi nella tabella hash.
 

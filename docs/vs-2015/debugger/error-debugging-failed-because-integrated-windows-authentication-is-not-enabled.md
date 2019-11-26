@@ -61,7 +61,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
 10. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.  
   
-11. Fare clic su **OK** per chiudere la finestra di dialogo **Proprietà**.  
+11. Scegliere **OK** per chiudere la finestra di dialogo **Proprietà**.  
   
 12. Chiudere la finestra **Internet Information Services**.  
   
@@ -77,7 +77,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
   
          Verrà visualizzata la finestra di dialogo Controllo di accesso utente e verrà richiesto di immettere l'autorizzazione per continuare.  
   
-    3. Scegliere **Continua**.  
+    3. Fare clic su **Continua**.  
   
          Verrà visualizzata la finestra di dialogo Funzionalità Windows.  
   

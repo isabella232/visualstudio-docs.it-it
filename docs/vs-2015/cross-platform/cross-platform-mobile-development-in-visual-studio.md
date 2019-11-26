@@ -79,7 +79,7 @@ ms.locfileid: "74297898"
 |Scegliere se condividere il codice usando i progetti condivisi, i progetti della Libreria di classi portabile o entrambi.<br /><br /> [Condivisione del codice tra piattaforme diverse](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (blog di .NET Framework)<br /><br /> [Opzioni di condivisione del codice](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Opzioni di condivisione del codice con .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a>Sviluppare per dispositivi Windows 10
- ![Dispositivi Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Dispositivi Windows](../cross-platform/media/windowsdevices.png "DispositiviWindows")
 
  Se si vuole creare una singola app destinata all'intera gamma dei dispositivi Windows 10, creare un'app di Windows universale. L'app verrà progettata usando un singolo progetto e il rendering delle pagine verrà eseguito correttamente, indipendentemente dal dispositivo usato per visualizzarle.
 

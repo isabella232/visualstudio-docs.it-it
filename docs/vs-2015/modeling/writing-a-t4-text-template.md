@@ -23,7 +23,7 @@ ms.locfileid: "74301121"
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà "\<HTML >..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo*, ovvero frammenti di codice programma, contenuti all'interno del modello forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
+Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà "\<HTML >..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo*inseriti nel modello sono frammenti del codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
 
  Questa struttura facilita lo sviluppo di un modello, perché consente di partire da un prototipo del file generato inserendo in modo incrementale i blocchi di controllo che variano il risultato.
 
@@ -31,9 +31,9 @@ Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad
 
 - **Direttive** : elementi che controllano la modalità di elaborazione del modello.
 
-- **Blocchi di testo**: contenuto che viene copiato direttamente nell'output.
+- **Blocchi di testo** : contenuto copiato direttamente nell'output.
 
-- **Blocchi di controllo**: codice programma che inserisce nel testo i valori variabili e controlla le parti del testo condizionali o ripetute.
+- **Blocchi di controllo** : codice programma che inserisce valori variabili nel testo e controlla parti condizionali o ripetute del testo.
 
   Per provare gli esempi in questo argomento, copiarli in un file modello come descritto in [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Dopo aver modificato il file di modello, salvarlo e quindi ispezionare il file output **. txt** .
 
@@ -130,7 +130,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Blocchi di controllo della funzionalità di classe
- Un blocco di controllo della funzionalità di classe definisce le proprietà, i metodi o qualsiasi altro codice che non deve essere incluso nella trasformazione principale. I blocchi della funzionalità di classe vengono spesso usati per le funzioni di supporto.  In genere, i blocchi della funzionalità di classe vengono inseriti in file distinti in modo da poter essere [inclusi](#Include) da più modelli di testo.
+ Un blocco di controllo della funzionalità di classe definisce le proprietà, i metodi o qualsiasi altro codice che non deve essere incluso nella trasformazione principale. I blocchi della funzionalità di classe vengono spesso usati per le funzioni di supporto.  In genere, i blocchi di funzionalità di classe vengono inseriti in file distinti, in modo che possano essere [inclusi](#Include) da più di un modello di testo.
 
  I blocchi di controllo della funzionalità di classe sono delimitati dai simboli `<#+ ... #>`.
 
@@ -161,7 +161,7 @@ private int Square(int i)
  Per ulteriori informazioni sui blocchi di controllo, vedere la pagina relativa ai [blocchi di controllo del modello di testo](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>I blocchi della funzionalità di classe possono contenere blocchi di testo
- È possibile scrivere un metodo che generi il testo. Di seguito è riportato un esempio:
+ È possibile scrivere un metodo che generi il testo. Ad esempio:
 
 ```
 List of Squares:
@@ -184,14 +184,14 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Uso di definizioni esterne
 
-### <a name="assemblies"></a>Assembly
+### <a name="assemblies"></a>Assemblies
  I blocchi di codice del modello possono usare i tipi definiti negli assembly .NET usati più di frequente come ad esempio System.dll. Inoltre, è possibile fare riferimento ad altri assembly .NET o ad assembly personalizzati. È possibile fornire un percorso o il nome sicuro di un assembly:
 
 ```
 <#@ assembly name="System.Xml" #>
 ```
 
- Nel nome del percorso è consigliabile usare nomi di percorso assoluto o nomi di macro standard. Di seguito è riportato un esempio:
+ Nel nome del percorso è consigliabile usare nomi di percorso assoluto o nomi di macro standard. Ad esempio:
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -203,7 +203,7 @@ private void WriteSquareLine(int i)
 
  Per altre informazioni, vedere [direttiva dell'assembly T4](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Namespaces
+### <a name="namespaces"></a>Spazi dei nomi
  La direttiva import è uguale alla clausola `using` in C# o alla clausola `imports` in Visual Basic. Consente di fare riferimento ai tipi nel codice senza usare un nome completo:
 
 ```
@@ -249,7 +249,7 @@ private void WriteSquareLine(int i)
  **Usare un modello UML**. È possibile generare il codice da un modello UML. Il vantaggio consiste nel fatto che il modello può essere modificato come diagramma in una notazione familiare. Inoltre, non è necessario progettare il diagramma. Per altre informazioni, vedere [generare file da un modello UML](../modeling/generate-files-from-a-uml-model.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Percorsi di file relativi in modelli della fase di progettazione
- Se in un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md) si desidera fare riferimento a un file in un percorso relativo al modello di testo, usare `this.Host.ResolvePath()`. È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:
+ In un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se si desidera fare riferimento a un file in un percorso relativo al modello di testo, utilizzare `this.Host.ResolvePath()`. È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -267,12 +267,12 @@ Content of MyFile.txt is:
  È anche possibile ottenere altri servizi forniti dall'host. Per ulteriori informazioni, vedere [accesso a Visual Studio o altri host da un modello](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modelli di testo della fase di progettazione eseguiti in un AppDomain separato
- È necessario tenere presente che un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md) viene eseguito in un AppDomain separato dall'applicazione principale. Nella maggior parte dei casi tale aspetto non è importante, ma in determinati casi complessi potrebbero verificarsi delle restrizioni. Se ad esempio si desidera passare i dati all'intero o all'esterno del modello da un servizio separato, il servizio deve fornire un'API serializzabile.
+ È necessario tenere presente che un [modello di testo in fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md) viene eseguito in un AppDomain separato dall'applicazione principale. Nella maggior parte dei casi tale aspetto non è importante, ma in determinati casi complessi potrebbero verificarsi delle restrizioni. Se ad esempio si desidera passare i dati all'intero o all'esterno del modello da un servizio separato, il servizio deve fornire un'API serializzabile.
 
- Ciò non accade per il [modello di testo della fase di esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md), che fornisce il codice compilato con il resto del codice.
+ Questo non è vero per un [modello di testo](../modeling/run-time-text-generation-with-t4-text-templates.md)in fase di esecuzione, che fornisce il codice compilato insieme al resto del codice.
 
 ## <a name="editing-templates"></a>Modifica dei modelli
- È possibile scaricare editor di modelli di testo specializzati dalla Raccolta online di Gestione estensioni. Nel menu **Strumenti** fare clic su **Gestione estensioni**. Fare clic su **Raccolta online**, quindi usare lo strumento di ricerca.
+ È possibile scaricare editor di modelli di testo specializzati dalla Raccolta online di Gestione estensioni. Scegliere **Gestione estensioni**dal menu **strumenti** . Fare clic su **raccolta online**e quindi usare lo strumento di ricerca.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

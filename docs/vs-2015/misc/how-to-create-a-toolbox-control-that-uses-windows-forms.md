@@ -33,7 +33,7 @@ Il modello di controllo della casella degli strumenti Windows Form incluso in [!
   
 2. Nella finestra di dialogo **Nuovo progetto** fare clic sul nodo per il linguaggio di programmazione preferito in **Modelli installati**e quindi selezionare **Extensibility**. Nell'elenco dei tipi di progetto selezionare **Controllo della casella degli strumenti Windows Forms**.  
   
-3. Nella casella **Nome** digitare il nome da usare per il progetto. Fare clic su **OK**.  
+3. Nella casella **Nome** digitare il nome da usare per il progetto. fare clic su **OK**.  
   
      Visual Studio crea una soluzione contenente un controllo utente, un attributo per inserire il controllo nella **casella degli strumenti**e un manifesto VSIX per la distribuzione.  
   
