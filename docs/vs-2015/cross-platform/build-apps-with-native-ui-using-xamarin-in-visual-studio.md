@@ -83,7 +83,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
    - Nella parte destra della finestra selezionare il progetto **WeatherApp**, che è l'unico progetto in cui è necessario installare il pacchetto.
 
-   - Verificare che il campo **Versione** sia impostato su **Ultima versione stabile**.
+   - Verificare che il campo **Versione** sia impostato su **Ultima versione stabile** .
 
    - Fare clic su **Installa**.
 
@@ -236,21 +236,21 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 3. Aprire la casella degli strumenti con **Visualizza > Altre finestre > Casella degli strumenti**.
 
-4. Trascinare un controllo **RelativeLayout** nella finestra di progettazione dalla **Casella degli strumenti**. Usare questo controllo come contenitore padre per altri controlli.
+4. Trascinare un controllo **RelativeLayout**nella finestra di progettazione dalla **Casella degli strumenti** . Usare questo controllo come contenitore padre per altri controlli.
 
     > [!TIP]
     > Se in qualsiasi momento sembra che il layout non sia visualizzato correttamente, salvare il file e passare dalla scheda **Progettazione** alla scheda **Origine** e viceversa per aggiornare.
 
 5. Nella finestra **Proprietà** impostare la proprietà **background** (gruppo Stile) su `#545454`.
 
-6. Dalla **Casella degli strumenti** trascinare un controllo **TextView** sul controllo **RelativeLayout**.
+6. Dalla **Casella degli strumenti**trascinare un controllo **TextView** sul controllo **RelativeLayout** .
 
 7. Nella finestra **Proprietà** impostare le proprietà riportate di seguito (nota: per elencare le voci in ordine alfabetico usare il pulsante di ordinamento della barra degli strumenti della finestra Proprietà):
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**text**|**Search by Zip Code**|
-    |**id**|`@+id/ZipCodeSearchLabel`|
+    |**ID**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -279,10 +279,10 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 9. Nella finestra **Proprietà** impostare queste proprietà:
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**text**|**Zip Code**|
-    |**id**|`@+id/ZipCodeLabel`|
+    |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
@@ -301,9 +301,9 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 10. Dalla **Casella degli strumenti** trascinare un controllo **Number** su **RelativeLayout** e posizionarlo sotto l'etichetta **Zip Code**. Quindi impostare le proprietà seguenti:
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
-    |**id**|`@+id/zipCodeEntry`|
+    |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -324,9 +324,9 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 11. Dalla **Casella degli strumenti** trascinare un **pulsante** sul controllo **RelativeLayout** e posizionarlo a destra del controllo zipCodeEntry. Impostare quindi queste proprietà:
 
-    |Proprietà|Value|
+    |Proprietà|Valore|
     |--------------|-----------|
-    |**id**|`@+id/weatherBtn`|
+    |**ID**|`@+id/weatherBtn`|
     |**text**|**Get Weather**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
@@ -583,11 +583,11 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 ### <a name="consume-your-shared-code"></a>Usare il codice condiviso
 
-1. Nella finestra di progettazione selezionare il pulsante **Get Weather**.
+1. Nella finestra di progettazione selezionare il pulsante **Get Weather** .
 
 2. Nella finestra **Proprietà** scegliere il pulsante gestore eventi (![icona gestori eventi di Visual Studio](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
 
-     Questa icona verrà visualizzata nell'angolo in alto della finestra **Proprietà**.
+     Questa icona verrà visualizzata nell'angolo in alto della finestra **Proprietà** .
 
 3. Accanto all'evento **Click** digitare **GetWeatherButton_Click**, quindi premere INVIO.
 

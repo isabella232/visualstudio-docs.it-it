@@ -24,7 +24,7 @@ ms.locfileid: "74291272"
 
 In questa procedura dettagliata viene illustrato come creare una soluzione Shell isolata, personalizzare la finestra degli strumenti e creare un programma di installazione che consente di installare la shell isolata.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Prerequisiti  
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Per distribuire la shell isolata, è necessario utilizzare anche il pacchetto ridistribuibile di Visual Studio Shell (isolated).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Creazione di una soluzione Shell isolata  
@@ -115,7 +115,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
 2. Rimuovere il commento dalla riga seguente:  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages\\{87569308-4813-40A0-9cd0-d7a30838ca3f}]  
   
 3. Ricompilare la soluzione e avviare il debug della shell isolata. Aprire un file XML, ad esempio \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verificare che le parole chiave XML nel file non siano colorate e che digitando "<" in una riga non vengano visualizzate le descrizioni comandi XML.  
   
@@ -216,7 +216,7 @@ In questa procedura dettagliata viene illustrato come creare una soluzione Shell
   
     7. Splash. bmp  
   
-5. Fare clic sul pulsante **Aggiungi output progetto** e aggiungere **MyVSShellStub/output primario**. Fare clic su **OK**.  
+5. Fare clic sul pulsante **Aggiungi output progetto** e aggiungere **MyVSShellStub/output primario**. fare clic su **OK**.  
   
 6. Nel riquadro sinistro, in **computer di destinazione**, fare clic con il pulsante destro del mouse sul nodo **Fabrikam Music Editor [INSTALLDIR]** e aggiungere una **nuova cartella** denominata **Extensions**.  
   

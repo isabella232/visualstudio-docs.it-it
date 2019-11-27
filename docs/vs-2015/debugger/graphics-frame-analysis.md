@@ -134,7 +134,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   
  Gli errori indicano in genere che nell'implementazione dell'analisi dei frame sono presenti bug, che in un driver sono presenti bug, che il supporto hardware è carente e non sono possibili soluzioni alternative oppure che l'app prova a eseguire operazioni non supportate dalla riproduzione.  
   
-### <a name="retries"></a>Nuovi tentativi  
+### <a name="retries"></a>Tentativi  
  Se la GPU attraversa una transizione di stato di potenza durante l'analisi dei frame, eseguire di nuovo il passaggio di analisi interessato, poiché la velocità di clock della GPU ha subito modifiche e ha quindi reso non validi i risultati di durata relativa.  
   
  L'analisi dei frame limita il numero di nuovi tentativi a 10. Se le impostazioni di risparmio di energia o controllo del clock della piattaforma sono molto rigide, è possibile che l'analisi dei frame abbia esito negativo e che sia segnalato un errore a causa del superamento del limite di nuovi tentativi consentiti. Per ridurre questo problema, è possibile provare a modificare le impostazioni del risparmio energia e della limitazione della velocità del clock della piattaforma in modo che siano meno rigide, se la piattaforma lo permette.  
@@ -185,7 +185,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 ## <a name="Variants"></a> Varianti  
  Ogni modifica apportata dall'analisi dei frame al modo in cui è eseguito il rendering di un frame durante la riproduzione è definita *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:  
   
-|Variante|description|  
+|Variante|Descrizione|  
 |-------------|-----------------|  
 |**Dimensione riquadro di visualizzazione 1x1**|Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [Variante delle dimensioni del viewport 1x1](../debugger/1x1-viewport-size-variant.md)|  
 |**0x MSAA**|Disabilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [Varianti di MSAA 0x/2x/4x](../debugger/0x-2x-4x-msaa-variants.md)|  

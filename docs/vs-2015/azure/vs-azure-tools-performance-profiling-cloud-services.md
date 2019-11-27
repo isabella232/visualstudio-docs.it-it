@@ -74,38 +74,38 @@ Per altre informazioni sulla profilatura delle prestazioni in Visual Studio, ved
 * È inoltre possibile abilitare **Profilatura interazione tra livelli**, che fornisce informazioni aggiuntive sui tempi di esecuzione delle chiamate ADO.NET sincrone nelle funzioni di applicazioni multilivello che comunicano con uno o più database. È possibile raccogliere dati dell’interazione tra livelli con qualsiasi metodo di profilatura. Per altre informazioni sulla profilatura dell'interazione tra livelli, vedere [Visualizzazione Interazioni tra livelli](https://msdn.microsoft.com/library/azure/dd557764.aspx).
 
 ## <a name="configuring-profiling-settings"></a>Configurazione delle impostazioni di profilatura
-La figura seguente illustra come configurare le impostazioni di profilatura dalla finestra di dialogo Pubblica l'applicazione Azure.
+Nella seguente illustrazione viene mostrato come configurare le impostazioni di profilatura dalla finestra di dialogo Pubblica applicazione Azure.
 
-![Configurare le impostazioni di profilatura](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
+![Configura impostazioni profiling](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> Per attivare la casella di controllo **Abilita profilatura** , è necessario che il profiler sia installato nel computer locale usato per pubblicare il servizio cloud. Per impostazione predefinita, il profiler viene installato quando si installa Visual Studio.
+> Per abilitare la casella di controllo **Abilita profilatura**, è necessario che il profiler installato nel computer locale che si usa per pubblicare il servizio cloud. Per impostazione predefinita, il profiler viene installato quando si installa Visual Studio.
 > 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Per configurare le impostazioni di profilatura
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi scegliere **Pubblica**. Per altre informazioni su come pubblicare un servizio cloud, vedere [Pubblicazione di un servizio cloud con gli strumenti di Azure](https://go.microsoft.com/fwlink/p?LinkId=623012).
 2. Nella finestra di dialogo **Pubblica l'applicazione Azure** scegliere la scheda **Impostazioni avanzate**.
-3. Per abilitare la profilatura, selezionare la casella di controllo **Abilita profilatura** .
-4. Per configurare le impostazioni di profilatura, scegliere il collegamento ipertestuale **Impostazioni** . Viene visualizzata la finestra di dialogo Impostazioni di profilatura.
+3. Per abilitare la profilatura, selezionare la casella di controllo **Abilita profilatura**.
+4. Per configurare le impostazioni di profilatura, scegliere il collegamento ipertestuale **Impostazioni**. Viene visualizzata la finestra di dialogo Impostazioni profilatura.
 5. Dai pulsanti di opzione **Specificare il metodo di analisi da utilizzare** scegliere il tipo di analisi necessario.
-6. Per raccogliere i dati di profilatura dell'interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .
-7. Per salvare le impostazioni, fare clic su **OK** .
+6. Per raccogliere i dati di profilatura dell'interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli**.
+7. Per salvare le impostazioni, scegliere il pulsante **OK**.
    
     Quando si pubblica l'applicazione, queste impostazioni vengono usate per creare la sessione di profilatura per ogni ruolo.
 
 ## <a name="viewing-profiling-reports"></a>Visualizzare i rapporti sulla profilatura
-Viene creata una sessione di profilatura per ogni istanza di un ruolo nel servizio cloud. Per visualizzare i rapporti sulla profilatura di ogni sessione da Visual Studio, è possibile visualizzare la finestra Esplora server e quindi scegliere il nodo di calcolo di Azure per selezionare un'istanza di un ruolo. È quindi possibile visualizzare il rapporto sulla profilatura, come illustrato nella figura seguente.
+Viene creata una sessione di profilatura per ogni istanza di un ruolo nel servizio cloud. Per visualizzare i report di profilatura di ogni sessione da Visual Studio, è possibile visualizzare la finestra Esplora server e scegliere quindi il nodo Calcolo di Azure per selezionare un'istanza di un ruolo. È quindi possibile visualizzare il rapporto sulla profilatura, come illustrato nella figura seguente.
 
-![Visualizzare il rapporto della profilatura da Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
+![Visualizza report profiling da Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
 
 ### <a name="to-view-profiling-reports"></a>Per visualizzare i rapporti della profilatura
-1. Per visualizzare la finestra Esplora server in Visual Studio, nella barra dei menu scegliere Visualizza, Esplora server.
-2. Scegliere il nodo di calcolo di Azure e quindi scegliere il nodo di distribuzione di Azure per il servizio cloud selezionato per la profilatura durante la pubblicazione da Visual Studio.
-3. Per visualizzare i rapporti sulla profilatura per un'istanza, scegliere il ruolo nel servizio, aprire il meno di scelta rapida per un'istanza specifica, quindi scegliere **Visualizza rapporto sulla profilatura**.
+1. Per visualizzare la finestra Esplora server in Visual Studio, sulla barra dei menu scegliere Visualizza, Esplora server.
+2. Scegliere il nodo Calcolo di Azure, quindi scegliere il nodo di distribuzione di Azure per il servizio cloud selezionato per la profilatura durante la pubblicazione da Visual Studio.
+3. Per visualizzare i report di profilatura per un'istanza, scegliere il ruolo nel servizio, aprire il menu di scelta rapida per un'istanza specifica e scegliere **Visualizza report di profilatura**.
    
     Il report, un file con estensione vsp, viene ora scaricato da Azure e lo stato del download viene visualizzato nel log attività di Azure. Al termine del download, il report sulla profilatura viene visualizzato in una scheda dell'editor per Visual Studio con il nome <Nome ruolo\> *<Numero istanza\>* <identificatore\>.vsp. Vengono visualizzati i dati di riepilogo per il report.
-4. Per visualizzare viste diverse del report, nell'elenco Vista corrente, scegliere il tipo di visualizzazione che si desidera. Per altre informazioni, vedere [Visualizzazioni dei rapporti degli strumenti di profilatura](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Per visualizzare visualizzazioni differenti del report, nell'elenco Visualizzazione corrente scegliere il tipo di visualizzazione desiderata. Per altre informazioni, vedere [Visualizzazioni dei rapporti degli strumenti di profilatura](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Debug di servizi cloud](vs-azure-tools-debugging-cloud-services-overview.md)

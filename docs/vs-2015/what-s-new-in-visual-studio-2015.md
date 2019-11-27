@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297556"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538977"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 è una famiglia integrata di strumenti di produttività per s
 
 In questa pagina sono evidenziate alcune delle più importanti funzionalità nuove rispetto a Visual Studio 2013 RTM, incluse le funzionalità introdotte per la prima volta in uno degli aggiornamenti di Visual Studio 2013. Per un elenco completo delle novità di Visual Studio 2015, vedere le [Note sulla versione](https://www.visualstudio.com/news/vs2015-vs).
 
-Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalità di Visual Studio ALM, vedere Novità [di TFS 2015](/tfs/server/whats-new?view=vsts#tfs-2015-rtm).
+Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalità di Visual Studio ALM, vedere Novità [di TFS 2015](/azure/devops/server/whats-new#tfs-2015).
 
 ## <a name="a-new-setup-experience"></a>Una nuova esperienza di installazione
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -40,7 +40,7 @@ Per ulteriori informazioni sui numerosi miglioramenti e sulle nuove funzionalit�
 ## <a name="sign-in-across-multiple-accounts"></a>Accedere a più account
  Con Visual Studio 2015 la nuova esperienza di accesso ottimizzata è concepita in modo da semplificare notevolmente l'accesso alle risorse online, anche quando si hanno più account di Visual Studio. Dopo avere effettuato l'accesso a Visual Studio, si accede automaticamente a tutte le istanze di Visual Studio 2015 e Blend nel computer in uso. L'accesso  avvia automaticamente il roaming delle impostazioni. In Visual Studio 2015 l'account è condiviso tra più funzionalità e, di conseguenza, se si ha un token valido, è possibile accedere agli account di Visual Studio Team Services da **Team Explorer**e alle risorse e ai siti Web dalla sottoscrizione di Microsoft Azure in Esplora server. Le risorse di Azure sono inoltre visualizzate nella finestra di dialogo Nuovo progetto per i progetti di Application Insights, mentre gli account di Servizi mobili di Azure, Archiviazione di Azure, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) e quello per [sviluppatori di Saleforce.com](https://developer.salesforce.com/) sono visualizzati nella nuova finestra di dialogo **Aggiungi servizio connesso** .
 
- Per usare più account utente in Visual Studio, aggiungerli man mano o tramite il nuovo Gestione account. In questo modo sarà possibile passare immediatamente da un account all'altro quando ci si connette ai servizi o si accede alle risorse online. Visual Studio memorizza gli account aggiunti, che possono quindi essere usati da qualsiasi istanza di Visual Studio o Blend. In Visual Studio verrà effettuato anche il roaming dell'elenco di account (ma non delle preziose credenziali dell'utente) tramite l'account di personalizzazione, in modo da poter iniziare rapidamente a usare uno di questi account in un altro dispositivo. Naturalmente è possibile rimuovere gli account dalla finestra di dialogo Impostazioni account in qualsiasi momento. Per un'introduzione, vedere [Gestire più account utente](./ide/work-with-multiple-user-accounts.md).
+ Per usare più account utente in Visual Studio, aggiungerli man mano o tramite il nuovo Gestione account. In questo modo sarà possibile passare immediatamente da un account all'altro quando ci si connette ai servizi o si accede alle risorse online. Visual Studio memorizza gli account aggiunti, che possono quindi essere usati da qualsiasi istanza di Visual Studio o Blend. In Visual Studio verrà effettuato anche il roaming dell'elenco di account (ma non delle preziose credenziali dell'utente) tramite l'account di personalizzazione, in modo da poter iniziare rapidamente a usare uno di questi account in un altro dispositivo. Naturalmente è possibile rimuovere gli account dalla finestra di dialogo Impostazioni account in qualsiasi momento. Per un'introduzione, vedere [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md).
 
  ![Gestione account](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")
 
@@ -252,7 +252,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 
  È sufficiente fare clic sulla faccina gialla sulla barra del titolo, indicare gli aspetti apprezzati e fare clic sul pulsante **Invia smile** .
 
- I commenti e suggerimenti inviati verranno inoltrati al team corretto che ne terrà conto per lo sviluppo di nuove funzionalità ancor più gradite agli utenti.
+ Ecco fatto. e suggerimenti inviati verranno inoltrati al team corretto che ne terrà conto per lo sviluppo di nuove funzionalità ancor più gradite agli utenti.
 
 ### <a name="send-a-frown"></a>Inviare commenti su aspetti da migliorare
  L'invio di commenti su aspetti del prodotto da migliorare consente a Microsoft di gestire il backlog concentrando l'attenzione in primo luogo sulle funzionalità più rilevanti per i propri clienti. Per segnalare un errore o un problema, è possibile usare la funzionalità **Invia faccia imbronciata** direttamente dall'IDE. Anche in questo caso, la procedura è semplicissima:

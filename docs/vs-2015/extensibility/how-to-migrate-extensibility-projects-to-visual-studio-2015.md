@@ -35,7 +35,7 @@ Ecco come eseguire l'aggiornamento dell'estensione.
   
 3. Aggiungere un riferimento a Microsoft. VisualStudio. Shell. 14.0. dll. Fare clic con il pulsante destro del mouse sul nodo del progetto nella **Esplora soluzioni** , quindi scegliere **Aggiungi/riferimento**. Selezionare la scheda **estensioni** , quindi selezionare **Microsoft. VisualStudio. Shell. 14.0**.  
   
-4. Compilare la soluzione. I file compilati vengono distribuiti in:  
+4. Compila la soluzione. I file compilati vengono distribuiti in:  
   
      **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nome dell'autore\>\\< nome del progetto** \>\\<\>versione del progetto \\.  
   

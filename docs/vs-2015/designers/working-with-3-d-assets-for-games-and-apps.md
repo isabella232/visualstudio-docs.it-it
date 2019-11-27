@@ -18,7 +18,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74298087"
 ---
-# <a name="working-with-3-d-assets-for-games-and-apps"></a>Utilizzo di risorse tridimensionali per giochi e app
+# <a name="working-with-3-d-assets-for-games-and-apps"></a>Uso di risorse tridimensionali per giochi e app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi DirectX.
@@ -51,7 +51,7 @@ Questo documento descrive gli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con immagini e texture.|
 |[Uso dei modelli tridimensionali](../designers/working-with-3-d-models.md)|Viene descritto come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per lavorare con modelli 3D.|

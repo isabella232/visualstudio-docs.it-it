@@ -83,7 +83,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 ## <a name="using-third-party-web-servers"></a>Uso di server Web di terze parti  
  Se si distribuisce un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] da un server Web diverso da IIS, potrebbe verificarsi un problema se il server restituisce il tipo di contenuto non corretto per i file [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] chiave, ad esempio il manifesto di distribuzione e il manifesto dell'applicazione. Per risolvere questo problema, vedere la documentazione della guida del server Web per informazioni su come aggiungere nuovi tipi di contenuto al server e assicurarsi che tutti i mapping dell'estensione di file elencati nella tabella seguente siano disponibili.  
   
-|Estensione del file|Tipo di contenuto|  
+|Estensione del nome di file|Tipo di contenuto|  
 |-------------------------|------------------|  
 |`.application`|`application/x-ms-application`|  
 |`.manifest`|`application/x-ms-manifest`|  
@@ -97,7 +97,7 @@ Se si usa Internet Information Services (IIS) in Windows Server e la distribuzio
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocollo FTP non supportato per l'installazione di applicazioni  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] supporta l'installazione di applicazioni da qualsiasi server Web HTTP 1,1 o file server. FTP, il File Transfer Protocol, non è supportato per l'installazione di applicazioni. È possibile utilizzare FTP solo per pubblicare le applicazioni. Nella tabella seguente sono riepilogate queste differenze:  
   
-|Tipo di URL|description|  
+|Tipo di URL|Descrizione|  
 |--------------|-----------------|  
 |ftp://|È possibile pubblicare un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando questo protocollo.|  
 |http://|È possibile installare un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando questo protocollo.|  

@@ -31,7 +31,7 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
   
   Tutto il codice di esempio di questo documento deriva dall' [esempio di distribuzione della shell](https://go.microsoft.com/fwlink/?LinkId=262245), che è possibile scaricare dalla raccolta di codice sul sito Web MSDN. Nell'esempio vengono illustrati i risultati dell'esecuzione di ognuno di questi passaggi.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Prerequisiti  
  Per eseguire le procedure descritte in questo argomento, è necessario che nel computer siano installati gli strumenti seguenti.  
   
 - Visual Studio SDK  
@@ -178,8 +178,8 @@ Per installare un'app shell è necessario eseguire i passaggi seguenti.
   
     |*NomeProgetto*. reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE Object"|\<RegistryKey ID =' DteClsidRegKey ' root =' HKCR ' Key =' $ (var. DteClsidRegKey)' Action =' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type =' String ' name =' @' value =' $ (var. ShortProductName) oggetto DTE '/><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID =' DteLocSrv32RegKey ' root =' HKCR ' Key =' $ (var. DteClsidRegKey) \LocalServer32' Action =' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-B65D-c0df6bda7cc6}]<br /><br /> @ = "PhotoStudio DTE Object"|\<RegistryKey ID =' DteClsidRegKey ' root =' HKCR ' Key =' $ (var. DteClsidRegKey)' Action =' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type =' String ' name =' @' value =' $ (var. ShortProductName) oggetto DTE '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-B65D-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID =' DteLocSrv32RegKey ' root =' HKCR ' Key =' $ (var. DteClsidRegKey) \LocalServer32' Action =' createAndRemoveOnUninstall ' ><br /><br /> \<RegistryValue Type =' String ' name =' @' value =' [INSTALLDIR] $ (var. ShortProductName). exe '/><br /><br /> \</RegistryKey >|  
   
      In questo esempio var. DteClsidRegKey viene risolto nella chiave del registro di sistema nella riga superiore. Var. ShortProductName viene risolto in `PhotoStudio`.  
   
@@ -237,7 +237,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ### <a name="deciphering-return-values"></a>Decifrazione dei valori restituiti  
  In alcuni sistemi operativi, l'installazione di Visual Studio Shell (isolated) richiederà un riavvio. Questa condizione può essere determinata dal codice restituito della chiamata a `ExecCmd`.  
   
-|Valore restituito|description|  
+|Valore restituito|Descrizione|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Installazione completata. È ora possibile installare l'applicazione.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Installazione completata. È possibile installare l'applicazione dopo il riavvio del computer.|  

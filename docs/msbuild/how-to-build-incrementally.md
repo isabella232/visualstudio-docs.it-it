@@ -27,7 +27,7 @@ Una destinazione può essere compilata in modo incrementale se gli input e gli o
 
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Per specificare input e output per una destinazione
 
-- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Esempio:
+- Usare gli attributi `Inputs` e `Outputs` dell'elemento `Target`. Ad esempio:
 
   ```xml
   <Target Name="Build"

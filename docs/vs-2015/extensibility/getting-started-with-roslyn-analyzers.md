@@ -20,7 +20,7 @@ ms.locfileid: "74300020"
 
 Con gli analizzatori di codice dinamici basati su progetti in Visual Studio, gli autori di API possono inviare analisi del codice specifiche del dominio come parte dei pacchetti NuGet.  Poiché questi analizzatori sono basati sulla .NET Compiler Platform (nome in codice "Roslyn"), possono produrre avvisi nel codice mentre si digita anche prima di aver terminato la riga (non è più in attesa di compilare il codice per individuare i problemi).  Gli analizzatori possono anche esporre una correzione automatica del codice tramite il prompt di Visual Studio Light Bulb per consentire la pulizia immediata del codice
 
-## <a name="getting-started"></a>Introduzione
+## <a name="getting-started"></a>Guida introduttiva
 [Introduzione e procedura dettagliata degli analizzatori del codice in tempo reale di Roslyn](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
 [Aggiunta di correzioni al codice procedura dettagliata: fornire correzioni agli utenti per i problemi dell'analizzatore](https://msdn.microsoft.com/magazine/dn904670.aspx)

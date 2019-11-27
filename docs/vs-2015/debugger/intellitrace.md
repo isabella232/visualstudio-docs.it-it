@@ -44,7 +44,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
   È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition (ma non le edizioni Professional o Community).  
   
-## <a name="what-do-you-want-to-do"></a>Selezionare l'operazione da eseguire.  
+## <a name="what-do-you-want-to-do"></a>Come procedere  
   
 |||  
 |-|-|  
@@ -128,7 +128,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
   
 - **Eventi .NET Framework**  
   
-   Per impostazione predefinita, tramite IntelliTrace vengono registrati gli eventi .NET Framework più comuni. Di seguito è riportato un esempio:  
+   Per impostazione predefinita, tramite IntelliTrace vengono registrati gli eventi .NET Framework più comuni. Ad esempio:  
   
   - Per un evento di accesso ai file, tramite IntelliTrace viene raccolto il nome del file.  
   
@@ -188,5 +188,5 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
 ### <a name="blogs"></a>Blog  
  [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
   
-### <a name="forums"></a>Forum  
+### <a name="forums"></a>Forums  
  [Diagnostica di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)

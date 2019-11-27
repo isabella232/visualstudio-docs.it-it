@@ -54,7 +54,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 ### <a name="wcf-programming-model"></a>Modello di programmazione WCF
  Il modello di programmazione WCF è basato sulla comunicazione tra due entità, ovvero un servizio WCF e un client WCF. Il modello di programmazione viene incapsulato nello spazio dei nomi <xref:System.ServiceModel> nel [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
-#### <a name="wcf-service"></a>Servizio WCF
+#### <a name="wcf-service"></a>back-end
  Un servizio WCF si basa su un'interfaccia che definisce un contratto tra il servizio e il client. È contrassegnato con un attributo <xref:System.ServiceModel.ServiceContractAttribute>, come illustrato nel codice seguente:
 
  [!code-csharp[WCFWalkthrough#6](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs#6)]
@@ -101,7 +101,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 
  Per ulteriori informazioni sull'host del servizio WCF, vedere [host del servizio WCF (WcfSvcHost. exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
-#### <a name="wcf-test-client"></a>Client di prova WCF
+#### <a name="wcf-test-client"></a>Client di test WCF
  Lo strumento client di test WCF consente di immettere parametri di test, inviare l'input a un servizio WCF e visualizzare la risposta restituita dal servizio. Offre un'esperienza di test del servizio ottimale quando la si combina con l'host del servizio WCF. Lo strumento si trova nella cartella \Common7\IDE, che per Visual Studio 2015 installata nell'unità C: si trova qui: **c:\Programmi (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE\\** .
 
  Quando si preme F5 per eseguire il debug di un progetto di servizio WCF, il client di prova WCF apre e visualizza un elenco di endpoint di servizio definiti nel file di configurazione. È possibile testare i parametri e avviare il servizio e ripetere il processo per verificare e convalidare costantemente il servizio.
@@ -232,7 +232,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Procedura dettagliata: creazione di un Windows Form semplice](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Viene fornita una dimostrazione dettagliata della creazione e dell'utilizzo di servizi WCF in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Procedura dettagliata: creazione di un servizio dati WCF con WPF ed Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Viene fornita una dimostrazione dettagliata di come creare e utilizzare [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
@@ -245,7 +245,7 @@ In Visual Studio sono disponibili strumenti per l'utilizzo di Windows Communicat
 |[Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti.|
 |[Configura riferimento a servizio (finestra di dialogo)](../data-tools/configure-service-reference-dialog-box.md)|Vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Configura riferimento al servizio** .|
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Riferimento
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>

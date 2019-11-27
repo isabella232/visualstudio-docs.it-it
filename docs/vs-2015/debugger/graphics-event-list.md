@@ -18,7 +18,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297330"
 ---
-# <a name="graphics-event-list"></a>Elenco eventi grafici
+# <a name="graphics-event-list"></a>Elenco eventi di grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per esplorare gli eventi Direct3D registrati durante il rendering di un frame del gioco o dell'app.  
@@ -38,13 +38,13 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
 |Coda Direct3D 12|Colore|  
 |-----------------------|-----------|  
 |Coda di rendering|Verde|  
-|Coda di calcolo|Giallo|  
-|Coda di copia|Arancione|  
+|Coda di calcolo|Yellow|  
+|Coda di copia|Orange|  
   
  Direct3D 11 non espone più code, dunque gli eventi non sono contraddistinti dal colore nell'elenco di eventi quando si lavora con una cattura di un'app Direct3D 11.  
   
 ### <a name="event-list-views"></a>Visualizzazioni dell'elenco di eventi  
- L'elenco di eventi supporta due diverse visualizzazioni che organizzano gli eventi grafici in modo diverso, per supportare il flusso di lavoro e le preferenze dell'utente. La prima è la *visualizzazione chiamate di disegno*, che organizza gli eventi e lo stato associato in gerarchie. La seconda è la *visualizzazione cronologia*, che organizza gli eventi in ordine cronologico, in un elenco semplice.  
+ L'elenco di eventi supporta due diverse visualizzazioni che organizzano gli eventi grafici in modo diverso, per supportare il flusso di lavoro e le preferenze dell'utente. La prima è la *visualizzazione chiamate di disegno* , che organizza gli eventi e lo stato associato in gerarchie. La seconda è la *visualizzazione cronologia* , che organizza gli eventi in ordine cronologico, in un elenco semplice.  
   
  Visualizzazione **Chiamate di disegno**  
  Visualizza gli eventi acquisiti e il relativo stato in una gerarchia. Il primo livello della gerarchia contiene eventi come chiamate di disegno, cancellazioni, presentazioni ed eventi associati alle visualizzazioni. Nell'elenco di eventi è possibile espandere le chiamate di disegno per visualizzare lo stato del dispositivo al momento della chiamata di disegno ed espandere ulteriormente ogni tipo di stato per visualizzare gli eventi che hanno impostato i valori. A questo livello è anche possibile vedere se un particolare stato è stato impostato in un frame precedente oppure se è stato impostato più volte dall'ultima chiamata di disegno.  
@@ -54,13 +54,13 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Per modificare la modalità di visualizzazione dell'elenco di eventi  
   
-- Nella finestra **Elenco eventi grafici**, sopra l'elenco degli eventi, individuare l'elenco a discesa **Visualizza** e scegliere la visualizzazione **Cronologia** o la visualizzazione **Chiamate di disegno**.  
+- Nella finestra **Elenco eventi grafici** , sopra l'elenco degli eventi, individuare l'elenco a discesa **Visualizza** e scegliere la visualizzazione **Cronologia** o la visualizzazione **Chiamate di disegno** .  
   
-### <a name="filtering-events"></a>Filtro degli eventi  
+### <a name="filtering-events"></a>Filtro di eventi  
  La casella Cerca, situata nell'angolo superiore destro della finestra **Elenco eventi grafici** consente di filtrare l'elenco di eventi in modo da includere solo gli eventi i cui nomi contengono determinate parole chiave. È possibile specificare singole parole chiave, ad esempio `Vertex`, come mostrato nella figura precedente, oppure un elenco di parole chiave separate da punti e virgola, come `Draw;Primitive`, per visualizzare solo gli eventi il cui nome contiene `Draw` o `Primitive` . Le ricerche sono sensibili agli spazi. Ad esempio, `VSSet` e `VS Set` sono differenti. Fare quindi attenzione a formulare le ricerche nel modo corretto.  
   
 ### <a name="moving-between-draw-calls"></a>Spostamento tra chiamate di disegno  
- Poiché esaminare le chiamate `Draw` è particolarmente importante, è possibile usare i pulsanti **Passa a chiamata di disegno successiva** e **Passa a chiamate di disegno precedente** situati nell'angolo superiore sinistro della finestra **Elenco eventi grafici**, per trovare rapidamente gli eventi e spostarsi da uno all'altro.  
+ Poiché esaminare le chiamate `Draw` è particolarmente importante, è possibile usare i pulsanti **Passa a chiamata di disegno successiva** e **Passa a chiamate di disegno precedente** situati nell'angolo superiore sinistro della finestra **Elenco eventi grafici** , per trovare rapidamente gli eventi e spostarsi da uno all'altro.  
   
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici  
  Per comprendere gli eventi di grafica potrebbero essere necessarie informazioni aggiuntive sullo stato corrente di Direct3D o sugli oggetti Direct3D a cui viene fatto riferimento dall'evento. In molti eventi sono presenti i collegamenti alle informazioni, che è possibile seguire per accedere a ulteriori dettagli.  

@@ -16,12 +16,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300000"
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: scrivere il codice per il gestore dell'evento del pulsante Visualizza immagine
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: scrivere il codice per il gestore eventi del pulsante Visualizza immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questo passaggio si imposta il funzionamento del pulsante **Visualizza immagine** nel modo seguente:
+In questo passaggio si imposta il funzionamento del pulsante **Mostra immagine** nel modo seguente:
 
-- Quando un utente sceglie il pulsante, viene visualizzata una finestra di dialogo **Apri file**.
+- Quando un utente sceglie il pulsante, il programma visualizza una finestra di dialogo **Apri file**.
 
 - Se l'utente apre un file di immagine, tale immagine viene visualizzata nel controllo PictureBox.
 
@@ -31,17 +31,17 @@ In questo passaggio si imposta il funzionamento del pulsante **Visualizza immagi
 
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Per scrivere il codice per il gestore dell'evento del pulsante Visualizza immagine
 
-1. Passare a una finestra di progettazione di Windows Form e fare doppio clic sul pulsante **Visualizza immagine**. L'IDE passa immediatamente alla finestra di progettazione del codice e sposta il cursore all'interno del metodo `showButton_Click()` aggiunto precedentemente.
+1. Passare a Progettazione Windows Form e fare doppio clic sul pulsante **Mostra immagine**. L'IDE passa immediatamente alla finestra di progettazione del codice e sposta il cursore all'interno del metodo `showButton_Click()` aggiunto precedentemente.
 
 2. Digitare una `i` nella riga vuota tra le due parentesi graffe { }. (In Visual Basic, digitare sulla riga vuota tra Sub privato... e End Sub.) Viene visualizzata una finestra di **IntelliSense** , come illustrato nell'immagine seguente.
 
      ![IntelliSense con codice Visual&#35; C](../ide/media/express-ifintellisense.png "Express_IfIntellisense") IntelliSense con codice C# visivo
 
-3. Nella finestra di **IntelliSense** viene evidenziata la parola **if**. In caso contrario, immettere una `f`minuscola, che verrà. Si noti che viene visualizzata una piccola *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. (In Visual Basic, la descrizione comando indica anche che si tratta di un frammento, ma con una formulazione leggermente diversa). Si vuole usare il frammento di codice, quindi scegliere il tasto TAB per inserire **if** nel codice. Premere quindi di nuovo TAB per usare il frammento **if**. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare alla **i** e ridigitarla. Verrà nuovamente visualizzata la finestra di **IntelliSense**.
+3. Nella finestra di **IntelliSense** dovrebbe essere evidenziata la parola **if**. In caso contrario, immettere una `f`minuscola, che verrà. Si noti che viene visualizzata una piccola *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. (In Visual Basic, la descrizione comando indica anche che si tratta di un frammento, ma con una formulazione leggermente diversa). Si vuole usare il frammento di codice, quindi scegliere il tasto TAB per inserire **if** nel codice. Premere quindi di nuovo TAB per usare il frammento **if**. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare alla **i** e ridigitarla. Verrà nuovamente visualizzata la finestra di **IntelliSense**.
 
      ![Codice Visual C&#35;](../ide/media/express-highlighttrue.png "Express_HighlightTrue") Codice Visual C#
 
-4. Successivamente, si utilizza IntelliSense per immettere altro codice per aprire la finestra di dialogo **Apri file**. Se l'utente ha fatto clic sul pulsante **OK**, nel controllo PictureBox verrà caricato il file selezionato dall'utente. Nei passaggi seguenti viene illustrato come immettere il codice. Sebbene i passaggi siano numerosi, si tratta solo di poche sequenze di tasti:
+4. Viene quindi usato IntelliSense per immettere altro codice per aprire una finestra **Apri file**. Se l'utente ha fatto clic sul pulsante **OK**, il controllo PictureBox carica il file selezionato dall'utente. Nei passaggi seguenti viene illustrato come immettere il codice. Sebbene i passaggi siano numerosi, si tratta solo di poche sequenze di tasti:
 
     1. Iniziare con il testo **true** selezionato nel frammento. Digitare `op` per sovrascriverlo. In Visual Basic l'iniziale è maiuscola, pertanto digitare `Op`.
 
@@ -49,10 +49,10 @@ In questo passaggio si imposta il funzionamento del pulsante **Visualizza immagi
 
          Per altre informazioni su `OpenFileDialog`, vedere [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).
 
-    3. Digitare un punto (`.`) (molti programmatori chiamano questo punto). Poiché è stato digitato un punto subito dopo **OpenFileDialog1**, viene visualizzata una finestra di **IntelliSense** , compilata con tutte le proprietà e i metodi del componente **OpenFileDialog** . Si tratta delle stesse proprietà visualizzate nel finestra **Proprietà** quando si fa clic su di esse in Progettazione Windows Form. È inoltre possibile scegliere metodi che indicano al componente di eseguire operazioni (ad esempio, aprire una finestra di dialogo).
+    3. Digitare un punto (`.`) (molti programmatori chiamano questo punto). Poiché è stato digitato un punto subito dopo **OpenFileDialog1**, viene visualizzata una finestra di **IntelliSense** , compilata con tutte le proprietà e i metodi del componente **OpenFileDialog** . Si tratta delle stesse proprietà visualizzate nel finestra **Proprietà** quando si sceglie la finestra in Progettazione Windows Form. È inoltre possibile scegliere metodi che indicano al componente di eseguire operazioni (ad esempio, aprire una finestra di dialogo).
 
         > [!NOTE]
-        > Nella finestra di **IntelliSense** possono essere visualizzati sia proprietà che metodi. Per determinare gli elementi visualizzati, esaminare l'icona a sinistra di ogni elemento nella finestra **IntelliSense**. È visualizzata l'immagine di un blocco accanto a ogni metodo e l'immagine di una chiave inglese (o di una chiave fissa) accanto a ogni proprietà. È anche visualizzata un'icona a forma di saetta accanto a ogni evento. Queste immagini vengono visualizzate nel modo seguente.
+        > Nella finestra di **IntelliSense** possono essere visualizzati sia proprietà che metodi. Per determinare gli elementi visualizzati, osservare l'icona a sinistra di ogni elemento nella finestra **IntelliSense**. È visualizzata l'immagine di un blocco accanto a ogni metodo e l'immagine di una chiave inglese (o di una chiave fissa) accanto a ogni proprietà. È anche visualizzata un'icona a forma di saetta accanto a ogni evento. Queste immagini vengono visualizzate nel modo seguente.
 
          ![Icona del metodo](../ide/media/express-iconmethod.png "Express_IconMethod") Icona del metodo
 
@@ -74,7 +74,7 @@ In questo passaggio si imposta il funzionamento del pulsante **Visualizza immagi
     7. Aggiungere un altro spazio. Viene immediatamente visualizzata un'altra finestra di **IntelliSense**. Iniziare a digitare `DialogResult` e premere TAB per aggiungerlo.
 
         > [!NOTE]
-        > Quando si scrive codice per chiamare un metodo, a volte viene restituito un valore. In questo caso, il metodo **del componente**OpenFileDialog`ShowDialog()` restituisce il valore DialogResult. DialogResult è un valore speciale che fornisce informazioni sulle operazioni eseguite in una finestra di dialogo. Un componente **OpenFileDialog** può far sì che l'utente scelga **OK** o **Annulla**, pertanto il relativo metodo `ShowDialog()` restituisce DialogResult.OK o DialogResult.Cancel.
+        > Quando si scrive codice per chiamare un metodo, a volte viene restituito un valore. In questo caso il metodo **del componente**OpenFileDialog`ShowDialog()` restituisce un valore DialogResult. DialogResult è un valore speciale che fornisce informazioni sulle operazioni eseguite in una finestra di dialogo. Un componente **OpenFileDialog** può far sì che l'utente scelga **OK** o **Annulla**, pertanto il relativo metodo `ShowDialog()` restituisce DialogResult.OK o DialogResult.Cancel.
 
     8. Digitare un punto per aprire la finestra di **IntelliSense** del valore DialogResult. Immettere la lettera `O` e premere TAB per inserire **OK**.
 

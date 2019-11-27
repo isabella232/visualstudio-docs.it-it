@@ -67,13 +67,13 @@ Lo strumento Editor colori estensione Visual Studio consente di creare e modific
   
 - Attivo  
   
-- Inattivo  
+- Inactive  
   
 - MouseOver  
   
 - MouseDown  
   
-- Selezionato  
+- Selected  
   
 - Con stato attivo  
   
@@ -190,7 +190,7 @@ namespace MyCustomColors
 ## <a name="notes"></a>Note  
  Questo strumento può essere usato per creare colori personalizzati per i temi di Visual Studio preesistenti o per modificare i colori di un tema di Visual Studio personalizzato. Per creare temi personalizzati completi di Visual Studio, scaricare l' [estensione Visual Studio color Theme Editor](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) dalla raccolta estensioni di Visual Studio.  
   
-## <a name="sample-output"></a>Esempio di output  
+## <a name="sample-output"></a>Output di esempio  
  **Output del colore XML**  
   
  Il file XML generato dallo strumento sarà simile al seguente:  

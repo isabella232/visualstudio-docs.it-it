@@ -44,7 +44,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
@@ -107,7 +107,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 7. Nella pagina **Seleziona oggetti di database** espandere **Tabelle**, quindi selezionare la tabella **SalesOrderHeader**.
 
-8. Scegliere **Fine**.
+8. Fare clic su **Fine**.
 
 ## <a name="create-the-service"></a>Creare il servizio
  Creare una [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] per esporre i dati nel Entity Data Model a un'applicazione WPF.
@@ -116,7 +116,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 1. Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
 
-2. Nell'elenco Modelli installati fare clic su **Web**, quindi selezionare l'elemento di progetto **WCF Data Services**.
+2. Nell'elenco modelli installati fare clic su **Web**, quindi selezionare l'elemento del progetto **WCF Data Services** .
 
 3. Nella casella **nome** Digitare `AdventureWorksService.svc`e fare clic su **Aggiungi**.
 
@@ -180,7 +180,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 #### <a name="to-create-the-window-layout"></a>Per creare il layout della finestra
 
-1. In **Esplora soluzioni** fare doppio clic su MainWindow.xaml.
+1. In **Esplora soluzioni**fare doppio clic su MainWindow. XAML.
 
      La finestra verrà aperta in WPF Designer.
 
@@ -196,7 +196,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. Compilare il progetto.
+3. Compilazione del progetto.
 
 ## <a name="create-the-data-bound-controls"></a>Creare i controlli associati a dati
  Creare controlli che consentono di visualizzare i record dei clienti trascinando il nodo `SalesOrderHeaders` dalla finestra **origini dati** alla finestra di progettazione.
@@ -273,7 +273,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
 ## <a name="saving-changes-to-sales-records"></a>Salvataggio delle modifiche ai record delle vendite
- Aggiungere il codice che consente agli utenti di visualizzare e salvare le modifiche ai record delle vendite usando il pulsante **Salva modifiche**.
+ Aggiungere il codice che consente agli utenti di visualizzare e salvare le modifiche ai record delle vendite usando il pulsante **Salva modifiche** .
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Per aggiungere la possibilità di salvare le modifiche ai record delle vendite
 
@@ -291,7 +291,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione
 
-1. Nel menu **Compila** fare clic su **Compila soluzione**. Verificare che la soluzione venga compilata senza errori.
+1. Scegliere **Compila soluzione**dal menu **Compila** . Verificare che la soluzione venga compilata senza errori.
 
 2. Premere **CTRL + F5**.
 

@@ -1,21 +1,21 @@
 ---
 title: Aumentare la produttività per lo sviluppo .NET
 description: Panoramica di esplorazione, analisi del codice, testing unità e altre funzionalità che consentono di scrivere codice .NET in modo più efficiente e veloce.
-author: kuhlenh
-ms.author: jillfra
+author: mikadumont
+ms.author: tglee
 manager: jillfra
-ms.date: 04/25/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652584"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491648"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -47,12 +47,13 @@ Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni d
 | **F12** (o **CTRL**+**clic**) | Vai a definizione | Consente di passare al punto in cui si trova la definizione di un simbolo |
 | **CTRL**+**F12** | Vai all'implementazione | Consente di passare da un tipo o membro di base alle varie implementazioni di questo. |
 | **MAIUSC**+**F12** | Trova tutti i riferimenti | Consente di visualizzare tutti i riferimenti di simboli o valori letterali |
+| **ALT**+**Home** | Vai alla base | Spostarsi verso l'alto nella catena di ereditarietà |
 | **CTRL**+ **.** (o **ALT**+**INVIO** in profilo C# ) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
 | **Ctrl**+**D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
 | **MAIUSC**+**ALT**+ **+** / **-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
 | **MAIUSC** + **ALT** +  **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
 | **CTRL**+**Q** | Cerca | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
-| **F5** | Avvia debug | Avvia il debug dell'applicazione |
+| **F5** | Avvio del debug | Avvia il debug dell'applicazione |
 | **CTRL**+**F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |
 | **CTRL**+**K**,**D** (profilo predefinito) o **CTRL**+**E**,**D** (profilo C#) | Formatta documento | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
 | **CTRL**+ **\\** ,**CTRL**+**E** (Profilo predefinito) o **CTRL**+**W**,**E** (Profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
@@ -95,6 +96,10 @@ Visual Studio offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**
 ::: moniker-end
 
 - La [funzionalità di inferenza del codice](/visualstudio/intellicode/code-style-inference) di IntelliCode per Visual Studio deduce gli stili del codice dal codice esistente. Viene quindi creato un file EditorConfig non vuoto con le preferenze di stile del codice già definite.
+
+- Configurare il livello di gravità di una regola di stile di codice direttamente tramite l'editor. Se al momento non si dispone di un file con estensione EditorConfig, ne verrà generato uno automaticamente. Posizionare il cursore su errore, avviso o suggerimento e digitare **Ctrl**+ **.** per aprire il menu azioni rapide e refactoring. Selezionare **Configura o non visualizzare problemi**. Selezionare quindi la regola e scegliere il livello di gravità che si vuole configurare per la regola. Il file EditorConfig esistente verrà così aggiornato con la nuova gravità della regola.
+
+   ![Configurare il livello di gravità di una regola di stile di codice direttamente nell'editor](../ide/media/configure-severity-level.png)
 
 Vedere la documentazione relativa alle [opzioni delle convenzioni per la scrittura del codice .NET](editorconfig-code-style-settings-reference.md), che contiene anche un esempio di file EditorConfig completo.
 
@@ -149,7 +154,7 @@ Diversi membri della community hanno scritto estensioni gratuite che aggiungono 
 
 Visual Studio include molte funzionalità che consentono di eseguire ricerche e di [esplorare il codice](../ide/navigating-code.md).
 
-| Funzionalità | Metodo rapido | Dettagli/Miglioramenti |
+| Caratteristica | Metodo rapido | Dettagli/Miglioramenti |
 |- | - | -|
 | Trova tutti i riferimenti | **MAIUSC**+**F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e tipo riferimento, ad esempio lettura o scrittura. È anche possibile "bloccare" i risultati. |
 | Vai all'implementazione | **CTRL**+**F12** | È possibile usare Vai a definizione nella parola chiave `override` per passare al membro sostituito |
@@ -221,7 +226,7 @@ Alcune delle funzionalità di debug di Visual Studio includono:
 
 Ecco un elenco di funzionalità editor e di produttività per rendere più efficiente la scrittura del codice. È possibile che alcune funzionalità debbano essere abilitate perché disabilitate per impostazione predefinita in quanto potrebbero indicizzare elementi del computer, essere controverse o essere ancora in forma sperimentale.
 
-| Funzionalità | Dettagli | Abilitazione |
+| Caratteristica | Dettagli | Abilitazione |
 |-|-|-|
 | Individuare il file in Esplora soluzioni | Evidenzia il file attivo in **Esplora soluzioni** | **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Tieni traccia degli elementi attivi in Esplora soluzioni** |
 | Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza una lampadina di errore con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti** > **Opzioni** > **Editor di testo** > **C#**  > **Avanzate** > **Suggerisci le direttive using per i tipi in assembly di riferimento** e **Suggerisci le direttive using per i tipi in pacchetti NuGet** |

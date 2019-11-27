@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024827"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538948"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -95,7 +95,7 @@ Gli indicatori a livello di elemento di codice consentono di vedere chi ha modif
 
 ![CodeLens- Ottenere la cronologia delle modifiche per il codice nel controllo della versione di Team Foundation](../ide/media/codelens-code-changes.png)
 
-Il periodo di tempo predefinito è 12 secondi. Se il codice è archiviato in Team Foundation Server, è possibile modificare il periodo di tempo eseguendo il [comando TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) con il [comando CodeIndex](../ide/codeindex-command.md) e il flag **/indexHistoryPeriod**.
+Il periodo di tempo predefinito è 12 secondi. Se il codice è archiviato in Team Foundation Server, è possibile modificare il periodo di tempo eseguendo il [comando TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd) con il [comando CodeIndex](../ide/codeindex-command.md) e il flag **/indexHistoryPeriod**.
 
 Per visualizzare una cronologia dettagliata di tutte le modifiche, comprese quelle di più di un anno fa, scegliere **Mostra tutte le modifiche apportate ai file**:
 
@@ -237,7 +237,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 7. Per vedere quante persone hanno modificato il test, gli autori delle modifiche o il numero di modifiche apportate al test, [individuare la cronologia del codice](#find-changes-in-your-code) e gli elementi collegati.
 
-## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
+## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
 
 Per usare la tastiera per selezionare gli indicatori, premere e tenere premuto il tasto **ALT** per visualizzare i tasti numerici correlati, quindi premere il numero che corrisponde all'indicatore da selezionare.
 
@@ -266,7 +266,7 @@ Attivare gli indicatori CodeLens a livello di file e disattivare l’utilizzo de
 
 - Assicurarsi che CodeLens sia attivato. Passare a **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**  >  **CodeLens**.
 
-- Se il codice è archiviato in TFS, assicurarsi che l'indicizzazione del codice sia attivata usando il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](/tfs/server/ref/command-line/tfsconfig-cmd).
+- Se il codice è archiviato in TFS, assicurarsi che l'indicizzazione del codice sia attivata usando il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](/azure/devops/server/command-line/tfsconfig-cmd).
 
 - Gli indicatori DevOps vengono visualizzati solo quando gli elementi di lavoro sono collegati al codice e quando l'utente è autorizzato ad aprire gli elementi di lavoro collegati. Assicurarsi di avere le [autorizzazioni dei membri del team](/azure/devops/organizations/security/view-permissions?view=vsts).
 
@@ -348,7 +348,7 @@ Per usare la tastiera:
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>D: È possibile gestire la modalità di elaborazione del codice in CodeLens per visualizzare la cronologia e gli elementi collegati?
 
-**R:** Sì. Se il codice è disponibile in TFS, usare il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](/tfs/server/ref/command-line/tfsconfig-cmd).
+**R:** Sì. Se il codice è disponibile in TFS, usare il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](/azure/devops/server/command-line/tfsconfig-cmd).
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>D: Gli indicatori test di CodeLens non vengono più visualizzati nel file quando si apre la soluzione per la prima volta. Come possono essere caricati?
 

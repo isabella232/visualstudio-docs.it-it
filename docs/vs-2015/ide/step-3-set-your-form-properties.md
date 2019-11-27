@@ -25,7 +25,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 
 ### <a name="to-set-your-form-properties"></a>Per impostare le proprietà del form
 
-1. Assicurarsi che sia visualizzato Progettazione Windows Form. Nell'ambiente di sviluppo integrato (IDE) di Visual Studio, scegliere la scheda **Form1.cs [Progettazione]** (o **Form1.vb [Progettazione]** in Visual Basic).
+1. Assicurarsi che sia visualizzato Progettazione Windows Form. Nell'ambiente di sviluppo integrato (IDE) di Visual Studio, scegliere la scheda **Form1.cs [Design]** (o **Form1.vb [Design]** in Visual Basic).
 
 2. Fare clic in qualsiasi punto all'interno del form **Form1** per selezionarlo. Analizzare la finestra **Proprietà**, che ora visualizza le proprietà per il form. I form dispongono di diverse proprietà. Ad esempio, è possibile impostare il colore primo piano e di sfondo, il testo del titolo visualizzato all'inizio del form, le dimensioni del form e altre proprietà.
 

@@ -82,7 +82,7 @@ Il contenuto di un contenitore BLOB viene visualizzato in una scheda nota come v
 
    Per aggiungere sottocartelle nelle cartelle del contenitore, seguire la stessa procedura. Se non si specifica un nome di cartella, il file viene caricato nel livello superiore del contenitore BLOB. Il file verrà visualizzato nella cartella specificata nel contenitore.
 
-   ![Cartella aggiunta a un contenitore BLOB](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![Aggiunta di una cartella a un contenitore BLOB](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
 1. Fare doppio clic sulla cartella o premere INVIO per visualizzare il contenuto della cartella. Dalla cartella del contenitore è possibile tornare alla radice del contenitore selezionando il pulsante **Apri directory padre** (freccia).
 
@@ -110,7 +110,7 @@ In Cloud Explorer usare una delle procedure seguenti:
 * Selezionare il nome del BLOB e quindi scegliere il pulsante **Apri**.
 * Fare doppio clic sul nome del BLOB.
 
-Lo stato di avanzamento di un download di BLOB viene visualizzato nella finestra **Log attività di Azure** .
+Lo stato di un download del BLOB viene visualizzato nella finestra **Log attività di Azure**.
 
 Il BLOB viene aperto nell'editor predefinito per il tipo di file. Se il sistema operativo riconosce il tipo di file, il file viene aperto in un'applicazione installata in locale. In caso contrario, viene richiesto di scegliere un'applicazione appropriata per il tipo di file del BLOB. Il file locale creato durante il download di un BLOB è contrassegnato come di sola lettura.
 
@@ -142,7 +142,7 @@ Il file viene scaricato in un percorso temporaneo e aperto nel computer locale. 
 
 ## <a name="work-with-queue-resources"></a>Usare le risorse di accodamento
 
-Le code dei servizi di archiviazione sono ospitate in un account di archiviazione di Azure. È possibile usarle per consentire ai ruoli del servizio cloud di comunicare reciprocamente e con altri servizi attraverso un meccanismo di trasferimento dei messaggi. È possibile accedere alla coda a livello di programmazione con un servizio cloud e con un servizio Web per i client esterni. È anche possibile accedere alla coda direttamente usando Esplora server in Visual Studio.
+Le code dei servizi di archiviazione sono ospitate in un account di archiviazione di Azure. È possibile usarle per consentire ai ruoli del servizio cloud di comunicare reciprocamente e con altri servizi attraverso un meccanismo di trasferimento dei messaggi. È possibile accedere alla coda a livello di programmazione con un servizio cloud e con un servizio Web per i client esterni. È inoltre possibile accedere alla coda direttamente tramite Esplora server in Visual Studio.
 
 Quando si sviluppa un servizio cloud che usa le code, è possibile usare Visual Studio per creare le code e usarle in modo interattivo durante lo sviluppo e il test del codice.
 
@@ -200,7 +200,7 @@ Le entità di una tabella non devono avere lo stesso set di proprietà (colonne)
 
     ![Pulsante Aggiungi entità](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Nella finestra di dialogo **Aggiungi entità** immettere i valori delle proprietà **PartitionKey** e **RowKey**.
+1. Nella finestra di dialogo **Aggiungi entità** immettere i valori per le proprietà **PartitionKey** e **RowKey**.
 
     ![Finestra di dialogo Aggiungi entità](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Se si usa il generatore di query, è possibile personalizzare il set di entità 
 1. Per aprire il generatore di query, visualizzare prima una tabella.
 1. Scegliere il pulsante **Generatore di query** nella barra degli strumenti della visualizzazione tabella.
 
-    Viene visualizzata la finestra di dialogo **Generatore di query** . La figura seguente mostra una query compilata nel generatore di query.
+    Verrà visualizzata la finestra di dialogo **Generatore di query**. La figura seguente mostra una query compilata nel generatore di query.
 
     ![Generatore di query](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Una volta compilata la query, chiudere la finestra di dialogo. La query risultante in formato testo viene visualizzata in una casella di testo come filtro di WCF Data Services.
@@ -249,7 +249,7 @@ Scegliere il nome dell'account e quindi selezionare il pulsante **Aggiorna** sul
 
 ## <a name="add-storage-accounts-by-using-server-explorer"></a>Aggiungere account di archiviazione usando Esplora server
 
-Sono disponibili due modi per aggiungere gli account di archiviazione usando Esplora server. È possibile creare un account di archiviazione nella sottoscrizione di Azure o è possibile collegarne uno esistente.
+Sono disponibili due modi per aggiungere gli account di archiviazione mediante Esplora server. È possibile creare un account di archiviazione nella sottoscrizione di Azure o è possibile collegarne uno esistente.
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Per creare un account di archiviazione usando Esplora server
 
@@ -259,12 +259,12 @@ Sono disponibili due modi per aggiungere gli account di archiviazione usando Esp
 
    * Sottoscrizione di Azure a cui aggiungere l'account di archiviazione.
    * Nome da usare per il nuovo account di archiviazione.
-   * Area o set di affinità (ad esempio Stati Uniti occidentali o Asia orientale).
+   * Area o gruppo di affinità (ad esempio Stati Uniti occidentali o Asia orientale).
    * Tipo di replica da usare per l'account di archiviazione, ad esempio con ridondanza locale.
 
    ![Creare un account di archiviazione di Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Scegliere **Crea**.
+1. Selezionare **Crea**.
 
 Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione** di Esplora soluzioni.
 
@@ -283,7 +283,7 @@ Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione
 
 Se è stato creato un account di archiviazione con l'opzione di replica **Archiviazione con ridondanza geografica e accesso in lettura**, è possibile visualizzare gli endpoint secondari aprendo il menu di scelta rapida relativo al nome dell'account e quindi selezionando **Proprietà**.
 
-![Endpoint secondari di archiviazione](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
+![Endpoint di archiviazione secondari](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 
 ### <a name="to-remove-a-storage-account-from-server-explorer"></a>Per rimuovere un account di archiviazione da Esplora server
 

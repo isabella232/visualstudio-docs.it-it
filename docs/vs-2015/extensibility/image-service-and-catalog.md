@@ -106,8 +106,8 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |-|-|  
 |**Sottoelemento**|**Definizione**|  
 |Import|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|  
-|GUID|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID|  
-|Id|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
+|Guid|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID|  
+|ID|Il simbolo rappresenta un ID e deve essere un numero intero non negativo|  
 |String|Il simbolo rappresenta un valore stringa arbitrario|  
 
  Per i simboli viene fatta distinzione tra maiuscole e minuscole e viene fatto riferimento tramite la sintassi $ (symbol-name):  
@@ -147,8 +147,8 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|GUID|Necessaria Parte GUID del moniker dell'immagine|  
-|Id|Necessaria Parte relativa all'ID del moniker dell'immagine|  
+|Guid|Necessaria Parte GUID del moniker dell'immagine|  
+|ID|Necessaria Parte relativa all'ID del moniker dell'immagine|  
 |AllowColorInversion|[Facoltativo, valore predefinito true] Indica se i colori dell'immagine possono essere invertiti a livello di codice quando vengono utilizzati in uno sfondo scuro.|  
 
  **Origine**  
@@ -165,7 +165,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attributo** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               Necessaria URI che definisce dove è possibile caricare l'immagine. Può essere uno dei seguenti:<br /><br /> : [URI di pacchetto](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa                                                                                                                                                                                                                                                                                                               |
-|  Sfondo   | Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em> L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine. |
+|  Background   | Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> Può essere uno dei seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> <em>Scuro:</em> L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Un elemento \<> source può avere esattamente uno dei seguenti sottoelementi facoltativi:  
@@ -173,8 +173,8 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 ||||  
 |-|-|-|  
 |**Elemento**|**Attributi (tutti necessari)**|**Definizione**|  
-|Dimensioni \<>|Value|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|  
-|\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|  
+|Dimensioni \<>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|  
+|\<SizeRange >|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|  
 |Dimensioni \<>|Width, Height|L'origine verrà usata per le immagini della larghezza e dell'altezza specificate (in unità dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà usata per le immagini dalla larghezza/altezza minima alla larghezza/altezza massima (in unità dispositivo), inclusi.|  
 
@@ -187,8 +187,8 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|Digitare|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|  
-|Id|Necessaria Parte relativa all'ID integer della risorsa nativa|  
+|Type|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|  
+|ID|Necessaria Parte relativa all'ID integer della risorsa nativa|  
 
  **ImageList**  
 
@@ -204,8 +204,8 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|GUID|Necessaria Parte GUID del moniker dell'immagine|  
-|Id|Necessaria Parte relativa all'ID del moniker dell'immagine|  
+|Guid|Necessaria Parte GUID del moniker dell'immagine|  
+|ID|Necessaria Parte relativa all'ID del moniker dell'immagine|  
 |Altre informazioni|[Facoltativo, valore predefinito false] Indica se il moniker dell'immagine fa riferimento a un'immagine nel manifesto corrente.|  
 
  Il moniker per l'immagine contenuta non deve fare riferimento a un'immagine definita nel manifesto corrente. Se non è possibile trovare l'immagine contenuta nella libreria di immagini, al suo posto verrà utilizzata un'immagine segnaposto vuota.  
@@ -215,35 +215,35 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 ### <a name="first-steps-managed"></a>Primi passaggi (gestiti)  
  Per usare il servizio immagini, è necessario aggiungere al progetto i riferimenti ad alcuni o a tutti gli assembly seguenti:  
 
-- **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **Microsoft. VisualStudio. ImageCatalog. dll**  
 
   - Obbligatorio se si usa il catalogo immagini predefinito KnownMonikers  
 
-- **Microsoft.VisualStudio.Imaging.dll**  
+- **Microsoft. VisualStudio. Imaging. dll**  
 
   - Obbligatorio se si usano **CrispImage** e **ImageThemingUtilities** nell'interfaccia utente di WPF  
 
-- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **Microsoft. VisualStudio. Imaging. Interop. 14.0. DesignTime. dll**  
 
   - Obbligatorio se si usano i tipi **ImageMoniker** e **ImageAttributes**  
 
   - **EmbedInteropTypes** deve essere impostato su true  
 
-- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **Microsoft. VisualStudio. Shell. Interop. 14.0. DesignTime**  
 
   - Obbligatorio se si usa il tipo **IVsImageService2**  
 
   - **EmbedInteropTypes** deve essere impostato su true  
 
-- **Microsoft.VisualStudio.Utilities.dll**  
+- **Microsoft. VisualStudio. Utilities. dll**  
 
   - Obbligatorio se si usa **BrushToColorConverter** per ImageThemingUtilities. **ImageBackgroundColor** nell'interfaccia utente di WPF  
 
-- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
+- **Microsoft. VisualStudio. Shell.\<VSVersion >. 0**  
 
   - Obbligatorio se si usa il tipo **IVsUIObject**  
 
-- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **Microsoft. VisualStudio. Shell. Interop. 10.0. dll**  
 
   - Obbligatorio se si usano gli helper dell'interfaccia utente correlati a WinForms  
 
@@ -252,29 +252,29 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 ### <a name="first-steps-native"></a>Primi passaggi (nativi)  
  Per usare il servizio immagini, è necessario includere nel progetto alcune o tutte le intestazioni seguenti:  
 
-- **KnownImageIds.h**  
+- **KnownImageIds. h**  
 
   - Obbligatorio se si usa il catalogo immagini predefinito **KnownMonikers**, ma non è possibile usare il tipo **ImageMoniker** , ad esempio quando si restituiscono valori da **IVsHierarchy GetGuidProperty** o chiamate **GetProperty** .  
 
-- **KnownMonikers.h**  
+- **KnownMonikers. h**  
 
   - Obbligatorio se si usa il catalogo immagini predefinito **KnownMonikers**.  
 
-- **ImageParameters140.h**  
+- **ImageParameters140. h**  
 
   - Obbligatorio se si usano i tipi **ImageMoniker** e **ImageAttributes** .  
 
-- **VSShell140.h**  
+- **VSShell140. h**  
 
   - Obbligatorio se si usa il tipo **IVsImageService2** .  
 
-- **ImageThemingUtilities.h**  
+- **ImageThemingUtilities. h**  
 
   - Obbligatorio se non si è in grado di consentire al servizio immagini di gestire l'utente.  
 
   - Non usare questa intestazione se il servizio immagini è in grado di gestire le immagini.  
 
-- **VSUIDPIHelper.h**  
+- **VSUIDPIHelper. h**  
 
   - Obbligatorio se si usano gli helper DPI per ottenere il valore DPI corrente.  
 
@@ -654,7 +654,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="additional-resources"></a>Risorse aggiuntive  
 
-### <a name="samples"></a>Esempi  
+### <a name="samples"></a>Samples  
  Molti degli esempi di Visual Studio su GitHub sono stati aggiornati per illustrare come usare il servizio immagini come parte dei diversi punti di estendibilità di Visual Studio.  
 
  Controllare [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) per gli esempi più recenti.  
@@ -674,7 +674,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  Lo strumento Visualizzatore libreria immagini consente di caricare manifesti di immagini e di modificarli nello stesso modo in cui Visual Studio può verificare che il manifesto venga creato correttamente. L'utente può modificare sfondo, dimensioni, impostazioni DPI, Contrasto elevato e altre impostazioni. Vengono inoltre visualizzate le informazioni di caricamento per individuare gli errori nei manifesti e vengono visualizzate le informazioni sull'origine per ogni immagine nel manifesto.  
 
-## <a name="faq"></a>Domande frequenti  
+## <a name="faq"></a>DOMANDE FREQUENTI  
 
 - Sono presenti dipendenze che è necessario includere durante il caricamento di \<riferimento include = "Microsoft. VisualStudio. *. Interop. 14.0. DesignTime "/>?  
 
@@ -948,7 +948,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|  
     |GlyphGroupError||StatusError|  
     |GlyphBscFile||ClassFile|  
-    |GlyphAssembly||Riferimenti|  
+    |GlyphAssembly||Riferimento|  
     |GlyphLibrary||Libreria|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
@@ -965,7 +965,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphRecursion||Ricorsione|  
     |GlyphXmlItem||Tag|  
     |GlyphJSharpProject||DocumentCollection|  
-    |GlyphJSharpDocument||Document|  
+    |GlyphJSharpDocument||Documento|  
     |GlyphForwardType||GoToNext|  
     |GlyphCallersGraph||CallTo|  
     |GlyphCallGraph||CallFrom|  

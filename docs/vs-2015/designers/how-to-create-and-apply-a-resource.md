@@ -30,7 +30,7 @@ Stili e modelli per gli elementi nella finestra di progettazione XAML vengono ar
 
 1. Con un file XAML aperto nella finestra di progettazione XAML, creare un elemento oppure scegliere un elemento nella finestra Struttura documento.
 
-2. Nella finestra Proprietà scegliere il marcatore della proprietà, rappresentato da un simbolo di casella a destra del valore di una proprietà, quindi scegliere **Converti in nuova risorsa**. Un simbolo di casella bianca indica un valore predefinito, mentre un simbolo di casella nera indica in genere che è stata applicata una risorsa locale.
+2. Nella finestra Proprietà scegliere il marcatore della proprietà, rappresentato da un simbolo di casella a destra del valore di una proprietà e quindi scegliere **Converti in nuova risorsa**. Un simbolo di casella bianca indica un valore predefinito, mentre un simbolo di casella nera indica in genere che è stata applicata una risorsa locale.
 
      Verrà visualizzata la finestra di dialogo appropriata per la creazione di una risorsa. Questa finestra di dialogo viene visualizzata quando si crea una risorsa da un pennello:
 
@@ -40,32 +40,32 @@ Stili e modelli per gli elementi nella finestra di progettazione XAML vengono ar
 
 4. In **Posizione definizione** scegliere l'opzione che specifica dove si vuole definire la risorsa:
 
-    - Per rendere la risorsa disponibile per qualsiasi documento nell'applicazione, scegliere **Applicazione**.
+    - Per rendere disponibile la risorsa per qualsiasi documento nell'applicazione, scegliere **Applicazione**.
 
-    - Per rendere la risorsa disponibile solo per il documento corrente, scegliere **Documento corrente**.
+    - Per rendere disponibile la risorsa solo per il documento corrente, scegliere **Documento corrente**.
 
-    - Per rendere la risorsa disponibile solo per l'elemento da cui è stata creata o per i relativi elementi figlio, scegliere **Documento corrente** e nell'elenco a discesa selezionare *elemento*: *nome*.
+    - Per rendere disponibile la risorsa solo per l'elemento da cui è stata creata o per i relativi elementi figlio, scegliere **Documento corrente** e nell'elenco a discesa selezionare *elemento*: *nome*.
 
     - Per definire la risorsa in un file di dizionario risorse riutilizzabile in altri progetti, fare clic su **Dizionario risorse** e quindi selezionare un file di dizionario risorse esistente, ad esempio **StandardStyles.xaml**, nell'elenco a discesa.
 
-5. Fare clic sul pulsante **OK** per creare la risorsa e applicarla all'elemento da cui è stata creata.
+5. Scegliere **OK** per creare la risorsa e applicarla all'elemento da cui è stata creata.
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Per applicare una risorsa a un elemento o a una proprietà
 
 1. Nella finestra Struttura documento scegliere l'elemento a cui si vuole applicare una risorsa.
 
-2. Effettuare una delle operazioni riportate di seguito:
+2. Esegui una delle operazioni seguenti:
 
    - Applicare una risorsa a una proprietà. Nella finestra Proprietà scegliere il marcatore della proprietà accanto al valore della proprietà, quindi scegliere **Risorsa locale** o **Risorsa di sistema** e infine selezionare una risorsa disponibile dall'elenco visualizzato.
 
       Se una risorsa che si prevede di vedere non viene visualizzata, è possibile che il tipo della risorsa non corrisponda al tipo della proprietà.
 
-   - Applicare uno stile o una risorsa modello di controllo a un controllo. Aprire il menu di scelta rapida per un controllo nella finestra Struttura documento, scegliere **Modifica modello** o **Modifica modelli aggiuntivi**, scegliere **Applica risorsa** e quindi scegliere il nome del modello di controllo nell'elenco visualizzato.
+   - Applicare uno stile o una risorsa modello di controllo a un controllo. Aprire il menu di scelta rapida per un controllo nella finestra Struttura documento, scegliere **Modifica modello** o **Modifica modelli aggiuntivi**, quindi scegliere **Applica risorsa** e infine selezionare il nome del modello di controllo dall'elenco visualizzato.
 
      > [!NOTE]
      > L'opzione **Modifica modello** consente di applicare modelli di controllo. L'opzione **Modifica modelli aggiuntivi** consente di applicare altri tipi di modelli.
 
-     Le risorse possono essere applicate in qualsiasi posizione compatibile. Ad esempio, è possibile applicare una risorsa pennello alla proprietà **Foreground** di un controllo <xref:Windows.UI.Xaml.Controls.TextBox>.
+     Le risorse possono essere applicate in qualsiasi posizione compatibile. Ad esempio, una risorsa pennello può essere applicata alla proprietà **Foreground** di un controllo <xref:Windows.UI.Xaml.Controls.TextBox>.
 
 ### <a name="to-edit-a-resource"></a>Per modificare una risorsa
 

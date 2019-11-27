@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
-ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
-ms.translationtype: HT
+ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141185"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491613"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -41,7 +41,7 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
         BeforeTargets="Targets"
         AfterTargets="Targets"
         DependsOnTargets="DependentTarget"
-        Condition="'String A' == 'String B'">
+        Condition="'String A' == 'String B'"
         Label="Label">
     <Task>... </Task>
     <PropertyGroup>... </PropertyGroup>
@@ -51,11 +51,11 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|DESCRIZIONE|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Name`|Attributo obbligatorio.<br /><br /> Nome della destinazione.|
 |`Condition`|Attributo facoltativo.<br /><br /> La condizione da valutare. Se la condizione restituisce `false`, la destinazione non eseguirà il corpo della destinazione o di eventuali destinazioni impostate nell'attributo `DependsOnTargets`. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
@@ -68,22 +68,22 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
 |`DependsOnTargets`|Attributo facoltativo.<br /><br /> Destinazioni che devono essere eseguite prima che possa essere eseguita questa destinazione o un'analisi delle dipendenze di primo livello. Se si specificano più destinazioni, usare il punto e virgola per separarle.|
 |`Label`|Attributo facoltativo.<br /><br /> Identificatore che può identificare o ordinare elementi di sistema e utente.|
 
-### <a name="child-elements"></a>Elementi figlio
+### <a name="child-elements"></a>Elemento figlio
 
-| Elemento | DESCRIZIONE |
+| Elemento | Descrizione |
 | - | - |
-| [Task](../msbuild/task-element-msbuild.md) | Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Possono esistere zero o più attività in una destinazione. |
+| [Attività](../msbuild/task-element-msbuild.md) | Crea ed esegue un'istanza di un'attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Possono esistere zero o più attività in una destinazione. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Contiene un set di elementi `Property` definiti dall'utente. A partire da .NET Framework 3.5, un elemento `Target` può contenere elementi `PropertyGroup`. |
-| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Contiene un set di elementi `Item` definiti dall'utente. A partire da .NET Framework 3.5, un elemento `Target` può contenere elementi `ItemGroup`. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md). |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Contiene un set di elementi `Item` definiti dall'utente. A partire da .NET Framework 3.5, un elemento `Target` può contenere elementi `ItemGroup`. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi). |
 | [OnError](../msbuild/onerror-element-msbuild.md) | Fa in modo che venga eseguita una o più destinazioni se l'attributo `ContinueOnError` è ErrorAndStop (o `false`) per un'attività non riuscita. Possono esistere zero o più elementi `OnError` in una destinazione. Se sono presenti elementi `OnError`, devono essere gli ultimi elementi nell'elemento `Target`.<br /><br /> Per altre informazioni sull'attributo `ContinueOnError`, vedere [Elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). |
 
 ### <a name="parent-elements"></a>Elementi padre
 
-| Elemento | DESCRIZIONE |
+| Elemento | Descrizione |
 | - | - |
-| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  La prima destinazione da eseguire viene specificata in fase di esecuzione. Le destinazioni possono avere dipendenze da altre destinazioni. Ad esempio, una destinazione per la distribuzione dipende da una destinazione per la compilazione. Il motore [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] esegue le dipendenze nell'ordine in cui vengono visualizzate nell'attributo `DependsOnTargets`, da sinistra a destra. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).
 
  MSBuild si basa sull'ordine di importazione e l'ultima definizione di una destinazione con un attributo `Name` specifico diventa l'ultima definizione usata.

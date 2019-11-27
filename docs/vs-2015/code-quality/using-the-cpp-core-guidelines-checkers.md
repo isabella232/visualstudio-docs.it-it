@@ -97,7 +97,7 @@ int main()
 **c:\utenti\nomeutente\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): Warning C26494: la variabile ' arr ' è uninitializ**  
 **ed. inizializzare sempre un oggetto. (Type. 5: https://go.microsoft.com/fwlink/p/?Link**  
-**ID=620421)**  
+**ID = 620421)**  
 **c:\utenti\nomeutente\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): Warning C26485: espressione ' arr ': nessuna matrice**  
 **decadimento del puntatore. (limiti. 3: https://go.microsoft.com/fwlink/p/?LinkID=620415)**  

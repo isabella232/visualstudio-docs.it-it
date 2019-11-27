@@ -41,7 +41,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
@@ -73,7 +73,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 6. Nella casella **Nome** digitare `AdventureWorksOrdersViewer`.
 
-7. Fare clic su **OK**.
+7. fare clic su **OK**.
 
      Visual Studio crea il progetto `AdventureWorksOrdersViewer`.
 
@@ -88,15 +88,15 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
 3. Nella pagina **scegliere un modello di database** fare clic su **Entity Data Model**e quindi su **Avanti**.
 
-4. Nella pagina **Scegli contenuto Model** fare clic su **Genera da database**, quindi su **Avanti**.
+4. Nella pagina **Scegli contenuto Model** fare clic su **genera da database**, quindi fare clic su **Avanti**.
 
 5. Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
    - Selezionare la connessione dati al database di esempio AdventureWorksLT nell'elenco a discesa, se presente.
 
-      oppure
+      -oppure-
 
-   - Fare clic su **Nuova connessione** e creare una connessione al database AdventureWorksLT.
+   - Fare clic su **nuova connessione** e creare una connessione al database AdventureWorksLT.
 
      Assicurarsi che l'opzione **Salva le impostazioni di connessione dell'entità in app. config come** sia selezionata, quindi fare clic su **Avanti**.
 
@@ -106,22 +106,22 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **SalesOrderHeader**
 
-7. Scegliere **Fine**.
+7. Fare clic su **Fine**.
 
-8. Compilare il progetto.
+8. Compilazione del progetto.
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Creazione di controlli associati a dati che visualizzano gli ordini
  Creare controlli che consentono di visualizzare i record degli ordini trascinando l'entità `SalesOrderHeaders` dalla finestra **origini dati** a WPF Designer.
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Per creare controlli associati a dati che visualizzano i record degli ordini
 
-1. In **Esplora soluzioni** fare doppio clic su MainWindow.xaml.
+1. In **Esplora soluzioni**fare doppio clic su MainWindow. XAML.
 
     La finestra verrà aperta in WPF Designer.
 
 2. Modificare il codice XAML in modo che le proprietà **Height** e **Width** siano impostate su 800
 
-3. Nella finestra **Origini dati** fare clic sul menu a discesa del nodo **SalesOrderHeaders** e selezionare **Dettagli**.
+3. Nella finestra **origini dati** fare clic sul menu a discesa del nodo **SalesOrderHeaders** e selezionare **Details**.
 
 4. Espandere il nodo **SalesOrderHeaders**.
 
@@ -139,7 +139,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
    - **CreditCardApprovalCode**
 
-   - **SubTotal**
+   - **Subtotale**
 
    - **TaxAmt**
 
@@ -187,7 +187,7 @@ In questa procedura dettagliata verrà creata un'applicazione WPF che Visualizza
 
     Visual Studio genera XAML per definire un nuovo controllo <xref:System.Windows.Controls.DataGrid> associato a dati e il controllo viene visualizzato nella finestra di progettazione. Visual Studio aggiorna anche il metodo di `GetSalesOrderHeadersQuery` generato nel file code-behind per includere i dati nell'entità **SalesOrderDetails** .
 
-## <a name="testing-the-application"></a>Verifica dell'applicazione
+## <a name="testing-the-application"></a>Test dell'applicazione
  Compilare ed eseguire l'applicazione per verificare che vengano visualizzati i record degli ordini.
 
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione

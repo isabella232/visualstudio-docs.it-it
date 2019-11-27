@@ -38,7 +38,7 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
 - [Creare un tracciato di ritaglio](#Clipping)
 
 ## <a name="Shape"></a> Disegnare una forma
- Le forme sono disponibili nel pannello **Asset**.
+ Le forme sono disponibili nel pannello **Asset** .
 
  ![Categoria forme nel pannello Asset](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
 
@@ -47,14 +47,14 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")
 
 ## <a name="Path"></a> Disegnare un tracciato
- Un tracciato è costituito da una serie di linee e curve collegate. Usare un tracciato per creare forme interessanti, non disponibili nel pannello **Asset**.
+ Un tracciato è costituito da una serie di linee e curve collegate. Usare un tracciato per creare forme interessanti, non disponibili nel pannello **Asset** .
 
- È possibile disegnare un tracciato usando una riga, una penna o una matita. Questi strumenti sono disponibili nel pannello **Strumenti**.
+ È possibile disegnare un tracciato usando una riga, una penna o una matita. Questi strumenti sono disponibili nel pannello **Strumenti** .
 
  ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")
 
 ### <a name="draw-a-straight-line"></a>Disegnare una linea retta
- Usare lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") oppure lo strumento **Linea**![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "linea eb618397-5283-48be-8396-3449be7b6fbf").
+ Utilizzare lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna oppure lo strumento ![ ](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "linea eb618397-5283-48be-8396-3449be7b6fbf")linea.
 
  **Uso dello strumento penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")
 
@@ -65,36 +65,36 @@ Nella finestra di progettazione XAML una *forma* indica esattamente una forma. A
  Nella tavola da disegno trascinare il puntatore dal punto in cui si vuole che abbia inizio la riga e quindi rilasciare il puntatore nel punto in cui si vuole che termini la linea.
 
 ### <a name="draw-a-curve"></a>Disegnare una curva
- Usare lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
+ Usare lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna.
 
  Nella tavola da disegno fare clic una volta per definire il punto di inizio di una linea, quindi fare clic e trascinare il puntatore per creare la curva desiderata.
 
  Per chiudere il tracciato, fare clic sul primo punto della linea.
 
 ### <a name="change-the-shape-of-a-curve"></a>Cambiare la forma di una curva
- Usare lo strumento **Selezione diretta**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362").
+ Usare lo strumento ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362") **selezione diretta** .
 
  Fare clic sulla forma, quindi trascinare qualsiasi punto della forma per modificare le forme della curva.
 
 ### <a name="draw-a-free-form-path"></a>Disegnare un tracciato a mano libera
- Usare lo strumento **Matita**![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd").
+ Usare lo strumento ![ ](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")matita.
 
  Nella tavola da disegno disegnare un tracciato a mano libera, proprio come se si usasse una vera matita.
 
 ### <a name="remove-part-of-a-path"></a>Eliminare una parte di un tracciato
- Usare lo strumento **Selezione diretta**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362").
+ Usare lo strumento ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362") **selezione diretta** .
 
- Selezionare il tracciato contenente il segmento da eliminare, quindi fare clic su **Elimina**.
+ Selezionare il tracciato contenente il segmento da eliminare, quindi fare clic su **Elimina** .
 
 ### <a name="remove-a-point-in-a-path"></a>Rimuovere un punto da un tracciato
- Usare lo strumento **Selezione**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") e lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
+ Usare lo strumento ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa")selezione e lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna.
 
- Usare lo strumento **Selezione**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") per selezionare il tracciato. Usare quindi lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") per fare clic sul punto da rimuovere.
+ Usare lo strumento ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") selezione per selezionare il percorso. Usare quindi lo ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") strumento **penna** per fare clic sul punto che si vuole rimuovere.
 
 ### <a name="add-a-point-to-a-path"></a>Aggiungere un punto a un tracciato
- Usare lo strumento **Selezione**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") e lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
+ Usare lo strumento ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa")selezione e lo strumento ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")penna.
 
- Usare lo strumento **Selezione**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") per selezionare il tracciato. Usare lo strumento **Penna**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") per fare clic in un punto qualsiasi del tracciato in cui si vuole aggiungere il punto.
+ Usare lo strumento ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477E-4efa-a0f7-af20851e4daa") selezione per selezionare il percorso. Usare lo strumento ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") penna per fare clic in un punto qualsiasi del percorso in cui si vuole aggiungere il punto.
 
 ## <a name="Convert"></a> Convertire una forma in un tracciato
  Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato.
