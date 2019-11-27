@@ -35,12 +35,12 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 7. Creare il nome visualizzato dell'editore.  Questo è il nome univoco visualizzato per i clienti in associazione con le app, i componenti aggiuntivi e i servizi.
 8. Specificare le informazioni di contatto e la lingua preferita per la posta elettronica e quindi fare clic su **Avanti**.
 9. Può essere richiesto di verificare la password.  Immetterla e fare clic su **Accedi**.
-10. Nella pagina Registration - Payment (Registrazione - Pagamento) incollare il codice copiato in precedenza nel campo Codice promozionale.  La pagina verrà aggiornata per mostrare che *non è richiesto alcun pagamento*.  Fare clic su **Avanti**.
+10. Nella pagina Registration - Payment (Registrazione - Pagamento) incollare il codice copiato in precedenza nel campo Codice promozionale.  La pagina verrà aggiornata per mostrare che *non è richiesto alcun pagamento*.  Scegliere **Avanti**.
 11. Rivedere le informazioni dell'account e il contratto per gli sviluppatori di app, selezionare la casella di controllo per indicare l'accettazione dei termini e delle condizioni  e quindi fare clic su **Fine**.
 12. Fare clic su **Vai al dashboard** per iniziare a usare l'account per sviluppatore di Windows.
 
 ## <a name="eligibility"></a>Eligibility
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Inclusione       |  Sì|
 | Visual Studio Enterprise con GitHub Enterprise   | VL  | Inclusione       |  Sì|
@@ -60,7 +60,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto per l'uso dell'account per sviluppatore di Windows?  Vedere le risorse di [supporto](https://developer.microsoft.com/windows/support) in [Windows Dev Center](https://developer.microsoft.com/windows).
-- [Sviluppo per Windows](/windows/)
+- [Sviluppo in Windows](/windows/)
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 

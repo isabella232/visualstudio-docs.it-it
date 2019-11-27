@@ -46,7 +46,7 @@ Il processo di configurazione della sottoscrizione di CODE Magazine è semplice.
 Dopo aver completato l'ordine di sottoscrizione, viene visualizzata una pagina di conferma, che include un collegamento che è possibile usare per vedere quali problemi sono stati ricevuti: https://codemag.com/my/fulfillment. 
 
 ## <a name="eligibility"></a>Eligibility
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  No          |
 | Visual Studio Enterprise con GitHub Enterprise   | VL| Disponibile       |  No          |

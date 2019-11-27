@@ -16,7 +16,7 @@ ms.locfileid: "74485531"
 ---
 Con Visual Studio è possibile creare, eseguire il debug ed eseguire app .NET, ASP.NET e ASP.NET Core in contenitori e pubblicarli in Azure Container Registry (ACR), nell'hub Docker, nel servizio app Azure o nel registro contenitori. In questo articolo verrà pubblicata un'app ASP.NET Core in ACR.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) con il carico di lavoro **Sviluppo Web**, **Strumenti di Azure** e/o **Sviluppo multipiattaforma .NET Core** installato
@@ -97,7 +97,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 1. Scegliere **Crea nuovo Registro Azure Container** e fare clic su **Pubblica**.
 1. Inserire i valori desiderati in **Creare un nuovo Registro Azure Container**.
 
-    | Impostazioni      | Valore consigliato  | Descrizione                                |
+    | Impostazione di      | Valore consigliato  | Descrizione                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefisso DNS** | Nome globalmente univoco | Nome che identifica in modo univoco il registro contenitori. |
     | **Sottoscrizione** | Scegliere la sottoscrizione | La sottoscrizione di Azure da usare. |

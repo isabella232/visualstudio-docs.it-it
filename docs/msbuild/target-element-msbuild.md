@@ -68,7 +68,7 @@ Contiene un set di attività da eseguire in sequenza in [!INCLUDE[vstecmsbuild](
 |`DependsOnTargets`|Attributo facoltativo.<br /><br /> Destinazioni che devono essere eseguite prima che possa essere eseguita questa destinazione o un'analisi delle dipendenze di primo livello. Se si specificano più destinazioni, usare il punto e virgola per separarle.|
 |`Label`|Attributo facoltativo.<br /><br /> Identificatore che può identificare o ordinare elementi di sistema e utente.|
 
-### <a name="child-elements"></a>Elemento figlio
+### <a name="child-elements"></a>Elementi figlio
 
 | Elemento | Descrizione |
 | - | - |

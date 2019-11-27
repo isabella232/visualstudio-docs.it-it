@@ -247,7 +247,7 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ## <a name="please-give-feedback"></a>Invio di commenti e suggerimenti
  È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, esaminando singolarmente tutti quelli pervenuti nel proprio sistema e usandoli per migliorare i propri prodotti.
 
-### <a name="send-a-smile"></a>Invia smile
+### <a name="send-a-smile"></a>Inviare apprezzamenti
  L'invio di apprezzamenti consente a Microsoft di conoscere quali prodotti o funzionalità hanno soddisfatto o superato le aspettative dei clienti. Nella fase decisionale del processo di progettazione e implementazione di nuove funzionalità vengono infatti usati i dati relativi alle funzionalità più gradite. È per questo motivo che Microsoft invita i propri clienti a esprimere il proprio apprezzamento per una particolare funzionalità di Visual Studio. La procedura per farlo è semplice ed è possibile effettuare questa operazione direttamente dall'IDE.
 
  È sufficiente fare clic sulla faccina gialla sulla barra del titolo, indicare gli aspetti apprezzati e fare clic sul pulsante **Invia smile** .

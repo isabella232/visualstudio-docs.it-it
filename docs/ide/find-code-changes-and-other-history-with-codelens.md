@@ -61,7 +61,7 @@ Per scegliere gli indicatori da visualizzare o per abilitare o disabilitare Code
 
 3. Per aprire il file che contiene il riferimento, fare doppio clic sul riferimento.
 
-### <a name="code-maps"></a>Mappe codice
+### <a name="code-maps"></a>Mappe codici
 
 Per visualizzare le relazioni tra il codice e i relativi riferimenti, [creare una mappa del codice](../modeling/map-dependencies-across-your-solutions.md). Nel menu di scelta rapida della mappa del codice, selezionare **Mostra tutti i riferimenti**.
 
@@ -237,7 +237,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 7. Per vedere quante persone hanno modificato il test, gli autori delle modifiche o il numero di modifiche apportate al test, [individuare la cronologia del codice](#find-changes-in-your-code) e gli elementi collegati.
 
-## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
+## <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera
 
 Per usare la tastiera per selezionare gli indicatori, premere e tenere premuto il tasto **ALT** per visualizzare i tasti numerici correlati, quindi premere il numero che corrisponde all'indicatore da selezionare.
 
