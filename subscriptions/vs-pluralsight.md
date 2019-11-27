@@ -54,7 +54,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 
 ## <a name="eligibility"></a>Eligibility
 
-|                          Livello di sottoscrizione                          |     Canali      |    Vantaggio    |   Rinnovabile?   |
+|                          Livello di sottoscrizione                          |     Canali      |    Vantaggio di    |   Rinnovabile?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 mesi    | Sì<sup>2</sup> |
 |          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 mesi    | Sì<sup>2</sup> |
@@ -63,7 +63,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
 |              Visual Studio Test Professional (Standard)              |    VL, Retail     |   3 mesi    | Sì<sup>2</sup>  |
 |                      MSDN Platforms (Standard)                       |    VL, Retail     |   3 mesi    | Sì<sup>2</sup>  |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
-|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
+|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Program      | Non disponibile |       N/D       |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), ETP, Imagine.*

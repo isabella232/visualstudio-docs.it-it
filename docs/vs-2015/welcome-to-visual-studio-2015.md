@@ -90,13 +90,13 @@ Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispos
  Pianificare, creare ed eseguire test manuali e automatizzati per l'app. I piani e i gruppi di test, i test case e i risultati dei test vengono archiviati nel cloud con Visual Studio Team Services o in locale con Team Foundation Server. Altre informazioni sul [test dell'applicazione](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Fornire più rapidamente il codice del team
- Rimuovere le barriere tra i membri del team e migliorare la collaborazione. È possibile fare di meglio automatizzando il rilascio dell'app in ogni fase nell'ambiente di sviluppo fino alla produzione. Monitorare le prestazioni e la disponibilità dell'app quando è attiva. Raccogliere i dati di utilizzo in tempo reale per conoscere come i clienti stiano effettivamente usando l'app. Vedere [Gestione del ciclo di vita di DevOps e delle applicazioni](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) per altri dettagli.
+ Rimuovere le barriere tra i membri del team e migliorare la collaborazione. È possibile fare di meglio automatizzando il rilascio dell'app in ogni fase nell'ambiente di sviluppo fino alla produzione. Monitorare le prestazioni e la disponibilità dell'app quando è attiva. Raccogliere i dati di utilizzo in tempo reale per conoscere come i clienti stiano effettivamente usando l'app. Per informazioni dettagliate, vedere [Gestione del ciclo di vita di DevOps e delle applicazioni](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6).
 
 ## <a name="whats-new"></a>Novità
 
 |||||
 |-|-|-|-|
-|[Novità di Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novità in Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novità in .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novità in ALM](/azure/devops/server/whats-new)|
+|[Novità di Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novità di Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novità in .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novità in ALM](/azure/devops/server/whats-new)|
 |[Novità in C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novità in Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novità in JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

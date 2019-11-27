@@ -18,7 +18,7 @@ Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](ht
 
 ## <a name="general-purchasing-questions"></a>Domande generali sull'acquisto
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>D: è possibile acquistare sottoscrizioni cloud di Visual Studio usando un ordine di acquisto?
-R: No. Tutte le sottoscrizioni cloud di Visual Studio devono essere acquistate usando una sottoscrizione di Azure. (Considerarla come l'account di fatturazione di Azure.)
+A: no. Tutte le sottoscrizioni cloud di Visual Studio devono essere acquistate usando una sottoscrizione di Azure. (Considerarla come l'account di fatturazione di Azure.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>D: quali tipi di sottoscrizioni di Azure possono essere usati per acquistare sottoscrizioni cloud di Visual Studio?
 R: possono essere usate quasi tutte le sottoscrizioni di Azure. Sono supportate le sottoscrizioni di Azure collegate a [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/), le sottoscrizioni di Azure configurate da Cloud Solution Provider (CSP), le sottoscrizioni di Azure configurate da rivenditori di Microsoft Open License e le sottoscrizioni di Azure con pagamento in base al consumo.

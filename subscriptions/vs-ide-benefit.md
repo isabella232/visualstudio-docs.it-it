@@ -59,7 +59,7 @@ Per scaricare l'ambiente IDE:
 
 ## <a name="eligibility"></a>Eligibility
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Disponibile       |  Sì          |
 | Visual Studio Enterprise con GitHub Enterprise   | VL | Disponibile       |  Sì          |

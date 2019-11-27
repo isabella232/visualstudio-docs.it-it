@@ -30,7 +30,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ## <a name="reserved-and-well-known-properties"></a>Proprietà riservate e note
  Nella tabella seguente vengono descritte le proprietà predefinite di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-| Proprietà | Riservata o nota | Descrizione |
+| proprietà | Riservata o nota | Descrizione |
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | Riservata | Percorso assoluto della cartella in cui si trovano i file binari di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] attualmente in uso, ad esempio *C:\Windows\Microsoft.Net\Framework\\\<NumeroVersione>* . Questa proprietà risulta utile quando è necessario fare riferimento ai file nella directory di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> Non includere la barra rovesciata finale in questa proprietà. |
 | `MSBuildExtensionsPath` | Nota | Introdotta in .NET Framework 4: nessuna differenza tra i valori predefiniti di `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`. È possibile impostare la variabile di ambiente `MSBUILDLEGACYEXTENSIONSPATH` su un valore non Null per abilitare il comportamento del valore predefinito di `MSBuildExtensionsPath` nelle versioni precedenti.<br /><br /> In .NET Framework 3.5 e versioni precedenti il valore predefinito di `MSBuildExtensionsPath` fa riferimento al percorso della sottocartella MSBuild nella cartella *\Programmi\\* o *\Programmi (x86)* , in base al numero di bit del processo corrente. Ad esempio, per un processo a 32 bit in un computer a 64 bit, la proprietà fa riferimento alla cartella *\Programmi (x86)* . Per un processo a 64 bit in un computer a 64 bit, questa proprietà fa riferimento alla cartella *\Programmi*.<br /><br /> Non includere la barra rovesciata finale in questa proprietà.<br /><br /> Questo percorso è ideale per contenere i file di destinazione personalizzati. È ad esempio possibile installare i file di destinazione in *\Programmi\MSBuild\MyFiles\Northwind.targets*, quindi importarli nei file di progetto usando il codice XML seguente:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
@@ -55,7 +55,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | `MSBuildThisFileFullPath` | Riservata | Percorso assoluto del file di progetto o di destinazioni che contiene la destinazione in esecuzione.<br /><br /> Suggerimento: è possibile specificare un percorso relativo in un file di destinazioni che sia relativo al file di destinazioni e non al file di progetto originale. |
 | `MSBuildThisFileName` | Riservata | La parte di nome file di `MSBuildThisFileFullPath`, senza l'estensione. |
 | `MSBuildToolsPath` | Riservata | Percorso di installazione della versione di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] associata al valore di `MSBuildToolsVersion`.<br /><br /> Non includere la barra rovesciata finale nel percorso.<br /><br /> Questa proprietà non può essere sottoposta a override. |
-| `MSBuildToolsVersion` | Riservata | Versione del set di strumenti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] da usare per compilare il progetto.<br /><br /> Nota: un set di strumenti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è costituito da attività, destinazioni e strumenti usati per compilare un'applicazione. Gli strumenti includono compilatori, come *csc.exe* e *vbc.exe*. Per altre informazioni, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildToolsVersion` | Riservata | Versione del set di strumenti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] da usare per compilare il progetto.<br /><br /> Nota: un set di strumenti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è costituito da attività, destinazioni e strumenti usati per compilare un'applicazione. Gli strumenti includono compilatori come *csc.exe* e *vbc.exe*. Per altre informazioni, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md). |
 | `MSBuildVersion` | Riservata | La versione di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usata per compilare il progetto. <br /><br/> Questa proprietà non può essere sottoposta a override. In caso contrario, viene restituito il messaggio di errore `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Nomi in conflitto con gli elementi di MSBuild
@@ -63,7 +63,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 Oltre a quanto sopra, i nomi corrispondenti a elementi del linguaggio MSBuild non possono essere usati per proprietà, elementi o metadati di elementi definiti dall'utente:
 
 * VisualStudioProject
-* Destinazione
+* destinazione
 * PropertyGroup
 * Output
 * ItemGroup
@@ -72,10 +72,10 @@ Oltre a quanto sopra, i nomi corrispondenti a elementi del linguaggio MSBuild no
 * OnError
 * ImportGroup
 * Scegliere
-* Quando
+* When
 * Otherwise
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
+- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
 
 - [Proprietà di MSBuild](../msbuild/msbuild-properties.md)

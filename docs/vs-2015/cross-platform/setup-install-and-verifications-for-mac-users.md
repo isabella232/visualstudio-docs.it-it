@@ -34,13 +34,13 @@ Questo argomento è destinato agli sviluppatori che lavorano principalmente su u
   
   **Contenuto dell'argomento:**  
   
-- [Installazione in ambiente Mac (ID Apple, Xcode e Xamarin)](#mac)  
+- [Installazione di Mac (ID Apple, Xcode e Xamarin)](#mac)  
   
 - [Installazione di Windows in Parallels (Visual Studio e Xamarin)](#windows)  
   
 - [Verificare l'ambiente](#verify)  
   
-## <a name="mac"></a> Installazione di Mac (ID Apple, Xcode e Xamarin)  
+## <a name="mac"></a> Installazione in ambiente Mac (ID Apple, Xcode e Xamarin)  
   
 1. Creare un ID Apple gratuito in [ID Apple](https://appleid.apple.com/) , se non ne è già disponibile uno. Questo è necessario per l'installazione e la firma in Xcode.  
   

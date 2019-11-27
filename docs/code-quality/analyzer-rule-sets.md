@@ -28,8 +28,8 @@ Il pacchetto NuGet dell'analizzatore FxCop include set di regole e file EditorCo
 
 - Tutte le regole
 - Flusso di dati
-- Progettazione
-- Documentazione
+- Progetta
+- Documentation
 - Globalizzazione
 - Interoperabilità
 - Manutenibilità
@@ -37,8 +37,8 @@ Il pacchetto NuGet dell'analizzatore FxCop include set di regole e file EditorCo
 - Prestazioni
 - Portata da FxCop
 - Affidabilità
-- Sicurezza
-- Utilizzo
+- Sicurezza -
+- Usage
 
 Ognuna di queste categorie di regole ha un file EditorConfig o set di regole per:
 
