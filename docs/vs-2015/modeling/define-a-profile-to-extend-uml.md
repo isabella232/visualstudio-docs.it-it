@@ -28,9 +28,9 @@ ms.locfileid: "74295671"
 
 È possibile definire un *profilo UML* per personalizzare gli elementi del modello standard per scopi specifici. Un profilo definisce uno o più *stereotipi UML*. Uno stereotipo può essere utilizzato per contrassegnare un tipo come rappresentazione di un determinato tipo di oggetto. Uno stereotipo può anche essere usato per estendere l'elenco di proprietà di un elemento.
 
- Vengono installati diversi profili con le edizioni supportate di Visual Studio. Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Per altre informazioni su questi profili e su come applicare gli stereotipi, vedere [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md).
+ Vengono installati diversi profili con le edizioni supportate di Visual Studio. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Per altre informazioni su questi profili e su come applicare gli stereotipi, vedere [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md).
 
- È possibile definire i propri profili per adattare ed estendere il linguaggio UML alla propria architettura o area aziendale. Di seguito è riportato un esempio:
+ È possibile definire i propri profili per adattare ed estendere il linguaggio UML alla propria architettura o area aziendale. Ad esempio:
 
 - Se si definiscono spesso siti Web, si può definire un proprio profilo che fornisca uno stereotipo «WebPage» applicabile alle classi nei diagrammi classi. Sarebbe quindi possibile usare i diagrammi classi per pianificare un sito Web. Ogni classe «WebPage» avrebbe proprietà aggiuntive per il contenuto della pagina, lo stile e così via.
 
@@ -51,11 +51,11 @@ ms.locfileid: "74295671"
 
 1. Creare un nuovo file XML con l'estensione di file `.profile`.
 
-2. Aggiungere le definizioni di stereotipo attenendosi alle linee guida illustrate in [Struttura di un profilo](#Schema).
+2. Aggiungere le definizioni dello stereotipo secondo le linee guida descritte nella [struttura di un profilo](#Schema).
 
 3. Aggiungere il profilo a un'estensione di Visual Studio (file `.vsix`). È possibile creare una nuova estensione per il profilo o aggiungere il profilo a un'estensione esistente.
 
-     Vedere la sezione successiva, [Come aggiungere un profilo a un'estensione di Visual Studio](#AddProfile).
+     Vedere la sezione successiva [come aggiungere un profilo a un'estensione di Visual Studio](#AddProfile).
 
 4. Installare l'estensione nel computer.
 
@@ -67,9 +67,9 @@ ms.locfileid: "74295671"
 
     1. Selezionare il modello in Esplora UML.
 
-    2. Nella finestra Proprietà fare clic sulla proprietà **Profili**. Il profilo verrà visualizzato nel menu. Impostare il segno di spunta accanto al profilo.
+    2. Nella Finestra Proprietà fare clic sulla proprietà **profili** . Il profilo verrà visualizzato nel menu. Impostare il segno di spunta accanto al profilo.
 
-    3. Selezionare un elemento per cui il profilo definisce gli stereotipi. Nella finestra Proprietà fare clic sulla proprietà **Stereotipi**. Gli stereotipi verranno visualizzati nell'elenco. Impostare il segno di spunta accanto a uno degli stereotipi.
+    3. Selezionare un elemento per cui il profilo definisce gli stereotipi. Nella Finestra Proprietà fare clic sulla proprietà **stereotipi** . Gli stereotipi verranno visualizzati nell'elenco. Impostare il segno di spunta accanto a uno degli stereotipi.
 
     4. Se il profilo definisce altre proprietà per questo stereotipo, espandere la proprietà dello stereotipo per visualizzarle.
 
@@ -87,17 +87,17 @@ ms.locfileid: "74295671"
 
    1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-   2. Nella finestra di dialogo **Nuovo progetto**, in **Modelli installati** espandere **Visual C#** , fare clic su **Extensibility** e quindi fare clic su **Progetto VSIX**. Specificare il nome del progetto e fare clic su **OK**.
+   2. Nella finestra di dialogo **nuovo progetto** , in **modelli installati**, espandere **oggetto C#visivo** , fare clic su **estendibilità**, quindi fare clic su **progetto VSIX**. Impostare il nome del progetto e fare clic su **OK**.
 
 2. Aggiungere il profilo al progetto.
 
-   - In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** e quindi fare clic su **Elemento esistente**. Nella finestra di dialogo individuare il file del profilo.
+   - In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**, quindi fare clic su **elemento esistente**. Nella finestra di dialogo individuare il file del profilo.
 
-3. Impostare la proprietà **Copia nella directory di output** del file del profilo.
+3. Imposta la proprietà **copia in output** del file del profilo.
 
-   1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul file del profilo e scegliere **Proprietà**.
+   1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul file del profilo, quindi scegliere **Proprietà**.
 
-   2. Nella finestra Proprietà impostare la proprietà **Copia nella directory di output** su **Copia sempre**.
+   2. Nella Finestra Proprietà impostare la proprietà **copia nella directory di output** su **copia sempre**.
 
 4. In Esplora soluzioni aprire `source.extension.vsixmanifest`.
 
@@ -105,15 +105,15 @@ ms.locfileid: "74295671"
 
 5. Nella pagina **Asset** aggiungere una riga che descrive il profilo:
 
-   - Fare clic su **Nuovo**. Impostare i campi nella finestra di dialogo **Aggiungi nuovo asset** nel modo seguente.
+   - Fare clic su **New**. Impostare i campi nella finestra di dialogo **Aggiungi nuovo asset** come indicato di seguito.
 
-   - Impostare **Tipo** su `Microsoft.VisualStudio.UmlProfile`.
+   - Imposta il **tipo** su `Microsoft.VisualStudio.UmlProfile`
 
         Non si tratta di una delle opzioni a discesa. Inserire il nome utilizzando la tastiera.
 
-   - Fare clic su **File in filesystem** e selezionare il nome del file di profilo, ad esempio `MyProfile.profile`.
+   - Fare clic **su file in filesystem** e selezionare il nome del file del profilo, ad esempio `MyProfile.profile`
 
-6. Compilare il progetto.
+6. Compilazione del progetto.
 
 7. **Per eseguire il debug del profilo**, premere F5.
 
@@ -168,7 +168,7 @@ ms.locfileid: "74295671"
 
 4. Comprimere i tre file in un file compresso.
 
-     In Esplora risorse selezionare i tre file, fare clic con il pulsante destro del mouse, scegliere **Invia a** e quindi fare clic su **Cartella compressa**.
+     In Esplora risorse, selezionare i tre file, fare clic con il pulsante destro del mouse, scegliere **Invia a**, quindi fare clic su **cartella compressa**.
 
 5. Rinominare il file compresso e cambiare l'estensione di file da `.zip` a `.vsix`.
 
@@ -180,7 +180,7 @@ ms.locfileid: "74295671"
 
 2. Fare clic su **Installa** nella finestra di dialogo visualizzata.
 
-3. Per disinstallare o disabilitare temporaneamente l'estensione, aprire **Estensioni e aggiornamenti** dal menu **Strumenti**.
+3. Per disinstallare o disabilitare temporaneamente l'estensione, aprire **estensioni e aggiornamenti** dal menu **strumenti** .
 
 ## <a name="Localized"></a>Come definire i profili localizzati
  È possibile definire profili diversi per impostazioni cultura o lingue diverse e comprimerli tutti nella stessa estensione. Quando un utente carica l'estensione, vedrà il profilo definito per le proprie impostazioni cultura.
@@ -289,7 +289,7 @@ ms.locfileid: "74295671"
       name="Microsoft.VisualStudio.Uml.Components.IComponent" />
 ```
 
- Per l'elenco completo di tipi di relazioni e di elementi del modello che è possibile usare come metaclassi, vedere [Tipi di elemento del modello](#Elements).
+ Per l'elenco completo dei tipi di elemento del modello e di relazione che è possibile usare come metaclassi, vedere [tipi di elemento del modello](#Elements).
 
 #### <a name="stereotype-definition"></a>Definizione degli stereotipi
  La sezione `<stereotypes>` contiene una o più definizioni di stereotipi:
@@ -353,16 +353,16 @@ ms.locfileid: "74295671"
 
    - Se l'estensione non è visibile, vedere l'elemento successivo.
 
-5. Ricompilare il file VSIX e aprirlo in Esplora risorse per reinstallarlo. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+5. Ricompilare il file VSIX e aprirlo in Esplora risorse per reinstallarlo. Riavvia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
    L'estensione non viene visualizzata in Gestione estensioni, ma quando si tenta di reinstallarla, viene visualizzato il messaggio seguente: **l'estensione è già installata per tutti i prodotti applicabili.**
    1. Rimuovere il file di estensione da una sottocartella di *LocalAppData*\Microsoft\VisualStudio\\[versione] \Extensions\
 
-   - Per visualizzare *LocalAppData*, è necessario impostare Visualizza cartelle e file nascosti nella scheda Visualizza di Opzioni cartella di Esplora risorse.
+   - Per visualizzare *LocalAppData*, è necessario impostare Visualizza cartelle e file nascosti nella scheda Visualizza delle opzioni della cartella Esplora risorse.
 
    - *LocalAppData* è in genere in C:\Users\\*username*\AppData\Local\
 
-6. Riavviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Riavvia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Vedere anche
  [Aggiungere stereotipi agli elementi del modello UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md) stereotipi [standard per i modelli UML](../modeling/standard-stereotypes-for-uml-models.md) [esempio: color UML elementi per stereotipo](https://go.microsoft.com/fwlink/?LinkID=213841) [esempio: impostazione di stereotipi, profili XSD](https://go.microsoft.com/fwlink/?LinkID=213811)

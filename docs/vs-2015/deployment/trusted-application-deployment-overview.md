@@ -24,7 +24,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74294690"
 ---
-# <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
+# <a name="trusted-application-deployment-overview"></a>Panoramica della distribuzione di applicazioni attendibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento presenta informazioni generali su come distribuire applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con autorizzazioni elevate usando la tecnologia per la distribuzione di applicazioni attendibili.  
@@ -37,7 +37,7 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
 ## <a name="trusted-application-deployment-basics"></a>Nozioni fondamentali sulla distribuzione di applicazioni attendibili  
  La tabella seguente mostra gli oggetti e i ruoli coinvolti nella distribuzione di applicazioni attendibili.  
   
-|Oggetto o ruolo|description|  
+|Oggetto o ruolo|Descrizione|  
 |--------------------|-----------------|  
 |amministratore|Entità dell'organizzazione responsabile dell'aggiornamento e della gestione dei computer client|  
 |gestore di attendibilità|Sottosistema all'interno di Common Language Runtime (CLR) responsabile dell'applicazione della sicurezza delle applicazioni client.|  

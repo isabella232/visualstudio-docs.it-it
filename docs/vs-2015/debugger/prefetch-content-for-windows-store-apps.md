@@ -33,13 +33,13 @@ Si applica solo a Windows] (.. /Image windows_only_content. png "windows_only_co
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>Per forzare il precaricamento delle risorse specificate di ContentPrefetcher  
  Questa procedura presuppone che tu abbia già impostato la funzionalità ContentPrefetcher e specificato gli URI di contenuto da precaricare nel progetto dell'app. Per forzare il precaricamento del contenuto quando le risorse specificate sono nuove o modificate, avviare e arrestare l'app prima di scegliere il comando **Trigger prelettura applicazioni Windows Store**. Prima di tutto esegui l'app per registrare gli URI. Il comando **Trigger prelettura applicazioni Windows Store** forza la funzionalità ContentPrefetcher a scaricare il contenuto e ad aggiungerlo nella cache. Nelle esecuzioni successive dell'app, puoi presupporre che il contenuto sia stato precaricato.  
   
-1. Avvia l'app per registrare gli URI del contenuto caricati in background con l'app. Scegliere **Avvia debug** (Tasto di scelta rapida: F5) dal menu **Debug**.  
+1. Avvia l'app per registrare gli URI del contenuto di prelettura con l'app. Scegliere **Avvia debug** (Tasto di scelta rapida: F5) dal menu **Debug**.  
   
 2. Scegliere **Termina debug** dal menu **Debug** (Tasto di scelta rapida: MAIUSC+F5).  
   
 3. Scegli **Altre destinazioni debug** dal menu **Debug**, quindi scegli **Trigger prelettura applicazioni Windows Store**.  
   
-   Ora puoi eseguire testare, analizzare o eseguire il debug dell'app con le risorse Web caricate in background.  
+   Ora puoi eseguire testare, analizzare o eseguire il debug dell'app con le risorse Web in prelettura.  
   
 > [!NOTE]
 > Ripeti questi passaggi quando aggiungi o modifichi il contenuto Web specificato.  

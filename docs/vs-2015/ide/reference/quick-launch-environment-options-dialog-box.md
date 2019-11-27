@@ -34,7 +34,7 @@ ms.locfileid: "74297804"
 
  È possibile usare i metodi rapidi seguenti per limitare la ricerca a categorie specifiche.
 
-|Category|Metodo rapido|Descrizione metodo rapido|
+|Categoria|Metodo rapido|Descrizione metodo rapido|
 |--------------|--------------|--------------------------|
 |Usati di recente|@mru<br /><br /> Ad esempio, `@mru font`.|Visualizza fino a cinque elementi **Usati di recente**.|
 |Menu|@menu<br /><br /> Ad esempio, `@menu font`.|Limita la ricerca alle voci di menu.|

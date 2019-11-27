@@ -36,7 +36,7 @@ Contiene le informazioni necessarie per apporre una firma digitale al manifesto 
 </Signature>  
 ```  
   
-## <a name="remarks"></a>Osservazioni  
+## <a name="remarks"></a>Note  
  La firma di un manifesto di distribuzione con una firma della busta è facoltativa, ma consigliata. Per ulteriori informazioni sulla firma dei file XML, vedere la World Wide Web Consortium raccomandazione "sintassi e elaborazione della firma XML" descritta in [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
   
  Se si desidera firmare il manifesto, è necessario fornire gli hash per tutti i file. Un manifesto con file non con hash non può essere firmato perché gli utenti non possono verificare il contenuto dei file senza hash.  

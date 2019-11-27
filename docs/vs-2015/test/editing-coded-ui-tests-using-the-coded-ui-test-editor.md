@@ -91,7 +91,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
 - ![Suggerimento](../test/media/tip.png "Suggerimento") Per annullare le modifiche apportate alle proprietà, scegliere **Annulla** dal menu **modifica** oppure premere CTRL + Z.
 
-- ![Suggerimento](../test/media/tip.png "Suggerimento") È possibile usare il pulsante **trova** nella barra degli strumenti dell'editor di test codificati dell'interfaccia utente per aprire lo strumento trova e Sostituisci in Visual Studio. Quindi è possibile usare il controllo Trova per individuare l'azione dell'interfaccia utente nell'Editor di test codificati dell'interfaccia utente. Ad esempio, è possibile provare a cercare "Fare clic sul pulsante 'Accesso'". Questo è utile nei test di grandi dimensioni. Si noti che non è possibile usare la funzionalità di sostituzione dello strumento Trova e sostituisci nell'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere la sezione relativa al controllo Trova in [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md).
+- ![Suggerimento](../test/media/tip.png "Suggerimento") È possibile usare il pulsante **trova** nella barra degli strumenti dell'editor di test codificati dell'interfaccia utente per aprire lo strumento trova e Sostituisci in Visual Studio. Quindi è possibile usare il controllo Trova per individuare l'azione dell'interfaccia utente nell'Editor di test codificati dell'interfaccia utente. Ad esempio, è possibile provare a cercare "Fare clic sul pulsante 'Accesso'". Questo è utile nei test di grandi dimensioni. Si noti che non è possibile usare la funzionalità di sostituzione dello strumento Trova e sostituisci nell'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere la sezione relativa al controllo Trova in [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
 - ![Suggerimento](../test/media/tip.png "Suggerimento") In alcuni casi può essere difficile visualizzare la posizione dei controlli nell'interfaccia utente dell'applicazione sottoposta a test. Una delle funzionalità dell'Editor di test codificati dell'interfaccia utente consente di selezionare un controllo elencato nella mappa del controllo dell'interfaccia utente e visualizzarne la posizione nell'applicazione sottoposta a test. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Individuazione di un controllo dell'interfaccia utente nell'applicazione sottoposta a test](#CodedUITestEditor_LocateUIControl) più avanti in questo argomento.
 
@@ -111,7 +111,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
  ![Due metodi di test](../test/media/codeduitestsplitmethod2.png "CodedUITestSplitMethod2")
 
- Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test che si vuole suddividere in due metodi distinti e selezionare l'azione dell'interfaccia utente con cui far iniziare il nuovo metodo di test. Aprire il menu di scelta rapida per l'azione dell'interfaccia utente e quindi scegliere **Suddividi in nuovo metodo** scegliere il pulsante **Suddividi in nuovo metodo** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente. Il nuovo metodo di test viene visualizzato nel riquadro Azioni dell'interfaccia utente che contiene le azioni dell'interfaccia utente a iniziare dall'azione in cui è stata specificata la suddivisione.
+ Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test che si vuole suddividere in due metodi distinti e selezionare l'azione dell'interfaccia utente con cui far iniziare il nuovo metodo di test. Aprire il menu di scelta rapida per l'azione dell'interfaccia utente e quindi scegliere **Suddividi in nuovo metodo**scegliere il pulsante **Suddividi in nuovo metodo** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente. Il nuovo metodo di test viene visualizzato nel riquadro Azioni dell'interfaccia utente che contiene le azioni dell'interfaccia utente a iniziare dall'azione in cui è stata specificata la suddivisione.
 
  Dopo avere completato la suddivisione del metodo, salvare le modifiche nel file UIMap.Designer scegliendo **Salva** sulla barra degli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
@@ -126,7 +126,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
 - ![Suggerimento](../test/media/tip.png "Suggerimento") È possibile rinominare il nuovo metodo. Selezionarlo nel riquadro Azioni dell'interfaccia utente e scegliere il pulsante **Rinomina** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente.
 
-   oppure
+   -oppure-
 
    Aprire il menu di scelta rapida per il nuovo metodo di test e scegliere **Rinomina**.
 
@@ -137,7 +137,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
  Nel riquadro **Azioni dell'interfaccia utente** selezionare il metodo di test che si vuole spostare nel file di UIMap.vb o UIMap.cs per facilitare la funzionalità di codice personalizzato che non verrà sovrascritta quando il codice di test verrà ricompilato. Scegliere poi il pulsante **Sposta codice** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente o aprire il menu di scelta rapida per il metodo di test e scegliere **Sposta codice**. Il metodo di test verrà rimosso dal file UIMap.uitest e non verrà più visualizzato nel riquadro delle azioni dell'interfaccia utente. Per modificare il file di test spostato, aprire il file UIMap.cs o UIMap.vb da Esplora soluzioni.
 
- Dopo avere completato lo spostamento del metodo, salvare le modifiche nel file UIMap.Designer scegliendo **Salva** sulla barra degli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Dopo avere completato lo spostamento del metodo, salvare le modifiche nel file UIMap.Designer scegliendo **Salva** sulla barra degli strumenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
  *Altre informazioni*
  **Problemi importanti**
@@ -194,7 +194,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
  *Altre informazioni*
  **Note**
 
-- ![Prerequisito](../test/media/prereq.png "Prereq") Se è necessario verificare che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile valutare l'aggiunta di codice personalizzato al metodo di test usando il metodo UITestControl. WaitForControlXXX () appropriato. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+- ![Prerequisito](../test/media/prereq.png "Prereq") Se è necessario verificare che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile valutare l'aggiunta di codice personalizzato al metodo di test usando il metodo UITestControl. WaitForControlXXX () appropriato. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
   **Suggerimenti**
 
@@ -205,7 +205,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 ### <a name="guidance"></a>Materiale sussidiario
  [Test per la distribuzione continua con Visual Studio 2012 – Capitolo 2: Unit Testing: Test interni](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="faq"></a>Domande frequenti
+### <a name="faq"></a>DOMANDE FREQUENTI
  [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://go.microsoft.com/fwlink/?LinkID=230578)

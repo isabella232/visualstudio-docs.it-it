@@ -28,12 +28,12 @@ Lo strumento di analisi del codice disponibile in Visual Studio esamina il codic
 
 |||
 |-|-|
-|[Analizzare la qualità del codice Visual Basic e C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Usa l'analisi del codice in progetti Visual Basic e C#.|
-|[Analizzare la qualità del codice C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Usa l'analisi del codice in progetti C++.|
+|[Analizzare la qualità del codice Visual Basic e C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md)|Usare l'analisi del codice in progetti Visual Basic e C#.|
+|[Analizzare la qualità del codice C++](../test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)|Usare l'analisi del codice in progetti C++.|
 
 ## <a name="more-code-analysis-info"></a>Ulteriori informazioni sull'analisi del codice
 
 |||
 |-|-|
-|[Analisi del codice in MSDN Library](https://go.microsoft.com/fwlink/?LinkID=227580)|Ulteriori informazioni sull'uso dell'analisi del codice in Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional.|
-|[Blog del team di analisi del codice MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|In questo blog sono disponibili ulteriori informazioni, inclusi documenti ed esempi tecnici.|
+|[Analisi del codice in MSDN Library](https://go.microsoft.com/fwlink/?LinkID=227580)|Altre informazioni sull'uso dell'analisi del codice in Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional.|
+|[Blog del team di analisi del codice MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|In questo blog sono disponibili altre informazioni, inclusi documenti ed esempi tecnici.|

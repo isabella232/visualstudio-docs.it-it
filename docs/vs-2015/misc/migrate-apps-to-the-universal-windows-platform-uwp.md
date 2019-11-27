@@ -236,7 +236,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
       </ItemGroup>
     ```
 
-14. Salvare le modifiche.
+14. Fare clic su Salva per salvare le modifiche.
 
 15. Chiudere il file con estensione csproj o vbproj.
 
@@ -292,7 +292,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
         </PropertyGroup>
         ```
 
-4. Modificare tutte le istanze dell'elemento \<PlatformToolset > in modo che il valore V140. Di seguito è riportato un esempio:
+4. Modificare tutte le istanze dell'elemento \<PlatformToolset > in modo che il valore V140. Ad esempio:
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -317,7 +317,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-6. Salvare le modifiche. Quindi, chiudere il file di progetto.
+6. Fare clic su Salva per salvare le modifiche. Quindi, chiudere il file di progetto.
 
 7. Fare clic con il pulsante destro del mouse sul file di progetto in Esplora soluzioni e scegliere Ricarica progetto dal menu di scelta rapida. A questo punto, tutti i file nel progetto dovrebbero essere visualizzati in Esplora soluzioni.
 
@@ -379,7 +379,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 5. Trovare l'elemento > \<prerequisiti ed eliminare questo elemento e gli eventuali elementi figlio.
 
-6. Aggiungere lo spazio dei nomi **UAP** ai seguenti elementi di > risorsa \<: scale, DXFeatureLevel. Di seguito è riportato un esempio:
+6. Aggiungere lo spazio dei nomi **UAP** ai seguenti elementi di > risorsa \<: scale, DXFeatureLevel. Ad esempio:
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-7. Aggiungere lo spazio dei nomi **UAP** ai seguenti elementi di \<funzionalità >: documentsLibrary, picturesLibrary, VideosLibrary, musicLibrary, enterpriseAuthentication, SharedUserCertificates, removableStorage, appuntamenti e contatti. Di seguito è riportato un esempio:
+7. Aggiungere lo spazio dei nomi **UAP** ai seguenti elementi di \<funzionalità >: documentsLibrary, picturesLibrary, VideosLibrary, musicLibrary, enterpriseAuthentication, SharedUserCertificates, removableStorage, appuntamenti e contatti. Ad esempio:
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-8. Aggiungere lo spazio dei nomi **UAP** all'elemento \<VisualElements > e a tutti i relativi elementi figlio. Di seguito è riportato un esempio:
+8. Aggiungere lo spazio dei nomi **UAP** all'elemento \<VisualElements > e a tutti i relativi elementi figlio. Ad esempio:
 
    ```xml
    <uap:VisualElements
@@ -444,7 +444,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
    ```
 
-9. Aggiungere lo spazio dei nomi **UAP** al > \<ApplicationContentUriRules e a tutti i relativi elementi figlio. Di seguito è riportato un esempio:
+9. Aggiungere lo spazio dei nomi **UAP** al > \<ApplicationContentUriRules e a tutti i relativi elementi figlio. Ad esempio:
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-10. Aggiungere lo spazio dei nomi **UAP** all'estensione \<seguente > elementi e tutti i relativi elementi figlio: Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. CameraSettings, Windows. FileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. PrintTaskSettings, Windows. Protocol, Windows. search, Windows. ShareTarget. Di seguito è riportato un esempio:
+10. Aggiungere lo spazio dei nomi **UAP** all'estensione \<seguente > elementi e tutti i relativi elementi figlio: Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. CameraSettings, Windows. FileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. PrintTaskSettings, Windows. Protocol, Windows. search, Windows. ShareTarget. Ad esempio:
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
     ```
 
-11. Aggiungere lo spazio dei nomi **uap** alle attività in background di tipo chatMessageNotification. Di seguito è riportato un esempio:
+11. Aggiungere lo spazio dei nomi **uap** alle attività in background di tipo chatMessageNotification. Ad esempio:
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -505,7 +505,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
      Usare i valori Publisher e MinVersion appropriati per il framework che si sta effettivamente usando. Tenere presente che questi nomi possono essere diversi per Windows 10.
 
-13. Sostituire le attività di tipo background gattCharacteristicNotification e rfcommConnection con un'attività di tipo Bluetooth. Di seguito è riportato un esempio:
+13. Sostituire le attività di tipo background gattCharacteristicNotification e rfcommConnection con un'attività di tipo Bluetooth. Ad esempio:
 
      **PRECEDENTE**
 
@@ -528,7 +528,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
     </Extension>
     ```
 
-14. Sostituire le capacità del dispositivo Bluetooth bluetooth.rfcomm e bluetooth.genericAttributeProfile con una capacità Bluetooth generica. Di seguito è riportato un esempio:
+14. Sostituire le capacità del dispositivo Bluetooth bluetooth.rfcomm e bluetooth.genericAttributeProfile con una capacità Bluetooth generica. Ad esempio:
 
      **PRECEDENTE**
 
@@ -566,7 +566,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
        - Elemento > \<ApplicationView
 
-         Di seguito è riportato un esempio:
+         Ad esempio:
 
        ```xml
        <m2:VisualElements
@@ -723,7 +723,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 9. Trovare l'elemento \<ItemGroup > che contiene un elemento \<AppxManifest >. Se è presente un elemento \<None > con un attributo include impostato su: packages. config, eliminarlo. Aggiungere anche un elemento \<None > con un attributo include e impostarne il valore su: Project. JSON.
 
-10. Salvare le modifiche. Quindi, chiudere il file di progetto.
+10. Fare clic su Salva per salvare le modifiche. Quindi, chiudere il file di progetto.
 
 11. Fare clic con il pulsante destro del mouse sul file di progetto in Esplora soluzioni e scegliere Ricarica progetto dal menu di scelta rapida. A questo punto, tutti i file nel progetto dovrebbero essere visualizzati in Esplora soluzioni.
 
@@ -737,7 +737,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
         ```
 
-    2. Salvare le modifiche.
+    2. Fare clic su Salva per salvare le modifiche.
 
 14. Usare Gestione NuGet per aggiungere i pacchetti eliminati nel passaggio precedente. Una differenza significativa nel formato di progetto Windows 10 tra Visual Studio 2015 RC e Visual Studio 2015 RTM è rappresentata dal fatto che il formato RTM usa [NuGet](https://docs.microsoft.com/nuget/) versione 3.
 
@@ -794,7 +794,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
 
 5. È necessario aggiornare l'elemento \<EnableDotNetNativeCompatibleProfile > e l'elemento \<UseDotNetNativeToolchain > per abilitare .NET Native, ma .NET Native non è abilitato nei C++ modelli.
 
-     Salvare le modifiche. Quindi, chiudere il file di progetto.
+     Fare clic su Salva per salvare le modifiche. Quindi, chiudere il file di progetto.
 
 6. Fare clic con il pulsante destro del mouse sul file di progetto in Esplora soluzioni e scegliere Ricarica progetto dal menu di scelta rapida. A questo punto, tutti i file nel progetto dovrebbero essere visualizzati in Esplora soluzioni.
 
@@ -806,7 +806,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
         ```
 
-    2. Salvare le modifiche.
+    2. Fare clic su Salva per salvare le modifiche.
 
          Ora è possibile codificare, compilare ed eseguire il debug dell'app.
 

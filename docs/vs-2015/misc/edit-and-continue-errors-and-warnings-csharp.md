@@ -81,7 +81,7 @@ ms.locfileid: "74299282"
   
 1. Scegliere **Annulla** dal menu **Debug** per annullare la modifica.  
   
-     oppure  
+     -oppure-  
   
 2. Terminare la sessione di debug, apportare le modifiche, quindi avviare una nuova sessione di debug.  
   

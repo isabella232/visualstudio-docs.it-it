@@ -36,12 +36,12 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
   > [!NOTE]
   > È possibile creare un sito Web ASP.NET vuoto e usarlo per la programmazione HTML, CSS e JavaScript. Il file Webconfig fornito da ASP.NET consente il debug in Visual Studio (o è possibile usare gli strumenti F12 quando si esegue l'app).
 
-  L'editor JavaScript in Visual Studio fornisce il supporto IntelliSense. Per altre informazioni, vedere [JavaScript IntelliSense](../ide/javascript-intellisense.md).
+  L'editor JavaScript in Visual Studio fornisce il supporto IntelliSense. Per altre informazioni, vedere [IntelliSense per JavaScript](../ide/javascript-intellisense.md).
 
 ## <a name="whats-new-in-javascript"></a>Novità in JavaScript
  Nuove funzionalità per JavaScript sono elencate nella tabella seguente.
 
-|Funzionalità|description|
+|Caratteristica|Descrizione|
 |-------------|-----------------|
 |Classi|La nuova sintassi supporta la dichiarazione delle [classi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Suggerimenti|I [suggerimenti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) consentono una codifica asincrona più semplice e chiara. I costruttori di suggerimenti sono supportati, con i metodi di utilità `all` e `race`.|

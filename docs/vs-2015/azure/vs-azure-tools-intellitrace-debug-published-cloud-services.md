@@ -32,7 +32,7 @@ In alternativa, è possibile usare il [debug remoto](https://go.microsoft.com/fw
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configurare un'applicazione Azure per IntelliTrace
 Per abilitare IntelliTrace per un'applicazione Azure, è necessario creare e pubblicare l'applicazione da un progetto Azure di Visual Studio. È necessario configurare IntelliTrace per l'applicazione Azure prima di pubblicarla in Azure. Se si pubblica l'applicazione senza configurare IntelliTrace, è necessario ripubblicare il progetto. Per altre informazioni, vedere [Pubblicazione di progetti di servizi cloud di Azure con Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=623012).
 
-1. Quando si è pronti distribuire l'applicazione Azure, verificare che le destinazioni di compilazione del progetto siano impostate su **Debug**.
+1. Quando si è pronti a distribuire l'applicazione Azure, assicurarsi che le destinazioni di compilazione del progetto siano impostate su **Debug**.
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica** dal menu di scelta rapida.
    

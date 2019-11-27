@@ -45,7 +45,7 @@ Questo argomento introduce i principali tipi di modello UML.
 
  Se si elimina un elemento dal modello, viene automaticamente eliminata qualsiasi relazione di cui fa parte e la proprietà all'altra estremità viene aggiornata.
 
- Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che il tipo della proprietà .NET è `IEnumerable<`*Tipo*`>`.
+ Se la specifica UML assegna una molteplicità pari a 0..1 a una proprietà, il valore può essere `null`. Una molteplicità con valore massimo maggiore di 1 indica che la proprietà .NET è di tipo: `IEnumerable<`*tipo*`>`.
 
  Per altre informazioni sull'attraversamento delle relazioni, vedere [esplorare le relazioni con l'API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 

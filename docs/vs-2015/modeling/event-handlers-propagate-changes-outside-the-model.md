@@ -94,7 +94,7 @@ namespace Company.MusicLib
 ```
 
 ## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Uso di eventi per apportare modifiche annullabili nell'archivio
- Gli eventi di archiviazione non vengono in genere usati per la propagazione delle modifiche all'interno dell'archivio, perché il gestore eventi viene eseguito dopo il commit della transazione. Usare invece una regola di archiviazione. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
+ Gli eventi di archiviazione non vengono in genere usati per la propagazione delle modifiche all'interno dell'archivio, perché il gestore eventi viene eseguito dopo il commit della transazione. Usare invece una regola di archiviazione. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
 
  Tuttavia, è possibile usare un gestore eventi per eseguire ulteriori aggiornamenti all'archivio se si vuole che l'utente sia in grado di annullare gli aggiornamenti aggiuntivi separatamente dall'evento originale. Si supponga, ad esempio, che i caratteri minuscoli siano la convenzione usuale per i titoli degli album. È possibile scrivere un gestore eventi di archiviazione che corregge il titolo in lettere minuscole dopo che l'utente lo ha digitato in lettere maiuscole. Tuttavia, l'utente può usare il comando Annulla per annullare la correzione, ripristinando i caratteri maiuscoli. Una seconda operazione di annullamento comporta la rimozione della modifica dell'utente.
 

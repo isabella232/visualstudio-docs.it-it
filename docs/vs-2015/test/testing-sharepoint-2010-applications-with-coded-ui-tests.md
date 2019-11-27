@@ -34,12 +34,12 @@ Includendo i test codificati dell'interfaccia utente in un'applicazione SharePoi
 - ![Prerequisito](../test/media/prereq.png "Prereq") Il supporto per i controlli Visio e PowerPoint 2010 nell'applicazione SharePoint non è supportato.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Creazione di un test codificato dell'interfaccia utente per l'applicazione SharePoint
- La [creazione dei test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) per le applicazioni SharePoint 2010 è analoga alla creazione dei test per altri tipi di applicazioni. La registrazione e la riproduzione è supportata da tutti i controlli dell'interfaccia di modifica Web. L'interfaccia per selezionare le categorie e le Web part è costituita da soli controlli Web standard.
+ La[creazione dei test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) per le applicazioni SharePoint 2010 è analoga alla creazione dei test per altri tipi di applicazioni. La registrazione e la riproduzione è supportata da tutti i controlli dell'interfaccia di modifica Web. L'interfaccia per selezionare le categorie e le Web part è costituita da soli controlli Web standard.
 
  ![Web part di SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
-> Se si sta registrando l'azione, convalidare le azioni prima di generare il codice. Poiché esistono numerosi comportamenti associati al passaggio del mouse, l'opzione è attivata per impostazione predefinita. Assicurarsi di rimuovere i passaggi del mouse ridondanti dai test codificati dell'interfaccia utente. È possibile eseguire questa operazione modificando il codice del test o tramite l'[editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> Se si sta registrando l'azione, convalidare le azioni prima di generare il codice. Poiché esistono numerosi comportamenti associati al passaggio del mouse, l'opzione è attivata per impostazione predefinita. Assicurarsi di rimuovere i passaggi del mouse ridondanti dai test codificati dell'interfaccia utente. È possibile eseguire questa operazione modificando il codice del test o tramite l' [editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Inclusione dei test dei controlli di Office 2010 in un'applicazione SharePoint
  Per abilitare l'automazione di alcune Web part di Office 2010 nell'applicazione SharePoint, è necessario apportare alcune piccole modiche al codice.
@@ -53,7 +53,7 @@ Includendo i test codificati dell'interfaccia utente in un'applicazione SharePoi
 > [!WARNING]
 > L'inserimento del testo in una cella di Excel seguito da un'azione con tasto di direzione, non viene registrato correttamente. Utilizzare il mouse per selezionare le celle.
 
- Se si eseguono azioni di registrazione su una cella vuota, è necessario modificare il codice facendo doppio clic sulla cella e quindi eseguendo un'operazione di impostazione del testo. Ciò è necessario perché un clic nella cella, seguita da qualsiasi azione della tastiera attiva la `textarea` all'interno della cella. Registrando un elemento `setvalue` sulla cella vuota viene eseguita la ricerca dell'elemento `editbox` che non è presente fino a quando la cella non viene selezionata. Di seguito è riportato un esempio:
+ Se si eseguono azioni di registrazione su una cella vuota, è necessario modificare il codice facendo doppio clic sulla cella e quindi eseguendo un'operazione di impostazione del testo. Ciò è necessario perché un clic nella cella, seguita da qualsiasi azione della tastiera attiva la `textarea` all'interno della cella. Registrando un elemento `setvalue` sulla cella vuota viene eseguita la ricerca dell'elemento `editbox` che non è presente fino a quando la cella non viene selezionata. Ad esempio:
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));

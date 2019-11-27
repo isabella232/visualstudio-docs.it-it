@@ -57,7 +57,7 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 
   L'aggiornamento contiene anche le correzioni per i seguenti problemi:
 
-- **Copertura codice:** impossibilità di aprire un file di code coverage (con estensione coverage) creato da Visual Studio 2012 SP1 in [!INCLUDE[vs2010](../includes/vs2010-md.md)].
+- **Copertura codice:** impossibilità di aprire un file di code coverage (con estensione coverage) creato da Visual Studio 2012 SP1 in [!INCLUDE[vs2010](../includes/vs2010-md.md)] .
 
 - **Elementi di test bloccati:** il team dispone di un elemento di test assegnato a un utente non valido in Team Foundation Server (TFS) 2010. Ad esempio, un utente ha lasciato l'azienda, ma un test case è ancora assegnato a lui. Eseguire l'aggiornamento di TFS 2010 a TFS 2012. Utilizzare [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 per connettersi al server TFS aggiornato. Non è possibile assegnare l'elemento di test ad alcuni utenti TFS utilizzando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
 

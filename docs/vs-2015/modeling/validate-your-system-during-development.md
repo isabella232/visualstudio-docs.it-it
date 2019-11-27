@@ -23,7 +23,7 @@ ms.locfileid: "74301345"
 
 Visual Studio consente di mantenere la coerenza del software con i requisiti degli utenti e con l'architettura del sistema.
 
- Per informazioni sulle versioni di Visual Studio che supportano ciascuna di queste funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano le singole funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="key-tasks"></a>Attività principali
  Usare le attività seguenti per convalidare il software.
@@ -36,10 +36,10 @@ Visual Studio consente di mantenere la coerenza del software con i requisiti deg
 
 ## <a name="external-resources"></a>Risorse esterne
 
-|**Category**|**Links**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Videos**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug Seven: comprensione del codice e progettazione del sistema con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: progettazione di un'applicazione tramite un diagramma livello](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") sulle serie di informazioni su [MSDN: come convalidare il codice con diagrammi livello](https://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Forums**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Video**|![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: Doug Seven: comprensione del codice e progettazione del sistema con Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: progettazione di un'applicazione tramite un diagramma livello](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![collegamento a video](../data-tools/media/playvideo.gif "PlayVideo") sulle serie di informazioni su [MSDN: come convalidare il codice con diagrammi livello](https://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Forum**|-   [Visual Studio Visualization and Modeling Tools](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blog**|-   [Blog di Visual Studi ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](https://go.microsoft.com/fwlink/?LinkId=201343)|
 

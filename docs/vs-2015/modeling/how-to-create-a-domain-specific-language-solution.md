@@ -27,7 +27,7 @@ ms.locfileid: "74301402"
 
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] specializzata.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Prima di iniziare questa procedura, è necessario installare innanzitutto i componenti seguenti:
 
 |||
@@ -44,13 +44,13 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 
    1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.
 
-   2. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
+   2. Viene visualizzata la finestra di dialogo **Nuovo progetto**.
 
    3. In **Tipi progetto**espandere il nodo **altri tipi di progetto** e fare clic su **estensibilità**.
 
    4. Fare clic su **finestra di progettazione Domain-Specific Language**.
 
-   5. Nella casella **nome** Digitare un nome per la soluzione. Fare clic su **OK**.
+   5. Nella casella **nome** Digitare un nome per la soluzione. fare clic su **OK**.
 
        Verrà visualizzata la **procedura guidata finestra di progettazione Domain-Specific Language** .
 
@@ -69,7 +69,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione di [!
 
    - Se è stata usata l'estensione del nome file in DSLs sperimentali precedenti che non sono stati completamente installati, è possibile cancellarli usando lo strumento **Reimposta istanza sperimentale** , disponibile nel menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
 
-   - Se un'altra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione che usa questa estensione di file è stata completamente installata nel computer, è consigliabile disinstallarla. Nel menu **Strumenti** fare clic su **Gestione estensioni**.
+   - Se un'altra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensione che usa questa estensione di file è stata completamente installata nel computer, è consigliabile disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
 
 4. Esaminare e, se necessario, modificare i campi nelle pagine rimanenti della procedura guidata. Una volta soddisfatte le impostazioni, fare clic su **fine**. Per ulteriori informazioni sulle impostazioni, vedere [finestra di progettazione DSL pagine della procedura guidata](#settings).
 
@@ -106,7 +106,7 @@ Digitare una nuova estensione di file.
 
      \- oppure -
 
-- Se un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Nel menu **Strumenti** fare clic su **Gestione estensioni**.
+- Se un'estensione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
 
 ### <a name="product-settings-page"></a>Pagina Impostazioni prodotto
  **Qual è il nome del prodotto a cui appartiene il nuovo linguaggio specifico di dominio?**

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 368ca1ad0373267e9753ab223c2e200cbc87f1e0
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605488"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491728"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usare la funzionalità Utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
 Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. 
@@ -38,8 +38,8 @@ Per ogni livello di sottoscrizione, il report mostra la data in cui è stato rag
 Ad esempio, nella tabella precedente, è possibile notare che il 13/12/2018 nel contratto erano presenti 123 sottoscrizioni di Visual Studio Enterprise, di cui ne erano assegnate 120.  In data 8/1/2019 è stata assegnata un'altra sottoscrizione, portando il totale a 121.  Il giorno successivo sono state assegnate altre sei sottoscrizioni e sono state aggiunte al contratto altre quattro sottoscrizioni per coprire le nuove assegnazioni.  
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>D: Qual è la differenza tra le informazioni in Utilizzo massimo e le informazioni sulle assegnazioni disponibili nella sezione "Panoramica" sul lato sinistro del portale?
-R:  Le informazioni nella panoramica mostrano le assegnazioni *correnti* e quelle disponibili per ogni livello di sottoscrizione.  Queste informazioni possono essere molto diverse dal numero massimo di sottoscrizioni assegnate per il contratto durante l'anno corrente o per la durata del contratto.  La funzionalità Utilizzo massimo consente di sapere quando sono stati raggiunti i livelli massimi di assegnazioni e quali sono stati tali livelli.  Si tratta di una distinzione importante, poiché la fatturazione per le sottoscrizioni durante il conteggio true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento nel corso dell'anno. 
+### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>D: in che modo le informazioni nell'utilizzo massimo sono diverse dalle informazioni sulle assegnazioni disponibili nella sezione "panoramica" sul lato sinistro del portale?
+R: le informazioni contenute nella panoramica mostrano le assegnazioni *correnti* e le sottoscrizioni disponibili per ogni livello di sottoscrizione.  Queste informazioni possono essere molto diverse dal numero massimo di sottoscrizioni assegnate per il contratto durante l'anno corrente o per la durata del contratto.  La funzionalità di utilizzo massimo consente di visualizzare quando sono stati raggiunti i livelli di assegnazione massimi e quali sono i livelli.  Si tratta di una distinzione importante, poiché la fatturazione per le sottoscrizioni durante il conteggio true-up si basa sul numero massimo di sottoscrizioni assegnate in qualsiasi momento nel corso dell'anno. 
 
 ## <a name="resources"></a>Risorse
 - [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)

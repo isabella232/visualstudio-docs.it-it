@@ -24,12 +24,12 @@ Visual Studio include una raccolta di compilatori, linguaggi, runtime, ambienti 
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Componenti esterni che seguono criteri relativi al ciclo di vita diversi da quelli di Visual Studio  
  La tabella seguente elenca i componenti delle piattaforme Microsoft che possono essere inclusi in Visual Studio (a seconda dell'edizione specifica del software Visual Studio) e che sono soggetti a tempistiche e criteri di supporto specifici.  
   
-|FAMIGLIA DI PRODOTTI|NOME ESTERNO|  
+|FAMIGLIA DI PRODOTTI|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5 SDK|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 MT Pack (Classic)<br /><br /> .NET 4.5.1 Multi-targeting Pack (Store)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> .NET 4.5.1 Redist<br /><br /> .NET 4.5.1 Redist Language Packs<br /><br /> .NET 4.5.1 SDK|  
-|[ASP.NET Web Stack](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> API Web ASP.NET<br /><br /> ASP.NET Web API 2<br /><br /> Pagine Web ASP.NET 2<br /><br /> Pagine Web ASP.NET 3|  
+|[ASP.NET Web Stack](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET Web API<br /><br /> ASP.NET Web API 2<br /><br /> Pagine Web ASP.NET 2<br /><br /> Pagine Web ASP.NET 3|  
 |[Entity Framework 6](https://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
 |[Exchange 2013](https://go.microsoft.com/fwlink/?LinkId=328950)|Servizi Web Exchange|  
 |[Microsoft OWIN](https://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  

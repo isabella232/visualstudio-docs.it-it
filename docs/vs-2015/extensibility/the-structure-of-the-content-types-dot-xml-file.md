@@ -31,34 +31,34 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi  
  Nelle sezioni seguenti vengono descritti l'elemento radice e i relativi attributi ed elementi figlio.  
   
-### <a name="root-element"></a>Elemento radice  
+### <a name="root-element"></a>Elemento Radice  
   
-|Elemento|description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |`Types`|Contiene gli elementi figlio che enumerano i tipi di file nel pacchetto VSIX.|  
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Xmlns`|(Obbligatorio). Percorso dello schema utilizzato per il file [Content_Types]. XML.|  
   
 ### <a name="attribute-name-attribute"></a>{Nome attributo} Attributo  
   
-|                           Value                           |                description                |
+|                           Valore                           |                Descrizione                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | Percorso dello schema dei tipi di contenuto. |
   
 ### <a name="child-elements"></a>Elementi figlio  
- L'elemento `Types` può contenere un numero qualsiasi di elementi di `Default`.  
+ L'elemento `Types` può contenere un numero illimitato di elementi `Default`.  
   
-|Elemento|description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |`Default`|Descrive un tipo di contenuto nel pacchetto VSIX. Ogni tipo di file nel pacchetto deve avere un proprio elemento `Default`.|  
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`Extension`|Estensione del nome file di un file nel pacchetto VSIX.|  
 |`ContentType`|Descrive il tipo di contenuto associato all'estensione del nome file.|  
@@ -68,14 +68,14 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
   
 |Estensione|ContentType|  
 |---------------|-----------------|  
-|txt|testo/normale|  
-|pkgdef|testo/normale|  
+|txt|text/plain|  
+|pkgdef|text/plain|  
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
 |htm o HTML|testo/HTML|  
 |RTF|applicazione/RTF|  
-|PDF|applicazione/PDF|  
-|gif|immagine/gif|  
+|pdf|applicazione/PDF|  
+|gif|image/gif|  
 |jpg o JPEG|immagine/jpg|  
 |TIFF|immagine/TIFF|  
 |vsix|applicazione/zip|  
@@ -85,7 +85,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>description  
+### <a name="description"></a>Descrizione  
  Il seguente file [Content_Types]. XML descrive un tipico pacchetto VSIX.  
   
 ### <a name="code"></a>Codice  

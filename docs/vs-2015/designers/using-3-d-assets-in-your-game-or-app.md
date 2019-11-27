@@ -65,9 +65,9 @@ Questo articolo spiega come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] p
 
    Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i corrispondenti tipi di file di origine e output.
 
-|Tipo di elemento|Tipi di file di origine|Tipi di file di output|
+|Item Type|Tipi di file di origine|Tipi di file di output|
 |---------------|-----------------------|------------------------|
-|**Pipeline di contenuti immagine**|Portable Network Graphics (.png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Graphics Interchange Format (.gif)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
+|**Pipeline di contenuti immagine**|PNG (Portable Network Graphics) (con estensione png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> GIF (Graphics Interchange Format) (con estensione gif)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
 |**Pipeline di contenuti mesh**|AutoDesk FBX Interchange File (.fbx)<br /><br /> File Collada DAE (.dae)<br /><br /> File Wavefront OBJ (.obj)|File mesh 3D (.cmo)|
 |**Pipeline di contenuti shader**|Visual Shader Graph (.dgsl)|Compiled Shader Output (.cso)|
 
@@ -87,7 +87,7 @@ Questo articolo spiega come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] p
 ### <a name="image-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti immagine
  Quando si usa lo strumento della pipeline di contenuti immagine per generare un asset trama, è possibile comprimere la trama in diversi modi, specificare se i livelli MIP devono essere generati in fase di compilazione e cambiare il nome del file di output.
 
-|Proprietà|description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Compressione**|Specifica il tipo di compressione usato per il file di output.<br /><br /> Le opzioni disponibili sono:<br /><br /> -   **Nessuna compressione**<br />-   **Compressione BC1_UNORM**<br />-   **Compressione BC1_UNORM_SRGB**<br />-   **Compressione BC2_UNORM**<br />-   **Compressione BC2_UNORM_SRGB**<br />-   **Compressione BC3_UNORM**<br />-   **Compressione BC3_UNORM_SRGB**<br />-   **Compressione BC4_UNORM**<br />-   **Compressione BC4_SNORM**<br />-   **Compressione BC5_UNORM**<br />-   **Compressione BC5_SNORM**<br />-   **Compressione BC6H_UF16**<br />-   **Compressione BC6H_SF16**<br />-   **Compressione BC7_UNORM**<br />-   **Compressione BC7_UNORM_SRGB**<br /><br /> Per informazioni sui formati di compressione supportati nelle varie versioni di DirectX, vedere la [ Guida alla programmazione per DXGI](https://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Converti in formato premoltiplicato per alfa|**Sì** per convertire l'immagine in formato premoltiplicato per alfa nel file di output, altrimenti **No**. Viene modificato solo il file di output, mentre l'immagine di origine resta invariata.|
@@ -97,14 +97,14 @@ Questo articolo spiega come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] p
 ### <a name="mesh-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti mesh
  Quando si usa lo strumento della pipeline di contenuti mesh per generare un asset mesh, è possibile cambiare il nome del file di output.
 
-|Proprietà|description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti shader
  Quando si usa lo strumento della pipeline di contenuti shader per generare un asset shader, è possibile cambiare il nome del file di output.
 
-|Proprietà|description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |**Output contenuto**|Specifica il nome del file di output. **Importante:** la modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
@@ -200,7 +200,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Procedura: esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
 |[Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|

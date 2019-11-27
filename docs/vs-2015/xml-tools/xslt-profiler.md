@@ -21,7 +21,7 @@ ms.locfileid: "74300952"
 
 Il Profiler XSLT è uno strumento di profiler di analisi delle prestazioni che consente di sviluppare ed eseguire debug di documenti XSLT. Il Profiler XSLT consente agli sviluppatori di misurare e valutare i problemi correlati alle prestazioni nel codice XSLT creando rapporti dettagliati sulle prestazioni XSLT. Il Profiler XSLT include utili suggerimenti per l'ottimizzazione dei fogli di stile XSLT e XSL, essenziale per le applicazioni XSLT che richiedono massime prestazioni.
 
- Il Profiler XSLT è incluso in Visual Studio 2010 ed è disponibile nel menu **XML** di Visual Studio.
+ Il Profiler XSLT è parte di Visual Studio 2010 ed è disponibile nel menu **XML** di Visual Studio.
 
  ![Profiler XSLT](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 

@@ -28,9 +28,9 @@ Per la documentazione più recente su Visual Studio, vedere [DA0039: frequenza m
 |||  
 |-|-|  
 |ID regola|DA0039|  
-|Category|Uso di .NET Framework|  
+|Categoria|Uso di .NET Framework|  
 |Metodi di profilatura|Campionamento<br /><br /> Strumentazione<br /><br /> Memoria .NET|  
-|Messaggio|È stata rilevata una frequenza molto elevata di conflitti di blocco .NET. Per determinare la causa, eseguire un profilo della concorrenza.|  
+|Message|È stata rilevata una frequenza molto elevata di conflitti di blocco .NET. Per determinare la causa, eseguire un profilo della concorrenza.|  
 |Tipo regola|Avviso|  
   
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.  

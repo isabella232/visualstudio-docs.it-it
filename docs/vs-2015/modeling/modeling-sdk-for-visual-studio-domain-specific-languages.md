@@ -45,7 +45,7 @@ Utilizzando l'SDK di modellazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
  [Esempi](https://go.microsoft.com/fwlink/?LinkId=186128) per l'SDK di modellazione per Visual Studio.
 
- Per indicazioni sulla risoluzione dei problemi e alle tecniche più avanzate, visitare [forum di estendibilità degli strumenti di modellazione e DSL di Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186074).
+ Per informazioni aggiuntive sulle tecniche avanzate e sulla risoluzione dei problemi, visitare il [Forum di estendibilità degli strumenti di modellazione di Visual Studio & DSL](https://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Introduzione ai linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md)

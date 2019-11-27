@@ -45,7 +45,7 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
   
 2. La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug/Windows/Mostra strumenti di diagnostica**.  
   
-3. Eseguire gli scenari per i quali si vuole raccogliere dati.  
+3. Esegui gli scenari per cui desideri raccogliere dati.  
   
     Quando si esegue la sessione, è possibile visualizzare informazioni su eventi, memoria di processo e utilizzo della CPU.  
   
@@ -72,7 +72,7 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
 ## <a name="collect-profiling-data-without-debugging"></a>Raccogliere dati di profilatura senza il debug  
  Per l'esecuzione di alcuni strumenti di profilatura, è necessario disporre di privilegi di amministratore. È possibile avviare Visual Studio come amministratore oppure è possibile scegliere di eseguire gli strumenti come amministratore quando si avvia la sessione di diagnostica.  
   
-1. Aprire il progetto in Visual Studio.  
+1. Apri il progetto in Visual Studio.  
   
 2. Scegliere **Profiler prestazioni** dal menu **debug** (tasto di scelta rapida: Alt + F2).  
   
@@ -102,14 +102,14 @@ Visual Studio offre ora una vasta gamma di strumenti per le prestazioni, alcuni 
 |||  
 |-|-|  
 |![Passaggio 1](../profiling/media/procguid-1.png "ProcGuid_1")|La sequenza temporale mostra la durata della sessione di profilatura, gli eventi di attivazione del ciclo di vita dell'app e i contrassegni utente.|  
-|![Passaggio 2](../profiling/media/procguid-2.png "ProcGuid_2")|Puoi limitare il rapporto a una parte della sequenza temporale trascinando le barre blu per selezionare un'area della stessa.|  
-|![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uno strumento visualizza uno o più grafici master. Se la sessione di diagnostica viene creata con più strumenti, vengono visualizzati tutti i grafici master.|  
-|![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|È possibile comprimere ed espandere i singoli grafici.|  
-|![Passaggio 5](../profiling/media/procguid-6.png "ProcGuid_6")|Quando i dati includono informazioni da più strumenti, i dettagli per ogni strumento sono raccolti in schede.|  
-|![Passaggio 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Uno strumento può avere una o più visualizzazioni dettagli. La visualizzazione viene filtrata in base alla sezione selezionata della cronologia.|  
+|![Passaggio 2](../profiling/media/procguid-2.png "ProcGuid_2")|Puoi limitare il report a una parte della sequenza temporale trascinando le barre blu per selezionare un'area della stessa.|  
+|![Passaggio 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uno strumento visualizza uno o più grafici master. Se la sessione di diagnostica viene creata con più strumenti, tutti i grafici master vengono visualizzati.|  
+|![Passaggio 4](../profiling/media/procguid-4.png "ProcGuid_4")|Puoi comprimere ed espandere i singoli grafici.|  
+|![Passaggio 5](../profiling/media/procguid-6.png "ProcGuid_6")|Se i dati includono informazioni raccolte tramite più strumenti, i dettagli di ogni strumento vengono raccolti in schede.|  
+|![Passaggio 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|A uno strumento possono essere associate una o più visualizzazioni dettagli. La visualizzazione viene filtrata in base alla sezione selezionata della cronologia.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Impostazione della destinazione di analisi su un altro dispositivo  
- Prima di avviare l'app dal progetto di Visual Studio, è anche possibile eseguire sessioni di diagnostica su destinazioni alternative. Ad esempio, potrebbe essere necessario diagnosticare problemi di prestazioni in una versione dell'app installata da Windows App Store.  
+ Oltre ad avviare l'app dal progetto di Visual Studio, puoi eseguire sessioni di diagnostica su destinazioni alternative. Ad esempio, potrebbe essere necessario diagnosticare problemi di prestazioni in una versione dell'app installata da Windows App Store.  
   
  ![Scegliere la destinazione di analisi degli strumenti di diagnostica](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   

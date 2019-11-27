@@ -19,7 +19,7 @@ ms.locfileid: "74300756"
 # <a name="cpu-usage"></a>Utilizzo CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, è consigliabile partire dall'analisi dell'utilizzo della CPU. Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice di Visual C++, Visual C#/Visual Basic e JavaScript.  
+Quando devi analizzare problemi di prestazioni nella tua app, un buon punto di partenza è comprendere in che modo l'app usa la CPU. Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice di Visual C++, Visual C#/Visual Basic e JavaScript.  
   
  A partire da Visual Studio 2015 Update 1, è possibile visualizzare i dettagli dell'utilizzo della CPU a livello di singole funzioni senza uscire dal debugger. È possibile attivare o disattivare la profilatura della CPU durante il debug e visualizzare i risultati quando l'esecuzione viene interrotta, ad esempio in corrispondenza di un punto di interruzione. Per altre informazioni, vedere il blog relativo alla [profilatura della CPU nel debugger di Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
@@ -98,7 +98,7 @@ Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, �
 |**Modulo**|Nome del modulo contenente la funzione o numero dei moduli contenenti le funzioni in un nodo [Codice esterno].|  
   
 ### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di Utilizzo CPU  
- Quando il compilatore rileva un metodo asincrono, crea una classe nascosta per controllare l'esecuzione del metodo. Concettualmente, la classe è una macchina a stati che include un elenco di funzioni generate dal compilatore che chiamano le operazioni del metodo originale in modo asincrono, nonché i callback, l'utilità di pianificazione e gli iteratori necessari. Quando il metodo originale viene chiamato da un metodo padre, il runtime rimuove il metodo dal contesto di esecuzione del padre ed esegue i metodi della classe nascosta nel contesto del codice di sistema e di framework che controllano l'esecuzione dell'app. Spesso, ma non sempre, i metodi asincroni vengono eseguiti in uno o più thread diversi. Il codice è illustrato nell'albero delle chiamate di Utilizzo CPU come figlio del nodo **[Codice esterno]** immediatamente sotto il nodo principale dell'albero.  
+ Quando il compilatore incontra un metodo asincrono, crea una classe nascosta per controllare l'esecuzione del metodo. Concettualmente, la classe è una macchina a stati che include un elenco di funzioni generate dal compilatore che chiamano le operazioni del metodo originale in modo asincrono, nonché i callback, l'utilità di pianificazione e gli iteratori necessari. Quando il metodo originale viene chiamato da un metodo padre, il runtime rimuove il metodo dal contesto di esecuzione del padre ed esegue i metodi della classe nascosta nel contesto del codice di sistema e di framework che controllano l'esecuzione dell'app. Spesso, ma non sempre, i metodi asincroni vengono eseguiti in uno o più thread diversi. Il codice è illustrato nell'albero delle chiamate di Utilizzo CPU come figlio del nodo **[Codice esterno]** immediatamente sotto il nodo principale dell'albero.  
   
  Per vedere questo aspetto nel nostro esempio, seleziona di nuovo il segmento `GetMaxNumberAsyncButton_Click` nella sequenza temporale.  
   

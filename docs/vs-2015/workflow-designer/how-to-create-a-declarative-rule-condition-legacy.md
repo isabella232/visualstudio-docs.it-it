@@ -33,7 +33,7 @@ In questo argomento viene descritto come dichiarare una condizione della regola 
 
 - [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [Dell'WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
 - [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
@@ -41,25 +41,25 @@ In questo argomento viene descritto come dichiarare una condizione della regola 
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Per creare una condizione di regole dichiarative usando l’Editor della condizione della regola
 
-1. Nella finestra dell’attività **Proprietà**, fare clic sulla proprietà **Condizione** o sulla proprietà **UntilCondition** a seconda dell'attività.
+1. Nella finestra **Proprietà** dell'attività fare clic sulla proprietà **Condition** o sulla proprietà **UntilCondition** , a seconda dell'attività.
 
-2. Selezionare **Condizione di regole dichiarative** dall'elenco della proprietà.
+2. Selezionare la **condizione della regola dichiarativa** dall'elenco per la proprietà.
 
-3. Espandere la proprietà **Condizione** o **UntilCondition**.
+3. Espandere la proprietà **Condition** o **UntilCondition** .
 
-4. Fare clic sulla proprietà **ConditionName**.
+4. Fare clic sulla proprietà **ConditionName** .
 
-5. Fare clic sui puntini di sospensione **[…]** di **ConditionName** per aprire la finestra di dialogo **Seleziona condizione**.
+5. Fare clic sui puntini di sospensione **[...]** per **aprire la finestra** di dialogo **Seleziona condizione** .
 
-6. Fare clic su **Nuova condizione** per aprire la finestra di dialogo **Editor condizione della regola**.
+6. Fare clic su **nuova condizione** per aprire la finestra di dialogo **Editor condizione della regola** .
 
-7. Digitare l'espressione per la condizione nella casella di testo **Condizione**.
+7. Digitare l'espressione per la condizione nella casella di testo **condizione** .
 
      Per informazioni su come creare espressioni di condizione, vedere [finestra di dialogo Editor condizione della regola (legacy)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 
-8. Quando si è finito di creare l'espressione della condizione, fare clic su **OK** per chiudere la finestra di dialogo e creare la condizione della regola con un nome assegnato.
+8. Al termine della creazione dell'espressione della condizione, fare clic su **OK** per chiudere la finestra di dialogo e creare la condizione della regola con un nome assegnato.
 
-     Verrà visualizzata la finestra di dialogo **Seleziona condizione**.
+     Verrà visualizzata la finestra di dialogo **Seleziona condizione** .
 
      Per informazioni sull'utilizzo della finestra di dialogo **Seleziona condizione** , vedere finestra di [dialogo Seleziona condizione (legacy)](../workflow-designer/select-condition-dialog-box-legacy.md).
 

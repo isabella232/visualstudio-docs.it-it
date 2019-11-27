@@ -154,7 +154,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ## <a name="enumerating-relationships"></a>Enumerazione delle relazioni
  Tutte le proprietà del modello UML che restituiscono più valori sono conformi all'interfaccia IEnumerable < >. Ciò significa che è possibile utilizzare le [espressioni di query LINQ](https://go.microsoft.com/fwlink/?LinkId=168834) e i metodi di estensione definiti nello spazio dei nomi **System. Linq** .
 
- Di seguito è riportato un esempio:
+ Ad esempio:
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()

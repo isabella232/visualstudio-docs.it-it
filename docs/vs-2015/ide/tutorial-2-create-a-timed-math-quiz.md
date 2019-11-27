@@ -38,7 +38,7 @@ In questa esercitazione si compila un quiz dove l'esecutore deve rispondere a qu
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Iniziare creando il progetto, modificando le proprietà e aggiungendo controlli `Label`.|
 |[Passaggio 2: creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md)|Creare un problema di addizione e utilizzare la classe `Random` per generare numeri casuali.|

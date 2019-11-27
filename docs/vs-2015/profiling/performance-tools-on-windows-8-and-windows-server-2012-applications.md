@@ -74,7 +74,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
   
 - [Analizzare i dati relativi alle prestazioni per il codice Visual C++, Visual C# e Visual Basic nelle applicazioni Windows Store](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
-  [In questo argomento](#BKMK_In_this_topic)  
+  [Contenuto dell'argomento](#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Raccolta di dati nelle app in esecuzione sul desktop di Windows 8 o in Windows Server 2012 dall'IDE di Visual Studio  
  La profilatura mediante il metodo di strumentazione è rimasta invariata per Windows 8.  
@@ -91,7 +91,7 @@ Le funzionalità di protezione avanzata di Windows 8 e Windows Server 2012 hanno
 ## <a name="BKMK_Profiling_from_the_command_line"></a> Profilatura dalla riga di comando  
  Per raccogliere dati di profilatura nei dispositivi Windows 8 e Windows Server 2012, inclusi i dispositivi privi di installazione di Visual Studio, si usano due strumenti da riga di comando:  
   
-|Nome dello strumento|description|  
+|Nome dello strumento|Descrizione|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|Raccoglie i dati di profilatura dalle app di Windows Store e dalle applicazioni di Windows 8 Desktop e Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Raccoglie i dati di profilatura della strumentazione, della concorrenza e dell'interazione tra livelli dalle applicazioni in esecuzione su Windows 8 Desktop o Windows Server 2012. Raccoglie tutti i tipi di dati di profilatura dalle versioni precedenti di Windows.|  

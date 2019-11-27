@@ -45,7 +45,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 - Nella finestra **Proprietà** , quando la proprietà Tracking si trova nello stato aggiornato da utente, il relativo valore viene visualizzato in grassetto.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Prima di iniziare questa procedura dettagliata, è necessario installare prima i componenti seguenti:
 
 |||
@@ -141,7 +141,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 #### <a name="to-transform-the-text-templates"></a>Per trasformare i modelli di testo
 
-1. Sulla barra degli strumenti di **Esplora soluzioni** fare clic su **Trasforma tutti i modelli**.
+1. Sulla barra degli strumenti **Esplora soluzioni** fare clic su **trasforma tutti i modelli**.
 
 2. Il sistema rigenera il codice per la soluzione e Salva DslDefinition. DSL. Per informazioni sul formato XML dei file di definizione, vedere [il file DslDefinition. DSL](../modeling/the-dsldefinition-dsl-file.md).
 

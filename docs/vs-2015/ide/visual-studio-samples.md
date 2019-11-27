@@ -28,7 +28,7 @@ ms.locfileid: "74296845"
 ## <a name="finding-samples"></a>Ricerca di esempi
  Di seguito sono riportati alcuni altri percorsi in cui cercare esempi.
 
-|Area|description|
+|Area|Descrizione|
 |----------|-----------------|
 |[Esempi di Windows Dev Center](https://go.microsoft.com/fwlink/?LinkID=255278)|Illustra come sviluppare app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .|
 |[Esempi di .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Illustra i vari aspetti di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in C# e Visual Basic.|

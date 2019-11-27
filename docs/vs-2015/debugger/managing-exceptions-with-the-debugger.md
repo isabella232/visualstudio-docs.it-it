@@ -91,7 +91,7 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
    }  
    ```  
   
-    Se l’eccezione **AccessViolationException** è selezionata in **Impostazioni eccezioni**, quando si esegue questo codice nel debugger, l’esecuzione si interrompe alla riga `throw`. È quindi possibile continuare l'esecuzione. Nella console dovrebbero essere visualizzate entrambe le righe:  
+    Se l'eccezione **AccessViolationException** è selezionata in **Impostazioni eccezioni**, quando si esegue questo codice nel debugger, l'esecuzione si interrompe alla riga `throw` . È quindi possibile continuare l'esecuzione. Nella console dovrebbero essere visualizzate entrambe le righe:  
   
    ```  
    caught exception  
@@ -142,9 +142,9 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
    ![Ripristina impostazioni predefinite in impostazioni eccezioni](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ### <a name="BKMK_UserUnhandled"></a>Impostazione del debugger per continuare in corrispondenza di eccezioni non gestite dall'utente  
- Se si esegue il debug del codice .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), è possibile impostare il debugger in modo da non interrompere l’esecuzione in corrispondenza di eccezioni non gestite nel codice utente, ma gestite in un'altra posizione.  
+ Se si esegue il debug del codice .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), è possibile impostare il debugger in modo da non interrompere l'esecuzione in corrispondenza di eccezioni non gestite nel codice utente, ma gestite in un'altra posizione.  
   
-1. Nella finestra **Impostazioni eccezioni**, aprire il menu di scelta rapida facendo clic con il pulsante destro del mouse nella finestra e selezionando **Mostra colonne**. (Se **Just My Code**è stato disattivato, questo comando non verrà visualizzato).  
+1. Nella finestra **Impostazioni eccezioni** , aprire il menu di scelta rapida facendo clic con il pulsante destro del mouse nella finestra e selezionando **Mostra colonne**. (Se **Just My Code**è stato disattivato, questo comando non verrà visualizzato).  
   
 2. Dovrebbe essere visualizzata una seconda colonna denominata **Azioni aggiuntive**. In questa colonna viene visualizzato **Continua se non gestita dal codice utente** per eccezioni specifiche, vale a dire che il debugger non interrompe l’esecuzione se l'eccezione non viene gestita nel codice utente ma viene gestita nel codice esterno.  
   
@@ -157,7 +157,7 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
 ### <a name="adding-and-deleting-exceptions"></a>Aggiunta ed eliminazione di eccezioni  
  È possibile aggiungere ed eliminare le eccezioni. È possibile eliminare qualsiasi tipo di eccezione da qualsiasi categoria selezionando l'eccezione e facendo clic sul pulsante **Elimina** (il segno meno) nella barra degli strumenti **Impostazioni eccezioni** o facendo clic con il pulsante destro del mouse sull'eccezione e selezionando **Elimina** dal menu di scelta rapida. L'eliminazione di un'eccezione ha lo stesso effetto di un’eccezione non selezionata, vale a dire che il debugger non interrompe l’esecuzione quando l’eccezione viene generata.  
   
- Per aggiungere un'eccezione: nella finestra **Impostazioni eccezioni** selezionare una delle categorie di eccezioni (ad esempio, **Common Language Runtime**) e fare clic sul pulsante **Aggiungi**. Digitare il nome dell'eccezione (ad esempio **System.UriTemplateMatchException**). L'eccezione viene aggiunta all'elenco (in ordine alfabetico) e viene selezionata automaticamente.  
+ Per aggiungere un'eccezione: nella finestra **Impostazioni eccezioni** selezionare una delle categorie di eccezioni (ad esempio, **Common Language Runtime**) e fare clic sul pulsante **Aggiungi** . Digitare il nome dell'eccezione (ad esempio **System.UriTemplateMatchException**). L'eccezione viene aggiunta all'elenco (in ordine alfabetico) e viene selezionata automaticamente.  
   
  Se si desidera aggiungere un'eccezione alle eccezioni di accesso alla memoria GPU, alle eccezioni di runtime JavaScript o alle categorie di eccezioni Win32, è necessario includere il codice di errore, nonché la descrizione.  
   

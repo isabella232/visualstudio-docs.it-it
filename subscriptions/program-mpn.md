@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
-ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816562"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491664"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 
@@ -57,7 +57,7 @@ Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professio
 
 I sottoscrittori di Visual Studio Professional (MPN) possono anche scaricare e usare software per lo sviluppo, incluso SQL Server Developer Edition.
 
-La sottoscrizione di Visual Studio Professional (MPN) non include i vantaggi Azure DevOps Services, il credito individiaul di Azure DevTest, il supporto tecnico, il training o altri vantaggi per gli abbonati disponibili con le sottoscrizioni di Visual Studio offerta commercialmente.
+La sottoscrizione di Visual Studio Professional (MPN) non include i vantaggi Azure DevOps Services, il credito individuale di Azure DevTest, il supporto tecnico, il training o altri vantaggi per gli abbonati disponibili con le sottoscrizioni di Visual Studio offerte commercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrizione per il solo uso interno
 
@@ -73,7 +73,7 @@ Con le sottoscrizioni di Visual Studio offerte tramite MPN, l'utente con licenza
 
 - [MPN Program Administrator Guide](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Manuale dell'amministratore del programma MPN) - Include istruzioni su come assegnare sottoscrizioni di Visual Studio ai dipendenti MPN.
 - [Gestione delle sottoscrizioni di Visual Studio incluse nelle appartenenze Microsoft Partner Network (MPN)](manage-mpn-subscriptions.md)
-- [Condizioni di licenza](http://www.microsoft.com/useterms/) -Le sottoscrizioni di Visual Studio offerte tramite MPN sono soggette al contratto di licenza con l'utente finale per le sottoscrizioni di Visual Studio non destinate alla rivendita.
+- [Condizioni di licenza](https://www.microsoft.com/useterms/) -Le sottoscrizioni di Visual Studio offerte tramite MPN sono soggette al contratto di licenza con l'utente finale per le sottoscrizioni di Visual Studio non destinate alla rivendita.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

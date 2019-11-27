@@ -71,7 +71,7 @@ In un elemento UML è possibile archiviare i collegamenti ad altri elementi, fil
 
    Per altre informazioni, vedere [definire un gestore movimenti in un diagramma di modellazione](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) e [procedura: aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="samples"></a>Esempi
+## <a name="samples"></a>Samples
  Vedere l'esempio di codice [collegare elementi UML a diagrammi o altri file](https://go.microsoft.com/fwlink/?LinkId=213813). L'esempio consente agli utenti di trascinare un file su qualsiasi elemento UML e aprirlo successivamente facendo doppio clic sull'elemento. Ad esempio, è possibile collegare un diagramma di attività a un elemento del caso di utilizzo. Un'icona mostra gli elementi che contengono collegamenti.
 
  Nell'esempio di codice seguente vengono illustrate le tecniche seguenti:

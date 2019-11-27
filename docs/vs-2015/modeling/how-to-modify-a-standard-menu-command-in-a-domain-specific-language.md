@@ -22,11 +22,11 @@ ms.locfileid: "74300871"
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: modificare un comando di menu standard in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. È possibile, ad esempio, modificare **Taglia** in modo che escluda le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+È possibile modificare il comportamento di alcuni comandi standard definiti automaticamente nel linguaggio DSL. Ad esempio, è possibile modificare il **taglio** in modo che escluda le informazioni riservate. Per modificare i comandi, si esegue l'override dei metodi in una classe di set di comandi. Queste classi sono definite nel file CommandSet.cs, nel progetto DslPackage, e derivano da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
  In sintesi, per modificare un comando:
 
-1. [Trovare i comandi modificabili](#what).
+1. [Individuare i comandi che è possibile modificare](#what).
 
 2. [Creare una dichiarazione parziale della classe del set di comandi appropriata](#extend).
 
@@ -67,7 +67,7 @@ ms.locfileid: "74300871"
 
 2. In **DslPackage**creare una cartella denominata **codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs`.
 
-3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Di seguito è riportato un esempio:
+3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
 
     ```
     using System;

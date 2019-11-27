@@ -26,14 +26,14 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 ## <a name="requirements"></a>Requisiti
  Vedere [Requisiti](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Per informazioni sulle versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="defining-the-menu-command"></a>Definizione del comando di menu
  Per creare un comando di menu per una finestra di progettazione UML, è necessario creare una classe che definisca il comportamento del comando e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX funge da contenitore che può installare il comando. Esistono due metodi alternativi per definire un comando di menu:
 
-- **Creare un comando di menu nella relativa estensione VSIX con un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i comandi di menu con altri tipi di estensione, ad esempio estensioni di convalida, elementi della casella degli strumenti personalizzati o gestori di movimento.
+- **Creare un comando di menu nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i comandi di menu con altri tipi di estensione, ad esempio estensioni di convalida, elementi della casella degli strumenti personalizzati o gestori di movimento.
 
-- **Creare un comando di menu e progetti VSIX separati.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
+- **Creare comandi di menu e progetti VSIX separati.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>Per creare un comando di menu nella relativa estensione VSIX
 
@@ -55,7 +55,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
 1. Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente.
 
-   1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.
+   1. Dal menu **File** scegliere **Nuovo**, **Progetto**.
 
    2. In **Modelli installati**selezionare **Visual C#** o **Visual Basic**. Nella colonna centrale scegliere **Libreria di classi**.
 
@@ -65,7 +65,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 
 2. Aggiungere i riferimenti seguenti al progetto.
 
-   |                                                                                                    Riferimenti                                                                                                    |                                                                                                  Operazioni consentite                                                                                                  |
+   |                                                                                                    Riferimento                                                                                                    |                                                                                                  Operazioni consentite                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definire i componenti usando [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Leggere e modificare le proprietà degli elementi del modello.                                                                                         |

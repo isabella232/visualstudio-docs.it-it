@@ -29,9 +29,9 @@ Per la documentazione più recente su Visual Studio, vedere [DA0001: usare Strin
 |||  
 |-|-|  
 |ID regola|DA0001|  
-|Category|Uso di .NET Framework|  
+|Categoria|Uso di .NET Framework|  
 |Metodi di profilatura|Campionamento<br /><br /> Strumentazione|  
-|Messaggio|Si consiglia di utilizzare StringBuilder per le concatenazioni di stringa.|  
+|Message|Si consiglia di utilizzare StringBuilder per le concatenazioni di stringa.|  
 |Tipo messaggio|Avviso|  
   
 ## <a name="cause"></a>Causa  

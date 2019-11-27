@@ -39,10 +39,10 @@ Percorso del file di configurazione JSON che descrive i dettagli della distribuz
 | --- | --- |
 | Alias |none |
 | Obbligatorio? |true |
-| Posizione |denominata |
+| Position |denominato |
 | Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Input pipeline accettato? |false |
+| Caratteri jolly accettati? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Nome della sottoscrizione di Azure in cui si vuole creare il sito Web.
@@ -50,11 +50,11 @@ Nome della sottoscrizione di Azure in cui si vuole creare il sito Web.
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
+| Obbligatorio? |false |
+| Position |denominato |
 | Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Input pipeline accettato? |false |
+| Caratteri jolly accettati? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
 Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possibile creare questo pacchetto usando la pubblicazione Web guidata di Visual Studio. Per ulteriori informazioni, vedere [Introduzione a Servizi cloud di Azure e ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
@@ -62,11 +62,11 @@ Percorso al pacchetto di distribuzione Web da pubblicare nel sito Web. È possib
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
+| Obbligatorio? |false |
+| Position |denominato |
 | Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Input pipeline accettato? |false |
+| Caratteri jolly accettati? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Nome utente e password per il database SQL di Azure.
@@ -74,11 +74,11 @@ Nome utente e password per il database SQL di Azure.
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
+| Obbligatorio? |false |
+| Position |denominato |
 | Valore predefinito |none |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Input pipeline accettato? |false |
+| Caratteri jolly accettati? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Se impostato su true, stampa i messaggi dallo script al flusso di output.
@@ -86,13 +86,13 @@ Se impostato su true, stampa i messaggi dallo script al flusso di output.
 | Parametro | Valore predefinito |
 | --- | --- |
 | Alias |none |
-| Obbligatorio? |False |
-| Posizione |denominata |
-| Valore predefinito |False |
-| Input pipeline accettato? |False |
-| Caratteri jolly accettati? |False |
+| Obbligatorio? |false |
+| Position |denominato |
+| Valore predefinito |false |
+| Input pipeline accettato? |false |
+| Caratteri jolly accettati? |false |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Per una spiegazione completa sull'uso dello script per creare ambienti di sviluppo e test, vedere [Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 Il file di configurazione JSON specifica i dettagli degli elementi da distribuire. Include le informazioni specificate al momento della creazione del progetto, ad esempio il nome e il nome utente per il sito Web. Se esiste, include anche il database di cui eseguire il provisioning. Il codice seguente mostra un esempio di file di configurazione JSON:
@@ -121,7 +121,7 @@ Il file di configurazione JSON specifica i dettagli degli elementi da distribuir
 }
 ```
 
-È possibile modificare il file di configurazione JSON per cambiare gli elementi da distribuire. La sezione webSite è obbligatoria, ma la sezione del database è facoltativa.
+È possibile modificare il file di configurazione JSON per cambiare gli elementi da distribuire. È necessaria una sezione webSite, mentre la sezione database è facoltativa.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Per ulteriori informazioni, vedere [Publish-WebApplicationVM (script di Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)

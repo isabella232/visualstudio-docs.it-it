@@ -40,7 +40,7 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
 
   Le procedure riportate di seguito descrivono i passaggi per creare, eseguire ed effettuare il debug di unit test per app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gestite.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Visual Studio
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Creare progetti di unit test
@@ -51,18 +51,18 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
 
      Verrà visualizzata la finestra di dialogo Nuovo progetto.
 
-2. In Modelli, scegliere il linguaggio di programmazione con cui si desidera creare gli unit test, quindi scegliere la libreria di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] associata. Ad esempio, scegliere **Visual C#** , quindi scegliere **Windows Store** e infine selezionare **Libreria unit test (applicazioni Windows Store)** .
+2. In Modelli, scegliere il linguaggio di programmazione con cui si desidera creare gli unit test, quindi scegliere la libreria di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] associata. Ad esempio, scegliere **Visual C#** , quindi scegliere **Windows Store**e infine selezionare **Libreria unit test (applicazioni Windows Store)** .
 
     > [!NOTE]
     > In Visual Studio sono inclusi i modelli della libreria di unit test per Visual C#, Visual Basic e Visual C++.
 
-3. (Facoltativo) Nella casella di testo **Nome** immettere il nome che si desidera utilizzare per il progetto di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].
+3. (Facoltativo) Nella casella di testo **Nome** immettere il nome che si desidera usare per il progetto di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].
 
-4. (Facoltativo) Modificare il percorso in cui si desidera creare il progetto immettendolo nella casella di testo **Percorso** oppure scegliendo il pulsante **Sfoglia**.
+4. (Facoltativo) Modificare il percorso in cui si desidera creare il progetto immettendolo nella casella di testo **Percorso** oppure scegliendo il pulsante **Sfoglia** .
 
-5. (Facoltativo) Nella casella di testo del nome **Soluzione** immettere il nome che si desidera utilizzare per la soluzione.
+5. (Facoltativo) Nella casella di testo del nome **Soluzione** immettere il nome che si desidera usare per la soluzione.
 
-6. Lasciare selezionata l'opzione **Crea directory per soluzione** e scegliere il pulsante **OK**.
+6. Lasciare selezionata l'opzione **Crea directory per soluzione** e scegliere il pulsante **OK** .
 
      ![Libreria unit test personalizzata](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
 
@@ -75,13 +75,13 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
 
 #### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>Per modificare il file manifesto dell'applicazione di Windows Store del progetto di unit test
 
-1. In Esplora soluzioni, nel nuovo progetto di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], fare clic con il pulsante destro del mouse sul file Package.appxmanifest e scegliere **Apri**.
+1. In Esplora soluzioni, nel nuovo progetto di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , fare clic con il pulsante destro del mouse sul file Package.appxmanifest e scegliere **Apri**.
 
      Verrà visualizzata la finestra Progettazione manifesto nella quale sarà possibile apportare le modifiche al manifesto.
 
-2. In Progettazione manifesto scegliere la scheda **Funzionalità**.
+2. In Progettazione manifesto scegliere la scheda **Funzionalità** .
 
-3. Nell'elenco in **Funzionalità** selezionare le funzionalità necessarie per lo unit test e il codice per il test. Ad esempio, selezionare la casella di controllo **Internet** se lo unit test e il codice di cui si sta eseguendo il test necessitano della funzionalità di accesso a Internet.
+3. Nell'elenco in **Funzionalità**selezionare le funzionalità necessarie per lo unit test e il codice per il test. Ad esempio, selezionare la casella di controllo **Internet** se lo unit test e il codice di cui si sta eseguendo il test necessitano della funzionalità di accesso a Internet.
 
     > [!NOTE]
     > Le funzionalità selezionate devono includere solo quelle necessarie affinché lo unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funzioni correttamente. Non si devono mai includere funzionalità che non fanno parte dell'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test e in genere devono essere un sottoinsieme di funzionalità specificate per l'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test.
@@ -128,7 +128,7 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
     > [!TIP]
     > È possibile selezionare uno o più unit test elencati in Esplora test, quindi fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.
     >
-    >  Inoltre, è possibile scegliere di **eseguire il debug dei test selezionati**, di **aprire il test** e di utilizzare l'opzione **Proprietà**.
+    >  Inoltre, è possibile scegliere di **eseguire il debug dei test selezionati**, di **aprire il test**e di usare l'opzione **Proprietà** .
     >
     >  ![Esplora &#45; unit test-menu di scelta rapida test UNI](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
@@ -138,10 +138,10 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
 
 ## <a name="external-resources"></a>Risorse esterne
 
-### <a name="videos"></a>Video
+### <a name="videos"></a>Videos
  [Channel 9: Unit testing your Windows Store apps built using XAML (Testing unità delle app di Windows Store scritte in XAML)](https://go.microsoft.com/fwlink/?LinkId=226285)
 
-### <a name="forums"></a>Forum
+### <a name="forums"></a>Forums
  [Visual Studio Unit Testing (Testing unità con Visual Studio)](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="msdn-library"></a>MSDN Library

@@ -123,7 +123,7 @@ In C#, Visual Basic e altro codice gestito usare il provider predefinito chiaman
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|description|
+|Titolo|Descrizione|
 |-----------|-----------------|
 |[Riferimento alla libreria C++](../profiling/cpp-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C++.|
 |[Riferimento alla libreria C](../profiling/c-library-reference.md)|Viene descritta l'API del visualizzatore di concorrenza per C.|

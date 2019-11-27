@@ -41,7 +41,7 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
 ### <a name="SetUpStandaloneMMA"></a> Configurare l'agente autonomo  
   
-1. Verificare che:  
+1. Assicurarsi che:  
   
     - Il server Web stia eseguendo [versioni supportate di Internet Information Services (IIS)](https://technet.microsoft.com/library/dn465154.aspx).  
   
@@ -57,7 +57,7 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
 3. Per avviare l'installazione guidata eseguire il file eseguibile scaricato.  
   
-4. Creare una directory sicura nel server Web per l'archiviazione dei log IntelliTrace, ad esempio **C:\IntelliTraceLogs**.  
+4. Creare una directory sicura nel server Web dove archiviare i log di IntelliTrace, ad esempio **C:\IntelliTraceLogs**.  
   
      Assicurarsi di creare questa directory prima di iniziare il monitoraggio. Per evitare il rallentamento dell'app, scegliere una posizione in un disco ad alta velocità locale non troppo attivo.  
   
@@ -80,7 +80,7 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
 3. [Visitare TechNet](https://technet.microsoft.com/systemcenter/default) per ottenere il contenuto della Guida più recente.  
   
 #### <a name="FullPermissionsITLog"></a> D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?  
- **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Di seguito è riportato un esempio:  
+ **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Ad esempio:  
   
 - Per configurare le autorizzazioni con il comando Windows **icacls** :  
   
@@ -92,7 +92,7 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
      `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-    oppure  
+    -oppure-  
   
 - Per configurare le autorizzazioni con Esplora risorse (o Esplora file):  
   
@@ -137,7 +137,7 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> oppure<br /><br /> **"IIS: \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Questo percorso è disponibile in Gestione IIS. Di seguito è riportato un esempio:<br /><br /> ![Percorso del sito Web IIS e dell'app Web](../debugger/media/ffr-iismanager.png "FFR_IISManager ")<br /><br /> È anche possibile usare i comandi [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) e [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -oppure-<br /><br /> **"IIS: \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Questo percorso è disponibile in Gestione IIS. Ad esempio:<br /><br /> ![Percorso del sito Web IIS e dell'app Web](../debugger/media/ffr-iismanager.png "FFR_IISManager ")<br /><br /> È anche possibile usare i comandi [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) e [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<monitoringMode>*|Specificare la modalità di monitoraggio:<br /><br /> <ul><li>**Monitor**: registra dettagli minimi sugli eventi relativi a eccezioni e prestazioni. Questa modalità usa il piano di raccolta predefinito.</li><li>**Trace**: registra dettagli a livello di funzione o monitora le applicazioni SharePoint 2010 e SharePoint 2013 usando il piano di raccolta specificato. In questa modalità l'esecuzione dell'applicazione potrebbe essere più lenta.<br /><br /> <ul><li>[D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)</li><li>[D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing)</li></ul><br />     Questo esempio registra gli eventi per un'applicazione SharePoint ospitata in un sito SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Programmi\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\ collection_plan. ASP. NET. default. xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: registra i dettagli personalizzati usando un piano di raccolta personalizzato specificato. Sarà necessario riavviare il monitoraggio se si modifica il piano di raccolta dopo l'avvio del monitoraggio.</li></ul>|  
     |*"\<outputPath>"*|Specificare il percorso completo della directory per archiviare i log IntelliTrace. Assicurarsi di creare questa directory prima di iniziare il monitoraggio.|  
     |*\<UInt32>*|Specificare la dimensione massima per il log IntelliTrace. La dimensione massima predefinita del log IntelliTrace è 250 MB.<br /><br /> Quando viene raggiunto il limite, le voci immesse per prime vengono sovrascritte dall'agente per fare spazio ad altre voci. Per modificare questo limite, usare l'opzione **-MaximumFileSizeInMegabytes** o modificare l'attributo `MaximumLogFileSize` nel piano di raccolta.|  
@@ -162,7 +162,7 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
    Se l'attributo `enabled` non esiste, l'evento è abilitato.  
   
-   Di seguito è riportato un esempio:  
+   Ad esempio:  
   
   - Disabilitare gli eventi di Windows Workflow per le applicazioni che non usano Windows Workflow.  
   
@@ -246,11 +246,11 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
     **Checkpoint-WebApplicationMonitoring "IIS: \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-    Di seguito è riportato un esempio:  
+    Ad esempio:  
   
     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-    oppure  
+    -oppure-  
   
     **PS C: > Checkpoint-WebApplicationMonitoring "IIS: sitesFabrikamFabrikamFiber. Web"**  
   
@@ -280,7 +280,7 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
     **Stop-WebApplicationMonitoring -All**  
   
-    Di seguito è riportato un esempio:  
+    Ad esempio:  
   
     **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
@@ -303,5 +303,5 @@ Per la documentazione più recente su Visual Studio, vedere [uso del Microsoft M
   
  [Ottimizzazione della raccolta IntelliTrace nei server di produzione](https://go.microsoft.com/fwlink/?LinkId=255233)  
   
-#### <a name="forums"></a>Forum  
+#### <a name="forums"></a>Forums  
  [Diagnostica di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)

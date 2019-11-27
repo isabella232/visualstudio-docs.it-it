@@ -18,7 +18,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299938"
 ---
-# <a name="talk-to-us"></a>Talk to Us
+# <a name="talk-to-us"></a>Comunicazioni con Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente su Visual Studio, vedere [comunicare con](https://docs.microsoft.com/visualstudio/ide/feedback-options)Microsoft.

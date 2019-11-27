@@ -30,7 +30,7 @@ ms.locfileid: "74300887"
 
 2. [Aggiornare il numero di versione del pacchetto in Package.TT](#version). È necessario effettuare questa operazione ogni volta che si modifica Commands.vsct
 
-3. [Scrivere metodi nella classe CommandSet](#CommandSet) per rendere il comando visibile e per definire cosa deve effettuare il comando.
+3. [Scrivere i metodi nella classe commandt](#CommandSet) per rendere visibile il comando e definire quello che si vuole eseguire per il comando.
 
    Per esempi, vedere il [sito Web SDK di visualizzazione e modellazione](https://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -61,9 +61,9 @@ ms.locfileid: "74300887"
 
 #### <a name="to-add-the-command"></a>Per aggiungere il comando
 
-1. In **Esplora soluzioni**, nel progetto **DslPackage**, aprire Commands.vsct.
+1. In **Esplora soluzioni**, nel progetto **DslPackage** , aprire Commands. vsct.
 
-2. Nell'elemento `Commands` definire uno o più pulsanti e un gruppo. Un *pulsante* è un elemento del menu. Un *gruppo* è una sezione del menu. Per definire queste voci, aggiungere gli elementi seguenti:
+2. Nell'elemento `Commands` definire uno o più pulsanti e un gruppo. Un *pulsante* è un elemento nel menu. Un *gruppo* è una sezione nel menu. Per definire queste voci, aggiungere gli elementi seguenti:
 
     ```
     <!-- Define a group - a section in the menu -->
@@ -117,7 +117,7 @@ ms.locfileid: "74300887"
     </Symbols>
     ```
 
-5. Sostituire `{000...000}` con un GUID che identifica i gruppi e le voci di menu. Per ottenere un nuovo GUID, usare lo strumento **Crea GUID** del menu **Strumenti**.
+5. Sostituire `{000...000}` con un GUID che identifica i gruppi e le voci di menu. Per ottenere un nuovo GUID, usare lo strumento **Crea GUID** dal menu **strumenti** .
 
     > [!NOTE]
     > Se si aggiungono altri gruppi o altre voci di menu, è possibile usare lo stesso GUID. Tuttavia, è necessario usare nuovi valori per `IDSymbols`.
@@ -139,11 +139,11 @@ ms.locfileid: "74300887"
 
 #### <a name="to-update-the-packagett-file"></a>Per aggiornare il file Package.tt
 
-1. In **Esplora soluzioni**, nella cartella **GeneratedCode** del progetto **DslPackage**, aprire il file Package.tt.
+1. In **Esplora soluzioni**, nella cartella **GeneratedCode** del progetto **DslPackage** aprire il file Package.TT.
 
 2. Trovare l'attributo `ProvideMenuResource`.
 
-3. Incrementare il parametro della `version` dell'attributo, che è il secondo parametro. Se si vuole, è possibile scrivere il nome del parametro in modo esplicito come promemoria del suo scopo. Di seguito è riportato un esempio:
+3. Incrementare il parametro della `version` dell'attributo, che è il secondo parametro. Se si vuole, è possibile scrivere il nome del parametro in modo esplicito come promemoria del suo scopo. Ad esempio:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -162,7 +162,7 @@ ms.locfileid: "74300887"
 
 2. In **DslPackage**creare una cartella denominata **codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs`.
 
-3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Di seguito è riportato un esempio:
+3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -324,9 +324,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 #### <a name="to-exercise-the-command"></a>Per verificare il comando
 
-1. Sulla barra degli strumenti di **Esplora soluzioni** fare clic su **Trasforma tutti i modelli**.
+1. Sulla barra degli strumenti **Esplora soluzioni** fare clic su **trasforma tutti i modelli**.
 
-2. Premere **F5** per ricompilare la soluzione e avviare il debug del linguaggio specifico di dominio nella build sperimentale.
+2. Premere **F5** per ricompilare la soluzione e avviare il debug del linguaggio specifico di dominio nella compilazione sperimentale.
 
 3. Nella build sperimentale aprire un diagramma di esempio.
 
@@ -339,11 +339,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Assicurarsi che il codice di esempio sperimentale presenti l'estensione del nome file corretto per il DSL. Per controllare l'estensione del nome file, aprire DslDefinition.dsl nell'istanza principale di Visual Studio. In Esplora DSL, fare clic con il pulsante destro del mouse sul nodo Editor, quindi fare clic su Proprietà. Nella finestra Proprietà esaminare la proprietà FileExtension.
 
-- Il [numero di versione del pacchetto è stato incrementato](#version)?
+- È stato [incrementato il numero di versione del pacchetto](#version)?
 
 - Impostare un punto di interruzione all'inizio del metodo OnStatus. L'interruzione dovrebbe avvenire quando si fa clic con il pulsante destro del mouse su qualsiasi parte del diagramma.
 
-   **Il metodo OnStatus non è chiamato**:
+   **Metodo OnStatus non chiamato**:
 
   - Assicurarsi che i GUID e gli ID del codice CommandSet corrispondano a quelli della sezione Symbols di Commands.vsct.
 

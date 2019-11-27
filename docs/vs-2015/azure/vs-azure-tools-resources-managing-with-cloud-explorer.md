@@ -24,7 +24,7 @@ Cloud Explorer consente di visualizzare le risorse di Azure e i gruppi di risors
 
 Cloud Explorer è basato sullo stack di Azure Resource Manager, proprio come il [portale di Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040). Pertanto riconosce risorse, come i gruppi di risorse di Azure e i servizi di Azure, come le app per la logica e le app per le API. Supporta infine il [controllo degli accessi in base al ruolo](/azure/role-based-access-control/role-assignments-portal) (RBAC).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * Visual Studio 2015 con il [Microsoft Azure SDK per .NET 2,9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Account di Microsoft Azure: se non si ha un account, è possibile [iscriversi per ottenere una versione di valutazione gratuita](https://go.microsoft.com/fwlink/?LinkId=623901) oppure [attivare i vantaggi della sottoscrizione di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=623901).

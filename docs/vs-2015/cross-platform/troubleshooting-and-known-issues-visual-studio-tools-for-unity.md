@@ -31,7 +31,7 @@ In questa sezione verranno illustrate le soluzioni a problemi comuni relativi a 
   
 1. Eliminare i vecchi file della soluzione e del progetto dal progetto Unity. Nella directory radice del progetto Unity individuare i file con estensione sln di Visual Studio e i file * proj, quindi eliminarli tutti.  
   
-2. Importare il pacchetto di Visual Studio Tools per Unity nel progetto Unity. Per informazioni su come importare il pacchetto VSTU, vedere Configurare Visual Studio Tools per Unity nella pagina [Introduzione](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
+2. Importare il pacchetto di Visual Studio Tools per Unity nel progetto Unity. Per informazioni su come importare il pacchetto VSTU, vedere Configurare Visual Studio Tools per Unity nella pagina [Introduzione](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
   
 3. Generare i nuovi file della soluzione e del progetto. Per generarli subito, nel menu principale dell'editor di Unity scegliere **Visual Studio Tools**, **Generate Project Files**. In caso contrario, è possibile ignorare questo passaggio. Visual Studio Tools per Unity genererà i nuovi file automaticamente quando si sceglie **Visual Studio Tools**, **Open in Visual Studio**.  
   
@@ -51,7 +51,7 @@ In questa sezione verranno illustrate le soluzioni a problemi comuni relativi a 
 - Durante l'esecuzione o l'uscita da istruzioni o metodi vengono riscontrati comportamenti errati, in particolare negli iteratori o all'interno di istruzioni switch.  
   
 ## <a name="reporting-errors"></a>Segnalazione di errori  
- È possibile contribuire a migliorare la qualità di Visual Studio Tools per Unity inviando apposite segnalazioni quando si riscontrano arresti anomali, blocchi o errori di altro tipo. In questo modo Microsoft potrà esaminare e correggere i problemi relativi a Visual Studio Tools per Unity. Microsoft ringrazia per il contributo.  
+ È possibile contribuire a migliorare la qualità di Visual Studio Tools per Unity inviando apposite segnalazioni quando si riscontrano arresti anomali, blocchi o errori di altro tipo. In questo modo Microsoft potrà esaminare e correggere i problemi relativi a Visual Studio Tools per Unity. Grazie.  
   
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Come segnalare un errore in caso di blocco di Visual Studio  
  Sono stati segnalati alcuni casi di blocco di Visual Studio durante il debug con Visual Studio Tools per Unity, ma sono necessari maggiori dati per analizzare questo problema. Per contribuire alla risoluzione del problema, eseguire le operazioni descritte di seguito.  
@@ -62,7 +62,7 @@ In questa sezione verranno illustrate le soluzioni a problemi comuni relativi a 
   
 2. Aprire la finestra di dialogo Connetti a processo. Nel menu principale della nuova istanza di Visual Studio scegliere **Debug**, **Connetti a processo**.  
   
-3. Connettere il debugger all'istanza bloccata di Visual Studio. Nella finestra di dialogo **Connetti a processo** selezionare l'istanza bloccata di Visual Studio dalla tabella **Processi disponibili** e quindi fare clic sul pulsante **Connetti**.  
+3. Connettere il debugger all'istanza bloccata di Visual Studio. Nella finestra di dialogo **Connetti a processo** selezionare l'istanza bloccata di Visual Studio dalla tabella **Processi disponibili** e quindi fare clic sul pulsante **Connetti** .  
   
 4. Sospendere l'esecuzione del debugger. Nel menu principale della nuova istanza di Visual Studio scegliere **Debug**, **Interrompi tutto** oppure premere **CTRL+ALT+INTERR**.  
   

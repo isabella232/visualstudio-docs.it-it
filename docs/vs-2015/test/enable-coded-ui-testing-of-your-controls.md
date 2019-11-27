@@ -509,7 +509,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }
     ```
 
-4. Compilare i file binari e copiarli in %Programmi%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+4. Compilare i file binari e copiarli in %ProgramFiles%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
 
 > [!NOTE]
 > Il filtro azioni non dipende dall'implementazione di accessibilità o dal provider di proprietà.
@@ -519,7 +519,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Per eseguire il debug del provider di proprietà o del filtro azioni
 
-1. Compilare la versione di debug del pacchetto di estensione copiare i file DLL e PDB in %Programmi%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Compilare la versione di debug del pacchetto di estensione copiare i file .dll e .pdb in %ProgramFiles%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
 
 2. Eseguire l'applicazione (non nel debugger).
 

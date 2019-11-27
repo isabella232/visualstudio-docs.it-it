@@ -45,7 +45,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
   Per altre informazioni sulle piattaforme e sulle configurazioni supportate dai test codificati dell'interfaccia utente, vedere [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
-  **In questo argomento**
+  **Contenuto dell'argomento**
 
 - [Creazione di test codificati dell'interfaccia utente](#VerifyingCodeUsingCUITCreate)
 
@@ -69,7 +69,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
 1. **Creare un progetto di test codificato dell'interfaccia utente.**
 
-    I test codificati dell'interfaccia utente devono essere contenuti in un progetto di test codificato dell'interfaccia utente. Se non si dispone già di un progetto di test codificato dell'interfaccia utente, crearne uno. In **Esplora soluzioni**, scegliere **Aggiungi**, **Nuovo progetto** dal menu di scelta rapida della soluzione e quindi selezionare **Visual Basic** o **Visual C#** . Scegliere quindi **Test**, **Test codificato dell'interfaccia utente**.
+    I test codificati dell'interfaccia utente devono essere contenuti in un progetto di test codificato dell'interfaccia utente. Se non si dispone già di un progetto di test codificato dell'interfaccia utente, crearne uno. In **Esplora soluzioni** scegliere **Aggiungi**, **Nuovo progetto** dal menu di scelta rapida della soluzione e quindi selezionare **Visual Basic** o **Visual C#** . Scegliere quindi **Test**, **Test codificato dell'interfaccia utente**.
 
    - <em>I modelli di **Test codificato dell'interfaccia utente</em>* non sono disponibili.*
 
@@ -106,7 +106,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
 4. **Verificare i valori nei campi dell'interfaccia utente, ad esempio le caselle di testo**.
 
-    Scegliere **Aggiungi asserzioni** nel Generatore di test codificati dell'interfaccia utente e quindi scegliere un controllo dell'interfaccia utente nell'applicazione in esecuzione. Nell'elenco delle proprietà visualizzato selezionare una proprietà, ad esempio, **Testo** in una casella di testo. Scegliere **Aggiungi asserzione** dal menu di scelta rapida. Nella finestra di dialogo selezionare l'operatore di confronto, il valore di confronto e il messaggio di errore.
+    Scegliere **Aggiungi asserzioni** nel Generatore di test codificati dell'interfaccia utente e quindi scegliere un controllo dell'interfaccia utente nell'applicazione in esecuzione. Nell'elenco delle proprietà visualizzato selezionare una proprietà, ad esempio **Testo**, in una casella di testo. Scegliere **Aggiungi asserzione** dal menu di scelta rapida. Nella finestra di dialogo selezionare l'operatore di confronto, il valore di confronto e il messaggio di errore.
 
     Chiudere la finestra delle asserzioni e scegliere **Genera codice**.
 
@@ -184,13 +184,13 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
    Nel codice dell'applicazione, il controllo da verificare deve avere un ID univoco, ad esempio un attributo ID HTML o un UId WPF. Per aggiungere questi ID può essere necessario aggiornare il codice dell'applicazione.
 
-  Aprire quindi il menu di scelta rapida della proprietà del controllo dell'interfaccia utente da verificare e scegliere **Aggiungi asserzione**. Nella finestra di dialogo **Aggiungi asserzione** selezionare i **Criteri di confronto** per l'asserzione, ad esempio <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, quindi digitare il valore per l'asserzione in **Valore di confronto**.
+  Aprire quindi il menu di scelta rapida della proprietà del controllo dell'interfaccia utente da verificare e scegliere **Aggiungi asserzione**. Nella finestra di dialogo **Aggiungi asserzione** selezionare i **Criteri di confronto** per l'asserzione, ad esempio <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> e quindi digitare il valore per l'asserzione in **Valore di confronto**.
 
   ![Asserzioni di test codificati dell'interfaccia utente](../test/media/codedui-3.png "CodedUI_3")
 
   Dopo avere aggiunto tutte le asserzioni per il test, fare clic su **OK**.
 
-  Per generare codice per le asserzioni e aggiungere il controllo alla mappa dell'interfaccia utente fare clic sull'icona **Genera codice**. Digitare un nome e una descrizione per il metodo del test codificato dell'interfaccia utente, che verranno aggiunti come commenti per il metodo. Scegliere **Aggiungi e genera**. Fare clic sull'icona **Chiudi** per chiudere il **Generatore di test codificati dell'interfaccia utente**. Verrà generato codice simile al seguente. Ad esempio, se il nome immesso è `AssertForAddTwoNumbers`, il codice sarà simile a quello di questo esempio:
+  Per generare codice per le asserzioni e aggiungere il controllo alla mappa dell'interfaccia utente, fare clic sull'icona **Genera codice**. Digitare un nome e una descrizione per il metodo del test codificato dell'interfaccia utente, che verranno aggiunti come commenti per il metodo. Scegliere **Aggiungi e genera**. Fare clic sull'icona **Chiudi** per chiudere il **Generatore di test codificati dell'interfaccia utente**. Verrà generato codice simile al seguente. Ad esempio, se il nome immesso è `AssertForAddTwoNumbers`, il codice sarà simile a quello di questo esempio:
 
 - Aggiunge una chiamata al metodo di asserzione AssertForAddTwoNumbers al metodo di test nel file del test codificato dell'interfaccia utente:
 
@@ -303,7 +303,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
   - Nella riproduzione di un test codificato dell'interfaccia utente è possibile fare in modo che il test attenda che si verifichino determinati eventi, ad esempio che venga visualizzata finestra, venga nascosto l'indicatore di stato e così via. A questo scopo, usare il metodo UITestControl.WaitForControlXXX() appropriato. Per un elenco completo dei metodi disponibili, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Per un esempio di test codificato dell'interfaccia utente, in cui si attende che un controllo venga abilitato usando il metodo WaitForControlEnabled, vedere [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-  - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere [Utilizzo dei controlli HTML5 nei test codificati dell'interfaccia utente](../test/using-html5-controls-in-coded-ui-tests.md).
+  - I test codificati dell'interfaccia utente includono il supporto per alcuni dei controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10. Per altre informazioni, vedere [Using HTML5 Controls in Coded UI Tests](../test/using-html5-controls-in-coded-ui-tests.md).
 
   - **Informazioni aggiuntive sui test codificati dell'interfaccia utente:**
 
@@ -474,7 +474,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Test per il recapito continuo con Visual Studio 2012 - Capitolo 5: automazione dei test di sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>Domande frequenti
+### <a name="faq"></a>DOMANDE FREQUENTI
 - [Domande frequenti sui test codificati dell'interfaccia utente - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
 - [Domande frequenti sui test codificati dell'interfaccia utente - 2](https://go.microsoft.com/fwlink/?LinkID=230578)

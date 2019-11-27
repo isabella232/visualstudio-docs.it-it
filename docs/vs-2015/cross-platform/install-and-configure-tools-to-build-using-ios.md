@@ -36,7 +36,7 @@ ms.locfileid: "74299815"
   
  [Configurare l'agente remoto in Visual Studio](#ConfigureVS)  
   
- [Generare un nuovo PIN di sicurezza](#GeneratePIN)  
+ [Generate a new security PIN](#GeneratePIN)  
   
  [Generare un nuovo certificato del server](#GenerateCert)  
   

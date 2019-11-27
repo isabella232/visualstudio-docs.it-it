@@ -37,7 +37,7 @@ ms.locfileid: "74301279"
 
 - Test dell'host personalizzato con il processore di direttiva generato.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) devono essere installati i componenti seguenti:
 
 |||
@@ -320,7 +320,7 @@ ms.locfileid: "74301279"
 
 2. Digitare il percorso del file eseguibile per l'host personalizzato, ma non premere ancora INVIO.
 
-     Digitare ad esempio:
+     Digitare ad esempio quanto segue:
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
@@ -331,7 +331,7 @@ ms.locfileid: "74301279"
 
 4. Digitare il percorso del file modello di testo, quindi premere INVIO.
 
-     Digitare ad esempio:
+     Digitare ad esempio quanto segue:
 
      `<YOUR PATH>TestTemplateWithDP.txt`
 
