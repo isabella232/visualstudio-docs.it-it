@@ -29,7 +29,7 @@ ms.locfileid: "74298481"
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
-|Category|Microsoft.Reliability|
+|Categoria|Microsoft.Reliability|
 |Modifica importante|Senza interruzioni|
 
 ## <a name="cause"></a>Causa
@@ -40,7 +40,7 @@ ms.locfileid: "74298481"
 
  Una violazione di questa regola si verifica quando un membro chiama uno dei metodi seguenti.
 
-|Metodo|description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|Chiamata a GC. Collect può influire in modo significativo sulle prestazioni dell'applicazione ed è raramente necessario. Per ulteriori informazioni, vedere la voce del Blog relativo alle [prestazioni di Rico Mariani](https://go.microsoft.com/fwlink/?LinkId=169256) in MSDN.|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend e thread. Resume sono stati deprecati a causa del comportamento imprevedibile.  Usare altre classi nello spazio dei nomi <xref:System.Threading>, ad esempio <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>e <xref:System.Threading.Semaphore> per sincronizzare i thread o proteggere le risorse.|

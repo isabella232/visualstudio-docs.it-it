@@ -36,7 +36,7 @@ In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLa
      ![Controllo TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout") Controllo TableLayoutPanel
 
     > [!NOTE]
-    > Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic ovunque all'interno del form per chiuderla. Verranno fornite ulteriori informazioni su questa finestra più avanti nell'esercitazione.
+    > Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic in qualsiasi punto all'interno del form per chiuderla. Verranno fornite ulteriori informazioni su questa finestra più avanti nell'esercitazione.
 
      Si noti come la Casella degli strumenti si espanda per includere il form quando si fa clic sulla scheda e come si chiuda quando si fa clic in un punto esterno. Si tratta della funzionalità Nascondi automaticamente dell'IDE. È possibile attivarla o disattivarla e bloccare in posizione qualsiasi finestra facendo clic sull'icona a forma di puntina da disegno nell'angolo superiore destro della finestra. L'icona a forma di puntina da disegno ha l'aspetto seguente.
 
@@ -46,7 +46,7 @@ In questo passaggio si aggiunge un controllo `TableLayoutPanel` al form. TableLa
 
      ![Finestra proprietà che mostra il controllo TableLayoutPanel](../ide/media/express-controlspropwin.png "Express_ControlsPropWin") Finestra Proprietà che mostra il controllo TableLayoutPanel
 
-5. Scegliere il pulsante **Alfabetico** sulla barra degli strumenti della finestra **Proprietà**. In questo modo, l'elenco delle proprietà nella finestra **Proprietà** viene visualizzato in ordine alfabetico, per semplificare l'individuazione delle proprietà in questa esercitazione.
+5. Scegliere il pulsante **Alfabetico** nella barra degli strumenti nella finestra **Proprietà**. In questo modo, l'elenco delle proprietà nella finestra **Proprietà** viene visualizzato in ordine alfabetico per semplificare l'individuazione delle proprietà in questa esercitazione.
 
 6. Il selettore dei controlli è un elenco a discesa che si trova nella parte superiore della finestra **Proprietà**. In questo esempio è selezionato un controllo denominato `tableLayoutPanel1`. È possibile selezionare i controlli scegliendo un'area in Progettazione Windows Form o selezionandoli dal selettore dei controlli. Dopo aver selezionato `TableLayoutPanel`, individuare la proprietà **Dock** e scegliere **Ancora** che dovrebbe essere impostato su **Nessuno**. Si noti che viene visualizzata una freccia a discesa accanto al valore. Fare clic sulla freccia, quindi selezionare il pulsante **Riempimento** (il pulsante grande al centro), come mostrato nell'immagine seguente.
 

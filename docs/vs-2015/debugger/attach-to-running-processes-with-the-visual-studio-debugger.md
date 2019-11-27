@@ -39,7 +39,7 @@ ms.locfileid: "74299519"
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'avvio dell'esecuzione del processo, fare clic su **Debug / Connetti a processo** oppure premere **CTRL+ALT+P** per aprire la finestra di dialogo **Connetti a processo**.
+È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Al termine dell'esecuzione del processo, fare clic su **debug/Connetti a processo** oppure premere **CTRL + ALT + P**per aprire la finestra di dialogo **Connetti a processo** .
 
 È possibile usare questa funzionalità per eseguire il debug di app in esecuzione in un computer locale o remoto, eseguire il debug di più processi simultaneamente o eseguire il debug di un'applicazione non creata in Visual Studio. Spesso è utile quando si vuole eseguire il debug di un'app, ma (per qualsiasi motivo) non è stata avviata l'app da Visual Studio con il debugger collegato. Ad esempio, se si esegue l'app senza il debugger e si raggiunge un'eccezione, è possibile connettersi al processo che esegue l'app per avviare il debug.
 
@@ -59,13 +59,13 @@ ms.locfileid: "74299519"
 
      Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .
 
-3. Nella casella **Connetti a**  verificare che sia presente il tipo di codice di cui eseguire il debug. L'impostazione predefinita **Automatico** tenta di determinare il tipo di codice di cui si desidera eseguire il debug. Per impostare manualmente il tipo di codice, eseguire le operazioni seguenti
+3. Nella casella **Connetti a** verificare che sia presente il tipo di codice di cui eseguire il debug. L'impostazione predefinita **Automatico** tenta di determinare il tipo di codice di cui si desidera eseguire il debug. Per impostare manualmente il tipo di codice, eseguire le operazioni seguenti
 
     1. Nella finestra di dialogo **Connetti a** scegliere **Seleziona**.
 
     2. Nella finestra di dialogo **Seleziona tipo di codice** fare clic su **Esegui il debug di questi tipi di codice** e selezionare i tipi da sottoporre a debug.
 
-    3. Fare clic su **OK**.
+    3. fare clic su **OK**.
 
 4. Scegliere **Connetti**.
 
@@ -124,7 +124,7 @@ Per alcuni tipi di app, ad esempio le app di Windows Store, non è possibile con
 
 |Scenario|Metodo Debug|Nome processo|Note e collegamenti|
 |-|-|-|-|
-|Eseguire il debug di un'app gestita o nativa nel computer locale|Usare Connetti a processo o [debug standard](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Per accedere rapidamente alla finestra di dialogo, premere **CTRL + ALT + P** , quindi digitare la prima lettera del nome del processo.|
+|Eseguire il debug di un'app gestita o nativa nel computer locale|Usare Connetti a processo o [debug standard](../debugger/getting-started-with-the-debugger.md)|*appname*. exe|Per accedere rapidamente alla finestra di dialogo, premere **CTRL + ALT + P** , quindi digitare la prima lettera del nome del processo.|
 |Eseguire il debug di app ASP.NET nel computer locale dopo l'avvio dell'app senza il debugger|Usare Connetti a processo|iiexpress.exe|Questa operazione può essere utile per velocizzare il caricamento dell'app, ad esempio quando si esegue la profilatura. |
 |Debug remoto ASP.NET 4 o 4,5 su un server IIS|USA Remote Tools e Connetti a processo|w3wp.exe|Vedere [Remote Debugging ASP.NET on a Remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |ASP.NET Core di debug remoto in un server IIS|USA Remote Tools e Connetti a processo|DNX. exe|Per la distribuzione di app, vedere [pubblicare in IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per il debug, vedere [Remote Debugging ASP.NET on a Remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
@@ -134,7 +134,7 @@ Per alcuni tipi di app, ad esempio le app di Windows Store, non è possibile con
 |Eseguire il debug di un'app di Windows universale (UWP), OneCore, HoloLens o Internet che non è stata avviata da Visual Studio|Debug pacchetto dell'app installato|N/D|USA **debug/altre destinazioni di debug/Esegui debug del pacchetto dell'app installata** anziché **Connetti a processo**|
 
 > [!WARNING]
-> Per connettersi a un'app universale di Windows scritta in JavaScript, per prima cosa è necessario abilitare il debug per l'app. Vedere [Connettere il debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) nel Centro sviluppatori Windows.
+> Per connettersi a un'app universale di Windows scritta in JavaScript, per prima cosa è necessario abilitare il debug per l'app. Vedere [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) in Windows Dev Center.
 
 > [!NOTE]
 > Affinché il debugger possa connettersi a codice scritto in C++, è necessario che venga generato l'elemento `DebuggableAttribute`. È possibile aggiungere automaticamente questo elemento al codice mediante il collegamento all'opzione del linker [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) .
@@ -170,7 +170,7 @@ In alcuni scenari di debug locale è possibile eseguire il debug in Visual Studi
 
    3. Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare tutti gli altri codici.
 
-   4. Fare clic su **OK**. La finestra di dialogo **Seleziona tipo di codice** verrà chiusa.
+   4. fare clic su **OK**. La finestra di dialogo **Seleziona tipo di codice** verrà chiusa.
 
    5. Nella finestra di dialogo **Connetti a processo** scegliere **Connetti**.
 

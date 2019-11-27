@@ -1,5 +1,5 @@
 ---
-title: Creazione di un'interfaccia utente tramite XAML Designer
+title: Creazione di un'interfaccia utente tramite la finestra di progettazione XAML
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -24,17 +24,17 @@ ms.locfileid: "74294661"
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva per semplificare la progettazione di app per Windows Store, Windows Phone, WPF e Silverlight basate su XAML. È possibile creare interfacce utente per le app trascinando i controlli dalla **Casella degli strumenti** e impostando le proprietà nella finestra **Proprietà**. È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
+La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva per semplificare la progettazione di app per Windows Store, Windows Phone, WPF e Silverlight basate su XAML. È possibile creare interfacce utente per le app trascinando i controlli dalla **Casella degli strumenti** e impostando le proprietà nella finestra **Proprietà** . È anche possibile modificare il codice XAML direttamente nella visualizzazione XAML.
 
- Per attività di progettazione XAML avanzate, ad esempio animazioni e comportamenti, vedere [Creazione di un'interfaccia utente usando Blend per Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).
+ Per attività di progettazione XAML avanzate quali animazioni e comportamenti, vedere [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).
 
 ## <a name="xaml-designer-workspace"></a>Area di lavoro della finestra di progettazione XAML
- L'area di lavoro della finestra di progettazione XAML è costituita da alcuni elementi dell'interfaccia visiva, ad esempio la tavola da disegno, l'Editor XAML, la finestra Dispositivo, la finestra Struttura documento e la finestra Proprietà. Per aprire la finestra di progettazione XAML, fare clic con il pulsante destro del mouse su un file XAML in **Esplora soluzioni**, quindi scegliere **Progettazione visualizzazioni**.
+ L'area di lavoro della finestra di progettazione XAML è costituita da alcuni elementi dell'interfaccia visiva, ad esempio la tavola da disegno, l'Editor XAML, la finestra Dispositivo, la finestra Struttura documento e la finestra Proprietà. Per aprire la finestra di progettazione XAML, fare clic con il pulsante destro del mouse su un file XAML in **Esplora soluzioni** , quindi scegliere **Progettazione visualizzazioni**.
 
 ## <a name="authoring-views"></a>Visualizzazioni per la creazione
- La finestra di progettazione XAML include una visualizzazione XAML e una visualizzazione Progettazione sincronizzata del markup XAML dell'app sottoposto a rendering. Con un file XAML aperto in Visual Studio, è possibile spostarsi tra la visualizzazione Progettazione e la visualizzazione XAML mediante le schede **Progettazione** e **XAML**. È possibile utilizzare il pulsante **Scambia riquadri** per mostrare in primo piano alternativamente la tavola da disegno o l'editor XAML.
+ La finestra di progettazione XAML include una visualizzazione XAML e una visualizzazione Progettazione sincronizzata del markup XAML dell'app sottoposto a rendering. Con un file XAML aperto in Visual Studio, è possibile spostarsi tra la visualizzazione Progettazione e la visualizzazione XAML mediante le schede **Progettazione** e **XAML** . È possibile usare il pulsante **Scambia riquadri** per visualizzare in primo piano alternativamente la tavola da disegno o l'Editor XAML.
 
- Nella visualizzazione Progettazione, la finestra che contiene la *tavola da disegno* è la finestra attiva e può essere utilizzata come area di lavoro primaria. Permette di progettare visivamente una pagina nell'app, aggiungendo o disegnando elementi e quindi modificandoli. Per altre informazioni, vedere [Utilizzo di elementi nella finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
+ Nella visualizzazione Progettazione la finestra che include la *tavola da disegno* è la finestra attiva ed è possibile usarla come area di lavoro principale. Permette di progettare visivamente una pagina nell'app, aggiungendo o disegnando elementi e quindi modificandoli. Per altre informazioni, vedi [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Questa figura mostra la tavola da disegno nella visualizzazione Progettazione.
 
  ![Visualizzazione progettazione di finestra di progettazione XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
@@ -48,7 +48,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  Gli strumenti decorativi`Grid` vengono usati per controllare la larghezza e l'altezza delle righe e delle colonne di una `Grid`. È possibile aggiungere una nuova colonna o riga facendo clic sulle sbarre della `Grid` . Quando si aggiunge una nuova linea di riga o colonna per un pannello `Grid` che include due o più colonne o righe, una barra degli strumenti ridotta viene visualizzata all'esterno della sbarra e permette di impostare esplicitamente la larghezza e l'altezza. La barra degli strumenti ridotta permette di configurare le opzioni di ridimensionamento per le righe e le colonne della `Grid` .
 
- **Quadratini di ridimensionamento** I quadratini di ridimensionamento vengono visualizzati sui controlli selezionati e ne permettono il ridimensionamento. Quando si ridimensiona un controllo, vengono in genere visualizzati i valori relativi a larghezza e altezza per semplificare il ridimensionamento del controllo. Per altre informazioni sulla modifica dei controlli nella visualizzazione Progettazione, vedere [Utilizzo di elementi nella finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md).
+ **Quadratini di ridimensionamento** I quadratini di ridimensionamento vengono visualizzati sui controlli selezionati e ne permettono il ridimensionamento. Quando si ridimensiona un controllo, vengono in genere visualizzati i valori relativi a larghezza e altezza per semplificare il ridimensionamento del controllo. Per ulteriori informazioni sulla modifica dei controlli nella visualizzazione Progettazione, vedere [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
 
  **Margini** I margini rappresentano la quantità di spazio fisso tra il bordo di un controllo e il bordo del rispettivo contenitore. È possibile impostare i margini di un controllo usando le proprietà [Margin](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) in **Layout** nella finestra Proprietà.
 
@@ -68,18 +68,18 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  **Attiva/Disattiva allineamento alla griglia** Se è abilitato l'**allineamento alla griglia** quando si trascina un elemento sulla tavola da disegno, l'elemento tende ad allinearsi alle linee orizzontali e verticali più vicine.
 
- **Attiva/Disattiva allineamento alle guide di allineamento** Le guide di allineamento consentono di allineare i controlli l'uno rispetto all'altro. Se è abilitato l'**allineamento alle guide di allineamento**, quando si trascina un controllo in relazione ad altri controlli, vengono visualizzati i limiti di allineamento quando i bordi e il testo di alcuni controlli sono allineati orizzontalmente o verticalmente. Il limite di allineamento viene mostrato come una linea tratteggiata rossa.
+ **Attiva/Disattiva allineamento alle guide di allineamento** Le guide di allineamento consentono di allineare i controlli l'uno rispetto all'altro. Se è abilitato l' **allineamento alle guide di allineamento** , quando si trascina un controllo in relazione ad altri controlli, vengono visualizzati i limiti di allineamento quando i bordi e il testo di alcuni controlli sono allineati orizzontalmente o verticalmente. Il limite di allineamento viene mostrato come una linea tratteggiata rossa.
 
  Nella visualizzazione XAML, la finestra contenente l'editor XAML è la finestra attiva e l'editor XAML è lo strumento di creazione primario. Il linguaggio Extensible Application Markup Language (XAML) fornisce un vocabolario dichiarativo basato su XML per la specifica dell'interfaccia utente di un'applicazione. La visualizzazione XAML include IntelliSense, la formattazione automatica, l'evidenziazione della sintassi e la navigazione tra tag. La figura seguente mostra la visualizzazione XAML:
 
  ![Visualizzazione XAML](../designers/media/xaml-editor.png "xaml_editor")
 
- **Barra della visualizzazione suddivisa** La barra della visualizzazione suddivisa compare nella parte superiore della visualizzazione XAML quando l'editor XAML si trova nella finestra inferiore. Tale barra consente di controllare le dimensioni relative delle visualizzazioni Progettazione e XAML. È inoltre possibile scambiare le posizioni delle visualizzazioni, utilizzando il pulsante **Scambia riquadri**, specificare se le visualizzazioni sono disposte orizzontalmente o verticalmente e comprimere la visualizzazione desiderata.
+ **Barra della visualizzazione suddivisa** La barra della visualizzazione suddivisa compare nella parte superiore della visualizzazione XAML quando l'editor XAML si trova nella finestra inferiore. Tale barra consente di controllare le dimensioni relative delle visualizzazioni Progettazione e XAML. È anche possibile scambiare le posizioni delle visualizzazioni, usando il pulsante **Scambia riquadri** , specificare se le visualizzazioni sono disposte orizzontalmente o verticalmente e comprimere una visualizzazione.
 
  **Zoom di markup** Lo zoom di markup consente di ridimensionare la visualizzazione XAML. È possibile ingrandire dal 20% al 400%.
 
 ## <a name="device-window"></a>Finestra Dispositivo
- La finestra Dispositivo nella finestra di progettazione XAML per Visual Studio consente di simulare in fase di progettazione diverse visualizzazioni e opzioni di visualizzazione per il progetto Windows Store o Windows Phone. La finestra Dispositivo è disponibile nel menu **Progettazione** quando utilizzi la finestra di progettazione XAML. e ha l'aspetto seguente:
+ La finestra Dispositivo nella finestra di progettazione XAML per Visual Studio consente di simulare in fase di progettazione diverse visualizzazioni e opzioni di visualizzazione per il progetto Windows Store o Windows Phone. La finestra Dispositivo è disponibile nel menu **Progettazione** quando si usa la finestra di progettazione XAML Di seguito è riportata un'immagine di tale finestra:
 
  ![Finestra del dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
@@ -91,7 +91,7 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  **Bordo** Specifica diversi allineamenti per i bordi dell'app, ad esempio **Entrambi**, **A sinistra**, **A destra** o **Nessuno**.
 
- **Contrasto elevato** Consente di visualizzare in anteprima l'app in base all'impostazione di contrasto selezionata. Se per l'impostazione viene specificato un valore diverso da **Predefinito**, l'impostazione della proprietà `RequestedTheme` in App.xaml verrà ignorata.
+ **Contrasto elevato** Consente di visualizzare in anteprima l'app in base all'impostazione di contrasto selezionata. Se per l'impostazione viene specificato un valore diverso da **Predefinito**, l'impostazione della proprietà `RequestedTheme` in App.xaml verrà sovrascritta.
 
  **Override ridimensionamento** Attiva e disattiva l'emulazione del ridimensionamento del documento nell'area di progettazione. Ciò permette di aumentare la percentuale di scala di un fattore. Selezionare la casella di controllo per attivare l'emulazione. Ad esempio, se la percentuale di scala è 100%, al documento nell'area di progettazione verrà applicato un valore di scala fino a 140%. Questa opzione è disabilitata se la percentuale di scala corrente è 180.
 
@@ -108,13 +108,13 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
 - Visualizzare la struttura gerarchica di tutti gli elementi sulla tavola da disegno.
 
-- Selezionare gli elementi in modo da poterli modificare, ossia spostarli nella gerarchia, modificarli sulla tavola da disegno, impostarne le proprietà nella finestra Proprietà e così via. Per altre informazioni, vedere [Utilizzo di elementi nella finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md).
+- Selezionare gli elementi in modo da poterli modificare, ossia spostarli nella gerarchia, modificarli sulla tavola da disegno, impostarne le proprietà nella finestra Proprietà e così via. Per ulteriori informazioni, vedere [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
 
 - Creare e modificare modelli per gli elementi che sono controlli.
 
 - Usare il menu contestuale per gli elementi selezionati. Lo stesso menu è disponibile anche per gli elementi selezionati nella tavola da disegno.
 
-  Per visualizzare la finestra Struttura documento, scegliere **Visualizza**, **Altre finestre**, **Struttura documento** sulla barra dei menu.
+  Per visualizzare la finestra Struttura documento, scegliere **Visualizza**, **Altre finestre**, **Struttura documento**sulla barra dei menu.
 
   ![Finestra Struttura documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
@@ -124,18 +124,18 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
   **Mostra/Nascondi** Visualizza o nasconde gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Usare i pulsanti **Mostra/Nascondi** (identificati, quando gli elementi sono visualizzati, dal simbolo di un occhio) oppure premere CTRL+H per nascondere gli elementi e MAIUSC+CTRL+H per visualizzarli.
 
-  **Blocca/Sblocca** Blocca o sblocca gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Gli elementi bloccati non possono essere modificati. Utilizzare i pulsanti **Blocca/Sblocca** (identificati, quando è applicato il blocco, dal simbolo di un lucchetto) oppure premere CTRL+L per bloccare gli elementi e MAIUSC+CTRL+L per sbloccarli.
+  **Blocca/Sblocca** Blocca o sblocca gli elementi della tavola da disegno che corrispondono agli elementi nella struttura documento. Gli elementi bloccati non possono essere modificati. Usare i pulsanti **Blocca/Sblocca** (identificati, quando è applicato il blocco, dal simbolo di un lucchetto) oppure premere CTRL+L per bloccare gli elementi e MAIUSC+CTRL+L per sbloccarli.
 
   **Reimposta l'ambito pageRoot** L'opzione nella parte superiore della finestra Struttura documento, con il simbolo di una freccia rivolta verso l'alto, reimposta l'ambito precedente per la struttura del documento. Questa operazione può essere eseguita solo nell'ambito di uno stile o di un modello.
 
 ## <a name="properties-window"></a>Finestra Proprietà
- La finestra Proprietà consente di impostare valori di proprietà sui controlli e ha l'aspetto seguente:
+ La finestra Proprietà consente di impostare valori di proprietà sui controlli Di seguito è riportata un'immagine di tale finestra:
 
  ![Finestra Proprietà](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- Nella parte superiore della finestra Proprietà sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato utilizzando la casella **Nome**. Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi**, al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca**. La finestra Proprietà mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Guida introduttiva: Aggiunta di controlli e gestione di eventi](https://go.microsoft.com/fwlink/?LinkID=247983).
+ Nella parte superiore della finestra Proprietà sono disponibili varie opzioni. È possibile modificare il nome dell'elemento selezionato usando la casella **Nome** . Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato. Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** . Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , al quale è associato il simbolo di un fulmine. Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella **Proprietà di ricerca** . La finestra Proprietà mostra le proprietà corrispondenti alla ricerca durante la digitazione. In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ. Per altre informazioni sull'uso delle proprietà e sulla gestione degli eventi, vedere [Guida introduttiva: Aggiunta di controlli e gestione di eventi](https://go.microsoft.com/fwlink/?LinkID=247983).
 
- A destra di ogni valore di proprietà è presente un *marcatore della proprietà* (simbolo della casella). L'aspetto del marcatore della proprietà indica se è presente un data binding o una risorsa applicata alla proprietà. Ad esempio, una casella bianca indica un valore predefinito, una casella nera indica che è stata applicata una risorsa locale e una casella arancione indica che è stato applicato un data binding. Quando si fa clic su questo marcatore, è possibile passare alla definizione di uno stile, aprire il generatore di data binding oppure aprire il selettore risorse.
+ A destra di ogni valore di proprietà è presente un *marcatore della proprietà* , visualizzato sotto forma di simbolo di casella. L'aspetto del marcatore della proprietà indica se è presente un data binding o una risorsa applicata alla proprietà. Ad esempio, una casella bianca indica un valore predefinito, una casella nera indica che è stata applicata una risorsa locale e una casella arancione indica che è stato applicato un data binding. Quando si fa clic su questo marcatore, è possibile passare alla definizione di uno stile, aprire il generatore di data binding oppure aprire il selettore risorse.
 
 ## <a name="see-also"></a>Vedere anche
  [Uso di elementi in finestra di progettazione XAML](../designers/working-with-elements-in-xaml-designer.md) [come creare e applicare una risorsa](../designers/how-to-create-and-apply-a-resource.md) [procedura dettagliata: associazione ai dati in finestra di progettazione XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

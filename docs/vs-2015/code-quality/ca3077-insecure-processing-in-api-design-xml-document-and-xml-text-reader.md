@@ -22,7 +22,7 @@ ms.locfileid: "74300469"
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
-|Category|Microsoft.Security|
+|Categoria|Microsoft.Security|
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa

@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Nozioni fondamentali su SAL  
  SAL definisce quattro tipi di parametri di base, classificati in base al modello di utilizzo.  
   
-|Category|Annotazione parametro|description|  
+|Categoria|Annotazione parametro|Descrizione|  
 |--------------|--------------------------|-----------------|  
 |**Input per la funzione chiamata**|`_In_`|I dati vengono passati alla funzione chiamata e vengono considerati di sola lettura.|  
 |**Input della funzione chiamata e output al chiamante**|`_Inout_`|I dati utilizzabili vengono passati nella funzione e potenzialmente modificati.|  

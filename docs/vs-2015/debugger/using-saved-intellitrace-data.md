@@ -143,7 +143,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
     |**Colonna**|**Mostra**|  
     |----------------|-------------------|  
-    |**Tipo**|Tipo .NET dell'eccezione|  
+    |**Type**|Tipo .NET dell'eccezione|  
     |**Messaggio più recente** per eccezioni raggruppate o **Messaggio** per eccezioni non raggruppate|Messaggio fornito dall'eccezione|  
     |**Conteggio** per eccezioni raggruppate|Numero di volte in cui è stata generata l'eccezione|  
     |**ID thread** per eccezioni non raggruppate|ID del thread che ha generato l'eccezione|  
@@ -161,7 +161,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 1. Copiare l'ID di correlazione SharePoint dalla relativa origine.  
   
-    Di seguito è riportato un esempio:  
+    Ad esempio:  
   
     ![ID &#45; di correlazione degli errori &#45; di SharePoint IntelliTrace](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -192,7 +192,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
     |**Id**|**ID evento**|  
     |**Livello**|**Livello**|  
     |**ID categoria**|**ID categoria**|  
-    |**Category**|**Category**|  
+    |**Categoria**|**Categoria**|  
     |**Area**|**Prodotto**|  
     |**Output**|**Messaggio**|  
     |**ID correlazione**|**ID correlazione**|  
@@ -256,9 +256,9 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 |**Colonna**|**Mostra**|  
 |----------------|-------------------|  
-|**Module Name**|Nome del file di modulo|  
+|**Nome modulo**|Nome del file di modulo|  
 |**Percorso modulo**|Posizione sul disco in cui è stato caricato il modulo|  
-|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Individuare i file di simboli (con estensione pdb) e i file di origine](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**ID modulo**|Identificatore univoco del modulo specifico della versione, che contribuisce ai file dei simboli (PDB) corrispondenti. Vedere [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?  
  [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
@@ -269,7 +269,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
-#### <a name="forums"></a>Forum  
+#### <a name="forums"></a>Forums  
  [Debugger di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>Materiale sussidiario  

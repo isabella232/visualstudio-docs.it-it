@@ -28,13 +28,13 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
 - [Impostare i controlli per l'esecuzione di operazioni](#Modify)
 
 ## <a name="Insert"></a> Aggiungere controlli alla tavola da disegno
- È possibile trascinare controlli dal pannello **Asset** nella **tavola da disegno** e quindi modificarli nella finestra **Proprietà**.
+ È possibile trascinare controlli dal pannello **Asset** nella **tavola da disegno**e quindi modificarli nella finestra **Proprietà** .
 
  ![Asset &#45; &#45; di Blend FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
 
  Questi video illustrano come usare alcuni dei controlli più comuni.
 
-|Controllo|Breve video:|
+|Control|Breve video:|
 |-------------|-------------------------|
 |`Menu` ![](../designers/media/015a263c-0b2b-4253-ac57-b86fcb8c9591.png "015a263c-0b2b-4253-ac57-b86fcb8c9591")|![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [aggiungere i controlli](https://www.youtube.com/watch?v=ra4AHfgD4Ys&list=PLBDF977B2F1DAB358&index=45)|
 |`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png "05df1779-a68f-436b-b834-a91b7995a3ec")|![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [progettare un pulsante](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|
@@ -56,7 +56,7 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
 ## <a name="Modify"></a> Impostare i controlli per l'esecuzione di operazioni
  I controlli possono eseguire azioni durante le interazioni degli utenti, ad esempio possono avviare un'animazione, aggiornare un'origine dati o riprodurre un video.
 
- Per impostare i controlli per l'esecuzione di operazioni, usare *trigger*, *comportamenti* ed *eventi*.
+ Per impostare i controlli per l'esecuzione di operazioni, usare *trigger*, *comportamenti*ed *eventi* .
 
 ### <a name="triggers"></a>Trigger
  Un *trigger* modifica una proprietà o esegue un'attività in risposta a un evento o a una modifica in un'altra proprietà. Ad esempio, è possibile modificare il colore di un pulsante al passaggio del mouse.
@@ -72,7 +72,7 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
 
  **Guardare un breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Suggerimenti per Blend: Introduzione all'uso dei comportamenti parte 1](https://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
-### <a name="events"></a>eventi
+### <a name="events"></a>Events
  Per la massima flessibilità è possibile gestire un *evento*. In tal caso però sarà necessario scrivere codice.
 
  **Breve video:** ![configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [aggiungere un evento del mouse](https://www.youtube.com/watch?v=2PMxAlb-x_E).

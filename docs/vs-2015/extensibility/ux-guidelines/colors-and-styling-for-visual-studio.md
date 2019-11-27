@@ -304,7 +304,7 @@ protected override void Dispose(bool disposing)
 |------------------|-----------|
 |ActiveCaption|-Icone dell'IDE attivo e del pulsante della finestra con rafting al passaggio del mouse e premere<br />-Sfondo della barra del titolo per l'IDE e le finestre con rafting<br />-Sfondo della barra di stato predefinita|
 |ActiveCaptionText|-IDE attivo e finestre con rafting per il primo piano della barra del titolo (testo e glifi)<br />-Sfondo e bordo dei pulsanti della finestra attiva al passaggio del mouse e premere|
-|Controllo|-Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti|
+|Control|-Casella combinata, elenco a discesa e controllo di ricerca predefinito e disabilitato sfondo, incluso il pulsante a discesa<br />-Sfondo del pulsante di destinazione di ancoraggio<br />-Sfondo della barra comandi<br />-Sfondo della finestra degli strumenti|
 |ControlDark|-Sfondo IDE<br />-Separatori dei menu e della barra dei comandi<br />-Bordo barra del comando<br />-Ombreggiature dei menu<br />-Scheda della finestra degli strumenti predefinita e bordo e separatore del passaggio del mouse<br />-Sfondo del pulsante di overflow del documento<br />-Bordo del glifo di destinazione dell'ancoraggio|
 |ControlDarkDark|-Non attivo, finestra scheda documento selezionata|
 |ControlLight|-Nascondi automaticamente bordo scheda<br />-Casella combinata e bordo dell'elenco a discesa<br />-Ancoraggio dello sfondo e del bordo della destinazione|
@@ -348,9 +348,9 @@ protected override void Dispose(bool disposing)
 
  Popolare il registro di sistema con due valori:
 
-|nome|Digitare|Dati|description|
+|Name|Type|Data|Descrizione|
 |----------|----------|----------|-----------------|
-|Category|REG_SZ|GUID|GUID creato per identificare la categoria|
+|Categoria|REG_SZ|GUID|GUID creato per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|GUID del servizio VSPackage che supporta la categoria|
 
  Il servizio specificato nel registro di sistema deve fornire un'implementazione di [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) per la categoria corrispondente.
@@ -360,9 +360,9 @@ protected override void Dispose(bool disposing)
 
  Popolare il registro di sistema con due valori:
 
-|nome|Digitare|Dati|description|
+|Name|Type|Data|Descrizione|
 |----------|----------|----------|-----------------|
-|Category|REG_SZ|GUID|GUID creato per identificare la categoria|
+|Categoria|REG_SZ|GUID|GUID creato per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|GUID del servizio VSPackage che supporta la categoria|
 
  Il servizio specificato nel registro di sistema deve fornire un'implementazione di **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** per il gruppo corrispondente.

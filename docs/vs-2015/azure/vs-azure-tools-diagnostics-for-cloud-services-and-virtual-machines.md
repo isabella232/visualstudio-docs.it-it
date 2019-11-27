@@ -69,7 +69,7 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per i ruoli eseg
 ### <a name="to-turn-on-diagnostics-in-visual-studio-before-deployment"></a>Per attivare la diagnostica in Visual Studio prima della distribuzione
 
 1. Dal menu di scelta rapida per il ruolo scegliere **Proprietà**. Nella finestra di dialogo **Proprietà** del ruolo selezionare la scheda **Configurazione**.
-2. Nella sezione **Diagnostica** verificare che la casella di controllo **Abilita diagnostica** sia selezionata.
+2. Nella sezione **Diagnostica** assicurarsi che la casella di controllo **Abilita diagnostica** sia selezionata.
 
     ![Accedere all'opzione Abilita diagnostica](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796660.png)
 3. Per specificare l'account di archiviazione per i dati di diagnostica, selezionare il pulsante con i puntini di sospensione (...).
@@ -101,11 +101,11 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per le macchine 
 ### <a name="to-turn-on-diagnostics-on-azure-virtual-machines"></a>Per attivare la diagnostica in macchine virtuali di Azure
 
 1. In Esplora server selezionare il nodo di Azure e quindi connettersi alla sottoscrizione di Azure, se non si è già connessi.
-2. Espandere il nodo **Macchine virtuali** . È possibile creare una nuova macchina virtuale o selezionare un nodo esistente.
+2. Espandere il nodo **Macchine virtuali**. È possibile creare una nuova macchina virtuale o selezionare un nodo esistente.
 3. Dal menu di scelta rapida per la macchina virtuale desiderata scegliere **Configura**. Verrà visualizzata la finestra di dialogo per la configurazione della macchina virtuale.
 
     ![Configurare una macchina virtuale di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
-4. Se non è già installata, aggiungere l'estensione Microsoft Monitoring Agent Diagnostics. Con questa estensione è possibile raccogliere dati di diagnostica per la macchina virtuale di Azure. Nell'elenco **Estensioni installate** selezionare **Microsoft Monitoring Agent Diagnostics** nella casella di riepilogo a discesa **Seleziona un'estensione disponibile**.
+4. Se non è già installata, aggiungere l'estensione Diagnostica di Microsoft Monitoring Agent. Con questa estensione è possibile raccogliere dati di diagnostica per la macchina virtuale di Azure. Nell'elenco **Estensioni installate** selezionare **Microsoft Monitoring Agent Diagnostics** nella casella di riepilogo a discesa **Seleziona un'estensione disponibile**.
 
     ![Installare un'estensione di macchina virtuale di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
@@ -120,9 +120,9 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per le macchine 
 
     ![Abilitare la diagnostica e la configurazione di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    La scheda predefinita, **generale**, offre le opzioni di raccolta dati di diagnostica seguenti: **solo errori**, **tutte le informazioni**e **piano personalizzato**. L'opzione predefinita, **Solo errori**, richiede la quantità minima di spazio di archiviazione, perché non trasferisce messaggi di avviso o di traccia. L'opzione **Tutte le informazioni** trasferisce la quantità più elevata di informazioni ed è quindi l'opzione più costosa in termini di risorse di archiviazione.
-7. Per questo esempio selezionare l'opzione **Personalizza piano** , in modo da personalizzare i dati raccolti.
-8. La casella **Quota disco in MB** specifica la quantità di spazio da allocare nell'account di archiviazione per i dati di diagnostica. Se si vuole, è possibile cambiare il valore predefinito.
+    La scheda predefinita, **generale**, offre le opzioni di raccolta dati di diagnostica seguenti: **solo errori**, **tutte le informazioni**e **piano personalizzato**. L'opzione predefinita, **Solo errori**, richiede la quantità minima di spazio di archiviazione perché non trasferisce gli avvisi o i messaggi di traccia. L'opzione **Tutte le informazioni** consente di trasferire la maggior parte delle informazioni e quindi è l'opzione che richiede più spazio di archiviazione.
+7. Per questo esempio, selezionare l'opzione **Piano personalizzato**, in modo da poter personalizzare i dati raccolti.
+8. Nella casella **Quota disco in MB** è possibile specificare la quantità di spazio che si vuole allocare nel proprio account di archiviazione per i dati di diagnostica. Se si vuole, è possibile cambiare il valore predefinito.
 9. In ogni scheda dei dati di diagnostica da raccogliere selezionare la rispettiva casella di controllo **Abilita il trasferimento di \<tipo log\>** .
 
     Se ad esempio si desidera raccogliere i log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** nella scheda **log applicazioni** . Specificare anche eventuali altre informazioni necessarie per ogni tipo di dati di diagnostica. Per informazioni sulla configurazione di ogni scheda, vedere la sezione **Configurare le origini dati di diagnostica** più avanti in questo articolo.
@@ -135,7 +135,7 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per le macchine 
 Dopo aver abilitato la raccolta di dati di diagnostica, è possibile scegliere esattamente le origini dati da raccogliere e le informazioni raccolte. Nelle sezioni successive vengono descritte le schede della finestra di dialogo **Configurazione di diagnostica** con indicazione del significato di ogni opzione di configurazione.
 
 ### <a name="application-logs"></a>Log applicazioni
-I log applicazioni includono informazioni di diagnostica prodotte da un'applicazione Web. Se, ad esempio, si vogliono acquisire log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** . Per aumentare o diminuire l'intervallo tra il trasferimento dei log applicazioni all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** . È anche possibile cambiare la quantità di informazioni acquisite nel log, impostando il valore **Livello log**. Ad esempio, selezionare **Dettagliato** per ottenere più informazioni oppure **Critico** per acquisire solo gli errori critici. Se è disponibile un provider di diagnostica specifico che genera log applicazioni, sarà possibile acquisirli aggiungendo il GUID nella casella **GUID provider**.
+I log applicazioni includono informazioni di diagnostica prodotte da un'applicazione Web. Se si vogliono acquisire i log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log applicazioni all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** . È anche possibile cambiare la quantità di informazioni acquisite nel log, impostando il valore **Livello log**. Ad esempio, selezionare **Dettagliato** per ottenere più informazioni oppure **Critico** per acquisire solo gli errori critici. Se è disponibile un provider di diagnostica specifico che genera log applicazioni, sarà possibile acquisirli aggiungendo il GUID nella casella **GUID provider**.
 
   ![Log applicazioni](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
@@ -218,13 +218,13 @@ Dopo la raccolta dei dati di diagnostica per un servizio cloud o una macchina vi
     In Cloud Explorer o Esplora server aprire l'account di archiviazione associato alla distribuzione.
 3. Aprire le tabelle di diagnostica nel visualizzatore di tabelle e quindi esaminare i dati raccolti. Per i log IIS e i log personalizzati sarà possibile aprire un contenitore BLOB. La tabella seguente elenca le tabelle o i contenitori di BLOB che contengono i dati per i diversi file di log. Oltre ai dati per tale file di log, le voci della tabella contengono **EventTickCount**, **DeploymentId**, **Role** e **RoleInstance** per semplificare l'identificazione della macchina virtuale e del ruolo che hanno generato i dati e quando.
 
-   | Dati di diagnostica | description | Percorso |
+   | Dati di diagnostica | Descrizione | Location |
    | --- | --- | --- |
    | Log applicazioni |Log generati dal codice chiamando i metodi della classe **System.Diagnostics.Trace**. |WADLogsTable |
    | Log eventi |Dati tratti dai registri eventi di Windows nelle macchine virtuali. Windows archivia le informazioni in questi log, ma le applicazioni e i servizi li usano anche per segnalare errori o registrare informazioni. |WADWindowsEventLogsTable |
    | Contatori delle prestazioni |È possibile raccogliere dati relativi a qualsiasi contatore delle prestazioni disponibile nella macchina virtuale. Il sistema operativo fornisce contatori delle prestazioni, che includono molte statistiche, come l'utilizzo della memoria e il tempo del processore. |WADPerformanceCountersTable |
    | Log infrastruttura |Log generati dall'infrastruttura di diagnostica stessa. |WADDiagnosticInfrastructureLogsTable |
-   | Log di IIS |Log che registrano le richieste Web. Se il servizio cloud riceve una quantità significativa di traffico, questi log possono essere lunghi. È buona norma raccogliere e archiviare questi dati solo quando necessario. |I log relativi alle richieste non riuscite sono disponibili nel contenitore BLOB in wad-iis-failedreqlogs in un percorso corrispondente a tale distribuzione, ruolo e istanza. I log completi sono disponibili in wad-iis-logfiles. Le voci per ogni file vengono inserite nella tabella WADDirectories. |
+   | Log IIS |Log che registrano le richieste Web. Se il servizio cloud riceve una quantità significativa di traffico, questi log possono essere lunghi. È buona norma raccogliere e archiviare questi dati solo quando necessario. |I log relativi alle richieste non riuscite sono disponibili nel contenitore BLOB in wad-iis-failedreqlogs in un percorso corrispondente a tale distribuzione, ruolo e istanza. I log completi sono disponibili in wad-iis-logfiles. Le voci per ogni file vengono inserite nella tabella WADDirectories. |
    | Dump di arresto anomalo del sistema |Forniscono immagini binarie del processo del servizio cloud, in genere un ruolo di lavoro. |Contenitore BLOB wad-crush-dumps |
    | File di log personalizzati |Registra i dati definiti dall'utente. |È possibile specificare nel codice il percorso dei file di log personalizzati nell'account di archiviazione. Ad esempio, è possibile specificare un contenitore BLOB personalizzato. |
 4. Se i dati di qualsiasi tipo vengono troncati, è possibile provare ad aumentare il buffer per tale tipo di dati o ridurre l'intervallo tra i trasferimenti di dati dalla macchina virtuale all'account di archiviazione.
@@ -238,7 +238,7 @@ Dopo la raccolta dei dati di diagnostica per un servizio cloud o una macchina vi
 
     Viene visualizzata la finestra di dialogo **Riepilogo diagnostica**.
 
-    ![Riepilogo di diagnostica della macchina virtuale di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
+    ![Riepilogo diagnostica macchina virtuale Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
 
     Se i dati più recenti non vengono visualizzati, potrebbe essere necessario attendere il termine del periodo di trasferimento.
 

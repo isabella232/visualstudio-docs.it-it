@@ -55,9 +55,9 @@ Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../includes/blend
   
     Nella finestra di dialogo **Nuovo progetto** viene visualizzato un elenco di tipi di progetto sul lato sinistro. Quando fai clic su un tipo di progetto, i modelli di progetto a esso associati vengono visualizzati a destra.  
   
-2. Nell'elenco dei tipi di progetto fai clic su **XAML (Windows Store)** .  
+2. Nell'elenco dei tipi di progetto fare clic su **XAML (Windows Store)** .  
   
-3. Nell'elenco dei modelli di progetto fai clic su **Applicazione vuota**.  
+3. Nell'elenco dei modelli di progetto fare clic su **app vuota**.  
   
 4. Nella casella di testo **nome** Digitare `DebuggingSample`.  
   

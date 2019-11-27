@@ -42,7 +42,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
@@ -101,22 +101,22 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
 
 7. Nella pagina **Seleziona oggetti di database** espandere **Tables**, quindi selezionare la tabella **Product (SalesLT)** .
 
-8. Scegliere **Fine**.
+8. Fare clic su **Fine**.
 
-     Visual Studio aggiunge un nuovo file AdventureWorksLTDataSet.xsd al progetto e un elemento **AdventureWorksLTDataSet** corrispondente alla finestra **Origini dati**. Il file AdventureWorksLTDataSet.xsd definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un oggetto TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
+     Visual Studio aggiunge un nuovo file AdventureWorksLTDataSet. xsd al progetto e aggiunge un elemento **AdventureWorksLTDataSet** corrispondente alla finestra **origini dati** . Il file AdventureWorksLTDataSet.xsd definisce un set di dati tipizzato denominato `AdventureWorksLTDataSet` e un oggetto TableAdapter denominato `ProductTableAdapter`. Più avanti in questa procedura dettagliata, l'oggetto `ProductTableAdapter` verrà usato per riempire il set di dati con i dati e salvare nuovamente le modifiche nel database.
 
-9. Compilare il progetto.
+9. Compilazione del progetto.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Modificare il metodo Fill predefinito del TableAdapter
  Per riempire il set di dati con i dati, usare il metodo `Fill` dell'oggetto `ProductTableAdapter`. Per impostazione predefinita, il metodo `Fill` riempie `ProductDataTable` in `AdventureWorksLTDataSet` con tutte le righe di dati della tabella Product. È possibile modificare questo metodo in modo da restituire solo un subset di righe. Per questa procedura dettagliata, modificare il metodo `Fill` in modo da restituire solo di prodotti con foto.
 
 #### <a name="to-load-product-rows-that-have-photos"></a>Per caricare le righe di prodotti con foto
 
-1. In **Esplora soluzioni** fare doppio clic sul file AdventureWorksLTDataSet.xsd.
+1. In **Esplora soluzioni**fare doppio clic sul file AdventureWorksLTDataSet. xsd.
 
      Viene aperto Progettazione DataSet.
 
-2. Nella finestra di progettazione fare clic con il pulsante destro del mouse sulla query **Fill,GetData()** e scegliere **Configura**.
+2. Nella finestra di progettazione fare clic con il pulsante destro del mouse sulla query **Fill, GetData ()** e scegliere **Configura**.
 
      Verrà avviata la **Configurazione guidata TableAdapter**.
 
@@ -126,14 +126,14 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. Scegliere **Fine**.
+4. Fare clic su **Fine**.
 
 ## <a name="define-the-user-interface"></a>Definire l'interfaccia utente
  Aggiungere alcuni pulsanti alla finestra modificando il codice XAML in WPF Designer. Più avanti in questa procedura dettagliata, verrà aggiunto il codice che consente agli utenti di scorrere e salvare le modifiche ai record di prodotti con questi pulsanti.
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>Per definire l'interfaccia utente della finestra
 
-1. In **Esplora soluzioni** fare doppio clic su MainWindow.xaml.
+1. In **Esplora soluzioni**fare doppio clic su MainWindow. XAML.
 
      La finestra verrà aperta in WPF Designer.
 
@@ -149,7 +149,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. Compilare il progetto.
+3. Compilazione del progetto.
 
 ## <a name="createdata-bound-controls"></a>Controlli associati a CREATEData
  Creare controlli che consentono di visualizzare i record dei clienti trascinando la tabella `Product` dalla finestra **origini dati** a WPF Designer.
@@ -228,7 +228,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
     > [!NOTE]
     > Questo esempio usa il metodo `Save` di `TableAdapter` per salvare le modifiche. Tale approccio è appropriato a questa procedura dettagliata, in quanto viene modificata una sola tabella dati. Se è necessario salvare modifiche a più tabelle dati, è possibile usare in alternativa il metodo `UpdateAll` di `TableAdapterManager` generato da Visual Studio con il set di dati. Per altre informazioni, vedere [Panoramica di TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).
 
-## <a name="test-the-application"></a>Testare l'applicazione
+## <a name="test-the-application"></a>Test dell'applicazione
  Compilare ed eseguire l'applicazione. Verificare che sia possibile visualizzare e aggiornare i record di prodotto.
 
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione

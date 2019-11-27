@@ -32,7 +32,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 - Creazione di un modello [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] che rappresenta la tabella Customers nel database Northwind.
 
-- Creare un oggetto [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
+- Creare un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
 - Creare un'applicazione client e aggiungere un riferimento al servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
@@ -40,7 +40,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 - Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
 - Il database di esempio Northwind.
@@ -68,21 +68,21 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 #### <a name="to-create-the-entity-data-model"></a>Per creare il modello Entity Data Model
 
-1. Nella barra dei menu scegliere **Progetto**,  **Aggiungi nuovo elemento**.
+1. Sulla barra dei menu scegliere **progetto**, **Aggiungi nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il nodo **Dati** e quindi scegliere la voce **ADO.NET Entity Data Model**.
 
 3. Nella casella di testo **nome** immettere `NorthwindModel`, quindi scegliere il pulsante **Aggiungi** .
 
-    Verrà visualizzata la procedura guidata Entity Data Model.
+    Viene visualizzata la procedura guidata Entity Data Model.
 
 4. Nella pagina **Scegli contenuto del modello** della procedura guidata Entity Data Model scegliere l'elemento **Entity Framework Designer da database**, quindi fare clic sul pulsante **Avanti**.
 
-5. Nella pagina **Seleziona connessione dati**, eseguire una delle operazioni seguenti:
+5. Nella pagina **Seleziona connessione dati** , eseguire una delle operazioni seguenti:
 
    - Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.
 
-        oppure
+        -oppure-
 
    - Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
@@ -104,13 +104,13 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 #### <a name="to-create-the-data-service"></a>Per creare il servizio dati
 
-1. Nella barra dei menu scegliere **Progetto**,  **Aggiungi nuovo elemento**.
+1. Sulla barra dei menu scegliere **progetto**, **Aggiungi nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il nodo **Web**, quindi scegliere la voce **WCF Data Service 5.6**.
 
 3. Nella casella di testo **nome** immettere `NorthwindCustomers`, quindi scegliere il pulsante **Aggiungi** .
 
-    Il file NorthwindCustomers.svc verrà visualizzato nell'**editor di codice**.
+    Il file NorthwindCustomers. svc viene visualizzato nell' **editor di codice**.
 
 4. Nell'**editor di codice** trovare il primo commento `TODO:` e sostituire il codice con il seguente:
 
@@ -122,14 +122,14 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
     [!code-csharp[WCFDataServiceWalkthrough#2](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#2)]
     [!code-vb[WCFDataServiceWalkthrough#2](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#2)]
 
-6. Per eseguire il servizio, nella barra dei menu scegliere **Debug**, **Avvia senza eseguire debug**. Verrà aperta una finestra del browser nella quale sarà visualizzato l'XML Schema per il servizio.
+6. Sulla barra dei menu scegliere **debug**, **Avvia senza eseguire debug** per eseguire il servizio. Verrà aperta una finestra del browser nella quale sarà visualizzato l'XML Schema per il servizio.
 
 7. Nella barra degli **indirizzi** immettere `Customers` alla fine dell'URL per NorthwindCustomers. svc, quindi premere il tasto **invio** .
 
     Verrà visualizzata una rappresentazione XML dei dati della tabella Customers.
 
    > [!NOTE]
-   > In alcuni casi, Internet Explorer interpreterà erroneamente i dati come feed RSS. È necessario assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata. Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti al servizio](../data-tools/troubleshooting-service-references.md).
+   > In alcuni casi, Internet Explorer interpreterà erroneamente i dati come feed RSS. È necessario assicurarsi che l'opzione per visualizzare feed RSS sia disabilitata. Per ulteriori informazioni, vedere [risoluzione dei problemi relativi ai riferimenti al servizio](../data-tools/troubleshooting-service-references.md).
 
 8. Chiudere la finestra del browser.
 
@@ -142,9 +142,9 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 #### <a name="to-create-the-client-application"></a>Per creare l'applicazione client
 
-1. Nella barra dei menu scegliere File, **Aggiungi**, **Nuovo progetto**.
+1. Sulla barra dei menu scegliere file, **Aggiungi**, **nuovo progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** e il nodo **Windows**, quindi scegliere **Applicazione Windows Form**.
+2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **oggetto C# visivo** , scegliere il nodo **Windows** , quindi scegliere **Windows Forms applicazione**.
 
 3. Nella casella di testo **Nome** immettere `NorthwindClient` e quindi scegliere il pulsante **OK**.
 
@@ -156,7 +156,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 #### <a name="to-add-a-service-reference"></a>Per aggiungere un riferimento al servizio
 
-1. Nella barra dei menu scegliere **Progetto**, **Aggiungi riferimento al servizio**.
+1. Nella barra dei menu scegliere **progetto**, **Aggiungi riferimento al servizio**.
 
 2. Nella finestra di dialogo **Aggiungi riferimento al servizio** scegliere il pulsante **Individua**.
 
@@ -168,7 +168,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 #### <a name="to-enable-data-binding-to-the-service"></a>Per abilitare il data binding al servizio
 
-1. Nella barra dei menu scegliere **Visualizza**, **Altre finestre**, **Origini dati**.
+1. Sulla barra dei menu scegliere **Visualizza**, **altre finestre**, **origini dati**.
 
 2. Nella finestra **Origini dati** scegliere il pulsante **Aggiungi nuova origine dati**.
 
@@ -190,7 +190,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 3. Scegliere il controllo **CustomersDataGridView** e nella finestra **Proprietà** impostare la proprietà **Ancora** su **Riempimento**.
 
-4. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **Form1** e scegliere **Visualizza codice** per aprire l'editor di codice, quindi aggiungere la seguente istruzione imports o using all'inizio del file:
+4. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **Form1** e scegliere **Visualizza codice** per aprire l'editor di codice e aggiungere l'istruzione Imports o using seguente all'inizio del file:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -219,13 +219,13 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
    ```
 
-6. In **Esplora soluzioni** aprire il menu di scelta rapida per il file NorthwindCustomers.svc e scegliere **Visualizza nel browser**. Verrà aperto Internet Explorer e verrà visualizzato l'XML Schema per il servizio.
+6. In **Esplora soluzioni**aprire il menu di scelta rapida per il file NorthwindCustomers. svc e scegliere **Visualizza nel browser**. Verrà aperto Internet Explorer e verrà visualizzato l'XML Schema per il servizio.
 
 7. Copiare l'URL dalla barra degli indirizzi di Internet Explorer.
 
 8. Nel codice aggiunto nel passaggio 4, selezionare `http://localhost:53161/NorthwindCustomers.svc/` e sostituirlo con l'URL appena copiato.
 
-9. Nella barra dei menu scegliere **Debug**, **Avvia debug** per eseguire l'applicazione. Verranno visualizzate le informazioni sul cliente.
+9. Sulla barra dei menu scegliere **debug**, **Avvia debug** per eseguire l'applicazione. Verranno visualizzate le informazioni sul cliente.
 
    A questo punto si disporrà di un'applicazione nella quale sarà visualizzato un elenco di clienti del servizio NorthwindCustomers. Se si desidera esporre altri dati tramite il servizio, è possibile modificare [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] per includere tabelle aggiuntive dal database Northwind.
 
@@ -240,7 +240,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 2. Aggiungere al form un controllo <xref:System.Windows.Forms.TextBox> e un controllo <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti**.
 
-3. Aprire il menu di scelta rapida per il controllo <xref:System.Windows.Forms.Button> e scegliere **Visualizza codice**, quindi aggiungere il seguente codice nel gestore eventi `Button1_Click`:
+3. Aprire il menu di scelta rapida per il controllo <xref:System.Windows.Forms.Button> e scegliere **Visualizza codice**, quindi aggiungere il codice seguente nel gestore eventi `Button1_Click`:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -271,7 +271,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice [!INCLU
 
 4. Nel codice precedente, sostituire `http://localhost:53161/NorthwindCustomers.svc` con l'URL del gestore eventi `Form1_Load`.
 
-5. Nella barra dei menu scegliere **Debug**, **Avvia debug** per eseguire l'applicazione.
+5. Sulla barra dei menu scegliere **debug**, **Avvia debug** per eseguire l'applicazione.
 
 6. Nella casella di testo immettere **London**, quindi scegliere il pulsante. Verranno visualizzati solo i clienti di Londra.
 

@@ -158,7 +158,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
   
 1. Aprire il log IntelliTrace (file .iTrace) da Visual Studio Enterprise. In alternativa, fare doppio clic sul file se nello stesso computer è presente Visual Studio Enterprise.  
   
-2. Scegliere **Apri soluzione** per fare in modo che in Visual Studio venga automaticamente aperta la soluzione o il progetto corrispondente, se il progetto non è stato compilato come parte di una soluzione. [D: nel log IntelliTrace mancano le informazioni sull'app distribuita. Perché si è verificata questa operazione? Cosa devo fare?](#InvalidConfigFile)  
+2. Scegliere **Apri soluzione** per fare in modo che Visual Studio apra automaticamente la soluzione o il progetto corrispondente, se il progetto non è stato compilato come parte di una soluzione. [D: nel log IntelliTrace mancano le informazioni sull'app distribuita. Perché si è verificata questa operazione? Cosa devo fare?](#InvalidConfigFile)  
   
      Visual Studio esegue automaticamente lo shelving di qualsiasi modifica in sospeso all'apertura della soluzione o del progetto corrispondente. Per ottenere ulteriori dettagli su questo shelveset, aprire la finestra **Output** o **Team Explorer**.  
   
@@ -237,7 +237,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
   
  Se si usa TFS e queste informazioni non sono presenti nel manifesto di compilazione (file BuildInfo.config), Visual Studio cerca l'origine e i simboli corrispondenti nel TFS attualmente connesso. Se Visual Studio non trova il TFS corretto o l'origine corrispondente, verrà richiesto di scegliere un altro TFS.  
   
-#### <a name="InvalidConfigFile"></a> D: Nel log IntelliTrace mancano le informazioni sull'applicazione distribuita. Per quale motivo? Che cosa si può fare?  
+#### <a name="InvalidConfigFile"></a> D: Nel log IntelliTrace mancano le informazioni sull'applicazione distribuita. Questo funzionamento può essere spiegato nel modo seguente. Quale operazione devo eseguire?  
  Questo può verificarsi quando la distribuzione viene effettuata dal computer di sviluppo oppure non si è connessi a TFS durante la distribuzione.  
   
 1. Passare alla cartella di distribuzione del progetto.  
@@ -248,7 +248,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
   
 - **ProjectName**  
   
-   Il nome del progetto in Visual Studio. Di seguito è riportato un esempio:  
+   Il nome del progetto in Visual Studio. Ad esempio:  
   
   ```  
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
@@ -266,7 +266,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
   
     - **ProjectVersionSpec**: versione del progetto  
   
-      Di seguito è riportato un esempio:  
+      Ad esempio:  
   
     ```  
     <SourceControl type="TFS">  
@@ -288,7 +288,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
   
     - **CommitId**: ID del commit  
   
-      Di seguito è riportato un esempio:  
+      Ad esempio:  
   
     ```  
     <SourceControl type="Git">   
@@ -314,7 +314,7 @@ Per diagnosticare i problemi nell'app Web ASP.NET dopo la distribuzione usando I
   
   - **BuiltSolution**: percorso del file di soluzione usato da Visual Studio per trovare e aprire la soluzione corrispondente. Si tratta del contenuto della proprietà **SolutionPath** MsBuild.  
   
-    Di seguito è riportato un esempio:  
+    Ad esempio:  
   
   - **TFS**  
   

@@ -36,7 +36,7 @@ In questa esercitazione si imparerà a:
 > * Creare un Servizio app Linux in Azure
 > * Distribuire in Azure
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -57,7 +57,7 @@ In questa esercitazione si imparerà a:
 
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Creare un progetto Node.js da eseguire in Azure
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 1. Creare una nuova app Express TypeScript.
 
@@ -65,7 +65,7 @@ In questa esercitazione si imparerà a:
     Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **Node.js** e scegliere **Create new Basic Azure Node.js Express 4 application** (Crea nuova applicazione Basic Azure Node.js Express 4) (TypeScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **TypeScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
+    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **TypeScript** e quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Express 4 Node.js Azure di base** e quindi scegliere **OK**.
 
     ![Creare una nuova app rapida TypeScript](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -95,7 +95,7 @@ Per configurare GitHub per Visual Studio:
 
     ![Aprire la finestra di GitHub](../javascript/media/azure-github-get-started.png)
 
-4. Fare clic su **Inizia**.
+4. Fare clic sul pulsante **Introduzione**.
 
     Se si è già connessi a GitHub, viene visualizzata la casella degli strumenti simile alla figura seguente.
 
@@ -125,12 +125,12 @@ Per configurare GitHub per Visual Studio:
 
 6. Dopo la distribuzione, passare alla sezione **Impostazioni applicazione** e aggiungere un'impostazione con un nome per `SCM_SCRIPT_GENERATOR_ARGS` e un valore per `--node`.
 
-    ![Impostazioni dell'applicazione](../javascript/media/azure-script-generator-args.png)
+    ![Impostazioni applicazione](../javascript/media/azure-script-generator-args.png)
 
     > [!WARNING]
     > Il processo di distribuzione del Servizio app usa una serie di regole euristiche per determinare il tipo di applicazione da provare ed eseguire. Se viene rilevato un file .*sln* nel contenuto distribuito, processo presuppone che venga distribuito un progetto basato su MSBuild. L'impostazione aggiunta in precedenza sostituisce questa logica e specifica esplicitamente che si tratta di un'applicazione Node.js. Senza questa impostazione, l'applicazione Node.js non verrà distribuita se il file .*sln* fa parte del repository distribuito al Servizio app.
 
-7. Under **Application settings**, add another setting with a name of `WEBSITE_NODE_DEFAULT_VERSION` and a value of `8.9.0`.
+7. In **Impostazioni applicazione**aggiungere un'altra impostazione con il nome `WEBSITE_NODE_DEFAULT_VERSION` e il valore `8.9.0`.
 
 8. Dopo la distribuzione, aprire il Servizio app e selezionare **Opzioni di distribuzione**.
 
@@ -170,7 +170,7 @@ Per configurare GitHub per Visual Studio:
 
 3. Al termine della distribuzione, passare al sito pubblico e accodare */api* all'URL. Viene restituita la risposta JSON.
 
-## <a name="troubleshooting"></a>Troubleshooting
+## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 * Se il processo node.exe smette di funzionare (ovvero si verifica un'eccezione non gestita), il contenitore viene riavviato.
 * Durante l'avvio del contenitore, viene eseguito tramite varie regole euristiche che determinano come avviare il processo Node.js. È possibile visualizzare i dettagli dell'implementazione in [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).

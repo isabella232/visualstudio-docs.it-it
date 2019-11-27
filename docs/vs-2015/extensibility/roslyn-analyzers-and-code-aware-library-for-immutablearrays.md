@@ -20,7 +20,7 @@ ms.locfileid: "74298378"
 
 Il [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") consente di creare librerie compatibili con il codice. Una libreria con supporto del codice offre funzionalità che è possibile usare e strumenti (analizzatori Roslyn) per aiutare a usare la libreria nel modo migliore o per evitare errori. In questo argomento viene illustrato come creare un analizzatore Roslyn reale per rilevare errori comuni quando si utilizza il pacchetto NuGet [: raccolte non modificabili](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) . Nell'esempio viene inoltre illustrato come fornire una correzione del codice per un problema di codice rilevato dall'analizzatore. Gli utenti visualizzano le correzioni del codice nell'interfaccia utente di Visual Studio Light Bulb e possono applicare automaticamente una correzione per il codice.
 
-## <a name="getting-started"></a>Introduzione
+## <a name="getting-started"></a>Guida introduttiva
 Per compilare questo esempio, è necessario quanto segue:
 
 - Visual Studio 2015 (non è un'edizione Express) o versione successiva. Puoi usare la versione gratuita di [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
@@ -102,7 +102,7 @@ In modo che l'analizzatore venga visualizzato nell'interfaccia utente di Visual 
 internal const string Category = "Naming";
 ```
 
-Change `"Naming"` a `"API Guidance"`.
+Modificare `"Naming"` in `"API Guidance"`.
 
 Successivamente, trovare e aprire il file resources. resx nel progetto usando il **Esplora soluzioni**. È possibile inserire una descrizione per l'analizzatore, il titolo e così via. È possibile modificare il valore di tutti questi `“Don’t use ImmutableArray<T> constructor”` per il momento. È possibile inserire gli argomenti di formattazione della stringa nella stringa ({0}, {1}e così via) e in un secondo momento quando si chiama `Diagnostic.Create()`, è possibile fornire una matrice di parametri di argomenti da passare.
 

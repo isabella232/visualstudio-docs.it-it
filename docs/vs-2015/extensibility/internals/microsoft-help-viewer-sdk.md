@@ -49,7 +49,7 @@ Questo articolo contiene le attività seguenti per gli integratori del Visualizz
 
   Controlli supportati del pacchetto di personalizzazione di Visual Studio:
 
-- collegamenti
+- Collegamenti
 
 - CodeSnippet
 
@@ -312,13 +312,13 @@ some F# code
 
    - Per i sistemi operativi a 32 bit:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
+      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\< spazio dei nomi\></em>
 
       "location" = "offline"
 
    - Per i sistemi operativi a 64 bit:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
+      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\< spazio dei nomi\></em>
 
       "location" = "offline"
 
@@ -350,12 +350,12 @@ some F# code
 
   Nella tabella seguente, qualsiasi stringa visualizzata tra parentesi quadre è un segnaposto che deve essere sostituito da un valore riconosciuto. Ad esempio, in \<meta nome = "Microsoft. Help. locale" Content = "[Language Code]"/>, "[Language Code]" deve essere sostituito da un valore come "en-US".
 
-|Proprietà (rappresentazione HTML)|description|
+|Proprietà (rappresentazione HTML)|Descrizione|
 |--------------------------------------|-----------------|
-|\< meta name="Microsoft.Help.Locale" content="[language-code]" />|Imposta le impostazioni locali per questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta e deve essere inserito sopra qualsiasi altro tag della Guida Microsoft. Se questo tag non viene utilizzato, il testo del corpo dell'argomento viene indicizzato utilizzando il Word breaker associato alle impostazioni locali del prodotto, se specificato. in caso contrario, viene usato il Word breaker en-US. Questo tag è conforme a ISOC RFC 4646. Per assicurarsi che la Guida Microsoft funzioni correttamente, utilizzare questa proprietà anziché l'attributo generale del linguaggio.|
-|\< meta name="Microsoft.Help.TopicLocale" content="[language-code]" />|Imposta le impostazioni locali per questo argomento quando vengono utilizzate anche altre impostazioni locali. Se questo tag viene usato in un argomento, deve essere usato una sola volta. Utilizzare questo tag quando il catalogo contiene contenuto in più di una lingua. Più argomenti in un catalogo possono avere lo stesso ID, ma ognuno deve specificare un TopicLocale univoco. L'argomento che specifica una TopicLocale che corrisponde alle impostazioni locali del catalogo è quello visualizzato nel sommario. Tuttavia, tutte le versioni in lingua dell'argomento vengono visualizzate nei risultati della ricerca.|
+|\< meta Name = "Microsoft. Help. locale" Content = "[Language-Code]"/>|Imposta le impostazioni locali per questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta e deve essere inserito sopra qualsiasi altro tag della Guida Microsoft. Se questo tag non viene utilizzato, il testo del corpo dell'argomento viene indicizzato utilizzando il Word breaker associato alle impostazioni locali del prodotto, se specificato. in caso contrario, viene usato il Word breaker en-US. Questo tag è conforme a ISOC RFC 4646. Per assicurarsi che la Guida Microsoft funzioni correttamente, utilizzare questa proprietà anziché l'attributo generale del linguaggio.|
+|\< meta Name = "Microsoft. Help. TopicLocale" Content = "[Language-Code]"/>|Imposta le impostazioni locali per questo argomento quando vengono utilizzate anche altre impostazioni locali. Se questo tag viene usato in un argomento, deve essere usato una sola volta. Utilizzare questo tag quando il catalogo contiene contenuto in più di una lingua. Più argomenti in un catalogo possono avere lo stesso ID, ma ognuno deve specificare un TopicLocale univoco. L'argomento che specifica una TopicLocale che corrisponde alle impostazioni locali del catalogo è quello visualizzato nel sommario. Tuttavia, tutte le versioni in lingua dell'argomento vengono visualizzate nei risultati della ricerca.|
 |titolo \< > [title]\</title >|Specifica il titolo di questo argomento. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. Se il corpo dell'argomento non contiene un titolo \<sezione div >, questo titolo viene visualizzato nell'argomento e nel sommario.|
-|\< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/>|Specifica il testo di un collegamento visualizzato nel riquadro indice del Visualizzatore della guida. Quando si fa clic sul collegamento, viene visualizzato l'argomento. È possibile specificare più parole chiave di indice per un argomento oppure omettere questo tag se non si desidera che i collegamenti a questo argomento vengano visualizzati nell'indice. Le parole chiave "K" di versioni precedenti della guida possono essere convertite in questa proprietà.|
+|\< meta Name = "Microsoft. Help. Keywords" Content = "[aKeywordPhrase]"/>|Specifica il testo di un collegamento visualizzato nel riquadro indice del Visualizzatore della guida. Quando si fa clic sul collegamento, viene visualizzato l'argomento. È possibile specificare più parole chiave di indice per un argomento oppure omettere questo tag se non si desidera che i collegamenti a questo argomento vengano visualizzati nell'indice. Le parole chiave "K" di versioni precedenti della guida possono essere convertite in questa proprietà.|
 |\< meta Name = "Microsoft. Help. ID" Content = "[TopicID]"/>|Imposta l'identificatore per questo argomento. Questo tag è obbligatorio e deve essere usato una sola volta in un argomento. L'ID deve essere univoco tra gli argomenti del catalogo con le stesse impostazioni locali. In un altro argomento è possibile creare un collegamento a questo argomento usando questo ID.|
 |\< meta Name = "Microsoft. Help. F1" Content = "[System. Windows. Controls. Primitives. IRecyclingItemContainerGenerator]"/>|Specifica la parola chiave F1 per questo argomento. È possibile specificare più parole chiave F1 per un argomento oppure omettere questo tag se non si desidera che questo argomento venga visualizzato quando un utente dell'applicazione preme F1. In genere, per un argomento viene specificata solo una parola chiave F1. Le parole chiave "F" di versioni precedenti della guida possono essere convertite in questa proprietà.|
 |\< meta Name = "Description" Content = "[Descrizione argomento]"/>|Fornisce un breve riepilogo del contenuto di questo argomento. Se questo tag viene usato in un argomento, deve essere usato una sola volta. A questa proprietà è possibile accedere direttamente dalla libreria di query; non è archiviato nel file di indice.|
@@ -432,17 +432,17 @@ some F# code
 
   Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozione o la modifica di questi valori provocherà errori ed eventualmente arresti anomali dell'applicazione. Gli identificatori di localizzazione (ad esempio _locID = "CodeSnippet. n") sono inclusi nel pacchetto di personalizzazione di Visual Studio.
 
-  **Branding.xml**
+  **Personalizzazione. XML**
 
 |||
 |-|-|
 |Funzionalità:|**CollapsibleArea**|
-|Utilizza:|Espandi Comprimi testo controllo contenuto|
+|Utilizzare:|Espandi Comprimi testo controllo contenuto|
 |**Elemento**|**Valore**|
-|ExpandText|Expand|
+|ExpandText|Espandi|
 |CollapseText|Comprimi|
 |Funzionalità:|**CodeSnippet**|
-|Utilizza:|Testo del controllo frammento di codice.  Nota: il contenuto dei frammenti di codice con spazio "senza interruzioni" verrà modificato in spazio.|
+|Utilizzare:|Testo del controllo frammento di codice.  Nota: il contenuto dei frammenti di codice con spazio "senza interruzioni" verrà modificato in spazio.|
 |**Elemento**|**Valore**|
 |CopyToClipboard|Copia negli Appunti|
 |ViewColorizedText|Visualizza colori|
@@ -450,7 +450,7 @@ some F# code
 |VBDeclaration|Dichiarazione|
 |VBUsage|Utilizzo|
 |Funzionalità:|**Feedback, piè di pagina e logo**|
-|Utilizza:|Fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo.|
+|Utilizzare:|Fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo.|
 |**Elemento**|**Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).**|
 |CopyRight|© 2013 Microsoft Corporation. Tutti i diritti sono riservati.|
 |SendFeedback|\<a href = "{0}" {1}> inviare commenti e suggerimenti\</a > in questo argomento a Microsoft.|
@@ -459,7 +459,7 @@ some F# code
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
 |Funzionalità:|**Non responsabilità**|
-|Utilizza:|Set di dichiarazioni di non responsabilità del case specifiche per il contenuto tradotto dal computer.|
+|Utilizzare:|Set di dichiarazioni di non responsabilità del case specifiche per il contenuto tradotto dal computer.|
 |**Elemento**|**Valore**|
 |MT_Editable|Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
 |MT_NonEditable|Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
@@ -468,14 +468,14 @@ some F# code
 |MT_BetaContents|Questo articolo è stato tradotto per un rilascio preliminare. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
 |MT_BetaRecycledContents|Questo articolo è stato tradotto manualmente per una versione preliminare. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento.|
 |Funzionalità:|**LinkTable**|
-|Utilizza:|Supporto per i collegamenti agli argomenti online|
+|Utilizzare:|Supporto per i collegamenti agli argomenti online|
 |**Elemento**|**Valore**|
 |LinkTableTitle|Tabella di collegamento|
 |TopicEnuLinkText|Visualizzare la versione in lingua inglese\</a > di questo argomento disponibile nel computer.|
 |TopicOnlineLinkText|Vedere questo argomento \<a href = "{0}" {1}> online\</a >|
 |OnlineText|Online|
 |Funzionalità:|**Controllo audio video**|
-|Utilizza:|Visualizzazione di elementi e testo per il contenuto video|
+|Utilizzare:|Visualizzazione di elementi e testo per il contenuto video|
 |**Elemento**|**Valore**|
 |MultiMediaNotSupported|Per supportare {0} contenuto, è necessario che sia installato Internet Explorer 9 o versione successiva.|
 |VideoText|visualizzazione di video|
@@ -483,25 +483,25 @@ some F# code
 |OnlineVideoLinkText|\<p > per visualizzare il video associato a questo argomento, fare clic su {0}\<a href = "{1}" >{2}qui\</a >.\</p >|
 |OnlineAudioLinkText|\<p > per restare in ascolto dell'audio associato a questo argomento, fare clic su {0}\<a href = "{1}" >{2}qui\</a >.\</p >|
 |Funzionalità:|**Controllo contenuto non installato**|
-|Utilizza:|Elementi di testo (stringhe) usati per il rendering di contentnotinstalled. htm|
+|Utilizzare:|Elementi di testo (stringhe) usati per il rendering di contentnotinstalled. htm|
 |**Elemento**|**Valore**|
 |ContentNotInstalledTitle|Nessun contenuto trovato nel computer.|
 |ContentNotInstalledDownloadContentText|\<p > per scaricare il contenuto nel computer, \<a href = "{0}" {1}> fare clic sulla scheda Gestisci\</a >.\</p >|
 |ContentNotInstalledText|\<p > nessun contenuto è installato nel computer. Vedere l'amministratore per l'installazione del contenuto della guida locale.\</p >|
 |Funzionalità:|**Controllo argomento non trovato**|
-|Utilizza:|Elementi di testo (stringhe) usati per il rendering di topicnotfound. htm|
+|Utilizzare:|Elementi di testo (stringhe) usati per il rendering di topicnotfound. htm|
 |**Elemento**|**Valore**|
 |TopicNotFoundTitle|Impossibile trovare l'argomento richiesto nel computer.|
 |TopicNotFoundViewOnlineText|\<p > l'argomento richiesto non è stato trovato nel computer, ma è possibile \<a href = "{0}" {1}> visualizzare l'argomento online\</a >.\</p >|
 |TopicNotFoundDownloadContentText|\<p > vedere il riquadro di spostamento per i collegamenti ad argomenti simili oppure \<a href = "{0}" {1}> fare clic sulla scheda Gestisci\</a > per scaricare il contenuto nel computer.\</p >|
 |TopicNotFoundText|\<p > l'argomento richiesto non è stato trovato nel computer.\</p >|
 |Funzionalità:|**Controllo dell'argomento danneggiato**|
-|Utilizza:|Elementi di testo (stringhe) usati per il rendering di topiccorrupted. htm|
+|Utilizzare:|Elementi di testo (stringhe) usati per il rendering di topiccorrupted. htm|
 |**Elemento**|**Valore**|
 |TopicCorruptedTitle|Impossibile visualizzare l'argomento richiesto.|
 |TopicCorruptedViewOnlineText|\<p > Visualizzatore della guida non è in grado di visualizzare l'argomento richiesto. Potrebbe essersi verificato un errore nel contenuto dell'argomento o in una dipendenza di sistema sottostante.\</p >|
 |Funzionalità:|**Controllo Home page**|
-|Utilizza:|Testo che supporta la visualizzazione del contenuto del nodo di livello superiore del Visualizzatore della guida.|
+|Utilizzare:|Testo che supporta la visualizzazione del contenuto del nodo di livello superiore del Visualizzatore della guida.|
 |**Elemento**|**Valore**|
 |HomePageTitle|Pagina iniziale del Visualizzatore della Guida|
 |HomePageIntroduction|\<p > Benvenuto nel Microsoft Help Viewer, un'origine essenziale di informazioni per tutti gli utenti che utilizzano strumenti, prodotti, tecnologie e servizi Microsoft. Help Viewer consente di accedere alle informazioni di riferimento, al codice di esempio, agli articoli tecnici e altro ancora. Per trovare il contenuto necessario, esplorare il sommario, utilizzare la ricerca full-text o spostarsi nel contenuto utilizzando la parola chiave index.\</p >|
@@ -512,7 +512,7 @@ some F# code
 |HomePageHelpSettingsText|\<p > l'impostazione corrente è la guida locale. Il Visualizzatore della Guida Visualizza il contenuto installato nel computer.\<br/> per modificare l'origine del contenuto della guida, sulla barra dei menu di Visual Studio scegliere \<span style = "{0}" > Guida, impostare preferenza guida\</span >.\<br/>\</p >|
 |MegaByte|MB|
 
- **branding.js**
+ **personalizzazione. js**
 
  Il file Branding. js contiene JavaScript usato dagli elementi di personalizzazione del Visualizzatore della Guida di Visual Studio.  Di seguito è riportato un elenco degli elementi di personalizzazione e della funzione JavaScript di supporto.  Tutte le stringhe da localizzare per questo file sono definite nella sezione "stringhe localizzabili" all'inizio del file.  Il file ICL è stato creato per le stringhe loc all'interno del file Branding. js.
 
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**File**|**Utilizzo**|**Origine contenuto visualizzata**|
+|**File**|**Usare**|**Origine contenuto visualizzata**|
 |Homepage. htm|Si tratta di una pagina che Visualizza il contenuto attualmente installato e qualsiasi altro messaggio appropriato da presentare all'utente sul contenuto.  Questo file contiene l'attributo meta data aggiuntivo "Microsoft.Help.Id" Content = "-1" che inserisce il contenuto nella parte superiore del sommario del contenuto locale.||
 ||<META_HOME_PAGE_TITLE_ADD />|Branding. XML, tag \<HomePageTitle >|
 ||< HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding. XML, tag \<HomePageIntroduction >|
@@ -567,7 +567,7 @@ some F# code
 ||< TOPIC_CORRUPTED_SECTION_ADD/>|Branding. XML, tag \<TopicCorruptedViewOnlineText >|
 |topicnotfound. htm|Quando un argomento non viene trovato nel set di contenuto locale, né disponibile online||
 ||< META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding. XML, tag \<TopicNotFoundTitle >|
-||< META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||< META_TOPIC_NOT_FOUND_ID_ADD/>|Branding. XML, tag \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
 ||< TOPIC_NOT_FOUND_SECTION_ADD/>|Branding. XML, tag \<TopicNotFoundText >|
 |contentnotinstalled.htm|Quando non è installato alcun contenuto locale per il prodotto.||
 ||< META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding. XML, tag \<ContentNotInstalledTitle >|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**File**|**Utilizzo**|**Esempi**|
+|**File**|**Usare**|**Esempi**|
 |Cancella. gif|Usato per eseguire il rendering dell'area comprimibile||
 |footer_slice.gif|Presentazione del piè di pagina||
 |info_icon.gif|Usato per la visualizzazione di informazioni|Dichiarazione di non responsabilità|
@@ -767,7 +767,7 @@ some F# code
 
 6. In Esplora soluzioni scegliere la voce di menu **Proprietà** dal menu di scelta rapida della soluzione ContosoHelpShell. In **proprietà di configurazione**selezionare **Configuration Manager**. Nella colonna **configurazione** modificare ogni valore di "debug" in "release".
 
-7. Compilare la soluzione. Viene creato un set di file in una cartella di versione, che verrà usato nella sezione successiva.
+7. Compila la soluzione. Viene creato un set di file in una cartella di versione, che verrà usato nella sezione successiva.
 
    Per eseguire il test come se venisse distribuito:
 

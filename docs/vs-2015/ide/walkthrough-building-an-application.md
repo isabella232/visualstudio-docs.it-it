@@ -64,7 +64,7 @@ Di seguito sono elencate le diverse sezioni di questo argomento:
 
      ![Finestra di dialogo nuovo progetto, esempi installati](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     OR
+     OPPURE
 
      Denominare la soluzione `IntroWPFvb` per Visual Basic.
 
@@ -142,7 +142,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
      Per altre informazioni, vedere [Pagina Compilazione, Creazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-4. Compilare la soluzione.
+4. Compila la soluzione.
 
      Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
 
@@ -162,7 +162,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
     Per altre informazioni, vedere [Configuring Warnings in Visual Basic](../ide/configuring-warnings-in-visual-basic.md) (Configurazione degli avvisi in Visual Basic).
 
-4. Compilare la soluzione.
+4. Compila la soluzione.
 
    Nella finestra **Output** vengono visualizzate solo le informazioni di riepilogo per la compilazione.
 

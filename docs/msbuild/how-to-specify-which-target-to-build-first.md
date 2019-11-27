@@ -27,7 +27,7 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
 
 #### <a name="to-specify-one-initial-target"></a>Per specificare una destinazione iniziale
 
-- Specificare la destinazione predefinita nell'attributo `InitialTargets` dell'elemento `Project`. Esempio:
+- Specificare la destinazione predefinita nell'attributo `InitialTargets` dell'elemento `Project`. Ad esempio:
 
    `<Project InitialTargets="Clean">`
 
@@ -44,7 +44,7 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
 
 #### <a name="to-specify-one-default-target"></a>Per specificare una destinazione predefinita
 
-- Specificare la destinazione predefinita nell'attributo `DefaultTargets` dell'elemento `Project`. Esempio:
+- Specificare la destinazione predefinita nell'attributo `DefaultTargets` dell'elemento `Project`. Ad esempio:
 
    `<Project DefaultTargets="Compile">`
 
@@ -61,13 +61,13 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Per usare per prima una destinazione diversa da quella predefinita
 
-- Specificare la destinazione da usare per prima tramite l'opzione della riga di comando **-target**. Esempio:
+- Specificare la destinazione da usare per prima tramite l'opzione della riga di comando **-target**. Ad esempio:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Per usare per prime più destinazioni diverse da quelle predefinite
 
-- Elencare le destinazioni, separate da punto e virgola o virgola, usando l'opzione della riga di comando **-target**. Esempio:
+- Elencare le destinazioni, separate da punto e virgola o virgola, usando l'opzione della riga di comando **-target**. Ad esempio:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

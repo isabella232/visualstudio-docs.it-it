@@ -6,12 +6,12 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 14da8fab1b3190d77951298ac7d1a130c85f6135
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 703ee752a9f16f0abc5e4813707890a6d17947af
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297717"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538946"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configurazione, installazione e verifiche per gli utenti Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Questo argomento è destinato agli sviluppatori che lavorano principalmente su u
   
 3. Scaricare e installare Xamarin seguendo le istruzioni nella pagina relativa a [installazione e configurazione di Xamarin.iOS](https://docs.microsoft.com/xamarin/ios/get-started/installation/mac) (xamarin.com).  
   
-4. Dopo aver completato l'installazione di Xamarin nei computer Windows e Mac, seguire le istruzioni nella pagina relativa alla [connessione al Mac tramite XMA](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com) in modo da usare iOS e il Mac da Visual Studio nel computer Windows.  
+4. Dopo aver completato l'installazione di Xamarin nei computer Windows e Mac, seguire le istruzioni nella pagina relativa alla [connessione al Mac tramite XMA](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com) in modo da usare iOS e il Mac da Visual Studio nel computer Windows.  
   
 ## <a name="windows"></a> Installazione di Windows in Parallels (Visual Studio e Xamarin)  
   
 1. Usando il desktop Windows che è stato configurato in Parallels/VMWare, [scaricare e avviare il programma di installazione di qualsiasi edizione di Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional o Enterprise). Visual Studio Community 2015 è l'edizione gratuita. Le edizioni Professional ed Enterprise possono essere usate per un periodo di valutazione di 30 giorni.  
   
-2. Nel programma di installazione selezionare l'installazione **personalizzata**:  
+2. Nel programma di installazione selezionare l'installazione **personalizzata** :  
   
      ![Scelta dell'opzione personalizzata nell'installazione di Visual Studio](../cross-platform/media/cross-plat-xamarin-setup-1.png "Installazione di Novell Cross-Plat 1")  
   
@@ -75,7 +75,7 @@ Questo argomento è destinato agli sviluppatori che lavorano principalmente su u
     > [!NOTE]
     > Assicurarsi di aggiornare Xamarin alla versione 4.0.3.214 o successiva per evitare problemi con le licenze precedenti di Xamarin.  Se si tenta di verificare la disponibilità di aggiornamenti e viene visualizzato un errore relativo agli strumenti di compilazione Microsoft, vedere il thread nei [forum di Xamarin](https://forums.xamarin.com/discussion/69015/xamarin-update-on-vs-2013-says-i-need-the-build-tools-for-vs-2015).
   
-6. Dopo aver completato l'installazione di Xamarin nei computer Windows e Mac, seguire le istruzioni nella pagina relativa alla [connessione al Mac tramite XMA](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com) in modo da usare iOS da Visual Studio.  
+6. Dopo aver completato l'installazione di Xamarin nei computer Windows e Mac, seguire le istruzioni nella pagina relativa alla [connessione al Mac tramite XMA](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com) in modo da usare iOS da Visual Studio.  
   
 ## <a name="verify"></a> Verificare l'ambiente  
  Al termine dei programmi di installazione, dedicare alcuni minuti per verificare che tutto sia pronto per le attività di sviluppo con Xamarin.  
@@ -116,11 +116,11 @@ Questo argomento è destinato agli sviluppatori che lavorano principalmente su u
   
    **iOS**  
   
-4. Assicurarsi che il Mac sia disponibile in rete e associato a Visual Studio, come descritto nella pagina relativa alla [connessione al Mac tramite XMA](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/?pivots=windows#Connecting_to_the_Mac_Using_XMA) (xamarin.com).  
+4. Assicurarsi che il Mac sia disponibile in rete e associato a Visual Studio, come descritto nella pagina relativa alla [connessione al Mac tramite XMA](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com).  
   
 5. Convalidare la creazione di un progetto iOS seguendo le istruzioni nella pagina relativa alla [creazione di un progetto iOS](https://github.com/xamarin/docs-archive/tree/master/Recipes/ios/general/projects/create_an_ios_project) (xamarin.com).  
   
-6. Convalidare la finestra di progettazione dello storyboard: nel progetto iOS in Esplora soluzioni aprire il file **MainStoryboard.storyboard**. In questo caso, Visual Studio ospita la finestra di progettazione, che è in esecuzione in remoto sul Mac.  
+6. Convalidare la finestra di progettazione dello storyboard: nel progetto iOS in Esplora soluzioni aprire il file **MainStoryboard.storyboard** . In questo caso, Visual Studio ospita la finestra di progettazione, che è in esecuzione in remoto sul Mac.  
   
 7. Convalidare la compilazione e il debug:  
   

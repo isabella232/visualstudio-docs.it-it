@@ -30,7 +30,7 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
  Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |Gestione di backlog e sprint|Sì||  
 |Verifica del lavoro|Sì||  
@@ -43,7 +43,7 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
  Commento generale: anche se le funzionalità di progettazione sono indipendenti dal linguaggio di codifica o funzionano con i linguaggi .NET come C#, operano in base a un paradigma di applicazione tradizionale con gerarchie di oggetti e relazioni tra classi. La progettazione di un gioco in Unity prevede un paradigma completamente diverso, ossia relazioni di oggetti grafici, suoni, shader, script e così via. Per questo motivo, gli strumenti diagramma di modellazione di Visual Studio non sono particolarmente rilevanti per un intero progetto Unity. Possono eventualmente essere usati per gestire le relazioni negli script C#, che però costituiscono solo una parte dell'intero progetto.  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |Diagrammi sequenza|No||  
 |Grafici delle dipendenze|No||  
@@ -56,7 +56,7 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
 ## <a name="code"></a>Codice  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |[Usare il controllo della versione di Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Sì|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|  
 |[Introduzione a Git in Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sì|Vedere le note dopo la tabella.|  
@@ -72,10 +72,10 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
 3. Le risorse binarie in un progetto Unity, ad esempio trame e file audio, possono richiedere una grande quantità di spazio di archiviazione. Diversi sistemi di controllo del codice sorgente, come Git, memorizzano una copia univoca di un file per ogni modifica apportata, anche se la modifica interessa solo una piccola parte del file. Ciò può causare un aumento eccessivo dell'archivio Git. Per risolvere questo problema, gli sviluppatori Unity scelgono spesso di aggiungere al repository solo le risorse finali e usare un modo diverso per mantenere una cronologia di lavoro delle risorse, ad esempio OneDrive, DropBox o git-annex. Questo approccio funziona perché tali attività in genere non richiedono il controllo della versione insieme alle modifiche del codice sorgente. In genere, gli sviluppatori impostano anche la modalità di serializzazione delle risorse dell'editor di progetto sull'opzione per forzare il testo per archiviare i file delle scene in formato testo anziché binario, in modo da consentire operazioni di unione nel controllo del codice sorgente. Per informazioni dettagliate, vedere [Editor Settings](https://docs.unity3d.com/Manual/class-EditorManager.html) (Impostazioni dell'editor) nella documentazione di Unity.  
   
-## <a name="build"></a>Compilazione  
+## <a name="build"></a>Compila  
  Collegamento di riferimento: **[Compilazione](/azure/devops/pipelines/index)**  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |Server TFS locale|Possibile|I progetti Unity vengono compilati tramite l'ambiente Unity e non tramite il sistema di compilazione di Visual Studio (se si usa Visual Studio Tools per Unity, vengono compilati gli script, ma non viene prodotto un eseguibile). Poiché è possibile [compilare progetti Unity dalla riga di comando](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentazione di Unity), si può configurare un processo MSBuild in un server TFS per eseguire i comandi Unity appropriati, a condizione che Unity sia installato nello stesso computer.<br /><br /> Unity offre anche [Unity Cloud Build](https://build.cloud.unity3d.com/landing/) che monitora un repository Git o SVN ed esegue compilazioni periodiche. Attualmente non funziona con il controllo della versione di Team Foundation o Visual Studio Team Services.|  
 |Server di compilazione locale collegato a Visual Studio Team Services|Possibile|Date le stesse condizioni precedenti, è anche possibile indirizzare le compilazioni attivate tramite Visual Studio Team Services in modo che usino un computer TFS locale.  Per istruzioni, vedere [Server di compilazione](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
@@ -86,7 +86,7 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 ## <a name="testing"></a>Test  
  Collegamento di riferimento: **[Test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |Pianificazione dei test, creazione di test case e organizzazione di gruppi di test|Sì||  
 |Test manuali|Sì||  
@@ -98,7 +98,7 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 ## <a name="improve-code-quality"></a>Migliorare la qualità del codice  
  Collegamento di riferimento: **[Migliorare la qualità del codice](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |[Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|  
 |[Ricerca del codice duplicato mediante il rilevamento del clone di codice](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|  
@@ -109,15 +109,15 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 ## <a name="release-management"></a>Gestione versioni  
  Collegamento di riferimento: **[Automatizzare le distribuzioni con Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |Gestire i processi di rilascio|Sì||  
 |Distribuzione ai server per il caricamento laterale tramite script|Sì||  
-|Caricare nell'app store|Partial|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni.  Vedere le [estensioni per Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Caricare nell'app store|Parziale|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni.  Vedere le [estensioni per Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorare con HockeyApp  
  Collegamento di riferimento: **[Monitorare con HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
+|Caratteristica|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |Analisi degli arresti anomali, telemetria e distribuzione beta|Sì|HockeyApp risulta particolarmente utile per gestire la distribuzione beta e ottenere report sugli arresti anomali.<br /><br /> Per la telemetria di script C#, è possibile usare qualsiasi framework di analisi, a condizione che venga eseguito nella versione di .NET usata da Unity. Tuttavia, consente l'analisi solo all'interno degli script di gioco e non più in profondità nel motore di Unity. Attualmente non è disponibile un plug-in per Application Insights, ma sono disponibili plug-in per altre soluzioni di analisi, ad esempio [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) e [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). I servizi come Unity Analytics che riconoscono la natura di un progetto Unity forniscono naturalmente analisi più significative rispetto ai framework generici.|

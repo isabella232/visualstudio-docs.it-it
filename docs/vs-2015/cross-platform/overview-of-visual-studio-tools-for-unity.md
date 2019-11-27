@@ -20,7 +20,7 @@ ms.locfileid: "74298752"
 
 Questa sezione contiene altre informazioni sulle funzionalità offerte da Visual Studio Tools per Unity e su come usarle per incrementare la produttività con Unity.  
   
- Con Visual Studio Tools per Unity (*VSTU*) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usarne il potente debugger per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.  
+ Con Visual Studio Tools per Unity (*VSTU*) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usare il debugger avanzato per individuare e correggere gli errori. La versione più recente di VSTU include la colorazione della sintassi per il linguaggio ShaderLab di Unity, un'ottimizzazione delle visualizzazioni del debugger e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.  
   
  Per altre informazioni su queste funzionalità, continuare a leggere questa pagina.  
   

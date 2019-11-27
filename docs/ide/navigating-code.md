@@ -35,7 +35,7 @@ Visual Studio offre diversi modi per spostarsi all'interno del codice nell'edito
 
 ![Pulsanti di spostamento per spostarsi avanti e indietro](../ide/media/vs2017_nav_buttons.png)
 
-## <a name="navigation-bar"></a>Barra di navigazione
+## <a name="navigation-bar"></a>Barra di spostamento
 
 Per spostarsi all'interno di una codebase, è anche possibile usare la **barra di spostamento**, ovvero le caselle a discesa nella parte superiore della finestra del codice e scegliere un tipo o un membro per accedervi direttamente. La barra di spostamento viene visualizzata quando si modifica il codice in una codebase Visual Basic, C# o C++. In una classe parziale i membri definiti all'esterno del file di codice corrente potrebbero essere disabilitati (visualizzati in grigio).
 
@@ -70,7 +70,7 @@ Input | Funzione
 
 ## <a name="reference-highlighting"></a>Evidenziazione dei riferimenti
 
-Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per passare al simbolo evidenziato successivo o precedente, premere **CTRL**+**MAIUSC**+**freccia GIÙ** o **CTRL**+**MAIUSC**+**freccia SU**. È possibile modificare il colore di evidenziazione in **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Riferimento evidenziato**.
+Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti** . Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per passare al simbolo evidenziato successivo o precedente, premere **CTRL**+**MAIUSC**+**freccia GIÙ** o **CTRL**+**MAIUSC**+**freccia SU**. È possibile modificare il colore di evidenziazione in **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Riferimento evidenziato**.
 
 ## <a name="go-to-commands"></a>Comandi Vai a
 
@@ -82,7 +82,7 @@ Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifi
 
 - **Vai al file** o **CTRL**+**1**, **CTRL**+**F**: consente di passare al file specificato nella soluzione.
 
-- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
+- **Vai a file recente** (**CTRL**+**1**, **CTRL**+**R**): consente di passare al file specificato, visitato di recente nella soluzione.
 
 - **Vai al tipo** o **CTRL**+**1**, **CTRL**+**T**: consente di passare al tipo specificato nella soluzione.
 
@@ -125,16 +125,16 @@ Input | Funzione
 **Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **CTRL**+**F12**
 **Mouse** | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Vai all'implementazione**
 
-## <a name="go-to-base"></a>Go To Base
+## <a name="go-to-base"></a>Vai alla base
 
-Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+Utilizzando Vai a base, è possibile spostarsi verso l'alto nella catena di ereditarietà dell'elemento selezionato. Se sono presenti più risultati, verranno visualizzati nell'elenco **Vai alla** finestra di base:
 
 Input | Funzione
 ------------ | ---
-**Tastiera** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
-**Mouse** | Right-click on the type name and select **Go To Base**
+**Tastiera** | Posizionare il cursore di testo in un punto qualsiasi all'interno del nome del tipo e premere **Alt**+**Home**
+**Mouse** | Fare clic con il pulsante destro del mouse sul nome del tipo e selezionare **Vai a base**
 
-## <a name="call-hierarchy"></a>Gerarchia delle chiamate
+## <a name="call-hierarchy"></a>Gerarchia di chiamata
 
 È possibile visualizzare le chiamate da e verso un metodo nella [finestra Gerarchia di chiamata](../ide/reference/call-hierarchy.md):
 

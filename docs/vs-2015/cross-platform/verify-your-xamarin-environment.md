@@ -64,7 +64,7 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
 ## <a name="windows-phone"></a>Windows Phone  
   
-1. Convalidare la finestra di progettazione di Windows Phone: nel progetto Windows Phone in Esplora soluzioni aprire il file **MainPage.XAML**.  
+1. Convalidare la finestra di progettazione di Windows Phone: nel progetto Windows Phone in Esplora soluzioni aprire il file **MainPage.XAML** .  
   
 2. Convalidare la compilazione e il debug nell'emulatore o in un dispositivo (nota: per questo passaggio è necessario avere a disposizione l'emulatore di Windows Phone installato tramite l'installazione di Visual Studio oppure un dispositivo con tethering):  
   
@@ -80,7 +80,7 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
 1. Assicurarsi che il Mac sia disponibile in rete e associato a Visual Studio, come descritto nella pagina relativa alla [connessione al Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com).  
   
-2. Convalidare la finestra di progettazione dello storyboard: nel progetto iOS in Esplora soluzioni aprire il file **Main.storyboard**. In questo caso, Visual Studio ospita la finestra di progettazione, che è in esecuzione in remoto sul Mac.  
+2. Convalidare la finestra di progettazione dello storyboard: nel progetto iOS in Esplora soluzioni aprire il file **Main.storyboard** . In questo caso, Visual Studio ospita la finestra di progettazione, che è in esecuzione in remoto sul Mac.  
   
 3. Convalidare la compilazione e il debug:  
   
@@ -111,4 +111,4 @@ Al termine dei programmi di installazione (vedere [Configurazione e installazion
   
 2. Nell'Installazione guidata di Xamarin visualizzata fare clic su **Avanti** e quindi su **Modifica**.  
   
-3. Nell'elenco di funzionalità facoltative da installare espandere **Xamarin per Visual Studio 2015**, scegliere **Installazione su disco rigido locale** e quindi fare clic su **Avanti** per procedere con l'aggiunta della funzionalità.
+3. Nell'elenco di funzionalità facoltative da installare espandere **Xamarin per Visual Studio 2015**, scegliere **Installazione su disco rigido locale**e quindi fare clic su **Avanti** per procedere con l'aggiunta della funzionalità.

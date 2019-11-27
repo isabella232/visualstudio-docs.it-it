@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Organize and edit code in Visual Studio
-summary: Learn about working with code projects, using code editor features, and maintaining consistent code style.
+title: Organizzare e modificare il codice in Visual Studio
+summary: Informazioni sull'utilizzo dei progetti di codice, sull'utilizzo delle funzionalità dell'editor del codice e sulla gestione di uno stile di codice coerente.
 metadata:
   title: Funzionalità dell'editor del codice
-  description: Learn about code editing features in Visual Studio.
+  description: Informazioni sulle funzionalità di modifica del codice in Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -17,11 +17,11 @@ metadata:
   ms.lasthandoff: 11/22/2019
   ms.locfileid: "74316433"
 landingContent:
-- title: Open or create a project
+- title: Aprire o creare un progetto
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Creare un nuovo progetto
+    - text: Creazione di un nuovo progetto
       url: create-new-project.md
     - text: Aprire un progetto da un repository
       url: ../get-started/tutorial-open-project-from-repo.md
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: Usare Visual Studio senza progetti o soluzioni
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Use editing features
+- title: Usare le funzionalità di modifica
   linkLists:
   - linkListType: overview
     links:
@@ -39,15 +39,15 @@ landingContent:
       url: navigating-code.md
     - text: Generare e correggere il codice
       url: code-generation-in-visual-studio.md
-    - text: Use IntelliSense for code completion
+    - text: Usare IntelliSense per il completamento del codice
       url: using-intellisense.md
-    - text: Manage code style preferences
+    - text: Gestisci preferenze stile codice
       url: code-styles-and-code-cleanup.md
     - text: Analisi codice
       url: ../code-quality/roslyn-analyzers-overview.md
     - text: IntelliCode
       url: /visualstudio/intellicode/intellicode-visual-studio
-- title: Get started with programming languages
+- title: Introduzione ai linguaggi di programmazione
   linkLists:
   - linkListType: tutorial
     links:

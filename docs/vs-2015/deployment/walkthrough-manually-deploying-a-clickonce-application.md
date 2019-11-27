@@ -33,7 +33,7 @@ ms.locfileid: "74294680"
 
 Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] o è necessario usare funzionalità di distribuzione avanzate, ad esempio la distribuzione di applicazioni attendibili, è necessario usare lo strumento da riga di comando Mage. exe per creare i manifesti di [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Questa procedura dettagliata descrive come creare una distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando la versione della riga di comando (Mage. exe) o la versione grafica (MageUI. exe) del Strumento per la generazione e la modifica di manifesti.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Prerequisiti  
  Questa procedura dettagliata include alcuni prerequisiti e opzioni che è necessario scegliere prima di creare una distribuzione.  
   
 - Installare Mage. exe e MageUI. exe.  
@@ -162,7 +162,7 @@ Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE
   
 13. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione ( **...** ). Digitare quindi la password del certificato.  
   
-     oppure  
+     -oppure-  
   
      Se il certificato viene mantenuto in un archivio certificati accessibile dal computer, selezionare l'opzione **firma con certificato archiviato** e selezionare il certificato dall'elenco fornito.  
   
@@ -190,7 +190,7 @@ Se non è possibile usare Visual Studio per distribuire l'applicazione [!INCLUDE
   
 25. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione ( **...** ). Digitare quindi la password del certificato.  
   
-     oppure  
+     -oppure-  
   
      Se il certificato viene mantenuto in un archivio certificati accessibile dal computer, selezionare l'opzione **firma con certificato archiviato** e selezionare il certificato dall'elenco fornito.  
   

@@ -71,7 +71,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 5. [Raccogliere i dati da un'applicazione Web o da un'applicazione SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     oppure
+     -oppure-
 
      [Raccogliere i dati da un'app gestita](#BKMK_Collect_Data_from_Executables)
 
@@ -118,7 +118,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1. Nel server dell'app aprire una finestra del prompt dei comandi come amministratore.
 
-2. Usare il comando di Windows **icacls** per concedere all'amministratore del server le autorizzazioni complete per la directory dell'agente di raccolta. Di seguito è riportato un esempio:
+2. Usare il comando di Windows **icacls** per concedere all'amministratore del server le autorizzazioni complete per la directory dell'agente di raccolta. Ad esempio:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\IDAmministratore>* `":F`
 
@@ -126,13 +126,13 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
     1. Concedere alla persona che esegue i cmdlet PowerShell di IntelliTrace le autorizzazioni complete per la directory dell'agente di raccolta.
 
-         Di seguito è riportato un esempio:
+         Ad esempio:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Dominio\IDUtente>* `":F`
 
     2. Concedere al pool di applicazioni per l'app Web o l'applicazione SharePoint le autorizzazioni di lettura ed esecuzione per la directory dell'agente di raccolta.
 
-         Di seguito è riportato un esempio:
+         Ad esempio:
 
         - Per un'app Web nel pool di applicazioni **DefaultAppPool** :
 
@@ -162,7 +162,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
     2. Nella finestra di comando PowerShell, usare il comando **Import-Module** per importare **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
-         Di seguito è riportato un esempio:
+         Ad esempio:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -180,7 +180,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 2. Per un'app Web o un'applicazione SharePoint, concedere al pool di applicazioni le autorizzazioni complete per la directory di file .iTrace. È possibile usare il comando Windows **icacls** oppure Esplora risorse (o Esplora file).
 
-    Di seguito è riportato un esempio:
+    Ad esempio:
 
    - Per configurare le autorizzazioni con il comando Windows **icacls** :
 
@@ -192,7 +192,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       oppure
+       -oppure-
 
    - Per configurare le autorizzazioni con Esplora risorse (o Esplora file):
 
@@ -399,8 +399,8 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
  [Blog di Visual Studio ALM + TFS](https://go.microsoft.com/fwlink/?LinkID=201340)
 
-### <a name="forums"></a>Forum
+### <a name="forums"></a>Forums
  [Debugger di Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
 
-### <a name="videos"></a>Video
+### <a name="videos"></a>Videos
  [Video su Channel 9: Raccolta e analisi dei dati IntelliTrace](https://go.microsoft.com/fwlink/?LinkID=251851)

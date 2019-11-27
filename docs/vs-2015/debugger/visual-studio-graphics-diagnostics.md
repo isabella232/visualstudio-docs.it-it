@@ -40,7 +40,7 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
  [Introduzione](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  Questa sezione illustra come installare Diagnostica grafica di Visual Studio e come iniziare a usare Diagnostica grafica con le app Direct3D.  
   
- [Acquisizione delle informazioni grafiche](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  Per usare la diagnostica della grafica al fine di esaminare un problema di rendering nell'app, è necessario prima registrare informazioni su come l'app stessa usa DirectX. Durante la sessione di registrazione, nel corso della normale esecuzione dell'app, *acquisire* (ossia selezionare) i frame che interessano. Le acquisizioni contengono informazioni dettagliate sulla modalità di rendering dei frame. È possibile salvare le informazioni acquisite come documento di log della grafica da esaminare in un secondo momento o da condividere con gli altri membri del team.  
   
  [Utilizzo GPU](../debugger/gpu-usage.md)  
@@ -81,7 +81,7 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
   
 ## <a name="related-sections"></a>Sezioni correlate  
   
-|Titolo|description|  
+|Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)|Introduce le funzionalità di debug in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Grafica e giochi DirectX](https://go.microsoft.com/fwlink/?LinkId=256498)|Include articoli che illustrano le tecnologie grafiche DirectX.|
