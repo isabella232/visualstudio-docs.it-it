@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6b96f23bc7bcd7e6d970025b23f89f572d07daf1
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74473994"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549951"
 ---
 # <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Compilare ed eseguire il debug di app in contenitori con Visual Studio o la riga di comando
 
@@ -60,27 +60,9 @@ ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 
 La fase finale inizia di nuovo da `base`e include il `COPY --from=publish` per copiare l'output pubblicato nell'immagine finale. Questo processo rende possibile che l'immagine finale sia molto più piccola, perché non è necessario includere tutti gli strumenti di compilazione presenti nell'immagine `sdk`.
 
-## <a name="faster-builds-for-the-debug-configuration"></a>Compilazioni più veloci per la configurazione di debug
-
-Visual Studio offre diverse ottimizzazioni che consentono di migliorare le prestazioni del processo di compilazione per i progetti in contenitori. Il processo di compilazione per le app in contenitori non è così semplice come semplicemente seguendo i passaggi descritti in Dockerfile. La compilazione in un contenitore è molto più lenta rispetto alla compilazione nel computer locale.  Quindi, quando si compila la configurazione di **debug** , Visual Studio compila effettivamente i progetti nel computer locale e quindi condivide la cartella di output nel contenitore usando il montaggio del volume. Una compilazione con questa ottimizzazione abilitata è denominata compilazione in modalità *veloce* .
-
-In modalità **rapida** , Visual Studio chiama `docker build` con un argomento che indica a Docker di compilare solo la fase di `base`.  Visual Studio gestisce il resto del processo senza considerare il contenuto di Dockerfile. Quindi, quando si modificano i Dockerfile, ad esempio per personalizzare l'ambiente del contenitore o installare dipendenze aggiuntive, è necessario inserire le modifiche nella prima fase.  Eventuali operazioni personalizzate inserite nelle fasi `build`, `publish`o `final` di Dockerfile non verranno eseguite.
-
-Questa ottimizzazione delle prestazioni si verifica solo quando si compila la configurazione di **debug** . Nella configurazione della **versione** , la compilazione viene eseguita nel contenitore come specificato in Dockerfile.
-
-Se si desidera disabilitare l'ottimizzazione delle prestazioni e compilare come specificato da Dockerfile, impostare la proprietà **ContainerDevelopmentMode** su **Regular** nel file di progetto come indicato di seguito:
-
-```xml
-<PropertyGroup>
-   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
-</PropertyGroup>
-```
-
-Per ripristinare l'ottimizzazione delle prestazioni, rimuovere la proprietà dal file di progetto.
-
 ## <a name="building-from-the-command-line"></a>Compilazione dalla riga di comando
 
-Per eseguire la compilazione dalla riga di comando, è possibile usare `docker build` o `MSBuild`.
+Se si vuole compilare all'esterno di Visual Studio, è possibile usare `docker build` o `MSBuild` per eseguire la compilazione dalla riga di comando.
 
 ### <a name="docker-build"></a>compilazione Docker
 
@@ -100,7 +82,7 @@ Per compilare un'immagine per un singolo progetto di contenitore Docker, è poss
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Verrà visualizzato un output simile a quello visualizzato nella finestra **output** quando si compila la soluzione dall'IDE di Visual Studio. Usare sempre `/p:Configuration=Release`, poiché nei casi in cui Visual Studio usa l'ottimizzazione della compilazione multifase, i risultati quando si compila la configurazione di **debug** potrebbero non essere quelli previsti.
+Verrà visualizzato un output simile a quello visualizzato nella finestra **output** quando si compila la soluzione dall'IDE di Visual Studio. Usare sempre `/p:Configuration=Release`, poiché nei casi in cui Visual Studio usa l'ottimizzazione della compilazione multifase, i risultati quando si compila la configurazione di **debug** potrebbero non essere quelli previsti. Vedere [debug](#debugging).
 
 Se si utilizza un progetto di Docker Compose, utilizzare il comando per compilare immagini:
 
@@ -110,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>Riscaldamento progetto
 
-Si tratta di una sequenza di passaggi che si verificano quando il profilo Docker è selezionato per un progetto (ovvero quando viene caricato un progetto o viene aggiunto il supporto Docker) per migliorare le prestazioni dell'esecuzione successiva (**F5** o **CTRL**+**F5**). Questa operazione può essere configurata in **strumenti** > **Opzioni** > **strumenti contenitore**. Di seguito sono riportate le attività eseguite in background:
+Il *riscaldamento del progetto* fa riferimento a una serie di passaggi che si verificano quando il profilo Docker è selezionato per un progetto (ovvero quando viene caricato un progetto o viene aggiunto il supporto Docker) per migliorare le prestazioni delle esecuzioni successive (**f5** o **CTRL**+**F5**). Questa operazione può essere configurata in **strumenti** > **Opzioni** > **strumenti contenitore**. Di seguito sono riportate le attività eseguite in background:
 
 - Verificare che Docker desktop sia installato e in esecuzione.
 - Assicurarsi che Docker desktop sia impostato sullo stesso sistema operativo del progetto.
@@ -162,6 +144,22 @@ Per altre informazioni sull'uso di SSL con ASP.NET Core app nei contenitori, ved
 
 ## <a name="debugging"></a>Debug
 
+Quando si compila la configurazione di **debug** , in Visual Studio sono disponibili diverse ottimizzazioni che consentono di migliorare le prestazioni del processo di compilazione per i progetti in contenitori. Il processo di compilazione per le app in contenitori non è così semplice come semplicemente seguendo i passaggi descritti in Dockerfile. La compilazione in un contenitore è molto più lenta rispetto alla compilazione nel computer locale.  Quindi, quando si compila la configurazione di **debug** , Visual Studio compila effettivamente i progetti nel computer locale e quindi condivide la cartella di output nel contenitore usando il montaggio del volume. Una compilazione con questa ottimizzazione abilitata è denominata compilazione in modalità *veloce* .
+
+In modalità **rapida** , Visual Studio chiama `docker build` con un argomento che indica a Docker di compilare solo la fase di `base`.  Visual Studio gestisce il resto del processo senza considerare il contenuto di Dockerfile. Quindi, quando si modificano i Dockerfile, ad esempio per personalizzare l'ambiente del contenitore o installare dipendenze aggiuntive, è necessario inserire le modifiche nella prima fase.  Eventuali operazioni personalizzate inserite nelle fasi `build`, `publish`o `final` di Dockerfile non verranno eseguite.
+
+Questa ottimizzazione delle prestazioni si verifica solo quando si compila la configurazione di **debug** . Nella configurazione della **versione** , la compilazione viene eseguita nel contenitore come specificato in Dockerfile.
+
+Se si desidera disabilitare l'ottimizzazione delle prestazioni e compilare come specificato da Dockerfile, impostare la proprietà **ContainerDevelopmentMode** su **Regular** nel file di progetto come indicato di seguito:
+
+```xml
+<PropertyGroup>
+   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
+</PropertyGroup>
+```
+
+Per ripristinare l'ottimizzazione delle prestazioni, rimuovere la proprietà dal file di progetto.
+
  Quando si avvia il debug (**F5**), viene riutilizzato un contenitore avviato in precedenza, se possibile. Se non si vuole riutilizzare il contenitore precedente, è possibile usare i comandi **ricompila** o **Pulisci** in Visual Studio per forzare l'uso di un contenitore aggiornato in Visual Studio.
 
 Il processo di esecuzione del debugger dipende dal tipo di progetto e dal sistema operativo del contenitore:
@@ -182,9 +180,8 @@ Visual Studio usa un punto di ingresso del contenitore personalizzato a seconda 
 |-|-|
 | **Contenitori Linux** | Il punto di ingresso è `tail -f /dev/null`, ovvero un'attesa infinita per l'esecuzione del contenitore. Quando l'app viene avviata tramite il debugger, è il debugger responsabile dell'esecuzione dell'app, ovvero `dotnet webapp.dll`. Se viene avviato senza eseguire il debug, lo strumento esegue una `docker exec -i {containerId} dotnet webapp.dll` per eseguire l'app.|
 | **Contenitori di Windows**| Il punto di ingresso è simile `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` che esegue il debugger, quindi è in ascolto delle connessioni. Lo stesso vale per il debugger che esegue l'app e un comando `docker exec` quando viene avviato senza debug. Per .NET Framework app Web, il punto di ingresso è leggermente diverso da quello in cui `ServiceMonitor` viene aggiunto al comando.|
-  
-> [!NOTE]
-> Il punto di ingresso del contenitore può essere modificato solo in progetti Docker-compose, non in progetti a contenitore singolo.
+
+Il punto di ingresso del contenitore può essere modificato solo in progetti Docker-compose, non in progetti a contenitore singolo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
