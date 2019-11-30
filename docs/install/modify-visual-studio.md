@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
+ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026481"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74567003"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificare Visual Studio aggiungendo o rimuovendo carichi di lavoro e componenti
 
@@ -46,7 +46,17 @@ Ecco come fare.
 
 ## <a name="modify-workloads"></a>Modificare i carichi di lavoro
 
- I [carichi di lavoro](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
+::: moniker range="vs-2017"
+
+ I [carichi di lavoro](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ I carichi di lavoro contengono le funzionalità necessarie per il linguaggio di programmazione o la piattaforma in uso. Usare i carichi di lavoro per modificare Visual Studio in modo che supporti il lavoro da eseguire quando desiderato.
+
+::: moniker-end
 
 >[!NOTE]
 > La procedura seguente presuppone una connessione a Internet.
@@ -59,7 +69,7 @@ Ecco come fare.
 
      Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
 
-     ![Programma di installazione di Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Individuare il programma di installazione di Microsoft Visual Studio")
+     ![Programma di installazione di Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Individuare il programma di installazione Microsoft Visual Studio")
 
      >[!TIP]
      >In alcuni computer il programma di installazione di Visual Studio potrebbe trovarsi sotto la lettera **"M"** come **Microsoft Visual Studio: programma di installazione**.<br/><br/> In alternativa, è possibile trovare il programma di installazione di Visual Studio nel percorso seguente: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -88,7 +98,7 @@ Ecco come fare.
 
      Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
 
-     ![Aprire il programma di installazione di Visual Studio da Windows](media/vs-2019/vs-installer-windows-start.png "Aprire il programma di installazione di Visual Studio")
+     ![Aprire il Programma di installazione di Visual Studio da Windows](media/vs-2019/vs-installer-windows-start.png "Aprire il Programma di installazione di Visual Studio")
 
      > [!NOTE]
      > È anche possibile trovare il programma di installazione di Visual Studio nella posizione seguente:
@@ -107,7 +117,7 @@ Ecco come fare.
 
 1. Scegliere se accettare l'opzione predefinita **Installa durante il download** o selezionare l'opzione **Scarica tutto, quindi installa**.
 
-    ![Opzioni di installazione di Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere se eseguire l'installazione durante il download o se eseguire prima il download e quindi l'installazione")
+    ![Opzioni di installazione di Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Scegliere di installare durante il download o prima di scaricare e installare in seguito")
 
     L'opzione "Scarica tutto, quindi installa" è utile se si preferisce scaricare prima tutto il software e quindi installarlo in un secondo momento.
 
@@ -119,13 +129,12 @@ Ecco come fare.
 
 ## <a name="modify-individual-components"></a>Modificare i singoli componenti
 
-Se si preferisce non installare [carichi di lavoro](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) per personalizzare l'installazione di Visual Studio, scegliere la scheda **Singoli componenti** dal programma di installazione di Visual Studio, selezionare i componenti da installare e quindi seguire le istruzioni visualizzate.
+Se si preferisce non installare carichi di lavoro per personalizzare l'installazione di Visual Studio, scegliere la scheda **Singoli componenti** dal programma di installazione di Visual Studio, selezionare i componenti da installare e seguire le istruzioni visualizzate.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Altre informazioni sui carichi di lavoro di Visual Studio](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
 * [Elenco degli ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Aggiornare Visual Studio](update-visual-studio.md)
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
