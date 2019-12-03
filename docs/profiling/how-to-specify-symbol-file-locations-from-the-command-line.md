@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e35c21306d2e90cdf55d3d18972fd21c702b300
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433465"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688845"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare percorsi dei file di simboli dalla riga di comando
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare percorsi dei file di simboli tramite la riga di comando
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione *pdb*) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:
 
 - Percorsi specificati nell'opzione **/SymbolPath** o nella variabile di ambiente **_NT_SYMBOL_PATH**.
@@ -45,7 +45,7 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
 
 2. Usare la sintassi seguente per impostare la variabile di ambiente **_NT_SYMBOL_PATH** o l'opzione /SymbolPath di VSPerfReport:
 
-    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**
+    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
 
     dove *ArchivioLocale* è il percorso della directory locale creata.
 
@@ -55,7 +55,7 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
 ## <a name="example"></a>Esempio
  La riga di comando seguente imposta la variabile di ambiente **_NT_SYMBOL_PATH** sul server di simboli Windows e la directory locale su **C:\Symbols**.
 
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**
+ **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
 
  La riga di comando VSPerfReport seguente aggiunge la directory *C:\Projects\Symbols* al percorso di ricerca tramite l'opzione **/SymbolPath**.
 
