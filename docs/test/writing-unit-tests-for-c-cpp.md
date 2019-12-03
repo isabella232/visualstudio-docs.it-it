@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189097"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688852"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -79,7 +79,7 @@ Per abilitare il codice di test per l'accesso alle funzioni nel progetto da test
 
 ### <a name="link-to-object-or-library-files"></a>Eseguire il collegamento a file oggetto o di libreria
 
-Se il codice di test non esporta le funzioni che si vuole testare, è possibile aggiungere i file con estensione obj o lib di output alle dipendenze del progetto di test. Vedere [Per collegare i test all'oggetto o a file di libreria](how-to-use-microsoft-test-framework-for-cpp.md).
+Se il codice di test non esporta le funzioni che si vuole testare, è possibile aggiungere i file con estensione obj o lib di output alle dipendenze del progetto di test. Vedere [Per collegare i test all'oggetto o a file di libreria](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project).
 
 ### <a name="add-include-directives-for-header-files"></a>Aggiungere direttive #include per il file di intestazione
 
@@ -87,7 +87,7 @@ Nel file con estensione *cpp* dell'unit test aggiungere quindi una direttiva `#i
 
 ![Aggiungere direttive include](media/cpp-add-includes-test-project.png)
 
-Per evitare di dover digitare il percorso completo in ogni istruzione di inclusione nel file di origine, è possibile aggiungere le cartelle necessarie in **Project** > **Properties** > **C/C++**  > **General** > **Additional include Directory**.
+Per evitare di dover digitare il percorso completo in ogni istruzione include nel file di origine, è possibile aggiungere le cartelle necessarie nelle **Proprietà** di **Project** >  > **CC++ /**  > **generale** > **directory di inclusione aggiuntive**.
 
 ### <a name="write-test-methods"></a>Scrivere i metodi di test
 
