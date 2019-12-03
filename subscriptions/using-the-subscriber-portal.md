@@ -1,17 +1,17 @@
 ---
-title: Uso del portale per i sottoscrittori - http://my.visualstudio.com | Microsoft Docs
+title: Uso del portale per i sottoscrittori - https://my.visualstudio.com | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 7f1d3654aa49b53a1bb8543c28f6edb517c265bf
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095305"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74705820"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
@@ -22,9 +22,9 @@ Per usare il portale, è necessario accedere con l'identità associata alla sott
 Il portale è organizzato in sei pagine.  Ogni pagina consente di accedere a diversi prodotti o servizi inclusi nella sottoscrizione.  Le sei pagine sono Vantaggi, Download, Codici Product Key, Abbonamenti, Supporto e Marketplace.
 
 ## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-Gli strumenti e i servizi inclusi nella sottoscrizione vengono visualizzati come "riquadri" nella pagina Vantaggi.  Non tutti i vantaggi sono inclusi in tutte le sottoscrizioni. I riquadri sono raggruppati in tre categorie:  Strumenti, Sviluppo professionale e Supporto.  
+Gli strumenti e i servizi inclusi nella sottoscrizione vengono visualizzati come "riquadri" nella pagina Vantaggi.  Non tutti i vantaggi sono inclusi in tutte le sottoscrizioni. I riquadri sono raggruppati in tre categorie: Strumenti, Sviluppo professionale e Supporto.  
 
-### <a name="tools"></a>Strumenti
+### <a name="tools"></a>Strumenti di
 Nella categoria Strumenti sono disponibili gli strumenti di sviluppo principali, ad esempio l'IDE di Visual Studio, Azure DevOps e gli strumenti forniti dai partner.  Si noteranno anche servizi come Azure e Visual Studio App Center.
 
 ### <a name="professional-development"></a>Sviluppo professionale

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199873"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706873"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.
@@ -50,13 +50,13 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
    > [!div class="mx-imgBorder"]
    > ![Introduzione a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Visitare [http://www.datacamp.com](http://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
+È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Visitare [https://www.datacamp.com](https://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
 
 > [!div class="mx-imgBorder"]
-> ![Continuazione del training su DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> Formazione continua ![datacamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Eligibility
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Enterprise con GitHub Enterprise   | VL | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |

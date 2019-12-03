@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491298"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706995"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -83,14 +83,14 @@ R: non tutte le sottoscrizioni di Visual Studio Enterprise includono il vantaggi
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>D: è possibile accedere a playlist o canali di apprendimento personalizzati?
 R: sì, in qualità di sottoscrittore di Visual Studio l'utente può accedere ai canali di esperti nell'ambito dei vantaggi offerti dal training Pluralsight. Questi canali sono stati appositamente curati dagli esperti di Microsoft e sono pensati per il learning nelle aree .NET, Azure, DevOps e Mobility. Attivare il vantaggio Pluralsight dal portale di sottoscrizione di Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per accedere a questi canali nella pagina di destinazione di Pluralsight:
 
-•   Scott Hanselmann (.Net, Azure) - [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
+•   Scott Hanselmann (.Net, Azure) - [https://go.pluralsight.com/scott-hanselman](https://go.pluralsight.com/scott-hanselman)
 
-•   Donovan Brown (DevOps) - [http://go.pluralsight.com/donovan-brown](http://go.pluralsight.com/donovan-brown)
+•   Donovan Brown (DevOps) - [https://go.pluralsight.com/donovan-brown](https://go.pluralsight.com/donovan-brown)
 
-•   James Montemagno (Mobility) - [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
+•   James Montemagno (Mobility) - [https://go.pluralsight.com/james-montemagno](https://go.pluralsight.com/james-montemagno)
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>D: cosa accade alla scadenza della sottoscrizione di Pluralsight?
-R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight.  Contattare [Pluralsight](http://www.pluralsight.com) per dettagli completi.
+R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere di acquistare una sottoscrizione direttamente da Pluralsight.  Contattare [Pluralsight](https://www.pluralsight.com) per dettagli completi.
 
 ## <a name="support-resources"></a>Risorse di supporto
 - [Pluralsight Help Center](https://help.pluralsight.com/help) fornisce assistenza in merito all'esecuzione dei corsi Pluralsight o all'uso del sito Web di Pluralsight.
@@ -98,6 +98,6 @@ R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver creato l'account, si è pronti per iniziare il training.  Visitare [https://www.pluralsight.com](http://www.pluralsight.com) e toccare **Log in** (Accedi) nell'angolo superiore destro della pagina oppure tornare a un corso già in esecuzione.
+Dopo aver creato l'account, si è pronti per iniziare il training.  Visitare [https://www.pluralsight.com](https://www.pluralsight.com) e toccare **Log in** (Accedi) nell'angolo superiore destro della pagina oppure tornare a un corso già in esecuzione.
 
 Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md). 

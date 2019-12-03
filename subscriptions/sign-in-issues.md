@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni sui problemi che potrebbero verificarsi durante l'accesso alle sottoscrizioni di Visual Studio
-ms.openlocfilehash: b138e1aad5221a1fe7aacd7fc916e6dfffb08a47
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377809"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706847"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemi di accesso alle sottoscrizioni di Visual Studio
 Per usare la sottoscrizione di Visual Studio, è necessario eseguire prima l'accesso.  A seconda della sottoscrizione, è possibile che la configurazione sia stata eseguita con un account Microsoft (MSA) o un'identità di Azure Active Directory (AAD).  Questo articolo descrive alcuni dei problemi che potrebbero verificarsi durante l'accesso alla sottoscrizione.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>Non è possibile creare gli account Microsoft (MSA) usando indirizzi di posta elettronica aziendali o dell'istituto di istruzione
-Quando il dominio di posta elettronica è configurato in Azure AD, non è più possibile creare un nuovo account personale Microsoft (MSA) usando un indirizzo di posta elettronica aziendale o dell'istituto di istruzione. Che cosa significa? Se l'organizzazione usa Office 365 o altri servizi aziendali Microsoft basati su Azure AD ed è stato aggiunto un nome di dominio al tenant di Azure AD, gli utenti non potranno più creare un nuovo account personale Microsoft usando un indirizzo di posta elettronica del dominio.
+Quando il dominio di posta elettronica è configurato in Azure AD, non è più possibile creare un nuovo account personale Microsoft (MSA) usando un indirizzo di posta elettronica aziendale o dell'istituto di istruzione. Questo significa che Se l'organizzazione usa Office 365 o altri servizi aziendali Microsoft basati su Azure AD ed è stato aggiunto un nome di dominio al tenant di Azure AD, gli utenti non potranno più creare un nuovo account personale Microsoft usando un indirizzo di posta elettronica del dominio.
 
 ### <a name="why-was-this-change-made"></a>Perché è stata effettuata questa modifica?
 Un account personale Microsoft con indirizzo aziendale come nome utente presenta problemi per gli utenti finali e i reparti IT. Ad esempio:
@@ -39,7 +39,7 @@ Tuttavia, se si tenta di registrarsi in un'app Microsoft che supporta gli accoun
    > ![Account aziendali o dell'istituto di istruzione supportati](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>Gli account esistenti sono interessati?
-Il blocco della registrazione descritto di seguito impedisce solo la creazione di nuovi account. Non ha alcun impatto sugli utenti che hanno già un account Microsoft con un indirizzo di posta elettronica aziendale o dell'istituto di istruzione. In questo caso, è ora più semplice rinominare un account Microsoft personale. Questo [articolo del supporto](http://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) offre semplici istruzioni dettagliate. Rinominare il proprio account personale Microsoft significa modificarne il nome utente senza alcun impatto sulla posta elettronica aziendale o sulla modalità di accesso ai servizi aziendali, ad esempio Office 365. Non ha alcun impatto neanche sui contenuti personali ma ne modifica soltanto la modalità di accesso. È possibile usare un altro indirizzo di posta elettronica (personale), ottenere un nuovo indirizzo di posta elettronica @outlook.com da Microsoft oppure usare un numero di telefono come nuovo nome utente.
+Il blocco della registrazione descritto di seguito impedisce solo la creazione di nuovi account. Non ha alcun impatto sugli utenti che hanno già un account Microsoft con un indirizzo di posta elettronica aziendale o dell'istituto di istruzione. In questo caso, è ora più semplice rinominare un account Microsoft personale. Questo [articolo del supporto](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) offre semplici istruzioni dettagliate. Rinominare il proprio account personale Microsoft significa modificarne il nome utente senza alcun impatto sulla posta elettronica aziendale o sulla modalità di accesso ai servizi aziendali, ad esempio Office 365. Non ha alcun impatto neanche sui contenuti personali ma ne modifica soltanto la modalità di accesso. È possibile usare un altro indirizzo di posta elettronica (personale), ottenere un nuovo indirizzo di posta elettronica @outlook.com da Microsoft oppure usare un numero di telefono come nuovo nome utente.
 
 > [!NOTE]
 > Se il proprio reparto IT ha richiesto di creare un account personale Microsoft con la posta elettronica aziendale o dell'istituto di istruzione, ad esempio per accedere a servizi aziendali Microsoft come Premier Support, rivolgersi al team di amministratori prima di rinominare l'account.
@@ -57,7 +57,7 @@ A seconda del tipo di account usato per l'accesso, le sottoscrizioni disponibili
 ### <a name="what-is-aliasing"></a>Il termine "aliasing"
 indica utenti che usano identità diverse per accedere a Windows (o al servizio Active Directory) e per accedere alla posta elettronica.
 
-L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per l'accesso alla directory, ad esempio JohnD@contoso.com, ma gli utenti accedono agli account di posta elettronica tramite alias o nomi descrittivi, ad esempio John.Doe@contoso.com. Per molti clienti che gestiscono le sottoscrizioni tramite Volume Licensing Service Center (VLSC), questo può causare errori durante l'esperienza di accesso perché l'indirizzo di posta elettronica fornito (John.Doe@contoso.com) non corrisponde all'indirizzo della directory (JohnD@contoso.com) richiesto per completare l'autenticazione tramite l'opzione "Account aziendale o dell'istituto di istruzione".
+L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per l'accesso alla directory, ad esempio JohnD@contoso.com, ma gli utenti accedono agli account di posta elettronica tramite alias o nomi descrittivi, ad esempio John.Doe@contoso.com. Per molti clienti che gestiscono le proprie sottoscrizioni tramite Volume Licensing Service Center (VLSC), questo può comportare un'esperienza di accesso non riuscita perché l'indirizzo di posta elettronica specificato (John.Doe@contoso.com) non corrisponde all'indirizzo della directory (JohnD@contoso.com) necessario per eseguire correttamente l'autenticazione tramite l'opzione "account aziendale o dell'Istituto di istruzione".
 
 ### <a name="what-options-do-i-have"></a>Quali sono le opzioni a disposizione?
 Dal punto di vista dei sottoscrittori, è prima di tutto importante collaborare con l'amministratore per comprendere la configurazione delle identità della società. Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale. Prima di eseguire i passaggi per creare un account Microsoft, contattare l'amministratore per verificare se esistono criteri o problemi per questa azione. 
