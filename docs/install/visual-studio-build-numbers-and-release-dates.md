@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/21/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1001fe2e22a924c9e47dc4188c45ba2a7674363e
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: e6bcfc5501ace51b0d4c15c991633a83701982d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316458"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777959"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,9 @@ ms.locfileid: "74316458"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.0 | Versione | 3 dicembre 2019 | 16.4.29519.181 |
 | 16.4.0 | Preview 6 | 21 novembre 2019 | 16.4.29519.161 |
 | 16.3.10 | Versione | 20 novembre 2019 | 16.3.29519.87 |
 | 16.4.0 | Preview 5 | 14 novembre 2019 | 16.4.29512.175 |
@@ -112,7 +113,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Canale** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.17 | Versione | 15 ottobre 2019 | 15.9.28307.905 |
 | 15.9.16 | Versione | 10 settembre 2019 | 15.9.28307.858 |
@@ -192,7 +193,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.11 | Versione | 13 marzo 2018 | 15.0.26228.29 |
 | 15.6.1 | Versione | 8 marzo 2018 | 15.6.27428.2002 |
 | 15.6.1 Preview 1 | Anteprima | 8 marzo 2018 | 15.6.27428.2002 |
-| 15.6.0 | Versione | 5 marzo 2018 | 15.6.27428.1 |
+| 15.6.0 | Versione | March 5, 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 7 | Anteprima | 2 marzo 2018 | 15.6.27428.1 |
 | 15.6.0 Preview 6 | Anteprima | 23 febbraio 2018 | 15.6.27421.1 |
 | 15.0.10 | Versione | 21 febbraio 2018 | 15.0.26228.28 |
@@ -281,7 +282,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedere anche 
 
 * [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm/)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
