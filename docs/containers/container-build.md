@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549951"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706826"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Compilare ed eseguire il debug di app in contenitori con Visual Studio o la riga di comando
+# <a name="how-visual-studio-builds-containerized-apps"></a>Modalità di compilazione delle app in contenitori in Visual Studio
 
-Che si stia compilando dall'IDE di Visual Studio o configurando una compilazione da riga di comando, è necessario sapere in che modo le compilazioni di Visual Studio usano Dockerfile per compilare i progetti.  Per motivi di prestazioni, Visual Studio segue un processo speciale per le app in contenitori. Conoscere il modo in cui Visual Studio compila i progetti è particolarmente importante quando si Personalizza il processo di compilazione modificando Dockerfile.
+Che si stia compilando dall'IDE di Visual Studio o configurando una compilazione da riga di comando, è necessario sapere in che modo Visual Studio USA Dockerfile per compilare i progetti.  Per motivi di prestazioni, Visual Studio segue un processo speciale per le app in contenitori. Conoscere il modo in cui Visual Studio compila i progetti è particolarmente importante quando si Personalizza il processo di compilazione modificando Dockerfile.
 
 Quando Visual Studio compila un progetto che non usa contenitori Docker, richiama MSBuild nel computer locale e genera i file di output in una cartella (in genere `bin`) nella cartella della soluzione locale. Per un progetto in contenitori, tuttavia, il processo di compilazione prende in considerazione le istruzioni di Dockerfile per la creazione dell'app in contenitori. Il Dockerfile usato da Visual Studio è suddiviso in più fasi. Questo processo si basa sulla funzionalità di *compilazione multifase* di Docker.
 
@@ -84,7 +84,7 @@ MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 
 Verrà visualizzato un output simile a quello visualizzato nella finestra **output** quando si compila la soluzione dall'IDE di Visual Studio. Usare sempre `/p:Configuration=Release`, poiché nei casi in cui Visual Studio usa l'ottimizzazione della compilazione multifase, i risultati quando si compila la configurazione di **debug** potrebbero non essere quelli previsti. Vedere [debug](#debugging).
 
-Se si utilizza un progetto di Docker Compose, utilizzare il comando per compilare immagini:
+Se si utilizza un progetto di Docker Compose, utilizzare questo comando per compilare immagini:
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -99,7 +99,7 @@ Il *riscaldamento del progetto* fa riferimento a una serie di passaggi che si ve
 - Estrarre le immagini nella prima fase di Dockerfile (la fase `base` nella maggior parte dei Dockerfile).  
 - Compilare il Dockerfile e avviare il contenitore.
 
-Il riscaldamento si verificherà solo in modalità **rapida** , quindi il contenitore in esecuzione avrà il volume della cartella dell'app montata e le eventuali modifiche apportate all'app non invalideranno il contenitore. Ciò migliora le prestazioni di debug in modo significativo e riduce il tempo di attesa per attività a esecuzione prolungata, ad esempio il pull di immagini di grandi dimensioni.
+Il riscaldamento si verificherà solo in modalità **rapida** , quindi il contenitore in esecuzione avrà la cartella dell'app montata sul volume. Ciò significa che le modifiche apportate all'app non invalideranno il contenitore. Ciò migliora le prestazioni di debug in modo significativo e riduce il tempo di attesa per attività a esecuzione prolungata, ad esempio il pull di immagini di grandi dimensioni.
 
 ## <a name="volume-mapping"></a>Mapping del volume
 

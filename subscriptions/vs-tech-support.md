@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161974"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706987"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -39,7 +39,7 @@ Descrizioni del livello di prodotto: espandere **piani di supporto non disponibi
 
 3. Per completare il processo, è necessario specificare al rappresentante gli elementi seguenti:
    - Paese dell'utente
-   - Company name
+   - Nome società
    - Nome e cognome dell'utente
    - L'indirizzo di posta elettronica che si usa per accedere alla sottoscrizione
    - Numero di telefono dell'utente
@@ -54,7 +54,7 @@ Descrizioni del livello di prodotto: espandere **piani di supporto non disponibi
 > Per attivare l'account di supporto tecnico in una lingua diversa dall'inglese, scegliere un paese dall'[elenco seguente](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Come segnalare un evento imprevisto tramite il vantaggio
-Dopo aver configurato l'**ID contratto** e l'**ID di accesso**, è possibile usarli per segnalare un evento imprevisto al Supporto tecnico [online](http://support.microsoft.com/oas/) (è richiesto l'accesso), tramite il [portale di Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) o chiamando il numero di telefono del supporto tecnico del proprio paese. Se si segnala l'evento imprevisto online,si può scegliere di essere richiamati da un professionista del supporto tecnico Microsoft.
+Dopo aver configurato l'**ID contratto** e l'**ID di accesso**, è possibile usarli per segnalare un evento imprevisto al Supporto tecnico [online](https://support.microsoft.com/oas/) (è richiesto l'accesso), tramite il [portale di Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) o chiamando il numero di telefono del supporto tecnico del proprio paese. Se si segnala l'evento imprevisto online,si può scegliere di essere richiamati da un professionista del supporto tecnico Microsoft.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>L'utente ha già l'ID contratto e l'ID di accesso associati all'account usato per accedere alla segnalazione di un evento imprevisto del Supporto tecnico online?
 Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di eseguire l'accesso. Eseguire l'accesso con l'account associato all'ID contratto e all'ID di accesso. Il vantaggio del piano di supporto esistente associato all'account verrà visualizzato nel passaggio 3 del flusso di lavoro del supporto. È sufficiente selezionare il piano e continuare per inviare il caso. È possibile segnalare gli eventi imprevisti fino al limite indicato nel piano o fino alla data di scadenza del piano, a seconda della circostanza che si verifica per prima. Quando gli eventi imprevisti rimanenti sono pari a "0" o se il piano arriva a scadenza, esso non è più attivo.
@@ -107,16 +107,16 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 2. Dal menu di spostamento a sinistra fare clic su **Guida e supporto**
 3. In "Supporto" fare clic su **Nuova richiesta di supporto**
 
-## <a name="eligibility"></a>Idoneità
+## <a name="eligibility"></a>Eligibility
 
-| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
+| Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio di                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Yes|
-| Visual Studio Enterprise con GitHub Enterprise | VL | 4 eventi imprevisti       |  Yes|
-| Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Yes         |
-| Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Yes         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Yes         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Yes         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Sì|
+| Visual Studio Enterprise con GitHub Enterprise | VL | 4 eventi imprevisti       |  Sì|
+| Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Sì         |
+| Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Sì         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 

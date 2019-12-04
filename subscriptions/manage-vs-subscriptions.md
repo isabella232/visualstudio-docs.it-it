@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493350"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706975"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -43,12 +43,12 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 ## <a name="renewing-my-subscriptions"></a>Rinnovo delle sottoscrizioni personali
 
 **Sottoscrizioni standard**
-- Microsoft Store: se una sottoscrizione è stata acquistata in [Microsoft Store](http://www.microsoft.com/store) è anche possibile rinnovarla in Microsoft Store.
-- Contratti multilicenza:  se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore deve contattare un rivenditore per rinnovare le sottoscrizioni.
+- Microsoft Store: se è stata acquistata una sottoscrizione da [Microsoft Store](https://www.microsoft.com/store), è possibile anche rinnovarla.
+- Contratti multilicenza: se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore deve contattare un rivenditore per rinnovare le sottoscrizioni.
 
-**Sottoscrizioni cloud:**  per le sottoscrizioni cloud non è necessario il rinnovo. Fino a quando la sottoscrizione è pagata, rimarrà attiva.
+**Sottoscrizioni cloud:** le sottoscrizioni cloud non necessitano di rinnovo. Fino a quando la sottoscrizione è pagata, rimarrà attiva.
 
-**Sottoscrizioni acquistate tramite programmi:**  se si riceve la sottoscrizione tramite un programma, la sottoscrizione è associata alla partecipazione al programma. Per altre informazioni, rivolgersi ai referenti per il programma.
+**Sottoscrizioni acquistate attraverso programmi:** se si riceve la sottoscrizione tramite un programma, la sottoscrizione è associata alla partecipazione al programma. Per altre informazioni, rivolgersi ai referenti per il programma.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
@@ -97,7 +97,7 @@ Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>D: Se non si rinnova la sottoscrizione, per quanto tempo Microsoft mantiene i dati?
-R: A seconda del canale di acquisto, Microsoft archivia i dati dei clienti per periodi di tempo diversi.
+R: A seconda del canale di acquisto, Microsoft gestisce i dati dei clienti per diversi periodi di tempo.
 
 | Canale                                                | Durata (giorni) |
 |--------------------------------------------------------|-----------------|

@@ -1,7 +1,7 @@
 ---
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185998"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706790"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="4420"></a>4.4.2.0
+
+Rilasciata il 3 dicembre 2019
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione della diagnostica con le interfacce definite dall'utente.
+
+  - Correzione delle descrizioni rapide con espressioni in formato non valido.
+
+## <a name="4410"></a>4.4.1.0
+
+Rilasciata il 6 novembre 2019
+
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
+
+- **Integrazione:**
+
+  - Aggiunta del supporto per i processi in background di Unity. Il debugger è in grado di connettersi automaticamente al processo principale invece che a un processo figlio.
+  
+  - Aggiunta di una descrizione comando rapida per i messaggi Unity, che visualizza la documentazione associata.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+  - Correzione dell'analizzatore del confronto dei tag `UNT0002` con espressioni di chiamata e binarie avanzate.
+
+### <a name="deprecated-features"></a>Funzionalità deprecate
+
+- **Integrazione:**
+
+  - In futuro, Visual Studio Tools per Unity supporterà solo Visual Studio 2017 +.
+
+## <a name="4400"></a>4.4.0.0
+
+Rilasciata il 15 ottobre 2019
+
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
+
+- **Integrazione:**
+
+  - È stato aggiunto un silenziatore per `IDE0060` (parametro non usato) per tutti i messaggi Unity.
+  
+  - Aggiunta di una descrizione comando rapida per i campi contrassegnati con `TooltipAttribute`. Questa operazione funzionerà anche per una semplice funzione di accesso get usando questo campo.
 
 ## <a name="4330"></a>4.3.3.0
 
@@ -35,46 +83,46 @@ Rilasciata il 23 settembre 2019
 
 Rilasciata il 16 settembre 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
-  - È stata approfondita la comprensione di Visual Studio per i progetti Unity con l'aggiunta di una nuova diagnostica specifica di Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non visualizzerà una correzione rapida per modificare una variabile di controllo `readonly` in modo da impedire la modifica della variabile nell'editor di Unity.
-    - `UNT0001`: i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare l'elaborazione non necessaria da parte del runtime di Unity.
+  - È stata approfondita la comprensione di Visual Studio per i progetti Unity con l'aggiunta di una nuova diagnostica specifica di Unity. Inoltre, l'IDE è stata resa più intelligente eliminando la diagnostica C# generale non applicabile ai progetti Unity. Ad esempio, l'IDE non visualizzerà una correzione rapida per modificare una variabile di controllo in `readonly` che impedisce di modificare la variabile nell'editor di Unity.
+    - `UNT0001`: i messaggi Unity vengono chiamati dal runtime anche se sono vuoti, non dichiararli per evitare l'elaborazione del uncesseray da parte del runtime di Unity.
     - `UNT0002`: il confronto dei tag con l'uguaglianza delle stringhe è più lento del metodo CompareTag incorporato.
-    - `UNT0003`: è preferibile utilizzare la forma generica di GetComponent per l'indipendenza dai tipi.
-    - `UNT0004`: il messaggio di aggiornamento dipende dalla frequenza dei fotogrammi e dovrebbe usare Time.deltaTime anziché Time.fixedDeltaTime.
-    - `UNT0005`: il messaggio FixedUpdate non dipende dalla frequenza dei fotogrammi e dovrebbe usare Time.fixedDeltaTime anziché Time.deltaTime.
-    - `UNT0006`: È stata rilevata una firma del metodo non corretta per questo messaggio Unity.
-    - `UNT0007`: Unity esegue l'override dell'operatore di confronto Null per gli oggetti Unity, il che non è compatibile con la coalescenza Null.
-    - `UNT0008`: Unity esegue l'override dell'operatore di confronto Null per gli oggetti Unity, il che non è compatibile con la propagazione Null.
+    - `UNT0003`: l'utilizzo del formato generico di getComponent è preferibile per l'indipendenza dai tipi.
+    - `UNT0004`: il messaggio di aggiornamento è dipendente dalla frequenza dei frame e deve usare Time. deltaTime anziché time. fixedDeltaTime.
+    - `UNT0005`: il messaggio FixedUpdate è indipendente dalla frequenza dei frame e deve usare Time. fixedDeltaTime anziché time. deltaTime.
+    - `UNT0006`: è stata rilevata una firma del metodo non corretta per questo messaggio Unity.
+    - `UNT0007`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity, che non è compatibile con la coalescenza null.
+    - `UNT0008`: Unity esegue l'override dell'operatore di confronto null per gli oggetti Unity che non è compatibile con la propagazione Null.
     - `UNT0009`: quando si applica l'attributo InitializeOnLoad a una classe, è necessario fornire un costruttore statico. L'attributo InitializeOnLoad garantisce che verrà chiamato all'avvio dell'editor.
-    - `UNT0010`: i MonoBehaviour vanno creati solo usando AddComponent(). un MonoBehaviour è un componente e deve essere associato a un GameObject.
-    - `UNT0011`: gli ScriptableObject vanno creati solo usando CreateInstance(). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
-    - `USP0001`per `IDE0029`: Gli oggetti Unity non devono usare la coalescenza null.
-    - `USP0002`per `IDE0031`: Gli oggetti Unity non devono usare la propagazione Null.
-    - `USP0003`per `IDE0051`: I messaggi Unity vengono richiamati dal runtime di Unity.
-    - `USP0004`per `IDE0044`: I campi con un attributo SerializeField non devono essere resi di sola lettura.
+    - `UNT0010`: la creazione di monobehaviors deve essere realizzata solo tramite AddComponent (). un MonoBehaviour è un componente e deve essere associato a un GameObject.
+    - `UNT0011`: ScriptableObject deve essere creato solo con CreateInstance (). Gli ScriptableObject devono essere creati dal motore di Unity per gestire i metodi relativi ai messaggi di Unity.
+    - `USP0001` per `IDE0029`: gli oggetti Unity non devono usare la coalesone null.
+    - `USP0002` per `IDE0031`: gli oggetti Unity non devono usare la propagazione Null.
+    - `USP0003` per `IDE0051`: i messaggi Unity vengono richiamati dal runtime di Unity.
+    - `USP0004` per `IDE0044`: i campi con un attributo SerializeField non devono essere resi di sola lettura.
 
 ## <a name="4310"></a>4.3.1.0
 
-rilasciata il 4 settembre 2019
+Rilasciata il 4 settembre 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Valutazione:**
 
-  - Aggiunta del supporto per la visualizzazione dei `List<object>` `List'1[[System.Object, <corlib...>]]`tipi migliore, ovvero anziché.
+  - Aggiunta del supporto per una visualizzazione dei tipi migliore, ad esempio `List<object>` anziché `List'1[[System.Object, <corlib...>]]`.
 
-  - Aggiunta del supporto per l'accesso ai membri del `p->data->member`puntatore, ad esempio.
+  - Aggiunta del supporto per l'accesso ai membri del puntatore, ad esempio `p->data->member`.
 
-  - Aggiunto il supporto per le conversioni implicite negli inizializzatori di matrice `new byte [] {1,2,3,4}`, ad esempio.
+  - Aggiunto il supporto per le conversioni implicite negli inizializzatori di matrice, ad esempio `new byte [] {1,2,3,4}`.
 
 ## <a name="4300"></a>4.3.0.0
 
-rilasciata il 13 agosto 2019
+Rilasciata il 13 agosto 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Debugger:**
 
@@ -110,7 +158,7 @@ rilasciata il 13 agosto 2019
 
 Data di rilascio: 24 luglio 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
@@ -134,7 +182,7 @@ Data di rilascio: 24 luglio 2019
 
 Data di rilascio: 24 maggio 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
@@ -152,7 +200,7 @@ Data di rilascio: 24 maggio 2019
 
 Data di rilascio: 21 maggio 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
@@ -166,7 +214,7 @@ Data di rilascio: 21 maggio 2019
 
   - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti a cui viene fatto riferimento (usando il file manifest.json nella cartella `Packages`) e i pacchetti locali (incorporati nella cartella `Packages`).
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Mantenere le proprietà esterne durante l'elaborazione del file di soluzione.
 
@@ -208,29 +256,29 @@ Data di rilascio: 27 febbraio 2019
 
 Data di rilascio: 13 febbraio 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
   - Aggiunta del supporto per rilevare correttamente i processi Unity durante l'installazione e per consentire al motore di installazione di gestire meglio i blocchi di file.
 
-  - Aggiornamento dell' `ScriptableObject` API.
+  - Aggiornamento dell'API `ScriptableObject`.
 
 ## <a name="4003"></a>4.0.0.3
 
 Data di rilascio: 31 gennaio 2019
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
-  - I campi pubblici e serializzati non causeranno più avvisi. Sono stati eliminati automaticamente gli `CS0649` avvisi del compilatore e `IDE0051` nei progetti Unity che hanno creato questi messaggi.
+  - I campi pubblici e serializzati non causeranno più avvisi. Gli avvisi del compilatore `CS0649` e `IDE0051` sono stati eliminati automaticamente nei progetti Unity che hanno creato questi messaggi.
 
 - **Integrazione:**
 
   - Miglioramento dell'esperienza utente per visualizzare le istanze dell'editor di Unity e del lettore (le finestre sono ora ridimensionabili, usano margini uniformi e visualizzano un controllo di ridimensionamento). Aggiunta di informazioni dall'ID del processo per gli editor di Unity.
 
-  - Aggiornamento dell' `MonoBehaviour` API.
+  - Aggiornamento dell'API `MonoBehaviour`.
 
 - **Valutazione:**
 
@@ -274,7 +322,7 @@ Data di rilascio: 23 gennaio 2019
 
 Data di rilascio: 10 dicembre 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Valutazione:**
 
@@ -302,7 +350,7 @@ Data di rilascio: 10 dicembre 2018
 
 Data di rilascio: 4 dicembre 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
@@ -358,7 +406,7 @@ Data di rilascio: 13 novembre 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
 
@@ -396,7 +444,7 @@ Data di rilascio: 20 agosto 2018
 
 Data di rilascio: 14 agosto 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Valutazione:**
 
@@ -416,7 +464,7 @@ Data di rilascio: 24 luglio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - (Backporting dalla versione 3.9.0.0) Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
 
@@ -426,7 +474,7 @@ Data di rilascio: 7 luglio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
 
@@ -434,7 +482,7 @@ Data di rilascio: 7 luglio 2018
 
 Data di rilascio: 26 giugno 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Debug:**
 
@@ -452,7 +500,7 @@ Data di rilascio: 26 giugno 2018
 
 Data di rilascio: 30 maggio 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Debug:**
 
@@ -466,7 +514,7 @@ Data di rilascio: 30 maggio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
 
@@ -484,7 +532,7 @@ Data di rilascio: 7 maggio 2018
 
 Data di rilascio: 7 maggio 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Debug:**
 
@@ -506,7 +554,7 @@ Data di rilascio: 7 maggio 2018
 
   - Correzione dell'utilizzo delle impostazioni di eccezione.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Esclusione delle unità di compilazione di gestione pacchetti dalla generazione.
 
@@ -514,9 +562,9 @@ Data di rilascio: 7 maggio 2018
 
 Data di rilascio: 13 marzo 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Aggiunta del supporto per il nuovo generatore di progetti in Unity 2018.1.
 
@@ -536,7 +584,7 @@ Data di rilascio: 5 marzo 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Correzione del rilevamento della versione di Mono.
 
@@ -548,15 +596,15 @@ Data di rilascio: 5 marzo 2018
 
 Data di rilascio: 23 febbraio 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Aggiunta del supporto per .NET Standard.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Correzione del rilevamento del framework di destinazione Unity.
 
@@ -568,7 +616,7 @@ Data di rilascio: 23 febbraio 2018
 
 Data di rilascio: 7 febbraio 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
@@ -596,9 +644,9 @@ Data di rilascio: 24 gennaio 2018
 
 Data di rilascio: 10 gennaio 2018
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Aggiunta del supporto per il modello di riferimento MonoIsland 2018.1.
 
@@ -616,7 +664,7 @@ Data di rilascio: 10 gennaio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Correzione del calcolo del GUID di progetto per i progetti di lettore.
 
@@ -642,7 +690,7 @@ Data di rilascio: 9 gennaio 2018
 
 Data di rilascio: 4 dicembre 2017
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Integrazione:**
 
@@ -662,7 +710,7 @@ Data di rilascio: 4 dicembre 2017
 
   - È stata corretta la mancata visualizzazione del menu della Guida dell'API di Unity.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - È stata corretta la generazione di un progetto giocatore quando si lavora a un gioco UWP con il back-end IL2CPP/.NET 4.6.
 
@@ -676,9 +724,9 @@ Data di rilascio: 4 dicembre 2017
 
 Data di rilascio: 19 settembre 2017
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Supporto aggiunto per le unità di compilazione assembly.json.
 
@@ -700,7 +748,7 @@ Data di rilascio: 19 settembre 2017
 
   - Il compilatore di Fixed ha generato degli elementi con variabili locali.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Riferimento di Fixed a Microsoft.CSharp per il livello API 4.6.
 
@@ -710,7 +758,7 @@ Data di rilascio 15 agosto 2017
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - È stata corretta la generazione della soluzione Visual Studio in Unity 5.5 e versioni precedenti.
 
@@ -718,7 +766,7 @@ Data di rilascio 15 agosto 2017
 
 Data di rilascio: 14 agosto 2017
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Valutazione:**
 
@@ -738,7 +786,7 @@ Data di rilascio: 14 agosto 2017
 
   - Problemi di Fixed quando si aggiungono elementi all'espressione di controllo di Visual Studio.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Riferimenti ai nomi assembly di Fixed con i file mcs.rsp.
 
@@ -748,7 +796,7 @@ Data di rilascio: 14 agosto 2017
 
 Data di rilascio: 10 maggio 2017
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Programma di installazione:**
 
@@ -766,13 +814,13 @@ Data di rilascio: 10 maggio 2017
 
 Data di rilascio: 7 aprile 2017
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Debugger:**
 
   - Aggiunto il supporto per il nuovo runtime di Unity, compatibile con .NET 4.6 / C# 6.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Aggiunta del supporto per il profilo .NET 4.6.
 
@@ -788,7 +836,7 @@ Data di rilascio: 7 aprile 2017
 
   - Corretta la posizione del cursore dopo l'inserimento del metodo con completamento automatico.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Eliminata la post-elaborazione della versione dell'assembly.
 
@@ -822,7 +870,7 @@ Data di rilascio: 23 gennaio 2017
 
   - Aggiunto un avviso in caso di punto di interruzione non associabile (quando non viene trovato alcun percorso di origine corrispondente).
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Corretta la generazione di file csproj con caratteri speciali/localizzati.
 
@@ -837,7 +885,7 @@ Data di rilascio: 23 gennaio 2017
 ## <a name="2800---30-preview"></a>2.8.0.0 (3.0 anteprima)
 Data di rilascio: 17 novembre 2016
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Generale:**
 
@@ -867,7 +915,7 @@ Data di rilascio: 17 novembre 2016
 
   - Aggiunti messaggi di errore più efficaci quando un tipo è previsto o non trovato.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Rimosso il suffisso CSharp dai nomi di progetto.
 
@@ -895,7 +943,7 @@ Data di rilascio: 17 novembre 2016
 
   - Corretto il supporto per il debug dei frame di iteratore con il nuovo compilatore C#.
 
-- **Project Generation:**
+- **Generazione del progetto:**
 
   - Corretto il bug che impediva la compilazione quando si usava Unity Web Player.
 
@@ -905,7 +953,7 @@ Data di rilascio: 17 novembre 2016
 
 Data di rilascio: 14 luglio 2016
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Generale:**
 
@@ -941,7 +989,7 @@ Data di rilascio: 14 luglio 2016
 
 Data di rilascio: 4 febbraio 2016
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - **Procedure guidate:**
 
@@ -989,7 +1037,7 @@ Data di rilascio: 4 febbraio 2016
 
 Data di rilascio: 8 settembre 2015
 
-### <a name="new-features"></a>Nuove funzionalità
+### <a name="new-features"></a>Nuove funzioni e caratteristiche
 
 - Supporto di Unity 5.2
 
@@ -1003,7 +1051,7 @@ Data di rilascio: 8 settembre 2015
 
 - Correzione dei riferimenti agli assembly UnityEngine e UnityEditor per le app di Windows Store.
 
-- Correzione dell'errore di esecuzione dell'istruzione nel debugger: Impossibile eseguire l'istruzione. Eccezione generale.
+- Correzione dell'errore durante l'esecuzione di istruzioni nel debugger: Impossibile eseguire l'istruzione. Eccezione generale.
 
 - Correzione dei punti di interruzione dei passaggi in Visual Studio 2015.
 
@@ -1084,13 +1132,13 @@ Data di rilascio: 2 aprile 2015
 
   - Installazione del pacchetto Visual Studio Tools per Unity per Unity 5.
 
-- **Documentazione:** Miglioramento delle prestazioni di generazione della documentazione.
+- **Documentazione:** miglioramento delle prestazioni di generazione della documentazione.
 
-- **Procedure guidate:** Supporto dei nuovi metodi MonoBehavior per Unity 4.6 e Unity 5.
+- **Procedure guidate:** supporto dei nuovi metodi MonoBehavior per Unity 4.6 e Unity 5.
 
-- **Unity:** Ricerca di flag non sicuri e definizioni personalizzate nei file RSP durante la generazione dei file di progetto.
+- **Unity:** ricerca di flag non sicuri e definizioni personalizzate nei file RSP durante la generazione dei file di progetto.
 
-- **Interfaccia utente:** Aggiunta della finestra di dialogo **Opzioni** di Visual Studio Tools per Unity in Visual Studio.
+- **Interfaccia utente:** aggiunta della finestra di dialogo **Opzioni** di Visual Studio Tools per Unity in Visual Studio.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1124,13 +1172,13 @@ Data di rilascio: 2 aprile 2015
 
   - Invio dei log della console di Unity all'elenco degli errori di Visual Studio.
 
-- **Documentazione:** Correzione della generazione della documentazione per la nuova documentazione di Unity.
+- **Documentazione:** correzione della generazione della documentazione per la nuova documentazione di Unity.
 
-- **Progetto:** Spostamento e ridenominazione dei file con estensione meta di Unity quando necessario, anche in cartelle.
+- **Progetto:** spostamento e ridenominazione dei file con estensione meta di Unity quando necessario, anche in cartelle.
 
-- **Procedure guidate:** Correzione dell'ordine dei parametri dei metodi MonoBehavior durante la generazione del codice.
+- **Procedure guidate:** correzione dell'ordine dei parametri dei metodi MonoBehavior durante la generazione del codice.
 
-- **Interfaccia utente:** Supporto dei temi di Visual Studio per il menu di scelta rapida e le icone.
+- **Interfaccia utente:** supporto dei temi di Visual Studio per il menu di scelta rapida e le icone.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 (2.0 anteprima)
 Data di rilascio: 12 novembre 2014
@@ -1484,21 +1532,21 @@ Data di rilascio: 25 marzo 2013
 
 - Correzione del bug UVS-48 per cui la digitazione di virgolette doppie produceva talvolta un errore e interrompeva la funzione (completamento del codice, evidenziazione della sintassi e così via).
 
-- Correzione del bug UVS-46: File di script aperto duplicato (UnityScript) facendo clic sull'Elenco errori di Visual Studio.
+- Correzione del bug UVS-46 per cui veniva generato un file di script aperto duplicato (UnityScript) quando si faceva clic sull'elenco degli errori di Visual Studio.
 
-- Correzione del bug UVS-42: Il logo di connettività di Unity sulla barra di stato non gestiva gli eventi del mouse in Visual Studio 2012.
+- Correzione del bug UVS-42 per cui il logo di connettività di Unity sulla barra di stato non gestiva gli eventi del mouse in Visual Studio 2012.
 
-- Correzione del bug UVS-44: CTRL+MAIUSC+Q non è disponibile in Visual Studio 2012 per metodi MonoBehaviour rapidi.
+- Correzione del bug UVS-44 per cui CTRL+SHIFT+Q non era disponibile in Visual Studio 2012 per metodi MonoBehaviour rapidi.
 
-- Correzione del bug UVS-40: Gli elementi selezionati in Esplora progetti Unity non sono leggibili in caso di inattività della finestra nel tema scuro di Visual Studio 2012.
+- Correzione del bug UVS-40 per cui elementi selezionati in Esplora progetti Unity non erano leggibili in caso di inattività della finestra nel tema scuro di Visual Studio 2012.
 
-- Correzione del bug UVS-39: Problema di suddivisione in token di stringhe con caratteri di escape.
+- Correzione del bug UVS-39 per cui si verificava un problema di suddivisione in token di stringhe con caratteri di escape.
 
-- Correzione del bug UVS-35: Viene richiamato ToString negli oggetti durante il controllo delle variabili.
+- Correzione del bug UVS-35 per cui veniva richiamato ToString negli oggetti durante il controllo delle variabili.
 
-- Correzione del bug UVS-27: Incoerenza della finestra Vai al simbolo con il tema scuro in Visual Studio 2012.
+- Correzione del bug UVS-27 relativo all'incoerenza della finestra Vai al simbolo con il tema scuro in Visual Studio 2012.
 
-- Correzione del bug UVS-11: Variabili locali nelle coroutine.
+- Correzione del bug UVS-11 relativo alla presenza di variabili locali in coroutine.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - Versione beta
 Data di rilascio: 9 marzo 2013
@@ -1558,9 +1606,9 @@ Data di rilascio: 28 novembre 2012
 
 - Analisi del messaggio della console di informazioni, per cui facendo clic nell'elenco degli errori si viene indirizzati al primo stack frame con simboli.
 
-- Aggiunta di un' [API](../cross-platform/customize-project-files-created-by-vstu.md) per consentire all'utente di partecipare alla generazione del progetto.
+- Aggiunta un'[API](../cross-platform/customize-project-files-created-by-vstu.md) per consentire all'utente di partecipare alla generazione del progetto.
 
-- Aggiunta di un' [API](../cross-platform/share-the-unity-log-callback-with-vstu.md) per consentire all'utente di partecipare a LogCallback.
+- Aggiunta un'[API](../cross-platform/share-the-unity-log-callback-with-vstu.md) per consentire all'utente di partecipare a LogCallback.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1605,9 +1653,9 @@ Data di rilascio: 3 ottobre 2012
 
 - Correzione del modo in cui i tipi vengono cercati negli assembly caricati per la valutazione di espressioni.
 
-- Correzione del bug UVS-21: Valutazione dell'assegnazione su oggetti Unity senza effetto.
+- Correzione del bug UVS-21 per cui la valutazione dell'assegnazione in oggetti Unity non aveva effetto.
 
-- Correzione del bug UVS-21: Puntatore non valido durante la valutazione della chiamata di un metodo nell'API Math di Unity.
+- Correzione del bug UVS-21 che generava un puntatore non valido durante la valutazione della chiamata di un metodo nell'API Math di Unity.
 
 ## <a name="1080"></a>1.0.8.0
 
