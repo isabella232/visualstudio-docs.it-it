@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777913"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810121"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
@@ -198,7 +198,7 @@ Per altre informazioni, vedere la pagina [Eseguire il debug di app di Azure ASP.
 
 ### <a name="pinnable-properties-tool"></a>Strumento Proprietà aggiungibili
 
-**Novità della 16,4**: ora è più facile identificare gli oggetti in base alle relative proprietà durante il debug con il nuovo strumento Proprietà aggiungibili. È sufficiente passare il puntatore del mouse su una proprietà che si desidera visualizzare nella finestra del debugger delle finestre espressioni di controllo, auto e variabili locali, fare clic sull'icona Aggiungi e visualizzare immediatamente le informazioni che si stanno cercando nella parte superiore della finestra.
+**Novità in 16,4**: ora è più facile identificare gli oggetti in base alle relative proprietà durante il debug con il nuovo strumento Proprietà aggiungibili. È sufficiente passare il puntatore del mouse su una proprietà che si desidera visualizzare nella finestra del debugger delle finestre espressioni di controllo, auto e variabili locali, selezionare l'icona Aggiungi e visualizzare immediatamente le informazioni che si stanno cercando nella parte superiore della finestra.
 
    ![Un'animazione che Mostra come aggiungere proprietà nel debugger di Visual Studio usando lo strumento delle proprietà aggiungibili](media/vs-2019/debugger-pinnable-properties.gif)
 

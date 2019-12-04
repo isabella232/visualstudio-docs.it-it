@@ -6,33 +6,33 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a9dbd09c35c26b9670b9aceecabbfb3a57093f6e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 85f843143847b71332dcf64dbddb9c95dfd464a3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71210239"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74796022"
 ---
 ## <a name="test-agent"></a>Agente di test
 
 **ID:** Microsoft.VisualStudio.Workload.TestAgent
 
-**Descrizione:** Supporta l'esecuzione di test automatizzati e test di carico in remoto
+**Descrizione:** supporta l'esecuzione di test automatizzati e test di carico in remoto
 
 ### <a name="components-included-by-this-workload"></a>Componenti inclusi per questo carico di lavoro
 
-ID componente | nome | Versione | Tipo di dipendenza
+ID componente | Name | Versione | Tipo di dipendenza
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Funzionalità principali dell'agente di test | 16.0.28315.86 | Obbligatorio
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Funzionalità principali dell'agente di test | 16.0.28315.86 | Richiesto
 
 ## <a name="unaffiliated-components"></a>Componenti non affiliati
 
 Questi sono i componenti non inclusi in alcun carico di lavoro, che possono però essere selezionati come un singolo componente.
 
-ID componente | nome | Versione
+ID componente | Name | Versione
 --- | --- | ---
 N/D | N/D | N/D
