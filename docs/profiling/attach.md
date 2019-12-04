@@ -6,14 +6,15 @@ ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440300"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773739"
 ---
 # <a name="attach"></a>Attach
 L'opzione *Attach* di **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).
@@ -43,12 +44,12 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **GlobalOn GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
 
- **ProcessOn:** `PID` **ProcessOff:** `PID` Riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
+ ProcessOn **:** `PID` **ProcessOff:** `PID` riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
 
 ## <a name="interval-options"></a>Opzioni di intervallo
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di Attach. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] Specifica il numero e il tipo di intervallo di campionamento.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] Specifica il numero e il tipo di intervallo di campionamento.
 
 - **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 
@@ -56,7 +57,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
 - **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
 
-- **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei report del profiler.
+- **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei rapporti del profiler.
 
 ## <a name="example"></a>Esempio
  In questo esempio viene illustrato come connettersi a un'istanza di un'applicazione in esecuzione con ID processo 12345.

@@ -1,19 +1,20 @@
 ---
-title: "Riga di comando del profiler: Instrumentare un'app ASP.NET statica, ottenere dati di memoria"
+title: "Riga di comando del profiler: instrumentare un'app ASP.NET statica, ottenere dati di memoria"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d57dad9c23bf56f30155bc7cd4d848a368780f51
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 98fac9f01219cd398f1d5ec462e3f5165f4638d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032993"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775431"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di memoria tramite la riga di comando del profiler
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente Web o un sito Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato e raccogliere dati di allocazione di memoria, di durata degli oggetti e di intervallo dettagliati .NET.
@@ -39,7 +40,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **VSPerfClrEnv /globaltracegc**
 
-    -oppure-
+    oppure
 
     **VSPerfClrEnv /globaltracegclife**
 
@@ -47,11 +48,11 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
    - **/globaltracegclife** raccoglie i dati di allocazione della memoria, di durata degli oggetti e di intervallo dettagliati .NET.
 
-4. Riavviare il computer.
+4. Riavvia il computer.
 
 5. Aprire una finestra del prompt dei comandi.
 
-6. Avvia il profiler. Nella finestra del prompt dei comandi digitare:
+6. Avviare il profiler. Nella finestra del prompt dei comandi digitare:
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
@@ -64,7 +65,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    > [!NOTE]
    > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
-   | Opzione | DESCRIZIONE |
+   | Opzione | Descrizione |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio facoltativo e il nome utente dell'account proprietario del processo di lavoro ASP.NET. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il nome è elencato nella colonna **Nome utente** della scheda **Processi** di Gestione attività di Windows. |
    | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna ID sessione della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -82,7 +83,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|DESCRIZIONE|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
@@ -103,11 +104,11 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **VSPerfCmd /shutdown**
 
-4. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
+4. (Facoltativo). Cancellare le variabili di ambiente di profilatura. Tipo:
 
     **VSPerfCmd /globaloff**
 
-5. Riavviare il computer. Se necessario, riavviare IIS. Tipo:
+5. Riavvia il computer. Se necessario, riavviare IIS. Tipo:
 
     **IISReset /start**
 

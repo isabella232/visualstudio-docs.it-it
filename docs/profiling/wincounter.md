@@ -6,14 +6,15 @@ ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e93cc526ad61916e2a8663caa9652842ce136c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960194"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779844"
 ---
 # <a name="wincounter"></a>WinCounter
 L'opzione **WinCounter** specifica un contatore delle prestazioni di Windows o di un'applicazione per la raccolta di dati a intervalli prestabiliti durante l'esecuzione della profilatura. I contatori delle prestazioni di Windows e dell'applicazione sono elencati come contrassegni nel file di dati di profilatura. È possibile specificare più contatori delle prestazioni da raccogliere in opzioni separate.
@@ -36,12 +37,12 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **WinCounter** può essere usata solo con l'opzione **Start**.
 
- **Start:** `Method` L'opzione **Start** inizializza il profiler sul metodo di profilatura specificato.
+ **Start:** `Method` l'opzione **Start** Inizializza il profiler sul metodo di profilatura specificato.
 
 ## <a name="exclusive-options"></a>Opzioni esclusive
  L'opzione **AutoMark** può essere usata solo con l'opzione **WinCounter**.
 
- **AutoMark:** `Milliseconds` Specifica il numero di millisecondi tra le raccolte di dati dei contatori delle prestazioni di Windows.
+ **AutoMark:** `Milliseconds` specifica il numero di millisecondi tra la raccolta dei dati del contatore delle prestazioni di Windows.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente viene impostata la raccolta dei dati di due contatori delle prestazioni di Windows a intervalli di 1000 millisecondi.

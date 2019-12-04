@@ -7,16 +7,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980915"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778817"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limitare la strumentazione a specifiche DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limitare la strumentazione a DLL specifiche
 
 Usando il metodo di profilatura della strumentazione, è possibile limitare la raccolta dei dati di profilatura a una o più DLL di un'applicazione. Per eseguire la profilatura di una o più DLL di un'applicazione, creare una sessione di prestazioni che includa i file con estensione *dll* come destinazioni. È possibile specificare le DLL da profilare come progetti in una soluzione di Visual Studio o come file binari indipendenti.
 
@@ -36,13 +37,13 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
 7. Dall'elenco **Aggiungi progetto di destinazione** selezionare il progetto eseguibile da usare per verificare la DLL.
 
-     Facoltativo. È possibile aggiungere qualsiasi progetto DLL che si vuole profilare.
+     Parametro facoltativo. È possibile aggiungere qualsiasi progetto DLL che si vuole profilare.
 
 8. Per impedire la raccolta di dati per un progetto aggiunto, fare clic con il pulsante destro del mouse sul nome del progetto e quindi deselezionare la casella di controllo **Strumento**.
 
 ## <a name="to-specify-specific-dlls-to-profile-as-independent-binaries"></a>Per specificare determinate DLL da profilare come file binari indipendenti
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 2. Nel menu **Analizza** selezionare **Avvia Creazione guidata sessione di prestazioni**.
 
@@ -54,7 +55,7 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
     - Digitare il percorso e il nome del file eseguibile con estensione *exe* che verrà usato per verificare la funzionalità del file con estensione *dll* in **Percorso eseguibile**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Eseguibile da avviare**.
 
-    - Facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.
+    - Parametro facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.
 
     - Scegliere **Avanti**.
 
@@ -62,12 +63,12 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
 6. Fare clic su **Fine** per chiudere la procedura guidata e visualizzare la nuova sessione di prestazioni nella finestra **Esplora prestazioni**.
 
-7. Facoltativo. Per aggiungere altri file con estensione *dll*, fare clic con il pulsante destro del mouse su **Destinazioni** e selezionare **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.
+7. Parametro facoltativo. Per aggiungere altri file con estensione *dll*, fare clic con il pulsante destro del mouse su **Destinazioni** e selezionare **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.
 
     > [!NOTE]
     > Non specificare il file eseguibile con estensione *exe* che verifica la funzionalità delle DLL.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Controllare la raccolta dati](../profiling/controlling-data-collection.md)
-[Procedura: Limitare la strumentazione a funzioni specifiche](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Controllare la raccolta dei dati](../profiling/controlling-data-collection.md)
+[procedura: limitare la strumentazione a funzioni specifiche](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

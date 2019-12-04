@@ -11,14 +11,15 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fcc468d3820e34db24edbbf311cbae17bda0732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936707"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777725"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004: Utilizzo elevato del processore
 
@@ -27,8 +28,8 @@ ms.locfileid: "62936707"
 |ID regola|DA0004|
 |Category|Uso degli strumenti di profilatura|
 |Metodi di profilatura|Strumentazione<br /><br /> Campionamento|
-|Messaggio|L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di utilizzare la modalità di campionamento per le applicazioni basate sulla CPU.|
-|Tipo regola|Informazioni|
+|Message|L'utilizzo del processore è costantemente superiore al 75%. Si consiglia di utilizzare la modalità di campionamento per le applicazioni basate sulla CPU.|
+|Tipo regola|Informazioni su|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.
 

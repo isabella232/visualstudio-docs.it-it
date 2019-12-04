@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad67acae549f67e16b34eb352cdebe5937c8de4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794240"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778479"
 ---
 # <a name="performance-explorer"></a>Esplora prestazioni
 
@@ -34,15 +35,15 @@ Per ulteriori informazioni sugli argomenti correnti e avanzati relativi alle pre
 |Attività|Contenuto correlato|
 |----------|---------------------|
 |**Tecniche per Windows 8 e versioni successive**|[Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|
-|**Comprendere i concetti di profilatura:** apprendere i concetti e i termini che verranno usati per raccogliere, visualizzare e analizzare le prestazioni del codice tramite gli strumenti di profilatura.|[Panoramiche](../profiling/overviews-performance-tools.md)|
-|**Accesso rapido e procedure:** apprendere le procedure di base che verranno usate quando si raccolgono, visualizzano e analizzano le prestazioni del codice tramite gli strumenti di profilatura. Provare con procedure dettagliate pratiche.|[Introduzione](../profiling/getting-started-with-performance-tools.md)|
-|**Configurare una sessione di profilatura:** apprendere metodi avanzati per specificare i progetti o i file binari di cui eseguire la profilatura, selezionare un metodo di profilatura, scegliere i dati sulle prestazioni da raccogliere e impostare altre opzioni della sessione di profilatura.|[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)|
-|**Controllare i dati raccolti dal profiler:** imparare a usare le proprietà delle sessioni di prestazioni e le procedure interattive per avviare e interrompere la profilatura e apprendere come limitare alle sole informazioni desiderate i dati sulle prestazioni raccolti.|[Controllare la raccolta dati](../profiling/controlling-data-collection.md)|
-|**Individuare problemi di prestazioni:**: apprendere come visualizzare e analizzare i dati sulle prestazioni raccolti nella finestra di visualizzazione del report Strumenti di profilatura.|[Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)|
-|**Analizzare le variazioni delle prestazioni:**: imparare a confrontare due file di dati del profiler per analizzare le variazioni delle prestazioni.|[Confrontare i file di dati delle prestazioni](../profiling/comparing-performance-data-files.md)|
+|**Comprendere i concetti di profilatura:** apprendere i concetti e termini che verranno usati per raccogliere, visualizzare e analizzare le prestazioni del codice tramite gli strumenti di profilatura.|[Panoramiche](../profiling/overviews-performance-tools.md)|
+|**Accesso rapido e procedure:** imparare le procedure di base che verranno usate quando si raccolgono, visualizzano e analizzano le prestazioni del codice tramite gli strumenti di profilatura. Provare con procedure dettagliate pratiche.|[Introduzione](../profiling/getting-started-with-performance-tools.md)|
+|**Configurare una sessione di profilatura:** apprendere metodi avanzati per specificare i progetti o i file binari per il profilo, selezionare un metodo di profilatura, scegliere i dati sulle prestazioni da raccogliere e impostare altre opzioni delle sessioni di profilatura.|[Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)|
+|**Controllare i dati raccolti dal profiler:** imparare a usare le proprietà delle sessioni di prestazioni e le procedure interattive per avviare e interrompere la profilatura e a limitare i dati sulle prestazioni raccolti alle sole informazioni desiderate.|[Controllare la raccolta dati](../profiling/controlling-data-collection.md)|
+|**Individuare problemi di prestazioni:** apprendere come visualizzare e analizzare i dati sulle prestazioni raccolti nella finestra di visualizzazione dei rapporti degli strumenti di profilatura.|[Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)|
+|**Analizzare le variazioni delle prestazioni:** imparare a confrontare due file di dati del profiler per analizzare le variazioni delle prestazioni.|[Confrontare i file di dati delle prestazioni](../profiling/comparing-performance-data-files.md)|
 |**Salvare e condividere i risultati:** apprendere come salvare i dati di profilatura per l'archiviazione o la condivisione.|[Salvare ed esportare i dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md)|
-|**Automatizzare la profilatura:** imparare a usare gli strumenti di profilatura al prompt dei comandi.|[Profilare dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)|
-|**Controllare la profilatura a livello di codice:** apprendere come usare le API degli strumenti di profilatura native e gestite per controllare la raccolta di dati direttamente dal codice sorgente.|[API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)|
+|**Automatizzare la profilatura:** imparare a usare gli strumenti di profilatura dalla riga di comando.|[Profilare dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)|
+|**Controllare la profilatura a livello di programmazione:** apprendere come usare le API degli strumenti di profilatura native e gestite per controllare la raccolta di dati direttamente dal codice sorgente.|[API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)|
 |**Risoluzione dei problemi di profilatura**|[Risolvere i problemi relativi agli strumenti per le prestazioni](../profiling/troubleshooting-performance-tools-issues.md)|
 
 ## <a name="see-also"></a>Vedere anche

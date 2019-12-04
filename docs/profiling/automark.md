@@ -6,14 +6,15 @@ ms.assetid: c4de965e-0364-4f78-9936-1f509e85df74
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2bbd33308ddf14f14746db7f5c2c4ada6826b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 072f80508f81a7b42ad481048f604cbd4c54af88
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776985"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779792"
 ---
 # <a name="automark"></a>AutoMark
 L'opzione **AutoMark** specifica il numero di millisecondi tra diverse raccolte di eventi del contatore delle prestazioni del software Windows. I contatori delle prestazioni di Windows sono specificati nell'opzione **WinCounter**.
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds
  `Milliseconds` Specifica il numero di millisecondi tra le raccolte di eventi dei contatori delle prestazioni di Windows.
 
 ## <a name="required-options"></a>Opzioni obbligatorie
- **WinCounter:** `Path` Specifica il contatore delle prestazioni di Windows da raccogliere. Quando si usa il metodo di strumentazione è possibile specificare più contatori di Windows. Quando si usa il metodo di campionamento è possibile specificare solo un contatore del software. L'opzione **WinCounter** deve essere specificata in una riga di comando che contiene l'opzione **Start**.
+ **WinCounter:** `Path` specifica il contatore delle prestazioni di Windows da raccogliere. Quando si usa il metodo di strumentazione è possibile specificare più contatori di Windows. Quando si usa il metodo di campionamento è possibile specificare solo un contatore del software. L'opzione **WinCounter** deve essere specificata in una riga di comando che contiene l'opzione **Start**.
 
 ## <a name="example"></a>Esempio
  In questo esempio viene impostato un intervallo di campionamento di 1000 millisecondi per due contatori delle prestazioni di Windows.

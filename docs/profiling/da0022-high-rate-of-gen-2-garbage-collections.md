@@ -10,14 +10,15 @@ ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ba70e303c3164417890be51e834d86d8983526cf
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 4e1fa46162f2aea74c5b3cb8396ad5e8d4c9a4cf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910530"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779376"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Frequenza elevata di Garbage Collection di generazione 2
 
@@ -25,8 +26,8 @@ ms.locfileid: "72910530"
 |-|-|
 |ID regola|DA0022|
 |Category|Uso di .NET Framework|
-|Metodo di profilatura|All|
-|Messaggio|È stata rilevata una frequenza elevata di Garbage Collection di generazione 2. In genere, ciò avviene se la maggior parte delle strutture dati del programma sono allocate e rese persistenti per molto tempo per progettazione. Tuttavia, se tale comportamento è imprevisto, l'applicazione potrebbe bloccare gli oggetti. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|
+|Metodo di profilatura|Tutte le|
+|Message|È stata rilevata una frequenza elevata di Garbage Collection di generazione 2. In genere, ciò avviene se la maggior parte delle strutture dati del programma sono allocate e rese persistenti per molto tempo per progettazione. Tuttavia, se tale comportamento è imprevisto, l'applicazione potrebbe bloccare gli oggetti. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|
 |Tipo regola|Avviso|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.

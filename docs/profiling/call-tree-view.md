@@ -13,16 +13,17 @@ ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c28ef62629011b222ae1a846c04cbf4cdff17d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440251"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773335"
 ---
-# <a name="call-tree-view"></a>Visualizzazione albero delle chiamate
+# <a name="call-tree-view"></a>Visualizzazione Albero delle chiamate
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle chiamate di funzione.
 
  Nella visualizzazione Albero delle chiamate è anche possibile espandere ed evidenziare il percorso di esecuzione di una funzione che ha richiesto più tempo o che è stata campionata con maggiore frequenza. Per visualizzare il percorso più oneroso a livello di prestazioni, fare clic con il pulsante destro del mouse sulla funzione e scegliere **Espandi percorso critico**.

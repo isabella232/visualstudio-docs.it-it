@@ -11,14 +11,15 @@ ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f0071e98c9e36f3af11d318f480b4b9c6ec4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822820"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778024"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Riferimenti per le API del profiler di Visual Studio (native)
 Le API del profiler di Visual Studio consentono di controllare a livello di codice la quantità di dati raccolti e di inserire contrassegni sia per il timestamp che per il profilo durante la profilatura. Per usare le API native, è necessario includere il file di intestazione *VSPerf.h* e aggiungere il file *VSPerf.lib* nel progetto.
@@ -26,7 +27,7 @@ Le API del profiler di Visual Studio consentono di controllare a livello di codi
 > [!NOTE]
 > Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
 
 [CommentMarkProfile](../profiling/commentmarkprofile.md)
@@ -48,4 +49,4 @@ Le API del profiler di Visual Studio consentono di controllare a livello di codi
 ## <a name="see-also"></a>Vedere anche
 
 - [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)
-- [Procedura dettagliata: uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)
+- [Procedura dettagliata: Uso delle API del profiler](../profiling/walkthrough-using-profiler-apis.md)

@@ -13,14 +13,15 @@ ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: c6a5a0eb84e4f06fd1b4dd248a1bce952b2c7197
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128222"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779805"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.
@@ -32,7 +33,7 @@ ms.locfileid: "71128222"
 
  A intervalli specificati, il metodo di **campionamento** raccoglie informazioni sulle funzioni in esecuzione nell'applicazione. Al termine di una profilatura, nella visualizzazione **Riepilogo** dei dati di profilatura appare l'albero delle chiamate delle funzioni più attive, detto **Percorso critico**, in cui è stata eseguita la maggior parte delle operazioni nell'applicazione. Inoltre, la visualizzazione sono elencate le funzioni che eseguivano più lavoro individuale e fornisce un grafico della sequenza temporale che è possibile utilizzare per concentrarsi su segmenti specifici della sessione di campionamento.
 
- Se dal **campionamento** non si ottengono i dati necessari, altri metodi di raccolta degli strumenti di profilatura offrono tipi diversi di informazioni che potrebbero essere utili. Per altre informazioni su questi metodi, vedere [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md).
+ Se dal **campionamento** non si ottengono i dati necessari, altri metodi di raccolta degli strumenti di profilatura offrono tipi diversi di informazioni che potrebbero essere utili. Per altre informazioni sugli altri metodi, vedere [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md).
 
 > [!TIP]
 > Se si analizza il codice che chiama le funzioni di Windows, assicurarsi di avere i file con estensione *pdb* più aggiornati. Senza questi file, le visualizzazioni dei rapporti elencherà i nomi delle funzioni di Windows enigmatici e difficile da comprendere. Per altre informazioni su come verificare la disponibilità dei file necessari, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md).
@@ -63,16 +64,16 @@ ms.locfileid: "71128222"
 
      Eseguita l'applicazione, la visualizzazione **Riepilogo** relativa ai dati di profilatura appare nella finestra principale di Visual Studio e viene visualizzata un'icona per la nuova sessione nella finestra **Esplora prestazioni**.
 
-## <a name="step-2-analyze-sampling-data"></a>Passaggio 2: analizzare i dati di campionamento
+## <a name="step-2-analyze-sampling-data"></a>Passaggio 2: Analizzare i dati di campionamento
  Al termine dell'esecuzione di una sessione di prestazioni, la visualizzazione **Riepilogo** del rapporto sulla profilatura appare nella finestra principale di Visual Studio.
 
  È consigliabile iniziare ad analizzare i dati esaminando il **Percorso critico**, quindi l'elenco delle funzioni che svolgono la maggior parte del lavoro e infine concentrandosi sulle altre funzioni usando la **sequenza temporale di riepilogo**. È anche possibile visualizzare suggerimenti e avvisi relativi alla profilatura nella finestra **Elenco errori**.
 
- Tenere presente che il metodo di campionamento potrebbe non fornire le informazioni necessarie. Ad esempio, esempi vengono raccolti solo quando l'applicazione esegue codice in modalità utente. Di conseguenza, alcune funzionalità, come le operazioni di input e output, non vengono acquisite dal campionamento. Gli strumenti di profilatura fornisce diversi metodi di raccolta che consentono di concentrarsi sui dati importanti. Per altre informazioni su questi metodi, vedere [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md).
+ Tenere presente che il metodo di campionamento potrebbe non fornire le informazioni necessarie. Ad esempio, esempi vengono raccolti solo quando l'applicazione esegue codice in modalità utente. Di conseguenza, alcune funzionalità, come le operazioni di input e output, non vengono acquisite dal campionamento. Gli strumenti di profilatura fornisce diversi metodi di raccolta che consentono di concentrarsi sui dati importanti. Per altre informazioni sugli altri metodi, vedere [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md).
 
  Ogni area numerata nella figura si riferisce a un passaggio della procedura.
 
- ![Visualizzazione del rapporto di riepilogo per il campionamento](../profiling/media/summary_sampling.png "Summary_Sampling")
+ ![Visualizzazione report di riepilogo per il campionamento](../profiling/media/summary_sampling.png "Summary_Sampling")
 
 #### <a name="to-analyze-sampling-data"></a>Analizzare i dati di campionamento
 
@@ -94,7 +95,7 @@ ms.locfileid: "71128222"
 
 3. Per continuare l'analisi, tornare alla visualizzazione **Riepilogo** selezionando **Riepilogo** dall'elenco a discesa **Visualizza**. Esaminare quindi le funzioni in **Funzioni che svolgono più lavoro individuale**. Questo elenco vengono visualizzate le funzioni con i campioni esclusivi più alti. Il codice nel corpo della funzione di queste funzioni eseguite molto lavoro e potrebbe essere possibile ottimizzarlo. Per analizzare ulteriormente una particolare funzione, fare clic sul nome della funzione per visualizzarlo in **Dettagli funzione**.
 
-     ![Elenco di funzioni che svolgono la maggior parte del lavoro](../profiling/media/functions_mostwork.png "Functions_MostWork")
+     ![Elenco di funzioni che funzionano maggiormente](../profiling/media/functions_mostwork.png "Functions_MostWork")
 
      Per continuare l'analisi dell'esecuzione della profilatura, è possibile analizzare di nuovo un segmento di dati di profilatura usando la sequenza temporale nella visualizzazione **Riepilogo** per vedere il **Percorso critico** e le **Funzioni che svolgono più lavoro individuale** da un segmento selezionato. Ad esempio, con particolare attenzione ad un picco più piccolo nella sequenza temporale potrebbe rivelare costosi alberi delle chiamate e funzioni che non sono stati visualizzati durante l'analisi dell'intera esecuzione della profilatura.
 
@@ -108,7 +109,7 @@ ms.locfileid: "71128222"
 
     - Per visualizzare informazioni dettagliate sull'avviso, fare clic sull'errore con il pulsante destro del mouse e quindi scegliere **Mostra guida errore**
 
-## <a name="step-3-revise-code-and-rerun-a-session"></a>Passaggio 3: rivedere il codice ed eseguire nuovamente una sessione
+## <a name="step-3-revise-code-and-rerun-a-session"></a>Passaggio 3: Rivedere codice ed eseguire nuovamente una sessione
  Dopo aver individuato e ottimizzare una o più funzioni, è possibile ripetere l'esecuzione della profilatura e confrontare i dati per visualizzare la differenza che le modifiche apportate alle prestazioni dell'applicazione.
 
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Per modificare il codice e rieseguire il profiler
@@ -121,7 +122,7 @@ ms.locfileid: "71128222"
 
 4. Dopo che la sessione è stata rieseguita, viene aggiunto un altro file di dati alla cartella *Report* per la sessione in **Esplora prestazioni**. Selezionare i dati di profilatura, sia nuovi che originali, fare clic con il pulsante destro del mouse sulla selezione e quindi fare clic su **Confronta rapporto di prestazioni**.
 
-     Verrà visualizzata una nuova finestra del report, visualizzare i risultati del confronto. Per altre informazioni su come usare la visualizzazione di confronto, vedere [Procedura: Confrontare i file di dati delle prestazioni](../profiling/how-to-compare-performance-data-files.md).
+     Verrà visualizzata una nuova finestra del report, visualizzare i risultati del confronto. Per altre informazioni sull'uso della visualizzazione di confronto, vedere [Procedura: Confrontare i file di dati delle prestazioni](../profiling/how-to-compare-performance-data-files.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Esplora prestazioni](../profiling/performance-explorer.md)

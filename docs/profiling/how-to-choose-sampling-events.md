@@ -16,14 +16,15 @@ ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dac636beeab5188c7958232d46cf3fe4a4b5f32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82462ae5052150da7761dfcd855e5339e1b7d821
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439496"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779051"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedura: Scegliere eventi di campionamento
 Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raccolgono dati relativi alle prestazioni a un intervallo specificato come numero di cicli del processore usati dal processo profilato. Il numero predefinito di cicli in un intervallo è 10.000.000, pari a circa 0,01 secondi in un computer da 1 GHz. È possibile modificare il numero di cicli in un intervallo, nonché l'evento di campionamento. Sono disponibili gli eventi di campionamento seguenti:
@@ -60,7 +61,7 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 
 ## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
-- [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
+- [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)
 - [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)
 - [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)
 - [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

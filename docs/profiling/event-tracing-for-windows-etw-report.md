@@ -9,14 +9,15 @@ ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d13a3db996537005c0d4ec67b85c185ac2841cc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447243"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779298"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Report Traccia eventi per Windows (ETW)
 Il report Traccia eventi per Windows (ETW) indica gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario con estensione *etl*.
@@ -30,7 +31,7 @@ Il report Traccia eventi per Windows (ETW) indica gli eventi ETW registrati in u
 
 - Per generare il report ETW, usare il comando **VSReport/Summary:ETW**. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Timestamp**|Identifica il momento in cui si è verificato l'evento.|
 |**ID processo**|Identifica il processo che ha generato l'evento.|

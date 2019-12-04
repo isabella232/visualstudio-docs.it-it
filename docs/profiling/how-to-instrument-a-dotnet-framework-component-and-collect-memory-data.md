@@ -1,19 +1,20 @@
 ---
-title: 'Riga di comando del profiler: Instrumentare un componente client .NET, ottenere dati di memoria'
+title: 'Riga di comando del profiler: componente .NET del client Instrument, ottenere i dati di memoria'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33056deb51d11769d6d172ea7404e3e417f552e4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 76d216c4f112f88001b0314a23f22e689f729106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032921"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775901"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Procedura: Instrumentare un componente autonomo .NET Framework e raccogliere dati di memoria con il profiler tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente .NET Framework di un'applicazione autonoma, ad esempio un file con estensione exe o dll, e raccogliere informazioni sulla memoria tramite il profiler.
@@ -31,7 +32,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Per connettere il profiler a un'applicazione .NET Framework in esecuzione
 
-1. Aprire una finestra del prompt dei comandi.
+1. Apri una finestra del prompt dei comandi.
 
 2. Usare lo strumento **VSInstr** per generare una versione instrumentata dell'applicazione di destinazione.
 
@@ -41,12 +42,12 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
    - Le opzioni **/tracegc** e **/tracegclife** consentono di inizializzare le variabili di ambiente per raccogliere unicamente i dati sull'allocazione della memoria oppure i dati sull'allocazione della memoria e sulla durata degli oggetti.
 
-       |Opzione|DESCRIZIONE|
+       |Opzione|Descrizione|
        |------------|-----------------|
        |**/tracegc**|Abilita solo la raccolta dei dati sull'allocazione della memoria.|
        |**/tracegclife**|Abilita la raccolta dei dati relativi sia all'allocazione della memoria che alla durata degli oggetti.|
 
-4. Avvia il profiler. Tipo:
+4. Avviare il profiler. Tipo:
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
@@ -56,14 +57,14 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
-   | Opzione | DESCRIZIONE |
+   | Opzione | Descrizione |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è indicato nella colonna Nome utente nella scheda **Processi** di Gestione attività di Windows. |
    | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Per avviare il profiler con la raccolta dei dati in pausa, aggiungere l'opzione **/globaloff** alla riga di comando **/start**. Usare **/globalon** per riprendere la profilatura. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
-   | [/counter](../profiling/counter.md) **:** `Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in Config. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
+   | [/counter](../profiling/counter.md) **:** `Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in config. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
    | [events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
 
 5. Avviare l'applicazione di destinazione nella finestra del prompt dei comandi.
@@ -75,7 +76,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 - Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|DESCRIZIONE|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/globalon](../profiling/globalon-and-globaloff.md) [/globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|

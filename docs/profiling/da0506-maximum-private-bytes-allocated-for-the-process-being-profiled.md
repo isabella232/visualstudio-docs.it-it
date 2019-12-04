@@ -10,14 +10,15 @@ ms.assetid: e9c43554-9a85-4d98-9fa4-3b19986e7b62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a94ddcc7c6c3ee176b6c873a40af834d0f264ef
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 7600e65beb3035fac6d5ea58b25f6965d681f83a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911926"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779311"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Byte privati massimi allocati per il processo sottoposto a profilatura
 
@@ -25,9 +26,9 @@ ms.locfileid: "72911926"
 |-|-|
 |ID regola|DA0506|
 |Category|Monitoraggio risorse|
-|Metodo di profilatura|All|
-|Messaggio|Dati raccolti a solo scopo informativo. Il contatore di byte privati di processo misura la memoria virtuale allocata dal processo sottoposto a profilatura che non può essere condivisa con altri processi. Il valore restituito corrisponde al valore massimo osservato per tutti gli intervalli di misurazione.|
-|Tipo regola|Informazioni|
+|Metodo di profilatura|Tutte le|
+|Message|Dati raccolti a solo scopo informativo. Il contatore di byte privati di processo misura la memoria virtuale allocata dal processo sottoposto a profilatura che non può essere condivisa con altri processi. Il valore restituito corrisponde al valore massimo osservato per tutti gli intervalli di misurazione.|
+|Tipo regola|Informazioni su|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.
 

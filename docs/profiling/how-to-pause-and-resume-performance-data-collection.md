@@ -8,16 +8,17 @@ ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 281631332692d249ea30e747fa4a0fd69ca110f4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825675"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778791"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dati sulle prestazioni
 Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.
 
  Il controllo della raccolta dei dati consente di ridurre la dimensione del file di dati del profilo e di raccogliere solo i dati per le operazioni a cui si è interessati. È possibile sospendere e riprendere la profilatura più volte in una sessione di prestazioni.
@@ -39,4 +40,4 @@ Dalla finestra pagina della sessione di profilatura è possibile controllare int
 
 ## <a name="see-also"></a>Vedere anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)
-- [Procedura: Iniziare e terminare la raccolta dei dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Procedura: Iniziare e terminare la raccolta dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)

@@ -9,19 +9,20 @@ ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a866ba73669caba0c8d96647a134123f4ae753
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970044"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779272"
 ---
 # <a name="net-memory-data-views"></a>Visualizzazioni dei dati di memoria .NET
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler che contengono dati di profilatura della memoria .NET.
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 - [Visualizzazione Riepilogo](../profiling/summary-view-dotnet-memory-data.md)
 
  Elenca le funzioni e i tipi che hanno allocato molta memoria.
@@ -50,11 +51,11 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i dati sull'allocazione di memoria per le funzioni nella profilatura.
 
-- [Visualizzazione Righe: campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Righe - Campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
 
  Elenca i dati sull'allocazione di memoria per le righe del codice sorgente di funzioni nella profilatura.
 
-- [Visualizzazione Puntatori all'istruzione: campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Visualizzazione Puntatore all'istruzione - Campionamento](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 
  Elenca i dati sull'allocazione di memoria per le istruzioni di funzioni nella profilatura.
 
@@ -74,7 +75,7 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i dati sull'allocazione di memoria per le funzioni instrumentate nella profilatura.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)
 
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
@@ -90,7 +91,7 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 ## <a name="related-sections"></a>Sezioni correlate
 - [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)
 
- Informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler generati tramite il metodo di campionamento.
+ Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di campionamento.
 
 - [Instrumentation Method Data Views](../profiling/instrumentation-method-data-views.md) (Visualizzazioni dei dati del metodo di strumentazione)
 

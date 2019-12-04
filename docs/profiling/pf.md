@@ -6,14 +6,15 @@ ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431996"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778414"
 ---
 # <a name="pf"></a>PF
 L'opzione *PF* di **VSPerfCmd.exe** imposta l'evento di profilatura campionato sugli errori di pagina e modifica facoltativamente il numero di errori di pagina in un intervallo di campionamento dal valore predefinito di 10.
@@ -39,20 +40,20 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **PF** può essere specificata solo in una riga di comando che include una delle opzioni seguenti.
 
- **Launch:** `AppName` Avvia il profiler e l'applicazione specificata da AppName.
+ **Launch:** `AppName` avvia il profiler e l'applicazione specificata da AppName.
 
- **Attach:** `PID` Collega il profiler al processo specificato da AppName.
+ **Connetti:** `PID` connette il profiler al processo specificato da AppName.
 
 ## <a name="invalid-options"></a>Opzioni non valide
  Le opzioni seguenti non possono essere specificate nella stessa riga di comando che include **PF**.
 
- **Timer**[**:**`Cycles`] Imposta l'evento di campionamento sui cicli di clock del processore e, facoltativamente, imposta l'intervallo di campionamento su `Cycles`. L'intervallo Timer predefinito è 10.000.000.
+ **Timer**[ **:** `Cycles`] Imposta l'evento di campionamento sui cicli di clock del processore e, facoltativamente, imposta l'intervallo di campionamento su `Cycles`. L'intervallo Timer predefinito è 10.000.000.
 
- **Sys**[**:**`Events`] Imposta l'evento di campionamento per le chiamate dall'applicazione profilata al kernel del sistema operativo (syscall) e imposta facoltativamente l'intervallo di campionamento su `Events`. L'intervallo Sys predefinito è 10.
+ **Sys**[ **:** `Events`] Imposta l'evento di campionamento per le chiamate dall'applicazione profilata al kernel del sistema operativo (syscall) e imposta facoltativamente l'intervallo di campionamento su `Events`. L'intervallo Sys predefinito è 10.
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] Imposta l'evento di campionamento sul contatore delle prestazioni della CPU specificato da `Name` e imposta l'intervallo di campionamento su `Reload`.
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] Raccoglie dati di memoria .NET. Per impostazione predefinita, (**Allocation**), i dati vengono raccolti in corrispondenza di ogni evento di allocazione di memoria. Quando si specifica il parametro **Lifetime**, i dati vengono raccolti anche in corrispondenza di ogni evento di Garbage Collection.
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}] Raccoglie dati di memoria .NET. Per impostazione predefinita, (**Allocation**), i dati vengono raccolti in corrispondenza di ogni evento di allocazione di memoria. Quando si specifica il parametro **Lifetime**, i dati vengono raccolti anche in corrispondenza di ogni evento di Garbage Collection.
 
 ## <a name="example"></a>Esempio
  Questo esempio illustra come impostare l'evento di campionamento di profilatura per gli errori di pagina e imposta l'intervallo di campionamento su 20 errori di pagina.

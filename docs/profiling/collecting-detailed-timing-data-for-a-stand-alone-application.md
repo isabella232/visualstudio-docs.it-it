@@ -1,5 +1,5 @@
 ---
-title: "Riga di comando del profiler: dati di intervallo dettagliati per un'app autonoma"
+title: "Riga di comando del profiler: dettagli dei dati di temporizzazione per un'app autonoma"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: a0c0fae312b5c193774d9acf8934a0688b2ed69e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779610"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per un'applicazione autonoma tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i componenti client autonomi tramite il metodo di strumentazione dalla riga di comando.
@@ -49,5 +50,5 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettag
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di strumentazione
 - [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)

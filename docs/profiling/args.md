@@ -6,14 +6,15 @@ ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 036b13a7fea5d64e23e2b7d5ccbd8a7b17f91176
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777050"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779818"
 ---
 # <a name="args"></a>Args
 L'opzione **Args** di VSPerfCmd.exe specifica un elenco di argomenti passati all'applicazione di destinazione del sottocomando **Launch**.
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  `Arguments` Elenco di argomenti per l'applicazione di destinazione del comando **Launch**.
 
 ## <a name="required-options"></a>Opzioni obbligatorie
- **Launch:** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+ **Launch:** `AppName` avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente usa l'opzione **Args** per passare gli argomenti a TestApp.exe.

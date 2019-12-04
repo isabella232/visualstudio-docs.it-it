@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web | Microsoft Docs'
+title: 'Procedura: Profilare codice JavaScript nelle pagine Web | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 07c628b3c1f0be1c7ecc615dcae44f7736aa884e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539365"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775306"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Procedura: Eseguire la profilatura di codice JavaScript nelle pagine Web
 
@@ -53,7 +54,7 @@ Quando si specifica la profilatura JavaScript, questa viene applicata sia al cod
 
 ### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Per eseguire la profilatura del codice JavaScript in singole pagine Web o in applicazioni JavaScript
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 2. Nel menu **Analizza** fare clic su **Avvia Creazione guidata sessione di prestazioni**.
 

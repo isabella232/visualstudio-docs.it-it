@@ -1,19 +1,20 @@
 ---
-title: 'Riga di comando del profiler: Instrumentare un componente nativo, ottenere dati di intervallo'
+title: 'Riga di comando del profiler: instrumentare un componente nativo, ottenere dati di intervallo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605bd9e6e28f7c62ecc7a0f4a363fbbc25b58f1b
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: fc7bb0a5e853edee4ff28cded94a5d576a13b596
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031958"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775444"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente nativo, ad esempio un file C++ con estensione *exe* o *dll*, e raccogliere dati di intervallo dettagliati.
@@ -29,11 +30,11 @@ Per raccogliere dati di intervallo dettagliati da un componente usando il metodo
 
 #### <a name="to-start-profiling-by-using-the-instrumentation-method"></a>Per avviare la profilatura tramite il metodo di strumentazione
 
-1. Aprire una finestra del prompt dei comandi.
+1. Apri una finestra del prompt dei comandi.
 
 2. Usare lo strumento **VSInstr** per generare una versione instrumentata dell'applicazione di destinazione.
 
-3. Avvia il profiler. Tipo:
+3. Avviare il profiler. Tipo:
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
@@ -43,7 +44,7 @@ Per raccogliere dati di intervallo dettagliati da un componente usando il metodo
 
      È possibile usare una o più delle opzioni seguenti con l'opzione **/start:trace**.
 
-   | Opzione | DESCRIZIONE |
+   | Opzione | Descrizione |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
    | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna **ID sessione** della scheda Processi di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -62,7 +63,7 @@ Per raccogliere dati di intervallo dettagliati da un componente usando il metodo
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|DESCRIZIONE|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|

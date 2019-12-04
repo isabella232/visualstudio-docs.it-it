@@ -1,21 +1,22 @@
 ---
-title: 'File web.config: Instrumentare e profilare app Web ASP.NET compilate dinamicamente'
+title: "File Web. config: Instrument & profilatura dinamica dell'app Web ASP.NET compilata"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e1e0f6377da52a0f1b26a6f50db44efc9a847f30
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032943"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775403"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: Modificare file web.config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 È possibile usare il metodo di strumentazione degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati di intervallo dettagliati, dati relativi all'allocazione di memoria .NET e dati di durata degli oggetti .NET da applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico.
 
  Questo argomento descrive come modificare il file di configurazione *web.config* per abilitare la strumentazione e la profilatura delle applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
@@ -139,7 +140,7 @@ ms.locfileid: "67032943"
    | Nome attributo | Valore attributo |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
-   | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
+   | **valore** | `PerformanceToolsFolder` **\VSInstr.Exe** |
 
 4. Aggiungere un altro elemento **add** come elemento figlio dell'elemento **appSettings**.
 
@@ -148,7 +149,7 @@ ms.locfileid: "67032943"
    |Nome attributo|Valore attributo|
    |--------------------|---------------------|
    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
-   |**value**|`PerformanceToolsFolder`|
+   |**valore**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` è il percorso dei file eseguibili del profiler. Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
@@ -220,5 +221,5 @@ ms.locfileid: "67032943"
 ```
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Instrumentare un'applicazione ASP.NET compilata in modo dinamico e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Procedura: instrumentare un'applicazione ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 - [Procedura: Instrumentare un'applicazione ASP.NET compilata in modo dinamico e raccogliere dati di memoria](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

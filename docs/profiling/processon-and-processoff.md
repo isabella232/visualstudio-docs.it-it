@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972411"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778388"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 I sottocomandi **ProcessOff** e **ProcessOn** di VSPerfCmd.exe sospendono e riprendono la profilatura per il processo specificato in una sessione di profilatura da riga di comando. **ProcessOff** arresta la profilatura del processo e **ProcessOn** avvia la profilatura del processo.
@@ -41,20 +42,20 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` Identificatore integer del processo da avviare o arrestare. Gli ID di processo sono elencati nella scheda **Processi** di Gestione attività Windows.
 
 ## <a name="required-subcommands"></a>Sottocomandi obbligatori
- nessuno
+ nessuna
 
 ## <a name="valid-subcommands"></a>Sottocomandi validi
  **ProcessOn** e **ProcessOff** possono essere specificati su righe di comando che contengono anche i sottocomandi seguenti.
 
- **Start:** `Method` Inizializza la sessione di profilatura da riga di comando e imposta il metodo di profilatura specificato.
+ **Start:** `Method` Inizializza la sessione di profilatura della riga di comando e imposta il metodo di profilatura specificato.
 
- **Launch:** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+ **Launch:** `AppName` avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
 
- **Attach:** `PID` Avvia la profilatura del processo specificato.
+ **Connetti:** `PID` avvia la profilatura del processo specificato.
 
  **GlobalOff**&#124;**GlobalOn** Arresta o avvia la profilatura per tutti i processi in una sessione di profilatura da riga di comando.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Arresta o avvia la profilatura per il thread specificato (solo metodo di strumentazione).
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` arresta o avvia la profilatura per il thread specificato (solo metodo di strumentazione).
 
 ## <a name="example"></a>Esempio
  In questo esempio, il sottocomando **ProcessOff** viene usato per raccogliere dati di profilatura per l'avvio dell'applicazione.

@@ -11,14 +11,15 @@ ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6257ce96e139e173fca804221b495f7467fc6b20
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 1c1b96e9a73b488ba9c9920e8ea43e27f78f67ed
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024642"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777673"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: Utilizzo elevato della reflection
 
@@ -27,7 +28,7 @@ ms.locfileid: "73024642"
 |ID regola|DA0012|
 |Category|Uso di .NET Framework|
 |Metodi di profilatura|Campionamento|
-|Messaggio|È possibile che si stia usando la reflection in modo eccessivo. L'operazione è dispendiosa.|
+|Message|È possibile che si stia usando la reflection in modo eccessivo. L'operazione è dispendiosa.|
 |Tipo regola|Avviso|
 
 ## <a name="cause"></a>Causa

@@ -8,14 +8,15 @@ ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d14296ab4218cbcab0d508f47b0f38f3c50a94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777333"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779740"
 ---
 # <a name="callercallee-view----contention-data"></a>Visualizzazione Chiamante/chiamato: dati sui conflitti
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui conflitti per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -26,7 +27,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui 
 
  Nella griglia inferiore **Funzioni che sono state chiamate dalla funzione corrente** visualizza informazioni sui conflitti per le funzioni chiamate (figlio) della funzione selezionata quando la funzione figlio è stata chiamata dalla funzione corrente.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Type**|Il contesto della funzione:<br /><br /> -   **0**: la funzione corrente<br />-   **1**: una funzione che chiama la funzione corrente<br />-   **2**: una funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Tempo blocco esclusivo**|- Per la funzione corrente, il periodo in cui è stato impedito a questa funzione di eseguire codice nel corpo della funzione. Il tempo di blocco non è incluso nelle funzioni chiamate dalla funzione.<br />- Per una funzione chiamante, la parte del tempo di blocco esclusivo della funzione corrente usata quando questa funzione ha chiamato la funzione corrente.<br />- Per una funzione chiamata, il periodo in cui è stato impedito a questa funzione di eseguire il proprio codice quando la funzione è stata chiamata dalla funzione corrente. Il tempo di blocco non è incluso nelle funzioni figlio chiamate dalla funzione chiamata.|
@@ -43,12 +44,12 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni sui 
 |**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID processo (PID) del processo in cui si è verificato il conflitto.|
-|**Nome processo**|Nome del processo.|
+|**Nome processo**|nome del processo.|
 |**Nome funzione radice**|Nome della funzione corrente. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Chiamante/chiamato](../profiling/caller-callee-view.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
 - [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

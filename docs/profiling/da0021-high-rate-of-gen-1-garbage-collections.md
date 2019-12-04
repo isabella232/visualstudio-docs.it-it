@@ -10,14 +10,15 @@ ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fd4cf83315965d55b97ac19d4c7d88739f932c2
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 36350b59a3d70f8553fddc5f58bf5c79716fa3aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911976"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777660"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Frequenza elevata di Garbage Collection di generazione 1
 
@@ -25,9 +26,9 @@ ms.locfileid: "72911976"
 |-|-|
 |ID regola|DA0021|
 |Category|Uso di .NET Framework|
-|Metodi di profilatura|All|
-|Messaggio|È stata rilevata una frequenza elevata di Garbage Collection di generazione 1. In genere, ciò avviene se la maggior parte delle strutture dati del programma sono allocate e rese persistenti per molto tempo per progettazione. Tuttavia, se tale comportamento è imprevisto, l'applicazione potrebbe bloccare gli oggetti. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|
-|Tipo regola|Informazioni|
+|Metodi di profilatura|Tutte le|
+|Message|È stata rilevata una frequenza elevata di Garbage Collection di generazione 1. In genere, ciò avviene se la maggior parte delle strutture dati del programma sono allocate e rese persistenti per molto tempo per progettazione. Tuttavia, se tale comportamento è imprevisto, l'applicazione potrebbe bloccare gli oggetti. Per altri dettagli, è possibile raccogliere dati sull'allocazione di memoria .NET e informazioni sulla durata degli oggetti per comprendere il criterio di allocazione della memoria usata dall'applicazione.|
+|Tipo regola|Informazioni su|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.
 

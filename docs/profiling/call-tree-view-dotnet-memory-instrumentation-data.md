@@ -8,14 +8,15 @@ ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c7a67d4763337af4b3d75217ce6278951c07bc48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2066959578987e358f8c1c91dcbda1eeb6f79f26
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950306"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773597"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione di memoria .NET
 La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di strumentazione contiene i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati temporali e di memoria .NET per la funzione.
@@ -32,7 +33,7 @@ La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazion
 
 ## <a name="general"></a>Generale
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Nome funzione**|Nome della funzione.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
@@ -53,7 +54,7 @@ La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazion
 
  I valori di memoria esclusivi indicano il numero e le dimensioni di oggetti creati dal codice nel corpo della funzione e non da altre funzioni chiamate dalla funzione.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Allocazioni inclusive**|Numero di oggetti allocati dalle istanze di questa funzione chiamate dalla funzione padre nell'albero delle chiamate. Questo numero include le allocazioni effettuate dalle funzioni figlio.|
 |**% allocazioni inclusive**|Percentuale di tutti gli oggetti creati nell'esecuzione della profilatura che rappresentavano allocazioni inclusive delle istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate.|
@@ -63,7 +64,7 @@ La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazion
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso
  I valori relativi al tempo inclusivo trascorso indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo include il tempo dedicato alle funzioni chiamate dalla funzione e alle chiamate al sistema operativo, ad esempio a cambi di contesto e operazioni di input/output.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo inclusivo trascorso**|Tempo inclusivo trascorso totale di tutte le chiamate a questa funzione eseguite dalla funzione padre nell'albero delle chiamate.|
 |**% tempo inclusivo trascorso**|Percentuale del tempo inclusivo trascorso totale dell'esecuzione della profilatura corrispondente al tempo inclusivo trascorso totale di questa funzione per le chiamate da parte della funzione padre nell'albero delle chiamate.|
@@ -74,7 +75,7 @@ La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazion
 ## <a name="elapsed-exclusive-values"></a>Valori di tempo esclusivo trascorso
  I valori relativi al tempo esclusivo trascorso indicano il tempo di esecuzione diretta di una funzione in cima allo stack di chiamate. Il tempo include il tempo delle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output. Non è tuttavia incluso il tempo usato per le funzioni chiamate dalla funzione.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo esclusivo trascorso**|Tempo esclusivo trascorso totale di tutte le chiamate a questa funzione eseguite dalla funzione padre nell'albero delle chiamate.|
 |**% tempo esclusivo trascorso**|Percentuale del tempo esclusivo trascorso totale dell'esecuzione della profilatura corrispondente al tempo esclusivo trascorso totale di questa funzione per le chiamate da parte della funzione padre nell'albero delle chiamate.|
@@ -85,7 +86,7 @@ La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazion
 ## <a name="application-inclusive-values"></a>Valori di tempo inclusivo applicazione
  I valori relativi al tempo inclusivo applicazione indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output. Il tempo include il tempo dedicato alle funzioni figlio chiamate dalla funzione.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo inclusivo applicazione**|Tempo inclusivo applicazione totale di tutte le chiamate a questa funzione eseguite dalla funzione padre nell'albero delle chiamate.|
 |**% tempo inclusivo applicazione**|Percentuale del tempo inclusivo trascorso totale dell'esecuzione della profilatura corrispondente al tempo inclusivo applicazione totale di questa funzione per le chiamate da parte della funzione padre nell'albero delle chiamate.|
@@ -96,7 +97,7 @@ La visualizzazione Albero delle chiamate dei dati di profilatura sull'allocazion
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione
  I valori di tempo esclusivo applicazione indicano il tempo dedicato alla funzione, escluso il tempo dedicato alle funzioni figlio chiamate dalla funzione. Il tempo esclude anche le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo esclusivo applicazione**|Tempo esclusivo applicazione totale di tutte le chiamate a questa funzione eseguite dalla funzione padre nell'albero delle chiamate.|
 |**% tempo esclusivo applicazione**|Percentuale del tempo esclusivo trascorso totale dell'esecuzione della profilatura corrispondente al tempo esclusivo applicazione totale di questa funzione per le chiamate da parte della funzione padre nell'albero delle chiamate.|

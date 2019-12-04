@@ -2,7 +2,7 @@
 title: Novità di Visual Studio 2019
 titleSuffix: ''
 description: Informazioni sulle nuove funzionalità di Visual Studio 2019.
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211326"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777913"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
-**Aggiornamento per la [versione 16,3](/visualstudio/releases/2019/release-notes/)**
+**Aggiornamento per la [versione 16,4](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Scarica Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -33,15 +33,15 @@ Visual Studio 2019 include gli strumenti e i servizi migliori del settore per qu
 
 Ecco un riepilogo generale delle novità:
 
-* **[Sviluppo](#develop)** : rimanere concentrati e produttivi con prestazioni migliorate, pulizia del codice immediata e risultati di ricerca ottimizzati.
-* **[Collaborazione](#collaborate)** : il piacere di collaborare in modo naturale grazie a un flusso di lavoro basato su Git, modifica e debug in tempo reale e revisioni del codice direttamente in Visual Studio.
-* **[Debug](#debug)** : evidenziare e passare a valori specifici, ottimizzare l'uso della memoria e acquisire snapshot automatici dell'esecuzione dell'applicazione.
+* **[Sviluppo](#develop)** : rimanere concentrati e produttivi con migliori prestazioni, pulizia immediata del codice e risultati di ricerca migliori.
+* **[Collaborare](#collaborate)** : sfruttare la collaborazione naturale tramite un flusso di lavoro git-First, la modifica e il debug in tempo reale e le revisioni del codice direttamente in Visual Studio.
+* **[Debug](#debug)** : evidenziare e passare a valori specifici, ottimizzare l'uso della memoria e creare snapshot automatici dell'esecuzione dell'applicazione.
 
 Per un elenco completo di tutte le novità in questa versione, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/).
 
-## <a name="develop"></a>Sviluppo
+## <a name="develop"></a>Sviluppa
 
-Vedere il video seguente per altre informazioni su come è possibile risparmiare tempo con le nuove funzionalità. <br><br>*Durata del video: 3.00 minuti*
+Vedere il video seguente per altre informazioni su come è possibile risparmiare tempo con le nuove funzionalità. <br><br>*Lunghezza video: 3,00 minuti*
 
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
@@ -104,19 +104,19 @@ Per altre informazioni, vedere il post di blog [Better multi-monitor experience 
 
 ### <a name="test-explorer"></a>Esplora test
 
-**Novità nella versione 16.2**: Esplora test è stato aggiornato per offrire una gestione migliore di set di test di grandi dimensioni, applicazione di filtri semplificata, comandi più facilmente individuabili, visualizzazioni di playlist a schede e colonne personalizzabili che consentono di definire con precisione le informazioni di test visualizzate.
+**Novità della 16,2**: è stato aggiornato Esplora test per offrire una gestione migliore di set di test di grandi dimensioni, un filtro più semplice, più comandi individuabili, visualizzazioni playlist a schede e colonne personalizzabili che consentono di ottimizzare le informazioni di test visualizzate.
 
    ![Screenshot che mostra i miglioramenti dell'interfaccia utente in Esplora test](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**Novità in 16,3**: È stato incluso il supporto per .NET Core 3,0. Multi-piattaforma, Open Source&mdash;e completamente supportato da Microsoft. 
+**Novità della 16,3**: è stato incluso il supporto per .net core 3,0. &mdash;multipiattaforma, open source e completamente supportati da Microsoft.
 
 Per altre informazioni, vedere il post di Blog relativo all' [annuncio di .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
 ## <a name="collaborate"></a>Collaborazione
 
-Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Durata del video: 4.22 minuti*
+Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza video: 4,22 minuti*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
@@ -132,7 +132,7 @@ La finestra iniziale offre diverse opzioni per iniziare rapidamente con la scrit
 
 La finestra iniziale include anche le opzioni per aprire un progetto o una soluzione, aprire una cartella locale o creare un nuovo progetto.
 
-Per altre informazioni, vedere il post di blog [Get to code: How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Vai al codice: come è stata progettata la nuova finestra iniziale di Visual Studio).
+Per altre informazioni, vedere il post di Blog relativo [a come è stato progettato il nuovo avvio di Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -154,7 +154,7 @@ Per altre informazioni, vedere il post di blog [Code reviews using the Visual St
 
 ## <a name="debug"></a>Debug
 
-Vedere il video seguente per altre informazioni su come ottenere maggiore precisione con destinazioni più accurate durante il debug. <br><br>*Durata del video: 3.54 minuti*
+Vedere il video seguente per altre informazioni su come ottenere maggiore precisione con destinazioni più accurate durante il debug. <br><br>*Lunghezza video: 3,54 minuti*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
@@ -178,7 +178,7 @@ Probabilmente la finestra Espressioni di controllo è già stata usata in preced
 
    ![Nuova finestra Espressioni di controllo e funzionalità di formattazione dei valori in Visual Studio 2019](media/search-watch-window.png)
 
-Per altre informazioni, vedere il post di blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Miglioramenti di Visual Studio 2019: Ricerca di oggetti e proprietà nelle finestre Espressione di controllo, Auto e Variabili locali).
+Per ulteriori informazioni, vedere il post di Blog relativo alla [funzionalità avanzata in Visual Studio 2019: ricerca di oggetti e proprietà nel post di Blog relativo alle finestre espressioni di controllo, auto e variabili locali](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) .
 
 ### <a name="snapshot-debugger"></a>Debugger di snapshot
 
@@ -192,9 +192,15 @@ Per altre informazioni, vedere la pagina [Eseguire il debug di app di Azure ASP.
 
 ### <a name="microsoft-edge-insider-support"></a>Supporto per Microsoft Edge Insider
 
-**Novità nella versione 16.2**: È possibile impostare un punto di interruzione in un'applicazione JavaScript e avviare una sessione di debug usando il browser [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). In tal caso, Visual Studio apre una nuova finestra del browser con il debug abilitato, che è possibile usare per analizzare le singole istruzioni nell'applicazione JavaScript in Visual Studio.
+**Novità in 16,2**: è possibile impostare un punto di interruzione in un'applicazione JavaScript e avviare una sessione di debug usando il browser [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) . In tal caso, Visual Studio apre una nuova finestra del browser con il debug abilitato, che è possibile usare per analizzare le singole istruzioni nell'applicazione JavaScript in Visual Studio.
 
    ![Screenshot che mostra il rendering del codice JavaScript in un browser](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>Strumento Proprietà aggiungibili
+
+**Novità della 16,4**: ora è più facile identificare gli oggetti in base alle relative proprietà durante il debug con il nuovo strumento Proprietà aggiungibili. È sufficiente passare il puntatore del mouse su una proprietà che si desidera visualizzare nella finestra del debugger delle finestre espressioni di controllo, auto e variabili locali, fare clic sull'icona Aggiungi e visualizzare immediatamente le informazioni che si stanno cercando nella parte superiore della finestra.
+
+   ![Un'animazione che Mostra come aggiungere proprietà nel debugger di Visual Studio usando lo strumento delle proprietà aggiungibili](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>Argomenti successivi
 

@@ -11,25 +11,26 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fd58603e287de31fab35375e9441f9113fb025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973929"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778973"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedura: Personalizzare le colonne delle visualizzazioni dei report
 Gli strumenti per le prestazioni in Visual Studio Team System Development Edition sono completamente integrati nell'ambiente di sviluppo integrato (IDE) per fornire un'esperienza utente. L'elenco seguente indica le visualizzazioni che possono essere personalizzate aggiungendo, rimuovendo e ridisponendo le colonne:
 
-- [Visualizzazione Moduli](../profiling/modules-view.md)
+- [Visualizzazione moduli](../profiling/modules-view.md)
 
 - [Visualizzazione Funzioni](../profiling/functions-view.md)
 
-- [Visualizzazione Righe](../profiling/lines-view.md)
+- [Righe (visualizzazione)](../profiling/lines-view.md)
 
-- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md)
+- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view.md)
 
 - [Visualizzazione Chiamante/Chiamato](../profiling/caller-callee-view.md)
 

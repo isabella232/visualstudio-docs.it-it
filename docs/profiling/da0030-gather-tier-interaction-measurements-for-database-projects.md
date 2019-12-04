@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database | Microsoft Docs'
+title: 'DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,24 +10,25 @@ ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a554eae05d02dda57fe29b2c627f261ba10b89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936014"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777476"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Raccogliere misurazioni di interazione tra livelli per i progetti di database
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Raccogli misurazioni di interazione tra livelli per i progetti di database
 
 |||
 |-|-|
 |ID regola|DA0030|
 |Category|Uso degli strumenti di profilatura|
 |Metodo di profilatura|Campionamento|
-|Messaggio|La raccolta di misurazioni per le applicazioni multilivello consente di comprendere i criteri di utilizzo del database e i ritardi di accesso ai dati di chiave. Abilitare l'opzione Profilatura interazione tra livelli e provare a eseguire di nuovo la profilatura dell'applicazione.|
-|Tipo regola|Informazioni|
+|Message|La raccolta di misurazioni per le applicazioni multilivello consente di comprendere i criteri di utilizzo del database e i ritardi di accesso ai dati di chiave. Abilitare l'opzione Profilatura interazione tra livelli e provare a eseguire di nuovo la profilatura dell'applicazione.|
+|Tipo regola|Informazioni su|
 
 ## <a name="cause"></a>Causa
  Le chiamate ai metodi <xref:System.Data> costituiscono una percentuale significativa dei dati di profilatura e non sono stati raccolti dati di interazione tra livelli durante l'esecuzione della profilatura. È consigliabile ripetere la profilatura e aggiungere dati di interazione tra livelli.

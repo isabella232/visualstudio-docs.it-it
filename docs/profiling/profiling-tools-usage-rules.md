@@ -6,14 +6,15 @@ ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 15b5789a04b4a94156ebec33e525eafe4e22f296
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 51c4f1384a58b19ad9a6a4f46ad0131158cc967c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745290"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778349"
 ---
 # <a name="profiling-tools-usage-rules"></a>Regole di utilizzo degli strumenti di profilatura
 Le regole delle prestazioni nella categoria di utilizzo degli strumenti di profilatura forniscono indicazioni per l'uso del profiler per una raccolta più efficiente dei dati.
@@ -22,7 +23,7 @@ Le regole delle prestazioni nella categoria di utilizzo degli strumenti di profi
 | - | - |
 | [DA0002: VSPerfCorProf.dll mancante](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | La profilatura dalla riga di comando potrebbe contenere dati incompleti per i file binari di .NET Framework. Il problema può essere causato dalla mancata impostazione delle variabili di ambiente corrette. |
 | [DA0003: Numero elevato di campioni del kernel](../profiling/da0003-many-kernel-samples.md) | Sono stati registrati molti campioni di profilatura che si sono verificati all'esterno dell'esecuzione del file binario di destinazione. Per raccogliere dati più accurati, è consigliabile ricorrere al metodo di strumentazione. |
-| [DA0004: Utilizzo elevato del processore](../profiling/da0004-high-processor-usage.md) | I dati di profilatura indicano che i processori sono stati occupati in modo costante durante l'esecuzione della profilatura. Per raccogliere dati più accurati, è consigliabile ricorrere al metodo di campionamento. |
+| [DA0004: Uso elevato del processore](../profiling/da0004-high-processor-usage.md) | I dati di profilatura indicano che i processori sono stati occupati in modo costante durante l'esecuzione della profilatura. Per raccogliere dati più accurati, è consigliabile ricorrere al metodo di campionamento. |
 | [DA0008: Numero ridotto di campioni raccolti](../profiling/da0008-few-samples-collected.md) | Il numero di campioni raccolti nell'esecuzione della profilatura non è sufficiente per essere statisticamente significativo. È consigliabile rieseguire la profilatura mantenendo l'applicazione in esecuzione per un periodo di tempo più lungo. È anche possibile considerare l'uso del metodo di strumentazione per la raccolta dei dati. |
 | [DA0026: Tempo di elaborazione CPU kernel eccessivo](../profiling/da0026-excessive-kernel-cpu-time-processing.md) | L'esecuzione della profilatura in modalità kernel del processore ha richiesto un periodo di tempo notevole. Considerare l'uso del metodo di campionamento usando come metrica le chiamate di sistema anziché il tempo. |
 | [DA0029: Versione CLR non supportata](../profiling/da0029-unsupported-clr-version.md) | Il file binario profilato usa una versione di .NET Framework non supportata dal profiler. I rapporti del profiler indicano che non è possibile risolvere i nomi dei simboli. |

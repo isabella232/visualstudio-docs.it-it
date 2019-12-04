@@ -1,18 +1,19 @@
 ---
-title: "Riga di comando del profiler: Instrumentare un'app ASP.NET dinamica, ottenere dati di intervallo"
+title: "Riga di comando del profiler: instrumentare l'app ASP.NET dinamica, ottenere dati temporali"
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 656cceea8cfc76d9c4865b5a2a792993e3f90f15
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: d8270c9948efe5f9c972f2e4f0eccb035c793953
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031994"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775457"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
 
@@ -27,9 +28,9 @@ Avviare il profiler, quindi eseguire l'applicazione di destinazione. Mentre il p
 
 ## <a name="configure-the-aspnet-web-application-and-the-web-server"></a>Configurare l'applicazione Web ASP.NET e il server Web
 
-1. Modificare il file *web.config* dell'applicazione di destinazione. Vedere [How to: Modificare file web.config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modificare il file *web.config* dell'applicazione di destinazione. Vedere [Procedura: modificare file web.config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2. Aprire una finestra del prompt dei comandi.
+2. Apri una finestra del prompt dei comandi.
 
 3. Inizializzare le variabili di ambiente di profilatura. Tipo:
 
@@ -37,13 +38,13 @@ Avviare il profiler, quindi eseguire l'applicazione di destinazione. Mentre il p
 
     - **/globaltraceon** abilita la profilatura tramite il metodo di strumentazione.
 
-4. Riavviare il computer.
+4. Riavvia il computer.
 
 ## <a name="run-the-profiling-session"></a>Eseguire la sessione di profilatura
 
-1. Aprire una finestra del prompt dei comandi.
+1. Apri una finestra del prompt dei comandi.
 
-2. Avvia il profiler. Tipo:
+2. Avviare il profiler. Tipo:
 
      **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -56,7 +57,7 @@ Avviare il profiler, quindi eseguire l'applicazione di destinazione. Mentre il p
      > [!NOTE]
      > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
-     | Opzione | DESCRIZIONE |
+     | Opzione | Descrizione |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo di lavoro ASP.NET. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
      | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni di accesso. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -74,7 +75,7 @@ Quando è in esecuzione l'applicazione di destinazione, è possibile controllare
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|DESCRIZIONE|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
@@ -110,7 +111,7 @@ Dopo aver completato l'attività di profilatura, sostituire il file *web.config*
 
      **VSPerfCmd /globaloff**
 
-3. Riavviare il computer.
+3. Riavvia il computer.
 
 ## <a name="see-also"></a>Vedere anche
 

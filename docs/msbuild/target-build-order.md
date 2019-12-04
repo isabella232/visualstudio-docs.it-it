@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502cc7d5f1124ef815455193f00c3f30e77c59a8
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: ee7a3c2530456a4c2b358fcea7507203feeb904b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225950"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777881"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 
@@ -23,69 +23,69 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 - `InitialTargets`. Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.
 
-- `DefaultTargets`. Questo attributo `Project` specifica le destinazioni che vengono eseguite se non viene specificata una destinazione in modo esplicito nella riga di comando.
+- `DefaultTargets`. Questo attributo `Project` specifica quali destinazioni vengono eseguite se una destinazione non viene specificata in modo esplicito nella riga di comando.
 
 - `DependsOnTargets`. Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.
 
 - `BeforeTargets` e `AfterTargets`. Questi attributi `Target` specificano che questa destinazione deve essere eseguita prima o dopo le destinazioni specificate (MSBuild 4.0).
 
-  Una destinazione non viene mai eseguita due volte durante una compilazione, anche se ne dipende una destinazione successiva nella compilazione. Dopo che una destinazione è stata eseguita, il contributo alla compilazione è completo.
+Una destinazione non viene mai eseguita due volte durante una compilazione, anche se ne dipende una destinazione successiva nella compilazione. Dopo che una destinazione è stata eseguita, il contributo alla compilazione è completo.
 
-  Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).
+Le destinazioni possono avere un attributo `Condition`. Se la condizione specificata restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione. Per altre informazioni sulle condizioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).
 
 ## <a name="initial-targets"></a>Destinazioni iniziali
 
- L'attributo `InitialTargets` dell'elemento [Project](../msbuild/project-element-msbuild.md) specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`. Le destinazioni iniziali vengono in genere usate per il controllo degli errori.
+L'attributo `InitialTargets` dell'elemento [Project](../msbuild/project-element-msbuild.md) specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`. Le destinazioni iniziali vengono in genere usate per il controllo degli errori.
 
- Il valore dell'attributo `InitialTargets` può essere un elenco ordinato di destinazioni delimitate da punto e virgola. L'esempio seguente specifica che viene eseguita la destinazione `Warm` e quindi la destinazione `Eject`.
+Il valore dell'attributo `InitialTargets` può essere un elenco ordinato di destinazioni delimitate da punto e virgola. L'esempio seguente specifica che viene eseguita la destinazione `Warm` e quindi la destinazione `Eject`.
 
 ```xml
 <Project InitialTargets="Warm;Eject" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
- I progetti importati possono avere attributi `InitialTargets` specifici. Tutte le destinazioni iniziali vengono aggregate ed eseguite nell'ordine specificato.
+I progetti importati possono avere attributi `InitialTargets` specifici. Tutte le destinazioni iniziali vengono aggregate ed eseguite nell'ordine specificato.
 
- Per altre informazioni, vedere [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md).
+Per altre informazioni, vedere [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="default-targets"></a>Destinazioni predefinite
 
- L'attributo `DefaultTargets` dell'elemento [Project](../msbuild/project-element-msbuild.md) specifica la destinazione o le destinazioni che vengono compilate se non viene specificata una destinazione in modo esplicito in una riga di comando.
+L'attributo `DefaultTargets` dell'elemento [Project](../msbuild/project-element-msbuild.md) specifica la destinazione o le destinazioni che vengono compilate se non viene specificata una destinazione in modo esplicito in una riga di comando.
 
- Il valore dell'attributo `DefaultTargets` può essere un elenco ordinato di destinazioni predefinite delimitate da punto e virgola. L'esempio seguente specifica che viene eseguita la destinazione `Clean` e quindi la destinazione `Build`.
+Il valore dell'attributo `DefaultTargets` può essere un elenco ordinato di destinazioni predefinite delimitate da punto e virgola. L'esempio seguente specifica che viene eseguita la destinazione `Clean` e quindi la destinazione `Build`.
 
 ```xml
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 ```
 
- È possibile eseguire l'override delle destinazioni predefinite usando l'opzione **-target** nella riga di comando. L'esempio seguente specifica che viene eseguita la destinazione `Build` e quindi la destinazione `Report`. Quando si specificano le destinazioni in questo modo, le destinazioni predefinite vengono ignorate.
+È possibile eseguire l'override delle destinazioni predefinite usando l'opzione **-target** nella riga di comando. L'esempio seguente specifica che viene eseguita la destinazione `Build` e quindi la destinazione `Report`. Quando si specificano le destinazioni in questo modo, le destinazioni predefinite vengono ignorate.
 
  `msbuild -target:Build;Report`
 
- Se sia le destinazioni iniziali che quelle predefinite vengono specificate e se non viene specificata alcuna destinazione della riga di comando, MSBuild esegue prima le destinazioni iniziali e quindi le destinazioni predefinite.
+Se sia le destinazioni iniziali che quelle predefinite vengono specificate e se non viene specificata alcuna destinazione della riga di comando, MSBuild esegue prima le destinazioni iniziali e quindi le destinazioni predefinite.
 
- I progetti importati possono avere attributi `DefaultTargets` specifici. Il primo attributo `DefaultTargets` rilevato determina le destinazioni predefinite che verranno eseguite.
+I progetti importati possono avere attributi `DefaultTargets` specifici. Il primo attributo `DefaultTargets` rilevato determina le destinazioni predefinite che verranno eseguite.
 
- Per altre informazioni, vedere [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md).
+Per altre informazioni, vedere [Procedura: Specificare quale destinazione compilare per prima](../msbuild/how-to-specify-which-target-to-build-first.md).
 
 ## <a name="first-target"></a>Prima destinazione
 
- Se non sono presenti destinazioni iniziali, destinazioni predefinite o destinazioni della riga di comando, MSBuild esegue la prima destinazione rilevata nel file di progetto o nei file di progetto importati.
+Se non sono presenti destinazioni iniziali, destinazioni predefinite o destinazioni della riga di comando, MSBuild esegue la prima destinazione rilevata nel file di progetto o nei file di progetto importati.
 
 ## <a name="target-dependencies"></a>Dipendenze tra destinazioni
 
- Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Ad esempio,
+Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Di seguito è riportato un esempio:
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
 ```
 
- Il codice precedente indica a MSBuild che la destinazione `Serve` dipende dalla destinazione `Chop` e dalla destinazione `Cook`. MSBuild esegue la destinazione `Chop` e quindi esegue la destinazione `Cook` prima di eseguire la destinazione `Serve`.
+Il codice precedente indica a MSBuild che la destinazione `Serve` dipende dalla destinazione `Chop` e dalla destinazione `Cook`. MSBuild esegue la destinazione `Chop` e quindi esegue la destinazione `Cook` prima di eseguire la destinazione `Serve`.
 
 ## <a name="beforetargets-and-aftertargets"></a>BeforeTargets e AfterTargets
 
- In MSBuild 4.0 è possibile specificare l'ordine delle destinazioni usando gli attributi `BeforeTargets` e `AfterTargets`.
+In MSBuild 4.0 è possibile specificare l'ordine delle destinazioni usando gli attributi `BeforeTargets` e `AfterTargets`.
 
- Considerare lo script seguente.
+Considerare lo script seguente.
 
 ```xml
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -98,7 +98,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 </Project>
 ```
 
- Per creare una destinazione `Optimize` intermedia da eseguire dopo la destinazione `Compile`, ma prima della destinazione `Link`, aggiungere la destinazione seguente nell'elemento `Project`.
+Per creare una destinazione `Optimize` intermedia da eseguire dopo la destinazione `Compile`, ma prima della destinazione `Link`, aggiungere la destinazione seguente nell'elemento `Project`.
 
 ```xml
 <Target Name="Optimize"
@@ -109,7 +109,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 ## <a name="determine-the-target-build-order"></a>Determinare l'ordine di compilazione delle destinazioni
 
- MSBuild determina l'ordine di compilazione delle destinazioni, come segue:
+MSBuild determina l'ordine di compilazione delle destinazioni, come segue:
 
 1. Vengono eseguite le destinazioni `InitialTargets`.
 
@@ -117,7 +117,7 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 
 3. Viene valutato l'attributo `Condition` della destinazione. Se l'attributo `Condition` è presente e restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione.
 
-    Le altre destinazioni che elencano la destinazione condizionale in `BeforeTargets` o `AfterTargets` vengono ancora eseguite nell'ordine prescritto.
+   Le altre destinazioni che elencano la destinazione condizionale in `BeforeTargets` o `AfterTargets` vengono ancora eseguite nell'ordine prescritto.
 
 4. Prima che la destinazione venga eseguita o ignorata, vengono eseguite le relative destinazioni `DependsOnTargets`, a meno che l'attributo `Condition` non sia applicato alla destinazione e restituisca `false`.
 

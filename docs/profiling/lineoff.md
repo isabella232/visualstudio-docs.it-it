@@ -6,14 +6,15 @@ ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b4de8aa278adab0127f3a39d9adcf105f906e152
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995326"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774126"
 ---
 # <a name="lineoff"></a>LineOff
 Per impostazione predefinita, il profiler raccoglie i dati dei numeri di riga del codice sorgente e i dati di offset dei numeri di riga quando si usa il metodo di campionamento per la profilatura. L'opzione **LineOff** di VSPerfCmd disabilita la raccolta dei dati dei numeri di riga quando VSPerfCmd viene usato per avviare l'applicazione. I dati di profilatura vengono raccolti a livello di funzione quando si specifica l'opzione **LineOff**.
@@ -27,12 +28,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
 #### <a name="parameters"></a>Parametri
- nessuno
+ nessuna
 
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **LineOff** può essere usata solo su una riga di comando che contiene l'opzione **Launch**.
 
- **Launch:** `AppName` Avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
+ **Launch:** `AppName` avvia l'applicazione specificata e inizia la profilatura con il metodo di campionamento.
 
 ## <a name="example"></a>Esempio
  Questo esempio illustra come avviare l'applicazione e il profiler e quindi disabilitare il campionamento a livello di riga.

@@ -10,14 +10,15 @@ ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6185b080967c83be827e34baddfe5b37554398ff
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: f64f717bf87fb4636c7c2f4e6f11a08236d08ada
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024691"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779363"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frequenza molto elevata di conflitti di blocco
 
@@ -26,7 +27,7 @@ ms.locfileid: "73024691"
 |ID regola|DA0039|
 |Category|Uso di .NET Framework|
 |Metodi di profilatura|Campionamento<br /><br /> Strumentazione<br /><br /> Memoria .NET|
-|Messaggio|È stata rilevata una frequenza molto elevata di conflitti di blocco .NET. Per determinare la causa, eseguire un profilo della concorrenza.|
+|Message|È stata rilevata una frequenza molto elevata di conflitti di blocco .NET. Per determinare la causa, eseguire un profilo della concorrenza.|
 |Tipo regola|Avviso|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.

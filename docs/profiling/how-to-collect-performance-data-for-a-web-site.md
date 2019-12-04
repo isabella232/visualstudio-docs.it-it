@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974016"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779038"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 
@@ -63,11 +64,11 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
 8. Viene creata una sessione di prestazioni per l'applicazione di [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e il sito Web viene avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.
 
-     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Per profilare un sito Web senza aprire un progetto in Visual Studio
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 2. Dal menu **Analizza** scegliere **Profiler prestazioni**, **Esplora prestazioni** e quindi selezionare **Avvia**.
 
@@ -77,13 +78,13 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
 5. Nella terza pagina della procedura guidata digitare l'URL della home page dell'applicazione nella casella **Specificare l'URL o il percorso che esegue l'applicazione Web** e quindi fare clic su **Avanti**.
 
-   - Per un sito Web basato su un server (IIS), digitare l'URL, ad esempio **<`http://localhost/MySite/default.aspx`>**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.
+   - Per un sito Web basato su un server (IIS), digitare l'URL, ad esempio **<`http://localhost/MySite/default.aspx`>** . In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.
 
    - Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina `http://localhost:nnnn/MySite/default.aspx` per avviare la sessione.
 
    - Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio `http://www.contoso.com`.
 
-     Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
+     Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 6. Nella terza pagina della procedura guidata è possibile scegliere di aggiungere dati di profilatura dell'interazione tra livelli, dati da JavaScript in esecuzione nelle pagine Web o entrambi.
 
@@ -97,7 +98,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
 9. Viene creata una sessione di prestazioni per l'applicazione ASP.NET e il sito Web viene avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.
 
-     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Vedere anche
 

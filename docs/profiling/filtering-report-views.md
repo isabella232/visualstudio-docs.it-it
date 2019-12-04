@@ -8,21 +8,22 @@ ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969888"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779246"
 ---
 # <a name="filter-report-views"></a>Filtrare le visualizzazioni report
 È possibile applicare filtri ai file di dati di profilatura per limitare i dati di profilatura che appaiono nelle visualizzazioni report Prestazioni e vengono esportati nei file di report. È possibile ridurre un report ai dati tra due valori di timestamp e ridurre i dati a processi e thread specifici. È possibile salvare i filtri in un file e quindi creare un filtro per un altro file di dati di profilatura importando il filtro salvato.
 
- È anche possibile limitare un report a un intervallo di tempo usando la sequenza temporale grafica della visualizzazione Riepilogo. Vedere [How to: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ È anche possibile limitare un report a un intervallo di tempo usando la sequenza temporale grafica della visualizzazione Riepilogo. Vedere [Procedura: Filtrare le visualizzazioni report dalla sequenza temporale di riepilogo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
- Per escludere il codice di sistema e di terze parti da un report, vedere [Procedura: Filtrare visualizzazioni report degli strumenti di profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)
+ Per escludere il codice di sistema e di terze parti da un report, vedere [Procedura: Filtrare visualizzazioni report degli strumenti per la profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)
 
 ## <a name="procedures"></a>Procedure
 
@@ -34,7 +35,7 @@ ms.locfileid: "62969888"
 
 2. Per ogni clausola da aggiungere a un filtro, selezionare o immettere i valori nei campi seguenti di una riga.
 
-    |Campo|Description|
+    |Campo|Descrizione|
     |-----------|-----------------|
     |**And/Or**|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|
     |**Campo**|Selezionare il campo del report da usare nella clausola del filtro dall'elenco di campi dati visualizzato.|

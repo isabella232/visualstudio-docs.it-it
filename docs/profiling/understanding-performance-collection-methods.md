@@ -9,23 +9,24 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821230"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778089"
 ---
 # <a name="understand-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 
 Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è possibile usare per raccogliere dati sulle prestazioni. In questo argomento vengono descritti i diversi metodi e vengono suggeriti alcuni scenari in cui può risultare appropriata la raccolta dei dati con un particolare metodo.
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[Campionamento](#sampling)|Raccoglie dati statistici sulle operazioni eseguite da un'applicazione.|
 |[Strumentazione](#instrumentation)|Raccoglie informazioni dettagliate sugli intervalli per ogni chiamata di funzione.|
@@ -79,7 +80,7 @@ Il metodo di strumentazione inserisce codice in un file binario che acquisisce i
 
 [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)
 
-## <a name="concurrency"></a>Concorrenza
+## <a name="concurrency"></a>concorrenza
 
 La profilatura della concorrenza raccoglie informazioni sulle applicazioni multithread. La profilatura dei conflitti di risorse raccoglie informazioni dettagliate sullo stack di chiamate ogni volta che thread concorrenti sono obbligati ad attendere l'accesso a una risorsa condivisa. La visualizzazione della concorrenza raccoglie inoltre informazioni più generali sulla modalità di interazione dell'applicazione multithread con se stessa, l'hardware, il sistema operativo e altri processi nel computer host:
 
@@ -131,5 +132,5 @@ Dati di interazione tra livelli raccolti dagli strumenti di profilatura
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: Raccogliere dati sulle prestazioni per un sito web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+[Procedura: raccogliere dati sulle prestazioni per un sito web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)

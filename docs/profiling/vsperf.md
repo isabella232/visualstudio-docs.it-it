@@ -6,14 +6,15 @@ ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: baea4215ac3424bbf8d9d2acc713aac80e273d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 051c983920ddc80909d721e569c5efb5ecd33a7c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822872"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779935"
 ---
 # <a name="vsperf"></a>VSPerf
 Usare lo strumento della riga di comando **VsPerf** per:
@@ -32,7 +33,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |**/app:{AppName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
 |**/package:{PackageFullName}**|Avvia il profiler e attende che l'app specificata venga avviata dal menu Start.<br /><br /> Eseguire `vsperf /listapps` per visualizzare i valori Name e PackageFullName delle app installate.|
 |**/js**|Obbligatorio per la profilatura delle app JavaScript.<br /><br /> Raccogliere dati sulle prestazioni dalle app JavaScript.<br /><br /> Usare solo con /package o /attach.|
-|**/noclr**|Facoltativo. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|
+|**/noclr**|Parametro facoltativo. Non raccogliere dati CLR.<br /><br /> Usare solo con /package o /attach.<br /><br /> Ottimizzazione, non verrà eseguita la risoluzione di simboli gestiti.|
 |**/listapps**|Elencare i valori Name e PackageFullName delle app installate.|
 
 ## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Solo applicazioni desktop Windows 8 e applicazioni Windows Server 2012
@@ -50,7 +51,7 @@ Usare lo strumento della riga di comando **VsPerf** per:
 |||
 |-|-|
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|Raccoglie dati dai processi specificati.<br /><br /> Usare Gestione attività per visualizzare l'ID processo (PID) e i nomi dei processi delle app in esecuzione.|
-|**/file:{ReportName}**|Facoltativo. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|
+|**/file:{ReportName}**|Parametro facoltativo. Specifica il file di output (sovrascrive il file esistente).<br /><br /> Usare solo con /package o /attach.|
 |**/pause**|Sospendere la raccolta dei dati.|
 |**/resume**|Riprendere la raccolta dei dati.|
 |**/stop**|Interrompere la raccolta dei dati e terminare i processi di destinazione.|

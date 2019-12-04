@@ -9,20 +9,21 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0655c0faf57a72d6e99ba65f9f84db059e5fe0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406021"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779753"
 ---
 # <a name="call-tree-view---sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata.
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
 
  La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle relative chiamate di funzione.
 
@@ -36,10 +37,10 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 
  Quando imposti il nodo radice, elimini dalla visualizzazione tutte le altre voci ad eccezione del sottoalbero del nodo selezionato. Per reimpostare il nodo radice sul nodo originale, fare clic con il pulsante destro del mouse nella finestra della visualizzazione Albero delle chiamate e selezionare **Reimposta radice**.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|Nome del processo.|
+|**Nome processo**|nome del processo.|
 |**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
@@ -48,12 +49,12 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |**Indirizzo funzione**|Indirizzo della funzione.|
 |**Livello**|Profondità di questa funzione nell'albero delle chiamate. Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
 |**Esempi esclusivi**|Numero di esempi raccolti in questa funzione quando la funzione è stata chiamata dalla funzione padre nell'albero delle chiamate. Questo numero non include gli esempi raccolti nelle funzioni chiamate dalla funzione.|
-|**% esempi esclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che erano esempi esclusivi di questa funzione quando è stata chiamata dalla funzione padre nell'albero delle chiamate.|
+|**% campioni esclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che erano esempi esclusivi di questa funzione quando è stata chiamata dalla funzione padre nell'albero delle chiamate.|
 |**Esempi inclusivi**|Numero di esempi raccolti in questa funzione quando la funzione è stata chiamata dalla funzione padre nell'albero delle chiamate. Il numero include gli esempi raccolti nelle funzioni chiamate dalla funzione.|
 |**% esempi inclusivi**|Percentuale di tutti gli esempi nell'esecuzione della profilatura che erano esempi inclusivi di questa funzione quando è stata chiamata dalla funzione padre nell'albero delle chiamate.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Albero delle chiamate: dati di campionamento del profiler](../profiling/call-Tree-view-sampling-data.md)
 - [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Albero delle chiamate: strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)

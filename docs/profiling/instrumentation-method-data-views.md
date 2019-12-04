@@ -9,19 +9,20 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995376"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774163"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 - [Visualizzazione Riepilogo](../profiling/summary-view-instrumentation-data.md)
 
  Elenca le funzioni che hanno richiesto la maggiore quantità di tempo e le funzioni che hanno eseguito la maggior parte del lavoro individuale.
@@ -30,7 +31,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Visualizza i percorsi di esecuzione delle funzioni in un albero gerarchico.
 
-- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)
+- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
 
  Organizza i dati di profilatura per modulo e li elenca per le funzioni nel modulo.
 
@@ -42,7 +43,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca i dati di profilatura per funzione.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)
 
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
@@ -54,7 +55,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 ## <a name="related-sections"></a>Sezioni correlate
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)
 
- Informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler generati tramite il metodo di campionamento.
+ Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di campionamento.
 
 - [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
 

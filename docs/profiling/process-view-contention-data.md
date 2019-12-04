@@ -8,14 +8,15 @@ ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f9330733a0d32faeb9980813f170f52a6f7121
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965635"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778401"
 ---
 # <a name="process-view---contention-data"></a>Visualizzazione Processo: dati sui conflitti
 Nella visualizzazione Processo sono riportati i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.
@@ -24,7 +25,7 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
 
  La tabella seguente illustra i valori delle colonne nella tabella della visualizzazione Processo.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Ora di inizio**|Numero di millisecondi o di cicli del processore dall'inizio della profilatura all'avvio del processo o del thread.|
 |**Tempo blocco**|Tempo totale durante il quale è stata impedita l'esecuzione di funzioni del processo o del thread.|
@@ -35,9 +36,9 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
 |**ID**|Identificatore generato dal sistema per il processo o il thread.|
 |**Durata**|Numero di millisecondi o di cicli del processore dall'inizio del processo o del thread alla fine del processo o del thread o alla fine della profilatura.|
 |**Type**|Tipo di riga, ovvero processo o thread.<br /><br /> Solo nei rapporti della riga di comando di **VSReport**. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).|
-|**Name**|Nome del processo o del thread.|
+|**Nome**|Nome del processo o del thread.|
 |**ID univoco**|Identificatore generato dal profiler univoco per il processo o il thread.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Processo](../profiling/process-view.md)

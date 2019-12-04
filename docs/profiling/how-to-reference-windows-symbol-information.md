@@ -11,14 +11,15 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422854"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774913"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procedura: Fare riferimento alle informazioni sui simboli di Windows
 Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensione *pdb*) per risolvere i nomi simbolici, ad esempio i nomi delle funzioni nei file binari del programma. È possibile seguire questa procedura per scaricare e aggiornare automaticamente i file *pdb* corretti per la versione di Windows nel computer locale.
@@ -44,7 +45,7 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 
      **C:\SymbolCache**
 
-     È anche possibile fare clic sul pulsante con i puntini di sospensione (**...** ) e quindi selezionare una directory dalla finestra di dialogo **Sfoglia per cartelle**.
+     È anche possibile fare clic sul pulsante con i puntini di sospensione ( **...** ) e quindi selezionare una directory dalla finestra di dialogo **Sfoglia per cartelle**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
