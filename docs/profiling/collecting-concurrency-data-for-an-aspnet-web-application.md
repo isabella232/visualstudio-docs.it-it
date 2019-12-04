@@ -9,14 +9,15 @@ ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: d7ff0ff01e7f99592e33035c7d9502d3b83fc859
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263758"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779662"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Raccogliere dati di concorrenza per un'applicazione Web ASP.NET tramite la riga di comando del profiler
 Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di raccogliere i dati relativi ai conflitti di risorse.
@@ -27,7 +28,7 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 |----------|---------------------|
 |Connettere il profiler a un'applicazione ASP.NET in esecuzione|-   [Procedura: Connettere il profiler a un'applicazione ASP.NET per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="related-tasks"></a>Attività correlate
@@ -52,5 +53,5 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)
