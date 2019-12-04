@@ -36,7 +36,7 @@
           href: container-tools-configure.md
     - name: Concetti
       items:
-        - name: Compilazione di app in contenitori
+        - name: Modalità di compilazione delle app aggiunte a contenitori in Visual Studio
           href: container-build.md
     - name: Risoluzione dei problemi
       href: troubleshooting-docker-errors.md
