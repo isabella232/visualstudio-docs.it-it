@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ce6f7fe29fca2cd17c3dfcce76dac40e422aba4
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 3b85410af965fdb9fe4785efe2cf12051e19436e
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572723"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797358"
 ---
 # <a name="active-script-profiling-overview"></a>Panoramica di profilatura di script ActiveX
 Le [interfacce di profilatura di script ActiveX](../winscript/reference/active-script-profiler-interfaces.md) abilitano la profilatura di un motore di script. La profilatura di script ActiveX è costituita dalle parti seguenti:  
@@ -41,7 +41,7 @@ Le [interfacce di profilatura di script ActiveX](../winscript/reference/active-s
  L'host crea il modulo di gestione del linguaggio e rende disponibili al modulo gli script da eseguire. Uno smart host specifica anche il contesto di documento che un debugger o un profiler può usare per offrire informazioni più complete durante il debug o la profilatura.  
   
 ## <a name="profiler"></a>Profiler  
- Il profiler riceve chiamate dal modulo di gestione del linguaggio quando si verificano diversi eventi. Il profiler deve essere registrato come oggetto COM e implementare l'interfaccia [IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md).  
+ Il profiler riceve chiamate dal modulo di gestione del linguaggio quando si verificano diversi eventi. Il profiler deve essere registrato come oggetto COM e deve implementare l' [interfaccia IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce del profiler di script ActiveX](../winscript/reference/active-script-profiler-interfaces.md)
