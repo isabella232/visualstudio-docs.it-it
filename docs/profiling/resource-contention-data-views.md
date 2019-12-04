@@ -9,19 +9,20 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798436"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771530"
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 - [Visualizzazione Riepilogo: dati su conflitti del profiler](../profiling/resource-contention-data-views.md)
 
  Visualizza una sequenza temporale grafica dei dati di profilatura ed elenca le funzioni e le risorse che hanno partecipato alla maggior parte degli eventi di blocco.
@@ -30,7 +31,7 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Visualizza un albero gerarchico che rappresenta i percorsi di esecuzione e i dati sui conflitti di risorse delle funzioni nella profilatura.
 
-- [Visualizzazione Moduli](../profiling/modules-view-contention-data.md)
+- [Visualizzazione moduli](../profiling/modules-view-contention-data.md)
 
  Organizza i dati sui conflitti di thread e risorse in base al modulo ed elenca le funzioni, le righe del codice sorgente e le istruzioni che erano in esecuzione quando si sono verificati gli eventi di blocco.
 
@@ -54,11 +55,11 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i dati sui conflitti di risorse in base alla risorsa bloccata.
 
-- [Visualizzazione Righe](../profiling/lines-view-contention-data.md)
+- [Righe (visualizzazione)](../profiling/lines-view-contention-data.md)
 
  Elenca i dati sui conflitti di risorse in base alla riga del codice sorgente.
 
-- [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view-contention-data.md)
+- [Visualizzazione puntatori all'istruzione (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)
 
  Elenca i conflitti di risorse in base all'istruzione.
 
@@ -66,7 +67,7 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i conflitti di risorse in base a processo e thread.
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)
 
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.

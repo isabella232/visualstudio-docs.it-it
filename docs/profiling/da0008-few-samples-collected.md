@@ -11,14 +11,15 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936618"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779441"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008: Numero ridotto di campioni raccolti
 
@@ -27,8 +28,8 @@ ms.locfileid: "62936618"
 |ID regola|DA0008|
 |Category|Uso degli strumenti di profilatura|
 |Metodo di profilatura|Campionamento|
-|Messaggio|È stato raccolto un numero ridotto di campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.|
-|Tipo regola|Informazioni|
+|Message|È stato raccolto un numero ridotto di campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.|
+|Tipo regola|Informazioni su|
 
 ## <a name="cause"></a>Causa
  Durante l'esecuzione della profilatura sono stati raccolti solo alcuni campioni.

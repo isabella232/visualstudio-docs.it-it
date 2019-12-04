@@ -6,14 +6,15 @@ ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 479f7e1cbd85c0421497020ae1fc108154ca639a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968314"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771601"
 ---
 # <a name="targetclr"></a>TargetCLR
 L'opzione **TargetCLR** specifica la versione di Common Language Runtime (CLR) da sottoporre a profilatura quando in un'applicazione è caricata più di una versione di CLR.
@@ -32,9 +33,9 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **TargetCLR** può essere usata solo con le opzioni **Launch** o **Attach**.
 
- **Launch:** `AppName` Avvia l'applicazione specificata e la profilatura.
+ **Launch:** `AppName` avvia l'applicazione specificata e avvia la profilatura.
 
- **Attach:** `PID` Avvia la profilatura del processo specificato.
+ **Connetti:** `PID` inizia a profilare il processo specificato.
 
 ## <a name="example"></a>Esempio
  In questo esempio, l'opzione TargetCLR viene usata per assicurarsi che venga sottoposta a profilatura la versione di CLR 4.0.11003.

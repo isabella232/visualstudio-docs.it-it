@@ -11,14 +11,15 @@ ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5330ea0494636130f3bc28c28d0e46bfc524bfb8
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024654"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777699"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evitare di utilizzare eccezioni per il flusso di controllo
 
@@ -26,8 +27,8 @@ ms.locfileid: "73024654"
 |-|-|
 |ID regola|DA0007|
 |Category|Uso di .NET Framework|
-|Metodi di profilatura|All|
-|Messaggio|Rilevato un elevato numero costante di eccezioni. Provare a ridurre l'utilizzo di eccezioni nella logica di programma.|
+|Metodi di profilatura|Tutte le|
+|Message|Rilevato un elevato numero costante di eccezioni. Provare a ridurre l'utilizzo di eccezioni nella logica di programma.|
 |Tipo messaggio|Avviso|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.

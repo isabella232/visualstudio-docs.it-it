@@ -6,14 +6,15 @@ ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ef65019223ba1978ea31fbdb9020993a166da89b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422195"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778102"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Risolvere i problemi relativi agli strumenti per le prestazioni
 Quando si usano gli strumenti di profilatura, potrebbe verificarsi uno dei seguenti problemi:

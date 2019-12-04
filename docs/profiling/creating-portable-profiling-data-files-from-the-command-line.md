@@ -6,14 +6,15 @@ ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b156de17c1f2ee43ccc215cf3723e14acd3c36b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8caa1a4976da39b155edde36d538ca193bd1addd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405808"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779493"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Creare file dei dati di profilatura portabili dalla riga di comando
 Per semplificare la condivisione dei dati di profilatura, è possibile usare lo strumento da riga di comando [VSPerfReport](../profiling/vsperfreport.md) per incorporare i simboli di un'esecuzione della profilatura nel file con estensione *vsp*.
@@ -39,6 +40,6 @@ Per semplificare la condivisione dei dati di profilatura, è possibile usare lo 
 
 - In una finestra del prompt dei comandi, digitare il comando seguente:
 
-   \<percorso><strong>VSPerfReport \<</strong>file VSP> **/SummaryFile** [**/Output:**\<nome file>]
+   \<percorso><strong>VSPerfReport \<</strong>file VSP> **/SummaryFile** [ **/Output:** \<nome file>]
 
    Per impostazione predefinita, il file con estensione *vsps* è denominato con il nome base del file con estensione *vsp*. È possibile specificare un nome alternativo con l'opzione **Output**.

@@ -8,14 +8,15 @@ ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e4dbaf445e52ba6a15ad07dfa061dbd3aef7c7fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442766"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773899"
 ---
 # <a name="save-and-export-performance-tools-data"></a>Salvare ed esportare i dati degli strumenti per le prestazioni
 Questo articolo descrive come salvare ed esportare i file di dati sulle prestazioni.

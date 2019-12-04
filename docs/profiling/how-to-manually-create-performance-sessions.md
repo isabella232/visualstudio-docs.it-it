@@ -12,14 +12,15 @@ ms.assetid: ee2b3e0c-0990-46d9-8de6-c29fa386b15b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ebdfdb1503570e08f38eed8efd278830756e50fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 46c0f1bfeee785feebf1d643b0796c1308053403
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817167"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778830"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedura: Creare manualmente sessioni di prestazioni
 Una sessione di prestazioni può essere creata manualmente. Per eseguire questa operazione, non è necessario aprire un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md).

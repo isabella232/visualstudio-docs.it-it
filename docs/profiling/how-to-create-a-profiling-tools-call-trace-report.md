@@ -9,14 +9,15 @@ ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe32847a37453b6a24a58538b2642fba66e4971
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b184310d837193679a1a5eacf2fbae4ecf29caa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439119"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778986"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un report calltrace degli strumenti di profilatura
 Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.
@@ -28,7 +29,7 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../c
 
 1. Aprire una finestra **Prompt dei comandi**.
 
-2. Al prompt dei comandi digitare il seguente comando:
+2. Al prompt dei comandi digitare quanto segue:
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**
 
@@ -39,5 +40,5 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../c
     |Xml|Genera un report in formato XML.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+- [Procedura: raccogliere dati di Event Tracing for Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)

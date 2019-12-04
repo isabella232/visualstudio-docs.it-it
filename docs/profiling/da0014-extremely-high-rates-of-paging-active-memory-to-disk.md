@@ -11,14 +11,15 @@ ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ebd26b4732399ac53ba1796fcb3c05bf370599
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e068771ba0fcc9b044ba7ff5243a75ceb3161e03
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425461"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779412"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frequenze molto elevate di paging di memoria attiva su disco
 
@@ -26,8 +27,8 @@ ms.locfileid: "63425461"
 |-|-|
 |ID regola|DA0014|
 |Category|Memoria e paging|
-|Metodo di profilatura|Tutti|
-|Messaggio|È stata rilevata una frequenza molto elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria.|
+|Metodo di profilatura|Tutte le|
+|Message|È stata rilevata una frequenza molto elevata di paging di memoria attiva su disco. L'applicazione potrebbe essere associata alla memoria.|
 |Tipo regola|Avviso|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 25 campioni per attivare questa regola.

@@ -11,21 +11,22 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973903"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778999"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procedura: Confrontare i file di dati delle prestazioni
 È possibile confrontare i risultati di due diversi file di dati del profiler, con estensione *vsp* o *vsps*, creando un report o una visualizzazione di confronto "Diff". Il confronto indica le differenze, le regressioni relative alle prestazioni e i miglioramenti riscontrati da una sessione di profilatura all'altra.
 
- Il rapporto Diff presenta una visualizzazione tabella dei dati. La tabella riporta il delta, o le modifiche dalla linea di base. Questo valore viene calcolato determinando la differenza tra il valore precedente, il valore di base e il valore dei risultati della nuova analisi.
+ Il rapporto Diff presenta una visualizzazione tabella dei dati. La tabella contiene il delta o la modifica rispetto al valore di base. Questo valore viene calcolato determinando la differenza tra il valore precedente, il valore di base e il valore dei risultati della nuova analisi.
 
- I confronti tra i dati del profiler possono essere basati su funzioni nel codice, moduli nell'applicazione, righe, puntatori all'istruzione (IP) e tipi.
+ I confronti tra i dati del profiler possono essere basati su funzioni nel codice, moduli nell'applicazione, righe, puntatori all'istruzione e tipi.
 
  È possibile impostare una soglia per ridurre il rumore ed escludere qualsiasi dato nella visualizzazione tabella delle righe che non sono state modificate in base una quantità specificata.
 

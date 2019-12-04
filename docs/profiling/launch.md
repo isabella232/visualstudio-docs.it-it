@@ -6,16 +6,17 @@ ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c105f5176948271c832330f01d0d03d270e69a97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995317"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778609"
 ---
-# <a name="launch"></a>Launch
+# <a name="launch"></a>Avvio
 L'opzione **Launch** avvia il profiler usando il metodo di campionamento e avvia anche l'applicazione specificata.
 
  Per usare l'opzione **Launch**, è necessario specificare il metodo **Sample** nell'opzione **Start**.
@@ -36,7 +37,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **GlobalOn** e **GlobalOff** Riprende (**GlobalOn**) o sospende (**GlobalOff**) la profilatura, ma non termina la sessione di profilatura.
 
- **ProcessOn:** `PID` e **ProcessOff**:`PID` Riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
+ ProcessOn **:** `PID` e **ProcessOff**:`PID` riprende (**ProcessOn**) o sospende (**ProcessOff**) la profilatura per il processo specificato.
 
  **TargetCLR** Specifica la versione di Common Language Runtime (CLR) di .NET Framework da sottoporre a profilatura quando in una sessione di profilatura è caricata più di una versione. Per impostazione predefinita, viene sottoposta a profilatura la prima versione caricata.
 
@@ -45,22 +46,22 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **Console** Avvia l'applicazione della riga di comando specificata in una nuova finestra.
 
- **Args:** `ArgList` Specifica l'elenco di argomenti da passare all'applicazione.
+ **Args:** `ArgList` specifica l'elenco di argomenti da passare all'applicazione.
 
  **LineOff** Disabilita la raccolta dei dati di profilatura a livello di riga.
 
 ## <a name="sampling-options"></a>Opzioni di campionamento
  È possibile specificare una delle opzioni seguenti per l'intervallo di campionamento nella riga di comando di **Launch**. L'intervallo di campionamento predefinito è 10.000.000 di cicli di clock del processore.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] Specifica il numero e il tipo di intervallo di campionamento.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] Specifica il numero e il tipo di intervallo di campionamento.
 
 - **Timer**: esegue il campionamento di ogni `Cycles` dei cicli di clock del processore non interrotti. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 
-- **PF**: esegue il campionamento di ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
+- **PF**: esegue il campionamento ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
 
-- **Sys**: esegue il campionamento di ogni `Events` chiamate del sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
+- **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
 
-- **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei report del profiler.
+- **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei rapporti del profiler.
 
 - **GC**: raccoglie dati di memoria .NET. Per impostazione predefinita, (**allocation**), i dati vengono raccolti in corrispondenza di ogni evento di allocazione di memoria. Quando si specifica il parametro **lifetime**, i dati vengono raccolti anche in corrispondenza di ogni evento di Garbage Collection.
 

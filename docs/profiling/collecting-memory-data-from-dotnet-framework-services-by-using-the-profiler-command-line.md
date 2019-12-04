@@ -1,19 +1,20 @@
 ---
-title: 'Riga di comando del profiler: Ottenere i dati sulla memoria per i servizi di .NET Framework'
+title: 'Riga di comando del profiler: ottenere i dati di memoria dei servizi .NET Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 25f61b68249dfab7faf04c5e0460800947275db4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747810"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779467"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per i servizi .NET Framework tramite il metodo di campionamento dalla riga di comando.
@@ -22,8 +23,8 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
 
 |Attività|Contenuto correlato|
 |----------|---------------------|
-|**Connettere il profiler a un servizio .NET**|-   [Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di memoria tramite la riga di comando](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|
-|**Instrumentare un servizio .NET e raccogliere dati di memoria .NET**|-   [Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|
+|**Connettere il profiler a un servizio .NET**|-   [Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di memoria](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|
+|**Instrumentare un servizio .NET e raccogliere dati di memoria .NET**|-   [Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|
 |**Aggiungere dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate
@@ -46,5 +47,5 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di memoria .NET
 - [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)

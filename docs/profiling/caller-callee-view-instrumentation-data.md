@@ -8,14 +8,15 @@ ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8978d02bd7ca9ca2be49493edede7bf90af5a421
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776867"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773296"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Visualizzazione Chiamante/chiamato: dati di strumentazione
 La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di profilatura per una funzione selezionata e le relative funzioni padre e figlio nell'albero delle chiamate. La visualizzazione Chiamante/chiamato contiene tre griglie.
@@ -29,7 +30,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 ## <a name="general"></a>Generale
  Le colonne generali identificano la funzione in una riga della visualizzazione.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Nome funzione**|Nome della funzione.|
 |**Indirizzo funzione**|Indirizzo della funzione.|
@@ -39,7 +40,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 |**Nome modulo**|Nome del modulo che contiene la funzione.|
 |**Percorso modulo**|Percorso del modulo che contiene la funzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
-|**Nome processo**|Nome del processo.|
+|**Nome processo**|nome del processo.|
 |**Sovraccarico temporale per probe esclusivi**|Sovraccarico temporale per questa funzione causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i valori di tempo esclusivo.|
 |**Sovraccarico temporale per probe inclusivi**|Sovraccarico temporale per questa funzione e per le relative funzioni figlio causato dalla strumentazione. Il sovraccarico per probe è stato sottratto da tutti i tempi inclusivi.|
 |**Type**|Il contesto della funzione:<br /><br /> **0**: la funzione corrente<br /><br /> **1**: una funzione che chiama la funzione corrente<br /><br /> **2**: una funzione chiamata dalla funzione corrente<br /><br /> Solo nei rapporti della riga di comando di [VSPerfReport](../profiling/vsperfreport.md).|
@@ -48,7 +49,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso
  I valori relativi al tempo inclusivo trascorso indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo include il tempo trascorso nelle funzioni figlio e il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo inclusivo trascorso**|- Per la funzione corrente, il tempo dedicato alla funzione. Il valore include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo inclusivo trascorso della funzione corrente generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in istanze di questa funzione generato da chiamate dalla funzione corrente. Il valore include il tempo dedicato alle funzioni figlio della funzione chiamata e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|
 |**% tempo inclusivo trascorso**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo trascorso di questa funzione in questo contesto.|
@@ -59,7 +60,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 ## <a name="elapsed-exclusive-values"></a>Valori di tempo esclusivo trascorso
  I valori relativi al tempo esclusivo trascorso indicano il tempo di esecuzione diretta di una funzione in cima allo stack di chiamate. Il tempo include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma è escluso il tempo trascorso nelle funzioni figlio.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo esclusivo trascorso**|- Per la funzione corrente, il tempo dedicato all'esecuzione diretta della funzione. Il valore include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo esclusivo trascorso della funzione corrente generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in istanze di questa funzione generato da chiamate dalla funzione corrente. Il valore esclude il tempo dedicato alle funzioni figlio della funzione chiamata ma include le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|
 |**% tempo esclusivo trascorso**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo trascorso totale di questa funzione in questo contesto.|
@@ -70,7 +71,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 ## <a name="application-inclusive-values"></a>Valori di tempo inclusivo applicazione
  I valori relativi al tempo inclusivo applicazione indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma include il tempo trascorso nelle funzioni figlio.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo inclusivo applicazione**|- Per la funzione corrente, il tempo dedicato alla funzione e alle relative funzioni figlio. Il valore esclude il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo inclusivo applicazione della funzione corrente generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in istanze di questa funzione generato da chiamate dalla funzione corrente. Il valore include il tempo trascorso nelle funzioni figlio della funzione chiamata ma esclude il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|
 |**% tempo inclusivo applicazione**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo applicazione totale di questa funzione in questo contesto.|
@@ -81,7 +82,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione
  I valori di tempo esclusivo applicazione indicano il tempo trascorso nella funzione. Esclude il tempo trascorso nelle funzioni figlio ed esclude anche le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo esclusivo applicazione**|- Per la funzione corrente, il tempo dedicato all'esecuzione diretta della funzione. Il valore non include il tempo trascorso nelle funzioni figlio né le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per una funzione chiamante, la quantità di tempo esclusivo applicazione della funzione corrente che è stato generato da chiamate da questa funzione chiamante.<br />- Per una funzione chiamata, il tempo trascorso in istanze di questa funzione generato da chiamate dalla funzione corrente. Il valore non include il tempo trascorso nelle funzioni figlio della funzione chiamata né le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.|
 |**% tempo esclusivo applicazione**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo applicazione totale di questa funzione in questo contesto.|
@@ -90,7 +91,7 @@ La visualizzazione Chiamante/chiamato consente di visualizzare informazioni di p
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione in questo contesto.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento](../profiling/caller-callee-view-sampling-data.md)
 - [Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 - [Visualizzazione Chiamante/chiamato: dati di strumentazione di memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

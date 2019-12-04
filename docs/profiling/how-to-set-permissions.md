@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539185"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774589"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 
@@ -63,7 +64,7 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.
 
-     Verrà visualizzata la finestra di dialogo **Proprietà \<nome cartella>**.
+     Verrà visualizzata la finestra di dialogo **Proprietà \<nome cartella>** .
 
 3. Fare clic sulla scheda **Sicurezza** .
 

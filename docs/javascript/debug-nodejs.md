@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73913004"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777933"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
@@ -111,7 +111,7 @@ Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione
 
     Per trovare il codice specifico in un file transpiled, usare **Ctrl**+**F** (**modifica** > **trova e Sostituisci** > **ricerca veloce**).
 
-    Per il codice lato client, per raggiungere un punto di interruzione in un file TypeScript o JSX in genere è necessario usare le [mappe di origine](#generate_source_maps). Una mappa di origine deve essere configurata correttamente per supportare il debug in Visual Studio.
+    Per il codice lato client, per raggiungere un punto di interruzione in un file TypeScript, il file con *estensione VME*o JSX richiede in genere l'uso delle [mappe di origine](#generate_source_maps). Una mappa di origine deve essere configurata correttamente per supportare il debug in Visual Studio.
 
 2. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **Ctrl**+**F5** (**debug** > **Avvia senza eseguire debug**) per eseguire l'app nel browser.
 
@@ -127,7 +127,6 @@ Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione
     > A partire da Visual Studio 2017, quando ci si connette al processo la prima volta eseguendo questi passaggi, è possibile riconnettersi rapidamente allo stesso processo scegliendo **Debug** > **Riconnetti a processo**.
 
 4. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
-
     ::: moniker range=">=vs-2019"
     In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare il Risultati della ricerca.
     ::: moniker-end

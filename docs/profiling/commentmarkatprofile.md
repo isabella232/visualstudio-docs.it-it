@@ -9,14 +9,15 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407560"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777842"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Il metodo `CommentMarkAtProfile` inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file con estensione *vsp*. Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:
 
-|Enumerator|Description|
+|Enumerator|Descrizione|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|Il parametro è minore o uguale a 0. Questi valori sono riservati. L'indicatore e il commento non vengono registrati.|
 |MARK_ERROR_MODE_NEVER|La modalità di profilatura è stata impostata su NEVER al momento della chiamata della funzione. L'indicatore e il commento non vengono registrati.|
@@ -56,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |MARK_TEXTTOOLONG|La stringa supera il numero massimo di 256 caratteri. La stringa di commento viene troncata e vengono registrati l'indicatore e il commento.|
 |MARK_OK|MARK_OK viene restituito per indicare l'esito positivo.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile). I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno del profilo inserito in un solo thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread del file VSP.
 
 > [!IMPORTANT]
@@ -69,12 +70,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 
 |||
 |-|-|
-|**Intestazione**|Includere *VSPerf.h*|
+|**Header**|Includere *VSPerf.h*|
 |**Libreria**|Usare *VSPerf.lib*|
 |**Unicode**|Implementato come CommentMarkAtProfileW (Unicode) e CommentMarkAtProfileA (ANSI).|
 
 ## <a name="example"></a>Esempio
- Il codice seguente illustra l'uso della chiamata della funzione generica CommentMarkAtProfile. Nell'esempio si presuppone l'uso di macro stringa Win32 e delle impostazioni del compilatore per ANSI per stabilire se il codice chiama la funzione abilitata per ANSI.
+ Il codice seguente illustra l'uso della chiamata della funzione generica CommentMarkAtProfile. Nell'esempio si presuppone l'uso di macro di stringa Win32 e delle impostazioni del compilatore per ANSI per stabilire se il codice chiama la versione ANSI della funzione.
 
 ```cpp
 void ExerciseCommentMarkAtProfile(void)

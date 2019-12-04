@@ -1,19 +1,20 @@
 ---
-title: "Riga di comando del profiler: Aprire un'app client .NET Framework, ottenere dati di memoria"
+title: "Riga di comando del profiler: aprire l'app client .NET Framework, ottenere i dati di memoria"
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: c9ee0ae59fd32394e31acc75184d0e55aaae872d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032961"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775356"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di memoria tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma .NET Framework e raccogliere dati di memoria.
@@ -36,9 +37,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-start-an-application-by-using-the-profiler"></a>Per avviare un'applicazione con il profiler
 
-1. Aprire una finestra del prompt dei comandi.
+1. Apri una finestra del prompt dei comandi.
 
-2. Avvia il profiler. Tipo:
+2. Avviare il profiler. Tipo:
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
@@ -48,7 +49,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
-   | Opzione | DESCRIZIONE |
+   | Opzione | Descrizione |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
@@ -59,14 +60,14 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
    - L'opzione [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` è obbligatoria per raccogliere i dati di memoria .NET Framework. Il parametro keyword specifica se raccogliere i dati sull'allocazione di memoria o se raccogliere sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.
 
-     |Parola chiave|DESCRIZIONE|
+     |Parola chiave|Descrizione|
      |-------------|-----------------|
      |**allocation**|Raccoglie solo i dati sull'allocazione di memoria.|
      |**lifetime**|Raccoglie sia i dati sull'allocazione di memoria che quelli sulla durata degli oggetti.|
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/launch**.
 
-   |Opzione|DESCRIZIONE|
+   |Opzione|Descrizione|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Specifica una stringa che contiene gli argomenti della riga di comando da passare all'applicazione di destinazione.|
    |[/console](../profiling/console.md)|Avvia l'applicazione della riga di comando di destinazione in una finestra separata.|
@@ -80,7 +81,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 - Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|DESCRIZIONE|
+    |Opzione|Descrizione|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
@@ -97,7 +98,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     - Chiudere l'applicazione di destinazione.
 
-         -oppure-
+         oppure
 
     - Digitare **VSPerfCmd /detach**
 

@@ -6,14 +6,15 @@ ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2516ff5597151e65276b0fcb2bef5bb81c929cd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965232"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778154"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn e ThreadOff
 In *VSPerfCmd.exe* i sottocomandi **ThreadOff** e **ThreadOn** sono disponibili solo nelle sessioni di profilatura della riga di comando che usano il metodo di strumentazione. **ThreadOff** e **ThreadOn** sospendono e riprendono la profilatura per il thread specificato. **ThreadOff** arresta la profilatura del thread e **ThreadOn** avvia la profilatura del thread.
@@ -43,11 +44,11 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>Opzioni valide
  **ThreadOn** e **ThreadOff** possono essere specificati su righe di comando che contengono anche i sottocomandi seguenti.
 
- **Start:** `Method` Inizializza la sessione di profilatura da riga di comando e imposta il metodo di profilatura specificato.
+ **Start:** `Method` Inizializza la sessione di profilatura della riga di comando e imposta il metodo di profilatura specificato.
 
  **GlobalOff**&#124;**GlobalOn** Arresta o avvia la profilatura per tutti i processi in una sessione di profilatura da riga di comando.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID` Arresta o avvia la profilatura per il processo specificato.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `TID` arresta o avvia la profilatura per il processo specificato.
 
 ## <a name="example"></a>Esempio
  In questo esempio, il sottocomando **ThreadOff** viene usato per arrestare la raccolta dei dati di profilatura, in modo da raccogliere solo i dati di avvio dell'applicazione.

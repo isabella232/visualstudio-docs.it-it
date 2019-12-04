@@ -8,14 +8,15 @@ ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0d9db4660936629c1e9dd6a5b7ff9704a7e7e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814098"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778310"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 Il metodo `ResumeProfile` decrementa il contatore Suspend/Resume per il livello di profilatura specificato.
@@ -33,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 
  Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. Gli enumeratori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:
 
-|Enumerator|Description|
+|Enumerator|Descrizione|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:
 
-|Enumerator|Description|
+|Enumerator|Descrizione|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|L'ID dell'elemento di profilatura non esiste.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Il livello di profilatura specificato non esiste.|
@@ -54,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|La chiamata della funzione di profilatura, il livello di profilatura o la combinazione di chiamata e livello non sono ancora stati implementati.|
 |PROFILE_OK|La chiamata è stata completata correttamente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il valore iniziale del contatore Suspend/Resume è 0. Ogni chiamata a SuspendProfile aggiunge 1 al conteggio di Suspend/Resume. Ogni chiamata a ResumeProfile sottrae 1.
 
  Quando il conteggio di Suspend/Resume è maggiore di 0, lo stato di Suspend/Resume per il livello è OFF. Quando il conteggio è minore o uguale a 0, lo stato di Suspend/Resume è ON.
@@ -65,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>Informazioni sulla funzione
- Intestazione: Dichiarata in *VSPerf.h*
+ *Intestazione: dichiarata in VSPerf.h*
 
  Libreria di importazione: *VSPerf.lib*
 

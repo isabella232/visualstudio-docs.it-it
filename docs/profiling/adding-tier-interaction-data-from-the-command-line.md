@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777864"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779870"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
 
@@ -31,7 +32,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccogliere dati TIP in un computer remoto**
 
-Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs_profiler\_**_\<Piattaforma>_**\_**_\<Linguaggio>_**.exe** dalla cartella _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs_profiler\_** _\<Piattaforma>_ **\_** _\<Linguaggio>_ **.exe** dalla cartella _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 **Report TIP**
 
@@ -58,7 +59,7 @@ Nell'esempio seguente un'applicazione desktop di Windows viene profilata tramite
     vsperfclrenv /interactionon
     ```
 
-3. Avvia il profiler. Digitare il comando seguente:
+3. Avviare il profiler. Digitare il comando seguente:
 
     ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp
@@ -110,7 +111,7 @@ Nell'esempio seguente un servizio di Windows viene profilato tramite il metodo d
 
 6. Aprire una finestra del prompt dei comandi con privilegi di amministratore.
 
-7. Avvia il profiler. Digitare il comando seguente:
+7. Avviare il profiler. Digitare il comando seguente:
 
     ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession

@@ -8,14 +8,15 @@ ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: be5f748f4baa102bda16752904347954f97fea27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980200"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778258"
 ---
 # <a name="startprofile"></a>StartProfile
 La funzione `StartProfile` imposta il contatore su 1 (On) per il livello di profilatura specificato.
@@ -33,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 
  Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. Gli enumeratori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:
 
-|Enumerator|Description|
+|Enumerator|Descrizione|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:
 
-|Enumerator|Description|
+|Enumerator|Descrizione|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|L'ID dell'elemento di profilatura non esiste.|
 |PROFILE_ERROR_LEVEL_NOEXIST|Il livello di profilatura specificato non esiste.|
@@ -54,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|La chiamata della funzione di profilatura, il livello di profilatura o la combinazione di chiamata e livello non sono ancora stati implementati.|
 |PROFILE_OK|La chiamata è stata completata correttamente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  StartProfile e StopProfile controllano lo stato di Start/Stop per il livello di profilatura. Il valore predefinito di Start/Stop è 1. Il valore iniziale può essere modificato nel Registro di sistema. Ogni chiamata a StartProfile imposta Start/Stop su 1. Ogni chiamata a StopProfile lo imposta su 0.
 
  Quando Start/Stop è maggiore di 0, lo stato di Start/Stop per il livello è impostato su ON. Quando è minore o uguale a 0, lo stato di Start/Stop è OFF.
@@ -65,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>Informazioni sulla funzione
- Intestazione: Dichiarata in *VSPerf.h*
+ *Intestazione: dichiarata in VSPerf.h*
 
  Libreria di importazione: *VSPerf.lib*
 

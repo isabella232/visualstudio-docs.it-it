@@ -8,23 +8,24 @@ ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb3117ff480e124aab6333eaed612c0438ed3911
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 521c884a0a25d7fa975a4039e6ec3e36ff4dc020
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830046"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778544"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Visualizzazione Moduli: dati di strumentazione di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati temporali e di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. I dati di profilatura per le funzioni del modulo sono elencati sotto il nodo del modulo.
 
 ## <a name="general"></a>Generale
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della funzione o del modulo.|
+|**Nome**|Nome della funzione o del modulo.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|
 |**File di origine**|File di origine che contiene la definizione di questa funzione.|
@@ -42,7 +43,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 
  I valori di memoria inclusivi ed esclusivi di un modulo sono la somma dei valori di memoria inclusivi ed esclusivi delle funzioni nel modulo.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Allocazioni inclusive**|- Per una funzione, il numero totale di oggetti creati dalla funzione. Questo numero include gli oggetti creati dalle funzioni chiamate dalla funzione.<br />- Per un modulo, il numero di oggetti in un'esecuzione della profilatura che sono stati allocati durante l'esecuzione di almeno una funzione del modulo. Questo numero include gli oggetti allocati nelle funzioni generate da chiamate provenienti dalle funzioni del modulo.|
 |**% allocazioni inclusive**|Percentuale di tutti gli oggetti allocati nell'esecuzione della profilatura che rappresentavano allocazioni inclusive del modulo o della funzione.|
@@ -56,7 +57,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 ## <a name="elapsed-inclusive-values"></a>Valori di tempo inclusivo trascorso
  I valori relativi al tempo inclusivo trascorso indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo inclusivo trascorso**|- Per una funzione, il tempo dedicato alla funzione. Include il tempo dedicato alle funzioni figlio e alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per un modulo, il periodo di tempo di permanenza nello stack di chiamate di almeno una funzione nel modulo.|
 |**% tempo inclusivo trascorso**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo trascorso totale di questo modulo o questa funzione.|
@@ -67,7 +68,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 ## <a name="elapsed-exclusive-values"></a>Valori di tempo esclusivo trascorso
  I valori relativi al tempo esclusivo trascorso indicano il tempo di esecuzione diretta di una funzione in cima allo stack di chiamate. Il tempo include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma è escluso il tempo trascorso nelle funzioni figlio.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo esclusivo trascorso**|- Per una funzione, il tempo dedicato al modulo o alla funzione. Include le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma viene escluso il tempo dedicato alle funzioni figlio.<br />- Per un modulo, la somma del tempo esclusivo trascorso delle funzioni nel modulo.|
 |**% tempo esclusivo trascorso**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo trascorso totale di questo modulo o questa funzione.|
@@ -78,7 +79,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 ## <a name="application-inclusive-values"></a>Valori di tempo inclusivo applicazione
  I valori relativi al tempo inclusivo applicazione indicano il tempo di permanenza di una funzione nello stack di chiamate. Il tempo non include il tempo dedicato alle chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output, ma include il tempo trascorso nelle funzioni figlio.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo inclusivo applicazione**|- Per una funzione, il tempo dedicato alle chiamate alla funzione. Include il tempo dedicato alle funzioni figlio, ma esclude le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.<br />- Per un modulo, il periodo di tempo in cui almeno una funzione del modulo si trovava nello stack di chiamate, escluso il tempo trascorso nelle chiamate al sistema operativo.|
 |**% tempo inclusivo applicazione**|Percentuale del tempo inclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo inclusivo applicazione di questo modulo o questa funzione.|
@@ -89,7 +90,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 ## <a name="application-exclusive-values"></a>Valori di tempo esclusivo applicazione
  I valori relativi al tempo esclusivo applicazione indicano il tempo dedicato al modulo o alla funzione, escluso il tempo trascorso nelle funzioni figlio. Il tempo indicato esclude anche le chiamate al sistema operativo, ad esempio cambi di contesto e operazioni di input/output.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo esclusivo applicazione**|- Per una funzione, il tempo esclusivo applicazione totale di chiamate a questa funzione.<br />- Per un modulo, il tempo esclusivo applicazione totale di tutte le chiamate a funzioni nel modulo.|
 |**% tempo esclusivo applicazione**|Percentuale del tempo esclusivo trascorso totale di esecuzione della profilatura corrispondente al tempo esclusivo applicazione di questo modulo o questa funzione.|
@@ -99,5 +100,5 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Moduli - Campionamento](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Moduli](../profiling/modules-view-instrumentation-data.md)
-- [Visualizzazione Moduli](../profiling/modules-view-sampling-data.md)
+- [Visualizzazione moduli](../profiling/modules-view-instrumentation-data.md)
+- [Visualizzazione moduli](../profiling/modules-view-sampling-data.md)

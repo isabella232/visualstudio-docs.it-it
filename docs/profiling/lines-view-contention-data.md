@@ -8,14 +8,15 @@ ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000625"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778596"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
 Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura. In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione.
@@ -38,7 +39,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 
   La tabella seguente descrive le colonne del rapporto Visualizzazione Righe.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Tempo blocco esclusivo**|Quantità di tempo durante la quale è stata impedita l'esecuzione del codice nell'istruzione a causa di un evento di conflitto. Non è incluso il tempo di blocco nelle funzioni chiamate dall'istruzione.|
 |**% tempo blocco esclusivo**|Percentuale di tutto il tempo di blocco nel processo che costituiva il tempo di blocco esclusivo dell'istruzione.|
@@ -50,12 +51,12 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**% tempo blocco inclusivo**|Percentuale di tutto il tempo di blocco nel processo che costituiva il tempo di blocco inclusivo dell'istruzione.|
 |**Conflitti inclusivi**|Numero di volte in cui è stata impedita l'esecuzione di questa istruzione e delle funzioni chiamate nell'istruzione.|
 |**% conflitti inclusivi**|Percentuale di tutti gli eventi di conflitto nel processo che costituivano conflitti inclusivi di questa istruzione.|
-|**Nome riga**|Identificatore generato dal profiler della riga. L'identificatore usa la sintassi seguente:`SourceFile`**;[**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**Nome riga**|Identificatore generato dal profiler della riga. L'identificatore usa la sintassi seguente:`SourceFile` **;[** `LineNumberStart` **,** `CharacterStart` **]->;[** `LineNumberEnd` **,** `CharacterEnd` **]**|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Nome modulo**|Nome del modulo che contiene l'istruzione.|
 |**Percorso modulo**|Percorso del modulo che contiene l'istruzione.|
 |**ID processo**|ID di processo (PID) del processo profilato.|
-|**Nome processo**|Nome del processo.|
+|**Nome processo**|nome del processo.|
 |**Inizio carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale inizia questa istruzione.|
 |**Fine carattere di origine**|Offset del carattere iniziale nella riga del file di origine in corrispondenza del quale termina questa istruzione.|
 |**File di origine**|Nome del file di origine che contiene l'istruzione della funzione.|
@@ -63,7 +64,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Personalizzare le colonne delle visualizzazioni dei report](../profiling/how-to-customize-report-view-columns.md)
-- [Visualizzazione Righe](../profiling/lines-view.md)
+- [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
+- [Righe (visualizzazione)](../profiling/lines-view.md)
 - [Visualizzazione Righe: campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)
+- [Righe (visualizzazione)](../profiling/lines-view-sampling-data.md)

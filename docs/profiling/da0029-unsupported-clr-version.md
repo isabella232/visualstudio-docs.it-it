@@ -13,14 +13,15 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936291"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777515"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Versione CLR non supportata
 
@@ -29,7 +30,7 @@ ms.locfileid: "62936291"
 |ID regola|DA0029|
 |Category|Uso degli strumenti di profilatura|
 |Metodo di profilatura|Profilatura dalla riga di comando|
-|Messaggio|È stata rilevata una versione CLR non supportata durante la raccolta. È possibile che i simboli gestiti non vengano risolti correttamente.|
+|Message|È stata rilevata una versione CLR non supportata durante la raccolta. È possibile che i simboli gestiti non vengano risolti correttamente.|
 |Tipo regola|Informazioni.|
 
 ## <a name="cause"></a>Causa
@@ -39,4 +40,4 @@ ms.locfileid: "62936291"
  Questo avviso si verifica perché gli strumenti di profilatura non sono in grado di risolvere i simboli per il codice gestito in esecuzione nell'applicazione. Gli strumenti di profilatura non sono in grado di risolvere i simboli di codice gestito per le applicazioni che eseguono [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Nessuno.
+ nessuna.

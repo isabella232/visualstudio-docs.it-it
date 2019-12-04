@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636562"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777946"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -55,7 +55,7 @@ JSX è un'estensione della sintassi JavaScript in genere usata con React per des
 
 webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Può anche trasformare o creare pacchetti di altri asset e risorse. Viene spesso usato per specificare un compilatore, ad esempio Babel o TypeScript, per convertire tramite transpile il codice JSX o TypeScript in codice JavaScript semplice.
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
@@ -88,7 +88,7 @@ Per prima cosa creare un progetto di applicazione Web Node.js.
     Premere **ESC** per chiudere la finestra iniziale. Premere **Ctrl + Q** per aprire la casella di ricerca, digitare **Node.js**, quindi scegliere **Applicazione Web Node.js vuota** (JavaScript). Nella finestra di dialogo visualizzata scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro di sinistra della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi selezionare **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **JavaScript**, quindi scegliere **Node.js**. Nel riquadro centrale scegliere **Applicazione Web Node.js vuota**, digitare il nome **NodejsWebAppBlank**, quindi scegliere **OK**.
     ::: moniker-end
     Se il modello di progetto **Applicazione Web Node.js vuota** non compare, è necessario installare prima il carico di lavoro **Sviluppo Node.js**. Per istruzioni dettagliate, vedere i [Prerequisiti](#prerequisites).
 
@@ -400,6 +400,10 @@ Per questo scenario, usare Chrome.
    Le altre istanze del browser possono impedire l'apertura del browser con il debug abilitato. (È possibile che le estensioni del browser siano in esecuzione e impediscano la modalità di debug completa, pertanto potrebbe essere necessario aprire Gestione attività per individuare le istanze impreviste di Chrome).
 
    ::: moniker range=">=vs-2019"
+   Per Microsoft Edge (cromo), arrestare anche tutte le istanze di Chrome. Poiché entrambi i browser condividono la codebase di cromo, questo fornisce i migliori risultati.
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
    Per Microsoft Edge (cromo), arrestare anche tutte le istanze di Chrome. Poiché entrambi i browser usano la codebase di cromo, questo fornisce i migliori risultati.
    ::: moniker-end
 
@@ -478,7 +482,7 @@ Per questo scenario, usare Chrome.
 5. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare i risultati della ricerca.
+    In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare il Risultati della ricerca.
     ::: moniker-end
     ::: moniker range="vs-2017"
     In Visual Studio 2017 scegliere **codice Webkit** nel campo **Connetti a** , digitare **Chrome** nella casella filtro per filtrare i risultati della ricerca.
@@ -513,7 +517,6 @@ Per questo scenario, usare Chrome.
       * Tutte le istanze del browser sono state chiuse, incluse le estensioni Chrome (mediante Gestione attività), in modo che sia possibile eseguire il browser in modalità di debug. Assicurarsi di avviare il browser in modalità di debug.
 
       * Verificare che il file di mapping di origine includa un riferimento a *./app.TSX* e non *Webpack:///./app.TSX*, che impedisce al debugger di Visual Studio di individuare *app. TSX*.
-
        In alternativa, se è necessario suddividere il codice in *app. TSX* e non è possibile eseguire questa operazione, provare a usare l'istruzione `debugger;` in *app. TSX*o impostare i punti di interruzione nel strumenti di sviluppo di Chrome (o negli strumenti F12 per Microsoft Edge).
 
    * Se è necessario suddividere il codice in *app-bundle. js* e non è possibile eseguire questa operazione, rimuovere il file di mapping di origine, *app-bundle. js. map*.

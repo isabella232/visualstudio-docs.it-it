@@ -6,14 +6,15 @@ ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f452dcb473abf87d8992f36f5326973937e85e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967872"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778245"
 ---
 # <a name="status"></a>Status
 L'opzione *Status* di **VSPerfCmd.exe** visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.
@@ -27,9 +28,9 @@ VSPerfCmd.exe /Status
 ```
 
 #### <a name="parameters"></a>Parametri
- nessuno
+ nessuna
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  L'opzione **Status** consente di visualizzare le informazioni sullo stato seguenti per il profiler.
 
  **Nome file di output** Percorso e nome del file di dati del profiler corrente.

@@ -6,14 +6,15 @@ ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e23c473d281ba72173df43349bf3a44929ddb60f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 04656351b538aa71811bc32d6b45d735f5441441
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263741"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773205"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler
 
@@ -48,5 +49,5 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analizzare visualizzazioni dati e report di memoria .NET
 - [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Riferimenti
+## <a name="reference"></a>Reference
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)

@@ -12,14 +12,15 @@ ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000085"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773981"
 ---
 # <a name="lines-view"></a>Visualizzazione Righe
 La visualizzazione Righe è disponibile solo per i dati del profiler raccolti tramite il metodo di campionamento. La visualizzazione non è disponibile per i dati raccolti mediante la strumentazione.
@@ -43,6 +44,6 @@ La visualizzazione Righe è disponibile solo per i dati del profiler raccolti tr
 - Carattere nella riga di origine in cui termina l'istruzione.
 
 ## <a name="see-also"></a>Vedere anche
-- [Visualizzazione Righe](../profiling/lines-view-sampling-data.md)
+- [Righe (visualizzazione)](../profiling/lines-view-sampling-data.md)
 - [Visualizzazione Righe: campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Visualizzazione Righe](../profiling/lines-view-contention-data.md)
+- [Righe (visualizzazione)](../profiling/lines-view-contention-data.md)

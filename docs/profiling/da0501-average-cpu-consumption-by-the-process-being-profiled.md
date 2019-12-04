@@ -10,14 +10,15 @@ ms.assetid: b01946b4-75e3-47d5-a1a1-cebfae66a3af
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b9ed2a0a27c3be992f6dadd2a6f18c1f8df9bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d9835ad1965d1fd9a31113117eeb07ed62fd8ec4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936090"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777463"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Consumo medio CPU del processo sottoposto a profilatura.
 
@@ -25,9 +26,9 @@ ms.locfileid: "62936090"
 |-|-|
 |ID regola|DA501|
 |Category|Monitoraggio risorse|
-|Metodo di profilatura|Tutti|
-|Messaggio|Consumo medio CPU del processo sottoposto a profilatura.|
-|Tipo regola|Informazioni|
+|Metodo di profilatura|Tutte le|
+|Message|Consumo medio CPU del processo sottoposto a profilatura.|
+|Tipo regola|Informazioni su|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.
 

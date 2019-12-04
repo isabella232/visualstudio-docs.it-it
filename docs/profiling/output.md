@@ -6,14 +6,15 @@ ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d5b39908bc0ffa39533c22ea4effcbe97397b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794217"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778505"
 ---
 # <a name="output"></a>Output
 L'opzione **Output** specifica il nome del file di dati di profilatura per la sessione di prestazioni. L'opzione **Output** deve essere usata con l'opzione **Start**.
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **Output** deve essere usata con l'opzione **Start**.
 
- **Start:** `Method` Specifica il nome del file di output.
+ **Start:** `Method` specifica il nome del file di output.
 
 ## <a name="example"></a>Esempio
  Nell'esempio seguente il file di dati di profilatura viene creato nella directory corrente.

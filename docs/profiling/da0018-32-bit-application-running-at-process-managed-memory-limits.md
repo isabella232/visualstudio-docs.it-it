@@ -10,14 +10,15 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cadf5f605b78dd82ddf205ecfb5b0beded92a59f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d7bebd25f499131b4beda109ebb9ac468c2435b1
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910522"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780065"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Applicazione a 32 bit in esecuzione al limite di memoria gestito dal processo
 
@@ -26,7 +27,7 @@ ms.locfileid: "72910522"
 |ID regola|DA0018|
 |Category|Uso degli strumenti di profilatura|
 |Metodo di profilatura|Campionamento|
-|Messaggio|Le allocazioni di memoria gestita hanno quasi raggiunto il limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria.|
+|Message|Le allocazioni di memoria gestita hanno quasi raggiunto il limite predefinito per un processo a 32 bit. L'applicazione potrebbe essere associata alla memoria.|
 |Tipo regola|Avviso|
 
  Quando si esegue la profilatura tramite i metodi di campionamento, memoria .NET o conflitto di risorse, è necessario raccogliere almeno 10 campioni per attivare questa regola.

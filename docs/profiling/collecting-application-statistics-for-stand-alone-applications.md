@@ -9,20 +9,21 @@ ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 78dbda79e4bff6aaaf5c98ca6c92487c98781d39
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: de399bf493e328e583bdd2765822ca3a66144698
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263449"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779636"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccogliere le statistiche delle applicazioni autonome tramite la riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche sulle prestazioni per le applicazioni client autonome tramite il metodo di campionamento dalla riga di comando.
 
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="common-tasks"></a>Attività comuni
 
@@ -30,7 +31,7 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di statistiche
 |----------|---------------------|
 |**Avviare un'applicazione tramite profilatura**|-   [Procedura: Avviare un'applicazione autonoma e raccogliere statistiche dell'applicazione](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
 |**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione .NET Framework e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
-|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: Connettere il profiler a un'applicazione nativa e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|
+|**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: connettere il profiler a un'applicazione nativa e raccogliere statistiche dell'applicazione](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)|
 |**Aggiungere dati di interazione tra livelli**|-   [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Attività correlate

@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830869"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778050"
 ---
 # <a name="understand-sampling-data-values"></a>Informazioni sui valori dei dati di campionamento
 
@@ -51,5 +52,5 @@ Percentuale del numero totale di campioni esclusivi nell'esecuzione della profil
 
 ## <a name="see-also"></a>Vedere anche
 
-[Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
-[Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)
+[Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
+[analizzare i dati degli strumenti](../profiling/analyzing-performance-tools-data.md) per le prestazioni

@@ -9,14 +9,15 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403629"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778492"
 ---
 # <a name="nameprofile"></a>NameProfile
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.
@@ -49,7 +50,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
   Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. I valori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:
 
-|Enumerator|Description|
+|Enumerator|Descrizione|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|
@@ -62,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/valore restituito
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:
 
-|Enumerator|Description|
+|Enumerator|Descrizione|
 |----------------|-----------------|
 |NAME_ERROR_ID_NOEXIST|L'elemento di profilatura specificato non esiste.|
 |NAME_ERROR_INVALID_NAME|Il nome non è valido.|
@@ -73,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Il testo del nome supera i 32 caratteri, incluso il carattere null e pertanto è stato troncato.|
 |NAME_OK|Il nome è stato registrato correttamente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  A ogni processo o thread è possibile assegnare un solo nome. Dopo aver assegnato un nome a un elemento di profilatura, le chiamate successive a NameProfile per tale elemento vengono ignorate.
 
  Se lo stesso nome viene assegnato a thread o processi diversi, il report includerà i dati da tutti gli elementi di tale livello con lo stesso nome.
@@ -90,12 +91,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 
 |||
 |-|-|
-|**Intestazione**|Includere *VSPerf.h*|
+|**Header**|Includere *VSPerf.h*|
 |**Libreria**|Usare *VSPerf.lib*|
 |**Unicode**|Implementato come `NameProfileW` (Unicode) e `NameProfileA` (ANSI).|
 
 ## <a name="example"></a>Esempio
- Il codice seguente illustra la chiamata della funzione NameProfile. Nell'esempio si presuppone l'uso di macro stringa Win32 e delle impostazioni del compilatore per ANSI per stabilire se il codice chiama la funzione abilitata per ANSI.
+ Il codice seguente illustra la chiamata della funzione NameProfile. Nell'esempio si presuppone l'uso di macro di stringa Win32 e delle impostazioni del compilatore per ANSI per stabilire se il codice chiama la versione ANSI della funzione.
 
 ```cpp
 void ExerciseNameProfile()
