@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189002"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829999"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: introduzione a Visual Basic in Visual Studio
 
@@ -132,6 +132,8 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
 
    ![Finestra del codice con il codice di "What Is Your Name?"](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
+1. Usare il pulsante di **avvio** verde o premere **F5** per compilare ed eseguire la prima app.
+
 1. Quando la finestra della console si apre, immettere il proprio nome. La finestra della console dovrebbe avere un aspetto simile allo screenshot seguente:
 
    ![Finestra della console con "What is your name?", la data, l'ora della console e il messaggio Premere un tasto per continuare](media/vb-console-what-name.png)
@@ -156,6 +158,8 @@ Verrà ora creata un'applicazione che chiede all'utente di immettere il proprio 
     Questo codice sostituisce le istruzioni <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> e <xref:System.Console.ReadKey%2A> esistenti.
 
    ![Finestra del codice con il codice di "What Is Your Name?"](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Usare il pulsante di **avvio** verde o premere **F5** per compilare ed eseguire la prima app.
 
 1. Quando la finestra della console si apre, immettere il proprio nome. La finestra della console dovrebbe avere un aspetto simile allo screenshot seguente:
 

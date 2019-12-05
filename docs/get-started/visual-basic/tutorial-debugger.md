@@ -1,5 +1,5 @@
 ---
-title: 'Esercitazione: Eseguire il debug del codice Visual Basic'
+title: 'Esercitazione: eseguire il debug del codice Visual Basic'
 description: Informazioni su come avviare il debugger di Visual Studio, eseguire il codice un'istruzione alla volta ed esaminare i dati.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 11/27/2018
@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 9b38089a088186a30ebd13cae68d19ac23235bf9
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180188"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829978"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice Visual Basic tramite Visual Studio
 
-Questo articolo descrive le funzionalità del debugger di Visual Studio con una procedura dettagliata. Per una panoramica di alto livello delle funzionalità del debugger, vedere [Presentazione del debugger](../../debugger/debugger-feature-tour.md). Quando si esegue il *debug dell'app* in genere si esegue l'applicazione con il debugger collegato. Durante il debug, il debugger offre diversi modi per conoscere le operazioni eseguite dal codice durante l'esecuzione. È possibile rivedere il codice ed esaminare i valori archiviati nelle variabili, impostare espressioni di controllo nelle variabili per rilevare le modifiche dei valori, esaminare il percorso di esecuzione del codice, verificare l'esecuzione di un ramo del codice e così via. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
+Questo articolo descrive le funzionalità del debugger di Visual Studio con una procedura dettagliata. Per una panoramica di alto livello delle funzionalità del debugger, vedere [Presentazione del debugger](../../debugger/debugger-feature-tour.md). Quando si esegue il *debug dell'app* in genere si esegue l'applicazione con il debugger collegato. Durante il debug, il debugger offre diversi modi per vedere le operazioni eseguite dal codice durante l'esecuzione. È possibile rivedere il codice ed esaminare i valori archiviati nelle variabili, impostare espressioni di controllo nelle variabili per rilevare le modifiche dei valori, esaminare il percorso di esecuzione del codice, verificare l'esecuzione di un ramo del codice e così via. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
 
 In questa esercitazione si eseguono le attività seguenti:
 
@@ -34,7 +34,7 @@ In questa esercitazione si eseguono le attività seguenti:
 > * Ispezione delle variabili nelle finestre dei suggerimenti dati e del debugger
 > * Esaminare lo stack di chiamate
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range=">=vs-2019"
 
@@ -49,13 +49,13 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -63,10 +63,10 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
 ## <a name="create-a-project"></a>Creare un progetto
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Premere **CTRL+Q** per aprire la casella di ricerca, digitare **visual basic**, scegliere **Modelli**, quindi scegliere **Create new Console App (.NET Framework)** (Crea nuova app console - .NET Framework). Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **Visual Basic**, scegliere **modelli**, quindi scegliere **Crea nuovo progetto app console (.NET Core)** o **Crea nuovo progetto app console (.NET Framework)** . Nella finestra di dialogo visualizzata digitare un nome come **get-started-debugging**, quindi scegliere **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual Basic** scegliere **Windows Desktop**, quindi scegliere **App console (.NET Framework)** nel riquadro centrale. Digitare quindi un nome come **get-started-debugging** e fare clic su **OK**.
@@ -76,7 +76,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
     Visual Studio crea il progetto.
 
-1. In *Module1.vb* sostituire il codice seguente
+1. In *Module1. vb*sostituire tutto il codice predefinito
 
     ```vb
     Module Module1
@@ -197,7 +197,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
 ## <a name="start-the-debugger"></a>Avviare il debugger.
 
-1. Premere **F5** (**Debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia debug](../../debugger/media/dbg-tour-start-debugging.png "Avvia debug") nella barra degli strumenti Debug.
+1. Premere **F5** (**debug > Avvia debug**) o il pulsante **Avvia debug** ![Avvia](../../debugger/media/dbg-tour-start-debugging.png "Avvio del debug") debug sulla barra degli strumenti Debug.
 
      **F5** avvia l'app con il debugger collegato al processo dell'app. Fino ad ora, tuttavia, non è stata eseguita alcuna operazione per esaminare il codice. Di conseguenza, viene semplicemente avviata l'app e viene visualizzato l'output della console.
 
@@ -212,7 +212,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
      In questa esercitazione viene esaminata l'app usando il debugger e vengono descritte le funzionalità del debugger.
 
-2. Arrestare il debugger premendo il pulsante di arresto rosso ![Termina debug](../../debugger/media/dbg-tour-stop-debugging.png "Termina debug").
+2. Arrestare il debugger premendo il pulsante di arresto del ![debug](../../debugger/media/dbg-tour-stop-debugging.png "Arresta debug") rosso.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Impostare un punto di interruzione e avviare il debugger
 
@@ -226,7 +226,7 @@ Se occorre installare il carico di lavoro, ma si ha già Visual Studio, passare 
 
     I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice.
 
-2. Premere **F5** o il pulsante **Avvia debug**![Avvia debug](../../debugger/media/dbg-tour-start-debugging.png "Avvia debug"). Viene avviata l'app e viene eseguito il debugger fino alla riga di codice in cui è impostato il punto di interruzione.
+2. Premere **F5** o il pulsante **Avvia debug** per ![avviare il debug](../../debugger/media/dbg-tour-start-debugging.png "Avvio del debug"), l'app viene avviata e il debugger viene eseguito fino alla riga di codice in cui è stato impostato il punto di interruzione.
 
     ![Raggiungere un punto di interruzione](../visual-basic/media/get-started-hit-breakpoint-vb.png)
 
@@ -242,30 +242,30 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Mentre l'esecuzione è in pausa nella chiamata al metodo `shape.Draw` nella funzione `Main`, premere **F11** (oppure scegliere **Debug > Esegui istruzione**) per avanzare nel codice per la classe `Rectangle`.
 
-     ![Usare F11 per eseguire l'istruzione nel codice](../visual-basic/media/get-started-f11-vb.png "F11 Esegui istruzione")
+     ![Usare F11 per eseguire un'istruzione nel codice](../visual-basic/media/get-started-f11-vb.png "Esegui istruzione F11")
 
-     F11 corrisponde al comando **Esegui istruzione** e consente di eseguire l'app un'istruzione alla volta. F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. (Per avanzare più rapidamente nel codice, vengono illustrate anche altre opzioni). Per impostazione predefinita, il debugger ignora il codice non utente (per informazioni dettagliate, vedere [Just My Code](../../debugger/just-my-code.md)).
+     F11 corrisponde al comando **Esegui istruzione** e consente di eseguire l'app un'istruzione alla volta. F11 è un buon metodo per esaminare il flusso di esecuzione nel dettaglio. (Per spostarsi più rapidamente tramite codice, vengono mostrate anche altre opzioni). Per impostazione predefinita, il debugger ignora il codice non utente (se si desiderano maggiori dettagli, vedere [Just My Code](../../debugger/just-my-code.md)).
 
 2. Premere **F10** (oppure scegliere **Debug > Esegui istruzione/routine**) alcune volte fino a quando il debugger non si arresta nella chiamata al metodo `MyBase.Draw` e quindi premere **F10** ancora una volta.
 
-     ![Usare F10 per eseguire l'istruzione/routine nel codice](../visual-basic/media/get-started-step-over-vb.png "F10 Esegui istruzione/routine")
+     ![Usare F10 per eseguire un'istruzione/routine del codice](../visual-basic/media/get-started-step-over-vb.png "Istruzione/routine F10")
 
      Si noti che questa volta il debugger non esegue l'istruzione nel metodo `Draw` della classe di base (`Shape`). **F10** fa avanzare il debugger senza eseguire le istruzioni nelle funzioni o nei metodi del codice dell'app (il codice rimane in esecuzione). Premendo **F10** nella chiamata al metodo `MyBase.Draw` anziché **F11**, è stato ignorato il codice di implementazione per `MyBase.Draw` (non d'interesse ai fini dell'esercitazione).
 
 ## <a name="navigate-code-using-run-to-click"></a>Esplorare il codice con il pulsante per l'esecuzione fino alla riga selezionata dall'utente
 
-1. Nell'editor del codice scorrere verso il basso e passare il mouse sul metodo `Console.WriteLine` nella classe `Triangle` fino a quando non viene visualizzato sulla sinistra il pulsante verde per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../../debugger/media/dbg-tour-run-to-click.png "RunToClick"). La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
+1. Nell'editor di codice scorrere verso il basso e passare il puntatore del mouse sul metodo `Console.WriteLine` nella classe `Triangle` fino a quando non si fa clic **sul pulsante verde Run (** Esegui) per fare ![clic](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") su a sinistra. La descrizione comando per il pulsante è "Continua l'esecuzione fino a qui".
 
-     ![Usare la funzionalità di esecuzione fino alla riga selezionata dall'utente](../visual-basic/media/get-started-run-to-click-vb.png "Esecuzione fino alla riga selezionata dall'utente")
+     ![Utilizzare la funzionalità Esegui fino al clic](../visual-basic/media/get-started-run-to-click-vb.png "Esegui fino alla riga selezionata")
 
    > [!NOTE]
    > Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è una nuova funzionalità di [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. Se non viene visualizzato il pulsante freccia verde, usare **F11** in questo esempio invece di far avanzare il debugger fino alla posizione corretta.
 
-2. Fare clic sul pulsante per l'**esecuzione fino alla riga selezionata dall'utente** ![Esecuzione fino alla riga selezionata dall'utente](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Fare clic sul pulsante **Esegui fino a fare** clic su ![Esegui](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     L'uso di questo pulsante è simile all'impostazione di un punto di interruzione temporaneo. Il pulsante per l'**esecuzione fino alla riga selezionata dall'utente** è uno strumento pratico per l'esplorazione rapida all'interno di un'area visibile del codice dell'app (è possibile fare clic in qualsiasi file aperto).
 
-    Il debugger avanza fino all'implementazione del metodo `Console.WriteLine` per la classe `Triangle`.
+    Il debugger avanza fino all'implementazione del metodo `Console.WriteLine` per la classe `Triangle`. Se il debugger viene sospeso prima in corrispondenza del punto di interruzione impostato in precedenza, utilizzare **Esegui per fare clic** di nuovo per far avanzare il debugger a `Console.WriteLine`.
 
     Mentre l'esecuzione è in pausa, si nota un errore di digitazione. L'output "Drawing a trangle" è errato. È possibile correggerlo ora durante l'esecuzione dell'app nel debugger.
 
@@ -286,11 +286,11 @@ Si supponga di aver completato l'esame del metodo `Draw` nella classe `Triangle`
 
      Questo comando riprende l'esecuzione dell'app e fa avanzare il debugger fino alla fine della funzione corrente.
 
-     L'esecuzione dovrebbe tornare al ciclo `For Each` nel metodo `Main`.
+     L'esecuzione dovrebbe tornare al ciclo `For Each` nel metodo `Main`. In caso contrario, premere **maiusc** + **F11** una seconda volta.
 
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
-Fare clic sul pulsante **Riavvia** ![Riavvia app](../../debugger/media/dbg-tour-restart.png "RestartApp") nella barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
+Fare clic sul pulsante **Riavvia** ![app riavvia](../../debugger/media/dbg-tour-restart.png "RestartApp") sulla barra degli strumenti Debug (**CTRL** + **MAIUSC** + **F5**).
 
 Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene sospeso in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 
@@ -314,7 +314,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-     ![Esaminare le variabili nella finestra Auto](../visual-basic/media/get-started-autos-window-vb.png "Finestra Auto")
+     ![Esaminare le variabili nella finestra auto](../visual-basic/media/get-started-autos-window-vb.png "Finestra auto")
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -347,7 +347,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
     È possibile fare doppio clic su una riga di codice per visualizzare il codice sorgente e modificare anche l'ambito corrente controllato dal debugger. Questa azione non fa avanzare il debugger.
 
-    È anche possibile usare i menu di scelta rapida dalla finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire i punti di interruzione nelle funzioni specificate, far avanzare il debugger usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Per altre informazioni, vedere [Procedura: Esaminare lo stack di chiamate](../../debugger/how-to-use-the-call-stack-window.md).
+    È anche possibile usare i menu di scelta rapida nella finestra **Stack di chiamate** per eseguire altre operazioni. Ad esempio, è possibile inserire i punti di interruzione nelle funzioni specificate, far avanzare il debugger usando **Esegui fino al cursore** e passare a esaminare il codice sorgente. Per altre informazioni, vedere [Procedura: Esaminare lo stack di chiamate](../../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Modificare il flusso di esecuzione
 

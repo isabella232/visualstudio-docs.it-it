@@ -1,5 +1,5 @@
 ---
-title: "Esercitazione: Creare un'app console C# semplice"
+title: 'Esercitazione: creare una semplice C# app console'
 description: Informazioni dettagliate su come creare un'app console C# in Visual Studio.
 ms.custom: seodec18, get-started
 ms.date: 03/23/2019
@@ -15,26 +15,26 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180236"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830004"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: Creare un'app console C# semplice in Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: creare una semplice C# app console in Visual Studio
 
 In questa esercitazione per C# si userà Visual Studio per creare ed eseguire un'app console ed esplorare nello stesso tempo alcune funzionalità dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
+Se non è ancora stato installato Visual Studio, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -98,7 +98,7 @@ Se il modello di progetto **Console App (.NET Core)** non è visualizzato, è po
    >
    > ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *Calculator* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -136,7 +136,7 @@ Si inizierà con alcune operazioni matematiche di base su interi in C#.
 
     ![Animazione del codice matematico su un intero che illustra la funzionalità di completamento automatico di IntelliSense nell'IDE di Visual Studio](./media/integer-math-intellisense.gif)
 
-1. Scegliere **Calculator** per eseguire il programma oppure premere **F5**.
+1. Scegliere il pulsante **Start** verde accanto a **calcolatore** per compilare ed eseguire il programma oppure premere **F5**.
 
    ![Scegliere il pulsante Calculator per eseguire l'app dalla barra degli strumenti](./media/csharp-console-calculator-button.png)
 
@@ -303,7 +303,7 @@ Ora il codice verrà modificato per gestire questo errore.
 
    ![Sezione "switch" aggiornata nell'editor del codice di Visual Studio](./media/csharp-console-calculator-switch-code.png)
 
-Ora, quando si divide un numero qualsiasi per zero, l'app richiederà un altro numero. Anzi, continua a richiedere un numero diverso da zero finché l'utente non ne fornisce uno.
+Ora, quando si divide un numero qualsiasi per zero, l'app richiederà un altro numero. Ancora meglio: non smette di richiedere fino a quando non si specifica un numero diverso da zero.
 
    ![L'editor del codice di Visual Studio mostra l'errore di divisione per zero](./media/csharp-console-calculator-dividebyzero.png)
 
