@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78594a98066dec6cedff6da6f3f1de823bec796
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985008"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879353"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint
   Nelle procedure riportate di seguito viene illustrato come creare colonne o *campi*personalizzati di un sito di SharePoint, nonché un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che utilizza il nuovo tipo di contenuto.
@@ -54,33 +54,48 @@ ms.locfileid: "72985008"
 #### <a name="to-create-the-project"></a>Per creare il progetto
 
 1. Scegliere **nuovo** > **progetto**dal menu **file** di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+::: moniker range="=vs-2017"
+2. Nella finestra di dialogo **nuovo progetto** , in **Visual C#**  o **Visual Basic**, espandere il nodo **Office/SharePoint** , quindi selezionare **soluzioni SharePoint**.
 
-2. Nella finestra di dialogo **nuovo progetto** , in **Visual C#**  o **Visual Basic**, espandere il nodo **SharePoint** , quindi selezionare **2010**.
+3. Nel riquadro **modelli** scegliere il **progetto SharePoint Empty** per la versione specifica di SharePoint installata. Ad esempio, se si dispone di SharePoint 2016 install, selezionare il modello di **progetto sharepoint 2016-vuoto** .  
 
-3. Nel riquadro **modelli** scegliere **progetto SharePoint 2010**, modificare il nome del progetto in **Clinic**, quindi scegliere il pulsante **OK** .
+4. Modificare il nome del progetto in **Clinic**, quindi scegliere il pulsante **OK** .
 
-     Il modello di progetto SharePoint 2010 è un progetto vuoto usato in questo esempio per contenere le colonne del sito e altri elementi del progetto che vengono aggiunti in un secondo momento.
+5. Nella finestra di dialogo **specificare il sito e il livello di sicurezza per il debug** immettere l'URL per il sito di SharePoint locale a cui si desidera aggiungere il nuovo elemento campo personalizzato oppure utilizzare il percorso predefinito (`http://<`*SystemName*`>/)`.
 
-4. Nella pagina **specificare il sito e il livello di sicurezza per il debug** immettere l'URL per il sito di SharePoint locale a cui si desidera aggiungere il nuovo elemento campo personalizzato oppure utilizzare il percorso predefinito (`http://<`*SystemName*`>/)`.
+6. Nella sezione **Qual è il livello di attendibilità per la soluzione SharePoint** usare il valore predefinito **Distribuisci come soluzione creata mediante sandbox**.
+
+     Per ulteriori informazioni sulle soluzioni in modalità sandbox e farm, vedere Considerazioni sulle soluzioni [create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
+
+7. Fare clic sul pulsante **Finish** . Il progetto è ora elencato in **Esplora soluzioni**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+2.  Nella finestra di dialogo **Crea un nuovo progetto** selezionare il **progetto SharePoint Empty** per la versione specifica di SharePoint installata. Ad esempio, se si dispone di SharePoint 2016 install, selezionare il modello di **progetto sharepoint 2016-vuoto** .
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
+
+3. Modificare il nome del progetto in **Clinic**, quindi scegliere il pulsante **Crea** .
+
+4. Nella finestra di dialogo **specificare il sito e il livello di sicurezza per il debug** immettere l'URL per il sito di SharePoint locale a cui si desidera aggiungere il nuovo elemento campo personalizzato oppure utilizzare il percorso predefinito (`http://<`*SystemName*`>/)`.
 
 5. Nella sezione **Qual è il livello di attendibilità per la soluzione SharePoint** usare il valore predefinito **Distribuisci come soluzione creata mediante sandbox**.
 
      Per ulteriori informazioni sulle soluzioni in modalità sandbox e farm, vedere Considerazioni sulle soluzioni [create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
 
-6. Scegliere il pulsante **fine** . Il progetto è ora elencato in **Esplora soluzioni**.
+6. Fare clic sul pulsante **Finish** . Il progetto è ora elencato in **Esplora soluzioni**.
+::: moniker-end
 
 #### <a name="to-add-site-columns"></a>Per aggiungere colonne del sito
 
-1. Aggiungere una nuova colonna del sito. A tale scopo, in **Esplora soluzioni**aprire il menu di scelta rapida per **Clinic**, quindi scegliere **Aggiungi** > **nuovo elemento**.
+1. Aggiungere una nuova colonna del sito. A tale scopo, nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **Clinic** , quindi scegliere **Aggiungi** > **nuovo elemento**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere **colonna sito**, modificare il nome in **nome paziente**, quindi scegliere il pulsante **Aggiungi** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere **colonna sito**, modificare il nome in **patientName**, quindi scegliere il pulsante **Aggiungi** .
 
-3. Nel file *Elements. XML* della colonna del sito lasciare l'impostazione del **tipo** come **testo**e modificare l'impostazione di **gruppo** in **colonne del sito Clinic**. Al termine, il file *Elements. XML* della colonna del sito dovrebbe essere simile all'esempio seguente.
+3. Nel file *Elements. XML* della colonna del sito lasciare l'impostazione del **tipo** come **testo**, modificare l'impostazione di **gruppo** in **colonne del sito Clinic**. Al termine, il file *Elements. XML* della colonna del sito dovrebbe essere simile all'esempio seguente.
 
     ```xml
     <Field
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"
-         Name="Clinic - Patient Name"
+         Name="PatientName"
          DisplayName="Patient Name"
          Type="Text"
          Required="FALSE"
@@ -88,7 +103,11 @@ ms.locfileid: "72985008"
     </Field>
     ```
 
-4. Utilizzando la stessa procedura, aggiungere altre due colonne del sito al progetto: **ID del paziente** (Type = "Integer") e **nome del medico** (Type = "Text"). Impostare il valore di gruppo sulle **colonne del sito Clinic**.
+    > [!TIP]
+    > In Visual Studio verrà automaticamente aggiunto uno spazio nel DisplayName se si usa la convenzione Camel nel nome della colonna del sito.
+    > Si consiglia di non usare spazi nel nome della colonna del sito perché potrebbe causare problemi quando si tenta di distribuire la soluzione in SharePoint.
+
+4. Utilizzando la stessa procedura, aggiungere altre due colonne del sito al progetto: **PatientID** (Type = "Integer") e **doctorname** (Type = "Text"). Impostare il valore di gruppo sulle **colonne del sito Clinic**.
 
 ## <a name="create-a-custom-content-type"></a>Creare un tipo di contenuto personalizzato
  Successivamente, creare un tipo di contenuto, in base al tipo di contenuto contacts, che include le colonne del sito create nella procedura precedente. Basando un tipo di contenuto su un tipo di contenuto esistente, è possibile risparmiare tempo perché il tipo di contenuto di base fornisce diverse colonne del sito da utilizzare nel nuovo tipo di contenuto.
@@ -124,7 +143,7 @@ ms.locfileid: "72985008"
 
 11. Nella barra dei menu scegliere **File** > **Salva tutto**, quindi chiudere la finestra di progettazione del tipo di contenuto.
 
-## <a name="create-a-list"></a>Creazione di un elenco
+## <a name="create-a-list"></a>Creare un elenco
  A questo punto, creare un elenco che usa il nuovo tipo di contenuto e le colonne del sito.
 
 #### <a name="to-create-a-list"></a>Per creare un elenco
@@ -133,11 +152,11 @@ ms.locfileid: "72985008"
 
 2. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-3. In **Visual C#**  o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+3. In  **C# Visual** o **Visual Basic**espandere il nodo **SharePoint** .
 
 4. Nel riquadro **modelli** scegliere il modello **elenco** , modificare il nome in **pazienti**, quindi scegliere il pulsante **Aggiungi** .
 
-5. Lasciare l'opzione **Personalizza l'elenco in base** all'impostazione **predefinita (vuota)** , quindi scegliere il pulsante **fine** .
+5. Lasciare l'impostazione **Personalizza l'elenco in base** all'impostazione **predefinita (elenco personalizzato)** , quindi scegliere il pulsante **fine** .
 
 6. Nella finestra di progettazione elenco scegliere il pulsante **tipi di contenuto** per visualizzare la finestra di dialogo **Impostazioni tipo di contenuto** .
 
@@ -151,7 +170,7 @@ ms.locfileid: "72985008"
 
     - Nome del paziente
 
-    - Telefono abitazione
+    - Telefono (ab.)
 
     - Posta elettronica
 
@@ -170,7 +189,7 @@ ms.locfileid: "72985008"
 
 10. Accanto alle caselle **ID del paziente** e **nome del paziente** Selezionare la casella di controllo **obbligatorio** .
 
-11. Nella scheda **viste** scegliere una riga vuota per creare una visualizzazione. Immettere **i dettagli del paziente**.
+11. Nella scheda **viste** scegliere una riga vuota per creare una visualizzazione. Immettere i **Dettagli del paziente** in una riga vuota nella colonna **nome visualizzazione** .
 
      Nella scheda **viste** è possibile specificare le colonne che si desidera visualizzare nell'elenco SharePoint.
 
@@ -184,7 +203,7 @@ ms.locfileid: "72985008"
 
     - Nome del paziente
 
-    - Telefono abitazione
+    - Telefono (ab.)
 
     - Posta elettronica
 
@@ -211,17 +230,17 @@ ms.locfileid: "72985008"
 
 3. Sulla barra di spostamento veloce scegliere il collegamento **patients (pazienti** ) per visualizzare l'elenco dei **pazienti** .
 
-     I nomi delle colonne nell'elenco devono corrispondere a quelli immessi nella scheda **viste** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+     The column names in the list should match those that you entered on the **Views** tab in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-4. Scegliere il collegamento **Aggiungi nuovo elemento** per creare una scheda informazioni sul paziente.
+4. Choose the **Add new item** link to create a patient information card.
 
-5. Immettere le informazioni nei campi, quindi scegliere il pulsante **Salva** .
+5. Enter information into the fields, and then choose the **Save** button.
 
-     Il nuovo record verrà visualizzato nell'elenco.
+     The new record appears in the list.
 
 ## <a name="see-also"></a>Vedere anche
-- [Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
+- [Create site columns, content types, and lists for SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Procedura: creare un tipo di campo personalizzato](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
-- [Tipi di contenuto](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))
+- [How to: Create a Custom Field Type](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
+- [Content Types](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))
 - [Colonne](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))

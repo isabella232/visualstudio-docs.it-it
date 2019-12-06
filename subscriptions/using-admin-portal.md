@@ -6,14 +6,15 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490698"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879308"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio
+
 Il portale di amministrazione delle sottoscrizioni di Visual Studio offre gli strumenti necessari per gestire le sottoscrizioni dell'organizzazione in un'unica posizione. 
 
 ## <a name="important-considerations"></a>Considerazioni importanti
@@ -41,7 +42,7 @@ Sul lato sinistro della pagina è possibile visualizzare informazioni aggiuntive
 > ![Pagina relativa ai sottoscrittori del portale di amministrazione sottoscrizioni di Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>Pagina Dettagli
-Per altre informazioni sul contratto visualizzato, selezionare la scheda dettagli. Questa scheda visualizza lo stato del contratto, l'account di acquisto, i dettagli dell'organizzazione, gli amministratori con privilegi avanzati e altre informazioni pertinenti.
+Per ulteriori informazioni sul contratto visualizzato, selezionare la scheda Dettagli. Mostra lo stato dell'accordo, l'account di acquisto, i dettagli dell'organizzazione, i super-amministratori e altre informazioni pertinenti.
 > [!div class="mx-imgBorder"]
 > ![Pagina relativa ai dettagli del portale di amministrazione delle sottoscrizioni di Visual Studio](_img/using-admin-portal/details-page.png)
 
@@ -54,7 +55,7 @@ Per altre informazioni sul contratto visualizzato, selezionare la scheda dettagl
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità degli amministratori:
 - [Panoramica delle responsabilità degli amministratori](admin-responsibilities.md)
-- [Inventario dell'ambiente di preproduzione](admin-inventory.md)
+- [Inventario dell'ambiente di pre-produzione](admin-inventory.md)
 - [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 - Usare [Utilizzo massimo](maximum-usage.md) per tenere traccia degli impegni di acquisto

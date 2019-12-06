@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806763"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879282"
 ---
 # <a name="annotating-locking-behavior"></a>Annotazione del comportamento di blocco
 Per evitare i bug di concorrenza in un programma multithread, seguire sempre un'appropriata disciplina di blocco e utilizzare le annotazioni SAL.
@@ -64,7 +64,7 @@ Alcune regole sulla proprietà dei thread da tenere in considerazione:
 ## <a name="locking-annotations"></a>Annotazioni di blocco
 Nella tabella seguente sono elencate le annotazioni di blocco.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Acquires_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|
 |`_Acquires_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione incrementando di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|
@@ -73,7 +73,7 @@ Nella tabella seguente sono elencate le annotazioni di blocco.
 |`_Create_lock_level_(name)`|Un'istruzione che dichiara il simbolo `name` come un livello di blocco in modo che possa essere utilizzato nelle annotazioni `_Has_Lock_level_` e `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Annota qualsiasi oggetto per perfezionare le informazioni sul tipo di un oggetto risorsa. A volte viene usato un tipo comune per diversi tipi di risorse e il tipo di overload non è sufficiente per distinguere i requisiti semantici tra le varie risorse. Di seguito è riportato un elenco di parametri `kind` predefiniti:<br /><br /> `_Lock_kind_mutex_`<br /> ID del tipo di blocco per mutex.<br /><br /> `_Lock_kind_event_`<br /> ID del tipo di blocco per gli eventi.<br /><br /> `_Lock_kind_semaphore_`<br /> ID del tipo di blocco per i semafori.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID del tipo di blocco per i blocchi di rotazione.<br /><br /> `_Lock_kind_critical_section_`<br /> ID del tipo di blocco per le sezioni critiche.|
 |`_Has_lock_level_(name)`|Annota un oggetto di blocco e lo fornisce al livello di blocco `name`.|
-|`_Lock_level_order_(name1, name2)`|Istruzione che fornisce l'ordinamento dei blocchi tra `name1` e `name2`.|
+|`_Lock_level_order_(name1, name2)`|Istruzione che fornisce l'ordinamento dei blocchi tra `name1` e `name2`.  I blocchi con `name1` di livello devono essere acquisiti prima di quelli con livello `name2`|
 |`_Post_same_lock_(expr1, expr2)`|Annota una funzione e indica che lo stato successivo dei due blocchi `expr1` e `expr2`, verrà considerato come se fosse lo stesso oggetto di blocco.|
 |`_Releases_exclusive_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi esclusivi dell'oggetto di blocco denominato da `expr`.|
 |`_Releases_lock_(expr)`|Annota una funzione e indica lo stato successivo della funzione riducendo di uno il conteggio dei blocchi dell'oggetto di blocco denominato da `expr`.|
@@ -88,7 +88,7 @@ Nella tabella seguente sono elencate le annotazioni di blocco.
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrinseci SAL per oggetti di blocco non esposti
 Determinati oggetti Lock non vengono esposti dall'implementazione delle funzioni di blocco associate.  Nella tabella seguente sono elencate le variabili intrinseche SAL che abilitano le annotazioni sulle funzioni che operano sugli oggetti di blocco non esposti.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Global_cancel_spin_lock_`|Viene descritto lo spin lock di annullamento.|
 |`_Global_critical_region_`|Viene descritta l'area critica.|
@@ -98,7 +98,7 @@ Determinati oggetti Lock non vengono esposti dall'implementazione delle funzioni
 ## <a name="shared-data-access-annotations"></a>Annotazioni di accesso ai dati condivise
 Nella tabella seguente sono elencate le annotazioni per l'accesso ai dati condivisi.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Guarded_by_(expr)`|Annota una variabile e indica se la variabile è accessibile, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|
 |`_Interlocked_`|Annota una variabile ed è equivalente a `_Guarded_by_(_Global_interlock_)`.|
@@ -106,15 +106,15 @@ Nella tabella seguente sono elencate le annotazioni per l'accesso ai dati condiv
 |`_Write_guarded_by_(expr)`|Annota una variabile e indica se la variabile è modificata, il conteggio dei blocchi dell'oggetto di blocco denominato da `expr` è di almeno uno.|
 
 ## <a name="smart-lock-and-raii-annotations"></a>Annotazioni Smart Lock e RAII
-I blocchi intelligenti in genere avvolgono i blocchi nativi e ne gestiscono la durata. Nella tabella seguente sono elencate le annotazioni che è possibile usare con i blocchi intelligenti e i modelli di codifica RAII con supporto per la semantica `move`.
+I blocchi intelligenti in genere avvolgono i blocchi nativi e ne gestiscono la durata. Nella tabella seguente sono elencate le annotazioni che è possibile usare con i blocchi intelligenti e i modelli di codifica RAII con supporto per la semantica di `move`.
 
-|Annotazione|Descrizione|
+|Annotation|Descrizione|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Indica all'analizzatore di presumere che sia stato acquisito uno Smart Lock. Questa annotazione prevede un tipo di blocco di riferimento come parametro.|
 |`_Analysis_assume_smart_lock_released_`|Indica all'analizzatore di presumere che sia stato rilasciato uno Smart Lock. Questa annotazione prevede un tipo di blocco di riferimento come parametro.|
-|`_Moves_lock_(target, source)`|Viene descritta l'operazione `move constructor` che trasferisce lo stato di blocco dall'oggetto `source` al `target`. Il `target` viene considerato un oggetto appena costruito, quindi qualsiasi stato precedente viene perso e sostituito con lo stato `source`. Anche `source` viene reimpostato su uno stato pulito senza conteggi dei blocchi o destinazione di aliasing, ma gli alias che vi fanno riferimento rimangono invariati.|
-|`_Replaces_lock_(target, source)`|Viene descritta la semantica `move assignment operator` in cui viene rilasciato il blocco di destinazione prima di trasferire lo stato dall'origine. Questo può essere considerato come una combinazione di `_Moves_lock_(target, source)` preceduta da un `_Releases_lock_(target)`.|
-|`_Swaps_locks_(left, right)`|Descrive il comportamento standard `swap` che presuppone che gli oggetti `left` e `right` scambino il proprio stato. Lo stato scambiato include il conteggio dei blocchi e la destinazione di alias, se presenti. Gli alias che puntano agli oggetti `left` e `right` rimangono invariati.|
+|`_Moves_lock_(target, source)`|Descrive `move constructor` operazione che trasferisce lo stato di blocco dall'oggetto `source` al `target`. Il `target` viene considerato un oggetto appena costruito, quindi qualsiasi stato precedente viene perso e sostituito con lo stato `source`. Anche il `source` viene reimpostato su uno stato pulito senza conteggi dei blocchi o destinazioni di aliasing, ma gli alias che vi fanno riferimento rimangono invariati.|
+|`_Replaces_lock_(target, source)`|Descrive `move assignment operator` semantica in cui viene rilasciato il blocco di destinazione prima di trasferire lo stato dall'origine. Questo può essere considerato come una combinazione di `_Moves_lock_(target, source)` preceduta da un `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Descrive il comportamento di `swap` standard che presuppone che gli oggetti `left` e `right` scambiare il proprio stato. Lo stato scambiato include il conteggio dei blocchi e la destinazione di alias, se presenti. Gli alias che puntano agli oggetti `left` e `right` rimangono invariati.|
 |`_Detaches_lock_(detached, lock)`|Descrive uno scenario in cui un tipo di wrapper di blocco consente la dissociazione con la relativa risorsa contenuta. Questo approccio è simile al funzionamento di `std::unique_ptr` con il puntatore interno: consente ai programmatori di estrarre il puntatore e lasciare il relativo contenitore del puntatore intelligente in uno stato pulito. Una logica simile è supportata da `std::unique_lock` e può essere implementata nei wrapper di blocco personalizzati. Il blocco scollegato mantiene il proprio stato (se presente, il numero di blocchi e la destinazione di aliasing), mentre il wrapper viene reimpostato in modo da contenere zero blocchi e nessuna destinazione di alias, mantenendo i propri alias. Non viene eseguita alcuna operazione sui conteggi dei blocchi (rilascio e acquisizione). Questa annotazione si comporta esattamente come `_Moves_lock_` ad eccezione del fatto che l'argomento scollegato deve essere `return` invece che `this`.|
 
 ## <a name="see-also"></a>Vedere anche
