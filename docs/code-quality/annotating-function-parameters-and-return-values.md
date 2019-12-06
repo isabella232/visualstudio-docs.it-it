@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806801"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879269"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo descrive gli usi tipici delle annotazioni per i parametri di funzione semplici, ovvero scalari e puntatori a strutture e classi, e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di utilizzo comuni per le annotazioni. Per altre annotazioni correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md).
@@ -167,17 +167,17 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
      `_In_reads_bytes_(s)`
 
-     Puntatore a una matrice, letto dalla funzione.  La matrice è di dimensioni `s` elementi, ognuno dei quali deve essere valido.
+     Puntatore a una matrice, letto dalla funzione.  La matrice è di dimensioni `s` elementi, che devono essere tutti validi.
 
      Il `_bytes_` Variant restituisce le dimensioni in byte anziché gli elementi. Utilizzare questo solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzeranno il `_bytes_` Variant solo se una funzione simile che usa `wchar_t` sarebbe.
 
 - `_In_reads_z_(s)`
 
-     Puntatore a una matrice con terminazione null e con dimensioni note. Gli elementi fino al carattere di terminazione null, o `s` se non esiste alcun carattere di terminazione null, devono essere validi in pre-stato.  Se le dimensioni sono note in byte, ridimensionare `s` in base alle dimensioni dell'elemento.
+     Puntatore a una matrice con terminazione null e con dimensioni note. Gli elementi fino al carattere di terminazione null, o `s` se non è presente alcun carattere di terminazione null, devono essere validi in pre-stato.  Se le dimensioni sono note in byte, la scalabilità `s` in base alla dimensione dell'elemento.
 
 - `_In_reads_or_z_(s)`
 
-     Puntatore a una matrice con terminazione null o con dimensioni note o entrambi. Gli elementi fino al carattere di terminazione null, o `s` se non esiste alcun carattere di terminazione null, devono essere validi in pre-stato.  Se le dimensioni sono note in byte, ridimensionare `s` in base alle dimensioni dell'elemento.  (Usato per la famiglia `strn`).
+     Puntatore a una matrice con terminazione null o con dimensioni note o entrambi. Gli elementi fino al carattere di terminazione null, o `s` se non è presente alcun carattere di terminazione null, devono essere validi in pre-stato.  Se le dimensioni sono note in byte, la scalabilità `s` in base alla dimensione dell'elemento.  (Usato per la famiglia di `strn`).
 
 - `_Out_writes_(s)`
 
@@ -185,7 +185,10 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
      Puntatore a una matrice di elementi `s` (resp. bytes) che verranno scritti dalla funzione.  Gli elementi della matrice non devono essere validi in pre-stato e il numero di elementi validi in post-stato non è specificato.  Se sono presenti annotazioni sul tipo di parametro, vengono applicate in post-stato. Si consideri il codice di esempio seguente.
 
-     `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
+     ```cpp
+     typedef _Null_terminated_ wchar_t *PWSTR;
+     void MyStringCopy(_Out_writes_(size) PWSTR p1, _In_ size_t size, _In_ PWSTR p2);
+     ```
 
      In questo esempio, il chiamante fornisce un buffer di elementi `size` per `p1`.  `MyStringCopy` rende validi alcuni di questi elementi. Ancora più importante, l'annotazione `_Null_terminated_` in `PWSTR` significa che `p1` è con terminazione null in fase di post-stato.  In questo modo, il numero di elementi validi è ancora ben definito, ma non è necessario un conteggio di elementi specifico.
 
@@ -193,7 +196,7 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
 - `_Out_writes_z_(s)`
 
-     Puntatore a una matrice di elementi `s`.  Gli elementi non devono essere validi in pre-stato.  Nel post-stato, gli elementi fino al carattere di terminazione null, che deve essere presente, devono essere validi.  Se le dimensioni sono note in byte, ridimensionare `s` in base alle dimensioni dell'elemento.
+     Puntatore a una matrice di elementi `s`.  Gli elementi non devono essere validi in pre-stato.  Nel post-stato, gli elementi fino al carattere di terminazione null, che deve essere presente, devono essere validi.  Se le dimensioni sono note in byte, la scalabilità `s` in base alla dimensione dell'elemento.
 
 - `_Inout_updates_(s)`
 
@@ -205,7 +208,7 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
 - `_Inout_updates_z_(s)`
 
-     Puntatore a una matrice con terminazione null e con dimensioni note. Gli elementi fino al carattere di terminazione null, che deve essere presente, devono essere validi sia nello stato precedente che in quello post-stato.  Il valore nel post-stato si presume essere diverso dal valore nello stato precedente; include la posizione del carattere di terminazione null. Se le dimensioni sono note in byte, ridimensionare `s` in base alle dimensioni dell'elemento.
+     Puntatore a una matrice con terminazione null e con dimensioni note. Gli elementi fino al carattere di terminazione null, che deve essere presente, devono essere validi sia nello stato precedente che in quello post-stato.  Il valore nel post-stato si presume essere diverso dal valore nello stato precedente; include la posizione del carattere di terminazione null. Se le dimensioni sono note in byte, la scalabilità `s` in base alla dimensione dell'elemento.
 
 - `_Out_writes_to_(s,c)`
 
@@ -215,19 +218,20 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
      `_Out_writes_bytes_all_(s)`
 
-     Puntatore a una matrice di elementi `s`.  Gli elementi non devono essere validi in pre-stato.  In post-stato, gli elementi fino all'elemento `c`-esimo devono essere validi.  Se le dimensioni sono note in byte, ridimensionare `s` e `c` in base alle dimensioni dell'elemento o usare la variante `_bytes_`, definita come segue:
+     Puntatore a una matrice di elementi `s`.  Gli elementi non devono essere validi in pre-stato.  In post-stato, gli elementi fino all'elemento `c`-esimo devono essere validi.  È possibile utilizzare il `_bytes_` VARIANT se le dimensioni sono note in byte anziché come numero di elementi.
+     
+     Ad esempio:
 
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     In altre parole, ogni elemento presente nel buffer fino a `s` nello stato precedente è valido nel post-stato.  Esempio:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
+     ```cpp
+     void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
+     void *wordcpy(_Out_writes_all_(s) DWORD *p1, _In_reads_(s) DWORD *p2, _In_ int s);
+     ```
 
 - `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Puntatore a una matrice, che viene letta e scritta dalla funzione.  È di dimensioni `s` elementi, ognuno dei quali deve essere valido nello stato precedente e gli elementi `c` devono essere validi in post-stato.
+     Puntatore a una matrice, che viene letta e scritta dalla funzione.  È di dimensioni `s` elementi, che devono essere tutti validi nello stato precedente e gli elementi `c` devono essere validi in post-stato.
 
      Il `_bytes_` Variant restituisce le dimensioni in byte anziché gli elementi. Utilizzare questo solo se le dimensioni non possono essere espresse come elementi.  Ad esempio, `char` stringhe utilizzeranno il `_bytes_` Variant solo se una funzione simile che usa `wchar_t` sarebbe.
 
@@ -235,7 +239,7 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
      `_Inout_updates_bytes_all_(s)`
 
-     Puntatore a una matrice, che viene letto e scritto dalla funzione degli elementi size `s`. Definito come equivalente a:
+     Puntatore a una matrice, che viene letto e scritto dalla funzione di dimensioni `s` elementi. Definito come equivalente a:
 
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`
 
@@ -245,19 +249,24 @@ Per le annotazioni nella tabella seguente, quando un parametro puntatore viene a
 
 - `_In_reads_to_ptr_(p)`
 
-     Puntatore a una matrice per la quale l'espressione `p` - `_Curr_` (ovvero `p` meno `_Curr_`) viene definita dallo standard del linguaggio appropriato.  Gli elementi precedenti a `p` devono essere validi in pre-stato.
+     Puntatore a una matrice per la quale `p - _Curr_`, ovvero `p` meno `_Curr_`, è un'espressione valida.  Gli elementi precedenti a `p` devono essere validi in pre-stato.
+
+    Di seguito è riportato un esempio:
+    ```cpp
+    int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
+    ```
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Puntatore a una matrice con terminazione null per la quale l'espressione `p` - `_Curr_` (ovvero `p` meno `_Curr_`) viene definita dallo standard del linguaggio appropriato.  Gli elementi precedenti a `p` devono essere validi in pre-stato.
+     Puntatore a una matrice con terminazione null per cui l'espressione `p - _Curr_` (ovvero `p` meno `_Curr_`) è un'espressione valida.  Gli elementi precedenti a `p` devono essere validi in pre-stato.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Puntatore a una matrice per la quale l'espressione `p` - `_Curr_` (ovvero `p` meno `_Curr_`) viene definita dallo standard del linguaggio appropriato.  Gli elementi precedenti a `p` non devono essere validi nello stato precedente e devono essere validi in post-stato.
+     Puntatore a una matrice per la quale `p - _Curr_`, ovvero `p` meno `_Curr_`, è un'espressione valida.  Gli elementi precedenti a `p` non devono essere validi nello stato precedente e devono essere validi in post-stato.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Puntatore a una matrice con terminazione null per la quale l'espressione `p` - `_Curr_` (ovvero `p` meno `_Curr_`) viene definita dallo standard del linguaggio appropriato.  Gli elementi precedenti a `p` non devono essere validi nello stato precedente e devono essere validi in post-stato.
+     Puntatore a una matrice con terminazione null per la quale `p - _Curr_`, ovvero `p` meno `_Curr_`, è un'espressione valida.  Gli elementi precedenti a `p` non devono essere validi nello stato precedente e devono essere validi in post-stato.
 
 ## <a name="optional-pointer-parameters"></a>Parametri facoltativi del puntatore
 
@@ -333,7 +342,7 @@ I parametri del puntatore di output richiedono una notazione speciale per evitar
 
    `_Outptr_opt_result_bytebuffer_to_(s,c)`
 
-   Il puntatore restituito punta a un buffer di dimensioni `s` elementi o byte, di cui il primo `c` è valido.
+   Il puntatore restituito punta a un buffer di dimensioni `s` elementi o byte, di cui il primo `c` sono validi.
 
   Alcune convenzioni di interfaccia presuppongono che i parametri di output vengano annullati in caso di errore.  Ad eccezione del codice COM esplicito, sono preferibili i moduli della tabella seguente.  Per il codice COM, usare i form COM corrispondenti elencati nella sezione precedente.
 
@@ -361,7 +370,7 @@ I parametri del puntatore di output richiedono una notazione speciale per evitar
 
 ## <a name="output-reference-parameters"></a>Parametri di riferimento di output
 
-Un uso comune del parametro Reference è per i parametri di output.  Per i parametri di riferimento di output semplici, ad esempio `int&`,`_Out_` fornisce la semantica corretta.  Tuttavia, quando il valore di output è un puntatore, ad esempio `int *&`, le annotazioni del puntatore equivalenti come `_Outptr_ int **` non forniscono la semantica corretta.  Per esprimere concisamente la semantica dei parametri di riferimento di output per i tipi di puntatore, usare queste annotazioni Composite:
+Un uso comune del parametro Reference è per i parametri di output.  Per i parametri di riferimento di output semplici, ad esempio `int&`, `_Out_` fornisce la semantica corretta.  Tuttavia, quando il valore di output è un puntatore, ad esempio `int *&`, le annotazioni del puntatore equivalenti come `_Outptr_ int **` non forniscono la semantica corretta.  Per esprimere concisamente la semantica dei parametri di riferimento di output per i tipi di puntatore, usare queste annotazioni Composite:
 
 **Annotazioni e descrizioni**
 
@@ -383,11 +392,11 @@ Un uso comune del parametro Reference è per i parametri di output.  Per i param
 
 - `_Outref_result_buffer_to_(s, c)`
 
-     Il risultato deve essere valido in post-stato e non può essere null. Punta al buffer di elementi `s`, di cui il primo `c` è valido.
+     Il risultato deve essere valido in post-stato e non può essere null. Punta al buffer di elementi di `s`, di cui il primo `c` sono validi.
 
 - `_Outref_result_bytebuffer_to_(s, c)`
 
-     Il risultato deve essere valido in post-stato e non può essere null. Punta al buffer di `s` byte di cui è valido il primo `c`.
+     Il risultato deve essere valido in post-stato e non può essere null. Punta al buffer di `s` byte di cui sono validi i primi `c`.
 
 - `_Outref_result_buffer_all_(s)`
 
@@ -407,11 +416,11 @@ Un uso comune del parametro Reference è per i parametri di output.  Per i param
 
 - `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     Il risultato deve essere valido in post-stato, ma può essere null nel post-stato. Punta al buffer di elementi `s`, di cui il primo `c` è valido.
+     Il risultato deve essere valido in post-stato, ma può essere null nel post-stato. Punta al buffer di elementi di `s`, di cui il primo `c` sono validi.
 
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
-     Il risultato deve essere valido in post-stato, ma può essere null nello stato post. Punta al buffer di `s` byte di cui è valido il primo `c`.
+     Il risultato deve essere valido in post-stato, ma può essere null nello stato post. Punta al buffer di `s` byte di cui sono validi i primi `c`.
 
 - `_Outref_result_buffer_all_maybenull_(s)`
 
@@ -494,7 +503,7 @@ Il valore restituito di una funzione è simile a un parametro di `_Out_` ma è a
 
      `_Field_range_(low, hi)`
 
-     Il parametro, il campo o il risultato è compreso nell'intervallo compreso tra `low` e `hi`.  Equivale a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` applicato all'oggetto annotato insieme alle condizioni appropriate di pre-stato o post-stato.
+     Il parametro, il campo o il risultato rientra nell'intervallo (inclusivo) tra `low` `hi`.  Equivale a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` applicato all'oggetto annotato insieme alle condizioni appropriate di pre-stato o post-stato.
 
     > [!IMPORTANT]
     > Sebbene i nomi includano "in" e "out", la semantica di `_In_` e `_Out_` **non** si applicano a queste annotazioni.
@@ -507,7 +516,7 @@ Il valore restituito di una funzione è simile a un parametro di `_Out_` ma è a
 
 - `_Struct_size_bytes_(size)`
 
-     Si applica a una dichiarazione di classe o struct.  Indica che un oggetto valido di quel tipo può essere più grande del tipo dichiarato, con il numero di byte fornito da `size`.  Esempio:
+     Si applica a una dichiarazione di classe o struct.  Indica che un oggetto valido di quel tipo può essere più grande del tipo dichiarato, con il numero di byte fornito dal `size`.  Ad esempio:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
