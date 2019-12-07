@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911448"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903865"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Disabilitare il debugger JIT
 
 È possibile che la finestra di dialogo debugger JIT si apra quando si verifica un errore in un'app in esecuzione e impedire che l'app continui.
 
-Il debugger JIT offre la possibilità di avviare Visual Studio per eseguire il debug dell'errore. Per visualizzare informazioni dettagliate sull'errore o provare a eseguirne il debug, è necessario che sia installato [Visual Studio](https://visualstudio.microsoft.com/) o un altro debugger selezionato.
+Il debugger JIT offre la possibilità di avviare Visual Studio per eseguire il debug dell'errore. Per visualizzare informazioni dettagliate sull'errore o provare a eseguirne il debug, è necessario che sia installato Visual Studio o un altro debugger selezionato.
 
-Se si è un utente di Visual Studio e si vuole provare a eseguire il debug dell'errore, vedere [eseguire il debug usando il debugger JIT](../debugger/debug-using-the-just-in-time-debugger.md). Se non è possibile correggere l'errore o si vuole impedire l'apertura del debugger JIT, è possibile disabilitare il debug JIT [da Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Se si ha già un utente di Visual Studio e si vuole provare a eseguire il debug dell'errore, vedere [eseguire il debug usando il debugger JIT](../debugger/debug-using-the-just-in-time-debugger.md). Se non è possibile correggere l'errore o si vuole impedire l'apertura del debugger JIT, è possibile disabilitare il debug JIT [da Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
 Se Visual Studio è stato installato ma non più, potrebbe essere necessario [disabilitare il debug JIT dal registro di sistema di Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
 

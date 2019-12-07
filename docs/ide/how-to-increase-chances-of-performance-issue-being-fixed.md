@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528434"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903994"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
@@ -40,7 +40,7 @@ Di seguito sono descritti i problemi difficili da diagnosticare senza file di di
 
 -   [CPU elevata:](#slowness-and-high-cpu-issues) Periodi prolungati di utilizzo elevato della CPU inaspettatamente
 
-## <a name="crashes"></a>Arresti anomali
+## <a name="crashes"></a>Crashes
 Si verifica un arresto anomalo quando il processo (Visual Studio) termina in modo imprevisto.
 
 **Arresti anomali direttamente riproducibili**
@@ -116,9 +116,9 @@ Come descritto nella sezione corrispondente sugli arresti anomali, per i problem
 **Non risposta sconosciuta**
 
 Se una mancata risposta si manifesta in modo imprevedibile, all'occorrenza successiva avviare una nuova istanza di Visual Studio e segnalare un problema da tale istanza.
-Nella [schermata "record"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)assicurarsi di selezionare la sessione di Visual Studio bloccata.
+Nella [schermata "record"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)assicurarsi di selezionare la sessione di Visual Studio che non risponde.
 
-Se l'istanza di Visual Studio bloccata è stata avviata in modalità amministratore, anche la seconda istanza deve essere avviata in modalità amministratore.
+Se l'istanza di Visual Studio che non risponde è stata avviata in modalità amministratore, anche la seconda istanza deve essere avviata in modalità amministratore.
 
 >[!NOTE] 
 > **Feedback più prezioso:** Per questo caso, il feedback più prezioso è il dump dell'heap acquisito al momento della mancata risposta.
