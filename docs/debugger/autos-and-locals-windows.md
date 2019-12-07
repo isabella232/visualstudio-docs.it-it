@@ -1,5 +1,5 @@
 ---
-title: Esaminare le variabili - finestre variabili locali e Auto | Microsoft Docs
+title: 'Esaminare le variabili: finestre auto e variabili locali | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 10/18/2018
 ms.topic: conceptual
@@ -15,79 +15,93 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b159f631534135ac568fb03dbffa46ae0360fc47
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564546"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74904094"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Ispezione delle variabili nelle finestre variabili locali e Auto
+# <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Esaminare le variabili nelle finestre auto e variabili locali
 
-Il **Auto** e **variabili locali** finestre mostrano i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. Il **Auto** finestra Mostra le variabili usate attorno al punto di interruzione corrente. Il **variabili locali** finestra Mostra le variabili definite nell'ambito locale, ovvero in genere la funzione corrente o il metodo. Se questa è la prima volta che si è provato a eseguire il debug di codice, è possibile leggere [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
+Nelle finestre **auto** e **variabili locali** vengono visualizzati i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. La finestra **auto** Mostra le variabili usate intorno al punto di interruzione corrente. La finestra variabili **locali** Mostra le variabili definite nell'ambito locale, che in genere è la funzione o il metodo corrente. Se è la prima volta che si tenta di eseguire il debug del codice, è consigliabile leggere il [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
 
- Il **Auto** è disponibile per la finestra C#, codice di Visual Basic, C++ e Python, ma non per JavaScript o F#.
+ La finestra **auto** è disponibile per C#il codice, Visual Basic C++, e Python, ma non per JavaScript o F#.
 
-Per aprire la **Auto** finestra durante il debug, selezionare **Debug** > **Windows** > **Auto**, oppure premere **Ctrl**+**Alt**+**V** > **A**.
+Per aprire la finestra **auto** , durante il debug, selezionare **debug** > **Windows** > **auto**oppure premere **CTRL**+**ALT**+**V** > **A**.
 
-Per aprire la **variabili locali** finestra durante il debug, selezionare **Debug** > **Windows** > **variabili locali**, oppure premere **Alt**+**4**.
+Per aprire la **finestra variabili locali** , durante il debug, selezionare **debug** > **Windows** > **variabili locali**oppure premere **ALT**+**4**.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations).
 
-## <a name="use-the-autos-and-locals-windows"></a>Utilizzare le finestre Auto e variabili locali
+## <a name="use-the-autos-and-locals-windows"></a>Usare le finestre auto e variabili locali
 
-Matrici e oggetti visualizzare nel **Auto** e **variabili locali** windows come controlli ad albero. Selezionare la freccia a sinistra del nome di una variabile per espandere la visualizzazione per mostrare i campi e proprietà. Di seguito è riportato un esempio di un <xref:System.IO.FileStream?displayProperty=fullName> dell'oggetto nel **variabili locali** finestra:
+Le matrici e gli oggetti vengono visualizzati nelle finestre **auto** e **variabili locali** come controlli struttura ad albero. Selezionare la freccia a sinistra di un nome di variabile per espandere la visualizzazione in modo da visualizzare i campi e le proprietà. Di seguito è riportato un esempio di un oggetto <xref:System.IO.FileStream?displayProperty=fullName> nella finestra **variabili locali** :
 
-![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
+![Variabili locali-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
-Un valore in rosso i **variabili locali** oppure **Auto** finestra significa che il valore è stato modificato dopo l'ultima valutazione. La modifica può derivare da una precedente sessione di debug o perché ne hai modificato il valore nella finestra.
+Un valore rosso nella finestra **variabili locali** o **auto** indica che il valore è stato modificato dall'ultima valutazione. La modifica può provenire da una sessione di debug precedente o dal fatto che il valore nella finestra è stato modificato.
 
-Il formato numerico predefinito nelle finestre del debugger è decimal. Per cambiarlo in esadecimale, fare doppio clic nella **variabili locali** oppure **Auto** finestra e selezionare **visualizzazione esadecimale**. Questa modifica interessa tutte le finestre del debugger.
+Il formato numerico predefinito nelle finestre del debugger è Decimal. Per impostarlo come esadecimale, fare clic con il pulsante destro del mouse nella finestra **variabili locali** o **auto** e selezionare **visualizzazione esadecimale**. Questa modifica ha effetto su tutte le finestre del debugger.
 
-## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Modificare i valori delle variabili nella finestra variabili locali o Auto
+## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Modificare i valori delle variabili nella finestra auto o variabili locali
 
-Per modificare i valori della maggior parte delle variabili nel **Auto** oppure **variabili locali** windows, fare doppio clic su valore e immettere il nuovo valore.
+Per modificare i valori della maggior parte delle variabili nelle finestre **auto** o variabili **locali** , fare doppio clic sul valore e immettere il nuovo valore.
 
 Si può immettere un'espressione al posto di un valore, ad esempio `a + b`. Il debugger accetta la maggior parte delle espressioni di linguaggio valide.
 
 Nel codice C++ nativo potrebbe essere necessario qualificare il contesto di un nome di variabile. Per altre informazioni, vedere [Context Operator (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
->Assicurarsi di che comprendere le conseguenze prima di modificare i valori ed espressioni. Alcuni dei problemi possibili sono:
+>Assicurarsi di aver compreso le conseguenze prima di modificare i valori e le espressioni. Di seguito sono riportati alcuni problemi possibili:
 >
->- La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. Ad esempio, la valutazione `var1 = ++var2` modifica il valore di entrambe `var1` e `var2`. Queste espressioni le seconde esiste [effetti collaterali](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effetti collaterali può causare risultati imprevisti se non si è necessario tenere in considerazione.
+>- La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. La valutazione `var1 = ++var2`, ad esempio, modifica il valore di `var1` e `var2`. Queste espressioni si dicono avere [effetti collaterali](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Gli effetti collaterali possono provocare risultati imprevisti se non si è a conoscenza di essi.
 >
->- La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può comportare modifiche ad alcuni dei bit in una variabile a virgola mobile.
+>- La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può causare modifiche ad alcuni bit della variabile a virgola mobile.
 
 ::: moniker range=">= vs-2019" 
-## <a name="search-in-the-autos-or-locals-window"></a>Eseguire la ricerca nella finestra variabili locali o Auto
+## <a name="search-in-the-autos-or-locals-window"></a>Cerca nella finestra auto o variabili locali
 
-È possibile cercare parole chiave nelle colonne del nome, valore e tipo di **Auto** o **variabili locali** finestra usando la barra di ricerca sopra ogni finestra. Premere INVIO o selezionare una delle frecce per eseguire una ricerca. Per annullare una ricerca in corso, selezionare l'icona "x" nella barra di ricerca.
+È possibile cercare le parole chiave nelle colonne nome, valore e tipo della finestra **auto** o **variabili locali** usando la barra di ricerca sopra ogni finestra. Premere INVIO o selezionare una delle frecce per eseguire una ricerca. Per annullare una ricerca in corso, selezionare l'icona "x" nella barra di ricerca.
 
-Utilizzare le frecce sinistra e destra (MAIUSC+F3 e F3, rispettivamente) per spostarsi tra trovare corrispondenze.
+Utilizzare le frecce sinistra e destra (MAIUSC + F3 e F3 rispettivamente) per spostarsi tra le corrispondenze trovate.
 
-![Ricerca nella finestra variabili locali](../debugger/media/ee-search-locals.png "ricerca nella finestra variabili locali")
+![Cerca nella finestra variabili locali](../debugger/media/ee-search-locals.png "Cerca nella finestra variabili locali")
 
-Per eseguire una ricerca più o meno approfonditi, usare il **ricerca più approfondita** elenco a discesa nella parte superiore del **Auto** o **variabili locali** finestra consente di selezionare quanti livelli di nidificazione per la ricerca in oggetti annidati. 
+Per rendere la ricerca più o meno completa, usare l'elenco a discesa Cerca più a **fondo** nella parte superiore della finestra **auto** o **variabili locali** per selezionare il numero di livelli che si desidera cercare negli oggetti annidati. 
+
+## <a name="pin-properties-in-the-autos-or-locals-window"></a>Aggiungere le proprietà nella finestra auto o variabili locali
+
+> [!NOTE]
+> Questa funzionalità è supportata per .NET Core 3,0 o versione successiva.
+
+È possibile esaminare rapidamente gli oggetti in base alle relative proprietà nelle finestre auto e variabili locali con lo strumento **Proprietà aggiungibili** .  Per usare questo strumento, passare il puntatore del mouse su una proprietà e selezionare l'icona a forma di puntina visualizzata oppure fare clic con il pulsante destro del mouse e selezionare l'opzione **Aggiungi membro come preferito** nel menu di scelta rapida risultante.  Questa operazione consente di eseguire il bubbling della proprietà nella parte superiore dell'elenco delle proprietà dell'oggetto e il nome e il valore della proprietà vengono visualizzati nella colonna **valore** .  Per Rimuovi una proprietà, selezionare di nuovo l'icona del PIN oppure selezionare il **membro Rimuovi come opzione preferita** nel menu di scelta rapida.
+
+![Aggiungere le proprietà nella finestra variabili locali](../debugger/media/basic-pin.gif "Aggiungere le proprietà nella finestra variabili locali")
+
+È anche possibile impostare i nomi delle proprietà e filtrare le proprietà non bloccate quando si visualizza l'elenco delle proprietà dell'oggetto nelle finestre auto o variabili locali.  È possibile accedere a ogni opzione selezionando i pulsanti sulla barra degli strumenti sopra le finestre auto o variabili locali.
+
+![Filtrare le proprietà dei preferiti](../debugger/media/filter-pinned-properties-locals.png "Filtra proprietà Preferiti")
+![impostare i nomi delle proprietà](../debugger/media/toggle-property-names.gif "Imposta/Nascondi nomi proprietà")
 
 ::: moniker-end
 
-## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modificare il contesto per la finestra variabili locali o Auto
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modificare il contesto per la finestra auto o variabili locali
 
-È possibile usare la **posizione di Debug** sulla barra degli strumenti per selezionare una funzione desiderato, thread o processo che modifica il contesto per il **Auto** e **variabili locali** windows.
+È possibile utilizzare la barra degli strumenti **posizione di debug** per selezionare la funzione, il thread o il processo desiderato, che modifica il contesto per le finestre **auto** e **variabili locali** .
 
-Per abilitare la **posizione di Debug** sulla barra degli strumenti, fare clic su una parte vuota dell'area della barra degli strumenti e selezionare **posizione di Debug** dall'elenco a discesa o selezione **visualizzazione**  >   **Le barre degli strumenti** > **posizione di Debug**.
+Per abilitare la barra degli strumenti **posizione di debug** , fare clic su una parte vuota dell'area della barra degli strumenti, selezionare **posizione di debug** nell'elenco a discesa oppure selezionare **visualizza** > **barre degli strumenti** > **percorso di debug**.
 
-Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il punto di interruzione, sospende l'esecuzione ed è possibile visualizzare il percorso nel **posizione di Debug** sulla barra degli strumenti.
+Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il punto di interruzione, l'esecuzione viene sospesa ed è possibile visualizzarla nella barra degli strumenti **posizione di debug** .
 
-![Barra degli strumenti posizione di debug](../debugger/media/debuglocationtoolbar.png "barra degli strumenti posizione di Debug")
+![Barra degli strumenti posizione di debug](../debugger/media/debuglocationtoolbar.png "Barra degli strumenti Posizione di debug")
 
-## <a name="bkmk_whatvariables"></a> Le variabili nella finestra Auto (C#, C++, Visual Basic, Python)
+## <a name="bkmk_whatvariables"></a>Variabili nella finestra auto (C#, C++, Visual Basic, Python)
 
-Linguaggi di codice differenti vengono visualizzate diverse variabili nel **Auto** finestra.
+Diversi linguaggi di codice visualizzano variabili diverse nella finestra **auto** .
 
-- In C# e Visual Basic la finestra **Auto** visualizza tutte le variabili usate nella riga corrente o precedente. Ad esempio, in C# o Visual Basic del codice, dichiarare le variabili seguenti quattro:
+- In C# e Visual Basic la finestra **Auto** visualizza tutte le variabili usate nella riga corrente o precedente. Ad esempio, in C# o Visual Basic codice dichiarare le quattro variabili seguenti:
 
    ```csharp
        public static void Main()
@@ -100,13 +114,13 @@ Linguaggi di codice differenti vengono visualizzate diverse variabili nel **Auto
        }
    ```
 
-   Impostare un punto di interruzione sulla riga `c = 3;`, e avviare il debugger. Quando l'esecuzione viene sospesa, il **Auto** finestra verrà visualizzato:
+   Impostare un punto di interruzione nella riga `c = 3;`e avviare il debugger. Quando l'esecuzione viene sospesa, viene visualizzata la finestra **auto** :
 
-   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
+   ![Auto-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    Il valore di `c` è 0, perché la riga `c = 3` non è ancora stata eseguita.
 
-- In C++, il **Auto** finestra Visualizza le variabili usate almeno tre righe prima della riga corrente in cui l'esecuzione viene sospesa. Nel codice C++, ad esempio, dichiarano sei variabili:
+- In C++la finestra **auto** Mostra le variabili usate in almeno tre righe prima della riga corrente in cui l'esecuzione viene sospesa. Ad esempio, nel C++ codice dichiarare sei variabili:
 
    ```C++
        void main() {
@@ -120,16 +134,16 @@ Linguaggi di codice differenti vengono visualizzate diverse variabili nel **Auto
        }
    ```
 
-    Impostare un punto di interruzione sulla riga `e = 5;` ed eseguire il debugger. Quando si arresta l'esecuzione, il **Auto** finestra verrà visualizzato:
+    Impostare un punto di interruzione nella riga `e = 5;` ed eseguire il debugger. Quando l'esecuzione viene arrestata, viene visualizzata la finestra **auto** :
 
-    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
+    ![AutoC++](../debugger/media/autos-cplus.png "AutoC++")
 
     La variabile `e` non è inizializzata, perché la riga `e = 5` non è ancora stata eseguita.
 
 ## <a name="bkmk_returnValue"></a> View return values of method calls
- Nel codice .NET e C++, è possibile esaminare i valori restituiti nel **Auto** finestra quando eseguono istruzioni / o all'esterno di una chiamata al metodo. Chiamata al metodo visualizzazione restituire i valori possono essere utili quando non vengono archiviate in variabili locali. È stato usato un metodo come parametro o come valore restituito di un altro metodo.
+ In .NET e C++ nel codice è possibile esaminare i valori restituiti nella finestra **auto** quando si esegue l'istruzione/routine di una chiamata al metodo. La visualizzazione dei valori restituiti della chiamata al metodo può essere utile quando non vengono archiviati in variabili locali. Un metodo può essere utilizzato come parametro o come valore restituito di un altro metodo.
 
- Il seguente, ad esempio, C# codice aggiunge i valori restituiti di due funzioni:
+ Il codice seguente C# , ad esempio, aggiunge i valori restituiti di due funzioni:
 
 ```csharp
 static void Main(string[] args)
@@ -153,17 +167,17 @@ private static int subtractVars(int i, int j)
 }
 ```
 
-Per visualizzare i valori restituiti di `sumVars()` e `subtractVars()` chiamate nella finestra Auto:
+Per visualizzare i valori restituiti delle chiamate al metodo `sumVars()` e `subtractVars()` nella finestra auto:
 
 1. Impostare un punto di interruzione nella riga `int x = sumVars(a, b) + subtractVars(c, d);` .
 
-1. Avviare il debug e quando si mette in pausa l'esecuzione nel punto di interruzione, selezionare **Esegui istruzione/routine** o premere **F10**. Dovrebbe essere i seguenti valori restituiti nel **Auto** finestra:
+1. Avviare il debug e quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, selezionare **Esegui istruzione** /routine o premere **F10**. Nella finestra **auto** vengono visualizzati i valori restituiti seguenti:
 
-  ![Valore restituito di Auto C# ](../debugger/media/autosreturnvaluecsharp2.png "Auto valore restituitoC#")
+  ![Valore restituito autoC#](../debugger/media/autosreturnvaluecsharp2.png "Valore restituito autoC#")
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md)
-- [Presentazione di debug](../debugger/debugger-feature-tour.md)
+- [Esaminare prima di tutto il debug](../debugger/debugger-feature-tour.md)
 - [Finestre del debugger](../debugger/debugger-windows.md)
