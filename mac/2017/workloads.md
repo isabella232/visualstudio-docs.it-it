@@ -1,23 +1,23 @@
 ---
 title: Carichi di lavoro di Visual Studio per Mac
 description: Questo articolo descrive i vari carichi di lavoro che possono essere usati in Visual Studio per Mac, tra cui le app per dispositivi mobili Xamarin, ASP.NET Core e Unity per i giochi.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985428"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985110"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Carichi di lavoro di Visual Studio per Mac
 
 Visual Studio per Mac è preinstallato con carichi di lavoro per lo sviluppo dei tipi seguenti di app:
 
 * App per dispositivi mobili multipiattaforma con .NET usando Xamarin per Android, iOS, tvOS e watchOS
-* App desktop Mac
+* App desktop per Mac
 * App .NET Core
 * App Web ASP.NET Core
 * Giochi Unity multipiattaforma

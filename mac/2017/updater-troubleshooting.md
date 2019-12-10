@@ -1,19 +1,19 @@
 ---
 title: Errori durante il recupero di informazioni sugli aggiornamenti
 description: Istruzioni su come risolvere il problema quando viene visualizzato l'errore 'Si è verificato un errore durante il recupero delle informazioni sugli aggiornamenti'. In Visual Studio 2017 per Mac
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
-ms.openlocfilehash: 6996bd56571c75f31893d7df5b8237fc52b378ae
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 2ff0703171f5854baed2dd9be3767571a930bcb7
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824077"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983487"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: Errori durante il recupero di informazioni sugli aggiornamenti
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Risoluzione dei problemi: l'aggiornamento contiene errori durante il recupero delle informazioni
 
 In rare occasioni può essere visualizzato il messaggio di errore "Si è verificato un errore durante il recupero delle informazioni sugli aggiornamenti" quando si tenta di [aggiornare Visual Studio per Mac](update.md). In questo caso, provare i passaggi seguenti per risolvere il problema:
 

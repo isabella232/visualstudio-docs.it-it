@@ -1,17 +1,17 @@
 ---
 title: Estensione di Visual Studio per Mac
 description: Le funzioni e funzionalità di Visual Studio per Mac possono essere estese con moduli chiamati pacchetti di estensione. La prima parte di questa guida permette di creare un semplice pacchetto di estensione per Visual Studio per Mac per inserire la data e l'ora in un documento. La seconda parte della guida presenta le nozioni di base relative al sistema dei pacchetti di estensione e alcune delle principali API che costituiscono la base di Visual Studio per Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 76f8f4945542d1b2fd4dce230d750db4c965af76
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716847"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983262"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -28,7 +28,7 @@ Perché un pacchetto di estensione possa essere compilato da Visual Studio per M
 Il vantaggio di questa progettazione modulare è il fatto che Visual Studio per Mac è estendibile, ovvero sono disponibili molti punti di estensione su cui è possibile basare i pacchetti di estensione personalizzati. Alcuni esempi degli attuali pacchetti di estensione includono il supporto per C# ed F#, strumenti debugger e modelli di progetto.
 
 > [!NOTE]
-> in presenza di un progetto Addin Maker creato prima di Addin Maker 1.2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
+> Se si dispone di un progetto di creatore di componenti aggiuntivi creato prima del componente aggiuntivo Maker 1,2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 

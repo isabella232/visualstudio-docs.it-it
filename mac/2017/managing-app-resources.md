@@ -1,16 +1,16 @@
 ---
 title: Gestione delle risorse delle app
 description: Questo articolo fa riferimento a varie guide che descrivono come gestire le risorse delle app per un'ampia gamma di piattaforme in Visual Studio per Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c3572edc46d4f69a338ba655b32254126a7fce9c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997199"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985284"
 ---
 # <a name="managing-app-resources"></a>Gestione delle risorse delle app
 

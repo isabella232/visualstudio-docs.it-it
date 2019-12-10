@@ -1,16 +1,16 @@
 ---
 title: Informazioni sulle configurazioni della build
 description: Questo articolo descrive le varie configurazioni della build disponibili in Visual Studio per Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824409"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983591"
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
 
@@ -53,7 +53,7 @@ L'elenco seguente offre alcuni esempi di dati che possono essere inclusi nelle c
 * Progetto .NET normale
   * App di avvio alternativa
   * Argomenti di avvio
-  * Directory di lavoro
+  * Directory operativa
   * Variabili di ambiente
   * Opzioni di runtime di Mono (da usare solo se in esecuzione in Mono)
 * Progetto Android

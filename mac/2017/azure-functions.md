@@ -1,23 +1,23 @@
 ---
 title: Introduzione alle funzioni di Azure
 description: Uso delle funzioni di Azure in Visual Studio per Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 6755f6fd681dac87741b9de6a8d1fcd123a8ad9b
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 85e66711c8bfe65319bf6af90ce0452478c4b7f8
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024695"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983477"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
 Le funzioni di Azure sono un metodo per la creazione e l'esecuzione di frammenti di codice gestiti dagli eventi (funzioni) nel cloud, senza richiedere l'aggiunta o la gestione esplicita di elementi di infrastruttura. Per altre informazioni sulle funzioni di Azure, vedere la [documentazione di Funzioni di Azure](/azure/azure-functions/).
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
 
 Gli strumenti Funzioni di Azure sono inclusi in **Visual Studio per Mac 7.5**.
 
@@ -95,7 +95,7 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 3. Nella finestra di dialogo **Pubblica in Servizi app di Azure** è possibile selezionare un servizio app esistente o crearne uno nuovo facendo clic **Nuovo**.
 4. Nella finestra di dialogo **Crea nuovo servizio app** immettere le impostazioni: ![Opzione di menu Pubblica in Azure](media/azure-functions-image7.png)
 
-    |Impostazioni  |Descrizione  |
+    |Impostazione di  |Descrizione  |
     |---------|---------|
     |**Nome del servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
     |**Sottoscrizione**|La sottoscrizione di Azure da usare.|

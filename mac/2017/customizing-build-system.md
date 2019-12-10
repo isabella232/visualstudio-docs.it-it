@@ -1,16 +1,16 @@
 ---
 title: Personalizzazione del sistema di compilazione
 description: Questo articolo è una breve introduzione al sistema di compilazione MSBuild usato da Visual Studio per Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932833"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983444"
 ---
 # <a name="customizing-the-build-system"></a>Personalizzazione del sistema di compilazione
 

@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189606"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955036"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -192,7 +192,7 @@ L'esperienza è stata aggiornata per consentire spostamenti più efficienti e co
 
 Per ulteriori informazioni sulle nuove funzionalità di produttività, vedere il post di Blog relativo a [Visual Studio 2017: produttività, prestazioni e partner](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/) .
 
-### <a name="visual-c"></a>Visual C++
+### <a name="visual-c"></a>Visual C++ -
 
 Sono stati introdotti numerosi miglioramenti in Visual Studio, tra cui la distribuzione delle istruzioni di base di C++ con Visual Studio, l'aggiornamento del compilatore aggiungendo il supporto avanzato per le funzionalità di C++11 e C++, l'aggiunta e l'aggiornamento di funzionalità nelle librerie di C++. Sono stati anche migliorati i carichi di lavoro di installazione, le prestazioni dell'IDE di C++ e altro.
 
@@ -226,7 +226,7 @@ Per altre informazioni, vedere il post del blog [Use the new Exception Helper in
 
 Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/view-historical-application-state.md).
 
-### <a name="containerization"></a>Creazione di contenitori
+### <a name="containerization"></a>Containerizzazione
 
 I contenitori consentono di ottenere una maggiore densità delle app e di ridurre i costi di distribuzione oltre a offrire miglioramenti della produttività e della flessibilità DevOps.
 
@@ -389,6 +389,6 @@ A volte un messaggio non è sufficiente per comunicare il reale impatto di un pr
 * [Novità di Visual Studio 2017 SDK](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Novità di Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novità di C#6](/dotnet/csharp/whats-new)
-* [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Novità per Team Foundation Server)
+* [What's New for Team Foundation Server](/azure/devops/server/whats-new) (Novità per Team Foundation Server)
 * [Novità di Visual Studio per Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Novità di Visual Studio 2019](whats-new-visual-studio-2019.md)

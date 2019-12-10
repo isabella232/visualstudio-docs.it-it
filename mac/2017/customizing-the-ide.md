@@ -1,17 +1,17 @@
 ---
 title: Personalizzazione dell'IDE
 description: È possibile personalizzare Visual Studio per Mac in diversi modi, consentendo agli utenti di sviluppare app in un ambiente in grado di soddisfare sia le esigenze di efficienza che quelle estetiche. Questo argomento esamina i diversi modi in cui è possibile adattare Visual Studio per Mac alle proprie esigenze.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
-ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931872"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984777"
 ---
 # <a name="customizing-the-ide"></a>Personalizzazione dell'IDE
 
@@ -29,8 +29,8 @@ Per cambiare tema in Visual Studio per Mac, scegliere **Visual Studio > Preferen
 
 Visual Studio per Mac è disponibile nelle 14 lingue seguenti ed è quindi accessibile a un maggior numero di sviluppatori:
 
-* Cinese (Cina)
-* Cinese (Taiwan)
+* Cinese - Cina
+* Cinese - Taiwan
 * Ceco
 * Francese
 * Tedesco

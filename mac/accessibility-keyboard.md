@@ -2,15 +2,15 @@
 title: Navigazione da tastiera in Visual Studio per Mac
 description: Uso di Visual Studio per Mac con i comandi della tastiera
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
-ms.openlocfilehash: aad28b9cf9c697b05d43f2869ec8327ea6294b4f
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342353"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985101"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navigazione da tastiera in Visual Studio per Mac
 
@@ -28,7 +28,7 @@ Visual Studio per Mac dispone di una gamma di tasti di scelta rapida per varie a
 
 1. Selezionare **Visual Studio (menu)**  > **Preferenze (&#8984;,)** .
 
-1. Passare a **ambiente** > **combinazioni di tasti**.
+1. Passare a **ambiente** > le **combinazioni di tasti**.
 
 1. Scorrere l'elenco o cercare il collegamento o il comando.
 
@@ -43,7 +43,7 @@ Visual Studio per Mac dispone di una gamma di tasti di scelta rapida per varie a
 
 ## <a name="useful-keyboard-shortcuts"></a>Tasti di scelta rapida utili
 
-|Funzionalità         |Descrizione                                   |Collegamento         |
+|Caratteristica         |Descrizione                                   |Metodo rapido         |
 |----------------|----------------------------------------------|-----------------|
 |Esplorazione dell'interfaccia utente   |Spostarsi tra tutti gli elementi dell'interfaccia utente.               |**⇥**, **⇧ ⇥**    |
 |Interagire        |Selezionare il controllo attualmente attivo.         |**␣**            |

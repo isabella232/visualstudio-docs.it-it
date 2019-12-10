@@ -1,18 +1,18 @@
 ---
 title: Codice di impostazione come commento
 description: Questo articolo descrive l'uso dei commenti nell'editor standard di Visual Studio per Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933038"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74982642"
 ---
-# <a name="comments"></a>Commenti
+# <a name="comments"></a>Comments
 
 Durante l'esecuzione del debug o di esperimenti con il codice, può essere utile impostare blocchi di codice come commenti, temporaneamente o a lungo termine.
 
@@ -20,7 +20,7 @@ Per impostare un intero blocco di codice come commento:
 
 * Selezionare il codice e selezionare **Attiva/Disattiva commento per riga** dal menu di scelta rapida
 
-OR
+OPPURE
 
 * Usare il tasto di scelta rapida `cmd + /` sul codice selezionato.
 
