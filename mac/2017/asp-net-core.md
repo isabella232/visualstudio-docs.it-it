@@ -1,17 +1,17 @@
 ---
 title: Introduzione ad ASP.NET Core
 description: In questo articolo viene descritto come iniziare a usare ASP.NET in Visual Studio per Mac, incluse le procedure di installazione e creazione di un nuovo progetto.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
-ms.translationtype: HT
+ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493729"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984887"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -29,7 +29,7 @@ Aprire Visual Studio per Mac. Nella pagina iniziale selezionare **Nuovo progetto
 
 Verrà visualizzata la finestra di dialogo Nuovo progetto, che consente di selezionare un modello per la creazione dell'applicazione.
 
-Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a creare l'applicazione ASP.NET Core. Questi sono:
+Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a creare l'applicazione ASP.NET Core. ovvero:
 
 - **.NET Core > Progetto ASP.NET Core vuoto**
 - **.NET Core > App Web ASP.NET Core**
@@ -42,7 +42,7 @@ Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un n
 
 ![Vista del nuovo progetto ASP.NET Core vuoto](media/asp-net-core-image4.png)
 
-Il progetto per un'applicazione Web vuota di ASP.NET Core crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, spiegati di seguito. Crea anche una cartella Dependencies (Dipendenze), che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni di MSBuild per la compilazione del progetto:
+Progetto ASP.NET Core vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, spiegati di seguito. Crea anche una cartella Dependencies (Dipendenze), che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il framework .NET Core e le destinazioni di MSBuild per la compilazione del progetto:
 
 ![Riquadro della soluzione che visualizza le dipendenze](media/asp-net-core-image12.png)
 
@@ -133,7 +133,7 @@ Aprire il browser preferito e immettere `http://localhost:5000/`, sostituendo `5
 Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per stabilire una separazione logica delle responsabilità di ogni parte dell'app. Lo schema MVC è costituito come segue:
 
 - **Model** (Modello): classe che rappresenta i dati dell'app.
-- **Visualizza**: visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
+- **View** (Vista): visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
 - **Controller**: classe che gestisce le richieste del browser e risponde all'input e all'interazione dell'utente.
 
 Per altre informazioni sull'uso dello schema MVC, vedere la guida [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Panoramica di MVC ASP.NET Core).

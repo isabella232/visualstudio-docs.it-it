@@ -2,15 +2,15 @@
 title: Impostare le opzioni di accessibilità IDE
 description: Introduzione all'impostazione delle opzioni di accessibilità in Visual Studio per Mac
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
-ms.openlocfilehash: b0bafdefe65d4bbfe616d51913096faaaf033eb2
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342319"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985126"
 ---
 # <a name="set-ide-accessibility-options"></a>Impostare le opzioni di accessibilità IDE
 
@@ -29,9 +29,9 @@ Oltre alle funzionalità integrate in macOS, Visual Studio per Mac dispone di nu
 
 È possibile personalizzare il tipo di carattere e le dimensioni del contenuto nella maggior parte dei rilievi in Visual Studio per Mac. Ecco come:
 
-1. Vai a **Visual Studio (menu)**  > **Preferenze... (&#8984;,)** .
+1. Passa a **Visual Studio (menu)**  > **Preferenze... (&#8984;,)** .
 
-1. In **Preferenze**passare a **ambiente** > **caratteri**.
+1. In **Preferenze**passare a **ambiente** > **tipi di carattere**.
 
 1. Per l' **editor di testo**, il **testo di riempimento generale**o il **contenuto del riquadro di output**, selezionare il pulsante carattere e dimensioni.
 
@@ -44,7 +44,7 @@ Oltre alle funzionalità integrate in macOS, Visual Studio per Mac dispone di nu
 
 Alcuni utenti potrebbero scoprire che la combinazione di colori predefinita non soddisfa i requisiti di contrasto o colore. Visual Studio per Mac dispone di diversi temi alternativi che l'utente può selezionare, inclusi due temi a contrasto elevato.
 
-1. Vai a **Visual Studio (menu)**  > **Preferenze... (&#8984;,)** .
+1. Passa a **Visual Studio (menu)**  > **Preferenze... (&#8984;,)** .
 
 1. In **Preferenze**passare a **Editor di testo** > **tema colori**.
 

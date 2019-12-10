@@ -1,16 +1,16 @@
 ---
 title: Impostazione di un repository Git
-description: Uso di Git e Subversion in Visual Studio per Mac.
-author: conceptdev
-ms.author: crdun
+description: Utilizzo di Git e Subversion in Visual Studio per Mac.
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: e6dbe3b04a39a1ffd9a6e1b8f241b497ba8a6563
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693001"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984844"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -141,7 +141,7 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
     ![URL di GitHub visualizzato](media/version-control-git14.png)
 
-4. Sostituire tutto il testo nel campo **URL** nella scheda **Connetti al repository**. In questo modo verrà compilata automaticamente la maggior parte degli altri campi in questa scheda, come illustrato nell'immagine nel passaggio 2.
+4. Sostituire tutto il testo nel campo immissione **URL** nella scheda **Connetti al repository** . In questo modo, la maggior parte degli altri campi in questa scheda viene popolata, come illustrato nell'immagine nel passaggio #2.
 
 5. Immettere la directory in cui si vuole clonare il repository e premere **Estrai**.
 

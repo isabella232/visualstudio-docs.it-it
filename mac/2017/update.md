@@ -1,17 +1,17 @@
 ---
 title: Aggiornamento di Visual Studio per Mac
 description: Istruzioni per l'aggiornamento di Visual Studio per Mac e l'accesso a versioni di anteprima.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6e055e02141eb2b6113e1b925cc8d7a1693a32cf
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987876"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983533"
 ---
 # <a name="update-visual-studio-for-mac"></a>Aggiornare Visual Studio per Mac
 
@@ -22,7 +22,7 @@ Visual Studio per Mac offre tre canali per ottenere le versioni più recenti:
 * **Stabile**: fornisce aggiornamenti completamenti testati. Questo canale è consigliato per un'esperienza di sviluppo ottimale.
 * **Beta** / **Alfa**: consente di accedere anticipatamente agli aggiornamenti candidati per il rilascio nel canale Stabile. Queste versioni possono non essere affidabili per l'uso quotidiano.
 
-## <a name="checking-for-updates"></a>Verifica della presenza di aggiornamenti
+## <a name="checking-for-updates"></a>Verifica della disponibilità di aggiornamenti
 
 È possibile usare il riquadro dello **strumento di aggiornamento di Visual Studio** per verificare la presenza di nuovi aggiornamenti, modificare i canali e per scaricare e installare gli aggiornamenti.
 
@@ -36,7 +36,7 @@ Visualizza il riquadro dello strumento di aggiornamento:
 
 ## <a name="changing-the-updater-channel"></a>Modifica del canale dello strumento di aggiornamento
 
-Per modificare il canale, selezionarlo dall'elenco a discesa a premere il pulsante **Switch Channel (Cambia canale)**:
+Per modificare il canale, selezionarlo dall'elenco a discesa a premere il pulsante **Switch Channel (Cambia canale)** :
 
 ![Elenco a discesa Cambia canale](media/update-image3.png)
 

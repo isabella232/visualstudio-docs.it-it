@@ -1,17 +1,17 @@
 ---
 title: Presentazione di Visual Studio per Mac
 description: Visual Studio per Mac offre un ambiente di sviluppo integrato per creare applicazioni .NET in macOS, inclusi siti Web ASP.NET Core e progetti Xamarin per iOS, Android, Mac e Xamarin.Forms.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213708"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984711"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Presentazione di Visual Studio 2019 per Mac
 
@@ -108,7 +108,7 @@ In questo esempio vengono riportate alcune delle funzionalità seguenti:
 * Interfaccia utente di IntelliSense aggiornata
 * Ricerca/sostituzione migliorata
 * Supporto per frammenti 
-* Selezione formato
+* Selezione di Formatta
 * Lampadine inline
 
 Per ulteriori informazioni sull'utilizzo dell'editor di origine in Visual Studio per Mac, vedere la documentazione dell' [editor di origine](/visualstudio/mac/source-editor) .
@@ -119,7 +119,7 @@ Per tenere le schede visibili in qualsiasi momento, è possibile sfruttare i van
 
 ## <a name="refactoring"></a>Refactoring
 
-Visual Studio per Mac offre due metodi utili per il refactoring del codice: azioni di contesto e analisi del codice sorgente. Per altre informazioni, vedere l'articolo [Refactoring](/visualstudio/mac/refactoring).
+Visual Studio per Mac fornisce due metodi utili per il refactoring del codice: azioni di contesto e analisi dell'origine. Per altre informazioni, vedere l'articolo [Refactoring](/visualstudio/mac/refactoring).
 
 ## <a name="debugging"></a>Debug
 

@@ -1,17 +1,17 @@
 ---
 title: Presentazione di Visual Studio per Mac
 description: Visual Studio per Mac offre un ambiente di sviluppo integrato per creare applicazioni .NET in macOS, inclusi siti Web ASP.NET Core e progetti Xamarin per iOS, Android, Mac e Xamarin.Forms.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 43b7918dfba6ff1d8076d3173900ecdc1b1223a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998367"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984978"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Presentazione di Visual Studio 2017 per Mac
 
@@ -39,11 +39,11 @@ L'articolo illustra varie sezioni di Visual Studio per Mac e presenta alcune del
 
 Visual Studio per Mac è organizzato in sezioni diverse per la gestione di impostazioni e file delle applicazioni, la creazione di codice delle applicazioni e il debug.
 
-## <a name="welcome-screen"></a>Schermata iniziale
+## <a name="welcome-screen"></a>Schermata Procedura guidata
 
 All'avvio, Visual Studio per Mac visualizza una *schermata iniziale*:
 
-![Schermata iniziale](media/ide-tour-image1.png)
+![Schermata Procedura guidata](media/ide-tour-image1.png)
 
 La schermata iniziale contiene le sezioni seguenti:
 
@@ -96,7 +96,7 @@ Le informazioni sull'uso di un pacchetto NuGet in un'applicazione sono disponibi
 
 ## <a name="refactoring"></a>Refactoring
 
-Visual Studio per Mac offre due metodi utili per il refactoring del codice: azioni di contesto e analisi del codice sorgente. Per altre informazioni, vedere l'articolo [Refactoring](/visualstudio/mac/refactoring).
+Visual Studio per Mac fornisce due metodi utili per il refactoring del codice: azioni di contesto e analisi dell'origine. Per altre informazioni, vedere l'articolo [Refactoring](/visualstudio/mac/refactoring).
 
 ## <a name="debugging"></a>Debug
 

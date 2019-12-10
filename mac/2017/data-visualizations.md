@@ -1,17 +1,17 @@
 ---
 title: Debug - Visualizzazioni dati
 description: Il debug è una parte comune e necessaria della programmazione. Visual Studio per Mac contiene un intero gruppo di funzionalità per semplificare il debug. Questo articolo presenta le diverse visualizzazioni dati che è possibile usare per esaminare gli oggetti nel debugger.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931937"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984753"
 ---
 # <a name="data-visualizations"></a>Visualizzazioni dati
 
@@ -28,7 +28,7 @@ Un oggetto Point/PointF o CGPoint in iOS e Mac viene visualizzato come tupla che
 
 ![Visualizzazione dei punti](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Dimensione
+## <a name="size"></a>Dimensioni
 Un oggetto Size/SizeF CGSize in iOS e Mac viene visualizzato come rettangolo. L'oggetto viene disegnato in modo da ridimensionarsi fino a 250 px e da questo momento in poi il rettangolo viene ridimensionato in base al valore massimo di 250px:
 
 [Visualizzazione delle dimensioni](media/data-visualizations-image11.png)
@@ -38,7 +38,7 @@ Un oggetto Rectangle/RectangleF o CGRect in iOS e Mac mostra le dimensioni e l'o
 
 ![Visualizzazione dei rettangoli](media/data-visualizations-image12.png)
 
-## <a name="coordinate"></a>Coordinate
+## <a name="coordinate"></a>Coordina
 Le coordinate vengono tracciate su una mappa, aggiungendo la posizione al centro:
 
 [Visualizzazione delle coordinate](media/data-visualizations-image13.png)
@@ -72,7 +72,7 @@ Una stringa di meno di 100 caratteri viene visualizzata completamente, senza ant
 ### <a name="medium-length-strings"></a>Stringhe di lunghezza media:
 ![Visualizzazione di stringhe di lunghezza media](media/data-visualizations-image19.png)
 
-### <a name="editor"></a>Editor:
+### <a name="editor"></a>Editore:
 
 ![Visualizzazione nell'editor](media/data-visualizations-image21.png)
 
@@ -88,7 +88,7 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
 ![Altre visualizzazioni](media/data-visualizations-image23.png)
 
-* **Primitives**
+* **Primitive**
   * Visualizza il valore non elaborato del tipo primitivo.
 * **Enum**
   * Visualizza il valore del campo senza il qualificatore di tipo enum.

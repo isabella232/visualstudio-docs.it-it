@@ -1,17 +1,17 @@
 ---
 title: Introduzione alla creazione di giochi con Unity
 description: Introduzione all'uso di Unity e Visual Studio per Mac
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/20/2019
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
-ms.openlocfilehash: ff8fe1b2b4efe7ff91d3b363c58183be534a1441
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: c25df777a9af10859c70741a78c880a57c6f5b8e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108421"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984801"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introduzione alla creazione di giochi con Unity in Visual Studio per Mac
 
@@ -24,7 +24,7 @@ Visual Studio for Mac Tools for Unity è un'estensione gratuita, installata con 
 > [!div class="checklist"]
 > * Apprendere le nozioni di base per lo sviluppo di giochi Unity con Visual Studio per Mac
 
-## <a name="prerequisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisites
 
 - Visual Studio per Mac ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
 - Unity 5.6.1 Personal Edition o versione successiva ([https://store.unity.com](https://store.unity.com/), è necessario un account unity.com per l'esecuzione)
@@ -33,7 +33,7 @@ Visual Studio for Mac Tools for Unity è un'estensione gratuita, installata con 
 
 Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche se non è necessaria una vasta esperienza.
 
-## <a name="task-1-creating-a-basic-unity-project"></a>Attività 1: Creazione di un progetto Unity di base
+## <a name="task-1-creating-a-basic-unity-project"></a>Attività 1: creazione di un progetto Unity di base
 
 1. Avviare **Unity**. Eseguire l'accesso, se richiesto.
 
@@ -79,7 +79,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 13. Chiudere la finestra **Finder** e tornare a **Unity**.
 
-14. La cartella **Assets** contiene tutti gli asset, ovvero elementi grafici, codice, audio e così via. Ora è vuota, ma ogni singolo file inserito nel progetto viene incluso in questa cartella, che è sempre la cartella di livello principale nell'**Editor di Unity**. È tuttavia sempre necessario aggiungere e rimuovere i file tramite l'interfaccia di Unity (o Visual Studio per Mac) e mai direttamente tramite il file system.
+14. La cartella **assets** contiene tutti gli asset-Art, code, audio e così via. Ora è vuota, ma ogni singolo file inserito nel progetto va qui. che è sempre la cartella di livello principale nell'**Editor di Unity**. È tuttavia sempre necessario aggiungere e rimuovere i file tramite l'interfaccia di Unity (o Visual Studio per Mac) e mai direttamente tramite il file system.
 
     ![cartella Assets in Unity](media/unity-image10.png)
 
@@ -125,11 +125,11 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 25. Selezionare **File > Save Scenes** (File > Salva scene) per salvare la scena corrente. Assegnare il nome **"MyScene"** alla scena.
 
-## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Attività 2: Uso di Visual Studio for Mac Tools for Unity
+## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Attività 2: uso di Visual Studio per Mac Tools per Unity
 
 1. Il modo migliore per modificare il codice C# è quello di usare Visual Studio per Mac. È possibile configurare Unity in modo da usare Visual Studio per Mac come gestore predefinito. Selezionare **Unity > Preferences** (Unity > Preferenze).
 
-2. Selezionare la scheda **External Tools** (Strumenti esterni). Dall'elenco a discesa **External Script Editor** (Editor script esterno) selezionare **Browse** (Sfoglia) e quindi **Applications/Visual Studio.app**. In alternativa, se è già presente un'opzione **Visual Studio**, è sufficiente selezionare tale opzione.
+2. Selezionare la scheda **strumenti esterni** . Dall'elenco a discesa **editor di script esterno** selezionare **Sfoglia** e selezionare **applicazioni/Visual Studio. app**. In alternativa, se è già presente un'opzione **Visual Studio**, è sufficiente selezionare tale opzione.
 
     ![scheda degli strumenti esterni nelle preferenze](media/unity-image21.png)
 
@@ -189,7 +189,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 9. Salvare le modifiche apportate allo script dell'avversario in **Visual Studio per Mac**.
 
-## <a name="task-3-debugging-the-unity-project"></a>Attività 3: Debug del progetto Unity
+## <a name="task-3-debugging-the-unity-project"></a>Attività 3: debug del progetto Unity
 
 1. Impostare un punto di interruzione sulla prima riga di codice nel metodo **Start**. È possibile fare clic sul margine dell'editor in corrispondenza della riga di destinazione oppure posizionare il cursore sulla riga e premere **F9**.
 
@@ -247,7 +247,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![arresto della sessione di debug in Visual Studio per Mac](media/unity-image37.png)
 
-## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Attività 4: Esplorazione delle funzionalità di Unity in Visual Studio per Mac
+## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Attività 4: esplorazione delle funzionalità di Unity in Visual Studio per Mac
 
 1. Visual Studio per Mac consente di accedere rapidamente alla documentazione di Unity all'interno dell'editor di codice. Posizionare il cursore in un punto qualsiasi sul simbolo **Vector3** all'interno del metodo **Update** e premere **Comando ⌘+'** .
 

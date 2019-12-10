@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 243766d78f25491f465a712b37dc5fab16c8a985
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74945075"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955049"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del registro di sistema per i componenti aggiuntivi VSTO
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.
@@ -50,7 +50,7 @@ ms.locfileid: "74945075"
  Se si usa ClickOnce per distribuire un componente aggiuntivo VSTO, quest'ultimo può essere registrato solo per l'utente corrente. Questo perché ClickOnce supporta solo la creazione di chiavi in **HKEY_CURRENT_USER**. Se si vuole registrare un componente aggiuntivo VSTO per tutti gli utenti di un computer, è necessario distribuirlo tramite Windows Installer. Per altre informazioni su questi tipi di distribuzione, vedere [distribuire una soluzione Office usando ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) e [distribuire una soluzione Office usando Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Voci del Registro di sistema
- Le voci del registro di sistema del componente aggiuntivo VSTO obbligatorie si trovano nelle seguenti chiavi del registro di sistema in cui la *radice* è **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE** a seconda del fatto che l'installazione sia per singolo utente o per computer.
+ Le voci del registro di sistema del componente aggiuntivo VSTO obbligatorie si trovano nelle seguenti chiavi del registro di sistema in cui la *radice* è **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE** a seconda che l'installazione sia per l'utente corrente o per tutti gli utenti.
 
 |Applicazione di Office|Percorso di configurazione|
 |------------------|------------------|
@@ -58,7 +58,9 @@ ms.locfileid: "74945075"
 |Tutti gli altri|*Radice*\Software\Microsoft\Office\\*nome dell'applicazione di Office*\Addins\\*ID componente aggiuntivo*|
 
 > [!NOTE]
-> Se il programma di installazione è destinato a Windows a 64 bit, deve includere due voci del registro di sistema, una sotto la *radice*\SOFTWARE\Microsoft e una sotto la *radice*\SOFTWARE\\**Wow6432Node**\Microsoft hive.  Questo perché è possibile che gli utenti usino le versioni di Office a 32 bit o a 64 bit nel computer.
+> Se il programma di installazione è destinato a tutti gli utenti in Windows a 64 bit, è consigliabile includere due voci del registro di sistema, una sotto la HKEY_LOCAL_MACHINE \Software\Microsoft e una nell'HKEY_LOCAL_MACHINE \SOFTWARE\\**Wow6432Node**\Microsoft hive. Questo perché è possibile che gli utenti usino le versioni di Office a 32 bit o a 64 bit nel computer.
+>
+>Se il programma di installazione è destinato all'utente corrente, non è necessario installarlo in WOW6432Node perché il percorso di \SOFTWARE HKEY_CURRENT_USER è condiviso.
 >
 >Per ulteriori informazioni, vedere la pagina relativa ai [dati delle applicazioni a 32 bit e a 64 bit nel registro di sistema.](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
