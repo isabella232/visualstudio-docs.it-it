@@ -3,8 +3,8 @@ documentType: LandingData
 title: Documentazione di Visual Studio per Mac
 metadata:
   description: Questo articolo illustra le funzionalità di Visual Studio 2017 per Mac.
-  author: conceptdev
-  ms.author: crdun
+  author: heiligerdankgesang
+  ms.author: dominicn
   ms.date: 02/06/2019
   ms.topic: landing-page
   ms.prod: visual-studio-mac
