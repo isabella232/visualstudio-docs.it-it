@@ -21,13 +21,13 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301440"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Finestra di dialogo Seleziona set di regole (legacy)
-In questo argomento viene descritto come usare la finestra di dialogo **Seleziona set di regole** in [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+In questo argomento viene descritto come utilizzare la finestra di dialogo **Seleziona set di regole** nella [!INCLUDE[wfd1](../includes/wfd1-md.md)]legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- La finestra di dialogo **Seleziona set di regole** viene utilizzata per selezionare un set di regole che è possibile utilizzare con un'attività [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Per informazioni su come accedere alla finestra di dialogo **Seleziona set di regole** , vedere [procedura: creare un set di regole PolicyActivity (legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ La finestra di dialogo **Seleziona set di regole** viene utilizzata per selezionare un set di regole che è possibile utilizzare con un'attività [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Per informazioni su come accedere alla finestra di dialogo **Seleziona set di regole** , vedere [procedura: Creare un set di regole PolicyActivity (legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
- La tabella seguente descrive gli elementi dell'interfaccia utente della finestra di dialogo **Seleziona set di regole**.
+ Nella tabella seguente vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Seleziona set di regole** .
 
-|Elemento dell'interfaccia utente|description|
+|Elemento dell'interfaccia utente|Descrizione|
 |----------------|-----------------|
 |**Nuovo...**|Fare clic per aprire la finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) per creare una nuova condizione della regola.|
 |**Modifica...**|Fare clic per aprire la finestra di [dialogo Editor set di regole (legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) per modificare la condizione della regola selezionata.|
