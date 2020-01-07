@@ -9,18 +9,20 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 48754834295a552e3b189ff05ff2d1c12cd221a3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062178"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75400912"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Eseguire il debug di app in un contenitore Docker locale
 
-Visual Studio offre un modo coerente per sviluppare in un contenitore Docker e convalidare l'applicazione in locale. Non è necessario riavviare il contenitore ogni volta che si esegue una modifica del codice.
+Visual Studio offre un modo coerente per sviluppare contenitori Docker e convalidare l'applicazione in locale. È possibile eseguire ed eseguire il debug delle app in contenitori Linux o Windows in esecuzione nel desktop Windows locale con Docker installato e non è necessario riavviare il contenitore ogni volta che si effettua una modifica del codice.
 
-Questo articolo illustra come usare Visual Studio per avviare un'app Web ASP.NET Core in un contenitore Docker locale, apportare modifiche e quindi aggiornare il browser per visualizzare le modifiche. Questo articolo illustra anche come impostare i punti di interruzione per il debug di app Web ASP.NET Core in contenitori e di .NET Framework app console.
+Questo articolo illustra come usare Visual Studio per avviare un'app in un contenitore Docker locale, apportare modifiche e quindi aggiornare il browser per visualizzare le modifiche. Questo articolo illustra anche come impostare i punti di interruzione per il debug per le app in contenitori. I tipi di progetto supportati includono .NET Framework e le app Web e console di .NET Core. Questo articolo illustra come usare ASP.NET Core app Web e .NET Framework app console.
+
+Se si dispone già di un progetto di un tipo supportato, Visual Studio può creare un Dockerfile e configurare il progetto per l'esecuzione in un contenitore. Vedere [strumenti contenitore in Visual Studio](overview.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -38,11 +40,13 @@ Per eseguire il debug di app in un contenitore Docker locale, è necessario inst
 
 ::: moniker-end
 
-Per eseguire localmente i contenitori Docker, è necessario disporre di un client Docker locale. È possibile usare la [casella degli strumenti di Docker](https://www.docker.com/products/docker-toolbox), che richiede la disabilitazione di Hyper-V. È anche possibile usare [Docker per Windows](https://www.docker.com/get-docker), che usa Hyper-V e richiede Windows 10. 
+Per eseguire localmente i contenitori Docker, è necessario disporre di un client Docker locale. È possibile usare la [casella degli strumenti di Docker](https://www.docker.com/products/docker-toolbox), che richiede la disabilitazione di Hyper-V. È anche possibile usare [Docker per Windows](https://www.docker.com/get-docker), che usa Hyper-V e richiede Windows 10.
 
 I contenitori Docker sono disponibili per i progetti .NET Framework e .NET Core. Di seguito sono riportati due esempi. Prima di tutto, viene esaminata un'app Web .NET Core. Viene quindi esaminata un'app console .NET Framework.
 
 ## <a name="create-a-web-app"></a>Creare un'app Web
+
+Se si dispone di un progetto e si aggiunge il supporto per Docker come descritto in [Panoramica](overview.md), ignorare questa sezione.
 
 ::: moniker range="vs-2017"
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
@@ -51,23 +55,25 @@ I contenitori Docker sono disponibili per i progetti .NET Framework e .NET Core.
 [!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
-### <a name="edit-your-code-and-refresh"></a>Modificare il codice e aggiornare
+### <a name="edit-your-code-and-refresh"></a>Modificare il codice e aggiornarlo
 
 Per eseguire rapidamente l'iterazione delle modifiche, è possibile avviare l'applicazione in un contenitore. Quindi, continuare a apportare le modifiche, visualizzandole come si farebbe con IIS Express.
 
-1. Impostare la **configurazione della soluzione** di cui eseguire il **debug**. Premere quindi **CTRL**+**F5** per compilare l'immagine Docker ed eseguirla localmente.
+1. Assicurarsi che Docker sia configurato in modo da usare il tipo di contenitore (Linux o Windows) in uso. Fare clic con il pulsante destro del mouse sull'icona Docker sulla barra delle applicazioni e scegliere **passa a contenitori Linux** o **passa a contenitori Windows** in base alle esigenze.
+
+1. Impostare la **configurazione della soluzione** di cui eseguire il **debug**. Premere quindi **Ctrl**+**F5** per compilare l'immagine Docker ed eseguirla localmente.
 
     Quando l'immagine del contenitore viene compilata e in esecuzione in un contenitore Docker, Visual Studio avvia l'app Web nel browser predefinito.
 
-2. Passare alla pagina di *Indice* . Verranno apportate modifiche in questa pagina.
-3. Tornare a Visual Studio e aprire *index. cshtml*.
-4. Aggiungere il contenuto HTML seguente alla fine del file e quindi salvare le modifiche.
+1. Passare alla pagina di *Indice* . Verranno apportate modifiche in questa pagina.
+1. Tornare a Visual Studio e aprire *index. cshtml*.
+1. Aggiungere il contenuto HTML seguente alla fine del file e quindi salvare le modifiche.
 
     ```html
     <h1>Hello from a Docker container!</h1>
     ```
 
-5. Nella finestra output, al termine della compilazione .NET e vengono visualizzate le righe seguenti, tornare al browser e aggiornare la pagina:
+1. Nella finestra output, al termine della compilazione .NET e vengono visualizzate le righe seguenti, tornare al browser e aggiornare la pagina:
 
    ```output
    Now listening on: http://*:80
@@ -81,7 +87,7 @@ Le modifiche sono state applicate.
 Spesso le modifiche richiedono un ulteriore controllo. Per questa attività è possibile usare le funzionalità di debug di Visual Studio.
 
 1. In Visual Studio aprire *index.cshtml.cs*.
-2. Sostituire il contenuto del `OnGet` metodo con il codice seguente:
+2. Sostituire il contenuto del metodo `OnGet` con il codice seguente:
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
@@ -98,12 +104,12 @@ Spesso le modifiche richiedono un ulteriore controllo. Per questa attività è p
 Quando si usa .NET Framework progetti di app console, l'opzione per aggiungere il supporto di Docker senza orchestrazione non è supportata. È comunque possibile usare la procedura seguente, anche se si usa un unico progetto docker.
 
 1. Creare un nuovo progetto di app console .NET Framework.
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto, quindi scegliere **Aggiungi** > **supporto dell'orchestrazione del contenitore**.  Nella finestra di dialogo visualizzata selezionare **Docker compose**. Un Dockerfile viene aggiunto al progetto e viene aggiunto un progetto Docker Compose con i file di supporto associati.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nodo del progetto, quindi scegliere **aggiungi** > **supporto dell'orchestrazione del contenitore**.  Nella finestra di dialogo visualizzata selezionare **Docker compose**. Un Dockerfile viene aggiunto al progetto e viene aggiunto un progetto Docker Compose con i file di supporto associati.
 
 ### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
 
 1. In Esplora soluzioni aprire *Program.cs*.
-2. Sostituire il contenuto del `Main` metodo con il codice seguente:
+2. Sostituire il contenuto del metodo `Main` con il codice seguente:
 
    ```csharp
        System.Console.WriteLine("Hello, world!");
@@ -119,11 +125,15 @@ Quando si usa .NET Framework progetti di app console, l'opzione per aggiungere i
 
 Durante il ciclo di sviluppo, Visual Studio ricompila solo le immagini del contenitore e il contenitore stesso quando si modifica il Dockerfile. Se non si modifica il Dockerfile, Visual Studio riutilizza il contenitore da un'esecuzione precedente.
 
-Se il contenitore è stato modificato manualmente e si vuole riavviare con un'immagine del contenitore pulita, usare il comando **Compila** > **Pulisci** in Visual Studio e compilare come di consueto.
+Se il contenitore è stato modificato manualmente e si vuole riavviare con un'immagine del contenitore pulita, usare il comando **compila** > **Pulisci** in Visual Studio e compilare come di consueto.
 
-## <a name="troubleshoot"></a>Risolvere problemi
+## <a name="troubleshoot"></a>Risolvere i problemi
 
 Informazioni su come [risolvere i problemi di sviluppo di Docker in Visual Studio](troubleshooting-docker-errors.md).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Per ulteriori informazioni, vedere la pagina relativa alla [compilazione di app in contenitori in Visual Studio](container-build.md).
 
 ## <a name="more-about-docker-with-visual-studio-windows-and-azure"></a>Altre informazioni su Docker con Visual Studio, Windows e Azure
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44023543f1f7b57352448755de942af1c0c712ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642396"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586913"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Procedura: creare e configurare DataSet in Visual Studio
 
@@ -26,7 +26,7 @@ Un set di dati è un set di oggetti che archivia i dati da un database in memori
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Creare un nuovo set di dati tramite la configurazione guidata origine dati
 
-1. Aprire il progetto in Visual Studio, quindi scegliere **progetto**  > **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
+1. Aprire il progetto in Visual Studio, quindi scegliere **progetto** > **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
 2. Scegliere il tipo di origine dati a cui si connetterà.
 
@@ -84,7 +84,7 @@ In questa procedura viene illustrato come aggiungere una tabella dallo stesso da
 
 2. Trascinare una classe <xref:System.Data.DataTable> dalla scheda **DataSet** della **casella degli strumenti** nel **Progettazione DataSet**.
 
-3. Aggiungere colonne per definire la tabella di dati. Fare clic con il pulsante destro del mouse sulla tabella e scegliere **aggiungi**  > **colonna**. Utilizzare la finestra **Proprietà** per impostare il tipo di dati della colonna e una chiave, se necessario.
+3. Aggiungere colonne per definire la tabella di dati. Fare clic con il pulsante destro del mouse sulla tabella e scegliere **aggiungi** > **colonna**. Utilizzare la finestra **Proprietà** per impostare il tipo di dati della colonna e una chiave, se necessario.
 
 Le tabelle autonome devono implementare `Fill` logica in tabelle autonome in modo da poterle inserire i dati. Per informazioni sul riempimento di tabelle di dati autonome, vedere [popolamento di un DataSet da un oggetto DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 

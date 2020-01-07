@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565864"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 Il processo di trasformazione del modello di testo accetta un file modello di testo come input e genera un nuovo file di testo come output. È ad esempio possibile utilizzare modelli di testo per generare Visual Basic o C# codice oppure generare un report HTML.
@@ -23,7 +23,7 @@ Il processo di trasformazione del modello di testo accetta un file modello di te
 
  Il processo di trasformazione del modello di testo viene eseguito in due passaggi. In primo luogo, il motore crea una classe temporanea, nota come classe Transformation generata. Questa classe contiene il codice generato dalle direttive e dai blocchi di controllo. Successivamente, il motore compila ed esegue la classe Transformation generata per produrre il file di output.
 
-## <a name="components"></a>Componenti
+## <a name="components"></a>Components
 
 |Componente|Descrizione|Personalizzabile (sì/no)|
 |-|-|-|

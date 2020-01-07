@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984080"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594565"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammi di dipendenza: riferimento
 
@@ -58,7 +58,7 @@ Nella tabella seguente vengono descritti gli elementi che è possibile utilizzar
 
 |**Forma**|**Elemento**|**Descrizione**|
 |-|-|-|
-|1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello, quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **dipendenze dello spazio dei nomi non consentito** : specifica che gli artefatti associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-    gli**spazi dei nomi** non consentiti: specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-    gli**spazi dei nomi richiesti** : specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
+|1|**Livello**|Gruppo logico di elementi fisici nel sistema. Questi elementi possono essere spazi dei nomi, progetti, classi, metodi e così via.<br /><br /> Per visualizzare gli elementi collegati a un livello, aprire il menu di scelta rapida per il livello, quindi scegliere **Visualizza collegamenti** per aprire **Esplora livello**.<br /><br /> Per altre informazioni, vedere [Esplora livello](#Explorer).<br /><br /> -   **dipendenze dello spazio dei nomi non consentito** : specifica che gli artefatti associati a questo livello non possono dipendere dagli spazi dei nomi specificati.<br />-   gli **spazi dei nomi** non consentiti: specifica che gli artefatti associati a questo livello non devono appartenere agli spazi dei nomi specificati.<br />-   gli **spazi dei nomi richiesti** : specifica che gli artefatti associati a questo livello devono appartenere a uno degli spazi dei nomi specificati.|
 |2|**Dipendenza**|Indica che un livello può usare la funzionalità di un altro livello, ma non viceversa.<br /><br /> **direzione** -   -specifica la direzione della dipendenza.|
 |3\.|**Dipendenza bidirezionale**|Indica che un livello può usare la funzionalità di un altro livello e viceversa.<br /><br /> **direzione** -   -specifica la direzione della dipendenza.|
 |4|**Commentoo**|Usato per aggiungere note generali al diagramma o elementi nel diagramma.|
@@ -91,7 +91,7 @@ Viene aperto **Esplora livello** che Mostra gli elementi collegati ai livelli se
 
 |**Colonna in Esplora livello**|**Descrizione**|
 |-|-|
-|**Categorie**|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
+|**Categories** (Categorie)|Tipo di elemento, ad esempio una classe, uno spazio dei nomi, un file di origine e così via|
 |**Livello**|Livello collegato all'elemento|
 |**Supporta la convalida**|Se **true**, il processo di convalida dei livelli può verificare che il progetto sia conforme alle dipendenze da o verso questo elemento.<br /><br /> Se **false**, il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi di dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md).|
 |**Identificatore**|Riferimento all'elemento collegato|

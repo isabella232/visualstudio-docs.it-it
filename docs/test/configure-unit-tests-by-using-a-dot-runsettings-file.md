@@ -2,17 +2,17 @@
 title: Configurare unit test con un file con estensione runsettings
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771496"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593252"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test usando un file con estensione *runsettings*
 
@@ -28,7 +28,7 @@ I file di impostazioni esecuzione test possono essere usati per configurare i te
 
 ::: moniker range="vs-2017"
 
-Per specificare un file di impostazioni esecuzione test, selezionare **Test** > **Impostazioni test** > **Seleziona file di impostazioni test** e quindi selezionare il file con estensione *runsettings*.
+Per specificare un file di impostazioni esecuzione test nell'IDE, selezionare **test** > **impostazioni test** > **selezionare file di impostazioni test**, quindi selezionare il file con *estensione runsettings* .
 
 ![Selezionare il menu di file di impostazioni test in Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -95,13 +95,13 @@ Per eseguire i test dalla riga di comando, usare *vstest.console.exe* e specific
 
    ::: moniker range="vs-2017"
 
-   Nel menu **Start** di Windows scegliere **Visual Studio 2017** > **Prompt dei comandi per gli sviluppatori per VS 2017**.
+   Dal menu **Start** di Windows scegliere **Visual Studio 2017** > **prompt dei comandi per gli sviluppatori per vs 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Nel menu **Start** di Windows scegliere **Visual Studio 2019** > **Prompt dei comandi per gli sviluppatori per VS 2019**.
+   Dal menu **Start** di Windows scegliere **Visual Studio 2019** > **prompt dei comandi per gli sviluppatori per vs 2019**.
 
    ::: moniker-end
 
@@ -249,7 +249,7 @@ Le sezioni che seguono descrivono in dettaglio gli elementi di un file con esten
 
 L'elemento **RunConfiguration** può includere gli elementi seguenti:
 
-|Nodo|Impostazione predefinita|Valori|
+|Nodo|Default|Valori|
 |-|-|-|
 |**ResultsDirectory**||Directory in cui vengono inseriti i risultati del test.|
 |**TargetFrameworkVersion**|Framework40|`FrameworkCore10` per le origini .NET Core, `FrameworkUap10` per le origini basate sulla piattaforma UWP, `Framework45` per .NET Framework 4.5 e versioni successive, `Framework40` per .NET Framework 4.0 e `Framework35` per .NET Framework 3.5.<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.<br /><br />Se si omette l'elemento `TargetFrameworkVersion` dal file con estensione *runsettings*, la piattaforma determina automaticamente la versione del framework sulla base dei file binari compilati.|
@@ -325,7 +325,7 @@ Per usare i parametri di esecuzione dei test, aggiungere un campo <xref:Microsof
 
 Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi di test con l'attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> .
 
-|Configurazione di|Impostazione predefinita|Valori|
+|Configurazione di|Default|Valori|
 |-|-|-|
 |**ForcedLegacyMode**|false|In Visual Studio 2012, l'adapter MSTest è stato ottimizzato per essere più veloce e più scalabile. Un comportamento, ad esempio l'ordine in cui vengono eseguiti i test, potrebbe non essere esattamente come quello nelle versioni precedenti di Visual Studio. Impostare questo valore su **true** per usare l'adattatore di test precedente.<br /><br />Lo si può usare, ad esempio, nel caso in cui sia presente un file *app.config* specificato per uno unit test.<br /><br />È consigliabile provare a effettuare il refactoring dei test per consentire l'uso dell'adattatore più recente.|
 |**IgnoreTestImpact**|false|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](https://msdn.microsoft.com/library/dd286589).|

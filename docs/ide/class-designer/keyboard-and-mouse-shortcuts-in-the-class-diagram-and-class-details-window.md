@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188977"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590761"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
 
@@ -35,8 +35,8 @@ Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 |Doppio clic|Etichetta del connettore simbolo|Richiama il comando **Mostra interfaccia**.|
 |Rotellina del mouse|Diagramma classi|Scorre verticalmente.|
 |**MAIUSC** + rotellina del mouse|Diagramma classi|Scorre orizzontalmente.|
-|**CTRL** + rotellina del mouse|Diagramma classi|Ingrandisce.|
-|**CTRL**+**MAIUSC** + clic|Diagramma classi|Ingrandisce.|
+|**CTRL** + rotellina del mouse|Diagramma classi|Zoom.|
+|**CTRL**+**MAIUSC** + clic|Diagramma classi|Zoom.|
 
 ## <a name="use-the-mouse-in-the-class-details-window"></a>Uso del mouse nella finestra Dettagli classe
 
@@ -56,7 +56,7 @@ Usando il mouse è possibile modificare l'aspetto della finestra **Dettagli clas
 
 Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
-|Chiave|Contesto|Descrizione|
+|Key|Contesto|Descrizione|
 |---------|-------------|-----------------|
 |**Tasti di direzione**|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
 |**Tasti di direzione**|Forme di primo livello|Consentono di spostare forme nel diagramma.|
@@ -89,7 +89,7 @@ Per spostarsi nella finestra **Dettagli classe**, usare i seguenti tasti:
 
 |||
 |-|-|
-|Chiave|Risultato|
+|Key|Risultato|
 |**,** (virgola)|Se il cursore è posizionato in una riga di parametri, viene spostato nel campo Nome del parametro successivo. Se il cursore è posizionato nell'ultima riga di parametri di un metodo, viene spostato nel campo \<aggiungi parametro>, dove è possibile creare un nuovo parametro.<br /><br /> Se il cursore è posizionato in un altro punto della finestra **Dettagli classe**, viene effettivamente aggiunta una virgola nel campo corrente.|
 |**;** (punto e virgola) o **)** (parentesi di chiusura)|Sposta il cursore nel campo Nome della riga di membri successiva nella griglia della finestra **Dettagli classe**.|
 |**TAB**|Sposta il cursore nel campo successivo, prima da sinistra a destra e poi dall'alto verso il basso. Se il cursore viene spostato da un campo in cui è stato digitato del testo, in **Dettagli classe** il testo viene elaborato e memorizzato se non genera un errore.<br /><br /> Se il cursore si trova in un campo vuoto, ad esempio \<aggiungi parametro>, con il tasto TAB viene spostato nel primo campo della riga successiva.|
