@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668696"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595020"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Ambiente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="general"></a>Generale
  `DTE.Properties("Environment", "General")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |ShowStatusBar|Get/Set (Boolean)|Determina se viene visualizzata o meno la barra di stato.|
 |WindowMenuContainsNItems|Get/Set (Short)|Determina la modalità di contenimento delle finestre di documento nella parte inferiore del menu Finestre.|
@@ -42,7 +42,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="add-inmacros-security"></a>Sicurezza macro/componenti aggiuntivi
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |MacrosEnabled|Get/Set (Boolean)|Consente l'esecuzione delle macro.|
 |AddinsEnabled|Get/Set (Boolean)|Consente il caricamento dei componenti aggiuntivi.|
@@ -51,7 +51,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="documents"></a>Documenti
  `DTE.Properties("Environment", "Documents")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|Determina se la finestra del documento corrente verrà riutilizzata per l'apertura di un nuovo file se il documento corrente viene salvato. `false` indica di aprire sempre una nuova finestra per ogni documento aperto.|
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Determina se l'ambiente ricarica automaticamente i file aperti nell'IDE quando il sistema operativo notifica all'IDE che i file sono stati modificati su disco.|
@@ -63,12 +63,12 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (Boolean)|Salva i documenti come Unicode quando i dati non possono essere salvati nella tabella codici.|
 |DontShowGlobalUndoChangeLossDialog|Get/Set (Boolean)|Visualizza un avviso se l'annullamento globale avrà effetto su altri file modificati.|
 |AllowEditingReadOnlyFiles|Get/Set (Boolean)|Consente di modificare i file di sola lettura, ma visualizza un avviso quando viene effettuato un tentativo di salvataggio di tali file.|
-|DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. Posizione nella scheda in cui inserire il documento aperto.|
+|DocumentDockPreference|Get/Set (Enum)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions> Posizione nella scheda in cui inserire il documento aperto.|
 
 ## <a name="extension-manager"></a>Gestione estensioni
  `DTE.Properties("Environment", "ExtensionManager")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |EnableAdminExtensions|Get/Set (Boolean)|Carica le estensioni per utente quando Visual Studio viene eseguito con credenziali di amministratore. Dopo la modifica di questo valore, è necessario riavviare Visual Studio.|
 |EnableOnline|Get/Set (Boolean)|Consente l'accesso alle estensioni di Visual Studio Gallery.|
@@ -77,7 +77,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="find-and-replace"></a>Trova e sostituisci
  `DTE.Properties("Environment", "FindAndReplace")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |ShowWarningMessages|Get/Set (Boolean)|Visualizza messaggi di avviso.|
 |InitializeFromEditor|Get/Set (Boolean)|Inserisce automaticamente il testo dell'editor nella casella **Trova**.|
@@ -87,7 +87,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="import-and-export-settings"></a>Importa/Esporta impostazioni
  `DTE.Properties("Environment", "Import and Export Settings")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |TrackTeamSettings|Get/Set (Boolean)|Usa le impostazioni nel file specificato da TeamSettingsFile.|
 |TeamSettingsFile|Get/Set (String)|Nome del file che include le impostazioni del team.|
@@ -96,21 +96,21 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="international-settings"></a>Impostazioni internazionali
  `DTE.Properties("Environment", "International")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |Linguaggio|Get/Set (String)|Valore LCID per la lingua corrente per Visual Studio.|
 
 ## <a name="keyboard"></a>Tastiera
  `DTE.Properties("Environment", "Keyboard")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |Scheme|Get/Set (String)|Restituisce una stringa contenente uno schema predefinito, una stringa contenente il percorso completo del file con estensione vsk caricato o "(Predefinito)" se non viene caricato alcun file con estensione vsk.|
 
 ## <a name="projects-and-solution"></a>Progetti e soluzioni
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|Determina se l'IDE salva tutto prima dell'anteprima o dell'esecuzione di un progetto compilato.|
 |ProjectsLocation|Get/Set (String)|Determina la directory predefinita in cui i nuovi progetti vengono salvati dalla finestra di dialogo **Aggiungi progetto**.|
@@ -133,9 +133,9 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="startup"></a>Avvio
  `DTE.Properties("Environment", "Startup")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Azione da eseguire all'avvio, da <xref:EnvDTE.vsStartUp>, con valori compresi tra 0 e 5:<br /><br /> - 0: Apri home page<br />- 1: Carica ultima soluzione caricata<br />- 2: Mostra finestra **Apri progetto**<br />- 3: Mostra finestra **Nuovo progetto**<br />- 4: Visualizza ambiente vuoto<br />- 5: Mostra pagina iniziale|
+|OnStartUp|Get/Set (Enum)|Azione da eseguire all'avvio, da <xref:EnvDTE.vsStartUp>, con valori compresi tra 0 e 5:<br /><br /> -   0: Apri home page<br />-   1: Carica ultima soluzione caricata<br />-   2: Mostra finestra **Apri progetto**<br />-   3: Mostra finestra **Nuovo progetto**<br />-   4: Visualizza ambiente vuoto<br />-   5: Mostra pagina iniziale|
 |StartPageRSSUrl|Get/Set (String)|URL del feed RSS usato all'avvio.|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|Aggiorna la pagina iniziale dopo ogni passaggio dell'intervallo specificato in StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Intervallo in minuti per l'aggiornamento della pagina iniziale.|
@@ -143,7 +143,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="tasklist"></a>TaskList
  `DTE.Properties("Environment", "TaskList")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|Specifica se viene visualizzata una finestra di conferma quando si eliminano attività dall'**Elenco attività**.|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|Specifica se viene visualizzato un avviso all'aggiunta di un'attività definita dall'utente che non verrà visualizzata.|
@@ -153,7 +153,7 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 ## <a name="web-browser"></a>Web browser
  `DTE.Properties("Environment", "WebBrowser")`
 
-|Nome degli elementi delle proprietà|Value|DESCRIZIONE|
+|Nome degli elementi delle proprietà|Valore|Descrizione|
 |------------------------|-----------|-----------------|
 |HomePage|Get/Set (String)|Rappresenta l'URL della home page.|
 |SearchPage|Get/Set (String)|Rappresenta l'URL della pagina di ricerca.|
@@ -161,4 +161,9 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 |ViewSourceExternalProgram|Get/Set (String)|Il percorso del visualizzatore del codice sorgente esterno.|
 
 ## <a name="see-also"></a>Vedere anche
- [Controllo delle impostazioni delle opzioni](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [determinazione dei nomi degli elementi delle proprietà nella](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) pagina Opzioni pagina Opzioni, pagina Opzioni [Proprietà nodo tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md) , finestra di [dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md) [Proprietà nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)
+
+- [Controllo delle impostazioni relative alle opzioni](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [Pagina delle opzioni, Proprietà del nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
