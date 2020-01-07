@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: mikadumont
-ms.author: midumont
+author: TerryGLee
+ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316460"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585821"
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 
@@ -70,7 +70,7 @@ Input | Funzione
 
 ## <a name="reference-highlighting"></a>Evidenziazione dei riferimenti
 
-Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti** . Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per passare al simbolo evidenziato successivo o precedente, premere **CTRL**+**MAIUSC**+**freccia GIÙ** o **CTRL**+**MAIUSC**+**freccia SU**. È possibile modificare il colore di evidenziazione in **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Riferimento evidenziato**.
+Quando si fa clic su un simbolo nel codice sorgente, tutte le istanze del simbolo vengono evidenziate nel documento. I simboli evidenziati possono includere dichiarazioni e riferimenti e molti altri simboli restituiti da **Trova tutti i riferimenti**. Sono inclusi i nomi di classi, oggetti, variabili, metodi e proprietà. Nel codice Visual Basic vengono evidenziate anche le parole chiave per molte strutture di controlli. Per passare al simbolo evidenziato successivo o precedente, premere **CTRL**+**MAIUSC**+**freccia GIÙ** o **CTRL**+**MAIUSC**+**freccia SU**. È possibile modificare il colore di evidenziazione in **Strumenti** > **Opzioni** > **Ambiente** > **Tipi di carattere e colori** > **Riferimento evidenziato**.
 
 ## <a name="go-to-commands"></a>Comandi Vai a
 
@@ -92,7 +92,7 @@ Per Vai a sono disponibili i comandi seguenti, a cui si accede dal menu **Modifi
 
 In Visual Studio 2017 versione 15.8 e versioni successive, sono disponibili anche i comandi di spostamento **Vai a** seguenti:
 
-- **Go To Next Issue in File** (Vai al problema successivo nel file) o **ALT**+**PGGIÙ** e **Go To Previous Issue in File** (Vai al problema precedente nel file) o **ALT** + **PGSU**
+- **Go To Next Issue in File** (Vai al problema successivo nel file) o **ALT**+**PGGIÙ** e **Go To Previous Issue in File** (Vai al problema precedente nel file) o **ALT**+**PGSU**
 
 - **Vai alla posizione dell'ultima modifica** o **CTRL**+**MAIUSC**+**BACKSPACE**
 

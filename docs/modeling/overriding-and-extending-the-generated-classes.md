@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658326"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595891"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Override ed estensione delle classi generate
 
@@ -76,11 +76,11 @@ Un punto di estensione contrassegnato è una posizione nella definizione DSL in 
 
 In ogni caso, quando si imposta il flag e si rigenera il codice, viene generato un errore di compilazione. Fare doppio clic sull'errore per visualizzare un commento che spiega cosa è necessario fornire.
 
-### <a name="rules"></a>Regole
+### <a name="rules"></a>regole
 
 Il gestore delle transazioni consente di definire regole che vengono eseguite prima della fine di una transazione in cui si è verificato un evento designato, ad esempio una modifica in una proprietà. Le regole vengono in genere usate per gestire la sincronizzazione tra elementi diversi nell'archivio. Ad esempio, le regole vengono utilizzate per assicurarsi che nel diagramma venga visualizzato lo stato corrente del modello.
 
-Le regole vengono definite in base alle singole classi, quindi non è necessario disporre di codice che registri la regola per ogni oggetto. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+Le regole vengono definite in base alle singole classi, quindi non è necessario disporre di codice che registri la regola per ogni oggetto. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="store-events"></a>Archivia eventi
 

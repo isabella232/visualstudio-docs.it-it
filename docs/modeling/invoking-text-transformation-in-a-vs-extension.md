@@ -2,17 +2,17 @@
 title: Richiamo della trasformazione del testo in un'estensione VS
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667758"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594591"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Richiama trasformazione testo in un'estensione di Visual Studio
 
@@ -140,6 +140,6 @@ L'avviso del compilatore verrà visualizzato nella finestra di errore di Visual 
 
 Per generare testo da un modello di testo pre-elaborato: chiamare il metodo `TransformText()` della classe generata. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Per generare testo al di fuori di un'estensione di Visual Studio: definire un host personalizzato. Per ulteriori informazioni, vedere [elaborazione di modelli di testo tramite un host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Per generare testo al di fuori di un'estensione di Visual Studio: definire un host personalizzato. Per altre informazioni, vedere [elaborazione di modelli di testo tramite un Host personalizzato](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
 Per generare codice sorgente che può essere compilato ed eseguito in un secondo momento, chiamare il metodo [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) di [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

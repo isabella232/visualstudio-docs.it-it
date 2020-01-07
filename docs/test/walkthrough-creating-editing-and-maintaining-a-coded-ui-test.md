@@ -2,17 +2,17 @@
 title: Creare un test codificato dell'interfaccia utente
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659639"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592061"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
@@ -111,7 +111,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 2. Cercare e selezionare il modello di progetto **Progetto di test codificato dell'interfaccia utente** e procedere con i passaggi necessari per creare il nuovo progetto.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **Progetto di test codificato dell'interfaccia utente**, è necessario [installare il componente di test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Se il modello **Progetto di test codificato dell'interfaccia utente** non è visualizzato, è necessario [installare il componente Test codificato dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
      Il nuovo progetto di test codificato dell'interfaccia utente denominato **CodedUITestProject1** viene aggiunto alla soluzione e viene visualizzata la finestra di dialogo **Genera codice per test codificato dell'interfaccia utente**.
 
@@ -329,9 +329,9 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
      Questa volta tutti i passaggi del test codificato dell'interfaccia utente vengono completati. Nella finestra **Risultati test** viene visualizzato **Superato**.
 
-## <a name="videos"></a>Video
+## <a name="videos"></a>Videos
 
-![collegamento a video](../data-tools/media/playvideo.gif) [Get started with coded UI tests](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)(Introduzione ai test codificati dell'interfaccia utente)
+![collegamento a video](../data-tools/media/playvideo.gif) [Introduzione ai test codificati dell'interfaccia utente](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>Domande frequenti
 

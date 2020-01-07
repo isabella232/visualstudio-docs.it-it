@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd85d7b7e60c64244fb1753ffb2a903dff03455
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748544"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597230"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
 
@@ -30,7 +30,7 @@ Quando l'utente seleziona il comando **convalida architettura** in un diagramma 
 > [!WARNING]
 > Dopo aver creato un progetto di convalida, copiare il [codice di esempio](#example) disponibile alla fine di questo argomento e quindi modificarlo in base alle esigenze.
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
 
 Vedere [Requisiti](../modeling/extend-layer-diagrams.md#requirements).
 

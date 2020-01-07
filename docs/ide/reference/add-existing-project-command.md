@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add Existing Project command
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d57024c52e0a35d7e387f5ba3cccf0697fe44a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595878"
 ---
 # <a name="add-existing-project-command"></a>Comando Aggiungi progetto esistente
 Aggiunge un progetto esistente alla soluzione corrente.
@@ -29,7 +29,7 @@ Aggiunge un progetto esistente alla soluzione corrente.
 File.AddExistingProject filename
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `filename`\
 Parametro facoltativo. Percorso completo e nome del progetto comprensivo di estensione da aggiungere alla soluzione.
 
@@ -50,6 +50,6 @@ In questo esempio viene aggiunto il progetto [!INCLUDE[vbprvb](../../code-qualit
 ## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

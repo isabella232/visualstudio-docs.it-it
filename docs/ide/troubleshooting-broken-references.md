@@ -8,17 +8,17 @@ helpviewer_keywords:
 - troubleshooting references
 - referencing files from projects
 - referencing components, troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5efe0d5ba8d00f7bfc362dd702f45dfa627c20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5116d2487ca9f53c460e1cae8f362f3ff1bcdf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647377"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565916"
 ---
 # <a name="troubleshoot-broken-references"></a>Risolvere i problemi relativi ai riferimenti interrotti
 
@@ -90,4 +90,4 @@ Se un utente ha aggiunto un riferimento a un componente COM e un altro utente te
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Pagina Riferimenti, Creazione progetti (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)
+- [Riferimenti (pagina), Creazione progetti (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

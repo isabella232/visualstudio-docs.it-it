@@ -9,29 +9,29 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649063"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587186"
 ---
 # <a name="usage-warnings"></a>avvisi di utilizzo
 
 Gli avvisi di utilizzo supportano il corretto utilizzo di .NET.
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 
 |Regola|Descrizione|
 |----------|-----------------|
 |[CA1801: Rivedere i parametri non usati](../code-quality/ca1801.md)|Una firma di metodo include un parametro non utilizzato nel corpo del metodo.|
 |[CA1806: Non ignorare i risultati del metodo](../code-quality/ca1806.md)|Un nuovo oggetto viene creato, ma non viene mai utilizzato oppure viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai utilizzata oppure un metodo COM o P/Invoke restituisce un HRESULT o un codice di errore che non viene mai utilizzato.|
-|[CA1816: Chiamare GC.SuppressFinalize correttamente](../code-quality/ca1816.md)|Un metodo che rappresenta un'implementazione di Dispose non chiama GC. SuppressFinalize o un metodo che non è un'implementazione di Dispose chiama GC. SuppressFinalize o un metodo chiama GC. SuppressFinalize e passa un valore diverso da this (me in Visual Basic).|
+|[CA1816: Chiamare GC.SuppressFinalize correttamente](../code-quality/ca1816.md)|Un metodo che è un'implementazione di Dispose non chiama GC. SuppressFinalize; o un metodo che non è un'implementazione di Dispose chiama GC. SuppressFinalize; o un metodo chiama GC. SuppressFinalize e passa un valore diverso da this (Me in Visual Basic).|
 |[CA2200: Eseguire il rethrow per mantenere i dettagli dello stack](../code-quality/ca2200.md)|Viene generata di nuovo un'eccezione, specificata in modo esplicito nell'istruzione throw. Se un'eccezione viene generata di nuovo tramite la specifica nell'istruzione throw, l'elenco di chiamate ai metodi tra il metodo originale che ha generato l'eccezione e il metodo corrente viene perso.|
 |[CA2201: Non generare tipi di eccezione riservati](../code-quality/ca2201.md)|In questo modo è difficile rilevare ed eseguire il debug dell'errore originale.|
 |[CA2202: Non eliminare oggetti più volte](../code-quality/ca2202.md)|Un'implementazione di metodo contiene percorsi del codice che potrebbero comportare più chiamate a System.IDisposable.Dispose o a un equivalente di Dispose (ad esempio un metodo Close() per alcuni tipi) sullo stesso oggetto.|

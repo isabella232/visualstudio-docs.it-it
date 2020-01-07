@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747748"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565877"
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -34,10 +34,10 @@ Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vspr
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `path`
 
-Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È necessario specificare un percorso completo se il file specificato non si trova in una delle directory incluse nella variabile di ambiente PATH.
+Richiesto. Percorso e nome del file da eseguire o del documento da aprire. È necessario specificare un percorso completo se il file specificato non si trova in una delle directory incluse nella variabile di ambiente PATH.
 
 `args`
 
@@ -87,7 +87,7 @@ Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartell
 ## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Output (finestra)](../../ide/reference/output-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

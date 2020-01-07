@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747628"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597191"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Creare diagrammi delle dipendenze dal codice
 
@@ -70,7 +70,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disp
 
 4. Creare un nuovo diagramma delle dipendenze per la soluzione usando il menu **architettura**
 
-5. Selezionare tutti i nodi nella mappa del codice (usare _Ctrl_  + _un_o usare la selezione della striscia di gomma premendo il tasto _MAIUSC_ prima di fare clic, trascinare e rilasciare.
+5. Selezionare tutti i nodi nella mappa del codice (usare _Ctrl_ + _un_o usare la selezione della striscia di gomma premendo il tasto _MAIUSC_ prima di fare clic, trascinare e rilasciare.
 
 6. Trascinare o copiare e incollare gli elementi selezionati nel nuovo diagramma di convalida delle dipendenze.
 
@@ -87,7 +87,7 @@ Prima di creare un diagramma delle dipendenze, assicurarsi che la soluzione disp
 
 |**Per**|**Attenersi alla seguente procedura**|
 |-|-|
-|Creare un livello per un solo elemento|<ol><li>Trascinare l'elemento nel diagramma delle dipendenze da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codice<br /><br />         Vedere eseguire il [mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'elemento.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Il trascinamento dei file binari nel diagramma delle dipendenze non aggiunge automaticamente i riferimenti al progetto di modello. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modello. **Per aggiungere file binari al progetto di modello** <ol><li>In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto di modello, quindi scegliere **Aggiungi elemento esistente**.</li><li>Nella finestra di dialogo **Aggiungi elemento esistente** individuare i file binari, selezionarli, quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>In **Esplora soluzioni**scegliere un file binario aggiunto, quindi premere **F4** per aprire la finestra **proprietà** .</li><li>Per ogni file binario, impostare la proprietà **azione di compilazione** su **convalida**.</li></ol>|
+|Creare un livello per un solo elemento|<ol><li>Trascinare l'elemento nel diagramma delle dipendenze da queste origini:<br /><br /> <ul><li>**Esplora soluzioni**<br /><br />         Ad esempio, è possibile trascinare file o progetti.</li><li>Mappe codici<br /><br />         Vedere eseguire il [mapping delle dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md) e [usare le mappe codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Visualizzazione classi** o **Visualizzatore oggetti**</li></ul><br />     Nel diagramma viene visualizzato un livello collegato all'elemento.</li><li>Rinominare il livello per riflettere le responsabilità del codice o degli artefatti associati.</li></ol> **Importante:**  Il trascinamento dei file binari nel diagramma delle dipendenze non aggiunge automaticamente i riferimenti al progetto di modello. ma è necessario aggiungere manualmente i file binari desiderati per convalidare il progetto di modello. **Per aggiungere file binari al progetto di modello** <ol><li>In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto di modello, quindi scegliere **Aggiungi elemento esistente**.</li><li>Nella finestra di dialogo **Aggiungi elemento esistente** individuare i file binari, selezionarli, quindi scegliere **OK**.     I file binari verranno visualizzati nel progetto di modellazione.</li><li>In **Esplora soluzioni**scegliere un file binario aggiunto, quindi premere **F4** per aprire la finestra **proprietà** .</li><li>Per ogni file binario, impostare la proprietà **azione di compilazione** su **convalida**.</li></ol>|
 |Creare un solo livello per tutti gli artefatti selezionati|Trascinare contemporaneamente tutti gli elementi nel diagramma delle dipendenze.<br /><br /> Nel diagramma viene visualizzato un livello collegato a tutti gli elementi.|
 |Creare un livello per ogni elemento selezionato|Premere e tenere premuto **MAIUSC** mentre si trascinano tutti gli elementi nel diagramma delle dipendenze nello stesso momento. **Nota:**  Se si usa il tasto **MAIUSC** per selezionare un intervallo di elementi, rilasciare il tasto dopo avere selezionato gli elementi. Premerlo e tenerlo premuto nuovamente quando si trascinano gli elementi nel diagramma. <br /><br /> Per ogni elemento nel diagramma viene visualizzato un livello collegato a ciascun elemento.|
 |Aggiungere un artefatto a un livello|Trascinare l'elemento sul livello.|

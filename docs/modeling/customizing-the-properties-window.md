@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653970"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589695"
 ---
 # <a name="customize-the-properties-window"></a>Personalizzare il Finestra Proprietà
 
@@ -32,7 +32,7 @@ Quando si imposta il nome di una proprietà nella definizione DSL, il nome visua
 
 - Nel codice del programma generato. Se si usano le funzionalità di documentazione per estrarre la documentazione dell'API, questa verrà visualizzata come descrizione della proprietà nell'API.
 
-**Category**. Una categoria è un'intestazione nel Finestra Proprietà.
+**Categoria**. Una categoria è un'intestazione nel Finestra Proprietà.
 
 ## <a name="expose-style-features"></a>Esporre le funzionalità di stile
 
@@ -40,7 +40,7 @@ Alcune delle funzionalità dinamiche degli elementi grafici possono essere rappr
 
 Fare clic con il pulsante destro del mouse su una classe Shape nella definizione DSL, scegliere **Aggiungi esposto**, quindi scegliere una funzionalità.
 
-Nelle forme è possibile esporre le proprietà **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Sui connettori è possibile esporre il **colore** `,` proprietà**TextColor**, **DashStyle**e **Thickness** . Nei diagrammi è possibile esporre le proprietà **FillColor** e **TextColor** .
+Nelle forme è possibile esporre le proprietà **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Sui connettori è possibile esporre il **colore**`,`proprietà **TextColor**, **DashStyle**e **Thickness** . Nei diagrammi è possibile esporre le proprietà **FillColor** e **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Inoltring: visualizzare le proprietà degli elementi correlati
 
@@ -62,7 +62,7 @@ Quando l'utente seleziona una forma o un connettore o un elemento nella finestra
 
 ### <a name="add-property-forwarding"></a>Aggiungi inoltri proprietà
 
-Per l'invio di una proprietà, è necessario definire un descrittore del tipo di dominio. Se si dispone di una relazione di dominio tra due classi di dominio, è possibile utilizzare un descrittore del tipo di dominio per impostare una proprietà di dominio nella prima classe sul valore di una proprietà di dominio nella seconda classe di dominio. Se, ad esempio, è presente una relazione tra una classe di dominio **book** e una classe di dominio **Author** , è possibile usare un descrittore di tipo di dominio per rendere la proprietà **Name** dell' **autore** di un libro nella finestra Proprietà quando l'utente Seleziona il libro.
+Per l'invio di una proprietà, è necessario definire un descrittore del tipo di dominio. Se si dispone di una relazione di dominio tra due classi di dominio, è possibile utilizzare un descrittore del tipo di dominio per impostare una proprietà di dominio nella prima classe sul valore di una proprietà di dominio nella seconda classe di dominio. Se, ad esempio, si dispone di una relazione tra una classe di dominio **book** e una classe di dominio **Author** , è possibile utilizzare un descrittore del tipo di dominio per fare in modo che la proprietà **Name** di un **autore** del libro venga visualizzata nel finestra Proprietà quando l'utente seleziona il libro.
 
 > [!NOTE]
 > L'invio di proprietà influiscono solo sul Finestra Proprietà quando l'utente sta modificando un modello. Non definisce una proprietà di dominio per la classe ricevente. Se si desidera accedere alla proprietà del dominio di cui è stato inviato in altre parti della definizione DSL o nel codice del programma, è necessario accedere all'elemento di invio.
@@ -183,12 +183,12 @@ Per definire un editor, è necessario scrivere una classe derivata da <xref:Syst
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, per specificare se l'editor apre una finestra di dialogo o fornisce un menu a discesa.
 
-È anche possibile fornire una rappresentazione grafica del valore della proprietà che verrà visualizzato nella griglia delle proprietà. A tale scopo, eseguire l'override di `GetPaintValueSupported` e `PaintValue`.  Per ulteriori informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.
+È anche possibile fornire una rappresentazione grafica del valore della proprietà che verrà visualizzato nella griglia delle proprietà. A tale scopo, eseguire l'override di `GetPaintValueSupported`e `PaintValue`.  Per ulteriori informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Aggiungere il codice in un file di codice separato nel progetto **DSL** .
 
-Esempio:
+Ad esempio:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +226,7 @@ Per definire un elenco di valori standard, aggiungere alla proprietà di dominio
 (typeof(MyTypeConverter))]
 ```
 
-Definire una classe che deriva da <xref:System.ComponentModel.TypeConverter>. Aggiungere il codice in un file separato nel progetto **DSL** . Esempio:
+Definire una classe che deriva da <xref:System.ComponentModel.TypeConverter>. Aggiungere il codice in un file separato nel progetto **DSL** . Ad esempio:
 
 ```csharp
 /// <summary>

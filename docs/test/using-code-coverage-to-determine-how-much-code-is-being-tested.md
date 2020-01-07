@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659796"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585600"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -32,7 +32,7 @@ Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando E
 
 ::: moniker-end
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
 
 La funzionalità di code coverage è disponibile solo in Visual Studio Enterprise Edition.
 
@@ -54,10 +54,10 @@ La funzionalità di code coverage è disponibile solo in Visual Studio Enterpris
 
 ::: moniker-end
 
-2. Al termine dell'esecuzione dei test, per vedere quali righe sono state eseguite, scegliere ![Show icona colorazione code coverage ](../test/media/codecoverage-showcoloringicon.png) **Mostra colorazione code coverage** nella finestra **Risultati code coverage** . Per impostazione predefinita, il codice coperto da test viene evidenziato in blu chiaro.
+2. Dopo l'esecuzione dei test, per vedere quali righe sono state eseguite, scegliere ![Mostra icona colorazione code coverage](../test/media/codecoverage-showcoloringicon.png) **Mostra colorazione code coverage** nella finestra **Risultati code coverage** . Per impostazione predefinita, il codice coperto da test viene evidenziato in blu chiaro.
 
    > [!TIP]
-   > Per modificare i colori o per usare il grassetto, scegliere **strumenti**  > **opzioni**  > **ambiente**  > **tipi di carattere e colori**  > **Mostra impostazioni per: editor di testo**. In **elementi visualizzati**, modificare le impostazioni per gli elementi "code coverage", ad esempio l' **area non interessata dal code coverage**.
+   > Per modificare i colori o per usare il grassetto, scegliere **strumenti** > **opzioni** > **ambiente** > **tipi di carattere e colori** > **Mostra impostazioni per: editor di testo**. In **elementi visualizzati**, modificare le impostazioni per gli elementi "code coverage", ad esempio l' **area non interessata dal code coverage**.
    >
    > ![Tipi di carattere e colori di code coverage](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -105,7 +105,7 @@ In alcune situazioni, verranno utilizzati blocchi di codice diversi a seconda de
 
 Ad esempio, si supponga che quando si esegue un test con input "2 ", si rileva che viene analizzato il 50% di una particolare funzione e quando si esegue il test una seconda volta con l'input "- 2 ", si rileva nella visualizzazione della colorazione di code coverage che viene analizzato l'altro 50% della funzione. A questo punto viene eseguito il merge dei risultati delle due esecuzioni dei test e nel report e nella visualizzazione della colorazione di code coverage viene indicato che il 100% della funzione è stato analizzato.
 
-A questo scopo, usare l'![icona per il pulsante di esecuzione del merge nella finestra Code coverage](../test/media/codecoverage-mergeicon.png)**icona per il merge dei risultati di code coverage**. È possibile scegliere qualsiasi combinazione di esecuzioni recenti o risultati importati. Per combinare i risultati esportati, è necessario prima importarli.
+Usare ![icona per il pulsante Unisci nella finestra di code coverage](../test/media/codecoverage-mergeicon.png) **unire i risultati del code coverage** a tale scopo. È possibile scegliere qualsiasi combinazione di esecuzioni recenti o risultati importati. Per combinare i risultati esportati, è necessario prima importarli.
 
 Usare **Export Code Coverage Results** (Esporta risultati di code coverage) per salvare i risultati di un'operazione di merge.
 
@@ -124,7 +124,7 @@ Potrebbe essere necessario escludere specifici elementi nel codice dai risultati
 > [!TIP]
 > L'esclusione di una classe non esclude le relative classi derivate.
 
-Esempio:
+Ad esempio:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -243,9 +243,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Utilizzare le seguenti macro:
 
-`ExcludeFromCodeCoverage(` *NomeEsclusione* `, L"` *NomeFunzione* `");`
+`ExcludeFromCodeCoverage(` *esclusionname* `, L"` *funzionename* `");`
 
-`ExcludeSourceFromCodeCoverage(` *NomeEsclusione* `, L"` *PercorsoFileOrigine* `");`
+`ExcludeSourceFromCodeCoverage(` *esclusionname* `, L"` *percorsofileorigine* `");`
 
 - *NomeEsclusione* è un nome univoco.
 
@@ -282,17 +282,17 @@ Per eseguire un test dalla riga di comando, usare *vstest.console.exe*. Il code 
 
    ::: moniker range="vs-2017"
 
-   Nel menu **Start** di Windows scegliere **Visual Studio 2017** > **Prompt dei comandi per gli sviluppatori per VS 2017**.
+   Nel menu **Start** di Windows scegliere **Visual Studio 2017** > **prompt dei comandi per gli sviluppatori per vs 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Nel menu **Start** di Windows scegliere **Visual Studio 2019** > **Prompt dei comandi per gli sviluppatori per VS 2019**.
+   Nel menu **Start** di Windows scegliere **Visual Studio 2019** > **prompt dei comandi per gli sviluppatori per vs 2019**.
 
    ::: moniker-end
 
-2. Al prompt dei comandi, eseguire il comando seguente:
+2. Al prompt dei comandi eseguire il seguente comando:
 
    ```shell
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage

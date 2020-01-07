@@ -6,17 +6,17 @@ helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7d62e1824d72933d8cb5c3c345ed8788435a6f20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931510"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592100"
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire una destinazione o un'attività una sola volta per ogni batch.
@@ -85,13 +85,13 @@ L'esempio seguente illustra un elemento `Target` che contiene un attributo `Outp
 Per un altro esempio di suddivisione in batch della destinazione, vedere [Metadati degli elementi nell'esecuzione in batch delle destinazioni](../msbuild/item-metadata-in-target-batching.md).
 
 ## <a name="property-functions-using-metadata"></a>Funzioni delle proprietà che usano i metadati
-La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio,
+La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio:
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 usa <xref:System.IO.Path.Combine%2A> per combinare un percorso di cartella radice con un percorso di elemento Compile.
 
-Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio,
+Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio:
 
 `%(Compile.FullPath.Substring(0,3))`
 

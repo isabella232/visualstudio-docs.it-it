@@ -4,17 +4,17 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642918"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586900"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
@@ -26,7 +26,7 @@ Questo articolo è incentrato sull'uso di strumenti dati in Visual Studio e non 
 
 In questo esempio vengono utilizzati SQL Server Express database locale e il database di esempio Northwind. Se il provider di dati ADO.NET per il prodotto supporta Entity Framework, dovrebbe funzionare anche con altri prodotti del database SQL.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro sviluppo di applicazioni **desktop .NET** o come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**, è possibile installare SQL Server Express Local DB nel contesto del carico di lavoro **Sviluppo per desktop .NET** o come componente singolo.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -46,7 +46,7 @@ In questo esempio vengono utilizzati SQL Server Express database locale e il dat
 
 1. In Visual Studio creare un nuovo C# progetto di **applicazione WPF** .
 
-2. Aggiungere il pacchetto NuGet per Entity Framework 6. In **Esplora soluzioni**selezionare il nodo del progetto. Nel menu principale scegliere **progetto**  > **Gestisci pacchetti NuGet**.
+2. Aggiungere il pacchetto NuGet per Entity Framework 6. In **Esplora soluzioni**selezionare il nodo del progetto. Nel menu principale scegliere **progetto** > **Gestisci pacchetti NuGet**.
 
      ![Voce di menu Gestisci pacchetti NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -58,7 +58,7 @@ In questo esempio vengono utilizzati SQL Server Express database locale e il dat
 
 ## <a name="create-the-model"></a>Creare il modello
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi**  > **nuovo elemento**. Nel riquadro sinistro, sotto il C# nodo, scegliere **dati** e nel riquadro centrale scegliere **ADO.NET Entity Data Model**.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **nuovo elemento**. Nel riquadro sinistro, sotto il C# nodo, scegliere **dati** e nel riquadro centrale scegliere **ADO.NET Entity Data Model**.
 
    ![Nuovo elemento del modello di Entity Framework](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -94,7 +94,7 @@ A questo punto si è pronti per associare questo modello alla pagina XAML in mod
 
 È possibile scrivere codice di data binding, ma è molto più semplice consentire a Visual Studio di eseguire questa operazione.
 
-1. Dal menu principale scegliere **progetto**  > **Aggiungi nuova origine dati** per visualizzare la **Configurazione guidata origine dati**. Scegliere **oggetto** perché si sta associando le classi del modello, non al database:
+1. Dal menu principale scegliere **progetto** > **Aggiungi nuova origine dati** per visualizzare la **Configurazione guidata origine dati**. Scegliere **oggetto** perché si sta associando le classi del modello, non al database:
 
      ![Configurazione guidata origine dati con origine oggetto](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
@@ -114,7 +114,7 @@ A questo punto si è pronti per associare questo modello alla pagina XAML in mod
         </Grid.RowDefinitions>
     ```
 
-5. Aprire *MainWindow. XAML* in modo che sia visualizzato nella finestra di progettazione. In questo modo la finestra **origini dati** verrà visualizzata come opzione nel margine della finestra di Visual Studio accanto alla **casella degli strumenti**. Fare clic sulla scheda per aprire la finestra. in alternativa, premere **maiusc** +**ALT** +**D** o scegliere **visualizza**  >  altre**origini dati**di**Windows**  > . Ogni proprietà della classe customers verrà visualizzata nella propria casella di testo. Per prima cosa, fare clic sulla freccia nella casella combinata **Customers** e scegliere **Details**. Trascinare quindi il nodo sulla parte centrale dell'area di progettazione in modo che la finestra di progettazione sappia che si desidera che venga posizionata nella riga intermedia. Se non si posiziona il mouse, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento Grid, ma a questo punto è possibile disporli nel form. Ad esempio, potrebbe essere utile inserire la casella di testo **nome** in alto, sopra l'indirizzo. L'applicazione di esempio per questo articolo Riordina i campi e li ridispone in due colonne.
+5. Aprire *MainWindow. XAML* in modo che sia visualizzato nella finestra di progettazione. In questo modo la finestra **origini dati** verrà visualizzata come opzione nel margine della finestra di Visual Studio accanto alla **casella degli strumenti**. Fare clic sulla scheda per aprire la finestra. in alternativa, premere **maiusc**+**ALT**+**D** o scegliere **visualizza** > altre **origini dati**di **Windows** > . Ogni proprietà della classe customers verrà visualizzata nella propria casella di testo. Per prima cosa, fare clic sulla freccia nella casella combinata **Customers** e scegliere **Details**. Trascinare quindi il nodo sulla parte centrale dell'area di progettazione in modo che la finestra di progettazione sappia che si desidera che venga posizionata nella riga intermedia. Se non si posiziona il mouse, è possibile specificare la riga manualmente in un secondo momento nel codice XAML. Per impostazione predefinita, i controlli vengono posizionati verticalmente in un elemento Grid, ma a questo punto è possibile disporli nel form. Ad esempio, potrebbe essere utile inserire la casella di testo **nome** in alto, sopra l'indirizzo. L'applicazione di esempio per questo articolo Riordina i campi e li ridispone in due colonne.
 
      ![Associazione all'origine dati dei clienti ai singoli controlli](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 

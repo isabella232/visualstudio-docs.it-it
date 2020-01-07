@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777755"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587147"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 
@@ -32,7 +32,7 @@ Per la prima volta, è stato eseguito il refactoring di Windows per avere a disp
 
 La piattaforma UWP (Universal Windows Platform) è semplicemente una raccolta di contratti e versioni che consente di scegliere la destinazione in cui eseguire l'app. La destinazione non è più un sistema operativo, ma una o più famiglie di dispositivi. Per altre informazioni, vedere [Introduzione alla piattaforma UWP (Universal Windows Platform)](/windows/uwp/get-started/universal-application-platform-guide).
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
 
 Gli strumenti di sviluppo di UWP (Universal Windows Platform) sono dotati di emulatori che consentono di visualizzare l'aspetto dell'app in dispositivi diversi. Per usare gli emulatori, è necessario installare questo software in un computer fisico in cui sia in esecuzione Windows 8.1 (x64) Professional o versioni successive e dotato di un processore che supporti Client Hyper-V e Second Level Address Translation (SLAT). Non è possibile eseguire gli emulatori quando Visual Studio è installato in una macchina virtuale.
 
@@ -58,7 +58,7 @@ Elenco del software necessario:
 
 ::: moniker-end
 
-Dopo aver installato il software, è necessario abilitare il dispositivo Windows 10 per lo sviluppo. Vedere [Abilitare il dispositivo per lo sviluppo](/windows/uwp/get-started/enable-your-device-for-development). Non è più necessaria una licenza per sviluppatori per ogni dispositivo Windows 10.
+Dopo aver installato il software, è necessario abilitare il dispositivo Windows 10 per lo sviluppo Vedere [Abilitare il dispositivo per lo sviluppo](/windows/uwp/get-started/enable-your-device-for-development). Non è più necessaria una licenza per sviluppatori per ogni dispositivo Windows 10.
 
 ## <a name="universal-windows-apps"></a>App di Windows universale
 
@@ -66,7 +66,7 @@ Scegliere il linguaggio di sviluppo preferito tra C#, Visual Basic, C++ o JavaSc
 
 Se si hanno app di Windows Store 8.1 o Windows Phone 8.1 oppure app di Windows universale create con Visual Studio 2015, sarà necessario trasferire tali app per usare la versione più recente della piattaforma UWP (Universal Windows Platform). Vedere [Passare da Windows Runtime 8.x a UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
-Dopo aver creato l'app di Windows universale, è necessario creare un pacchetto dell'app per installarla in un dispositivo Windows 10 o inviarla a Windows Store. Vedere [Creazione di pacchetti delle app](/windows/uwp/packaging/index).
+Dopo aver creato l'app di Windows universale, è necessario creare un pacchetto dell'app per installarla in un dispositivo Windows 10 o inviarla al Windows Store. Vedere [Creazione di pacchetti delle app](/windows/uwp/packaging/index).
 
 ## <a name="see-also"></a>Vedere anche
 
