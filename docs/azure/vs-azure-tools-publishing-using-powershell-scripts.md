@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911741"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573313"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
 
@@ -22,10 +22,10 @@ Quando si crea un'applicazione web in Visual Studio, è possibile generare uno s
 
 Utilizzando questi script, è possibile eseguire il provisioning (noto anche come ambienti di sviluppo e test) di versioni personalizzate del sito per un utilizzo temporaneo. Ad esempio, si potrebbe impostare una particolare versione del sito Web in una macchina virtuale di Azure o in una slot di gestione temporanea in un sito Web per eseguire un gruppo di test, riprodurre un bug, testare una correzione di bug, una versione di valutazione di una modifica proposta o configurare un ambiente personalizzato per una dimostrazione o una presentazione. Dopo aver creato uno script che pubblica il progetto, è possibile ricreare ambienti identici eseguendo nuovamente lo script in base alle esigenze o eseguire lo script con la build dell'applicazione Web per creare un ambiente di test personalizzato.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 * Visual Studio 2015 o versione successiva con il **carico di lavoro di Azure** installato oppure Visual Studio 2013 e Azure SDK 2.3 o versioni successive. Vedere [Download di Visual Studio](https://visualstudio.microsoft.com/downloads). Non è necessario Azure SDK per generare script per i progetti Web. Questa funzionalità è riservata ai progetti Web, non ai ruoli Web nei servizi cloud.
-* Azure PowerShell 0.7.4 o versione successiva Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
+* Azure PowerShell 0.7.4 o versioni successive. Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) o versione successiva.
 
 ## <a name="additional-tools"></a>Altri strumenti
@@ -44,7 +44,7 @@ Visual Studio genera una cartella a livello di soluzione denominata **PublishScr
 
 Lo script di pubblicazione contiene specifici passaggi di pubblicazione per la distribuzione in una macchina virtuale o in un sito Web. Visual Studio fornisce la colorazione della sintassi per lo sviluppo di Windows PowerShell . La Guida per le funzioni è disponibile, ed è possibile modificare liberamente le funzioni nello script per adattarle ai propri requisiti.
 
-### <a name="windows-powershell-module"></a>Modulo Windows PowerShell
+### <a name="windows-powershell-module"></a>modulo di Windows PowerShell
 
 Il modulo Windows PowerShell generato da Visual Studio contiene funzioni che utilizzano lo script di pubblicazione. Queste funzioni di Azure PowerShell non possono essere modificate. Vedere [Come installare e configurare Azure PowerShell](/powershell/azure/overview).
 
@@ -152,9 +152,9 @@ Se non è stato eseguito prima uno script Windows PowerShell, è innanzitutto ne
 
 1. Creare il pacchetto di distribuzione Web per il progetto. Un pacchetto di distribuzione Web è un archivio compresso (con estensione zip) che contiene i file che si desidera copiare in una macchina virtuale o il sito Web. È possibile creare pacchetti di distribuzione Web in Visual Studio per qualsiasi applicazione web.
 
-   ![Creare pacchetto di distribuzione web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![Creazione del pacchetto di distribuzione Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Per altre informazioni, vedere [procedura: creare un pacchetto di distribuzione Web in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). È anche possibile automatizzare la creazione del pacchetto di Distribuzione Web, come descritto nella sezione [Personalizzazione ed estensione degli script di pubblicazione](#customizing-and-extending-the-publish-scripts).
+   Per ulteriori informazioni, vedere [Procedura: Creare un pacchetto di distribuzione Web in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). È anche possibile automatizzare la creazione del pacchetto di Distribuzione Web, come descritto nella sezione [Personalizzazione ed estensione degli script di pubblicazione](#customizing-and-extending-the-publish-scripts).
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida per lo script e quindi scegliere **Apri con PowerShell ISE**.
 1. Se gli script di Windows PowerShell vengono eseguiti su questo computer per la prima volta, aprire una finestra del prompt dei comandi con privilegi di amministratore e digitare il comando seguente:
@@ -250,7 +250,7 @@ Per automatizzare la compilazione del progetto, aggiungere il codice che chiama 
         #Write a function to build and package your web application
     ```
 
-    Per compilare l'applicazione Web, usare MsBuild.exe. Per informazioni, vedere il riferimento della riga di comando di MSBuild all'indirizzo: [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)
+    Per compilare l'applicazione Web, usare MsBuild.exe. Per informazioni, vedere [riferimenti alla riga di comando di MSBuild](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'

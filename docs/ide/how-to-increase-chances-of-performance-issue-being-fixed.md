@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903994"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406098"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
@@ -39,6 +39,8 @@ Di seguito sono descritti i problemi difficili da diagnosticare senza file di di
 -   [Problemi di lentezza:](#slowness-and-high-cpu-issues) Qualsiasi azione specifica in Visual Studio è più lenta di quella desiderata
 
 -   [CPU elevata:](#slowness-and-high-cpu-issues) Periodi prolungati di utilizzo elevato della CPU inaspettatamente
+
+-   [Problemi out-of-process:](#out-of-process-issues) Un problema causato da un processo satellite di Visual Studio
 
 ## <a name="crashes"></a>Crashes
 Si verifica un arresto anomalo quando il processo (Visual Studio) termina in modo imprevisto.
@@ -171,6 +173,23 @@ Non alleghi direttamente le tracce delle prestazioni agli elementi di feedback e
 **Tracce di prestazioni avanzate**
 
 Per la maggior parte degli scenari, le funzionalità di raccolta delle tracce nello strumento segnala un problema sono sufficienti. In alcuni casi, tuttavia, è necessario un maggiore controllo sulla raccolta di tracce (ad esempio, traccia con dimensioni del buffer maggiori), nel qual caso PerfView è un ottimo strumento da usare. I passaggi per la registrazione manuale della traccia delle prestazioni con lo strumento PerfView sono reperibili nella pagina [registrazione delle tracce delle prestazioni con PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+
+## <a name="out-of-process-issues"></a>Problemi out-of-process
+
+> [!NOTE]
+> A partire da Visual Studio 2019 versione 16,3, i log out-of-process vengono collegati automaticamente ai commenti inviati usando lo strumento segnala un problema. Tuttavia, se il problema è direttamente riproducibile, la procedura seguente potrebbe ancora aiutare ad aggiungere ulteriori informazioni per facilitare la diagnosi del problema.
+
+Sono disponibili numerosi processi satellite che vengono eseguiti in parallelo a Visual Studio e forniscono varie funzionalità dall'esterno del processo principale di Visual Studio. Se si verifica un errore in uno di questi processi satellite, viene in genere visualizzato sul lato di Visual Studio come ' StreamJsonRpc. RemoteInvocationException ' o ' StreamJsonRpc. ConnectionLostException '.
+
+Ciò che rende più praticabile questi tipi di problemi consiste nel fornire log aggiuntivi che possono essere raccolti attenendosi alla procedura seguente:
+
+1.  Se si tratta di un problema direttamente riproducibile, iniziare eliminando la cartella **% Temp%/servicehub/logs** . Se non è possibile riprodurre questo problema, mantenere intatta la cartella e ignorare i punti elenco seguenti:
+
+    -   Imposta la variabile di ambiente globale **ServiceHubTraceLevel** su **All**
+    -   Riprodurre il problema.
+
+2.  Scaricare lo strumento di raccolta dei log Microsoft Visual Studio e .NET Framework [qui](https://aka.ms/vscollect).
+3.  Esegui lo strumento. Viene restituito un file zip a **% Temp%/vslogs.zip**. Alleghi il file ai tuoi commenti.
 
 ## <a name="see-also"></a>Vedere anche
 

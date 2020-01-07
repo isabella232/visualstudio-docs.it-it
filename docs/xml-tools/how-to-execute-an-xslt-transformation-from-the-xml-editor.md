@@ -3,17 +3,17 @@ title: Eseguire una trasformazione XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb4aee348ae48a2078f7803a44d4746d3dbacc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3bd26eaadf921d13fc425a91031a39df5a80ea2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592698"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: eseguire una trasformazione XSLT dall'editor XML
 
@@ -35,7 +35,7 @@ Se la proprietà di **output** specifica un nome di file con un oggetto. *htm* o
 
     - Aggiungere il foglio di stile XSLT utilizzando la finestra **Proprietà** . Con il file XML aperto nell'editor, fare clic con il pulsante destro del mouse in un punto qualsiasi dell'editor e scegliere **Proprietà**. Nella finestra **Proprietà** fare clic nel campo **foglio di stile** e scegliere il pulsante Sfoglia (...). Selezionare il foglio di stile XSLT, quindi scegliere **Apri**.
 
-3. Nella barra dei menu scegliere **XML**  > **avviare XSLT senza debug**. In alternativa, premere **Ctrl** +**ALT** +**F5**.
+3. Nella barra dei menu scegliere **XML** > **avviare XSLT senza debug**. In alternativa, premere **Ctrl**+**ALT**+**F5**.
 
    L'output della trasformazione XSLT viene visualizzato in una nuova finestra del documento.
 
@@ -51,7 +51,7 @@ Se la proprietà di **output** specifica un nome di file con un oggetto. *htm* o
    > [!NOTE]
    > Il documento XML è il documento di input usato per la trasformazione. Se un documento non viene specificato al momento dell'avvio della trasformazione XSLT, viene visualizzata la finestra di dialogo **Apri file** in cui è possibile specificare un documento.
 
-3. Nella barra dei menu scegliere **XML**  > **avviare XSLT senza debug**. In alternativa, premere **Ctrl** +**ALT** +**F5**.
+3. Nella barra dei menu scegliere **XML** > **avviare XSLT senza debug**. In alternativa, premere **Ctrl**+**ALT**+**F5**.
 
    L'output della trasformazione XSLT viene visualizzato in una nuova finestra del documento.
 

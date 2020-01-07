@@ -27,23 +27,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666373"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588798"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento
 Questa finestra di dialogo consente di modificare il comportamento predefinito della barra di scorrimento dell'editor del codice. Per visualizzare queste opzioni, selezionare **Opzioni** dal menu **Strumenti**. All'interno della cartella **Editor di testo** espandere la sottocartella **Tutti i linguaggi** e quindi scegliere **Barre di scorrimento**.
 
 > [!CAUTION]
-> Questa pagina consente di impostare le opzioni predefinite per tutti i linguaggi di sviluppo. La reimpostazione di un'opzione in questa finestra di dialogo comporta la reimpostazione delle opzioni delle barre di scorrimento in tutti i linguaggi in base alle scelte operate qui. Per modificare le opzioni dell'editor di testo per un solo linguaggio, espandere la sottocartella per tale linguaggio e selezionare le pagine relative alle opzioni.
+> In questa pagina vengono impostate le opzioni predefinite per tutti i linguaggi di sviluppo. La reimpostazione di un'opzione in questa finestra di dialogo comporta la reimpostazione delle opzioni delle barre di scorrimento in tutti i linguaggi in base alle scelte operate qui. Per modificare le opzioni dell'editor di testo per un solo linguaggio, espandere la sottocartella per tale linguaggio e selezionare le pagine relative alle opzioni.
 
 ## <a name="show-horizontal-scroll-bar"></a>Mostra barra di scorrimento orizzontale
 
@@ -53,15 +53,15 @@ Quando questa opzione è selezionata, viene visualizzata una barra di scorriment
 
 Quando questa opzione è selezionata, viene visualizzata una barra di scorrimento verticale che consente di scorrere verso l'alto e verso il basso per visualizzare gli elementi al di fuori dell'area di visualizzazione dell'editor. Se non sono disponibili barre di scorrimento verticali, per scorrere è possibile usare i tasti PGSU e PGGIÙ e i tasti di direzione.
 
-## <a name="display"></a>Visualizzazione
+## <a name="display"></a>Schermo
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>Mostra annotazioni su barra di scorrimento verticale
 
 Selezionare se la barra di scorrimento verticale mostra le annotazioni seguenti:
 
 - modifiche
-- contrassegni
-- errori
+- Marchi
+- errors
 - posizione del cursore
 
 > [!TIP]
@@ -71,7 +71,7 @@ Selezionare se la barra di scorrimento verticale mostra le annotazioni seguenti:
 
 Vedere il post di blog sulla [barra di scorrimento avanzata](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) per informazioni sul significato dei vari colori e simboli durante la modifica di codice.
 
-## <a name="behavior"></a>Comportamento
+## <a name="behavior"></a>Comportamento di
 
 La barra di scorrimento ha due modalità: modalità barra (impostazione predefinita) e modalità mappa.
 

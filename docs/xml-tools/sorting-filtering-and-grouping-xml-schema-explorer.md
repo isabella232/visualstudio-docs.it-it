@@ -3,17 +3,17 @@ title: Ordinamento, filtro e raggruppamento in XML Schema Explorer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf9226f3b491a39c7ef5936667cabd789c6a457
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604586"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592516"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordinamento, filtro e raggruppamento (XML Schema Explorer)
 
@@ -65,7 +65,7 @@ Quando si seleziona l'opzione **Ordina per tipo** , i nodi globali vengono ordin
 
 Quando si seleziona l'opzione **Ordina per nome** , i nodi globali vengono ordinati nell'ordine seguente:
 
-1. Nodi `import` (in ordine alfabetico degli spazi dei nomi).
+1. `import` nodi (in ordine alfabetico degli spazi dei nomi).
 
 2. Nodi `include` (in ordine alfabetico degli attributi `schemaLocation`).
 
