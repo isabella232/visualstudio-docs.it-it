@@ -9,19 +9,19 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3ea0651ee1cfde14d5ef7b422095707d8f81cb2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974354"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590150"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selezionare i percorsi di installazione in Visual Studio
 
@@ -33,31 +33,31 @@ ms.locfileid: "62974354"
 
 ::: moniker range="vs-2017"
 
-**Novità della versione 15.7**: è possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema cambiando il percorso di alcuni file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
+**Novità della versione 15,7**: è possibile ridurre il footprint di installazione di Visual Studio sull'unità di sistema cambiando il percorso di alcuni file. In particolare è possibile usare un percorso diverso per la Download Cache, i componenti condivisi, i SDK e file degli strumenti.
 
 ::: moniker-end
 
    > [!NOTE]
    > Esistono alcuni strumenti e SDK con regole diverse riguardo al percorso di installazione. Questi strumenti e SDK vengono installati nell'unità di sistema anche se si sceglie un altro percorso.
 
-Pronti per iniziare? Ecco come fare.
+Sei pronto per iniziare? Ecco come fare.
 
 ::: moniker range="vs-2017"
 
 1. Quando si installa Visual Studio scegliere la scheda **Percorsi di installazione**.
 
-   ![Visual Studio 2017 - Selezionare il percorso di installazione](media/vs-installation-locations.png "Selezionare il percorso di installazione.")
+   ![Visual Studio 2017-selezionare il percorso di installazione](media/vs-installation-locations.png "Selezionare il percorso di installazione.")
 
 1. Nella sezione **IDE di Visual Studio** accettare il valore predefinito. Viene installato il prodotto principale e vengono inclusi file specifici per questa versione di Visual Studio.
 
-   ![Sezione IDE di Visual Studio della scheda Percorsi di installazione](media/vs-installation-locations-ide.png "Accettare l'impostazione predefinita per la sezione IDE di Visual Studio della scheda Percorsi di installazione.")
+   ![Sezione IDE di Visual Studio della scheda percorsi di installazione](media/vs-installation-locations-ide.png "Accettare l'impostazione predefinita per la sezione IDE di Visual Studio della scheda percorso installazione.")
 
    > [!TIP]
    > Se l'unità di sistema è un'unità SSD è consigliabile accettare il percorso predefinito nell'unità di sistema. Motivo: quando si sviluppa con Visual Studio, si eseguono operazioni di lettura e scrittura in numerosi file, aumentando così le attività di input/output del disco. È opportuno scegliere l'unità più veloce per gestire il carico.
 
 1. Nella sezione **Download Cache** decidere se si vuole mantenere la Download Cache e quindi scegliere dove archiviare i file corrispondenti.
 
-     ![Sezione Download Cache della scheda Percorsi di installazione](media/vs-installation-locations-cache.png "Scegliere se mantenere la Download Cache dopo l'installazione, quindi specificare l'unità in cui archiviare i file.")
+     ![Sezione download cache della scheda percorsi di installazione](media/vs-installation-locations-cache.png "Scegliere se conservare il Download Cache dopo l'installazione e quindi specificare l'unità in cui si desidera archiviare i file.")
 
     1. Selezionare o deselezionare **Mantieni la Download Cache dopo l'installazione**.
 
@@ -72,7 +72,7 @@ Pronti per iniziare? Ecco come fare.
 
 1. Nella sezione **Componenti condivisi, strumenti e SDK** specificare l'unità in cui si vogliono archiviare i file condivisi dalle installazioni side-by-side di Visual Studio. Anche i SDK e gli strumenti vengono archiviati in questa directory.
 
-   ![Sezioni Componenti condivisi, Strumenti e SDK della scheda Percorsi di installazione](media/vs-installation-locations-shared.png "Specificare il percorso in cui archiviare i componenti condivisi, gli strumenti e i SDK.")
+   ![Componenti condivisi, strumenti e SDK sezione della scheda percorsi di installazione](media/vs-installation-locations-shared.png "Specificare il percorso in cui si desidera archiviare componenti, strumenti e SDK condivisi.")
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Pronti per iniziare? Ecco come fare.
 
 1. Quando si installa Visual Studio scegliere la scheda **Percorsi di installazione**.
 
-   ![Visual Studio 2019 - Selezionare il percorso di installazione](media/vs-2019/vs-installer-installation-locations.png "Selezionare il percorso di installazione.")
+   ![Visual Studio 2019-selezionare il percorso di installazione](media/vs-2019/vs-installer-installation-locations.png "Selezionare il percorso di installazione.")
 
 1. Nella sezione **IDE di Visual Studio** accettare il valore predefinito. Viene installato il prodotto principale e vengono inclusi file specifici per questa versione di Visual Studio.
 
@@ -108,7 +108,7 @@ Pronti per iniziare? Ecco come fare.
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 * [Aggiornare Visual Studio](update-visual-studio.md)
 * [Modificare Visual Studio](update-visual-studio.md)
 * [Disinstallare Visual Studio](uninstall-visual-studio.md)

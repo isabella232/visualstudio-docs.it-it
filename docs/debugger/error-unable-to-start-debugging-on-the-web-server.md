@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736710"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404363"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: impossibile avviare il debug sul server Web
 
@@ -52,6 +52,7 @@ Il messaggio `Unable to start debugging on the Web server` è generico. In gener
 - [Non è stato possibile avviare il debug di ASP.NET](#aspnet)
 - [Il debugger non è in grado di connettersi al computer remoto](#cannot_connect)
 - [Per verificare gli errori di configurazione comuni, consultare la Guida. Esecuzione della pagina Web all'esterno del debugger può fornire ulteriori informazioni.](#see_help)
+- [Operazione non supportata. Errore sconosciuto: *numero errore*](#operation_not_supported)
 
 ## <a name="IISlist"></a>IIS non elenca un sito Web corrispondente all'URL di avvio
 
@@ -76,7 +77,7 @@ Il messaggio `Unable to start debugging on the Web server` è generico. In gener
 ## <a name="msvsmon"></a> Microsoft Visual Studio Remote Debugging Monitor (msvsmon.exe) non sembra essere in esecuzione sul computer remoto
 
 - Se si esegue il debug in un computer remoto, verificare di aver [installato e che esegua il debugger remoto](../debugger/remote-debugging.md). Se il messaggio indica un firewall, assicurarsi che siano aperte le [porte corrette del firewall](../debugger/remote-debugger-port-assignments.md) , soprattutto se si usa un firewall di terze parti.
-- Se si usa un file HOSTs, assicurarsi che sia configurato correttamente. Se, ad esempio, si esegue il debug con **F5** (anziché **Connetti a processo**), il file host deve includere lo stesso URL di progetto delle proprietà del progetto, **Proprietà > server > Web** o **Proprietà > debug**, a seconda di tipo di progetto.
+- Se si usa un file HOSTs, assicurarsi che sia configurato correttamente. Se, ad esempio, si esegue il debug con **F5** (anziché **Connetti a processo**), il file degli host deve includere lo stesso URL del progetto delle proprietà del progetto, **Proprietà > server > Web** o **Proprietà > debug**, a seconda del tipo di progetto.
 
 ## <a name="server_error"></a>Il server remoto ha restituito un errore
 
@@ -105,6 +106,10 @@ Inoltre, se si utilizza un file HOSTs, assicurarsi che sia configurato correttam
 - Si sta eseguendo Visual Studio e il server Web nello stesso computer? Aprire le proprietà del progetto e assicurarsi che il progetto sia configurato per la connessione al server Web e all'URL di avvio corretti. (Aprire **proprietà > server > Web** o **Proprietà > eseguire il debug** a seconda del tipo di progetto.)
 
 - Se l'operazione non funziona o si sta eseguendo il debug in modalità remota, attenersi alla procedura descritta in [controllare la configurazione di IIS](#vxtbshttpservererrorsthingstocheck).
+
+## <a name="operation_not_supported"></a>Operazione non supportata. Errore sconosciuto: *numero errore*
+
+Se si stanno eseguendo riscritture URL, testare un file Web. config di base senza riscritture URL. Vedere la **Nota** sul modulo URL Rewrite in [verificare la configurazione di IIS](#vxtbshttpservererrorsthingstocheck).
 
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>Controllare la configurazione di IIS
 

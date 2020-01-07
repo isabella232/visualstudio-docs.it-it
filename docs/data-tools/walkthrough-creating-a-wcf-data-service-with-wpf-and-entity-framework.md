@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648083"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585990"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
 Questa procedura dettagliata illustra come creare un semplice servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] incluso in un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e come accedervi da un'applicazione Windows Forms.
@@ -32,7 +32,7 @@ In questa procedura dettagliata:
 
 - Creare una [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] che rappresenti la tabella `Customers` nel database Northwind.
 
-- Creare un oggetto [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Creare un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
 - Creare un'applicazione client e aggiungere un riferimento al servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
@@ -40,7 +40,7 @@ In questa procedura dettagliata:
 
 - Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
 1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
@@ -84,7 +84,7 @@ Nel passaggio successivo viene creato un [!INCLUDE[adonet_edm](../data-tools/inc
 
 3. Nella casella di testo **nome** immettere `NorthwindModel`, quindi scegliere il pulsante **Aggiungi** .
 
-     Verrà visualizzata la procedura guidata Entity Data Model.
+     Viene visualizzata la procedura guidata Entity Data Model.
 
 4. Nella pagina **Scegli contenuto del modello** della procedura guidata Entity Data Model scegliere l'elemento **Entity Framework Designer da database**, quindi fare clic sul pulsante **Avanti**.
 
@@ -132,7 +132,7 @@ Nel passaggio successivo viene creato e testato il servizio dati.
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. Nella barra dei menu scegliere **debug**  > **Avvia senza eseguire debug** per eseguire il servizio. Viene visualizzata una finestra del browser e viene visualizzata la XML Schema per il servizio.
+6. Nella barra dei menu scegliere **debug** > **Avvia senza eseguire debug** per eseguire il servizio. Viene visualizzata una finestra del browser e viene visualizzata la XML Schema per il servizio.
 
 7. Nella barra degli **indirizzi** immettere `Customers` alla fine dell'URL per **NorthwindCustomers. svc**, quindi premere il tasto **invio** .
 
@@ -152,7 +152,7 @@ Nel primo passaggio si aggiunge un progetto di Windows Forms alla soluzione e lo
 
 ### <a name="to-create-the-client-application"></a>Per creare l'applicazione client
 
-1. Nella barra dei menu scegliere file, **aggiungi**  > **nuovo progetto**.
+1. Nella barra dei menu scegliere file, **aggiungi** > **nuovo progetto**.
 
 2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **oggetto C# visivo** , scegliere il nodo **Windows** , quindi scegliere **Windows Forms applicazione**.
 
@@ -166,7 +166,7 @@ Nel passaggio successivo si aggiungerà un riferimento al servizio all'[!INCLUDE
 
 ### <a name="to-add-a-service-reference"></a>Per aggiungere un riferimento al servizio
 
-1. Nella barra dei menu scegliere **progetto**  > **Aggiungi riferimento al servizio**.
+1. Nella barra dei menu scegliere **progetto** > **Aggiungi riferimento al servizio**.
 
 2. Nella finestra di dialogo **Aggiungi riferimento al servizio** scegliere il pulsante **Individua**.
 
@@ -178,7 +178,7 @@ Nel passaggio successivo viene configurata un'origine dati per abilitare data bi
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Per abilitare il data binding al servizio
 
-1. Nella barra dei menu scegliere **visualizza**  >  altre**origini dati** >  di**Windows** .
+1. Nella barra dei menu scegliere **visualizza** > altre **origini dati** > di **Windows** .
 
    Verrà visualizzata la finestra **Origini dati**.
 
@@ -236,7 +236,7 @@ Nel passaggio successivo viene creata l'interfaccia utente che Visualizza i dati
 
 8. Nel codice aggiunto nel passaggio 4, selezionare `http://localhost:53161/NorthwindCustomers.svc/` e sostituirlo con l'URL appena copiato.
 
-9. Nella barra dei menu scegliere **debug**  > **Avvia debug** per eseguire l'applicazione. Vengono visualizzate le informazioni del cliente.
+9. Nella barra dei menu scegliere **debug** > **Avvia debug** per eseguire l'applicazione. Vengono visualizzate le informazioni del cliente.
 
    A questo punto si disporrà di un'applicazione nella quale sarà visualizzato un elenco di clienti del servizio NorthwindCustomers. Se si desidera esporre altri dati tramite il servizio, è possibile modificare [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] per includere tabelle aggiuntive dal database Northwind.
 
@@ -282,7 +282,7 @@ In questo passaggio viene personalizzata l'applicazione in modo da filtrare i da
 
 4. Nel codice precedente, sostituire `http://localhost:53161/NorthwindCustomers.svc` con l'URL del gestore eventi `Form1_Load`.
 
-5. Nella barra dei menu scegliere **debug**  > **Avvia debug** per eseguire l'applicazione.
+5. Nella barra dei menu scegliere **debug** > **Avvia debug** per eseguire l'applicazione.
 
 6. Nella casella di testo immettere **London**, quindi scegliere il pulsante. Verranno visualizzati solo i clienti di Londra.
 

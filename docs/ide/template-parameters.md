@@ -7,23 +7,23 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647395"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585886"
 ---
-# <a name="template-parameters"></a>Parametri di modelli
+# <a name="template-parameters"></a>Parametri modello
 
 Quando viene creata un'istanza di modello, è possibile sostituire i valori nel modello. Per configurare questa funzionalità, usare *parametri del modello*. Parametri del modello è utilizzabile per sostituire i valori, ad esempio i nomi della classe e gli spazi dei nomi nel modello. La creazione guidata del modello che viene eseguito in background quando un utente aggiunge un nuovo elemento o progetto sostituisce questi parametri.
 
 ## <a name="declare-and-enable-template-parameters"></a>Dichiarare e abilitare i parametri di modello
 
-I parametri di modello vengono dichiarati nel formato $*parametro*$. Esempio:
+I parametri di modello vengono dichiarati nel formato $*parametro*$. Ad esempio:
 
 - $safeprojectname$
 

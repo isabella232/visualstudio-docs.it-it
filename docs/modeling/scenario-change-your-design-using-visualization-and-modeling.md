@@ -10,17 +10,17 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d332050538ca10d133a69f61a914338484fe799
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 371eadd1438d33601b90ebfae0432c20841c313c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986379"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591983"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -81,10 +81,10 @@ La tabella seguente descrive i ruoli che questi strumenti possono svolgere in di
 
 ||**Modellazione dei requisiti utente**|**Modellazione dei processi aziendali**|**Architettura e progettazione di sistemi**|**Visualizzazione ed esplorazione del codice**|**Verifica**|
 |------|-|-|-|-|-|
-|Diagramma DSL (Domain-Specific Language)|Yes|Yes|Yes|||
-|Diagramma delle dipendenze, convalida del livello|||Yes|Yes|Yes|
-|Mappa codice|||Yes|Yes|Yes|
-|Progettazione classi (basata su codice)||||Yes||
+|Diagramma DSL (Domain-Specific Language)|Sì|Sì|Sì|||
+|Diagramma delle dipendenze, convalida del livello|||Sì|Sì|Sì|
+|Mappa codice|||Sì|Sì|Sì|
+|Progettazione classi (basata su codice)||||Sì||
 
 Per creare diagrammi di dipendenza, è necessario creare un progetto di modello come parte di una soluzione esistente o di un nuovo progetto. Questi diagrammi devono essere creati nel progetto di modellazione.
 Gli elementi nei diagrammi delle dipendenze si trovano nel progetto di modello, ma non vengono archiviati nel modello comune. Mappe codice e diagrammi classi .NET creati dal codice esistono al di fuori del progetto di modellazione.

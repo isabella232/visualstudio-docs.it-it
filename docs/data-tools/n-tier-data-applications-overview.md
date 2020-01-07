@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648280"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586380"
 ---
 # <a name="n-tier-data-applications-overview"></a>Panoramica delle applicazioni dati a più livelli
 Le applicazioni dati a più *livelli* sono applicazioni dati separate in più *livelli*. Denominate anche "applicazioni distribuite" e "applicazioni multilivello", le applicazioni a più livelli sono separate dall'elaborazione in livelli discreti distribuiti tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario avere una netta separazione tra i vari livelli che costituiscono l'applicazione.
@@ -33,7 +33,7 @@ Visual Studio contiene diverse funzionalità che consentono agli sviluppatori di
 
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fornisce il metodo <xref:System.Data.Linq.Table%601.Attach%2A> che consente di riunire DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [applicazioni a più livelli e remote con LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
-## <a name="presentation-tier"></a>Livello di presentazione
+## <a name="presentation-tier"></a>Livello presentazione
 Il *livello presentazione* è il livello in cui gli utenti interagiscono con un'applicazione. Spesso contiene anche una logica dell'applicazione aggiuntiva. I componenti del livello presentazione tipici includono i seguenti:
 
 - Componenti di data binding, ad esempio <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
@@ -57,16 +57,16 @@ Il livello *intermedio* è quello usato dal livello presentazione e dal livello 
 
 Nella figura seguente sono illustrate le funzionalità e le tecnologie disponibili in Visual Studio e la posizione in cui possono rientrare nel livello intermedio di un'applicazione a più livelli.
 
-componenti di livello ![Middle ](../data-tools/media/ntiermid.png) livello intermedio
+![componenti di livello intermedio](../data-tools/media/ntiermid.png) livello intermedio
 
 Il livello intermedio si connette in genere al livello dati utilizzando una connessione dati. Questa connessione dati viene in genere archiviata nel componente di accesso ai dati.
 
 ## <a name="data-tier"></a>Livello dati
-Il *livello dati* è fondamentalmente il server in cui vengono archiviati i dati di un'applicazione, ad esempio un server che esegue SQL Server.
+Il *livello dati* è fondamentalmente il server su cui vengono archiviati i dati di un'applicazione (ad esempio, un server che esegue SQL Server).
 
 Nella figura seguente sono illustrate le funzionalità e le tecnologie disponibili in Visual Studio e la posizione in cui possono adattarsi al livello dati di un'applicazione a più livelli.
 
-componenti di livello ![Data ](../data-tools/media/ntierdatatier.png) livello dati
+![componenti livello dati](../data-tools/media/ntierdatatier.png) livello dati
 
 Non è possibile accedere al livello dati direttamente dal client nel livello di presentazione. Al contrario, il componente di accesso ai dati nel livello intermedio viene usato per la comunicazione tra i livelli di presentazione e di dati.
 

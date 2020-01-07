@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648725"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586874"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
@@ -27,7 +27,7 @@ In questo articolo viene illustrato un modo semplice per estrarre i dati da un d
 > [!IMPORTANT]
 > Per semplificare il codice, non include la gestione delle eccezioni dell'ambiente di produzione.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per creare l'applicazione, è necessario disporre di:
 
@@ -122,7 +122,7 @@ Creare il database di esempio attenendosi alla procedura seguente:
 ## <a name="store-the-connection-string"></a>Archiviare la stringa di connessione
 Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere manualmente la stringa in ogni form, archiviare la stringa nel file *app. config* nel progetto e creare un metodo che restituisca la stringa quando il metodo viene chiamato da qualsiasi form nell'applicazione.
 
-È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL** +**a**, **CTRL** +**C** per selezionare e copiare la stringa negli Appunti.
+È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL**+**a**, **CTRL**+**C** per selezionare e copiare la stringa negli Appunti.
 
 1. C#Se si usa, in **Esplora soluzioni**espandere il nodo **proprietà** sotto il progetto, quindi aprire il file **Settings. Settings** .
     Se si usa Visual Basic, in **Esplora soluzioni**fare clic su **Mostra tutti i file**, espandere il nodo **progetto** e quindi aprire il file **Settings. Settings** .

@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924522"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586861"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Connettersi ai dati in un database di Access
 
 È possibile connettersi a un database di Access, ovvero un file con estensione *MDB* o *accdb* , usando Visual Studio. Dopo avere definito la connessione, i dati vengono visualizzati nella finestra **Origine dati** Da qui è possibile trascinare tabelle o viste nell'area di progettazione.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per usare queste procedure, è necessario un progetto Windows Forms o WPF e un database di Access (file con estensione*accdb* ) o un database di Access 2000-2003 (file con*estensione mdb* ). Attenersi alla procedura che corrisponde al tipo di file utilizzato.
 
@@ -33,7 +33,7 @@ Connettersi ai database creati con Office 365, Access 2013, Access 2010 o Access
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Per aprire la finestra **origini dati** , scegliere **altre finestre**  > **origini dati**dal menu **Visualizza** .
+2. Per aprire la finestra **origini dati** , scegliere **altre finestre** > **origini dati**dal menu **Visualizza** .
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Connettersi ai database creati con Access 2000-2003 usando la procedura seguente
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Scegliere **altre finestre**  > **origini dati**dal menu **Visualizza** .
+2. Scegliere **altre finestre** > **origini dati**dal menu **Visualizza** .
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 

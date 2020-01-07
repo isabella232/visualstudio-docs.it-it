@@ -4,12 +4,12 @@ description: Informazioni sull'uso di IntelliSense in Visual Studio per Mac
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026570"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405813"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -23,35 +23,25 @@ Quando si digita in un file supportato, ad esempio un file di codice C#, i compl
 
 La finestra di completamento offre anche il supporto per filtrare i completamenti inclusi in base al tipo. Ad esempio, è possibile limitare i membri dell'elenco per rappresentare solo i tipi come classi o delegati. Questo processo di filtro può essere abilitato facendo clic su un'icona specifica che rappresenta il tipo che verrà filtrato o tramite scelte rapide da tastiera corrispondenti a un tipo specificato. Le icone, disponibili nella parte inferiore della finestra di completamento, sono le seguenti:
 
-| Icona                         | nome          | Parola chiave    | Tasto di scelta rapida |
+| Icona                         | Name          | Parola chiave    | Tasto di scelta rapida |
 | -----------------------------|---------------| -----------|--------|
 | ![Icona di classe](media/classes-icon.png)  | classe         | `class`    |  ⌥C
-| ![Icona Costante](media/constant-icon.png) | costante      | `const`    |  ⌥O
-| ![Icona di delegato](media/delegate-icon.png) | delegato      | `delegate` |  ⌥D
+| ![Icona Costante](media/constant-icon.png) | constant      | `const`    |  ⌥O
+| ![Icona di delegato](media/delegate-icon.png) | delegate      | `delegate` |  ⌥D
 | ![Icona di enumerazione](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![Icona di evento](media/event-icon.png)    | event         |            |  ⌥V
 | ![Icona Campo](media/fields-icon.png)   | campo         |            |  ⌥F
-| ![Icona di interfaccia](media/interface-icon.png)| interfaccia     | `interface`|  ⌥I
+| ![Icona di interfaccia](media/interface-icon.png)| Interfaccia     | `interface`|  ⌥I
 | ![Icona di parola chiave](media/keyword-icon.png)  | keyword       |            |  ⌥K
-| ![Icona di metodo](media/method-icon.png)   | metodo        |            |  ⌥M
-| ![Icona di spazio dei nomi](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
-| ![Icona di proprietà](media/props-icon.png)    | proprietà      |            |  ⌥P
-| ![Icona di frammento di codice](media/snippet-icon.png)  | snippet       | `class`    |  ⌥S
-| ![Icona di struct](media/struct-icon.png)   | struttura     | `struct`   |  ⌥S
+| ![Icona di metodo](media/method-icon.png)   | method        |            |  ⌥M
+| ![Icona di spazio dei nomi](media/namespace-icon.png)| Spazio dei nomi     | `namespace`|  ⌥N
+| ![Icona di proprietà](media/props-icon.png)    | property      |            |  ⌥P
+| ![Icona di frammento di codice](media/snippet-icon.png)  | frammento       | `class`    |  ⌥S
+| ![Icona di struct](media/struct-icon.png)   | Struttura     | `struct`   |  ⌥S
 
 Facendo clic su una delle icone o premendo i tasti di scelta rapida corrispondenti, l'elenco di completamento sarà limitato solo ai tipi definiti dal set di filtri.  
 
 ![Filtro di tipi IntelliSense](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>Mostra elementi di importazione
-
-Per impostazione predefinita, il completamento di IntelliSense visualizzerà solo i completamenti dalle librerie importate nel progetto. Ad esempio, se `System.Collections.Generic` non è stato importato tramite `using`, non sarà disponibile un completamento per `List<>`. Per visualizzare i completamenti dalle librerie che non vengono importate, è necessario abilitare **Mostra elementi di importazione** all'interno delle preferenze per Visual Studio per Mac. Questa impostazione è disponibile in **Preferenze > Editor di testo > IntelliSense**:
-
-![IntelliSense - Mostra elementi di importazione](media/intellisense-showimport.png)
-
-Dopo aver abilitato **Mostra elementi di importazione**, l'elenco di completamento includerà i completamenti non ancora importati. Quando si seleziona un elemento che corrisponde a una libreria non dichiarata, l'istruzione `using` per tale libreria verrà aggiunta automaticamente all'intestazione del file di codice. Anche il nome della libreria a cui appartiene il completamento viene elencato insieme al completamento stesso.
-
-![Elenco di Mostra elementi di importazione](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>Finestra dei parametri
 

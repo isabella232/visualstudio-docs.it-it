@@ -3,17 +3,17 @@ title: "Procedura: Configurare l'ereditarietà usando Object Relational Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ddd3d8b25c6e215302af8e0b40b5a971f5f4aa39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64a29eb3ebb1a5366eb9aaced1b5c228832fe71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641921"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586510"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedura: Configurare l'ereditarietà usando Object Relational Designer
 Il **Object Relational Designer** (**O/R Designer**) supporta il concetto di ereditarietà a tabella singola poiché viene spesso implementato nei sistemi relazionali. Nell'ereditarietà a tabella singola, è presente una singola tabella di database che contiene campi per le informazioni padre e le informazioni figlio. Insieme ai dati relazionali, una colonna discriminatore contiene il valore che determina la classe a cui appartiene un record.
@@ -35,7 +35,7 @@ La creazione di un modello a oggetti che usa l'ereditarietà (e corrisponde ai d
     > [!NOTE]
     > Fare clic sull'elemento **Inheritance** nella **Casella degli strumenti** e rilasciare il pulsante del mouse, fare clic sulla seconda copia della classe creata nel passaggio 3 e quindi fare clic sulla prima classe creata nel passaggio 2. La freccia sulla linea di ereditarietà punta alla prima classe.
 
-5. In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Viene visualizzato un errore se si tenta di eliminare le proprietà dell'oggetto utilizzate per [le associazioni: Impossibile eliminare la proprietà \<property nome > perché partecipa al nome \<association associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. In ogni classe eliminare le proprietà dell'oggetto che non si desidera visualizzare e che non sono usate per le associazioni. Viene visualizzato un errore se si tenta di eliminare le proprietà dell'oggetto utilizzate per [le associazioni: Impossibile eliminare la proprietà \<il nome della proprietà > perché partecipa al nome dell'associazione \<associazione >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     > Poiché una classe derivata eredita le proprietà definite nella relativa classe di base, non è possibile definire le stesse colonne in ogni classe (Le colonne vengono implementate come proprietà). È possibile abilitare la creazione di colonne nella classe derivata impostando il modificatore di ereditarietà sulla proprietà nella classe di base. Per ulteriori informazioni, vedere [nozioni fondamentali sull'ereditarietà (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
@@ -48,7 +48,7 @@ La creazione di un modello a oggetti che usa l'ereditarietà (e corrisponde ai d
 
 9. Impostare la proprietà **Base Class Discriminator Value** sul valore che designa il record come tipo di base. Si tratta del valore archiviato nella colonna discriminatore e usato per designare la classe base.
 
-10. È anche possibile impostare eventualmente la proprietà **Inheritance Default** per definire un tipo in una gerarchia di ereditarietà usata durante il caricamento di righe che non corrispondono ad alcun codice di ereditarietà definito. In altre parole, se un record include un valore nella relativa colonna discriminatore che non corrisponde al valore nelle proprietà del valore **discriminatore della classe derivata** o del valore del **discriminatore della classe base** , il record viene caricato nel tipo designato come  **Valore predefinito di ereditarietà**.
+10. È anche possibile impostare eventualmente la proprietà **Inheritance Default** per definire un tipo in una gerarchia di ereditarietà usata durante il caricamento di righe che non corrispondono ad alcun codice di ereditarietà definito. In altre parole, se un record include un valore nella relativa colonna discriminatore che non corrisponde al valore nelle proprietà del valore **discriminatore della classe derivata** o del **valore del discriminatore della classe base** , il record viene caricato nel tipo designato come **valore predefinito di ereditarietà**.
 
 ## <a name="see-also"></a>Vedere anche
 

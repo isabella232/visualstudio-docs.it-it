@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963767"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594890"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Recuperare log di compilazione con MSBuild
 
@@ -35,7 +35,7 @@ Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazi
 
 - Riepilogo della compilazione.
 
-Usando l'opzione **-verbosity** (**-v**), è possibile controllare la quantità di dati da visualizzare nel log di output. Per la risoluzione dei problemi, usare un livello di dettaglio `detailed` (`d`) o `diagnostic` (`diag`), che fornisce la maggior parte delle informazioni.
+Usando l'opzione **-verbosity** ( **-v**), è possibile controllare la quantità di dati da visualizzare nel log di output. Per la risoluzione dei problemi, usare un livello di dettaglio `detailed` (`d`) o `diagnostic` (`diag`), che fornisce la maggior parte delle informazioni.
 
 Il processo di compilazione può essere più lento quando si imposta **-verbosity** su `detailed` e ancora più lento quando si imposta **-verbosity** su `diagnostic`.
 
@@ -47,10 +47,10 @@ msbuild MyProject.proj -t:go -v:diag
 
 La tabella seguente illustra in che modo il livello di dettaglio del log (valori di colonna) influisce sulla scelta dei tipi di messaggio (valori di riga) da registrare.
 
-|                                       | Quiet | Minimal | Normale | Dettagliato | Diagnostico |
+|                                       | Quiet | Minimal | Normale | Dettagliate | Diagnostica |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
-| Errori                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
-| Avvisi                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Errori di                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Warnings                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Messaggi con priorità alta              |       |    ✅    |    ✅   |     ✅    |      ✅     |
 | Messaggi con priorità normale           |       |         |    ✅   |     ✅    |      ✅     |
 | Messaggi con priorità bassa              |       |         |        |     ✅    |      ✅     |

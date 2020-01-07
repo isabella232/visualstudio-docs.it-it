@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747349"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593356"
 ---
 # <a name="cl-task"></a>attività CL
 Esegue il wrapping dello C++ strumento compilatore Microsoft, *CL. exe*. Il compilatore genera file eseguibili (*EXE*), librerie a collegamento dinamico (*DLL*) o moduli di codice (*NETMODULE*). Per altre informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options).

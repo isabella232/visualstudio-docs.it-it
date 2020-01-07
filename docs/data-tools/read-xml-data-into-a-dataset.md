@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641372"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586328"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 
@@ -137,14 +137,14 @@ L'interfaccia utente per questa applicazione è costituita dagli elementi seguen
 
 3. Impostare le proprietà seguenti:
 
-    |Control|proprietà|Impostazioni|
+    |Control|Gli|Impostazione di|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**Verticale**|
-    |`Button1`|**Nome**|`ReadXmlButton`|
-    ||**Testo**|`Read XML`|
-    |`Button2`|**Nome**|`ShowSchemaButton`|
-    ||**Testo**|`Show Schema`|
+    |`Button1`|**Name**|`ReadXmlButton`|
+    ||**per**|`Read XML`|
+    |`Button2`|**Name**|`ShowSchemaButton`|
+    ||**per**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Creare il set di dati che riceve i dati XML
 
@@ -158,7 +158,7 @@ In questo passaggio viene creato un nuovo set di dati denominato `authors`. Per 
 
      **DataSet1** viene aggiunto alla barra dei componenti.
 
-4. Nella finestra **Proprietà** impostare il **nome** e le proprietà di <xref:System.Data.DataSet.DataSetName%2A> per `AuthorsDataSet`.
+4. Nella finestra **Proprietà** impostare il **nome** e le proprietà di <xref:System.Data.DataSet.DataSetName%2A> per`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Creare il gestore eventi per leggere il file XML nel set di dati
 
@@ -179,7 +179,7 @@ Il pulsante **Read XML** legge il file XML nel set di dati. Imposta quindi le pr
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Creare il gestore eventi per visualizzare lo schema nella casella di testo
 
-Il pulsante **Mostra schema** consente di creare un <xref:System.IO.StringWriter> oggetto compilato con lo schema e visualizzato nella <xref:System.Windows.Forms.TextBox>control.
+Il pulsante **Mostra schema** consente di creare un <xref:System.IO.StringWriter> oggetto compilato con lo schema e visualizzato nel controllo <xref:System.Windows.Forms.TextBox>.
 
 1. In **Esplora soluzioni**selezionare **Form1**, quindi fare clic sul pulsante **Visualizza finestra di progettazione** .
 
