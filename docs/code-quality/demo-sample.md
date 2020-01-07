@@ -11,18 +11,18 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 84f6ddc2012617a5216c58fa0761dc100fb8942f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745920"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402750"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Esempio di progetto C++ per l'analisi del codice
 
 Nelle procedure seguenti viene illustrato come creare l'esempio per la [procedura dettagliata: analizzare CC++ /codice per i difetti](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Le procedure creano:
 
-- Una soluzione di Visual Studio con nome CppDemo.
+- [! INCLUDEvsprvs] soluzione denominata CppDemo.
 
 - Un progetto di libreria statica con nome CodeDefects.
 
@@ -32,19 +32,17 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 ## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Creare la soluzione CppDemo e il progetto CodeDefects
 
-1. Fare clic sul menu **File**, scegliere **Nuovo** e fare clic su **Nuovo progetto**.
+1. Apri [! INCLUDEvsprvs] e selezionare **Crea un nuovo progetto**
 
-2. Nell'elenco albero dei **tipi di progetto** , C++ se non è la lingua predefinita in Visual Studio espandere **altri linguaggi**.
+2. Cambia filtro lingua in**C++**
 
-3. Espandere **Visual C++** , quindi fare clic su **Generale**.
+3. Selezionare **progetto vuoto** e fare clic su **Avanti** .
 
-4. In **Modelli** fare clic su **Progetto vuoto**.
+4. Nella casella di testo **nome progetto** Digitare **codedifettos**
 
-5. Nella casella di testo **Nome** digitare **CodeDefects**.
+5. Nella casella di testo **Nome soluzione** digitare **CppDemo**
 
-6. Selezionare la casella di controllo **Crea directory per soluzione**.
-
-7. Nella casella di testo **Nome soluzione** digitare **CppDemo**.
+6. Fare clic su **Crea**
 
 ## <a name="configure-the-codedefects-project-as-a-static-library"></a>Configurare il progetto CodeDefects come libreria statica
 
@@ -52,9 +50,9 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 2. Espandere **Proprietà di configurazione** e fare clic su **Generale**.
 
-3. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.
+3. Nell'elenco **generale** impostare tipo di **configurazione**su **libreria statica (. lib)** .
 
-4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)** .
+4. Nell'elenco **Avanzate** modificare l' **estensione del file di destinazione** in **. lib**
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Aggiungere l'intestazione e il file di origine al progetto CodeDefects
 
@@ -64,27 +62,23 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 3. Nella casella **Nome** digitare **Bug.h** e quindi fare clic su **Aggiungi**.
 
-4. Copiare il codice seguente e incollarlo nel file *Bug.h* nell'editor di Visual Studio.
+4. Copiare il codice seguente e incollarlo nel file *bug. h* nell'editor.
 
-    ```cpp
-    #include <windows.h>
+```cpp
+#pragma once
 
-    //
-    //These 3 functions are consumed by the sample
-    //  but are not defined. This project cannot be linked!
-    //
+#include <windows.h>
 
-    bool CheckDomain( LPCSTR );
-    HRESULT ReadUserAccount();
+// These functions are consumed by the sample
+// but are not defined. This project cannot be linked!
+bool CheckDomain(LPCTSTR);
+HRESULT ReadUserAccount();
 
-    //
-    //These constants define the common sizes of the
-    //  user account information throughout the program
-    //
-
-    const int USER_ACCOUNT_LEN = 256;
-    const int ACCOUNT_DOMAIN_LEN = 128;
-    ```
+// These constants define the common sizes of the
+// user account information throughout the program
+const int USER_ACCOUNT_LEN = 256;
+const int ACCOUNT_DOMAIN_LEN = 128;
+```
 
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.
 
@@ -92,65 +86,63 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 7. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.
 
-8. Copiare il codice seguente e incollarlo nel file *Bug.cpp* nell'editor di Visual Studio.
+8. Copiare il codice seguente e incollarlo nel file *bug. cpp* nell'editor.
 
-    ```cpp
-    #include <stdlib.h>
-    #include "Bug.h"
+```cpp
+#include "Bug.h"
 
-    // the user account
-    TCHAR g_userAccount[USER_ACCOUNT_LEN] = "";
-    int len = 0;
+// the user account
+TCHAR g_userAccount[USER_ACCOUNT_LEN] = {};
+int len = 0;
 
-    bool ProcessDomain()
+bool ProcessDomain()
+{
+    TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
+    // ReadUserAccount gets a 'domain\user' input from
+    //the user into the global 'g_userAccount'
+    if (ReadUserAccount())
     {
-        TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
-        // ReadUserAccount gets a 'domain\user' input from
-        //the user into the global 'g_userAccount'
-        if (ReadUserAccount() )
+        // Copies part of the string prior to the '\'
+        // character onto the 'domain' buffer
+        for (len = 0; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != L'\0'); len++)
         {
-
-            // Copies part of the string prior to the '\'
-            // character onto the 'domain' buffer
-            for( len = 0 ; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != '\0') ; len++  )
+            if (g_userAccount[len] == '\\')
             {
-                if ( g_userAccount[len] == '\\' )
-                {
-                    // Stops copying on the domain and user separator ('\')
-                    break;
-                }
-                domain[len] = g_userAccount[len];
+                // Stops copying on the domain and user separator ('\')
+                break;
             }
-            if((len= ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
-            {
-                // '\' was not found. Invalid domain\user string.
-                delete [] domain;
-                return false;
-            }
-            else
-            {
-                domain[len]='\0';
-            }
-            // Process domain string
-            bool result = CheckDomain( domain );
-
-            delete[] domain;
-            return result;
+            domain[len] = g_userAccount[len];
         }
-        return false;
-    }
-
-    int path_dependent(int n)
-    {
-        int i;
-        int j;
-        if (n == 0)
-            i = 1;
+        if ((len = ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
+        {
+            // '\' was not found. Invalid domain\user string.
+            delete[] domain;
+            return false;
+        }
         else
-            j = 1;
-        return i+j;
+        {
+            domain[len] = '\0';
+        }
+        // Process domain string
+        bool result = CheckDomain(domain);
+
+        delete[] domain;
+        return result;
     }
-    ```
+    return false;
+}
+
+int path_dependent(int n)
+{
+    int i;
+    int j;
+    if (n == 0)
+        i = 1;
+    else
+        j = 1;
+    return i + j;
+}
+```
 
 9. Fare clic sul menu **File** e quindi fare clic su **Salva tutto**.
 
@@ -158,17 +150,18 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 1. In Esplora soluzioni fare clic su **CppDemo**, scegliere **Aggiungi** e quindi fare clic su **Nuovo progetto**.
 
-2. Nella finestra di dialogo **Aggiungi nuovo progetto** espandere Visual C++, fare clic su **Generale** e quindi fare clic su **Progetto vuoto**.
+2. Nella finestra di dialogo **Aggiungi nuovo progetto** impostare filtro lingua su **C++** e selezionare **progetto vuoto** , quindi fare clic su **Avanti**.
 
-3. Nella casella di testo **Nome** digitare **Annotations** e quindi fare clic su **Aggiungi**.
+3. Nella casella di testo **nome progetto** Digitare **annotazioni**, quindi fare clic su **Crea**.
 
 4. In Esplora soluzioni fare clic con il pulsante destro del mouse su **Annotations** e fare clic su **Proprietà**.
 
 5. Espandere **Proprietà di configurazione** e fare clic su **Generale**.
 
-6. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.
+6. Nell'elenco **generale** modificare tipo di **configurazione**, quindi fare clic su **libreria statica (. lib)** .
 
-7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)** .
+7. Nell'elenco **Avanzate** selezionare il testo nella colonna accanto a **estensione file di destinazione**, quindi digitare **. lib**.
+
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Aggiungere il file di intestazione e il file di origine per il progetto Annotations
 
@@ -178,22 +171,22 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 3. Nella casella di testo **Nome** digitare **annotations.h** e quindi fare clic su **Aggiungi**.
 
-4. Copiare il codice seguente e incollarlo nel file *annotations.h* nell'editor di Visual Studio.
+4. Copiare il codice seguente e incollarlo nel file *Annotations. h* nell'editor.
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
+```cpp
+#pragma once
+#include <sal.h>
 
-    struct LinkedList
-    {
-        struct LinkedList* next;
-        int data;
-    };
+struct LinkedList
+{
+    struct LinkedList* next;
+    int data;
+};
 
-    typedef struct LinkedList LinkedList;
+typedef struct LinkedList LinkedList;
 
-    [returnvalue:SA_Post( Null=SA_Maybe )] LinkedList* AllocateNode();
-
-    ```
+_Ret_maybenull_ LinkedList* AllocateNode();
+```
 
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.
 
@@ -201,33 +194,30 @@ Le procedure specificano anche il codice per l'intestazione e i file con estensi
 
 7. Nella casella di testo **Nome** digitare **annotations.cpp** e quindi fare clic su **Aggiungi**.
 
-8. Copiare il codice seguente e incollarlo nel file *annotations.cpp* nell'editor di Visual Studio.
+8. Copiare il codice seguente e incollarlo nel file *Annotations. cpp* nell'editor.
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
-    #include <windows.h>
-    #include <stdlib.h>
-    #include "annotations.h"
+```cpp
+#include "annotations.h"
 
-    LinkedList* AddTail( LinkedList *node, int value )
+LinkedList* AddTail(LinkedList* node, int value)
+{
+    // finds the last node
+    while (node->next != nullptr)
     {
-        LinkedList *newNode = NULL;
-
-        // finds the last node
-        while ( node->next != NULL )
-        {
-            node = node->next;
-        }
-
-        // appends the new node
-        newNode = AllocateNode();
-        newNode->data = value;
-        newNode->next = 0;
-        node->next = newNode;
-
-        return newNode;
+        node = node->next;
     }
 
-    ```
+    // appends the new node
+    LinkedList* newNode = AllocateNode();
+    newNode->data = value;
+    newNode->next = 0;
+    node->next = newNode;
+
+    return newNode;
+}
+```
 
 9. Fare clic sul menu **File** e quindi fare clic su **Salva tutto**.
+
+
+La soluzione è ora completa e dovrebbe essere compilata senza errori.

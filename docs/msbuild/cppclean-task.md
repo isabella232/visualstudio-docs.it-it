@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild (C++), CPPClean task
 - CPPClean task (MSBuild (C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6e893dcf289c5060f519523b18b53b701f8055
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748115"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596073"
 ---
 # <a name="cppclean-task"></a>Attività CPPClean
 Elimina i file temporanei creati da MSBuild durante C++ la compilazione di un progetto. Il processo di eliminazione dei file di compilazione è noto come *pulizia*.

@@ -4,17 +4,17 @@ ms.date: 04/04/2018
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b2c0410e9e1934e8e0a3c9c31c568f1e832c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649090"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587238"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 
@@ -23,9 +23,9 @@ Quando si configura l'analisi legacy per i progetti di codice gestito in Visual 
 > [!NOTE]
 > I set di regole in questa sezione riguardano l'analisi legacy. Per informazioni sui set di regole disponibili per i pacchetti dell'analizzatore di codice, vedere [usare i set di regole con gli analizzatori di codice](analyzer-rule-sets.md).
 
-È possibile usare uno di questi set di regole predefiniti oppure [personalizzare un set di regole](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare i requisiti del progetto. Se si includono più set di regole che contengono la stessa regola in un set di regole personalizzato, tale regola viene visualizzata una sola volta nel set di regole personalizzate.
+È possibile usare uno di questi set di regole incorporate oppure è possibile [personalizzare un set di regole](../code-quality/how-to-create-a-custom-rule-set.md) in base alle esigenze di progetto. Se si includono più set di regole che contengono la stessa regola in un set di regole personalizzato, tale regola viene visualizzata una sola volta nel set di regole personalizzate.
 
-Negli argomenti di questa sezione vengono descritti i set di regole predefiniti e le regole o gli avvisi in essi contenuti.
+In questa sezione vengono illustrate le regole incorporate set e le regole (o gli avvisi) che contengono.
 
 | Set di regole | Regole incluse |
 | - | - |

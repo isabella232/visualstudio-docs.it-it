@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (C++), MIDL task
 - MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911241"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592152"
 ---
 # <a name="midl-task"></a>MIDL (attività)
 Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe*. Per altre informazioni, vedere [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
@@ -87,7 +87,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -111,7 +111,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**None**|**/error none**|
     |**EnableCustom**|**/error**|
@@ -167,7 +167,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**None**|**/client none**|
     |**Stub**|**/client stub**|
@@ -182,7 +182,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**None**|**/server none**|
     |**Stub**|**/server stub**|
@@ -299,7 +299,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**NotSet**|*\<nessuno>*|
     |**1**|**/Zp1**|
@@ -333,7 +333,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**NotSet**|*\<nessuno>*|
     |**Win32**|**/env win32**|
@@ -356,7 +356,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -405,7 +405,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Value|Opzione della riga di comando|
+    |Valore|Opzione della riga di comando|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|

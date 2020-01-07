@@ -3,17 +3,17 @@ title: Glossario di MSBuild
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b5feaa70a79a534af45c67e61b300feb1188bf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926350"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593668"
 ---
 # <a name="msbuild-glossary"></a>Glossario di MSBuild
 
@@ -58,7 +58,7 @@ funzione, elemento\
 Vedere funzione Item.
 
 elemento\
-Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tipi di elemento in base ai nomi degli elementi. Gli elementi rappresentano in genere file. Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini *elemento* e *valore dell'elemento* sono interscambiabili. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+Gli elementi sono input nel sistema di compilazione e vengono raggruppati in tipi di elemento in base ai nomi degli elementi. Gli elementi rappresentano in genere file. Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini *elemento* e *valore dell'elemento* sono interscambiabili. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 definizione di un elemento\
 I gruppi di definizioni di elementi contengono definizioni di elementi che aggiungono metadati predefiniti a qualsiasi tipo di elemento. Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Per altre informazioni, vedere [Definizioni degli elementi](../msbuild/item-definitions.md).
@@ -70,13 +70,13 @@ metadati degli elementi\
 Vedere *metadati, elemento*.
 
 tipo di elemento\
-I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 metadati, elemento\
-I metadati di un elemento sono una raccolta di coppie nome-valore associate a un elemento. I metadati forniscono informazioni descrittive per l'elemento e sono facoltativi, eccetto i metadati noti. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+I metadati di un elemento sono una raccolta di coppie nome-valore associate a un elemento. I metadati forniscono informazioni descrittive per l'elemento e sono facoltativi, eccetto i metadati noti. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 metadati, noti\
-I metadati noti sono i metadati degli elementi di sola lettura che vengono inizializzati usando un valore predefinito. I metadati noti forniscono informazioni descrittive per un elemento che fa riferimento a un file. Ad esempio, il valore dei metadati noti denominati `FullPath` è il percorso completo del file di riferimento. Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+I metadati noti sono i metadati degli elementi di sola lettura che vengono inizializzati usando un valore predefinito. I metadati noti forniscono informazioni descrittive per un elemento che fa riferimento a un file. Ad esempio, il valore dei metadati noti denominati `FullPath` è il percorso completo del file di riferimento. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 multitargeting\
 Possibilità per un progetto di applicazione o assembly di specificare come destinazione più CLR e framework diversi da MSBuild e da Visual Studio.
@@ -100,7 +100,7 @@ proprietà, funzione\
 Una funzione di proprietà è una proprietà di sistema o un metodo che si può usare per valutare gli script di MSBuild. I metodi di proprietà possono essere usati per leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni. Per altre informazioni, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
 funzione di proprietà, annidata\
-Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio,
+Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio:
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 

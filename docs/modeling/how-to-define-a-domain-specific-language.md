@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985150"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594682"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 Per definire un linguaggio specifico di dominio (DSL), creare una soluzione di Visual Studio da un modello. La parte più importante della soluzione è il diagramma della definizione DSL, archiviato in DslDefinition.dsl. La definizione DSL definisce le classi e le forme del linguaggio DSL. Dopo la modifica e l'aggiunta a questi elementi, è possibile aggiungere il codice programma per personalizzare il linguaggio DSL in modo più dettagliato.
@@ -190,7 +190,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
  Fare clic su **Proprietà dominio** nella classe, premere il tasto invio e quindi digitare il nome di una proprietà. Il tipo predefinito di una proprietà di dominio è String. Se si desidera modificare il tipo, selezionare la proprietà del dominio e impostare il **tipo** nella finestra **Proprietà** . Se il tipo desiderato non è presente nell'elenco a discesa, vedere [aggiunta di tipi di proprietà](#addTypes).
 
- **Impostare una proprietà nome elemento.** Selezionare una proprietà di dominio che può essere utilizzata per identificare gli elementi in Esplora linguaggio. Ad esempio, nella classe di dominio Brano è possibile selezionare la proprietà di dominio Titolo. Nella finestra **Proprietà** impostare il **nome dell'elemento** su `true`.
+ **Impostare una proprietà nome elemento.** Selezionare una proprietà di dominio che possa essere usata per identificare gli elementi nella finestra di esplorazione linguaggio. Ad esempio, nella classe di dominio Brano è possibile selezionare la proprietà di dominio Titolo. Nella finestra **Proprietà** impostare il **nome dell'elemento** su `true`.
 
 ### <a name="create-derived-domain-classes"></a>Creare classi di dominio derivate
  Per fare in modo che una classe di dominio abbia varianti che ne ereditano le proprietà e le relazioni, creare classi derivanti da essa. Ad esempio, Album potrebbe avere le classi derivate WMA e MP3.
@@ -344,7 +344,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
  **Modificare il molteplicità di ogni ruolo**, se necessario. Se si vuole che ogni persona abbia almeno un manager, impostare la molteplicità visualizzata sotto l'etichetta Manager nel diagramma su 0..1.
 
- **Aggiungere le proprietà del dominio alla relazione.** Nella figura la relazione Artist-album ha una proprietà di Role.
+ **Aggiungere le proprietà del dominio alla relazione.** Nella figura, la relazione artista-album ha una proprietà di ruolo.
 
  **Impostare la proprietà consente i duplicati della relazione,** se tra la stessa coppia di elementi del modello può esistere più di un collegamento della stessa classe. Ad esempio, è possibile consentire a un insegnante di insegnare più di una materia allo stesso studente.
 
@@ -396,7 +396,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
 5. **Creare connessioni** tra le forme. Fare clic sullo strumento connettore, quindi su una forma e infine su un'altra forma.
 
-6. **Verificare che non sia possibile creare connessioni tra le classi non appropriate.** Se ad esempio la relazione è tra gli album e gli artisti, verificare che non sia possibile collegare gli artisti agli artisti.
+6. **Verificare che non sia possibile creare connessioni tra le classi non appropriate.** Se, ad esempio, la relazione è tra gli album e gli artisti, verificare che non sia possibile collegare gli artisti tra loro.
 
 7. **Verificare che molteplicità siano corretti. Ad esempio, verificare che non sia possibile connettere una persona a più di un responsabile.**
 
@@ -606,7 +606,7 @@ Per creare un nuovo linguaggio specifico di dominio, creare una nuova soluzione 
 
  Vedere anche [procedura: modificare lo spazio dei nomi di un Domain-Specific Language](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Risoluzione dei problemi
+## <a name="trouble"></a> Risoluzione dei problemi
  La tabella seguente elenca alcuni dei problemi più comuni riscontrati quando si progetta un linguaggio DSL, oltre ai suggerimenti per risolverli. Altre informazioni sono disponibili nel [Forum sull'estendibilità degli strumenti di visualizzazione](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problema | Suggerimento |

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - virtual functions, Properties window
 - Properties window
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4701f5ea882ab2fbb75f11bc3cc6d85fc92b4b8e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655690"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565708"
 ---
 # <a name="properties-window"></a>Finestra Proprietà
 
@@ -39,7 +39,7 @@ Nome oggetto\
 Indica l'oggetto o gli oggetti attualmente selezionati. Sono visibili solo gli oggetti dell'editor o della finestra di progettazione attivi. Quando si selezionano più oggetti vengono visualizzate solo le proprietà comuni a tutti gli oggetti selezionati.
 
 Per categoria\
-Elenca tutte le proprietà e i valori delle proprietà per l'oggetto selezionato, in base alla categoria. È possibile comprimere una categoria per ridurre il numero di proprietà visualizzate. Quando si espande o si comprime una categoria, viene visualizzato un segno più (+) o meno (-) a sinistra del nome della categoria. Le categorie sono elencate in ordine alfabetico.
+Elenca tutte le proprietà e i valori delle proprietà per l'oggetto selezionato, in base alla categoria. È possibile comprimere una categoria per ridurre il numero di proprietà visualizzate. A seconda che si espanda o si comprima una categoria, a sinistra del nome di quest'ultima è presente un segno di addizione (+) o di sottrazione (-). Le categorie sono elencate in ordine alfabetico.
 
 Alfabetico\
 Ordina alfabeticamente tutti gli eventi e le proprietà della fase di progettazione per gli oggetti selezionati. Per modificare una proprietà attiva, fare clic nella cella a destra della proprietà e immettere le modifiche.
@@ -72,7 +72,7 @@ Indica tutte le funzioni virtuali per la classe selezionata e consente di aggiun
 > Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando **Visualizzazione classi** è la finestra attiva nel contesto di un progetto [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
 
 Riquadro descrizione\
-Visualizza il tipo di proprietà e una breve descrizione della proprietà. È possibile attivare e disattivare la descrizione della proprietà usando il comando Descrizione del menu di scelta rapida.
+Visualizza il tipo di proprietà e una breve descrizione della proprietà. È possibile disabilitare la visualizzazione della descrizione della proprietà scegliendo Descrizione dal menu di scelta rapida.
 
 > [!NOTE]
 > Questo controllo della barra degli strumenti della finestra **Proprietà** non è disponibile se si modificano i file XAML nella finestra di progettazione.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load test, iterations
 - load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0f75ac19f858cba9de1e2d75d4ef5529da1d75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665153"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590982"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurare le iterazioni di test in uno scenario di test di carico
 
@@ -49,7 +49,7 @@ La proprietà **Numero massimo di iterazioni test** è utile in diverse situazio
 
 1. Aprire un test di carico.
 
-2. Verrà visualizzato l'Editor test di carico. Verrà visualizzata la struttura ad albero del test di carico.
+2. Viene visualizzato l'Editor test di carico. Verrà visualizzata la struttura ad albero del test di carico.
 
 3. Nella cartella **Scenari** dell'albero del test di carico scegliere il nodo dello scenario per il quale si vuole specificare il numero massimo di iterazioni di test.
 
@@ -62,7 +62,7 @@ La proprietà **Numero massimo di iterazioni test** è utile in diverse situazio
     > [!NOTE]
     > L'uso di un valore 0 per la proprietà **Numero massimo di iterazioni test** consente di specificare che non è previsto un numero massimo di interazioni.
 
-6. Dopo avere modificato la proprietà scegliere **Salva** nel menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Numero massimo di iterazioni test**.
+6. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Numero massimo di iterazioni test**.
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Specificare il tempo di interazione utente tra iterazioni di test per uno scenario
 
@@ -87,7 +87,7 @@ La proprietà **Tempo interazione utente tra due iterazioni test** viene usata p
 
 4. Per il valore della proprietà **Tempo interazione utente tra due iterazioni test**, immettere un numero che rappresenta il numero di secondi di attesa prima di avviare l'iterazione test successiva.
 
-5. Dopo avere modificato la proprietà scegliere **Salva** nel menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Tempo iterazione utente tra due iterazioni test**.
+5. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Tempo iterazione utente tra due iterazioni test**.
 
 ## <a name="see-also"></a>Vedere anche
 

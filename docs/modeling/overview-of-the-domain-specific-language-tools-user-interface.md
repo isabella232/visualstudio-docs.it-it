@@ -6,17 +6,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aacaa43dc9a95faee886440623fb4238abf9be5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51d6139caa84be5097ececd700c73aa6e231174f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748351"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566111"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
 Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Language (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.

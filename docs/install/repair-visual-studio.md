@@ -5,19 +5,19 @@ description: Informazioni su come riparare un'installazione di Visual Studio 201
 ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 255995f7ca660d36ae40a6a8fead4b3ea5d70424
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681341"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594552"
 ---
 # <a name="repair-visual-studio"></a>Ripristinare Visual Studio
 
@@ -36,7 +36,7 @@ In alcuni casi l'installazione di Visual Studio può risultare danneggiata ed è
 
 1. Aprire il programma di installazione, scegliere **Altro** e quindi scegliere **Ripristina**.
 
-    ![Ripristinare Visual Studio dal programma di installazione di Visual Studio](media/repair-visual-studio.png "Ripristinare Visual Studio dal programma di installazione di Visual Studio")
+    ![Ripristinare Visual Studio dalla Programma di installazione di Visual Studio](media/repair-visual-studio.png "Ripristinare Visual Studio dalla Programma di installazione di Visual Studio")
 
    > [!NOTE]
    > Con il ripristino di Visual Studio verrà reimpostato l'ambiente. Le personalizzazioni locali verranno rimosse, ad esempio le estensioni per utente installate senza l'elevazione dei privilegi, le impostazioni utente e i profili. Verranno ripristinate le impostazioni sincronizzate, ad esempio temi, colori e tasti di scelta rapida.
@@ -53,7 +53,7 @@ In alcuni casi l'installazione di Visual Studio può risultare danneggiata ed è
 
      Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
 
-     ![Aprire il programma di installazione di Visual Studio](media/vs-2019/vs-installer-windows-start.png "Aprire il programma di installazione di Visual Studio")
+     ![Aprire il Programma di installazione di Visual Studio](media/vs-2019/vs-installer-windows-start.png "Aprire il Programma di installazione di Visual Studio")
 
      > [!NOTE]
      > È anche possibile trovare il programma di installazione di Visual Studio nella posizione seguente:
@@ -79,7 +79,7 @@ In alcuni casi l'installazione di Visual Studio può risultare danneggiata ed è
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 * [Aggiornare Visual Studio](update-visual-studio.md)
 * [Disinstallare Visual Studio](uninstall-visual-studio.md)
 * [Risoluzione dei problemi di installazione e aggiornamento di Visual Studio](troubleshooting-installation-issues.md)

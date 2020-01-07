@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Command Devenv switch
 - Command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ca9a6550fd5fd141a5f8051d1948ccd626e970b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654601"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570401"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -29,11 +29,11 @@ Esegue il comando specificato dopo l'avvio dell'IDE di Visual Studio.
 devenv /Command CommandName
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 
 *CommandName*
 
-Obbligatorio. Nome completo di un comando di Visual Studio o del relativo alias, racchiuso tra virgolette doppie. Per altre informazioni sulla sintassi dei comandi e degli alias, vedere [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md).
+Richiesto. Nome completo di un comando di Visual Studio o del relativo alias, racchiuso tra virgolette doppie. Per altre informazioni sulla sintassi dei comandi e degli alias, vedere [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Note
 
@@ -66,5 +66,5 @@ devenv /command "nf some_file.cs"
 ## <a name="see-also"></a>Vedere anche
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Finestra di comando](command-window.md)

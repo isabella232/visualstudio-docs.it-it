@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018348"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401013"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procedura guidata: analisi del codice C/C++ per l'identificazione degli errori
 
@@ -49,7 +49,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
      Verrà visualizzata la finestra di dialogo **pagine delle proprietà Codedifettos** .
 
-5. Fare clic su **analisi codice**.
+5. Fare clic su **Analisi codice**.
 
 6. Fare clic sulla casella di controllo **Abilita analisiC++ codice per la compilazione C/on** .
 
@@ -59,7 +59,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
 ### <a name="to-analyze-code-defect-warnings"></a>Per analizzare gli avvisi di errore del codice
 
-1. Scegliere **Elenco errori**dal menu **Visualizza** .
+1. Scegliere **Elenco errori** dal menu **Visualizza**.
 
      A seconda del profilo dello sviluppatore scelto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], potrebbe essere necessario puntare ad **altre finestre** dal menu **Visualizza** , quindi fare clic su **Elenco errori**.
 
@@ -67,9 +67,9 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
      avviso C6230: cast implicito tra tipi semanticamente diversi: utilizzo di HRESULT in un contesto booleano.
 
-     Nell'editor di codice viene visualizzata la riga che ha provocato l'avviso nella funzione `bool ProcessDomain()`. Questo avviso indica che è in uso un HRESULT in un'istruzione ' If ' in cui è previsto un risultato booleano.
+     Nell'editor di codice viene visualizzata la riga che ha provocato l'avviso nella funzione `bool ProcessDomain()`. Questo avviso indica che è in uso un `HRESULT` in un'istruzione ' If ' in cui è previsto un risultato booleano.  Si tratta in genere di un errore perché quando il `S_OK` HRESULT viene restituito dalla funzione it indica l'esito positivo, ma quando viene convertito in un valore booleano restituisce `false`.
 
-3. Correggere questo avviso utilizzando la macro SUCCEEDed. Il codice dovrebbe essere simile al codice seguente:
+3. Correggere questo avviso utilizzando la macro `SUCCEEDED`, che converte in `true` quando un valore restituito `HRESULT` indica l'esito positivo. Il codice dovrebbe essere simile al codice seguente:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -111,7 +111,7 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
      Verrà visualizzata la finestra di dialogo **pagine delle proprietà delle annotazioni** .
 
-3. Fare clic su **analisi codice**.
+3. Fare clic su **Analisi codice**.
 
 4. Selezionare la casella di controllo **Abilita analisi codiceC++ per la compilazione C/on** .
 
@@ -128,11 +128,11 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 8. Per correggere il problema, utilizzare un'istruzione ' If ' per testare il valore restituito. Il codice dovrebbe essere simile al codice seguente:
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
 ### <a name="to-use-source-code-annotation"></a>Per utilizzare l'annotazione del codice sorgente
 
-1. Annotare i parametri formali e il valore restituito della funzione `AddTail` usando le condizioni pre e post, come illustrato nell'esempio seguente:
+1. Annotare i parametri formali e il valore restituito della funzione `AddTail` per indicare che i valori del puntatore possono essere null:
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. Ricompilare il progetto delle annotazioni.
@@ -160,21 +156,18 @@ Questa procedura dettagliata illustra come analizzare C/C++ codice per i potenzi
 
      Questo avviso indica che il nodo passato nella funzione potrebbe essere null e indica il numero di riga in cui è stato generato l'avviso.
 
-4. Per correggere il problema, utilizzare un'istruzione ' If ' per testare il valore restituito. Il codice dovrebbe essere simile al codice seguente:
+4. Per correggere il problema, utilizzare un'istruzione ' If ' all'inizio della funzione per testare il valore passato. Il codice dovrebbe essere simile al codice seguente:
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. Ricompilare il progetto delle annotazioni.
 
-     Il progetto viene compilato senza avvisi o errori.
+     Il progetto viene ora compilato senza avvisi o errori.
 
 ## <a name="see-also"></a>Vedere anche
 

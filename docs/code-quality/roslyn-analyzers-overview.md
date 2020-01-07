@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649146"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587277"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Panoramica degli analizzatori del codice sorgente
 
@@ -25,7 +25,7 @@ Gli analizzatori di codice .NET Compiler Platform ("Roslyn") C# esaminano il cod
 
 - Alcuni analizzatori sono incorporati in Visual Studio. L'ID di diagnostica, o codice, per questi analizzatori è nel formato IDExxxx, ad esempio IDE0067. La maggior parte di questi analizzatori incorporati controlla [lo stile del codice](../ide/code-styles-and-code-cleanup.md)ed è possibile configurare le preferenze nella [pagina delle opzioni dell'editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Alcuni analizzatori incorporati esaminano la qualità del codice.
 
-- È possibile installare altri analizzatori come un pacchetto NuGet o un'estensione di Visual Studio. Esempio:
+- È possibile installare altri analizzatori come un pacchetto NuGet o un'estensione di Visual Studio. Ad esempio:
 
   - [Analizzatori FxCop](../code-quality/install-fxcop-analyzers.md), analizzatori di qualità del codice consigliati da Microsoft
   - Analizzatori di terze parti, ad esempio [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [xUnit](https://www.nuget.org/packages/xunit.analyzers/)Analyzers e [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
@@ -40,7 +40,7 @@ Molte regole dell'analizzatore, o *utilità di diagnostica*, hanno una o più *c
 
 L'analisi dell'origine da analizzatori Roslyn sostituisce l' [analisi legacy](../code-quality/code-analysis-for-managed-code-overview.md) per il codice gestito. Molte delle regole di analisi legacy sono già state riscritte come analizzatori di codice Roslyn. Per i modelli di progetto più recenti, ad esempio i progetti .NET Core e .NET Standard, l'analisi legacy non è ancora disponibile.
 
-Analogamente alle violazioni delle regole di analisi legacy, le violazioni dell'analisi del codice sorgente vengono visualizzate nella finestra di Elenco errori in Visual Studio. Inoltre, le violazioni dell'analisi del codice sorgente vengono visualizzate nell'editor di codice come *controllo ortografia durante* sotto il codice che causa il danneggiamento. Il colore della linea ondulata dipende dall'[impostazione di gravità](../code-quality/use-roslyn-analyzers.md#rule-severity) della regola. Nella figura seguente sono illustrate tre violazioni &mdash;one rosso, una verde e una grigia:
+Analogamente alle violazioni delle regole di analisi legacy, le violazioni dell'analisi del codice sorgente vengono visualizzate nella finestra di Elenco errori in Visual Studio. Inoltre, le violazioni dell'analisi del codice sorgente vengono visualizzate nell'editor di codice come *controllo ortografia durante* sotto il codice che causa il danneggiamento. Il colore della linea ondulata dipende dall'[impostazione di gravità](../code-quality/use-roslyn-analyzers.md#rule-severity) della regola. Nella figura seguente sono illustrate tre violazioni&mdash;una rossa, una verde e una grigia:
 
 ![Controllo ortografia durante nell'editor di codice in Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -52,7 +52,7 @@ Gli analizzatori di codice ispezionano il codice in fase di compilazione, ad ese
 Gli analizzatori di codice Roslyn non solo segnalano gli stessi tipi di problemi che l'analisi legacy esegue, ma semplificano la correzione di una o tutte le occorrenze della violazione nel file o nel progetto. Queste azioni sono denominate *correzioni del codice*. Le correzioni del codice sono specifiche dell'IDE. in Visual Studio sono implementate come [azioni rapide](../ide/quick-actions.md). Non tutte le utilità diagnostiche dell'analizzatore hanno una correzione del codice associata.
 
 > [!NOTE]
-> L'opzione di menu **analizza**  > **Esegui analisi codice** si applica solo all'analisi legacy.
+> L'opzione di menu **analizza** > **Esegui analisi codice** si applica solo all'analisi legacy.
 
 Per distinguere tra le violazioni degli analizzatori di codice e dell'analisi legacy nel Elenco errori, vedere la colonna **degli strumenti** . Se il valore di Strumento corrisponde a uno degli assembly nell'analizzatore in **Esplora soluzioni**, ad esempio **Microsoft.CodeQuality.Analyzers**, la violazione proviene da un analizzatore del codice. In caso contrario, la violazione proviene dall'analisi legacy.
 
@@ -69,7 +69,7 @@ Per distinguere tra le violazioni degli analizzatori di codice e dell'analisi le
 
 Gli analizzatori di codice Roslyn possono essere installati per progetto tramite un pacchetto NuGet. Alcuni sono disponibili anche come estensione di Visual Studio, nel qual caso si applicano a qualsiasi soluzione aperta in Visual Studio. Esistono alcune differenze di comportamento fondamentali tra questi due metodi di [installazione degli analizzatori](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>Ambito
 
 Se si installano gli analizzatori come estensione di Visual Studio, si applicano a livello di soluzione e a tutte le istanze di Visual Studio. Se si installano gli analizzatori come pacchetto NuGet (metodo preferito), si applicano solo al progetto in cui è stato installato il pacchetto NuGet. Negli ambienti di team gli analizzatori installati come pacchetti NuGet sono inclusi nell'ambito per *tutti gli sviluppatori* che lavorano sul progetto.
 

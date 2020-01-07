@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665006"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589656"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
 
@@ -64,7 +64,7 @@ Quando si apre il file *UIMap.uitest* associato al test codificato dell'interfac
 In **Esplora soluzioni** aprire il menu di scelta rapida per **UIMap.uitest** e scegliere *Apri*. Il test codificato dell'interfaccia utente viene visualizzato in **Editor di test codificati dell'interfaccia utente**. Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.
 
 > [!TIP]
-> Quando si seleziona un'azione dell'interfaccia utente che si trova in un metodo nel riquadro **Azioni dell'interfaccia utente**, viene evidenziato il controllo corrispondente. È possibile modificare anche le proprietà delle azioni dell'interfaccia utente o dei controlli.
+> Quando si seleziona un'azione dell'interfaccia utente che si trova in un metodo nel riquadro **Azioni dell'interfaccia utente** , viene evidenziato il controllo corrispondente. È possibile modificare anche le proprietà delle azioni dell'interfaccia utente o dei controlli.
 
 ## <a name="modify-ui-action-and-control-properties"></a>Modificare le proprietà di azione e controllo dell'interfaccia utente
 
@@ -94,7 +94,7 @@ Dopo aver completato le modifiche, salvarle nel file *UIMap.Designer* scegliendo
 
 - A volte può essere difficile identificare la posizione dei controlli nell'interfaccia utente dell'applicazione sottoposta a test. Una delle funzionalità dell'Editor di test codificati dell'interfaccia utente consente di selezionare un controllo elencato nella mappa del controllo dell'interfaccia utente e visualizzarne la posizione nell'applicazione sottoposta a test. Per altre informazioni, vedere [Individuare un controllo dell'interfaccia utente nell'applicazione sottoposta a test](#locate-a-ui-control-in-the-application-under-test) più avanti in questo articolo.
 
-- Potrebbe essere necessario espandere il controllo contenitore che comprende il controllo che si vuole modificare. Per altre informazioni, vedere [Individuare un controllo e i relativi discendenti](#locate-a-control-and-its-descendants) più avanti nell'articolo.
+- Potrebbe essere necessario espandere il controllo contenitore che include il controllo che si vuole modificare. Per altre informazioni, vedere [Individuare un controllo e i relativi discendenti](#locate-a-control-and-its-descendants) più avanti nell'articolo.
 
 ## <a name="delete-unwanted-ui-actions"></a>Eliminare le azioni dell'interfaccia utente indesiderate
 
@@ -188,7 +188,7 @@ Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test cont
 
 Dopo avere completato l'inserimento del ritardo, salvare le modifiche nel file *UIMap.Designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
 
-Se è necessario assicurarsi che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile aggiungere il codice personalizzato al metodo di test usando il metodo UITestControl.WaitForControlXXX() appropriato. Per altre informazioni, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+Se è necessario verificare che un controllo specifico sia disponibile prima di un'azione dell'interfaccia utente, è consigliabile valutare se aggiungere codice personalizzato al metodo di test usando il metodo UITestControl.WaitForControlXXX() appropriato. Per altre informazioni, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="see-also"></a>Vedere anche
 

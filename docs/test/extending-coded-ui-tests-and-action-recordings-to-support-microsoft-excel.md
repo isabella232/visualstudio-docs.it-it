@@ -2,17 +2,17 @@
 title: Estendere test codificati dell'interfaccia utente e registrazioni delle azioni
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 3060014002b2e34443741dc654cf29df53278fe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 05ccb885c799bf2bfd2e3868b80226eca726cc31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664917"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589552"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Estendere test codificati dell'interfaccia utente e registrazioni delle azioni
 

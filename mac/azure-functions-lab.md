@@ -6,14 +6,14 @@ ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108136"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398168"
 ---
-# <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione a Funzioni di Azure
+# <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
 
 In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azure tramite Visual Studio per Mac. Si eseguirà anche l'integrazione con le tabelle di archiviazione di Azure, uno dei vari tipi di binding e trigger disponibili per gli sviluppatori di funzioni di Azure.
 
@@ -24,10 +24,10 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 > * Integrare risorse di archiviazione Web e di Azure
 > * Gestire un flusso di lavoro che interessa più funzioni di Azure
 
-## <a name="requirements"></a>Requisiti
+## <a name="requirements"></a>Requisiti di
 
 - Visual Studio per Mac 7.5 o versione successiva.
-- Sottoscrizione di Azure (disponibile gratuitamente in [https://azure.com/free](https://azure.com/free)).
+- Sottoscrizione di Azure (disponibile gratuitamente in [https://azure.com/free](https://azure.com/free?ref=visualstudio)).
 
 ## <a name="exercise-1-creating-an-azure-functions-project"></a>Esercizio 1: Creazione di un progetto di Funzioni di Azure
 
@@ -46,7 +46,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 5. Espandere i nodi nel **riquadro della soluzione**. Il modello di progetto predefinito include riferimenti NuGet a vari pacchetti di Processi Web di Azure e al pacchetto Newtonsoft.Json.
 
      Sono anche disponibili tre file: **host.json** per la descrizione delle opzioni di configurazione globale per l'host, **local.settings.json** per la configurazione delle impostazioni del servizio.
-        Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.
+        - Il modello di progetto crea anche un HttpTrigger predefinito. Ai fini di questa esercitazione, eliminare il file **HttpTrigger.cs** dal progetto.
 
     Aprire **local.settings.json**. Per impostazione predefinita il file include due impostazioni stringa di connessione vuote.
 
@@ -126,7 +126,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     ![Nuovo metodo run con l'attributo FunctionName evidenziato](media/azure-functions-lab-image13.png)
 
-1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noti anche che il valore restituito è di tipo **int**. Salvo diversa indicazione mediante gli attributi del metodo, qualsiasi valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
+1. Successivamente, il metodo è contrassegnato come metodo **public static**, impostazione necessaria. Si noterà anche che il valore restituito è di **tipo int**. Se non diversamente specificato mediante gli attributi del metodo, il valore restituito non void di una funzione di Azure viene restituito al client come testo. Per impostazione predefinita viene restituito come **XML**, ma può essere modificato in **JSON**. Si eseguirà questa operazione più avanti nell'esercitazione.
 
     ![Nuovo metodo run con l'inizializzazione del metodo evidenziata](media/azure-functions-lab-image14.png)
 

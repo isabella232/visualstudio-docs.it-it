@@ -13,22 +13,22 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c94844e9860f1de9be92c1e23580e314ada367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 481be1f0e9c5444e56c95b13e938cda1d541af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777958"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566897"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<progetto > \<scegliere > \<quando > \<scegliere >... \<in caso contrario > \<scegliere >...
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,17 +41,17 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 ```
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
- Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
+ Le sezioni seguenti descrivono gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |Condizione|Attributo obbligatorio.<br /><br /> Condizione da valutare. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento facoltativo.<br /><br /> Valuta gli elementi figlio per selezionare una sezione del codice da eseguire. Possono esistere zero o più elementi `Choose` in un elemento `When`.|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento facoltativo.<br /><br /> Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti dall'utente. Possono esistere zero o più elementi `ItemGroup` in un elemento `When`.|
@@ -59,11 +59,11 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 
 ### <a name="parent-elements"></a>Elementi padre
 
-|Elemento|Description|
+|Elemento|Descrizione|
 |-------------|-----------------|
 |[Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Se l'`Condition` attributo restituisce true, gli elementi figlio `ItemGroup` e `PropertyGroup` dell'elemento `When` vengono eseguiti e tutti gli elementi `When` successivi vengono ignorati.
 
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595852"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Finestra di dialogo Impostazioni di compilazioneC#avanzate ()
 
@@ -62,7 +62,7 @@ Le opzioni seguenti consentono di specificare impostazioni di output avanzate.
 
 **Informazione di debug**
 
-Specifica il tipo di informazioni di debug generate dal compilatore. Per informazioni su come configurare le prestazioni di debug di un'applicazione, vedere [Semplificazione del debug di un'immagine](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Le opzioni di questa impostazione sono le seguenti:
+Specifica il tipo di informazioni di debug generate dal compilatore. Per informazioni su come configurare le prestazioni di debug di un'applicazione, vedere [Semplificazione del debug di un'immagine](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Per questa impostazione sono disponibili le opzioni seguenti:
 
 - **none**
 

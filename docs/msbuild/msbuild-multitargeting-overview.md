@@ -3,17 +3,17 @@ title: Panoramica del multitargeting di MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc7bbf08ac2d020ac058eaa75791e5b733ceab04
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: d54209624a7413bb5d968f212e669a4be8171b43
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926397"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595917"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Panoramica del multitargeting di MSBuild
 Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualunque delle tante versioni di .NET Framework e in una qualunque delle tante piattaforme di sistema. Ad esempio, è possibile compilare un'applicazione da eseguire in .NET Framework 2.0 in una piattaforma a 32 bit e compilare la stessa applicazione da eseguire in .NET Framework 4.5 in una piattaforma a 64 bit.

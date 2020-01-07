@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516777"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597399"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -25,7 +25,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ::: moniker range="vs-2017"
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+1. Nella barra dei menu scegliere **File** > **nuovo** **progetto**>.
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
@@ -42,7 +42,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-   ![Visualizzare la finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca. Scegliere quindi **Desktop** dall'elenco **tipo di progetto** .
 
@@ -59,7 +59,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    >
    > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
+   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MatchingGame* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -117,10 +117,10 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
        > [!NOTE]
        > Il tipo di carattere Webdings include una serie di icone ed è fornito con il sistema operativo Windows. Nel gioco delle coppie, il giocatore deve riuscire ad accoppiare le icone, per cui si utilizza questo tipo di carattere per visualizzare le icone da accoppiare. Anziché inserire **c** nella proprietà **Text**, provare a immettere lettere diverse per vedere quali icone vengono visualizzate. Il punto esclamativo equivale a un ragno, la N maiuscola a un occhio e la virgola a un peperoncino.
 
-5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. ( **Premere Ctrl** +**C** chiavi oppure sulla barra dei menu scegliere **modifica**  > **copia**.) Quindi incollarlo. **Premere il tasto Ctrl** +**V** oppure scegliere **modifica**  > **Incolla**sulla barra dei menu. Una copia della prima etichetta viene visualizzata nella seconda cella di TableLayoutPanel. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a riempire tutte le celle.
+5. Scegliere il controllo Label e copiarlo nella cella successiva in TableLayoutPanel. ( **Premere Ctrl**+**C** chiavi oppure sulla barra dei menu scegliere **modifica** > **copia**.) Quindi incollarlo. **Premere il tasto Ctrl**+**V** oppure scegliere **modifica** > **Incolla**sulla barra dei menu. Una copia della prima etichetta viene visualizzata nella seconda cella di TableLayoutPanel. Incollare di nuovo e nella terza cella verrà visualizzata un'altra etichetta. Continuare a incollare i controlli Label fino a che non sono state riempite tutte le celle.
 
    > [!NOTE]
-   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel, in modo da creare una posizione dove aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL**+**Z** oppure scegliere **Modifica** > **Annulla** sulla barra dei menu.
+   > Se si incolla troppe volte, l'IDE aggiunge una nuova riga a TableLayoutPanel in modo da avere il posto per aggiungere il nuovo controllo Label. L'azione può essere annullata. Per rimuovere la nuova cella, premere **CTRL**+**Z** oppure scegliere **Modifica** > **Annulla** sulla barra dei menu.
 
     Il modulo è ora disposto. Dovrebbe essere simile all'immagine seguente.
 

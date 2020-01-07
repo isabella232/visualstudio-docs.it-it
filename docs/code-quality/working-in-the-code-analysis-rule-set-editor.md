@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649017"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587134"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor set di regole di analisi del codice
 
@@ -26,10 +26,10 @@ Nella tabella seguente vengono illustrate le opzioni di gravità:
 |Azione (gravità)|Descrizione|
 |-|-|
 |Avviso|Genera un avviso nel **Elenco errori** e anche in fase di compilazione.|
-|Error|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
-|Info|Genera un messaggio nel **Elenco errori**.|
+|Errore di|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
+|Informazioni|Genera un messaggio nel **Elenco errori**.|
 |Hidden|La violazione non è visibile all'utente. Tuttavia, l'IDE riceve una notifica della violazione.|
-|Nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
+|nessuna|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
 
 Nell'editor vengono visualizzate le regole in una struttura ad albero che raggruppa le regole in base a un campo del set di regole specificato. Per aggiungere o rimuovere regole da un set di regole, eseguire uno o più dei passaggi seguenti:
 
@@ -52,7 +52,7 @@ Nella tabella seguente vengono descritti i controlli della barra degli strumenti
 |---------------------|-----------------|
 |**Espandi tutto**|Mostra le regole in tutti i gruppi.|
 |**Comprimi tutto**|Nasconde le regole in tutti i gruppi.|
-|**Group By**|Specifica il campo in base al quale vengono raggruppate le regole. Fare clic su **\<None >** per visualizzare le regole senza gruppi.|
+|**Group By**|Specifica il campo in base al quale vengono raggruppate le regole. Fare clic su **\<nessuna >** per visualizzare le regole senza gruppi.|
 |**Opzioni colonne**|Specifica i campi della regola da visualizzare.|
 |**Nascondi regole che non si applicano alla soluzione corrente**|Consente di visualizzare o nascondere regole che non sono dello stesso tipo di destinazione della soluzione.|
 |**Mostra regole che possono generare errori di analisi del codice**|Consente di visualizzare o nascondere le regole a cui è stata assegnata l'azione di errore.|
@@ -71,7 +71,7 @@ Nella tabella seguente vengono descritti i campi di un set di regole:
 |-----------|-----------------|
 |**ID**|Identificatore della regola.|
 |**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice sono raggruppate per categoria. Per altre informazioni, vedere [avvisi di analisi del codice](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Nome**|Titolo della regola.|
+|**Name**|Titolo della regola.|
 |**Namespace**|Spazio dei nomi della regola.|
 |**Tipo di destinazione**|Indica se la regola è per il codice nativo, gestito o del database.|
 |**Azione**|Azione eseguita quando la regola viene violata in un'esecuzione dell'analisi del codice. È possibile modificare il campo **azione** .|

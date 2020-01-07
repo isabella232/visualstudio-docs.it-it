@@ -2,17 +2,17 @@
 title: Testing unità di codice Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659837"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590865"
 ---
 # <a name="unit-test-c-code"></a>Unit test di codice C#
 
@@ -24,13 +24,13 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Creare la soluzione e il progetto unit test
 
-1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
 
 2. Cercare e selezionare il modello di progetto **App vuota (Windows universale)** .
 
 3. Denominare il progetto **Maths**.
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi**  > **nuovo progetto**.
+4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** > **nuovo progetto**.
 
 5. Cercare e selezionare il modello di progetto **App unit test (Windows universale)** .
 
@@ -66,7 +66,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Aggiungere la classe Rooter al progetto Maths
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **Maths** , quindi scegliere **Aggiungi**  > **classe**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **Maths** , quindi scegliere **Aggiungi** > **classe**.
 
 2. Assegnare il nome *Rooter.cs* al file di classe.
 
@@ -96,7 +96,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 1. Aggiungere un riferimento dal progetto RooterTests all'app Maths.
 
-    1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **RooterTests** , quindi scegliere **Aggiungi**  > **riferimento**.
+    1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **RooterTests** , quindi scegliere **Aggiungi** > **riferimento**.
 
     2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare il progetto **Maths** .
 
@@ -150,9 +150,9 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ::: moniker-end
 
-Sono stati configurati i progetti di test e app e verificato che sia possibile eseguire test che chiamano funzioni nel progetto dell'app. Ora è possibile iniziare a scrivere test e codici reali.
+Sono stati configurati i progetti di test e app e verificato che sia possibile eseguire test che chiamano funzioni nel progetto dell'app. Ora puoi iniziare a scrivere test e codice reali.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Aumentare i test in maniera iterativa e farli superare
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Incrementare i test in maniera iterativa e fare in modo che siano superati
 
 1. Aggiungere un nuovo test denominato **RangeTest**:
 
@@ -172,14 +172,14 @@ Sono stati configurati i progetti di test e app e verificato che sia possibile e
    ```
 
    > [!TIP]
-   > È consigliabile non modificare i test che siano stati superati. Aggiungere invece un nuovo test.
+   > Ti suggeriamo di non modificare i test superati. Aggiungere invece un nuovo test.
 
 2. Eseguire il test **RangeTest** e verificare che abbia esito negativo.
 
    ![RangeTest non riuscito](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > Subito dopo aver scritto un test, eseguirlo per verificarne l'esito negativo. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.
+   > Subito dopo aver scritto un test, eseguirlo per verificarne l'esito negativo. In questo modo eviti l'errore comune di scrivere un test che non ha mai esito negativo.
 
 3. Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Modificare la funzione **SquareRoot** in *Rooter.cs* in questo modo:
 
@@ -213,9 +213,9 @@ Sono stati configurati i progetti di test e app e verificato che sia possibile e
    Ora tutti e tre i test vengono superati.
 
 > [!TIP]
-> Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.
+> Sviluppa il codice aggiungendo i test uno alla volta. Assicurati che tutti i test vengano superati dopo ogni iterazione.
 
-## <a name="refactor-the-code"></a>Eseguire il refactoring del codice
+## <a name="refactor-the-code"></a>Effettuare il refactoring del codice
 
 In questa sezione viene eseguito il refactoring del codice dell'app e del test, quindi vengono rieseguiti i test per assicurarsi che vengano ancora superati.
 

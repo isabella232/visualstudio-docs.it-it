@@ -3,17 +3,17 @@ title: Proprietà dei documenti XML, finestra Proprietà
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604148"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592425"
 ---
 # <a name="xml-document-properties-properties-window"></a>Proprietà del documento XML, Finestra Proprietà
 
@@ -28,7 +28,7 @@ La codifica dei caratteri per il file. Modificando questa proprietà si modifica
 
 **Input**
 
-Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio **XML**  > **avviare XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia ( **..** .).
+Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio **XML** > **avviare XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia ( **..** .).
 
 Questa proprietà è visibile solo quando un file XSLT è aperto nell'editor.
 

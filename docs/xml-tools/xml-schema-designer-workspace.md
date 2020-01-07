@@ -3,17 +3,17 @@ title: Area di lavoro di Progettazione XML Schema
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6e5efc4c192fbb9debeb9dd5f9ccf1eaec69efa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608267"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592373"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Viste dell'area di lavoro di progettazione XML Schema
 
@@ -37,7 +37,7 @@ Per iniziare a esplorare i nodi a cui si è interessati, è necessario aggiunger
 
 - Eseguire una ricerca in XSD Explorer e fare clic sul pulsante **Aggiungi nodi evidenziati all'area di lavoro** nel riquadro dei risultati di riepilogo. Per ulteriori informazioni, vedere [la pagina relativa alla ricerca del set di schemi](../xml-tools/searching-the-schema-set.md).
 
-## <a name="switch-views"></a>Cambia visualizzazioni
+## <a name="switch-views"></a>Cambiare la visualizzazione
 
 Per cambiare visualizzazioni, usare uno degli elementi seguenti:
 
@@ -47,4 +47,4 @@ Per cambiare visualizzazioni, usare uno degli elementi seguenti:
 
 - Le filigrane sulla pagina della visualizzazione iniziale o la filigrana sulla visualizzazione modello di contenuto vuota o sulla visualizzazione grafico.
 
-- Tasti di scelta rapida: **ctrl** +**1** per la visualizzazione iniziale, **CTRL** +**2** per la visualizzazione grafico e **CTRL** +**3** per la visualizzazione modello di contenuto.
+- Tasti di scelta rapida: **ctrl**+**1** per la visualizzazione iniziale, **CTRL**+**2** per la visualizzazione grafico e **CTRL**+**3** per la visualizzazione modello di contenuto.

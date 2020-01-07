@@ -3,17 +3,17 @@ title: Prestazioni XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2866e9b19ea2b79bf8435d81c93443bb20ff4fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79d865a426af2c089bfcc6bd1e733b4ecc185077
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645916"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592282"
 ---
 # <a name="the-xslt-profiler"></a>Profiler XSLT
 
@@ -30,7 +30,7 @@ Il Profiler XSLT è parte di Visual Studio ed è disponibile nel menu **XML** .
 
 1. Aprire un documento XSLT in Visual Studio.
 
-2. Nella barra dei menu scegliere **XML**  > **profile XSLT**.
+2. Nella barra dei menu scegliere **XML** > **profile XSLT**.
 
 3. Fornire un documento XML di input. Se non è già aperto un documento XML, verrà richiesto il file.
 

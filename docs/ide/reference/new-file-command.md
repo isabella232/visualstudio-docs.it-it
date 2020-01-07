@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747867"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595956"
 ---
 # <a name="new-file-command"></a>Comando Nuovo file
 Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File esterni.
@@ -29,7 +29,7 @@ Crea un nuovo file e lo apre. Il file viene visualizzato nella cartella File est
 File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `filename`
 
 Parametro facoltativo. Nome del file. Se non viene specificato alcun nome, viene indicato un nome predefinito. Se non viene elencato alcun nome di modello, viene creato un file di testo.
@@ -69,7 +69,7 @@ In questo esempio viene creata una nuova pagina Web "test1.htm" e la pagina vien
 ## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Finestra di controllo immediato](../../ide/reference/immediate-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

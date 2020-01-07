@@ -5,22 +5,22 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, logging
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99bbb6ba880ace8b21ae6b6009ee84cffee79485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856035"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592191"
 ---
 # <a name="logging-in-msbuild"></a>Registrazione a MSBuild
 La registrazione consente di monitorare lo stato di avanzamento di una compilazione. La registrazione acquisisce eventi di compilazione, messaggi, avvisi ed errori in un file di log.
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
 
  Descrive i diversi aspetti della registrazione in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].

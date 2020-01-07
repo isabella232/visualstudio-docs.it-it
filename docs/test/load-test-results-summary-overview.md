@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Load Test Viewer, summary
 - load tests, summary in Load Test Viewer
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba72bc9d4e63e1ccb1e6d8c05d20332880e19ea9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652984"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584491"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
@@ -58,7 +58,7 @@ Le ultime sezioni sono riportate alla fine del riepilogo e possono essere compre
 
 - Risorse controller e agenti
 
-- Errori
+- Errori di
 
 ## <a name="test-run-information"></a>Informazioni sull'esecuzione di test
 
@@ -125,7 +125,7 @@ La sezione relativa alle risorse controller e agenti contiene un elenco dei comp
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
 
-## <a name="errors"></a>Errori
+## <a name="errors"></a>Errori di
 
 La sezione contiene un elenco di tutti gli errori che si sono verificati durante il test di carico. Sono visualizzati il tipo e il sottotipo di errore, il conteggio e l'ultimo messaggio. È possibile scegliere un errore per aprire la tabella **Errori** ed esaminare altri dettagli sull'errore. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 

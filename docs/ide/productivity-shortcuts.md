@@ -3,17 +3,17 @@ title: Scelte rapide da tastiera e mouse
 description: Questo articolo offre suggerimenti per le scelte rapide da tastiera e mouse per Visual Studio che consentono di essere più produttivi.
 ms.date: 11/02/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666738"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585730"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Suggerimenti relativi alle scelte rapide per Visual Studio
 
@@ -26,7 +26,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 
 ## <a name="window-management"></a>Gestione delle finestre
 
-|Attività|Metodo rapido|
+|Attività|Collegamento|
 |-|-|
 |Ingrandire la finestra mobile|**Doppio clic** sulla barra del titolo|
 |Ingrandire/ridurre le finestre|**WINDOWS**+**freccia SU** / **WINDOWS**+**freccia GIÙ**|
@@ -41,7 +41,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 
 ## <a name="search"></a>Cerca
 
-|Attività|Metodo rapido|
+|Attività|Collegamento|
 |-|-|
 |Ricerca in Esplora soluzioni|**CTRL**+ **,**|
 |Spostare lo stato attivo nella casella di ricerca in qualsiasi finestra degli strumenti (fatta eccezione per l'editor)|**ALT**+ **`** quando la finestra degli strumenti è attiva|
@@ -51,7 +51,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 
 ## <a name="find-in-the-editor"></a>Ricerca nell'editor
 
-|Attività|Metodo rapido|
+|Attività|Collegamento|
 |-|-|
 |Ricerca veloce|**CTRL**+**F**|
 |Risultato successivo di Ricerca veloce|**INVIO**|
@@ -66,7 +66,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 
 ## <a name="code-editor"></a>Editor di codice
 
-|Attività|Metodo rapido|
+|Attività|Collegamento|
 |-|-|
 |Vai a tutti|**CTRL**+**T**|
 |Vai a file recenti|**CTRL**+**T**,**R**|
@@ -92,16 +92,16 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 |Stack Vai a definizione|**CTRL**+**MAIUSC**+**8** (Indietro)<br />**CTRL**+**MAIUSC**+**7** (Avanti)|
 |Chiudere la finestra Visualizza definizione|**ESC**|
 |Alzare di livello la finestra Visualizza definizione a una scheda di documento normale|**CTRL**+**ALT**+**HOME**|
-|Spostarsi tra più finestre Visualizza definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+ **=**|
+|Spostarsi tra più finestre Visualizza definizione|**CTRL**+**ALT**+ **-** e **CTRL**+**ALT**+ **=**|
 |Spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Passare dalla finestra editor di codice alla finestra Visualizza definizione e viceversa|**MAIUSC**+**ESC**|
 |Passare al blocco di inclusione|**CTRL**+**Alt**+**freccia SU**|
 |Passare al problema successivo/precedente|**ALT**+**PGSU** / **ALT**+**PGGIÙ**|
 |Menu di navigazione contestuale|**ALT**+ **`**|
 
-## <a name="toolbars"></a>Barre degli strumenti
+## <a name="toolbars"></a>Toolbars
 
-|Attività|Metodo rapido|
+|Attività|Collegamento|
 |-|-|
 |Aggiungere pulsanti|Selezionare il pulsante di overflow della barra degli strumenti|
 |Casella combinata Trova nella barra degli strumenti standard|**Ctrl**+**D**|
@@ -110,7 +110,7 @@ Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti d
 
 ## <a name="debugging"></a>Debug
 
-|Attività|Metodo rapido|
+|Attività|Collegamento|
 |-|-|
 |Avvia debug|**F5**|
 |Arrestare il debug|**MAIUSC**+**F5**|

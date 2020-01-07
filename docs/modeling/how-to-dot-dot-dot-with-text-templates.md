@@ -2,17 +2,17 @@
 title: Procedure relative ai modelli di testo
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fc29b7daa65a9aa0b0c45ae5bc90a4f845dedff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605619"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594656"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 I modelli di testo in Visual Studio offrono un modo utile per generare testo di qualsiasi tipo. È possibile usare i modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare parte del codice del progetto. Questo argomento riepiloga le domande più frequenti su "Ricerca per categorie...?" domande.
@@ -21,7 +21,7 @@ I modelli di testo in Visual Studio offrono un modo utile per generare testo di 
 
  Per un'introduzione generale ai modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="how-to-"></a>Come si fa...
+## <a name="how-to-"></a>Procedure
 
 ### <a name="generate-part-of-my-application-code"></a>Genera parte del codice dell'applicazione
  Ho una configurazione o un *modello* in un file o un database. Una o più parti del codice dipendono da tale modello.
@@ -35,7 +35,7 @@ I modelli di testo in Visual Studio offrono un modo utile per generare testo di 
 
 - Se si desidera generare da modelli disponibili solo in fase di esecuzione, è possibile utilizzare modelli di testo standard. Se si scrive un'estensione di Visual Studio, è possibile richiamare il servizio del modello di testo. Per altre informazioni, vedere [richiamo della trasformazione del testo in un'estensione di Visual](../modeling/invoking-text-transformation-in-a-vs-extension.md)Studio. In altri contesti, è possibile usare il motore del modello di testo. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Usare la direttiva \< # @parameter # > per passare parametri a questi modelli. Per altre informazioni, vedere [direttiva parameter T4](../modeling/t4-parameter-directive.md).
+     Usare la direttiva \<#@parameter# > per passare parametri a questi modelli. Per altre informazioni, vedere [direttiva parameter T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Lettura di un altro file di progetto da un modello
  Per leggere un file dallo stesso progetto di Visual Studio del modello:
@@ -48,7 +48,7 @@ I modelli di testo in Visual Studio offrono un modo utile per generare testo di 
 
 Se i metodi sono già presenti, ad esempio, nelle classi .NET:
 
-- Utilizzare la direttiva \< # @assembly # > per caricare l'assembly e utilizzare \< # @import # > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva import T4](../modeling/t4-import-directive.md).
+- Utilizzare la direttiva \<#@assembly# > per caricare l'assembly e utilizzare \<#@import# > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva import T4](../modeling/t4-import-directive.md).
 
    Se si utilizza spesso lo stesso set di direttive di assembly e di importazione, è consigliabile scrivere un processore di direttiva. In ogni modello è possibile richiamare il processore di direttiva, che può caricare gli assembly e i file del modello e impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [creazione di processori di direttive del modello di testo T4 personalizzato](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
@@ -71,14 +71,14 @@ Se si scrivono i metodi manualmente:
 
 ### <a name="generate-files-from-a-complex-model"></a>Generare file da un modello complesso
 
-- Provare a creare un linguaggio specifico di dominio (DSL) per rappresentare il modello. In questo modo è molto più semplice scrivere i modelli, perché si usano tipi e proprietà che riflettono i nomi degli elementi nel modello. Non è necessario analizzare il file o spostarsi tra i nodi XML. Esempio:
+- Provare a creare un linguaggio specifico di dominio (DSL) per rappresentare il modello. In questo modo è molto più semplice scrivere i modelli, perché si usano tipi e proprietà che riflettono i nomi degli elementi nel modello. Non è necessario analizzare il file o spostarsi tra i nodi XML. Ad esempio:
 
      `foreach (Book book in this.Library) { ... }`
 
      Per ulteriori informazioni, vedere [Introduzione con linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md) e [generazione di codice da una Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Ottenere dati da Visual Studio
- Per usare i servizi forniti in Visual Studio, impostare l'attributo `hostSpecific` e caricare l'assembly `EnvDTE`. Esempio:
+ Per usare i servizi forniti in Visual Studio, impostare l'attributo `hostSpecific` e caricare l'assembly `EnvDTE`. Ad esempio:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afe10d8bb912b911734437eb79684cdbfe9f78d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 41a32b914cab8626df513994a3d68c2aac3d7cb7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823253"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593434"
 ---
 # <a name="assigntargetpath-task"></a>Attività AssignTargetPath
 Questa attività accetta un elenco di file e aggiunge gli attributi `<TargetPath>`, se non sono già specificati.
@@ -26,14 +26,14 @@ Questa attività accetta un elenco di file e aggiunge gli attributi `<TargetPath
 ## <a name="task-parameters"></a>Parametri dell'attività
 Nella tabella che segue vengono descritti i parametri dell'attività `AssignTargetPath` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`RootFolder`|Parametro di input `string` facoltativo.<br /><br /> Contiene il percorso della cartella contenente i collegamenti alla destinazione.|
 |`Files`|Parametro di input <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene l'elenco di file in ingresso.|
-|`AssignedFiles`|Facoltativo<br /><br /> Parametro di output <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Contiene l'elenco di file risultante.|
+|`AssignedFiles`|Facoltativa<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametro di output.<br /><br /> Contiene l'elenco di file risultante.|
 
-## <a name="remarks"></a>Osservazioni
-Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Note
+Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
 Nell'esempio seguente viene eseguita l'attività `AssignTargetPath` per configurare un progetto.
@@ -53,4 +53,4 @@ RootFolder="Resources"
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

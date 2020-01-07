@@ -11,17 +11,17 @@ helpviewer_keywords:
 - XmlPeek task [MSBuild]
 - MSBuild, XmlPeek task
 ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19b8273617955092519bf16f0aa5b3fbea86218a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e10cf26ad23e6fe4c881f68ad87bc80d04f2cf8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777821"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590969"
 ---
 # <a name="xmlpeek-task"></a>Attività XmlPeek
 Restituisce valori come specificato dalla query XPath da un file XML.
@@ -29,7 +29,7 @@ Restituisce valori come specificato dalla query XPath da un file XML.
 ## <a name="parameters"></a>Parametri
  Nella tabella che segue vengono descritti i parametri dell'attività `XmlPeek` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`Namespaces`|Parametro `String` facoltativo.<br /><br /> Specifica gli spazi dei nomi per i prefissi della query XPath.|
 |`Query`|Parametro `String` facoltativo.<br /><br /> Specifica la query XPath.|
@@ -37,9 +37,9 @@ Restituisce valori come specificato dalla query XPath da un file XML.
 |`XmlContent`|Parametro `String` facoltativo.<br /><br /> Specifica l'input XML sotto forma di stringa.|
 |`XmlInputPath`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica l'input XML come percorso di file.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

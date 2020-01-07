@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648922"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587108"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
 
@@ -39,7 +39,7 @@ Per aggiungere o rimuovere controlli dall'elenco dei controlli disponibili per g
 2. Nella finestra **origini dati** fare clic su un elemento che fa parte di un'origine dati aggiunta alla finestra, quindi fare clic sul menu a discesa per l'elemento.
 
    > [!TIP]
-   > Se la finestra Origini dati non è aperta, aprirla selezionando **visualizza**  >  altre**origini dati** >  di**Windows** .
+   > Se la finestra Origini dati non è aperta, aprirla selezionando **visualizza** > altre **origini dati** > di **Windows** .
 
 3. Nel menu a discesa fare clic su **Personalizza**. Si apre una delle finestre di dialogo seguenti:
 

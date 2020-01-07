@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985123"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594734"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: aggiungere un comando al menu di scelta rapida
 
@@ -139,13 +139,13 @@ Usare il metodo descritto in questo argomento se:
 
 2. Trovare l'attributo `ProvideMenuResource`.
 
-3. Incrementare il parametro della `version` dell'attributo, che è il secondo parametro. Se si vuole, è possibile scrivere il nome del parametro in modo esplicito come promemoria del suo scopo. Esempio:
+3. Incrementare il parametro della `version` dell'attributo, che è il secondo parametro. Se si vuole, è possibile scrivere il nome del parametro in modo esplicito come promemoria del suo scopo. Ad esempio:
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ## <a name="CommandSet"></a>Definire il comportamento del comando
 
-Il DSL ha già alcuni comandi implementati in una classe parziale che è dichiarata in DslPackage\GeneratedCode\CommandSet.cs. Per aggiungere nuovi comandi è necessario estendere questa classe creando un nuovo file che contiene una dichiarazione parziale della stessa classe. Il nome della classe è in genere *\<YourDslName >* `CommandSet`. È utile iniziare verificando il nome della classe ed esaminarne il contenuto.
+Il DSL ha già alcuni comandi implementati in una classe parziale che è dichiarata in DslPackage\GeneratedCode\CommandSet.cs. Per aggiungere nuovi comandi è necessario estendere questa classe creando un nuovo file che contiene una dichiarazione parziale della stessa classe. Il nome della classe è in genere *\<proprionomedsl >* `CommandSet`. È utile iniziare verificando il nome della classe ed esaminarne il contenuto.
 
 La classe del set di comandi è derivata da <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
@@ -159,7 +159,7 @@ La classe del set di comandi è derivata da <xref:Microsoft.VisualStudio.Modelin
 
 2. In **DslPackage**creare una cartella denominata **codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs`.
 
-3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Esempio:
+3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -220,17 +220,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 I frammenti seguenti sono spesso utili nei metodi OnStatus:
 
-- `this.CurrentSelection` La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
+- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
-- `this.IsDiagramSelected()`  -  `true` se l'utente ha fatto clic su una parte vuota del diagramma.
+- `this.IsDiagramSelected()` - `true` se l'utente ha fatto clic su una parte vuota del diagramma.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - l'utente non ha selezionato più forme.
+- `this.IsSingleSelection()`-l'utente non ha selezionato più oggetti
 
-- `this.SingleSelection` - la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse.
+- `this.SingleSelection`: la forma o il diagramma su cui l'utente ha fatto clic con il pulsante destro del mouse
 
-- `shape.ModelElement as MyLanguageElement` - l'elemento del modello rappresentato da una forma.
+- `shape.ModelElement as MyLanguageElement`: elemento del modello rappresentato da una forma.
 
 Come linea guida generale, creare una dipendenza tra la proprietà `Visible` e il contenuto selezionato e creare una dipendenza tra la proprietà `Enabled` e lo stato degli elementi selezionati.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Se si modifica la sezione Symbols del file VSCT, è necessario anche modificare queste dichiarazioni in modo corrispondente e incrementare il numero di versione in Package.tt.
 
- Registrare i comandi di menu come parte di questo set di comandi. `GetMenuCommands()` è chiamato una volta quando il diagramma viene inizializzato:
+ Registrare i comandi di menu come parte di questo set di comandi. `GetMenuCommands()` viene chiamato una volta al momento dell'inizializzazione del diagramma:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
