@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648240"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586341"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 Per cercare record specifici in un set di dati, usare il metodo `FindBy` sulla DataTable, scrivere un'istruzione foreach personalizzata per eseguire il ciclo della raccolta Rows della tabella o usare [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,13 +70,13 @@ In questa pagina vengono forniti esempi di utilizzo di DataSet tipizzati. Per in
 > [!NOTE]
 > Se si lavora in una Windows Forms Application e si usano le funzionalità di data binding per visualizzare i dati, il form generato dalla finestra di progettazione potrebbe fornire una funzionalità sufficiente per l'applicazione. Per altre informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). In particolare, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
-Negli esempi di codice seguenti viene illustrato come spostarsi in alto e in basso nelle relazioni nei dataset tipizzati. Negli esempi di codice vengono utilizzati i metodi tipizzati <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e i FindBy*PrimaryKey* (`FindByCustomerID`) generati per individuare una riga desiderata e restituire i record correlati. Gli esempi vengono compilati ed eseguiti correttamente solo se si dispone di:
+Negli esempi di codice seguenti viene illustrato come spostarsi in alto e in basso nelle relazioni nei dataset tipizzati. Negli esempi di codice vengono usati i metodi tipizzati <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e i FindBy*PrimaryKey* (`FindByCustomerID`) generati per individuare una riga desiderata e restituire i record correlati. Gli esempi vengono compilati ed eseguiti correttamente solo se si dispone di:
 
 - Istanza di un set di dati denominata `NorthwindDataSet` con una tabella `Customers`.
 
 - Tabella `Orders`.
 
-- Una relazione denominata `FK_Orders_Customers`relating le due tabelle.
+- Una relazione denominata `FK_Orders_Customers`correlare le due tabelle.
 
 Inoltre, entrambe le tabelle devono essere riempite con i dati per i record da restituire.
 

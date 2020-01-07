@@ -3,17 +3,17 @@ title: 'Procedura: modificare i file XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645928"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592737"
 ---
 # <a name="how-to-edit-xml-files"></a>Procedura: modificare i file XML
 
@@ -36,7 +36,7 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Aggiungere un file XML esistente a un progetto
 
-1. Scegliere **Aggiungi elemento esistente**dal menu **progetto** .
+1. Dal menu **Progetto** selezionare**Add Existing Item**(Aggiungi elemento esistente).
 
    Verrà visualizzata la finestra di dialogo **Aggiungi elemento esistente** .
 
@@ -46,7 +46,7 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 1. Scegliere **nuovo**dal menu **file** .
 
-   Verrà visualizzata la finestra di dialogo **nuovo file** .
+   Verrà visualizzata la finestra di dialogo **Nuovo file** .
 
 2. Selezionare il **file XML** per creare un nuovo file XML. in alternativa, selezionare **file XSLT** per creare un nuovo foglio di stile XSLT.
 
@@ -56,7 +56,7 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 ::: moniker range="vs-2017"
 
-1. Scegliere **Nuovo** > **Progetto** dal menu **File**.
+1. Scegliere **nuovo** > **progetto**dal menu **file** .
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
@@ -68,7 +68,7 @@ Per modificare un file XML, fare doppio clic sul file che si desidera modificare
 
 ::: moniker range=">=vs-2019"
 
-1. Scegliere **Nuovo** > **Progetto** dal menu **File**.
+1. Scegliere **nuovo** > **progetto**dal menu **file** .
 
 2. Immettere **progetto vuoto** nella casella di ricerca del modello, selezionare il modello di **progetto vuoto (.NET Framework)** , quindi fare clic su **Avanti**.
 

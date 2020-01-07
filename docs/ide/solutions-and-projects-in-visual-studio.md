@@ -15,17 +15,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca611d7ae1faa86ae7878b2f824ce27b9872713
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621572"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590085"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -34,7 +34,7 @@ Questa pagina descrive il concetto di *progetto* e una *soluzione* in Visual Stu
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Progetti e soluzioni in Visual Studio per Mac](/visualstudio/mac/projects-and-solutions).
 
-## <a name="projects"></a>Progetti
+## <a name="projects"></a>Projects
 
 Quando si crea un'app o un sito Web in Visual Studio, si inizia con un *progetto*. In senso logico, un progetto contiene tutti i file compilati in un file eseguibile, in una libreria o in un sito Web. Tali file possono includere codice sorgente, icone, immagini, file di dati e così via. Un progetto contiene anche le impostazioni del compilatore e altri file di configurazione che potrebbero essere necessari per i vari servizi o componenti con cui il programma comunica.
 
@@ -42,7 +42,7 @@ Quando si crea un'app o un sito Web in Visual Studio, si inizia con un *progetto
 
 Visual Studio USA [MSBuild](../msbuild/msbuild.md) per compilare ogni progetto in una soluzione e ogni progetto contiene un file di progetto MSBuild. L'estensione di file riflette il tipo di progetto, ad esempio un C# progetto (con estensione csproj), un progetto di Visual Basic (vbproj) o un progetto di database (. dbproj). Il file di progetto è un documento XML contenente tutte le informazioni e le istruzioni necessarie a MSBuild per compilare il progetto, inclusi il contenuto, i requisiti della piattaforma, le informazioni sul controllo delle versioni, le impostazioni del server Web o del server di database e le attività per eseguire.
 
-I file di progetto sono basati sulla [XML schema MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Per esaminare il contenuto dei [file di progetto in stile SDK](../msbuild/how-to-use-project-sdk.md) più recenti in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **modifica \<projectname \>** . Per esaminare il contenuto di .NET Framework e di altri progetti dello stile, scaricare prima il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Scarica progetto**). Quindi, fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<projectname \>** .
+I file di progetto sono basati sulla [XML schema MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Per esaminare il contenuto dei [file di progetto in stile SDK](../msbuild/how-to-use-project-sdk.md) più recenti in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **modifica \<NomeProgetto\>** . Per esaminare il contenuto di .NET Framework e di altri progetti dello stile, scaricare prima il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Scarica progetto**). Quindi, fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<nomeprogetto\>** .
 
 > [!NOTE]
 > Non è necessario usare soluzioni o progetti in Visual Studio per modificare, compilare ed eseguire il debug del codice. È sufficiente aprire la cartella che contiene i file di origine in Visual Studio e iniziare ad apportare le modifiche. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -56,7 +56,7 @@ Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di fi
 |Estensione|Name|Descrizione|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
-|suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
+|suo|Opzioni utente della soluzione|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 

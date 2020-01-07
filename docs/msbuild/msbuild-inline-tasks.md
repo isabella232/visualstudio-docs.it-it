@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37597d1e1f4fde2b2e81e7aa7868c0aaff935337
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 4f5f19d756d669a7b3e9e5d32a89c598c7edc9d3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416848"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593655"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
-Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
+Le attività MSBuild vengono in genere create tramite la compilazione di una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
  A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. In questo modo è più semplice tenere traccia del codice sorgente e distribuire l'attività. Il codice sorgente è integrato nello script.
 
@@ -67,7 +67,7 @@ Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programma
 > [!NOTE]
 > Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.
 
-### <a name="code-element"></a>Elemento del codice
+### <a name="code-element"></a>Code - elemento
  L'ultimo elemento figlio visualizzato all'interno dell'elemento `Task` è l'elemento `Code`. L'elemento `Code` contiene o individua il codice che deve essere compilato in un'attività. Ciò che si inserisce nell'elemento `Code` dipende da come si vuole scrivere l'attività.
 
  L'attributo `Language` specifica il linguaggio di programmazione in cui è scritto il codice. I valori accettabili sono `cs` per C#, `vb` per Visual Basic.
@@ -141,7 +141,7 @@ Log.LogError("Hello, world!");
 
 - `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.
 
-Ad esempio,
+Ad esempio:
 
 ```xml
 <ParameterGroup>
@@ -159,7 +159,7 @@ definisce questi tre parametri:
 
 - `Tally` è un parametro di output del tipo System.Int32.
 
-Se l'elemento `Code` ha come attributo `Type` `Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
+Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.
 
 ## <a name="example"></a>Esempio
  L'attività inline seguente sostituisce ogni occorrenza di un token nel file specificato con il valore specificato.

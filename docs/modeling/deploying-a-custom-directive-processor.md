@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83edb231819a47c3c8a6f7a1943ae9086e06467d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a10252d8465373c8637681763e59511b1e2d621
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653890"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596671"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -52,9 +52,9 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
     1. Nell'editor del manifesto VSIX, nella scheda **Asset** , scegliere **nuovo** e impostare le proprietà del nuovo elemento:
 
-         **Tipo di contenuto**  = **VSPackage**
+         **Tipo di contenuto** = **VSPackage**
 
-         **Progetto di origine**  =  \<*progetto corrente* >
+         **Progetto di origine** = \<*progetto corrente*>
 
     2. Fare clic su **edizioni selezionate** e controllare i tipi di installazione in cui si desidera che il processore di direttiva sia utilizzabile.
 
@@ -66,11 +66,11 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
     2. Selezionarlo in Esplora soluzioni e impostarne le proprietà come segue:
 
-         **Azione di compilazione**  = **contenuto**
+         **Azione di compilazione** = **Contenuto**
 
-         **Copia nella directory di Output**  = **copia sempre**
+         **Copia nella directory di Output** = **copia sempre**
 
-         **Includi in VSIX**  = **true**
+         **Includi in VSIX** = **true**
 
     3. Impostare il nome del pacchetto VSIX e assicurarsi che l'ID sia univoco.
 
@@ -89,11 +89,11 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 5. Aggiungere i riferimenti seguenti al progetto:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. Interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. VSHost. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**
 
 6. Aggiungere la classe del processore di direttiva personalizzato al progetto.
 
@@ -124,7 +124,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 - Il metodo `IsDirectiveSupported` deve restituire `true` quando viene passato il nome di `CustomDirective`.
 
-- Se non è possibile visualizzare l'estensione in Gestione estensioni, ma il sistema non consentirà di installarlo, eliminare l'estensione da **%localappdata%\Microsoft\VisualStudio \\ \*.0 \ Extensions \\** .
+- Se non è possibile visualizzare l'estensione in Gestione estensioni, ma il sistema non consentirà di installarlo, eliminare l'estensione da **%localappdata%\Microsoft\VisualStudio\\\*. 0 \ Extensions\\** .
 
 - Aprire il file .vsix ed esaminarne il contenuto. Per aprirlo, impostare l'estensione del file su .zip. Verificare che contenga i file .dll, .pkgdef ed extension.vsixmanifest. Il file extension.vsixmanifest deve contenere l'elenco adatto nel nodo SupportedProducts e deve contenere anche un nodo Package VS sotto il nodo Contenuto:
 
@@ -164,7 +164,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
 2. In regedit passare a
 
-    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
     Se si desidera installare il processore di direttiva nella versione sperimentale di Visual Studio, inserire "EXP" dopo "11,0".
 
@@ -182,19 +182,19 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 
    Se il processore di direttiva personalizzato non è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Name|Digitare|Dati|
+|Name|Tipo di|Data|
 |-|-|-|
-|(Predefinito)|REG_SZ|(valore non impostato)|
-|Class|REG_SZ|**Nome \<Namespace >. Nome \<Class >**|
-|CodeBase|REG_SZ|**\<Your percorso > \\ < il nome dell'assembly \>**|
+|(predefinita)|REG_SZ|(valore non impostato)|
+|Classe|REG_SZ|**Nome dello spazio dei nomi \<>. Nome della classe\<**|
+|CodeBase|REG_SZ|**\<il percorso >\\< il nome dell'assembly\>**|
 
  Se l'assembly è presente nella GAC, le sottochiavi del Registro di sistema appariranno come indicato nella tabella seguente:
 
-|Name|Digitare|Dati|
+|Name|Tipo di|Data|
 |-|-|-|
-|(Predefinito)|REG_SZ|(valore non impostato)|
-|Class|REG_SZ|\<**il nome** completo della classe >|
-|Assembly|REG_SZ|\<**il nome dell'assembly nella GAC** >|
+|(predefinita)|REG_SZ|(valore non impostato)|
+|Classe|REG_SZ|\<**il nome** completo della classe>|
+|Assembly|REG_SZ|\<**il nome dell'assembly nella GAC**>|
 
 ## <a name="see-also"></a>Vedere anche
 

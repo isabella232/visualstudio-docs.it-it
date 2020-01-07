@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313956"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589981"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 

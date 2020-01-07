@@ -3,17 +3,17 @@ title: Come utilizzare i frammenti XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fcddb8553da39b035e649155e04c3da4b430e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: decc565eca9b7299761405e06c0cecf82f63319d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601790"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592607"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: utilizzare frammenti di codice XML
 
@@ -26,7 +26,7 @@ Dopo che il frammento XML è stato aggiunto all'editor, i campi modificabili nel
 Nelle procedure riportate di seguito viene descritto come accedere al comando **Inserisci frammento** .
 
 > [!NOTE]
-> Il comando **Inserisci frammento** di codice è disponibile anche tramite il tasto di scelta rapida (**CTRL** +**K**, quindi **CTRL** +**X**).
+> Il comando **Inserisci frammento** di codice è disponibile anche tramite il tasto di scelta rapida (**CTRL**+**K**, quindi **CTRL**+**X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Per inserire i frammenti dal menu di scelta rapida
 
@@ -52,7 +52,7 @@ Nelle procedure riportate di seguito viene descritto come accedere al comando **
 
 1. Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.
 
-2. Iniziare a digitare il frammento XML che si desidera aggiungere al file. Se il completamento automatico è attivato, viene visualizzato l'elenco Completa parola di IntelliSense. Se non viene visualizzato, premere **Ctrl** +**spazio** per attivarlo.
+2. Iniziare a digitare il frammento XML che si desidera aggiungere al file. Se il completamento automatico è attivato, viene visualizzato l'elenco Completa parola di IntelliSense. Se non viene visualizzato, premere **Ctrl**+**spazio** per attivarlo.
 
 3. Selezionare il frammento XML dall'elenco Completa parola.
 
@@ -76,7 +76,7 @@ Nelle procedure riportate di seguito viene descritto come accedere al comando **
 Nelle procedure seguenti viene descritto come accedere al comando **Racchiudi tra** .
 
 > [!NOTE]
-> Il comando **Racchiudi** tra è disponibile anche tramite il tasto di scelta rapida (**CTRL** +**K**, quindi **CTRL** +**S**).
+> Il comando **Racchiudi** tra è disponibile anche tramite il tasto di scelta rapida (**CTRL**+**K**, quindi **CTRL**+**S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Per usare Racchiudi tra dal menu di scelta rapida
 
@@ -102,7 +102,7 @@ Nelle procedure seguenti viene descritto come accedere al comando **Racchiudi tr
 
 Una volta scelto il frammento XML, il testo del frammento di codice viene inserito automaticamente nella posizione del cursore. I campi modificabili del frammento vengono evidenziati e il primo campo modificabile viene selezionato automaticamente. Il campo attualmente selezionato è di tipo boxed.
 
-Quando si seleziona un campo, è possibile digitare un nuovo valore per tale campo. Premere **Tab** per scorrere i campi modificabili del frammento; premendo **maiusc** +**Tab** scorre in ordine inverso. Se si fa clic su un campo il cursore viene posizionato all'interno del campo, se si fa doppio clic il campo viene selezionato. Quando un campo è evidenziato, potrebbe essere visualizzata la finestra con la descrizione del campo.
+Quando si seleziona un campo, è possibile digitare un nuovo valore per tale campo. Premere **Tab** per scorrere i campi modificabili del frammento; premendo **maiusc**+**Tab** scorre in ordine inverso. Se si fa clic su un campo il cursore viene posizionato all'interno del campo, se si fa doppio clic il campo viene selezionato. Quando un campo è evidenziato, potrebbe essere visualizzata la finestra con la descrizione del campo.
 
 È modificabile solo la prima istanza di un determinato campo. Quando il campo è evidenziato, le altre istanze del campo sono tratteggiate. Quando si modifica il valore di un campo modificabile, il campo viene modificato ovunque venga usato nel frammento.
 

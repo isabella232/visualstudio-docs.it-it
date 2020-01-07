@@ -2,17 +2,17 @@
 title: Gestire i test controller e gli agenti di test
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652918"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584413"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -36,7 +36,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
 
 1. Scegliere **Avvia** > **Test Agent Configuration Tool**.
 
-     Verrà visualizzata la finestra di dialogo **Configura Test Agent**.
+     Viene visualizzata la finestra di dialogo **Configura agente di test**.
 
     > [!NOTE]
     > È necessario che l'agente di test sia già installato affinché possa essere aggiunto a un controller di test. Per altre informazioni su come installare un agente di test, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
@@ -69,7 +69,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
         > [!NOTE]
         > Se si configura l'agente di test in modo che venga eseguito come processo interattivo con un utente diverso dall'utente attualmente attivo, è necessario riavviare il computer e accedere come utente corrente per poter avviare l'agente. Inoltre, le password Null non sono supportate per gli account utente. Per usare l'agente di raccolta di IntelliTrace o l'emulazione di rete, l'account utente deve essere un membro del gruppo Administrators.
 
-      3. Per accertarsi che un computer che dispone di un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accedi automaticamente**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
+      3. Per accertarsi che un computer che dispone di un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
 
       4. Per assicurarsi che lo screen saver sia disabilitato in quanto potrebbe interferire con i test automatizzati che devono interagire con il desktop, selezionare **Verifica che lo screen saver sia disabilitato**.
 

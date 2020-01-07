@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97352f60bfc40df28876731ec1e8aee1bff1773c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 6548b86f075e5da51bea7835c93e5604f2177397
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576274"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588772"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone
 
@@ -36,7 +36,7 @@ In questo passaggio verrà creato un set di simboli corrispondenti per il gioco.
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
       > [!IMPORTANT]
-      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo della lingua ![Programming per Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Usare il controllo linguaggio di programmazione nella parte superiore destra della pagina per visualizzare il C# frammento di codice o il frammento di codice Visual Basic.<br><br>controllo del linguaggio di programmazione ![per Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
       Se si usa C#, assicurarsi di inserire il codice dopo la parentesi graffa di apertura e subito dopo la dichiarazione di classe (`public partial class Form1 : Form`). Se si utilizza Visual Basic, inserire il codice subito dopo la dichiarazione di classe (`Public Class Form1`).
 
@@ -47,13 +47,13 @@ In questo passaggio verrà creato un set di simboli corrispondenti per il gioco.
     > [!NOTE]
     > La finestra di IntelliSense viene visualizzata solo quando si immette il codice manualmente. Se si utilizzano le operazioni di copia e incolla, il codice non verrà visualizzato.
 
-     Se si analizza il codice (e le note) in piccole sezioni, è più facile da comprendere. I programmi possono usare oggetti elenco per tenere traccia di molti diversi tipi di elementi. Un elenco può contenere numeri, valori true/false, testo o altri oggetti. È anche possibile avere un oggetto elenco che contiene altri oggetti elenco. Gli oggetti contenuti in un elenco sono detti elementi e ogni elenco contiene un solo tipo di elemento. Un elenco di numeri, ad esempio, può contenere solo numeri; non è possibile aggiungervi testo. In modo analogo, non è possibile aggiungere numeri a un elenco di valori true/false.
+     Se si analizza il codice (e le note) in piccole sezioni, è più facile da comprendere. I programmi possono usare oggetti elenco per tenere traccia di molti diversi tipi di elementi. Un elenco può contenere numeri, valori true/false, testo o altri oggetti. È anche possibile avere un oggetto elenco che contiene altri oggetti elenco. Gli oggetti contenuti in un elenco sono definiti elementi e ogni elenco contiene un solo tipo di elemento. Un elenco di numeri, ad esempio, può contenere solo numeri; non è possibile aggiungervi testo. In modo analogo, non è possibile aggiungere numeri a un elenco di valori true/false.
 
      Quando si crea un oggetto `List` utilizzando un'istruzione `new`, è necessario specificare il tipo di dati da archiviare al suo interno. Per questo la descrizione comando in cima alla finestra di **IntelliSense** visualizza i tipi di elementi nell'elenco. Questo è anche ciò che `List<string>` (in C#) e `List(Of String)` (in Visual Basic) significa che si tratta di un oggetto `List` che include gli elementi del tipo di dati `string`. Il programma usa le stringhe per archiviare il testo, vale a dire l'indicazione contenuta nella descrizione comandi a destra della finestra di **IntelliSense**.
 
 4. Prendere Visual Basic in considerazione il motivo per cui è necessario creare prima una matrice C#temporanea, ma in è possibile creare l'elenco con un'unica istruzione. Questo perché il C# linguaggio dispone di *inizializzatori di raccolta*, che preparano l'elenco in modo da accettare i valori. In Visual Basic è possibile utilizzare un inizializzatore di raccolta. Tuttavia, per motivi di compatibilità con la versione precedente di Visual Basic, si consiglia di utilizzare il codice precedente.
 
-     Quando si usa un inizializzatore di insieme con un'istruzione `new`, una volta creato il nuovo oggetto List, il programma vi inserisce i dati forniti tra parentesi graffe. In questo caso, si ottiene un elenco di icone con nomi in formato stringa e l'elenco sarà inizializzato in modo da contenere sedici stringhe. Ognuna di quelle stringhe è una singola lettera, e insieme corrispondono alle icone che saranno nelle etichette. Il gioco conterrà quindi una coppia di punti esclamativi, una coppia di lettere N maiuscole, una coppia di virgole e così via. Quando questi caratteri sono impostati sul tipo di carattere Webdings, verranno visualizzati come simboli, ad esempio un bus, una bicicletta, un ragno e così via. L'oggetto elenco includerà sedici stringhe, una per ogni cella nel pannello TableLayoutPanel.
+     Quando si usa un inizializzatore di insieme con un'istruzione `new`, una volta creato il nuovo oggetto List, il programma vi inserisce i dati forniti tra parentesi graffe. In questo caso, si ottiene un elenco di stringhe denominate icone e l'elenco sarà inizializzato in modo da contenere sedici stringhe. Ognuna di quelle stringhe è una singola lettera, e insieme corrispondono alle icone che saranno nelle etichette. Il gioco conterrà quindi una coppia di punti esclamativi, una coppia di lettere N maiuscole, una coppia di virgole e così via. Quando questi caratteri sono impostati sul tipo di carattere Webdings, verranno visualizzati come simboli, ad esempio un bus, una bicicletta, un ragno e così via. L'oggetto elenco includerà sedici stringhe, una per ogni cella nel pannello TableLayoutPanel.
 
     > [!NOTE]
     > In Visual Basic si ottiene lo stesso risultato, ma prima le stringhe vengono inserite in una matrice temporanea, che viene quindi convertita in un oggetto elenco. Una matrice è simile a un elenco, salvo ad esempio che le matrici vengono create con una dimensione fissa. Gli elenchi possono essere ridotti o ingranditi in base alle necessità, caratteristica importante in questo programma.

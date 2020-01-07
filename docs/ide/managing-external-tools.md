@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652396"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591294"
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
 
@@ -72,7 +72,7 @@ Di seguito è riportato un elenco completo di argomenti che possono essere usati
 |Testo corrente|$(CurText)|Testo selezionato.|
 |Percorso di destinazione|$(TargetPath)|Nome file completo dell'elemento da compilare (unità + percorso + nome file).|
 |Target Directory|$(TargetDir)|Directory dell'elemento da compilare.|
-|Target Name|$(TargetName)|Nome file dell'elemento da compilare.|
+|Nome di destinazione|$(TargetName)|Nome file dell'elemento da compilare.|
 |Estensione di destinazione|$(TargetExt)|Estensione di file dell'elemento da compilare.|
 |Directory binaria|$(BinDir)|Posizione finale del file binario in fase di compilazione (definita come unità + percorso).|
 |Directory del progetto|$(ProjectDir)|Directory del progetto corrente (unità + percorso).|

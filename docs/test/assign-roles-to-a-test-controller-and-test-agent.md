@@ -9,15 +9,15 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665296"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591190"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
@@ -25,7 +25,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 - Creare unit test o test codificati dell'interfaccia utente da eseguire con l'impostazione di test.
 
@@ -37,7 +37,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
-2. Nel riquadro **Modelli installati** fare clic su **Impostazioni test**.
+2. Nel riquadro **Modelli installati** scegliere **Impostazioni test**.
 
 3. Nella casella **Nome** digitare **TestSettingDistributedTestWalkthrough**.
 
@@ -45,11 +45,11 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
      Il nuovo file di test *TestSettingDistributedTestWalkthrough.testsettings* viene visualizzato nella cartella **Elementi di soluzione** in **Esplora soluzioni**.
 
-     Viene visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
+     Verrà visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
 
      È quindi possibile modificare e salvare i valori delle impostazioni di test.
 
-5. In **Nome** digitare il nome per le impostazioni test.
+5. In **Nome** digitare il nome per le impostazioni di test.
 
 6. In **Descrizione** digitare **Impostazioni test distribuito**.
 
@@ -59,7 +59,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 1. Scegliere **Ruoli**.
 
-     Viene visualizzata la pagina **Ruoli**.
+     Verrà visualizzata la pagina **Ruoli**.
 
 2. Per eseguire il test in modalità remota, usare l'elenco a discesa **Metodo di esecuzione dei test** e selezionare **Esecuzione remota**.
 
@@ -76,7 +76,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 1. Scegliere **Dati e diagnostica**.
 
-     Viene visualizzata la pagina **Dati e diagnostica**.
+     Verrà visualizzata la pagina **Dati e diagnostica**.
 
 2. In **Ruolo** verificare che il ruolo **Test distribuito** sia selezionato.
 

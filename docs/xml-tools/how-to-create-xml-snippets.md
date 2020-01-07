@@ -3,17 +3,17 @@ title: 'Procedura: creare frammenti XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645931"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592750"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
 
@@ -58,7 +58,7 @@ L'editor supporta due tipi di frammento di codice:
 
 Il tipo di `Expansion` determina se il frammento viene visualizzato quando si richiama il comando **Inserisci frammento** . Il tipo di `SurroundsWith` determina se il frammento viene visualizzato quando si richiama il comando **Racchiudi tra** .
 
-### <a name="code-element"></a>Elemento del codice
+### <a name="code-element"></a>Code - elemento
 
 L'elemento `Code` definisce il testo XML che verrà inserito quando viene richiamato il frammento di codice.
 

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 11b05a7993d2fcd6bc52b53edfde2e97a566574c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 4db5de36e9982ac3d708f8826f441751c2fd0891
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018822"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594071"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -38,7 +38,7 @@ Sono disponibili tre opzioni per l'installazione o aggiornamento dei certificati
 
 Quando si crea un layout di rete, i certificati necessari vengono scaricati nella cartella Certificates. È quindi possibile installare manualmente i certificati facendo doppio clic su ogni file di certificato e seguendo la procedura guidata del gestore di certificati. Se viene richiesto di immettere una password, lasciare il campo vuoto.
 
-**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive è possibile installare i certificati manualmente. A questo scopo, fare clic con il pulsante destro del mouse su ogni file di certificato, selezionare Installa certificato e quindi eseguire la procedura guidata Gestione certificati.
+**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, è possibile installare manualmente i certificati: fare clic su ognuno dei file di certificato con il pulsante destro del mouse, scegliere Installa certificato e quindi eseguire i vari passaggi della procedura guidata di Gestione certificati.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambient
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive creare il file batch con i comandi seguenti:
+   **Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, creare il file batch con i comandi seguenti:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -136,21 +136,21 @@ I tre file con estensione P12 in questa cartella contengono ognuno un certificat
 
 * **ManifestSignCertificates.p12** contiene:
   * Certificato intermedio: **Microsoft Code Signing PCA 2011**
-    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+    * Non obbligatorio Se presente, migliora le prestazioni in alcuni scenari.
   * Certificato radice: **Microsoft Root Certificate Authority 2011**
     * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
 * **ManifestCounterSignCertificates.p12** contiene:
   * Certificato intermedio: **Microsoft Time-Stamp PCA 2010**
-    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+    * Non obbligatorio Se presente, migliora le prestazioni in alcuni scenari.
   * Certificato radice: **Microsoft Root Certificate Authority 2010**
     * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
 * **Vs_installer_opc. SignCertificates.p12** contiene:
   * Certificato intermedio: **Microsoft Code Signing PCA**
     * Obbligatorio per tutti i sistemi. Si noti che i sistemi in tutti gli aggiornamenti sono stati applicati da Windows Update potrebbero non disporre di questo certificato.
   * Certificato radice: **Microsoft Root Certificate Authority**
-    * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
+    * Richiesto. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
 
-**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema. Questi certificati vengono archiviati in file con estensione cer anziché p12.
+**Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, il programma di installazione di Visual Studio richiede l'installazione solo dei certificati radice nel sistema. Questi certificati vengono archiviati in file con estensione cer anziché p12.
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ I tre file con estensione P12 in questa cartella contengono ognuno un certificat
     * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
 * **Vs_installer_opc.SignCertificates.cer** contiene:
   * Certificato radice: **Microsoft Root Certificate Authority**
-    * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
+    * Richiesto. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
 
 Il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema.
 
@@ -197,7 +197,7 @@ Un modo per eseguire questa verifica nel sistema di installazione corrisponde al
 
 Se i nomi dei certificati non sono presenti nelle colonne **Rilasciato a**, è necessario installare i certificati.  Se un certificato intermedio è presente solo nell'archivio dei certificati intermedi **Utente corrente**, è disponibile solo per l'utente connesso. Potrebbe essere necessario installarlo per altri utenti.
 
-## <a name="install-visual-studio"></a>Installazione di Visual Studio
+## <a name="install-visual-studio"></a>Installare Visual Studio
 
 Dopo aver installato i certificati, la distribuzione di Visual Studio può procedere seguendo le istruzioni dalla sezione [Distribuzione da un'installazione di rete](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) della pagina "Creare un'installazione di rete di Visual Studio".
 
@@ -205,7 +205,7 @@ Dopo aver installato i certificati, la distribuzione di Visual Studio può proce
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](install-visual-studio.md)
+* [Install Visual Studio](install-visual-studio.md) (Installare Visual Studio)
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

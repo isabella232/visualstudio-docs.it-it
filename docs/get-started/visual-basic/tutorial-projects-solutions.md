@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632566"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590215"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
 
@@ -51,9 +51,9 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 ::: moniker range="vs-2017"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+1. Nella barra dei menu scegliere **File** > **nuovo** **progetto**>.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -67,7 +67,7 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 ::: moniker range=">=vs-2019"
 
-1. Aprire Visual Studio.
+1. Apri Visual Studio.
 
 2. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
@@ -87,16 +87,16 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range="vs-2017"
 
-1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida della **soluzione ' QuickSolution '** in **Esplora soluzioni**scegliere **Aggiungi** > **nuovo progetto**.
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
-1. Nel riquadro sinistro espandere **Visual Basic** e scegliere **Desktop di Windows**. Nel riquadro centrale scegliere il modello **Progetto vuoto (.NET Framework)** . Assegnare al progetto il nome **QuickDate** e scegliere **OK**.
+1. Nel riquadro sinistro espandere **Visual Basic** e scegliere **Desktop di Windows**. Nel riquadro centrale scegliere il modello **Progetto vuoto (.NET Framework)**. Assegnare al progetto il nome **QuickDate** e scegliere **OK**.
 
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
-   > Se **Visual Basic** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il **carico di lavoro** *Sviluppo per desktop .NET* di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo facile per installare un nuovo carico di lavoro consiste nello scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo **Aggiungi nuovo progetto**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   > Se **Visual Basic** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il **carico di lavoro***Sviluppo per desktop .NET* di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo facile per installare un nuovo carico di lavoro consiste nello scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo **Aggiungi nuovo progetto**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
    >
    > ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer-vb.png)
 
@@ -104,7 +104,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
 
 ::: moniker range=">=vs-2019"
 
-1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida della **soluzione ' QuickSolution '** in **Esplora soluzioni**scegliere **Aggiungi** > **nuovo progetto**.
 
    Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
 
@@ -117,7 +117,7 @@ A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un pr
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
-   > Se non viene visualizzato il modello **Progetto vuoto (.NET Framework)** , è necessario installare il *carico di lavoro* **Sviluppo per desktop .NET** di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?** . Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   > Se non viene visualizzato il modello **Progetto vuoto (.NET Framework)**, è necessario installare il *carico di lavoro***Sviluppo per desktop .NET** di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
    >
    > ![Collegamento al programma di installazione in Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
 
@@ -157,11 +157,11 @@ Molto spesso le soluzioni contengono più di un progetto e spesso tali progetti 
 
 Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizierà con un modello di progetto, pertanto non sarà necessario inserire un file di codice aggiuntivo nel progetto.
 
-1. Nel menu di scelta rapida o nel menu a comparsa **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
 ::: moniker range="Vs-2017"
 
-2. Nel riquadro sinistro espandere **Visual Basic** e scegliere la categoria **Test**. Nel riquadro centrale scegliere il modello di progetto **Progetto unit test (.NET Framework)** . Assegnare al progetto il nome **QuickTest** e quindi scegliere **OK**.
+2. Nel riquadro sinistro espandere **Visual Basic** e scegliere la categoria **Test**. Nel riquadro centrale scegliere il modello di progetto **Progetto unit test (.NET Framework)**. Assegnare al progetto il nome **QuickTest** e quindi scegliere **OK**.
 
    Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.vb*.
 
@@ -251,7 +251,7 @@ Se si desidera esplorare ulteriormente Visual Studio, è consigliabile creare un
 ## <a name="see-also"></a>Vedere anche
 
 - [Creare soluzioni e progetti](../../ide/creating-solutions-and-projects.md)
-- [Gestione delle proprietà di progetti e soluzioni](../../ide/managing-project-and-solution-properties.md)
+- [Gestire le proprietà di progetti e soluzioni](../../ide/managing-project-and-solution-properties.md)
 - [Gestire i riferimenti in un progetto](../../ide/managing-references-in-a-project.md)
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Panoramica dell'IDE di Visual Studio](../../get-started/visual-studio-ide.md)
+- [Panoramica dell'ambiente IDE di Visual Studio](../../get-started/visual-studio-ide.md)

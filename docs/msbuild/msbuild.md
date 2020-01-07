@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf80e9df7910b0b581ae956978fb2020542ae96f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a489f9d42930dca88a6de69b8875a4406250f66e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747258"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595059"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] è una piattaforma per la compilazione di applicazioni. Questo motore, anche noto come MSBuild, fornisce un XML Schema per un file di progetto che controlla il modo in cui la piattaforma di compilazione elabora e compila il software. Visual Studio utilizza MSBuild, ma esso non dipende da Visual Studio. Richiamando *msbuild.exe* nel progetto o nel file della soluzione, è possibile orchestrare e compilare prodotti in ambienti in cui Visual Studio non è installato.
@@ -182,7 +182,7 @@ Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargetin
 | [Registrazione a MSBuild](../msbuild/logging-in-msbuild.md) | Descrive come registrare eventi, messaggi ed errori. |
 | [Risorse aggiuntive](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | Elenca risorse della community e di supporto che consentono di ottenere altre informazioni su MSBuild. |
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Riferimenti
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md) Collegamenti ad argomenti che contengono informazioni di riferimento.
 
 - [Glossario](msbuild-glossary.md) Definisce i termini comuni di MSBuild.

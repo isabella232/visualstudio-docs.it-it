@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba455730ddac9b2a02b8f0580711499d6a779f49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747529"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590228"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'&#39;architettura dell'app
 Per garantire che il sistema software o l'applicazione soddisfi le esigenze degli utenti, è possibile creare modelli in Visual Studio come parte della descrizione della struttura complessiva e del comportamento del sistema o dell'applicazione software. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.

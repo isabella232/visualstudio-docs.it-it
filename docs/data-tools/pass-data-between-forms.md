@@ -12,17 +12,17 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641442"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586367"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 
@@ -47,7 +47,7 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 - Passaggio dei dati da un form all'altro.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
@@ -67,7 +67,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 ## <a name="create-the-windows-forms-app-project"></a>Creare il progetto di app Windows Forms
 
-1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
+1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 

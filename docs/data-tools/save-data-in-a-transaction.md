@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641105"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586237"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare dati in una transazione
 
 In questa procedura dettagliata viene illustrato come salvare i dati in una transazione utilizzando lo spazio dei nomi <xref:System.Transactions>. In questa procedura dettagliata verrà creato un Windows Forms Application. Si utilizzerà la configurazione guidata origine dati per creare un set di dati per due tabelle nel database di esempio Northwind. Si aggiungono controlli con associazione a dati a un Windows Form e si modificherà il codice per il pulsante Salva di BindingNavigator per aggiornare il database all'interno di un TransactionScope.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
@@ -50,7 +50,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
 
-1. In Visual Studio scegliere **nuovo**  > **progetto**dal menu **file** .
+1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#**  o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
@@ -96,7 +96,7 @@ In questo passaggio viene utilizzata la **Configurazione guidata origine dati** 
 
 2. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.
 
-   Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+   Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Un oggetto [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
 3. Trascinare il nodo **Orders** correlato, non il nodo **Orders** principale, ma il nodo della tabella figlio correlato al di sotto della colonna **Fax** , nel form sotto **customersDataGridView**.
 
@@ -108,7 +108,7 @@ Le transazioni usano lo spazio dei nomi <xref:System.Transactions>. Un riferimen
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Per aggiungere un riferimento al file DLL System.Transactions.
 
-1. Scegliere **Aggiungi riferimento**dal menu **progetto** .
+1. Scegliere **Aggiungi riferimento** dal menu **Progetto**.
 
 2. Selezionare **System. Transactions** nella scheda **.NET** e quindi fare clic su **OK**.
 

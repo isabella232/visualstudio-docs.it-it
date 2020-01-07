@@ -18,17 +18,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416430"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596528"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
 
@@ -59,11 +59,11 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 1. In **Esplora soluzioni**  scegliere un progetto o aprire il progetto voluto.
 
-2. Nella barra dei menu scegliere **Compila** e quindi scegliere **Compila** *NomeProgetto* o **Ricompila** *NomeProgetto*.
+2. Sulla barra dei menu scegliere **Compila**, quindi scegliere **Compila** *NomeProgetto* o **ricompila** *NomeProgetto*.
 
-    - Scegliere **Compila**  *NomeProgetto* per compilare solo i componenti del progetto che sono stati modificati dopo la build più recente.
+    - Scegliere **Compila** *NomeProgetto* per compilare solo i componenti del progetto che sono stati modificati rispetto alla build più recente.
 
-    - Scegliere **Ricompila** *NomeProgetto* per "pulire" il progetto e quindi compilare i file e tutti i componenti del progetto.
+    - Scegliere **ricompila** *NomeProgetto* per "pulire" il progetto e quindi compilare i file di progetto e tutti i componenti del progetto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Per compilare il progetto di avvio e le relative dipendenze
 
@@ -87,13 +87,13 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 Scegliere un progetto di [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] e quindi nella barra dei menu scegliere **Compila** > **Solo progetto** e quindi uno dei comandi seguenti:
 
-- **Build Only** (Compila solo) *NomeProgetto*
+- **Solo compilazione** *NomeProgetto*
 
-- **Rebuild Only** (Ricompila solo) *NomeProgetto*
+- **Ricompila solo** *NomeProgetto*
 
-- **Clean Only** (Pulisci solo) *NomeProgetto*
+- **Pulisci solo** *NomeProgetto*
 
-- **Link Only** (Collega solo) *NomeProgetto*
+- **Solo link** *NomeProgetto*
 
 Questi comandi si applicano solo al progetto di [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] scelto. Non eseguono la compilazione, la ricompilazione, la pulizia o il collegamento di eventuali dipendenze del progetto o file di soluzione. A seconda della versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il sottomenu **Project Only** (Solo progetto) potrebbe contenere altri comandi.
 
@@ -117,7 +117,7 @@ Effettuare uno dei passaggi seguenti:
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilazione e creazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
-- [Procedura: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Procedura: Impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Riferimenti alla compilazione in C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
