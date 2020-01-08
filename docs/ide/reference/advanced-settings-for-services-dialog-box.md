@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0ce1eecbd9bcc9508f6fc884220a59eb428df0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652778"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585678"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Finestra di dialogo Impostazioni avanzate per i servizi
 I servizi delle applicazioni client offrono accesso semplificato a servizi di accesso, ruolo e profilo di [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] da applicazioni Windows Forms e Windows Presentation Foundation (WPF). Per configurare i servizi delle applicazioni client, è possibile usare la pagina **Servizi** in **Creazione progetti**. Per altre informazioni sulla pagina **Servizi**, vedere [Services Page, Project Designer](../../ide/reference/services-page-project-designer.md) (Pagina Servizi, Creazione progetti).
@@ -28,7 +28,7 @@ Per accedere alla finestra di dialogo **Impostazioni avanzate per i servizi**, s
 
 ## <a name="task-list"></a>Elenco attività
 
-- [Procedura: Configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Procedura: configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
@@ -40,10 +40,10 @@ Per accedere alla finestra di dialogo **Impostazioni avanzate per i servizi**, s
 
 Il provider di ruoli accede ai valori del ruolo memorizzati nella cache o al servizio dei ruoli quando si chiama il metodo <xref:System.Web.Security.RolePrincipal.IsInRole%2A>. Per cancellare la cache a livello di codice e forzare l'accesso di questo metodo al servizio remoto, chiamare il metodo <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A>.
 
- **Usa stringa di connessione personalizzata** Specifica se i provider di servizi client useranno un archivio dati personalizzato per la cache locale. Per impostazione predefinita, i provider di servizi useranno il file system locale per la cache. Se si seleziona questa opzione, la casella di testo sarà automaticamente popolata con una stringa di connessione predefinita. È possibile mantenere la stringa di connessione predefinita per generare automaticamente e usare un database SQL Server Compact Edition oppure è possibile specificare una stringa di connessione a un database SQL Server esistente. Per altre informazioni, vedere [Procedura: Configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Per impostazione predefinita, questa opzione è deselezionata.
+ **Usa stringa di connessione personalizzata** Specifica se i provider di servizi client useranno un archivio dati personalizzato per la cache locale. Per impostazione predefinita, i provider di servizi useranno il file system locale per la cache. Se si seleziona questa opzione, la casella di testo sarà automaticamente popolata con una stringa di connessione predefinita. È possibile mantenere la stringa di connessione predefinita per generare automaticamente e usare un database SQL Server Compact Edition oppure è possibile specificare una stringa di connessione a un database SQL Server esistente. Per altre informazioni, vedere [How to: Configure Client Application Services](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Per impostazione predefinita, questa opzione è deselezionata.
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Servizi applicazioni client](/dotnet/framework/common-client-technologies/client-application-services)
 - [Pagina Servizi, Creazione progetti](../../ide/reference/services-page-project-designer.md)
-- [Procedura: Configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Procedura: configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

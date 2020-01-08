@@ -13,17 +13,17 @@ helpviewer_keywords:
 - SGen task [MSBuild]
 - MSBuild, SGen task
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887636"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595124"
 ---
 # <a name="sgen-task"></a>SGen (attività)
 Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specificato. Questa attività esegue il wrapping dello strumento per la generazione di serializzatori XML *Sgen.exe*. Per altre informazioni, vedere [Strumento per la generazione di serializzatori XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
@@ -45,14 +45,14 @@ Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specif
 | `SerializationAssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il nome dell'assembly di serializzazione generato. |
 | `ShouldGenerateSerializer` | Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, l'attività SGen deve generare un assembly di serializzazione. |
 | `Timeout` | Parametro `Int32` facoltativo.<br /><br /> Specifica la quantità di tempo, in millisecondi, dopo i quali l'eseguibile dell'attività viene terminato. Il valore predefinito è `Int.MaxValue`, con cui si indica che non esiste alcun periodo di timeout. |
-| `ToolPath` | Parametro `String` facoltativo.<br /><br /> Specifica la posizione da cui l'attività caricherà il file eseguibile sottostante (*sgen.exe*). Se questo parametro non è specificato, viene usato il percorso di installazione SDK corrispondente alla versione del framework che esegue [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| `ToolPath` | Parametro `String` facoltativo.<br /><br /> Specifica la posizione da cui l'attività caricherà il file eseguibile sottostante (*sgen.exe*). Se questo parametro viene omesso, l'attività usa il percorso di installazione SDK corrispondente alla versione del framework che esegue [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 | `Types` | Parametro `String[]` facoltativo.<br /><br /> Ottiene o imposta un elenco di tipi specifici per cui generare il codice di serializzazione. L'attività SGen genererà il codice di serializzazione solo per questi tipi. |
 | `UseProxyTypes` | Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, l'attività SGen genera il codice di serializzazione solo per i tipi proxy del servizio Web XML. |
 
 ## <a name="remarks"></a>Note
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

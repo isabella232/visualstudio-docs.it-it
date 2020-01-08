@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655714"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567645"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> generale
 
@@ -28,11 +28,11 @@ Le opzioni seguenti sono disponibili nella pagina **Generale**.
 
 ## <a name="always-show-error-list-if-build-finishes-with-errors"></a>Mostra sempre Elenco errori se la compilazione termina con errori
 
-Apre la finestra **Elenco errori** al completamento della compilazione, ma solo se la compilazione di un progetto non è riuscita. Vengono visualizzati gli errori che si sono verificati durante il processo di compilazione. Quando questa opzione è deselezionata, gli errori si verificano ugualmente, ma la finestra non verrà aperta una volta completata la compilazione. Questa opzione è attivata per impostazione predefinita.
+Apre la finestra **Elenco errori** al completamento della compilazione, ma solo se la compilazione di un progetto non è riuscita. Vengono visualizzati gli errori che si sono verificati durante il processo di compilazione. Quando questa opzione è deselezionata, gli errori si verificano ugualmente, ma la finestra non verrà aperta una volta completata la compilazione. Per impostazione predefinita, questa casella di controllo è selezionata.
 
 ## <a name="track-active-item-in-solution-explorer"></a>Tieni traccia degli elementi attivi in Esplora soluzioni
 
-Se selezionata, **Esplora soluzioni** viene aperto automaticamente e l'elemento attivo viene selezionato. L'elemento selezionato cambia quando si lavora con diversi file in un progetto o soluzione oppure componenti diversi in una finestra di progettazione. Quando questa opzione è deselezionata, la selezione in **Esplora soluzioni** non viene modificata automaticamente. Questa opzione è attivata per impostazione predefinita.
+Se selezionata, **Esplora soluzioni** viene aperto automaticamente e l'elemento attivo viene selezionato. L'elemento selezionato cambia quando si lavora con diversi file in un progetto o soluzione oppure componenti diversi in una finestra di progettazione. Quando questa opzione è deselezionata, la selezione in **Esplora soluzioni** non viene modificata automaticamente. Per impostazione predefinita, questa casella di controllo è selezionata.
 
 ## <a name="show-advanced-build-configurations"></a>Mostra configurazioni di generazione avanzate
 

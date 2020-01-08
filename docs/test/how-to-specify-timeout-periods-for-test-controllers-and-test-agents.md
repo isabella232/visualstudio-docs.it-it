@@ -8,15 +8,15 @@ helpviewer_keywords:
 - controllers, configuring
 - controllers, timeouts
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4e82261b9b36ced471dfa3e93be085e22c4d64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653328"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594760"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedura: Specificare i periodi di timeout per controller e agenti di test
 
@@ -28,7 +28,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 - Controller di test: *QTController.exe.config*
 
-    |Nome della chiave|Descrizione|Value|
+    |Nome chiave|Descrizione|Valore|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Numero di secondi di attesa per la richiesta di ping dell'agente prima che la connessione venga considerata persa.|"n" secondi.|
     |AgentSyncTimeoutInSeconds|Quando si avvia l'esecuzione di un test di sincronizzazione, il numero di secondi di attesa per la sincronizzazione di tutti gli agenti prima di interrompere l'esecuzione.|"n" secondi.|
@@ -37,7 +37,7 @@ Per modificare le varie impostazioni del timeout di un agente di test o controll
 
 - Agente di test: *QTAgentService.exe.config*
 
-    |Nome della chiave|Descrizione|Value|
+    |Nome chiave|Descrizione|Valore|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Numero di secondi tra tentativi di connessione al controller.|"n" secondi. Predefinito: "30" (trenta secondi).|
     |RemotingTimeoutSeconds|Tempo massimo che una chiamata remota può durare in secondi.|"n" secondi. Predefinito: "600" (dieci minuti).|

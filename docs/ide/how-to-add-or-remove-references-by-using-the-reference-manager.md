@@ -16,21 +16,21 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654816"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595310"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
-È possibile usare la finestra di dialogo Gestione riferimenti per aggiungere e gestire riferimenti a componenti sviluppati da sviluppatori, da Microsoft o da altre società. Se si sviluppa un’app Universal Windows, il progetto fa riferimento automaticamente a tutte le DLL SDK Windows corrette. Se si sviluppa un'applicazione .NET, il progetto fa automaticamente riferimento a *mscorlib.dll*. Alcune API .NET vengono esposte nei componenti che è necessario aggiungere manualmente. I riferimenti ai componenti COM o ai componenti personalizzati devono essere aggiunti manualmente.
+È possibile utilizzare la finestra di dialogo Gestione riferimenti per aggiungere e gestire riferimenti a componenti sviluppati personalmente, da Microsoft o da un'altra società. Se si sviluppa un’app Universal Windows, il progetto fa riferimento automaticamente a tutte le DLL SDK Windows corrette. Se si sviluppa un'applicazione .NET, il progetto fa automaticamente riferimento a *mscorlib.dll*. Alcune API .NET vengono esposte nei componenti che è necessario aggiungere manualmente. I riferimenti ai componenti COM o ai componenti personalizzati devono essere aggiunti manualmente.
 
 ## <a name="reference-manager-dialog-box"></a>Finestra di dialogo Gestione riferimenti
 

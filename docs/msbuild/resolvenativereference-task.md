@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, ResolveNativeReference task
 - ResolveNativeReference task [MSBuild]
 ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f18549fece2db8a4a758dee17f6b4b1283d97e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 417c4536f13aa90505ec5e69b2719219af0d7e81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996623"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595163"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (attività)
 Risolve i riferimenti nativi. Implementa la classe <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Questa classe supporta l'infrastruttura .NET Framework, che non può essere usata direttamente dal codice.
@@ -31,7 +31,7 @@ Risolve i riferimenti nativi. Implementa la classe <xref:Microsoft.Build.Tasks.R
 ## <a name="task-parameters"></a>Parametri dell'attività
  Nella tabella che segue vengono descritti i parametri dell'attività `ResolveNativeReference` .
 
-|Parametro|Description|
+|Parametro|Descrizione|
 |---------------|-----------------|
 |`AdditionalSearchPaths`|Parametro <xref:System.String?displayProperty=fullName>`[]` obbligatorio.<br /><br /> Ottiene o imposta i percorsi di ricerca per la risoluzione di identità di assembly di riferimenti nativi.|
 |`ContainedComComponents`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i componenti COM dell'assembly nativo.|
@@ -42,9 +42,9 @@ Risolve i riferimenti nativi. Implementa la classe <xref:Microsoft.Build.Tasks.R
 |`ContainingReferenceFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene o imposta i file di riferimento.|
 |`NativeReferences`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Ottiene o imposta i riferimenti all'assembly nativo Win32.|
 
-## <a name="remarks"></a>Osservazioni
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Note
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Attività](../msbuild/msbuild-tasks.md)
-- [Riferimenti delle attività MSBuild](../msbuild/msbuild-task-reference.md)
+- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)

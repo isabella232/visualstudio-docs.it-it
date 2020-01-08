@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446564"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75576056"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedura: Escludere file dalla compilazione
 In un file di progetto è possibile usare caratteri jolly per includere tutti i file in una sola directory o in un set annidato di directory come input per una compilazione. Potrebbe tuttavia essere presente un file nella directory o una directory in un set annidato di directory che non si vuole includere come input per una compilazione. È possibile escludere in modo esplicito tale file o directory dall'elenco di input. In un progetto potrebbe anche essere presente un file che si vuole includere solo in determinate condizioni. È possibile dichiarare in modo esplicito le condizioni in cui un file viene incluso in una compilazione.

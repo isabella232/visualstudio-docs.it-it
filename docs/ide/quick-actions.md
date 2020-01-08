@@ -2,20 +2,20 @@
 title: Azioni rapide, lampadine e cacciavite
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666760"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596957"
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -50,7 +50,7 @@ Le azioni rapide possono essere applicate usando le icone a forma di lampadina !
 
 ## <a name="icons"></a>Icone
 
-L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. L'icona a forma di *cacciavite* ![icona cacciavite](media/screwdriver-icon.png) indica semplicemente che sono disponibili azioni per la modifica del codice, ma l'utente può scegliere di non usarle. L'icona a forma di *lampadina gialla* ![icona lampadina](media/light-bulb-icon.png) indica che sono disponibili azioni che si *devono* eseguire per migliorare il codice. L'icona a forma di *lampadina che indica un errore* ![icona lampadina di errore](media/error-light-bulb-icon.png) suggerisce che è disponibile un'azione che corregge un errore nel codice.
+L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di correzione o refactoring disponibile. Il *cacciavite* ![icona del cacciavite](media/screwdriver-icon.png) icona indica solo che sono disponibili azioni per modificare il codice, ma non è necessario utilizzarle necessariamente. La *lampadina gialla* ![icona a bulbo chiaro](media/light-bulb-icon.png) icona indica che sono disponibili azioni che è *necessario* eseguire per migliorare il codice. Icona a *bulbo di luce* di errore ![icona della lampadina](media/error-light-bulb-icon.png) icona indica che è disponibile un'azione che corregge un errore nel codice.
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Per visualizzare una lampadina o un cacciavite
 

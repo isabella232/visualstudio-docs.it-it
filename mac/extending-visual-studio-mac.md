@@ -3,15 +3,15 @@ title: Estensione di Visual Studio per Mac
 description: Le funzioni e funzionalità di Visual Studio per Mac possono essere estese con moduli chiamati pacchetti di estensione. La prima parte di questa guida permette di creare un semplice pacchetto di estensione per Visual Studio per Mac per inserire la data e l'ora in un documento. La seconda parte della guida presenta le nozioni di base relative al sistema dei pacchetti di estensione e alcune delle principali API che costituiscono la base di Visual Studio per Mac.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/07/2019
+ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 76f8f4945542d1b2fd4dce230d750db4c965af76
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: dcfbee59abeea9b6575470ef313a5ead5b03f9a9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74983262"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398095"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -72,7 +72,7 @@ Le estensioni comando vengono definite aggiungendo voci al punto di estensione `
 
  ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
-  <command id="DateInserter.DateInserterCommands.InsertDate"
+  <Command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
             _description="Insert the current date"
             defaulthandler="DateInserter.InsertDateHandler" />
@@ -92,7 +92,7 @@ Nel frammento di codice seguente è illustrata un'estensione CommandItem che si 
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
-  <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
+  <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
 ```
 

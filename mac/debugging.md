@@ -1,29 +1,31 @@
 ---
-title: Debug con Xamarin
+title: Debug con Visual Studio per Mac
 description: Il debug è una parte comune e necessaria della programmazione. In quanto IDE completo, Visual Studio per Mac contiene un intero gruppo di funzionalità per semplificare il debug. Dal debug sicuro alla visualizzazione dei dati, questo articolo descrive come sfruttare tutte le potenzialità del debug in Visual Studio per Mac.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716972"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397994"
 ---
-# <a name="debugging-with-xamarin"></a>Debug con Xamarin
+# <a name="debugging-with-visual-studio-for-mac"></a>Debug con Visual Studio per Mac
 
-Visual Studio per Mac ha un debugger nativo che offre supporto per il debug per applicazioni Xamarin.iOS, Xamarin.Mac e Xamarin.Android.
+Visual Studio per Mac dispone di debugger con supporto per le applicazioni .NET Core, .NET Framework, Unity e Novell.
 
 Visual Studio per Mac usa il [*debugger Mono Soft*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), implementato nel runtime di Mono, per eseguire il debug di codice gestito in tutte le piattaforme.
 
 ## <a name="the-debugger"></a>Debugger
 
-Visual Studio per Mac usa il debugger Mono Soft per eseguire il debug di codice gestito (C# r F#) in tutte le applicazioni Xamarin. Il debugger Mono Soft è diverso dai normali debugger in quanto è un debugger cooperativo integrato nel runtime di Mono. Il codice generato e il runtime di Mono cooperano con l'IDE per fornire l'esperienza di debug. Il runtime di Mono espone la funzionalità di debug tramite un protocollo di rete, su cui è possibile leggere altre informazioni nella [documentazione di Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio per Mac usa il debugger Mono Soft per eseguire il debug di codice gestito (C# r F#) in tutte le applicazioni Xamarin. Il debugger mono Soft è diverso dai normali debugger perché si tratta di un debugger cooperativo incorporato nel runtime di mono. il codice generato e il runtime di mono cooperano con l'IDE per fornire un'esperienza di debug. Il runtime di Mono espone la funzionalità di debug tramite un protocollo di rete, su cui è possibile leggere altre informazioni nella [documentazione di Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 I debugger di tipo hard, come [LLDB]( http://lldb.llvm.org/index.html) o [GDB]( https://www.gnu.org/software/gdb/), controllano un programma in modo invisibile e senza la cooperazione del programma stesso, ma possono essere utili per il debug di applicazioni Xamarin quando è necessario eseguire il debug di codice iOS o Android nativo.
+
+Per le applicazioni .NET Core e ASP.NET Core, Visual Studio per Mac usa il debugger di .NET Core. Questo debugger è anche un debugger cooperativo e funziona con il Runtime .NET.
 
 ## <a name="using-the-debugger"></a>Uso del debugger
 
@@ -43,9 +45,10 @@ Per impostare un punto di interruzione nell'IDE, fare clic sull'area del margine
 
 ## <a name="start-debugging"></a>Avvia debug
 
-Per avviare il debug, selezionare il dispositivo di destinazione o l'emulatore o un altro strumento simile nell'IDE:
+Per avviare il debug, selezionare il browser di destinazione, il dispositivo o il simulatore o l'emulatore:
 
-![Selezionare il dispositivo di destinazione](media/debugging-image1.png)
+![](media/debugging-image_0.png)
+di configurazione di debug ![selezionare il dispositivo di destinazione](media/debugging-image1.png)
 
 Distribuire quindi l'applicazione premendo il pulsante **Esegui** o **Comando+INVIO**. Quando si raggiunge un punto di interruzione, il codice viene evidenziato in giallo:
 
@@ -90,9 +93,9 @@ I prodotti Xamarin vengono forniti con il codice sorgente per le librerie di cla
 
 Poiché questa funzionalità usa più memoria durante il debug, è disattivata per impostazione predefinita.
 
-Per abilitare questa funzionalità, passare a **Visual Studio per Mac > Preferenze > Debugger** e assicurarsi che l'opzione **Esegui solo il debug del codice del progetto senza eseguire l'istruzione nel codice del framework**. sia **deselezionata**, come mostrato di seguito:
+Per abilitare questa funzionalità, passare a **Visual Studio per Mac > preferenze > debugger** e verificare che sia **selezionata**l'opzione "**Esegui codice esterno**", come illustrato di seguito:
 
-![Opzione Esegui solo il debug del codice del progetto senza eseguire l'istruzione nel codice del framework](media/debugging-image8.png)
+![Opzione istruzione codice esterno](media/debugging-image8.png)
 
 ## <a name="see-also"></a>Vedere anche
 

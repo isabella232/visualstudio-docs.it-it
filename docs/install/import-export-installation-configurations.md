@@ -11,19 +11,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: HT
+ms.openlocfilehash: dddd34c9d57497a011f58bdb643c670ed84f6ded
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849029"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596853"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importare o esportare configurazioni di installazione
 
@@ -70,7 +70,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 ## <a name="automatically-install-missing-components"></a>Installare automaticamente i componenti mancanti
 
-**Novità di Visual Studio 2019**: quando si salva un file con estensione vsconfig nella directory radice di una soluzione e quindi si apre la soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
+**Novità di Visual studio 2019**: quando si salva un file con estensione vsconfig nella directory radice della soluzione e quindi si apre una soluzione, Visual Studio rileva automaticamente i componenti mancanti e richiede di installarli.
 
 ![Esplora soluzioni suggerisce componenti aggiuntivi](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +78,7 @@ Quando si è pronti per importare un file di configurazione dell'installazione, 
 
 1. Fare clic con il pulsante destro del mouse sul file della soluzione.
 
-1. Scegliere **Aggiungi** > **File di configurazione dell'installazione**.
+1. Scegliere **aggiungi** > **file di configurazione dell'installazione**.
 
 1. Verificare il percorso in cui si salvare il file con estensione vconfig e quindi scegliere **Esamina dettagli**.
 

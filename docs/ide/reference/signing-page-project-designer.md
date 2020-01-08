@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4fa326d65606fd06d41fc5c697b80a526c1059
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461282"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597334"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 
@@ -41,7 +41,7 @@ Per accedere alla pagina **Firma**, selezionare un nodo di progetto in **Esplora
 
 Casella di controllo **Firma i manifesti ClickOnce**
 
-Selezionare questa casella di controllo per firmare i manifesti dell'applicazione e di distribuzione con una coppia di chiavi pubblica/privata. Per altre informazioni su come eseguire questa operazione, vedere [Procedura: Firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md).
+Selezionare questa casella di controllo per firmare i manifesti dell'applicazione e di distribuzione con una coppia di chiavi pubblica/privata. Per altre informazioni su questa operazione, vedere [Procedura: firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
 Pulsante **Seleziona dall'archivio**
 
@@ -73,9 +73,9 @@ Specifica l'indirizzo di un server che genera il timestamp della firma. Quando s
 
 Casella di controllo **Firma assembly**
 
-Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: Firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
-Questa opzione usa lo strumento Al.exe fornito da Windows Software Development Kit (SDK) per firmare l'assembly. Per altre informazioni su Al.exe, vedere [Procedura: Firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Questa opzione usa lo strumento Al.exe fornito da Windows Software Development Kit (SDK) per firmare l'assembly. Per altre informazioni su Al.exe, vedere [Procedura: firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
 Elenco **Scegliere un file di chiave con nome sicuro**
 
@@ -103,6 +103,6 @@ Si tenga presente che un progetto con firma ritardata non può essere eseguito e
 - [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)
 - [Gestione delle firme di assembly e manifesti](../../ide/managing-assembly-and-manifest-signing.md)
 - [Procedura: Firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [Procedura: Firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Procedura: Firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)

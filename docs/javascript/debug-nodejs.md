@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777933"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678974"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "74777933"
 ## <a name="debug-client-side-script"></a>Debug di script lato client
 
 ::: moniker range=">=vs-2019"
-Visual Studio fornisce il supporto per il debug lato client solo per Chrome e Microsoft Edge (cromo). In alcuni scenari il debugger raggiunge automaticamente i punti di interruzione nel codice JavaScript e TypeScript e negli script incorporati nei file HTML. Per il debug di script lato client nelle app ASP.NET, vedere il post di Blog [debug di JavaScript in Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) e questo [post per Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+Visual Studio fornisce il supporto per il debug lato client solo per Chrome e Microsoft Edge (cromo). In alcuni scenari il debugger raggiunge automaticamente i punti di interruzione nel codice JavaScript e TypeScript e negli script incorporati nei file HTML. Per il debug di script lato client nelle app ASP.NET, vedere il post di Blog [debug di JavaScript in Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) e questo [post per Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome). Per il debug di TypeScript in ASP.NET Core, vedere anche [creare un'app ASP.NET Core con typescript](tutorial-aspnet-with-typescript.md).
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio fornisce il supporto per il debug lato client solo per Chrome e per Internet Explorer. In alcuni scenari il debugger raggiunge automaticamente i punti di interruzione nel codice JavaScript e TypeScript e negli script incorporati nei file HTML. Per il debug di script lato client nelle app ASP.NET, vedere il post di Blog relativo al [debug lato client dei progetti ASP.NET in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
@@ -128,7 +128,7 @@ Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione
 
 4. Nella finestra di dialogo **Connetti a processo** ottenere un elenco filtrato di istanze del browser a cui è possibile connettersi.
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare il Risultati della ricerca.
+    In Visual Studio 2019 scegliere il debugger corretto per il browser di destinazione, **JavaScript (Chrome)** o **JavaScript (Microsoft Edge-Chromium)** nel campo **Connetti a** , digitare **Chrome** o **Edge** nella casella filtro per filtrare i risultati della ricerca.
     ::: moniker-end
     ::: moniker range="vs-2017"
     In Visual Studio 2017 scegliere **codice Webkit** nel campo **Connetti a** , digitare **Chrome** nella casella filtro per filtrare i risultati della ricerca.
@@ -187,7 +187,7 @@ Visual Studio è in grado di usare e generare mapping di origine su file di orig
 
 Per configurare le impostazioni avanzate per i mapping di origine, usare un file *tsconfig.json* o le impostazioni progetto in un progetto TypeScript, ma non entrambi.
 
-Per abilitare il debug con Visual Studio, è necessario assicurarsi che i riferimenti al file di origine nella mappa di origine generata siano corretti. questa operazione potrebbe richiedere dei test. Se ad esempio si usa Webpack, i riferimenti nel file di mappa di origine includono il prefisso *Webpack:///* , che impedisce a Visual Studio di trovare un file di origine TYPESCRIPT o JSX. In particolare, quando si corregge questa operazione a scopo di debug, il riferimento al file di origine (ad esempio, *app. TSX*) deve essere modificato da un elemento come *Webpack:///./app.TSX* a un elemento simile a *./app.TSX*, che consente il debug (il il percorso è relativo al file di origine. Nell'esempio seguente viene illustrato come è possibile configurare le mappe di origine in Webpack, uno dei bundleri più comuni, in modo che funzionino con Visual Studio.
+Per abilitare il debug con Visual Studio, è necessario assicurarsi che i riferimenti al file di origine nella mappa di origine generata siano corretti. questa operazione potrebbe richiedere dei test. Se ad esempio si usa Webpack, i riferimenti nel file di mappa di origine includono il prefisso *Webpack:///* , che impedisce a Visual Studio di trovare un file di origine TYPESCRIPT o JSX. In particolare, quando si corregge questa operazione a scopo di debug, il riferimento al file di origine (ad esempio, *app. TSX*) deve essere modificato da un elemento come *Webpack:///./app.TSX* a un elemento simile a *./app.TSX*, che consente il debug (il percorso è relativo al file di origine). Nell'esempio seguente viene illustrato come è possibile configurare le mappe di origine in Webpack, uno dei bundleri più comuni, in modo che funzionino con Visual Studio.
 
 (Solo Webpack) Se si imposta il punto di interruzione in un TypeScript di file JSX (anziché in un file JavaScript transpiled), è necessario aggiornare la configurazione di Webpack. Ad esempio, in *Webpack-config. js*potrebbe essere necessario sostituire il codice seguente:
 

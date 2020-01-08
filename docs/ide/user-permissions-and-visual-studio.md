@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.openlocfilehash: d00bc1912991992a2aeb966680c7777c47df0549
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647341"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565227"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorizzazioni utente e Visual Studio
 
@@ -30,7 +30,7 @@ Un account utente normale consente di possibile eseguire quasi tutte le funzioni
 
 |Area|Attività|Per altre informazioni|
 |----------|----------| - |
-|Installazione|Installare Visual Studio.|[Install Visual Studio](../install/install-visual-studio.md) (Installare Visual Studio)|
+|Installazione di|Installare Visual Studio.|[Install Visual Studio](../install/install-visual-studio.md) (Installare Visual Studio)|
 ||Installare, aggiornare o rimuovere contenuto della Guida locale.|[Installare e gestire il contenuto della Guida locale](../help-viewer/install-manage-local-content.md)|
 |Casella degli strumenti|Aggiungere controlli COM classici alla **casella degli strumenti**.|[Casella degli strumenti](../ide/reference/toolbox.md)|
 |Compilazione|Usare eventi di post-compilazione che registrano un componente.|[Informazioni sulle istruzioni di compilazione personalizzate e sugli eventi di compilazione](/cpp/build/understanding-custom-build-steps-and-build-events)|
@@ -55,7 +55,7 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 1. Aprire il menu **Start** e scorrere fino Visual Studio 2017.
 
-1. Dal menu di scelta rapida o contestuale di **Visual Studio 2017** scegliere **Altro** > **Esegui come amministratore**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida di **Visual Studio 2017**selezionare **altro** > **Esegui come amministratore**.
 
    All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 
@@ -65,7 +65,7 @@ Se è necessario eseguire Visual Studio come amministratore, seguire questa proc
 
 1. Aprire il menu **Start** e scorrere fino Visual Studio 2019.
 
-1. Dal menu di scelta rapida o contestuale di **Visual Studio 2019** scegliere **Altro** > **Esegui come amministratore**.
+1. Dal menu di scelta rapida o dal menu di scelta rapida di **Visual Studio 2019**selezionare **altro** > **Esegui come amministratore**.
 
    All'avvio di Visual Studio, viene visualizzato **(Amministratore)** dopo il nome del prodotto nella barra del titolo.
 

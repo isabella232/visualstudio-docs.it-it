@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Option Compare statement, setting in the IDE
 - Option Strict statement, setting in the IDE
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e260bc6d290729ae470ca906e9ab5c3d219112
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f33dd9b19297811597be406337d70392904e6e44
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748559"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596384"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Impostazioni predefinite di Visual Basic, Progetti, finestra di dialogo Opzioni
 Specifica le impostazioni predefinite per le opzioni dei progetti Visual Basic. Alla creazione di un nuovo progetto, le istruzioni specificate per le opzioni verranno aggiunte all'intestazione del progetto nell'editor di codice. Le opzioni si applicano a tutti i progetti Visual Basic.

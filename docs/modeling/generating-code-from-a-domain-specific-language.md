@@ -2,17 +2,17 @@
 title: Generazione di codice da un linguaggio specifico di dominio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5000b8b6150fe630959f4cc4bbc58617e98d4a3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662026"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596580"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Generazione di codice da un linguaggio specifico di dominio
 
@@ -34,23 +34,23 @@ I modelli di testo sono essenziali per [!INCLUDE[dsl](../modeling/includes/dsl_m
 
 In questa sezione vengono illustrati alcuni modi per creare, modificare ed eseguire il debug dei modelli di testo utilizzati in [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 
-[Accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md) \
+[Accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md)\
 Fornisce informazioni di base sul riferimento a un linguaggio specifico di dominio nei modelli di testo.
 
-[Procedura dettagliata: debug di un modello di testo che accede a un modello](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md) \
+[Procedura dettagliata: debug di un modello di testo che accede a un modello](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
 Viene descritto come eseguire la risoluzione dei problemi e il debug in un modello di testo che fa riferimento a un linguaggio specifico di dominio.
 
-[Procedura dettagliata: connessione di un host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md) \
+[Procedura dettagliata: connessione di un host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)\
 Viene descritto come connettere un host personalizzato a un processore di direttiva generato.
 
-[Comando DslTextTransform](../modeling/the-dsltexttransform-command.md) \
+[Comando DslTextTransform](../modeling/the-dsltexttransform-command.md)\
 Descrive il file di comando che esegue l'eseguibile TextTransform nella riga di comando per i modelli di testo che fanno riferimento a linguaggi specifici del dominio.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Riferimenti
 
-[Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md) \
+[Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)\
 Fornisce la sintassi delle direttive e dei blocchi di controllo del modello di testo.
 
 ## <a name="related-sections"></a>Sezioni correlate
@@ -58,5 +58,5 @@ Fornisce la sintassi delle direttive e dei blocchi di controllo del modello di t
 [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 Viene illustrato il processo di trasformazione del modello di testo.
 
-[Generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md) \
+[Generazione di codice in un processo di compilazione](../modeling/code-generation-in-a-build-process.md)\
 Leggere questo argomento se si generano file da un linguaggio DSL in un server di compilazione.
