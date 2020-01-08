@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648230"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586289"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -96,14 +96,14 @@ La chiamata del metodo <xref:System.Data.DataSet.Merge%2A> con `preserveChanges 
 
 Per apportare modifiche a una riga di dati esistente, aggiungere o aggiornare i dati nelle singole colonne. Se il set di dati contiene vincoli, ad esempio chiavi esterne o vincoli non nullable, è possibile che il record possa essere temporaneamente in uno stato di errore durante l'aggiornamento. In altre termini, può trovarsi in uno stato di errore dopo aver completato l'aggiornamento di una colonna, ma prima di raggiungere quella successiva.
 
-Per evitare violazioni dei vincoli prematuri, è possibile sospendere temporaneamente i vincoli di aggiornamento. Questa operazione ha due scopi:
+Per evitare violazioni dei vincoli prematuri, è possibile sospendere temporaneamente i vincoli di aggiornamento. Tale differenza viene usata per due scopi:
 
 - Evita che venga generato un errore dopo aver completato l'aggiornamento di una colonna, ma non aver iniziato ad aggiornarne un altro.
 
 - Impedisce la generazione di determinati eventi di aggiornamento (eventi spesso utilizzati per la convalida).
 
 > [!NOTE]
-> In Windows Forms, l'architettura data binding incorporata nel DataGrid sospende il controllo dei vincoli fino a quando lo stato attivo viene spostato fuori da una riga e non è necessario chiamare in modo esplicito i metodi <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> o <xref:System.Data.DataRow.CancelEdit%2A>.
+> In Windows Forms, l'architettura data binding incorporata nel DataGrid sospende il controllo dei vincoli fino a quando lo stato attivo viene spostato fuori da una riga e non è necessario chiamare in modo esplicito i metodi <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>o <xref:System.Data.DataRow.CancelEdit%2A>.
 
 I vincoli vengono disabilitati automaticamente quando viene richiamato il metodo <xref:System.Data.DataSet.Merge%2A> su un set di dati. Al termine dell'Unione, se nel set di dati sono presenti vincoli che non possono essere abilitati, viene generata un'<xref:System.Data.ConstraintException>. In questa situazione, la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> è impostata su `false,` e tutte le violazioni dei vincoli devono essere risolte prima di reimpostare la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> su `true`.
 
@@ -129,9 +129,9 @@ Nella tabella seguente vengono illustrati i valori possibili dell'enumerazione <
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La riga è stata aggiunta come elemento a un <xref:System.Data.DataRowCollection>. Una riga in questo stato non ha una versione originale corrispondente perché non esisteva al momento della chiamata dell'ultimo <xref:System.Data.DataRow.AcceptChanges%2A> metodo).|
 |<xref:System.Data.DataRowState.Deleted>|La riga è stata eliminata utilizzando la <xref:System.Data.DataRow.Delete%2A> di un oggetto <xref:System.Data.DataRow>.|
-|<xref:System.Data.DataRowState.Detached>|La riga è stata creata ma non fa parte di alcun <xref:System.Data.DataRowCollection>. Un oggetto <xref:System.Data.DataRow> si trova in questo stato subito dopo che è stato creato, prima che sia stato aggiunto a una raccolta e dopo che è stato rimosso da una raccolta.|
+|<xref:System.Data.DataRowState.Detached>|La riga è stata creata ma non fa parte di alcun insieme <xref:System.Data.DataRowCollection>. Un oggetto <xref:System.Data.DataRow> si trova in questo stato subito dopo che è stato creato, prima che sia stato aggiunto a una raccolta e dopo che è stato rimosso da una raccolta.|
 |<xref:System.Data.DataRowState.Modified>|Un valore di colonna nella riga è stato modificato in qualche modo.|
-|<xref:System.Data.DataRowState.Unchanged>|La riga non è stata modificata dall'ultima chiamata a <xref:System.Data.DataRow.AcceptChanges%2A>.|
+|<xref:System.Data.DataRowState.Unchanged>|La riga non è stata modificata dal momento dell'ultima chiamata del metodo <xref:System.Data.DataRow.AcceptChanges%2A>.|
 
 ### <a name="datarowversion-enumeration"></a>DataRowVersion (enumerazione)
 
@@ -211,7 +211,7 @@ Nella tabella seguente vengono descritte le modifiche di cui viene eseguito il c
 
 Un metodo correlato, <xref:System.Data.DataSet.RejectChanges%2A>, Annulla l'effetto delle modifiche copiando di nuovo la versione di <xref:System.Data.DataRowVersion.Original> nella versione <xref:System.Data.DataRowVersion.Current> dei record. Imposta anche il <xref:System.Data.DataRow.RowState%2A> di ogni record su <xref:System.Data.DataRowState.Unchanged>.
 
-## <a name="data-validation"></a>Convalida dei dati
+## <a name="data-validation"></a>Convalida dati
 
 Per verificare che i dati nell'applicazione soddisfino i requisiti dei processi a cui viene passato, è spesso necessario aggiungere la convalida. Questo potrebbe comportare la verifica della correttezza di una voce utente in un modulo, la convalida dei dati inviati all'applicazione da un'altra applicazione o anche il controllo delle informazioni calcolate all'interno del componente entro i vincoli dell'origine dati e requisiti dell'applicazione.
 
@@ -259,7 +259,7 @@ Per la seconda riga, tuttavia, il metodo `Update` richiama automaticamente il co
    > [!NOTE]
    > Se la proprietà `UpdateCommand` del TableAdapter è stata impostata sul nome di un stored procedure, l'adapter non costruisce un'istruzione SQL. Richiama invece il stored procedure con i parametri appropriati passati.
 
-## <a name="pass-parameters"></a>Parametri pass
+## <a name="pass-parameters"></a>Passare parametri
 
 In genere si usano i parametri per passare i valori per i record che verranno aggiornati nel database. Quando il metodo `Update` del TableAdapter esegue un'istruzione UPDATE, deve inserire i valori dei parametri. Ottiene questi valori dalla raccolta di `Parameters` per il comando dati appropriato, in questo caso l'oggetto `UpdateCommand` nell'oggetto TableAdapter.
 
@@ -278,5 +278,5 @@ In un'istruzione UPDATE è necessario specificare sia i nuovi valori (quelli che
 - [Creare e configurare oggetti TableAdapter](create-and-configure-tableadapters.md)
 - [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Convalida dati](validate-data-in-datasets.md)
+- [Convalidare i dati](validate-data-in-datasets.md)
 - [Procedura: Aggiungere, modificare ed eliminare entità (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3222a7bdf8e843a915d0ed0fb72f58ff4a89dca0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e35c279f397f1228c17fb6a41a18a2fe583ab88
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654005"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589734"
 ---
 # <a name="customize-t4-text-transformation"></a>Personalizzare la trasformazione del testo T4
 
 I modelli di testo sono una funzionalità di Visual Studio che consente di generare codice programma o altri file di testo tramite un processo di trasformazione. Utilizzando [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], è possibile estendere il processo di trasformazione del modello predefinito personalizzando il processore di direttiva del modello di testo o l'host del modello di testo.
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>In questa sezione
 
  [Processo di trasformazione del modello di testo](../modeling/the-text-template-transformation-process.md) Viene descritto il funzionamento della trasformazione testo e viene illustrato il ruolo dell'host modello e dei processori di direttiva.
 
@@ -33,6 +33,6 @@ I modelli di testo sono una funzionalità di Visual Studio che consente di gener
 
  Se si scrive un'estensione di Visual Studio, è consigliabile utilizzare il servizio di trasformazione del testo esistente anziché scrivere un proprio host. Per altre informazioni, vedere [richiamo della trasformazione del testo in un'estensione di Visual](../modeling/invoking-text-transformation-in-a-vs-extension.md)Studio.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Riferimenti
 
 - [Scrivere un modello di testo T4](../modeling/writing-a-t4-text-template.md) fornisce la sintassi delle direttive e dei blocchi di controllo del modello di testo.

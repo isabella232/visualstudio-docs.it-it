@@ -10,17 +10,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ee422ec549ced0995db22258edf9ef21540804
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660303"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595371"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 
@@ -53,9 +53,9 @@ L'uso di un modello nell'applicazione rende più semplice la visualizzazione del
 
 ### <a name="to-create-a-run-time-text-template"></a>Per creare un modello di testo in fase di esecuzione
 
-1. In Esplora soluzioni scegliere **aggiungi**  > **nuovo elemento**dal menu di scelta rapida del progetto.
+1. In Esplora soluzioni scegliere **aggiungi** > **nuovo elemento**dal menu di scelta rapida del progetto.
 
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo runtime**. In Visual Basic esaminare **gli elementi comuni**  > **generale**).
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo runtime**. In Visual Basic esaminare **gli elementi comuni** > **generale**).
 
 3. Digitare un nome per il file modello.
 
@@ -80,7 +80,7 @@ Un modo efficace per creare un modello consiste nel convertire un esempio esiste
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Per convertire un file di testo esistente in un modello in fase di esecuzione
 
-1. Includere il file nel progetto di Visual Studio. In Esplora soluzioni scegliere **aggiungi**  > **elemento esistente**dal menu di scelta rapida del progetto.
+1. Includere il file nel progetto di Visual Studio. In Esplora soluzioni scegliere **aggiungi** > **elemento esistente**dal menu di scelta rapida del progetto.
 
 2. Impostare la proprietà **strumenti personalizzati** del file su **TextTemplatingFilePreprocessor**. In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del file.
 
@@ -107,7 +107,7 @@ Il parametro Language dipenderà dalla lingua del progetto.
 
 ### <a name="plain-content"></a>Contenuto normale
 
-Modificare il file con **estensione TT** in modo che contenga il testo che si desidera venga generato dall'applicazione. Esempio:
+Modificare il file con **estensione TT** in modo che contenga il testo che si desidera venga generato dall'applicazione. Ad esempio:
 
 ```html
 <html><body>
@@ -119,7 +119,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>Codice programma incorporato
 
-È possibile inserire il codice programma tra `<#` e `#>`. Esempio:
+È possibile inserire il codice programma tra `<#` e `#>`. Ad esempio:
 
 ```csharp
 <table>

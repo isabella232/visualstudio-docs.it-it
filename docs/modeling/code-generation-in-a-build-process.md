@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654203"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590553"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Richiama trasformazione testo nel processo di compilazione
 
@@ -51,7 +51,7 @@ Se [il server di compilazione](/azure/devops/pipelines/agents/agents) è in esec
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
 
 > [!TIP]
-> Se si ottiene un `MissingMethodException` per un metodo Microsoft. CodeAnalysis quando si eseguono destinazioni di compilazione TextTemplating in un server di compilazione, assicurarsi che gli assembly Roslyn si trovino in una directory denominata *Roslyn* che si trova nella stessa directory del file eseguibile di compilazione, ad esempio  *MSBuild. exe*).
+> Se si ottiene un `MissingMethodException` per un metodo Microsoft. CodeAnalysis quando si eseguono destinazioni di compilazione TextTemplating in un server di compilazione, assicurarsi che gli assembly Roslyn si trovino in una directory denominata *Roslyn* che si trova nella stessa directory del file eseguibile di compilazione, ad esempio *MSBuild. exe*.
 
 ## <a name="edit-the-project-file"></a>Modificare il file di progetto
 
@@ -198,7 +198,7 @@ Se si specifica un nome di file di output, avrà la precedenza sull'estensione s
 </ItemGroup>
 ```
 
-Non è consigliabile specificare un OutputFileName o OutputFilePath se si trasformano i modelli all'interno di Visual Studio usando **Transform All** o eseguendo il generatore di file singolo. Si otterrà un percorso di file diverso a seconda della modalità di attivazione della trasformazione. Questa operazione può generare confusione.
+Non è consigliabile specificare un OutputFileName o OutputFilePath se si trasformano i modelli all'interno di Visual Studio usando **Transform All** o eseguendo il generatore di file singolo. Si otterrà un percorso di file diverso a seconda della modalità di attivazione della trasformazione. Questa operazione può risultare poco chiara.
 
 ## <a name="add-reference-and-include-paths"></a>Aggiungere riferimenti e percorsi di inclusione
 

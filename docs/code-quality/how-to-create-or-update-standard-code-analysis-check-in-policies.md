@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649469"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587537"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -39,7 +39,7 @@ Dopo aver specificato i criteri di archiviazione per il codice gestito, i membri
 
 1. Nella finestra di dialogo **controllo del codice sorgente** selezionare la scheda **criteri di archiviazione** .
 
-1. Effettuare una delle operazioni riportate di seguito:
+1. Effettuare una delle seguenti operazioni:
 
     - Fare clic su **Aggiungi** per creare nuovi criteri di archiviazione.
 
@@ -61,7 +61,7 @@ Dall'elenco **Esegui questo set di regole** , usare uno dei metodi seguenti:
 
 - Selezionare un set di regole standard Microsoft.
 
-- Selezionare un set di regole personalizzate facendo clic sul **set di regole \<Selezionare dal controllo del codice sorgente... >** . Digitare quindi il percorso del controllo della versione del set di regole nel browser del controllo del codice sorgente. La sintassi di un percorso di controllo della versione è la seguente:
+- Selezionare un set di regole personalizzate facendo clic **\<Seleziona set di regole dal controllo del codice sorgente... >** . Digitare quindi il percorso del controllo della versione del set di regole nel browser del controllo del codice sorgente. La sintassi di un percorso di controllo della versione è la seguente:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ Per ulteriori informazioni su come creare e implementare un set di regole dei cr
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Creare e usare criteri di archiviazione dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Implementare i criteri di archiviazione dell'analisi codice personalizzati per codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

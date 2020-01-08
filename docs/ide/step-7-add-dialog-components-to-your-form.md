@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ba7fd495d3ab3bdfd53752cb20d6a45d10892
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118906"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589955"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo
 
-Per consentire all'app di aprire i file di immagine e scegliere un colore di sfondo, in questo passaggio si <xref:System.Windows.Forms.OpenFileDialog> aggiunge un componente <xref:System.Windows.Forms.ColorDialog> e un componente al form.
+Per consentire all'app di aprire i file di immagine e scegliere un colore di sfondo, in questo passaggio si aggiunge un componente <xref:System.Windows.Forms.OpenFileDialog> e un componente <xref:System.Windows.Forms.ColorDialog> al form.
 
 Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella degli strumenti** per aggiungere un componente al modulo e si impostano le relative proprietà usando la finestra **Proprietà**. A differenza di un controllo, tuttavia, l'aggiunta di un componente al form non aggiunge un elemento visibile da parte dell'utente sul form. Vengono invece forniti determinati comportamenti che è possibile attivare tramite codice. L'apertura della finestra di dialogo **Apri file** viene eseguita da un componente.
 
@@ -28,11 +28,11 @@ Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella d
 1. Scegliere il **Progettazione Windows Form** (**Form1.cs [Progettazione]** ), quindi aprire il gruppo **finestre di dialogo** nella **casella degli strumenti**.
 
     > [!NOTE]
-    > Il gruppo **Finestre di dialogo** nella **casella degli strumenti** ha componenti che aprono molte finestre di dialogo utili che possono essere usate per l'apertura e il salvataggio di file, l'esplorazione di cartelle e la scelta di tipi di carattere e colori. In questo progetto si usano due componenti di finestra di dialogo: OpenFileDialog e ColorDialog.
+    > Il gruppo **Finestre di dialogo** nella **casella degli strumenti** ha componenti che aprono molte finestre di dialogo utili che possono essere usate per l'apertura e il salvataggio di file, l'esplorazione di cartelle e la scelta di tipi di carattere e colori. In questo progetto si utilizzano due componenti di finestra di dialogo: OpenFileDialog e ColorDialog.
 
-1. Per aggiungere un componente denominato **openFileDialog1** al form, fare doppio clic su **OpenFileDialog**. Per aggiungere un componente denominato **colorDialog1** al modulo, fare doppio clic su **ColorDialog** nella **casella degli strumenti**. Si utilizzerà tale componente nell'esercitazione successiva. Verrà visualizzata un'area nella parte inferiore di **Progettazione Windows Form** (sotto il modulo **Visualizzatore immagini** ) che dispone di un'icona per ognuno dei due componenti della finestra di dialogo aggiunti, come illustrato nella figura seguente.
+1. Per aggiungere un componente denominato **openFileDialog1** al form, fare doppio clic su **OpenFileDialog**. Per aggiungere un componente denominato **colorDialog1** al modulo, fare doppio clic su **ColorDialog** nella **casella degli strumenti**. Che verrà usato nel passaggio successivo dell'esercitazione. Verrà visualizzata un'area nella parte inferiore di **Progettazione Windows Form** (sotto il modulo **Visualizzatore immagini** ) che dispone di un'icona per ognuno dei due componenti della finestra di dialogo aggiunti, come illustrato nella figura seguente.
 
-     ![Componenti della finestra di dialogo](../ide/media/express_dialogsadded.png)<br>***Finestra di dialogo*** *componenti* di
+     ![componenti della finestra di dialogo](../ide/media/express_dialogsadded.png)<br>*Componenti* della finestra di dialogo
 
 1. Scegliere l'icona **openFileDialog1** nell'area nella parte inferiore di **Progettazione Windows Form**. Impostare due proprietà:
 
@@ -51,11 +51,11 @@ Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella d
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 8: Scrivere il codice per il gestore](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** dell'evento del pulsante Mostra immagine.
+* Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 8: scrivere il codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** .
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 6: Assegnare un nome ai pulsanti](../ide/step-6-name-your-button-controls.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
-* [Esercitazione 3: Creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
+* [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

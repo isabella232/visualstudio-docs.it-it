@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647789"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590878"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Aggiungere il supporto di altri linguaggi all'editor di Visual Studio
 
@@ -37,9 +37,9 @@ Attualmente Visual Studio supporta le funzioni di colorazione della sintassi e d
 
 |||||||
 |-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
+|Bat|F#|Java|Markdown|Rust|Visual Basic -|
 |Clojure|Vai|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
+|CMake|Groovy|JSON|Perl|ShellScript|Visual C++ -|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|V|Swift|XML|
 |Docker|Jade|Marca|Ruby|TypeScript|YAML|
@@ -54,7 +54,7 @@ Oltre alla colorazione della sintassi e al completamento delle istruzioni di bas
 
 - JavaScript
 
-- Visual Basic
+- Visual Basic -
 
 - Vai
 
@@ -76,7 +76,7 @@ In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla 
 
 |Nome cartella|Descrizione|
 |-----------------|-----------------|
-|\\ *\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, *\Matlab*.|
+|\\ *\<nome linguaggio>*|Cartella del linguaggio. Sostituire *\<nome linguaggio>* con il nome del linguaggio, ad esempio, *\Matlab*.|
 |*\Syntaxes*|Cartella della grammatica. Contiene i file della grammatica con estensione *json* per il linguaggio, ad esempio *Matlab.json*.|
 |*\Snippets*|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|
 

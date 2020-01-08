@@ -5,21 +5,21 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650906"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588603"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
-Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i metodi pubblici devono essere scritti in lettere maiuscole o che i metodi asincroni devono terminare con "Async". È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'**Elenco errori** o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
+Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i membri pubblici devono essere in lettere maiuscole o che i campi privati devono iniziare con `_`. È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'**Elenco errori** o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
 
 Per ogni convenzione di denominazione, è necessario specificare i simboli a cui viene applicata, uno stile di denominazione e un livello di gravità per l'applicazione della convenzione, usando le proprietà descritte di seguito. L'ordine delle proprietà non è importante.
 
@@ -42,17 +42,17 @@ Per descrivere il tipo di simboli a cui applicare la regola di denominazione, sp
 L'elenco seguente riporta i valori consentiti ed è possibile specificare più valori separandoli con una virgola.
 
 - \* (usare questo valore per specificare tutti i simboli)
-- namespace
+- Spazio dei nomi
 - classe
 - struct
-- interfaccia
+- Interfaccia
 - enum
-- Proprietà
-- metodo
+- property
+- method
 - campo
 - event
-- delegato
-- parametro
+- delegate
+- Parametro
 - type_parameter
 - locali
 - local_function
@@ -69,7 +69,7 @@ L'elenco seguente riporta i valori consentiti ed è possibile specificare più v
 - public
 - internal o friend
 - private
-- protected
+- protetto
 - protected\_internal o protected_friend
 - private\_protected
 - locali
@@ -155,7 +155,7 @@ I valori consentiti per questa proprietà sono:
 > [!NOTE]
 > Nell'ambito dello stile di denominazione è necessario specificare uno stile per le lettere maiuscole e minuscole. In caso contrario, lo stile di denominazione potrebbe essere ignorato.
 
-## <a name="severity"></a>Gravità
+## <a name="severity"></a>Severity
 
 Per descrivere la gravità di una violazione della regola di denominazione, specificare una proprietà nel formato seguente:
 
@@ -163,13 +163,13 @@ Per descrivere la gravità di una violazione della regola di denominazione, spec
 
 Nella tabella seguente sono riportati i valori consentiti per la gravità, con il relativo significato:
 
-Gravità | Effetto
+Severity | Effetto
 ------------ | -------------
-none | La regola viene eliminata completamente.
+nessuno | La regola viene eliminata completamente.
 refactoring o silent | Se questo stile non viene rispettato, non viene visualizzato alcun avviso all'utente, ma il codice generato automaticamente segue comunque questo stile.
 suggestion | Se questo stile non viene rispettato, viene visualizzato un suggerimento per l'utente, indicato dai primi due caratteri sottolineati con dei puntini. Non ha alcun effetto in fase di compilazione.
 warning | Se questo stile non viene rispettato, viene visualizzato un avviso del compilatore nell'**Elenco errori**.
-errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
+Errore | Se questo stile non viene rispettato, viene visualizzato un errore del compilatore nell'**Elenco errori**.
 
 > [!NOTE]
 > Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'**Elenco errori** o come suggerimento.

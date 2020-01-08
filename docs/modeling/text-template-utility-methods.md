@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606013"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591762"
 ---
 # <a name="text-template-utility-methods"></a>Metodi di utilità per i modelli di testo
 
@@ -119,7 +119,7 @@ La proprietà `this.Host` può fornire l'accesso alle proprietà esposte dall'ho
 
 `<#@template ... hostspecific="true" #>`
 
-Il tipo di `this.Host` dipende dal tipo di host in cui è in esecuzione il modello. In un modello in esecuzione in Visual Studio, è possibile eseguire il cast `this.Host` `IServiceProvider` per accedere ai servizi, ad esempio l'IDE. Esempio:
+Il tipo di `this.Host` dipende dal tipo di host in cui è in esecuzione il modello. In un modello in esecuzione in Visual Studio, è possibile eseguire il cast `this.Host` `IServiceProvider` per accedere ai servizi, ad esempio l'IDE. Ad esempio:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -128,7 +128,7 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>Uso di un set diverso di metodi di utilità
 
-Come parte del processo di generazione del testo, il file modello viene trasformato in una classe, che è sempre denominata `GeneratedTextTransformation`and eredita da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Se invece si vuole usare un diverso set di metodi, è possibile scrivere una classe personalizzata e specificarla nella direttiva template. La classe deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Come parte del processo di generazione del testo, il file modello viene trasformato in una classe, sempre denominata `GeneratedTextTransformation`ed eredita da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Se invece si vuole usare un diverso set di metodi, è possibile scrivere una classe personalizzata e specificarla nella direttiva template. La classe deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 ```
 <#@ template inherits="MyUtilityClass" #>

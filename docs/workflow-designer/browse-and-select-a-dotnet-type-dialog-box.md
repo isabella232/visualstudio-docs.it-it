@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189807"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597113"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 
-Nella finestra **Proprietà** , finestre di dialogo o finestre di progettazione, ad esempio la finestra di progettazione variabili, quando si seleziona **Cerca tipi** da un elenco di tipi di dati, è la finestra di dialogo **Cerca e seleziona un tipo .NET** (a cui si fa riferimento in un formato abbreviato come "tipo" browser "). In questa finestra di dialogo è possibile scegliere un tipo dalla visualizzazione albero di assembly e progetti.
+Nella finestra **Proprietà** , nelle finestre di dialogo o nelle finestre di progettazione, ad esempio la finestra di progettazione variabili, quando si seleziona **Cerca tipi** da un elenco di tipi di dati, è la finestra di dialogo **Cerca e seleziona un tipo .NET** (a cui si fa riferimento in formato abbreviato come "browser dei tipi"). In questa finestra di dialogo è possibile scegliere un tipo dalla visualizzazione albero di assembly e progetti.
 
 È possibile usare questa finestra di dialogo in numerosi scenari utente, ad esempio:
 
@@ -39,7 +39,7 @@ Nella finestra **Proprietà** , finestre di dialogo o finestre di progettazione,
 
 1. Nella casella **nome tipo** immettere il nome del tipo che si desidera utilizzare.
 
-2. Effettuare una delle operazioni riportate di seguito:
+2. Effettuare una delle seguenti operazioni:
 
     - Una volta visualizzato il nome del tipo che si desidera utilizzare nell'albero nella casella **nome tipo** , fare doppio clic sul tipo per selezionarlo.
 
@@ -63,7 +63,7 @@ I tipi del browser dei tipi possono essere filtrati in base agli sviluppatori di
 
 L'elenco dei tipi nella casella **nome tipo** diventa più breve quando si digitano altri caratteri per trovare una corrispondenza. Solo i tipi il cui nome FullyQualified inizia con la stringa digitata o i tipi il cui nome breve inizia con la stringa digitata vengono visualizzati nell'elenco filtrato.
 
-Esempio:
+Ad esempio:
 
 1. L' **operazione** di digitazione corrisponde <xref:System.OperationCanceledException> ma non <xref:System.InvalidOperationException>. Per trovare la corrispondenza con <xref:System.InvalidOperationException>, cominciare a digitare System.I o Invalid.
 

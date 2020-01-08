@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654208"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594409"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gestire le estensioni per Visual Studio
 
@@ -57,7 +57,7 @@ Per installare le estensioni in Visual Studio:
 
 1. In **Strumenti** > **Estensioni e aggiornamenti** trovare l'estensione che si vuole installare. Se si conosce il nome o parte del nome dell'estensione, è possibile eseguire la ricerca nella finestra di **ricerca** .
 
-2. Selezionare **download**.
+2. Selezionare **Download**.
 
    L'estensione viene pianificata per essere installata. L'estensione verrà installata dopo la chiusura di tutte le istanze di Visual Studio.
 
@@ -65,7 +65,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Installare senza usare la finestra di dialogo Estensioni e aggiornamenti
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **strumenti**  > **estensioni e aggiornamenti** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **strumenti** > **estensioni e aggiornamenti** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
 > - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo estensioni e aggiornamenti non consente di abilitare o disabilitare le estensioni basate su MSI.
@@ -81,7 +81,7 @@ Per installare le estensioni in Visual Studio:
 
 1. In **Estensioni** > **Gestisci estensioni** trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**).
 
-2. Selezionare **download**.
+2. Selezionare **Download**.
 
    L'estensione viene pianificata per essere installata. L'estensione verrà installata dopo la chiusura di tutte le istanze di Visual Studio.
 
@@ -89,7 +89,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installare senza usare la finestra di dialogo Gestisci estensioni
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **estensioni**  > **Gestisci estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra di dialogo **estensioni** > **Gestisci estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
 > - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo Gestisci estensioni non può abilitare o disabilitare le estensioni basate su MSI.
@@ -106,13 +106,13 @@ Se si desidera interrompere l'utilizzo di un'estensione, è possibile disabilita
 
 ## <a name="per-user-and-administrative-extensions"></a>Estensioni amministrative e per utente
 
-La maggior parte delle estensioni è configurata per utente e viene installata nella cartella *%LocalAppData%\Microsoft\VisualStudio \\ < Visual Studio version \> \extensions \\* . Alcune estensioni sono di tipo amministrativo e vengono installate nel percorso *\<Cartella di installazione di Visual Studio>\Common7\IDE\Extensions\\* .
+La maggior parte delle estensioni è configurata per utente e viene installata nella cartella *%LocalAppData%\Microsoft\VisualStudio\\< Visual Studio version\>\Extensions\\* . Alcune estensioni sono di tipo amministrativo e vengono installate nel percorso *\<Cartella di installazione di Visual Studio>\Common7\IDE\Extensions\\* .
 
 Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni elevate.
 
 Per limitare il caricamento delle estensioni per utente:
 
-1. Aprire la pagina Opzioni estensioni (**strumenti**  > **opzioni**  > **ambiente**  > **estensioni**).
+1. Aprire la pagina Opzioni estensioni (**strumenti** > **opzioni** > **ambiente** > **estensioni**).
 
 2. Deselezionare la casella **di controllo carica estensioni per utente quando viene eseguito come amministratore** .
 
@@ -172,7 +172,7 @@ Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica 
 > [!NOTE]
 > Una notifica di blocco dell'interfaccia utente o di arresto anomalo significa solo che uno dei moduli dell'estensione si trovava nello stack quando si è verificato il blocco dell'interfaccia utente o l'arresto anomalo. Ciò non significa necessariamente che l'estensione stessa sia la causa. È possibile che l'estensione abbia chiamato codice che fa parte di Visual Studio, che a sua volta ha comportato la mancata risposta dell'interfaccia utente o un arresto anomalo. Tuttavia, la notifica può rivelarsi ancora utile se l'estensione che ha causato il blocco dell'interfaccia utente o l'arresto anomalo non è importante. In questo caso, la disabilitazione dell'estensione evita il blocco dell'interfaccia utente o l'arresto anomalo in futuro senza influire sulla produttività.
 
-## <a name="samples"></a>Esempi
+## <a name="samples"></a>Esempi di
 
 Quando si installa un esempio online, la soluzione viene memorizzata in due posizioni:
 
@@ -182,13 +182,13 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 
 ::: moniker range="vs-2017"
 
-È possibile usare la finestra di dialogo **Strumenti** > **Estensioni e aggiornamenti** per eseguire queste attività correlate agli esempi:
+È possibile utilizzare la finestra di dialogo **strumenti** > **estensioni e aggiornamenti** per eseguire queste attività correlate agli esempi:
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-È possibile usare la finestra di dialogo **Estensioni** > **Gestisci estensioni** per eseguire queste attività correlate agli esempi:
+È possibile utilizzare la finestra di dialogo **estensioni** > **Gestisci estensioni** per eseguire queste attività correlate agli esempi:
 
 ::: moniker-end
 

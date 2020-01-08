@@ -6,24 +6,24 @@ f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a7600cdab94499e13592924efabba2fb4c2faf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b70f1d3174990ec12c621dff4a45ce4d899ceb4e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649798"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593070"
 ---
 # <a name="trycatch-activity-designer"></a>ActivityDesigner TryCatch
 
 L'ActivityDesigner **TryCatch** viene usato per creare e configurare un'attività <xref:System.Activities.Statements.TryCatch>.
 
 ## <a name="the-trycatch-activity"></a>Attività TryCatch
- L'attività <xref:System.Activities.Statements.TryCatch> contiene un'attività <xref:System.Activities.Statements.TryCatch.Try%2A>, una raccolta di **> \<TException catch** e un'attività <xref:System.Activities.Statements.TryCatch.Finally%2A>. Un <xref:System.Activities.Statements.Catch%601> di tipo **TException** contiene una <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e un <xref:System.Activities.Statements.Catch%601.Action%2A>. che vengono usate insieme per implementare un meccanismo tipico di gestione degli errori basato sulle eccezioni. Un'attività <xref:System.Activities.Statements.TryCatch> tenta di eseguire la relativa attività <xref:System.Activities.Statements.TryCatch.Try%2A>. Se l'attività <xref:System.Activities.Statements.TryCatch.Try%2A> genera un'eccezione, l'attività <xref:System.Activities.Statements.TryCatch> usa la raccolta di **\> Catch < TException** per trovare la corrispondenza con l'eccezione. Se viene rilevata una corrispondenza, viene eseguita la <xref:System.Activities.Statements.Catch%601.Action%2A> del **\<TException catch corrispondente >** , che funge da logica di gestione degli errori per l'eccezione. Se le attività nella sezione di <xref:System.Activities.Statements.TryCatch.Try%2A> o le attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> terminano in modo corretto, l'attività di <xref:System.Activities.Statements.TryCatch> esegue la relativa attività di <xref:System.Activities.Statements.TryCatch.Finally%2A>. Per ulteriori informazioni, vedere [eccezioni del flusso di lavoro di Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
+ L'attività <xref:System.Activities.Statements.TryCatch> contiene un'attività <xref:System.Activities.Statements.TryCatch.Try%2A>, una raccolta di **\<TException >** e un'attività <xref:System.Activities.Statements.TryCatch.Finally%2A>. Un <xref:System.Activities.Statements.Catch%601> di tipo **TException** contiene una <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e un <xref:System.Activities.Statements.Catch%601.Action%2A>. che vengono usate insieme per implementare un meccanismo tipico di gestione degli errori basato sulle eccezioni. Un'attività <xref:System.Activities.Statements.TryCatch> tenta di eseguire la relativa attività <xref:System.Activities.Statements.TryCatch.Try%2A>. Se l'attività <xref:System.Activities.Statements.TryCatch.Try%2A> genera un'eccezione, l'attività <xref:System.Activities.Statements.TryCatch> usa la raccolta di **\>Catch < TException** per trovare la corrispondenza con l'eccezione. Se viene rilevata una corrispondenza, viene eseguita la <xref:System.Activities.Statements.Catch%601.Action%2A> del **> Catch\<TException** corrispondente, che funge da logica di gestione degli errori per l'eccezione. Se le attività nella sezione di <xref:System.Activities.Statements.TryCatch.Try%2A> o le attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> terminano in modo corretto, l'attività di <xref:System.Activities.Statements.TryCatch> esegue la relativa attività di <xref:System.Activities.Statements.TryCatch.Finally%2A>. Per ulteriori informazioni, vedere [eccezioni del flusso di lavoro di Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Utilizzo dell'ActivityDesigner TryCatch
 
@@ -37,14 +37,14 @@ Fare clic sul pulsante Espandi nell'angolo superiore destro di **TryCatch** desi
 
 ### <a name="the-trycatch-properties"></a>Proprietà di TryCatch
 
-Nella tabella seguente viene illustrato il <xref:System.Activities.Statements.TryCatch>properties e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione.
+Nella tabella seguente vengono illustrate le proprietà <xref:System.Activities.Statements.TryCatch>e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione.
 
-|Nome proprietà|Richiesto|Utilizzo|
+|Nome proprietà:|Richiesto|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.TryCatch>. Il percorso predefinito è TryCatch.|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|False|L'attività è stata eseguita per prima quando viene eseguito <xref:System.Activities.Statements.TryCatch>.|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|Raccolta di elementi **catch** da verificare quando l'attività <xref:System.Activities.Statements.TryCatch.Try%2A> genera un'eccezione.<br /><br /> È necessario aggiungere almeno un'attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> o un'attività nel blocco <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|L'attività da eseguire quando <xref:System.Activities.Statements.TryCatch.Try%2A> e qualsiasi attività necessaria nella raccolta <xref:System.Activities.Statements.TryCatch.Catches%2A> completano l'esecuzione.<br /><br /> È necessario aggiungere almeno un'attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> o un'attività nel blocco <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.TryCatch>. Il percorso predefinito è TryCatch.|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|Falso|L'attività è stata eseguita per prima quando viene eseguito <xref:System.Activities.Statements.TryCatch>.|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|Falso|Raccolta di elementi **catch** da verificare quando l'attività <xref:System.Activities.Statements.TryCatch.Try%2A> genera un'eccezione.<br /><br /> È necessario aggiungere almeno un'attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> o un'attività nel blocco <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|Falso|L'attività da eseguire quando <xref:System.Activities.Statements.TryCatch.Try%2A> e qualsiasi attività necessaria nella raccolta <xref:System.Activities.Statements.TryCatch.Catches%2A> completano l'esecuzione.<br /><br /> È necessario aggiungere almeno un'attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> o un'attività nel blocco <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
 
 ## <a name="see-also"></a>Vedere anche
 

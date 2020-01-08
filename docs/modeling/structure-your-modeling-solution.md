@@ -2,17 +2,17 @@
 title: Strutturare la soluzione di modellazione
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985214"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591944"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 
@@ -72,7 +72,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Usare un pacchetto separato per ogni livello
 
-1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
+1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. Nella **Esplora soluzioni**, fare doppio clic sul nodo della soluzione, scegliere **Add**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
 
 2. Nel modello condiviso creare un pacchetto per ogni livello: in **Esplora soluzioni**selezionare il progetto di modello. In **Esplora modelli UML**fare clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi**, quindi fare clic su **pacchetto**.
 

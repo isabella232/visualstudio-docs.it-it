@@ -8,17 +8,17 @@ helpviewer_keywords:
 - task batching [MSBuild]
 - MSBuild, task batching
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c80749080e4abc41412ed6c5df8421976054e68e
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 641253bc6a7962102a0d9437ddb3981672ae67c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706872"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573638"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadati degli elementi nella suddivisione in batch delle attività
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile dividere gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi ed eseguire un'attività una sola volta per ogni batch. Può non essere semplice comprendere esattamente quali elementi vengono passati e a quale batch. Questo argomento descrive gli scenari più comuni relativi alla suddivisione in batch.
@@ -36,7 +36,7 @@ Per altre informazioni sulla suddivisione in batch con [!INCLUDE[vstecmsbuild](.
 ## <a name="divide-an-item-list-into-batches"></a>Suddividere in batch un elenco di elementi
 La suddivisione in batch consente di dividere un elenco di elementi in vari batch in base ai metadati degli elementi e di passare separatamente ogni batch a un'attività. Questa procedura è utile per compilare assembly satellite.
 
-L'esempio seguente illustra come dividere in batch un elenco di elementi in base ai metadati degli elementi. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(ExampColl.Number)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la necessità di effettuare la suddivisione in batch. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
+L'esempio seguente illustra come dividere in batch un elenco di elementi in base ai metadati degli elementi. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(ExampColl.Number)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la necessità di eseguire la suddivisione in batch. L'elenco di elementi `ExampColl` viene diviso in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
 
 ```xml
 <Project
@@ -85,7 +85,7 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 > [!NOTE]
 > Se un elenco di elementi passato a un'attività non contiene elementi con i metadati di riferimento, ogni elemento incluso nell'elenco viene passato a ogni batch.
 
-L'esempio seguente illustra come dividere in batch più elenchi di elementi in base ai metadati degli elementi. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi ognuno in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(Number)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la necessità di effettuare la suddivisione in batch. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
+L'esempio seguente illustra come dividere in batch più elenchi di elementi in base ai metadati degli elementi. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi ognuno in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(Number)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la necessità di eseguire la suddivisione in batch. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.
 
 ```xml
 <Project
@@ -134,7 +134,7 @@ L'[attività Message](../msbuild/message-task.md) visualizza le informazioni seg
 ## <a name="batch-one-item-at-a-time"></a>Suddividere in batch di un elemento per volta
 È possibile eseguire la suddivisione in batch anche su metadati noti assegnati a ogni elemento al momento della creazione. In questo modo ogni elemento di una raccolta avrà alcuni metadati da usare per la suddivisione in batch. Il valore dei metadati `Identity` è univoco per ogni elemento e risulta utile nel caso in cui si voglia dividere in un batch distinto ogni elemento di un elenco. Per un elenco completo di tutti i metadati noti degli elementi, vedere [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md).
 
-L'esempio seguente illustra come eseguire in batch un elemento di un elenco per volta. Poiché il valore dei metadati `Identity` di ogni elemento è univoco, l'elenco di elementi `ExampColl` viene diviso in sei batch e ogni batch conterrà un elemento dell'elenco. La presenza di `%(Identity)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la necessità di effettuare la suddivisione in batch.
+L'esempio seguente illustra come eseguire in batch un elemento di un elenco per volta. Poiché il valore dei metadati `Identity` di ogni elemento è univoco, l'elenco di elementi `ExampColl` viene diviso in sei batch e ogni batch conterrà un elemento dell'elenco. La presenza di `%(Identity)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] la necessità di eseguire la suddivisione in batch.
 
 ```xml
 <Project
@@ -223,4 +223,4 @@ Items in ExampColl: Item2;Item5
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Batch MSBuild](../msbuild/msbuild-batching.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
-- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+- [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652376"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590618"
 ---
 # <a name="access-models-from-text-templates"></a>Accedere ai modelli da modelli di testo
 
 Utilizzando i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo basati su modelli di linguaggio specifici di dominio. Per informazioni di base sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale durante il debug del linguaggio DSL e funzioneranno anche in un computer in cui è stato distribuito il linguaggio DSL.
 
 > [!NOTE]
-> Quando si crea una soluzione DSL, nel progetto di debug vengono generati modelli di testo di esempio \* file con **estensione TT** . Quando si modificano i nomi delle classi di dominio, questi modelli non funzioneranno più. Tuttavia, includono le direttive di base necessarie e forniscono esempi che è possibile aggiornare in base al linguaggio DSL.
+> Quando si crea una soluzione DSL, nel progetto di debug vengono generati modelli di testo di esempio\*file con **estensione TT** . Quando si modificano i nomi delle classi di dominio, questi modelli non funzioneranno più. Tuttavia, includono le direttive di base necessarie e forniscono esempi che è possibile aggiornare in base al linguaggio DSL.
 
  Per accedere a un modello da un modello di testo:
 
@@ -138,9 +138,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Caricamento dinamico dei modelli
  Per determinare in fase di esecuzione quali modelli caricare, è possibile caricare un file di modello in modo dinamico nel codice del programma, anziché usare la direttiva specifica del linguaggio DSL.
 
- Tuttavia, una delle funzioni della direttiva specifica del linguaggio DSL consiste nell'importare lo spazio dei nomi DSL, in modo che il codice del modello possa usare le classi di dominio definite in tale DSL. Poiché non si utilizza la direttiva, è necessario aggiungere **\<assembly >** e \<import direttive **>** per tutti i modelli che è possibile caricare. Questa operazione è semplice se i diversi modelli che è possibile caricare sono tutte istanze dello stesso DSL.
+ Tuttavia, una delle funzioni della direttiva specifica del linguaggio DSL consiste nell'importare lo spazio dei nomi DSL, in modo che il codice del modello possa usare le classi di dominio definite in tale DSL. Poiché non si utilizza la direttiva, è necessario aggiungere **\<assembly >** e\<direttive **Import >** per tutti i modelli che è possibile caricare. Questa operazione è semplice se i diversi modelli che è possibile caricare sono tutte istanze dello stesso DSL.
 
- Per caricare il file, il metodo più efficace consiste nell'utilizzare Visual Studio ModelBus. In uno scenario tipico, il modello di testo utilizzerà una direttiva specifica del linguaggio DSL per caricare il primo modello nel modo consueto. Tale modello conterrebbe riferimenti ModelBus a un altro modello. È possibile utilizzare ModelBus per aprire il modello a cui si fa riferimento e accedere a un particolare elemento. Per ulteriori informazioni, vedere [utilizzo di Visual Studio ModelBus in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Per caricare il file, il metodo più efficace consiste nell'utilizzare Visual Studio ModelBus. In uno scenario tipico, il modello di testo utilizzerà una direttiva specifica del linguaggio DSL per caricare il primo modello nel modo consueto. Tale modello conterrebbe riferimenti ModelBus a un altro modello. È possibile utilizzare ModelBus per aprire il modello a cui si fa riferimento e accedere a un particolare elemento. Per altre informazioni, vedere [tramite ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  In uno scenario meno comune, potrebbe essere necessario aprire un file di modello per il quale si dispone solo di un nome di file e che potrebbe non essere presente nel progetto di Visual Studio corrente. In questo caso, è possibile aprire il file usando la tecnica descritta in [procedura: aprire un modello da file nel codice programma](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 

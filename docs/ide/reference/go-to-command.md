@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.Goto command
 - Go To command
 ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5782f5e7dba8d18f9d6f48f345d5e133138e6eea
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 535906d8b8d7f8ba0c2984d22ceead18a0d47c2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748746"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569205"
 ---
 # <a name="go-to-command"></a>Comando Vai a
 Sposta il cursore sulla riga specificata.
@@ -29,7 +29,7 @@ Sposta il cursore sulla riga specificata.
 Edit.GoTo [linenumber]
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 `linenumber`\
 Parametro facoltativo. Valore integer che rappresenta il numero della riga a cui passare.
 
@@ -49,6 +49,6 @@ L'alias per questo comando è GoToLn.
 ## <a name="see-also"></a>Vedere anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Finestra di comando](../../ide/reference/command-window.md)
+- [Command Window](../../ide/reference/command-window.md) (Finestra di comando)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

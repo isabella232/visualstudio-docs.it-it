@@ -1,7 +1,7 @@
 ---
 title: Aumentare la produttività per lo sviluppo .NET
 description: Panoramica di esplorazione, analisi del codice, testing unità e altre funzionalità che consentono di scrivere codice .NET in modo più efficiente e veloce.
-author: mikadumont
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/21/2019
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491648"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567502"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -89,7 +89,7 @@ Visual Studio offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**
 
 ::: moniker range=">=vs-2019"
 
-- Creare automaticamente un file *editorconfig* in base alle impostazioni di stile del codice in **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice**.
+- Creare automaticamente un file *EditorConfig* in base alle impostazioni di stile del codice in **strumenti** > **opzioni** > editor di **C#** **testo** > > stile di **codice**.
 
    ![Generare un file con estensione editorconfig dalle impostazioni in Visual Studio 2019](media/vs-2019/generate-editorconfig-file.png)
 
@@ -154,7 +154,7 @@ Diversi membri della community hanno scritto estensioni gratuite che aggiungono 
 
 Visual Studio include molte funzionalità che consentono di eseguire ricerche e di [esplorare il codice](../ide/navigating-code.md).
 
-| Caratteristica | Metodo rapido | Dettagli/Miglioramenti |
+| Caratteristica | Collegamento | Dettagli/Miglioramenti |
 |- | - | -|
 | Trova tutti i riferimenti | **MAIUSC**+**F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e tipo riferimento, ad esempio lettura o scrittura. È anche possibile "bloccare" i risultati. |
 | Vai all'implementazione | **CTRL**+**F12** | È possibile usare Vai a definizione nella parola chiave `override` per passare al membro sostituito |

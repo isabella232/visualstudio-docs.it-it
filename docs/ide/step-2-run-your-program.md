@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950722"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588746"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Passaggio 2: eseguire l'app visualizzatore immagini
 
@@ -46,7 +46,7 @@ Ecco come eseguire l'app.
 
 1. Per arrestare l'app, usare uno dei metodi seguenti:
 
-    - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
+    - Sulla barra degli strumenti scegliere il pulsante**Termina debug**.
 
     - Sulla barra dei menu scegliere **Debug** > **Termina debug**.
 

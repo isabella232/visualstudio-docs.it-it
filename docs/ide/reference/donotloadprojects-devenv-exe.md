@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Devenv, /DoNotLoadProjects switch
 - /DoNotLoadProjects Devenv switch
 - DoNotLoadProjects Devenv switch
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fe7dfed2774eace7d32b1c9041355b566d4e76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51e3341082ff354fc8bc87a89b3d7bc56e4e7887
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654503"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569855"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -30,11 +30,11 @@ Apre la soluzione specificata senza caricare progetti. Per altre informazioni, v
 devenv /DoNotLoadProjects SolutionName
 ```
 
-## <a name="arguments"></a>argomenti
+## <a name="arguments"></a>Argomenti
 
 *SolutionName*
 
-Obbligatorio. Percorso completo e nome della soluzione da aprire.
+Richiesto. Percorso completo e nome della soluzione da aprire.
 
 ## <a name="example"></a>Esempio
 

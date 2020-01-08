@@ -1,8 +1,8 @@
 ---
-title: Installazione di Visual Studio
+title: Installare Visual Studio
 titleSuffix: ''
 description: Informazioni dettagliate sull'installazione di Visual Studio.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,21 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018857"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590124"
 ---
-# <a name="install-visual-studio"></a>Installazione di Visual Studio
+# <a name="install-visual-studio"></a>Installare Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -131,7 +131,7 @@ Eseguire il file del programma di avvio automatico per installare il programma d
 
 2. Verrà richiesto di confermare le [Condizioni di licenza](https://visualstudio.microsoft.com/license-terms/) e l'[Informativa sulla privacy](https://privacy.microsoft.com/privacystatement) di Microsoft. Scegliere **Continua**.
 
-   ![Condizioni di licenza e informativa sulla privacy](media/privacy-and-license-terms.png "Condizioni di licenza e informativa sulla privacy")
+   ![Condizioni di licenza e informativa sulla privacy](media/privacy-and-license-terms.png "Condizioni di licenza Microsoft e informativa sulla privacy")
 
 ## <a name="step-4---choose-workloads"></a>Passaggio 4: Scegliere i carichi di lavoro
 
@@ -139,9 +139,9 @@ Dopo aver installato il programma di installazione, è possibile usarlo per pers
 
  ::: moniker range="vs-2017"
 
-1. Individuare il carico di lavoro che si vuole installare nella schermata d'**installazione di Visual Studio**.
+1. Trovare il carico di lavoro desiderato nel **programma di installazione di Visual Studio**.
 
-   ![Visual Studio 2017: Installare un carico di lavoro](../install/media/vs-installer-installing-workloads.png)
+   ![Visual Studio 2017: installare un carico di lavoro](../install/media/vs-installer-installing-workloads.png)
 
      Scegliere ad esempio il carico di lavoro "Sviluppo per desktop .NET". Include l'editor principale predefinito che offre supporto di base per la modifica del codice per oltre 20 linguaggi, la possibilità di aprire e modificare il codice da qualsiasi cartella senza che sia necessario un progetto e il controllo del codice sorgente integrato.
 
@@ -153,9 +153,9 @@ Dopo aver installato il programma di installazione, è possibile usarlo per pers
 
 ::: moniker range="vs-2019"
 
-1. Dopo aver installato i carichi di lavoro e i componenti nuovi, scegliere **Avvia**.
+1. Trovare il carico di lavoro desiderato nel **programma di installazione di Visual Studio**.
 
-   ![Visual Studio 2019: Installare un carico di lavoro](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019: installare un carico di lavoro](../install/media/vs-2019/vs-installer-workloads.png)
 
      Scegliere ad esempio il carico di lavoro "Sviluppo ASP.NET e Web". Include l'editor principale predefinito che offre supporto di base per la modifica del codice per oltre 20 linguaggi, la possibilità di aprire e modificare il codice da qualsiasi cartella senza che sia necessario un progetto e il controllo del codice sorgente integrato.
 
@@ -170,17 +170,17 @@ Dopo aver installato il programma di installazione, è possibile usarlo per pers
 
 ## <a name="step-5---choose-individual-components-optional"></a>Passaggio 5: Scegliere singoli componenti (facoltativo)
 
-Se non si vuole usare la funzionalità Carichi di lavoro per personalizzare l'installazione di Visual Studio o si vogliono aggiungere più componenti rispetto a quelli installati da un carico di lavoro, è possibile eseguire tale operazione installando o aggiungendo singoli componenti dalla scheda **Singoli componenti**. Scegliere gli elementi da installare e quindi seguire le istruzioni visualizzate.
+Se non si vuole usare la funzionalità carichi di lavoro per personalizzare l'installazione di Visual Studio o si vuole aggiungere altri componenti rispetto a un carico di lavoro, è possibile farlo installando o aggiungendo singoli componenti dalla scheda **singoli componenti** . scegliere quello desiderato e quindi seguire le istruzioni.
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - Installare singoli componenti](media/vs-installer-installing-components.png "Installare singoli componenti di Visual Studio")
+  ![Visual Studio 2017-installare i singoli componenti](media/vs-installer-installing-components.png "Installare i singoli componenti di Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - Installare singoli componenti](media/vs-2019/vs-installer-individual-components.png "Installare singoli componenti di Visual Studio")
+  ![Visual Studio 2019-installare i singoli componenti](media/vs-2019/vs-installer-individual-components.png "Installare i singoli componenti di Visual Studio")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ Per impostazione predefinita, alla prima esecuzione il programma di installazion
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - Installare Language Pack](media/vs-installer-installing-language-packs.png "Installare Language Pack di Visual Studio")
+  ![Visual Studio 2017-installare i Language Pack](media/vs-installer-installing-language-packs.png "Installare i Language Pack di Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - Installare Language Pack](media/vs-2019/vs-installer-language-packs.png "Installare Language Pack di Visual Studio")
+  ![Visual Studio 2019-installare i Language Pack](media/vs-2019/vs-installer-language-packs.png "Installare i Language Pack di Visual Studio")
 
 ::: moniker-end
 
@@ -210,7 +210,7 @@ Un altro modo per poter modificare la lingua predefinita consiste nell'eseguire 
 
 **Novità della versione 15.7**: è ora possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema. È possibile scegliere di spostare la Download Cache, i componenti condivisi, gli SDK e gli strumenti in unità diverse e mantenere Visual Studio nell'unità che lo esegue più rapidamente.
 
-  ![Visual Studio 2017 - Cambiare i percorsi di installazione](media/installation-options-by-location.png "Cambiare il percorso di installazione")
+  ![Visual Studio 2017-modificare i percorsi di installazione](media/installation-options-by-location.png "Modificare il percorso di installazione")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Un altro modo per poter modificare la lingua predefinita consiste nell'eseguire 
 
 È possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema. È possibile scegliere di spostare la Download Cache, i componenti condivisi, gli SDK e gli strumenti in unità diverse e mantenere Visual Studio nell'unità che lo esegue più rapidamente.
 
-  ![Visual Studio 2019 - Selezionare i percorsi di installazione](media/vs-2019/vs-installer-installation-locations.png "Selezionare il percorso di installazione")
+  ![Visual Studio 2019-selezionare i percorsi di installazione](media/vs-2019/vs-installer-installation-locations.png "Selezionare il percorso di installazione")
 
 ::: moniker-end
 

@@ -16,23 +16,23 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33ca9f91c9b1105af43af21a91f25be13e153aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648452"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586575"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 
 L' *aggiornamento gerarchico* si riferisce al processo di salvataggio dei dati aggiornati (da un set di dati con due o più tabelle correlate) a un database mantenendo le regole di integrità referenziale. L' *integrità referenziale* si riferisce alle regole di coerenza fornite dai vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione di record correlati. Ad esempio, è l'integrità referenziale che impone la creazione di un record del cliente prima di consentire la creazione degli ordini per quel cliente.  Per ulteriori informazioni sulle relazioni nei set di dati, vedere [relazioni nei set](../data-tools/relationships-in-datasets.md)di dati.
 
-La funzionalità di aggiornamento gerarchico usa un `TableAdapterManager` per gestire la `TableAdapter`s in un set di dati tipizzato. Il componente `TableAdapterManager` è una classe generata da Visual Studio, non un tipo .NET. Quando si trascina una tabella dalla finestra **origini dati** a una pagina Windows Form o WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o alla pagina, che viene visualizzata nella barra dei componenti della finestra di progettazione. Per informazioni dettagliate sulla classe `TableAdapterManager`, vedere la sezione di riferimento TableAdapterManager degli [oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+La funzionalità di aggiornamento gerarchico usa un `TableAdapterManager` per gestire le `TableAdapter`in un set di dati tipizzato. Il componente `TableAdapterManager` è una classe generata da Visual Studio, non un tipo .NET. Quando si trascina una tabella dalla finestra **origini dati** a una pagina Windows Form o WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o alla pagina, che viene visualizzata nella barra dei componenti della finestra di progettazione. Per informazioni dettagliate sulla classe `TableAdapterManager`, vedere la sezione di riferimento TableAdapterManager degli [oggetti TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
 Per impostazione predefinita, un set di dati considera le tabelle correlate come "solo relazioni", il che significa che non impone vincoli di chiave esterna. È possibile modificare tale impostazione in fase di progettazione utilizzando il **Progettazione DataSet**. Selezionare la linea di relazione tra due tabelle per visualizzare la finestra di dialogo **relazione** . Le modifiche apportate in questo articolo determineranno il comportamento del `TableAdapterManager` quando invierà le modifiche nelle tabelle correlate al database.
 
@@ -80,7 +80,7 @@ Salvare le modifiche dalle tabelle dati correlate del set di dati nel database c
 
 Dopo avere rilasciato gli elementi dalla finestra **Origini dati**, il codice viene automaticamente aggiunto all'evento `Form_Load` per popolare ogni tabella (metodi `TableAdapter.Fill`). Il codice viene anche aggiunto all'evento Click del pulsante **Salva** di <xref:System.Windows.Forms.BindingNavigator> per salvare i dati dal set di dati nel database (metodo `TableAdapterManager.UpdateAll`).
 
-Il codice di salvataggio generato contiene anche una riga di codice che chiama il metodo `CustomersBindingSource.EndEdit`. In particolare, viene chiamato il metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> del primo <xref:System.Windows.Forms.BindingSource>that aggiunto al form. In altre parole, questo codice viene generato solo per la prima tabella trascinata dalla finestra **origini dati** nel form. La chiamata al metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> esegue il commit di tutte le modifiche in corso nei controlli associati a dati che si stanno modificando. Pertanto, se un controllo associato a dati ha lo stato attivo e si fa clic sul pulsante **Salva**, prima del salvataggio effettivo verrà eseguito il commit di tutte le modifiche in sospeso nel controllo (metodo `TableAdapterManager.UpdateAll`).
+Il codice di salvataggio generato contiene anche una riga di codice che chiama il metodo `CustomersBindingSource.EndEdit`. In particolare, viene chiamato il metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> della prima <xref:System.Windows.Forms.BindingSource>aggiunta al modulo. In altre parole, questo codice viene generato solo per la prima tabella trascinata dalla finestra **origini dati** nel form. La chiamata al metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> esegue il commit di tutte le modifiche in corso nei controlli associati a dati che si stanno modificando. Pertanto, se un controllo associato a dati ha lo stato attivo e si fa clic sul pulsante **Salva**, prima del salvataggio effettivo verrà eseguito il commit di tutte le modifiche in sospeso nel controllo (metodo `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
 > Il **Progettazione DataSet** aggiunge solo il codice `BindingSource.EndEdit` per la prima tabella rilasciata nel form. Pertanto, è necessario aggiungere una riga di codice per chiamare il metodo `BindingSource.EndEdit` per ogni tabella correlata nel form. Per questa procedura dettagliata, è necessario quindi aggiungere una chiamata al metodo `OrdersBindingSource.EndEdit`.

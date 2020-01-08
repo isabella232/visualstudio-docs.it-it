@@ -5,45 +5,45 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c190115836972f86590233e331f172422efbd6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ebe4cdcefb7b823090cca8976055de5a3ebb9b1a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747432"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595410"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 
 Quando si apre un modello in una versione di Visual Studio che non supporta la creazione di modelli, il modello viene aperto in modalità di sola lettura. In questa modalità è possibile modificare il layout dei diagrammi, ma non modificare il modello.
 
-Per informazioni sulle versioni di Visual Studio che supportano la creazione del modello, vedere [supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Per le versioni di Visual Studio che supportano la creazione di modelli, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Accesso a un modello e ai diagrammi
 
-Per leggere un diagramma delle dipendenze, è necessario innanzitutto utilizzare Visual Studio per aprire il progetto di modello e quindi aprire il diagramma al suo interno.
+Per leggere un diagramma delle dipendenze, è necessario usare prima Visual Studio per aprire il progetto di modellazione e quindi aprire il diagramma in esso contenuti.
 
-Per questo motivo, se si desidera leggere un diagramma delle dipendenze, è inoltre necessario disporre dell'accesso al progetto di modello in cui è stato creato. Questa operazione può essere eseguita accedendo al progetto dal controllo del codice sorgente o ottenendo una copia dei file di progetto.
+Per questo motivo, se si vuole leggere un diagramma delle dipendenze, è anche necessario avere accesso al progetto di modellazione in cui è stato creato. È possibile farlo oppure accedere al progetto dal controllo del codice sorgente, ottenendo una copia dei file di progetto.
 
 > [!NOTE]
 > Non si applica alle mappe codice e ai diagrammi classi .NET generati dal codice. Questi diagrammi possono essere visualizzati indipendentemente dal progetto di modellazione.
 
-Per leggere un diagramma delle dipendenze, il set minimo di file necessario è il seguente:
+Per leggere un diagramma delle dipendenze, il set minimo di file che devono essere è come segue:
 
-- I due file di diagramma per il diagramma che si desidera leggere, ad esempio, **Diagram. classdiagram e Diagram. classdiagram. layout**.
+- I due file diagramma per il diagramma da leggere, ad esempio, **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
-    > Per i diagrammi di dipendenza, è necessario disporre anche del file denominato _Diagram_ **. layerdiagram.** requests.
+    > Per i diagrammi delle dipendenze, è necessario anche il file denominato _MyDiagram_ **. MyDiagram**.
 
-- File di progetto di modello (**modelproj**)
+- File di progetto di modellazione (**MyModel. modelproj**)
 
-- Il file del modello radice (**ModelDefinition\MyModel.Uml**)
+- Il file del modello radice (**ModelDefinition\MyModel.uml**)
 
-- File del pacchetto per tutti i pacchetti a cui si fa riferimento nel diagramma (**ModelDefinition\MyPackage.Uml**)
+- I file del pacchetto per i pacchetti di cui viene fatto riferimento nel diagramma (**ModelDefinition\MyPackage.uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Modifiche eseguibili in modalità di sola lettura
 
@@ -53,7 +53,7 @@ Se si apre un modello e i relativi diagrammi in una versione di Visual Studio ch
 
 - Espandere e comprimere le forme.
 
-Queste modifiche possono essere salvate. Se si desidera rendere le modifiche visibili ad altri utenti, è necessario inviare almeno i file con **estensione layout** aggiornati.
+Queste modifiche possono essere salvate. Se si desidera rendere visibili ad altri utenti le modifiche, è necessario inviare almeno aggiornato **layout** file.
 
 ## <a name="see-also"></a>Vedere anche
 

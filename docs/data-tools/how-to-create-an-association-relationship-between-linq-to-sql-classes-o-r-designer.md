@@ -3,17 +3,17 @@ title: Relazioni tra LINQ to SQL classi (O/R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13443dd25719caad5002b29a33975a0dbc5850f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fb81cf17de86a11d2373f6a545b3efc78e65ada9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641896"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586471"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: creare un'associazione tra classi di LINQ to SQL (O/R Designer)
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando la finestra di dialogo **Editor di associazione**.
@@ -26,7 +26,7 @@ Quando si usa la finestra di dialogo **Editor di associazione** per creare un'as
 ## <a name="association-properties"></a>Proprietà dell'associazione
 Quando, dopo aver creato un'associazione, la si seleziona in **Object Relational Designer**, nella finestra **Proprietà** è possibile configurare alcune proprietà (L'associazione è la linea tra le classi correlate). Nella tabella seguente vengono fornite le descrizioni per le proprietà di un'associazione.
 
-|proprietà|Descrizione|
+|Gli|Descrizione|
 |--------------|-----------------|
 |**Cardinality**|Controlla se l'associazione è uno-a-molti o uno-a-uno.|
 |**Child Property**|Specifica se creare una proprietà nella chiave esterna dell'associazione nell'elemento padre, che è una raccolta o un riferimento a record figlio. Nell'associazione tra `Customer` e `Order`, ad esempio, se la **proprietà figlio** è impostata su **true**, viene creata una proprietà denominata `Orders` nella classe padre.|

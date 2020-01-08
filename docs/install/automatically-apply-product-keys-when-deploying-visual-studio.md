@@ -5,19 +5,19 @@ ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: d269102b4ab3edcf62a2101802c4731667b76eb7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831838"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567203"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
 
@@ -89,12 +89,12 @@ In questo esempio è riportata una riga di comando per l'applicazione della lice
 
 Se `StorePID.exe` applica correttamente il codice Product Key, restituisce un `%ERRORLEVEL%` pari a 0. Se si verificano errori, verrà restituito uno dei codici seguenti, a seconda della condizione di errore:
 
-| Errore                     | Codice |
+| Errore di                     | Codice |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
 | `PID_ACTION_INVALID`      | 2    |
-| `PID_ACTION_EXPIRED`      | 3    |
+| `PID_ACTION_EXPIRED`      | 3\.    |
 | `PID_ACTION_INUSE`        | 4    |
 | `PID_ACTION_FAILURE`      | 5    |
 | `PID_ACTION_NOUPGRADE`    | 6    |
@@ -106,5 +106,5 @@ Se `StorePID.exe` applica correttamente il codice Product Key, restituisce un `%
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Installare Visual Studio](../install/install-visual-studio.md)
+* [Install Visual Studio](../install/install-visual-studio.md) (Installare Visual Studio)
 * [Creare un'installazione offline di Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)

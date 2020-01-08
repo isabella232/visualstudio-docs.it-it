@@ -2,17 +2,17 @@
 title: Direttiva include T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606395"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591853"
 ---
 # <a name="t4-include-directive"></a>Direttiva include T4
 
@@ -24,13 +24,13 @@ In un modello di testo in Visual Studio, è possibile includere testo da un altr
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` possono essere assoluti o relativi al file modello corrente.
+- `filePath` può essere assoluto o relativo al file modello corrente.
 
    Inoltre, le estensioni specifiche di Visual Studio possono specificare le proprie directory per la ricerca di file di inclusione. Ad esempio, dopo aver installato l'SDK di visualizzazione e modellazione (strumenti DSL), la seguente cartella viene aggiunta all'elenco di inclusione: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
    Queste cartelle di inclusione aggiuntive potrebbero dipendere dall'estensione del file incluso. Ad esempio, la cartella di inclusione di Strumenti DSL è accessibile soltanto ai file inclusi con l'estensione `.tt`
 
-- `filePath` può includere le variabili di ambiente delimitate da "%". Esempio:
+- `filePath` può includere le variabili di ambiente delimitate da "%". Ad esempio:
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **TextFile1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **In Textfile2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).

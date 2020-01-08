@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958232"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678987"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Passaggio 2: Creare un'app Django con visualizzazioni e modelli di pagina
 
@@ -38,9 +38,9 @@ Un'app Django è un pacchetto Python separato che contiene un set di file correl
 
 Un'app Django inizia in genere con un set standard di file. Visual Studio fornisce modelli di elemento per inizializzare un'app Django all'interno di un progetto Django, insieme a un comando di menu integrato che ha lo stesso scopo:
 
-- Modelli: In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e selezionare **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il modello **App Django 1.9**, specificare il nome dell'applicazione nel campo **Nome** e selezionare **OK**.
+- Modelli: in **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il modello **App Django 1.9**, specificare il nome dell'applicazione nel campo **Nome** e selezionare **OK**.
 
-- Comando integrato: In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto e selezionare **Aggiungi** > **App Django**. Questo comando chiede di immettere il nome e crea un'app Django 1.9.
+- Comando integrato: in **Esplora soluzioni** fare clic sul progetto e selezionare **Aggiungi** > **App Django**. Questo comando chiede di immettere il nome e crea un'app Django 1.9.
 
     ![Comando di menu per l'aggiunta di un'app Django](media/django/step02-add-django-app-command.png)
 
@@ -48,18 +48,18 @@ Usando uno dei due metodi, creare un'app denominata "HelloDjangoApp". Il risulta
 
 ![File dell'app Django in Esplora soluzioni](media/django/step02-django-app-in-solution-explorer.png)
 
-| Elemento | Description |
+| Elemento | Descrizione |
 | --- | --- |
 | **\_\_init\_\_.py** | File che identifica l'app come pacchetto. |
 | **migrations** | Cartella in cui Django archivia gli script che aggiornano il database per l'allineamento alle modifiche apportate ai modelli. Gli strumenti di migrazione di Django applicano quindi le modifiche necessarie a qualsiasi versione precedente del database in modo che corrisponda ai modelli correnti. Usando le migrazioni, è possibile concentrarsi sui modelli e lasciare a Django la gestione dello schema di database sottostante. Le migrazioni vengono descritte nel passaggio 6. Per il momento, la cartella contiene semplicemente un file *\_\_init\_\_.py*, che indica che la cartella definisce il proprio pacchetto Python. |
-| **templates** | Cartella per i modelli di pagina Django contenente un unico file, *index.html* all'interno di una cartella che corrisponde al nome dell'app. In Visual Studio 2017 15.7 e versioni precedenti, il file è contenuto direttamente in *modelli* e il passaggio 2-4 contiene informazioni su come creare la sottocartella. I modelli sono blocchi di codice HTML in cui le visualizzazioni possono aggiungere informazioni per eseguire il rendering dinamico di una pagina. Le "variabili" del modello di pagina, ad esempio `{{ content }}` in *index.html*, sono segnaposto per i valori dinamici, come descritto più avanti in questo articolo (passaggio 2). In genere le app Django creano uno spazio dei nomi per i rispettivi modelli inserendoli in una sottocartella corrispondente al nome dell'app. |
+| **templates** | Cartella per i modelli di pagina Django contenente un unico file, *index.html* all'interno di una cartella che corrisponde al nome dell'app. (In Visual Studio 2017 15,7 e versioni precedenti, il file è contenuto direttamente in *modelli* e il passaggio 2-4 indica di creare la sottocartella). I modelli sono blocchi di codice HTML in cui le visualizzazioni possono aggiungere informazioni per eseguire dinamicamente il rendering di una pagina. Le "variabili" del modello di pagina, ad esempio `{{ content }}` in *index.html*, sono segnaposto per i valori dinamici, come descritto più avanti in questo articolo (passaggio 2). In genere le app Django creano uno spazio dei nomi per i rispettivi modelli inserendoli in una sottocartella corrispondente al nome dell'app. |
 | **admin.py** | File Python in cui viene estesa l'interfaccia amministrativa dell'app (vedere il passaggio 6) usato per distribuire e modificare i dati in un database. Inizialmente, questo file contiene solo l'istruzione `from django.contrib import admin`. Per impostazione predefinita, Django include un'interfaccia amministrativa standard tramite le voci presenti nel file *settings.py* del progetto Django, che è possibile attivare rimuovendo i commenti dalle voci esistenti in *urls.py*. |
 | **apps.py** | File Python che definisce una classe di configurazione per l'app. Vedere di seguito, dopo questa tabella. |
 | **models.py** | I modelli sono oggetti dati, identificati da funzioni, attraverso i quali le visualizzazioni interagiscono con il database sottostante dell'app (vedere il passaggio 6). Django fornisce il livello di connessione di database in modo che le app non debbano gestire questi dettagli. Il file *models.py* è una posizione predefinita in cui creare i modelli e contiene inizialmente solo l'istruzione `from django.db import models`. |
 | **tests.py** | File Python che contiene la struttura di base degli unit test. |
 | **views.py** | In genere le visualizzazioni vengono considerate pagine Web, che accettano una richiesta HTTP e restituiscono una risposta HTTP. Il rendering delle visualizzazioni viene eseguito in genere come HTML, che i Web browser sanno come visualizzare, ma una visualizzazione non deve necessariamente essere visibile, ad esempio se si tratta di un modulo intermedio. Una visualizzazione viene definita da una funzione Python, il cui compito consiste nell'eseguire il rendering del codice HTML da inviare al browser. Il file *views.py* è una posizione predefinita in cui creare le visualizzazioni e contiene inizialmente solo l'istruzione `from django.shortcuts import render`. |
 
-Il contenuto di *app.py* viene visualizzato nel modo seguente quando si usa il nome "HelloDjangoApp":
+Il contenuto di *Apps.py* viene visualizzato come segue quando si usa il nome "HelloDjangoApp":
 
 ```python
 from django.apps import AppConfig
@@ -70,7 +70,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 ### <a name="question-is-creating-a-django-app-in-visual-studio-any-different-from-creating-an-app-on-the-command-line"></a>Domanda: La creazione di un'app Django in Visual Studio è diversa dalla creazione di un'app nella riga di comando?
 
-Risposta: L'esecuzione del comando **Aggiungi** > **App Django**o l'uso di **Aggiungi** > **Nuovo elemento** con un modello di app Django produce gli stessi file del comando Django `manage.py startapp <app_name>`. Il vantaggio della creazione dell'app in Visual Studio è che la cartella dell'app e tutti i file vengono integrati automaticamente nel progetto. È possibile usare lo stesso comando di Visual Studio per creare un numero qualsiasi di app nel progetto.
+Risposta: L'esecuzione del comando **Aggiungi** > **App Django** o l'uso di **Aggiungi** > **Nuovo elemento** con un modello di app Django produce gli stessi file del comando Django `manage.py startapp <app_name>`. Il vantaggio della creazione dell'app in Visual Studio è che la cartella dell'app e tutti i file vengono integrati automaticamente nel progetto. È possibile usare lo stesso comando di Visual Studio per creare un numero qualsiasi di app nel progetto.
 
 ## <a name="step-2-2-run-the-app-from-the-django-project"></a>Passaggio 2-2: Eseguire l'app dal progetto Django
 
@@ -111,17 +111,17 @@ Poiché sono state apportate modifiche al codice e il test delle modifiche è ri
 
     ![Pulsante Modifiche per il controllo del codice sorgente sulla barra di stato di Visual Studio](media/django/step02-source-control-changes-button.png)
 
-1. In **Team Explorer** immettere un messaggio per il commit, come "Creazione dell'app Django iniziale" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato il messaggio **Commit \<hash> creato in locale. Sync per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
+1. In **Team Explorer** immettere un messaggio per il commit, come "Creazione dell'app Django iniziale" e selezionare **Esegui commit di tutto**. Al termine del commit, viene visualizzato un messaggio di **commit \<hash > creato localmente. Sincronizzare per condividere le modifiche con il server.** Se si vuole eseguire il push delle modifiche nel repository remoto, selezionare **Sync** e quindi **Push** in **Commit in uscita**. È anche possibile accumulare più commit locali prima di eseguire il push in remoto.
 
     ![Eseguire il push dei commit in remoto in Team Explorer](media/django/step02-source-control-push-to-remote.png)
 
 ### <a name="question-what-is-the-r-prefix-before-the-routing-strings-for"></a>Domanda: Che cosa significa il prefisso "r" prima delle stringhe di routing?
 
-Risposta: Il prefisso "r" in una stringa in Python significa "raw", vale a dire "non elaborato", per indicare a Python di non aggiungere caratteri di escape nella stringa. Poiché le espressioni regolari usano molti caratteri speciali, l'uso del prefisso "r" semplifica notevolmente la lettura delle stringhe rispetto a quando contengono diversi caratteri di escape '\\'.
+Risposta: Il prefisso "r" in una stringa in Python significa "raw", ovvero "non elaborato", per indicare a Python di non aggiungere escape ad alcun carattere nella stringa. Poiché le espressioni regolari usano molti caratteri speciali, l'uso del prefisso "r" semplifica notevolmente la lettura delle stringhe rispetto a quando contengono diversi caratteri di escape '\\'.
 
-### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Domanda: Che cosa significano i caratteri ^ e $ nelle voci di routing degli URL?
+### <a name="question-what-do-the--and--characters-mean-in-the-url-routing-entries"></a>Domanda: che cosa significano i caratteri ^ e $ nelle voci di routing degli URL?
 
-Risposta: Nelle espressioni regolari che definiscono modelli di URL, ^ significa "inizio della riga" e $ significa "fine della riga" e gli URL, come già detto, sono relativi alla radice del sito, vale a dire la parte che segue `https://www.domain.com/`. L'espressione regolare `^$` significa "vuoto" e di conseguenza corrisponde all'URL completo `https://www.domain.com/` (senza aggiunte alla radice del sito). Il modello `^home$` corrisponde esattamente a `https://www.domain.com/home/`. Django non usa il carattere / finale nella corrispondenza dei modelli.
+Risposta: Nelle espressioni regolari che definiscono modelli di URL, ^ significa "inizio della riga" e $ significa "fine della riga" e gli URL, come già detto, sono relativi alla radice del sito, ovvero la parte che segue `https://www.domain.com/`. L'espressione regolare `^$` significa "vuoto" e di conseguenza corrisponde all'URL completo `https://www.domain.com/` (senza aggiunte alla radice del sito). Il modello `^home$` corrisponde esattamente a `https://www.domain.com/home/`. Django non usa il carattere / finale nella corrispondenza dei modelli.
 
 Se non si usa un carattere $ finale in un'espressione regolare, come in `^home`, il modello di URL corrisponde a *qualsiasi* URL che inizia con "home", ad esempio "home", "homework", "homestead" e "home192837".
 
@@ -247,7 +247,7 @@ I passaggi seguenti descrivono l'uso dei modelli di pagina:
 
     ![Esecuzione dell'app tramite il modello](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 versione 15.7 e precedenti: Come passaggio finale, spostare i modelli in una sottocartella con lo stesso nome dell'app. Si crea così uno spazio dei nomi e si evitano potenziali conflitti con altre app eventualmente aggiunte al progetto. I modelli in VS 2017 15.8+ eseguono questa operazione è in modo automatico. Creare ovvero una sottocartella in *templates* denominata *HelloDjangoApp*, spostare *index.html* in questa sottocartella e modificare la funzione di visualizzazione `index` in modo che faccia riferimento al nuovo percorso del modello, *HelloDjangoApp/index.html*. Eseguire quindi il progetto, verificare che il rendering della pagina avvenga correttamente e arrestare il server.
+1. <a name="template-namespacing"></a>Visual Studio 2017 versione 15.7 e versioni precedenti: come passaggio finale, spostare i modelli in una sottocartella con lo stesso nome dell'app, operazione che crea uno spazio dei nomi ed evita i potenziali conflitti con altre app eventualmente aggiunte al progetto. (I modelli in Visual Studio 2017 15,8 + eseguono questa operazione automaticamente). Ovvero creare una sottocartella nei *modelli* denominati *HelloDjangoApp*, spostare *index. html* in tale sottocartella e modificare la funzione di visualizzazione `index` per fare riferimento al nuovo percorso del modello, *HelloDjangoApp/index.html*. Eseguire quindi il progetto, verificare che il rendering della pagina avvenga correttamente e arrestare il server.
 
 1. Eseguire il commit delle modifiche nel controllo del codice sorgente e aggiornare il repository remoto, se si vuole, come descritto nel [passaggio 2-2](#commit-to-source-control).
 
@@ -255,7 +255,7 @@ I passaggi seguenti descrivono l'uso dei modelli di pagina:
 
 Risposta: Anche se i modelli vengono in genere mantenuti in file HTML separati, è possibile usare anche un modello inline. L'uso di un file distinto è l'opzione consigliata, tuttavia, per mantenere una netta separazione tra il markup e il codice.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione file html?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Domanda: I modelli devono usare l'estensione html?
 
 Risposta: L'estensione *html* per i file di modello di pagina è completamente facoltativa, perché è sempre possibile identificare esattamente il percorso relativo del file nel secondo argomento della funzione `render`. Per i file con estensione *html*, tuttavia, Visual Studio e altri editor offrono in genere funzionalità quali il completamento del codice e la colorazione della sintassi, che compensano il fatto che i modelli di pagina non siano rigorosamente HTML.
 
@@ -279,4 +279,4 @@ Risposta: Quando Django cerca un modello cui viene fatto riferimento nella funzi
 - [Writing your first Django app, part 1 - views](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (Scrittura della prima app Django, parte 1 - Visualizzazioni) (docs.djangoproject.com)
 - Per informazioni sulle altre funzionalità dei modelli Django, tra cui le inclusioni e l'ereditarietà, vedere [The Django template language](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (Linguaggio dei modelli Django) (docs.djangoproject.com)
 - [Regular expression training on inLearning](https://www.linkedin.com/learning/topics/regular-expressions) (Formazione sulle espressioni regolari in inLearning) (LinkedIn)
-- Codice sorgente dell'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- Codice sorgente per l'esercitazione su GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

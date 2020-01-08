@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 748dfc592fbf7a3b9737e9f418362067b92bb8ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653049"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594292"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introduzione a Live Unit Testing
 
@@ -24,7 +24,7 @@ Live Unit Testing può essere usato per testare soluzioni che hanno come destina
 
 La soluzione C# completa può essere scaricata dal repository [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) in GitHub.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
 
 Per questa esercitazione è necessario aver installato Visual Studio Enterprise Edition con il carico di lavoro **sviluppo multipiattaforma .NET Core** .
 
@@ -48,7 +48,7 @@ La soluzione è semplicemente un contenitore per uno o più progetti. Per creare
 
 Ora che è stata creata la soluzione, verrà creata una libreria di classi denominata StringLibrary che contiene una serie di metodi di estensione per l'uso delle stringhe.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi**  > **nuovo progetto**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi** > **nuovo progetto**.
 
 ::: moniker range="vs-2017"
 
@@ -96,7 +96,7 @@ Ora che è stata creata la soluzione, verrà creata una libreria di classi denom
 
 Il passaggio successivo consiste nel creare il progetto unit test per testare la libreria StringLibrary. Creare gli unit test eseguendo i passaggi seguenti:
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi**  > **nuovo progetto**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi** > **nuovo progetto**.
 
 ::: moniker range="vs-2017"
 
@@ -150,7 +150,7 @@ Sono stati creati una libreria di classi e i relativi unit test. Le operazioni p
 
 ## <a name="enable-live-unit-testing"></a>Abilitare Live Unit Testing
 
-Fino ad ora, anche se sono stati scritti i test per la libreria di classi StringLibrary, non sono stati eseguiti. Una volta abilitato, Live Unit Testing li esegue automaticamente. A tal scopo, eseguire le operazioni seguenti:
+Fino ad ora, anche se sono stati scritti i test per la libreria di classi StringLibrary, non sono stati eseguiti. Una volta abilitato, Live Unit Testing li esegue automaticamente. A tale scopo, eseguire le operazioni seguenti:
 
 1. Facoltativamente, selezionare la finestra del codice che contiene il codice per StringLibrary. Si tratta di *Class1.cs* per un progetto C# o di *Class1.vb* per un progetto di Visual Basic. Questo passaggio consente di esaminare visivamente il risultato dei test e la portata del code coverage dopo aver abilitato Live Unit Testing.
 

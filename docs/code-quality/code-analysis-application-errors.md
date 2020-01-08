@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610836"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587784"
 ---
 # <a name="code-analysis-application-errors"></a>Errori nell'applicazione dell'analisi del codice
 
@@ -33,7 +33,7 @@ Questa sezione è un riferimento dei messaggi di errore generati dallo strumento
 |[CA0052](ca0052.md)|Non sono state selezionate destinazioni da analizzare.|
 |[CA0053](ca0053.md)|Non è stato possibile caricare l'assembly delle regole.|
 |[CA0054](ca0054.md)|Un assembly di regole personalizzate contiene risorse XML non valide.|
-|[CA0055](ca0055.md)|Non è stato possibile caricare il file: \<path >|
+|[CA0055](ca0055.md)|Non è stato possibile caricare il file:\<percorso >|
 |[CA0056](ca0056.md)|Un file di progetto ha una versione non corretta dello strumento di analisi.|
 |[CA0057](ca0057.md)|Non è possibile eseguire il mapping delle violazioni al set corrente di destinazioni e regole.|
 |[CA0058](ca0058.md)|Impossibile caricare assembly a cui si fa riferimento.|
@@ -58,5 +58,5 @@ Questa sezione è un riferimento dei messaggi di errore generati dallo strumento
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-- [Errori dei criteri per l'analisi del codice](../code-quality/code-analysis-policy-errors.md)
+- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
 - [Analisi della qualità del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)

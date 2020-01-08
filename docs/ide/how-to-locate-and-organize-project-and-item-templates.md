@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645884"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591047"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare modelli di progetto e modelli di elementi
 
@@ -106,9 +106,9 @@ Le categorie nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo ele
 
 1. Inserire nella nuova cartella tutti modelli di questa categoria.
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
+1. Scegliere **nuovo** > **progetto**dal menu **file** .
 
-   La categoria **HelloWorld** appare nella finestra di dialogo **Nuovo progetto**, in **Installato** > **Visual C#** .
+   La categoria **HelloWorld** viene visualizzata nella finestra di dialogo **nuovo progetto** , in **installato** > oggetto **visivo C#** .
 
 ### <a name="create-new-user-item-template-categories"></a>Creare nuove categorie di modelli di progetto utente
 
@@ -120,7 +120,7 @@ Le categorie nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo ele
 
 1. Creare un progetto oppure aprire un progetto esistente. Quindi, scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.
 
-   La categoria **HelloWorld** è visualizzata nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato** > **Elementi di Visual C#** .
+   La categoria **HelloWorld** viene visualizzata nella finestra di dialogo **Aggiungi nuovo elemento** , in **installato** >  **C# elementi visivi**.
 
 ### <a name="display-templates-in-parent-categories"></a>Visualizzare i modelli in categorie padre
 
@@ -146,7 +146,7 @@ I modelli inclusi nelle sottocategorie possono essere visualizzati nelle relativ
 
 1. Salvare e chiudere il file con estensione *vstemplate*.
 
-1. Selezionare i file del modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **Cartella compressa**.
+1. Selezionare i file nel modello, fare clic con il pulsante destro del mouse sulla selezione e scegliere **Invia a** > **cartella compressa**.
 
    I file verranno compressi in un file *zip*.
 

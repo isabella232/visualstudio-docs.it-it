@@ -9,19 +9,19 @@ f1_keywords:
 - offline install [Visual Studio]
 - layout [Visual Studio]
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: fd47e464eec0fc9bdbd20c854432f5954f8fbcb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789993"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591489"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Creare un'installazione offline di Visual Studio
 
@@ -79,7 +79,7 @@ Per completare questo passaggio è necessario avere una connessione Internet.
 
 Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
-Il file eseguibile di installazione &mdash;or più specifico, il file del programma di avvio automatico &mdash;should corrispondere o essere simile a uno dei seguenti.
+Il file eseguibile di installazione&mdash;o più specifico, il file del programma di avvio automatico&mdash;deve corrispondere o essere simile a uno dei seguenti.
 
 | Edizione | Nomefile |
 |-------------|-----------------------|
@@ -136,7 +136,7 @@ Aprire un prompt dei comandi e usare uno dei comandi presenti negli esempi segue
     vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- Per creare un layout locale completo con tutte le funzionalità (dato l'_elevato_ numero di funzionalità, questa operazione richiederà molto&mdash; tempo), eseguire:
+- Per creare un layout locale completo con tutte le funzionalità (dato l'elevato numero di funzionalità, questa operazione richiederà molto tempo), eseguire:
 
    ```cmd
     vs_community.exe --layout c:\vslayout --lang en-US

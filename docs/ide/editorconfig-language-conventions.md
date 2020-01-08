@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588629"
 ---
 # <a name="language-conventions"></a>Convenzioni del linguaggio
 
@@ -50,7 +50,7 @@ Per ogni convenzione del linguaggio, si specifica un valore che definisce se o q
 
 La gravità di una convenzione del linguaggio specifica il livello in cui applicare lo stile selezionato. Nella tabella seguente sono elencati i valori di gravità possibili e i relativi effetti:
 
-Gravità | Effetto
+Severity | Effetto
 :------- | ------
 `error` | Quando questa regola di stile viene violata, viene visualizzato un errore del compilatore.
 `warning` | Quando questa regola di stile viene violata, viene visualizzato un avviso del compilatore.
@@ -66,7 +66,7 @@ A partire da Visual Studio 2019 versione 16,3, è possibile configurare le regol
 
 Per modificare la convenzione di stile del codice:
 
-1. Passare il puntatore del mouse su zigzag nell'editor, quindi aprire il menu lampadina visualizzato. Scegliere **Configura o non visualizzare problemi**  > **configurare \<rule ID > lo stile del codice**.
+1. Passare il puntatore del mouse su zigzag nell'editor, quindi aprire il menu lampadina visualizzato. Scegliere **Configura o Elimina problemi** > **configurare ID regola \<> lo stile del codice**.
 
    ![Configurare lo stile di codice dal menu a bulbo chiaro in Visual Studio](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Per modificare la convenzione di stile del codice:
 
    Visual Studio aggiunge o modifica l'impostazione di configurazione nel file EditorConfig, come illustrato nella casella Anteprima.
 
-Per modificare il livello di gravità della violazione dello stile del codice, seguire la stessa procedura, ma scegliere **Configura id \<rule > gravità** anziché **configura ID \<rule > stile di codice**. Per altre informazioni, vedere [configurare automaticamente la gravità della regola](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Per modificare la gravità della violazione dello stile del codice, seguire la stessa procedura, ma scegliere **configura \<ID regola > gravità** anziché **configurare \<ID regola > stile di codice**. Per altre informazioni, vedere [configurare automaticamente la gravità della regola](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
 
 ::: moniker-end
 
@@ -392,7 +392,7 @@ class MyClass
 |-|-|
 | **Nome regola** | visual_basic_preferred_modifier_order |
 | **ID regola** | IDE0036 |
-| **Linguaggi applicabili** | Visual Basic |
+| **Linguaggi applicabili** | Visual Basic - |
 | **Valori** | Uno o più modificatori Visual Basic, come `Partial`, `Private` e `Public` |
 | **Impostazione predefinita di Visual Studio** | `Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:silent` |
 | **Versione introdotta** | Visual Studio 2017 versione 15.5 |
@@ -1838,7 +1838,7 @@ void M()
 | **Nome regola** | csharp_prefer_simple_using_statement |
 | **ID regola** | IDE0063 |
 | **Linguaggi applicabili** | C# 8.0+ |
-| **Valori** | `true` - Indica la preferenza a usare un'istruzione `using` *semplice*<br /><br />`false` - Non indica la preferenza a usare un'istruzione `using` *semplice* |
+| **Valori** | `true`: è preferibile utilizzare una *semplice* istruzione `using`<br /><br />`false`: non è preferibile usare una *semplice* istruzione `using` |
 | **Impostazione predefinita di Visual Studio** | `true:suggestion` |
 
 Esempi di codice:

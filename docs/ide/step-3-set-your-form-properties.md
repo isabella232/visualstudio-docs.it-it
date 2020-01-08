@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118956"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591749"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: Impostare le proprietà del modulo
 
@@ -33,14 +33,14 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 1. Dopo aver selezionato il form, individuare la proprietà **Testo** nella finestra **Proprietà**. A seconda di come è ordinato l'elenco, potrebbe essere necessario scorrere verso il basso. Scegliere **Testo**, digitare **Visualizzatore di immagini** e quindi premere **INVIO**.  Il form dovrebbe ora disporre del **Visualizzatore immagini** del testo nella relativa barra del titolo e la finestra **Proprietà** dovrebbe essere simile alla schermata seguente.
 
     ![Finestra Proprietà](../ide/media/express_edittextproperty.png)<br>
-   ***Proprietà*** di *finestra* di
+   *Finestra* proprietà
 
    > [!NOTE]
    > Le proprietà possono essere ordinate in base alla visualizzazione **Per categoria** o **Per nome**. È possibile passare da una visualizzazione all'altra tramite i pulsanti nella finestra **Proprietà**. In questa esercitazione è più facile trovare le proprietà tramite la visualizzazione **Per nome**.
 
 1. Tornare a **Progettazione Windows Form**. Fare clic sul quadratino di trascinamento nella parte inferiore destra del form, ovvero il quadratino bianco in basso a destra del form il cui aspetto è il seguente.
 
-    ![Quadratino di trascinamento](../ide/media/express_bottomrt_drag.png)<br>
+    handle di trascinamento ![](../ide/media/express_bottomrt_drag.png)<br>
    *Quadratino di trascinamento*
 
     Trascinare il punto di controllo per ridimensionare il form in modo che sia più largo e leggermente più alto.
@@ -55,28 +55,28 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 
    - Sulla barra degli strumenti scegliere il pulsante **Avvia debug** visualizzato di seguito.
 
-      ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)<br>
-     ***Avvia debug*** *pulsante della barra degli strumenti*
+      ![pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)<br>
+     *Pulsante della barra degli strumenti* ***Avvia debug***
 
      Esattamente come in precedenza, l'IDE compila ed esegue l'app e viene visualizzata una finestra.
 
 1. Prima di andare al passaggio successivo, arrestare l'app, perché l'IDE non consente di modificare l'app mentre è in esecuzione. Tenere presente che è possibile usare uno dei metodi seguenti per arrestare l'app.
 
-   - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
+   - Sulla barra degli strumenti scegliere il pulsante**Termina debug**.
 
    - Sulla barra dei menu scegliere **Debug** > **Termina debug**.
 
-   - Utilizzare la tastiera e premere **MAIUSC**+**F5**.
+   - Usare la tastiera e premere **maiusc**+**F5**.
 
    - Scegliere il pulsante **X** nell'angolo superiore della finestra **Visualizzatore immagini** .
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* Per andare al passaggio successivo dell'esercitazione, vedere  **[passaggio 4: Definire il layout del form con un controllo](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
+* Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 4: creare il layout del form con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 
-* Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Eseguire l'app](../ide/step-2-run-your-program.md)Visualizzatore immagini.
+* Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 2: eseguire l'app visualizzatore immagini](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Esercitazione 2: Creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
-* [Esercitazione 3: Creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
+* [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
+* [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

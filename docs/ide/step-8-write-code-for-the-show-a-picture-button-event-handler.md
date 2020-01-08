@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7afdae8e98dba33184889fe314725e634e3bfa7
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314061"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591723"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine
 
@@ -43,7 +43,7 @@ IntelliSense tenta di determinare cosa si desidera eseguire successivamente e pa
     > [!NOTE]
     > Il codice potrebbe non visualizzare i gestori eventi in lettere "camelCase".
 
-1. La finestra di **IntelliSense** deve evidenziare la parola `if`. In caso contrario, immettere una `f` minuscola, che verrà. Si noti che viene visualizzata una casella *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. (In Visual Basic, la descrizione comando indica anche che si tratta di un frammento, ma con una formulazione leggermente diversa). Si vuole usare questo frammento di codice, quindi scegliere il tasto **Tab** per inserire `if` nel codice. Premere quindi di nuovo **TAB** per usare il frammento di codice `if`. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare con il tasto BACKSPACE su `i` e digitare di nuovo. La finestra di **IntelliSense** verrà riaperta.
+1. La finestra di **IntelliSense** deve evidenziare la parola `if`. In caso contrario, immettere una `f`minuscola, che verrà. Si noti che viene visualizzata una casella *Descrizione comando* accanto alla finestra di **IntelliSense** con la descrizione **frammento di codice per l'istruzione If**. (In Visual Basic, la descrizione comando indica anche che si tratta di un frammento, ma con una formulazione leggermente diversa). Si vuole usare questo frammento di codice, quindi scegliere il tasto **Tab** per inserire `if` nel codice. Premere quindi di nuovo **TAB** per usare il frammento di codice `if`. Se si è fatto clic in un altro punto e la finestra di **IntelliSense** non è più visualizzata, tornare con il tasto BACKSPACE su `i` e digitare di nuovo. La finestra di **IntelliSense** verrà riaperta.
 
     ![Codice Visual C&#35;](../ide/media/express_highlighttrue.png)
 

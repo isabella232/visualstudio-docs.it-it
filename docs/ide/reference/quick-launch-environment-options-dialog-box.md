@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655673"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565669"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Avvio veloce, Ambiente, finestra di dialogo Opzioni
 
@@ -34,11 +34,11 @@ I risultati delle ricerche effettuate in Avvio veloce vengono visualizzati in qu
 
 È possibile usare i metodi rapidi seguenti per limitare la ricerca a categorie specifiche.
 
-|Category|Metodo rapido|Descrizione metodo rapido|
+|Categoria|Collegamento|Descrizione metodo rapido|
 |--------------|--------------| - |
 |Usati di recente|@mru<br /><br /> Ad esempio, `@mru font`.|Visualizza fino a cinque elementi **Usati di recente**.|
-|Menu|@menu<br /><br /> Ad esempio, `@menu project`.|Limita la ricerca alle voci di menu.|
-|Opzioni|@opt<br /><br /> Ad esempio, `@opt font`.|Limita la ricerca alle impostazioni nella finestra di dialogo **Opzioni**.|
+|Menus|@menu<br /><br /> Ad esempio, `@menu project`.|Limita la ricerca alle voci di menu.|
+|Options|@opt<br /><br /> Ad esempio, `@opt font`.|Limita la ricerca alle impostazioni nella finestra di dialogo **Opzioni**.|
 |Documenti|@doc<br /><br /> Ad esempio, `@doc program.cs`.|Limita la ricerca ai percorsi e ai nomi di file dei documenti aperti per i criteri di ricerca, ma non esegue la ricerca nel testo all'interno dei file.|
 
 > [!NOTE]

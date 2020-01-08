@@ -2,20 +2,20 @@
 title: Testare un'app UWP con un test codificato dell'interfaccia utente
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659975"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590358"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Creare un test codificato dell'interfaccia utente per testare un'app UWP
 
@@ -65,7 +65,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
 1. Per aggiungere un progetto di test a una soluzione, fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**.
 
-1. Cercare e selezionare il modello **Progetto di test codificato dell'interfaccia utente (Windows universale)** .
+1. Cercare e selezionare il modello **Progetto di test codificato dell'interfaccia utente (Windows universale)**.
 
    ::: moniker range="vs-2017"
 
@@ -158,7 +158,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
    Sostituire l'ID di automazione nel codice di esempio con il valore copiato negli Appunti nel passaggio precedente.
 
    > [!IMPORTANT]
-   > Tagliare l'inizio dell'ID di automazione per rimuovere i caratteri come ad esempio **P~** . Se si non tagliano questi caratteri, il test genera un'eccezione `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` quando tenta di avviare l'app.
+   > Tagliare l'inizio dell'ID di automazione per rimuovere i caratteri come ad esempio **P~**. Se si non tagliano questi caratteri, il test genera un'eccezione `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` quando tenta di avviare l'app.
 
 1. Successivamente, aggiungere codice al metodo di test per fare clic sul pulsante. Nella riga successiva a `XamlWindow.Launch` aggiungere un movimento per toccare il pulsante:
 

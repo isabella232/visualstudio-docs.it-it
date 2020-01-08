@@ -4,27 +4,27 @@ ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46bf3d8a188899e27e7a83d875cf970583858ba8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653784"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594708"
 ---
-# <a name="domain-property-value-change-handlers"></a>Gestori di modifica del valore della proprietà del dominio
+# <a name="domain-property-value-change-handlers"></a>Gestori di Modifica valore proprietà di dominio
 
-In un linguaggio specifico di dominio di Visual Studio, quando viene modificato il valore di una proprietà del dominio, i metodi `OnValueChanging()` e `OnValueChanged()` vengono richiamati nel gestore della proprietà del dominio. Per rispondere alla modifica, è possibile eseguire l'override di tali metodi.
+In un linguaggio specifico di dominio di Visual Studio, quando cambia il valore della proprietà del dominio, il `OnValueChanging()` e `OnValueChanged()` metodi vengono richiamati nel gestore di proprietà di dominio. Per rispondere alla modifica, è possibile eseguire l'override di tali metodi.
 
-## <a name="override-the-property-handler-methods"></a>Eseguire l'override dei metodi del gestore delle proprietà
+## <a name="override-the-property-handler-methods"></a>Eseguire l'override del gestore delle proprietà
 
-Ogni proprietà di dominio del linguaggio specifico di dominio è gestita da una classe annidata nella propria classe di dominio padre. Il nome segue il formato *PropertyName*gestoreproprietà. È possibile esaminare questa classe del gestore di proprietà nel file **Dsl\Generated Code\DomainClasses.cs**. Nella classe `OnValueChanging()` viene chiamato immediatamente prima che il valore cambi, mentre `OnValueChanged()` immediatamente dopo.
+Ogni proprietà di dominio del linguaggio specifico di dominio è gestita da una classe annidata nella propria classe di dominio padre. Il nome segue il formato *PropertyName*Gestoreproprietà. È possibile esaminare questa classe di gestore di proprietà nel file **Dsl\Generated Code\DomainClasses.cs**. Nella classe `OnValueChanging()` viene chiamato immediatamente prima che il valore cambi, mentre `OnValueChanged()` immediatamente dopo.
 
-Si supponga, ad esempio, di disporre di una classe di dominio denominata `Comment` con una proprietà di dominio stringa denominata `Text` e di una proprietà integer denominata `TextLengthCount`. Per far sì che `TextLengthCount` contenga sempre la lunghezza della stringa `Text`, è possibile scrivere il codice seguente in un file separato nel progetto DSL:
+Ad esempio, si supponga di avere una classe di dominio denominata `Comment` che include una proprietà di dominio stringa denominata `Text` e una proprietà integer denominata `TextLengthCount`. Per fare in modo `TextLengthCount` sempre per contenere la lunghezza del `Text` stringa, è possibile scrivere il codice seguente in un file separato nel progetto Dsl:
 
 ```csharp
 // Domain Class "Comment":
@@ -60,7 +60,7 @@ Notare gli aspetti seguenti sui gestori delle proprietà:
 
 - Non è possibile usare un gestore delle modifiche per modificare il nuovo valore. Per eseguire questa operazione, ad esempio al fine di limitare il valore a un intervallo specifico, definire un `ChangeRule`.
 
-- Non è possibile aggiungere un gestore delle modifiche a una proprietà che rappresenta un ruolo di una relazione. Definire invece un elemento `AddRule` e un elemento `DeleteRule` sulla classe relazione. Queste regole vengono attivate quando i collegamenti vengono creati o modificati. Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+- Non è possibile aggiungere un gestore delle modifiche a una proprietà che rappresenta un ruolo di una relazione. Definire invece un elemento `AddRule` e un elemento `DeleteRule` sulla classe relazione. Queste regole vengono attivate quando i collegamenti vengono creati o modificati. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Modifiche all'interno e all'esterno dell'archivio
 
@@ -81,7 +81,7 @@ if (!store.InUndoRedoOrRollback && !store. InSerializationTransaction)
 
 D'altra parte, se il gestore delle proprietà propaga le modifiche all'esterno dell'archivio, ad esempio in un file, in un database o in una variabile non di archivio, è necessario operare sempre tali modifiche in modo tale che i valori esterni vengano aggiornati quando l'utente richiama l'annullamento o il ripristino.
 
-### <a name="cancel-a-change"></a>Annulla una modifica
+### <a name="cancel-a-change"></a>Annullare una modifica
 
 Se si vuole impedire una modifica, è possibile eseguire il rollback dell'ultima transazione. Si potrebbe ad esempio fare in modo che una proprietà resti compresa all'interno di un intervallo specifico.
 
@@ -97,19 +97,19 @@ if (newValue > 10)
 
 Nell'esempio precedente viene illustrato come usare OnValueChanged() per propagare valori da una proprietà di dominio a un'altra. Ogni proprietà presenta il proprio valore archiviato.
 
-In alternativa, si potrebbe definire la proprietà derivata come proprietà calcolata. In questo caso la proprietà non dispone di archiviazione propria e la sua funzione di definizione viene valutata ogni volta che è necessario il relativo valore. Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).
+In alternativa, si potrebbe definire la proprietà derivata come proprietà calcolata. In questo caso la proprietà non dispone di archiviazione propria e la sua funzione di definizione viene valutata ogni volta che è necessario il relativo valore. Per altre informazioni, vedere [calcolate e le proprietà di archiviazione personalizzate](../modeling/calculated-and-custom-storage-properties.md).
 
-Anziché l'esempio precedente, è possibile impostare il campo **Kind** di `TextLengthCount` da **calcolare** nella definizione DSL. Fornire un metodo **Get** personalizzato per questa proprietà di dominio. Il metodo **Get** restituisce la lunghezza corrente della stringa di `Text`.
+Invece dell'esempio precedente, è possibile impostare il **tipo** campo `TextLengthCount` essere **Calculated** nella definizione DSL. È necessario fornire il proprio **ottenere** metodo per questa proprietà di dominio. Il **ottenere** metodo restituirebbe la lunghezza corrente del `Text` stringa.
 
 Un potenziale svantaggio dell'uso di proprietà calcolate, tuttavia, è il fatto che l'espressione viene valutata ogni volta che viene usato il valore, il che potrebbe dare luogo a problemi di prestazioni. In una proprietà calcolata, inoltre, non sono presenti elementi OnValueChanging() e OnValueChanged().
 
 ### <a name="alternative-technique-change-rules"></a>Tecnica alternativa: elementi ChangeRule
 
-Se si definisce un regola ChangeRule, questo viene eseguito alla fine di una transazione in cui il valore di una proprietà viene modificato.  Per ulteriori informazioni, vedere la pagina relativa alla [propagazione delle modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).
+Se si definisce una regola ChangeRule, questa verrà eseguita al fine di una transazione in cui viene modificato un valore della proprietà.  Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 
-Se in una transazione sono presenti numerose modifiche, la regola ChangeRule verrà eseguita dopo che queste sono state tutte applicate. Al contrario, il valore onvalue... i metodi vengono eseguiti quando alcune delle modifiche non sono state eseguite. A seconda del risultato che si intende raggiungere, la scelta di una regola ChangeRule potrebbe risultare più appropriata.
+Se in una transazione sono presenti numerose modifiche, la regola ChangeRule verrà eseguita dopo che queste sono state tutte applicate. Al contrario, il OnValue... i metodi vengono eseguiti quando alcune delle modifiche non sono state completate. A seconda del risultato che si intende raggiungere, la scelta di una regola ChangeRule potrebbe risultare più appropriata.
 
-È anche possibile usare un regola ChangeRule per modificare il nuovo valore della proprietà per mantenerlo all'interno di un intervallo specifico.
+È anche possibile usare una regola ChangeRule per regolare il valore della proprietà nuova per contenerlo entro un intervallo specifico.
 
 > [!WARNING]
 > Se una regola opera modifiche al contenuto dell'archivio, potrebbe verificarsi l'attivazione di altre regole e gestori delle proprietà. Se una regola modifica la proprietà che ne ha determinato l'attivazione, verrà chiamata nuovamente. È necessario assicurarsi che le definizioni delle regole non risultino in attivazioni senza termine.

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665059"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590306"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modificare i modelli di carico per definire le attività di utenti virtuali
 
@@ -79,11 +79,11 @@ Un modello di carico basato su obiettivo è simile a un modello di carico per pa
 
   Nell'esempio della tabella riportata di seguito viene illustrato un modello basato su obiettivo con le impostazioni delle proprietà seguenti:
 
-|Gruppo di proprietà|proprietà|Value|
+|Gruppo di proprietà|Gli|Valore|
 |-|--------------|-|
-|Contatore di prestazioni|Category|Processore|
+|Contatore di prestazioni|Categoria|Processore|
 |Contatore di prestazioni|Computer|ContosoServer1|
-|Contatore di prestazioni|Counter|% Tempo processore|
+|Contatore di prestazioni|Counter|% di tempo del processore|
 |Contatore di prestazioni|Istanza|_Total|
 |Intervallo di destinazione per il contatore delle prestazioni|Estremità superiore|90|
 |Intervallo di destinazione per il contatore delle prestazioni|Estremità inferiore|70|
@@ -107,7 +107,7 @@ Prestare attenzione qualora la velocità effettiva del sistema sia limitata da a
 
 ## <a name="tasks"></a>Attività
 
-|Attività|Argomenti correlati|
+|Attività|Argomenti associati|
 |-|-----------------------|
 |**Specifica del modello di carico iniziale per il test di carico:** quando si crea un test di carico tramite la **Creazione guidata test di carico**, è necessario selezionare un modello di carico.|-   [Cambiare il modello di carico](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Modifica del modello di carico per il test di carico:** dopo aver creato il test di carico, è possibile modificare il modello di carico tramite l'**Editor test di carico**.|-   [Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|

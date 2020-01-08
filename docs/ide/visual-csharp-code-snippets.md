@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647256"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594162"
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
 
@@ -36,7 +36,7 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |#if|Crea una direttiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e una direttiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Ovunque.|
 |#region|Crea una direttiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e una direttiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Ovunque.|
 |~|Crea un [finalizzatore](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (distruttore) per la classe contenitore.|All'interno di una classe.|
-|Attributo|Crea una dichiarazione per una classe che deriva da <xref:System.Attribute>.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
+|attributo|Crea una dichiarazione per una classe che deriva da <xref:System.Attribute>.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |checked|Crea un blocco [checked](/dotnet/csharp/language-reference/keywords/checked).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |classe|Crea una dichiarazione di classe.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |ctor|Crea un costruttore per la classe contenitore.|All'interno di una classe.|
@@ -46,24 +46,24 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |enum|Crea una dichiarazione [enum](/dotnet/csharp/language-reference/keywords/enum).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |è uguale a|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|
 |exception|Crea una dichiarazione per una classe che deriva da un'eccezione (<xref:System.Exception> per impostazione predefinita).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|for|Crea un ciclo [for](/dotnet/csharp/language-reference/keywords/for).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
+|per|Crea un ciclo [for](/dotnet/csharp/language-reference/keywords/for).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |foreach|Crea un ciclo [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |forr|Crea un ciclo [for](/dotnet/csharp/language-reference/keywords/for) che decrementa la variabile di ciclo dopo ogni iterazione.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |if|Crea un blocco [if](/dotnet/csharp/language-reference/keywords/if-else).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |indicizzatore|Crea una dichiarazione di indicizzatore.|All'interno di una classe o uno struct.|
-|interfaccia|Crea una dichiarazione [interface](/dotnet/csharp/language-reference/keywords/interface).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
+|Interfaccia|Crea una dichiarazione [interface](/dotnet/csharp/language-reference/keywords/interface).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
 |invoke|Crea un blocco che richiama in modo sicuro un evento.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|iteratore|Crea un iteratore.|All'interno di una classe o uno struct.|
+|iterator|Crea un iteratore.|All'interno di una classe o uno struct.|
 |iterindex|Crea una coppia iteratore/indicizzatore "denominata" usando una classe annidata.|All'interno di una classe o uno struct.|
 |blocco|Crea un blocco [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |mbox|Crea una chiamata a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Può essere necessario aggiungere un riferimento a *System.Windows.Forms.dll*.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
-|namespace|Crea una dichiarazione [namespace](/dotnet/csharp/language-reference/keywords/namespace).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
+|Spazio dei nomi|Crea una dichiarazione [namespace](/dotnet/csharp/language-reference/keywords/namespace).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
 |prop|Crea una dichiarazione di [proprietà implementata automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|All'interno di una classe o uno struct.|
 |propfull|Crea una dichiarazione di proprietà con le funzioni di accesso `get` e `set`.|All'interno di una classe o uno struct.|
 |propg|Crea una [proprietà implementata automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) di sola lettura con una funzione di accesso `set` privata.|All'interno di una classe o uno struct.|
-|sim|Crea una dichiarazione [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) del metodo Main.|All'interno di una classe o uno struct.|
+|sim|Crea una dichiarazione di metodo Main [int](/dotnet/csharp/language-reference/keywords/int) [statica](/dotnet/csharp/language-reference/keywords/static) .|All'interno di una classe o uno struct.|
 |struct|Crea una dichiarazione [struct](/dotnet/csharp/language-reference/keywords/struct).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|
-|svm|Crea una dichiarazione [static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void) del metodo Main.|All'interno di una classe o uno struct.|
+|svm|Crea una dichiarazione di metodo Main [void](/dotnet/csharp/language-reference/keywords/void) [statica](/dotnet/csharp/language-reference/keywords/static) .|All'interno di una classe o uno struct.|
 |switch|Crea un blocco [switch](/dotnet/csharp/language-reference/keywords/switch).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |try|Crea un blocco [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 |tryf|Crea un blocco [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|

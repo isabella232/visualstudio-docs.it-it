@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642248"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586770"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 
@@ -28,7 +28,7 @@ Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni rec
 
 ## <a name="to-databind-a-lookup-control"></a>Per associare un controllo di ricerca
 
-1. Con il progetto aperto, aprire la finestra **origini dati** scegliendo **Visualizza**  > **altre** **origini dati** >  di Windows.
+1. Con il progetto aperto, aprire la finestra **origini dati** scegliendo **Visualizza** > **altre** **origini dati** > di Windows.
 
     > [!NOTE]
     > Per le tabelle di ricerca è necessario che nella finestra **origini dati** siano disponibili due tabelle o oggetti correlati. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
@@ -44,13 +44,13 @@ Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni rec
 
 5. Trascinare il nodo della tabella figlio principale dalla finestra **origini dati** nel form.
 
-     Nel form vengono visualizzati i controlli associati a un oggetto con etichette descrittive e una striscia di strumenti (<xref:System.Windows.Forms.BindingNavigator>). Un [set di dati](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
+     Nel form vengono visualizzati i controlli associati a un oggetto con etichette descrittive e una striscia di strumenti (<xref:System.Windows.Forms.BindingNavigator>). Un [set di dati](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> vengono visualizzati nella barra dei componenti.
 
 6. Trascinare il nodo della tabella padre principale dalla finestra **origini dati** direttamente nel controllo Lookup (il <xref:System.Windows.Forms.ComboBox>).
 
      Sono ora stabilite le associazioni di ricerca. Fare riferimento alla tabella seguente per le proprietà specifiche impostate per il controllo.
 
-    |proprietà|Spiegazione dell'impostazione|
+    |Gli|Spiegazione dell'impostazione|
     |--------------| - |
     |**DataSource**|Questa proprietà viene impostata da Visual Studio sul <xref:System.Windows.Forms.BindingSource> creato per la tabella trascinata nel controllo (a differenza del <xref:System.Windows.Forms.BindingSource> creato al momento della creazione del controllo).<br /><br /> Se è necessario apportare una modifica, impostare questa impostazione sulla <xref:System.Windows.Forms.BindingSource> della tabella con la colonna che si desidera visualizzare.|
     |**DisplayMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna successiva alla chiave primaria con tipo di dati stringa per la tabella che si intende trascinare nel controllo.<br /><br /> Se è necessario apportare una modifica, impostare il nome della colonna che si desidera visualizzare.|

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9013d7be60a8091f7ce4fc4fe92fa4acaef43720
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 9a833cb46811bd97467fdb048272c9feb2bb7873
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636528"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587381"
 ---
 # <a name="install-net-compiler-platform-code-analyzers"></a>Installare gli analizzatori di codice .NET Compiler Platform
 
@@ -63,7 +63,7 @@ Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Ro
 
 3. Nella casella di ricerca digitare il nome dell'estensione dell'analizzatore che si desidera installare. È possibile, ad esempio, [installare gli analizzatori FxCop Microsoft](install-fxcop-analyzers.md#vsix) per verificare la presenza di problemi di sicurezza e prestazioni, tra gli altri.
 
-4. Selezionare **download**.
+4. Selezionare **Download**.
 
    Viene scaricata l'estensione.
 

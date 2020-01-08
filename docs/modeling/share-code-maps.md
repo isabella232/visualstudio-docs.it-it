@@ -2,17 +2,17 @@
 title: Esportare e salvare mappe codice
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 991773953338e38331bad45bfa1149aeb27c748b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57989de2cca3582b3193a7b55b81d1d444dcf1c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591931"
 ---
 # <a name="share-code-maps"></a>Condividere le mappe codice
 
@@ -24,7 +24,7 @@ Usare il menu **File** per salvare la mappa.
 
 oppure
 
-Per salvare la mappa come parte di un progetto specifico, sulla barra degli strumenti della mappa scegliere **condividi**  > **Sposta \<CodeMapName >. dgml in**, quindi scegliere il progetto in cui si desidera salvare la mappa.
+Per salvare la mappa come parte di un progetto specifico, sulla barra degli strumenti della mappa scegliere **condividi** > **sposta \<nome mappa codice >. dgml in**, quindi scegliere il progetto in cui si desidera salvare la mappa.
 
 ![Spostare una mappa in un altro progetto](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +43,7 @@ Visual Studio salva la mappa come file con estensione *DGML* che è possibile co
 
 Quando si esporta una mappa codice come immagine, è possibile copiarla in altre applicazioni, ad esempio Microsoft Word o PowerPoint.
 
-1. Nella barra degli strumenti della mappa codice scegliere **condividi**  > **email come immagine** o **Copia immagine**.
+1. Nella barra degli strumenti della mappa codice scegliere **condividi** > **email come immagine** o **Copia immagine**.
 
 2. Incollare l'immagine in un'altra applicazione.
 
@@ -51,7 +51,7 @@ Quando si esporta una mappa codice come immagine, è possibile copiarla in altre
 
 Quando si esporta una mappa codice come file XPS, è possibile visualizzarla in visualizzatori XAML o XML come Internet Explorer.
 
-1. Nella barra degli strumenti della mappa codice scegliere **condividi**  > **messaggio di posta elettronica come** portabile XPS o **Salva come Portable XPS**.
+1. Nella barra degli strumenti della mappa codice scegliere **condividi** > **messaggio di posta elettronica come** portabile XPS o **Salva come Portable XPS**.
 
 2. Scegliere la posizione in cui salvare il file.
 

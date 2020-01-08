@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4704ae4d6a43eb3ac23b928b26515b545164e495
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653647"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589145"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedura: creare un file di impostazioni di test per un test di carico distribuito
 
@@ -45,7 +45,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
-2. Nel riquadro **Modelli installati** fare clic su **Impostazioni test**.
+2. Nel riquadro **Modelli installati** scegliere **Impostazioni test**.
 
 3. (Facoltativo) Nella casella **Nome** cambiare il nome del file delle impostazioni test.
 
@@ -53,11 +53,11 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Il nuovo file delle impostazioni test viene visualizzato in **Esplora soluzioni** nella cartella **Elementi di soluzione**.
 
-5. Viene visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
+5. Verrà visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
 
      È quindi possibile modificare e salvare i valori delle impostazioni di test.
 
-6. In **Nome** digitare il nome per le impostazioni test.
+6. In **Nome** digitare il nome per le impostazioni di test.
 
 7. (Facoltativo) In **Descrizione** digitare una descrizione per l'impostazione test in modo da indicarne la funzione agli altri membri del team.
 
@@ -65,7 +65,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 9. Scegliere **Ruoli**.
 
-     Viene visualizzata la pagina **Ruoli**.
+     Verrà visualizzata la pagina **Ruoli**.
 
      ![Ruolo impostazioni test](../test/media/load_testtestrole.png)
 
@@ -99,7 +99,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 17. Scegliere **Dati e diagnostica**.
 
-     Viene visualizzata la pagina **Dati e diagnostica**.
+     Verrà visualizzata la pagina **Dati e diagnostica**.
 
      ![Test dei dati delle impostazioni e diagnostica](../test/media/load_testtest.png)
 
@@ -120,11 +120,11 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
     |**Proxy client ASP.NET per IntelliTrace e impatto test:** questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.|![Icona Informazioni](../test/media/vc364f4.gif)<br /><br /> A meno che ci sia una specifica esigenza di raccogliere informazioni sul sistema per i computer degli agenti di test, non includere questo adattatore. **Attenzione:** non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti. <br /><br /> I dati dell'impatto sui test non vengono raccolti tramite test di carico.||
     |**IntelliTrace:** è possibile configurare informazioni specifiche sulla traccia diagnostica archiviate in un file di log. Un file di log ha estensione *tdlog*. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di log che contiene la traccia diagnostica viene associato automaticamente al bug. I dati raccolti nel file di log aumentano la produttività di debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Da questo file di log è possibile ricreare la sessione locale in un altro computer. In questo modo si riduce il rischio che non sia possibile riprodurre un bug.<br /><br /> Per altre informazioni, vedere [Raccogliere dati IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icona Importante](../test/media/vc364f3.gif)<br /><br /> Non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti e registrati. È opportuno tentare di utilizzare l'adattatore IntelliTrace solo in test di carico che non hanno lunga esecuzione e non utilizzano molti agenti di test.|[Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Profiler ASP.NET:** è possibile creare un'impostazione test che includa la profilatura ASP.NET per la raccolta di dati sulle prestazioni nelle applicazioni Web ASP.NET.|L'adattatore dati di diagnostica del profiler ASP.NET profila il processo di Internet Information Services (IIS), pertanto non funzionerà con un server web di sviluppo. Per profilare il sito web nel test di carico, è necessario installare un agente di test nel computer sul quale IIS è in esecuzione. L'agente di test non genererà carico, ma sarà un agente di sola raccolta. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|[Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Log eventi:** è possibile configurare un'impostazione test per includere la raccolta del log eventi, che sarà compresa nei risultati dei test.||[Procedura: Configurare le raccolte dei log eventi usando le impostazioni test](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Log eventi:** è possibile configurare un'impostazione test in modo da includere la raccolta del log eventi, che verrà inserita nei risultati dei test.||[Procedura: Configurare le raccolte dei log eventi usando le impostazioni test](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Emulazione di rete:** è possibile specificare che si vuole aggiungere un carico di rete artificiale al test usando un'impostazione test. L'emulazione di rete influisce sulla comunicazione da e verso il computer emulando una determinata velocità della connessione di rete, ad esempio di una connessione remota. **Nota:** non è possibile usare l'emulazione di rete per aumentare la velocità della connessione di rete.|L'adattatore di emulazione di rete viene ignorato dai test di carico. Al contrario, i test di carico usano le impostazioni specificate nella combinazione di reti dello scenario dei test di carico.<br /><br /> Per altre informazioni, vedere [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
-    |**Informazioni di sistema:** è possibile configurare un'impostazione test per includere le informazioni di sistema dei computer su cui viene eseguito l'agente di raccolta di dati e diagnostica delle informazioni di sistema. Le informazioni di sistema sono specificate nei risultati del test tramite un'impostazione di test.|![Icona di informazioni](../test/media/vc364f4.gif)<br /><br /> È possibile raccogliere informazioni di sistema sia dagli agenti di carico che dal sistema sottoposto a test.|Per raccogliere queste informazioni, non è necessaria alcuna configurazione.|
+    |**Informazioni di sistema:** è possibile configurare un'impostazione test per includere le informazioni di sistema dei computer su cui viene eseguito l'agente di raccolta di dati e diagnostica delle informazioni di sistema. Le informazioni di sistema sono specificate nei risultati del test tramite un'impostazione di test.|![Icona Informazioni](../test/media/vc364f4.gif)<br /><br /> È possibile raccogliere informazioni di sistema sia dagli agenti di carico che dal sistema sottoposto a test.|Per raccogliere queste informazioni, non è necessaria alcuna configurazione.|
     |**Impatto test:** è possibile raccogliere informazioni sui metodi del codice dell'applicazione usati durante l'esecuzione di un test case. Queste informazioni possono essere utilizzate insieme a quelle relative alle modifiche apportate al codice dell'applicazione dagli sviluppatori per individuare i test interessati da tali modifiche di sviluppo.|I dati dell'impatto sui test non vengono raccolti con i test di carico.||
-    |**Videoregistratore:** è possibile creare una registrazione video della sessione desktop durante l'esecuzione di un test automatizzato. La registrazione può essere utile per visualizzare le azioni dell'utente per un test codificato dell'interfaccia utente. Il video può consentire ad altri membri del team di isolare i problemi dell'applicazione difficili da riprodurre. **Nota:** durante l'esecuzione di test in modalità remota, il videoregistratore non funzionerà a meno che l'agente non venga eseguito in modalità processo interattivo.|![Important icon](../test/media/vc364f3.gif) **Avviso:** non si consiglia l'utilizzo dell'adattatore Videoregistratore per i test di carico.|[Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Videoregistratore:** è possibile creare una registrazione video della sessione desktop durante l'esecuzione di un test automatizzato. La registrazione può essere utile per visualizzare le azioni dell'utente per un test codificato dell'interfaccia utente. Il video può consentire ad altri membri del team di isolare i problemi dell'applicazione difficili da riprodurre. **Nota:** durante l'esecuzione di test in modalità remota, il videoregistratore non funzionerà a meno che l'agente non venga eseguito in modalità processo interattivo.|![icona importante](../test/media/vc364f3.gif) **Avviso:** non è consigliabile utilizzare l'adattatore per la registrazione video per i test di carico.|[Procedura: Includere le registrazioni dello schermo e della voce durante i test usando le impostazioni test](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Scegliere **Distribuzione**.
 

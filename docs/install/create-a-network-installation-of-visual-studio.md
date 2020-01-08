@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7bc45db427a517a9208833cc5be6977bfc62d03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189487"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591476"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -39,7 +39,7 @@ Scaricare un file del programma di avvio automatico per l'edizione di Visual Stu
 
 Per ottenere un programma di avvio automatico per Visual Studio 2017, vedere la pagina di download di [versioni precedenti di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per informazioni dettagliate su come eseguire questa operazione.
 
-Il file eseguibile di installazione &mdash;or più specifico, il file del programma di avvio automatico &mdash;should corrispondere o essere simile a uno dei seguenti.
+Il file eseguibile di installazione&mdash;o più specifico, il file del programma di avvio automatico&mdash;deve corrispondere o essere simile a uno dei seguenti.
 
 | Edizione | Nomefile |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Altri programmi di avvio automatico supportati includono **vs_feedbackclient. ex
 
 ::: moniker range="vs-2019"
 
-Il file eseguibile di installazione &mdash;or più specifico, un file del programma di avvio automatico &mdash;should corrispondere o essere simile a uno dei seguenti.
+Il file eseguibile di installazione&mdash;o in modo più specifico, un file&mdash;del programma di avvio automatico deve corrispondere o essere simile a uno dei seguenti.
 
 |Edizione | Download|
 |-------------|-----------------------|
@@ -90,7 +90,7 @@ Per completare questo passaggio è necessario avere una connessione Internet. Pe
 
 È possibile modificare il file response.json per impostare i valori predefiniti da usare quando viene eseguito il programma di installazione.  È possibile ,ad esempio, configurare il file `response.json` per selezionare un set specifico di carichi di lavoro selezionato in modo automatico. Per informazioni dettagliate, vedere [Automatizzare l'installazione di Visual Studio con un file di risposta](automated-installation-with-response-file.md).
 
-Se si verifica un problema con il programma di avvio automatico di Visual Studio che genera un errore quando lo si associa a un file Response. JSON, vedere la sezione "Impossibile analizzare l'ID dal processo padre" di [risoluzione dei problemi relativi agli errori correlati alla rete quando si installa o si usa l'oggetto visivo Pagina studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) per altre informazioni sulle operazioni da eseguire.
+Se si verifica un problema con il programma di avvio automatico di Visual Studio che genera un errore quando si associa a un file Response. JSON, vedere la sezione "Impossibile analizzare l'ID dal processo padre" della sezione [risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) per altre informazioni sulle operazioni da eseguire.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copiare il layout in una condivisione di rete
 
