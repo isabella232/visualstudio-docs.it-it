@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fd8af330d0cdab84d944dc453dbfe66208608f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647325"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568620"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio usa le [espressioni regolari di .NET](/dotnet/standard/base-types/
 
 La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di modelli di espressioni regolari. Per informazioni più complete, vedere [Linguaggio di espressioni regolari](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-|Scopo|Expression|Esempio|
+|Scopo|Espressione|Esempio|
 |-------------|----------------|-------------|
 |Trovare la corrispondenza con qualsiasi carattere singolo (ad eccezione di un'interruzione di riga). Per altre informazioni, vedere [Qualsiasi carattere](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` corrisponde a "Aro" in "Around" e "ABO" in "about", ma non a "acro" in "across"|
 |Trovare la corrispondenza con zero o più occorrenze dell'espressione precedente (trovare quanti più caratteri corrispondenti possibile). Per altre informazioni, vedere [Trova la corrispondenza zero o più volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` trova "r" in "rack", "ar" in "ark" e "aar" in "aardvark"|
@@ -45,7 +45,7 @@ La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di
 |Ancorare la stringa di corrispondenza alla fine del file|$|`car$` corrisponde a "Car" solo quando viene visualizzato alla fine del file|
 |Trovare la corrispondenza con qualsiasi carattere singolo in un set|[abc]|`b[abc]` corrisponde a "BA", "BB" e "BC"|
 |Trovare la corrispondenza con qualsiasi carattere in un intervallo di caratteri|[a-f]|`be[n-t]` corrisponde a "Bet" in "between", "ben" in "Under" e "BES" in "beside", ma non trova corrispondenze in "below".|
-|Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]". Per altre informazioni, vedere [Gruppi Capture e criteri di sostituzione](#capture-groups-and-replacement-patterns). |
+|Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|Provider di dati EntityClient ()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]". Per altre informazioni, vedere [Gruppi Capture e criteri di sostituzione](#capture-groups-and-replacement-patterns). |
 |Invalidare una corrispondenza|(?!abc)|`real(?!ity)` trova "real" in "realty" e "really", ma non in "reality". Trova anche il secondo "real" (ma non il primo "real") in "realityreal".|
 |Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri. Per altre informazioni, vedere [Gruppo di caratteri negativi](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` corrisponde a "BEF" in "before", "Beh" in "Behind" e "bel" in "below", ma non trova corrispondenze in "below".|
 |Trovare la corrispondenza con l'espressione prima o dopo il simbolo|&#124;|`(sponge|mud) bath` corrisponde a "Sponge Bath" e a "Mud Bath"|
@@ -69,9 +69,9 @@ Un gruppo Capture delinea una sottoespressione di un'espressione regolare e acqu
 
 Per creare un gruppo Capture numerato, racchiudere la sottoespressione tra parentesi nel criterio dell'espressione regolare. Le acquisizioni sono numerate automaticamente da sinistra verso destra in base alla posizione delle parentesi di apertura nell'espressione regolare. Per accedere al gruppo Capture:
 
-- **all'interno dell'espressione regolare**: Usare `\number`. Ad esempio, `\1` nell'espressione regolare `(\w+)\s\1` fa riferimento al primo gruppo Capture `(\w+)`.
+- **all'interno dell'espressione regolare**: usare `\number`. Ad esempio, `\1` nell'espressione regolare `(\w+)\s\1` fa riferimento al primo gruppo Capture `(\w+)`.
 
-- **in un criterio di sostituzione**: Usare `$number`. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` definisce due gruppi: il primo gruppo contiene una singola cifra decimale e il secondo gruppo contiene un carattere singolo compreso tra **a** e **z**. L'espressione trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` fa riferimento solo al primo gruppo (`$1`) e converte la stringa in **z1 z2 z3 z4**.
+- **in un modello di sostituzione**: usare `$number`. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` definisce due gruppi: il primo gruppo contiene una singola cifra decimale e il secondo gruppo contiene un carattere singolo compreso tra **a** e **z**. L'espressione trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` fa riferimento solo al primo gruppo (`$1`) e converte la stringa in **z1 z2 z3 z4**.
 
 L'immagine seguente mostra un'espressione regolare `(\w+)\s\1` e una stringa di sostituzione `$1`. Sia l'espressione regolare che il criterio di sostituzione fanno riferimento al primo gruppo Capture numerato automaticamente 1. Quando si sceglie **Sostituisci tutto** nella finestra di dialogo **Sostituzione veloce** in Visual Studio, le parole ripetute vengono rimosse dal testo.
 
@@ -86,9 +86,9 @@ Anziché usare la numerazione automatica di un gruppo Capture, è possibile asse
 
 I gruppi Capture denominati, come i gruppi Capture numerati, possono essere usati all'interno dell'espressione regolare stessa o in un criterio di sostituzione. Per accedere al gruppo Capture denominato:
 
-- **all'interno dell'espressione regolare**: Usare `\k<name>`. Ad esempio, `\k<repeated>` nell'espressione regolare `(?<repeated>\w+)\s\k<repeated>` fa riferimento al gruppo Capture denominato `repeated` la cui sottoespressione è `\w+`.
+- **all'interno dell'espressione regolare**: usare `\k<name>`. Ad esempio, `\k<repeated>` nell'espressione regolare `(?<repeated>\w+)\s\k<repeated>` fa riferimento al gruppo Capture denominato `repeated` la cui sottoespressione è `\w+`.
 
-- **in un criterio di sostituzione**: Usare `${name}`. Ad esempio `${repeated}`.
+- **in un modello di sostituzione**: usare `${name}`. Ad esempio `${repeated}`.
 
 A titolo di esempio, l'immagine seguente mostra un'espressione regolare `(?<repeated>\w+)\s\k<repeated>` e una stringa di sostituzione `${repeated}`. Sia l'espressione regolare che il criterio di sostituzione fanno riferimento al primo gruppo Capture denominato `repeated`. Quando si sceglie **Sostituisci tutto** nella finestra di dialogo **Sostituzione veloce** in Visual Studio, le parole ripetute vengono rimosse dal testo.
 
